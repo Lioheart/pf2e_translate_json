@@ -1,0 +1,1 @@
+# pf2e_translate_json
