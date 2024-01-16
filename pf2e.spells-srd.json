@@ -206,7 +206,33 @@
             "name": "Allfood",
             "description": "<p>You transform one object into an edible substance that any living creature can chew, swallow, and safely digest. This allfood always has a bland taste and slightly gooey consistency, regardless of its original nature. One bulk of allfood provides enough sustenance to feed one Medium creature for a day.</p>\n<p>After 1 day, if no one has eaten the allfood, it reverts to its original form. Most Small creatures eat one-quarter as much as a Medium creature and most Tiny creatures eat one-sixteenth as much, while most Large creatures eat 10 times as much, Huge creatures need 100 times as much, and so on.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> Double the maximum bulk (to a maximum of 256 bulk at 10th level).</p>",
             "target": "1 unattended non-magical object of 1 Bulk or less",
-            "time": "1 minute"
+            "time": "1 minute",
+            "heightening": {
+                "3": {
+                    "target": "1 unattended non-magical object of 2 Bulk or less"
+                },
+                "4": {
+                    "target": "1 unattended non-magical object of 4 Bulk or less"
+                },
+                "5": {
+                    "target": "1 unattended non-magical object of 8 Bulk or less"
+                },
+                "6": {
+                    "target": "1 unattended non-magical object of 16 Bulk or less"
+                },
+                "7": {
+                    "target": "1 unattended non-magical object of 32 Bulk or less"
+                },
+                "8": {
+                    "target": "1 unattended non-magical object of 64 Bulk or less"
+                },
+                "9": {
+                    "target": "1 unattended non-magical object of 128 Bulk or less"
+                },
+                "10": {
+                    "target": "1 unattended non-magical object of 256 Bulk or less"
+                }
+            }
         },
         "Alter Reality": {
             "name": "Alter Reality",
@@ -657,7 +683,12 @@
             "description": "<p>You send the target back to its home plane. The target must attempt a Will save. You can spend an extra action while Casting this Spell and add a cost to the spell to give the creature a \u20132 circumstance penalty to its save. The cost must be a specially gathered object that is anathema to the creature. This spell fails if you aren't on your home plane when you cast it.</p>\n<hr />\n<p><strong>Critical Success</strong> The target resists being banished and you are @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned 1}.</p>\n<p><strong>Success</strong> The target resists being banished.</p>\n<p><strong>Failure</strong> The target is banished.</p>\n<p><strong>Critical Failure</strong> The target is banished and can't return by any means to the plane it's banished from for 1 week.</p>\n<hr />\n<p><strong>Heightened (9th)</strong> You can target up to 10 creatures. The extra cost affects targets to which it is anathema.</p>",
             "range": "30 feet",
             "target": "1 creature that isn't on its home plane",
-            "time": "2"
+            "time": "2",
+            "heightening": {
+                "9": {
+                    "target": "10 creatures that aren't on their home plane"
+                }
+            }
         },
         "Bathe in Blood": {
             "name": "Bathe in Blood",
@@ -680,7 +711,15 @@
             "duration": "1 minute",
             "range": "1 mile",
             "target": "one of your animal companions you can perceive",
-            "time": "3"
+            "time": "3",
+            "heightening": {
+                "6": {
+                    "range": "100 miles"
+                },
+                "8": {
+                    "range": "planetary"
+                }
+            }
         },
         "Befitting Attire": {
             "name": "Befitting Attire",
@@ -688,7 +727,15 @@
             "duration": "1 hour",
             "range": "30 feet",
             "target": "5 willing creatures",
-            "time": "2"
+            "time": "2",
+            "heightening": {
+                "4": {
+                    "target": "20 willing creatures"
+                },
+                "5": {
+                    "target": "100 willing creatures"
+                }
+            }
         },
         "Befuddle": {
             "name": "Befuddle",
@@ -755,7 +802,12 @@
             "description": "<p>A shimmering muzzle of pure magical force clamps the target's mouth shut. The target can attempt a Fortitude save to resist the muzzle. For targets with more than one mouth, the caster must target a single mouth.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> For 1 round, the target can't use jaws Strikes, Breath Weapons, or any other attack that originates from the mouth, nor can they imbibe anything, including potions, mutagens, and elixirs.</p>\n<p><strong>Failure</strong> As success, but the effect lasts 1 minute, and they must succeed at a @Check[type:flat|dc:11] to Cast a Spell with verbal components.</p>\n<p><strong>Critical Failure</strong> As success, but the effect lasts 1 minute and the target can't speak.</p>\n<hr />\n<p><strong>Heightened (5th)</strong> You can target up to 5 creatures.</p>",
             "range": "100 feet",
             "target": "1 creature",
-            "time": "2"
+            "time": "2",
+            "heightening": {
+                "5": {
+                    "target": "Up to 5 creatures"
+                }
+            }
         },
         "Bit of Luck": {
             "name": "Bit of Luck",
@@ -1094,7 +1146,12 @@
             "name": "Breath of Drought",
             "description": "<p>You fill the area with an oppressive, arid swelter that overwhelms creatures with heat exhaustion. Objects are unaffected. Each creature in the area when the spell is cast or that ends its turn in the area afterward must attempt a Fortitude save. Water creatures and plant creatures use the outcome one degree of success worse than the result of their saving throw. Creatures whose bodies contain no significant moisture (such as fire elementals) are immune to <em>breath of drought</em>.</p>\n<hr />\n<p><strong>Success</strong> The creature is unaffected.</p>\n<p><strong>Failure</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 1}.</p>\n<p><strong>Critical Failure</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 2}.</p>\n<hr />\n<p><strong>Heightened (4th)</strong> Once per round when you Sustain the Spell, you can move the center of the burst to a new location within range.</p>\n<p><strong>Heightened (7th)</strong> As the 4th-rank version, except the range is 120 feet and the area is a 20-foot burst.</p>",
             "range": "30 feet",
-            "time": "2"
+            "time": "2",
+            "heightening": {
+                "7": {
+                    "range": "120 feet"
+                }
+            }
         },
         "Breath of Life": {
             "name": "Breath of Life",
@@ -1132,7 +1189,15 @@
             "description": "<p>You amplify your voice, loud enough for you to be heard easily at a great distance. For the duration, your voice can be heard loudly and clearly by all listeners within 500 feet, even if other ambient noise would otherwise block the sound. Despite the volume, this doesn't make your voice jarring or distracting. This doesn't increase the range or area of other auditory or linguistic effects, and physical barriers such as walls and doors still block or muffle your voice as normal.</p>\n<p>Your loud voice makes it easier to Coerce others, and the acoustics assist in Performing at a large venue. You gain a +1 status bonus to checks to Coerce and auditory Performance checks to Perform at a large venue. You can Dismiss the spell.</p>\n<p>@UUID[Compendium.pf2e.spell-effects.Item.9yzlmYUdvdQshTDF]{Spell Effect: Bullhorn}</p>\n<hr />\n<p><strong>Heightened (5th)</strong> Your voice can be heard clearly up to 1,200 feet away.</p>\n<p><strong>Heightened (7th)</strong> Your voice can be heard clearly up to 1 mile away.</p>",
             "duration": "10 minutes",
             "range": "500 feet",
-            "time": "2"
+            "time": "2",
+            "heightening": {
+                "5": {
+                    "range": "1200 feet"
+                },
+                "7": {
+                    "range": "1 mile"
+                }
+            }
         },
         "Buoyant Bubbles": {
             "name": "Buoyant Bubbles",
@@ -1343,7 +1408,12 @@
             "duration": "1 hour",
             "range": "30 feet",
             "target": "1 creature",
-            "time": "2"
+            "time": "2",
+            "heightening": {
+                "8": {
+                    "target": "10 creatures"
+                }
+            }
         },
         "Charming Push": {
             "name": "Charming Push",
@@ -1486,7 +1556,12 @@
             "duration": "1 minute",
             "range": "30 feet",
             "target": "1 willing creature with an unarmed claw Strike",
-            "time": "2"
+            "time": "2",
+            "heightening": {
+                "4": {
+                    "target": "5 willing creatures with an unarmed claw Strike"
+                }
+            }
         },
         "Cleanse Affliction": {
             "name": "Cleanse Affliction",
@@ -1620,7 +1695,12 @@
             "duration": "until the end of the target's next turn",
             "range": "30 feet",
             "target": "1 creature",
-            "time": "2"
+            "time": "2",
+            "heightening": {
+                "5": {
+                    "target": "10 creatures"
+                }
+            }
         },
         "Commanding Lash": {
             "name": "Commanding Lash",
@@ -1721,7 +1801,12 @@
             "duration": "1 minute",
             "range": "30 feet",
             "target": "1 creature",
-            "time": "2"
+            "time": "2",
+            "heightening": {
+                "8": {
+                    "target": "10 creatures"
+                }
+            }
         },
         "Consecrate": {
             "name": "Consecrate",
@@ -2104,7 +2189,13 @@
             "name": "Darkvision",
             "description": "<p>You grant yourself supernatural sight in areas of darkness. You gain Darkvision.</p>\n<p>@UUID[Compendium.pf2e.spell-effects.Item.IXS15IQXYCZ8vsmX]{Spell Effect: Darkvision}</p>\n<p>@UUID[Compendium.pf2e.spell-effects.Item.inNfTmtWpsxeGBI9]{Spell Effect: Darkvision (24 hours)}</p>\n<hr />\n<p><strong>Heightened (3rd)</strong> The spell's range is touch and it targets 1 willing creature.</p>\n<p><strong>Heightened (5th)</strong> The spell's range is touch and it targets 1 willing creature. The duration is until the next time you make your daily preparations.</p>",
             "duration": "1 hour",
-            "time": "2"
+            "time": "2",
+            "heightening": {
+                "3": {
+                    "range": "touch",
+                    "target": "1 willing creature"
+                }
+            }
         },
         "Dawnflower's Light": {
             "name": "Dawnflower's Light",
@@ -2120,7 +2211,12 @@
             "duration": "1 minute",
             "range": "120 feet",
             "target": "1 living creature",
-            "time": "2"
+            "time": "2",
+            "heightening": {
+                "6": {
+                    "target": "10 living creatures"
+                }
+            }
         },
         "Daydreamer's Curse": {
             "name": "Daydreamer's Curse",
@@ -2201,7 +2297,21 @@
             "description": "<p>You stir the inner fire of all things within the area, driving out moisture. All creatures in the area take @Damage[1d6[persistent,fire]] damage with a basic Fortitude save; creatures with the water or plant traits get a result one degree of success worse than they rolled. The spell ends for a creature when its persistent damage ends.</p>\n<p>A creature affected by <em>dehydrate</em> attempts an additional Fortitude save at the end of each of its turns, before rolling to recover from the persistent damage. It can forgo this additional save if it consumed water or a similar hydrating liquid within the last round (drinking typically requires a single action).</p>\n<hr />\n<p><strong>Success</strong> The creature takes no additional effect.</p>\n<p><strong>Failure</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 1} until the end of its next turn.</p>\n<p><strong>Critical Failure</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 2} until the end of its next turn.</p>\n<hr />\n<p><strong>Heightened (+2)</strong> The range increases by 10 feet, the burst increases by 5 feet, and the persistent fire damage increases by [[/r 3d6]].</p>",
             "duration": "1 minute",
             "range": "30 feet",
-            "time": "2"
+            "time": "2",
+            "heightening": {
+                "3": {
+                    "range": "40 feet"
+                },
+                "5": {
+                    "range": "50 feet"
+                },
+                "7": {
+                    "range": "60 feet"
+                },
+                "9": {
+                    "range": "70 feet"
+                }
+            }
         },
         "Deity's Strike": {
             "name": "Deity's Strike",
@@ -2407,7 +2517,12 @@
             "duration": "1 minute",
             "range": "30 feet",
             "target": "1 creature",
-            "time": "1"
+            "time": "1",
+            "heightening": {
+                "5": {
+                    "target": "2 creatures"
+                }
+            }
         },
         "Disguise Magic": {
             "name": "Disguise Magic",
@@ -2470,7 +2585,12 @@
             "duration": "varies",
             "range": "30 feet",
             "target": "1 creature",
-            "time": "2"
+            "time": "2",
+            "heightening": {
+                "7": {
+                    "target": "5 creatures"
+                }
+            }
         },
         "Div Pact": {
             "name": "Div Pact",
@@ -2775,7 +2895,12 @@
             "duration": "until your next daily preparations",
             "range": "planetary",
             "target": "1 creature you know by name and have met in person",
-            "time": "10 minutes"
+            "time": "10 minutes",
+            "heightening": {
+                "4": {
+                    "target": "10 creatures you know by name and have met in person"
+                }
+            }
         },
         "Dreamer's Call": {
             "name": "Dreamer's Call",
@@ -2854,7 +2979,12 @@
             "description": "<p>You shake the ground, topple creatures into fissures, and collapse structures. The GM might add additional effects in certain areas. Cliffs might collapse, causing creatures to fall, or a lake might drain as fissures open up below its surface, leaving a morass of quicksand.</p>\n<ul>\n<li><strong>Shaking Ground</strong> The ground is difficult terrain, and creatures on it take a -2 circumstance penalty to attack rolls, AC, and skill checks. @UUID[Compendium.pf2e.spell-effects.Item.09rtx50laDw68FGT]{Spell Effect: Earthquake (Shaking Ground)}</li>\n<li><strong>Fissures</strong> Each creature on the ground must attempt a Reflex save at the start of its turn to keep its footing and avoid falling into 40-foot-deep fissures that open beneath it. The fissures are permanent, and their sides require successful @Check[type:athletics|dc:15|traits:action:climb] to Climb.</li>\n<li><strong>Collapse Structures</strong> and ceilings might collapse. The GM rolls a flat check for each (@Check[type:flat|dc:16] for a sturdy structure, @Check[type:flat|dc:14] for an average structure and most natural formations, @Check[type:flat|dc:9] for a shoddy structure, all adjusted higher or lower as the GM sees fit). A collapse deals 11d6 bludgeoning damage to each creature caught in it with a basic Reflex save. A creature falls @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone} unless it critically succeeds and falls into a fissure if it critically fails.</li>\n</ul>\n<hr />\n<p><strong>Heightened (10th)</strong> You create a massive earthquake that can devastate a settlement. The range increases to half a mile and the area to a quarter-mile burst.</p>",
             "duration": "1 round",
             "range": "500 feet",
-            "time": "2"
+            "time": "2",
+            "heightening": {
+                "10": {
+                    "range": "half a mile"
+                }
+            }
         },
         "Earthworks": {
             "name": "Earthworks",
@@ -2902,7 +3032,19 @@
             "description": "<p>Walking over to an item to pick it up is so much effort. Whether it's your spellbook, a reagent, or a glass of wine, it's simply more efficient to call it to your hand. You teleport the target into your open hand. If you don't have a hand free, it falls to the ground at your feet.</p>\n<hr />\n<p><strong>Heightened (3rd)</strong> You can target an unattended object with a Bulk of 1 or less</p>\n<p><strong>Heightened (5th)</strong> The range increases to 120 feet, and you can target an unattended object with a Bulk of 1 or less.</p>\n<p><strong>Heightened (7th)</strong> The range increases to 120 feet, and you can target an unattended object with a Bulk of 2 or less.</p>",
             "range": "60 feet",
             "target": "1 unattended object of light Bulk or less",
-            "time": "1"
+            "time": "1",
+            "heightening": {
+                "3": {
+                    "target": "an unattended object with a Bulk of 1 or less"
+                },
+                "5": {
+                    "range": "120 feet",
+                    "target": "an unattended object with a Bulk of 1 or less"
+                },
+                "7": {
+                    "target": "an unattended object with a Bulk of 2 or less"
+                }
+            }
         },
         "Eidolon's Wrath": {
             "name": "Eidolon's Wrath",
@@ -3015,7 +3157,12 @@
             "duration": "1 minute",
             "range": "30 feet",
             "target": "1 willing creature",
-            "time": "2"
+            "time": "2",
+            "heightening": {
+                "8": {
+                    "target": "5 willing creatures"
+                }
+            }
         },
         "Elemental Motion": {
             "name": "Elemental Motion",
@@ -3200,7 +3347,12 @@
             "duration": "5 minutes",
             "range": "30 feet",
             "target": "1 willing creature",
-            "time": "2"
+            "time": "2",
+            "heightening": {
+                "6": {
+                    "target": "10 willing creatures"
+                }
+            }
         },
         "Enlarge Companion": {
             "name": "Enlarge Companion",
@@ -3313,7 +3465,13 @@
             "name": "Ethereal Jaunt",
             "description": "<p>You travel to the Ethereal Plane, which overlaps the Material Plane. Material Plane creatures can't see you, and you can move through things on the Material Plane. You move at half your normal Speeds, but can move in any direction (including up and down). You can see onto the Material Plane within a radius of 60 feet; it is gray, hazy, and @UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{Concealed} from you. You can't affect the Material Plane, and you can't be affected by the Material Plane except by force effects and abjurations originating there. When the spell ends, you return to the Material Plane. If you're in the air, you fall (unless you can fly), and if you're inside an object, you're pushed into the nearest open space and take 1d6 damage per 5 feet you were pushed. If you cast this spell when not on the Material Plane, it is lost.</p>\n<hr />\n<p><strong>Heightened (9th)</strong> You can target up to five additional willing creatures at a range of 30 feet. The duration is up to 10 minutes.</p>",
             "duration": "1 minute",
-            "time": "2"
+            "time": "2",
+            "heightening": {
+                "9": {
+                    "range": "30 feet",
+                    "target": "you and up to five additional willing creatures"
+                }
+            }
         },
         "Etheric Shards": {
             "name": "Etheric Shards",
@@ -3454,7 +3612,13 @@
             "name": "Face in the Crowd",
             "description": "<p>While in a crowd of roughly similar creatures, your appearance becomes bland and nondescript. You gain a +2 status bonus to Deception and Stealth checks to go incognito among the crowd, and you ignore difficult terrain caused by the crowd. This counts as setting up a disguise for the @UUID[Compendium.pf2e.actionspf2e.Item.AJstokjdG6iDjVjE]{Impersonate} use of Deception and you add your level even if you're untrained.</p>\n<p>@UUID[Compendium.pf2e.spell-effects.Item.4iakL7fDcZ8RT6Tu]{Spell Effect: Face in the Crowd}</p>\n<hr />\n<p><strong>Heightened (3rd)</strong> The spell gains a range of 10 feet and can target up to 10 creatures.</p>",
             "duration": "1 minute",
-            "time": "1"
+            "time": "1",
+            "heightening": {
+                "3": {
+                    "range": "10 feet",
+                    "target": "10 creatures"
+                }
+            }
         },
         "Faerie Dust": {
             "name": "Faerie Dust",
@@ -3531,7 +3695,12 @@
             "duration": "8 hours",
             "range": "60 feet",
             "target": "1 willing creature or object",
-            "time": "2"
+            "time": "2",
+            "heightening": {
+                "3": {
+                    "target": "up to 10 creatures"
+                }
+            }
         },
         "Familiar Form": {
             "name": "Familiar Form",
@@ -3622,14 +3791,24 @@
             "duration": "varies",
             "range": "30 feet",
             "target": "1 creature",
-            "time": "2"
+            "time": "2",
+            "heightening": {
+                "3": {
+                    "target": "5 creatures"
+                }
+            }
         },
         "Fear the Sun": {
             "name": "Fear the Sun",
             "description": "<p>You cause the creature's vision to become particularly sensitive. The creature must attempt a Fortitude save. The creature is then temporarily immune for 1 minute.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]{Dazzled} for 1 round.</p>\n<p><strong>Failure</strong> The creature is dazzled for 1 minute.</p>\n<p><strong>Critical Failure</strong> The creature gains @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.I0HYG0ctCLP5JRsW]{Light Blindness} for 1 minute. If the creature is already exposed to bright light, it immediately becomes @UUID[Compendium.pf2e.conditionitems.Item.XgEqL1kFApUbl5Z2]{Blinded}, as it isn't acclimated to its newly acquired light blindness.</p>\n<hr />\n<p><strong>Heightened (6th)</strong> You can target up to 10 creatures.</p>",
             "range": "30 feet",
             "target": "1 creature",
-            "time": "2"
+            "time": "2",
+            "heightening": {
+                "6": {
+                    "target": "10 creatures"
+                }
+            }
         },
         "Fearful Feast": {
             "name": "Fearful Feast",
@@ -4206,7 +4385,15 @@
             "name": "Ghost Sound",
             "description": "<p>You create an auditory illusion of simple sounds that has a maximum volume equal to four normal humans shouting. The sounds emanate from a square you designate within range. You can't create intelligible words or other intricate sounds (such as music).</p>\n<hr />\n<p><strong>Heightened (3rd)</strong> The range increases to 60 feet.</p>\n<p><strong>Heightened (5th)</strong> The range increases to 120 feet.</p>",
             "range": "30 feet",
-            "time": "2"
+            "time": "2",
+            "heightening": {
+                "3": {
+                    "range": "60 feet"
+                },
+                "5": {
+                    "range": "120 feet"
+                }
+            }
         },
         "Ghostly Carrier": {
             "name": "Ghostly Carrier",
@@ -4356,7 +4543,12 @@
             "duration": "1 minute",
             "range": "60 feet",
             "target": "1 creature",
-            "time": "2"
+            "time": "2",
+            "heightening": {
+                "6": {
+                    "target": "up to 5 creatures"
+                }
+            }
         },
         "Grasping Earth": {
             "name": "Grasping Earth",
@@ -4500,7 +4692,15 @@
             "duration": "1 hour",
             "range": "30 feet",
             "target": "1 creature",
-            "time": "2"
+            "time": "2",
+            "heightening": {
+                "6": {
+                    "target": "1 or 10 creatures"
+                },
+                "7": {
+                    "target": "1 or any number of creatures"
+                }
+            }
         },
         "Hand of the Apprentice": {
             "name": "Hand of the Apprentice",
@@ -4540,7 +4740,12 @@
             "duration": "1 minute",
             "range": "30 feet",
             "target": "1 creature",
-            "time": "2"
+            "time": "2",
+            "heightening": {
+                "7": {
+                    "target": "6 creatures"
+                }
+            }
         },
         "Hasted Assault": {
             "name": "Hasted Assault",
@@ -4719,7 +4924,12 @@
             "description": "<p><strong>Area</strong> 1 cube 20 feet on each side</p>\n<hr />\n<p>You weave light into a cube of vivid and fantastic patterns. The walls shed bright light for 10 feet (and dim light for the next 20 feet) and completely block line of sight; creatures within the cage can't be seen by creatures outside of it, though they can see each other, and creatures outside of it can't see into it. You can @UUID[Compendium.pf2e.actionspf2e.Item.AjLSHZSWQ90exdLo]{Dismiss} the spell, and if you Cast the Spell again, your previous hologram cage ends.</p>\n<hr />\n<p><strong>Heightened (7th)</strong> The range of the spell increases to 80 feet, and you can expand the cube to be 25 feet on each side.</p>\n<hr />\n<p><strong>Amp</strong> Force walls make the cage's barrier physical as well as visual. Each 10-foot-by-10-foot section of the cage's wall has AC 10, Hardness equal to double the spell's rank, and HP equal to quadruple the spell's rank. The spell is disrupted if any of its walls would pass through a creature when you cast it.</p>",
             "duration": "1 minute",
             "range": "60 feet",
-            "time": "3"
+            "time": "3",
+            "heightening": {
+                "7": {
+                    "range": "80 feet"
+                }
+            }
         },
         "Holy Cascade": {
             "name": "Holy Cascade",
@@ -4837,7 +5047,15 @@
             "duration": "varies",
             "range": "30 feet",
             "target": "1 creature",
-            "time": "2"
+            "time": "2",
+            "heightening": {
+                "3": {
+                    "target": "2 creatures"
+                },
+                "6": {
+                    "target": "4 creatures"
+                }
+            }
         },
         "Hypnopompic Terrors": {
             "name": "Hypnopompic Terrors",
@@ -5333,7 +5551,13 @@
         "Jump": {
             "name": "Jump",
             "description": "<p>Your legs surge with strength, ready to leap high and far. You jump 30 feet in any direction without touching the ground. You must land on a space of solid ground within 30 feet of you, or else you fall after using your next action.</p>\n<hr />\n<p><strong>Heightened (3rd)</strong> The range becomes touch, the target changes to one touched creature, and the duration becomes 1 minute, allowing the target to jump as described whenever it takes the @UUID[Compendium.pf2e.actionspf2e.Item.d5I6018Mci2SWokk]{Leap} action.</p>",
-            "time": "1"
+            "time": "1",
+            "heightening": {
+                "3": {
+                    "range": "touch",
+                    "target": "1 creature"
+                }
+            }
         },
         "Juvenile Companion": {
             "name": "Juvenile Companion",
@@ -5391,7 +5615,18 @@
             "description": "<p>You create an invisible anchor at a location within range (even if it's outside your line of sight or line of effect), as long as you can identify the location by its appearance (or other identifying features). You innately know the direction towards that location, including relative depth, but not the distance. Incorrect knowledge of the location's appearance usually causes the spell to fail, but it could instead lead to an unwanted location or some other unusual mishap determined by the GM. This spell doesn't help you find a suitable route to the location nor assist you in overcoming obstacles on the way there.</p>\n<hr />\n<p><strong>Heightened (3rd)</strong> The range is 10 miles.</p>\n<p><strong>Heightened (5th)</strong> The range is 100 miles.</p>\n<p><strong>Heightened (7th)</strong> The range is planetary and you can create an anchor at a location you've viewed with scrying or similar effects.</p>",
             "duration": "until the next time you make your daily preparations",
             "range": "1 mile",
-            "time": "1 minute"
+            "time": "1 minute",
+            "heightening": {
+                "3": {
+                    "range": "10 miles"
+                },
+                "5": {
+                    "range": "100 miles"
+                },
+                "7": {
+                    "range": "Planetary"
+                }
+            }
         },
         "Know the Enemy": {
             "name": "Know the Enemy",
@@ -5501,7 +5736,18 @@
             "duration": "1 minute",
             "range": "30 feet",
             "target": "1 creature other than you",
-            "time": "1"
+            "time": "1",
+            "heightening": {
+                "3": {
+                    "target": "2 creatures other than you"
+                },
+                "6": {
+                    "target": "3 creatures other than you"
+                },
+                "9": {
+                    "target": "4 creatures other than you"
+                }
+            }
         },
         "Life Pact": {
             "name": "Life Pact",
@@ -5657,7 +5903,12 @@
             "description": "<p>You learn the direction to the target (if you picked a specific object, such as \"my mother's sword\") or the nearest target (if you picked a type of object, such as \"swords\"). If the target is a specific object, you must have observed it directly with your own senses. If it's a type of object, you still need to have an accurate mental image of the type of object. If there's lead or running water between you and the target, this spell can't locate the object. This means you might find a type of object farther away if the nearest one is behind lead or running water.</p>\n<hr />\n<p><strong>Heightened (5th)</strong> You can target a specific creature or ancestry instead of an object, but you must have met or seen up close the creature or ancestry you want to target.</p>",
             "range": "500 feet",
             "target": "1 specific object or type of object",
-            "time": "10 minutes"
+            "time": "10 minutes",
+            "heightening": {
+                "5": {
+                    "target": "1 specific object or type of object, or a specific creature or ancestry"
+                }
+            }
         },
         "Lock": {
             "name": "Lock",
@@ -5951,7 +6202,15 @@
             "description": "<p>You repair the target item. You restore 5 Hit Points per spell rank to the target, potentially removing the @UUID[Compendium.pf2e.conditionitems.Item.6dNUvdb1dhToNDj3]{Broken} condition if this repairs it past the item's Broken Threshold. You can't replace lost pieces or repair an object that's been completely destroyed.</p>\n<hr />\n<p><strong>Heightened (2nd)</strong> You can target a non-magical object of 1 Bulk or less.</p>\n<p><strong>Heightened (3rd)</strong> You can target a non-magical object of 2 Bulk or less, or a magical object of 1 Bulk or less.</p>",
             "range": "touch",
             "target": "non-magical object of light Bulk or less",
-            "time": "10 minutes"
+            "time": "10 minutes",
+            "heightening": {
+                "2": {
+                    "target": "non-magical object of 1 Bulk or less"
+                },
+                "3": {
+                    "target": "non-magical object of 2 Bulk or less, or a magical object of 1 Bulk or less"
+                }
+            }
         },
         "Mercurial Stride": {
             "name": "Mercurial Stride",
@@ -5964,7 +6223,12 @@
             "duration": "see below",
             "range": "120 feet",
             "target": "1 creature",
-            "time": "1"
+            "time": "1",
+            "heightening": {
+                "3": {
+                    "range": "500 feet"
+                }
+            }
         },
         "Message Rune": {
             "name": "Message Rune",
@@ -6222,7 +6486,12 @@
             "duration": "until you next perform your daily preparations",
             "range": "touch",
             "target": "1 animal",
-            "time": "2"
+            "time": "2",
+            "heightening": {
+                "8": {
+                    "target": "up to 5 animals."
+                }
+            }
         },
         "Mud Pit": {
             "name": "Mud Pit",
@@ -6359,7 +6628,13 @@
             "duration": "1 hour",
             "range": "touch",
             "target": "1 willing creature",
-            "time": "2"
+            "time": "2",
+            "heightening": {
+                "5": {
+                    "range": "30 feet",
+                    "target": "10 willing creatures"
+                }
+            }
         },
         "Nettleskin": {
             "name": "Nettleskin",
@@ -6634,7 +6909,12 @@
             "duration": "varies",
             "range": "30 feet",
             "target": "1 creature",
-            "time": "2"
+            "time": "2",
+            "heightening": {
+                "7": {
+                    "target": "10 creatures"
+                }
+            }
         },
         "Paranoia": {
             "name": "Paranoia",
@@ -6642,14 +6922,24 @@
             "duration": "1 minute",
             "range": "30 feet",
             "target": "1 creature",
-            "time": "2"
+            "time": "2",
+            "heightening": {
+                "6": {
+                    "target": "5 creatures"
+                }
+            }
         },
         "Parch": {
             "name": "Parch",
             "description": "<p>Dry winds dehydrate a creature. The target must attempt a Fortitude save; if used on a creature with the water trait or a creature made primarily of liquid (such as many oozes), the creature uses the outcome for one degree of success worse than the result. Creatures whose bodies contain no significant moisture (such as earth elementals) are immune to <em>parch</em>.</p>\n<p>If a creature affected by <em>parch</em> drinks a liquid, such as a swig of water or a potion, the spell ends. Affected creatures that have the water trait or are made primarily of liquid, as well as affected creatures that can't drink, can end the effect as a two-action activity, which has the concentrate trait.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target takes a -1 status penalty to its checks and DCs for 1 round.</p>\n<p><strong>Failure</strong> The target takes a -1 status penalty to its checks and DCs for 1 minute.</p>\n<p><strong>Critical Failure</strong> The target takes a -2 status penalty to its checks and DCs for 1 minute and is @UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]{Dazzled} as long as it has this penalty.</p>\n<hr />\n<p><strong>Heightened (4th)</strong> You can target up to 4 creatures.</p>",
             "range": "60 feet",
             "target": "1 creature",
-            "time": "2"
+            "time": "2",
+            "heightening": {
+                "4": {
+                    "target": "4 creatures"
+                }
+            }
         },
         "Path of Least Resistance": {
             "name": "Path of Least Resistance",
@@ -6680,7 +6970,16 @@
             "duration": "until the next time you make your daily preparations",
             "range": "touch",
             "target": "1 corpse",
-            "time": "2"
+            "time": "2",
+            "heightening": {
+                "5": {
+                    "time": "3",
+                    "traits": [
+                        "concentrate",
+                        "manipulate"
+                    ]
+                }
+            }
         },
         "Penumbral Disguise": {
             "name": "Penumbral Disguise",
@@ -6861,7 +7160,12 @@
             "duration": "1 minute",
             "range": "50 feet",
             "target": "1 creature",
-            "time": "3"
+            "time": "3",
+            "heightening": {
+                "8": {
+                    "target": "5 creatures"
+                }
+            }
         },
         "Phantom Ship": {
             "name": "Phantom Ship",
@@ -7271,7 +7575,15 @@
             "description": "<p>You tap into the zeitgeist of any settlements in range. You learn the names of the settlements. On all Lore checks to Recall Knowledge about those settlements or to Gather Information in or about those settlements, you gain a +2 status bonus and use your level as your proficiency bonus even if you're untrained. When you Cast the Spell, you can immediately Recall Knowledge about one of the settlements using its Lore skill (such as Absalom Lore), which benefits from the bonus. If you cast pulse of civilization again, any previous casting ends.</p>\n<hr />\n<p><strong>Heightened (5th)</strong> The range is 100 miles.</p>\n<p><strong>Heightened (7th)</strong> The range is 500 miles and the bonus is +3</p>",
             "duration": "8 hours",
             "range": "25 miles",
-            "time": "2"
+            "time": "2",
+            "heightening": {
+                "5": {
+                    "range": "100 miles"
+                },
+                "7": {
+                    "range": "500 miles"
+                }
+            }
         },
         "Pulverizing Cascade": {
             "name": "Pulverizing Cascade",
@@ -7332,7 +7644,15 @@
             "description": "<p>You cause otherwise edible food to rot and spoil instantly, and water and other liquids to become brackish and undrinkable. @UUID[Compendium.pf2e.equipment-srd.Item.z9T4c1hXwOotsMCp]{Holy Water}, @UUID[Compendium.pf2e.equipment-srd.Item.EGhUorZhB7nV73Ev]{Unholy Water}, and similar food and drink of significance are spoiled by this spell, unless they are associated with a deity of decay or putrefaction, but it has no effect on creatures of any type, potions, or alchemical elixirs. One cubic foot of liquid is roughly 8 gallons.</p>\n<hr />\n<p><strong>Heightened (2nd)</strong> You can target an alchemical elixir with this spell, attempting a counteract check against it. If you succeed, the elixir spoils and becomes a mundane item.</p>\n<p><strong>Heightened (3rd)</strong> You can target a potion or alchemical elixir with this spell, attempting a counteract check against it. If you succeed, the elixir or potion spoils and becomes a mundane item.</p>",
             "range": "touch",
             "target": "1 cubic foot of clean food or water",
-            "time": "2"
+            "time": "2",
+            "heightening": {
+                "2": {
+                    "target": "1 cubic foot of clean food or water, or an alchemical elixir"
+                },
+                "3": {
+                    "target": "1 cubic foot of clean food or water, or a potion or alchemical elixir"
+                }
+            }
         },
         "Pyrotechnics": {
             "name": "Pyrotechnics",
@@ -7361,7 +7681,15 @@
             "duration": "up to 1 minute",
             "range": "10 feet",
             "target": "up to 200 unattended objects in range, each of light Bulk or less",
-            "time": "3"
+            "time": "3",
+            "heightening": {
+                "3": {
+                    "target": "up to 400 unattended objects in range, each of light Bulk or less"
+                },
+                "5": {
+                    "target": "up to 800 unattended objects in range, each of light Bulk or less"
+                }
+            }
         },
         "Quicken Time": {
             "name": "Quicken Time",
@@ -7506,7 +7834,15 @@
             "description": "<p>You focus on the target object, opening your mind to perceive magical auras. When the casting is complete, you know whether that item is magical. You or anyone you advise about the aura gains a +2 circumstance bonus to @UUID[Compendium.pf2e.actionspf2e.Item.eReSHVEPCsdkSL4G]{Identify Magic} on the item. If the object is illusory, you detect this only if the effect's rank is lower than the rank of your <em>read aura</em> spell.</p>\n<hr />\n<p><strong>Heightened (3rd)</strong> You can target up to 10 objects.</p>\n<p><strong>Heightened (6th)</strong> You can target any number of objects.</p>",
             "range": "30 feet",
             "target": "1 object",
-            "time": "1 minute"
+            "time": "1 minute",
+            "heightening": {
+                "3": {
+                    "target": "10 objects"
+                },
+                "6": {
+                    "target": "any number of objects"
+                }
+            }
         },
         "Read Fate": {
             "name": "Read Fate",
@@ -7666,7 +8002,15 @@
             "duration": "10 minutes",
             "range": "touch",
             "target": "1 creature",
-            "time": "2"
+            "time": "2",
+            "heightening": {
+                "4": {
+                    "target": "2 creatures"
+                },
+                "7": {
+                    "target": "5 creatures"
+                }
+            }
         },
         "Resplendent Mansion": {
             "name": "Resplendent Mansion",
@@ -7871,7 +8215,12 @@
             "description": "<p>Your flamboyant flourish invokes such powerful feelings in your audience that you incite cheers and applause. Targets of this spell must be able to see, hear, or otherwise understand you. The targets must attempt a Will save.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target becomes mildly distracted by your display and applauds while it isn't fully occupied. It can't use reactions.</p>\n<p><strong>Failure</strong> The target applauds you so vigorously that it can't use reactions and is @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1}. The applause is so involved that it has the manipulate trait. This triggers reactions based on the manipulate trait at the start of the target's turn.</p>\n<p><strong>Critical Failure</strong> As failure, plus the target is so distracted by its vigorous applauding of you that it's @UUID[Compendium.pf2e.conditionitems.Item.AdPVz7rbaVSRxHFg]{Fascinated} with you.</p>\n<hr />\n<p><strong>Heightened (6th)</strong> You can target up to 10 creatures.</p>",
             "range": "60 feet",
             "target": "1 creature",
-            "time": "2"
+            "time": "2",
+            "heightening": {
+                "4": {
+                    "target": "10 creatures"
+                }
+            }
         },
         "Root Reading": {
             "name": "Root Reading",
@@ -8088,7 +8437,12 @@
             "description": "<p>You blast the area with grit that scours away soil and gets into creatures' eyes. For the duration of the spell, any plant-based difficult terrain smaller than a tree becomes loose, allowing each 5-foot square of it to be cleared with a single Interact action. In addition, <em>scouring sand</em> attempts to counteract <em>@UUID[Compendium.pf2e.spells-srd.Item.J6vNvrUT3b1hx2iA]{Entangling Flora}</em> and other effects that create or manipulate plant-based terrain in its area. Successfully counteracting an effect removes only the portion of its area that overlaps with <em>scouring sand's</em> area. After one such attempt, the effect is temporarily immune to <em>scouring sand's</em> counteract for 24 hours. Each creature in the area when you Cast this Spell or that ends its turn in the area must attempt a Reflex save.</p>\n<hr />\n<p><strong>Success</strong> The creature is unaffected.</p>\n<p><strong>Failure</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]{Dazzled} for 1 minute or until it uses an Interact action to get the sand out of its eyes.</p>\n<p><strong>Critical Failure</strong> As failure, but the creature is also @UUID[Compendium.pf2e.conditionitems.Item.XgEqL1kFApUbl5Z2]{Blinded} for its next action.</p>\n<hr />\n<p><strong>Heightened (3rd)</strong> Once per round when you Sustain the Spell, you can move the center of the burst to a spot within range.</p>\n<p><strong>Heightened (6th)</strong> As the 3rd-rank version, except the range is 120 feet and the area is a 20-foot burst.</p>",
             "duration": "1 minute",
             "range": "60 feet",
-            "time": "2"
+            "time": "2",
+            "heightening": {
+                "6": {
+                    "range": "120 feet"
+                }
+            }
         },
         "Scouting Eye": {
             "name": "Scouting Eye",
@@ -8125,7 +8479,12 @@
             "duration": "10 minutes",
             "range": "touch",
             "target": "1 creature or object",
-            "time": "2"
+            "time": "2",
+            "heightening": {
+                "5": {
+                    "target": "6 creatures or objects"
+                }
+            }
         },
         "Sea Surge": {
             "name": "Sea Surge",
@@ -8272,7 +8631,12 @@
             "duration": "varies",
             "range": "30 feet",
             "target": "1 zombie of level 1 or lower",
-            "time": "2"
+            "time": "2",
+            "heightening": {
+                "4": {
+                    "target": "1 zombie of level 5 or lower"
+                }
+            }
         },
         "Shadow's Web": {
             "name": "Shadow's Web",
@@ -8335,7 +8699,12 @@
             "duration": "10 minutes",
             "range": "touch",
             "target": "up to 3 creatures",
-            "time": "1 minute"
+            "time": "1 minute",
+            "heightening": {
+                "3": {
+                    "target": "up to 5 creatures"
+                }
+            }
         },
         "Shared Nightmare": {
             "name": "Shared Nightmare",
@@ -8410,7 +8779,12 @@
             "areadetails": "a horizontal earthen or sandy surface within a 20-foot burst",
             "duration": "1 minute",
             "range": "30 feet",
-            "time": "3"
+            "time": "3",
+            "heightening": {
+                "5": {
+                    "range": "60 feet"
+                }
+            }
         },
         "Shillelagh": {
             "name": "Shillelagh",
@@ -8459,7 +8833,12 @@
             "duration": "5 minutes",
             "range": "30 feet",
             "target": "1 willing creature",
-            "time": "2"
+            "time": "2",
+            "heightening": {
+                "6": {
+                    "target": "10 willing creatures"
+                }
+            }
         },
         "Shrink Item": {
             "name": "Shrink Item",
@@ -8575,7 +8954,12 @@
             "duration": "1 minute",
             "range": "30 feet",
             "target": "1 creature",
-            "time": "2"
+            "time": "2",
+            "heightening": {
+                "6": {
+                    "target": "10 creatures"
+                }
+            }
         },
         "Snare Hopping": {
             "name": "Snare Hopping",
@@ -8962,7 +9346,13 @@
             "duration": "until the next time you make your daily preparations",
             "range": "touch",
             "target": "1 willing living creature",
-            "time": "2"
+            "time": "2",
+            "heightening": {
+                "4": {
+                    "range": "30 feet",
+                    "target": "10 willing living creatures"
+                }
+            }
         },
         "Steal Shadow": {
             "name": "Steal Shadow",
@@ -9041,7 +9431,12 @@
             "description": "<p>A massive storm cloud forms in the air in a 360-foot burst. Beneath it, rain begins to fall, and gales impose a -4 circumstance penalty to physical ranged attacks and weapon ranged attacks, and the air in the area becomes greater difficult terrain for flying creatures. When you Cast this Spell and the first time each round you Sustain the Spell, you can choose one of the following storm effects. You can't choose the same effect twice in a row.</p>\n<ul>\n<li><strong>Acid Rain</strong> Each creature in the storm takes 4d8 acid damage with no saving throw.</li>\n<li><strong>Hail</strong> The storm deals 4d10 bludgeoning damage to creatures beneath it (basic Fortitude save).</li>\n<li><strong>Lightning</strong> Up to 10 bolts of lightning strike down, targeting creatures of your choice in the storm. No more than one bolt can target any one creature. Each bolt deals 7d6 electricity damage (basic Reflex save). </li>\n<li><strong>Rain and Wind</strong> Heavy rain and whipping wind reduce visibility and mobility, making the area under the storm cloud difficult terrain and making everything seen within or through the area @UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{Concealed}.</li>\n<li><strong>Thunderclap</strong> Each creature in the storm must succeed at a Fortitude save or be @UUID[Compendium.pf2e.conditionitems.Item.9PR9y0bi4JPKnHPR]{Deafened} for 10 minutes. A creature that succeeds is temporarily immune to thunderclaps from storm of vengeance for 1 hour.</li>\n</ul>\n<hr />\n<p><strong>Heightened (10th)</strong> The range increases to 2,200 feet, and the cloud is a 1,000-foot burst.</p>",
             "duration": "1 minute",
             "range": "800 feet",
-            "time": "3"
+            "time": "3",
+            "heightening": {
+                "10": {
+                    "range": "2200 feet"
+                }
+            }
         },
         "Stormburst": {
             "name": "Stormburst",
@@ -9092,7 +9487,12 @@
             "duration": "varies",
             "range": "30 feet",
             "target": "1 creature",
-            "time": "2"
+            "time": "2",
+            "heightening": {
+                "9": {
+                    "target": "up to 10 creatures"
+                }
+            }
         },
         "Subjugate Undead": {
             "name": "Subjugate Undead",
@@ -9135,7 +9535,12 @@
             "duration": "1 minute",
             "range": "30 feet",
             "target": "1 living creature that needs to breathe",
-            "time": "2"
+            "time": "2",
+            "heightening": {
+                "9": {
+                    "target": "up to 5 creatures"
+                }
+            }
         },
         "Suggestion": {
             "name": "Suggestion",
@@ -9143,7 +9548,12 @@
             "duration": "varies",
             "range": "30 feet",
             "target": "1 creature",
-            "time": "2"
+            "time": "2",
+            "heightening": {
+                "8": {
+                    "target": "10 creatures"
+                }
+            }
         },
         "Summerland Spell": {
             "name": "Summerland Spell",
@@ -9417,7 +9827,12 @@
             "description": "<p>You call upon the spirits of the soil to twist and churn, transforming the terrain in the targeted area into a sodden mess. The area becomes difficult terrain. Creatures in the area when you Cast this Spell must attempt a Reflex saving throw.</p>\n<hr />\n<p><strong>Success</strong> The creature is unaffected.</p>\n<p><strong>Failure</strong> The creature sinks partially into the mud. The creature takes a -10-foot circumstance penalty to its Speeds (except for its swim Speed, if any) and becomes @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard}. These effects last until the creature leaves the area or until the end of its next turn, whichever comes first.</p>\n<p><strong>Critical Failure</strong> As failure, but the penalty to Speeds (except Swim speed) is -15 feet.</p>\n<hr />\n<p><strong>Heightened (3rd)</strong> The range increases to 60 feet, and the area increases to a 20-foot burst.</p>\n<p>@UUID[Compendium.pf2e.spell-effects.Item.ROuGwXEvFznzGE9k]{Spell Effect: Swampcall (Failure)}</p>\n<p>@UUID[Compendium.pf2e.spell-effects.Item.otK6eG3b3FV7n2xP]{Spell Effect: Swampcall (Critical Failure)}</p>",
             "duration": "1 minute",
             "range": "30 feet",
-            "time": "2"
+            "time": "2",
+            "heightening": {
+                "3": {
+                    "range": "60 feet"
+                }
+            }
         },
         "Swarm Form": {
             "name": "Swarm Form",
@@ -9459,7 +9874,12 @@
             "description": "<p>Your symphony lifts listeners from their worldly concerns. Attempt a Performance check to counteract an effect applying one of the following conditions to the target: @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed}, @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Immobilized}, @UUID[Compendium.pf2e.conditionitems.Item.6uEgoh53GbXuHpTF]{Paralyzed}, @UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{Restrained}, @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed}, or @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned}. If you fail, you can't target the same effect on the target for 1 day. Use the condition's source to determine the counteract DC (for example, the @UUID[Compendium.pf2e.actionspf2e.Item.SkZAQRkLLkmBQNB9]{Escape} DC for grabbed).</p>\n<hr />\n<p><strong>Heightened (9th)</strong> You can target up to four creatures.</p>",
             "range": "30 feet",
             "target": "you or 1 ally",
-            "time": "2"
+            "time": "2",
+            "heightening": {
+                "9": {
+                    "target": "4 creatures"
+                }
+            }
         },
         "Synaptic Pulse": {
             "name": "Synaptic Pulse",
@@ -9473,7 +9893,12 @@
             "duration": "up to 24 hours",
             "range": "touch",
             "target": "up to 5 willing creatures",
-            "time": "2"
+            "time": "2",
+            "heightening": {
+                "2": {
+                    "target": "up to 20 willing creatures"
+                }
+            }
         },
         "Synchronize Steps": {
             "name": "Synchronize Steps",
@@ -9489,7 +9914,12 @@
             "duration": "1 minute",
             "range": "30 feet",
             "target": "1 creature",
-            "time": "2"
+            "time": "2",
+            "heightening": {
+                "9": {
+                    "target": "5 creatures"
+                }
+            }
         },
         "Tailwind": {
             "name": "Tailwind",
@@ -9558,7 +9988,21 @@
             "duration": "1 minute",
             "range": "30 feet",
             "target": "1 creature with teeth",
-            "time": "2"
+            "time": "2",
+            "heightening": {
+                "4": {
+                    "target": "3 creatures with teeth"
+                },
+                "6": {
+                    "target": "5 creatures with teeth"
+                },
+                "8": {
+                    "target": "7 creatures with teeth"
+                },
+                "10": {
+                    "target": "9 creatures with teeth"
+                }
+            }
         },
         "Telekinetic Bombardment": {
             "name": "Telekinetic Bombardment",
@@ -9571,7 +10015,18 @@
             "description": "<p>You create a floating, magical hand, either invisible or ghostlike, that grasps the target object and levitates it slowly up to 20 feet in any direction. When you Sustain the spell, you can move the object an additional 20 feet. If the object is in the air when the spell ends, the object falls.</p>\n<hr />\n<p><strong>Heightened (3rd)</strong> You can target an unattended object with a Bulk of 1 or less.</p>\n<p><strong>Heightened (5th)</strong> The range increases to 60 feet, and you can target an unattended object with a Bulk of 1 or less.</p>\n<p><strong>Heightened (7th)</strong> The range increases to 60 feet, and you can target an unattended object with a Bulk of 2 or less.</p>",
             "range": "30 feet",
             "target": "1 unattended object of light Bulk or less",
-            "time": "2"
+            "time": "2",
+            "heightening": {
+                "3": {
+                    "target": "1 unattended object with a Bulk of 1 or less"
+                },
+                "5": {
+                    "range": "60 feet"
+                },
+                "7": {
+                    "target": "1 unattended object with a Bulk of 2 or less"
+                }
+            }
         },
         "Telekinetic Haul": {
             "name": "Telekinetic Haul",
@@ -9810,7 +10265,12 @@
             "description": "<p>You teleport one object of light or negligible Bulk held in your hand to the target. The object appears instantly in the target's hand, if they have a free hand, or at their feet if they don't. The target knows what object you are attempting to send them. If the target is @UUID[Compendium.pf2e.conditionitems.Item.fBnFDH2MTzgFijKf]{Unconscious} or refuses to accept your gift, or if the spell would teleport a creature (even if the creature is inside an extradimensional container), the spell fails.</p>\n<hr />\n<p><strong>Heightened (3rd)</strong> The spell's range increases to 500 feet.</p>\n<p><strong>Heightened (5th)</strong> As 3rd level, and the object's maximum Bulk increases to 1. You can @UUID[Compendium.pf2e.actionspf2e.Item.aBQ8ajvEBByv45yz]{Cast the Spell} with 3 actions instead of 1; doing so increases the range to 1 mile and you don't need line of sight to the target, but you must be extremely familiar with the target.</p>",
             "range": "120 feet",
             "target": "1 willing creature",
-            "time": "1 to 3"
+            "time": "1 to 3",
+            "heightening": {
+                "3": {
+                    "range": "500 feet"
+                }
+            }
         },
         "Threefold Aspect": {
             "name": "Threefold Aspect",
@@ -9996,13 +10456,23 @@
             "duration": "1 hour",
             "range": "30 feet",
             "target": "1 creature",
-            "time": "2"
+            "time": "2",
+            "heightening": {
+                "4": {
+                    "target": "10 creatures"
+                }
+            }
         },
         "Translocate": {
             "name": "Translocate",
             "description": "<p>You instantly transport yourself and any items you're wearing and holding from your current space to an unoccupied space within range you can see. If this would bring another creature with you\u2014even if you're carrying it in an extradimensional container\u2014the spell is lost.</p>\n<hr />\n<p><strong>Heightened (5th)</strong> The range increases to 1 mile. You don't need to be able to see your destination, as long as you have been there in the past and know its relative location and distance from you. You are then temporarily immune for 1 hour.</p>",
             "range": "120 feet",
-            "time": "2"
+            "time": "2",
+            "heightening": {
+                "5": {
+                    "range": "1 mile"
+                }
+            }
         },
         "Transmigrate": {
             "name": "Transmigrate",
@@ -10410,7 +10880,12 @@
             "name": "Vanishing Tracks",
             "description": "<p>You obscure the tracks you leave behind. The DC of checks to Track you gains a +4 status bonus or is equal to your spell DC, whichever results in a higher DC.</p>\n<hr />\n<p><strong>Heightened (2nd)</strong> The duration increases to 8 hours.</p>\n<p><strong>Heightened (4th)</strong> The duration increases to 8 hours. The spell has a range of 20 feet and an area of a 20-foot-emanation, affecting up to 10 creatures of your choice within that area.</p>",
             "duration": "1 hour",
-            "time": "2"
+            "time": "2",
+            "heightening": {
+                "4": {
+                    "range": "20 feet"
+                }
+            }
         },
         "Vapor Form": {
             "name": "Vapor Form",
@@ -10494,7 +10969,12 @@
             "duration": "1 minute",
             "range": "30 feet",
             "target": "1 creature",
-            "time": "2"
+            "time": "2",
+            "heightening": {
+                "4": {
+                    "target": "up to 10 creatures"
+                }
+            }
         },
         "Victory Cry": {
             "name": "Victory Cry",
@@ -10509,7 +10989,18 @@
             "duration": "varies",
             "range": "60 feet",
             "target": "1 creature",
-            "time": "2"
+            "time": "2",
+            "heightening": {
+                "6": {
+                    "target": "2 creatures"
+                },
+                "8": {
+                    "target": "3 creatures"
+                },
+                "10": {
+                    "target": "4 creatures"
+                }
+            }
         },
         "Vision of Death": {
             "name": "Vision of Death",
@@ -10781,7 +11272,13 @@
             "duration": "10 minutes",
             "range": "touch",
             "target": "1 creature",
-            "time": "2"
+            "time": "2",
+            "heightening": {
+                "4": {
+                    "range": "30 feet",
+                    "target": "10 creatures"
+                }
+            }
         },
         "Waterproof": {
             "name": "Waterproof",
@@ -10856,7 +11353,12 @@
             "description": "<p>You create a sticky web in the area that impedes creatures' movement each time they try to move through it. Squares filled with the web are difficult terrain. Each square can be cleared of the web by a single attack or effect that deals at least 5 slashing damage or 1 fire damage. A square has AC 5, and it automatically fails its saving throws.</p>\n<p>Each time a creature in the web begins to use a move action or enters the web during a move action, it must attempt an Athletics check or Reflex save against your spell DC to avoid taking a circumstance penalty to its Speeds or becoming @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Immobilized}. A creature that gets out of the web ceases to take a circumstance penalty to its Speed from the web.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected, and it doesn't need to attempt further Athletics checks or saving throws against the web this turn. If it used an Athletics check, it clears the web from every square it leaves after leaving the square.</p>\n<p><strong>Success</strong> The creature is unaffected during its action. If it used an Athletics check, it clears the web from every square it leaves after leaving the square.</p>\n<p><strong>Failure</strong> The creature takes a -10-foot circumstance penalty to its Speeds until the start of its next turn.</p>\n<p><strong>Critical Failure</strong> The creature is Immobilized until the start of its next turn, after which it takes a -10-foot circumstance penalty to its Speeds for 1 round. It can attempt to Escape to remove its Immobilized condition.</p>\n<hr />\n<p><strong>Heightened (4th)</strong> The spell's area increases to a 20-foot burst, and its range increases to 60 feet.</p>",
             "duration": "1 minute",
             "range": "30 feet",
-            "time": "3"
+            "time": "3",
+            "heightening": {
+                "4": {
+                    "range": "60 feet"
+                }
+            }
         },
         "Web of Eyes": {
             "name": "Web of Eyes",
