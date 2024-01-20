@@ -126,7 +126,12 @@
         },
         "Crush Dissent": {
             "name": "Crush Dissent",
-            "description": "<p>Your rule brooks no dissent and stamps out traitors, making harsh examples of them. Once per Kingdom turn when you gain Unrest, you can attempt to crush the dissent by attempting a basic @Check[warfare|dc:resolve(@kingdom.control.dc)] check. On a success, the Unrest increase is canceled, but on a critical failure, the Unrest increase is doubled. In addition, you gain a +1 status bonus to checks to resolve dangerous kingdom events that involve internal bickering, such as Feud.</p>"
+            "description": "<p>Your rule brooks no dissent and stamps out traitors, making harsh examples of them. Once per Kingdom turn when you gain Unrest, you can attempt to crush the dissent by attempting a basic @Check[warfare|dc:resolve(@kingdom.control.dc)] check. On a success, the Unrest increase is canceled, but on a critical failure, the Unrest increase is doubled. In addition, you gain a +1 status bonus to checks to resolve dangerous kingdom events that involve internal bickering, such as Feud.</p>",
+            "prerequisites": [
+                {
+                    "value": "trained in Warfare"
+                }
+            ]
         },
         "Darkvision": {
             "name": "Darkvision",
@@ -201,7 +206,12 @@
         },
         "Endure Anarchy": {
             "name": "Endure Anarchy",
-            "description": "<p>Your kingdom holds together even in the midst of extreme peril. If your kingdom's Unrest is 6 or higher and you use a kingdom activity that decreases Unrest, decrease the Unrest by an additional 1. You do not fall into anarchy unless your kingdom's Unrest reaches 24 (see last paragraph of Step 2: Adjust Unrest on page 538).</p>"
+            "description": "<p>Your kingdom holds together even in the midst of extreme peril. If your kingdom's Unrest is 6 or higher and you use a kingdom activity that decreases Unrest, decrease the Unrest by an additional 1. You do not fall into anarchy unless your kingdom's Unrest reaches 24 (see last paragraph of Step 2: Adjust Unrest on page 538).</p>",
+            "prerequisites": [
+                {
+                    "value": "Loyalty 14"
+                }
+            ]
         },
         "Engaged": {
             "name": "Engaged",
@@ -294,7 +304,12 @@
         },
         "Fortified Fiefs": {
             "name": "Fortified Fiefs",
-            "description": "<p>Your vassals take their duty to protect those under their stewardship seriously, and your engineers emphasize the value of a strong defense when it comes to building settlements and fortifications. You gain a +2 circumstance bonus to checks attempted as part of the Fortify Hex activity and on activities to build or repair a Barracks, Castle, Garrison, Keep, Stone Wall, or Wooden Wall. In addition, you gain a +1 status bonus to all kingdom checks attempted during dangerous events that directly impact your settlements' defenses.</p>"
+            "description": "<p>Your vassals take their duty to protect those under their stewardship seriously, and your engineers emphasize the value of a strong defense when it comes to building settlements and fortifications. You gain a +2 circumstance bonus to checks attempted as part of the Fortify Hex activity and on activities to build or repair a Barracks, Castle, Garrison, Keep, Stone Wall, or Wooden Wall. In addition, you gain a +1 status bonus to all kingdom checks attempted during dangerous events that directly impact your settlements' defenses.</p>",
+            "prerequisites": [
+                {
+                    "value": "trained in Defense"
+                }
+            ]
         },
         "Fortify Hex": {
             "name": "Fortify Hex",
@@ -351,7 +366,12 @@
         },
         "Insider Trading": {
             "name": "Insider Trading",
-            "description": "<p>Your leading citizens share valuable business information with one another and with associates in other lands, and they hire one another's workers to supply the labor they need to fuel their production. You gain a +1 status bonus to Establish Work Site, Establish Trade Agreement, and Trade Commodities activities. In addition, gain 1 bonus Resource Die at the start of each Kingdom turn.</p>"
+            "description": "<p>Your leading citizens share valuable business information with one another and with associates in other lands, and they hire one another's workers to supply the labor they need to fuel their production. You gain a +1 status bonus to Establish Work Site, Establish Trade Agreement, and Trade Commodities activities. In addition, gain 1 bonus Resource Die at the start of each Kingdom turn.</p>",
+            "prerequisites": [
+                {
+                    "value": "trained in Industry"
+                }
+            ]
         },
         "Inspiring Entertainment": {
             "name": "Inspiring Entertainment",
@@ -371,7 +391,12 @@
         },
         "Kingdom Assurance": {
             "name": "Kingdom Assurance",
-            "description": "<p>Even when things go poorly in other areas, you can count on consistency in carrying out kingdom activities with a chosen skill. Choose one Kingdom skill in which your kingdom is trained. Once per Kingdom turn, when you would attempt a skill check for that skill, you can forgo rolling and instead take a result equal to 10 + your proficiency bonus; do not apply any other bonuses, penalties, or modifiers to this result.</p>\n<p><strong>Special</strong> You can select this feat multiple times. Each time, choose a different skill and gain the benefits of this feat for that skill.</p>"
+            "description": "<p>Even when things go poorly in other areas, you can count on consistency in carrying out kingdom activities with a chosen skill. Choose one Kingdom skill in which your kingdom is trained. Once per Kingdom turn, when you would attempt a skill check for that skill, you can forgo rolling and instead take a result equal to 10 + your proficiency bonus; do not apply any other bonuses, penalties, or modifiers to this result.</p>\n<p><strong>Special</strong> You can select this feat multiple times. Each time, choose a different skill and gain the benefits of this feat for that skill.</p>",
+            "prerequisites": [
+                {
+                    "value": "trained in at least three skills"
+                }
+            ]
         },
         "Life Of Luxury": {
             "name": "Life Of Luxury",
@@ -379,7 +404,12 @@
         },
         "Liquidate Resources": {
             "name": "Liquidate Resources",
-            "description": "<p>Your kingdom's economy can liquidate resources in an emergency when funding runs out. The first time during a Kingdom turn in which you are forced to spend RP as the result of a failed skill check or a dangerous event, and that expense reduces you to 0 RP, you may instead reduce your RP to 1 and treat the expense as if it were paid in full. At the start of your next Kingdom turn, roll 4 fewer Resource Dice than normal.</p>"
+            "description": "<p>Your kingdom's economy can liquidate resources in an emergency when funding runs out. The first time during a Kingdom turn in which you are forced to spend RP as the result of a failed skill check or a dangerous event, and that expense reduces you to 0 RP, you may instead reduce your RP to 1 and treat the expense as if it were paid in full. At the start of your next Kingdom turn, roll 4 fewer Resource Dice than normal.</p>",
+            "prerequisites": [
+                {
+                    "value": "Economy 14"
+                }
+            ]
         },
         "Live off the Land": {
             "name": "Live off the Land",
@@ -407,7 +437,12 @@
         },
         "Muddle Through": {
             "name": "Muddle Through",
-            "description": "<p>Your people are independent-minded and take care of the small things around the kingdom, not letting them pile up into bigger problems. Increase two of your Ruin thresholds by 1 and one of them by 2.</p>"
+            "description": "<p>Your people are independent-minded and take care of the small things around the kingdom, not letting them pile up into bigger problems. Increase two of your Ruin thresholds by 1 and one of them by 2.</p>",
+            "prerequisites": [
+                {
+                    "value": "trained in Wilderness"
+                }
+            ]
         },
         "New Leadership": {
             "name": "New Leadership",
@@ -459,7 +494,12 @@
         },
         "Practical Magic": {
             "name": "Practical Magic",
-            "description": "<p>Magic has an honored place in your society, and your people incorporate it into their everyday work to make life easier. You gain a +1 status bonus to Magic checks, and you can use Magic checks in place of Engineering checks. In addition, as magic-wielding NPCs find your nation a comfortable place to live and work, you reduce the cost of using the Hire Adventurers activity to 1 RP.</p>"
+            "description": "<p>Magic has an honored place in your society, and your people incorporate it into their everyday work to make life easier. You gain a +1 status bonus to Magic checks, and you can use Magic checks in place of Engineering checks. In addition, as magic-wielding NPCs find your nation a comfortable place to live and work, you reduce the cost of using the Hire Adventurers activity to 1 RP.</p>",
+            "prerequisites": [
+                {
+                    "value": "trained in Magic"
+                }
+            ]
         },
         "Prognostication": {
             "name": "Prognostication",
@@ -471,7 +511,12 @@
         },
         "Pull Together": {
             "name": "Pull Together",
-            "description": "<p>Your people are very reliable, and their swift decision-making keeps most projects from getting too far off track. Once per Kingdom turn when you roll a critical failure on a Kingdom skill check, attempt a DC 11 flat check. If this succeeds, your citizens heed the call to put in extra work to mitigate the disaster; treat the Kingdom skill check result as failure instead. The DC of this flat check increases by 5 each time you subsequently use it, but it decreases by 1 (to a minimum of 11) for each Kingdom turn that passes when you do not use it.</p>"
+            "description": "<p>Your people are very reliable, and their swift decision-making keeps most projects from getting too far off track. Once per Kingdom turn when you roll a critical failure on a Kingdom skill check, attempt a DC 11 flat check. If this succeeds, your citizens heed the call to put in extra work to mitigate the disaster; treat the Kingdom skill check result as failure instead. The DC of this flat check increases by 5 each time you subsequently use it, but it decreases by 1 (to a minimum of 11) for each Kingdom turn that passes when you do not use it.</p>",
+            "prerequisites": [
+                {
+                    "value": "trained in Politics"
+                }
+            ]
         },
         "Purchase Commodities": {
             "name": "Purchase Commodities",
@@ -487,7 +532,12 @@
         },
         "Quick Recovery": {
             "name": "Quick Recovery",
-            "description": "<p>Your kingdom recovers more quickly from danger and disaster. Whenever you attempt a skill check to end an ongoing harmful kingdom event, you gain a +4 status bonus to the check.</p>"
+            "description": "<p>Your kingdom recovers more quickly from danger and disaster. Whenever you attempt a skill check to end an ongoing harmful kingdom event, you gain a +4 status bonus to the check.</p>",
+            "prerequisites": [
+                {
+                    "value": "Stability 14"
+                }
+            ]
         },
         "Rally": {
             "name": "Rally",
@@ -592,6 +642,7 @@
         }
     },
     "mapping": {
+        "prerequisites": "system.prerequisites.value",
         "rules": {
             "converter": "translateRules",
             "path": "system.rules"
