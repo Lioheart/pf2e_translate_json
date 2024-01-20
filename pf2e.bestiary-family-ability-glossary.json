@@ -779,7 +779,12 @@
         },
         "(Skeleton) Lacquered": {
             "name": "(Skeleton) Lacquered",
-            "description": "<p>During the process to create the skeleton, it was covered with several layers of an alchemical lacquer, giving its bones a golden hue and granting added protection. The skeleton gains acid resistance 5 and a +2 status bonus to saves against effects that age or erode the target.</p>"
+            "description": "<p>During the process to create the skeleton, it was covered with several layers of an alchemical lacquer, giving its bones a golden hue and granting added protection. The skeleton gains acid resistance 5 and a +2 status bonus to saves against effects that age or erode the target.</p>",
+            "rules": {
+                "1": {
+                    "label": "Against Effects that Age or Erode the Target"
+                }
+            }
         },
         "(Skeleton) Nimble": {
             "name": "(Skeleton) Nimble",
@@ -843,7 +848,12 @@
         },
         "(Ulgrem-Axaan) Crocodile Tears": {
             "name": "(Ulgrem-Axaan) Crocodile Tears",
-            "description": "<p>Ulgrem-Axaan can mimic the sound of a wounded prey animal by attempting a Deception check to Lie. It has a +4 circumstance bonus to this check.</p>"
+            "description": "<p>Ulgrem-Axaan can mimic the sound of a wounded prey animal by attempting a Deception check to Lie. It has a +4 circumstance bonus to this check.</p>",
+            "rules": {
+                "0": {
+                    "label": "Crocodile Tears"
+                }
+            }
         },
         "(Ulgrem-Axaan) Crushing Weight": {
             "name": "(Ulgrem-Axaan) Crushing Weight",
@@ -1063,7 +1073,12 @@
         },
         "(Vampire, Vrykolakas Master) Change Shape": {
             "name": "(Vampire, Vrykolakas Master) Change Shape",
-            "description": "<p>A vrykolakas master can transform into a form resembling the body it had in life, with the effects of humanoid form but with unlimited duration. It loses its fangs and claw Strikes but gains a +2 circumstance bonus to Deception checks to @UUID[Compendium.pf2e.actionspf2e.Item.AJstokjdG6iDjVjE]{Impersonate} in this form.</p>"
+            "description": "<p>A vrykolakas master can transform into a form resembling the body it had in life, with the effects of humanoid form but with unlimited duration. It loses its fangs and claw Strikes but gains a +2 circumstance bonus to Deception checks to @UUID[Compendium.pf2e.actionspf2e.Item.AJstokjdG6iDjVjE]{Impersonate} in this form.</p>",
+            "rules": {
+                "0": {
+                    "label": "Impersonating the Body It Had in Life"
+                }
+            }
         },
         "(Vampire, Vrykolakas Master) Children of the Night": {
             "name": "(Vampire, Vrykolakas Master) Children of the Night",
@@ -1208,6 +1223,12 @@
         "(Zombie, Shock) Lightning Rod": {
             "name": "(Zombie, Shock) Lightning Rod",
             "description": "<p><strong>Trigger</strong> A spell or ability with the electricity trait is used within 30 feet of the shock zombie</p>\n<hr />\n<p><strong>Effect</strong> The shock zombie attempts to counteract the spell or ability (counteract rank 3, counteract modifier [[/r 1d20+17 #Counteract]]{+17}), harmlessly redirecting the electricity into one of its electricity coils.</p>"
+        }
+    },
+    "mapping": {
+        "rules": {
+            "converter": "translateRules",
+            "path": "system.rules"
         }
     }
 }

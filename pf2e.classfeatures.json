@@ -1259,7 +1259,15 @@
         },
         "Masterful Hunter": {
             "name": "Masterful Hunter",
-            "description": "<p>You have honed your abilities as a hunter to incredible levels. Your proficiency rank for your ranger class DC increases to master. If you have warden spells, your proficiency rank for spell attacks and spell DCs increases to master. When using a ranged weapon that you have master proficiency in, you can ignore the penalty if attacking your hunted prey within the weapon's second and third range increments.</p>\n<p>If you have master proficiency in Perception, you gain a +4 circumstance bonus to Perception checks when you @UUID[Compendium.pf2e.actionspf2e.Item.BlAOM2X92SI6HMtJ]{Seek} your prey, and if you have master proficiency in Survival, you gain a +4 circumstance bonus to Survival checks when you @UUID[Compendium.pf2e.actionspf2e.Item.EA5vuSgJfiHH7plD]{Track} your prey. You also gain an additional benefit depending on your hunter's edge.</p>\n<p><strong>Flurry:</strong> You can blend your weapon mastery with skillful targeting to make a series of precise attacks. If you have master proficiency with your weapon, your multiple attack penalty for attacks against your hunted prey is \u20132 (\u20131 with an agile weapon) on your second attack of the turn, and \u20134 (\u20132 with an agile weapon) on your third and subsequent attacks of the turn.</p>\n<p><strong>Outwit:</strong> Your mastery of skills allows you to overwhelm your prey. If you have master proficiency in Deception, Intimidation, Stealth, or the skill you use to Recall Knowledge about your prey, increase the circumstance bonus against the prey with that skill from +2 to +4. If you have master proficiency with your armor, increase the circumstance bonus to AC against the prey from +1 to +2.</p>\n<p><strong>Precision:</strong> Your weapon mastery allows you to hit your prey's vital areas multiple times. The second time in a round you hit your hunted prey, you also deal 1d8 precision damage. At 19th level, your second hit in a round against your hunted prey deals 2d8 precision damage, and your third hit in a round against your hunted prey deals 1d8 precision damage.</p>"
+            "description": "<p>You have honed your abilities as a hunter to incredible levels. Your proficiency rank for your ranger class DC increases to master. If you have warden spells, your proficiency rank for spell attacks and spell DCs increases to master. When using a ranged weapon that you have master proficiency in, you can ignore the penalty if attacking your hunted prey within the weapon's second and third range increments.</p>\n<p>If you have master proficiency in Perception, you gain a +4 circumstance bonus to Perception checks when you @UUID[Compendium.pf2e.actionspf2e.Item.BlAOM2X92SI6HMtJ]{Seek} your prey, and if you have master proficiency in Survival, you gain a +4 circumstance bonus to Survival checks when you @UUID[Compendium.pf2e.actionspf2e.Item.EA5vuSgJfiHH7plD]{Track} your prey. You also gain an additional benefit depending on your hunter's edge.</p>\n<p><strong>Flurry:</strong> You can blend your weapon mastery with skillful targeting to make a series of precise attacks. If you have master proficiency with your weapon, your multiple attack penalty for attacks against your hunted prey is \u20132 (\u20131 with an agile weapon) on your second attack of the turn, and \u20134 (\u20132 with an agile weapon) on your third and subsequent attacks of the turn.</p>\n<p><strong>Outwit:</strong> Your mastery of skills allows you to overwhelm your prey. If you have master proficiency in Deception, Intimidation, Stealth, or the skill you use to Recall Knowledge about your prey, increase the circumstance bonus against the prey with that skill from +2 to +4. If you have master proficiency with your armor, increase the circumstance bonus to AC against the prey from +1 to +2.</p>\n<p><strong>Precision:</strong> Your weapon mastery allows you to hit your prey's vital areas multiple times. The second time in a round you hit your hunted prey, you also deal 1d8 precision damage. At 19th level, your second hit in a round against your hunted prey deals 2d8 precision damage, and your third hit in a round against your hunted prey deals 1d8 precision damage.</p>",
+            "rules": {
+                "0": {
+                    "label": "To Track hunted prey (Masterful Hunter)"
+                },
+                "1": {
+                    "label": "To Seek hunted prey (Masterful Hunter)"
+                }
+            }
         },
         "Masterful Hunter (Flurry)": {
             "name": "Masterful Hunter (Flurry)",
@@ -1267,11 +1275,51 @@
         },
         "Masterful Hunter (Outwit)": {
             "name": "Masterful Hunter (Outwit)",
-            "description": "<h2 class=\"title\">Masterful Hunter Upgrade<span style=\"float: right;\">Level 17</span></h2>\n<p>Your mastery of skills allows you to overwhelm your prey. If you have master proficiency in Deception, Intimidation, Stealth, or the skill you use to Recall Knowledge about your prey, increase the circumstance bonus against the prey with that skill from +2 to +4.</p>\n<p>If you have master proficiency with your armor, increase the circumstance bonus to AC against the prey from +1 to +2.</p>\n<hr />\n<p><em>Automation Notes:</em> The bonus to recall knowledge has been set up for arcana, crafting, nature, occultism, religion, and society only. The bonus to AC is based on your unarmored proficiency, and not on the proficiency of the armor you're wearing.</p>"
+            "description": "<h2 class=\"title\">Masterful Hunter Upgrade<span style=\"float: right;\">Level 17</span></h2>\n<p>Your mastery of skills allows you to overwhelm your prey. If you have master proficiency in Deception, Intimidation, Stealth, or the skill you use to Recall Knowledge about your prey, increase the circumstance bonus against the prey with that skill from +2 to +4.</p>\n<p>If you have master proficiency with your armor, increase the circumstance bonus to AC against the prey from +1 to +2.</p>\n<hr />\n<p><em>Automation Notes:</em> The bonus to recall knowledge has been set up for arcana, crafting, nature, occultism, religion, and society only. The bonus to AC is based on your unarmored proficiency, and not on the proficiency of the armor you're wearing.</p>",
+            "rules": {
+                "0": {
+                    "label": "Vs. attacks from hunted prey (Masterful Hunter)"
+                },
+                "1": {
+                    "label": "Vs. hunted prey (Masterful Hunter)"
+                },
+                "2": {
+                    "label": "Vs. hunted prey (Masterful Hunter)"
+                },
+                "3": {
+                    "label": "Vs. hunted prey (Masterful Hunter)"
+                },
+                "4": {
+                    "label": "Recall knowledge on hunted prey (Masterful Hunter)"
+                },
+                "5": {
+                    "label": "Recall knowledge on hunted prey (Masterful Hunter)"
+                },
+                "6": {
+                    "label": "Recall knowledge on hunted prey (Masterful Hunter)"
+                },
+                "7": {
+                    "label": "Recall knowledge on hunted prey (Masterful Hunter)"
+                },
+                "8": {
+                    "label": "Recall knowledge on hunted prey (Masterful Hunter)"
+                },
+                "9": {
+                    "label": "Recall knowledge on hunted prey (Masterful Hunter)"
+                }
+            }
         },
         "Masterful Hunter (Precision)": {
             "name": "Masterful Hunter (Precision)",
-            "description": "<h2 class=\"title\">Masterful Hunter Upgrade<span style=\"float: right;\">Level 17</span></h2>\n<p>Your weapon mastery allows you to hit your prey's vital areas multiple times.</p>\n<p>The second time in a round you hit your hunted prey, you also deal 1d8 precision damage.</p>\n<p>At 19th level, your second hit in a round against your hunted prey deals 2d8 precision damage, and your third hit in a round against your hunted prey deals 1d8 precision damage.</p>"
+            "description": "<h2 class=\"title\">Masterful Hunter Upgrade<span style=\"float: right;\">Level 17</span></h2>\n<p>Your weapon mastery allows you to hit your prey's vital areas multiple times.</p>\n<p>The second time in a round you hit your hunted prey, you also deal 1d8 precision damage.</p>\n<p>At 19th level, your second hit in a round against your hunted prey deals 2d8 precision damage, and your third hit in a round against your hunted prey deals 1d8 precision damage.</p>",
+            "rules": {
+                "0": {
+                    "label": "Second attack on hunted prey this round"
+                },
+                "2": {
+                    "label": "Third attack on hunted prey this round"
+                }
+            }
         },
         "Mastermind": {
             "name": "Mastermind",
@@ -2256,6 +2304,12 @@
         "Wraith Deviant Classification": {
             "name": "Wraith Deviant Classification",
             "description": "<p>Wraith-type deviations often result from contact with otherworldly presences or artifacts, comprising a strange assortment of abilities that involve realms beyond our own.</p>\n<h2>Backlash</h2>\n<p>@UUID[Compendium.pf2e.classfeatures.Item.6RAHnACKReBW68Sa]{Encroaching Presence}</p>\n<p>The same blood that lets one of the dragon-descended spit out a gout of flame is precisely what keeps the inside of their mouth from being singed in the furnace. Deviations, unfortunately, lack these safeguards, their powers coming from haphazard circumstance and interactions rather than intentional design. A character using their deviation always risks the chance of backlash.</p>\n<p>Whenever you attempt to use a deviation, roll a @Check[type:flat|dc:5]. On a success, you use your deviation and the DC for subsequent checks increases by 5, to a maximum of 20 (@Check[type:flat|dc:10] @Check[type:flat|dc:15] @Check[type:flat|dc:20]); on a failure, you use your deviation and then suffer a backlash effect, after which your flat check DC resets to 5. Backlash progresses from mild, to moderate, to severe. When you have already taken mild backlash in a given day, the next time you would take backlash, you take the moderate backlash instead, and if you have already taken moderate backlash, you take the severe backlash instead, and your deviation can't be used for the rest of the day\u2014attempting to use it simply brings pain. When you make your daily preparations, your flat check DC returns to 5 and your next backlash returns to mild.</p>\n<p>Any effects from backlash can't be reduced, prevented, or otherwise bypassed. Conditions and damage you take from backlash can't be reduced or prevented by resistance or immunity, but still triggers any weakness you have to it.</p>\n<h2>Wraith Deviant Feats</h2>\n<p>@UUID[Compendium.pf2e.feats-srd.Item.jPWF8Xe0UqVvbeyv]{Eerie Flicker}</p>\n<p>@UUID[Compendium.pf2e.feats-srd.Item.C3ukUk4Js10o5IBA]{Ghostly Grasp (Deviant)}</p>\n<p>@UUID[Compendium.pf2e.feats-srd.Item.VAxtUenSWEBWYBRt]{Enervating Wail}</p>\n<p>@UUID[Compendium.pf2e.feats-srd.Item.YFPmD8BHv0XaF55G]{Distant Wandering}</p>\n<h3>Universal Deviant Feats</h3>\n<p>@UUID[Compendium.pf2e.feats-srd.Item.mXp6G4YWCXGvp7Qd]{Awakened Power}</p>\n<p>@UUID[Compendium.pf2e.feats-srd.Item.Km6YO7Ky2bEwhAFD]{Greater Awakened Power}</p>"
+        }
+    },
+    "mapping": {
+        "rules": {
+            "converter": "translateRules",
+            "path": "system.rules"
         }
     }
 }

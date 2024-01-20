@@ -487,7 +487,22 @@
         },
         "Effect: Feed": {
             "name": "Effect: Feed",
-            "description": "<p>The creature gains a status bonus to its checks and DCs depending on how often it used the Feed ability.</p>"
+            "description": "<p>The creature gains a status bonus to its checks and DCs depending on how often it used the Feed ability.</p>",
+            "rules": {
+                "0": {
+                    "choices": {
+                        "0": {
+                            "label": "1"
+                        },
+                        "1": {
+                            "label": "2"
+                        },
+                        "2": {
+                            "label": "3"
+                        }
+                    }
+                }
+            }
         },
         "Effect: Fetid Fumes": {
             "name": "Effect: Fetid Fumes",
@@ -587,7 +602,12 @@
         },
         "Effect: Guiding Words": {
             "name": "Effect: Guiding Words",
-            "description": ""
+            "description": "",
+            "rules": {
+                "0": {
+                    "label": "Attacking designated target"
+                }
+            }
         },
         "Effect: Guildmaster's Lead": {
             "name": "Effect: Guildmaster's Lead",
@@ -607,11 +627,27 @@
         },
         "Effect: Harmonizing Aura (Allies)": {
             "name": "Effect: Harmonizing Aura (Allies)",
-            "description": "<p>The creature gains a +2 status bonus to sonic damage rolls and a +1 status bonus to AC and all saves against sonic and auditory effects</p>"
+            "description": "<p>The creature gains a +2 status bonus to sonic damage rolls and a +1 status bonus to AC and all saves against sonic and auditory effects</p>",
+            "rules": {
+                "0": {
+                    "label": "Harmonizing Aura"
+                },
+                "1": {
+                    "label": "Harmonizing Aura"
+                }
+            }
         },
         "Effect: Harmonizing Aura (Enemies)": {
             "name": "Effect: Harmonizing Aura (Enemies)",
-            "description": "<p>The creature gains a -2 status bonus to sonic damage rolls and a -1 status bonus to AC and all saves against sonic and auditory effects</p>"
+            "description": "<p>The creature gains a -2 status bonus to sonic damage rolls and a -1 status bonus to AC and all saves against sonic and auditory effects</p>",
+            "rules": {
+                "0": {
+                    "label": "Harmonizing Aura"
+                },
+                "1": {
+                    "label": "Harmonizing Aura"
+                }
+            }
         },
         "Effect: Harrow Burst": {
             "name": "Effect: Harrow Burst",
@@ -683,7 +719,12 @@
         },
         "Effect: Inspire Defense (Love Siktempora)": {
             "name": "Effect: Inspire Defense (Love Siktempora)",
-            "description": "<p>The creature gains a +2 status bonus to AC and saving throws, as well as resistance 4 to physical damage.</p>"
+            "description": "<p>The creature gains a +2 status bonus to AC and saving throws, as well as resistance 4 to physical damage.</p>",
+            "rules": {
+                "0": {
+                    "label": "Inspire Defense"
+                }
+            }
         },
         "Effect: Inspire Envoy": {
             "name": "Effect: Inspire Envoy",
@@ -723,11 +764,21 @@
         },
         "Effect: Lantern of Hope": {
             "name": "Effect: Lantern of Hope",
-            "description": "<p>The creature gains a +1 status bonus to damage rolls and to saving throws against <em>@UUID[Compendium.pf2e.spells-srd.Item.GaRQlC9Yw1BGKHfN]{Wave of Despair}</em>.</p>"
+            "description": "<p>The creature gains a +1 status bonus to damage rolls and to saving throws against <em>@UUID[Compendium.pf2e.spells-srd.Item.GaRQlC9Yw1BGKHfN]{Wave of Despair}</em>.</p>",
+            "rules": {
+                "1": {
+                    "label": "Lantern of Hope (vs Crushing Despair)"
+                }
+            }
         },
         "Effect: Lantern of Hope (Gestalt)": {
             "name": "Effect: Lantern of Hope (Gestalt)",
-            "description": "<p>The creature gains a +3 status bonus to damage rolls and to saving throws against <em>@UUID[Compendium.pf2e.spells-srd.Item.GaRQlC9Yw1BGKHfN]{Wave of Despair}</em>.</p>"
+            "description": "<p>The creature gains a +3 status bonus to damage rolls and to saving throws against <em>@UUID[Compendium.pf2e.spells-srd.Item.GaRQlC9Yw1BGKHfN]{Wave of Despair}</em>.</p>",
+            "rules": {
+                "1": {
+                    "label": "Lantern of Hope (vs Crushing Despair)"
+                }
+            }
         },
         "Effect: Lightning Powered": {
             "name": "Effect: Lightning Powered",
@@ -735,7 +786,25 @@
         },
         "Effect: Lost Plates": {
             "name": "Effect: Lost Plates",
-            "description": "<p>The creature takes a status penalty to AC equal to the number of lost plates.</p>"
+            "description": "<p>The creature takes a status penalty to AC equal to the number of lost plates.</p>",
+            "rules": {
+                "0": {
+                    "choices": {
+                        "0": {
+                            "label": "1"
+                        },
+                        "1": {
+                            "label": "2"
+                        },
+                        "2": {
+                            "label": "3"
+                        },
+                        "3": {
+                            "label": "4"
+                        }
+                    }
+                }
+            }
         },
         "Effect: Lost Red Cap": {
             "name": "Effect: Lost Red Cap",
@@ -779,7 +848,22 @@
         },
         "Effect: Mutilating Bite": {
             "name": "Effect: Mutilating Bite",
-            "description": "<p>The creature then takes a -1 status penalty to Charisma-based checks. This penalty is cumulative up to -3.</p>"
+            "description": "<p>The creature then takes a -1 status penalty to Charisma-based checks. This penalty is cumulative up to -3.</p>",
+            "rules": {
+                "0": {
+                    "choices": {
+                        "0": {
+                            "label": "-1"
+                        },
+                        "1": {
+                            "label": "-2"
+                        },
+                        "2": {
+                            "label": "-3"
+                        }
+                    }
+                }
+            }
         },
         "Effect: Nanite Surge (Glow)": {
             "name": "Effect: Nanite Surge (Glow)",
@@ -843,7 +927,12 @@
         },
         "Effect: Pinpoint Weakness": {
             "name": "Effect: Pinpoint Weakness",
-            "description": "<p>Tsimaan points out a weakness of a creature within 30 feet. Tsimaan and all allies that can see and hear her gain a +1 status bonus to their attack and damage rolls against that creature until the beginning of her next turn.</p>"
+            "description": "<p>Tsimaan points out a weakness of a creature within 30 feet. Tsimaan and all allies that can see and hear her gain a +1 status bonus to their attack and damage rolls against that creature until the beginning of her next turn.</p>",
+            "rules": {
+                "0": {
+                    "label": "Pinpoint Weakness"
+                }
+            }
         },
         "Effect: Poison Frenzy": {
             "name": "Effect: Poison Frenzy",
@@ -975,15 +1064,30 @@
         },
         "Effect: Rune of Flames (Greatsword)": {
             "name": "Effect: Rune of Flames (Greatsword)",
-            "description": "<p>The greatsword deals an additional 3d6 fire damage on all attacks.</p>"
+            "description": "<p>The greatsword deals an additional 3d6 fire damage on all attacks.</p>",
+            "rules": {
+                "0": {
+                    "label": "Rune of Flames"
+                }
+            }
         },
         "Effect: Rune of Flames (Longspear)": {
             "name": "Effect: Rune of Flames (Longspear)",
-            "description": "<p>The longspear deals an additional 3d6 fire damage on all attacks.</p>"
+            "description": "<p>The longspear deals an additional 3d6 fire damage on all attacks.</p>",
+            "rules": {
+                "0": {
+                    "label": "Rune of Flames"
+                }
+            }
         },
         "Effect: Rune of Flames (Rock)": {
             "name": "Effect: Rune of Flames (Rock)",
-            "description": "<p>The rock deals an additional 3d6 fire damage on all attacks.</p>"
+            "description": "<p>The rock deals an additional 3d6 fire damage on all attacks.</p>",
+            "rules": {
+                "0": {
+                    "label": "Rune of Flames"
+                }
+            }
         },
         "Effect: Rune of Smiting (Greatsword)": {
             "name": "Effect: Rune of Smiting (Greatsword)",
@@ -1039,7 +1143,25 @@
         },
         "Effect: Sixfold Flurry": {
             "name": "Effect: Sixfold Flurry",
-            "description": "<p>The creature gains a circumstance bonus to AC based on the Strikes it chose not to take.</p>"
+            "description": "<p>The creature gains a circumstance bonus to AC based on the Strikes it chose not to take.</p>",
+            "rules": {
+                "0": {
+                    "choices": {
+                        "0": {
+                            "label": "1"
+                        },
+                        "1": {
+                            "label": "2"
+                        },
+                        "2": {
+                            "label": "3"
+                        },
+                        "3": {
+                            "label": "4"
+                        }
+                    }
+                }
+            }
         },
         "Effect: Slime Trap": {
             "name": "Effect: Slime Trap",
@@ -1284,6 +1406,12 @@
         "Effect: Zinba Restoration": {
             "name": "Effect: Zinba Restoration",
             "description": "<p>The creature gains fast healing 5 for 1 minute.</p>"
+        }
+    },
+    "mapping": {
+        "rules": {
+            "converter": "translateRules",
+            "path": "system.rules"
         }
     }
 }

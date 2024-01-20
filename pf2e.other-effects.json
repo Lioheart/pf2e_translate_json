@@ -27,7 +27,12 @@
         },
         "Effect: +4 circumstance bonus to AC against your ranged attacks": {
             "name": "Effect: +4 circumstance bonus to AC against your ranged attacks",
-            "description": "<p><strong>Effect applied by @UUID[Compendium.pf2e.criticaldeck.JournalEntry.4MkOtc3bBYsBGF97]{Critical Fumble Deck #6}</strong></p>\n<p>Cover provides +4 circumstance bonus to AC against your ranged attacks</p>"
+            "description": "<p><strong>Effect applied by @UUID[Compendium.pf2e.criticaldeck.JournalEntry.4MkOtc3bBYsBGF97]{Critical Fumble Deck #6}</strong></p>\n<p>Cover provides +4 circumstance bonus to AC against your ranged attacks</p>",
+            "rules": {
+                "1": {
+                    "label": "Has cover from target of Overcompensate fumble effect"
+                }
+            }
         },
         "Effect: -1 circumstance penalty to attack rolls until you score a critical hit": {
             "name": "Effect: -1 circumstance penalty to attack rolls until you score a critical hit",
@@ -136,6 +141,12 @@
         "Effect: Scouting (Incredible Scout)": {
             "name": "Effect: Scouting (Incredible Scout)",
             "description": ""
+        }
+    },
+    "mapping": {
+        "rules": {
+            "converter": "translateRules",
+            "path": "system.rules"
         }
     }
 }

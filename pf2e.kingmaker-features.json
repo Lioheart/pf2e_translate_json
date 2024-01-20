@@ -21,11 +21,24 @@
         },
         "All-Out Assault": {
             "name": "All-Out Assault",
-            "description": "<p><strong>Requirement</strong> @UUID[Compendium.pf2e.kingmaker-features.Item.QRwIcmCEHpDQm9DO]{Merciless}</p>\n<hr />\n<p>Your army attacks with frightening vigor. Attempt a melee Strike against an enemy army's AC.</p>\n<p><strong>Critical Success</strong> Your army inflicts @Damage[3|domains:melee-damage,strike-damage] points of damage to the target army. If your army's next war action this turn is an attack war action against a different target army, you gain a +1 circumstance bonus to the Strike as your fury continues to the new target.</p>\n<p><strong>Success</strong> Your army deals @Damage[2|domains:melee-damage,strike-damage] points of damage to the target army.</p>\n<p><strong>Failure</strong> Your army falters, but still deals @Damage[1|domains:melee-damage,strike-damage] point of damage to the target army.</p>\n<p><strong>Critical Failure</strong> Your army deals no damage to the target army and becomes @UUID[Compendium.pf2e.kingmaker-features.Item.ibcMcEGRbPRtk9Pu]{Outflanked} until the start of its next turn.</p>"
+            "description": "<p><strong>Requirement</strong> @UUID[Compendium.pf2e.kingmaker-features.Item.QRwIcmCEHpDQm9DO]{Merciless}</p>\n<hr />\n<p>Your army attacks with frightening vigor. Attempt a melee Strike against an enemy army's AC.</p>\n<p><strong>Critical Success</strong> Your army inflicts @Damage[3|domains:melee-damage,strike-damage] points of damage to the target army. If your army's next war action this turn is an attack war action against a different target army, you gain a +1 circumstance bonus to the Strike as your fury continues to the new target.</p>\n<p><strong>Success</strong> Your army deals @Damage[2|domains:melee-damage,strike-damage] points of damage to the target army.</p>\n<p><strong>Failure</strong> Your army falters, but still deals @Damage[1|domains:melee-damage,strike-damage] point of damage to the target army.</p>\n<p><strong>Critical Failure</strong> Your army deals no damage to the target army and becomes @UUID[Compendium.pf2e.kingmaker-features.Item.ibcMcEGRbPRtk9Pu]{Outflanked} until the start of its next turn.</p>",
+            "rules": {
+                "0": {
+                    "label": "All-Out Assault Followup Attack (Crit Success)"
+                },
+                "1": {
+                    "label": "All-Out Assault Followup (Crit Success)"
+                }
+            }
         },
         "Ambush": {
             "name": "Ambush",
-            "description": "<p>Your skirmishers are experts at ambushing. On the first round of a war encounter, if your turn occurs before any enemy army turns, you can choose to start the encounter with your army already engaged with an enemy army whose initiative result is lower than yours. If you do so, your army gains a +2 status bonus on the first Attack war action they make against that army on the first round of the encounter.</p>"
+            "description": "<p>Your skirmishers are experts at ambushing. On the first round of a war encounter, if your turn occurs before any enemy army turns, you can choose to start the encounter with your army already engaged with an enemy army whose initiative result is lower than yours. If you do so, your army gains a +2 status bonus on the first Attack war action they make against that army on the first round of the encounter.</p>",
+            "rules": {
+                "0": {
+                    "label": "First Attack war action against ambushed opponent"
+                }
+            }
         },
         "Battle": {
             "name": "Battle",
@@ -129,7 +142,12 @@
         },
         "Defensive Tactics": {
             "name": "Defensive Tactics",
-            "description": "<p>The army is especially good at enacting defensive tactics. The army gains a +1 status bonus on Maneuver checks made to @UUID[Compendium.pf2e.kingmaker-features.Item.phtwOol1wETryF7b]{Guard}. This bonus increases to +2 at 9th level, and +3 at 17th level.</p>\n<p>The army can use the @UUID[Compendium.pf2e.kingmaker-features.Item.1U9SbpBDXgsLGlzq]{Defensive Stance} tactical war action.</p>"
+            "description": "<p>The army is especially good at enacting defensive tactics. The army gains a +1 status bonus on Maneuver checks made to @UUID[Compendium.pf2e.kingmaker-features.Item.phtwOol1wETryF7b]{Guard}. This bonus increases to +2 at 9th level, and +3 at 17th level.</p>\n<p>The army can use the @UUID[Compendium.pf2e.kingmaker-features.Item.1U9SbpBDXgsLGlzq]{Defensive Stance} tactical war action.</p>",
+            "rules": {
+                "1": {
+                    "label": "Maneuver checks made to Guard"
+                }
+            }
         },
         "Demolish": {
             "name": "Demolish",
@@ -161,11 +179,21 @@
         },
         "Effect: Guard (Critical Success)": {
             "name": "Effect: Guard (Critical Success)",
-            "description": "<p>This army gains a +2 item bonus to its AC until the start of its next turn; this bonus applies to all attacks.</p>"
+            "description": "<p>This army gains a +2 item bonus to its AC until the start of its next turn; this bonus applies to all attacks.</p>",
+            "rules": {
+                "0": {
+                    "label": "Guarded"
+                }
+            }
         },
         "Effect: Guard (Success)": {
             "name": "Effect: Guard (Success)",
-            "description": "<p>This army gains a +2 item bonus to its AC until the start of your next turn against attacks from the targeted army.</p>"
+            "description": "<p>This army gains a +2 item bonus to its AC until the start of your next turn against attacks from the targeted army.</p>",
+            "rules": {
+                "1": {
+                    "label": "Guarded"
+                }
+            }
         },
         "Efficient": {
             "name": "Efficient",
@@ -253,7 +281,12 @@
         },
         "Focused Devotion": {
             "name": "Focused Devotion",
-            "description": "<p>The army is particularly loyal to your cause. The army gains a +1 status bonus on Morale checks made to @UUID[Compendium.pf2e.kingmaker-features.Item.8XXylMGJuqe1ozMk]{Rally}. This bonus increases to +2 at 9th level, and +3 at 17th level.</p>\n<p>The army can use the @UUID[Compendium.pf2e.kingmaker-features.Item.ggVahjiAlVICpiPA]{Taunt} tactical war action.</p>"
+            "description": "<p>The army is particularly loyal to your cause. The army gains a +1 status bonus on Morale checks made to @UUID[Compendium.pf2e.kingmaker-features.Item.8XXylMGJuqe1ozMk]{Rally}. This bonus increases to +2 at 9th level, and +3 at 17th level.</p>\n<p>The army can use the @UUID[Compendium.pf2e.kingmaker-features.Item.ggVahjiAlVICpiPA]{Taunt} tactical war action.</p>",
+            "rules": {
+                "0": {
+                    "label": "Morale checks made to Rally"
+                }
+            }
         },
         "Fortified": {
             "name": "Fortified",
@@ -297,7 +330,12 @@
         },
         "Hold the Line": {
             "name": "Hold the Line",
-            "description": "<p>The army has trained to maintain position even in the face of overwhelming opponents. The army gains a +1 status bonus on Morale checks made to resist rout, and its Rout Threshold is equal to 1/4 it's total Hit Points (rounded up).</p>"
+            "description": "<p>The army has trained to maintain position even in the face of overwhelming opponents. The army gains a +1 status bonus on Morale checks made to resist rout, and its Rout Threshold is equal to 1/4 it's total Hit Points (rounded up).</p>",
+            "rules": {
+                "1": {
+                    "label": "Morale checks made to resist Rout"
+                }
+            }
         },
         "Improve Lifestyle": {
             "name": "Improve Lifestyle",
@@ -397,7 +435,15 @@
         },
         "Overrun": {
             "name": "Overrun",
-            "description": "<p><em><strong>Note</strong>: Basic cavalry armies know Overrun automatically, and must 'spend' their first tactic on it.</em></p>\n<hr />\n<p>Cavalry armies gain a +1 status bonus on weapon attacks against infantry and skirmisher armies, but they suffer a \u20131 status penalty on Maneuver and Morale saves against area attacks and mental attacks.</p>"
+            "description": "<p><em><strong>Note</strong>: Basic cavalry armies know Overrun automatically, and must 'spend' their first tactic on it.</em></p>\n<hr />\n<p>Cavalry armies gain a +1 status bonus on weapon attacks against infantry and skirmisher armies, but they suffer a \u20131 status penalty on Maneuver and Morale saves against area attacks and mental attacks.</p>",
+            "rules": {
+                "0": {
+                    "label": "vs Infantry and Skirmisher"
+                },
+                "1": {
+                    "label": "vs Area or Mental attacks"
+                }
+            }
         },
         "Overwhelming Bombardment": {
             "name": "Overwhelming Bombardment",
@@ -449,7 +495,12 @@
         },
         "Reckless Flankers": {
             "name": "Reckless Flankers",
-            "description": "<p>Your army is skilled at surrounding their foes and distracting them, at the cost of spreading out too much and being more vulnerable. When you use the @UUID[Compendium.pf2e.kingmaker-features.Item.wHoXoyci1lddRR2R]{Advance} war action to successfully engage an army, you can choose to take a \u20132 circumstance penalty to your AC in order to gain a +1 circumstance bonus on attack rolls. If you do so, these modifiers remain in effect until you are no longer engaged.</p>\n<p>You can use the @UUID[Compendium.pf2e.kingmaker-features.Item.dEdTJgaaYiDitp5O]{Outflank} tactical war action.</p>"
+            "description": "<p>Your army is skilled at surrounding their foes and distracting them, at the cost of spreading out too much and being more vulnerable. When you use the @UUID[Compendium.pf2e.kingmaker-features.Item.wHoXoyci1lddRR2R]{Advance} war action to successfully engage an army, you can choose to take a \u20132 circumstance penalty to your AC in order to gain a +1 circumstance bonus on attack rolls. If you do so, these modifiers remain in effect until you are no longer engaged.</p>\n<p>You can use the @UUID[Compendium.pf2e.kingmaker-features.Item.dEdTJgaaYiDitp5O]{Outflank} tactical war action.</p>",
+            "rules": {
+                "0": {
+                    "label": "Reckless Flanker"
+                }
+            }
         },
         "Recover Army": {
             "name": "Recover Army",
@@ -538,6 +589,12 @@
         "Weary": {
             "name": "Weary",
             "description": "<p>The army is exhausted. Weary always has a numerical value. A weary army takes a circumstance penalty equal to its weary value to its AC, to its Maneuver checks, and to its Army activity checks; it takes double this circumstance penalty on Deploy Army checks. An army reduces the value of this condition by 1 each Kingdom turn that passes during which it does not attempt an Army activity or engage in a war encounter.</p>"
+        }
+    },
+    "mapping": {
+        "rules": {
+            "converter": "translateRules",
+            "path": "system.rules"
         }
     }
 }
