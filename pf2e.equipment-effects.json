@@ -1487,15 +1487,30 @@
         },
         "Effect: Phantasmal Doorknob - Weapon": {
             "name": "Effect: Phantasmal Doorknob - Weapon",
-            "description": "<p>Granted by @UUID[Compendium.pf2e.equipment-srd.Item.IISieImYvSQ8AqmC]{Phantasmal Doorknob}</p>\n<p>If you critically succeed at a Strike with the weapon, the target is dazzled until the end of its next turn.</p>"
+            "description": "<p>Granted by @UUID[Compendium.pf2e.equipment-srd.Item.IISieImYvSQ8AqmC]{Phantasmal Doorknob}</p>\n<p>If you critically succeed at a Strike with the weapon, the target is dazzled until the end of its next turn.</p>",
+            "rules": {
+                "1": {
+                    "text": "The target is @UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]{Dazzled} until the end of its next turn."
+                }
+            }
         },
         "Effect: Phantasmal Doorknob - Weapon (Greater)": {
             "name": "Effect: Phantasmal Doorknob - Weapon (Greater)",
-            "description": "<p>Granted by @UUID[Compendium.pf2e.equipment-srd.Item.7dkdtY9cTXM3gMon]{Phantasmal Doorknob (Greater)}</p>\n<p>If you critically succeed at a Strike with the weapon, the target is blinded until the end of its next turn.</p>"
+            "description": "<p>Granted by @UUID[Compendium.pf2e.equipment-srd.Item.7dkdtY9cTXM3gMon]{Phantasmal Doorknob (Greater)}</p>\n<p>If you critically succeed at a Strike with the weapon, the target is blinded until the end of its next turn.</p>",
+            "rules": {
+                "1": {
+                    "text": "The target is @UUID[Compendium.pf2e.conditionitems.Item.XgEqL1kFApUbl5Z2]{Blinded} until the end of its next turn."
+                }
+            }
         },
         "Effect: Phantasmal Doorknob - Weapon (Major)": {
             "name": "Effect: Phantasmal Doorknob - Weapon (Major)",
-            "description": "<p>Granted by @UUID[Compendium.pf2e.equipment-srd.Item.9BXiGLvOFxDBmQrQ]{Phantasmal Doorknob (Major)}</p>\n<p>If you critically succeed at a Strike with the weapon, the target is blinded until the end of its next turn.</p>"
+            "description": "<p>Granted by @UUID[Compendium.pf2e.equipment-srd.Item.9BXiGLvOFxDBmQrQ]{Phantasmal Doorknob (Major)}</p>\n<p>If you critically succeed at a Strike with the weapon, the target is blinded until the end of its next turn.</p>",
+            "rules": {
+                "1": {
+                    "text": "The target is @UUID[Compendium.pf2e.conditionitems.Item.XgEqL1kFApUbl5Z2]{Blinded} until the end of its next turn."
+                }
+            }
         },
         "Effect: Phoenix Flask": {
             "name": "Effect: Phoenix Flask",
@@ -1764,7 +1779,15 @@
         },
         "Effect: Rhino Shot": {
             "name": "Effect: Rhino Shot",
-            "description": "<p>On a successful Strike, the attack deals an additional 2d6 force damage, and the target must succeed at a @Check[type:fortitude|dc:19] or be knocked @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone}. If the hit with the <em>rhino shot</em> was a critical success, the target is knocked prone unless it critically succeeds at its save.</p>"
+            "description": "<p>On a successful Strike, the attack deals an additional 2d6 force damage, and the target must succeed at a @Check[type:fortitude|dc:19] or be knocked @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone}. If the hit with the <em>rhino shot</em> was a critical success, the target is knocked prone unless it critically succeeds at its save.</p>",
+            "rules": {
+                "1": {
+                    "text": "The target must succeed at a @Check[type:fortitude|dc:19|name:Rhino Shot|traits:damaging-effect,force,conjuration,consumable,magical|showDC:all] save or be knocked @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone}."
+                },
+                "2": {
+                    "text": "The target must critically succeed at a @Check[type:fortitude|dc:19|name:Rhino Shot|traits:damaging-effect,force,conjuration,consumable,magical|showDC:all] save or be knocked @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone}."
+                }
+            }
         },
         "Effect: Rime Crystal - Armor": {
             "name": "Effect: Rime Crystal - Armor",

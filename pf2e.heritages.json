@@ -105,7 +105,12 @@
         },
         "Caveclimber Kobold": {
             "name": "Caveclimber Kobold",
-            "description": "<p>You live in a vertically-oriented home, and you're a consummate climber. You gain the @UUID[Compendium.pf2e.feats-srd.Item.09PurtIanNUPfNRq]{Combat Climber} skill feat, even if you don't meet the prerequisites. You can use your clawed feet and tail to Climb, leaving your hands free. Additionally, if you succeed at an Athletics check to Climb, you critically succeed instead.</p>"
+            "description": "<p>You live in a vertically-oriented home, and you're a consummate climber. You gain the @UUID[Compendium.pf2e.feats-srd.Item.09PurtIanNUPfNRq]{Combat Climber} skill feat, even if you don't meet the prerequisites. You can use your clawed feet and tail to Climb, leaving your hands free. Additionally, if you succeed at an Athletics check to Climb, you critically succeed instead.</p>",
+            "rules": {
+                "2": {
+                    "text": "When you roll a success to Climb, you get a critical success instead."
+                }
+            }
         },
         "Cavern Elf": {
             "name": "Cavern Elf",
@@ -113,7 +118,15 @@
         },
         "Cavern Kobold": {
             "name": "Cavern Kobold",
-            "description": "<p>You hatched into a warren among narrow tunnels and countless kin. Your body is flexible.</p>\n<p>When @UUID[Compendium.pf2e.actionspf2e.Item.pprgrYQ1QnIDGZiy]{Climbing} rock walls, stalactites, and other natural stone features, you move at half your Speed on a success and at full Speed on a critical success (and you move at full Speed on a success if you have @UUID[Compendium.pf2e.feats-srd.Item.P04Hw8E6WAWARKHP]{Quick Climb}). This doesn't affect you if you're using a climb Speed.</p>\n<p>If you roll a success on an Acrobatics check to @UUID[Compendium.pf2e.actionspf2e.Item.kMcV8e5EZUxa6evt]{Squeeze}, you get a critical success instead.</p>"
+            "description": "<p>You hatched into a warren among narrow tunnels and countless kin. Your body is flexible.</p>\n<p>When @UUID[Compendium.pf2e.actionspf2e.Item.pprgrYQ1QnIDGZiy]{Climbing} rock walls, stalactites, and other natural stone features, you move at half your Speed on a success and at full Speed on a critical success (and you move at full Speed on a success if you have @UUID[Compendium.pf2e.feats-srd.Item.P04Hw8E6WAWARKHP]{Quick Climb}). This doesn't affect you if you're using a climb Speed.</p>\n<p>If you roll a success on an Acrobatics check to @UUID[Compendium.pf2e.actionspf2e.Item.kMcV8e5EZUxa6evt]{Squeeze}, you get a critical success instead.</p>",
+            "rules": {
+                "0": {
+                    "text": "When you climb natural stone, you move at half your Speed on a success, and full speed on a critical success."
+                },
+                "1": {
+                    "text": "When you roll a success to Squeeze, you get a critical success instead."
+                }
+            }
         },
         "Celestial Envoy Kitsune": {
             "name": "Celestial Envoy Kitsune",
@@ -137,7 +150,12 @@
         },
         "Cliffscale Lizardfolk": {
             "name": "Cliffscale Lizardfolk",
-            "description": "<p>Your toes are adapted for gripping and climbing.</p>\n<p>You gain the @UUID[Compendium.pf2e.feats-srd.Item.09PurtIanNUPfNRq]{Combat Climber} feat as a bonus feat, and as long as you aren't wearing footwear, you can use the sticky pads on your feet to climb, leaving your hands free.</p>\n<p>Additionally, if you roll a success on an Athletics check to climb, you get a critical success instead.</p>"
+            "description": "<p>Your toes are adapted for gripping and climbing.</p>\n<p>You gain the @UUID[Compendium.pf2e.feats-srd.Item.09PurtIanNUPfNRq]{Combat Climber} feat as a bonus feat, and as long as you aren't wearing footwear, you can use the sticky pads on your feet to climb, leaving your hands free.</p>\n<p>Additionally, if you roll a success on an Athletics check to climb, you get a critical success instead.</p>",
+            "rules": {
+                "0": {
+                    "text": "When you roll a success to Climb, you get a critical success instead."
+                }
+            }
         },
         "Cloudleaper Lizardfolk": {
             "name": "Cloudleaper Lizardfolk",
@@ -360,6 +378,9 @@
             "rules": {
                 "0": {
                     "label": "Irongut Goblin (vs. afflictions & sickened)"
+                },
+                "1": {
+                    "text": "If you roll a success on a save against an ingested affliction or to avoid gaining the sickened condition, treat it as a critical success"
                 }
             }
         },
@@ -369,7 +390,12 @@
         },
         "Jinxed Tengu": {
             "name": "Jinxed Tengu",
-            "description": "<p>Your lineage has been exposed to curse after curse, and now, they slide off your feathers like rain. If you succeed at a saving throw against a curse or misfortune effect, you get a critical success instead.</p>\n<p>When you would gain the @UUID[Compendium.pf2e.conditionitems.Item.3uh1r86TzbQvosxv]{Doomed} condition, attempt a @Check[type:flat|dc:17] check. On a success, reduce the value of the doomed condition you would gain by 1.</p>"
+            "description": "<p>Your lineage has been exposed to curse after curse, and now, they slide off your feathers like rain. If you succeed at a saving throw against a curse or misfortune effect, you get a critical success instead.</p>\n<p>When you would gain the @UUID[Compendium.pf2e.conditionitems.Item.3uh1r86TzbQvosxv]{Doomed} condition, attempt a @Check[type:flat|dc:17] check. On a success, reduce the value of the doomed condition you would gain by 1.</p>",
+            "rules": {
+                "1": {
+                    "text": "If you succeed at a saving throw against a curse or misfortune effect, you get a critical success instead."
+                }
+            }
         },
         "Jungle Catfolk": {
             "name": "Jungle Catfolk",
@@ -513,7 +539,12 @@
         },
         "Paddler Shoony": {
             "name": "Paddler Shoony",
-            "description": "<p>You hail from shoonies who have lived long and successfully among the reeds and cattails of swamps and marshes, and have adapted to the challenges of living near waterlogged areas. You ignore difficult terrain and greater difficult terrain from bogs. When you roll a success to @UUID[Compendium.pf2e.actionspf2e.Item.c8TGiZ48ygoSPofx]{Swim}, you get a critical success instead.</p>"
+            "description": "<p>You hail from shoonies who have lived long and successfully among the reeds and cattails of swamps and marshes, and have adapted to the challenges of living near waterlogged areas. You ignore difficult terrain and greater difficult terrain from bogs. When you roll a success to @UUID[Compendium.pf2e.actionspf2e.Item.c8TGiZ48ygoSPofx]{Swim}, you get a critical success instead.</p>",
+            "rules": {
+                "0": {
+                    "text": "When you roll a success to Swim, you get a critical success instead."
+                }
+            }
         },
         "Pine Leshy": {
             "name": "Pine Leshy",
@@ -589,7 +620,12 @@
         },
         "River Azarketi": {
             "name": "River Azarketi",
-            "description": "<p>You come from azarketis who abandoned the oceans for the fresh water of inland life. The varied geography of rivers required you to develop advanced physical skills to swim against rapids, leap through cascading waters, and deftly navigate shallow and narrow channels.</p>\n<p>When you succeed at an Athletics check to Swim, you get a critical success instead.</p>"
+            "description": "<p>You come from azarketis who abandoned the oceans for the fresh water of inland life. The varied geography of rivers required you to develop advanced physical skills to swim against rapids, leap through cascading waters, and deftly navigate shallow and narrow channels.</p>\n<p>When you succeed at an Athletics check to Swim, you get a critical success instead.</p>",
+            "rules": {
+                "0": {
+                    "text": "When you succeed at an Athletics check to Swim, you get a critical success instead."
+                }
+            }
         },
         "Rock Dwarf": {
             "name": "Rock Dwarf",
@@ -601,7 +637,12 @@
         },
         "Runtboss Hobgoblin": {
             "name": "Runtboss Hobgoblin",
-            "description": "<p>You come from a long line of hobgoblins who commanded goblins. You are smaller than other hobgoblins, but goblins still listen to any commands you bellow. You gain the @UUID[Compendium.pf2e.feats-srd.Item.gUqvezs2zzoTXFAI]{Group Coercion} skill feat. If you roll a success on an Intimidation check to @UUID[Compendium.pf2e.actionspf2e.Item.tHCqgwjtQtzNqVvd]{Coerce} a goblin (but not other creatures with the goblin trait), you get a critical success instead; if you roll a critical failure, you get a failure instead.</p>"
+            "description": "<p>You come from a long line of hobgoblins who commanded goblins. You are smaller than other hobgoblins, but goblins still listen to any commands you bellow. You gain the @UUID[Compendium.pf2e.feats-srd.Item.gUqvezs2zzoTXFAI]{Group Coercion} skill feat. If you roll a success on an Intimidation check to @UUID[Compendium.pf2e.actionspf2e.Item.tHCqgwjtQtzNqVvd]{Coerce} a goblin (but not other creatures with the goblin trait), you get a critical success instead; if you roll a critical failure, you get a failure instead.</p>",
+            "rules": {
+                "0": {
+                    "text": "When you roll a success on an Intimidation check to Coerce a goblin, you get a critical success instead; if you roll a critical failure, you get a failure instead."
+                }
+            }
         },
         "Sacred Nagaji": {
             "name": "Sacred Nagaji",
@@ -633,11 +674,21 @@
         },
         "Sewer Rat": {
             "name": "Sewer Rat",
-            "description": "<p>You come from a long line of ysoki from a community based in the sewers beneath a large settlement. You are immune to the disease filth fever. Each of your successful saving throws against a disease or poison reduces its stage by 2, or by 1 for a virulent disease or poison. Each critical success against an ongoing disease or poison reduces its stage by 3, or by 2 for a virulent disease or poison.</p>"
+            "description": "<p>You come from a long line of ysoki from a community based in the sewers beneath a large settlement. You are immune to the disease filth fever. Each of your successful saving throws against a disease or poison reduces its stage by 2, or by 1 for a virulent disease or poison. Each critical success against an ongoing disease or poison reduces its stage by 3, or by 2 for a virulent disease or poison.</p>",
+            "rules": {
+                "0": {
+                    "text": "Your succesful saving throws against a disease or poison reduce its stage by 2 (or 1 for a virulent disease or poison). Each critical success reduces its stage by 3 (or 2 for a virulent disease or poison)."
+                }
+            }
         },
         "Shadow Rat": {
             "name": "Shadow Rat",
-            "description": "<p>Your ancestors lived in dark spaces underground, granting you dark fur and a vaguely unnatural mien that unnerves sapient creatures and frightens animals. You gain the trained proficiency rank in Intimidation and can use Intimidation to @UUID[Compendium.pf2e.actionspf2e.Item.tHCqgwjtQtzNqVvd]{Coerce} animals. When you @UUID[Compendium.pf2e.actionspf2e.Item.2u915NdUyQan6uKF]{Demoralize} an animal, you don't take a penalty for not sharing a language with it. If you would automatically become trained in Intimidation (from your background or class, for example), you become trained in another skill of your choice.</p>\n<p>Animals' attitudes toward you begin one degree worse than normal, usually starting at unfriendly instead of indifferent for domesticated animals, and hostile instead of unfriendly for wild animals.</p>"
+            "description": "<p>Your ancestors lived in dark spaces underground, granting you dark fur and a vaguely unnatural mien that unnerves sapient creatures and frightens animals. You gain the trained proficiency rank in Intimidation and can use Intimidation to @UUID[Compendium.pf2e.actionspf2e.Item.tHCqgwjtQtzNqVvd]{Coerce} animals. When you @UUID[Compendium.pf2e.actionspf2e.Item.2u915NdUyQan6uKF]{Demoralize} an animal, you don't take a penalty for not sharing a language with it. If you would automatically become trained in Intimidation (from your background or class, for example), you become trained in another skill of your choice.</p>\n<p>Animals' attitudes toward you begin one degree worse than normal, usually starting at unfriendly instead of indifferent for domesticated animals, and hostile instead of unfriendly for wild animals.</p>",
+            "rules": {
+                "1": {
+                    "text": "When you Demoralize an animal, you don't take a penalty for not sharing a language with it."
+                }
+            }
         },
         "Shapewrought Fleshwarp": {
             "name": "Shapewrought Fleshwarp",
@@ -917,7 +968,12 @@
         },
         "Warrenbred Hobgoblin": {
             "name": "Warrenbred Hobgoblin",
-            "description": "<p>Your ancestors lived underground. Your ears are larger than those of other hobgoblins and sensitive to echoes. When you are underground, you can use the @UUID[Compendium.pf2e.actionspf2e.Item.BlAOM2X92SI6HMtJ]{Seek} action to sense @UUID[Compendium.pf2e.conditionitems.Item.VRSef5y1LmL2Hkjf]{Undetected} creatures within a @Template[type:burst|distance:30] instead of a @Template[type:burst|distance:15]. In addition, if you roll a success on an Acrobatics check to @UUID[Compendium.pf2e.actionspf2e.Item.kMcV8e5EZUxa6evt]{Squeeze}, you get a critical success instead.</p>"
+            "description": "<p>Your ancestors lived underground. Your ears are larger than those of other hobgoblins and sensitive to echoes. When you are underground, you can use the @UUID[Compendium.pf2e.actionspf2e.Item.BlAOM2X92SI6HMtJ]{Seek} action to sense @UUID[Compendium.pf2e.conditionitems.Item.VRSef5y1LmL2Hkjf]{Undetected} creatures within a @Template[type:burst|distance:30] instead of a @Template[type:burst|distance:15]. In addition, if you roll a success on an Acrobatics check to @UUID[Compendium.pf2e.actionspf2e.Item.kMcV8e5EZUxa6evt]{Squeeze}, you get a critical success instead.</p>",
+            "rules": {
+                "0": {
+                    "text": "When you roll a success to Squeeze, you get a critical success instead."
+                }
+            }
         },
         "Warrior Android": {
             "name": "Warrior Android",
@@ -990,7 +1046,12 @@
         },
         "Woodland Elf": {
             "name": "Woodland Elf",
-            "description": "<p>You're adapted to life in the forest, the deep jungle, or a similar environment, and you know how to climb trees and use foliage to your advantage. When @UUID[Compendium.pf2e.actionspf2e.Item.pprgrYQ1QnIDGZiy]{Climbing} trees, vines, and other foliage, you move at half your Speed on a success and at full Speed on a critical success (and you move at full Speed on a success if you have @UUID[Compendium.pf2e.feats-srd.Item.P04Hw8E6WAWARKHP]{Quick Climb}). This doesn't affect you if you're using a climb Speed.</p>\n<p>You can always use the @UUID[Compendium.pf2e.actionspf2e.Item.ust1jJSCZQUhBZIz]{Take Cover} action when you are within forest terrain to gain cover, even if you're not next to an obstacle you can Take Cover behind.</p>"
+            "description": "<p>You're adapted to life in the forest, the deep jungle, or a similar environment, and you know how to climb trees and use foliage to your advantage. When @UUID[Compendium.pf2e.actionspf2e.Item.pprgrYQ1QnIDGZiy]{Climbing} trees, vines, and other foliage, you move at half your Speed on a success and at full Speed on a critical success (and you move at full Speed on a success if you have @UUID[Compendium.pf2e.feats-srd.Item.P04Hw8E6WAWARKHP]{Quick Climb}). This doesn't affect you if you're using a climb Speed.</p>\n<p>You can always use the @UUID[Compendium.pf2e.actionspf2e.Item.ust1jJSCZQUhBZIz]{Take Cover} action when you are within forest terrain to gain cover, even if you're not next to an obstacle you can Take Cover behind.</p>",
+            "rules": {
+                "0": {
+                    "text": "When you climb trees, vines or other foliage, you move at half your Speed on a success, and full speed on a critical success."
+                }
+            }
         },
         "Woodstalker Lizardfolk": {
             "name": "Woodstalker Lizardfolk",

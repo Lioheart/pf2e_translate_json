@@ -178,6 +178,11 @@
         "Acrobat Dedication": {
             "name": "Acrobat Dedication",
             "description": "<p>You become an expert in Acrobatics. At 7th level, you become a master in Acrobatics, and at 15th level, you become legendary in Acrobatics.</p>\n<p>Whenever you critically succeed at an Acrobatics check to @UUID[Compendium.pf2e.actionspf2e.Item.21WIfSu7Xd7uKqV8]{Tumble Through} an enemy's space, you don't treat the enemy's space as difficult terrain.</p>\n<p><strong>Special</strong> You can't select another dedication feat until you have gained two other feats from the @UUID[Compendium.pf2e.journals.JournalEntry.vx5FGEG34AxI2dow.JournalEntryPage.rhDvoOHAhAlABiae]{Acrobat} archetype.</p>",
+            "rules": {
+                "1": {
+                    "text": "As success, but you don't treat the enemy's space as difficult terrain."
+                }
+            },
             "prerequisites": [
                 {
                     "value": "trained in Acrobatics"
@@ -247,7 +252,12 @@
         },
         "Adaptive Vision": {
             "name": "Adaptive Vision",
-            "description": "<p><strong>Access</strong> You are from Dongun Hold or Alkenstar.</p>\n<hr />\n<p>After years of using black powder weaponry in dimly lit spaces, you've become accustomed to dazzling flashes of light and sudden shifts in illumination. You gain a +1 circumstance bonus to saving throws against visual effects. If you roll a success on a saving throw against a visual effect, you get a critical success instead.</p>"
+            "description": "<p><strong>Access</strong> You are from Dongun Hold or Alkenstar.</p>\n<hr />\n<p>After years of using black powder weaponry in dimly lit spaces, you've become accustomed to dazzling flashes of light and sudden shifts in illumination. You gain a +1 circumstance bonus to saving throws against visual effects. If you roll a success on a saving throw against a visual effect, you get a critical success instead.</p>",
+            "rules": {
+                "2": {
+                    "text": "When you roll a success on a save against a visual effect, you get a critical success instead."
+                }
+            }
         },
         "Add Element": {
             "name": "Add Element",
@@ -756,7 +766,15 @@
         },
         "Ageless Patience": {
             "name": "Ageless Patience",
-            "description": "<p>You work at a pace born from longevity that enhances your thoroughness. You can voluntarily spend twice as much time as normal on a Perception check or skill check. If you do, you gain a +2 circumstance bonus to the check and don't automatically reduce your degree of success on a natural 1 (you get a critical failure only if your result is 10 lower than the DC). For example, you could get these benefits if you spent 2 actions to @UUID[Compendium.pf2e.actionspf2e.Item.BlAOM2X92SI6HMtJ]{Seek}, which normally takes 1 action. You can get these benefits during exploration by taking twice as long exploring as normal, or in downtime by spending twice as much downtime.</p>\n<p>The GM might determine a situation doesn't grant you a benefit if a delay would be directly counterproductive to your success, such as a tense negotiation with an impatient creature.</p>"
+            "description": "<p>You work at a pace born from longevity that enhances your thoroughness. You can voluntarily spend twice as much time as normal on a Perception check or skill check. If you do, you gain a +2 circumstance bonus to the check and don't automatically reduce your degree of success on a natural 1 (you get a critical failure only if your result is 10 lower than the DC). For example, you could get these benefits if you spent 2 actions to @UUID[Compendium.pf2e.actionspf2e.Item.BlAOM2X92SI6HMtJ]{Seek}, which normally takes 1 action. You can get these benefits during exploration by taking twice as long exploring as normal, or in downtime by spending twice as much downtime.</p>\n<p>The GM might determine a situation doesn't grant you a benefit if a delay would be directly counterproductive to your success, such as a tense negotiation with an impatient creature.</p>",
+            "rules": {
+                "2": {
+                    "text": "You don't treat a natural 1 as worse than usual on perception checks; you get a critical failure only if your result is 10 lower than the DC."
+                },
+                "3": {
+                    "text": "You don't treat a natural 1 as worse than usual on skill checks; you get a critical failure only if your result is 10 lower than the DC."
+                }
+            }
         },
         "Ageless Spirit": {
             "name": "Ageless Spirit",
@@ -865,6 +883,9 @@
             "rules": {
                 "0": {
                     "label": "Alchemical Savant (identify alchemical items with formula)"
+                },
+                "1": {
+                    "text": "If have the formula for the item you're identifying, and you roll a critical failure, you get a failure instead."
                 }
             },
             "prerequisites": [
@@ -926,6 +947,9 @@
                 },
                 "1": {
                     "label": "Alghollthu Bound (vs. mental effect from alghollthu)"
+                },
+                "2": {
+                    "text": "When you roll a success on a save against an mental effect that would control you, you get a critical success instead. This benefit does not apply against effects originating from alghollthus."
                 }
             }
         },
@@ -1021,7 +1045,12 @@
         },
         "Ambush Awareness": {
             "name": "Ambush Awareness",
-            "description": "<p>You gain a +2 circumstance bonus to Perception checks attempted as initiative rolls. Additionally, if your initiative roll result is tied with that of an opponent, you go first, regardless of whether you rolled Perception or not.</p>"
+            "description": "<p>You gain a +2 circumstance bonus to Perception checks attempted as initiative rolls. Additionally, if your initiative roll result is tied with that of an opponent, you go first, regardless of whether you rolled Perception or not.</p>",
+            "rules": {
+                "1": {
+                    "text": "If your initiative roll result is tied with that of an opponent, you go first."
+                }
+            }
         },
         "Ambush Bladderwort": {
             "name": "Ambush Bladderwort",
@@ -1155,7 +1184,12 @@
         },
         "Ancestral Suspicion": {
             "name": "Ancestral Suspicion",
-            "description": "<p>Long-lived elves have seen civilizations rise and fall, often at the hands of outside forces. As a result, they have developed a wariness of others who might seek to influence or control them. You've been trained to resist such manipulation, gaining a +2 circumstance bonus to saving throws against effects that would make you @UUID[Compendium.pf2e.conditionitems.Item.9qGBRpbX9NEwtAAr]{Controlled}, such as @UUID[Compendium.pf2e.spells-srd.Item.OsOhx3TGIZ7AhD0P]{Dominate}, and to Perception checks to @UUID[Compendium.pf2e.actionspf2e.Item.1xRFPTFtWtGJ9ELw]{Sense Motive} when trying to determine if a creature is under the influence of such an effect. When you roll a success on a saving throw against such an effect, you get a critical success instead.</p>"
+            "description": "<p>Long-lived elves have seen civilizations rise and fall, often at the hands of outside forces. As a result, they have developed a wariness of others who might seek to influence or control them. You've been trained to resist such manipulation, gaining a +2 circumstance bonus to saving throws against effects that would make you @UUID[Compendium.pf2e.conditionitems.Item.9qGBRpbX9NEwtAAr]{Controlled}, such as @UUID[Compendium.pf2e.spells-srd.Item.OsOhx3TGIZ7AhD0P]{Dominate}, and to Perception checks to @UUID[Compendium.pf2e.actionspf2e.Item.1xRFPTFtWtGJ9ELw]{Sense Motive} when trying to determine if a creature is under the influence of such an effect. When you roll a success on a saving throw against such an effect, you get a critical success instead.</p>",
+            "rules": {
+                "2": {
+                    "text": "When you roll a success on a saving throw against an effect that would make you controlled, you get a critical success instead."
+                }
+            }
         },
         "Ancestral Weaponry": {
             "name": "Ancestral Weaponry",
@@ -1564,6 +1598,11 @@
         "Archaeologist's Luck": {
             "name": "Archaeologist's Luck",
             "description": "<p><strong>Frequency</strong> once per hour</p>\n<p><strong>Trigger</strong> You fail a check against a trap, such as a Thievery check to @UUID[Compendium.pf2e.actionspf2e.Item.cYdz2grcOcRt4jk6]{Disable} the trap or a Reflex save to avoid its effects.</p>\n<hr />\n<p>You are more than just skillful; your drive to find the secrets of the past manifests as a strange kind of luck. Reroll the failed check and use the new result.</p>",
+            "rules": {
+                "0": {
+                    "text": "<em>Once per hour</em>: Reroll the failed check and use the new result."
+                }
+            },
             "prerequisites": [
                 {
                     "value": "Archaeologist Dedication"
@@ -1813,6 +1852,11 @@
         "Assured Identification": {
             "name": "Assured Identification",
             "description": "<p>You rarely misidentify an item. When using Arcana, Nature, Occultism, or Religion checks to Identify Magic, if you roll a critical failure, you get a failure instead. If you would misidentify a cursed item because you roll a success but not a critical success, you simply can't identify it instead.</p>",
+            "rules": {
+                "0": {
+                    "text": "When Identifying Magic, if you roll a critical failure, you get a failure instead. If you would misidentify a cursed item becuase you roll a success, you simply can't identify it."
+                }
+            },
             "prerequisites": [
                 {
                     "value": "expert in Arcana, Nature, Occultism, or Religion"
@@ -1851,7 +1895,12 @@
         },
         "Athletic Might": {
             "name": "Athletic Might",
-            "description": "<p>Surviving in hostile terrain has given you a great talent for mobility. Whenever you roll a success on an Athletics check to @UUID[Compendium.pf2e.actionspf2e.Item.pprgrYQ1QnIDGZiy]{Climb} or @UUID[Compendium.pf2e.actionspf2e.Item.c8TGiZ48ygoSPofx]{Swim}, you get a critical success instead.</p>"
+            "description": "<p>Surviving in hostile terrain has given you a great talent for mobility. Whenever you roll a success on an Athletics check to @UUID[Compendium.pf2e.actionspf2e.Item.pprgrYQ1QnIDGZiy]{Climb} or @UUID[Compendium.pf2e.actionspf2e.Item.c8TGiZ48ygoSPofx]{Swim}, you get a critical success instead.</p>",
+            "rules": {
+                "1": {
+                    "text": "Whenever you roll a success on an Athletics check to Climb or Swim, you get a critical success instead."
+                }
+            }
         },
         "Athletic Strategist": {
             "name": "Athletic Strategist",
@@ -3066,7 +3115,12 @@
         },
         "Blast Resistance": {
             "name": "Blast Resistance",
-            "description": "<p><strong>Access</strong> You are from Dongun Hold or Alkenstar.</p>\n<hr />\n<p>You're used to the clamor of steel, the crack of a firearm, and the thunderous blast of explosions. You gain resistance 3 to sonic. If you roll a success on a saving throw against an auditory effect that causes the @UUID[Compendium.pf2e.conditionitems.Item.9PR9y0bi4JPKnHPR]{Deafened} condition, you get a critical success instead.</p>"
+            "description": "<p><strong>Access</strong> You are from Dongun Hold or Alkenstar.</p>\n<hr />\n<p>You're used to the clamor of steel, the crack of a firearm, and the thunderous blast of explosions. You gain resistance 3 to sonic. If you roll a success on a saving throw against an auditory effect that causes the @UUID[Compendium.pf2e.conditionitems.Item.9PR9y0bi4JPKnHPR]{Deafened} condition, you get a critical success instead.</p>",
+            "rules": {
+                "0": {
+                    "text": "When you roll a success on a save against a cold or water effect, you get a critical success instead."
+                }
+            }
         },
         "Blast Tackle": {
             "name": "Blast Tackle",
@@ -3586,7 +3640,12 @@
         },
         "Breath Control": {
             "name": "Breath Control",
-            "description": "<p>You can breathe even in hazardous or sparse air. You can hold your breath for 25 times as long as usual before suffocating. You gain a +1 circumstance bonus to saving throws against inhaled threats, such as inhaled poisons, and if you roll a success on such a saving throw, you get a critical success instead.</p>"
+            "description": "<p>You can breathe even in hazardous or sparse air. You can hold your breath for 25 times as long as usual before suffocating. You gain a +1 circumstance bonus to saving throws against inhaled threats, such as inhaled poisons, and if you roll a success on such a saving throw, you get a critical success instead.</p>",
+            "rules": {
+                "1": {
+                    "text": "If you roll a success on a saving throw against an inhaled threat, you get a critical success instead."
+                }
+            }
         },
         "Breath Like Honey": {
             "name": "Breath Like Honey",
@@ -3665,7 +3724,12 @@
         },
         "Brine May": {
             "name": "Brine May",
-            "description": "<p>Your mother was a sea hag, granting you one sea-green or blue eye. You find comfort both in the sea and on the shore. Whenever you roll a success on an Athletics check to @UUID[Compendium.pf2e.actionspf2e.Item.c8TGiZ48ygoSPofx]{Swim}, you get a critical success instead. If you end your turn in water without having succeeded at a Swim action that round, you don't sink (but you might still be moved by the current).</p>"
+            "description": "<p>Your mother was a sea hag, granting you one sea-green or blue eye. You find comfort both in the sea and on the shore. Whenever you roll a success on an Athletics check to @UUID[Compendium.pf2e.actionspf2e.Item.c8TGiZ48ygoSPofx]{Swim}, you get a critical success instead. If you end your turn in water without having succeeded at a Swim action that round, you don't sink (but you might still be moved by the current).</p>",
+            "rules": {
+                "0": {
+                    "text": "When you roll a success on an Athletics check to swim, you get a critical success instead."
+                }
+            }
         },
         "Brinesoul": {
             "name": "Brinesoul",
@@ -3922,7 +3986,12 @@
         },
         "Called": {
             "name": "Called",
-            "description": "<p>You've heard the Call, and by resisting it, you've developed a bulwark against effects that target your mind. You gain a +1 circumstance bonus to Will saving throws against mental effects. If you roll a success on your saving throw against a mental effect that would make you @UUID[Compendium.pf2e.conditionitems.Item.9qGBRpbX9NEwtAAr]{Controlled}, you get a critical success instead.</p>"
+            "description": "<p>You've heard the Call, and by resisting it, you've developed a bulwark against effects that target your mind. You gain a +1 circumstance bonus to Will saving throws against mental effects. If you roll a success on your saving throw against a mental effect that would make you @UUID[Compendium.pf2e.conditionitems.Item.9qGBRpbX9NEwtAAr]{Controlled}, you get a critical success instead.</p>",
+            "rules": {
+                "1": {
+                    "text": "When you roll a success on an saving throw against a mental effect that would make you controlled, you get a critical success instead."
+                }
+            }
         },
         "Called Shot": {
             "name": "Called Shot",
@@ -5082,6 +5151,9 @@
             "rules": {
                 "0": {
                     "label": "Conceited Mindset (vs. mental)"
+                },
+                "1": {
+                    "text": "If you succeed at a save against a mental effect, you critically succeed instead; similarly, if you fail at a save against a mental effect, you critically fail instead."
                 }
             },
             "prerequisites": [
@@ -5307,6 +5379,11 @@
         "Contortionist": {
             "name": "Contortionist",
             "description": "<p>You can squeeze out of tight situations surprisingly quickly, gaining an advantage against foes that try to pin you down. You gain the @UUID[Compendium.pf2e.feats-srd.Item.3G8xUlgCjRmRJNfP]{Quick Squeeze} skill feat, and if you're a master in Acrobatics, you can @UUID[Compendium.pf2e.actionspf2e.Item.kMcV8e5EZUxa6evt]{Squeeze} at full Speed.</p>\n<p>Whenever you successfully @UUID[Compendium.pf2e.actionspf2e.Item.SkZAQRkLLkmBQNB9]{Escape} using Acrobatics, the creature you Escaped from is @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} against the next attack you make against it before the end of your next turn.</p>",
+            "rules": {
+                "0": {
+                    "text": "Whenever you successfully @UUID[Compendium.pf2e.actionspf2e.Item.SkZAQRkLLkmBQNB9]{Escape} using Acrobatics, the creature you Escaped from is @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} against the next attack you make against it before the end of your next turn."
+                }
+            },
             "prerequisites": [
                 {
                     "value": "Acrobat Dedication"
@@ -6279,7 +6356,12 @@
         },
         "Debilitating Bomb": {
             "name": "Debilitating Bomb",
-            "description": "<p><strong>Frequency</strong> once per round</p>\n<p><strong>Trigger</strong> You use @UUID[Compendium.pf2e.classfeatures.Item.sPtl05wwTpqFI0lL]{Quick Alchemy} to craft an alchemical bomb that is at least 2 levels lower than your advanced alchemy level.</p>\n<hr />\n<p>Your bombs impose additional effects on your enemies. You mix a substance into the bomb that causes one of the following: @UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]{Dazzled}, @UUID[Compendium.pf2e.conditionitems.Item.9PR9y0bi4JPKnHPR]{Deafened}, @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard}, or a -5-foot status penalty to Speeds.</p>\n<p>If the attack with that bomb hits, the target must succeed at a Fortitude saving throw or suffer that effect until the start of your next turn. Use your class DC for this saving throw (even if someone else throws the bomb).</p>"
+            "description": "<p><strong>Frequency</strong> once per round</p>\n<p><strong>Trigger</strong> You use @UUID[Compendium.pf2e.classfeatures.Item.sPtl05wwTpqFI0lL]{Quick Alchemy} to craft an alchemical bomb that is at least 2 levels lower than your advanced alchemy level.</p>\n<hr />\n<p>Your bombs impose additional effects on your enemies. You mix a substance into the bomb that causes one of the following: @UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]{Dazzled}, @UUID[Compendium.pf2e.conditionitems.Item.9PR9y0bi4JPKnHPR]{Deafened}, @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard}, or a -5-foot status penalty to Speeds.</p>\n<p>If the attack with that bomb hits, the target must succeed at a Fortitude saving throw or suffer that effect until the start of your next turn. Use your class DC for this saving throw (even if someone else throws the bomb).</p>",
+            "rules": {
+                "1": {
+                    "text": "If your bomb hits, the target must succed at a Fortitude save against your Class DC, or suffer one of the following @UUID[Compendium.pf2e.feats-srd.Item.sv4LeEbkOJyLen10]{effects}"
+                }
+            }
         },
         "Debilitating Dichotomy": {
             "name": "Debilitating Dichotomy",
@@ -6310,6 +6392,11 @@
         "Decry Thief": {
             "name": "Decry Thief",
             "description": "<p>When you attempt to Demoralize, you can make it harder for the target to flee, in place of the action's normal effects.</p>\n<hr />\n<p><strong>Critical Success</strong> For 1 round, the target takes a -10-foot status penalty to Speed and a -4 status penalty to Stealth.</p>\n<p>@UUID[Compendium.pf2e.feat-effects.Item.kAgUld9PcI4XkHbq]{Effect: Decry Thief (Critical Success)}</p>\n<p><strong>Success</strong> For 1 round, the target takes a -5-foot status penalty to Speed and a -2 status penalty to Stealth.</p>\n<p>@UUID[Compendium.pf2e.feat-effects.Item.FyaekbWsazkJhJda]{Effect: Decry Thief (Success)}</p>",
+            "rules": {
+                "0": {
+                    "text": "<p class='compact-text'><strong>Decry Thief</strong><p>When you attempt to Demoralize, you can make it harder for the target to flee, in place of the action's normal effects.<hr /><strong>Critical Success</strong> For 1 round, the target takes a -10-foot status penalty to Speed and a -4 status penalty to Stealth.</p>\n<p>@UUID[Compendium.pf2e.feat-effects.Item.kAgUld9PcI4XkHbq]{Effect: Decry Thief (Critical Success)}</p>><strong>Success</strong> For 1 round, the target takes a -5-foot status penalty to Speed and a -2 status penalty to Stealth. @UUID[Compendium.pf2e.feat-effects.Item.FyaekbWsazkJhJda]{Effect: Decry Thief (Success)}</p>"
+                }
+            },
             "prerequisites": [
                 {
                     "value": "Zephyr Guard Dedication"
@@ -6879,6 +6966,11 @@
         "Discerning Gaze": {
             "name": "Discerning Gaze",
             "description": "<p>You have a sense for when people are lying. You gain a +1 circumstance bonus on your secret Perception checks to Sense Motive.</p>\n<p>If you use Sense Motive on a creature you have currently condemned with Harsh Judgment, your GM rolls the Perception check twice and takes the higher result (this is a fortune effect).</p>",
+            "rules": {
+                "1": {
+                    "text": "you use Sense Motive on a creature you have currently condemned with Harsh Judgment, your GM rolls the Perception check twice and takes the higher result (this is a fortune effect)."
+                }
+            },
             "prerequisites": [
                 {
                     "value": "Vigilante Dedication"
@@ -7879,6 +7971,11 @@
         "Dubious Knowledge": {
             "name": "Dubious Knowledge",
             "description": "<p>You're a treasure trove of information, but not all of it comes from reputable sources. When you fail (but don't critically fail) a Recall Knowledge check using any skill, you learn the correct answer and an erroneous answer, but you don't have any way to differentiate which is which. This can occur as not knowing something is significant, but not whether it's good or bad.</p>",
+            "rules": {
+                "0": {
+                    "text": "When you fail (but don't critically fail) a Recall Knowledge check using any skill, you learn a bit of true knowledge and a bit of erroneous knowledge."
+                }
+            },
             "prerequisites": [
                 {
                     "value": "trained in a skill with the Recall Knowledge action"
@@ -8758,6 +8855,9 @@
             "rules": {
                 "0": {
                     "label": "Emotionless (vs. emotion and fear effects)"
+                },
+                "1": {
+                    "text": "When you roll a success on a save against an emotion or fear effect, you get a critical success instead."
                 }
             }
         },
@@ -9505,6 +9605,11 @@
         "Expanded Splash": {
             "name": "Expanded Splash",
             "description": "<p>You can throw bombs at just the right trajectory to create especially large and powerful explosions. When you throw an alchemical bomb and that bomb has the splash trait, you can add your Intelligence modifier to the bomb's usual splash damage, and it deals splash damage to every creature within 10 feet of the target.</p>",
+            "rules": {
+                "1": {
+                    "text": "The bomb deals splash damage to every creature within 10 feet of the target."
+                }
+            },
             "prerequisites": [
                 {
                     "value": "Calculated Splash"
@@ -9545,6 +9650,11 @@
         "Experienced Professional": {
             "name": "Experienced Professional",
             "description": "<p>You carefully safeguard your professional endeavors to prevent disaster. When you use Lore to @UUID[Compendium.pf2e.actionspf2e.Item.QyzlsLrqM0EEwd7j]{Earn Income}, if you roll a critical failure, you instead get a failure. If you're an expert in Lore, you gain twice as much income from a failed check to Earn Income, unless it was originally a critical failure.</p>",
+            "rules": {
+                "0": {
+                    "text": "When you use Lore to Earn Income, if you roll a critical failure, you instead get a failure. If you're an expert in Lore, you gain twice as much income from a failed check to Earn Income, unless it was originally a critical failure."
+                }
+            },
             "prerequisites": [
                 {
                     "value": "trained in Lore"
@@ -9867,7 +9977,12 @@
         },
         "Exploitive Bomb": {
             "name": "Exploitive Bomb",
-            "description": "<p><strong>Frequency</strong> once per round</p>\n<p><strong>Trigger</strong> You craft an alchemical bomb using @UUID[Compendium.pf2e.classfeatures.Item.sPtl05wwTpqFI0lL]{Quick Alchemy} that's at least 2 levels lower than your advanced alchemy level.</p>\n<hr />\n<p>You mix a substance into the bomb to foil resistances. The bomb reduces any resistance the enemy has to its damage type by an amount equal to your level, but only for that attack.</p>"
+            "description": "<p><strong>Frequency</strong> once per round</p>\n<p><strong>Trigger</strong> You craft an alchemical bomb using @UUID[Compendium.pf2e.classfeatures.Item.sPtl05wwTpqFI0lL]{Quick Alchemy} that's at least 2 levels lower than your advanced alchemy level.</p>\n<hr />\n<p>You mix a substance into the bomb to foil resistances. The bomb reduces any resistance the enemy has to its damage type by an amount equal to your level, but only for that attack.</p>",
+            "rules": {
+                "0": {
+                    "text": "The bomb reduces any resistance the enemy has to its damage type by an amount equal to your level, but only for that attack."
+                }
+            }
         },
         "Explosion": {
             "name": "Explosion",
@@ -10282,6 +10397,11 @@
         "Fast Recovery": {
             "name": "Fast Recovery",
             "description": "<p>Your body quickly bounces back from afflictions. You regain twice as many Hit Points from resting. Each time you succeed at a Fortitude save against an ongoing disease or poison, you reduce its stage by 2, or by 1 against a virulent disease or poison. Each critical success you achieve against an ongoing disease or poison reduces its stage by 3, or by 2 against a virulent disease or poison. In addition, you reduce the severity of your drained condition by 2 when you rest for a night instead of by 1.</p>",
+            "rules": {
+                "0": {
+                    "text": "If you roll a success on a Fortitude save against an ongoing posion or disease, reduce its stage by 2, or by 1 if its virulent. If you roll a critical success, reduce its stage by 3, or by 2 if its virulent."
+                }
+            },
             "prerequisites": [
                 {
                     "value": "Constitution +2"
@@ -11258,6 +11378,9 @@
             "rules": {
                 "0": {
                     "label": "Against emotion effects"
+                },
+                "1": {
+                    "text": "If you roll a success on a saving throw against an emotion effect, you get a critical success instead."
                 }
             }
         },
@@ -11616,6 +11739,9 @@
             "name": "Game Hunter Dedication",
             "description": "<p>You are skilled at tracking big game animals and similar creatures. You gain the @UUID[Compendium.pf2e.actionspf2e.Item.JYi4MnsdFu618hPm]{Hunt Prey} action, but you can designate only animals, beasts, and dragons as prey. In addition to the other benefits of Hunt Prey, you gain a +2 circumstance bonus to Stealth checks against your hunted prey.</p>\n<p>When you succeed at a Strike against your hunted prey while it's @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard}, it must attempt a Fortitude save against your class DC. On a failure, the prey's Speeds are each reduced by 10 feet for 1 round; on a critical failure, the duration of this effect is 1 minute. The prey is then temporarily immune to this effect for 10 minutes.</p>\n<p>If you already have Hunt Prey, you become an expert in Survival. You apply the Stealth bonus and the Speed reduction only when your prey is an animal, beast, or dragon.</p>\n<hr />\n<p><strong>Special</strong> You can't select another dedication feat until you have gained two other feats from the @UUID[Compendium.pf2e.journals.JournalEntry.vx5FGEG34AxI2dow.JournalEntryPage.8RYKz1WDPMJBmMNt]{Game Hunter} archetype.</p>",
             "rules": {
+                "3": {
+                    "text": "When you succeed at a Strike against your hunted prey while it's off-guard, it must attempt a Fortitude save against your class DC. On a failure, the prey's Speeds are each reduced by 10 feet for 1 round; on a critical failure, the duration of this effect is 1 minute. The prey is then temporarily immune to this effect for 10 minutes."
+                },
                 "5": {
                     "label": "Using Stealth against Hunted Prey"
                 }
@@ -11650,6 +11776,11 @@
         "Gardener's Resolve": {
             "name": "Gardener's Resolve",
             "description": "<p><strong>Frequency</strong> once per day</p>\n<p><strong>Trigger</strong> You roll a failure (but not a critical failure) on a Will save against a fear effect.</p>\n<hr />\n<p>The Gray Gardeners are known for having nerves of steel and an unbreakable resolve. When you would be overwhelmed by terror, you can draw upon this resolve to keep your composure and remain undaunted. You take mental damage equal to twice your level, and the saving throw is a success.</p>",
+            "rules": {
+                "0": {
+                    "text": "As a reaction, once per day you can take mental damage equal to twice your level, and the saving throw is a success."
+                }
+            },
             "prerequisites": [
                 {
                     "value": "Vigilante Dedication"
@@ -11964,6 +12095,11 @@
         "Gigaton Strike": {
             "name": "Gigaton Strike",
             "description": "<p>When you use a full-power Megaton Strike, you can knock your foe back. When you succeed at your Strike while using an unstable Megaton Strike, your target must attempt a @Check[type:fortitude|dc:resolve(@actor.attributes.classDC.value)] save against your class DC.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature is pushed back 5 feet.</p>\n<p><strong>Failure</strong> The creature is pushed back 10 feet.</p>\n<p><strong>Critical Failure</strong> The creature is pushed back 20 feet.</p>\n<p>@Check[type:flat|dc:17|name:Unstable Flat Check]{Unstable Check}</p>\n<p><strong>Special</strong> If your innovation is a minion, this benefit applies on its unstable Megaton Strikes.</p>",
+            "rules": {
+                "0": {
+                    "text": "<p>When you succeed at your Strike while using an unstable Megaton Strike, your target must attempt a Fortitude save against your class DC.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature is pushed back 5 feet.</p>\n<p><strong>Failure</strong> The creature is pushed back 10 feet.</p>\n<p><strong>Critical Failure</strong> The creature is pushed back 20 feet.</p>\n<p><strong>Special</strong> If your innovation is a minion, this benefit applies on its unstable Megaton Strikes.</p>"
+                }
+            },
             "prerequisites": [
                 {
                     "value": "Megaton Strike"
@@ -12507,6 +12643,11 @@
         "Greater Debilitating Bomb": {
             "name": "Greater Debilitating Bomb",
             "description": "<p>You have learned enhanced techniques and alchemical secrets that allow you to expand the range of effects you can impose with your bombs.</p>\n<p>When you use @UUID[Compendium.pf2e.feats-srd.Item.sv4LeEbkOJyLen10]{Debilitating Bomb}, add the following to the list you can choose from: @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 1}, @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 1}, @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 1}, or -10-foot status penalty to Speeds.</p>",
+            "rules": {
+                "0": {
+                    "text": "If your bomb hits, the target must succed at a Fortitude save against your Class DC, or suffer one of the following @UUID[Compendium.pf2e.feats-srd.Item.Cn4w9U7uk5m1bb2S]{effects}"
+                }
+            },
             "prerequisites": [
                 {
                     "value": "Debilitating Bomb"
@@ -13750,7 +13891,12 @@
         },
         "Hunter's Aim": {
             "name": "Hunter's Aim",
-            "description": "<p>When you focus on aiming, your attack becomes particularly accurate. Make a ranged weapon Strike against your hunted prey. On this Strike, you gain a +2 circumstance bonus to the attack roll and ignore your prey's @UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{Concealed} condition and any lesser cover.</p>"
+            "description": "<p>When you focus on aiming, your attack becomes particularly accurate. Make a ranged weapon Strike against your hunted prey. On this Strike, you gain a +2 circumstance bonus to the attack roll and ignore your prey's @UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{Concealed} condition and any lesser cover.</p>",
+            "rules": {
+                "2": {
+                    "text": "Ignore your prey's concealed condition."
+                }
+            }
         },
         "Hunter's Defense": {
             "name": "Hunter's Defense",
@@ -13763,7 +13909,12 @@
         },
         "Hunter's Fangs": {
             "name": "Hunter's Fangs",
-            "description": "<p>Your fangs are exceptionally painful. Whenever you score a critical hit with your fangs unarmed attack, you apply the unarmed attack's critical specialization effect.</p>"
+            "description": "<p>Your fangs are exceptionally painful. Whenever you score a critical hit with your fangs unarmed attack, you apply the unarmed attack's critical specialization effect.</p>",
+            "rules": {
+                "0": {
+                    "text": "The target must succeed at a Fortitude save against your class DC or be @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1} until the end of your next turn."
+                }
+            }
         },
         "Hunter's Sanctum": {
             "name": "Hunter's Sanctum",
@@ -13819,6 +13970,9 @@
             "rules": {
                 "0": {
                     "label": "Activate Hydraulic Maneuvers"
+                },
+                "1": {
+                    "text": "<p class='compact-text'>If you roll a critical failure on your Athletics check to Disarm, Shove or Trip using Hydraulic Maneuvers, you get a failure instead.</p> <p class='compact-text'>You don't receive any item bonuses to the triggering Athletics check or any circumstance bonuses related to your physical body when using Hydraulic Maneuvers.</p>"
                 }
             }
         },
@@ -13936,6 +14090,11 @@
         "Impeccable Crafting": {
             "name": "Impeccable Crafting",
             "description": "<p>You craft flawless creations with great efficiency. Whenever you roll a success at a Crafting check to make an item of the type you chose with @UUID[Compendium.pf2e.feats-srd.Item.QLeMH5mQgh28sa5o]{Specialty Crafting}, you get a critical success instead.</p>",
+            "rules": {
+                "0": {
+                    "text": "Whenever you roll a success at a Crafting check to make an item of the type you chose with Specialty Crafting, you get a critical success instead."
+                }
+            },
             "prerequisites": [
                 {
                     "value": "master in Crafting"
@@ -14349,7 +14508,12 @@
         },
         "Incredible Aim": {
             "name": "Incredible Aim",
-            "description": "<p>By spending a moment to focus, you can ensure your attack strikes true. Make a ranged weapon Strike. On this Strike, you gain a +2 circumstance bonus to the attack roll and ignore the target's @UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{Concealed} condition.</p>"
+            "description": "<p>By spending a moment to focus, you can ensure your attack strikes true. Make a ranged weapon Strike. On this Strike, you gain a +2 circumstance bonus to the attack roll and ignore the target's @UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{Concealed} condition.</p>",
+            "rules": {
+                "2": {
+                    "text": "You ignore the target's @UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{Concealed} condition."
+                }
+            }
         },
         "Incredible Beastmaster Companion": {
             "name": "Incredible Beastmaster Companion",
@@ -14785,6 +14949,11 @@
         "Instrument Of Slaughter": {
             "name": "Instrument Of Slaughter",
             "description": "<p>Your blade ally thirsts for the blood of your foes.</p>\n<p>Whenever you critically hit an enemy with the weapon inhabited by your blade ally while dealing extra damage from your champion's reaction, the target takes @UUID[Compendium.pf2e.conditionitems.Item.lDVqvLKA6eF3Df60]{Persistent Bleed Damage} equal to two of the weapon's damage dice.</p>",
+            "rules": {
+                "0": {
+                    "text": "Whenever you critically hit an enemy with the weapon inhabited by your blade ally while dealing extra damage from your champion's reaction, the target takes @UUID[Compendium.pf2e.conditionitems.Item.lDVqvLKA6eF3Df60]{Persistent Bleed Damage} equal to two of the weapon's damage dice."
+                }
+            },
             "prerequisites": [
                 {
                     "value": "divine ally (blade)"
@@ -14797,6 +14966,11 @@
         "Instrument of Zeal": {
             "name": "Instrument of Zeal",
             "description": "<p>Divine energy fills your weapon. Whenever you critically hit a foe with Blade of Justice or a Retributive Strike, your attack adds an extra damage die, and the target is slowed 1 on its next turn.</p>",
+            "rules": {
+                "1": {
+                    "text": "Whenever you critically hit a foe with Blade of Justice or a Retributive Strike, the target is slowed 1 on its next turn."
+                }
+            },
             "prerequisites": [
                 {
                     "value": "divine ally (blade)"
@@ -15288,7 +15462,12 @@
         },
         "Jungle Strider": {
             "name": "Jungle Strider",
-            "description": "<p>You are adept at dodging roots, foliage, and other jungle obstacles. You ignore difficult terrain in forests and jungles. In addition, when you use the Acrobatics skill to Balance on narrow surfaces or uneven ground made of plant material, you aren't off-guard, and when you roll a success at one of these Acrobatics checks, you get a critical success instead.</p>"
+            "description": "<p>You are adept at dodging roots, foliage, and other jungle obstacles. You ignore difficult terrain in forests and jungles. In addition, when you use the Acrobatics skill to Balance on narrow surfaces or uneven ground made of plant material, you aren't off-guard, and when you roll a success at one of these Acrobatics checks, you get a critical success instead.</p>",
+            "rules": {
+                "1": {
+                    "text": "When you roll a success at an Acrobatics check to Balance on narrow surfaces or uneven ground made of plant material,  get a critical success instead."
+                }
+            }
         },
         "Junk Tinker": {
             "name": "Junk Tinker",
@@ -15773,7 +15952,12 @@
         },
         "Lawbringer": {
             "name": "Lawbringer",
-            "description": "<p>You trace your lineage to archons, guardians of the seven-tiered mountain of Heaven and nurturers of law and virtue within mortals. You gain a +1 circumstance bonus to saves against emotion effects, and if you roll a success on a save against an emotion effect, you get a critical success instead.</p>"
+            "description": "<p>You trace your lineage to archons, guardians of the seven-tiered mountain of Heaven and nurturers of law and virtue within mortals. You gain a +1 circumstance bonus to saves against emotion effects, and if you roll a success on a save against an emotion effect, you get a critical success instead.</p>",
+            "rules": {
+                "1": {
+                    "text": "When you roll a success on a save against an emotion effect, you get a critical success instead."
+                }
+            }
         },
         "Lead Climber": {
             "name": "Lead Climber",
@@ -15843,6 +16027,11 @@
         "Legendary Codebreaker": {
             "name": "Legendary Codebreaker",
             "description": "<p>Your skill with languages and codes is so great that you can decipher information with little more than a quick read through a text. You can @UUID[Compendium.pf2e.actionspf2e.Item.d9gbpiQjChYDYA2L]{Decipher Writing} using Society while reading at normal speed. If you slow down and spend the full amount of time that's ordinarily required and roll a success, you get a critical success; if you critically succeed while spending the normal amount of time, you gain a nearly word-for-word understanding of the document.</p>",
+            "rules": {
+                "0": {
+                    "text": "If you Decipher Writing at the normal rate, and you roll a success, you get a critical success;  if you critically succeed while spending the normal amount of time, you gain a nearly word-for-word understanding of the document."
+                }
+            },
             "prerequisites": [
                 {
                     "value": "legendary in Society"
@@ -17134,6 +17323,14 @@
         "Mask Of Pain": {
             "name": "Mask Of Pain",
             "description": "<p><strong>Trigger</strong> You succeed at a Demoralize check.</p>\n<hr />\n<p><strong>Requirements</strong> You're wearing your <em>warmask</em>.</p>\n<hr />\n<p>Your mask has grown into a manifestation of your pain, which you can release. The creature you successfully Demoralized takes [[/r 2d6[mental] #Mask of Pain]]{2d6 mental damage}, or [[/r 4d6[mental] #Mask of Pain]]{4d6 mental damage} if you're legendary in Intimidation. The target is then temporarily immune to additional damage from Mask of Pain for 24 hours.</p>",
+            "rules": {
+                "0": {
+                    "text": "The creature you successfully Demoralized takes [[/r 2d6[mental] #Mask of Pain]]{2d6 mental damage}, and is then temporarily immune to additional damage from Mask of Pain for 24 hours."
+                },
+                "1": {
+                    "text": "The creature you successfully Demoralized takes [[/r 4d6[mental] #Mask of Pain]]{4d6 mental damage}, and is then temporarily immune to additional damage from Mask of Pain for 24 hours."
+                }
+            },
             "prerequisites": [
                 {
                     "value": "expert in Intimidation"
@@ -18169,6 +18366,11 @@
         "Mortal Healing": {
             "name": "Mortal Healing",
             "description": "<p>You grant greater healing when the gods don't interfere. When you roll a success to @UUID[Compendium.pf2e.actionspf2e.Item.1kGNdIIhuglAjIp9]{Treat Wounds} for a creature that hasn't regained Hit Points from divine magic in the past 24 hours, you get a critical success on your check instead and restore the corresponding amount of Hit Points.</p>",
+            "rules": {
+                "0": {
+                    "text": "When you roll a success to @UUID[Compendium.pf2e.actionspf2e.Item.1kGNdIIhuglAjIp9]{Treat Wounds} for a creature that hasn't regained Hit Points from divine magic in the past 24 hours, you get a critical success on your check instead and restore the corresponding amount of Hit Points."
+                }
+            },
             "prerequisites": [
                 {
                     "value": "Godless Healing"
@@ -18363,6 +18565,15 @@
             "rules": {
                 "0": {
                     "label": "Musetouched (to Escape)"
+                },
+                "2": {
+                    "text": "When you roll a critical failure on a check to Escape, you get a failure instead, and when you roll a success, you get a critical success instead."
+                },
+                "4": {
+                    "text": "When you roll a critical failure on a check to Escape, you get a failure instead, and when you roll a success, you get a critical success instead."
+                },
+                "6": {
+                    "text": "When you roll a critical failure on a check to Escape, you get a failure instead, and when you roll a success, you get a critical success instead."
                 }
             }
         },
@@ -18579,6 +18790,11 @@
         "Necromantic Tenacity": {
             "name": "Necromantic Tenacity",
             "description": "<p>Your training against necromantic effects allows you to escape the worst of their touch. If you roll a success on a saving throw against a necromancy effect, you get a critical success instead; if you roll a critical failure on such a save, you get a failure instead.</p>",
+            "rules": {
+                "1": {
+                    "text": "If you roll a success on a saving throw against a necromancy effect, you get a critical success instead; if you roll a critical failure on such a save, you get a failure instead."
+                }
+            },
             "prerequisites": [
                 {
                     "value": "Necromantic Resistance"
@@ -19672,7 +19888,12 @@
         },
         "Pelagic Aptitude": {
             "name": "Pelagic Aptitude",
-            "description": "<p>You've learned special tricks to survive underwater. You gain the trained proficiency rank in Survival.</p>\n<p>When in an aquatic environment, if you roll a critical failure on a Survival skill check to @UUID[Compendium.pf2e.actionspf2e.Item.fJImDBQfqfjKJOhk]{Sense Direction} or @UUID[Compendium.pf2e.actionspf2e.Item.49y9Ec4bDii8pcD3]{Subsist}, you get a failure instead.</p>"
+            "description": "<p>You've learned special tricks to survive underwater. You gain the trained proficiency rank in Survival.</p>\n<p>When in an aquatic environment, if you roll a critical failure on a Survival skill check to @UUID[Compendium.pf2e.actionspf2e.Item.fJImDBQfqfjKJOhk]{Sense Direction} or @UUID[Compendium.pf2e.actionspf2e.Item.49y9Ec4bDii8pcD3]{Subsist}, you get a failure instead.</p>",
+            "rules": {
+                "0": {
+                    "text": "When in an aquatic environment, if you roll a critical failure on a Survival skill check to Sense Direction or Subsist, you get a failure instead."
+                }
+            }
         },
         "Penetrating Fire": {
             "name": "Penetrating Fire",
@@ -19692,7 +19913,12 @@
         },
         "Perfect Debilitation": {
             "name": "Perfect Debilitation",
-            "description": "<p>You have perfected the formulas for bombs that impede your enemies.</p>\n<p>When you use @UUID[Compendium.pf2e.feats-srd.Item.sv4LeEbkOJyLen10]{Debilitating Bomb}, your target avoids the condition the bomb imposes only if it critically succeeds at its saving throw.</p>"
+            "description": "<p>You have perfected the formulas for bombs that impede your enemies.</p>\n<p>When you use @UUID[Compendium.pf2e.feats-srd.Item.sv4LeEbkOJyLen10]{Debilitating Bomb}, your target avoids the condition the bomb imposes only if it critically succeeds at its saving throw.</p>",
+            "rules": {
+                "0": {
+                    "text": "If your bomb hits, the target must critically succed at its Fortitude save to avoid the condition the bomb imposes."
+                }
+            }
         },
         "Perfect Distraction": {
             "name": "Perfect Distraction",
@@ -20973,6 +21199,11 @@
         "Quick Climb": {
             "name": "Quick Climb",
             "description": "<p>When Climbing, you move 5 more feet on a success and 10 more feet on a critical success, up to your Speed. If you're legendary in Athletics, you gain a climb Speed equal to your Speed.</p>",
+            "rules": {
+                "1": {
+                    "text": "You move 5 more feet on a success, and 10 more feet on a critical success."
+                }
+            },
             "prerequisites": [
                 {
                     "value": "master in Athletics"
@@ -21192,6 +21423,11 @@
         "Quick Swim": {
             "name": "Quick Swim",
             "description": "<p>You Swim 5 feet farther on a success and 10 feet farther on a critical success, to a maximum of your Speed. If you're legendary in Athletics, you gain a swim Speed equal to your Speed.</p>",
+            "rules": {
+                "1": {
+                    "text": "You swim 5 more feet on a success, and 10 more feet on a critical success."
+                }
+            },
             "prerequisites": [
                 {
                     "value": "master in Athletics"
@@ -21835,7 +22071,12 @@
         },
         "Recognize Ambush": {
             "name": "Recognize Ambush",
-            "description": "<p><strong>Trigger</strong> You roll initiative.</p>\n<hr />\n<p>Your combat training has honed you to be ready for an attack at all times. You Interact to draw a weapon.</p>"
+            "description": "<p><strong>Trigger</strong> You roll initiative.</p>\n<hr />\n<p>Your combat training has honed you to be ready for an attack at all times. You Interact to draw a weapon.</p>",
+            "rules": {
+                "0": {
+                    "text": "You interact and draw a weapon."
+                }
+            }
         },
         "Recognize Spell": {
             "name": "Recognize Spell",
@@ -22068,6 +22309,11 @@
         "Relentless Disarm": {
             "name": "Relentless Disarm",
             "description": "<p>When you succeed, but don't critically succeed, at a check to Disarm a creature, your circumstance bonus to further checks to Disarm that creature is +4 instead of +2. Other creatures gain only the normal bonus.</p>\n<p>When you critically succeed at a Disarm check, you can immediately Demoralize your target as a reaction.</p>",
+            "rules": {
+                "0": {
+                    "text": "When you succeed, but don't critically succeed, at a check to Disarm a creature, your circumstance bonus to further checks to Disarm that creature is +4 instead of +2. Other creatures gain only the normal bonus.  When you critically succeed at a Disarm check, you can immediately <span data-pf2-action=\"demoralize\" data-pf2-glyph=\"A\">Intimidation</span> your target as a reaction."
+                }
+            },
             "prerequisites": [
                 {
                     "value": "Zephyr Guard Dedication"
@@ -22628,6 +22874,11 @@
         "Risky Surgery": {
             "name": "Risky Surgery",
             "description": "<p>Your surgery can bring a patient back from the brink of death, but might push them over the edge. When you @UUID[Compendium.pf2e.actionspf2e.Item.1kGNdIIhuglAjIp9]{Treat Wounds}, you can deal @Damage[1d8[slashing]] damage to your patient just before applying the effects of Treat Wounds.</p>\n<p>If you do, you gain a +2 circumstance bonus to your Medicine check to Treat Wounds, and if you roll a success, you get a critical success instead.</p>",
+            "rules": {
+                "2": {
+                    "text": "When you @UUID[Compendium.pf2e.actionspf2e.Item.1kGNdIIhuglAjIp9]{Treat Wounds}, you can deal @Damage[1d8[slashing]] damage to your patient just before applying the effects of Treat Wounds. If you do, you gain a +2 circumstance bonus to your Medicine check to Treat Wounds, and if you roll a success, you get a critical success instead."
+                }
+            },
             "prerequisites": [
                 {
                     "value": "trained in Medicine"
@@ -25087,7 +25338,12 @@
         },
         "Smoke Bomb": {
             "name": "Smoke Bomb",
-            "description": "<p><strong>Frequency</strong> once per round</p>\n<p><strong>Trigger</strong> You use @UUID[Compendium.pf2e.classfeatures.Item.sPtl05wwTpqFI0lL]{Quick Alchemy} to craft an alchemical bomb with a level at least 1 lower than your advanced alchemy level</p>\n<hr />\n<p>You cause the bomb to create a cloud of thick smoke, in addition to its normal effects.</p>\n<p>When thrown, the bomb creates a cloud of smoke in a 10-foot-radius burst. You choose which corner of the target's space (or the space in which the bomb lands) the cloud is centered on.</p>\n<p><span style=\"color: var(--body); font-size: 1em;\">Creatures within that area have the @UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{Concealed} condition, and all other creatures are concealed to them. The smoke lasts for 1 minute or until dissipated by a strong wind.</span></p>"
+            "description": "<p><strong>Frequency</strong> once per round</p>\n<p><strong>Trigger</strong> You use @UUID[Compendium.pf2e.classfeatures.Item.sPtl05wwTpqFI0lL]{Quick Alchemy} to craft an alchemical bomb with a level at least 1 lower than your advanced alchemy level</p>\n<hr />\n<p>You cause the bomb to create a cloud of thick smoke, in addition to its normal effects.</p>\n<p>When thrown, the bomb creates a cloud of smoke in a 10-foot-radius burst. You choose which corner of the target's space (or the space in which the bomb lands) the cloud is centered on.</p>\n<p><span style=\"color: var(--body); font-size: 1em;\">Creatures within that area have the @UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{Concealed} condition, and all other creatures are concealed to them. The smoke lasts for 1 minute or until dissipated by a strong wind.</span></p>",
+            "rules": {
+                "0": {
+                    "text": "Your bomb creates a cloud of smoke in a 10-foot radius burst, centered on a corner of the target's space of your choice. The smoke conceals creatures in the area, and lasts for 1 minute."
+                }
+            }
         },
         "Smoke Curtain": {
             "name": "Smoke Curtain",
@@ -25644,6 +25900,11 @@
         "Spell Devourer": {
             "name": "Spell Devourer",
             "description": "<p>You don't just resist magic; you devour it. Whenever you succeed at a saving throw against a spell or magical effect, you gain temporary Hit Points equal to double the spell's rank, or equal to the level if the magical effect isn't a spell. These temporary Hit Points last until the end of your next turn.</p>",
+            "rules": {
+                "0": {
+                    "text": "Whenever you succeed at a saving throw against a spell or magical effect, you gain temporary Hit Points equal to double the spell's rank, or equal to the level if the magical effect isn't a spell. These temporary Hit Points last until the end of your next turn."
+                }
+            },
             "prerequisites": [
                 {
                     "value": "Pervasive Superstition"
@@ -26457,7 +26718,12 @@
         },
         "Sticky Bomb": {
             "name": "Sticky Bomb",
-            "description": "<p><strong>Frequency</strong> once per round</p>\n<p><strong>Trigger</strong> You use @UUID[Compendium.pf2e.classfeatures.Item.sPtl05wwTpqFI0lL]{Quick Alchemy} to craft an alchemical bomb, and that bomb's level is at least 2 levels lower than your advanced alchemy level</p>\n<hr />\n<p>You mix in an additive to make your bomb's contents adhere to the target and continue to deal damage.</p>\n<p>A creature that takes a direct hit from one of your sticky bombs also takes persistent damage equal to and of the same type as the bomb's splash damage. If the bomb already deals persistent damage, combine the two amounts.</p>"
+            "description": "<p><strong>Frequency</strong> once per round</p>\n<p><strong>Trigger</strong> You use @UUID[Compendium.pf2e.classfeatures.Item.sPtl05wwTpqFI0lL]{Quick Alchemy} to craft an alchemical bomb, and that bomb's level is at least 2 levels lower than your advanced alchemy level</p>\n<hr />\n<p>You mix in an additive to make your bomb's contents adhere to the target and continue to deal damage.</p>\n<p>A creature that takes a direct hit from one of your sticky bombs also takes persistent damage equal to and of the same type as the bomb's splash damage. If the bomb already deals persistent damage, combine the two amounts.</p>",
+            "rules": {
+                "1": {
+                    "text": "If you hit, your bomb deals persistent damage equal to, and of the same type, as the bomb's splash damage."
+                }
+            }
         },
         "Sticky Poison": {
             "name": "Sticky Poison",
@@ -26832,6 +27098,14 @@
         "Student of the Canon": {
             "name": "Student of the Canon",
             "description": "<p>You've researched many faiths enough to recognize notions about them that are unlikely to be true. If you roll a critical failure at a Religion check to Decipher Writing of a religious nature or to Recall Knowledge about the tenets of faiths, you get a failure instead. When attempting to Recall Knowledge about the tenets of your own faith, if you roll a failure, you get a success instead, and if you roll a success, you get a critical success instead.</p>",
+            "rules": {
+                "0": {
+                    "text": "When you roll a critical failure at a Religion check to Decipher Writing of a religious nature or to Recall Knowledge about the tenets of faiths, you get a failure instead."
+                },
+                "1": {
+                    "text": "When attempting to Recall Knowledge about the tenets of your own faith, if you roll a failure, you get a success instead, and if you roll a success, you get a critical success instead."
+                }
+            },
             "prerequisites": [
                 {
                     "value": "trained in Religion"
@@ -26950,7 +27224,12 @@
         },
         "Subtle Delivery": {
             "name": "Subtle Delivery",
-            "description": "<p>You can capably deliver toxins with a @UUID[Compendium.pf2e.equipment-srd.Item.FPwsiGqMCNPLHmjX]{Blowgun}. Your blowgun @UUID[Compendium.pf2e.actionspf2e.Item.VjxZFuUXrCU94MWR]{Strikes} can apply injury poisons even if they deal no damage due to a creature's resistance.</p>\n<p>If you critically succeed at an attack roll using a blowgun loaded with a dart you've poisoned and the target rolls a failure on the poison's initial save, the target critically fails instead.</p>"
+            "description": "<p>You can capably deliver toxins with a @UUID[Compendium.pf2e.equipment-srd.Item.FPwsiGqMCNPLHmjX]{Blowgun}. Your blowgun @UUID[Compendium.pf2e.actionspf2e.Item.VjxZFuUXrCU94MWR]{Strikes} can apply injury poisons even if they deal no damage due to a creature's resistance.</p>\n<p>If you critically succeed at an attack roll using a blowgun loaded with a dart you've poisoned and the target rolls a failure on the poison's initial save, the target critically fails instead.</p>",
+            "rules": {
+                "0": {
+                    "text": "If you critically succeed at an attack roll with a dart you've poisoned, and the target rolls a failure on the poison's initial save, the target critically fails instead."
+                }
+            }
         },
         "Subtle Shank": {
             "name": "Subtle Shank",
@@ -28092,7 +28371,12 @@
         },
         "Thorough Research": {
             "name": "Thorough Research",
-            "description": "<p>When you succeed at a @UUID[Compendium.pf2e.actionspf2e.Item.1OagaWtBpVXExToo]{Recall Knowledge} check, you learn an additional fact about the subject. When you critically succeed at a Recall Knowledge check, you can gain even more additional information or context than normal, at the GM's discretion.</p>"
+            "description": "<p>When you succeed at a @UUID[Compendium.pf2e.actionspf2e.Item.1OagaWtBpVXExToo]{Recall Knowledge} check, you learn an additional fact about the subject. When you critically succeed at a Recall Knowledge check, you can gain even more additional information or context than normal, at the GM's discretion.</p>",
+            "rules": {
+                "0": {
+                    "text": "When you roll a success at a Recall Knowledge, you learn an additional fact. When you critically succed, you can gain even more additional information or context than normal."
+                }
+            }
         },
         "Thorough Search": {
             "name": "Thorough Search",
@@ -28186,7 +28470,12 @@
         },
         "Tide-hardened": {
             "name": "Tide-hardened",
-            "description": "<p>You're at home in the unpredictable tides. You gain a +1 circumstance bonus to saves against cold and water effects. If you roll a success on a save against a cold or water effect, you get a critical success instead.</p>"
+            "description": "<p>You're at home in the unpredictable tides. You gain a +1 circumstance bonus to saves against cold and water effects. If you roll a success on a save against a cold or water effect, you get a critical success instead.</p>",
+            "rules": {
+                "0": {
+                    "text": "When you roll a success on a save against a cold or water effect, you get a critical success instead."
+                }
+            }
         },
         "Tiger Slash": {
             "name": "Tiger Slash",
@@ -28736,6 +29025,11 @@
         "True Debilitating Bomb": {
             "name": "True Debilitating Bomb",
             "description": "<p>Ever inventive, you have discovered increasingly devastating ways for your bombs to impede and hamper your foes.</p>\n<p>When you use @UUID[Compendium.pf2e.feats-srd.Item.sv4LeEbkOJyLen10]{Debilitating Bomb}, add the following to the list you can choose from: @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 2}, @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 2}, or -15-foot status penalty to Speeds.</p>\n<p>If you instead apply one of the effects listed in Debilitating Bomb the target avoids the effect only if the result of its saving throw is a critical success.</p>",
+            "rules": {
+                "0": {
+                    "text": "If your bomb hits, the target must succed at a Fortitude save against your Class DC, or suffer one of the following @UUID[Compendium.pf2e.feats-srd.Item.2HMvAB6mIVwvwtjT]{effects}. If you apply the effects of @UUID[Compendium.pf2e.feats-srd.Item.sv4LeEbkOJyLen10]{Debilitating Bomb}, the target must critically succeed at its save to avoid the condition."
+                }
+            },
             "prerequisites": [
                 {
                     "value": "Greater Debilitating Bomb"
@@ -29246,7 +29540,12 @@
         },
         "Undaunted": {
             "name": "Undaunted",
-            "description": "<p>Your spirit has endured many challenges over its long existence. You gain a +1 circumstance bonus to saves against emotion effects. If you roll a success on a saving throw against an emotion effect, you get a critical success instead.</p>"
+            "description": "<p>Your spirit has endured many challenges over its long existence. You gain a +1 circumstance bonus to saves against emotion effects. If you roll a success on a saving throw against an emotion effect, you get a critical success instead.</p>",
+            "rules": {
+                "1": {
+                    "text": "When you roll a success on a save against an emotion effect, you get a critical success instead."
+                }
+            }
         },
         "Undead Companion": {
             "name": "Undead Companion",
@@ -29485,6 +29784,11 @@
         "Unmistakable Lore": {
             "name": "Unmistakable Lore",
             "description": "<p>You never get information about your areas of expertise wrong. When you Recall Knowledge using any Lore subcategory in which you're trained, if you roll a critical failure, you get a failure instead. If you're a master in a Lore subcategory, on a critical success, you gain even more information or context than usual.</p>",
+            "rules": {
+                "0": {
+                    "text": "When you Recall Knowledge using any Lore subcategory in which you're trained, if you roll a critical failure, you get a failure instead. If you're a master in a Lore subcategory, on a critical success, you gain even more information or context than usual."
+                }
+            },
             "prerequisites": [
                 {
                     "value": "expert in Lore"
@@ -30732,6 +31036,9 @@
                 },
                 "1": {
                     "label": "Web Walker (vs. snares and entanglement)"
+                },
+                "3": {
+                    "text": "Whenever you roll a success on a saving throw against an effect involving a web, you get a critical success instead."
                 }
             }
         },
@@ -30782,6 +31089,9 @@
             "rules": {
                 "0": {
                     "label": "vs. disease (Well-Groomed)"
+                },
+                "2": {
+                    "text": "When you roll a success on a saving throw against an disease, you get a critical success instead."
                 }
             }
         },
@@ -31057,7 +31367,12 @@
         },
         "Wind Tempered": {
             "name": "Wind Tempered",
-            "description": "<p>You are at home in tempestuous weather and accustomed to even the harshest winds. You gain a +1 circumstance bonus to saves against air and electricity effects. If you roll a success on a save against an air effect, you get a critical success instead.</p>"
+            "description": "<p>You are at home in tempestuous weather and accustomed to even the harshest winds. You gain a +1 circumstance bonus to saves against air and electricity effects. If you roll a success on a save against an air effect, you get a critical success instead.</p>",
+            "rules": {
+                "2": {
+                    "text": "When you roll a success on a save against an air effect, you get a critical success instead."
+                }
+            }
         },
         "Wind-Tossed Spell": {
             "name": "Wind-Tossed Spell",
