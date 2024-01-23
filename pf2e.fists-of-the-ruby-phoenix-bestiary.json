@@ -2,7 +2,8 @@
     "label": "Fists-Of-The-Ruby-Phoenix-Bestiary",
     "entries": {
         "Abbot Tsujon": {
-            "name": "Abbot Tsujon"
+            "name": "Abbot Tsujon",
+            "allSavesBonus": "+1 status to all saves vs. death effects"
         },
         "Agile Warrior": {
             "name": "Agile Warrior"
@@ -11,106 +12,174 @@
             "name": "Agile Warrior (Nightmares)"
         },
         "Air Rift": {
-            "name": "Air Rift"
+            "name": "Air Rift",
+            "descriptionHazard": "<p>A portal to the Plane of Air rips open onstage, causing roaring winds to tear through the opera house</p>",
+            "disable": "<p>@Check[type:arcana|dc:38|name:Air Rift Arcana|traits:hazard,environmental,magical,air] (master) to sew the magical threads of the rift shut, @Check[type:nature|dc:40|name:Air Rift Nature|traits:hazard,environmental,magical,air] or @Check[type:survival|dc:40|name:Air Rift Survival|traits:hazard,environmental,magical,air] (legendary) to open enough windows and doors to reduce its intensity, or <em>@UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic}</em> (7th level; counteract DC 34) to counteract the air rift</p>",
+            "routine": "<p>(1 action) Winds blow through the area in a random direction, causing creatures and objects within 50 feet of the air rift to float up, down, north, south, east, or west (roll a d6 to determine which direction). Creatures and objects in the area must attempt a @Check[type:fortitude|dc:37|traits:damaging-effect,air,environmental,magical,hazard] save. If a creature is pushed into a solid object or another creature by this effect, both take @Damage[(3d8+15)[bludgeoning]] damage on impact.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature is pushed 10 feet, but takes only half damage from impact.</p>\n<p><strong>Failure</strong> The creature is pushed 20 feet, falls prone, and takes full damage from impact.</p>\n<p><strong>Critical Failure</strong> The creature is pushed 40 feet, falls prone, and takes double damage from impact.</p>",
+            "stealth": "<p>(master) to notice the sudden breeze in the theater</p>"
         },
         "Akila Stormheel": {
-            "name": "Akila Stormheel"
+            "name": "Akila Stormheel",
+            "blurb": "Female halfling Emerald Boughs attendant",
+            "allSavesBonus": "+2 to Grab an Edge"
         },
         "Amihan": {
-            "name": "Amihan"
+            "name": "Amihan",
+            "acDetails": "(39 with shield raised)",
+            "blurb": "Female Tian-Sing battle dancers"
         },
         "Angoyang": {
-            "name": "Angoyang"
+            "name": "Angoyang",
+            "publicNotes": "<p>Angoyangs resemble white cats with black stripes like those of a tiger. They have beautifully silken fur, piercing blue eyes, and long fluffy tails. Yet, far from the picturesque feline companions they appear to be, angoyangs are actually terrifying beasts capable of peeling back the fleshy layers of their face to reveal a mass of long, toothed tentacles.</p>\n<p>Although most cats instinctively avoid areas where angoyangs roam, the unlucky felines who do encounter this creature are invariably entangled in the monster's toothy tentacles and devoured. In cities and towns where angoyangs reside, cat owners may find that their beloved pets have gone missing only to soon have a fluffy black-and-white cat coincidentally appear at their doorstep, looking up at them with wide eyes and mewing adorably. Angoyangs almost never attack their caretakers, who they see as loyal servants that feed, clean up after, and pamper them, and the creatures protect the people in their household from any would-be intruders. However, a caretaker who mistreats or neglects their angoyang ward is often met with a grisly fate. More than one coroner or gravedigger has inadvertently inherited an angoyang after being assigned to clean up the mutilated remains of a previous \"owner.\"</p>",
+            "sensesDetails": "imprecise)"
         },
         "Anugobu Apprentice": {
-            "name": "Anugobu Apprentice"
+            "name": "Anugobu Apprentice",
+            "publicNotes": "<p>Renowned in Tengah folklore as divinely gifted artisans and crafters, anugobus are a curious group of tiny humanoids native to the central islands of Minata. Countless stories describe anugobus sneaking around Minatan cities to tinker with and improve upon other humanoids' structures and architecture. Owing to their slight stature and relatively frail bodies, anugobus are said to be particularly shy of larger peoples and creatures. Whether under cover of darkness, during a festival that draws people away from their domiciles, or simply whenever they think they're unseen, anugobus in folklore perform their wondrous restorations and crafting projects in secret nearly without exception. Many popular Tengah stories feature homes ruined by a natural disaster that are then magically restored the next morning or unfinished projects like half-built bridges that are mysteriously completed while its workers wonder at how this was accomplished.</p>\n<p>According to most legends, anugobus are unparalleled masters of architecture and engineering and use this expertise to erect complex structures or greatly improve upon already-existing buildings. Some have questioned these extraordinary stories, but anyone who witnesses an anugobu walk on the walls and ceilings of buildings while improving them knows that such tales aren't that far-fetched. In reality, anugobus are as diverse as any species of humanoid, though they all possess innate gifts for mending and construction, and they can walk on walls and ceilings. Anugobus resemble exceptionally small humans with superficial similarities to Tian-Sings. Most anugobus stand no more than 2 feet tall and weigh about 30 pounds-a diminutive stature that allows them to move in and out of crevices and remain unnoticed by taller folks. Nearly all verifiable anugobu encounters have taken place on the isles of Minata.</p>\n<p>In many anugobu cultures, each anugobu seeks an ultimate life goal, which they call their wonder. A wonder is any particular project that enraptures an anugobu in a way no other will. Any project can be an anugobu's wonder, from repairing a majestic cathedral to hunting a particularly dangerous animal to exploring a mysterious cave. When an anugobu discovers their wonder, it's not uncommon for them to fall into an awestruck trance and commit themselves fully to completing the work, sometimes binging on the project for days or weeks at a time. When an anugobu finishes the last minute details on their wonder, their life's work is considered complete, and they spend the rest of their days aiding other anugobus with their own journeys or taking on apprentices to pass on their skills.</p>\n<p>Most young anugobus undertake not just one, but many apprenticeships in order to learn advanced techniques in their trade of choice. The apprentice depicted here specializes in construction and engineering, but an anugobu is just as likely to take up cooking, hunting, tailoring, or really anything that piques their interest.</p>",
+            "speedsDetails": "stone step"
         },
         "Anugobu Wondercrafter": {
-            "name": "Anugobu Wondercrafter"
+            "name": "Anugobu Wondercrafter",
+            "publicNotes": "<p>Renowned in Tengah folklore as divinely gifted artisans and crafters, anugobus are a curious group of tiny humanoids native to the central islands of Minata. Countless stories describe anugobus sneaking around Minatan cities to tinker with and improve upon other humanoids' structures and architecture. Owing to their slight stature and relatively frail bodies, anugobus are said to be particularly shy of larger peoples and creatures. Whether under cover of darkness, during a festival that draws people away from their domiciles, or simply whenever they think they're unseen, anugobus in folklore perform their wondrous restorations and crafting projects in secret nearly without exception. Many popular Tengah stories feature homes ruined by a natural disaster that are then magically restored the next morning or unfinished projects like half-built bridges that are mysteriously completed while its workers wonder at how this was accomplished.</p>\n<p>According to most legends, anugobus are unparalleled masters of architecture and engineering and use this expertise to erect complex structures or greatly improve upon already-existing buildings. Some have questioned these extraordinary stories, but anyone who witnesses an anugobu walk on the walls and ceilings of buildings while improving them knows that such tales aren't that far-fetched. In reality, anugobus are as diverse as any species of humanoid, though they all possess innate gifts for mending and construction, and they can walk on walls and ceilings. Anugobus resemble exceptionally small humans with superficial similarities to Tian-Sings. Most anugobus stand no more than 2 feet tall and weigh about 30 pounds-a diminutive stature that allows them to move in and out of crevices and remain unnoticed by taller folks. Nearly all verifiable anugobu encounters have taken place on the isles of Minata.</p>\n<p>In many anugobu cultures, each anugobu seeks an ultimate life goal, which they call their wonder. A wonder is any particular project that enraptures an anugobu in a way no other will. Any project can be an anugobu's wonder, from repairing a majestic cathedral to hunting a particularly dangerous animal to exploring a mysterious cave. When an anugobu discovers their wonder, it's not uncommon for them to fall into an awestruck trance and commit themselves fully to completing the work, sometimes binging on the project for days or weeks at a time. When an anugobu finishes the last minute details on their wonder, their life's work is considered complete, and they spend the rest of their days aiding other anugobus with their own journeys or taking on apprentices to pass on their skills.</p>\n<p>Once an anugobu apprentice sets out on their own, they travel the world working on small projects here and there to maintain their skills. But an anugobu does not earn the honorable title of wondercrafter until they find their own wonder. Once they discover and finish such a wonder, the anugobu is considered fully mature. As a result of their station and experience, such anugobus possess skills and magic that far surpass most of their kind.</p>",
+            "speedsDetails": "stone step"
         },
         "Archery Specialist": {
             "name": "Archery Specialist"
         },
         "Arms of Balance (Jivati Rovat)": {
-            "name": "Arms of Balance (Jivati Rovat)"
+            "name": "Arms of Balance (Jivati Rovat)",
+            "acDetails": "37 vs. ranged attacks",
+            "blurb": "Female vishkanya monk"
         },
         "Arms of Balance (Pravan Majinapti)": {
-            "name": "Arms of Balance (Pravan Majinapti)"
+            "name": "Arms of Balance (Pravan Majinapti)",
+            "acDetails": "37 vs. ranged attacks",
+            "blurb": "Male human monk"
         },
         "Arms of Balance (Ranya Shibhatesh)": {
-            "name": "Arms of Balance (Ranya Shibhatesh)"
+            "name": "Arms of Balance (Ranya Shibhatesh)",
+            "acDetails": "37 vs. ranged attacks",
+            "blurb": "Female human monk"
         },
         "Arms of Balance (Usvani)": {
-            "name": "Arms of Balance (Usvani)"
+            "name": "Arms of Balance (Usvani)",
+            "acDetails": "37 vs. ranged attacks",
+            "blurb": "Male vanara monk"
         },
         "Artus Rodrivan": {
-            "name": "Artus Rodrivan"
+            "name": "Artus Rodrivan",
+            "blurb": "Male half-elf soul archer"
         },
         "Berberoka": {
-            "name": "Berberoka"
+            "name": "Berberoka",
+            "publicNotes": "<p>Berberokas are giant humanoids who live among forests and swamps, where they use their ability to swallow massive amounts of water to drain small ponds and lakes. Creatures who visit their favorite watering hole and find only an empty mud basin become prey for the berberoka, who hides in the brush and overwhelm their prey with a massive torrent of regurgitated water.</p>\n<p>A berberoka's mottled backside-which resembles a bundle of local plants, small trees, and large rocks-grants them natural camouflage that allows them to hide in plain sight. Berberokas tend to disguise themselves as rock formations in the center of a dried-up waterbed while they lie in wait for passersby. In the tropical regions where berberokas are most common, locals know to give empty ponds a wide berth, regardless of the enticing fish flopping about. Hungry travelers, on the other hand, might see such bounty as a blessing from the gods, only to be swept up in the berberoka's deadly deluge.</p>",
+            "speedsDetails": "15 while waterlogged"
         },
         "Blue Viper (Level 14)": {
-            "name": "Blue Viper (Level 14)"
+            "name": "Blue Viper (Level 14)",
+            "blurb": "Male ysoki poisoner"
         },
         "Blue Viper (Level 16)": {
-            "name": "Blue Viper (Level 16)"
+            "name": "Blue Viper (Level 16)",
+            "blurb": "Male ysoki poisoner"
         },
         "Blue Viper (Level 20)": {
-            "name": "Blue Viper (Level 20)"
+            "name": "Blue Viper (Level 20)",
+            "allSavesBonus": "+3 status to all saves vs. transmutation"
         },
         "Broken Rebus Attack": {
-            "name": "Broken Rebus Attack"
+            "name": "Broken Rebus Attack",
+            "descriptionHazard": "<p>Ghostly attackers knock the tables about, send dishes flying, and pull fleeing creatures into the room.</p>",
+            "disable": "<p>@Check[type:religion|dc:34|name:Say an Iroran prayer|traits:haunt] (expert) to say an Iroran prayer and put the haunt temporarily to rest, @Check[type:occultism|dc:38|name:Ward Against Future Hauntings|traits:haunt] (master) to create a ward against future hauntings.</p>",
+            "reset": "<p>The haunt deactivates after 1 minute. It re-forms at the same times every day, 7 a.m. and 7 p.m., which is when the monks had their morning and evening meals. If at least two people cook a meal in the kitchen, share a meal in the refectory, and utter a prayer to Irori before the meal, the haunt becomes permanently disabled and doesn't re-form.</p>",
+            "routine": "<p>(1 action) The haunt sends a flurry of objects hurtling across the room. All creatures in the room are battered by the ghostly objects, taking @Damage[(3d10+14)[force]] damage (@Check[type:reflex|dc:36|basic:true] save).</p>",
+            "stealth": "<p>(trained)</p>"
         },
         "Bul-Gae": {
-            "name": "Bul-Gae"
+            "name": "Bul-Gae",
+            "publicNotes": "<p>Bul-gaes are manifestations of the eclipsed sun and moon. They resemble large canines, though their coloration and features change as they exercise their powers over heat and cold. Depending on whether they have most recently unleashed their lunar or solar powers, a bul-gae resembles either a crimson hound wreathed in flames or a cerulean, frostbitten fox, respectively.</p>\n<p>Legends say that the first bul-gae attempted to steal the sun from the sky. As they bit down on the burning sphere, though, the bul-gae was badly burned. Having failed, they then tried to retrieve the moon, but when they touched the moon the bul-gae froze solid and fell to the ground. The descendants of that bul-gae forever hone their powers of flame and ice so that they may one day succeed where their ancestor failed.</p>"
         },
         "Butterfly Blade Warrior": {
-            "name": "Butterfly Blade Warrior"
+            "name": "Butterfly Blade Warrior",
+            "blurb": "Human royal assassins"
         },
         "Canopy Elder": {
-            "name": "Canopy Elder"
+            "name": "Canopy Elder",
+            "publicNotes": "<p>In the densest and oldest jungles, arboreals can reach heights of 200 feet or more. Given thousands of undisturbed years, these massive creatures enter into a symbiotic relationship with a myriad of plants, fungi, and animals to achieve the esteemed status of canopy elder. They provide a safe home for the creatures they host and develop a variety of powers that help them defend their forest realms.</p>"
         },
         "Caustic Monitor": {
-            "name": "Caustic Monitor"
+            "name": "Caustic Monitor",
+            "publicNotes": "<p>Caustic monitors are enormous lizards native to eastern Minata known and named for the corrosive enzyme in their mucus, saliva, and other bodily fluids. These corrosive fluids originally developed as a means of protection from large insects such as giant mosquitos. The thick layer of mucus that naturally coats the monitors' scaly skin makes it difficult for most other creatures to get too close, let alone prey upon the lizard.</p>\n<p>Caustic monitors also use their corrosive biological features to their hunting advantage, particularly by expelling the acidic contents of their stomach at prey. Even when not making use of their acid, caustic monitors can be deadly predators: They grab onto smaller creatures using their powerful forelimb muscles and are remarkably agile, considering their size and weight.</p>\n<p>Most caustic monitors live among rocky terrain such as pebble beaches, natural caves, and along sandy river shoals. A caustic monitor's mucus corrodes only flesh, so its den is safe from damage, but corroded plant life near a cave is a telltale sign that a caustic monitor lives nearby. Hardy adventurers and fortune seekers must weigh the potential benefits of hunting this beast -as its acid is highly prized among alchemists-against the obvious risks.</p>"
         },
         "Cloudsplitter": {
-            "name": "Cloudsplitter"
+            "name": "Cloudsplitter",
+            "allSavesBonus": "-1 status penalty to all saves vs. death effects"
         },
         "Collapsing Structure": {
-            "name": "Collapsing Structure"
+            "name": "Collapsing Structure",
+            "descriptionHazard": "<p>Mogaru brushes against a structure, severely compromising the building's stability and possibly causing it to collapse.</p>",
+            "disable": "<p>@Check[type:athletics|dc:43|name:Brace the Structure] (master), @Check[type:crafting|dc:43|name:Brace the Structure] (master), or @Check[type:engineering-lore|dc:43|name:Brace the Structure]{Engineering Lore} (master) to brace the structure to reduce the risk of collapse until the end of the creature's next turn. The DC of the flat check for this round (see Routine) is increased by 4 on a success, or by 8 on a critical success. Increasing the flat check DC to 21 or higher stabilizes the structure, ending this hazard.</p>",
+            "reset": "<p>The building becomes susceptible to Shake Apart again [[/r 1d6]]{1d6 rounds} after it is stabilized.</p>",
+            "routine": "<p>(1 action) The GM rolls a @Check[type:flat|dc:9] to determine if the building collapses, increasing the DC as listed above. On a successful check, dust and debris fall within the building and 30 feet around it, providing concealment and dealing @Damage[6d6[bludgeoning]] damage to @Damage[12d6[bludgeoning]] damage to [[/r 2d4]] randomly chosen targets instead (@Check[type:reflex|dc:35|basic:true] save; on a critically failed Reflex save, the creature is restrained by rubble until freed [Force Open DC 38, Escape DC 35]).</p>",
+            "stealth": "<p>+20 (master) to notice cracks forming in the walls of the structure as Mogaru approaches</p>"
         },
         "Dancing Night Parade": {
-            "name": "Dancing Night Parade"
+            "name": "Dancing Night Parade",
+            "hpDetails": "Thresholds 300 (12 squares), 150 (8 squares)"
         },
         "Desecrated Guardian": {
-            "name": "Desecrated Guardian"
+            "name": "Desecrated Guardian",
+            "publicNotes": "<p>Countless temples across Golarion, dedicated to deities both living and forgotten, have risen and fallen through the ages. Many find themselves buried under sand, snow, or vine never to be found. In such places, the spirits of the faithful can bind with their ruined temple to form a guardian construct, though with nothing left to guard, these spirits often become hollow, resentful, and filled with malice. These \"desecrated guardians\" lie in wait, sometimes for centuries, and destroy any adventurers who happen upon them. The most powerful desecrated guardians, such as the one presented here, incorporate the structures of multiple temples into their massive serpentine forms.</p>"
         },
         "Dimensional Darkside Mirror": {
-            "name": "Dimensional Darkside Mirror"
+            "name": "Dimensional Darkside Mirror",
+            "descriptionHazard": "<p>A magic mirror replaces characters with evil mirror duplicates from another dimension.</p>",
+            "disable": "<p>@Check[type:thievery|dc:40|name:Retrieve a Creature] (legendary) to retrieve a creature from the other dimension within 10 minutes of the switch (possible only if their mirror duplicate is dead), @Check[type:thievery|dc:45|name:Disable the Mirror] (master) to permanently disable the mirror once all mirror duplicates are dead, or <em>@UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic}</em> (8th level; counteract DC 37) to counteract the mirror for 1 minute and prevent additional replacements during that time</p>\n<p>the mirror can't be damaged while any mirror duplicate is alive</p>",
+            "reset": "<p>The mirror is always ready to absorb creatures into the other dimension. Ten minutes after a creature is sucked into the mirror, if an ally doesn't rescue the creature with Thievery, it reaches the other dimension, where it might be captured or killed. In the mirror dimension, it counts as a mirror duplicate, so the denizens of the other dimension can't destroy the mirror on their side while the absorbed creature is there. These dimensions are alternate realities, not planes, so even rituals like plane shift can't reach them.</p>",
+            "routine": "<p>(1 action) The mirror absorbs another reflected creature into the mirror and replaces it with a mirror duplicate. Mirror duplicates attack on their own initiative, using the same statistics as the original creature, but with an evil alignment (changing only abilities that shift with the alignment change). A mirror duplicate can spend 3 actions in contact with the mirror to return to its original dimension and release the creature it duplicated, but most mirror duplicates prefer not to.</p>",
+            "stealth": "<p>+37 (master) to notice it isn't a regular mirror</p>"
         },
         "Drake Courser": {
-            "name": "Drake Courser"
+            "name": "Drake Courser",
+            "blurb": "Variant frost drakes",
+            "speedsDetails": "Ice Climb",
+            "sensesDetails": "snow vision"
         },
         "Dread Roc": {
-            "name": "Dread Roc"
+            "name": "Dread Roc",
+            "publicNotes": "<p>Legendarily massive raptors capable of carrying off elephants as prey, rocs are typically about 30 feet long from beak to tail and have a wingspan of 80 feet or more. While their beaks are hooked to rip flesh from bone, their hunting strategy involves grabbing their prey in their powerful talons and then dropping it from great heights before feeding. This method creates a massive amount of carrion, which guarantees that rocs are followed by flocks of opportunistic scavengers, such as ravens and buzzards, who find it easy to steal bits of the larger birds' meals. Rocs, for the most part, don't mind these creatures, which sometimes get gobbled up along with the rest of the roc's food.</p>\n<p>Rocs usually nest among mountaintops and cliffs inaccessible to all but the bravest of terrestrial dwellers. They are long-range predators that hunt both land and sea in search for massive prey to sustain them and their young. Rocs are antisocial and lone hunters who compete with each other in fierce aerial battles to protect territory. But about once a decade, a mating couple pairs up to raise their chicks. Once the chicks are old enough to hunt on their own, the parents separate to once again engage in lone hunting.</p>\n<p>Particularly skilled druids or rangers might capture and train a roc to serve as a flying mount or hunting companion, though examples of such an incredible feat of domestication are few and far between. The easiest way to rear a roc is to do so from the moment it hatches, since the chick imprints on the first creature it sees. Acquiring a roc egg is by no means an easy feat, though, and is often a death sentence for the would-be egg-snatcher.</p>",
+            "blurb": "Variant roc"
         },
         "Dromornis": {
-            "name": "Dromornis"
+            "name": "Dromornis",
+            "publicNotes": "<p>Dromornises are large, flightless, carnivorous birds that travel in packs to ambush prey. Their short, stubby wings may give them a comical appearance, but anyone who's been on the receiving end of the beast's powerful beak finds the experience less than amusing. Dromornis use their beaks to easily tear flesh and sinew from prey's bones, quickly dispatching sizable mammals like deer, tapirs, and primates. Particularly hungry or aggressive dromornises have even been known to attack humanoids. The bird's strong legs sport sharp talons that, while secondary in combat to its beak, can nonetheless trample and shred smaller creatures like rodents and amphibians caught underfoot.</p>\n<p>While a lone dromornis is dangerous enough, a pack of dromornises can take down a den of bears or village of humanoids. A dromornis pack typically consists of three or four adults and up to five juveniles, all of whom work in tandem to overpower larger prey. Packs lie in wait for something like an anaconda, boar, buffalo or, in cases of desperation, a dinosaur to emerge, then move as one for a surprise strike. Dromornises aren't particularly intelligent, but they have been known to use an ingenious (if hazardous) decoy tactic, luring in massive prey by putting one of their own fledglings at risk.</p>\n<p>Dromornises most often live in tropical jungles far from the reaches of civilization, though they sometimes make their homes in mountainside caves or along rocky coastlines. While most onlookers would be hard-pressed to tell one dromornis from another, dromornises maintain tight familial structures based on pheromones and scent glands, so it's obvious when a straggler from another family is trying to encroach on a pack's den. Such disputes over breeding grounds are common; a particularly prized dromornis den might change hands several times in the course of a year. Fights between dromornis packs are chaotic and swift, marked with the sounds of terrifying screeches and sprays of blood.</p>"
         },
         "Elder Cauthooj": {
-            "name": "Elder Cauthooj"
+            "name": "Elder Cauthooj",
+            "publicNotes": "<p>These large, flightless birds are deceptively agile, considering their long bodies and awkward, hopping gait. Solitary predators, they use their hypnotic warbling song to drive prey into a wild frenzy, manipulating them into attacking one another so that the cauthooj can then feast on the remains.</p>\n<p>Known to some scholars as the puppet master bird, and to others as the shrill shrike, cauthoojs are widely reviled by most intelligent humanoids, in part because the birds seem to prefer humanoids to other prey. Cauthooj sightings typically lead to the creation of hunting parties to track the creature down before it can kill again, with would-be hunters typically stuffing their ears full of wax in an effort to avoid being affected by its cry. Those who have survived the creature's song report that the experience is uniquely unnerving, and almost all accounts agree that there is no other sound as terrible.</p>\n<p>While one might assume the cauthooj is a dumb animal, these creatures are in fact quite a bit smarter than they look. Cauthoojs stalk the perimeter of remote settlements in hopes of finding a lone traveler they can feast upon. These patient creatures will wait in ambush as long as they must to sate their hunger. They can even understand a few rudimentary words in Sylvan, although they are incapable of clearly speaking themselves. This doesn't stop the cauthooj from attempting to mimic the sounds it hears, but when it does so, its eerie primal nature enhances the attempt, leading to the bird's signature ability to manipulate minds and encourage conflict, a trait the cauthooj is just barely smart enough to understand-and enjoy.</p>",
+            "blurb": "Variant cauthooj"
         },
         "Floating Flamethrower": {
-            "name": "Floating Flamethrower"
+            "name": "Floating Flamethrower",
+            "descriptionHazard": "<p>A floating skull of fire swoops around the arena, rotating as it weaves through the ring and releasing huge gouts of flame in random directions.</p>",
+            "disable": "<p>three @Check[type:thievery|dc:40|name:Disable an Elemental Core|traits:action:disable-a-device,hazard,magical,trap,fire] (legendary) checks or castings of <em>@UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic}</em> (7th level; counteract DC 40), one each to pull out or disable the elemental cores hidden in the floating skull's right eye, left eye, and mouth</p>",
+            "routine": "<p>(3 actions) The trap loses 1 action per turn per successful check to disable. The floating flamethrower uses its first action to release a gout of flame in a @Template[type:cone|distance:15] that deals @Damage[(4d6+4)[fire]] damage (@Check[type:reflex|dc:40|basic:true] save), its second action to fly in a U-shape in a random direction, and its third action to release another gout of flame.</p>",
+            "stealth": "<p>+23 (expert) or @Check[type:perception|dc:38|traits:action:seek] (master) to notice the pattern of the orb's trajectory</p>"
         },
         "Flying Mountain Kaminari": {
             "name": "Flying Mountain Kaminari"
         },
         "Freezing Floor Tiles": {
-            "name": "Freezing Floor Tiles"
+            "name": "Freezing Floor Tiles",
+            "descriptionHazard": "<p>Four remote sensors at each corner of the arena cause bursts of freezing magic to erupt from random tiles on the arena and stop creatures in their tracks.</p>",
+            "disable": "<p>@Check[type:thievery|dc:40|name:Disable One Sensor|traits:action:disable-a-device] (legendary) or <em>@UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic}</em> (6th level; counteract DC 38) to disable one of the sensors</p>",
+            "routine": "<p>(4 actions) The trap loses 1 action per disabled sensor. On each action, the trap causes a random 10-foot-by-10-foot space in the arena to suddenly freeze. Each creature that begins its turn in a frozen space takes @Damage[(2d6+2)[cold]] damage (@Check[type:reflex|dc:40|basic:true] save). A creature that critically fails its save also becomes @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1} for 1 round; if it was already slowed, the creature instead becomes @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Immobilized} for 1 round. Any amount of fire damage dealt to a slowed or immobilized creature removes the condition. Frozen tiles become unfrozen at the beginning of the trap's next turn.</p>",
+            "stealth": "<p>+23 (expert) or @Check[type:perception|dc:38|traits:action:seek] (master) to notice the four sensors</p>"
         },
         "Ghost Monk": {
-            "name": "Ghost Monk"
+            "name": "Ghost Monk",
+            "blurb": "Ghost adherents of Irori",
+            "hpDetails": "void healing, rejuvenation"
         },
         "Golarion's Finest (Brartork)": {
             "name": "Golarion's Finest (Brartork)"
@@ -137,64 +206,88 @@
             "name": "Golarion's Finest (Rajna)"
         },
         "Gomwai": {
-            "name": "Gomwai"
+            "name": "Gomwai",
+            "blurb": "Male hobgoblin tournament enforcer"
         },
         "Grandfather Mantis": {
-            "name": "Grandfather Mantis"
+            "name": "Grandfather Mantis",
+            "blurb": "Yarrika's spirit guardian"
         },
         "Grave Spinosaurus": {
-            "name": "Grave Spinosaurus"
+            "name": "Grave Spinosaurus",
+            "publicNotes": "<p>The spinosaurus is more than just one of the largest carnivorous dinosaurs-it's also one of the most unusual in appearance, with a large, sail-like fin running along its spine. Often quite colorful, this sail allows the spinosaurus to attract mates, aids in swimming, and makes it appear to be even larger than it actually is. A swimming spinosaurus can also use the sail as part of a unique means of staggering prey by slapping the water with it to make a crushing wave.</p>\n<p>The spinosaurus is equally at home in water as it is on land, and its long, toothy maw is well-adapted to catching swimming prey. Attempts by giants to capture spinosauruses to serve as guardians typically go poorly, for these headstrong dinosaurs do not domesticate well. Their surly attitudes and striking appearances make them better suited for bloodsports, and they are popular prizes for those who run arenas specializing in battles that pit gladiators against hungry animals or beasts. Of course, an angry dinosaur forced to fight for the amusement of others won't discriminate between potential meals on the battleground and ones seated in the surrounding stands.</p>\n<p>The spinosaurus's appearance and strength make it attractive to more than just giants and bloodsport organizers. Spellcasters who mutate and transform animals into magical guardians have long been intrigued by the spinosaurus's potential. More so than any other dinosaurs, spinosauruses have been subjected to fleshwarping procedures, crossbreeding with monsters, and other magical techniques to enhance the creatures' viability as effective guardians.</p>\n<p>A spinosaurus can measure up to 60 feet in length and weighs 25,000 pounds.</p>",
+            "blurb": "Variant spinosaurus"
         },
         "Gumiho": {
-            "name": "Gumiho"
+            "name": "Gumiho",
+            "publicNotes": "<p>Gumihos are legendary nine-tailed fox creatures who, when disguised in humanoid form, use charm and guile to lure prey deep into the forest before revealing their true form and striking. The green-eyed canids use brutally sharp fangs to tear out their victim's throat and feast on their liver. Those few who survive a gumiho's trap recall the canid's eerie green eyes as well as a strange marble amulet warn around the monster's neck.</p>\n<p>Old stories claim that a fox transforms into a gumiho once it has lived for a thousand years, quadrupling in size, growing eight additional tails, and gaining the power to change shape. Terrifyingly, it also gains an insatiable hunger for the livers of people. This hunger is so closely connected to a gumiho's power that if it abstains from eating liver for one thousand days, the gumiho loses its magic and permanently takes on its humanoid guise-also losing its evil nature in the process.</p>"
         },
         "Halspin the Stung": {
-            "name": "Halspin the Stung"
+            "name": "Halspin the Stung",
+            "blurb": "Male catfolk beast-singer"
         },
         "Hana's Hundreds": {
-            "name": "Hana's Hundreds"
+            "name": "Hana's Hundreds",
+            "hpDetails": "troop defenses (180/90)"
         },
         "Hantu Belian": {
-            "name": "Hantu Belian"
+            "name": "Hantu Belian",
+            "publicNotes": "<p>Hantus are manifestations of the powerful nature spirits that inhabit all things, from animals to objects to the environment itself. As spiritual representations of whatever they inhabit, hantus follow no preordained agenda. Some hantus choose to act as guardians, defending the forest or waterway that they represent, while others simply set out into the world and experience the wonders of life in ways that their physical form-be it a boulder, bamboo stand, or tapir-would typically be unable to enjoy.</p>\n<p>Hantus are most well known in the archipelago of Minata, particularly in the southern islands of Rendah Pulu, where animists believe that hantus manifest in locations imbued with significant spiritual power. To the residents of Rendah Pulu, hantus exist as manifestations of their culture's anxieties, fears, and ills. An individual who encounters a hantu might interpret the meeting as a sign that they have dwelt for too long on their particular worries (or the opposite: they have ignored the source of their anxieties for too long).</p>\n<p>The hantu belian represents the spiritual essence of a tiger and typically manifests as a ghostly bird perched on a tiger's back. Hantu belians commit acts of great destruction as well as restoration. They sometimes possess humanoids to cause great discord and devastation, though their intentions are typically borne of amusement or boredom rather than malice.</p>"
         },
         "Hantu Denai": {
-            "name": "Hantu Denai"
+            "name": "Hantu Denai",
+            "publicNotes": "<p>Hantus are manifestations of the powerful nature spirits that inhabit all things, from animals to objects to the environment itself. As spiritual representations of whatever they inhabit, hantus follow no preordained agenda. Some hantus choose to act as guardians, defending the forest or waterway that they represent, while others simply set out into the world and experience the wonders of life in ways that their physical form-be it a boulder, bamboo stand, or tapir-would typically be unable to enjoy.</p>\n<p>Hantus are most well known in the archipelago of Minata, particularly in the southern islands of Rendah Pulu, where animists believe that hantus manifest in locations imbued with significant spiritual power. To the residents of Rendah Pulu, hantus exist as manifestations of their culture's anxieties, fears, and ills. An individual who encounters a hantu might interpret the meeting as a sign that they have dwelt for too long on their particular worries (or the opposite: they have ignored the source of their anxieties for too long).</p>\n<p>Interestingly, although hantus are incorporeal, they still retain tangible characteristics as varied as hantus themselves. Some give off a potent odor, such as the scent of durian or jasmine. Others leave corporeal droppings, such as literal animal waste or tufts of fur left on a tree trunk.</p>\n<p>When an environment such as a forest or stream is at risk of overhunting or overfishing, the land itself can manifest as a hantu denai in order to defend itself from overconsumption. Hantu denais stalk hunters and emit haunting cries of native fauna to scare off poachers, loggers, and other despoilers of nature before resorting to violence if necessary.</p>"
         },
         "Huldrin Skolsdottir": {
-            "name": "Huldrin Skolsdottir"
+            "name": "Huldrin Skolsdottir",
+            "acDetails": "(36 with shield raised)",
+            "blurb": "Female human shieldmaiden"
         },
         "Hummingbird": {
-            "name": "Hummingbird"
+            "name": "Hummingbird",
+            "blurb": "Female gnoll Cascade Bearer transmuters"
         },
         "Inmyeonjo": {
             "name": "Inmyeonjo"
         },
         "Jaiban": {
-            "name": "Jaiban"
+            "name": "Jaiban",
+            "blurb": "Legendary beast of Bonmu"
         },
         "Ji-yook (Gumiho Form)": {
-            "name": "Ji-yook (Gumiho Form)"
+            "name": "Ji-yook (Gumiho Form)",
+            "sensesDetails": "emotionsense"
         },
         "Ji-yook (Level 13)": {
-            "name": "Ji-yook (Level 13)"
+            "name": "Ji-yook (Level 13)",
+            "blurb": "Female kitsune ninja"
         },
         "Ji-yook (Level 9)": {
-            "name": "Ji-yook (Level 9)"
+            "name": "Ji-yook (Level 9)",
+            "blurb": "Female kitsune ninja"
         },
         "Jin-hae": {
-            "name": "Jin-hae"
+            "name": "Jin-hae",
+            "allSavesBonus": "-1 status penalty to all saves vs. death effects"
         },
         "Joon-seo": {
-            "name": "Joon-seo"
+            "name": "Joon-seo",
+            "blurb": "Male samsaran song striker"
         },
         "Juspix Rammel": {
-            "name": "Juspix Rammel"
+            "name": "Juspix Rammel",
+            "blurb": "Male halfling witch",
+            "sensesDetails": "keen eyes"
         },
         "Kannitri": {
-            "name": "Kannitri"
+            "name": "Kannitri",
+            "blurb": "Female human ghost monk",
+            "hpDetails": "void healing, rejuvenation"
         },
         "Kas Xi Rai": {
-            "name": "Kas Xi Rai"
+            "name": "Kas Xi Rai",
+            "acDetails": "(42 vs. reactions and ranged weapon attacks)",
+            "blurb": "Female Tian-Shu high-ranking criminal"
         },
         "Ki Adept": {
             "name": "Ki Adept"
@@ -203,202 +296,316 @@
             "name": "Ki Adept (Ahmoza Twins)"
         },
         "Koto Zekora": {
-            "name": "Koto Zekora"
+            "name": "Koto Zekora",
+            "blurb": "Female onidoshi imperial-blooded sorcerer",
+            "hpDetails": "regeneration 15 (deactivated by acid or fire)",
+            "allSavesBonus": "+1 status to all saves vs. magic"
         },
         "Kun": {
-            "name": "Kun"
+            "name": "Kun",
+            "publicNotes": "<p>Hungry and resentful, the malevolent kun is a mythological fish monster that dwells in the remotest, coldest depths of the ocean. This massively powerful creatures could easily rule a subaquatic domain if they cared to, but kuns are also famous for their total self-absorption and complete ambivalence toward other forms of life. A kun remains as far away from other creatures as they can, subsisting on only their own icy hatred. They can consume and digest prey, but such feedings are incidental. Most kuns remain ignorant and uncaring, keeping themselves in the dark, disregarding any signs of life around them except to occasionally lash out with a spiteful attack.</p>",
+            "sensesDetails": "light blindness"
         },
         "Lantondo": {
-            "name": "Lantondo"
+            "name": "Lantondo",
+            "blurb": "Agender wyrwood harrower"
         },
         "Laruhao": {
             "name": "Laruhao"
         },
         "Lophiithu": {
-            "name": "Lophiithu"
+            "name": "Lophiithu",
+            "publicNotes": "<p>Lophiithus dwell in the deepest ocean trenches, places untouched by light, hope, or mortal comprehension. They appear to be gaping maws with distended jaws, vestigial flaps of putrefying flesh, and filamentous tentacles tipped with glowing light. Their extraplanar mouths take up most of their bodies, leaving no room for other organs, and any prey they swallow is transported to the Maelstrom for digestion.</p>"
         },
         "Maalya": {
-            "name": "Maalya"
+            "name": "Maalya",
+            "acDetails": "(39 with shield raised)",
+            "blurb": "Female Tian-Sing battle dancers"
         },
         "Mafika Ayuwari": {
-            "name": "Mafika Ayuwari"
+            "name": "Mafika Ayuwari",
+            "blurb": "Male Zenj Tempest-Sun halcyon speaker"
         },
         "Mage of Many Styles": {
             "name": "Mage of Many Styles"
         },
         "Mammoth Turtle": {
-            "name": "Mammoth Turtle"
+            "name": "Mammoth Turtle",
+            "publicNotes": "<p>If the regular-sized snapping turtle is foul-tempered, then the giant snapping turtle seems to be willfully violent toward anything that dares intrude upon its domain. Measuring over 20 feet long and weighing thousands of pounds, this creature is capable of swallowing a humanoid whole. Swamp-dwelling societies, particularly boggards and lizardfolk, have often tried to domesticate giant snapping turtles to serve as powerful guardians, but in most cases the casualties pile up quickly. Those unfortunate enough to be swallowed whole by a giant snapping turtle find that even the creature's stomach is somewhat armored, making it difficult to cut through.</p>",
+            "blurb": "Variant giant snapping turtle"
         },
         "Manananggal": {
-            "name": "Manananggal"
+            "name": "Manananggal",
+            "publicNotes": "<p>Manananggals are wicked monsters that live as humanoids during the day but feed upon them at night. To hide their depravities, these beings disguise themselves as everyday people-typically recluses or eccentrics- and use their proximity to a community to pick out their next targets before striking under cover of night. Manananggals use their long, hollow tongues to drain victims' blood from vital organs such as the liver, and the resulting odd drainage marks make it difficult to determine the exact nature of a victim's death. This typically leads to confusion, terror, and mistrust among communities, which most manananggals savor. While they fly, manananggals make a distinctive ticking sound, leading some to refer to the creatures as \"tik-tiks,\" and badly affected communities descend into fearful chaos at the first reports of this telltale noise.</p>\n<p>Manananggals share their cannibalistic, body-separating traits with other types of tanngals, such as penanggalans, though a number of characteristics set them apart. For instance, whereas penanggalans relish vinegar and even bathe in the substance, manananggals abhor the merest scent of it.</p>",
+            "hpDetails": "darkvision",
+            "speedsDetails": "fly only when body is separated"
         },
         "Master Xun": {
-            "name": "Master Xun"
+            "name": "Master Xun",
+            "blurb": "Tian-Shu Golden League ruffians"
         },
         "Melodic Squall": {
-            "name": "Melodic Squall"
+            "name": "Melodic Squall",
+            "publicNotes": "<p>This cloud of song and sound has been caught by the wind and carried across the air. While the melody on the wind might enjoy the beauty of music, it is by nature a destructive elemental force.</p>",
+            "blurb": "Variant melody on the wind",
+            "speedsDetails": "swiftness"
         },
         "Mogaru's Breath": {
-            "name": "Mogaru's Breath"
+            "name": "Mogaru's Breath",
+            "descriptionHazard": "<p>Mogaru exhales a blast of intense flames to eradicate any meddlesome pests in the area.</p>",
+            "disable": "<p>@Check[type:performance|dc:50|name:Divert Mogaru's Attention] (legendary) or @Check[type:deception|dc:53|name:Divert Mogaru's Attention] (legendary) to momentarily divert Mogaru's attention</p>",
+            "reset": "<p>Mogaru must wait [[/br 1d4 #rounds]]{1d4 rounds} before letting loose another gout of fire.</p>",
+            "stealth": "<p>DC 10</p>"
         },
         "Muckish Creep": {
-            "name": "Muckish Creep"
+            "name": "Muckish Creep",
+            "publicNotes": "<p>Legends say that the first muckish creeps were born at the site of a mass grave where the souls of murdered prisoners coalesced into the surrounding soil. Another myth tells that muckish creeps were elementals so vile that their kin banished them from the Plane of Earth. Regardless of their true origins, muckish creeps are wicked creatures that resemble mud given a humanoid shape. The mud is no ordinary mixture of earth and water, however, for muckish creeps feed on the blood of the living, and they use this blood to keep their own forms moist and malleable.</p>\n<p>Muckish creeps are particularly tenacious and single-minded when it comes to choosing prey. Once a muckish creep selects its next victim, there is little one can do to stop it, since it can seep through even the smallest cracks between doors, walls, and windows. A muckish creep typically waits until its target falls asleep before pressing itself into the creature's home, intent to kill. For all its tenacity during the hunt, the muckish creep is pragmatic when it comes to the actual kill, using its body to fill the victim's airways with mud and suffocate them.</p>",
+            "hpDetails": "darkvision"
         },
         "Nai Yan Fei": {
-            "name": "Nai Yan Fei"
+            "name": "Nai Yan Fei",
+            "blurb": "Female Tian-Shu empress"
         },
         "Old Man Statue": {
-            "name": "Old Man Statue"
+            "name": "Old Man Statue",
+            "blurb": "Divine warden of Irori"
         },
         "Orochi": {
-            "name": "Orochi"
+            "name": "Orochi",
+            "publicNotes": "<p>An orochi is an enormous serpent with eight heads and eight tails that lives among large waterways. Orochi are vile, amoral creatures kept at bay only with yearly sacrifices. Most settlements unable to satisfy an orochi with a sacrifice soon meet their destruction.</p>",
+            "acDetails": "all-around vision",
+            "hpDetails": "HP (head) 60, multiple heads;"
         },
         "Peng": {
-            "name": "Peng"
+            "name": "Peng",
+            "publicNotes": "<p>Pengs are massive avian beasts who fly effortlessly among the highest clouds. Their bright plumage makes it difficult to see their shape against an azure sky, but with patience, an onlooker might notice movement too swift to be a natural cloud.</p>\n<p>Beautiful and graceful, pengs arise from the unlikeliest of origins: the cruel kun, a hateful fish monster whose predilection for the crushing depths of the sea matches the peng's own love of the bright, open sky. After a kun sacrifices their power for a noble heart by bathing in the sun's rays, they transform into this majestic bird, which eschews violence unless they must fight to stay free. Pengs do not seek danger or thrills; they want only to make their long voyages and fly without disruption.</p>\n<p>A peng's calm and steady nature is so strong that its mere presence can quell storms and still winds. Mariners and pilots believe spotting a peng is a sign of good luck. When the sky is clear and blue and the weather gentle for an extended period, people attribute such fine conditions to the presence of an unseen peng.</p>",
+            "speedsDetails": "Windslice",
+            "sensesDetails": "heaven's view"
         },
         "Planar Terra-cotta Soldier": {
-            "name": "Planar Terra-cotta Soldier"
+            "name": "Planar Terra-cotta Soldier",
+            "publicNotes": "<p>Terra-cotta warriors guard the tombs of ancient rulers, where they stand vigil, animating only when intruders break in to pilfer riches or defile the tomb itself. Each warrior is meticulously crafted from clay and given unique features.</p>\n<hr />\n<p>A single terra-cotta warrior stands 6 feet tall and weighs 600 pounds.</p>",
+            "acDetails": "32 with shield raised",
+            "blurb": "Variant terra-cotta soldier"
         },
         "Planar Terra-cotta Squadron": {
-            "name": "Planar Terra-cotta Squadron"
+            "name": "Planar Terra-cotta Squadron",
+            "publicNotes": "<p>Terra-cotta warriors guard the tombs of ancient rulers, where they stand vigil, animating only when intruders break in to pilfer riches or defile the tomb itself. Each warrior is meticulously crafted from clay and given unique features.</p>\n<hr />\n<p>These constructed warriors can work together as a trained group to repel intruders.</p>",
+            "acDetails": "39 with shields raised",
+            "blurb": "Variant terra-cotta soldier garrison",
+            "hpDetails": "troop defenses (200/100)"
         },
         "Portal Eater": {
-            "name": "Portal Eater"
+            "name": "Portal Eater",
+            "blurb": "Cosmic devourer of extradimensional energies",
+            "allSavesBonus": "+1 status to all saves vs. magic"
         },
         "Quaking Footfall": {
-            "name": "Quaking Footfall"
+            "name": "Quaking Footfall",
+            "descriptionHazard": "<p>Mogaru's steady footsteps pick up speed, causing the earth around him to tremble as though from a powerful earthquake.</p>",
+            "disable": "<p>three @Check[type:athletics|dc:39|name:Brace a Small Structure or Surface] (trained), @Check[type:crafting|dc:39|name:Brace a Small Structure or Surface] (trained), or @Check[type:engineering|dc:39|name:Brace a Small Structure or Surface]{Engineering Lore} (trained) checks to brace a small structure or surface to cancel the effects of the quake in that area; @Check[type:performance|dc:41|name:Calm Mogaru] (legendary) to calm Mogaru momentarily</p>",
+            "reset": "<p>Mogaru doesn't rush this way again for [[/br 1d4 #rounds]]{1d4 rounds}.</p>",
+            "stealth": "<p>DC 10</p>"
         },
         "Rai Sho Disciple": {
-            "name": "Rai Sho Disciple"
+            "name": "Rai Sho Disciple",
+            "allSavesBonus": "+1 status to all saves vs. mental"
         },
         "Rai Sho Postulant": {
-            "name": "Rai Sho Postulant"
+            "name": "Rai Sho Postulant",
+            "allSavesBonus": "+4 status to all saves vs. fear and dreams"
         },
         "Ran-to (Level 14)": {
-            "name": "Ran-to (Level 14)"
+            "name": "Ran-to (Level 14)",
+            "blurb": "Male frost goblin wrestler"
         },
         "Ran-to (Level 16)": {
-            "name": "Ran-to (Level 16)"
+            "name": "Ran-to (Level 16)",
+            "blurb": "Male frost goblin grappler"
         },
         "Ran-to (Level 20)": {
-            "name": "Ran-to (Level 20)"
+            "name": "Ran-to (Level 20)",
+            "allSavesBonus": "+3 status to all saves vs. evocation"
         },
         "Razu": {
-            "name": "Razu"
+            "name": "Razu",
+            "blurb": "Male tengu master bard"
         },
         "Rivka (Cimurlian)": {
-            "name": "Rivka (Cimurlian)"
+            "name": "Rivka (Cimurlian)",
+            "publicNotes": "<p>Rivkas are parasitic monsters that cling to the sides of kaiju. In their natural form, they resemble giant cockroaches with eight razor-like legs and two mouths-one between two vicious pincers plus a second, much larger mouth on their abdomen. With this secondary mouth they feed off the primordial energy of whichever kaiju they've latched onto.</p>\n<p>In the wake of a kaiju attack, a rivka detaches from its host and wades into the disaster zone to prey on the unsuspecting populace by presenting itself as an emissary of the kaiju and demanding tribute. According to this cruel charlatan, only sacrifices of blood and gold can appease their master-though of course the rivka absconds with these offerings before the gifts ever reach the kaiju (such tributes would mean little to the kaiju anyway). Particularly heinous rivkas search the rubble for dead victims to impersonate, magically adopting the visage of a beloved city elder or priest in order to stoke the citizens' paranoia.</p>\n<p>Drinking kaiju blood has a strange effect on a rivka's anatomy, enriching both its defensive and offensive capabilities with the primal energy of its host. Other creatures have attempted to drink kaiju blood and replicate this phenomenon, always to terrible effect. Clearly rivkas have coevolved with kaiju in order to metabolize their ancient blood.</p>"
         },
         "Rivka (Igroon)": {
-            "name": "Rivka (Igroon)"
+            "name": "Rivka (Igroon)",
+            "publicNotes": "<p>Rivkas are parasitic monsters that cling to the sides of kaiju. In their natural form, they resemble giant cockroaches with eight razor-like legs and two mouths-one between two vicious pincers plus a second, much larger mouth on their abdomen. With this secondary mouth they feed off the primordial energy of whichever kaiju they've latched onto.</p>\n<p>In the wake of a kaiju attack, a rivka detaches from its host and wades into the disaster zone to prey on the unsuspecting populace by presenting itself as an emissary of the kaiju and demanding tribute. According to this cruel charlatan, only sacrifices of blood and gold can appease their master-though of course the rivka absconds with these offerings before the gifts ever reach the kaiju (such tributes would mean little to the kaiju anyway). Particularly heinous rivkas search the rubble for dead victims to impersonate, magically adopting the visage of a beloved city elder or priest in order to stoke the citizens' paranoia.</p>\n<p>Drinking kaiju blood has a strange effect on a rivka's anatomy, enriching both its defensive and offensive capabilities with the primal energy of its host. Other creatures have attempted to drink kaiju blood and replicate this phenomenon, always to terrible effect. Clearly rivkas have coevolved with kaiju in order to metabolize their ancient blood.</p>"
         },
         "Rivka (Kujiba)": {
-            "name": "Rivka (Kujiba)"
+            "name": "Rivka (Kujiba)",
+            "publicNotes": "<p>Rivkas are parasitic monsters that cling to the sides of kaiju. In their natural form, they resemble giant cockroaches with eight razor-like legs and two mouths-one between two vicious pincers plus a second, much larger mouth on their abdomen. With this secondary mouth they feed off the primordial energy of whichever kaiju they've latched onto.</p>\n<p>In the wake of a kaiju attack, a rivka detaches from its host and wades into the disaster zone to prey on the unsuspecting populace by presenting itself as an emissary of the kaiju and demanding tribute. According to this cruel charlatan, only sacrifices of blood and gold can appease their master-though of course the rivka absconds with these offerings before the gifts ever reach the kaiju (such tributes would mean little to the kaiju anyway). Particularly heinous rivkas search the rubble for dead victims to impersonate, magically adopting the visage of a beloved city elder or priest in order to stoke the citizens' paranoia.</p>\n<p>Drinking kaiju blood has a strange effect on a rivka's anatomy, enriching both its defensive and offensive capabilities with the primal energy of its host. Other creatures have attempted to drink kaiju blood and replicate this phenomenon, always to terrible effect. Clearly rivkas have coevolved with kaiju in order to metabolize their ancient blood.</p>"
         },
         "Rivka (Mogaru)": {
-            "name": "Rivka (Mogaru)"
+            "name": "Rivka (Mogaru)",
+            "publicNotes": "<p>Rivkas are parasitic monsters that cling to the sides of kaiju. In their natural form, they resemble giant cockroaches with eight razor-like legs and two mouths-one between two vicious pincers plus a second, much larger mouth on their abdomen. With this secondary mouth they feed off the primordial energy of whichever kaiju they've latched onto.</p>\n<p>In the wake of a kaiju attack, a rivka detaches from its host and wades into the disaster zone to prey on the unsuspecting populace by presenting itself as an emissary of the kaiju and demanding tribute. According to this cruel charlatan, only sacrifices of blood and gold can appease their master-though of course the rivka absconds with these offerings before the gifts ever reach the kaiju (such tributes would mean little to the kaiju anyway). Particularly heinous rivkas search the rubble for dead victims to impersonate, magically adopting the visage of a beloved city elder or priest in order to stoke the citizens' paranoia.</p>\n<p>Drinking kaiju blood has a strange effect on a rivka's anatomy, enriching both its defensive and offensive capabilities with the primal energy of its host. Other creatures have attempted to drink kaiju blood and replicate this phenomenon, always to terrible effect. Clearly rivkas have coevolved with kaiju in order to metabolize their ancient blood.</p>"
         },
         "Rivka (Yorak)": {
-            "name": "Rivka (Yorak)"
+            "name": "Rivka (Yorak)",
+            "publicNotes": "<p>Rivkas are parasitic monsters that cling to the sides of kaiju. In their natural form, they resemble giant cockroaches with eight razor-like legs and two mouths-one between two vicious pincers plus a second, much larger mouth on their abdomen. With this secondary mouth they feed off the primordial energy of whichever kaiju they've latched onto.</p>\n<p>In the wake of a kaiju attack, a rivka detaches from its host and wades into the disaster zone to prey on the unsuspecting populace by presenting itself as an emissary of the kaiju and demanding tribute. According to this cruel charlatan, only sacrifices of blood and gold can appease their master-though of course the rivka absconds with these offerings before the gifts ever reach the kaiju (such tributes would mean little to the kaiju anyway). Particularly heinous rivkas search the rubble for dead victims to impersonate, magically adopting the visage of a beloved city elder or priest in order to stoke the citizens' paranoia.</p>\n<p>Drinking kaiju blood has a strange effect on a rivka's anatomy, enriching both its defensive and offensive capabilities with the primal energy of its host. Other creatures have attempted to drink kaiju blood and replicate this phenomenon, always to terrible effect. Clearly rivkas have coevolved with kaiju in order to metabolize their ancient blood.</p>"
         },
         "Sand Whirlwind": {
-            "name": "Sand Whirlwind"
+            "name": "Sand Whirlwind",
+            "descriptionHazard": "<p>Buffeting winds swirl sharp grains of sand about the room.</p>",
+            "disable": "<p>@Check[type:religon|dc:38|name:State an Iroran Koan|traits:haunt]{Religion} (expert) to state an Iroran koan about being complete only upon recognizing one's incompleteness, or @Check[type:occultism|dc:41|name:Ward Against Hauntings|traits:haunt] (master) to create a ward against future hauntings</p>",
+            "reset": "<p>The haunt deactivates after 1 minute and re-forms after 1 hour. The haunt is disabled and doesn't re-form if at least two creatures spend 1 minute to create an image with the sand. Creating the image requires a successful @Check[type:crafting|dc:30|name:Create Image in Sand] or @Check[type:thievery|dc:30|name:Create Image in Sand]check.</p>",
+            "routine": "<p>(1 action) The haunt's violent winds savagely buffet everyone in the room, dealing@Damage[(6d10+30)[bludgeoning]] damage to living creatures (@Check[type:reflex|dc:34|basic:true|traits:haunt]). On a critically failed save, a creature is also @UUID[Compendium.pf2e.conditionitems.Item.XgEqL1kFApUbl5Z2]{Blinded} for 1 minute.</p>",
+            "stealth": "<p>(trained)</p>"
         },
         "Sanzuwu": {
-            "name": "Sanzuwu"
+            "name": "Sanzuwu",
+            "publicNotes": "<p>Those who feast on the sun are said to carry its power within them. Sanzuwus are small crows with red plumage and dark throats. According to legend, they stole their burning power from the sun and now fly across the sky as blinding streaks of fire. When they land on the earth, it ignites around them, causing unbound destruction. A handful of people worship these radiant birds and inscribe their three-legged visage on coins, items, and weapons.</p>"
         },
         "Shadow Yai": {
-            "name": "Shadow Yai"
+            "name": "Shadow Yai",
+            "publicNotes": "<p>Oni who assume the form of shadow giants are known as shadow yais. Many shadow yais crave the pleasures of music and go to great lengths to secure bardic or musically inclined supplicants. Smaller beings who refuse to submit to a shadow yai are subject to painful, drawn out, and strangely beautiful deaths, for a shadow yai has a special way of evoking melodic cries and screams from their victims: a veritable symphony of pain. Individuals of particular musical skill who accompany a shadow yai can find the experience extremely lucrative and enriching-as long as they don't run afoul of their liege.</p>",
+            "hpDetails": "regeneration 15 (deactivated by acid or fire)",
+            "speedsDetails": "Shadow Step"
         },
         "Shino Hakusa (Level 14)": {
-            "name": "Shino Hakusa (Level 14)"
+            "name": "Shino Hakusa (Level 14)",
+            "blurb": "Female Tian-Shu assassin"
         },
         "Shino Hakusa (Level 16)": {
-            "name": "Shino Hakusa (Level 16)"
+            "name": "Shino Hakusa (Level 16)",
+            "blurb": "Female Tian-Shu assassin"
         },
         "Shino Hakusa (Level 20)": {
-            "name": "Shino Hakusa (Level 20)"
+            "name": "Shino Hakusa (Level 20)",
+            "allSavesBonus": "+3 status to all saves vs. necromancy",
+            "sensesDetails": "lifesense"
         },
         "Sigbin": {
-            "name": "Sigbin"
+            "name": "Sigbin",
+            "publicNotes": "<p>Resembling hornless goats with extremely long tails, sigbins live in forests and prey on inhabitants of nearby humanoid villages. Sigbins drink the blood of their victims by biting into their shadows, rather than their flesh. This process typically leaves the victim so fatigued that they must lie down to rest, at which point the sigbin finishes the job by sinking their jaws into the person's chest and consuming their heart.</p>\n<p>Due to their nauseating smell, many sigbins hide among livestock and in other overwhelmingly odorous places. Sigbins have the ability to hide in plain sight simply by standing stock still, but this power works only against adults and elders; for whatever reason, children and young animals can see the invisible sigbins. Many believe this is because children are unsullied by the cruel ways of the world, and so their eyes are still innocent enough to spot the devious beasts. Unfortunately, most adults tend to ignore children's cries about the monsters, chalking up such claims to overactive imaginations or attention-seeking behavior, inadvertently allowing sigbins to continue their hunts uninterrupted.</p>"
         },
         "Sixth Pillar Student": {
-            "name": "Sixth Pillar Student"
+            "name": "Sixth Pillar Student",
+            "blurb": "Nagaji and human sorcerous monks",
+            "allSavesBonus": "+1 status bonus to all saves vs. magic"
         },
         "Speakers to the Wind (Gnoll Cascade Bearer)": {
             "name": "Speakers to the Wind (Gnoll Cascade Bearer)"
         },
         "Spinel Leviathan Syndara": {
-            "name": "Spinel Leviathan Syndara"
+            "name": "Spinel Leviathan Syndara",
+            "sensesDetails": "spatial sense"
         },
         "Spirit Turtle": {
-            "name": "Spirit Turtle"
+            "name": "Spirit Turtle",
+            "publicNotes": "<p>Spirit turtles are benevolent fey known to heal those in need and confer other powerful gifts. These gentle giants resemble enormous turtles and often bear entire ecosystems on their shells.</p>\n<p>In ancient times, so the legend goes, spirit turtles used to grant wishes to many mortals. After millennia of such encounters, the giant creatures grew tired and went into hiding or returned to their home plane, the First World. Those few spirit turtles who remain on Golarion now grant their favors only to the purest and worthiest mortal petitioners.</p>",
+            "hpDetails": "regeneration 25 (deactivated by cold iron or unholy)"
         },
         "Sthira": {
-            "name": "Sthira"
+            "name": "Sthira",
+            "publicNotes": "<p>The Wall of Heaven claims many intrepid climbers. Some such travelers come seeking fortune. Others seek enlightenment. Many, however, find only an icy death. With no means for a proper burial, many of these unfortunate souls remain abandoned to the ice, their bodies becoming macabre guideposts along mountain trails.</p>\n<p>Through means unknown, the most willful of these frozen travelers reanimate to seek vengeance upon the living for their denied burial. Such creatures, called sthiras, are composed of multiple bodies or body parts frozen together into one horrific monstrosity.</p>",
+            "hpDetails": "void healing"
         },
         "Surjit Hamelan": {
-            "name": "Surjit Hamelan"
+            "name": "Surjit Hamelan",
+            "blurb": "Male gnome Rain-Scribe attendant"
         },
         "Swatting Tail": {
-            "name": "Swatting Tail"
+            "name": "Swatting Tail",
+            "descriptionHazard": "<p>Mogaru's tail sweeps forth, causing an arc of devastation in a @Template[type:cone|distance:60].</p>",
+            "disable": "<p>@Check[type:performance|dc:45|name:Divert Mogaru's Attention] (legendary) or @Check[type:deception|dc:48|name:Divert Mogaru's Attention] (legendary) to momentarily divert Mogaru's attention</p>",
+            "reset": "<p>Mogaru doesn't swat his tail again for [[/br 1d4 #rounds]]{1d4 rounds}.</p>",
+            "stealth": "<p>DC 10</p>"
         },
         "Syndara the Sculptor": {
-            "name": "Syndara the Sculptor"
+            "name": "Syndara the Sculptor",
+            "hpDetails": "fast healing 20",
+            "allSavesBonus": "+2 status to all saves vs. chaotic",
+            "sensesDetails": "spatial sense, air walk"
         },
         "Syu Tak-nwa (Level 14)": {
-            "name": "Syu Tak-nwa (Level 14)"
+            "name": "Syu Tak-nwa (Level 14)",
+            "blurb": "Female Tian-Hwan white-haired witch"
         },
         "Syu Tak-nwa (Level 16)": {
-            "name": "Syu Tak-nwa (Level 16)"
+            "name": "Syu Tak-nwa (Level 16)",
+            "blurb": "Female Tian-Hwan white-haired witch"
         },
         "Syu Tak-nwa (Level 20)": {
-            "name": "Syu Tak-nwa (Level 20)"
+            "name": "Syu Tak-nwa (Level 20)",
+            "allSavesBonus": "+3 status to all saves vs. conjuration"
         },
         "Taiga Yai": {
-            "name": "Taiga Yai"
+            "name": "Taiga Yai",
+            "publicNotes": "<p>Wearing the visage of taiga giants, taiga yais generally travel in a solitary fashion, always yearning for new experiences and destinations. They are zealous in their love of nature in its purest form and gleefully destroy any established civilizations that they encounter before continuing onwards.</p>",
+            "hpDetails": "regeneration 15 (deactivated by fire)",
+            "allSavesBonus": "+1 status to all saves vs. magic"
         },
         "Takatorra (Daitengu Form)": {
-            "name": "Takatorra (Daitengu Form)"
+            "name": "Takatorra (Daitengu Form)",
+            "allSavesBonus": "+2 status to all saves vs. air and electricity"
         },
         "Takatorra (Level 13)": {
-            "name": "Takatorra (Level 13)"
+            "name": "Takatorra (Level 13)",
+            "blurb": "Non-binary tengu sword master"
         },
         "Takatorra (Level 9)": {
-            "name": "Takatorra (Level 9)"
+            "name": "Takatorra (Level 9)",
+            "blurb": "Nonbinary tengu sword master"
         },
         "Tamikan": {
-            "name": "Tamikan"
+            "name": "Tamikan",
+            "publicNotes": "<p>Though they resemble pterosaurs and hail from a similar era, kongamatos are actually a primeval branch of dragonkind. They aren't particularly intelligent and lack the powerful magical abilities that many of their dragon kindred command, but a kongamato has a supernaturally strong beak that can punch through incredibly dense substances. While this beak might seem like a valuable trophy for hunters, its magic dies with the kongamato, and all attempts to integrate them into weapons have failed.</p>\n<p>Though they dwell in swamps and other still waters, kongamatos prefer to hunt in rivers and streams, since running water delivers new prey on a regular basis. The predators hunt everything, and they are well aware their powerful beaks can sink boats and rafts. They even possess a semblance of draconic greed. While they care little for the material wealth or societal power, kongamatos claim large hunting territories, violently attacking any would-be rivals and ravenously slaughtering large animals in their territory, leaving carcasses half-eaten with little regard for whether they'll still have meals in the future.</p>\n<p>When a kongamato claims a territory that encapsulates a community, the people there have no choice but to hunt down the vicious predator or hire adventurers to do so on their behalf. Kongamatos' hunger is such that a single one can devastate entire herds of livestock and threaten the safety of the entire community. Unlike their draconic relatives, kongamatos ignore attempts to bargain with them, and efforts to appease them through regular sacrifices have no effect.</p>",
+            "blurb": "Variant female kongamato",
+            "allSavesBonus": "+1 status to all saves vs. magic"
         },
         "Tino (Oni Form)": {
             "name": "Tino (Oni Form)"
         },
         "Tino Tung (Level 13)": {
-            "name": "Tino Tung (Level 13)"
+            "name": "Tino Tung (Level 13)",
+            "blurb": "Male Tian-Shu paladin of Irori",
+            "allSavesBonus": "+1 status to all saves vs. disease"
         },
         "Tino Tung (Level 9)": {
-            "name": "Tino Tung (Level 9)"
+            "name": "Tino Tung (Level 9)",
+            "blurb": "Male Tian-Shu paladin of Irori",
+            "allSavesBonus": "+1 status to all saves vs. disease"
         },
         "Troff Frostknuckles": {
-            "name": "Troff Frostknuckles"
+            "name": "Troff Frostknuckles",
+            "blurb": "Male hobgoblin brawler"
         },
         "Tyrannosaurus Imperator": {
-            "name": "Tyrannosaurus Imperator"
+            "name": "Tyrannosaurus Imperator",
+            "publicNotes": "<p>Widely regarded as the king of the dinosaurs, the tyrannosaurus is a massive predator with a wide mouth filled with viciously sharp teeth. Thundering beasts of fury and hunger, tyrannosauruses are bold and fearless carnivores that eagerly bite off great hunks of large prey and swallow smaller prey-such as most humanoids-in a single gulp. Although they can subsist on carrion, tyrannosaurs prefer live prey.</p>\n<p>Tyrannosauruses stand on two wide, powerful hind legs that allow them to run quickly, and their thick tails provide them with exceptional balance. Although a their small forelimbs are of little use other than to hold prey in place while the predators tear at their victim's flesh with their fearsome jaws, even these forelimbs bear sharp claws several inches long. As fearsome as tyrannosauruses are alone, they sometimes hunt in packs to take down massive prey. Only the most powerful creatures can successfully train tyrannosauruses, and even then, only when they can provide the ravenous beasts with a steady diet of meat.</p>\n<p>Some tribes of giants, particularly cyclopes or more obscure denizens of primeval lands, have even trained tyrannosauruses as mounts or beasts of war. In other places, xulgaths feed these prisoners to these mighty dinosaurs as part of executions or ritual sacrifices. Some xulgath cults even revere tyrannosaurs as incarnations of their violent demonic demigods. For their part, tyrannosaurs who have grown used to having their meals provided in this manner are remarkably well-behaved toward their feeders and keepers. Tyrannosauruses are 50 feet long and weigh 7 tons or more.</p>\n<p>Other variants of the tyrannosaurs include slightly smaller dinosaurs such as allosaurus, or even larger like ravenous giganotosaurus. Even the smallest tyrannosaurs, nanotyrannus, are never than large in size, yet despite this stature, they no less ferocious, and those who would assume that a nanotyrannus is \"safer\" to train do well think again!</p>",
+            "blurb": "Variant tyrannosaurus"
         },
         "Umbasi": {
-            "name": "Umbasi"
+            "name": "Umbasi",
+            "blurb": "Pangender elf Uzunjati attendant"
         },
         "Urnak Lostwind": {
-            "name": "Urnak Lostwind"
+            "name": "Urnak Lostwind",
+            "blurb": "Male half-orc viking"
         },
         "Watchtower Poltergeist": {
-            "name": "Watchtower Poltergeist"
+            "name": "Watchtower Poltergeist",
+            "publicNotes": "<p>When a creature dies, and for whatever reason its spirit is unable or unwilling to leave the site of its death, that spirit may manifest as a poltergeist: a restless invisible spirit that is still able to manipulate physical objects. Many poltergeists perished in a way that resulted from or has led to extreme emotional trauma.</p>",
+            "blurb": "Variant poltergeist"
         },
         "Watchtower Shadow": {
-            "name": "Watchtower Shadow"
+            "name": "Watchtower Shadow",
+            "publicNotes": "<p>The mysterious undead known as shadows lurk in dark places and feed on those who stray too far from the light. Those who parley with shadows, typically by keeping them at bay with a glowing weapon, may learn great secrets, for they are ideal spies.</p>",
+            "blurb": "Variant shadow"
         },
         "Watchtower Wraith": {
-            "name": "Watchtower Wraith"
+            "name": "Watchtower Wraith",
+            "publicNotes": "<p>Wraiths are malevolent undead who drain life and shun light. Their shadowy, incorporeal forms are dotted with burning eyes that reffect their hatred for the living, and shadowy claws are weapon enough to steal the vitality from their enemies. A wraith may be created by foul necromancy, but more often they are the result of a hermitic murderer or mutilator who even in death could not give up their wicked ways. Further complicating the matter is the fact that wraiths multiply by consuming and transforming the living into more of their foul kind-meaning a handful of wraiths left unchecked can easily turn into a horde of darkness.</p>\n<p>Wraiths weigh nothing and are unharmed by most physical attacks. They haunt any place where they can feed on the living, though their vulnerability to sunlight confines them to the shadowy places of the world-places where they can blend in seamlessly with their dark surroundings before silently engulfing their prey.</p>\n<p>Wraiths may form packs with others of their kind in places where death and mayhem are commonplace-countrysides ravaged by war, metropolitan underworlds run by criminal overlords, or sites of fiendish cultic rituals. In these places, the living do well to tread with sunrods and powerful clerics in tow. Ruins, sewers, and abandoned buildings provide sanctuary for wraiths during the day, as the creatures hunt exclusively at night or in dark places. Wraiths are smart enough to take advantage of their incorporeality in combat, so they keep to tortuous caverns or structures with hallways and avoid open areas.</p>\n<p>As they're formed purely of anti-life from the Void, wraiths pervade that unholy realm. Within nations and civilizations ruled by the undead, wraiths have places of power as assassins and spies. They're among the ruling class in Geb, but have greater numbers in Ustalav, where packs of wraiths roam graveyards and misty trails, consuming the populations of entire villages. In other parts of the world, wraiths tend not to wander and limit their activity to smaller environs, typically just the site of their chosen haunting and its immediate surroundings.</p>",
+            "blurb": "Variant wraith",
+            "allSavesBonus": "+1 status to all saves vs. vitality"
         },
         "Weapon Master": {
             "name": "Weapon Master"
@@ -407,22 +614,52 @@
             "name": "Weapon Master (Under the Pale Sun Dervishes)"
         },
         "Wronged Monk's Wrath": {
-            "name": "Wronged Monk's Wrath"
+            "name": "Wronged Monk's Wrath",
+            "descriptionHazard": "<p>A monk's tormented spirit attacks intruders.</p>",
+            "disable": "<p>@Check[type:irori-lore|dc:32|name:Restore the Prayer Items|traits:haunt]{Irori Lore} (trained) to clean the room and return the prayer items to their proper arrangement, @Check[type:religion|dc:37|name:Iroran Prayer of Peace] (expert) to state an Iroran prayer of peace and put the haunt to rest, or @Check[type:occultism|dc:40|name:Create a Ward Against Future Hauntings] (master) to create a ward against future hauntings</p>",
+            "reset": "<p>The haunt re-forms after 1 hour. The haunt becomes disabled and doesn't re-form if a creature lights all of the candles in the room and offers a prayer to Irori.</p>",
+            "stealth": "<p>(trained)</p>"
         },
         "Yabin (White Serpent Form)": {
             "name": "Yabin (White Serpent Form)"
         },
         "Yabin the Just (Level 13)": {
-            "name": "Yabin the Just (Level 13)"
+            "name": "Yabin the Just (Level 13)",
+            "blurb": "Male nagaji dragon sorcerer",
+            "allSavesBonus": "+1 status to all saves vs. poison"
         },
         "Yabin the Just (Level 9)": {
-            "name": "Yabin the Just (Level 9)"
+            "name": "Yabin the Just (Level 9)",
+            "blurb": "Male nagaji dragon sorcerer",
+            "allSavesBonus": "+1 status to all saves vs. poison"
         },
         "Yarrika Mulandez": {
-            "name": "Yarrika Mulandez"
+            "name": "Yarrika Mulandez",
+            "blurb": "Female human spiritualist"
         },
         "Yoh Souran": {
-            "name": "Yoh Souran"
+            "name": "Yoh Souran",
+            "acDetails": "42 while piloting Solar Jian II",
+            "allSavesBonus": "+4 to all saves while piloting Solar Jian II"
         }
+    },
+    "mapping": {
+        "publicNotes": "system.details.publicNotes",
+        "privateNotes": "system.details.privateNotes",
+        "acDetails": "system.attributes.ac.details",
+        "blurb": "system.details.blurb",
+        "hpDetails": "system.attributes.hp.details",
+        "allSavesBonus": "system.attributes.allSaves.value",
+        "speedsDetails": "system.attributes.speed.details",
+        "sensesDetails": "system.perception.details",
+        "items": {
+            "converter": "translateActorItems",
+            "path": "items"
+        },
+        "descriptionHazard": "system.details.description",
+        "disable": "system.details.disable",
+        "reset": "system.details.reset",
+        "routine": "system.details.routine",
+        "stealth": "system.attributes.stealth.details"
     }
 }

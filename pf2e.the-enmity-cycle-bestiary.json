@@ -5,19 +5,41 @@
             "name": "Amar"
         },
         "Clockwork Dancers": {
-            "name": "Clockwork Dancers"
+            "name": "Clockwork Dancers",
+            "descriptionHazard": "<p>Several clockwork humanoid figures armed with spinning blades move throughout the area.</p>",
+            "disable": "<p>@Check[type:thievery|dc:25|traits:action:disable-a-device] (expert) to deactivate the clockworks from the control panel. Two successes are needed to deactivate the trap.</p>",
+            "reset": "<p>The trap deactivates after 4 rounds and resets after 1 minute.</p>",
+            "routine": "<p>(1 action) The clockwork dancers target each creature on the stage within 10 feet of a pillar by a spinning blade Strike.</p>",
+            "stealth": "<p>(expert)</p>"
         },
         "Corrupted Draft": {
-            "name": "Corrupted Draft"
+            "name": "Corrupted Draft",
+            "descriptionHazard": "<p>Discordant music, dance, and poetry combine to build a deep suspicion and distrust of strangers.</p>",
+            "disable": "<p>@Check[type:performance|dc:28] to counteract the performance or @Check[type:religion|dc:28] or @Check[type:occult|dc:28] to disrupt the spiritual energy. Two total successes are needed to disable the trap. The mechanical head can automatically disable the trap with two uses of Inspired Recitation.</p>",
+            "reset": "<p>The hazard stops when there are no conscious creatures in area <strong>E3</strong> and resets after 1 minute.</p>",
+            "routine": "<p>(1 action; emotion, fear, mental, occult) The echoes continue to reverberate, tearing at those in the area and filling them with distrust of others. All creatures in the area take @Damage[(2d10+11)[mental]] damage and must attempt a @Check[type:will|dc:28|traits:emotion,fear,mental,occult,damaging-effect] save.</p>\n<hr>\n<p><strong>Critical Success</strong> The target is unaffected and is immune to the effects for 1 minute.</p>\n<p><strong>Success</strong> The target takes half damage.</p>\n<p><strong>Failure</strong> The target takes full damage and is @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 1} by feelings of distrust and anxiety.</p>\n<p><strong>Critical Failure</strong> The target takes double damage and is @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 2}.</p>",
+            "stealth": "<p>(expert) or <em>@UUID[Compendium.pf2e.spells-srd.Item.gpzpAAAJ1Lza2JVl]{Detect Magic}</em></p>"
         },
         "Deadly Workshop": {
-            "name": "Deadly Workshop"
+            "name": "Deadly Workshop",
+            "hpDetails": "to destroy the chains and disable the trap",
+            "descriptionHazard": "<p>Swinging bladed chains whip through the entire workshop.</p>",
+            "disable": "<p>@Check[type:thievery|dc:20|traits:action:disable-a-device] (expert) on the control panel on the raised platform deactivates the trap.</p>",
+            "reset": "<p>The trap deactivates and resets after 1 minute.</p>",
+            "routine": "<p>(1 action) The trap swings one slashing blade against every creature in the workshop as 1 action. The entire workshop is treated as difficult terrain because of the sheer number of slashing chains. This trap doesn't take a multiple attack penalty.</p>",
+            "stealth": "<p>(expert) to notice the blades embedded in the chains and the complex system of pulleys connecting them</p>"
         },
         "Entangling Shredder Trap": {
-            "name": "Entangling Shredder Trap"
+            "name": "Entangling Shredder Trap",
+            "hpDetails": "to cut the barbed ropes and disable the trap",
+            "descriptionHazard": "<p>Dozens of ropes embedded with steel barbs spring out from the walls when at least two creatures step on the rugs.</p>",
+            "disable": "<p>@Check[type:thievery|dc:24|traits:action:disable-a-device] (expert) on the pressure plates.</p>",
+            "reset": "<p>manual</p>",
+            "stealth": "<p>(expert) to notice the pressure plates under the rugs</p>"
         },
         "Jimbilin": {
-            "name": "Jimbilin"
+            "name": "Jimbilin",
+            "blurb": "Male halfling priest of Ahriman"
         },
         "Krashk": {
             "name": "Krashk"
@@ -26,31 +48,62 @@
             "name": "Mechanical Assistant"
         },
         "Noolik": {
-            "name": "Noolik"
+            "name": "Noolik",
+            "blurb": "Jinkin leader"
         },
         "Sand Wolf": {
-            "name": "Sand Wolf"
+            "name": "Sand Wolf",
+            "publicNotes": "<p>A sand wolf is an elemental creature which dwells in the sandy deserts of elemental earth that drift to, or have been conjured on, the Plane of Air. Occasionally, these creatures seep through planar rifts or are summoned by elementalists on the Material Plane. Sand wolves are prized as guardians for their relative intelligence, keen perception, and ability to disguise themselves, easily blending with the shifting sands in desert terrain. Cunning and agile, they fiercely pursue any creatures they ambush, no matter how nimble their prey. Sand wolves also have a remarkable ability to sing beautiful, haunting songs, and their music is considered high entertainment among djinn who inhabit the Plane of Air. Many djinni viziers and even certain Material Plane rulers seeking the attention of their peers keep at least one of these creatures in their employ to show off at special events and ceremonies. The wolves' wordless songs evoke both the strength of the earth and the power of wind to erode it.</p>\n\n<h2>The Eternal Hourglass</h2>\n<p>Deep within a cavern in the Plane of Earth is a massive, seemingly indestructible hourglass the size of a small city, its top filled with thousands of sand wolves. As each wolf reaches the opening to the bottom, they are turned to sand and do not reform, instead piling up in a huge mound. It is not clear who constructed or placed the hourglass, how the sand wolves got there, or what\u2014if anything\u2014the hourglass is timing. Some claim the wolves will break loose and rampage freely when the sand runs out, while others believe the glass is counting down to the end of time itself.</p>"
         },
         "Scorching Sun Cultist": {
             "name": "Scorching Sun Cultist"
         },
         "Scrapborn": {
-            "name": "Scrapborn"
+            "name": "Scrapborn",
+            "publicNotes": "<p>In places where magic, alchemy, and engineering converge, there are often unforeseen side effects on the environment and its inhabitants. Scrapborn sometimes result from this strange convergence. Mostly, scrapborn appear to be walking piles of assorted junk, seemingly assembled at random. Their actual bodies are vaguely humanoid with delicate, spongy green skin. They secrete an adhesive that allows them to gather up debris and attach it to their bodies for protection. When these scraps eventually fall off, the scrapborn either reattaches them or replaces them with something new. Despite their resulting bulky appearance, scrapborn remain strong swimmers and display little loss of agility underwater. Scrapborn lack a centralized society, but sometimes congregate in small groups that work together for survival. Typically, this leads to ever-escalating attacks on nearby settlements as the creatures feed upon each other's resentment and work themselves up into a frenzy. They often target places with high-quality armor first so they can improve their odds of survival.</p>\n\n<h2>Pretend Knights</h2>\n<p>Some scrapborn spend a great deal of their time carefully selecting the pieces of armor and other bits they attach to their sticky skin. They might enjoy a particular color or material and cultivate their collection accordingly, striving for a cohesive design over time. A very diligent and patient\u2014or particularly wealthy\u2014scrapborn can even construct a full suit of armor this way and might even be able to pass as a knight, using their bulky armored form to bluff and intimidate anyone who might question them as they walk through a city or castle.</p>"
         },
         "Seddek": {
-            "name": "Seddek"
+            "name": "Seddek",
+            "blurb": "Male janni enforcer"
         },
         "The Enmity Cycle": {
-            "name": "The Enmity Cycle"
+            "name": "The Enmity Cycle",
+            "descriptionHazard": "<p>Discordant music, dance, and poetry combine to build a deep suspicion and distrust of strangers.</p>",
+            "disable": "<p>@Check[type:performance|dc:26] to counteract the performance or @Check[type:religion|dc:27] or @Check[type:occult|dc:27] to disrupt the spiritual energy. Three total successes are needed to disable the trap.</p>",
+            "reset": "<p>A new production of <em>The Enmity Cycle</em> must be arranged; this process usually takes at least 1 week.</p>",
+            "routine": "<p>(1 action) The performance continues to sow seeds of enmity, discord, and distrust on those in its area. All creatures in attendance other than Zridi must attempt a @Check[type:will|dc:25] save.</p>\n<hr>\n<p><strong>Critical Success</strong> The target is unaffected and is immune to the effects for 1 day.</p>\n<p><strong>Success</strong> The target is @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 1} for 2 rounds.</p>\n<p><strong>Failure</strong> The target is @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 2} for 1 minute and is certain the source of this fear is their fellow citizens, especially those from places other than their hometown. For 1 week the target suffers a &ndash;2 penalty to all Diplomacy skill checks against people from other Thuvian cities and regains the frightened 2 condition whenever they are in one of those cities.</p>\n<p><strong>Critical Failure</strong> As failure, but the target becomes a carrier for <em>The Enmity Cycle</em> for the next week. The target is compelled to travel to a city other than where they were exposed and recite as many lines from the anbarit as they can recall. Those who hear or witness the performance are treated as if they had attended a performance of <em>The Enmity Cycle</em>, but with a @Check[type:will|dc:23] save</p>",
+            "stealth": "<p>(expert) or <em>@UUID[Compendium.pf2e.spells-srd.Item.gpzpAAAJ1Lza2JVl]{Detect Magic}</em></p>"
         },
         "Usij Cultist": {
             "name": "Usij Cultist"
         },
         "Vulpinal Twin": {
-            "name": "Vulpinal Twin"
+            "name": "Vulpinal Twin",
+            "blurb": "Variant vulpinal"
         },
         "Zridi": {
-            "name": "Zridi"
+            "name": "Zridi",
+            "blurb": "Female pairaka",
+            "allSavesBonus": "+1 status to all saves vs. magic"
         }
+    },
+    "mapping": {
+        "publicNotes": "system.details.publicNotes",
+        "privateNotes": "system.details.privateNotes",
+        "acDetails": "system.attributes.ac.details",
+        "blurb": "system.details.blurb",
+        "hpDetails": "system.attributes.hp.details",
+        "allSavesBonus": "system.attributes.allSaves.value",
+        "speedsDetails": "system.attributes.speed.details",
+        "sensesDetails": "system.perception.details",
+        "items": {
+            "converter": "translateActorItems",
+            "path": "items"
+        },
+        "descriptionHazard": "system.details.description",
+        "disable": "system.details.disable",
+        "reset": "system.details.reset",
+        "routine": "system.details.routine",
+        "stealth": "system.attributes.stealth.details"
     }
 }

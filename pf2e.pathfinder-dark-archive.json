@@ -2,85 +2,183 @@
     "label": "Pathfinder-Dark-Archive",
     "entries": {
         "Bounding Hounds": {
-            "name": "Bounding Hounds"
+            "name": "Bounding Hounds",
+            "hpDetails": "60 HP per hound",
+            "descriptionHazard": "<p>Three phantom hounds chase down intruders, damaging any they pass through.</p>",
+            "disable": "<p>@Check[type:nature|dc:36|name:Calm Hound] (expert) to calm each hound, or @Check[type:occultism|dc:38|name:Banish Hound] (master) to banish each hound</p>",
+            "reset": "<p>1 hour</p>",
+            "routine": "<p>(9 actions) The trap loses 3 actions each round for each hound disabled. Each hound uses three actions to Stride 40 feet after creatures in the room, passing through corporeal creatures during this movement if possible. Each creature the hound moves through during its movement takes [[/r (2d8 + 7)[void]]] damage (@Check[type:reflex|dc:37|traits:damaging-effect] negates). A creature can only be damaged by each hound once each round, no matter how many times the hound moves through their space.</p>"
         },
         "Call of the Void": {
-            "name": "Call of the Void"
+            "name": "Call of the Void",
+            "descriptionHazard": "<p>A supernatural compulsion to leap into the unknown exerts itself on anyone who approaches the ledge.</p>",
+            "disable": "<p>@Check[type:occultism|dc:34|name:Expel Magical Compulsion] or @Check[type:arcana|dc:36|name:Expel Magical Compulsion] to expel the magical compulsion from the current island and from any of the red ropes directly attached to it, darkening the rope in color. The Echo also automatically disables the hazard from any island he's standing on, and any of the red ropes directly attached to it, when he Reconstitutes from Thought on that island.</p>",
+            "reset": "<p>The call of the void persists as long as the Echo exists, though it doesn't activate until the Echo has rolled initiative. The hazard resets each day.</p>",
+            "routine": "<p>(1 action) The call targets all creatures adjacent to a ledge or on one of the red ropes and tugs at their minds. A creature who has already fallen this round is immune.</p>",
+            "stealth": "<p>(expert) to notice a slight tugging feeling</p>"
         },
         "Clone Mirrors": {
-            "name": "Clone Mirrors"
+            "name": "Clone Mirrors",
+            "hpDetails": "per mirror",
+            "descriptionHazard": "<p>Two opposing mirrors spawn illusory duplicates of creatures in the hall in an unending tide.</p>",
+            "disable": "<p>@Check[type:thievery|dc:28|name:Reposition Mirror|traits:action:disable-a-device] (expert) to reposition each mirror, or <em>@UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic}</em> (3rd level; counteract DC 25) to counteract each mirror</p>",
+            "reset": "<p>1 day</p>",
+            "routine": "<p>(2 actions) This trap loses 1 action for each mirror disabled. Each mirror uses 1 action to Spawn a Reflection of a creature reflected in the mirror. The hazard can have a maximum of four reflections spawned at once.</p>"
         },
         "Cocoon of Lucid Potential": {
             "name": "Cocoon of Lucid Potential"
         },
         "Confounding Portal": {
-            "name": "Confounding Portal"
+            "name": "Confounding Portal",
+            "descriptionHazard": "<p>Tiny runes carved around a doorframe or on a hall's walls surreptitiously confound creatures into circling the room or hallway they attempted to exit or pass through.</p>",
+            "disable": "<p>@Check[type:thievery|dc:17|name:Scratch Out Runes|traits:action:disable-a-device] to scratch out the runes, or @Check[type:arcana|dc:16|name:Destroy the Runes] to destroy the runes</p>",
+            "reset": "<p>Automatic</p>"
         },
         "Constricting Hall": {
-            "name": "Constricting Hall"
+            "name": "Constricting Hall",
+            "descriptionHazard": "<p>A hall's four walls become fluid and elastic when a creature reaches the hall's midpoint.</p>",
+            "disable": "<p>@Check[type:thievery|dc:28|name:Stabilize Wall|traits:action:disable-a-device] (trained) to stabilize each wall, or <em>@UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic}</em> (4th level; counteract DC 26) to counteract each wall</p>",
+            "reset": "<p>1 hour</p>",
+            "routine": "<p>(4 actions) This trap loses 1 action each round for each wall that has been disabled. Each wall uses 1 action to slam back and forth rapidly, pummeling one creature in the hall with a wall Strike. On a hit, the target is additionally knocked @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone}. The walls distribute the attacks as evenly as possible among creatures in the hall, and the Strikes don't apply the trap's multiple attack penalty.</p>"
         },
         "Disorienting Illusions": {
-            "name": "Disorienting Illusions"
+            "name": "Disorienting Illusions",
+            "descriptionHazard": "<p>Illusions cloaking this chamber cause it to appear distorted and constantly shifting, with the room and all its contents appearing tilted, irregular, and in motion.</p>",
+            "disable": "<p>@Check[type:crafting|dc:17|name:Calculate the Room's Dimensions] (trained) to calculate the room's dimensions despite the illusions, or <em>@UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic}</em> (1st level; counteract DC 17) to counteract the illusions</p>",
+            "reset": "<p>1 minute</p>"
         },
         "Distortion Mirror": {
-            "name": "Distortion Mirror"
+            "name": "Distortion Mirror",
+            "descriptionHazard": "<p>Fun-house mirrors distort a viewer's reflection, painfully reshaping their body to match what appears in the reflected images.</p>",
+            "disable": "<p>@Check[type:thievery|dc:38|name:Deface the Mirror|traits:action:disable-a-device] (master) to deface the mirror's pane, or <em>@UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic}</em> (7th level; counteract DC 36) to dispel the mirror or counteract the transformation</p>",
+            "reset": "<p>1 day</p>",
+            "stealth": "<p>0 to notice the mirror</p>"
         },
         "Entrapping Chair": {
-            "name": "Entrapping Chair"
+            "name": "Entrapping Chair",
+            "descriptionHazard": "<p>A chair on concealed tracks surges forward, knocking a creature into the chair's seat and trapping them in place with clamping armrests.</p>",
+            "disable": "<p>@Check[type:thievery|dc:23|name:Disrupt the Tracks|traits:action:disable-a-device] (expert) to disrupt the tracks</p>",
+            "reset": "<p>The trap resets automatically over 2 rounds if the chair is unoccupied.</p>",
+            "stealth": "<p>(0 to notice the chair)</p>"
         },
         "Exhaling Portal": {
-            "name": "Exhaling Portal"
+            "name": "Exhaling Portal",
+            "descriptionHazard": "<p>Magic runes carved into a doorframe connect a door to the Plane of Air when opened, blowing creatures down the connecting hall.</p>",
+            "disable": "<p>@Check[type:thievery|dc:30|name:Scratch Out Runes|traits:action:disable-a-device] (expert) twice to scratch out the runes, or <em>@UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic}</em> (5th level; counteract DC 30) to counteract the planar runes; @Check[type:athletics|dc:32|name:Shut the Door] to shut the door if it's open (using Athletics only stops the trap, it doesn't fully disable it)</p>",
+            "reset": "<p>Automatic after the door is shut</p>",
+            "routine": "<p>(1 action) The trap uses 1 action to blow powerful winds down the hall. Each creature in the hall must attempt a @Check[type:fortitude|dc:32] save with the same results as Gust. If this forced movement would cause a creature to collide with a solid object or fall downstairs or out a window, that creature takes an additional [[/r (2d10 + 11)[bludgeoning]]] damage (or @Damage[20[bludgeoning]] damage due to a fall).</p>"
         },
         "False Floor": {
-            "name": "False Floor"
+            "name": "False Floor",
+            "descriptionHazard": "<p>The floor in this chamber is an illusion, which conceals a 40-foot drop to the true floor below. Additionally, the area beneath the floor is magically silenced-no sound is audible within nor does sound leave this space.</p>",
+            "disable": "<p>Succeeding on a Perception check against the Stealth DC of 21 (including the check to find the trap) disbelieves the illusory floor, or <em>@UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic}</em> (2nd level; counteract DC 18) to dispel the illusory floor; <em>dispel magic</em> (2nd level; counteract DC 20) to dispel the magical silence</p>",
+            "reset": "<p>Automatic</p>",
+            "stealth": "<p>(trained; or 0 if the illusory floor is dispelled)</p>"
         },
         "False Step Floor": {
-            "name": "False Step Floor"
+            "name": "False Step Floor",
+            "descriptionHazard": "<p>Each time a creature enters the room, it slips through the floor, tumbles through an interdimensional void, and falls back into the room through the ceiling, landing on the floor.</p>",
+            "disable": "<p>@Check[type:thievery|dc:28|name:Disrupt the Magical Energy|traits:action:disable-a-device] (trained) to disrupt the magical energy, or @Check[type:arcana|dc:27|name:Realign the Magic] or @Check[type:occultism|dc:27|name:Realign the Magic] (trained) to realign the magical energy</p>"
         },
         "K. H. W.'s Echo": {
-            "name": "K. H. W.'s Echo"
+            "name": "K. H. W.'s Echo",
+            "hpDetails": "destabilized form"
         },
         "Mirror Door": {
-            "name": "Mirror Door"
+            "name": "Mirror Door",
+            "descriptionHazard": "<p>The reflection of a wall shows a phantom door where none exists. This door can only be manipulated while viewed through the mirror's reflection.</p>",
+            "disable": "<p>@Check[type:thievery|dc:18|name:Open the Door|traits:action:disable-a-device] to open the door while viewing the reflection</p>",
+            "reset": "<p>Automatic</p>"
         },
         "Mother Mitera": {
-            "name": "Mother Mitera"
+            "name": "Mother Mitera",
+            "hpDetails": "crystal vitality link"
         },
         "Quartz-Spawned Shadow": {
-            "name": "Quartz-Spawned Shadow"
+            "name": "Quartz-Spawned Shadow",
+            "publicNotes": "<p>The mysterious undead known as shadows lurk in dark places and feed on those who stray too far from the light. Those who parley with shadows, typically by keeping them at bay with a glowing weapon, may learn great secrets, for they are ideal spies.</p>"
         },
         "Reflected Desires": {
-            "name": "Reflected Desires"
+            "name": "Reflected Desires",
+            "descriptionHazard": "<p>This mirror reflects the viewer's deepest desires.</p>",
+            "disable": "<p>@Check[type:thievery|dc:18|name:Shroud the Mirror|traits:action:disable-a-device] (trained) to shroud the mirror without looking at it, or @Check[type:occultism|dc:17|name:Erect Mental Barriers] (trained) to erect mental barriers</p>",
+            "reset": "<p>Automatic</p>",
+            "stealth": "<p>(0 to notice the mirror)</p>"
         },
         "Reflection": {
             "name": "Reflection"
         },
         "Shrinking Hall": {
-            "name": "Shrinking Hall"
+            "name": "Shrinking Hall",
+            "descriptionHazard": "<p>This hallway is designed to shrink as creatures traverse it, making access to the door at the hall's end impossible.</p>",
+            "disable": "<p>@Check[type:thievery|dc:21|name:Jam the Scales|traits:action:disable-a-device] (trained) to jam the scales built into the floor</p>",
+            "reset": "<p>After 10 minutes without weight being placed on this hall's floor, this trap resets, returning the hall to its original size.</p>"
         },
         "Shrouded Assailant": {
-            "name": "Shrouded Assailant"
+            "name": "Shrouded Assailant",
+            "hpDetails": "spirit",
+            "descriptionHazard": "<p>A spirit steps out of a covered mirror, pulling off and becoming shrouded in the cloth, which reveals the mirror. The shrouded figure attacks the living until the cloth is yanked off, which banishes the formless spirit.</p>",
+            "disable": "<p>@Check[type:thievery|dc:43|name:Steal the Cloth|traits:action:disable-a-device] (master) to steal the cloth before the spirit manifests, or @Check[type:athletics|dc:47|name:Pull the Cloth Off] to pull the cloth off the spirit after it manifests</p>",
+            "reset": "<p>The haunt can be reset if the mirror is covered in a cloth or shroud.</p>",
+            "routine": "<p>(3 actions) The spirit uses 3 actions to Step, fly 60 feet, or Strike, in any order. On a successful Strike the spirit's target is @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 1}, and on a critical success, the target is @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 2}.</p>"
         },
         "Shuffling Hall": {
-            "name": "Shuffling Hall"
+            "name": "Shuffling Hall",
+            "descriptionHazard": "<p>Four pressure plates along this mirrored hall rotate vertically when stepped on, sending a creature on the pressure plate tipping into an adjacent featureless room while simultaneously replacing the pressure plate and walls in the hall. Each pressure plate dumps creatures into a different room.</p>",
+            "disable": "<p>@Check[type:thievery|dc:12|name:Deactivate a Plate|traits:action:disable-a-device] to deactivate one pressure plate</p>",
+            "reset": "<p>Automatic</p>"
         },
         "Sigil of Deepest Fears": {
-            "name": "Sigil of Deepest Fears"
+            "name": "Sigil of Deepest Fears",
+            "descriptionHazard": "<p>An arcane sigil forces creatures to confront their greatest fear.</p>",
+            "disable": "<p>@Check[type:thievery|dc:43|name:Drain the Sigil's Power|traits:action:disable-a-device] (master) to drain the sigil's power harmlessly, or <em>@UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic}</em> (9th level; counteract DC 42) to counteract the sigil</p>",
+            "reset": "<p>1 day</p>",
+            "stealth": "<p>(master)</p>"
         },
         "Spirit Window": {
-            "name": "Spirit Window"
+            "name": "Spirit Window",
+            "descriptionHazard": "<p>Spirits trapped inside a haunted window harm those who touch the window.</p>",
+            "disable": "<p>@Check[type:occultism|dc:48|name:Free the Spirits] (legendary) to free the spirits from the mirror, or @Check[type:religion|dc:48|name:Banish the Spirits] (legendary) to banish the spirits</p>",
+            "reset": "<p>1 round</p>"
         },
         "Thalassophobic Pool": {
-            "name": "Thalassophobic Pool"
+            "name": "Thalassophobic Pool",
+            "descriptionHazard": "<p>The pool sucks in creatures that fall into it, making them sink into its endless depths.</p>",
+            "disable": "<p>@Check[type:diplomacy|dc:32|name:Calm the Pool] (master) or @Check[type:deception|dc:32|name:Calm the Pool] (master) to quell the fear and calm the pool or @Check[type:intimidation|dc:35|name:Scare the Pool] to give the pool something worse to fear; three successes required.</p>",
+            "reset": "<p>The trap resets once there are no moving creatures in it.</p>",
+            "routine": "<p>(3 actions) Water from the chalice increases the depth of the water by 10 feet for each action. Each time this happens, creatures in the pool are pushed 10 feet down and take @Damage[1d6[bludgeoning]] damage. As the pool has no bottom, creatures in it can fall down indefinitely; they must @UUID[Compendium.pf2e.actionspf2e.Item.c8TGiZ48ygoSPofx]{Swim} up to avoid drowning, but the water is especially choppy, so the Athletics DC is @Check[type:athletics|dc:25|traits:action:swim]. The pool never overflows. Each successful check to Disable reduces the pool's actions by 1, and once the pool is completely Disabled, the water becomes still and the Athletics DC to Swim becomes @Check[type:athletics|dc:10|traits:action:swim].</p>",
+            "stealth": "<p>(trained)</p>"
         },
         "The Morrowkin": {
             "name": "The Morrowkin"
         },
         "The Weaver in Dreams": {
-            "name": "The Weaver in Dreams"
+            "name": "The Weaver in Dreams",
+            "speedsDetails": "Stalker in Dreams"
         },
         "Verdure's Moonflower": {
-            "name": "Verdure's Moonflower"
+            "name": "Verdure's Moonflower",
+            "publicNotes": "<p>These enormous plants have thick, knotted trunks festooned with fanged blossoms. A gaping mouth sits at the top of the trunk, capable of swallowing most creatures smaller than the moonflower whole. Moonflowers can move slowly on their powerful roots or use them to attack, but usually they dig them deeply into the surrounding ground and remain stationary to await prey.</p>\n<p>Though moonflowers can't speak in the conventional sense, they communicate telepathically with other moonflowers. Explorers who encounter a single moonflower can thus be assured that any other moonflowers in the vicinity will be prepared for them. Those who manage to intercept a moonflower's telepathic communications are assaulted by visions of dreadful, primeval jungles ruled over by titanic plant life. Whether this is some vision of the past or a dream of the future shared by all moonflowers is unknown.</p>\n<p>Moonflowers are alien life-forms from a long-dead planet, but their proliferation throughout the galaxy has been ensured through the machinations of the Dominion of the Black, a sinister, alien organization from the dark places between the stars.</p>",
+            "hpDetails": "fast healing 10"
         }
+    },
+    "mapping": {
+        "publicNotes": "system.details.publicNotes",
+        "privateNotes": "system.details.privateNotes",
+        "acDetails": "system.attributes.ac.details",
+        "blurb": "system.details.blurb",
+        "hpDetails": "system.attributes.hp.details",
+        "allSavesBonus": "system.attributes.allSaves.value",
+        "speedsDetails": "system.attributes.speed.details",
+        "sensesDetails": "system.perception.details",
+        "items": {
+            "converter": "translateActorItems",
+            "path": "items"
+        },
+        "descriptionHazard": "system.details.description",
+        "disable": "system.details.disable",
+        "reset": "system.details.reset",
+        "routine": "system.details.routine",
+        "stealth": "system.attributes.stealth.details"
     }
 }

@@ -8,10 +8,12 @@
             "name": "Bee Swarm"
         },
         "Blood Ooze": {
-            "name": "Blood Ooze"
+            "name": "Blood Ooze",
+            "publicNotes": "<p>Swelling like a bubble about to burst, this oozing thing looks like it is made entirely from blood. Its slick, crimson skin is marred only by spots that look like clots formed on the surface.</p>\n<p>Created through the foulest of alchemical rituals, the blood ooze seeks only one thing: to increase its mass by consuming blood from the living. The blood ooze hides within the body of its victims, only bursting out to attack when another meal draws near, leaving the body a husk of its former self.</p>\n<p>The process by which such an ooze is created involves draining the blood of at least four Medium creatures and feeding all of the collected blood to a fifth creature, along with deadly reagents designed to prevent the blood from coagulating. During this time, the host slowly dies while the blood ooze takes form, emerging 2 to 6 hours later. Blood oozes have no loyalty toward those who created them, but some creators have noted that newly formed blood oozes seem to avoid harming other members of the host creature's family.</p>\n<p>It is not widely known that an existing blood ooze can reproduce by splitting itself in half. It undergoes this division only if it has grown so large that splitting in half would create a pair of normal-sized blood oozes, such as the one listed below.</p>"
         },
         "Bloodlash Bush": {
-            "name": "Bloodlash Bush"
+            "name": "Bloodlash Bush",
+            "publicNotes": "<p>The bloodlash bush attempts to lacerate its foes, using its weeping wounds to irrigate the ground around itself. The seeds of a bloodlash bush can take root only in soil that has been soaked in blood.</p>\n<hr />\n<p>Often overlooked in light of more obvious threats, some plants can be just as deadly and dangerous as wild beasts.</p>\n<p>What first appears to be a simple shrub suddenly stirs to life.</p>"
         },
         "Caustic Wolf": {
             "name": "Caustic Wolf"
@@ -20,7 +22,10 @@
             "name": "Drunken Farmer"
         },
         "Falling Debris": {
-            "name": "Falling Debris"
+            "name": "Falling Debris",
+            "descriptionHazard": "<p>A pressure-sensitive floorboard connects to a beam holding up debris in the crawlway's ceiling.</p>",
+            "disable": "<p>@Check[type:thievery|dc:15|name:Disable Trap|traits:mechanical,trap,hazard] (trained) on the floorboard before the debris falls</p>",
+            "stealth": "<p>(trained)</p>"
         },
         "Fiery Leopard": {
             "name": "Fiery Leopard"
@@ -35,7 +40,10 @@
             "name": "Hallod"
         },
         "Ice Fall Trap": {
-            "name": "Ice Fall Trap"
+            "name": "Ice Fall Trap",
+            "descriptionHazard": "<p>Compartments in the ceiling are rigged to drop a freezing alchemical liquid into the entire room if the door is opened without using the key.</p>",
+            "disable": "<p>@Check[type:thievery|dc:20|name:Disable Ice Fall|traits:mechanical,trap] (trained) on the door allows it to be opened without springing the trap.</p>",
+            "stealth": "<p>(trained)</p>"
         },
         "Icy Rat": {
             "name": "Icy Rat"
@@ -53,13 +61,17 @@
             "name": "Orc Alchemist"
         },
         "Spear Launcher": {
-            "name": "Spear Launcher"
+            "name": "Spear Launcher",
+            "descriptionHazard": "<p>An old heavy crossbow is hidden in a pile of trash, loaded with a wooden spear, and connected to the rope holding the door.</p>",
+            "disable": "<p>@Check[type:thievery|dc:18|traits:action:disable-a-device]{Thievery (trained)} on the rope allows a PC to tie the rope off and open the door without setting off the trap.</p>",
+            "stealth": "<p>(trained)</p>"
         },
         "Stone Horse": {
             "name": "Stone Horse"
         },
         "The Amalgam": {
-            "name": "The Amalgam"
+            "name": "The Amalgam",
+            "allSavesBonus": "many minds"
         },
         "The Behemoth": {
             "name": "The Behemoth"
@@ -71,7 +83,27 @@
             "name": "Vilree"
         },
         "Vine Lasher": {
-            "name": "Vine Lasher"
+            "name": "Vine Lasher",
+            "publicNotes": "<p>The vine lasher attacks in groups, attempting to immobilize prey and slowly tear a creature to pieces.</p>\n<hr />\n<p>What first appears to be a simple shrub suddenly stirs to life.</p>"
         }
+    },
+    "mapping": {
+        "publicNotes": "system.details.publicNotes",
+        "privateNotes": "system.details.privateNotes",
+        "acDetails": "system.attributes.ac.details",
+        "blurb": "system.details.blurb",
+        "hpDetails": "system.attributes.hp.details",
+        "allSavesBonus": "system.attributes.allSaves.value",
+        "speedsDetails": "system.attributes.speed.details",
+        "sensesDetails": "system.perception.details",
+        "items": {
+            "converter": "translateActorItems",
+            "path": "items"
+        },
+        "descriptionHazard": "system.details.description",
+        "disable": "system.details.disable",
+        "reset": "system.details.reset",
+        "routine": "system.details.routine",
+        "stealth": "system.attributes.stealth.details"
     }
 }

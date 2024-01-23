@@ -8,7 +8,8 @@
             "name": "Conqueror Worm"
         },
         "Gray Death": {
-            "name": "Gray Death"
+            "name": "Gray Death",
+            "sensesDetails": "000 feet"
         },
         "Gray Gardener Assassin": {
             "name": "Gray Gardener Assassin"
@@ -17,7 +18,8 @@
             "name": "Gray Gardener Director General"
         },
         "Gray Gardener Enforcer": {
-            "name": "Gray Gardener Enforcer"
+            "name": "Gray Gardener Enforcer",
+            "hpDetails": "void healing"
         },
         "Guillotine Golem": {
             "name": "Guillotine Golem"
@@ -29,16 +31,27 @@
             "name": "Mateena Lumlin"
         },
         "Miss Whisper": {
-            "name": "Miss Whisper"
+            "name": "Miss Whisper",
+            "publicNotes": "<p>Ages ago, when this cycle of the multiverse was still adolescent, a cabal of psychopomps who already felt bored and restrained in their role of ushering souls to their ultimate resting place rebelled against their station. It was this corruption of the cycle of souls that spawned the first sahkils.</p>\n<p>Ambivalent to the prescribed order of the multiverse and spiteful of mortals, sahkils delight in spreading fear and unease to all beings, clogging up the metaphysical cycle with anxiety-ridden mortals too scared to achieve their potential. These fiends have drastically changed from their dedicated psychopomp predecessors. They are creatures of spite and torment, fear and disgust. They exploit the most common and rare fears for their own perverse satisfaction, and they want nothing more than to frighten mortals and make them quetion their reason for existence.</p>\n<p>Most sahkils lurk on the Ethereal Plane, but they frequently invade the Material Plane to torment mortals and spread terror. They use their innate ability to slip between the veils of the Ethereal and Material effortlessly, often stalking their targets for days or weeks before enacting their devious plots.</p>\n<hr />\n<p>Pakalchis strive to intensify their preys' inherent insecurity over personal and emotional bonds, playing on the threat of those relationships falling into ruin. These sahkils are among the most manipulative of their kind, pulling strings both literal and figurative on their victims over stretched-out periods of time, exhilarating in the despair and fear for as long as possible.</p>"
         },
         "Pageant Troupe": {
-            "name": "Pageant Troupe"
+            "name": "Pageant Troupe",
+            "publicNotes": "<p>Terra-cotta warriors guard the tombs of ancient rulers, where they stand vigil, animating only when intruders break in to pilfer riches or defile the tomb itself. Each warrior is meticulously crafted from clay and given unique features.</p>\n<hr />\n<p>These constructed warriors can work together as a trained group to repel intruders.</p>",
+            "hpDetails": "troop defenses"
         },
         "Pendulum Pit": {
-            "name": "Pendulum Pit"
+            "name": "Pendulum Pit",
+            "descriptionHazard": "<p>Several swinging pendulums of force cleave through the room across the platforms, knocking people into the pit.</p>",
+            "disable": "<p>@Check[type:arcana|dc:48|name:Deactivate a Pendulum Blade|traits:complex,magical,mechanical,trap] (legendary), @Check[type:thievery|dc:44|name:Deactivate a Pendulum Blade|traits:complex,magical,mechanical,trap] (master), or <em>@UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic}</em> (9th level; counteract DC 44) on a platform to deactivate its pendulum blade; once all five platforms have been deactivated, the trap is disabled and the room rotates back into position along the exits. @Check[type:thievery|dc:48|name:Rotate the Room Open|traits:complex,magical,mechanical,trap] (legendary) from any blocked exit to activate the rotating mechanism and rotate the room back into position before the trap has been disabled.</p>",
+            "reset": "<p>The trap resets after 1 hour. If the <em>@UUID[Compendium.pf2e.spells-srd.Item.4GE2ZdODgIQtg51c]{Darkness}</em> throughout the room has been dispelled, the <em>darkness</em> in the room returns when the trap resets.</p>",
+            "routine": "<p>(5 actions) For each active platform, the trap uses an action to create a pendulum of force to swing down along a straight line between the platform and one other creature in the room that isn't on the platform (if any). The trap makes a pendulum blade attack against any creature in that line. For each platform deactivated, reduce the number of actions the trap takes in its routine by 1.</p>",
+            "stealth": "<p>(legendary) to realize the chamber is a complex rotating trap before it triggers. No check is necessary to notice the platforms and the pit.</p>"
         },
         "Planar Eviction Trap": {
-            "name": "Planar Eviction Trap"
+            "name": "Planar Eviction Trap",
+            "descriptionHazard": "<p>An invisible magic rune emits a burst of psychic static and sends extraplanar creatures to Pharasma's realm.</p>",
+            "disable": "<p>@Check[type:religion|dc:42|name:Discharge Glyph|traits:uncommon,trap,magical] (master) or @Check[type:thievery|dc:42|name:Discharge Glyph|traits:uncommon,trap,magical] (master) to discharge the glyph's power harmlessly, or <em>@UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic}</em> </em>(8th level; counteract DC 40) to counteract the glyph</p>",
+            "stealth": "<p>(master)</p>"
         },
         "Riekanoy": {
             "name": "Riekanoy"
@@ -52,5 +65,24 @@
         "Zintaya Calbieste": {
             "name": "Zintaya Calbieste"
         }
+    },
+    "mapping": {
+        "publicNotes": "system.details.publicNotes",
+        "privateNotes": "system.details.privateNotes",
+        "acDetails": "system.attributes.ac.details",
+        "blurb": "system.details.blurb",
+        "hpDetails": "system.attributes.hp.details",
+        "allSavesBonus": "system.attributes.allSaves.value",
+        "speedsDetails": "system.attributes.speed.details",
+        "sensesDetails": "system.perception.details",
+        "items": {
+            "converter": "translateActorItems",
+            "path": "items"
+        },
+        "descriptionHazard": "system.details.description",
+        "disable": "system.details.disable",
+        "reset": "system.details.reset",
+        "routine": "system.details.routine",
+        "stealth": "system.attributes.stealth.details"
     }
 }

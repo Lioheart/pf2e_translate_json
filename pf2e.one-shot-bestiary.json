@@ -5,19 +5,32 @@
             "name": "Auldegrund Grimcarver"
         },
         "Bad Vibrations": {
-            "name": "Bad Vibrations"
+            "name": "Bad Vibrations",
+            "hpDetails": "HP per crystal",
+            "descriptionHazard": "<p>The three larger crystals on the table begin to vibrate and emit a swiftly growing peal of sound.</p>",
+            "disable": "<p>@Check[type:thievery|dc:17] (trained) or @Check[type:occultism|dc:17] (trained) to disrupt the magic enchanting one of the crystals, or @Check[type:performance|dc:20] (trained) by a character who can cast <em>@UUID[Compendium.pf2e.spells-srd.Item.WILXkjU5Yq3yw10r]{Counter Performance}</em> to use sound to redirect the noise back into the crystal, or <em>@UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic}</em> (2nd level, DC 18) to counteract a crystal.</span></p>",
+            "routine": "<p>(3 actions) The hazard loses 1 action for each crystal that's disabled or destroyed. On each of the trap's actions, one of the crystals fires a blast of sound at a single Small or larger creature in the room. The target is randomly determined and takes @Damage[1d8[sonic]] damage (@Check[type:fortitude|dc:20|basic:true]); a target who critically fails this save is @UUID[Compendium.pf2e.conditionitems.Item.9PR9y0bi4JPKnHPR]{Deafened} for 1 minute. At the end of the hazard's routine, attempt a @Check[type:flat|dc:10|name:Destroy a Crystal]. On a success, one of the crystals shatters and is destroyed.</p>",
+            "stealth": "<p>(expert)</p>"
         },
         "Boreal Rage Trap": {
-            "name": "Boreal Rage Trap"
+            "name": "Boreal Rage Trap",
+            "descriptionHazard": "<p>A stuffed owlbear twists toward intruders and breathes a gust of frigid air.</p>",
+            "disable": "<p>@Check[type:thievery|dc:22|traits:cold,evocation,magical,trap,hazard]{Thievery (expert)} on the owlbear's base</p>",
+            "reset": "<p>10 minutes</p>",
+            "stealth": "<p>(expert)</p>"
         },
         "Carl The Cobbler": {
-            "name": "Carl The Cobbler"
+            "name": "Carl The Cobbler",
+            "publicNotes": "<p>Redcaps are sadistic and capricious fey who thrill in bloodletting and murder. While they are most famous for appearing as wizened, bearded men, redcap women are no less fearsome or cruel. Redcaps are ultimately craven bullies, cowed by anything more powerful than themselves, a trait that leads them to fear and despise the symbols of good deities. Many fairy tales explain how the redcaps draw power from dipping the hats for which they are named in fresh blood. Just as iconic to these cruel little fey are their iron-clad boots, and the clanging sound of their metal soles clanking on stone floors is both discordant and disconcerting-especially to those who recognize the sound for what it is. Redcaps typically stand only 3 feet tall, with hunched frames, pointed ears, crooked teeth, and long, white, tangled hair.</p>",
+            "blurb": "Variant redcap",
+            "hpDetails": "fast healing 10"
         },
         "Cultist of Alocer": {
             "name": "Cultist of Alocer"
         },
         "Darius": {
-            "name": "Darius"
+            "name": "Darius",
+            "blurb": "Male human alchemist"
         },
         "Doatara the Poisoner": {
             "name": "Doatara the Poisoner"
@@ -26,16 +39,29 @@
             "name": "Doatara the Priest"
         },
         "Giant Pirate Skeleton": {
-            "name": "Giant Pirate Skeleton"
+            "name": "Giant Pirate Skeleton",
+            "hpDetails": "void healing"
         },
         "Grazing Deer": {
-            "name": "Grazing Deer"
+            "name": "Grazing Deer",
+            "hpDetails": "(if the grazing deer take this much damage, they aren't killed, but they do flee into the woods and don't return)",
+            "descriptionHazard": "<p>A herd of deer exits the woods to investigate the delicious-looking leshys.</p>",
+            "disable": "<p>@Check[type:diplomacy|dc:17|name:Befriend the Deer]{Diplomacy (with Wild Empathy)} to befriend the deer and convince them that leshys aren't for nibbling, or @Check[type:intimidation|dc:20|name:Scare the Deer Away]{Intimidation} to scare away the deer.</p>",
+            "routine": "<p>(2 actions) The grazing deer takes one action to move about, and then one action to eagerly nibble at a randomly chosen NPC. A character who spends three actions on their turn to Stride can avoid being nibbled by the grazing deer during the hazard's next turn. If all of the PCs do so, attempt a @Check[type:flat|dc:5|name:Escape the Deer]-on a success, the party escapes the deer and can proceed onward to Petalbrook, but they become delayed as a result of having to flee the pack of ravenous deer.</p>",
+            "stealth": "<p>(expert)</p>"
         },
         "Hail of Darts": {
-            "name": "Hail of Darts"
+            "name": "Hail of Darts",
+            "descriptionHazard": "<p>An array of spring-loaded, ceiling-mounted darts are primed to fire down into the hallway when triggered by a pressure plate.</p>",
+            "disable": "<p>@Check[type:thievery|dc:25|traits:hazard,trap,mechanical]{Thievery (expert)} on the floor tile or wall socket</p>",
+            "stealth": "<p>(expert)</p>"
         },
         "Hidden Spiked Pit": {
-            "name": "Hidden Spiked Pit"
+            "name": "Hidden Spiked Pit",
+            "descriptionHazard": "<p>A wooden trapdoor covers a pit that's 10 feet square and 20 feet deep. Knives are arrayed at the bottom of the trap, impaling anyone who falls on them.</p>",
+            "disable": "<p>@Check[type:thievery|dc:18] (trained) to remove the trapdoor</p>",
+            "reset": "<p>Creatures can still fall into the trap, but the trapdoor must be reset manually for the trap to become @UUID[Compendium.pf2e.conditionitems.Item.iU0fEDdBp3rXpTMC]{Hidden} again.</p>",
+            "stealth": "<p>(trained) or DC 0 if the trapdoor is disabled or broken</p>"
         },
         "Jinkin Ripclaw": {
             "name": "Jinkin Ripclaw"
@@ -44,7 +70,8 @@
             "name": "Kelorbeyan Guard"
         },
         "Lawn Crawfish": {
-            "name": "Lawn Crawfish"
+            "name": "Lawn Crawfish",
+            "publicNotes": "<p>Reefclaws are aquatic monsters that resemble huge shrimp or lobsters. As one might expect from its name, a reefclaw's oversized claws are powerful weapons with their vicelike grip and the ability to inject potent venom into unfortunate prey.</p>\n<p>While reefclaws can't speak, they are intelligent enough to understand the local language of humanoids near their hunting grounds. The creatures sometimes listen to conversations, either to gain intelligence on the best place to ambush aquatic or land-dwelling prey, or merely for entertainment value-reefclaws are particularly fond of listening to people with high-pitched voices. Reefclaws are usually solitary hunters, but small swarms of female reefclaws have been known to gather around a single male for mating purposes or together for the communal raising of their broods. In the latter case, the females will perform widespread hunts in order to bring back a large enough bounty to feed their young. Such hunting parties are extremely dangerous-they've been known to tip over small flshing boats and attack those who fall overboard.</p>\n<p>Once a reefclaw has decided upon a course of action, it follows through even if doing so spells its own end. More than one reefclaw survivor has said that the creature released its bone-crushing grasp only after its brains were leaking from its broken skull, and even then the reefclaw was able to perform a terrible last slash as part of its dying breath. During mating season, female reefclaws are often a little more pragmatic and release their prey before endangering themselves and their offspring.</p>\n<p>Despite their intelligence and the accompanying moral quandaries, reefclaws frequently find their way onto the dinner plates of land-dwelling hunters such as humans and hobgoblins. According to those who have a taste for reefclaw flesh, the meat is either delectably sweet or slightly tangy (in the case of warm-water reefclaws). Most civilized people who know of reefclaws' intellect find the act of eating them distasteful, but this does not dissuade unscrupulous nobles in coastal regions, for whom reefclaw meat is a delicacy well worth the expense. Likewise, fisherfolk whose focus is on the bottom line of their ledgers are more than willing to hunt the dangerous creatures-or, even better, hire out the task to naive adventurers.</p>"
         },
         "Meliosa's Leshy": {
             "name": "Meliosa's Leshy"
@@ -62,19 +89,28 @@
             "name": "Meliosa's Leshy (Wisteria Leshy)"
         },
         "Pairaka (One-Shot #4)": {
-            "name": "Pairaka (One-Shot #4)"
+            "name": "Pairaka (One-Shot #4)",
+            "publicNotes": "<p>Some fiends want to tear down the multiverse; others dedicate themselves to creating chaos and carnage, or to rule over realms with an iron fist. Divs strive toward a different, if equally reprehensible, goal-they seek to thwart and ruin the schemes and works of mortal beings.</p>\n<p>Long ago, divs were once genies bound to serve ancient mortal empires lost to the passage of eons. In the beginning, these genies were masters of creation, working alongside gracious mortal partners to create works of subtle design and powerful magical potential. What started as a collaboration with mortals soon morphed into abuse, disrespect, and even slavery and bondage. Eventually, these genies rebelled, but in doing so, they came under the sway of a nihilistic demigod known as Ahriman. Their new master twisted their form and granted them the power to avenge themselves upon their mortal overlords, leading to the birth of the first divs.</p>\n<p>Since that first wave of corruption, new divs arise from the spirits of the most wicked and hateful genies who die on the Material Plane, or those truly betrayed by mortals and overcome through their desire for vengeance. Upon such a death, instead of returning to the Elemental Planes, these genies' spirits are trapped in the dread orbit of Abaddon, where Ahriman reshapes them as divs and hoists them back to the world to wreak vengeance upon mortals.</p>\n<hr />\n<p>Often charming, sometimes even seductive, pairakas worm their way into mortal relationships, subtly destroying the ties of friendship and love through emotional and physical corruption and plague. Pairakas appear as beautiful, blue-skinned humanoids spotted with large rashes and boils, but they rarely take on their true forms. Instead, they adopt shapes that attract just enough attention for them to worm their way into the confidences of those they wish to torment and corrupt.</p>",
+            "allSavesBonus": "+1 status to all saves vs. magic"
         },
         "Poisoned Lock (Lionlodge)": {
-            "name": "Poisoned Lock (Lionlodge)"
+            "name": "Poisoned Lock (Lionlodge)",
+            "descriptionHazard": "<p>A spring-loaded, poisoned needle is hidden near the drawer's keyhole. Disabling or breaking the trap does not disable or break the lock.</p>",
+            "disable": "<p>@Check[type:thievery|dc:23|name:Disable Thievery] (expert) on the spring mechanism.</p>",
+            "stealth": "<p>(expert)</p>"
         },
         "Precarious Pile": {
-            "name": "Precarious Pile"
+            "name": "Precarious Pile",
+            "descriptionHazard": "<p>This dangerously unsteady pile of miscellaneous goods stands 7 feet high and 10 feet wide</span></p>",
+            "disable": "<p>@Check[type:thievery|dc:15|name:Excavate Safe Path|traits:action:disable-a-device] to carefully excavate a path through the wall without upsetting its balance</p>\n<p>@Check[type:athletics|dc:17|name:Hold Up Unstable Portions] to hold up any unstable portions</p>"
         },
         "Princess Sunset": {
-            "name": "Princess Sunset"
+            "name": "Princess Sunset",
+            "acDetails": "AC 13 when broken"
         },
         "Scented Candle Homunculus": {
-            "name": "Scented Candle Homunculus"
+            "name": "Scented Candle Homunculus",
+            "blurb": "Variant homunculus"
         },
         "Simulacrum": {
             "name": "Simulacrum"
@@ -83,7 +119,27 @@
             "name": "Taxidermic Dog"
         },
         "Vilm": {
-            "name": "Vilm"
+            "name": "Vilm",
+            "blurb": "Variant jinkin ripclaw"
         }
+    },
+    "mapping": {
+        "publicNotes": "system.details.publicNotes",
+        "privateNotes": "system.details.privateNotes",
+        "acDetails": "system.attributes.ac.details",
+        "blurb": "system.details.blurb",
+        "hpDetails": "system.attributes.hp.details",
+        "allSavesBonus": "system.attributes.allSaves.value",
+        "speedsDetails": "system.attributes.speed.details",
+        "sensesDetails": "system.perception.details",
+        "items": {
+            "converter": "translateActorItems",
+            "path": "items"
+        },
+        "descriptionHazard": "system.details.description",
+        "disable": "system.details.disable",
+        "reset": "system.details.reset",
+        "routine": "system.details.routine",
+        "stealth": "system.attributes.stealth.details"
     }
 }
