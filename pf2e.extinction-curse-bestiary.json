@@ -65,8 +65,8 @@
         "Bogeyman": {
             "name": "Bogeyman",
             "publicNotes": "<p>These nocturnal stalkers tail their chosen quarry for days, even weeks at a time, ominously showing up in back alleys, shadowy street corners, and even in victims' own homes before going in for the kill. For unfathomable reasons, a bogeyman may spare a victim's life and instead kidnap them, absconding to a far-off location before returning years later with a fresh bogey in tow.</p>\n<hr />\n<p>Bogeymen are stealers of innocence and devourers of souls. Few targets who survive an encounter with them remain unchanged. Different names are given to bogeymen according to their varying sizes and degrees of power, which typically advance as the monsters consume more souls.</p>",
-            "hpDetails": "fast healing 10",
-            "speedsDetails": "mobility"
+            "speedsDetails": "mobility",
+            "hpDetails": "fast healing 10"
         },
         "Bone Croupier": {
             "name": "Bone Croupier",
@@ -226,8 +226,8 @@
         "Dyzallin Shraen": {
             "name": "Dyzallin Shraen",
             "blurb": "Male drow mummy mage",
-            "hpDetails": "void healing",
-            "allSavesBonus": "+1 status to all saves vs. magical effects and vitality effects, +2 status to all saves vs. mental effects"
+            "allSavesBonus": "+1 status to all saves vs. magical effects and vitality effects, +2 status to all saves vs. mental effects",
+            "hpDetails": "void healing"
         },
         "Dyzallin's Golem": {
             "name": "Dyzallin's Golem",
@@ -366,8 +366,8 @@
             "name": "Iffdahsil",
             "publicNotes": "<p>The slithering horror known as Iffdahsil is an undead shoggoth that has haunted the vault of the Black Desert for millennia. Drow legends in particular tend to feature Iffdahsil, terrifying the elves from a young age.</p>",
             "acDetails": "all-around vision",
-            "hpDetails": "fast healing 30, void healing",
-            "allSavesBonus": "+1 status to all saves vs. magical effects"
+            "allSavesBonus": "+1 status to all saves vs. magical effects",
+            "hpDetails": "fast healing 30, void healing"
         },
         "Imperious Darkside Mirror": {
             "name": "Imperious Darkside Mirror",
@@ -593,8 +593,8 @@
         "Shraen Graveknight": {
             "name": "Shraen Graveknight",
             "blurb": "Drow graveknight",
-            "hpDetails": "void healing, rejuvenation",
-            "allSavesBonus": "+1 status bonus to all saves vs. magic effects, +2 status bonus to all saves vs. mental effects"
+            "allSavesBonus": "+1 status bonus to all saves vs. magic effects, +2 status bonus to all saves vs. mental effects",
+            "hpDetails": "void healing, rejuvenation"
         },
         "Skarja": {
             "name": "Skarja",
@@ -739,8 +739,8 @@
         "Vitalia": {
             "name": "Vitalia",
             "publicNotes": "<p>Foul occult magic, rare alchemical reagents, and copious amounts of spilled blood are the keys to creating a vitalia-also known as a heart horror-though thankfully the exact means of their creation has been long forgotten.</p>\n<p>Now, most vitalias now come into being by sheer accident. This unusual life-form cannot live without regular contact with blood, much like how fish cannot live long outside of water. Because of this, vitalias are rarely found outside the lairs of mad alchemists or wizards, living in pools of the life-giving substance. Physically, a vitalia somewhat resembles a blood-red giant jellyfish, though it also bears some semblance to a giant human heart.</p>",
-            "hpDetails": "fast healing 20",
-            "sensesDetails": "bloodsense (precise) 30 feet"
+            "sensesDetails": "bloodsense (precise) 30 feet",
+            "hpDetails": "fast healing 20"
         },
         "War Sauropelta": {
             "name": "War Sauropelta"
@@ -828,6 +828,11 @@
         }
     },
     "mapping": {
+        "descriptionHazard": "system.details.description",
+        "disable": "system.details.disable",
+        "reset": "system.details.reset",
+        "routine": "system.details.routine",
+        "stealth": "system.attributes.stealth.details",
         "publicNotes": "system.details.publicNotes",
         "privateNotes": "system.details.privateNotes",
         "acDetails": "system.attributes.ac.details",
@@ -835,15 +840,6 @@
         "hpDetails": "system.attributes.hp.details",
         "allSavesBonus": "system.attributes.allSaves.value",
         "speedsDetails": "system.attributes.speed.details",
-        "sensesDetails": "system.perception.details",
-        "items": {
-            "converter": "translateActorItems",
-            "path": "items"
-        },
-        "descriptionHazard": "system.details.description",
-        "disable": "system.details.disable",
-        "reset": "system.details.reset",
-        "routine": "system.details.routine",
-        "stealth": "system.attributes.stealth.details"
+        "sensesDetails": "system.perception.details"
     }
 }

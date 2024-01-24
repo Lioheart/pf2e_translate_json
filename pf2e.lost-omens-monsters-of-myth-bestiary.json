@@ -33,9 +33,9 @@
         "Fafnheir": {
             "name": "Fafnheir",
             "publicNotes": "<p>Fafnheir is the fabled Father of Linnorms. He's larger than all other linnorms on Golarion, with a length of 60 feet and a weight upwards of 10 tons. Fafnheir is a clever and powerful creature, worthy of the fear of all people in the Lands of the Linnorm Kings.</p>",
-            "hpDetails": "regeneration 20 (deactivated by cold iron)",
             "allSavesBonus": "+1 status to all saves vs. magic",
-            "speedsDetails": "freedom of movement"
+            "speedsDetails": "freedom of movement",
+            "hpDetails": "regeneration 20 (deactivated by cold iron)"
         },
         "Grisantian Lion": {
             "name": "Grisantian Lion"
@@ -132,8 +132,8 @@
         },
         "Spectral Devil": {
             "name": "Spectral Devil",
-            "hpDetails": "void healing",
-            "allSavesBonus": "+1 status to all saves vs. magic"
+            "allSavesBonus": "+1 status to all saves vs. magic",
+            "hpDetails": "void healing"
         },
         "Spring-Heeled Jack": {
             "name": "Spring-Heeled Jack",
@@ -189,8 +189,8 @@
         "Tehialai-Thief-of-Ships": {
             "name": "Tehialai-Thief-of-Ships",
             "publicNotes": "<p>Though her current form is but a small and pale shell of her former glory, Tehialai is a legend even in her waning days. The titanic crustacean wears the hulls of ruined ships as her shell, ripped into shape by vessel-rending claws, as nothing else in Golarion's oceans is large enough to shield her body-or perhaps nothing else will satisfy her. Few ships can withstand her might, and fewer still are prepared for her appearance. Those who don't know of the thief of ships won't know to watch for her coming, and those who do know Tehialai offer her tribute to ward off her predation.</p>",
-            "hpDetails": "Hardness 10 (Ship Armor)",
-            "allSavesBonus": "+2 status to all saves vs. water"
+            "allSavesBonus": "+2 status to all saves vs. water",
+            "hpDetails": "Hardness 10 (Ship Armor)"
         },
         "Temteki": {
             "name": "Temteki",
@@ -199,8 +199,8 @@
         },
         "Ulgrem-Axaan": {
             "name": "Ulgrem-Axaan",
-            "hpDetails": "void healing",
-            "allSavesBonus": "+2 status to all non-primal emotion effects"
+            "allSavesBonus": "+2 status to all non-primal emotion effects",
+            "hpDetails": "void healing"
         },
         "Ulgrem-Lurann": {
             "name": "Ulgrem-Lurann"
@@ -213,11 +213,16 @@
         "Young Linnorm": {
             "name": "Young Linnorm",
             "publicNotes": "<p>Female linnorms lay eggs in the wilderness, where linnorms are known to hunt. A linnorm egg remains viable for many years, protected by a tough, leathery skin easily mistaken for stone. When a male linnorm eventually stumbles across the egg, he fertilizes it and takes it to a secure and remote location, leaving it alone to eventually hatch. Newborn linnorms remain hidden in their nests for several months as they mature, growing large enough to hunt on their own and setting out into the world. These linnorms are roughly the equivalent of older teenagers when compared to other species. Younger linnorms, while still primal creatures with a strong tie to the First World, haven't yet manifested most of their magical powers. They still can't breathe deadly fire or lightning or see invisible creatures, and, most importantly, they can be slain without prompting the linnorm's legendary death curse. They do, however, have voracious appetites, consuming any living thing to fuel their rapid growth. A linnorm is most vulnerable during this time; scouts who find tracks of a young linnorm quickly muster a hunting party of stalwart and experienced warriors to track the creature down and kill it quickly-before they draw the attention of the linnorm's father.</p>",
-            "hpDetails": "regeneration 5 (deactivated by cold iron)",
-            "allSavesBonus": "+1 status to all saves vs. magic"
+            "allSavesBonus": "+1 status to all saves vs. magic",
+            "hpDetails": "regeneration 5 (deactivated by cold iron)"
         }
     },
     "mapping": {
+        "descriptionHazard": "system.details.description",
+        "disable": "system.details.disable",
+        "reset": "system.details.reset",
+        "routine": "system.details.routine",
+        "stealth": "system.attributes.stealth.details",
         "publicNotes": "system.details.publicNotes",
         "privateNotes": "system.details.privateNotes",
         "acDetails": "system.attributes.ac.details",
@@ -225,15 +230,6 @@
         "hpDetails": "system.attributes.hp.details",
         "allSavesBonus": "system.attributes.allSaves.value",
         "speedsDetails": "system.attributes.speed.details",
-        "sensesDetails": "system.perception.details",
-        "items": {
-            "converter": "translateActorItems",
-            "path": "items"
-        },
-        "descriptionHazard": "system.details.description",
-        "disable": "system.details.disable",
-        "reset": "system.details.reset",
-        "routine": "system.details.routine",
-        "stealth": "system.attributes.stealth.details"
+        "sensesDetails": "system.perception.details"
     }
 }
