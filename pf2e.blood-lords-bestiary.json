@@ -487,11 +487,11 @@
                 },
                 "action->Harness Wellspring": {
                     "name": "Harness Wellspring",
-                    "description": "<p>Basiri draws upon the necromantic wellspring to power her spellcasting. During her turn, she gains the ability to cast one of the following spells, heightened to 9th rank: <em>@UUID[Compendium.pf2e.spells-srd.Item.PHVHBbdHeQRfjLmE]{Spirit Blast}</em> or <em>@UUID[Compendium.pf2e.spells-srd.Item.Ht35SDf9PDStJfoC]{Spirit Song}</em>.</p>"
+                    "description": "<p>Basiri draws upon the necromantic wellspring to power her spellcasting. During her turn, she gains the ability to cast one of the following spells, heightened to 9th rank: @UUID[Compendium.pf2e.spells-srd.Item.PHVHBbdHeQRfjLmE]{Spirit Blast} or @UUID[Compendium.pf2e.spells-srd.Item.Ht35SDf9PDStJfoC]{Spirit Song}.</p>"
                 },
                 "action->Wellspring Guardian": {
                     "name": "Wellspring Guardian",
-                    "description": "<p>Once per day, Basiri can protect the necromantic wellspring by inscribing a magical sigil around the wellspring orrery. The first time a creature other than Basiri touches the orrery, that creature must succeed at a @Check[type:will|dc:41|traits:occult,spell,force,necromancy] save or be affected by <em>@UUID[Compendium.pf2e.spells-srd.Item.PHVHBbdHeQRfjLmE]{Spirit Blast}</em> (9th).</p>"
+                    "description": "<p>Once per day, Basiri can protect the necromantic wellspring by inscribing a magical sigil around the wellspring orrery. The first time a creature other than Basiri touches the orrery, that creature must succeed at a @Check[type:will|dc:41|traits:occult,spell,force,necromancy] save or be affected by @UUID[Compendium.pf2e.spells-srd.Item.PHVHBbdHeQRfjLmE]{Spirit Blast} (9th).</p>"
                 },
                 "lore->Bardic Lore": {
                     "name": "Bardic Lore"
@@ -685,13 +685,13 @@
         "Button Mash": {
             "name": "Button Mash",
             "descriptionHazard": "<p>The room floods with harmful effects by pressing a magic sigil on a console. Each sigil causes different results. There are six sigils on the console.</p>",
-            "disable": "<p>@Check[type:arcana|dc:40] (master) to disenchant each sigil (can be done from either side of the reception desk), @Check[type:thievery|dc:43] (master) twice to disable the console (can only be done while behind the reception desk), or <em>@UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic}</em> (8th level; counteract DC 40) to counteract each sigil; prevent Noph from pressing the buttons by gaining access to the reception desk or other methods</p>",
+            "disable": "<p>@Check[type:arcana|dc:40] (master) to disenchant each sigil (can be done from either side of the reception desk), @Check[type:thievery|dc:43] (master) twice to disable the console (can only be done while behind the reception desk), or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (8th level; counteract DC 40) to counteract each sigil; prevent Noph from pressing the buttons by gaining access to the reception desk or other methods</p>",
             "routine": "<p>(2 actions) Noph frantically pecks and stomps on the console, using each action to press a random sigil. Roll [[/r 1d6 #Pressed Sigil]] to determine which sigil Noph presses. Psychopomps are immune to the effects of these sigils.</p>\n<p><strong>1</strong> The area is flooded with holy light, dealing [[/r (3d12+19)[vitality]] damage to each creature in the area (@Check[type:reflex|dc:43|basic:true]).</p>\n<p><strong>2</strong> The area is flooded with unholy darkness, dealing @Damage[(3d12+19)[void]] damage to each creature in the area (@Check[type:reflex|dc:43|basic:true]).</p>\n<p><strong>3</strong> The area is flooded with blue flames, dealing @Damage[(3d10+19)[fire]] damage to each creature in the area (@Check[type:reflex|dc:43|basic:true]). On a critical failure, a creature additionally takes @Damage[1d10[persistent,fire]] damage.</p>\n<p><strong>4</strong> A comet streaks through the area, attacking the nearest creature to Noph with a comet Strike.</p>\n<p><strong>5</strong> Force tethers sprout from the floor, grasping at intruders. Each creature in the area is @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Immobilized} for 1 round unless they succeed at a @Check[type:fortitude|dc:43] save.</p>\n<p><strong>6</strong> Ghostly blue mist surrounds each psychopomp in the area, healing them @Damage[(3d8+19)[healing]]]{3d8+19} HP and granting them @UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{Concealement} for 1 round.</p>",
             "stealth": "<p>(master)</p>",
             "items": {
                 "action->Lockdown": {
                     "name": "Lockdown",
-                    "description": "<p><strong>Trigger</strong> Noph or another creature arms the trap by pressing a sigil on the console</p>\n<hr />\n<p><strong>Effect</strong> A barrier of force forms from floor to ceiling surrounding the reception desk. The DC to counteract this barrier with <em>@UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic}</em> is 43. The trap then rolls initiative.</p>"
+                    "description": "<p><strong>Trigger</strong> Noph or another creature arms the trap by pressing a sigil on the console</p>\n<hr />\n<p><strong>Effect</strong> A barrier of force forms from floor to ceiling surrounding the reception desk. The DC to counteract this barrier with @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} is 43. The trap then rolls initiative.</p>"
                 },
                 "strike-ranged->Comet": {
                     "name": "Comet"
@@ -701,7 +701,7 @@
         "Castigate the Faithless": {
             "name": "Castigate the Faithless",
             "descriptionHazard": "<p>Magic forces those who pass by the statue to the ground with sudden force; pressing the bypass button deactivates the trap for 1 minute.</p>",
-            "disable": "<p>@Check[type:religion|dc:47] (legendary) to deactivate the trap through prayer, <em>@UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic}</em> (8th level; counteract DC 47) to counteract the trap, or press the bypass button</p>",
+            "disable": "<p>@Check[type:religion|dc:47] (legendary) to deactivate the trap through prayer, @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (8th level; counteract DC 47) to counteract the trap, or press the bypass button</p>",
             "reset": "<p>The trap resets automatically if triggered, after 1 minute if the bypass button is pressed, or after 15 minutes if disabled or counteracted.</p>",
             "stealth": "<p>(master) or @Check[type:perception|dc:50] (legendary) to notice the bypass button hidden in Urgathoa's skeletal feet</p>",
             "items": {
@@ -773,7 +773,7 @@
         "Choking Tethers": {
             "name": "Choking Tethers",
             "descriptionHazard": "<p>Three shadow tethers form when a creature reaches the hall's midpoint; each lashes, grabs, and crushes creatures in the hall.</p>",
-            "disable": "<p>@Check[type:thievery|dc:48] (legendary) to disable each tether or <em>@UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic}</em> (10th level, counteract DC 48) to counteract each tether</p>",
+            "disable": "<p>@Check[type:thievery|dc:48] (legendary) to disable each tether or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (10th level, counteract DC 48) to counteract each tether</p>",
             "routine": "<p>(six actions) This trap loses 2 actions each turn for each disabled shadow tether. Each shadow tether has 2 actions it can use to either Strike a creature or Constrict a @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed} creature, in any combination.</p>",
             "stealth": "<p>(legendary)</p>",
             "items": {
@@ -918,7 +918,7 @@
                 },
                 "action->Stick Support": {
                     "name": "Stick Support",
-                    "description": "<p>If a creeping crone is deprived of her walking stick, her Speed is reduced to 5 feet (though she can use some other Speed she gains, such as from her <em>@UUID[Compendium.pf2e.spells-srd.Item.A2JfEKe6BZcTG1S8]{Fly}</em> spell) until she recovers her walking stick or fashions another.</p>"
+                    "description": "<p>If a creeping crone is deprived of her walking stick, her Speed is reduced to 5 feet (though she can use some other Speed she gains, such as from her @UUID[Compendium.pf2e.spells-srd.Item.A2JfEKe6BZcTG1S8]{Fly} spell) until she recovers her walking stick or fashions another.</p>"
                 },
                 "action->Void Healing": {
                     "name": "Void Healing"
@@ -965,12 +965,12 @@
         "Crush the Uninvited": {
             "name": "Crush the Uninvited",
             "descriptionHazard": "<p>A warning carved into the door frame magically crushes any who pass through the doorway without Kemnebi's permission.</p>",
-            "disable": "<p>@Check[type:thievery|dc:48] (legendary) to scratch out the warning or <em>@UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic}</em> (10th level; counteract DC 48) to counteract the magic in the warning</p>",
+            "disable": "<p>@Check[type:thievery|dc:48] (legendary) to scratch out the warning or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (10th level; counteract DC 48) to counteract the magic in the warning</p>",
             "stealth": "<p>(legendary); @Check[type:perception|dc:20] to notice the warning carved in the door frame</p>",
             "items": {
                 "action->Implosion": {
                     "name": "Implosion",
-                    "description": "<p><strong>Trigger</strong> A creature passes through the doorway without Kemnebi's permission</p>\n<hr />\n<p><strong>Effect</strong> The trap casts implosion on the triggering creature. This is a 10th-rank <em>@UUID[Compendium.pf2e.spells-srd.Item.4WS7HrFjwNvTn8T2]{Implosion}</em> spell that deals [[/r 85 #Implosion Damage]]{85} damage (@Check[type:fortitude|dc:47|basic:true]).</p>"
+                    "description": "<p><strong>Trigger</strong> A creature passes through the doorway without Kemnebi's permission</p>\n<hr />\n<p><strong>Effect</strong> The trap casts implosion on the triggering creature. This is a 10th-rank @UUID[Compendium.pf2e.spells-srd.Item.4WS7HrFjwNvTn8T2]{Implosion} spell that deals [[/r 85 #Implosion Damage]]{85} damage (@Check[type:fortitude|dc:47|basic:true]).</p>"
                 }
             }
         },
@@ -1052,7 +1052,7 @@
                 },
                 "action->Coven": {
                     "name": "Coven",
-                    "description": "<p>A rust hag adds <em>@UUID[Compendium.pf2e.spells-srd.Item.B3eLlbaPxOYHcs1o]{Curse Of Lost Time}</em>, <em>@UUID[Compendium.pf2e.spells-srd.Item.0fYE64odlKqISzft]{Rusting Grasp}</em>, and <em>@UUID[Compendium.pf2e.spells-srd.Item.lKcsmeOrgHtK4xQa]{Summon Construct}</em> to her coven's spells.</p>"
+                    "description": "<p>A rust hag adds @UUID[Compendium.pf2e.spells-srd.Item.B3eLlbaPxOYHcs1o]{Curse Of Lost Time}, @UUID[Compendium.pf2e.spells-srd.Item.0fYE64odlKqISzft]{Rusting Grasp}, and @UUID[Compendium.pf2e.spells-srd.Item.lKcsmeOrgHtK4xQa]{Summon Construct} to her coven's spells.</p>"
                 },
                 "action->+1 Status to All Saves vs. Magic": {
                     "name": "+1 Status to All Saves vs. Magic"
@@ -1083,7 +1083,7 @@
             "items": {
                 "action->Broken Gems": {
                     "name": "Broken Gems",
-                    "description": "<p><strong>Trigger</strong> A living creature approaches within 10 feet of the skull</p>\n<hr />\n<p><strong>Effect</strong> The spirits haunting the skull activate one of the skull's ruined gemstones, casting one of the following four spells determined randomly:</p>\n<ul>\n<li><em>@UUID[Compendium.pf2e.spells-srd.Item.OdqM06M0wDUqZWiR]{Cast into Time}</em>, @Check[type:fortitude|dc:26|traits:divination]</li>\n<li><em>@UUID[Compendium.pf2e.spells-srd.Item.TDNlDWbYb58Y55Da]{Chain Lightning}</em>, @Check[type:reflex|dc:26|traits:electricity,evocation|basic:true] (@Damage[8d12[electricity]] damage)</li>\n<li><em>@UUID[Compendium.pf2e.spells-srd.Item.sxQZ6yqTn0czJxVd]{Fireball}</em> (6th), @Check[type:reflex|dc:26|traits:fire,evocation|basic:true] (@Damage[12d6[fire]] damage)</li>\n<li><em>@UUID[Compendium.pf2e.spells-srd.Item.8Umt1AzYfFbC4fui]{Spellwrack}</em>, @Check[type:will|dc:26|traits:abjuration,curse,force] (@Damage[2d12[persistent,force]] or [[/r (2*2d12)[persistent,force]]] damage)</li>\n</ul>\n<p>The saving throw DC for any spell is 26.</p>"
+                    "description": "<p><strong>Trigger</strong> A living creature approaches within 10 feet of the skull</p>\n<hr />\n<p><strong>Effect</strong> The spirits haunting the skull activate one of the skull's ruined gemstones, casting one of the following four spells determined randomly:</p>\n<ul>\n<li>@UUID[Compendium.pf2e.spells-srd.Item.OdqM06M0wDUqZWiR]{Cast into Time}, @Check[type:fortitude|dc:26|traits:divination]</li>\n<li>@UUID[Compendium.pf2e.spells-srd.Item.TDNlDWbYb58Y55Da]{Chain Lightning}, @Check[type:reflex|dc:26|traits:electricity,evocation|basic:true] (@Damage[8d12[electricity]] damage)</li>\n<li>@UUID[Compendium.pf2e.spells-srd.Item.sxQZ6yqTn0czJxVd]{Fireball} (6th), @Check[type:reflex|dc:26|traits:fire,evocation|basic:true] (@Damage[12d6[fire]] damage)</li>\n<li>@UUID[Compendium.pf2e.spells-srd.Item.8Umt1AzYfFbC4fui]{Spellwrack}, @Check[type:will|dc:26|traits:abjuration,curse,force] (@Damage[2d12[persistent,force]] or [[/r (2*2d12)[persistent,force]]] damage)</li>\n</ul>\n<p>The saving throw DC for any spell is 26.</p>"
                 }
             }
         },
@@ -1154,7 +1154,7 @@
                 },
                 "action->Rancid Bloat": {
                     "name": "Rancid Bloat",
-                    "description": "<p>This disease and damage from it can't be healed unless this curse is removed. A creature killed by rancid bloat rots away to waterlogged pieces of flesh and can't be resurrected except by an 8th-rank <em>@UUID[Compendium.pf2e.spells-srd.Item.kqhPt9344UkcGVYO]{Resurrect}</em> ritual or similar magic.</p>\n<p><strong>Saving Throw</strong> @Check[type:fortitude|dc:38]</p>\n<p><strong>Stage 1</strong> carrier with no ill effect (1 minute)</p>\n<p><strong>Stage 2</strong> @Damage[12d6[void]] damage, @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 2}, and @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 2} (1 day)</p>\n<p><strong>Stage 3</strong> @Damage[16d6[void]] damage, @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 4}, and @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 4} (1 day)</p>"
+                    "description": "<p>This disease and damage from it can't be healed unless this curse is removed. A creature killed by rancid bloat rots away to waterlogged pieces of flesh and can't be resurrected except by an 8th-rank @UUID[Compendium.pf2e.spells-srd.Item.kqhPt9344UkcGVYO]{Resurrect} ritual or similar magic.</p>\n<p><strong>Saving Throw</strong> @Check[type:fortitude|dc:38]</p>\n<p><strong>Stage 1</strong> carrier with no ill effect (1 minute)</p>\n<p><strong>Stage 2</strong> @Damage[12d6[void]] damage, @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 2}, and @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 2} (1 day)</p>\n<p><strong>Stage 3</strong> @Damage[16d6[void]] damage, @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 4}, and @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 4} (1 day)</p>"
                 },
                 "action->Whirlpool": {
                     "name": "Whirlpool",
@@ -1244,7 +1244,7 @@
         "Electrified Gate": {
             "name": "Electrified Gate",
             "descriptionHazard": "<p>A warded metal gate electrocutes anyone who touches the gate without pressing the bypass button.</p>",
-            "disable": "<p>@Check[type:thievery|dc:47] (legendary) to destroy the ward, <em>@UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic}</em> (8th level; counteract DC 47) to counteract the ward, or press the bypass button</p>",
+            "disable": "<p>@Check[type:thievery|dc:47] (legendary) to destroy the ward, @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (8th level; counteract DC 47) to counteract the ward, or press the bypass button</p>",
             "reset": "<p>The trap resets automatically if triggered, after 1 minute if the bypass button is pressed, or after 15 minutes if disabled or counteracted.</p>",
             "stealth": "<p>(master) or @Check[type:perception|dc:50|traits:secret] (legendary) to notice the bypass button hidden in a skull's eye socket</p>",
             "items": {
@@ -1362,7 +1362,7 @@
                 },
                 "equipment->Aeon Stone (Pale Lavender Ellipsoid)": {
                     "name": "Aeon Stone (Pale Lavender Ellipsoid)",
-                    "description": "<p>This aeon stone must be activated to provide a benefit. The resonant power allows you to cast the <em>@UUID[Compendium.pf2e.spells-srd.Item.OhD2Z6rIGGD5ocZA]{Read Aura}</em> cantrip as an arcane innate spell.</p>\n<hr />\n<p><strong>Activate</strong> <span class=\"action-glyph\">R</span> envision</p>\n<p><strong>Frequency</strong> once per day</p>\n<p><strong>Trigger</strong> A spell targets you</p>\n<hr />\n<p><strong>Effect</strong> The stone casts a 6th-rank <em>@UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic}</em> spell in an attempt to counteract the triggering spell, with a counteract modifier of [[/r 1d20+22]]. This can be used only on spells that specifically target you-not area spells that don't have targets. If it succeeds, it counteracts the spell for all targets if other creatures were targeted in addition to you.</p>\n<p>Each time you activate this <em>aeon stone</em>, attempt a @Check[type:flat|dc:5]. On a failure, the stone permanently turns into a <em>dull gray aeon stone</em>.</p>"
+                    "description": "<p>This aeon stone must be activated to provide a benefit. The resonant power allows you to cast the @UUID[Compendium.pf2e.spells-srd.Item.OhD2Z6rIGGD5ocZA]{Read Aura} cantrip as an arcane innate spell.</p>\n<hr />\n<p><strong>Activate</strong> <span class=\"action-glyph\">R</span> envision</p>\n<p><strong>Frequency</strong> once per day</p>\n<p><strong>Trigger</strong> A spell targets you</p>\n<hr />\n<p><strong>Effect</strong> The stone casts a 6th-rank @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} spell in an attempt to counteract the triggering spell, with a counteract modifier of [[/r 1d20+22]]. This can be used only on spells that specifically target you-not area spells that don't have targets. If it succeeds, it counteracts the spell for all targets if other creatures were targeted in addition to you.</p>\n<p>Each time you activate this <em>aeon stone</em>, attempt a @Check[type:flat|dc:5]. On a failure, the stone permanently turns into a <em>dull gray aeon stone</em>.</p>"
                 },
                 "strike-melee->Halberd": {
                     "name": "Halberd"
@@ -1633,7 +1633,7 @@
                 },
                 "action->Tenebral Form": {
                     "name": "Tenebral Form",
-                    "description": "<p>Ghiono can Fly at full Speed in <em>@UUID[Compendium.pf2e.spells-srd.Item.V8wXOsoejQhe6CyG]{Vapor Form}</em>.</p>"
+                    "description": "<p>Ghiono can Fly at full Speed in @UUID[Compendium.pf2e.spells-srd.Item.V8wXOsoejQhe6CyG]{Vapor Form}.</p>"
                 },
                 "lore->Shadow Plane Lore": {
                     "name": "Shadow Plane Lore"
@@ -1685,7 +1685,6 @@
             "name": "Ghoul Antipaladin",
             "publicNotes": "<p>The church of Kabriri selects only the most devoted and deadly ghouls to protect their libraries of secret-filled tomes.</p>",
             "acDetails": "31 with shield raised",
-            "sensesDetails": "darkvison",
             "hpDetails": "void healing",
             "items": {
                 "spellcastingEntry->Divine Focus Spells": {
@@ -1888,24 +1887,24 @@
         "Glyph of Warding (B8)": {
             "name": "Glyph of Warding (B8)",
             "descriptionHazard": "<p>A magical glyph flashes before triggering a spell.</p>",
-            "disable": "<p>@Check[type:thievery|dc:33] (trained) to disable the glyph, or <em>@UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic}</em> (7th level, counteract DC 33) to counteract the glyph</p>",
+            "disable": "<p>@Check[type:thievery|dc:33] (trained) to disable the glyph, or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (7th level, counteract DC 33) to counteract the glyph</p>",
             "stealth": "<p>(trained)</p>",
             "items": {
                 "action->Discharge Glyph": {
                     "name": "Discharge Glyph",
-                    "description": "<p><strong>Trigger</strong> A creature opens the door between area <strong>B8</strong> and <strong>B7</strong></p>\n<hr />\n<p><strong>Effect</strong> A <em>@UUID[Compendium.pf2e.spells-srd.Item.wzLkNU3AAqOSKFPR]{Noise Blast}</em>, heightened to 6th level (@Check[type:fortitude|dc:33|traits:damaging-effect,spell,sonic,evocation], @Damage[6d10[sonic]] damage), is centered on the creature opening the door. The sound alerts all creatures in the tower.</p>"
+                    "description": "<p><strong>Trigger</strong> A creature opens the door between area <strong>B8</strong> and <strong>B7</strong></p>\n<hr />\n<p><strong>Effect</strong> A @UUID[Compendium.pf2e.spells-srd.Item.wzLkNU3AAqOSKFPR]{Noise Blast}, heightened to 6th level (@Check[type:fortitude|dc:33|traits:damaging-effect,spell,sonic,evocation], @Damage[6d10[sonic]] damage), is centered on the creature opening the door. The sound alerts all creatures in the tower.</p>"
                 }
             }
         },
         "Glyph of Warding (D5)": {
             "name": "Glyph of Warding (D5)",
             "descriptionHazard": "<p>A magical glyph flashes before triggering a spell.</p>",
-            "disable": "<p>@Check[type:thievery|dc:34] (trained) to disable the glyph, or <em>@UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic}</em> (7th level, counteract DC 34) to counteract the glyph</p>",
+            "disable": "<p>@Check[type:thievery|dc:34] (trained) to disable the glyph, or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (7th level, counteract DC 34) to counteract the glyph</p>",
             "stealth": "<p>(trained)</p>",
             "items": {
                 "action->Discharge Glyph": {
                     "name": "Discharge Glyph",
-                    "description": "<p><strong>Trigger</strong> A creature opens the door to area <strong>D6</strong></p>\n<hr />\n<p><strong>Effect</strong> The creature is targeted by a <em>@UUID[Compendium.pf2e.spells-srd.Item.PHVHBbdHeQRfjLmE]{Spirit Blast}</em> spell (@Check[type:fortitude|dc:34|basic:true|traits:force,necromancy,spell], @Damage[16d6[force]] damage).</p>"
+                    "description": "<p><strong>Trigger</strong> A creature opens the door to area <strong>D6</strong></p>\n<hr />\n<p><strong>Effect</strong> The creature is targeted by a @UUID[Compendium.pf2e.spells-srd.Item.PHVHBbdHeQRfjLmE]{Spirit Blast} spell (@Check[type:fortitude|dc:34|basic:true|traits:force,necromancy,spell], @Damage[16d6[force]] damage).</p>"
                 }
             }
         },
@@ -1945,7 +1944,7 @@
                 },
                 "action->Rhino Charge": {
                     "name": "Rhino Charge",
-                    "description": "<p>Grace Strides twice; if she ends her movement within melee reach of at least one enemy, she can make a melee Strike against that enemy. Grace can Fly instead of Stride if she has a fly speed (such as with <em>@UUID[Compendium.pf2e.spells-srd.Item.kRsmUlSWhi6PJvZ7]{Angelic Wings}</em>).</p>"
+                    "description": "<p>Grace Strides twice; if she ends her movement within melee reach of at least one enemy, she can make a melee Strike against that enemy. Grace can Fly instead of Stride if she has a fly speed (such as with @UUID[Compendium.pf2e.spells-srd.Item.kRsmUlSWhi6PJvZ7]{Angelic Wings}).</p>"
                 },
                 "lore->Warfare Lore": {
                     "name": "Warfare Lore"
@@ -2059,7 +2058,7 @@
                 },
                 "action->Coven": {
                     "name": "Coven",
-                    "description": "<p>A grave hag adds <em>@UUID[Compendium.pf2e.spells-srd.Item.wdA52JJnsuQWeyqz]{Harm}</em>, <em>@UUID[Compendium.pf2e.spells-srd.Item.xlRv8vCTHh1NeMpw]{Mimic Undead}</em>, and the <em>@UUID[Compendium.pf2e.spells-srd.Item.gsYEuWv04XTDxe91]{Call Spirit}</em> ritual to her coven's spells.</p>"
+                    "description": "<p>A grave hag adds @UUID[Compendium.pf2e.spells-srd.Item.wdA52JJnsuQWeyqz]{Harm}, @UUID[Compendium.pf2e.spells-srd.Item.xlRv8vCTHh1NeMpw]{Mimic Undead}, and the @UUID[Compendium.pf2e.spells-srd.Item.gsYEuWv04XTDxe91]{Call Spirit} ritual to her coven's spells.</p>"
                 },
                 "action->At-Will Spells": {
                     "name": "At-Will Spells"
@@ -2215,7 +2214,7 @@
                 },
                 "action->Dominate": {
                     "name": "Dominate",
-                    "description": "<p>The vampire can cast <em>@UUID[Compendium.pf2e.spells-srd.Item.OsOhx3TGIZ7AhD0P]{Dominate}</em> at will as a divine innate spell. Casting it requires staring into the target's eyes, giving the spell the visual trait. The save DC uses the DC of the vampire's level, and a creature that succeeds is temporarily immune to that vampire's Dominate for 24 hours.</p>\n<p>Fully destroying the vampire ends the domination, but merely reducing the vampire to 0 HP is insufficient to break the spell.</p>"
+                    "description": "<p>The vampire can cast @UUID[Compendium.pf2e.spells-srd.Item.OsOhx3TGIZ7AhD0P]{Dominate} at will as a divine innate spell. Casting it requires staring into the target's eyes, giving the spell the visual trait. The save DC uses the DC of the vampire's level, and a creature that succeeds is temporarily immune to that vampire's Dominate for 24 hours.</p>\n<p>Fully destroying the vampire ends the domination, but merely reducing the vampire to 0 HP is insufficient to break the spell.</p>"
                 },
                 "action->Drink Blood": {
                     "name": "Drink Blood",
@@ -2223,7 +2222,7 @@
                 },
                 "action->Turn to Mist": {
                     "name": "Turn to Mist",
-                    "description": "<p>The vampire turns into a cloud of vapor, as the <em>@UUID[Compendium.pf2e.spells-srd.Item.V8wXOsoejQhe6CyG]{Vapor Form}</em> spell, or back to its normal form. The vampire loses fast healing while in gaseous form.</p>\n<p>The vampire can remain in this form indefinitely.</p>"
+                    "description": "<p>The vampire turns into a cloud of vapor, as the @UUID[Compendium.pf2e.spells-srd.Item.V8wXOsoejQhe6CyG]{Vapor Form} spell, or back to its normal form. The vampire loses fast healing while in gaseous form.</p>\n<p>The vampire can remain in this form indefinitely.</p>"
                 },
                 "action->Grab": {
                     "name": "Grab"
@@ -2362,7 +2361,7 @@
                 },
                 "action->Change Shape": {
                     "name": "Change Shape",
-                    "description": "<p>The vampire transforms into one of its animal forms or back into its normal form. Most vampires can turn into a bat, but some can turn into a different creature, such as a rat or a wolf.</p>\n<p>Use the options in the <em>@UUID[Compendium.pf2e.spells-srd.Item.NzXpEzcZAjuDTZjK]{Aerial Form}</em> and <em>@UUID[Compendium.pf2e.spells-srd.Item.wp09USMB3GIW1qbp]{Animal Form}</em> spells as guidelines.</p>\n<ul>\n<li><strong>Bat</strong> The vampire changes into a @UUID[Compendium.pf2e.pathfinder-bestiary.Actor.VAWmwDA08ZLQd8lW]{Bat Swarm} or @UUID[Compendium.pf2e.pathfinder-bestiary.Actor.C9s5tBxVValC2HTE]{Giant Bat}. It gains echolocation 40 feet, a land Speed of 20 feet and a fly Speed of 30 feet, and a fangs Strike with a +28 attack modifier. These fangs deal 3d12+16 piercing damage.</li>\n</ul>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.ChangeShape]</p>"
+                    "description": "<p>The vampire transforms into one of its animal forms or back into its normal form. Most vampires can turn into a bat, but some can turn into a different creature, such as a rat or a wolf.</p>\n<p>Use the options in the @UUID[Compendium.pf2e.spells-srd.Item.NzXpEzcZAjuDTZjK]{Aerial Form} and @UUID[Compendium.pf2e.spells-srd.Item.wp09USMB3GIW1qbp]{Animal Form} spells as guidelines.</p>\n<ul>\n<li><strong>Bat</strong> The vampire changes into a @UUID[Compendium.pf2e.pathfinder-bestiary.Actor.VAWmwDA08ZLQd8lW]{Bat Swarm} or @UUID[Compendium.pf2e.pathfinder-bestiary.Actor.C9s5tBxVValC2HTE]{Giant Bat}. It gains echolocation 40 feet, a land Speed of 20 feet and a fly Speed of 30 feet, and a fangs Strike with a +28 attack modifier. These fangs deal 3d12+16 piercing damage.</li>\n</ul>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.ChangeShape]</p>"
                 },
                 "action->Create Spawn": {
                     "name": "Create Spawn",
@@ -2370,7 +2369,7 @@
                 },
                 "action->Dominate": {
                     "name": "Dominate",
-                    "description": "<p>The vampire can cast <em>@UUID[Compendium.pf2e.spells-srd.Item.OsOhx3TGIZ7AhD0P]{Dominate}</em> at will as a divine innate spell. Casting it requires staring into the target's eyes, giving the spell the visual trait. The save DC uses the DC of the vampire's level, and a creature that succeeds is temporarily immune to that vampire's Dominate for 24 hours.</p>\n<p>Fully destroying the vampire ends the domination, but merely reducing the vampire to 0 HP is insufficient to break the spell.</p>"
+                    "description": "<p>The vampire can cast @UUID[Compendium.pf2e.spells-srd.Item.OsOhx3TGIZ7AhD0P]{Dominate} at will as a divine innate spell. Casting it requires staring into the target's eyes, giving the spell the visual trait. The save DC uses the DC of the vampire's level, and a creature that succeeds is temporarily immune to that vampire's Dominate for 24 hours.</p>\n<p>Fully destroying the vampire ends the domination, but merely reducing the vampire to 0 HP is insufficient to break the spell.</p>"
                 },
                 "action->Drink Blood": {
                     "name": "Drink Blood",
@@ -2386,7 +2385,7 @@
                 },
                 "action->Turn to Mist": {
                     "name": "Turn to Mist",
-                    "description": "<p>The vampire turns into a cloud of vapor, as the <em>@UUID[Compendium.pf2e.spells-srd.Item.V8wXOsoejQhe6CyG]{Vapor Form}</em> spell, or back to its normal form. The vampire loses fast healing while in gaseous form.</p>\n<p>The vampire can remain in this form indefinitely.</p>"
+                    "description": "<p>The vampire turns into a cloud of vapor, as the @UUID[Compendium.pf2e.spells-srd.Item.V8wXOsoejQhe6CyG]{Vapor Form} spell, or back to its normal form. The vampire loses fast healing while in gaseous form.</p>\n<p>The vampire can remain in this form indefinitely.</p>"
                 },
                 "action->Witch Patron": {
                     "name": "Witch Patron",
@@ -2462,7 +2461,7 @@
                 },
                 "action->Coven": {
                     "name": "Coven",
-                    "description": "<p>Iron Taviah adds <em>@UUID[Compendium.pf2e.spells-srd.Item.gPvtmKMRpg9I9D7H]{Earthbind}</em>, <em>@UUID[Compendium.pf2e.spells-srd.Item.115Xp9E38CJENhNS]{Magic Passage}</em>, and <em>@UUID[Compendium.pf2e.spells-srd.Item.8Umt1AzYfFbC4fui]{Spellwrack}</em> to her coven's spells.</p>"
+                    "description": "<p>Iron Taviah adds @UUID[Compendium.pf2e.spells-srd.Item.gPvtmKMRpg9I9D7H]{Earthbind}, @UUID[Compendium.pf2e.spells-srd.Item.115Xp9E38CJENhNS]{Magic Passage}, and @UUID[Compendium.pf2e.spells-srd.Item.8Umt1AzYfFbC4fui]{Spellwrack} to her coven's spells.</p>"
                 },
                 "action->+1 Status to All Saves vs. Magic": {
                     "name": "+1 Status to All Saves vs. Magic"
@@ -2485,11 +2484,11 @@
                 },
                 "action->Ritual Specialist": {
                     "name": "Ritual Specialist",
-                    "description": "<p>Iron Taviah has a +2 circumstance bonus to the primary checks to perform a ritual. In addition, she can reduce the number of secondary casters for a ritual by 1. When she does, she must fulfill any requirements for the secondary caster, and she attempts the secondary check normally performed by that secondary caster. She can't replace a secondary caster who is the target of the spell (as in the <em>@UUID[Compendium.pf2e.spells-srd.Item.7Fd4lxozd11MQ55N]{Atone}</em> ritual).</p>"
+                    "description": "<p>Iron Taviah has a +2 circumstance bonus to the primary checks to perform a ritual. In addition, she can reduce the number of secondary casters for a ritual by 1. When she does, she must fulfill any requirements for the secondary caster, and she attempts the secondary check normally performed by that secondary caster. She can't replace a secondary caster who is the target of the spell (as in the @UUID[Compendium.pf2e.spells-srd.Item.7Fd4lxozd11MQ55N]{Atone} ritual).</p>"
                 },
                 "action->Scattered Coven": {
                     "name": "Scattered Coven",
-                    "description": "<p>When the characters meet Iron Taviah, the Graveclaw is at the height of its power. As a scattered coven, the Graveclaw grants Taviah the ability to cast the following spells as 3rd-rank occult spells, once per day each, without requiring help from her fellow coven members:<em>@UUID[Compendium.pf2e.spells-srd.Item.f8hRqLJaxBVhF1u0]{Acid Arrow}</em>, <em>@UUID[Compendium.pf2e.spells-srd.Item.B3eLlbaPxOYHcs1o]{Curse Of Lost Time}</em>, <em>@UUID[Compendium.pf2e.spells-srd.Item.gPvtmKMRpg9I9D7H]{Earthbind}</em>, <em>@UUID[Compendium.pf2e.spells-srd.Item.wdA52JJnsuQWeyqz]{Harm}</em>, <em>@UUID[Compendium.pf2e.spells-srd.Item.xlRv8vCTHh1NeMpw]{Mimic Undead}</em>, <em>@UUID[Compendium.pf2e.spells-srd.Item.lKcsmeOrgHtK4xQa]{Summon Construct}</em>, and <em>@UUID[Compendium.pf2e.spells-srd.Item.Seaah9amXg70RKw2]{Water Walk}</em>.</p>"
+                    "description": "<p>When the characters meet Iron Taviah, the Graveclaw is at the height of its power. As a scattered coven, the Graveclaw grants Taviah the ability to cast the following spells as 3rd-rank occult spells, once per day each, without requiring help from her fellow coven members:@UUID[Compendium.pf2e.spells-srd.Item.f8hRqLJaxBVhF1u0]{Acid Arrow}, @UUID[Compendium.pf2e.spells-srd.Item.B3eLlbaPxOYHcs1o]{Curse Of Lost Time}, @UUID[Compendium.pf2e.spells-srd.Item.gPvtmKMRpg9I9D7H]{Earthbind}, @UUID[Compendium.pf2e.spells-srd.Item.wdA52JJnsuQWeyqz]{Harm}, @UUID[Compendium.pf2e.spells-srd.Item.xlRv8vCTHh1NeMpw]{Mimic Undead}, @UUID[Compendium.pf2e.spells-srd.Item.lKcsmeOrgHtK4xQa]{Summon Construct}, and @UUID[Compendium.pf2e.spells-srd.Item.Seaah9amXg70RKw2]{Water Walk}.</p>"
                 },
                 "action->Grab": {
                     "name": "Grab"
@@ -2646,7 +2645,7 @@
                 },
                 "action->Control Comatose": {
                     "name": "Control Comatose",
-                    "description": "<p><strong>Frequency</strong> once per day</p>\n<hr />\n<p><strong>Effect</strong> The vetalarana manipulator spends 10 minutes to take psychic control of the creatures they've rendered comatose with Drain Thoughts. This has the effects of the <em>@UUID[Compendium.pf2e.spells-srd.Item.wU6hNzK8Yfqdmc8m]{Possession}</em> spell, but lasts for up to 6 hours, has a range of 1 mile, and the vetalarana can control a number of comatose victims at a time equal to half the vetalarana's level. A comatose victim can't resist this possession and automatically gets a critical failure on its saving throw against Control Comatose.</p>\n<p>As long as a comatose victim is controlled by a vetalarana manipulator in this way, the victim's stupefied and @UUID[Compendium.pf2e.conditionitems.Item.fBnFDH2MTzgFijKf]{Unconscious} conditions are temporarily suppressed.</p>"
+                    "description": "<p><strong>Frequency</strong> once per day</p>\n<hr />\n<p><strong>Effect</strong> The vetalarana manipulator spends 10 minutes to take psychic control of the creatures they've rendered comatose with Drain Thoughts. This has the effects of the @UUID[Compendium.pf2e.spells-srd.Item.wU6hNzK8Yfqdmc8m]{Possession} spell, but lasts for up to 6 hours, has a range of 1 mile, and the vetalarana can control a number of comatose victims at a time equal to half the vetalarana's level. A comatose victim can't resist this possession and automatically gets a critical failure on its saving throw against Control Comatose.</p>\n<p>As long as a comatose victim is controlled by a vetalarana manipulator in this way, the victim's stupefied and @UUID[Compendium.pf2e.conditionitems.Item.fBnFDH2MTzgFijKf]{Unconscious} conditions are temporarily suppressed.</p>"
                 },
                 "action->Deflect Attack": {
                     "name": "Deflect Attack",
@@ -2654,7 +2653,7 @@
                 },
                 "action->Drain Thoughts": {
                     "name": "Drain Thoughts",
-                    "description": "<p><strong>Requirements</strong> A @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed}, @UUID[Compendium.pf2e.conditionitems.Item.6uEgoh53GbXuHpTF]{Paralyzed}, @UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{Restrained}, @UUID[Compendium.pf2e.conditionitems.Item.fBnFDH2MTzgFijKf]{Unconscious}, or willing creature is within Kemnebi's reach</p>\n<hr />\n<p><strong>Effect</strong> Kemnebi seizes a creature and consumes its memories. This requires an @Check[type:athletics|defense:fortitude] check against the victim's Fortitude DC if the victim is grabbed and is automatic for any of the other conditions. The victim is @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 2} and Kemnebi regains [[/r 35[healing]]]{35 HP}, gaining any excess HP as temporary Hit Points. Draining Thoughts from a creature that's already stupefied doesn't restore any HP to Kemnebi but increases the victim's stupefied value by 2. Additionally, Kemnebi views one of the victim's memories and can choose to alter, enhance, or erase the memory he views as 4th- level <em>@UUID[Compendium.pf2e.spells-srd.Item.FhOaQDTSnsY7tiam]{Rewrite Memory}</em>.</p>\n<p>A victim's stupefied condition value decreases by 1 every week.</p>\n<p>A victim who becomes @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 5} in this way is rendered comatose, becoming permanently unconscious. As long as Kemnebi lives, a comatose victim can't regain consciousness, and its stupefied condition doesn't decrease.</p>"
+                    "description": "<p><strong>Requirements</strong> A @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed}, @UUID[Compendium.pf2e.conditionitems.Item.6uEgoh53GbXuHpTF]{Paralyzed}, @UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{Restrained}, @UUID[Compendium.pf2e.conditionitems.Item.fBnFDH2MTzgFijKf]{Unconscious}, or willing creature is within Kemnebi's reach</p>\n<hr />\n<p><strong>Effect</strong> Kemnebi seizes a creature and consumes its memories. This requires an @Check[type:athletics|defense:fortitude] check against the victim's Fortitude DC if the victim is grabbed and is automatic for any of the other conditions. The victim is @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 2} and Kemnebi regains [[/r 35[healing]]]{35 HP}, gaining any excess HP as temporary Hit Points. Draining Thoughts from a creature that's already stupefied doesn't restore any HP to Kemnebi but increases the victim's stupefied value by 2. Additionally, Kemnebi views one of the victim's memories and can choose to alter, enhance, or erase the memory he views as 4th- level @UUID[Compendium.pf2e.spells-srd.Item.FhOaQDTSnsY7tiam]{Rewrite Memory}.</p>\n<p>A victim's stupefied condition value decreases by 1 every week.</p>\n<p>A victim who becomes @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 5} in this way is rendered comatose, becoming permanently unconscious. As long as Kemnebi lives, a comatose victim can't regain consciousness, and its stupefied condition doesn't decrease.</p>"
                 },
                 "action->Flurry of Blows": {
                     "name": "Flurry of Blows",
@@ -2729,7 +2728,7 @@
                 },
                 "action->Cackling Coven": {
                     "name": "Cackling Coven",
-                    "description": "<p><strong>Trigger</strong> Kepgeda's turn begins</p>\n<p><strong>Requirements</strong> Kepgeda is within 30 feet of her keening cauldron</p>\n<hr />\n<p><strong>Effect</strong> Kepgeda draws on the souls of her dead sisters for a burst of occult power, for a price. Kepgeda takes @Damage[10[mental]] damage, then chooses one:</p>\n<ul>\n<li>Kepgeda Sustains a Spell. If her next action is to cast a witch hex, the DC of that hex increases by 1.</li>\n<li>Kepgeda reduces her @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied} condition value to 0.</li>\n<li>If Kepgeda begins casting a <em>@UUID[Compendium.pf2e.spells-srd.Item.c3b6LdLlQDPngNIb]{Create Undead}</em> ritual within the next minute, she attempts a @Check[type:flat|dc:18] when the ritual is complete; on a success, the undead she's created is 3 levels higher than the ritual would provide (for example, creating a @UUID[Compendium.pf2e.pathfinder-bestiary.Actor.Ix1PziAEk9IIMYBz]{Zombie Brute} instead of a @UUID[Compendium.pf2e.pathfinder-bestiary.Actor.0plBflWwrCWQO2RO]{Zombie Shambler}).</li>\n</ul>"
+                    "description": "<p><strong>Trigger</strong> Kepgeda's turn begins</p>\n<p><strong>Requirements</strong> Kepgeda is within 30 feet of her keening cauldron</p>\n<hr />\n<p><strong>Effect</strong> Kepgeda draws on the souls of her dead sisters for a burst of occult power, for a price. Kepgeda takes @Damage[10[mental]] damage, then chooses one:</p>\n<ul>\n<li>Kepgeda Sustains a Spell. If her next action is to cast a witch hex, the DC of that hex increases by 1.</li>\n<li>Kepgeda reduces her @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied} condition value to 0.</li>\n<li>If Kepgeda begins casting a @UUID[Compendium.pf2e.spells-srd.Item.c3b6LdLlQDPngNIb]{Create Undead} ritual within the next minute, she attempts a @Check[type:flat|dc:18] when the ritual is complete; on a success, the undead she's created is 3 levels higher than the ritual would provide (for example, creating a @UUID[Compendium.pf2e.pathfinder-bestiary.Actor.Ix1PziAEk9IIMYBz]{Zombie Brute} instead of a @UUID[Compendium.pf2e.pathfinder-bestiary.Actor.0plBflWwrCWQO2RO]{Zombie Shambler}).</li>\n</ul>"
                 },
                 "action->Familiar": {
                     "name": "Familiar",
@@ -2977,7 +2976,7 @@
                 },
                 "action->Vulnerable to Gentle Repose": {
                     "name": "Vulnerable to Gentle Repose",
-                    "description": "<p>Casting a <em>@UUID[Compendium.pf2e.spells-srd.Item.xRgU9rrhmGAgG4Rc]{Peaceful Rest}</em> spell on a meat guardian causes it to grow stiff. The golem attempts a @Check[type:fortitude|dc:20] save. It's unaffected on a critical success, @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1} for [[/br 1d4 #Rounds]]{1d4 rounds} on a success, and on a failure is @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Immobilized} and slowed for [[/br 1d4 #rounds]]{1d4 rounds}.</p>"
+                    "description": "<p>Casting a @UUID[Compendium.pf2e.spells-srd.Item.xRgU9rrhmGAgG4Rc]{Peaceful Rest} spell on a meat guardian causes it to grow stiff. The golem attempts a @Check[type:fortitude|dc:20] save. It's unaffected on a critical success, @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1} for [[/br 1d4 #Rounds]]{1d4 rounds} on a success, and on a failure is @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Immobilized} and slowed for [[/br 1d4 #rounds]]{1d4 rounds}.</p>"
                 },
                 "action->Faithful Weapon": {
                     "name": "Faithful Weapon",
@@ -2989,7 +2988,7 @@
                 },
                 "action->Instrument of Faith": {
                     "name": "Instrument of Faith",
-                    "description": "<p>The divine warden is a beacon for its deity's faith. A cleric of the divine warden's patron deity can channel a <em>@UUID[Compendium.pf2e.spells-srd.Item.rfZpqmj0AIIdkVIs]{Heal}</em> spell through a divine warden they can see within 60 feet. The cleric determines any targets or area for the spell as if they were standing in the divine warden's space.</p>"
+                    "description": "<p>The divine warden is a beacon for its deity's faith. A cleric of the divine warden's patron deity can channel a @UUID[Compendium.pf2e.spells-srd.Item.rfZpqmj0AIIdkVIs]{Heal} spell through a divine warden they can see within 60 feet. The cleric determines any targets or area for the spell as if they were standing in the divine warden's space.</p>"
                 }
             }
         },
@@ -3014,7 +3013,7 @@
         "Memory Hole": {
             "name": "Memory Hole",
             "descriptionHazard": "<p>Anyone looking into the hole has memories sucked from their head.</p>",
-            "disable": "<p>@Check[type:deception|dc:29] (master) to feed the pit false thoughts that plug it, or @Check[type:occultism|dc:28] (expert) or <em>@UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic}</em> (4th level; counteract DC 27) to drain the pit's magic</p>",
+            "disable": "<p>@Check[type:deception|dc:29] (master) to feed the pit false thoughts that plug it, or @Check[type:occultism|dc:28] (expert) or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (4th level; counteract DC 27) to drain the pit's magic</p>",
             "reset": "<p>The trap resets after 1 hour if it's not disabled.</p>",
             "stealth": "<p>(expert)</p>",
             "items": {
@@ -3027,7 +3026,7 @@
         "Mental Assault": {
             "name": "Mental Assault",
             "descriptionHazard": "<p>Magic sigils @UUID[Compendium.pf2e.conditionitems.Item.iU0fEDdBp3rXpTMC]{Hidden} in the grain of the wooden door trigger a magic trap that damages the mind of anyone attempting to pick the door's lock.</p>",
-            "disable": "<p>@Check[type:thievery|dc:48] (legendary) to deface the symbols or <em>@UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic}</em> (10th level, counteract DC 48) to counteract the trap.</p>",
+            "disable": "<p>@Check[type:thievery|dc:48] (legendary) to deface the symbols or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (10th level, counteract DC 48) to counteract the trap.</p>",
             "reset": "<p>The trap resets automatically if triggered and doesn't reset if disabled.</p>",
             "stealth": "<p>(legendary)</p>",
             "items": {
@@ -3065,7 +3064,7 @@
                 },
                 "action->Vulnerable to Slow": {
                     "name": "Vulnerable to Slow",
-                    "description": "<p>A mithral golem is not healed by a <em>@UUID[Compendium.pf2e.spells-srd.Item.WsUwpfmhKrKwoIe3]{Slow}</em> spell, and such spells affect them normally. A <em>@UUID[Compendium.pf2e.spells-srd.Item.o6YCGx4lycsYpww4]{Haste}</em> spell reverses the effects of a <em>slow</em> spell immediately.</p>"
+                    "description": "<p>A mithral golem is not healed by a @UUID[Compendium.pf2e.spells-srd.Item.WsUwpfmhKrKwoIe3]{Slow} spell, and such spells affect them normally. A @UUID[Compendium.pf2e.spells-srd.Item.o6YCGx4lycsYpww4]{Haste} spell reverses the effects of a <em>slow</em> spell immediately.</p>"
                 },
                 "action->Liquefy": {
                     "name": "Liquefy",
@@ -3126,7 +3125,7 @@
                 },
                 "action->Mummy Rot": {
                     "name": "Mummy Rot",
-                    "description": "<p>This disease and any damage from it can't be healed until this curse is removed. A creature killed by mummy rot turns to dust and can't be resurrected except by a 7th-rank <em>@UUID[Compendium.pf2e.spells-srd.Item.kqhPt9344UkcGVYO]{Resurrect}</em> ritual or similar magic.</p>\n<p><strong>Saving Throw</strong> @Check[type:fortitude|dc:22]</p>\n<hr />\n<p><strong>Stage 1</strong> carrier with no ill effect (1 minute)</p>\n<p><strong>Stage 2</strong> @Damage[4d6[void]] damage and @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 1} (1 day)</p>"
+                    "description": "<p>This disease and any damage from it can't be healed until this curse is removed. A creature killed by mummy rot turns to dust and can't be resurrected except by a 7th-rank @UUID[Compendium.pf2e.spells-srd.Item.kqhPt9344UkcGVYO]{Resurrect} ritual or similar magic.</p>\n<p><strong>Saving Throw</strong> @Check[type:fortitude|dc:22]</p>\n<hr />\n<p><strong>Stage 1</strong> carrier with no ill effect (1 minute)</p>\n<p><strong>Stage 2</strong> @Damage[4d6[void]] damage and @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 1} (1 day)</p>"
                 }
             }
         },
@@ -3260,7 +3259,7 @@
         "Night's Breath Trap": {
             "name": "Night's Breath Trap",
             "descriptionHazard": "<p>The night giant mummy unfolds its arms and leans forward to exhale a blast of gray mist and shrieking spirits into the room.</p>",
-            "disable": "<p>@Check[type:thievery|dc:33] to \"blind\" the statue so that it cannot notice any who approach, @Check[type:occultism|dc:35] to redirect and expend the trap's occult energies harmlessly, or <em>@UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic}</em> (7th level, counteract DC 32) to counteract the trap.</p>",
+            "disable": "<p>@Check[type:thievery|dc:33] to \"blind\" the statue so that it cannot notice any who approach, @Check[type:occultism|dc:35] to redirect and expend the trap's occult energies harmlessly, or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (7th level, counteract DC 32) to counteract the trap.</p>",
             "reset": "<p>The trap resets during the following round, after which it can be triggered again.</p>",
             "stealth": "<p>(master)</p>",
             "items": {
@@ -3273,14 +3272,14 @@
         "Nightmare Portal": {
             "name": "Nightmare Portal",
             "descriptionHazard": "<p>Horrific visions of a lumbering monstrosity whose face is nothing but a fanged mouth lurch out of the violet mist to attempt to eat the viewer alive.</p>",
-            "disable": "<p>@Check[type:thievery|dc:42|name:Focus the Portal's Energy|traits:action:disable-a-device] (master) to focus the portal's energies back in on itself to close it off, or @Check[type:occultism|dc:36|name:Invoke the Proper Chant] (master) to invoke the proper chant and make the proper hand gestures to untether the portal from the Dreamlands, or <em>@UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic}</em> (8th level; counteract DC 34) to counteract the portal for 1 minute and prevent Orgesh's influence from reaching through during that time</p>",
+            "disable": "<p>@Check[type:thievery|dc:42|name:Focus the Portal's Energy|traits:action:disable-a-device] (master) to focus the portal's energies back in on itself to close it off, or @Check[type:occultism|dc:36|name:Invoke the Proper Chant] (master) to invoke the proper chant and make the proper hand gestures to untether the portal from the Dreamlands, or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (8th level; counteract DC 34) to counteract the portal for 1 minute and prevent Orgesh's influence from reaching through during that time</p>",
             "reset": "<p>The nightmare portal resets 1 minute after it no longer detects targets.</p>",
-            "routine": "<p>(2 actions) A vision of an immense lumbering figure with nothing but a circular mouth for a face lurches out of the portal. For each action, the nightmare portal casts <em>@UUID[Compendium.pf2e.spells-srd.Item.tlcrVRqW1MSKJ5IC]{Phantasmal Killer}</em> (heightened to 8th level, @Check[type:will|dc:38|traits:death,emotion,fear,mental]), targeting a different creature both times. It can select targets in area <strong>E11</strong>, the secret alcove to the northeast, or up to 10 feet east from the door (although a closed door blocks it), choosing the closest two targets each round. The nightmare portal loses 1 action if it's broken and can thus only cast <em>phantasmal killer</em> once per round.</p>",
+            "routine": "<p>(2 actions) A vision of an immense lumbering figure with nothing but a circular mouth for a face lurches out of the portal. For each action, the nightmare portal casts @UUID[Compendium.pf2e.spells-srd.Item.tlcrVRqW1MSKJ5IC]{Phantasmal Killer} (heightened to 8th level, @Check[type:will|dc:38|traits:death,emotion,fear,mental]), targeting a different creature both times. It can select targets in area <strong>E11</strong>, the secret alcove to the northeast, or up to 10 feet east from the door (although a closed door blocks it), choosing the closest two targets each round. The nightmare portal loses 1 action if it's broken and can thus only cast <em>phantasmal killer</em> once per round.</p>",
             "stealth": "<p>(master)</p>",
             "items": {
                 "action->Dreadful Vision": {
                     "name": "Dreadful Vision",
-                    "description": "<p><strong>Trigger</strong> At the start of a round after a creature who can dream and isn't immune to sleep effects enters the room, the portal starts to glow with purple mist. At this point, the portal triggers as soon as such a creature looks into it. A character who just passes by and doesn't specifically avert their gaze must attempt a @Check[type:flat|dc:11] to not accidently glance into the portal, while a character who Searches this room automatically looks into it unless they specify otherwise.</p>\n<p><strong>Effect</strong> The nightmare portal casts <em>@UUID[Compendium.pf2e.spells-srd.Item.0XP2XOxT9VSiXFDr]{Phantasmal Calamity}</em> (heightened to 8th level, @Check[type:will|dc:37|traits:mental]), making reality appear to crumble away to reveal a vast cavern filled with bones through which immense wormlike creatures burrow as they endlessly eat away at the world. The trap then rolls initiative.</p>"
+                    "description": "<p><strong>Trigger</strong> At the start of a round after a creature who can dream and isn't immune to sleep effects enters the room, the portal starts to glow with purple mist. At this point, the portal triggers as soon as such a creature looks into it. A character who just passes by and doesn't specifically avert their gaze must attempt a @Check[type:flat|dc:11] to not accidently glance into the portal, while a character who Searches this room automatically looks into it unless they specify otherwise.</p>\n<p><strong>Effect</strong> The nightmare portal casts @UUID[Compendium.pf2e.spells-srd.Item.0XP2XOxT9VSiXFDr]{Phantasmal Calamity} (heightened to 8th level, @Check[type:will|dc:37|traits:mental]), making reality appear to crumble away to reveal a vast cavern filled with bones through which immense wormlike creatures burrow as they endlessly eat away at the world. The trap then rolls initiative.</p>"
                 }
             }
         },
@@ -3334,9 +3333,6 @@
                 },
                 "strike-melee->Sting": {
                     "name": "Sting"
-                },
-                "action->Greater Darkvision": {
-                    "name": "Greater Darkvision"
                 },
                 "action->Scent (Imprecise 30) feet": {
                     "name": "Scent (Imprecise 30) feet"
@@ -3541,7 +3537,7 @@
                 },
                 "action->Rejuvenation": {
                     "name": "Rejuvenation",
-                    "description": "<p>When a graveknight is destroyed, its armor rebuilds its body over the course of [[/br 1d10 #days]]{1d10 days}-or more quickly if the armor is worn by a living host. If the body is destroyed before then, the process restarts.</p>\n<p>A graveknight can only be permanently destroyed by obliterating its armor (such as with <em>@UUID[Compendium.pf2e.spells-srd.Item.r7ihOgKv19eJQnik]{Disintegrate}</em>), transporting it to the Forge of Creation, or throwing it into the heart of a volcano.</p>"
+                    "description": "<p>When a graveknight is destroyed, its armor rebuilds its body over the course of [[/br 1d10 #days]]{1d10 days}-or more quickly if the armor is worn by a living host. If the body is destroyed before then, the process restarts.</p>\n<p>A graveknight can only be permanently destroyed by obliterating its armor (such as with @UUID[Compendium.pf2e.spells-srd.Item.r7ihOgKv19eJQnik]{Disintegrate}), transporting it to the Forge of Creation, or throwing it into the heart of a volcano.</p>"
                 },
                 "action->Sacrilegious Aura": {
                     "name": "Sacrilegious Aura",
@@ -3667,7 +3663,7 @@
                 },
                 "action->Personality Fragments": {
                     "name": "Personality Fragments",
-                    "description": "<p>The Kerinza doll is animated by a piece of Kerinza's soul, energized by the happiest time in her life. She can telepathically communicate with the Doriel doll as long as they're within 60 feet of each other. If the Doriel doll is defeated, her eyes turn black, and black veins run beneath her porcelain skin. She can cast <em>@UUID[Compendium.pf2e.spells-srd.Item.GaRQlC9Yw1BGKHfN]{Wave of Despair}</em> again if she's already cast it, and she can cast it as a single action.</p>"
+                    "description": "<p>The Kerinza doll is animated by a piece of Kerinza's soul, energized by the happiest time in her life. She can telepathically communicate with the Doriel doll as long as they're within 60 feet of each other. If the Doriel doll is defeated, her eyes turn black, and black veins run beneath her porcelain skin. She can cast @UUID[Compendium.pf2e.spells-srd.Item.GaRQlC9Yw1BGKHfN]{Wave of Despair} again if she's already cast it, and she can cast it as a single action.</p>"
                 },
                 "action->Sneak Attack": {
                     "name": "Sneak Attack",
@@ -3718,7 +3714,7 @@
                 },
                 "action->Breath Weapon": {
                     "name": "Breath Weapon",
-                    "description": "<p>A pyrogeist can spit a cone of spectral fire in a @Template[type:cone|distance:30], dealing @Damage[10d6[void]] damage (@Check[type:fortitude|dc:29|basic:true]). A creature that fails the save also takes @Damage[1d6[persistent,void]] damage and is subject to the effects of <em>@UUID[Compendium.pf2e.spells-srd.Item.HRb2doyaLtaoCfi3]{Faerie Fire}</em> until the persistent damage ends.</p>"
+                    "description": "<p>A pyrogeist can spit a cone of spectral fire in a @Template[type:cone|distance:30], dealing @Damage[10d6[void]] damage (@Check[type:fortitude|dc:29|basic:true]). A creature that fails the save also takes @Damage[1d6[persistent,void]] damage and is subject to the effects of @UUID[Compendium.pf2e.spells-srd.Item.HRb2doyaLtaoCfi3]{Faerie Fire} until the persistent damage ends.</p>"
                 },
                 "action->Pyrokinetic Whirlwind": {
                     "name": "Pyrokinetic Whirlwind",
@@ -3905,7 +3901,7 @@
                 },
                 "consumable->Wand of Cone of Cold (Level 5)": {
                     "name": "Wand of Cone of Cold (Level 5)",
-                    "description": "<p><em>@UUID[Compendium.pf2e.spells-srd.Item.3puDanGfpEt6jK5k]{Cone of Cold}</em></p><hr /><p>This baton is about a foot long and contains a single spell. The appearance typically relates to the spell within.</p>\n<p><strong>Activate</strong> Cast a Spell</p>\n<p><strong>Frequency</strong> once per day, plus overcharge</p>\n<hr />\n<p><strong>Effect</strong> You Cast the Spell at the indicated level.</p>\n<p><strong>Craft Requirements</strong> Supply a listed-level casting of the spell.</p>\n<hr />\n<p><em>Note: To create a scroll or wand of a specific spell, drag the spell from the compendium or compendium browser into the inventory of a PC, NPC, or loot actor.</em></p>"
+                    "description": "<p>@UUID[Compendium.pf2e.spells-srd.Item.3puDanGfpEt6jK5k]{Cone of Cold}</p><hr /><p>This baton is about a foot long and contains a single spell. The appearance typically relates to the spell within.</p>\n<p><strong>Activate</strong> Cast a Spell</p>\n<p><strong>Frequency</strong> once per day, plus overcharge</p>\n<hr />\n<p><strong>Effect</strong> You Cast the Spell at the indicated level.</p>\n<p><strong>Craft Requirements</strong> Supply a listed-level casting of the spell.</p>\n<hr />\n<p><em>Note: To create a scroll or wand of a specific spell, drag the spell from the compendium or compendium browser into the inventory of a PC, NPC, or loot actor.</em></p>"
                 },
                 "backpack->Bag of Holding (Type IV)": {
                     "name": "Bag of Holding (Type IV)",
@@ -3949,7 +3945,7 @@
                 },
                 "action->Coven": {
                     "name": "Coven",
-                    "description": "<p>A rust hag adds <em>@UUID[Compendium.pf2e.spells-srd.Item.B3eLlbaPxOYHcs1o]{Curse Of Lost Time}</em>, <em>@UUID[Compendium.pf2e.spells-srd.Item.0fYE64odlKqISzft]{Rusting Grasp}</em>, and <em>@UUID[Compendium.pf2e.spells-srd.Item.lKcsmeOrgHtK4xQa]{Summon Construct}</em> to her coven's spells.</p>"
+                    "description": "<p>A rust hag adds @UUID[Compendium.pf2e.spells-srd.Item.B3eLlbaPxOYHcs1o]{Curse Of Lost Time}, @UUID[Compendium.pf2e.spells-srd.Item.0fYE64odlKqISzft]{Rusting Grasp}, and @UUID[Compendium.pf2e.spells-srd.Item.lKcsmeOrgHtK4xQa]{Summon Construct} to her coven's spells.</p>"
                 },
                 "action->+1 Status to All Saves vs. Magic": {
                     "name": "+1 Status to All Saves vs. Magic"
@@ -3984,14 +3980,14 @@
                 },
                 "action->Coven": {
                     "name": "Coven",
-                    "description": "<p>Sahni adds <em>@UUID[Compendium.pf2e.spells-srd.Item.f8hRqLJaxBVhF1u0]{Acid Arrow}</em>, <em>@UUID[Compendium.pf2e.spells-srd.Item.z2mfh3oPnfYqXflY]{Mariner's Curse}</em>, and <em>@UUID[Compendium.pf2e.spells-srd.Item.Seaah9amXg70RKw2]{Water Walk}</em> to her coven's spells.</p>"
+                    "description": "<p>Sahni adds @UUID[Compendium.pf2e.spells-srd.Item.f8hRqLJaxBVhF1u0]{Acid Arrow}, @UUID[Compendium.pf2e.spells-srd.Item.z2mfh3oPnfYqXflY]{Mariner's Curse}, and @UUID[Compendium.pf2e.spells-srd.Item.Seaah9amXg70RKw2]{Water Walk} to her coven's spells.</p>"
                 },
                 "action->+1 Status to All Saves vs. Magic": {
                     "name": "+1 Status to All Saves vs. Magic"
                 },
                 "action->Bride's Bargain": {
                     "name": "Bride's Bargain",
-                    "description": "<p>Sahni can make a bargain with a willing creature of sound mind. The creature gives away a special quality-such as its courage, beauty, or voice-or sacrifices a loved one in exchange for a boon or a promise from Sahni. As long as Sahni keeps her end of the bargain, the only way to restore a lost quality is to defeat Sahni or make another bargain for its return. Loved ones sacrificed for Sahni's bargain can't be restored except with <em>@UUID[Compendium.pf2e.spells-srd.Item.6dDtGIUerazSHIOu]{Wish}</em>, <em>@UUID[Compendium.pf2e.spells-srd.Item.YfJTXyVGzLhM6V8U]{Miracle}</em>, or similarly powerful magic.</p>"
+                    "description": "<p>Sahni can make a bargain with a willing creature of sound mind. The creature gives away a special quality-such as its courage, beauty, or voice-or sacrifices a loved one in exchange for a boon or a promise from Sahni. As long as Sahni keeps her end of the bargain, the only way to restore a lost quality is to defeat Sahni or make another bargain for its return. Loved ones sacrificed for Sahni's bargain can't be restored except with @UUID[Compendium.pf2e.spells-srd.Item.6dDtGIUerazSHIOu]{Wish}, @UUID[Compendium.pf2e.spells-srd.Item.YfJTXyVGzLhM6V8U]{Miracle}, or similarly powerful magic.</p>"
                 },
                 "action->Curse of Futility": {
                     "name": "Curse of Futility",
@@ -3999,7 +3995,7 @@
                 },
                 "action->Scattered Coven": {
                     "name": "Scattered Coven",
-                    "description": "<p>As a scattered coven, the Graveclaw grants Sahni the ability to cast the following spells as 3rd-rank occult spells, once per day each, without requiring help from her fellow coven members: <em>@UUID[Compendium.pf2e.spells-srd.Item.f8hRqLJaxBVhF1u0]{Acid Arrow}</em>, <em>@UUID[Compendium.pf2e.spells-srd.Item.B3eLlbaPxOYHcs1o]{Curse Of Lost Time}</em>, <em>@UUID[Compendium.pf2e.spells-srd.Item.gPvtmKMRpg9I9D7H]{Earthbind}</em>, <em>@UUID[Compendium.pf2e.spells-srd.Item.wdA52JJnsuQWeyqz]{Harm}</em>, <em>@UUID[Compendium.pf2e.spells-srd.Item.xlRv8vCTHh1NeMpw]{Mimic Undead}</em>, <em>@UUID[Compendium.pf2e.spells-srd.Item.lKcsmeOrgHtK4xQa]{Summon Construct}</em>, and <em>@UUID[Compendium.pf2e.spells-srd.Item.Seaah9amXg70RKw2]{Water Walk}</em>. If Sahni is the third hag they confront, the coven is broken and she lacks these coven spells.</p>"
+                    "description": "<p>As a scattered coven, the Graveclaw grants Sahni the ability to cast the following spells as 3rd-rank occult spells, once per day each, without requiring help from her fellow coven members: @UUID[Compendium.pf2e.spells-srd.Item.f8hRqLJaxBVhF1u0]{Acid Arrow}, @UUID[Compendium.pf2e.spells-srd.Item.B3eLlbaPxOYHcs1o]{Curse Of Lost Time}, @UUID[Compendium.pf2e.spells-srd.Item.gPvtmKMRpg9I9D7H]{Earthbind}, @UUID[Compendium.pf2e.spells-srd.Item.wdA52JJnsuQWeyqz]{Harm}, @UUID[Compendium.pf2e.spells-srd.Item.xlRv8vCTHh1NeMpw]{Mimic Undead}, @UUID[Compendium.pf2e.spells-srd.Item.lKcsmeOrgHtK4xQa]{Summon Construct}, and @UUID[Compendium.pf2e.spells-srd.Item.Seaah9amXg70RKw2]{Water Walk}. If Sahni is the third hag they confront, the coven is broken and she lacks these coven spells.</p>"
                 },
                 "lore->Legal Lore": {
                     "name": "Legal Lore"
@@ -4094,7 +4090,7 @@
                 },
                 "action->Rejuvenation": {
                     "name": "Rejuvenation",
-                    "description": "<p>When a graveknight is destroyed, its armor rebuilds its body over the course of [[/br 1d10 #days]]{1d10 days}-or more quickly if the armor is worn by a living host. If the body is destroyed before then, the process restarts.</p>\n<p>A graveknight can only be permanently destroyed by obliterating its armor (such as with <em>@UUID[Compendium.pf2e.spells-srd.Item.r7ihOgKv19eJQnik]{Disintegrate}</em>), transporting it to the Forge of Creation, or throwing it into the heart of a volcano.</p>"
+                    "description": "<p>When a graveknight is destroyed, its armor rebuilds its body over the course of [[/br 1d10 #days]]{1d10 days}-or more quickly if the armor is worn by a living host. If the body is destroyed before then, the process restarts.</p>\n<p>A graveknight can only be permanently destroyed by obliterating its armor (such as with @UUID[Compendium.pf2e.spells-srd.Item.r7ihOgKv19eJQnik]{Disintegrate}), transporting it to the Forge of Creation, or throwing it into the heart of a volcano.</p>"
                 },
                 "action->Sacrilegious Aura": {
                     "name": "Sacrilegious Aura",
@@ -4116,7 +4112,7 @@
                 },
                 "action->Phantom Steed": {
                     "name": "Phantom Steed",
-                    "description": "<p>HP 130; AC 39, Fort +28, Ref +25, Will +22</p>\n<hr />\n<p>Seldeg summons a supernatural mount as per <em>@UUID[Compendium.pf2e.spells-srd.Item.WPKJOhEihhcIm2uQ]{Marvelous Mount}</em> (8th level). Unlike phantom steed, the steed's AC and saving throw bonuses are all 4 levels lower than Seldeg's, and the steed has one-third of Seldeg's Hit Points (rounded down). If the steed is destroyed, Seldeg must wait 1 hour before using this ability again.</p>"
+                    "description": "<p>HP 130; AC 39, Fort +28, Ref +25, Will +22</p>\n<hr />\n<p>Seldeg summons a supernatural mount as per @UUID[Compendium.pf2e.spells-srd.Item.WPKJOhEihhcIm2uQ]{Marvelous Mount} (8th level). Unlike phantom steed, the steed's AC and saving throw bonuses are all 4 levels lower than Seldeg's, and the steed has one-third of Seldeg's Hit Points (rounded down). If the steed is destroyed, Seldeg must wait 1 hour before using this ability again.</p>"
                 },
                 "action->Ruinous Weapons": {
                     "name": "Ruinous Weapons",
@@ -4210,7 +4206,7 @@
                 },
                 "action->Cremate Undead": {
                     "name": "Cremate Undead",
-                    "description": "<p>A shabti votary's vitality energy sets undead alight. When a shabti votary uses a <em>@UUID[Compendium.pf2e.spells-srd.Item.rfZpqmj0AIIdkVIs]{Heal}</em> spell to damage undead, each undead that takes damage also takes persistent fire damage equal to the spell's rank.</p>"
+                    "description": "<p>A shabti votary's vitality energy sets undead alight. When a shabti votary uses a @UUID[Compendium.pf2e.spells-srd.Item.rfZpqmj0AIIdkVIs]{Heal} spell to damage undead, each undead that takes damage also takes persistent fire damage equal to the spell's rank.</p>"
                 },
                 "action->Expand Aura": {
                     "name": "Expand Aura",
@@ -4326,11 +4322,11 @@
                 },
                 "action->Dispelling Roar": {
                     "name": "Dispelling Roar",
-                    "description": "<p>The leydroth unleashes a bestial roar that reverberates within a @Template[type:emanation|distance:30]. It rolls an Intimidation check and compares the result to the Will DC of each creature in the area, with the effects of @UUID[Compendium.pf2e.actionspf2e.Item.2u915NdUyQan6uKF]{Demoralize}.</p>\n<p>It also uses this result to attempt to counteract each spell or magical effect in the area, plus one item or effect on each creature in the area, with the effects of <em>@UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic}</em>.</p>\n<p>The leydroth can't use Dispelling Roar again for [[/br 1d4 #Recharge Dispelling Roar]]{1d4 rounds}.</p>"
+                    "description": "<p>The leydroth unleashes a bestial roar that reverberates within a @Template[type:emanation|distance:30]. It rolls an Intimidation check and compares the result to the Will DC of each creature in the area, with the effects of @UUID[Compendium.pf2e.actionspf2e.Item.2u915NdUyQan6uKF]{Demoralize}.</p>\n<p>It also uses this result to attempt to counteract each spell or magical effect in the area, plus one item or effect on each creature in the area, with the effects of @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic}.</p>\n<p>The leydroth can't use Dispelling Roar again for [[/br 1d4 #Recharge Dispelling Roar]]{1d4 rounds}.</p>"
                 },
                 "action->Dispelling Strike": {
                     "name": "Dispelling Strike",
-                    "description": "<p><strong>Frequency</strong> once per round</p>\n<p><strong>Trigger</strong> The leydroth hits a creature, object, or spell effect with a Strike</p>\n<hr />\n<p><strong>Effect</strong> The leydroth casts its innate <em>@UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic}</em>, targeting one effect on the creature struck.</p>"
+                    "description": "<p><strong>Frequency</strong> once per round</p>\n<p><strong>Trigger</strong> The leydroth hits a creature, object, or spell effect with a Strike</p>\n<hr />\n<p><strong>Effect</strong> The leydroth casts its innate @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic}, targeting one effect on the creature struck.</p>"
                 },
                 "action->Spell Feedback": {
                     "name": "Spell Feedback",
@@ -4432,9 +4428,6 @@
             "items": {
                 "strike-melee->Claw": {
                     "name": "Claw"
-                },
-                "action->Greater Darkvision": {
-                    "name": "Greater Darkvision"
                 },
                 "action->Eager Shadows": {
                     "name": "Eager Shadows",
@@ -4653,7 +4646,7 @@
                 },
                 "action->Coven": {
                     "name": "Coven",
-                    "description": "<p>A skull fairy adds <em>@UUID[Compendium.pf2e.spells-srd.Item.EoKBlgf6Smt8opaU]{Veil of Privacy}</em> and <em>@UUID[Compendium.pf2e.spells-srd.Item.GKpEcy9WId6NJvtx]{Stinking Cloud}</em> to their coven's spells.</p>"
+                    "description": "<p>A skull fairy adds @UUID[Compendium.pf2e.spells-srd.Item.EoKBlgf6Smt8opaU]{Veil of Privacy} and @UUID[Compendium.pf2e.spells-srd.Item.GKpEcy9WId6NJvtx]{Stinking Cloud} to their coven's spells.</p>"
                 },
                 "action->Shadowy Pop": {
                     "name": "Shadowy Pop",
@@ -4700,7 +4693,7 @@
                 },
                 "action->Vulnerable to Shatter": {
                     "name": "Vulnerable to Shatter",
-                    "description": "<p>A glass golem is affected by the <em>@UUID[Compendium.pf2e.spells-srd.Item.1xbFBQDRs0hT5xZ9]{Shatter}</em> spell as though the golem were an unattended object.</p>"
+                    "description": "<p>A glass golem is affected by the @UUID[Compendium.pf2e.spells-srd.Item.1xbFBQDRs0hT5xZ9]{Shatter} spell as though the golem were an unattended object.</p>"
                 },
                 "action->Solar Flare": {
                     "name": "Solar Flare",
@@ -4811,7 +4804,7 @@
         "Soul-Drinking Spirit Collectors": {
             "name": "Soul-Drinking Spirit Collectors",
             "descriptionHazard": "<p>Four spirit collectors drain the souls from nearby creatures.</p>",
-            "disable": "<p>@Check[type:religion|dc:47] (legendary) to sever the connection between Urgathoa and each spirit collector, @Check[type:thievery|dc:50] (legendary) to deactivate each spirit collector, or <em>@UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic}</em> (9th level; counteract DC 50) to counteract each spirit collector</p>",
+            "disable": "<p>@Check[type:religion|dc:47] (legendary) to sever the connection between Urgathoa and each spirit collector, @Check[type:thievery|dc:50] (legendary) to deactivate each spirit collector, or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (9th level; counteract DC 50) to counteract each spirit collector</p>",
             "routine": "<p>(4 actions) This trap loses 1 action each turn for each disabled spirit collector. Each spirit collector uses 1 action to drain the souls of all creatures within 30 feet, dealing @Damage[(4d10+20)[force]] damage (@Check[type:fortitude|dc:46|basic:true]). On a failed save, a creature becomes @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 1} and @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 1} or increases their drained and stupefied conditions by 1 (by 2 on a critical failure).</p>",
             "stealth": "<p>(legendary)</p>",
             "items": {
@@ -4825,7 +4818,7 @@
             "name": "Spiraling Comets",
             "hpDetails": "Per comet",
             "descriptionHazard": "<p>Three blue comets orbiting the room turn red and attack when intruders enter.</p>",
-            "disable": "<p>@Check[type:religion|dc:42] (master) to command each comet to disperse with Pharasmin prayers, or <em>@UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic}</em> (8th level; counteract DC 42) to counteract each comet</p>",
+            "disable": "<p>@Check[type:religion|dc:42] (master) to command each comet to disperse with Pharasmin prayers, or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (8th level; counteract DC 42) to counteract each comet</p>",
             "reset": "<p>The trap resets after 1 hour.</p>",
             "routine": "<p>(3 action) The trap loses 1 action each turn for each comet disabled, counteracted, or destroyed. Each comet uses 1 action to attack the nearest intruder with a comet Strike.</p>",
             "stealth": "<p>(master)</p>",
@@ -4922,7 +4915,7 @@
         "Summoning Rune (Cockatrice)": {
             "name": "Summoning Rune (Cockatrice)",
             "descriptionHazard": "<p>A cloud of invisible magical sensors floats in the square above an invisible floor rune.</p>",
-            "disable": "<p>@Check[type:acrobatics|dc:18] to approach without triggering the trap followed by @Check[type:thievery|dc:20] (trained) to disrupt the rune's summoning effect; alternatively, <em>@UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic}</em> (2nd level; counteract DC 17) to counteract the rune</p>",
+            "disable": "<p>@Check[type:acrobatics|dc:18] to approach without triggering the trap followed by @Check[type:thievery|dc:20] (trained) to disrupt the rune's summoning effect; alternatively, @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (2nd level; counteract DC 17) to counteract the rune</p>",
             "reset": "<p>The trap resets after 24 hours.</p>",
             "stealth": "<p>(trained)</p>",
             "items": {
@@ -5038,7 +5031,7 @@
                 },
                 "action->Breath of Phantasms": {
                     "name": "Breath of Phantasms",
-                    "description": "<p><strong>Frequency</strong> once per day</p>\n<hr />\n<p><strong>Effect</strong> The terrorguard's ram-skull head opens at the jaw, allowing a horde of swirling phantasms to escape from its maw in a @Template[type:cone|distance:30]. Each creature in the area is subjected to a 5th-rank <em>@UUID[Compendium.pf2e.spells-srd.Item.tlcrVRqW1MSKJ5IC]{Phantasmal Killer}</em> spell (@Check[type:will|dc:31], @Check[type:fortitude|dc:31|traits:incapacitation]).</p>"
+                    "description": "<p><strong>Frequency</strong> once per day</p>\n<hr />\n<p><strong>Effect</strong> The terrorguard's ram-skull head opens at the jaw, allowing a horde of swirling phantasms to escape from its maw in a @Template[type:cone|distance:30]. Each creature in the area is subjected to a 5th-rank @UUID[Compendium.pf2e.spells-srd.Item.tlcrVRqW1MSKJ5IC]{Phantasmal Killer} spell (@Check[type:will|dc:31], @Check[type:fortitude|dc:31|traits:incapacitation]).</p>"
                 },
                 "action->Draw the Line": {
                     "name": "Draw the Line",
@@ -5088,7 +5081,7 @@
         "The Putrid Rise": {
             "name": "The Putrid Rise",
             "descriptionHazard": "<p>The stink of bile suddenly grows as the myriad mouths carved into the walls begin to vomit forth a deluge of acidic slurry.</p>",
-            "disable": "<p>@Check[type:thievery|dc:33] (master) to disrupt the trap's magical network of sensors and effectively \"blind\" it to targets to react to, @Check[type:religion|dc:38] (master) to recognize the carvings and recall one of the mantras needed to pass safely, or <em>@UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic}</em> (7th level; counteract DC 32) to counteract the trap.</p>",
+            "disable": "<p>@Check[type:thievery|dc:33] (master) to disrupt the trap's magical network of sensors and effectively \"blind\" it to targets to react to, @Check[type:religion|dc:38] (master) to recognize the carvings and recall one of the mantras needed to pass safely, or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (7th level; counteract DC 32) to counteract the trap.</p>",
             "reset": "<p>The trap deactivates 1 round after no targets can be sensed, but resets immediately.</p>",
             "routine": "<p>On its turn, the trap Vomits as its action. As long as the Putrid Rise is active, the stairs in area <strong>D3</strong> are difficult terrain.</p>",
             "stealth": "<p>(master)</p>",
@@ -5220,9 +5213,6 @@
                 "strike-ranged->Icy Blast": {
                     "name": "Icy Blast"
                 },
-                "action->Greater Darkvision": {
-                    "name": "Greater Darkvision"
-                },
                 "action->Lifesense 100 feet": {
                     "name": "Lifesense 100 feet"
                 },
@@ -5262,7 +5252,7 @@
         "Unfinished Portalrender": {
             "name": "Unfinished Portalrender",
             "descriptionHazard": "<p>A sphere of concentrated agony harvested from a qlippoth begins pulsing with violet light as it blasts the room with otherworldly agony.</p>",
-            "disable": "<p>@Check[type:thievery|dc:37] (master) to dismantle the housing and refocus the agony inward so it consumes itself harmlessly, @Check[type:arcana|dc:33] or @Check[type:occultism|dc:33] (master) to vent the agony in a controlled way that causes the portalrender to become inert after 1 minute (during which it can still be triggered normally), or <em>@UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic}</em> (7th level; counteract DC 31)</p>",
+            "disable": "<p>@Check[type:thievery|dc:37] (master) to dismantle the housing and refocus the agony inward so it consumes itself harmlessly, @Check[type:arcana|dc:33] or @Check[type:occultism|dc:33] (master) to vent the agony in a controlled way that causes the portalrender to become inert after 1 minute (during which it can still be triggered normally), or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (7th level; counteract DC 31)</p>",
             "routine": "<p>The unfinished portalrender continues to flood area <strong>B4</strong> with agony, and everyone in the room must attempt a @Check[type:will|dc:33] save against its Agonizing Pulse. At the end of its turn, the unfinished portalrender attempts a @Check[type:flat|dc:6]. On a failure, its stores of agony deplete and it deactivates, causing the central orb of agony to fade away permanently.</p>",
             "stealth": "<p>(master)</p>",
             "items": {
@@ -5308,9 +5298,6 @@
                 "strike-melee->Wing": {
                     "name": "Wing"
                 },
-                "action->Greater Darkvision": {
-                    "name": "Greater Darkvision"
-                },
                 "action->Scent (Imprecise) 60 feet": {
                     "name": "Scent (Imprecise) 60 feet"
                 },
@@ -5342,7 +5329,7 @@
                 },
                 "action->Consume Soul": {
                     "name": "Consume Soul",
-                    "description": "<p><strong>Trigger</strong> A living creature within 30 feet of the ravener dies</p>\n<hr />\n<p><strong>Effect</strong> The ravener tears the creature's soul from its body with their maw and gulps it down. The dying creature must attempt a @Check[type:fortitude|dc:44] save with the same DC as the ravener's Breath Weapon.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The ravener tears off a small chunk of the creature's soul. If the victim is restored to life, they are @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 1} in addition to any other side effects of returning to life. The ravener adds a number of Hit Points to their soul ward equal to half the creature's level.</p>\n<p><strong>Failure</strong> As success, but the creature's soul is ravaged. The creature is @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 3} and the ravener adds a number of Hit Points to their soul ward equal to the creature's level.</p>\n<p><strong>Critical Failure</strong> As failure, but the ravener devours the entire soul. The victim can't be restored to life as long as the ravener exists except via a 10th-rank effect such as <em>@UUID[Compendium.pf2e.spells-srd.Item.YfJTXyVGzLhM6V8U]{Miracle}</em> or <em>@UUID[Compendium.pf2e.spells-srd.Item.6dDtGIUerazSHIOu]{Wish}</em>, and the ravener adds a number of Hit Points to their soul ward equal to twice the creature's level.</p>"
+                    "description": "<p><strong>Trigger</strong> A living creature within 30 feet of the ravener dies</p>\n<hr />\n<p><strong>Effect</strong> The ravener tears the creature's soul from its body with their maw and gulps it down. The dying creature must attempt a @Check[type:fortitude|dc:44] save with the same DC as the ravener's Breath Weapon.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The ravener tears off a small chunk of the creature's soul. If the victim is restored to life, they are @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 1} in addition to any other side effects of returning to life. The ravener adds a number of Hit Points to their soul ward equal to half the creature's level.</p>\n<p><strong>Failure</strong> As success, but the creature's soul is ravaged. The creature is @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 3} and the ravener adds a number of Hit Points to their soul ward equal to the creature's level.</p>\n<p><strong>Critical Failure</strong> As failure, but the ravener devours the entire soul. The victim can't be restored to life as long as the ravener exists except via a 10th-rank effect such as @UUID[Compendium.pf2e.spells-srd.Item.YfJTXyVGzLhM6V8U]{Miracle} or @UUID[Compendium.pf2e.spells-srd.Item.6dDtGIUerazSHIOu]{Wish}, and the ravener adds a number of Hit Points to their soul ward equal to twice the creature's level.</p>"
                 },
                 "action->Draconic Frenzy": {
                     "name": "Draconic Frenzy",
@@ -5478,7 +5465,7 @@
                 },
                 "action->Change Shape": {
                     "name": "Change Shape",
-                    "description": "<p>The vampire transforms into one of its animal forms or back into its normal form. Most vampires can turn into a bat, but some can turn into a different creature, such as a rat or a wolf.</p>\n<p>Use the options in the <em>@UUID[Compendium.pf2e.spells-srd.Item.NzXpEzcZAjuDTZjK]{Aerial Form}</em> and <em>@UUID[Compendium.pf2e.spells-srd.Item.wp09USMB3GIW1qbp]{Animal Form}</em> spells as guidelines.</p>\n<ul>\n<li><strong>Bat</strong> The vampire changes into a @UUID[Compendium.pf2e.pathfinder-bestiary.Actor.VAWmwDA08ZLQd8lW]{Bat Swarm} or @UUID[Compendium.pf2e.pathfinder-bestiary.Actor.C9s5tBxVValC2HTE]{Giant Bat}. It gains echolocation 40 feet, a land Speed of 20 feet and a fly Speed of 30 feet, and a fangs Strike with a +21 attack bonus. These fangs deal the same amount of damage as the vampire's claws, but deal piercing damage rather than slashing damage.</li>\n</ul>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.ChangeShape]</p>"
+                    "description": "<p>The vampire transforms into one of its animal forms or back into its normal form. Most vampires can turn into a bat, but some can turn into a different creature, such as a rat or a wolf.</p>\n<p>Use the options in the @UUID[Compendium.pf2e.spells-srd.Item.NzXpEzcZAjuDTZjK]{Aerial Form} and @UUID[Compendium.pf2e.spells-srd.Item.wp09USMB3GIW1qbp]{Animal Form} spells as guidelines.</p>\n<ul>\n<li><strong>Bat</strong> The vampire changes into a @UUID[Compendium.pf2e.pathfinder-bestiary.Actor.VAWmwDA08ZLQd8lW]{Bat Swarm} or @UUID[Compendium.pf2e.pathfinder-bestiary.Actor.C9s5tBxVValC2HTE]{Giant Bat}. It gains echolocation 40 feet, a land Speed of 20 feet and a fly Speed of 30 feet, and a fangs Strike with a +21 attack bonus. These fangs deal the same amount of damage as the vampire's claws, but deal piercing damage rather than slashing damage.</li>\n</ul>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.ChangeShape]</p>"
                 },
                 "action->Create Spawn": {
                     "name": "Create Spawn",
@@ -5486,7 +5473,7 @@
                 },
                 "action->Dominate": {
                     "name": "Dominate",
-                    "description": "<p>The vampire can cast <em>@UUID[Compendium.pf2e.spells-srd.Item.OsOhx3TGIZ7AhD0P]{Dominate}</em> at will as a divine innate spell. Casting it requires staring into the target's eyes, giving the spell the visual trait. A creature that succeeds is temporarily immune to that vampire's Dominate for 24 hours.</p>\n<p>Fully destroying the vampire ends the domination, but merely reducing the vampire to 0 HP is insufficient to break the spell.</p>"
+                    "description": "<p>The vampire can cast @UUID[Compendium.pf2e.spells-srd.Item.OsOhx3TGIZ7AhD0P]{Dominate} at will as a divine innate spell. Casting it requires staring into the target's eyes, giving the spell the visual trait. A creature that succeeds is temporarily immune to that vampire's Dominate for 24 hours.</p>\n<p>Fully destroying the vampire ends the domination, but merely reducing the vampire to 0 HP is insufficient to break the spell.</p>"
                 },
                 "action->Drink Blood": {
                     "name": "Drink Blood",
@@ -5498,7 +5485,7 @@
                 },
                 "action->Turn to Mist": {
                     "name": "Turn to Mist",
-                    "description": "<p>The vampire turns into a cloud of vapor, as the <em>@UUID[Compendium.pf2e.spells-srd.Item.V8wXOsoejQhe6CyG]{Vapor Form}</em> spell, or back to its normal form. The vampire loses fast healing while in gaseous form.</p>\n<p>The vampire can remain in this form indefinitely.</p>"
+                    "description": "<p>The vampire turns into a cloud of vapor, as the @UUID[Compendium.pf2e.spells-srd.Item.V8wXOsoejQhe6CyG]{Vapor Form} spell, or back to its normal form. The vampire loses fast healing while in gaseous form.</p>\n<p>The vampire can remain in this form indefinitely.</p>"
                 },
                 "action->Grab": {
                     "name": "Grab"
@@ -5548,7 +5535,6 @@
         "Vampire Taviah": {
             "name": "Vampire Taviah",
             "blurb": "Female vetalarana vampire annis hag",
-            "sensesDetails": "thoughtsense",
             "hpDetails": "fast healing 10, void healing",
             "items": {
                 "spellcastingEntry->Occult Innate Spells": {
@@ -5588,7 +5574,7 @@
                 },
                 "action->Drain Thoughts": {
                     "name": "Drain Thoughts",
-                    "description": "<p><strong>Requirements</strong> A @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed}, @UUID[Compendium.pf2e.conditionitems.Item.6uEgoh53GbXuHpTF]{Paralyzed}, @UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{Restrained}, @UUID[Compendium.pf2e.conditionitems.Item.fBnFDH2MTzgFijKf]{Unconscious}, or willing creature is within Taviah's reach</p>\n<hr />\n<p><strong>Effect</strong> Taviah seizes a creature and consumes its memories. This requires an @Check[type:athletics|defense:fortitude] check against the victim's Fortitude DC if the victim is grabbed and is automatic for any of the other conditions. The victim is @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 1} (@UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 2} if Taviah's Athletics check is a critical success), and Taviah regains [[/r 18[healing]]]{18 Hit Points}, gaining any excess as temporary Hit Points. Draining Thoughts from a creature that is already stupefied doesn't restore any HP to Taviah but increases the victim's stupefied value by 1. Additionally, Taviah views one of the victim's memories, and can choose to alter, enhance, or erase the memory she views as a 4th-rank <em>@UUID[Compendium.pf2e.spells-srd.Item.FhOaQDTSnsY7tiam]{Rewrite Memory}</em> spell. A victim's stupefied condition value decreases by 1 every week.</p>\n<p>A victim that becomes @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 5} in this way is rendered comatose until Taviah is destroyed, becoming permanently unconscious. While unconscious, its stupefied condition doesn't decrease.</p>"
+                    "description": "<p><strong>Requirements</strong> A @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed}, @UUID[Compendium.pf2e.conditionitems.Item.6uEgoh53GbXuHpTF]{Paralyzed}, @UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{Restrained}, @UUID[Compendium.pf2e.conditionitems.Item.fBnFDH2MTzgFijKf]{Unconscious}, or willing creature is within Taviah's reach</p>\n<hr />\n<p><strong>Effect</strong> Taviah seizes a creature and consumes its memories. This requires an @Check[type:athletics|defense:fortitude] check against the victim's Fortitude DC if the victim is grabbed and is automatic for any of the other conditions. The victim is @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 1} (@UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 2} if Taviah's Athletics check is a critical success), and Taviah regains [[/r 18[healing]]]{18 Hit Points}, gaining any excess as temporary Hit Points. Draining Thoughts from a creature that is already stupefied doesn't restore any HP to Taviah but increases the victim's stupefied value by 1. Additionally, Taviah views one of the victim's memories, and can choose to alter, enhance, or erase the memory she views as a 4th-rank @UUID[Compendium.pf2e.spells-srd.Item.FhOaQDTSnsY7tiam]{Rewrite Memory} spell. A victim's stupefied condition value decreases by 1 every week.</p>\n<p>A victim that becomes @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 5} in this way is rendered comatose until Taviah is destroyed, becoming permanently unconscious. While unconscious, its stupefied condition doesn't decrease.</p>"
                 },
                 "action->Paralyzing Claws": {
                     "name": "Paralyzing Claws",
@@ -5670,7 +5656,7 @@
                 },
                 "equipment->Wand of the Snowfields (7th-Level Spell)": {
                     "name": "Wand of the Snowfields (7th-Level Spell)",
-                    "description": "<p>This wand is a slender length of ice-blue glass.</p>\n<p><strong>Activate</strong> Cast a spell</p>\n<p><strong>Frequency</strong> Once per day, plus overcharge</p>\n<hr />\n<p><strong>Effect</strong> You cast <em>@UUID[Compendium.pf2e.spells-srd.Item.3puDanGfpEt6jK5k]{Cone of Cold}</em> at 7th rank.</p>\n<p>The ground within the spell's area is swathed in deep snow, becoming difficult terrain for 1 minute.</p>\n<p><strong>Craft Requirements</strong> Supply a casting of cone of cold at 7th-rank.</p>"
+                    "description": "<p>This wand is a slender length of ice-blue glass.</p>\n<p><strong>Activate</strong> Cast a spell</p>\n<p><strong>Frequency</strong> Once per day, plus overcharge</p>\n<hr />\n<p><strong>Effect</strong> You cast @UUID[Compendium.pf2e.spells-srd.Item.3puDanGfpEt6jK5k]{Cone of Cold} at 7th rank.</p>\n<p>The ground within the spell's area is swathed in deep snow, becoming difficult terrain for 1 minute.</p>\n<p><strong>Craft Requirements</strong> Supply a casting of cone of cold at 7th-rank.</p>"
                 },
                 "strike-melee->Hand": {
                     "name": "Hand"
@@ -5723,7 +5709,7 @@
                 },
                 "action->Uncanny Necromancy": {
                     "name": "Uncanny Necromancy",
-                    "description": "<p>The virulak necromancer can freely heighten <em>@UUID[Compendium.pf2e.spells-srd.Item.8ViwItUgwT4lOvvb]{False Vitality}</em>, <em>@UUID[Compendium.pf2e.spells-srd.Item.k34hDOfIIMAxNL4a]{Grim Tendrils}</em>, and <em>@UUID[Compendium.pf2e.spells-srd.Item.N1Z1oLPdBxaSgrEE]{Vampiric Feast}</em> to any level they can cast without knowing them at higher levels.</p>"
+                    "description": "<p>The virulak necromancer can freely heighten @UUID[Compendium.pf2e.spells-srd.Item.8ViwItUgwT4lOvvb]{False Vitality}, @UUID[Compendium.pf2e.spells-srd.Item.k34hDOfIIMAxNL4a]{Grim Tendrils}, and @UUID[Compendium.pf2e.spells-srd.Item.N1Z1oLPdBxaSgrEE]{Vampiric Feast} to any level they can cast without knowing them at higher levels.</p>"
                 },
                 "action->Undead Virulence": {
                     "name": "Undead Virulence",
@@ -5792,7 +5778,7 @@
                 },
                 "equipment->Demon Mask (Greater)": {
                     "name": "Demon Mask (Greater)",
-                    "description": "<p>This terrifying mask is crafted in the visage of a leering demon and grants a +2 item bonus to Intimidation checks.</p>\n<p><strong>Activate</strong> <span class=\"action-glyph\">D</span> Interact</p>\n<p><strong>Frequency</strong> once per day</p>\n<hr />\n<p><strong>Effect</strong> The mask casts a 3rd-rank <em>@UUID[Compendium.pf2e.spells-srd.Item.4koZzrnMXhhosn0D]{Fear}</em> spell with a DC of 29.</p>"
+                    "description": "<p>This terrifying mask is crafted in the visage of a leering demon and grants a +2 item bonus to Intimidation checks.</p>\n<p><strong>Activate</strong> <span class=\"action-glyph\">D</span> Interact</p>\n<p><strong>Frequency</strong> once per day</p>\n<hr />\n<p><strong>Effect</strong> The mask casts a 3rd-rank @UUID[Compendium.pf2e.spells-srd.Item.4koZzrnMXhhosn0D]{Fear} spell with a DC of 29.</p>"
                 },
                 "strike-melee->Spiked Chain": {
                     "name": "Spiked Chain"
@@ -5831,7 +5817,7 @@
                 },
                 "action->Dominate": {
                     "name": "Dominate",
-                    "description": "<p>The vampire can cast <em>@UUID[Compendium.pf2e.spells-srd.Item.OsOhx3TGIZ7AhD0P]{Dominate}</em> at will as a divine innate spell. Casting it requires staring into the target's eyes, giving the spell the visual trait.</p>\n<p>Fully destroying the vampire ends the domination, but merely reducing the vampire to 0 HP is insufficient to break the spell.</p>"
+                    "description": "<p>The vampire can cast @UUID[Compendium.pf2e.spells-srd.Item.OsOhx3TGIZ7AhD0P]{Dominate} at will as a divine innate spell. Casting it requires staring into the target's eyes, giving the spell the visual trait.</p>\n<p>Fully destroying the vampire ends the domination, but merely reducing the vampire to 0 HP is insufficient to break the spell.</p>"
                 },
                 "action->Dread Striker": {
                     "name": "Dread Striker",
@@ -5847,7 +5833,7 @@
                 },
                 "action->Turn to Mist": {
                     "name": "Turn to Mist",
-                    "description": "<p>The vampire turns into a cloud of vapor, as the <em>@UUID[Compendium.pf2e.spells-srd.Item.V8wXOsoejQhe6CyG]{Vapor Form}</em> spell, or back to its normal form. The vampire loses fast healing while in gaseous form.</p>\n<p>The vampire can remain in this form indefinitely.</p>"
+                    "description": "<p>The vampire turns into a cloud of vapor, as the @UUID[Compendium.pf2e.spells-srd.Item.V8wXOsoejQhe6CyG]{Vapor Form} spell, or back to its normal form. The vampire loses fast healing while in gaseous form.</p>\n<p>The vampire can remain in this form indefinitely.</p>"
                 },
                 "action->Grab": {
                     "name": "Grab"
@@ -5922,9 +5908,6 @@
                 "strike-melee->Claw": {
                     "name": "Claw"
                 },
-                "action->Greater Darkvision": {
-                    "name": "Greater Darkvision"
-                },
                 "action->At-Will Spells": {
                     "name": "At-Will Spells"
                 },
@@ -5946,7 +5929,7 @@
                 },
                 "action->Tormenting Dreams": {
                     "name": "Tormenting Dreams",
-                    "description": "<p><strong>Frequency</strong> once per day</p>\n<hr />\n<p><strong>Effect</strong> Yshula torments a sleeping creature within 100 feet with visions of betrayals by loved ones and friends. The target must attempt a @Check[type:will|dc:25] save, with the effects of the <em>@UUID[Compendium.pf2e.spells-srd.Item.Uqj344bezBq3ESdq]{Nightmare}</em> spell.</p>"
+                    "description": "<p><strong>Frequency</strong> once per day</p>\n<hr />\n<p><strong>Effect</strong> Yshula torments a sleeping creature within 100 feet with visions of betrayals by loved ones and friends. The target must attempt a @Check[type:will|dc:25] save, with the effects of the @UUID[Compendium.pf2e.spells-srd.Item.Uqj344bezBq3ESdq]{Nightmare} spell.</p>"
                 }
             }
         },
@@ -5960,7 +5943,7 @@
                 },
                 "equipment->Wand of Manifold Missiles (3rd-Level Spell)": {
                     "name": "Wand of Manifold Missiles (3rd-Level Spell)",
-                    "description": "<p>This wand features a carved dragon's head at its top and a polished metal sphere set in its midsection.</p>\n<p><strong>Activate</strong> Cast a Spell</p>\n<p><strong>Frequency</strong> Once per day, plus overcharge</p>\n<hr />\n<p><strong>Effect</strong> You cast <em>@UUID[Compendium.pf2e.spells-srd.Item.gKKqvLohtrSJj3BM]{Force Barrage}</em> at 3rd rank.</p>\n<p>After you cast the spell, an additional missile or missiles are released from the wand at the start of each of your turns, as though you cast the 1-action version of <em>magic missile</em>. Choose targets each time. This lasts for 1 minute, until you're no longer wielding the wand, or until you try to activate the wand again.</p>\n<p><strong>Craft Requirements</strong> Supply a casting of <em>magic missile</em> of the appropriate rank.</p>"
+                    "description": "<p>This wand features a carved dragon's head at its top and a polished metal sphere set in its midsection.</p>\n<p><strong>Activate</strong> Cast a Spell</p>\n<p><strong>Frequency</strong> Once per day, plus overcharge</p>\n<hr />\n<p><strong>Effect</strong> You cast @UUID[Compendium.pf2e.spells-srd.Item.gKKqvLohtrSJj3BM]{Force Barrage} at 3rd rank.</p>\n<p>After you cast the spell, an additional missile or missiles are released from the wand at the start of each of your turns, as though you cast the 1-action version of <em>magic missile</em>. Choose targets each time. This lasts for 1 minute, until you're no longer wielding the wand, or until you try to activate the wand again.</p>\n<p><strong>Craft Requirements</strong> Supply a casting of <em>magic missile</em> of the appropriate rank.</p>"
                 },
                 "strike-melee->Jaws": {
                     "name": "Jaws"

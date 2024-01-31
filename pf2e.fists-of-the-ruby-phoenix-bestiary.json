@@ -135,7 +135,7 @@
         "Air Rift": {
             "name": "Air Rift",
             "descriptionHazard": "<p>A portal to the Plane of Air rips open onstage, causing roaring winds to tear through the opera house</p>",
-            "disable": "<p>@Check[type:arcana|dc:38|name:Air Rift Arcana|traits:hazard,environmental,magical,air] (master) to sew the magical threads of the rift shut, @Check[type:nature|dc:40|name:Air Rift Nature|traits:hazard,environmental,magical,air] or @Check[type:survival|dc:40|name:Air Rift Survival|traits:hazard,environmental,magical,air] (legendary) to open enough windows and doors to reduce its intensity, or <em>@UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic}</em> (7th level; counteract DC 34) to counteract the air rift</p>",
+            "disable": "<p>@Check[type:arcana|dc:38|name:Air Rift Arcana|traits:hazard,environmental,magical,air] (master) to sew the magical threads of the rift shut, @Check[type:nature|dc:40|name:Air Rift Nature|traits:hazard,environmental,magical,air] or @Check[type:survival|dc:40|name:Air Rift Survival|traits:hazard,environmental,magical,air] (legendary) to open enough windows and doors to reduce its intensity, or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (7th level; counteract DC 34) to counteract the air rift</p>",
             "routine": "<p>(1 action) Winds blow through the area in a random direction, causing creatures and objects within 50 feet of the air rift to float up, down, north, south, east, or west (roll a d6 to determine which direction). Creatures and objects in the area must attempt a @Check[type:fortitude|dc:37|traits:damaging-effect,air,environmental,magical,hazard] save. If a creature is pushed into a solid object or another creature by this effect, both take @Damage[(3d8+15)[bludgeoning]] damage on impact.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature is pushed 10 feet, but takes only half damage from impact.</p>\n<p><strong>Failure</strong> The creature is pushed 20 feet, falls prone, and takes full damage from impact.</p>\n<p><strong>Critical Failure</strong> The creature is pushed 40 feet, falls prone, and takes double damage from impact.</p>",
             "stealth": "<p>(master) to notice the sudden breeze in the theater</p>",
             "items": {
@@ -144,7 +144,7 @@
                 },
                 "action->Earth Vulnerability": {
                     "name": "Earth Vulnerability",
-                    "description": "<p>The Elemental Plane of Air is opposed by the Plane of Earth. Any spell or magical effect with the earth trait that targets a creature or area within 50 feet of the rift deals 10 damage to the rift per spell ranks (or per 2 levels for magic items, feats, and so forth). For example, a 3rd-rank <em>@UUID[Compendium.pf2e.spells-srd.Item.gPvtmKMRpg9I9D7H]{Earthbind}</em> spell cast on a creature near the air rift deals 30 points of damage to the rift</p>"
+                    "description": "<p>The Elemental Plane of Air is opposed by the Plane of Earth. Any spell or magical effect with the earth trait that targets a creature or area within 50 feet of the rift deals 10 damage to the rift per spell ranks (or per 2 levels for magic items, feats, and so forth). For example, a 3rd-rank @UUID[Compendium.pf2e.spells-srd.Item.gPvtmKMRpg9I9D7H]{Earthbind} spell cast on a creature near the air rift deals 30 points of damage to the rift</p>"
                 },
                 "action->Weightlessness": {
                     "name": "Weightlessness",
@@ -837,9 +837,6 @@
                 "strike-melee->Jaws": {
                     "name": "Jaws"
                 },
-                "action->Greater Darkvision": {
-                    "name": "Greater Darkvision"
-                },
                 "action->Scent": {
                     "name": "Scent"
                 },
@@ -1006,9 +1003,6 @@
                 "strike-melee->Phantom Horn": {
                     "name": "Phantom Horn"
                 },
-                "action->Greater Darkvision": {
-                    "name": "Greater Darkvision"
-                },
                 "action->Scent": {
                     "name": "Scent"
                 },
@@ -1031,7 +1025,7 @@
                 },
                 "action->Susceptible to Death": {
                     "name": "Susceptible to Death",
-                    "description": "<p>Though phantoms aren't alive, neither are they undead, and they are uniquely vulnerable to the effects of death.</p>\n<p>A phantom whose Hit Points are reduced to 0 as a result of a death effect (such as from a spell like <em>@UUID[Compendium.pf2e.spells-srd.Item.Z9OrRXKgAPv6Hn5l]{Execute}</em>) is immediately whisked away to the River of Souls, where their soul resumes the usual path to the afterlife.</p>"
+                    "description": "<p>Though phantoms aren't alive, neither are they undead, and they are uniquely vulnerable to the effects of death.</p>\n<p>A phantom whose Hit Points are reduced to 0 as a result of a death effect (such as from a spell like @UUID[Compendium.pf2e.spells-srd.Item.Z9OrRXKgAPv6Hn5l]{Execute}) is immediately whisked away to the River of Souls, where their soul resumes the usual path to the afterlife.</p>"
                 },
                 "action->Breath Weapon": {
                     "name": "Breath Weapon",
@@ -1155,7 +1149,7 @@
         "Dimensional Darkside Mirror": {
             "name": "Dimensional Darkside Mirror",
             "descriptionHazard": "<p>A magic mirror replaces characters with evil mirror duplicates from another dimension.</p>",
-            "disable": "<p>@Check[type:thievery|dc:40|name:Retrieve a Creature] (legendary) to retrieve a creature from the other dimension within 10 minutes of the switch (possible only if their mirror duplicate is dead), @Check[type:thievery|dc:45|name:Disable the Mirror] (master) to permanently disable the mirror once all mirror duplicates are dead, or <em>@UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic}</em> (8th level; counteract DC 37) to counteract the mirror for 1 minute and prevent additional replacements during that time</p>\n<p>the mirror can't be damaged while any mirror duplicate is alive</p>",
+            "disable": "<p>@Check[type:thievery|dc:40|name:Retrieve a Creature] (legendary) to retrieve a creature from the other dimension within 10 minutes of the switch (possible only if their mirror duplicate is dead), @Check[type:thievery|dc:45|name:Disable the Mirror] (master) to permanently disable the mirror once all mirror duplicates are dead, or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (8th level; counteract DC 37) to counteract the mirror for 1 minute and prevent additional replacements during that time</p>\n<p>the mirror can't be damaged while any mirror duplicate is alive</p>",
             "reset": "<p>The mirror is always ready to absorb creatures into the other dimension. Ten minutes after a creature is sucked into the mirror, if an ally doesn't rescue the creature with Thievery, it reaches the other dimension, where it might be captured or killed. In the mirror dimension, it counts as a mirror duplicate, so the denizens of the other dimension can't destroy the mirror on their side while the absorbed creature is there. These dimensions are alternate realities, not planes, so even rituals like plane shift can't reach them.</p>",
             "routine": "<p>(1 action) The mirror absorbs another reflected creature into the mirror and replaces it with a mirror duplicate. Mirror duplicates attack on their own initiative, using the same statistics as the original creature, but with an evil alignment (changing only abilities that shift with the alignment change). A mirror duplicate can spend 3 actions in contact with the mirror to return to its original dimension and release the creature it duplicated, but most mirror duplicates prefer not to.</p>",
             "stealth": "<p>+37 (master) to notice it isn't a regular mirror</p>",
@@ -1313,7 +1307,7 @@
         "Floating Flamethrower": {
             "name": "Floating Flamethrower",
             "descriptionHazard": "<p>A floating skull of fire swoops around the arena, rotating as it weaves through the ring and releasing huge gouts of flame in random directions.</p>",
-            "disable": "<p>three @Check[type:thievery|dc:40|name:Disable an Elemental Core|traits:action:disable-a-device,hazard,magical,trap,fire] (legendary) checks or castings of <em>@UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic}</em> (7th level; counteract DC 40), one each to pull out or disable the elemental cores hidden in the floating skull's right eye, left eye, and mouth</p>",
+            "disable": "<p>three @Check[type:thievery|dc:40|name:Disable an Elemental Core|traits:action:disable-a-device,hazard,magical,trap,fire] (legendary) checks or castings of @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (7th level; counteract DC 40), one each to pull out or disable the elemental cores hidden in the floating skull's right eye, left eye, and mouth</p>",
             "routine": "<p>(3 actions) The trap loses 1 action per turn per successful check to disable. The floating flamethrower uses its first action to release a gout of flame in a @Template[type:cone|distance:15] that deals @Damage[(4d6+4)[fire]] damage (@Check[type:reflex|dc:40|basic:true] save), its second action to fly in a U-shape in a random direction, and its third action to release another gout of flame.</p>",
             "stealth": "<p>+23 (expert) or @Check[type:perception|dc:38|traits:action:seek] (master) to notice the pattern of the orb's trajectory</p>",
             "items": {
@@ -1370,7 +1364,7 @@
         "Freezing Floor Tiles": {
             "name": "Freezing Floor Tiles",
             "descriptionHazard": "<p>Four remote sensors at each corner of the arena cause bursts of freezing magic to erupt from random tiles on the arena and stop creatures in their tracks.</p>",
-            "disable": "<p>@Check[type:thievery|dc:40|name:Disable One Sensor|traits:action:disable-a-device] (legendary) or <em>@UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic}</em> (6th level; counteract DC 38) to disable one of the sensors</p>",
+            "disable": "<p>@Check[type:thievery|dc:40|name:Disable One Sensor|traits:action:disable-a-device] (legendary) or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (6th level; counteract DC 38) to disable one of the sensors</p>",
             "routine": "<p>(4 actions) The trap loses 1 action per disabled sensor. On each action, the trap causes a random 10-foot-by-10-foot space in the arena to suddenly freeze. Each creature that begins its turn in a frozen space takes @Damage[(2d6+2)[cold]] damage (@Check[type:reflex|dc:40|basic:true] save). A creature that critically fails its save also becomes @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1} for 1 round; if it was already slowed, the creature instead becomes @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Immobilized} for 1 round. Any amount of fire damage dealt to a slowed or immobilized creature removes the condition. Frozen tiles become unfrozen at the beginning of the trap's next turn.</p>",
             "stealth": "<p>+23 (expert) or @Check[type:perception|dc:38|traits:action:seek] (master) to notice the four sensors</p>",
             "items": {
@@ -1955,7 +1949,7 @@
                 },
                 "action->Guileful Charm": {
                     "name": "Guileful Charm",
-                    "description": "<p>Any creature that converses with a gumiho must attempt a @Check[type:will|dc:35] save. The creature then becomes temporarily immune for 24 hours.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected but knows the gumiho tried to charm it.</p>\n<p><strong>Success</strong> The target is unaffected.</p>\n<p><strong>Failure</strong> The target is affected by the failure effects of 4th-rank <em>@UUID[Compendium.pf2e.spells-srd.Item.vLA0q0WOK2YPuJs6]{Charm}</em>.</p>\n<p><strong>Critical Failure</strong> The target is affected by the failure effects of <em>@UUID[Compendium.pf2e.spells-srd.Item.OsOhx3TGIZ7AhD0P]{Dominate}</em>.</p>"
+                    "description": "<p>Any creature that converses with a gumiho must attempt a @Check[type:will|dc:35] save. The creature then becomes temporarily immune for 24 hours.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected but knows the gumiho tried to charm it.</p>\n<p><strong>Success</strong> The target is unaffected.</p>\n<p><strong>Failure</strong> The target is affected by the failure effects of 4th-rank @UUID[Compendium.pf2e.spells-srd.Item.vLA0q0WOK2YPuJs6]{Charm}.</p>\n<p><strong>Critical Failure</strong> The target is affected by the failure effects of @UUID[Compendium.pf2e.spells-srd.Item.OsOhx3TGIZ7AhD0P]{Dominate}.</p>"
                 },
                 "action->Charm Immunity": {
                     "name": "Charm Immunity"
@@ -2170,7 +2164,7 @@
                 },
                 "action->Quaking Stomp": {
                     "name": "Quaking Stomp",
-                    "description": "<p><strong>Frequency</strong> once per minute</p>\n<hr />\n<p><strong>Effect</strong> Jaiban stomps the ground with intense force. It creates a minor earthquake with the effects of the <em>@UUID[Compendium.pf2e.spells-srd.Item.x7SPrsRxGb2Vy2nu]{Earthquake}</em> spell, except that the range is only 100 feet and is contained to a @Template[type:burst|distance:20].</p>"
+                    "description": "<p><strong>Frequency</strong> once per minute</p>\n<hr />\n<p><strong>Effect</strong> Jaiban stomps the ground with intense force. It creates a minor earthquake with the effects of the @UUID[Compendium.pf2e.spells-srd.Item.x7SPrsRxGb2Vy2nu]{Earthquake} spell, except that the range is only 100 feet and is contained to a @Template[type:burst|distance:20].</p>"
                 },
                 "action->Trample": {
                     "name": "Trample",
@@ -2367,7 +2361,7 @@
                 },
                 "action->Susceptible to Death": {
                     "name": "Susceptible to Death",
-                    "description": "<p>Though phantoms aren't alive, neither are they undead, and they are uniquely vulnerable to the effects of death.</p>\n<p>A phantom whose Hit Points are reduced to 0 as a result of a death effect (such as from a spell like <em>@UUID[Compendium.pf2e.spells-srd.Item.Z9OrRXKgAPv6Hn5l]{Execute}</em>) is immediately whisked away to the River of Souls, where their soul resumes the usual path to the afterlife.</p>"
+                    "description": "<p>Though phantoms aren't alive, neither are they undead, and they are uniquely vulnerable to the effects of death.</p>\n<p>A phantom whose Hit Points are reduced to 0 as a result of a death effect (such as from a spell like @UUID[Compendium.pf2e.spells-srd.Item.Z9OrRXKgAPv6Hn5l]{Execute}) is immediately whisked away to the River of Souls, where their soul resumes the usual path to the afterlife.</p>"
                 },
                 "action->Call a Battle Echo": {
                     "name": "Call a Battle Echo",
@@ -2379,11 +2373,11 @@
                 },
                 "action->Wind-Fire Charge": {
                     "name": "Wind-Fire Charge",
-                    "description": "<p><strong>Requirements</strong> Jin-Hae is wielding her feng huo lun</p>\n<hr />\n<p><strong>Effect</strong> Jin-Hae blasts off on her feng huo lun, leaving an elemental trail in her wake. She Strides up to twice her Speed and makes a feng huo lun Strike at any point during her movement. The path left by her movement is filled with her choice of an 8th-rank <em>@UUID[Compendium.pf2e.spells-srd.Item.it4ZsAi6XgvGcodc]{Wall of Wind}</em> or <em>@UUID[Compendium.pf2e.spells-srd.Item.IarZrgCeaiUqOuRu]{Wall of Fire}</em> spell. Jin-Hae is unaffected by any walls she creates with this ability. She cannot use Wind-Fire Charge again for [[/br 1d4 #rounds]]{1d4 rounds}. If she uses Wind-Fire Charge again, the wall created by her previous Wind-Fire Charge disappears as soon as her action is completed.</p>"
+                    "description": "<p><strong>Requirements</strong> Jin-Hae is wielding her feng huo lun</p>\n<hr />\n<p><strong>Effect</strong> Jin-Hae blasts off on her feng huo lun, leaving an elemental trail in her wake. She Strides up to twice her Speed and makes a feng huo lun Strike at any point during her movement. The path left by her movement is filled with her choice of an 8th-rank @UUID[Compendium.pf2e.spells-srd.Item.it4ZsAi6XgvGcodc]{Wall of Wind} or @UUID[Compendium.pf2e.spells-srd.Item.IarZrgCeaiUqOuRu]{Wall of Fire} spell. Jin-Hae is unaffected by any walls she creates with this ability. She cannot use Wind-Fire Charge again for [[/br 1d4 #rounds]]{1d4 rounds}. If she uses Wind-Fire Charge again, the wall created by her previous Wind-Fire Charge disappears as soon as her action is completed.</p>"
                 },
                 "action->Wind-Fire Chariot": {
                     "name": "Wind-Fire Chariot",
-                    "description": "<p><strong>Requirements</strong> Jin-Hae is wielding two feng huo lun</p>\n<hr />\n<p><strong>Effect</strong> Jin-Hae's feng huo lun float by her feet, giving her the benefits of 7th- level <em>@UUID[Compendium.pf2e.spells-srd.Item.U0hL0LLaprcnAyzC]{Migration}</em>. While this lasts, she can wield her feng huo lun even while her hands are full by kicking with them, and her feng huo lun gain the thrown 20 feet trait as well as the effects of a returning rune.</p>"
+                    "description": "<p><strong>Requirements</strong> Jin-Hae is wielding two feng huo lun</p>\n<hr />\n<p><strong>Effect</strong> Jin-Hae's feng huo lun float by her feet, giving her the benefits of 7th- level @UUID[Compendium.pf2e.spells-srd.Item.U0hL0LLaprcnAyzC]{Migration}. While this lasts, she can wield her feng huo lun even while her hands are full by kicking with them, and her feng huo lun gain the thrown 20 feet trait as well as the effects of a returning rune.</p>"
                 },
                 "lore->Warfare Lore": {
                     "name": "Warfare Lore"
@@ -2489,7 +2483,7 @@
                 },
                 "consumable->Potion of Undetectability": {
                     "name": "Potion of Undetectability",
-                    "description": "<p>Drinking this dull-black liquid makes you undetectable to divinations.</p>\n<p>This grants the same effects as <em>@UUID[Compendium.pf2e.spells-srd.Item.C2w3YfBKjIRS07DP]{Hidden Mind}</em>, but without the bonus against mental effects. You also gain the effects of a 4th-rank <em>@UUID[Compendium.pf2e.spells-srd.Item.XXqE1eY3w3z6xJCB]{Invisibility}</em> spell, which protects against <em>@UUID[Compendium.pf2e.spells-srd.Item.jwK43yKsHTkJQvQ9]{See the Unseen}</em> spells of 8th level and lower and has a DC of 36 against <em>@UUID[Compendium.pf2e.spells-srd.Item.uqlxMQQeSGWEVjki]{Truesight}</em>.</p>\n<p>The potion's effects last for 10 minutes.</p>"
+                    "description": "<p>Drinking this dull-black liquid makes you undetectable to divinations.</p>\n<p>This grants the same effects as @UUID[Compendium.pf2e.spells-srd.Item.C2w3YfBKjIRS07DP]{Hidden Mind}, but without the bonus against mental effects. You also gain the effects of a 4th-rank @UUID[Compendium.pf2e.spells-srd.Item.XXqE1eY3w3z6xJCB]{Invisibility} spell, which protects against @UUID[Compendium.pf2e.spells-srd.Item.jwK43yKsHTkJQvQ9]{See the Unseen} spells of 8th level and lower and has a DC of 36 against @UUID[Compendium.pf2e.spells-srd.Item.uqlxMQQeSGWEVjki]{Truesight}.</p>\n<p>The potion's effects last for 10 minutes.</p>"
                 },
                 "strike-melee->Fist": {
                     "name": "Fist"
@@ -2656,7 +2650,7 @@
                 },
                 "action->Bloodline Magic": {
                     "name": "Bloodline Magic",
-                    "description": "<p>When Koto Zekora casts a bloodline spell, <em>@UUID[Compendium.pf2e.spells-srd.Item.VlNcjmYyu95vOUe8]{Translocate}</em>, <em>@UUID[Compendium.pf2e.spells-srd.Item.r7ihOgKv19eJQnik]{Disintegrate}</em>, <em>@UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic}</em>, <em>@UUID[Compendium.pf2e.spells-srd.Item.o6YCGx4lycsYpww4]{Haste}</em>, <em>@UUID[Compendium.pf2e.spells-srd.Item.gKKqvLohtrSJj3BM]{Force Barrage}</em>, <em>@UUID[Compendium.pf2e.spells-srd.Item.d6o52BnjViNz7Gub]{Prismatic Spray}</em>, <em>@UUID[Compendium.pf2e.spells-srd.Item.Ek5XI0aEdZhBgm21]{Scouting Eye}</em>, or <em>@UUID[Compendium.pf2e.spells-srd.Item.Oj1PJBMQD9vuwCv7]{Quandary}</em>, she gains a +1 status bonus to skill checks for 1 round.<br />@UUID[Compendium.pf2e.bestiary-effects.Item.tvybMInVm415jA3p]{Effect: Bloodline Magic}</p>"
+                    "description": "<p>When Koto Zekora casts a bloodline spell, @UUID[Compendium.pf2e.spells-srd.Item.VlNcjmYyu95vOUe8]{Translocate}, @UUID[Compendium.pf2e.spells-srd.Item.r7ihOgKv19eJQnik]{Disintegrate}, @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic}, @UUID[Compendium.pf2e.spells-srd.Item.o6YCGx4lycsYpww4]{Haste}, @UUID[Compendium.pf2e.spells-srd.Item.gKKqvLohtrSJj3BM]{Force Barrage}, @UUID[Compendium.pf2e.spells-srd.Item.d6o52BnjViNz7Gub]{Prismatic Spray}, @UUID[Compendium.pf2e.spells-srd.Item.Ek5XI0aEdZhBgm21]{Scouting Eye}, or @UUID[Compendium.pf2e.spells-srd.Item.Oj1PJBMQD9vuwCv7]{Quandary}, she gains a +1 status bonus to skill checks for 1 round.<br />@UUID[Compendium.pf2e.bestiary-effects.Item.tvybMInVm415jA3p]{Effect: Bloodline Magic}</p>"
                 },
                 "action->At-Will Spells": {
                     "name": "At-Will Spells"
@@ -2763,7 +2757,7 @@
                 },
                 "equipment->Maestro's Instrument (Greater)": {
                     "name": "Maestro's Instrument (Greater)",
-                    "description": "<p>A maestro's instrument can be crafted in the form of any variety of handheld musical instrument. A greater maestro's instrument grants you a +3 item bonus to Performance checks while playing music with the instrument.</p>\n<p><strong>Activate</strong> <span class=\"action-glyph\">D</span> Interact</p>\n<p><strong>Frequency</strong> once per day</p>\n<hr />\n<p><strong>Effect</strong> You can play the instrument to produce the effects of an 8th level (DC 38) <em>@UUID[Compendium.pf2e.spells-srd.Item.vLA0q0WOK2YPuJs6]{Charm}</em> spell.</p>\n<hr />\n<p><strong>Craft Requirements</strong> You must supply a casting of <em>charm</em> of the appropriate rank.</p>"
+                    "description": "<p>A maestro's instrument can be crafted in the form of any variety of handheld musical instrument. A greater maestro's instrument grants you a +3 item bonus to Performance checks while playing music with the instrument.</p>\n<p><strong>Activate</strong> <span class=\"action-glyph\">D</span> Interact</p>\n<p><strong>Frequency</strong> once per day</p>\n<hr />\n<p><strong>Effect</strong> You can play the instrument to produce the effects of an 8th level (DC 38) @UUID[Compendium.pf2e.spells-srd.Item.vLA0q0WOK2YPuJs6]{Charm} spell.</p>\n<hr />\n<p><strong>Craft Requirements</strong> You must supply a casting of <em>charm</em> of the appropriate rank.</p>"
                 },
                 "strike-melee->Fighting Fan": {
                     "name": "Fighting Fan"
@@ -3086,7 +3080,7 @@
                 },
                 "action->Mud Trail": {
                     "name": "Mud Trail",
-                    "description": "<p>When a muckish creep Strides or Steps, it leaves behind a slimy mud trail that coats the traversed area. All traversed squares are covered in <em>@UUID[Compendium.pf2e.spells-srd.Item.Wu0xFpewMKRK3HG8]{Grease}</em> (@Check[type:reflex|dc:26] or @Check[type:acrobatics|dc:26|name:Mud Trails]) until the start of the muckish creep's next turn.</p>"
+                    "description": "<p>When a muckish creep Strides or Steps, it leaves behind a slimy mud trail that coats the traversed area. All traversed squares are covered in @UUID[Compendium.pf2e.spells-srd.Item.Wu0xFpewMKRK3HG8]{Grease} (@Check[type:reflex|dc:26] or @Check[type:acrobatics|dc:26|name:Mud Trails]) until the start of the muckish creep's next turn.</p>"
                 },
                 "action->Slippery Body": {
                     "name": "Slippery Body",
@@ -3115,7 +3109,7 @@
             "items": {
                 "equipment->Hat of Disguise (Greater)": {
                     "name": "Hat of Disguise (Greater)",
-                    "description": "<p>This ordinary-looking hat allows you to cloak yourself in illusions.</p>\n<p><strong>Activate</strong> <span class=\"action-glyph\">D</span> Interact</p>\n<p><strong>Frequency</strong> any number of times per day</p>\n<hr />\n<p><strong>Effect</strong> The hat casts a 2nd-rank <em>@UUID[Compendium.pf2e.spells-srd.Item.i35dpZFI7jZcRoBo]{Illusory Disguise}</em> spell on you. While setting up the disguise, you can magically alter the hat to appear as a comb, ribbon, helm, or other piece of headwear.</p>"
+                    "description": "<p>This ordinary-looking hat allows you to cloak yourself in illusions.</p>\n<p><strong>Activate</strong> <span class=\"action-glyph\">D</span> Interact</p>\n<p><strong>Frequency</strong> any number of times per day</p>\n<hr />\n<p><strong>Effect</strong> The hat casts a 2nd-rank @UUID[Compendium.pf2e.spells-srd.Item.i35dpZFI7jZcRoBo]{Illusory Disguise} spell on you. While setting up the disguise, you can magically alter the hat to appear as a comb, ribbon, helm, or other piece of headwear.</p>"
                 },
                 "action->Quick Change": {
                     "name": "Quick Change",
@@ -3174,7 +3168,7 @@
                 },
                 "action->Instrument of Faith": {
                     "name": "Instrument of Faith",
-                    "description": "<p>The divine warden is a beacon for its deity's faith. A cleric of the divine warden's patron deity can channel a <em>@UUID[Compendium.pf2e.spells-srd.Item.rfZpqmj0AIIdkVIs]{Heal}</em> spell through a divine warden they can see within 60 feet. The cleric determines any targets or area for the spell as if they were standing in the divine warden's space.</p>"
+                    "description": "<p>The divine warden is a beacon for its deity's faith. A cleric of the divine warden's patron deity can channel a @UUID[Compendium.pf2e.spells-srd.Item.rfZpqmj0AIIdkVIs]{Heal} spell through a divine warden they can see within 60 feet. The cleric determines any targets or area for the spell as if they were standing in the divine warden's space.</p>"
                 },
                 "action->Grab": {
                     "name": "Grab"
@@ -3364,9 +3358,6 @@
                 "strike-melee->Cloak": {
                     "name": "Cloak"
                 },
-                "action->Greater Darkvision": {
-                    "name": "Greater Darkvision"
-                },
                 "action->Eat Portal": {
                     "name": "Eat Portal",
                     "description": "<p><strong>Requirements</strong> The portal eater's beak is not grabbing a creature</p>\n<p><strong>Trigger</strong> A creature teleports or is summoned within 50 feet of the portal eater</p>\n<hr />\n<p><strong>Effect</strong> The portal eater attempts to eat the portal. It makes a counteract check against the effect (counteract modifier +33, counteract rank 9th). If the effect is counteracted, the creature arrives in the portal eater's beak and the portal eater @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.Tkd8sH4pwFIPzqTr]{Grabs} it.</p>"
@@ -3392,7 +3383,7 @@
                 },
                 "action->Unfurl Realities": {
                     "name": "Unfurl Realities",
-                    "description": "<p>The portal eater unfurls its crystalline cloak of stolen realities, releasing a wave of cosmic energy and casting <em>@UUID[Compendium.pf2e.spells-srd.Item.d6o52BnjViNz7Gub]{Prismatic Spray}</em> (DC 39) in a @Template[type:emanation|distance:60]. The portal eater can't Unfurl Realities again for [[/br 1d4 #Recharge Unfurl Realities]]{1d4 rounds}.</p>"
+                    "description": "<p>The portal eater unfurls its crystalline cloak of stolen realities, releasing a wave of cosmic energy and casting @UUID[Compendium.pf2e.spells-srd.Item.d6o52BnjViNz7Gub]{Prismatic Spray} (DC 39) in a @Template[type:emanation|distance:60]. The portal eater can't Unfurl Realities again for [[/br 1d4 #Recharge Unfurl Realities]]{1d4 rounds}.</p>"
                 },
                 "action->Improved Grab": {
                     "name": "Improved Grab"
@@ -3660,7 +3651,7 @@
                 },
                 "equipment->Greater Maestro's Instrument (Erhu)": {
                     "name": "Greater Maestro's Instrument (Erhu)",
-                    "description": "<p>A maestro's instrument can be crafted in the form of any variety of handheld musical instrument. A greater maestro's instrument grants you a +3 item bonus to Performance checks while playing music with the instrument.</p>\n<p><strong>Activate</strong> <span class=\"action-glyph\">D</span> Interact</p>\n<p><strong>Frequency</strong> once per day</p>\n<hr />\n<p><strong>Effect</strong> You can play the instrument to produce the effects of an 8th level (DC 38) <em>@UUID[Compendium.pf2e.spells-srd.Item.vLA0q0WOK2YPuJs6]{Charm}</em> spell.</p>\n<hr />\n<p><strong>Craft Requirements</strong> You must supply a casting of <em>charm</em> of the appropriate rank.</p>"
+                    "description": "<p>A maestro's instrument can be crafted in the form of any variety of handheld musical instrument. A greater maestro's instrument grants you a +3 item bonus to Performance checks while playing music with the instrument.</p>\n<p><strong>Activate</strong> <span class=\"action-glyph\">D</span> Interact</p>\n<p><strong>Frequency</strong> once per day</p>\n<hr />\n<p><strong>Effect</strong> You can play the instrument to produce the effects of an 8th level (DC 38) @UUID[Compendium.pf2e.spells-srd.Item.vLA0q0WOK2YPuJs6]{Charm} spell.</p>\n<hr />\n<p><strong>Craft Requirements</strong> You must supply a casting of <em>charm</em> of the appropriate rank.</p>"
                 },
                 "strike-melee->Erhu Bow": {
                     "name": "Erhu Bow"
@@ -3843,9 +3834,6 @@
                 "strike-melee->Talon": {
                     "name": "Talon"
                 },
-                "action->Greater Darkvision": {
-                    "name": "Greater Darkvision"
-                },
                 "action->Golden Sun": {
                     "name": "Golden Sun",
                     "description": "<p>10 feet. A golden aura envelopes the sanzuwu, protecting them from weak magic. Any non-cold spells of 3rd level or lower burn away and are ineffective. A sanzuwu can deactivate or activate the golden aura as a free action with the concentrate trait.</p>"
@@ -3856,7 +3844,7 @@
                 },
                 "action->Fiery Transformation": {
                     "name": "Fiery Transformation",
-                    "description": "<p>The sanzuwu transforms into an enormous bird made of flame. As the sanzuwu begins their transformation, creatures within a @Template[type:emanation|distance:10] take @Damage[6d8[fire]] damage (@Check[type:reflex|dc:33|basic:true] save). While in their flame form, the sanzuwu gains the effects of 4th-rank <em>@UUID[Compendium.pf2e.spells-srd.Item.wzctak6BxOW8xvFV]{Enlarge}</em>. They can use Fiery Transformation again to revert back to their standard form.</p>"
+                    "description": "<p>The sanzuwu transforms into an enormous bird made of flame. As the sanzuwu begins their transformation, creatures within a @Template[type:emanation|distance:10] take @Damage[6d8[fire]] damage (@Check[type:reflex|dc:33|basic:true] save). While in their flame form, the sanzuwu gains the effects of 4th-rank @UUID[Compendium.pf2e.spells-srd.Item.wzctak6BxOW8xvFV]{Enlarge}. They can use Fiery Transformation again to revert back to their standard form.</p>"
                 },
                 "action->Radiant Blast": {
                     "name": "Radiant Blast",
@@ -3864,7 +3852,7 @@
                 },
                 "action->Scorch Earth": {
                     "name": "Scorch Earth",
-                    "description": "<p><strong>Requirements</strong> The sanzuwu is standing on the ground</p>\n<hr />\n<p><strong>Effect</strong> The sanzuwu Strides. A 6th-rank <em>@UUID[Compendium.pf2e.spells-srd.Item.IarZrgCeaiUqOuRu]{Wall of Fire}</em> appears in all the spaces the sanzuwu left during this movement, lasting for 1 round. The sanzuwu can't use Scorch Earth again for [[/br 1d4 #Recharge Scorch Earth]]{1d4 rounds}.</p>"
+                    "description": "<p><strong>Requirements</strong> The sanzuwu is standing on the ground</p>\n<hr />\n<p><strong>Effect</strong> The sanzuwu Strides. A 6th-rank @UUID[Compendium.pf2e.spells-srd.Item.IarZrgCeaiUqOuRu]{Wall of Fire} appears in all the spaces the sanzuwu left during this movement, lasting for 1 round. The sanzuwu can't use Scorch Earth again for [[/br 1d4 #Recharge Scorch Earth]]{1d4 rounds}.</p>"
                 },
                 "action->Transfixing Sunbeam": {
                     "name": "Transfixing Sunbeam",
@@ -3889,9 +3877,6 @@
                 },
                 "strike-ranged->Sonic Missile": {
                     "name": "Sonic Missile"
-                },
-                "action->Greater Darkvision": {
-                    "name": "Greater Darkvision"
                 },
                 "action->Shadow Step": {
                     "name": "Shadow Step",
@@ -4148,7 +4133,7 @@
                 },
                 "action->Extradimensional Immunity": {
                     "name": "Extradimensional Immunity",
-                    "description": "<p>Syndara can foil any attempts to use planar powers against him. He is immune to all extradimensional effects, such as <em>@UUID[Compendium.pf2e.spells-srd.Item.Oj1PJBMQD9vuwCv7]{Quandary}</em>, but can choose to be affected by such effects normally.</p>"
+                    "description": "<p>Syndara can foil any attempts to use planar powers against him. He is immune to all extradimensional effects, such as @UUID[Compendium.pf2e.spells-srd.Item.Oj1PJBMQD9vuwCv7]{Quandary}, but can choose to be affected by such effects normally.</p>"
                 },
                 "action->Dimensional Flurry": {
                     "name": "Dimensional Flurry",
@@ -4203,7 +4188,7 @@
                 },
                 "action->Pacifying Aura": {
                     "name": "Pacifying Aura",
-                    "description": "<p>100 feet. A spirit turtle exudes a constant feeling of calm. Creatures within the aura are subjected to a 10th-rank <em>@UUID[Compendium.pf2e.spells-srd.Item.b515AZlB0sridKSq]{Calm}</em> spell (@Check[type:will|dc:44] save). The effects persist up to 1 hour, even if the creature leaves the aura. Regardless of the result of the saving throw, the creature is temporarily immune for 1 hour.</p>"
+                    "description": "<p>100 feet. A spirit turtle exudes a constant feeling of calm. Creatures within the aura are subjected to a 10th-rank @UUID[Compendium.pf2e.spells-srd.Item.b515AZlB0sridKSq]{Calm} spell (@Check[type:will|dc:44] save). The effects persist up to 1 hour, even if the creature leaves the aura. Regardless of the result of the saving throw, the creature is temporarily immune for 1 hour.</p>"
                 },
                 "action->Constrict": {
                     "name": "Constrict",
@@ -4372,7 +4357,7 @@
                 },
                 "action->Extradimensional Immunity": {
                     "name": "Extradimensional Immunity",
-                    "description": "<p>Syndara can foil any attempts to use planar powers against him. He is immune to all extradimensional effects, such as <em>@UUID[Compendium.pf2e.spells-srd.Item.Oj1PJBMQD9vuwCv7]{Quandary}</em>, but can choose to be affected by such effects normally.</p>"
+                    "description": "<p>Syndara can foil any attempts to use planar powers against him. He is immune to all extradimensional effects, such as @UUID[Compendium.pf2e.spells-srd.Item.Oj1PJBMQD9vuwCv7]{Quandary}, but can choose to be affected by such effects normally.</p>"
                 },
                 "action->Gateway Onslaught": {
                     "name": "Gateway Onslaught",
@@ -4526,9 +4511,6 @@
                 },
                 "strike-ranged->Shortbow": {
                     "name": "Shortbow"
-                },
-                "action->Greater Darkvision": {
-                    "name": "Greater Darkvision"
                 },
                 "action->Botanic Interruption": {
                     "name": "Botanic Interruption",
@@ -5009,7 +4991,7 @@
                 },
                 "action->Light Vulnerability": {
                     "name": "Light Vulnerability",
-                    "description": "<p>An object shedding magical light (such as from the <em>@UUID[Compendium.pf2e.spells-srd.Item.WBmvzNDfpwka3qT4]{Light}</em> spell) is treated as magical when used to attack the shadow.</p>"
+                    "description": "<p>An object shedding magical light (such as from the @UUID[Compendium.pf2e.spells-srd.Item.WBmvzNDfpwka3qT4]{Light} spell) is treated as magical when used to attack the shadow.</p>"
                 },
                 "action->Rejuvenation": {
                     "name": "Rejuvenation",
