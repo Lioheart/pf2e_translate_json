@@ -383,9 +383,6 @@
                 "strike-melee->Jaws": {
                     "name": "Jaws"
                 },
-                "action->Scent (Imprecise) 30 feet": {
-                    "name": "Scent (Imprecise) 30 feet"
-                },
                 "action->Tighten Coils": {
                     "name": "Tighten Coils",
                     "description": "<p><strong>Trigger</strong> A creature @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed} or @UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{Restrained} by the ball python attempts to @UUID[Compendium.pf2e.actionspf2e.Item.SkZAQRkLLkmBQNB9]{Escape}.</p>\n<hr />\n<p><strong>Effect</strong> The DC of the Escape check is increased by 2.</p>"
@@ -444,9 +441,6 @@
                 "strike-melee->Tail": {
                     "name": "Tail"
                 },
-                "action->Scent (Imprecise) 30 feet": {
-                    "name": "Scent (Imprecise) 30 feet"
-                },
                 "action->Intimidating Display": {
                     "name": "Intimidating Display",
                     "description": "<p>The giant frilled lizard Strides. If it ends that Stride adjacent to at least one other creature, it suddenly displays its colorful neck frills and issues a frightening hiss. Each adjacent creature must succeed at a @Check[type:will|dc:21] save or become @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 2} (or @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 3} on a critical failure).</p>\n<p>The creature is then temporarily immune to Intimidating Display for 1 minute.</p>"
@@ -459,9 +453,6 @@
             "items": {
                 "strike-melee->Jaws": {
                     "name": "Jaws"
-                },
-                "action->Scent (Imprecise) 60 feet": {
-                    "name": "Scent (Imprecise) 60 feet"
                 },
                 "action->Megalania Venom": {
                     "name": "Megalania Venom",
@@ -600,9 +591,6 @@
                     "name": "Abyssal Knowledge",
                     "description": "<p>When a quasit offers Aid for an Arcana or Religion check, it gets the critical success result on any success and gets the critical failure result on any failure.</p>"
                 },
-                "action->At-Will Spells": {
-                    "name": "At-Will Spells"
-                },
                 "action->Virtue Aversion": {
                     "name": "Virtue Aversion",
                     "description": "<p>The quasit's link to a mortal soul gave it birth, but it presents a vulnerability. Once per round, a creature can present an object related to something virtuous or good in the life of the quasit's creator (such as a beloved daughter's doll) as an Interact action to automatically deal the quasit @Damage[2d6[mental]] damage.</p>"
@@ -689,9 +677,6 @@
                 "action->Blood Scent": {
                     "name": "Blood Scent",
                     "description": "<p>The shark can smell blood in the water from up to 1 mile away.</p>"
-                },
-                "action->Scent (Imprecise) 100 feet": {
-                    "name": "Scent (Imprecise) 100 feet"
                 },
                 "action->Breach": {
                     "name": "Breach",
@@ -847,9 +832,6 @@
                 },
                 "strike-melee->Fist": {
                     "name": "Fist"
-                },
-                "action->At-Will Spells": {
-                    "name": "At-Will Spells"
                 },
                 "action->Constant Spells": {
                     "name": "Constant Spells"
@@ -1610,9 +1592,6 @@
                 },
                 "strike-melee->Claw": {
                     "name": "Claw"
-                },
-                "action->Scent (Imprecise) 30 feet": {
-                    "name": "Scent (Imprecise) 30 feet"
                 },
                 "action->Favored Prey": {
                     "name": "Favored Prey",
@@ -2493,7 +2472,7 @@
             "name": "Foretold Ruin (1-2)",
             "descriptionHazard": "<p>Daemonic curses slither and crawl through malevolent runes carved in four stone pillars. HP is per-pillar.</p>",
             "disable": "<p>@Check[type:thievery|dc:17|name:Disable Thievery] (trained) to scratch out a pillar's runes, @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (1st level; counteract DC 15) to counteract a pillar's magic, or @Check[type:athletics|dc:18|name:Disable Athletics|traits:action:force-open]{Athletics (Force Open)} to push a pillar over. Disabling a pillar requires two actions. Disabling all four pillars or slaying Sezruth disables the trap</p>",
-            "routine": "<p><strong>Routine (4 actions)</strong> The trap loses 1 action each turn for each disabled pillar. On its initiative, the trap uses each action to afflict a different non-evil creature in the room with thirst. The creature must attempt a @Check[type:fortitude|dc:17|name:Foretold Ruin|traits:damaging-effect] save.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is temporarily immune to additional negative effects from the <em>foretold ruin</em> hazard's reaction for 24 hours. The hazard has no awareness of this immunity and continues to target this creature.</p>\n<p><strong>Success</strong> The creature is unaffected.</p>\n<p><strong>Failure</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.HL2l2VRSaQHu9lUw]{Fatigued} until they drink water. If the creature was already fatigued, they take [[/r 1d6 #nonlethal mental]]{1d6 nonlethal mental damage}.</p>\n<p><strong>Critical Failure</strong> The creature is fatigued until they drink water and takes [[/r 1d6 #nonlethal mental]]{1d6 nonlethal mental damage}. If the creature was already fatigued, they instead take [[/r 2d6 #nonlethal mental]]{2d6 nonlethal mental damage}.</p>",
+            "routine": "<p><strong>Routine (4 actions)</strong> The trap loses 1 action each turn for each disabled pillar. On its initiative, the trap uses each action to afflict a different non-evil creature in the room with thirst. The creature must attempt a @Check[type:fortitude|dc:17|name:Foretold Ruin|traits:damaging-effect] save.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is temporarily immune to additional negative effects from the <em>foretold ruin</em> hazard's reaction for 24 hours. The hazard has no awareness of this immunity and continues to target this creature.</p>\n<p><strong>Success</strong> The creature is unaffected.</p>\n<p><strong>Failure</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.HL2l2VRSaQHu9lUw]{Fatigued} until they drink water. If the creature was already fatigued, they take @Damage[1d6[nonlethal,mental]]{1d6 nonlethal mental} damage.</p>\n<p><strong>Critical Failure</strong> The creature is fatigued until they drink water and takes 1d6 nonlethal mental damage. If the creature was already fatigued, they instead take @Damage[2d6[nonlethal,mental]]{2d6 nonlethal mental} damage.</p>",
             "stealth": "<p>(trained)</p>",
             "items": {
                 "action->Spite": {
@@ -2506,7 +2485,7 @@
             "name": "Foretold Ruin (3-4)",
             "descriptionHazard": "<p>Daemonic curses slither and crawl through malevolent runes carved in four stone pillars. HP is per-pillar.</p>",
             "disable": "<p>@Check[type:thievery|dc:20|name:Disable Thievery] (trained) to scratch out a pillar's runes, @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (2nd level; counteract DC 18) to counteract a pillar's magic, or @Check[type:athletics|dc:21|name:Disable Athletics|traits:action:force-open]{Athletics (Force Open)} to push a pillar over. Disabling a pillar requires two actions. Disabling all four pillars or slaying Sezruth disables the trap</p>",
-            "routine": "<p><strong>Routine (4 actions)</strong> The trap loses 1 action each turn for each disabled pillar. On its initiative, the trap uses each action to afflict a different non-evil creature in the room with thirst. The creature must attempt a @Check[type:fortitude|dc:20|name:Foretold Ruin|traits:damaging-effect] save.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is temporarily immune to additional negative effects from the <em>foretold ruin</em> hazard's reaction for 24 hours. The hazard has no awareness of this immunity and continues to target this creature.</p>\n<p><strong>Success</strong> The creature is unaffected.</p>\n<p><strong>Failure</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.HL2l2VRSaQHu9lUw]{Fatigued} until they drink water. If the creature was already fatigued, they take [[/r 1d6 #nonlethal mental]]{1d6 nonlethal mental damage}.</p>\n<p><strong>Critical Failure</strong> The creature is fatigued until they drink water and takes [[/r 1d6 #nonlethal mental]]{1d6 nonlethal mental damage}. If the creature was already fatigued, they instead take [[/r 2d6 #nonlethal mental]]{2d6 nonlethal mental damage}.</p>",
+            "routine": "<p><strong>Routine (4 actions)</strong> The trap loses 1 action each turn for each disabled pillar. On its initiative, the trap uses each action to afflict a different non-evil creature in the room with thirst. The creature must attempt a @Check[type:fortitude|dc:20|name:Foretold Ruin|traits:damaging-effect] save.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is temporarily immune to additional negative effects from the <em>foretold ruin</em> hazard's reaction for 24 hours. The hazard has no awareness of this immunity and continues to target this creature.</p>\n<p><strong>Success</strong> The creature is unaffected.</p>\n<p><strong>Failure</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.HL2l2VRSaQHu9lUw]{Fatigued} until they drink water. If the creature was already fatigued, they take @Damage[1d6[nonlethal,mental]]{1d6 nonlethal mental} damage.</p>\n<p><strong>Critical Failure</strong> The creature is fatigued until they drink water and takes 1d6 nonlethal mental damage. If the creature was already fatigued, they instead take @Damage[2d6[nonlethal,mental]]{2d6 nonlethal mental} damage.</p>",
             "items": {
                 "action->Spite": {
                     "name": "Spite",
@@ -2555,9 +2534,6 @@
                 "strike-melee->Jaws": {
                     "name": "Jaws"
                 },
-                "action->Scent (Imprecise) 30 feet": {
-                    "name": "Scent (Imprecise) 30 feet"
-                },
                 "action->Regeneration 10 (Deactivated by Acid or Fire)": {
                     "name": "Regeneration 10 (Deactivated by Acid or Fire)"
                 },
@@ -2579,9 +2555,6 @@
             "items": {
                 "strike-melee->Mandibles": {
                     "name": "Mandibles"
-                },
-                "action->Scent (Imprecise) 30 feet": {
-                    "name": "Scent (Imprecise) 30 feet"
                 },
                 "action->Haul Away": {
                     "name": "Haul Away",
@@ -2609,9 +2582,6 @@
                 },
                 "strike-melee->Fist": {
                     "name": "Fist"
-                },
-                "action->Scent (Imprecise) 30 feet": {
-                    "name": "Scent (Imprecise) 30 feet"
                 },
                 "action->Bushwhack": {
                     "name": "Bushwhack",
@@ -2876,9 +2846,6 @@
                 "strike-ranged->Thorn Spike": {
                     "name": "Thorn Spike"
                 },
-                "action->At-Will Spells": {
-                    "name": "At-Will Spells"
-                },
                 "action->Constant Spells": {
                     "name": "Constant Spells"
                 },
@@ -2908,9 +2875,6 @@
                 },
                 "strike-ranged->Thorn Spike": {
                     "name": "Thorn Spike"
-                },
-                "action->At-Will Spells": {
-                    "name": "At-Will Spells"
                 },
                 "action->Constant Spells": {
                     "name": "Constant Spells"
@@ -2969,9 +2933,6 @@
                     "name": "Wild Empathy",
                     "description": "<p>The planar nixie can use Diplomacy to @UUID[Compendium.pf2e.actionspf2e.Item.OX4fy22hQgUHDr0q]{Make an Impression} on and make very simple Requests of aquatic or amphibious animals and elementals.</p>"
                 },
-                "action->At-Will Spells": {
-                    "name": "At-Will Spells"
-                },
                 "action->+1 Status to All Saves vs. Magic": {
                     "name": "+1 Status to All Saves vs. Magic"
                 },
@@ -3011,9 +2972,6 @@
                 "strike-melee->Tusk": {
                     "name": "Tusk"
                 },
-                "action->Scent (Imprecise) 30 feet": {
-                    "name": "Scent (Imprecise) 30 feet"
-                },
                 "action->Ferocity": {
                     "name": "Ferocity"
                 },
@@ -3028,9 +2986,6 @@
             "items": {
                 "strike-melee->Tusk": {
                     "name": "Tusk"
-                },
-                "action->Scent (Imprecise) 30 feet": {
-                    "name": "Scent (Imprecise) 30 feet"
                 },
                 "action->Ferocity": {
                     "name": "Ferocity"
@@ -3212,9 +3167,6 @@
                 },
                 "strike-melee->Claw": {
                     "name": "Claw"
-                },
-                "action->Scent (Imprecise) 30 feet": {
-                    "name": "Scent (Imprecise) 30 feet"
                 },
                 "action->Pack Attack": {
                     "name": "Pack Attack",
@@ -3430,9 +3382,6 @@
                 "strike-ranged->Mirror Beam": {
                     "name": "Mirror Beam"
                 },
-                "action->Scent (Imprecise) 30 feet": {
-                    "name": "Scent (Imprecise) 30 feet"
-                },
                 "action->Mirror Beam": {
                     "name": "Mirror Beam",
                     "description": "<p>Mishka can make ranged Strikes by reflecting sunlight off the mirror on his back. Mishka can target only creatures that are above him in elevation with this ability, including those on his back.</p>"
@@ -3458,9 +3407,6 @@
                 },
                 "strike-ranged->Mirror Beam": {
                     "name": "Mirror Beam"
-                },
-                "action->Scent (Imprecise) 30 feet": {
-                    "name": "Scent (Imprecise) 30 feet"
                 },
                 "action->Mirror Beam": {
                     "name": "Mirror Beam",
@@ -3686,9 +3632,6 @@
                 "strike-melee->Jaws": {
                     "name": "Jaws"
                 },
-                "action->Scent (Imprecise) 30 feet": {
-                    "name": "Scent (Imprecise) 30 feet"
-                },
                 "action->Regeneration 15 (Deactivated by Acid or Fire)": {
                     "name": "Regeneration 15 (Deactivated by Acid or Fire)"
                 },
@@ -3896,9 +3839,6 @@
                 "action->Wavesense (Imprecise) 60 feet": {
                     "name": "Wavesense (Imprecise) 60 feet"
                 },
-                "action->At-Will Spells": {
-                    "name": "At-Will Spells"
-                },
                 "action->Constant Spells": {
                     "name": "Constant Spells"
                 },
@@ -3954,9 +3894,6 @@
                 "action->Wavesense (Imprecise) 60 feet": {
                     "name": "Wavesense (Imprecise) 60 feet"
                 },
-                "action->At-Will Spells": {
-                    "name": "At-Will Spells"
-                },
                 "action->Constant Spells": {
                     "name": "Constant Spells"
                 },
@@ -4002,9 +3939,6 @@
                 },
                 "strike-ranged->Longbow": {
                     "name": "Longbow"
-                },
-                "action->At-Will Spells": {
-                    "name": "At-Will Spells"
                 },
                 "action->+1 Status to All Saves vs. Magic": {
                     "name": "+1 Status to All Saves vs. Magic"
@@ -4188,9 +4122,6 @@
                 "strike-ranged->Thorn": {
                     "name": "Thorn"
                 },
-                "action->At-Will Spells": {
-                    "name": "At-Will Spells"
-                },
                 "action->Constant Spells": {
                     "name": "Constant Spells"
                 },
@@ -4291,9 +4222,6 @@
                     "name": "Blood Scent 1 mile",
                     "description": "<p>The shark can smell blood in the water from up to 1 mile away.</p>"
                 },
-                "action->Scent (Imprecise) 100 feet": {
-                    "name": "Scent (Imprecise) 100 feet"
-                },
                 "action->Breach": {
                     "name": "Breach",
                     "description": "<p>The shark Swims up to its swim Speed, then Leaps vertically out of the water up to 15 feet high, making a Strike against a creature at any point during the jump (this lets it attack a creature within 20 feet of the water's surface). After the Strike, the shark splashes back down into the water.</p>"
@@ -4364,9 +4292,6 @@
                 },
                 "strike-melee->Fist": {
                     "name": "Fist"
-                },
-                "action->At-Will Spells": {
-                    "name": "At-Will Spells"
                 },
                 "action->Constant Spells": {
                     "name": "Constant Spells"
@@ -4455,9 +4380,6 @@
                 "action->Blood Scent": {
                     "name": "Blood Scent",
                     "description": "<p>The bunyip can smell blood in the water from up to 1 mile away.</p>"
-                },
-                "action->Scent (Imprecise) 100 feet": {
-                    "name": "Scent (Imprecise) 100 feet"
                 },
                 "action->Aquatic Opportunity": {
                     "name": "Aquatic Opportunity",
@@ -4858,9 +4780,6 @@
                     "name": "Empowered Blood",
                     "description": "<p>The Usij cultists' blood magic strengthens Sezruth. He begins with 2 Blood Points from sacrifices just before the PCs arrived, and gains 1 additional Blood Point for each time the empowered blood hazard is activated in area B. The adjustments are not cumulative.</p>\n<p><strong>1-2 Blood Points</strong> Sezruth gains 5 temporary Hit Points.</p>\n<p><strong>3-4 Blood Points</strong> Sezruth gains 5 temporary Hit Points. Sezruth is @UUID[Compendium.pf2e.conditionitems.Item.nlCjDvLMf2EkV2dl]{Quickened 1} and can use the extra action to Stride toward or Strike the foe it is aware of with the highest Charisma score.</p>\n<p><strong>5 or more Blood Points</strong> Sezruth gains 10 temporary Hit Points. Sezruth is quickened 1 and can use the extra action to Stride toward or Strike the foe it is aware of with the highest Charisma score</p>"
                 },
-                "action->At-Will Spells": {
-                    "name": "At-Will Spells"
-                },
                 "action->+1 Status to All Saves vs. Magic": {
                     "name": "+1 Status to All Saves vs. Magic"
                 },
@@ -4895,9 +4814,6 @@
                 "action->Empowered Blood": {
                     "name": "Empowered Blood",
                     "description": "<p>The Usij cultists' blood magic strengthens Sezruth. He begins with 2 Blood Points from sacrifices just before the PCs arrived, and gains 1 additional Blood Point for each time the empowered blood hazard is activated in area B. The adjustments are not cumulative.</p>\n<p><strong>1-2 Blood Points</strong> Sezruth gains 10 temporary Hit Points.</p>\n<p><strong>3-4 Blood Points</strong> Sezruth gains 10 temporary Hit Points. Sezruth is @UUID[Compendium.pf2e.conditionitems.Item.nlCjDvLMf2EkV2dl]{Quickened 1} and can use the extra action to Stride toward or Strike the foe it is aware of with the highest Charisma score.</p>\n<p><strong>5 or more Blood Points</strong> Sezruth gains 15 temporary Hit Points. Sezruth is quickened 1 and can use the extra action to Stride toward or Strike the foe it is aware of with the highest Charisma score</p>"
-                },
-                "action->At-Will Spells": {
-                    "name": "At-Will Spells"
                 },
                 "action->+1 Status to All Saves vs. Magic": {
                     "name": "+1 Status to All Saves vs. Magic"
@@ -5069,9 +4985,6 @@
                 "strike-melee->Claw": {
                     "name": "Claw"
                 },
-                "action->Scent (Imprecise) 30 feet": {
-                    "name": "Scent (Imprecise) 30 feet"
-                },
                 "action->+2 Status to All Saves vs. Disease": {
                     "name": "+2 Status to All Saves vs. Disease"
                 },
@@ -5213,9 +5126,6 @@
                 "strike-melee->Tail": {
                     "name": "Tail"
                 },
-                "action->Scent (Imprecise) 30 feet": {
-                    "name": "Scent (Imprecise) 30 feet"
-                },
                 "action->Electrified Blood": {
                     "name": "Electrified Blood",
                     "description": "<p><strong>Trigger</strong> An adjacent creature deals piercing or slashing damage to the sea drake</p>\n<hr />\n<p><strong>Effect</strong> An arc of electricity courses through the sea drake's blood. The triggering creature takes @Damage[1d6[electricity]] damage.</p>"
@@ -5286,9 +5196,6 @@
                 "strike-melee->Claw": {
                     "name": "Claw"
                 },
-                "action->Scent (Imprecise) 30 feet": {
-                    "name": "Scent (Imprecise) 30 feet"
-                },
                 "action->Consume Lightning": {
                     "name": "Consume Lightning",
                     "description": "<p><strong>Trigger</strong> The storm bear is targeted by, or in the area of, an effect that deals electricity damage</p>\n<hr />\n<p><strong>Effect</strong> The storm bear devours some of the electricity to fuel a quick burst of speed, becoming @UUID[Compendium.pf2e.conditionitems.Item.nlCjDvLMf2EkV2dl]{Quickened} for 1 round. While quickened, the storm bear's motions produce visible sparks of electricity.</p>"
@@ -5310,9 +5217,6 @@
                 },
                 "strike-melee->Claw": {
                     "name": "Claw"
-                },
-                "action->Scent (Imprecise) 30 feet": {
-                    "name": "Scent (Imprecise) 30 feet"
                 },
                 "action->Consume Lightning": {
                     "name": "Consume Lightning",
@@ -5687,9 +5591,6 @@
                     "name": "Entropy Sense (Imprecise) 30 feet",
                     "description": "<p>An akizendri can anticipate the most likely location of a creature through their supernatural insight into the forces of chaotic probabilities and chance. This grants the Scholar the ability to sense creatures within the listed range. A creature under the effects of @UUID[Compendium.pf2e.spells-srd.Item.EoKBlgf6Smt8opaU]{Veil of Privacy} or that is otherwise shielded from divinations and predictions cannot be noticed via entropy sense.</p>"
                 },
-                "action->At-Will Spells": {
-                    "name": "At-Will Spells"
-                },
                 "action->Constant Spells": {
                     "name": "Constant Spells"
                 },
@@ -5748,9 +5649,6 @@
                 "action->Entropy Sense (Imprecise) 30 feet": {
                     "name": "Entropy Sense (Imprecise) 30 feet",
                     "description": "<p>An akizendri can anticipate the most likely location of a creature through their supernatural insight into the forces of chaotic probabilities and chance. This grants the Scholar the ability to sense creatures within the listed range. A creature under the effects of @UUID[Compendium.pf2e.spells-srd.Item.EoKBlgf6Smt8opaU]{Veil of Privacy} or that is otherwise shielded from divinations and predictions cannot be noticed via entropy sense.</p>"
-                },
-                "action->At-Will Spells": {
-                    "name": "At-Will Spells"
                 },
                 "action->Constant Spells": {
                     "name": "Constant Spells"
@@ -5843,9 +5741,6 @@
                 },
                 "strike-melee->Claw": {
                     "name": "Claw"
-                },
-                "action->Scent (Imprecise) 30 feet": {
-                    "name": "Scent (Imprecise) 30 feet"
                 },
                 "action->+2 Status to All Saves vs. Disease": {
                     "name": "+2 Status to All Saves vs. Disease"
@@ -6269,9 +6164,6 @@
                 "strike-melee->Claw": {
                     "name": "Claw"
                 },
-                "action->Scent (Imprecise) 30 feet": {
-                    "name": "Scent (Imprecise) 30 feet"
-                },
                 "action->Pack Attack": {
                     "name": "Pack Attack",
                     "description": "<p>The lion deals 1d4 extra damage to any creature that's within reach of at least two of the lion's allies.</p>"
@@ -6621,9 +6513,6 @@
                 "strike-melee->Jaws": {
                     "name": "Jaws"
                 },
-                "action->Scent (imprecise) 30 feet": {
-                    "name": "Scent (imprecise) 30 feet"
-                },
                 "action->Constant Spells": {
                     "name": "Constant Spells"
                 },
@@ -6658,9 +6547,6 @@
                 },
                 "action->Telepathy (Touch)": {
                     "name": "Telepathy (Touch)"
-                },
-                "action->At-Will Spells": {
-                    "name": "At-Will Spells"
                 },
                 "action->Change Shape": {
                     "name": "Change Shape",

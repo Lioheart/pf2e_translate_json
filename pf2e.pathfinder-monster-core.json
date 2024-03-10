@@ -1,0 +1,45 @@
+{
+    "label": "Pathfinder-Monster-Core",
+    "entries": {
+        "Mummy Guardian": {
+            "name": "Mummy Guardian",
+            "languagesDetails": "plus any one language they knew while alive",
+            "hpDetails": "void healing",
+            "items": {
+                "strike-melee->Fist": {
+                    "name": "Fist"
+                },
+                "action->Alchemical Weakness": {
+                    "name": "Alchemical Weakness",
+                    "description": "<p>The guardian's weakness to alchemical items not only applies to damage from alchemical items, but the guardian also takes 5 damage when splashed with non-damaging alchemical items or dosed with alchemical poisons, even if they're immune to their other effects.</p>"
+                },
+                "action->Blighted Consumption": {
+                    "name": "Blighted Consumption",
+                    "description": "<p><strong>Trigger</strong> A creature within 30 feet eats or drinks (including an alchemical item or potion)</p>\n<hr />\n<p><strong>Effect</strong> The food or drink burns like the caustic substances fed to the mummy before its death. If the creature fails a @Check[type:fortitude|dc:24] save, they become @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 2} after they finish the consumption and can't reduce their sickened condition while within 30 feet of any mummy.</p>"
+                },
+                "action->Void Healing": {
+                    "name": "Void Healing"
+                },
+                "action->Choking Pain": {
+                    "name": "Choking Pain",
+                    "description": "<p><strong>Requirements</strong> The mummy's last action was a successful fist Strike</p>\n<hr />\n<p><strong>Effect</strong> The mummy shares the pain of its dying moments with the target of that Strike. That creature takes @Damage[3d8[void]] damage with a @Check[type:will|dc:24|basic:true] save. If the creature critically fails the saving throw, it can't speak for 1 round, including to Cast a Spell.</p>"
+                }
+            }
+        }
+    },
+    "mapping": {
+        "publicNotes": "system.details.publicNotes",
+        "privateNotes": "system.details.privateNotes",
+        "acDetails": "system.attributes.ac.details",
+        "blurb": "system.details.blurb",
+        "hpDetails": "system.attributes.hp.details",
+        "allSavesBonus": "system.attributes.allSaves.value",
+        "speedsDetails": "system.attributes.speed.details",
+        "sensesDetails": "system.perception.details",
+        "languagesDetails": "system.details.languages.details",
+        "items": {
+            "converter": "translateActorItems",
+            "path": "items"
+        }
+    }
+}

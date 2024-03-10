@@ -267,14 +267,6 @@
                 "lore->Academia Lore": {
                     "name": "Academia Lore"
                 },
-                "background->Scholar (Arcana)": {
-                    "name": "Scholar (Arcana)",
-                    "description": "<p>You have a knack for learning, and sequestered yourself from the outside world to learn all you could. You read about so many wondrous places and things in your books, and always dreamed about one day seeing the real things. Eventually, that curiosity led you to leave your studies and become an adventurer.</p>\n<p>Choose two ability boosts. One must be to Intelligence or Wisdom, and one is a free ability boost.</p>\n<p>You're trained in your choice of the Arcana, Nature, Occultism, or Religion skill, and the Academia Lore skill. You gain the @UUID[Compendium.pf2e.feats-srd.Item.W6Gl9ePmItfDHji0]{Assurance} skill feat in your chosen skill.</p>"
-                },
-                "feat->Assurance (Arcana)": {
-                    "name": "Assurance (Arcana)",
-                    "description": "<p>Even in the worst circumstances, you can perform basic tasks. Choose a skill you're trained in. You can forgo rolling a skill check for that skill to instead receive a result of 10 + your proficiency bonus (do not apply any other bonuses, penalties, or modifiers).</p>\n<hr />\n<p><strong>Special</strong> You can select this feat multiple times. Each time, choose a different skill and gain the benefits for that skill.</p>"
-                },
                 "spellcastingEntry->School Spells": {
                     "name": "School Spells"
                 },
@@ -285,17 +277,21 @@
                     "name": "Clothing (Ordinary)",
                     "description": "<p>Ordinary clothing is functional with basic tailoring, such as peasant garb, monk's robes, or work clothes.</p>"
                 },
-                "feat->Arcane Spellcasting (Wizard)": {
-                    "name": "Arcane Spellcasting (Wizard)",
-                    "description": "<p>Through dedicated study and practice, you can harness arcane power to cast spells. You can cast arcane spells using the @UUID[Compendium.pf2e.actionspf2e.Item.aBQ8ajvEBByv45yz]{Cast a Spell} activity, and you can supply material, somatic, and verbal components when casting spells.</p>\n<p>At 1st level, you can prepare up to two 1st-rank spells and five cantrips each morning from the spells in your spellbook, plus one extra cantrip and spell of your chosen school of each level you can cast if you are a specialist wizard. Prepared spells remain available to you until you cast them or until you prepare your spells again. The number of spells you can prepare is called your spell slots.</p>\n<p>As you increase in level as a wizard, your number of spell slots and the highest rank of spells you can cast from spell slots increase.</p>"
+                "background->Scholar (Arcana)": {
+                    "name": "Scholar (Arcana)",
+                    "description": "<p>You have a knack for learning and sequestered yourself from the outside world to learn all you could. You read about so many wondrous places and things in your books, always dreaming about one day seeing the real things. Eventually, that curiosity led you to leave your studies and become an adventurer.</p>\n<p>Choose two attribute boosts. One must be to <strong>Intelligence</strong> or <strong>Wisdom</strong>, and one is a free attribute boost.</p>\n<p>You're trained in your choice of the Arcana, Nature, Occultism, or Religion skill, and gain the @UUID[Compendium.pf2e.feats-srd.Item.W6Gl9ePmItfDHji0]{Assurance} skill feat in your chosen skill. You're also trained in the Academia Lore skill.</p>"
                 },
-                "action->Drain Bonded Item": {
-                    "name": "Drain Bonded Item",
-                    "description": "<p><strong>Frequency</strong> once per day</p>\n<hr />\n<p>You expend the power stored in your bonded item, as long as the item is on your person. During your turn, you gain the ability to cast one spell you prepared today and already cast, without spending a spell slot. You must still @UUID[Compendium.pf2e.actionspf2e.Item.aBQ8ajvEBByv45yz]{Cast the Spell} and meet the spell's other requirements.</p>"
+                "feat->Assurance (Arcana)": {
+                    "name": "Assurance (Arcana)",
+                    "description": "<p>Even in the worst circumstances, you can perform basic tasks. Choose a skill you're trained in. You can forgo rolling a skill check for that skill to instead receive a result of 10 + your proficiency bonus (do not apply any other bonuses, penalties, or modifiers).</p>\n<hr />\n<p><strong>Special</strong> You can select this feat multiple times. Each time, choose a different skill and gain the benefits for that skill.</p>"
                 },
                 "action->Cast a Spell": {
                     "name": "Cast a Spell",
                     "description": "<p>You cast a spell you have prepared or in your repertoire. Casting a Spell is a special activity that takes a variable number of actions depending on the spell, as listed in each spell's stat block. As soon as the spellcasting actions are complete, the spell effect occurs.</p>\n<p>Some spells are cast as a reaction or free action. In those cases, you Cast the Spell as a reaction or free action (as appropriate) instead of as an activity. Such cases will be noted in the spell's stat block-for example, \"[reaction] verbal.\"</p>\n<p><strong>Long Casting</strong> Times Some spells take minutes or hours to cast. The Cast a Spell activity for these spells includes a mix of the listed spell components, but it's not necessary to break down which one you're providing at a given time. You can't use other actions or reactions while casting such a spell, though at the GM's discretion, you might be able to speak a few sentences. As with other activities that take a long time, these spells have the exploration trait, and you can't cast them in an encounter. If combat breaks out while you're casting one, your spell is disrupted.</p>\n<p><strong>Spell Components</strong> Each spell lists the spell components required to cast it after the action icons or text, such as \"[three-actions] material, somatic, verbal.\" The spell components, described in detail below, add traits and requirements to the Cast a Spell activity. If you can't provide the components, you fail to Cast the Spell.</p>\n<ul>\n<li>Material (manipulate)</li>\n<li>Somatic (manipulate)</li>\n<li>Verbal (concentrate)</li>\n<li>Focus (manipulate)</li>\n</ul>\n<p><strong>Disrupted and Lost Spells</strong> Some abilities and spells can disrupt a spell, causing it to have no effect and be lost. When you lose a spell, you've already expended the spell slot, spent the spell's costs and actions, and used the Cast a Spell activity. If a spell is disrupted during a @UUID[Compendium.pf2e.actionspf2e.Item.3f5DMFu8fPiqHpRg]{Sustain a Spell} action, the spell immediately ends.</p>"
+                },
+                "action->Drain Bonded Item": {
+                    "name": "Drain Bonded Item",
+                    "description": "<p><strong>Frequency</strong> once per day</p>\n<p><strong>Requirements</strong> Your bonded item is on your person.</p>\n<hr />\n<p>You expend the magical power stored in your bonded item. During the current turn, you can cast one spell you prepared today and already cast, without spending a spell slot. You must still Cast the Spell and meet the spell's other requirements.</p>"
                 }
             }
         },
@@ -681,10 +677,6 @@
                 "spellcastingEntry->Divine Font (Healing)": {
                     "name": "Divine Font (Healing)"
                 },
-                "equipment->Religious Symbol (Wooden)": {
-                    "name": "Religious Symbol (Wooden)",
-                    "description": "<p>This piece of wood or silver is emblazoned with an image representing a deity. Some divine spellcasters, such as clerics, can use a religious symbol of their deity as a divine focus to use certain abilities and cast some spells. A religious symbol must be held in one hand to use it.</p>"
-                },
                 "action->Raise a Shield": {
                     "name": "Raise a Shield",
                     "description": "<p><strong>Requirements</strong> You are wielding a shield</p>\n<hr />\n<p>You position your shield to protect yourself. When you have Raised a Shield, you gain its listed circumstance bonus to AC. Your shield remains raised until the start of your next turn.</p>"
@@ -692,10 +684,6 @@
                 "feat->Deity (Sarenrae)": {
                     "name": "Deity (Sarenrae)",
                     "description": "<p>As a cleric, you are a mortal servitor of a deity you revere above all others. Your deity grants you the trained proficiency rank in one skill and with the deity's favored weapon. If the favored weapon is uncommon, you also get access to that weapon.</p>\n<p>Your deity also adds spells to your spell list. You can prepare these just like you can any spell on the divine spell list once you can prepare spells of their rank as a cleric. Any of these spells that aren't normally on the divine list are still divine spells if you prepare them this way.</p>\n<h2>Sanctification</h2>\n<p>Depending on your deity, their sanctification can make you holy or unholy. This gives you the holy or unholy trait, which commits you to one side of a struggle over the souls of the planes and may be referenced in other abilities. If you \"can be\" holy or unholy according to your deity, you make that choice, and if you \"must be\" holy or unholy you gain the trait automatically. If you gain the opposing trait in some way, you lose the previous trait until you complete an atone ritual.</p>\n<h2>Anathema</h2>\n<p>Acts fundamentally opposed to your deity's ideals are anathema to your faith. Learning or casting spells, committing acts, and using items that are anathema to your deity remove you from your deity's good graces.</p>\n<p>Casting spells with the unholy trait is almost always anathema to deities who don't allow unholy sanctification, and casting holy spells is likewise anathema to those who don't allow holy sanctification. Similarly, casting spells that are anathema to the tenets or goals of your faith could interfere with your connection to your deity. For example, casting a spell to create undead would be anathema to Pharasma, the goddess of death. Many actions that are anathema don't appear in any deity's formal list. For borderline cases, you and your GM determine which acts are anathema.</p>\n<p>If you perform enough acts that are anathema to your deity, you lose the magical abilities that come from your connection to your deity. The class features that you lose are determined by the GM, but they likely include your divine font and all cleric spellcasting. These abilities can be regained only if you repent by conducting an atone ritual.</p>"
-                },
-                "feat->Anathema (Cleric)": {
-                    "name": "Anathema (Cleric)",
-                    "description": "<p>Acts fundamentally opposed to your deity's alignment or ideals are anathema to your faith. Learning or casting spells, committing acts, and using items that are anathema to your deity remove you from your deity's good graces.</p>\n<p>Casting spells with the evil trait is almost always anathema to good deities, and casting good spells is likewise anathema to evil deities; similarly, casting chaotic spells is anathema to lawful deities, and casting lawful spells is anathema to chaotic deities. A neutral cleric who worships a neutral deity isn't limited this way, but their alignment might change over time if they frequently cast spells or use abilities with a certain alignment. Similarly, casting spells that are anathema to the tenets or goals of your faith could interfere with your connection to your deity. For example, casting a spell to create undead would be anathema to @UUID[Compendium.pf2e.deities.Item.QZD0u1jxwz0kj8uI]{Pharasma}, the goddess of death. For borderline cases, you and your GM determine which acts are anathema.</p>\n<p>If you perform enough acts that are anathema to your deity, or if your alignment changes to one not allowed by your deity, you lose the magical abilities that come from your connection to your deity. The class features that you lose are determined by the GM, but they likely include your divine font and all divine spellcasting. These abilities can be regained only if you demonstrate your repentance by conducting an @UUID[Compendium.pf2e.spells-srd.Item.7Fd4lxozd11MQ55N]{Atone} ritual.</p>"
                 },
                 "feat->Divine Font (Healing)": {
                     "name": "Divine Font (Healing)",
@@ -823,9 +811,9 @@
                 "lore->Underworld Lore": {
                     "name": "Underworld Lore"
                 },
-                "equipment->Thieves' Tools (Replacement Picks)": {
-                    "name": "Thieves' Tools (Replacement Picks)",
-                    "description": "<p>These are replacement picks for @UUID[Compendium.pf2e.equipment-srd.Item.zvLyCVD8g2PdHJAc]{Thieves' Tools}.</p>"
+                "equipment->Thieves' Toolkit (Replacement Picks)": {
+                    "name": "Thieves' Toolkit (Replacement Picks)",
+                    "description": "<p>These are replacement picks for a @UUID[Compendium.pf2e.equipment-srd.Item.zvLyCVD8g2PdHJAc]{Thieves' Toolkit}.</p>"
                 }
             }
         },
@@ -1246,8 +1234,8 @@
                     "name": "Raise a Shield",
                     "description": "<p><strong>Requirements</strong> You are wielding a shield</p>\n<hr />\n<p>You position your shield to protect yourself. When you have Raised a Shield, you gain its listed circumstance bonus to AC. Your shield remains raised until the start of your next turn.</p>"
                 },
-                "action->Attack of Opportunity": {
-                    "name": "Attack of Opportunity",
+                "action->Reactive Strike": {
+                    "name": "Reactive Strike",
                     "description": "<p><strong>Trigger</strong> A creature within your reach uses a manipulate action or a move action, makes a ranged attack, or leaves a square during a move action it's using.</p>\n<hr />\n<p>You lash out at a foe that leaves an opening. Make a melee Strike against the triggering creature. If your attack is a critical hit and the trigger was a manipulate action, you disrupt that action. This Strike doesn't count toward your multiple attack penalty, and your multiple attack penalty doesn't apply to this Strike.</p>"
                 }
             }

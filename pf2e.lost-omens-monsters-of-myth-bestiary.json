@@ -15,9 +15,6 @@
                 "strike-melee->Horns": {
                     "name": "Horns"
                 },
-                "action->Scent (Imprecise) 30 feet": {
-                    "name": "Scent (Imprecise) 30 feet"
-                },
                 "action->Blizzard Evasion": {
                     "name": "Blizzard Evasion",
                     "description": "<p><strong>Trigger</strong> Ainamuuren takes at least 40 points of physical damage from a single attack, and he isn't currently discorporated</p><hr /><p><strong>Effect</strong> Ainamuuren discorporates into a whirling blizzard for 3 rounds. During this time, he gains resistance 10 to physical damage and weakness 10 to force damage. He gains a fly speed of 40 feet, but the only action he can take is to Fly. While discorporated, the first time each round that Ainamuuren enters another creature's space or a creature enters Ainamuuren's space, that creature takes @Damage[4d8[cold]] damage and must succeed at a @Check[type:fortitude|dc:34] save or be @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned 1}. At the start of his turn, Ainamuuren can end this effect as a free action.</p>"
@@ -90,9 +87,6 @@
                 "strike-melee->Horn": {
                     "name": "Horn"
                 },
-                "action->Scent (Imprecise) 60 feet": {
-                    "name": "Scent (Imprecise) 60 feet"
-                },
                 "action->Attack of Opportunity": {
                     "name": "Attack of Opportunity"
                 },
@@ -150,9 +144,6 @@
                 },
                 "strike-ranged->Spit": {
                     "name": "Spit"
-                },
-                "action->At-Will Spells": {
-                    "name": "At-Will Spells"
                 },
                 "action->Regeneration 30 (Deactivated by Cold)": {
                     "name": "Regeneration 30 (Deactivated by Cold)"
@@ -223,12 +214,6 @@
                 "strike-melee->Tail": {
                     "name": "Tail"
                 },
-                "action->Scent (Imprecise) 120 feet": {
-                    "name": "Scent (Imprecise) 120 feet"
-                },
-                "action->At-Will Spells": {
-                    "name": "At-Will Spells"
-                },
                 "action->Constant Spells": {
                     "name": "Constant Spells"
                 },
@@ -298,9 +283,6 @@
                 "strike-melee->Claw": {
                     "name": "Claw"
                 },
-                "action->Scent (Imprecise) 60 feet": {
-                    "name": "Scent (Imprecise) 60 feet"
-                },
                 "action->Dual Pounce": {
                     "name": "Dual Pounce",
                     "description": "<p>The grisantian lion Strides and makes two claw Strikes against the same creature at the end of that movement. Each attack counts against the grisantian lion's multiple attack penalty, but the penalty doesn't increase until after the grisantian lion makes both attacks. If both attacks hit, combine their damage for the purpose of resistances and weaknesses.</p>"
@@ -331,9 +313,6 @@
                 },
                 "strike-melee->Claw": {
                     "name": "Claw"
-                },
-                "action->Scent (Imprecise) 60 feet": {
-                    "name": "Scent (Imprecise) 60 feet"
                 },
                 "action->Constant Spells": {
                     "name": "Constant Spells"
@@ -467,9 +446,6 @@
                 "action->Wavesense (Imprecise) 30 feet": {
                     "name": "Wavesense (Imprecise) 30 feet"
                 },
-                "action->At-Will Spells": {
-                    "name": "At-Will Spells"
-                },
                 "action->Constant Spells": {
                     "name": "Constant Spells"
                 },
@@ -539,9 +515,6 @@
                 },
                 "strike-ranged->Bezoar": {
                     "name": "Bezoar"
-                },
-                "action->Scent (Imprecise) 120 feet": {
-                    "name": "Scent (Imprecise) 120 feet"
                 },
                 "action->Regeneration 30": {
                     "name": "Regeneration 30"
@@ -618,8 +591,9 @@
                 "strike-melee->Horn": {
                     "name": "Horn"
                 },
-                "action->Scent (Imprecise) 60 feet": {
-                    "name": "Scent (Imprecise) 60 feet"
+                "action->Thief Scent": {
+                    "name": "Thief Scent",
+                    "description": "<p>Krampus can perceive anyone who has ever stolen or moved one of his possessions, using scent as an imprecise sense with a range of 1 mile.</p>"
                 },
                 "action->Blizzard Sight": {
                     "name": "Blizzard Sight",
@@ -628,10 +602,6 @@
                 "action->Bountiful Bag": {
                     "name": "Bountiful Bag",
                     "description": "<p>Krampus carries a large bag brimming with barely contained gifts and trinkets, including one of every common item with the consumable trait of levels 1 to 20, at least 20 <em>golden rod mementos</em>, and an assortment of food and valuables. Once every 24 hours, the bag's contents magically regenerate, replacing any of these items that have been removed. Krampus can Interact with the bag to stow or withdraw items, always finding the desired stored item at the top of the bag. The bag is an extradimensional space, so the weight of its contents doesn't count against Krampus's Bulk limit. The bag functions as a normal sack if used by anyone other than Krampus, and if the bag is stolen or Krampus is slain, the bag retains only [[/r 2d4]] random common consumable items of 16th level or higher.</p>\n<p>A creature can use @UUID[Compendium.pf2e.actionspf2e.Item.Dt6B1slsBy8ipJu9]{Disarm} or @UUID[Compendium.pf2e.actionspf2e.Item.RDXXE7wMrSPCLv5k]{Steal} to extract a consumable item from Krampus's bag. As part of the action, the creature can envision a specific item it wants to extract. On a success, the creature Disarms or Steals the object and rolls a @Check[type:flat|dc:13|name:Stealing from Krampus' Bag|showDC:owner] check.</p>\n<hr />\n<p><strong>Success</strong> The creature Disarms or Steals the envisioned object. If the creature didn't envision an object, it Disarms or Steals a random common consumable item of a level at least half the creature's level.</p>\n<p><strong>Failure</strong> The creature Disarms or Steals a random common consumable item of a level at least half the creature's level.</p>\n<p><strong>Critical Failure</strong> The creature Disarms or Steals a <em>golden rod memento</em> instead of a consumable item.</p>"
-                },
-                "action->Thief Scent": {
-                    "name": "Thief Scent",
-                    "description": "<p>Krampus can perceive anyone who has ever stolen or moved one of his possessions, using scent as an imprecise sense with a range of 1 mile.</p>"
                 },
                 "action->Constant Spells": {
                     "name": "Constant Spells"
@@ -684,9 +654,6 @@
                 "strike-melee->Horn": {
                     "name": "Horn"
                 },
-                "action->Scent (Imprecise) 30 feet": {
-                    "name": "Scent (Imprecise) 30 feet"
-                },
                 "action->Frightful Presence": {
                     "name": "Frightful Presence",
                     "description": "<p>30 feet. @Check[type:will|dc:23]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.FrightfulPresence]</p>"
@@ -719,9 +686,6 @@
             "items": {
                 "strike-melee->Limb": {
                     "name": "Limb"
-                },
-                "action->Infect Scent (Imprecise) 60 feet": {
-                    "name": "Infect Scent (Imprecise) 60 feet"
                 },
                 "action->Pinion": {
                     "name": "Pinion",
@@ -813,9 +777,6 @@
                     "name": "Wild Empathy",
                     "description": "<p>The Mosquito Witch can use Diplomacy to @UUID[Compendium.pf2e.actionspf2e.Item.OX4fy22hQgUHDr0q]{Make an Impression} on and make Requests of arthropods (insects, spiders, and similar invertebrates like bloodseekers). Most arthropods have a starting attitude of indifferent to the Mosquito Witch.</p>"
                 },
-                "action->At-Will Spells": {
-                    "name": "At-Will Spells"
-                },
                 "action->Constant Spells": {
                     "name": "Constant Spells"
                 },
@@ -855,9 +816,6 @@
                 "action->Wild Empathy": {
                     "name": "Wild Empathy",
                     "description": "<p>The Mosquito Witch can use Diplomacy to @UUID[Compendium.pf2e.actionspf2e.Item.OX4fy22hQgUHDr0q]{Make an Impression} on and make Requests of arthropods (insects, spiders, and similar invertebrates like bloodseekers). Most arthropods have a starting attitude of indifferent to the Mosquito Witch.</p>"
-                },
-                "action->At-Will Spells": {
-                    "name": "At-Will Spells"
                 },
                 "action->Constant Spells": {
                     "name": "Constant Spells"
@@ -911,9 +869,6 @@
                     "name": "Wild Empathy",
                     "description": "<p>The Mosquito Witch can use Diplomacy to @UUID[Compendium.pf2e.actionspf2e.Item.OX4fy22hQgUHDr0q]{Make an Impression} on and make Requests of arthropods (insects, spiders, and similar invertebrates like bloodseekers). Most arthropods have a starting attitude of indifferent to the Mosquito Witch.</p>"
                 },
-                "action->At-Will Spells": {
-                    "name": "At-Will Spells"
-                },
                 "action->Constant Spells": {
                     "name": "Constant Spells"
                 },
@@ -957,9 +912,6 @@
                 "action->Wild Empathy": {
                     "name": "Wild Empathy",
                     "description": "<p>The Mosquito Witch can use Diplomacy to @UUID[Compendium.pf2e.actionspf2e.Item.OX4fy22hQgUHDr0q]{Make an Impression} on and make Requests of arthropods (insects, spiders, and similar invertebrates like bloodseekers). Most arthropods have a starting attitude of indifferent to the Mosquito Witch.</p>"
-                },
-                "action->At-Will Spells": {
-                    "name": "At-Will Spells"
                 },
                 "action->Constant Spells": {
                     "name": "Constant Spells"
@@ -1139,9 +1091,6 @@
                 "strike-melee->Ghostly Hoof": {
                     "name": "Ghostly Hoof"
                 },
-                "action->Scent (Imprecise) 30 feet": {
-                    "name": "Scent (Imprecise) 30 feet"
-                },
                 "action->+1 Status to All Saves vs. Magic": {
                     "name": "+1 Status to All Saves vs. Magic"
                 },
@@ -1177,9 +1126,6 @@
                 },
                 "strike-ranged->Little Love": {
                     "name": "Little Love"
-                },
-                "action->At-Will Spells": {
-                    "name": "At-Will Spells"
                 },
                 "action->Constant Spells": {
                     "name": "Constant Spells"
@@ -2144,9 +2090,6 @@
                 },
                 "strike-melee->Tail": {
                     "name": "Tail"
-                },
-                "action->Scent (Imprecise) 60 feet": {
-                    "name": "Scent (Imprecise) 60 feet"
                 },
                 "action->+1 Status to All Saves vs. Magic": {
                     "name": "+1 Status to All Saves vs. Magic"
