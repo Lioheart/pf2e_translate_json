@@ -112,6 +112,40 @@
                 }
             }
         },
+        "Angry Townsfolk": {
+            "name": "Angry Townsfolk",
+            "blurb": "variant city guard squadron",
+            "speedsDetails": "troop movement",
+            "hpDetails": "troop defenses",
+            "items": {
+                "action->Form Up": {
+                    "name": "Form Up"
+                },
+                "action->Seek Quarry": {
+                    "name": "Seek Quarry",
+                    "description": "<p>Angry townsfolk can spend 1 minute to designate a single creature for whom they have a physical description as their quarry. They gain a +2 circumstance bonus to Perception against their quarry.</p>"
+                },
+                "action->Troop Defenses": {
+                    "name": "Troop Defenses",
+                    "description": "<p><strong>Thresholds</strong> 50 (12 squares), 25 (8 squares)</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.TroopDefenses]</p>"
+                },
+                "action->Pitchforks and Torches": {
+                    "name": "Pitchforks and Torches",
+                    "description": "<p><span class=\"action-glyph\">1</span> to <span class=\"action-glyph\">3</span></p>\n<p><strong>Frequency</strong> once per round.</p>\n<hr />\n<p><strong>Effect</strong> The angry townsfolk engage in a coordinated melee attack against each enemy within @Template[type:emanation|distance:10]{10 feet}, with a @Check[type:reflex|dc:19|basic:true] save. The damage depends on the number of actions.</p>\n<p><span class=\"action-glyph\">1</span> @Damage[1d10[piercing]] damage or @Damage[1d10[fire]] damage</p>\n<p><span class=\"action-glyph\">2</span> @Damage[(1d10+7)[piercing]] damage or @Damage[(1d10+7)[fire]] damage</p>\n<p><span class=\"action-glyph\">3</span> @Damage[(1d10+10)[piercing]] damage or @Damage[(1d10+10)[fire]] damage</p>"
+                },
+                "action->Troop Movement": {
+                    "name": "Troop Movement",
+                    "description": "<p>Whenever the city guards Stride, they first @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.OvqohW9YuahnFaiX]{Form Up} as a free action to condense into a 20-foot-by-20-foot area (minus any missing squares), then move up to their Speed.</p>\n<p>This works just like a Gargantuan creature moving; for instance, if any square of the guards enters difficult terrain, the extra movement cost applies to all the guards.</p>"
+                },
+                "action->Urban Chasers": {
+                    "name": "Urban Chasers",
+                    "description": "<p>Angry townsfolk ignore difficult terrain (but not greater difficult terrain) caused by crowds or from movement through narrow spaces such as alleyways.</p>"
+                },
+                "lore->Settlement Lore": {
+                    "name": "Settlement Lore"
+                }
+            }
+        },
         "Arika Avertin": {
             "name": "Arika Avertin",
             "blurb": "Female human bard",
@@ -819,6 +853,36 @@
                 }
             }
         },
+        "Greedspawn": {
+            "name": "Greedspawn",
+            "publicNotes": "<p>Sinspawn were created by one of seven ancient wizards known collectively as runelords-each of whom embraced and embodied one of seven sins. The first sinspawn was created by the Runelord of Wrath, utilizing techniques that have since gone on to influence fleshwarping practices. It wasn't long before the technique used to create sinspawn fell into the hands of the other runelords, and while each tried their own hand at crafting variants of their own design, today sinspawn of wrath remain the most numerous and notorious of their kind. Bearing only a vague resemblance to the humanoids from whose flesh they were formed, sinspawn generally appear horrifically emaciated and have unnaturally long arms and digitigrade legs, each with a trio of stubby, taloned digits. Veins bulge across sinspawn's bodies in sanguine patterns that suspiciously resemble twisted runes, and their flesh is pale and hairless. Their heads are elongated, bearing only slits for a nose, red eyes, and disturbing lower jaws that split in half at the chin, revealing pedipalps that end in tiny, three-fingered hands and framing a long, lolling tongue. Sinspawn stand 6-1/2 feet tall and typically weigh as much as an emaciated human of their size. They behave in a manner consistent with their associated sin and have physical characteristics that hint at these qualities. For example, greedspawn's veins appear to run with gold while envyspawn appear even more wasted than the rest of their kin.</p>\n<hr />\n<p>Greedspawn are the tallest of sinspawn, often 7 feet in height, and with gold-tinged veins.</p>",
+            "allSavesBonus": "+1 status to all saves vs. magic, +4 status to all saves vs. mental",
+            "items": {
+                "strike-melee->Jaws": {
+                    "name": "Jaws"
+                },
+                "strike-melee->Claw": {
+                    "name": "Claw"
+                },
+                "action->Sin Scent (Imprecise) 30 feet": {
+                    "name": "Sin Scent (Imprecise) 30 feet",
+                    "description": "<p>A sinspawn can smell creatures that reflect its sin, as the scent ability. The GM determines which creatures are appropriately sinful.</p>"
+                },
+                "action->+1 Status to All Saves vs. Magic": {
+                    "name": "+1 Status to All Saves vs. Magic"
+                },
+                "action->+4 Status to All Saves vs. Mental": {
+                    "name": "+4 Status to All Saves vs. Mental"
+                },
+                "action->Attack of Opportunity": {
+                    "name": "Attack of Opportunity"
+                },
+                "action->Sinful Bite": {
+                    "name": "Sinful Bite",
+                    "description": "<p>A creature hit by the jaws of a sinspawn must attempt a @Check[type:will|dc:18] save as it is assailed by sinful thoughts.</p>\n<hr />\n<p><strong>Critical Success</strong> Unaffected</p>\n<p><strong>Success</strong> @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 1}</p>\n<p><strong>Failure</strong> @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 2}</p>\n<p><strong>Critical Failure</strong> sickened 2 plus @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 2} for 1 minute</p>"
+                }
+            }
+        },
         "Gurlunk": {
             "name": "Gurlunk",
             "blurb": "Male goblin ranger",
@@ -1133,8 +1197,8 @@
                 "spellcastingEntry->Hexes": {
                     "name": "Hexes"
                 },
-                "equipment->Key": {
-                    "name": "Key"
+                "equipment->Slender Brass Key": {
+                    "name": "Slender Brass Key"
                 },
                 "strike-melee->Sickle": {
                     "name": "Sickle"
@@ -1894,6 +1958,10 @@
                 },
                 "spellcastingEntry->Primal Focus Spells": {
                     "name": "Primal Focus Spells"
+                },
+                "equipment->Ventriloquist's Ring (Greater)": {
+                    "name": "Ventriloquist's Ring (Greater)",
+                    "description": "<p>This elegant copper ring has miniature images of songbirds engraved around its circumference. You gain a +2 item bonus to Deception checks.</p>\n<p><strong>Activate\u2014Throw Voice</strong><span class=\"action-glyph\">2</span>(manipulate)</p>\n<p><strong>Frequency</strong> any number of times per day</p>\n<hr />\n<p><strong>Effect</strong> Twisting the ring around your finger allows you to magically throw your voice, with the effects of a 2nd-rank @UUID[Compendium.pf2e.spells-srd.Item.yV7Ouzaoe7DHLESI]{Ventriloquism} spell (@Check[type:perception|dc:27]).</p>"
                 },
                 "strike-melee->Tendril": {
                     "name": "Tendril"
