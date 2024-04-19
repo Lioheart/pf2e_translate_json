@@ -1392,6 +1392,41 @@
                 }
             }
         },
+        "Banshee": {
+            "name": "Banshee",
+            "publicNotes": "<p>Banshees are the furious, tormented souls of those bound to the world by a betrayal that defined the final hours of their lives. Some banshees arise from those who were slain by trusted friends and allies, or whose loved ones betrayed them on their deathbeds. Others spawn from those whose treacherous deeds shortly before their deaths left a stain upon their souls. Regardless of their origin, banshees despise the living. This hatred of life is all too often a horrific inversion of their personalities in life. Some speculate that the more kind-hearted the person (and the more wrenching the betrayal), the crueler the banshee.</p>\n<p>Banshees rarely stray far from where they perished and typically haunt thick forests and canopied swamps where little light graces the ground. Many banshees are elves and can be found in the elven nation of Kyonin, specifically in Tanglebriar, the sinister domain of the demon Treerazer. Similarly, a large number of banshees can be found lurking in the frozen wastes in northern Avistan, created from a cruel and widespread betrayal that is centuries old.</p>",
+            "sensesDetails": "hears heartbeats (imprecise) 60 feet",
+            "hpDetails": "void healing",
+            "items": {
+                "strike-melee->Hand": {
+                    "name": "Hand"
+                },
+                "action->Hears Heartbeats": {
+                    "name": "Hears Heartbeats",
+                    "description": "<p>The banshee can hear heartbeats within 60 feet of it as an imprecise sense.</p>"
+                },
+                "action->Sunlight Powerlessness": {
+                    "name": "Sunlight Powerlessness",
+                    "description": "<p>A banshee in sunlight is @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 2} and @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned 2}.</p>"
+                },
+                "action->Spectral Ripple": {
+                    "name": "Spectral Ripple",
+                    "description": "<p>When a banshee Strides at least 10 feet, they're @UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{Concealed} until the start of their next turn.</p>"
+                },
+                "action->Terrifying Touch": {
+                    "name": "Terrifying Touch",
+                    "description": "<p>A creature damaged by the banshee's touch that isn't already frightened must attempt a @Check[will|dc:38] save (@Check[will|dc:43] if the attack was a critical hit). If the creature fails its save, it's @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 2}; on a critical failure, the creature also cowers with fear and is @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned 4}. If the creature is protected against fear by a spell or magic item, the banshee's touch first attempts to counteract the protection effect, with the effect of a 9th-rank @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} spell.</p>"
+                },
+                "action->Vengeful Spite": {
+                    "name": "Vengeful Spite",
+                    "description": "<p><strong>Trigger</strong> A foe critically hits the banshee, or the banshee critically fails their save against a foe's damaging effect</p>\n<hr />\n<p><strong>Effect</strong> The banshee lashes back at their tormentor, dealing @Damage[(4d10+14)[mental]] damage with a @Check[type:will|dc:38|basic:true] save and applying the effects of terrifying touch based on the results of the same Will save.</p>"
+                },
+                "action->Wail": {
+                    "name": "Wail",
+                    "description": "<p>The banshee unleashes a soul-chilling @UUID[Compendium.pf2e.spells-srd.Item.FEsuyf203wTNE2et]{Wails of the Damned} (@Check[type:will|dc:38|traits:void|options:damaging-effect,item:type:spell], @Damage[8d10[void]]). This Wail overcomes silence and similar effects of 5th rank or lower. The banshee can instead use Wail as a three-action activity to overcome such effects of up to 8th rank.</p>\n<p>The banshee's Wail resonates for 1 round, and any creature that comes within the area during that time must attempt a save against the effect. A creature can't be affected more than once by the same Wail. The banshee can't Wail again for [[/gmr 1d4 #Recharge Wail]] rounds.</p>"
+                }
+            }
+        },
         "Barghest": {
             "name": "Barghest",
             "publicNotes": "<p>Barghests are canine beasts that take great joy in the hunt, often lurking near humanoid settlements to find prey that can provide a suitable challenge. Even in the deepest wilderness, barghests choose the most clever or difficult prey, searching endlessly for challenges like giants, nymphs, and unicorns.</p>\n<p>More than victory or even the possibility of a meal at the end, barghests enjoy the thrill of the chase and the fear they create within their prey. Particularly terrified targets of a hunting barghest might even be allowed to escape, spreading the terror and enticing hunters who can become the barghest's next victims. A handful of barghests resort to learning magical methods of causing fear directly, though they find such fear hollow and unsatisfying.</p>\n<p>Although they rarely tolerate the competition of another barghest's presence, these hunters will happily work with anyone who helps them find prey to torment and kill. This often involves enforcing the will of hags or particularly cruel fey, but a bored barghest might also force a family of weaker humanoids to work as scouts and bait.</p>\n<p>Typical barghests often make use of their shapechanging abilities to hide in plain sight, only taking their true forms to frighten their prey and exult in the hunt. However, they are often still exposed by their trail of victims or the curiously unhealing wounds they inflict, even in humanoid form. Tales of powerful barghests with invisible heads are sometimes told in remote and dwindling villages. These barghests generally dispense with hiding as a humanoid or dog, instead terrifying entire communities and openly hunting increasingly dangerous prey. Some also extend this pride to their intellect, insisting on matching wits with their prey or even with those who believe they're hunting the barghest.</p>",
@@ -1440,8 +1475,8 @@
             "name": "Benthic Worm",
             "publicNotes": "<p>The benthic worm is a deep-blue creature that is more at home in flooded tunnels than dry caves. While a benthic worm is a strong swimmer, it prefers to lie in wait within the walls, floor, or even ceiling of flooded caverns, ready to spring out and ambush creatures swimming past its hiding spot. The benthic worm is particularly hated and feared by Darklands-dwelling cultures, due to the fact that a benthic worm that burrows into a tunnel often brings with it waters from the submerged river or lake it calls home. When it becomes obvious that a benthic worm is near a Darklands settlement, the inhabitants quickly establish a hunting party to deal with the menace before it can bring ruin.</p>\n<hr />\n<p>Cave worms are gigantic scavengers that bore through the depths of the world, eating whatever material they find. Named for their distinctive habitats, these worms are ravenous and display overwhelming destructive capabilities. Cave worms of different types and abilities lurk in the more remote corners of the world\u2014tales speak of arctic worms that dwell within immense glaciers or icebergs and grave worms that burrow through the boneyards of long-forgotten ruins, to name a few.</p>",
             "items": {
-                "strike-melee->Jaw": {
-                    "name": "Jaw"
+                "strike-melee->Jaws": {
+                    "name": "Jaws"
                 },
                 "strike-melee->Stinger": {
                     "name": "Stinger"
@@ -1653,7 +1688,7 @@
                 },
                 "action->Raise Serpent": {
                     "name": "Raise Serpent",
-                    "description": "<p><strong>Frequency</strong> once per day</p>\n<hr />\n<p><strong>Effect</strong> The bone prophet animates corpses of snakes, serpentfolk, or similar serpentine creatures within a @Template[type:emanation|distance:30]. Any flesh on the bodies sloughs off, and they rise as skeletons. The bone prophet can raise one Large creature as a skeletal giant or up to three Medium creatures as skeletal champions; the equipment and attacks might be different depending on the corpses' possessions. These skeletons have the minion trait and are under the bone prophet's control; the bone prophet can give all these minions the same command with a single action that has the concentrate trait. Any skeletal minions that still remain after 10 minutes crumble to dust.</p>"
+                    "description": "<p><strong>Frequency</strong> once per day</p>\n<hr />\n<p><strong>Effect</strong> The bone prophet animates corpses of snakes, serpentfolk, or similar serpentine creatures within a @Template[type:emanation|distance:30]. Any flesh on the bodies sloughs off, and they rise as skeletons. The bone prophet can raise one Large creature as a @UUID[Compendium.pf2e.pathfinder-monster-core.Actor.sEgjgitJmwYYa4mV]{Skeletal Giant} or up to three Medium creatures as @UUID[Compendium.pf2e.pathfinder-monster-core.Actor.FH58AcRBZIfrHKvv]{Skeletal Champions}; the equipment and attacks might be different depending on the corpses' possessions. These skeletons have the minion trait and are under the bone prophet's control; the bone prophet can give all these minions the same command with a single action that has the concentrate trait. Any skeletal minions that still remain after 10 minutes crumble to dust.</p>"
                 },
                 "action->Serpentfolk Venom": {
                     "name": "Serpentfolk Venom",
@@ -4394,7 +4429,7 @@
                 },
                 "action->Push or Pull 10 feet": {
                     "name": "Push or Pull 10 feet",
-                    "description": "<p>The elemental tsunami can choose whether to push or pull the creature on a succesful hit.</p>\n<hr />\n<p><strong>Push</strong><span class=\"action-glyph\">1</span></p>\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Push]</p>\n<hr />\n<p><strong>Pull <span class=\"action-glyph\">1</span></strong></p>\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Pull]</p>"
+                    "description": "<p>The elemental tsunami can choose whether to push or pull the creature on a succesful hit.</p>\n<hr />\n<p><strong>Push</strong><span class=\"action-glyph\">1</span></p>\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Push]</p>\n<hr />\n<p><strong>Pull</strong> <span class=\"action-glyph\">1</span></p>\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Pull]</p>"
                 }
             }
         },
@@ -6049,7 +6084,7 @@
                 },
                 "action->Giant Octopus Venom": {
                     "name": "Giant Octopus Venom",
-                    "description": "<p><strong>Saving Throw</strong> @Check[type:fortitude|dc:26]</p>\n<hr />\n<p><strong>Maximum Duration</strong> 6 rounds</p>\n<p><strong>Stage 1</strong> @Damage[2d6[poison]] damage and @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} (1 round)</p>\n<p><strong>Stage 2</strong> @Damage[2d6[poison]] damage, @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 1}, and off-guard (1 round)</p>\n<p><strong>Stage 3</strong> @Damage[2d6[poison]] damage, @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 2}, and offguard (1 round)</p>"
+                    "description": "<p><strong>Saving Throw</strong> @Check[type:fortitude|dc:26]</p>\n<hr />\n<p><strong>Maximum Duration</strong> 6 rounds</p>\n<p><strong>Stage 1</strong> @Damage[2d6[poison]] damage and @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} (1 round)</p>\n<p><strong>Stage 2</strong> @Damage[2d6[poison]] damage, @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 1}, and off-guard (1 round)</p>\n<p><strong>Stage 3</strong> @Damage[2d6[poison]] damage, @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 2}, and off-guard (1 round)</p>"
                 },
                 "action->Ink Cloud": {
                     "name": "Ink Cloud",
@@ -6236,7 +6271,7 @@
                 },
                 "action->Trip Up": {
                     "name": "Trip Up",
-                    "description": "<p><strong>Trigger</strong> A creature critically fails a melee attack to hit the gimmerling or moves into a space within the gimmerling's treacherous aura</p>\n<hr />\n<p><strong>Effect</strong> The triggering creature must attempt a @Check[type:reflex|dc:32] save.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target is @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} until the start of its next turn.</p>\n<p><strong>Failure</strong> The target takes @Damage[2d10[bludgeoning]] damage and is offguard until the start of its next turn.</p>\n<p><strong>Critical Failure</strong> As failure, and the target is knocked @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone}.</p>"
+                    "description": "<p><strong>Trigger</strong> A creature critically fails a melee attack to hit the gimmerling or moves into a space within the gimmerling's treacherous aura</p>\n<hr />\n<p><strong>Effect</strong> The triggering creature must attempt a @Check[type:reflex|dc:32] save.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target is @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} until the start of its next turn.</p>\n<p><strong>Failure</strong> The target takes @Damage[2d10[bludgeoning]] damage and is off-guard until the start of its next turn.</p>\n<p><strong>Critical Failure</strong> As failure, and the target is knocked @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone}.</p>"
                 },
                 "action->Change Shape": {
                     "name": "Change Shape",
@@ -6244,7 +6279,7 @@
                 },
                 "action->Sly Disarm": {
                     "name": "Sly Disarm",
-                    "description": "<p><strong>Requirements</strong> The gimmerling's last action was a successful claw Strike;</p>\n<hr />\n<p><strong>Effect</strong> The gimmerling attempts to @UUID[Compendium.pf2e.actionspf2e.Item.Dt6B1slsBy8ipJu9]{Disarm} the creature they hit. They gain a +4 status bonus on the Athletics check. This attempt neither applies nor counts toward the gimmerling's multiple attack penalty.</p>"
+                    "description": "<p><strong>Requirements</strong> The gimmerling's last action was a successful claw Strike</p>\n<hr />\n<p><strong>Effect</strong> The gimmerling attempts to @UUID[Compendium.pf2e.actionspf2e.Item.Dt6B1slsBy8ipJu9]{Disarm} the creature they hit. They gain a +4 status bonus on the Athletics check. This attempt neither applies nor counts toward the gimmerling's multiple attack penalty.</p>"
                 },
                 "action->Sneak Attack": {
                     "name": "Sneak Attack",
@@ -6766,7 +6801,7 @@
         "Great White Shark": {
             "name": "Great White Shark",
             "publicNotes": "<p>An apex predator among the coastal surface waters where it hunts, the great white shark is one of the largest shark species. These silent killers glide gracefully through the ocean, always in search of their next meal.</p>\n<hr />\n<p>Sharks of all shapes and sizes have stalked the oceans, largely unchanged, since primordial times. They are efficient, ruthless predators with multiple rows of razor-sharp teeth capable of rending prey in an instant. Their uncanny ability to smell blood in the water means sharks might show up at any scene of aquatic carnage.</p>",
-            "sensesDetails": "blood scent, blood scent",
+            "sensesDetails": "blood scent",
             "items": {
                 "strike-melee->Jaws": {
                     "name": "Jaws"
@@ -7011,7 +7046,7 @@
             "publicNotes": "<p>The Grim Reaper is the unflinching personification of death. Silent as the grave and as inevitable as time itself, this legendary being hunts down and finishes creatures that have evaded death for far too long. Sometimes the Grim Reaper comes without warning, while at others it comes to finish the work that other creatures could not. The Grim Reaper serves no god, fiend, or aeon. It is both despised and feared by psychopomps and celestials, but few-if any-dare to stand in its way. Like some eternal plague, it kills those who try to cure the multiverse of its presence. It stands alone and holds only its own council, and the pleading and reasoning of mortals and immortals alike fall on deaf ears once the Grim Reaper closes on its quarry. Its own reasoning is silent to mortal ears and inscrutable to the mortal mind, but no matter the reason, the result is unyielding and final.</p>\n<p>While some legends hold that the Grim Reaper appears before everyone as they die, the truth is quite a bit more disturbing. Such vigils in fact lie within the providence of the psychopomps, a race of immortals charged with the protection and guidance of mortal souls through the afterlife. The Grim Reaper has little interest in protecting souls or guiding them. It is instead compelled by sinister agendas arising within the nighted realm of Abaddon, where the Horsemen of the Apocalypse rule. Indeed there are many similarities in shape and form between the Grim Reaper and Charon, the Horseman of Death, but no recorded instance exists of these two powerful entities working together. Instead, the Grim Reaper serves as something of a manifestation of Abaddon itself, and in this regard is believed by some to be an incarnation of the mysterious First Horseman. When the Grim Reaper comes to a world, it does so not as an angel of mercy, but as a relentless harvester of life. Those who fall to the Grim Reaper were not destined to die as much as they were selected, hunted, and murdered.</p>\n<p>Perhaps the most frightening legends surrounding the Grim Reaper concern its nature as a singular entity, for some believe that more than one grim reaper exists in the Great Beyond. These whispers tell of a cabal of at least nine of these creatures that stalk reality, culling the living as inexplicable servants of true entropy. According to the teaching of some death cults, the final goal of the Grim Reaper is to end the entire cycle of life and death and serve as a silent lord of an empty universe.</p>",
             "allSavesBonus": "+1 status to all saves vs. magic",
             "sensesDetails": "status sight",
-            "hpDetails": "death's embrace, void healing",
+            "hpDetails": "death's grace, void healing",
             "items": {
                 "spellcastingEntry->Divine Innate Spells": {
                     "name": "Divine Innate Spells"
@@ -7316,13 +7351,6 @@
                 "action->Putrid Plague": {
                     "name": "Putrid Plague",
                     "description": "<p>The sickened and unconscious conditions from putrid plague can't end or be reduced until the disease is cured</p>\n<p><strong>Saving Throw</strong> @Check[type:fortitude|dc:19]</p>\n<hr />\n<p><strong>Stage 1</strong> carrier with no ill effect (1d4 hours),</p>\n<p><strong>Stage 2</strong> @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 1} (1 day),</p>\n<p><strong>Stage 3</strong> sickened 1 and @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1} (1 day),</p>\n<p><strong>Stage 4</strong> @UUID[Compendium.pf2e.conditionitems.Item.fBnFDH2MTzgFijKf]{Unconscious} (1 day),</p>\n<p><strong>Stage 5</strong> dead</p>"
-                },
-                "lore->Performance": {
-                    "skillVariants": {
-                        "0": {
-                            "label": "+16 singing"
-                        }
-                    }
                 }
             }
         },
@@ -7871,7 +7899,7 @@
                 "strike-melee->Warhammer": {
                     "name": "Warhammer"
                 },
-                "strike-melee->Alchemical Grenade": {
+                "strike-ranged->Alchemical Grenade": {
                     "name": "Alchemical Grenade",
                     "description": "<p>Acid, Cold, or Fire Damage</p>"
                 },
@@ -7914,7 +7942,7 @@
                 },
                 "action->Bola Bolt": {
                     "name": "Bola Bolt",
-                    "description": "<p>This shot deals no damage, but on a hit, the target must succeed at a @Check[type:reflex|dc:16] save or be knocked @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone} and @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Immobilized} until it is freed with a successful DC 15 check to @UUID[Compendium.pf2e.actionspf2e.Item.SkZAQRkLLkmBQNB9]{Escape}. This check can be attempted either by the target or a creature adjacent to the target.</p>"
+                    "description": "<p>This shot deals no damage, but on a hit, the target must succeed at a @Check[type:reflex|dc:16] save or be knocked @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone} and @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Immobilized} until it is freed with a successful DC 15 check to [[/act escape dc=15]]. This check can be attempted either by the target or a creature adjacent to the target.</p>"
                 }
             }
         },
@@ -7977,11 +8005,11 @@
                 },
                 "action->Hunting Spider Venom": {
                     "name": "Hunting Spider Venom",
-                    "description": "<p><strong>Saving Throw</strong> @Check[type:fortitude|dc:16]</p>\n<hr />\n<p><strong>Maximum Duration</strong> 6 rounds</p>\n<p><strong>Stage 1</strong> @Damage[1d10[poison]] damage and @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} (1 round)</p>\n<p><strong>Stage 2</strong> @Damage[1d12[poison]] damage, @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 1}, and off-guard (1 round)</p>\n<p><strong>Stage 3</strong> @Damage[2d6[poison]] damage, @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 2}, and off-guard (1 round)</p>"
+                    "description": "<p><strong>Saving Throw</strong> @Check[type:fortitude|dc:16]</p>\n<hr />\n<p><strong>Maximum Duration</strong> 6 rounds</p>\n<p><strong>Stage 1</strong> @Damage[1d4[poison]] damage and @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} (1 round)</p>\n<p><strong>Stage 2</strong> @Damage[1d6[poison]] damage, @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 1}, and off-guard (1 round)</p>\n<p><strong>Stage 3</strong> @Damage[1d6[poison]] damage, @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 2}, and off-guard (1 round)</p>"
                 },
                 "action->Web Trap": {
                     "name": "Web Trap",
-                    "description": "<p>A creature hit by the hunting spider's web attack is @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Immobilized} and stuck to the nearest surface until it @UUID[Compendium.pf2e.actionspf2e.Item.SkZAQRkLLkmBQNB9]{Escapes} (DC 17).</p>"
+                    "description": "<p>A creature hit by the hunting spider's web Strike is @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Immobilized} and stuck to the nearest surface until it [[/act escape dc=17]]{Escapes (DC 17)}.</p>"
                 }
             }
         },
@@ -8118,7 +8146,7 @@
                 },
                 "action->Icemire Breath": {
                     "name": "Icemire Breath",
-                    "description": "<p>The ice linnorm spews out a blast of freezing, viscous ooze in a @Template[type:cone|distance:60] that deals @Damage[15d6[cold]] damage to creatures within the area (@Check[type:reflex|dc:38|basic:true] save).</p>\n<p>The freezing ooze clings to those struck and hardens into thick sheets of ice. A creature that fails the saving throw is @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Immobilized} by the ice until it succeeds at a check to [[/act escape dc=34]] or it or an ally @UUID[Compendium.pf2e.actionspf2e.Item.SjmKHgI7a5Z9JzBx]{Forces Open} the ice (DC 34 for either case). At the start of its turn, a creature still immobilized by the ice takes @Damage[4d6[cold]] damage. Another creature can free a frozen target by dealing a total of 20 fire damage to the frozen target. Left unattended, the ice crumbles away in 1 minute on its own.</p>\n<p>Creatures with the fire trait can't be frozen in place by Icemire Breath. Flying creatures fall if frozen, and swimming creatures that are frozen rise toward the surface of the water at a speed of 60 feet per round.</p>\n<p>The linnorm can't use Icemire Breath again for [[/br 1d4 #Recharge Icemire Breath]]{1d4 rounds}.</p>"
+                    "description": "<p>The ice linnorm spews out a blast of freezing, viscous ooze in a @Template[type:cone|distance:60] that deals @Damage[15d6[cold]] damage to creatures within the area (@Check[type:reflex|dc:38|basic:true] save).</p>\n<p>The freezing ooze clings to those struck and hardens into thick sheets of ice. A creature that fails the saving throw is @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Immobilized} by the ice until it succeeds at a check to [[/act escape dc=34]] or it or an ally [[/act force-open dc=34]]{Forces Open} the ice (DC 34 for either case). At the start of its turn, a creature still immobilized by the ice takes @Damage[4d6[cold]] damage. Another creature can free a frozen target by dealing a total of 20 fire damage to the frozen target. Left unattended, the ice crumbles away in 1 minute on its own.</p>\n<p>Creatures with the fire trait can't be frozen in place by Icemire Breath. Flying creatures fall if frozen, and swimming creatures that are frozen rise toward the surface of the water at a speed of 60 feet per round.</p>\n<p>The linnorm can't use Icemire Breath again for [[/br 1d4 #Recharge Icemire Breath]]{1d4 rounds}.</p>"
                 },
                 "action->Improved Grab": {
                     "name": "Improved Grab"
@@ -8299,11 +8327,12 @@
                 "strike-melee->Longspear": {
                     "name": "Longspear"
                 },
-                "strike-melee->Fist": {
-                    "name": "Fist"
+                "strike-melee->Jaws": {
+                    "name": "Jaws"
                 },
-                "strike-ranged->Electric Missile": {
-                    "name": "Electric Missile"
+                "strike-ranged->Thunderbolt": {
+                    "name": "Thunderbolt",
+                    "description": "<p>(plus @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} for 1 round)</p>"
                 },
                 "action->Mist Vision": {
                     "name": "Mist Vision",
@@ -8332,7 +8361,7 @@
                 },
                 "action->Conductive Downpour": {
                     "name": "Conductive Downpour",
-                    "description": "<p>The island oni fires a bolt of lightning into the air, which immediately roils with dark clouds. Rain falls in a 60-foot radius emanation, centered on the oni, for 1 minute, filling the air and pooling on the ground.</p>\n<p>Creatures in the aura gain weakness 10 to electricity, and the entire area is greater difficult terrain for Flying creatures, and difficult terrain for creatures on the ground or Climbing, unless they also have a swim Speed.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.5Todv39Zj63IyQCZ]{Effect: Conductive Downpour}</p>"
+                    "description": "<p>The island oni fires a bolt of lightning into the air, which immediately roils with dark clouds. Rain falls in a @Template[type:emanation|distance:60]{60-foot radius emanation}, centered on the oni, for 1 minute, filling the air and pooling on the ground.</p>\n<p>Creatures in the aura gain weakness 10 to electricity, and the entire area is greater difficult terrain for Flying creatures, and difficult terrain for creatures on the ground or Climbing, unless they also have a swim Speed.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.5Todv39Zj63IyQCZ]{Effect: Conductive Downpour}</p>"
                 },
                 "action->Electrifying Pierce": {
                     "name": "Electrifying Pierce",
@@ -8345,6 +8374,9 @@
                 "action->Tripping Tide": {
                     "name": "Tripping Tide",
                     "description": "<p>The island oni sweeps their spear in a full circle, releasing waves of seawater. All creatures in a @Template[type:emanation|distance:20] must succeed a @Check[type:reflex|dc:37] saving throw or fall @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone}.</p>"
+                },
+                "action->Improved Grab": {
+                    "name": "Improved Grab"
                 }
             }
         },
@@ -8418,7 +8450,7 @@
                 },
                 "action->Stone Clutch": {
                     "name": "Stone Clutch",
-                    "description": "<p>When the jabali Pushes a creature into a stone barrier, the surface grips it with fingers of stone. The target must succeed at a @Check[type:reflex|dc:22] save or become @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed} by the surface (@UUID[Compendium.pf2e.actionspf2e.Item.SkZAQRkLLkmBQNB9]{Escape} DC 28).</p>"
+                    "description": "<p>When the jabali Pushes a creature into a stone barrier, the surface grips it with fingers of stone. The target must succeed at a @Check[type:reflex|dc:22] save or become @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed} by the surface ([[/act escape dc=28]]).</p>"
                 },
                 "action->Push 10 feet": {
                     "name": "Push 10 feet"
@@ -8771,9 +8803,6 @@
                 "action->Scamper": {
                     "name": "Scamper",
                     "description": "<p><strong>Requirements</strong> The kobold cavern mage is adjacent to at least one enemy</p>\n<hr />\n<p><strong>Effect</strong> The kobold cavern mage Strides up to their Speed plus 5 feet and gains a +2 circumstance bonus to AC against reactions triggered by this movement. They must end this movement in a space that's not adjacent to any enemy.</p>"
-                },
-                "lore->Dragon Lore": {
-                    "name": "Dragon Lore"
                 }
             }
         },
@@ -8835,7 +8864,7 @@
                 },
                 "action->Constrict": {
                     "name": "Constrict",
-                    "description": "<p>@Damage[(2d10+17)[bludgeoning]], @Check[type:fortitude|dc:40|basic:true]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Constrict]</p>"
+                    "description": "<p>@Damage[(2d10+17)[bludgeoning]], @Check[type:fortitude|dc:40|basic:true]. On a failed save, a creature that is holding its breath loses [[/br 1d4 #Lost rounds of air from Constrict]]{1d4 rounds} worth of air.</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Constrict]</p>"
                 },
                 "action->Double Attack": {
                     "name": "Double Attack",
@@ -8960,7 +8989,7 @@
                 },
                 "action->Matriarch's Caress": {
                     "name": "Matriarch's Caress",
-                    "description": "<p>The lamia touches a creature, who must succeed at a @Check[type:will|dc:28] save or become @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 1} (@UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 2} on a critical failure). If the target fails additional saves against this ability, the condition value increases by 1 (increases by 2 on a critical failure, to a maximum of @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 4}). This condition value decreases by 1 every 24 hours.</p>"
+                    "description": "<p>The lamia matriarch touches a creature, who must succeed at a @Check[type:will|dc:28] save or become @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 2} (@UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 4} on a critical failure). If the target fails additional saves against this ability, the condition value increases by 1 (increases by 2 on a critical failure, to a maximum of @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 4}). This condition value decreases by 1 every 24 hours.</p>"
                 },
                 "action->Scimitar Storm": {
                     "name": "Scimitar Storm",
@@ -9209,7 +9238,7 @@
                 },
                 "weapon->Staff of Fire (Greater)": {
                     "name": "Staff of Fire (Greater)",
-                    "description": "<p>This staff resembles a blackened and burned length of ashen wood. You can Interact to touch the tip of this staff to a torch, tinder, or a flammable substance to ignite a flame.</p>\n<p><strong>Activate</strong> Cast a Spell; <strong>Effect</strong> You expend a number of charges from the staff to cast a spell from its list.</p>\n<hr />\n<ul>\n<li><strong>Cantrip</strong> @UUID[Compendium.pf2e.spells-srd.Item.6DfLZBl8wKIV03Iq]{Ignition}</li>\n<li><strong>1st</strong> @UUID[Compendium.pf2e.spells-srd.Item.y6rAdMK6EFlV6U0t]{Breathe Fire}</li>\n<li><strong>2nd</strong> @UUID[Compendium.pf2e.spells-srd.Item.y6rAdMK6EFlV6U0t]{Breathe Fire}, @UUID[Compendium.pf2e.spells-srd.Item.2ZdHjnpEQJuqOYSG]{Floating Flame}</li>\n<li><strong>3rd</strong> @UUID[Compendium.pf2e.spells-srd.Item.2ZdHjnpEQJuqOYSG]{Floating Flame}, @UUID[Compendium.pf2e.spells-srd.Item.sxQZ6yqTn0czJxVd]{Fireball}</li>\n</ul>\n<hr />\n<p><strong>Craft Requirements</strong> Supply one casting of all listed ranks of all listed spells.</p>"
+                    "description": "<p>This staff resembles a blackened and burned length of ashen wood. You can Interact to touch the tip of this staff to a torch, tinder, or a flammable substance to ignite a flame.</p>\n<p><strong>Activate</strong> Cast a Spell</p>\n<p><strong>Effect</strong> You expend a number of charges from the staff to cast a spell from its list.</p>\n<hr />\n<ul>\n<li><strong>Cantrip</strong> @UUID[Compendium.pf2e.spells-srd.Item.6DfLZBl8wKIV03Iq]{Ignition}</li>\n<li><strong>1st</strong> @UUID[Compendium.pf2e.spells-srd.Item.y6rAdMK6EFlV6U0t]{Breathe Fire}</li>\n<li><strong>2nd</strong> @UUID[Compendium.pf2e.spells-srd.Item.y6rAdMK6EFlV6U0t]{Breathe Fire}, @UUID[Compendium.pf2e.spells-srd.Item.2ZdHjnpEQJuqOYSG]{Floating Flame}</li>\n<li><strong>3rd</strong> @UUID[Compendium.pf2e.spells-srd.Item.2ZdHjnpEQJuqOYSG]{Floating Flame}, @UUID[Compendium.pf2e.spells-srd.Item.sxQZ6yqTn0czJxVd]{Fireball}</li>\n</ul>\n<hr />\n<p><strong>Craft Requirements</strong> Supply one casting of all listed ranks of all listed spells.</p>"
                 },
                 "consumable->Scroll of Teleport (Rank 6)": {
                     "name": "Scroll of Teleport (Rank 6)",
@@ -9362,7 +9391,7 @@
                 },
                 "action->Push or Pull 5 feet": {
                     "name": "Push or Pull 5 feet",
-                    "description": "<p>The living waterfall can choose whether to push or pull the creature on a succesful hit.</p>\n<hr />\n<p><strong>Push</strong><span class=\"action-glyph\">1</span></p>\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Push]</p>\n<hr />\n<p><strong>Pull <span class=\"action-glyph\">1</span></strong></p>\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Pull]</p>"
+                    "description": "<p>The living waterfall can choose whether to push or pull the creature on a succesful hit.</p>\n<hr />\n<p><strong>Push</strong> <span class=\"action-glyph\">1</span></p>\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Push]</p>\n<hr />\n<p><strong>Pull</strong> <span class=\"action-glyph\">1</span></p>\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Pull]</p>"
                 }
             }
         },
@@ -9667,7 +9696,7 @@
                 },
                 "action->Spike Volley": {
                     "name": "Spike Volley",
-                    "description": "<p>The manticore flings up to two spikes from its tail, targeting either two different creatures or a single creature. If the manticore targets two different creatures, these creatures must be within 20 feet of one another, and the manticore makes a separate Strike against each; this counts as only one Strike for the manticore's multiple attack penalty, and the penalty doesn't increase until after both attacks.</p>\n<p>If the manticore flings both spikes at the same creature, it makes a single Strike. If the attack hits, it deals the damage of a single spike, but the target is pinned in place, rendering it @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Immobilized}. A creature can get free if it Forces Open the spike or Escapes; either option is DC 23.</p>\n<p>A manticore can hurl no more than 12 spikes in 24 hours.</p>"
+                    "description": "<p>The manticore flings up to two spikes from its tail, targeting either two different creatures or a single creature. If the manticore targets two different creatures, these creatures must be within 20 feet of one another, and the manticore makes a separate Strike against each; this counts as only one Strike for the manticore's multiple attack penalty, and the penalty doesn't increase until after both attacks.</p>\n<p>If the manticore flings both spikes at the same creature, it makes a single Strike. If the attack hits, it deals the damage of a single spike, but the target is pinned in place, rendering it @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Immobilized}. A creature can get free if it [[/act force-open dc=23]]{Forces Open} the spike or [[/act escape dc=23]]{Escapes}; either option is DC 23.</p>\n<p>A manticore can hurl no more than 12 spikes in 24 hours.</p>"
                 }
             }
         },
@@ -10281,7 +10310,7 @@
                 },
                 "action->Spider Minions": {
                     "name": "Spider Minions",
-                    "description": "<p>The morrigna summons a giant tarantula or spider swarm. These spiders have the summoned trait and remain for 10 minutes or until reduced to 0 Hit Points, whichever comes first. The morrigna does not need to Sustain the Spell to direct these summoned creatures, and the morrigna can have any number of summoned spiders in existence at once. The morrigna can see through the eyes of any of their summoned spiders at any time.</p>"
+                    "description": "<p>The morrigna summons a @UUID[Compendium.pf2e.pathfinder-monster-core.Actor.4ISm82EYQeOndynw]{Giant Tarantula} or @UUID[Compendium.pf2e.pathfinder-monster-core.Actor.NcYbJS5PWBGdNDqh]{Spider Swarm}. These spiders have the summoned trait and remain for 10 minutes or until reduced to 0 Hit Points, whichever comes first. The morrigna does not need to Sustain the Spell to direct these summoned creatures, and the morrigna can have any number of summoned spiders in existence at once. The morrigna can see through the eyes of any of their summoned spiders at any time.</p>"
                 },
                 "action->Wrappings Lash": {
                     "name": "Wrappings Lash",
@@ -15274,7 +15303,7 @@
                 },
                 "action->Chaotic Spawning": {
                     "name": "Chaotic Spawning",
-                    "description": "<p>The vescavor queen strengthens her swarms. All vescavor swarms within 100 feet become Huge and @UUID[Compendium.pf2e.conditionitems.Item.nlCjDvLMf2EkV2dl]{Quickened} for 1 minute. Vescavor swarms can only use the extra action each round for the Ravenous Bites action.</p>"
+                    "description": "<p>The vescavor queen strengthens her swarms. All vescavor swarms within @Template[type:emanation|distance:100]{100 feet} become Huge and @UUID[Compendium.pf2e.conditionitems.Item.nlCjDvLMf2EkV2dl]{Quickened} for 1 minute. Vescavor swarms can only use the extra action each round for the Ravenous Bites action.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.jhPkOUdLPSQ46vkU]{Effect: Chaotic Spawning}</p>"
                 },
                 "action->Feeding Time": {
                     "name": "Feeding Time",
@@ -15430,7 +15459,7 @@
                 },
                 "action->Aura of Disquietude": {
                     "name": "Aura of Disquietude",
-                    "description": "<p>30 feet @Check[type:will|dc:35]</p>\n<p>As frightful presence, plus a creature frightened by the aura becomes suspicious; it doesn't count any other creature as its ally and can't Aid or flank. On a critical failure, the creature also can't be a willing target for harmless or helpful magic.</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.FrightfulPresence]</p>"
+                    "description": "<p>30 feet. @Check[type:will|dc:35]</p>\n<p>As @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.etMnv73EIdEZrYYu]{Frightful Presence}, plus a creature frightened by the aura becomes suspicious; it doesn't count any other creature as its ally and can't @UUID[Compendium.pf2e.actionspf2e.Item.HCl3pzVefiv9ZKQW]{Aid} or flank. On a critical failure, the creature also can't be a willing target for harmless or helpful magic.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.3oF2DVXCmJ7VloBb]{Effect: Aura of Disquietude}</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.FrightfulPresence]</p>"
                 },
                 "action->Reactive Strike": {
                     "name": "Reactive Strike"
@@ -15555,7 +15584,7 @@
                 },
                 "action->Trident of Dis": {
                     "name": "Trident of Dis",
-                    "description": "<p>The vordine makes a trident Strike, increasing their reach to 10 feet for that Strike. If there is an unholy ally between the vordine and their target, that creature's energy causes the Strike to deal an additional @Damage[1d6[spirit]] damage.</p>"
+                    "description": "<p>The vordine makes a trident Strike, increasing their reach to 10 feet for that Strike. If there is an unholy ally between the vordine and their target, that creature's energy causes the Strike to deal an additional 1d6 spirit damage.</p>"
                 },
                 "lore->Warfare Lore": {
                     "name": "Warfare Lore"
