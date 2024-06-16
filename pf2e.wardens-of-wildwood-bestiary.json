@@ -139,6 +139,10 @@
                 }
             }
         },
+        "Ardande Ghost": {
+            "name": "Ardande Ghost",
+            "hpDetails": "rejuvenation, void healing"
+        },
         "Avathrael Realmshaper": {
             "name": "Avathrael Realmshaper",
             "blurb": "Agender dragon",
@@ -330,6 +334,18 @@
                 }
             }
         },
+        "Blighted Speaker in Spores": {
+            "name": "Blighted Speaker in Spores",
+            "publicNotes": "<p>As Zibik wanders the blighted wilderness and takes on the toxins of others, his body is overburdened by fungal growths. Zibik sheds these growths during his cycle of death and rebirth, and they sometimes emerge as a fungal creature that's independent of but innately connected to the green man. Zibik often shapes a speaker in spores to resemble an animal he encountered recently; speakers very rarely share the same form, but they all appear like fungal growths surrounded by glowing spores.</p>",
+            "speedsDetails": "fly",
+            "sensesDetails": "sporesight (imprecise) 120 feet",
+            "languagesDetails": "shaped tongue, spore matrix",
+            "items": {
+                "spellcastingEntry->Primal Innate Spells": {
+                    "name": "Primal Innate Spells"
+                }
+            }
+        },
         "Bloodletting Snare": {
             "name": "Bloodletting Snare",
             "descriptionHazard": "<p>Slender razor wire snags a creature, hauling them up into the air while causing deep, bloody wounds.</p>",
@@ -343,6 +359,16 @@
                 "strike-melee->Snare": {
                     "name": "Snare",
                     "description": "<p>The target is @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed} and pulled off the ground (@UUID[Compendium.pf2e.actionspf2e.Item.SkZAQRkLLkmBQNB9]{Escape} DC 26). The persistent bleed can't be stopped while the creature is grabbed.</p>"
+                }
+            }
+        },
+        "Bonebleacher Bugbear": {
+            "name": "Bonebleacher Bugbear",
+            "blurb": "Bugbear poisoner",
+            "items": {
+                "equipment->Mask (Plague)": {
+                    "name": "Mask (Plague)",
+                    "description": "<p>A mask helps you use the @UUID[Compendium.pf2e.actionspf2e.Item.AJstokjdG6iDjVjE]{Impersonate} action to pass yourself off as someone you aren't.</p>\n<p>This stylized bird mask is equipped with a basic filter. The plague mask attempts to counteract any inhaled poisons or airborne diseases each round you breathe. The same replacement filters used in @UUID[Compendium.pf2e.equipment-srd.Item.kDrlBnkDMVxPrahI]{Water Purifiers} can be used with a plague mask, granting you the counteract modifier and effects of the filter for 20 minutes.</p>\n<p>Plague masks are uncommon items because the filters they use to protect from inhaled poisons and diseases are themselves uncommon. As such, you can buy a plague mask without a filter as a common item, though it's usually more cost-effective to buy a fine mask in the shape of a plague mask in that case.</p>"
                 }
             }
         },
@@ -365,6 +391,10 @@
                     "name": "Attack of Opportunity"
                 }
             }
+        },
+        "Caustic Wraith": {
+            "name": "Caustic Wraith",
+            "hpDetails": "void healing"
         },
         "Chetamog": {
             "name": "Chetamog",
@@ -389,6 +419,10 @@
                     "description": "<p>The chetamog takes any combination of two Stride or Climb actions. It has a +10-foot circumstance bonus to its Speed during these actions.</p>"
                 }
             }
+        },
+        "Coiled Conifer": {
+            "name": "Coiled Conifer",
+            "publicNotes": "<p>This bent and slithering entity is barely identifiable as a tree. Tentacle-like roots extend from its trunk in odd places, meeting tumorous knots filled with caustic sap.</p><hr /><p>The Plane of Wood contains many unique ecosystems formed around species of wondrous trees; when Ayrzul's Blight mutates one of these trees rather than killing it, it can have a cascading effect on the tree's biome. Multiple species often mutate in tandem, becoming warped mockeries and a vector for Ayrzul's Blight. These \"blight bonded\" creature families are parasites and predators and typically form twisted symbiotic relationships.</p>"
         },
         "Consuming Cabinet": {
             "name": "Consuming Cabinet",
@@ -425,6 +459,34 @@
                 "action->Blaze": {
                     "name": "Blaze",
                     "description": "<p><strong>Trigger</strong> A living creature approaches Corazal</p>\n<hr />\n<p><strong>Effect</strong> The flames blaze higher, dealing @Damage[(2d12+13)[fire]] damage to the triggering creature (@Check[type:reflex|dc:29|basic:true] save). The hazard then rolls initiative.</p>"
+                }
+            }
+        },
+        "Creeping Cone Swarm": {
+            "name": "Creeping Cone Swarm",
+            "publicNotes": "<p>Caustic fluid seeps out from the scales of these sluglike cones, which spawn in unsuspecting hosts until they\u2019re mature enough to seek a place to root. Moving in writhing swarms that seek a habitat flush with prey, creeping cones spread Ayrzul\u2019s Blight when destroyed, but leaving them to grow unchecked poses a great risk to other creatures.</p><hr /><p>The Plane of Wood contains many unique ecosystems formed around species of wondrous trees; when Ayrzul's Blight mutates one of these trees rather than killing it, it can have a cascading effect on the tree's biome. Multiple species often mutate in tandem, becoming warped mockeries and a vector for Ayrzul's Blight. These \"blight bonded\" creature families are parasites and predators and typically form twisted symbiotic relationships.</p>",
+            "items": {
+                "action->Tremorsense (Imprecise) 60 feet": {
+                    "name": "Tremorsense (Imprecise) 60 feet"
+                },
+                "action->Swarm Mind": {
+                    "name": "Swarm Mind"
+                },
+                "action->Blight Burst": {
+                    "name": "Blight Burst",
+                    "description": "<p><strong>Trigger</strong> The creeping cone swarm is reduced to fewer than half its Hit Points or is reduced to 0 Hit Points</p><hr /><p><strong>Effect</strong> A @Template[type:emanation|distance:15] of acid explodes from the creeping cone swarm. Creatures in the area take @Damage[3d12[acid]] damage (@Check[type:reflex|dc:25|basic:true] save). Non-blight bonded creatures damaged by this effect are exposed to Ayrzul's Blight.</p>"
+                },
+                "action->Jagged Scales": {
+                    "name": "Jagged Scales",
+                    "description": "<p>The creeping cones shake off a barrage of jagged, stony scales. Each creature in a @Template[type:burst|distance:10] within 30 feet of the swarm takes @Damage[(2d12+7)[slashing]] damage (@Check[type:reflex|dc:29|basic:true] save).</p>"
+                },
+                "action->Pummeling Lurches": {
+                    "name": "Pummeling Lurches",
+                    "description": "<p>Each enemy in the swarm's space takes @Damage[6d6[bludgeoning]] damage (@Check[type:fortitude|dc:29|basic:true] save). A creature that fails its save falls @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone}.</p>"
+                },
+                "action->Putrid Spores": {
+                    "name": "Putrid Spores",
+                    "description": "<p>30 feet.</p>\n<p>A creature entering the aura must succeed at a @Check[type:fortitude|dc:26] save or become @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 1} until the end of its turn (@UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 2} on a critical failure).</p>\n<p>While within the aura, an affected creature takes a \u20132 circumstance penalty to recover from the sickened condition. A creature that succeeds at its save is temporarily immune for 1 minute.</p>"
                 }
             }
         },
@@ -502,6 +564,15 @@
                 "action->Tap Planar Gate": {
                     "name": "Tap Planar Gate",
                     "description": "<p>The woodblessed empowers themself or their next attack.</p>\n<p>If the woodblessed's next action is to Stride, is launched off the ground by a suddenly sprouting tree and propelled forward. During this Stride, they have a fly Speed equal to their Speed. If they don't end their movement on a solid surface that can support their weight, they fall.</p>\n<p>If the woodblessed's next action is a Strike, the attack sprouts thorns that deal an additional 1d6 persistent bleed damage.</p>"
+                }
+            }
+        },
+        "Druulbach": {
+            "name": "Druulbach",
+            "blurb": "Male marsh giant ranger ",
+            "items": {
+                "spellcastingEntry->Occult Innate Spells": {
+                    "name": "Occult Innate Spells"
                 }
             }
         },
@@ -669,6 +740,13 @@
                     "description": "<p><strong>Saving Throw</strong> @Check[type:fortitude|dc:26]</p>\n<p><strong>Maximum Duration</strong> 6 rounds</p>\n<p><strong>Stage 1</strong> @Damage[1d6[poison]] damage plus @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 1} and \u20135-foot status penalty to Speed (1 round)</p>\n<p><strong>Stage 2</strong> @Damage[2d6[poison]] damage plus @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 2} and \u201310-foot status penalty to Speed (1 round)</p>\n<p><strong>Stage 3</strong> @Damage[3d8[poison]] damage plus @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 3} and @UUID[Compendium.pf2e.conditionitems.Item.6uEgoh53GbXuHpTF]{Paralyzed} (1d4 rounds)</p>"
                 }
             }
+        },
+        "Gritblight": {
+            "name": "Gritblight",
+            "publicNotes": "<p>Resembling twisted lumps of fused gravel with oddly angled crystal limbs, gritblights are shock troops commonly used by Ayrzul to spread terror and disease to his enemies. These creatures are the gruesome result of experiments on crystalline elementals who were once the allies or servants of Ayrzul's rival lord of elemental earth, Sairazul. Their crystalline body parts appear cracked and deformed, only their single \"eye\" left intact.</p>",
+            "allSavesBonus": "+1 status vs. earth effects",
+            "speedsDetails": "earth glide",
+            "sensesDetails": "blight sense (precise) 60 feet, grit vision"
         },
         "Hateful Bear": {
             "name": "Hateful Bear",
@@ -890,6 +968,63 @@
                 }
             }
         },
+        "Leshy Mob": {
+            "name": "Leshy Mob",
+            "publicNotes": "<p>A single leshy is a nuisance. A horde of leshies is a natural disaster. When confronted by existential threats or malicious ecological devastation, charismatic leshy leaders can rally their kin into a mob. These bands often include several kinds of leshy, creating a ragtag host that can communicate with and draw power from nearly any plant in its path. The farther they travel, the greater the mob's sense of cohesion becomes, gradually awakening an empathic hive mind, coordinated shapeshifting, and communal spellcasting far beyond what any individual could accomplish.</p>\n<p>Leshy mobs rarely outlast whatever rallied them in the first place. After pillaging a lumber camp or liberating a greenhouse's contents, the leshies gradually shake off their mob mentality\u2014often with some shock or sheepishness at recognizing whatever crimes they just committed. Though the leshies scatter, they often retain a faint sense of camaraderie with their old comrades, making it easier for them to gather again to confront future threats.</p><hr /><p>For all their cute appearances and harmless pretenses, leshies can become a formidable force when riled. What's more, leshies can grow larger, stronger, and more aggressive in regions rich in primal energy. The following presents several higher-level leshy threats that grow in primordial forests.</p>",
+            "speedsDetails": "troop movement",
+            "languagesDetails": "speak with plants",
+            "hpDetails": "Thresholds 130 (12 squares), 65 (8 squares)",
+            "items": {
+                "spellcastingEntry->Primal Innate Spells": {
+                    "name": "Primal Innate Spells"
+                },
+                "action->Form Up": {
+                    "name": "Form Up"
+                },
+                "action->Troop Defenses": {
+                    "name": "Troop Defenses",
+                    "description": "<p><strong>Thresholds</strong> 130 (12 squares), 65 (8 squares)</p><hr /><p>@Localize[PF2E.NPC.Abilities.Glossary.TroopDefenses]</p>"
+                },
+                "action->Verdant Burst": {
+                    "name": "Verdant Burst",
+                    "description": "<p>When a leshy mob's Hit Points reach a threshold that would reduce its size, a burst of primal energy explodes from the fallen leshies and empowers the surviving fighters. The leshy mob gains [[/r 4d8]] temporary Hit Points that last for 10 minutes. In addition, all squares within 5 feet of the troop become filled with various plants, becoming difficult terrain. If the environment is not a viable environment for these plants, they wither after 24 hours.</p>"
+                },
+                "action->Change Shape": {
+                    "name": "Change Shape",
+                    "description": "<p>The leshies can transform into an assortment of Small plants that fills a @Template[type:burst|distance:15] centered on any one square the leshy mob occupies, creating difficult terrain. When the leshies return to their natural form, they Form Up anywhere within the burst. This otherwise uses the effects of @UUID[Compendium.pf2e.spells-srd.Item.dileJ0Yxqg76LMvu]{One with Plants}.</p><hr /><p>@Localize[PF2E.NPC.Abilities.Glossary.ChangeShape]</p>"
+                },
+                "action->One with the Foliage": {
+                    "name": "One with the Foliage",
+                    "description": "<p>The leshy mob ignores difficult terrain caused by plants and fungi, and it treats greater difficult terrain from such sources as difficult terrain.</p>"
+                },
+                "action->Rain of Seeds": {
+                    "name": "Rain of Seeds",
+                    "description": "<p>The leshies grab and hurl an assortment of stones, spores, and explosive seeds, launching a ranged attack in the form of a volley. This volley is a @Template[type:burst|distance:10] within 60 feet that deals @Damage[4d8[bludgeoning]] or @Damage[4d8[poison]] damage (@Check[type:reflex|dc:30|basic:true] save).</p>\n<p>When the leshies are reduced to 8 or fewer squares, this area decreases to a @Template[type:burst|distance:5].</p>"
+                },
+                "action->Troop Movement": {
+                    "name": "Troop Movement",
+                    "description": "<p>Whenever the leshy mob Strides, they first Form Up as a free action to condense into a 20-foot-by-20-foot area (minus any missing squares), then moves up to their Speed. This works just like a Gargantuan creature moving; for instance, if any square of the troop enters difficult terrain, the extra movement cost applies to the whole troop.</p>"
+                },
+                "action->Veggielante Justice": {
+                    "name": "Veggielante Justice",
+                    "description": "<p><span class=\"action-glyph\">1</span> to <span class=\"action-glyph\">3</span></p>\n<p><strong>Frequency</strong> once per round</p><hr /><p><strong>Effect</strong> The leshies assault each enemy creature within 5 feet, with a @Check[type:reflex|dc:30|basic:true] save. The damage depends on the number of actions.</p>\n<p><span class=\"action-glyph\">1</span> @Damage[3d8[bludgeoning]] or @Damage[3d8[slashing]] damage</p>\n<p><span class=\"action-glyph\">2</span> @Damage[(3d8+11)[bludgeoning]] or @Damage[(3d8+11)[slashing]] damage</p>\n<p><span class=\"action-glyph\">3</span> @Damage[(3d8+16)[bludgeoning]] or @Damage[(3d8+16)[slashing]] damage</p>"
+                }
+            }
+        },
+        "Lichen Monstrosity": {
+            "name": "Lichen Monstrosity",
+            "descriptionHazard": "<p>A mass of petrified lichen takes the shape of a beast and lurches forward.</p>",
+            "disable": "<p>@Check[type:survival|dc:33] or @Check[type:thievery|dc:33] (master) to scrape away lichen without being exposed, or @Check[type:medicine|dc:36] or @Check[type:nature|dc:36] (expert) to concoct a natural remedy and weaken the hazard; four total successes are required to disable it.</p>",
+            "reset": "<p>The trap resets over the course of an hour.</p>",
+            "routine": "<p>(3 actions) The lichen monstrosity uses 3 actions to move, traveling up to 30 feet with each action and dealing @Damage[(2d10+10)[bludgeoning]] damage. Each creature in its path must attempt a @Check[type:reflex|dc:31] save.</p><hr><p><strong>Critical Success</strong> The creature is unaffected.</p><p><strong>Success</strong> The creature takes half damage.</p><p><strong>Failure</strong> The creature takes full damage and is exposed to leechlichen.</p><p><strong>Critical Failure</strong> The creature takes double damage and is exposed to leechlichen. The results of its saving throw against the leechlichen are treated as one step worse. Each successful check to disable this hazard reduces its movement by 30 feet, and the fourth success disables it completely.</p>",
+            "stealth": "<p>(expert)</p>",
+            "items": {
+                "action->Lurching Lichen": {
+                    "name": "Lurching Lichen",
+                    "description": "<p><strong>Trigger</strong> Three or more creatures not infected with leechlichen enter the area of the hazard;</p><hr /><p><strong>Effect</strong> The mass of lichen lurches forward, taking up one 5-foot square and forming a beast-like shape. The hazard rolls initiative.</p>"
+                }
+            }
+        },
         "Lloyd The Leaper": {
             "name": "Lloyd The Leaper",
             "publicNotes": "<p>The greatest secret of the murderous trickster known as Spring-Heeled Jack is that he isn't a unique creature. Instead, he's one of a rare type of fey native to the First World who enjoy causing bloody mayhem in the Material Plane. These fey are so rare and so distrustful of one another's company that two have never been seen together; the mistaken assumption that only a single Spring-Heeled Jack exists is therefore entirely understandable. The fact that sightings occur across Ustalav (and beyond) and across centuries of time is ascribed to the trickster's long lifespan and mysterious ability to travel quickly, or to the belief that there's no such creature, merely an urban legend that twisted minds attempt to bring to life through costumes, magic, and a series of murders and mayhem. Even in fear-drenched Ustalav, no one has yet guessed that multiple Spring-Heeled Jacks exist or postulated that some future event might drive them to overcome their mutual disdain and gather into a murderous cabal, far more powerful than the sum of its parts.</p>\n<p>Spring-Heeled Jacks are cruel-eyed, hairy fey with vaguely humanoid shapes and extra features that cause them to be easily mistaken for demons or devils. Glowing eyes, cloven hooves, menacing horns, and a pointed tail combine to create the mien of a wicked imp; his love of sudden and sadistic violence completes the impression. Almost all have jet-black skin and fur, though a few exceptions might exist.</p>\n<p>Spring-Heeled Jacks typically hide their features in tattered cloaks, appearing as a hunched elder or a youth in the nighttime conditions they enjoy. Such a disguise rarely holds up to any scrutiny, but that doesn't matter much to the Spring-Heeled Jack, who only needs something that offers just enough doubt for their target to move within striking distance, which can be from much farther away than most other creatures even realize. Once close enough, the Spring-Heeled Jack leaps startling distances in the blink of an eye to easily slash at a victim who had, until that moment, considered themself safe.</p>",
@@ -1023,6 +1158,18 @@
                 }
             }
         },
+        "Old Thornbarker": {
+            "name": "Old Thornbarker",
+            "publicNotes": "<p>Arboreal archives are solitary beings typically found in the remote wilderness. These ancient monoliths hold the memories of their vast territories, keeping mental records of the passing seasons of the world around them. Their knowledge of humanoid affairs varies, as they find quickly shifting political situations difficult to comprehend, but through fungal networks, reports from arboreal wardens, and other woodland chatter, arboreal archives learn of each storm, drought, or logging threat encountered throughout their long years. They primarily observe and record rather than interfere, but they willingly offer wisdom to those who respectfully seek them out. Arboreal regents call upon archives for advice in times of strife, conferring on the best course of action to protect their realms.</p>\n<p>It is rare for there to be more than one arboreal archive in a given region. When an archive senses they're nearing the end of their lengthy lifespan, a grove of regents gathers to nominate the wisest among them to become the next archive. After four seasons' deliberation, all arboreals in the area congregate to witness the succession ritual, during which the elder arboreal archive transfers their collected wisdom to the elected replacement before retiring.</p>\n<hr />\n<p>Arboreals are tree-like ancient guardians of forests, nurturing new growth and maintaining a balanced ecosystem as if the vast wilderness were their garden. Arboreals are thoughtful and deliberate - until something threatens their realms and invites their wrath.</p>",
+            "blurb": "Male variant arboreal archive ",
+            "sensesDetails": "all-around vision",
+            "languagesDetails": "speak with plants",
+            "items": {
+                "spellcastingEntry->Primal Innate Spells": {
+                    "name": "Primal Innate Spells"
+                }
+            }
+        },
         "Otis": {
             "name": "Otis",
             "publicNotes": "<p>Forest trolls are gangly giants who stalk the fringes of civilization. They rely on their incredible strength to overpower foes with their vicious claws and toothy maws. These trolls stand anywhere from 12 to 16 feet tall, though they prefer to hunch for comfort and to lull foes into a false sense of security. Trolls are truly creatures of the forest, deeply linked in flesh and blood to the verdant habitats they consider their territory. In fact, when a forest troll is killed, their flesh turns into blackened lumps of charcoal, often still glowing with coals. Despite that, these creatures roam farther and wider than most of their kin, to the extent that they're the first creatures a common person thinks of when they hear the word \"troll.\"</p>\n<hr />\n<p>Slavering, cruel, invincible brutes: this is the villager's stock description for the dread monsters known as trolls. The roots of these stories are undoubtedly true. Trolls' flesh endlessly regrows, going so far as to sprout aberrant limbs or additional heads if not pruned, and a bottomless hunger is required to feed such unfettered growth. Even in the process of glutting themselves, however, trolls find opportunities to taunt their prey and inflict petty cruelties.</p>\n<p>A troll's ability to survive is so strong that they believe even the smallest scrap of flesh will slowly regenerate into a new form, suffering as all the powers of the land are gathered to revive them. Despite the pain, trolls speak of this unassailable vitality as a blessing from their creator. Few trolls have heard the laughter of demons who claim that creator cursed the trolls and cast them down from lofty heights, binding them so they could never rise again.</p>\n<p>Trolls prefer to remain solitary, keeping every scrap of food for themselves. In rare instances, an old and powerful troll comes to lead groups of trolls. Such warleaders possess enough cunning to lead their hordes in devastating raids and massacres, and their presence permanently alters the surrounding ecosystem. This link to their environment is an often misunderstood aspect of trollkind, and grows more acute with a troll's age and power. That's not to say trolls are valorous protectors of nature. They're vicious and territorial, and will blight their own territory forever if it means more to eat for a day.</p>",
@@ -1059,6 +1206,21 @@
                 }
             }
         },
+        "Phytohydra": {
+            "name": "Phytohydra",
+            "publicNotes": "<p>The fresh shoots that sprout from especially grievous cuts sometimes develop minds of their own, eventually budding off from the injured plant to create a phytohydra.</p><hr /><p>Wood elementals are nearly as varied as plant life itself. The following are particularly powerful elementals formed when immense plants experience environmental stress.</p>",
+            "languagesDetails": "(can't speak any languages)",
+            "hpDetails": "phytohydra regeneration"
+        },
+        "Phytomancer Ghost": {
+            "name": "Phytomancer Ghost",
+            "hpDetails": "rejuvenation, void healing",
+            "items": {
+                "spellcastingEntry->Primal Innate Spells": {
+                    "name": "Primal Innate Spells"
+                }
+            }
+        },
         "Poisonous Pollen Trap": {
             "name": "Poisonous Pollen Trap",
             "descriptionHazard": "<p>Flowers carved into the door emit colorful pollen when the door is touched.</p>",
@@ -1069,6 +1231,25 @@
                 "action->Pollinate": {
                     "name": "Pollinate",
                     "description": "<p><strong>Trigger</strong> The door is touched, or the lock is opened</p>\n<hr />\n<p><strong>Effect</strong> The flowers spray poisonous pollen in a @Template[type:cone|distance:30]. A creature in the area must attempt a @Check[type:fortitude|dc:24] save, with the following effect.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature takes @Damage[(2d10+11)[poison]] damage and becomes @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 2}.</p>\n<p><strong>Failure</strong> The creature takes @Damage[(3d10+16)[poison]] damage and @Damage[1d10[persistent,poison]] damage, becomes enfeebled 2, and takes a \u20132 status penalty to Perception checks for [[/br 1d4 #hours]]{1d4 hours}.</p>\n<p><strong>Critical Failure</strong> The creature takes @Damage[(4d10+22)[poison]] damage and @Damage[1d10[persistent,poison]] damage, becomes @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 4}, and takes a \u20132 status penalty to Perception checks and saves against poison for 24 hours.</p>"
+                }
+            }
+        },
+        "Primal Mantis": {
+            "name": "Primal Mantis",
+            "publicNotes": "<p>These gigantic mantids make their homes within prehistoric forests.</p>\n<hr />\n<p>These predators possess lightning-quick forelegs and a bone-breaking bite.</p>",
+            "blurb": "Variant deadly mantis",
+            "items": {
+                "spellcastingEntry->Primal Innate Spells": {
+                    "name": "Primal Innate Spells"
+                }
+            }
+        },
+        "Primal Warden of Zibik": {
+            "name": "Primal Warden of Zibik",
+            "languagesDetails": "(can't speak any language)",
+            "items": {
+                "spellcastingEntry->Primal Innate Spells": {
+                    "name": "Primal Innate Spells"
                 }
             }
         },
@@ -1148,6 +1329,41 @@
                 }
             }
         },
+        "Rancorous Druids": {
+            "name": "Rancorous Druids",
+            "publicNotes": "<p>Followers of Rovagug must usually conceal their devotion to the Rough Beast, hiding in remote cave complexes or abandoned ruins; but they emerge from these strongholds when they sense weakness, gathering together into a destructive, homicidal mob to hunt down high-ranking priests of rival deities or slaughter entire towns. Alternatively, if their hidden bolthole is compromised, a mob of Rovagug's faithful might emerge-not hoping to save themselves, but intent only on taking their enemies with them as they die.</p>",
+            "blurb": "Variant rancorous priesthood",
+            "speedsDetails": "troop movement",
+            "hpDetails": "troop defenses",
+            "items": {
+                "spellcastingEntry->Primal Spontaneous Spells": {
+                    "name": "Primal Spontaneous Spells"
+                },
+                "action->Form Up": {
+                    "name": "Form Up"
+                },
+                "action->Collective Swarm": {
+                    "name": "Collective Swarm",
+                    "description": "<p>The rancorous druids collectively transform into a swarm of Tiny insects. They cast @UUID[Compendium.pf2e.spells-srd.Item.Pd2M1XY8EXrSfWgJ]{Swarm Form} heightened to 6th rank, but the duration is 1 hour instead of 5 minutes.</p>"
+                },
+                "action->Troop Defenses": {
+                    "name": "Troop Defenses",
+                    "description": "<p><strong>Thresholds</strong> 130 (12 squares), 65 (8 squares)</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.TroopDefenses]</p>"
+                },
+                "action->Troop Movement": {
+                    "name": "Troop Movement",
+                    "description": "<p>Whenever the troop Strides, they first Form Up as a free action to condense into a 20-foot-by-20-foot area (minus any missing squares), then moves up to their Speed. This works just like a Gargantuan creature moving; for instance, if any square of the troop enters difficult terrain, the extra movement cost applies to the whole troop.</p>"
+                },
+                "action->Troop Spellcasting": {
+                    "name": "Troop Spellcasting",
+                    "description": "<p>When the rancorous priesthood Casts a Spell, their constituent members combine their efforts into casting a more powerful version of the spell than any one member could achieve alone.</p>\n<p>When Casting a Spell that has an area of a burst, cone, or line and doesn't have a duration, increase the area of that spell. Add 5 feet to the radius of a burst that normally has a radius of at least 10 feet (a burst with a smaller radius is not affected). Add 5 feet to the length of a cone or line that is normally 15 feet long or smaller, and add 10 feet to the length of a larger cone or line.</p>"
+                },
+                "action->Wild Swing": {
+                    "name": "Wild Swing",
+                    "description": "<p><span class=\"action-glyph\">1</span> to <span class=\"action-glyph\">3</span></p>\n<p><strong>Frequency</strong> once per round</p>\n<hr />\n<p><strong>Effect</strong> The members of the mob wildly swing their weapons-primarily greataxes-in a chaotic attack at each enemy adjacent to the troop (@Check[type:reflex|dc:27|basic:true] save). The damage depends on the number of actions.</p>\n<p><span class=\"action-glyph\">1</span> @Damage[(1d12+2)[slashing]] damage</p>\n<p><span class=\"action-glyph\">2</span> @Damage[(2d12+9)[slashing]] damage</p>\n<p><span class=\"action-glyph\">3</span> @Damage[(3d12+9)[slashing]] damage</p>"
+                }
+            }
+        },
         "Razor Snare": {
             "name": "Razor Snare",
             "descriptionHazard": "<p>Slender razor wire snags a creature, yanking its feet to knock it down.</p>",
@@ -1162,6 +1378,29 @@
                     "description": "<p>The target is @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed} (@UUID[Compendium.pf2e.actionspf2e.Item.SkZAQRkLLkmBQNB9]{Escape} DC 23). On a critical hit, the target is also knocked @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone}.</p>"
                 }
             }
+        },
+        "Reborn Devotee": {
+            "name": "Reborn Devotee"
+        },
+        "Redwood Leshy": {
+            "name": "Redwood Leshy",
+            "publicNotes": "<p>Guardians of old growth forests and the mightiest trees, redwood leshies behave with the courage and self-assurance that they believe befits their legacy. They rarely lord their duties over other leshies, instead believing it's their responsibility to shield, guide, and provide for others.</p><hr /><p>For all their cute appearances and harmless pretenses, leshies can become a formidable force when riled. What's more, leshies can grow larger, stronger, and more aggressive in regions rich in primal energy. The following presents several higher-level leshy threats that grow in primordial forests.</p>",
+            "allSavesBonus": "+2 status to all saves vs. fear",
+            "languagesDetails": "speak with plants (trees only)",
+            "items": {
+                "spellcastingEntry->Primal Innate Spells": {
+                    "name": "Primal Innate Spells"
+                }
+            }
+        },
+        "Rootridden": {
+            "name": "Rootridden",
+            "hpDetails": "void healing"
+        },
+        "Ruzadoya Swiftmane": {
+            "name": "Ruzadoya Swiftmane",
+            "blurb": "Female centaur graveknight",
+            "hpDetails": "rejuvenation, void healing"
         },
         "Ruzadoya's Chosen": {
             "name": "Ruzadoya's Chosen",
@@ -1352,6 +1591,11 @@
                 }
             }
         },
+        "Spitting Sawfly": {
+            "name": "Spitting Sawfly",
+            "publicNotes": "<p>Spitting sawflies are enormous, bloated insects covered in tumor-like knots of spores. These ravenous pests sow disease and spores wherever they go, heralding the infestation of creeping cones.</p><hr /><p>The Plane of Wood contains many unique ecosystems formed around species of wondrous trees; when Ayrzul's Blight mutates one of these trees rather than killing it, it can have a cascading effect on the tree's biome. Multiple species often mutate in tandem, becoming warped mockeries and a vector for Ayrzul's Blight. These \"blight bonded\" creature families are parasites and predators and typically form twisted symbiotic relationships.</p>",
+            "sensesDetails": "wood scent (precise) 30 feet"
+        },
         "Splintershank": {
             "name": "Splintershank",
             "blurb": "Twigjack cult leader",
@@ -1527,6 +1771,11 @@
                 }
             }
         },
+        "Timberweb": {
+            "name": "Timberweb",
+            "publicNotes": "<p>On the Plane of Wood, carnivorous plants sometimes grow so large that they can\u2019t sustain themselves on local prey. Rather than starve, parts of these plants sometimes tear themselves free and hunt for themselves. The resulting elementals adopt spiderlike forms and hunting strategies.</p>\n<p>Timberwebs extrude vines covered in tiny barbules and sticky sap. After finding a territory with sufficient prey, a timberweb often uses these vines to create shadowy canopies in which to launch ambushes.</p><hr /><p>Wood elementals are nearly as varied as plant life itself. The following are particularly powerful elementals formed when immense plants experience environmental stress.</p>",
+            "sensesDetails": "vine sense"
+        },
         "Tumbo": {
             "name": "Tumbo",
             "publicNotes": "<p>Spark bats congregate around volatile weather in the Plane of Air.</p>",
@@ -1573,6 +1822,20 @@
                 "action->Troop Movement": {
                     "name": "Troop Movement",
                     "description": "<p>Whenever the twigjack bramble Strides, it first Forms Up as a free action to condense into a 20-foot-by-20-foot area (minus any missing squares), then moves up to its Speed. This works just like a Gargantuan creature moving; for instance, if any square of the bramble enters difficult terrain, the extra movement cost applies to the whole group.</p>"
+                }
+            }
+        },
+        "Twisted King's Court": {
+            "name": "Twisted King's Court",
+            "descriptionHazard": "<p>Countless fey with grisly visages and misshapen bodies cavort throughout the room, kicking up caustic debris and pulling other creatures into their dangerous dance.</p>",
+            "disable": "<p>@Check[type:nature|dc:32] or @Check[type:occultism|dc:32] (expert) to perform a ritual to ward the area against fey intrusion, @Check[type:performance|dc:34] (master) to meet the Twisted King's demands with a disturbing dance, or @Check[type:athletics|dc:32] or @Check[type:intimidation|dc:32] (expert) to fend off or frighten the fey dancers. Three total successes are required to disable the haunt, and each check takes 2 actions.</p>",
+            "reset": "<p>The haunt deactivates after 1 minute. It re-forms every new moon. If all of the glyphs in area <strong>B6</strong> are restored\u2014a process requiring 10 days of downtime and 10 successful @Check[type:nature|dc:36] or @Check[type:occultism|dc:36] checks\u2014the haunt becomes permanently disabled and doesn't re-form.</p>",
+            "routine": "<p>(1 action) Spectral fey cavort about the room. All creatures in the room are raked by ghostly claws and splashed with toxic water, taking @Damage[(1d10+14)[force],2d10[acid]] damage (@Check[type:reflex|dc:32|basic:true] save). Creatures that critically fail their Reflex saves are pulled 10 feet toward the standing stones.</p>",
+            "stealth": "<p>(trained)</p>",
+            "items": {
+                "action->Welcome to the Feywrithe": {
+                    "name": "Welcome to the Feywrithe",
+                    "description": "<p><strong>Trigger</strong> 1 round passes since both isqulugs in area <strong>B6</strong> are slain, or 10 rounds pass since they rolled initiative</p><hr /><p><strong>Effect</strong> The isqulugs die horribly (if they're still alive), rent by clawed fey hands. Spectral fey pull at the other creatures in the caves, all of which must attempt a @Check[type:fortitude|dc:36] save. The haunt then rolls initiative.</p><hr /><p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature is pulled 10 feet toward the standing stones.</p>\n<p><strong>Failure</strong> The creature is pulled 15 feet toward the standing stones.</p>\n<p><strong>Critical Failure</strong> The creature is pulled 15 feet toward the standing stones, knocked @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone}, and takes 1d6 bludgeoning damage (in addition to any damage from the toxic water).</p>"
                 }
             }
         },
@@ -1734,6 +1997,17 @@
                 }
             }
         },
+        "Wildwood Sentry": {
+            "name": "Wildwood Sentry",
+            "items": {
+                "spellcastingEntry->Primal Innate Spells": {
+                    "name": "Primal Innate Spells"
+                }
+            }
+        },
+        "Woodweave Caterpillar": {
+            "name": "Woodweave Caterpillar"
+        },
         "Wraithvine": {
             "name": "Wraithvine",
             "languagesDetails": "(Can't Speak any Language); Telepathy 120 feet (Wraithvines Only)",
@@ -1847,6 +2121,18 @@
                 },
                 "action->Push 10 feet": {
                     "name": "Push 10 feet"
+                }
+            }
+        },
+        "Zibik": {
+            "name": "Zibik",
+            "publicNotes": "<p>Green men are ancient, enigmatic lesser deities of the primeval forests, living embodiments of nature and plantkind. When a forest or other woodland terrain generates enough nature spirits, beings of the same sort of vital essence that embodies leshys or answers the call of a commune with nature, they naturally coalesce together and apotheosize into a green man. Green men aren't concerned with all the multifarious processes of nature like Gozreh or many other nature deities. Instead, they focus nearly all their attention on the plants of their home, only concerning themselves with animals, minerals, and the like insomuch as they affect the plants. Despite their name, green men aren't necessarily male; as creatures of pure natural power, to many of them, the concept of gender holds no meaning, and to those that do, they can be of any gender.</p>\n<p>Most green men are neutral and tend to ignore \"animals,\" which to them include sapient creatures such as humans. However, good and evil green men do exist. These individuals are far more likely to attempt to spread their influence far and wide, either for good or ill. Good green men provide succor to all that come within their home, not only to plants, providing wisdom like a nurturing parent. Evil green men, however, allow rare and dangerous plants to thrive in their domains by spreading fear and devastation to all those who might threaten plant life, though they might keep a few animals around to hunt for sport.</p>",
+            "blurb": "Male variant green man",
+            "sensesDetails": "plantsense 60 feet",
+            "languagesDetails": "green tongue",
+            "items": {
+                "spellcastingEntry->Primal Innate Spells": {
+                    "name": "Primal Innate Spells"
                 }
             }
         }

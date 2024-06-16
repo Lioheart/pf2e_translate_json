@@ -325,6 +325,16 @@
                 }
             }
         },
+        "Arrogant Entodemonologist": {
+            "name": "Arrogant Entodemonologist",
+            "publicNotes": "<p>Demonologists can pull a creature from the Abyss and bend it to their will... for a time.</p>\n<hr />\n<p>Those initiated into the hidden truths and forbidden secrets of the world are forever transformed-or so they claim. To the cynical, a mystic is nothing more than a charlatan or zealot. Others profess to sense an aura around such luminaries and treat them with reverence, lest they offend some harbinger of unspeakable doom.</p>",
+            "blurb": "Male human variant demonologist",
+            "items": {
+                "spellcastingEntry->Arcane Prepared Spells": {
+                    "name": "Arcane Prepared Spells"
+                }
+            }
+        },
         "Ashen Brimorak": {
             "name": "Ashen Brimorak",
             "publicNotes": "<p>These goat-headed demons have glowing red eyes and flaming hooves but measure only about 3 feet in height. Born from the souls of arsonists, the fiery brimoraks continue the work they pursued in life, as everything they touch quickly burns.</p>\n<p>As a general rule, brimoraks are ill-tempered even for demons, although their spite turns to glee in the face of a growing fire. Those who have survived encounters with these fiends report that they remember the braying sound of the brimoraks' laughter as clearly as the heat of the flames or the choking scent of smoke.</p>\n<hr />\n<p>Mortal souls that have been twisted and corrupted by sin sometimes arise in the afterlife as demons. These powerful and destructive fiends seek to spread their particular sin to warp more souls, thereby bolstering their numbers and continuing the cycle.</p>",
@@ -938,6 +948,20 @@
                 }
             }
         },
+        "Blood Shadow Mirror": {
+            "name": "Blood Shadow Mirror",
+            "descriptionHazard": "<p>A dark shape moves in the surface of an ornate mirror, its eyes wide as blood seeps down its tormented face.</p>",
+            "disable": "<p>@Check[type:thievery|dc:16] (trained) to fully cover the mirror or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (2nd rank; counteract DC 18) to dispel the mirror.</p>",
+            "reset": "<p>1 minute if no fresh blood has been spilled.</p>",
+            "routine": "<p>(2 actions; arcane, mental) The bloody figure in the mirror transforms to reflect a creature within 30 feet. The reflection bleeds profusely from the eyes, nose, and mouth, and the reflected creature must attempt a @Check[type:will|dc:18|traits:arcane,mental] save.</p><hr><p><strong>Critical Success</strong> The creature is unaffected and temporarily immune for 1 minute.</p><p><strong>Success</strong> The creature bleeds from their mouth or nose.</p><p><strong>Failure</strong> The creature bleeds from their eyes, mouth, and nose, and takes @Damage[1d10[persistent,bleed]] damage.</p><p><strong>Critical Failure</strong> As failure, and the creature is @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 1}.</p>",
+            "stealth": "<p>(trained); DC 0 to notice the mirror without noting it is a trap</p>",
+            "items": {
+                "action->Bloody Glare": {
+                    "name": "Bloody Glare",
+                    "description": "<p><strong>Trigger</strong> A creature spills blood in the room</p><hr /><p><strong>Effect</strong> A ghastly figure of blood appears in the mirror's surface, forcing all creatures who can see it to attempt a @Check[type:fortitude|dc:18] save. The trap then rolls initiative.</p>\n<p><strong>Success</strong> The creature is unaffected.</p>\n<p><strong>Failure</strong> The creature bleeds from their nose and mouth.</p>\n<p><strong>Critical Failure</strong> As failure, and the creature is @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 1}.</p>"
+                }
+            }
+        },
         "Bloodied Kithangian": {
             "name": "Bloodied Kithangian",
             "publicNotes": "<p>The kithangian\u2014a horrifying amalgam of horse and scorpion also known as a \"beast demon\"\u2014is a foul fend born of the souls of mortals who abused and tormented animals in life. Kithangians tend to roam wild areas rife with animals to torture, though humanoid settlements with plenty of pets or livestock also make for tantalizing hunting grounds. Uncontested for too long, a kithangian's presence has a corrupting influence on the local fauna, which birth fiendish monstrosities until the demon is vanquished. If it realizes it's being tracked by vengeful druids or demon slayers, a kithangian assumes the shape of an unassuming animal so it can get the jump on its pursuers.</p>",
@@ -1458,6 +1482,27 @@
                 }
             }
         },
+        "Deskari Cultist": {
+            "name": "Deskari Cultist",
+            "allSavesBonus": "-2 will vs. higher-ranking members of the cult"
+        },
+        "Deskari Effigy": {
+            "name": "Deskari Effigy",
+            "descriptionHazard": "<p>A statuette of the deceased demon lord creates frightening illusions of insect swarms.</p>",
+            "disable": "<p>@Check[type:arcana|dc:17] (expert) or @Check[type:religion|dc:17] (trained) to deactivate the effigy or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (2nd rank; counteract DC 20) to dispel the statuette</p>",
+            "reset": "<p>1 minute as the illusory insects harass intruders before scuttling into the earth.</p>",
+            "stealth": "<p>(trained)</p>",
+            "items": {
+                "action->False Swarm": {
+                    "name": "False Swarm",
+                    "description": "<p><strong>Trigger</strong> A creature moves within 30 feet of the hidden entrance without saying the cultists' password</p><hr /><p><strong>Effect</strong> A swarm of illusionary insects bursts out of the grass in a @Template[type:cone|distance:60] from the Deskari effigy and seemingly crawl over the intruders, shrieking incessantly. All creatures in the area must make a @Check[type:fortitude|dc:16] save or become temporarily @UUID[Compendium.pf2e.conditionitems.Item.9PR9y0bi4JPKnHPR]{Deafened} for 1 minute (deafened and @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 1} for 1 minute on a critical failure).</p>"
+                }
+            }
+        },
+        "Deskari Fantatic": {
+            "name": "Deskari Fantatic",
+            "allSavesBonus": "-2 will vs. higher-ranking members of the cult"
+        },
         "Div Worshipper": {
             "name": "Div Worshipper",
             "blurb": "Variant cultist",
@@ -1646,6 +1691,15 @@
                 }
             }
         },
+        "Elite Hound Of Tindalos": {
+            "name": "Elite Hound Of Tindalos",
+            "publicNotes": "<p>Lean and athirst, the hounds of Tindalos are drawn to those who tamper with the flow of time, travel through time, or use magic or rare alchemical drugs to send their thoughts or perception back or forward in time. Powerful spellcasters can draw them from the Dimension of Time via rare rituals, but doing so attracts the hounds' ire, so few who traffic in such rituals live long enough to spread their knowledge. While the hounds possess great cunning and cruel intellect, they rarely interact with other creatures-other than to hunt and destroy those who have attracted their unblinking attention.</p>\n<p>Once a hound catches scent of a mortal to hunt, it calls others of its ilk. The pack then pursues its victim through all space and time until it catches, slays and devours them. Those pursued can escape only by avoiding all angles, as hounds of Tindalos could step through them from nothingness at any time.</p>",
+            "items": {
+                "spellcastingEntry->Occult Innate Spells": {
+                    "name": "Occult Innate Spells"
+                }
+            }
+        },
         "Elite Lively Commodore Sticky Fingers": {
             "name": "Elite Lively Commodore Sticky Fingers",
             "publicNotes": "<p>The mischievous dragon sprites called draxies have dueled their pixie cousins for the title of ultimate prankster for centuries. They exercise patience and planning to create the perfect pranks, spending months, or even years, on their efforts. One exception to their flighty nature is the elucrea, a lifelong bond between a draxie and a creature they're particularly fond of, typically one with a good sense of humor. According to draxie legend, a little piece of a draxie's spirit remembers being united as the ancient fey dragonet Elucredassa, and that causes draxies to yearn for such connections with others.</p>\n<hr />\n<p>Elusive, flighty, and ebullient, sprites are what many villagers first imagine when they hear the terms \"fey\" or \"fairy.\" While their dispositions vary, all sprites share a connection to magic and a diminutive size. This family of fey shares its name with its slightest and most populous member, the common sprite.</p>",
@@ -1803,6 +1857,19 @@
                 }
             }
         },
+        "Empowered Deskari Effigy": {
+            "name": "Empowered Deskari Effigy",
+            "descriptionHazard": "<p>A statuette of the deceased demon lord creates frightening illusions of insect swarms.</p>",
+            "disable": "<p>@Check[type:arcana|dc:20] (expert) or @Check[type:religion|dc:20] (trained) to deactivate the effigy or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (2nd rank; counteract DC 23) to dispel the statuette</p>",
+            "reset": "<p>1 minute as the illusory insects harass intruders before scuttling into the earth.</p>",
+            "stealth": "<p>(trained)</p>",
+            "items": {
+                "action->False Swarm": {
+                    "name": "False Swarm",
+                    "description": "<p><strong>Trigger</strong> A creature moves within 30 feet of the hidden entrance without saying the cultists' password</p><hr /><p><strong>Effect</strong> A swarm of illusionary insects bursts out of the grass in a @Template[type:cone|distance:60] from the Deskari effigy and seemingly crawl over the intruders, shrieking incessantly. All creatures in the area must make a @Check[type:fortitude|dc:19] save or become temporarily @UUID[Compendium.pf2e.conditionitems.Item.9PR9y0bi4JPKnHPR]{Deafened} for 1 minute (deafened and @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 1} for 1 minute on a critical failure).</p>"
+                }
+            }
+        },
         "Empowered Shadow of Sezruth": {
             "name": "Empowered Shadow of Sezruth",
             "allSavesBonus": "+1 status to all saves vs. magic",
@@ -1904,6 +1971,16 @@
                 "action->Change Shape": {
                     "name": "Change Shape",
                     "description": "<p>The jann transforms into a Small or Medium elemental or animal. This doesn't affect the gennayn's statistics, but it could change the damage type of their Strikes.</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.ChangeShape]</p>"
+                }
+            }
+        },
+        "Entodemonologist": {
+            "name": "Entodemonologist",
+            "publicNotes": "<p>Demonologists can pull a creature from the Abyss and bend it to their will... for a time.</p>\n<hr />\n<p>Those initiated into the hidden truths and forbidden secrets of the world are forever transformed-or so they claim. To the cynical, a mystic is nothing more than a charlatan or zealot. Others profess to sense an aura around such luminaries and treat them with reverence, lest they offend some harbinger of unspeakable doom.</p>",
+            "blurb": "Male human variant demonologist",
+            "items": {
+                "spellcastingEntry->Arcane Prepared Spells": {
+                    "name": "Arcane Prepared Spells"
                 }
             }
         },
@@ -2340,6 +2417,20 @@
                 }
             }
         },
+        "Greater Blood Shadow Mirror": {
+            "name": "Greater Blood Shadow Mirror",
+            "descriptionHazard": "<p>A dark shape moves in the surface of an ornate mirror, its eyes wide as blood seeps down its tormented face.</p>",
+            "disable": "<p>@Check[type:thievery|dc:20] (trained) to fully cover the mirror or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (2nd rank; counteract DC 22) to dispel the mirror.</p>",
+            "reset": "<p>1 minute if no fresh blood has been spilled.</p>",
+            "routine": "<p>(2 actions; arcane, mental) The bloody figure in the mirror transforms to reflect a creature within 30 feet. The reflection bleeds profusely from the eyes, nose, and mouth, and the reflected creature must attempt a @Check[type:will|dc:21|traits:arcane,mental] save.</p><hr><p><strong>Critical Success</strong> The creature is unaffected and temporarily immune for 1 minute.</p><p><strong>Success</strong> The creature bleeds from their mouth or nose.</p><p><strong>Failure</strong> The creature bleeds from their eyes, mouth, and nose, and takes @Damage[2d8[persistent,bleed]] damage.</p><p><strong>Critical Failure</strong> As failure, and the creature is @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 1}.</p>",
+            "stealth": "<p>(trained); DC 0 to notice the mirror without noting it is a trap</p>",
+            "items": {
+                "action->Bloody Glare": {
+                    "name": "Bloody Glare",
+                    "description": "<p><strong>Trigger</strong> A creature spills blood in the room</p><hr /><p><strong>Effect</strong> A ghastly figure of blood appears in the mirror's surface, forcing all creatures who can see it to attempt a @Check[type:fortitude|dc:23] save. The trap then rolls initiative.</p>\n<p><strong>Success</strong> The creature is unaffected.</p>\n<p><strong>Failure</strong> The creature bleeds from their nose and mouth.</p>\n<p><strong>Critical Failure</strong> As failure, and the creature is @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 1}.</p>"
+                }
+            }
+        },
         "Hardened Azarketi Ruffian": {
             "name": "Hardened Azarketi Ruffian",
             "items": {
@@ -2369,6 +2460,9 @@
                     }
                 }
             }
+        },
+        "Hardened Locust Knight": {
+            "name": "Hardened Locust Knight"
         },
         "Hardwood Scamp": {
             "name": "Hardwood Scamp",
@@ -2536,6 +2630,9 @@
                 }
             }
         },
+        "Husk Shield": {
+            "name": "Husk Shield"
+        },
         "Hyacinth Lamprey": {
             "name": "Hyacinth Lamprey",
             "items": {
@@ -2549,6 +2646,16 @@
                 "action->Drain Water": {
                     "name": "Drain Water",
                     "description": "<p><strong>Requirements</strong> The hyacinth lamprey is attached to a creature</p>\n<hr />\n<p><strong>Effect</strong> The hyacinth lamprey drains water from the creature it is attached to. This deals [[/r 1d4]] damage, and the hyacinth lamprey gains temporary Hit Points equal to the damage dealt. A creature that has its water drained by a hyacinth lamprey is @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 1} until it receives healing (of any kind or amount).</p>"
+                }
+            }
+        },
+        "Jamimpi": {
+            "name": "Jamimpi",
+            "publicNotes": "<p>The opposite of dark nagas in many ways, guardian nagas are benevolent and wise protectors of places of great natural or supernatural significance: ancient oak groves, forgotten holy temples, and vaults of sacred power are just a few examples of locations that these nagas protect. Guardian nagas believe that the beautiful elements of the cosmos are worthy of protection and that devotion to such a grand effort is its own reward. A guardian naga may join a group with similar values, such as a sect of priests or monks, to aid it in its holy endeavors and to exchange knowledge of the heavens.</p>\n<p>Guardian nagas usually encourage their young, upon reaching adulthood, to depart the nest and seek out their own natural wonders or ancient ruins to protect. Sometimes generations of guardian nagas might guard the same place, passing the honor of such care from parent to child. In such cases, the parent nagas aim to have at least one of their children elect to stay behind and become the guardian of their ancestral ward, giving the parents the peace of mind that the site they protect will continue to be guarded by their descendants.</p>\n<p>It is difficult for many societies that vilify serpents or see them as symbols of evil to accept the fact that guardian nagas are benevolent and kindly. Fortunately for these people, guardian nagas are also patient and understanding, and see encounters with such societies as opportunities to educate and expand worldviews.</p>\n<hr />\n<p>Nagas are serpentine beings with magical powers and keen, nearly inscrutable intellects. Physically, they resemble massive snakes with eerie visages that resemble those of humans. Nagas use their innate magic and poisonous fangs to keep all but the most stalwart foes at bay. Beyond the natural weapons they use to ward away foes, little is understood of the naga's unsettling physiology.</p>\n<p>Nagas are intelligent creatures with powerful needs to pursue, be they the accumulation of knowledge, the collection of rare art, or the rule of an entire nation. On Golarion, the nation of Nagajor is one such society-an entire empire ruled by nagas and populated by reptilian humanoids who serve their naga rulers with a patriotic pride that borders on worship.</p>\n<p>Still, most adventurers interact with nagas on a much smaller scale, encountering them as dangerous guardians in remote locations or not-so-abandoned ruins. In many cases, these nagas have heard of distant Nagajor, but they are usually unwilling to abandon their own pursuits to seek out a land where they might be worshipped as gods.</p>",
+            "blurb": "Variant Elite Guardian Naga",
+            "items": {
+                "spellcastingEntry->Divine Spontaneous Spells": {
+                    "name": "Divine Spontaneous Spells"
                 }
             }
         },
@@ -2697,6 +2804,21 @@
                 "action->Breath Weapon": {
                     "name": "Breath Weapon",
                     "description": "<p>The draxie breathes pixie dust in a @Template[type:cone|distance:15], with a random effect determined each time they use their Breath Weapon. Roll [[/r 1d4]] to determine the effect. Each creature in the area must succeed at a @Check[type:will|dc:17] save or be affected.</p>\n<p>The draxie can't use Breath Weapon again for [[/br 1d4 #Recharge Breath Weapon]]{1d4 rounds}.</p>\n<ol>\n<li>The target takes the effects of the @UUID[Compendium.pf2e.spells-srd.Item.vLA0q0WOK2YPuJs6]{Charm} spell.</li>\n<li>The target loses its last 5 minutes of memory.</li>\n<li>The target takes the effects of a @UUID[Compendium.pf2e.spells-srd.Item.o4lRVTwSxnOOn5vl]{Sleep} spell.</li>\n<li>For 1 minute, the target is in a state of euphoria that makes it @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 2} and @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1}.</li>\n</ol>"
+                }
+            }
+        },
+        "Locust Knight": {
+            "name": "Locust Knight"
+        },
+        "Locust Swarm": {
+            "name": "Locust Swarm",
+            "items": {
+                "action->Swarm Mind": {
+                    "name": "Swarm Mind"
+                },
+                "action->Swarming Bites": {
+                    "name": "Swarming Bites",
+                    "description": "<p>Each enemy in the swarm's space takes @Damage[1d8[piercing]] damage (@Check[type:reflex|dc:17|basic:true] save).</p>"
                 }
             }
         },
@@ -2914,6 +3036,34 @@
                 }
             }
         },
+        "Paper Locust Swarm": {
+            "name": "Paper Locust Swarm",
+            "descriptionHazard": "<p>A book unfurls and its case forms into a leathery locust, its pages folding into an overwhelming swarm.</p>",
+            "disable": "<p>@Check[type:thievery|dc:20] to tear up the leather locust, or @Check[type:arcana|dc:18] (trained) or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (2nd rank; counteract DC 22) to render the magic inert.</p>",
+            "reset": "<p>The paper locust swarm resets after 1 minute if there are no creatures to target.</p>",
+            "routine": "<p>(1 action) The swarm moves up to 30 feet to share the nearest creature's space, slicing into them with their paper wings and spurs. The targeted creature must attempt a @Check[type:reflex|dc:21] save.</p><hr><p><strong>Critical Success</strong> The creature is unaffected.</p><p><strong>Success</strong> The creature takes @Damage[(2d8+5)[slashing]] damage.</p><p><strong>Failure</strong> The creature takes @Damage[2d8[slashing]] damage and @Damage[1d6[persistent,bleed]] damage.</p><p><strong>Critical Failure</strong> As failure, and the creature is @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 1}.</p>",
+            "stealth": "<p>(trained)</p>",
+            "items": {
+                "action->Fold Swarm": {
+                    "name": "Fold Swarm",
+                    "description": "<p><strong>Trigger</strong> A creature touches the bookshelf</p><hr /><p><strong>Effect</strong> The enchanted book transforms into a swarm of origami locusts and one leather locust. The trap then rolls initiative.</p>"
+                }
+            }
+        },
+        "Paper Locust Tornado": {
+            "name": "Paper Locust Tornado",
+            "descriptionHazard": "<p>A book unfurls and its case forms into a leathery locust, its pages folding into an overwhelming swarm.</p>",
+            "disable": "<p>@Check[type:thievery|dc:23] to tear up the leather locust, or @Check[type:arcana|dc:21] (trained) or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (3nd rank; counteract DC 25) to render the magic inert.</p>",
+            "reset": "<p>The paper locust tornado resets after 1 minute if there are no creatures to target.</p>",
+            "routine": "<p>(2 actions) The tornado uses each action to move up to 30 feet and share a creature's space, slicing into them with their paper wings and spurs. The targeted creatures must attempt a @Check[type:reflex|dc:24] save.</p><hr><p><strong>Critical Success</strong> The creature is unaffected.</p><p><strong>Success</strong> The creature takes @Damage[(2d8+9)[slashing]] damage.</p><p><strong>Failure</strong> The creature takes @Damage[2d8[slashing]] damage and @Damage[1d10[persistent,bleed]] damage.</p><p><strong>Critical Failure</strong> As failure, and the creature is @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 1}.</p>",
+            "stealth": "<p>(trained)</p>",
+            "items": {
+                "action->Fold Swarm": {
+                    "name": "Fold Swarm",
+                    "description": "<p><strong>Trigger</strong> A creature touches the bookshelf</p><hr /><p><strong>Effect</strong> The enchanted book transforms into a tornado of origami locusts and one leather locust. The trap then rolls initiative.</p>"
+                }
+            }
+        },
         "Pit of Lives Lost (1-2)": {
             "name": "Pit of Lives Lost (1-2)",
             "hpDetails": "BT 17",
@@ -2998,6 +3148,28 @@
                 "action->Swipe": {
                     "name": "Swipe",
                     "description": "<p>The draugr makes a melee Strike and compares the attack roll result to the AC of up to two foes, each of whom must be within its melee reach and adjacent to each other. Roll damage only once and apply it to each creature hit. A Swipe counts as two attacks for the draugr's multiple attack penalty.</p>"
+                }
+            }
+        },
+        "Ravenous Locust Swarm": {
+            "name": "Ravenous Locust Swarm",
+            "items": {
+                "action->Swarm Mind": {
+                    "name": "Swarm Mind"
+                },
+                "action->Swarming Bites": {
+                    "name": "Swarming Bites",
+                    "description": "<p>Each enemy in the swarm's space takes @Damage[2d8[piercing]] damage (@Check[type:reflex|dc:20|basic:true] save).</p>"
+                }
+            }
+        },
+        "Resolved Jamimpi": {
+            "name": "Resolved Jamimpi",
+            "publicNotes": "<p>The opposite of dark nagas in many ways, guardian nagas are benevolent and wise protectors of places of great natural or supernatural significance: ancient oak groves, forgotten holy temples, and vaults of sacred power are just a few examples of locations that these nagas protect. Guardian nagas believe that the beautiful elements of the cosmos are worthy of protection and that devotion to such a grand effort is its own reward. A guardian naga may join a group with similar values, such as a sect of priests or monks, to aid it in its holy endeavors and to exchange knowledge of the heavens.</p>\n<p>Guardian nagas usually encourage their young, upon reaching adulthood, to depart the nest and seek out their own natural wonders or ancient ruins to protect. Sometimes generations of guardian nagas might guard the same place, passing the honor of such care from parent to child. In such cases, the parent nagas aim to have at least one of their children elect to stay behind and become the guardian of their ancestral ward, giving the parents the peace of mind that the site they protect will continue to be guarded by their descendants.</p>\n<p>It is difficult for many societies that vilify serpents or see them as symbols of evil to accept the fact that guardian nagas are benevolent and kindly. Fortunately for these people, guardian nagas are also patient and understanding, and see encounters with such societies as opportunities to educate and expand worldviews.</p>\n<hr />\n<p>Nagas are serpentine beings with magical powers and keen, nearly inscrutable intellects. Physically, they resemble massive snakes with eerie visages that resemble those of humans. Nagas use their innate magic and poisonous fangs to keep all but the most stalwart foes at bay. Beyond the natural weapons they use to ward away foes, little is understood of the naga's unsettling physiology.</p>\n<p>Nagas are intelligent creatures with powerful needs to pursue, be they the accumulation of knowledge, the collection of rare art, or the rule of an entire nation. On Golarion, the nation of Nagajor is one such society-an entire empire ruled by nagas and populated by reptilian humanoids who serve their naga rulers with a patriotic pride that borders on worship.</p>\n<p>Still, most adventurers interact with nagas on a much smaller scale, encountering them as dangerous guardians in remote locations or not-so-abandoned ruins. In many cases, these nagas have heard of distant Nagajor, but they are usually unwilling to abandon their own pursuits to seek out a land where they might be worshipped as gods.</p>",
+            "blurb": "Variant Guardian Naga",
+            "items": {
+                "spellcastingEntry->Divine Spontaneous Spells": {
+                    "name": "Divine Spontaneous Spells"
                 }
             }
         },
@@ -3286,6 +3458,34 @@
                 "action->Reach Spell": {
                     "name": "Reach Spell",
                     "description": "<p>If the next action the Shenga Heartrender uses is to Cast a Spell that has a range, increase that spell's range by 30 feet.</p>"
+                }
+            }
+        },
+        "Shining Shooting Sphere": {
+            "name": "Shining Shooting Sphere",
+            "descriptionHazard": "<p>A gilded armillary sphere spins in place, shooting jeweled stars and planets at intruders.</p>",
+            "disable": "<p>@Check[type:thievery|dc:21] (expert) to disable the sphere from rotating or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (3nd rank; counteract DC 23) to remove the enchantment.</p>",
+            "reset": "<p>The trap deactivates and resets if 1 minute passes without any creature moving within range of its sensor.</p>",
+            "routine": "<p>(1 action) A jeweled planet shoots from the sphere, targeting a random creature within 30 feet. The creature takes @Damage[(2d8+7)[bludgeoning]] damage (@Check[type:reflex|dc:22|basic:true] save).</p>",
+            "stealth": "<p>(expert) to notice the floor sensor; DC 0 to notice the sphere</p>",
+            "items": {
+                "action->Orbital Spin": {
+                    "name": "Orbital Spin",
+                    "description": "<p><strong>Trigger</strong> A creature moves within 10 feet of the sphere, stepping on the floor sensor</p><hr /><p><strong>Effect</strong> The sphere rotates and the trap rolls initiative.</p>"
+                }
+            }
+        },
+        "Shooting Sphere": {
+            "name": "Shooting Sphere",
+            "descriptionHazard": "<p>A gilded armillary sphere spins in place, shooting jeweled stars and planets at intruders.</p>",
+            "disable": "<p>@Check[type:thievery|dc:18] (expert) to disable the sphere from rotating or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (2nd rank; counteract DC 20) to remove the enchantment.</p>",
+            "reset": "<p>The trap deactivates and resets if 1 minute passes without any creature moving within range of its sensor.</p>",
+            "routine": "<p>(1 action) A jeweled planet shoots from the sphere, targeting a random creature within 30 feet. The creature takes @Damage[(1d10+6)[bludgeoning]] damage (@Check[type:reflex|dc:20|basic:true] save).</p>",
+            "stealth": "<p>(expert) to notice the floor sensor; DC 0 to notice the sphere</p>",
+            "items": {
+                "action->Orbital Spin": {
+                    "name": "Orbital Spin",
+                    "description": "<p><strong>Trigger</strong> A creature moves within 10 feet of the sphere, stepping on the floor sensor</p><hr /><p><strong>Effect</strong> The sphere rotates and the trap rolls initiative.</p>"
                 }
             }
         },
@@ -3714,6 +3914,14 @@
                     "description": "<p>The tanuki chooses a target he can see. Once per round, the tanuki may deal an additional 1d8 precision damage to this target on a successful strike. This choice lasts until the tanuki chooses a new target with Mark Target.</p>"
                 }
             }
+        },
+        "The Inscrutable Librarian": {
+            "name": "The Inscrutable Librarian",
+            "blurb": "Variant Morrowkin"
+        },
+        "The Librarian": {
+            "name": "The Librarian",
+            "blurb": "Variant Morrowkin"
         },
         "The Upset Warden (1-2)": {
             "name": "The Upset Warden (1-2)",
@@ -4934,15 +5142,6 @@
         }
     },
     "mapping": {
-        "descriptionHazard": "system.details.description",
-        "disable": "system.details.disable",
-        "reset": "system.details.reset",
-        "routine": "system.details.routine",
-        "stealth": "system.attributes.stealth.details",
-        "items": {
-            "converter": "translateActorItems",
-            "path": "items"
-        },
         "publicNotes": "system.details.publicNotes",
         "privateNotes": "system.details.privateNotes",
         "acDetails": "system.attributes.ac.details",
@@ -4951,6 +5150,15 @@
         "allSavesBonus": "system.attributes.allSaves.value",
         "speedsDetails": "system.attributes.speed.details",
         "sensesDetails": "system.perception.details",
-        "languagesDetails": "system.details.languages.details"
+        "languagesDetails": "system.details.languages.details",
+        "items": {
+            "converter": "translateActorItems",
+            "path": "items"
+        },
+        "descriptionHazard": "system.details.description",
+        "disable": "system.details.disable",
+        "reset": "system.details.reset",
+        "routine": "system.details.routine",
+        "stealth": "system.attributes.stealth.details"
     }
 }
