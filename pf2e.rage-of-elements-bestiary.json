@@ -488,13 +488,6 @@
                 },
                 "action->Knockdown": {
                     "name": "Knockdown"
-                },
-                "lore->Stealth": {
-                    "skillVariants": {
-                        "0": {
-                            "label": "+19 when posing as a mundane wooden statue"
-                        }
-                    }
                 }
             }
         },
@@ -784,7 +777,7 @@
         "Faydhaan Shuyookh": {
             "name": "Faydhaan Shuyookh",
             "publicNotes": "<p>Faydhaan shuyookhs are powerful faydhaans venerated as leaders, diplomats, and negotiators. As representatives of faydhaan-kind, they observe strict rules of etiquette and hospitality and hold the literary and performing arts in high esteem. A faydhaan shuyookh takes delight in greeting guests, and being greeted in return, to see how many different greetings they can demonstrate. Guests who creatively engage in this customary greeting game will impress a faydhaan shuyookh and receive magnificent hospitality.</p>",
-            "sensesDetails": "detect magic",
+            "sensesDetails": "detect magic, (+25 to Sense Motive)",
             "languagesDetails": "telepathy 100 feet, truespeech",
             "items": {
                 "spellcastingEntry->Arcane Innate Spells": {
@@ -798,6 +791,9 @@
                 },
                 "strike-ranged->Jambiya": {
                     "name": "Jambiya"
+                },
+                "action->+2 Bonus on Perception to Sense motive": {
+                    "name": "+2 Bonus on Perception to Sense motive"
                 },
                 "action->Detect Magic": {
                     "name": "Detect Magic",
@@ -824,13 +820,6 @@
                 "action->To the Hilt": {
                     "name": "To the Hilt",
                     "description": "<p>The faydhaan shuyookh makes a melee <em>jambiya</em> Strike and buries the blade deep, dealing an extra @Damage[3d6[persistent,bleed]] damage on a hit (6d6 on a critical hit).</p>"
-                },
-                "lore->Athletics": {
-                    "skillVariants": {
-                        "0": {
-                            "label": "+31 to Swim"
-                        }
-                    }
                 }
             }
         },
@@ -1166,13 +1155,6 @@
                 "action->Take Root": {
                     "name": "Take Root",
                     "description": "<p>The genie thrusts their weapon into the ground. Plants sprout and grow out of the ground in a @Template[type:burst|distance:20] centered on one corner of the kizidhar's square. All squares on the ground in that area are difficult terrain until the kizidhar uses this ability again.</p>"
-                },
-                "lore->Stealth": {
-                    "skillVariants": {
-                        "0": {
-                            "label": "+15 in forests"
-                        }
-                    }
                 }
             }
         },
@@ -1222,13 +1204,6 @@
                 "action->Take Root": {
                     "name": "Take Root",
                     "description": "<p>The genie thrusts their weapon into the ground. Plants sprout and grow out of the ground in a @Template[type:burst|distance:20] centered on one corner of the kizidhar's square. All squares on the ground in that area are difficult terrain until the kizidhar uses this ability again.</p>"
-                },
-                "lore->Stealth": {
-                    "skillVariants": {
-                        "0": {
-                            "label": "+24 in forests"
-                        }
-                    }
                 }
             }
         },
@@ -1258,13 +1233,6 @@
                 "action->Tight-Knit Family": {
                     "name": "Tight-Knit Family",
                     "description": "<p>A lava otter can share the same space as another lava otter, but no more than two lava otters can occupy the same space.</p>"
-                },
-                "lore->Stealth": {
-                    "skillVariants": {
-                        "0": {
-                            "label": "+9 in lava"
-                        }
-                    }
                 }
             }
         },
@@ -1318,13 +1286,6 @@
                 "action->Engulf": {
                     "name": "Engulf",
                     "description": "<p>@Check[type:reflex|dc:22], @Damage[5d8[bludgeoning]] damage, Escape DC 20, Rupture 10</p>\n<p>A creature Engulfed by the living grove must also attempt a @Check[type:fortitude|dc:22|basic:true] save as it's battered between the thin, tightly packed trunks.</p>\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned 1}.</p>\n<p><strong>Failure</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned 2}.</p>\n<p><strong>Critical Failure</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned 4}.</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Engulf]</p>"
-                },
-                "lore->Stealth": {
-                    "skillVariants": {
-                        "0": {
-                            "label": "+16 in forests or grasslands"
-                        }
-                    }
                 }
             }
         },
@@ -1392,13 +1353,6 @@
                 "action->Volcanic Heat": {
                     "name": "Volcanic Heat",
                     "description": "<p>40 feet. Any creature that enters or starts its turn in the aura takes @Damage[15[fire]] damage (@Check[type:fortitude|dc:33|basic:true] save). A creature that fails its save is also @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 1} until it's no longer in the aura.</p>"
-                },
-                "lore->Stealth": {
-                    "skillVariants": {
-                        "0": {
-                            "label": "+26 in lava"
-                        }
-                    }
                 }
             }
         },
@@ -1729,13 +1683,6 @@
                 "action->Germinate": {
                     "name": "Germinate",
                     "description": "<p>A creature hit by the nursery crawler's seed Strike must, on its turn, spend an Interact action to remove the seed; any seeds still implanted at the end of the creature's turn begin to sprout, dealing @Damage[1d6[persistent,bleed]] damage and rendering the seeded creature @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 1} and @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard}. Removing a seed after it's sprouted deals @Damage[1d4[piercing]] damage; removing it before it begins to sprout does no damage. Removed seeds that land in viable soil sprout immediately and grow into new saplings after 1 hour.</p>"
-                },
-                "lore->Deception": {
-                    "skillVariants": {
-                        "0": {
-                            "label": "+10 when pretending to be a mundane stump or log"
-                        }
-                    }
                 }
             }
         },
@@ -1757,13 +1704,6 @@
                 "action->Reactive Grab": {
                     "name": "Reactive Grab",
                     "description": "<p><strong>Trigger</strong> A creature within the olobigonde's reach leaves a square during a move action it's using</p>\n<p><strong>Requirements</strong> The olobigonde doesn't have a creature @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed}</p>\n<hr />\n<p><strong>Effect</strong> The olobigonde attempts to @UUID[Compendium.pf2e.actionspf2e.Item.PMbdMWc2QroouFGD]{Grapple} the triggering creature with its jaws. On a success, the target also takes @Damage[3[piercing]] damage (doubled on a critical success).</p>"
-                },
-                "lore->Stealth": {
-                    "skillVariants": {
-                        "0": {
-                            "label": "+11 in aquatic terrain"
-                        }
-                    }
                 }
             }
         },
@@ -2403,7 +2343,7 @@
         "Vault Builder": {
             "name": "Vault Builder",
             "publicNotes": "<p>The vault keepers lost Sairazul's spark and have life spans of two to three millennia. They maintain and protect the xiomorns' many experiments.</p>\n<hr />\n<p>When Sairazul created xiomorns, they were immortal. She created 65,536, all in her own image, and all imbued with a piece of her divine spark. During her imprisonment, Ayrzul used visions of a future extinction to manipulate them into sacrificing their power to him. This sacrifice split xiomorns into two classes: 32,768 vault builders who kept Sairazul's essence and 32,768 vault keepers who would live forever no longer. For millennia, xiomorns built a vast, magical civilization across the Plane of Earth, and when there was no space left to build, they left. On each new world, xiomorns build their vaults and conduct their experiments, endlessly searching for clues to help them avoid their extinction.</p>\n<h2>Vault Seeds</h2>\n<p>Xiomorns create magical underground caverns using vault seeds, ancient magical tools bequeathed to their species by Ayrzul as a reward for their sacrifice. The vault seeds were used to create the Vaults of Orv in Golarion's Darklands, and an accident involving an out-of-control vault seed created the mysterious Emerald Spire.</p>\n<h2>Crystal Crafters</h2>\n<p>Xiomorns have mastered the creation of numerous magic items made of crystal beyond generation stones and vault seeds. These include pillars of black stone called whisperstones that allow xiomorns to communicate telepathically across vaults, orvgates that use weblike funnels of green crystal to allow teleportation between Darklands vaults, and a vortex in Orv called the Crystal Womb that connects to a crucial stronghold on the Plane of Earth.</p>",
-            "allSavesBonus": "+1 status to all saves vs. spells ( +4 status vs. earth)",
+            "allSavesBonus": "+1 status to all saves vs. spells (+4 status vs. earth)",
             "speedsDetails": "earth glide",
             "languagesDetails": "telepathy 300 feet",
             "items": {
@@ -2625,13 +2565,6 @@
                 "action->Unseating Sweep": {
                     "name": "Unseating Sweep",
                     "description": "<p>The whipping willow attempts to @UUID[Compendium.pf2e.actionspf2e.Item.ge56Lu1xXVFYUnLP]{Trip} all creatures within a @Template[type:cone|distance:15], making a single @Check[type:athletics|traits:action:trip] check against all targets' Reflex DCs.</p>"
-                },
-                "lore->Athletics": {
-                    "skillVariants": {
-                        "0": {
-                            "label": "+15 to Trip or Grapple"
-                        }
-                    }
                 }
             }
         },

@@ -300,13 +300,6 @@
                 },
                 "action->Grab": {
                     "name": "Grab"
-                },
-                "lore->Athletics": {
-                    "skillVariants": {
-                        "0": {
-                            "label": "+16 to Grapple"
-                        }
-                    }
                 }
             }
         },
@@ -372,13 +365,6 @@
                 },
                 "action->Throw Rock": {
                     "name": "Throw Rock"
-                },
-                "lore->Stealth": {
-                    "skillVariants": {
-                        "0": {
-                            "label": "+21 in forests"
-                        }
-                    }
                 }
             }
         },
@@ -406,13 +392,6 @@
                 "action->Shield Push": {
                     "name": "Shield Push",
                     "description": "<p>The arboreal warden Strides and then makes a shield bash Strike. If the attack hits, the target is pushed 10 feet.</p>"
-                },
-                "lore->Stealth": {
-                    "skillVariants": {
-                        "0": {
-                            "label": "+14 in forests"
-                        }
-                    }
                 }
             }
         },
@@ -517,13 +496,6 @@
                 "action->Axe Vulnerability": {
                     "name": "Axe Vulnerability",
                     "description": "<p>An awakened tree takes 5 additional damage from axes.</p>"
-                },
-                "lore->Stealth": {
-                    "skillVariants": {
-                        "0": {
-                            "label": "+14 in forests"
-                        }
-                    }
                 }
             }
         },
@@ -603,13 +575,6 @@
                 },
                 "action->Improved Grab": {
                     "name": "Improved Grab"
-                },
-                "lore->Stealth": {
-                    "skillVariants": {
-                        "0": {
-                            "label": "+25 in water"
-                        }
-                    }
                 }
             }
         },
@@ -617,6 +582,7 @@
             "name": "Balisse",
             "publicNotes": "<p>Balisses, or confessor angels, seek to assist mortals ensnared by moral dilemmas or crises of faith. Balisses prefer to guide people to their own decisions rather than demand obedience to a higher cause, as intrinsic belief is even more powerful than blind obedience. While most balisses are fundamentally honest, they use their guardian angel ability to seem less intimidating and decrease the chance the mortal will simply acquiesce to the opinion of an obviously divine being. Balisses often form from souls of those who performed evil acts but were redeemed. Many serve the goddess Sarenrae, but they can serve other good deities and empyreal lords as well.</p>\n<hr />\n<p>The celestial hosts of angels are messengers and warriors, divided into choirs based on their abilities and purviews. The majority of angels are neutral good and live in Nirvana, the plane of virtue and enlightenment. However, some angels, including several angelic deities, have different alignments, and some even dwell on other planes. Regardless of alignment, angels remain benevolent messengers possessed with magical auras to aid their allies.</p>",
             "allSavesBonus": "+1 status to all saves vs. magic",
+            "sensesDetails": "(+20 to detect lies and illusions)",
             "languagesDetails": "tongues",
             "items": {
                 "spellcastingEntry->Divine Innate Spells": {
@@ -624,6 +590,9 @@
                 },
                 "strike-melee->Flaming Scimitar": {
                     "name": "Flaming Scimitar"
+                },
+                "action->+2 Bonus on Perception to Detect lies and illusions": {
+                    "name": "+2 Bonus on Perception to Detect lies and illusions"
                 },
                 "action->Constant Spells": {
                     "name": "Constant Spells"
@@ -1582,13 +1551,6 @@
                 "action->Tongue Grab": {
                     "name": "Tongue Grab",
                     "description": "<p>If the boggard scout hits a creature with its tongue, that creature becomes @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed} by the boggard. Unlike with a normal grab, the creature isn't @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Immobilized}, but it can't move beyond the reach of the boggard's tongue.</p>\n<p>A creature can sever the tongue by hitting AC 13 and dealing at least 2 slashing damage. Though this doesn't deal any damage to the boggard, it prevents it from using its tongue Strike until it regrows its tongue, which takes a week.</p>"
-                },
-                "lore->Stealth": {
-                    "skillVariants": {
-                        "0": {
-                            "label": "+9 in water"
-                        }
-                    }
                 }
             }
         },
@@ -1663,13 +1625,6 @@
                 "action->Tongue Grab": {
                     "name": "Tongue Grab",
                     "description": "<p>If the boggard warrior hits a creature with its tongue, that creature becomes @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed} by the boggard. Unlike with a normal grab, the creature isn't @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Immobilized}, but it can't move beyond the reach of the boggard's tongue.</p>\n<p>A creature can sever the tongue by hitting AC 15 and dealing at least 3 slashing damage. Though this doesn't deal any damage to the boggard, it prevents it from using its tongue Strike until it regrows its tongue, which takes a week.</p>"
-                },
-                "lore->Stealth": {
-                    "skillVariants": {
-                        "0": {
-                            "label": "+8 in water"
-                        }
-                    }
                 }
             }
         },
@@ -3129,13 +3084,6 @@
                 "action->Infrasonic Moan": {
                     "name": "Infrasonic Moan",
                     "description": "<p>The cloaker lets out an infrasonic moan that has one of the effects below. A creature that succeeds at a Will save is unaffected. Any creature that attempts this save becomes temporarily immune for 1 hour. Because the moan is infrasonic, most humanoids don't detect the source of their plight if they aren't already aware of the cloaker.</p>\n<ul>\n<li><strong>Fear</strong> (fear, incapacitation) @Check[type:will|dc:22|traits:fear,incapacitation] Each creature within a @Template[type:emanation|distance:30] becomes @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 1} (or, on a critical failure, @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 2} and @UUID[Compendium.pf2e.conditionitems.Item.sDPxOjQ9kx2RZE8D]{Fleeing} until the end of its next turn).</li>\n<li><strong>Nausea</strong> @Check[type:will|dc:22] Each creature within a @Template[type:emanation|distance:30] falls @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone} and become @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 2}.</li>\n<li><strong>Stupor</strong> @Check[type:will|dc:22] The cloaker targets a single creature within 30 feet. The creature becomes @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 1} and @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 1} for 1 minute.</li>\n</ul>"
-                },
-                "lore->Deception": {
-                    "skillVariants": {
-                        "0": {
-                            "label": "+16 to Impersonate a cloak, sheet, or ray"
-                        }
-                    }
                 }
             }
         },
@@ -3607,13 +3555,6 @@
                 },
                 "action->Grab": {
                     "name": "Grab"
-                },
-                "lore->Stealth": {
-                    "skillVariants": {
-                        "0": {
-                            "label": "+11 in water"
-                        }
-                    }
                 }
             }
         },
@@ -3780,13 +3721,6 @@
                 "action->Hidden Movement": {
                     "name": "Hidden Movement",
                     "description": "<p>If the deep gnome scout starts its turn @UUID[Compendium.pf2e.conditionitems.Item.VRSef5y1LmL2Hkjf]{Undetected} or @UUID[Compendium.pf2e.conditionitems.Item.iU0fEDdBp3rXpTMC]{Hidden} to a creature, that creature is @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} against the deep gnome scout's attacks until the end of the turn.</p>"
-                },
-                "lore->Stealth": {
-                    "skillVariants": {
-                        "0": {
-                            "label": "+10 underground"
-                        }
-                    }
                 }
             }
         },
@@ -3829,13 +3763,6 @@
                 "action->Predator's Advantage": {
                     "name": "Predator's Advantage",
                     "description": "<p>Bleeding creatures are @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} to the deinonychus.</p>"
-                },
-                "lore->Athletics": {
-                    "skillVariants": {
-                        "0": {
-                            "label": "+12 jumping"
-                        }
-                    }
                 }
             }
         },
@@ -3863,13 +3790,6 @@
                 },
                 "action->Grab": {
                     "name": "Grab"
-                },
-                "lore->Stealth": {
-                    "skillVariants": {
-                        "0": {
-                            "label": "+20 in water"
-                        }
-                    }
                 }
             }
         },
@@ -3881,6 +3801,9 @@
             "items": {
                 "spellcastingEntry->Arcane Innate Spells": {
                     "name": "Arcane Innate Spells"
+                },
+                "spellcastingEntry->Demilich Eye Gems (Arcane)": {
+                    "name": "Demilich Eye Gems (Arcane)"
                 },
                 "strike-melee->Jaws": {
                     "name": "Jaws"
@@ -4079,13 +4002,6 @@
                 },
                 "action->Grab": {
                     "name": "Grab"
-                },
-                "lore->Stealth": {
-                    "skillVariants": {
-                        "0": {
-                            "label": "+24 in forests or swamps"
-                        }
-                    }
                 }
             }
         },
@@ -4436,13 +4352,6 @@
                 "action->Tree Meld": {
                     "name": "Tree Meld",
                     "description": "<p>The dryad touches a tree of enough volume to contain her and merges into it for as long as she wishes. She can Cast a Spell while inside as long as the spell doesn't require a line of effect outside the tree. She can hear, but not see, what's going on outside the tree. She can Dismiss this effect.</p>\n<p>Significant physical damage dealt to the tree expels the dryad from the tree and deals [[/r {3d6}]]{3d6 damage} to her. @UUID[Compendium.pf2e.spells-srd.Item.115Xp9E38CJENhNS]{Magic Passage} expels the dryad without dealing damage.</p>\n<p>If a dryad uses this ability on her bonded tree, she instead enters an extradimensional living space within the tree; Tree Meld gains the extradimensional trait. A dryad can bring up to two other creatures with her when entering her home within her bonded tree. The dryad can still be expelled from this space as above.</p>"
-                },
-                "lore->Crafting": {
-                    "skillVariants": {
-                        "0": {
-                            "label": "+9 woodworking"
-                        }
-                    }
                 }
             }
         },
@@ -4493,13 +4402,6 @@
                 "action->Tree Meld": {
                     "name": "Tree Meld",
                     "description": "<p>The hamadryad touches a tree within her domain of enough volume to contain her and merges into it for as long as she wishes. She can Cast a Spell while inside as long as the spell doesn't require a line of effect outside the tree. She can hear, but not see, what's going on outside the tree. She can enter or exit her extradimensional domain from any tree in her domain. She can Dismiss this effect.</p>\n<p>Significant physical damage dealt to the tree expels the hamadryad from the tree and deals [[/r {3d6}]]{3d6 damage} to her. @UUID[Compendium.pf2e.spells-srd.Item.115Xp9E38CJENhNS]{Magic Passage} expels the hamadryad without dealing damage.</p>\n<p>The hamadryad can also touch a tree within her domain to instead enter her extradimensional domain; Tree Meld gains the extradimensional trait. A hamadryad can bring up to eight other creatures with her when entering her home. The hamadryad can still be expelled from this space as above.</p>"
-                },
-                "lore->Crafting": {
-                    "skillVariants": {
-                        "0": {
-                            "label": "+25 woodworking"
-                        }
-                    }
                 }
             }
         },
@@ -4769,13 +4671,6 @@
                 "action->Pounce": {
                     "name": "Pounce",
                     "description": "<p>The elananx Strides and makes a Strike at the end of that movement. If the elananx began this action @UUID[Compendium.pf2e.conditionitems.Item.iU0fEDdBp3rXpTMC]{Hidden}, it remains hidden until after the attack.</p>"
-                },
-                "lore->Survival": {
-                    "skillVariants": {
-                        "0": {
-                            "label": "+17 to Track"
-                        }
-                    }
                 }
             }
         },
@@ -5375,13 +5270,6 @@
                 "action->Wide Swing": {
                     "name": "Wide Swing",
                     "description": "<p>The frost giant makes a single greataxe Strike and compares the attack roll result to the ACs of up to two foes within its reach. This counts as two attacks for the frost giant's multiple attack penalty.</p>"
-                },
-                "lore->Stealth": {
-                    "skillVariants": {
-                        "0": {
-                            "label": "+21 in snow"
-                        }
-                    }
                 }
             }
         },
@@ -5491,13 +5379,6 @@
                 "action->Weak Acid": {
                     "name": "Weak Acid",
                     "description": "<p>A gelatinous cube's acid damages only organic material-not metal, stone, or other inorganic substances.</p>"
-                },
-                "lore->Athletics": {
-                    "skillVariants": {
-                        "0": {
-                            "label": "+13 to Shove"
-                        }
-                    }
                 }
             }
         },
@@ -5874,13 +5755,6 @@
                 },
                 "action->Improved Grab": {
                     "name": "Improved Grab"
-                },
-                "lore->Stealth": {
-                    "skillVariants": {
-                        "0": {
-                            "label": "+24 in undergrowth"
-                        }
-                    }
                 }
             }
         },
@@ -5910,13 +5784,6 @@
                 "action->Uncanny Climber": {
                     "name": "Uncanny Climber",
                     "description": "<p>A giant gecko's feet allow it to climb virtually any surface, no matter how slick or sheer. If a giant gecko attempts an Athletics check to @UUID[Compendium.pf2e.actionspf2e.Item.pprgrYQ1QnIDGZiy]{Climb} and critically fails, it gets a failure instead.</p>"
-                },
-                "lore->Athletics": {
-                    "skillVariants": {
-                        "0": {
-                            "label": "+9 to Climb"
-                        }
-                    }
                 }
             }
         },
@@ -6045,13 +5912,6 @@
                 "action->Filth Fever": {
                     "name": "Filth Fever",
                     "description": "<p>The @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened} and @UUID[Compendium.pf2e.conditionitems.Item.fBnFDH2MTzgFijKf]{Unconscious} conditions from filth fever don't improve on their own until the disease is cured.</p>\n<p><strong>Saving Throw</strong> @Check[type:fortitude|dc:14]</p>\n<hr />\n<p><strong>Stage 1</strong> carrier with no ill effect ([[/br 1d4 #hours]]{1d4 hours})</p>\n<p><strong>Stage 2</strong> @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 1} (1 day)</p>\n<p><strong>Stage 3</strong> Sickened 1 and @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1} (1 day)</p>\n<p><strong>Stage 4</strong> @UUID[Compendium.pf2e.conditionitems.Item.fBnFDH2MTzgFijKf]{Unconscious} (1 day)</p>\n<p><strong>Stage 5</strong> dead</p>"
-                },
-                "lore->Athletics": {
-                    "skillVariants": {
-                        "0": {
-                            "label": "+4 to Climb or Swim"
-                        }
-                    }
                 }
             }
         },
@@ -6525,13 +6385,6 @@
                 },
                 "action->Improved Grab": {
                     "name": "Improved Grab"
-                },
-                "lore->Survival": {
-                    "skillVariants": {
-                        "0": {
-                            "label": "+24 to Track"
-                        }
-                    }
                 }
             }
         },
@@ -7272,13 +7125,6 @@
                 "action->Woodland Stride": {
                     "name": "Woodland Stride",
                     "description": "<p>The green dragon ignores difficult terrain and greater difficult terrain from non-magical foliage.</p>"
-                },
-                "lore->Stealth": {
-                    "skillVariants": {
-                        "0": {
-                            "label": "camouflage"
-                        }
-                    }
                 }
             }
         },
@@ -7336,13 +7182,6 @@
                 "action->Woodland Stride": {
                     "name": "Woodland Stride",
                     "description": "<p>The green dragon ignores difficult terrain and greater difficult terrain from non-magical foliage.</p>"
-                },
-                "lore->Stealth": {
-                    "skillVariants": {
-                        "0": {
-                            "label": "camouflage"
-                        }
-                    }
                 }
             }
         },
@@ -7519,13 +7358,6 @@
                 "action->Fiddle": {
                     "name": "Fiddle",
                     "description": "<p>A grig can rub its legs together to create a catchy fiddling tune that compels others within @Template[type:emanation|distance:30]{30 feet} to dance about, with varying effects depending on a @Check[type:will|dc:18] save. A listener is temporarily immune for 10 minutes on a success, but otherwise, if the grig continues to Fiddle each round, the creature receives no additional saves.</p>\n<hr />\n<p><strong>Success</strong> No effect</p>\n<p><strong>Failure</strong> @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} and -10-foot status penalty to Speeds</p>\n<p><strong>Critical Failure</strong> As failure, and also @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1}</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.wJsOZsYI2ZUVcGxc]{Effect: Fiddle}</p>"
-                },
-                "lore->Athletics": {
-                    "skillVariants": {
-                        "0": {
-                            "label": "+6 to High Jump or Long Jump"
-                        }
-                    }
                 }
             }
         },
@@ -7560,13 +7392,6 @@
                 "action->Earth Glide": {
                     "name": "Earth Glide",
                     "description": "<p>The grikkitog can Burrow through dirt and stone at its full burrow Speed, leaving no tunnels or signs of its passing.</p>"
-                },
-                "lore->Deception": {
-                    "skillVariants": {
-                        "0": {
-                            "label": "+31 to imitate stone"
-                        }
-                    }
                 }
             }
         },
@@ -7732,13 +7557,6 @@
                 "action->Rend": {
                     "name": "Rend",
                     "description": "<p>Claw</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Rend]</p>"
-                },
-                "lore->Acrobatics": {
-                    "skillVariants": {
-                        "0": {
-                            "label": "+23 to Squeeze"
-                        }
-                    }
                 }
             }
         },
@@ -7808,13 +7626,6 @@
                 "action->Captivating Song": {
                     "name": "Captivating Song",
                     "description": "<p>The harpy cries out an eerie, compelling melody. Each non-harpy creature within a @Template[type:emanation|distance:300]{300-foot aura} must attempt a @Check[type:will|dc:21] save to avoid becoming captivated by the harpy's song. The effect lasts for 1 round, but if the harpy uses this ability again on subsequent rounds, it extends the duration by 1 round for all affected creatures. Once a creature succeeds at any save against Captivating Song, that creature is temporarily immune to Captivating Songs for 24 hours.</p>\n<hr />\n<p><strong>Success</strong> The creature is unaffected.</p>\n<p><strong>Failure</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.AdPVz7rbaVSRxHFg]{Fascinated}, and it must spend each of its actions to move closer to the harpy as expediently as possible, while avoiding obvious dangers. If a captivated creature is adjacent to the harpy, it stays still and doesn't act. If attacked by the harpy, the creature is freed from captivation at the end of the harpy's turn.</p>\n<p><strong>Critical Failure</strong> As failure, but if attacked by the harpy, the creature can attempt a new save at the start of its next turn, rather than being freed at the end of the harpy's turn.</p>"
-                },
-                "lore->Performance": {
-                    "skillVariants": {
-                        "0": {
-                            "label": "+16 singing"
-                        }
-                    }
                 }
             }
         },
@@ -7829,13 +7640,6 @@
                 "action->Breath Weapon": {
                     "name": "Breath Weapon",
                     "description": "<p>The hell hound breathes flames that deal @Damage[4d6[fire]] damage to all creatures in a @Template[type:cone|distance:15] (@Check[type:reflex|dc:19|basic:true] save).</p>\n<p>The hell hound can't use Breath Weapon again for [[/br 1d4 #Recharge Breath Weapon]]{1d4 rounds}. If the hell hound would take fire damage or be targeted by a fire effect, its Breath Weapon recharges.</p>"
-                },
-                "lore->Survival": {
-                    "skillVariants": {
-                        "0": {
-                            "label": "+11 to Track"
-                        }
-                    }
                 }
             }
         },
@@ -8019,13 +7823,6 @@
                 },
                 "action->Push": {
                     "name": "Push"
-                },
-                "lore->Survival": {
-                    "skillVariants": {
-                        "0": {
-                            "label": "+15 to Track"
-                        }
-                    }
                 }
             }
         },
@@ -8120,13 +7917,6 @@
                 "action->Storm of Jaws": {
                     "name": "Storm of Jaws",
                     "description": "<p>The hydra makes a number of Strikes up to its number of heads, each against a different target. These attacks count toward the hydra's multiple attack penalty, but the multiple attack penalty doesn't increase until after the hydra makes all its attacks.</p>"
-                },
-                "lore->Stealth": {
-                    "skillVariants": {
-                        "0": {
-                            "label": "+15 in water"
-                        }
-                    }
                 }
             }
         },
@@ -8253,13 +8043,6 @@
                 "action->Sneak Attack": {
                     "name": "Sneak Attack",
                     "description": "<p>The invisible stalker deals 2d6 extra precision damage to @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} creatures.</p>"
-                },
-                "lore->Survival": {
-                    "skillVariants": {
-                        "0": {
-                            "label": "+19 to Track"
-                        }
-                    }
                 }
             }
         },
@@ -8343,13 +8126,6 @@
                 "action->Tinker": {
                     "name": "Tinker",
                     "description": "<p>A group of six jinkins can work together for an hour to imbue an item with a curse at a range of 60 feet. While this process is lengthy, it's also unobtrusive and can be performed while @UUID[Compendium.pf2e.actionspf2e.Item.XMcnh4cSI32tljXa]{Hiding}. Jinkins prefer to use this ability on magic items. The curse makes the item unreliable (@Check[type:flat|dc:5] check or waste any action to Interact with or Activate the item), adds a bizarre requirement to use the item, or imparts some other curse of a similar caliber.</p>"
-                },
-                "lore->Crafting": {
-                    "skillVariants": {
-                        "0": {
-                            "label": "+7 traps"
-                        }
-                    }
                 }
             }
         },
@@ -8644,13 +8420,6 @@
                 "action->Sneak Attack": {
                     "name": "Sneak Attack",
                     "description": "<p>The kobold scout deals an extra 1d6 precision damage to @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} creatures.</p>"
-                },
-                "lore->Crafting": {
-                    "skillVariants": {
-                        "0": {
-                            "label": "+5 traps"
-                        }
-                    }
                 }
             }
         },
@@ -8665,13 +8434,6 @@
                 "action->Sneak Attack": {
                     "name": "Sneak Attack",
                     "description": "<p>The kobold warrior deals an extra 1d4 precision damage to @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} creatures.</p>"
-                },
-                "lore->Crafting": {
-                    "skillVariants": {
-                        "0": {
-                            "label": "+4 traps"
-                        }
-                    }
                 }
             }
         },
@@ -8679,6 +8441,7 @@
             "name": "Kolyarut",
             "publicNotes": "<p>Kolyarut inevitables are enforcers of bargains and punishers of those who fail to uphold them. Their humanoid shape, ability to disguise themselves among a humanoid population, and diplomatic leanings make them the most approachable inevitables, and thus more likely to ally themselves with others. They are among the most talkative of all inevitables, naturally possessing a courtly grace and an encyclopedic knowledge of social customs, which they use to assist their efforts in gathering information on their targets or issuing challenges in a legal manner.</p>\n<hr />\n<p>Aeons have always been the caretakers of reality and defenders of the natural order of balance. Each type of aeon takes on some form of duality in its manifestation and works either to shape the multiverse within the aspects of this duality in some way, or to correct imbalances to the perfect order of existence. Aeons can bring weal or woe when they appear in a region, and their machinations can raise a nation, raze it, or restore it from ruin. Their reasons are their own, and they rarely share their motivations with others-they simply create the results they insist through their strange envisioning communication are necessary to maintain the balance of the multiverse.</p>\n<p>As a result of recent shifts in reality, aeons have begun to reassert a presence in the perfect planar city of Axis. To the aeons, this is merely the latest in a recurring cycle, albeit one that mortals have not yet borne witness to. Once regarded as an independent faction, the living machines known as inevitables are now revealed as having been agents of the aeons all along, and while inevitables have their own shared themes and features, they are very much living but constructed manifestations of the aeons' war against imbalance-particularly with regard to how this war is waged against the forces of chaos.</p>\n<p>Aeons have a name for this cyclic return, in which they welcome the industrious axiomites back to their fold and bring the inevitables once again under their control: the \"Convergence.\" At the onset of the Convergence, a council of pleroma aeons appeared in the Eternal City of Axis, where they revealed that axiomites were wayward aeons, split off long ago to pursue the act of creation. With the latest cycle of change it was time for the axiomites and their creations, the inevitables, to rejoin the aeon cause. While most axiomites and inevitables fell in line, realizing perhaps on a fundamental level of reality that what the aeons said was the truth, some refused to heed the call and waited for the wrath of the aeons-but that wrath has yet to come. The dual-natured aeons have responded to those who have declined in confusing ways. With some they treat and even bargain, while a handful of others they have destroyed, and a few have been exterminated by the axiomites and allied inevitables. But most of these quiet insurgents they leave alone, allowing these axiomites to continue to create in peace and the inevitables to continue with their duties. How-or if-this Convergence will end is as little understood as the aeons themselves.</p>",
             "allSavesBonus": "+1 status to all saves vs. magic",
+            "sensesDetails": "(+27 to detect lies)",
             "languagesDetails": "truespeech",
             "hpDetails": "regeneration 15 (deactivated by chaotic)",
             "items": {
@@ -8690,6 +8453,9 @@
                 },
                 "strike-melee->Fist": {
                     "name": "Fist"
+                },
+                "action->+4 Bonus on Perception to Detect lies": {
+                    "name": "+4 Bonus on Perception to Detect lies"
                 },
                 "action->Truespeech": {
                     "name": "Truespeech",
@@ -8782,20 +8548,6 @@
                 "action->Poison Tooth": {
                     "name": "Poison Tooth",
                     "description": "<p><strong>Requirements</strong> The krooth damaged a creature with its jaws on its most recent action this turn.</p>\n<hr />\n<p><strong>Effect</strong> The krooth snaps off one of its teeth in the creature it hit. The creature takes @Damage[1d6[bleed]] and is @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 1}. Neither can be healed while the tooth remains. Removing the tooth safely requires a successful DC 26 check to @UUID[Compendium.pf2e.actionspf2e.Item.MHLuKy4nQO2Z4Am1]{Administer First Aid}. Instead of ending bleeding or stabilizing, this removes the drained condition, but it doesn't automatically end the bleed damage.</p>"
-                },
-                "lore->Stealth": {
-                    "skillVariants": {
-                        "0": {
-                            "label": "+20 in water"
-                        }
-                    }
-                },
-                "lore->Survival": {
-                    "skillVariants": {
-                        "0": {
-                            "label": "+20 to Track a bleeding creature"
-                        }
-                    }
                 }
             }
         },
@@ -9035,13 +8787,6 @@
                 },
                 "action->Grab": {
                     "name": "Grab"
-                },
-                "lore->Stealth": {
-                    "skillVariants": {
-                        "0": {
-                            "label": "+11 in undergrowth"
-                        }
-                    }
                 }
             }
         },
@@ -9128,7 +8873,7 @@
                 },
                 "action->Breath Weapon": {
                     "name": "Breath Weapon",
-                    "description": "<p>The leukodaemon exhales a cloud of corpse-bloated, biting black flies in a @Template[type:cone|distance:20]. Creatures within the cone take @Damage[4d8[piercing]] damage (@Check[type:reflex|dc:28|basic:true] save).</p>\n<hr />\n<p><strong>Critical Success</strong> uneffected</p>\n<p><strong>Success</strong> half damage</p>\n<p><strong>Failure</strong> full damage and @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 1}</p>\n<p><strong>Critical Failure</strong> double damage and @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 2}</p>"
+                    "description": "<p>The leukodaemon exhales a cloud of corpse-bloated, biting black flies in a @Template[type:cone|distance:20]. Creatures within the cone take @Damage[4d8[piercing]] damage (@Check[type:reflex|dc:28|basic:true] save). A creature that fails the save becomes @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 1} (or @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 2} on a critical failure).</p>"
                 },
                 "action->Daemonic Pestilence": {
                     "name": "Daemonic Pestilence",
@@ -9189,13 +8934,6 @@
                 "action->Steady Spellcasting": {
                     "name": "Steady Spellcasting",
                     "description": "<p>If a reaction would disrupt the lich's spellcasting action, the lich attempts a @Check[type:flat|dc:15] check. On a success, the action isn't disrupted.</p>"
-                },
-                "lore->Crafting": {
-                    "skillVariants": {
-                        "0": {
-                            "label": "can craft magic items"
-                        }
-                    }
                 }
             }
         },
@@ -9578,13 +9316,6 @@
                 "action->Skewer": {
                     "name": "Skewer",
                     "description": "<p>The marid makes a trident Strike, dealing an extra @Damage[2d6[bleed]] on a hit (@Damage[4d6[bleed]] on a critical hit).</p>"
-                },
-                "lore->Athletics": {
-                    "skillVariants": {
-                        "0": {
-                            "label": "+24 to swim"
-                        }
-                    }
                 }
             }
         },
@@ -9744,13 +9475,6 @@
                 "action->Aquatic Dash": {
                     "name": "Aquatic Dash",
                     "description": "<p>The merfolk warrior swims and attacks in one of two patterns. They either Swim twice and Strike one opponent at the end of their movement, or Swim once and Strike at any point during their movement.</p>"
-                },
-                "lore->Athletics": {
-                    "skillVariants": {
-                        "0": {
-                            "label": "+7 to Swim"
-                        }
-                    }
                 }
             }
         },
@@ -9770,13 +9494,6 @@
                 "action->Hydraulic Asphyxiation": {
                     "name": "Hydraulic Asphyxiation",
                     "description": "<p><strong>Requirements</strong> The target is fully submerged in water, within 30 feet of the merfolk wavecaller, and holding its breath.</p>\n<hr />\n<p><strong>Effect</strong> The merfolk wavecaller commands the tides to crush their foe's throat, rooting the target in place and forcing it to choke up precious air. The target must succeed at a @Check[type:fortitude|dc:18] save or become @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Immobilized} for 1 round and immediately lose [[/br 1d4 #actions]]{1d4 actions'} worth of air (or twice that on a critical failure).</p>"
-                },
-                "lore->Athletics": {
-                    "skillVariants": {
-                        "0": {
-                            "label": "+9 to Swim"
-                        }
-                    }
                 }
             }
         },
@@ -9826,13 +9543,6 @@
                 "action->Powerful Charge": {
                     "name": "Powerful Charge",
                     "description": "<p>The minotaur Strides twice, then makes a horn Strike. If it moved at least 20 feet from its starting position, the Strike's damage is increased to @Damage[(2d8+10)[piercing]]{2d8+10}.</p>"
-                },
-                "lore->Survival": {
-                    "skillVariants": {
-                        "0": {
-                            "label": "natural cunning"
-                        }
-                    }
                 }
             }
         },
@@ -9860,13 +9570,6 @@
                 "action->Vengeful Anger": {
                     "name": "Vengeful Anger",
                     "description": "<p>As long as it isn't @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened}, a mitflit gains a +2 status bonus to damage rolls against a creature that has previously damaged or tormented it.</p>"
-                },
-                "lore->Diplomacy": {
-                    "skillVariants": {
-                        "0": {
-                            "label": "+7 vs. arthropods"
-                        }
-                    }
                 }
             }
         },
@@ -10179,13 +9882,6 @@
                 "action->Water Healing": {
                     "name": "Water Healing",
                     "description": "<p>While within any body of water in her domain, the naiad queen heals [[/r 28[healing]]]{28 Hit Points} every 10 minutes.</p>"
-                },
-                "lore->Athletics": {
-                    "skillVariants": {
-                        "0": {
-                            "label": "+13 to Swim"
-                        }
-                    }
                 }
             }
         },
@@ -10262,13 +9958,6 @@
                 "action->Breath Weapon": {
                     "name": "Breath Weapon",
                     "description": "<p>The warhound breathes flames that deal @Damage[10d6[fire]] damage to all creatures in a @Template[type:cone|distance:15] (@Check[type:reflex|dc:28|basic:true] save).</p>\n<p>The warhound can't use Breath Weapon again for [[/br 1d4 #Recharge Breath Weapon]]{1d4 rounds}. If the warhound would take fire damage or be targeted by a fire effect, its Breath Weapon recharges.</p>"
-                },
-                "lore->Survival": {
-                    "skillVariants": {
-                        "0": {
-                            "label": "+22 to Track"
-                        }
-                    }
                 }
             }
         },
@@ -10461,13 +10150,6 @@
                 "action->Wretched Weeps": {
                     "name": "Wretched Weeps",
                     "description": "<p><strong>Saving Throw</strong> @Check[type:fortitude|dc:26]</p>\n<hr />\n<p><strong>Stage 1</strong> carrier with no ill effect (1 day)</p>\n<p><strong>Stage 2</strong> @Damage[2d8[bleed]] every hour and @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 1} (1 day)</p>\n<p><strong>Stage 3</strong> @Damage[2d8[bleed]] every hour and @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 2} (1 day)</p>"
-                },
-                "lore->Stealth": {
-                    "skillVariants": {
-                        "0": {
-                            "label": "+23 in trash and rubbish"
-                        }
-                    }
                 }
             }
         },
@@ -10590,13 +10272,6 @@
                 },
                 "action->Grab": {
                     "name": "Grab"
-                },
-                "lore->Stealth": {
-                    "skillVariants": {
-                        "0": {
-                            "label": "+11 in lair"
-                        }
-                    }
                 }
             }
         },
@@ -11298,13 +10973,6 @@
                 "action->Swarming Bites": {
                     "name": "Swarming Bites",
                     "description": "<p>Each enemy in the swarm's space takes @Damage[1d6[piercing]] damage and must attempt a @Check[type:reflex|dc:17|basic:true] save. A creature that fails its save is exposed to filth fever.</p>"
-                },
-                "lore->Athletics": {
-                    "skillVariants": {
-                        "0": {
-                            "label": "+6 to Climb or Swim"
-                        }
-                    }
                 }
             }
         },
@@ -11719,13 +11387,6 @@
                 },
                 "action->Grab": {
                     "name": "Grab"
-                },
-                "lore->Athletics": {
-                    "skillVariants": {
-                        "0": {
-                            "label": "+8 to Swim"
-                        }
-                    }
                 }
             }
         },
@@ -11917,20 +11578,6 @@
                 "action->Sticky Strand": {
                     "name": "Sticky Strand",
                     "description": "<p>Any creature hit by a roper's strand is @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 1} and @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed}. Each additional hit from a strand increases the enfeebled condition value by 1 (to a maximum of enfeebled 4). This enfeebled value decreases by 1 every 8 hours. The roper can move while it has a creature grabbed with a strand, but it automatically releases the creature if it moves beyond the strand's reach. The roper can release an grabbed creature as a free action. A creature can sever a strand with a target attack that hits AC 27 and deals at least 18 slashing damage. This doesn't deal any damage to the roper itself, though it can no longer attack with a severed strand.</p>"
-                },
-                "lore->Nature": {
-                    "skillVariants": {
-                        "0": {
-                            "label": "+21 about caves"
-                        }
-                    }
-                },
-                "lore->Stealth": {
-                    "skillVariants": {
-                        "0": {
-                            "label": "+25 in stony or icy areas"
-                        }
-                    }
                 }
             }
         },
@@ -12017,13 +11664,6 @@
                 },
                 "action->Improved Knockdown": {
                     "name": "Improved Knockdown"
-                },
-                "lore->Athletics": {
-                    "skillVariants": {
-                        "0": {
-                            "label": "+13 to Disarm a metal item"
-                        }
-                    }
                 }
             }
         },
@@ -12047,13 +11687,6 @@
                 },
                 "action->Grab": {
                     "name": "Grab"
-                },
-                "lore->Crafting": {
-                    "skillVariants": {
-                        "0": {
-                            "label": "+17 for blacksmithing"
-                        }
-                    }
                 }
             }
         },
@@ -12133,13 +11766,6 @@
                 "action->Hateful Tide": {
                     "name": "Hateful Tide",
                     "description": "<p><strong>Requirements</strong> The sea devil baron is in a blood frenzy.</p>\n<hr />\n<p><strong>Effect</strong> The sea devil baron unleashes a whirlwind of attacks against its foes, making a single melee Strike with its claws or jaws against each opponent within reach.</p>"
-                },
-                "lore->Athletics": {
-                    "skillVariants": {
-                        "0": {
-                            "label": "+18 to Swim"
-                        }
-                    }
                 }
             }
         },
@@ -12172,13 +11798,6 @@
                 "action->Unimpeded Throw": {
                     "name": "Unimpeded Throw",
                     "description": "<p>A sea devil brute can use thrown ranged weapons underwater with no penalty due to range increment.</p>"
-                },
-                "lore->Athletics": {
-                    "skillVariants": {
-                        "0": {
-                            "label": "+15 to Swim"
-                        }
-                    }
                 }
             }
         },
@@ -12207,13 +11826,6 @@
                 "action->Bloodletting": {
                     "name": "Bloodletting",
                     "description": "<p>When the sea devil deals piercing or slashing damage, it also deals @Damage[1d4[bleed]] if the target was @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} or if the attack was a critical hit.</p>"
-                },
-                "lore->Athletics": {
-                    "skillVariants": {
-                        "0": {
-                            "label": "+11 to Swim"
-                        }
-                    }
                 }
             }
         },
@@ -12284,13 +11896,6 @@
                 },
                 "action->Grab": {
                     "name": "Grab"
-                },
-                "lore->Athletics": {
-                    "skillVariants": {
-                        "0": {
-                            "label": "+28 to Swim"
-                        }
-                    }
                 }
             }
         },
@@ -12308,13 +11913,6 @@
                 "action->Filth Wave": {
                     "name": "Filth Wave",
                     "description": "<p><strong>Frequency</strong> once per minute</p>\n<hr />\n<p><strong>Effect</strong> The sewer ooze unleashes a wave of filth, covering all creatures within a @Template[type:emanation|distance:20]. Each creature in the area must succeed at a @Check[type:reflex|dc:17|traits:damaging-effect] save or take @Damage[1d4[acid]] damage and take a -10-foot penalty to its Speeds for 1 minute (on a critical failure, the creature also falls @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone}).</p>\n<p>A creature can spend an Interact action to clean someone off, decreasing the Speed penalty by 5 feet with each action.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.Qomp2EujVCbzJb4X]{Effect: Filth Wave}</p>"
-                },
-                "lore->Stealth": {
-                    "skillVariants": {
-                        "0": {
-                            "label": "+4 in sewers"
-                        }
-                    }
                 }
             }
         },
@@ -12402,13 +12000,6 @@
                 },
                 "action->Grab": {
                     "name": "Grab"
-                },
-                "lore->Stealth": {
-                    "skillVariants": {
-                        "0": {
-                            "label": "+18 in forests or swamps"
-                        }
-                    }
                 }
             }
         },
@@ -13208,13 +12799,6 @@
                 "action->Entangling Slime": {
                     "name": "Entangling Slime",
                     "description": "<p>A creature struck by a slurk's slime squirt becomes @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 1} and takes a -5-foot penalty to Speed for 1 hour or until the slime is removed.</p>\n<p>The slime can be removed with a total of three Interact actions by the entangled creature or creatures adjacent to the creature. These actions don't need to be consecutive or made by the same creature.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.jQmfZcPD6xVYx5nb]{Effect: Entangling Slime}</p>"
-                },
-                "lore->Acrobatics": {
-                    "skillVariants": {
-                        "0": {
-                            "label": "+8 to Escape"
-                        }
-                    }
                 }
             }
         },
@@ -13273,13 +12857,6 @@
                 },
                 "action->Improved Grab": {
                     "name": "Improved Grab"
-                },
-                "lore->Stealth": {
-                    "skillVariants": {
-                        "0": {
-                            "label": "+13 in undergrowth"
-                        }
-                    }
                 }
             }
         },
@@ -13302,13 +12879,6 @@
                 },
                 "action->Knockdown": {
                     "name": "Knockdown"
-                },
-                "lore->Survival": {
-                    "skillVariants": {
-                        "0": {
-                            "label": "+11 to Track"
-                        }
-                    }
                 }
             }
         },
@@ -13586,13 +13156,6 @@
                 },
                 "action->Throw Rock": {
                     "name": "Throw Rock"
-                },
-                "lore->Stealth": {
-                    "skillVariants": {
-                        "0": {
-                            "label": "+18 in rocky terrain"
-                        }
-                    }
                 }
             }
         },
@@ -14314,13 +13877,6 @@
                 "action->Blood Feast": {
                     "name": "Blood Feast",
                     "description": "<p>Each enemy in the bat swarm's space takes @Damage[1d4[piercing]] damage (@Check[type:reflex|dc:16|basic:true] save). Creatures that fail this save also take @Damage[1[bleed]] damage.</p>"
-                },
-                "lore->Athletics": {
-                    "skillVariants": {
-                        "0": {
-                            "label": "+7 to Climb"
-                        }
-                    }
                 }
             }
         },
@@ -14569,13 +14125,6 @@
                 "action->Pack Attack": {
                     "name": "Pack Attack",
                     "description": "<p>The velociraptor deals 1d4 extra damage to any creature that's within reach of at least two of the velociraptor's allies.</p>"
-                },
-                "lore->Athletics": {
-                    "skillVariants": {
-                        "0": {
-                            "label": "+8 jumping"
-                        }
-                    }
                 }
             }
         },
@@ -14593,13 +14142,6 @@
                 "action->Viper Venom": {
                     "name": "Viper Venom",
                     "description": "<p><strong>Saving Throw</strong> @Check[type:fortitude|dc:16]</p>\n<hr />\n<p><strong>Maximum Duration</strong> 4 rounds</p>\n<p><strong>Stage 1</strong> @Damage[1d8[poison]] (1 round).</p>"
-                },
-                "lore->Athletics": {
-                    "skillVariants": {
-                        "0": {
-                            "label": "+4 to Climb"
-                        }
-                    }
                 }
             }
         },
@@ -14872,13 +14414,6 @@
                 "action->Web Trap": {
                     "name": "Web Trap",
                     "description": "<p>A creature hit by the web lurker's web attack is immobilized and stuck to the nearest surface until it succeeds at @Check[type:acrobatics|dc:20|traits:action:escape] check to @UUID[Compendium.pf2e.actionspf2e.Item.SkZAQRkLLkmBQNB9]{Escape}.</p>"
-                },
-                "lore->Crafting": {
-                    "skillVariants": {
-                        "0": {
-                            "label": "+12 to Craft Traps and Snares"
-                        }
-                    }
                 }
             }
         },
@@ -15046,13 +14581,6 @@
                 "action->Sneak Attack": {
                     "name": "Sneak Attack",
                     "description": "<p>The wererat deals 1d6 extra precision damage to @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} creatures.</p>"
-                },
-                "lore->Athletics": {
-                    "skillVariants": {
-                        "0": {
-                            "label": "+8 to Climb or Swim"
-                        }
-                    }
                 }
             }
         },
@@ -15522,13 +15050,6 @@
                 },
                 "action->Knockdown": {
                     "name": "Knockdown"
-                },
-                "lore->Stealth": {
-                    "skillVariants": {
-                        "0": {
-                            "label": "+16 in snow"
-                        }
-                    }
                 }
             }
         },
@@ -15772,13 +15293,6 @@
                 "action->Rend": {
                     "name": "Rend",
                     "description": "<p>claw</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Rend]</p>"
-                },
-                "lore->Stealth": {
-                    "skillVariants": {
-                        "0": {
-                            "label": "+15 in snow"
-                        }
-                    }
                 }
             }
         },
@@ -15821,20 +15335,6 @@
                 "action->Sandblast": {
                     "name": "Sandblast",
                     "description": "<p>The zaramuun sprays a blast of sand that deals @Damage[11d10[slashing]] damage to all creatures in a @Template[type:line|distance:60] (@Check[type:reflex|dc:38|traits:damaging-effect]).</p>\n<p>It can't Sandblast again for [[/br 1d4 #Recharge Sandblast]]{1d4 rounds}.</p>\n<hr />\n<p><strong>Critical Success</strong> No effect.</p>\n<p><strong>Success</strong> Half damage.</p>\n<p><strong>Failure</strong> Full damage.</p>\n<p><strong>Critical Failure</strong> Full damage and @UUID[Compendium.pf2e.conditionitems.Item.XgEqL1kFApUbl5Z2]{Blinded} for 1 round.</p>"
-                },
-                "lore->Athletics": {
-                    "skillVariants": {
-                        "0": {
-                            "label": "+35 to Disarm stone or metal objects"
-                        }
-                    }
-                },
-                "lore->Stealth": {
-                    "skillVariants": {
-                        "0": {
-                            "label": "+30 in sandy terrain"
-                        }
-                    }
                 }
             }
         },
