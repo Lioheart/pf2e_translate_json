@@ -1,0 +1,135 @@
+{
+    "label": "Pfs-Season-6-Bestiary",
+    "entries": {
+        "Crushing Crowd": {
+            "name": "Crushing Crowd",
+            "descriptionHazard": "<p>The crowd rushes forward, risking a stampede as everyone tries to fnd a safe exit.</p>",
+            "disable": "<p>@Check[type:diplomacy|dc:15] to calm the crowd, or @Check[type:intimidation|dc:18] or @Check[type:society|dc:18] to control the crowd's behavior</p>",
+            "routine": "<p>(1 action) On its initiative, the crowd moves 5 feet toward the exit in area <strong>A1</strong>, then crushes any creature in a @Template[type:emanation|distance:10], dealing @Damage[(2d6+2)[bludgeoning]] damage. All targets must attempt a @Check[type:reflex|dc:18|basic:true] save.</p><p><strong>Failure</strong> The target takes full damage and becomes @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone}.</p><p><strong>Critical Failure</strong> The target takes double damage, becomes prone, and is @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 1} for 1 round.</p>",
+            "items": {
+                "action->Crush": {
+                    "name": "Crush",
+                    "description": "<p><strong>Trigger</strong> Lady Embersplitter announces that the victim has died</p><hr /><p><strong>Effect</strong> The crowd begins moving around the bailey and deals @Damage[(2d6+2)[bludgeoning]] damage in a @Template[type:emanation|distance:10] (@Check[type:reflex|dc:18|basic:true] save), and then rolls initiative.</p>"
+                }
+            }
+        },
+        "Crushing Crowd (3-4)": {
+            "name": "Crushing Crowd (3-4)",
+            "descriptionHazard": "<p>The crowd rushes forward, risking a stampede as everyone tries to fnd a safe exit.</p>",
+            "disable": "<p>@Check[type:diplomacy|dc:18] to calm the crowd, or @Check[type:intimidation|dc:21] or @Check[type:society|dc:21] to control the crowd's behavior</p>",
+            "routine": "<p>(1 action) On its initiative, the crowd moves 5 feet toward the exit in area <strong>A1</strong>, then crushes any creature in a @Template[type:emanation|distance:10], dealing @Damage[(4d6)[bludgeoning]] damage. All targets must attempt a @Check[type:reflex|dc:21|basic:true] save.</p><p><strong>Failure</strong> The target takes full damage and becomes @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone}.</p><p><strong>Critical Failure</strong> The target takes double damage, becomes prone, and is @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 1} for 1 round.</p>",
+            "items": {
+                "action->Crush": {
+                    "name": "Crush",
+                    "description": "<p><strong>Trigger</strong> Lady Embersplitter announces that the victim has died</p><hr /><p><strong>Effect</strong> The crowd begins moving around the bailey and deals @Damage[(4d6)[bludgeoning]] damage in a @Template[type:emanation|distance:10] (@Check[type:reflex|dc:21|basic:true] save), and then rolls initiative.</p>"
+                }
+            }
+        },
+        "Experienced Homunculus": {
+            "name": "Experienced Homunculus",
+            "publicNotes": "<p>A homunculus is a tiny servitor construct created by a crafter to serve as a spy, scout, messenger, or assistant. When a crafter first begins to study the art of creating constructs, they often craft a homunculus first, since the creation process is simple and inexpensive due to a magical shortcut: the use of the creator's own blood. This forges a link between the homunculus and its master, causing the homunculus to gain a spark of the creator's intellect, as well as the same moral values and some of the creator's basic personality traits. Homunculi left to their own devices never stray far from their masters.</p>\n<p>In most cases, a homunculus doesn't survive the death of its master for long. Deprived of its creator, a homunculus loses focus and grows increasingly selfdestructive, and some even end up battering themselves to annihilation. Rarely, a homunculus with a slain master survives the trauma with its mind intact, often seeing itself as its deceased creator's child or successor and attempting to further its creator's legacy as best it can. In such cases, and if the homunculus was in close proximity to its master upon that creature's death, a portion of the dead master's soul \"infects\" the surviving homunculus as they pass on to the afterlife.</p>\n<p>This doesn't result in a truly soulbound homunculus, since only a fragment of the soul is left behind, but this is still enough to grant the homunculus a greater personality, free will of its own, and perhaps most importantly, the ability to speak. Over time, a few of these \"awakened\" homunculi even go so far as to become convinced that they are the reincarnation of their prior masters, although their actual personalities never quite reach the depth and complexity of a truly living creature. They are, at best, caricatures of the master, and at worst, they become awful, bitter-minded parodies of life itself. Still, a free-willed homunculus might pursue studies in its creator's class, becoming a unique creature with the abilities of that class if time and fortune permit.</p>\n<p>Homunculi are created from a mixture of clay, ash, mandrake root, spring water, and a pint of the creator's own blood. It is possible for a separate donor to provide the blood, but the process is more difficult.</p>",
+            "blurb": "Variant homunculus",
+            "languagesDetails": "(Can't Speak Any Language), Master Link"
+        },
+        "Hired Hand": {
+            "name": "Hired Hand"
+        },
+        "Lesser Poracha": {
+            "name": "Lesser Poracha",
+            "publicNotes": "<p>Porachas are feline beasts native to the mystical Forest of Spirits in Tian Xia. In their natural form, these graceful eight-legged creatures sport a gray tabby coat of fur streaked with lines of olive green, but they are rarely seen this way. Even the youngest porachas are capable of hiding within objects, making them incredibly elusive and rarely seen except on their own terms. Because porachas can so effortlessly blend in with the forest and emerge from its dark corners in an instant, superstitious locals believe these beasts are related to kami\u2014nature spirits who embody individual trees, stones, or other elements of nature in the Forest of Spirits. The truth is, while porachas frequently associate with kami, they are their own breed of monster.</p>\n<p>The poracha's most iconic feature is its ability to bend reality to teleport, or jaunt, short distances. But a poracha can also rest within objects, allowing it to safely sleep inside. Given that a poracha experiences time very slowly while hiding within objects, it can sleep inside one for an extended period. Once it wakes, a poracha departs to play in the living world.</p>\n<p>Porachas especially enjoy resting inside roadside milestones, to maximize their chances of coming across travelers. Porachas rarely tread humanoid-occupied lands, preferring the company of the kami and their natural habitat in the Forest of Spirits. Though they enjoy occasional conversation, they're extremely sensitive to sound; they speak softly and request the same from those they speak with. Their territories span vast swaths of the wood, making them ideal allies for hunters or treasure seekers who would otherwise become lost in the dense trees. But porachas are nothing if not fickle, and typically demand inscrutable favors in return for their aid, such as the planting of a rare sapling or the clearing of an invasive monster species. Any attempt to coerce or trick a poracha into service is ill advised, for these sacred beasts have many friends among the kami as well as others of their kind. Though they generally don't travel in groups, porachas know where to find more of their kind in times of need, and an organized pack of porachas is a disorienting threat.</p>"
+        },
+        "Lesser Pusk": {
+            "name": "Lesser Pusk",
+            "publicNotes": "<p>Among the lowest and least powerful of all demons, the wretched pusks are just as vicious and cruel as their more powerful brethren. They happily vent their frustrations on anything weaker than themselves.</p>\n<p>Born from the souls of the slothful, these demons appear vaguely humanoid in appearance with awkward limbs and slack lumps of skin hanging from their frames. Supposedly, a single slothful soul of sufficient depravity and strength can spawn an entire horde of these creatures. However, as weaker demons, their lot in life is to suffer at the hands of more powerful Abyssal predators, and only a tiny number of pusks ever manage to become something more. For this reason, pusks are quite accommodating when summoned by mortals. They're usually content to work under conditions few other fiends would accept, although they'll still gladly turn on even the kindest of masters who show even the slightest hint of weakness.</p>\n<hr />\n<p>When a sinful mortal soul is judged and sent on to the Outer Rifts, it can become a deadly fiend\u2014a demon. Demons are living incarnations of sin\u2014be they classic sins like wrath or gluttony, or more \"specialized\" depravities like an obsession with torture or the act of treason or treachery. Once formed, a demon's driving goals are twofold\u2014the amassing of personal power, and the corruption of mortal souls to cause them to become tainted by sin. In this way demons ensure a never-ending supply of new demons to bolster their ever-growing ranks in the Outer Rifts.</p>\n<p>Demons are selfish and self-absorbed creatures, and most firmly believe that mortals only play at being more virtuous than fiends. They enjoy tempting mortals into damnation to both indulge their egos and swell their armies. Like many other fiends, one of the great rewards of this manipulation is fulfilling their hunger for souls. In their eyes, the primary use for these souls is to spawn new demons, who can serve as soldiers, slaves, pawns, or even currency for their more powerful masters.</p>",
+            "languagesDetails": "Telepathy 100 feet",
+            "items": {
+                "spellcastingEntry->Divine Innate Spells": {
+                    "name": "Divine Innate Spells"
+                }
+            }
+        },
+        "Norvix": {
+            "name": "Norvix",
+            "blurb": "Male human witch",
+            "items": {
+                "spellcastingEntry->Divine Prepared Spells": {
+                    "name": "Divine Prepared Spells"
+                },
+                "spellcastingEntry->Divine Focus Spells": {
+                    "name": "Divine Focus Spells"
+                },
+                "consumable->Scroll of Dispel Magic (Rank 2)": {
+                    "name": "Scroll of Dispel Magic (Rank 2)",
+                    "description": "<p>@UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic}</p><hr /><p>Casting a Spell from a scroll requires holding the scroll in one hand and activating it with a Cast a Spell activity using the normal number of actions for that spell.</p>\n<p>The spell must appear on your spell list. Because you're the one Casting the Spell, use your spell attack modifier and spell DC. The spell also gains the appropriate trait for your tradition (arcane, divine, occult, or primal).</p>\n<p>Any physical costs are provided when a scroll is created, so you don't need to provide them when casting from a scroll. If the spell requires a locus, you must have that locus to Cast the Spell from a scroll.</p>\n<hr />\n<p><em>Note: To create a scroll or wand of a specific spell, drag the spell from the compendium or compendium browser into the inventory of a PC, NPC, or loot actor.</em></p>"
+                }
+            }
+        },
+        "Norvix (3-4)": {
+            "name": "Norvix (3-4)",
+            "blurb": "Male human witch",
+            "items": {
+                "spellcastingEntry->Divine Prepared Spells": {
+                    "name": "Divine Prepared Spells"
+                },
+                "spellcastingEntry->Divine Focus Spells": {
+                    "name": "Divine Focus Spells"
+                },
+                "consumable->Scroll of Dispel Magic (Rank 3)": {
+                    "name": "Scroll of Dispel Magic (Rank 3)",
+                    "description": "<p>@UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic}</p><hr /><p>Casting a Spell from a scroll requires holding the scroll in one hand and activating it with a Cast a Spell activity using the normal number of actions for that spell.</p>\n<p>The spell must appear on your spell list. Because you're the one Casting the Spell, use your spell attack modifier and spell DC. The spell also gains the appropriate trait for your tradition (arcane, divine, occult, or primal).</p>\n<p>Any physical costs are provided when a scroll is created, so you don't need to provide them when casting from a scroll. If the spell requires a locus, you must have that locus to Cast the Spell from a scroll.</p>\n<hr />\n<p><em>Note: To create a scroll or wand of a specific spell, drag the spell from the compendium or compendium browser into the inventory of a PC, NPC, or loot actor.</em></p>"
+                }
+            }
+        },
+        "Rasping Cicada": {
+            "name": "Rasping Cicada",
+            "publicNotes": "<p>These small insects are a nuisance and danger to small villages within Brevoy, taking over entire forests and blending in with the foliage. Also known as calling beetles, due to their ability to mimic and repeat the voices of their previous victims, crying cicadas wait for passersby to lure into the trees, fascinating their victims with their cries before fluttering their wings to release toxic dust. Once a target is near death, crying cicadas will take flight from the trees and land on the body to feed.</p>\n<p>The scale dust of crying cicadas can be turned into an effective ingested poison, but obtaining a cicada and harvesting these scales is so dangerous that most would-be poisoners simply die in the process. Even finding the insects is dangerous enough; crying cicadas' natural stealth and dark coloration make them difficult to locate among the trees of a forest, and following their cries often leads one to fall victim to the very creatures they're hunting.</p>\n<p>The longer a colony of crying cicadas stays in a forest, the wider their collection of cries grows. Often, a young colony will be able to replicate only the sounds of small, dying creatures, but larger, more established colonies will have the ability to mimic the sounds of children and dragons.</p>",
+            "blurb": "Variant crying cicada",
+            "sensesDetails": "darkvision"
+        },
+        "Scythe Blades": {
+            "name": "Scythe Blades",
+            "descriptionHazard": "<p>Two blades, each hidden in a 15-foot-long ceiling groove, are both connected to a trip wire.</p>",
+            "disable": "<p>@Check[type:thievery|dc:21] (trained) to disable each blade</p>",
+            "reset": "<p>The trap resets after 15 minutes.</p>",
+            "stealth": "<p>(trained)</p>",
+            "items": {
+                "action->Falling Scythes": {
+                    "name": "Falling Scythes",
+                    "description": "<p><strong>Trigger</strong> The trip wire attached to the door is pulled or severed</p><hr /><p><strong>Effect</strong> Both blades swing down, each one Striking all creatures under the ceiling grooves.</p>"
+                }
+            }
+        },
+        "Spear Launcher": {
+            "name": "Spear Launcher",
+            "descriptionHazard": "<p>A wall socket loaded with a spear connects to a floor tile in one 5-foot square.</p>",
+            "disable": "<p>@Check[type:thievery|dc:18] (trained) on the floor tile or wall socket</p>",
+            "stealth": "<p>(trained)</p>",
+            "items": {
+                "action->Spear": {
+                    "name": "Spear",
+                    "description": "<p><strong>Trigger</strong> Pressure is applied to the floor tile in front of the door</p><hr /><p><strong>Effect</strong> The trap shoots a spear, making a Strike against the creature or object on the floor tile.</p>"
+                }
+            }
+        }
+    },
+    "mapping": {
+        "publicNotes": "system.details.publicNotes",
+        "privateNotes": "system.details.privateNotes",
+        "acDetails": "system.attributes.ac.details",
+        "blurb": "system.details.blurb",
+        "hpDetails": "system.attributes.hp.details",
+        "allSavesBonus": "system.attributes.allSaves.value",
+        "speedsDetails": "system.attributes.speed.details",
+        "sensesDetails": "system.perception.details",
+        "languagesDetails": "system.details.languages.details",
+        "descriptionHazard": "system.details.description",
+        "disable": "system.details.disable",
+        "reset": "system.details.reset",
+        "routine": "system.details.routine",
+        "stealth": "system.attributes.stealth.details",
+        "items": {
+            "converter": "translateActorItems",
+            "path": "items"
+        }
+    }
+}
