@@ -1,6 +1,150 @@
 {
     "label": "Pfs-Season-6-Bestiary",
     "entries": {
+        "Abendego's Squall (1-2)": {
+            "name": "Abendego's Squall (1-2)",
+            "descriptionHazard": "<p>A massive orca known as Abendego\u2019s Squall leaps from the water. Its mouth opens to snap against any part of the ship that it can reach.</p>",
+            "disable": "<p>@Check[type:medicine|dc:23|showdc:gm]{Medicine (trained)} to remove the harpoon, @Check[type:nature|dc:17|showdc:gm]{Nature (trained)} to calm the orca, or @Check[type:intimidation|dc:20|showdc:gm]{Intimidation (trained)} to scare the orca away; two total successes are required to subdue the orca</p>",
+            "reset": "<p>The orca returns to hunt down the <em>Snapdragon</em> after 8 hours.</p>",
+            "routine": "<p><span class=\"action-glyph\">d</span> Abendego\u2019s Squall Leaps over the <em>Snapdragon</em> with each action. When it lands, it deals @Damage[1] damage to the <em>Snapdragon</em>. All creatures on the deck take @Damage[1d8[bludgeoning]] damage and must attempt a @Check[type:reflex|dc:20|showdc:gm]{Reflex save}.</p><hr><p><strong>Critical Success</strong> The target is unaffected.</p><p><strong>Success</strong> The target takes half damage.</p><p><strong>Failure</strong> The target takes full damage and is @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{clumsy 1} until the end of its next turn.</p><p><strong>Critical Failure</strong> The target takes double damage and is clumsy 2 until the end of its next turn.</p><hr><p><strong>Speed</strong> 30 feet</p>",
+            "items": {
+                "action->Thar She Blows": {
+                    "name": "Thar She Blows",
+                    "description": "<p><strong>Trigger</strong> Abendego\u2019s Squall matches speed with the <em>Snapdragon</em></p>\n<p><strong>Effect</strong> The orca leaps across the <em>Snapdragon</em> and tears its main mast from the deck in the process. This deals @Damage[30] damage to the <em>Snapdragon</em>. All creatures on deck take @Damage[1d8[bludgeoning]] damage from the shrapnel and must attempt a @Check[type:reflex|dc:20|showdc:gm|basic:true]{basic Reflex save}. Abendego\u2019s Squall rolls initiative.</p>"
+                }
+            }
+        },
+        "Abendego's Squall (3-4)": {
+            "name": "Abendego's Squall (3-4)",
+            "descriptionHazard": "<p>A massive orca known as Abendego\u2019s Squall leaps from the water. Its mouth opens to snap against any part of the ship that it can reach.</p>",
+            "disable": "<p>@Check[type:medicine|dc:20|showdc:gm]{Medicine (trained)} to remove the harpoon, @Check[type:nature|dc:21|showdc:gm]{Nature (trained)} to calm the orca, or @Check[type:intimidation|dc:23|showdc:gm]{Intimidation (trained)} to scare the orca away; two total successes are required to subdue the orca</p>",
+            "reset": "<p>The orca returns to hunt down the <em>Snapdragon</em> after 8 hours.</p>",
+            "routine": "<p><span class=\"action-glyph\">d</span> Abendego\u2019s Squall thrashes against the hull of the <em>Snapdragon</em>. With each action, it makes a flipper Strike against a PC adjacent to the railing. Whenever it makes a flipper Strike, it also deals its Strike damage to the ship whether or not the Strike was successful.</p><p><strong>Speed</strong> 30 feet</p>",
+            "items": {
+                "action->Thar She Blows": {
+                    "name": "Thar She Blows",
+                    "description": "<p><strong>Trigger</strong> Abendego\u2019s Squall matches speed with the <em>Snapdragon</em></p>\n<p><strong>Effect</strong> The orca leaps across the <em>Snapdragon</em> and tears its main mast from the deck in the process. This deals @Damage[30] damage to the <em>Snapdragon</em>. All creatures on deck take @Damage[2d8[bludgeoning]] damage from the shrapnel and must attempt a @Check[type:reflex|dc:20|showdc:gm|basic:true]{basic Reflex save}. Abendego\u2019s Squall rolls initiative.</p>"
+                }
+            }
+        },
+        "Abendego's Squall (5-6)": {
+            "name": "Abendego's Squall (5-6)",
+            "descriptionHazard": "<p>A massive orca known as Abendego\u2019s Squall leaps from the water. Its mouth opens to snap against any part of the ship that it can reach.</p>",
+            "disable": "<p>@Check[type:medicine|dc:23|showdc:gm]{Medicine (expert)} to remove the harpoon, @Check[type:nature|dc:25|showdc:gm]{Nature (trained)} to calm the orca, or @Check[type:intimidation|dc:27|showdc:gm]{Intimidation (expert)} to scare the orca away; two total successes are required to subdue the orca</p>",
+            "reset": "<p>The orca returns to hunt down the <em>Snapdragon</em> after 8 hours.</p>",
+            "routine": "<p><span class=\"action-glyph\">d</span> Abendego\u2019s Squall thrashes against the hull of the <em>Snapdragon</em>. With each action, it makes a flipper Strike against a PC adjacent to the railing. Whenever it makes a flipper Strike, it also deals its Strike damage to the ship whether or not the Strike was successful.</p><p><strong>Speed</strong> 30 feet</p>",
+            "items": {
+                "action->Thar She Blows": {
+                    "name": "Thar She Blows",
+                    "description": "<p><strong>Trigger</strong> Abendego\u2019s Squall matches speed with the <em>Snapdragon</em></p>\n<p><strong>Effect</strong> The orca leaps across the <em>Snapdragon</em> and tears its main mast from the deck in the process. This deals @Damage[30] damage to the <em>Snapdragon</em>. All creatures on deck take @Damage[(4d8+4)[bludgeoning]] damage from the shrapnel and must attempt a @Check[type:reflex|dc:25|showdc:gm|basic:true]{basic Reflex save}. Abendego\u2019s Squall rolls initiative.</p>"
+                }
+            }
+        },
+        "Abendego's Squall (7-8)": {
+            "name": "Abendego's Squall (7-8)",
+            "descriptionHazard": "<p>A massive orca known as Abendego\u2019s Squall leaps from the water. Its mouth opens to snap against any part of the ship that it can reach.</p>",
+            "disable": "<p>@Check[type:medicine|dc:23|showdc:gm]{Medicine (expert)} to remove the harpoon, @Check[type:nature|dc:23|showdc:gm]{Nature (trained)}, @Check[type:intimidation|dc:23|showdc:gm]{Intimidation (expert)} to scare the orca away; two total successes are required to subdue the orca</p>",
+            "reset": "<p>The orca returns to hunt down the <em>Snapdragon</em> after 8 hours.</p>",
+            "routine": "<p><span class=\"action-glyph\">d</span> Abendego\u2019s Squall Leaps over the <em>Snapdragon</em> with each action. When it lands, it deals @Damage[4] damage to the Snapdragon. All creatures on the deck take @Damage[(3d10+4)[bludgeoning]] damage and must attempt a @Check[type:reflex|dc:28|showdc:gm]{Reflex save}.</p><hr><p><strong>Critical Success</strong> The target is unaffected.</p><p><strong>Success</strong> The target takes half damage.</p><p><strong>Failure</strong> The target takes full damage and is clumsy 1 until the end of its next turn.</p><p><strong>Critical Failure</strong> The target takes double damage and is clumsy 2 until the end of its next turn.</p><hr><p><strong>Speed</strong> 30 feet</p>",
+            "items": {
+                "action->Thar She Blows": {
+                    "name": "Thar She Blows",
+                    "description": "<p><strong>Trigger</strong> Abendego\u2019s Squall matches speed with the <em>Snapdragon</em></p>\n<p><strong>Effect</strong> The orca leaps across the <em>Snapdragon</em> and tears its main mast from the deck in the process. This deals @Damage[30] damage to the <em>Snapdragon</em>. All creatures on deck take @Damage[(3d12+4)[bludgeoning]] damage from the shrapnel and must attempt a @Check[type:reflex|dc:28|showdc:gm|basic:true]{basic Reflex save}. Abendego\u2019s Squall rolls initiative.</p>"
+                }
+            }
+        },
+        "Accursed Cargo (1-2)": {
+            "name": "Accursed Cargo (1-2)",
+            "descriptionHazard": "<p>A wooden crate bearing a chthonic sigil glows with a power contained within it.</p>",
+            "disable": "<p>@Check[type:thievery|dc:18|showdc:gm]{Thievery (trained)} to open the crate with gradual release of its magical energy, or <em>@UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic}</em> (2nd rank; counteract DC 15) to dispel the rune</p>",
+            "stealth": "<p>Stealth DC 15 (trained) or <em>@UUID[Compendium.pf2e.spells-srd.Item.gpzpAAAJ1Lza2JVl]{Detect Magic}</em></p>",
+            "items": {
+                "action->Planar Depressurization": {
+                    "name": "Planar Depressurization",
+                    "description": "<p><strong>Trigger</strong> A creature touches the sigil on the crate</p>\n<p><strong>Effect</strong> The incomplete demonic pact causes the crate to explode. Bits of wood and energy from the Outer Rifts deal @Damage[(1d6+2)[bludgeoning],(1d6+2)[spirit]]{1d6+2 bludgeoning and 1d6+2 spirit damage} to all creatures within 10 feet of it (@Check[type:reflex|dc:18|basic:true]{basic Reflex}).</p>"
+                }
+            }
+        },
+        "Accursed Cargo (3-4)": {
+            "name": "Accursed Cargo (3-4)",
+            "descriptionHazard": "<p>A wooden crate bearing a chthonic sigil glows with a power contained within it.</p>",
+            "disable": "<p>@Check[type:thievery|dc:22|showdc:gm]{Thievery (trained)} to open the crate with gradual release of its magical energy, or <em>@UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic}</em> (2nd rank; counteract DC 18) to dispel the rune</p>",
+            "stealth": "<p>Stealth DC 18 (trained) or <em>@UUID[Compendium.pf2e.spells-srd.Item.gpzpAAAJ1Lza2JVl]{Detect Magic}</em></p>",
+            "items": {
+                "action->Planar Depressurization": {
+                    "name": "Planar Depressurization",
+                    "description": "<p><strong>Trigger</strong> A creature touches the sigil on the crate</p>\n<p><strong>Effect</strong> The incomplete demonic pact causes the crate to explode. Bits of wood and energy from the Outer Rifts deal @Damage[(2d8+5)[bludgeoning],(2d8+5)[spirit]]{2d8+5 bludgeoning and 2d8+5 spirit damage} to all creatures within 10 feet of it (@Check[type:reflex|dc:21|basic:true]{basic Reflex}).</p>"
+                }
+            }
+        },
+        "Accursed Cargo (5-6)": {
+            "name": "Accursed Cargo (5-6)",
+            "descriptionHazard": "<p>A wooden crate bearing a chthonic sigil glows with a power contained within it.</p>",
+            "disable": "<p>@Check[type:thievery|dc:25|showdc:gm]{Thievery (trained)} to open the crate with gradual release of its magical energy, or <em>@UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic}</em> (2nd rank; counteract DC 21) to dispel the rune</p>",
+            "stealth": "<p>Stealth DC 21 (trained) or <em>@UUID[Compendium.pf2e.spells-srd.Item.gpzpAAAJ1Lza2JVl]{Detect Magic}</em></p>",
+            "items": {
+                "action->Planar Depressurization": {
+                    "name": "Planar Depressurization",
+                    "description": "<p><strong>Trigger</strong> A creature touches the sigil on the crate</p>\n<p><strong>Effect</strong> The incomplete demonic pact causes the crate to explode. Bits of wood and energy from the Outer Rifts deal @Damage[(2d8+9)[bludgeoning],(2d8+9)[spirit]]{2d8+9 bludgeoning and 2d8+9 spirit damage} to all creatures within 10 feet of it (@Check[type:reflex|dc:24|basic:true]{basic Reflex}).</p>"
+                }
+            }
+        },
+        "Accursed Cargo (7-8)": {
+            "name": "Accursed Cargo (7-8)",
+            "descriptionHazard": "<p>A wooden crate bearing a chthonic sigil glows with a power contained within it.</p>",
+            "disable": "<p>@Check[type:thievery|dc:28|showdc:gm]{Thievery (trained)} to open the crate with gradual release of its magical energy, or <em>@UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic}</em> (2nd rank; counteract DC 24) to dispel the rune</p>",
+            "stealth": "<p>Stealth DC 24 (expert) or <em>@UUID[Compendium.pf2e.spells-srd.Item.gpzpAAAJ1Lza2JVl]{Detect Magic}</em></p>",
+            "items": {
+                "action->Planar Depressurization": {
+                    "name": "Planar Depressurization",
+                    "description": "<p><strong>Trigger</strong> A creature touches the sigil on the crate</p>\n<p><strong>Effect</strong> The incomplete demonic pact causes the crate to explode. Bits of wood and energy from the Outer Rifts deal @Damage[(2d10+11)[bludgeoning],(2d10+11)[spirit]]{2d10+11 bludgeoning and 2d10+11 spirit damage} to all creatures within 10 feet of it (@Check[type:reflex|dc:26|basic:true]{basic Reflex}).</p>"
+                }
+            }
+        },
+        "Averill Quint (1-2)": {
+            "name": "Averill Quint (1-2)",
+            "items": {
+                "consumable->Recently killed fish": {
+                    "name": "Recently killed fish",
+                    "description": "<p>Averill's raw fish</p>"
+                }
+            }
+        },
+        "Averill Quint (3-4)": {
+            "name": "Averill Quint (3-4)",
+            "items": {
+                "consumable->Recently killed fish": {
+                    "name": "Recently killed fish",
+                    "description": "<p>Averill's raw fish</p>"
+                }
+            }
+        },
+        "Averill Quint (5-6)": {
+            "name": "Averill Quint (5-6)",
+            "items": {
+                "consumable->Recently killed fish": {
+                    "name": "Recently killed fish",
+                    "description": "<p>Averill's raw fish</p>"
+                }
+            }
+        },
+        "Averill Quint (7-8)": {
+            "name": "Averill Quint (7-8)",
+            "items": {
+                "consumable->Recently killed fish": {
+                    "name": "Recently killed fish",
+                    "description": "<p>Averill's raw fish</p>"
+                }
+            }
+        },
+        "Blood Elegecide (Doom Demon)": {
+            "name": "Blood Elegecide (Doom Demon)",
+            "items": {
+                "spellcastingEntry->Divine Innate Spells": {
+                    "name": "Divine Innate Spells"
+                }
+            }
+        },
         "Crushing Crowd": {
             "name": "Crushing Crowd",
             "descriptionHazard": "<p>The crowd rushes forward, risking a stampede as everyone tries to fnd a safe exit.</p>",
@@ -25,14 +169,239 @@
                 }
             }
         },
+        "Damned Gargarthezul": {
+            "name": "Damned Gargarthezul",
+            "sensesDetails": "Darkvision"
+        },
+        "Damned Gargarthezul Captain": {
+            "name": "Damned Gargarthezul Captain",
+            "sensesDetails": "Darkvision"
+        },
+        "Damned Greater Gargarthezul": {
+            "name": "Damned Greater Gargarthezul",
+            "sensesDetails": "Darkvision"
+        },
+        "Damned Vescavor Swarm": {
+            "name": "Damned Vescavor Swarm",
+            "publicNotes": "<p>The most common and numerous vescavors are the raving swarms. If left alone and unchecked, many believe they would eventually consume themselves once everything else in the immediate vicinity was consumed. What is even more vexing than their hunger is their song. While it sounds like gibberish at first, once bitten, the song will drive people into chaos.</p>\n<hr />\n<p>These gluttonous green vermin travel from the Outer Rifts in an endless search for food. Along the way, these acrid wasps devour everything in sight. Not even the ground itself is spared from their appetite. While any single vescavor is no problem, they travel in swarms to overwhelm anything trying to stop them. In a truly unfortunate situation, several swarms will be gathered and led by a vescavor queen. These queens, while fearsome on their own, can drive their brood into a feeding rage unlike any other. Swarms found without a queen are directionless, destroying anything around them indiscriminately.</p>\n<p>Whenever a vescavor swarm is not eating, it gibbers mind-numbing songs from the fiends' dark world. Adapted to the shrieking jungles of their home plane, they issue a call that confuses and corrupts mortals.</p>\n<p>Philosophers who ponder the Outer Rifts often conjecture as to what kind of soul forms a vescavor. The idea of insect souls being sent to the Outer Rifts is often laughed off but never entirely dismissed. Some assume that they are demons of gluttony, plain and simple. Some of the more creative explanations of vescavor origins posit that all the bits of soul eaten up by attacking demons are what coalesce into these endless swarms. Such an explanation would account for how these endlessly feeding demons also seem to be endless in number.</p>",
+            "items": {
+                "action->Swarm Mind": {
+                    "name": "Swarm Mind"
+                },
+                "action->Devour All": {
+                    "name": "Devour All",
+                    "description": "<p>The swarm eat away the very earth beneath their feet. The swarms Strides. All squares they occupy during their movement becomes difficult terrain. Any creatures they move through must succeed a @Check[type:reflex|dc:23] save or fall @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone}.</p>"
+                },
+                "action->Maddening Gibbers": {
+                    "name": "Maddening Gibbers",
+                    "description": "<p>Each stupefied creature in the swarm's space must attempt a @Check[type:will|dc:23] saving throw as the swarm yammers the endless chorus of the Outer Rifts.</p><hr /><p><strong>Critical Success</strong> The target is unaffected and is temporarily immune to Maddening Gibbers for 1 minute.</p>\n<p><strong>Success</strong> The target is unaffected and is immune to Maddening Gibbers for 1 round.</p>\n<p><strong>Failure</strong> The target becomes @UUID[Compendium.pf2e.conditionitems.Item.yblD8fOR1J8rDwEQ]{Confused} for 1 round.</p>\n<p><strong>Critical Failure</strong> The target becomes confused for 1 round and can't target demons while confused in this way.</p>"
+                },
+                "action->Ravenous Bites": {
+                    "name": "Ravenous Bites",
+                    "description": "<p>Each enemy in the swarm's space takes @Damage[3d6+2[piercing]] damage (@Check[type:fortitude|dc:22|basic:true] save). A creature that fails its save is also @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 1} for 1 round.</p>"
+                }
+            }
+        },
+        "Demon Ark": {
+            "name": "Demon Ark",
+            "hpDetails": "(BT 30)",
+            "descriptionHazard": "<p>A demonic presence animates the ship carrying demon pirates.</p>",
+            "disable": "<p>@Check[type:religion|dc:23|showdc:gm]{Religion (trained)} to ward against demonic presence, @Check[type:arcana|dc:23|showdc:gm]{Arcana (trained)} or @Check[type:occultism|dc:23|showdc:gm]{Occultism (trained)} to weaken the demonic possession, @Check[type:intimidation|dc:23|showdc:gm]{Intimidation (trained)} to scare it away, or @Check[type:sailing-lore|dc:21|showdc:gm]{Sailing Lore (trained)} to confuse it; two total successes are required to disable the hazard.</p>",
+            "routine": "<p><span class=\"action-glyph\">2</span> The demon launch uses its actions on one of the following options (GM\u2019s choice). It loses one action from its routine if a PC succeeds at an attempt to Disable it or it reaches its Broken Threshold.</p><ul><li><p><strong>Broadside Blast</strong> <span class=\"action-glyph\">a</span> The demon launch makes a Chthonian cannon Strike.</p></li><li><p><strong>Demonic List</strong> <span class=\"action-glyph\">d</span> <strong>Effect</strong> The ship tosses and turns. Each creature in the hazard\u2019s area must make a @Check[type:reflex|dc:22|showdc:gm]{Reflex save}. On a failure, it is knocked @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone}; on a critical failure it also takes @Damage[4d8[bludgeoning]] damage.</p></li><li><p><strong>Heads Will Roll</strong> <span class=\"action-glyph\">a</span> It makes a bowsprit Strike.</p></li><li><p><strong>Sea Chantey</strong> <span class=\"action-glyph\">a</span> (auditory) All fiends within 60 feet gain a +1 status bonus to attack rolls, damage rolls, and saves against fear effects; all non-fiends within 60 feet must succeed at a @Check[type:will|dc:22|showdc:gm]{Will save} or become @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 1} (frightened 2 on a critical failure).</p></li></ul>\n<p>@UUID[Compendium.pf2e.campaign-effects.Item.GAuA1XLLO4vkF3OJ]{Effect: Sea Chantey}</p>"
+        },
+        "Demon Launch": {
+            "name": "Demon Launch",
+            "hpDetails": "(BT 15)",
+            "descriptionHazard": "<p>A demonic presence animates the ship carrying demon pirates.</p>",
+            "disable": "<p>@Check[type:religion|dc:17|showdc:gm]{Religion (trained)} to ward against demonic presence, @Check[type:arcana|dc:17|showdc:gm]{Arcana (trained)} or @Check[type:occultism|dc:17|showdc:gm]{Occultism (trained)} to weaken the demonic possession, @Check[type:intimidation|dc:17|showdc:gm]{Intimidation (trained)} to scare it away, or @Check[type:sailing-lore|dc:14|showdc:gm]{Sailing Lore (trained)} to confuse it; two total successes are required to disable the hazard.</p>",
+            "routine": "<p><span class=\"action-glyph\">2</span> The demon launch uses its actions on one of the following options (GM\u2019s choice). It loses one action from its routine if a PC succeeds at an attempt to Disable it or it reaches its Broken Threshold.</p><ul><li><p><strong>Broadside Blast</strong> <span class=\"action-glyph\">a</span> The demon launch makes a Chthonian cannon Strike.</p></li><li><p><strong>Demonic List</strong> <span class=\"action-glyph\">d</span> Effect The ship tosses and turns. Each creature in the hazard\u2019s area must make a @Check[type:reflex|dc:17|showdc:gm]{Reflex save}. On a failure, it is knocked @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone}; on a critical failure it also takes @Damage[1d6[bludgeoning]] damage.</p></li><li><p><strong>Heads Will Roll</strong> <span class=\"action-glyph\">a</span> It makes a bowsprit Strike.</p></li><li><p><strong>Sea Chantey</strong> <span class=\"action-glyph\">a</span> (auditory) All fiends within 60 feet gain a +1 status bonus to attack rolls, damage rolls, and saves against fear effects; all non-fiends within 60 feet must succeed at a @Check[type:will|dc:17|showdc:gm]{Will save} or become @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 1} (frightened 2 on a critical failure).</p></li><li><p>@UUID[Compendium.pf2e.campaign-effects.Item.GAuA1XLLO4vkF3OJ]{Effect: Sea Chantey}</p></li></ul>"
+        },
+        "Demon Ship": {
+            "name": "Demon Ship",
+            "hpDetails": "(BT 25)",
+            "descriptionHazard": "<p>Something animates a ship carrying demon pirates.</p>",
+            "disable": "<p>@Check[type:religion|dc:20|showdc:gm]{Religion (trained)} to ward against demonic presence, @Check[type:arcana|dc:20|showdc:gm]{Arcana (trained)} or @Check[type:occultism|dc:20|showdc:gm]{Occultism (trained)} to weaken the demonic possession, @Check[type:intimidation|dc:20|showdc:gm]{Intimidation (trained)} to scare it away, or @Check[type:sailing-lore|dc:18|showdc:gm]{Sailing Lore (trained)} to confuse it; two total successes are required to disable the hazard.</p>",
+            "routine": "<p><span class=\"action-glyph\">2</span> The demon launch uses its actions on one of the following options (GM\u2019s choice). It loses one action from its routine if a PC succeeds at an attempt to Disable it or it reaches its Broken Threshold.</p><ul><li><p><strong>Broadside Blast</strong> <span class=\"action-glyph\">a</span> The demon launch makes a Chthonian cannon Strike.</p></li><li><p><strong>Demonic List</strong> <span class=\"action-glyph\">d</span> Effect The ship tosses and turns. Each creature in the hazard\u2019s area must make a @Check[type:reflex|dc:20|showdc:gm]{Reflex save}. On a failure, it is knocked @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone}; on a critical failure it also takes @Damage[2d10[bludgeoning]] damage.</p></li><li><p><strong>Heads Will Roll</strong> <span class=\"action-glyph\">a</span> It makes a bowsprit Strike.</p></li><li><p><strong>Sea Chantey</strong> <span class=\"action-glyph\">a</span> (auditory) All fiends within 60 feet gain a +1 status bonus to attack rolls, damage rolls, and saves against fear effects; all non-fiends within 60 feet must succeed at a @Check[type:will|dc:20|showdc:gm]{Will save} or become @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 1} (frightened 2 on a critical failure).</p></li></ul>\n<p>@UUID[Compendium.pf2e.campaign-effects.Item.GAuA1XLLO4vkF3OJ]{Effect: Sea Chantey}</p>"
+        },
+        "Demonbred Bottlenose Dolphin": {
+            "name": "Demonbred Bottlenose Dolphin",
+            "publicNotes": "<p>The bottlenose dolphin is the most common and widespread species of dolphin. They are social predators who hunt shallow seas and rivers in large family groups called pods. Sailors are fond of bottlenose dolphins and frequently tell of how they've saved drowning mariners or protected crew from sharks with blows from their powerful snouts.</p>\n<hr />\n<p>Dolphins encompass a wide range of aquatic mammals, all of which are social, intelligent, and widespread throughout the world's oceans.</p>"
+        },
+        "Demonic Ocean Drake": {
+            "name": "Demonic Ocean Drake",
+            "publicNotes": "<p>Although the glistening scales and sleek, fin-like wings on these drakes give them an appearance reminiscent of river fish, they are actually distant relatives of the dragons that rule the oceans. While smaller than most drakes, river drakes are more than capable of plaguing river travelers and are equally at home above and below the water's surface. This flexibility allows them to catch a wide variety of prey, from fish and boggards to deer and the occasional ferry passenger.</p>\n<hr />\n<p>Ravenous, bestial, and driven by instinct, drakes are draconic monsters who bear a fraction of the terrifying might of the primal dragons they share evolutionary roots with. While they're weaker, slower, and less inclined toward reason than dragons, drakes are nonetheless a menace to creatures and settlements around them. Their propensity for forming raiding parties\u2014small social groups fittingly called \"rampages\"\u2014makes them all the more dangerous; a single rampage of river drakes can quickly lay waste to a waterside village, and roving rampages of desert drakes are a plague to caravan traders.</p>\n<p>Drakes share a number of physical characteristics that unite them as one species despite their wide variety of habitats and abilities. For example, drakes lack forearms, leaving them with their formidable jaws and thickscaled tails to use in close combat. Most drakes would rather avoid this, however, preferring to use their magical breath to wreak havoc in wide swaths from comfortable distances while flying overhead. Finally, all drakes have small reservoirs of their ancestral draconic power that they can tap into to perform incredible feats of speed.</p>\n<p>Different species of drakes rarely come into conflict. Part of this is their distinct habitats, but drakes are open to negotiating simple agreements between rampages. This courtesy does not extend to dragonets, which drakes happily take as prey. Solitary tamed drakes are also excluded from such agreements and considered free game if their tamer isn't strong enough to protect them.</p>\n<h3>Drake Eggs</h3>\n<p>While drake hides aren't any more valuable than those of similarly sized creatures, drake eggs are prized commodities. They are used as components in powerful spells as well as eaten by various cultures, but the most common use for drake eggs is hatching and rearing drakes to serve as mounts and guardians.</p>\n<p>A typical drake lays a clutch of 2d4 eggs every 5 years. Eggs hatch within 3 to 6 weeks, during which time they must be kept in conditions appropriate to their natural environment, perhaps the most difficult aspect of drake husbandry. While it is generally easy for breeders to incubate the eggs of desert or jungle drakes (which require mildly warm temperatures to hatch) or river drakes (which must be submerged in running water), the eggs of flame and frost drakes require extreme temperatures in order to hatch, which can be difficult to replicate safely.</p>\n<p>A drake egg is an object with Hardness 3, 5 HP, and no Broken Threshold. The coloration of drake eggs varies only slightly from one species to the next. A creature must succeed at a @Check[type:nature|dc:20] check, or a relevant DC 20 Lore check, to identify the drake species of a specific egg.</p>\n<p>Once a drake hatches, they imprint on the first creature that they see. A creature imprinted on in this way can use Nature to Train and Command that drake. The market price of a drake egg varies depending on the type of drake and the exact legal situation. Because drakes are dangerous and intelligent creatures, many societies do not condone the trade of drake eggs and criminalize those who engage in it.</p>\n<p>It takes 2 years for a drake hatchling to grow to full size. A well-trained drake can make a fearsome mount or guardian, but many careless would-be drake trainers are devoured by their charges.</p>"
+        },
+        "Demonic River Drake": {
+            "name": "Demonic River Drake",
+            "publicNotes": "<p>Although the glistening scales and sleek, fin-like wings on these drakes give them an appearance reminiscent of river fish, they are actually distant relatives of the dragons that rule the oceans. While smaller than most drakes, river drakes are more than capable of plaguing river travelers and are equally at home above and below the water's surface. This flexibility allows them to catch a wide variety of prey, from fish and boggards to deer and the occasional ferry passenger.</p>\n<hr />\n<p>Ravenous, bestial, and driven by instinct, drakes are draconic monsters who bear a fraction of the terrifying might of the primal dragons they share evolutionary roots with. While they're weaker, slower, and less inclined toward reason than dragons, drakes are nonetheless a menace to creatures and settlements around them. Their propensity for forming raiding parties\u2014small social groups fittingly called \"rampages\"\u2014makes them all the more dangerous; a single rampage of river drakes can quickly lay waste to a waterside village, and roving rampages of desert drakes are a plague to caravan traders.</p>\n<p>Drakes share a number of physical characteristics that unite them as one species despite their wide variety of habitats and abilities. For example, drakes lack forearms, leaving them with their formidable jaws and thickscaled tails to use in close combat. Most drakes would rather avoid this, however, preferring to use their magical breath to wreak havoc in wide swaths from comfortable distances while flying overhead. Finally, all drakes have small reservoirs of their ancestral draconic power that they can tap into to perform incredible feats of speed.</p>\n<p>Different species of drakes rarely come into conflict. Part of this is their distinct habitats, but drakes are open to negotiating simple agreements between rampages. This courtesy does not extend to dragonets, which drakes happily take as prey. Solitary tamed drakes are also excluded from such agreements and considered free game if their tamer isn't strong enough to protect them.</p>\n<h3>Drake Eggs</h3>\n<p>While drake hides aren't any more valuable than those of similarly sized creatures, drake eggs are prized commodities. They are used as components in powerful spells as well as eaten by various cultures, but the most common use for drake eggs is hatching and rearing drakes to serve as mounts and guardians.</p>\n<p>A typical drake lays a clutch of 2d4 eggs every 5 years. Eggs hatch within 3 to 6 weeks, during which time they must be kept in conditions appropriate to their natural environment, perhaps the most difficult aspect of drake husbandry. While it is generally easy for breeders to incubate the eggs of desert or jungle drakes (which require mildly warm temperatures to hatch) or river drakes (which must be submerged in running water), the eggs of flame and frost drakes require extreme temperatures in order to hatch, which can be difficult to replicate safely.</p>\n<p>A drake egg is an object with Hardness 3, 5 HP, and no Broken Threshold. The coloration of drake eggs varies only slightly from one species to the next. A creature must succeed at a @Check[type:nature|dc:20] check, or a relevant DC 20 Lore check, to identify the drake species of a specific egg.</p>\n<p>Once a drake hatches, they imprint on the first creature that they see. A creature imprinted on in this way can use Nature to Train and Command that drake. The market price of a drake egg varies depending on the type of drake and the exact legal situation. Because drakes are dangerous and intelligent creatures, many societies do not condone the trade of drake eggs and criminalize those who engage in it.</p>\n<p>It takes 2 years for a drake hatchling to grow to full size. A well-trained drake can make a fearsome mount or guardian, but many careless would-be drake trainers are devoured by their charges.</p>"
+        },
+        "Elegecide (Doom Demon)": {
+            "name": "Elegecide (Doom Demon)",
+            "items": {
+                "spellcastingEntry->Divine Innate Spells": {
+                    "name": "Divine Innate Spells"
+                }
+            }
+        },
+        "Enava": {
+            "name": "Enava",
+            "publicNotes": "<p>Succubi are manifestations of the sin of destructive lust, and they are the most attractive of all demons\u2014as befits their role in seducing mortals to fall to sin. The concept of gender is fluid to a succubus, as they can adopt countless humanoid forms of any gender to aid in their goals. Most succubi have a feminine true form (incubi, which usually have a masculine true form, are a different kind of demon), but regardless of gender, a lust demon is supernaturally beautiful or handsome, but with curving horns, bat wings, sharp claws, and a sinuous tail.</p>\n<p>When disguised as a mortal humanoid in the Universe, a succubus whispers into the ears of mortals, urging them to pursue their darkest and most destructive desires and pushing them into depravity, using magic only if persuasion fails. While mortals often fixate on succubi's application of sexual lust, these demons are can easily exploit lust for power, knowledge, fame, or any other desire as easily as more carnal appetites. Their ability to infiltrate societies makes them excellent spies, assassins, and political saboteurs as well. Ultimately, the succubus enjoys all means of upending mortal culture.</p>\n<hr />\n<p>When a sinful mortal soul is judged and sent on to the Outer Rifts, it can become a deadly fiend\u2014a demon. Demons are living incarnations of sin\u2014be they classic sins like wrath or gluttony, or more \"specialized\" depravities like an obsession with torture or the act of treason or treachery. Once formed, a demon's driving goals are twofold\u2014the amassing of personal power, and the corruption of mortal souls to cause them to become tainted by sin. In this way demons ensure a never-ending supply of new demons to bolster their ever-growing ranks in the Outer Rifts.</p>\n<p>Demons are selfish and self-absorbed creatures, and most firmly believe that mortals only play at being more virtuous than fiends. They enjoy tempting mortals into damnation to both indulge their egos and swell their armies. Like many other fiends, one of the great rewards of this manipulation is fulfilling their hunger for souls. In their eyes, the primary use for these souls is to spawn new demons, who can serve as soldiers, slaves, pawns, or even currency for their more powerful masters.</p>",
+            "allSavesBonus": "+1 status to all saves vs. magic",
+            "languagesDetails": "three additional mortal languages, Telepathy 100 feet, Truespeech",
+            "items": {
+                "spellcastingEntry->Divine Innate Spells": {
+                    "name": "Divine Innate Spells"
+                }
+            }
+        },
         "Experienced Homunculus": {
             "name": "Experienced Homunculus",
             "publicNotes": "<p>A homunculus is a tiny servitor construct created by a crafter to serve as a spy, scout, messenger, or assistant. When a crafter first begins to study the art of creating constructs, they often craft a homunculus first, since the creation process is simple and inexpensive due to a magical shortcut: the use of the creator's own blood. This forges a link between the homunculus and its master, causing the homunculus to gain a spark of the creator's intellect, as well as the same moral values and some of the creator's basic personality traits. Homunculi left to their own devices never stray far from their masters.</p>\n<p>In most cases, a homunculus doesn't survive the death of its master for long. Deprived of its creator, a homunculus loses focus and grows increasingly selfdestructive, and some even end up battering themselves to annihilation. Rarely, a homunculus with a slain master survives the trauma with its mind intact, often seeing itself as its deceased creator's child or successor and attempting to further its creator's legacy as best it can. In such cases, and if the homunculus was in close proximity to its master upon that creature's death, a portion of the dead master's soul \"infects\" the surviving homunculus as they pass on to the afterlife.</p>\n<p>This doesn't result in a truly soulbound homunculus, since only a fragment of the soul is left behind, but this is still enough to grant the homunculus a greater personality, free will of its own, and perhaps most importantly, the ability to speak. Over time, a few of these \"awakened\" homunculi even go so far as to become convinced that they are the reincarnation of their prior masters, although their actual personalities never quite reach the depth and complexity of a truly living creature. They are, at best, caricatures of the master, and at worst, they become awful, bitter-minded parodies of life itself. Still, a free-willed homunculus might pursue studies in its creator's class, becoming a unique creature with the abilities of that class if time and fortune permit.</p>\n<p>Homunculi are created from a mixture of clay, ash, mandrake root, spring water, and a pint of the creator's own blood. It is possible for a separate donor to provide the blood, but the process is more difficult.</p>",
             "blurb": "Variant homunculus",
             "languagesDetails": "(Can't Speak Any Language), Master Link"
         },
+        "Gargarthezul": {
+            "name": "Gargarthezul",
+            "sensesDetails": "Darkvision"
+        },
+        "Gargarthezul Captain": {
+            "name": "Gargarthezul Captain",
+            "sensesDetails": "Darkvision"
+        },
+        "Getidline (Riptide Demon)": {
+            "name": "Getidline (Riptide Demon)",
+            "items": {
+                "spellcastingEntry->Divine Innate Spells": {
+                    "name": "Divine Innate Spells"
+                }
+            }
+        },
+        "Greater Gargarthezul": {
+            "name": "Greater Gargarthezul",
+            "sensesDetails": "Darkvision"
+        },
+        "Haunting Elegecide (Doom Demon)": {
+            "name": "Haunting Elegecide (Doom Demon)",
+            "items": {
+                "spellcastingEntry->Divine Innate Spells": {
+                    "name": "Divine Innate Spells"
+                }
+            }
+        },
         "Hired Hand": {
             "name": "Hired Hand"
+        },
+        "History's Repetition (1-2)": {
+            "name": "History's Repetition (1-2)",
+            "descriptionHazard": "<p>Pebbles form into a hand the size of an ox, which reaches to crush anyone in the water.</p>",
+            "disable": "<p>@Check[type:thievery|dc:18|showdc:gm]{Thievery (trained)} to pick apart the pebbles, or @Check[type:warfare-lore|dc:15|showdc:gm]{Warfare Lore} to recognize and recreate the battle</p>",
+            "reset": "<p>24 hours</p>",
+            "items": {
+                "action->Crushing Hand": {
+                    "name": "Crushing Hand",
+                    "description": "<p><strong>Trigger</strong> Three or more creatures enter the submerged passage</p>\n<p><strong>Effect</strong> The hand reenacts its final battle against the invading demon. It makes a crushing power Strike against all creatures in the passage.</p>"
+                }
+            }
+        },
+        "History's Repetition (3-4)": {
+            "name": "History's Repetition (3-4)",
+            "descriptionHazard": "<p>Pebbles form into a hand the size of an ox, which reaches to crush anyone in the water.</p>",
+            "disable": "<p>@Check[type:thievery|dc:22|showdc:gm]{Thievery (trained)} to pick apart the pebbles, or @Check[type:warfare-lore|dc:18|showdc:gm]{Warfare Lore} to recognize and recreate the battle</p>",
+            "reset": "<p>24 hours</p>",
+            "items": {
+                "action->Crushing Hand": {
+                    "name": "Crushing Hand",
+                    "description": "<p><strong>Trigger</strong> Three or more creatures enter the submerged passage</p>\n<p><strong>Effect</strong> The hand reenacts its final battle against the invading demon. It makes a crushing power Strike against all creatures in the passage.</p>"
+                }
+            }
+        },
+        "History's Repetition (5-6)": {
+            "name": "History's Repetition (5-6)",
+            "descriptionHazard": "<p>Pebbles form into a hand the size of an ox, which reaches to crush anyone in the water.</p>",
+            "disable": "<p>@Check[type:thievery|dc:25|showdc:gm]{Thievery (trained)} to pick apart the pebbles, or @Check[type:warfare-lore|dc:21|showdc:gm]{Warfare Lore (trained)} to recognize and recreate the battle</p>",
+            "reset": "<p>24 hours</p>",
+            "stealth": "<p>Stealth DC 21 (expert)</p>",
+            "items": {
+                "action->Crushing Hand": {
+                    "name": "Crushing Hand",
+                    "description": "<p><strong>Trigger</strong> Three or more creatures enter the submerged passage</p>\n<p><strong>Effect</strong> The hand reenacts its final battle against the invading demon. It makes a crushing power Strike against all creatures in the passage.</p>"
+                }
+            }
+        },
+        "History's Repetition (7-8)": {
+            "name": "History's Repetition (7-8)",
+            "descriptionHazard": "<p>Pebbles form into a hand the size of an ox, which reaches to crush anyone in the water.</p>",
+            "disable": "<p>@Check[type:thievery|dc:28|showdc:gm]{Thievery (expert)} to pick apart the pebbles, or @Check[type:warfare-lore|dc:24|showdc:gm]{Warfare Lore (trained)} to recognize and recreate the battle</p>",
+            "reset": "<p>24 hours</p>",
+            "stealth": "<p>Stealth DC 24 (expert)</p>",
+            "items": {
+                "action->Crushing Hand": {
+                    "name": "Crushing Hand",
+                    "description": "<p><strong>Trigger</strong> Three or more creatures enter the submerged passage</p>\n<p><strong>Effect</strong> The hand reenacts its final battle against the invading demon. It makes a crushing power Strike against all creatures in the passage.</p>"
+                }
+            }
+        },
+        "Hostile Architecture (1-2)": {
+            "name": "Hostile Architecture (1-2)",
+            "descriptionHazard": "<p>The sigils on the door\u2019s frame glow with an amber light, which collects in a facet over the center of the door.</p>",
+            "disable": "<p>@Check[type:religion|dc:14|showdc:gm]{Religion (trained)} to strategically destroy the runes, @Check[type:thievery|dc:15|showdc:gm]{Thievery} to disrupt the beam from collecting the facet, or <em>@UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic}</em> (1st level, counteract DC 15) to dispel the rune</p>",
+            "reset": "<p>The hostile architecture resets after being exposed to the light of a blue moon.</p>",
+            "routine": "<p><span class=\"action-glyph\">a</span> The hostile architecture fires its aversion beam on a creature that is sanctified holy. If there are no sanctified holy creatures, it instead fires its beam on the nearest non-demon creature.</p>",
+            "items": {
+                "action->Aversion Beam": {
+                    "name": "Aversion Beam",
+                    "description": "<p><strong>Trigger</strong> A non-demon creature comes within 15 feet of the hostile architecture</p>\n<p><strong>Effect</strong> The hostile architecture shines the aversion beam on the triggering creature, and then rolls initiative. The triggering creature must attempt a @Check[type:will|dc:18|showdc:gm]{Will save}.</p><hr /><p><strong>Critical Success</strong> The target is immune to the trap for 1 minute.</p>\n<p><strong>Success</strong> The target is unaffected.</p>\n<p><strong>Failure</strong> The target is @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 1}.</p>\n<p><strong>Critical Failure</strong> The target is frightened 3 and @UUID[Compendium.pf2e.conditionitems.Item.sDPxOjQ9kx2RZE8D]{Fleeing}.</p><hr />"
+                }
+            }
+        },
+        "Hostile Architecture (3-4)": {
+            "name": "Hostile Architecture (3-4)",
+            "descriptionHazard": "<p>The sigils on the door\u2019s frame glow with an amber light, which collects in a facet over the center of the door.</p>",
+            "disable": "<p>@Check[type:religion|dc:17|showdc:gm]{Religion (trained)} to strategically destroy the runes, @Check[type:thievery|dc:18|showdc:gm]{Thievery} to disrupt the beam from collecting the facet, or <em>@UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic}</em> (2nd level, counteract DC 18) to dispel the rune</p>",
+            "reset": "<p>The hostile architecture resets after being exposed to the light of a blue moon.</p>",
+            "routine": "<p><span class=\"action-glyph\">a</span> The hostile architecture fires its aversion beam on a creature that is sanctified holy. If there are no sanctified holy creatures, it instead fires its beam on the nearest non-demon creature.</p>",
+            "items": {
+                "action->Aversion Beam": {
+                    "name": "Aversion Beam",
+                    "description": "<p><strong>Trigger</strong> A non-demon creature comes within 15 feet of the hostile architecture</p>\n<p><strong>Effect</strong> The hostile architecture shines the aversion beam on the triggering creature, and then rolls initiative. The triggering creature must attempt a @Check[type:will|dc:21|showdc:gm]{Will save}.</p><hr /><p><strong>Critical Success</strong> The target is immune to the trap for 1 minute.</p>\n<p><strong>Success</strong> The target is unaffected.</p>\n<p><strong>Failure</strong> The target is @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 1}.</p>\n<p><strong>Critical Failure</strong> The target is frightened 3 and @UUID[Compendium.pf2e.conditionitems.Item.sDPxOjQ9kx2RZE8D]{Fleeing}.</p><hr />"
+                }
+            }
+        },
+        "Hostile Architecture (5-6)": {
+            "name": "Hostile Architecture (5-6)",
+            "descriptionHazard": "<p>The sigils on the door\u2019s frame glow with an amber light, which collects in a facet over the center of the door.</p>",
+            "disable": "<p>@Check[type:religion|dc:19|showdc:gm]{Religion (trained)} to strategically destroy the runes, @Check[type:thievery|dc:21|showdc:gm]{Thievery (trained)} to disrupt the beam from collecting the facet, or <em>@UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic}</em> (3rd rank, counteract DC 21) to dispel the rune</p>",
+            "reset": "<p>The hostile architecture resets after being exposed to the light of a blue moon.</p>",
+            "routine": "<p><span class=\"action-glyph\">a</span> The hostile architecture fires its aversion beam on a creature that is sanctified holy. If there are no sanctified holy creatures, it instead fires its beam on the nearest non-demon creature.</p>",
+            "stealth": "<p>Stealth +15 (expert)</p>",
+            "items": {
+                "action->Aversion Beam": {
+                    "name": "Aversion Beam",
+                    "description": "<p><strong>Trigger</strong> A non-demon creature comes within 15 feet of the hostile architecture</p>\n<p><strong>Effect</strong> The hostile architecture shines the aversion beam on the triggering creature, and then rolls initiative. The triggering creature must attempt a @Check[type:will|dc:24|showdc:gm]{Will save}.</p><hr /><p><strong>Critical Success</strong> The target is immune to the trap for 1 minute.</p>\n<p><strong>Success</strong> The target is unaffected.</p>\n<p><strong>Failure</strong> The target is @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 1}.</p>\n<p><strong>Critical Failure</strong> The target is frightened 3 and @UUID[Compendium.pf2e.conditionitems.Item.sDPxOjQ9kx2RZE8D]{Fleeing}.</p><hr />"
+                }
+            }
+        },
+        "Hostile Architecture (7-8)": {
+            "name": "Hostile Architecture (7-8)",
+            "descriptionHazard": "<p>The sigils on the door\u2019s frame glow with an amber light, which collects in a facet over the center of the door.</p>",
+            "disable": "<p>@Check[type:religion|dc:22|showdc:gm]{Religion (trained)} to strategically destroy the runes, @Check[type:thievery|dc:24|showdc:gm]{Thievery (expert)} to disrupt the beam from collecting the facet, or <em>@UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic}</em> (4th rank, counteract DC 24) to dispel the rune</p>",
+            "reset": "<p>The hostile architecture resets after being exposed to the light of a blue moon.</p>",
+            "routine": "<p><span class=\"action-glyph\">a</span> The hostile architecture fires its aversion beam on a creature that is sanctified holy. If there are no sanctified holy creatures, it instead fires its beam on the nearest non-demon creature.</p>",
+            "stealth": "<p>Stealth +18 (expert)</p>",
+            "items": {
+                "action->Aversion Beam": {
+                    "name": "Aversion Beam",
+                    "description": "<p><strong>Trigger</strong> A non-demon creature comes within 15 feet of the hostile architecture</p>\n<p><strong>Effect</strong> The hostile architecture shines the aversion beam on the triggering creature, and then rolls initiative. The triggering creature must attempt a @Check[type:will|dc:24|showdc:gm]{Will save}.</p><hr /><p><strong>Critical Success</strong> The target is immune to the trap for 1 minute.</p>\n<p><strong>Success</strong> The target is unaffected.</p>\n<p><strong>Failure</strong> The target is @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 1}.</p>\n<p><strong>Critical Failure</strong> The target is frightened 3 and @UUID[Compendium.pf2e.conditionitems.Item.sDPxOjQ9kx2RZE8D]{Fleeing}.</p><hr />"
+                }
+            }
+        },
+        "Immoral Gargarthezul": {
+            "name": "Immoral Gargarthezul",
+            "sensesDetails": "Darkvision"
+        },
+        "Immoral Gargarthezul Captain": {
+            "name": "Immoral Gargarthezul Captain",
+            "sensesDetails": "Darkvision"
         },
         "Lesser Poracha": {
             "name": "Lesser Poracha",
@@ -80,11 +449,75 @@
                 }
             }
         },
+        "Pathfinder Defender": {
+            "name": "Pathfinder Defender",
+            "publicNotes": "<p>Shadows that spend long amounts of time on the Netherworld and absorb its magic become greater shadows.</p>\n<hr />\n<p>The mysterious undead known as shadows lurk in dark places and feed on those who stray too far from the light.</p>",
+            "hpDetails": "void healing",
+            "items": {
+                "spellcastingEntry->Divine Innate Spells": {
+                    "name": "Divine Innate Spells"
+                }
+            }
+        },
+        "Pathfinder Guardian": {
+            "name": "Pathfinder Guardian",
+            "publicNotes": "<p>Wights are intelligent undead spawned through inescapable cycles of spite. This spite might come from their own malevolent will in life, or can be instilled by necromantic rituals, typically involving the desecration of burial sites. Wights usually haunt burial grounds, catacombs, or other places of the dead. Their hunger is targeted toward the living\u2014those whose pumping hearts and ruddy warmth inspire visceral hatred.</p>\n<p>As many types of wights exist as types of people from which they might be created. Hulking brutes, skittering sneaks, and cunning tinkers all make for different wights with different niches to fill. The environment, too, plays a part in determining a wight's special abilities and defenses. Frost wights, for instance, can be found in parts of the world where exposure is a common end and the resentment of being left alone in the wild is a common source of spite. Durable and sustained by void energy, wights can last in harsh environments without decaying the way some lesser undead do.</p>\n<p>A single wight can wreak significant havoc if it is compelled to rise from its tomb. Because creatures slain under a wight's curse can become wights as well, all it takes is a single wight and a handful of unlucky graveyard visitors to create a veritable horde of these undead. Thus, canny priests and adventurers know that the best solution to a wight problem is swift and total eradication. Care must be taken, though, to destroy wight spawn before attempting to destroy the parent wight, for spawn without a master gain the ability to create spawn of their own.</p>",
+            "hpDetails": "fueled by spite, void healing"
+        },
+        "Pathfinder Protector": {
+            "name": "Pathfinder Protector",
+            "publicNotes": "<p>Ghouls stalkers are ravenous undead who haunt graveyards and eat corpses.</p>\n<hr />\n<p>Few creatures are more ubiquitous to sinister locations such as lonely graveyards and ruined crypts than the flesh-eating undead known as ghouls.</p>",
+            "hpDetails": "void healing"
+        },
+        "Pathfinder Sentinel": {
+            "name": "Pathfinder Sentinel",
+            "publicNotes": "<p>When a creature dies, and for whatever reason its spirit is unable or unwilling to leave the site of its death, that spirit may manifest as a poltergeist: a restless, invisible spirit that is still able to manipulate physical objects. Many poltergeists perished in a way that resulted from or led to extreme emotional trauma.</p>",
+            "hpDetails": "void healing, rejuvenation",
+            "items": {
+                "spellcastingEntry->Occult Innate Spells": {
+                    "name": "Occult Innate Spells"
+                }
+            }
+        },
+        "Pusk (PFS 6-00)": {
+            "name": "Pusk (PFS 6-00)",
+            "publicNotes": "<p>Among the lowest and least powerful of all demons, the wretched pusks are just as vicious and cruel as their more powerful brethren. They happily vent their frustrations on anything weaker than themselves.</p>\n<p>Born from the souls of the slothful, these demons appear vaguely humanoid in appearance with awkward limbs and slack lumps of skin hanging from their frames. Supposedly, a single slothful soul of sufficient depravity and strength can spawn an entire horde of these creatures. However, as weaker demons, their lot in life is to suffer at the hands of more powerful Abyssal predators, and only a tiny number of pusks ever manage to become something more. For this reason, pusks are quite accommodating when summoned by mortals. They're usually content to work under conditions few other fiends would accept, although they'll still gladly turn on even the kindest of masters who show even the slightest hint of weakness.</p>\n<hr />\n<p>When a sinful mortal soul is judged and sent on to the Outer Rifts, it can become a deadly fiend\u2014a demon. Demons are living incarnations of sin\u2014be they classic sins like wrath or gluttony, or more \"specialized\" depravities like an obsession with torture or the act of treason or treachery. Once formed, a demon's driving goals are twofold\u2014the amassing of personal power, and the corruption of mortal souls to cause them to become tainted by sin. In this way demons ensure a never-ending supply of new demons to bolster their ever-growing ranks in the Outer Rifts.</p>\n<p>Demons are selfish and self-absorbed creatures, and most firmly believe that mortals only play at being more virtuous than fiends. They enjoy tempting mortals into damnation to both indulge their egos and swell their armies. Like many other fiends, one of the great rewards of this manipulation is fulfilling their hunger for souls. In their eyes, the primary use for these souls is to spawn new demons, who can serve as soldiers, slaves, pawns, or even currency for their more powerful masters.</p>",
+            "languagesDetails": "Telepathy 100 feet",
+            "items": {
+                "spellcastingEntry->Divine Innate Spells": {
+                    "name": "Divine Innate Spells"
+                }
+            }
+        },
         "Rasping Cicada": {
             "name": "Rasping Cicada",
             "publicNotes": "<p>These small insects are a nuisance and danger to small villages within Brevoy, taking over entire forests and blending in with the foliage. Also known as calling beetles, due to their ability to mimic and repeat the voices of their previous victims, crying cicadas wait for passersby to lure into the trees, fascinating their victims with their cries before fluttering their wings to release toxic dust. Once a target is near death, crying cicadas will take flight from the trees and land on the body to feed.</p>\n<p>The scale dust of crying cicadas can be turned into an effective ingested poison, but obtaining a cicada and harvesting these scales is so dangerous that most would-be poisoners simply die in the process. Even finding the insects is dangerous enough; crying cicadas' natural stealth and dark coloration make them difficult to locate among the trees of a forest, and following their cries often leads one to fall victim to the very creatures they're hunting.</p>\n<p>The longer a colony of crying cicadas stays in a forest, the wider their collection of cries grows. Often, a young colony will be able to replicate only the sounds of small, dying creatures, but larger, more established colonies will have the ability to mimic the sounds of children and dragons.</p>",
             "blurb": "Variant crying cicada",
             "sensesDetails": "darkvision"
+        },
+        "Sailor's Warning (1-2)": {
+            "name": "Sailor's Warning (1-2)",
+            "descriptionHazard": "<p>An illusory cyclops in oracular robes cries out a warning, but then dissolves into a violent phantasmal cyclops, which calls out for the Blind Formless Chaos That Lies Behind the Stars to accept his sacrifice. It then plunges an obsidian athame into a creature\u2019s chest, summoning a foul entity.</p>",
+            "disable": "<p>@Check[type:arcana|dc:14|showdc:gm]{Arcana} (trained) to repair Chamenaiti\u2019s magic, @Check[type:religion|dc:17|showdc:gm]{Religion} or @Check[type:occultism|dc:17|showdc:gm]{Occultism} (trained) to offset the prayer, or <em>@UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic}</em> (1st rank; counteract DC 14) to counteract the warning</p>",
+            "routine": "<p><span class=\"action-glyph\">a</span> Rubbery crimson tentacles appear from a rip in the air and grasp at all creatures in the area, dealing @Damage[1d4[bludgeoning]] damage (@Check[type:fortitude|dc:17|showdc:gm|basic:true]{basic Fortitude save}).</p>"
+        },
+        "Sailor's Warning (3-4)": {
+            "name": "Sailor's Warning (3-4)",
+            "descriptionHazard": "<p>An illusory cyclops in oracular robes cries out a warning, but then dissolves into a violent phantasmal cyclops, which calls out for the Blind Formless Chaos That Lies Behind the Stars to accept his sacrifice. It then plunges an obsidian athame into a creature\u2019s chest, summoning a foul entity.</p>",
+            "disable": "<p>@Check[type:arcana|dc:18|showdc:gm]{Arcana} (trained) to repair Chamenaiti\u2019s magic, @Check[type:religion|dc:20|showdc:gm]{Religion} or @Check[type:occultism|dc:20|showdc:gm]{Occultism} (trained) to offset the prayer, or <em>@UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic}</em> (2nd rank; counteract DC 18) to counteract the warning</p>",
+            "routine": "<p><span class=\"action-glyph\">a</span> Rubbery crimson tentacles appear from a rip in the air and grasp at all creatures in the area, dealing @Damage[1d8[bludgeoning], 1d8[acid]] damage (@Check[type:fortitude|dc:20|showdc:gm|basic:true]{basic Fortitude save}).</p>"
+        },
+        "Sailor's Warning (5-6)": {
+            "name": "Sailor's Warning (5-6)",
+            "descriptionHazard": "<p>An illusory cyclops in oracular robes cries out a warning, but then dissolves into a violent phantasmal cyclops, which calls out for the Blind Formless Chaos That Lies Behind the Stars to accept his sacrifice. It then plunges an obsidian athame into a creature\u2019s chest, summoning a foul entity.</p>",
+            "disable": "<p>@Check[type:arcana|dc:21|showdc:gm]{Arcana} (trained) to repair Chamenaiti\u2019s magic, @Check[type:religion|dc:23|showdc:gm]{Religion} or @Check[type:occultism|dc:23|showdc:gm]{Occultism} (trained) to offset the prayer, or <em>@UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic}</em> (3rd rank; counteract DC 21) to counteract the warning</p>",
+            "routine": "<p><span class=\"action-glyph\">a</span> Rubbery crimson tentacles appear from a rip in the air and grasp at all creatures in the area, dealing @Damage[1d6+3[bludgeoning], 1d6+3[acid]] damage (@Check[type:fortitude|dc:22|showdc:gm|basic:true]{basic Fortitude save}).</p>"
+        },
+        "Sailor's Warning (7-8)": {
+            "name": "Sailor's Warning (7-8)",
+            "descriptionHazard": "<p>An illusory cyclops in oracular robes cries out a warning, but then dissolves into a violent phantasmal cyclops, which calls out for the Blind Formless Chaos That Lies Behind the Stars to accept his sacrifice. It then plunges an obsidian athame into a creature\u2019s chest, summoning a foul entity.</p>",
+            "disable": "<p>@Check[type:arcana|dc:25|showdc:gm]{Arcana} (trained) to repair Chamenaiti\u2019s magic, @Check[type:religion|dc:27|showdc:gm]{Religion} or @Check[type:occultism|dc:27|showdc:gm]{Occultism} (trained) to offset the prayer, or <em>@UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic}</em> (4th rank; counteract DC 25) to counteract the warning</p>",
+            "routine": "<p><span class=\"action-glyph\">a</span> Rubbery crimson tentacles appear from a rip in the air and grasp at all creatures in the area, dealing @Damage[2d8[bludgeoning], 2d8[acid]] damage (@Check[type:fortitude|dc:25|showdc:gm|basic:true]{basic Fortitude save}).</p>"
         },
         "Scythe Blades": {
             "name": "Scythe Blades",
@@ -99,6 +532,38 @@
                 }
             }
         },
+        "Sharkskin": {
+            "name": "Sharkskin",
+            "languagesDetails": "special communication types"
+        },
+        "Singe (1-2)": {
+            "name": "Singe (1-2)",
+            "descriptionHazard": "<p>Singe\u2019s spirit lingers in the <em>Whippoorwill\u2019s</em> crow\u2019s nest, where it calls out warnings and shoots intruders.</p>",
+            "disable": "<p>@Check[type:pathfinder-society-lore|dc:17|showdc:gm]{Pathfinder Society Lore (trained)} to persuade Singe that you are Pathfinders or @Check[type:religion|dc:17|showdc:gm]{Religion (trained)} to perform rites to lay Singe to rest; two total successes are required to disable the haunt</p>",
+            "reset": "<p>The haunt deactivates 1 minute after all creatures leave the area but resets immediately thereafter.</p>",
+            "routine": "<p><span class=\"action-glyph\">d</span> Singe uses its first action(s) to make a long gun Strike against a random creature in the area. It uses its final action for Lookout\u2019s Warning. If the PCs successfully use Pathfinder Society Lore to Disable the haunt, Singe loses an action to make a long gun Strike.</p>"
+        },
+        "Singe (3-4)": {
+            "name": "Singe (3-4)",
+            "descriptionHazard": "<p>Singe\u2019s spirit lingers in the <em>Whippoorwill\u2019s</em> crow\u2019s nest, where it calls out warnings and shoots intruders.</p>",
+            "disable": "<p>@Check[type:pathfinder-society-lore|dc:20|showdc:gm]{Pathfinder Society Lore (trained)} to persuade Singe that you are Pathfinders or @Check[type:religion|dc:20|showdc:gm]{Religion (trained)} to perform rites to lay Singe to rest; two total successes are required to disable the haunt</p>",
+            "reset": "<p>The haunt deactivates 1 minute after all creatures leave the area but resets immediately thereafter.</p>",
+            "routine": "<p><span class=\"action-glyph\">d</span> Singe uses its first action(s) to make a long gun Strike against a random creature in the area. It uses its final action for Lookout\u2019s Warning. If the PCs successfully use Pathfinder Society Lore to Disable the haunt, Singe loses an action to make a long gun Strike.</p>"
+        },
+        "Singe (5-6)": {
+            "name": "Singe (5-6)",
+            "descriptionHazard": "<p>Singe\u2019s spirit lingers in the <em>Whippoorwill\u2019s</em> crow\u2019s nest, where it calls out warnings and shoots intruders.</p>",
+            "disable": "<p>@Check[type:pathfinder-society-lore|dc:23|showdc:gm]{Pathfinder Society Lore (trained)} to persuade Singe that you are Pathfinders or @Check[type:religion|dc:23|showdc:gm]{Religion (trained)} to perform rites to lay Singe to rest; two total successes are required to disable the haunt</p>",
+            "reset": "<p>The haunt deactivates 1 minute after all creatures leave the area but resets immediately thereafter.</p>",
+            "routine": "<p><span class=\"action-glyph\">d</span> Singe uses its first action(s) to make a long gun Strike against a random creature in the area. It uses its final action for Lookout\u2019s Warning. If the PCs successfully use Pathfinder Society Lore to Disable the haunt, Singe loses an action to make a long gun Strike.</p>"
+        },
+        "Singe (7-8)": {
+            "name": "Singe (7-8)",
+            "descriptionHazard": "<p>Singe\u2019s spirit lingers in the <em>Whippoorwill\u2019s</em> crow\u2019s nest, where it calls out warnings and shoots intruders.</p>",
+            "disable": "<p>@Check[type:pathfinder-society-lore|dc:27|showdc:gm]{Pathfinder Society Lore (trained)} to persuade Singe that you are Pathfinders or @Check[type:religion|dc:27|showdc:gm]{Religion (trained)} to perform rites to lay Singe to rest; two total successes are required to disable the haunt</p>",
+            "reset": "<p>The haunt deactivates 1 minute after all creatures leave the area but resets immediately thereafter.</p>",
+            "routine": "<p><span class=\"action-glyph\">d</span> Singe uses its first action(s) to make a long gun Strike against a random creature in the area. It uses its final action for Lookout\u2019s Warning. If the PCs successfully use Pathfinder Society Lore to Disable the haunt, Singe loses an action to make a long gun Strike.</p>"
+        },
         "Spear Launcher": {
             "name": "Spear Launcher",
             "descriptionHazard": "<p>A wall socket loaded with a spear connects to a floor tile in one 5-foot square.</p>",
@@ -108,6 +573,80 @@
                 "action->Spear": {
                     "name": "Spear",
                     "description": "<p><strong>Trigger</strong> Pressure is applied to the floor tile in front of the door</p><hr /><p><strong>Effect</strong> The trap shoots a spear, making a Strike against the creature or object on the floor tile.</p>"
+                }
+            }
+        },
+        "Weak Bottlenose Dolphin": {
+            "name": "Weak Bottlenose Dolphin",
+            "publicNotes": "<p>The bottlenose dolphin is the most common and widespread species of dolphin. They are social predators who hunt shallow seas and rivers in large family groups called pods. Sailors are fond of bottlenose dolphins and frequently tell of how they've saved drowning mariners or protected crew from sharks with blows from their powerful snouts.</p>\n<hr />\n<p>Dolphins encompass a wide range of aquatic mammals, all of which are social, intelligent, and widespread throughout the world's oceans.</p>"
+        },
+        "Weak Water Wisp": {
+            "name": "Weak Water Wisp",
+            "publicNotes": "<p>Water wisps are swimming spheres of foam and water, perpetually humming with a wash of soft sounds. They're gentle, nurturing, and quick to help anyone in need.</p>\n<hr />\n<p>Wisps are tiny elemental beings that emerged during the creation of the Elemental Planes. The first wisps roamed the Inner Sphere in shifting symphonies that traded members with their every meeting. These symphonies of free wisps created music out of their combined resonances, but when the evil Elemental Lords realized the value of the wisps' resonance, they captured whole symphonies for use as servants.</p>\n<p>Wisps attune to each other and to those they surround themselves with. This attunement makes them naturally supportive allies. Free wisps still roam the Inner Sphere and the Material Plane, but they're usually shy and hide themselves from strangers. However, they happily offer their service to those who show them kindness. They especially find themselves drawn to spellcasters who practice elemental magic; these wisps usually watch from afar but sometimes approach those who seem safe to become familiars or comrades.</p>\n<p>Free wisps who find one another become close almost immediately. They get especially excited when they find wisps of elements other than their own, showing none of the animosity some elementals exhibit toward other types. Instead, they join in an excited dance, emitting resonances that faintly echo the symphonies of ancient days.</p>",
+            "sensesDetails": "mist vision"
+        },
+        "Weak Xurgimoth": {
+            "name": "Weak Xurgimoth",
+            "publicNotes": "<p>The magic that flows through primal dragons can manifest more animalistic or bestial features in a given type of dragon. Notably among these are the massive paired horns of the horned dragon. While their bulky frames, natural coloration, and prominent ridged scales are all remarkable in their own way, it's the horns that are most obvious and striking at first glance. Horned dragons use their horns to impale their prey in a quick and brutal display of their might. They are generally contemplative and have a fixation on knowledge and self-discipline, traits belied by their bestial appearance. As a result, horned dragons are generally more open to speaking with outsiders.</p>\n<hr />\n<p>Dragons come in myriad forms, with many having magical abilities or connections to magic. Some dragons draw greater power from magic than others, allowing them to manifest abilities or alter their physiques with prolonged exposure to magic. These dragons become more powerful as they age and strengthen their connections with their magical origins. Scholars debate the classification of these dragons, with some preferring the name magical dragons and others using traditional dragons due to their connection to specific magical traditions. Regardless of their names, these dragons share a number of characteristics: their ability to tap into magical energies, intensified might and cunning as they grow older, and an inclination to hoard vast amounts of treasure and wealth.</p>",
+            "speedsDetails": "forest passage",
+            "items": {
+                "spellcastingEntry->Primal Innate Spells": {
+                    "name": "Primal Innate Spells"
+                }
+            }
+        },
+        "Whippoorwill Con Rit": {
+            "name": "Whippoorwill Con Rit",
+            "publicNotes": "<p>The con rit is a hulking aquatic centipede that has traded its hundreds of legs for just as many fins. This sea insect swims with a grace that is just as majestic as it is unnerving. The con rit is dark brown on its dorsal side and sickly yellow on its ventral surface. This makes it much more difficult to spot, whether looking from above or below. Its exoskeleton is as hard as iron, and the shifting of its plates makes an elongated, eerie ringing sound as it swims.</p>\n<p>Many once thought the con rit to be a dragon of some kind. This was due not only to its massive size but also to its ability to launch its venom in a concentrated blast. It would use this technique to shoot birds out of the sky or knock sailors off ships. Their movement through the water is also not entirely dissimilar to that of dragons. Those who seek out a con rit's lair in search of treasure are usually disappointed (when they aren't eaten alive by the huge insect).</p>\n<p>There are legends that a con rit, much like a phoenix, is reborn after its death. This, however, is not the case. A con rit will make a nest far below the surface of its territory, usually in underwater caves. Throughout its life, a con rit will lay thousands of eggs in its cave that will never hatch. The con rit will eat any egg that gets too old, but there are always large numbers of them remaining. When a con rit dies, it releases a strong-smelling chemical into the air and water that triggers the hatching process. The eggs will slowly crack open within the month, and hundreds of baby con rits will begin to fight each other for territory. By year's end, one will win and reach full maturity. This cycle is what has led to the legends of endless rebirth. Other stories say that every generation of the con rit is ever so slightly smaller, leading to tales of ancient con rits that were hundreds of feet long. However, the size of such legendary insects has yet to be confirmed by scholars who study such things.</p>"
+        },
+        "Whippoorwill Electric Eel": {
+            "name": "Whippoorwill Electric Eel",
+            "publicNotes": "<p>Usually found in freshwater rivers and lakes, an electric eel is not particularly aggressive, but its ability to stun predators and prey alike can be dangerous to larger creatures searching for their next meal. Electric eels are more closely related to catfish than to other eels.</p>\n<hr />\n<p>Although these long, narrow fish share similarities in appearance, eels are a diverse group of creatures.</p>"
+        },
+        "Whippoorwill Giant Moray Eel": {
+            "name": "Whippoorwill Giant Moray Eel",
+            "publicNotes": "<p>Giant moray eels dwell in warm, tropical waters and build lairs in narrow, twisting caves made of coral. Their size, speed, and powerful bite make them dangerous to divers and fishers. Giant moray eels have rubbery hides that secrete a layer of mucus, making them difficult to harm with some weapons.</p>\n<hr />\n<p>Although these long, narrow fish share similarities in appearance, eels are a diverse group of creatures.</p>"
+        },
+        "Whippoorwill Pathfinder Protector": {
+            "name": "Whippoorwill Pathfinder Protector",
+            "publicNotes": "<p>Ghouls stalkers are ravenous undead who haunt graveyards and eat corpses.</p>\n<hr />\n<p>Few creatures are more ubiquitous to sinister locations such as lonely graveyards and ruined crypts than the flesh-eating undead known as ghouls.</p>",
+            "hpDetails": "void healing"
+        },
+        "Whippoorwill Piranha Swarm": {
+            "name": "Whippoorwill Piranha Swarm",
+            "publicNotes": "<p>More teeth and fury than body, few fish command as much fear and anxiety as the piranha. They move almost exclusively in schools, overwhelming larger creatures with sheer numbers and ferocity. Piranhas aggress toward sudden disturbances in the water and can smell blood from far away. Harvested piranha teeth serve as excellent cutting tools.</p>\n<hr />\n<p>Swimming in vast shoals through open ocean underneath the sparkling sun, lurking deep in the muddy beds of rivers, or schooling in pristine lakes, fish are found nearly anywhere there is water.</p>",
+            "sensesDetails": "blood scent",
+            "items": {
+                "action->Blood Scent": {
+                    "name": "Blood Scent",
+                    "description": "<p>The piranha swarm can smell blood in the water from up to 1 mile away.</p>"
+                },
+                "action->Swarm Mind": {
+                    "name": "Swarm Mind"
+                },
+                "action->Feeding Frenzy": {
+                    "name": "Feeding Frenzy",
+                    "description": "<p>Each enemy in the swarm's space takes @Damage[(2d6-2)[piercing]] damage (@Check[type:reflex|dc:18|basic:true] save).</p>\n<p>A creature that fails the save also takes @Damage[1d6[bleed]] and takes a -2 circumstance penalty to their Reflex saves against Feeding Frenzy while this damage continues, as the piranhas' frenzy increases in intensity when they smell blood.</p>"
+                }
+            }
+        },
+        "Xurgimoth (7-8)": {
+            "name": "Xurgimoth (7-8)",
+            "publicNotes": "<p>The magic that flows through primal dragons can manifest more animalistic or bestial features in a given type of dragon. Notably among these are the massive paired horns of the horned dragon. While their bulky frames, natural coloration, and prominent ridged scales are all remarkable in their own way, it's the horns that are most obvious and striking at first glance. Horned dragons use their horns to impale their prey in a quick and brutal display of their might. They are generally contemplative and have a fixation on knowledge and self-discipline, traits belied by their bestial appearance. As a result, horned dragons are generally more open to speaking with outsiders.</p>\n<hr />\n<p>Dragons come in myriad forms, with many having magical abilities or connections to magic. Some dragons draw greater power from magic than others, allowing them to manifest abilities or alter their physiques with prolonged exposure to magic. These dragons become more powerful as they age and strengthen their connections with their magical origins. Scholars debate the classification of these dragons, with some preferring the name magical dragons and others using traditional dragons due to their connection to specific magical traditions. Regardless of their names, these dragons share a number of characteristics: their ability to tap into magical energies, intensified might and cunning as they grow older, and an inclination to hoard vast amounts of treasure and wealth.</p>",
+            "speedsDetails": "forest passage",
+            "items": {
+                "spellcastingEntry->Primal Innate Spells": {
+                    "name": "Primal Innate Spells"
+                }
+            }
+        },
+        "Young Horned Dragon (Xurgimoth)": {
+            "name": "Young Horned Dragon (Xurgimoth)",
+            "publicNotes": "<p>The magic that flows through primal dragons can manifest more animalistic or bestial features in a given type of dragon. Notably among these are the massive paired horns of the horned dragon. While their bulky frames, natural coloration, and prominent ridged scales are all remarkable in their own way, it's the horns that are most obvious and striking at first glance. Horned dragons use their horns to impale their prey in a quick and brutal display of their might. They are generally contemplative and have a fixation on knowledge and self-discipline, traits belied by their bestial appearance. As a result, horned dragons are generally more open to speaking with outsiders.</p>\n<hr />\n<p>Dragons come in myriad forms, with many having magical abilities or connections to magic. Some dragons draw greater power from magic than others, allowing them to manifest abilities or alter their physiques with prolonged exposure to magic. These dragons become more powerful as they age and strengthen their connections with their magical origins. Scholars debate the classification of these dragons, with some preferring the name magical dragons and others using traditional dragons due to their connection to specific magical traditions. Regardless of their names, these dragons share a number of characteristics: their ability to tap into magical energies, intensified might and cunning as they grow older, and an inclination to hoard vast amounts of treasure and wealth.</p>",
+            "speedsDetails": "forest passage",
+            "items": {
+                "spellcastingEntry->Primal Innate Spells": {
+                    "name": "Primal Innate Spells"
                 }
             }
         }
