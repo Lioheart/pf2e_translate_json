@@ -171,7 +171,8 @@ def process_files(folder, version, type_system):
 
                 keys = compendium.keys()
                 print('Klucze pliku JSON:', list(keys))
-                if 'flags' not in keys and type_system == 'system':
+                if '_id' not in keys and type_system == 'system':
+                    print('Inny plik, pomiń')
                     shutil.copy(file_path, version)
                     continue
 
@@ -179,7 +180,7 @@ def process_files(folder, version, type_system):
                 if 'color' in keys:
                     continue
                 try:
-                    name = compendium['flags']['core']['sourceId'].split('.')
+                    name = compendium['_stats']['compendiumSource'].split('.')
                     new_name = fr'{version}\{name[1]}.{name[2]}.json'
                 except KeyError:
                     new_name = fr'{version}\pf2e.{file}'
