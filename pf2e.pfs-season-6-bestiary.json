@@ -99,6 +99,18 @@
                 }
             }
         },
+        "Apple Turnover": {
+            "name": "Apple Turnover",
+            "descriptionHazard": "<p>A fruit merchant's cart has been poorly secured. The slightest careless bump on the way past is enough to knock it over and topple the fruit it carries all over the street.</p>",
+            "disable": "<p>If all the PCs succeed on a Perception check against the Stealth DC to spot the hazard, they're able to pass by that cart without triggering it. There's not enough time for PCs who succeed on this check to warn PCs who fail.</p>",
+            "stealth": "<ol><li><p>(trained)</p></li></ol>",
+            "items": {
+                "action->Topple": {
+                    "name": "Topple",
+                    "description": "<p><strong>Trigger</strong> A PC passes by the cart without succeeding on the Perception check against its Stealth DC</p><hr /><p><strong>Effect</strong> The cart tips, causing an avalanche of apples that pour over the PCs and onto the street. PCs who failed the Perception check against the hazard's Stealth DC are caught in the hazard must make their choice of a Reflex or Fortitude save, DC 19. On a successful save, they dodge the worst of the applefall and come away unscathed; on a failed save, they're battered by the falling apples and walk away @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 1} for the rest of the adventure.</p>\n<p>Triggering this hazard also accrues 1 AP for the party.</p>"
+                }
+            }
+        },
         "Averill Quint (1-2)": {
             "name": "Averill Quint (1-2)",
             "hpDetails": "void healing",
@@ -139,6 +151,11 @@
                 }
             }
         },
+        "Big Carnival Bear": {
+            "name": "Big Carnival Bear",
+            "publicNotes": "<p>This large and powerful omnivore inhabits forested hills. While it typically sustains itself on nuts, berries, fish, and small mammals, it's fiercely territorial and will chase off or kill any creature it views as competition. Grizzly bears are especially temperamental when their young are nearby. In combat, a grizzly bear often attempts to grab and maul its foe with surprising ferocity. It continues its assault until its foe seems like it is no longer a threat, though if the bear is hungry, it will not hesitate to feed.</p>\n<hr />\n<p>Bears are ferocious predators typically found in cold or temperate woodlands and hills. Many species of bear exist in addition to the two presented below, such as the smaller black bear or the arctic-dwelling polar bear.</p>",
+            "blurb": "Variant grizzly bear"
+        },
         "Blood Elegecide (Doom Demon)": {
             "name": "Blood Elegecide (Doom Demon)",
             "languagesDetails": "Telepathy 100 feet",
@@ -147,6 +164,75 @@
                     "name": "Divine Innate Spells"
                 }
             }
+        },
+        "Blood-Awakened Tree": {
+            "name": "Blood-Awakened Tree",
+            "publicNotes": "<p>Arboreal regents and other wielders of powerful primal magic grant temporary sentience to trees in order to protect the forest. Invested with a workable set of instincts and the ability to mobilize and attack, these awakened trees follow the commands of their master and fight to protect their home. The statistics below work just as well for foliage that has become animate via other methods, such as a mystical influence from another dimension, a capricious fey spirit, or the like.</p>\n<hr />\n<p>Arboreals are guardians of the forest and representatives of the trees. As long-lived as the woods they watch over, arboreals consider themselves parents and shepherds of trees rather than their gardeners. Consequently, while arboreals tend to be slow and methodical, they are terrifyingly swift when forced to fight in defense of the woods. Though they rarely seek out the companionship of short-lived folk\u2014even elves are fugacious in the eyes of arboreals\u2014and have an inherent distrust of change, arboreals have been known to tolerate those who seek to learn from their long-winded, rambling monologues, especially if such pupils also express a desire to protect the timberlands. Against those who threaten their realm, such as loggers eager to harvest lumber or settlers aiming to establish croplands or a town, arboreals' wrath is unwavering and devastating. Perhaps ironically, arboreals are gifted at tearing down what others build\u2014a trait that serves vengeful members of their kind well.</p>",
+            "languagesDetails": "(can't speak any language)"
+        },
+        "Blood-Soaked Flytrap": {
+            "name": "Blood-Soaked Flytrap",
+            "publicNotes": "<p>Snapping flytraps typically have two sets of tooth-edged leaves, each measuring 3 feet wide, at the end of 10-foot-long stalks.</p>\n<hr />\n<p>Flytraps eagerly feed on humanoids, monstrous insects, and larger prey.</p>",
+            "blurb": "Variant snapping flytrap"
+        },
+        "Blooddrunk Wild Dog": {
+            "name": "Blooddrunk Wild Dog",
+            "sensesDetails": "bloodscent"
+        },
+        "Bloodsick Wild Dog": {
+            "name": "Bloodsick Wild Dog",
+            "sensesDetails": "bloodscent"
+        },
+        "Bloodthirsty Apparitions": {
+            "name": "Bloodthirsty Apparitions",
+            "descriptionHazard": "<p>Deceased Puddles residents lash out at living creatures.</p>",
+            "disable": "<p>@Check[religion|dc:15] (trained) three times to banish the apparitions with prayers, or @Check[occultism|dc:18] (trained) once to commune with the spirits and convince them to pass on</p>",
+            "reset": "<p>The haunt re-forms after 1 hour. The haunt becomes disabled and doesn't reform 1 minute after the Puddles phantom is slain.</p>",
+            "routine": "<p>(1 action) The haunt's screams send biting supernatural rain around the area, dealing @Damage[(2d6+2)[piercing]] damage to all living creatures within 90 feet (@Check[reflex|dc:18|basic] save). Creatures who fail the save are @UUID[Compendium.pf2e.conditionitems.Item.XgEqL1kFApUbl5Z2]{Blinded} by a red haze for 1 round.</p>",
+            "stealth": "<p>(trained)</p>",
+            "items": {
+                "action->Bloodthirsty Wails": {
+                    "name": "Bloodthirsty Wails",
+                    "description": "<p><strong>Trigger</strong> A living creature comes within 30 feet of the haunt</p><hr /><p><strong>Effect</strong> The haunt wails, cursing the living for allowing the Puddles residents to wallow in misery while Absalom's elites prosper. Each living creature within 90 feet must attempt a @Check[will|dc:21] save. The haunt then rolls initiative.</p><hr /><p><strong>Critical Success</strong> The creature is temporarily immune to this bloodthirsty apparition's routine for 1 minute.</p>\n<p><strong>Success</strong> The creature is unaffected.</p>\n<p><strong>Failure</strong> The creature shares the apparition's uncontrolled rage against the living. It makes a Strike against itself and becomes @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 1} for 1 minute.</p>\n<p><strong>Critical Failure</strong> As failure, but the creature becomes @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 2}.</p>"
+                }
+            }
+        },
+        "Bloodthirsty Apparitions (5-6)": {
+            "name": "Bloodthirsty Apparitions (5-6)",
+            "descriptionHazard": "<p>Deceased Puddles residents lash out at living creatures.</p>",
+            "disable": "<p>@Check[religion|dc:18] (trained) three times to banish the apparitions with prayers, or @Check[occultism|dc:22] (trained) once to commune with the spirits and convince them to pass on</p>",
+            "reset": "<p>The haunt re-forms after 1 hour. The haunt becomes disabled and doesn't reform 1 minute after the Puddles phantom is slain.</p>",
+            "routine": "<p>(1 action) The haunt's screams send biting supernatural rain around the area, dealing @Damage[4d6[piercing]] damage to all living creatures within 90 feet (@Check[reflex|dc:21|basic] save). Creatures who fail the save are @UUID[Compendium.pf2e.conditionitems.Item.XgEqL1kFApUbl5Z2]{Blinded} by a red haze for 1 round (or 1 minute on a critical failure).</p>",
+            "stealth": "<p>(trained)</p>",
+            "items": {
+                "action->Bloodthirsty Wails": {
+                    "name": "Bloodthirsty Wails",
+                    "description": "<p><strong>Trigger</strong> A living creature comes within 30 feet of the haunt</p><hr /><p><strong>Effect</strong> The haunt wails, cursing the living for allowing the Puddles residents to wallow in misery while Absalom's elites prosper. Each living creature within 90 feet must attempt a @Check[will|dc:21] save. The haunt then rolls initiative.</p><hr /><p><strong>Critical Success</strong> The creature is temporarily immune to this bloodthirsty apparition's routine for 1 minute.</p>\n<p><strong>Success</strong> The creature is unaffected.</p>\n<p><strong>Failure</strong> The creature shares the apparition's uncontrolled rage against the living. It makes a Strike against itself and becomes @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 1} for 1 minute.</p>\n<p><strong>Critical Failure</strong> As failure, but the creature becomes @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 2}.</p>"
+                }
+            }
+        },
+        "Captain Pitros Nanaeil": {
+            "name": "Captain Pitros Nanaeil",
+            "allSavesBonus": "+2 on all saves against divine magic",
+            "items": {
+                "weapon->Bloodletting Kukri": {
+                    "name": "Bloodletting Kukri",
+                    "description": "<p>This <em>+1 striking kukri</em> has a crimson blade that shimmers eerily in bright light. On a critical hit, the kukri deals 1d8 persistent bleed damage. If the target didn't already have persistent bleed damage when you scored the critical hit, you also gain [[/r 1d8]] temporary Hit Points for 1 minute.</p>"
+                },
+                "weapon->Scimitar": {
+                    "name": "Scimitar",
+                    "description": "<p>This one-handed curved blade is sharp on one side.</p>"
+                },
+                "armor->Leather Armor": {
+                    "name": "Leather Armor",
+                    "description": "<p>A mix of flexible and molded boiled leather, a suit of this type of armor provides some protection with maximum flexibility.</p>"
+                }
+            }
+        },
+        "Carnival Bear": {
+            "name": "Carnival Bear",
+            "publicNotes": "<p>This large and powerful omnivore inhabits forested hills. While it typically sustains itself on nuts, berries, fish, and small mammals, it's fiercely territorial and will chase off or kill any creature it views as competition. Grizzly bears are especially temperamental when their young are nearby. In combat, a grizzly bear often attempts to grab and maul its foe with surprising ferocity. It continues its assault until its foe seems like it is no longer a threat, though if the bear is hungry, it will not hesitate to feed.</p>\n<hr />\n<p>Bears are ferocious predators typically found in cold or temperate woodlands and hills. Many species of bear exist in addition to the two presented below, such as the smaller black bear or the arctic-dwelling polar bear.</p>",
+            "blurb": "Variant grizzly bear"
         },
         "Crushing Crowd (1-2)": {
             "name": "Crushing Crowd (1-2)",
@@ -495,6 +581,50 @@
                 }
             }
         },
+        "Puddles Ghoul": {
+            "name": "Puddles Ghoul",
+            "publicNotes": "<p>Ghouls stalkers are ravenous undead who haunt graveyards and eat corpses.</p>\n<hr />\n<p>Few creatures are more ubiquitous to sinister locations such as lonely graveyards and ruined crypts than the flesh-eating undead known as ghouls.</p>",
+            "blurb": "Variant ghoul",
+            "sensesDetails": "darkvision",
+            "hpDetails": "void healing"
+        },
+        "Puddles Phantom": {
+            "name": "Puddles Phantom",
+            "publicNotes": "<p>Cavaliers and knights who died for their cause make for particularly strongwilled phantoms. Though their motives vary, these phantoms often seek to continue their lifelong missions even in their purgatorial states, and their strong forces of will make them formidable fighters in spite of their incorporeality. A phantom knight might strive to find living followers of their church or order, or seek out other mortals they knew in life as a way of staying grounded and avoiding the corruption of undeath.</p>\n<hr />\n<p>The typical trajectory for souls passing to the afterlife is fairly straightforward, according to most theologians. When a mortal dies, their soul enters the River of Souls and eventually reaches the Boneyard, where it is judged by Pharasma. The judged soul moves onto its appropriate domain of final rest\u2014Heaven, Hell, Abaddon, and so forth\u2014where it becomes a shade.</p>\n<p>Complications arise, however, when a soul in queue for judgment prematurely departs from the River of Souls and is shunted into the Ethereal Plane. Whether as a result of nefarious interlopers like daemons or hags, malignant planar magic, or even fate, these souls become dislodged from the natural order of life and death and linger in a sort of purgatory. Unlike petitioners, these ethereal phantoms retain memories of their life before death, and unlike spirits such as ghosts, phantoms aren't tinged with the foul influences of undeath\u2014at least, not at first, though the threat of corruption hangs heavy over a phantom's existence. Some eventually succumb to that fate, while others eventually rejoin the River of Souls. Until then, these wandering souls are a kind unto themselves\u2014one without a true home, agenda, or purpose.</p>\n<p>Many phantoms have no desire to remain in their strange state of purgatory, either because they seek to continue their journey through the River of Souls or because they fear the corruption of undeath. In order to complete the natural spiritual cycle and become judged so they can continue to the afterlife, a phantom must find a way back into the River of Souls. Such a quest is no easy feat, however\u2014the hazy mists of the Ethereal Plane can befuddle even the most experienced traveler, and numerous predators prowl the realm in search of stray souls to bind or devour.</p>",
+            "blurb": "Variant phantom knight",
+            "allSavesBonus": "-1 status to all saves vs. death effects",
+            "items": {
+                "spellcastingEntry->Occult Innate Spells": {
+                    "name": "Occult Innate Spells"
+                }
+            }
+        },
+        "Puddles Phantom (5-6)": {
+            "name": "Puddles Phantom (5-6)",
+            "publicNotes": "<p>Cavaliers and knights who died for their cause make for particularly strongwilled phantoms. Though their motives vary, these phantoms often seek to continue their lifelong missions even in their purgatorial states, and their strong forces of will make them formidable fighters in spite of their incorporeality. A phantom knight might strive to find living followers of their church or order, or seek out other mortals they knew in life as a way of staying grounded and avoiding the corruption of undeath.</p>\n<hr />\n<p>The typical trajectory for souls passing to the afterlife is fairly straightforward, according to most theologians. When a mortal dies, their soul enters the River of Souls and eventually reaches the Boneyard, where it is judged by Pharasma. The judged soul moves onto its appropriate domain of final rest\u2014Heaven, Hell, Abaddon, and so forth\u2014where it becomes a shade.</p>\n<p>Complications arise, however, when a soul in queue for judgment prematurely departs from the River of Souls and is shunted into the Ethereal Plane. Whether as a result of nefarious interlopers like daemons or hags, malignant planar magic, or even fate, these souls become dislodged from the natural order of life and death and linger in a sort of purgatory. Unlike petitioners, these ethereal phantoms retain memories of their life before death, and unlike spirits such as ghosts, phantoms aren't tinged with the foul influences of undeath\u2014at least, not at first, though the threat of corruption hangs heavy over a phantom's existence. Some eventually succumb to that fate, while others eventually rejoin the River of Souls. Until then, these wandering souls are a kind unto themselves\u2014one without a true home, agenda, or purpose.</p>\n<p>Many phantoms have no desire to remain in their strange state of purgatory, either because they seek to continue their journey through the River of Souls or because they fear the corruption of undeath. In order to complete the natural spiritual cycle and become judged so they can continue to the afterlife, a phantom must find a way back into the River of Souls. Such a quest is no easy feat, however\u2014the hazy mists of the Ethereal Plane can befuddle even the most experienced traveler, and numerous predators prowl the realm in search of stray souls to bind or devour.</p>",
+            "blurb": "Variant phantom knight",
+            "allSavesBonus": "-1 status to all saves vs. death effects",
+            "sensesDetails": "darkvision",
+            "items": {
+                "spellcastingEntry->Occult Innate Spells": {
+                    "name": "Occult Innate Spells"
+                }
+            }
+        },
+        "Pure Legionnaire": {
+            "name": "Pure Legionnaire",
+            "allSavesBonus": "+2 on all saves against divine magic",
+            "items": {
+                "weapon->Scimitar": {
+                    "name": "Scimitar",
+                    "description": "<p>This one-handed curved blade is sharp on one side.</p>"
+                },
+                "armor->Leather Armor": {
+                    "name": "Leather Armor",
+                    "description": "<p>A mix of flexible and molded boiled leather, a suit of this type of armor provides some protection with maximum flexibility.</p>"
+                }
+            }
+        },
         "Pusk (PFS 6-00)": {
             "name": "Pusk (PFS 6-00)",
             "publicNotes": "<p>Among the lowest and least powerful of all demons, the wretched pusks are just as vicious and cruel as their more powerful brethren. They happily vent their frustrations on anything weaker than themselves.</p>\n<p>Born from the souls of the slothful, these demons appear vaguely humanoid in appearance with awkward limbs and slack lumps of skin hanging from their frames. Supposedly, a single slothful soul of sufficient depravity and strength can spawn an entire horde of these creatures. However, as weaker demons, their lot in life is to suffer at the hands of more powerful Abyssal predators, and only a tiny number of pusks ever manage to become something more. For this reason, pusks are quite accommodating when summoned by mortals. They're usually content to work under conditions few other fiends would accept, although they'll still gladly turn on even the kindest of masters who show even the slightest hint of weakness.</p>\n<hr />\n<p>When a sinful mortal soul is judged and sent on to the Outer Rifts, it can become a deadly fiend\u2014a demon. Demons are living incarnations of sin\u2014be they classic sins like wrath or gluttony, or more \"specialized\" depravities like an obsession with torture or the act of treason or treachery. Once formed, a demon's driving goals are twofold\u2014the amassing of personal power, and the corruption of mortal souls to cause them to become tainted by sin. In this way demons ensure a never-ending supply of new demons to bolster their ever-growing ranks in the Outer Rifts.</p>\n<p>Demons are selfish and self-absorbed creatures, and most firmly believe that mortals only play at being more virtuous than fiends. They enjoy tempting mortals into damnation to both indulge their egos and swell their armies. Like many other fiends, one of the great rewards of this manipulation is fulfilling their hunger for souls. In their eyes, the primary use for these souls is to spawn new demons, who can serve as soldiers, slaves, pawns, or even currency for their more powerful masters.</p>",
@@ -505,11 +635,53 @@
                 }
             }
         },
+        "Rain-Soaked Crowd": {
+            "name": "Rain-Soaked Crowd",
+            "descriptionHazard": "<p>A crowd of carnival goers are spurred to panic by supernatural rain.</p>",
+            "disable": "<p>@Check[diplomacy|dc:17] (trained) to calm them down, @Check[intimidation|dc:18] (trained) to cow them, @Check[athletics|dc:20] (trained) to force them back</p>",
+            "stealth": "<p>(trained)</p>",
+            "items": {
+                "action->Surge Forward": {
+                    "name": "Surge Forward",
+                    "description": "<p><strong>Trigger</strong> The PCs fail to overcome a task during the Dreaded Downpour event</p><hr /><p><strong>Effect</strong> The crowd surges forward, dealing @Damage[(2d10+7)[bludgeoning]] damage to each PC. Each affected creature must attempt a @Check[reflex|dc:18] save.</p><hr /><p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature takes half damage.</p>\n<p><strong>Failure</strong> The creature takes full damage and takes a \u20131 circumstance penalty to their next skill check to overcome a task during the Dreaded Downpour event.</p>\n<p><strong>Critical Failure</strong> The creature takes double damage and takes a \u20132 circumstance penalty to their next skill check to overcome a task during the Dreaded Downpour event.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.aMmQY3YvufchsXGT]{Effect: Surge Forward}</p>"
+                }
+            }
+        },
+        "Rain-Soaked Crowd (5-6)": {
+            "name": "Rain-Soaked Crowd (5-6)",
+            "descriptionHazard": "<p>A crowd of carnival goers are spurred to panic by supernatural rain.</p>",
+            "disable": "<p>@Check[diplomacy|dc:21] (trained) to calm them down, @Check[intimidation|dc:22] (trained) to cow them, @Check[athletics|dc:24] (trained) to force them back</p>",
+            "stealth": "<p>(trained)</p>",
+            "items": {
+                "action->Surge Forward": {
+                    "name": "Surge Forward",
+                    "description": "<p><strong>Trigger</strong> The PCs fail to overcome a task during the Dreaded Downpour event</p><hr /><p><strong>Effect</strong> The crowd surges forward, dealing @Damage[(4d8+10)[bludgeoning]] damage to each PC. Each affected creature must attempt a @Check[reflex|dc:21] save.</p><hr /><p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature takes half damage.</p>\n<p><strong>Failure</strong> The creature takes full damage and takes a \u20131 circumstance penalty to their next skill check to overcome a task during the Dreaded Downpour event.</p>\n<p><strong>Critical Failure</strong> The creature takes double damage and takes a \u20132 circumstance penalty to their next skill check to overcome a task during the Dreaded Downpour event.</p>"
+                }
+            }
+        },
         "Rasping Cicada": {
             "name": "Rasping Cicada",
             "publicNotes": "<p>These small insects are a nuisance and danger to small villages within Brevoy, taking over entire forests and blending in with the foliage. Also known as calling beetles, due to their ability to mimic and repeat the voices of their previous victims, crying cicadas wait for passersby to lure into the trees, fascinating their victims with their cries before fluttering their wings to release toxic dust. Once a target is near death, crying cicadas will take flight from the trees and land on the body to feed.</p>\n<p>The scale dust of crying cicadas can be turned into an effective ingested poison, but obtaining a cicada and harvesting these scales is so dangerous that most would-be poisoners simply die in the process. Even finding the insects is dangerous enough; crying cicadas' natural stealth and dark coloration make them difficult to locate among the trees of a forest, and following their cries often leads one to fall victim to the very creatures they're hunting.</p>\n<p>The longer a colony of crying cicadas stays in a forest, the wider their collection of cries grows. Often, a young colony will be able to replicate only the sounds of small, dying creatures, but larger, more established colonies will have the ability to mimic the sounds of children and dragons.</p>",
             "blurb": "Variant crying cicada",
             "sensesDetails": "darkvision"
+        },
+        "Resolved Captain Pitros Nanaeil": {
+            "name": "Resolved Captain Pitros Nanaeil",
+            "allSavesBonus": "+2 on all saves against divine magic",
+            "items": {
+                "weapon->Bloodletting Kukri": {
+                    "name": "Bloodletting Kukri",
+                    "description": "<p>This <em>+1 striking kukri</em> has a crimson blade that shimmers eerily in bright light. On a critical hit, the kukri deals 1d8 persistent bleed damage. If the target didn't already have persistent bleed damage when you scored the critical hit, you also gain [[/r 1d8]] temporary Hit Points for 1 minute.</p>"
+                },
+                "weapon->Scimitar": {
+                    "name": "Scimitar",
+                    "description": "<p>This one-handed curved blade is sharp on one side.</p>"
+                },
+                "armor->Leather Armor": {
+                    "name": "Leather Armor",
+                    "description": "<p>A mix of flexible and molded boiled leather, a suit of this type of armor provides some protection with maximum flexibility.</p>"
+                }
+            }
         },
         "Sailor's Warning (1-2)": {
             "name": "Sailor's Warning (1-2)",
@@ -575,6 +747,49 @@
             "reset": "<p>The haunt deactivates 1 minute after all creatures leave the area but resets immediately thereafter.</p>",
             "routine": "<p><span class=\"action-glyph\">d</span> Singe uses its first action(s) to make a long gun Strike against a random creature in the area. It uses its final action for Lookout's Warning. If the PCs successfully use Pathfinder Society Lore to Disable the haunt, Singe loses an action to make a long gun Strike.</p>",
             "stealth": "<p>(trained)</p>"
+        },
+        "Soggy Zombie Hulk": {
+            "name": "Soggy Zombie Hulk",
+            "publicNotes": "<p>These towering horrors rise from monstrous, gigantic corpses.</p>\n<hr />\n<p>A zombie's only desire is to consume the living. Unthinking and ever-shambling harbingers of death, zombies stop only when they're destroyed.</p>",
+            "hpDetails": "void healing",
+            "items": {
+                "condition->Slowed": {
+                    "name": "Slowed",
+                    "description": "<p>You have fewer actions. Slowed always includes a value. When you regain your actions at the start of your turn, reduce the number of actions you regain by your slowed value. Because slowed has its effect at the start of your turn, you don't immediately lose actions if you become slowed during your turn.</p>"
+                }
+            }
+        },
+        "Sudden Drop": {
+            "name": "Sudden Drop",
+            "descriptionHazard": "<p>A portion of Manaket's sewer system is under construction and has been left covered by only a few planks of wood since the Godsrain. After two weeks of wear, they're ready to collapse.</p>",
+            "disable": "<p>If all the PCs succeed on a Perception check against the Stealth DC to spot the hazard, they're able to detour around the weakened boards without triggering it. There's not enough time for PCs who succeed on this check to warn PCs who fail.</p>",
+            "stealth": "<p>(trained)</p>",
+            "items": {
+                "action->Break Through": {
+                    "name": "Break Through",
+                    "description": "<p><strong>Trigger</strong> One or more PCs fail to spot the hazard and step onto the weakened boards</p><hr /><p><strong>Effect</strong> The boards give way, dropping the PCs 5 feet into the open septic tank. The PCs can attempt to @UUID[Compendium.pf2e.actionspf2e.Item.3yoajuKjwHZ9ApUY]{Grab an Edge}; those who fail and fall into the tank become @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 1} and cannot reduce this condition until after the Ambush! in Kassi's lab.</p>\n<p>Triggering this hazard also accrues 1 AP for the party.</p>"
+                }
+            }
+        },
+        "Tough Puddles Ghoul": {
+            "name": "Tough Puddles Ghoul",
+            "publicNotes": "<p>Ghouls stalkers are ravenous undead who haunt graveyards and eat corpses.</p>\n<hr />\n<p>Few creatures are more ubiquitous to sinister locations such as lonely graveyards and ruined crypts than the flesh-eating undead known as ghouls.</p>",
+            "blurb": "Variant ghoul",
+            "hpDetails": "void healing"
+        },
+        "Veteran Pure Legionnaire": {
+            "name": "Veteran Pure Legionnaire",
+            "allSavesBonus": "+2 on all saves against divine magic",
+            "items": {
+                "weapon->Scimitar": {
+                    "name": "Scimitar",
+                    "description": "<p>This one-handed curved blade is sharp on one side.</p>"
+                },
+                "armor->Leather Armor": {
+                    "name": "Leather Armor",
+                    "description": "<p>A mix of flexible and molded boiled leather, a suit of this type of armor provides some protection with maximum flexibility.</p>"
+                }
+            }
         },
         "Weak Bottlenose Dolphin": {
             "name": "Weak Bottlenose Dolphin",
