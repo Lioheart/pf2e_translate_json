@@ -1,6 +1,11 @@
 {
     "label": "Ac-Features",
     "entries": {
+        "Adaptable Elemental": {
+            "name": "Adaptable Elemental",
+            "description": "<p>Str +1, Dex +4, Con +3, Int +0, Wis +1, Cha +0; +1 AC (+4 Dex cap)</p>",
+            "gmNote": ""
+        },
         "Advanced Maneuver": {
             "name": "Advanced Maneuver",
             "description": "",
@@ -133,7 +138,7 @@
         },
         "Demonic Strikes": {
             "name": "Demonic Strikes",
-            "description": "<p>Your eidolon's attacks are corrupted by the Abyss and imbued with pure evil and shifting chaos. All your eidolon's unarmed Strikes deal an extra [[/r 1[evil]]]{1 evil Damage}; as usual, this extra damage harms only good creatures or those with a weakness to evil damage. Additionally, choose one of your eidolon's unarmed attacks that deals physical damage; it gains the versatile trait for a different type of physical damage you choose.</p>",
+            "description": "<p>Your eidolon's attacks are corrupted by the Abyss and imbued with pure evil and shifting chaos. Your eidolon's unarmed Strikes gain the unholy trait and deal 1 extra spirit damage to holy creatures and creatures with weakness to unholy. Additionally, choose one of your eidolon's unarmed attacks that deals physical damage; it gains the versatile trait for a different type of physical damage you choose.</p>",
             "gmNote": ""
         },
         "Devotion Aura": {
@@ -236,6 +241,34 @@
             "description": "<p>Your eidolon has learned how to inflict greater injuries with its unarmed attacks. It deals 2 additional Damage with unarmed attacks in which it's an expert. This damage increases to 3 if it's a master, and 4 if it's legendary.</p>",
             "gmNote": ""
         },
+        "Elemental Burst": {
+            "name": "Elemental Burst",
+            "description": "<p><strong>Frequency</strong> once per 10 minutes</p>\n<hr />\n<p>Your eidolon rips off a chunk of elemental matter from their own form and hurls it into a group of foes. Your eidolon loses a number of Hit Points equal to your level. All creatures in a @Template[type:burst|distance:20] within 60 feet take @Damage[(@actor.level - 1)d6] damage with a basic Reflex save against your spell DC. The damage increases by 1d6 for each level you have beyond 7th. The damage's type is either fire damage if your eidolon is a fire elemental, or the same physical damage type as your eidolon's primary unarmed attack if your eidolon isn't a fire elemental. Elemental Burst gains any traits that your eidolon's unarmed attacks gain from elemental core.</p>",
+            "gmNote": ""
+        },
+        "Elemental Core": {
+            "name": "Elemental Core",
+            "description": "<p>Your elemental eidolon is an amalgam of elemental matter and mortal life force, which helps protect them from certain effects that are more harmful to mortals than elementals. They gain a +2 circumstance bonus to saving throws against poison and sleep effects, as well as effects causing the @UUID[Compendium.pf2e.conditionitems.Item.6uEgoh53GbXuHpTF]{Paralyzed} condition. Additionally, their elemental essence bleeds less easily than flesh, so the DC of any flat check they make to remove persistent bleed damage is 10 (or 5 after receiving particularly effective aid). Choose for your eidolon to be an air, earth, fire, metal, wood, or water elemental. Your eidolon and all their unarmed attacks gain the trait of the chosen element, and the eidolon gains additional effects based on your choice.</p>\n<p><strong>Air</strong>: Your eidolon is formed from elemental air and is light as a breeze. Your eidolon can @UUID[Compendium.pf2e.actionspf2e.Item.d5I6018Mci2SWokk]{Leap}, @UUID[Compendium.pf2e.actionspf2e.Item.2HJ4yuEFY1Cast4h]{High Jump}, and @UUID[Compendium.pf2e.actionspf2e.Item.JUvAvruz7yRQXfz2]{Long Jump} twice as far, and doesn't take falling damage.</p>\n<p><strong>Earth</strong>: Your eidolon is formed from elemental earth, and is incredibly hard to move by force. Your eidolon gains a +2 circumstance bonus to their Fortitude or Reflex DCs against attempts to @UUID[Compendium.pf2e.actionspf2e.Item.7blmbDrQFNfdT731]{Shove} or @UUID[Compendium.pf2e.actionspf2e.Item.ge56Lu1xXVFYUnLP]{Trip} them. This bonus also applies to saving throws against spells or effects that attempt to knock them @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone}. In addition, if any effect would force them to move 10 feet or more, they're moved only half the distance.</p>\n<p><strong>Fire</strong>: Your eidolon is formed from elemental fire and burns with embers of flame. Your eidolon gains resistance equal to half your level (minimum 1) to fire and an equal amount of weakness to cold and water. Their unarmed attacks deal 1 additional fire damage.</p>\n<p><strong>Metal</strong>: Your eidolon is formed from elemental metal and can adapt their metallic form to battle. One of your eidolon's starting melee unarmed attacks gains the versatile bludgeoning, piercing, or slashing trait, as your eidolon learns how to shift the metal into various weaponlike forms.</p>\n<p><strong>Water</strong>: Your eidolon is formed from elemental water and swims with ease. Your eidolon gains the amphibious trait, allowing them to breathe in water and air and to avoid the normal –2 penalty for making bludgeoning and slashing unarmed Strikes underwater. Your eidolon's land Speed is reduced to 15 feet, and they gain a swim Speed of 25 feet. You can take the Amphibious Form feat to increase their land Speed back up to 25 feet, as described in the feat.</p>\n<p><strong>Wood</strong>: Your eidolon is formed from elemental wood, and its living wooden form twists and regrows as you focus your elemental energies. You can choose to have your eidolon gain the plant trait. Whenever you Refocus, your eidolon regains a number of Hit Points equal to double your level.</p>",
+            "gmNote": "",
+            "rules": {
+                "9": {
+                    "choices": {
+                        "0": {
+                            "label": "Gain the plant trait"
+                        },
+                        "1": {
+                            "label": "Don't gain the plant trait"
+                        }
+                    },
+                    "prompt": "Gain the plant trait?"
+                }
+            }
+        },
+        "Elemental Maelstrom": {
+            "name": "Elemental Maelstrom",
+            "description": "<p>Your eidolon temporarily shifts its form into a swirling vortex of elemental matter and rampages through their foes. Your eidolon Strides. During their movement, they can attempt a Strike against each enemy that is within their reach. If an enemy comes within your eidolon's reach more than once, your eidolon makes only a single Strike against a given enemy. These attacks all count towards your eidolon's multiple attack penalty, but the penalty doesn't increase until after all the attacks. If your eidolon has the appropriate Speed, they can Climb, Fly, or Swim instead of Stride.</p>",
+            "gmNote": ""
+        },
         "Enraged Assassin": {
             "name": "Enraged Assassin",
             "description": "<p>Str 14, Dex 18, Con 16, Int 10, Wis 8, Cha 12; +1 AC (+4 Dex cap)</p>",
@@ -293,7 +326,7 @@
         },
         "Hallowed Strikes": {
             "name": "Hallowed Strikes",
-            "description": "<p>Your eidolon's attacks are hallowed by the celestial realms. Your eidolon's unarmed Strikes deal an extra [[/r 1[good]]]{1 good Damage}; as usual, this extra damage harms only evil creatures or those with a weakness to good damage. Additionally, your eidolon can make nonlethal attacks with its unarmed attacks without taking the usual -2 circumstance penalty.</p>",
+            "description": "<p>Your eidolon's attacks are hallowed by the celestial realms. Your eidolon's unarmed Strikes gain the holy trait and deal 1 extra spirit damage to unholy creatures and creatures with weakness to holy. Additionally, your eidolon can make nonlethal attacks with its unarmed attacks without taking the usual -2 circumstance penalty.</p>",
             "gmNote": ""
         },
         "Hidden Watcher": {
@@ -365,6 +398,11 @@
             "description": "",
             "gmNote": ""
         },
+        "Primordial Elemental": {
+            "name": "Primordial Elemental",
+            "description": "<p>Str +4, Dex +2, Con +3, Int –1, Wis +1, Cha +0; +2 AC (+3 Dex cap)</p>",
+            "gmNote": ""
+        },
         "Reconfigured Evolution": {
             "name": "Reconfigured Evolution",
             "description": "<p>Your construct eidolon is particularly easy to reconfigure, gaining an additional evolution that suits both of your whims. Choose one additional evolution feat of 6th level or lower. Your eidolon gains that feat. You can Retrain this feat for any other evolution feat of 6th level or lower with only a single day of downtime if you succeed at a <span data-pf2-check=\"crafting\" data-pf2-label=\"Reconfigured Evolution DC\" data-pf2-dc=\"@self.level\" data-pf2-show-dc=\"gm\">Crafting</span> check, with a standard DC of your eidolon's level. If you fail, you can try again on a later day. Many summoners choose Eidolon's Wrath for this ability.</p>",
@@ -412,7 +450,7 @@
         },
         "Spirit Touch": {
             "name": "Spirit Touch",
-            "description": "<p>Your eidolon's attacks possess a psychopomp's ability to harm the living and the dead. Your eidolon's unarmed Strikes affect incorporeal creatures as though etched with a ghost touch property rune and deal an extra [[/r 1[negative]]]{1 negative Damage} to living creatures and an extra [[/r 1[positive]]]{1 positive Damage} to undead.</p>",
+            "description": "<p>Your eidolon's attacks possess a psychopomp's ability to harm the living and the dead. Your eidolon's unarmed Strikes affect incorporeal creatures as though etched with a ghost touch property rune and deal an extra 1 void Damage to living creatures and an extra 1 vitality Damage to undead.</p>",
             "gmNote": ""
         },
         "Stalwart Guardian": {
@@ -447,7 +485,7 @@
         },
         "Traveler's Aura": {
             "name": "Traveler's Aura",
-            "description": "<p>Your eidolon emanates a powerful aura-resembling that of an astral deva-that protects creatures as they travel. The aura has the abjuration, aura, and divine traits. Your eidolon and its allies within a @Template[type:emanation|distance:20] are protected from severe heat and cold, and your eidolon is never @Compendium[pf2e.conditionitems.Flat-Footed]{Flat-Footed} to creatures inside the aura that are of a lower level than the eidolon.</p>\n<p>When you gain the transcendence class feature, this evolves to the full benefits of an astral deva; your eidolon and allies in the aura are protected from environmental damage from any plane, including severe and extreme heat and cold as well as more unusual dangers.</p>",
+            "description": "<p>Your eidolon emanates a powerful aura-resembling that of an astral deva-that protects creatures as they travel. The aura has the abjuration, aura, and divine traits. Your eidolon and its allies within a @Template[type:emanation|distance:20] are protected from severe heat and cold, and your eidolon is never @Compendium[pf2e.conditionitems.Off-Guard]{Off-Guard} to creatures inside the aura that are of a lower level than the eidolon.</p>\n<p>When you gain the transcendence class feature, this evolves to the full benefits of an astral deva; your eidolon and allies in the aura are protected from environmental damage from any plane, including severe and extreme heat and cold as well as more unusual dangers.</p>",
             "gmNote": ""
         },
         "Trickster Fey": {
