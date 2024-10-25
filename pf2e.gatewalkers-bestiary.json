@@ -86,6 +86,10 @@
             "blurb": "variant elite hydra",
             "hpDetails": "hydra regeneration",
             "items": {
+                "effect->Effect: Hydra Heads": {
+                    "name": "Effect: Hydra Heads",
+                    "description": "<p>The number of heads the hydra currently has.</p>"
+                },
                 "strike-melee->Fangs": {
                     "name": "Fangs"
                 },
@@ -273,6 +277,13 @@
             "languagesDetails": "telepathy 100 feet",
             "hpDetails": "void healing",
             "items": {
+                "weapon->Halberd": {
+                    "name": "Halberd",
+                    "description": "<p>This polearm has a relatively short, 5-foot shaft. The business end is a long spike with an axe blade attached.</p>"
+                },
+                "strike-melee->Halberd": {
+                    "name": "Halberd"
+                },
                 "strike-melee->Horns": {
                     "name": "Horns"
                 },
@@ -356,6 +367,18 @@
                 "spellcastingEntry->Druid Order Spells": {
                     "name": "Druid Order Spells"
                 },
+                "weapon->Dagger": {
+                    "name": "Dagger",
+                    "description": "<p>This small, bladed weapon is held in one hand and used to stab a creature in close combat. It can also be thrown.</p>"
+                },
+                "weapon->Staff": {
+                    "name": "Staff",
+                    "description": "<p>This long piece of wood can aid in walking and deliver a mighty blow.</p>"
+                },
+                "armor->Hide Armor": {
+                    "name": "Hide Armor",
+                    "description": "<p>A mix of furs, sturdy hide, and sometimes molded boiled leather, this armor provides protection due to its layers of leather, though its bulkiness slows the wearer down and decreases mobility.</p>"
+                },
                 "equipment->Leaf Mask": {
                     "name": "Leaf Mask"
                 },
@@ -419,8 +442,37 @@
             "acDetails": "22 with shield raised",
             "blurb": "Female centaur",
             "items": {
+                "weapon->Longsword": {
+                    "name": "Longsword",
+                    "description": "<p>Longswords can be one-edged or two-edged swords. Their blades are heavy and they're between 3 and 4 feet in length.</p>"
+                },
+                "weapon->Spear": {
+                    "name": "Spear",
+                    "description": "<p>A long metal shaft ending with a metal spike, a spear can be used one-handed as a melee weapon and can be thrown.</p>"
+                },
+                "shield->Steel Shield": {
+                    "name": "Steel Shield",
+                    "description": "<p>Like wooden shields, steel shields come in a variety of shapes and sizes. Though more expensive than wooden shields, they are much more durable.</p>\n<table class=\"pf2e\">\n<thead>\n<tr>\n<th>Hardness</th>\n<th>HP</th>\n<th>BT</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>5</td>\n<td>20</td>\n<td>10</td>\n</tr>\n</tbody>\n</table>"
+                },
+                "armor->Breastplate": {
+                    "name": "Breastplate",
+                    "description": "<p>Though referred to as a breastplate, this type of armor consists of several pieces of plate or half-plate armor that protect the torso, chest, neck, and sometimes the hips and lower legs. It strategically grants some of the protection of plate while allowing greater flexibility and speed.</p>"
+                },
+                "equipment->Cloak of Gnawing Leaves": {
+                    "name": "Cloak of Gnawing Leaves",
+                    "description": "<p>This cloak appears to be woven from a thousand living leaves, hungry for flesh and eager to defend the cloak's wearer.</p>\n<p><strong>Activate</strong> <span class=\"action-glyph\">r</span> envision</p>\n<p><strong>Frequency</strong> once per day</p>\n<p><strong>Trigger</strong> You are damaged by a melee attack from an adjacent creature</p>\n<hr />\n<p><strong>Effect</strong> The leaves lash out at your attacker, rising up to reveal snapping jaws made of wicked thorns. The triggering creature must attempt a @Check[reflex|dc:17] saving throw.</p>\n<p><strong>Success</strong> The creature is unaffected.</p>\n<p><strong>Failure</strong> The creature takes @Damage[1d4[piercing]].</p>\n<p><strong>Critical Failure</strong> The creature takes @Damage[2d4[piercing]] and @Damage[1[bleed]].</p>"
+                },
                 "strike-melee->Hoof": {
                     "name": "Hoof"
+                },
+                "strike-melee->Longsword": {
+                    "name": "Longsword"
+                },
+                "strike-melee->Spear": {
+                    "name": "Spear"
+                },
+                "strike-ranged->Spear": {
+                    "name": "Spear"
                 },
                 "action->Shield Block": {
                     "name": "Shield Block"
@@ -534,9 +586,17 @@
                 "spellcastingEntry->Primal Prepared Spells": {
                     "name": "Primal Prepared Spells"
                 },
+                "weapon->Staff": {
+                    "name": "Staff",
+                    "description": "<p>This long piece of wood can aid in walking and deliver a mighty blow.</p>"
+                },
                 "weapon->Acid Flask (Lesser)": {
                     "name": "Acid Flask (Lesser)",
                     "description": "<p><strong>Activate</strong> <span class=\"action-glyph\">A</span> Strike</p>\n<p>This flask filled with corrosive acid deals 1 acid damage, 1d6 persistent acid damage, and 1 acid splash damage.</p>"
+                },
+                "armor->Leather Armor": {
+                    "name": "Leather Armor",
+                    "description": "<p>A mix of flexible and molded boiled leather, a suit of this type of armor provides some protection with maximum flexibility.</p>"
                 },
                 "equipment->Oak Leaf Mask": {
                     "name": "Oak Leaf Mask"
@@ -756,6 +816,18 @@
                 "spellcastingEntry->Occult Innate Spells": {
                     "name": "Occult Innate Spells"
                 },
+                "weapon->Composite Longbow": {
+                    "name": "Composite Longbow",
+                    "description": "<p>This projectile weapon is made from horn, wood, and sinew laminated together to increase the power of its pull and the force of its projectile. Like all longbows, its great size also increases the bow's range and power. You must use two hands to fire it, and it cannot be used while mounted. Any time an ability is specifically restricted to a longbow, such as Erastil's favored weapon, it also applies to composite longbows unless otherwise stated.</p>"
+                },
+                "equipment->Cloak of the Bat": {
+                    "name": "Cloak of the Bat",
+                    "description": "<p>Sewn from several long strips of luxurious brown and black silk, this cloak grants you a +2 item bonus to Stealth checks as well as to Acrobatics checks to @UUID[Compendium.pf2e.actionspf2e.Item.Qf1ylAbdVi1rkc8M]{Maneuver in Flight}. You can also use your feet to hang from any surface that can support your weight, without requiring any check, though you still must attempt Athletics checks to @UUID[Compendium.pf2e.actionspf2e.Item.pprgrYQ1QnIDGZiy]{Climb} in order to move around while inverted.</p>\n<hr />\n<p><strong>Activate</strong> <span class=\"action-glyph\">2</span> command, Interact</p>\n<p><strong>Frequency</strong> once per day</p>\n<hr />\n<p><strong>Effect</strong> You can either transform the cloak into bat-like wings that grant you a fly Speed of 30 feet for 10 minutes, or have the cloak turn you into a bat by casting a 4th-rank @UUID[Compendium.pf2e.spells-srd.Item.gfPjmG6Fe6D3MFjl]{Pest Form} spell on you.</p>\n<p>@UUID[Compendium.pf2e.equipment-effects.Item.ioGzmVSmMGXWWBYb]{Effect: Cloak of the Bat}</p>"
+                },
+                "consumable->Arrows": {
+                    "name": "Arrows",
+                    "description": "<p>These projectiles are the ammunition for bows. The shaft of an arrow is made of wood. It is stabilized in flight by fletching at one end and bears a metal head on the other.</p>"
+                },
                 "strike-melee->Fist": {
                     "name": "Fist"
                 },
@@ -802,9 +874,21 @@
                 "spellcastingEntry->Occult Innate Spells": {
                     "name": "Occult Innate Spells"
                 },
+                "weapon->Dagger": {
+                    "name": "Dagger",
+                    "description": "<p>This small, bladed weapon is held in one hand and used to stab a creature in close combat. It can also be thrown.</p>"
+                },
                 "weapon->Alchemist's Fire (Moderate) (Infused)": {
                     "name": "Alchemist's Fire (Moderate) (Infused)",
                     "description": "<p><strong>Activate</strong> <span class=\"action-glyph\">A</span> Strike</p>\n<p>Alchemist's fire is a combination of volatile liquids that ignite when exposed to air. Alchemist's fire deals 2d8 fire damage, 2 persistent fire damage, and 2 fire splash damage. You gain a +1 item bonus to attack rolls.</p>"
+                },
+                "armor->Leather Armor": {
+                    "name": "Leather Armor",
+                    "description": "<p>A mix of flexible and molded boiled leather, a suit of this type of armor provides some protection with maximum flexibility.</p>"
+                },
+                "equipment->Formula Book": {
+                    "name": "Formula Book",
+                    "description": "<p>A formula book holds the formulas necessary to make items other than the common equipment from this chapter; alchemists typically get one for free. Each formula book can hold the formulas for up to 100 different items. Formulas can also appear on parchment sheets, tablets, and almost any other medium; there's no need for you to copy them into a specific book as long as you can keep them on hand to reference them.</p>\n<p>@UUID[Compendium.pf2e.equipment-srd.Item.gWr4q4HiyGhETA8H]{Alchemist's Fire (Moderate)}<br />@UUID[Compendium.pf2e.equipment-srd.Item.qpzL9UnTi4cDhy6J]{Cognitive Mutagen (Moderate)}<br />@UUID[Compendium.pf2e.equipment-srd.Item.OcBPjVplvy2GbQ8P]{Comprehension Elixir (Greater)}<br />@UUID[Compendium.pf2e.equipment-srd.Item.c21stU5rhN4F2fZl]{Elixir of Life (Moderate)}<br />@UUID[Compendium.pf2e.equipment-srd.Item.KsAygNRyR2FdwuOm]{Psychic Colors Elixir}<br />@UUID[Compendium.pf2e.equipment-srd.Item.IzniYBi8QYxHnffr]{Vat-Grown Brain}<br />@UUID[Compendium.pf2e.equipment-srd.Item.n9VrmK9Us0viv20P]{Winter Wolf Elixir (Lesser)}</p>"
                 },
                 "equipment->Pendant of the Occult (Greater)": {
                     "name": "Pendant of the Occult (Greater)",
@@ -835,7 +919,7 @@
                 },
                 "consumable->Elixir of Life (Moderate) (Infused)": {
                     "name": "Elixir of Life (Moderate) (Infused)",
-                    "description": "<p><strong>Activate</strong> <span class=\"action-glyph\">A</span> Interact</p>\n<p>Elixirs of life accelerate a living creature's natural healing processes and immune system. Upon drinking this elixir, you regain [[/r (5d6+12)[healing]]]{5d6+12 Hit Points} and gain +2 item bonus to saving throws against diseases and poisons for 10 minutes.</p>\n<p>@UUID[Compendium.pf2e.equipment-effects.Item.Yxssrnh9UZJAM0V7]{Effect: Elixir of Life (Moderate)}</p>"
+                    "description": "<p><strong>Activate</strong> <span class=\"action-glyph\">A</span> Interact</p>\n<p>Elixirs of life accelerate a living creature's natural healing processes and immune system. Upon drinking this elixir, you regain @Damage[(5d6+12)[healing]] Hit Points and gain +2 item bonus to saving throws against diseases and poisons for 10 minutes.</p>\n<p>@UUID[Compendium.pf2e.equipment-effects.Item.lPRuIRbu0rHBkoKY]{Effect: Elixir of Life}</p>"
                 },
                 "consumable->Psychic Colors Elixir (Infused)": {
                     "name": "Psychic Colors Elixir (Infused)",
@@ -964,11 +1048,25 @@
             "name": "Ghodrak the Quick",
             "blurb": "Male hobgoblin leader of the Obsidian Oath",
             "items": {
+                "weapon->Hatchet": {
+                    "name": "Hatchet",
+                    "description": "<p>This small axe can be used in close combat or thrown.</p>"
+                },
+                "armor->Leather Armor": {
+                    "name": "Leather Armor",
+                    "description": "<p>A mix of flexible and molded boiled leather, a suit of this type of armor provides some protection with maximum flexibility.</p>"
+                },
                 "equipment->Gray Post Keys": {
                     "name": "Gray Post Keys"
                 },
                 "equipment->Map of Skywatch": {
                     "name": "Map of Skywatch"
+                },
+                "strike-melee->Hatchet": {
+                    "name": "Hatchet"
+                },
+                "strike-ranged->Hatchet": {
+                    "name": "Hatchet"
                 },
                 "action->Into the Fray": {
                     "name": "Into the Fray",
@@ -1102,6 +1200,32 @@
             "name": "Ilverani Sentry",
             "blurb": "Elf hunters",
             "items": {
+                "weapon->Dagger": {
+                    "name": "Dagger",
+                    "description": "<p>This small, bladed weapon is held in one hand and used to stab a creature in close combat. It can also be thrown.</p>"
+                },
+                "weapon->Composite Longbow": {
+                    "name": "Composite Longbow",
+                    "description": "<p>This projectile weapon is made from horn, wood, and sinew laminated together to increase the power of its pull and the force of its projectile. Like all longbows, its great size also increases the bow's range and power. You must use two hands to fire it, and it cannot be used while mounted. Any time an ability is specifically restricted to a longbow, such as Erastil's favored weapon, it also applies to composite longbows unless otherwise stated.</p>"
+                },
+                "weapon->Shortsword": {
+                    "name": "Shortsword",
+                    "description": "<p>These blades come in a variety of shapes and styles, but they are typically 2 feet long.</p>"
+                },
+                "armor->Leather Armor": {
+                    "name": "Leather Armor",
+                    "description": "<p>A mix of flexible and molded boiled leather, a suit of this type of armor provides some protection with maximum flexibility.</p>"
+                },
+                "consumable->Arrows": {
+                    "name": "Arrows",
+                    "description": "<p>These projectiles are the ammunition for bows. The shaft of an arrow is made of wood. It is stabilized in flight by fletching at one end and bears a metal head on the other.</p>"
+                },
+                "strike-melee->Shortsword": {
+                    "name": "Shortsword"
+                },
+                "strike-ranged->Composite Longbow": {
+                    "name": "Composite Longbow"
+                },
                 "action->Arctic Forager": {
                     "name": "Arctic Forager",
                     "description": "<p>While using Survival to Subsist in arctic environments, if the Ilverani sentry rolls a failure or a critical failure, they get a success instead. If the sentry rolls a success, they can provide food for 4 additional creatures that eat about as much as a human, or 8 creatures on a critical success.</p>"
@@ -1147,6 +1271,10 @@
             "items": {
                 "spellcastingEntry->Primal Innate Spells": {
                     "name": "Primal Innate Spells"
+                },
+                "equipment->Shadewither Key": {
+                    "name": "Shadewither Key",
+                    "description": "<p>This palm-sized talisman hangs on a string of braided bark fibers. It resembles a leaf from some unknown tree similar to oak, carved from jade and then dipped halfway into black ink that looks wet despite feeling completely dry. The gate key was originally created to open the aiudara known as the Seventh Arch. In recent years, corrupting magic has given it additional, stranger powers.</p>\n<p>When you wear and invest the <em>Shadewither Key</em>, shadows gather around you. You gain a +1 item bonus to Stealth checks. However, this boon comes with great risk: any elf who touches the <em>Shadewither Key</em> is immediately afflicted with the obnubilate curse (see below).</p>\n<p><strong>Activate</strong> <span class=\"action-glyph\">2</span> Interact</p>\n<hr />\n<p><strong>Effect</strong> You touch the <em>Shadewither Key</em> and command the shadows it casts around you to peel away. The shadows form an umbral double that resembles you in every way except for its fiery red eyes and the expression of wicked delight on its face. The double occupies the same space as you and attempts to intercept any attacks aimed at you. A creature must succeed at a @Check[flat|dc:11] when targeting you with an attack, spell, or other effect; on a failure, they hit the shadowy double instead of you. The effect lasts for 1 minute or until the double is hit, whichever comes first. Once the double is hit, it's destroyed. As long as the double exists, you don't gain the <em>Shadewither Key's</em> item bonus to Stealth checks.</p>\n<hr />\n<p><strong>Destruction</strong> The <em>Shadewither Key's</em> magic can be destroyed by exposing the artifact to uncontained teleportation energies. If touched to an unlinked or malfunctioning aiudara, the <em>Shadewither Key</em> causes the gate to connect to a new counterpart. If this happens, the key's magic leaves it, rendering the item useless.</p>\n<hr />\n<p><strong>Obnubilate Curse</strong></p>\n<p>Only elves can be afflicted with this magical curse; other creatures are immune. An elf who touches the Shadewither Key must save against the curse. Victims quickly fall @UUID[Compendium.pf2e.conditionitems.Item.fBnFDH2MTzgFijKf]{Unconscious}; then, over several days, they slowly blacken and shrivel like rotting fruit until they die. The corpse of an elf killed by the obnubilate curse is dry and charcoal-like; it collapses into ash at the slightest touch.</p>\n<p><strong>Saving Throw</strong> @Check[fortitude|dc:27|traits:curse,enchantment,incapacitation,magical,mental,shadow|overrideTraits:true]</p>\n<p><strong>Onset</strong> 1 minute</p>\n<p><strong>Stage 1</strong> unconscious and @Damage[3d6[mental]] (1 day)</p>\n<p><strong>Stage 2</strong> unconscious and @Damage[6d6[mental]] (2 days)</p>\n<p><strong>Stage 3</strong> unconscious and @Damage[6d6[mental]] (2 days)</p>\n<p><strong>Stage 4</strong> unconscious and @Damage[6d6[mental]], permanent loss of most recent year of memory (1 day)</p>\n<p><strong>Stage 5</strong> unconscious and @Damage[6d6[mental]], permanent loss of all memory (1 day)</p>\n<p><strong>Stage 6</strong> death.</p>"
                 },
                 "strike-melee->Claw": {
                     "name": "Claw"
@@ -1194,6 +1322,39 @@
             "publicNotes": "<p>The captain is the ultimate authority on a vessel, responsible for the livelihood and well-being of everyone on the ship.</p>\n<hr />\n<p>Adventurers may need passage on a swift vessel, or they might face danger from raiders at sea or in coastal settlements.</p>",
             "blurb": "Female human ship captain",
             "items": {
+                "weapon->Dagger": {
+                    "name": "Dagger",
+                    "description": "<p>This small, bladed weapon is held in one hand and used to stab a creature in close combat. It can also be thrown.</p>"
+                },
+                "weapon->Hand Crossbow": {
+                    "name": "Hand Crossbow",
+                    "description": "<p>Sometimes referred to as an alley bow by rogues or ruffians, this small crossbow fires small bolts that are sometimes used to deliver poison to the target. It's small enough to be shot one-handed, but it still requires two hands to load.</p>"
+                },
+                "weapon->Scimitar": {
+                    "name": "Scimitar",
+                    "description": "<p>This one-handed curved blade is sharp on one side.</p>"
+                },
+                "weapon->Main-Gauche": {
+                    "name": "Main-Gauche",
+                    "description": "<p>This parrying dagger features a robust guard to protect the wielder's hand.</p>"
+                },
+                "armor->Leather Armor": {
+                    "name": "Leather Armor",
+                    "description": "<p>A mix of flexible and molded boiled leather, a suit of this type of armor provides some protection with maximum flexibility.</p>"
+                },
+                "consumable->Bolts": {
+                    "name": "Bolts",
+                    "description": "<p>Shorter than traditional arrows but similar in construction, bolts are the ammunition used by crossbows.</p>"
+                },
+                "strike-melee->Main-Gauche": {
+                    "name": "Main-Gauche"
+                },
+                "strike-melee->Scimitar": {
+                    "name": "Scimitar"
+                },
+                "strike-ranged->Hand Crossbow": {
+                    "name": "Hand Crossbow"
+                },
                 "action->Bravery": {
                     "name": "Bravery",
                     "description": "<p>When the Ship Captain rolls a success on a Will save against a fear effect, they get a critical success instead. In addition, any time they gain the @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened} condition, reduce its value by 1.</p>"
@@ -1419,6 +1580,18 @@
                 "spellcastingEntry->Primal Prepared Spells": {
                     "name": "Primal Prepared Spells"
                 },
+                "weapon->Dagger": {
+                    "name": "Dagger",
+                    "description": "<p>This small, bladed weapon is held in one hand and used to stab a creature in close combat. It can also be thrown.</p>"
+                },
+                "weapon->Staff": {
+                    "name": "Staff",
+                    "description": "<p>This long piece of wood can aid in walking and deliver a mighty blow.</p>"
+                },
+                "armor->Leather Armor": {
+                    "name": "Leather Armor",
+                    "description": "<p>A mix of flexible and molded boiled leather, a suit of this type of armor provides some protection with maximum flexibility.</p>"
+                },
                 "strike-melee->Staff": {
                     "name": "Staff"
                 },
@@ -1441,8 +1614,24 @@
                 "spellcastingEntry->Primal Prepared Spells": {
                     "name": "Primal Prepared Spells"
                 },
+                "weapon->Staff": {
+                    "name": "Staff",
+                    "description": "<p>This long piece of wood can aid in walking and deliver a mighty blow.</p>"
+                },
+                "weapon->Heavy Crossbow": {
+                    "name": "Heavy Crossbow",
+                    "description": "<p>This large crossbow is harder to load and more substantial than a regular crossbow, but it packs a greater punch.</p>"
+                },
+                "armor->Leather Armor": {
+                    "name": "Leather Armor",
+                    "description": "<p>A mix of flexible and molded boiled leather, a suit of this type of armor provides some protection with maximum flexibility.</p>"
+                },
                 "equipment->Oak Leaf Mask": {
                     "name": "Oak Leaf Mask"
+                },
+                "consumable->Bolts": {
+                    "name": "Bolts",
+                    "description": "<p>Shorter than traditional arrows but similar in construction, bolts are the ammunition used by crossbows.</p>"
                 },
                 "strike-melee->Staff": {
                     "name": "Staff"
@@ -1510,6 +1699,10 @@
                 },
                 "spellcastingEntry->Primal Innate Spells": {
                     "name": "Primal Innate Spells"
+                },
+                "armor->Leather Armor": {
+                    "name": "Leather Armor",
+                    "description": "<p>A mix of flexible and molded boiled leather, a suit of this type of armor provides some protection with maximum flexibility.</p>"
                 },
                 "strike-melee->Aqueous Fist": {
                     "name": "Aqueous Fist"
@@ -1595,6 +1788,13 @@
             "name": "Quarry Construct",
             "acDetails": "(14 when broken), construct armor",
             "items": {
+                "weapon->Warhammer": {
+                    "name": "Warhammer",
+                    "description": "<p>This weapon has a wooden shaft ending in a large, heavy metal head. The head of the hammer might be single-sided or double-sided, but it's always capable of delivering powerful bludgeoning blows.</p>"
+                },
+                "strike-melee->Warhammer": {
+                    "name": "Warhammer"
+                },
                 "action->Construct Armor (Hardness 4)": {
                     "name": "Construct Armor (Hardness 4)",
                     "description": "<p>Like normal objects, a quarry construct has Hardness. This Hardness reduces any damage it takes by an amount equal to the Hardness. Once a quarry construct is reduced to less than half its Hit Points, or immediately upon being damaged by a critical hit, its construct armor breaks and its Armor Class is reduced to 14.</p>"
@@ -1663,6 +1863,18 @@
             "items": {
                 "spellcastingEntry->Occult Prepared Spells": {
                     "name": "Occult Prepared Spells"
+                },
+                "weapon->Spear": {
+                    "name": "Spear",
+                    "description": "<p>A long metal shaft ending with a metal spike, a spear can be used one-handed as a melee weapon and can be thrown.</p>"
+                },
+                "armor->Padded Armor": {
+                    "name": "Padded Armor",
+                    "description": "<p>This armor is simply a layer of heavy, quilted cloth, but it is sometimes used because it's so inexpensive. Padded armor is easier to damage and destroy than other types of armor. Heavy armor comes with a padded armor undercoat included in its Price, though it loses the comfort trait when worn under heavy armor. You can wear just that padded armor or undercoat to sleep in, if your heavy armor is destroyed, or when otherwise not wearing the full heavy armor. This allows you to keep the armor invested and benefit from the power of any runes on the associated heavy armor, but no one else can wear your heavy armor without the padded undercoat.</p>"
+                },
+                "equipment->Standard Astrolabe": {
+                    "name": "Standard Astrolabe",
+                    "description": "<p><strong>Activate</strong> 1 minute (Interact)</p>\n<p>Astrolabes can be used for navigation in unfamiliar or featureless locations. To use an astrolabe, the holder must be trained in Survival. By spending 1 minute to measure the height of the stars and planets, a holder who knows the time and date can determine the latitude, and a holder who knows their latitude can determine the date and time. An astrolabe also grants a +1 item bonus to checks to identify celestial bodies. A standard astrolabe functions only on steady ground.</p>"
                 },
                 "equipment->Clothing (Winter)": {
                     "name": "Clothing (Winter)",
@@ -1783,6 +1995,10 @@
             "items": {
                 "spellcastingEntry->Occult Prepared Spells": {
                     "name": "Occult Prepared Spells"
+                },
+                "equipment->Hide Clothing": {
+                    "name": "Hide Clothing",
+                    "description": "<p>Winter clothing allows you to negate the damage from severe environmental cold and reduce the damage from extreme cold to that of severe cold.</p>"
                 },
                 "strike-melee->Fist": {
                     "name": "Fist"
@@ -1938,9 +2154,21 @@
                 "spellcastingEntry->Transmutation School Spell": {
                     "name": "Transmutation School Spell"
                 },
+                "weapon->Dagger": {
+                    "name": "Dagger",
+                    "description": "<p>This small, bladed weapon is held in one hand and used to stab a creature in close combat. It can also be thrown.</p>"
+                },
+                "armor->Padded Armor": {
+                    "name": "Padded Armor",
+                    "description": "<p>This armor is simply a layer of heavy, quilted cloth, but it is sometimes used because it's so inexpensive. Padded armor is easier to damage and destroy than other types of armor. Heavy armor comes with a padded armor undercoat included in its Price, though it loses the comfort trait when worn under heavy armor. You can wear just that padded armor or undercoat to sleep in, if your heavy armor is destroyed, or when otherwise not wearing the full heavy armor. This allows you to keep the armor invested and benefit from the power of any runes on the associated heavy armor, but no one else can wear your heavy armor without the padded undercoat.</p>"
+                },
                 "equipment->Stalk Goggles (Greater)": {
                     "name": "Stalk Goggles (Greater)",
                     "description": "<p>These black leather goggle frames have no lenses. Instead, when a character puts them on and invests them, the wearer's eyes transform and lengthen into snail-like eyestalks. The wobbly eyestalks stretch out through the lens holes and up over the wearer's head on lengthened optic nerves.</p>\n<p><strong>Activate</strong> <span class=\"action-glyph\">1</span> envision</p>\n<p><strong>Frequency</strong> once per day</p>\n<hr />\n<p><strong>Effect</strong> By focusing hard, you can watch for enemies in all directions. You gain all-around vision and a +1 item bonus to Perception checks involving sight for 1 minute; during this time, you can't be flanked.</p>\n<p>@UUID[Compendium.pf2e.equipment-effects.Item.kyLLXUQ9zSEvC4py]{Effect: Stalk Goggles (Greater)}</p>"
+                },
+                "equipment->Spellbook": {
+                    "name": "Spellbook",
+                    "description": "<p>A spellbook holds the written knowledge necessary to learn and prepare various spells, a necessity for wizards (who typically get one for free) and a useful luxury for other spellcasters looking to learn additional spells. Each spellbook can hold up to 100 spells. The Price listed is for a blank spellbook.</p>\n<p>@UUID[Compendium.pf2e.spells-srd.Item.f8hRqLJaxBVhF1u0]{Acid Arrow}</p>\n<p>@UUID[Compendium.pf2e.spells-srd.Item.ZxHC7V7HtjUsB8zH]{Blazing Bolt}</p>\n<p>@UUID[Compendium.pf2e.spells-srd.Item.5KobTMrZeZxuXMgl]{Gecko Grip}</p>\n<p>@UUID[Compendium.pf2e.spells-srd.Item.gKKqvLohtrSJj3BM]{Force Barrage}</p>\n<p>@UUID[Compendium.pf2e.spells-srd.Item.r3NeUnsgt9mS03Sn]{Shocking Grasp}</p>\n<p>@UUID[Compendium.pf2e.spells-srd.Item.pwzdSlJgYqN7bs2w]{Telekinetic Hand}</p>\n<p>@UUID[Compendium.pf2e.spells-srd.Item.TVKNbcgTee19PXZR]{Shield}</p>\n<p>@UUID[Compendium.pf2e.spells-srd.Item.uZK2BYzPnxUBnDjr]{Tangle Vine}</p>"
                 },
                 "equipment->Ring With Nethys Mask Sigil": {
                     "name": "Ring With Nethys Mask Sigil",
@@ -2001,11 +2229,40 @@
             "allSavesBonus": "+2 status to all saves vs. poison",
             "hpDetails": "immortal flesh",
             "items": {
+                "weapon->Blowgun": {
+                    "name": "Blowgun",
+                    "description": "<p>This long, narrow tube is used for shooting blowgun darts, using only the power of a forcefully exhaled breath.</p>"
+                },
+                "weapon->Shield Spikes": {
+                    "name": "Shield Spikes",
+                    "description": "<p>These metal spikes are strategically placed on the defensive side of the shield to deal piercing damage with a shield bash.</p>"
+                },
+                "weapon->War Razor": {
+                    "name": "War Razor",
+                    "description": "<p>A war razor is an exaggerated version of the barbers' tool. It is a brittle but extremely sharp weapon that is very easy to slip into a pocket or sleeve.</p>"
+                },
+                "shield->Steel Shield": {
+                    "name": "Steel Shield",
+                    "description": "<p>Like wooden shields, steel shields come in a variety of shapes and sizes. Though more expensive than wooden shields, they are much more durable.</p>\n<table class=\"pf2e\">\n<thead>\n<tr>\n<th>Hardness</th>\n<th>HP</th>\n<th>BT</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>5</td>\n<td>20</td>\n<td>10</td>\n</tr>\n</tbody>\n</table>"
+                },
                 "equipment->Keys to the Front Door and Dungeon Cell": {
                     "name": "Keys to the Front Door and Dungeon Cell"
                 },
+                "consumable->Blowgun Darts with Harvester Poison": {
+                    "name": "Blowgun Darts with Harvester Poison",
+                    "description": "<p>These thin, light darts are typically made of hardwood and stabilized with fletching of down or fur. They are often hollow so they can be used to deliver poison.</p>"
+                },
                 "strike-melee->Claw": {
                     "name": "Claw"
+                },
+                "strike-melee->Shield Spikes": {
+                    "name": "Shield Spikes"
+                },
+                "strike-melee->War Razor": {
+                    "name": "War Razor"
+                },
+                "strike-ranged->Blowgun": {
+                    "name": "Blowgun"
                 },
                 "action->+2 Status to All Saves vs. Poison": {
                     "name": "+2 Status to All Saves vs. Poison"
@@ -2054,6 +2311,26 @@
                 },
                 "spellcastingEntry->Bard Composition Spells": {
                     "name": "Bard Composition Spells"
+                },
+                "weapon->Sap": {
+                    "name": "Sap",
+                    "description": "<p>A sap has a soft wrapping around a dense core, typically a leather sheath around a lead rod. Its head is wider than its grip to disperse the force of a blow, as the weapon's purpose is to knock out its victim rather than to draw blood.</p>"
+                },
+                "weapon->Shortsword": {
+                    "name": "Shortsword",
+                    "description": "<p>These blades come in a variety of shapes and styles, but they are typically 2 feet long.</p>"
+                },
+                "equipment->Disguise Kit": {
+                    "name": "Disguise Kit",
+                    "description": "<p>This small wooden box contains cosmetics, false facial hair, spirit gum, and a few simple wigs. You usually need a disguise kit to set up a disguise in order to Impersonate someone using the Deception skill. If you've crafted a large number of disguises, you can replenish your cosmetics supply with replacement cosmetics suitable for the type of your disguise kit.</p>"
+                },
+                "equipment->Lute": {
+                    "name": "Lute",
+                    "description": "<p>Handheld instruments include bagpipes, a small set of chimes, small drums, fiddles and viols, flutes and recorders, small harps, lutes, trumpets, and similarly sized instruments. The GM might rule that an especially large handheld instrument (like a tuba) has greater Bulk. Heavy instruments such as large drums, a full set of chimes, and keyboard instruments are less portable and generally need to be stationary while played.</p>"
+                },
+                "equipment->Thieves' Tools": {
+                    "name": "Thieves' Tools",
+                    "description": "<p>You need thieves' tools to Pick Locks or Disable Devices (of some types) using the Thievery skill.</p>\n<p>If your thieves' tools are broken, you can repair them by replacing the lock picks with @UUID[Compendium.pf2e.equipment-srd.Item.Sw7MBLASN3xK4Y44]{Replacement Picks} appropriate to your tools; this doesn't require using the Repair action.</p>"
                 },
                 "strike-melee->Shortsword": {
                     "name": "Shortsword"

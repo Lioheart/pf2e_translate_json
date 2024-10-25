@@ -5,12 +5,26 @@
             "name": "Abendego Brute",
             "blurb": "Human bruiser",
             "items": {
+                "weapon->Fighter's Fork": {
+                    "name": "Fighter's Fork",
+                    "description": "<p>This +1 trident, usually engraved with a decorative pattern resembling fish scales, is a common weapon among warriors of aquatic ancestries.</p>\n<p><strong>Activate</strong> <span class=\"action-glyph\">A</span> Interact</p>\n<hr />\n<p><strong>Effect</strong> You extend or shorten the trident's haft. When extended, the trident requires two hands to wield and gains the reach trait, but loses the trident's normal thrown trait.</p>"
+                },
+                "armor->Scale Mail": {
+                    "name": "Scale Mail",
+                    "description": "<p>Scale mail consists of many metal scales sewn onto a reinforced leather backing, often in the form of a long shirt that protects the torso, arms, and legs.</p>"
+                },
                 "equipment->Religious Symbol of Norgorber (Wooden)": {
                     "name": "Religious Symbol of Norgorber (Wooden)",
                     "description": "<p>This piece of wood or silver is emblazoned with an image representing a deity. Some divine spellcasters, such as clerics, can use a religious symbol of their deity as a divine focus to use certain abilities and cast some spells. A religious symbol must be held in one hand to use it.</p>"
                 },
+                "strike-melee->Fighter's Fork": {
+                    "name": "Fighter's Fork"
+                },
                 "strike-melee->Fist": {
                     "name": "Fist"
+                },
+                "strike-ranged->Fighter's Fork": {
+                    "name": "Fighter's Fork"
                 },
                 "action->No Escape": {
                     "name": "No Escape",
@@ -29,6 +43,18 @@
             "name": "Abendego Jailer",
             "blurb": "Human prison guard",
             "items": {
+                "weapon->Mancatcher": {
+                    "name": "Mancatcher",
+                    "description": "<p>This forked, barbed longspear is called a mancatcher. Special training allows it to be used to grab foes and hold them in place.</p>"
+                },
+                "weapon->Dagger": {
+                    "name": "Dagger",
+                    "description": "<p>This small, bladed weapon is held in one hand and used to stab a creature in close combat. It can also be thrown.</p>"
+                },
+                "armor->Scale Mail": {
+                    "name": "Scale Mail",
+                    "description": "<p>Scale mail consists of many metal scales sewn onto a reinforced leather backing, often in the form of a long shirt that protects the torso, arms, and legs.</p>"
+                },
                 "equipment->Manacles (Average)": {
                     "name": "Manacles (Average)",
                     "description": "<p>You can manacle someone who is willing or otherwise at your mercy as an exploration activity taking 10-30 seconds depending on the creature's size and how many manacles you apply. A two-legged creature with its legs bound takes a -15-foot circumstance penalty to its Speeds, and a two-handed creature with its wrists bound has to succeed at a @Check[flat|dc:5] any time it uses a manipulate action or else that action fails. This DC may be higher depending on how tightly the manacles constrain the hands. A creature bound to a stationary object is immobilized. For creatures with more or fewer limbs, the GM determines what effect manacles have, if any. Freeing a creature from average manacles requires four successful @Check[thievery|dc:27|traits:action:pick-a-lock] checks.</p>"
@@ -36,6 +62,15 @@
                 "equipment->Religious Symbol of Norgorber (Wooden)": {
                     "name": "Religious Symbol of Norgorber (Wooden)",
                     "description": "<p>This piece of wood or silver is emblazoned with an image representing a deity. Some divine spellcasters, such as clerics, can use a religious symbol of their deity as a divine focus to use certain abilities and cast some spells. A religious symbol must be held in one hand to use it.</p>"
+                },
+                "strike-melee->Mancatcher": {
+                    "name": "Mancatcher"
+                },
+                "strike-melee->Dagger": {
+                    "name": "Dagger"
+                },
+                "strike-ranged->Dagger": {
+                    "name": "Dagger"
                 },
                 "action->Attack of Opportunity": {
                     "name": "Attack of Opportunity"
@@ -60,9 +95,25 @@
                 "spellcastingEntry->Focus Divine Spells": {
                     "name": "Focus Divine Spells"
                 },
+                "weapon->Dagger": {
+                    "name": "Dagger",
+                    "description": "<p>This small, bladed weapon is held in one hand and used to stab a creature in close combat. It can also be thrown.</p>"
+                },
+                "weapon->Shortsword": {
+                    "name": "Shortsword",
+                    "description": "<p>These blades come in a variety of shapes and styles, but they are typically 2 feet long.</p>"
+                },
+                "armor->Studded Leather Armor": {
+                    "name": "Studded Leather Armor",
+                    "description": "<p>This leather armor is reinforced with metal studs and sometimes small metal plates, providing most of the flexibility of leather armor with more robust protection.</p>"
+                },
                 "equipment->Religious Symbol of Norgorber (Wooden)": {
                     "name": "Religious Symbol of Norgorber (Wooden)",
                     "description": "<p>This piece of wood or silver is emblazoned with an image representing a deity. Some divine spellcasters, such as clerics, can use a religious symbol of their deity as a divine focus to use certain abilities and cast some spells. A religious symbol must be held in one hand to use it.</p>"
+                },
+                "consumable->Shadow Essence": {
+                    "name": "Shadow Essence",
+                    "description": "<p>Distilled from the Plane of Shadow, this oily substance imposes tenebrous effects. The enfeebled condition from shadow essence lasts for 24 hours.</p>\n<hr />\n<p><strong>Activate</strong> <span class=\"action-glyph\">2</span> Interact (Injury)</p>\n<p><strong>Saving Throw</strong> @Check[fortitude|dc:29]</p>\n<p><strong>Maximum Duration</strong> 6 rounds</p>\n<p><strong>Stage 1</strong> @Damage[3d6[void]] damage and @Damage[2d6[poison]] damage (1 round)</p>\n<p><strong>Stage 2</strong> @Damage[3d6[void]] damage, @Damage[2d6[poison]] damage, and @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 1} (1 round)</p>\n<p><strong>Stage 3</strong> @Damage[3d6[void]] damage, @Damage[2d6[poison]] damage, and enfeebled 2 (1 round)</p>"
                 },
                 "strike-melee->Shortsword": {
                     "name": "Shortsword"
@@ -106,6 +157,30 @@
             "name": "Ajbal Kimon",
             "blurb": "NE male human gang leader",
             "items": {
+                "weapon->Dagger": {
+                    "name": "Dagger",
+                    "description": "<p>This small, bladed weapon is held in one hand and used to stab a creature in close combat. It can also be thrown.</p>"
+                },
+                "weapon->Trident": {
+                    "name": "Trident",
+                    "description": "<p>This three-pronged, spear-like weapon typically has a 4-foot shaft. Like a spear, it can be wielded with one hand or thrown.</p>"
+                },
+                "armor->Scale Mail": {
+                    "name": "Scale Mail",
+                    "description": "<p>Scale mail consists of many metal scales sewn onto a reinforced leather backing, often in the form of a long shirt that protects the torso, arms, and legs.</p>"
+                },
+                "strike-melee->Trident": {
+                    "name": "Trident"
+                },
+                "strike-melee->Dagger": {
+                    "name": "Dagger"
+                },
+                "strike-ranged->Trident": {
+                    "name": "Trident"
+                },
+                "strike-ranged->Dagger": {
+                    "name": "Dagger"
+                },
                 "action->Deny Advantage": {
                     "name": "Deny Advantage",
                     "description": "<p>Ajbal isn't @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} to creatures of 13th level or lower that are @UUID[Compendium.pf2e.conditionitems.Item.iU0fEDdBp3rXpTMC]{Hidden}, undetected, flanking, or using surprise attack.</p>"
@@ -448,6 +523,10 @@
                 "spellcastingEntry->Divine Innate Spells": {
                     "name": "Divine Innate Spells"
                 },
+                "weapon->Scythe": {
+                    "name": "Scythe",
+                    "description": "<p>Derived from a farming tool used to mow down long grains and cereals, this weapon has a long wooden shaft with protruding handles, capped with a curved blade set at a right angle.</p>"
+                },
                 "condition->Quickened": {
                     "name": "Quickened",
                     "description": "<p>You gain 1 additional action at the start of your turn each round. Many effects that make you quickened specify the types of actions you can use with this additional action. If you become quickened from multiple sources, you can use the extra action you've been granted for any single action allowed by any of the effects that made you quickened. Because quickened has its effect at the start of your turn, you don't immediately gain actions if you become quickened during your turn.</p>"
@@ -586,6 +665,10 @@
                 "spellcastingEntry->Divine Innate Spells": {
                     "name": "Divine Innate Spells"
                 },
+                "weapon->Spear": {
+                    "name": "Spear",
+                    "description": "<p>A long metal shaft ending with a metal spike, a spear can be used one-handed as a melee weapon and can be thrown.</p>"
+                },
                 "strike-melee->Holy Spear": {
                     "name": "Holy Spear"
                 },
@@ -681,8 +764,37 @@
             "blurb": "Female graveknight",
             "hpDetails": "void healing, rejuvenation",
             "items": {
+                "weapon->Heavy Crossbow": {
+                    "name": "Heavy Crossbow",
+                    "description": "<p>This large crossbow is harder to load and more substantial than a regular crossbow, but it packs a greater punch.</p>"
+                },
+                "weapon->Trident": {
+                    "name": "Trident",
+                    "description": "<p>This three-pronged, spear-like weapon typically has a 4-foot shaft. Like a spear, it can be wielded with one hand or thrown.</p>"
+                },
+                "armor->Breastplate": {
+                    "name": "Breastplate",
+                    "description": "<p>Though referred to as a breastplate, this type of armor consists of several pieces of plate or @UUID[Compendium.pf2e.equipment-srd.Item.pRoikbRo5HFW6YUB]{Half Plate} armor that protect the torso, chest, neck, and sometimes the hips and lower legs. It strategically grants some of the protection of plate while allowing greater flexibility and speed.</p>"
+                },
+                "consumable->Bolts": {
+                    "name": "Bolts",
+                    "description": "<p>Shorter than traditional arrows but similar in construction, bolts are the ammunition used by crossbows.</p>"
+                },
+                "consumable->Storm Bolts": {
+                    "name": "Storm Bolts",
+                    "description": "<p><strong>Activate</strong> <span class=\"action-glyph\">A</span> Interact</p>\n<p>The head of this bolt is made from gleaming copper.</p>\n<p>When an activated <em>storm bolt</em> hits a target, it is buffeted by raging winds and struck by a bolt of lightning that deals @Damage[3d12[electricity]] damage and the target must attempt a @Check[reflex|dc:25] saving throw.</p>\n<p>If this bolt is shot from a weapon with a <em>shock</em> property rune, the save DC increases to 27, though the attack doesn't benefit from the <em>shock</em> property rune itself.</p>\n<hr />\n<p><strong>Critical Success</strong> The foe is unaffected.</p>\n<p><strong>Success</strong> The foe takes half damage and isn't affected by the wind.</p>\n<p><strong>Failure</strong> The foe takes full damage and is buffeted by winds for 1 round, taking a -2 circumstance penalty to ranged attack rolls and a -10-foot circumstance penalty to its fly Speed.</p>\n<p><strong>Critical Failure</strong> As failure, but the foe takes double damage.</p>"
+                },
+                "strike-melee->Shock Trident": {
+                    "name": "Shock Trident"
+                },
                 "strike-melee->Fist": {
                     "name": "Fist"
+                },
+                "strike-ranged->Shock Trident": {
+                    "name": "Shock Trident"
+                },
+                "strike-ranged->Shock Heavy Crossbow": {
+                    "name": "Shock Heavy Crossbow"
                 },
                 "action->No Escape": {
                     "name": "No Escape",
@@ -733,6 +845,18 @@
             "items": {
                 "spellcastingEntry->Primal Innate Spells": {
                     "name": "Primal Innate Spells"
+                },
+                "weapon->Spear": {
+                    "name": "Spear",
+                    "description": "<p>A long metal shaft ending with a metal spike, a spear can be used one-handed as a melee weapon and can be thrown.</p>"
+                },
+                "weapon->Maul": {
+                    "name": "Maul",
+                    "description": "<p>Mauls are massive warhammers that must be swung with two hands.</p>"
+                },
+                "armor->Leather Armor": {
+                    "name": "Leather Armor",
+                    "description": "<p>A mix of flexible and molded boiled leather, a suit of this type of armor provides some protection with maximum flexibility.</p>"
                 },
                 "strike-melee->Maul": {
                     "name": "Maul"
@@ -820,8 +944,26 @@
             "name": "Boggard Hunter",
             "speedsDetails": "swamp stride",
             "items": {
+                "weapon->Greatclub": {
+                    "name": "Greatclub",
+                    "description": "<p>While many greatclubs are intricately carved, others are little more than a sturdy tree branch. These massive clubs are too heavy to wield with only one hand.</p>"
+                },
+                "weapon->Javelin": {
+                    "name": "Javelin",
+                    "description": "<p>This thin spear is well balanced for throwing but is not designed for melee use.</p>"
+                },
+                "armor->Studded Leather Armor": {
+                    "name": "Studded Leather Armor",
+                    "description": "<p>This leather armor is reinforced with metal studs and sometimes small metal plates, providing most of the flexibility of leather armor with more robust protection.</p>"
+                },
+                "strike-melee->Greatclub": {
+                    "name": "Greatclub"
+                },
                 "strike-melee->Tongue": {
                     "name": "Tongue"
+                },
+                "strike-ranged->Javelin": {
+                    "name": "Javelin"
                 },
                 "action->Sneak Attack": {
                     "name": "Sneak Attack",
@@ -869,7 +1011,7 @@
                 },
                 "action->Ridden Construct": {
                     "name": "Ridden Construct",
-                    "description": "<p>The construct is piloted by a @UUID[Compendium.pf2e.pathfinder-bestiary.Actor.BeptBpCJ4Ny4biOH]{Leaf Leshy} who can be targeted separately but has greater cover. The leshy can't take actions of their own while inside the construct, other than to leave it, which takes 1 minute.</p>"
+                    "description": "<p>The construct is piloted by a @UUID[Compendium.pf2e.pathfinder-monster-core.Actor.v1UK3IwCB8wCbL3L]{Leaf Leshy} who can be targeted separately but has greater cover. The leshy can't take actions of their own while inside the construct, other than to leave it, which takes 1 minute.</p>"
                 },
                 "action->Hammer Block": {
                     "name": "Hammer Block",
@@ -1090,6 +1232,22 @@
             "publicNotes": "<p>In rough Akitonian cities like Seldo, shobhad bruisers and fist-fighters act as protection for businesses and enforcers for crime bosses. Shobhad enforcers are more rare and far more dangerous. In the wilds of Akiton, shobhad enforcers protect wealthy caravans using combat techniques honed and proven over multiple generations to devastate any creature that might mistake the caravan as an attractive target for a raid. \"Enforcer\" is a loose translation of a word in the Shobhad language that is only granted to a warrior who has proven themselves in combat against one of the deadly threats of the Akitonian desert, such as gluttonworms or ikeshti riveners. Every enforcer is a battle-tested veteran with the scars to prove their prowess.</p>\n<hr />\n<p>These four-armed humanoids often live as nomads on Akiton. Self-sufficient and able to construct the equipment they need to survive from natural materials, shobhads traditionally avoid large cities and the smaller people of the planet, except to engage in trade. Some shobhads eschew these traditions, finding life in urban centers to be more appealing. Rifts between these shobhads and those who continue to lead nomadic lives in the Akitonian wilderness sometimes lead to clashes when members of the two societies meet.</p>\n<p>Shobhads are highly sought after for their martial expertise, unparalleled knowledge of Akiton's wilds, and unbreakable codes of honor. These warriors may operate independently, in their traditional clans, or in modern mercenary companies that blend ancestral traditions with the needs of modern military freelancers.</p>",
             "blurb": "Male shobhad enforcer",
             "items": {
+                "weapon->Greatsword": {
+                    "name": "Greatsword",
+                    "description": "<p>This immense two-handed sword is nearly as tall as its wielder. Its lower blade is often somewhat dulled to allow it to be gripped for extra leverage in close-quarter fights.</p>"
+                },
+                "weapon->+2 Striking Handwraps of Mighty Blows": {
+                    "name": "+2 Striking Handwraps of Mighty Blows",
+                    "description": "<p>As you invest these embroidered strips of cloth, you must meditate and slowly wrap them around your hands. These handwraps have weapon runes etched into them to give your unarmed attacks the benefits of those runes, making your unarmed attacks work like magic weapons. For example, <em>+1 striking handwraps of mighty blows</em> would give you a +1 item bonus to attack rolls with your unarmed attacks and increase the damage of your unarmed attacks from one weapon die to two (normally 2d4 instead of 1d4, but if your fists have a different weapon damage die or you have other unarmed attacks, use two of that die size instead).</p>\n<p>You can upgrade, add, and transfer runes to and from the handwraps just as you would for a weapon, and you can attach talismans to the handwraps. Treat the handwraps as melee weapons of the brawling group with light Bulk for these purposes. Property runes apply only when they would be applicable to the unarmed attack you're using. For example, a property that must be applied to a slashing weapon wouldn't function when you attacked with a fist, but you would gain its benefits if you attacked with a claw or some other slashing unarmed attack.</p>"
+                },
+                "armor->Chain Mail": {
+                    "name": "Chain Mail",
+                    "description": "<p>A suit of chain mail consists of several pieces of armor composed of small metal rings linked together in a protective mesh. It typically includes a chain shirt, leggings, a pair of arms, and a coif, collectively protecting most of the body.</p>"
+                },
+                "strike-melee->Greatsword": {
+                    "name": "Greatsword",
+                    "description": "<p>plus 3d6 precision damage</p>"
+                },
                 "strike-melee->Fist": {
                     "name": "Fist",
                     "description": "<p>plus 3d6 precision damage</p>"
@@ -1139,7 +1297,7 @@
                 },
                 "action->Engulf": {
                     "name": "Engulf",
-                    "description": "<p>@Check[reflex|dc:37] save, @Damage[5d10[acid]] damage, @UUID[Compendium.pf2e.actionspf2e.Item.SkZAQRkLLkmBQNB9]{Escape} DC 37, Rupture 20. A crawling slurry regains [[/r 30[healing]]]{30 Hit Points} if a living creature it is engulfing dies.</p>\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Engulf]</p>"
+                    "description": "<p>@Check[reflex|dc:37] save, @Damage[5d10[acid]] damage, @UUID[Compendium.pf2e.actionspf2e.Item.SkZAQRkLLkmBQNB9]{Escape} DC 37, Rupture 20. A crawling slurry regains @Damage[30[healing]] Hit Points if a living creature it is engulfing dies.</p>\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Engulf]</p>"
                 },
                 "action->Grab": {
                     "name": "Grab"
@@ -1151,6 +1309,14 @@
             "blurb": "Human devotee",
             "allSavesBonus": "evasion",
             "items": {
+                "weapon->Dueling Pistol": {
+                    "name": "Dueling Pistol",
+                    "description": "<p>Made for settling disputes when diplomacy fails, dueling pistols are finely crafted and made to fit easily into a holster or pocket. Noble and wealthy merchants in both Alkenstar and Dongun Hold often own matching pairs of dueling pistols in case they're called upon to address a challenge-though this practice has become increasingly rare in the modern age.</p>"
+                },
+                "weapon->+2 Striking Handwraps of Mighty Blows": {
+                    "name": "+2 Striking Handwraps of Mighty Blows",
+                    "description": "<p>As you invest these embroidered strips of cloth, you must meditate and slowly wrap them around your hands. These handwraps have weapon runes etched into them to give your unarmed attacks the benefits of those runes, making your unarmed attacks work like magic weapons. For example, <em>+1 striking handwraps of mighty blows</em> would give you a +1 item bonus to attack rolls with your unarmed attacks and increase the damage of your unarmed attacks from one weapon die to two (normally 2d4 instead of 1d4, but if your fists have a different weapon damage die or you have other unarmed attacks, use two of that die size instead).</p>\n<p>You can upgrade, add, and transfer runes to and from the handwraps just as you would for a weapon, and you can attach talismans to the handwraps. Treat the handwraps as melee weapons of the brawling group with light Bulk for these purposes. Property runes apply only when they would be applicable to the unarmed attack you're using. For example, a property that must be applied to a slashing weapon wouldn't function when you attacked with a fist, but you would gain its benefits if you attacked with a claw or some other slashing unarmed attack.</p>"
+                },
                 "consumable->Thasteron Rounds (Dueling Pistol)": {
                     "name": "Thasteron Rounds (Dueling Pistol)",
                     "description": "<p>Firearms require ammunition consisting of a projectile and black powder. A round of ammo can vary in its composition but is typically either a prepackaged paper cartridge, including wadding, bullet, and black powder, or loose shot packed in manually. Some weapons, like hand cannons and blunderbusses, can fire other materials, but their ammunition has the same Price due to the cost of the black powder. Because making rounds of firearm ammunition requires creating black powder, you need the @UUID[Compendium.pf2e.feats-srd.Item.is3Oz9wt11lNq62K]{Alchemical Crafting} skill feat to make them. Firearm rounds are a valid option for magical ammunition, just like arrows or bolts. Crafting magical firearm ammunition requires you to be able to craft both alchemical and magical items.</p>"
@@ -1160,6 +1326,9 @@
                 },
                 "strike-melee->Thousand Wounds": {
                     "name": "Thousand Wounds"
+                },
+                "strike-ranged->Dueling Pistol": {
+                    "name": "Dueling Pistol"
                 },
                 "action->Ageless": {
                     "name": "Ageless",
@@ -1191,6 +1360,17 @@
             "name": "Cyclops Bully",
             "blurb": "Cyclops bruisers",
             "items": {
+                "weapon->Greatclub": {
+                    "name": "Greatclub",
+                    "description": "<p>While many greatclubs are intricately carved, others are little more than a sturdy tree branch. These massive clubs are too heavy to wield with only one hand.</p>"
+                },
+                "armor->Hide Armor": {
+                    "name": "Hide Armor",
+                    "description": "<p>A mix of furs, sturdy hide, and sometimes molded boiled leather, this armor provides protection due to its layers of leather, though its bulkiness slows the wearer down and decreases mobility.</p>"
+                },
+                "strike-melee->Greatclub": {
+                    "name": "Greatclub"
+                },
                 "strike-melee->Fist": {
                     "name": "Fist"
                 },
@@ -1408,6 +1588,10 @@
                 "spellcastingEntry->Arcane Prepared Spells": {
                     "name": "Arcane Prepared Spells"
                 },
+                "equipment->Diadem of Intellect": {
+                    "name": "Diadem of Intellect",
+                    "description": "<p>An elegant, colorful gem cut into a complex geometric pattern is slotted into a narrow metal band that fits around your brow. You gain a +3 item bonus to checks to Recall Knowledge, regardless of the skill.</p>\n<p>When you invest the diadem, you either increase your Intelligence score by 2 or increase it to 18, whichever would give you a higher score.</p>\n<p>This gives you additional trained skills and languages, as normal for increasing your Intelligence score. You must select skills and languages the first time you invest the item, and whenever you invest the same <em>diadem of intellect</em>, you get the same skills and languages you chose the first time.</p>\n<p><strong>Activate</strong> <span class=\"action-glyph\">A</span> envision</p>\n<p><strong>Frequency</strong> once per hour</p>\n<hr />\n<p><strong>Effect</strong> You gain the effects of @UUID[Compendium.pf2e.spells-srd.Item.ZYoC630tNGutgbE0]{Hypercognition}.</p>"
+                },
                 "consumable->Wand of Inexhaustible Cynicism (Level 7)": {
                     "name": "Wand of Inexhaustible Cynicism (Level 7)",
                     "description": "<p>@UUID[Compendium.pf2e.spells-srd.Item.gMbrNFKz9NP3TR4s]{Inexhaustible Cynicism}</p><hr /><p>This baton is about a foot long and contains a single spell. The appearance typically relates to the spell within.</p>\n<p><strong>Activate</strong> Cast a Spell</p>\n<p><strong>Frequency</strong> once per day, plus overcharge</p>\n<hr />\n<p><strong>Effect</strong> You Cast the Spell at the indicated level.</p>\n<p><strong>Craft Requirements</strong> Supply a listed-level casting of the spell.</p>\n<hr />\n<p><em>Note: To create a scroll or wand of a specific spell, drag the spell from the compendium or compendium browser into the inventory of a PC, NPC, or loot actor.</em></p>"
@@ -1503,7 +1687,7 @@
                 },
                 "consumable->Elixir of Life (Lesser) (Infused)": {
                     "name": "Elixir of Life (Lesser) (Infused)",
-                    "description": "<p><strong>Activate</strong> <span class=\"action-glyph\">A</span> Interact</p>\n<p>Elixirs of life accelerate a living creatures natural healing processes and immune system. Upon drinking this elixir, you regain [[/r (3d6+6)[healing]]]{3d6+6 Hit Points} and gain +1 item bonus to saving throws against diseases and poisons for 10 minutes.</p>\n<p>@UUID[Compendium.pf2e.equipment-effects.Item.EpB7yJPEuG6ez4z3]{Effect: Elixir of Life (Lesser)}</p>"
+                    "description": "<p><strong>Activate</strong> <span class=\"action-glyph\">A</span> Interact</p>\n<p>Elixirs of life accelerate a living creatures natural healing processes and immune system. Upon drinking this elixir, you regain @Damage[(3d6+6)[healing]] Hit Points and gain +1 item bonus to saving throws against diseases and poisons for 10 minutes.</p>\n<p>@UUID[Compendium.pf2e.equipment-effects.Item.lPRuIRbu0rHBkoKY]{Effect: Elixir of Life}</p>"
                 },
                 "strike-melee->Spear": {
                     "name": "Spear"
@@ -1662,6 +1846,15 @@
                     "name": "Thieves' Tools (Infiltrator)",
                     "description": "<p>You need thieves' tools to @UUID[Compendium.pf2e.actionspf2e.Item.2EE4aF4SZpYf0R6H]{Pick Locks} or @UUID[Compendium.pf2e.actionspf2e.Item.cYdz2grcOcRt4jk6]{Disable Devices} (of some types) using the Thievery skill. Infiltrator thieves' tools add a +1 item bonus to checks to Pick Locks and Disable Devices.</p>\n<p>If your thieves' tools are broken, you can repair them by replacing the lock picks with @UUID[Compendium.pf2e.equipment-srd.Item.BznmPaRjI4Orb0IH]{Replacement Picks} appropriate to your tools; this doesn't require using the Repair action. If you wear your thieves' tools, you can draw and replace them as part of the action that uses them.</p>"
                 },
+                "strike-melee->Dagger": {
+                    "name": "Dagger"
+                },
+                "strike-melee->Habu's Cudgel": {
+                    "name": "Habu's Cudgel"
+                },
+                "strike-ranged->Dagger": {
+                    "name": "Dagger"
+                },
                 "action->Deny Advantage": {
                     "name": "Deny Advantage",
                     "description": "<p>Froglegs isn't @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} to creatures of 8th level or lower that are @UUID[Compendium.pf2e.conditionitems.Item.iU0fEDdBp3rXpTMC]{Hidden}, @UUID[Compendium.pf2e.conditionitems.Item.VRSef5y1LmL2Hkjf]{Undetected}, flanking, or using surprise attack.</p>"
@@ -1688,6 +1881,18 @@
             "items": {
                 "spellcastingEntry->Primal Innate Spells": {
                     "name": "Primal Innate Spells"
+                },
+                "weapon->Deflecting Branch": {
+                    "name": "Deflecting Branch",
+                    "description": "<p>This massive branch has been cut into a general club shape but still bears several knots and has a number of runes carved along its length. The <em>deflecting branch</em> is a <em>+2 greater striking greatclub</em>.</p>\n<p>On a critical hit, you knock the target @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone}.</p>\n<hr />\n<p><strong>Activate</strong> <span class=\"action-glyph\">r</span> Interact</p>\n<p><strong>Frequency</strong> once per minute</p>\n<p><strong>Trigger</strong> You are the target of a physical ranged attack</p>\n<p><strong>Requirements</strong> You're aware of the attack and are not @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} against it</p>\n<hr />\n<p><strong>Effect</strong> You gain a +4 circumstance bonus to AC against the triggering attack. If the attack misses, you have knocked it away. You can't use this ability to deflect unusually massive ranged projectiles (such as boulders or ballista bolts).</p>\n<hr />\n<p><strong>Activate</strong> <span class=\"action-glyph\">f</span> Interact</p>\n<p><strong>Frequency</strong> once per hour</p>\n<p><strong>Trigger</strong> You knock away a physical ranged attack by using the deflecting branch's other activation</p>\n<hr />\n<p><strong>Effect</strong> You swing the club and reflect the oncoming attack. The attack is redirected toward a creature within 60 feet. Make a ranged attack against the creature using your highest proficiency with a ranged weapon.</p>"
+                },
+                "weapon->Spear": {
+                    "name": "Spear",
+                    "description": "<p>A long metal shaft ending with a metal spike, a spear can be used one-handed as a melee weapon and can be thrown.</p>"
+                },
+                "armor->Leather Armor": {
+                    "name": "Leather Armor",
+                    "description": "<p>A mix of flexible and molded boiled leather, a suit of this type of armor provides some protection with maximum flexibility.</p>"
                 },
                 "strike-melee->Deflecting Branch": {
                     "name": "Deflecting Branch"
@@ -1942,7 +2147,7 @@
                 },
                 "action->(Golem) Golem Antimagic": {
                     "name": "(Golem) Golem Antimagic",
-                    "description": "<p>harmed by <em>cold</em>([[/r {6d10}]]{6d10 damage}, [[/r {2d8}]]{2d8 damage} from areas or persistent damage); healed by <em>fire</em> (area [[/r 2d8[healing]]] Hit Points); slowed by <em>acid</em></p>\n<hr />\n<p>A golem is immune to spells and magical abilities other than its own, but each type of golem is affected by a few types of magic in special ways. These exceptions are listed in shortened form in the golem's stat block, with the full rules appearing here. If an entry lists multiple types (such as \"cold and water\"), either type of spell can affect the golem.</p>\n<ul>\n<li><strong>Harmed By</strong> Any magic of this type that targets the golem causes it to take the listed amount of damage (this damage has no type) instead of the usual effect. If the golem starts its turn in an area of magic of this type or is affected by a persistent effect of the appropriate type, it takes the damage listed in the parenthetical.</li>\n<li><strong>Healed By</strong> Any magic of this type that targets the golem makes the golem lose the slowed condition and gain HP equal to half the damage the spell would have dealt. If the golem starts its turn in an area of this type of magic, it gains the HP listed in the parenthetical.</li>\n<li><strong>Slowed By</strong> Any magic of this type that targets the golem causes it to be @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1} for [[/r 2d6 #rounds]]{2d6 rounds} instead of the usual effect. If the golem starts its turn in an area of this type of magic, it's slowed 1 for that round.</li>\n<li><strong>Vulnerable To</strong> Each golem is vulnerable to one or more specific spells, with the effects described in its stat block.</li>\n</ul>"
+                    "description": "<p>harmed by <em>cold</em>([[/r {6d10}]]{6d10 damage}, [[/r {2d8}]]{2d8 damage} from areas or persistent damage); healed by <em>fire</em> (area @Damage[2d8[healing]] Hit Points); slowed by <em>acid</em></p>\n<hr />\n<p>A golem is immune to spells and magical abilities other than its own, but each type of golem is affected by a few types of magic in special ways. These exceptions are listed in shortened form in the golem's stat block, with the full rules appearing here. If an entry lists multiple types (such as \"cold and water\"), either type of spell can affect the golem.</p>\n<ul>\n<li><strong>Harmed By</strong> Any magic of this type that targets the golem causes it to take the listed amount of damage (this damage has no type) instead of the usual effect. If the golem starts its turn in an area of magic of this type or is affected by a persistent effect of the appropriate type, it takes the damage listed in the parenthetical.</li>\n<li><strong>Healed By</strong> Any magic of this type that targets the golem makes the golem lose the slowed condition and gain HP equal to half the damage the spell would have dealt. If the golem starts its turn in an area of this type of magic, it gains the HP listed in the parenthetical.</li>\n<li><strong>Slowed By</strong> Any magic of this type that targets the golem causes it to be @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1} for [[/r 2d6 #rounds]]{2d6 rounds} instead of the usual effect. If the golem starts its turn in an area of this type of magic, it's slowed 1 for that round.</li>\n<li><strong>Vulnerable To</strong> Each golem is vulnerable to one or more specific spells, with the effects described in its stat block.</li>\n</ul>"
                 },
                 "action->Death Throes": {
                     "name": "Death Throes",
@@ -1979,7 +2184,7 @@
                 },
                 "action->(Golem) Golem Antimagic": {
                     "name": "(Golem) Golem Antimagic",
-                    "description": "<p>harmed by <em>cold</em>([[/r {2d8}]]{2d8 damage} from areas or persistent damage); healed by <em>fire</em> (area [[/r 2d8[healing]]] Hit Points); slowed by <em>acid</em></p>\n<hr />\n<p>A golem is immune to spells and magical abilities other than its own, but each type of golem is affected by a few types of magic in special ways. These exceptions are listed in shortened form in the golem's stat block, with the full rules appearing here. If an entry lists multiple types (such as \"cold and water\"), either type of spell can affect the golem.</p>\n<ul>\n<li><strong>Harmed By</strong> Any magic of this type that targets the golem causes it to take the listed amount of damage (this damage has no type) instead of the usual effect. If the golem starts its turn in an area of magic of this type or is affected by a persistent effect of the appropriate type, it takes the damage listed in the parenthetical.</li>\n<li><strong>Healed By</strong> Any magic of this type that targets the golem makes the golem lose the slowed condition and gain HP equal to half the damage the spell would have dealt. If the golem starts its turn in an area of this type of magic, it gains the HP listed in the parenthetical.</li>\n<li><strong>Slowed By</strong> Any magic of this type that targets the golem causes it to be @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1} for [[/r 2d6 #rounds]]{2d6 rounds} instead of the usual effect. If the golem starts its turn in an area of this type of magic, it's slowed 1 for that round.</li>\n<li><strong>Vulnerable To</strong> Each golem is vulnerable to one or more specific spells, with the effects described in its stat block.</li>\n</ul>"
+                    "description": "<p>harmed by <em>cold</em>([[/r {2d8}]]{2d8 damage} from areas or persistent damage); healed by <em>fire</em> (area @Damage[2d8[healing]] Hit Points); slowed by <em>acid</em></p>\n<hr />\n<p>A golem is immune to spells and magical abilities other than its own, but each type of golem is affected by a few types of magic in special ways. These exceptions are listed in shortened form in the golem's stat block, with the full rules appearing here. If an entry lists multiple types (such as \"cold and water\"), either type of spell can affect the golem.</p>\n<ul>\n<li><strong>Harmed By</strong> Any magic of this type that targets the golem causes it to take the listed amount of damage (this damage has no type) instead of the usual effect. If the golem starts its turn in an area of magic of this type or is affected by a persistent effect of the appropriate type, it takes the damage listed in the parenthetical.</li>\n<li><strong>Healed By</strong> Any magic of this type that targets the golem makes the golem lose the slowed condition and gain HP equal to half the damage the spell would have dealt. If the golem starts its turn in an area of this type of magic, it gains the HP listed in the parenthetical.</li>\n<li><strong>Slowed By</strong> Any magic of this type that targets the golem causes it to be @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1} for [[/r 2d6 #rounds]]{2d6 rounds} instead of the usual effect. If the golem starts its turn in an area of this type of magic, it's slowed 1 for that round.</li>\n<li><strong>Vulnerable To</strong> Each golem is vulnerable to one or more specific spells, with the effects described in its stat block.</li>\n</ul>"
                 },
                 "action->Death Throes": {
                     "name": "Death Throes",
@@ -2077,6 +2282,21 @@
             "name": "Graveknight Captain",
             "hpDetails": "void healing, rejuvination",
             "items": {
+                "weapon->Shock Warhammer": {
+                    "name": "Shock Warhammer",
+                    "description": "<p>This weapon has a wooden shaft ending in a large, heavy metal head. The head of the hammer might be single-sided or double-sided, but it's always capable of delivering powerful bludgeoning blows.</p>"
+                },
+                "shield->Graveknight's Shield": {
+                    "name": "Graveknight's Shield",
+                    "description": "<p>With a superior design and excellent craftsmanship, this steel shield has higher Hardness than its non-magical counterparts, making it harder to break and destroy.</p>\n<p>The shield has Hardness 8, HP 64, and BT 32.</p>"
+                },
+                "armor->Full Plate": {
+                    "name": "Full Plate",
+                    "description": "<p>Plate mail consists of interlocking plates that encase nearly the entire body in a carapace of steel. It is costly and heavy, and the wearer often requires help to don it correctly, but it provides some of the best defense armor can supply. A suit of this armor comes with an undercoat of @UUID[Compendium.pf2e.equipment-srd.Item.zBYEU9E7034ENCmh]{Padded Armor} and a pair of @UUID[Compendium.pf2e.equipment-srd.Item.Ix2vicchE79d6Cl3]{gauntlets}.</p>"
+                },
+                "strike-melee->Warhammer": {
+                    "name": "Warhammer"
+                },
                 "strike-melee->Fist": {
                     "name": "Fist"
                 },
@@ -2117,6 +2337,22 @@
             "items": {
                 "spellcastingEntry->Innate Divine Spells": {
                     "name": "Innate Divine Spells"
+                },
+                "weapon->Greater Flaming Composite Shortbow": {
+                    "name": "Greater Flaming Composite Shortbow",
+                    "description": "<p>This shortbow is made from horn, wood, and sinew laminated together to increase the power of its pull and the force of its projectile. Its compact size and power make it a favorite of mounted archers. Any time an ability is specifically restricted to a shortbow, it also applies to composite shortbows unless otherwise stated.</p>"
+                },
+                "weapon->Greater Flaming Greatpick": {
+                    "name": "Greater Flaming Greatpick",
+                    "description": "<p>This pick has a longer handle and broader head than a regular pick. It is too heavy to wield in one hand.</p>"
+                },
+                "armor->Full Plate": {
+                    "name": "Full Plate",
+                    "description": "<p>Plate mail consists of interlocking plates that encase nearly the entire body in a carapace of steel. It is costly and heavy, and the wearer often requires help to don it correctly, but it provides some of the best defense armor can supply. A suit of this armor comes with an undercoat of @UUID[Compendium.pf2e.equipment-srd.Item.zBYEU9E7034ENCmh]{Padded Armor} and a pair of @UUID[Compendium.pf2e.equipment-srd.Item.Ix2vicchE79d6Cl3]{gauntlets}.</p>"
+                },
+                "consumable->Arrows": {
+                    "name": "Arrows",
+                    "description": "<p>These projectiles are the ammunition for bows. The shaft of an arrow is made of wood. It is stabilized in flight by fletching at one end and bears a metal head on the other.</p>"
                 },
                 "strike-melee->Greatpick": {
                     "name": "Greatpick"
@@ -2260,6 +2496,12 @@
                     "name": "Arrows",
                     "description": "<p>These projectiles are the ammunition for bows. The shaft of an arrow is made of wood. It is stabilized in flight by fletching at one end and bears a metal head on the other.</p>"
                 },
+                "strike-melee->Kukri": {
+                    "name": "Kukri"
+                },
+                "strike-ranged->Composite Shortbow": {
+                    "name": "Composite Shortbow"
+                },
                 "action->Springing Step": {
                     "name": "Springing Step",
                     "description": "<p>When the skirmisher uses the Step action they ignore difficult terrain and may move up to 10 feet instead of 5 feet.</p>"
@@ -2289,6 +2531,14 @@
             "items": {
                 "spellcastingEntry->Primal Spontaneous Spells": {
                     "name": "Primal Spontaneous Spells"
+                },
+                "weapon->Sickle": {
+                    "name": "Sickle",
+                    "description": "<p>Originally a farming tool used for reaping grain, this one-handed weapon has a short wooden handle ending in a curved blade, sometimes sharpened on both sides.</p>"
+                },
+                "armor->Leather Armor": {
+                    "name": "Leather Armor",
+                    "description": "<p>A mix of flexible and molded boiled leather, a suit of this type of armor provides some protection with maximum flexibility.</p>"
                 },
                 "equipment->Bag of Dead Dragonflies": {
                     "name": "Bag of Dead Dragonflies"
@@ -2322,6 +2572,10 @@
                 },
                 "spellcastingEntry->Focus Divine Spells": {
                     "name": "Focus Divine Spells"
+                },
+                "weapon->Greatclub": {
+                    "name": "Greatclub",
+                    "description": "<p>While many greatclubs are intricately carved, others are little more than a sturdy tree branch. These massive clubs are too heavy to wield with only one hand.</p>"
                 },
                 "equipment->Manacles (Average)": {
                     "name": "Manacles (Average)",
@@ -2462,9 +2716,21 @@
                 "spellcastingEntry->Magus Conflux Spells": {
                     "name": "Magus Conflux Spells"
                 },
+                "weapon->Spear": {
+                    "name": "Spear",
+                    "description": "<p>A long metal shaft ending with a metal spike, a spear can be used one-handed as a melee weapon and can be thrown.</p>"
+                },
                 "shield->Black Dragonhide Buckler (High-Grade)": {
                     "name": "Black Dragonhide Buckler (High-Grade)",
                     "description": "<p>Dragonhide shields are each immune to one damage type based on the type of dragon.</p>\n<table class=\"pf2e\">\n<thead>\n<tr>\n<th>Dragon Type</th>\n<th>Immunity</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Black or copper</td>\n<td>acid</td>\n</tr>\n<tr>\n<td>Blue or bronze</td>\n<td>electricity</td>\n</tr>\n<tr>\n<td>Brass, Red, or Gold</td>\n<td>fire</td>\n</tr>\n<tr>\n<td>Green</td>\n<td>poison</td>\n</tr>\n<tr>\n<td>Silver or white</td>\n<td>cold</td>\n</tr>\n</tbody>\n</table>\n<p>The shield has Hardness 5, HP 20, and BT 10.</p>\n<p><strong>Craft Requirements</strong> dragonhide worth at least 4,000 gp</p>"
+                },
+                "armor->Chain Shirt": {
+                    "name": "Chain Shirt",
+                    "description": "<p>Sometimes called a hauberk, this is a long shirt constructed of the same metal rings as chainmail. However, it is much lighter than chainmail and protects only the torso, upper arms, and upper legs of its wearer.</p>"
+                },
+                "equipment->Signal Horn": {
+                    "name": "Signal Horn",
+                    "description": "<p>When sounded, a signal horn can be heard clearly up to half a mile away across open terrain.</p>"
                 },
                 "strike-melee->Spear": {
                     "name": "Spear"
@@ -2515,7 +2781,7 @@
                 },
                 "action->Oviposit": {
                     "name": "Oviposit",
-                    "description": "<p><strong>Requirements</strong> The ironclad annihilator beetle has a creature @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed}</p><hr />\n<p><strong>Effect</strong> The ironclad annihilator injects its ovipositor under the grabbed creature's skin. The creature takes @Damage[(4d6+20)[bludgeoning]] damage (@Check[fortitude|dc:44|basic]). On a failed save, the beetle implants an egg, and the target creature takes @Damage[4d6[bleed]] that is unusually tenacious. The DC to stop the bleeding using Administer First Aid is @Check[medicine|dc:40|name:Administer First Aid|traits:action:administer-first-aid], and healing the creature to full Hit Points doesn't automatically stop the bleeding. If the target creature dies from this bleed damage, its body is destroyed and unrecoverable except with powerful magic such as @UUID[Compendium.pf2e.spells-srd.Item.YfJTXyVGzLhM6V8U]{Miracle} or @UUID[Compendium.pf2e.spells-srd.Item.6dDtGIUerazSHIOu]{Wish}, and an immature ironclad annihilator beetle (with statistics as a @UUID[Compendium.pf2e.pathfinder-bestiary.Actor.bIw7czN0E3rENrVd]{Giant Stag Beetle}) bursts forth.</p>"
+                    "description": "<p><strong>Requirements</strong> The ironclad annihilator beetle has a creature @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed}</p><hr /><p><strong>Effect</strong> The ironclad annihilator injects its ovipositor under the grabbed creature's skin. The creature takes @Damage[(4d6+20)[bludgeoning]] damage (@Check[fortitude|dc:44|basic]). On a failed save, the beetle implants an egg, and the target creature takes @Damage[4d6[bleed]] that is unusually tenacious. The DC to stop the bleeding using Administer First Aid is @Check[medicine|dc:40|name:Administer First Aid|traits:action:administer-first-aid], and healing the creature to full Hit Points doesn't automatically stop the bleeding. If the target creature dies from this bleed damage, its body is destroyed and unrecoverable except with powerful magic such as @UUID[Compendium.pf2e.spells-srd.Item.YfJTXyVGzLhM6V8U]{Miracle} or @UUID[Compendium.pf2e.spells-srd.Item.6dDtGIUerazSHIOu]{Wish}, and an immature ironclad annihilator beetle (with statistics as a @UUID[Compendium.pf2e.pathfinder-monster-core.Actor.MkupNnMKqDBElhhp]{Giant Stag Beetle}) bursts forth.</p>"
                 },
                 "action->Sunder Objects": {
                     "name": "Sunder Objects",
@@ -2588,12 +2854,30 @@
         "Jackal Guard": {
             "name": "Jackal Guard",
             "items": {
+                "weapon->Spear": {
+                    "name": "Spear",
+                    "description": "<p>A long metal shaft ending with a metal spike, a spear can be used one-handed as a melee weapon and can be thrown.</p>"
+                },
                 "shield->Sturdy Shield (Lesser)": {
                     "name": "Sturdy Shield (Lesser)",
                     "description": "<p>With a superior design and excellent craftsmanship, this steel shield has higher Hardness than its non-magical counterparts, making it harder to break and destroy.</p>\n<p>The shield has Hardness 10, HP 80, and BT 40.</p>"
                 },
+                "armor->Chain Shirt": {
+                    "name": "Chain Shirt",
+                    "description": "<p>Sometimes called a hauberk, this is a long shirt constructed of the same metal rings as chainmail. However, it is much lighter than chainmail and protects only the torso, upper arms, and upper legs of its wearer.</p>"
+                },
+                "equipment->Religious Symbol of Walkena": {
+                    "name": "Religious Symbol of Walkena",
+                    "description": "<p>This piece of wood or silver is emblazoned with an image representing a deity. Some divine spellcasters, such as clerics, can use a religious symbol of their deity as a divine focus to use certain abilities and cast some spells. A religious symbol must be held in one hand to use it.</p>"
+                },
+                "strike-melee->Spear": {
+                    "name": "Spear"
+                },
                 "strike-melee->Fist": {
                     "name": "Fist"
+                },
+                "strike-ranged->Spear": {
+                    "name": "Spear"
                 },
                 "action->Attack of Opportunity": {
                     "name": "Attack of Opportunity"
@@ -2781,6 +3065,12 @@
                     "name": "Thieves' Tools",
                     "description": "<p>You need thieves' tools to Pick Locks or Disable Devices (of some types) using the Thievery skill.</p>\n<p>If your thieves' tools are broken, you can repair them by replacing the lock picks with @UUID[Compendium.pf2e.equipment-srd.Item.Sw7MBLASN3xK4Y44]{Replacement Picks} appropriate to your tools; this doesn't require using the Repair action.</p>"
                 },
+                "strike-melee->Dagger": {
+                    "name": "Dagger"
+                },
+                "strike-ranged->Dagger": {
+                    "name": "Dagger"
+                },
                 "action->Knife Jab": {
                     "name": "Knife Jab",
                     "description": "<p>Creatures hit by Kiru's dagger Strike must succeed at a @Check[fortitude|dc:20|traits:agile,versatile-s,damaging-effect]{Fortitude (Strike was a Success)}@Check[fortitude|dc:25|traits:agile,versatile-s,damaging-effect]{Fortitude (Strike was a Critical Success)} save or become @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 1} for 1 round (1 minute on a critical failure).</p>"
@@ -2826,7 +3116,13 @@
                 },
                 "consumable->Elixir of Life (Lesser)": {
                     "name": "Elixir of Life (Lesser)",
-                    "description": "<p><strong>Activate</strong> <span class=\"action-glyph\">A</span> Interact</p>\n<p>Elixirs of life accelerate a living creatures natural healing processes and immune system. Upon drinking this elixir, you regain [[/r (3d6+6)[healing]]]{3d6+6 Hit Points} and gain +1 item bonus to saving throws against diseases and poisons for 10 minutes.</p>\n<p>@UUID[Compendium.pf2e.equipment-effects.Item.EpB7yJPEuG6ez4z3]{Effect: Elixir of Life (Lesser)}</p>"
+                    "description": "<p><strong>Activate</strong> <span class=\"action-glyph\">A</span> Interact</p>\n<p>Elixirs of life accelerate a living creatures natural healing processes and immune system. Upon drinking this elixir, you regain @Damage[(3d6+6)[healing]] Hit Points and gain +1 item bonus to saving throws against diseases and poisons for 10 minutes.</p>\n<p>@UUID[Compendium.pf2e.equipment-effects.Item.lPRuIRbu0rHBkoKY]{Effect: Elixir of Life}</p>"
+                },
+                "strike-melee->Longsword": {
+                    "name": "Longsword"
+                },
+                "strike-melee->Heavy Crossbow": {
+                    "name": "Heavy Crossbow"
                 },
                 "action->A Quick Word": {
                     "name": "A Quick Word",
@@ -3003,6 +3299,9 @@
                 "equipment->Recipe Books": {
                     "name": "Recipe Books"
                 },
+                "strike-melee->Greatclub": {
+                    "name": "Greatclub"
+                },
                 "strike-melee->Tail": {
                     "name": "Tail"
                 },
@@ -3047,6 +3346,12 @@
                 "consumable->Bolts": {
                     "name": "Bolts",
                     "description": "<p>Shorter than traditional arrows but similar in construction, bolts are the ammunition used by crossbows.</p>"
+                },
+                "strike-melee->Longsword": {
+                    "name": "Longsword"
+                },
+                "strike-ranged->Hand Crossbow": {
+                    "name": "Hand Crossbow"
                 },
                 "action->Opportunistic Maneuver": {
                     "name": "Opportunistic Maneuver",
@@ -3101,9 +3406,25 @@
                 "spellcastingEntry->Magus Conflux Spells": {
                     "name": "Magus Conflux Spells"
                 },
+                "weapon->Bastard Sword": {
+                    "name": "Bastard Sword",
+                    "description": "<p>This broad-bladed sword, sometimes called the hand-and-a-half sword, has a longer grip so it can be held in one hand or used with two hands to provide extra piercing or slashing power.</p>"
+                },
+                "weapon->Spear": {
+                    "name": "Spear",
+                    "description": "<p>A long metal shaft ending with a metal spike, a spear can be used one-handed as a melee weapon and can be thrown.</p>"
+                },
                 "shield->Black Dragonhide Buckler (High-Grade)": {
                     "name": "Black Dragonhide Buckler (High-Grade)",
                     "description": "<p>Dragonhide shields are each immune to one damage type based on the type of dragon.</p>\n<table class=\"pf2e\">\n<thead>\n<tr>\n<th>Dragon Type</th>\n<th>Immunity</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Black or copper</td>\n<td>acid</td>\n</tr>\n<tr>\n<td>Blue or bronze</td>\n<td>electricity</td>\n</tr>\n<tr>\n<td>Brass, Red, or Gold</td>\n<td>fire</td>\n</tr>\n<tr>\n<td>Green</td>\n<td>poison</td>\n</tr>\n<tr>\n<td>Silver or white</td>\n<td>cold</td>\n</tr>\n</tbody>\n</table>\n<p>The shield has Hardness 5, HP 20, and BT 10.</p>\n<p><strong>Craft Requirements</strong> dragonhide worth at least 4,000 gp</p>"
+                },
+                "armor->Chain Shirt": {
+                    "name": "Chain Shirt",
+                    "description": "<p>Sometimes called a hauberk, this is a long shirt constructed of the same metal rings as chainmail. However, it is much lighter than chainmail and protects only the torso, upper arms, and upper legs of its wearer.</p>"
+                },
+                "equipment->Signal Horn": {
+                    "name": "Signal Horn",
+                    "description": "<p>When sounded, a signal horn can be heard clearly up to half a mile away across open terrain.</p>"
                 },
                 "strike-melee->Bastard Sword": {
                     "name": "Bastard Sword"
@@ -3186,6 +3507,12 @@
                 "consumable->Sleep Poison": {
                     "name": "Sleep Poison"
                 },
+                "strike-melee->Rapier": {
+                    "name": "Rapier"
+                },
+                "strike-ranged->Composite Shortbow": {
+                    "name": "Composite Shortbow"
+                },
                 "action->Swift Sneak": {
                     "name": "Swift Sneak",
                     "description": "<p>Nairu can move their full speed when @UUID[Compendium.pf2e.actionspf2e.Item.VMozDqMMuK5kpoX4]{Sneaking}.</p>"
@@ -3227,6 +3554,22 @@
                 "spellcastingEntry->Occult Spontaneous Spells": {
                     "name": "Occult Spontaneous Spells"
                 },
+                "weapon->Hand Crossbow": {
+                    "name": "Hand Crossbow",
+                    "description": "<p>Sometimes referred to as an alley bow by rogues or ruffians, this small crossbow fires small bolts that are sometimes used to deliver poison to the target. It's small enough to be shot one-handed, but it still requires two hands to load.</p>"
+                },
+                "weapon->Sickle": {
+                    "name": "Sickle",
+                    "description": "<p>Originally a farming tool used for reaping grain, this one-handed weapon has a short wooden handle ending in a curved blade, sometimes sharpened on both sides.</p>"
+                },
+                "armor->Leather Armor": {
+                    "name": "Leather Armor",
+                    "description": "<p>A mix of flexible and molded boiled leather, a suit of this type of armor provides some protection with maximum flexibility.</p>"
+                },
+                "consumable->Bolts": {
+                    "name": "Bolts",
+                    "description": "<p>Shorter than traditional arrows but similar in construction, bolts are the ammunition used by crossbows.</p>"
+                },
                 "strike-melee->Sickle": {
                     "name": "Sickle"
                 },
@@ -3259,6 +3602,14 @@
             "name": "Norgorberite Spy",
             "blurb": "Human infiltrator",
             "items": {
+                "weapon->Dagger": {
+                    "name": "Dagger",
+                    "description": "<p>This small, bladed weapon is held in one hand and used to stab a creature in close combat. It can also be thrown.</p>"
+                },
+                "armor->Leather Armor": {
+                    "name": "Leather Armor",
+                    "description": "<p>A mix of flexible and molded boiled leather, a suit of this type of armor provides some protection with maximum flexibility.</p>"
+                },
                 "equipment->Religious Symbol of Norgorber (Wooden)": {
                     "name": "Religious Symbol of Norgorber (Wooden)",
                     "description": "<p>This piece of wood or silver is emblazoned with an image representing a deity. Some divine spellcasters, such as clerics, can use a religious symbol of their deity as a divine focus to use certain abilities and cast some spells. A religious symbol must be held in one hand to use it.</p>"
@@ -3266,6 +3617,16 @@
                 "consumable->Cognitive Mutagen (Greater)": {
                     "name": "Cognitive Mutagen (Greater)",
                     "description": "<p><strong>Activate</strong> <span class=\"action-glyph\">A</span> Interact</p>\n<hr />\n<p>Your mind becomes clear and cognition flows freely, but physical matters seem ephemeral.</p>\n<p><strong>Benefit</strong> You gain a +3 item bonus to Arcana, Crafting, Lore, Occultism, and Society checks and all checks to @UUID[Compendium.pf2e.actionspf2e.Item.1OagaWtBpVXExToo]{Recall Knowledge}. Your critical failures on @UUID[Compendium.pf2e.actionspf2e.Item.1OagaWtBpVXExToo]{Recall Knowledge} checks become failures instead. You become trained in one Intelligence-based skill [Arcana, Crafting, Lore, Occultism, Society], chosen at creation.</p>\n<p><strong>Drawback</strong> You take a -2 penalty to weapon and unarmed attack rolls, Athletics checks, and acrobatics checks. You can carry 2 less Bulk than normal before becoming encumbered, and the maximum Bulk you can carry is reduced by 4.</p>\n<p><strong>Duration</strong> 1 hour.</p>\n<p>@UUID[Compendium.pf2e.equipment-effects.Item.qit1mLbJUyRTYcPU]{Effect: Cognitive Mutagen (Greater)}</p>"
+                },
+                "consumable->Slumber Wine": {
+                    "name": "Slumber Wine",
+                    "description": "<p>Slumber wine sees its greatest use in games of intrigue, where an absence can be more devastating than injury. Characters unconscious from slumber wine can't wake up by any means while the poison lasts, don't need to eat or drink while unconscious in this way, and appear to be recently dead unless an examiner succeeds at a @Check[medicine|dc:40|name:Identify Slumber Wine] check.</p>\n<hr />\n<p><strong>Activate</strong> <span class=\"action-glyph\">A</span> Interact (Ingested)</p>\n<p><strong>Saving Throw</strong> @Check[fortitude|dc:32]</p>\n<p><strong>Onset</strong> 1 hour</p>\n<p><strong>Maximum Duration</strong> 7 days</p>\n<p><strong>Stage 1</strong> @UUID[Compendium.pf2e.conditionitems.Item.fBnFDH2MTzgFijKf]{Unconscious} (1 day)</p>\n<p><strong>Stage 2</strong> unconscious (2 days)</p>\n<p><strong>Stage 3</strong> unconscious (3 days)</p>"
+                },
+                "strike-melee->Dagger": {
+                    "name": "Dagger"
+                },
+                "strike-ranged->Dagger": {
+                    "name": "Dagger"
                 },
                 "action->Ranged Feint": {
                     "name": "Ranged Feint",
@@ -3325,6 +3686,10 @@
             "items": {
                 "spellcastingEntry->Arcane Prepared Spells": {
                     "name": "Arcane Prepared Spells"
+                },
+                "weapon->Staff": {
+                    "name": "Staff",
+                    "description": "<p>This long piece of wood can aid in walking and deliver a mighty blow.</p>"
                 },
                 "strike-melee->Staff": {
                     "name": "Staff"
@@ -3433,6 +3798,14 @@
                 "spellcastingEntry->Divine Innate Spells": {
                     "name": "Divine Innate Spells"
                 },
+                "weapon->Dagger": {
+                    "name": "Dagger",
+                    "description": "<p>This small, bladed weapon is held in one hand and used to stab a creature in close combat. It can also be thrown.</p>"
+                },
+                "equipment->Religious Symbol of Walkena": {
+                    "name": "Religious Symbol of Walkena",
+                    "description": "<p>This piece of wood or silver is emblazoned with an image representing a deity. Some divine spellcasters, such as clerics, can use a religious symbol of their deity as a divine focus to use certain abilities and cast some spells. A religious symbol must be held in one hand to use it.</p>"
+                },
                 "strike-melee->Dagger": {
                     "name": "Dagger"
                 },
@@ -3477,6 +3850,10 @@
                     "name": "Staff of Fire (Major)",
                     "description": "<p>This staff resembles a blackened and burned length of ashen wood. It smells faintly of soot and glows as if lit by embers. You can use an Interact action to touch the tip of this staff to a torch, tinder, or a flammable substance to ignite a flame.</p>\n<p><strong>Activate</strong> Cast a Spell</p>\n<hr />\n<p><strong>Effect</strong> You expend a number of charges from the staff to cast a spell from its list.</p>\n<p><strong>Craft Requirements</strong> Supply one casting of all listed levels of all listed spells.</p>\n<ul>\n<li><strong>Cantrip</strong> @UUID[Compendium.pf2e.spells-srd.Item.O9w7r4BKgPogYDDe]{Produce Flame}</li>\n<li><strong>1st</strong> @UUID[Compendium.pf2e.spells-srd.Item.y6rAdMK6EFlV6U0t]{Breathe Fire}</li>\n<li><strong>2nd</strong> @UUID[Compendium.pf2e.spells-srd.Item.y6rAdMK6EFlV6U0t]{Breathe Fire} @UUID[Compendium.pf2e.spells-srd.Item.2ZdHjnpEQJuqOYSG]{Floating Flame}</li>\n<li><strong>3rd</strong> @UUID[Compendium.pf2e.spells-srd.Item.2ZdHjnpEQJuqOYSG]{Floating Flame} @UUID[Compendium.pf2e.spells-srd.Item.sxQZ6yqTn0czJxVd]{Fireball}</li>\n<li><strong>4th</strong> @UUID[Compendium.pf2e.spells-srd.Item.YrzBLPLd3r9m6t1p]{Fire Shield}, @UUID[Compendium.pf2e.spells-srd.Item.sxQZ6yqTn0czJxVd]{Fireball} @UUID[Compendium.pf2e.spells-srd.Item.IarZrgCeaiUqOuRu]{Wall of Fire}</li>\n<li><strong>5th</strong> @UUID[Compendium.pf2e.spells-srd.Item.sxQZ6yqTn0czJxVd]{Fireball} @UUID[Compendium.pf2e.spells-srd.Item.IarZrgCeaiUqOuRu]{Wall of Fire}</li>\n</ul>"
                 },
+                "equipment->Religious Symbol of Walkena": {
+                    "name": "Religious Symbol of Walkena",
+                    "description": "<p>This piece of wood or silver is emblazoned with an image representing a deity. Some divine spellcasters, such as clerics, can use a religious symbol of their deity as a divine focus to use certain abilities and cast some spells. A religious symbol must be held in one hand to use it.</p>"
+                },
                 "strike-melee->Fist": {
                     "name": "Fist"
                 },
@@ -3505,6 +3882,14 @@
             "items": {
                 "spellcastingEntry->Divine Innate Spells": {
                     "name": "Divine Innate Spells"
+                },
+                "weapon->Flame Spike": {
+                    "name": "Flame Spike",
+                    "description": "<p>This <em>+2 greater striking @UUID[Compendium.pf2e.equipment-srd.Item.XszNvxnymWYRaoTp]{Flaming} spear</em> has a blade shaped like stylized flames. When wielded, the blade projects illumination resembling shimmering firelight, emitting dim light in a 10-foot radius.</p>\n<p><strong>Activate</strong> <span class=\"action-glyph\">2</span> command, Interact</p>\n<hr />\n<p><strong>Effect</strong> You cast the @UUID[Compendium.pf2e.spells-srd.Item.O9w7r4BKgPogYDDe]{Produce Flame} cantrip from the spear as a 7th-rank arcane spell, using your melee attack modifier with <em>flame spike</em> as your spell attack modifier.</p>"
+                },
+                "equipment->Religious Symbol of Walkena": {
+                    "name": "Religious Symbol of Walkena",
+                    "description": "<p>This piece of wood or silver is emblazoned with an image representing a deity. Some divine spellcasters, such as clerics, can use a religious symbol of their deity as a divine focus to use certain abilities and cast some spells. A religious symbol must be held in one hand to use it.</p>"
                 },
                 "strike-melee->Spear": {
                     "name": "Spear"
@@ -3666,6 +4051,9 @@
                 },
                 "strike-melee->Tail": {
                     "name": "Tail"
+                },
+                "strike-ranged->Hand Crossbow": {
+                    "name": "Hand Crossbow"
                 },
                 "action->Deadly Bolts": {
                     "name": "Deadly Bolts",
@@ -3854,8 +4242,14 @@
                     "name": "Longspear",
                     "description": "<p>This very long spear, sometimes called a pike, is purely for thrusting rather than throwing. Used by many soldiers and city watch for crowd control and defense against charging enemies, it must be wielded with two hands.</p>"
                 },
+                "strike-melee->Longspear": {
+                    "name": "Longspear"
+                },
                 "strike-melee->Fangs": {
                     "name": "Fangs"
+                },
+                "strike-ranged->Javelin": {
+                    "name": "Javelin"
                 },
                 "action->Telepathy 100 feet": {
                     "name": "Telepathy 100 feet"
@@ -3943,6 +4337,10 @@
                 "spellcastingEntry->Arcane Innate Spells": {
                     "name": "Arcane Innate Spells"
                 },
+                "weapon->Greatsword": {
+                    "name": "Greatsword",
+                    "description": "<p>This immense two-handed sword is nearly as tall as its wielder. Its lower blade is often somewhat dulled to allow it to be gripped for extra leverage in close-quarter fights.</p>"
+                },
                 "strike-melee->Greatsword": {
                     "name": "Greatsword"
                 },
@@ -3998,7 +4396,7 @@
                 },
                 "action->Ridden Construct": {
                     "name": "Ridden Construct",
-                    "description": "<p>The construct is piloted by a @UUID[Compendium.pf2e.pathfinder-bestiary.Actor.BeptBpCJ4Ny4biOH]{Leaf Leshy} who can be targeted separately but has greater cover. The leshy can't take actions of their own while inside the construct, other than to leave it, which takes 1 minute.</p>"
+                    "description": "<p>The construct is piloted by a @UUID[Compendium.pf2e.pathfinder-monster-core.Actor.v1UK3IwCB8wCbL3L]{Leaf Leshy} who can be targeted separately but has greater cover. The leshy can't take actions of their own while inside the construct, other than to leave it, which takes 1 minute.</p>"
                 },
                 "action->Shield Block": {
                     "name": "Shield Block"
@@ -4009,6 +4407,22 @@
             "name": "Shobhad Enforcer",
             "publicNotes": "<p>In rough Akitonian cities like Seldo, shobhad bruisers and fist-fighters act as protection for businesses and enforcers for crime bosses. Shobhad enforcers are more rare and far more dangerous. In the wilds of Akiton, shobhad enforcers protect wealthy caravans using combat techniques honed and proven over multiple generations to devastate any creature that might mistake the caravan as an attractive target for a raid. \"Enforcer\" is a loose translation of a word in the Shobhad language that is only granted to a warrior who has proven themselves in combat against one of the deadly threats of the Akitonian desert, such as gluttonworms or ikeshti riveners. Every enforcer is a battle-tested veteran with the scars to prove their prowess.</p>\n<hr />\n<p>These four-armed humanoids often live as nomads on Akiton. Self-sufficient and able to construct the equipment they need to survive from natural materials, shobhads traditionally avoid large cities and the smaller people of the planet, except to engage in trade. Some shobhads eschew these traditions, finding life in urban centers to be more appealing. Rifts between these shobhads and those who continue to lead nomadic lives in the Akitonian wilderness sometimes lead to clashes when members of the two societies meet.</p>\n<p>Shobhads are highly sought after for their martial expertise, unparalleled knowledge of Akiton's wilds, and unbreakable codes of honor. These warriors may operate independently, in their traditional clans, or in modern mercenary companies that blend ancestral traditions with the needs of modern military freelancers.</p>",
             "items": {
+                "weapon->Greatsword": {
+                    "name": "Greatsword",
+                    "description": "<p>This immense two-handed sword is nearly as tall as its wielder. Its lower blade is often somewhat dulled to allow it to be gripped for extra leverage in close-quarter fights.</p>"
+                },
+                "weapon->+2 Striking Handwraps of Mighty Blows": {
+                    "name": "+2 Striking Handwraps of Mighty Blows",
+                    "description": "<p>As you invest these embroidered strips of cloth, you must meditate and slowly wrap them around your hands. These handwraps have weapon runes etched into them to give your unarmed attacks the benefits of those runes, making your unarmed attacks work like magic weapons. For example, <em>+1 striking handwraps of mighty blows</em> would give you a +1 item bonus to attack rolls with your unarmed attacks and increase the damage of your unarmed attacks from one weapon die to two (normally 2d4 instead of 1d4, but if your fists have a different weapon damage die or you have other unarmed attacks, use two of that die size instead).</p>\n<p>You can upgrade, add, and transfer runes to and from the handwraps just as you would for a weapon, and you can attach talismans to the handwraps. Treat the handwraps as melee weapons of the brawling group with light Bulk for these purposes. Property runes apply only when they would be applicable to the unarmed attack you're using. For example, a property that must be applied to a slashing weapon wouldn't function when you attacked with a fist, but you would gain its benefits if you attacked with a claw or some other slashing unarmed attack.</p>"
+                },
+                "armor->Chain Mail": {
+                    "name": "Chain Mail",
+                    "description": "<p>A suit of chain mail consists of several pieces of armor composed of small metal rings linked together in a protective mesh. It typically includes a chain shirt, leggings, a pair of arms, and a coif, collectively protecting most of the body.</p>"
+                },
+                "strike-melee->Greatsword": {
+                    "name": "Greatsword",
+                    "description": "<p>plus 3d6 precision damage</p>"
+                },
                 "strike-melee->Fist": {
                     "name": "Fist",
                     "description": "<p>plus 3d6 precision damage</p>"
@@ -4033,8 +4447,23 @@
             "name": "Shobhad Sniper",
             "publicNotes": "<p>Enemies rarely see a shobhad sniper before the deadly blast of their powerful rifles snatches away the offender's life. Selected from among the most talented enforcers after proving themselves in combat, shobhad snipers learn how to cross the desert sands undetected, combine their powerful ranged weapons with close-combat techniques, and survive Akiton's freezing nights for weeks on end while scouting potential settlements or enemy strongholds.</p>\n<hr />\n<p>These four-armed humanoids often live as nomads on Akiton. Self-sufficient and able to construct the equipment they need to survive from natural materials, shobhads traditionally avoid large cities and the smaller people of the planet, except to engage in trade. Some shobhads eschew these traditions, finding life in urban centers to be more appealing. Rifts between these shobhads and those who continue to lead nomadic lives in the Akitonian wilderness sometimes lead to clashes when members of the two societies meet.</p>\n<p>Shobhads are highly sought after for their martial expertise, unparalleled knowledge of Akiton's wilds, and unbreakable codes of honor. These warriors may operate independently, in their traditional clans, or in modern mercenary companies that blend ancestral traditions with the needs of modern military freelancers.</p>",
             "items": {
+                "weapon->Shobhad Longrifle": {
+                    "name": "Shobhad Longrifle",
+                    "description": "<p>The shobhad longrifle is a firearm with a long, rifled barrel. Often mounted with a multi-lensed scope for targeting at an array of ranges and a chambering mechanism that can adjust the speed and penetrating power of each shot, it's the preferred weapon of many shobhad warriors.</p>\n<p>Shobhad longrifles are equipped with a built-in @UUID[Compendium.pf2e.equipment-srd.Item.0BEbpOMBo7ET8NsR]{Silencer} so they make no more noise than a crossbow when fired.</p>\n<p>A shobhad longrifle is a martial weapon.</p>"
+                },
+                "weapon->+2 Striking Handwraps of Mighty Blows": {
+                    "name": "+2 Striking Handwraps of Mighty Blows",
+                    "description": "<p>As you invest these embroidered strips of cloth, you must meditate and slowly wrap them around your hands. These handwraps have weapon runes etched into them to give your unarmed attacks the benefits of those runes, making your unarmed attacks work like magic weapons. For example, <em>+1 striking handwraps of mighty blows</em> would give you a +1 item bonus to attack rolls with your unarmed attacks and increase the damage of your unarmed attacks from one weapon die to two (normally 2d4 instead of 1d4, but if your fists have a different weapon damage die or you have other unarmed attacks, use two of that die size instead).</p>\n<p>You can upgrade, add, and transfer runes to and from the handwraps just as you would for a weapon, and you can attach talismans to the handwraps. Treat the handwraps as melee weapons of the brawling group with light Bulk for these purposes. Property runes apply only when they would be applicable to the unarmed attack you're using. For example, a property that must be applied to a slashing weapon wouldn't function when you attacked with a fist, but you would gain its benefits if you attacked with a claw or some other slashing unarmed attack.</p>"
+                },
+                "armor->Leather Armor": {
+                    "name": "Leather Armor",
+                    "description": "<p>A mix of flexible and molded boiled leather, a suit of this type of armor provides some protection with maximum flexibility.</p>"
+                },
                 "strike-melee->Fist": {
                     "name": "Fist"
+                },
+                "strike-ranged->Longrifle": {
+                    "name": "Longrifle"
                 },
                 "action->Four-Armed": {
                     "name": "Four-Armed",
@@ -4071,7 +4500,7 @@
                 },
                 "action->Ridden Construct": {
                     "name": "Ridden Construct",
-                    "description": "<p>The construct is piloted by a @UUID[Compendium.pf2e.pathfinder-bestiary.Actor.BeptBpCJ4Ny4biOH]{Leaf Leshy} who can be targeted separately but has greater cover. The leshy can't take actions of their own while inside the construct, other than to leave it, which takes 1 minute.</p>"
+                    "description": "<p>The construct is piloted by a @UUID[Compendium.pf2e.pathfinder-monster-core.Actor.v1UK3IwCB8wCbL3L]{Leaf Leshy} who can be targeted separately but has greater cover. The leshy can't take actions of their own while inside the construct, other than to leave it, which takes 1 minute.</p>"
                 },
                 "action->Menacing Sickles": {
                     "name": "Menacing Sickles",
@@ -4100,8 +4529,31 @@
             "name": "Skartitch Chip-Tooth",
             "blurb": "Female ratfolk crime lord",
             "items": {
+                "weapon->Crossbow": {
+                    "name": "Crossbow",
+                    "description": "<p>This ranged weapon has a bow-like assembly mounted on a handled frame called a tiller. The tiller has a mechanism to lock the bowstring in place, attached to a trigger mechanism that releases the tension and launches a bolt.</p>"
+                },
+                "weapon->+2 Striking Handwraps of Mighty Blows": {
+                    "name": "+2 Striking Handwraps of Mighty Blows",
+                    "description": "<p>As you invest these embroidered strips of cloth, you must meditate and slowly wrap them around your hands. These handwraps have weapon runes etched into them to give your unarmed attacks the benefits of those runes, making your unarmed attacks work like magic weapons. For example, <em>+1 striking handwraps of mighty blows</em> would give you a +1 item bonus to attack rolls with your unarmed attacks and increase the damage of your unarmed attacks from one weapon die to two (normally 2d4 instead of 1d4, but if your fists have a different weapon damage die or you have other unarmed attacks, use two of that die size instead).</p>\n<p>You can upgrade, add, and transfer runes to and from the handwraps just as you would for a weapon, and you can attach talismans to the handwraps. Treat the handwraps as melee weapons of the brawling group with light Bulk for these purposes. Property runes apply only when they would be applicable to the unarmed attack you're using. For example, a property that must be applied to a slashing weapon wouldn't function when you attacked with a fist, but you would gain its benefits if you attacked with a claw or some other slashing unarmed attack.</p>"
+                },
+                "armor->Leather Armor": {
+                    "name": "Leather Armor",
+                    "description": "<p>A mix of flexible and molded boiled leather, a suit of this type of armor provides some protection with maximum flexibility.</p>"
+                },
+                "consumable->Disintegration Bolt": {
+                    "name": "Disintegration Bolt",
+                    "description": "<p>The shaft of this bolt is scorched and blackened, and handling it coats your fingers with a fine black powder. When an activated <em>disintegration bolt</em> hits a target, it is subject to a @UUID[Compendium.pf2e.spells-srd.Item.r7ihOgKv19eJQnik]{Disintegrate} spell requiring a @Check[fortitude|dc:34] save. As with the spell, a critical hit on the attack roll causes the target's saving throw outcome to be one degree worse.</p>\n<p><strong>Activate</strong> <span class=\"action-glyph\">A</span> Interact</p>\n<p><strong>Craft Requirements</strong> Supply one casting of <em>disintegrate</em>.</p>"
+                },
+                "consumable->Bolts": {
+                    "name": "Bolts",
+                    "description": "<p>Shorter than traditional arrows but similar in construction, bolts are the ammunition used by crossbows.</p>"
+                },
                 "strike-melee->Fangs": {
                     "name": "Fangs"
+                },
+                "strike-ranged->Crossbow": {
+                    "name": "Crossbow"
                 },
                 "action->Nimble Dodge": {
                     "name": "Nimble Dodge",
@@ -4387,7 +4839,7 @@
                 },
                 "action->Serve Tea": {
                     "name": "Serve Tea",
-                    "description": "<p>A living creature that drinks the tea with an Interact action regains [[/r 1d4[healing]]] Hit Points and is temporarily immune for 10 minutes.</p>\n<p>Unconsumed tea disappears at the beginning of tthe spellskein's next turn.</p>"
+                    "description": "<p>A living creature that drinks the tea with an Interact action regains @Damage[1d4[healing]] Hit Points and is temporarily immune for 10 minutes.</p>\n<p>Unconsumed tea disappears at the beginning of tthe spellskein's next turn.</p>"
                 },
                 "action->Lizard Frill": {
                     "name": "Lizard Frill",
@@ -4397,14 +4849,14 @@
         },
         "Spider Summoning Rune": {
             "name": "Spider Summoning Rune",
-            "descriptionHazard": "<p>An @UUID[Compendium.pf2e.conditionitems.Item.zJxUflt9np0q4yML]{Invisible} rune on the floor summons a @UUID[Compendium.pf2e.pathfinder-bestiary.Actor.T5CUuPsMPb17d6Qy]{Goliath Spider} when disturbed by someone who isn't wearing Norgorber's religious symbol.</p>",
+            "descriptionHazard": "<p>An @UUID[Compendium.pf2e.conditionitems.Item.zJxUflt9np0q4yML]{Invisible} rune on the floor summons a @UUID[Compendium.pf2e.pathfinder-monster-core.Actor.eP4a0FAbus3tNTbc]{Goliath Spider} when disturbed by someone who isn't wearing Norgorber's religious symbol.</p>",
             "disable": "<p>@Check[thievery|dc:34|name:Erase the Rune|traits:uncommon,magical,trap,complex] (master) to erase the rune or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (6th rank; counteract DC 36) to dispel the rune.</p>",
             "reset": "<p>The trap resets after 24 hours.</p>",
             "stealth": "<p>(master)</p>",
             "items": {
                 "action->Summon Animal": {
                     "name": "Summon Animal",
-                    "description": "<p><strong>Trigger</strong> A creature that isn't wearing a religious symbol of Norgorber enters the area above the rune</p><hr />\n<p><strong>Effect</strong> The trap summons a @UUID[Compendium.pf2e.pathfinder-bestiary.Actor.T5CUuPsMPb17d6Qy]{Goliath Spider}. The goliath spider rolls initiative and remains for [[/r 2d6 #rounds]]{2d6 rounds}, after which the spell ends and the spider disappears. The spider also disappears if someone disables the trap before the duration expires. Unlike most summoned creatures, the goliath spider can use 3 actions each round and can use reactions.</p>"
+                    "description": "<p><strong>Trigger</strong> A creature that isn't wearing a religious symbol of Norgorber enters the area above the rune</p><hr /><p><strong>Effect</strong> The trap summons a @UUID[Compendium.pf2e.pathfinder-monster-core.Actor.eP4a0FAbus3tNTbc]{Goliath Spider}. The goliath spider rolls initiative and remains for [[/r 2d6 #rounds]]{2d6 rounds}, after which the spell ends and the spider disappears. The spider also disappears if someone disables the trap before the duration expires. Unlike most summoned creatures, the goliath spider can use 3 actions each round and can use reactions.</p>"
                 }
             }
         },
@@ -4641,11 +5093,19 @@
             "blurb": "Male variant mohrg",
             "hpDetails": "void healing",
             "items": {
+                "weapon->Spellcutter": {
+                    "name": "Spellcutter",
+                    "description": "<p>The blade of this <em>+2 greater striking adamantine longsword</em> seems to absorb light from the air around it, giving the impression the wielder is standing in the shadow of a much larger creature.</p>\n<p>While <em>Spellcutter</em> is a potent weapon for battling undead and constructs, an ancient restriction on the blade prevents it from harming living creatures; attacks against living beings deal no damage. This restriction doesn't apply to dhampirs or creatures with the @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.TTCw5NusiSSkJU1x]{Void Healing} ability who are otherwise living; the magic of the blade can't distinguish between such beings and undead.</p>\n<hr />\n<p><strong>Activate</strong> <span class=\"action-glyph\">R</span> envision</p>\n<p><strong>Trigger</strong> You're targeted by a spell while wielding <em>Spellcutter</em></p>\n<hr />\n<p><strong>Effect</strong> <em>Spellcutter</em> attempts to absorb the magic of the triggering spell, giving you a +4 status bonus to your AC and saves against the effect.</p>\n<hr />\n<p><strong>Activate</strong> <span class=\"action-glyph\">1</span> Interact</p>\n<hr />\n<p><strong>Effect</strong> Touching <em>Spellcutter</em> to any light source of 12th level or lower (including 6th-rank spells with the light trait) instantly extinguishes the effect. If the source of the light is a large flame, such as a forest fire or bonfire, it only extinguishes the light source in a 5-foot radius burst from the point of contact.</p>"
+                },
                 "strike-melee->Claw": {
                     "name": "Claw"
                 },
                 "strike-melee->Tongue": {
                     "name": "Tongue"
+                },
+                "strike-melee->Spellcutter": {
+                    "name": "Spellcutter",
+                    "description": "<p><em>@UUID[Compendium.pf2e.equipment-srd.Item.LKIs3LJqrKNP2yrx]{Spellcutter}</em> cannot damage living creatures</p>"
                 },
                 "action->Attack of Opportunity": {
                     "name": "Attack of Opportunity"
@@ -4727,8 +5187,22 @@
         "Terwa Chosen": {
             "name": "Terwa Chosen",
             "items": {
+                "weapon->Mambele": {
+                    "name": "Mambele",
+                    "description": "<p>Also known as a hunga munga or danisco, this hybrid knife-axe consists of a hilt and a blade that curves backward toward the wielder. The curve of the blade is such that after a victim has been struck by a mambele, more damage is dealt as the weapon is extracted from the victim's body.</p>"
+                },
+                "armor->Leather Armor": {
+                    "name": "Leather Armor",
+                    "description": "<p>A mix of flexible and molded boiled leather, a suit of this type of armor provides some protection with maximum flexibility.</p>"
+                },
+                "strike-melee->Mambele": {
+                    "name": "Mambele"
+                },
                 "strike-melee->Claws": {
                     "name": "Claws"
+                },
+                "strike-ranged->Mambele": {
+                    "name": "Mambele"
                 },
                 "action->Attack of Opportunity": {
                     "name": "Attack of Opportunity"
@@ -4760,6 +5234,14 @@
                 "spellcastingEntry->Innate Primal Spells": {
                     "name": "Innate Primal Spells"
                 },
+                "weapon->Longbow": {
+                    "name": "Longbow",
+                    "description": "<p>This 5-foot-tall bow, usually made of a single piece of elm, hickory, or yew, has a powerful draw and is excellent at propelling arrows with great force and at an extreme distance. You must use two hands to fire a longbow, and it can't be used while mounted.</p>"
+                },
+                "armor->Leather Armor": {
+                    "name": "Leather Armor",
+                    "description": "<p>A mix of flexible and molded boiled leather, a suit of this type of armor provides some protection with maximum flexibility.</p>"
+                },
                 "strike-melee->Claw": {
                     "name": "Claw"
                 },
@@ -4780,6 +5262,14 @@
             "items": {
                 "spellcastingEntry->Spontaneous Occult Spells": {
                     "name": "Spontaneous Occult Spells"
+                },
+                "weapon->Staff of Fire": {
+                    "name": "Staff of Fire",
+                    "description": "<p>This staff resembles a blackened and burned length of ashen wood. It smells faintly of soot and glows as if lit by embers. You can use an Interact action to touch the tip of this staff to a torch, tinder, or a flammable substance to ignite a flame.</p>\n<p><strong>Activate</strong> Cast a Spell</p>\n<hr />\n<p><strong>Effect</strong> You expend a number of charges from the staff to cast a spell from its list.</p>\n<p><strong>Craft Requirements</strong> Supply one casting of all listed levels of all listed spells.</p>\n<ul>\n<li><strong>Cantrip</strong> @UUID[Compendium.pf2e.spells-srd.Item.O9w7r4BKgPogYDDe]{Produce Flame}</li>\n<li><strong>1st</strong> @UUID[Compendium.pf2e.spells-srd.Item.y6rAdMK6EFlV6U0t]{Breathe Fire}</li>\n</ul>"
+                },
+                "armor->Hide Armor": {
+                    "name": "Hide Armor",
+                    "description": "<p>A mix of furs, sturdy hide, and sometimes molded boiled leather, this armor provides protection due to its layers of leather, though its bulkiness slows the wearer down and decreases mobility.</p>"
                 },
                 "strike-melee->Claw": {
                     "name": "Claw"
@@ -4829,6 +5319,14 @@
                     "name": "Alchemist's Fire (Moderate)",
                     "description": "<p><strong>Activate</strong> <span class=\"action-glyph\">A</span> Strike</p>\n<p>Alchemist's fire is a combination of volatile liquids that ignite when exposed to air. Alchemist's fire deals 2d8 fire damage, 2 persistent fire damage, and 2 fire splash damage. You gain a +1 item bonus to attack rolls.</p>"
                 },
+                "weapon->+1 Striking Rod of Wonder": {
+                    "name": "+1 Striking Rod of Wonder",
+                    "description": "<p>This hard but flexible longsword-length piece of wood looks more like a pole than a weapon, but can be deadly in the right hands. While generally not used for combat outside of Song'o culture, some halflings have become so proficient as to make it just as effective as a blade in a fight. Many halflings will even sing to maintain a certain tempo and rhythm during combat. It deals 1d6 bludgeoning damage. A fighting stick is a martial one-handed melee weapon in the club weapon group.</p>\n<hr />\n<p>@UUID[Compendium.pf2e.equipment-srd.Item.6wVWwpL9pYr3yQtt]{Rod of Wonder}</p>"
+                },
+                "armor->Studded Leather Armor": {
+                    "name": "Studded Leather Armor",
+                    "description": "<p>This leather armor is reinforced with metal studs and sometimes small metal plates, providing most of the flexibility of leather armor with more robust protection.</p>"
+                },
                 "equipment->Thieves' Tools (Infiltrator)": {
                     "name": "Thieves' Tools (Infiltrator)",
                     "description": "<p>You need thieves' tools to @UUID[Compendium.pf2e.actionspf2e.Item.2EE4aF4SZpYf0R6H]{Pick Locks} or @UUID[Compendium.pf2e.actionspf2e.Item.cYdz2grcOcRt4jk6]{Disable Devices} (of some types) using the Thievery skill. Infiltrator thieves' tools add a +1 item bonus to checks to Pick Locks and Disable Devices.</p>\n<p>If your thieves' tools are broken, you can repair them by replacing the lock picks with @UUID[Compendium.pf2e.equipment-srd.Item.BznmPaRjI4Orb0IH]{Replacement Picks} appropriate to your tools; this doesn't require using the Repair action. If you wear your thieves' tools, you can draw and replace them as part of the action that uses them.</p>"
@@ -4836,6 +5334,9 @@
                 "consumable->Healing Potion (Moderate)": {
                     "name": "Healing Potion (Moderate)",
                     "description": "<p>A healing potion is a vial of a ruby-red liquid that imparts a tingling sensation as the drinker's wounds heal rapidly. When you drink a healing potion, you regain [[/r (3d8+10)[healing]]]{3d8+10 Hit Points}.</p>"
+                },
+                "strike-melee->Rod": {
+                    "name": "Rod"
                 },
                 "action->Halfling Luck": {
                     "name": "Halfling Luck",
@@ -4984,6 +5485,10 @@
                 "spellcastingEntry->Occult Innate Spells": {
                     "name": "Occult Innate Spells"
                 },
+                "weapon->Mambele": {
+                    "name": "Mambele",
+                    "description": "<p>Also known as a hunga munga or danisco, this hybrid knife-axe consists of a hilt and a blade that curves backward toward the wielder. The curve of the blade is such that after a victim has been struck by a mambele, more damage is dealt as the weapon is extracted from the victim's body.</p>"
+                },
                 "strike-melee->Mambele": {
                     "name": "Mambele"
                 },
@@ -5097,6 +5602,14 @@
                 },
                 "spellcastingEntry->Occult Innate Spells": {
                     "name": "Occult Innate Spells"
+                },
+                "weapon->Composite Shortbow": {
+                    "name": "Composite Shortbow",
+                    "description": "<p>This shortbow is made from horn, wood, and sinew laminated together to increase the power of its pull and the force of its projectile. Its compact size and power make it a favorite of mounted archers. Any time an ability is specifically restricted to a shortbow, it also applies to composite shortbows unless otherwise stated.</p>"
+                },
+                "consumable->Arrows": {
+                    "name": "Arrows",
+                    "description": "<p>These projectiles are the ammunition for bows. The shaft of an arrow is made of wood. It is stabilized in flight by fletching at one end and bears a metal head on the other.</p>"
                 },
                 "strike-melee->Fist": {
                     "name": "Fist"
@@ -5244,8 +5757,15 @@
             "publicNotes": "<p>Insectile werecreatures, such as wereants, only come about in unusual circumstances, such as powerful curses from inhuman gods or transformative magic run amok. Wereants work together with a natural cohesion that's rare in other types of werecreatures. The wereants presented here are more powerful than most wereants, as they've been warped by the forces contained within the Vesicant Egg.</p>\n<p>When overwhelming force is inadvisable, a wereant hive sends a poison-dripping assassin for murderous work. These poisoners love to terrify those dying in agony from their toxins.</p>",
             "languagesDetails": "inset empathy; telepathy 120 feet",
             "items": {
+                "weapon->Kukri": {
+                    "name": "Kukri",
+                    "description": "<p>The blade of this foot-long knife curves inward and lacks a cross guard at the hilt.</p>"
+                },
                 "strike-melee->Mandibles": {
                     "name": "Mandibles"
+                },
+                "strike-melee->Kukri": {
+                    "name": "Kukri"
                 },
                 "action->Telepathy 120 feet": {
                     "name": "Telepathy 120 feet"
@@ -5293,12 +5813,19 @@
             "acDetails": "(45 with shield raised)",
             "languagesDetails": "insect empathy, telepathy 120 feet",
             "items": {
+                "weapon->Khopesh": {
+                    "name": "Khopesh",
+                    "description": "<p>This curved sickle sword has a pointed tip, allowing it to be swung like a handaxe or thrust like a short sword. The tip of a khopesh is usually hooked so that it can be used to disarm an opponent's shield or weapon.</p>"
+                },
                 "shield->Sturdy Shield (Major)": {
                     "name": "Sturdy Shield (Major)",
                     "description": "<p>With a superior design and excellent craftsmanship, this steel shield has higher Hardness than its non-magical counterparts, making it harder to break and destroy.</p>\n<p>The shield has Hardness 17, HP 136, and BT 68.</p>"
                 },
                 "strike-melee->Mandibles": {
                     "name": "Mandibles"
+                },
+                "strike-melee->Khopesh": {
+                    "name": "Khopesh"
                 },
                 "action->Insect Empathy": {
                     "name": "Insect Empathy",
@@ -5348,9 +5875,17 @@
                 "spellcastingEntry->Divine Spontaneous Spells": {
                     "name": "Divine Spontaneous Spells"
                 },
+                "weapon->Golden Blade of Mzali": {
+                    "name": "Golden Blade of Mzali",
+                    "description": "<p>Each of these golden spears was forged in the days of old Mzali, when the sun kings ruled the city. The majority of these weapons are lost, most likely buried with warriors in tombs and temples sealed by Walkena's decrees. Walkena retains a single golden blade, which he grants to his Master of Spears.</p>\n<p>This <em>+2 greater striking returning spear</em> is coated in brilliant gold, and beautiful engravings run along the shaft, depicting the rising and setting of the sun against Mzali's skyline. The spear glows with the effects of 4th-rank @UUID[Compendium.pf2e.spells-srd.Item.WBmvzNDfpwka3qT4]{Light}. You can suppress or resume this light by using an action, which has the concentrate trait. When you hit a creature with the spear, it takes 1d6 additional fire damage. When you critically hit a creature with the spear, the creature takes @Damage[1d8[persistent,fire]] damage and @Damage[1d8[bleed]] as its blood boils away. Unlike normal when taking two types of persistent damage, a creature needs only a single successful flat check to remove both the fire and bleed damage.</p>\n<hr />\n<p><strong>Activate</strong> <span class=\"action-glyph\">r</span> envision</p>\n<p><strong>Frequency</strong> once per day</p>\n<p><strong>Trigger</strong> You critically hit a creature with the weapon</p>\n<hr />\n<p><strong>Effect</strong> You call upon the spear's light to guide the creature away from violence. The creature must choose one of the following options:</p>\n<ul>\n<li>The creature surrenders, immediately receiving the critical failure effects of @UUID[Compendium.pf2e.spells-srd.Item.b515AZlB0sridKSq]{Calm} and @UUID[Compendium.pf2e.spells-srd.Item.DCQHaLrYXMI37dvW]{Paralyze}.</li>\n<li>The weapon casts 7th-rank @UUID[Compendium.pf2e.spells-srd.Item.VosLNn2M8S7JH67D]{Blindness} on the creature with a @Check[fortitude|dc:34|name:Blindness|traits:incapacitation,necromancy].</li>\n</ul>\n<p>Regardless of the choice, the spear loses its ability to glow with light until your next daily preparations.</p>\n<hr />\n<p><strong>Activate</strong> <span class=\"action-glyph\">2</span> envision, Interact</p>\n<p><strong>Frequency</strong> once per day</p>\n<hr />\n<p><strong>Effect</strong> The spear casts 7th-rank @UUID[Compendium.pf2e.spells-srd.Item.1K6AYGisvo9gqdhs]{Elemental Form} on you, choosing fire as the form's trait. The spear loses its additional fire damage until your next daily preparations.</p>"
+                },
                 "shield->Sturdy Shield (Moderate)": {
                     "name": "Sturdy Shield (Moderate)",
                     "description": "<p>With a superior design and excellent craftsmanship, this steel shield has higher Hardness than its non-magical counterparts, making it harder to break and destroy.</p>\n<p>The shield has Hardness 13, HP 104, and BT 52.</p>"
+                },
+                "armor->Splint Mail": {
+                    "name": "Splint Mail",
+                    "description": "<p>This type of armor is chain mail reinforced with flexible, interlocking metal plates, typically located on the wearer's torso, upper arms, and legs. A suit of this armor comes with an undercoat of @UUID[Compendium.pf2e.equipment-srd.Item.zBYEU9E7034ENCmh]{Padded Armor} and a pair of @UUID[Compendium.pf2e.equipment-srd.Item.Ix2vicchE79d6Cl3]{gauntlets}.</p>"
                 },
                 "strike-melee->Golden Blade": {
                     "name": "Golden Blade"
@@ -5393,6 +5928,18 @@
             "name": "Yonsuu",
             "blurb": "Male catfolk head warden",
             "items": {
+                "weapon->Dagger": {
+                    "name": "Dagger",
+                    "description": "<p>This small, bladed weapon is held in one hand and used to stab a creature in close combat. It can also be thrown.</p>"
+                },
+                "weapon->Trident": {
+                    "name": "Trident",
+                    "description": "<p>This three-pronged, spear-like weapon typically has a 4-foot shaft. Like a spear, it can be wielded with one hand or thrown.</p>"
+                },
+                "armor->Studded Leather Armor": {
+                    "name": "Studded Leather Armor",
+                    "description": "<p>This leather armor is reinforced with metal studs and sometimes small metal plates, providing most of the flexibility of leather armor with more robust protection.</p>"
+                },
                 "equipment->Manacles (Good)": {
                     "name": "Manacles (Good)",
                     "description": "<p>You can manacle someone who is willing or otherwise at your mercy as an exploration activity taking 10-30 seconds depending on the creature's size and how many manacles you apply. A two-legged creature with its legs bound takes a -15-foot circumstance penalty to its Speeds, and a two-handed creature with its wrists bound has to succeed at a @Check[flat|dc:5] any time it uses a manipulate action or else that action fails. This DC may be higher depending on how tightly the manacles constrain the hands. A creature bound to a stationary object is immobilized. For creatures with more or fewer limbs, the GM determines what effect manacles have, if any. Freeing a creature from good manacles requires five successful @Check[thievery|dc:32|traits:action:pick-a-lock] checks.</p>"
@@ -5400,6 +5947,15 @@
                 "equipment->Religious Symbol of Norgorber (Wooden)": {
                     "name": "Religious Symbol of Norgorber (Wooden)",
                     "description": "<p>This piece of wood or silver is emblazoned with an image representing a deity. Some divine spellcasters, such as clerics, can use a religious symbol of their deity as a divine focus to use certain abilities and cast some spells. A religious symbol must be held in one hand to use it.</p>"
+                },
+                "strike-melee->Trident": {
+                    "name": "Trident"
+                },
+                "strike-melee->Dagger": {
+                    "name": "Dagger"
+                },
+                "strike-ranged->Dagger": {
+                    "name": "Dagger"
                 },
                 "action->Cat's Luck": {
                     "name": "Cat's Luck",
@@ -5451,6 +6007,15 @@
                 "consumable->Darkvision Elixir (Lesser)": {
                     "name": "Darkvision Elixir (Lesser)",
                     "description": "<p><strong>Activate</strong> <span class=\"action-glyph\">1</span> Interact</p>\n<p>After you drink this elixir, your sight becomes sharper in darkness. You gain darkvision for 10 minutes.</p>\n<p>@UUID[Compendium.pf2e.equipment-effects.Item.7UL8belWmo7U5YGM]{Effect: Darkvision Elixir (Lesser)}</p>"
+                },
+                "strike-melee->Shortsword": {
+                    "name": "Shortsword"
+                },
+                "strike-melee->Sap": {
+                    "name": "Sap"
+                },
+                "strike-ranged->Composite Shortbow": {
+                    "name": "Composite Shortbow"
                 },
                 "action->+1 Circumstance to All Saves vs. Traps": {
                     "name": "+1 Circumstance to All Saves vs. Traps"

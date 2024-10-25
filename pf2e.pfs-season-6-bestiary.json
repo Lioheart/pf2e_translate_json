@@ -99,6 +99,16 @@
                 }
             }
         },
+        "Adolescent Kirin": {
+            "name": "Adolescent Kirin",
+            "publicNotes": "<p>Symbols of grace and purity, unicorns resemble proud and noble horses. They typically have pure white coats, but they are best known for the single, delicate horn that extends from the center of their forehead. While unicorns often serve as protectors of unspoiled wilderness and sacred places, they are themselves highly sought after for their horns, which are said to possess potent magical properties. To many, the mere idea of hunting such a magnificent creature in the hopes of severing its horn is utterly reprehensible. Indeed, a dehorned unicorn is a sorry sight, and few such unicorns survive much longer in the wild.</p>\n<p>Unicorns are found almost exclusively in remote, unsullied areas of wilderness. Sometimes associated with good-aligned deities, other times associated with nature and the fey, unicorns are always known for their righteousness and nobility. They are wary, at best, of most humanoid creatures, due in large part to poachers' tendency to hunt them for their horns, but unicorns are often rumored to have a weakness for those who are pure of both heart and spirit. Despite some tales, unicorns are equally likely to recognize purity in people of all genders.</p>",
+            "allSavesBonus": "+2 to will saves vs. mental",
+            "items": {
+                "spellcastingEntry->Primal Innate Spells": {
+                    "name": "Primal Innate Spells"
+                }
+            }
+        },
         "Apple Turnover": {
             "name": "Apple Turnover",
             "descriptionHazard": "<p>A fruit merchant's cart has been poorly secured. The slightest careless bump on the way past is enough to knock it over and topple the fruit it carries all over the street.</p>",
@@ -156,6 +166,11 @@
             "publicNotes": "<p>This large and powerful omnivore inhabits forested hills. While it typically sustains itself on nuts, berries, fish, and small mammals, it's fiercely territorial and will chase off or kill any creature it views as competition. Grizzly bears are especially temperamental when their young are nearby. In combat, a grizzly bear often attempts to grab and maul its foe with surprising ferocity. It continues its assault until its foe seems like it is no longer a threat, though if the bear is hungry, it will not hesitate to feed.</p>\n<hr />\n<p>Bears are ferocious predators typically found in cold or temperate woodlands and hills. Many species of bear exist in addition to the two presented below, such as the smaller black bear or the arctic-dwelling polar bear.</p>",
             "blurb": "Variant grizzly bear"
         },
+        "Big Katsu": {
+            "name": "Big Katsu",
+            "publicNotes": "<p>Ogre gluttons take the act of feeding to a horrific extreme, capable of extending their already cavernous mouths wide enough to gulp down a halfling. Stories of ogre gluttons being tricked into eating razor-edged shields or barrels filled with poisoned meat are common, but such tales are of little consolation to those who have been gobbled whole by these ravenous giants. In addition to their sadistic table manners, ogre gluttons have a disturbing knack for coming up with violent \"games\" that are little more than drawn-out torments, yet those who somehow manage to beat a glutton at the rules of their own game can often enrage the ogre enough that the resulting tantrum provides an opportunity for the captives to escape.</p>\n<hr />\n<p>For many societies, ogres embody brutish, amoral violence and greedy cruelty. Standing 10 feet tall and densely muscled, ogres are usually as strong as they are vicious. The worst ogres are sadists, enjoying remorseless murder, torture, and violence in all of its forms. Although they prefer to vent their violent urges on other humanoids\u2014the smaller the better\u2014ogre captivity can end in a horrifying fate for anyone unlucky enough to fall within their meaty grasp: becoming dinner. But for all their creativity in inflicting pain, ogres often forget that their playthings lack their own robust fortitude and high pain tolerance, and many of their captives die sooner than the ogres might prefer. Meanwhile, those who manage to survive captivity in an ogre's larder often emerge with lasting mental scars. A captive able to keep their wits about them, however, can sometimes trick the brutes by promising treasure, more plentiful food sources, or other crude amusements, taking advantage of an ogre's often-limited intellect to engineer opportunities to escape or gain revenge.</p>\n<p>Ogres are social creatures only in the most debased sense. They gather together in groups called families, though members are not always related by blood. The most powerful ogre in any family is the \"boss\"\u2014usually the family's patriarch or matriarch\u2014whom the other ogres in the family learn to quickly obey or risk being brutalized by the boss's loyal kin. Ogres lair in caves, crumbling ruins, or dilapidated shacks close enough to humanoid settlements or animal trails to make raiding easy. Their lairs are filthy and frequently contain all-too-recognizable evidence of their depravity, along with assorted treasures stolen from past captives.</p>",
+            "blurb": "Variant ogre glutton"
+        },
         "Blood Elegecide (Doom Demon)": {
             "name": "Blood Elegecide (Doom Demon)",
             "languagesDetails": "Telepathy 100 feet",
@@ -178,6 +193,25 @@
         "Blooddrunk Wild Dog": {
             "name": "Blooddrunk Wild Dog",
             "sensesDetails": "bloodscent"
+        },
+        "Bloodmoon": {
+            "name": "Bloodmoon",
+            "descriptionHazard": "<p>Bloodmoon is a naginata that can act on its own provided it is attuned to at least one creature.</p>",
+            "disable": "<p>Two successful @Check[religion|dc:15|options:disable-bloodmoon] or @Check[occultism|dc:15|options:disable-bloodmoon] checks, @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (2nd rank; counteract DC 13)</p>",
+            "routine": "<p>(3 actions) Bloodmoon uses its first action to fly up to 20 feet towards an opponent. It then makes two naginata strikes, each against a different foe.</p>",
+            "items": {
+                "action->Object Immunities (Except Spirit)": {
+                    "name": "Object Immunities (Except Spirit)"
+                },
+                "action->Float": {
+                    "name": "Float",
+                    "description": "<p><strong>Trigger</strong> Combat begins with the creature it is attuned to</p><hr /><p><strong>Effect</strong> The blade begins to float in the air, then rolls initiative.</p>"
+                },
+                "action->Prone to Monologuing": {
+                    "name": "Prone to Monologuing",
+                    "description": "<p>If a PC uses an action to taunt Bloodmoon with a successful @Check[deception|dc:13], @Check[diplomacy|dc:13], or @Check[intimidation|dc:13] check, Bloodmoon must spend an action monologuing on the next turn.</p>"
+                }
+            }
         },
         "Bloodsick Wild Dog": {
             "name": "Bloodsick Wild Dog",
@@ -339,6 +373,44 @@
                 }
             }
         },
+        "Empowered Bloodmoon": {
+            "name": "Empowered Bloodmoon",
+            "descriptionHazard": "<p>Bloodmoon is a naginata that can act on its own provided it is attuned to at least one creature.</p>",
+            "disable": "<p>Two successful @Check[religion|dc:17|options:disable-bloodmoon] or @Check[occultism|dc:17|options:disable-bloodmoon] checks, @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (2nd rank; counteract DC 15)</p>",
+            "routine": "<p>(3 actions) Bloodmoon uses its first action to fly up to 20 feet towards an opponent. It then makes two naginata strikes, each against a different foe.</p>",
+            "items": {
+                "action->Object Immunities (Except Spirit)": {
+                    "name": "Object Immunities (Except Spirit)"
+                },
+                "action->Float": {
+                    "name": "Float",
+                    "description": "<p><strong>Trigger</strong> Combat begins with the creature it is attuned to</p><hr /><p><strong>Effect</strong> The blade begins to float in the air, then rolls initiative.</p>"
+                },
+                "action->Prone to Monologuing": {
+                    "name": "Prone to Monologuing",
+                    "description": "<p>If a PC uses an action to taunt Bloodmoon with a successful @Check[deception|dc:15], @Check[diplomacy|dc:15], or @Check[intimidation|dc:15] check, Bloodmoon must spend an action monologuing on the next turn.</p>"
+                }
+            }
+        },
+        "Empowered Bloodmoon (3-4)": {
+            "name": "Empowered Bloodmoon (3-4)",
+            "descriptionHazard": "<p>Bloodmoon is a naginata that can act on its own provided it is attuned to at least one creature.</p>",
+            "disable": "<p>Two successful @Check[religion|dc:20|options:disable-bloodmoon] or @Check[occultism|dc:20|options:disable-bloodmoon] checks, @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (2nd rank; counteract DC 18)</p>",
+            "routine": "<p>(3 actions) Bloodmoon uses its first action to fly up to 20 feet towards an opponent. It then makes two naginata strikes, each against a different foe.</p>",
+            "items": {
+                "action->Object Immunities (Except Spirit)": {
+                    "name": "Object Immunities (Except Spirit)"
+                },
+                "action->Float": {
+                    "name": "Float",
+                    "description": "<p><strong>Trigger</strong> Combat begins with the creature it is attuned to</p><hr /><p><strong>Effect</strong> The blade begins to float in the air, then rolls initiative.</p>"
+                },
+                "action->Prone to Monologuing": {
+                    "name": "Prone to Monologuing",
+                    "description": "<p>If a PC uses an action to taunt Bloodmoon with a successful @Check[deception|dc:18], @Check[diplomacy|dc:18], or @Check[intimidation|dc:18] check, Bloodmoon must spend an action monologuing on the next turn.</p>"
+                }
+            }
+        },
         "Enava": {
             "name": "Enava",
             "publicNotes": "<p>Succubi are manifestations of the sin of destructive lust, and they are the most attractive of all demons\u2014as befits their role in seducing mortals to fall to sin. The concept of gender is fluid to a succubus, as they can adopt countless humanoid forms of any gender to aid in their goals. Most succubi have a feminine true form (incubi, which usually have a masculine true form, are a different kind of demon), but regardless of gender, a lust demon is supernaturally beautiful or handsome, but with curving horns, bat wings, sharp claws, and a sinuous tail.</p>\n<p>When disguised as a mortal humanoid in the Universe, a succubus whispers into the ears of mortals, urging them to pursue their darkest and most destructive desires and pushing them into depravity, using magic only if persuasion fails. While mortals often fixate on succubi's application of sexual lust, these demons are can easily exploit lust for power, knowledge, fame, or any other desire as easily as more carnal appetites. Their ability to infiltrate societies makes them excellent spies, assassins, and political saboteurs as well. Ultimately, the succubus enjoys all means of upending mortal culture.</p>\n<hr />\n<p>When a sinful mortal soul is judged and sent on to the Outer Rifts, it can become a deadly fiend\u2014a demon. Demons are living incarnations of sin\u2014be they classic sins like wrath or gluttony, or more \"specialized\" depravities like an obsession with torture or the act of treason or treachery. Once formed, a demon's driving goals are twofold\u2014the amassing of personal power, and the corruption of mortal souls to cause them to become tainted by sin. In this way demons ensure a never-ending supply of new demons to bolster their ever-growing ranks in the Outer Rifts.</p>\n<p>Demons are selfish and self-absorbed creatures, and most firmly believe that mortals only play at being more virtuous than fiends. They enjoy tempting mortals into damnation to both indulge their egos and swell their armies. Like many other fiends, one of the great rewards of this manipulation is fulfilling their hunger for souls. In their eyes, the primary use for these souls is to spawn new demons, who can serve as soldiers, slaves, pawns, or even currency for their more powerful masters.</p>",
@@ -350,6 +422,11 @@
                     "name": "Divine Innate Spells"
                 }
             }
+        },
+        "Enraged Bun the Black": {
+            "name": "Enraged Bun the Black",
+            "publicNotes": "<p>Although the glistening scales and sleek, fin-like wings on these drakes give them an appearance reminiscent of river fish, they are actually distant relatives of the dragons that rule the oceans. While smaller than most drakes, river drakes are more than capable of plaguing river travelers and are equally at home above and below the water's surface. This flexibility allows them to catch a wide variety of prey, from fish and boggards to deer and the occasional ferry passenger.</p>\n<hr />\n<p>Ravenous, bestial, and driven by instinct, drakes are draconic monsters who bear a fraction of the terrifying might of the primal dragons they share evolutionary roots with. While they're weaker, slower, and less inclined toward reason than dragons, drakes are nonetheless a menace to creatures and settlements around them. Their propensity for forming raiding parties\u2014small social groups fittingly called \"rampages\"\u2014makes them all the more dangerous; a single rampage of river drakes can quickly lay waste to a waterside village, and roving rampages of desert drakes are a plague to caravan traders.</p>\n<p>Drakes share a number of physical characteristics that unite them as one species despite their wide variety of habitats and abilities. For example, drakes lack forearms, leaving them with their formidable jaws and thickscaled tails to use in close combat. Most drakes would rather avoid this, however, preferring to use their magical breath to wreak havoc in wide swaths from comfortable distances while flying overhead. Finally, all drakes have small reservoirs of their ancestral draconic power that they can tap into to perform incredible feats of speed.</p>\n<p>Different species of drakes rarely come into conflict. Part of this is their distinct habitats, but drakes are open to negotiating simple agreements between rampages. This courtesy does not extend to dragonets, which drakes happily take as prey. Solitary tamed drakes are also excluded from such agreements and considered free game if their tamer isn't strong enough to protect them.</p>\n<h3>Drake Eggs</h3>\n<p>While drake hides aren't any more valuable than those of similarly sized creatures, drake eggs are prized commodities. They are used as components in powerful spells as well as eaten by various cultures, but the most common use for drake eggs is hatching and rearing drakes to serve as mounts and guardians.</p>\n<p>A typical drake lays a clutch of 2d4 eggs every 5 years. Eggs hatch within 3 to 6 weeks, during which time they must be kept in conditions appropriate to their natural environment, perhaps the most difficult aspect of drake husbandry. While it is generally easy for breeders to incubate the eggs of desert or jungle drakes (which require mildly warm temperatures to hatch) or river drakes (which must be submerged in running water), the eggs of flame and frost drakes require extreme temperatures in order to hatch, which can be difficult to replicate safely.</p>\n<p>A drake egg is an object with Hardness 3, 5 HP, and no Broken Threshold. The coloration of drake eggs varies only slightly from one species to the next. A creature must succeed at a @Check[nature|dc:20] check, or a relevant DC 20 Lore check, to identify the drake species of a specific egg.</p>\n<p>Once a drake hatches, they imprint on the first creature that they see. A creature imprinted on in this way can use Nature to Train and Command that drake. The market price of a drake egg varies depending on the type of drake and the exact legal situation. Because drakes are dangerous and intelligent creatures, many societies do not condone the trade of drake eggs and criminalize those who engage in it.</p>\n<p>It takes 2 years for a drake hatchling to grow to full size. A well-trained drake can make a fearsome mount or guardian, but many careless would-be drake trainers are devoured by their charges.</p>",
+            "blurb": "Variant river drake"
         },
         "Experienced Homunculus": {
             "name": "Experienced Homunculus",
@@ -374,9 +451,38 @@
                 }
             }
         },
+        "Greased Floor": {
+            "name": "Greased Floor",
+            "descriptionHazard": "<p>The floor is highly waxed and slippery.</p>",
+            "disable": "<p>@Check[survival|dc:14] or @Check[thievery|dc:14] to remove the slippery coating or any ability that turns the area into difficult terrain.</p>",
+            "reset": "<p>Manual, reapply the wax.</p>",
+            "items": {
+                "action->Slip and Slide": {
+                    "name": "Slip and Slide",
+                    "description": "<p><strong>Trigger</strong> A creature walks into the greased area</p><hr /><p><strong>Effect</strong> The triggering creature must make a successful @Check[acrobatics|dc:12] check to avoid falling @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone}. The area is uneven ground.</p>"
+                }
+            }
+        },
+        "Greased Floor (3-4)": {
+            "name": "Greased Floor (3-4)",
+            "descriptionHazard": "<p>The floor is highly waxed and slippery.</p>",
+            "disable": "<p>@Check[survival|dc:16] or @Check[thievery|dc:16] to remove the slippery coating or any ability that turns the area into difficult terrain.</p>",
+            "reset": "<p>Manual, reapply the wax.</p>",
+            "items": {
+                "action->Slip and Slide": {
+                    "name": "Slip and Slide",
+                    "description": "<p><strong>Trigger</strong> A creature walks into the greased area</p><hr /><p><strong>Effect</strong> The triggering creature must make a successful @Check[acrobatics|dc:14] check to avoid falling @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone}. The area is uneven ground.</p>"
+                }
+            }
+        },
         "Greater Gargarthezul": {
             "name": "Greater Gargarthezul",
             "languagesDetails": "telepathy 100 feet"
+        },
+        "Halfling Shadower": {
+            "name": "Halfling Shadower",
+            "publicNotes": "<p>Halflings' keen sight makes them excellent street watchers. Though the job rarely calls for fighting, most street watchers cover themselves head to ankle in whatever armor and weapons they manage to get their hands on.</p>\n<hr />\n<p>Despite their small stature, a halfling can prove to be a mighty foe if you find yourself on the wrong side of their frying pan.</p>",
+            "blurb": "Variant Halfling Street Watcher"
         },
         "Haunting Elegecide (Doom Demon)": {
             "name": "Haunting Elegecide (Doom Demon)",
@@ -388,7 +494,25 @@
             }
         },
         "Hired Hand": {
-            "name": "Hired Hand"
+            "name": "Hired Hand",
+            "items": {
+                "weapon->Composite Shortbow": {
+                    "name": "Composite Shortbow",
+                    "description": "<p>This shortbow is made from horn, wood, and sinew laminated together to increase the power of its pull and the force of its projectile. Its compact size and power make it a favorite of mounted archers. Any time an ability is specifically restricted to a shortbow, it also applies to composite shortbows unless otherwise stated.</p>"
+                },
+                "weapon->Dagger": {
+                    "name": "Dagger",
+                    "description": "<p>This small, bladed weapon is held in one hand and used to stab a creature in close combat. It can also be thrown.</p>"
+                },
+                "armor->Leather Armor": {
+                    "name": "Leather Armor",
+                    "description": "<p>A mix of flexible and molded boiled leather, a suit of this type of armor provides some protection with maximum flexibility.</p>"
+                },
+                "consumable->Arrows": {
+                    "name": "Arrows",
+                    "description": "<p>These projectiles are the ammunition for bows. The shaft of an arrow is made of wood. It is stabilized in flight by fletching at one end and bears a metal head on the other.</p>"
+                }
+            }
         },
         "History's Repetition (1-2)": {
             "name": "History's Repetition (1-2)",
@@ -526,6 +650,10 @@
                 "spellcastingEntry->Divine Focus Spells": {
                     "name": "Divine Focus Spells"
                 },
+                "weapon->Locust Dagger": {
+                    "name": "Locust Dagger",
+                    "description": "<p>This small, bladed weapon is held in one hand and used to stab a creature in close combat. It can also be thrown.</p>"
+                },
                 "consumable->Scroll of Dispel Magic (Rank 2)": {
                     "name": "Scroll of Dispel Magic (Rank 2)",
                     "description": "<p>@UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic}</p><hr /><p>Casting a Spell from a scroll requires holding the scroll in one hand and activating it with a Cast a Spell activity using the normal number of actions for that spell.</p>\n<p>The spell must appear on your spell list. Because you're the one Casting the Spell, use your spell attack modifier and spell DC. The spell also gains the appropriate trait for your tradition (arcane, divine, occult, or primal).</p>\n<p>Any physical costs are provided when a scroll is created, so you don't need to provide them when casting from a scroll. If the spell requires a locus, you must have that locus to Cast the Spell from a scroll.</p>\n<hr />\n<p><em>Note: To create a scroll or wand of a specific spell, drag the spell from the compendium or compendium browser into the inventory of a PC, NPC, or loot actor.</em></p>"
@@ -541,6 +669,10 @@
                 },
                 "spellcastingEntry->Divine Focus Spells": {
                     "name": "Divine Focus Spells"
+                },
+                "weapon->Locust Dagger": {
+                    "name": "Locust Dagger",
+                    "description": "<p>This small, bladed weapon is held in one hand and used to stab a creature in close combat. It can also be thrown.</p>"
                 },
                 "consumable->Scroll of Dispel Magic (Rank 3)": {
                     "name": "Scroll of Dispel Magic (Rank 3)",
@@ -562,7 +694,13 @@
             "name": "Pathfinder Guardian",
             "publicNotes": "<p>Wights are intelligent undead spawned through inescapable cycles of spite. This spite might come from their own malevolent will in life, or can be instilled by necromantic rituals, typically involving the desecration of burial sites. Wights usually haunt burial grounds, catacombs, or other places of the dead. Their hunger is targeted toward the living\u2014those whose pumping hearts and ruddy warmth inspire visceral hatred.</p>\n<p>As many types of wights exist as types of people from which they might be created. Hulking brutes, skittering sneaks, and cunning tinkers all make for different wights with different niches to fill. The environment, too, plays a part in determining a wight's special abilities and defenses. Frost wights, for instance, can be found in parts of the world where exposure is a common end and the resentment of being left alone in the wild is a common source of spite. Durable and sustained by void energy, wights can last in harsh environments without decaying the way some lesser undead do.</p>\n<p>A single wight can wreak significant havoc if it is compelled to rise from its tomb. Because creatures slain under a wight's curse can become wights as well, all it takes is a single wight and a handful of unlucky graveyard visitors to create a veritable horde of these undead. Thus, canny priests and adventurers know that the best solution to a wight problem is swift and total eradication. Care must be taken, though, to destroy wight spawn before attempting to destroy the parent wight, for spawn without a master gain the ability to create spawn of their own.</p>",
             "blurb": "Variant wight",
-            "hpDetails": "fueled by spite, void healing"
+            "hpDetails": "fueled by spite, void healing",
+            "items": {
+                "weapon->Dagger": {
+                    "name": "Dagger",
+                    "description": "<p>This small, bladed weapon is held in one hand and used to stab a creature in close combat. It can also be thrown.</p>"
+                }
+            }
         },
         "Pathfinder Protector": {
             "name": "Pathfinder Protector",
@@ -578,6 +716,10 @@
             "items": {
                 "spellcastingEntry->Occult Innate Spells": {
                     "name": "Occult Innate Spells"
+                },
+                "condition->Invisible": {
+                    "name": "Invisible",
+                    "description": "<p>You can't be seen. You're @UUID[Compendium.pf2e.conditionitems.Item.VRSef5y1LmL2Hkjf]{Undetected} to everyone. Creatures can @UUID[Compendium.pf2e.actionspf2e.Item.BlAOM2X92SI6HMtJ]{Seek} to detect you; if a creature succeeds at its Perception check against your Stealth DC, you become @UUID[Compendium.pf2e.conditionitems.Item.iU0fEDdBp3rXpTMC]{Hidden} to that creature until you @UUID[Compendium.pf2e.actionspf2e.Item.VMozDqMMuK5kpoX4]{Sneak} to become undetected again. If you become invisible while someone can already see you, you start out hidden to them (instead of undetected) until you successfully Sneak. You can't become @UUID[Compendium.pf2e.conditionitems.Item.1wQY3JYyhMYeeV2G]{Observed} while invisible except via special abilities or magic.</p>"
                 }
             }
         },
@@ -714,7 +856,33 @@
         "Sharkskin": {
             "name": "Sharkskin",
             "blurb": "Pangender human nephilim pirate",
-            "languagesDetails": "Special Communication Types"
+            "languagesDetails": "Special Communication Types",
+            "items": {
+                "weapon->Scimitar": {
+                    "name": "Scimitar",
+                    "description": "<p>This one-handed curved blade is sharp on one side.</p>"
+                },
+                "weapon->Crossbow": {
+                    "name": "Crossbow",
+                    "description": "<p>This ranged weapon has a bow-like assembly mounted on a handled frame called a tiller. The tiller has a mechanism to lock the bowstring in place, attached to a trigger mechanism that releases the tension and launches a bolt.</p>"
+                },
+                "armor->Hide Armor": {
+                    "name": "Hide Armor",
+                    "description": "<p>A mix of furs, sturdy hide, and sometimes molded boiled leather, this armor provides protection due to its layers of leather, though its bulkiness slows the wearer down and decreases mobility.</p>"
+                },
+                "equipment->Triangular Teeth": {
+                    "name": "Triangular Teeth",
+                    "description": "<p>Rows of triangles symbolizing shark teeth protect you from danger and enable you to take fierce retaliation against those who try to harm you. Seafarers, especially those on the seas of Minata, wear these tattoos in patterns, with multiple rows of regular triangles. You gain a +1 item bonus to Survival checks to navigate bodies of water.</p>\n<p><strong>Activate</strong> <span class=\"action-glyph\">R</span> command</p>\n<p><strong>Frequency</strong> once per day</p>\n<p><strong>Trigger</strong> You would be hit by an attack against your AC</p>\n<hr />\n<p><strong>Effect</strong> You gain a +1 circumstance bonus to AC against the attack, or a +2 circumstance bonus if the attacker is in water or has the amphibious, aquatic, or water trait. Whether the attack hits or misses, you gain a +2 status bonus to damage with the next Strike you make against the attacker before the end of your next turn.</p>"
+                },
+                "consumable->Dragon Turtle Scale": {
+                    "name": "Dragon Turtle Scale",
+                    "description": "<p><strong>Activate</strong> <span class=\"action-glyph\">A</span> (concentrate)</p>\n<p><strong>Requirements</strong> You're trained in Athletics</p>\n<hr />\n<p>This shimmering green scale is usually attached to a golden clasp or chain.</p>\n<p>When you activate the scale, for 1 minute you gain a swim Speed equal to half your land Speed.</p>\n<p>@UUID[Compendium.pf2e.equipment-effects.Item.4tepFOJLhZSelPoa]{Effect: Dragon Turtle Scale}</p>"
+                },
+                "consumable->Potion of Emergency Escape": {
+                    "name": "Potion of Emergency Escape",
+                    "description": "<p><strong>Activate</strong> <span class=\"action-glyph\">A</span> (manipulate)</p>\n<hr />\n<p>The stopper for a <em>potion of emergency escape</em> is crafted to easily snap open in dire circumstances. When you drink this potion, you become @UUID[Compendium.pf2e.conditionitems.Item.sDPxOjQ9kx2RZE8D]{Fleeing} for 1 minute, and you gain a +40-foot status bonus to all your Speeds for the duration as long as you are fleeing. You immediately Stride.</p>\n<p>@UUID[Compendium.pf2e.equipment-effects.Item.EZsHuGGSLER67CiM]{Effect: Potion of Emergency Escape}</p>"
+                }
+            }
         },
         "Singe (1-2)": {
             "name": "Singe (1-2)",

@@ -29,7 +29,7 @@
                 },
                 "consumable->Healing Potion (Lesser)": {
                     "name": "Healing Potion (Lesser)",
-                    "description": "<p>A healing potion is a vial of a ruby-red liquid that imparts a tingling sensation as the drinker's wounds heal rapidly. When you drink a healing potion, you regain [[/r (2d8+5)[healing]]]{2d8+5 Hit Points}.</p>"
+                    "description": "<p>A healing potion is a vial of a ruby-red liquid that imparts a tingling sensation as the drinker's wounds heal rapidly. When you drink a healing potion, you regain @Damage[(2d8+5)[healing]] Hit Points.</p>"
                 },
                 "consumable->Arrows": {
                     "name": "Arrows",
@@ -88,11 +88,18 @@
             "blurb": "Variant redcap",
             "hpDetails": "fast healing 10",
             "items": {
+                "weapon->Scythe": {
+                    "name": "Scythe",
+                    "description": "<p>Derived from a farming tool used to mow down long grains and cereals, this weapon has a long wooden shaft with protruding handles, capped with a curved blade set at a right angle.</p>"
+                },
                 "equipment->Iron Boots": {
                     "name": "Iron Boots"
                 },
                 "equipment->Red Cap": {
                     "name": "Red Cap"
+                },
+                "strike-melee->Scythe": {
+                    "name": "Scythe"
                 },
                 "strike-melee->Boot": {
                     "name": "Boot"
@@ -166,9 +173,17 @@
             "name": "Darius",
             "blurb": "Male human alchemist",
             "items": {
+                "weapon->Wax Stirring Stick": {
+                    "name": "Wax Stirring Stick",
+                    "description": "<p>This long piece of wood can aid in walking and deliver a mighty blow.</p>"
+                },
                 "equipment->Key to Basement": {
                     "name": "Key to Basement",
                     "description": "<p>The Key to the Basement</p>"
+                },
+                "equipment->Singed Leather Apron and Clothing": {
+                    "name": "Singed Leather Apron and Clothing",
+                    "description": "<p>Ordinary clothing is functional with basic tailoring, such as peasant garb, monk's robes, or work clothes.</p>"
                 },
                 "equipment->Improvised Wax Sprayer": {
                     "name": "Improvised Wax Sprayer"
@@ -176,6 +191,13 @@
                 "consumable->Bestial Mutagen (Moderate)": {
                     "name": "Bestial Mutagen (Moderate)",
                     "description": "<p><strong>Activate</strong> <span class=\"action-glyph\">A</span> Interact</p>\n<hr />\n<p>Your features transform into something bestial and you take on muscle mass, but your lumbering form is clumsy.</p>\n<p><strong>Benefit</strong> You gain a +2 item bonus to Athletics checks and unarmed attack rolls. You gain a claw unarmed attack (@Damage[1d6[slashing]] damage) with the agile trait and a jaws unarmed attack (@Damage[1d8[piercing]] damage).</p>\n<p><strong>Drawback</strong> You take a -1 penalty to AC and a -2 penalty to Reflex saves.</p>\n<p><strong>Duration</strong> 10 minutes.</p>\n<p>@UUID[Compendium.pf2e.equipment-effects.Item.xFQRiVU6h8EA6Lw9]{Effect: Bestial Mutagen (Moderate)}</p>"
+                },
+                "effect->Effect: Active Mutagen": {
+                    "name": "Effect: Active Mutagen",
+                    "description": "<p>Darius has an active mutagen.</p>"
+                },
+                "strike-melee->Wax Stirring Stick": {
+                    "name": "Wax Stirring Stick"
                 },
                 "action->Metabolize Mutagen": {
                     "name": "Metabolize Mutagen",
@@ -202,6 +224,18 @@
                     "name": "Bottled Lightning (Moderate)",
                     "description": "<p><strong>Activate</strong> <span class=\"action-glyph\">A</span> Strike</p>\n<p>Bottled lightning is packed with volatile reagents that create a blast of electricity when they are exposed to air. Bottled lightning deals 2d6 electricity damage and 2 electricity splash damage. On a hit, the target becomes @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} until the start of your next turn. You gain a +1 item bonus to attack rolls.</p>"
                 },
+                "weapon->Dagger": {
+                    "name": "Dagger",
+                    "description": "<p>This small, bladed weapon is held in one hand and used to stab a creature in close combat. It can also be thrown.</p>"
+                },
+                "weapon->Shortsword": {
+                    "name": "Shortsword",
+                    "description": "<p>These blades come in a variety of shapes and styles, but they are typically 2 feet long.</p>"
+                },
+                "armor->Leather Armor": {
+                    "name": "Leather Armor",
+                    "description": "<p>A mix of flexible and molded boiled leather, a suit of this type of armor provides some protection with maximum flexibility.</p>"
+                },
                 "equipment->Religious Symbol (Silver)": {
                     "name": "Religious Symbol (Silver)",
                     "description": "<p>This piece of wood or silver is emblazoned with an image representing a deity. Some divine spellcasters, such as clerics, can use a religious symbol of their deity as a divine focus to use certain abilities and cast some spells. A religious symbol must be held in one hand to use it.</p>"
@@ -212,7 +246,27 @@
                 },
                 "consumable->Elixir of Life (Moderate)": {
                     "name": "Elixir of Life (Moderate)",
-                    "description": "<p><strong>Activate</strong> <span class=\"action-glyph\">A</span> Interact</p>\n<p>Elixirs of life accelerate a living creature's natural healing processes and immune system. Upon drinking this elixir, you regain [[/r (5d6+12)[healing]]]{5d6+12 Hit Points} and gain +2 item bonus to saving throws against diseases and poisons for 10 minutes.</p>\n<p>@UUID[Compendium.pf2e.equipment-effects.Item.Yxssrnh9UZJAM0V7]{Effect: Elixir of Life (Moderate)}</p>"
+                    "description": "<p><strong>Activate</strong> <span class=\"action-glyph\">A</span> Interact</p>\n<p>Elixirs of life accelerate a living creature's natural healing processes and immune system. Upon drinking this elixir, you regain @Damage[(5d6+12)[healing]] Hit Points and gain +2 item bonus to saving throws against diseases and poisons for 10 minutes.</p>\n<p>@UUID[Compendium.pf2e.equipment-effects.Item.lPRuIRbu0rHBkoKY]{Effect: Elixir of Life}</p>"
+                },
+                "consumable->Giant Scorpion Venom": {
+                    "name": "Giant Scorpion Venom",
+                    "description": "<p>Scorpion venom is excruciating and its effects are somewhat debilitating.</p>\n<hr />\n<p><strong>Activate</strong> <span class=\"action-glyph\">2</span> Interact (Injury)</p>\n<p><strong>Saving Throw</strong> @Check[fortitude|dc:22]</p>\n<p><strong>Maximum Duration</strong> 6 rounds</p>\n<p><strong>Stage 1</strong> @Damage[1d10[poison]] damage and @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 1} (1 round)</p>\n<p><strong>Stage 2</strong> @Damage[2d10[poison]] damage and enfeebled 1 (1 round)</p>\n<p><strong>Stage 3</strong> @Damage[2d10[poison]] damage and enfeebled 2 (1 round)</p>"
+                },
+                "consumable->Giant Wasp Venom": {
+                    "name": "Giant Wasp Venom",
+                    "description": "<p>Giant wasp venom interferes with a victim's movement.</p>\n<hr />\n<p><strong>Activate</strong> <span class=\"action-glyph\">2</span> Interact (Injury)</p>\n<p><strong>Saving Throw</strong> @Check[fortitude|dc:25]</p>\n<p><strong>Maximum Duration</strong> 6 rounds</p>\n<p><strong>Stage 1</strong> @Damage[2d6[poison]] damage and @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 1} (1 round)</p>\n<p><strong>Stage 2</strong> @Damage[3d6[poison]] damage and clumsy 2 (1 round)</p>\n<p><strong>Stage 3</strong> @Damage[4d6[poison]] damage and clumsy 2 (1 round)</p>"
+                },
+                "strike-melee->Shortsword": {
+                    "name": "Shortsword"
+                },
+                "strike-ranged->Dagger": {
+                    "name": "Dagger"
+                },
+                "strike-ranged->Alchemist's Fire": {
+                    "name": "Alchemist's Fire"
+                },
+                "strike-ranged->Bottled Lightning": {
+                    "name": "Bottled Lightning"
                 },
                 "action->Reckless Toxin": {
                     "name": "Reckless Toxin",
@@ -244,6 +298,18 @@
                 "spellcastingEntry->Divine Focus Spells": {
                     "name": "Divine Focus Spells"
                 },
+                "weapon->Dagger": {
+                    "name": "Dagger",
+                    "description": "<p>This small, bladed weapon is held in one hand and used to stab a creature in close combat. It can also be thrown.</p>"
+                },
+                "weapon->Shortsword": {
+                    "name": "Shortsword",
+                    "description": "<p>These blades come in a variety of shapes and styles, but they are typically 2 feet long.</p>"
+                },
+                "armor->Leather Armor": {
+                    "name": "Leather Armor",
+                    "description": "<p>A mix of flexible and molded boiled leather, a suit of this type of armor provides some protection with maximum flexibility.</p>"
+                },
                 "equipment->Religious Symbol (Silver)": {
                     "name": "Religious Symbol (Silver)",
                     "description": "<p>This piece of wood or silver is emblazoned with an image representing a deity. Some divine spellcasters, such as clerics, can use a religious symbol of their deity as a divine focus to use certain abilities and cast some spells. A religious symbol must be held in one hand to use it.</p>"
@@ -254,7 +320,15 @@
                 },
                 "consumable->Elixir of Life (Moderate)": {
                     "name": "Elixir of Life (Moderate)",
-                    "description": "<p><strong>Activate</strong> <span class=\"action-glyph\">A</span> Interact</p>\n<p>Elixirs of life accelerate a living creature's natural healing processes and immune system. Upon drinking this elixir, you regain [[/r (5d6+12)[healing]]]{5d6+12 Hit Points} and gain +2 item bonus to saving throws against diseases and poisons for 10 minutes.</p>\n<p>@UUID[Compendium.pf2e.equipment-effects.Item.Yxssrnh9UZJAM0V7]{Effect: Elixir of Life (Moderate)}</p>"
+                    "description": "<p><strong>Activate</strong> <span class=\"action-glyph\">A</span> Interact</p>\n<p>Elixirs of life accelerate a living creature's natural healing processes and immune system. Upon drinking this elixir, you regain @Damage[(5d6+12)[healing]] Hit Points and gain +2 item bonus to saving throws against diseases and poisons for 10 minutes.</p>\n<p>@UUID[Compendium.pf2e.equipment-effects.Item.lPRuIRbu0rHBkoKY]{Effect: Elixir of Life}</p>"
+                },
+                "consumable->Giant Scorpion Venom": {
+                    "name": "Giant Scorpion Venom",
+                    "description": "<p>Scorpion venom is excruciating and its effects are somewhat debilitating.</p>\n<hr />\n<p><strong>Activate</strong> <span class=\"action-glyph\">2</span> Interact (Injury)</p>\n<p><strong>Saving Throw</strong> @Check[fortitude|dc:22]</p>\n<p><strong>Maximum Duration</strong> 6 rounds</p>\n<p><strong>Stage 1</strong> @Damage[1d10[poison]] damage and @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 1} (1 round)</p>\n<p><strong>Stage 2</strong> @Damage[2d10[poison]] damage and enfeebled 1 (1 round)</p>\n<p><strong>Stage 3</strong> @Damage[2d10[poison]] damage and enfeebled 2 (1 round)</p>"
+                },
+                "consumable->Giant Wasp Venom": {
+                    "name": "Giant Wasp Venom",
+                    "description": "<p>Giant wasp venom interferes with a victim's movement.</p>\n<hr />\n<p><strong>Activate</strong> <span class=\"action-glyph\">2</span> Interact (Injury)</p>\n<p><strong>Saving Throw</strong> @Check[fortitude|dc:25]</p>\n<p><strong>Maximum Duration</strong> 6 rounds</p>\n<p><strong>Stage 1</strong> @Damage[2d6[poison]] damage and @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 1} (1 round)</p>\n<p><strong>Stage 2</strong> @Damage[3d6[poison]] damage and clumsy 2 (1 round)</p>\n<p><strong>Stage 3</strong> @Damage[4d6[poison]] damage and clumsy 2 (1 round)</p>"
                 },
                 "strike-melee->Shortsword": {
                     "name": "Shortsword"
@@ -386,9 +460,42 @@
         "Kelorbeyan Guard": {
             "name": "Kelorbeyan Guard",
             "items": {
+                "weapon->Longsword": {
+                    "name": "Longsword",
+                    "description": "<p>Longswords can be one-edged or two-edged swords. Their blades are heavy and they're between 3 and 4 feet in length.</p>"
+                },
+                "weapon->Sap": {
+                    "name": "Sap",
+                    "description": "<p>A sap has a soft wrapping around a dense core, typically a leather sheath around a lead rod. Its head is wider than its grip to disperse the force of a blow, as the weapon's purpose is to knock out its victim rather than to draw blood.</p>"
+                },
+                "weapon->Composite Shortbow": {
+                    "name": "Composite Shortbow",
+                    "description": "<p>This shortbow is made from horn, wood, and sinew laminated together to increase the power of its pull and the force of its projectile. Its compact size and power make it a favorite of mounted archers. Any time an ability is specifically restricted to a shortbow, it also applies to composite shortbows unless otherwise stated.</p>"
+                },
+                "armor->Studded Leather Armor": {
+                    "name": "Studded Leather Armor",
+                    "description": "<p>This leather armor is reinforced with metal studs and sometimes small metal plates, providing most of the flexibility of leather armor with more robust protection.</p>"
+                },
                 "equipment->Lantern (Hooded)": {
                     "name": "Lantern (Hooded)",
                     "description": "<p>A lantern sheds bright light and requires 1 pint of oil to function for 6 hours. A bull's-eye lantern emits its light in a 60-foot cone (and dim light in the next 60 feet). A hooded lantern sheds light in a 30-foot radius (and dim light in the next 30 feet) and is equipped with shutters, which you can close to block the light. Closing or opening the shutters takes an Interact action.</p>"
+                },
+                "equipment->Signal Whistle": {
+                    "name": "Signal Whistle",
+                    "description": "<p>When sounded, a signal whistle can be heard clearly up to half a mile away across open terrain.</p>"
+                },
+                "consumable->Arrows": {
+                    "name": "Arrows",
+                    "description": "<p>These projectiles are the ammunition for bows. The shaft of an arrow is made of wood. It is stabilized in flight by fletching at one end and bears a metal head on the other.</p>"
+                },
+                "strike-melee->Longsword": {
+                    "name": "Longsword"
+                },
+                "strike-melee->Sap": {
+                    "name": "Sap"
+                },
+                "strike-ranged->Composite Shortbow": {
+                    "name": "Composite Shortbow"
                 },
                 "action->Attack of Opportunity": {
                     "name": "Attack of Opportunity"
@@ -440,7 +547,7 @@
                 },
                 "action->Verdant Burst": {
                     "name": "Verdant Burst",
-                    "description": "<p>When a leshy dies, a burst of primal energy explodes from its body, restoring [[/r 2d8[healing]]] Hit Points to each plant creature within a @Template[emanation|distance:30]. This area is filled with plants of the same type as the leshy, becoming difficult terrain. If the terrain isn't a viable environment for these plants, they wither after 24 hours.</p>"
+                    "description": "<p>When a leshy dies, a burst of primal energy explodes from its body, restoring @Damage[2d8[healing]] Hit Points to each plant creature within a @Template[emanation|distance:30]. This area is filled with plants of the same type as the leshy, becoming difficult terrain. If the terrain isn't a viable environment for these plants, they wither after 24 hours.</p>"
                 },
                 "action->Change Shape": {
                     "name": "Change Shape",
@@ -460,7 +567,7 @@
                 },
                 "action->Verdant Burst": {
                     "name": "Verdant Burst",
-                    "description": "<p>When a leshy dies, a burst of primal energy explodes from its body, restoring [[/r 2d8[healing]]] Hit Points to each plant creature within a @Template[emanation|distance:30]. This area is filled with plants of the same type as the leshy, becoming difficult terrain. If the terrain isn't a viable environment for these plants, they wither after 24 hours.</p>"
+                    "description": "<p>When a leshy dies, a burst of primal energy explodes from its body, restoring @Damage[2d8[healing]] Hit Points to each plant creature within a @Template[emanation|distance:30]. This area is filled with plants of the same type as the leshy, becoming difficult terrain. If the terrain isn't a viable environment for these plants, they wither after 24 hours.</p>"
                 },
                 "action->Bend Back": {
                     "name": "Bend Back",
@@ -492,7 +599,7 @@
                 },
                 "action->Verdant Burst": {
                     "name": "Verdant Burst",
-                    "description": "<p>When a leshy dies, a burst of primal energy explodes from its body, restoring [[/r 2d8[healing]]] Hit Points to each plant creature within a @Template[emanation|distance:30]. This area is filled with plants of the same type as the leshy, becoming difficult terrain. If the terrain isn't a viable environment for these plants, they wither after 24 hours.</p>"
+                    "description": "<p>When a leshy dies, a burst of primal energy explodes from its body, restoring @Damage[2d8[healing]] Hit Points to each plant creature within a @Template[emanation|distance:30]. This area is filled with plants of the same type as the leshy, becoming difficult terrain. If the terrain isn't a viable environment for these plants, they wither after 24 hours.</p>"
                 },
                 "action->Change Shape": {
                     "name": "Change Shape",
@@ -512,7 +619,7 @@
                 },
                 "action->Verdant Burst": {
                     "name": "Verdant Burst",
-                    "description": "<p>When a leshy dies, a burst of primal energy explodes from its body, restoring [[/r 2d8[healing]]] Hit Points to each plant creature within a @Template[emanation|distance:30]. This area is filled with plants of the same type as the leshy, becoming difficult terrain. If the terrain isn't a viable environment for these plants, they wither after 24 hours.</p>"
+                    "description": "<p>When a leshy dies, a burst of primal energy explodes from its body, restoring @Damage[2d8[healing]] Hit Points to each plant creature within a @Template[emanation|distance:30]. This area is filled with plants of the same type as the leshy, becoming difficult terrain. If the terrain isn't a viable environment for these plants, they wither after 24 hours.</p>"
                 },
                 "action->Change Shape": {
                     "name": "Change Shape",
@@ -536,7 +643,7 @@
                 },
                 "action->Verdant Burst": {
                     "name": "Verdant Burst",
-                    "description": "<p>When a leshy dies, a burst of primal energy explodes from its body, restoring [[/r 2d8[healing]]] Hit Points to each plant creature within a @Template[emanation|distance:30]. This area is filled with plants of the same type as the leshy, becoming difficult terrain. If the terrain isn't a viable environment for these plants, they wither after 24 hours.</p>"
+                    "description": "<p>When a leshy dies, a burst of primal energy explodes from its body, restoring @Damage[2d8[healing]] Hit Points to each plant creature within a @Template[emanation|distance:30]. This area is filled with plants of the same type as the leshy, becoming difficult terrain. If the terrain isn't a viable environment for these plants, they wither after 24 hours.</p>"
                 },
                 "action->Change Shape": {
                     "name": "Change Shape",
@@ -559,6 +666,10 @@
             "items": {
                 "spellcastingEntry->Divine Innate Spells": {
                     "name": "Divine Innate Spells"
+                },
+                "weapon->Poisoned Dart": {
+                    "name": "Poisoned Dart",
+                    "description": "<p>This thrown weapon is larger than an arrow but shorter than a javelin. It typically has a short shaft of wood ending in a metal tip and is sometimes stabilized by feathers or fur.</p>"
                 },
                 "strike-melee->Claw": {
                     "name": "Claw"
@@ -659,7 +770,7 @@
                 },
                 "action->Dunk in Wax": {
                     "name": "Dunk in Wax",
-                    "description": "<p>A scented candle homunculus who is adjacent to the large wax cauldron can dunk itself in wax, healing [[/r 2d6[healing]]] damage.</p>"
+                    "description": "<p>A scented candle homunculus who is adjacent to the large wax cauldron can dunk itself in wax, healing @Damage[2d6[healing]] damage.</p>"
                 }
             }
         },
@@ -677,6 +788,9 @@
                 "equipment->Key Ring": {
                     "name": "Key Ring",
                     "description": "<p>Carried by Auldegrund in the dining hall.</p>"
+                },
+                "strike-melee->Warhammer": {
+                    "name": "Warhammer"
                 }
             }
         },
@@ -707,6 +821,18 @@
                 },
                 "weapon->Pincer Claw": {
                     "name": "Pincer Claw"
+                },
+                "weapon->Shortbow": {
+                    "name": "Shortbow",
+                    "description": "<p>This smaller bow is made of a single piece of wood and favored by skirmishers and cavalry.</p>"
+                },
+                "equipment->Boots of Elvenkind": {
+                    "name": "Boots of Elvenkind",
+                    "description": "<p>These tall, pointed boots are made from soft, supple black or green leather and are decorated with trim and buckles of gold. When worn, the boots allow you to move more nimbly, granting you a +1 item bonus to Acrobatics checks.</p>\n<p><strong>Activate</strong> <span class=\"action-glyph\">F</span> envision</p>\n<p><strong>Frequency</strong> once per hour</p>\n<hr />\n<p><strong>Effect</strong> Until the end of your turn, you ignore difficult terrain when moving on the ground. If you're wearing a @UUID[Compendium.pf2e.equipment-srd.Item.MNBnZn0b80Q7yHJM]{Cloak of Elvenkind}, you also gain a +5-foot status bonus to your land Speed until the end of your turn.</p>\n<p>@UUID[Compendium.pf2e.equipment-effects.Item.88kqcDmsoAEddzUt]{Effect: Boots of Elvenkind}</p>"
+                },
+                "consumable->Arrows": {
+                    "name": "Arrows",
+                    "description": "<p>These projectiles are the ammunition for bows. The shaft of an arrow is made of wood. It is stabilized in flight by fletching at one end and bears a metal head on the other.</p>"
                 },
                 "strike-melee->Pincer Claw": {
                     "name": "Pincer Claw"

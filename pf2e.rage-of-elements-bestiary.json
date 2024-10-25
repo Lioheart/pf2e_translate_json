@@ -95,6 +95,22 @@
                 "spellcastingEntry->Primal Innate Spells": {
                     "name": "Primal Innate Spells"
                 },
+                "weapon->Shortbow": {
+                    "name": "Shortbow",
+                    "description": "<p>This smaller bow is made of a single piece of wood and favored by skirmishers and cavalry.</p>"
+                },
+                "weapon->Sickle": {
+                    "name": "Sickle",
+                    "description": "<p>Originally a farming tool used for reaping grain, this one-handed weapon has a short wooden handle ending in a curved blade, sometimes sharpened on both sides.</p>"
+                },
+                "consumable->Arrows": {
+                    "name": "Arrows",
+                    "description": "<p>These projectiles are the ammunition for bows. The shaft of an arrow is made of wood. It is stabilized in flight by fletching at one end and bears a metal head on the other.</p>"
+                },
+                "consumable->Glowing Lantern Fruit": {
+                    "name": "Glowing Lantern Fruit",
+                    "description": "<p>The flesh of this fruit pod resembles a stylized paper lantern, with a woody, geometric structure and thin layers of flesh, complete with a glow coming from the interior.</p>\n<p><strong>Activate\u2014Lantern Light</strong> <span class=\"action-glyph\">1</span> (manipulate)</p>\n<hr />\n<p><strong>Effect</strong> The <em>glowing lantern fruit</em> sheds bright light in a 60-foot radius (and dim light for the next 60 feet) for 8 hours. While the light is shining, you can Interact with the <em>glowing lantern fruit</em> to open or close some of its reflective leaves, making the light directional like a bull's-eye lantern or a hooded lantern.</p>\n<p><strong>Activate\u2014Fire Fruit</strong> 10 minutes (manipulate)</p>\n<hr />\n<p><strong>Effect</strong> You plant the <em>glowing lantern fruit</em> in the ground upside down. The petals of the lantern peel away, while the fruit inside glows hotter. For the next 8 hours, the <em>glowing lantern fruit</em> emits as much light and heat as a bonfire, giving all creatures within 15 feet immunity to the effects of mild and severe cold temperatures for as long as they're within the area.</p>"
+                },
                 "strike-melee->Sickle": {
                     "name": "Sickle"
                 },
@@ -378,6 +394,13 @@
             "name": "Brass Bastion",
             "publicNotes": "<p>Brass bastions are formidable sentinels crafted from elemental fire and extraplanar brass. While they can be shaped into many forms, most depict muscular warriors with curving horns and stern or taunting expressions. Within each brass shell is a raging inferno\u2014the source of its ceaseless heat.</p>\n<p>Though ifrits originally created brass bastions to act as servants and guards, the knowledge of how to craft them has spread throughout the Plane of Fire. They can even be found on the Plane of Earth thanks to interplanar trade. In Medina Mudii'a, brass bastions walk the streets, tend shops, and stand guard. Bespoke brass bastions are passed down as family heirlooms or gifted to business partners and allies. Scions of the wealthiest ifrit lineages never travel without a train of brass bastions clad in family livery. Destroying a rival ifrit's brass bastion is a quick way to erode their political status, though anyone caught performing such sabotage faces swift retribution.</p>\n<p>Most brass bastions prominently display the sigil of their owner or maker, though magical methods can also determine who crafted a specific construct. Brass bastions forged by favored artisans are a status symbol in many ifrit communities. Ifrits consider a brass bastion crafted by a non-ifrit to be inherently inferior, barely worth the cost of its materials. Brass bastions obey magical programming imprinted at the time of their creation or follow commands from their owners. Most can't speak, but a few have magical voices and can parrot simple phrases, recite poetry, or tell bedtime stories at the crafter's fancy.</p>\n<h2>Brass Scraps</h2>\n<p>On the Plane of Fire, destroyed brass bastions are sold as scrap to enterprising ifrits, who reforge the remains into new brass bastions. Many ifrits pay more for the remains of a brass bastion crafted by their rivals yet react violently when offered brass bastion remains they originally created. Thus, identifying a brass bastion's original crafter is a valued skill. Few non-ifrits dare trade in brass bastion scraps, save in extralegal markets.</p>",
             "items": {
+                "weapon->Falchion": {
+                    "name": "Falchion",
+                    "description": "<p>This weapon is a heavier, two-handed version of the curved-bladed scimitar. It is weighted toward the blade's end, making it a powerful slashing weapon.</p>"
+                },
+                "strike-melee->Falchion": {
+                    "name": "Falchion"
+                },
                 "strike-melee->Fist": {
                     "name": "Fist"
                 },
@@ -690,9 +713,13 @@
         "Elemental Thicket": {
             "name": "Elemental Thicket",
             "publicNotes": "<p>In the Universe, plant growth proceeds on a scale of days, weeks, years, and decades. Conversely, an elemental thicket grows constantly and in seconds. These writhing masses of living wood are the elemental embodiment of growth itself, swelling up when least expected to consume all in their path.</p>",
+            "hpDetails": "regeneration 15 (deactivated by fire)",
             "items": {
                 "strike-melee->Gnarled Branch": {
                     "name": "Gnarled Branch"
+                },
+                "action->Regeneration 15 (Deactivated by Fire)": {
+                    "name": "Regeneration 15 (Deactivated by Fire)"
                 },
                 "action->Constrict": {
                     "name": "Constrict",
@@ -782,6 +809,10 @@
             "items": {
                 "spellcastingEntry->Arcane Innate Spells": {
                     "name": "Arcane Innate Spells"
+                },
+                "weapon->+2 Striking Jambiya": {
+                    "name": "+2 Striking Jambiya",
+                    "description": "<p>This small, bladed weapon is held in one hand and used to stab a creature in close combat. It can also be thrown.</p>"
                 },
                 "strike-melee->Jambiya": {
                     "name": "Jambiya"
@@ -929,6 +960,14 @@
                 "spellcastingEntry->Arcane Innate Spells": {
                     "name": "Arcane Innate Spells"
                 },
+                "weapon->Scimitar": {
+                    "name": "Scimitar",
+                    "description": "<p>This one-handed curved blade is sharp on one side.</p>"
+                },
+                "armor->Breastplate": {
+                    "name": "Breastplate",
+                    "description": "<p>Though referred to as a breastplate, this type of armor consists of several pieces of plate or @UUID[Compendium.pf2e.equipment-srd.Item.pRoikbRo5HFW6YUB]{Half Plate} armor that protect the torso, chest, neck, and sometimes the hips and lower legs. It strategically grants some of the protection of plate while allowing greater flexibility and speed.</p>"
+                },
                 "strike-melee->Scimitar": {
                     "name": "Scimitar"
                 },
@@ -970,6 +1009,10 @@
             "items": {
                 "spellcastingEntry->Arcane Innate Spells": {
                     "name": "Arcane Innate Spells"
+                },
+                "weapon->+1 Striking Jambiya": {
+                    "name": "+1 Striking Jambiya",
+                    "description": "<p>This small, bladed weapon is held in one hand and used to stab a creature in close combat. It can also be thrown.</p>"
                 },
                 "strike-melee->Jambiya": {
                     "name": "Jambiya"
@@ -1020,6 +1063,10 @@
             "items": {
                 "spellcastingEntry->Arcane Innate Spells": {
                     "name": "Arcane Innate Spells"
+                },
+                "weapon->Falchion": {
+                    "name": "Falchion",
+                    "description": "<p>This weapon is a heavier, two-handed version of the curved-bladed scimitar. It is weighted toward the blade's end, making it a powerful slashing weapon.</p>"
                 },
                 "strike-melee->Falchion": {
                     "name": "Falchion"
@@ -1075,6 +1122,14 @@
                 },
                 "spellcastingEntry->All Made One Spells": {
                     "name": "All Made One Spells"
+                },
+                "weapon->Scimitar": {
+                    "name": "Scimitar",
+                    "description": "<p>This one-handed curved blade is sharp on one side.</p>"
+                },
+                "weapon->Composite Longbow": {
+                    "name": "Composite Longbow",
+                    "description": "<p>This projectile weapon is made from horn, wood, and sinew laminated together to increase the power of its pull and the force of its projectile. Like all longbows, its great size also increases the bow's range and power. You must use two hands to fire it, and it cannot be used while mounted. Any time an ability is specifically restricted to a longbow, such as Erastil's favored weapon, it also applies to composite longbows unless otherwise stated.</p>"
                 },
                 "strike-melee->Scimitar": {
                     "name": "Scimitar"
@@ -1134,6 +1189,14 @@
                 "spellcastingEntry->Arcane Innate Spells": {
                     "name": "Arcane Innate Spells"
                 },
+                "weapon->Staff": {
+                    "name": "Staff",
+                    "description": "<p>This long piece of wood can aid in walking and deliver a mighty blow.</p>"
+                },
+                "shield->Wooden Shield": {
+                    "name": "Wooden Shield",
+                    "description": "<p>Though they come in a variety of shapes and sizes, the protection offered by wooden shields comes from the stoutness of their materials. While wooden shields are less expensive than steel shields, they break more easily.</p>\n<table class=\"pf2e\">\n<thead>\n<tr>\n<th>Hardness</th>\n<th>HP</th>\n<th>BT</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>3</td>\n<td>12</td>\n<td>6</td>\n</tr>\n</tbody>\n</table>"
+                },
                 "strike-melee->Staff": {
                     "name": "Staff"
                 },
@@ -1167,6 +1230,14 @@
             "items": {
                 "spellcastingEntry->Arcane Innate Spells": {
                     "name": "Arcane Innate Spells"
+                },
+                "weapon->Spear": {
+                    "name": "Spear",
+                    "description": "<p>A long metal shaft ending with a metal spike, a spear can be used one-handed as a melee weapon and can be thrown.</p>"
+                },
+                "shield->Wooden Shield": {
+                    "name": "Wooden Shield",
+                    "description": "<p>Though they come in a variety of shapes and sizes, the protection offered by wooden shields comes from the stoutness of their materials. While wooden shields are less expensive than steel shields, they break more easily.</p>\n<table class=\"pf2e\">\n<thead>\n<tr>\n<th>Hardness</th>\n<th>HP</th>\n<th>BT</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>3</td>\n<td>12</td>\n<td>6</td>\n</tr>\n</tbody>\n</table>"
                 },
                 "strike-melee->Spear": {
                     "name": "Spear"
@@ -1416,8 +1487,15 @@
             "name": "Mercurial",
             "publicNotes": "<p>Some of the most populous denizens of the Plane of Metal, mercurials are weird creatures of liquid metal known for changing their features, chemical compositions, and temperaments with equal frequency. Excitable, curious, and friendly, mercurials are quick to offer assistance to extraplanar beings, but their volatile personalities can make them unreliable allies.</p>\n<hr />\n<p>Metal elementals can manifest in a wide variety of different forms, from shapeless amalgams of different metals to humanoid and beast-like monstrosities.</p>\n<h2>Metal Forms</h2>\n<p>Though metal elementals are made almost entirely of metal, most are composed of layers of different metals in tiny fragments, as complex as a body of flesh or plant matter. Many of these metals are rusted or decayed from the natural, slow entropy of the Plane of Metal.</p>\n<h2>Many Faces, Many Names</h2>\n<p>As immortal beings with comparatively short attention spans, mercurials invariably become bored with their current identities sooner or later and seek a change by adopting a new face and persona. To avoid confusion among friends and acquaintances, a mercurial's name typically consists not only of their current moniker, but a list of the last few names used, presented in chronological order as far back as the mercurial can remember.</p>",
             "items": {
+                "weapon->Shuriken": {
+                    "name": "Shuriken",
+                    "description": "<p>This \"throwing star\" is a small piece of flat metal with sharp edges, designed to be flung with a flick of the wrist.</p>"
+                },
                 "strike-melee->Fist": {
                     "name": "Fist"
+                },
+                "strike-ranged->Shuriken": {
+                    "name": "Shuriken"
                 },
                 "action->Change Shape": {
                     "name": "Change Shape",
@@ -1517,6 +1595,9 @@
             "name": "Munsahir Gatecrasher",
             "publicNotes": "<p>Typically members of the nobility, gatecrashers wear advanced power armor.</p>\n<hr />\n<p>Munsahirs build militaristic, traditional societies.</p>\n<h2>Munsahir Hierarchy</h2>\n<p>The three strata of munsahir society can be observed in the kilts worn by all members. Nobles, the unimpeachable rulers, wear elaborate brass kilts. In the middle of society are businesspeople and traders bedecked in bronze. Raw copper adorns those in the working class, who do most of the building and hard labor for munsahir society. Officially speaking, there is no class mobility; horrible crimes might cause a brass noble to be sent to prison but can't cause them to lose their station.</p>",
             "items": {
+                "armor->Gatecrasher Armor": {
+                    "name": "Gatecrasher Armor"
+                },
                 "strike-melee->Hammer Gauntlet": {
                     "name": "Hammer Gauntlet"
                 },
@@ -1548,9 +1629,27 @@
             "name": "Munsahir Trooper",
             "publicNotes": "<p>Highly skilled troopers mostly come from the bronze class.</p>\n<hr />\n<p>Munsahirs build militaristic, traditional societies.</p>\n<h2>Munsahir Hierarchy</h2>\n<p>The three strata of munsahir society can be observed in the kilts worn by all members. Nobles, the unimpeachable rulers, wear elaborate brass kilts. In the middle of society are businesspeople and traders bedecked in bronze. Raw copper adorns those in the working class, who do most of the building and hard labor for munsahir society. Officially speaking, there is no class mobility; horrible crimes might cause a brass noble to be sent to prison but can't cause them to lose their station.</p>",
             "items": {
+                "weapon->Warhammer": {
+                    "name": "Warhammer",
+                    "description": "<p>This weapon has a wooden shaft ending in a large, heavy metal head. The head of the hammer might be single-sided or double-sided, but it's always capable of delivering powerful bludgeoning blows.</p>"
+                },
+                "weapon->Dueling Pistol": {
+                    "name": "Dueling Pistol",
+                    "description": "<p>Made for settling disputes when diplomacy fails, dueling pistols are finely crafted and made to fit easily into a holster or pocket. Noble and wealthy merchants in both Alkenstar and Dongun Hold often own matching pairs of dueling pistols in case they're called upon to address a challenge-though this practice has become increasingly rare in the modern age.</p>"
+                },
+                "armor->Breastplate": {
+                    "name": "Breastplate",
+                    "description": "<p>Though referred to as a breastplate, this type of armor consists of several pieces of plate or half-plate armor that protect the torso, chest, neck, and sometimes the hips and lower legs. It strategically grants some of the protection of plate while allowing greater flexibility and speed.</p>"
+                },
                 "consumable->Rounds (Dueling Pistol)": {
                     "name": "Rounds (Dueling Pistol)",
                     "description": "<p>Firearms require ammunition consisting of a projectile and black powder. A round of ammo can vary in its composition but is typically either a prepackaged paper cartridge, including wadding, bullet, and black powder, or loose shot packed in manually. Some weapons, like hand cannons and blunderbusses, can fire other materials, but their ammunition has the same Price due to the cost of the black powder. Because making rounds of firearm ammunition requires creating black powder, you need the @UUID[Compendium.pf2e.feats-srd.Item.is3Oz9wt11lNq62K]{Alchemical Crafting} skill feat to make them. Firearm rounds are a valid option for magical ammunition, just like arrows or bolts. Crafting magical firearm ammunition requires you to be able to craft both alchemical and magical items.</p>"
+                },
+                "strike-melee->Warhammer": {
+                    "name": "Warhammer"
+                },
+                "strike-ranged->Dueling Pistol": {
+                    "name": "Dueling Pistol"
                 },
                 "action->Attack of Opportunity": {
                     "name": "Attack of Opportunity"
@@ -1580,8 +1679,30 @@
             "name": "Murajau",
             "publicNotes": "<p>Murajaus, one of many nomadic creatures of the Plane of Water, appear humanoid from the waist up but resemble a large hermit crab from the waist down, including a pair of strong pincers. Murajau communities are often multilingual, and many individuals are willing to work as translators and guides to adventurers if properly compensated. Rather than currency, murajaus prefer to deal in trinkets such as talismans, particularly those that protect travelers. For murajaus, such items signify their sincerity and unwavering desire to protect others. They trade tales among each other of treasure troves too dangerous to easily explore. Rather than keep this information solely for themselves, they're happy to share it with trustworthy people they meet in exchange for a small share.</p>\n<p>Faydhaans tell condescending tales of murajaus, describing their origin as royal servants who failed to fulfill a royal decree. Murajaus' own creation story, meanwhile, claims that the royal decree in question requested they travel the lands to provide shelter and hospitality to visitors, a mission they have since carried on for generations. They take great pride in treating guests well, especially in providing suitable food, drink, and gifts.</p>\n<hr />\n<p>To murajaus, one's shell signifies homestead, status, identity, and cultural inheritance. Community elders and leaders often wear shells passed down from a long line of successors, which carry modifications and marks that denote predecessors' achievements and failures. On the occasion that their community numbers exceed the number of shells available, a hunting season might be declared. Participants who return with suitable trophies are revered for their contribution and bravery.</p>",
             "items": {
+                "weapon->Spear": {
+                    "name": "Spear",
+                    "description": "<p>A long metal shaft ending with a metal spike, a spear can be used one-handed as a melee weapon and can be thrown.</p>"
+                },
+                "consumable->Mesmerizing Opal": {
+                    "name": "Mesmerizing Opal",
+                    "description": "<p><strong>Usage</strong> affixed to armor</p>\n<p><strong>Activate</strong> <span class=\"action-glyph\">F</span> Envision</p>\n<p><strong>Trigger</strong> You attempt a Deception check to Feint, but you haven't rolled yet</p>\n<p>This silver-bound opal pendant is afire with iridescence. When you activate it, if the outcome of your triggering Deception check is a critical failure, you get a failure instead (or if the outcome is a success, you get a critical success instead).</p>"
+                },
+                "consumable->Potency Crystal": {
+                    "name": "Potency Crystal",
+                    "description": "<p><strong>Usage</strong> affixed to a weapon</p>\n<p><strong>Activate</strong> <span class=\"action-glyph\">F</span> Envision</p>\n<p><strong>Trigger</strong> You make an attack with the affixed weapon, but you haven't rolled yet</p>\n<p>This fluorite crystal glows with a strange phosphorescence. When you activate the crystal, the weapon becomes a <em>+1 striking weapon</em> for the rest of the turn, gaining a +1 item bonus to the attack roll and increasing the damage on a hit to two weapon damage dice.</p>\n<p>@UUID[Compendium.pf2e.equipment-effects.Item.R5ugeFK3MPwkbv0s]{Effect: Potency Crystal}</p>"
+                },
+                "consumable->Shark Tooth Charm": {
+                    "name": "Shark Tooth Charm",
+                    "description": "<p>This dried seaweed bracelet is lined with charms shaped like small shark teeth. When you activate the bracelet, if you roll a success on the triggering check, you get a critical success instead (if you roll a critical failure, you get a failure instead). If you fail the Acrobatics check against a grabbing creature, the creature must either release you as a free action or take 2d8 piercing damage as shark's teeth momentarily emerge from your skin.</p>\n<p><strong>Usage</strong> affixed to armor</p>\n<p><strong>Activate</strong> <span class=\"action-glyph\">F</span> Command</p>\n<p><strong>Trigger</strong> You attempt to Escape using Acrobatics for your roll, but you haven't rolled yet</p>\n<p><strong>Requirements</strong> You are an expert in Acrobatics</p>"
+                },
                 "strike-melee->Leg": {
                     "name": "Leg"
+                },
+                "strike-melee->Spear": {
+                    "name": "Spear"
+                },
+                "strike-ranged->Spear": {
+                    "name": "Spear"
                 },
                 "action->Hefty Defense": {
                     "name": "Hefty Defense",
@@ -1637,6 +1758,17 @@
             "publicNotes": "<p>The nightwoods are parts of the Plane of Wood permanently bathed in darkness due to an absence of fluorescent plants. Here, the flora and fauna require darkness, not light, to thrive. Troll-like creatures known as nightwood guardians patrol these woods to ensure they remain in perpetual shadow. Considering themselves righteous gardens, they care little for the excuses of anyone else\u2014intruders or residents. The guardians absolutely loathe the light, though it doesn't harm them as it does some varieties of creatures. Though wary of both light and any interloping lifeforms in their natural habitat, a nightwood guardian's fear turns easily to wrath, making the guardian a force of fury who seeks to drive out intruders.</p>",
             "hpDetails": "flesh of wood",
             "items": {
+                "weapon->Club": {
+                    "name": "Club",
+                    "description": "<p>This is a piece of stout wood shaped or repurposed to bludgeon an enemy. Clubs can be intricately carved pieces of martial art or as simple as a tree branch or piece of wood.</p>"
+                },
+                "shield->Elemental Wooden Shield": {
+                    "name": "Elemental Wooden Shield",
+                    "description": "<p>Though they come in a variety of shapes and sizes, the protection offered by wooden shields comes from the stoutness of their materials. While wooden shields are less expensive than steel shields, they break more easily.</p>\n<table class=\"pf2e\">\n<thead>\n<tr>\n<th>Hardness</th>\n<th>HP</th>\n<th>BT</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>8</td>\n<td>64</td>\n<td>32</td>\n</tr>\n</tbody>\n</table>"
+                },
+                "strike-melee->Club": {
+                    "name": "Club"
+                },
                 "strike-melee->Jaws": {
                     "name": "Jaws"
                 },
@@ -2241,6 +2373,18 @@
                 "spellcastingEntry->Arcane Innate Spells": {
                     "name": "Arcane Innate Spells"
                 },
+                "weapon->Light Hammer": {
+                    "name": "Light Hammer",
+                    "description": "<p>This smaller version of the warhammer has a wooden or metal shaft ending in a metal head. Unlike its heavier cousin, it is light enough to throw.</p>"
+                },
+                "armor->Leather Armor": {
+                    "name": "Leather Armor",
+                    "description": "<p>A mix of flexible and molded boiled leather, a suit of this type of armor provides some protection with maximum flexibility.</p>"
+                },
+                "equipment->Artisan's Tools": {
+                    "name": "Artisan's Tools",
+                    "description": "<p>You need these tools to create items from raw materials with the Craft skill. Different sets are needed for different work, as determined by the GM; for example, blacksmith's tools differ from woodworker's tools. If you wear your artisan's tools, you can draw and replace them as part of the action that uses them.</p>"
+                },
                 "equipment->Formula Book (Blank)": {
                     "name": "Formula Book (Blank)",
                     "description": "<p>A formula book holds the formulas necessary to make items other than the common equipment from this chapter; alchemists typically get one for free. Each formula book can hold the formulas for up to 100 different items. Formulas can also appear on parchment sheets, tablets, and almost any other medium; there's no need for you to copy them into a specific book as long as you can keep them on hand to reference them.</p>"
@@ -2621,6 +2765,10 @@
                 "spellcastingEntry->Arcane Innate Spells": {
                     "name": "Arcane Innate Spells"
                 },
+                "weapon->Spiked Chain": {
+                    "name": "Spiked Chain",
+                    "description": "<p>This 4-foot-long length of chain is covered with barbs and has spikes on one or both ends. Some feature metal hoops used as handgrips.</p>"
+                },
                 "strike-melee->Spiked Chain": {
                     "name": "Spiked Chain"
                 },
@@ -2651,6 +2799,10 @@
             "items": {
                 "spellcastingEntry->Arcane Innate Spells": {
                     "name": "Arcane Innate Spells"
+                },
+                "weapon->Spiked Chain": {
+                    "name": "Spiked Chain",
+                    "description": "<p>This 4-foot-long length of chain is covered with barbs and has spikes on one or both ends. Some feature metal hoops used as handgrips.</p>"
                 },
                 "strike-melee->Spiked Chain": {
                     "name": "Spiked Chain"

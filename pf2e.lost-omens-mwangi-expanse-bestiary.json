@@ -102,8 +102,14 @@
                     "name": "Arrows",
                     "description": "<p>These projectiles are the ammunition for bows. The shaft of an arrow is made of wood. It is stabilized in flight by fletching at one end and bears a metal head on the other.</p>"
                 },
+                "strike-melee->Shortsword": {
+                    "name": "Shortsword"
+                },
                 "strike-melee->Fangs": {
                     "name": "Fangs"
+                },
+                "strike-ranged->Composite Shortbow": {
+                    "name": "Composite Shortbow"
                 },
                 "action->Anadi Venom": {
                     "name": "Anadi Venom",
@@ -170,7 +176,7 @@
                 },
                 "action->Drink Blood": {
                     "name": "Drink Blood",
-                    "description": "<p><strong>Requirements</strong> A @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed}, @UUID[Compendium.pf2e.conditionitems.Item.6uEgoh53GbXuHpTF]{Paralyzed}, @UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{Restrained}, @UUID[Compendium.pf2e.conditionitems.Item.fBnFDH2MTzgFijKf]{Unconscious}, or willing creature is within reach of the asanbosam's jaws</p>\n<hr />\n<p><strong>Effect</strong> The asanbosam sinks its teeth into the creature to drink its blood. If the victim is grabbed, this is automatic; otherwise, the asanbosam must succeed at an @Check[athletics|defense:fortitude] check against the victim's Fortitude DC. The victim becomes @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 1} and the asanbosam regains [[/r 10[healing]]]{10 HP}, gaining any excess Hit Points beyond its maximum as temporary Hit Points. These temporary Hit Points remain for 1 minute.</p>\n<p>Drinking Blood from a creature that's already drained increases the victim's drained value by 1 to a maximum of drained 3, but doesn't restore any HP to the asanbosam.</p>\n<p>A victim's drained condition decreases by 1 each week. A blood transfusion, which requires a successful @Check[medicine|dc:20|name:Drink Blood Treatment] check and a blood donor or sufficient blood, reduces the drained value by 1 after 10 minutes.</p>"
+                    "description": "<p><strong>Requirements</strong> A @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed}, @UUID[Compendium.pf2e.conditionitems.Item.6uEgoh53GbXuHpTF]{Paralyzed}, @UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{Restrained}, @UUID[Compendium.pf2e.conditionitems.Item.fBnFDH2MTzgFijKf]{Unconscious}, or willing creature is within reach of the asanbosam's jaws</p>\n<hr />\n<p><strong>Effect</strong> The asanbosam sinks its teeth into the creature to drink its blood. If the victim is grabbed, this is automatic; otherwise, the asanbosam must succeed at an @Check[athletics|defense:fortitude] check against the victim's Fortitude DC. The victim becomes @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 1} and the asanbosam regains @Damage[10[healing]] HP, gaining any excess Hit Points beyond its maximum as temporary Hit Points. These temporary Hit Points remain for 1 minute.</p>\n<p>Drinking Blood from a creature that's already drained increases the victim's drained value by 1 to a maximum of drained 3, but doesn't restore any HP to the asanbosam.</p>\n<p>A victim's drained condition decreases by 1 each week. A blood transfusion, which requires a successful @Check[medicine|dc:20|name:Drink Blood Treatment] check and a blood donor or sufficient blood, reduces the drained value by 1 after 10 minutes.</p>"
                 },
                 "action->Grab": {
                     "name": "Grab"
@@ -301,15 +307,21 @@
                     "name": "Hide Armor",
                     "description": "<p>A mix of furs, sturdy hide, and sometimes molded boiled leather, this armor provides protection due to its layers of leather, though its bulkiness slows the wearer down and decreases mobility.</p>"
                 },
+                "strike-melee->Trident": {
+                    "name": "Trident"
+                },
                 "strike-melee->Fist": {
                     "name": "Fist"
+                },
+                "strike-ranged->Trident": {
+                    "name": "Trident"
                 },
                 "strike-ranged->Thrown Debris": {
                     "name": "Thrown Debris"
                 },
                 "action->Blood Fury": {
                     "name": "Blood Fury",
-                    "description": "<p><strong>Trigger</strong> The charau-ka butcher deals bleed damage to a creature.</p>\n<hr />\n<p><strong>Effect</strong> The charau-ka licks blood from its weapon, becoming furious. It regains [[/r 5[healing]]]{5 HP} and gains a +1 status bonus to attack rolls until the end of its turn.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.LOLoQpaAp5cC0hbm]{Effect: Blood Fury}</p>"
+                    "description": "<p><strong>Trigger</strong> The charau-ka butcher deals bleed damage to a creature.</p>\n<hr />\n<p><strong>Effect</strong> The charau-ka licks blood from its weapon, becoming furious. It regains @Damage[5[healing]] HP and gains a +1 status bonus to attack rolls until the end of its turn.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.LOLoQpaAp5cC0hbm]{Effect: Blood Fury}</p>"
                 },
                 "action->Mauler": {
                     "name": "Mauler",
@@ -345,8 +357,20 @@
                     "name": "Hide Armor",
                     "description": "<p>A mix of furs, sturdy hide, and sometimes molded boiled leather, this armor provides protection due to its layers of leather, though its bulkiness slows the wearer down and decreases mobility.</p>"
                 },
+                "strike-melee->Hatchet": {
+                    "name": "Hatchet"
+                },
+                "strike-melee->Dagger": {
+                    "name": "Dagger"
+                },
                 "strike-melee->Fist": {
                     "name": "Fist"
+                },
+                "strike-ranged->Hatchet": {
+                    "name": "Hatchet"
+                },
+                "strike-ranged->Dagger": {
+                    "name": "Dagger"
                 },
                 "strike-ranged->Thrown Debris": {
                     "name": "Thrown Debris"
@@ -501,8 +525,14 @@
                     "name": "Spear",
                     "description": "<p>A long metal shaft ending with a metal spike, a spear can be used one-handed as a melee weapon and can be thrown.</p>"
                 },
+                "strike-melee->Sickle": {
+                    "name": "Sickle"
+                },
                 "strike-melee->Jaws": {
                     "name": "Jaws"
+                },
+                "strike-ranged->Spear": {
+                    "name": "Spear"
                 },
                 "action->Trackless": {
                     "name": "Trackless",
@@ -641,8 +671,14 @@
                     "name": "Spear",
                     "description": "<p>A long metal shaft ending with a metal spike, a spear can be used one-handed as a melee weapon and can be thrown.</p>"
                 },
+                "strike-melee->Sickle": {
+                    "name": "Sickle"
+                },
                 "strike-melee->Jaws": {
                     "name": "Jaws"
+                },
+                "strike-ranged->Spear": {
+                    "name": "Spear"
                 },
                 "action->Trackless": {
                     "name": "Trackless",

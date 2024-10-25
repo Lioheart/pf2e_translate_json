@@ -88,7 +88,7 @@
                 },
                 "action->Consume Flesh": {
                     "name": "Consume Flesh",
-                    "description": "<p><strong>Requirements</strong> Augrael is adjacent to the corpse of an undead creature that was destroyed within the last hour.</p>\n<hr />\n<p><strong>Effect</strong> Augrael devours a chunk of the destroyed undead creature and regains [[/r 2d6[healing]]] Hit Points.</p>\n<p>He can regain Hit Points from any given corpse only once.</p>"
+                    "description": "<p><strong>Requirements</strong> Augrael is adjacent to the corpse of an undead creature that was destroyed within the last hour.</p>\n<hr />\n<p><strong>Effect</strong> Augrael devours a chunk of the destroyed undead creature and regains @Damage[2d6[healing]] Hit Points.</p>\n<p>He can regain Hit Points from any given corpse only once.</p>"
                 },
                 "action->Ghoul Fever": {
                     "name": "Ghoul Fever",
@@ -156,6 +156,22 @@
             "items": {
                 "spellcastingEntry->Divine Innate Spells": {
                     "name": "Divine Innate Spells"
+                },
+                "weapon->Light Hammer": {
+                    "name": "Light Hammer",
+                    "description": "<p>This smaller version of the warhammer has a wooden or metal shaft ending in a metal head. Unlike its heavier cousin, it is light enough to throw.</p>"
+                },
+                "weapon->Warhammer": {
+                    "name": "Warhammer",
+                    "description": "<p>This weapon has a wooden shaft ending in a large, heavy metal head. The head of the hammer might be single-sided or double-sided, but it's always capable of delivering powerful bludgeoning blows.</p>"
+                },
+                "armor->Breastplate": {
+                    "name": "Breastplate",
+                    "description": "<p>Though referred to as a breastplate, this type of armor consists of several pieces of plate or half-plate armor that protect the torso, chest, neck, and sometimes the hips and lower legs. It strategically grants some of the protection of plate while allowing greater flexibility and speed.</p>"
+                },
+                "equipment->100 feet of Erinys-Hair Rope": {
+                    "name": "100 feet of Erinys-Hair Rope",
+                    "description": "<p>100 feet of rope.</p>"
                 },
                 "treasure->Fragment of Urevian's Pendant": {
                     "name": "Fragment of Urevian's Pendant"
@@ -339,14 +355,14 @@
                 },
                 "action->Death Burst": {
                     "name": "Death Burst",
-                    "description": "<p>20 feet. When the bloodsiphon dies, its body explodes in a cloudy red burst of necrotic dried blood in a 20-foot area.</p>\n<p>Creatures in range must attempt a @Check[reflex|dc:21|traits:damaging-effect] save.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature takes @Damage[2d6[void]] damage.</p>\n<p><strong>Failure</strong> The creature takes @Damage[4d6[void]] damage.</p>\n<p><strong>Critical Failure</strong> The creature takes @Damage[6d6[void]] damage and is @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 2} for 1 hour.</p>"
+                    "description": "<p>When the bloodsiphon dies, its body explodes in a cloudy red burst of necrotic dried blood in a @Template[emanation|distance:20]{20-foot area}.</p>\n<p>Creatures in range must attempt a @Check[reflex|dc:21|options:area-effect,damaging-effect] save.</p><hr /><p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature takes @Damage[2d6[void]|options:area-damage] damage.</p>\n<p><strong>Failure</strong> The creature takes @Damage[4d6[void]|options:area-damage] damage.</p>\n<p><strong>Critical Failure</strong> The creature takes @Damage[6d6[void]|options:area-damage] damage and is @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 2} for 1 hour.</p>"
                 },
                 "action->Void Healing": {
                     "name": "Void Healing"
                 },
                 "action->Blood Drain": {
                     "name": "Blood Drain",
-                    "description": "<p><strong>Requirements</strong> The bloodsiphon has a creature @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed} or @UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{Restrained}</p>\n<hr />\n<p><strong>Effect</strong> The bloodsiphon drains blood from the creature it has grabbed. This deals [[/r {4d4}]]{4d4 damage} and the bloodsiphon grows temporarily moist and slimy as it regains [[/r 8[healing]]]{8 Hit Points}, gaining any excess as temporary Hit Points that last for 1 minute.</p>\n<p>A creature that has its blood drained by the bloodsiphon is @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 1} until it receives any type of healing.</p>"
+                    "description": "<p><strong>Requirements</strong> The bloodsiphon has a creature @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed} or @UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{Restrained}</p>\n<hr />\n<p><strong>Effect</strong> The bloodsiphon drains blood from the creature it has grabbed. This deals @Damage[4d4[untyped]] damage and the bloodsiphon grows temporarily moist and slimy as it regains @Damage[8[healing]] Hit Points, gaining any excess as temporary Hit Points that last for 1 minute.</p>\n<p>A creature that has its blood drained by the bloodsiphon is @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 1} until it receives any type of healing.</p>"
                 },
                 "action->Grab": {
                     "name": "Grab"
@@ -382,8 +398,20 @@
                 "spellcastingEntry->Primal Innate Spells": {
                     "name": "Primal Innate Spells"
                 },
+                "weapon->Blowgun": {
+                    "name": "Blowgun",
+                    "description": "<p>This long, narrow tube is used for shooting blowgun darts, using only the power of a forcefully exhaled breath.</p>"
+                },
+                "weapon->Trident": {
+                    "name": "Trident",
+                    "description": "<p>This three-pronged, spear-like weapon typically has a 4-foot shaft. Like a spear, it can be wielded with one hand or thrown.</p>"
+                },
                 "equipment->Mud and Bug Crown": {
                     "name": "Mud and Bug Crown"
+                },
+                "consumable->Blowgun Darts": {
+                    "name": "Blowgun Darts",
+                    "description": "<p>These thin, light darts are typically made of hardwood and stabilized with fletching of down or fur. They are often hollow so they can be used to deliver poison.</p>"
                 },
                 "consumable->Blowgun Darts (Poisoned)": {
                     "name": "Blowgun Darts (Poisoned)",
@@ -464,11 +492,33 @@
             "blurb": "Male graveknight",
             "hpDetails": "void healing, rejuvenation",
             "items": {
+                "weapon->Composite Longbow": {
+                    "name": "Composite Longbow",
+                    "description": "<p>This projectile weapon is made from horn, wood, and sinew laminated together to increase the power of its pull and the force of its projectile. Like all longbows, its great size also increases the bow's range and power. You must use two hands to fire it, and it cannot be used while mounted. Any time an ability is specifically restricted to a longbow, such as Erastil's favored weapon, it also applies to composite longbows unless otherwise stated.</p>"
+                },
+                "weapon->Greatsword": {
+                    "name": "Greatsword",
+                    "description": "<p>This immense two-handed sword is nearly as tall as its wielder. Its lower blade is often somewhat dulled to allow it to be gripped for extra leverage in close-quarter fights.</p>"
+                },
+                "armor->Full Plate": {
+                    "name": "Full Plate",
+                    "description": "<p>Plate mail consists of interlocking plates that encase nearly the entire body in a carapace of steel. It is costly and heavy, and the wearer often requires help to don it correctly, but it provides some of the best defense armor can supply. A suit of this armor comes with an undercoat of @UUID[Compendium.pf2e.equipment-srd.Item.zBYEU9E7034ENCmh]{Padded Armor} and a pair of @UUID[Compendium.pf2e.equipment-srd.Item.Ix2vicchE79d6Cl3]{gauntlets}.</p>"
+                },
                 "equipment->Caliddo's Keys": {
                     "name": "Caliddo's Keys"
                 },
+                "consumable->Arrows": {
+                    "name": "Arrows",
+                    "description": "<p>These projectiles are the ammunition for bows. The shaft of an arrow is made of wood. It is stabilized in flight by fletching at one end and bears a metal head on the other.</p>"
+                },
+                "strike-melee->Frost Greatsword": {
+                    "name": "Frost Greatsword"
+                },
                 "strike-melee->Fist": {
                     "name": "Fist"
+                },
+                "strike-ranged->Frost Composite Longbow": {
+                    "name": "Frost Composite Longbow"
                 },
                 "action->Attack of Opportunity": {
                     "name": "Attack of Opportunity"
@@ -580,7 +630,7 @@
                 },
                 "action->Consume Flesh": {
                     "name": "Consume Flesh",
-                    "description": "<p><strong>Requirements</strong> The Canker cultist is adjacent to the corpse of a creature that died within the last hour, or is carrying a specially prepared lump of decaying flesh.</p>\n<hr />\n<p><strong>Effect</strong> The Canker cultist devours a chunk of the corpse or the lump of decaying flesh and regains Hit Points. They regain [[/r 1d6[healing]]] Hit Points from consuming the flesh of a creature that died within the last hour, and [[/r 2d6[healing]]] Hit Points from the lump.</p>\n<p>The cultist can regain Hit Points from any given corpse only once.</p>"
+                    "description": "<p><strong>Requirements</strong> The Canker cultist is adjacent to the corpse of a creature that died within the last hour, or is carrying a specially prepared lump of decaying flesh.</p>\n<hr />\n<p><strong>Effect</strong> The Canker cultist devours a chunk of the corpse or the lump of decaying flesh and regains Hit Points. They regain @Damage[1d6[healing]] Hit Points from consuming the flesh of a creature that died within the last hour, and @Damage[2d6[healing]] Hit Points from the lump.</p>\n<p>The cultist can regain Hit Points from any given corpse only once.</p>"
                 },
                 "action->Ghoul Fever": {
                     "name": "Ghoul Fever",
@@ -600,6 +650,34 @@
             "name": "Carman Rajani",
             "blurb": "Male human scoundrel",
             "items": {
+                "weapon->Light Hammer": {
+                    "name": "Light Hammer",
+                    "description": "<p>This smaller version of the warhammer has a wooden or metal shaft ending in a metal head. Unlike its heavier cousin, it is light enough to throw.</p>"
+                },
+                "weapon->Cooperative Blade": {
+                    "name": "Cooperative Blade",
+                    "description": "<p>This <em>+1 striking longsword</em> has a mirror-like blade free of tarnish despite being millennia old.</p>\n<p>While wielding it, you gain a +2 item bonus to checks to @UUID[Compendium.pf2e.actionspf2e.Item.HCl3pzVefiv9ZKQW]{Aid}. If you're an expert with the skill or attack roll you're using to Aid and you critically succeed, you grant your ally a +3 circumstance bonus to the triggering check instead of a +2 bonus.</p>"
+                },
+                "armor->Studded Leather Armor": {
+                    "name": "Studded Leather Armor",
+                    "description": "<p>This leather armor is reinforced with metal studs and sometimes small metal plates, providing most of the flexibility of leather armor with more robust protection.</p>"
+                },
+                "equipment->Thieves' Tools": {
+                    "name": "Thieves' Tools",
+                    "description": "<p>You need thieves' tools to Pick Locks or Disable Devices (of some types) using the Thievery skill.</p>\n<p>If your thieves' tools are broken, you can repair them by replacing the lock picks with @UUID[Compendium.pf2e.equipment-srd.Item.Sw7MBLASN3xK4Y44]{Replacement Picks} appropriate to your tools; this doesn't require using the Repair action.</p>"
+                },
+                "treasure->Gold Pieces": {
+                    "name": "Gold Pieces"
+                },
+                "strike-melee->Longsword": {
+                    "name": "Longsword"
+                },
+                "strike-melee->Light Hammer": {
+                    "name": "Light Hammer"
+                },
+                "strike-ranged->Light Hammer": {
+                    "name": "Light Hammer"
+                },
                 "action->Skillful Catch": {
                     "name": "Skillful Catch",
                     "description": "<p><strong>Trigger</strong> Carman is targeted with a ranged attack by a thrown weapon and has a hand free</p>\n<hr />\n<p><strong>Effect</strong> Carman gains a +2 circumstance bonus to his AC against the triggering attack. If the attack misses, Carman catches the weapon and can immediately make a ranged Strike with it.</p>"
@@ -626,6 +704,10 @@
             "items": {
                 "spellcastingEntry->Arcane Prepared Spells": {
                     "name": "Arcane Prepared Spells"
+                },
+                "weapon->Staff of Abjuration": {
+                    "name": "Staff of Abjuration",
+                    "description": "<p>This intricately carved wooden staff is warm to the touch and thrums with inner energy. While wielding the staff, you gain a +2 circumstance bonus to checks to identify abjuration magic.</p>\n<p><strong>Activate</strong> Cast a Spell</p>\n<hr />\n<p><strong>Effect</strong> You expend a number of charges from the staff to cast a spell from its list.</p>\n<ul>\n<li><strong>Cantrip</strong> @UUID[Compendium.pf2e.spells-srd.Item.TVKNbcgTee19PXZR]{Shield}</li>\n<li><strong>1st</strong> @UUID[Compendium.pf2e.spells-srd.Item.4WAib3GichxLjp5p]{Alarm}, @UUID[Compendium.pf2e.spells-srd.Item.TTwOKGqmZeKSyNMH]{Gentle Landing}</li>\n<li><strong>2nd</strong> @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic}, @UUID[Compendium.pf2e.spells-srd.Item.5esP2GVzvxWsMgaX]{Environmental Endurance}, @UUID[Compendium.pf2e.spells-srd.Item.Fr58LDSrbndgld9n]{Resist Energy}</li>\n</ul>\n<p><strong>Craft Requirements</strong> Supply one casting of all listed levels of all listed spells.</p>"
                 },
                 "strike-melee->Fist": {
                     "name": "Fist"
@@ -743,11 +825,11 @@
                 },
                 "action->Claim Corpse": {
                     "name": "Claim Corpse",
-                    "description": "<p><strong>Prerequisites</strong> The corpselight is in wisp form and is adjacent to a Medium or Small corpse that hasn't been claimed by a corpselight in the past 24 hours</p>\n<hr />\n<p><strong>Effect</strong> The corpselight merges with the corpse, causes the corpse to Stand, and regains [[/r 3d6[healing]]] Hit Points.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.auJ02rr1Jr88oD3Z]{Effect: Claim Corpse - Fleshy}</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.3np7EyJ8pyrVlpie]{Effect: Claim Corpse - Skeletal}</p>"
+                    "description": "<p><strong>Prerequisites</strong> The corpselight is in wisp form and is adjacent to a Medium or Small corpse that hasn't been claimed by a corpselight in the past 24 hours</p>\n<hr />\n<p><strong>Effect</strong> The corpselight merges with the corpse, causes the corpse to Stand, and regains @Damage[3d6[healing]] Hit Points.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.auJ02rr1Jr88oD3Z]{Effect: Claim Corpse - Fleshy}</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.3np7EyJ8pyrVlpie]{Effect: Claim Corpse - Skeletal}</p>"
                 },
                 "action->Death Light": {
                     "name": "Death Light",
-                    "description": "<p><strong>Prerequisites</strong> The corpselight is in a corpse</p>\n<hr />\n<p><strong>Effect</strong> The corpselight emits a sickly blue beam of light from its mouth and eyes in a @Template[cone|distance:20]. All living creatures in this area must attempt a @Check[fortitude|dc:18|traits:damaging-effect] saving throw. If at least 1 creature fails its save, the corpselight regains [[/r 2d6[healing]]] Hit Points, gaining any that exceed its maximum as temporary Hit Points that last for 1 minute.</p>\n<p>The corpselight can't use again for [[/br 1d4 #Recharge Death Light]]{1d4 rounds}.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature takes @Damage[1d6[void]] damage.</p>\n<p><strong>Failure</strong> The creature takes @Damage[2d6[void]] damage and is @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 1}.</p>\n<p><strong>Critical Failure</strong> The creature takes @Damage[4d6[void]] damage and is @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 3}.</p>"
+                    "description": "<p><strong>Prerequisites</strong> The corpselight is in a corpse</p>\n<hr />\n<p><strong>Effect</strong> The corpselight emits a sickly blue beam of light from its mouth and eyes in a @Template[cone|distance:20]. All living creatures in this area must attempt a @Check[fortitude|dc:18|traits:damaging-effect] saving throw. If at least 1 creature fails its save, the corpselight regains @Damage[2d6[healing]] Hit Points, gaining any that exceed its maximum as temporary Hit Points that last for 1 minute.</p>\n<p>The corpselight can't use again for [[/br 1d4 #Recharge Death Light]]{1d4 rounds}.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature takes @Damage[1d6[void]] damage.</p>\n<p><strong>Failure</strong> The creature takes @Damage[2d6[void]] damage and is @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 1}.</p>\n<p><strong>Critical Failure</strong> The creature takes @Damage[4d6[void]] damage and is @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 3}.</p>"
                 }
             }
         },
@@ -1078,7 +1160,7 @@
                 },
                 "action->Feed on Despair": {
                     "name": "Feed on Despair",
-                    "description": "<p><strong>Frequency</strong> once per round</p>\n<p><strong>Requirement</strong> An enemy within 15 feet of the dread wisp is under a fear effect, @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained}, or @UUID[Compendium.pf2e.conditionitems.Item.yZRUzMqrMmfLu0V1]{Dying}</p>\n<hr />\n<p><strong>Effect</strong> The dread wisp feeds on the creature's despair. The dread wisp regains [[/r 2d8[healing]]] Hit Points and deals @Damage[3d8[void]] damage to the creature (@Check[fortitude|dc:25|basic] save), and if the dread wisp has Gone Dark, their Dread Flickering reignites.</p>"
+                    "description": "<p><strong>Frequency</strong> once per round</p>\n<p><strong>Requirement</strong> An enemy within 15 feet of the dread wisp is under a fear effect, @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained}, or @UUID[Compendium.pf2e.conditionitems.Item.yZRUzMqrMmfLu0V1]{Dying}</p>\n<hr />\n<p><strong>Effect</strong> The dread wisp feeds on the creature's despair. The dread wisp regains @Damage[2d8[healing]] Hit Points and deals @Damage[3d8[void]] damage to the creature (@Check[fortitude|dc:25|basic] save), and if the dread wisp has Gone Dark, their Dread Flickering reignites.</p>"
                 },
                 "action->Go Dark": {
                     "name": "Go Dark",
@@ -1096,7 +1178,7 @@
         },
         "Dreshkan": {
             "name": "Dreshkan",
-            "publicNotes": "<p>Because morlocks are descended from distant human ancestors, clumsily or hastily fleshwarping a morlock simply produces a @UUID[Compendium.pf2e.pathfinder-bestiary.Actor.K9Hw43co8fhwmKkM]{Grothlut}. Skilled fleshwarpers, however, can tease out a morlock's genetic differences to make an entirely different creature. Creating a dreshkan involves replacing the morlock's bones with a metal skeleton. This new skeleton is often heavily augmented, such as with spiderlike limbs protruding from the spine or magazines of tiny, deadly needles. Arcane electricity courses through the dreshkan thereafter, making it jumpy and irritable.</p>\n<p>Morlocks view dreshkans as impressive fusions of flesh and technology and gladly fight alongside these creatures, whom they view as paragons of morlock potential.</p>\n<hr />\n<p>Although twisting victims into horrid shapes is a well-known pastime of evil drow, other subterranean monsters have stolen these practices or developed them independently. The worm-like seugathis sometimes warp other creatures whose territories abut their lightless lands; the fleshwarps below result from morlocks and urdefhans, respectively.</p>",
+            "publicNotes": "<p>Because morlocks are descended from distant human ancestors, clumsily or hastily fleshwarping a morlock simply produces a @UUID[Compendium.pf2e.pathfinder-monster-core.Actor.VCYF0NAfPKwTHkK1]{Grothlut}. Skilled fleshwarpers, however, can tease out a morlock's genetic differences to make an entirely different creature. Creating a dreshkan involves replacing the morlock's bones with a metal skeleton. This new skeleton is often heavily augmented, such as with spiderlike limbs protruding from the spine or magazines of tiny, deadly needles. Arcane electricity courses through the dreshkan thereafter, making it jumpy and irritable.</p>\n<p>Morlocks view dreshkans as impressive fusions of flesh and technology and gladly fight alongside these creatures, whom they view as paragons of morlock potential.</p><hr /><p>Although twisting victims into horrid shapes is a well-known pastime of evil drow, other subterranean monsters have stolen these practices or developed them independently. The worm-like seugathis sometimes warp other creatures whose territories abut their lightless lands; the fleshwarps below result from morlocks and urdefhans, respectively.</p>",
             "allSavesBonus": "+2 status to all saves vs. bleed, death effects, disease, doomed, fatigued, paralyzed, poison, and sickened",
             "items": {
                 "strike-melee->Claw": {
@@ -1137,6 +1219,14 @@
             "items": {
                 "spellcastingEntry->Divine Innate Spells": {
                     "name": "Divine Innate Spells"
+                },
+                "weapon->Glaive": {
+                    "name": "Glaive",
+                    "description": "<p>This polearm consists of a long, single-edged blade on the end of a 7-foot pole. It is extremely effective at delivering lethal cuts at a distance.</p>"
+                },
+                "equipment->Drover's Band": {
+                    "name": "Drover's Band",
+                    "description": "<p>This black leather wrist guard has a bright red gem on the inside of the wrist. Faint glyphs and words of domination in Infernal swim inside the gem. Your words become harsh and clipped when you have this magic item invested.</p>\n<hr />\n<p><strong>Activate</strong> <span class=\"action-glyph\">3</span> command</p>\n<p><strong>Frequency</strong> once per day</p>\n<hr />\n<p><strong>Effect</strong> You exert your will over a mindless creature within 30 feet. If the target is a mindless creature of 3rd level or lower, it must attempt a @Check[will|dc:20] save. If you are a devil, the target uses an outcome one degree of success worse than the result of its saving throw.</p>\n<hr />\n<p><strong>Critical Success</strong> The target creature is unaffected.</p>\n<p><strong>Success</strong> The target creature is @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1} for 1 round as its responses are muddled by your commands.</p>\n<p><strong>Failure</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.9qGBRpbX9NEwtAAr]{Controlled} by you for 1 hour, although it doesn't follow commands that are obviously self-destructive.</p>\n<p><strong>Critical Failure</strong> As failure, but the duration is 1 day.</p>"
                 },
                 "strike-melee->Glaive": {
                     "name": "Glaive"
@@ -1230,6 +1320,22 @@
                 "spellcastingEntry->Divine Innate Spells": {
                     "name": "Divine Innate Spells"
                 },
+                "weapon->Composite Longbow": {
+                    "name": "Composite Longbow",
+                    "description": "<p>This projectile weapon is made from horn, wood, and sinew laminated together to increase the power of its pull and the force of its projectile. Like all longbows, its great size also increases the bow's range and power. You must use two hands to fire it, and it cannot be used while mounted. Any time an ability is specifically restricted to a longbow, such as Erastil's favored weapon, it also applies to composite longbows unless otherwise stated.</p>"
+                },
+                "weapon->Longsword": {
+                    "name": "Longsword",
+                    "description": "<p>Longswords can be one-edged or two-edged swords. Their blades are heavy and they're between 3 and 4 feet in length.</p>"
+                },
+                "armor->Chain Shirt": {
+                    "name": "Chain Shirt",
+                    "description": "<p>Sometimes called a hauberk, this is a long shirt constructed of the same metal rings as chainmail. However, it is much lighter than chainmail and protects only the torso, upper arms, and upper legs of its wearer.</p>"
+                },
+                "consumable->Arrows": {
+                    "name": "Arrows",
+                    "description": "<p>These projectiles are the ammunition for bows. The shaft of an arrow is made of wood. It is stabilized in flight by fletching at one end and bears a metal head on the other.</p>"
+                },
                 "strike-melee->Longsword": {
                     "name": "Longsword"
                 },
@@ -1266,6 +1372,29 @@
             "items": {
                 "spellcastingEntry->Divine Innate Spells": {
                     "name": "Divine Innate Spells"
+                },
+                "weapon->Repeating Hand Crossbow": {
+                    "name": "Repeating Hand Crossbow",
+                    "description": "<p>This handheld crossbow features an ingeniously designed catch mechanism at the top of the flight groove, just in front of the latch, which automatically loads a bolt from a magazine and resets the string each time the weapon is fired. A typical repeating hand crossbow magazine holds five bolts.</p>"
+                },
+                "weapon->Rapier": {
+                    "name": "Rapier",
+                    "description": "<p>The rapier is a long and thin piercing blade with a basket hilt. It is prized among many as a dueling weapon.</p>"
+                },
+                "armor->Studded Leather Armor": {
+                    "name": "Studded Leather Armor",
+                    "description": "<p>This leather armor is reinforced with metal studs and sometimes small metal plates, providing most of the flexibility of leather armor with more robust protection.</p>"
+                },
+                "equipment->Shootist Bandolier": {
+                    "name": "Shootist Bandolier",
+                    "description": "<p>This leather bandolier holds up to three @UUID[Compendium.pf2e.equipment-srd.Item.xk9bw9ccupAIx7xT]{Repeating Hand Crossbow Magazines} in leather pockets that pop open with the quick flick of a thumb. You reduce the reload time for a repeating hand crossbow magazine from the bandolier by 1, to a total of 2 actions. You can wear only one shootist bandolier at a time.</p>"
+                },
+                "consumable->Stupor Poison": {
+                    "name": "Stupor Poison",
+                    "description": "<p><strong>Activate</strong> <span class=\"action-glyph\">2</span> Interact</p>\n<p>Stupor poison is a more potent distillation of @UUID[Compendium.pf2e.equipment-srd.Item.zo0ophqfKunJFxZN]{Lethargy Poison}. Further exposure to stupor poison doesn't require the target to attempt additional saving throws; only failing a saving throw against an ongoing exposure can progress its stage.</p>\n<hr />\n<p><strong>Saving Throw</strong> @Check[fortitude|dc:20]</p>\n<p><strong>Maximum Duration</strong> 6 hours</p>\n<p><strong>Stage 1</strong> @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1} and @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} (1 round)</p>\n<p><strong>Stage 2</strong> @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 2} and off-guard (1 round)</p>\n<p><strong>Stage 3</strong> @UUID[Compendium.pf2e.conditionitems.Item.fBnFDH2MTzgFijKf]{Unconscious} with no Perception check to wake up (1 round)</p>\n<p><strong>Stage 4</strong> unconscious with no Perception check to wake up ([[/r 1d6 #hours]]{1d6 hours})</p>"
+                },
+                "consumable->Repeating Hand Crossbow Magazine": {
+                    "name": "Repeating Hand Crossbow Magazine"
                 },
                 "strike-melee->Rapier": {
                     "name": "Rapier"
@@ -1312,6 +1441,26 @@
             "items": {
                 "spellcastingEntry->Divine Innate Spells": {
                     "name": "Divine Innate Spells"
+                },
+                "weapon->Elven Curve Blade": {
+                    "name": "Elven Curve Blade",
+                    "description": "<p>Essentially a longer version of the scimitar, this traditional elven weapon has a thinner blade than its cousin.</p>"
+                },
+                "weapon->Hand Crossbow": {
+                    "name": "Hand Crossbow",
+                    "description": "<p>Sometimes referred to as an alley bow by rogues or ruffians, this small crossbow fires small bolts that are sometimes used to deliver poison to the target. It's small enough to be shot one-handed, but it still requires two hands to load.</p>"
+                },
+                "armor->Chain Mail": {
+                    "name": "Chain Mail",
+                    "description": "<p>A suit of chain mail consists of several pieces of armor composed of small metal rings linked together in a protective mesh. It typically includes a chain shirt, leggings, a pair of arms, and a coif, collectively protecting most of the body.</p>"
+                },
+                "consumable->Bolts": {
+                    "name": "Bolts",
+                    "description": "<p>Shorter than traditional arrows but similar in construction, bolts are the ammunition used by crossbows.</p>"
+                },
+                "consumable->Lethargy Poison": {
+                    "name": "Lethargy Poison",
+                    "description": "<p>Lethargy poison is commonly used in hit-and-run tactics by drow and others who want their victims alive; the ambusher retreats until the poison sets in and the victim falls unconscious. Further exposure to lethargy poison does not require the target to attempt additional saving throws; only failing an saving throw against an ongoing exposure can progress its stage.</p>\n<hr />\n<p><strong>Activate</strong> <span class=\"action-glyph\">2</span> Interact (Injury)</p>\n<p><strong>Saving Throw</strong> @Check[fortitude|dc:18]</p>\n<p><strong>Maximum Duration</strong> 4 hours</p>\n<p><strong>Stage 1</strong> @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1} (1 round)</p>\n<p><strong>Stage 2</strong> slowed 1 (1 minute)</p>\n<p><strong>Stage 3</strong> @UUID[Compendium.pf2e.conditionitems.Item.fBnFDH2MTzgFijKf]{Unconscious} with no Perception check to wake up (1 round)</p>\n<p><strong>Stage 4</strong> unconscious with no Perception check to wake up ([[/br 1d4 #hours]]{1d4 hours}).</p>"
                 },
                 "strike-melee->Elven Curve Blade": {
                     "name": "Elven Curve Blade"
@@ -1465,7 +1614,7 @@
                 },
                 "action->Consume Confusion": {
                     "name": "Consume Confusion",
-                    "description": "<p><strong>Frequency</strong> once per round</p>\n<p><strong>Requirement</strong> A creature within 15 feet of the flickerwisp is @UUID[Compendium.pf2e.conditionitems.Item.yblD8fOR1J8rDwEQ]{Confused}</p>\n<hr />\n<p><strong>Effect</strong> The flickerwisp feeds on the creature's confusion, even as its flashing body and disjointed gyrations cause existing confusion effects to persist.</p>\n<p>It regains [[/r 1d4[healing]]] Hit Points, and if the creature's confused condition has a limited duration, it lasts 1 additional round.</p>"
+                    "description": "<p><strong>Frequency</strong> once per round</p>\n<p><strong>Requirement</strong> A creature within 15 feet of the flickerwisp is @UUID[Compendium.pf2e.conditionitems.Item.yblD8fOR1J8rDwEQ]{Confused}</p>\n<hr />\n<p><strong>Effect</strong> The flickerwisp feeds on the creature's confusion, even as its flashing body and disjointed gyrations cause existing confusion effects to persist.</p>\n<p>It regains @Damage[1d4[healing]] Hit Points, and if the creature's confused condition has a limited duration, it lasts 1 additional round.</p>"
                 },
                 "action->Flicker": {
                     "name": "Flicker",
@@ -1483,6 +1632,10 @@
                 },
                 "spellcastingEntry->Occult Innate Spells": {
                     "name": "Occult Innate Spells"
+                },
+                "weapon->Dagger": {
+                    "name": "Dagger",
+                    "description": "<p>This small, bladed weapon is held in one hand and used to stab a creature in close combat. It can also be thrown.</p>"
                 },
                 "equipment->Wand of Continuation (4th-Rank Spell)": {
                     "name": "Wand of Continuation (4th-Rank Spell)",
@@ -1511,7 +1664,7 @@
                 },
                 "action->Survivor's Nourishment": {
                     "name": "Survivor's Nourishment",
-                    "description": "<p>A creature that eats food conjured by Galudu's create food spell regains [[/r 4d4[healing]]] Hit Points. A creature can only benefit from this healing once per week.</p>"
+                    "description": "<p>A creature that eats food conjured by Galudu's create food spell regains @Damage[4d4[healing]] Hit Points. A creature can only benefit from this healing once per week.</p>"
                 }
             }
         },
@@ -1596,7 +1749,7 @@
                 },
                 "action->Feed on Fear": {
                     "name": "Feed on Fear",
-                    "description": "<p><strong>Requirement</strong> An enemy is under a fear effect or @UUID[Compendium.pf2e.conditionitems.Item.yZRUzMqrMmfLu0V1]{Dying} within 15 feet of the will-o'-wisp.</p>\n<hr />\n<p><strong>Effect</strong> The will-o'wisp feeds on the creature's terror. It regains [[/r 2d4[healing]]] Hit Points, and if it has Gone Dark, its glow reignites.</p>\n<p>A will-o'-wisp can take this action only once per round.</p>"
+                    "description": "<p><strong>Requirement</strong> An enemy is under a fear effect or @UUID[Compendium.pf2e.conditionitems.Item.yZRUzMqrMmfLu0V1]{Dying} within 15 feet of the will-o'-wisp.</p>\n<hr />\n<p><strong>Effect</strong> The will-o'wisp feeds on the creature's terror. It regains @Damage[2d4[healing]] Hit Points, and if it has Gone Dark, its glow reignites.</p>\n<p>A will-o'-wisp can take this action only once per round.</p>"
                 },
                 "action->Go Dark": {
                     "name": "Go Dark",
@@ -1612,11 +1765,32 @@
             "name": "Gulzash",
             "blurb": "Male xulgath lutenist",
             "items": {
+                "weapon->Battle Lute": {
+                    "name": "Battle Lute",
+                    "description": "<p>This reinforced lute is suitable both for use as a handheld musical instrument and for bashing heads should a crowd turn sour. Its strings are finely braided wires that run along its sturdy metal neck.</p>"
+                },
+                "weapon->Dagger": {
+                    "name": "Dagger",
+                    "description": "<p>This small, bladed weapon is held in one hand and used to stab a creature in close combat. It can also be thrown.</p>"
+                },
+                "armor->Leather Armor": {
+                    "name": "Leather Armor",
+                    "description": "<p>A mix of flexible and molded boiled leather, a suit of this type of armor provides some protection with maximum flexibility.</p>"
+                },
+                "strike-melee->Battle Lute": {
+                    "name": "Battle Lute"
+                },
                 "strike-melee->Jaws": {
                     "name": "Jaws"
                 },
                 "strike-melee->Claw": {
                     "name": "Claw"
+                },
+                "strike-melee->Dagger": {
+                    "name": "Dagger"
+                },
+                "strike-ranged->Dagger": {
+                    "name": "Dagger"
                 },
                 "action->Stench": {
                     "name": "Stench",
@@ -1640,6 +1814,10 @@
             "items": {
                 "spellcastingEntry->Divine Innate Spells": {
                     "name": "Divine Innate Spells"
+                },
+                "weapon->+1 Flaming Striking Hellforged Glaive": {
+                    "name": "+1 Flaming Striking Hellforged Glaive",
+                    "description": "<p>This polearm consists of a long, single-edged blade on the end of a 7-foot pole. It is extremely effective at delivering lethal cuts at a distance.</p>"
                 },
                 "strike-melee->Flaming Hellforged Glaive": {
                     "name": "Flaming Hellforged Glaive"
@@ -1712,6 +1890,10 @@
                 "spellcastingEntry->Occult Innate Spells": {
                     "name": "Occult Innate Spells"
                 },
+                "weapon->Rapier": {
+                    "name": "Rapier",
+                    "description": "<p>The rapier is a long and thin piercing blade with a basket hilt. It is prized among many as a dueling weapon.</p>"
+                },
                 "weapon->Infused Acid Flask (Moderate)": {
                     "name": "Infused Acid Flask (Moderate)",
                     "description": "<p><strong>Activate</strong> <span class=\"action-glyph\">A</span> Strike</p>\n<p>This flask filled with corrosive acid deals 1 acid damage, 2d6 persistent acid damage, and 2 acid splash damage. You gain a +1 item bonus to attack rolls.</p>"
@@ -1740,13 +1922,17 @@
                     "name": "Wand of Force Barrage (Rank 1)",
                     "description": "<p>This baton is about a foot long and contains a single spell. The appearance typically relates to the spell within.</p>\n<p><strong>Activate</strong> Cast a Spell</p>\n<p><strong>Frequency</strong> once per day, plus overcharge</p>\n<hr />\n<p><strong>Effect</strong> You Cast the Spell at the indicated rank.</p>\n<p><strong>Craft Requirements</strong> Supply a casting of the spell at the listed rank.</p>\n<hr />\n<p><em>Note: To create a scroll or wand of a specific spell, drag the spell from the compendium or compendium browser into the inventory of a PC, NPC, or loot actor.</em></p>"
                 },
+                "consumable->Infused Wyvern Poison": {
+                    "name": "Infused Wyvern Poison",
+                    "description": "<p>Properly harvested and preserved, the poison from a wyvern's sting is effective and direct.</p>\n<hr />\n<p><strong>Activate</strong> <span class=\"action-glyph\">2</span> Interact (Injury)</p>\n<p><strong>Saving Throw</strong> @Check[fortitude|dc:26]</p>\n<p><strong>Maximum Duration</strong> 6 rounds</p>\n<p><strong>Stage 1</strong> @Damage[5d6[poison]] damage (1 round)</p>\n<p><strong>Stage 2</strong> @Damage[6d6[poison]] damage (1 round)</p>\n<p><strong>Stage 3</strong> @Damage[8d6[poison]] damage (1 round)</p>"
+                },
                 "consumable->Infused Cognitive Mutagen (Moderate)": {
                     "name": "Infused Cognitive Mutagen (Moderate)",
                     "description": "<p><strong>Activate</strong> <span class=\"action-glyph\">A</span> Interact</p>\n<hr />\n<p>Your mind becomes clear and cognition flows freely, but physical matters seem ephemeral.</p>\n<p><strong>Benefit</strong> You gain a +2 item bonus to Arcana, Crafting, Lore, Occultism, and Society checks and all checks to @UUID[Compendium.pf2e.actionspf2e.Item.1OagaWtBpVXExToo]{Recall Knowledge}. Your critical failures on @UUID[Compendium.pf2e.actionspf2e.Item.1OagaWtBpVXExToo]{Recall Knowledge} checks become failures instead.</p>\n<p><strong>Drawback</strong> You take a -2 penalty to weapon and unarmed attack rolls, Athletics checks, and acrobatics checks. You can carry 2 less Bulk than normal before becoming encumbered, and the maximum Bulk you can carry is reduced by 4.</p>\n<p><strong>Duration</strong> 10 minutes.</p>\n<p>@UUID[Compendium.pf2e.equipment-effects.Item.ztxW3lBPRcesF7wK]{Effect: Cognitive Mutagen (Moderate)}</p>"
                 },
                 "consumable->Infused Elixir of Life (Lesser)": {
                     "name": "Infused Elixir of Life (Lesser)",
-                    "description": "<p><strong>Activate</strong> <span class=\"action-glyph\">A</span> Interact</p>\n<p>Elixirs of life accelerate a living creatures natural healing processes and immune system. Upon drinking this elixir, you regain [[/r (3d6+6)[healing]]]{3d6+6 Hit Points} and gain +1 item bonus to saving throws against diseases and poisons for 10 minutes.</p>\n<p>@UUID[Compendium.pf2e.equipment-effects.Item.EpB7yJPEuG6ez4z3]{Effect: Elixir of Life (Lesser)}</p>"
+                    "description": "<p><strong>Activate</strong> <span class=\"action-glyph\">A</span> Interact</p>\n<p>Elixirs of life accelerate a living creatures natural healing processes and immune system. Upon drinking this elixir, you regain @Damage[(3d6+6)[healing]] Hit Points and gain +1 item bonus to saving throws against diseases and poisons for 10 minutes.</p>\n<p>@UUID[Compendium.pf2e.equipment-effects.Item.lPRuIRbu0rHBkoKY]{Effect: Elixir of Life}</p>"
                 },
                 "consumable->Infused Mistform Elixir (Moderate)": {
                     "name": "Infused Mistform Elixir (Moderate)",
@@ -1847,6 +2033,10 @@
                 "spellcastingEntry->Animal Order Spells": {
                     "name": "Animal Order Spells"
                 },
+                "weapon->Katar": {
+                    "name": "Katar",
+                    "description": "<p>Also known as punching daggers, katars are characterized by their H-shaped hand grip that allows the blade to jut out from the knuckles.</p>"
+                },
                 "treasure->Bejeweled Necklace featuring a Porpoise": {
                     "name": "Bejeweled Necklace featuring a Porpoise",
                     "description": "<p>Ayla, My Beloved</p>"
@@ -1922,6 +2112,10 @@
                     "name": "Chain Mail",
                     "description": "<p>A suit of chain mail consists of several pieces of armor composed of small metal rings linked together in a protective mesh. It typically includes a chain shirt, leggings, a pair of arms, and a coif, collectively protecting most of the body.</p>"
                 },
+                "equipment->Emerald Fulcrum Lens": {
+                    "name": "Emerald Fulcrum Lens",
+                    "description": "<p>This concave green lens is pitted and flawed; its jagged edges can cut those who don't handle it with care. While you have the <em>Emerald Fulcrum Lens</em> invested, your flesh appears waxen and pallid. You gain void healing and @UUID[Compendium.pf2e.spells-srd.Item.wdA52JJnsuQWeyqz]{Harm} spells gain a +4 status bonus to the Hit Points they restore to you. You can also activate the lens in the following ways.</p>\n<p>@UUID[Compendium.pf2e.equipment-effects.Item.vlTiBE0h2kyw5J9o]{Effect: Emerald Fulcrum Lens}</p>\n<hr />\n<p><strong>Activate</strong> <span class=\"action-glyph\">2</span> Interact (healing)</p>\n<p><strong>Frequency</strong> once per day</p>\n<p><strong>Effect</strong> You grasp the <em>Emerald Fulcrum Lens</em> in one hand, regain @Damage[30[healing]] Hit Points, and gain a +2 item bonus to saving throws against magic for 1 round.</p>\n<p>@UUID[Compendium.pf2e.equipment-effects.Item.rH6RHxy6sNTLusKX]{Effect: Emerald Fulcrum Lens (Saving Throw)}</p>\n<hr />\n<p><strong>Activate</strong> <span class=\"action-glyph\">2</span> Interact (attack, possession)</p>\n<p>While grasping the lens, make a melee spell attack roll with a modifier of [[/r d20+20]]{+20}. On a hit, you force the splinter of Nhimbaloth's essence from the lens to possess the target. You're no longer invested in the lens, and the target gains the benefits as though it had invested the lens but can't activate the lens's other abilities. This effect is permanent, but it can be ended by any effect that removes a possession effect. The lens doesn't have any magical abilities until the possession effect ends; when it does, the essence returns to the lens.</p>"
+                },
                 "consumable->Bolts": {
                     "name": "Bolts",
                     "description": "<p>Shorter than traditional arrows but similar in construction, bolts are the ammunition used by crossbows.</p>"
@@ -1959,7 +2153,7 @@
                 },
                 "action->Wicked Bite": {
                     "name": "Wicked Bite",
-                    "description": "<p><strong>Requirements</strong> Khurfel damaged a creature with a jaws Strike on his last action</p>\n<hr />\n<p><strong>Effect</strong> Khurfel maintains contact, turning the creature's flesh translucent around the injury. Khurfel chooses one of two options, each of which requires a @Check[fortitude|dc:28] save. If the jaws Strike was a critical hit, the creature suffers both effects, using the same save result for both.</p>\n<ul>\n<li>Drain Blood Khurfel drinks some of the creature's blood. On a failed save, the creature is @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 1} and Khurfel regains [[/r 10[healing]]]{10 HP} (or, on a critical failure, it's @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 2} and Khurfel regains [[/r 20[healing]]]{20 HP}).</li>\n<li>Drain Vitality Khurfel draws out some of the creature's vital essence. The creature becomes @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 1} for 1 hour on a failed save (or @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 2} for 1 hour on a critical failure).</li>\n</ul>"
+                    "description": "<p><strong>Requirements</strong> Khurfel damaged a creature with a jaws Strike on his last action</p>\n<hr />\n<p><strong>Effect</strong> Khurfel maintains contact, turning the creature's flesh translucent around the injury. Khurfel chooses one of two options, each of which requires a @Check[fortitude|dc:28] save. If the jaws Strike was a critical hit, the creature suffers both effects, using the same save result for both.</p>\n<ul>\n<li>Drain Blood Khurfel drinks some of the creature's blood. On a failed save, the creature is @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 1} and Khurfel regains @Damage[10[healing]] HP (or, on a critical failure, it's @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 2} and Khurfel regains @Damage[20[healing]] HP).</li>\n<li>Drain Vitality Khurfel draws out some of the creature's vital essence. The creature becomes @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 1} for 1 hour on a failed save (or @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 2} for 1 hour on a critical failure).</li>\n</ul>"
                 }
             }
         },
@@ -1973,6 +2167,14 @@
                 },
                 "spellcastingEntry->Occult Innate Spells": {
                     "name": "Occult Innate Spells"
+                },
+                "weapon->Drumstick": {
+                    "name": "Drumstick",
+                    "description": "<p>This smaller version of the warhammer has a wooden or metal shaft ending in a metal head. Unlike its heavier cousin, it is light enough to throw.</p>"
+                },
+                "equipment->Folding Drums": {
+                    "name": "Folding Drums",
+                    "description": "<p>You can unfold this @UUID[Compendium.pf2e.equipment-srd.Item.yw1kPxsdCoDUzOaE]{virtuoso percussion instrument} into a hand drum (1 Bulk), a marching drum set with a shoulder harness and back brace (3 Bulk), or a large standing drum set with a built-in stool (16 Bulk). Changing the <em>folding drum</em>'s size is a 3-action Interact activity, and the drums must have sufficient open space to accommodate their new size.</p><hr /><p><strong>Activate</strong> <span class=\"action-glyph\">1</span> Interact (concentrate)</p>\n<p><strong>Frequency</strong> once per hour</p>\n<p><strong>Effect</strong> You play a pounding rhythm on the drum. If the next action you use is to cast a composition cantrip that has an emanation, increase the area of the emanation by 30 feet.</p>"
                 },
                 "strike-melee->Drumstick": {
                     "name": "Drumstick"
@@ -2071,6 +2273,10 @@
                 "spellcastingEntry->Occult Innate Spells": {
                     "name": "Occult Innate Spells"
                 },
+                "weapon->Club": {
+                    "name": "Club",
+                    "description": "<p>This is a piece of stout wood shaped or repurposed to bludgeon an enemy. Clubs can be intricately carved pieces of martial art or as simple as a tree branch or piece of wood.</p>"
+                },
                 "strike-melee->Club": {
                     "name": "Club"
                 },
@@ -2101,11 +2307,18 @@
             "publicNotes": "<p>Most morlocks have little talent for crafting, but a rare few have an uncanny knack for tinkering.</p>\n<hr />\n<p>Morlocks originate from humans long lost to the surface world. They have an affinity for machinery, scavenging, and strange occult behaviors.</p>",
             "allSavesBonus": "+2 status to all saves vs. disease and poison",
             "items": {
+                "weapon->Warhammer": {
+                    "name": "Warhammer",
+                    "description": "<p>This weapon has a wooden shaft ending in a large, heavy metal head. The head of the hammer might be single-sided or double-sided, but it's always capable of delivering powerful bludgeoning blows.</p>"
+                },
                 "equipment->Projectile Launcher": {
                     "name": "Projectile Launcher"
                 },
                 "equipment->Handful of Junk": {
                     "name": "Handful of Junk"
+                },
+                "strike-melee->Warhammer": {
+                    "name": "Warhammer"
                 },
                 "strike-melee->Jaws": {
                     "name": "Jaws"
@@ -2133,7 +2346,7 @@
                 },
                 "action->Uncanny Tinker": {
                     "name": "Uncanny Tinker",
-                    "description": "<p>The morlock engineer tinkers with an adjacent construct or mechanical hazard. They attempt a @Check[crafting|defense:fortitude] check against the construct's or hazard's Fortitude DC. The morlock can't get an outcome better than failure if the target's level is more than double the morlock's.</p>\n<p>This ability reflects hasty battlefield repairs; once a construct or hazard regains Hit Points from this ability, it can't do so again until it's been @UUID[Compendium.pf2e.actionspf2e.Item.bT3skovyLUtP22ME]{Repaired}.</p>\n<hr />\n<p><strong>Critical Success</strong> The target regains [[/r 8d6[healing]]] Hit Points and a +1 circumstance bonus to attack rolls for 1 minute. Alternately, the morlock can deal [[/r 8d6]]{8d6 damage} (bludgeoning, piercing, or slashing, as chosen by the morlock engineer) to the construct or hazard.</p>\n<p><strong>Success</strong> As critical success, but the target regains [[/r 4d6[healing]]] Hit Points or the morlock deals [[/r 4d6]]{4d6 damage}.</p>\n<p><strong>Critical Failure</strong> The morlock injures themself, taking [[/r 3d6]]{3d6 damage} (typically bludgeoning, piercing, or slashing, but potentially a different type at the GM's discretion).</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.BTSstQAn4Xlm1PWV]{Effect: Uncanny Tinker}</p>"
+                    "description": "<p>The morlock engineer tinkers with an adjacent construct or mechanical hazard. They attempt a @Check[crafting|defense:fortitude] check against the construct's or hazard's Fortitude DC. The morlock can't get an outcome better than failure if the target's level is more than double the morlock's.</p>\n<p>This ability reflects hasty battlefield repairs; once a construct or hazard regains Hit Points from this ability, it can't do so again until it's been @UUID[Compendium.pf2e.actionspf2e.Item.bT3skovyLUtP22ME]{Repaired}.</p>\n<hr />\n<p><strong>Critical Success</strong> The target regains @Damage[8d6[healing]] Hit Points and a +1 circumstance bonus to attack rolls for 1 minute. Alternately, the morlock can deal @Damage[8d6[untyped]] damage (bludgeoning, piercing, or slashing, as chosen by the morlock engineer) to the construct or hazard.</p>\n<p><strong>Success</strong> As critical success, but the target regains @Damage[4d6[healing]] Hit Points or the morlock deals @Damage[4d6[untyped]] damage.</p>\n<p><strong>Critical Failure</strong> The morlock injures themself, taking @Damage[3d6[untyped]] damage (typically bludgeoning, piercing, or slashing, but potentially a different type at the GM's discretion).</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.BTSstQAn4Xlm1PWV]{Effect: Uncanny Tinker}</p>"
                 }
             }
         },
@@ -2142,8 +2355,18 @@
             "publicNotes": "<p>The morlock scavenger is a lankier, smaller version of a typical morlock. Their stature allows them to wriggle into areas other morlocks can't access.</p>\n<hr />\n<p>Morlocks originate from humans long lost to the surface world. They have an affinity for machinery, scavenging, and strange occult behaviors.</p>",
             "allSavesBonus": "+2 status to all saves vs. disease and poison",
             "items": {
+                "weapon->Dagger": {
+                    "name": "Dagger",
+                    "description": "<p>This small, bladed weapon is held in one hand and used to stab a creature in close combat. It can also be thrown.</p>"
+                },
+                "strike-melee->Dagger": {
+                    "name": "Dagger"
+                },
                 "strike-melee->Jaws": {
                     "name": "Jaws"
+                },
+                "strike-ranged->Dagger": {
+                    "name": "Dagger"
                 },
                 "action->Light Blindness": {
                     "name": "Light Blindness"
@@ -2171,8 +2394,22 @@
             "acDetails": "(26 with shield raised)",
             "hpDetails": "void healing",
             "items": {
+                "weapon->Tamchal Chakram": {
+                    "name": "Tamchal Chakram",
+                    "description": "<p>These circular weapons are among the many strange weapons used by urdefhans. The sharp metal circle contains numerous protruding blades, while an angled central handle provides a decent grip that spins the weapon as it's thrown.</p>"
+                },
+                "shield->Steel Shield": {
+                    "name": "Steel Shield",
+                    "description": "<p>Like wooden shields, steel shields come in a variety of shapes and sizes. Though more expensive than wooden shields, they are much more durable.</p>\n<table class=\"pf2e\">\n<thead>\n<tr>\n<th>Hardness</th>\n<th>HP</th>\n<th>BT</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>5</td>\n<td>20</td>\n<td>10</td>\n</tr>\n</tbody>\n</table>"
+                },
+                "strike-melee->Tamchal Chakram": {
+                    "name": "Tamchal Chakram"
+                },
                 "strike-melee->Fist": {
                     "name": "Fist"
+                },
+                "strike-ranged->Tamchal Chakram": {
+                    "name": "Tamchal Chakram"
                 },
                 "action->War Leader": {
                     "name": "War Leader",
@@ -2184,7 +2421,7 @@
                 },
                 "action->Stay in the Fight": {
                     "name": "Stay in the Fight",
-                    "description": "<p><strong>Trigger</strong> An allied creature within 30 feet reaches 0 HP</p>\n<hr />\n<p><strong>Effect</strong> The mulventok imparts some of its own energy to keep the ally fighting. The target creature gains 1 Hit Point, and the mulventok takes @Damage[2d6[mental]] damage.</p>"
+                    "description": "<p><strong>Trigger</strong> An allied creature within 30 feet reaches 0 HP</p>\n<hr />\n<p><strong>Effect</strong> The mulventok imparts some of its own energy to keep the ally fighting. The target creature gains @Damage[1[healing]] Hit Point, and the mulventok takes @Damage[2d6[mental]] damage.</p>"
                 },
                 "action->Void Healing": {
                     "name": "Void Healing"
@@ -2208,8 +2445,26 @@
             "acDetails": "all-around vision",
             "blurb": "Female feebleminded medusa (Pathfinder Bestiary 234)",
             "items": {
+                "weapon->Composite Shortbow": {
+                    "name": "Composite Shortbow",
+                    "description": "<p>This shortbow is made from horn, wood, and sinew laminated together to increase the power of its pull and the force of its projectile. Its compact size and power make it a favorite of mounted archers. Any time an ability is specifically restricted to a shortbow, it also applies to composite shortbows unless otherwise stated.</p>"
+                },
+                "weapon->Shortsword": {
+                    "name": "Shortsword",
+                    "description": "<p>These blades come in a variety of shapes and styles, but they are typically 2 feet long.</p>"
+                },
+                "consumable->Arrows": {
+                    "name": "Arrows",
+                    "description": "<p>These projectiles are the ammunition for bows. The shaft of an arrow is made of wood. It is stabilized in flight by fletching at one end and bears a metal head on the other.</p>"
+                },
+                "strike-melee->Shortsword": {
+                    "name": "Shortsword"
+                },
                 "strike-melee->Snake Fangs": {
                     "name": "Snake Fangs"
+                },
+                "strike-ranged->Composite Shortbow": {
+                    "name": "Composite Shortbow"
                 },
                 "action->All-Around Vision": {
                     "name": "All-Around Vision"
@@ -2233,6 +2488,14 @@
             "publicNotes": "<p>The cowardly and lazy skulks live on the fringes of organized societies and steal from others without a second thought. Even murder is merely another necessity, and they think nothing of creeping into a house, dispatching the residents, and taking what they want.</p>\n<p>Their chameleon-like ability to blend into their surroundings makes skulks difficult to detect, so their ever-present populations around the periphery of large settlements are nearly impossible to dislodge permanently. They typically travel in small groups of no more than 16 individuals, since groups larger than that tend to break into violence directed at one other. While skulks see themselves as sharing a common history of being cast out and hated, this is not a strong enough bond to hold large groups of the creatures together with a shared purpose for very long.</p>\n<p>Entrances and exits from cities, especially less-guarded access ways around sewers and the like, are skulks' favorite stomping grounds. These sites allow them to closely observe who comes and goes from the city while also affording them swift escape options, should the authorities uncover their presence. On rare occasions, a well-disciplined skulk can rise to prominence within the local thieves' guild and become sought after for difficult jobs. Their repugnant personalities and overwhelming selfishness, however, usually means they are unable to secure longlasting leadership roles.</p>\n<p>A typical skulk is 6 feet tall with similar body structure to a gangly human. Skulks mature quickly and can live up to 50 years, although most meet a violent end long before then. The rare skulk who manages to escape their society of violence and craven bitterness can be of any alignment, but those skulks who remain bound by their traditions always see these self-imposed exiles as the worst kind of traitors, and the exiles are often targeted for eradication to the exclusion of all other victims. More than one band of skulks has accidentally engineered its own doom after throwing caution to the wind and exposing its existence to the authorities in an ill-planned but violently passionate attempt to track down such an exile.</p>",
             "blurb": "Male skulk brawler",
             "items": {
+                "weapon->+1 Striking Handwraps of Mighty Blows": {
+                    "name": "+1 Striking Handwraps of Mighty Blows",
+                    "description": "<p>As you invest these embroidered strips of cloth, you must meditate and slowly wrap them around your hands. These handwraps have weapon runes etched into them to give your unarmed attacks the benefits of those runes, making your unarmed attacks work like magic weapons. For example, <em>+1 striking handwraps of mighty blows</em> would give you a +1 item bonus to attack rolls with your unarmed attacks and increase the damage of your unarmed attacks from one weapon die to two (normally 2d4 instead of 1d4, but if your fists have a different weapon damage die or you have other unarmed attacks, use two of that die size instead).</p>\n<p>You can upgrade, add, and transfer runes to and from the handwraps just as you would for a weapon, and you can attach talismans to the handwraps. Treat the handwraps as melee weapons of the brawling group with light Bulk for these purposes. Property runes apply only when they would be applicable to the unarmed attack you're using. For example, a property that must be applied to a slashing weapon wouldn't function when you attacked with a fist, but you would gain its benefits if you attacked with a claw or some other slashing unarmed attack.</p>"
+                },
+                "weapon->Shuriken": {
+                    "name": "Shuriken",
+                    "description": "<p>This \"throwing star\" is a small piece of flat metal with sharp edges, designed to be flung with a flick of the wrist.</p>"
+                },
                 "treasure->Platinum Medal": {
                     "name": "Platinum Medal"
                 },
@@ -2242,6 +2505,9 @@
                 "strike-melee->Red Claw": {
                     "name": "Red Claw",
                     "description": "<p>Red Ruin Stance only</p>"
+                },
+                "strike-ranged->Shuriken": {
+                    "name": "Shuriken"
                 },
                 "action->Camouflaged Step": {
                     "name": "Camouflaged Step",
@@ -2276,6 +2542,10 @@
                 "spellcastingEntry->Domain Spells": {
                     "name": "Domain Spells"
                 },
+                "weapon->Staff of Necromancy": {
+                    "name": "Staff of Necromancy",
+                    "description": "<p>This twisted and grim-looking staff is adorned with hideous skull and bone motifs. While wielding the staff, you gain a +2 circumstance bonus to checks to identify necromancy magic.</p>\n<p><strong>Activate</strong> Cast a Spell</p>\n<hr />\n<p><strong>Effect</strong> You expend a number of charges from the staff to cast a spell from its list.</p>\n<ul>\n<li><strong>Cantrip</strong> @UUID[Compendium.pf2e.spells-srd.Item.mAMEt4FFbdqoRnkN]{Void Warp}</li>\n<li><strong>1st</strong> @UUID[Compendium.pf2e.spells-srd.Item.k34hDOfIIMAxNL4a]{Grim Tendrils}, @UUID[Compendium.pf2e.spells-srd.Item.J7Y7tl0bbdz7TcCc]{Enfeeble}</li>\n<li><strong>2nd</strong> @UUID[Compendium.pf2e.spells-srd.Item.fZPCv2VHuM2yPbC8]{Deafness}, @UUID[Compendium.pf2e.spells-srd.Item.xRgU9rrhmGAgG4Rc]{Peaceful Rest}</li>\n</ul>\n<p><strong>Craft Requirements</strong> Supply one casting of all listed levels of all listed spells.</p>"
+                },
                 "strike-melee->Jaws": {
                     "name": "Jaws"
                 },
@@ -2290,11 +2560,11 @@
                 },
                 "action->Consume Flesh": {
                     "name": "Consume Flesh",
-                    "description": "<p><strong>Requirements</strong> Nhakazarin is adjacent to the corpse of a creature that died within the last hour.</p>\n<hr />\n<p><strong>Effect</strong> Nhakazarin devours a chunk of the corpse and regains [[/r 3d6[healing]]] Hit Points.</p>\n<p>Nhakazarin can regain Hit Points from any given corpse only once.</p>"
+                    "description": "<p><strong>Requirements</strong> Nhakazarin is adjacent to the corpse of a creature that died within the last hour.</p>\n<hr />\n<p><strong>Effect</strong> Nhakazarin devours a chunk of the corpse and regains @Damage[3d6[healing]] Hit Points.</p>\n<p>Nhakazarin can regain Hit Points from any given corpse only once.</p>"
                 },
                 "action->Consume Masterpiece": {
                     "name": "Consume Masterpiece",
-                    "description": "<p><strong>Requirements</strong> Nhakazarin is adjacent to the rotting statue of Belcorra in area <strong>C34</strong></p>\n<hr />\n<p><strong>Effect</strong> Nhakazarin devours a chunk of flesh from the statue and regains [[/r 3d6[healing]]] Hit Points and is @UUID[Compendium.pf2e.conditionitems.Item.nlCjDvLMf2EkV2dl]{Quickened 1} for 1 round. She can use this extra action only to make a jaws Strike or Cast a Spell.</p>\n<p>She can feed from the statue only once each day.</p>"
+                    "description": "<p><strong>Requirements</strong> Nhakazarin is adjacent to the rotting statue of Belcorra in area <strong>C34</strong></p>\n<hr />\n<p><strong>Effect</strong> Nhakazarin devours a chunk of flesh from the statue and regains @Damage[3d6[healing]] Hit Points and is @UUID[Compendium.pf2e.conditionitems.Item.nlCjDvLMf2EkV2dl]{Quickened 1} for 1 round. She can use this extra action only to make a jaws Strike or Cast a Spell.</p>\n<p>She can feed from the statue only once each day.</p>"
                 },
                 "action->Ghoul Fever": {
                     "name": "Ghoul Fever",
@@ -2348,9 +2618,25 @@
                 "spellcastingEntry->Occult Innate Spells": {
                     "name": "Occult Innate Spells"
                 },
+                "weapon->Hand Crossbow": {
+                    "name": "Hand Crossbow",
+                    "description": "<p>Sometimes referred to as an alley bow by rogues or ruffians, this small crossbow fires small bolts that are sometimes used to deliver poison to the target. It's small enough to be shot one-handed, but it still requires two hands to load.</p>"
+                },
+                "weapon->Kukri": {
+                    "name": "Kukri",
+                    "description": "<p>The blade of this foot-long knife curves inward and lacks a cross guard at the hilt.</p>"
+                },
+                "armor->Leather Armor": {
+                    "name": "Leather Armor",
+                    "description": "<p>A mix of flexible and molded boiled leather, a suit of this type of armor provides some protection with maximum flexibility.</p>"
+                },
                 "equipment->Musical Instrument (Virtuoso handheld) (theorbo)": {
                     "name": "Musical Instrument (Virtuoso handheld) (theorbo)",
-                    "description": "<p>Handheld instruments include bagpipes, a small set of chimes, small drums, fiddles and viols, flutes and recorders, small harps, lutes, trumpets, and similarly sized instruments. The GM might rule that an especially large handheld instrument (like a tuba) has greater Bulk. Heavy instruments such as large drums, a full set of chimes, and keyboard instruments are less portable and generally need to be stationary while played. A virtuoso instrument gives a +1 item bonus to Performance checks using that instrument.</p>"
+                    "description": "<p>Handheld instruments include bagpipes, a small set of chimes, small drums, fiddles and viols, flutes and recorders, small harps, lutes, trumpets, and similarly sized instruments. The GM might rule that an especially large handheld instrument (like a tuba) has greater Bulk. Heavy instruments such as large drums, a full set of chimes, and keyboard instruments are less portable and generally need to be stationary while played.</p>\n<p>A virtuoso instrument is more finely made and gives a +1 item bonus to Performance checks using that instrument.</p>"
+                },
+                "consumable->Bolts": {
+                    "name": "Bolts",
+                    "description": "<p>Shorter than traditional arrows but similar in construction, bolts are the ammunition used by crossbows.</p>"
                 },
                 "strike-melee->Kukri": {
                     "name": "Kukri"
@@ -2384,8 +2670,24 @@
                 "spellcastingEntry->Divine Innate Spells": {
                     "name": "Divine Innate Spells"
                 },
+                "weapon->Composite Longbow": {
+                    "name": "Composite Longbow",
+                    "description": "<p>This projectile weapon is made from horn, wood, and sinew laminated together to increase the power of its pull and the force of its projectile. Like all longbows, its great size also increases the bow's range and power. You must use two hands to fire it, and it cannot be used while mounted. Any time an ability is specifically restricted to a longbow, such as Erastil's favored weapon, it also applies to composite longbows unless otherwise stated.</p>"
+                },
+                "weapon->Longsword": {
+                    "name": "Longsword",
+                    "description": "<p>Longswords can be one-edged or two-edged swords. Their blades are heavy and they're between 3 and 4 feet in length.</p>"
+                },
+                "armor->Chain Shirt": {
+                    "name": "Chain Shirt",
+                    "description": "<p>Sometimes called a hauberk, this is a long shirt constructed of the same metal rings as chainmail. However, it is much lighter than chainmail and protects only the torso, upper arms, and upper legs of its wearer.</p>"
+                },
                 "equipment->Nyzuros's Keys": {
                     "name": "Nyzuros's Keys"
+                },
+                "consumable->Arrows": {
+                    "name": "Arrows",
+                    "description": "<p>These projectiles are the ammunition for bows. The shaft of an arrow is made of wood. It is stabilized in flight by fletching at one end and bears a metal head on the other.</p>"
                 },
                 "strike-melee->Longsword": {
                     "name": "Longsword"
@@ -2425,6 +2727,10 @@
             "items": {
                 "spellcastingEntry->Occult Innate Spells": {
                     "name": "Occult Innate Spells"
+                },
+                "weapon->Longsword": {
+                    "name": "Longsword",
+                    "description": "<p>Longswords can be one-edged or two-edged swords. Their blades are heavy and they're between 3 and 4 feet in length.</p>"
                 },
                 "equipment->Research Book": {
                     "name": "Research Book"
@@ -2628,6 +2934,10 @@
                     "name": "+1 Striking Kukri",
                     "description": "<p>The blade of this foot-long knife curves inward and lacks a cross guard at the hilt.</p>"
                 },
+                "weapon->Repeating Hand Crossbow": {
+                    "name": "Repeating Hand Crossbow",
+                    "description": "<p>This handheld crossbow features an ingeniously designed catch mechanism at the top of the flight groove, just in front of the latch, which automatically loads a bolt from a magazine and resets the string each time the weapon is fired. A typical repeating hand crossbow magazine holds five bolts.</p>"
+                },
                 "armor->Chain Shirt": {
                     "name": "Chain Shirt",
                     "description": "<p>Sometimes called a hauberk, this is a long shirt constructed of the same metal rings as chainmail. However, it is much lighter than chainmail and protects only the torso, upper arms, and upper legs of its wearer.</p>"
@@ -2638,6 +2948,13 @@
                 },
                 "equipment->Quara's Key": {
                     "name": "Quara's Key"
+                },
+                "consumable->Repeating Hand Crossbow Magazine": {
+                    "name": "Repeating Hand Crossbow Magazine"
+                },
+                "consumable->Stupor Poison": {
+                    "name": "Stupor Poison",
+                    "description": "<p><strong>Activate</strong> <span class=\"action-glyph\">2</span> Interact</p>\n<p>Stupor poison is a more potent distillation of @UUID[Compendium.pf2e.equipment-srd.Item.zo0ophqfKunJFxZN]{Lethargy Poison}. Further exposure to stupor poison doesn't require the target to attempt additional saving throws; only failing a saving throw against an ongoing exposure can progress its stage.</p>\n<hr />\n<p><strong>Saving Throw</strong> @Check[fortitude|dc:20]</p>\n<p><strong>Maximum Duration</strong> 6 hours</p>\n<p><strong>Stage 1</strong> @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1} and @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} (1 round)</p>\n<p><strong>Stage 2</strong> @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 2} and off-guard (1 round)</p>\n<p><strong>Stage 3</strong> @UUID[Compendium.pf2e.conditionitems.Item.fBnFDH2MTzgFijKf]{Unconscious} with no Perception check to wake up (1 round)</p>\n<p><strong>Stage 4</strong> unconscious with no Perception check to wake up ([[/r 1d6 #hours]]{1d6 hours})</p>"
                 },
                 "strike-melee->Kukri": {
                     "name": "Kukri"
@@ -2740,6 +3057,10 @@
                 "spellcastingEntry->Occult Spontaneous Spells": {
                     "name": "Occult Spontaneous Spells"
                 },
+                "armor->Studded Leather Armor": {
+                    "name": "Studded Leather Armor",
+                    "description": "<p>This leather armor is reinforced with metal studs and sometimes small metal plates, providing most of the flexibility of leather armor with more robust protection.</p>"
+                },
                 "strike-melee->Fangs": {
                     "name": "Fangs"
                 },
@@ -2781,7 +3102,7 @@
                 },
                 "action->Feed on Magic": {
                     "name": "Feed on Magic",
-                    "description": "<p><strong>Requirement</strong> A creature who can cast spells is within 15 feet of Sacuishu</p>\n<hr />\n<p><strong>Effect</strong> Sacuishu feeds on the creature's magic. Sacuishu regains [[/r 2d8[healing]]] Hit Points, and the target must attempt a @Check[will|dc:28] save. The target is then temporarily immune for 1 hour.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The first time the target Casts a Spell before the start of the Sacuishu's next turn, the spell is disrupted unless the target succeeds at a @Check[flat|dc:15] check.</p>\n<p><strong>Failure</strong> As success, but the effect applies the first time the target Casts a Spell within the next minute.</p>\n<p><strong>Critical Failure</strong> As success, but the effect applies each time the target Casts a Spell within the next minute. In addition, Sacuishu doubles the Hit Points it regains</p>"
+                    "description": "<p><strong>Requirement</strong> A creature who can cast spells is within 15 feet of Sacuishu</p>\n<hr />\n<p><strong>Effect</strong> Sacuishu feeds on the creature's magic. Sacuishu regains @Damage[2d8[healing]] Hit Points, and the target must attempt a @Check[will|dc:28] save. The target is then temporarily immune for 1 hour.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The first time the target Casts a Spell before the start of the Sacuishu's next turn, the spell is disrupted unless the target succeeds at a @Check[flat|dc:15] check.</p>\n<p><strong>Failure</strong> As success, but the effect applies the first time the target Casts a Spell within the next minute.</p>\n<p><strong>Critical Failure</strong> As success, but the effect applies each time the target Casts a Spell within the next minute. In addition, Sacuishu doubles the Hit Points it regains</p>"
                 },
                 "action->Go Dark": {
                     "name": "Go Dark",
@@ -2815,6 +3136,10 @@
                 "consumable->Bolts": {
                     "name": "Bolts",
                     "description": "<p>Shorter than traditional arrows but similar in construction, bolts are the ammunition used by crossbows.</p>"
+                },
+                "consumable->Stupor Poison": {
+                    "name": "Stupor Poison",
+                    "description": "<p><strong>Activate</strong> <span class=\"action-glyph\">2</span> Interact</p>\n<p>Stupor poison is a more potent distillation of @UUID[Compendium.pf2e.equipment-srd.Item.zo0ophqfKunJFxZN]{Lethargy Poison}. Further exposure to stupor poison doesn't require the target to attempt additional saving throws; only failing a saving throw against an ongoing exposure can progress its stage.</p>\n<hr />\n<p><strong>Saving Throw</strong> @Check[fortitude|dc:20]</p>\n<p><strong>Maximum Duration</strong> 6 hours</p>\n<p><strong>Stage 1</strong> @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1} and @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} (1 round)</p>\n<p><strong>Stage 2</strong> @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 2} and off-guard (1 round)</p>\n<p><strong>Stage 3</strong> @UUID[Compendium.pf2e.conditionitems.Item.fBnFDH2MTzgFijKf]{Unconscious} with no Perception check to wake up (1 round)</p>\n<p><strong>Stage 4</strong> unconscious with no Perception check to wake up ([[/r 1d6 #hours]]{1d6 hours})</p>"
                 },
                 "strike-melee->Longsword": {
                     "name": "Longsword"
@@ -2885,6 +3210,10 @@
                 "spellcastingEntry->Magic Item Mastery": {
                     "name": "Magic Item Mastery"
                 },
+                "weapon->Longsword": {
+                    "name": "Longsword",
+                    "description": "<p>Longswords can be one-edged or two-edged swords. Their blades are heavy and they're between 3 and 4 feet in length.</p>"
+                },
                 "consumable->Wand of See Invisibility (Level 2)": {
                     "name": "Wand of See Invisibility (Level 2)",
                     "description": "<p>@UUID[Compendium.pf2e.spells-srd.Item.jwK43yKsHTkJQvQ9]{See the Unseen}</p><hr /><p>This baton is about a foot long and contains a single spell. The appearance typically relates to the spell within.</p>\n<p><strong>Activate</strong> Cast a Spell</p>\n<p><strong>Frequency</strong> once per day, plus overcharge</p>\n<hr />\n<p><strong>Effect</strong> You Cast the Spell at the indicated level.</p>\n<p><strong>Craft Requirements</strong> Supply a listed-level casting of the spell.</p>\n<hr />\n<p><em>Note: To create a scroll or wand of a specific spell, drag the spell from the compendium or compendium browser into the inventory of a PC, NPC, or loot actor.</em></p>"
@@ -2934,6 +3263,10 @@
             "items": {
                 "spellcastingEntry->Occult Innate Spells": {
                     "name": "Occult Innate Spells"
+                },
+                "weapon->Battle Axe": {
+                    "name": "Battle Axe",
+                    "description": "<p>These axes are designed explicitly as weapons, rather than tools. They typically weigh less, with a shaft reinforced with metal bands or bolts, and have a sharper blade, making them ideal for chopping limbs rather than wood.</p>"
                 },
                 "strike-melee->Bite": {
                     "name": "Bite"
@@ -2985,6 +3318,13 @@
             "items": {
                 "spellcastingEntry->Occult Innate Spells": {
                     "name": "Occult Innate Spells"
+                },
+                "weapon->Longsword": {
+                    "name": "Longsword",
+                    "description": "<p>Longswords can be one-edged or two-edged swords. Their blades are heavy and they're between 3 and 4 feet in length.</p>"
+                },
+                "equipment->Chalk": {
+                    "name": "Chalk"
                 },
                 "equipment->Writing Slate": {
                     "name": "Writing Slate"
@@ -3038,6 +3378,10 @@
             "items": {
                 "spellcastingEntry->Occult Innate Spells": {
                     "name": "Occult Innate Spells"
+                },
+                "weapon->Longsword": {
+                    "name": "Longsword",
+                    "description": "<p>Longswords can be one-edged or two-edged swords. Their blades are heavy and they're between 3 and 4 feet in length.</p>"
                 },
                 "strike-melee->Bite": {
                     "name": "Bite"
@@ -3210,7 +3554,7 @@
                 },
                 "action->Shadow Spawn": {
                     "name": "Shadow Spawn",
-                    "description": "<p>When a creature's shadow is pulled free by Steal Shadow, it becomes a @UUID[Compendium.pf2e.pathfinder-bestiary.Actor.XrmHgbKgcHDi4OnK]{Shadow Spawn} under the command of the shadow that created it. This shadow spawn doesn't have Steal Shadow. If the creature the shadow spawn was pulled from dies, the shadow spawn becomes a full-fledged, autonomous shadow. If the creature recovers from its @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeeblement}, its shadow returns to it and the shadow spawn is extinguished.</p>"
+                    "description": "<p>When a creature's shadow is pulled free by Steal Shadow, it becomes a @UUID[Compendium.pf2e.pathfinder-monster-core.Actor.clzHAfegb9Rn6DOe]{Shadow Spawn} under the command of the shadow that created it. This shadow spawn doesn't have Steal Shadow. If the creature the shadow spawn was pulled from dies, the shadow spawn becomes a full-fledged, autonomous shadow. If the creature recovers from its @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeeblement}, its shadow returns to it and the shadow spawn is extinguished.</p>"
                 },
                 "action->Slink in Shadows": {
                     "name": "Slink in Shadows",
@@ -3239,7 +3583,7 @@
                 },
                 "action->Feed on Magic": {
                     "name": "Feed on Magic",
-                    "description": "<p><strong>Requirement</strong> A creature who can cast spells is within 15 feet of the spellvoid</p>\n<hr />\n<p><strong>Effect</strong> The spellvoid feeds on the creature's magic. The spellvoid regains [[/r 2d8[healing]]] Hit Points, and the target must attempt a @Check[will|dc:24] save.</p>\n<p>The target is then temporarily immune for 1 hour.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The first time the target Casts a Spell before the start of the spellvoid's next turn, the spell is disrupted unless the target succeeds at a @Check[flat|dc:15] check.</p>\n<p><strong>Failure</strong> As success, but the effect applies the first time the target Casts a Spell within the next minute.</p>\n<p><strong>Critical Failure</strong> As success, but the effect applies each time the target Casts a Spell within the next minute. In addition, the spellvoid doubles the Hit Points it regains.</p>"
+                    "description": "<p><strong>Requirement</strong> A creature who can cast spells is within 15 feet of the spellvoid</p>\n<hr />\n<p><strong>Effect</strong> The spellvoid feeds on the creature's magic. The spellvoid regains @Damage[2d8[healing]] Hit Points, and the target must attempt a @Check[will|dc:24] save.</p>\n<p>The target is then temporarily immune for 1 hour.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The first time the target Casts a Spell before the start of the spellvoid's next turn, the spell is disrupted unless the target succeeds at a @Check[flat|dc:15] check.</p>\n<p><strong>Failure</strong> As success, but the effect applies the first time the target Casts a Spell within the next minute.</p>\n<p><strong>Critical Failure</strong> As success, but the effect applies each time the target Casts a Spell within the next minute. In addition, the spellvoid doubles the Hit Points it regains.</p>"
                 },
                 "action->Go Dark": {
                     "name": "Go Dark",
@@ -3284,6 +3628,26 @@
                 "spellcastingEntry->Divine Innate Spells": {
                     "name": "Divine Innate Spells"
                 },
+                "weapon->Composite Longbow": {
+                    "name": "Composite Longbow",
+                    "description": "<p>This projectile weapon is made from horn, wood, and sinew laminated together to increase the power of its pull and the force of its projectile. Like all longbows, its great size also increases the bow's range and power. You must use two hands to fire it, and it cannot be used while mounted. Any time an ability is specifically restricted to a longbow, such as Erastil's favored weapon, it also applies to composite longbows unless otherwise stated.</p>"
+                },
+                "weapon->Longsword": {
+                    "name": "Longsword",
+                    "description": "<p>Longswords can be one-edged or two-edged swords. Their blades are heavy and they're between 3 and 4 feet in length.</p>"
+                },
+                "armor->Breastplate": {
+                    "name": "Breastplate",
+                    "description": "<p>Though referred to as a breastplate, this type of armor consists of several pieces of plate or half-plate armor that protect the torso, chest, neck, and sometimes the hips and lower legs. It strategically grants some of the protection of plate while allowing greater flexibility and speed.</p>"
+                },
+                "equipment->100 feet of Erinys-Hair Rope": {
+                    "name": "100 feet of Erinys-Hair Rope",
+                    "description": "<p>100 feet of rope.</p>"
+                },
+                "consumable->Arrows": {
+                    "name": "Arrows",
+                    "description": "<p>These projectiles are the ammunition for bows. The shaft of an arrow is made of wood. It is stabilized in flight by fletching at one end and bears a metal head on the other.</p>"
+                },
                 "treasure->Fragment of Urevian's Pendant": {
                     "name": "Fragment of Urevian's Pendant"
                 },
@@ -3327,6 +3691,10 @@
             "items": {
                 "spellcastingEntry->Divine Innate Spells": {
                     "name": "Divine Innate Spells"
+                },
+                "weapon->Hellforged Glaive": {
+                    "name": "Hellforged Glaive",
+                    "description": "<p>This polearm consists of a long, single-edged blade on the end of a 7-foot pole. It is extremely effective at delivering lethal cuts at a distance.</p>"
                 },
                 "strike-melee->Hellforged Glaive": {
                     "name": "Hellforged Glaive"
@@ -3375,6 +3743,10 @@
                 "spellcastingEntry->Divine Innate Spells": {
                     "name": "Divine Innate Spells"
                 },
+                "weapon->Kukri": {
+                    "name": "Kukri",
+                    "description": "<p>The blade of this foot-long knife curves inward and lacks a cross guard at the hilt.</p>"
+                },
                 "strike-melee->Kukri": {
                     "name": "Kukri"
                 },
@@ -3394,7 +3766,7 @@
                 },
                 "action->Wicked Bite": {
                     "name": "Wicked Bite",
-                    "description": "<p><strong>Requirements</strong> The urdefhan damaged a creature with a jaws Strike on its last action</p>\n<hr />\n<p><strong>Effect</strong> The urdefhan maintains contact, turning the creature's flesh translucent around the site of the injury. The urdefhan chooses one of two options, each of which requires a fortitude save. If the jaws Strike was a critical hit, the creature suffers both effects, using the same save result for both.</p>\n<ul>\n<li><strong>Drain Blood</strong> @Check[fortitude|dc:26] The urdefhan drinks some of the creature's blood. On a failed save, the creature is @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 1} and the urdefhan regains [[/r 10[healing]]]{10 HP} (or, on a critical failure, it's @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 2} and the urdefhan regains [[/r 20[healing]]]{20 HP}).</li>\n<li><strong>Drain Vitality</strong> (necromancy) @Check[fortitude|dc:26|traits:necromancy] The urdefhan draws out some of the creature's vital essence. The creature becomes @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 1} for 1 hour on a failed save (or @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 2} for 1 hour on a critical failure).</li>\n</ul>"
+                    "description": "<p><strong>Requirements</strong> The urdefhan damaged a creature with a jaws Strike on its last action</p>\n<hr />\n<p><strong>Effect</strong> The urdefhan maintains contact, turning the creature's flesh translucent around the site of the injury. The urdefhan chooses one of two options, each of which requires a fortitude save. If the jaws Strike was a critical hit, the creature suffers both effects, using the same save result for both.</p>\n<ul>\n<li><strong>Drain Blood</strong> @Check[fortitude|dc:26] The urdefhan drinks some of the creature's blood. On a failed save, the creature is @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 1} and the urdefhan regains @Damage[10[healing]] HP (or, on a critical failure, it's @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 2} and the urdefhan regains @Damage[20[healing]] HP).</li>\n<li><strong>Drain Vitality</strong> (necromancy) @Check[fortitude|dc:26|traits:necromancy] The urdefhan draws out some of the creature's vital essence. The creature becomes @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 1} for 1 hour on a failed save (or @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 2} for 1 hour on a critical failure).</li>\n</ul>"
                 }
             }
         },
@@ -3409,6 +3781,14 @@
                 "weapon->Necrotic Bomb (Moderate)": {
                     "name": "Necrotic Bomb (Moderate)",
                     "description": "<p><strong>Activate</strong> <span class=\"action-glyph\">1</span> Strike</p>\n<hr />\n<p>Necrotic bombs combine reagents most people consider disgusting at best and unholy at worst, creating a life-sucking miasma upon contact with air. A necrotic bomb deals the listed void damage and splash damage, and it sickens the primary target on a critical hit. This damage harms only living creatures.</p>\n<hr />\n<p>You gain a +1 item bonus to attack rolls.</p>\n<p>The bomb deals 2d6 void damage and 2 void splash damage. On a critical hit, the target is @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 2}.</p>"
+                },
+                "weapon->Shauth Blade": {
+                    "name": "Shauth Blade",
+                    "description": "<p>These strange curved blades are jagged and deadly weapons made from the alchemically strengthened teeth of dead urdefhans. Each weapon is typically named for the urdefhan whose teeth were forged into the weapon, which are often carried (and revered) by that urdefhan's descendants. Magical shauth blades allow an urdefhan wielder to channel their Wicked Bite ability through shauth blade Strikes.</p>"
+                },
+                "armor->Leather Armor": {
+                    "name": "Leather Armor",
+                    "description": "<p>A mix of flexible and molded boiled leather, a suit of this type of armor provides some protection with maximum flexibility.</p>"
                 },
                 "strike-melee->Shauth Blade": {
                     "name": "Shauth Blade"
@@ -3436,7 +3816,7 @@
                 },
                 "action->Wicked Bite": {
                     "name": "Wicked Bite",
-                    "description": "<p><strong>Requirements</strong> The urdefhan damaged a creature with a jaws Strike on its last action</p>\n<hr />\n<p><strong>Effect</strong> The urdefhan maintains contact, turning the creature's flesh translucent around the site of the injury. The urdefhan chooses one of two options, each of which requires a fortitude save. If the jaws Strike was a critical hit, the creature suffers both effects, using the same save result for both.</p>\n<ul>\n<li><strong>Drain Blood</strong> @Check[fortitude|dc:24] The urdefhan drinks some of the creature's blood. On a failed save, the creature is @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 1} and the urdefhan regains [[/r 5[healing]]]{5 HP} (or, on a critical failure, it's @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 2} and the urdefhan regains [[/r 10[healing]]]{10 HP}).</li>\n<li><strong>Drain Vitality</strong> (necromancy) @Check[fortitude|dc:24|traits:necromancy] The urdefhan draws out some of the creature's vital essence. The creature becomes @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 1} for 1 hour on a failed save (or @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 2} for 1 hour on a critical failure).</li>\n</ul>"
+                    "description": "<p><strong>Requirements</strong> The urdefhan damaged a creature with a jaws Strike on its last action</p>\n<hr />\n<p><strong>Effect</strong> The urdefhan maintains contact, turning the creature's flesh translucent around the site of the injury. The urdefhan chooses one of two options, each of which requires a fortitude save. If the jaws Strike was a critical hit, the creature suffers both effects, using the same save result for both.</p>\n<ul>\n<li><strong>Drain Blood</strong> @Check[fortitude|dc:24] The urdefhan drinks some of the creature's blood. On a failed save, the creature is @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 1} and the urdefhan regains @Damage[5[healing]] HP (or, on a critical failure, it's @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 2} and the urdefhan regains @Damage[10[healing]] HP).</li>\n<li><strong>Drain Vitality</strong> (necromancy) @Check[fortitude|dc:24|traits:necromancy] The urdefhan draws out some of the creature's vital essence. The creature becomes @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 1} for 1 hour on a failed save (or @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 2} for 1 hour on a critical failure).</li>\n</ul>"
                 }
             }
         },
@@ -3447,6 +3827,14 @@
             "items": {
                 "spellcastingEntry->Divine Innate Spells": {
                     "name": "Divine Innate Spells"
+                },
+                "weapon->Shauth Lash": {
+                    "name": "Shauth Lash",
+                    "description": "<p>This metal chain bears hook-like barbs made of alchemically strengthened urdefhan teeth. Magical shauth lashes have the same ability to channel an urdefhan wielder's Wicked Bite as magical shauth blades, and urdefhans hold these weapons with the same reverence as they do shauth blades.</p>"
+                },
+                "armor->Chain Shirt": {
+                    "name": "Chain Shirt",
+                    "description": "<p>Sometimes called a hauberk, this is a long shirt constructed of the same metal rings as chainmail. However, it is much lighter than chainmail and protects only the torso, upper arms, and upper legs of its wearer.</p>"
                 },
                 "strike-melee->Shauth Lash": {
                     "name": "Shauth Lash"
@@ -3471,7 +3859,7 @@
                 },
                 "action->Wicked Bite": {
                     "name": "Wicked Bite",
-                    "description": "<p><strong>Requirements</strong> The urdefhan damaged a creature with a jaws Strike on its last action</p>\n<hr />\n<p><strong>Effect</strong> The urdefhan maintains contact, turning the creature's flesh translucent around the site of the injury. The urdefhan chooses one of two options, each of which requires a fortitude save. If the jaws Strike was a critical hit, the creature suffers both effects, using the same save result for both.</p>\n<ul>\n<li><strong>Drain Blood</strong> @Check[fortitude|dc:25] The urdefhan drinks some of the creature's blood. On a failed save, the creature is @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 1} and the urdefhan regains [[/r 10[healing]]]{10 HP} (or, on a critical failure, it's @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 2} and the urdefhan regains [[/r 20[healing]]]{20 HP}).</li>\n<li><strong>Drain Vitality</strong> (necromancy) @Check[fortitude|dc:25|traits:necromancy] The urdefhan draws out some of the creature's vital essence. The creature becomes @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 1} for 1 hour on a failed save (or @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 2} for 1 hour on a critical failure).</li>\n</ul>"
+                    "description": "<p><strong>Requirements</strong> The urdefhan damaged a creature with a jaws Strike on its last action</p>\n<hr />\n<p><strong>Effect</strong> The urdefhan maintains contact, turning the creature's flesh translucent around the site of the injury. The urdefhan chooses one of two options, each of which requires a fortitude save. If the jaws Strike was a critical hit, the creature suffers both effects, using the same save result for both.</p>\n<ul>\n<li><strong>Drain Blood</strong> @Check[fortitude|dc:25] The urdefhan drinks some of the creature's blood. On a failed save, the creature is @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 1} and the urdefhan regains @Damage[10[healing]] HP (or, on a critical failure, it's @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 2} and the urdefhan regains @Damage[20[healing]] HP).</li>\n<li><strong>Drain Vitality</strong> (necromancy) @Check[fortitude|dc:25|traits:necromancy] The urdefhan draws out some of the creature's vital essence. The creature becomes @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 1} for 1 hour on a failed save (or @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 2} for 1 hour on a critical failure).</li>\n</ul>"
                 },
                 "action->Grab": {
                     "name": "Grab"
@@ -3532,6 +3920,14 @@
             "publicNotes": "<p>A gug's most horrid feature is its barrel-shaped head, which splits vertically to reveal numerous rows of sharp, yellow teeth and an open throat. Its eyes on either side of its head-jaw are small but keen. Bony ridges protect its eyes from the frantic flailing of its prey, as it prefers meals of raw and writhing meat over fungi and molds. It grips said prey with powerful arms that split at the elbow into a pair of forearms, giving it four clawed paws. These monstrous brutes are covered with shaggy black fur, often crusted with blood and gore.</p>\n<p>Although gugs may seem bestial, they have keen and wicked intellects. Gugs lair far underground, but they sometimes come to the surface to hunt during dark nights, either alone or in small groups. As they possess voracious appetites, most gugs consume the creatures they catch, but some instead kidnap their victims and retreat below the surface, leaving only a lingering stench and odd, clawed paw-prints. Victims are taken to rancid lairs marked with strange runes and sacrificed to the gugs' wicked gods of blood, darkness, and nightmares. Dire rumors tell of lightless gug cities made of titanic blocks of stone far underground, where powerful gug leaders preach their vile doctrines to mobs of howling gugs.</p>\n<p>Gugs have a strange relationship with ghouls, which seems to date from their shared origin in a distant subterranean world. Gugs live in fear of ghouls, despite towering over them; however, this strange fear doesn't apply to ghasts, whom gugs consume as voraciously as they do other creatures.</p>\n<p>Gugs stand 16 feet tall and weigh 2,000 pounds, although they have an eerie, graceful gait that belies their immense size. Their light step and ability to squeeze through very small crannies makes gugs common bogeymen in tales of strange disappearances or bloody massacres.</p>\n<p>Some particularly bloodthirsty gugs gain awful powers as gifts from their eldritch patrons. These monsters are known as savants, are never less than 12th level in power, and gain several occult innate spells. Though each savant's precise mix of spells varies, normally, these spells grant invisibility, offer power to manipulate and change rock, or invoke awful and destructive energies upon living flesh.</p>",
             "blurb": "Male gug (Pathfinder Bestiary 198)",
             "items": {
+                "equipment->Crimson Fulcrum Lens": {
+                    "name": "Crimson Fulcrum Lens",
+                    "description": "<p>This concave lens has a drifting crimson cloud resembling slowly swirling blood within it. While you have the <em>Crimson Fulcrum Lens</em> invested, you seethe with malevolent fury you can barely contain. You gain a +2 item bonus to saving throws against fear effects and a +2 item bonus to your melee Strike damage (this increases to a +4 item bonus to damage if the melee Strike is a jaws attack). You can also activate the lens in the following ways.</p>\n<p>@UUID[Compendium.pf2e.equipment-effects.Item.ytqvHyF0oMKbo65P]{Effect: Crimson Fulcrum Lens}</p>\n<hr />\n<p><strong>Activate</strong> <span class=\"action-glyph\">2</span> Interact</p>\n<p><strong>Frequency</strong> once per day</p>\n<p><strong>Effect</strong> You grasp the <em>Crimson Fulcrum Lens</em> in one hand and make a Strike that doesn't require that hand. The Strike deals an additional 1d8 precision damage (or 2d8 precision damage if you make a jaws Strike) and doesn't count toward your multiple attack penalty.</p>\n<hr />\n<p><strong>Activate</strong> <span class=\"action-glyph\">2</span> Interact (attack, possession)</p>\n<p><strong>Effect</strong> While grasping the lens, make a melee spell attack roll with a modifier of [[/r 1d20+18]]{+18}. On a hit, you force the splinter of Nhimbaloth's essence from the lens to possess the target. You're no longer invested in the lens, and the target gains the benefits as though it had invested the lens but can't activate the lens's other abilities. This effect is permanent, but it can be ended by any effect that removes a possession effect. The lens doesn't have any magical abilities until the possession effect ends; when it does, the essence returns to the lens.</p>"
+                },
+                "effect->Effect: Crimson Fulcrum Lens": {
+                    "name": "Effect: Crimson Fulcrum Lens",
+                    "description": "<p>Granted by @UUID[Compendium.pf2e.equipment-srd.Item.yAqGhT0GuZrkvWZl]{Crimson Fulcrum Lens}</p>\n<p>You gain a +2 item bonus to saving throws against fear effects and a +2 item bonus to your melee Strike damage (this increases to a +4 item bonus to damage if the melee Strike is a jaws attack).</p>"
+                },
                 "strike-melee->Jaws": {
                     "name": "Jaws"
                 },
@@ -3606,7 +4002,7 @@
                 },
                 "action->Wicked Bite": {
                     "name": "Wicked Bite",
-                    "description": "<p><strong>Requirements</strong> Vischari damaged a creature with a jaws Strike on her last action</p>\n<hr />\n<p><strong>Effect</strong> Vischari maintains contact, turning the creature's flesh translucent around the site of the injury. Vischari chooses one of two options, each of which requires the target to attempt a @Check[fortitude|dc:25] save. If her jaws Strike was a critical hit, the creature suffers both effects, using the same save result for both.</p>\n<ul>\n<li><strong>Drain Blood</strong> Vischari drinks some of the creature's blood. On a failed save, the creature is @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 1} and Vischari regains [[/r 10[healing]]]{10 HP} (on a critical failure, it's @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 2} and Vischari regains [[/r 20[healing]]]{20 HP}).</li>\n<li><strong>Drain Vitality</strong> Vischari draws out some of the creature's vital essence. The creature becomes @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 1} for 1 hour on a failed save (or @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 2} for 1 hour on a critical failure).</li>\n</ul>"
+                    "description": "<p><strong>Requirements</strong> Vischari damaged a creature with a jaws Strike on her last action</p>\n<hr />\n<p><strong>Effect</strong> Vischari maintains contact, turning the creature's flesh translucent around the site of the injury. Vischari chooses one of two options, each of which requires the target to attempt a @Check[fortitude|dc:25] save. If her jaws Strike was a critical hit, the creature suffers both effects, using the same save result for both.</p>\n<ul>\n<li><strong>Drain Blood</strong> Vischari drinks some of the creature's blood. On a failed save, the creature is @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 1} and Vischari regains @Damage[10[healing]] HP (on a critical failure, it's @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 2} and Vischari regains @Damage[20[healing]] HP).</li>\n<li><strong>Drain Vitality</strong> Vischari draws out some of the creature's vital essence. The creature becomes @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 1} for 1 hour on a failed save (or @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 2} for 1 hour on a critical failure).</li>\n</ul>"
                 }
             }
         },
@@ -3721,7 +4117,7 @@
                 },
                 "action->Feed on Fear": {
                     "name": "Feed on Fear",
-                    "description": "<p><strong>Frequency</strong> once per round</p>\n<p><strong>Requirement</strong> An enemy is affected by a fear effect or has the frightened or dying condition, and is within 25 feet of the voidglutton</p>\n<hr />\n<p><strong>Effect</strong> The voidglutton feeds on the creature's terror. It regains [[/r 3d4[healing]]] Hit Points and its Glow reignites if it had been extinguished.</p>\n<p>It cannot use Consume Light again for [[/br 1d4 #Recharge Consume Light]]{1d4 rounds}, as it is too glutted on fear to suppress its Glow.</p>"
+                    "description": "<p><strong>Frequency</strong> once per round</p>\n<p><strong>Requirement</strong> An enemy is affected by a fear effect or has the frightened or dying condition, and is within 25 feet of the voidglutton</p>\n<hr />\n<p><strong>Effect</strong> The voidglutton feeds on the creature's terror. It regains @Damage[3d4[healing]] Hit Points and its Glow reignites if it had been extinguished.</p>\n<p>It cannot use Consume Light again for [[/br 1d4 #Recharge Consume Light]]{1d4 rounds}, as it is too glutted on fear to suppress its Glow.</p>"
                 },
                 "action->Magic Immunity": {
                     "name": "Magic Immunity",
@@ -3796,7 +4192,7 @@
                 },
                 "action->Instinctual Tinker": {
                     "name": "Instinctual Tinker",
-                    "description": "<p>The morlock tinkers with an adjacent construct or mechanical hazard. They attempt a @Check[crafting|defense:fortitude] check against the construct's or hazard's Fortitude DC. The morlock can't succeed if the target's level is more than double the morlock's.</p>\n<hr />\n<p><strong>Critical Success</strong> The target gains [[/r 4d6[healing]]] Hit Points and a +1 circumstance bonus to attack rolls for 1 minute.</p>\n<p><strong>Success</strong> The target gains [[/r 2d6[healing]]] Hit Points.</p>\n<p><strong>Critical Failure</strong> The morlock injures itself, taking [[/r 2d6]]{2d6 damage} (typically bludgeoning, piercing, or slashing, but potentially a different type at the GM's discretion).</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.TEzLEXBZzNCp6flg]{Effect: Instinctual Tinker (Critical Success)}</p>"
+                    "description": "<p>The morlock tinkers with an adjacent construct or mechanical hazard. They attempt a @Check[crafting|defense:fortitude] check against the construct's or hazard's Fortitude DC. The morlock can't succeed if the target's level is more than double the morlock's.</p>\n<hr />\n<p><strong>Critical Success</strong> The target gains @Damage[4d6[healing]] Hit Points and a +1 circumstance bonus to attack rolls for 1 minute.</p>\n<p><strong>Success</strong> The target gains @Damage[2d6[healing]] Hit Points.</p>\n<p><strong>Critical Failure</strong> The morlock injures itself, taking @Damage[2d6[untyped]] damage (typically bludgeoning, piercing, or slashing, but potentially a different type at the GM's discretion).</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.TEzLEXBZzNCp6flg]{Effect: Instinctual Tinker (Critical Success)}</p>"
                 },
                 "action->Leap Attack": {
                     "name": "Leap Attack",
@@ -3847,7 +4243,7 @@
                 },
                 "action->Feed on Fear": {
                     "name": "Feed on Fear",
-                    "description": "<p><strong>Requirement</strong> An enemy is under a fear effect or @UUID[Compendium.pf2e.conditionitems.Item.yZRUzMqrMmfLu0V1]{Dying} within 15 feet of the will-o'-wisp.</p>\n<hr />\n<p><strong>Effect</strong> The will-o'wisp feeds on the creature's terror. It regains [[/r 2d4[healing]]] Hit Points, and if it has Gone Dark, its glow reignites.</p>\n<p>A will-o'-wisp can take this action only once per round.</p>"
+                    "description": "<p><strong>Requirement</strong> An enemy is under a fear effect or @UUID[Compendium.pf2e.conditionitems.Item.yZRUzMqrMmfLu0V1]{Dying} within 15 feet of the will-o'-wisp.</p>\n<hr />\n<p><strong>Effect</strong> The will-o'wisp feeds on the creature's terror. It regains @Damage[2d4[healing]] Hit Points, and if it has Gone Dark, its glow reignites.</p>\n<p>A will-o'-wisp can take this action only once per round.</p>"
                 },
                 "action->Go Dark": {
                     "name": "Go Dark",
@@ -3909,6 +4305,14 @@
                 "spellcastingEntry->Bloodline Spells": {
                     "name": "Bloodline Spells"
                 },
+                "weapon->Starknife": {
+                    "name": "Starknife",
+                    "description": "<p>From a central metal ring, four tapering metal blades extend like points on a compass rose. When gripping a starknife from the center, the wielder can use it as a melee weapon. It can also be thrown short distances.</p>"
+                },
+                "equipment->Harrow Fortune-Telling Deck": {
+                    "name": "Harrow Fortune-Telling Deck",
+                    "description": "<p>Used by gamblers and seers alike, this deck of cards comes in several varieties.</p>\n<hr />\n<p>Common harrow decks are made from higher-quality paper and feature illustrations-harrow readers typically use these decks.</p>"
+                },
                 "equipment->Religious Symbol (Silver)": {
                     "name": "Religious Symbol (Silver)",
                     "description": "<p>This piece of wood or silver is emblazoned with an image representing a deity. Some divine spellcasters, such as clerics, can use a religious symbol of their deity as a divine focus to use certain abilities and cast some spells. A religious symbol must be held in one hand to use it.</p>"
@@ -3958,6 +4362,10 @@
             "items": {
                 "spellcastingEntry->Occult Innate Spells": {
                     "name": "Occult Innate Spells"
+                },
+                "weapon->Kukri": {
+                    "name": "Kukri",
+                    "description": "<p>The blade of this foot-long knife curves inward and lacks a cross guard at the hilt.</p>"
                 },
                 "treasure->Leng Ruby": {
                     "name": "Leng Ruby"
