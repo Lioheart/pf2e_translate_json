@@ -3,9 +3,9 @@ import os
 import pathlib
 import shutil
 import zipfile
+from io import BytesIO
 from urllib.request import urlretrieve
 
-import plyvel
 import requests
 
 LORE_NAMES = [
@@ -28,75 +28,36 @@ LORE_NAMES = [
 ]
 
 
-def merge_folders(src_prefix, dest_folder):
-    # Utwórz folder docelowy, jeśli nie istnieje
-    os.makedirs(dest_folder, exist_ok=True)
-
-    # Lista wszystkich folderów w bieżącym katalogu
-    for folder_name in os.listdir('.'):
-        # Sprawdź, czy nazwa folderu zaczyna się od określonego prefixu
-        if folder_name.startswith(src_prefix) and os.path.isdir(folder_name):
-            # Skopiuj całą zawartość bieżącego folderu do folderu docelowego
-            for item in os.listdir(folder_name):
-                src_path = os.path.join(folder_name, item)
-                dest_path = os.path.join(dest_folder, item)
-
-                if os.path.isdir(src_path):
-                    shutil.copytree(src_path, dest_path, dirs_exist_ok=True)
-                else:
-                    shutil.copy2(src_path, dest_path)
-
-    print(f"Wszystkie foldery zaczynające się od '{src_prefix}' zostały połączone w '{dest_folder}'")
-
-
-def remove_all_folders_in_current_directory():
-    current_directory = os.getcwd()
-
-    for item in os.listdir(current_directory):
-        item_path = os.path.join(current_directory, item)
-
-        if os.path.isdir(item_path):
-            shutil.rmtree(item_path)
-            print(f"Usunięto folder: {item_path}")
-
 def clean():
     list_of_files = [
         "module.json",
         "module_1.json",
         "module_2.json",
-        "module_3.json",
-        "module_4.json",
-        "module_5.json",
-        "module_6.json",
-        "module_7.json",
-        "module_8.json",
-        "module_9.json",
         "system.json"
     ]
     for file_name in list_of_files:
         if os.path.exists(file_name):
             os.remove(file_name)
 
-    remove_all_folders_in_current_directory()
 
-
-def read_leveldb_to_json(leveldb_path):
-    if not os.path.exists(f'{leveldb_path.split("/")[0]}/output'):
-        os.mkdir(f'{leveldb_path.split("/")[0]}/output')
-    for folder in os.listdir(leveldb_path):
-        folder_path = os.path.join(leveldb_path, folder)
-
-        if os.path.isdir(folder_path):
-            db = plyvel.DB(folder_path, create_if_missing=False)
-            data = []
-            for key, value in db:
-                if value is not None:
-                    data.append(json.loads(value))
-
-            db.close()
-
-            with open(f'{leveldb_path.split("/")[0]}/output/{folder}.json', 'w', encoding='utf-8') as f:
-                json.dump(data, f, indent=2)
+# def read_leveldb_to_json(leveldb_path, output_json_path):
+#     # Otwórz bazę danych LevelDB
+#     db = plyvel.DB(leveldb_path, create_if_missing=False)
+#
+#     # Inicjalizuj słownik do przechowywania danych
+#     data = {}
+#
+#     # Iteruj przez wszystkie elementy w bazie danych
+#     for key, value in db:
+#         # Zakładamy, że klucze i wartości są zakodowane jako UTF-8
+#         data[key.decode('utf-8')] = value.decode('utf-8')
+#
+#     # Zamknij bazę danych
+#     db.close()
+#
+#     # Zapisz dane do pliku JSON
+#     with open(output_json_path, 'w', encoding='utf-8') as f:
+#         json.dump(data, f, ensure_ascii=False, indent=4)
 
 
 def exclude_empty_prerequisites(input_dict):
@@ -210,24 +171,21 @@ def process_files(folder, version, type_system):
 
                 keys = compendium.keys()
                 print('Klucze pliku JSON:', list(keys))
-                if 'flags' not in keys and type_system == 'system':
+                if '_id' not in keys and type_system == 'system':
+                    print('Inny plik, pomiń')
                     shutil.copy(file_path, version)
                     continue
 
                 # Dla folderów
-                # if 'color' in keys:
-                #     continue
+                if 'color' in keys:
+                    continue
                 try:
-                    name = compendium['flags']['core']['sourceId'].split('.')
-                    new_name = fr'{version}/{name[1]}.{name[2]}.json'
+                    name = compendium['_stats']['compendiumSource'].split('.')
+                    new_name = fr'{version}\{name[1]}.{name[2]}.json'
                 except KeyError:
-                    new_name = fr'{version}/pf2e.{file}'
-                except IndexError:
-                    new_name = fr'{version}/pf2e.{file}'
+                    new_name = fr'{version}\pf2e.{file}'
                 if type_system.startswith('pf2e'):
-                    new_name = fr'{version}/{type_system}.{file}'
-                if type_system.startswith('pf2e-animal-companions'):
-                    new_name = fr'{version}/{type_system}.{file}'
+                    new_name = fr'{version}\{type_system}.{file}'
                 print('Nowy plik:', new_name)
                 print()
 
@@ -245,13 +203,6 @@ def process_files(folder, version, type_system):
                     for new_data in data_folder:
                         name = new_data["name"]
                         transifex_dict["folders"].update({name: name})
-                elif 'color' in keys:
-                    transifex_dict = {
-                        "label": file.split('.')[0].title(),
-                        "folders": {},
-                        "entries": {},
-                        "mapping": {}
-                    }
                 else:
                     transifex_dict = {
                         "label": file.split('.')[0].title(),
@@ -285,11 +236,6 @@ def process_files(folder, version, type_system):
                 flag = []
                 for new_data in data:
                     name = new_data["name"]
-                    # Dla folderów
-                    if 'color' in new_data.keys():
-                        transifex_dict["folders"].update({name: name})
-                        continue
-
                     # Dla Kompendium bez opisu
                     if 'items' in keys:
                         transifex_dict["entries"].update({name: {}})
@@ -311,8 +257,7 @@ def process_files(folder, version, type_system):
                             transifex_dict["entries"][name]['pages'][result['name']].update(
                                 {"text": result['text']['content']})
 
-                    elif 'permission' in keys and type_system not in ['pf2e-thaum-vuln', 'pf2e-exploration-effects']:
-                        print(type_system)
+                    elif 'permission' in keys:
                         transifex_dict["entries"].update({name: {}})
                         transifex_dict["entries"][name].update({"name": name})
                         transifex_dict["entries"][name].update({"pages": {}})
@@ -334,19 +279,14 @@ def process_files(folder, version, type_system):
                     elif 'items' not in keys:
                         transifex_dict["entries"].update({name: {}})
                         transifex_dict["entries"][name].update({"name": name})
-                        try:
-                            if not new_data['system']['description']['value'].startswith('<p>@Localize'):
-                                transifex_dict["entries"][name].update(
-                                    {"description": new_data['system']['description']['value']})
-                        except KeyError:
-                            continue
+                        if not new_data['system']['description']['value'].startswith('<p>@Localize'):
+                            transifex_dict["entries"][name].update(
+                                {"description": new_data['system']['description']['value']})
 
                     # ====================================================================================================
                     # ---GM Note---
                     try:
-                        if type_system == 'pf2e-ranged-combat':
-                            pass
-                        else:
+                        if new_data['system']['description']['gm']:
                             transifex_dict["entries"][name].update({"gmNote": new_data['system']['description']['gm']})
                             flag.append('gm')
                     except KeyError:
@@ -360,10 +300,7 @@ def process_files(folder, version, type_system):
                         )
 
                     # ---Rules---
-                    try:
-                        transifex_dict["entries"][name].update({"rules": {}})
-                    except KeyError:
-                        pass
+                    transifex_dict["entries"][name].update({"rules": {}})
                     rule_id = 0
                     try:
                         for rules in new_data['system']['rules']:
@@ -779,6 +716,8 @@ def process_files(folder, version, type_system):
                                     {"primarycheck": new_data['system']['ritual']['primary']['check']})
                         except KeyError:
                             pass
+                        except TypeError:
+                            pass
 
                         # Secondary check
                         try:
@@ -786,6 +725,8 @@ def process_files(folder, version, type_system):
                                 transifex_dict["entries"][name].update(
                                     {"secondarycheck": new_data['system']['ritual']['secondary']['checks']})
                         except KeyError:
+                            pass
+                        except TypeError:
                             pass
 
                         # Heightening
@@ -829,254 +770,108 @@ def process_files(folder, version, type_system):
                 transifex_dict = remove_empty_values(transifex_dict)
                 transifex_dict = sort_entries(transifex_dict)
                 with open(new_name, "w") as outfile:
-                    json.dump(transifex_dict, outfile, indent=4, ensure_ascii=False)
+                    json.dump(transifex_dict, outfile, indent=4)
 
                 dict_key.append(f'{compendium.keys()}')
 
 
-clean()
 # === === === === === === === === === === === === === === === === === === === === === === === === === === === === ===
 # Ścieżka do pliku z wersją systemu
-# sys_url = "https://github.com/foundryvtt/pf2e/releases/latest/download/system.json"
-#
-# path, headers = urlretrieve(sys_url, 'system.json')
-# version = json.loads(open('system.json', 'r', encoding='utf-8').read())["version"]
-# zip_url = "https://github.com/foundryvtt/pf2e/releases/latest/download/json-assets.zip"
-# extract_folder = 'pack'
-# print()
-# print("*** Wersja modułu PF2E: ", version, " ***")
-#
-# zip_filename = "json-assets.zip"
-#
-# if create_version_directory(version):
-#     download_and_extract_zip(zip_url, zip_filename, extract_folder)
-# else:
-#     with zipfile.ZipFile(zip_filename, 'r') as zip_ref:
-#         zip_ref.extractall(extract_folder)
+sys_url = "https://github.com/foundryvtt/pf2e/releases/latest/download/system.json"
+
+path, headers = urlretrieve(sys_url, 'system.json')
+version = json.loads(open('system.json', 'r', encoding='utf-8').read())["version"]
+zip_url = "https://github.com/foundryvtt/pf2e/releases/latest/download/json-assets.zip"
+extract_folder = 'pack'
+print()
+print("*** Wersja modułu PF2E: ", version, " ***")
+
+zip_filename = "json-assets.zip"
+
+if create_version_directory(version):
+    download_and_extract_zip(zip_url, zip_filename, extract_folder)
+else:
+    with zipfile.ZipFile(zip_filename, 'r') as zip_ref:
+        zip_ref.extractall(extract_folder)
 
 # === === === === === === === === === === === === === === === === === === === === === === === === === === === === ===
 # Addons1
 # Ścieżka do pliku z wersją addon1
-add_1_url = "https://github.com/reyzor1991/foundry-vtt-pf2e-action-support/releases/latest/download/module.json"
-
-path_1, headers_1 = urlretrieve(add_1_url, 'module_1.json')
-version_1 = 'addon_1_' + json.loads(open('module_1.json', 'r', encoding='utf-8').read())["version"]
-zip_addons1_filename = "pf2e-action-support.zip"
-zip_addons1 = 'https://github.com/reyzor1991/foundry-vtt-pf2e-action-support/releases/latest/download/pf2e-action-support.zip'
-extract_folder = 'pack_addon_1'
-print()
-print("*** Wersja dodatku_1 PF2E: ", version_1, " ***")
-
-if create_version_directory(version_1):
-    download_and_extract_zip(zip_addons1, zip_addons1_filename, extract_folder)
-else:
-    with zipfile.ZipFile(zip_addons1_filename, 'r') as zip_ref:
-        zip_ref.extractall(extract_folder)
-
-convert_extension(fr'{extract_folder}/pf2e-action-support/packs', "action-support", "action-support")
-convert_extension(fr'{extract_folder}/pf2e-action-support/packs', "action-support-macros", "action-support-macros")
+# add_1_url = "https://github.com/reyzor1991/foundry-vtt-pf2e-action-support/releases/latest/download/module.json"
+#
+# path_1, headers_1 = urlretrieve(add_1_url, 'module_1.json')
+# version_1 = 'addon_1_' + json.loads(open('module_1.json', 'r', encoding='utf-8').read())["version"]
+# zip_addons1_filename = "pf2e-action-support.zip"
+# zip_addons1 = 'https://github.com/reyzor1991/foundry-vtt-pf2e-action-support/releases/latest/download/pf2e-action-support.zip'
+# extract_folder = 'pack_addon_1'
+# print()
+# print("*** Wersja dodatku_1 PF2E: ", version_1, " ***")
+#
+# if create_version_directory(version_1):
+#     download_and_extract_zip(zip_addons1, zip_addons1_filename, extract_folder)
+# else:
+#     with zipfile.ZipFile(zip_addons1_filename, 'r') as zip_ref:
+#         zip_ref.extractall(extract_folder)
+#
+# convert_extension(fr'{extract_folder}\pf2e-action-support\packs', "action-support", "action-support")
+# convert_extension(fr'{extract_folder}\pf2e-action-support\packs', "action-support-macros", "action-support-macros")
 
 # === === === === === === === === === === === === === === === === === === === === === === === === === === === === ===
 # Addons2
 # Ścieżka do pliku z wersją addon2
-add_2_url = "https://github.com/JDCalvert/FVTT-PF2e-Ranged-Combat/releases/latest/download/module.json"
-
-path_2, headers_2 = urlretrieve(add_2_url, 'module_2.json')
-version_2 = 'addon_2_' + json.loads(open('module_2.json', 'r', encoding='utf-8').read())["version"]
-zip_addons2_filename = "pf2e-ranged-combat.zip"
-zip_addons2 = 'https://github.com/JDCalvert/FVTT-PF2e-Ranged-Combat/releases/latest/download/pf2e-ranged-combat.zip'
-extract_folder = 'pack_addon_2'
-print()
-print("*** Wersja dodatku_2 PF2E: ", version_2, " ***")
-
-if create_version_directory(version_2):
-    download_and_extract_zip(zip_addons2, zip_addons2_filename, extract_folder)
-else:
-    with zipfile.ZipFile(zip_addons2_filename, 'r') as zip_ref:
-        zip_ref.extractall(extract_folder)
-
-leveldb_path = 'pack_addon_2/packs/'
-read_leveldb_to_json(leveldb_path)
+# add_2_url = "https://github.com/JDCalvert/FVTT-PF2e-Ranged-Combat/releases/latest/download/module.json"
+#
+# path_2, headers_2 = urlretrieve(add_2_url, 'module_2.json')
+# version_2 = 'addon_2_' + json.loads(open('module_2.json', 'r', encoding='utf-8').read())["version"]
+# zip_addons2_filename = "pf2e-ranged-combat.zip"
+# zip_addons2 = 'https://github.com/JDCalvert/FVTT-PF2e-Ranged-Combat/releases/latest/download/pf2e-ranged-combat.zip'
+# extract_folder = 'pack_addon_2'
+# print()
+# print("*** Wersja dodatku_2 PF2E: ", version_2, " ***")
+#
+# if create_version_directory(version_2):
+#     download_and_extract_zip(zip_addons2, zip_addons2_filename, extract_folder)
+# else:
+#     with zipfile.ZipFile(zip_addons2_filename, 'r') as zip_ref:
+#         zip_ref.extractall(extract_folder)
+#
+# docs = list(parse_leveldb_documents(f'pack_addon_2/packs/effects/000005.ldb'))
+# print(docs)
 # === === === === === === === === === === === === === === === === === === === === === === === === === === === === ===
 # Addons3
 # Ścieżka do pliku z wersją addon3
-add_3_url = "https://github.com/reyzor1991/foundry-vtt-pf2e-reaction/releases/latest/download/module.json"
-
-path_3, headers_3 = urlretrieve(add_3_url, 'module_3.json')
-version_3 = 'addon_3_' + json.loads(open('module_3.json', 'r', encoding='utf-8').read())["version"]
-zip_addons3_filename = "pf2e-reaction.zip"
-zip_addons3 = 'https://github.com/reyzor1991/foundry-vtt-pf2e-reaction/releases/latest/download/pf2e-reaction.zip'
-extract_folder = 'pack_addon_3'
-print()
-print("*** Wersja dodatku_3 PF2E: ", version_3, " ***")
-
-if create_version_directory(version_3):
-    download_and_extract_zip(zip_addons3, zip_addons3_filename, extract_folder)
-else:
-    with zipfile.ZipFile(zip_addons3_filename, 'r') as zip_ref:
-        zip_ref.extractall(extract_folder)
-
-convert_extension(fr'{extract_folder}/pf2e-reaction/packs', "reaction-effects", "reaction-effects")
+# add_3_url = "https://github.com/reyzor1991/foundry-vtt-pf2e-reaction/releases/latest/download/module.json"
+#
+# path_3, headers_3 = urlretrieve(add_3_url, 'module_3.json')
+# version_3 = 'addon_3_' + json.loads(open('module_3.json', 'r', encoding='utf-8').read())["version"]
+# zip_addons3_filename = "pf2e-reaction.zip"
+# zip_addons3 = 'https://github.com/reyzor1991/foundry-vtt-pf2e-reaction/releases/latest/download/pf2e-reaction.zip'
+# extract_folder = 'pack_addon_3'
+# print()
+# print("*** Wersja dodatku_3 PF2E: ", version_3, " ***")
+#
+# if create_version_directory(version_3):
+#     download_and_extract_zip(zip_addons3, zip_addons3_filename, extract_folder)
+# else:
+#     with zipfile.ZipFile(zip_addons3_filename, 'r') as zip_ref:
+#         zip_ref.extractall(extract_folder)
+#
+# convert_extension(fr'{extract_folder}\pf2e-reaction\packs', "reaction-effects", "reaction-effects")
 # === === === === === === === === === === === === === === === === === === === === === === === === === === === === ===
-# Addons4
-# Ścieżka do pliku z wersją addon4
-add_4_url = "https://github.com/mysurvive/pf2e-thaum-vuln/releases/latest/download/module.json"
-
-path_4, headers_4 = urlretrieve(add_4_url, 'module_4.json')
-version_4 = 'addon_4_' + json.loads(open('module_4.json', 'r', encoding='utf-8').read())["version"]
-zip_addons4_filename = "pf2e-thaum-vuln.zip"
-zip_addons4 = 'https://github.com/mysurvive/pf2e-thaum-vuln/releases/latest/download/module.zip'
-extract_folder = 'pack_addon_4'
-print()
-print("*** Wersja dodatku_4 PF2E: ", version_4, " ***")
-
-if create_version_directory(version_4):
-    download_and_extract_zip(zip_addons4, zip_addons4_filename, extract_folder)
-else:
-    with zipfile.ZipFile(zip_addons4_filename, 'r') as zip_ref:
-        zip_ref.extractall(extract_folder)
-
-leveldb_path = 'pack_addon_4/packs/'
-read_leveldb_to_json(leveldb_path)
-# === === === === === === === === === === === === === === === === === === === === === === === === === === === === ===
-# Addons5
-# Ścieżka do pliku z wersją addon5
-add_5_url = "https://github.com/silvative/pf2e-exploration-effects/releases/latest/download/module.json"
-
-path_5, headers_5 = urlretrieve(add_5_url, 'module_5.json')
-version_5 = 'addon_5_' + json.loads(open('module_5.json', 'r', encoding='utf-8').read())["version"]
-zip_addons5_filename = "pf2e-exploration-effects.zip"
-zip_addons5 = 'https://github.com/silvative/pf2e-exploration-effects/releases/latest/download/module.zip'
-extract_folder = 'pack_addon_5'
-print()
-print("*** Wersja dodatku_5 PF2E: ", version_5, " ***")
-
-if create_version_directory(version_5):
-    download_and_extract_zip(zip_addons5, zip_addons5_filename, extract_folder)
-else:
-    with zipfile.ZipFile(zip_addons5_filename, 'r') as zip_ref:
-        zip_ref.extractall(extract_folder)
-
-leveldb_path = 'pack_addon_5/packs/'
-read_leveldb_to_json(leveldb_path)
 
 # === === === === === === === === === === === === === === === === === === === === === === === === === === === === ===
-# Addons6
-# Ścieżka do pliku z wersją addon6
-add_6_url = "https://github.com/ChasarooniZ/pf2e-item-activations/releases/latest/download/module.json"
 
-path_6, headers_6 = urlretrieve(add_6_url, 'module_6.json')
-version_6 = 'addon_6_' + json.loads(open('module_6.json', 'r', encoding='utf-8').read())["version"]
-zip_addons6_filename = "pf2e-item-activations.zip"
-zip_addons6 = 'https://github.com/ChasarooniZ/pf2e-item-activations/releases/latest/download/module.zip'
-extract_folder = 'pack_addon_6'
-print()
-print("*** Wersja dodatku_6 PF2E: ", version_6, " ***")
 
-if create_version_directory(version_6):
-    download_and_extract_zip(zip_addons6, zip_addons6_filename, extract_folder)
-else:
-    with zipfile.ZipFile(zip_addons6_filename, 'r') as zip_ref:
-        zip_ref.extractall(extract_folder)
+folder = 'pack'
+process_files(folder, version, 'system')
 
-leveldb_path = 'pack_addon_6/packs/'
-read_leveldb_to_json(leveldb_path)
+# folder = r'pack_addon_1\pf2e-action-support\packs'
+# process_files(folder, version_1, 'pf2e-action-support')
 
-# === === === === === === === === === === === === === === === === === === === === === === === === === === === === ===
-# Addons7
-# Ścieżka do pliku z wersją addon7
-add_7_url = "https://github.com/jmerlin-nerd/elemental-ammunition-for-pf2e/releases/latest/download/module.json"
+# folder = r'pack_addon_2/output'
+# process_files(folder, version_2, "pf2e-ranged-combat")
 
-path_7, headers_7 = urlretrieve(add_7_url, 'module_7.json')
-version_7 = 'addon_7_' + json.loads(open('module_7.json', 'r', encoding='utf-8').read())["version"]
-zip_addons7_filename = "elementalAmmo.zip"
-zip_addons7 = 'https://github.com/jmerlin-nerd/elemental-ammunition-for-pf2e/releases/latest/download/elementalAmmo.zip'
-extract_folder = 'pack_addon_7'
-print()
-print("*** Wersja dodatku_7 PF2E: ", version_7, " ***")
+# folder = r'pack_addon_3\pf2e-reaction\packs'
+# process_files(folder, version_3, "pf2e-reaction")
 
-if create_version_directory(version_7):
-    download_and_extract_zip(zip_addons7, zip_addons7_filename, extract_folder)
-else:
-    with zipfile.ZipFile(zip_addons7_filename, 'r') as zip_ref:
-        zip_ref.extractall(extract_folder)
-
-leveldb_path = 'pack_addon_7/Elemental Ammo 1.0.0/packs'
-read_leveldb_to_json(leveldb_path)
-
-# === === === === === === === === === === === === === === === === === === === === === === === === === === === === ===
-# Addons8
-# Ścieżka do pliku z wersją addon8
-add_8_url = "https://github.com/kristkos/KCTG-2e/releases/latest/download/module.json"
-
-path_8, headers_8 = urlretrieve(add_8_url, 'module_8.json')
-version_8 = 'addon_8_' + json.loads(open('module_8.json', 'r', encoding='utf-8').read())["version"]
-zip_addons8_filename = "kctg-2e.zip"
-zip_addons8 = 'https://github.com/kristkos/KCTG-2e/releases/latest/download/kctg-2e.zip'
-extract_folder = 'pack_addon_8'
-print()
-print("*** Wersja dodatku_8 PF2E: ", version_8, " ***")
-
-if create_version_directory(version_8):
-    download_and_extract_zip(zip_addons8, zip_addons8_filename, extract_folder)
-else:
-    with zipfile.ZipFile(zip_addons8_filename, 'r') as zip_ref:
-        zip_ref.extractall(extract_folder)
-
-leveldb_path = 'pack_addon_8/packs'
-read_leveldb_to_json(leveldb_path)
-
-# === === === === === === === === === === === === === === === === === === === === === === === === === === === === ===
-# Addons9
-# Ścieżka do pliku z wersją addon9
-add_9_url = "https://github.com/TikaelSol/PF2e-Animal-Companions/releases/latest/download/module.json"
-
-path_9, headers_9 = urlretrieve(add_9_url, 'module_9.json')
-version_9 = 'addon_9_' + json.loads(open('module_9.json', 'r', encoding='utf-8').read())["version"]
-zip_addons9_filename = "kctg-2e.zip"
-zip_addons9 = 'https://github.com/TikaelSol/PF2e-Animal-Companions/archive/refs/tags/5.9.zip'
-extract_folder = 'pack_addon_9'
-print()
-print("*** Wersja dodatku_9 PF2E: ", version_9, " ***")
-
-if create_version_directory(version_9):
-    download_and_extract_zip(zip_addons9, zip_addons9_filename, extract_folder)
-else:
-    with zipfile.ZipFile(zip_addons9_filename, 'r') as zip_ref:
-        zip_ref.extractall(extract_folder)
-
-leveldb_path = 'pack_addon_9/PF2e-Animal-Companions-5.9/packs'
-read_leveldb_to_json(leveldb_path)
-
-# === === === === === === === === === === === === === === === === === === === === === === === === === === === === ===
-# folder = 'pack'
-# process_files(folder, version, 'system')
-
-folder = r'pack_addon_1/pf2e-action-support/packs'
-process_files(folder, version_1, 'pf2e-action-support')
-
-folder = r'pack_addon_2/output'
-process_files(folder, version_2, "pf2e-ranged-combat")
-
-folder = r'pack_addon_3/pf2e-reaction/packs'
-process_files(folder, version_3, "pf2e-reaction")
-
-folder = r'pack_addon_4/output'
-process_files(folder, version_4, "pf2e-thaum-vuln")
-
-folder = r'pack_addon_5/output'
-process_files(folder, version_5, "pf2e-exploration-effects")
-
-folder = r'pack_addon_6/output'
-process_files(folder, version_6, "pf2e-item-activations")
-
-folder = r'pack_addon_7/output'
-process_files(folder, version_7, "elemental-ammunition-for-pf2e")
-
-folder = r'pack_addon_8/output'
-process_files(folder, version_8, "KCTG-2e")
-
-folder = r'pack_addon_9/output'
-process_files(folder, version_9, "pf2e-animal-companions")
-
-merge_folders('addon_', 'addons')
+clean()

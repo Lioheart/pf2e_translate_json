@@ -410,8 +410,10 @@ def process_files(folders, version, type_system):
                         if type_system == 'pf2e-ranged-combat':
                             pass
                         else:
-                            transifex_dict["entries"][name].update({"gmNote": new_data['system']['description']['gm']})
-                            flag.append('gm')
+                            if new_data['system']['description']['gm']:
+                                transifex_dict["entries"][name].update(
+                                    {"gmNote": new_data['system']['description']['gm']})
+                                flag.append('gm')
                     except KeyError:
                         pass
 
