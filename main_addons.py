@@ -6,10 +6,11 @@ import zipfile
 from pprint import pprint
 
 import plyvel
-from io import BytesIO
 from urllib.request import urlretrieve
 
 import requests
+
+# sudo apt-get install libleveldb-dev
 
 LORE_NAMES = [
     'Acrobatics',
@@ -43,17 +44,16 @@ def remove_folders_except_venv():
             shutil.rmtree(folder_path)
 
 def clean():
-    list_of_files = [
-        "module.json",
-        "module_1.json",
-        "module_2.json",
-        "system.json"
-    ]
-    for file_name in list_of_files:
-        if os.path.exists(file_name):
-            os.remove(file_name)
+    folder_path = os.getcwd()
+    # Przejdź przez wszystkie pliki w folderze
+    for file_name in os.listdir(folder_path):
+        file_path = os.path.join(folder_path, file_name)
 
-    remove_folders_except_venv()
+        # Sprawdź, czy plik ma rozszerzenie .json lub .zip i usuń go
+        if file_name.endswith('.json') or file_name.endswith('.zip'):
+            os.remove(file_path)
+            print(f'Usunięto: {file_name}')
+
 
 def copy_addon_folders():
     source_dir = "."
@@ -163,6 +163,23 @@ def sort_entries(input_dict):
 
     return input_dict
 
+def move_files(source_folder_bad, destination_folder):
+    # Sprawdź, czy folder źródłowy istnieje
+    if not os.path.exists(source_folder_bad):
+        print("Folder źródłowy nie istnieje.")
+        return
+
+    # Stwórz folder docelowy, jeśli nie istnieje
+    os.makedirs(destination_folder, exist_ok=True)
+
+    # Przenieś pliki z folderu źródłowego do docelowego
+    for filename in os.listdir(source_folder_bad):
+        src_file = os.path.join(source_folder_bad, filename)
+        dest_file = os.path.join(destination_folder, filename)
+        shutil.move(src_file, dest_file)
+        print(f"Przeniesiono: {filename}")
+
+    print("Przenoszenie zakończone.")
 
 def remove_empty_values(input_dict):
     if isinstance(input_dict, dict):
@@ -258,8 +275,12 @@ def process_files(folders, version, type_system):
                     new_name = fr'{version}/{name[1]}.{name[2]}.json'
                 except KeyError:
                     new_name = fr'{version}/pf2e.{file}'
+                except AttributeError:
+                    new_name = fr'{version}/starfinder-field-test-for-pf2e.{file}'
                 if type_system.startswith('pf2e'):
                     new_name = fr'{version}/{type_system}.{file}'
+                elif type_system.startswith('star'):
+                    new_name = fr'{version}/starfinder-field-test-for-pf2e.{file}'
                 print('Nowy plik:', new_name)
                 print()
 
@@ -339,6 +360,7 @@ def process_files(folders, version, type_system):
                         transifex_dict["entries"][name].update({"name": name})
                         transifex_dict["entries"][name].update({"pages": {}})
                         for result in new_data['pages']:
+                            print(result)
                             transifex_dict["entries"][name]['pages'].update({result['name']: {}})
                             transifex_dict["entries"][name]['pages'][result['name']].update({"name": result['name']})
                             transifex_dict["entries"][name]['pages'][result['name']].update(
@@ -763,6 +785,8 @@ def process_files(folders, version, type_system):
                             flag.append('items')
                     except KeyError:
                         pass
+                    except TypeError:
+                        pass
 
                     if 'items' in flag:
                         transifex_dict['mapping'].update(
@@ -875,7 +899,7 @@ def process_files(folders, version, type_system):
 
                 dict_key.append(f'{compendium.keys()}')
 
-clean()
+remove_folders_except_venv()
 # === === === === === === === === === === === === === === === === === === === === === === === === === === === === ===
 # Ścieżka do pliku z wersją systemu
 # sys_url = "https://github.com/foundryvtt/pf2e/releases/latest/download/system.json"
@@ -895,6 +919,26 @@ clean()
 #     with zipfile.ZipFile(zip_filename, 'r') as zip_ref:
 #         zip_ref.extractall(extract_folder)
 
+# === === === === === === === === === === === === === === === === === === === === === === === === === === === === ===
+# Addons0
+# Ścieżka do pliku z wersją addon0
+# add_0_url = "https://github.com/TikaelSol/starfinder-field-test/releases/latest/download/module.json"
+#
+# path_0, headers_0 = urlretrieve(add_0_url, 'module_0.json')
+# version_0 = 'starfinder_0_' + json.loads(open('module_0.json', 'r', encoding='utf-8').read())["version"]
+# zip_addons0_filename = "starfinder-field-test-for-pf2e.zip"
+# zip_addons0 = 'https://github.com/TikaelSol/starfinder-field-test/releases/latest/download/starfinder-field-test-for-pf2e.zip'
+# extract_folder = 'starfinder2e_0'
+# print()
+# print("*** Wersja dodatku_0 SF2E: ", version_0, " ***")
+#
+# if create_version_directory(version_0):
+#     download_and_extract_zip(zip_addons0, zip_addons0_filename, extract_folder)
+# else:
+#     with zipfile.ZipFile(zip_addons0_filename, 'r') as zip_ref:
+#         zip_ref.extractall(extract_folder)
+#
+# read_leveldb_to_json(fr'{extract_folder}\packs', fr'{extract_folder}\output')
 # === === === === === === === === === === === === === === === === === === === === === === === === === === === === ===
 # Addons1
 # Ścieżka do pliku z wersją addon1
@@ -1110,11 +1154,55 @@ else:
 convert_extension(fr'{extract_folder}\pf2e-macros\packs', "effects", "effects")
 convert_extension(fr'{extract_folder}\pf2e-macros\packs', "macros", "macros")
 # === === === === === === === === === === === === === === === === === === === === === === === === === === === === ===
+# Addons11
+# Ścieżka do pliku z wersją addon11
+add_11_url = "https://github.com/JDCalvert/pf2e-kineticists-companion/releases/latest/download/module.json"
+
+path_11, headers_11 = urlretrieve(add_11_url, 'module_11.json')
+version_11 = 'addon_11_' + json.loads(open('module_11.json', 'r', encoding='utf-8').read())["version"]
+zip_addons11_filename = "pf2e-kineticists-companion.zip"
+zip_addons11 = 'https://github.com/JDCalvert/pf2e-kineticists-companion/releases/latest/download/pf2e-kineticists-companion.zip'
+extract_folder = 'pack_addon_11'
+print()
+print("*** Wersja dodatku_11 PF2E: ", version_11, " ***")
+
+if create_version_directory(version_11):
+    download_and_extract_zip(zip_addons11, zip_addons11_filename, extract_folder)
+else:
+    with zipfile.ZipFile(zip_addons11_filename, 'r') as zip_ref:
+        zip_ref.extractall(extract_folder)
+
+read_leveldb_to_json(fr'{extract_folder}\packs', fr'{extract_folder}\output')
+# === === === === === === === === === === === === === === === === === === === === === === === === === === === === ===
+# Addons12
+# Ścieżka do pliku z wersją addon12
+add_12_url = "https://github.com/Suldrun45/pf2e-specific-familiars/releases/latest/download/module.json"
+
+path_12, headers_12 = urlretrieve(add_12_url, 'module_12.json')
+version_12 = 'addon_12_' + json.loads(open('module_12.json', 'r', encoding='utf-8').read())["version"]
+zip_addons12_filename = "pf2e-specific-familiars.zip"
+zip_addons12 = 'https://github.com/Suldrun45/pf2e-specific-familiars/releases/latest/download/pf2e-specific-familiars.zip'
+extract_folder = 'pack_addon_12'
+print()
+print("*** Wersja dodatku_12 PF2E: ", version_12, " ***")
+
+if create_version_directory(version_12):
+    download_and_extract_zip(zip_addons12, zip_addons12_filename, extract_folder)
+else:
+    with zipfile.ZipFile(zip_addons12_filename, 'r') as zip_ref:
+        zip_ref.extractall(extract_folder)
+
+move_files(fr'{extract_folder}/pf2e-specific-familiars/packs', fr'{extract_folder}/packs')
+read_leveldb_to_json(fr'{extract_folder}\packs', fr'{extract_folder}\output')
+# === === === === === === === === === === === === === === === === === === === === === === === === === === === === ===
 
 # === === === === === === === === === === === === === === === === === === === === === === === === === === === === ===
 # folder = 'pack'
 # process_files(folder, version, 'system')
 print('\n*** KONWERSJA ***\n')
+
+# folder = r'starfinder2e_0/output'
+# process_files(folder, version_0, "starfinder-field-test-for-pf2e")
 
 folder = r'pack_addon_1/pf2e-action-support/packs'
 process_files(folder, version_1, 'pf2e-action-support')
@@ -1146,4 +1234,11 @@ process_files(folder, version_9, "pf2e-animal-companions")
 folder = r'pack_addon_10/pf2e-macros/packs'
 process_files(folder, version_10, "pf2e-macros")
 
+folder = r'pack_addon_11/output'
+process_files(folder, version_11, "pf2e-kineticists-companion")
+
+folder = r'pack_addon_12/output'
+process_files(folder, version_12, "pf2e-specific-familiars")
+
 copy_addon_folders()
+clean()
