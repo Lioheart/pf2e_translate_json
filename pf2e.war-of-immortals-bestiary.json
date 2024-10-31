@@ -1,0 +1,218 @@
+{
+    "label": "War-Of-Immortals-Bestiary",
+    "entries": {
+        "Agyra": {
+            "name": "Agyra",
+            "publicNotes": "<h3>The Forever Storm</h3><p>Agyra is a massive kaiju who protects Spinescar Island and its inhabitants.</p>",
+            "allSavesBonus": "mythic resilience (Fort and Ref)",
+            "sensesDetails": "Stormsight",
+            "languagesDetails": "(can\u2019t speak any language)"
+        },
+        "Boneburst": {
+            "name": "Boneburst",
+            "hpDetails": "(BT 45)",
+            "descriptionHazard": "<p>A low howl rises from the ground, gathering strength as scraps of ancient armor, bone fragments, and clumps of earth rise into the air. Crimson vapor holds the faceless shape together, never coalescing into an identifiable form, but merely writhing through ever-changing images of torment and destruction.</p>",
+            "disable": "<p>@Check[occultism|dc:38|name:Negate Psychic Resonances] (master) to temporarily negate the psychic resonances around each fragment, causing the agglomeration to fall apart, or @Check[religion|dc:33|name:Interrupt Unholy Power] (expert) to temporarily interrupt Verex-That-Was's unholy power with divine energy from another source. If a boneburst takes 40 points of damage from a single source and it isn't destroyed, it is rendered dormant for 1 round.</p>",
+            "reset": "<p>If the boneburst spends 5 consecutive rounds without coalescing around a living creature, it falls dormant, sinking back into the earth. After it falls dormant or is disabled, the boneburst gathers energy over the course of the next hour, after which it can be triggered again.</p>",
+            "routine": "<p>(2 actions) An awakened boneburst occupies a @Template[square|distance:20]; it is reduced to a @Template[square|distance:10] when it reaches its BT. It can occupy the same space as other creatures, but not other bonebursts. On its initiative, the boneburst Flies up to 30 feet toward the nearest living creature as its first action. As its second action, the boneburst then coalesces around any living creature within its space, invisible shards of bone tearing at their flesh. Each living creature in its space takes @Damage[(2d10+18)[slashing],1d10[spirit]|options:area-damage]{2d10+18 slashing damage and 1d10 spirit damage} (@Check[reflex|dc:35|basic|options:area-effect] save). If no living creatures are within its space, the boneburst can use its second action to Fly up to 30 feet.</p>",
+            "stealth": "<p>(master) to notice that clouds of debris are coalescing into swirling, faceless shapes held together by rust-red fog and spectral, dripping clots of gore</p>",
+            "items": {
+                "action->Gathering Mist": {
+                    "name": "Gathering Mist",
+                    "description": "<p><strong>Trigger</strong> A living creature approaches within 50 feet of a dormant boneburst</p><hr /><p><strong>Effect</strong> The boneburst awakens, roiling up from the ground, and rolls initiative.</p>"
+                }
+            }
+        },
+        "Immortal Trickster": {
+            "name": "Immortal Trickster",
+            "publicNotes": "<h3>The Immortal Trickster</h3><p>The Immortal Trickster is an immortal spirit guide who always returns to life no matter how he's killed. After his death, he often recorporates in the same area, though if his body is destroyed in its entirety, he sometimes awakens in an entirely different continent.</p>",
+            "acDetails": "mythic resistance 11",
+            "languagesDetails": "truespeech",
+            "items": {
+                "spellcastingEntry->Primal Innate Spells": {
+                    "name": "Primal Innate Spells"
+                },
+                "equipment->Wandering Pipe": {
+                    "name": "Wandering Pipe",
+                    "description": "<p>This long-stemmed pipe always emits a thin plume of smoke, even when not lit or in active use. The exact material the pipe is made of varies in every accounting; sometimes made of polished oak, other times ebony, sometimes stone, and in one Erutaki legend the pipe is made of pure ice that somehow holds a flame. Though the <em>wandering pipe</em> is not intelligent, it is rumored to possess a certain capriciousness, leaving the possession of mortals whose lives are not exciting enough but inevitably finding its way back to its one true owner.</p>\n<p>When held in one hand, the pipe grants its holder a +2 circumstance bonus to Deception checks but imposes a -1 circumstance penalty to Stealth checks made to Hide or @UUID[Compendium.pf2e.actionspf2e.Item.VMozDqMMuK5kpoX4]{Sneak}, as its telltale plume of smoke gives away the bearer's position.</p>\n<p><strong>Activate\u2014Smoky Protections</strong> <span class=\"action-glyph\">2</span> (concentrate, manipulate, primal)</p>\n<p><strong>Frequency</strong> once per hour; <strong>Cost</strong> 1 Mythic Point</p><hr /><p><strong>Effect</strong> For the next 10 minutes, smoke gathers around you buoying your steps and protecting you. For the duration of this effect, you gain a fly Speed equal to your land Speed and automatically hover in place, and you have concealment from ranged attacks.</p>\n<p>@UUID[Compendium.pf2e.equipment-effects.Item.z480XhE3nft1TQDj]{Effect: Smoky Protections}</p><hr /><p><strong>Destruction</strong> The <em>wandering pipe</em> can be broken as easily as any other wooden pipe, but it always reforms afterward in the hands of the Immortal Trickster or one of his bonded mortals. It can only be broken by the hands of one of the Trickster's bonded mortals who is an honest person acting with good intent; it is said that if this occurs, the Trickster would also be significantly weakened as a result.</p>"
+                }
+            }
+        },
+        "Lightning's Dance": {
+            "name": "Lightning's Dance",
+            "descriptionHazard": "<p>Electricity suffuses an area where Agyra has used her lightning breath multiple times.</p>",
+            "disable": "<p>@Check[crafting|dc:35|name:Fashion Makeshift Lightning Rod] (master) to fashion a makeshift lightning rod, @Check[nature|dc:33|name:Dissipate Electrical Charge] (expert) to dissipate the electrical charge harmlessly into the air.</p>",
+            "reset": "<p>The hazard deactivates and immediately resets if has no targets for 1 round; it also resets if Agyra uses her lightning breath multiple times in a single combat in the area.</p>",
+            "routine": "<p>(2 actions) Bolts of lightning flash out. The hazard makes two lightning bolt Strikes at two different creatures within 120 feet of the hazard's center. If only one creature is in range, the hazard makes only one Strike.</p>",
+            "stealth": "<p>(expert) or @Check[perception|dc:33] (master) to notice sparks dancing around normally non-conductive surfaces</p>",
+            "items": {
+                "action->Static Shock": {
+                    "name": "Static Shock",
+                    "description": "<p><strong>Trigger</strong> A creature approaches within 10 feet of the hazard's center</p><hr /><p><strong>Effect</strong> Electricity wells up from the ground and nearby material. Each creature in the hazard's area must attempt a @Check[fortitude|dc:33] save, and the hazard then rolls initiative. A character wearing metal armor or wielding a metal shield or weapon of at least 1 Bulk treats the result of their saving throw as one step worse.</p><hr /><p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 1} for 1 round.</p>\n<p><strong>Failure</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 2} for 2 rounds.</p>\n<p><strong>Critical Failure</strong> The creature is clumsy 2 for 4 rounds and @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned 1} for 1 round.</p>"
+                }
+            }
+        },
+        "Mythic Gogiteth": {
+            "name": "Mythic Gogiteth",
+            "publicNotes": "<p>Gogiteths are horrific nightmares with grasping, spiderlike legs; vicious, gnashing teeth; and far too many eyes. Of all the creatures on Golarion for whom the acquisition of mythic power might prove a nightmare for others, the gogiteth is arguably one of the most terrible.</p>\n<p>Normally, a gogiteth's victims at least have the possible salvation of hearing the horrible crackling and popping of its joints as it clambers towards them through the dark, an opportunity to flee the slavering nightmare seeking them. Mythic ambusher gogiteths are unnaturally silent, however. The first sound a creature might hear when being hunted by such a monstrosity is the sharp wheeze of their own fleeting breath as the gogiteth's jaws snap shut around them, or the tearing of their flesh and clothing as one of its legs pierces them through.</p>\n<p>Though little is known about the origins of gogiteths, mythic gogiteths generally acquire mythic power in the same way that other creatures do. Golarion has no shortage of vile deities who might take cruel delight in bestowing a sliver of mythic power upon a creature as frightful and terrible as a gogiteth. Their traditional hive homes in the Darklands make it unlikely that they would be affected by the Godsrain, but it is not impossible that droplets of Gorum's spilled blood could seep through cracks and make their way down into the thirsty jaws of one of these nightmarish monstrosities.</p>",
+            "acDetails": "all-around vision",
+            "languagesDetails": "(Can't Speak)"
+        },
+        "Mythic Lich": {
+            "name": "Mythic Lich",
+            "publicNotes": "<p>A mythic lich could be a lich who came into contact with a source of mythic power after their transformation\u2014or one whose transformation was designed to instill mythic power in them. Such rituals might entail using a mythic artifact as a soul cage, slaying a mythic creature, or luring a mythic being into striking the killing blow against the spellcaster. Among adherents of the Whispering Way, it is commonly believed that the Whispering Tyrant tricked the god Aroden into killing him as a mortal so he could siphon some of Aroden's power into creating his soul cage and allowing him to become a mythic lich.</p>",
+            "allSavesBonus": "+1 status to all saves vs. vitality; mythic resilience (Ref and Will)",
+            "hpDetails": "void healing, rejuvenation",
+            "items": {
+                "spellcastingEntry->Arcane Prepared Spells": {
+                    "name": "Arcane Prepared Spells"
+                },
+                "weapon->Staff of Fire (Greater)": {
+                    "name": "Staff of Fire (Greater)",
+                    "description": "<p>This staff resembles a blackened and burned length of ashen wood. You can Interact to touch the tip of this staff to a torch, tinder, or a flammable substance to ignite a flame.</p>\n<p><strong>Activate</strong> Cast a Spell</p>\n<p><strong>Effect</strong> You expend a number of charges from the staff to cast a spell from its list.</p>\n<hr />\n<ul>\n<li><strong>Cantrip</strong> @UUID[Compendium.pf2e.spells-srd.Item.6DfLZBl8wKIV03Iq]{Ignition}</li>\n<li><strong>1st</strong> @UUID[Compendium.pf2e.spells-srd.Item.y6rAdMK6EFlV6U0t]{Breathe Fire}</li>\n<li><strong>2nd</strong> @UUID[Compendium.pf2e.spells-srd.Item.y6rAdMK6EFlV6U0t]{Breathe Fire}, @UUID[Compendium.pf2e.spells-srd.Item.2ZdHjnpEQJuqOYSG]{Floating Flame}</li>\n<li><strong>3rd</strong> @UUID[Compendium.pf2e.spells-srd.Item.2ZdHjnpEQJuqOYSG]{Floating Flame}, @UUID[Compendium.pf2e.spells-srd.Item.sxQZ6yqTn0czJxVd]{Fireball}</li>\n</ul>\n<hr />\n<p><strong>Craft Requirements</strong> Supply one casting of all listed ranks of all listed spells.</p>"
+                },
+                "consumable->Invisibility Potion": {
+                    "name": "Invisibility Potion",
+                    "description": "<p><strong>Activate</strong> <span class=\"action-glyph\">A</span> (manipulate)</p>\n<hr />\n<p>An <em>invisibility</em> potion is colorless and oddly lightweight. Upon drinking it, you gain the effects of a 2nd-rank @UUID[Compendium.pf2e.spells-srd.Item.XXqE1eY3w3z6xJCB]{Invisibility} spell.</p>"
+                },
+                "consumable->Scroll of Teleport (Rank 6)": {
+                    "name": "Scroll of Teleport (Rank 6)",
+                    "description": "<p>@UUID[Compendium.pf2e.spells-srd.Item.69L70wKfGDY66Mk9]{Teleport}</p><hr /><p>Casting a Spell from a scroll requires holding the scroll in one hand and activating it with a Cast a Spell activity using the normal number of actions for that spell.</p>\n<p>The spell must appear on your spell list. Because you're the one Casting the Spell, use your spell attack modifier and spell DC. The spell also gains the appropriate trait for your tradition (arcane, divine, occult, or primal).</p>\n<p>Any physical costs are provided when a scroll is created, so you don't need to provide them when casting from a scroll. If the spell requires a locus, you must have that locus to Cast the Spell from a scroll.</p>\n<hr />\n<p><em>Note: To create a scroll or wand of a specific spell, drag the spell from the compendium or compendium browser into the inventory of a PC, NPC, or loot actor.</em></p>"
+                }
+            }
+        },
+        "Mythic Ogre Boss": {
+            "name": "Mythic Ogre Boss",
+            "publicNotes": "<p>For ogres, the biggest, strongest, and most violent among them are the ones who claim the right to lead. When such a creature gains mythic power, its cruelty is likely to be matched only by its immense durability. Mythic ogre bosses are capable of felling even mighty and enormous prey like gigantic dinosaurs with their ogre hooks, using preposterously unbelievable strength to drag them down and rend them asunder. If a group of mythic ogre bosses were to band together, they could prove a terrifying threat, conquering villages or even a small city with relative ease. Fortunately, their philosophies of violence and strength over all else means that whenever such beings come into contact, they are far more likely to immediately war with each other to prove who is the strongest.</p>",
+            "items": {
+                "weapon->Javelin": {
+                    "name": "Javelin",
+                    "description": "<p>This thin spear is well balanced for throwing but is not designed for melee use.</p>"
+                },
+                "weapon->Gut-Ripper": {
+                    "name": "Gut-Ripper",
+                    "description": "<p>This <em>+1 striking ogre hook</em> causes its owner to dream of past murders conducted with the weapon. Gut-Ripper's mythic magic is tied to the bloodlust of the ogre boss who was holding it upon becoming mythic. If Gut-Ripper doesn't kill a creature each day by midnight, it becomes a non-magical ogre hook.</p>\n<p><strong>Activate\u2014Rip Guts! Rip Guts!</strong> <span class=\"action-glyph\">2</span> <strong>Cost</strong> 1 Mythic Point</p><hr /><p><strong>Effect</strong> You throw Gut-Ripper in a line of any length up to 60 feet, then it returns to your hands. Each creature in the line takes @Damage[2d10[piercing]] damage with a @Check[fortitude|dc:25|basic] save. If there's a creature at the end of the line, you instead make a melee Strike against it with the hook that deals an additional @Damage[2d10[persistent,bleed]] damage. Each time a creature takes this bleed damage, you regain that many HP; this is a healing vitality effect. This activation can't be used again for [[/gmr 1d4 #Recharge be used]]{1d4 rounds}.</p>"
+                },
+                "armor->Breastplate": {
+                    "name": "Breastplate",
+                    "description": "<p>Though referred to as a breastplate, this type of armor consists of several pieces of plate or @UUID[Compendium.pf2e.equipment-srd.Item.pRoikbRo5HFW6YUB]{Half Plate} armor that protect the torso, chest, neck, and sometimes the hips and lower legs. It strategically grants some of the protection of plate while allowing greater flexibility and speed.</p>"
+                }
+            }
+        },
+        "Oliphaunt of Jandelay": {
+            "name": "Oliphaunt of Jandelay",
+            "publicNotes": "<h3>Harbinger of Annihilation</h3><p>The Oliphaunt of Jandelay is drawn to worlds that are hurtling toward imminent annihilation.</p>",
+            "allSavesBonus": "mythic resilience (all saves)",
+            "speedsDetails": "legendary vigor, unfettered movement",
+            "languagesDetails": "(can\u2019t speak any language)",
+            "items": {
+                "spellcastingEntry->Divine Innate Spells": {
+                    "name": "Divine Innate Spells"
+                }
+            }
+        },
+        "Primal Chaos Aura": {
+            "name": "Primal Chaos Aura",
+            "descriptionHazard": "<p>Primal magic becomes unpredictable near areas where Agyra lairs, sometimes to hazardous effect.</p>",
+            "disable": "<p>@Check[nature|dc:22|name:Draw Off Excess Power] to negate the aura's effect for 1 round by temporarily drawing off the excess power and channeling it back into surrounding terrain, @Check[nature|dc:26|name:Disperse Lingering Magic] (expert) to completely disperse the lingering magic</p>",
+            "reset": "<p>The hazard deactivates and immediately resets if it has no targets for 1 round; it also resets if Agyra slumbers for 1 week within 100 feet.</p>",
+            "routine": "<p>(2 actions) On its initiative, the hazard gathers primal energy from the surroundings as its first action. Roll [[/gmr 1d6 #Energy Gathered]] to determine the type of energy gathered. The hazard uses its second action to replicate the associated spell (2nd rank, DC 23, spell attack modifier [[/r 1d20+15 #Spell Attack]]{+15}). The spell's target or targets are chosen randomly from creatures in the area. Any spell cast by this hazard is primal. <strong>1</strong> air (@UUID[Compendium.pf2e.spells-srd.Item.g8QqHpv2CWDwmIm1]{Gust of Wind}); <strong>2</strong> electricity (@UUID[Compendium.pf2e.spells-srd.Item.zDJS8E66UI0himqV]{Thunderstrike}); <strong>3</strong> fire (@UUID[Compendium.pf2e.spells-srd.Item.ZxHC7V7HtjUsB8zH]{Blazing Bolt}); <strong>4</strong> poison (@UUID[Compendium.pf2e.spells-srd.Item.DYdvMZ8G2LiSLVWw]{Spider Sting}); <strong>5</strong> sonic (@UUID[Compendium.pf2e.spells-srd.Item.1xbFBQDRs0hT5xZ9]{Shatter}); <strong>6</strong> water (@UUID[Compendium.pf2e.spells-srd.Item.jfVCuOpzC6mUrf6f]{Hydraulic Push})</p>",
+            "stealth": "<p>or @Check[perception|dc:26|traits:action:seek] to feel a tingle in the air and smell a rich, chlorophyll-green fragrance with no discernible source</p>",
+            "items": {
+                "action->Wild Surge": {
+                    "name": "Wild Surge",
+                    "description": "<p><strong>Trigger</strong> A character casts a primal spell within the hazard's area</p><hr /><p><strong>Effect</strong> Each living creature in the area gains [[/r 2d4 #Temporary Hit Points]] temporary Hit Points that last for 1 minute as life energy wells up around them, and the hazard rolls initiative.</p>"
+                }
+            }
+        },
+        "Sublime Breath": {
+            "name": "Sublime Breath",
+            "publicNotes": "<h3>Bringers of Inspiration</h3><p>A sublime breath seeks to perfect their craft, or, when they see the seed of potential in a worthy mortal, to inspire them to new heights.</p>",
+            "allSavesBonus": "+2 status to all saves vs. emotion; mythic resilience (Will)",
+            "languagesDetails": "truespeech",
+            "items": {
+                "equipment->Immaculate Instrument": {
+                    "name": "Immaculate Instrument",
+                    "description": "<p>This object, made of silver light, takes the form of a small musical instrument, prop, or other tool associated with a specific art form. The holder of the immaculate instrument never suffers from creative blocks of any kind and their work is always insightful and skilled. A character who uses the immaculate instrument to @UUID[Compendium.pf2e.actionspf2e.Item.EEDElIyin4z60PXx]{Perform} or Craft can attempt the check at mythic proficiency once per month, and as long as they possess their immaculate instrument, they treat any critical failures with these skills as failures.</p><hr /><p><strong>Destruction</strong> If the holder uses the immaculate instrument to intentionally produce a work that is not just mediocre or crass, but one that devalues the public opinion of the art form itself in a showing of at least 100 spectators, the instrument fades away in shame.</p>"
+                }
+            }
+        },
+        "Trump of the Oliphaunt": {
+            "name": "Trump of the Oliphaunt",
+            "descriptionHazard": "<p>An overwhelming trumpeting sound vibrates and suffuses the area, causing everything to slow.</p>",
+            "disable": "<p>@Check[arcana|dc:38|name:Shore Up the Area] (expert), @Check[maelstrom-lore|dc:38|name:Shore Up the Area] (expert), @Check[occultism|dc:38|name:Shore Up the Area] (master), @Check[religion|dc:38|name:Shore Up the Area] (master) to recognize and shore up the area against the localized planar instability causing a connection to the Oliphaunt of Jandelay. Four successes are needed to strengthen the area enough against the instability to end the hazard.</p>",
+            "reset": "<p>The area becomes unstable again after 24 hours.</p>",
+            "routine": "<p>(1 action) Each creature in the area must attempt a @Check[fortitude|dc:36] save. A creature with the slowed condition from this hazard takes a \u20132 circumstance penalty on further saves against this effect.</p><hr><p><strong>Critical Success</strong> The creature is unaffected.</p><p><strong>Success</strong> The creature takes @Damage[(2d6+6)[sonic]] damage and is @UUID[Compendium.pf2e.conditionitems.Item.9PR9y0bi4JPKnHPR]{Deafened} for 1 round.</p><p><strong>Failure</strong> The creature takes @Damage[(4d6+13)[sonic]] damage and is @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1} for 2 rounds.</p><p><strong>Critical Failure</strong> The creature takes @Damage[(8d6+26)[sonic]] damage and is @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 2} for 2 rounds.</p>",
+            "stealth": "<p>(master) to notice the tension of a low vibration forming in the area from the imminent release of the Oliphaunt's trumpet</p>",
+            "items": {
+                "action->Bone-Shattering Rhythms": {
+                    "name": "Bone-Shattering Rhythms",
+                    "description": "<p><strong>Trigger</strong> Three or more characters enter the area of planar instability</p><hr /><p><strong>Effect</strong> Pent-up magical energy from another world begins to release in waves of overwhelming sound. The hazard rolls initiative.</p>"
+                }
+            }
+        },
+        "Verex-That-Was": {
+            "name": "Verex-That-Was",
+            "publicNotes": "<h3>A Bloody Spawn of Rovagug</h3><p>Once an orc god, Verex-That-Was has been reshaped into a towering creature of mangled flesh and bone.</p>",
+            "allSavesBonus": "mythic resilience (all saves)",
+            "hpDetails": "regeneration 30 (deactivated by sloughstone weapons)"
+        },
+        "Vulot": {
+            "name": "Vulot",
+            "publicNotes": "<h3>The All or None</h3><p>Vulot is nascent demon lord of lies, loss of identity, and suffocation. If one of their forms is ever destroyed, they are able to reincorporate as one of their many stolen identities a day later.</p>",
+            "acDetails": "mythic immunity",
+            "sensesDetails": "many eyes in many places, truesight",
+            "languagesDetails": "all languages spoken by their collective identities; telepathy 200 feet (unlimited range to other stolen identities worn by cultists of Vulot)",
+            "items": {
+                "spellcastingEntry->Divine Innate Spells": {
+                    "name": "Divine Innate Spells"
+                }
+            }
+        },
+        "Weaver of Webs": {
+            "name": "Weaver of Webs",
+            "publicNotes": "<h3>Herald of the Web</h3><p>Once a servitor of an ancient god of secrets, the Weaver of Webs now seeks to attain her own godhood.</p>",
+            "allSavesBonus": "+1 status to all saves vs. magic",
+            "sensesDetails": "all-around vision, greater web sense",
+            "languagesDetails": "truespeech",
+            "hpDetails": "regeneration 10 (deactivated by bright light)",
+            "items": {
+                "spellcastingEntry->Occult Innate Spells": {
+                    "name": "Occult Innate Spells"
+                }
+            }
+        },
+        "Wind Surge": {
+            "name": "Wind Surge",
+            "descriptionHazard": "<p>Hurricane-force winds rip through the area as Agyra flies past.</p>",
+            "disable": "<p>@Check[athletics|dc:27|name:Crouch and Contort] (expert) or @Check[acrobatics|dc:27|name:Crouch and Contort] (expert) to crouch and contort out of the wind's way (disables the hazard for only yourself), @Check[survival|dc:30|name:Point Out a Safe Space] to point out a safe space from the winds for up to 3 creatures.</p>",
+            "stealth": "<p>(expert) to note stirrings in the wind</p>",
+            "items": {
+                "action->Hurricane Flyby": {
+                    "name": "Hurricane Flyby",
+                    "description": "<p><strong>Trigger</strong> Agyra flies overhead for at least 120 feet in a straight line</p><hr /><p><strong>Effect</strong> Supernaturally powerful winds batter the area in a line that is @Template[line|distance:120|width:30]{120 feet long and 30 feet wide and 30 feet tall}. Each creature in the line must attempt a @Check[reflex|dc:29] save. Moving above ground against the direction of the line is greater difficult terrain for 1 minute.</p><hr /><p><strong>Critical Success</strong> The creature is pushed 10 feet along the line.</p>\n<p><strong>Success</strong> The creature takes @Damage[5d6[bludgeoning]] damage and is pushed 15 along the line.</p>\n<p><strong>Failure</strong> The creatures takes @Damage[10d6[bludgeoning]] damage, is pushed 30 feet along the line, and is knocked @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone}.</p>\n<p><strong>Critical Failure</strong> The creature takes @Damage[20d6[bludgeoning]] damage, is pushed 45 feet along the line, is knocked prone, and is @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned 1} for 1 round.</p>\n<p>If the line overlaps a body of water, the winds cause massive waves that deal @Damage[6d6[bludgeoning]] damage to creatures in the water or within 15 feet of the waterline (@Check[reflex|dc:29|basic] save). On a critical failure, a creature is also swept 30 feet away from the waterline and 15 feet beneath the water's surface.</p>"
+                }
+            }
+        }
+    },
+    "mapping": {
+        "publicNotes": "system.details.publicNotes",
+        "privateNotes": "system.details.privateNotes",
+        "acDetails": "system.attributes.ac.details",
+        "blurb": "system.details.blurb",
+        "hpDetails": "system.attributes.hp.details",
+        "allSavesBonus": "system.attributes.allSaves.value",
+        "speedsDetails": "system.attributes.speed.details",
+        "sensesDetails": "system.perception.details",
+        "languagesDetails": "system.details.languages.details",
+        "descriptionHazard": "system.details.description",
+        "disable": "system.details.disable",
+        "reset": "system.details.reset",
+        "routine": "system.details.routine",
+        "stealth": "system.attributes.stealth.details",
+        "items": {
+            "converter": "translateActorItems",
+            "path": "items"
+        }
+    }
+}
