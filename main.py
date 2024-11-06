@@ -600,6 +600,14 @@ def process_files(folder, version, type_system):
                                 type_name = item['type']
                             item_name = f'{type_name}->{item["name"]}'
 
+                            # Jeśli zaklęcie, bierz z kompendium
+                            if '(' in item['name']:
+                                transifex_dict["entries"][name]['items'].update({item_name: {
+                                    "name": item['name']
+                                }})
+                            if item['type'] == 'spell':
+                                continue
+
                             # Jeśli akcja jest połączona z bronią, nie tłumacz
                             try:
                                 propertly_link = True
@@ -621,14 +629,6 @@ def process_files(folder, version, type_system):
                                 pass
                             except AttributeError:
                                 pass
-
-                            # Jeśli zaklęcie, bierz z kompendium
-                            if item['type'] == 'spell':
-                                # transifex_dict["entries"][name]['items'].update({item_name: {
-                                #     "name": "<Compendium>",
-                                #     "id": item['_id']
-                                # }})
-                                continue
 
                             # Jeśli jest to Skill, sprawdź, czy to unikalna nazwa i czy są jakieś opcje
                             if item['type'] == 'lore':
@@ -783,7 +783,6 @@ def process_files(folder, version, type_system):
                     json.dump(transifex_dict, outfile, indent=4)
 
                 dict_key.append(f'{compendium.keys()}')
-    pprint(exeptions)
 
 # === === === === === === === === === === === === === === === === === === === === === === === === === === === === ===
 # Ścieżka do pliku z wersją systemu
