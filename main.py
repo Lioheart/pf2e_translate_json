@@ -4,6 +4,7 @@ import pathlib
 import shutil
 import zipfile
 from io import BytesIO
+from pprint import pprint
 from urllib.request import urlretrieve
 
 import requests
@@ -156,7 +157,10 @@ def create_version_directory(version):
 
 def process_files(folder, version, type_system):
     dict_key = []
+    exeptions = []
     for root, dirs, files in os.walk(folder):
+        if "equipment.json" in files:
+            files.insert(0, files.pop(files.index("equipment.json")))
         for file in files:
             if file.endswith(".json"):
                 file_path = os.path.join(root, file)
@@ -283,6 +287,7 @@ def process_files(folder, version, type_system):
                             transifex_dict["entries"][name].update(
                                 {"description": new_data['system']['description']['value']})
 
+                    exeptions.append(name)
                     # ====================================================================================================
                     # ---GM Note---
                     try:
@@ -600,7 +605,7 @@ def process_files(folder, version, type_system):
                                 propertly_link = True
                                 if 'linkedWeapon' in item['flags']['pf2e']:
                                     for item2 in new_data['items']:
-                                        if item2['flags']['core']['sourceId'].startswith('Compendium') and item2[
+                                        if item2['_stats']['compendiumSource'].startswith('Compendium') and item2[
                                             '_id'] == \
                                                 item['flags']['pf2e']['linkedWeapon']:
                                             propertly_link = False
@@ -613,6 +618,8 @@ def process_files(folder, version, type_system):
                                         }})
                                     continue
                             except KeyError:
+                                pass
+                            except AttributeError:
                                 pass
 
                             # Jeśli zaklęcie, bierz z kompendium
@@ -637,11 +644,14 @@ def process_files(folder, version, type_system):
 
                             # Jeśli przedmiot jest z istniejącej publikacji i nie jest przedmiotem z innego kompendium
                             try:
-                                if (item['flags']['core']['sourceId'].startswith('Compendium')
+                                if (item['_stats']['compendiumSource'].startswith('Compendium')
                                         and item['system']['publication']['title'] != ""
-                                        and '(' not in item['name'] and item['type'] != 'action'):
+                                        and '(' not in item['name'] and item['type'] != 'action')\
+                                        and item['name'] in exeptions:
                                     continue
                             except KeyError:
+                                pass
+                            except AttributeError:
                                 pass
 
                             # Jeśli opis jest przetłumaczony, bierz tylko nazwę, w przeciwnym wypadku razem z opisem
@@ -773,7 +783,7 @@ def process_files(folder, version, type_system):
                     json.dump(transifex_dict, outfile, indent=4)
 
                 dict_key.append(f'{compendium.keys()}')
-
+    pprint(exeptions)
 
 # === === === === === === === === === === === === === === === === === === === === === === === === === === === === ===
 # Ścieżka do pliku z wersją systemu
