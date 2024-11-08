@@ -205,7 +205,7 @@ def process_files(folder, version, type_system):
                         data_folder = json.load(json_file)
 
                     for new_data in data_folder:
-                        name = new_data["name"]
+                        name = new_data["name"].strip()
                         transifex_dict["folders"].update({name: name})
                 else:
                     transifex_dict = {
@@ -239,7 +239,7 @@ def process_files(folder, version, type_system):
 
                 flag = []
                 for new_data in data:
-                    name = new_data["name"]
+                    name = new_data["name"].strip()
                     # Dla Kompendium bez opisu
                     if 'items' in keys:
                         transifex_dict["entries"].update({name: {}})
@@ -600,7 +600,7 @@ def process_files(folder, version, type_system):
                                 type_name = item['type']
                             item_name = f'{type_name}->{item["name"]}'
 
-                            # Jeśli zaklęcie, bierz z kompendium
+                            # Jeśli zaklęcie, bierz tylko unikalne
                             if '(' in item['name']:
                                 transifex_dict["entries"][name]['items'].update({item_name: {
                                     "name": item['name']
@@ -613,9 +613,7 @@ def process_files(folder, version, type_system):
                                 propertly_link = True
                                 if 'linkedWeapon' in item['flags']['pf2e']:
                                     for item2 in new_data['items']:
-                                        if item2['_stats']['compendiumSource'].startswith('Compendium') and item2[
-                                            '_id'] == \
-                                                item['flags']['pf2e']['linkedWeapon']:
+                                        if item2['_stats']['compendiumSource'].startswith('Compendium') and item2['_id'] == item['flags']['pf2e']['linkedWeapon'] and item['name'] in exeptions:
                                             propertly_link = False
                                             break
                                     if item['name'] == 'Shiv':
@@ -646,8 +644,8 @@ def process_files(folder, version, type_system):
                             try:
                                 if (item['_stats']['compendiumSource'].startswith('Compendium')
                                         and item['system']['publication']['title'] != ""
-                                        and '(' not in item['name'] and item['type'] != 'action')\
-                                        and item['name'] in exeptions:
+                                        and '(' not in item['name'] and item['type'] != 'action'
+                                        and item['name'] in exeptions):
                                     continue
                             except KeyError:
                                 pass
@@ -685,7 +683,7 @@ def process_files(folder, version, type_system):
 
                     # SPELLS =============================================================================================
                     if file == 'spells.json':
-                        name = new_data["name"]
+                        name = new_data["name"].strip()
 
                         # AreaDetail
                         try:
@@ -771,9 +769,6 @@ def process_files(folder, version, type_system):
 
                         except KeyError:
                             pass
-
-                    if file == 'equipment.json':
-                        name = new_data["name"]
 
                 transifex_dict = remove_empty_values(transifex_dict)
                 transifex_dict = remove_empty_values(transifex_dict)

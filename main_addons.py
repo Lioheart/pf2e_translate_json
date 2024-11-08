@@ -46,13 +46,13 @@ def remove_folders_except_venv():
 def clean():
     folder_path = os.getcwd()
     # Przejdź przez wszystkie pliki w folderze
-    for file_name in os.listdir(folder_path):
-        file_path = os.path.join(folder_path, file_name)
+    for file_name_clean in os.listdir(folder_path):
+        file_path = os.path.join(folder_path, file_name_clean)
 
         # Sprawdź, czy plik ma rozszerzenie .json lub .zip i usuń go
-        if file_name.endswith('.json') or file_name.endswith('.zip'):
+        if file_name_clean.endswith('.json') or file_name_clean.endswith('.zip'):
             os.remove(file_path)
-            print(f'Usunięto: {file_name}')
+            print(f'Usunięto: {file_name_clean}')
 
 
 def copy_addon_folders():
@@ -296,7 +296,7 @@ def process_files(folders, version, type_system):
                         data_folder = json.load(json_file)
 
                     for new_data in data_folder:
-                        name = new_data["name"]
+                        name = new_data["name"].strip()
                         transifex_dict["folders"].update({name: name})
 
                 elif 'color' in keys or 'folder' in keys:
@@ -338,7 +338,7 @@ def process_files(folders, version, type_system):
 
                 flag = []
                 for new_data in data:
-                    name = new_data["name"]
+                    name = new_data["name"].strip()
                     # Dla folderów
                     if 'folder' in new_data.keys() and 'color' in new_data.keys():
                         transifex_dict["folders"].update({name: name})
@@ -802,7 +802,7 @@ def process_files(folders, version, type_system):
 
                     # SPELLS =============================================================================================
                     if file == 'spells.json':
-                        name = new_data["name"]
+                        name = new_data["name"].strip()
 
                         # AreaDetail
                         try:
@@ -888,9 +888,6 @@ def process_files(folders, version, type_system):
 
                         except KeyError:
                             pass
-
-                    if file == 'equipment.json':
-                        name = new_data["name"]
 
                 transifex_dict = remove_empty_values(transifex_dict)
                 transifex_dict = remove_empty_values(transifex_dict)
