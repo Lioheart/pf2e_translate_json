@@ -9,12 +9,17 @@
         "Dash of Herbs": "Dash of Herbs",
         "Metal Carapace": "Metal Carapace",
         "Torrent in the Blood": "Torrent in the Blood",
+        "Ignite the Sun": "Ignite the Sun",
         "Armor in Earth": "Armor in Earth"
     },
     "entries": {
         "Armor in Earth": {
             "name": "Armor in Earth",
             "description": "<p>This armor was created by the @UUID[Compendium.pf2e.feats-srd.plEZoAyPwjAOdY4e]{Armor in Earth} impulse.</p>"
+        },
+        "Aura: Ignited Sun": {
+            "name": "Aura: Ignited Sun",
+            "description": "<p>This token has been created by @UUID[Compendium.pf2e.feats-srd.uKeUPPqV1cNnIy0h]{Ignite The Sun}.</p>"
         },
         "Effect: Armor in Earth": {
             "name": "Effect: Armor in Earth",
@@ -28,6 +33,10 @@
             "name": "Effect: Hardwood Armor",
             "description": "<p>Created by @UUID[Compendium.pf2e.feats-srd.cZa6br5C3Iyzqqi9]{Hardwood Armor}.</p>"
         },
+        "Effect: Ignite the Sun": {
+            "name": "Effect: Ignite the Sun",
+            "description": "<p>You have an active instance of @UUID[Compendium.pf2e.feats-srd.uKeUPPqV1cNnIy0h]{Ignite The Sun}. </p>"
+        },
         "Effect: Metal Carapace": {
             "name": "Effect: Metal Carapace",
             "description": "<p>Created by @UUID[Compendium.pf2e.feats-srd.HbdOZ8YTtu8ykASc]{Metal Carapace}.</p>"
@@ -39,6 +48,21 @@
         "Effect: Protector Tree": {
             "name": "Effect: Protector Tree",
             "description": "<p>Whenever an adjacent ally is hit by a Strike, the tree interposes its branch and takes the damage first. Any additional damage beyond what it takes to reduce the tree to 0 Hit Points is dealt to the original target.</p>"
+        },
+        "Effect: Sun's Light": {
+            "name": "Effect: Sun's Light",
+            "description": "<p>You are in the light of a sun created by @UUID[Compendium.pf2e.feats-srd.uKeUPPqV1cNnIy0h]{Ignite The Sun}. You deal an additional 1d6 fire damage with all Strikes, spells that deal fire damage, and impulses that deal fire damage.</p>",
+            "rules": {
+                "0": {
+                    "label": "Sun's Light"
+                },
+                "1": {
+                    "label": "Sun's Light"
+                },
+                "2": {
+                    "label": "Sun's Light"
+                }
+            }
         },
         "Effect: Thermal Nimbus Damage": {
             "name": "Effect: Thermal Nimbus Damage",
@@ -67,6 +91,12 @@
         "Metal Carapace Shield": {
             "name": "Metal Carapace Shield",
             "description": "<p>This shield was created by the @UUID[Compendium.pf2e.feats-srd.HbdOZ8YTtu8ykASc]{Metal Carapace} impulse.</p><p>You can @UUID[Compendium.pf2e.feats-srd.jM72TjJ965jocBV8]{Shield Block} with this shield even if you don't have that feat. The hand wielding this shield counts as a free hand for using impulses. The shield crumbles to flakes of rust if it becomes @UUID[Compendium.pf2e.conditionitems.6dNUvdb1dhToNDj3]{Broken} or leaves your grasp.</p><table class=\"pf2e\"><thead><tr><th>Hardness</th><th>HP</th><th>BT</th></tr></thead><tbody><tr><td>5</td><td>20</td><td>10</td></tr></tbody></table>"
+        }
+    },
+    "mapping": {
+        "rules": {
+            "converter": "translateRules",
+            "path": "system.rules"
         }
     }
 }
