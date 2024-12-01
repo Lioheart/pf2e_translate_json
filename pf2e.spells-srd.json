@@ -262,6 +262,13 @@
             "target": "1 living creature",
             "time": "1"
         },
+        "Ancestral Winds": {
+            "name": "Ancestral Winds",
+            "description": "<p>You call on the same energies that manifest ancestor storms, summoning wailing spirits to terrorize your foes. Living creatures in the area take 5d6 void damage and 1d6 mental damage and must attempt a Will save. Nonliving creatures are immune to this spell's effects.</p><hr /><p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature takes half damage and is @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 1}.</p>\n<p><strong>Failure</strong> The creature takes full damage and is @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 2}.</p>\n<p><strong>Critical Failure</strong> As failure, but the creature takes double damage and is @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned 1}.</p>\n<p>The first time each round you Sustain the spell, you can move the area up to 30 feet within the range of the spell. Living creatures in the new area must attempt saves with the same effects as above.</p>",
+            "duration": "1 minute",
+            "range": "120 feet",
+            "time": "2"
+        },
         "Ancient Dust": {
             "name": "Ancient Dust",
             "description": "<p>You cough up a cloud of gray soil, echoing the dust in the graves of Kemnebi's many victims. Each creature in the area takes void damage equal to your spellcasting modifier and 1 persistent void damage depending on its Fortitude save.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature takes half damage and no persistent damage.</p>\n<p><strong>Failure</strong> The creature takes full damage and persistent damage.</p>\n<p><strong>Critical Failure</strong> The creature takes double damage and double the persistent damage.</p>\n<hr />\n<p><strong>Heightened (+2)</strong> The initial void damage increases by 1d6, and the persistent damage increases by 1.</p>",
@@ -1021,7 +1028,7 @@
         },
         "Blink Charge": {
             "name": "Blink Charge",
-            "description": "<p>You propel yourself through the fabric of space to deal a blow carrying the momentum of your teleportation. You teleport to an empty space adjacent to a creature you can see within range, then make a Strike against the creature with a weapon you're wielding. The Strike deals damage, plus an extra 2d8 force damage, depending on the result of your Strike.</p>\n<hr />\n<p><strong>Critical Success</strong> Double damage, plus after the Strike, you can teleport the target into an empty space up to 5 feet away from its current position. The new space must be on the ground if it started on the ground, in the air if it was flying, and so on.</p>\n<p><strong>Success</strong> The Strike deals full damage.</p>\n<p><strong>Failure</strong> The Strike deals no damage, but the target takes @Damage[1d8[force]] damage.</p>\n<p><strong>Critical Failure</strong> The Strike deals no damage, and you take 1d8 force damage.</p>\n<hr />\n<p><strong>Heightened (+2)</strong> The spell's range increases by 60 feet, and any force damage the spell deals is increased by @Damage[1d8[force]].</p>",
+            "description": "<p>You propel yourself through the fabric of space to deal a blow carrying the momentum of your teleportation. You teleport to an empty space adjacent to a creature you can see within range, then make a Strike against the creature with a weapon you're wielding. The Strike deals damage, plus an extra 2d8 force damage, depending on the result of your Strike.</p><hr /><p><strong>Critical Success</strong> Double damage, plus after the Strike, you can teleport the target into an empty space up to 5 feet away from its current position. The new space must be on the ground if it started on the ground, in the air if it was flying, and so on.</p>\n<p><strong>Success</strong> The Strike deals full damage.</p>\n<p><strong>Failure</strong> The Strike deals no damage, but the target takes 1d8 force damage.</p>\n<p><strong>Critical Failure</strong> The Strike deals no damage, and you take 1d8 force damage.</p><hr /><p><strong>Heightened (+2)</strong> The spell's range increases by 60 feet, and any force damage the spell deals is increased by 1d8 force.</p>\n<p>@UUID[Compendium.pf2e.spell-effects.Item.lUL4nvIVYqFOwxAZ]{Spell Effect: Blink Charge}</p>",
             "range": "60 feet",
             "target": "1 creature",
             "time": "2"
@@ -1633,7 +1640,7 @@
         },
         "Cinder Gaze": {
             "name": "Cinder Gaze",
-            "description": "<p>You've learned to read the future in the patterns of flames and smoke. Though inexact and often symbolic, these readings help prepare you for upcoming events. When Casting this Spell, you must be near a fire (of any size) for the duration. Upon completion, roll 1d4 for your prediction. The benefit lasts for 10 minutes or until expended, whichever comes first. After casting cinder gaze, you can't cast it again for 10 minutes.</p>\n<ol>\n<li><strong>Terrible Danger</strong> You gain a +2 status bonus to your next initiative roll.</li>\n<li><strong>New Life</strong> The next time you take damage, just before taking the damage, you gain temporary Hit Points equal to 1 plus your spellcasting ability modifier.</li>\n<li><strong>Vivid Insight</strong> (fortune) The next time you attempt a check to Recall Knowledge, roll twice and take the higher result.</li>\n<li><strong>Good Fortune</strong> (fortune) The next time you attempt a saving throw, roll twice and take the better result.</li>\n</ol>\n<hr />\n<p><strong>Heightened (+1)</strong> The number of temporary Hit Points from new life increases by 2.</p>\n<p>@UUID[Compendium.pf2e.spell-effects.Item.myWvjlGLvbzkSCNO]{Effect: Cinder Gaze}</p>",
+            "description": "<p>You've learned to read the future in the patterns of flames and smoke. Though inexact and often symbolic, these readings help prepare you for upcoming events. When Casting this Spell, you must be near a fire (of any size) for the duration. Upon completion, roll 1d4 for your prediction. The benefit lasts for 10 minutes or until expended, whichever comes first. After casting cinder gaze, you can't cast it again for 10 minutes.</p><ol><li><strong>Terrible Danger</strong> You gain a +2 status bonus to your next initiative roll.</li><li><strong>New Life</strong> The next time you take damage, just before taking the damage, you gain temporary Hit Points equal to 1 plus your spellcasting ability modifier.</li><li><strong>Vivid Insight</strong> (fortune) The next time you attempt a check to Recall Knowledge, roll twice and take the higher result.</li><li><strong>Good Fortune</strong> (fortune) The next time you attempt a saving throw, roll twice and take the better result.</li></ol><hr /><p><strong>Heightened (+1)</strong> The number of temporary Hit Points from new life increases by 2.</p>\n<p>@UUID[Compendium.pf2e.spell-effects.Item.myWvjlGLvbzkSCNO]{Spell Effect: Cinder Gaze}</p>",
             "time": "1 minute"
         },
         "Cinder Swarm": {
@@ -2544,7 +2551,7 @@
         },
         "Debilitating Terror": {
             "name": "Debilitating Terror",
-            "description": "<p>You fill the target's mind with terrifying images to disrupt their combat focus. The target must attempt a Will save.</p><hr /><p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target takes a \u20131 circumstance penalty to attack and damage rolls against you.</p>\n<p>@UUID[Compendium.pf2e.spell-effects.Item.sipLHLOyS7sQ0KQV]{Effect: Debilitating Terror}</p>\n<p><strong>Failure</strong> The target can't use hostile actions against you.</p>\n<p><strong>Critical Failure</strong> The target is @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned 1} and can't use hostile actions against you.</p>",
+            "description": "<p>You fill the target's mind with terrifying images to disrupt their combat focus. The target must attempt a Will save.</p><hr /><p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target takes a \u20131 circumstance penalty to attack and damage rolls against you.</p>\n<p>@UUID[Compendium.pf2e.spell-effects.Item.sipLHLOyS7sQ0KQV]{Spell Effect: Debilitating Terror}</p>\n<p><strong>Failure</strong> The target can't use hostile actions against you.</p>\n<p><strong>Critical Failure</strong> The target is @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned 1} and can't use hostile actions against you.</p>",
             "duration": "until the start of your next turn",
             "range": "30 feet",
             "target": "1 creature",
@@ -3645,6 +3652,15 @@
             "requirements": "You must be Bonded with a Spirit",
             "time": "1"
         },
+        "Entreat Thunderbird": {
+            "name": "Entreat Thunderbird",
+            "description": "<p>You entreat the thunderbird in the Tusk Mountains to come to your aid. While performing this ritual, the secondary casters can appeal to the thunderbird's pride or tempestuous nature to gain a +2 circumstance bonus to their checks.</p><hr /><p><strong>Critical Success</strong> The thunderbird is helpful to the casters for the duration.</p>\n<p><strong>Success</strong> The thunderbird is friendly to the casters for the duration.</p>\n<p><strong>Failure</strong> The thunderbird ignores the entreaty and remains indifferent.</p>\n<p><strong>Critical Failure</strong> The thunderbird takes offense and permanently departs the area.</p>",
+            "cost": "rare incense and offerings worth 300 gp",
+            "duration": "1 month",
+            "time": "1 hour",
+            "primarycheck": "DC 29 Nature or Religion",
+            "secondarycheck": "Diplomacy, Mountain Lore, Nature, or Survival"
+        },
         "Entreat the Many": {
             "name": "Entreat the Many",
             "description": "<p>You manifest echoes of all the spirits you've ever bonded with at once, in a spiraling cyclone of colorful forms. They deal 8d8 force damage to each enemy in the area, with a basic Fortitude save. Additionally, creatures that critically fail the save are knocked @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone}.</p><hr /><p><strong>Heightened (+1)</strong> The damage increases by 1d8.</p>",
@@ -3747,18 +3763,7 @@
             "description": "<p>You reach out and sow glittering splinters of force throughout the area, otherworldly caltrops of will and ectoplasm. The area is difficult terrain, even to flying or incorporeal creatures. Any creature that moves through the area takes 1d4 piercing damage per square traversed, with a basic Reflex save made at the end of each move action they take through the area.</p>\n<hr />\n<p><strong>Heightened (+2)</strong> The spell's area increases by 5 feet, and the piercing damage increases by 1.</p>",
             "duration": "1 minute",
             "range": "60 feet",
-            "time": "2",
-            "spellVariants": {
-                "cZnJKUusAPSiR1de": {
-                    "name": "Etheric Shards (5)"
-                },
-                "i6bpmbq7m2xyhw5h": {
-                    "name": "Etheric Shards (7)"
-                },
-                "qc6zredmnvsz6x0m": {
-                    "name": "Etheric Shards (9)"
-                }
-            }
+            "time": "2"
         },
         "Euphoric Renewal": {
             "name": "Euphoric Renewal",
@@ -3823,7 +3828,7 @@
         },
         "Expeditious Excavation": {
             "name": "Expeditious Excavation",
-            "description": "<p><strong>Area</strong>(continued) cube of dirt 5 feet across or smaller</p><hr /><p>You remove loose dirt, dust, gravel, sand, and the like (though not solid stone) up to the size of a 5-foot cube. Any Medium or smaller creature standing atop the earth when the spell is cast must attempt a Reflex save or @Check[acrobatics] check.</p>\n<p><strong>Success</strong> The creature is unaffected and can choose to either descend the pit without damage or move to the nearest available space of its choice.</p>\n<p><strong>Failure</strong> The creature falls @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone} in the nearest available space of its choice or falls into the pit if it prefers.</p>\n<p><strong>Critical Failure</strong> The creature falls into the pit excavated by the spell and lands prone, taking falling damage as normal.</p><hr /><p><strong>Heightened (+2)</strong> The spell can excavate an additional 5-foot cube of earth. If you excavate all four 5-foot cubes beneath a Large creature, it must attempt a Reflex save or Acrobatics check, as above.</p>",
+            "description": "<p><strong>Area</strong> (continued) cube of dirt 5 feet across or smaller</p><hr /><p>You remove loose dirt, dust, gravel, sand, and the like (though not solid stone) up to the size of a 5-foot cube. Any Medium or smaller creature standing atop the earth when the spell is cast must attempt a Reflex save or @Check[acrobatics] check.</p>\n<p><strong>Success</strong> The creature is unaffected and can choose to either descend the pit without damage or move to the nearest available space of its choice.</p>\n<p><strong>Failure</strong> The creature falls @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone} in the nearest available space of its choice or falls into the pit if it prefers.</p>\n<p><strong>Critical Failure</strong> The creature falls into the pit excavated by the spell and lands prone, taking falling damage as normal.</p><hr /><p><strong>Heightened (+2)</strong> The spell can excavate an additional 5-foot cube of earth. If you excavate all four 5-foot cubes beneath a Large creature, it must attempt a Reflex save or Acrobatics check, as above.</p>",
             "range": "touch",
             "time": "2"
         },
@@ -6066,7 +6071,7 @@
         },
         "Lay on Hands": {
             "name": "Lay on Hands",
-            "description": "<p>Your hands become infused with powerful vitality, capable of healing a living creature or damaging an undead creature with a touch.</p>\n<ul>\n<li><strong>Willing Living Creature</strong> The target regains 6 Hit Points. If the target is someone other than yourself, it also gains a +2 status bonus to AC for 1 round. @UUID[Compendium.pf2e.spell-effects.Item.lyLMiauxIVUM3oF1]{Spell Effect: Lay on Hands}</li>\n<li><strong>Undead Creature</strong> The target takes 1d6 vitality damage with a basic Fortitude save; on a failure, the target also takes a \u20132 status penalty to AC for 1 round. @UUID[Compendium.pf2e.spell-effects.Item.JhihziXQuoteftdd]{Spell Effect: Lay on Hands (Vs. Undead)}</li>\n</ul>\n<hr />\n<p><strong>Heightened (+1)</strong> The amount of healing increases by 6, and the damage to an undead target increases by 1d6.</p>",
+            "description": "<p>Your hands become infused with powerful vitality, capable of healing a living creature or damaging an undead creature with a touch.</p><ul><li><strong>Willing Living Creature</strong> The target regains 6 Hit Points. If the target is someone other than yourself, it also gains a +2 status bonus to AC for 1 round.</li><li><strong>Undead Creature</strong> The target takes 1d6 vitality damage with a basic Fortitude save; on a failure, the target also takes a \u20132 status penalty to AC for 1 round.</li></ul><hr /><p><strong>Heightened (+1)</strong> The amount of healing increases by 6, and the damage to an undead target increases by 1d6.</p>\n<p>@UUID[Compendium.pf2e.spell-effects.Item.lyLMiauxIVUM3oF1]{Spell Effect: Lay on Hands}</p>",
             "range": "touch",
             "target": "1 willing living creature or 1 undead creature",
             "time": "1",
@@ -6966,6 +6971,13 @@
             "description": "<p>With a quick series of wrist flicks, music fills the air. While the music can be heard as if it were performed normally at a distance, creatures in the spell's area become affected in more significant ways. When you cast musical shift, select a key signature (to affect enemies) and a time signature (to affect allies) from the options below; all creatures within the area are affected as indicated. You can change the key signature or time signature as part of the action you take when you Sustain the spell.</p>\n<p><strong>Flat</strong> (key signature) Whenever an enemy critically fails at a Strike, saving throw, or skill check, they fall @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone} in addition to other effects from the critical failure.</p>\n<p><strong>Natural</strong> (key signature) Enemies take a \u20132 status penalty to attack rolls.</p>\n<p><strong>Sharp</strong> (key signature) Whenever an enemy takes piercing or slashing damage, they also take 2d6 persistent bleed damage.</p>\n<p><strong>Double</strong> (time signature) You and your allies become @UUID[Compendium.pf2e.conditionitems.Item.nlCjDvLMf2EkV2dl]{Quickened} and can use the extra action each round only for @UUID[Compendium.pf2e.actionspf2e.Item.d5I6018Mci2SWokk]{Leap}, Stand, Step, or Stride actions.</p>\n<p><strong>Quadruple</strong> (time signature) You and your allies gain a +2 status bonus to attack rolls.</p>\n<p><strong>Triple</strong> (time signature) You and your allies gain a +2 status bonus to Armor Class and Reflex saving throws.</p>\n<p>@UUID[Compendium.pf2e.spell-effects.Item.1W1LZ3qrZLXr2Mn7]{Spell Effect: Musical Shift}</p>",
             "duration": "1 minute",
             "time": "2"
+        },
+        "Mutilate": {
+            "name": "Mutilate",
+            "description": "<p>You cut your own body in a ritualistic manner, causing similar damage to a creature in your line of sight. These cuts are superficial and cause 1d4 slashing damage to you; however, the wounds that open up on our target's body are far deeper. The targeted creature takes 5d8 slashing damage; a creature that critically fails this saving throw also takes @Damage[(1d8 + @item.level -4)[bleed]] damage. If you cast this as a three-action spell, the spell instead affects a 5-foot burst.</p><hr /><p><strong>Heightened (+1)</strong> Increase the damage dealt to the target by 1d8, and increase the persistent bleed damage by 1.</p>",
+            "range": "40 feet",
+            "target": "1 creature in line of sight",
+            "time": "2 or 3"
         },
         "Mycological Malady": {
             "name": "Mycological Malady",
@@ -7873,7 +7885,7 @@
         },
         "Possession": {
             "name": "Possession",
-            "description": "<p>You send your mind and soul into the target's body, attempting to take control. The target must attempt a Will save. If you want to exert less control over the target, you can choose to use the effects of any degree of success more favorable to the target.</p>\n<p>While you're possessing a target, your own body is @UUID[Compendium.pf2e.conditionitems.Item.fBnFDH2MTzgFijKf]{Unconscious} and can't wake up normally. You can sense everything the possessed target does. You can Dismiss this spell. If the possessed body dies, the spell ends and you must succeed at a Fortitude save against your spell DC or be @UUID[Compendium.pf2e.conditionitems.Item.6uEgoh53GbXuHpTF]{Paralyzed} for 1 hour, or 24 hours on a critical failure. If the spell ends during an encounter, you act just before the possessed creature's initiative.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> You possess the target but can't control it. You ride along in the body while the spell lasts.</p>\n<p><strong>Failure</strong> You possess the target and take partial control of it. You no longer have a separate turn; instead, you might control the target. At the start of each of the target's turns, it attempts another Will save. If it fails, it's controlled by you on that turn; if it succeeds, it chooses its own actions; and if it critically succeeds, it forces you out and the spell ends.</p>\n<p><strong>Critical Failure</strong> You possess the target fully, and it can only watch as you manipulate it like a puppet. The target is controlled by you.</p>\n<hr />\n<p><strong>Heightened (9th)</strong> The duration is 10 minutes, and you can physically enter the creature's body, protecting your physical body while the spell lasts.</p>",
+            "description": "<p>You send your mind and soul into the target's body, attempting to take control. The target must attempt a Will save. If you want to exert less control over the target, you can choose to use the effects of any degree of success more favorable to the target.</p>\n<p>While you're possessing a target, your own body is @UUID[Compendium.pf2e.conditionitems.Item.fBnFDH2MTzgFijKf]{Unconscious} and can't wake up normally. You can sense everything the possessed target does. You can Dismiss this spell. If the possessed body dies, the spell ends and you must succeed at a Fortitude save against your spell DC or be @UUID[Compendium.pf2e.conditionitems.Item.6uEgoh53GbXuHpTF]{Paralyzed} for 1 hour, or 24 hours on a critical failure. If the spell ends during an encounter, you act just before the possessed creature's initiative.</p><hr /><p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> You possess the target but can't control it. You ride along in the body while the spell lasts.</p>\n<p><strong>Failure</strong> You possess the target and take partial control of it. You no longer have a separate turn; instead, you might control the target. At the start of each of the target's turns, it attempts another Will save. If it fails, it's @UUID[Compendium.pf2e.conditionitems.Item.9qGBRpbX9NEwtAAr]{Controlled} by you on that turn; if it succeeds, it chooses its own actions; and if it critically succeeds, it forces you out and the spell ends.</p>\n<p><strong>Critical Failure</strong> You possess the target fully, and it can only watch as you manipulate it like a puppet. The target is controlled by you.</p><hr /><p><strong>Heightened (9th)</strong> The duration is 10 minutes, and you can physically enter the creature's body, protecting your physical body while the spell lasts.</p>",
             "duration": "1 minute",
             "range": "30 feet",
             "target": "1 living creature",
@@ -8076,7 +8088,7 @@
         },
         "Protective Wards": {
             "name": "Protective Wards",
-            "description": "<p>You expand a ring of glyphs that shields your allies. You and any allies in the area gain a +1 status bonus to AC. Each time you Sustain the spell, the emanation's radius increases by 5 feet, to a maximum of 30 feet.</p>\n<p>@UUID[Compendium.pf2e.spell-effects.Item.5p3bKvWsJgo83FS1]{Aura: Protective Ward}</p>",
+            "description": "<p>You expand a ring of glyphs that shields your allies. You and any allies in the area gain a +1 status bonus to AC. Each time you Sustain the spell, the emanation's radius increases by 5 feet, to a maximum of 30 feet.</p>\n<p>@UUID[Compendium.pf2e.spell-effects.Item.5p3bKvWsJgo83FS1]{Aura: Protective Wards}</p>",
             "duration": "1 minute",
             "time": "1"
         },
@@ -8146,7 +8158,7 @@
         },
         "Punishing Winds": {
             "name": "Punishing Winds",
-            "description": "<p><strong>Area (continued)</strong> 30-foot-radius, 100-foot-tall cylinder</p><hr /><p>Violent winds and a powerful downdraft fill the area, forming a cyclone. All flying creatures in the area descend 40 feet. The entire area is greater difficult terrain for Flying creatures, and difficult terrain for creatures on the ground or Climbing. Any creature that ends its turn Flying within the area descends 20 feet. Any creature pushed into a surface by this spell's winds takes bludgeoning damage as though it had fallen.</p>\n<p>The squares at the outside vertical edges of the cylinder prevent creatures from leaving. These squares are greater difficult terrain, and a creature attempting to push through must succeed at an Athletics check or Acrobatics check to Maneuver in Flight against your spell DC to get through. A creature that fails ends its current action but can try again.</p>",
+            "description": "<p><strong>Area</strong> (continued) 30-foot-radius, 100-foot-tall cylinder</p><hr /><p>Violent winds and a powerful downdraft fill the area, forming a cyclone. All flying creatures in the area descend 40 feet. The entire area is greater difficult terrain for Flying creatures, and difficult terrain for creatures on the ground or Climbing. Any creature that ends its turn Flying within the area descends 20 feet. Any creature pushed into a surface by this spell's winds takes bludgeoning damage as though it had fallen.</p>\n<p>The squares at the outside vertical edges of the cylinder prevent creatures from leaving. These squares are greater difficult terrain, and a creature attempting to push through must succeed at an Athletics check or Acrobatics check to Maneuver in Flight against your spell DC to get through. A creature that fails ends its current action but can try again.</p>",
             "duration": "1 minute",
             "range": "100 feet",
             "time": "3"
@@ -8685,7 +8697,7 @@
         },
         "Reverse Gravity": {
             "name": "Reverse Gravity",
-            "description": "<p>You reverse gravity in the area. Creatures and objects that aren't secured to the ground immediately fall upward to the top of the area. A creature might be able to Grab an Edge to arrest its fall if it falls past an appropriate surface. If a creature falls against a solid object (such as a ceiling), it takes the appropriate amount of falling damage and lands on the surface. Once an object or creature reaches the top of the area, it floats, caught between the normal and reversed gravity. The creature can move along the plane where the two forms of gravity meet. Creatures that can levitate or fly can use those abilities to mitigate the effects of reverse gravity.When reverse gravity ends, all creatures and objects caught in the area fall back down. Likewise, anything that moves beyond the spell's area is subjected to normal gravity again.</p>",
+            "description": "<p><strong>Area</strong> (continued) 20-foot radius, 40-foot tall cylinder</p><hr /><p>You reverse gravity in the area. Creatures and objects that aren't secured to the ground immediately fall upward to the top of the area. A creature might be able to @UUID[Compendium.pf2e.actionspf2e.Item.3yoajuKjwHZ9ApUY]{Grab an Edge} to arrest its fall if it falls past an appropriate surface. If a creature falls against a solid object (such as a ceiling), it takes the appropriate amount of falling damage and lands on the surface. Once an object or creature reaches the top of the area, it floats, caught between the normal and reversed gravity. The creature can move along the plane where the two forms of gravity meet. Creatures that can levitate or fly can use those abilities to mitigate the effects of <em>reverse gravity</em>.</p>\n<p>When <em>reverse gravity</em> ends, all creatures and objects caught in the area fall back down. Likewise, anything that moves beyond the spell's area is subjected to normal gravity again.</p>",
             "duration": "1 minute",
             "range": "120 feet",
             "time": "3"
@@ -9490,7 +9502,7 @@
         },
         "Shockwave": {
             "name": "Shockwave",
-            "description": "<p>You create a wave of energy that ripples through the earth. Terrestrial creatures in the affected area must attempt a Reflex save to avoid stumbling as the shockwave shakes the ground.</p><hr /><p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} until the start of its next turn.</p>\n<p><strong>Failure</strong> The creature falls @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone}.</p>\n<p><strong>Critical Failure</strong> As failure, plus the creature takes @Damage[1d6[bludgeoning]] damage.</p><hr /><p><strong>Heightened (+1)</strong> The area increases by 5 feet (to a @Template[type:cone|distance:20] at 2nd rank, and so on).</p>",
+            "description": "<p>You create a wave of energy that ripples through the earth. Terrestrial creatures in the affected area must attempt a Reflex save to avoid stumbling as the shockwave shakes the ground.</p><hr /><p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} until the start of its next turn.</p>\n<p><strong>Failure</strong> The creature falls @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone}.</p>\n<p><strong>Critical Failure</strong> As failure, plus the creature takes 1d6 bludgeoning damage.</p><hr /><p><strong>Heightened (+1)</strong> The area increases by 5 feet (to a 20-foot cone at 2nd rank, and so on).</p>",
             "time": "2"
         },
         "Shooting Star": {
@@ -10228,6 +10240,14 @@
             "duration": "1 minute",
             "range": "60 feet",
             "time": "3"
+        },
+        "Strength of Mind": {
+            "name": "Strength of Mind",
+            "description": "<p>You bolster your ally with reminders of their physical prowess, granting them additional defenses against harmful mental effects. The target gains a +1 status bonus to saving throws against mental effects and against effects that hinder movement (including those that reduce Speed or apply the @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed}, @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Immobilized}, or @UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{Restrained} conditions). This bonus increases to +2 if the source of the effect has the fear trait.</p>\n<p>@UUID[Compendium.pf2e.spell-effects.Item.pW1jauNjZ1owaciQ]{Spell Effect: Strength of Mind}</p>",
+            "duration": "10 minutes",
+            "range": "touch",
+            "target": "1 willing creature",
+            "time": "1"
         },
         "String of Fate": {
             "name": "String of Fate",
@@ -11708,6 +11728,12 @@
             "range": "60 feet",
             "target": "1 ally",
             "time": "1"
+        },
+        "Utter Destruction": {
+            "name": "Utter Destruction",
+            "description": "<p>You screech with an unearthly voice made of destructive energy, smashing everything that lies before you. Creatures in the area take 4d8 sonic damage and 4d8 void damage. Each creature must attempt a Fortitude save. Unattended objects of Hardness 5 or less in the area of effect are destroyed.</p><hr /><p><strong>Critical Success</strong> The creature takes half damage.</p>\n<p><strong>Success</strong> The creature takes half damage and is @UUID[Compendium.pf2e.conditionitems.Item.9PR9y0bi4JPKnHPR]{Deafened} for 1 round.</p>\n<p><strong>Failure</strong> The creature takes full damage and is deafened for 1 minute.</p>\n<p><strong>Critical Failure</strong> The creature takes double damage and is permanently deafened.</p><hr /><p><strong>Heightened (+1)</strong> The sonic and void damage each increase by 1d8. The Hardness threshold of items destroyed by the spell increases by 1.</p>",
+            "range": "120 feet",
+            "time": "2"
         },
         "Vacuum": {
             "name": "Vacuum",

@@ -13,6 +13,20 @@
                 }
             }
         },
+        "Army of Mist": {
+            "name": "Army of Mist",
+            "descriptionHazard": "<p>The wind intensifies and the seeping fog rushes forward in a stampede of ghostly orcs screaming wordless battle cries, weapons raised to slaughter their foes.</p>",
+            "disable": "<p>@Check[occultism|dc:28] (expert) to funnel the magic powering the mist back into itself, or @Check[religion|dc:30] (expert) to exorcise some of the trapped souls and weaken the storm; three total successes in any combination are required to disable the haunt</p>",
+            "reset": "<p>The haunt deactivates 1 minute after all creatures leave the area of Fort Whiteskull but resets immediately. The army of mist resets 1 day after being disabled if the ancestor storm isn't put to rest.</p>",
+            "routine": "<p>(3 actions) The army of mist uses 3 actions to make frozen fists Strikes against three random creatures, favoring non-orcs or anyone who attempted to Disable it within the past round.</p>",
+            "stealth": "<p>(expert) or @UUID[Compendium.pf2e.spells-srd.Item.gpzpAAAJ1Lza2JVl]{Detect Magic}</p>",
+            "items": {
+                "action->Battle Roar": {
+                    "name": "Battle Roar",
+                    "description": "<p><strong>Trigger</strong> A creature enters the haunt's area</p><hr /><p><strong>Effect</strong> The orc warriors roar in fury, dealing @Damage[(2d10+13)[sonic]] damage (@Check[fortitude|dc:28|basic] save) to all living creatures within the haunt, then rolls initiative. Creatures that critically fail their saves are @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 1} until Umbra's Last Stand is quelled.</p>"
+                }
+            }
+        },
         "Aurochs": {
             "name": "Aurochs",
             "publicNotes": "<p>This massive bovine looks like a larger, wilder version of the domesticated cattle found throughout the Inner Sea region. During winter, vast herds of the animals roam the southern reaches of the Realm of the Mammoth Lords, but as the ice high in the mountains begins to melt, the aurochs migrate south into Belkzen, following their ancestral route along the Flood Road. Once the water flows in earnest and turns to massive floods, the sudden surge of greenery provides the aurochs with all the food they need to survive.</p>\n<p>Aurochs are essential to life in Belkzen. Not only do the orcs there hunt the wild cattle for their meat, but they use every part of the aurochs, from hide to bones, to craft their weapons and tools. The aurochs' arrival prompts the beginning of the Flood Truce, during which the usually war-focused orc holds cease all hostilities to take advantage of this time of plenty.</p>\n<p>While groups of 20 or fewer animals are sometimes encountered, most aurochs travel in herds that stretch to the horizon. The land thunders under the weight of these herds, and the dust kicked up by their hooves is often spotted days before the aurochs\u2014or the floodwaters that spurred their migration\u2014arrive.</p>\n<p>Aurochs bulls stand between 6 and 7 feet tall at the shoulder and weigh around 2,500 pounds, although prodigious specimens can grow to over 7 feet tall and 3,000 pounds. Cows are smaller, standing near 6 feet at the shoulder and weighing up to 2,000 pounds. All aurochs have slightly curved horns that grow up to three feet long from base to spear-sharp tip.</p>\n<p>The aurochs is represented in much of Belkzen's artwork. Not only are the animals vital to survival in that unforgiving land, but their strength, power, and tenacity serve as potent symbols for orc holds.</p><h2>Aurochs Rolling</h2><p>Farmers throughout the Inner Sea often joke about cow tipping: sneaking up on an unsuspecting bovine and pushing it over while it sleeps. But since cattle sleep lying down, the animal usually has the last laugh. Nonetheless, some younger orcs in Belkzen spend evenings creeping up on sleeping aurochs to roll them over. This usually results in little more than a startled aurochs.</p>"
@@ -120,15 +134,99 @@
         "Blisterwell Warrior": {
             "name": "Blisterwell Warrior"
         },
+        "Bloodwing": {
+            "name": "Bloodwing"
+        },
         "Bristle Boar": {
             "name": "Bristle Boar",
             "publicNotes": "<p>The wild animals that have adapted to the harsh environs of Belkzen are either fierce enough to scare off predators, tough enough to survive attacks, or smart enough to avoid trouble. Bristle boars are all three. Many orcs admire the bristle boar, viewing them as living symbols of the toughness Belkzen demands from its inhabitants. With their spiny manes, sharp tusks, keen noses, and irascible nature, the creatures are both intimidating and dangerous.</p>\n<p>Hunters throughout the Inner Sea region know that taking down a wild boar can prove deadly for the unprepared. Bristle boars\u2014the name given to both male and female specimen\u2014are even more challenging to kill. Further, their meat is sinewy, so few hunters even bother with the animals. For those who fell the beasts, the boars' spined hides often serve as trophies of the hunter's skill.</p>\n<p>Bristle boars are not as reliant on the Deluge as other animals in Belkzen. Though they're certainly found in the green areas that spring up during the annual flooding, sounders of bristle boars can survive even in desolate areas like the Dirt Sea, grubbing for sustenance where few others can. The Cleft Head Hold maintains a small herd of tamed bristle boars.</p>\n<p>The orcs have learned that, with the right trainer, the clever animals make excellent companions. Aside from their utility in battle, the boars are often used to sniff out the rare yellow truffles that grow throughout the hold.</p>\n<p>A typical bristle boar stands 4 feet tall and weighs roughly 200 pounds.</p><h2>Stuck Treasure</h2><p>Although they don't seek out shiny objects like some animals, bristle boars who evade hunters often escape with weapons embedded in their thick hides. The Empty Hand orcs tell of a famous bristle boar dubbed \"Silverspear\" after the silvery spear stuck in its hide. Stories claim the boar's spear is imbued with powerful magic, and while many warriors have hunted Silverspear to claim its weapon, so far none have succeeded.</p>"
+        },
+        "Bugark": {
+            "name": "Bugark",
+            "sensesDetails": "snow vision",
+            "hpDetails": "void healing",
+            "items": {
+                "equipment->Religious Symbol of Zagresh": {
+                    "name": "Religious Symbol of Zagresh",
+                    "description": "<p>This piece of wood or silver is emblazoned with an image representing a deity. Some divine spellcasters, such as clerics, can use a religious symbol of their deity to use certain abilities and cast some spells. A religious symbol can be worn on the body on a chain or pin, or can be held.</p>"
+                }
+            }
+        },
+        "Bull Stampede": {
+            "name": "Bull Stampede",
+            "descriptionHazard": "<p>Agitated aurochs trample through the streets.</p>",
+            "disable": "<p>Four @Check[athletics|dc:27], @Check[intimidation|dc:27], @Check[nature|dc:27] (expert), or @Check[survival|dc:27] (expert) checks to guide the herd, find it paths through Stockside, or keep it in line.</p>",
+            "routine": "<p>(1 action) The stampede advances, trampling everything in its path. Each creature attempting to control the stampede must attempt a @Check[reflex|dc:30] save or be caught up in the stampede, taking @Damage[(2d12+15)[bludgeoning]] damage; a creature who succeeded at a skill check to disable the hazard this round has a +1 circumstance bonus to the Reflex save.</p><hr><p><strong>Critical Success</strong> The creature takes no damage.</p><p><strong>Success</strong> The creature takes half damage.</p><p><strong>Failure</strong> The creature takes full damage.</p><p><strong>Critical Failure</strong> The creature takes double damage and cannot attempt to disable the hazard next round, as they must spend it extricating themselves from the stampede.</p>",
+            "stealth": "<p>(trained) to anticipate the herd's movements</p>",
+            "items": {
+                "action->Rampage": {
+                    "name": "Rampage",
+                    "description": "<p><strong>Trigger</strong> A creature frees the bulls from the stable</p><hr /><p><strong>Effect</strong> The hazard rolls initiative as the bulls stampede.</p>"
+                }
+            }
+        },
+        "Bull of Zagresh": {
+            "name": "Bull of Zagresh",
+            "publicNotes": "<p>The fierce bull of Zagresh is an enormous, easily riled bovine with sharp horns like a stag's. The bulls are bred and raised for sport as well as war.</p><hr /><p>Belkzen's megafauna husbandry is a source of orc pride, with many species bred for everyday life. In battle, they provide an edge against foes.</p>"
         },
         "Champion of Zagresh": {
             "name": "Champion of Zagresh",
             "items": {
                 "spellcastingEntry->Divine Focus Spells": {
                     "name": "Divine Focus Spells"
+                }
+            }
+        },
+        "Collapsing Cliff Stairs": {
+            "name": "Collapsing Cliff Stairs",
+            "descriptionHazard": "<p>The stairs' supports are rigged to collapse if the trip wires are triggered, sending a 10-foot section of stairs tumbling down the cliff.</p>",
+            "disable": "<p>@Check[crafting|dc:25] or Engineering Lore to shore up the supports, @Check[perception|dc:27] to notice the @UUID[Compendium.pf2e.conditionitems.Item.iU0fEDdBp3rXpTMC]{Hidden} bypass lever in the stair railing, or @Check[thievery|dc:29] to disrupt the connecting mechanism</p>",
+            "stealth": "<p>(trained)</p>",
+            "items": {
+                "action->Structural Collapse": {
+                    "name": "Structural Collapse",
+                    "description": "<p><strong>Trigger</strong> The trip wires are pulled or severed</p><hr /><p><strong>Effect</strong> The wires pull away the mechanisms supporting the stairs, causing them to collapse. Each creature standing on the affected area must attempt a @Check[reflex|dc:29] save.</p><hr /><p><strong>Critical Success</strong> The creature jumps safely to the cliff and is unaffected.</p>\n<p><strong>Success</strong> The creature jumps to the cliff, but takes @Damage[10[bludgeoning]] damage from the leap.</p>\n<p><strong>Failure</strong> The creature falls to the next section of stairs, 100 feet down the cliff, and takes @Damage[50[bludgeoning]] damage. They can @UUID[Compendium.pf2e.actionspf2e.Item.3yoajuKjwHZ9ApUY]{Grab an Edge} to avoid falling.</p>\n<p><strong>Critical Failure</strong> As failure, but the fall distance is 200 feet, all the way down the cliff, dealing @Damage[100[bludgeoning]] damage.</p>"
+                }
+            }
+        },
+        "Death Tower Necromancer": {
+            "name": "Death Tower Necromancer",
+            "acDetails": "(29 with mystic armor)",
+            "items": {
+                "spellcastingEntry->Arcane Prepared Spells": {
+                    "name": "Arcane Prepared Spells"
+                },
+                "spellcastingEntry->Wizard School Spells": {
+                    "name": "Wizard School Spells"
+                },
+                "equipment->Charm of Cold Resistance": {
+                    "name": "Charm of Cold Resistance",
+                    "description": "<p>This charm, normally hung from the belt or worn around the neck, grants you resistance 5 against one type of energy damage: acid, cold, electricity, fire, or sonic. Each charm is crafted to protect against a particular type of energy damage, and its design usually embodies the type of energy it protects the wearer from in some way. For instance, a <em>charm of cold resistance</em> could be carved in the shape of a yeti, whereas a <em>charm of fire resistance</em> would be made from volcanic glass.</p>"
+                },
+                "equipment->Spellbook": {
+                    "name": "Spellbook",
+                    "description": "<p>A spellbook holds the written knowledge necessary to learn and prepare various spells, a necessity for wizards (who typically get one for free) and a useful luxury for other spellcasters looking to learn additional spells. Each spellbook can hold up to 100 spells. The Price listed is for a blank spellbook.</p>"
+                },
+                "equipment->Wand of Teeming Ghosts (2nd-Rank Spell, Bonded Item)": {
+                    "name": "Wand of Teeming Ghosts (2nd-Rank Spell, Bonded Item)",
+                    "description": "<p>This pale wooden wand is carved to resemble a thigh bone with metal caps at each end. Ghostly tendrils seem to swirl around it every so often.</p>\n<hr />\n<p><strong>Activate</strong> @UUID[Compendium.pf2e.actionspf2e.Item.aBQ8ajvEBByv45yz]{Cast a Spell}</p>\n<p><strong>Frequency</strong> once per day, plus overcharge</p>\n<hr />\n<p><strong>Effect</strong> You cast @UUID[Compendium.pf2e.spells-srd.Item.8ViwItUgwT4lOvvb]{False Vitality} at 2nd rank. During the duration of the spell, wisps that resemble spirits flit around you as long as you have any temporary Hit Points from false life, and you can use the following action.</p>\n<hr />\n<p><strong>Activation</strong> <span class=\"action-glyph\">F</span> envision</p>\n<p><strong>Trigger</strong> You successfully impart the @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 1} condition to a creature</p>\n<p><strong>Requirements</strong> You have at least 1 temporary Hit Point from false life</p>\n<hr />\n<p><strong>Effect</strong> You end false life and increase the creature's frightened condition value to 2.</p>\n<hr />\n<p><strong>Craft Requirements</strong> Supply a casting of False Life at 2nd level</p>"
+                }
+            }
+        },
+        "Deathless Zealot of Zagresh": {
+            "name": "Deathless Zealot of Zagresh",
+            "publicNotes": "<p>Deathless zealots are powerful variants of deathless acolytes. They're as ambitious as deathless hierophants but more martially oriented, seeking out and slaying alleged heretics and enemies of their faith in pursuit of completing their divine missions. This zealot is dedicated to Zagresh, but any deity of warfare could create a deathless zealot. Due to their focus on battle and conflict, orc deities are especially likely to create deathless zealots in preference to other forms of deathless acolytes.</p><h2>War's Toll</h2><p>In the wake of the War of Immortals, deathless acolytes of all types have grown in number, especially deathless zealots, as both deities and their followers fell in battle without completing divine mandates. Curiously, deathless zealots of slain deities retain their power and continue to roam, still striving to ca rry out missions granted to them by their lost patrons.</p>",
+            "hpDetails": "void healing",
+            "items": {
+                "spellcastingEntry->Divine Prepared Spells": {
+                    "name": "Divine Prepared Spells"
+                },
+                "spellcastingEntry->Divine Focus Spells": {
+                    "name": "Divine Focus Spells"
+                },
+                "equipment->Religious Symbol of Zagresh": {
+                    "name": "Religious Symbol of Zagresh",
+                    "description": "<p>This piece of wood or silver is emblazoned with an image representing a deity. Some divine spellcasters, such as clerics, can use a religious symbol of their deity to use certain abilities and cast some spells. A religious symbol can be worn on the body on a chain or pin, or can be held.</p>"
                 }
             }
         },
@@ -185,6 +283,15 @@
             "blurb": "Variant floodslain",
             "hpDetails": "void healing"
         },
+        "Graveknight (Umbra)": {
+            "name": "Graveknight (Umbra)",
+            "publicNotes": "<p>Graveknights are undead warriors granted unlife by a cursed suit of armor.</p>",
+            "hpDetails": "rejuvenation, void healing"
+        },
+        "Great Ironbill": {
+            "name": "Great Ironbill",
+            "publicNotes": "<p>The great ironbill, a stork-like creature native to Dirt Sea shores, is known for clapping its fearsome beak to create incredibly loud and unnerving sounds.</p><hr /><p>Belkzen's megafauna husbandry is a source of orc pride, with many species bred for everyday life. In battle, they provide an edge against foes.</p><h2>Living Alarm</h2><p>The great ironbill tends to remain eerily still, making it hard to spot when it stands amongst trees or shadows. Combined with their deafeningly loud calls, properly trained ironbills make excellent guards.</p>"
+        },
         "Hold Sergeant": {
             "name": "Hold Sergeant"
         },
@@ -206,6 +313,72 @@
             "name": "Kar",
             "blurb": "Elite orc child"
         },
+        "Locus of Death": {
+            "name": "Locus of Death",
+            "descriptionHazard": "<p>A magical orb inflicts terrible visions of gruesome ends on anyone who approaches.</p>",
+            "disable": "<p>@Check[nature|dc:27] (master) to infuse the locus with life force, @Check[occultism|dc:30] or @Check[religion|dc:30] (expert) to counteract the locus's energies, @Check[thievery|dc:35] (master) to extricate the orb from the altar</p>",
+            "reset": "<p>The haunt deactivates 1 minute after all living creatures leave the area. After 1 hour, the haunt reactivates.</p>",
+            "routine": "<p>(1 action; death, emotion, fear, mental) One living creature in the haunt's location (determined randomly) is targeted by a 4th-rank @UUID[Compendium.pf2e.spells-srd.Item.Jmxru8zMdYMRuO5n]{Vision of Death} (@Check[will|dc:32|traits:death,emotion,fear,mental]). A creature that critically fails their save doesn't physically flee but instead can't attempt to disable the hazard until they're no longer frightened. Once all creatures have been affected, the haunt deactivates.</p>",
+            "stealth": "<p>(expert)</p>",
+            "items": {
+                "action->Death Grip": {
+                    "name": "Death Grip",
+                    "description": "<p><strong>Trigger</strong> A creature touches the orb or attempts to disable the haunt</p><hr /><p><strong>Effect</strong> Necromantic energy lashes out from the orb and the triggering creature must succeed at a @Check[will|dc:32] save or be @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 1} (@UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 2} on a critical failure). The haunt then rolls initiative.</p>"
+                },
+                "action->Death Manifest": {
+                    "name": "Death Manifest",
+                    "description": "<p>Casting @UUID[Compendium.pf2e.spells-srd.Item.Hnc7eGi7vyZenAIm]{Breath of Life}, @UUID[Compendium.pf2e.spells-srd.Item.YvXKGlHOt7mdW2jZ]{Death Ward}, or @UUID[Compendium.pf2e.spells-srd.Item.IkGYwHRLhkuoGReG]{Raise Dead} in the orb's presence automatically destroys the locus; other spells or abilities that restore the dead to life might also do so, at GM discretion.</p>"
+                },
+                "action->Unholy Repair": {
+                    "name": "Unholy Repair",
+                    "description": "<p>The locus is sustained by the power of Tar-Baphon. The orb regains 10 Hit Points at the beginning of every round and is repaired by void damage.</p>"
+                }
+            }
+        },
+        "Locus of Destruction": {
+            "name": "Locus of Destruction",
+            "descriptionHazard": "<p>A magical orb drives intruders to commit acts of mindless destruction.</p>",
+            "disable": "<p>@Check[crafting|dc:27] (master) to reconfigure the locus, @Check[occultism|dc:30] or @Check[religion|dc:30] (expert) to counteract the locus's energies, @Check[thievery|dc:35] (master) to extricate the orb from the altar</p>",
+            "reset": "<p>The haunt deactivates 1 minute after all living creatures leave the area. After 1 hour, the haunt reactivates.</p>",
+            "routine": "<p>(1 action; mental) The destructive impulses grow stronger. Affected creatures must attempt a @Check[will|dc:32|traits:mental] save; creatures who fail or critically fail can't attempt to disable the haunt that turn.</p><hr><p><strong>Critical Success</strong> The creature is unaffected and temporarily immune for 1 minute.</p><p><strong>Success</strong> The creature is unaffected this round.</p><p><strong>Failure</strong> The creature becomes @UUID[Compendium.pf2e.conditionitems.Item.yblD8fOR1J8rDwEQ]{Confused} for 1 round, targeting both creatures and objects.</p><p><strong>Critical Failure</strong> As failure but the confusion lasts for 1 minute.</p>",
+            "stealth": "<p>(expert)</p>",
+            "items": {
+                "action->Destruction's Fury": {
+                    "name": "Destruction's Fury",
+                    "description": "<p><strong>Trigger</strong> A creature touches the orb or attempts to disable the haunt</p><hr /><p><strong>Effect</strong> A destructive fury fills the minds of all living creatures in the area, who must succeed at a @Check[will|dc:32] save or be @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 1} (@UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 2} on a critical failure) for 1 minute. The haunt then rolls initiative.</p>"
+                },
+                "action->Destruction Manifest": {
+                    "name": "Destruction Manifest",
+                    "description": "<p>Casting @UUID[Compendium.pf2e.spells-srd.Item.TUj8eugNqAvB1vVR]{Creation} or a creation domain spell (@UUID[Compendium.pf2e.spells-srd.Item.xTpp8dHZsNMDm75B]{Creative Splash} or @UUID[Compendium.pf2e.spells-srd.Item.eb4FXf62NYArTqek]{Artistic Flourish}) in the orb's presence automatically destroys the locus; other spells or abilities that create things might also do so at GM discretion.</p>"
+                },
+                "action->Unholy Repair": {
+                    "name": "Unholy Repair",
+                    "description": "<p>The locus is sustained by the power of Tar-Baphon. The orb regains 10 Hit Points at the beginning of every round and is repaired by void damage.</p>"
+                }
+            }
+        },
+        "Locus of Pain": {
+            "name": "Locus of Pain",
+            "descriptionHazard": "<p>An arcane orb sits upon a sinister altar, filling creatures in the area with unimaginable pain.</p>",
+            "disable": "<p>@Check[medicine|dc:27] (master) to soothe the locus's pain, @Check[occultism|dc:30] or @Check[religion|dc:30] to counteract the locus's energies, @Check[thievery|dc:35] (master) to extricate the orb from the altar</p>",
+            "reset": "<p>The haunt deactivates 1 minute after all living creatures leave the area. After 1 hour, the haunt reactivates.</p>",
+            "routine": "<p>(1 action; mental, nonlethal) Creatures affected by the haunt's agony lash are wracked with pain, as 4th-rank @UUID[Compendium.pf2e.spells-srd.Item.R8bqnYiThB6MYTxD]{Phantom Pain} (@Check[will|dc:32|traits:mental,nonlethal]). If a creature falls @UUID[Compendium.pf2e.conditionitems.Item.fBnFDH2MTzgFijKf]{Unconscious} due to the haunt, they don't continue taking damage.</p>",
+            "stealth": "<p>(expert)</p>",
+            "items": {
+                "action->Agony Lash": {
+                    "name": "Agony Lash",
+                    "description": "<p><strong>Trigger</strong> A creature touches the orb or attempts to disable the haunt</p><hr /><p><strong>Effect</strong> All living creatures within 60 feet are overwhelmed by pain and must succeed at a @Check[fortitude|dc:32] save or be @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 1} (@UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 2} on a critical failure). The haunt then rolls initiative.</p>"
+                },
+                "action->Pain Manifest": {
+                    "name": "Pain Manifest",
+                    "description": "<p>Casting @UUID[Compendium.pf2e.spells-srd.Item.b515AZlB0sridKSq]{Calm} or @UUID[Compendium.pf2e.spells-srd.Item.szIyEsvihc5e1w8n]{Soothe} in the orb's presence automatically destroys the locus; other spells or abilities that ease pain might also do so, at GM discretion.</p>"
+                },
+                "action->Unholy Repair": {
+                    "name": "Unholy Repair",
+                    "description": "<p>The locus is sustained by the power of Tar-Baphon. The orb regains 10 Hit Points at the beginning of every round and is repaired by void damage.</p>"
+                }
+            }
+        },
         "Magical Forge": {
             "name": "Magical Forge",
             "publicNotes": "<p>This huge forge or oven is animated to protect a workspace or kitchen, travel alongside its owner, or both.</p>\n<hr />\n<p>Many animated objects have useful functions but become dangers when uncontrolled.</p>",
@@ -215,6 +388,9 @@
         "Marguk Cleftneck": {
             "name": "Marguk Cleftneck",
             "hpDetails": "regeneration 20 (deactivated by electricity or fire)"
+        },
+        "Molog": {
+            "name": "Molog"
         },
         "Moonstalker": {
             "name": "Moonstalker",
@@ -229,6 +405,21 @@
         },
         "Murshek": {
             "name": "Murshek"
+        },
+        "Nakasha": {
+            "name": "Nakasha"
+        },
+        "Nighttime Conflagration": {
+            "name": "Nighttime Conflagration",
+            "disable": "<p>@Check[athletics|dc:27] to beat out the flames, @Check[crafting|dc:27] to rig up a firefighting device, or @Check[nature|dc:27] to cut off avenues of the fire's spread. On a success, one square of the fire is extinguished (two squares on a critical success). Dousing a square in water, such as with create water, automatically extinguishes that square. When all squares are extinguished, the hazard ends.</p>",
+            "routine": "<p>(1+ actions) Each square of flames spreads to an adjacent square, taking one action per square. Creatures adjacent to the fire take @Damage[3d6[fire]] damage each round from the heat (@Check[fortitude|dc:30|basic] save); a creature who fails their save is @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 1} by the smoke (@UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 2} on a critical failure). If there are more than 10 active squares of flames, creatures adjacent to the fire instead take @Damage[6d6[fire]] damage each round (@Check[fortitude|dc:30|basic] save), and a creature who fails their save is sickened 2 (@UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 3} on a critical failure). A creature standing in the flames takes @Damage[12d6[fire]] damage each round (@Check[reflex|dc:30|basic] save); a creature who fails their save also takes @Damage[4d6[persistent,fire]] damage.</p>",
+            "stealth": "<p>(trained) (decreases by 2 each round the hazard is active) to smell the smoke and hear the crackling flames</p>",
+            "items": {
+                "action->Growing Blaze": {
+                    "name": "Growing Blaze",
+                    "description": "<p><strong>Trigger</strong> The arsonists set the fire</p><hr /><p><strong>Effect</strong> The hay around the initial flames catches, setting two 5-foot squares in the affected room on fire. The hazard rolls initiative.</p>"
+                }
+            }
         },
         "Occult Weather": {
             "name": "Occult Weather",
@@ -247,6 +438,11 @@
                     "description": "<p>The occult weather intensifies the wind blowing around the area, buffeting all creatures within a @Template[type:line|distance:60]. Each creature in the line must attempt a @Check[fortitude|dc:32] save or be knocked @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone}, taking @Damage[(1d10+6)[bludgeoning]] damage.</p>"
                 }
             }
+        },
+        "Old Herok": {
+            "name": "Old Herok",
+            "publicNotes": "<p>Legendary creatures lurking in remote lakes, water orms always find their way into the tavern tales of lakeside communities. To some travelers, every lake of respectable size seems to be surrounded by towns full of fishers claiming to have spotted a water orm. These elusive creatures inhabit lakes mainly in cool and gloomy regions. Some claim that water orms are an offshoot of sea serpents and linnorms, but no credible link between these creatures has been found.</p>\n<p>Water orms have many features that sea serpents do not, such as the ability to understand the rudiments of language. Their natural inclination to avoid contact and remain hidden often remains at odds with their equally compelling curiosity about those they might spy upon the shores of their lakes. Water orm sightings usually occur when they can't help but to rise up to the surface to take a peek at someone particularly unusual on the beach or floating on the water's surface.</p>\n<p>These creatures are extremely long-lived and can go for decades, or even centuries, with very little to eat. This allows water orms to subsist in lakes without surfacing for many years, even in bodies of fresh water without ample food sources. Water orms might lie in a silty lake bed for years, their elusiveness only contributing to their mythical reputation. When a pet or child goes missing near a lake, rumors might hold that the local water orm is responsible, leading to folk tales that caution residents against venturing out alone near the water.</p>\n<p>While most water orms are described as serpentine or long-necked reptiles, others look similar to bizarrely elongated seals or whales, impossibly large sea horses, or long-necked creatures with paddles resembling those of elasmosauruses.</p>",
+            "blurb": "Variant water orm"
         },
         "Old Marrow": {
             "name": "Old Marrow",
@@ -280,9 +476,25 @@
                 }
             }
         },
+        "Orc Hunter": {
+            "name": "Orc Hunter",
+            "publicNotes": "<p>The elite hunters of an orc hold often operate alone, venturing into the wilderness of Belkzen for weeks at a time to track and bring down dangerous wildlife. They don't necessarily limit themselves to hunting animals, making them excellent bounty hunters, as their skills are just as useful against humanoids.</p><hr /><p>While some orc warriors specialize in a technique of their hold, others synthesize styles from all over into a unified yet versatile technique.</p><h2>Hunting Trophies</h2><p>Orc hunters frequently take bone fragments from megafauna or powerful opponents they slay as trophies. To show off their combat skill, they display these bones by inlaying them in armor or weapons, forming intricate patterns that provide an account of that orc's triumphs in battle for those who know how to read them.</p><h2>Orc Duels</h2><p>Dueling is a frequent practice among many cultures of Golarion, and orcs are no exception. The lethality of these duels varies based on the duel's impetus\u2014a friendly bout goes to first blood or until a combatant is knocked out, while a fight in response to a vendetta or insult is more likely to the death. Unlike in many dueling traditions, spectators are encouraged to verbally aid combatants, shouting out encouragement to one's preferred fighter and invectives to their opponent.</p>",
+            "items": {
+                "spellcastingEntry->Ranger Warden Spells": {
+                    "name": "Ranger Warden Spells"
+                }
+            }
+        },
+        "Orc Raider": {
+            "name": "Orc Raider"
+        },
         "Orc Rampager": {
             "name": "Orc Rampager",
             "publicNotes": "<p>Fueled by bloodlust in battle, orc rampagers are fearsome combatants. They often serve as the elite shock troops of an orc hold. They train to move quickly through enemy ranks, striking all around them to disrupt their foe's defenses. The speed and fury of a group of orc rampagers working together is terrifying to behold.</p><hr /><p>The orcs of Belkzen are survivors to the core. Shaped by the unforgiving landscape, they're experts at managing resources and making do with scarcity. Aside from the relative peace from late spring through early summer during the Flood Truce, Belkzen's orc holds are nearly always at odds with each other, though these conflicts rarely rise to the level of war. Instead, there are raids for supplies, skirmishes to establish borders or retake lost territory, and feuds over personal slights. Outsiders who travel in Belkzen often become embroiled in these conflicts; sometimes they even trigger the fights themselves.</p>\n<p>The members of a given hold are often quite spread out, rather than centralized, so communication and coordination is sporadic. Even the Empty Hand orcs of Urgir rarely stay in the city all year long. At the very least, they travel a few miles to the Flood Road when the aurochs arrive, and they may wander even further afield when the mood strikes.</p><h2>Orc Faith</h2><p>With so many sudden disruptions to the orc pantheon, the faithful find themselves in a confusing time of change. Fervent worshippers of Lanishra, Sezelrian, and Zagresh don't particularly like the new deities who have usurped their old gods. Some of these zealots desperately cling to their old faiths, and many still hold a sliver of their fallen deity's power, further adding to the confusion.</p><h2>Salvage</h2><p>Orcs are experts at repurposing materials for their own use. Belkzen doesn't have rich soil or abundant deposits of valuable metals and minerals. Instead, orc crafters rely on salvage from battles or trade with outsiders for their raw materials. It's common for a basic tool, such as a knife or cooking pot, to be very old yet kept in perfect working condition. Even when a tool breaks, orc crafters find ways to reuse as much of it as they can manage.</p>"
+        },
+        "Orc Spinecracker": {
+            "name": "Orc Spinecracker",
+            "publicNotes": "<p>Orc spinecrackers are skilled in the art of hand-to-hand combat, forgoing weapons in favor of gauntlets or bare knuckles.</p><hr /><p>While some orc warriors specialize in a technique of their hold, others synthesize styles from all over into a unified yet versatile technique.</p><h2>Orc Duels</h2><p>Dueling is a frequent practice among many cultures of Golarion, and orcs are no exception. The lethality of these duels varies based on the duel's impetus\u2014a friendly bout goes to first blood or until a combatant is knocked out, while a fight in response to a vendetta or insult is more likely to the death. Unlike in many dueling traditions, spectators are encouraged to verbally aid combatants, shouting out encouragement to one's preferred fighter and invectives to their opponent.</p>"
         },
         "Orc Vagabond": {
             "name": "Orc Vagabond",
@@ -290,6 +502,19 @@
         },
         "Otehika Cinder Eater": {
             "name": "Otehika Cinder Eater"
+        },
+        "Palpares": {
+            "name": "Palpares",
+            "publicNotes": "<p>Ancient dwarves paid little attention to the Sea of Dirt, seeing little worth harvesting from its muck. Orcs were considerably braver, yet even they're wary of monsters swimming through the silt. To an outsider, palpares might seem like a cautionary tale to keep children from sinking into the quicksand, and the large pits found dotting the Sea of Dirt's shores are just geological phenomena that appear in the wet season. Those who have stumbled across these traps know the dangerous reality.</p>\n<p>Few know much about palpares, an enormous insect whose plated, hulking abdomen takes up most of its size. They seem to be solitary ambush hunters that hibernate during the dry season, then awaken during the Flood to create their enormous pit traps. These traps capture prey of all sizes, even the occasional herd of migrating aurochs, as they wait buried in the center. Though usually very patient, when disturbed, a palpares can move through its native sandy soil surprisingly quick, greeting intruders who enter its domain with its shovellike head and vicious pincers.</p><h2>Life Stages</h2><p>Research suggests palpares aren't yet in its final form of life, as large caverns on the shores have been discovered to hold traces of chitin and the rotting remains of palpares partially transformed. Though nobody has encountered an adult and lived to tell the tale, rumors abound that the fully fledged insect form resembles Rovagug. Communities are quick to locate and dispose of any pupae they find in large, sand-encrusted mounds in the dirt. Some towns hold large barbecues to harvest tons of \"mud bacon.\"</p>"
+        },
+        "Paskis Nine-Knives": {
+            "name": "Paskis Nine-Knives",
+            "items": {
+                "equipment->Religious Symbol of Verex": {
+                    "name": "Religious Symbol of Verex",
+                    "description": "<p>This piece of wood or silver is emblazoned with an image representing a deity. Some divine spellcasters, such as clerics, can use a religious symbol of their deity to use certain abilities and cast some spells. A religious symbol can be worn on the body on a chain or pin, or can be held.</p>"
+                }
+            }
         },
         "Porphyry Guard": {
             "name": "Porphyry Guard"
@@ -376,6 +601,32 @@
             "publicNotes": "<p>Whereas most werecreatures follow the monthly rhythms of the full moon, the stormblood tiger's change is connected to the floods brought by annual rainfall. In parts of the world where flooding or heavy rains are both regular and predictable, such as during the Deluge in Belkzen, these lycanthropes stalk the land hunting for prey. Every night after the floods begin, a stormblood tiger is forced into its hybrid form until sun rises or the waters recede, usually 2\u20133 months later. The remainder of the year, stormblood tigers walk undetected among the population, often mistaken for hunters or scouts.</p><h2>Sought Out</h2><p>Because of the stormblood tiger's fearsome reputation and powerful abilities, some foolhardy orc warriors view becoming a stormblood tiger as a path to greatness\u2014a blessing instead of a curse. In their minds, it's more important to have this power at hand during times of conflict than worry about disrupting peace during the Flood Truce. Wiser voices argue that too many stormblood tigers roaming about during the Flood Truce risks ending the accord altogether.</p>",
             "languagesDetails": "Tiger empathy"
         },
+        "Tar-Baphon's Shadow": {
+            "name": "Tar-Baphon's Shadow",
+            "descriptionHazard": "<p>A manifestation of Tar-Baphon drains the essence of its divine target.</p>",
+            "disable": "<p>@Check[arcana|dc:33] (expert) to disrupt Tar-Baphon's magic, @Check[occultism|dc:30] or @Check[religion|dc:30] (master) to suppress the shadow's energy; three total successes in any combination are required to disable the haunt unless the Carcass Man is destroyed, in which case it's automatically destroyed</p>",
+            "routine": "<p>(1 action; death) The haunt drains Zagresh's divine energies, dealing @Damage[5d10[void]] damage.</p>",
+            "items": {
+                "action->Unholy Leech": {
+                    "name": "Unholy Leech",
+                    "description": "<p><strong>Trigger</strong> A creature enters the cavern</p><hr /><p><strong>Effect</strong> The shadow latches onto the Carcass Man, unleashing a @Template[type:emanation|distance:30] of necromantic energy. Creatures in the area except the Carcass Man must make a @Check[fortitude|dc:30] save or take @Damage[2d12[void]] damage. The haunt then rolls initiative.</p><hr /><p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature takes half damage and is pushed back 5 feet.</p>\n<p><strong>Failure</strong> The creature takes full damage and is pushed back 15 feet.</p>\n<p><strong>Critical Failure</strong> As failure and the creature is @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned 1} and knocked @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone}.</p>"
+                },
+                "action->Unholy Presence": {
+                    "name": "Unholy Presence",
+                    "description": "<p>The shadow is sustained by the power of Tar-Baphon, regaining 10 Hit Points at the beginning of every round, and is repaired by void damage.</p>"
+                }
+            }
+        },
+        "The Carcass Man": {
+            "name": "The Carcass Man",
+            "acDetails": "all-around vision",
+            "allSavesBonus": "+2 status to all saves vs. fear and magic",
+            "items": {
+                "spellcastingEntry->Divine Innate Spells": {
+                    "name": "Divine Innate Spells"
+                }
+            }
+        },
         "Tooth Fairy Leader": {
             "name": "Tooth Fairy Leader",
             "publicNotes": "<p>Lone fairies usually need several minutes of elbow grease and a sleeping or restrained subject to extract a tooth.</p>\n<hr />\n<p>Tooth fairies spawn when a child's tooth (or, less commonly, an entire child) is buried in terrain rife with fey energies. Hatching from the buried teeth like larvae from an egg, tooth fairies build crude pliers from whatever they can find, then go hunting for more teeth\u2014regardless of the owners' willingness.</p>",
@@ -392,6 +643,19 @@
                 }
             }
         },
+        "Trampling Livestock": {
+            "name": "Trampling Livestock",
+            "descriptionHazard": "<p>Several ghostly mammoths arise from the floorboards, pawing at the ground in terror before stampeding toward the door.</p>",
+            "disable": "<p>@Check[religion|dc:28] to exorcise the animals' spirits, or @Check[nature|dc:26] or @Check[Stabling Lore|dc:24] to soothe them</p>",
+            "reset": "<p>1 day</p>",
+            "stealth": "<p>(trained)</p>",
+            "items": {
+                "action->Sudden Stampede": {
+                    "name": "Sudden Stampede",
+                    "description": "<p><strong>Trigger</strong> The door to the stable opens</p><hr /><p><strong>Effect</strong> The mammoth spirits activate in panic, materializing into physical forms as they stampede toward the door to escape. All creatures standing within 20 feet of the door take @Damage[(4d10+26)[force]] damage (@Check[reflex|dc:28|basic] save).</p>"
+                }
+            }
+        },
         "Trighoul": {
             "name": "Trighoul",
             "publicNotes": "<p>Despite the name given by orcs of the Dirt Sea, the trighoul is not a ghoul at all, but a mutagenic abomination. Its three tentacles bristle with hundreds of neural spines that let it \"glide\" across the sands at high speed and manipulate the nervous system of a corpse through the spinal column. Trighouls were originally created over a thousand years ago by fleshwarpers aligned with the Whispering Tyrant, giving them to raiders as weapons. While the use of trighouls is now regarded with shame and disgust, some still take advantage of the creatures to lure enemies to their deaths using the corpses of their slain comrades.</p><h2>Puppetmaster Serum</h2><p>Orc alchemists familiar with fleshwarping techniques have synthesized an elixir called puppetmaster extract. The elixir transforms the drinker's limb into a tentacle that can temporarily animate the dead. One must take great care when crafting the serum, as incorrectly mixed batches have been known to dissolve organs from within, cause permanent paralysis, and grow tentacles in unwanted places.</p>",
@@ -402,9 +666,76 @@
             "publicNotes": "<p>Forest trolls are gangly giants who stalk the fringes of civilization. They rely on their incredible strength to overpower foes with their vicious claws and toothy maws. These trolls stand anywhere from 12 to 16 feet tall, though they prefer to hunch for comfort and to lull foes into a false sense of security. Trolls are truly creatures of the forest, deeply linked in flesh and blood to the verdant habitats they consider their territory. In fact, when a forest troll is killed, their flesh turns into blackened lumps of charcoal, often still glowing with coals. Despite that, these creatures roam farther and wider than most of their kin, to the extent that they're the first creatures a common person thinks of when they hear the word \"troll.\"</p>\n<hr />\n<p>Slavering, cruel, invincible brutes: this is the villager's stock description for the dread monsters known as trolls. The roots of these stories are undoubtedly true. Trolls' flesh endlessly regrows, going so far as to sprout aberrant limbs or additional heads if not pruned, and a bottomless hunger is required to feed such unfettered growth. Even in the process of glutting themselves, however, trolls find opportunities to taunt their prey and inflict petty cruelties.</p>\n<p>A troll's ability to survive is so strong that they believe even the smallest scrap of flesh will slowly regenerate into a new form, suffering as all the powers of the land are gathered to revive them. Despite the pain, trolls speak of this unassailable vitality as a blessing from their creator. Few trolls have heard the laughter of demons who claim that creator cursed the trolls and cast them down from lofty heights, binding them so they could never rise again.</p>\n<p>Trolls prefer to remain solitary, keeping every scrap of food for themselves. In rare instances, an old and powerful troll comes to lead groups of trolls. Such warleaders possess enough cunning to lead their hordes in devastating raids and massacres, and their presence permanently alters the surrounding ecosystem. This link to their environment is an often misunderstood aspect of trollkind, and grows more acute with a troll's age and power. That's not to say trolls are valorous protectors of nature. They're vicious and territorial, and will blight their own territory forever if it means more to eat for a day.</p>",
             "hpDetails": "regeneration 20 (deactivated by electricity or fire)"
         },
+        "Tusk Mountains Avalanche": {
+            "name": "Tusk Mountains Avalanche",
+            "descriptionHazard": "<p>Snow and ice gathered at the peaks of the mountain come crashing down in an explosive wave.</p>",
+            "disable": "<p>Three @Check[crafting|dc:34] or @Check[Engineering Lore|dc:34] (expert) to create cover for a 10-foot square area and shelter from the avalanche; a flying creature can attempt a @Check[acrobatics|dc:29] check to @UUID[Compendium.pf2e.actionspf2e.Item.Qf1ylAbdVi1rkc8M]{Maneuver in Flight} to avoid the avalanche</p>",
+            "stealth": "<p>(trained)</p>",
+            "items": {
+                "action->Cascade": {
+                    "name": "Cascade",
+                    "description": "<p><strong>Trigger</strong> The zombie mammoth horde moves beneath the peaks</p><hr /><p><strong>Effect</strong> An avalanche of snow and ice cascades down the mountainside at astonishing speed. All creatures on the ground within a 200-foot radius must attempt @Check[reflex|dc:30] saves.</p><hr /><p><strong>Critical Success</strong> The creature takes no damage.</p>\n<p><strong>Success</strong> The creature takes @Damage[4d6[bludgeoning]] damage and @Damage[4d6[cold]] damage.</p>\n<p><strong>Failure</strong> The creature is swept away, moving 200 feet down the mountainside, and takes @Damage[8d6[bludgeoning]] damage and @Damage[8d6[cold]] damage.</p>\n<p><strong>Critical Failure</strong> As failure, but the creature is also buried, taking an additional @Damage[2d6[bludgeoning]] damage and then @Damage[1d6[cold]] damage per minute of burial. Locating a buried creature requires a @Check[perception|dc:28] or @Check[survival|dc:28] check; once located, a buried creature can be extricated with a @Check[athletics|dc:28] check in one round or dug out with a @Check[athletics|dc:23] check with 4 minutes of work.</p>"
+                }
+            }
+        },
+        "Tyrant's Orders": {
+            "name": "Tyrant's Orders",
+            "descriptionHazard": "<p>Yagrekash appears to berate weak soldiers for not doing their part.</p>",
+            "disable": "<p>@Check[deception|dc:28] (expert) or @Check[performance|dc:28] (expert) to feign joining the fray, or @Check[religion|dc:30] (master) to ward Yagrekash away; three total successes in any combination are required to disable the haunt</p>",
+            "reset": "<p>The haunt deactivates 1 minute after all creatures leave the area of Fort Whiteskull but resets immediately. Tyrant's orders resets 1 day after being disabled if the ancestor storm isn't put to rest.</p>",
+            "stealth": "<p>(expert) or @UUID[Compendium.pf2e.spells-srd.Item.gpzpAAAJ1Lza2JVl]{Detect Magic}</p>",
+            "items": {
+                "action->Command of the Legion": {
+                    "name": "Command of the Legion",
+                    "description": "<p><strong>Trigger</strong> A PC critically fails a skill check to navigate the ancestor storm</p><hr /><p><strong>Effect</strong> Yagrekash barks orders at the PCs to join the battle. All PCs must attempt a @Check[will|dc:27] save; orc and dromaar PCs take a \u20131 penalty.</p><hr /><p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 1} for 1 minute.</p>\n<p><strong>Failure</strong> The creature is compelled to join the Umbra Legion in battle, taking @Damage[(2d12+13)[mental]] damage.</p>\n<p><strong>Critical Failure</strong> As failure, but the damage is doubled.</p>"
+                }
+            }
+        },
+        "Umbra's Rage": {
+            "name": "Umbra's Rage",
+            "descriptionHazard": "<p>The anger of the fallen Umbra Legion seeps into any creature entering combat.</p>",
+            "disable": "<p>@Check[religion|dc:26] (expert) to exorcise the closest spirits or @Check[diplomacy|dc:30] (expert) to calm them down</p>",
+            "stealth": "<p>(expert) or @UUID[Compendium.pf2e.spells-srd.Item.gpzpAAAJ1Lza2JVl]{Detect Magic}</p>",
+            "items": {
+                "action->Curse of Eternal Battle": {
+                    "name": "Curse of Eternal Battle",
+                    "description": "<p><strong>Trigger</strong> A creature enters combat while in Umbra's Last Stand</p><hr /><p><strong>Effect</strong> The creature must attempt a @Check[will|dc:26] save as the rage of the surrounding orcs threatens to overwhelm them.</p><hr /><p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 1} for 1 round.</p>\n<p><strong>Failure</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.yblD8fOR1J8rDwEQ]{Confused} for 1 round.</p>\n<p><strong>Critical Failure</strong> As failure, but the creature is confused for 1 minute.</p>"
+                }
+            }
+        },
+        "Ungukk Fleshdredge": {
+            "name": "Ungukk Fleshdredge",
+            "allSavesBonus": "+1 vs. fear",
+            "hpDetails": "void healing",
+            "items": {
+                "spellcastingEntry->Divine Spontaneous Spells": {
+                    "name": "Divine Spontaneous Spells"
+                }
+            }
+        },
+        "Verthok the Reaper": {
+            "name": "Verthok the Reaper",
+            "items": {
+                "spellcastingEntry->Champion Devotion Spells": {
+                    "name": "Champion Devotion Spells"
+                },
+                "equipment->Demon Mask (Greater)": {
+                    "name": "Demon Mask (Greater)",
+                    "description": "<p>This terrifying mask is crafted in the visage of a leering demon and grants a +2 item bonus to Intimidation checks.</p>\n<p><strong>Activate\u2014Leering Mask</strong> <span class=\"action-glyph\">2</span> (manipulate)</p>\n<p><strong>Frequency</strong> once per day</p>\n<hr />\n<p><strong>Effect</strong> The mask casts a 3rd-rank @UUID[Compendium.pf2e.spells-srd.Item.4koZzrnMXhhosn0D]{Fear} spell with a DC of 29.</p>"
+                }
+            }
+        },
+        "War Auroch": {
+            "name": "War Auroch",
+            "publicNotes": "<p>War aurochs are especially large versions aurochs bred to pull war machines as their primary duty. Particularly aggressive calves are selected for additional training to fight in battle as support for warriors.</p><hr /><p>Belkzen's megafauna husbandry is a source of orc pride, with many species bred for everyday life. In battle, they provide an edge against foes.</p><h2>War Barding</h2><p>A war aurochs is often fitted with pieces of armor to make its attacks deadlier, such as spiked ornaments on their horns or sharp-toed hoof shoes. The symbol of a hold is painted directly onto the beast's hide and left there even if another hold captures it, where it's often treated as a prisoner of war.</p>"
+        },
         "War Pig": {
             "name": "War Pig",
             "publicNotes": "<p>While not native to Belkzen, these swine instead descended from livestock raided and re-homed millennia ago during orc raids. Generations of selective breeding favored larger animals suited to Belkzen's harsh environment and fearsome predators, resulting in the modern war pig. During the flood season, these pigs gorge and grow fat, gradually consuming their reserves to become leaner and meaner during the rest of the year.</p>\n<p>Arguably domesticated, war pigs rarely remain in captivity for more than a few generations. Most orcs loathe the notion of their swine becoming too tame, instead releasing part of their herd every year to grow fierce before recapturing them seasons later. The downside is that these feral swine associate humanoids with food. Rogue war pigs sometimes form roving gangs that uproot fields, run amok, and even knock over trade caravans to eat rations (and the occasional merchant).</p>\n<p>The \"war\" in war pigs comes from their use as mounts. With the right motivation, a war pig is a porcine juggernaut able to carry a fully armored orc into combat. Without discipline, care, and treats, that same pig can become 600 pounds of willful chaos that's as likely to trample foes as it is to flee combat, find a mud puddle, and crush its rider after flopping down to vigorously wallow.</p>"
+        },
+        "Warcat of Rull": {
+            "name": "Warcat of Rull",
+            "publicNotes": "<p>These fierce hippo-sized cats with scaly, armored skin can only be bred and trained by the most skilled handlers.</p><hr /><p>Belkzen's megafauna husbandry is a source of orc pride, with many species bred for everyday life. In battle, they provide an edge against foes.</p><h2>Apex Predator</h2><p>The warcat of Rull is a stealthy predator that roams a large territory, hunting alone or with a mate. Even when nursing cubs, warcats hunt for themselves and teach their cubs to be self-sufficient. Warcats fear no challenge, preying on megafauna, giants, and even young dragons.</p>"
         },
         "Wight Spell Sniper": {
             "name": "Wight Spell Sniper",
@@ -421,6 +752,42 @@
                 }
             }
         },
+        "Wingripper Wyvern Rider": {
+            "name": "Wingripper Wyvern Rider",
+            "sensesDetails": "darkvision"
+        },
+        "Wraithwell": {
+            "name": "Wraithwell",
+            "descriptionHazard": "<p>An orb of undeath draws creatures closer to a cursed existence.</p>",
+            "disable": "<p>@Check[religion|dc:27] to negate the forces of undeath (master), @Check[occultism|dc:30] (expert) to channel vital energy, @Check[thievery|dc:35] (master) to extricate the orb from the altar</p>",
+            "reset": "<p>The haunt deactivates 1 minute after all living creatures leave the area. After 1 hour, the haunt reactivates.</p>",
+            "routine": "<p>(1 action; void) The wraiths attack all living creatures in the area, dealing @Damage[(3d10+14)[void]] damage (@Check[fortitude|dc:32|basic] save). Creatures who fail their saves are @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 1} (@UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 2} on a critical failure) or increase their drained value by 1 (2 on a critical failure), up to a maximum of @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 4}.</p>",
+            "stealth": "<p>(expert)</p>",
+            "items": {
+                "action->Unholy Repair": {
+                    "name": "Unholy Repair",
+                    "description": "<p>The locus is sustained by the power of Tar-Baphon. The orb regains 10 Hit Points at the beginning of every round and is repaired by void damage.</p>"
+                },
+                "action->Wraith Storm": {
+                    "name": "Wraith Storm",
+                    "description": "<p><strong>Trigger</strong> A creature touches the orb or attempts to disable the haunt</p><hr /><p><strong>Effect</strong> A cyclone of wraiths spirals from the orb, grasping at all living creatures in the area. Targeted creatures must succeed at a @Check[will|dc:32] save or be @UUID[Compendium.pf2e.conditionitems.Item.3uh1r86TzbQvosxv]{Doomed 1} (@UUID[Compendium.pf2e.conditionitems.Item.3uh1r86TzbQvosxv]{Doomed 2} on a critical failure).</p>"
+                },
+                "action->Undeath Manifest": {
+                    "name": "Undeath Manifest",
+                    "description": "<p>A creature who dies in the presence of the orb immediately becomes undead. Casting @UUID[Compendium.pf2e.spells-srd.Item.GUeRTriJkMlMlVrk]{Bind Undead} or @UUID[Compendium.pf2e.spells-srd.Item.xRgU9rrhmGAgG4Rc]{Peaceful Rest} in the presence of the orb automatically destroys the locus; other spells or abilities that combat undead might also do so, at GM discretion.</p>"
+                }
+            }
+        },
+        "Yagrekash": {
+            "name": "Yagrekash",
+            "publicNotes": "<p>Einherjar are mighty warriors chosen by valkyries from the ranks of those slain in terrible and legendary battles. Forged from the souls of the greatest warriors, the implacable einherjar serve as the foot soldiers of pantheons, skilled in handto-hand combat and slaying giants.</p>\n<p>Einherjar often come from warrior cultures, including Ulfen vikings (like the einherji represented in this entry), particularly fierce pirates from the Shackles, and even Osirian conquerors. They can be chosen from wherever war and might hold sway; many deities who hold the call of battle and the pursuit of physical power more sacred than concepts of good and evil might count einherjar warriors and valkyrie choosers of the slain among their chosen servitors. For example, Gorum, Besmara, and Sekhmet have all elevated fallen worshippers as einherjar. Einherjar dedicated to different deities often wield weapons or possess varying cosmetic appearances based on their deity's preferred weapon and their place of death; however, they're universally stalwart, implacable, and efficiently deadly. Einherjar with two-handed weapons or who arise from other backgrounds often have different abilities in place of Jotun Slayer and Instant Repair.</p>",
+            "blurb": "Variant einherji",
+            "items": {
+                "spellcastingEntry->Champion Devotion Spells": {
+                    "name": "Champion Devotion Spells"
+                }
+            }
+        },
         "Zdagren Half-Ear": {
             "name": "Zdagren Half-Ear",
             "allSavesBonus": "+1 to Will vs. auditory"
@@ -431,6 +798,15 @@
         }
     },
     "mapping": {
+        "descriptionHazard": "system.details.description",
+        "disable": "system.details.disable",
+        "reset": "system.details.reset",
+        "routine": "system.details.routine",
+        "stealth": "system.attributes.stealth.details",
+        "items": {
+            "converter": "translateActorItems",
+            "path": "items"
+        },
         "hpDetails": "system.attributes.hp.details",
         "publicNotes": "system.details.publicNotes",
         "privateNotes": "system.details.privateNotes",
@@ -439,15 +815,6 @@
         "allSavesBonus": "system.attributes.allSaves.value",
         "speedsDetails": "system.attributes.speed.details",
         "sensesDetails": "system.perception.details",
-        "languagesDetails": "system.details.languages.details",
-        "items": {
-            "converter": "translateActorItems",
-            "path": "items"
-        },
-        "descriptionHazard": "system.details.description",
-        "disable": "system.details.disable",
-        "reset": "system.details.reset",
-        "routine": "system.details.routine",
-        "stealth": "system.attributes.stealth.details"
+        "languagesDetails": "system.details.languages.details"
     }
 }
