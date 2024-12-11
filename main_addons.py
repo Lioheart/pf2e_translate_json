@@ -31,6 +31,7 @@ LORE_NAMES = [
     'Thievery'
 ]
 
+
 def remove_folders_except_venv():
     source_dir = "."  # Domyślna lokalizacja (bieżący katalog)
 
@@ -42,6 +43,7 @@ def remove_folders_except_venv():
         if os.path.isdir(folder_path) and folder_name != "venv":
             # Usuń folder wraz z zawartością
             shutil.rmtree(folder_path)
+
 
 def clean():
     folder_path = os.getcwd()
@@ -93,14 +95,14 @@ def read_leveldb_to_json(leveldb_path, output_json_path):
         except Exception as error:
             raise f"Wystąpił błąd list_subfolders: {error}"
 
-    folders_list = list_subfolders(leveldb_path.replace('\\','/'))
+    folders_list = list_subfolders(leveldb_path.replace('\\', '/'))
     for sub_folders in folders_list:
         output_path = rf'{output_json_path}\{sub_folders}.json'
-        output_folder = rf'{output_json_path.split("\\")[0]}\packs\{sub_folders}'.replace('\\','/')
+        output_folder = rf'{output_json_path.split("\\")[0]}\packs\{sub_folders}'.replace('\\', '/')
 
         # Ensure the output folder exists
-        output_file = output_path.replace('\\','/')
-        output_dir = output_json_path.replace('\\','/')
+        output_file = output_path.replace('\\', '/')
+        output_dir = output_json_path.replace('\\', '/')
         os.makedirs(output_dir, exist_ok=True)
 
         try:
@@ -136,6 +138,7 @@ def read_leveldb_to_json(leveldb_path, output_json_path):
         finally:
             db.close()
 
+
 def exclude_empty_prerequisites(input_dict):
     if isinstance(input_dict, dict):
         result_dict = input_dict.copy()
@@ -163,6 +166,7 @@ def sort_entries(input_dict):
 
     return input_dict
 
+
 def move_files(source_folder_bad, destination_folder):
     # Sprawdź, czy folder źródłowy istnieje
     if not os.path.exists(source_folder_bad):
@@ -180,6 +184,7 @@ def move_files(source_folder_bad, destination_folder):
         print(f"Przeniesiono: {filename}")
 
     print("Przenoszenie zakończone.")
+
 
 def remove_empty_values(input_dict):
     if isinstance(input_dict, dict):
@@ -269,7 +274,6 @@ def process_files(folders, version, type_system):
                     shutil.copy(file_path, version)
                     continue
 
-
                 try:
                     name = compendium['_stats']['compendiumSource'].split('.')
                     new_name = fr'{version}/{name[1]}.{name[2]}.json'
@@ -277,6 +281,10 @@ def process_files(folders, version, type_system):
                     new_name = fr'{version}/pf2e.{file}'
                 except AttributeError:
                     new_name = fr'{version}/starfinder-field-test-for-pf2e.{file}'
+                except IndexError:
+                    if type_system == 'pf2e-animal-companions':
+                        name = [None, type_system, 'AC-Advanced-Maneuvers']
+                        new_name = fr'{version}/{name[1]}.{name[2]}.json'
                 if type_system.startswith('pf2e'):
                     new_name = fr'{version}/{type_system}.{file}'
                 elif type_system.startswith('star'):
@@ -372,13 +380,14 @@ def process_files(folders, version, type_system):
                         transifex_dict["entries"][name].update({"pages": {}})
                         transifex_dict["entries"][name]['pages'].update({name: {}})
                         transifex_dict["entries"][name]['pages'][name].update({"name": name})
-                        try: # Warunek dla exploration-effects!!!
+                        try:  # Warunek dla exploration-effects!!!
                             # TODO: Dodać to do tłumaczenia!
                             transifex_dict["entries"][name]['pages'][name].update({"text": new_data['content']})
                         except KeyError:
                             del transifex_dict["entries"][name]['pages']
                             try:
-                                transifex_dict["entries"][name].update({"description": new_data['data']['description']['value']})
+                                transifex_dict["entries"][name].update(
+                                    {"description": new_data['data']['description']['value']})
                             except KeyError:
                                 transifex_dict["entries"][name].update(
                                     {"description": new_data['system']['description']['value']})
@@ -397,7 +406,7 @@ def process_files(folders, version, type_system):
                     elif 'items' not in keys:
                         transifex_dict["entries"].update({name: {}})
                         transifex_dict["entries"][name].update({"name": name})
-                        try: # Dla efektów z dodatków
+                        try:  # Dla efektów z dodatków
                             if not new_data['system']['description']['value'].startswith('<p>@Localize'):
                                 transifex_dict["entries"][name].update(
                                     {"description": new_data['system']['description']['value']})
@@ -898,6 +907,7 @@ def process_files(folders, version, type_system):
 
                 dict_key.append(f'{compendium.keys()}')
 
+
 remove_folders_except_venv()
 # === === === === === === === === === === === === === === === === === === === === === === === === === === === === ===
 # Ścieżka do pliku z wersją systemu
@@ -1107,7 +1117,7 @@ add_9_url = "https://raw.githubusercontent.com/TikaelSol/PF2e-Animal-Companions/
 path_9, headers_9 = urlretrieve(add_9_url, 'module_9.json')
 version_9 = 'addon_9_' + json.loads(open('module_9.json', 'r', encoding='utf-8').read())["version"]
 zip_addons9_filename = "pf2e-animal-companions.zip"
-zip_addons9 = 'https://github.com/TikaelSol/PF2e-Animal-Companions/archive/refs/heads/main.zip'
+zip_addons9 = 'https://github.com/TikaelSol/PF2e-Animal-Companions/releases/download/v6.3/module.zip'
 extract_folder = 'pack_addon_9'
 print()
 print("*** Wersja dodatku_9 PF2E: ", version_9, " ***")
@@ -1118,7 +1128,7 @@ else:
     with zipfile.ZipFile(zip_addons9_filename, 'r') as zip_ref:
         zip_ref.extractall(extract_folder)
 
-source_folder = fr'{extract_folder}/PF2e-Animal-Companions-main/packs'
+source_folder = fr'{extract_folder}/build/packs'
 target_folder = fr'{extract_folder}/packs'
 
 for file_name in os.listdir(source_folder):
@@ -1193,6 +1203,9 @@ else:
 
 move_files(fr'{extract_folder}/pf2e-specific-familiars/packs', fr'{extract_folder}/packs')
 read_leveldb_to_json(fr'{extract_folder}\packs', fr'{extract_folder}\output')
+# === === === === === === === === === === === === === === === === === === === === === === === === === === === === ===
+
+
 # === === === === === === === === === === === === === === === === === === === === === === === === === === === === ===
 
 # === === === === === === === === === === === === === === === === === === === === === === === === === === === === ===
