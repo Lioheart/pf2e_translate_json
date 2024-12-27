@@ -1018,7 +1018,7 @@
                 },
                 "strike-melee->Demonic Abduction": {
                     "name": "Demonic Abduction",
-                    "description": "<p>Spectral demons lift a single creature 50 feet into the air and drop it. The haunt makes a Strike against the creature with a +23 attack bonus. On a success, the creature is lifted into the air and dropped, taking @Damage[25[bludgeoning]]{25 bludgeoning}, though it might negate some or all this damage using a spell, such as @UUID[Compendium.pf2e.spells-srd.Item.TTwOKGqmZeKSyNMH]{Gentle Landing}. On a critical hit, the creature also takes @Damage[(2d12+13)[slashing]] damage as the demons' claws tear through its flesh.</p>"
+                    "description": "<p>Spectral demons lift a single creature 50 feet into the air and drop it. The haunt makes a Strike against the creature with a +23 attack bonus. On a success, the creature is lifted into the air and dropped, taking @Damage[25[bludgeoning]|options:fall-damage], though it might negate some or all this damage using a spell, such as @UUID[Compendium.pf2e.spells-srd.Item.TTwOKGqmZeKSyNMH]{Gentle Landing}. On a critical hit, the creature also takes @Damage[(2d12+13)[slashing]] damage as the demons' claws tear through its flesh.</p>"
                 }
             }
         },
@@ -1990,7 +1990,7 @@
                 },
                 "action->Fling": {
                     "name": "Fling",
-                    "description": "<p><strong>Requirements</strong> The tar zombie mammoth has a creature @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed} or @UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{Restrained} by its trunk</p>\n<hr />\n<p><strong>Effect</strong> The tar zombie mammoth whips its prey violently into the air. It attempts an @Check[athletics|defense:fortitude] check against the grabbed or restrained creature's Fortitude DC. If the creature is restrained, the mammoth gains a +4 circumstance bonus to this check. On a success, the mammoth flings the creature up to 30 feet overhead and up to 30 feet away (the creature takes damage from the fall as normal, up to 15 damage for a 30-foot fall). If the flung creature lands on another creature, the creature it lands on takes the same amount of bludgeoning damage (@Check[reflex|dc:28|basic] save).</p>"
+                    "description": "<p><strong>Requirements</strong> The tar zombie mammoth has a creature @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed} or @UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{Restrained} by its trunk</p>\n<hr />\n<p><strong>Effect</strong> The tar zombie mammoth whips its prey violently into the air. It attempts an @Check[athletics|defense:fortitude] check against the grabbed or restrained creature's Fortitude DC. If the creature is restrained, the mammoth gains a +4 circumstance bonus to this check. On a success, the mammoth flings the creature up to 30 feet overhead and up to 30 feet away (the creature takes damage from the fall as normal, up to @Damage[15[bludgeoning]|options:fall-damage]{15} damage for a 30-foot fall). If the flung creature lands on another creature, the creature it lands on takes the same amount of bludgeoning damage (@Check[reflex|dc:28|basic] save).</p>"
                 },
                 "action->Shambling Trample": {
                     "name": "Shambling Trample",
