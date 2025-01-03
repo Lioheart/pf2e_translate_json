@@ -166,38 +166,6 @@
                 },
                 "action->+4 to Will Vs. Fear": {
                     "name": "+4 to Will Vs. Fear"
-                },
-                "action->Troop Defenses": {
-                    "name": "Troop Defenses",
-                    "description": "<p><strong>Thresholds</strong> 180 (12 squares), 90 (8 squares)</p>\n<p>@Localize[PF2E.NPC.Abilities.Glossary.TroopDefenses]</p>"
-                },
-                "action->Dagger Volley": {
-                    "name": "Dagger Volley",
-                    "description": "<p>The einherji host launches a ranged attack in the form of a volley of thrown daggers. This volley fills a @Template[cone|distance:30]; all creatures in the area take @Damage[(5d4+15)[piercing]] damage (@Check[reflex|dc:36|basic] save). When the troop is reduced to 8 or fewer squares, this area decreases to a @Template[cone|distance:15].</p>"
-                },
-                "action->Jotun Slayer": {
-                    "name": "Jotun Slayer",
-                    "description": "<p>An einherji host has a +4 circumstance bonus to Strike as One damage rolls made against giants and creatures that are Huge or larger.</p>"
-                },
-                "action->Pay For Every Inch": {
-                    "name": "Pay For Every Inch",
-                    "description": "<p>The einherji host Forms Up, Raises Shields, and prepares to counterattack. Until the start of the troop's next turn, each time an enemy takes an action to move through a space adjacent to the troop, they take @Damage[(4d8+18)[slashing]] damage (@Check[reflex|dc:36|basic] save).</p>"
-                },
-                "action->Raise Shields": {
-                    "name": "Raise Shields",
-                    "description": "<p>The troop raises their shields, increasing their Armor Class by 2 until the start of the troop's next turn.</p>"
-                },
-                "action->Song of Freedom": {
-                    "name": "Song of Freedom",
-                    "description": "<p>The troop sings of freedom, bolstering their conviction and morale. Until the start of the troop's next turn, their Will saves increase to +29 against all mental effects, not just against fear effects.</p>"
-                },
-                "action->Strike as One": {
-                    "name": "Strike as One",
-                    "description": "<p><strong>Frequency</strong> once per round</p><hr /><p><strong>Effect</strong> The einherji host makes melee attacks against each enemy within 5 feet (@Check[reflex|dc:36|basic] save). The damage depends on the number of actions.</p>\n<p><span class=\"action-glyph\">1</span> @Damage[(2d8+7)[slashing]] damage</p>\n<p><span class=\"action-glyph\">2</span> @Damage[(3d8+14)[slashing]] damage</p>\n<p><span class=\"action-glyph\">3</span> @Damage[(4d8+14)[slashing]] damage</p>"
-                },
-                "action->Troop Movement": {
-                    "name": "Troop Movement",
-                    "description": "<p>Whenever the einherji host Strides, they first Form Up as a free action to condense into a 20-foot-by-20-foot area (minus any missing squares they may have as the result of having taken Hit Point damage), then move up to their Speed. This works just like a Gargantuan creature moving; for instance, if any square of the troop enters difficult terrain, the extra movement cost applies to the whole troop.</p>"
                 }
             }
         },
@@ -251,13 +219,6 @@
                 "action->Raise Swords!": {
                     "name": "Raise Swords!",
                     "description": "<p><strong>Frequency</strong> once per round</p><hr /><p><strong>Effect</strong> The Gorumite infantry engages in a frenzied attack against each enemy within 10 feet, with a @Check[reflex|dc:31|basic] save. The damage depends on the number of actions.</p>\n<p><span class=\"action-glyph\">1</span> @Damage[(1d12+4)[slashing]] damage.</p>\n<p><span class=\"action-glyph\">2</span> @Damage[(2d12+10)[slashing]] damage and @Damage[1d6[persistent,bleed]] damage.</p>\n<p><span class=\"action-glyph\">3</span> @Damage[(3d12+10)[slashing]] damage and @Damage[2d6[persistent,bleed]] damage.</p>"
-                },
-                "action->Troop Movement": {
-                    "name": "Troop Movement",
-                    "description": "<p>Whenever the gorumite infantry Strides, they first @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.OvqohW9YuahnFaiX]{Form Up} as a free action to condense into a 20-foot-by-20-foot area (minus any missing squares), then move up to their Speed.</p>\n<p>This works just like a Gargantuan creature moving; for instance, if any square of the guards enters difficult terrain, the extra movement cost applies to all the guards.</p>"
-                },
-                "lore->Gorum Lore": {
-                    "name": "Gorum Lore"
                 }
             }
         },
@@ -279,9 +240,6 @@
                 "equipment->Iron Religious Symbol of Gorum": {
                     "name": "Iron Religious Symbol of Gorum",
                     "description": "<p>This piece of wood or silver is emblazoned with an image representing a deity. Some divine spellcasters, such as clerics, can use a religious symbol of their deity to use certain abilities and cast some spells. A religious symbol can be worn on the body on a chain or pin, or can be held.</p>"
-                },
-                "equipment->Key": {
-                    "name": "Key"
                 }
             }
         },
@@ -425,26 +383,6 @@
                 "weapon->Dread Ampoule (Greater)": {
                     "name": "Dread Ampoule (Greater)",
                     "description": "<p><strong>Activate</strong> <span class=\"action-glyph\">A</span> Strike</p>\n<hr />\n<p>This flask is filled with a murky purple gas that briefly interferes with normal brain activity. A dread ampoule deals 3d6 mental damage and 3 mental splash damage.</p>\n<p>On a hit, the target becomes @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 1}, or @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 2} on a critical hit. Many types also grant an item bonus to attack rolls.</p>\n<p>You gain a +2 item bonus to attack rolls.</p>"
-                },
-                "weapon->Glue Bomb (Greater)": {
-                    "name": "Glue Bomb (Greater)",
-                    "description": "<p><strong>Activate</strong> <span class=\"action-glyph\">1</span> Strike</p>\n<hr />\n<p>A glue bomb is a harmless explosive mechanism bursting with sticky substances. When you hit a creature with a glue bomb, that creature takes a \u201315-foot status penalty to its Speeds for 1 minute. You gain a +2 item bonus to attack rolls, and the @UUID[Compendium.pf2e.actionspf2e.Item.SkZAQRkLLkmBQNB9]{Escape} DC is 28.</p>\n<p>On a critical hit, a creature in contact with a solid surface becomes stuck to the surface and @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Immobilized} for 1 round, and a creature flying via wings has its wings tangled, causing it to fall safely to the ground and become unable to Fly again for 1 round. Glue bombs are not effective when used on a creature that is in water.</p>\n<p>The target can end any effects by Escaping or spending a total of 3 Interact actions to carefully remove the sticky substances. These Interact actions don't have to be consecutive, and other creatures can provide the actions as well.</p>\n<p>@UUID[Compendium.pf2e.equipment-effects.Item.csA4UAD2tQq7RjT8]{Effect: Glue Bomb (Greater)}</p>"
-                },
-                "equipment->Crafter's Eyepiece (Greater)": {
-                    "name": "Crafter's Eyepiece (Greater)",
-                    "description": "<p>This rugged metal eyepiece etched with square patterns is designed to be worn over a single eye. Twisting the lens reveals a faint three-dimensional outline of an item you plan to build or repair, with helpful labels on the component parts.</p>\n<p>You gain a +2 item bonus to Crafting checks. When you Repair an item, increase the Hit Points restored to 10 + 10 per proficiency rank on a success or 15 + 15 per proficiency rank on a critical success.</p>\n<hr />\n<p><strong>Activate\u2014Prototype</strong> 1 minute (manipulate)</p>\n<p><strong>Frequency</strong> once per day</p>\n<hr />\n<p><strong>Effect</strong> You calibrate the eyepiece to have it cast a 5th-rank @UUID[Compendium.pf2e.spells-srd.Item.TUj8eugNqAvB1vVR]{Creation} spell over the course of 1 minute to construct a temporary item.</p>"
-                },
-                "consumable->Blood Sight Elixir (Greater)": {
-                    "name": "Blood Sight Elixir (Greater)",
-                    "description": "<p><strong>Activate</strong> <span class=\"action-glyph\">1</span> (manipulate)</p><hr /><p>This thick, blood-red elixir sharpens your senses and makes you more acutely aware of blood. You gain blood sight as a precise sense with a duration of 1 hour. Blood sight has a range of 60 feet and allows you to detect living creatures who are taking persistent bleed damage or who have the dying or wounded conditions. You also detect free-standing puddles or droplets of recently spilled blood. At the GM's discretion, living creatures without blood can't be detected with your blood sight.</p>"
-                },
-                "consumable->Elixir of Life (Major)": {
-                    "name": "Elixir of Life (Major)",
-                    "description": "<p><strong>Activate</strong> <span class=\"action-glyph\">A</span> (manipulate)</p>\n<hr />\n<p>Elixirs of life accelerate a living creature's natural healing processes and immune system. Upon drinking this elixir, you regain @Damage[(8d6+21)[healing]] Hit Points and gain +3 item bonus to saving throws against diseases and poisons for 10 minutes.</p>\n<p>@UUID[Compendium.pf2e.equipment-effects.Item.lPRuIRbu0rHBkoKY]{Effect: Elixir of Life}</p>"
-                },
-                "backpack->Spacious Pouch (Type III)": {
-                    "name": "Spacious Pouch (Type III)",
-                    "description": "<p>Though it appears to be a cloth bag decorated with panels of richly colored silk or stylish embroidery, a <em>spacious pouch</em> opens into a magical space larger than its outside dimensions. The Bulk held inside the bag doesn't change the Bulk of the <em>spacious pouch</em> itself. The amount of Bulk the bag's extradimensional space can hold depends on its type.</p>\n<p>You can Interact with the <em>spacious pouch</em> to stow items in it or remove them just like a mundane sack. Though the bag can hold a great amount of material, an object still needs to be able to fit through the opening of the sack to be stored inside.</p>\n<p>If the bag is overloaded or broken, it ruptures and is ruined, causing the items inside to be lost forever. If it's turned inside out, the items inside spill out unharmed, but the bag must be put right before it can be used again. A living creature placed inside the bag has enough air for 10 minutes before it begins to suffocate, and it can attempt to Escape against a DC of 13. An item inside the bag provides no benefits unless it's retrieved first. An item in the bag can't be detected by magic that detects only things on the same plane.</p>\n<hr />\n<p><strong>Capacity</strong> 100 Bulk</p>"
                 }
             }
         },
@@ -469,17 +407,6 @@
                 "equipment->Boots of Bounding (Greater)": {
                     "name": "Boots of Bounding (Greater)",
                     "description": "<p>The springy soles of these sturdy leather boots cushion your feet and make each step lighter. These boots give you a +10-foot item bonus to your Speed and a +3 item bonus to Athletics checks to High Jump and Long Jump.</p>\n<p>In addition, when you use the Leap action, you can move 5 feet further if jumping horizontally or 3 feet higher if jumping vertically.</p>"
-                },
-                "equipment->Religious Symbol (Wooden)": {
-                    "name": "Religious Symbol (Wooden)",
-                    "description": "<p>This piece of wood or silver is emblazoned with an image representing a deity. Some divine spellcasters, such as clerics, can use a religious symbol of their deity to use certain abilities and cast some spells. A religious symbol can be worn on the body on a chain or pin, or can be held.</p>"
-                },
-                "equipment->Sisters in Serenity": {
-                    "name": "Sisters in Serenity",
-                    "description": "<p>This folio, written in Common, lays out the tenets of the Sisterhood.</p>"
-                },
-                "equipment->Letter From Mantis Keeper": {
-                    "name": "Letter From Mantis Keeper"
                 }
             }
         },
@@ -683,9 +610,6 @@
                 "equipment->Iron Religious Symbol of Gorum": {
                     "name": "Iron Religious Symbol of Gorum",
                     "description": "<p>This piece of wood or silver is emblazoned with an image representing a deity. Some divine spellcasters, such as clerics, can use a religious symbol of their deity to use certain abilities and cast some spells. A religious symbol can be worn on the body on a chain or pin, or can be held.</p>"
-                },
-                "equipment->Key": {
-                    "name": "Key"
                 }
             }
         },
@@ -700,10 +624,6 @@
                 "equipment->Obsidian Goggles (Greater)": {
                     "name": "Obsidian Goggles (Greater)",
                     "description": "<p>The sleek, black lenses of these goggles somehow make everything seem more brightly lit. While wearing the goggles, you gain a +2 item bonus to Perception checks involving sight.</p>\n<hr />\n<p><strong>Activate\u2014Darkvision</strong> <span class=\"action-glyph\">1</span> (manipulate)</p>\n<p><strong>Frequency</strong> any number of times per day</p>\n<p><strong>Effect</strong> Adjusting your goggles, you gain darkvision until you deactivate it as an Interact action or the item is no longer invested by you, whichever comes first.</p>\n<p>@UUID[Compendium.pf2e.equipment-effects.Item.d7BDxmsnM1BUoEeT]{Effect: Obsidian Goggles (Greater)}</p>"
-                },
-                "consumable->Rounds (Gun Sword)": {
-                    "name": "Rounds (Gun Sword)",
-                    "description": "<p>Firearms require ammunition consisting of a projectile and black powder. A round of ammo can vary in its composition but is typically either a prepackaged paper cartridge, including wadding, bullet, and black powder, or loose shot packed in manually. Some weapons, like hand cannons and blunderbusses, can fire other materials, but their ammunition has the same Price due to the cost of the black powder. Because making rounds of firearm ammunition requires creating black powder, you need the @UUID[Compendium.pf2e.feats-srd.Item.is3Oz9wt11lNq62K]{Alchemical Crafting} skill feat to make them. Firearm rounds are a valid option for magical ammunition, just like arrows or bolts. Crafting magical firearm ammunition requires you to be able to craft both alchemical and magical items.</p>"
                 }
             }
         }
@@ -717,6 +637,10 @@
         "items": {
             "converter": "translateActorItems",
             "path": "items"
+        },
+        "rules": {
+            "converter": "translateRules",
+            "path": "system.rules"
         },
         "publicNotes": "system.details.publicNotes",
         "privateNotes": "system.details.privateNotes",

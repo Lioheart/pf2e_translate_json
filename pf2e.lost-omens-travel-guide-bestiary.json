@@ -61,9 +61,6 @@
                 "action->Pack Attack": {
                     "name": "Pack Attack",
                     "description": "<p>The wolf's Strikes deal 1d4 extra damage to creatures within reach of at least two of the wolf's allies.</p>"
-                },
-                "action->Knockdown": {
-                    "name": "Knockdown"
                 }
             }
         },
@@ -120,6 +117,10 @@
         "items": {
             "converter": "translateActorItems",
             "path": "items"
+        },
+        "rules": {
+            "converter": "translateRules",
+            "path": "system.rules"
         }
     }
 }

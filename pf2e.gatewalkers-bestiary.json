@@ -22,14 +22,6 @@
                 "action->Lancing Charge": {
                     "name": "Lancing Charge",
                     "description": "<p>If the destrier moved at least 10 feet directly before its lance arm Strike, it gains a +2 circumstance bonus to its damage roll.</p>"
-                },
-                "action->Tilting Strike": {
-                    "name": "Tilting Strike",
-                    "description": "<p><strong>Trigger</strong> The earthen destrier tramples a creature</p>\n<hr />\n<p><strong>Effect</strong> The earthen destrier makes a lance arm Strike against the creature it's trampling at a -5 penalty.</p>"
-                },
-                "action->Trample": {
-                    "name": "Trample",
-                    "description": "<p>Medium or smaller, hoof, @Check[reflex|dc:20|basic]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Trample]</p>"
                 }
             }
         },
@@ -49,33 +41,6 @@
                 },
                 "action->+1 Status to Saves Against Good and Necromancy Spells and Effects": {
                     "name": "+1 Status to Saves Against Good and Necromancy Spells and Effects"
-                },
-                "action->Attack of Opportunity (Tentacle Only)": {
-                    "name": "Attack of Opportunity (Tentacle Only)",
-                    "description": "<p>Tentacle only</p>\n<p>@Localize[PF2E.NPC.Abilities.Glossary.AttackOfOpportunity]</p>"
-                },
-                "action->Blackfrost Evasion": {
-                    "name": "Blackfrost Evasion",
-                    "description": "<p><strong>Trigger</strong> Ainamuuren takes at least 35 physical damage from a single attack, and he isn't currently discorporated</p>\n<hr />\n<p><strong>Effect</strong> Ainamuuren discorporates into a whirling blizzard of blackfrost for 3 rounds. During this time, he gains resistance 10 to physical damage and weakness 10 to force damage. He gains a fly Speed of 40 feet, but the only action he can take is to Fly. While discorporated, the first time each round that Ainamuuren enters another creature's space or a creature enters Ainamuuren's space, that creature takes @Damage[4d8[cold]] and is exposed to blackfrost. At the start of his turn, Ainamuuren can end this effect as a free action.</p>"
-                },
-                "action->Reactive Tentacles": {
-                    "name": "Reactive Tentacles",
-                    "description": "<p>At the start of his turn, when Ainamuuren regains his actions, he gains an additional reaction that can be used only to make an Attack of Opportunity.</p>"
-                },
-                "action->Dreams of the Blackfrost Whale": {
-                    "name": "Dreams of the Blackfrost Whale",
-                    "description": "<p><strong>Frequency</strong> once per day</p>\n<hr />\n<p><strong>Effect</strong> Ainamuuren fixes his many-eyed gaze upon a single target he can see within 60 feet, then opens wide his maw to release a torrent of whispers channeled from Osoyo's slumbering mind. The targeted creature must attempt a @Check[will|dc:32] save.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature endures a brief moment where they believe they are imprisoned in the ice, as Osoyo has been for thousands of years, and is @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1} for 1 round.</p>\n<p><strong>Failure</strong> The vision of being imprisoned in ice is more profound, and in the span of a few seconds, the creature endures what seems like a thousand years of imprisonment. The creature is @UUID[Compendium.pf2e.conditionitems.Item.6uEgoh53GbXuHpTF]{Paralyzed} until the end of its next turn, after which it emerges from its paralysis @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 1}.</p>\n<p><strong>Critical Failure</strong> As failure, but the creature doesn't automatically recover from paralysis at the end of its turn. Instead, it can attempt a new DC 32 save. On a success, the paralysis ends and they are stupefied 1, but on a failure, the paralysis continues for another round.</p>"
-                },
-                "action->Invasive Blackfrost": {
-                    "name": "Invasive Blackfrost",
-                    "description": "<p>Gatewalker characters are not immune to blackfrost effects inflicted by Ainamuuren</p>\n<p>This affliction can't be reduced below stage 1, nor the damage from it healed, until successfully treated with @UUID[Compendium.pf2e.spells-srd.Item.SUKaxVZW2TlM8lu0]{Cleanse Affliction} or a similar effect; the affliction can then be removed as a normal disease. A creature that dies from cold damage while cursed with blackfrost rises as a blackfrost dead after 24 hours. Blackfrost has a counteract rank of 10.</p>\n<p><strong>Saving Throw</strong> @Check[fortitude|dc:32]</p>\n<p><strong>Stage 1</strong> @Damage[4d6[cold]] (1 minute)</p>\n<p><strong>Stage 2</strong> weakness to cold 5 and @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 1} (1 day)</p>\n<p><strong>Stage 3</strong> weakness to cold 10 and @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 2} (1 day)</p>"
-                },
-                "action->Twist Deviance": {
-                    "name": "Twist Deviance",
-                    "description": "<p>Ainamuuren reaches out, then clutches his fingers into a fist and twists his arm, as if he were wrenching and tugging. At the same moment, all gatewalkers in a @Template[cone|distance:60] that Ainamuuren can see feel the signs they've worn on their bodies since they emerged from their Missing Moment spike with pain, as if Ainamuuren had @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed} that flesh and was twisting and tearing it. The targets must attempt a @Check[will|dc:32] save. Ainamuuren can't use Twist Deviance again for [[/br 1d4 #Recharge Twist Deviance]]{1d4 rounds}.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature endures a brief moment of horrific pain and takes @Damage[4d8[mental]].</p>\n<p><strong>Failure</strong> The pain is much greater, and for a moment the creature is convinced that the portion of their flesh that was adorned with the sign of the gatewalker has been torn free. They take @Damage[8d8[mental]] and can't use their deviant abilities for 1 round.</p>\n<p><strong>Critical Failure</strong> As failure, but @Damage[16d8[mental]] and they can't use their deviant abilities for 1 minute.</p>"
-                },
-                "action->Knockdown": {
-                    "name": "Knockdown"
                 }
             }
         },
@@ -91,29 +56,6 @@
                 },
                 "action->All-Around Vision": {
                     "name": "All-Around Vision"
-                },
-                "action->Hydra Regeneration": {
-                    "name": "Hydra Regeneration",
-                    "description": "<p>The hydra has regeneration equal to 3 x the number of heads it has. If a hydra's body is missing any heads and the remaining stumps have not been cauterized, the hydra attempts a @Check[fortitude|immutable:true|dc:25] save after it regains Hit Points from regeneration. On a success, one uncauterized stump regrows one head; on a critical success, two uncauterized stumps regrow. The hydra's regeneration only fully deactivates if all its heads are severed and all stumps are cauterized, at which point it dies.</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Regeneration]</p>"
-                },
-                "action->Alkoasha's Head Regrowth": {
-                    "name": "Alkoasha's Head Regrowth",
-                    "description": "<p>Alkoasha has ten heads. A creature can attempt to sever one of the hydra's heads by specifically targeting it and dealing damage equal to the head's Hit Points. A head that is not completely severed returns to full Hit Points at the end of any creature's turn.</p>\n<p>Alkoasha can regrow a severed head using Hydra Regeneration. A creature can prevent this regrowth by dealing acid or fire damage to the stump, cauterizing it. Single-target acid or fire effects need to be targeted at a specific stump, but effects that deal splash damage or affect areas covering the hydra's whole space cauterize all stumps if they deal acid or fire damage. If the attack that severs a head deals any acid or fire damage, the stump is cauterized instantly. If all ten heads are cauterized, the hydra dies.</p>\n<hr />\n<p><strong>Hydra Head</strong></p>\n<ul>\n<li><strong>Hit Points</strong> 15</li>\n<li><strong>Immunities</strong> Area Damage</li>\n<li><strong>Weaknesses</strong> Slashing 5</li>\n</ul>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.uZJOdounIHaFDC1t]{Effect: Hydra Heads}</p>"
-                },
-                "action->Attack of Opportunity": {
-                    "name": "Attack of Opportunity"
-                },
-                "action->Multiple Opportunities": {
-                    "name": "Multiple Opportunities",
-                    "description": "<p>A hydra gains an extra reaction per round for each of its heads beyond the first, which it can use only to make Attacks of Opportunity. It can't use more than 1 reaction on the same triggering action, even if a creature leaves several squares within its reach, and the hydra must use a different head for each Attack of Opportunity it makes. Whenever one of the hydra's heads is severed, the hydra loses 1 of its extra reactions per round.</p>"
-                },
-                "action->Focused Assault": {
-                    "name": "Focused Assault",
-                    "description": "<p>The hydra attacks a single target with its heads, overwhelming its foe with multiple attacks and leaving almost nowhere to dodge. The hydra Strikes with its fangs. On a successful attack, the hydra deals damage from its fangs Strike to the target, plus an additional [[/r 1d6]] damage for every head it has beyond the first. Even on a failed attack, the hydra deals the damage from one fangs Strike to the target creature, though it still misses completely on a critical failure. This counts toward the hydra's multiple attack penalty as a number of attacks equal to the number of heads the hydra has.</p>"
-                },
-                "action->Storm of Jaws": {
-                    "name": "Storm of Jaws",
-                    "description": "<p>The hydra makes a number of Strikes up to its number of heads, each against a different target. These attacks count toward the hydra's multiple attack penalty, but the multiple attack penalty doesn't increase until after the hydra makes all its attacks.</p>"
                 }
             }
         },
@@ -133,14 +75,6 @@
                 "action->Reflective Shell": {
                     "name": "Reflective Shell",
                     "description": "<p>An amelekana submerged in water gains a +4 circumstance bonus to Stealth checks. If the water is moving, this bonus increases to +8.</p>"
-                },
-                "action->Lob Amoeba": {
-                    "name": "Lob Amoeba",
-                    "description": "<p>The amelekana flings a @UUID[Compendium.pf2e.gatewalkers-bestiary.Actor.HypIeplCDn0Phqs4]{Symbiotic Amoeba} at a target within 40 feet\u2014this is a ranged attack that doesn't count toward the amelekana's multiple attack penalty, and its multiple attack penalty doesn't apply to this attack.</p>\n<p><strong>Success</strong> The target takes @Damage[(2d4+8)[bludgeoning]] and the symbiotic amoeba lands in a square adjacent to the target.</p>\n<p><strong>Failure</strong> The target takes no damage, but the symbiotic amoeba still spawns in a square adjacent to the target.</p>\n<p><strong>Critical Failure</strong> The target takes no damage and the lobbed amoeba dies on impact.</p>"
-                },
-                "action->Symbiotic Amoeba": {
-                    "name": "Symbiotic Amoeba",
-                    "description": "<p>An amoeba produced by the amelekana is a Tiny, mindless, semi-independent creature controlled by the amelekana. It has the minion trait, AC 15, 1 Hit Point, and the same skills and saving throws as the amelekana. Each round, the amelekana can Command a Minion to make an amoeba Step or Swim 20 feet and make a pseudopod Strike (Melee pseudopod +13, Damage 2d4 acid). If an amelekana is killed, its symbiotic amoebas are also killed by the host creature's psychic backlash. An amelekana can have up to three extant symbiotic amoebas at a time.</p>\n<p>@UUID[Compendium.pf2e.gatewalkers-bestiary.Actor.HypIeplCDn0Phqs4]{Symbiotic Amoeba}</p>"
                 }
             }
         },
@@ -159,13 +93,6 @@
                 "action->Construct Armor (Hardness 11)": {
                     "name": "Construct Armor (Hardness 11)",
                     "description": "<p>Like normal objects, a tupilaq has Hardness. This Hardness reduces any damage it takes by an amount equal to the Hardness. Once a tupilaq is reduced to less than half its Hit Points, or immediately upon being damaged by a critical hit, its construct armor breaks, it loses its Hardness, and its Armor Class is reduced to 28.</p>"
-                },
-                "action->Carver's Curse": {
-                    "name": "Carver's Curse",
-                    "description": "<p>When a tupilaq is created, the curse imparted by its creator manifests in the form of a single 5th-rank @UUID[Compendium.pf2e.spells-srd.Item.9AAkVUCwF6WVNNY2]{Lightning Bolt} the tupilaq can cast three times per day. The particular spell is a reflection of the creator's wish for vengeance.</p>"
-                },
-                "action->Grab": {
-                    "name": "Grab"
                 }
             }
         },
@@ -182,10 +109,6 @@
                 "action->Construct Armor (Hardness 10)": {
                     "name": "Construct Armor (Hardness 10)",
                     "description": "<p>Like normal objects, an apothecary's cabinet has Hardness. This Hardness reduces any damage it takes by an amount equal to the Hardness. Once an apothecary's cabinet is reduced to fewer than half its Hit Points, or immediately upon being damaged by a critical hit, its construct armor breaks and its Armor Class is reduced to 20.</p>"
-                },
-                "action->Poison Stock": {
-                    "name": "Poison Stock",
-                    "description": "<p>When the cabinet hits a creature with its poison bottle Strike, roll [[/br 1d4]] to determine what kind of poison splashes onto the struck creature:</p>\n<ol>\n<li>nerve poison (@UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 1})</li>\n<li>weakening poison (@UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 1})</li>\n<li>noxious poison (@UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 1})</li>\n<li>clouded mind poison (@UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 1}).</li>\n</ol>\n<p>The target must attempt a @Check[fortitude|dc:24|traits:poison] save.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unafected.</p>\n<p><strong>Success</strong> The creature takes @Damage[1d6[poison]].</p>\n<p><strong>Failure</strong> The creature takes @Damage[2d6[poison]] and is aficted with the rolled poison's associated condition until the end of its next turn.</p>\n<p><strong>Critical Failure</strong> The creature takes @Damage[2d6[poison]] and is aficted with the rolled poison's associated condition for [[/br 1d4+1 #Rounds]] rounds.</p>"
                 }
             }
         },
@@ -214,14 +137,6 @@
                 "action->Bond with Mortal": {
                     "name": "Bond with Mortal",
                     "description": "<p><strong>Frequency</strong> once per day</p>\n<hr />\n<p><strong>Effect</strong> The spirit guide forms a bond with a mortal creature. While the bond exists, the spirit guide's current and maximum Hit Points increase by 14, the spirit guide gains a +2 status bonus to attack and damage rolls, and the spirit guide and bonded mortal can communicate telepathically as long as they're on the same plane. The spirit guide can be bonded with only one mortal at a time, and can take this action again to end the bond or to form a new bond (which also ends the old bond). The bond ends if the spirit guide or the mortal dies.</p>\n<p>This bond strengthens the spirit guide's connection to the Material Plane. While bonded, the spirit guide loses the incorporeal and spirit traits, loses their immunities and resistances, and changes their Strikes to deal the appropriate physical damage (typically piercing or slashing) instead of force damage.</p>"
-                },
-                "action->Bonded Strike": {
-                    "name": "Bonded Strike",
-                    "description": "<p><strong>Requirements</strong> The spirit guide is currently Bonded with a Mortal</p>\n<hr />\n<p><strong>Effect</strong> The spirit guide makes a talon Strike. If this attack hits, the bonded mortal can spend their reaction to Strike the same target.</p>"
-                },
-                "action->Empowered Healing": {
-                    "name": "Empowered Healing",
-                    "description": "<p>When the stone-breasted owl casts heal, it rolls d10s instead of d8s.</p>"
                 }
             }
         },
@@ -245,30 +160,6 @@
                 },
                 "action->Void Healing": {
                     "name": "Void Healing"
-                },
-                "action->Blackfrost": {
-                    "name": "Blackfrost",
-                    "description": "<p>This affliction can't be reduced below stage 1, nor the damage from it healed, until successfully treated with @UUID[Compendium.pf2e.spells-srd.Item.SUKaxVZW2TlM8lu0]{Cleanse Affliction} or a similar effect; the affliction can then be removed as a normal disease. A creature that dies from cold damage while cursed with blackfrost rises as a blackfrost dead after 24 hours. Blackfrost has a counteract rank of 10.</p>\n<p><strong>Saving Throw</strong> @Check[fortitude|dc:27]</p>\n<p><strong>Stage 1</strong> @Damage[4d6[cold]] (1 minute)</p>\n<p><strong>Stage 2</strong> weakness to cold 5 and @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 1} (1 day)</p>\n<p><strong>Stage 3</strong> weakness to cold 10 and @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 2} (1 day)</p>"
-                },
-                "action->Break Ground": {
-                    "name": "Break Ground",
-                    "description": "<p>The guecubu stomps, and the ground breaks and ripples in a @Template[emanation|distance:30], erupting in razor-sharp, crisscrossing spikes of rock that deal @Damage[3d8[piercing]] damage to creatures in the area (@Check[reflex|dc:26|basic] save).</p>\n<p>The area becomes difficult terrain and hazardous terrain, with each square dealing @Damage[3[piercing]] damage to a creature that moves through it. A guecubu is immune to these effects.</p>\n<p>Ground under the effects of a @UUID[Compendium.pf2e.spells-srd.Item.Dbd5W6G8U2vzWolN]{Consecrate} ritual or a @UUID[Compendium.pf2e.spells-srd.Item.mpGCMTldMVa0pWYs]{Circle of Protection} spell tuned against evil or chaos can't be affected by this ability.</p>"
-                },
-                "action->Shattering Death": {
-                    "name": "Shattering Death",
-                    "description": "<p>When the blackfrost guecubu is destroyed, it shatters and fills the air around it with a cloud of razor-sharp shards of ice. Creatures in a @Template[emanation|distance:10] take @Damage[8d8[cold]] (@Check[reflex|dc:26|basic]). Creatures that critically fail this save also take @Damage[1d6[bleed]].</p>"
-                },
-                "action->Shove into Ice": {
-                    "name": "Shove into Ice",
-                    "description": "<p>When the blackfrost guecubu successfully @UUID[Compendium.pf2e.actionspf2e.Item.7blmbDrQFNfdT731]{Shoves} a creature into an ice or frozen earth barrier, the target must succeed at a @Check[reflex|dc:26] save or become merged with the barrier, with the effects of @UUID[Compendium.pf2e.spells-srd.Item.vh1RpbWfqdNC4L3P]{One with Stone} until the target escapes (DC 26).</p>"
-                },
-                "action->Tundra Glide": {
-                    "name": "Tundra Glide",
-                    "description": "<p>The blackfrost guecubu can Burrow through any frozen earth, ice, or snow, not including rock. When it does so, the blackfrost guecubu moves at its full burrow Speed, leaving no tunnels or signs of its passing.</p>"
-                },
-                "action->Wrathful Misfortune": {
-                    "name": "Wrathful Misfortune",
-                    "description": "<p>A creature damaged by a guecubu must succeed at a @Check[will|dc:26] save or become cursed with consummate bad luck. The creature becomes @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 2}.</p>\n<p>Each time that creature rolls initiative, on their next roll they must roll twice and use the worse result; this is a misfortune effect.</p>"
                 }
             }
         },
@@ -291,18 +182,6 @@
                 },
                 "action->Void Healing": {
                     "name": "Void Healing"
-                },
-                "action->Blackfrost": {
-                    "name": "Blackfrost",
-                    "description": "<p>This affliction can't be reduced below stage 1, nor the damage from it healed, until successfully treated with @UUID[Compendium.pf2e.spells-srd.Item.SUKaxVZW2TlM8lu0]{Cleanse Affliction} or a similar effect; the affliction can then be removed as a normal disease. A creature that dies from cold damage while cursed with blackfrost rises as a blackfrost dead after 24 hours. Blackfrost has a counteract rank of 10.</p>\n<p><strong>Saving Throw</strong> @Check[fortitude|dc:27]</p>\n<p><strong>Stage 1</strong> @Damage[4d6[cold]] (1 minute)</p>\n<p><strong>Stage 2</strong> weakness to cold 5 and @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 1} (1 day)</p>\n<p><strong>Stage 3</strong> weakness to cold 10 and @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 2} (1 day)</p>"
-                },
-                "action->Imprison Mind": {
-                    "name": "Imprison Mind",
-                    "description": "<p>The blackfrost prophet concentrates on a creature within 60 feet, filling the target's mind with befuddling susurrations. The creature must succeed at a @Check[will|dc:28] save or take @Damage[(4d8+8)[mental]] and become @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 1} for 1 minute (@UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 2} on a critical failure). The creature is @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1} as long as it's stupefied.</p>"
-                },
-                "action->Raise Blackfrost": {
-                    "name": "Raise Blackfrost",
-                    "description": "<p>The blackfrost prophet selects a point within 60 feet, then calls upon shards of blackfrost to stab up through the crust in a @Template[burst|distance:30]. Creatures in the area take @Damage[2d8[piercing],2d8[cold]]{2d8 piercing damage plus 2d8 cold} (@Check[reflex|dc:28|basic]). A creature that takes cold damage from this ability is exposed to blackfrost. Until the next time the blackfrost prophet uses Raise Blackfrost, the affected area is difficult terrain.</p>"
                 }
             }
         },
@@ -328,14 +207,6 @@
                 },
                 "action->Void Healing": {
                     "name": "Void Healing"
-                },
-                "action->Blackfrost": {
-                    "name": "Blackfrost",
-                    "description": "<p>This affliction can't be reduced below stage 1, nor the damage from it healed, until successfully treated with @UUID[Compendium.pf2e.spells-srd.Item.SUKaxVZW2TlM8lu0]{Cleanse Affliction} or a similar effect; the affliction can then be removed as a normal disease. A creature that dies from cold damage while cursed with blackfrost rises as a blackfrost dead after 24 hours. Blackfrost has a counteract rank of 10.</p>\n<p><strong>Saving Throw</strong> @Check[fortitude|dc:27]</p>\n<p><strong>Stage 1</strong> @Damage[4d6[cold]] (1 minute)</p>\n<p><strong>Stage 2</strong> weakness to cold 5 and @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 1} (1 day)</p>\n<p><strong>Stage 3</strong> weakness to cold 10 and @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 2} (1 day)</p>"
-                },
-                "action->Blackfrost Breath": {
-                    "name": "Blackfrost Breath",
-                    "description": "<p>The blackfrost dead gasps sharply, then exhales a mist of dark-blue blackfrost particles in a @Template[emanation|distance:5]. All creatures within the mist become @UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{Concealed}, and all creatures outside the mist become concealed to creatures within it. The mist persists for 1 minute. A creature that ends its turn in the mist is exposed to blackfrost. The blackfrost dead can't use Blackfrost Breath again for [[/br 1d4 #Recharge Blackfrost Breath]]{1d4 rounds}.</p>"
                 }
             }
         },
@@ -370,18 +241,6 @@
                 },
                 "strike-melee->Staff": {
                     "name": "Staff"
-                },
-                "action->Guardian Thorns": {
-                    "name": "Guardian Thorns",
-                    "description": "<p>Bolan compels plant-based materials within @Template[emanation|distance:10]{10 feet} of him to grow sharp thorns and spiky branches. This ability affects all walls, floors, and large objects made from dead organic material, such as wood. Affected areas become difficult terrain. Non-fey and non-plant creatures in the affected area or those who move through an affected square take @Damage[2d10[piercing]] (@Check[reflex|dc:18|basic]). This ability does not affect stone, dirt, living plants, or other materials. The effect ends when Bolan moves out of his square.</p>"
-                },
-                "action->Item Treachery": {
-                    "name": "Item Treachery",
-                    "description": "<p>Bolan targets a held item (such as a bow stave, wooden shield, or scroll) within 60 feet composed, at least partially, of wood, cotton, or other dead plant matter. The plant-based part of this item animates and attempts to wriggle free of its holder's grasp. The holder must attempt a @Check[reflex|dc:18] save.</p>\n<hr />\n<p><strong>Success</strong> The creature holds onto the item with no ill effect.</p>\n<p><strong>Failure</strong> The creature struggles to hold onto the item. Until the start of the creature's next turn, attempts to @UUID[Compendium.pf2e.actionspf2e.Item.Dt6B1slsBy8ipJu9]{Disarm} the creature of that item gain a +2 circumstance bonus, and the creature takes a \u20132 circumstance penalty to attacks with the item or other checks requiring a firm grasp on the item.</p>\n<p><strong>Critical Failure</strong> The creature drops the item into the creature's space or drops the object in an adjacent square of Bolan's choice, at which point the item returns to normal.</p>"
-                },
-                "action->Vengeful Fibers": {
-                    "name": "Vengeful Fibers",
-                    "description": "<p>A piece of clothing animates and attacks its wearer at Bolan's command. Bolan targets a creature within 60 feet wearing clothing made from plants, such as cotton, hemp, or grass. The clothing chokes its wearer, restricts their movement, and abrades their skin. The target takes @Damage[2d10[bludgeoning]] (@Check[fortitude|dc:18|basic]). A creature that takes damage in this way is also @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} and takes a \u201310-foot circumstance penalty to Speed until the beginning of Bolan's next turn.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.zNOomUXHZHcc1PWD]{Effect: Vengeful Fibers}</p>"
                 }
             }
         },
@@ -500,39 +359,6 @@
                 },
                 "action->All-Around Vision": {
                     "name": "All-Around Vision"
-                },
-                "action->Attack of Opportunity": {
-                    "name": "Attack of Opportunity"
-                },
-                "action->Solar Instability": {
-                    "name": "Solar Instability",
-                    "description": "<p>The crownbound constellation is @UUID[Compendium.pf2e.conditionitems.Item.HL2l2VRSaQHu9lUw]{Fatigued} and @UUID[Compendium.pf2e.conditionitems.Item.zJxUflt9np0q4yML]{Invisible} when in direct contact with the rays of the sun.</p>"
-                },
-                "action->Starlight": {
-                    "name": "Starlight",
-                    "description": "<p>15 feet. The glow of the crownbound constellation creates dim light. It can suppress or resume this ability as a free action.</p>"
-                },
-                "action->Dazzling Assault": {
-                    "name": "Dazzling Assault",
-                    "description": "<p>Each enemy in the crownbound constellation's space takes @Damage[7d4[bludgeoning]] (@Check[reflex|dc:23|basic]). Creatures that fail this save are also @UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]{Dazzled} until the end of their next turn.</p>"
-                },
-                "action->Star Weapons": {
-                    "name": "Star Weapons",
-                    "description": "<p>The crownbound constellation reforms its two weapons as +1 striking common or uncommon simple or martial weapons. These star weapons can't be disarmed, broken, dropped, destroyed, or stolen. Ranged star weapons don't require ammunition and those with a reload of 2 have a reload of 0 instead. When the crownbound constellation dies or uses its swarm shape its star weapons disappear.</p>"
-                },
-                "action->Starburst": {
-                    "name": "Starburst",
-                    "description": "<p>A creature that takes damage from a crownbound constellation's attack must succeed at a @Check[fortitude|dc:23] save or be @UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]{Dazzled} for 1 minute.</p>"
-                },
-                "action->Swarm Shape": {
-                    "name": "Swarm Shape",
-                    "description": "<p>The crownbound constellation disperses into a shapeless swarm of Small stars. It drops all held, worn, and carried items. While discorporated, the crownbound constellation can't use attack actions, but it has a fly Speed of 40 feet and can move through areas small enough for its individual stars to fit without having to Squeeze. It can use Swarm Shape again to coalesce back into its normal form, at which point its star weapons reappear.</p>"
-                },
-                "lore->Lamashtu Lore": {
-                    "name": "Lamashtu Lore"
-                },
-                "lore->Star Lore": {
-                    "name": "Star Lore"
                 }
             }
         },
@@ -576,29 +402,6 @@
                 },
                 "action->All-Around Vision": {
                     "name": "All-Around Vision"
-                },
-                "action->Gibbering": {
-                    "name": "Gibbering",
-                    "description": "<p>60 feet. Each creature that begins its turn within 60 feet of a gibbering mouther must attempt a @Check[will|dc:19] save. On a failure, they are @UUID[Compendium.pf2e.conditionitems.Item.yblD8fOR1J8rDwEQ]{Confused} for 1 round. On a success, they are temporarily immune for 1 minute.</p>"
-                },
-                "action->Reactive Gnaw": {
-                    "name": "Reactive Gnaw",
-                    "description": "<p><strong>Trigger</strong> An adjacent creature deals the gibbering mouther slashing damage.</p>\n<hr />\n<p><strong>Effect</strong> The gibbering mouther's wound opens into another maw. It makes a jaws Strike against the triggering creature.</p>"
-                },
-                "action->Burn Eyes": {
-                    "name": "Burn Eyes",
-                    "description": "<p>A creature that takes damage from a gibbering mouther's spittle must succeed at a @Check[fortitude|dc:22] save or be @UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]{Dazzled} for 1 round (or @UUID[Compendium.pf2e.conditionitems.Item.XgEqL1kFApUbl5Z2]{Blinded} for 1 round on a critical failure).</p>"
-                },
-                "action->Engulf": {
-                    "name": "Engulf",
-                    "description": "<p>@Check[reflex|dc:22|traits:damaging-effect], @Damage[3d8[piercing]], Escape DC 22, Rupture 8</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Engulf]</p>"
-                },
-                "action->Ground Manipulation": {
-                    "name": "Ground Manipulation",
-                    "description": "<p>The gibbering mouther causes stone and earth under its body to grow soft and muddy, remaining so for 1 minute after the mouther moves off the location. A gibbering mouther can move through these areas with ease, but other creatures treat them as difficult terrain.</p>"
-                },
-                "action->Grab": {
-                    "name": "Grab"
                 }
             }
         },
@@ -666,18 +469,6 @@
                 },
                 "action->+1 Status to All Saves vs. Magic": {
                     "name": "+1 Status to All Saves vs. Magic"
-                },
-                "action->Frightful Presence": {
-                    "name": "Frightful Presence",
-                    "description": "<p>90 feet. @Check[will|dc:22]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.FrightfulPresence]</p>"
-                },
-                "action->Dream Step": {
-                    "name": "Dream Step",
-                    "description": "<p>The dreamscraper shifts to either the Dimension of Dreams or the Material Plane. While in the Dimension of Dreams, it can see clearly onto the Material Plane with a range of 60 feet. On its first round in an encounter, the dreamscraper can use this ability once as a free action.</p>"
-                },
-                "action->Stolen Dreams": {
-                    "name": "Stolen Dreams",
-                    "description": "<p>The dreamscraper catches hold of the target creature's dreams and tries to rip them away. The target must attempt a @Check[will|dc:22] save.</p>\n<hr />\n<p><strong>Success</strong> The creature is unaffected.</p>\n<p><strong>Failure</strong> The dreamscraper manages to only scrape at the target creature's dreams. The target becomes @UUID[Compendium.pf2e.conditionitems.Item.HL2l2VRSaQHu9lUw]{Fatigued}.</p>\n<p><strong>Critical Failure</strong> The dreamscraper rips the target's dreams away and captures them. The target creature becomes fatigued. Furthermore, the target can never dream, can't be affected by spells that cause or affect dreams, can't detect or be detected by creatures with the dream trait, and can't enter the Dimension of Dreams. This effect ends if the target creature's dreams are restored through powerful magic.</p>"
                 }
             }
         },
@@ -691,28 +482,6 @@
                 },
                 "action->All-Around Vision": {
                     "name": "All-Around Vision"
-                },
-                "action->No Breath": {
-                    "name": "No Breath",
-                    "description": "<p>The elder thing doesn't breathe and is immune to effects that require breathing (such as inhaled poison).</p>"
-                },
-                "action->Constrict": {
-                    "name": "Constrict",
-                    "description": "<p>@Damage[(2d6+6)[bludgeoning]], @Check[fortitude|dc:22|basic]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Constrict]</p>"
-                },
-                "action->Hibernate": {
-                    "name": "Hibernate",
-                    "description": "<p>The elder thing enters a state of hibernation after focusing its thoughts for 1 minute. While hibernating, an elder thing is @UUID[Compendium.pf2e.conditionitems.Item.fBnFDH2MTzgFijKf]{Unconscious}. The elder thing can remain in hibernation as long as it wishes\u2014while hibernating, it doesn't need to eat or drink, nor does it age. Time effectively stands still for a hibernating elder thing. Any effect that would normally rouse an unconscious creature can end an elder thing's hibernation, but the elder thing must attempt a @Check[will|dc:25] save. On a success, the elder thing awakens in [[/br 2d4 #rounds]]{2d4 rounds}; otherwise it takes [[/br 1d4 #days]]{1d4 days} to wake from hibernation. The elder thing can set the length of its hibernation when it enters this state, so that it can awaken after a set amount of time has passed. When awakening in this way, the elder thing does so in only [[/br 1d4 #rounds]]{1d4 rounds}, with no Will save necessary.</p>"
-                },
-                "action->Unnatural Flight": {
-                    "name": "Unnatural Flight",
-                    "description": "<p>The elder thing's wings allow it to fly in regions where flight is normally impossible, such as outer space. It gains a +2 circumstance bonus to checks made to Maneuver in Flight, and on saving throws against effects that impede flight.</p>"
-                },
-                "action->Grab": {
-                    "name": "Grab"
-                },
-                "lore->Astronomy Lore": {
-                    "name": "Astronomy Lore"
                 }
             }
         },
@@ -729,32 +498,6 @@
                 },
                 "action->All-Around Vision": {
                     "name": "All-Around Vision"
-                },
-                "action->No Breath": {
-                    "name": "No Breath",
-                    "description": "<p>The elder thing doesn't breathe and is immune to effects that require breathing (such as inhaled poison).</p>"
-                },
-                "action->Constrict": {
-                    "name": "Constrict",
-                    "description": "<p>@Damage[(2d8+11)[bludgeoning]], @Check[fortitude|dc:29|basic]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Constrict]</p>"
-                },
-                "action->Eldritch Insight": {
-                    "name": "Eldritch Insight",
-                    "description": "<p><strong>Frequency</strong> once per day</p>\n<hr />\n<p><strong>Effect</strong> By focusing its senses and thoughts on a single concept, an elder thing researcher can draw upon the thousands of years of deep memories. It then selects one of the following skills: Arcana, any Lore, Nature, Religion, or Society. Once the skill is chosen, the elder thing researcher can attempt checks for the selected skill using its Occultism modifier. This effect lasts until the elder thing researcher uses Eldritch Insight again to change its focus. If no focus is predetermined, assume an elder thing researcher has chosen to focus on Library Lore.</p>"
-                },
-                "action->Hibernate": {
-                    "name": "Hibernate",
-                    "description": "<p>The elder thing enters a state of hibernation after focusing its thoughts for 1 minute. While hibernating, an elder thing is @UUID[Compendium.pf2e.conditionitems.Item.fBnFDH2MTzgFijKf]{Unconscious}. The elder thing can remain in hibernation as long as it wishes\u2014while hibernating, it doesn't need to eat or drink, nor does it age. Time effectively stands still for a hibernating elder thing. Any effect that would normally rouse an unconscious creature can end an elder thing's hibernation, but the elder thing must attempt a @Check[will|dc:25] save. On a success, the elder thing awakens in [[/br 2d4 #rounds]]{2d4 rounds}; otherwise it takes [[/br 1d4 #days]]{1d4 days} to wake from hibernation. The elder thing can set the length of its hibernation when it enters this state, so that it can awaken after a set amount of time has passed. When awakening in this way, the elder thing does so in only [[/br 1d4 #rounds]]{1d4 rounds}, with no Will save necessary.</p>"
-                },
-                "action->Unnatural Flight": {
-                    "name": "Unnatural Flight",
-                    "description": "<p>The elder thing's wings allow it to fly in regions where flight is normally impossible, such as outer space. It gains a +2 circumstance bonus to checks made to Maneuver in Flight, and on saving throws against effects that impede flight.</p>"
-                },
-                "action->Grab": {
-                    "name": "Grab"
-                },
-                "lore->Astronomy Lore": {
-                    "name": "Astronomy Lore"
                 }
             }
         },
@@ -780,32 +523,6 @@
                 "action->Great Despair": {
                     "name": "Great Despair",
                     "description": "<p>30 feet. Living creatures are @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 1} while in Equendia's great despair aura. They can't naturally recover from this fear while in the area but recover instantly once they leave it. When a creature first enters the area, it must succeed at a @Check[will|dc:27] save (after taking the penalty from being frightened) or be @UUID[Compendium.pf2e.conditionitems.Item.6uEgoh53GbXuHpTF]{Paralyzed} for [[/r 1d4 #Paralyzed Duration]]{1d4 rounds}. The creature is then temporarily immune for 24 hours.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.1bOSJ2LbEC28aI9f]{Effect: Despair}</p>"
-                },
-                "action->Snow Vision": {
-                    "name": "Snow Vision",
-                    "description": "<p>Equendia ignores the @UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{Concealed} condition from falling snow.</p>"
-                },
-                "action->Void Healing": {
-                    "name": "Void Healing"
-                },
-                "action->Blackfrost Rot": {
-                    "name": "Blackfrost Rot",
-                    "description": "<p>This affliction can't be reduced below stage 1, nor the damage from it healed, until successfully treated with @UUID[Compendium.pf2e.spells-srd.Item.SUKaxVZW2TlM8lu0]{Cleanse Affliction} or a similar effect; the affliction can then be removed as a normal disease. A creature that dies from cold damage while cursed with blackfrost rises as a blackfrost dead after 24 hours. Blackfrost has a counteract rank of 10.</p>\n<p><strong>Saving Throw</strong> @Check[fortitude|dc:30]</p>\n<p><strong>Stage 1</strong> @Damage[4d6[cold]] (1 minute)</p>\n<p><strong>Stage 2</strong> weakness to cold 5 and @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 1} (1 day)</p>\n<p><strong>Stage 3</strong> weakness to cold 10 and @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 2} (1 day)</p>"
-                },
-                "action->Frozen Breath": {
-                    "name": "Frozen Breath",
-                    "description": "<p>Equendia exhales a @Template[cone|distance:60] of icy shards that deal @Damage[6d6[cold],6d6[slashing]]{6d6 cold and 6d6 slashing} (@Check[reflex|dc:30|basic]). She can't use Frozen Breath again for [[/br 1d4 #Recharge Frozen Breath]]{1d4 rounds}.</p>"
-                },
-                "action->Hissing Command": {
-                    "name": "Hissing Command",
-                    "description": "<p>Equendia utters a swift command in Necril to strike at adjacent enemies. Any blackfrost zombies within 30 feet can use a reaction to attempt a melee Strike.</p>"
-                },
-                "action->Invasive Blackfrost": {
-                    "name": "Invasive Blackfrost",
-                    "description": "<p>If a gatewalker is critically hit by any of Equendia's Strikes, the wound takes on an unnerving blackened appearance, as if from advanced frostbite or charring. For the next 24 hours, the gatewalker is no longer immune to blackfrost.</p>"
-                },
-                "lore->Astronomy Lore": {
-                    "name": "Astronomy Lore"
                 }
             }
         },
@@ -824,73 +541,6 @@
                 "equipment->Pendant of the Occult (Greater)": {
                     "name": "Pendant of the Occult (Greater)",
                     "description": "<p>This amulet is hollow and shaped in the form of an unblinking eye. Its cavity typically holds some fragment of occult text. While wearing the pendant, you gain a +2 item bonus to Occultism checks, and you can cast the @UUID[Compendium.pf2e.spells-srd.Item.izcxFQFwf3woCnFs]{Guidance} cantrip as an occult innate spell.</p>\n<p>The pendant can be activated.</p>\n<p><strong>Activate</strong> 10 minutes (Cast a Spell)</p>\n<p><strong>Frequency</strong> once per day</p>\n<hr />\n<p><strong>Effect</strong> You cast a 4th-rank @UUID[Compendium.pf2e.spells-srd.Item.yM3KTTSAIHhyuP14]{Dream Message} spell.</p>"
-                },
-                "equipment->Manor Keys": {
-                    "name": "Manor Keys"
-                },
-                "consumable->Scroll of Black Tentacles (Level 5)": {
-                    "name": "Scroll of Black Tentacles (Level 5)",
-                    "description": "<p>@UUID[Compendium.pf2e.spells-srd.Item.2w4OpAGihn1JSHFD]{Black Tentacles}</p><hr /><p>Casting a Spell from a scroll requires holding the scroll in one hand and activating it with a Cast a Spell activity using the normal number of actions for that spell.</p>\n<p>To Cast a Spell from a scroll, the spell must appear on your spell list. Because you're the one Casting the Spell, use your spell attack roll and spell DC. The spell also gains the appropriate trait for your tradition (arcane, divine, occult, or primal).</p>\n<p>Any physical material components and costs are provided when a scroll is created, so you don't need to provide them when Casting a Spell from a scroll. You must replace any required material component for that spell with a somatic component. If the spell requires a focus, you must have that focus to Cast the Spell from a scroll.</p>\n<hr />\n<p><em>Note: To create a scroll or wand of a specific spell, drag the spell from the compendium or compendium browser into the inventory of a PC, NPC, or loot actor.</em></p>"
-                },
-                "consumable->Scroll of Confusion (Level 4)": {
-                    "name": "Scroll of Confusion (Level 4)",
-                    "description": "<p>@UUID[Compendium.pf2e.spells-srd.Item.LiGbewa9pO0yjbsY]{Confusion}</p><hr /><p>Casting a Spell from a scroll requires holding the scroll in one hand and activating it with a Cast a Spell activity using the normal number of actions for that spell.</p>\n<p>To Cast a Spell from a scroll, the spell must appear on your spell list. Because you're the one Casting the Spell, use your spell attack roll and spell DC. The spell also gains the appropriate trait for your tradition (arcane, divine, occult, or primal).</p>\n<p>Any physical material components and costs are provided when a scroll is created, so you don't need to provide them when Casting a Spell from a scroll. You must replace any required material component for that spell with a somatic component. If the spell requires a focus, you must have that focus to Cast the Spell from a scroll.</p>\n<hr />\n<p><em>Note: To create a scroll or wand of a specific spell, drag the spell from the compendium or compendium browser into the inventory of a PC, NPC, or loot actor.</em></p>"
-                },
-                "consumable->Scroll of Fly (Level 4)": {
-                    "name": "Scroll of Fly (Level 4)",
-                    "description": "<p>@UUID[Compendium.pf2e.spells-srd.Item.A2JfEKe6BZcTG1S8]{Fly}</p><hr /><p>Casting a Spell from a scroll requires holding the scroll in one hand and activating it with a Cast a Spell activity using the normal number of actions for that spell.</p>\n<p>To Cast a Spell from a scroll, the spell must appear on your spell list. Because you're the one Casting the Spell, use your spell attack roll and spell DC. The spell also gains the appropriate trait for your tradition (arcane, divine, occult, or primal).</p>\n<p>Any physical material components and costs are provided when a scroll is created, so you don't need to provide them when Casting a Spell from a scroll. You must replace any required material component for that spell with a somatic component. If the spell requires a focus, you must have that focus to Cast the Spell from a scroll.</p>\n<hr />\n<p><em>Note: To create a scroll or wand of a specific spell, drag the spell from the compendium or compendium browser into the inventory of a PC, NPC, or loot actor.</em></p>"
-                },
-                "consumable->Cognitive Mutagen (Moderate) (Infused)": {
-                    "name": "Cognitive Mutagen (Moderate) (Infused)",
-                    "description": "<p><strong>Activate</strong> <span class=\"action-glyph\">A</span> Interact</p>\n<hr />\n<p>Your mind becomes clear and cognition flows freely, but physical matters seem ephemeral.</p>\n<p><strong>Benefit</strong> You gain a +2 item bonus to Arcana, Crafting, Lore, Occultism, and Society checks and all checks to @UUID[Compendium.pf2e.actionspf2e.Item.1OagaWtBpVXExToo]{Recall Knowledge}. Your critical failures on Recall Knowledge checks become failures instead.</p>\n<p><strong>Drawback</strong> You take a -2 penalty to weapon and unarmed attack rolls, Athletics checks, and acrobatics checks. You can carry 2 less Bulk than normal before becoming encumbered, and the maximum Bulk you can carry is reduced by 4.</p>\n<p><strong>Duration</strong> 10 minutes.</p>\n<p>@UUID[Compendium.pf2e.equipment-effects.Item.ztxW3lBPRcesF7wK]{Effect: Cognitive Mutagen (Moderate)}</p>"
-                },
-                "consumable->Comprehension Elixir (Greater) (Infused)": {
-                    "name": "Comprehension Elixir (Greater) (Infused)",
-                    "description": "<p>This bitter draught opens your mind to the potential of the written word. For the listed duration after drinking this elixir, you can understand any words you read, so long as they are written in a common language. This elixir doesn't automatically allow you to understand codes or extremely esoteric passages-you still need to attempt a skill check to Decipher Writing. The duration is 10 minutes.</p>"
-                },
-                "consumable->Elixir of Life (Moderate) (Infused)": {
-                    "name": "Elixir of Life (Moderate) (Infused)",
-                    "description": "<p><strong>Activate</strong> <span class=\"action-glyph\">A</span> Interact</p>\n<p>Elixirs of life accelerate a living creature's natural healing processes and immune system. Upon drinking this elixir, you regain @Damage[(5d6+12)[healing]] Hit Points and gain +2 item bonus to saving throws against diseases and poisons for 10 minutes.</p>\n<p>@UUID[Compendium.pf2e.equipment-effects.Item.lPRuIRbu0rHBkoKY]{Effect: Elixir of Life}</p>"
-                },
-                "consumable->Psychic Colors Elixir (Infused)": {
-                    "name": "Psychic Colors Elixir (Infused)",
-                    "description": "<p><strong>Activate</strong> <span class=\"action-glyph\">1</span> Interact</p>\n<p>This orange liquid lets you visibly detect the psychic energies that enable telekinesis and telepathy. For the next minute, you can sense if a creature you can see is using a telepathic or telekinetic ability, such as the telepathy monster ability, spells like @UUID[Compendium.pf2e.spells-srd.Item.60sgbuMWN0268dB7]{Telekinetic Projectile} or @UUID[Compendium.pf2e.spells-srd.Item.gfVXAW95YWRz0pJC]{Telepathic Bond}, or similar abilities. You also can sense if an object or creature you can see is being manipulated or contacted by such an ability. Both the user and the target of the ability are outlined in faint shimmers of matching color.</p>"
-                },
-                "consumable->Vat-Grown Brain (Infused)": {
-                    "name": "Vat-Grown Brain (Infused)",
-                    "description": "<p><strong>Activate</strong> <span class=\"action-glyph\">3</span> Interact</p>\n<p>A malformed, artificial brain pulses with alchemical life inside a nutrient-rich vat. When the vat-grown brain is activated, it attempts to counteract one condition of your choice that was gained from an ability with the mental trait, which it does by drawing the negative mental impressions into itself. However, the artificial brain is not robust, and the strain of the transfer quickly destroys it. The vat-grown brain has a counteract rank of 5 and a [[/r 1d20+17 #Counteract]]{+17} modifier on the roll.</p>"
-                },
-                "consumable->Winter Wolf Elixir (Lesser) (Infused)": {
-                    "name": "Winter Wolf Elixir (Lesser) (Infused)",
-                    "description": "<p><strong>Activate</strong> <span class=\"action-glyph\">1</span> Interact</p>\n<p>This elixir warms your core and improves your circulation. For 24 hours, you are protected from the effects of severe cold.</p>"
-                },
-                "strike-melee->Dagger": {
-                    "name": "Dagger"
-                },
-                "strike-ranged->Dagger": {
-                    "name": "Dagger"
-                },
-                "strike-ranged->Moderate Alchemist's Fire": {
-                    "name": "Moderate Alchemist's Fire"
-                },
-                "action->Infused Items": {
-                    "name": "Infused Items",
-                    "description": "<p>Etward carries the following infused items, which last for 24 hours or until the next time he makes his daily preparations:</p>\n<ul>\n<li>@UUID[Compendium.pf2e.equipment-srd.Item.gWr4q4HiyGhETA8H]{Alchemist's Fire (Moderate)} (8)</li>\n<li>@UUID[Compendium.pf2e.equipment-srd.Item.qpzL9UnTi4cDhy6J]{Cognitive Mutagen (Moderate)}</li>\n<li>@UUID[Compendium.pf2e.equipment-srd.Item.OcBPjVplvy2GbQ8P]{Comprehension Elixir (Greater)} (2)</li>\n<li>@UUID[Compendium.pf2e.equipment-srd.Item.c21stU5rhN4F2fZl]{Elixir of Life (Moderate)} (6)</li>\n<li>@UUID[Compendium.pf2e.equipment-srd.Item.KsAygNRyR2FdwuOm]{Psychic Colors Elixir}</li>\n<li>@UUID[Compendium.pf2e.equipment-srd.Item.IzniYBi8QYxHnffr]{Vat-Grown Brain}</li>\n<li>@UUID[Compendium.pf2e.equipment-srd.Item.n9VrmK9Us0viv20P]{Winter Wolf Elixir (Lesser)} (2)</li>\n</ul>"
-                },
-                "action->Dream Invasion": {
-                    "name": "Dream Invasion",
-                    "description": "<p>When Etward casts @UUID[Compendium.pf2e.spells-srd.Item.yM3KTTSAIHhyuP14]{Dream Message} and targets a gatewalker (like one of the PCs), he manifests inside the character's dream, appearing as he does when he cast the spell. (Typically, Etward disguises himself as a saumen kar when he does this, to further unnerve the target.) Rather than send a message to the target of a dream invasion, Etward can instead sift through the target's recent memories to gain a vague idea of what they did and where they were in the past 24 hours. This leaves the target feeling somewhat unsettled when they wake but causes no lasting harm.</p>"
-                },
-                "action->Nightmarish Attack": {
-                    "name": "Nightmarish Attack",
-                    "description": "<p><strong>Requirements</strong> Etward has used Dream Invasion on the target at some point in the past</p>\n<hr />\n<p><strong>Effect</strong> Etward draws upon a target's deepest fears and capitalizes upon the nature of their nightmares in an attempt to do them grievous harm. He attempts a melee dagger Strike against a target, and as he does so, that target briefly sees Etward's appearance change to reflect their deepest fear. Someone who's afraid of fire might see Etward and his dagger catch aflame. A person who fears darkness might see Etward transform into a rolling wave of enveloping darkness. A character who's afraid of snakes might witness Etward's dagger and entire arm turn into a serpent. Use your knowledge of the character's past and the specific dream invasions they may have endured during this campaign to make each Nightmarish Attack feel unique and frightening. Etward inflicts an additional @Damage[5d6[mental]] if he hits with the dagger Strike, and his dagger strike gains the following additional failure effect.</p>\n<p><strong>Failure</strong> The target takes @Damage[2d6[mental]].</p>"
-                },
-                "action->Use Occult Scrolls": {
-                    "name": "Use Occult Scrolls",
-                    "description": "<p>Etward can Cast a Spell from scrolls, as long as it's an occult spell of 5th level or lower.</p>"
-                },
-                "lore->Academia Lore": {
-                    "name": "Academia Lore"
                 }
             }
         },
@@ -988,13 +638,6 @@
                 "action->Into the Fray": {
                     "name": "Into the Fray",
                     "description": "<p><strong>Trigger</strong> Ghodrak rolls initiative</p>\n<hr />\n<p><strong>Effect</strong> Ghodrak Interacts to draw one of his hatchets. On his turn, before doing anything else, he can Stride toward an enemy he can see as a free action.</p>"
-                },
-                "action->Axe Critical Specialization": {
-                    "name": "Axe Critical Specialization",
-                    "description": "<p>When Ghodrak lands a critical hit with a hatchet Strike, he can choose one creature adjacent to the initial target (and within reach if the critical hit was a melee Strike). If the creature's AC is lower than Ghodrak's attack roll result for the critical hit, he deals damage to that creature equal to the result of the weapon damage die rolled. This amount isn't doubled, and no bonuses or other additional dice apply to this damage.</p>"
-                },
-                "lore->Warfare Lore": {
-                    "name": "Warfare Lore"
                 }
             }
         },
@@ -1045,18 +688,6 @@
                 "action->Aura of Good Cheer": {
                     "name": "Aura of Good Cheer",
                     "description": "<p>30 feet. The green monkey's affable demeanor is contagious. Allies within the aura gain a +1 status bonus to Will saves against emotion effects.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.xOD3ufpzA8H7W4sP]{Effect: Aura of Good Cheer}</p>"
-                },
-                "action->Nimble Dodge": {
-                    "name": "Nimble Dodge",
-                    "description": "<p><strong>Trigger</strong> The green monkey is targeted with a melee or ranged attack by an attacker it can see</p>\n<hr />\n<p><strong>Effect</strong> The green monkey gains a +2 circumstance bonus to AC against the triggering attack.</p>"
-                },
-                "action->Bond with Mortal": {
-                    "name": "Bond with Mortal",
-                    "description": "<p><strong>Frequency</strong> once per day</p>\n<hr />\n<p><strong>Effect</strong> The spirit guide forms a bond with a mortal creature. While the bond exists, the spirit guide's current and maximum Hit Points increase by 10, the spirit guide gains a +2 status bonus to attack and damage rolls, and the spirit guide and bonded mortal can communicate telepathically as long as they're on the same plane. The spirit guide can be bonded with only one mortal at a time, and can take this action again to end the bond or to form a new bond (which also ends the old bond). The bond ends if the spirit guide or the mortal dies.</p>\n<p>This bond strengthens the spirit guide's connection to the Material Plane. While bonded, the spirit guide loses the incorporeal and spirit traits, loses their immunities and resistances, and changes their Strikes to deal the appropriate physical damage (typically piercing or slashing) instead of force damage.</p>"
-                },
-                "action->Bonded Strike": {
-                    "name": "Bonded Strike",
-                    "description": "<p><strong>Requirements</strong> The spirit guide is currently Bonded with a Mortal</p>\n<hr />\n<p><strong>Effect</strong> The spirit guide makes a jaws Strike. If this attack hits, the bonded mortal can spend their reaction to Strike the same target.</p>"
                 }
             }
         },
@@ -1094,25 +725,6 @@
                 },
                 "action->+1 Circumstance vs. Diseases and Poisons": {
                     "name": "+1 Circumstance vs. Diseases and Poisons"
-                },
-                "action->Blackfrost": {
-                    "name": "Blackfrost",
-                    "description": "<p>This affliction can't be reduced below stage 1, nor the damage from it healed, until successfully treated with @UUID[Compendium.pf2e.spells-srd.Item.SUKaxVZW2TlM8lu0]{Cleanse Affliction} or a similar effect; the affliction can then be removed as a normal disease. A creature that dies from cold damage while cursed with blackfrost rises as a blackfrost dead after 24 hours. Blackfrost has a counteract rank of 10.</p>\n<p><strong>Saving Throw</strong> @Check[fortitude|dc:27]</p>\n<p><strong>Stage 1</strong> @Damage[4d6[cold]] (1 minute)</p>\n<p><strong>Stage 2</strong> weakness to cold 5 and @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 1} (1 day)</p>\n<p><strong>Stage 3</strong> weakness to cold 10 and @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 2} (1 day)</p>"
-                },
-                "action->Blackfrost Breath": {
-                    "name": "Blackfrost Breath",
-                    "description": "<p>Ilakni breathes out a @Template[cone|distance:60] of black wind. All creatures in the area take @Damage[10d6[cold]] damage (@Check[reflex|dc:30|basic]); a creature that fails the save is also exposed to blackfrost. Ilakni can't use Blackfrost Breath again for [[/br 1d4 #Recharge Blackfrost Breath]]{1d4 rounds}.</p>"
-                },
-                "action->Constrict": {
-                    "name": "Constrict",
-                    "description": "<p>@Damage[(1d8+12)[bludgeoning]], @Check[fortitude|dc:30|basic]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Constrict]</p>"
-                },
-                "action->Siphon Mind": {
-                    "name": "Siphon Mind",
-                    "description": "<p><strong>Requirements</strong> The target creature is @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed} by Ilakni, is helpless, or is willing, and is adjacent to Ilakni</p>\n<hr />\n<p><strong>Effect</strong> Ilakni extrudes a seething forest of tendrils from his mouth to wrap around the target's head. These tendrils begin siphoning away the target's mind to make them an empty vessel, ready to be inhabited by Osoyo in the future. The target must attempt a @Check[will|dc:30] save.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected and is temporarily immune to Siphon Mind for 24 hours.</p>\n<p><strong>Success</strong> The target takes @Damage[3d6[mental]].</p>\n<p><strong>Failure</strong> The target takes @Damage[6d6[mental]] and becomes @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 1}, or increases its stupefied value by 1 to a maximum of @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 4}. If the creature dies as a result of this mental damage, its body remains alive while its mind and soul move on. The body can remain alive without its soul and mind for many years, as long as it is cared for. If Osoyo escapes from its prison, a body in this state becomes animated by Osoyo's will, transforming into an entity with the same statistics as Ilakni but directly controlled by the Blackfrost Whale. If the body is restored to life before this event, this development can be avoided.</p>\n<p><strong>Critical Failure</strong> As critical failure, but @Damage[12d6[mental]] and @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 2} (or increases its stupefied value by 2, to a maximum of 4).</p>"
-                },
-                "action->Grab": {
-                    "name": "Grab"
                 }
             }
         },
@@ -1131,9 +743,6 @@
                 "action->Hunt Prey": {
                     "name": "Hunt Prey",
                     "description": "<p>The Ilverani sentry designates a single creature they can see and hear, or one they're Tracking, as their prey. The sentry gains a +2 circumstance bonus to Perception checks to @UUID[Compendium.pf2e.actionspf2e.Item.BlAOM2X92SI6HMtJ]{Seek} the prey and to Survival checks to @UUID[Compendium.pf2e.actionspf2e.Item.EA5vuSgJfiHH7plD]{Track} the prey. The first time the sentry hits the designated prey in a round, they deal an additional 1d8 precision damage. The sentry ignores the penalty for making ranged attacks within their second range increment. These effects last until the sentry uses Hunt Prey again.</p>"
-                },
-                "lore->Arctic Lore": {
-                    "name": "Arctic Lore"
                 }
             }
         },
@@ -1215,17 +824,6 @@
                 "action->Bravery": {
                     "name": "Bravery",
                     "description": "<p>When the Ship Captain rolls a success on a Will save against a fear effect, they get a critical success instead. In addition, any time they gain the @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened} condition, reduce its value by 1.</p>"
-                },
-                "action->Dual Disarm": {
-                    "name": "Dual Disarm",
-                    "description": "<p>The captain makes two Strikes, one with their rapier and one with their main-gauche (in either order). If both Strikes hit, the ship captain can attempt to @UUID[Compendium.pf2e.actionspf2e.Item.Dt6B1slsBy8ipJu9]{Disarm} the target.</p>\n<p>Their multiple attack penalty increases only after all the attacks are made.</p>"
-                },
-                "action->No Quarter!": {
-                    "name": "No Quarter!",
-                    "description": "<p>The captain orders their shipmates to fight without mercy. All allied creatures of equal or lower level within 20 feet of the ship captain gain a+1 status bonus to attack rolls and damage rolls until the end of the ship captain's next turn.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.TjRZbd52qWPjTbNT]{Effect: No Quarter!}</p>"
-                },
-                "lore->Sailing Lore": {
-                    "name": "Sailing Lore"
                 }
             }
         },
@@ -1258,32 +856,6 @@
                 },
                 "action->All-Around Vision": {
                     "name": "All-Around Vision"
-                },
-                "action->+1 Status to All Saves vs. Magic": {
-                    "name": "+1 Status to All Saves vs. Magic"
-                },
-                "action->Animal Kindness Vulnerability": {
-                    "name": "Animal Kindness Vulnerability",
-                    "description": "<p>Kithangians find kindness to animals revolting. The first time each round that a kithangian sees someone heal or otherwise provide aid to a creature that has the animal trait, the kithangian takes @Damage[3d6[mental]].</p>"
-                },
-                "action->Animal Killer": {
-                    "name": "Animal Killer",
-                    "description": "<p>A kithangian's melee Strikes deal an additional 2d6 damage to animals.</p>"
-                },
-                "action->Change Shape": {
-                    "name": "Change Shape",
-                    "description": "<p>The kithangian can take on the appearance of any Medium or Large animal. This doesn't change its Speed or their attack and damage modif ers with its Strikes, but it might change the damage type its Strikes deal.</p>\n<p>@Localize[PF2E.NPC.Abilities.Glossary.ChangeShape]</p>"
-                },
-                "action->Kithangian Venom": {
-                    "name": "Kithangian Venom",
-                    "description": "<p><strong>Saving Throw</strong> @Check[fortitude|dc:25]</p>\n<p><strong>Maximum Duration</strong> 6 rounds</p>\n<p><strong>Stage 1</strong> @Damage[2d6[poison]] (2 rounds)</p>\n<p><strong>Stage 2</strong> @Damage[2d6[poison]] and @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 1} (2 rounds)</p>\n<p><strong>Stage 3</strong> @Damage[3d6[poison]] and @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 2} (2 rounds)</p>"
-                },
-                "action->Rasping Tongues": {
-                    "name": "Rasping Tongues",
-                    "description": "<p><strong>Frequency</strong> once per round</p>\n<p><strong>Requirements</strong> The kithangian has a creature @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed} in one or both pincers</p>\n<hr />\n<p><strong>Effect</strong> Barbed tongues slither out of the faces in the kithangian's pincers. The tongues burrow into grabbed creatures and inject their minds with haunting psychic screams. Each grabbed creature takes @Damage[2d8[piercing],2d8[mental]]{2d8 piercing and 2d8 mental}. A creature can try to resist the mental damage by attempting a @Check[will|dc:25|basic].</p>"
-                },
-                "action->Grab": {
-                    "name": "Grab"
                 }
             }
         },
@@ -1300,17 +872,6 @@
                 "action->Swallow Projectile": {
                     "name": "Swallow Projectile",
                     "description": "<p><strong>Trigger</strong> A creature the kvernknurr can see targets it with a ranged Strike</p>\n<p><strong>Requirements</strong> The kvernknurr doesn't have a creature @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed} in its jaws</p>\n<hr />\n<p><strong>Effect</strong> The kvernknurr attempts to swallow the projectile, gaining a +4 circumstance bonus to AC against the triggering attack. If the attack misses, the kvernknurr consumes the projectile harmlessly.</p>"
-                },
-                "action->Frightening Bellow": {
-                    "name": "Frightening Bellow",
-                    "description": "<p><strong>Requirements</strong> The kvernknurr doesn't have a creature @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed} in its jaws</p>\n<hr />\n<p><strong>Effect</strong> The kvernknurr lets out a deep-throated shout to scare away its foes. Each non-kvernknurr creature within 60 feet must attempt a @Check[will|dc:20] save, and then they are temporarily immune to that kvenknurr's Frightening Bellow for 24 hours.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unafected.</p>\n<p><strong>Success</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 1}.</p>\n<p><strong>Failure</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 2}.</p>\n<p><strong>Critical Failure</strong> The creature is frightened 2 and is feeing as long as it remains frightened.</p>"
-                },
-                "action->Swallow Whole": {
-                    "name": "Swallow Whole",
-                    "description": "<p>Medium, @Damage[(1d6+5)[bludgeoning]], Rupture 15</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.SwallowWhole]</p>"
-                },
-                "action->Grab": {
-                    "name": "Grab"
                 }
             }
         },
@@ -1371,29 +932,6 @@
                 },
                 "action->+1 Status to All Saves vs. Magic": {
                     "name": "+1 Status to All Saves vs. Magic"
-                },
-                "action->Prognosticate": {
-                    "name": "Prognosticate",
-                    "description": "<p>When the mindmoppet uses a reaction, it can Step before or after taking the reaction.</p>"
-                },
-                "action->Shell": {
-                    "name": "Shell",
-                    "description": "<p>The mindmoppet believes its shell is an important part of itself. Breaking the mindmoppet's shell (AC 25, Hardness 1, HP 6, BT 3) causes it to become @UUID[Compendium.pf2e.conditionitems.Item.AdPVz7rbaVSRxHFg]{Fascinated} with its shell. This condition ends when its shell is repaired.</p>"
-                },
-                "action->Synapse Glow": {
-                    "name": "Synapse Glow",
-                    "description": "<p>5 feet. The firing of the mindmoppet's synapses create dim light. The range increases to 10 feet if its shell is destroyed.</p>"
-                },
-                "action->Anticipate": {
-                    "name": "Anticipate",
-                    "description": "<p>The mindmoppet attempts to anticipate its opponent's actions. Until the end of its next turn, the mindmoppet gains one reaction.</p>"
-                },
-                "action->Redirect Attack": {
-                    "name": "Redirect Attack",
-                    "description": "<p><strong>Trigger</strong> The mindmoppet is targeted by a melee or ranged Strike</p>\n<hr />\n<p><strong>Effect</strong> The mindmoppet attempts a Reflex saving throw, using the attack roll as the DC for the check. On a success, it redirects the attack at another target within the attacker's range. On a failure, the attack resolves as normal.</p>"
-                },
-                "action->Improved Push": {
-                    "name": "Improved Push"
                 }
             }
         },
@@ -1424,18 +962,6 @@
                 "action->Resistance 5 to Physical Near a Ley Line": {
                     "name": "Resistance 5 to Physical Near a Ley Line",
                     "description": "<p>The myroga has resistance to physical 5 while within 500 feet of a ley line.</p>"
-                },
-                "action->Draconic Frenzy": {
-                    "name": "Draconic Frenzy",
-                    "description": "<p>The myroga makes two talon Strikes and one tail Strike in any order.</p>"
-                },
-                "action->Ley Line Empowerment": {
-                    "name": "Ley Line Empowerment",
-                    "description": "<p><strong>Requirements</strong> The myroga is within 500 feet of a ley line</p><hr /><p><strong>Effect</strong> The myroga wreathes itself in raw destructive energy converted from the ley line's ambient magic. The myroga deals an additional @Damage[2d6[force]] with each of its next successful fangs, tail, and talon Strike. Once its dealt damage with one of these Strikes, the energy is discharged from that body part, but not the others.</p>"
-                },
-                "action->Ley Line Rupture": {
-                    "name": "Ley Line Rupture",
-                    "description": "<p><strong>Requirements</strong> The myroga is within 500 feet of a ley line</p><hr /><p><strong>Effect</strong> The myroga diverts some of the ley line's magic into a deadly and distant explosion. The myroga creates a detonation of force in a 5-foot square within a mile of its ley line and that it can see, dealing @Damage[5d6[force]] to creatures (@Check[reflex|dc:24|basic]). A myroga can will the detonation into existence anywhere within a mile of the ley line, possibly allowing it to ignore cover the target might have from, for example, an obstacle between itself and the myroga.</p>"
                 }
             }
         },
@@ -1494,10 +1020,6 @@
                 "action->Lost in the Dark": {
                     "name": "Lost in the Dark",
                     "description": "<p>60 feet. An ocluai's presence distorts nearby creatures' senses of direction. Nonmagical bright light within the aura becomes dim light, and nonmagical dim light with the aura becomes darkness. Any non-gorga within range of the ocluai's aura that attempts to move must declare where they intend to move. Before moving, however, the creature must attempt a secret @Check[will|dc:20] saving throw. An ocluai can exempt specific creatures from this effect. Magical light anywhere within the ocluai's aura increases the light level as normal and reduces the Will save DC by 5.</p>\n<hr />\n<p><strong>Success</strong> The creature moves normally.</p>\n<p><strong>Failure</strong> The creature moves the intended distance, but not in the right direction. The ocluai chooses the creature's destination and route, which could be a straight line or could include multiple changes in direction. If the path is blocked or would go through obviously dangerous terrain (such as of a cliff or through a fire), the movement ends before the blockage or danger.</p>\n<p><strong>Critical Failure</strong> As failure, but if the creature's path would lead them into obviously dangerous terrain, they must succeed at a second Will save to end their movement just before they would enter the danger.</p>"
-                },
-                "action->Corner of the Eye": {
-                    "name": "Corner of the Eye",
-                    "description": "<p>The ocluai creates a wave of disturbing illusory images in a @Template[burst|distance:10] centered on a point within 60 feet. Any creature caught in this burst takes @Damage[3d6[mental]] (@Check[will|dc:20|basic]) as their peripheral vision churns with terrifying visions of worm-eaten corpses and monsters ready to pounce.</p>"
                 }
             }
         },
@@ -1522,10 +1044,6 @@
                 },
                 "action->+1 Status to All Saves vs. Magic": {
                     "name": "+1 Status to All Saves vs. Magic"
-                },
-                "action->Frozen Nightmare": {
-                    "name": "Frozen Nightmare",
-                    "description": "<p>Ogmunzorius's touch fills the victim's mind with realistic hallucinations and visions of being stranded alone and naked in an endless expanse of ice. The only point of reference in this vision when it manifests are strange dark spires looming impossibly tall on the horizon.</p>\n<p><strong>Saving Throw</strong> @Check[fortitude|dc:30]</p>\n<p><strong>Stage 1</strong> @UUID[Compendium.pf2e.conditionitems.Item.HL2l2VRSaQHu9lUw]{Fatigued} (1 day)</p>\n<p><strong>Stage 2</strong> fatigued and @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 1} (1 day)</p>\n<p><strong>Stage 3</strong> The victim falls asleep and becomes covered in a rime of frost. They can't be awakened as long as they remain at this stage. A victim who perishes while at this stage frosts over completely, freezing solid into a block of ice. (1 day)</p>"
                 }
             }
         },
@@ -1564,22 +1082,6 @@
                 "action->Nymph's Beauty": {
                     "name": "Nymph's Beauty",
                     "description": "<p>30 feet. On a failed save, the target is @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned 1} for this turn and whenever it begins its turn within 30 feet of the naiad queen for the next 24 hours, even if it can't see her on subsequent turns.</p>\n<hr />\n<p>Creatures that start their turn in the aura must succeed at a @Check[will|dc:23] save or suffer an effect described in the nymph queen's entry.</p>"
-                },
-                "action->Change Shape": {
-                    "name": "Change Shape",
-                    "description": "<p>Nymph queens can transform between their original form, which looks much like a typical nymph of their kind, and any Small or Medium humanoid form, typically choosing a more humanoid-looking version of their natural form.</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.ChangeShape]</p>"
-                },
-                "action->Focus Beauty": {
-                    "name": "Focus Beauty",
-                    "description": "<p>On a failed save, if the target was already affected by the naiad queen's beauty, the image of the queen sears into the creature's mind, allowing no further sight and effectively @UUID[Compendium.pf2e.conditionitems.Item.XgEqL1kFApUbl5Z2]{Blinding} the creature until restored via @UUID[Compendium.pf2e.spells-srd.Item.Et8RSCLx8w7uOLvo]{Sound Body} or a similar effect, or until the naiad queen chooses to remove the effect using a single action, which has the concentrate trait.</p>\n<hr />\n<p>The nymph queen focuses her beauty upon a target within her aura. The creature must attempt a @Check[will|dc:23] save. On a failure, it is affected as if by the nymph queen's nymph's beauty aura; if it was already affected by the aura, it suffers a greater effect described in the nymph queen's entry. A nymph queen can Focus Beauty on a given creature only once per turn.</p>"
-                },
-                "action->Inspiration": {
-                    "name": "Inspiration",
-                    "description": "<p>A nymph queen can inspire a single intelligent creature by giving that creature a token of her favor, typically a lock of her hair. As long as the creature carries her token and remains in good standing with the nymph queen, the creature gains a +1 status bonus to all Crafting checks, Performance checks, and Will saves.</p>\n<p>If a nymph queen grants her Inspiration to a bard and the nymph queen is that bard's muse, the bard gains an additional benefit depending on their muse theme: for lore muse, the bard also gains a +1 status bonus to all Lore checks; for maestro muse, the status bonus to Performance checks increases to +2 for the purpose of determining the effects of compositions; for polymath muse, the bard gains a +4 status bonus to untrained skill checks; and for all other muses, the Will save bonus increases to +2 against fey.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.iSyyR4QVOaY6mxtg]{Effect: Naiad Queen's Inspiration}</p>"
-                },
-                "action->Water Healing": {
-                    "name": "Water Healing",
-                    "description": "<p>While within any body of water in her domain, the naiad queen heals @Damage[28[healing]] Hit Points every 10 minutes.</p>"
                 }
             }
         },
@@ -1888,14 +1390,6 @@
                 "action->Bond with Mortal": {
                     "name": "Bond with Mortal",
                     "description": "<p><strong>Frequency</strong> once per day</p>\n<hr />\n<p><strong>Effect</strong> The spirit guide forms a bond with a mortal creature. While the bond exists, the spirit guide's current and maximum Hit Points increase by 14, the spirit guide gains a +2 status bonus to attack and damage rolls, and the spirit guide and bonded mortal can communicate telepathically as long as they're on the same plane. The spirit guide can be bonded with only one mortal at a time, and can take this action again to end the bond or to form a new bond (which also ends the old bond). The bond ends if the spirit guide or the mortal dies.</p>\n<p>This bond strengthens the spirit guide's connection to the Material Plane. While bonded, the spirit guide loses the incorporeal and spirit traits, loses their immunities and resistances, and changes their Strikes to deal the appropriate physical damage (typically piercing or slashing) instead of force damage.</p>"
-                },
-                "action->Bonded Strike": {
-                    "name": "Bonded Strike",
-                    "description": "<p><strong>Requirements</strong> The spirit guide is currently Bonded with a Mortal</p>\n<hr />\n<p><strong>Effect</strong> The spirit guide makes a talon Strike. If this attack hits, the bonded mortal can spend their reaction to Strike the same target.</p>"
-                },
-                "action->Empowered Healing": {
-                    "name": "Empowered Healing",
-                    "description": "<p>When the stone-breasted owl casts heal, it rolls d10s instead of d8s.</p>"
                 }
             }
         },
@@ -1970,10 +1464,6 @@
                 "action->Stunning Critical": {
                     "name": "Stunning Critical",
                     "description": "<p>If a Guest critically hits a creature with a claw Strike, the target must make a @Check[fortitude|dc:25] save or be @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned 1}.</p>"
-                },
-                "action->Trigger Memory": {
-                    "name": "Trigger Memory",
-                    "description": "<p><strong>Trigger</strong> A gatewalker attempts to Strike a Guest or target a Guest with a spell</p>\n<hr />\n<p><strong>Effect</strong> The first time a gatewalker (including any PC) attempts to Strike a Guest or target it with a spell, a repressed memory from their Missing Moment surfaces. For a brief instant, the character recalls facing down a much larger and fully formed saumen kar, one with four horns and glowing runes on its fur. This memory of the character's first encounter with Ainamuuren evokes waves of fear and shame. The character must make a successful @Check[will|dc:25] save or become @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 1} (@UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 2} on a critical failure), after which the character is immune to Trigger Memory.</p>"
                 }
             }
         },
@@ -2015,10 +1505,6 @@
                 "action->Shadow Stride": {
                     "name": "Shadow Stride",
                     "description": "<p><strong>Requirements</strong> The Looksee Man is in dim light</p>\n<hr />\n<p><strong>Effect</strong> The Looksee Man Strides. He has a +10-foot status bonus to his Speed during this Stride. The DC from shadow blending increases to @Check[flat|dc:11] during this Stride, and the Looksee Man remains @UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{Concealed} by dim light until the end of the movement, even if he leaves dim light during the Stride.</p>"
-                },
-                "action->Stalk Goggles Specialist": {
-                    "name": "Stalk Goggles Specialist",
-                    "description": "<p>As long as he wears his greater stalk goggles, the Looksee Man can't be flanked by creatures of 4th level or lower.</p>"
                 }
             }
         },
@@ -2069,25 +1555,6 @@
                 },
                 "action->+2 Status to All Saves vs. Poison": {
                     "name": "+2 Status to All Saves vs. Poison"
-                },
-                "action->Flesh Grafting": {
-                    "name": "Flesh Grafting",
-                    "description": "<p>An umasi can spend 10 minutes grafting the flesh of other living or recently dead humanoids onto their body, attempting a @Check[medicine|dc:20] check with the effects of @UUID[Compendium.pf2e.actionspf2e.Item.1kGNdIIhuglAjIp9]{Treat Wounds}. This process is the only way an umasi can recover Hit Points.</p>"
-                },
-                "action->Immortal Flesh": {
-                    "name": "Immortal Flesh",
-                    "description": "<p>Umasi can't heal or recover HP in any way except their Flesh Grafting techniques. However, despite being living creatures, they don't take damage from either vitality or void damage.</p>"
-                },
-                "action->Shield Block": {
-                    "name": "Shield Block"
-                },
-                "action->Consume Organ": {
-                    "name": "Consume Organ",
-                    "description": "<p><strong>Requirements</strong> The umasi is adjacent to the corpse of a Small or larger creature that died within the last minute</p>\n<hr />\n<p><strong>Effect</strong> The umasi harvests and consumes a vital organ from the corpse, gaining [[/r 15 #Temporary Hit Points]]{15 temporary Hit Points} and a +1 status bonus to attack and damage rolls for 10 minutes. They can gain this benefit only once from any given corpse.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.Qa0HP5uCuqh4vxBh]{Effect: Consume Organ}</p>"
-                },
-                "action->Harvester Poison": {
-                    "name": "Harvester Poison",
-                    "description": "<p><strong>Saving Throw</strong> @Check[fortitude|dc:24]</p>\n<hr />\n<p><strong>Maximum Duration</strong> 4 rounds</p>\n<p><strong>Stage 1</strong> @Damage[2d6[poison]] damage (1 round)</p>\n<p><strong>Stage 2</strong> @Damage[3d6[poison]] damage (1 round)</p>"
                 }
             }
         },
@@ -2136,9 +1603,6 @@
                 "action->Sneak Attack": {
                     "name": "Sneak Attack",
                     "description": "<p>The charlatan deals an extra 1d6 precision damage to @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} creatures.</p>"
-                },
-                "lore->Underworld Lore": {
-                    "name": "Underworld Lore"
                 }
             }
         },
@@ -2212,6 +1676,10 @@
         "items": {
             "converter": "translateActorItems",
             "path": "items"
+        },
+        "rules": {
+            "converter": "translateRules",
+            "path": "system.rules"
         },
         "descriptionHazard": "system.details.description",
         "disable": "system.details.disable",

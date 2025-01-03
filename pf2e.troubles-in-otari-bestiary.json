@@ -50,24 +50,10 @@
                 },
                 "equipment->Area Map": {
                     "name": "Area Map",
-                    "description": "<p>This map shows Maunder Castle, the logging camp, logger movements, and plans of attack.</p>\n<hr />\n<p>Maps are uncommon. Most maps you can find are simple and functional. A survey map details a single location in excellent detail.</p>\n<p>One of these maps gives you a +1 item bonus to Survival checks and any skill checks to Recall Knowledge, provided the checks are related to the location detailed on the map.</p>"
-                },
-                "consumable->Scroll of Magic Weapon (Level 1)": {
-                    "name": "Scroll of Magic Weapon (Level 1)",
-                    "description": "<p>@UUID[Compendium.pf2e.spells-srd.Item.TFitdEOpQC4SzKQQ]{Runic Weapon}</p><hr /><p>Casting a Spell from a scroll requires holding the scroll in one hand and activating it with a Cast a Spell activity using the normal number of actions for that spell.</p>\n<p>To Cast a Spell from a scroll, the spell must appear on your spell list. Because you're the one Casting the Spell, use your spell attack roll and spell DC. The spell also gains the appropriate trait for your tradition (arcane, divine, occult, or primal).</p>\n<p>Any physical material components and costs are provided when a scroll is created, so you don't need to provide them when Casting a Spell from a scroll. You must replace any required material component for that spell with a somatic component. If the spell requires a focus, you must have that focus to Cast the Spell from a scroll.</p>\n<hr />\n<p><em>Note: To create a scroll or wand of a specific spell, drag the spell from the compendium or compendium browser into the inventory of a PC, NPC, or loot actor.</em></p>"
-                },
-                "strike-melee->Dagger": {
-                    "name": "Dagger"
-                },
-                "strike-ranged->Dagger": {
-                    "name": "Dagger"
-                },
-                "action->Unburdened Iron": {
-                    "name": "Unburdened Iron",
-                    "description": "<p>Hargrit ignores the reduction to his Speed from armor and deducts 5 feet from any one penalty to his Speed (such as from a spell)</p>"
-                },
-                "lore->Fiend Lore": {
-                    "name": "Fiend Lore"
+                    "description": "<p>This map shows Maunder Castle, the logging camp, logger movements, and plans of attack.</p>\n<hr />\n<p>Maps are uncommon. Most maps you can find are simple and functional. A survey map details a single location in excellent detail.</p>\n<p>One of these maps gives you a +1 item bonus to Survival checks and any skill checks to Recall Knowledge, provided the checks are related to the location detailed on the map.</p>",
+                    "rules": {
+                        "0": "Area Map (mapped area)"
+                    }
                 }
             }
         },
@@ -82,18 +68,6 @@
                 "action->Hurried Retreat": {
                     "name": "Hurried Retreat",
                     "description": "<p>If the kobold is adjacent to at least one enemy, the kobold Strides up to 30 feet and gains a +2 circumstance bonus to AC against reactions triggered by this movement. They must end this movement in a space that's not adjacent to any enemy.</p>"
-                },
-                "action->Quick Trap": {
-                    "name": "Quick Trap",
-                    "description": "<p>The kobold trapmaster deploys one spike trap in an adjacent square.</p>"
-                },
-                "action->Sneak Attack": {
-                    "name": "Sneak Attack",
-                    "description": "<p>The kobold trapmaster deals an extra 1d6 damage to creatures that have the @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} condition.</p>"
-                },
-                "action->Spike Trap": {
-                    "name": "Spike Trap",
-                    "description": "<p>Once this trap is deployed, anyone who steps on the square it's in takes @Damage[2d8[piercing]] damage and must attempt a @Check[reflex|dc:17|basic] saving throw.</p>"
                 }
             }
         },
@@ -110,10 +84,6 @@
                 "action->Powerful Shove": {
                     "name": "Powerful Shove",
                     "description": "<p>When a creature Kotgar Shoves has to stop moving because it would hit an object, it takes @Damage[4[bludgeoning]] damage.</p>"
-                },
-                "action->Unburdened Iron": {
-                    "name": "Unburdened Iron",
-                    "description": "<p>Kotgar ignores the reduction to his Speed from armor and deducts 5 feet from any one penalty to his Speed (such as from a spell).</p>"
                 }
             }
         },
@@ -222,18 +192,6 @@
                 "action->Nimble Dodge": {
                     "name": "Nimble Dodge",
                     "description": "<p><strong>Trigger</strong> A creature targets you with an attack and you can see the attacker.</p>\n<p><strong>Requirements</strong> You are not encumbered</p>\n<hr />\n<p>You deftly dodge out of the way, gaining a +2 circumstance bonus to AC against the triggering attack.</p>"
-                },
-                "action->Sneak Attack": {
-                    "name": "Sneak Attack",
-                    "description": "<p>Omblin deals an extra 1d6 to creatures that have the @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} condition.</p>"
-                },
-                "action->Unbalancing Blow": {
-                    "name": "Unbalancing Blow",
-                    "description": "<p>When Omblin critically hits a target and deals damage, the target is @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} against his attacks until the end of his next turn.</p>"
-                },
-                "action->Unburdened Iron": {
-                    "name": "Unburdened Iron",
-                    "description": "<p>Omblin ignores the reduction to his Speed from armor and deducts 5 feet from any one penalty to his Speed (such as from a spell).</p>"
                 }
             }
         },
@@ -296,18 +254,6 @@
                 "action->Stench": {
                     "name": "Stench",
                     "description": "<p>10 feet. A creature entering the aura or starting its turn in the aura must succeed at a @Check[fortitude|dc:14] save or become @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} for 1 round (and @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1} for 1 round on a critical failure). A creature that succeeds at its save is temporarily immune for 1 minute.</p>"
-                },
-                "action->Stinky Leaves": {
-                    "name": "Stinky Leaves",
-                    "description": "<p>The foul smell emitted by a stinkweed shambler becomes stronger when its leaves are crushed or burned. When a stinkweed shambler takes bludgeoning or fire damage, the DC for its Stench ability increases to 18 and its Stealth bonus decreases to +4. Both of these effects last for 1 minute.</p>"
-                },
-                "action->Waving Weed": {
-                    "name": "Waving Weed",
-                    "description": "<p>The stinkweed shambler Strides up to half its Speed. This movement doesn't provoke reactions.</p>"
-                },
-                "action->Woodland Stride": {
-                    "name": "Woodland Stride",
-                    "description": "<p>A stinkweed shambler ignores difficult terrain and greater difficult terrain from non-magical foliage.</p>"
                 }
             }
         },
@@ -364,6 +310,10 @@
         "items": {
             "converter": "translateActorItems",
             "path": "items"
+        },
+        "rules": {
+            "converter": "translateRules",
+            "path": "system.rules"
         },
         "publicNotes": "system.details.publicNotes",
         "privateNotes": "system.details.privateNotes",

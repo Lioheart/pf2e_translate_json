@@ -58,7 +58,10 @@
                 },
                 "action->Wicked Trophies": {
                     "name": "Wicked Trophies",
-                    "description": "<p>An ahvothian chooses a creature type (such as animal, celestial, or humanoid) from which they currently carry a trophy from a past kill.</p>\n<p>Their weapon Strikes against creatures of that type deal an additional [[/r 1d10]] damage and they gain a +2 status bonus on Intimidation checks against creatures of that type.</p>\n<p>The ahvothian doesn't lose these bonuses if they lose the trophies. Once per day, an ahvothian can change the creature type of their wicked trophies in a ritual that takes 1 hour.</p>\n<p>Nearly all ahvothians encountered on the Material Plane have selected humanoids as the focus of their wicked trophies.</p>"
+                    "description": "<p>An ahvothian chooses a creature type (such as animal, celestial, or humanoid) from which they currently carry a trophy from a past kill.</p>\n<p>Their weapon Strikes against creatures of that type deal an additional [[/r 1d10]] damage and they gain a +2 status bonus on Intimidation checks against creatures of that type.</p>\n<p>The ahvothian doesn't lose these bonuses if they lose the trophies. Once per day, an ahvothian can change the creature type of their wicked trophies in a ritual that takes 1 hour.</p>\n<p>Nearly all ahvothians encountered on the Material Plane have selected humanoids as the focus of their wicked trophies.</p>",
+                    "rules": {
+                        "0": "Target is subject of Wicked Trophies"
+                    }
                 }
             }
         },
@@ -88,26 +91,6 @@
                 "equipment->Silver Religious Symbol of Angazhan": {
                     "name": "Silver Religious Symbol of Angazhan",
                     "description": "<p>This piece of wood or silver is emblazoned with an image representing a deity. Some divine spellcasters, such as clerics, can use a religious symbol of their deity as a divine focus to use certain abilities and cast some spells. A religious symbol must be held in one hand to use it.</p>"
-                },
-                "strike-melee->Spear": {
-                    "name": "Spear"
-                },
-                "strike-ranged->Spear": {
-                    "name": "Spear"
-                },
-                "action->Bloody Fanaticism": {
-                    "name": "Bloody Fanaticism",
-                    "description": "<p><strong>Trigger</strong> The cultist rolls a failure (but not a critical failure) on a Will save against an effect with the mental or fear trait</p>\n<hr />\n<p><strong>Effect</strong> The cultist takes @Damage[2d8[mental]] damage, and the saving throw is a success.</p>"
-                },
-                "action->Shield Block": {
-                    "name": "Shield Block"
-                },
-                "action->Demonic Strength": {
-                    "name": "Demonic Strength",
-                    "description": "<p>Angazhani cultists inflict an extra 1d6 damage with their spears, and any spear gains the fatal d10 trait while the cultist is using it (both the extra weapon damage die and the fatal trait have already been included in the cultist's spear Strikes above).</p>"
-                },
-                "lore->Demon Lore": {
-                    "name": "Demon Lore"
                 }
             }
         },
@@ -121,20 +104,6 @@
                 "action->Bravery": {
                     "name": "Bravery",
                     "description": "<p>When the guard rolls a success on a Will save against a fear effect, they get a critical success instead. In addition, any time they gain the @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened} condition, reduce its value by 1.</p>"
-                },
-                "action->Shield Block": {
-                    "name": "Shield Block"
-                },
-                "action->Powerful Swing": {
-                    "name": "Powerful Swing",
-                    "description": "<p>If the guard hits with a battle axe Strike, they can choose a creature adjacent to the target and within their own reach. That creature takes slashing damage equal to the result of the battle axe's weapon damage dice.</p>"
-                },
-                "action->Unburdened Iron": {
-                    "name": "Unburdened Iron",
-                    "description": "<p>The guard ignores Speed reduction from armor. In addition, any time the guard takes a penalty to their Speed, deduct 5 feet from the penalty.</p>"
-                },
-                "lore->Aspis Consortium Lore": {
-                    "name": "Aspis Consortium Lore"
                 }
             }
         },
@@ -201,9 +170,6 @@
                 "action->Sneak Attack": {
                     "name": "Sneak Attack",
                     "description": "<p>The Aspis technician deals an extra 2d6 precision precision damage to @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} creatures.</p>"
-                },
-                "lore->Aspis Consortium Lore": {
-                    "name": "Aspis Consortium Lore"
                 }
             }
         },
@@ -259,25 +225,6 @@
                 "action->Vulnerable to Stone to Flesh": {
                     "name": "Vulnerable to Stone to Flesh",
                     "description": "<p>A @UUID[Compendium.pf2e.spells-srd.Item.Pr1ruNTbzGn3H9w5]{Stone to Flesh} spell negates Cursebreaker's golem antimagic and its resistance to physical damage for 1 round.</p>\n<p>A @UUID[Compendium.pf2e.spells-srd.Item.znv4ECL7ZtuiagtA]{Petrify} spell reverses this effect immediately.</p>"
-                },
-                "action->Impose Paralysis": {
-                    "name": "Impose Paralysis",
-                    "description": "<p><strong>Trigger</strong> Cursebreaker hits a @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed} creature</p>\n<hr />\n<p><strong>Effect</strong> The creature must succeed at a @Check[fortitude|dc:27] save or become @UUID[Compendium.pf2e.conditionitems.Item.6uEgoh53GbXuHpTF]{Paralyzed} for 1 round.</p>"
-                },
-                "action->Inexorable March": {
-                    "name": "Inexorable March",
-                    "description": "<p>@Check[fortitude|dc:32|traits:damaging-effect]</p>\n<p>On a critical success, the resisting creature takes no damage; otherwise it is damaged as if hit by Cursebreaker's fist.</p>\n<hr />\n<p>The golem Strides up to its Speed, pushing back each creature whose space it moves into and damaging them if they try to stop its movement. A creature can attempt to bar the way by succeeding at a Fortitude save.</p>"
-                },
-                "action->Slowing Pulse": {
-                    "name": "Slowing Pulse",
-                    "description": "<p>Each creature in a @Template[emanation|distance:10] must succeed at a @Check[fortitude|dc:27|traits:incapacitation] save or be @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1} for 1 minute.</p>\n<p>Cursebreaker can't use Slowing Pulse again for [[/gmr 1d4 #Recharge Slowing Pulse]]{1d4 rounds}.</p>"
-                },
-                "action->Undo Curse": {
-                    "name": "Undo Curse",
-                    "description": "<p>Cursebreaker can cast a 10th-rank @UUID[Compendium.pf2e.spells-srd.Item.SUKaxVZW2TlM8lu0]{Cleanse Affliction} spell at will, targeting every resident of the city of Kibwe. Cursebreaker must be stationed in the upper level of the Archive of the Sun with its sun symbols activated to use this ability.</p>"
-                },
-                "lore->Kibwe Lore": {
-                    "name": "Kibwe Lore"
                 }
             }
         },
@@ -312,20 +259,6 @@
                 "action->Smoldering Haze": {
                     "name": "Smoldering Haze",
                     "description": "<p>15 feet. The fuming sludge constantly emits incendiary smoke that creates @UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{Concealment} around it. The smoke doesn't impair the fuming sludge's chemical sense. A creature that enters the aura or begins its turn in the aura becomes @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 1} (@Check[fortitude|dc:25] negates) and cannot recover from @UUID[Compendium.pf2e.conditionitems.Item.lDVqvLKA6eF3Df60]{Persistent Fire Damage} for 1 round. It is then temporarily immune to the sickening effect of the smoldering haze for 1 minute.</p>\n<p>A creature that is currently holding its breath, that doesn't need to breathe, or that's immune to poison is immune to the aura's sickened effect but not the concealment or inability to recover from persistent fire damage.</p>"
-                },
-                "action->Attack of Opportunity": {
-                    "name": "Attack of Opportunity"
-                },
-                "action->Constrict": {
-                    "name": "Constrict",
-                    "description": "<p>@Damage[(1d8+6)[bludgeoning],1d8[persistent,fire]]{1d8+6 bludgeoning plus 1d8 persistent fire}, @Check[fortitude|dc:24|basic]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Constrict]</p>"
-                },
-                "action->Cooling Glob": {
-                    "name": "Cooling Glob",
-                    "description": "<p>A fuming sludge's ejected globs cling to targets.</p>\n<p>A creature hit by an ejected glob Strike is @UUID[Compendium.pf2e.conditionitems.Item.D5mg6Tc7Jzrj6ro7]{Encumbered} for 1 round.</p>\n<p>If the attack was a critical hit, the creature is instead @UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{Restrained} for 1 round (@UUID[Compendium.pf2e.actionspf2e.Item.SkZAQRkLLkmBQNB9]{Escape} DC 24).</p>"
-                },
-                "action->Grab": {
-                    "name": "Grab"
                 }
             }
         },
@@ -349,30 +282,6 @@
                 "equipment->Silver Religious Symbol of Angazhan": {
                     "name": "Silver Religious Symbol of Angazhan",
                     "description": "<p>This piece of wood or silver is emblazoned with an image representing a deity. Some divine spellcasters, such as clerics, can use a religious symbol of their deity as a divine focus to use certain abilities and cast some spells. A religious symbol must be held in one hand to use it.</p>"
-                },
-                "strike-melee->Spear": {
-                    "name": "Spear"
-                },
-                "strike-ranged->Spear": {
-                    "name": "Spear"
-                },
-                "action->+2 to Sense Motive": {
-                    "name": "+2 to Sense Motive"
-                },
-                "action->Protect the Master": {
-                    "name": "Protect the Master",
-                    "description": "<p><strong>Trigger</strong> Nyamat is targeted with an attack and a lower-ranking cultist is adjacent to him</p>\n<hr />\n<p><strong>Effect</strong> Nyamat orders their cultist to leap in front of the attack. The cultist and Nyamat swap places, and the cultist becomes the target of the attack.</p>"
-                },
-                "action->Demonic Strength": {
-                    "name": "Demonic Strength",
-                    "description": "<p>Nyamat inflicts an extra 1d6 damage with his spear, and any spear gains the fatal d10 trait while Nyamat is using it (both the extra weapon damage die and the fatal trait have already been included in Nyamat's spear Strikes above).</p>"
-                },
-                "action->Steady Spellcasting": {
-                    "name": "Steady Spellcasting",
-                    "description": "<p>If a would disrupt Nyamat's spellcasting action, on a successful @Check[flat|dc:15], the action isn't disrupted.</p>"
-                },
-                "lore->Demon Lore": {
-                    "name": "Demon Lore"
                 }
             }
         },
@@ -399,21 +308,6 @@
                 "action->Keen Eyes": {
                     "name": "Keen Eyes",
                     "description": "<p>Paga gains a +2 circumstance bonus when using the @UUID[Compendium.pf2e.actionspf2e.Item.BlAOM2X92SI6HMtJ]{Seek} action to find @UUID[Compendium.pf2e.conditionitems.Item.iU0fEDdBp3rXpTMC]{Hidden} or @UUID[Compendium.pf2e.conditionitems.Item.VRSef5y1LmL2Hkjf]{Undetected} creatures within 30 feet of her.</p>\n<p>When she targets an opponent that is @UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{Concealed} from her or hidden, she reduces the DC of the flat check to 3 for a concealed target or 9 for a hidden one.</p>"
-                },
-                "action->Halfling Luck": {
-                    "name": "Halfling Luck",
-                    "description": "<p><strong>Trigger</strong> Paga fails or critically fails a skill check or a saving throw</p>\n<p><strong>Frequency</strong> once per day</p>\n<hr />\n<p><strong>Effect</strong> Paga rerolls the saving throw and must take the new result.</p>"
-                },
-                "action->Feign Harmlessness": {
-                    "name": "Feign Harmlessness",
-                    "description": "<p>Paga cringes and cowers before a creature within 10 feet that can see her. The target must attempt a @Check[will|dc:28] save.</p>\n<p>The target is then temporarily immune for 1 hour.</p>\n<hr />\n<p><strong>Critical Success</strong> No effect.</p>\n<p><strong>Success</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.AdPVz7rbaVSRxHFg]{Fascinated} by Paga until the end of its next turn.</p>\n<p><strong>Failure</strong> The creature is fascinated by Paga and can't use hostile actions against her until the end of its next turn.</p>\n<p><strong>Critical Failure</strong> As failure, and the creature isn't temporarily immune to Feign Harmlessness.</p>"
-                },
-                "action->Unbreakable Concentration": {
-                    "name": "Unbreakable Concentration",
-                    "description": "<p>Paga's spells are disrupted by reactions only if she is critically hit.</p>"
-                },
-                "lore->Aspis Consortium Lore": {
-                    "name": "Aspis Consortium Lore"
                 }
             }
         },
@@ -473,6 +367,10 @@
         "items": {
             "converter": "translateActorItems",
             "path": "items"
+        },
+        "rules": {
+            "converter": "translateRules",
+            "path": "system.rules"
         },
         "descriptionHazard": "system.details.description",
         "disable": "system.details.disable",

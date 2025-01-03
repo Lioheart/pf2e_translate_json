@@ -27,7 +27,10 @@
                     "name": "Constant Spells"
                 },
                 "action->+4 to Perception to Sense Motive": {
-                    "name": "+4 to Perception to Sense Motive"
+                    "name": "+4 to Perception to Sense Motive",
+                    "rules": {
+                        "0": "Sense Motive"
+                    }
                 },
                 "action->Ear for Secrets": {
                     "name": "Ear for Secrets",
@@ -184,30 +187,6 @@
                 "action->Gardener's Resolve": {
                     "name": "Gardener's Resolve",
                     "description": "<p><strong>Trigger</strong> The Gray Gardener assassin rolls a failure (but not a critical failure) on a Will save against an effect with the mental or fear trait</p>\n<p><strong>Requirements</strong> The Gray Gardener assassin's features are obscured by a mask or hood</p>\n<hr />\n<p><strong>Effect</strong> The Gray Gardener assassin takes @Damage[3d8[mental]] damage, and the saving throw is a success.</p>"
-                },
-                "action->Instant Opening": {
-                    "name": "Instant Opening",
-                    "description": "<p>The Gray Gardener assassin distracts a creature within 30 feet, using a few choice words or gestures. The creature is @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} against the assassin's attacks until the end of the assassin's next turn. Depending on the distraction, this action gains either the auditory or the visual trait.</p>"
-                },
-                "action->Mark for Death": {
-                    "name": "Mark for Death",
-                    "description": "<p>The Gray Gardener assassin designates a single creature they can see and hear as their mark. This effect lasts until the mark dies or the assassin uses Mark for Death again. The assassin gains a +2 circumstance bonus to Perception checks to @UUID[Compendium.pf2e.actionspf2e.Item.BlAOM2X92SI6HMtJ]{Seek} the mark and on Deception checks to @UUID[Compendium.pf2e.actionspf2e.Item.QNAVeNKtHA0EUw4X]{Feint} against the mark. The assassin's melee and ranged Strikes gain the deadly d8 weapon traits when attacking the mark.</p>"
-                },
-                "action->Poison Weapon": {
-                    "name": "Poison Weapon",
-                    "description": "<p><strong>Requirements</strong> The Gray Gardener assassin is wielding a piercing or slashing weapon and has a free hand</p><hr /><p><strong>Effect</strong> The assassin applies a poison to the weapon.</p>"
-                },
-                "action->Quick Draw": {
-                    "name": "Quick Draw",
-                    "description": "<p>The Gray Gardener assassin Interacts to draw a weapon and then Strikes with that weapon.</p>"
-                },
-                "action->Sneak Attack": {
-                    "name": "Sneak Attack",
-                    "description": "<p>The Gray Gardener assassin deals an additional 6d6 precision damage precision damage to @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} creatures.</p>"
-                },
-                "action->Surprise Attack": {
-                    "name": "Surprise Attack",
-                    "description": "<p>On the first round of combat, creatures that haven't acted yet are @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} to the Gray Gardener assassin.</p>"
                 }
             }
         },
@@ -224,22 +203,6 @@
                 "action->Gardener's Resolve": {
                     "name": "Gardener's Resolve",
                     "description": "<p><strong>Trigger</strong> The Gray Gardener Director General rolls a failure (but not a critical failure) on a Will save against an effect with the mental or fear trait</p>\n<p><strong>Requirements</strong> The Gray Gardener Director General's features are obscured by a mask or hood</p>\n<hr />\n<p><strong>Effect</strong> The Gray Gardener Director General takes @Damage[3d8[mental]] damage, and the saving throw is a success.</p>"
-                },
-                "action->Quick Draw": {
-                    "name": "Quick Draw",
-                    "description": "<p>The director general Interacts to draw a weapon, and then Strikes with that weapon.</p>"
-                },
-                "action->Skewer the Fearful": {
-                    "name": "Skewer the Fearful",
-                    "description": "<p>The director general's Strikes deal an additional 4d6 precision damage to frightened creatures. If the Strike against a frightened creature is a critical hit, the creature doesn't automatically reduce its frightened condition at the end of its next turn.</p>"
-                },
-                "action->Stern Glare": {
-                    "name": "Stern Glare",
-                    "description": "<p><strong>Trigger</strong> The director general's turn begins</p><hr /><p><strong>Effect</strong> The director general attempts to Demoralize a creature within 60 feet that they can see and that can see the director general.</p>"
-                },
-                "action->Whispers of Superiority": {
-                    "name": "Whispers of Superiority",
-                    "description": "<p>The director general utters a few words to a non-frightened target within 60 feet that can hear them, bolstering the target's indignation of cowards. The target creature must succeed at a @Check[will|dc:39] save, or it doesn't count frightened creatures as allies and can't Aid them or flank with them. This effect lasts for 1 round (1 minute on a critical failure).</p>"
                 }
             }
         },
@@ -264,32 +227,6 @@
                 "action->Gardener's Resolve": {
                     "name": "Gardener's Resolve",
                     "description": "<p><strong>Trigger</strong> The Gray Gardener enforcer rolls a failure (but not a critical failure) on a Will save against an effect with the mental or fear trait</p>\n<p><strong>Requirements</strong> The Gray Gardener enforcer's features are obscured by a mask or hood</p>\n<hr />\n<p><strong>Effect</strong> The Gray Gardener enforcer takes @Damage[3d8[mental]] damage, and the saving throw is a success.</p>"
-                },
-                "action->Nourishing Feast": {
-                    "name": "Nourishing Feast",
-                    "description": "<p>The Gray Gardener enforcer spends 1 hour consuming 1 Bulk of raw meat to reverse their body's putrescence. For 1 hour, the Gray Gardener enforcer appears to be a pale, bloated human. They have an automatic result of 32 on Deception checks and DCs to pass as a non-mortic human. While under the effects of Nourishing Feast, Rotting Flesh ceases to function.</p>"
-                },
-                "action->Rotting Flesh": {
-                    "name": "Rotting Flesh",
-                    "description": "<p>Any creature that hits the Gray Gardener enforcer with an unarmed attack, tries to Grapple them, or otherwise touches the gurgist is covered with rotten flesh and putrid fluids. The creature must succeed at a @Check[fortitude|dc:36] save or become @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 1} (@UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 2} on a critical failure).</p>"
-                },
-                "action->Void Healing": {
-                    "name": "Void Healing"
-                },
-                "action->Chain Garotte": {
-                    "name": "Chain Garotte",
-                    "description": "<p>The Gray Gardener enforcer's spiked chain Strike deals @Damage[2d8[bleed]], and they can use it to Grab up to two foes. The enforcer can still attack with their spiked chain if they Grab one creature, but not when they Grab two.</p>"
-                },
-                "action->Death Gasp": {
-                    "name": "Death Gasp",
-                    "description": "<p>The Gray Gardener enforcer draws in a deep breath and holds it, temporarily suspending their biological processes and becoming undead. The Gray Gardener enforcer gains the undead trait and becomes immune to bleed, death effects, disease, @UUID[Compendium.pf2e.conditionitems.Item.6uEgoh53GbXuHpTF]{Paralyzed}, poison, and sleep. Any such effects the Gray Gardener is currently suffering from are suspended but take effect again once they take a breath. Death Gasp lasts as long as the Gray Gardener enforcer holds their breath.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.lyeRL7khixdlJsaf]{Effect: Death Gasp}</p>"
-                },
-                "action->Greater Constrict": {
-                    "name": "Greater Constrict",
-                    "description": "<p>@Damage[(3d8+7)[slashing]] damage, @Check[fortitude|dc:38|basic|name:Chain Garotte Constrict|traits:disarm,trip]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.GreaterConstrict]</p>"
-                },
-                "action->Grab": {
-                    "name": "Grab"
                 }
             }
         },
@@ -335,40 +272,6 @@
                 "equipment->Healer's Tools (Expanded)": {
                     "name": "Healer's Tools (Expanded)",
                     "description": "<p>This kit of bandages, herbs, and suturing tools is necessary for Medicine checks to Administer First Aid, Treat Disease, Treat Poison, or Treat Wounds. Expanded healer's tools provide a +1 item bonus to such checks. When you carry the tools from place to place, you keep many of the components handy on your person, in pockets or bandoliers.</p>"
-                },
-                "equipment->Religious Symbol of Pharasma (Silver)": {
-                    "name": "Religious Symbol of Pharasma (Silver)",
-                    "description": "<p>This piece of wood or silver is emblazoned with an image representing a deity. Some divine spellcasters, such as clerics, can use a religious symbol of their deity as a divine focus to use certain abilities and cast some spells. A religious symbol must be held in one hand to use it.</p>"
-                },
-                "consumable->Antidote (Moderate)": {
-                    "name": "Antidote (Moderate)",
-                    "description": "<p><strong>Activate</strong> <span class=\"action-glyph\">A</span> Interact</p>\n<p>An antidote protects you against toxins. Upon drinking an antidote, you gain a +3 item bonus to Fortitude saving throws against poisons for 6 hours.</p>\n<p>@UUID[Compendium.pf2e.equipment-effects.Item.TjBxxlTvb6tJP1jS]{Effect: Antidote}</p>"
-                },
-                "consumable->Antiplague (Moderate)": {
-                    "name": "Antiplague (Moderate)",
-                    "description": "<p><strong>Activate</strong> <span class=\"action-glyph\">A</span> Interact</p>\n<p>Antiplague can fortify the body's defenses against diseases. Upon drinking an antiplague, you gain a +3 item bonus to Fortitude saving throws against diseases for 24 hours; this applies to your daily save against a disease's progression.</p>\n<p>@UUID[Compendium.pf2e.equipment-effects.Item.mVgLCbZgafIylRzh]{Effect: Antiplague}</p>"
-                },
-                "consumable->Elixir of Life (Moderate)": {
-                    "name": "Elixir of Life (Moderate)",
-                    "description": "<p><strong>Activate</strong> <span class=\"action-glyph\">A</span> Interact</p>\n<p>Elixirs of life accelerate a living creature's natural healing processes and immune system. Upon drinking this elixir, you regain @Damage[(5d6+12)[healing]] Hit Points and gain +2 item bonus to saving throws against diseases and poisons for 10 minutes.</p>\n<p>@UUID[Compendium.pf2e.equipment-effects.Item.lPRuIRbu0rHBkoKY]{Effect: Elixir of Life}</p>"
-                },
-                "strike-melee->Beak": {
-                    "name": "Beak"
-                },
-                "strike-melee->Staff": {
-                    "name": "Staff"
-                },
-                "action->Invaded": {
-                    "name": "Invaded",
-                    "description": "<p>Keznin is subject to the conqueror worm's Mental Invader effect, but she doesn't realize it. (Note: This is only effective in Chapter 3)</p>"
-                },
-                "action->Expert Herbalist": {
-                    "name": "Expert Herbalist",
-                    "description": "<p>Keznin can use Nature instead of Medicine to Treat Disease, Treat Poison, and Treat Wounds, and he can use Nature instead of Crafting to craft alchemical items with the healing trait, antidotes, and antiplagues.</p>"
-                },
-                "action->Risky Treatment": {
-                    "name": "Risky Treatment",
-                    "description": "<p><strong>Trigger</strong> Keznin rolls a critical failure on a check to Treat Disease, Treat Poison, or Treat Wounds</p>\n<hr />\n<p><strong>Effect</strong> Keznin gives an emergency application of dangerous herbs to avert further harm. The creature Keznin is treating takes @Damage[2d6[poison]] damage, and Keznin rerolls the check.</p>"
                 }
             }
         },
@@ -389,22 +292,6 @@
                 "action->Gardener's Resolve": {
                     "name": "Gardener's Resolve",
                     "description": "<p><strong>Trigger</strong> The Gray Gardener Director General rolls a failure (but not a critical failure) on a Will save against an effect with the mental or fear trait</p>\n<p><strong>Requirements</strong> The Gray Gardener Director General's features are obscured by a mask or hood</p>\n<hr />\n<p><strong>Effect</strong> The Gray Gardener Director General takes @Damage[3d8[mental]] damage, and the saving throw is a success.</p>"
-                },
-                "action->Quick Draw": {
-                    "name": "Quick Draw",
-                    "description": "<p>The director general Interacts to draw a weapon, and then Strikes with that weapon.</p>"
-                },
-                "action->Skewer the Fearful": {
-                    "name": "Skewer the Fearful",
-                    "description": "<p>The director general's Strikes deal an additional 4d6 precision damage to frightened creatures. If the Strike against a frightened creature is a critical hit, the creature doesn't automatically reduce its frightened condition at the end of its next turn.</p>"
-                },
-                "action->Stern Glare": {
-                    "name": "Stern Glare",
-                    "description": "<p><strong>Trigger</strong> The director general's turn begins</p><hr /><p><strong>Effect</strong> The director general attempts to Demoralize a creature within 60 feet that they can see and that can see the director general.</p>"
-                },
-                "action->Whispers of Superiority": {
-                    "name": "Whispers of Superiority",
-                    "description": "<p>The director general utters a few words to a non-frightened target within 60 feet that can hear them, bolstering the target's indignation of cowards. The target creature must succeed at a @Check[will|dc:39] save, or it doesn't count frightened creatures as allies and can't Aid them or flank with them. This effect lasts for 1 round (1 minute on a critical failure).</p>"
                 }
             }
         },
@@ -435,7 +322,10 @@
                     "name": "Claw"
                 },
                 "strike-ranged->Thorn": {
-                    "name": "Thorn"
+                    "name": "Thorn",
+                    "rules": {
+                        "0": "Bound By Manacles"
+                    }
                 },
                 "action->Telepathy 100 feet": {
                     "name": "Telepathy 100 feet"
@@ -445,7 +335,10 @@
                 },
                 "action->Bound": {
                     "name": "Bound",
-                    "description": "<p>The dawnsilver manacles affixing the pakalchi to the wall are enchanted. The pakalchi can't remove them, although any other creature can with a single Interact action. While bound, she's @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Immobilized}, can't make melee Strikes, and can't Skip Between, though she can still make thorn attacks with a -4 circumstance penalty.</p>"
+                    "description": "<p>The dawnsilver manacles affixing the pakalchi to the wall are enchanted. The pakalchi can't remove them, although any other creature can with a single Interact action. While bound, she's @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Immobilized}, can't make melee Strikes, and can't Skip Between, though she can still make thorn attacks with a -4 circumstance penalty.</p>",
+                    "rules": {
+                        "0": "Miss Whisper is Bound by Dawnsilver Manacles"
+                    }
                 },
                 "action->Easy to Call": {
                     "name": "Easy to Call",
@@ -641,25 +534,6 @@
                 "action->Gasping Aura": {
                     "name": "Gasping Aura",
                     "description": "<p>100 feet. Creatures within the aura must succeed at a @Check[fortitude|dc:37] save. On a failure, they can't breathe and must hold their breath to avoid suffocation until they leave the aura. The tumblak can activate or deactivate the aura with a single free action, which has the concentrate trait.</p>"
-                },
-                "action->No Breath": {
-                    "name": "No Breath",
-                    "description": "<p>Tumblaks don't need to breathe.</p>"
-                },
-                "action->Claustrophobic Nightmares": {
-                    "name": "Claustrophobic Nightmares",
-                    "description": "<p>A creature @UUID[Compendium.pf2e.conditionitems.Item.HL2l2VRSaQHu9lUw]{Fatigued} by the tumblak's @UUID[Compendium.pf2e.spells-srd.Item.Uqj344bezBq3ESdq]{Nightmare} spell is subject to paralyzing glimpses of being buried alive. Anyone using an effect that would remove the fatigued condition through a means other than a full night's rest must succeed on a DC 44 counteract check or the fatigued condition isn't removed. When the fatigued creature enters a stressful situation, such as rolling initiative in combat or entering a high-stakes negotiation, it is affected by Entombing Echoes.</p>"
-                },
-                "action->Entombing Echoes": {
-                    "name": "Entombing Echoes",
-                    "description": "<p>A creature struck by the tumblak's fist or impacted by Claustrophobic Nightmares must succeed on a @Check[will|dc:44] save or feel itself confined on all sides. The creature is @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Immobilized} and @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} until it Escapes (DC 44).</p>"
-                },
-                "action->Skip Between": {
-                    "name": "Skip Between",
-                    "description": "<p>Tumblak moves from the Material Plane to the Ethereal Plane or vice versa, with the effects of @UUID[Compendium.pf2e.spells-srd.Item.D2nPKbIS67m9199U]{Ethereal Jaunt} except the effect has an unlimited duration and can be Dismissed. A summoned sahkil can't use Skip Between.</p>"
-                },
-                "lore->Grave Lore": {
-                    "name": "Grave Lore"
                 }
             }
         },
@@ -688,18 +562,6 @@
                 "action->Gardener's Resolve": {
                     "name": "Gardener's Resolve",
                     "description": "<p><strong>Trigger</strong> The worm prophet rolls a failure (but not a critical failure) on a Will save against an effect with the mental or fear trait</p>\n<p><strong>Requirements</strong> The worm prophet's features are obscured by a mask or hood</p>\n<hr />\n<p><strong>Effect</strong> The worm prophet takes @Damage[3d8[mental]] damage, and the saving throw is a success.</p>"
-                },
-                "action->Invaded": {
-                    "name": "Invaded",
-                    "description": "<p>The worm prophet is subject to the conqueror worm's Mental Invader effect.</p>"
-                },
-                "action->Capture Spirit": {
-                    "name": "Capture Spirit",
-                    "description": "<p><strong>Trigger</strong> A target affected by one of the worm prophet's necromancy spells dies within 60 feet of the worm prophet</p><hr /><p><strong>Effect</strong> The worm prophet harnesses a bit of the departing victim's soul, and the worm prophet is @UUID[Compendium.pf2e.conditionitems.Item.nlCjDvLMf2EkV2dl]{Quickened} 1 for 1 minute. They can use this extra action only to Step, Stride, or Sustain a Spell.</p>"
-                },
-                "action->Steady Spellcasting": {
-                    "name": "Steady Spellcasting",
-                    "description": "<p>If a reaction would disrupt the worm prophet's spellcasting action, the worm prophet attempts a @Check[flat|dc:15|showDC:owner]. On a success, the action isn't disrupted.</p>"
                 }
             }
         },
@@ -720,30 +582,6 @@
                 "action->Gardener's Resolve": {
                     "name": "Gardener's Resolve",
                     "description": "<p><strong>Trigger</strong> The Gray Gardener assassin rolls a failure (but not a critical failure) on a Will save against an effect with the mental or fear trait</p>\n<p><strong>Requirements</strong> The Gray Gardener assassin's features are obscured by a mask or hood</p>\n<hr />\n<p><strong>Effect</strong> The Gray Gardener assassin takes @Damage[3d8[mental]] damage, and the saving throw is a success.</p>"
-                },
-                "action->Instant Opening": {
-                    "name": "Instant Opening",
-                    "description": "<p>The Gray Gardener assassin distracts a creature within 30 feet, using a few choice words or gestures. The creature is @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} against the assassin's attacks until the end of the assassin's next turn. Depending on the distraction, this action gains either the auditory or the visual trait.</p>"
-                },
-                "action->Mark for Death": {
-                    "name": "Mark for Death",
-                    "description": "<p>The Gray Gardener assassin designates a single creature they can see and hear as their mark. This effect lasts until the mark dies or the assassin uses Mark for Death again. The assassin gains a +2 circumstance bonus to Perception checks to @UUID[Compendium.pf2e.actionspf2e.Item.BlAOM2X92SI6HMtJ]{Seek} the mark and on Deception checks to @UUID[Compendium.pf2e.actionspf2e.Item.QNAVeNKtHA0EUw4X]{Feint} against the mark. The assassin's melee and ranged Strikes gain the deadly d8 weapon traits when attacking the mark.</p>"
-                },
-                "action->Poison Weapon": {
-                    "name": "Poison Weapon",
-                    "description": "<p><strong>Requirements</strong> The Gray Gardener assassin is wielding a piercing or slashing weapon and has a free hand</p><hr /><p><strong>Effect</strong> The assassin applies a poison to the weapon.</p>"
-                },
-                "action->Quick Draw": {
-                    "name": "Quick Draw",
-                    "description": "<p>The Gray Gardener assassin Interacts to draw a weapon and then Strikes with that weapon.</p>"
-                },
-                "action->Sneak Attack": {
-                    "name": "Sneak Attack",
-                    "description": "<p>The Gray Gardener assassin deals an additional 6d6 precision damage precision damage to @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} creatures.</p>"
-                },
-                "action->Surprise Attack": {
-                    "name": "Surprise Attack",
-                    "description": "<p>On the first round of combat, creatures that haven't acted yet are @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} to the Gray Gardener assassin.</p>"
                 }
             }
         }
@@ -752,6 +590,10 @@
         "items": {
             "converter": "translateActorItems",
             "path": "items"
+        },
+        "rules": {
+            "converter": "translateRules",
+            "path": "system.rules"
         },
         "publicNotes": "system.details.publicNotes",
         "privateNotes": "system.details.privateNotes",

@@ -45,10 +45,6 @@
                 "action->Construct Armor (Hardness 4)": {
                     "name": "Construct Armor (Hardness 4)",
                     "description": "<p>Like normal objects, an animated blade has Hardness. This Hardness reduces any damage the blade takes by an amount equal to the Hardness. Once an animated blade is reduced to fewer than half its Hit Points, or immediately upon being damaged by a critical hit, its construct armor breaks, and its Armor Class is reduced to 14.</p>"
-                },
-                "action->Tetanus": {
-                    "name": "Tetanus",
-                    "description": "<p><strong>Saving Throw</strong> @Check[fortitude|dc:15]</p>\n<p><strong>Onset</strong> 1 week</p>\n<p><strong>Stage 1</strong> @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 1} (1 week)</p>\n<p><strong>Stage 2</strong> @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 2} and can't speak (1 day)</p>\n<p><strong>Stage 3</strong> @UUID[Compendium.pf2e.conditionitems.Item.6uEgoh53GbXuHpTF]{Paralyzed} (1 day)</p>\n<p><strong>Stage 4</strong> death</p>"
                 }
             }
         },
@@ -188,7 +184,10 @@
                 },
                 "weapon->Staff of Necromancy": {
                     "name": "Staff of Necromancy",
-                    "description": "<p>This twisted and grim-looking staff is adorned with hideous skull and bone motifs. While wielding the staff, you gain a +2 circumstance bonus to checks to identify necromancy magic.</p>\n<p><strong>Activate</strong> Cast a Spell</p>\n<hr />\n<p><strong>Effect</strong> You expend a number of charges from the staff to cast a spell from its list.</p>\n<ul>\n<li><strong>Cantrip</strong> @UUID[Compendium.pf2e.spells-srd.Item.mAMEt4FFbdqoRnkN]{Void Warp}</li>\n<li><strong>1st</strong> @UUID[Compendium.pf2e.spells-srd.Item.k34hDOfIIMAxNL4a]{Grim Tendrils}, @UUID[Compendium.pf2e.spells-srd.Item.J7Y7tl0bbdz7TcCc]{Enfeeble}</li>\n<li><strong>2nd</strong> @UUID[Compendium.pf2e.spells-srd.Item.fZPCv2VHuM2yPbC8]{Deafness}, @UUID[Compendium.pf2e.spells-srd.Item.xRgU9rrhmGAgG4Rc]{Peaceful Rest}</li>\n</ul>\n<p><strong>Craft Requirements</strong> Supply one casting of all listed levels of all listed spells.</p>"
+                    "description": "<p>This twisted and grim-looking staff is adorned with hideous skull and bone motifs. While wielding the staff, you gain a +2 circumstance bonus to checks to identify necromancy magic.</p>\n<p><strong>Activate</strong> Cast a Spell</p>\n<hr />\n<p><strong>Effect</strong> You expend a number of charges from the staff to cast a spell from its list.</p>\n<ul>\n<li><strong>Cantrip</strong> @UUID[Compendium.pf2e.spells-srd.Item.mAMEt4FFbdqoRnkN]{Void Warp}</li>\n<li><strong>1st</strong> @UUID[Compendium.pf2e.spells-srd.Item.k34hDOfIIMAxNL4a]{Grim Tendrils}, @UUID[Compendium.pf2e.spells-srd.Item.J7Y7tl0bbdz7TcCc]{Enfeeble}</li>\n<li><strong>2nd</strong> @UUID[Compendium.pf2e.spells-srd.Item.fZPCv2VHuM2yPbC8]{Deafness}, @UUID[Compendium.pf2e.spells-srd.Item.xRgU9rrhmGAgG4Rc]{Peaceful Rest}</li>\n</ul>\n<p><strong>Craft Requirements</strong> Supply one casting of all listed levels of all listed spells.</p>",
+                    "rules": {
+                        "0": "Staff of Necromancy (identify necromancy magic)"
+                    }
                 },
                 "strike-melee->Staff": {
                     "name": "Staff"
@@ -265,26 +264,6 @@
                 "weapon->Dread Ampoule (Moderate)": {
                     "name": "Dread Ampoule (Moderate)",
                     "description": "<p><strong>Usage</strong> held in 1 hand</p>\n<p><strong>Activate</strong> <span class=\"action-glyph\">A</span> Strike</p>\n<hr />\n<p>This flask is filled with a murky purple gas that briefly interferes with normal brain activity. A dread ampoule deals the listed mental damage and mental splash damage.</p>\n<p>On a hit, the target becomes @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 1}, or frightened 2 on a critical hit. Many types also grant an item bonus to attack rolls.</p>\n<p>You gain a +1 item bonus to attack rolls. The bomb deals 2d6 mental damage and 2 mental splash damage.</p>"
-                },
-                "equipment->Bone Religious Symbol (Venexus)": {
-                    "name": "Bone Religious Symbol (Venexus)",
-                    "description": "<p>This piece of bone is emblazoned with an image representing Venexus. Some divine spellcasters, such as clerics, can use a religious symbol of their deity as a divine focus to use certain abilities and cast some spells. A religious symbol must be held in one hand to use it.</p>"
-                },
-                "strike-melee->Fist": {
-                    "name": "Fist"
-                },
-                "strike-ranged->Moderate Dread Ampoule": {
-                    "name": "Moderate Dread Ampoule"
-                },
-                "action->Attack of Opportunity": {
-                    "name": "Attack of Opportunity"
-                },
-                "action->Shield Block": {
-                    "name": "Shield Block"
-                },
-                "action->Sudden Charge": {
-                    "name": "Sudden Charge",
-                    "description": "<p>The bone warrior Strides twice. If they end their movement within melee reach of an enemy, the bone warrior makes a melee Strike against that enemy.</p>"
                 }
             }
         },
@@ -317,18 +296,6 @@
                 "action->Evasion": {
                     "name": "Evasion",
                     "description": "<p>When the commando rolls a success on a Reflex save, they get a critical success instead.</p>"
-                },
-                "action->Spurred by Death": {
-                    "name": "Spurred by Death",
-                    "description": "<p><strong>Trigger</strong> An ally within 30 feet reduces a creature to 0 HP</p><hr /><p><strong>Effect</strong> The commando Interacts to draw a weapon, Steps, Strides, or uses Hunt Prey.</p>"
-                },
-                "action->Cruel Cutter": {
-                    "name": "Cruel Cutter",
-                    "description": "<p>Burning Mammoth commandos ably carve flesh and wood with their axes. An axe the commando uses gains the reach trait and deals an additional 1d6 damage (included in the <em>hatchet</em> Strikes above).</p>"
-                },
-                "action->Hunt Prey": {
-                    "name": "Hunt Prey",
-                    "description": "<p>The commando designates a single creature they can see and hear, or one they're Tracking, as their prey. The commando gains a +2 circumstance bonus to Perception checks to @UUID[Compendium.pf2e.actionspf2e.Item.BlAOM2X92SI6HMtJ]{Seek} their prey and to Survival checks to @UUID[Compendium.pf2e.actionspf2e.Item.EA5vuSgJfiHH7plD]{Track} their prey. The first time the commando hits their designated prey in a round, they deal an additional 1d8 precision damage. The commando also ignores the penalty for making ranged attacks within the second range increment when attacking their prey. These effects last until the commando uses Hunt Prey again.</p>"
                 }
             }
         },
@@ -356,24 +323,6 @@
                 "equipment->Everburning Torch": {
                     "name": "Everburning Torch",
                     "description": "<p>An <em>everburning torch</em> is one of the most common applications of permanent magic. This torch sheds light constantly, requiring no oxygen and generating no heat. The flame can be covered or hidden, but can't be smothered or quenched.</p>"
-                },
-                "treasure->Polished Topaz": {
-                    "name": "Polished Topaz"
-                },
-                "action->Shield Block": {
-                    "name": "Shield Block"
-                },
-                "action->Spurred by Death": {
-                    "name": "Spurred by Death",
-                    "description": "<p><strong>Trigger</strong> An ally within 30 feet reduces a creature to 0 HP</p>\n<hr />\n<p><strong>Effect</strong> The longshield Steps or Strides.</p>"
-                },
-                "action->Opportunistic Defense": {
-                    "name": "Opportunistic Defense",
-                    "description": "<p><strong>Trigger</strong> The longshield successfully Strikes with their shield boss</p>\n<hr />\n<p><strong>Effect</strong> The longshield Raises their Shield.</p>"
-                },
-                "action->Shield Shove": {
-                    "name": "Shield Shove",
-                    "description": "<p><strong>Frequency</strong> once per round</p>\n<p><strong>Requirements</strong> The longshield's shield is raised</p>\n<hr />\n<p><strong>Effect</strong> The longshield rolls an Athletics check to @UUID[Compendium.pf2e.actionspf2e.Item.7blmbDrQFNfdT731]{Shove} a creature in reach. If they roll a failure, they get a success instead, and if they roll a success, they get a critical success instead. The longshield's shield is lowered.</p>"
                 }
             }
         },
@@ -383,21 +332,6 @@
                 "weapon->Tallow Bomb (Lesser)": {
                     "name": "Tallow Bomb (Lesser)",
                     "description": "<p><strong>Activate</strong> <span class=\"action-glyph\">A</span> Strike</p>\n<hr />\n<p>A mixture of rendered animal fat and acids designed to ignite the fat when exposed to air, a tallow bomb creates a splash of burning oil that adheres to skin, clothes, and hair. A tallow bomb deals the listed fire damage, persistent fire damage, and splash damage.</p>\n<p>On a critical hit, a living creature taking persistent fire damage from a tallow bomb is @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 1} from the stench of burning fat and can't reduce its sickened value below 1 while the persistent fire damage lasts.</p>\n<p>The bomb deals 1d4 persistent fire damage and 1 fire splash damage.</p>"
-                },
-                "strike-ranged->Tallow Bomb": {
-                    "name": "Tallow Bomb"
-                },
-                "action->Reaver's Howl": {
-                    "name": "Reaver's Howl",
-                    "description": "<p>When the reaver attempts an Intimidation check to @UUID[Compendium.pf2e.actionspf2e.Item.2u915NdUyQan6uKF]{Demoralize}, the reaver compares the result of the Intimidation check to the Will DC of each non-Burning Mammoth creature within 30 feet, determining the effect separately for each creature. The reaver's howl ignores the usual circumstance penalty to the Intimidation check for not speaking the same language as the target.</p>"
-                },
-                "action->Spurred by Death": {
-                    "name": "Spurred by Death",
-                    "description": "<p><strong>Trigger</strong> An ally within 30 feet reduces a creature to 0 HP</p>\n<hr />\n<p><strong>Effect</strong> The reaver Steps or Strides.</p>"
-                },
-                "action->Cut Down": {
-                    "name": "Cut Down",
-                    "description": "<p>When a reaver hits a creature with a battle axe Strike, the target must succeed at a @Check[fortitude|dc:16] save or fall @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone}. If the creature critically fails its save, it takes @Damage[1d6[bludgeoning]] damage as it falls prone.</p>"
                 }
             }
         },
@@ -415,18 +349,6 @@
                 },
                 "action->Void Healing": {
                     "name": "Void Healing"
-                },
-                "action->Cairn Wight Spawn": {
-                    "name": "Cairn Wight Spawn",
-                    "description": "<p>A living humanoid slain by a cairn wight's weapon or claw Strike rises as a spawned wight after [[/br 1d4 #rounds]]{1d4 rounds}. This spawned wight is under the command of the cairn wight that killed it. It doesn't have drain life or cairn wight spawn and is @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 2} for as long as it is a spawned wight.</p>\n<p>If its creator dies, the spawned wight becomes a full-fledged, autonomous cairn wight; it regains its free will, gains drain life and cairn wight spawn, and is no longer clumsy.</p>"
-                },
-                "action->Drain Life": {
-                    "name": "Drain Life",
-                    "description": "<p>When the cairn wight damages a living creature with a melee Strike, using an unarmed attack or its bound weapon, the cairn wight gains 5 temporary Hit Points and the creature must succeed at a @Check[fortitude|dc:18] save or become @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 1}. Further damage dealt by the cairn wraith increases the drained condition value by 1 on a failed save, to a maximum of drained 4.</p>"
-                },
-                "action->Funereal Dirge": {
-                    "name": "Funereal Dirge",
-                    "description": "<p>The cairn wight chants a low, haunting melody. Living creatures within @Template[emanation|distance:50]{50 feet} must attempt a @Check[will|dc:21] save.</p>\n<p>The cairn wight can't chant a new Funereal Dirge for [[/br 1d4 #Recharge Funereal Dirge]]{1d4 rounds}.</p><hr /><p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 1}.</p>\n<p><strong>Failure</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 2}.</p>\n<p><strong>Critical Failure</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 2} and takes a -2 status penalty to saving throws against drain life.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.8ecPVgMeWDxc4jI4]{Effect: Funereal Dirge}</p>"
                 }
             }
         },
@@ -440,43 +362,6 @@
                 "equipment->Aeon Stone (Pearlescent Pyramid)": {
                     "name": "Aeon Stone (Pearlescent Pyramid)",
                     "description": "<p>While invested, this aeon stone grants the benefit of the @UUID[Compendium.pf2e.equipment-srd.Item.JQdwHECogcTzdd8R]{Ghost Touch} property rune to your weapons and unarmed attacks.</p>\n<p>The resonant power grants a special activation.</p>\n<hr />\n<p><strong>Activate</strong> <span class=\"action-glyph\">1</span> Envision</p>\n<p><strong>Frequency</strong> once per minute</p>\n<hr />\n<p><strong>Effect</strong> You gain the effects of @UUID[Compendium.pf2e.spells-srd.Item.jwK43yKsHTkJQvQ9]{See the Unseen} for 1 round.</p>"
-                },
-                "treasure->Opal": {
-                    "name": "Opal"
-                },
-                "strike-melee->Claw": {
-                    "name": "Claw"
-                },
-                "action->Gemsight": {
-                    "name": "Gemsight",
-                    "description": "<p>As long as Calcifda holds a gemstone, she can see through the gem with darkvision and the effects of @UUID[Compendium.pf2e.spells-srd.Item.uqlxMQQeSGWEVjki]{Truesight}. When she uses her @UUID[Compendium.pf2e.equipment-srd.Item.5SKGqxahAGsJgzRF]{Aeon Stone (Pearlescent Pyramid)} for this ability, she also knows the wounded and dying value of every creature she sees. Calcifda is blind when she isn't holding a gem in her hand.</p>"
-                },
-                "action->Light Sickness": {
-                    "name": "Light Sickness",
-                    "description": "<p>Calcifda is @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 1} in bright light.</p>"
-                },
-                "action->Coal Curse": {
-                    "name": "Coal Curse",
-                    "description": "<p>Wounds dealt by Calcifda's claws stiffen flesh and turn the blood that runs from them into tar. Each time a creature is damaged by Calcifda's claw Strike, it must succeed at a @Check[fortitude|dc:29] save or become permanently @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1} (slowed 2 on a critical failure) as its flesh stiffens like stone. If a creature is reduced to 0 Hit Points from Calcifda's claw Strike and fails the saving throw against coal curse, it's petrified and turned to coal. A creature that spends 8 hours in direct sunlight can attempt a new saving throw to remove the effects of coal curse, even if it has been petrified.</p>"
-                },
-                "action->Earth Glide": {
-                    "name": "Earth Glide",
-                    "description": "<p>Calcifda can Burrow through any earthen matter, including rock. When she does so, she moves at her full burrow Speed, leaving no tunnels or signs of her passing.</p>"
-                },
-                "action->Gem Gaze": {
-                    "name": "Gem Gaze",
-                    "description": "<p>Calcifda holds aloft a gem and gazes into the mind of a creature within 30 feet, infusing the creature's thoughts with visions of their body slowly turning to coal. The creature must succeed at a @Check[will|dc:29] save or become @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 1} (frightened 2 on a critical failure).</p>"
-                },
-                "action->Lashing Stone": {
-                    "name": "Lashing Stone",
-                    "description": "<p><strong>Frequency</strong> once per round</p><hr /><p><strong>Effect</strong> Calcifda makes a claw Strike that originates from any stony or tarry surface within 60 feet. A creature that fails its Fortitude save against coal curse from this Strike increases its slowed value by 1 (@UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 2} on a failed save, slowed 3 on a critical failure).</p>"
-                },
-                "action->Steady Spellcasting": {
-                    "name": "Steady Spellcasting",
-                    "description": "<p>If a reaction would disrupt Calcifda's spellcasting action, she attempts a @Check[flat|dc:15]. On a success, the action isn't disrupted.</p>"
-                },
-                "lore->Gem Lore": {
-                    "name": "Gem Lore"
                 }
             }
         },
@@ -510,9 +395,6 @@
                 "action->Prop": {
                     "name": "Prop",
                     "description": "<p>The castoroides stabilizes itself with its tail, gaining a +1 circumstance bonus to its Fortitude and Reflex DCs against Shove and Trip attempts until it next takes an action with the move trait.</p>"
-                },
-                "action->Grab": {
-                    "name": "Grab"
                 }
             }
         },
@@ -563,9 +445,6 @@
                 "action->Sunder Objects": {
                     "name": "Sunder Objects",
                     "description": "<p>When an arboreal regent damages an item or structure, it deals an additional [[/r {2d10}]]{2d10 damage} to that item or structure.</p>"
-                },
-                "action->Throw Rock": {
-                    "name": "Throw Rock"
                 }
             }
         },
@@ -586,10 +465,6 @@
                 },
                 "action->Void Healing": {
                     "name": "Void Healing"
-                },
-                "action->Pummeling Grasp": {
-                    "name": "Pummeling Grasp",
-                    "description": "<p>Each enemy in the swarm's space takes @Damage[3d6[slashing]] damage (@Check[reflex|dc:20|basic]). A creature that fails its save against Pummeling Grasp is also knocked @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone}.</p>"
                 }
             }
         },
@@ -857,10 +732,6 @@
                 "action->Carapace Block": {
                     "name": "Carapace Block",
                     "description": "<p><strong>Trigger</strong> An adjacent creature targets the glyptodon with an attack</p>\n<hr />\n<p><strong>Effect</strong> The glyptodon turns, blocking the attack with its carapace and thrusting its heavy body toward the attacker. It gains a +2 circumstance bonus to its AC against the triggering attack. If the attack critically fails, the glyptodon attempts to @UUID[Compendium.pf2e.actionspf2e.Item.7blmbDrQFNfdT731]{Shove} the attacker.</p>"
-                },
-                "action->Clobbering Tail": {
-                    "name": "Clobbering Tail",
-                    "description": "<p>A glyptodon's stiff tail is its strongest weapon. When a glyptodon critically hits with its tail Strike, the target is @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} for 1 round.</p>"
                 }
             }
         },
@@ -873,30 +744,6 @@
                 "action->Deny Advantage": {
                     "name": "Deny Advantage",
                     "description": "<p>A Graylok ambusher isn't @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} to @UUID[Compendium.pf2e.conditionitems.Item.iU0fEDdBp3rXpTMC]{Hidden}, undetected, or flanking creatures of 8th level or lower or creatures of 8th level or lower using sneak attack. However, such creatures can still help other creatures flank.</p>"
-                },
-                "action->Opportune Backstab": {
-                    "name": "Opportune Backstab",
-                    "description": "<p><strong>Trigger</strong> A creature within melee reach is hit by a melee attack from one of the Graylok ambusher's allies</p><hr /><p><strong>Effect</strong> The Graylok ambusher attempts a Strike against the triggering creature.</p>"
-                },
-                "action->Brutal Beating": {
-                    "name": "Brutal Beating",
-                    "description": "<p>When the Graylok ambusher scores a critical hit with a melee Strike, the target is @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 1}.</p>"
-                },
-                "action->Dread Striker": {
-                    "name": "Dread Striker",
-                    "description": "<p>Any creature that has the @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened} condition is @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} against the Graylok ambusher's attacks.</p>"
-                },
-                "action->Ice Stride": {
-                    "name": "Ice Stride",
-                    "description": "<p>A frost giant isn't impeded by difficult terrain caused by snow or ice, nor do they need to attempt Acrobatics checks to keep from falling on slippery ice.</p>"
-                },
-                "action->Light Step": {
-                    "name": "Light Step",
-                    "description": "<p>When the Graylok ambusher Strides or Steps, they ignore difficult terrain.</p>"
-                },
-                "action->Sneak Attack": {
-                    "name": "Sneak Attack",
-                    "description": "<p>The Graylok ambusher deals an additional 2d6 precision damage to @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} creatures.</p>"
                 }
             }
         },
@@ -973,18 +820,6 @@
                 "action->Flammable Grease": {
                     "name": "Flammable Grease",
                     "description": "<p>A groplit's DC to recover from persistent fire damage is increased by 2 (generally, from DC 15 to DC 17).</p>"
-                },
-                "action->Greasy Slide": {
-                    "name": "Greasy Slide",
-                    "description": "<p><strong>Trigger</strong> A creature misses the groplit with a melee Strike</p>\n<hr />\n<p><strong>Effect</strong> The groplit Strides or Swims up to 10 feet. This movement doesn't trigger reactions.</p>"
-                },
-                "action->Hopping Charge": {
-                    "name": "Hopping Charge",
-                    "description": "<p>The groplit Strides twice, Leaps twice, or Strides once and Leaps once. It then makes a jaws Strike at the end of the movement.</p>"
-                },
-                "action->Incendiary Dollop": {
-                    "name": "Incendiary Dollop",
-                    "description": "<p>Creatures struck by the groplit are smeared with some of its flammable grease. For the following 1 minute, or until a creature scrubs away the grease dollop with a single Interact action, the DC of the creature's checks to recover from persistent fire damage is increased by 2.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.Z6cOCgyVwTr5t3yQ]{Effect: Incendiary Dollop}</p>"
                 }
             }
         },
@@ -1035,34 +870,6 @@
                 "action->Evasion": {
                     "name": "Evasion",
                     "description": "<p>When Hegremon rolls a success on a Reflex save, he gets a critical success instead.</p>"
-                },
-                "action->Aimed Shot": {
-                    "name": "Aimed Shot",
-                    "description": "<p>Hegremon makes a single <em>mammoth bow</em> Strike against his prey; he gains a +2 circumstance bonus to the attack roll and ignores his prey's @UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{Concealed} condition.</p>"
-                },
-                "action->Chill Breath": {
-                    "name": "Chill Breath",
-                    "description": "<p>(cold, evocation, primal) Hegremon breathes out a @Template[cone|distance:15] of freezing moisture that quickly condenses into ice, dealing @Damage[6d6[cold]] damage. Each creature in the cone must attempt a @Check[reflex|dc:28|basic]. A creature that fails its save is also @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Immobilized} and takes 2d6 cold damage at the end of each of its turns until it breaks free (Escape DC 28). Hegremon can't use Chill Breath again for [[/br 1d4 #Recharge Chill Breath]]{1d4 rounds}.</p>"
-                },
-                "action->Hunt Prey": {
-                    "name": "Hunt Prey",
-                    "description": "<p>Hegremon designates a single creature he can see and hear, or one he's Tracking, as his prey. Hegremon has a +2 circumstance bonus to Perception checks to @UUID[Compendium.pf2e.actionspf2e.Item.BlAOM2X92SI6HMtJ]{Seek} his prey and a +2 circumstance bonus to Survival checks to @UUID[Compendium.pf2e.actionspf2e.Item.EA5vuSgJfiHH7plD]{Track} his prey. He ignores the penalty to ranged attacks within his second range increment against his prey. The first time Hegremon hits his prey in a round, he inflicts an additional 2d8 precision damage. These effects last until Hegremon uses Hunt Prey again.</p>"
-                },
-                "action->Hunting Shot": {
-                    "name": "Hunting Shot",
-                    "description": "<p><strong>Frequency</strong> once per round</p><hr /><p><strong>Effect</strong> Hegremon makes two <em>mammoth bow</em> Strikes against his prey. If both hit, combine their damage for the purposes of resistances and weaknesses. His multiple attack penalty applies to each Strike normally.</p>"
-                },
-                "action->Ice Stride": {
-                    "name": "Ice Stride",
-                    "description": "<p>Hegremon isn't impeded by difficult terrain caused by snow or ice, nor does he need to attempt Acrobatics checks to keep from falling on slippery ice.</p>"
-                },
-                "action->Nature's Edge": {
-                    "name": "Nature's Edge",
-                    "description": "<p>Creatures in natural difficult terrain or on natural uneven ground are @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} to Hegremon.</p>"
-                },
-                "action->Penetrating Shot": {
-                    "name": "Penetrating Shot",
-                    "description": "<p>Hegremon chooses a target that's giving lesser cover to his prey and makes a <em>mammoth bow</em> Strike against the chosen target and his prey. This attack ignores lesser cover the chosen target provides his prey. Hegremon rolls damage twice and applies it to each creature he hits. A Penetrating Shot counts as two attacks for his multiple attack penalty.</p>"
                 }
             }
         },
@@ -1073,7 +880,10 @@
             "items": {
                 "equipment->Snare Kit (Specialist)": {
                     "name": "Snare Kit (Specialist)",
-                    "description": "<p>This kit contains tools and materials for creating snares. A snare kit allows you to Craft snares using the Crafting skill. A specialist snare kit gives you a +1 item bonus to the check.</p>"
+                    "description": "<p>This kit contains tools and materials for creating snares. A snare kit allows you to Craft snares using the Crafting skill. A specialist snare kit gives you a +1 item bonus to the check.</p>",
+                    "rules": {
+                        "0": "Snare Kit (Craft snares)"
+                    }
                 },
                 "strike-melee->Fist": {
                     "name": "Fist"
@@ -1083,18 +893,6 @@
                 },
                 "action->+2 Status to All Saves vs. Disease and Poison": {
                     "name": "+2 Status to All Saves vs. Disease and Poison"
-                },
-                "action->Sneak Attack": {
-                    "name": "Sneak Attack",
-                    "description": "<p>Hobji's Strikes deal an additional 1d6 precision damage to @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} creatures.</p>"
-                },
-                "action->Strangling Grasp": {
-                    "name": "Strangling Grasp",
-                    "description": "<p><strong>Trigger</strong> Hobji hits a Medium or smaller creature with his fist Strike</p>\n<hr />\n<p><strong>Effect</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed}, and Hobji begins to strangle the creature. The creature is suffocating and can't speak as long as it's strangled. This prevents it from casting spells with a verbal component or activating items with a command component.</p>"
-                },
-                "action->Surprise Attack": {
-                    "name": "Surprise Attack",
-                    "description": "<p>In the first round of combat, creatures that haven't acted yet are @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} to Hobji.</p>"
                 }
             }
         },
@@ -1105,33 +903,6 @@
             "items": {
                 "strike-melee->Tusk": {
                     "name": "Tusk"
-                },
-                "strike-melee->Hoof": {
-                    "name": "Hoof"
-                },
-                "action->God's Intervention": {
-                    "name": "God's Intervention",
-                    "description": "<p><strong>Trigger</strong> Ashen Swale is the target of a physical Strike</p><hr /><p><strong>Effect</strong> Sensing Ashen Swale's peril, Idovik teleports to his side and interposes himself between Ashen Swale and danger. Idovik teleports to a space adjacent to Ashen Swale, then shields Ashen Swale with his body. Idovik becomes the target of the triggering Strike.</p>"
-                },
-                "action->Independent Action": {
-                    "name": "Independent Action",
-                    "description": "<p>Idovik is even older and more powerful than most Sarkorian gods, and he knows how to manifest in some forms without a god caller at all. Idovik does not share an initiative, actions, Hit Points, or a multiple attack penalty with Ashen Swale.</p>"
-                },
-                "action->Indomitable Step": {
-                    "name": "Indomitable Step",
-                    "description": "<p>Idovik ignores difficult terrain and uneven ground, and he treats greater difficult terrain as normal difficult terrain.</p>"
-                },
-                "action->Otherworldly Roar": {
-                    "name": "Otherworldly Roar",
-                    "description": "<p>Idovik unleashes a powerful squeal while stomping his hooves and displaying his tusks. Idovik attempts Intimidate checks to @UUID[Compendium.pf2e.actionspf2e.Item.2u915NdUyQan6uKF]{Demoralize} each foe within 30 feet. These checks take no penalty for not sharing a language.</p>"
-                },
-                "action->Rampaging Charge": {
-                    "name": "Rampaging Charge",
-                    "description": "<p>Idovik rushes forward, using his momentum to power his attack. Idovik Strides twice and then makes a tusk Strike. As long as he moved at least 20 feet, he gains a +2 circumstance bonus to his attack roll. A Medium or smaller creature struck by this attack must succeed at a @Check[reflex|dc:25] save or be knocked @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone} by the force of the blow.</p>"
-                },
-                "action->Spirit Link": {
-                    "name": "Spirit Link",
-                    "description": "<p>Even if his link is unusual, Idovik is bound to his summoner; he must remain within 100 feet of Ashen Swale at all times. If he ever moves outside this range or is reduced to 0 Hit Points, Idovik's physical form dissolves. Because his link functions unusually and he does not share Hit Points with Ashen Swale, Idovik remains manifested when Ashen Swale is @UUID[Compendium.pf2e.conditionitems.Item.fBnFDH2MTzgFijKf]{Unconscious} or dead, as long as he stays near Ashen Swale's body. If Ashen Swale dies, Idovik's form fades away over the next minute. When unmanifested, Idovik must be manifested before he can reappear.</p>"
                 }
             }
         },
@@ -1162,17 +933,6 @@
                 "action->Arcane Cascade": {
                     "name": "Arcane Cascade",
                     "description": "<p><strong>Requirements</strong> Ivarsa can enter this stance only if her most recent action was to @UUID[Compendium.pf2e.actionspf2e.Item.aBQ8ajvEBByv45yz]{Cast a Spell} or make a Spellstrike, but she can remain in the stance even if she no longer meets the requirements</p>\n<hr />\n<p><strong>Effect</strong> When she enters this stance and at the beginning of each of her turns while she's in it, Ivarsa gains 6 temporary Hit Points. While in this stance, Ivarsa's melee Strikes gain the arcane trait, deal 2 extra fire damage, and deal @Damage[(4[splash])[fire]]{4 splash fire} damage to foes adjacent to her target.</p>"
-                },
-                "action->Companion Bond": {
-                    "name": "Companion Bond",
-                    "description": "<p>When Ivarsa uses a teleportation effect while she's riding a mount, the mount teleports with her.</p>"
-                },
-                "action->Spellstrike": {
-                    "name": "Spellstrike",
-                    "description": "<p>Ivarsa channels a spell into a punch or axe swing to deliver a magically charged attack. She casts @UUID[Compendium.pf2e.spells-srd.Item.O9w7r4BKgPogYDDe]{Produce Flame} or @UUID[Compendium.pf2e.spells-srd.Item.gYjPm7YwGtEa1oxh]{Ray of Frost}. The effects of the spell don't occur immediately but are imbued into her attack instead. She makes a melee Strike with a weapon or unarmed attack, which gains the arcane trait. Her spell is coupled with the attack, using her attack roll to determine the effects of both the Strike and the spell. This counts as two attacks for her multiple attack penalty, but the penalty isn't applied until after she has completed the Spellstrike. After she uses Spellstrike, Ivarsa can't do so again until she recharges this ability as a single action, which has the concentrate trait. She also recharges her Spellstrike when she casts thunderous strike.</p>"
-                },
-                "lore->Warfare Lore": {
-                    "name": "Warfare Lore"
                 }
             }
         },
@@ -1184,7 +944,10 @@
                 },
                 "weapon->Staff of Divination": {
                     "name": "Staff of Divination",
-                    "description": "<p>Semiprecious gemstones emerge, seemingly at random, from the surface of this gnarled wooden staff. While wielding it, you gain a +2 circumstance bonus to checks to identify divination magic.</p>\n<p><strong>Activate</strong> Cast a Spell</p>\n<hr />\n<p><strong>Effect</strong> You expend a number of charges from the staff to cast a spell from its list.</p>\n<ul>\n<li><strong>Cantrip</strong> @UUID[Compendium.pf2e.spells-srd.Item.gpzpAAAJ1Lza2JVl]{Detect Magic}</li>\n<li><strong>1st</strong> @UUID[Compendium.pf2e.spells-srd.Item.Gb7SeieEvd0pL2Eh]{Sure Strike}</li>\n<li><strong>2nd</strong> @UUID[Compendium.pf2e.spells-srd.Item.vTQvfYu2llKQedmY]{Translate}, @UUID[Compendium.pf2e.spells-srd.Item.pZTqGY1MLRjgKasV]{Darkvision}, @UUID[Compendium.pf2e.spells-srd.Item.jwK43yKsHTkJQvQ9]{See the Unseen}</li>\n</ul>\n<p><strong>Craft Requirements</strong> Supply one casting of all listed levels of all listed spells.</p>"
+                    "description": "<p>Semiprecious gemstones emerge, seemingly at random, from the surface of this gnarled wooden staff. While wielding it, you gain a +2 circumstance bonus to checks to identify divination magic.</p>\n<p><strong>Activate</strong> Cast a Spell</p>\n<hr />\n<p><strong>Effect</strong> You expend a number of charges from the staff to cast a spell from its list.</p>\n<ul>\n<li><strong>Cantrip</strong> @UUID[Compendium.pf2e.spells-srd.Item.gpzpAAAJ1Lza2JVl]{Detect Magic}</li>\n<li><strong>1st</strong> @UUID[Compendium.pf2e.spells-srd.Item.Gb7SeieEvd0pL2Eh]{Sure Strike}</li>\n<li><strong>2nd</strong> @UUID[Compendium.pf2e.spells-srd.Item.vTQvfYu2llKQedmY]{Translate}, @UUID[Compendium.pf2e.spells-srd.Item.pZTqGY1MLRjgKasV]{Darkvision}, @UUID[Compendium.pf2e.spells-srd.Item.jwK43yKsHTkJQvQ9]{See the Unseen}</li>\n</ul>\n<p><strong>Craft Requirements</strong> Supply one casting of all listed levels of all listed spells.</p>",
+                    "rules": {
+                        "0": "Staff of Divination (identify divination magic)"
+                    }
                 },
                 "consumable->Healing Potion (Moderate)": {
                     "name": "Healing Potion (Moderate)",
@@ -1237,11 +1000,10 @@
                 },
                 "action->Silent Lightning": {
                     "name": "Silent Lightning",
-                    "description": "<p>A kadlaka's movements are practically silent. Against a creature using only hearing to perceive them, they gain a +4 circumstance bonus to their Stealth check. As normal, this benefit also improves the kadlaka's Stealth DC.</p>"
-                },
-                "action->Wingbeat": {
-                    "name": "Wingbeat",
-                    "description": "<p>The kadlaka beats their wings with a mighty peal of thunder. Creatures in a @Template[emanation|distance:15] take @Damage[5d6[sonic]] damage (@Check[fortitude|dc:21|basic]). On a failed save, the creature is also pushed 5 feet away from the kadlaka.</p>\n<p>The kadlaka can't use Wingbeat again for [[/br 1d4 #Recharge Wingbeat]]{1d4 rounds}.</p>"
+                    "description": "<p>A kadlaka's movements are practically silent. Against a creature using only hearing to perceive them, they gain a +4 circumstance bonus to their Stealth check. As normal, this benefit also improves the kadlaka's Stealth DC.</p>",
+                    "rules": {
+                        "0": "Target is Perceiving using Sound"
+                    }
                 }
             }
         },
@@ -1262,22 +1024,6 @@
                 "action->Consuming Fumes": {
                     "name": "Consuming Fumes",
                     "description": "<p>15 feet. The lagofir is surrounded by fumes from the flammable oil it exudes. Each nonmagical open flame the size of a torch or larger within the emanation explodes, dealing @Damage[4d4[fire]] damage to all creatures and objects adjacent to the flame (@Check[reflex|dc:17|basic]). After exploding, the fire source is extinguished.</p>"
-                },
-                "action->Deep Breath": {
-                    "name": "Deep Breath",
-                    "description": "<p>A lagofir can hold its breath for 1 hour.</p>"
-                },
-                "action->Flammable": {
-                    "name": "Flammable",
-                    "description": "<p>Lagofirs excrete a warm, flammable oil. Any creature that Grapples a lagofir or is @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed} or @UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{Restrained} by a lagofir becomes coated in lagofir oil for 10 minutes or until the oil is washed off, which takes 1 minute of vigorous scrubbing. Any time a lagofir or a creature coated in lagofir oil is dealt fire damage, it catches flame, taking @Damage[1d6[persistent,fire]] damage.</p>"
-                },
-                "action->Gnaw": {
-                    "name": "Gnaw",
-                    "description": "<p><strong>Requirements</strong> The lagofir's last action was a successful jaws Strike</p><hr /><p><strong>Effect</strong> The lagofir gnaws on the target, driving its teeth deeper into its prey. The target takes @Damage[(1d8+3)[piercing]] damage.</p>"
-                },
-                "action->Nimble Rush": {
-                    "name": "Nimble Rush",
-                    "description": "<p>The lagofir attacks while darting around its foes. The lagofir Strides twice and Strikes at any point during its movement. It can substitute a Swim action in place of any Stride.</p>"
                 }
             }
         },
@@ -1300,10 +1046,6 @@
                 "action->Unflappable Self-Importance": {
                     "name": "Unflappable Self-Importance",
                     "description": "<p>When a loblobi rolls a success on a Will save against an emotion effect or an effect that would make it controlled, it gets a critical success instead. When it rolls a critical failure against such an effect, it gets a failure instead.</p>\n<p>However, a loblobi is vulnerable to flattery. It takes a -4 circumstance penalty to its Will and Perception DCs against any fulsome Deception and Diplomacy checks to Lie, @UUID[Compendium.pf2e.actionspf2e.Item.OX4fy22hQgUHDr0q]{Make an Impression}, or Request.</p>"
-                },
-                "action->Arrogant Preen": {
-                    "name": "Arrogant Preen",
-                    "description": "<p>The loblobi tidies its feathered crest to look supernaturally regal. Each non-fey creature within @Template[emanation|distance:30]{30 feet} must attempt a @Check[will|dc:17] save, then is temporarily immune to Arrogant Preen for 1 hour.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target is distracted by the preening and can't take reactions until the start of its next turn.</p>\n<p><strong>Failure</strong> The target is @UUID[Compendium.pf2e.conditionitems.Item.AdPVz7rbaVSRxHFg]{Fascinated} by the loblobi and can't take reactions for 1 minute.</p>\n<p><strong>Critical Failure</strong> As failure. Additionally, while the creature is fascinated, any hostile actions from the loblobi don't break the fascination, but instead allow the target to attempt a new Will save to end the effect at the start of its next turn.</p>"
                 }
             }
         },
@@ -1331,26 +1073,6 @@
                 "action->Aura of Courage": {
                     "name": "Aura of Courage",
                     "description": "<p>15 feet. Whenever Lomok becomes @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened}, reduce the condition value by 1 (minimum 0). At the end of his turn, when he would reduce his frightened condition value by 1, also reduce the value by 1 for all allies in his aura.</p>"
-                },
-                "action->Powerful Will": {
-                    "name": "Powerful Will",
-                    "description": "<p>When Lomok rolls a success on a Will save, he gets a critical success instead.</p>"
-                },
-                "action->Retributive Strike": {
-                    "name": "Retributive Strike",
-                    "description": "<p><strong>Trigger</strong> An enemy damages one of Lomok's allies, and both combatants are within 15 feet of him</p><hr /><p><strong>Effect</strong> Lomok shields his ally and calls for retribution upon the attacker. The ally reduces the triggering damage by 13. Lomok and any allies within reach of the triggering enemy can make melee Strikes against it.</p>"
-                },
-                "action->Shield Block": {
-                    "name": "Shield Block",
-                    "description": "<p><strong>Trigger</strong> While you have your shield raised, you would take damage from a physical attack</p>\n<hr />\n<p>You snap your shield in place to ward off a blow. Your shield prevents you from taking an amount of damage up to the shield's Hardness. You and the shield each take any remaining damage, possibly breaking or destroying the shield.</p>"
-                },
-                "action->Spurred by Death": {
-                    "name": "Spurred by Death",
-                    "description": "<p><strong>Trigger</strong> An ally within 30 feet reduces a creature to 0 HP</p><hr /><p><strong>Effect</strong> Lomok Steps, Strides, or Strikes.</p>"
-                },
-                "action->Oath of the Burning Mammoths": {
-                    "name": "Oath of the Burning Mammoths",
-                    "description": "<p>Lomok's melee Strikes deal an additional @Damage[1d10[persistent,fire]] damage. If he critically hits a creature with a melee Strike, the creature is @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} for as long as it takes persistent fire damage.</p>"
                 }
             }
         },
@@ -1363,25 +1085,6 @@
                 },
                 "strike-melee->Horn": {
                     "name": "Horn"
-                },
-                "action->Cold Adaptation": {
-                    "name": "Cold Adaptation",
-                    "description": "<p>The bison reduces the effects it suffers from cold environments by one step.</p>"
-                },
-                "action->Toss": {
-                    "name": "Toss",
-                    "description": "<p><strong>Trigger</strong> A creature ends its movement within reach of the bison's horn Strike</p><hr /><p><strong>Effect</strong> The bison attempts to Shove the triggering creature with its horns. The bison can't Stride after the triggering creature on a success or critical success.</p>"
-                },
-                "action->Pointed Charge": {
-                    "name": "Pointed Charge",
-                    "description": "<p>The bison surges toward its foe, horns lowered. It Strides twice. If the bison ends its movement with an enemy within its reach, it makes a horn Strike against that enemy. The strike gains the fatal d12 trait.</p>"
-                },
-                "action->Rolling Thunder": {
-                    "name": "Rolling Thunder",
-                    "description": "<p>The bison kicks up dust and shakes the ground as it charges. The stampeding bison Strides up to twice its Speed in a straight line, dealing @Damage[(4d8+8)[bludgeoning]] damage (@Check[reflex|dc:24|basic]) to any Large or smaller creature in its path.Multiple bison can participate in Rolling Thunder by spending this ability's actions and waiting to charge until the herd is ready. Before the beginning of its next turn, a bison can then charge as a reaction triggered by an adjacent bison beginning its Rolling Thunder charge. All bison in the combined charge must charge in parallel lines, so the areas can't overlap. The combined charge deals an additional @Damage[3d8[bludgeoning]] damage to creatures in the area, and a creature that fails the Reflex saving throw is also knocked @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone}.</p>"
-                },
-                "action->Knockdown": {
-                    "name": "Knockdown"
                 }
             }
         },
@@ -1394,13 +1097,6 @@
                 },
                 "action->Void Healing": {
                     "name": "Void Healing"
-                },
-                "action->Toss": {
-                    "name": "Toss",
-                    "description": "<p><strong>Requirements</strong> The beheaded's previous action was a horn Strike that dealt damage to its target</p><hr />\n<p><strong>Effect</strong> The beheaded tosses its head, attempting to move the target creature into another space within reach of its horns. It rolls an @Check[athletics|defense:fortitude] check against the target's Fortitude DC. On a failure, the target remains in place.</p>"
-                },
-                "action->Push (10 feet)": {
-                    "name": "Push (10 feet)"
                 }
             }
         },
@@ -1502,18 +1198,6 @@
                 },
                 "action->Void Healing": {
                     "name": "Void Healing"
-                },
-                "action->Frenzied Assault": {
-                    "name": "Frenzied Assault",
-                    "description": "<p>The necrohusk makes three leg Strikes. If more than one Strike hits the same target, combine the damage of the Strikes that hit the creature and apply the creature's resistances and weaknesses only once.</p>"
-                },
-                "action->Impaling Lunge": {
-                    "name": "Impaling Lunge",
-                    "description": "<p>The necrohusk Strides twice. If the necrohusk ends its movement within melee range of an enemy, it makes a leg Strike against that enemy. On a hit, the Strike deals an additional @Damage[1d6[bleed]].</p>"
-                },
-                "action->Vile Innards": {
-                    "name": "Vile Innards",
-                    "description": "<p>The necrohusk spews some of its rotting insides when it makes an ichor spit Strike. On a critical hit, the target is @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 2}.</p>"
                 }
             }
         },
@@ -1537,27 +1221,6 @@
                 "weapon->Tallow Bomb (Moderate)": {
                     "name": "Tallow Bomb (Moderate)",
                     "description": "<p><strong>Activate</strong> <span class=\"action-glyph\">A</span> Strike</p>\n<hr />\n<p>A mixture of rendered animal fat and acids designed to ignite the fat when exposed to air, a tallow bomb creates a splash of burning oil that adheres to skin, clothes, and hair. A tallow bomb deals the listed fire damage, persistent fire damage, and splash damage.</p>\n<p>On a critical hit, a living creature taking persistent fire damage from a tallow bomb is @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 1} from the stench of burning fat and can't reduce its sickened value below 1 while the persistent fire damage lasts.</p>\n<p>You gain a +1 item bonus to attack rolls. The bomb deals 2d4 persistent fire damage and 2 fire splash damage.</p>"
-                },
-                "strike-ranged->Tallow Bomb": {
-                    "name": "Tallow Bomb"
-                },
-                "action->Attack of Opportunity": {
-                    "name": "Attack of Opportunity"
-                },
-                "action->Shield Block": {
-                    "name": "Shield Block"
-                },
-                "action->Spurred by Death": {
-                    "name": "Spurred by Death",
-                    "description": "<p><strong>Trigger</strong> An ally within 30 feet reduces a creature to 0 HP</p>\n<hr />\n<p><strong>Effect</strong> Pakano Steps or Strides.</p>"
-                },
-                "action->Hunt Prey": {
-                    "name": "Hunt Prey",
-                    "description": "<p>Pakano designates a single creature he can see and hear, or one he's Tracking, as his prey. He gains a +2 circumstance bonus to Perception checks to @UUID[Compendium.pf2e.actionspf2e.Item.BlAOM2X92SI6HMtJ]{Seek} his prey and to Survival checks to @UUID[Compendium.pf2e.actionspf2e.Item.EA5vuSgJfiHH7plD]{Track} his prey.</p>\n<p>The first time Pakano hits his designated prey in a round, he deals an additional 1d8 precision damage. Pakano also ignores the penalty for making ranged attacks within his second range increment.</p>\n<p>These effects last until Pakano uses Hunt Prey again.</p>"
-                },
-                "action->Spear Fighter": {
-                    "name": "Spear Fighter",
-                    "description": "<p>Pakano's spear has the parry weapon trait, and his Strikes with the spear deal an additional [[/r {1d6}]]{1d6 damage}. If he critically hits a creature with a spear, the creature is @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 1} until the start of Pakano's next turn.</p>"
                 }
             }
         },
@@ -1579,21 +1242,6 @@
                 "action->Worm Chill": {
                     "name": "Worm Chill",
                     "description": "<p>5 feet. A creature that enters or begins its turn in the emanation takes @Damage[3d6[cold]] damage (@Check[reflex|dc:29|basic]).</p>"
-                },
-                "action->Worm Trill": {
-                    "name": "Worm Trill",
-                    "description": "<p>The frost worm emits a hypnotic trill. Each non-frost worm creature within 100 feet must attempt a @Check[will|dc:32] save. The effects of Worm Trill last for 1 round, but if the frost worm uses this ability again on subsequent rounds, it extends this duration by 1 round for any creature already affected.</p>\n<p><strong>Success</strong> The creature is unaffected and is immune to Worm Trill for 24 hours.</p>\n<p><strong>Failure</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.AdPVz7rbaVSRxHFg]{Fascinated} by the frost worm.</p>\n<p><strong>Critical Failure</strong> As failure, but the fascinated condition doesn't end if the frost worm uses hostile actions against the creature.</p>"
-                },
-                "action->Breath Weapon": {
-                    "name": "Breath Weapon",
-                    "description": "<p>The frost worm exhales a blast of frost, dealing @Damage[13d6[cold]] damage to creatures in a @Template[cone|distance:50] (@Check[reflex|dc:32|basic] save).</p>\n<p>It can't use Breath Weapon again for [[/br 1d4 #Recharge Breath Weapon]]{1d4 rounds}.</p>"
-                },
-                "action->Freezing Blood": {
-                    "name": "Freezing Blood",
-                    "description": "<p><strong>Trigger</strong> The frost worm takes piercing or slashing damage</p>\n<hr />\n<p><strong>Effect</strong> The frost worm's freezing blood sprays out on a random creature within 10 feet of the frost worm. That creature takes @Damage[7d6[cold]] damage (@Check[reflex|dc:29|basic] save).</p>"
-                },
-                "lore->Mammoth Lord Lore": {
-                    "name": "Mammoth Lord Lore"
                 }
             }
         },
@@ -1709,14 +1357,6 @@
                 "action->Predatory Aura": {
                     "name": "Predatory Aura",
                     "description": "<p>30 feet. An animal or beast entering or starting its turn in the emanation must succeed at a @Check[will|dc:25] save or become @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 1} (frightened 2 on a critical failure). Frightened animals within the emanation can't attack the roru. A creature that succeeds at a saving throw against predatory aura is immune for 24 hours.</p>"
-                },
-                "action->Incite Ferocity": {
-                    "name": "Incite Ferocity",
-                    "description": "<p>The roru focuses its corruption on an animal or beast it can see within 30 feet. The creature must succeed at a @Check[will|dc:25] save or become @UUID[Compendium.pf2e.conditionitems.Item.yblD8fOR1J8rDwEQ]{Confused} for [[/r 1d4 #rounds]]{1d4 rounds}. The confused creature can't attack the roru. A creature that succeeds at its saving throw is temporarily immune to Incite Ferocity for 24 hours.</p>"
-                },
-                "action->Wear Pelt": {
-                    "name": "Wear Pelt",
-                    "description": "<p>The roru dons the pelt of an adjacent dead animal, transforming into its lookalike. The roru becomes the same size and gains the same Speeds as the target animal. The roru loses its claw and jaws unarmed Strikes and gains the types of melee Strikes of the animal whose pelt it wears. The Strike deals damage equal to the roru's jaws Strike or, if the Strike has the agile trait, the roru's claw Strike. Either way, the damage type changes to match the new unarmed attack. While a roru wears a pelt, half of physical damage dealt to the roru is instead dealt to the pelt. A pelt has Hardness 5 and 25 HP. When a pelt reaches 0 HP, the roru is immediately expelled from the pelt and it is destroyed.</p>"
                 }
             }
         },
@@ -1744,14 +1384,6 @@
                 },
                 "action->Void Healing": {
                     "name": "Void Healing"
-                },
-                "action->Rhinoceros Charge": {
-                    "name": "Rhinoceros Charge",
-                    "description": "<p>The rhino Strides twice, then makes a horn Strike. As long as the rhino moved at least 20 feet, the Strike's damage increases to @Damage[(3d12+5)[piercing]]. A Medium or smaller creature struck by this attack must succeed at a @Check[reflex|dc:22] save or be automatically Shoved back 5 feet and knocked @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone} by the force of the blow.</p>"
-                },
-                "action->Trample": {
-                    "name": "Trample",
-                    "description": "<p>Medium or smaller, foot, @Check[reflex|dc:19|basic]</p>\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Trample]</p>"
                 }
             }
         },
@@ -1860,25 +1492,6 @@
                 "action->Nymph's Beauty": {
                     "name": "Nymph's Beauty",
                     "description": "<p>30 feet. Creatures that start their turn in the aura must succeed at a @Check[will|dc:30] save or suffer an effect described in the nymph queen's entry.</p>\n<hr />\n<p>On a failed save, the creature is @UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]{Dazzled} and @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} for 1 minute.</p>"
-                },
-                "action->Change Shape": {
-                    "name": "Change Shape",
-                    "description": "<p>Nymph queens can transform between their original form, which looks much like a typical nymph of their kind, and any Small or Medium humanoid form, typically choosing a more humanoid-looking version of their natural form.</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.ChangeShape]</p>"
-                },
-                "action->Focus Beauty": {
-                    "name": "Focus Beauty",
-                    "description": "<p>The hora queen focuses her beauty upon a target within her aura. The creature must attempt a Will save. On a failure, it is affected as if by the hora queen's nymph's beauty aura; if it was already affected by the aura, it's @UUID[Compendium.pf2e.conditionitems.Item.XgEqL1kFApUbl5Z2]{Blinded} until its sight is restored via restore senses or similar effect, or until the hora queen chooses to remove the effect using a single action, which has the concentrate trait. A hora queen can Focus Beauty on a given creature only once per turn.</p>"
-                },
-                "action->Inspiration": {
-                    "name": "Inspiration",
-                    "description": "<p>A nymph queen can inspire a single intelligent creature by giving that creature a token of her favor, typically a lock of her hair. As long as the creature carries her token and remains in good standing with the nymph queen, the creature gains a +1 status bonus to all Crafting checks, Performance checks, and Will saves.</p>\n<p>If a nymph queen grants her Inspiration to a bard and the nymph queen is that bard's muse, the bard gains an additional benefit depending on their muse theme: for lore muse, the bard also gains a +1 status bonus to all Lore checks; for maestro muse, the status bonus to Performance checks increases to +2 for the purpose of determining the effects of compositions; for polymath muse, the bard gains a +4 status bonus to untrained skill checks; and for all other muses, the Will save bonus increases to +2 against fey.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.iSyyR4QVOaY6mxtg]{Effect: Nymph Queen's Inspiration}</p>"
-                },
-                "action->Summer's Salvation": {
-                    "name": "Summer's Salvation",
-                    "description": "<p><strong>Trigger</strong> The summer hora or an ally within 30 feet that the summer hora can see fails a Perception check, saving throw, attack roll, or skill check.</p>\n<hr />\n<p><strong>Effect</strong> If it's the month of the summer solstice, the hora's or ally's check retroactively gains a +4 status bonus, which can change the outcome from a critical failure to a failure or a failure to a success. If it's the month before or after the summer solstice, the check gains a retroactive +2 status bonus instead. In the other months except during the three winter solstice months, the check gains a retroactive +1 status bonus instead. During the winter solstice months, this ability has no effect. The summer hora can't use Summer's Fortune again for [[/br 1d4 #rounds]]{1d4 rounds}.</p>"
-                },
-                "lore->Astronomy Lore": {
-                    "name": "Astronomy Lore"
                 }
             }
         },
@@ -1903,18 +1516,6 @@
                 },
                 "action->Void Healing": {
                     "name": "Void Healing"
-                },
-                "action->Awaken Painting": {
-                    "name": "Awaken Painting",
-                    "description": "<p>Syarstik animates a cave painting within 60 feet for 10 minutes. The painting's movement mimics Syarstik's, so the connection between the ghost and the awakened painting is obvious. Creatures other than Syarstik within 10 feet of the awakened painting are @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} because of these eerie movements. Syarstik can make ghostly fangs Strikes at any creature within 10 feet of a cave painting; the target's cover or concealment from the cave painting, rather than from Syarstik, applies to this Strike.</p>\n<p>A creature adjacent to an awakened painting can spend 2 actions to attempt a @Check[occultism|dc:18|name:Compel Awakend Painting|traits:concentrate|overrideTraits:true] or @Check[religion|dc:18|name:Compel Awakend Painting|traits:concentrate|overrideTraits:true] check (to compel the awakened painting to abate) or a @Check[crafting|dc:20|name:Smear the Cave Painting|traits:concentrate|overrideTraits:true] or @Check[thievery|dc:20|name:Smear the Cave Painting|traits:concentrate|overrideTraits:true] check (to thoroughly smear the cave painting). On a success, the painting is destroyed, and the animation ceases. Either way, this activity has the concentrate trait.</p>\n<p>Destroying three awakened paintings quells Syarstik's anger, causing the great cat to cease his attacks.</p>"
-                },
-                "action->Pounce": {
-                    "name": "Pounce",
-                    "description": "<p>Syarstik Strides and makes a Strike at the end of that movement. If he began this action @UUID[Compendium.pf2e.conditionitems.Item.iU0fEDdBp3rXpTMC]{Hidden}, he remains hidden until after this ability's Strike.</p>"
-                },
-                "action->Sneak Attack": {
-                    "name": "Sneak Attack",
-                    "description": "<p>Syarstik deals an additional 1d6 precision damage to @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} creatures.</p>"
                 }
             }
         },
@@ -1984,21 +1585,6 @@
                 "action->Flammable": {
                     "name": "Flammable",
                     "description": "<p>A tar zombie requires a successful DC 20 flat check to recover from persistent fire damage. This DC isn't reduced for assisted recovery.</p>"
-                },
-                "action->Void Healing": {
-                    "name": "Void Healing"
-                },
-                "action->Fling": {
-                    "name": "Fling",
-                    "description": "<p><strong>Requirements</strong> The tar zombie mammoth has a creature @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed} or @UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{Restrained} by its trunk</p>\n<hr />\n<p><strong>Effect</strong> The tar zombie mammoth whips its prey violently into the air. It attempts an @Check[athletics|defense:fortitude] check against the grabbed or restrained creature's Fortitude DC. If the creature is restrained, the mammoth gains a +4 circumstance bonus to this check. On a success, the mammoth flings the creature up to 30 feet overhead and up to 30 feet away (the creature takes damage from the fall as normal, up to @Damage[15[bludgeoning]|options:fall-damage]{15} damage for a 30-foot fall). If the flung creature lands on another creature, the creature it lands on takes the same amount of bludgeoning damage (@Check[reflex|dc:28|basic] save).</p>"
-                },
-                "action->Shambling Trample": {
-                    "name": "Shambling Trample",
-                    "description": "<p>As @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.UNah0bxXxkcZjxO3]{Trample}, but the tar zombie mammoth Strides up to its Speed instead of double its Speed.</p>"
-                },
-                "action->Vomit Tar": {
-                    "name": "Vomit Tar",
-                    "description": "<p>The tar zombie vomits a gout of sticky tar in a @Template[cone|distance:15] that deals @Damage[7d6[bludgeoning]] damage ((@Check[reflex|dc:28|basic]) save). Creatures that fail the save are @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1} and gain fire weakness 5. Both conditions end after 3 rounds or when the tar is scrubbed off (which requires 3 Interact actions). The tar zombie can't Vomit Tar again for [[/br 1d4 #Recharge Vomit Tar]]{1d4 rounds}.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.4X4wCxkxr9rJdoT1]{Effect: Vomit Tar}</p>"
                 }
             }
         },
@@ -2016,21 +1602,6 @@
                 },
                 "action->Void Healing": {
                     "name": "Void Healing"
-                },
-                "action->Flammable": {
-                    "name": "Flammable",
-                    "description": "<p>A tar zombie requires a successful DC 20 flat check to recover from persistent fire damage. This DC isn't reduced for assisted recovery.</p>"
-                },
-                "action->Tar-Splattered Charge": {
-                    "name": "Tar-Splattered Charge",
-                    "description": "<p>The tar zombie predator lurches at its foe. It Strides twice and makes a claw Strike, or strides once and makes two claw Strikes. Both Strikes count toward its multiple attack penalty as normal. It can't make a Tar-Spattered Charge again for [[/br 1d4 #rounds]]{1d4 rounds}.</p>"
-                },
-                "action->Vomit Tar": {
-                    "name": "Vomit Tar",
-                    "description": "<p>The tar zombie vomits a gout of sticky tar in a @Template[cone|distance:15] that deals @Damage[6d6[bludgeoning]] damage ((@Check[reflex|dc:25|basic]) save). Creatures that fail the save are @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1} and gain fire weakness 5. Both conditions end after 3 rounds or when the tar is scrubbed off (which requires 3 Interact actions). The tar zombie can't Vomit Tar again for [[/br 1d4 #Recharge Vomit Tar]]{1d4 rounds}.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.4X4wCxkxr9rJdoT1]{Effect: Vomit Tar}</p>"
-                },
-                "action->Improved Grab": {
-                    "name": "Improved Grab"
                 }
             }
         },
@@ -2049,16 +1620,6 @@
                 "action->Flammable": {
                     "name": "Flammable",
                     "description": "<p>A tar zombie requires a successful DC 20 flat check to recover from persistent fire damage. This DC isn't reduced for assisted recovery.</p>"
-                },
-                "action->Void Healing": {
-                    "name": "Void Healing"
-                },
-                "action->Vomit Tar": {
-                    "name": "Vomit Tar",
-                    "description": "<p>The tar zombie vomits a gout of sticky tar in a @Template[cone|distance:15] that deals @Damage[5d6[bludgeoning]] damage ((@Check[reflex|dc:24|basic]) save). Creatures that fail the save are @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1} and gain fire weakness 5. Both conditions end after 3 rounds or when the tar is scrubbed off (which requires 3 Interact actions). The tar zombie can't Vomit Tar again for [[/br 1d4 #Recharge Vomit Tar]]{1d4 rounds}.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.4X4wCxkxr9rJdoT1]{Effect: Vomit Tar}</p>"
-                },
-                "action->Improved Grab": {
-                    "name": "Improved Grab"
                 }
             }
         },
@@ -2105,25 +1666,6 @@
                 },
                 "action->+2 Circumstance to All Saves vs. Disease": {
                     "name": "+2 Circumstance to All Saves vs. Disease"
-                },
-                "action->Clot": {
-                    "name": "Clot",
-                    "description": "<p><strong>Trigger</strong> Turkek takes persistent bleed damage</p>\n<hr />\n<p><strong>Effect</strong> Turkek's blood hardens, sealing her wounds. Turkek automatically passes her next flat check to recover from the triggering persistent bleed damage.</p>"
-                },
-                "action->Sanguine Aura": {
-                    "name": "Sanguine Aura",
-                    "description": "<p>30 feet. Around Turkek, wounds heal slowly and blood flows faster. The flat check to stop persistent bleed damage is DC 16, rather than DC 15. In addition, each time a creature in the emanation takes persistent bleed damage, it takes @Damage[1d6[bleed]]{1d6 additional bleed} damage.</p>"
-                },
-                "action->Void Healing": {
-                    "name": "Void Healing"
-                },
-                "action->Blood Let": {
-                    "name": "Blood Let",
-                    "description": "<p><strong>Requirements</strong> Turkek's last action was a fang Strike that hit the target</p><hr /><p><strong>Effect</strong> Turkek rips her fangs across one of the target's arteries or veins, dealing an additional @Damage[(1d6+5)[slashing]] damage.</p>"
-                },
-                "action->Siphon Blood": {
-                    "name": "Siphon Blood",
-                    "description": "<p><strong>Requirements</strong> A creature within Turkek's sanguine aura is taking persistent bleed damage</p><hr /><p><strong>Effect</strong> Turkek draws her enemy's blood into her own body to heal her wounds. She regains @Damage[7[healing]] Hit Points.</p>"
                 }
             }
         },
@@ -2142,9 +1684,6 @@
                 "action->Guiding Words": {
                     "name": "Guiding Words",
                     "description": "<p>Vare points out a weakness of a creature within 30 feet. Vare and all allies that can hear or see her gain a +1 status bonus to attack and damage rolls against that creature until the beginning of Vare's next turn. Vare adds an extra 1d6 precision damage to her weapon and unarmed attacks that hit that creature for the duration.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.uqjx1bwYduHwwC7d]{Effect: Guiding Words}</p>"
-                },
-                "lore->Scouting Lore": {
-                    "name": "Scouting Lore"
                 }
             }
         },
@@ -2178,46 +1717,6 @@
                 },
                 "action->+1 Status to All Saves vs. Magic": {
                     "name": "+1 Status to All Saves vs. Magic"
-                },
-                "action->Freezing Blood": {
-                    "name": "Freezing Blood",
-                    "description": "<p><strong>Trigger</strong> An adjacent creature deals piercing or slashing damage to Venexus</p>\n<hr />\n<p><strong>Effect</strong> Venexus's blood splatters onto the triggering creature, dealing @Damage[2d6[cold]] damage. A creature that takes cold damage in this way is @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1} for 1 round.</p>"
-                },
-                "action->Frightful Presence": {
-                    "name": "Frightful Presence",
-                    "description": "<p>90 feet. @Check[will|dc:25]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.FrightfulPresence]</p>"
-                },
-                "action->Mist Shroud": {
-                    "name": "Mist Shroud",
-                    "description": "<p>10 feet. The <em>Primordial Flame</em> continually heats the cold emanating from Venexus's body, surrounding the dragon in a thin veil of fog. Creatures in the aura are @UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{Concealed}, and other creatures are concealed to creatures in the area. Venexus's storm vision allows her to see through this concealment, however. If wind disperses the aura, it returns automatically at the start of Venexus's turn. The aura is suppressed in water.</p>"
-                },
-                "action->Storm Vision": {
-                    "name": "Storm Vision",
-                    "description": "<p>Inclement weather doesn't impair Venexus's vision; she ignores concealment from fog, mist, rain, and snowfall.</p>"
-                },
-                "action->Breath Weapon": {
-                    "name": "Breath Weapon",
-                    "description": "<p>Venexus breathes a cloud of frost that deals @Damage[10d6[cold]] damage in a @Template[cone|distance:40] (@Check[reflex|dc:28|basic]). She can't use Breath Weapon again for [[/br 1d4 #Recharge Breath Weapon]]{1d4 rounds}.</p>"
-                },
-                "action->Draconic Frenzy": {
-                    "name": "Draconic Frenzy",
-                    "description": "<p>Venexus makes two claw Strikes and one tail Strike in any order.</p>"
-                },
-                "action->Draconic Momentum": {
-                    "name": "Draconic Momentum",
-                    "description": "<p>When Venexus scores a critical hit with a Strike, she recharges her Breath Weapon.</p>"
-                },
-                "action->Ice Climb 30 feet": {
-                    "name": "Ice Climb 30 feet",
-                    "description": "<p>Venexus can climb on ice as though she had the listed climb Speed. She ignores difficult terrain and greater difficult terrain from ice and snow and doesn't risk falling when crossing ice.</p>"
-                },
-                "action->Shape Ice": {
-                    "name": "Shape Ice",
-                    "description": "<p>Venexus magically reshapes a cube of ice or snow she touches, up to 10 feet across. Any creature standing atop the ice must succeed at a @Check[reflex|dc:15] save or Acrobatics check. On a failure, the creature falls @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone} on the ice; on a critical failure, it falls off the ice entirely and is also prone.</p>"
-                },
-                "action->Snuff": {
-                    "name": "Snuff",
-                    "description": "<p>Venexus releases a wave of sleet, which douses open flames within 30 feet. All non-magical fire is automatically extinguished. All creatures in the area suffering from persistent fire damage immediately attempt a @Check[flat|dc:10] to end the persistent damage. If Snuff overlaps with an ongoing fire effect, Snuff attempts to counteract the fire effect.</p>"
                 }
             }
         },
@@ -2280,26 +1779,6 @@
                 "action->Frightful Presence": {
                     "name": "Frightful Presence",
                     "description": "<p>90 feet. @Check[will|dc:19]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.FrightfulPresence]</p>"
-                },
-                "action->Snow Vision": {
-                    "name": "Snow Vision",
-                    "description": "<p>Snow doesn't impair a white dragon's vision; the wyrmling ignores concealment from snowfall.</p>"
-                },
-                "action->Breath Weapon": {
-                    "name": "Breath Weapon",
-                    "description": "<p>The wyrmling breathes a cloud of frost that deals @Damage[6d6[cold]] damage in a @Template[cone|distance:30] (@Check[reflex|dc:22|basic]). They can't use Breath Weapon again for [[/br 1d4 #Recharge Breath Weapon]]{1d4 rounds}.</p>"
-                },
-                "action->Draconic Frenzy": {
-                    "name": "Draconic Frenzy",
-                    "description": "<p>The wyrmling makes two claw Strikes and one tail Strike in any order.</p>"
-                },
-                "action->Draconic Momentum": {
-                    "name": "Draconic Momentum",
-                    "description": "<p>When the wyrmling scores a critical hit with a Strike, they recharge their Breath Weapon.</p>"
-                },
-                "action->Ice Climb": {
-                    "name": "Ice Climb",
-                    "description": "<p>A white dragon can climb on ice as though they had the listed climb Speed. They ignore difficult terrain and greater difficult terrain from ice and snow and don't risk falling when crossing ice.</p>"
                 }
             }
         },
@@ -2312,14 +1791,6 @@
                 "action->Aura of Discarded Things": {
                     "name": "Aura of Discarded Things",
                     "description": "<p>30 feet. Items in the emanation can't regain Hit Points unless the effect that attempts to repair them counteracts the aura, which has a counteract rank of 5 and a counteract DC of 30.</p>"
-                },
-                "action->Debris Shield": {
-                    "name": "Debris Shield",
-                    "description": "<p><strong>Trigger</strong> The weykoward is targeted by an attack from an attacker it can see</p><hr />\n<p><strong>Effect</strong> The weykoward intercepts the attack with junk, gaining a +2 circumstance bonus to its AC against the triggering attack. If the attack misses and the attacker is within the weykoward's reach, it can @UUID[Compendium.pf2e.actionspf2e.Item.7blmbDrQFNfdT731]{Shove} the attacker. It doesn't need a hand free to Shove.</p>"
-                },
-                "action->Wasting Gaze": {
-                    "name": "Wasting Gaze",
-                    "description": "<p>The weykoward glances at an item of 4 Bulk or less it can see within 30 feet. A creature holding or wearing the object must attempt a @Check[will|dc:26] save. An unattended item always critically fails this save.</p>\n<hr />\n<p><strong>Critical Success</strong> The targeted item is unaffected. All of the creature's equipment is immune to Wasting Gaze for 24 hours.</p>\n<p><strong>Success</strong> The item is unaffected.</p>\n<p><strong>Failure</strong> The item loses [[/r {10d6}]] Hit Points; this can make the item broken, but it can't reduce the target's Hit Points beyond its Broken Threshold.</p>\n<p><strong>Critical Failure</strong> The target item loses [[/r {20d6}]] Hit Points. This can't reduce the item below 1 Hit Point.</p>"
                 }
             }
         },
@@ -2344,18 +1815,6 @@
                 "action->Evasion": {
                     "name": "Evasion",
                     "description": "<p>When Yana rolls a success on a Reflex save, he gets a critical success instead.</p>"
-                },
-                "action->Nimble Dodge": {
-                    "name": "Nimble Dodge",
-                    "description": "<p><strong>Trigger</strong> Yana is targeted by a melee or ranged attack from an attacker he can see</p><hr /><p><strong>Effect</strong> Yana gains a +2 circumstance bonus to AC against the triggering attack.</p>"
-                },
-                "action->Change Shape": {
-                    "name": "Change Shape",
-                    "description": "<p>Yana can transform into an Ulfen human, Tiny fox, or hybrid kitsune form. Using Change Shape counts as creating a disguise for the Impersonate use of Deception. He can remain in any of his forms indefinitely.</p>"
-                },
-                "action->Sneak Attack": {
-                    "name": "Sneak Attack",
-                    "description": "<p>Yana deals an additional 3d6 precision damage to @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} creatures.</p>"
                 }
             }
         },
@@ -2382,18 +1841,6 @@
                 },
                 "action->Void Healing": {
                     "name": "Void Healing"
-                },
-                "action->Dual Tusks": {
-                    "name": "Dual Tusks",
-                    "description": "<p>The zombie mammoth makes two tusk Strikes, each against a different creature. This counts as one attack for the mammoth's multiple attack penalty, and the penalty doesn't increase until after both attacks.</p>"
-                },
-                "action->Impaling Tusks": {
-                    "name": "Impaling Tusks",
-                    "description": "<p>The zombie mammoth makes a tusk Strike against a creature it's grabbing with its trunk. If the attack hits, the creature is impaled upon one of the mammoth's tusks, freeing the trunk to make attacks. Each of the mammoth's tusks can hold two Medium or smaller creatures. A mammoth can attack with its tusks while creatures are impaled upon them.</p>"
-                },
-                "action->Grabbing Trunk": {
-                    "name": "Grabbing Trunk",
-                    "description": "<p>A Medium or smaller creature hit by the zombie mammoth's trunk is @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed}. If the mammoth moves, it can bring the grabbed creature along with it.</p>"
                 }
             }
         },
@@ -2419,10 +1866,6 @@
                 },
                 "action->Void Healing": {
                     "name": "Void Healing"
-                },
-                "action->Furious Charge": {
-                    "name": "Furious Charge",
-                    "description": "<p>The megaloceros Strides twice and makes a hoof Strike after either Stride. If the Strike hits, the megaloceros deals an additional @Damage[2d4[bludgeoning]] damage.</p>"
                 }
             }
         }
@@ -2440,6 +1883,10 @@
         "items": {
             "converter": "translateActorItems",
             "path": "items"
+        },
+        "rules": {
+            "converter": "translateRules",
+            "path": "system.rules"
         },
         "descriptionHazard": "system.details.description",
         "disable": "system.details.disable",

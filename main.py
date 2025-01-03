@@ -659,13 +659,24 @@ def process_files(folder, version, type_system):
                                     'name'] == 'Greater Darkvision':
                                     continue
                                 transifex_dict["entries"][name]['items'].update({item_name: {
-                                    "name": item['name']
+                                    "name": item['name'],
+                                    "rules": {}
                                 }})
                             else:
                                 transifex_dict["entries"][name]['items'].update({item_name: {
                                     "name": item['name'],
-                                    "description": item['system']['description']['value']
+                                    "description": item['system']['description']['value'],
+                                    "rules": {}
                                 }})
+
+                            # Jeśli posiada rules, dodaj
+                            if item['system']['rules']:
+                                for index, rule in enumerate(item['system']['rules']):
+                                    if not rule['label'].startswith('PF2E'):
+                                        transifex_dict["entries"][name]['items'][item_name]["rules"].update({index:
+                                            rule['label']
+                                        })
+
 
                             flag.append('items')
                     except KeyError:
@@ -678,6 +689,10 @@ def process_files(folder, version, type_system):
                                     "converter": "translateActorItems",
                                     "path": "items"
                                 },
+                                "rules": {
+                                    "converter": "translateRules",
+                                    "path": "system.rules"
+                                }
                             }
                         )
 

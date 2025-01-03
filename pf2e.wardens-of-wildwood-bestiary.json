@@ -21,16 +21,6 @@
                 "action->Hunt Prey": {
                     "name": "Hunt Prey",
                     "description": "<p>Alyce designates a single creature as her prey and focuses her attacks against that creature. She must be able to see, hear, or otherwise detect the prey, or she must be tracking the prey during exploration. She gains a +2 circumstance bonus to Perception checks when she Seeks her prey and a +2 circumstance bonus to Survival checks when she @UUID[Compendium.pf2e.actionspf2e.Item.EA5vuSgJfiHH7plD]{Tracks} her prey. Alyce also ignores the penalty for making ranged attacks within her second range increment against the prey she's hunting. Alyce can only have one creature designated as her prey at a time. If she uses Hunt Prey against a creature when she already has a creature designated, the prior creature loses the designation and the new prey gains the designation. Her designation lasts until her next daily preparations.</p>"
-                },
-                "action->Liberating Strike": {
-                    "name": "Liberating Strike",
-                    "description": "<p><strong>Requirements</strong> Alyce is wielding a melee weapon</p>\n<p><strong>Trigger</strong> A creature within Alyce's reach attempts to apply the @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed}, @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Immobilized}, or @UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{Restrained} condition to an ally</p>\n<hr />\n<p><strong>Effect</strong> Alyce makes a melee Strike against the triggering creature. If the attack is a hit, the triggering ally can immediately use a reaction to @UUID[Compendium.pf2e.actionspf2e.Item.SkZAQRkLLkmBQNB9]{Escape}. If the attack is a critical hit, any grabbed, immobilized, or restrained conditions imposed by the triggering action are negated.</p>"
-                },
-                "lore->Andoran Lore": {
-                    "name": "Andoran Lore"
-                },
-                "lore->Forest Lore": {
-                    "name": "Forest Lore"
                 }
             }
         },
@@ -172,50 +162,6 @@
                 },
                 "action->+1 Status to All Saves vs. Magic": {
                     "name": "+1 Status to All Saves vs. Magic"
-                },
-                "action->Floral Defense": {
-                    "name": "Floral Defense",
-                    "description": "<p><strong>Trigger</strong> Avathrael is the target of a physical attack</p>\n<hr />\n<p><strong>Effect</strong> Avathrael raises their plant-covered wings to block the incoming blow. They gain a +2 circumstance bonus to AC against the triggering attack. If the attack misses, it's deflected by Avathrael's wing, causing some of the dangerous plants growing on the wing to burst and release a cloud of toxic pollen. The triggering creature takes @Damage[2d10[poison]] damage (@Check[fortitude|dc:29|basic] save). On a critical failure, the triggering creature is also @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 1}.</p>"
-                },
-                "action->Frightful Presence": {
-                    "name": "Frightful Presence",
-                    "description": "<p>90 feet @Check[will|dc:29]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.FrightfulPresence]</p>"
-                },
-                "action->Light Blindness": {
-                    "name": "Light Blindness"
-                },
-                "action->Draconic Momentum": {
-                    "name": "Draconic Momentum",
-                    "description": "<p>Avathrael recharges their Poison Breath whenever they score a critical hit with a Strike.</p>"
-                },
-                "action->Poison Breath": {
-                    "name": "Poison Breath",
-                    "description": "<p>Avathrael exhales a cloud of sweet-smelling poisonous gas that deals @Damage[13d6[poison]] damage in a @Template[cone|distance:50] (@Check[fortitude|dc:32|basic] save). A creature that critically fails is also @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 2}. Avathrael can't use Poison Breath again for [[/br 1d4 #Recharge Poison Breath]]{1d4 rounds}.</p>"
-                },
-                "action->Shadow Step": {
-                    "name": "Shadow Step",
-                    "description": "<p><strong>Frequency</strong> twice per day</p>\n<hr />\n<p><strong>Effect</strong> Avathrael teleports with the effects of a 4th-rank @UUID[Compendium.pf2e.spells-srd.Item.VlNcjmYyu95vOUe8]{Translocate} spell, but Avathrael must begin and end the teleportation effect in an area of dim light or darkness. If they use 2 actions to activate this ability, Avathrael also regains @Damage[8d10[healing]] Hit Points. Avathrael can't use Shadow Step again for [[/br 1d4 #Recharge Shadow Step]]{1d4 rounds}.</p>"
-                },
-                "action->Shape Shadow Realm": {
-                    "name": "Shape Shadow Realm",
-                    "description": "<p>Avathrael mentally reshapes their realm, reshaping terrain and creating obstacles to hinder their foes. All squares within a @Template[burst|distance:50] become difficult terrain. Creatures in the area take @Damage[10d6[void]] damage (@Check[reflex|dc:32|basic] save) from the shadows. On a failure, that creature is additionally @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed} by the malleable shadows (@UUID[Compendium.pf2e.actionspf2e.Item.SkZAQRkLLkmBQNB9]{Escape} DC 32). At the beginning of Avathrael's turn, each creature that's grabbed takes @Damage[4d6[void]] damage. Avathrael can't use Shape Shadow Realm again for [[/br 1d4 #Recharge Shape Shadow Realm]]{1d4 rounds}.</p>"
-                },
-                "action->Snuff Light": {
-                    "name": "Snuff Light",
-                    "description": "<p><strong>Frequency</strong> once per round</p>\n<hr />\n<p><strong>Effect</strong> Avathrael exhales, automatically extinguishing all non-magical lights within 100 feet. Avathrael attempts to counteract each light source within 100 feet ([[/r 1d20+22 #Counteract]]{+22} counteract).</p>"
-                },
-                "action->Woodland Stride": {
-                    "name": "Woodland Stride",
-                    "description": "<p>Avathrael ignores difficult terrain and greater difficult terrain from non-magical foliage.</p>"
-                },
-                "lore->Architecture Lore": {
-                    "name": "Architecture Lore"
-                },
-                "lore->Art Lore": {
-                    "name": "Art Lore"
-                },
-                "lore->Netherworld Lore": {
-                    "name": "Netherworld Lore"
                 }
             }
         },
@@ -278,24 +224,6 @@
                 },
                 "action->Catch Rock": {
                     "name": "Catch Rock"
-                },
-                "action->Covered In Bees!": {
-                    "name": "Covered In Bees!",
-                    "description": "<p>Dozens of bees sting the ohancanu, dealing @Damage[2d6[persistent,piercing]] damage. The persistent damage ends automatically if the ohancanu takes 10 or more damage from an area effect.</p>"
-                },
-                "action->Denuded Outrage": {
-                    "name": "Denuded Outrage",
-                    "description": "<p><strong>Trigger</strong> A creature plucks one of the ohancanu's white hairs</p>\n<hr />\n<p><strong>Effect</strong> The ohancanu makes a fist Strike against the triggering creature. If the ohancanu is @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed} or @UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{Restrained}, they can instead attempt to @UUID[Compendium.pf2e.actionspf2e.Item.SkZAQRkLLkmBQNB9]{Escape}.</p>"
-                },
-                "action->Sudden Charge": {
-                    "name": "Sudden Charge",
-                    "description": "<p>The ohancanu strides twice. If they end their movement within melee reach of at least one enemy, they can make a melee Strike against that enemy.</p>"
-                },
-                "action->Throw Rock": {
-                    "name": "Throw Rock"
-                },
-                "lore->Warfare Lore": {
-                    "name": "Warfare Lore"
                 }
             }
         },
@@ -535,41 +463,6 @@
                 "action->Frightful Presence": {
                     "name": "Frightful Presence",
                     "description": "<p>30 feet. @Check[will|dc:26]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.FrightfulPresence]</p>"
-                },
-                "action->Soulscent (Imprecise) 100 feet": {
-                    "name": "Soulscent (Imprecise) 100 feet",
-                    "description": "<p>The sluagh is aware of all @UUID[Compendium.pf2e.conditionitems.Item.3uh1r86TzbQvosxv]{Doomed} creatures, @UUID[Compendium.pf2e.conditionitems.Item.yZRUzMqrMmfLu0V1]{Dying} creatures, and creatures that died within the last hour within the listed range.</p>"
-                },
-                "action->Void Healing": {
-                    "name": "Void Healing"
-                },
-                "action->Explosive End": {
-                    "name": "Explosive End",
-                    "description": "<p>When the woodblessed dies, the planar portal inside of them collapses, causing them to explode in a @Template[burst|distance:20] of vines that deal @Damage[10d6[bludgeoning]] damage to all creatures with a @Check[reflex|dc:26|basic] save. The woodblessed's body is completely consumed, though their root network and gear remain behind.</p>"
-                },
-                "action->Ghostly Swoop": {
-                    "name": "Ghostly Swoop",
-                    "description": "<p>The sluagh reaper becomes incorporeal until the start of their next turn, and Flies up to their fly Speed. While incorporeal, they are immune to precision damage, and have resistance 10 to all damage (except force, ghost touch, or vitality); this resistance is doubled against non-magical damage.</p>\n<p>After using Ghostly Swoop, the sluagh reaper can't use it again for [[/br 1d4 #Recharge]]{1d4 rounds}.</p>"
-                },
-                "action->Luminant Aura": {
-                    "name": "Luminant Aura",
-                    "description": "<p>20 feet. The volatile planar energy coursing through a woodblessed's veins fills the area with dim light.</p>"
-                },
-                "action->Reactive Flare": {
-                    "name": "Reactive Flare",
-                    "description": "<p><strong>Trigger</strong> The woodblessed is damaged by a creature within their reach</p>\n<hr />\n<p><strong>Effect</strong> Distracted by the pain, the woodblessed's concentration slips and splinters erupt from their body as they temporarily lose control of the planar energy within them. Both the triggering creature and the woodblessed take @Damage[6d6[piercing]] damage, with a @Check[reflex|dc:26|basic] save.</p>"
-                },
-                "action->Sneak Attack": {
-                    "name": "Sneak Attack",
-                    "description": "<p>The sluagh reaper deals an additional 3d6 precision damage to @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} creatures.</p>"
-                },
-                "action->Steal Soul": {
-                    "name": "Steal Soul",
-                    "description": "<p>The sluagh reaper touches a dying creature or a creature that died within the past 1 hour. If the target is a dying creature, it must attempt a @Check[fortitude|dc:28] save-on a failure, its dying value increases by 1 (2 on a critical failure). If the target is dead, it receives no save and the sluagh imprisons its soul in a small, grimy sack that keeps stolen souls fresh.</p>\n<p>The sack is magically locked. Any sluagh can open it without difficulty, but any others must @UUID[Compendium.pf2e.actionspf2e.Item.2EE4aF4SZpYf0R6H]{Pick the Lock} (@Check[thievery|dc:35|traits:action:pick-a-lock]) or use @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (5th level; counteract DC 32). A creature can Interact to empty an unlocked sack, which frees the souls but doesn't return them to life. While a soul is imprisoned, it can't be brought back to life by any means short of a @UUID[Compendium.pf2e.spells-srd.Item.6dDtGIUerazSHIOu]{Wish} or @UUID[Compendium.pf2e.spells-srd.Item.YfJTXyVGzLhM6V8U]{Miracle}. The sack can hold 12 souls at a time. Sluagh reapers typically attempt to return the souls to a queen so she can devour them.</p>"
-                },
-                "action->Tap Planar Gate": {
-                    "name": "Tap Planar Gate",
-                    "description": "<p>The woodblessed empowers themself or their next attack.</p>\n<p>If the woodblessed's next action is to Stride, is launched off the ground by a suddenly sprouting tree and propelled forward. During this Stride, they have a fly Speed equal to their Speed. If they don't end their movement on a solid surface that can support their weight, they fall.</p>\n<p>If the woodblessed's next action is a Strike, the attack sprouts thorns that deal an additional 1d6 persistent bleed damage.</p>"
                 }
             }
         },
@@ -599,10 +492,6 @@
                 "action->Battering Charge": {
                     "name": "Battering Charge",
                     "description": "<p>The durnolith Strides twice in a straight line and then makes an armored frill Strike. As long as it moved at least 10 feet, it gains a +2 circumstance bonus to its attack roll and the strike gains @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.6l7e7CHQLESlI57U]{Improved Push} 10 feet.</p>"
-                },
-                "action->Pain-Fueled Roar": {
-                    "name": "Pain-Fueled Roar",
-                    "description": "<p>The durnolith unleashes a roar of pain and fury. The durnolith attempts a single Intimidation check to @UUID[Compendium.pf2e.actionspf2e.Item.2u915NdUyQan6uKF]{Demoralize} all living creatures within 60 feet that can hear the durnolith. Roll once and apply the results to all creatures. Each creature is then temporarily immune for 1 minute.</p>"
                 }
             }
         },
@@ -629,24 +518,6 @@
                 "action->Initiative Adjustment": {
                     "name": "Initiative Adjustment",
                     "description": "<p>Emorga's perception is +11 for initiative purposes</p>"
-                },
-                "action->Read Nature's Omens": {
-                    "name": "Read Nature's Omens",
-                    "description": "<p><strong>Frequency</strong> once per day</p>\n<p><strong>Requirements</strong> Emorga can see a naturally occurring pattern such as ripples in a pond, a murmuration of birds wheeling across the sky, or a tangle of interwoven vines and flowers</p>\n<hr />\n<p><strong>Effect</strong> Emorga spends 1 hour contemplating the pattern to receive a brief glimpse of possible futures, optionally posing a question about a specific person, place, or event. She attempts a @Check[nature|dc:30] or @Check[Soothsaying Lore|dc:30] check.</p>\n<hr />\n<p><strong>Critical Success</strong> Emorga receives a helpful premonition of one significant event that is to occur within one week. If she specified a specific subject, the premonition relates specifically to events affecting or involving that subject. These visions might be partial or unclear, but they are never purposely misleading.</p>\n<p><strong>Success</strong> As critical success, but Emorga can only receive visions of events that will occur within the next [[/br 1d4 #days]]{1d4 days}.</p>\n<p><strong>Failure</strong> Emorga receives no vision, or receives a vision of something insignificant or unrelated to her subject.</p>\n<p><strong>Critical Failure</strong> Emorga incorrectly interprets the omens and receives a false vision. Treat as a critical success, but the vision is either wholly inaccurate or presented in a way that actively distorts its meaning.</p>"
-                },
-                "action->Constant Spells": {
-                    "name": "Constant Spells"
-                },
-                "action->Take Cover": {
-                    "name": "Take Cover",
-                    "description": "<p>Emorga withdraws into her shell, protecting her head and extremities from harm. She can't take move or attack actions while in this state, but gains a +4 circumstance bonus to AC and resistance 10 to physical attacks. She can end the state as a single action.</p>"
-                },
-                "action->Trample": {
-                    "name": "Trample",
-                    "description": "<p>Large or smaller, foot, @Check[reflex|dc:25|basic]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Trample]</p>"
-                },
-                "lore->Soothsaying Lore": {
-                    "name": "Soothsaying Lore"
                 }
             }
         },
@@ -730,26 +601,6 @@
                 "action->Fascinating Mimicry": {
                     "name": "Fascinating Mimicry",
                     "description": "<p>30 feet. While a glitterspore mimics a plant, its glittering spores and vibrant colors make it unnaturally beautiful. A creature that starts its turn in the aura must succeed at a @Check[will|dc:23] save or become @UUID[Compendium.pf2e.conditionitems.Item.AdPVz7rbaVSRxHFg]{Fascinated} by the glitterspore for 1 round. This aura activates automatically when a glitterspore uses Plant Mimicry, and it deactivates when the glitterspore reverts to its natural form.</p>"
-                },
-                "action->Burrowing Spores": {
-                    "name": "Burrowing Spores",
-                    "description": "<p>Each enemy in the glitterspore's space takes @Damage[4d8[piercing]] damage (@Check[reflex|dc:26|basic] save) and is exposed to spore rot.</p>"
-                },
-                "action->Invade": {
-                    "name": "Invade",
-                    "description": "<p>The glitterspore enters the ears, mouth, and nostrils of a living non-fungus or non-plant creature, then bursts out through their flesh. One enemy in the glitterspore's space takes @Damage[7d8[piercing]] damage (@Check[reflex|dc:26|basic] save). On a failed save, the target also takes @Damage[1d8[persistent,bleed]] damage and is @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 1}.</p>"
-                },
-                "action->Plant Mimicry": {
-                    "name": "Plant Mimicry",
-                    "description": "<p>The glitterspore reconfigures its component spores to assume the shape and appearance of another plant, such as a flower bed, shrubbery, tree, or topiary. This doesn't change the glitterspore's texture or overall size but does alter its coloration and appearance. The glitterspore has an automatic result of 29 (33 in gardens, forests, or swamps) on Deception checks and DCs to pass as a non-creature plant. The glitterspore stays in this shape until it takes an action.</p>"
-                },
-                "action->Spore Cloud": {
-                    "name": "Spore Cloud",
-                    "description": "<p>A glitterspore unleashes a cloud of sparkling, hypnotic spores in a 60-foot-radius burst. Each creature in the area is exposed to spore rot and must succeed at a @Check[will|dc:26] save or be @UUID[Compendium.pf2e.conditionitems.Item.AdPVz7rbaVSRxHFg]{Fascinated} for [[/br 1d4 #rounds]]{1d4 rounds}.</p>"
-                },
-                "action->Spore Rot": {
-                    "name": "Spore Rot",
-                    "description": "<p><strong>Saving Throw</strong> @Check[fortitude|dc:26]</p>\n<p><strong>Maximum Duration</strong> 6 rounds</p>\n<p><strong>Stage 1</strong> @Damage[1d6[poison]] damage plus @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 1} and \u20135-foot status penalty to Speed (1 round)</p>\n<p><strong>Stage 2</strong> @Damage[2d6[poison]] damage plus @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 2} and \u201310-foot status penalty to Speed (1 round)</p>\n<p><strong>Stage 3</strong> @Damage[3d8[poison]] damage plus @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 3} and @UUID[Compendium.pf2e.conditionitems.Item.6uEgoh53GbXuHpTF]{Paralyzed} (1d4 rounds)</p>"
                 }
             }
         },
@@ -774,21 +625,6 @@
                 "action->Mauler": {
                     "name": "Mauler",
                     "description": "<p>The bear gains a +4 circumstance bonus to damage rolls against creatures it has @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed}.</p>"
-                },
-                "action->Rush": {
-                    "name": "Rush",
-                    "description": "<p>The cave bear Strides and makes a Strike at the end of that movement. During the Stride, it gains a +10-foot circumstance bonus to its Speed.</p>"
-                },
-                "action->Sneak Attack": {
-                    "name": "Sneak Attack",
-                    "description": "<p>The bear deals 2d6 extra precision damage to creatures who are @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard}.</p>"
-                },
-                "action->Vitriol": {
-                    "name": "Vitriol",
-                    "description": "<p>The hateful bear vomits a stream of caustic black sludge at a single foe it can detect within 15 feet. The bear and the target each gain a +1 circumstance bonus on all attack rolls made against each other until the bear chooses a different target for its Vitriol. The target must attempt a @Check[will|dc:22] save, with the following effects. The bear cannot use Vitriol again for [[/br 1d4 #rounds]]{1d4 rounds}.</p>\n<hr />\n<p><strong>Critical Success</strong> No effect.</p>\n<p><strong>Success</strong> The target's mind is clouded by feelings of rage and hate, causing it to be @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} against the bear's next attack. It can't use actions with the concentrate trait unless they also have the rage trait.</p>\n<p><strong>Failure</strong> As success, but the target is off-guard until the end of the bear's next turn. While off-guard, it is unable to use actions with the concentrate trait unless they also have the rage trait.</p>\n<p><strong>Critical Failure</strong> As failure, but the target is off-guard until the bear chooses a different target for its Vitriol.</p>"
-                },
-                "action->Grab": {
-                    "name": "Grab"
                 }
             }
         },
@@ -821,17 +657,6 @@
                 "action->Sneak Attack": {
                     "name": "Sneak Attack",
                     "description": "<p>The hodag deals 2d6 extra precision damage to creatures who are @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard}.</p>"
-                },
-                "action->Toss": {
-                    "name": "Toss",
-                    "description": "<p>The hodag Strides, then makes a Strike against a target in reach. If it moves at least 20 feet and succeeds at its Strike, the hodag deals damage normally and then attempts an @Check[athletics|defense:fortitude] check against the creature's Fortitude DC to toss the enemy into the air.</p>\n<p>On a success, the tossed creature is thrown 10 feet in a straight line in the direction of the hodag's choice and then lands @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone}. If the creature is knocked into a solid object, it takes @Damage[1d6[bludgeoning]] damage as well before landing prone. The hodag can instead toss a creature straight up in the air. The creature lands in the same square where it started, takes @Damage[1d6[bludgeoning]] damage, and lands prone.</p>"
-                },
-                "action->Vitriol": {
-                    "name": "Vitriol",
-                    "description": "<p>The hateful hodag vomits a stream of caustic black sludge at a single foe it can detect within 15 feet. The hodag and the target each gain a +1 circumstance bonus on all attack rolls made against each other until the hodag chooses a different target for its Vitriol. The target must attempt a @Check[will|dc:22] save, with the following effects. The hodag cannot use Vitriol again for [[/br 1d4 #rounds]]{1d4 rounds}.</p>\n<hr />\n<p><strong>Critical Success</strong> No effect.</p>\n<p><strong>Success</strong> The target's mind is clouded by feelings of rage and hate, causing it to be @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} against the hodag's next attack. It can't use actions with the concentrate trait unless they also have the rage trait.</p>\n<p><strong>Failure</strong> As success, but the target is off-guard until the end of the hodag's next turn. While off-guard, it is unable to use actions with the concentrate trait unless they also have the rage trait.</p>\n<p><strong>Critical Failure</strong> As failure, but the target is off-guard until the hodag chooses a different target for its Vitriol.</p>"
-                },
-                "action->Knockdown": {
-                    "name": "Knockdown"
                 }
             }
         },
@@ -847,17 +672,6 @@
                 "action->Exhausted": {
                     "name": "Exhausted",
                     "description": "<p>Though their minds are suffused with hatred and rage, the loggers have not slept for several days and are ready to drop. They take a \u20132 status penalty to saving throws against effects with the sleep trait.</p>"
-                },
-                "action->Sneak Attack": {
-                    "name": "Sneak Attack",
-                    "description": "<p>The logger deals 1d6 extra precision damage to creatures who are @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard}.</p>"
-                },
-                "action->Vitriol": {
-                    "name": "Vitriol",
-                    "description": "<p>The hateful logger vomits a stream of caustic black sludge at a single foe it can detect within 15 feet. The logger and the target each gain a +1 circumstance bonus on all attack rolls made against each other until the logger chooses a different target for its Vitriol. The target must attempt a @Check[will|dc:19] save, with the following effects. The logger cannot use Vitriol again for [[/br 1d4 #rounds]]{1d4 rounds}.</p>\n<hr />\n<p><strong>Critical Success</strong> No effect.</p>\n<p><strong>Success</strong> The target's mind is clouded by feelings of rage and hate, causing it to be @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} against the logger's next attack. It can't use actions with the concentrate trait unless they also have the rage trait.</p>\n<p><strong>Failure</strong> As success, but the target is off-guard until the end of the logger's next turn. While off-guard, it is unable to use actions with the concentrate trait unless they also have the rage trait.</p>\n<p><strong>Critical Failure</strong> As failure, but the target is off-guard until the logger chooses a different target for its Vitriol.</p>"
-                },
-                "lore->Forest Lore": {
-                    "name": "Forest Lore"
                 }
             }
         },
@@ -869,17 +683,6 @@
                 "action->Forager": {
                     "name": "Forager",
                     "description": "<p>While using Survival to @UUID[Compendium.pf2e.actionspf2e.Item.49y9Ec4bDii8pcD3]{Subsist}, if the tracker rolls a failure or a critical failure, they get a success instead. If the tracker rolls a success, they can provide food for 16 additional creatures that eat about as much as a human, or 32 creatures on a critical success.</p>"
-                },
-                "action->Master Tracker": {
-                    "name": "Master Tracker",
-                    "description": "<p>The tracker can @UUID[Compendium.pf2e.actionspf2e.Item.EA5vuSgJfiHH7plD]{Track} while moving at full speed.</p>"
-                },
-                "action->Hunt Prey": {
-                    "name": "Hunt Prey",
-                    "description": "<p>The tracker designates a single creature they can see and hear, or one they're Tracking, as their prey. The tracker gains a +2 circumstance bonus to Perception checks to @UUID[Compendium.pf2e.actionspf2e.Item.BlAOM2X92SI6HMtJ]{Seek} the prey and to Survival checks to @UUID[Compendium.pf2e.actionspf2e.Item.EA5vuSgJfiHH7plD]{Track} the prey.</p>\n<p>The first time the tracker hits the designated prey in a round, they deal an additional 1d8 precision damage. The tracker also ignores the penalty for making ranged attacks within their second range increment.</p>\n<p>These effects last until the tracker uses Hunt Prey again.</p>"
-                },
-                "lore->Forest Lore": {
-                    "name": "Forest Lore"
                 }
             }
         },
@@ -936,18 +739,6 @@
                 "action->Change Shape": {
                     "name": "Change Shape",
                     "description": "<p>Khasprickle takes on the physical form of a giant porcupine. His size changes to Medium, he loses his weapon Strikes, and he gains a quill Strike (+21 for 2d8+8 piercing plus 1d8 persistent poison).</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.ChangeShape]</p>"
-                },
-                "action->Pincushion": {
-                    "name": "Pincushion",
-                    "description": "<p>Khasprickle makes three quill Strikes in quick succession. These Strikes count toward his multiple attack penalty but don't apply the multiple attack penalty until all three Strikes are complete.</p>"
-                },
-                "action->Pukwudgie Poison": {
-                    "name": "Pukwudgie Poison",
-                    "description": "<p><strong>Saving Throw</strong> @Check[fortitude|dc:28]</p>\n<p><strong>Maximum Duration</strong> 6 rounds</p>\n<p><strong>Stage 1</strong> @Damage[1d8[poison]] damage and @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 1} (1 round)</p>\n<p><strong>Stage 2</strong> @Damage[1d8[poison]] damage and @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 2} (1 round)</p>\n<p><strong>Stage 3</strong> @Damage[1d8[poison]] damage, @UUID[Compendium.pf2e.conditionitems.Item.yblD8fOR1J8rDwEQ]{Confused}, and stupefied 2 (1 round)</p>"
-                },
-                "action->Quill Fighter": {
-                    "name": "Quill Fighter",
-                    "description": "<p>Khasprickle wields his quills like a deadly weapon. He deals an additional 3d6 precision damage with quill Strikes against @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} targets. On a critical hit with a quill, Khasprickle pierces a pressure point or nerve cluster with pinpoint accuracy; the target becomes @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 2} for [[/br 1d4 #rounds]]{1d4 rounds} (or increases the value of their clumsy condition by 1).</p>"
                 }
             }
         },
@@ -962,17 +753,6 @@
                 "action->Forager": {
                     "name": "Forager",
                     "description": "<p>While using Survival to @UUID[Compendium.pf2e.actionspf2e.Item.49y9Ec4bDii8pcD3]{Subsist}, if the tracker rolls a failure or a critical failure, they get a success instead. If the tracker rolls a success, they can provide food for 16 additional creatures that eat about as much as a human, or 32 creatures on a critical success.</p>"
-                },
-                "action->Forest Walker": {
-                    "name": "Forest Walker",
-                    "description": "<p>The hunter ignores the effects of difficult terrain from a forest environment. They can @UUID[Compendium.pf2e.actionspf2e.Item.VMozDqMMuK5kpoX4]{Sneak} through underbrush without the need to attempt a Stealth check as long as the hunter moves no more than 5 feet at a time and is not within 10 feet of an enemy at any point during their movement.</p>"
-                },
-                "action->Hunt Prey": {
-                    "name": "Hunt Prey",
-                    "description": "<p>The hunter designates a single creature they can see and hear, or one they're Tracking, as their prey. The hunter gains a +2 circumstance bonus to Perception checks to @UUID[Compendium.pf2e.actionspf2e.Item.BlAOM2X92SI6HMtJ]{Seek} the prey and to Survival checks to @UUID[Compendium.pf2e.actionspf2e.Item.EA5vuSgJfiHH7plD]{Track} the prey.</p>\n<p>The first time the hunter hits the designated prey in a round, they deal an additional 1d8 precision damage. The hunter also ignores the penalty for making ranged attacks within their second range increment.</p>\n<p>These effects last until the hunter uses Hunt Prey again.</p>"
-                },
-                "lore->Forest Lore": {
-                    "name": "Forest Lore"
                 }
             }
         },
@@ -1155,20 +935,6 @@
                 },
                 "action->Catch Rock": {
                     "name": "Catch Rock"
-                },
-                "action->Denuded Outrage": {
-                    "name": "Denuded Outrage",
-                    "description": "<p><strong>Trigger</strong> A creature plucks one of the ohancanu's white hairs</p>\n<hr />\n<p><strong>Effect</strong> The ohancanu makes a fist Strike against the triggering creature. If the ohancanu is @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed} or @UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{Restrained}, they can instead attempt to @UUID[Compendium.pf2e.actionspf2e.Item.SkZAQRkLLkmBQNB9]{Escape}.</p>"
-                },
-                "action->Sudden Charge": {
-                    "name": "Sudden Charge",
-                    "description": "<p>The ohancanu strides twice. If they end their movement within melee reach of at least one enemy, they can make a melee Strike against that enemy.</p>"
-                },
-                "action->Throw Rock": {
-                    "name": "Throw Rock"
-                },
-                "lore->Warfare Lore": {
-                    "name": "Warfare Lore"
                 }
             }
         },
@@ -1211,18 +977,6 @@
                 },
                 "action->Regeneration 20 (Deactivated by Electricity or Fire)": {
                     "name": "Regeneration 20 (Deactivated by Electricity or Fire)"
-                },
-                "action->Furious Flailing": {
-                    "name": "Furious Flailing",
-                    "description": "<p><strong>Trigger</strong> The forest troll takes electricity or fire damage</p>\n<hr />\n<p><strong>Effect</strong> The troll makes a claw Strike against a random creature within its reach. If the troll has persistent fire damage, they attempt a @Check[flat|dc:15] to remove it.</p>"
-                },
-                "action->Chase Prey": {
-                    "name": "Chase Prey",
-                    "description": "<p>The forest troll rushes forward on all fours, Striding and then making two claw Strikes.</p>"
-                },
-                "action->Rend": {
-                    "name": "Rend",
-                    "description": "<p>Claw</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Rend]</p>"
                 }
             }
         },
@@ -1345,25 +1099,6 @@
                 "action->Emotional Vulnerability": {
                     "name": "Emotional Vulnerability",
                     "description": "<p>A putrifer is easily overwhelmed by confusing thoughts, complex emotions, and resurfacing memories. A putrifer takes a \u20132 circumstance penalty to saving throws against emotion effects and treats the result of its saves against emotion effects as one degree worse.</p>"
-                },
-                "action->Stench": {
-                    "name": "Stench",
-                    "description": "<p>15 feet. A creature entering the aura or starting its turn in the aura must succeed at a @Check[fortitude|dc:25] save or become @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 2} (plus @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} as long as it's sickened on a critical failure). A creature that succeeds at its save is temporarily immune for 1 minute.</p>"
-                },
-                "action->Vengeful Exhalation": {
-                    "name": "Vengeful Exhalation",
-                    "description": "<p><strong>Trigger</strong> An adjacent creature damages the putrifer</p>\n<hr />\n<p><strong>Effect</strong> The putrifer exhales, exposing the triggering creature to noxious putrescence</p>"
-                },
-                "action->Void Healing": {
-                    "name": "Void Healing"
-                },
-                "action->Noxious Putrescence": {
-                    "name": "Noxious Putrescence",
-                    "description": "<p><strong>Saving Throw</strong> @Check[fortitude|dc:28]</p>\n<p><strong>Maximum Duration</strong> 6 rounds</p>\n<p><strong>Stage 1</strong> @Damage[2d6[poison]] damage and @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 1} (1 round)</p>\n<p><strong>Stage 2</strong> @Damage[2d8[poison]] damage and @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 2} (1 round)</p>\n<p><strong>Stage 3</strong> @Damage[2d10[poison]] damage and @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 4} (1 round)</p>"
-                },
-                "action->Woodland Stride": {
-                    "name": "Woodland Stride",
-                    "description": "<p>The putrifer ignores difficult terrain and greater difficult terrain from non-magical foliage.</p>"
                 }
             }
         },
@@ -1398,10 +1133,6 @@
                 "action->Troop Spellcasting": {
                     "name": "Troop Spellcasting",
                     "description": "<p>When the rancorous priesthood Casts a Spell, their constituent members combine their efforts into casting a more powerful version of the spell than any one member could achieve alone.</p>\n<p>When Casting a Spell that has an area of a burst, cone, or line and doesn't have a duration, increase the area of that spell. Add 5 feet to the radius of a burst that normally has a radius of at least 10 feet (a burst with a smaller radius is not affected). Add 5 feet to the length of a cone or line that is normally 15 feet long or smaller, and add 10 feet to the length of a larger cone or line.</p>"
-                },
-                "action->Wild Swing": {
-                    "name": "Wild Swing",
-                    "description": "<p><span class=\"action-glyph\">1</span> to <span class=\"action-glyph\">3</span></p>\n<p><strong>Frequency</strong> once per round</p>\n<hr />\n<p><strong>Effect</strong> The members of the mob wildly swing their weapons-primarily greataxes-in a chaotic attack at each enemy adjacent to the troop (@Check[reflex|dc:27|basic] save). The damage depends on the number of actions.</p>\n<p><span class=\"action-glyph\">1</span> @Damage[(1d12+2)[slashing]] damage</p>\n<p><span class=\"action-glyph\">2</span> @Damage[(2d12+9)[slashing]] damage</p>\n<p><span class=\"action-glyph\">3</span> @Damage[(3d12+9)[slashing]] damage</p>"
                 }
             }
         },
@@ -1468,14 +1199,6 @@
                 "action->Luminant Aura": {
                     "name": "Luminant Aura",
                     "description": "<p>20 feet. The volatile planar energy coursing through a woodblessed's veins fills the area with dim light.</p>"
-                },
-                "action->Reactive Flare": {
-                    "name": "Reactive Flare",
-                    "description": "<p><strong>Trigger</strong> The woodblessed is damaged by a creature within their reach</p>\n<hr />\n<p><strong>Effect</strong> Distracted by the pain, the woodblessed's concentration slips and splinters erupt from their body as they temporarily lose control of the planar energy within them. Both the triggering creature and the woodblessed take @Damage[4d6[piercing]] damage, with a @Check[reflex|dc:25|basic] save.</p>"
-                },
-                "action->Tap Planar Gate": {
-                    "name": "Tap Planar Gate",
-                    "description": "<p>The woodblessed empowers themself or their next attack.</p>\n<p>If the woodblessed's next action is to Stride, is launched off the ground by a suddenly sprouting tree and propelled forward. During this Stride, they have a fly Speed equal to their Speed. If they don't end their movement on a solid surface that can support their weight, they fall.</p>\n<p>If the woodblessed's next action is a Strike, the attack sprouts thorns that deal an additional 1d6 persistent bleed damage.</p>"
                 }
             }
         },
@@ -1513,18 +1236,6 @@
                 },
                 "action->+1 Status to All Saves vs. Magic": {
                     "name": "+1 Status to All Saves vs. Magic"
-                },
-                "action->Sneak Attack": {
-                    "name": "Sneak Attack",
-                    "description": "<p>The pixie deals an additional 1d6 precision damage to @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} creatures.</p>"
-                },
-                "action->Sprinkle Pixie Dust": {
-                    "name": "Sprinkle Pixie Dust",
-                    "description": "<p>The pixie sprinkles pixie dust onto one of their arrows. If the pixie hits a creature with that arrow before the pixie's next turn, the arrow inflicts one of the following special effects instead of dealing damage. Each effect depends on the target's DC 24 Will save. On a critical hit, the target gets a result one degree worse than it rolled.</p>\n<ul>\n<li>Confusion (emotion, mental) (@Check[will|dc:24|traits:emotion,mental]) The target suffers the effects of a 4th-rank confusion spell.</li>\n<li>Shadow Shroud (darkness, incapacitation) (@Check[will|dc:24|traits:darkness,incapacitation]) On a failed Will save, the target is enveloped in shadows. It perceives its surroundings as though bright light conditions were only dim light and dim light as though it was darkness.</li>\n<li>Supernatural Chill (cold, shadow) (@Check[will|dc:24|basic|traits:cold,shadow]) The target takes @Damage[5d6[cold]] damage (basic Fortitude save).\n\n</li>\n</ul>"
-                },
-                "action->Warden's Protection": {
-                    "name": "Warden's Protection",
-                    "description": "<p>The pixie deals an additional 1d6 damage to any creature trespassing in the Gloaming Arbor.</p>"
                 }
             }
         },
@@ -1575,12 +1286,6 @@
                 "action->Change Shape": {
                     "name": "Change Shape",
                     "description": "<ul>\n<li><strong>Human</strong>\n<ul>\n<li><strong>Size</strong> Medium</li>\n<li><strong>Melee</strong> fist +16 <strong>Damage</strong> 1d4+10</li>\n</ul>\n</li>\n<li><strong>Grizzly Bear</strong>\n<ul>\n<li><strong>Speed</strong> 35 feet</li>\n</ul>\n</li>\n</ul>\n<hr />\n<p>The werecreature changes into its humanoid, hybrid, or animal shape. Each shape has a specific, persistent appearance. A true werecreature's natural form is its hybrid shape.</p>\n<p>In humanoid shape, the werecreature uses its original humanoid size, loses its jaws and claws Strikes, and gains a melee fist Strike that deals bludgeoning damage equal to the slashing damage dealt by its claw.</p>\n<p>In animal shape, its Speed and size change to that of the animal, it gains any special Strike effects of the animal that it didn't already have (such as Grab), and it loses its weapon Strikes.</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.ChangeShape]</p>"
-                },
-                "action->Grab": {
-                    "name": "Grab"
-                },
-                "lore->Mercantile Lore": {
-                    "name": "Mercantile Lore"
                 }
             }
         },
@@ -1612,25 +1317,6 @@
                 },
                 "action->Void Healing": {
                     "name": "Void Healing"
-                },
-                "action->Woodland Dependent": {
-                    "name": "Woodland Dependent",
-                    "description": "<p>A waldgeist is mystically bonded to a single forest, jungle, orchard, grove, or other similar large, wooded area and must remain within it. If the waldgeist moves outside their bonded woodland, they're immediately destroyed.</p>"
-                },
-                "action->Lignify": {
-                    "name": "Lignify",
-                    "description": "<p>The touch of a waldgeist transforms flesh into wood. A living creature damaged by the waldgeist's lignifying hand Strike must succeed at a @Check[fortitude|dc:24] save or become @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1} (or @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 2} on a critical failure). Further failed saves against lignify increases the slowed condition. Once a creature's actions are reduced to 0 by lignify, that creature becomes @UUID[Compendium.pf2e.conditionitems.Item.dTwPJuKgBQCMxixg]{Petrified}, except they're transformed into wood instead of stone.</p>"
-                },
-                "action->Lumberjack's Bane": {
-                    "name": "Lumberjack's Bane",
-                    "description": "<p>Silene's Strikes deal an additional 1d6 void damage to humans, an additional 1d6 void damage to creatures wielding axes, or an additional 1d8 void damage to humans wielding axes.</p>"
-                },
-                "action->Possess Tree": {
-                    "name": "Possess Tree",
-                    "description": "<p><strong>Frequency</strong> once per 10 minutes</p>\n<hr />\n<p><strong>Effect</strong> The waldgeist touches a tree to merge with it, possessing it for up to 1 minute. They can end this possession early as a free action at the start of their turn. While the waldgeist possesses a tree, they lose the incorporeal trait, fly Speed, all resistances, their non-constant spells, and their lignifying hand Strike. Additionally, their size increases to Huge, they gain resistance 5 to bludgeoning and piercing damage, weakness 10 to fire, Speed 20 feet, and the following branch Strike.</p>\n<p><strong>Melee</strong> <span class=\"action-glyph\">1</span> branch (reach 15 feet) +20, <strong>Damage</strong> 2d12+9 bludgeoning.</p>\n<p>While a waldgeist possesses a tree, any damage that would be dealt to the waldgeist is instead dealt to the tree. The tree has 60 Hit Points. When the tree is reduced to 0 Hit Points, the waldgeist is immediately ejected, and the tree is destroyed.</p>"
-                },
-                "lore->Woodland Lore (Applies Only to the Woodland the Waldgeist is Bonded To)": {
-                    "name": "Woodland Lore (Applies Only to the Woodland the Waldgeist is Bonded To)"
                 }
             }
         },
@@ -1821,17 +1507,6 @@
                 "action->Construct Armor (Hardness 10)": {
                     "name": "Construct Armor (Hardness 10)",
                     "description": "<p>Like normal objects, a giant animated statue has Hardness. This Hardness reduces any damage it takes by an amount equal to the Hardness. Once a giant animated statue is reduced to less than half its Hit Points, or immediately upon being damaged by a critical hit, its construct armor breaks and its Armor Class is reduced to 22.</p>"
-                },
-                "action->Burn Alive": {
-                    "name": "Burn Alive",
-                    "description": "<p>The statue grinds a creature it has @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed} or @UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{Restrained} into the red-hot coals of its brazier. The target takes @Damage[3d8[fire],1d8[persistent,fire]] damage.</p>"
-                },
-                "action->Splinter": {
-                    "name": "Splinter",
-                    "description": "<p><strong>Trigger</strong> A creature critically hits a timber titan</p>\n<hr />\n<p><strong>Effect</strong> The timber titan makes a spar Strike against a creature within 30 feet. This attack ignores any reactions triggered by making ranged attacks.</p>"
-                },
-                "action->Grab": {
-                    "name": "Grab"
                 }
             }
         },
@@ -1941,37 +1616,6 @@
                 "action->Delicious": {
                     "name": "Delicious",
                     "description": "<p>Ghorans were originally created to be scrumptious food. A ghoran takes an additional 5 damage from jaws Strikes, fangs Strikes, or other similar Strikes with a creature's mouth. When a ghoran is @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed} or @UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{Restrained} by a creature's jaws, fangs, or mouth, the DC to @UUID[Compendium.pf2e.actionspf2e.Item.SkZAQRkLLkmBQNB9]{Escape} is increased by 2.</p>"
-                },
-                "action->Explosive End": {
-                    "name": "Explosive End",
-                    "description": "<p>When Unaasi dies, the planar portal inside them collapses, causing them to explode in a burst of scouring energy that deals @Damage[11d6[fire]] damage to all creatures in their luminant aura (@Check[reflex|dc:32|basic] save). Their body is completely consumed, leaving behind only their gear.</p>"
-                },
-                "action->Luminant Aura": {
-                    "name": "Luminant Aura",
-                    "description": "<p>20 feet. The volatile planar energy coursing through a woodblessed's veins fills the area with dim light.</p>"
-                },
-                "action->Reactive Flare": {
-                    "name": "Reactive Flare",
-                    "description": "<p><strong>Trigger</strong> Unaasi is damaged by a creature within their reach</p>\n<hr />\n<p><strong>Effect</strong> Unaasi temporarily loses control of the planar energy within them. Both they and the triggering creature take @Damage[6d6[fire]] damage (@Check[reflex|dc:30|basic] save).</p>"
-                },
-                "action->Scouring Surge": {
-                    "name": "Scouring Surge",
-                    "description": "<p>Unaasi unleashes the planar energy coursing through their body for a split-second, dealing @Damage[11d6[fire]] damage (@Check[reflex|dc:30|basic] save) to all creatures in their luminant aura. They can't use Scouring Surge again for [[/br 1d4 #Recharge Scouring Surge]]{1d4 rounds}.</p>"
-                },
-                "action->Signature Spells": {
-                    "name": "Signature Spells",
-                    "description": "<p>Unaasi can heighten the following spells freely: @UUID[Compendium.pf2e.spells-srd.Item.vLA0q0WOK2YPuJs6]{Charm}, @UUID[Compendium.pf2e.spells-srd.Item.gKKqvLohtrSJj3BM]{Force Barrage}, @UUID[Compendium.pf2e.spells-srd.Item.Fr58LDSrbndgld9n]{Resist Energy}, @UUID[Compendium.pf2e.spells-srd.Item.1bw6XJMOERcbC5Iq]{Rip the Spirit}, @UUID[Compendium.pf2e.spells-srd.Item.szIyEsvihc5e1w8n]{Soothe}.</p>"
-                },
-                "action->Steady Spellcasting": {
-                    "name": "Steady Spellcasting",
-                    "description": "<p>Unaasi is a confident spellcaster and doesn't easily lose their focus. If a reaction would disrupt their spellcasting action, Unaasi attempts a @Check[flat|dc:15]. If they succeed, their action isn't disrupted.</p>"
-                },
-                "action->Tap Planar Gate": {
-                    "name": "Tap Planar Gate",
-                    "description": "<p>Unaasi taps into the planar energy surging through them, using this energy to empower themself or their next attack.</p>\n<ul>\n<li>If their next action is to Stride, Unaasi is launched off the ground and propelled forward. During this Stride, they have a fly Speed equal to their Speed. If they don't end their movement on a solid surface that can support their weight, they fall.</li>\n<li>If their next action is to make a melee or ranged Strike, that Strike deals an additional 3d6 fire damage.</li>\n<li>If their next action is to Cast a Spell, the range of that spell increases by 30 feet, and the area of that spell increases by 10 feet.\n\n</li>\n</ul>"
-                },
-                "lore->Ghoran Memories": {
-                    "name": "Ghoran Memories"
                 }
             }
         },
@@ -2003,21 +1647,6 @@
                 "action->Construct Armor (Hardness 10)": {
                     "name": "Construct Armor (Hardness 10)",
                     "description": "<p>Like normal objects, a giant animated statue has Hardness. This Hardness reduces any damage it takes by an amount equal to the Hardness. Once a giant animated statue is reduced to less than half its Hit Points, or immediately upon being damaged by a critical hit, its construct armor breaks and its Armor Class is reduced to 22.</p>"
-                },
-                "action->Brazier": {
-                    "name": "Brazier",
-                    "description": "<p>The statue carries a wide brazier full of hot coals. To make flaming coal Strikes or use Burn Alive, the statue must have the brazier held in one hand or otherwise have it within reach.</p>\n<p>Instead of targeting the statue with an attack, a creature can target the brazier directly. The brazier has the same AC and saves as the statue.</p>\n<p>Dealing 15 cold damage to the brazier or dousing it with at least 2 gallons of water extinguishes the coals. This prevents the statue from using Burn Alive and causes its ranged attacks to no longer deal fire damage.</p>"
-                },
-                "action->Burn Alive": {
-                    "name": "Burn Alive",
-                    "description": "<p>The statue grinds a creature it has @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed} or @UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{Restrained} into the red-hot coals of its brazier. The target takes @Damage[3d8[cold],1d8[persistent,cold]] damage.</p>"
-                },
-                "action->Fey Fire": {
-                    "name": "Fey Fire",
-                    "description": "<p>The construct's ranged Strike, Brazier, and Burn Alive abilities deal cold damage instead of fire damage, and they do not ignite combustible materials.</p>"
-                },
-                "action->Grab": {
-                    "name": "Grab"
                 }
             }
         },
@@ -2054,10 +1683,6 @@
                 "action->Project Echoblade": {
                     "name": "Project Echoblade",
                     "description": "<p><strong>Requirements</strong> The swordkeeper has a central weapon</p>\n<hr />\n<p><strong>Effect</strong> The swordkeeper projects an echoblade-a force copy of its central weapon that deals @Damage[1d8[force]] damage and gains thrown 30 feet. Echoblades inherit the weapon damage dice, weapon traits, and runes of the central weapon, but no other abilities or activations. The swordkeeper gains access to their critical specialization effects. The swordkeeper can have up to four echoblades at once; unattended echoblades vanish at the end of the swordkeeper's turn.</p>"
-                },
-                "action->Raise Guard": {
-                    "name": "Raise Guard",
-                    "description": "<p><strong>Effect</strong> The swordkeeper raises an echoblade to protect itself, gaining a +2 circumstance bonus to AC until the start of its next turn.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.LohrnRXCQ0yVt8MK]{Effect: Raise Guard}</p>"
                 }
             }
         },
@@ -2213,6 +1838,10 @@
         "items": {
             "converter": "translateActorItems",
             "path": "items"
+        },
+        "rules": {
+            "converter": "translateRules",
+            "path": "system.rules"
         },
         "descriptionHazard": "system.details.description",
         "disable": "system.details.disable",

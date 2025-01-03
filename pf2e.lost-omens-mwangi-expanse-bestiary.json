@@ -167,13 +167,6 @@
                 "action->Attack from Above": {
                     "name": "Attack from Above",
                     "description": "<p><strong>Requirements</strong> The asanbosam is positioned above a creature</p>\n<hr />\n<p><strong>Effect</strong> The asanbosam makes a claw Strike with its reach increased to 15 feet. On a hit, the Strike deals an additional @Damage[1d6[slashing]] damage and the asanbosam immediately Grabs the target and pulls it to a space adjacent to the asanbosam.</p>\n<p>This counts as two attacks for the asanbosam's multiple attack penalty.</p>"
-                },
-                "action->Drink Blood": {
-                    "name": "Drink Blood",
-                    "description": "<p><strong>Requirements</strong> A @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed}, @UUID[Compendium.pf2e.conditionitems.Item.6uEgoh53GbXuHpTF]{Paralyzed}, @UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{Restrained}, @UUID[Compendium.pf2e.conditionitems.Item.fBnFDH2MTzgFijKf]{Unconscious}, or willing creature is within reach of the asanbosam's jaws</p>\n<hr />\n<p><strong>Effect</strong> The asanbosam sinks its teeth into the creature to drink its blood. If the victim is grabbed, this is automatic; otherwise, the asanbosam must succeed at an @Check[athletics|defense:fortitude] check against the victim's Fortitude DC. The victim becomes @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 1} and the asanbosam regains @Damage[10[healing]] HP, gaining any excess Hit Points beyond its maximum as temporary Hit Points. These temporary Hit Points remain for 1 minute.</p>\n<p>Drinking Blood from a creature that's already drained increases the victim's drained value by 1 to a maximum of drained 3, but doesn't restore any HP to the asanbosam.</p>\n<p>A victim's drained condition decreases by 1 each week. A blood transfusion, which requires a successful @Check[medicine|dc:20|name:Drink Blood Treatment] check and a blood donor or sufficient blood, reduces the drained value by 1 after 10 minutes.</p>"
-                },
-                "action->Grab": {
-                    "name": "Grab"
                 }
             }
         },
@@ -314,18 +307,6 @@
                 "action->Mauler": {
                     "name": "Mauler",
                     "description": "<p>While the charau-ka butcher is raging, its melee Strikes deal @Damage[1d4[bleed]].</p>"
-                },
-                "action->Rage": {
-                    "name": "Rage",
-                    "description": "<p><strong>Requirements</strong> The Charau-ka Butcher isn't @UUID[Compendium.pf2e.conditionitems.Item.HL2l2VRSaQHu9lUw]{Fatigued} or raging</p>\n<p>The Charau-ka Butcher taps into its inner fury and begins raging. The Charau-ka Butcher gains a number of temporary Hit Points equal to it's level plus it's Constitution modifier. This frenzy lasts for 1 minute, until there are no enemies they can perceive, or until they fall unconscious, whichever comes first. They can't voluntarily stop raging. While they are raging:</p>\n<ul>\n<li>They deal 2 additional damage on melee Strikes. This additional damage is halved if their weapon or unarmed attack is agile.</li>\n<li>They take a -1 penalty to AC.</li>\n<li>They can't use actions with the concentrate trait unless they also have the rage trait. They can Seek while raging.</li>\n</ul>\n<p>After they stop raging, they lose any remaining temporary Hit Points from Rage, and they can't Rage again for 1 minute.</p>\n<p>@UUID[Compendium.pf2e.feat-effects.Item.z3uyCMBddrPK5umr]{Effect: Rage}</p>"
-                },
-                "action->Shrieking Frenzy": {
-                    "name": "Shrieking Frenzy",
-                    "description": "<p><strong>Trigger</strong> The charau-ka's turn begins.</p>\n<p><strong>Frequency</strong> once per hour</p>\n<hr />\n<p><strong>Effect</strong> The charau-ka is @UUID[Compendium.pf2e.conditionitems.Item.nlCjDvLMf2EkV2dl]{Quickened} until the end of its turn, and can use the extra action to Stride or Strike.</p>\n<p>While in the frenzy, the charau-ka can't speak and automatically critically fails Stealth checks, due to its loud wailing.</p>"
-                },
-                "action->Thrown Weapon Mastery": {
-                    "name": "Thrown Weapon Mastery",
-                    "description": "<p>Any weapon a charau-ka throws gains the deadly d6 weapon trait.</p>\n<p>Furthermore, when a charau-ka throws an improvised weapon, it does not take the -2 penalty for doing so, nor does it take a penalty for using a thrown improvised weapon with the nonlethal trait to make a lethal attack.</p>"
                 }
             }
         },
@@ -531,17 +512,6 @@
                 "action->Sound Imitation": {
                     "name": "Sound Imitation",
                     "description": "<p>A karina who succeeds at a Deception check to Lie can mimic any voice they have heard. They have a +4 circumstance bonus to this check.</p>"
-                },
-                "action->Grave Blight": {
-                    "name": "Grave Blight",
-                    "description": "<p><strong>Saving Throw</strong> @Check[fortitude|dc:19]</p>\n<p><strong>Stage 1</strong> carrier with no ill effect (1 day)</p>\n<p><strong>Stage 2</strong> @Damage[1d6[poison]] damage, @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 1} (1 day)</p>\n<p><strong>Stage 3</strong> @Damage[1d8[poison]] damage, every hour the victim must succeed at another Fortitude save or be @UUID[Compendium.pf2e.conditionitems.Item.yblD8fOR1J8rDwEQ]{Confused} for 1 minute, @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 2} (1 day)</p>"
-                },
-                "action->Mocking Cry": {
-                    "name": "Mocking Cry",
-                    "description": "<p>The Karina mimics a voice and mocks a creature within 30 feet. They attempt a Deception check to Demoralize the creature.</p>\n<p>Regardless of whether the check succeeds, the target creature is temporarily immune to the Karina's Mocking Cry for 1 hour.</p>"
-                },
-                "action->Grab": {
-                    "name": "Grab"
                 }
             }
         },
@@ -621,17 +591,6 @@
                 "action->Luminous Lure": {
                     "name": "Luminous Lure",
                     "description": "<p>30 feet. The mamlambo emits dim light from its skin. A creature that enters or begins its turn in the aura must attempt a @Check[will|dc:23] save. Humanoids take a -2 penalty to this saving throw.</p>\n<p>Regardless of the save's result, the creature is temporarily immune for 10 minutes.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1} for 1 round.</p>\n<p><strong>Failure</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.AdPVz7rbaVSRxHFg]{Fascinated}, and for as long as it is in the aura it must spend at least 1 of its actions on each of its turns to move closer to the mamlambo as expediently as possible, while avoiding obvious dangers. If the creature ends its movement or turn adjacent to the mamlambo, it is Slowed 1 until it is out of the aura or until the mamlambo makes a Strike against it.</p>\n<p>The target can attempt a new Will save at the beginning of each of their subsequent turns, and on a success, the effect ends.</p>\n<p><strong>Critical Failure</strong> As failure, but the creature must spend each of its actions moving closer to the mamlambo, and if it ends its movement or turn adjacent to the mamlambo, it is @UUID[Compendium.pf2e.conditionitems.Item.6uEgoh53GbXuHpTF]{Paralyzed} until it is out of the aura or until the mamlambo makes a Strike against it.</p>"
-                },
-                "action->Aquatic Ambush": {
-                    "name": "Aquatic Ambush",
-                    "description": "<p>50 feet</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.AquaticAmbush]</p>"
-                },
-                "action->Face Eater": {
-                    "name": "Face Eater",
-                    "description": "<p><strong>Requirements</strong> The mamlambo has a creature @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed} or @UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{Restrained}, or there is a @UUID[Compendium.pf2e.conditionitems.Item.yZRUzMqrMmfLu0V1]{Dying}, @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Immobilized}, or @UUID[Compendium.pf2e.conditionitems.Item.fBnFDH2MTzgFijKf]{Unconscious} creature within the mamlambo's reach</p>\n<hr />\n<p><strong>Effect</strong> The mamlambo deals @Damage[(2d8+11)[piercing]] damage to the creature (@Check[fortitude|dc:28|basic] save).</p>\n<p>On a failure, the creature also takes an additional @Damage[2d6[bleed]], or @Damage[4d6[bleed]] on a critical failure.</p>"
-                },
-                "action->Improved Grab": {
-                    "name": "Improved Grab"
                 }
             }
         },
@@ -740,21 +699,6 @@
                 "action->Blinding Halo": {
                     "name": "Blinding Halo",
                     "description": "<p>30 feet. The solar ibis's halo sheds bright light. Creatures that start their turn in the aura must succeed at a @Check[fortitude|dc:22] save or be @UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]{Dazzled} for 1 minute. A creature that critically fails its save is instead @UUID[Compendium.pf2e.conditionitems.Item.XgEqL1kFApUbl5Z2]{Blinded} for 1 minute.</p>\n<p>Creatures who successfully save are temporarily immune to this effect for 24 hours.</p>\n<p>The solar ibis can extinguish or resume the halo's light as a single action, which has the concentrate trait.</p>"
-                },
-                "action->Evasion": {
-                    "name": "Evasion",
-                    "description": "<p>When a solar ibis succeeds at a Reflex save, it gets a critical success instead.</p>"
-                },
-                "action->Ibis Dive": {
-                    "name": "Ibis Dive",
-                    "description": "<p>The solar ibis Flies up to double its fly Speed in a straight line, descends at least 10 feet, and then makes a talon Strike.</p>"
-                },
-                "action->Light Shatter": {
-                    "name": "Light Shatter",
-                    "description": "<p>The solar ibis detonates its halo, sending shards of burning light in all directions that deal @Damage[6d8[fire]] damage to all creatures in a @Template[emanation|distance:20] (@Check[reflex|dc:22|basic] save). The shards deal an extra @Damage[6d8[spirit]] damage against fiends and undead.</p>\n<p>The solar ibis can't use Light Shatter again for [[/br 1d4 #Recharge Light Shatter]] rounds, and its Blinding Halo is extinguished during this time. The halo is restored automatically once the 1d4 rounds have passed.</p>"
-                },
-                "action->Grab": {
-                    "name": "Grab"
                 }
             }
         },
@@ -815,6 +759,10 @@
         "items": {
             "converter": "translateActorItems",
             "path": "items"
+        },
+        "rules": {
+            "converter": "translateRules",
+            "path": "system.rules"
         }
     }
 }

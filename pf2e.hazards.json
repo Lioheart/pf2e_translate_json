@@ -62,10 +62,6 @@
                 "action->Emit Cold": {
                     "name": "Emit Cold",
                     "description": "<p>5 feet. Brown mold deals @Damage[2d6[cold]] damage to nearby creatures.</p>"
-                },
-                "action->Leech Warmth": {
-                    "name": "Leech Warmth",
-                    "description": "<p><strong>Trigger</strong> Fire comes within 5 feet of the brown mold.</p>\n<hr />\n<p><strong>Effect</strong> The brown mold expands into every square adjacent to its space. As it grows, it pulls more heat from its surroundings, dealing @Damage[(2d6+6)[cold]] damage (@Check[fortitude|dc:18|basic] save) to creatures within 10 feet after it expands.</p>"
                 }
             }
         },
@@ -702,17 +698,6 @@
                 "action->Snap Shut": {
                     "name": "Snap Shut",
                     "description": "<p><strong>Trigger</strong> A Small or Medium creature moves into a square that is within reach of the flytrap's hidden jaws</p>\n<hr />\n<p><strong>Effect</strong> The flytrap's jaws snap shut, making a jaws Strike against the triggering creature.</p>"
-                },
-                "strike-melee->Jaws": {
-                    "name": "Jaws"
-                },
-                "action->Devour": {
-                    "name": "Devour",
-                    "description": "<p>The target is trapped by the flytrap's jaws, gaining the @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed} condition until it Escapes (DC 21). Additionally, it is exposed to the titanic flytrap toxin from the hundreds of tiny hairs that line the inside of its leaves. If the flytrap's jaws Strike was a critical success, the target takes a \u20132 circumstance penalty to its saving throws against this poison. At the end of each of the target's turns that it remains grabbed, the target takes @Damage[3d6[acid]] damage.</p>"
-                },
-                "action->Titanic Flytrap Toxin": {
-                    "name": "Titanic Flytrap Toxin",
-                    "description": "<p><strong>Saving Throw</strong> @Check[fortitude|dc:21]</p>\n<p><strong>Maximum Duration</strong> 4 rounds</p>\n<p><strong>Stage 1</strong> @Damage[2d6[poison]] damage and @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned 1} (1 round)</p>\n<p><strong>Stage 2</strong> @Damage[3d6[poison]] damage and @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned 2} (1 round)</p>\n<p><strong>Stage 3</strong> @Damage[4d6[poison]] damage and @UUID[Compendium.pf2e.conditionitems.Item.6uEgoh53GbXuHpTF]{Paralyzed} (1 round)</p>"
                 }
             }
         },
@@ -820,6 +805,10 @@
         "items": {
             "converter": "translateActorItems",
             "path": "items"
+        },
+        "rules": {
+            "converter": "translateRules",
+            "path": "system.rules"
         },
         "hpDetails": "system.attributes.hp.details"
     }

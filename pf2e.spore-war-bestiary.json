@@ -61,20 +61,6 @@
                 "weapon->+2 Striking Staff of Control (Greater)": {
                     "name": "+2 Striking Staff of Control (Greater)",
                     "description": "<p>An array of dazzling gemstones lines the twisting head of the golden staff. While wielding the staff, you gain a +1 status bonus to Diplomacy checks to make a @UUID[Compendium.pf2e.actionspf2e.Item.DCb62iCBrJXy0Ik6]{Request}.</p>\n<p><strong>Activate</strong> Cast a Spell</p>\n<hr />\n<p><strong>Effect</strong> You expend a number of charges from the staff to cast a spell from its list.</p>\n<ul>\n<li><strong>Cantrip</strong> @UUID[Compendium.pf2e.spells-srd.Item.4gBIw4IDrSfFHik4]{Daze}</li>\n<li><strong>1st</strong> @UUID[Compendium.pf2e.spells-srd.Item.vLA0q0WOK2YPuJs6]{Charm}, @UUID[Compendium.pf2e.spells-srd.Item.aIHY2DArKFweIrpf]{Command}</li>\n<li><strong>2nd</strong> @UUID[Compendium.pf2e.spells-srd.Item.tlSE7Ly8vi1Dgddv]{Laughing Fit}, @UUID[Compendium.pf2e.spells-srd.Item.CQb8HtQ1BPeZmu9h]{Stupefy}</li>\n<li><strong>3rd</strong> @UUID[Compendium.pf2e.spells-srd.Item.IihxWhRfpsBgQ5jS]{Enthrall}</li>\n<li><strong>4th</strong> @UUID[Compendium.pf2e.spells-srd.Item.vLA0q0WOK2YPuJs6]{Charm}, @UUID[Compendium.pf2e.spells-srd.Item.LiGbewa9pO0yjbsY]{Confusion}, @UUID[Compendium.pf2e.spells-srd.Item.qwlh6aDgi86U3Q7H]{Suggestion}</li>\n</ul>\n<p><strong>Craft Requirements</strong> Supply one casting of all listed ranks of all listed spells.</p>"
-                },
-                "equipment->Demon Mask (Greater, Appears as a Mask of Razmir)": {
-                    "name": "Demon Mask (Greater, Appears as a Mask of Razmir)",
-                    "description": "<p>This terrifying mask is crafted in the visage of a leering demon and grants a +2 item bonus to Intimidation checks.</p>\n<p><strong>Activate\u2014Leering Mask</strong> <span class=\"action-glyph\">2</span> (manipulate)</p>\n<p><strong>Frequency</strong> once per day</p>\n<hr />\n<p><strong>Effect</strong> The mask casts a 3rd-rank @UUID[Compendium.pf2e.spells-srd.Item.4koZzrnMXhhosn0D]{Fear} spell with a DC of 29.</p>"
-                },
-                "equipment->Black Razmir Robes": {
-                    "name": "Black Razmir Robes"
-                },
-                "equipment->Iron Key": {
-                    "name": "Iron Key"
-                },
-                "consumable->Healing Potion (Moderate)": {
-                    "name": "Healing Potion (Moderate)",
-                    "description": "<p><strong>Activate</strong> <span class=\"action-glyph\">A</span> (manipulate)</p><hr /><p>A <em>healing potion</em> is a vial of a ruby-red liquid that imparts a tingling sensation as the drinker's wounds heal rapidly. When you drink a <em>healing potion</em>, you regain @Damage[(3d8+10)[healing]] Hit Points.</p>"
                 }
             }
         },
@@ -104,22 +90,6 @@
                 },
                 "action->+1 Status to All Saves vs. Magic": {
                     "name": "+1 Status to All Saves vs. Magic"
-                },
-                "action->Harmony Vulnerability": {
-                    "name": "Harmony Vulnerability",
-                    "description": "<p>An eshmok's wrathful infestations defines them, and forcing peace upon them wrenches at their soul. If they fail a save against calm or a similar effect forcing them to be peaceful, an eshmok takes @Damage[4d6[mental]] damage.</p>"
-                },
-                "action->Change Shape": {
-                    "name": "Change Shape",
-                    "description": "<p>The eshmok turns into their fungus form or back into their normal humanoid wasp form. In fungus form, they lose their fly Speed and can't make stinger Strikes. In wasp form, they gain a tendril melee Strike (+21 for 2d8+9 slashing plus eshmok infection); the tendril strike has the agile, magical, reach 10 feet, and unholy traits.</p><hr /><p>@Localize[PF2E.NPC.Abilities.Glossary.ChangeShape]</p>"
-                },
-                "action->Eshmok Infection": {
-                    "name": "Eshmok Infection",
-                    "description": "<p>A creature that's @UUID[Compendium.pf2e.conditionitems.Item.nlCjDvLMf2EkV2dl]{Quickened} by eshmok infection can use the extra action each round for only Strike actions. A creature that's @UUID[Compendium.pf2e.conditionitems.Item.yblD8fOR1J8rDwEQ]{Confused} by eshmok infection never considers an eshmok in fungal form as a target</p>\n<p><strong>Saving Throw</strong> @Check[will|dc:28]</p>\n<p><strong>Maximum Duration</strong> 6 rounds</p>\n<p><strong>Stage 1</strong> confused (1 round)</p>\n<p><strong>Stage 2</strong> confused and quickened (1 round)</p>\n<p><strong>Stage 3</strong> confused, @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard}, and quickened (1 round)</p>"
-                },
-                "action->Infesting Exhalation": {
-                    "name": "Infesting Exhalation",
-                    "description": "<p>The eshmok exhales a wave of stinging fiendish wasps out in a @Template[type:cone|distance:30], dealing @Damage[4d8[poison]] damage to every creature within the cone (@Check[reflex|dc:28|basic] save). The swarming fiend wasps linger in the area for 6 rounds or until the eshmok is able to use Infesting Exhalation again, whichever comes first. Each creature damaged by Infesting Exhalation or that enters the area must succeed at a @Check[fortitude|dc:28] save or take @Damage[2d8[persistent,poison]] damage and become @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 1} as the poison renders them dizzy and nauseous. At the end of each of their turns, they can attempt a new Fortitude save to end the effects. The eshmok can't use Infesting Exhalation again for [[/gmr 1d6 #Recharge Infesting Exhalation]]{1d6 rounds}.</p>"
                 }
             }
         },
@@ -283,22 +253,6 @@
                 "equipment->Marvelous Medicines (Stored in Retrieval Belt)": {
                     "name": "Marvelous Medicines (Stored in Retrieval Belt)",
                     "description": "<p>This healer's toolkit contains a seemingly endless supply of bandages, herbs, and healing items of impeccable quality, granting you a +2 item bonus to Medicine checks.</p>\n<p>If you use the <em>marvelous medicines</em> when you @UUID[Compendium.pf2e.actionspf2e.Item.KjoCEEmPGTeFE4hh]{Treat Poison} or @UUID[Compendium.pf2e.actionspf2e.Item.TC7OcDa7JlWbqMaN]{Treat Disease}, before you roll your check, the medicines attempt to counteract the poison or disease you're treating, with a counteract rank of 5 and a counteract modifier of [[/r 1d20+21 #Counteract]]{+21}. This is a healing effect.</p>\n<p>The medicines can't be used to treat the same affliction for that patient again</p>"
-                },
-                "equipment->Retrieval Belt (Major)": {
-                    "name": "Retrieval Belt (Major)",
-                    "description": "<p>This belt is covered in small pouches that clasp with buttons of painstakingly carved stone. The belt is tied to an extradimensional space that can hold up to ten items of 1 Bulk or less. Anyone holding the belt can sense its contents, but only those who've invested it can store or retrieve items. Many retrieval belts are found with an item already inside.</p>\n<hr />\n<p><strong>Activate\u2014Store Item</strong> <span class=\"action-glyph\">1</span> (manipulate)</p>\n<p><strong>Requirements</strong> There is room for an item in the belt</p>\n<p><strong>Effect</strong> One item you're holding with a Bulk of 1 or less vanishes into the belt's extradimensional space.</p>\n<hr />\n<p><strong>Activate\u2014Retrieve Item</strong> <span class=\"action-glyph\">F</span> (manipulate)</p>\n<p><strong>Requirements</strong> An item is stored in the belt and you have a free hand</p>\n<p><strong>Effect</strong> The item stored in the belt appears in your hand. Neither Store Item nor Retrieve Item can be activated again for 1 minute.</p>"
-                },
-                "consumable->Healing Potion (Greater) (Stored in Retrieval Belt)": {
-                    "name": "Healing Potion (Greater) (Stored in Retrieval Belt)",
-                    "description": "<p><strong>Activate</strong> <span class=\"action-glyph\">A</span> (manipulate)</p><hr /><p>A <em>healing potion</em> is a vial of a ruby-red liquid that imparts a tingling sensation as the drinker's wounds heal rapidly. When you drink a <em>healing potion</em>, you regain @Damage[(6d8+20)[healing]] Hit Points.</p>"
-                },
-                "consumable->Potion of Fire Resistance (Moderate) (Stored in Retrieval Belt)": {
-                    "name": "Potion of Fire Resistance (Moderate) (Stored in Retrieval Belt)",
-                    "description": "<p><strong>Activate</strong> <span class=\"action-glyph\">A</span> (manipulate)</p>\n<hr />\n<p>Drinking this thick, fortifying potion grants resistance 10 against fire damage for 1 hour.</p>\n<p>@UUID[Compendium.pf2e.equipment-effects.Item.8zKGaGrkTd8ALqJO]{Effect: Potion of Fire Resistance (Moderate)}</p>"
-                },
-                "consumable->Wand of Lightning Bolt (Rank 5) (Stored in Retrieval Belt)": {
-                    "name": "Wand of Lightning Bolt (Rank 5) (Stored in Retrieval Belt)",
-                    "description": "<p>@UUID[Compendium.pf2e.spells-srd.Item.9AAkVUCwF6WVNNY2]{Lightning Bolt}</p><hr /><p>This baton is about a foot long and contains a single spell. The appearance typically relates to the spell within.</p>\n<p><strong>Activate</strong> Cast a Spell</p>\n<p><strong>Frequency</strong> once per day, plus overcharge</p>\n<hr />\n<p><strong>Effect</strong> You Cast the Spell at the indicated rank.</p>\n<p><strong>Craft Requirements</strong> Supply a casting of the spell at the listed rank.</p>\n<hr />\n<p><em>Note: To create a scroll or wand of a specific spell, drag the spell from the compendium or compendium browser into the inventory of a PC, NPC, or loot actor.</em></p>"
                 }
             }
         }
@@ -321,6 +275,10 @@
         "items": {
             "converter": "translateActorItems",
             "path": "items"
+        },
+        "rules": {
+            "converter": "translateRules",
+            "path": "system.rules"
         }
     }
 }

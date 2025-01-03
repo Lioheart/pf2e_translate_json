@@ -46,9 +46,6 @@
                 "action->Sneak Attack": {
                     "name": "Sneak Attack",
                     "description": "<p>The ailuran deals 1d6 extra precision damage to @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} creatures.</p>"
-                },
-                "lore->Lore": {
-                    "name": "Lore"
                 }
             }
         },
@@ -172,18 +169,6 @@
                 "action->Maternal Aura": {
                     "name": "Maternal Aura",
                     "description": "<p>50 feet. All creatures who have a tragic backstory in which they've lost their parents take a -4 penalty to all Will saves as they are suddenly overcome with feelings of maternal love.</p>"
-                },
-                "action->Shut It": {
-                    "name": "Shut It",
-                    "description": "<p><strong>Trigger</strong> A creature targets the demom with a hostile spell that has a verbal component.</p>\n<hr />\n<p><strong>Effect</strong> The demom says, \"Don't talk back to me!\" The caster must attempt a @Check[will|dc:18] save; on a failure, it promptly shuts its mouth and stares at the ground contemplating how it doesn't deserve this.</p>"
-                },
-                "action->Ground Target": {
-                    "name": "Ground Target",
-                    "description": "<p>The demom narrows its eyes at a target and declares \"You're grounded!\" The target creature must attempt a @Check[will|dc:18] save; on a failure, it must lay down its weapons, set up camp, and sit in its tent.</p>"
-                },
-                "action->There, There": {
-                    "name": "There, There",
-                    "description": "<p><strong>Requirements</strong> The demom has a creature grabbed.</p>\n<hr />\n<p><strong>Effect</strong> The demom embraces the creature and pats its back soothingly as it whispers reassurances, restoring 10 Hit Points to the creature.</p>"
                 }
             }
         },
@@ -200,7 +185,10 @@
                 },
                 "equipment->Snare Kit (Specialist)": {
                     "name": "Snare Kit (Specialist)",
-                    "description": "<p>This kit contains tools and materials for creating snares. A snare kit allows you to Craft snares using the Crafting skill. A specialist snare kit gives you a +1 item bonus to the check.</p>"
+                    "description": "<p>This kit contains tools and materials for creating snares. A snare kit allows you to Craft snares using the Crafting skill. A specialist snare kit gives you a +1 item bonus to the check.</p>",
+                    "rules": {
+                        "0": "Snare Kit (Craft snares)"
+                    }
                 },
                 "consumable->Alarm Snare": {
                     "name": "Alarm Snare",
@@ -233,13 +221,6 @@
                 "action->Sneak Attack": {
                     "name": "Sneak Attack",
                     "description": "<p>Duhgik deals an extra 1d6 precision damage to @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} creatures.</p>"
-                },
-                "action->Surprise Snare": {
-                    "name": "Surprise Snare",
-                    "description": "<p>Duhgik installs one of her snares prepared for quick deployment in a space that's occupied by an opponent. It must be a snare that normally takes 1 minute or less to Craft. The snare automatically triggers, but it takes a -2 circumstance penalty to any applicable save DC, as well as any attack rolls or other checks the snare attempts.</p>"
-                },
-                "lore->Lore": {
-                    "name": "Lore"
                 }
             }
         },
@@ -286,9 +267,6 @@
                 "action->Sneak Attack": {
                     "name": "Sneak Attack",
                     "description": "<p>Edolpho deals an extra 1d6 precision damage to @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} creatures.</p>"
-                },
-                "lore->Lore": {
-                    "name": "Lore"
                 }
             }
         },
@@ -302,31 +280,6 @@
                 "weapon->Visperath": {
                     "name": "Visperath",
                     "description": "<p>Visperath deals an additional 1 acid damage, and an additional 1d4 persistent acid damage on a critical hit.</p>"
-                },
-                "armor->Breastplate": {
-                    "name": "Breastplate",
-                    "description": "<p>Though referred to as a breastplate, this type of armor consists of several pieces of plate or half-plate armor that protect the torso, chest, neck, and sometimes the hips and lower legs. It strategically grants some of the protection of plate while allowing greater flexibility and speed.</p>"
-                },
-                "equipment->Rope": {
-                    "name": "Rope",
-                    "description": "<p>50 feet of rope.</p>"
-                },
-                "consumable->Healing Potion (Minor)": {
-                    "name": "Healing Potion (Minor)",
-                    "description": "<p>A healing potion is a vial of a ruby-red liquid that imparts a tingling sensation as the drinker's wounds heal rapidly. When you drink a healing potion, you regain @Damage[1d8[healing]] Hit Points.</p>"
-                },
-                "strike-melee->Visperath": {
-                    "name": "Visperath"
-                },
-                "action->Attack of Opportunity": {
-                    "name": "Attack of Opportunity"
-                },
-                "action->Lunge": {
-                    "name": "Lunge",
-                    "description": "<p>Eleukas makes a Strike with a melee weapon, increasing the reach of the Strike by 5 feet.</p>"
-                },
-                "action->Power Attack": {
-                    "name": "Power Attack"
                 }
             }
         },
@@ -362,26 +315,6 @@
                 "action->Frightful Presence": {
                     "name": "Frightful Presence",
                     "description": "<p>90 feet. @Check[will|dc:37]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.FrightfulPresence]</p>"
-                },
-                "action->Wing Deflection": {
-                    "name": "Wing Deflection",
-                    "description": "<p><strong>Trigger</strong> The dragon is targeted with an attack.</p>\n<hr />\n<p><strong>Effect</strong> The dragon raises its wing, gaining a +2 circumstance bonus to AC against the triggering attack. If the dragon is flying, it descends 10 feet after the attack is complete.</p>"
-                },
-                "action->Breath Weapon": {
-                    "name": "Breath Weapon",
-                    "description": "<p>The brass dragon breathes in one of two ways.</p>\n<p>The dragon can't use Breath Weapon again for [[/br 1d4 #Recharge Breath Weapon]]{1d4 rounds}.</p>\n<ul>\n<li><strong>Flame</strong> The dragon breathes fire in a @Template[line|distance:100] that deals @Damage[16d6[fire]] damage (@Check[reflex|dc:41|basic] save).</li>\n<li><strong>Sleep Gas</strong> The dragon breathes an @Template[cone|distance:80] of sleep gas. Each creature within the cone must succeed at a @Check[fortitude|dc:41] save or fall @UUID[Compendium.pf2e.conditionitems.Item.fBnFDH2MTzgFijKf]{Unconscious} for [[/br 1d6 #rounds]]{1d6 rounds}, or 1 minute on a critical failure.</li></ul>"
-                },
-                "action->Desert Wind": {
-                    "name": "Desert Wind",
-                    "description": "<p><strong>Frequency</strong> three times per day.</p>\n<hr />\n<p><strong>Effect</strong> The dragon calls upon the desert wind. This has the same effect as @UUID[Compendium.pf2e.spells-srd.Item.g8QqHpv2CWDwmIm1]{Gust of Wind} (@Check[fortitude|dc:39]) but in a @Template[cone|distance:60]. A creature that fails its save is also blinded until the end of its next turn (or for 1 minute on a critical failure).</p>"
-                },
-                "action->Draconic Frenzy": {
-                    "name": "Draconic Frenzy",
-                    "description": "<p>The dragon makes two claw Strikes and one jaws Strike in any order.</p>"
-                },
-                "action->Draconic Momentum": {
-                    "name": "Draconic Momentum",
-                    "description": "<p>When the dragon scores a critical hit with a strike, it recharges Breath Weapon.</p>"
                 }
             }
         },
@@ -493,9 +426,6 @@
                 "action->Sneak Attack": {
                     "name": "Sneak Attack",
                     "description": "<p>The kobold tunnelrunner deals an extra 1d4 precision damage to @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} creatures.</p>"
-                },
-                "lore->Lore": {
-                    "name": "Lore"
                 }
             }
         },
@@ -531,13 +461,6 @@
                 "action->Healing Hands": {
                     "name": "Healing Hands",
                     "description": "<p>When Lisavet casts heal, she rolls d10s instead of d8s.</p>"
-                },
-                "action->Turn Undead": {
-                    "name": "Turn Undead",
-                    "description": "<p>When Lisavet uses heal to damage undead, each level 2 or lower undead that critically fails its save gains the fleeing condition for 1 round.</p>"
-                },
-                "lore->Lore": {
-                    "name": "Lore"
                 }
             }
         },
@@ -553,18 +476,6 @@
                 "action->Mostly Harmless": {
                     "name": "Mostly Harmless",
                     "description": "<p>The Mari Lwyd is out simply to enjoy the season. The Mari Lwyd's attacks have the nonlethal trait when attacking creatures, unless those creatures attempt a hostile action on the Mari Lwyd first.</p>"
-                },
-                "action->Persistent Wassailing": {
-                    "name": "Persistent Wassailing",
-                    "description": "<p>The Mari Lwyd cannot be disrupted by common means. It always knows if a building is truly unoccupied or if the occupants can speak and hear and are merely refusing to sing back, and it is immune to @UUID[Compendium.pf2e.spells-srd.Item.gIdDLrbswTV3OBJy]{Silence} and similar effects of up to 5th level.</p>"
-                },
-                "action->Festive Rampage": {
-                    "name": "Festive Rampage",
-                    "description": "<p><strong>Requirements</strong> The Mari Lwyd enters a building after winning the Pwnco, and was not both told to behave itself and offered alcohol or cheese</p>\n<hr />\n<p><strong>Effect</strong> The Mari Lwyd flies into a destructive celebratory rampage. As long as the Mari Lwyd remains in the building, it gains resistance 10 to all damage and its strikes ignore 10 Hardness. The Mari Lwyd loses the benefits of this ability if it attacks a living creature, and typically smashes furniture instead.</p>"
-                },
-                "action->Pwnco": {
-                    "name": "Pwnco",
-                    "description": "<p>The Mari Lwyd begins a rhyming contest, requesting entrance to a closed home, tavern, or other building that has occupants who can respond in it. It rolls a @Check[performance] check. Before the Mari Lwyd's next turn, one occupant must respond to the Mari Lwyd's request by spending three actions to Perform a song of their own. The DC for the respondent's song is equal to the result of the Mari Lwyd's Performance check. If the building is occupied and no one responds, this has the effects of a critical failure.</p>\n<hr />\n<p><strong>Critical Success</strong> The respondents win the Pwnco, causing the Mari Lwyd to depart.</p>\n<p><strong>Success</strong> The response is good, and the Pwnco continues. The Mari Lwyd must use Pwnco again on its next turn. It takes a -2 circumstance penalty to its Performance check or increases its current circumstance penalty by 2, whichever is worse.</p>\n<p><strong>Failure</strong> The respondents lose the Pwnco! The Mari Lwyd demands hospitality, causing the door to unlock and open and any barriers at the door to move out of the way. If the door is magically sealed, the Mari Lwyd attempts to counteract the effect (counteract rank 11, counteract modifier [[/r 1d20+22 #Counteract Modifier]]{+22}). If no occupant of the building offers the Mari Lwyd alcohol or cheese before the start of its next turn and demands that it behave itself, the Mari Lwyd can use Festive Rampage at the start of its next turn.</p>\n<p><strong>Critical Failure</strong> As failure, but due to the ineptitude of the response, the Mari Lwyd counteracts magical effects with a counteract rank of 15 and modifier of [[/r 1d20+30 #Counteract Modifer]]{+30}, and it must be offered twice as much alcohol or cheese.</p>"
                 }
             }
         },
@@ -670,18 +581,6 @@
                 },
                 "action->Void Healing": {
                     "name": "Void Healing"
-                },
-                "action->Aquatic Ambush": {
-                    "name": "Aquatic Ambush",
-                    "description": "<p>30 feet</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.AquaticAmbush]</p>"
-                },
-                "action->Dead Gaze": {
-                    "name": "Dead Gaze",
-                    "description": "<p>Look into its beady little eyes. You are now @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned} for 1 round unless you succeeded on a @Check[will|dc:20] save.</p>"
-                },
-                "action->Squeak of Doom": {
-                    "name": "Squeak of Doom",
-                    "description": "<p>The nosferotter lets out an ominous, but cute, squeak. All creatures within 30 feet must attempt a @Check[will|dc:20] save.</p>\n<p>They are then temporarily immune for 1 day.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature can do nothing but wonder whether the nosferotter is cute or terrifying for 1 round.</p>\n<p><strong>Failure</strong> The creature is so confused that it attacks its allies for 1 round.</p>\n<p><strong>Critical Failure</strong> As failure, but permanently. It's that bad.</p>"
                 }
             }
         },
@@ -759,21 +658,6 @@
                 "action->Dander": {
                     "name": "Dander",
                     "description": "<p>30 feet. Any time a nonfeline creature within the aura attempts to use an action that has the concentrate trait, it must attempt a @Check[flat|dc:5] check. On a failure, the action is lost as the creature is too distracted by sneezing to act.</p>"
-                },
-                "action->Pounce": {
-                    "name": "Pounce",
-                    "description": "<p>The psstpsstmitl Strides and makes a Strike at the end of that movement. If the psstpsstmitl began this action @UUID[Compendium.pf2e.conditionitems.Item.iU0fEDdBp3rXpTMC]{Hidden}, it remains hidden until after this ability's Strike.</p>"
-                },
-                "action->Sneak Attack": {
-                    "name": "Sneak Attack",
-                    "description": "<p>The psstpsstmitl deals 2d6 extra precision damage to @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} creatures</p>"
-                },
-                "action->Topple": {
-                    "name": "Topple",
-                    "description": "<p>The psstpsstmitl swipes one giant paw across the battlefield in a @Template[cone|distance:30]. All creatures in the cone must attempt a Reflex save.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target is pushed 10 feet away from the psstpsstmitl and is knocked @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone}</p>\n<p><strong>Failure</strong> The target is pushed 20 feet away from the psstpsstmitl and is knocked prone.</p>\n<p><strong>Critical Failure</strong> As failure, and the target is @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned 2}</p>"
-                },
-                "action->Grab": {
-                    "name": "Grab"
                 }
             }
         },
@@ -793,17 +677,6 @@
                 "action->Chittering": {
                     "name": "Chittering",
                     "description": "<p>60 feet. The chitters of wind-buffeted squirrels disrupts the senses, making air and ground within the emanation difficult terrain for all creatures that hear the sound.</p>"
-                },
-                "action->Squirrel Surge": {
-                    "name": "Squirrel Surge",
-                    "description": "<p>Each enemy within the squirrelwind's chittering aura takes @Damage[1d8[slashing]] damage.</p>"
-                },
-                "action->Swiftness": {
-                    "name": "Swiftness",
-                    "description": "<p>The squirrelwind's movement doesn't trigger reactions.</p>"
-                },
-                "action->Push 10 feet": {
-                    "name": "Push 10 feet"
                 }
             }
         },
@@ -842,9 +715,6 @@
                 "action->Sneak Attack": {
                     "name": "Sneak Attack",
                     "description": "<p>Urok deals an extra 2d6 precision damage to @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} creatures.</p>"
-                },
-                "lore->Lore": {
-                    "name": "Lore"
                 }
             }
         },
@@ -889,17 +759,6 @@
                 "action->Nimble Dodge": {
                     "name": "Nimble Dodge",
                     "description": "<p><strong>Trigger</strong> Wendlyn is targeted with an attack by an attacker she can see</p>\n<hr />\n<p><strong>Effect</strong> Wendlyn gains a +2 circumstance bonus to AC against the triggering attack.</p>"
-                },
-                "action->Sneak Attack": {
-                    "name": "Sneak Attack",
-                    "description": "<p>Wendlyn deals an extra 1d6 precision damage to @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} creatures.</p>"
-                },
-                "action->Surprise Attack": {
-                    "name": "Surprise Attack",
-                    "description": "<p>On the first round of combat, if Wendlyn rolls Deception or Stealth for initiative, creatures that haven't acted yet are @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} to her.</p>"
-                },
-                "lore->Otari Lore": {
-                    "name": "Otari Lore"
                 }
             }
         },
@@ -962,25 +821,6 @@
                 },
                 "action->All-Around Vision": {
                     "name": "All-Around Vision"
-                },
-                "action->Biting Snakes": {
-                    "name": "Biting Snakes",
-                    "description": "<p><strong>Trigger</strong> A creature ends its turn adjacent to the medusa.</p>\n<hr />\n<p><strong>Effect</strong> The medusa makes a snake fangs Strike against the creature.</p>"
-                },
-                "action->Petrifying Gaze": {
-                    "name": "Petrifying Gaze",
-                    "description": "<p>30 feet. When a creature ends its turn in the aura, it must attempt a @Check[fortitude|dc:27] save. If the creature fails, it becomes @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1} for 1 minute. The medusa can deactivate or activate this aura by using a single action, which has the concentrate trait.</p>"
-                },
-                "action->Focus Gaze": {
-                    "name": "Focus Gaze",
-                    "description": "<p>The medusa fixes their glare at a creature they can see within 30 feet. The target must immediately attempt a Fortitude save against the medusa's petrifying gaze. If the creature was already slowed by petrifying gaze before attempting its save, a failed save causes it to be @UUID[Compendium.pf2e.conditionitems.Item.dTwPJuKgBQCMxixg]{Petrified} permanently. After attempting its save, the creature is then temporarily immune until the start of the medusa's next turn.</p>"
-                },
-                "action->Serpent Venom": {
-                    "name": "Serpent Venom",
-                    "description": "<p><strong>Saving Throw</strong> @Check[fortitude|dc:27]</p>\n<p><strong>Maximum Duration</strong> 6 rounds</p>\n<p><strong>Stage 1</strong> @Damage[1d6[poison]] damage and @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 1} (1 round)</p>\n<p><strong>Stage 2</strong> @Damage[2d6[poison]] damage and @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 2} (1 round)</p>"
-                },
-                "lore->Undead Lore": {
-                    "name": "Undead Lore"
                 }
             }
         },
@@ -1001,7 +841,10 @@
                 },
                 "equipment->Anvil and Hammer": {
                     "name": "Anvil and Hammer",
-                    "description": "<p>You need these tools to create items from raw materials with the Craft skill. Sterling artisan's tools give you a +1 item bonus to the check.</p>\n<p>Different sets are needed for different work, as determined by the GM; for example, a blacksmith's toolkit differs from a woodworker's toolkit. If you wear your artisan's toolkit, you can draw and replace it as part of the action that uses it.</p>"
+                    "description": "<p>You need these tools to create items from raw materials with the Craft skill. Sterling artisan's tools give you a +1 item bonus to the check.</p>\n<p>Different sets are needed for different work, as determined by the GM; for example, a blacksmith's toolkit differs from a woodworker's toolkit. If you wear your artisan's toolkit, you can draw and replace it as part of the action that uses it.</p>",
+                    "rules": {
+                        "0": "Artisan's Tools, Sterling (craft items)"
+                    }
                 },
                 "strike-melee->Hammer": {
                     "name": "Hammer"
@@ -1031,40 +874,10 @@
             "items": {
                 "weapon->+2 Axiomatic Striking Handwraps of Mighty Blows": {
                     "name": "+2 Axiomatic Striking Handwraps of Mighty Blows",
-                    "description": "<p>As you invest these embroidered strips of cloth, you must meditate and slowly wrap them around your hands. These handwraps have weapon runes etched into them to give your unarmed attacks the benefits of those runes, making your unarmed attacks work like magic weapons. For example, <em>+1 striking handwraps of mighty blows</em> would give you a +1 item bonus to attack rolls with your unarmed attacks and increase the damage of your unarmed attacks from one weapon die to two (normally 2d4 instead of 1d4, but if your fists have a different weapon damage die or you have other unarmed attacks, use two of that die size instead).</p>\n<p>You can upgrade, add, and transfer runes to and from the handwraps just as you would for a weapon, and you can attach talismans to the handwraps. Treat the handwraps as melee weapons of the brawling group with light Bulk for these purposes. Property runes apply only when they would be applicable to the unarmed attack you're using. For example, a property that must be applied to a slashing weapon wouldn't function when you attacked with a fist, but you would gain its benefits if you attacked with a claw or some other slashing unarmed attack.</p>"
-                },
-                "weapon->Ghost Charge (Greater)": {
-                    "name": "Ghost Charge (Greater)",
-                    "description": "<p><strong>Usage</strong> held in 1 hand</p>\n<p><strong>Activate</strong> <span class=\"action-glyph\">A</span> Strike</p>\n<hr />\n<p>These spring-loaded metal canisters contain a mixture of chemicals and salts that drain and disintegrate nearby undead creatures.</p>\n<p>A ghost charge gives a +2 item bonus to attack rolls, deals 3d8 vitality damage and 3 vitality splash damage, though as usual for vitality damage, this damage harms only undead and creatures with void healing. A primary target that takes damage from a ghost charge becomes @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 2} until the start of your next turn.</p>\n<p>Ghost charges are designed to explode even on contact with a spiritual substance, making them ideal for damaging incorporeal undead.</p>"
-                },
-                "equipment->Bracers of Armor I": {
-                    "name": "Bracers of Armor I",
-                    "description": "<p>These stiff leather armguards grant you a +1 item bonus to AC and saving throws, and a maximum Dexterity modifier of +5. You can affix talismans to <em>bracers of armor</em> as though they were light armor.</p>"
-                },
-                "strike-melee->Soul Strike": {
-                    "name": "Soul Strike"
-                },
-                "strike-ranged->Greater Ghost Charge": {
-                    "name": "Greater Ghost Charge"
-                },
-                "action->Grit Teeth": {
-                    "name": "Grit Teeth",
-                    "description": "<p>Zhang Yong fails or critically fails a saving throw against an enchantment or fear effect Effect Zhang Yong succeeds on the saving throw instead and takes @Damage[2d6[mental]] damage. If he critically failed on the triggering saving throw, he also takes @Damage[2d6[persistent,mental]] and cannot use this ability again while taking persistent mental damage.</p>"
-                },
-                "action->Disrupting Strikes": {
-                    "name": "Disrupting Strikes",
-                    "description": "<p>Zhang Yong calls forth vitality energy from within to help him destroy undead. His weapons and unarmed Strikes gain the effects of a greater disrupting property rune until the start of his next turn.</p>\n<hr />\n<p>A Greater Disrupting weapon pulses with vitality energy, dealing an extra 2d6 vitality damage to undead On a critical hit, instead of being enfeebled 1, the undead creature must attempt a @Check[fortitude|dc:31 |name:Greater Disrupting] save with the following effects. This is an incapacitation effect.</p>\n<hr />\n<p><strong>Critical Success</strong> It's @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 1} until the end of your next turn.</p>\n<p><strong>Success</strong> It's @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 2} until the end of your next turn.</p>\n<p><strong>Failure</strong> It's @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 3} until the end of your next turn.</p>\n<p><strong>Critical Failure</strong> It's destroyed.</p>"
-                },
-                "action->Reach Beyond": {
-                    "name": "Reach Beyond",
-                    "description": "<p>Zhang Yong has learned to move his spiritual energy past himself to attack spirits where others can't. He can make melee Strikes against incorporeal creatures that are inside solid objects as long as the object is within his reach. An incorporeal creature inside of a solid object is hidden, requiring him to succeed at a @Check[flat|dc:11|name:Attacking Incorporeal Creature in an Object] check when he targets it. He can spend an action, which has the concentrate trait, to focus on a creature inside of a solid object. If he does, the next melee Strike he makes this turn requires him to succeed at only a @Check[flat|dc:6|name:Focused Attack on Incorporeal Creature] check to affect the creature.</p>"
-                },
-                "action->Soul Dance Stance": {
-                    "name": "Soul Dance Stance",
-                    "description": "<p>Zhang Yong begins a stance that aligns him with the River of Souls and he can make soul strike attacks that seem almost incorporeal. These deal 1d8 bludgeoning damage; are in the brawling group; and have the agile, finesse, nonlethal, and unarmed traits. Soul Strikes treat cover against living and incorporeal undead targets as degree less severe (greater cover becomes standard cover, standard cover becomes lesser cover, and lesser cover is ignored).</p>"
-                },
-                "lore->Haunt Lore": {
-                    "name": "Haunt Lore"
+                    "description": "<p>As you invest these embroidered strips of cloth, you must meditate and slowly wrap them around your hands. These handwraps have weapon runes etched into them to give your unarmed attacks the benefits of those runes, making your unarmed attacks work like magic weapons. For example, <em>+1 striking handwraps of mighty blows</em> would give you a +1 item bonus to attack rolls with your unarmed attacks and increase the damage of your unarmed attacks from one weapon die to two (normally 2d4 instead of 1d4, but if your fists have a different weapon damage die or you have other unarmed attacks, use two of that die size instead).</p>\n<p>You can upgrade, add, and transfer runes to and from the handwraps just as you would for a weapon, and you can attach talismans to the handwraps. Treat the handwraps as melee weapons of the brawling group with light Bulk for these purposes. Property runes apply only when they would be applicable to the unarmed attack you're using. For example, a property that must be applied to a slashing weapon wouldn't function when you attacked with a fist, but you would gain its benefits if you attacked with a claw or some other slashing unarmed attack.</p>",
+                    "rules": {
+                        "0": "Axiomatic rune"
+                    }
                 }
             }
         }
@@ -1073,6 +886,10 @@
         "items": {
             "converter": "translateActorItems",
             "path": "items"
+        },
+        "rules": {
+            "converter": "translateRules",
+            "path": "system.rules"
         },
         "publicNotes": "system.details.publicNotes",
         "privateNotes": "system.details.privateNotes",

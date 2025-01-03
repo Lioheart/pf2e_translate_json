@@ -10,11 +10,17 @@
                 },
                 "action->Petrifying Glance": {
                     "name": "Petrifying Glance",
-                    "description": "<p>When a creature the basilisk can see within 30 feet starts its turn, the basilisk can use its reaction to glance at the creature.</p>\n<p>The creature must attempt a @Check[fortitude|dc:20] save. If it fails, it gains the @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1} condition for 1 minute as its body slowly stiffens.</p>"
+                    "description": "<p>When a creature the basilisk can see within 30 feet starts its turn, the basilisk can use its reaction to glance at the creature.</p>\n<p>The creature must attempt a @Check[fortitude|dc:20] save. If it fails, it gains the @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1} condition for 1 minute as its body slowly stiffens.</p>",
+                    "rules": {
+                        "0": "{item|name}"
+                    }
                 },
                 "action->Petrifying Gaze": {
                     "name": "Petrifying Gaze",
-                    "description": "<p>The basilisk stares at a creature it can see within 30 feet. If the creature can see the basilisk, that creature must attempt a @Check[fortitude|dc:22] save.</p>\n<p>If it fails and hasn't already gained the slowed condition from Petrifying Glance or this ability, it gains the @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1} condition. If the creature fails this save when it already has the slowed condition from this ability or Petrifying Glance, the creature is permanently turned to @UUID[Compendium.pf2e.conditionitems.Item.dTwPJuKgBQCMxixg]{Stone}.</p>\n<p>A creature petrified in this manner that is coated with fresh basilisk blood is instantly restored to flesh. A single basilisk contains enough blood to coat up to 2 creatures in this manner.</p>"
+                    "description": "<p>The basilisk stares at a creature it can see within 30 feet. If the creature can see the basilisk, that creature must attempt a @Check[fortitude|dc:22] save.</p>\n<p>If it fails and hasn't already gained the slowed condition from Petrifying Glance or this ability, it gains the @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1} condition. If the creature fails this save when it already has the slowed condition from this ability or Petrifying Glance, the creature is permanently turned to @UUID[Compendium.pf2e.conditionitems.Item.dTwPJuKgBQCMxixg]{Stone}.</p>\n<p>A creature petrified in this manner that is coated with fresh basilisk blood is instantly restored to flesh. A single basilisk contains enough blood to coat up to 2 creatures in this manner.</p>",
+                    "rules": {
+                        "0": "{item|name}"
+                    }
                 }
             }
         },
@@ -98,14 +104,6 @@
                 "action->Sneak Attack": {
                     "name": "Sneak Attack",
                     "description": "<p>The caligni hunter deals an extra 1d6 damage to creatures that have the @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} condition.</p>"
-                },
-                "action->Final Fate": {
-                    "name": "Final Fate",
-                    "description": "<p>When a caligni hunter dies, their body explodes. All creatures within @Template[emanation|distance:20]{20 feet} must take @Damage[5d6[fire]]. Each creature in the area must attempt a @Check[reflex|dc:19|basic] save.</p>"
-                },
-                "action->Darkening Poison": {
-                    "name": "Darkening Poison",
-                    "description": "<p>The next time the hunter deals damage with a shortsword Strike, the target must succeed at a @Check[fortitude|dc:16|traits:damaging-effect] save or take @Damage[1d8[poison]] damage and treat all creatures as @UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{Concealed} for 1 round.</p>"
                 }
             }
         },
@@ -299,14 +297,6 @@
                 "action->Regeneration 20 (Deactivated by Electricity or Fire)": {
                     "name": "Regeneration 20 (Deactivated by Electricity or Fire)",
                     "description": "<p>The troll regains 20 Hit Points at the start of their turn unless they've taken electricity or fire damage since their last turn. The troll can't die unless their regeneration is deactivated when they're reduced to 0 HP.</p>"
-                },
-                "action->Easily Misled": {
-                    "name": "Easily Misled",
-                    "description": "<p>The forest troll gets a -4 circumstance penalty to their Perception DC against deception checks.</p>"
-                },
-                "action->Rend": {
-                    "name": "Rend",
-                    "description": "<p>If the troll succeeds at two claw Strikes against the same creature in the same turn, they can use this ability to automatically deal claw Strike damage to that creature.</p>"
                 }
             }
         },
@@ -344,14 +334,6 @@
                 "action->Incorporeal": {
                     "name": "Incorporeal",
                     "description": "<p>A ghost has no body and can pass through physical objects, though it can't end its turn inside one. Most checks that use Strength and require a body, such as @UUID[Compendium.pf2e.actionspf2e.Item.PMbdMWc2QroouFGD]{Grapple} and @UUID[Compendium.pf2e.actionspf2e.Item.7blmbDrQFNfdT731]{Shove}, don't work against a ghost, and a ghost can't attempt such checks.</p>"
-                },
-                "action->Rejuvenation": {
-                    "name": "Rejuvenation",
-                    "description": "<p>Setting right the injustice that led to the ghost's death allows it to move on to the afterlife. Otherwise, when destroyed, the ghost re-forms after [[/br 2d4 #Rejuvenation]]{2d4 days} within the location it's bound to, fully healed.</p>"
-                },
-                "action->Frightful Moan": {
-                    "name": "Frightful Moan",
-                    "description": "<p>Each living creature within @Template[emanation|distance:30]{30 feet} who hears the ghost must attempt a @Check[will|dc:21] save. On a failure, a creature gains the @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 2} condition (or @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 3} on a critical failure).</p>\n<p>On a success, a creature can't be affected by this ghost's Frightful Moan for 1 minute.</p>"
                 }
             }
         },
@@ -376,10 +358,6 @@
                 "action->Sneak Attack": {
                     "name": "Sneak Attack",
                     "description": "<p>The ghoul stalker deals an extra 1d4 damage to creatures that have the @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} condition.</p>"
-                },
-                "action->Swift Leap": {
-                    "name": "Swift Leap",
-                    "description": "<p>The ghoul jumps up to half its Speed. This movement doesn't trigger reactions.</p>"
                 }
             }
         },
@@ -575,10 +553,6 @@
                 "action->Formation": {
                     "name": "Formation",
                     "description": "<p>When they're adjacent to at least two other allies, the hobgoblin soldier gains a +1 circumstance bonus to AC and saving throws.</p>"
-                },
-                "action->Shield Block": {
-                    "name": "Shield Block",
-                    "description": "<p>If they @UUID[Compendium.pf2e.actionspf2e.Item.xjGwis0uaC2305pm]{Raised a Shield} since their last turn, the hobgoblin can spend their reaction to block a Strike. Reduce the damage by 5, but the hobgoblin and the shield both take the remaining damage, possibly @UUID[Compendium.pf2e.conditionitems.Item.6dNUvdb1dhToNDj3]{Breaking} or destroying the shield.</p>"
                 }
             }
         },
@@ -600,18 +574,6 @@
                 "action->Twisting Tail": {
                     "name": "Twisting Tail",
                     "description": "<p>When a creature within 10 feet uses a move action or leaves a square during a move action it's using, the dragon can use their reaction to make a tail Strike at the creature with a -2 penalty. If it hits, the creature stops moving in the square it was in when the dragon used this reaction.</p>"
-                },
-                "action->Draconic Frenzy": {
-                    "name": "Draconic Frenzy",
-                    "description": "<p>The dragon makes two claw Strikes and one tail Strike in any order.</p>"
-                },
-                "action->Draconic Momentum": {
-                    "name": "Draconic Momentum",
-                    "description": "<p>When the dragon gets a critical success on a Strike, they recharge their Poison Breath.</p>"
-                },
-                "action->Poison Breath": {
-                    "name": "Poison Breath",
-                    "description": "<p>The dragon breathes a toxic cloud that deals @Damage[5d6[poison]] damage in a @Template[cone|distance:30]. Each creature in the area must attempt a @Check[reflex|dc:21|basic] save.</p>\n<p>The dragon can't use their Poison Breath again for [[/br 1d4 #Recharge Poison Breath]]{1d4 rounds}.</p>"
                 }
             }
         },
@@ -640,9 +602,6 @@
                 "action->Sneak Attack": {
                     "name": "Sneak Attack",
                     "description": "<p>Zolgran deals an extra 1d6 damage to creatures that have the @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} condition.</p>"
-                },
-                "lore->Dragon Lore": {
-                    "name": "Dragon Lore"
                 }
             }
         },
@@ -662,9 +621,6 @@
                 "action->Scamper": {
                     "name": "Scamper",
                     "description": "<p>If the kobold is adjacent to at least one enemy, the kobold Strides up to 30 feet and gains a +2 circumstance bonus to AC against reactions triggered by this movement. The kobold must end this movement in a space that's not adjacent to any enemy.</p>"
-                },
-                "lore->Dragon Lore": {
-                    "name": "Dragon Lore"
                 }
             }
         },
@@ -684,9 +640,6 @@
                 "action->Scamper": {
                     "name": "Scamper",
                     "description": "<p>If the kobold is adjacent to at least one enemy, the kobold Strides up to 30 feet and gains a +2 circumstance bonus to AC against reactions triggered by this movement. The kobold must end this movement in a space that's not adjacent to any enemy.</p>"
-                },
-                "lore->Dragon Lore": {
-                    "name": "Dragon Lore"
                 }
             }
         },
@@ -706,9 +659,6 @@
                 "action->Scamper": {
                     "name": "Scamper",
                     "description": "<p>If the kobold is adjacent to at least one enemy, the kobold Strides up to 30 feet and gains a +2 circumstance bonus to AC against reactions triggered by this movement. The kobold must end this movement in a space that's not adjacent to any enemy.</p>"
-                },
-                "lore->Dragon Lore": {
-                    "name": "Dragon Lore"
                 }
             }
         },
@@ -728,9 +678,6 @@
                 "action->Scamper": {
                     "name": "Scamper",
                     "description": "<p>If the kobold is adjacent to at least one enemy, the kobold Strides up to 30 feet and gains a +2 circumstance bonus to AC against reactions triggered by this movement. The kobold must end this movement in a space that's not adjacent to any enemy.</p>"
-                },
-                "lore->Dragon Lore": {
-                    "name": "Dragon Lore"
                 }
             }
         },
@@ -750,9 +697,6 @@
                 "action->Scamper": {
                     "name": "Scamper",
                     "description": "<p>If the kobold is adjacent to at least one enemy, the kobold Strides up to 30 feet and gains a +2 circumstance bonus to AC against reactions triggered by this movement. The kobold must end this movement in a space that's not adjacent to any enemy.</p>"
-                },
-                "lore->Dragon Lore": {
-                    "name": "Dragon Lore"
                 }
             }
         },
@@ -763,10 +707,6 @@
                 "action->Scamper": {
                     "name": "Scamper",
                     "description": "<p>If the kobold is adjacent to at least one enemy, the kobold Strides up to 30 feet and gains a +2 circumstance bonus to AC against reactions triggered by this movement. The kobold must end this movement in a space that's not adjacent to any enemy.</p>"
-                },
-                "action->Sneak Attack": {
-                    "name": "Sneak Attack",
-                    "description": "<p>The kobold scout deals an extra 1d6 damage to creatures that have the @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} condition.</p>"
                 }
             }
         },
@@ -803,10 +743,6 @@
                 "action->Scamper": {
                     "name": "Scamper",
                     "description": "<p>If the kobold is adjacent to at least one enemy, the kobold Strides up to 30 feet and gains a +2 circumstance bonus to AC against reactions triggered by this movement. The kobold must end this movement in a space that's not adjacent to any enemy.</p>"
-                },
-                "action->Sneak Attack": {
-                    "name": "Sneak Attack",
-                    "description": "<p>The kobold trapmaster deals an extra 1d6 damage to creatures that have the @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} condition.</p>"
                 }
             }
         },
@@ -817,10 +753,6 @@
                 "action->Scamper": {
                     "name": "Scamper",
                     "description": "<p>If the kobold is adjacent to at least one enemy, the kobold Strides up to 30 feet and gains a +2 circumstance bonus to AC against reactions triggered by this movement. The kobold must end this movement in a space that's not adjacent to any enemy.</p>"
-                },
-                "action->Sneak Attack": {
-                    "name": "Sneak Attack",
-                    "description": "<p>The kobold warrior deals an extra 1d4 damage to creatures that have the @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} condition.</p>"
                 }
             }
         },
@@ -845,10 +777,6 @@
                 "action->Sneak Attack": {
                     "name": "Sneak Attack",
                     "description": "<p>The leopard deals an extra 1d4 damage to creatures that have the @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} condition.</p>"
-                },
-                "action->Grab": {
-                    "name": "Grab",
-                    "description": "<p>When the leopard succeeds at its jaws Strike, it can use this action immediately after to attempt to @UUID[Compendium.pf2e.actionspf2e.Item.PMbdMWc2QroouFGD]{Grapple} the target. This Grapple doesn't apply or count toward the leopard's multiple attack penalty.</p>"
                 }
             }
         },
@@ -987,14 +915,6 @@
             "items": {
                 "action->-2 Penalty on Perception to Hear things": {
                     "name": "-2 Penalty on Perception to Hear things"
-                },
-                "action->Animal Talker": {
-                    "name": "Animal Talker",
-                    "description": "<p>Pugwampis can talk to and understand animals.</p>"
-                },
-                "action->Unluck Aura": {
-                    "name": "Unluck Aura",
-                    "description": "<p>Creatures other than animals, gremlins, and kholo within @Template[emanation|distance:20]{20 feet} become extremely unlucky. They must attempt a @Check[will|dc:16] save, rolling this Will save twice and using the worse result.</p>\n<p>On a successful save, the creature can't be affected by pugwampi unluck auras for 24 hours. On a failure, the creature must roll twice and use the worse result on all checks as long as it's within 20 feet of the pugwampi.</p>\n<p>Multiple pugwampis don't create any increased effect.</p>"
                 }
             }
         },
@@ -1036,10 +956,6 @@
                 "strike-melee->Scythe": {
                     "name": "Scythe",
                     "description": "<p>No MAP applies to strikes made by scythe attacks</p>"
-                },
-                "action->No MAP": {
-                    "name": "No MAP",
-                    "description": "<p>The Scythe Strikes do not apply a MAP.</p>"
                 }
             }
         },
@@ -1197,14 +1113,6 @@
                 "action->Pack Attack": {
                     "name": "Pack Attack",
                     "description": "<p>The warg's jaws Strike deals 1d4 extra damage to creatures within reach of two of the warg's allies.</p>"
-                },
-                "action->Shred": {
-                    "name": "Shred",
-                    "description": "<p>If the warg has a creature @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed}, it can spend one action to shred them with its teeth. The creature takes @Damage[1d6[slashing]] damage and can make a @Check[fortitude|dc:18|basic] save.</p>"
-                },
-                "action->Grab": {
-                    "name": "Grab",
-                    "description": "<p>When the warg succeeds at its jaws Strike, it can use this action immediately after to attempt to @UUID[Compendium.pf2e.actionspf2e.Item.PMbdMWc2QroouFGD]{Grapple} the target. This Grapple doesn't apply or count toward the warg's multiple attack penalty.</p>"
                 }
             }
         },
@@ -1266,10 +1174,6 @@
                 "action->Pack Attack": {
                     "name": "Pack Attack",
                     "description": "<p>The wolf's jaws Strike deals 1d4 extra damage to creatures within reach of two of the wolf's allies.</p>"
-                },
-                "action->Knockdown": {
-                    "name": "Knockdown",
-                    "description": "<p>When the wolf succeeds at its jaws Strike, it can use this action immediately after to attempt to @UUID[Compendium.pf2e.actionspf2e.Item.ge56Lu1xXVFYUnLP]{Trip} the target. This Trip doesn't apply or count toward the wolf's multiple attack penalty.</p>"
                 }
             }
         },
@@ -1286,10 +1190,6 @@
                 "action->Stench": {
                     "name": "Stench",
                     "description": "<p>A creature that comes within @Template[emanation|distance:30] of the xulgath and can smell the xulgath must attempt a @Check[fortitude|dc:19] save. On a failure, the creature takes a -1 status penalty to all checks and DCs until it uses an action to retch. A creature that succeeds at its save isn't affected by any xulgaths' stenches for 1 minute <em>(Use @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 1})</em>.</p>"
-                },
-                "action->Swipe": {
-                    "name": "Swipe",
-                    "description": "<p>The xulgath boss makes two Strikes with their greataxe against two adjacent foes, both of whom are within their reach, with a +1 circumstance bonus. The second attack uses the same multiple attack penalty as the first, but attacks the xulgath boss makes after this take a -10 multiple attack penalty (or a -8 multiple attack penalty for its claw).</p>"
                 }
             }
         },
@@ -1336,10 +1236,6 @@
                 "action->Slow": {
                     "name": "Slow",
                     "description": "<p>A zombie has only 2 actions on its turn, and it can't use reactions.</p>"
-                },
-                "action->Grab": {
-                    "name": "Grab",
-                    "description": "<p>When the zombie succeeds at its fist Strike, it can use this action immediately after to attempt to @UUID[Compendium.pf2e.actionspf2e.Item.PMbdMWc2QroouFGD]{Grapple} the target. This Grapple doesn't apply or count toward the zombie's multiple attack penalty.</p>"
                 }
             }
         }
@@ -1357,6 +1253,10 @@
         "items": {
             "converter": "translateActorItems",
             "path": "items"
+        },
+        "rules": {
+            "converter": "translateRules",
+            "path": "system.rules"
         },
         "descriptionHazard": "system.details.description",
         "disable": "system.details.disable",

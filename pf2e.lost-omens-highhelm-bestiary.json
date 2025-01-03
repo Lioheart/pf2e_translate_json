@@ -11,13 +11,6 @@
                 "action->Back Kick": {
                     "name": "Back Kick",
                     "description": "<p>The augdunar whirls around, delivering a powerful kick with both its hind legs. The augdunar makes a hoof Strike. If the Strike hits, the augdunar deals an extra 1d10 bludgeoning damage. This counts as two attacks when calculating the augdunar's multiple attack penalty.</p>"
-                },
-                "action->Determined Trudge": {
-                    "name": "Determined Trudge",
-                    "description": "<p>The augdunar Strides at a \u20135 foot circumstance penalty to its Speed, ignoring difficult terrain.</p>"
-                },
-                "action->Push": {
-                    "name": "Push"
                 }
             }
         },
@@ -68,27 +61,6 @@
                 "action->Ablative Adaptation": {
                     "name": "Ablative Adaptation",
                     "description": "<p><strong>Frequency</strong> once per minute</p>\n<p><strong>Trigger</strong> The Grand Defender's resistance to physical damage is overcome by the resistance's exception</p>\n<hr />\n<p><strong>Effect</strong> The Grand Defender sheds the outer layer of its body, altering its material composition and general appearance. The material that overcomes the Grand Defender's resistance changes to adamantine, cold iron, dawnsilver, or silver (Grand Defender's choice).</p>"
-                },
-                "action->Attack of Opportunity": {
-                    "name": "Attack of Opportunity"
-                },
-                "action->Golem Antimagic": {
-                    "name": "Golem Antimagic",
-                    "description": "<p>Harmed by acid (@Damage[8d10[untyped]], @Damage[2d10[untyped]] from areas or persistent damage); healed by fire (area @Damage[2d10[healing]] HP); slowed by electricity</p><hr /><p>@Localize[PF2E.NPC.Abilities.Glossary.GolemAntimagic]</p>"
-                },
-                "action->Shield Block": {
-                    "name": "Shield Block"
-                },
-                "action->Vulnerable to Rust": {
-                    "name": "Vulnerable to Rust",
-                    "description": "<p>Magical rusting effects, like a rust monster's antennae, affect the Grand Defender normally.</p>"
-                },
-                "action->Hammer Storm": {
-                    "name": "Hammer Storm",
-                    "description": "<p>The Grand Defender unleashes a volley of warhammers that deal @Damage[12d8[bludgeoning]] damage in a @Template[cone|distance:50] (@Check[reflex|dc:36|basic] save). The Grand Defender can exclude any number of squares from the cone's area, preventing damage to creatures in those squares. Creatures that critically fail their save are pushed 10 feet away from the Grand Defender and knocked @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone}. The storm creates 24 Medium @UUID[Compendium.pf2e.equipment-srd.Item.rXt4629QSg7KDTgJ]{warhammers} that persist after the attack and can be used by creatures. The Grand Defender can't use Hammer Storm for [[/gmr 1d4 #Recharge Hammer Storm]]{1d4 rounds}.</p>"
-                },
-                "action->Improved Knockdown": {
-                    "name": "Improved Knockdown"
                 }
             }
         },
@@ -200,13 +172,6 @@
                 "action->Demon Shape": {
                     "name": "Demon Shape",
                     "description": "<p>The swarm condenses into the solid shape of a shemhazian demon. While in this form, it's a gargantuan creature, cannot share the space of another creature, and can use its pincer attack. It loses its resistance to physical damage as well as its weaknesses to area and splash damage. Any creatures sharing a space with the Bloodstorm when it transforms are pushed into the nearest empty space. The Bloodstorm can use this action again to revert to its swarm shape.</p>"
-                },
-                "action->Feeding Frenzy": {
-                    "name": "Feeding Frenzy",
-                    "description": "<p><strong>Requirements</strong> There are bleeding creatures in the Bloodstorm's space</p>\n<hr />\n<p><strong>Effect</strong> The bleeding creatures take @Damage[3d8[piercing],3d8[slashing]] damage (@Check[fortitude|dc:34|basic] save). The Bloodstorm gains temporary Hit Points equal to half of the damage dealt this way.</p>"
-                },
-                "action->Improved Grab": {
-                    "name": "Improved Grab"
                 }
             }
         }
@@ -224,6 +189,10 @@
         "items": {
             "converter": "translateActorItems",
             "path": "items"
+        },
+        "rules": {
+            "converter": "translateRules",
+            "path": "system.rules"
         }
     }
 }

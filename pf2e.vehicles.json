@@ -388,10 +388,6 @@
                 "action->Fall Apart": {
                     "name": "Fall Apart",
                     "description": "<p>When this vehicle takes physical damage the pilot must attempt a @Check[flat|dc:11] (or a @Check[flat|dc:20] when it takes a critical hit). On a failure, the armored hull fractures and the vehicle loses its Hardness and takes a -4 circumstance penalty to AC.</p>"
-                },
-                "action->Smog": {
-                    "name": "Smog",
-                    "description": "<p>10 feet. Whenever this vehicle is being piloted, it continually emits a thin haze of smoke and chemicals. Creatures in the aura (including the pilot and passengers) take a -1 circumstance penalty to visual Perception checks.</p>"
                 }
             }
         },
@@ -434,10 +430,6 @@
                 "action->Glow": {
                     "name": "Glow",
                     "description": "<p>Powered by magical lightning, this vehicle sheds bright light within 20 feet, and dim light for a further 20 feet.</p>"
-                },
-                "action->Hover": {
-                    "name": "Hover",
-                    "description": "<p>This vehicle is held aloft by rapidly spinning propellers that enable it to hover 1 foot in the air. It is incapable of flying any higher, and when the pilot stops the magic or the vehicle breaks, it descends 1 foot to the ground.</p>"
                 }
             }
         },
@@ -887,18 +879,6 @@
                 "action->Captivating Wealth": {
                     "name": "Captivating Wealth",
                     "description": "<p>40 feet. The gold, gems, and other embellishments that adorn this flying sphere emit a sparkling resplendence capable of enthralling creatures. Each creature that begins its turn within the aura must attempt a @Check[will|dc:36|traits:magic]; on a failure, the creature is @UUID[Compendium.pf2e.conditionitems.Item.AdPVz7rbaVSRxHFg]{Fascinated} and @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 2} for as long as it remains within the aura. A creature that succeeds is temporarily immune for 1 hour. Each time Prismatic Defense is activated, the area of Captivating Wealth is reduced by 10 feet for 1 hour, to a minimum of 0 feet.</p>"
-                },
-                "action->Protective Barrier": {
-                    "name": "Protective Barrier",
-                    "description": "<p>While the swirling rings of the vehicle don't fully cover the pilot, they offer incredible protection, magically maintaining the temperature within and ablating physical attacks. The pilot is protected from severe cold, severe heat, extreme cold, and extreme heat. The pilot also gains resistance 10 to all physical damage (except adamantine).</p>\n<p>@UUID[Compendium.pf2e.equipment-effects.Item.exwQF6E1FWmuxwBc]{Effect: Protective Barrier}</p>"
-                },
-                "action->Prismatic Defense": {
-                    "name": "Prismatic Defense",
-                    "description": "<p>The pilot harnesses power from the magical gemstones hidden among this vehicle's extravagant embellishments to grant the vehicle additional defenses. This vehicle gains resistance 20 to one of the following energy damage types: acid, cold, electricity, fire, force, or sonic. This immunity lasts until Prismatic Defense is next activated.</p>"
-                },
-                "action->Wind-Up": {
-                    "name": "Wind-Up",
-                    "description": "<p>10 minutes of wind-up, 1 hour of operational time, DC 37, standby</p>"
                 }
             }
         },
@@ -917,6 +897,10 @@
         "items": {
             "converter": "translateActorItems",
             "path": "items"
+        },
+        "rules": {
+            "converter": "translateRules",
+            "path": "system.rules"
         }
     }
 }

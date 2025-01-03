@@ -108,13 +108,6 @@
                 "equipment->Religious Symbol (Wooden)": {
                     "name": "Religious Symbol (Wooden)",
                     "description": "<p>This piece of wood or silver is emblazoned with an image representing a deity. Some divine spellcasters, such as clerics, can use a religious symbol of their deity as a divine focus to use certain abilities and cast some spells. A religious symbol must be held in one hand to use it.</p>"
-                },
-                "strike-melee->Scorpion Whip": {
-                    "name": "Scorpion Whip"
-                },
-                "action->Prayer of Oblivion": {
-                    "name": "Prayer of Oblivion",
-                    "description": "<p>The priest chants a prayer to his deity that invokes the forces of nothingness.</p>\n<p><strong>Frequency</strong> once per day</p>\n<hr />\n<p><strong>Effect</strong> All enemies within @Template[emanation|distance:30]{30 feet} take @Damage[5d6[void]] damage (@Check[will|dc:21|basic] save).</p>"
                 }
             }
         },
@@ -126,25 +119,14 @@
                 },
                 "weapon->Staff of Conjuration": {
                     "name": "Staff of Conjuration",
-                    "description": "<p>This ash staff is decorated with animals; wielding it, you gain a +2 circumstance bonus to checks to identify conjuration magic.</p>\n<p><strong>Activate</strong> Cast a Spell</p>\n<hr />\n<p><strong>Effect</strong> You expend a number of charges from the staff to cast a spell from its list.</p>\n<ul>\n<li><strong>Cantrip</strong> @UUID[Compendium.pf2e.spells-srd.Item.uZK2BYzPnxUBnDjr]{Tangle Vine}</li>\n<li><strong>1st</strong> @UUID[Compendium.pf2e.spells-srd.Item.lKcsmeOrgHtK4xQa]{Summon Construct}, @UUID[Compendium.pf2e.spells-srd.Item.xqmHD8JIjak15lRk]{Phantasmal Minion}</li>\n<li><strong>2nd</strong> @UUID[Compendium.pf2e.spells-srd.Item.9XHmC2JgTUIQ1CCm]{Mist}, @UUID[Compendium.pf2e.spells-srd.Item.WPKJOhEihhcIm2uQ]{Marvelous Mount}, @UUID[Compendium.pf2e.spells-srd.Item.lKcsmeOrgHtK4xQa]{Summon Construct}, @UUID[Compendium.pf2e.spells-srd.Item.lpT6LotUaQPfinjj]{Summon Elemental}</li>\n</ul>\n<p><strong>Craft Requirements</strong> Supply one casting of all listed levels of all listed spells.</p>"
+                    "description": "<p>This ash staff is decorated with animals; wielding it, you gain a +2 circumstance bonus to checks to identify conjuration magic.</p>\n<p><strong>Activate</strong> Cast a Spell</p>\n<hr />\n<p><strong>Effect</strong> You expend a number of charges from the staff to cast a spell from its list.</p>\n<ul>\n<li><strong>Cantrip</strong> @UUID[Compendium.pf2e.spells-srd.Item.uZK2BYzPnxUBnDjr]{Tangle Vine}</li>\n<li><strong>1st</strong> @UUID[Compendium.pf2e.spells-srd.Item.lKcsmeOrgHtK4xQa]{Summon Construct}, @UUID[Compendium.pf2e.spells-srd.Item.xqmHD8JIjak15lRk]{Phantasmal Minion}</li>\n<li><strong>2nd</strong> @UUID[Compendium.pf2e.spells-srd.Item.9XHmC2JgTUIQ1CCm]{Mist}, @UUID[Compendium.pf2e.spells-srd.Item.WPKJOhEihhcIm2uQ]{Marvelous Mount}, @UUID[Compendium.pf2e.spells-srd.Item.lKcsmeOrgHtK4xQa]{Summon Construct}, @UUID[Compendium.pf2e.spells-srd.Item.lpT6LotUaQPfinjj]{Summon Elemental}</li>\n</ul>\n<p><strong>Craft Requirements</strong> Supply one casting of all listed levels of all listed spells.</p>",
+                    "rules": {
+                        "0": "Staff of Conjuration (identify conjuration magic)"
+                    }
                 },
                 "equipment->Religious Symbol (Wooden)": {
                     "name": "Religious Symbol (Wooden)",
                     "description": "<p>This piece of wood or silver is emblazoned with an image representing a deity. Some divine spellcasters, such as clerics, can use a religious symbol of their deity as a divine focus to use certain abilities and cast some spells. A religious symbol must be held in one hand to use it.</p>"
-                },
-                "strike-melee->Falchion": {
-                    "name": "Falchion"
-                },
-                "strike-melee->Jaws": {
-                    "name": "Jaws"
-                },
-                "action->Pack Attack": {
-                    "name": "Pack Attack",
-                    "description": "<p>Krashk deals an additional 1d4 damage to any creature that's within reach of at least two of her allies.</p>"
-                },
-                "action->Rugged Travel": {
-                    "name": "Rugged Travel",
-                    "description": "<p>Krashk ignores the first square of difficult terrain she moves into each time she Steps or Strides.</p>"
                 }
             }
         },
@@ -179,14 +161,6 @@
                 "action->Sneak Attack": {
                     "name": "Sneak Attack",
                     "description": "<p>Noolik deals an additional 2d6 precision damage to @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} creatures.</p>"
-                },
-                "action->Tinker": {
-                    "name": "Tinker",
-                    "description": "<p>A group of six jinkins can work together for an hour to imbue an item with a curse at a range of 60 feet. While this process is lengthy, it's also unobtrusive and can be performed while @UUID[Compendium.pf2e.actionspf2e.Item.XMcnh4cSI32tljXa]{Hiding}. Jinkins prefer to use this ability on magic items. The curse makes the item unreliable (@Check[flat|dc:5] or waste any action to Interact with or Activate the item), adds a bizarre requirement to use the item, or imparts some other curse of a similar caliber.</p>"
-                },
-                "action->Trap Tinker": {
-                    "name": "Trap Tinker",
-                    "description": "<p>Noolik can cause a complex mechanical trap to continue longer than its normal duration. She moves up to her speed and Interacts with a trap. The trap can use its reaction during its next round as well as its routine, although its initiative doesn't change.</p>"
                 }
             }
         },
@@ -207,21 +181,6 @@
                 "action->Collapse Into Sand": {
                     "name": "Collapse Into Sand",
                     "description": "<p><strong>Trigger</strong> The sand wolf is hit by an attack</p>\n<hr />\n<p><strong>Effect</strong> The sand wolf's body falls apart into a cloud of sand. It takes no damage from the triggering attack, and its resistances increase to 8. The sand wolf must spend one action to reform its body before it can move or attack.</p>"
-                },
-                "action->Water Vulnerability": {
-                    "name": "Water Vulnerability",
-                    "description": "<p>Sand wolves take 5 additional damage from attacks and effects with the water trait.</p>"
-                },
-                "action->Choking Sands": {
-                    "name": "Choking Sands",
-                    "description": "<p>The sand wolf discorporates into a cloud of whirling sand. It can Stride, moving freely through occupied spaces. Any creatures within those spaces take [[/r 2d10]] damage and must attempt a @Check[reflex|dc:19|traits:damaging-effect] save.</p>\n<hr />\n<p><strong>Critical Success</strong> The target takes no damage.</p>\n<p><strong>Success</strong> The target takes half damage.</p>\n<p><strong>Failure</strong> The target takes full damage and is @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 1}.</p>\n<p><strong>Critical Failure</strong> As failure, but the effect is increased to @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 3}.</p>"
-                },
-                "action->Susurrating Song": {
-                    "name": "Susurrating Song",
-                    "description": "<p>The sand wolf sings a short, enchanting song. Any creature other than a sand wolf within 30 feet must attempt a @Check[will|dc:19] save.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected and is temporarily immune to further susurrating song exposures for 24 hours.</p>\n<p><strong>Success</strong> The target is @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 1}.</p>\n<p><strong>Failure</strong> The target is @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 2}.</p>\n<p><strong>Critical Failure</strong> As failure, and the target is @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1}.</p>"
-                },
-                "action->Grab": {
-                    "name": "Grab"
                 }
             }
         },
@@ -231,13 +190,6 @@
                 "equipment->Crude Wooden Religious Symbol of Sarenrae": {
                     "name": "Crude Wooden Religious Symbol of Sarenrae",
                     "description": "<p>This piece of wood or silver is emblazoned with an image representing a deity. Some divine spellcasters, such as clerics, can use a religious symbol of their deity as a divine focus to use certain abilities and cast some spells. A religious symbol must be held in one hand to use it.</p>"
-                },
-                "equipment->Robes": {
-                    "name": "Robes",
-                    "description": "<p>Ordinary clothing is functional with basic tailoring, such as peasant garb, monk's robes, or work clothes.</p>"
-                },
-                "strike-ranged->Shortbow": {
-                    "name": "Shortbow"
                 }
             }
         },
@@ -254,10 +206,6 @@
                 "action->Sacrifice Armor": {
                     "name": "Sacrifice Armor",
                     "description": "<p><strong>Trigger</strong> The scrapborn is damaged by an attack dealing physical damage</p>\n<hr />\n<p><strong>Effect</strong> The scrapborn directs the damage to one of the pieces of scrap attached to its body and gains resistance 15 against the triggering attack, but its AC is lowered by 2 for 24 hours. The scrapborn's AC cannot be reduced below 16 in this way.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.1wCgwFLJByW8YKyM]{Effect: Sacrifice Armor}</p>"
-                },
-                "action->Rebuild Armor": {
-                    "name": "Rebuild Armor",
-                    "description": "<p><strong>Requirements</strong> The scrapborn's previous action was a successful claw Strike against a target wearing armor and that armor is not broken</p>\n<hr />\n<p><strong>Effect</strong> The scrapborn pulls and rips at the target's armor. The target must attempt a @Check[reflex|dc:20] save.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target's armor takes @Damage[1d8[piercing]] damage, ignoring the armor's Hardness.</p>\n<p><strong>Failure</strong> The target's armor takes @Damage[2d8[piercing]] damage, which ignores the armor's Hardness; if this causes the armor to become broken, the scrapborn can incorporate the removed armor piece into its own body and raise its AC by 1 (to a maximum of 22).</p>\n<p><strong>Critical Failure</strong> As failure, except instead of damage, the target's armor is automatically reduced to its BT and the scrapborn increases its AC by 2.</p>"
                 }
             }
         },
@@ -310,10 +258,6 @@
                 "equipment->Religious Symbol of Ahriman": {
                     "name": "Religious Symbol of Ahriman",
                     "description": "<p>This piece of wood or silver is emblazoned with an image representing a deity. Some divine spellcasters, such as clerics, can use a religious symbol of their deity as a divine focus to use certain abilities and cast some spells. A religious symbol must be held in one hand to use it.</p>"
-                },
-                "action->Tripping Whip": {
-                    "name": "Tripping Whip",
-                    "description": "<p><strong>Requirements</strong> The Usij cultist must have a whip in their hands</p>\n<p><strong>Trigger</strong> A creature moves out of a threatened square</p>\n<hr />\n<p><strong>Effect</strong> The Usij cultist makes a @UUID[Compendium.pf2e.actionspf2e.Item.ge56Lu1xXVFYUnLP]{Trip} attempt against the triggering creature with their whip.</p>"
                 }
             }
         },
@@ -395,26 +339,6 @@
                 },
                 "action->+1 Status to All Saves vs. Magic": {
                     "name": "+1 Status to All Saves vs. Magic"
-                },
-                "action->Hatred of Red": {
-                    "name": "Hatred of Red",
-                    "description": "<p>Pairakas hate the color red. Zridi won't wear the color or willingly enter any place painted red. Given a choice, she'll attack a creature wearing red first. If barred from expressing her displeasure toward the color by force or some magical effect, she takes @Damage[2d6[mental]] damage at the end of her turn.</p>"
-                },
-                "action->Bubonic Plague": {
-                    "name": "Bubonic Plague",
-                    "description": "<p>A creature can't remove the fatigued condition while infected</p>\n<p><strong>Saving Throw</strong> @Check[fortitude|dc:24]</p>\n<hr />\n<p><strong>Onset</strong> 1 day</p>\n<p><strong>Stage 1</strong> @UUID[Compendium.pf2e.conditionitems.Item.HL2l2VRSaQHu9lUw]{Fatigued} (1 day)</p>\n<p><strong>Stage 2</strong> @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 2} and fatigued (1 day)</p>\n<p><strong>Stage 3</strong> @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 3}, fatigued, and take @Damage[1d6[bleed]] every [[/br 1d20 #Persistent Damage Interval]]{1d20 minutes} (1 day)</p>"
-                },
-                "action->Change Shape": {
-                    "name": "Change Shape",
-                    "description": "<p>Zridi can take the appearance of any Small or Medium humanoid or animal. This doesn't change her Speed or her attack and damage modifiers with the Strikes, but it might change the damage type her Strikes deal.</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.ChangeShape]</p>"
-                },
-                "action->Compelled Performance": {
-                    "name": "Compelled Performance",
-                    "description": "<p><strong>Frequency</strong> once per day</p>\n<hr />\n<p><strong>Effect</strong> Zridi grants the target a +2 status bonus to Performance checks for one week. The target must attempt a @Check[will|dc:26] save.</p>\n<p><strong>Critical Success</strong> No further effect.</p>\n<p><strong>Success</strong> The target must @UUID[Compendium.pf2e.actionspf2e.Item.EEDElIyin4z60PXx]{Perform} for 1 action on its next turn.</p>\n<p><strong>Failure</strong> The target must Perform for 3 actions on its next turn, undertaking a Performance task set by Zridi.</p>\n<p><strong>Critical Failure</strong> As failure, but Zridi can choose to delay the effect and trigger it at any point in the next week as a reaction.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.Yb5rg3MEojIHQX8H]{Effect: Compelled Performance}</p>"
-                },
-                "action->Tormenting Dreams": {
-                    "name": "Tormenting Dreams",
-                    "description": "<p><strong>Frequency</strong> once per day</p>\n<hr />\n<p><strong>Effect</strong> Zridi torments a sleeping creature within 100 feet with visions of betrayals by loved ones and friends. The target must attempt a @Check[will|dc:26] save, with the effects of the @UUID[Compendium.pf2e.spells-srd.Item.Uqj344bezBq3ESdq]{Nightmare} spell.</p>"
                 }
             }
         }
@@ -423,6 +347,10 @@
         "items": {
             "converter": "translateActorItems",
             "path": "items"
+        },
+        "rules": {
+            "converter": "translateRules",
+            "path": "system.rules"
         },
         "hpDetails": "system.attributes.hp.details",
         "descriptionHazard": "system.details.description",
