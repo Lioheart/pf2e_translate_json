@@ -41,6 +41,22 @@
                 "action->Acolyte's Defense": {
                     "name": "Acolyte's Defense",
                     "description": "<p><strong>Requirements</strong> The algriever is bonded with a shrine</p>\n<p><strong>Trigger</strong> A creature within sight of the algriever damages, desecrates, or defiles their bonded shrine</p>\n<hr />\n<p><strong>Effect</strong> The algriever Strides toward the creature; this movement doesn't trigger reactions. The algriever marks the creature as its enemy and gains a +2 status bonus to attack rolls against that enemy until they select a new enemy with Acolyte's Defense.</p>"
+                },
+                "action->Shrine Bond": {
+                    "name": "Shrine Bond",
+                    "description": "<p>The algriever bonds with a shrine after they spend 24 hours at the site. While bonded, the algriever gains a +2 circumstance bonus to Perception checks and skill checks.</p>"
+                },
+                "action->Algriever Venom": {
+                    "name": "Algriever Venom",
+                    "description": "<p><strong>Saving Throw</strong> @Check[will|dc:28]</p>\n<p><strong>Maximum Duration</strong> 6 rounds</p>\n<p><strong>Stage 1</strong> @Damage[2d6[mental]]</p>\n<p><strong>Stage 2</strong> 2d6 mental and @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 1}</p>\n<p><strong>Stage 3</strong> 2d6 mental and @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 2}</p>"
+                },
+                "action->Pilgrim's Ward": {
+                    "name": "Pilgrim's Ward",
+                    "description": "<p><strong>Frequency</strong> once per month</p>\n<hr />\n<p><strong>Effect</strong> The algriever touches a willing creature and fills it with reverence for their bonded shrine. As long as the target creature obeys the edicts and anathemas of the algriever's bonded shrine, or until that algriever grants Pilgrim's Ward to a different creature, that creature gains a +1 status bonus to all Religion checks and Will saves.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.zy4PDhXnaZh6e6iT]{Effect: Pilgrim's Ward}</p>"
+                },
+                "action->Web Trap": {
+                    "name": "Web Trap",
+                    "description": "<p>A creature hit by an algriever's web Strike is @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Immobilized} and stuck to the nearest surface until it @UUID[Compendium.pf2e.actionspf2e.Item.SkZAQRkLLkmBQNB9]{Escapes} (DC 28).</p>"
                 }
             }
         },
@@ -67,6 +83,14 @@
                 "action->Construct Armor (Hardness 3)": {
                     "name": "Construct Armor (Hardness 3)",
                     "description": "<p>Like normal objects, an animated silverware swarm has Hardness. This Hardness reduces any damage the swarm takes by an amount equal to the Hardness. Once an animated silverware swarm is reduced to fewer than half its Hit Points, or immediately upon being damaged by a critical hit, its construct armor breaks, removing the Hardness and reducing its Armor Class to 12.</p>"
+                },
+                "action->Slice and Pound": {
+                    "name": "Slice and Pound",
+                    "description": "<p>Each enemy in the animated cookware swarm's space takes 1d6 points of @Damage[1d6[bludgeoning]]{bludgeoning} or @Damage[1d6[slashing]]{slashing} damage (@Check[reflex|dc:17|basic] save).</p>"
+                },
+                "action->Stick a Fork in It": {
+                    "name": "Stick a Fork in It",
+                    "description": "<p>The animated silverware swarm attempts to pin a single creature.</p>\n<p>The target must attempt a @Check[reflex|dc:17] save.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> Silverware pins portions of the target's clothing and gear. The target takes a -10-foot circumstance penalty to its Speeds as long as it remains in the swarm's space.</p>\n<p><strong>Failure</strong> As success, and the target also can't Step until it leaves the swarm's space.</p>\n<p><strong>Critical Failure</strong> The target is thoroughly pinned by the silverware, becoming @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Immobilized} until it @UUID[Compendium.pf2e.actionspf2e.Item.SkZAQRkLLkmBQNB9]{Escapes} (DC 17) or uses 2 Interact actions to remove all of the silverware pinning them down.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.K3r1lfbtCTf3dFhV]{Effect: Stick a Fork in It}</p>"
                 }
             }
         },
@@ -174,6 +198,21 @@
                 "action->Frightful Presence": {
                     "name": "Frightful Presence",
                     "description": "<p>30 feet @Check[will|dc:19]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.FrightfulPresence]</p>"
+                },
+                "action->Stone-Faced": {
+                    "name": "Stone-Faced",
+                    "description": "<p>While the dalgyal gwishin has no physical body, its stone face is solid. It can't pass through solid objects.</p>"
+                },
+                "action->Void Healing": {
+                    "name": "Void Healing"
+                },
+                "action->Jealous Frenzy": {
+                    "name": "Jealous Frenzy",
+                    "description": "<p><strong>Trigger</strong> The dalgyal gwishin Strikes a creature that has a higher Charisma modifier than itself</p>\n<p><strong>Frequency</strong> once per day</p>\n<hr />\n<p><strong>Effect</strong> The dalgyal gwishin enters an envious frenzy as it senses strong ties of friendship and personality within the creature it struck. The dalgyal gwishin becomes @UUID[Compendium.pf2e.conditionitems.Item.nlCjDvLMf2EkV2dl]{Quickened} but can only use its quickened action to Strike the triggering creature. If the dalgyal gwishin fails to Strike the triggering creature at least once during its turn, Jealous Frenzy ends. It also ends after 1 minute. After Jealous Frenzy ends, the dalgyal gwishin is @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1} for 1 minute.</p>"
+                },
+                "action->Peel Face": {
+                    "name": "Peel Face",
+                    "description": "<p><strong>Trigger</strong> The dalgyal gwishin critically hits a creature or reduces a creature to 0 Hit Points while in a Jealous Frenzy</p>\n<hr />\n<p><strong>Effect</strong> The dalgyal gwishin presses its stony face to the creature's face, causing a ghostly imprint of that face to peel away and duplicate onto its head. The triggering creature must succeed at a @Check[will|dc:22] save or become @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 1} (@UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 2} on a critical failure). The dalgyal gwishin's Jealous Frenzy ends, and it doesn't become slowed.</p>"
                 }
             }
         },
@@ -196,6 +235,10 @@
                 "action->Purifying Flames": {
                     "name": "Purifying Flames",
                     "description": "<p>The exorcist attempts to Strike a creature with their torch, attacking with great precision and causing the torch's fires to flare up. This Strike gains a +2 status bonus to its attack roll and inflicts an additional 2d6 fire damage on a hit instead of just 1d6 fire damage. An undead, spirit, or transmigrated creature hit by this attack must also attempt a @Check[will|dc:26] save.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected by this additional effect, and some of the fire flares back onto the exorcist, inflicting @Damage[2d6[fire]] damage to the exorcist (@Check[reflex|dc:26|basic] save).</p>\n<p><strong>Success</strong> The creature is unaffected by this additional effect.</p>\n<p><strong>Failure</strong> The purifying flames cause the creature to become @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 1} and @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 1} until the end of its next turn.</p>\n<p><strong>Critical Failure</strong> As failure, but @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 2} and @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 2} for 1 minute.</p>"
+                },
+                "action->Torch Wielder": {
+                    "name": "Torch Wielder",
+                    "description": "<p>The exorcist treats a torch as a light mace that deals an additional 1d6 fire damage on a hit.</p>"
                 }
             }
         },
@@ -293,6 +336,29 @@
                 "action->Distracting Giggle": {
                     "name": "Distracting Giggle",
                     "description": "<p>15 feet. The thatchling's giggle echoes in the back of the mind. Creatures within the aura take a \u20131 status penalty to Will saves.</p>"
+                },
+                "action->Rejuvenation": {
+                    "name": "Rejuvenation",
+                    "description": "<p>When a thatchling is destroyed by damage other than fire, it attempts a @Check[flat|dc:11]. On a success, it reforms after [[/br 2d4 #days]]{2d4 days} within 120 feet of where it was destroyed, fully healed. A thatchling is always permanently destroyed if reduced to 0 Hit Points by fire damage or if the obstacle preventing the soul from reincarnating is removed.</p>"
+                },
+                "action->Void Healing": {
+                    "name": "Void Healing"
+                },
+                "action->Create Thatchling Spawn": {
+                    "name": "Create Thatchling Spawn",
+                    "description": "<p>A living humanoid who's slain by a red-hooded thatchling while under the effects of Thatchling's Curse rises as a thatchling after [[/br 1d4 #rounds]]{1d4 rounds}. This spawn is under the command of the red-hooded thatchling that killed it. If a red-hooded thatchling controls too many at once (as determined by the GM), some thatchlings can free themselves with a @Check[will|dc:18] saving throw at the start of their turn. If the red-hooded thatchling who created the spawn is destroyed, the spawn becomes an autonomous thatchling.</p>"
+                },
+                "action->Howl of Vengeful Fury": {
+                    "name": "Howl of Vengeful Fury",
+                    "description": "<p><strong>Frequency</strong> once per hour</p>\n<hr />\n<p><strong>Effect</strong> The red-hooded thatchling sobs pitifully before unleashing a terrifying scream. All non-thatchling creatures within a @Template[emanation|distance:30] take @Damage[2d10[sonic]] damage (@Check[fortitude|dc:18|basic] save) and become immune to all thatchlings' distracting giggle for 1 minute. Thatchlings in the area gain 5 temporary Hit Points and a +1 status bonus to their Strikes and saving throws for 1 minute.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.X1Q1uBiylZoJg3Co]{Effect: Howl of Vengeful Fury}</p>"
+                },
+                "action->Thatchling's Curse": {
+                    "name": "Thatchling's Curse",
+                    "description": "<p>The thatchling focuses its attention on a single target within 30 feet that it can see, and then begins muttering and whispering nonsense. The target must attempt a @Check[will|dc:18] save.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected and is temporarily immune to Thatchling's Curse for 24 hours.</p>\n<p><strong>Success</strong> The target is momentarily disoriented and has difficulty moving in the right direction. The target takes a \u20135-foot status penalty to its Speeds for 1 round.</p>\n<p><strong>Failure</strong> As success, but the penalty to its Speeds lasts for 1 minute.</p>\n<p><strong>Critical Failure</strong> As failure, but the penalty to its Speeds lasts until the curse is removed or until the thatchling that created the effect is permanently destroyed, whichever comes first. In addition, when the cursed creature attempts a Survival check to Sense Direction or @UUID[Compendium.pf2e.actionspf2e.Item.EA5vuSgJfiHH7plD]{Track}, they use the outcome for one degree of success worse than the result of their check, and they can't take the Scout exploration activity.</p>"
+                },
+                "action->Thicket Walker": {
+                    "name": "Thicket Walker",
+                    "description": "<p>Thatchlings ignore difficult terrain caused by brambles, tangled grass, and undergrowth, even those manipulated by magic.</p>"
                 }
             }
         },
@@ -459,6 +525,67 @@
                 "equipment->Choker of Elocution (Greater)": {
                     "name": "Choker of Elocution (Greater)",
                     "description": "<p>This platinum choker bears characters from three language's alphabet (Celestial, Draconic, and Nagaji), and it gives knowledge of those languages and the associated culture's customs.</p>\n<p>You gain a +2 item bonus to Society checks and the ability to understand, speak, and write the chosen languages.</p>\n<p>Your excellent elocution reduces the DC of the flat check to perform an auditory action while deafened from 5 to 3.</p>\n<hr />\n<p><strong>Craft Requirements</strong> The choker bears characters from three languages and grants fluency in all three.</p>"
+                },
+                "consumable->Scroll of Crisis of Faith (Rank 4)": {
+                    "name": "Scroll of Crisis of Faith (Rank 4)",
+                    "description": "<p>@UUID[Compendium.pf2e.spells-srd.Item.3x6eUCm17n6ROzUa]{Crisis of Faith}</p><hr /><p>Casting a Spell from a scroll requires holding the scroll in one hand and activating it with a Cast a Spell activity using the normal number of actions for that spell.</p>\n<p>The spell must appear on your spell list. Because you're the one Casting the Spell, use your spell attack modifier and spell DC. The spell also gains the appropriate trait for your tradition (arcane, divine, occult, or primal).</p>\n<p>Any physical costs are provided when a scroll is created, so you don't need to provide them when casting from a scroll. If the spell requires a locus, you must have that locus to Cast the Spell from a scroll.</p>\n<hr />\n<p><em>Note: To create a scroll or wand of a specific spell, drag the spell from the compendium or compendium browser into the inventory of a PC, NPC, or loot actor.</em></p>"
+                },
+                "consumable->Scroll of Fire Shield (Rank 4)": {
+                    "name": "Scroll of Fire Shield (Rank 4)",
+                    "description": "<p>@UUID[Compendium.pf2e.spells-srd.Item.YrzBLPLd3r9m6t1p]{Fire Shield}</p><hr /><p>Casting a Spell from a scroll requires holding the scroll in one hand and activating it with a Cast a Spell activity using the normal number of actions for that spell.</p>\n<p>The spell must appear on your spell list. Because you're the one Casting the Spell, use your spell attack modifier and spell DC. The spell also gains the appropriate trait for your tradition (arcane, divine, occult, or primal).</p>\n<p>Any physical costs are provided when a scroll is created, so you don't need to provide them when casting from a scroll. If the spell requires a locus, you must have that locus to Cast the Spell from a scroll.</p>\n<hr />\n<p><em>Note: To create a scroll or wand of a specific spell, drag the spell from the compendium or compendium browser into the inventory of a PC, NPC, or loot actor.</em></p>"
+                },
+                "consumable->Scroll of Flame Strike (Rank 5)": {
+                    "name": "Scroll of Flame Strike (Rank 5)",
+                    "description": "<p>@UUID[Compendium.pf2e.spells-srd.Item.E3X2RbzWHCdz7gsk]{Flame Strike}</p><hr /><p>Casting a Spell from a scroll requires holding the scroll in one hand and activating it with a Cast a Spell activity using the normal number of actions for that spell.</p>\n<p>The spell must appear on your spell list. Because you're the one Casting the Spell, use your spell attack modifier and spell DC. The spell also gains the appropriate trait for your tradition (arcane, divine, occult, or primal).</p>\n<p>Any physical costs are provided when a scroll is created, so you don't need to provide them when casting from a scroll. If the spell requires a locus, you must have that locus to Cast the Spell from a scroll.</p>\n<hr />\n<p><em>Note: To create a scroll or wand of a specific spell, drag the spell from the compendium or compendium browser into the inventory of a PC, NPC, or loot actor.</em></p>"
+                },
+                "consumable->Scroll of Haste (Rank 3)": {
+                    "name": "Scroll of Haste (Rank 3)",
+                    "description": "<p>@UUID[Compendium.pf2e.spells-srd.Item.o6YCGx4lycsYpww4]{Haste}</p><hr /><p>Casting a Spell from a scroll requires holding the scroll in one hand and activating it with a Cast a Spell activity using the normal number of actions for that spell.</p>\n<p>The spell must appear on your spell list. Because you're the one Casting the Spell, use your spell attack modifier and spell DC. The spell also gains the appropriate trait for your tradition (arcane, divine, occult, or primal).</p>\n<p>Any physical costs are provided when a scroll is created, so you don't need to provide them when casting from a scroll. If the spell requires a locus, you must have that locus to Cast the Spell from a scroll.</p>\n<hr />\n<p><em>Note: To create a scroll or wand of a specific spell, drag the spell from the compendium or compendium browser into the inventory of a PC, NPC, or loot actor.</em></p>"
+                },
+                "consumable->Scroll of Hydraulic Torrent (Rank 4)": {
+                    "name": "Scroll of Hydraulic Torrent (Rank 4)",
+                    "description": "<p>@UUID[Compendium.pf2e.spells-srd.Item.Y3G6Y6EDgCY0s3fq]{Hydraulic Torrent}</p><hr /><p>Casting a Spell from a scroll requires holding the scroll in one hand and activating it with a Cast a Spell activity using the normal number of actions for that spell.</p>\n<p>The spell must appear on your spell list. Because you're the one Casting the Spell, use your spell attack modifier and spell DC. The spell also gains the appropriate trait for your tradition (arcane, divine, occult, or primal).</p>\n<p>Any physical costs are provided when a scroll is created, so you don't need to provide them when casting from a scroll. If the spell requires a locus, you must have that locus to Cast the Spell from a scroll.</p>\n<hr />\n<p><em>Note: To create a scroll or wand of a specific spell, drag the spell from the compendium or compendium browser into the inventory of a PC, NPC, or loot actor.</em></p>"
+                },
+                "consumable->Scroll of Illusory Creature (Rank 5)": {
+                    "name": "Scroll of Illusory Creature (Rank 5)",
+                    "description": "<p>@UUID[Compendium.pf2e.spells-srd.Item.f8SBoXiXQjlCKqly]{Illusory Creature}</p><hr /><p>Casting a Spell from a scroll requires holding the scroll in one hand and activating it with a Cast a Spell activity using the normal number of actions for that spell.</p>\n<p>The spell must appear on your spell list. Because you're the one Casting the Spell, use your spell attack modifier and spell DC. The spell also gains the appropriate trait for your tradition (arcane, divine, occult, or primal).</p>\n<p>Any physical costs are provided when a scroll is created, so you don't need to provide them when casting from a scroll. If the spell requires a locus, you must have that locus to Cast the Spell from a scroll.</p>\n<hr />\n<p><em>Note: To create a scroll or wand of a specific spell, drag the spell from the compendium or compendium browser into the inventory of a PC, NPC, or loot actor.</em></p>"
+                },
+                "consumable->Scroll of Illusory Scene (Rank 5)": {
+                    "name": "Scroll of Illusory Scene (Rank 5)",
+                    "description": "<p>@UUID[Compendium.pf2e.spells-srd.Item.Ucf8eynbZMfUucjE]{Illusory Scene}</p><hr /><p>Casting a Spell from a scroll requires holding the scroll in one hand and activating it with a Cast a Spell activity using the normal number of actions for that spell.</p>\n<p>The spell must appear on your spell list. Because you're the one Casting the Spell, use your spell attack modifier and spell DC. The spell also gains the appropriate trait for your tradition (arcane, divine, occult, or primal).</p>\n<p>Any physical costs are provided when a scroll is created, so you don't need to provide them when casting from a scroll. If the spell requires a locus, you must have that locus to Cast the Spell from a scroll.</p>\n<hr />\n<p><em>Note: To create a scroll or wand of a specific spell, drag the spell from the compendium or compendium browser into the inventory of a PC, NPC, or loot actor.</em></p>"
+                },
+                "consumable->Scroll of Mirror Image (Rank 2)": {
+                    "name": "Scroll of Mirror Image (Rank 2)",
+                    "description": "<p>@UUID[Compendium.pf2e.spells-srd.Item.j8vIoIEWElvpwkcI]{Mirror Image}</p><hr /><p>Casting a Spell from a scroll requires holding the scroll in one hand and activating it with a Cast a Spell activity using the normal number of actions for that spell.</p>\n<p>The spell must appear on your spell list. Because you're the one Casting the Spell, use your spell attack modifier and spell DC. The spell also gains the appropriate trait for your tradition (arcane, divine, occult, or primal).</p>\n<p>Any physical costs are provided when a scroll is created, so you don't need to provide them when casting from a scroll. If the spell requires a locus, you must have that locus to Cast the Spell from a scroll.</p>\n<hr />\n<p><em>Note: To create a scroll or wand of a specific spell, drag the spell from the compendium or compendium browser into the inventory of a PC, NPC, or loot actor.</em></p>"
+                },
+                "consumable->Scroll of Soothe (Rank 4)": {
+                    "name": "Scroll of Soothe (Rank 4)",
+                    "description": "<p>@UUID[Compendium.pf2e.spells-srd.Item.szIyEsvihc5e1w8n]{Soothe}</p><hr /><p>Casting a Spell from a scroll requires holding the scroll in one hand and activating it with a Cast a Spell activity using the normal number of actions for that spell.</p>\n<p>The spell must appear on your spell list. Because you're the one Casting the Spell, use your spell attack modifier and spell DC. The spell also gains the appropriate trait for your tradition (arcane, divine, occult, or primal).</p>\n<p>Any physical costs are provided when a scroll is created, so you don't need to provide them when casting from a scroll. If the spell requires a locus, you must have that locus to Cast the Spell from a scroll.</p>\n<hr />\n<p><em>Note: To create a scroll or wand of a specific spell, drag the spell from the compendium or compendium browser into the inventory of a PC, NPC, or loot actor.</em></p>"
+                },
+                "strike-melee->Longsword": {
+                    "name": "Longsword"
+                },
+                "action->Esoteric Lore": {
+                    "name": "Esoteric Lore",
+                    "description": "<p>Heh Shan-Bao can attempt to Recall Knowledge on any topic with a +15 modifier.</p>"
+                },
+                "action->Reflecting Ward": {
+                    "name": "Reflecting Ward",
+                    "description": "<p><strong>Frequency</strong> twice per day</p>\n<p><strong>Trigger</strong> Heh Shan-Bao would take any form of energy damage</p>\n<hr />\n<p><strong>Effect</strong> One of the many otherwise non-magical fulus Heh Shan-Bao keeps on his person flashes with golden light and crumbles to ash, granting him resistance 10 to the triggering damage type for 1 minute, or until he uses this ability again.</p>"
+                },
+                "action->Scroll Esoterica": {
+                    "name": "Scroll Esoterica",
+                    "description": "<p>Heh Shan-Bao creates a set of nine temporary scrolls each morning that lose their magic after 24 hours. On a typical day, the governor has the scrolls listed below available for use.</p>\n<p>scroll of @UUID[Compendium.pf2e.spells-srd.Item.3x6eUCm17n6ROzUa]{Crisis of Faith} (4th level)</p>\n<p>scroll of @UUID[Compendium.pf2e.spells-srd.Item.YrzBLPLd3r9m6t1p]{Fire Shield}</p>\n<p>scroll of @UUID[Compendium.pf2e.spells-srd.Item.E3X2RbzWHCdz7gsk]{Flame Strike}</p>\n<p>scroll of @UUID[Compendium.pf2e.spells-srd.Item.o6YCGx4lycsYpww4]{Haste}</p>\n<p>scroll of @UUID[Compendium.pf2e.spells-srd.Item.Y3G6Y6EDgCY0s3fq]{Hydraulic Torrent}</p>\n<p>scroll of @UUID[Compendium.pf2e.spells-srd.Item.f8SBoXiXQjlCKqly]{Illusory Creature} (5th level)</p>\n<p>scroll of @UUID[Compendium.pf2e.spells-srd.Item.Ucf8eynbZMfUucjE]{Illusory Scene}</p>\n<p>scroll of @UUID[Compendium.pf2e.spells-srd.Item.j8vIoIEWElvpwkcI]{Mirror Image}</p>\n<p>scroll of @UUID[Compendium.pf2e.spells-srd.Item.szIyEsvihc5e1w8n]{Soothe} (4th level)</p>"
+                },
+                "action->Scroll Thaumaturgy": {
+                    "name": "Scroll Thaumaturgy",
+                    "description": "<p>Heh Shan-Bao's magical training allows him to activate scrolls of any tradition despite having no actual spellcasting power of his own. His spell DC is 28, and his spell attack is +20 for any scroll he uses.</p>"
+                },
+                "lore->Esoteric Lore": {
+                    "name": "Esoteric Lore"
+                },
+                "lore->Willowshore Lore": {
+                    "name": "Willowshore Lore"
                 }
             }
         },
@@ -489,6 +616,25 @@
                 "action->Urban Legend": {
                     "name": "Urban Legend",
                     "description": "<p>Abilities that can be disbelieved include his resistance to physical damage, his frightful presence, the slashing damage from his Strikes, and his 7th-rank innate spells.</p>\n<hr />\n<p>A brainchild is sustained only by the reputation that precedes them. Mindless creatures are immune to a brainchild and can't perceive them.</p>\n<p>The brainchild's size, features, and items, as well as the appearance of their attacks, match what the foes perceiving them expect. If foes expect to see different things, the brainchild chooses which to manifest. If any creature that can perceive the brainchild believes the brainchild has one of the abilities below, the brainchild has that ability.</p>\n<p>A creature can @UUID[Compendium.pf2e.actionspf2e.Item.BlAOM2X92SI6HMtJ]{Seek} or @UUID[Compendium.pf2e.actionspf2e.Item.1xRFPTFtWtGJ9ELw]{Sense Motive} (against the brainchild's Deception DC) to attempt to disbelieve an individual ability. If at any point no creature perceiving the brainchild believes in the ability, the brainchild loses that ability immediately. If foes expect different particulars, such as one believing the brainchild is immune to fire and another believing they're immune to divinations, the brainchild chooses one to have.</p>\n<ul>\n<li><strong>@UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.j2wsK6IsW5yMW1jW]{Tremorsense}</strong> (imprecise) 100 feet</li>\n<li><strong>Immunity</strong> to one damage type, magic school, or condition</li>\n<li><strong>Weakness</strong> 10 to one damage type other than mental</li>\n<li><strong>Resistance</strong> 10 to physical damage, with an exception for either cold iron or silver</li>\n<li><strong>@UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.etMnv73EIdEZrYYu]{Frightful Presence}</strong> (aura, emotion, fear, mental) 100 feet, DC 28</li>\n<li><strong>[[/r 1d6]]{1d6} Extra Damage</strong> on Strikes, of a type one foe believes in</li>\n<li><strong>Additional Spells</strong> @UUID[Compendium.pf2e.spells-srd.Item.R8bqnYiThB6MYTxD]{Phantom Pain} and @UUID[Compendium.pf2e.spells-srd.Item.IqJ9URobmJ9L9UBG]{Shadow Blast} at 6th rank</li>\n</ul>"
+                },
+                "action->Fear of Flutes": {
+                    "name": "Fear of Flutes",
+                    "description": "<p>The first time in any round when someone plays a flute within 30 feet of Heh Shan-Bao, he must attempt a @Check[will|defense:performance] save against the flute player's Performance DC. This DC increases by 4 if the flute player is someone (at the GM's discretion) who's strongly religious.</p>\n<hr />\n<p><strong>Critical Success</strong> Heh Shan-Bao is unaffected.</p>\n<p><strong>Success</strong> Heh Shan-Bao becomes @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 1}.</p>\n<p><strong>Failure</strong> Heh Shan-Bao becomes @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 2}.</p>\n<p><strong>Critical Failure</strong> Heh Shan-Bao becomes @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 3} and is @UUID[Compendium.pf2e.conditionitems.Item.sDPxOjQ9kx2RZE8D]{Fleeing} until the end of his next turn.</p>"
+                },
+                "action->Frightful Presence": {
+                    "name": "Frightful Presence",
+                    "description": "<p>100 feet @Check[will|dc:30]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.FrightfulPresence]</p>"
+                },
+                "action->Persistence of Memory": {
+                    "name": "Persistence of Memory",
+                    "description": "<p>When a brainchild is destroyed, it returns if anyone still fully believes it exists, re-forming within 100 feet of any believer after [[/br 2d4 #Persistance of Memory]]{2d4 days}.</p>"
+                },
+                "action->Steal Soul": {
+                    "name": "Steal Soul",
+                    "description": "<p><strong>Trigger</strong> Heh Shan-Bao casts @UUID[Compendium.pf2e.spells-srd.Item.dLdRqT6UxTKlsPgp]{Death Knell} on a 10th-or lower-level creature</p>\n<hr />\n<p><strong>Effect</strong> If the <em>death knell</em> kills the target, the target's eyes vanish, all fat drains from its body, and burnt brands manifest around the wrists as the target's soul is siphoned into the corrupted Willowshore mindscape. The target can't be returned to life through any means, even powerful magic like @UUID[Compendium.pf2e.spells-srd.Item.AuIiqc7jjiy1GZ75]{Manifestation}, until the corrupted Willowshore mindscape is destroyed.</p>"
+                },
+                "lore->Willowshore Lore": {
+                    "name": "Willowshore Lore"
                 }
             }
         },
@@ -515,6 +661,32 @@
                 },
                 "action->Fast Healing 10": {
                     "name": "Fast Healing 10"
+                },
+                "action->Jiang-Shi Vulnerabilities": {
+                    "name": "Jiang-Shi Vulnerabilities",
+                    "description": "<p>All jiang-shi possess the following vulnerabilities.</p>\n<ul>\n<li><strong>Revulsion</strong> A jiang-shi can't voluntarily come within 10 feet of a brandished mirror or the sound of ringing handbells. A creature can Interact with a mirror or handbell to brandish or ring the item for 1 round (similar to Raising a Shield). If the jiang-shi involuntarily comes within 10 feet of an object of their revulsion, they gain the @UUID[Compendium.pf2e.conditionitems.Item.sDPxOjQ9kx2RZE8D]{Fleeing} condition, running from the object of their revulsion until they are 10 feet or farther from the object. After 1 round of being exposed to the object of their revulsion, a jiang-shi can attempt a @Check[will|dc:25] save as a single action, which has the concentrate trait. On a success, they overcome their revulsions for [[/br 1d6 #rounds]]{1d6 rounds} (or 1 hour on a critical success).</li>\n<li><strong>Bitter Epiphany</strong> A jiang-shi is afflicted by severe melancholia when reminded of their debased nature and the truth of their existential disconnection from living beings. When a jiang-shi sees an altar with at least 1 Bulk of food offerings to ancestor spirits, they must attempt a @Check[will|dc:25] save. They are then temporarily immune to Bitter Epiphany for 1 minute.</li>\n</ul>\n<hr />\n<p><strong>Critical Success</strong> The jiang-shi is unaffected.</p>\n<p><strong>Success</strong> The jiang-shi is @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 1} for 1 round.</p>\n<p><strong>Failure</strong> The jiang-shi is @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 2} for 1 minute.</p>\n<p><strong>Critical Failure</strong> The jiang-shi is stupefied 2 and @UUID[Compendium.pf2e.conditionitems.Item.yblD8fOR1J8rDwEQ]{Confused} for 1 minute.</p>"
+                },
+                "action->One More Breath": {
+                    "name": "One More Breath",
+                    "description": "<p>Unlike other undead, a jiang-shi isn't destroyed at 0 HP. Instead, they fall @UUID[Compendium.pf2e.conditionitems.Item.fBnFDH2MTzgFijKf]{Unconscious} and awaken in 1 minute with 1 Hit Point. Scattering at least 1 Bulk of glutinous rice or hen eggs on an unconscious jiang-shi destroys them permanently. If the jiang-shi was reduced to 0 HP by an attack from a weapon made of duskwood, they're destroyed immediately.</p>"
+                },
+                "action->Void Healing": {
+                    "name": "Void Healing"
+                },
+                "action->Warped Fulu": {
+                    "name": "Warped Fulu",
+                    "description": "<p>The jiang-shi has corrupted the fulu attached to their brow. The jiang-shi is immune to spells cast from a magic item without expending a spell slot, such as from a scroll or wand. A creature can @UUID[Compendium.pf2e.actionspf2e.Item.RDXXE7wMrSPCLv5k]{Steal} the fulu to remove it, rolling against the jiangshi's Perception DC. This immediately ends the jiang-shi's immunity to these effects. If a creature then destroys the removed fulu with an Interact action, the jiang-shi also loses their fast healing ability. A jiang-shi can create a replacement fulu by spending 1 uninterrupted hour inscribing a strip of paper (or similar) with a writing instrument.</p>"
+                },
+                "action->Drain Qi": {
+                    "name": "Drain Qi",
+                    "description": "<p><strong>Requirements</strong> A @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed}, @UUID[Compendium.pf2e.conditionitems.Item.6uEgoh53GbXuHpTF]{Paralyzed}, @UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{Restrained}, @UUID[Compendium.pf2e.conditionitems.Item.fBnFDH2MTzgFijKf]{Unconscious}, or willing creature is within the jiang-shi's reach</p>\n<hr />\n<p><strong>Effect</strong> The jiang-shi drains the victim's life energy, or qi, through their breath. This requires an @Check[athletics|defense:fortitude] check against the victim's Fortitude DC if the victim is grabbed and is automatic for any of the other conditions. The victim is @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 1} and the jiang-shi regains @Damage[12[healing]] HP, gaining any excess as temporary Hit Points. Draining qi from a creature that's already drained doesn't restore any HP to the jiang-shi but increases the victim's drained condition value by 1, killing the victim when it reaches drained 5. If the victim has the ability to cast ki spells, it can spend 1 Focus Point to avoid becoming drained. This protects it only from the current attack, not from subsequent attempts to Drain Qi.</p>\n<p>A victim's drained condition value decreases by 1 every week. If the creature restricts their diet to glutinous rice for at least 1 day and spends 10 minutes dancing, jogging, or otherwise engaging in vigorous physical activity by succeeding at a @Check[athletics|dc:25] check, it reduces its drained condition by 1.</p>"
+                },
+                "action->Rigor Mortis": {
+                    "name": "Rigor Mortis",
+                    "description": "<p>The jiang-shi ignores difficult terrain and effects that would render them @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone}. A jiang-shi can't take the @UUID[Compendium.pf2e.actionspf2e.Item.HYNhdaPtF1QmQbR3]{Drop Prone} action. When they @UUID[Compendium.pf2e.actionspf2e.Item.d5I6018Mci2SWokk]{Leap} they don't trigger reactions that are normally triggered by move actions, such as Attacks of Opportunity.</p>"
+                },
+                "action->Grab": {
+                    "name": "Grab"
                 }
             }
         },
@@ -537,6 +709,13 @@
                 "action->Nerves of Steel": {
                     "name": "Nerves of Steel",
                     "description": "<p>If Granny Hu succeeds at a save against a fear effect, she gets a critical success instead.</p>"
+                },
+                "action->Want to Try Me?": {
+                    "name": "Want to Try Me?",
+                    "description": "<p><strong>Trigger</strong> A creature within 30 feet attempts to @UUID[Compendium.pf2e.actionspf2e.Item.tHCqgwjtQtzNqVvd]{Coerce} or @UUID[Compendium.pf2e.actionspf2e.Item.2u915NdUyQan6uKF]{Demoralize} a creature</p>\n<hr />\n<p><strong>Effect</strong> Granny Hu threatens to expose a secret of the triggering creature. She attempts an @Check[intimidation|defense:will] check against the triggering creature's Will DC. Her reputation means she can threaten a PC even if she doesn't actually know a secret, but if she does know an especially dangerous or shameful one, she gains a +2 circumstance bonus to her Intimidation check.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 2}, and the result of their Coerce or Demoralize attempt is reduced by one degree of success.</p>\n<p><strong>Success</strong> As success, but @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 1}.</p>\n<p><strong>Failure</strong> The creature is unaffected.</p>\n<p><strong>Critical Failure</strong> The creature is unaffected, gains a +1 circumstance bonus to their Coerce or Demoralize attempt, and is immune to Want to Try Me? for 24 hours.</p>"
+                },
+                "lore->Willowshore Lore": {
+                    "name": "Willowshore Lore"
                 }
             }
         },
@@ -557,6 +736,18 @@
                 "action->Aura of Forgetfulness": {
                     "name": "Aura of Forgetfulness",
                     "description": "<p>30 feet. A creature who begins its turn in the aura must attempt a @Check[will|dc:21] save.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected and is temporarily immune to Aura of Forgetfulness for 24 hours.</p>\n<p><strong>Success</strong> The creature is unaffected.</p>\n<p><strong>Failure</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1} until the end of its next turn, as it has trouble remembering what it intended to do.</p>\n<p><strong>Critical Failure</strong> As failure, but @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 2}.</p>"
+                },
+                "action->Soul Shred": {
+                    "name": "Soul Shred",
+                    "description": "<p>Creatures killed by a idja are difficult to bring back to life or animate as undead. The idja automatically attempts to counteract any attempt to resurrect or animate any creature that it has killed (counteract modifier [[/r 1d20+14 #Counteract]]{+14}, counteract rank 3). If the idja who slew the creature is itself slain, the creature can be brought back from death or become undead normally.</p>"
+                },
+                "action->Manifest False Memories": {
+                    "name": "Manifest False Memories",
+                    "description": "<p>The ijda releases a cloud of red butterflies from its body, each of which carries a false memory that infects those they brush against. All non-nindoru creatures @Template[emanation|distance:10]{within 10 feet} of the ijda must attempt a @Check[will|dc:21] save. The ijda can't Manifest False Memories for [[/br 1d4 #rounds]]{1d4 rounds}.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 1} until the end of its next turn.</p>\n<p><strong>Failure</strong> The creature is stupefied 1 and @UUID[Compendium.pf2e.conditionitems.Item.yblD8fOR1J8rDwEQ]{Confused} until the end of its next turn.</p>\n<p><strong>Critical Failure</strong> The creature is stupefied 1 and confused for 1 minute. It can attempt a new save at the end of each of its turns to end the effects.</p>"
+                },
+                "action->Ruin Wielder": {
+                    "name": "Ruin Wielder",
+                    "description": "<p>When a ijda wields a broken non-magical weapon, they do not take any of the disadvantages of the weapon being broken. While the ijda wields it, the weapon becomes a +1 striking weapon that deals an additional 1d6 mental damage on a successful hit.</p>"
                 }
             }
         },
@@ -662,6 +853,10 @@
                 "action->Sneak Attack": {
                     "name": "Sneak Attack",
                     "description": "<p>The jinkin deals 1d6 extra precision damage to off-guard creatures.</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.SneakAttack]</p>"
+                },
+                "action->Tinker": {
+                    "name": "Tinker",
+                    "description": "<p>A group of six jinkins can work together for an hour to imbue an item with a curse at a range of 60 feet. While this process is lengthy, it's also unobtrusive and can be performed while @UUID[Compendium.pf2e.actionspf2e.Item.XMcnh4cSI32tljXa]{Hiding}. Jinkins prefer to use this ability on magic items. The curse makes the item unreliable (@Check[flat|dc:5] check or waste any action to Interact with or Activate the item), adds a bizarre requirement to use the item, or imparts some other curse of a similar caliber.</p>"
                 }
             }
         },
@@ -691,6 +886,18 @@
                 "action->Manifest Bundle": {
                     "name": "Manifest Bundle",
                     "description": "<p><strong>Frequency</strong> once per hour</p>\n<hr />\n<p><strong>Effect</strong> The kagekuma manifests a large bundle of straw, reeds, rope, yarn, hair, or the like, all lashed together with cords and strapped to its back. The kagekuma's AC increases to 27 as long as its bundle remains manifested, but its Speed is reduced to 15 feet.</p>"
+                },
+                "action->Ruin Wielder": {
+                    "name": "Ruin Wielder",
+                    "description": "<p>When a kagekuma wields a broken, non-magical weapon, they don't take any of the disadvantages of the weapon being broken. While the kagekuma wields it, the weapon becomes a <em>+1 striking weapon</em>, and it deals an additional 1d6 mental damage on a successful hit.</p>"
+                },
+                "action->Shadow Bite": {
+                    "name": "Shadow Bite",
+                    "description": "<p><strong>Requirements</strong> The kagekuma is casting a shadow</p>\n<hr />\n<p><strong>Effect</strong> The kagekuma targets an adjacent creature that's casting a shadow, then its shadow feeds on that creature's shadow. If the kagekuma has a manifested bundle, observers (including the creature whose shadow is being bitten) can notice the kagekuma's Shadow Bite only if they succeed at a @Check[perception|dc:38] check. The target must succeed at a @Check[fortitude|dc:26] save or become @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 1} (@UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 2} on a critical failure).</p>"
+                },
+                "action->Shed Bundle": {
+                    "name": "Shed Bundle",
+                    "description": "<p><strong>Requirements</strong> The kagekuma has a manifested bundle</p>\n<p><strong>Frequency</strong> once per day</p>\n<hr />\n<p><strong>Effect</strong> The kagekuma causes its bundle to vanish, Strides, and then attempts a kusarigama Strike and a bite Strike.</p>"
                 }
             }
         },
@@ -725,6 +932,9 @@
                 },
                 "action->Void Healing": {
                     "name": "Void Healing"
+                },
+                "action->Improved Push 5 feet": {
+                    "name": "Improved Push 5 feet"
                 }
             }
         },
@@ -809,6 +1019,14 @@
                 "action->Manifest Bone Club": {
                     "name": "Manifest Bone Club",
                     "description": "<p><strong>Requirements</strong> The meokdan isn't carrying a bone club</p>\n<hr />\n<p><strong>Effect</strong> The meokdan reaches down its throat into its stomach and pulls out a human femur that it can wield as a bone club. After the meokdan Strikes a creature, the bone club shatters, but its sharp fragments remain in roughly the same shape; Strikes with a shattered bone club inflict slashing and bleed damage. After the meokdan Strikes with a shattered bone club, or if the meokdan drops the bone club, the club is destroyed, and the nindoru can Manifest a new bone club.</p>"
+                },
+                "action->Quick Snack": {
+                    "name": "Quick Snack",
+                    "description": "<p><strong>Trigger</strong> The meokdan critically hits a living creature with its bite</p>\n<hr />\n<p><strong>Effect</strong> The meokdan Snacks on the creature.</p>"
+                },
+                "action->Snack": {
+                    "name": "Snack",
+                    "description": "<p>The meokdan attempts a bite Strike against an adjacent creature or chews on a handheld object they're carrying. If the creature is living or the object is food, the meokdan gurgles in delight and restores @Damage[(1d8+8)[healing]] Hit Points. If the creature is undead or a construct, or the object is inedible, the meokdan shrieks in frustration and gains a +1 status bonus to attack rolls and saving throws until the end of its next turn. The meokdan can't Snack again for 1 round.</p>"
                 }
             }
         },
@@ -836,6 +1054,14 @@
                 "action->Sensitive Hearing": {
                     "name": "Sensitive Hearing",
                     "description": "<p>As long as the noppera-bo is @UUID[Compendium.pf2e.conditionitems.Item.9PR9y0bi4JPKnHPR]{Deafened}, they're @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1}.</p>"
+                },
+                "action->False Weapon": {
+                    "name": "False Weapon",
+                    "description": "<p>A noppera-bo impersonator carries a <em>+1 striking</em> weapon that looks identical to the favored weapon of the PC being impersonated. If the PC favors unarmed strikes, it appears as hand wraps. If the PC favors a ranged weapon, then the noppera-bo impersonator has no melee weapon and instead uses the ranged weapon rules above; otherwise, the noppera-bo impersonator has no ranged weapon. If the PCs favors no weapon, then the noppera-bo wields a club as its false weapon. This false weapon is only partially real and inflicts only mental damage when it hits; it gains none of the original weapon's traits or magical enhancements. If a noppera-bo impersonator's false weapon is broken, disarmed, or set down, it fades away. The noppera-bo impersonator can craft a replacement false weapon by spending 10 minutes to recreate one.</p>"
+                },
+                "action->Impersonated Spellcasting": {
+                    "name": "Impersonated Spellcasting",
+                    "description": "<p>The noppera-bo impersonator gains a suites of innate spells, matching the spellcasting tradition utilized by the PC being impersonated. You can adjust the spells to make a more perfect fit for the impersonation.</p>"
                 }
             }
         },
@@ -863,6 +1089,14 @@
                 "action->Sensitive Hearing": {
                     "name": "Sensitive Hearing",
                     "description": "<p>As long as the noppera-bo is @UUID[Compendium.pf2e.conditionitems.Item.9PR9y0bi4JPKnHPR]{Deafened}, they're @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1}.</p>"
+                },
+                "action->False Weapon": {
+                    "name": "False Weapon",
+                    "description": "<p>A noppera-bo impersonator carries a <em>+1 striking</em> weapon that looks identical to the favored weapon of the PC being impersonated. If the PC favors unarmed strikes, it appears as hand wraps. If the PC favors a ranged weapon, then the noppera-bo impersonator has no melee weapon and instead uses the ranged weapon rules above; otherwise, the noppera-bo impersonator has no ranged weapon. If the PCs favors no weapon, then the noppera-bo wields a club as its false weapon. This false weapon is only partially real and inflicts only mental damage when it hits; it gains none of the original weapon's traits or magical enhancements. If a noppera-bo impersonator's false weapon is broken, disarmed, or set down, it fades away. The noppera-bo impersonator can craft a replacement false weapon by spending 10 minutes to recreate one.</p>"
+                },
+                "action->Impersonated Spellcasting": {
+                    "name": "Impersonated Spellcasting",
+                    "description": "<p>The noppera-bo impersonator gains a suites of innate spells, matching the spellcasting tradition utilized by the PC being impersonated. You can adjust the spells to make a more perfect fit for the impersonation.</p>"
                 }
             }
         },
@@ -887,6 +1121,14 @@
                 "action->Sensitive Hearing": {
                     "name": "Sensitive Hearing",
                     "description": "<p>As long as the noppera-bo is @UUID[Compendium.pf2e.conditionitems.Item.9PR9y0bi4JPKnHPR]{Deafened}, they're @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1}.</p>"
+                },
+                "action->False Weapon": {
+                    "name": "False Weapon",
+                    "description": "<p>A noppera-bo impersonator carries a <em>+1 striking</em> weapon that looks identical to the favored weapon of the PC being impersonated. If the PC favors unarmed strikes, it appears as hand wraps. If the PC favors a ranged weapon, then the noppera-bo impersonator has no melee weapon and instead uses the ranged weapon rules above; otherwise, the noppera-bo impersonator has no ranged weapon. If the PCs favors no weapon, then the noppera-bo wields a club as its false weapon. This false weapon is only partially real and inflicts only mental damage when it hits; it gains none of the original weapon's traits or magical enhancements. If a noppera-bo impersonator's false weapon is broken, disarmed, or set down, it fades away. The noppera-bo impersonator can craft a replacement false weapon by spending 10 minutes to recreate one.</p>"
+                },
+                "action->Impersonated Abilities": {
+                    "name": "Impersonated Abilities",
+                    "description": "<p>The noppera-bo impersonator gains one of the following abilities of your choice.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.kkP0tagXmAYuSH3u]{Effect: Impersonated Ability}</p>\n<ul>\n<li><strong>Armored</strong> The noppera-bo appears to be heavily armored, and they increase their AC to 24.</li>\n<li>@UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.hFtNbo1LKYCoDy2O]{Attack of Opportunity}</li>\n<li><strong>Shield Carrier</strong> The noppera-bo carries a minor sturdy shield (that transforms into a useless prop if it's destroyed, dropped, or upon the noppera-bo's death), and they gain the Shield Block general feat.</li>\n<li><strong>Weapon Perk</strong> The noppera-bo chooses one of these weapon traits to add to their false weapon: agile, deadly d8, forceful, parry, reach, shove, sweep, or trip.</li>\n</ul>"
                 }
             }
         },
@@ -914,6 +1156,14 @@
                 "action->Sensitive Hearing": {
                     "name": "Sensitive Hearing",
                     "description": "<p>As long as the noppera-bo is @UUID[Compendium.pf2e.conditionitems.Item.9PR9y0bi4JPKnHPR]{Deafened}, they're @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1}.</p>"
+                },
+                "action->False Weapon": {
+                    "name": "False Weapon",
+                    "description": "<p>A noppera-bo impersonator carries a <em>+1 striking</em> weapon that looks identical to the favored weapon of the PC being impersonated. If the PC favors unarmed strikes, it appears as hand wraps. If the PC favors a ranged weapon, then the noppera-bo impersonator has no melee weapon and instead uses the ranged weapon rules above; otherwise, the noppera-bo impersonator has no ranged weapon. If the PCs favors no weapon, then the noppera-bo wields a club as its false weapon. This false weapon is only partially real and inflicts only mental damage when it hits; it gains none of the original weapon's traits or magical enhancements. If a noppera-bo impersonator's false weapon is broken, disarmed, or set down, it fades away. The noppera-bo impersonator can craft a replacement false weapon by spending 10 minutes to recreate one.</p>"
+                },
+                "action->Impersonated Spellcasting": {
+                    "name": "Impersonated Spellcasting",
+                    "description": "<p>The noppera-bo impersonator gains a suites of innate spells, matching the spellcasting tradition utilized by the PC being impersonated. You can adjust the spells to make a more perfect fit for the impersonation.</p>"
                 }
             }
         },
@@ -941,6 +1191,14 @@
                 "action->Sensitive Hearing": {
                     "name": "Sensitive Hearing",
                     "description": "<p>As long as the noppera-bo is @UUID[Compendium.pf2e.conditionitems.Item.9PR9y0bi4JPKnHPR]{Deafened}, they're @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1}.</p>"
+                },
+                "action->False Weapon": {
+                    "name": "False Weapon",
+                    "description": "<p>A noppera-bo impersonator carries a <em>+1 striking</em> weapon that looks identical to the favored weapon of the PC being impersonated. If the PC favors unarmed strikes, it appears as hand wraps. If the PC favors a ranged weapon, then the noppera-bo impersonator has no melee weapon and instead uses the ranged weapon rules above; otherwise, the noppera-bo impersonator has no ranged weapon. If the PCs favors no weapon, then the noppera-bo wields a club as its false weapon. This false weapon is only partially real and inflicts only mental damage when it hits; it gains none of the original weapon's traits or magical enhancements. If a noppera-bo impersonator's false weapon is broken, disarmed, or set down, it fades away. The noppera-bo impersonator can craft a replacement false weapon by spending 10 minutes to recreate one.</p>"
+                },
+                "action->Impersonated Spellcasting": {
+                    "name": "Impersonated Spellcasting",
+                    "description": "<p>The noppera-bo impersonator gains a suites of innate spells, matching the spellcasting tradition utilized by the PC being impersonated. You can adjust the spells to make a more perfect fit for the impersonation.</p>"
                 }
             }
         },
@@ -965,6 +1223,14 @@
                 "action->Sensitive Hearing": {
                     "name": "Sensitive Hearing",
                     "description": "<p>As long as the noppera-bo is @UUID[Compendium.pf2e.conditionitems.Item.9PR9y0bi4JPKnHPR]{Deafened}, they're @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1}.</p>"
+                },
+                "action->False Weapon": {
+                    "name": "False Weapon",
+                    "description": "<p>A noppera-bo impersonator carries a <em>+1 striking</em> weapon that looks identical to the favored weapon of the PC being impersonated. If the PC favors unarmed strikes, it appears as hand wraps. If the PC favors a ranged weapon, then the noppera-bo impersonator has no melee weapon and instead uses the ranged weapon rules above; otherwise, the noppera-bo impersonator has no ranged weapon. If the PCs favors no weapon, then the noppera-bo wields a club as its false weapon. This false weapon is only partially real and inflicts only mental damage when it hits; it gains none of the original weapon's traits or magical enhancements. If a noppera-bo impersonator's false weapon is broken, disarmed, or set down, it fades away. The noppera-bo impersonator can craft a replacement false weapon by spending 10 minutes to recreate one.</p>"
+                },
+                "action->Impersonated Abilities": {
+                    "name": "Impersonated Abilities",
+                    "description": "<p>The noppera-bo impersonator gains one of the following abilities of your choice.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.kkP0tagXmAYuSH3u]{Effect: Impersonated Ability}</p>\n<ul>\n<li><strong>Commander</strong> The noppera-bo impersonator gains a minion that they can command. This creature takes the form of the impersonated PC's animal companion, eidolon, or other fighting companion creature; choose a 4th-level creature that approximates the impersonated companion creature's abilities. This creature gains the minion trait.</li>\n<li>@UUID[Compendium.pf2e.adventure-specific-actions.Item.6U04OKtvRURExkli]{Elemental Attack}</li>\n<li><strong>Sneak Attack</strong> The noppera-bo impersonator deals an additional 1d6 precision damage to @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} creatures.</li>\n<li><strong>Weapon Perk</strong> The noppera-bo impersonator chooses one of the following weapon traits to add to their false weapon: agile, backstabber, disarm, finesse, sweep, or trip.</li>\n</ul>"
                 }
             }
         },
@@ -984,6 +1250,10 @@
                 "action->Sensitive Hearing": {
                     "name": "Sensitive Hearing",
                     "description": "<p>As long as a noppera-bo is @UUID[Compendium.pf2e.conditionitems.Item.9PR9y0bi4JPKnHPR]{Deafened}, they are @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1}.</p>"
+                },
+                "action->Impersonate Shape": {
+                    "name": "Impersonate Shape",
+                    "description": "<p>The noppera-bo grunt changes into a faceless version of a Small or Medium humanoid they've touched during the last 24 hours. While transformed and their face is covered, the grunt gains a +2 circumstance bonus to @UUID[Compendium.pf2e.actionspf2e.Item.AJstokjdG6iDjVjE]{Impersonate} that creature. The noppera-bo grunt can change back by using this ability again.</p>"
                 }
             }
         },
@@ -1009,6 +1279,18 @@
                 "action->Sensitive Hearing": {
                     "name": "Sensitive Hearing",
                     "description": "<p>As long as a noppera-bo is @UUID[Compendium.pf2e.conditionitems.Item.9PR9y0bi4JPKnHPR]{Deafened}, they are @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1}.</p>"
+                },
+                "action->Impersonate Shape": {
+                    "name": "Impersonate Shape",
+                    "description": "<p>The noppera-bo changes into a version of a Small or Medium humanoid they've touched during the last 24 hours, and gains the target creature's face and voice. While transformed, the noppera-bo gains a +2 circumstance bonus to @UUID[Compendium.pf2e.actionspf2e.Item.AJstokjdG6iDjVjE]{Impersonate} that creature and loses its no face ability and listed immunities. The noppera-bo can change back by using this ability again.</p>"
+                },
+                "action->Remove Face": {
+                    "name": "Remove Face",
+                    "description": "<p><strong>Requirements</strong> The noppera-bo is Impersonating a creature with a face</p>\n<hr />\n<p><strong>Effect</strong> The noppera-bo's facial features melt into nothingness, and they menace a creature within 30 feet. The creature becomes @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 1} on a failed @Check[will|dc:18] save (@UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 2} on a critical failure).</p>"
+                },
+                "action->Steal Face": {
+                    "name": "Steal Face",
+                    "description": "<p><strong>Frequency</strong> once per day</p>\n<p><strong>Requirements</strong> The noppera-bo occultist is faceless</p>\n<hr />\n<p><strong>Effect</strong> The noppera-bo occultist targets one creature within 30 feet. The creature must attempt a @Check[fortitude|dc:18] save.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target is @UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]{Dazzled} until the start of its next turn.</p>\n<p><strong>Failure</strong> The noppera-bo gains the target's face. The target's face vanishes until the end of its next turn. Until then, it is @UUID[Compendium.pf2e.conditionitems.Item.XgEqL1kFApUbl5Z2]{Blinded}, can't speak or ingest, and can't smell. The target must also hold its breath or begin to suffocate.</p>\n<p><strong>Critical Failure</strong> As failure, but the effect doesn't end automatically. The target can attempt a new save at the end of each of its turns, and the DC cumulatively decreases by 1 on each such attempt.</p>"
                 }
             }
         },
@@ -1028,6 +1310,18 @@
                 "action->Sensitive Hearing": {
                     "name": "Sensitive Hearing",
                     "description": "<p>As long as a noppera-bo is @UUID[Compendium.pf2e.conditionitems.Item.9PR9y0bi4JPKnHPR]{Deafened}, they are @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1}.</p>"
+                },
+                "action->Impersonate Shape": {
+                    "name": "Impersonate Shape",
+                    "description": "<p>The noppera-bo changes into a version of a Small or Medium humanoid they've touched during the last 24 hours, and gains the target creature's face and voice. While transformed, the noppera-bo gains a +2 circumstance bonus to @UUID[Compendium.pf2e.actionspf2e.Item.AJstokjdG6iDjVjE]{Impersonate} that creature and loses its no face ability and listed immunities. The noppera-bo can change back by using this ability again.</p>"
+                },
+                "action->Remove Face": {
+                    "name": "Remove Face",
+                    "description": "<p><strong>Requirements</strong> The noppera-bo trickster is Impersonating a creature with a face</p>\n<hr />\n<p><strong>Effect</strong> The noppera-bo trickster's facial features melt into nothingness, and they menace a creature within 30 feet. The creature becomes @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 1} on a failed @Check[will|dc:17] save (@UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 2} on a critical failure).</p>"
+                },
+                "action->Sneak Attack": {
+                    "name": "Sneak Attack",
+                    "description": "<p>The noppera-bo trickster deals an additional 1d4 precision damage to creatures that are @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard}.</p>"
                 }
             }
         },
@@ -1061,6 +1355,27 @@
                 "action->Limited Flight": {
                     "name": "Limited Flight",
                     "description": "<p>A path maiden has a fly Speed equal to her Speed but can't fly higher than 10 feet above the ground, and if she ends her turn above a nonsolid surface, she vanishes and rematerializes on the last space she occupied over solid ground and becomes @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned 1}.</p>"
+                },
+                "action->+1 Status to All Saves vs. Vitality": {
+                    "name": "+1 Status to All Saves vs. Vitality"
+                },
+                "action->Imprisoning Grave": {
+                    "name": "Imprisoning Grave",
+                    "description": "<p>30 feet. The soul of a creature that dies within the path maiden's aura is trapped within its corpse until its body spends 1 minute outside the aura. While trapped, the soul can't move on to the afterlife but can still be brought back to life or transformed into an undead creature.</p>"
+                },
+                "action->Void Healing": {
+                    "name": "Void Healing"
+                },
+                "action->Scorn Fate": {
+                    "name": "Scorn Fate",
+                    "description": "<p>The path maiden targets a creature she can see. The creature must attempt a @Check[will|dc:32] save. On a failure, the creature's next roll is cursed. If the result of the roll is a critical success, it becomes a regular success. A success becomes a failure, and a failure becomes a critical failure. That creature is then temporarily immune to Scorn Fate for 24 hours.</p>"
+                },
+                "action->Vengeful Frenzy": {
+                    "name": "Vengeful Frenzy",
+                    "description": "<p>The path maiden targets a creature within 60 feet that she can see. The target must attempt a @Check[will|dc:32] save. On a failure, the target is @UUID[Compendium.pf2e.conditionitems.Item.yblD8fOR1J8rDwEQ]{Confused} until the end of its next turn, but it can't attack path maidens or itself as the result of this confusion.</p>"
+                },
+                "lore->Pharasma Lore": {
+                    "name": "Pharasma Lore"
                 }
             }
         },
@@ -1082,6 +1397,27 @@
                 "action->Limited Flight": {
                     "name": "Limited Flight",
                     "description": "<p>A path maiden has a fly Speed equal to her Speed but can't fly higher than 10 feet above the ground, and if she ends her turn above a nonsolid surface, she vanishes and rematerializes on the last space she occupied over solid ground and becomes @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned 1}.</p>"
+                },
+                "action->+1 Status to All Saves vs. Vitality": {
+                    "name": "+1 Status to All Saves vs. Vitality"
+                },
+                "action->Imprisoning Grave": {
+                    "name": "Imprisoning Grave",
+                    "description": "<p>30 feet. The soul of a creature that dies within the path maiden's aura is trapped within its corpse until its body spends 1 minute outside the aura. While trapped, the soul can't move on to the afterlife but can still be brought back to life or transformed into an undead creature.</p>"
+                },
+                "action->Void Healing": {
+                    "name": "Void Healing"
+                },
+                "action->Blasphemous Aura": {
+                    "name": "Blasphemous Aura",
+                    "description": "<p>30 feet. When a creature in the aura uses a spell or ability with the healing trait, it must succeed at a @Check[will|dc:29] save. On a failure, the amount of Hit Points restored by the spell or ability is halved. On a critical failure, the vitality energy becomes void energy, harming a living target instead of healing it.</p>"
+                },
+                "action->Corrupting Doubt": {
+                    "name": "Corrupting Doubt",
+                    "description": "<p>A creature damaged by the path maiden's hand Strike must succeed at a @Check[will|dc:32] save to avoid becoming @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1} for 1 round (@UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 2} on a critical failure).</p>"
+                },
+                "lore->Pharasma Lore": {
+                    "name": "Pharasma Lore"
                 }
             }
         },
@@ -1204,6 +1540,29 @@
                 "action->Distracting Giggle": {
                     "name": "Distracting Giggle",
                     "description": "<p>15 feet. The thatchling's giggle echoes in the back of the mind. Creatures within the aura take a \u20131 status penalty to Will saves.</p>"
+                },
+                "action->Rejuvenation": {
+                    "name": "Rejuvenation",
+                    "description": "<p>When a thatchling is destroyed by damage other than fire, it attempts a @Check[flat|dc:11]. On a success, it reforms after [[/br 2d4 #days]]{2d4 days} within 120 feet of where it was destroyed, fully healed. A thatchling is always permanently destroyed if reduced to 0 Hit Points by fire damage or if the obstacle preventing the soul from reincarnating is removed.</p>"
+                },
+                "action->Void Healing": {
+                    "name": "Void Healing"
+                },
+                "action->Create Thatchling Spawn": {
+                    "name": "Create Thatchling Spawn",
+                    "description": "<p>A living humanoid who's slain by a red-hooded thatchling while under the effects of Thatchling's Curse rises as a thatchling after [[/br 1d4 #rounds]]{1d4 rounds}. This spawn is under the command of the red-hooded thatchling that killed it. If a red-hooded thatchling controls too many at once (as determined by the GM), some thatchlings can free themselves with a @Check[will|dc:18] saving throw at the start of their turn. If the red-hooded thatchling who created the spawn is destroyed, the spawn becomes an autonomous thatchling.</p>"
+                },
+                "action->Howl of Vengeful Fury": {
+                    "name": "Howl of Vengeful Fury",
+                    "description": "<p><strong>Frequency</strong> once per hour</p>\n<hr />\n<p><strong>Effect</strong> The red-hooded thatchling sobs pitifully before unleashing a terrifying scream. All non-thatchling creatures within a @Template[emanation|distance:30] take @Damage[2d10[sonic]] damage (@Check[fortitude|dc:18|basic] save) and become immune to all thatchlings' distracting giggle for 1 minute. Thatchlings in the area gain 5 temporary Hit Points and a +1 status bonus to their Strikes and saving throws for 1 minute.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.X1Q1uBiylZoJg3Co]{Effect: Howl of Vengeful Fury}</p>"
+                },
+                "action->Thatchling's Curse": {
+                    "name": "Thatchling's Curse",
+                    "description": "<p>The thatchling focuses its attention on a single target within 30 feet that it can see, and then begins muttering and whispering nonsense. The target must attempt a @Check[will|dc:18] save.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected and is temporarily immune to Thatchling's Curse for 24 hours.</p>\n<p><strong>Success</strong> The target is momentarily disoriented and has difficulty moving in the right direction. The target takes a \u20135-foot status penalty to its Speeds for 1 round.</p>\n<p><strong>Failure</strong> As success, but the penalty to its Speeds lasts for 1 minute.</p>\n<p><strong>Critical Failure</strong> As failure, but the penalty to its Speeds lasts until the curse is removed or until the thatchling that created the effect is permanently destroyed, whichever comes first. In addition, when the cursed creature attempts a Survival check to Sense Direction or @UUID[Compendium.pf2e.actionspf2e.Item.EA5vuSgJfiHH7plD]{Track}, they use the outcome for one degree of success worse than the result of their check, and they can't take the Scout exploration activity.</p>"
+                },
+                "action->Thicket Walker": {
+                    "name": "Thicket Walker",
+                    "description": "<p>Thatchlings ignore difficult terrain caused by brambles, tangled grass, and undergrowth, even those manipulated by magic.</p>"
                 }
             }
         },
@@ -1248,6 +1607,14 @@
                 },
                 "action->Void Healing": {
                     "name": "Void Healing"
+                },
+                "action->Change Shape": {
+                    "name": "Change Shape",
+                    "description": "<p>Rin transforms into the tailless form of a specific small human. The tailless form can't be altered and resembles her fox-like humanoid form.</p>\n<p>@Localize[PF2E.NPC.Abilities.Glossary.ChangeShape]</p>"
+                },
+                "action->Foxfire Curse": {
+                    "name": "Foxfire Curse",
+                    "description": "<p>A creature damaged by Rin's burning touch must succeed at a @Check[will|dc:25] save or become affected by this curse. During a cursed creature's moments of triumph, they become limned with spectral flames that punish their allies. Whenever the cursed creature scores a critical hit, each ally within their reach takes @Damage[1d6[persistent,fire]] damage as the cursed creature's hubris sears them.</p>"
                 }
             }
         },
@@ -1279,6 +1646,18 @@
                 "action->Gleam Theft": {
                     "name": "Gleam Theft",
                     "description": "<p>10 feet. A shimmerthief constantly absorbs ambient light. Bright light in their aura becomes dim light, and dim light becomes darkness. A shimmerthief can suppress or activate this aura as a single action with the concentrate trait.</p>"
+                },
+                "action->Drain Light": {
+                    "name": "Drain Light",
+                    "description": "<p>The shimmerthief targets a light source within 30 feet, then attempts to counteract it with a spell attack roll. If they succeed, the shimmerthief regains @Damage[(2d8+10)[healing]] Hit Points (@Damage[(4d8+20)[healing]] Hit Points on a critical success).</p>"
+                },
+                "action->Lasting Darkness": {
+                    "name": "Lasting Darkness",
+                    "description": "<p><strong>Frequency</strong> once per day</p>\n<p><strong>Trigger</strong> The shimmerthief casts @UUID[Compendium.pf2e.spells-srd.Item.4GE2ZdODgIQtg51c]{Darkness} as a 2nd-rank spell</p>\n<hr />\n<p><strong>Effect</strong> The duration of the shimmerthief's <em>darkness</em> increases to 24 hours.</p>"
+                },
+                "action->Unnerving Shriek": {
+                    "name": "Unnerving Shriek",
+                    "description": "<p>The shimmerthief releases an unearthly wail, forcing creatures within 60 feet to attempt a @Check[will|dc:24] save.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 1}.</p>\n<p><strong>Failure</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 2}.</p>\n<p><strong>Critical Failure</strong> The creature is frightened 2 and @UUID[Compendium.pf2e.conditionitems.Item.sDPxOjQ9kx2RZE8D]{Fleeing} for as long as it remains frightened.</p>"
                 }
             }
         },
@@ -1313,6 +1692,25 @@
                 },
                 "action->+1 Status to All Saves vs. Magic": {
                     "name": "+1 Status to All Saves vs. Magic"
+                },
+                "action->Change Shape": {
+                    "name": "Change Shape",
+                    "description": "<p>The shinigami takes on the appearance of a specific Small or Medium humanoid creature. This doesn't change their statistics, other than to remove the reach trait from their Strikes. The shinigami's human shape is unique to the shinigami and can't be used to Impersonate a creature.</p>\n<p>@Localize[PF2E.NPC.Abilities.Glossary.ChangeShape]</p>"
+                },
+                "action->Pouch of Four Gems": {
+                    "name": "Pouch of Four Gems",
+                    "description": "<p>Each shinigami carries a pouch containing four black sapphires for use with @UUID[Compendium.pf2e.spells-srd.Item.GYmXvS9NJ7QwfWGg]{Seize Soul}. Each gem is capable of holding a soul of a maximum level equal to that of the shinigami. If the shinigami dies, the gems are destroyed as well, and any souls they contain are released harmlessly to travel to the Boneyard.</p>"
+                },
+                "action->Release Soul": {
+                    "name": "Release Soul",
+                    "description": "<p><strong>Requirements</strong> One of the gems in the shinigami's pouch contains a soul from bind soul</p>\n<hr />\n<p><strong>Effect</strong> The shinigami crushes the gem, sending the soul to the Boneyard while releasing a wave of necromantic energy. All creatures within a @Template[emanation|distance:30] take 18d6 damage (@Check[fortitude|dc:38|basic] save); the shinigami chooses whether this damage is @Damage[18d6[vitality]]{vitality} damage or @Damage[18d6[void]]{void} damage. A creature who takes damage from this effect and fails the saving throw is also @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 2} and @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 1} (or @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 4} and @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 2} on a critical failure).</p>"
+                },
+                "action->Spirit Touch": {
+                    "name": "Spirit Touch",
+                    "description": "<p>A shinigami's Strikes can affect incorporeal creatures with the effect of a <em>@UUID[Compendium.pf2e.equipment-srd.Item.JQdwHECogcTzdd8R]{Ghost Touch}</em> property rune.</p>"
+                },
+                "lore->Boneyard Lore": {
+                    "name": "Boneyard Lore"
                 }
             }
         },
@@ -1362,7 +1760,9 @@
                     "name": "Carpenter's Artisan Tools (Sterling)",
                     "description": "<p>You need these tools to create items from raw materials with the Craft skill. Sterling artisan's tools give you a +1 item bonus to the check.</p>\n<p>Different sets are needed for different work, as determined by the GM; for example, blacksmith's tools differ from woodworker's tools. If you wear your artisan's tools, you can draw and replace them as part of the action that uses them.</p>",
                     "rules": {
-                        "0": "Artisan's Tools, Sterling (craft items)"
+                        "0": {
+                            "label": "Artisan's Tools, Sterling (craft items)"
+                        }
                     }
                 },
                 "treasure->Calabash Bottle": {
@@ -1371,6 +1771,29 @@
                 "action->Cataracts": {
                     "name": "Cataracts",
                     "description": "<p>Old Matsuki's deteriorating eyesight imposes a \u20132 circumstance penalty to vision-based Perception checks.</p>"
+                },
+                "action->Wood-Grain Speaker": {
+                    "name": "Wood-Grain Speaker",
+                    "description": "<p>Old Matsuki gains a +2 circumstance bonus to Perception when examining wood items, structures, and trees. He can use Crafting to Identify Magic for items primarily made of wood. This ability isn't affected by Old Matsuki's cataracts.</p>"
+                },
+                "action->You Know, They Say...": {
+                    "name": "You Know, They Say...",
+                    "description": "<p>Old Matsuki can use Willowshore Lore in place of Arcana, Medicine, Occultism, or Religion to attempt Recall Knowledge checks with a \u20132 penalty. He has the effects of the Dubious Knowledge feat for Recall Knowledge checks attempted in this way.</p>"
+                },
+                "action->A Drink for Good Luck": {
+                    "name": "A Drink for Good Luck",
+                    "description": "<p><strong>Frequency</strong> once per season</p>\n<p><strong>Requirements</strong> Old Matsuki has a drink in hand</p>\n<hr />\n<p><strong>Effect</strong> Old Matsuki toasts to good fortune, then selects up to six other creatures within 30 feet before he drinks his drink. He, and all creatures that drink before the end of their next turn, become infused with good luck. Once before the end of the current season, each target can reroll a failed saving throw as a free action, taking the second result.</p>"
+                },
+                "action->Respect Your Elders!": {
+                    "name": "Respect Your Elders!",
+                    "description": "<p><strong>Frequency</strong> once per day</p>\n<hr />\n<p><strong>Effect</strong> Old Matsuki publicly chastises a character he can see and who's within 30 feet for being disrespectful, not just against him or Willowshore's other elders, but against Willowshore's traditions. Whether or not his reprimands are justified, the target of this tirade must attempt a @Check[will|dc:22] save.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected and immune to Respect Your Elders! for 1 week.</p>\n<p><strong>Success</strong> The creature feels a momentary bout of shame, becoming @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 1} for 1 round.</p>\n<p><strong>Failure</strong> Feelings of shame and doubt nag at the creature, distracting them enough that they become stupefied 1 for 1 hour.</p>"
+                },
+                "action->Wait, Give Me a Moment...": {
+                    "name": "Wait, Give Me a Moment...",
+                    "description": "<p><strong>Trigger</strong> Old Matsuki fails a check to Recall Knowledge</p>\n<p><strong>Frequency</strong> once per day</p>\n<hr />\n<p><strong>Effect</strong> Old Matsuki realizes his error, then rerolls the triggering check with a +2 circumstance bonus.</p>"
+                },
+                "lore->Willowshore Lore": {
+                    "name": "Willowshore Lore"
                 }
             }
         },
@@ -1408,6 +1831,20 @@
                 "consumable->Explosive Arrow": {
                     "name": "Explosive Arrow",
                     "description": "<p><strong>Ammunition</strong> any</p>\n<p><strong>Activate</strong> <span class=\"action-glyph\">A</span> (manipulate)</p>\n<hr />\n<p>This piece of ammunition is coated in gritty black soot. When activated <em>explosive ammunition</em> hits a target, the missile explodes in a @Template[burst|distance:10], dealing @Damage[6d6[fire]] damage to each creature in the area (including the target). Each creature must attempt a @Check[reflex|dc:25|basic] save.</p>"
+                },
+                "action->Attack of Opportunity": {
+                    "name": "Attack of Opportunity"
+                },
+                "action->Rage": {
+                    "name": "Rage",
+                    "description": "<p><strong>Requirements</strong> The monster hunter isn't @UUID[Compendium.pf2e.conditionitems.Item.HL2l2VRSaQHu9lUw]{Fatigued} or raging</p>\n<hr />\n<p><strong>Effect</strong> The monster hunter gains 9 temporary Hit Points that last until the rage ends. While raging, they deal 8 additional damage with melee attacks, gain a +10-foot status bonus to their Speed, and take a -1 penalty to AC. The monster hunter can't use concentrate actions except @UUID[Compendium.pf2e.actionspf2e.Item.BlAOM2X92SI6HMtJ]{Seek} and rage actions.</p>\n<p>The rage lasts for 1 minute, until there are no enemies the monster hunter can perceive, or until the monster hunter falls unconscious.</p>\n<p>Once the rage ends, the monster hunter can't again for 1 minute.</p>\n<p>@UUID[Compendium.pf2e.feat-effects.Item.z3uyCMBddrPK5umr]{Effect: Rage}</p>"
+                },
+                "action->Sudden Charge": {
+                    "name": "Sudden Charge",
+                    "description": "<p>The monster hunter Strides twice and makes a melee Strike.</p>"
+                },
+                "lore->Monster Lore": {
+                    "name": "Monster Lore"
                 }
             }
         },
@@ -1520,6 +1957,17 @@
                 "action->Inhabit Vessel": {
                     "name": "Inhabit Vessel",
                     "description": "<p>The spider touches and melds with its bonded vessel, bringing it to life. It can cease Inhabiting its Vessel by spending a single action, which has the concentrate trait. While Inhabiting the Vessel, it loses its fly Speed and gains</p>\n<p><strong>Immunities</strong> healing, nonlethal</p>\n<p><strong>Resistances</strong> physical 6 (except bludgeoning)</p>\n<p><strong>Speed</strong> 25 feet, climb 25 feet</p>\n<p>and the following Strike.</p>\n<ul>\n<li>Melee <span class=\"action-glyph\">1</span> stone fangs +14 (finesse), Damage 2d8+7 piercing</li>\n</ul>"
+                },
+                "action->Spirit Body": {
+                    "name": "Spirit Body",
+                    "description": "<p>When not Inhabiting its Vessel, the stone spider is incorporeal and gains resistance 6 to all damage (except force damage and ghost touch; double resistance against non-magical).</p>"
+                },
+                "action->Spirit Web Trap": {
+                    "name": "Spirit Web Trap",
+                    "description": "<p>A creature hit by the stone spider's web attack is @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Immobilized} and stuck to the nearest surface until it Escapes (DC 22).</p>"
+                },
+                "lore->Settlement Lore (Regarding their Home Settlement)": {
+                    "name": "Settlement Lore (Regarding their Home Settlement)"
                 }
             }
         },
@@ -1547,6 +1995,21 @@
                 "action->Distracting Giggle": {
                     "name": "Distracting Giggle",
                     "description": "<p>15 feet. The thatchling's giggle echoes in the back of the mind. Creatures within the aura take a \u20131 status penalty to Will saves.</p>"
+                },
+                "action->Rejuvenation": {
+                    "name": "Rejuvenation",
+                    "description": "<p>When a thatchling is destroyed by damage other than fire, it attempts a @Check[flat|dc:11]. On a success, it reforms after [[/br 2d4 #days]]{2d4 days} within 120 feet of where it was destroyed, fully healed. A thatchling is always permanently destroyed if reduced to 0 Hit Points by fire damage or if the obstacle preventing the soul from reincarnating is removed.</p>"
+                },
+                "action->Void Healing": {
+                    "name": "Void Healing"
+                },
+                "action->Thatchling's Curse": {
+                    "name": "Thatchling's Curse",
+                    "description": "<p>The thatchling focuses its attention on a single target within 30 feet that it can see, and then begins muttering and whispering nonsense. The target must attempt a @Check[will|dc:16] save.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected and is temporarily immune to Thatchling's Curse for 24 hours.</p>\n<p><strong>Success</strong> The target is momentarily disoriented and has difficulty moving in the right direction. The target takes a \u20135-foot status penalty to its Speeds for 1 round.</p>\n<p><strong>Failure</strong> As success, but the penalty to its Speeds lasts for 1 minute.</p>\n<p><strong>Critical Failure</strong> As failure, but the penalty to its Speeds lasts until the curse is removed or until the thatchling that created the effect is permanently destroyed, whichever comes first. In addition, when the cursed creature attempts a Survival check to Sense Direction or @UUID[Compendium.pf2e.actionspf2e.Item.EA5vuSgJfiHH7plD]{Track}, they use the outcome for one degree of success worse than the result of their check, and they can't take the Scout exploration activity.</p>"
+                },
+                "action->Thicket Walker": {
+                    "name": "Thicket Walker",
+                    "description": "<p>Thatchlings ignore difficult terrain caused by brambles, tangled grass, and undergrowth, even those manipulated by magic.</p>"
                 }
             }
         },
@@ -1561,6 +2024,29 @@
                 },
                 "action->Void Healing": {
                     "name": "Void Healing"
+                },
+                "action->Black Apoxia": {
+                    "name": "Black Apoxia",
+                    "description": "<p>The target can't recover from the fatigued condition caused by black apoxia until the disease is cured</p>\n<p><strong>Saving Throw</strong> @Check[fortitude|dc:24]</p>\n<hr />\n<p><strong>Stage 1</strong> carrier with no ill effect (1 day)</p>\n<p><strong>Stage 2</strong> @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 1} and @UUID[Compendium.pf2e.conditionitems.Item.HL2l2VRSaQHu9lUw]{Fatigued} (1 day)</p>\n<p><strong>Stage 3</strong> @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 2} and fatigued (1 day)</p>\n<p><strong>Stage 4</strong> dead</p>"
+                },
+                "action->Brawling Critical": {
+                    "name": "Brawling Critical",
+                    "description": "<p>When the kurobozu scores a critical hit with an unarmed attack, the target must succeed at a @Check[fortitude|dc:22] save or be @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1} until the end of its next turn.</p>"
+                },
+                "action->Sagebane": {
+                    "name": "Sagebane",
+                    "description": "<p>When the kurobozu damages a living creature with an unarmed Strike, the target must succeed at a @Check[fortitude|dc:24] save or become @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 1} for 1 minute.</p>\n<p>Further damage dealt by the kurobozu resets the duration to 1 minute and increases the stupefied value by 1 on a failed save, to a maximum of stupefied 4.</p>"
+                },
+                "action->Steal Breath": {
+                    "name": "Steal Breath",
+                    "description": "<p><strong>Requirements</strong> The kurobozu is adjacent to a living creature that is @UUID[Compendium.pf2e.conditionitems.Item.6uEgoh53GbXuHpTF]{Paralyzed}, @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed}, @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned}, or @UUID[Compendium.pf2e.conditionitems.Item.fBnFDH2MTzgFijKf]{Unconscious}</p>\n<hr />\n<p><strong>Effect</strong> The kurobozu leans over and sucks the breath from the target, who must attempt a @Check[fortitude|dc:22] save. Regardless of the result, the creature is exposed to black apoxia and its breath reeks of carrion for 1 minute.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature can't speak for 1 minute.</p>\n<p><strong>Failure</strong> The creature becomes @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 2} and can't speak for 1 minute.</p>\n<p><strong>Critical Failure</strong> As failure, plus the creature falls @UUID[Compendium.pf2e.conditionitems.Item.fBnFDH2MTzgFijKf]{Unconscious} and begins suffocating.</p>"
+                },
+                "action->Stunning Flurry": {
+                    "name": "Stunning Flurry",
+                    "description": "<p><strong>Frequency</strong> once per round</p>\n<hr />\n<p><strong>Effect</strong> The kurobozu makes two unarmed Strikes. If both hit the same creature, combine their damage for the purpose of resistances and weaknesses, and the target must succeed at a @Check[fortitude|dc:22|traits:incapacitation] save or be @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned 1} (or @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned 3} on a critical failure); this save has the incapacitation trait.</p>"
+                },
+                "lore->Monastic Lore": {
+                    "name": "Monastic Lore"
                 }
             }
         },
@@ -1605,6 +2091,32 @@
                 },
                 "action->+1 Status to All Saves vs. Vitality": {
                     "name": "+1 Status to All Saves vs. Vitality"
+                },
+                "action->Attack of Opportunity": {
+                    "name": "Attack of Opportunity"
+                },
+                "action->Draining Presence": {
+                    "name": "Draining Presence",
+                    "description": "<p>10 feet. A creature entering the aura must succeed at a @Check[fortitude|dc:26] save or become @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 1}. It recovers after it has been out of the aura for 1 minute. This drained condition value is cumulative with the drained value caused by drain life, but not with multiple draining presence auras.</p>\n<p>A creature that succeeds at its save is temporarily immune to draining presence for 24 hours.</p>"
+                },
+                "action->Sunlight Powerlessness": {
+                    "name": "Sunlight Powerlessness",
+                    "description": "<p>A dread wraith caught in sunlight is @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned 2} and @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 2}.</p>"
+                },
+                "action->Void Healing": {
+                    "name": "Void Healing"
+                },
+                "action->Absorb Wraith": {
+                    "name": "Absorb Wraith",
+                    "description": "<p>The dread wraith extends its hand toward another wraith creature within 100 feet. The target wraith dissolves and streaks toward the dread wraith in a straight line, dealing @Damage[6d10[void]] damage to each creature along the line (@Check[fortitude|dc:28|basic] save).</p>\n<p>The dread wraith absorbs the essence of the target wraith, becoming @UUID[Compendium.pf2e.conditionitems.Item.nlCjDvLMf2EkV2dl]{Quickened} and gaining a +10-foot status bonus to its fly Speed for a number of rounds equal to the level of the absorbed wraith. It can use its extra action only to Fly or Strike.</p>\n<p>An unwilling target can attempt a @Check[will|dc:28] save to resist being absorbed.</p>"
+                },
+                "action->Drain Life": {
+                    "name": "Drain Life",
+                    "description": "<p>When the dread wraith damages a living creature with its spectral hand Strike, the wraith gains [[/r 10 #Temporary Hit Points]]{10 temporary Hit Points} and the target must succeed at a @Check[fortitude|dc:28] save or become @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 1}. Further damage dealt by the wraith increases the drained condition value by 1 on a failed save, to a maximum of drained 4.</p>"
+                },
+                "action->Wraith Spawn": {
+                    "name": "Wraith Spawn",
+                    "description": "<p>A living humanoid slain by a wraith's spectral hand Strike rises as a @UUID[Compendium.pf2e.pathfinder-monster-core.Actor.Gu0cJHGwPd547OtC]{Wraith Spawn} after [[/br 1d4 #Wraith Spawn Transformation]]{1d4 rounds}. This wraith spawn is under the command of the dread wraith that killed it. It doesn't have drain life or wraith spawn. If the creator of the wraith spawn dies, the wraith spawn becomes a full-fledged, autonomous wraith; it regains its free will and gains drain life and wraith spawn.</p>"
                 }
             }
         },
@@ -1684,6 +2196,10 @@
                 },
                 "action->Void Healing": {
                     "name": "Void Healing"
+                },
+                "action->Lignify": {
+                    "name": "Lignify",
+                    "description": "<p>The touch of a waldgeist transforms flesh into wood. A living creature damaged by the waldgeist's lignifying hand Strike must succeed at a @Check[fortitude|dc:22] save or become @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1} (or @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 2} on a critical failure). Further failed saves against lignify increases the slowed condition. Once a creature's actions are reduced to 0 by lignify, that creature becomes @UUID[Compendium.pf2e.conditionitems.Item.dTwPJuKgBQCMxixg]{Petrified}, except they're transformed into wood instead of stone.</p>"
                 }
             }
         },
@@ -1731,6 +2247,20 @@
                 "action->Field of Past Regrets": {
                     "name": "Field of Past Regrets",
                     "description": "<p>40 feet. All creatures within the aura who have at least one past life (including all PCs in <em>Season of Ghosts</em>) recall failures in their past lives and are bolstered against repeating them, gaining a +1 status bonus to saving throws against mental effects. Living, non-nindoru creatures within the aura feel the pain of all their past lives, as well as their own current pain when they endure mental attacks, and gain weakness 3 to mental damage.</p>"
+                },
+                "action->Profane Reincarnation": {
+                    "name": "Profane Reincarnation",
+                    "description": "<p><strong>Frequency</strong> once every 1,000 days</p>\n<p><strong>Trigger</strong> Xin Yue is reduced to 0 Hit Points</p><hr /><p><strong>Effect</strong> Xin Yue utters a shriek as her undead body splits open and her shortsword becomes broken. She's instantly reincarnated as a @UUID[Compendium.pf2e.season-of-ghosts-bestiary.Actor.TVi4RDeqw7GDsxp0]{Sojiruh} nindoru with the elite creature adjustment.</p>"
+                },
+                "action->Void Healing": {
+                    "name": "Void Healing"
+                },
+                "action->Near-Death Experience": {
+                    "name": "Near-Death Experience",
+                    "description": "<p><strong>Trigger</strong> Xin Yue reduces a creature to 0 Hit Points and causes them to gain the dying condition</p><hr /><p><strong>Effect</strong> Time appears to slow down to the dying creature as the immense stress of their near-death experience pushes their brain into overdrive. The target sees their life flash before their eyes, and the urge to resist death grows strong. The target reduces the DC of their recovery checks by 2, but if they lose the dying condition, they must attempt a @Check[will|dc:25] save.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.3HaT8gBo8krdVniF]{Effect: Near-Death Experience}</p><hr /><p><strong>Critical Success</strong> The creature is empowered by the experience and gains fast healing 5 for 1 minute.</p>\n<p><strong>Success</strong> The creature is empowered by the experience and gains fast healing 1 for 1 minute.</p>\n<p><strong>Failure</strong> The creature becomes depressed by the experience and becomes @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 1} for 24 hours.</p>\n<p><strong>Critical Failure</strong> The creature reels from the experience. They become stupefied 1 and @UUID[Compendium.pf2e.conditionitems.Item.3uh1r86TzbQvosxv]{Doomed 1}.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.ejnUAEdbvj6uPuNJ]{Effect: Near-Death Experience Healing}</p>"
+                },
+                "lore->Sangpotshi Lore": {
+                    "name": "Sangpotshi Lore"
                 }
             }
         },
@@ -1753,6 +2283,14 @@
                 },
                 "action->Void Healing": {
                     "name": "Void Healing"
+                },
+                "action->Frightful Moan": {
+                    "name": "Frightful Moan",
+                    "description": "<p>The ghost laments its fate, forcing each living creature within @Template[emanation|distance:30]{30 feet} to attempt a @Check[will|dc:25] save. On a failure, a creature becomes @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 2} (or @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 3} on a critical failure). On a success, a creature is temporarily immune to this ghost's frightful moan for 1 minute.</p>"
+                },
+                "action->Tiger Attack": {
+                    "name": "Tiger Attack",
+                    "description": "<p>Yuni cries out in pain as a ghostly tiger appears to rip and tear at her body, only for additional ghostly tigers to appear and do the same to all creatures in a @Template[emanation|distance:30]. Creatures in this area take @Damage[4d6[slashing]] damage (@Check[reflex|dc:25|basic] save).</p>"
                 }
             }
         },
@@ -1772,6 +2310,10 @@
                 },
                 "action->Void Healing": {
                     "name": "Void Healing"
+                },
+                "action->Incarnate Skill": {
+                    "name": "Incarnate Skill",
+                    "description": "<p>Zhi Hui peers into a willing creature's soul and searches through their past lives. That creature permanently trades proficiency rank from one skill they're currently expert in with a skill in which they're untrained, both of their choice. Zhi Hui can only perform this activity once per character.</p>"
                 }
             }
         },
@@ -1788,6 +2330,50 @@
                 "equipment->Twisted Knot of Wood (Religious Symbol of Kugaptee": {
                     "name": "Twisted Knot of Wood (Religious Symbol of Kugaptee",
                     "description": "<p>This piece of wood or silver is emblazoned with an image representing a deity. Some divine spellcasters, such as clerics, can use a religious symbol of their deity as a divine focus to use certain abilities and cast some spells. A religious symbol must be held in one hand to use it.</p>"
+                },
+                "equipment->Tattered Ledger": {
+                    "name": "Tattered Ledger"
+                },
+                "strike-melee->Fiend's Hunger": {
+                    "name": "Fiend's Hunger"
+                },
+                "strike-ranged->Fiend's Hunger": {
+                    "name": "Fiend's Hunger"
+                },
+                "action->Telepathy 30 feet": {
+                    "name": "Telepathy 30 feet"
+                },
+                "action->No Face": {
+                    "name": "No Face",
+                    "description": "<p>Noppera-bos have no sense of vision, but their sense of hearing is precise. They don't breathe and are immune to effects that require breathing. They gain sustenance by absorbing fluids through their skin\u2014traditionally by immersing their hands or faceless head into the fluid to \"drink\" through osmosis; they can also benefit from consumables, such as potions or elixirs, in this way.</p>"
+                },
+                "action->Identity Crisis": {
+                    "name": "Identity Crisis",
+                    "description": "<p><strong>Frequency</strong> once per day</p>\n<p><strong>Trigger</strong> Zoudou successfully Steals the Face of an adjacent creature</p>\n<hr />\n<p><strong>Effect</strong> As Zoudou Steals the creature's Face, she telepathically draws at the creature's sense of identity and self. The creature must attempt a @Check[will|dc:20] save. On a failure, the creature questions their own identity and becomes @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1} for 1 round. On a critical failure, they're slowed 1 for 1 minute.</p>"
+                },
+                "action->Oath of Anonymity": {
+                    "name": "Oath of Anonymity",
+                    "description": "<p>When Zoudou has a face, she can't cast divine prepared spells.</p>"
+                },
+                "action->Sensitive Hearing": {
+                    "name": "Sensitive Hearing",
+                    "description": "<p>As long as a noppera-bo is @UUID[Compendium.pf2e.conditionitems.Item.9PR9y0bi4JPKnHPR]{Deafened}, they are @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1}.</p>"
+                },
+                "action->Impersonate Shape": {
+                    "name": "Impersonate Shape",
+                    "description": "<p>The noppera-bo changes into a version of a Small or Medium humanoid they've touched during the last 24 hours, and gains the target creature's face and voice. While transformed, the noppera-bo gains a +2 circumstance bonus to @UUID[Compendium.pf2e.actionspf2e.Item.AJstokjdG6iDjVjE]{Impersonate} that creature and loses its no face ability and listed immunities. The noppera-bo can change back by using this ability again.</p>"
+                },
+                "action->Regain Anonymity": {
+                    "name": "Regain Anonymity",
+                    "description": "<p><strong>Requirements</strong> Zoudou has a face</p>\n<hr />\n<p><strong>Effect</strong> Zoudou melts the face she's wearing and gains [[/br 3d6 #Temp HP]] temporary Hit Points. She can't Regain Anonymity again for [[/br 1d4 #Recharge Regain Anonymity]]{1d4 rounds}.</p>"
+                },
+                "action->Silent Casting": {
+                    "name": "Silent Casting",
+                    "description": "<p>When Zoudou is faceless, she can substitute an additional somatic component for a verbal component.</p>"
+                },
+                "action->Steal Face": {
+                    "name": "Steal Face",
+                    "description": "<p><strong>Frequency</strong> once per day</p>\n<p><strong>Requirements</strong> Zoudou is faceless</p>\n<hr />\n<p><strong>Effect</strong> Zoudou targets one creature within 30 feet. The creature must attempt a @Check[fortitude|dc:20] save.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target is @UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]{Dazzled} until the start of its next turn.</p>\n<p><strong>Failure</strong> The noppera-bo gains the target's face. The target's face vanishes until the end of its next turn. Until then, it is @UUID[Compendium.pf2e.conditionitems.Item.XgEqL1kFApUbl5Z2]{Blinded}, can't speak or ingest, and can't smell. The target must also hold its breath or begin to suffocate.</p>\n<p><strong>Critical Failure</strong> As failure, but the effect doesn't end automatically. The target can attempt a new save at the end of each of its turns, and the DC cumulatively decreases by 1 on each such attempt.</p>"
                 }
             }
         }

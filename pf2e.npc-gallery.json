@@ -36,7 +36,31 @@
                 },
                 "action->Steady Balance": {
                     "name": "Steady Balance",
-                    "description": "<p>When the acrobat rolls a success on an Acrobatics check, they get a critical success instead.</p>\n<p>They aren't @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} when attempting to @UUID[Compendium.pf2e.actionspf2e.Item.M76ycLAqHoAgbcej]{Balance} and can attempt an Acrobatics check instead of a Reflex save to @UUID[Compendium.pf2e.actionspf2e.Item.3yoajuKjwHZ9ApUY]{Grab an Edge}.</p>"
+                    "description": "<p>When the acrobat rolls a success on an Acrobatics check, they get a critical success instead.</p>\n<p>They aren't @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} when attempting to @UUID[Compendium.pf2e.actionspf2e.Item.M76ycLAqHoAgbcej]{Balance} and can attempt an Acrobatics check instead of a Reflex save to @UUID[Compendium.pf2e.actionspf2e.Item.3yoajuKjwHZ9ApUY]{Grab an Edge}.</p>",
+                    "rules": {
+                        "0": {
+                            "text": "When the acrobat rolls a success on an Acrobatics check, they get a critical success instead."
+                        }
+                    }
+                },
+                "action->Cat Fall": {
+                    "name": "Cat Fall",
+                    "description": "<p>The acrobat treats all falls as 50 feet shorter.</p>"
+                },
+                "action->Nimble Dodge": {
+                    "name": "Nimble Dodge",
+                    "description": "<p><strong>Trigger</strong> The acrobat is targeted with a melee or ranged attack by an attacker they can see</p>\n<hr />\n<p><strong>Effect</strong> The acrobat gains a +2 circumstance bonus to AC against the triggering attack.</p>"
+                },
+                "action->Sneak Attack": {
+                    "name": "Sneak Attack",
+                    "description": "<p>The acrobat deals an extra 1d6 precision damage to @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} creatures.</p>"
+                },
+                "action->Swinging Strike": {
+                    "name": "Swinging Strike",
+                    "description": "<p>The acrobat swings on a rope or trapeze, moving up to double their Speed. At any point during the swing, they can make a melee Strike.</p>"
+                },
+                "lore->Circus Lore": {
+                    "name": "Circus Lore"
                 }
             }
         },
@@ -63,6 +87,9 @@
                 "action->Focused Thinker": {
                     "name": "Focused Thinker",
                     "description": "<p>The adept focuses inward to muster knowledge and wisdom. While in this state of concentration, they gain a +2 status bonus to checks to @UUID[Compendium.pf2e.actionspf2e.Item.1OagaWtBpVXExToo]{Recall Knowledge}, but take a -2 penalty to Perception. They can end their focused state with a single action, which has the concentrate trait.</p>"
+                },
+                "lore->Scribing Lore": {
+                    "name": "Scribing Lore"
                 }
             }
         },
@@ -97,6 +124,9 @@
                 "action->Placate": {
                     "name": "Placate",
                     "description": "<p>An advisor is well versed in soothing agitated nobles. Their claming voice gives them a +2 circumstance bonus to Deception and Diplomacy checks when dealing with members of the nobility.</p>"
+                },
+                "lore->Legal Lore": {
+                    "name": "Legal Lore"
                 }
             }
         },
@@ -120,6 +150,10 @@
                 "action->Destructive Vengeance": {
                     "name": "Destructive Vengeance",
                     "description": "<p><strong>Trigger</strong> An enemy within 15 feet damages the antipaladin</p>\n<hr />\n<p><strong>Effect</strong> The antipaladin increases the amount of damage they take by [[/r 2d6]] and deals 2d6 to the triggering enemy, choosing @Damage[2d6[spirit]] or @Damage[2d6[void]] damage. In addition, the antipaladin deals 2 extra damage of the chosen type with their Strikes against the triggering creature until the end of the antipaladin's next turn.</p>"
+                },
+                "action->Intimidating Strike": {
+                    "name": "Intimidating Strike",
+                    "description": "<p>The antipaladin makes a melee Strike. If they hit and deal damage, the target is @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 1}, or @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 2} on a critical hit.</p>"
                 }
             }
         },
@@ -191,8 +225,13 @@
                     "name": "Apprentice's Ambition",
                     "description": "<p><strong>Frequency</strong> once per day</p>\n<p><strong>Requirements</strong> A direct superior is supervising the apprentice</p>\n<hr />\n<p><strong>Effect</strong> The apprentice gains a +2 circumstance bonus to attack rolls, damage rolls, saving throws, and skill checks until the end of their next turn.</p>",
                     "rules": {
-                        "0": "Supervised by a direct superior"
+                        "0": {
+                            "label": "Supervised by a direct superior"
+                        }
                     }
+                },
+                "lore->Geography Lore": {
+                    "name": "Geography Lore"
                 }
             }
         },
@@ -203,6 +242,9 @@
                 "action->Sentry's Aim": {
                     "name": "Sentry's Aim",
                     "description": "<p>The archer sentry aims carefully and fires. They make a ranged weapon Strike with a +1 circumstance bonus.</p>\n<p>The Strike ignores the @UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{Concealed} condition, lesser @UUID[Compendium.pf2e.other-effects.Item.I9lfZUiCwMiGogVi]{cover}, and standard cover, and reduces greater cover to standard cover.</p>"
+                },
+                "lore->Legal Lore": {
+                    "name": "Legal Lore"
                 }
             }
         },
@@ -228,6 +270,29 @@
                 "action->Deny Advantage": {
                     "name": "Deny Advantage",
                     "description": "<p>The assassin isn't @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} to creatures of 8th level or lower that are @UUID[Compendium.pf2e.conditionitems.Item.iU0fEDdBp3rXpTMC]{Hidden}, @UUID[Compendium.pf2e.conditionitems.Item.VRSef5y1LmL2Hkjf]{Undetected}, flanking or using @UUID[Compendium.pf2e.classfeatures.Item.w6rMqmGzhUahdnA7]{Surprise Attack}.</p>"
+                },
+                "action->Nimble Dodge": {
+                    "name": "Nimble Dodge",
+                    "description": "<p><strong>Trigger</strong> The assassin is targeted with a melee or ranged attack by an attacker they can see.</p>\n<hr />\n<p><strong>Effect</strong> The assassin gains a +2 circumstance bonus to AC against the triggering attack.</p>"
+                },
+                "action->Poison Weapon": {
+                    "name": "Poison Weapon",
+                    "description": "<p><strong>Requirements</strong> The assassin is wielding a piercing or slashing weapon and has a free hand.</p>\n<hr />\n<p><strong>Effect</strong> The assassin applied a poison to the weapon.</p>"
+                },
+                "action->Quick Draw": {
+                    "name": "Quick Draw",
+                    "description": "<p>The assassin @UUID[Compendium.pf2e.actionspf2e.Item.pvQ5rY2zrtPI614F]{Interacts} to draw a weapon, then @UUID[Compendium.pf2e.actionspf2e.Item.VjxZFuUXrCU94MWR]{Strikes} with that weapon.</p>"
+                },
+                "action->Sneak Attack": {
+                    "name": "Sneak Attack",
+                    "description": "<p>The assassin deals an extra 2d6 precision damage to @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} creatures.</p>"
+                },
+                "action->Surprise Attack": {
+                    "name": "Surprise Attack",
+                    "description": "<p>On the first round of combat, creatures that haven't acted yet are @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} to the assassin.</p>"
+                },
+                "lore->Underworld Lore": {
+                    "name": "Underworld Lore"
                 }
             }
         },
@@ -271,7 +336,27 @@
             "items": {
                 "action->Hydration": {
                     "name": "Hydration",
-                    "description": "<p>Azarketi must regularly submerge themselves in water to rehydrate their water-acclimated skin. After the first 24 hours outside of water, they gain a -1 status penalty to Fortitude saves as their skin cracks and their gills become painful. After 48 hours, they struggle to breathe air and begin to suffocate until returned to water.</p>"
+                    "description": "<p>Azarketi must regularly submerge themselves in water to rehydrate their water-acclimated skin. After the first 24 hours outside of water, they gain a -1 status penalty to Fortitude saves as their skin cracks and their gills become painful. After 48 hours, they struggle to breathe air and begin to suffocate until returned to water.</p>",
+                    "rules": {
+                        "1": {
+                            "label": "Spent 24 Hours Out of the Water"
+                        }
+                    }
+                },
+                "action->Sea Legs": {
+                    "name": "Sea Legs",
+                    "description": "<p>An azarketi sailor gains a +1 circumstance bonus to Acrobatics checks to @UUID[Compendium.pf2e.actionspf2e.Item.M76ycLAqHoAgbcej]{Balance} and can roll twice and take the better result on checks to Balance while aboard a ship.</p>"
+                },
+                "action->Submerged Stealth": {
+                    "name": "Submerged Stealth",
+                    "description": "<p>While submerged in water, an azarketi sailor gains a +2 circumstance bonus on their Stealth check, indicated above.</p>"
+                },
+                "action->Swinging Strike": {
+                    "name": "Swinging Strike",
+                    "description": "<p><strong>Requirements</strong> The azarketi sailor is hanging from a rope or vine</p>\n<hr />\n<p><strong>Effect</strong> The azarketi sailor swings a distance equal to up to twice their Speed, moving in a straight line, and makes a single Strike at any point during the movement.</p>"
+                },
+                "lore->Sailing Lore": {
+                    "name": "Sailing Lore"
                 }
             }
         },
@@ -302,6 +387,13 @@
                 "action->Dread Striker": {
                     "name": "Dread Striker",
                     "description": "<p>@UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened} creatures are @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} to the bandit.</p>"
+                },
+                "action->Favored Terrain": {
+                    "name": "Favored Terrain",
+                    "description": "<p>The bandit ignores the effects of non-magical difficult terrain in forests.</p>"
+                },
+                "lore->Forest Lore": {
+                    "name": "Forest Lore"
                 }
             }
         },
@@ -330,8 +422,17 @@
                     "name": "Bar Brawler",
                     "description": "<p>The barkeep has been in enough bar fights to know how to throw a few punches. When fighting in their bar and making a nonlethal attack, the barkeep gains a +1 circumstance bonus to attack rolls and deals an additional [[/r {1d4}]]{1d4 damage}.</p>",
                     "rules": {
-                        "0": "Fighting in their own bar"
+                        "0": {
+                            "label": "Fighting in their own bar"
+                        }
                     }
+                },
+                "action->Barkeep's Advice": {
+                    "name": "Barkeep's Advice",
+                    "description": "<p><strong>Frequency</strong> once per day</p>\n<hr />\n<p><strong>Effect</strong> The barkeep gives some pertinent advice to a single creature other than themself. For 24 hours, when that creature fails a skill check or saving throw, they can recall this advice and reroll the check, using the second result instead. Once that creature uses this ability, its effect ends.</p>\n<p>A creature that receives the Barkeep's Advice is temporarily immune to the ability for 1 month.</p>"
+                },
+                "lore->Alcohol Lore": {
+                    "name": "Alcohol Lore"
                 }
             }
         },
@@ -352,7 +453,19 @@
                 },
                 "action->Sway the Judge and Jury": {
                     "name": "Sway the Judge and Jury",
-                    "description": "<p>A barrister gains a +2 circumstance bonus to Diplomacy checks to @UUID[Compendium.pf2e.actionspf2e.Item.OX4fy22hQgUHDr0q]{Make an Impression} or @UUID[Compendium.pf2e.actionspf2e.Item.DCb62iCBrJXy0Ik6]{Request} something of the deciding members within a courtroom.</p>\n<p>If the barrister successfully @UUID[Compendium.pf2e.actionspf2e.Item.EEDElIyin4z60PXx]{Performs} against a @Check[performance|dc:20] during the 20 minutes prior to the check, they increase the circumstance bonus to +4.</p>"
+                    "description": "<p>A barrister gains a +2 circumstance bonus to Diplomacy checks to @UUID[Compendium.pf2e.actionspf2e.Item.OX4fy22hQgUHDr0q]{Make an Impression} or @UUID[Compendium.pf2e.actionspf2e.Item.DCb62iCBrJXy0Ik6]{Request} something of the deciding members within a courtroom.</p>\n<p>If the barrister successfully @UUID[Compendium.pf2e.actionspf2e.Item.EEDElIyin4z60PXx]{Performs} against a @Check[performance|dc:20] during the 20 minutes prior to the check, they increase the circumstance bonus to +4.</p>",
+                    "rules": {
+                        "1": {
+                            "label": "Sway the Judge and Jury - Successful Performance"
+                        }
+                    }
+                },
+                "action->Cite Precedent": {
+                    "name": "Cite Precedent",
+                    "description": "<p>The barrister uses existing case law to undermine their opposition. If they succeed at a @Check[legal-lore|dc:20]{Legal Lore} check, they impose a -2 circumstance penalty on the next Diplomacy check an opponent attempts in a legal argument.</p>\n<p>Any further attempts to Cite Precedent fail until a new topic with different precedents is being argued.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.KdV8UtN8Af5oCerj]{Effect: Cite Precedent}</p>"
+                },
+                "lore->Legal Lore": {
+                    "name": "Legal Lore"
                 }
             }
         },
@@ -399,6 +512,9 @@
                 "action->Beat a Retreat": {
                     "name": "Beat a Retreat",
                     "description": "<p>The beggar Strides three times and gains a +2 circumstance bonus to AC during those actions.</p>"
+                },
+                "lore->Underworld Lore": {
+                    "name": "Underworld Lore"
                 }
             }
         },
@@ -457,6 +573,10 @@
                 "action->Precision Edge": {
                     "name": "Precision Edge",
                     "description": "<p>The first time the bounty hunter hits their hunted prey in a round, they deal an additional 1d8 precision damage.</p>"
+                },
+                "action->Running Reload": {
+                    "name": "Running Reload",
+                    "description": "<p>The bounty hunter Strides, Steps, or Sneaks, and then Interacts to reload.</p>"
                 }
             }
         },
@@ -477,6 +597,32 @@
                 },
                 "action->+11 Bonus on Perception to Find Traps": {
                     "name": "+11 Bonus on Perception to Find Traps"
+                },
+                "action->+1 Circumstance to All Saves vs. Traps": {
+                    "name": "+1 Circumstance to All Saves vs. Traps"
+                },
+                "action->Deny Advantage": {
+                    "name": "Deny Advantage",
+                    "description": "<p>The burglar isn't off-guard to creatures of 4th level or lower that are @UUID[Compendium.pf2e.conditionitems.Item.iU0fEDdBp3rXpTMC]{Hidden}, @UUID[Compendium.pf2e.conditionitems.Item.VRSef5y1LmL2Hkjf]{Undetected}, flanking, or using @UUID[Compendium.pf2e.classfeatures.Item.w6rMqmGzhUahdnA7]{Surprise Attack}.</p>"
+                },
+                "action->Nimble Dodge": {
+                    "name": "Nimble Dodge",
+                    "description": "<p><strong>Trigger</strong> The burglar is targeted with a melee or ranged attack by an attacker it can see.</p>\n<hr />\n<p><strong>Effect</strong> The burglar gains a +2 circumstance bonus to AC against the triggering attack.</p>"
+                },
+                "action->Mobility": {
+                    "name": "Mobility",
+                    "description": "<p>When the burglar Strides half their speed or less, that movement does not trigger reactions.</p>"
+                },
+                "action->Sneak Attack": {
+                    "name": "Sneak Attack",
+                    "description": "<p>The burglar deals 1d6 extra precision damage to @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} creatures.</p>"
+                },
+                "action->Surprise Attack": {
+                    "name": "Surprise Attack",
+                    "description": "<p>On the first round of combat, if the burglar rolls Deception or Stealth for initiative, creatures that haven't acted are @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} to them.</p>"
+                },
+                "lore->Underworld Lore": {
+                    "name": "Underworld Lore"
                 }
             }
         },
@@ -491,6 +637,27 @@
                 "action->Aura of Command": {
                     "name": "Aura of Command",
                     "description": "<p>30 feet. The captain of the guard bolsters lower-level guards under their command, granting them a +1 status bonus to their attack rolls and a +2 status bonus to their Will saves.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.T9wQ1LvsvPWTefQR]{Effect: Under Command}</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.OxOMYmlPtjsEkRtY]{Effect: Aura of Command}</p>"
+                },
+                "action->Bravery": {
+                    "name": "Bravery",
+                    "description": "<p>When the captain of the guard rolls a success on a Will save against a fear effect, they get a critical success instead. In addition, any time they gain the @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened} condition, reduce its value by 1.</p>"
+                },
+                "action->Shield Block": {
+                    "name": "Shield Block"
+                },
+                "action->Shield Warden": {
+                    "name": "Shield Warden",
+                    "description": "<p>When the captain has their shield raised, they can @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.m4HQ2o5aPxjXf2kY]{Shield Block} when an attack is made against an adjacent ally. If they do, the shield prevents that ally from taking damage instead of the captain.</p>"
+                },
+                "action->Shielded Advance": {
+                    "name": "Shielded Advance",
+                    "description": "<p><strong>Requirements</strong> The captain of the guard has their shield raised</p>\n<hr />\n<p><strong>Effect</strong> The captain of the guard presses forward, using their shield to push back foes.</p>\n<p>The captain Strides and @UUID[Compendium.pf2e.actionspf2e.Item.7blmbDrQFNfdT731]{Shoves}, in either order. The multiple attack penalty doesn't apply to this Shove, though the Shove does count toward the captain's multiple attack penalty.</p>"
+                },
+                "lore->Legal Lore": {
+                    "name": "Legal Lore"
+                },
+                "lore->Warfare Lore": {
+                    "name": "Warfare Lore"
                 }
             }
         },
@@ -546,6 +713,9 @@
                 "action->Sneak Attack": {
                     "name": "Sneak Attack",
                     "description": "<p>The charlatan deals an extra 1d6 precision damage to @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} creatures.</p>"
+                },
+                "lore->Underworld Lore": {
+                    "name": "Underworld Lore"
                 }
             }
         },
@@ -559,6 +729,17 @@
                 "action->Deny Advantage": {
                     "name": "Deny Advantage",
                     "description": "<p>The charming scoundrel isn't @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} to flanking, @UUID[Compendium.pf2e.conditionitems.Item.iU0fEDdBp3rXpTMC]{Hidden}, or @UUID[Compendium.pf2e.conditionitems.Item.VRSef5y1LmL2Hkjf]{Undetected} creatures of 4th-level or lower, or creatures of 4th-level or lower using surprise attack.</p>"
+                },
+                "action->Advancing Flourish": {
+                    "name": "Advancing Flourish",
+                    "description": "<p>The charming scoundrel Strides twice. If they end their movement within melee reach of an enemy, they can @UUID[Compendium.pf2e.actionspf2e.Item.QNAVeNKtHA0EUw4X]{Feint}.</p>"
+                },
+                "action->Sneak Attack": {
+                    "name": "Sneak Attack",
+                    "description": "<p>The charming scoundrel deals an extra 2d6 precision damage to @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} creatures.</p>"
+                },
+                "lore->Theatre Lore": {
+                    "name": "Theatre Lore"
                 }
             }
         },
@@ -581,8 +762,12 @@
                     "name": "Map",
                     "description": "<p>Maps are uncommon. Most maps you can find are simple and functional. A survey map details a single location in excellent detail.</p>\n<p>One of these maps gives you a +1 item bonus to Survival checks and any skill checks to Recall Knowledge, provided the checks are related to the location detailed on the map.</p>\n<p>The GM determines what maps are available in any location.</p>",
                     "rules": {
-                        "0": "Survey Map (mapped area)",
-                        "1": "Survey Map (Recall knowledge on mapped area)"
+                        "0": {
+                            "label": "Survey Map (mapped area)"
+                        },
+                        "1": {
+                            "label": "Survey Map (Recall knowledge on mapped area)"
+                        }
                     }
                 },
                 "consumable->Scroll of Acid Arrow (Level 2)": {
@@ -628,6 +813,9 @@
                 "action->Power of the Mob": {
                     "name": "Power of the Mob",
                     "description": "<p>When three or more commoners are adjacent to each other each commoner gets a +1 circumstance bonus to Athletics checks to @UUID[Compendium.pf2e.actionspf2e.Item.7blmbDrQFNfdT731]{Shove}, attack rolls, and damage rolls.</p>"
+                },
+                "lore->Lore (any one related to their trade)": {
+                    "name": "Lore (any one related to their trade)"
                 }
             }
         },
@@ -672,6 +860,13 @@
                 },
                 "action->-2 to Will Saves vs. Higher Ranking Cult Members": {
                     "name": "-2 to Will Saves vs. Higher Ranking Cult Members"
+                },
+                "action->Fanatical Frenzy": {
+                    "name": "Fanatical Frenzy",
+                    "description": "<p><strong>Requirements</strong> The cultist has taken damage and is neither @UUID[Compendium.pf2e.conditionitems.Item.HL2l2VRSaQHu9lUw]{Fatigued} nor already in a frenzy</p>\n<hr />\n<p><strong>Effect</strong> The cultist flies into a frenzy that lasts 1 minute. While frenzied, the cultist gains a +1 status bonus to attack rolls and a +2 status bonus to damage rolls, and they take a -2 status penalty to AC. The cultist can't voluntarily stop their frenzy. After their frenzy, the cultist is @UUID[Compendium.pf2e.conditionitems.Item.HL2l2VRSaQHu9lUw]{Fatigued}.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.3Wtzyb0ZgkaC7vHY]{Effect: Fanatical Frenzy}</p>"
+                },
+                "lore->Cult Lore (applies to cultist's own cult)": {
+                    "name": "Cult Lore (applies to cultist's own cult)"
                 }
             }
         },
@@ -720,6 +915,20 @@
                 "action->Abyssal Temptation": {
                     "name": "Abyssal Temptation",
                     "description": "<p>Demonic study has garnered the attention of at least one demon that is actively trying to possess the demonologist.</p>\n<p>When the demonologist publicly espouses the benefits of demonic power (whether they believe it a good thing or not), they gain a +1 status bonus to skill checks, AC, and saves for 1 day. These bonuses don't apply against demons.</p>\n<p>At the end of the day, the demonologist must attempt a @Check[will|dc:20] save, becoming possessed for 1 day on a failure (permanently on a critical failure).</p>"
+                },
+                "action->Breach the Abyss": {
+                    "name": "Breach the Abyss",
+                    "description": "<p><strong>Requirements</strong> The demonologist's last action was to cast a non-cantrip spell</p>\n<hr />\n<p><strong>Effect</strong> The demonologist siphons energy drawn from the Abyss into their weapon. Until the end of the turn, the weapon deals an extra 2d6 damage.</p>\n<p>Roll 1d20 to determine the type:</p>\n<ul>\n<li>1-7 acid</li>\n<li>8-9 cold</li>\n<li>10-11 electricity</li>\n<li>12-18 fire</li>\n<li>19-20 negative</li>\n</ul>"
+                },
+                "action->Demon Summoning": {
+                    "name": "Demon Summoning",
+                    "description": "<p>The demonologist can cast a 5th-rank @UUID[Compendium.pf2e.spells-srd.Item.29ytKctjg7qSW2ff]{Summon Fiend} arcane spell to summon a demon. To do so, they must sacrifice two 4th-rank prepared spells and voluntarily take @Damage[4d12[mental]] damage that can't be reduced or prevented.</p>\n<p>If the demonologist is unable to @UUID[Compendium.pf2e.actionspf2e.Item.3f5DMFu8fPiqHpRg]{Sustain} the Spell, including if they're knocked out or killed, the spell continues, but the GM rolls a @Check[flat|dc:10] each round, ending the spell on a failure.</p>"
+                },
+                "lore->Academia Lore": {
+                    "name": "Academia Lore"
+                },
+                "lore->Demon Lore": {
+                    "name": "Demon Lore"
                 }
             }
         },
@@ -811,6 +1020,9 @@
                 "action->Drunken Rage": {
                     "name": "Drunken Rage",
                     "description": "<p><strong>Requirements</strong> The drunkard is drunk, and isn't @UUID[Compendium.pf2e.conditionitems.Item.HL2l2VRSaQHu9lUw]{Fatigued} or raging</p>\n<hr />\n<p><strong>Effect</strong> Something sets the drunkard off, causing them to fly into a drunken rage. They gain 6 temporary Hit Points that last until the drunken rage ends. While raging, they deal 4 additional damage with melee attacks and take a -1 penalty to AC. The drunkard can't use concentrate actions except @UUID[Compendium.pf2e.actionspf2e.Item.BlAOM2X92SI6HMtJ]{Seek} and rage actions.</p>\n<p>The rage lasts for 1 minute or until the drunkard falls unconscious or sobers up. The drunkard can't voluntarily stop the Drunken Rage. Once the rage ends, the drunkard can't Rage again for 1 minute.</p>\n<p>@UUID[Compendium.pf2e.feat-effects.Item.z3uyCMBddrPK5umr]{Effect: Rage}</p>"
+                },
+                "lore->Alcohol Lore": {
+                    "name": "Alcohol Lore"
                 }
             }
         },
@@ -847,7 +1059,9 @@
                     "name": "Mark for Death",
                     "description": "<p>The executioner marks a single creature they can see for death. The first time each round the executioner Strikes that creature, the Strike deals 1d12 additional precision damage.</p>\n<p>The creature remains marked for death until the executioner is knocked out, marks a different creature for death, or the encounter ends.</p>",
                     "rules": {
-                        "0": "First attack on marked target this round"
+                        "0": {
+                            "label": "First attack on marked target this round"
+                        }
                     }
                 }
             }
@@ -874,6 +1088,23 @@
                 "action->Deceiver's Surprise": {
                     "name": "Deceiver's Surprise",
                     "description": "<p>On the first round of combat, if the false priest rolls Deception or Performance for initiative, creatures that haven't acted yet are @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} to the false priest.</p>"
+                },
+                "action->Fickle Prophecy": {
+                    "name": "Fickle Prophecy",
+                    "description": "<p>The false priest convinces someone of their omnipotence by attempting a Deception check compared to the creature's Will DC.</p>\n<p>If successful, the target gains [[/r 1d8+4 #Temporary Hit Points]]{1d8+4 temporary Hit Points} that last for 1 hour or until the false priest removes them by rebuking the target, whichever occurs first.</p>"
+                },
+                "action->Sneak Attack": {
+                    "name": "Sneak Attack",
+                    "description": "<p>The false priest deals an extra 1d6 precision damage to @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} creatures. This increases to 2d6 precision damage against creatures off-guard due to the false priest's @UUID[Compendium.pf2e.actionspf2e.Item.QNAVeNKtHA0EUw4X]{Feint} or deceiver's surprise.</p>",
+                    "rules": {
+                        "0": {
+                            "label": "Target is Off-Guard due to a Feint or Deceiver's Surprise"
+                        }
+                    }
+                },
+                "action->The Jig Is Up": {
+                    "name": "The Jig Is Up",
+                    "description": "<p><strong>Frequency</strong> once per hour</p>\n<p><strong>Trigger</strong> The false priest critically fails a Deception or Performance check</p>\n<hr />\n<p><strong>Effect</strong> The false priest Strides.</p>"
                 }
             }
         },
@@ -930,6 +1161,24 @@
                 "action->Fence's Eye": {
                     "name": "Fence's Eye",
                     "description": "<p>Fences live by their ability to recognize a viable trade. They can use Underworld Lore to identify an item's value and @UUID[Compendium.pf2e.actionspf2e.Item.eReSHVEPCsdkSL4G]{Identify Magic} on an item. They gain a +2 circumstance bonus to Underworld Lore checks when doing so, and to Underworld Lore checks to determine whether an item was stolen, whether a stolen item would be too recognizable to easily move, and who would be interested in purchasing such an item.</p>"
+                },
+                "action->Quick Rummage": {
+                    "name": "Quick Rummage",
+                    "description": "<p>The fence always has a few items close at hand. The fence @UUID[Compendium.pf2e.actionspf2e.Item.pvQ5rY2zrtPI614F]{Interacts} to draw a weapon or item that takes a single action to activate, and then @UUID[Compendium.pf2e.actionspf2e.Item.VjxZFuUXrCU94MWR]{Strikes} with the weapon or activates the item.</p>"
+                },
+                "action->Scoundrel's Feint": {
+                    "name": "Scoundrel's Feint",
+                    "description": "<p>When the fence successfully @UUID[Compendium.pf2e.actionspf2e.Item.QNAVeNKtHA0EUw4X]{Feints}, their target is @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} against the fence's attacks until the end of the fence's next turn. On a critical success, the target is @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} against all attacks until the end of the fence's next turn.</p>"
+                },
+                "action->Sneak Attack": {
+                    "name": "Sneak Attack",
+                    "description": "<p>The fence deals an extra 2d6 precision damage to @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} creatures.</p>"
+                },
+                "lore->Accounting Lore": {
+                    "name": "Accounting Lore"
+                },
+                "lore->Underworld Lore": {
+                    "name": "Underworld Lore"
                 }
             }
         },
@@ -940,6 +1189,45 @@
                 "weapon->Tanglefoot Bag (Moderate)": {
                     "name": "Tanglefoot Bag (Moderate)",
                     "description": "<p><strong>Activate</strong> <span class=\"action-glyph\">1</span> Strike</p>\n<hr />\n<p>A tanglefoot bag is filled with sticky substances. When you hit a creature with a tanglefoot bag, that creature takes a -15-foot status penalty to its Speeds for 1 minute. You gain a +1 item bonus to attack rolls, and the Escape DC is 19.</p>\n<p>On a critical hit, a creature in contact with a solid surface becomes stuck to the surface and @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Immobilized} for 1 round, and a creature flying via wings has its wings tangled, causing it to fall safely to the ground and become unable to Fly again for 1 round. Tanglefoot bags are not effective when used on a creature that is in water.</p>\n<p>The target can end any effects by Escaping or spending a total of 3 actions to carefully remove the sticky substances. These Interact actions don't have to be consecutive, and other creatures can provide the actions as well.</p>"
+                },
+                "consumable->Healing Potion (Minor)": {
+                    "name": "Healing Potion (Minor)",
+                    "description": "<p>A healing potion is a vial of a ruby-red liquid that imparts a tingling sensation as the drinker's wounds heal rapidly. When you drink a healing potion, you regain @Damage[1d8[healing]] Hit Points.</p>"
+                },
+                "action->Deny Advantage": {
+                    "name": "Deny Advantage",
+                    "description": "<p>The gang leader isn't @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} to creatures of 7th level or lower that are @UUID[Compendium.pf2e.conditionitems.Item.iU0fEDdBp3rXpTMC]{Hidden}, @UUID[Compendium.pf2e.conditionitems.Item.VRSef5y1LmL2Hkjf]{Undetected}, flanking, or using surprise attack.</p>"
+                },
+                "action->Evasion": {
+                    "name": "Evasion",
+                    "description": "<p>When the gang leader rolls a success on a Reflex save, they get a critical success instead.</p>"
+                },
+                "action->Nimble Dodge": {
+                    "name": "Nimble Dodge",
+                    "description": "<p><strong>Trigger</strong> The gang leader is targeted with an attack by an attacker they can see</p>\n<hr />\n<p><strong>Effect</strong> The gang leader gains a +2 circumstance bonus to AC against the triggering attack.</p>"
+                },
+                "action->Surprise Attack": {
+                    "name": "Surprise Attack",
+                    "description": "<p>On the first round of combat, if the gang leader rolls Deception or Stealth for initiative, creatures who haven't acted are @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} to the gang leader.</p>"
+                },
+                "action->Brutal Rally": {
+                    "name": "Brutal Rally",
+                    "description": "<p><strong>Trigger</strong> The gang leader rolls a critical hit against a creature</p>\n<hr />\n<p><strong>Effect</strong> All allies that can see the gang leader gain a +1 circumstance bonus to attack rolls until the start of the gang leader's next turn.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.7x0O2GqWBJiAk5PF]{Effect: Brutal Rally}</p>"
+                },
+                "action->Gang Up": {
+                    "name": "Gang Up",
+                    "description": "<p>Any enemy is @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} against the gang leader's melee attacks due to flanking as long as the enemy is within melee reach of both the gang leader and one of the gang leader's allies.</p>"
+                },
+                "action->Quick Draw": {
+                    "name": "Quick Draw",
+                    "description": "<p>The gang leader @UUID[Compendium.pf2e.actionspf2e.Item.pvQ5rY2zrtPI614F]{Interacts} to draw a weapon, then Strikes with that weapon.</p>"
+                },
+                "action->Sneak Attack": {
+                    "name": "Sneak Attack",
+                    "description": "<p>The gang leader deals an extra 2d6 precision damage to @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} creatures.</p>"
+                },
+                "lore->Underworld Lore": {
+                    "name": "Underworld Lore"
                 }
             }
         },
@@ -954,6 +1242,41 @@
                 "weapon->Bottled Lightning (Lesser) (Infused)": {
                     "name": "Bottled Lightning (Lesser) (Infused)",
                     "description": "<p><strong>Activate</strong> <span class=\"action-glyph\">A</span> Strike</p>\n<p>Bottled lightning is packed with volatile reagents that create a blast of electricity when they are exposed to air. Bottled lightning deals 1d6 electricity damage and 1 electricity splash damage. On a hit, the target becomes @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} until the start of your next turn.</p>"
+                },
+                "weapon->Frost Vial (Lesser) (Infused)": {
+                    "name": "Frost Vial (Lesser) (Infused)",
+                    "description": "<p><strong>Activate</strong> <span class=\"action-glyph\">1</span> Strike</p>\n<hr />\n<p>The liquid reagents in this vial rapidly absorb heat when exposed to air. A frost vial deals the listed cold damage and cold splash damage. On a hit, the target takes a status penalty to its Speeds until the end of its next turn. Many types of frost vial also grant an item bonus to attack rolls.</p>\n<p>The bomb deals 1d6 cold damage and 1 cold splash damage, and the target takes a -5-foot penalty.</p>\n<p>@UUID[Compendium.pf2e.equipment-effects.Item.RLsdvhmTh64Mmty9]{Effect: Frost Vial (Lesser)}</p>"
+                },
+                "weapon->Thunderstone (Lesser) (Infused)": {
+                    "name": "Thunderstone (Lesser) (Infused)",
+                    "description": "<p><strong>Activate</strong> <span class=\"action-glyph\">1</span> Strike</p>\n<hr />\n<p>When this stone hits a creature or a hard surface, it explodes with a deafening bang. A thunderstone deals the listed sonic damage and sonic splash damage, and each creature within 10 feet of the space in which the stone exploded must succeed at a @Check[fortitude|dc:17|name:Lesser Thunderstone|showDC:all] saving throw with the listed DC or be @UUID[Compendium.pf2e.conditionitems.Item.9PR9y0bi4JPKnHPR]{Deafened} until the end of its next turn. Many types of thunderstone grant an item bonus to attack rolls.</p>\n<p>The bomb deals 1d4 sonic damage and 1 sonic splash damage, and the DC is 17.</p>"
+                },
+                "armor->Studded Leather Armor": {
+                    "name": "Studded Leather Armor",
+                    "description": "<p>This leather armor is reinforced with metal studs and sometimes small metal plates, providing most of the flexibility of leather armor with more robust protection.</p>"
+                },
+                "equipment->Alchemist's Tools": {
+                    "name": "Alchemist's Tools",
+                    "description": "<p>This mobile collection of vials and chemicals can be used for simple alchemical tasks.</p>"
+                },
+                "strike-melee->Shovel": {
+                    "name": "Shovel"
+                },
+                "strike-ranged->Bottled Lightning": {
+                    "name": "Bottled Lightning"
+                },
+                "strike-ranged->Thunderstone": {
+                    "name": "Thunderstone"
+                },
+                "strike-ranged->Frost Vial": {
+                    "name": "Frost Vial"
+                },
+                "action->Infused Items": {
+                    "name": "Infused Items",
+                    "description": "<p>A grave robber carries the following infused items: 2 @UUID[Compendium.pf2e.equipment-srd.Item.AFR01HVd7DcZvkpP]{Bottled Lightning (Lesser)}, a @UUID[Compendium.pf2e.equipment-srd.Item.EpxmUtLpCkE8R6KJ]{Frost Vial (Lesser)}, and a @UUID[Compendium.pf2e.equipment-srd.Item.Xnqglykl3Cif8rN9]{Thunderstone (Lesser)}.</p>\n<p>These items last for 24 hours, or until the next time the grave robber makes their daily preparations.</p>"
+                },
+                "lore->Underworld Lore": {
+                    "name": "Underworld Lore"
                 }
             }
         },
@@ -1000,6 +1323,12 @@
             "items": {
                 "action->+1 Bonus on Perception to Find concealed objects": {
                     "name": "+1 Bonus on Perception to Find concealed objects"
+                },
+                "action->Attack of Opportunity": {
+                    "name": "Attack of Opportunity"
+                },
+                "lore->Legal Lore": {
+                    "name": "Legal Lore"
                 }
             }
         },
@@ -1014,6 +1343,9 @@
                 "action->Guiding Words": {
                     "name": "Guiding Words",
                     "description": "<p>The guide points out a weakness of a creature within 30 feet.</p>\n<p>The guide and all allies that can hear or see the guide gain a +1 status bonus to attack and damage rolls against that creature until the beginning of the guide's next turn. The guide adds an extra 1d6 precision damage to their weapon and unarmed attacks that hit that creature during the duration.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.uqjx1bwYduHwwC7d]{Effect: Guiding Words}</p>"
+                },
+                "lore->Scouting Lore": {
+                    "name": "Scouting Lore"
                 }
             }
         },
@@ -1042,6 +1374,12 @@
                 "action->Sworn Duty": {
                     "name": "Sworn Duty",
                     "description": "<p>While within the guild or presiding over guild business, the guildmaster gains a +2 circumstance bonus to weapon attack rolls and deals an additional [[/r {2d6}]]{2d6 damage} on a successful weapon attack.</p>"
+                },
+                "lore->Architecture Lore": {
+                    "name": "Architecture Lore"
+                },
+                "lore->Bureaucracy Lore": {
+                    "name": "Bureaucracy Lore"
                 }
             }
         },
@@ -1058,7 +1396,22 @@
                 },
                 "action->Steady Balance": {
                     "name": "Steady Balance",
-                    "description": "<p>Whenever the harbormaster rolls a success on a check to @UUID[Compendium.pf2e.actionspf2e.Item.M76ycLAqHoAgbcej]{Balance}, they get a critical success instead. They're not @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} while @UUID[Compendium.pf2e.actionspf2e.Item.M76ycLAqHoAgbcej]{Balancing} on narrow surfaces and uneven ground.</p>\n<p>They can attempt an Acrobatics check instead of a Reflex save to @UUID[Compendium.pf2e.actionspf2e.Item.3yoajuKjwHZ9ApUY]{Grab an Edge}.</p>"
+                    "description": "<p>Whenever the harbormaster rolls a success on a check to @UUID[Compendium.pf2e.actionspf2e.Item.M76ycLAqHoAgbcej]{Balance}, they get a critical success instead. They're not @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} while @UUID[Compendium.pf2e.actionspf2e.Item.M76ycLAqHoAgbcej]{Balancing} on narrow surfaces and uneven ground.</p>\n<p>They can attempt an Acrobatics check instead of a Reflex save to @UUID[Compendium.pf2e.actionspf2e.Item.3yoajuKjwHZ9ApUY]{Grab an Edge}.</p>",
+                    "rules": {
+                        "1": {
+                            "text": "Whenever the harbormaster rolls a success on a a check to @UUID[Compendium.pf2e.actionspf2e.Item.M76ycLAqHoAgbcej]{Balance}, they get a critical success instead."
+                        }
+                    }
+                },
+                "action->Experienced Hand": {
+                    "name": "Experienced Hand",
+                    "description": "<p>The harbormaster has endured their share of adverse conditions at sea. Any creature that's in adverse weather or aboard a vessel on rough water is @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} to the harbormaster.</p>"
+                },
+                "lore->Fishing Lore": {
+                    "name": "Fishing Lore"
+                },
+                "lore->Sailing Lore": {
+                    "name": "Sailing Lore"
                 }
             }
         },
@@ -1074,8 +1427,13 @@
                     "name": "Fated Doom",
                     "description": "<p>While harrow readers try to avoid combat, no throw of the cards can avoid fate, so a harrow reader learns how to best survive. In the harrow reader's first encounter each day, they gain a +1 status bonus to their initiative roll, their attack rolls, and their AC.</p>",
                     "rules": {
-                        "0": "First encounter of the day"
+                        "0": {
+                            "label": "First encounter of the day"
+                        }
                     }
+                },
+                "lore->Fortune-Telling Lore": {
+                    "name": "Fortune-Telling Lore"
                 }
             }
         },
@@ -1087,6 +1445,16 @@
             "items": {
                 "action->+1 Status to All Saves vs. Fear": {
                     "name": "+1 Status to All Saves vs. Fear"
+                },
+                "action->Attack of Opportunity": {
+                    "name": "Attack of Opportunity"
+                },
+                "action->Weapon Mastery": {
+                    "name": "Weapon Mastery",
+                    "description": "<p>When the Hellknight armiger scores a critical hit with their war flail, their target is knocked @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone}.</p>"
+                },
+                "lore->Hell Lore": {
+                    "name": "Hell Lore"
                 }
             }
         },
@@ -1126,7 +1494,28 @@
             "items": {
                 "action->Forager": {
                     "name": "Forager",
-                    "description": "<p>While using Survival to @UUID[Compendium.pf2e.actionspf2e.Item.49y9Ec4bDii8pcD3]{Subsist}, if the tracker rolls a failure or a critical failure, they get a success instead. If the tracker rolls a success, they can provide food for 16 additional creatures that eat about as much as a human, or 32 creatures on a critical success.</p>"
+                    "description": "<p>While using Survival to @UUID[Compendium.pf2e.actionspf2e.Item.49y9Ec4bDii8pcD3]{Subsist}, if the tracker rolls a failure or a critical failure, they get a success instead. If the tracker rolls a success, they can provide food for 16 additional creatures that eat about as much as a human, or 32 creatures on a critical success.</p>",
+                    "rules": {
+                        "0": {
+                            "text": "While using Survival to Subsist, if you roll any result worse than a success, you get a success. You can also provide subsistence living for multiple creatures."
+                        }
+                    }
+                },
+                "action->Forest Walker": {
+                    "name": "Forest Walker",
+                    "description": "<p>The hunter ignores the effects of difficult terrain from a forest environment. They can @UUID[Compendium.pf2e.actionspf2e.Item.VMozDqMMuK5kpoX4]{Sneak} through underbrush without the need to attempt a Stealth check as long as the hunter moves no more than 5 feet at a time and is not within 10 feet of an enemy at any point during their movement.</p>"
+                },
+                "action->Hunt Prey": {
+                    "name": "Hunt Prey",
+                    "description": "<p>The hunter designates a single creature they can see and hear, or one they're Tracking, as their prey. The hunter gains a +2 circumstance bonus to Perception checks to @UUID[Compendium.pf2e.actionspf2e.Item.BlAOM2X92SI6HMtJ]{Seek} the prey and to Survival checks to @UUID[Compendium.pf2e.actionspf2e.Item.EA5vuSgJfiHH7plD]{Track} the prey.</p>\n<p>The first time the hunter hits the designated prey in a round, they deal an additional 1d8 precision damage. The hunter also ignores the penalty for making ranged attacks within their second range increment.</p>\n<p>These effects last until the hunter uses Hunt Prey again.</p>",
+                    "rules": {
+                        "4": {
+                            "label": "First attack on hunted prey this round"
+                        }
+                    }
+                },
+                "lore->Forest Lore": {
+                    "name": "Forest Lore"
                 }
             }
         },
@@ -1162,8 +1551,16 @@
                     "name": "Home Turf",
                     "description": "<p>An innkeeper gains a +2 circumstance bonus to attack rolls, damage rolls, and AC within their inn.</p>",
                     "rules": {
-                        "0": "Fighting in their own inn"
+                        "0": {
+                            "label": "Fighting in their own inn"
+                        }
                     }
+                },
+                "lore->Accounting Lore": {
+                    "name": "Accounting Lore"
+                },
+                "lore->Cooking Lore": {
+                    "name": "Cooking Lore"
                 }
             }
         },
@@ -1181,6 +1578,21 @@
                 },
                 "action->+1 Bonus on Perception to Find concealed objects": {
                     "name": "+1 Bonus on Perception to Find concealed objects"
+                },
+                "action->Attack of Opportunity": {
+                    "name": "Attack of Opportunity"
+                },
+                "action->Efficient Capture": {
+                    "name": "Efficient Capture",
+                    "description": "<p><strong>Requirements</strong> The jailer has manacles in hand and is adjacent to a creature</p>\n<hr />\n<p><strong>Effect</strong> The jailer attempts to bind the creature's wrists or ankles with the manacles. If the jailer succeeds at an attack roll with a [[/r 1d20+9 #Manacles]]{+9 modifier} against the target's AC, they apply the manacles.</p>"
+                },
+                "action->Intimidating Strike": {
+                    "name": "Intimidating Strike",
+                    "description": "<p>The jailer makes a melee Strike. If it hits and deals damage, the target is @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 1}, or @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 2} on a critical hit.</p>"
+                },
+                "action->Subdue Prisoners": {
+                    "name": "Subdue Prisoners",
+                    "description": "<p>The jailer doesn't take the normal penalty for making a nonlethal attack when attacking with their club.</p>"
                 }
             }
         },
@@ -1211,7 +1623,9 @@
                 "action->+15 to Sense Motive": {
                     "name": "+15 to Sense Motive",
                     "rules": {
-                        "0": "To Sense Motive"
+                        "0": {
+                            "label": "To Sense Motive"
+                        }
                     }
                 },
                 "action->Group Impression": {
@@ -1298,6 +1712,9 @@
                 "action->Sneak Attack": {
                     "name": "Sneak Attack",
                     "description": "<p>The mastermind deals an extra 1d6 precision damage to @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} creatures.</p>"
+                },
+                "lore->Underworld Lore": {
+                    "name": "Underworld Lore"
                 }
             }
         },
@@ -1373,8 +1790,13 @@
                     "name": "Navigator's Edge",
                     "description": "<p>The navigator deals an additional [[/r {1d6}]]{1d6 weapon damage} when on a ship.</p>",
                     "rules": {
-                        "0": "Fighting on a ship"
+                        "0": {
+                            "label": "Fighting on a ship"
+                        }
                     }
+                },
+                "lore->Sailing Lore": {
+                    "name": "Sailing Lore"
                 }
             }
         },
@@ -1406,6 +1828,10 @@
                 "action->Stench of Decay": {
                     "name": "Stench of Decay",
                     "description": "<p>5 feet. The necromancer emits a scent of putrid rot in a 5-foot emanation. A creature that enters or begins its turn in the aura is @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 1}.</p>"
+                },
+                "action->Drain Bonded Item": {
+                    "name": "Drain Bonded Item",
+                    "description": "<p><strong>Frequency</strong> once per day</p>\n<p><strong>Requirements</strong> The necromancer hasn't acted yet on this turn</p>\n<hr />\n<p><strong>Effect</strong> The necromancer expends the power stored in their mace. This gives them the ability to cast one prepared spell they prepared today and already cast, without spending a spell slot.</p>"
                 }
             }
         },
@@ -1417,7 +1843,9 @@
                     "name": "Clothing (High-Fashion Fine)",
                     "description": "<p>Fine clothing, suitable for a noble or royal, is made with expensive fabrics, precious metals, and intricate patterns. You gain a +1 item bonus to checks to Make an Impression on nobility or other upper-class folk while wearing high-fashion fine clothing.</p>",
                     "rules": {
-                        "0": "High-Fashion Clothes (Make an Impression on nobility)"
+                        "0": {
+                            "label": "High-Fashion Clothes (Make an Impression on nobility)"
+                        }
                     }
                 },
                 "equipment->Silver Flask": {
@@ -1443,6 +1871,9 @@
                 "action->Sneak Attack": {
                     "name": "Sneak Attack",
                     "description": "<p>The noble deals 1d6 extra precision damage to @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} creatures.</p>"
+                },
+                "lore->Gambling Lore": {
+                    "name": "Gambling Lore"
                 }
             }
         },
@@ -1477,6 +1908,18 @@
                 },
                 "action->Void Healing": {
                     "name": "Void Healing"
+                },
+                "action->Drain Bonded Staff": {
+                    "name": "Drain Bonded Staff",
+                    "description": "<p><strong>Frequency</strong> once per day</p>\n<hr />\n<p><strong>Effect</strong> Nyctessa expends the power stored in her staff. This turn she can cast one spell she prepared today and already cast, without spending a spell slot.</p>"
+                },
+                "action->Sepulchral Drain": {
+                    "name": "Sepulchral Drain",
+                    "description": "<p>When the <em>Nyctessa's staff</em> deals damage to a living creature with a Strike, that creature gains a weakness 2 to void damage until the end of Nyctessa's next turn.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.HiLwUXS35dNZgnfC]{Effect: Sepulchral Drain}</p>"
+                },
+                "action->Taste Blood": {
+                    "name": "Taste Blood",
+                    "description": "<p><strong>Requirements</strong> Nyctessa's last action was a fangs Strike that damaged the target</p>\n<hr />\n<p><strong>Effect</strong> Nyctessa drinks blood from the target, which must be a living humanoid, gaining 5 temporary Hit Points for 10 minutes. The target must succeed at a @Check[fortitude|dc:21] save or become @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 1}. Regardless of the outcome, the target is temporarily immune to Nyctessa's Taste Blood for 1 day.</p>"
                 }
             }
         },
@@ -1530,6 +1973,39 @@
                 "action->Deny Advantage": {
                     "name": "Deny Advantage",
                     "description": "<p>The field agent isn't @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} to flanking, @UUID[Compendium.pf2e.conditionitems.Item.iU0fEDdBp3rXpTMC]{Hidden}, or @UUID[Compendium.pf2e.conditionitems.Item.VRSef5y1LmL2Hkjf]{Undetected} creatures of 4th level or lower, or to creatures of 4th-level or lower using surprise attack.</p>"
+                },
+                "action->Mobility": {
+                    "name": "Mobility",
+                    "description": "<p>When the field agent takes a Stride action to move half their Speed or less, that movement does not trigger reactions.</p>"
+                },
+                "action->Sneak Attack": {
+                    "name": "Sneak Attack",
+                    "description": "<p>The pathfinder agent deals an extra 2d6 precision damage to @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} creatures.</p>"
+                },
+                "action->Surprise Attack": {
+                    "name": "Surprise Attack",
+                    "description": "<p>On the first round of combat, any creatures that haven't acted yet are @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} to the field agent.</p>"
+                },
+                "action->Trap Finder": {
+                    "name": "Trap Finder",
+                    "description": "<p>The field agent has an intuitive sense that alerts them to the dangers and presence of traps. They gain a +1 circumstance bonus to Perception checks to find traps, to AC against attacks made by traps, and to saves against traps. Even if they aren't Searching, they still get a check to find traps. They can disable traps that require a proficiency rank of master in Thievery.</p>",
+                    "rules": {
+                        "0": {
+                            "label": "Trap Finder (detecting or defending against traps)"
+                        },
+                        "1": {
+                            "label": "Trap Finder (to find traps)"
+                        },
+                        "2": {
+                            "label": "Trap Finder (against traps)"
+                        },
+                        "3": {
+                            "label": "Trap Finder (against traps)"
+                        }
+                    }
+                },
+                "lore->Pathfinder Society Lore": {
+                    "name": "Pathfinder Society Lore"
                 }
             }
         },
@@ -1549,7 +2025,9 @@
                     "name": "Effect: Raise a Shield",
                     "description": "<p>You position your shield to protect yourself. When you have Raised a Shield, you gain its listed circumstance bonus to AC. Your shield remains raised until the start of your next turn.</p>",
                     "rules": {
-                        "0": "Raised Shield"
+                        "0": {
+                            "label": "Raised Shield"
+                        }
                     }
                 },
                 "strike-melee->Warhammer": {
@@ -1564,6 +2042,31 @@
                 "action->Fortitude Saves": {
                     "name": "Fortitude Saves",
                     "description": "<p>Successes are considered Critical Successes</p>"
+                },
+                "action->Shield Block": {
+                    "name": "Shield Block"
+                },
+                "action->Unshakable": {
+                    "name": "Unshakable",
+                    "description": "<p>Anytime the venture-captain gains the @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened} condition, reduce its value by 1.</p>"
+                },
+                "action->Bardic Lore": {
+                    "name": "Bardic Lore",
+                    "description": "<p>The venture-captain can @UUID[Compendium.pf2e.actionspf2e.Item.1OagaWtBpVXExToo]{Recall Knowledge} on any topic using their Bardic Lore skill.</p>"
+                },
+                "action->Paragon's Guard": {
+                    "name": "Paragon's Guard",
+                    "description": "<p>While the venture-captain is in this stance and wielding a shield, their shield is always raised.</p>"
+                },
+                "action->Weapon Mastery (Hammer)": {
+                    "name": "Weapon Mastery (Hammer)",
+                    "description": "<p>The venture-captain has spent hours training with the hammer. They gain access to the critical specialization effect of all simple and martial hammers.</p>"
+                },
+                "lore->Alcohol Lore": {
+                    "name": "Alcohol Lore"
+                },
+                "lore->Bardic Lore": {
+                    "name": "Bardic Lore"
                 }
             }
         },
@@ -1591,6 +2094,19 @@
                 },
                 "action->+2 Bonus on Perception to Notice ailments": {
                     "name": "+2 Bonus on Perception to Notice ailments"
+                },
+                "action->Bedside Manner": {
+                    "name": "Bedside Manner",
+                    "description": "<p>A physician has a +2 circumstance bonus to Diplomacy checks to @UUID[Compendium.pf2e.actionspf2e.Item.OX4fy22hQgUHDr0q]{Make an Impression} on or make a @UUID[Compendium.pf2e.actionspf2e.Item.DCb62iCBrJXy0Ik6]{Request} of a diseased, poisoned, or @UUID[Compendium.pf2e.conditionitems.Item.Yl48xTdMh3aeQYL2]{Wounded} creature.</p>",
+                    "rules": {
+                        "0": {
+                            "label": "Target is diseased, poisoned, or wounded"
+                        }
+                    }
+                },
+                "action->Doctor's Hand": {
+                    "name": "Doctor's Hand",
+                    "description": "<p>When the physician rolls a critical failure on a check to @UUID[Compendium.pf2e.actionspf2e.Item.TC7OcDa7JlWbqMaN]{Treat Disease}, @UUID[Compendium.pf2e.actionspf2e.Item.KjoCEEmPGTeFE4hh]{Treat Poison}, or @UUID[Compendium.pf2e.actionspf2e.Item.1kGNdIIhuglAjIp9]{Treat Wounds}, they get a failure instead.</p>"
                 }
             }
         },
@@ -1611,6 +2127,13 @@
                 "action->Bravery": {
                     "name": "Bravery",
                     "description": "<p>When the pirate rolls a success on a Will save against a fear effect, they get a critical success instead. In addition, any time they gain the @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened} condition, reduce its value by 1.</p>"
+                },
+                "action->Boarding Action": {
+                    "name": "Boarding Action",
+                    "description": "<p>The pirate swings on a rope or Strides, moving up to double their Speed. If the pirate boarded or disembarked a boat during this movement, they can make a melee Strike at the end of their movement that deals one extra damage die on a hit.</p>"
+                },
+                "lore->Sailing Lore": {
+                    "name": "Sailing Lore"
                 }
             }
         },
@@ -1641,6 +2164,13 @@
                 "action->Healing Hands": {
                     "name": "Healing Hands",
                     "description": "<p>When the plague doctor casts @UUID[Compendium.pf2e.spells-srd.Item.rfZpqmj0AIIdkVIs]{Heal}, they roll d10s instead of d8s.</p>"
+                },
+                "action->Improved Communal Healing": {
+                    "name": "Improved Communal Healing",
+                    "description": "<p>When the plague doctor casts @UUID[Compendium.pf2e.spells-srd.Item.rfZpqmj0AIIdkVIs]{Heal} targeting a single creature, the plague doctor also restores Hit Points equal to the spell's rank to themself or any other creature within range of the spell.</p>"
+                },
+                "lore->Plague Lore": {
+                    "name": "Plague Lore"
                 }
             }
         },
@@ -1651,6 +2181,19 @@
                 "action->Forager": {
                     "name": "Forager",
                     "description": "<p>While using Survival to @UUID[Compendium.pf2e.actionspf2e.Item.49y9Ec4bDii8pcD3]{Subsist}, if the hunter rolls a failure or a critical failure, they get a success instead.</p>\n<p>If the hunter rolls a success, they can provide food for 4 additional creatures that eat about as much as a human, or 8 creatures on a critical success.</p>"
+                },
+                "action->Snare Crafting": {
+                    "name": "Snare Crafting",
+                    "description": "<p>The poacher can use the Crafting skill to create the following snares:</p>\n<ul>\n<li>@UUID[Compendium.pf2e.equipment-srd.Item.AFX1V0Go9DqPWBlN]{Alarm Snare}</li>\n<li>@UUID[Compendium.pf2e.equipment-srd.Item.Km4lSOsyrip5q6iD]{Hampering Snare}</li>\n<li>@UUID[Compendium.pf2e.equipment-srd.Item.oplQpQSTyTvHDDtq]{Marking Snare}</li>\n<li>@UUID[Compendium.pf2e.equipment-srd.Item.XcD8p1o71tPohZWT]{Signaling Snare}</li>\n</ul>\n<p>The poacher can create four snares each day without paying for the materials, using 3 Interact actions to set up each snare.</p>"
+                },
+                "action->Hunt Prey": {
+                    "name": "Hunt Prey",
+                    "description": "<p>The poacher designates a single creature they can see and hear, or one they're Tracking, as their prey.</p>\n<p>The poacher gains a +2 circumstance bonus to Perception checks to @UUID[Compendium.pf2e.actionspf2e.Item.BlAOM2X92SI6HMtJ]{Seek} the prey and to Survival checks to @UUID[Compendium.pf2e.actionspf2e.Item.EA5vuSgJfiHH7plD]{Track} the prey.</p>\n<p>The first time the poacher hits the designated prey in a round, they deal an additional 1d8 precision damage. The poacher also ignores the penalty for making ranged attacks within their second range increment.</p>\n<p>These effects last until the poacher uses Hunt Prey again.</p>",
+                    "rules": {
+                        "4": {
+                            "label": "First attack on hunted prey this round"
+                        }
+                    }
                 }
             }
         },
@@ -1677,6 +2220,10 @@
                 "action->Healing Hands": {
                     "name": "Healing Hands",
                     "description": "<p>When the priest casts @UUID[Compendium.pf2e.spells-srd.Item.rfZpqmj0AIIdkVIs]{Heal}, they roll d10s instead of d8s.</p>"
+                },
+                "action->Steady Spellcasting": {
+                    "name": "Steady Spellcasting",
+                    "description": "<p>If another creatures reaction would disrupt the priest's spellcasting action, the priest attempts a @Check[flat|dc:15]. If the priest succeeds, their action isn't disrupted.</p>"
                 }
             }
         },
@@ -1697,6 +2244,14 @@
                 "action->Sneak Attack": {
                     "name": "Sneak Attack",
                     "description": "<p>The prisoner does an extra 1d6 precision damage to @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} creatures.</p>"
+                },
+                "action->Surprise Attack": {
+                    "name": "Surprise Attack",
+                    "description": "<p>On the first round of combat, creatures that haven't acted yet are @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} to the prisoner.</p>"
+                },
+                "action->You're Next": {
+                    "name": "You're Next",
+                    "description": "<p><strong>Trigger</strong> The prisoner reduces a creature to 0 hit points.</p>\n<hr />\n<p><strong>Effect</strong> The prisoner attempts an Intimidation check with a +2 circumstance bonus to @UUID[Compendium.pf2e.actionspf2e.Item.2u915NdUyQan6uKF]{Demoralize} a single creature it can see and that can see them.</p>"
                 }
             }
         },
@@ -1789,6 +2344,19 @@
                 "effect->Spell Effect: Longstrider": {
                     "name": "Spell Effect: Longstrider",
                     "description": "<p>Granted by @UUID[Compendium.pf2e.spells-srd.Item.KcLVELhCUcKXxiKE]{Tailwind}</p>\n<p>You gain a +10-foot status bonus to your Speed.</p>"
+                },
+                "strike-melee->Scimitar": {
+                    "name": "Scimitar"
+                },
+                "strike-ranged->Composite Longbow": {
+                    "name": "Composite Longbow"
+                },
+                "action->+1 Status to All Saves vs. Poison": {
+                    "name": "+1 Status to All Saves vs. Poison"
+                },
+                "action->Chameleon Step": {
+                    "name": "Chameleon Step",
+                    "description": "<p><strong>Frequency</strong> once per day</p>\n<p><strong>Requirements</strong> The Rain-Scribe must be in natural terrain.</p>\n<hr />\n<p><strong>Effect</strong> The Rain-Scribe shifts their coloration and the coloration of their gear to match the surroundings and then immediately @UUID[Compendium.pf2e.actionspf2e.Item.VMozDqMMuK5kpoX4]{Sneaks}, even while being observed. The Rain-Scribe must end their movement concealed or behind cover to remain hidden or undetected.</p>"
                 }
             }
         },
@@ -1808,6 +2376,67 @@
                 "weapon->Frost Vial (Moderate) (Infused)": {
                     "name": "Frost Vial (Moderate) (Infused)",
                     "description": "<p><strong>Activate</strong> <span class=\"action-glyph\">1</span> Strike</p>\n<hr />\n<p>The liquid reagents in this vial rapidly absorb heat when exposed to air. A frost vial deals the listed cold damage and cold splash damage. On a hit, the target takes a status penalty to its Speeds until the end of its next turn. Many types of frost vial also grant an item bonus to attack rolls.</p>\n<p>You gain a +1 item bonus to attack rolls, the bomb deals 2d6 cold damage and 2 cold splash damage, and the target takes a -10-foot penalty.</p>\n<p>@UUID[Compendium.pf2e.equipment-effects.Item.dv0IKm5syOdP759w]{Effect: Frost Vial (Moderate)}</p>"
+                },
+                "armor->Work Coat": {
+                    "name": "Work Coat",
+                    "description": "<p>This armor is simply a layer of heavy, quilted cloth, but it is sometimes used because it's so inexpensive. Padded armor is easier to damage and destroy than other types of armor. Heavy armor comes with a padded armor undercoat included in its Price, though it loses the comfort trait when worn under heavy armor. You can wear just that padded armor or undercoat to sleep in, if your heavy armor is destroyed, or when otherwise not wearing the full heavy armor. This allows you to keep the armor invested and benefit from the power of any runes on the associated heavy armor, but no one else can wear your heavy armor without the padded undercoat.</p>"
+                },
+                "equipment->Alchemist's Tools": {
+                    "name": "Alchemist's Tools",
+                    "description": "<p>This mobile collection of vials and chemicals can be used for simple alchemical tasks.</p>"
+                },
+                "equipment->Bandolier": {
+                    "name": "Bandolier"
+                },
+                "consumable->Antidote (Moderate)": {
+                    "name": "Antidote (Moderate)",
+                    "description": "<p><strong>Activate</strong> <span class=\"action-glyph\">A</span> Interact</p>\n<p>An antidote protects you against toxins. Upon drinking an antidote, you gain a +3 item bonus to Fortitude saving throws against poisons for 6 hours.</p>\n<p>@UUID[Compendium.pf2e.equipment-effects.Item.TjBxxlTvb6tJP1jS]{Effect: Antidote}</p>"
+                },
+                "consumable->Antiplague (Moderate)": {
+                    "name": "Antiplague (Moderate)",
+                    "description": "<p><strong>Activate</strong> <span class=\"action-glyph\">A</span> Interact</p>\n<p>Antiplague can fortify the body's defenses against diseases. Upon drinking an antiplague, you gain a +3 item bonus to Fortitude saving throws against diseases for 24 hours; this applies to your daily save against a disease's progression.</p>\n<p>@UUID[Compendium.pf2e.equipment-effects.Item.mVgLCbZgafIylRzh]{Effect: Antiplague}</p>"
+                },
+                "consumable->Bomber's Eye Elixir (Lesser) (Infused)": {
+                    "name": "Bomber's Eye Elixir (Lesser) (Infused)",
+                    "description": "<p><strong>Activate</strong> <span class=\"action-glyph\">A</span> Interact</p>\n<p>This tincture lets you pinpoint your foes. For the next 5 minutes, your alchemical bomb Strikes reduce the circumstance bonus to AC your targets gain from cover by 1.</p>"
+                },
+                "consumable->Elixir of Life (Lesser) (Infused)": {
+                    "name": "Elixir of Life (Lesser) (Infused)",
+                    "description": "<p><strong>Activate</strong> <span class=\"action-glyph\">A</span> Interact</p>\n<p>Elixirs of life accelerate a living creatures natural healing processes and immune system. Upon drinking this elixir, you regain @Damage[(3d6+6)[healing]] Hit Points and gain +1 item bonus to saving throws against diseases and poisons for 10 minutes.</p>\n<p>@UUID[Compendium.pf2e.equipment-effects.Item.lPRuIRbu0rHBkoKY]{Effect: Elixir of Life}</p>"
+                },
+                "strike-ranged->Moderate Acid Flask": {
+                    "name": "Moderate Acid Flask"
+                },
+                "strike-ranged->Moderate Alchemist's Fire": {
+                    "name": "Moderate Alchemist's Fire"
+                },
+                "strike-ranged->Moderate Frost Vial": {
+                    "name": "Moderate Frost Vial"
+                },
+                "action->Infused Items": {
+                    "name": "Infused Items",
+                    "description": "<p>A reckless scientist carries the following infused items:</p>\n<ul>\n<li>2 @UUID[Compendium.pf2e.equipment-srd.Item.SgtqZxt26BdjUmEB]{Acid Flask (Moderate)},</li>\n<li>2 @UUID[Compendium.pf2e.equipment-srd.Item.gWr4q4HiyGhETA8H]{Alchemist's Fire (Moderate)},</li>\n<li>1 @UUID[Compendium.pf2e.equipment-srd.Item.T4ouD4mVFHA3EHs6]{Bomber's Eye Elixir (Lesser)},</li>\n<li>2 @UUID[Compendium.pf2e.equipment-srd.Item.nVvH1ZcM7OwIVIs8]{Frost Vial (Moderate)},</li>\n<li>3 @UUID[Compendium.pf2e.equipment-srd.Item.TZUskLT7yvP7N2co]{Elixir of Life (Lesser)}</li>\n</ul>\n<p>These items last for 24 hours, or until the next time the scientist makes their daily preparations.</p>"
+                },
+                "action->+1 Status to All Saves vs. Poison": {
+                    "name": "+1 Status to All Saves vs. Poison"
+                },
+                "action->Unstable Compounds": {
+                    "name": "Unstable Compounds",
+                    "description": "<p>When an attacker scores a critical hit against the reckless scientist, one of the scientist's poorly stowed alchemical items bursts. The GM determines the item randomly. If it was a bomb, the alchemist takes damage from the bomb, and any creature adjacent to the alchemist takes the splash damage. Any other item is simply wasted.</p>"
+                },
+                "action->Quick Bomber": {
+                    "name": "Quick Bomber",
+                    "description": "<p>The reckless scientist @UUID[Compendium.pf2e.actionspf2e.Item.pvQ5rY2zrtPI614F]{Interact} to draw a bomb, then Strikes with it.</p>"
+                },
+                "action->Reckless Alchemy": {
+                    "name": "Reckless Alchemy",
+                    "description": "<p><strong>Requirements</strong> The reckless scientist is holding a bomb or elixir</p>\n<hr />\n<p><strong>Effect</strong> The reckless scientist combines the bomb with another bomb or the elixir with another elixir. They can @UUID[Compendium.pf2e.actionspf2e.Item.pvQ5rY2zrtPI614F]{Interact} to draw a second bomb or elixir if necessary as part of this action. They attempt a @Check[crafting|dc:28] check, destroying both component items to create one new item.</p>\n<p>If a viable resulting item isn't used by the end of the scientist's next turn, it explodes as described under critical failure.</p>\n<hr />\n<p><strong>Critical Success</strong> The new item has the full effect of both component items when used.</p>\n<p><strong>Success</strong> The new item combines both items, but halves the effect of each. (This halves damage for bombs, the amount of healing of elixirs of life, or the duration for effects that can't have their value halved. Details are determined by the GM.)</p>\n<p><strong>Failure</strong> The new item is inert.</p>\n<p><strong>Critical Failure</strong> The new item immediately explodes, dealing @Damage[3d6[piercing]] damage to the reckless scientist.</p>"
+                },
+                "lore->Engineering Lore": {
+                    "name": "Engineering Lore"
+                },
+                "lore->Underworld Lore": {
+                    "name": "Underworld Lore"
                 }
             }
         },
@@ -1820,7 +2449,20 @@
                 },
                 "action->Brutal Beating": {
                     "name": "Brutal Beating",
-                    "description": "<p>The ruffian's brutality shakes foes' confidence.</p>\n<p>When the ruffian deals damage on a critical hit, the target is @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 1}, and the ruffian can knock the target up to 10 feet away (this is forced movement).</p>"
+                    "description": "<p>The ruffian's brutality shakes foes' confidence.</p>\n<p>When the ruffian deals damage on a critical hit, the target is @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 1}, and the ruffian can knock the target up to 10 feet away (this is forced movement).</p>",
+                    "rules": {
+                        "0": {
+                            "text": "<p class='compact-text'><strong>{item|name}</strong> The ruffian's brutality shakes foes' confidence.</p>\n<p class='compact-text'>When the ruffian deals damage on a critical hit, the target is @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 1}, and the ruffian can knock the target up to 10 feet away (this is forced movement).</p>"
+                        }
+                    }
+                },
+                "action->Snagging Strike": {
+                    "name": "Snagging Strike",
+                    "description": "<p><strong>Trigger</strong> The ruffian has one hand free, and its target is within reach of that hand.</p>\n<hr />\n<p><strong>Effect</strong> The ruffian makes a melee Strike while keeping one hand free. If this Strike hits, the target is @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} until the start of the ruffian's next turn or until it leaves the ruffian's reach, whichever comes first.</p>"
+                },
+                "action->Sneak Attack": {
+                    "name": "Sneak Attack",
+                    "description": "<p>The ruffian deals an extra 1d6 precision damage to @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} creatures.</p>"
                 }
             }
         },
@@ -1840,6 +2482,24 @@
                 },
                 "action->+2 Status to Reflex Saves vs. Traps": {
                     "name": "+2 Status to Reflex Saves vs. Traps"
+                },
+                "action->+2 Status to Perception to Find Traps": {
+                    "name": "+2 Status to Perception to Find Traps",
+                    "rules": {
+                        "0": {
+                            "label": "To Find Traps"
+                        }
+                    }
+                },
+                "action->Sneak Attack": {
+                    "name": "Sneak Attack",
+                    "description": "<p>The saboteur deals an extra 1d6 precision damage to @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} creatures.</p>"
+                },
+                "lore->Engineering Lore": {
+                    "name": "Engineering Lore"
+                },
+                "lore->Underworld Lore": {
+                    "name": "Underworld Lore"
                 }
             }
         },
@@ -1859,7 +2519,9 @@
                     "name": "Sage's Analysis",
                     "description": "<p>The sage studies a creature, attempting an Arcana, Nature, Occultism, Religion, or Society check against the creature's @UUID[Compendium.pf2e.actionspf2e.Item.1OagaWtBpVXExToo]{Recall Knowledge} DC. On a success, the sage gains a +2 circumstance bonus to attack rolls and AC against that creature and deals an additional [[/r {2d6}]]{2d6 damage} to the creature with weapon attacks.</p>\n<p>These benefits last for 1 minute or until the sage uses this ability again.</p>",
                     "rules": {
-                        "0": "Target is subject of Sage's Analysis"
+                        "0": {
+                            "label": "Target is subject of Sage's Analysis"
+                        }
                     }
                 }
             }
@@ -1918,6 +2580,17 @@
                 "action->Bravery": {
                     "name": "Bravery",
                     "description": "<p>When the Ship Captain rolls a success on a Will save against a fear effect, they get a critical success instead. In addition, any time they gain the @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened} condition, reduce its value by 1.</p>"
+                },
+                "action->Dual Disarm": {
+                    "name": "Dual Disarm",
+                    "description": "<p>The captain makes two Strikes, one with their rapier and one with their main-gauche (in either order). If both Strikes hit, the ship captain can attempt to @UUID[Compendium.pf2e.actionspf2e.Item.Dt6B1slsBy8ipJu9]{Disarm} the target.</p>\n<p>Their multiple attack penalty increases only after all the attacks are made.</p>"
+                },
+                "action->No Quarter!": {
+                    "name": "No Quarter!",
+                    "description": "<p>The captain orders their shipmates to fight without mercy. All allied creatures of equal or lower level within 20 feet of the ship captain gain a+1 status bonus to attack rolls and damage rolls until the end of the ship captain's next turn.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.TjRZbd52qWPjTbNT]{Effect: No Quarter!}</p>"
+                },
+                "lore->Sailing Lore": {
+                    "name": "Sailing Lore"
                 }
             }
         },
@@ -1937,8 +2610,13 @@
                     "name": "Smith's Fury",
                     "description": "<p>The smith deals an additional [[/r {1d6}]]{1d6 damage} when they hit with a weapon they created.</p>",
                     "rules": {
-                        "0": "Attacking with a weapon the smith created"
+                        "0": {
+                            "label": "Attacking with a weapon the smith created"
+                        }
                     }
+                },
+                "lore->Smithy Lore": {
+                    "name": "Smithy Lore"
                 }
             }
         },
@@ -1956,7 +2634,26 @@
                 },
                 "action->Noble's Ally": {
                     "name": "Noble's Ally",
-                    "description": "<p>The spy has positioned themself to seem a trusted ally, gaining a +2 circumstance bonus to @UUID[Compendium.pf2e.actionspf2e.Item.plBGdZhqq5JBl1D8]{Gather Information} or to @UUID[Compendium.pf2e.actionspf2e.Item.OX4fy22hQgUHDr0q]{Make an Impression} among the nobles of that court.</p>"
+                    "description": "<p>The spy has positioned themself to seem a trusted ally, gaining a +2 circumstance bonus to @UUID[Compendium.pf2e.actionspf2e.Item.plBGdZhqq5JBl1D8]{Gather Information} or to @UUID[Compendium.pf2e.actionspf2e.Item.OX4fy22hQgUHDr0q]{Make an Impression} among the nobles of that court.</p>",
+                    "rules": {
+                        "1": {
+                            "label": "To Make an Impression"
+                        },
+                        "2": {
+                            "label": "To Gather Information"
+                        }
+                    }
+                },
+                "action->Hidden Blade": {
+                    "name": "Hidden Blade",
+                    "description": "<p><strong>Frequency</strong> Once per round.</p>\n<hr />\n<p><strong>Effect</strong> The spy draws a weapon and then Strikes with it. The target of the strike is @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} against the attack.</p>"
+                },
+                "action->Sneak Attack": {
+                    "name": "Sneak Attack",
+                    "description": "<p>The spy deals an extra 2d6 precision damage to @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} creatures.</p>"
+                },
+                "lore->Local Court Lore": {
+                    "name": "Local Court Lore"
                 }
             }
         },
@@ -1977,6 +2674,13 @@
                 },
                 "action->Catch Rock": {
                     "name": "Catch Rock"
+                },
+                "action->Big Swing": {
+                    "name": "Big Swing",
+                    "description": "<p>The stone giant makes a fist Strike. The target is @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.t6cx9FOODmeZQNYl]{Pushed} up to 10 feet on a hit or up to 20 feet on a critical hit.</p>\n<p>If the target collides with a solid object or lands on the ground, it takes bludgeoning damage as though it had fallen the distance it moved.</p>"
+                },
+                "action->Throw Rock": {
+                    "name": "Throw Rock"
                 }
             }
         },
@@ -2001,6 +2705,10 @@
                 "action->Doctor's Hand": {
                     "name": "Doctor's Hand",
                     "description": "<p>When the surgeon rolls a critical failure on a check to @UUID[Compendium.pf2e.actionspf2e.Item.TC7OcDa7JlWbqMaN]{Treat Disease}, @UUID[Compendium.pf2e.actionspf2e.Item.KjoCEEmPGTeFE4hh]{Treat Poison}, or @UUID[Compendium.pf2e.actionspf2e.Item.1kGNdIIhuglAjIp9]{Treat Wounds}, they get a failure instead.</p>"
+                },
+                "action->Medical Malpractice": {
+                    "name": "Medical Malpractice",
+                    "description": "<p>The surgeon attempts a @Check[medicine|defense:fortitude] check against the Fortitude DC of one living creature they can see within 60 feet.</p>\n<p>On a success, the surgeon's melee Strikes deal an extra 1d6 precision damage against that creature (2d6 precision damage on a critical success) until 1 minute passes or the surgeon critically hits that creature, whichever comes first.</p>\n<p>Using this action again designates a new target and ends the effect for any previous target. A surgeon can target an individual creature no more than once per day with this ability.</p>"
                 }
             }
         },
@@ -2042,6 +2750,12 @@
                 "action->Inspirational Presence": {
                     "name": "Inspirational Presence",
                     "description": "<p>50 feet. Any of the teacher's students in the aura gains a +1 circumstance bonus to @UUID[Compendium.pf2e.actionspf2e.Item.1OagaWtBpVXExToo]{Recall Knowledge}.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.CiCG3r7SHYMJeUxz]{Effect: Inspirational Presence}</p>"
+                },
+                "lore->Academia Lore": {
+                    "name": "Academia Lore"
+                },
+                "lore->One Additional Lore": {
+                    "name": "One Additional Lore"
                 }
             }
         },
@@ -2059,7 +2773,9 @@
                     "name": "Staff of Abjuration",
                     "description": "<p>This intricately carved wooden staff is warm to the touch and thrums with inner energy. While wielding the staff, you gain a +2 circumstance bonus to checks to identify abjuration magic.</p>\n<p><strong>Activate</strong> Cast a Spell</p>\n<hr />\n<p><strong>Effect</strong> You expend a number of charges from the staff to cast a spell from its list.</p>\n<ul>\n<li><strong>Cantrip</strong> @UUID[Compendium.pf2e.spells-srd.Item.TVKNbcgTee19PXZR]{Shield}</li>\n<li><strong>1st</strong> @UUID[Compendium.pf2e.spells-srd.Item.4WAib3GichxLjp5p]{Alarm}, @UUID[Compendium.pf2e.spells-srd.Item.TTwOKGqmZeKSyNMH]{Gentle Landing}</li>\n<li><strong>2nd</strong> @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic}, @UUID[Compendium.pf2e.spells-srd.Item.5esP2GVzvxWsMgaX]{Environmental Endurance}, @UUID[Compendium.pf2e.spells-srd.Item.Fr58LDSrbndgld9n]{Resist Energy}</li>\n</ul>\n<p><strong>Craft Requirements</strong> Supply one casting of all listed levels of all listed spells.</p>",
                     "rules": {
-                        "0": "Staff of Abjuration (identify abjuration magic)"
+                        "0": {
+                            "label": "Staff of Abjuration (identify abjuration magic)"
+                        }
                     }
                 },
                 "equipment->Magaambya Mask": {
@@ -2099,6 +2815,12 @@
                 "action->Trick Attack": {
                     "name": "Trick Attack",
                     "description": "<p>The tomb raider musters their guile to attempt a clever attack that catches their foe unprepared.</p>\n<p>The tomb raider chooses one of their weapons. The next attack with that weapon deals an extra 2d6 precision damage.</p>\n<p>In addition, the tomb raider can Interact to draw the weapon (or to reload it if they choose the @UUID[Compendium.pf2e.equipment-srd.Item.XyA6PKV46aNlLXOd]{Hand Crossbow}).</p>"
+                },
+                "lore->Architecture Lore": {
+                    "name": "Architecture Lore"
+                },
+                "lore->Engineering Lore": {
+                    "name": "Engineering Lore"
                 }
             }
         },
@@ -2116,6 +2838,9 @@
                 "action->Torch Combatant": {
                     "name": "Torch Combatant",
                     "description": "<p>A torchbearer is adept at attacking with torches and deals @Damage[1[persistent,fire]] damage when they critically hit with a @UUID[Compendium.pf2e.equipment-srd.Item.8Jdw4yAzWYylGePS]{Torch}.</p>"
+                },
+                "lore->Architecture Lore": {
+                    "name": "Architecture Lore"
                 }
             }
         },
@@ -2125,7 +2850,28 @@
             "items": {
                 "action->Forager": {
                     "name": "Forager",
-                    "description": "<p>While using Survival to @UUID[Compendium.pf2e.actionspf2e.Item.49y9Ec4bDii8pcD3]{Subsist}, if the tracker rolls a failure or a critical failure, they get a success instead. If the tracker rolls a success, they can provide food for 16 additional creatures that eat about as much as a human, or 32 creatures on a critical success.</p>"
+                    "description": "<p>While using Survival to @UUID[Compendium.pf2e.actionspf2e.Item.49y9Ec4bDii8pcD3]{Subsist}, if the tracker rolls a failure or a critical failure, they get a success instead. If the tracker rolls a success, they can provide food for 16 additional creatures that eat about as much as a human, or 32 creatures on a critical success.</p>",
+                    "rules": {
+                        "0": {
+                            "text": "While using Survival to Subsist, if you roll any result worse than a success, you get a success. You can also provide subsistence living for multiple creatures."
+                        }
+                    }
+                },
+                "action->Master Tracker": {
+                    "name": "Master Tracker",
+                    "description": "<p>The tracker can @UUID[Compendium.pf2e.actionspf2e.Item.EA5vuSgJfiHH7plD]{Track} while moving at full speed.</p>"
+                },
+                "action->Hunt Prey": {
+                    "name": "Hunt Prey",
+                    "description": "<p>The tracker designates a single creature they can see and hear, or one they're Tracking, as their prey. The tracker gains a +2 circumstance bonus to Perception checks to @UUID[Compendium.pf2e.actionspf2e.Item.BlAOM2X92SI6HMtJ]{Seek} the prey and to Survival checks to @UUID[Compendium.pf2e.actionspf2e.Item.EA5vuSgJfiHH7plD]{Track} the prey.</p>\n<p>The first time the tracker hits the designated prey in a round, they deal an additional 1d8 precision damage. The tracker also ignores the penalty for making ranged attacks within their second range increment.</p>\n<p>These effects last until the tracker uses Hunt Prey again.</p>",
+                    "rules": {
+                        "4": {
+                            "label": "First attack on hunted prey this round"
+                        }
+                    }
+                },
+                "lore->Forest Lore": {
+                    "name": "Forest Lore"
                 }
             }
         },
@@ -2184,6 +2930,10 @@
                 "action->Collaborative Thievery": {
                     "name": "Collaborative Thievery",
                     "description": "<p>The urchin gains a +1 circumstance bonus to @UUID[Compendium.pf2e.actionspf2e.Item.RDXXE7wMrSPCLv5k]{Steal} or @UUID[Compendium.pf2e.actionspf2e.Item.ijZ0DDFpMkWqaShd]{Palm an Object} while within 10 feet of an ally who has the pickpocket ability.</p>"
+                },
+                "action->Pickpocket": {
+                    "name": "Pickpocket",
+                    "description": "<p>The urchin can @UUID[Compendium.pf2e.actionspf2e.Item.RDXXE7wMrSPCLv5k]{Steal} of @UUID[Compendium.pf2e.actionspf2e.Item.ijZ0DDFpMkWqaShd]{Palm an Object} that's closely guarded without taking the usual -5 penalty. They can @UUID[Compendium.pf2e.actionspf2e.Item.RDXXE7wMrSPCLv5k]{Steal} objects that would be extremely noticable or time-consuming to remove (like worn shoes, armor, or actively wielded objects).</p>"
                 }
             }
         },
@@ -2207,6 +2957,14 @@
                 "action->Reflex Saves": {
                     "name": "Reflex Saves",
                     "description": "<p>Successes are treated as Critical Successes</p>"
+                },
+                "action->Vengeful Edge": {
+                    "name": "Vengeful Edge",
+                    "description": "<p>When attacking a creature that attacked the veteran reclaimer or one of their allies within the last round, the veteran reclaimer has a multiple attack penalty of -3, or -2 with their dagger.</p>"
+                },
+                "action->Weapon Mastery": {
+                    "name": "Weapon Mastery",
+                    "description": "<p>When the veteran reclaimer critically hits a creature who attacked the veteran reclaimer or one of their allies within the last round, the reclaimer applies the weapon's critical specialization effect.</p>"
                 }
             }
         },
@@ -2226,6 +2984,20 @@
                 },
                 "action->+3 Status to Reflex vs. Damaging Effects": {
                     "name": "+3 Status to Reflex vs. Damaging Effects"
+                },
+                "action->Retributive Strike": {
+                    "name": "Retributive Strike",
+                    "description": "<p>The virtuous defender can Step to put the foe in reach before making a melee Retributive Strike.</p>\n<p><strong>Damage Reduction</strong> 6</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.RetributiveStrike]</p>"
+                },
+                "action->Shield Ally": {
+                    "name": "Shield Ally",
+                    "description": "<p>The virtuous defender's shield is sturdier in their hands. The statistics for the shield above include this benefit; it's a normal steel shield for anyone else.</p>"
+                },
+                "action->Shield Block": {
+                    "name": "Shield Block"
+                },
+                "lore->Shining Crusade Lore": {
+                    "name": "Shining Crusade Lore"
                 }
             }
         },
@@ -2254,6 +3026,27 @@
             "items": {
                 "action->+1 to Sense Motive": {
                     "name": "+1 to Sense Motive"
+                },
+                "action->Air of Authority": {
+                    "name": "Air of Authority",
+                    "description": "<p>10 feet. Creatures in the aura who are the same or lower level than the watch officer take a -2 status penalty to their Will DC against the watch officer's attempts to @UUID[Compendium.pf2e.actionspf2e.Item.tHCqgwjtQtzNqVvd]{Coerce} or @UUID[Compendium.pf2e.actionspf2e.Item.2u915NdUyQan6uKF]{Demoralize} them.</p>"
+                },
+                "action->Attack of Opportunity": {
+                    "name": "Attack of Opportunity"
+                },
+                "action->Bravery": {
+                    "name": "Bravery",
+                    "description": "<p>When the watch officer rolls a success on a Will save against a fear effect, they get a critical success instead. In addition, any time they gain the @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened} condition, reduce its value by 1.</p>"
+                },
+                "action->Shield Block": {
+                    "name": "Shield Block"
+                },
+                "action->Sudden Charge": {
+                    "name": "Sudden Charge",
+                    "description": "<p><strong>Frequency</strong> once per round</p>\n<hr />\n<p><strong>Effect</strong> The watch officer Strides twice. If they end their movement within melee reach of at least one enemy, they can make a melee Strike against that enemy.</p>"
+                },
+                "lore->Legal Lore": {
+                    "name": "Legal Lore"
                 }
             }
         },

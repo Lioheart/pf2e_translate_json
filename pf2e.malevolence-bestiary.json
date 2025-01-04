@@ -22,6 +22,25 @@
                 },
                 "action->+1 Status to All Saves vs. Magic": {
                     "name": "+1 Status to All Saves vs. Magic"
+                },
+                "action->Grieving Aura": {
+                    "name": "Grieving Aura",
+                    "description": "<p>30 feet. A creature that begins its turn in the aura must attempt a @Check[will|dc:27] save. Undead take a -2 circumstance penalty to this saving throw. The creature is then temporarily immune to the grieving aura for 1 hour.</p>\n<p><strong>Success</strong> The creature is unaffected.</p>\n<p><strong>Failure</strong> For 1 round, the creature can't use reactions and is @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1} for that turn as it sobs uncontrollably.</p>\n<p><strong>Critical Failure</strong> As failure, but the effects lasts while the creature remains in the aura plus 1 minute.</p>"
+                },
+                "action->Drain Magic": {
+                    "name": "Drain Magic",
+                    "description": "<p>Whenever a creature fails its save against Frenzied Beaks, the algea attempts to counter a spell effect active on that creature (6th level, counteract check +22). The algea can choose which effect to attempt to counteract for each creature.</p>"
+                },
+                "action->Frenzied Beaks": {
+                    "name": "Frenzied Beaks",
+                    "description": "<p>Each foe in the swarm's space takes @Damage[5d6[piercing]|traits:item:rune:property:ghost-touch] damage (@Check[reflex|dc:30|basic]) and is exposed to drain magic. This damage affects incorporeal creatures as if it had the effects of a ghost touch property rune.</p>"
+                },
+                "action->Soul Cage": {
+                    "name": "Soul Cage",
+                    "description": "<p>An incorporeal undead damaged by Frenzied Beaks must attempt a @Check[will|dc:30] save.</p>\n<hr />\n<p><strong>Critical Success</strong> The undead is unaffected and is temporarily immune for 24 hours.</p>\n<p><strong>Success</strong> The undead takes a -10-foot status penalty to Speeds for 1 round.</p>\n<p><strong>Failure</strong> As success, but the undead is also @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Immobilized} for 1 round, although it can attempt to Escape (DC 30).</p>\n<p><strong>Critical Failure</strong> The undead is restrained for 1 round. The algea can attempt to plane shift with the @UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{Restrained} creature even if that creature isn't willing, but an unwilling creature can attempt a Will save to resist @UUID[Compendium.pf2e.spells-srd.Item.5bTt2CvYHPvaR7QQ]{Interplanar Teleport}. If it succeeds, the algea plane shifts and leaves the incorporeal creature behind, which is then no longer restrained.</p>"
+                },
+                "lore->Boneyard Lore": {
+                    "name": "Boneyard Lore"
                 }
             }
         },
@@ -36,6 +55,22 @@
                 },
                 "action->Void Healing": {
                     "name": "Void Healing"
+                },
+                "action->Whispered Despair": {
+                    "name": "Whispered Despair",
+                    "description": "<p><strong>Trigger</strong> A creature with an active emotion effect enters an attic whisperer's aura of sobs</p>\n<hr />\n<p><strong>Effect</strong> The attic whisperer attempts to counteract the emotion effect, with a counteract modifier of +13.</p>"
+                },
+                "action->Aura of Sobs": {
+                    "name": "Aura of Sobs",
+                    "description": "<p>10 feet. Anitoli Nostreaema enshrouds itself in a tapestry of stolen voices. Each living creature that enters or starts their turn in the aura must succeed at a @Check[will|dc:21] save or the unnerving, bitter sobs render them distraught and they become @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 1} for as long as they remain within the aura. A creature that succeeds is temporarily immune for 1 hour.</p>\n<p>Anitoli Nostreaema can activate or deactivate the aura with a single free action, which has the concentrate trait.</p>"
+                },
+                "action->Steal Breath": {
+                    "name": "Steal Breath",
+                    "description": "<p>Anitoli Nostreaema siphons the breath from living creatures, sapping their strength. A living creature hit by a jaws Strike must attempt a @Check[fortitude|dc:24] save.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target is @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 1} for 1 round.</p>\n<p><strong>Failure</strong> The target is @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 1} for 24 hours and @UUID[Compendium.pf2e.conditionitems.Item.HL2l2VRSaQHu9lUw]{Fatigued}.</p>\n<p><strong>Critical Failure</strong> The target is enfeebled 1 for 24 hours, is fatigued, and falls @UUID[Compendium.pf2e.conditionitems.Item.fBnFDH2MTzgFijKf]{Unconscious}.</p>"
+                },
+                "action->Steal Voice": {
+                    "name": "Steal Voice",
+                    "description": "<p>When Anatoli Nostraema hits a living creature with a bony hand Strike, it tries to pull the victim's voice into its aura. The victim must attempt a @Check[will|dc:24] save.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target's voice is weak for 1 minute. Anytime it attempts an action with the auditory trait, it must succeed at a @Check[flat|dc:5] check or the action is lost.</p>\n<p><strong>Failure</strong> The target loses the ability to speak for 1 hour, until the curse is removed, or until the attic whisperer is destroyed, whichever comes first. During this time, the attic whisperer can perfectly mimic the target's voice, and the target takes a -2 circumstance penalty to saving throws against that attic whisperer's aura of sobs.</p>\n<p><strong>Critical Failure</strong> As failure, but the effects lasts until the attic whisperer is destroyed or the curse is removed.</p>"
                 }
             }
         },
@@ -87,6 +122,14 @@
                 },
                 "action->Void Healing": {
                     "name": "Void Healing"
+                },
+                "action->Corrupted Touch": {
+                    "name": "Corrupted Touch",
+                    "description": "<p>A corrupted nosoi's Strikes deal @Damage[1d6[void]] damage to living creatures. A creature critically hit by a corrupted nosoi's Strike must attempt a @Check[fortitude|dc:18] save or become @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 1} (@UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 2} on a critical failure) as rot spreads through their flesh.</p>"
+                },
+                "action->Haunting Melody": {
+                    "name": "Haunting Melody",
+                    "description": "<p>The nosoi croons \"<em>the Lord slumbers below, you're nothing but his dreams, and when the lord awakes, you'll know the end of things!</em>\". Each living or undead creature within a @Template[emanation|distance:60] must attempt a @Check[will|dc:18] save. The effect lasts for 1 round, but a nosoi can use this ability again on subsequent rounds to extend the duration by 1 round for all affected creatures. A creature that succeeds at any save is temporarily immune for 24 hours. Despite being a mental effect, this ability affects mindless undead. Psychopomps are immune to this ability.</p>\n<hr />\n<p><strong>Failure</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.AdPVz7rbaVSRxHFg]{Fascinated}.</p>\n<p><strong>Critical Failure</strong> As failure, and the creature must spend each of its actions on its turn to move closer to the nosoi as expediently as possible while avoiding obvious dangers. If a @UUID[Compendium.pf2e.conditionitems.Item.AdPVz7rbaVSRxHFg]{Fascinated} creature is adjacent to the nosoi, it stays still and doesn't act. If the creature is attacked, the fascination ends.</p>"
                 }
             }
         },
@@ -110,6 +153,26 @@
                 },
                 "action->Void Healing": {
                     "name": "Void Healing"
+                },
+                "action->Consume Flesh": {
+                    "name": "Consume Flesh",
+                    "description": "<p><strong>Requirements</strong> The esobok ghoul is adjacent to the corpse of a creature that died within the last hour.</p>\n<hr />\n<p><strong>Effect</strong> The ghoul devours a chunk of the corpse and regains @Damage[3d6[healing]] Hit Points.</p>\n<p>It can regain Hit Points from any given corpse only once.</p>"
+                },
+                "action->Corrupted Touch": {
+                    "name": "Corrupted Touch",
+                    "description": "<p>An esobok ghoul's Strikes deal @Damage[1d6[void]] damage to living creatures. A creature critically hit by an esobok ghoul's Strike must attempt a @Check[fortitude|dc:18] save or become @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 1} (@UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 2} on a critical failure) as rot spreads throughout their flesh.</p>"
+                },
+                "action->Ghoul Fever": {
+                    "name": "Ghoul Fever",
+                    "description": "<p><strong>Saving Throw</strong> @Check[fortitude|dc:22]</p>\n<p><strong>Stage 1</strong> carrier with no ill effect (1 day)</p>\n<p><strong>Stage 2</strong> @Damage[2d6[void]] damage and regains half as many Hit Points from all healing (1 day)</p>\n<p><strong>Stage 3</strong> as stage 2 (1 day)</p>\n<p><strong>Stage 4</strong> @Damage[2d6[void]] damage and gains no benefit from healing (1 day)</p>\n<p><strong>Stage 5</strong> as stage 4 (1 day)</p>\n<p><strong>Stage 6</strong> dead, and rises as a ghoul the next midnight.</p>"
+                },
+                "action->Paralysis": {
+                    "name": "Paralysis",
+                    "description": "<p>Any living, non-elf creature hit by a ghoul's attack must succeed at a @Check[fortitude|dc:22] save or become @UUID[Compendium.pf2e.conditionitems.Item.6uEgoh53GbXuHpTF]{Paralyzed}.</p>\n<p>It can attempt a new save at the end of each of its turns, and the DC cumulatively decreases by 1 on each such save.</p>"
+                },
+                "action->Pounce": {
+                    "name": "Pounce",
+                    "description": "<p>The esobok ghoul Strides and then makes a claw Strike. If it began this action hidden, it remains hidden until after the Strike.</p>"
                 }
             }
         },
@@ -158,6 +221,27 @@
                 "action->Shame": {
                     "name": "Shame",
                     "description": "<p>Ioseff takes a -1 item penalty to attack rolls and saving throws against a character who carries Fulvia's ring. This penalty doubles to -2 against a character who wears Fulvia's ring. At the start of ttheir turn, a character who possesses Fulvia's ring can attempt a secret @Check[perception|dc:20|traits:secret] check; on a success, they sense a faint compulsion fueled by outrage to present Fulvia's ring to the ghost.</p>"
+                },
+                "action->Void Healing": {
+                    "name": "Void Healing"
+                },
+                "action->Incite Insurrection": {
+                    "name": "Incite Insurrection",
+                    "description": "<p><strong>Trigger</strong> A creature within 30 feet of Ioseff fails a saving throw against one of his spells</p>\n<hr />\n<p><strong>Effect</strong> Ioseff infuses the magic of his spell with the agonies of his own death. In addition to any effects caused by the triggering spell, the target must also attempt a @Check[fortitude|dc:28|traits:disease] save. or contract internal insurrection at stage 1 (stage 2 on a critical failure)</p>\n<p><strong>Internal Insurrection</strong> (disease); <strong>Level 7</strong>.</p>\n<p>The target can't recover from the clumsy condition from internal insurrection until the disease is cured</p>\n<p><strong>Stage 1</strong> @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 1} (1 day)</p>\n<p><strong>Stage 2</strong> @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 2} (1 day)</p>\n<p><strong>Stage 3</strong> clumsy 2 and @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} (1 day)</p>\n<p><strong>Stage 4</strong> @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 3} and off-guard (1 day)</p>\n<p><strong>Stage 5</strong> death, and the target's body splits apart into a mass of fragments that crawls outward in a 10-foot-emanation before perishing, leaving a bare skeleton surrounded by gore.</p>"
+                },
+                "action->Malevolent Possession": {
+                    "name": "Malevolent Possession",
+                    "description": "<p>Ioseff Xarwin attempts to possess an adjacent corporeal creature. This has the same effect as the @UUID[Compendium.pf2e.spells-srd.Item.wU6hNzK8Yfqdmc8m]{Possession} spell, except since Ioseff Xarwin doesn't have a physical body, it is unaffected by that restriction of the spell.</p>\n<p>The target must attempt a @Check[will|dc:28|traits:controlling] save.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> You possess the target but can't control it. You ride along in the body while the spell lasts.</p>\n<p><strong>Failure</strong> You possess the target and take partial control of it. You no longer have a separate turn; instead, you might control the target. At the start of each of the target's turns, it attempts another Will save. If it fails, it's @UUID[Compendium.pf2e.conditionitems.Item.9qGBRpbX9NEwtAAr]{Controlled} by you on that turn; if it succeeds, it chooses its own actions; and if it critically succeeds, it forces you out and the spell ends.</p>\n<p><strong>Critical Failure</strong> You possess the target fully, and it can only watch as you manipulate it like a puppet. The target is Controlled by you.</p>\n<p>A character who carries Fulvia's ring on their person gains a +4 item bonus to their save and treats the result of the save as one degree of success better than their rolled result. If Ioseff attempts to use this ability on a character who wears Fulvia's ring, he can attempt a Perception check against the ring-wearer's Stealth DC to notice the ring in time to avoid the attempt; on a success, he loses the two actions he took to make the attempt but avoids further effects. If he doesn't notice the ring and attempts to possess the ring-wearer, the ring-wearer automatically gains a critical success on their Will save, Ioseff is @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned 3}, and he can't use Malevolent Possession again for 24 hours.</p>"
+                },
+                "action->Phantasmal Amputation": {
+                    "name": "Phantasmal Amputation",
+                    "description": "<p><strong>Frequency</strong> once per day</p>\n<hr />\n<p><strong>Effect</strong> Ioseff holds up the stump of his left arm, and the streaming blood begins to form a ghostly hand that he then uses to point out a humanoid creature within 30 feet. That creature must attempt a @Check[fortitude|dc:28|traits:necromancy,occult] save.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 1} by a sudden, agonizing pain in their left hand.</p>\n<p><strong>Success</strong> As critical success, but the creature also takes @Damage[2d6[slashing]] damage and is @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 1} for 1 round as they feel as if their left hand just got lopped off by a hatchet.</p>\n<p><strong>Failure</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 2}, takes @Damage[5d6[slashing]] damage, and is @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 2} for 1 minute as they feel as if their left hand just got lopped off by a hatchet.</p>\n<p><strong>Critical Failure</strong> The PC is @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 3} and takes @Damage[8d6[slashing],2d6[bleed]]{8d6 slashing damage and 2d6 bleed damage} as their left hand appears to detach and fall to the floor before instantly decaying into bones. The PC is clumsy 2 and @UUID[Compendium.pf2e.conditionitems.Item.Yl48xTdMh3aeQYL2]{Wounded 1}. As soon as this wounded condition is removed, the PC's hand miraculously returns and the clumsy condition ends.</p>"
+                },
+                "lore->Astronomy Lore": {
+                    "name": "Astronomy Lore"
+                },
+                "lore->Cheliax Lore": {
+                    "name": "Cheliax Lore"
                 }
             }
         },
@@ -185,6 +269,9 @@
                 "action->Sneak Attack": {
                     "name": "Sneak Attack",
                     "description": "<p>Ixirizmid deals an additional 1d6 precision damage to @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} creatures.</p>"
+                },
+                "action->Grab": {
+                    "name": "Grab"
                 }
             }
         },
@@ -236,6 +323,14 @@
                 },
                 "action->Void Healing": {
                     "name": "Void Healing"
+                },
+                "action->Drill Deeper": {
+                    "name": "Drill Deeper",
+                    "description": "<p><strong>Requirements</strong> Nils Kelveken hit a creature with a hand drill Strike with his previous action</p>\n<hr />\n<p><strong>Effect</strong> Nils grabs the drill and twists, drilling deeper into the victim. He automatically deals @Damage[1d8[piercing]] damage, and the creature being drilled into must succeed at a @Check[fortitude|dc:22] save to avoid taking an additional @Damage[1d6[bleed]] (@Damage[2d6[bleed]] on a critical failure).</p>"
+                },
+                "action->I See What Ye Did!": {
+                    "name": "I See What Ye Did!",
+                    "description": "<p>Nils Strides up to his speed toward a target within 30 feet, shrieking \"I seen what ye did!\" at them as he approaches. The target must attempt a @Check[will|dc:22|name:I Seen What Ye Did!] save.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target becomes disturbed at what Nils might have seen and becomes @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 1}.</p>\n<p><strong>Failure</strong> As success, but the target is @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 2}.</p>\n<p><strong>Critical Failure</strong> The target falls into a phantasmagoric nightmare state where time seems to slow down as they can think of nothing but running away, yet as fast as they try to flee, Nils can catch up with ease. The target is @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 2} at the start of its next turn and @UUID[Compendium.pf2e.conditionitems.Item.sDPxOjQ9kx2RZE8D]{Fleeing} until the end of its next turn.</p>"
                 }
             }
         },
@@ -261,6 +356,21 @@
                 },
                 "action->Void Healing": {
                     "name": "Void Healing"
+                },
+                "action->Gnaw": {
+                    "name": "Gnaw",
+                    "description": "<p><strong>Requirements</strong> The tanglebones has Grabbed a foe</p>\n<hr />\n<p><strong>Effect</strong> The tanglebones gnaws and chews on the grabbed target with its many skulls, dealing @Damage[(2d6+8)[piercing]] damage (@Check[fortitude|dc:23|basic] save). On a critical failure, the creature is also @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 1} from the pain.</p>"
+                },
+                "action->Skeletal Storm": {
+                    "name": "Skeletal Storm",
+                    "description": "<p>The tanglebones makes a single claw Strike against every creature in reach. These attacks count toward the tanglebones' multiple attack penalty, but the multiple attack penalty doesn't increase until after the tanglebones makes all its attacks.</p>"
+                },
+                "action->Sprawled Bones": {
+                    "name": "Sprawled Bones",
+                    "description": "<p>Until the next time it acts, the tanglebones appears as a sprawling mass of bones. It has an automatic result of 35 on Deception checks and DCs to pass as a grisly but seemingly harmless mess.</p>"
+                },
+                "action->Grab": {
+                    "name": "Grab"
                 }
             }
         },
@@ -282,6 +392,17 @@
                 },
                 "action->+1 Status to All Saves vs. Magic": {
                     "name": "+1 Status to All Saves vs. Magic"
+                },
+                "action->Void Healing": {
+                    "name": "Void Healing"
+                },
+                "action->Brainlash": {
+                    "name": "Brainlash",
+                    "description": "<p>The undead brain collector extrudes a writhing tangle of ectoplasm from its bursted brain blisters. These ectoplasmic strands lash out at all living targets within 30 feet. Targets in this area must attempt a @Check[will|dc:25] save.</p>\n<p>After the undead brain collector uses this ability, seven phantom brains glow and shimmer where its brain blisters once were. It can't use Brainlash again until all seven phantom brains are Absorbed.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature takes @Damage[4d6[mental]] damage.</p>\n<p><strong>Failure</strong> The creature takes @Damage[8d6[mental]] damage.</p>\n<p><strong>Critical Failure</strong> The creature takes @Damage[8d6[mental]] damage and is @UUID[Compendium.pf2e.conditionitems.Item.yblD8fOR1J8rDwEQ]{Confused}.</p>"
+                },
+                "action->Mind-Rotting Toxin": {
+                    "name": "Mind-Rotting Toxin",
+                    "description": "<p><strong>Saving Throw</strong> @Check[fortitude|dc:25|basic]</p>\n<p><strong>Maximum Duration</strong> 6 rounds</p>\n<hr />\n<p><strong>Stage 1</strong> @Damage[1d6[void]] and @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 1} (1 round)</p>\n<p><strong>Stage 2</strong> @Damage[1d6[void]], stupefied 1, and @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1} (1 round)</p>\n<p><strong>Stage 3</strong> @Damage[2d6[void]], @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 2}, and slowed 1 (1 round)</p>"
                 }
             }
         },
@@ -345,7 +466,37 @@
             "allSavesBonus": "+1 status to all saves vs. vitality",
             "items": {
                 "strike-melee->Spectral Hand": {
-                    "name": "Spectral Hand"
+                    "name": "Spectral Hand",
+                    "rules": {
+                        "0": {
+                            "text": "When the manifestation critically hits a creature with its spectral hand Strike, the creature's malevolence condition value increases by 1."
+                        }
+                    }
+                },
+                "action->Drain Memory": {
+                    "name": "Drain Memory",
+                    "description": "<p>When the manifestation damages a living creature with its spectral hand Strike, the manifestation gains 5 temporary Hit Points, and the target must succeed at a @Check[fortitude|dc:23|basic] save or become @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 1}. Each time it deals damage to a creature, that creature's stupefied condition increases by 1 on a failed save, to a maximum of stupefied 4.</p>"
+                },
+                "action->Lifesense 60 feet": {
+                    "name": "Lifesense 60 feet"
+                },
+                "action->Manor Bound": {
+                    "name": "Manor Bound",
+                    "description": "<p>The manifestation can't leave Xarwin Manor or the dungeons below.</p>"
+                },
+                "action->+1 Status Bonus on Saves vs. Vitality": {
+                    "name": "+1 Status Bonus on Saves vs. Vitality"
+                },
+                "action->Recoil": {
+                    "name": "Recoil",
+                    "description": "<p>If a character forcefully presents Fulvia's ring to Xarwin's manifestation as an action with the manipulate trait, he must attempt a @Check[will|dc:26|traits:damaging-effect] save.</p>\n<hr />\n<p><strong>Critical Success</strong> Xarwin's manifestation is unaffected.</p>\n<p><strong>Success</strong> Xarwin's manifestation takes @Damage[4d6[mental]] damage and is @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 1}.</p>\n<p><strong>Failure</strong> Xarwin' manifestation takes @Damage[8d6[mental]] damage, is @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 2}, and @UUID[Compendium.pf2e.conditionitems.Item.sDPxOjQ9kx2RZE8D]{Flees} as long as he remains frightened.</p>\n<p><strong>Critical Failure</strong> Xarwin's manifestation is destroyed.</p>"
+                },
+                "action->Void Healing": {
+                    "name": "Void Healing"
+                },
+                "action->Haunting Touch": {
+                    "name": "Haunting Touch",
+                    "description": "<p>When the manifestation critically hits a creature with its spectral hand Strike, the creature's malevolence condition value increases by 1.</p>"
                 }
             }
         },
@@ -377,6 +528,25 @@
                 },
                 "action->+1 Status to All Saves vs. Magic": {
                     "name": "+1 Status to All Saves vs. Magic"
+                },
+                "action->Unnerving Presence": {
+                    "name": "Unnerving Presence",
+                    "description": "<p>30 feet. A creature that begins its turn within the aura must attempt a @Check[will|dc:22|basic] save.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected and becomes temporarily immune to unnerving presence for 24 hours.</p>\n<p><strong>Success</strong> The creature's attack rolls take a -1 status penalty for 1 round.</p>\n<p><strong>Failure</strong> The creature feels Yianyin's eyeless gaze upon them but knows that something far more dangerous and monstrous watches them through those empty sockets. The overwhelming presence of this alien intelligence causes the creature to become @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1} for 1 round as they shake and tremble with fear.</p>\n<p><strong>Critical Failure</strong> As failure, but the creature is instead @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned 1} and knows the name of what watches from those empty eyes: Tchekuth.</p>"
+                },
+                "action->Compel Condemned": {
+                    "name": "Compel Condemned",
+                    "description": "<p>Yianyin telepathically compels a creature within 30 feet to approach and allow Yianyin to kiss them, in preparation for using Kiss of Death. The target must attempt a @Check[will|dc:25] save.</p>\n<p><strong>Success</strong> The creature is unaffected and is temporarily immune to Compel Condemned for 24 hours.</p>\n<p><strong>Failure</strong> The creature must spend each of its actions to move closer to Yianyin as quickly as possible, while avoiding obvious dangers. If the compelled creature is adjacent to Yianyin, it stays still and doesn't act. If the creature takes any damage, the effect ends and the creature is temporarily immune to Compel Condemned for 24 hours. This effect lasts for 1 round, but if Yianyin uses this ability again on subsequent rounds, it extend the duration by 1 round for all affected creatures.</p>\n<p><strong>Critical Failure</strong> As failure, but damage does not end the effect.</p>"
+                },
+                "action->Corrupted Touch": {
+                    "name": "Corrupted Touch",
+                    "description": "<p>Yianyin's Strikes deal @Damage[2d6[void]] damage to living creatures. A creature critically hit by Yianyin's Strike must attempt a @Check[fortitude|dc:18|traits:void] save or become @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 1} (@UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 2} on a critical failure) as rot spreads throughout their flesh.</p>"
+                },
+                "action->Kiss of Death": {
+                    "name": "Kiss of Death",
+                    "description": "<p>Yianyin gives a long, passionate kiss to an @UUID[Compendium.pf2e.conditionitems.Item.fBnFDH2MTzgFijKf]{Unconscious} or willing creature, dealing @Damage[4d6[void]] damage.</p>\n<p>Any creature damaged by Yianyin's Kiss of Death for 3 consecutive rounds becomes unconscious and is @UUID[Compendium.pf2e.conditionitems.Item.yZRUzMqrMmfLu0V1]{Dying 1}.</p>"
+                },
+                "lore->Boneyard Lore": {
+                    "name": "Boneyard Lore"
                 }
             }
         }

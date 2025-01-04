@@ -40,6 +40,18 @@
                 "action->Wind-Up": {
                     "name": "Wind-Up",
                     "description": "<p>24 hours, @Check[thievery|dc:21|traits:action:disable-a-device], standby</p>\n<hr />\n<p>For a clockwork to act, it must be wound with a unique key by another creature. This takes 1 minute. Once wound, it remains operational for the listed amount of time, usually 24 hours, after which time it becomes unaware of its surroundings and can't act until it's wound again. Some clockworks' abilities require them to spend some of their remaining operational time. They can't spend more than they have and shut down immediately once they have 0 time remaining. If it's unclear when a clockwork was last wound, most clockwork keepers wind all their clockworks at a set time, typically 8 a.m.</p>\n<p>A clockwork that lists standby in its wind-up entry can enter standby mode as a 3-action activity. Its operational time doesn't decrease in standby, but it can sense its surroundings (with a -2 penalty to Perception). It can't act, with one exception: when it perceives a creature, it can exit standby as a reaction (rolling initiative if appropriate).</p>\n<p>A creature can attempt to @UUID[Compendium.pf2e.actionspf2e.Item.cYdz2grcOcRt4jk6]{Disable a Device} to wind a clockwork down (with a DC listed in the wind-up entry). For each success, the clockwork loses 1 hour of operational time. This can be done even if the clockwork is in standby mode.</p>"
+                },
+                "action->Clockwork Wand": {
+                    "name": "Clockwork Wand",
+                    "description": "<p>The clockwork mage uses a mechanical wand as a focus to channel magical energy. This wand is built into the clockwork mage's chest, with only the crystal at the end exposed. The mage can Interact to the remove the wand, or someone else can remove it with a @Check[thievery|dc:25|traits:action:disable-a-device] check to @UUID[Compendium.pf2e.actionspf2e.Item.cYdz2grcOcRt4jk6]{Disable a Device}. The clockwork mage becomes unable to cast any spells except cantrips while the wand is removed.</p>\n<p>When removed, the clockwork wand is a <em>@UUID[Compendium.pf2e.equipment-srd.Item.vJZ49cgi8szuQXAD]{Magic Wand}</em> containing the last 1st-rank innate spell the clockwork mage cast (@UUID[Compendium.pf2e.spells-srd.Item.4koZzrnMXhhosn0D]{Fear}, if the clockwork Belimarius hasn't yet cast a 1st-rank spell in this adventure). The spells are placed within the wand while the mage is created, and the creator can substitute other arcane spells of the appropriate rank.</p>"
+                },
+                "action->Dispelling Critical": {
+                    "name": "Dispelling Critical",
+                    "description": "<p>On a critical hit with a halberd Strike, shards of noqual built into the clockwork Belimarius glow green for a moment. Instead of inflicting additional damage with the critical hit, the clockwork Belimarius instead attempts a counteract check with a [[/r 1d20+18 #Counteract]]{+18} bonus against one magical effect active on the target.</p>"
+                },
+                "action->Energize Clockwork Wand": {
+                    "name": "Energize Clockwork Wand",
+                    "description": "<p><strong>Frequency</strong> once per 10 minutes.</p>\n<hr />\n<p><strong>Effect</strong> The clockwork mage regains a spell it has already cast that day. It must spend 1 hour of its operational time, or 2 hours if the spell is 3rd rank or higher.</p>"
                 }
             }
         },
@@ -58,6 +70,14 @@
                 "action->Wind-Up": {
                     "name": "Wind-Up",
                     "description": "<p>24 hours, @Check[thievery|dc:17|traits:action:disable-a-device], standby</p>\n<hr />\n<p>For a clockwork to act, it must be wound with a unique key by another creature. This takes 1 minute. Once wound, it remains operational for the listed amount of time, usually 24 hours, after which time it becomes unaware of its surroundings and can't act until it's wound again. Some clockworks' abilities require them to spend some of their remaining operational time. They can't spend more than they have and shut down immediately once they have 0 time remaining. If it's unclear when a clockwork was last wound, most clockwork keepers wind all their clockworks at a set time, typically 8 a.m.</p>\n<p>A clockwork that lists standby in its wind-up entry can enter standby mode as a 3-action activity. Its operational time doesn't decrease in standby, but it can sense its surroundings (with a -2 penalty to Perception). It can't act, with one exception: when it perceives a creature, it can exit standby as a reaction (rolling initiative if appropriate).</p>\n<p>A creature can attempt to @UUID[Compendium.pf2e.actionspf2e.Item.cYdz2grcOcRt4jk6]{Disable a Device} to wind a clockwork down (with a DC listed in the wind-up entry). For each success, the clockwork loses 1 hour of operational time. This can be done even if the clockwork is in standby mode.</p>"
+                },
+                "action->Self-Destruct": {
+                    "name": "Self-Destruct",
+                    "description": "<p>A clockwork spy must use this reaction unless specifically programmed otherwise by its creator.</p>\n<p><strong>Trigger</strong> The clockwork spy is reduced to 0 Hit Points.</p>\n<hr />\n<p><strong>Effect</strong> The spy thrashes around and emits a tinny scream followed by a steady ticking sound. At the beginning of what would have been its next turn, the clockwork spy explodes, dealing @Damage[1d12[piercing]] damage in a @Template[emanation|distance:5]{5-foot radius} (@Check[reflex|dc:17|basic] save). Its gemstone is destroyed, along with any information contained inside it.</p>\n<p>An adjacent creature can cancel the self-destruct sequence by succeeding at a @Check[thievery|dc:17|traits:action:disable-a-device] check to @UUID[Compendium.pf2e.actionspf2e.Item.cYdz2grcOcRt4jk6]{Disable a Device}.</p>"
+                },
+                "action->Bleeding Gash": {
+                    "name": "Bleeding Gash",
+                    "description": "<p>On a critical hit with a sharpened gear Strike, the clockwork serpent spy also inflicts @Damage[1d4[persistent,bleed]] damage (@Check[fortitude|dc:17] save negates the additional bleed damage).</p>"
                 }
             }
         },
@@ -88,6 +108,14 @@
                 "action->Cower": {
                     "name": "Cower",
                     "description": "<p>The dretch makes itself as small as possible, protecting its vital organs with its limbs. It gains a +4 circumstance bonus to AC but takes a -2 penalty to attack rolls. This lasts until the dretch moves from its current space, falls @UUID[Compendium.pf2e.conditionitems.Item.fBnFDH2MTzgFijKf]{Unconscious}, or ends the effect as a free action.</p>"
+                },
+                "action->Frenzied Slashes": {
+                    "name": "Frenzied Slashes",
+                    "description": "<p>The dretch makes three claw Strikes, each at a -2 penalty, all targeting the same creature. The dretch's multiple attack penalty doesn't increase until after it has made all three attacks.</p>\n<p>The dretch gains the @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 2} condition until the beginning of its next turn.</p>"
+                },
+                "action->Vicious Criticals": {
+                    "name": "Vicious Criticals",
+                    "description": "<p>A dretch makes the most of any weakness it finds. Whenever a dretch scores a critical hit with its claw Strike, the target takes an additional @Damage[1d6[bleed]].</p>"
                 }
             }
         },
@@ -167,6 +195,28 @@
                 "equipment->Tarnished Silver Religious Symbol (Xar-azmak)": {
                     "name": "Tarnished Silver Religious Symbol (Xar-azmak)",
                     "description": "<p>This piece of wood or silver is emblazoned with an image representing a deity. Some divine spellcasters, such as clerics, can use a religious symbol of their deity as a divine focus to use certain abilities and cast some spells. A religious symbol must be held in one hand to use it.</p>"
+                },
+                "equipment->Key": {
+                    "name": "Key"
+                },
+                "consumable->Wand of Create Food (Level 2)": {
+                    "name": "Wand of Create Food (Level 2)",
+                    "description": "<p>@UUID[Compendium.pf2e.spells-srd.Item.Mt6ZzkVX8Q4xigFq]{Create Food}</p><hr /><p>This baton is about a foot long and contains a single spell. The appearance typically relates to the spell within.</p>\n<p><strong>Activate</strong> Cast a Spell</p>\n<p><strong>Frequency</strong> once per day, plus overcharge</p>\n<hr />\n<p><strong>Effect</strong> You Cast the Spell at the indicated level.</p>\n<p><strong>Craft Requirements</strong> Supply a listed-level casting of the spell.</p>\n<hr />\n<p><em>Note: To create a scroll or wand of a specific spell, drag the spell from the compendium or compendium browser into the inventory of a PC, NPC, or loot actor.</em></p>"
+                },
+                "consumable->Wand of Restoration (Level 2)": {
+                    "name": "Wand of Restoration (Level 2)",
+                    "description": "<p>@UUID[Compendium.pf2e.spells-srd.Item.SnaLVgxZ9ryUFmUr]{Restoration}</p><hr /><p>This baton is about a foot long and contains a single spell. The appearance typically relates to the spell within.</p>\n<p><strong>Activate</strong> Cast a Spell</p>\n<p><strong>Frequency</strong> once per day, plus overcharge</p>\n<hr />\n<p><strong>Effect</strong> You Cast the Spell at the indicated level.</p>\n<p><strong>Craft Requirements</strong> Supply a listed-level casting of the spell.</p>\n<hr />\n<p><em>Note: To create a scroll or wand of a specific spell, drag the spell from the compendium or compendium browser into the inventory of a PC, NPC, or loot actor.</em></p>"
+                },
+                "strike-melee->Pick": {
+                    "name": "Pick"
+                },
+                "action->Reach Spell": {
+                    "name": "Reach Spell",
+                    "description": "<p>If Meitremar's next action this turn is to Cast a Spell that has a range, he increases that spell's range by 30 feet (or increases the range of a touch spell to 30 feet).</p>"
+                },
+                "action->Signature Spell": {
+                    "name": "Signature Spell",
+                    "description": "<p>Meitremar can heighten @UUID[Compendium.pf2e.spells-srd.Item.rfZpqmj0AIIdkVIs]{Heal} spells freely.</p>"
                 }
             }
         },
@@ -183,6 +233,21 @@
                 "equipment->Iron Religious Symbol": {
                     "name": "Iron Religious Symbol",
                     "description": "<p>This piece of wood or silver is emblazoned with an image representing a deity. Some divine spellcasters, such as clerics, can use a religious symbol of their deity as a divine focus to use certain abilities and cast some spells. A religious symbol must be held in one hand to use it.</p>"
+                },
+                "consumable->Healing Potion (Minor)": {
+                    "name": "Healing Potion (Minor)",
+                    "description": "<p>A healing potion is a vial of a ruby-red liquid that imparts a tingling sensation as the drinker's wounds heal rapidly. When you drink a healing potion, you regain @Damage[1d8[healing]] Hit Points.</p>"
+                },
+                "strike-melee->Rapier": {
+                    "name": "Rapier"
+                },
+                "action->Divine Font": {
+                    "name": "Divine Font",
+                    "description": "<p>@UUID[Compendium.pf2e.spells-srd.Item.rfZpqmj0AIIdkVIs]{Heal}</p>"
+                },
+                "action->Healing Hands": {
+                    "name": "Healing Hands",
+                    "description": "<p>When Ordwi casts heal, she rolls 1d10s instead of d8s.</p>"
                 }
             }
         },
@@ -201,6 +266,17 @@
                 },
                 "action->-2 Status Vs. Evocation and Necromancy": {
                     "name": "-2 Status Vs. Evocation and Necromancy"
+                },
+                "action->Confiscate Spell": {
+                    "name": "Confiscate Spell",
+                    "description": "<p><strong>Trigger</strong> A creature within 30 feet that the primordial envy can sense Casts a Spell</p>\n<hr />\n<p><strong>Effect</strong> The primordial envy's surface shimmers with a kaleidoscope of color that shines out to illuminate the triggering creature. The primordial envy attempts to counter the spell, with a counteract modifier of [[/r 1d20+12 #Counteract]]{+12}. On a success, the spell is countered and the primordial envy gains [[/br 2d6 #Temp HP]] temporary Hit Points.</p>"
+                },
+                "action->Spell Drain": {
+                    "name": "Spell Drain",
+                    "description": "<p>The primordial envy attempts to drain magic from a spellcasting creature that it has @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed} or @UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{Restrained}. The spellcasting creature must attempt a @Check[will|dc:20] save.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected and is temporarily immune to Spell Drain for 24 hours.</p>\n<p><strong>Success</strong> The creature takes @Damage[1d6[mental]] damage.</p>\n<p><strong>Failure</strong> The creature takes @Damage[2d6[mental]] damage and becomes @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 1} for 1 hour.</p>\n<p><strong>Critical Failure</strong> As failure, but one of the creature's uncast spells or unused spell slots is lost, as if they had cast it. The spell or slot lost is one of the highest-rank spells the creature can cast, determined randomly if multiple prepared spells are available. If a cantrip is drained, the spellcaster loses access to that cantrip for 10 minutes. The primordial envy becomes @UUID[Compendium.pf2e.conditionitems.Item.nlCjDvLMf2EkV2dl]{Quickened} 1 for 1 round, and can use the extra action to Stride or Strike.</p>"
+                },
+                "action->Grab": {
+                    "name": "Grab"
                 }
             }
         },
@@ -239,6 +315,13 @@
                 },
                 "action->Void Healing": {
                     "name": "Void Healing"
+                },
+                "action->Rust Creep": {
+                    "name": "Rust Creep",
+                    "description": "<p>Those afflicted by rust creep develop uncomfortable rust-colored bruises on their flesh and endure full-body aches like those one might experience after a long workout. As the affliction progresses, their bodies\u2014as well as the clothing and items they wear or carry\u2014increasingly break down until a painful death occurs. If a character successfully resists contracting rust creep, or recovers from a case of rust creep, they are temporarily immune to future rust creep infections for 24 hours.</p>\n<p><strong>Saving Throw</strong> @Check[fortitude|dc:15]</p>\n<p><strong>Stage 1</strong> \u20131 status penalty to Athletics checks (1 day)</p>\n<p><strong>Stage 2</strong> as stage 1 (1 day)</p>\n<p><strong>Stage 3</strong> @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 1} (1 day)</p>\n<p><strong>Stage 4</strong> enfeebled 1 and @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 1}, plus any armor, clothing and items you carry and that are of a level equal to or less than the disease become broken as the decay spreads to them (1 day; broken items remain broken)</p>\n<p><strong>Stage 5</strong> @UUID[Compendium.pf2e.conditionitems.Item.fBnFDH2MTzgFijKf]{Unconscious} (1 day)</p>\n<p><strong>Stage 6</strong> unconscious (1 day)</p>\n<p><strong>Stage 7</strong> death</p>"
+                },
+                "action->Grab": {
+                    "name": "Grab"
                 }
             }
         },
@@ -325,6 +408,14 @@
                 },
                 "action->Void Healing": {
                     "name": "Void Healing"
+                },
+                "action->Gnash": {
+                    "name": "Gnash",
+                    "description": "<p><strong>Requirements</strong> The beheaded's previous action was a jaws Strike that dealt damage to its target.</p>\n<hr />\n<p><strong>Effect</strong> The severed head makes a second jaws Strike as it violently shakes itself, trying to rip away a mouthful of flesh. On a success, the target takes an additional 1d4 slashing damage and 1 persistent bleed damage and is exposed to rust creep.</p>"
+                },
+                "action->Rust Creep": {
+                    "name": "Rust Creep",
+                    "description": "<p>These undead inflict rust creep with their jaws Strikes. A creature damaged by a jaws Strike or a Gnash from one of these severed heads must succeed at a DC 15 Fortitude save or contract rust creep.</p>\n<p>Those afflicted by rust creep develop uncomfortable rust-colored bruises on their flesh and endure full-body aches like those one might experience after a long workout. As the affliction progresses, their bodies\u2014as well as the clothing and items they wear or carry\u2014increasingly break down until a painful death occurs. If a character successfully resists contracting rust creep, or recovers from a case of rust creep, they are temporarily immune to future rust creep infections for 24 hours.</p>\n<hr />\n<p><strong>Rustcreep</strong></p>\n<p><strong>Saving Throw</strong> @Check[fortitude|dc:15]</p>\n<p><strong>Stage 1</strong> \u20131 status penalty to Athletics checks (1 day)</p>\n<p><strong>Stage 2</strong> as stage 1 (1 day)</p>\n<p><strong>Stage 3</strong> @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 1} (1 day)</p>\n<p><strong>Stage 4</strong> enfeebled 1 and @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 1}, plus any armor, clothing and items you carry and that are of a level equal to or less than the disease become broken as the decay spreads to them (1 day; broken items remain broken)</p>\n<p><strong>Stage 5</strong> @UUID[Compendium.pf2e.conditionitems.Item.fBnFDH2MTzgFijKf]{Unconscious} (1 day)</p>\n<p><strong>Stage 6</strong> unconscious (1 day)</p>\n<p><strong>Stage 7</strong> death</p>"
                 }
             }
         },
@@ -396,6 +487,10 @@
                 },
                 "action->Void Healing": {
                     "name": "Void Healing"
+                },
+                "action->Rust Creep": {
+                    "name": "Rust Creep",
+                    "description": "<p>Those afflicted by rust creep develop uncomfortable rust-colored bruises on their flesh and endure full-body aches like those one might experience after a long workout. As the affliction progresses, their bodies\u2014as well as the clothing and items they wear or carry\u2014increasingly break down until a painful death occurs. If a character successfully resists contracting rust creep, or recovers from a case of rust creep, they are temporarily immune to future rust creep infections for 24 hours.</p>\n<p><strong>Saving Throw</strong> @Check[fortitude|dc:15]</p>\n<p><strong>Stage 1</strong> \u20131 status penalty to Athletics checks (1 day)</p>\n<p><strong>Stage 2</strong> as stage 1 (1 day)</p>\n<p><strong>Stage 3</strong> @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 1} (1 day)</p>\n<p><strong>Stage 4</strong> enfeebled 1 and @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 1}, plus any armor, clothing and items you carry and that are of a level equal to or less than the disease become broken as the decay spreads to them (1 day; broken items remain broken)</p>\n<p><strong>Stage 5</strong> @UUID[Compendium.pf2e.conditionitems.Item.fBnFDH2MTzgFijKf]{Unconscious} (1 day)</p>\n<p><strong>Stage 6</strong> unconscious (1 day)</p>\n<p><strong>Stage 7</strong> death</p>"
                 }
             }
         },
@@ -409,6 +504,9 @@
                 "action->Smith's Fury": {
                     "name": "Smith's Fury",
                     "description": "<p>Trygve deals an additional 1d6 bludgeoning damage on a critical hit when he Strikes with his light hammer.</p>"
+                },
+                "lore->Smithing Lore": {
+                    "name": "Smithing Lore"
                 }
             }
         },
@@ -440,6 +538,26 @@
                 },
                 "action->+1 Status to All Saves vs. Magic": {
                     "name": "+1 Status to All Saves vs. Magic"
+                },
+                "action->Restoration Vulnerability": {
+                    "name": "Restoration Vulnerability",
+                    "description": "<p>A vloriak suffers agonizing pain when a creature or object recovers from a debilitating effect in its proximity. The first time in a round in which a creature who is affected by a negative condition and is within sight of the demon reduces that condition's value, the demon takes @Damage[3d6[mental]] damage and cannot Lick Rust on its next turn.</p>"
+                },
+                "action->Lick Rust": {
+                    "name": "Lick Rust",
+                    "description": "<p><strong>Requirements</strong> The vloriak rusted a metal item with its tongue this turn</p><hr /><p><strong>Effect</strong> The vloriak attempts a tongue Strike on the same target it just attacked. If it hits, it deals no damage as it licks away the rust and heals @Damage[2d6[healing]] Hit Points (or @Damage[4d6[healing]] Hit Points if the Strike was a critical hit). It can't Lick Rust on its next turn.</p>"
+                },
+                "action->Rust": {
+                    "name": "Rust",
+                    "description": "<p>A vloriak's saliva causes metal to rust rapidly. If it succeeds at a tongue Strike or @UUID[Compendium.pf2e.actionspf2e.Item.Dt6B1slsBy8ipJu9]{Disarm} attempt, the vloriak deals @Damage[2d6[untyped]] damage (doubled on a critical hit) to a metal item the target is wearing or holding, ignoring its Hardness. If the vloriak hits an unattended metal item, the item takes this damage automatically. If a creature uses the Shield Block reaction with a metal shield against a tongue attack, the shield is automatically broken, but no other item is rusted on that attack.</p>"
+                },
+                "action->Spew Rusted Shards": {
+                    "name": "Spew Rusted Shards",
+                    "description": "<p>The vloriak spews a @Template[cone|distance:15] of acid and rusted metal. Creatures in the area take @Damage[3d6[acid],3d6[piercing]]{3d6 acid and 3d6 piercing} damage (@Check[reflex|dc:22|basic] save). A creature that takes any piercing damage is exposed to tetanus. The vloriak can't Spew Rusted Shards for [[/br 1d4 #rounds]]{1d4 rounds}.</p>"
+                },
+                "action->Tetanus": {
+                    "name": "Tetanus",
+                    "description": "<p>An infection introduced through open wounds, tetanus can produce stiffness, muscle spasms strong enough to break bones, and ultimately death.</p>\n<p><strong>Saving Throw</strong> @Check[fortitude|dc:14]</p>\n<p><strong>Onset</strong> 10 days</p>\n<p><strong>Stage 1</strong> @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 1} (1 week)</p>\n<p><strong>Stage 2</strong> @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 2} and can't speak (1 day)</p>\n<p><strong>Stage 3</strong> @UUID[Compendium.pf2e.conditionitems.Item.6uEgoh53GbXuHpTF]{Paralyzed} with spasms (1 day)</p>\n<p><strong>Stage 4</strong> death</p>"
                 }
             }
         },

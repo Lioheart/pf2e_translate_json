@@ -267,6 +267,14 @@
             "items": {
                 "action->Object Immunities (Except Spirit)": {
                     "name": "Object Immunities (Except Spirit)"
+                },
+                "action->Float": {
+                    "name": "Float",
+                    "description": "<p><strong>Trigger</strong> Combat begins with the creature it is attuned to</p><hr /><p><strong>Effect</strong> The blade begins to float in the air, then rolls initiative.</p>"
+                },
+                "action->Prone to Monologuing": {
+                    "name": "Prone to Monologuing",
+                    "description": "<p>If a PC uses an action to taunt Bloodmoon with a successful @Check[deception|dc:13], @Check[diplomacy|dc:13], or @Check[intimidation|dc:13] check, Bloodmoon must spend an action monologuing on the next turn.</p>"
                 }
             }
         },
@@ -309,6 +317,14 @@
                 "weapon->Bloodletting Kukri": {
                     "name": "Bloodletting Kukri",
                     "description": "<p>This <em>+1 striking kukri</em> has a crimson blade that shimmers eerily in bright light. On a critical hit, the kukri deals 1d8 persistent bleed damage. If the target didn't already have persistent bleed damage when you scored the critical hit, you also gain [[/r 1d8]] temporary Hit Points for 1 minute.</p>"
+                },
+                "weapon->Scimitar": {
+                    "name": "Scimitar",
+                    "description": "<p>This one-handed curved blade is sharp on one side.</p>"
+                },
+                "armor->Leather Armor": {
+                    "name": "Leather Armor",
+                    "description": "<p>A mix of flexible and molded boiled leather, a suit of this type of armor provides some protection with maximum flexibility.</p>"
                 }
             }
         },
@@ -520,7 +536,34 @@
             "items": {
                 "action->Armored Apotheosis": {
                     "name": "Armored Apotheosis",
-                    "description": "<p>When it is first encountered, the divine oozeshard is in a lumpy, vaguely spherical ooze form. When it takes damage from any weapon attack, it suddenly reshapes, taking a form almost identical to the dead deity Gorum. The ooze hardens into armored plates (increasing its AC by +8) and its pseudopod transforms into a massive, acid-dripping greatsword. While in this form, it loses its pseudopod attack and its immunity to bludgeoning and precision damage. It cannot use its constrict or engulf abilities, and any creature currently engulfed by it is spat out into an adjacent random square, taking @Damage[1d8[acid],1d8[slashing]]{1d8 acid damage and 1d8 slashing} damage. It gains the Reactive Strike reaction. If it is critically hit by a Strike or critically fails a save against an effect that deals Hit Point damage to it, the divine oozeshard reverts back into its ooze form.</p>"
+                    "description": "<p>When it is first encountered, the divine oozeshard is in a lumpy, vaguely spherical ooze form. When it takes damage from any weapon attack, it suddenly reshapes, taking a form almost identical to the dead deity Gorum. The ooze hardens into armored plates (increasing its AC by +8) and its pseudopod transforms into a massive, acid-dripping greatsword. While in this form, it loses its pseudopod attack and its immunity to bludgeoning and precision damage. It cannot use its constrict or engulf abilities, and any creature currently engulfed by it is spat out into an adjacent random square, taking @Damage[1d8[acid],1d8[slashing]]{1d8 acid damage and 1d8 slashing} damage. It gains the Reactive Strike reaction. If it is critically hit by a Strike or critically fails a save against an effect that deals Hit Point damage to it, the divine oozeshard reverts back into its ooze form.</p>",
+                    "rules": {
+                        "4": {
+                            "text": "@Localize[PF2E.NPC.Abilities.Glossary.Grab]"
+                        }
+                    }
+                },
+                "action->Reactive Strike (Armored Apotheosis Only)": {
+                    "name": "Reactive Strike (Armored Apotheosis Only)"
+                },
+                "action->Constrict (Ooze Form Only)": {
+                    "name": "Constrict (Ooze Form Only)",
+                    "description": "<p>@Damage[(1d8+10)[bludgeoning],1d12[acid]], @Check[fortitude|dc:29|basic]</p><hr /><p>@Localize[PF2E.NPC.Abilities.Glossary.Constrict]</p>"
+                },
+                "action->Engulf (Ooze Form Only)": {
+                    "name": "Engulf (Ooze Form Only)",
+                    "description": "<p>@Check[reflex|dc:25], @Damage[3d8[acid]] damage, Escape DC 25, Rupture 22</p><hr /><p>@Localize[PF2E.NPC.Abilities.Glossary.Engulf]</p>"
+                },
+                "action->Gorumite Echoes": {
+                    "name": "Gorumite Echoes",
+                    "description": "<p>While in its armored apotheosis form, the divine oozeshard deals an additional 1d8 bleed damage and makes the target @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} for 1 round whenever it critically hits with its greatsword.</p>"
+                },
+                "action->Spawn Oozeshardling Node": {
+                    "name": "Spawn Oozeshardling Node",
+                    "description": "<p>Whenever the divine oozeshard takes 55 or more damage from a single attack, it spawns a sparking oozeshardling node in an adjacent square. The sparking oozeshardling node's electric pulse reaction immediately activates and then the sparking oozeshardling node enters initiative at the bottom of the current initiative count.</p>"
+                },
+                "action->Grab": {
+                    "name": "Grab"
                 }
             }
         },
@@ -673,6 +716,14 @@
             "items": {
                 "action->Object Immunities (Except Spirit)": {
                     "name": "Object Immunities (Except Spirit)"
+                },
+                "action->Float": {
+                    "name": "Float",
+                    "description": "<p><strong>Trigger</strong> Combat begins with the creature it is attuned to</p><hr /><p><strong>Effect</strong> The blade begins to float in the air, then rolls initiative.</p>"
+                },
+                "action->Prone to Monologuing": {
+                    "name": "Prone to Monologuing",
+                    "description": "<p>If a PC uses an action to taunt Bloodmoon with a successful @Check[deception|dc:15], @Check[diplomacy|dc:15], or @Check[intimidation|dc:15] check, Bloodmoon must spend an action monologuing on the next turn.</p>"
                 }
             }
         },
@@ -684,6 +735,14 @@
             "items": {
                 "action->Object Immunities (Except Spirit)": {
                     "name": "Object Immunities (Except Spirit)"
+                },
+                "action->Float": {
+                    "name": "Float",
+                    "description": "<p><strong>Trigger</strong> Combat begins with the creature it is attuned to</p><hr /><p><strong>Effect</strong> The blade begins to float in the air, then rolls initiative.</p>"
+                },
+                "action->Prone to Monologuing": {
+                    "name": "Prone to Monologuing",
+                    "description": "<p>If a PC uses an action to taunt Bloodmoon with a successful @Check[deception|dc:18], @Check[diplomacy|dc:18], or @Check[intimidation|dc:18] check, Bloodmoon must spend an action monologuing on the next turn.</p>"
                 }
             }
         },
@@ -1141,7 +1200,34 @@
             "items": {
                 "action->Armored Apotheosis": {
                     "name": "Armored Apotheosis",
-                    "description": "<p>When it is first encountered, the oozeshard is in a lumpy, vaguely spherical ooze form. When it takes damage from any weapon attack, it suddenly reshapes, taking a form almost identical to the dead deity Gorum. The ooze hardens into armored plates (increasing its AC by +8) and its pseudopod transforms into a massive, acid-dripping greatsword. While in this form, it loses its pseudopod attack and its immunity to bludgeoning and precision damage. It cannot use its constrict or engulf abilities, and any creature currently engulfed by it is spat out into an adjacent random square, taking @Damage[1d4[acid],1d4[slashing]]{1d4 acid damage and 1d4 slashing} damage. It gains the Reactive Strike reaction. If it is critically hit by a Strike or critically fails a save against an effect that deals Hit Point damage to it, the oozeshard reverts back into its ooze form.</p>"
+                    "description": "<p>When it is first encountered, the oozeshard is in a lumpy, vaguely spherical ooze form. When it takes damage from any weapon attack, it suddenly reshapes, taking a form almost identical to the dead deity Gorum. The ooze hardens into armored plates (increasing its AC by +8) and its pseudopod transforms into a massive, acid-dripping greatsword. While in this form, it loses its pseudopod attack and its immunity to bludgeoning and precision damage. It cannot use its constrict or engulf abilities, and any creature currently engulfed by it is spat out into an adjacent random square, taking @Damage[1d4[acid],1d4[slashing]]{1d4 acid damage and 1d4 slashing} damage. It gains the Reactive Strike reaction. If it is critically hit by a Strike or critically fails a save against an effect that deals Hit Point damage to it, the oozeshard reverts back into its ooze form.</p>",
+                    "rules": {
+                        "4": {
+                            "text": "@Localize[PF2E.NPC.Abilities.Glossary.Grab]"
+                        }
+                    }
+                },
+                "action->Reactive Strike (Armored Apotheosis Only)": {
+                    "name": "Reactive Strike (Armored Apotheosis Only)"
+                },
+                "action->Constrict (Ooze Form Only)": {
+                    "name": "Constrict (Ooze Form Only)",
+                    "description": "<p>@Damage[(1d8+7)[bludgeoning],1d10[acid]], @Check[fortitude|dc:27|basic]</p><hr /><p>@Localize[PF2E.NPC.Abilities.Glossary.Constrict]</p>"
+                },
+                "action->Engulf (Ooze Form Only)": {
+                    "name": "Engulf (Ooze Form Only)",
+                    "description": "<p>@Check[reflex|dc:23], @Damage[2d8[acid]] damage, Escape DC 23, Rupture 20</p><hr /><p>@Localize[PF2E.NPC.Abilities.Glossary.Engulf]</p>"
+                },
+                "action->Gorumite Echoes": {
+                    "name": "Gorumite Echoes",
+                    "description": "<p>While in its armored apotheosis form, the oozeshard deals an additional 1d6 bleed damage and makes the target @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} for 1 round when it critically hits with its greatsword.</p>"
+                },
+                "action->Spawn Oozeshardling Node": {
+                    "name": "Spawn Oozeshardling Node",
+                    "description": "<p>Whenever the oozeshard takes 45 or more damage from a single attack, it spawns an oozeshardling node in an adjacent square. The oozeshardling node's electric pulse reaction immediately activates, and then the oozeshardling node enters initiative at the bottom of the current initiative count.</p>"
+                },
+                "action->Grab": {
+                    "name": "Grab"
                 }
             }
         },
@@ -1302,6 +1388,14 @@
                 "weapon->Bloodletting Kukri": {
                     "name": "Bloodletting Kukri",
                     "description": "<p>This <em>+1 striking kukri</em> has a crimson blade that shimmers eerily in bright light. On a critical hit, the kukri deals 1d8 persistent bleed damage. If the target didn't already have persistent bleed damage when you scored the critical hit, you also gain [[/r 1d8]] temporary Hit Points for 1 minute.</p>"
+                },
+                "weapon->Scimitar": {
+                    "name": "Scimitar",
+                    "description": "<p>This one-handed curved blade is sharp on one side.</p>"
+                },
+                "armor->Leather Armor": {
+                    "name": "Leather Armor",
+                    "description": "<p>A mix of flexible and molded boiled leather, a suit of this type of armor provides some protection with maximum flexibility.</p>"
                 }
             }
         },
@@ -1641,6 +1735,13 @@
                 "action->Slow": {
                     "name": "Slow",
                     "description": "<p>A zombie crow swarm is permanently @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed} and can't use reactions.</p>"
+                },
+                "action->Void Healing": {
+                    "name": "Void Healing"
+                },
+                "action->Swarming Pecks": {
+                    "name": "Swarming Pecks",
+                    "description": "<p>Each enemy in the swarm's space takes @Damage[1d8[piercing]] damage (@Check[reflex|dc:17|basic] save)</p>"
                 }
             }
         },
@@ -1651,6 +1752,13 @@
                 "action->Slow": {
                     "name": "Slow",
                     "description": "<p>A zombie crow swarm is permanently @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed} and can't use reactions.</p>"
+                },
+                "action->Void Healing": {
+                    "name": "Void Healing"
+                },
+                "action->Swarming Pecks": {
+                    "name": "Swarming Pecks",
+                    "description": "<p>Each enemy in the swarm's space takes @Damage[1d6[piercing]] damage (@Check[reflex|dc:16|basic] save)</p>"
                 }
             }
         },
@@ -1710,11 +1818,6 @@
         "speedsDetails": "system.attributes.speed.details",
         "sensesDetails": "system.perception.details",
         "languagesDetails": "system.details.languages.details",
-        "descriptionHazard": "system.details.description",
-        "disable": "system.details.disable",
-        "reset": "system.details.reset",
-        "routine": "system.details.routine",
-        "stealth": "system.attributes.stealth.details",
         "items": {
             "converter": "translateActorItems",
             "path": "items"
@@ -1722,6 +1825,11 @@
         "rules": {
             "converter": "translateRules",
             "path": "system.rules"
-        }
+        },
+        "descriptionHazard": "system.details.description",
+        "disable": "system.details.disable",
+        "reset": "system.details.reset",
+        "routine": "system.details.routine",
+        "stealth": "system.attributes.stealth.details"
     }
 }

@@ -14,6 +14,31 @@
                 "equipment->Healer's Toolkit (Expanded)": {
                     "name": "Healer's Toolkit (Expanded)",
                     "description": "<p>This kit of bandages, herbs, and suturing tools is necessary for Medicine checks to @UUID[Compendium.pf2e.actionspf2e.Item.MHLuKy4nQO2Z4Am1]{Administer First Aid}, @UUID[Compendium.pf2e.actionspf2e.Item.TC7OcDa7JlWbqMaN]{Treat Disease}, @UUID[Compendium.pf2e.actionspf2e.Item.KjoCEEmPGTeFE4hh]{Treat Poison}, or @UUID[Compendium.pf2e.actionspf2e.Item.1kGNdIIhuglAjIp9]{Treat Wounds}. Expanded healer's toolkits provide a +1 item bonus to such checks. If you wear your healer's toolkit, you can draw and replace it as part of the action that uses it.</p>"
+                },
+                "equipment->Religious Symbol (Silver)": {
+                    "name": "Religious Symbol (Silver)",
+                    "description": "<p>This piece of wood or silver is emblazoned with an image representing a deity. Some divine spellcasters, such as clerics, can use a religious symbol of their deity to use certain abilities and cast some spells. A religious symbol can be worn on the body on a chain or pin, or can be held.</p>"
+                },
+                "consumable->Scroll of Heal (Rank 1)": {
+                    "name": "Scroll of Heal (Rank 1)",
+                    "description": "<p>@UUID[Compendium.pf2e.spells-srd.Item.rfZpqmj0AIIdkVIs]{Heal}</p><hr /><p>Casting a Spell from a scroll requires holding the scroll in one hand and activating it with a Cast a Spell activity using the normal number of actions for that spell.</p>\n<p>The spell must appear on your spell list. Because you're the one Casting the Spell, use your spell attack modifier and spell DC. The spell also gains the appropriate trait for your tradition (arcane, divine, occult, or primal).</p>\n<p>Any physical costs are provided when a scroll is created, so you don't need to provide them when casting from a scroll. If the spell requires a locus, you must have that locus to Cast the Spell from a scroll.</p>\n<hr />\n<p><em>Note: To create a scroll or wand of a specific spell, drag the spell from the compendium or compendium browser into the inventory of a PC, NPC, or loot actor.</em></p>"
+                },
+                "consumable->Scroll of Cleanse Affliction (Rank 2)": {
+                    "name": "Scroll of Cleanse Affliction (Rank 2)",
+                    "description": "<p>@UUID[Compendium.pf2e.spells-srd.Item.SUKaxVZW2TlM8lu0]{Cleanse Affliction}</p><hr /><p>Casting a Spell from a scroll requires holding the scroll in one hand and activating it with a Cast a Spell activity using the normal number of actions for that spell.</p>\n<p>The spell must appear on your spell list. Because you're the one Casting the Spell, use your spell attack modifier and spell DC. The spell also gains the appropriate trait for your tradition (arcane, divine, occult, or primal).</p>\n<p>Any physical costs are provided when a scroll is created, so you don't need to provide them when casting from a scroll. If the spell requires a locus, you must have that locus to Cast the Spell from a scroll.</p>\n<hr />\n<p><em>Note: To create a scroll or wand of a specific spell, drag the spell from the compendium or compendium browser into the inventory of a PC, NPC, or loot actor.</em></p>"
+                },
+                "strike-melee->Starknife": {
+                    "name": "Starknife"
+                },
+                "strike-ranged->Starknife": {
+                    "name": "Starknife"
+                },
+                "action->Communal Healing Hands": {
+                    "name": "Communal Healing Hands",
+                    "description": "<p>When Abstalar casts heal, he rolls d10s instead of d8s. When he casts heal to heal a single creature other than himself, he regains Hit Points equal to the spell level of the heal spell.</p>"
+                },
+                "lore->Sandpoint Lore": {
+                    "name": "Sandpoint Lore"
                 }
             }
         },
@@ -30,6 +55,22 @@
                 "action->Change Shape": {
                     "name": "Change Shape",
                     "description": "<p>Human with fist +18 for 1d4+5 bludgeoning, or Small rat with Speed 30 feet, climb Speed 10 feet</p>\n<hr />\n<p>The werecreature changes into its humanoid, hybrid, or animal shape. Each shape has a specific, persistent appearance. A true werecreature's natural form is its hybrid shape.</p>\n<p>In humanoid shape, the werecreature uses its original humanoid size, loses its jaws and claws Strikes, and gains a melee fist Strike that deals bludgeoning damage equal to the slashing damage dealt by its claw.</p>\n<p>In animal shape, its Speed and size change to that of the animal, it gains any special Strike effects of the animal that it didn't already have (such as Grab), and it loses its weapon Strikes.</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.ChangeShape]</p>"
+                },
+                "action->Curse of the Wererat": {
+                    "name": "Curse of the Wererat",
+                    "description": "<p>This curse affects only humanoids.</p>\n<p><strong>Saving Throw</strong> @Check[fortitude|dc:26]</p>\n<hr />\n<p>On each full moon, the cursed creature must succeed at another Fortitude save or turn into a wererat until dawn.</p>\n<p>The creature is under the GM's control and goes on a rampage for half the night before falling unconscious until dawn.</p>"
+                },
+                "action->Moon Frenzy": {
+                    "name": "Moon Frenzy",
+                    "description": "<p>When a full moon appears in the night sky, the werecreature must enter hybrid form, can't Change Shape thereafter, becomes one size larger, increases its reach by 5 feet, and increases the damage of its jaws Strike by 2.</p>\n<p>When the moon sets or the sun rises, the werecreature returns to humanoid form and is @UUID[Compendium.pf2e.conditionitems.Item.HL2l2VRSaQHu9lUw]{Fatigued} for [[/br 2d4 #Fatigued duration]]{2d4 hours}.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.dRe8n1nBWMIXd8jh]{Effect: Moon Frenzy}</p>"
+                },
+                "action->Sneak Attack": {
+                    "name": "Sneak Attack",
+                    "description": "<p>Adimar's Strikes deal an additional 2d6 precision damage to @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} creatures.</p>"
+                },
+                "action->Unexpected Transformation": {
+                    "name": "Unexpected Transformation",
+                    "description": "<p><strong>Requirements</strong> Adimar is in human or rat form</p>\n<hr />\n<p><strong>Effect</strong> Adimar uses Change Shape to transform into his hybrid form and attempts to @UUID[Compendium.pf2e.actionspf2e.Item.2u915NdUyQan6uKF]{Demoralize} one target within 30 feet, gaining a +2 circumstance bonus to his Intimidation check to do so. All creatures who witness Adimar use Unexpected Transformation can't be Demoralized by future Unexpected Transformations for 24 hours.</p>"
                 }
             }
         },
@@ -40,6 +81,37 @@
                 "weapon->Frost Vial (Moderate)": {
                     "name": "Frost Vial (Moderate)",
                     "description": "<p><strong>Activate</strong> <span class=\"action-glyph\">1</span> Strike</p>\n<hr />\n<p>The liquid reagents in this vial rapidly absorb heat when exposed to air. A frost vial deals the listed cold damage and cold splash damage. On a hit, the target takes a status penalty to its Speeds until the end of its next turn. Many types of frost vial also grant an item bonus to attack rolls.</p>\n<p>You gain a +1 item bonus to attack rolls, the bomb deals 2d6 cold damage and 2 cold splash damage, and the target takes a -10-foot penalty.</p>\n<p>@UUID[Compendium.pf2e.equipment-effects.Item.dv0IKm5syOdP759w]{Effect: Frost Vial (Moderate)}</p>"
+                },
+                "consumable->Darkvision Elixir (Moderate)": {
+                    "name": "Darkvision Elixir (Moderate)",
+                    "description": "<p><strong>Activate</strong> <span class=\"action-glyph\">1</span> (manipulate)</p>\n<hr />\n<p>After you drink this elixir, your sight becomes sharper in darkness. You gain darkvision for 1 hour.</p>\n<p>@UUID[Compendium.pf2e.equipment-effects.Item.bcxVvIbuZWOvsKcA]{Effect: Darkvision Elixir (Moderate)}</p>"
+                },
+                "consumable->Bomber's Eye Elixir (Lesser)": {
+                    "name": "Bomber's Eye Elixir (Lesser)",
+                    "description": "<p><strong>Activate</strong> <span class=\"action-glyph\">A</span> (manipulate)</p>\n<hr />\n<p>This tincture lets you pinpoint your foes. For the next 5 minutes, your alchemical bomb Strikes reduce the circumstance bonus to AC your targets gain from cover by 1.</p>"
+                },
+                "consumable->Elixir of Life (Lesser)": {
+                    "name": "Elixir of Life (Lesser)",
+                    "description": "<p><strong>Activate</strong> <span class=\"action-glyph\">A</span> (manipulate)</p>\n<hr />\n<p>Elixirs of life accelerate a living creatures natural healing processes and immune system. Upon drinking this elixir, you regain @Damage[(3d6+6)[healing]] Hit Points and gain +1 item bonus to saving throws against diseases and poisons for 10 minutes.</p>\n<p>@UUID[Compendium.pf2e.equipment-effects.Item.lPRuIRbu0rHBkoKY]{Effect: Elixir of Life}</p>"
+                },
+                "strike-ranged->Frost Vial (Moderate)": {
+                    "name": "Frost Vial (Moderate)"
+                },
+                "action->Infused Items": {
+                    "name": "Infused Items",
+                    "description": "<p>@UUID[Compendium.pf2e.equipment-srd.Item.Y8115p3cmQJBqk5d]{Darkvision Elixir (Moderate)}, @UUID[Compendium.pf2e.equipment-srd.Item.T4ouD4mVFHA3EHs6]{Bomber's Eye Elixir (Lesser)} (2), @UUID[Compendium.pf2e.equipment-srd.Item.TZUskLT7yvP7N2co]{Elixir of Life (Lesser)} (4), @UUID[Compendium.pf2e.equipment-srd.Item.nVvH1ZcM7OwIVIs8]{Frost Vial (Moderate)} (8), @UUID[Compendium.pf2e.equipment-srd.Item.aBOPYlfHAcXUmhF7]{Giant Wasp Venom} (7)</p>"
+                },
+                "action->Foul Concoction": {
+                    "name": "Foul Concoction",
+                    "description": "<p><strong>Frequency</strong> once per day</p>\n<hr />\n<p><strong>Effect</strong> Aliver quickly mixes alchemical catalysts and materials together, creating a burst of foul-smelling smoke that fills a @Template[emanation|distance:10]. The cloud functions as @UUID[Compendium.pf2e.spells-srd.Item.GKpEcy9WId6NJvtx]{Stinking Cloud} (@Check[fortitude|dc:25]) except that Aliver is immune to the putrid stench created by the concoction.</p>"
+                },
+                "action->Precise Poisoning": {
+                    "name": "Precise Poisoning",
+                    "description": "<p>Aliver applies a dose of poison (typically a dose of @UUID[Compendium.pf2e.equipment-srd.Item.aBOPYlfHAcXUmhF7]{Giant Wasp Venom}) to a bolt on his crossbow, then takes careful aim with the poisoned bolt and attempts a ranged Strike with his hand crossbow. If he hits, he inflicts an additional 1d6 piercing damage with the bolt as well as the poison effect.</p>"
+                },
+                "action->Quick Bomber": {
+                    "name": "Quick Bomber",
+                    "description": "<p>Aliver Interacts to draw a bomb, then Strikes with it.</p>"
                 }
             }
         },
@@ -55,6 +127,25 @@
                 "action->Seek Quarry": {
                     "name": "Seek Quarry",
                     "description": "<p>Angry townsfolk can spend 1 minute to designate a single creature for whom they have a physical description as their quarry. They gain a +2 circumstance bonus to Perception against their quarry.</p>"
+                },
+                "action->Troop Defenses": {
+                    "name": "Troop Defenses",
+                    "description": "<p><strong>Thresholds</strong> 50 (12 squares), 25 (8 squares)</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.TroopDefenses]</p>"
+                },
+                "action->Pitchforks and Torches": {
+                    "name": "Pitchforks and Torches",
+                    "description": "<p><span class=\"action-glyph\">1</span> to <span class=\"action-glyph\">3</span></p>\n<p><strong>Frequency</strong> once per round.</p>\n<hr />\n<p><strong>Effect</strong> The angry townsfolk engage in a coordinated melee attack against each enemy within @Template[emanation|distance:10]{10 feet}, with a @Check[reflex|dc:19|basic] save. The damage depends on the number of actions.</p>\n<p><span class=\"action-glyph\">1</span> @Damage[1d10[piercing]] damage or @Damage[1d10[fire]] damage</p>\n<p><span class=\"action-glyph\">2</span> @Damage[(1d10+7)[piercing]] damage or @Damage[(1d10+7)[fire]] damage</p>\n<p><span class=\"action-glyph\">3</span> @Damage[(1d10+10)[piercing]] damage or @Damage[(1d10+10)[fire]] damage</p>"
+                },
+                "action->Troop Movement": {
+                    "name": "Troop Movement",
+                    "description": "<p>Whenever the city guards Stride, they first @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.OvqohW9YuahnFaiX]{Form Up} as a free action to condense into a 20-foot-by-20-foot area (minus any missing squares), then move up to their Speed.</p>\n<p>This works just like a Gargantuan creature moving; for instance, if any square of the guards enters difficult terrain, the extra movement cost applies to all the guards.</p>"
+                },
+                "action->Urban Chasers": {
+                    "name": "Urban Chasers",
+                    "description": "<p>Angry townsfolk ignore difficult terrain (but not greater difficult terrain) caused by crowds or from movement through narrow spaces such as alleyways.</p>"
+                },
+                "lore->Settlement Lore": {
+                    "name": "Settlement Lore"
                 }
             }
         },
@@ -71,6 +162,12 @@
                 "equipment->Maestro's Lute (Lesser)": {
                     "name": "Maestro's Lute (Lesser)",
                     "description": "<p>A <em>maestro's instrument</em> can be crafted in the form of any variety of handheld musical instruments. A <em>maestro's instrument</em> grants you a +1 item bonus to Performance checks while playing music with the instrument.</p><hr /><p><strong>Activate\u2014Charming Performance</strong> <span class=\"action-glyph\">2</span> (manipulate)</p>\n<p><strong>Frequency</strong> once per day</p>\n<p><strong>Effect</strong> You play the instrument, causing it to cast a DC 17 @UUID[Compendium.pf2e.spells-srd.Item.vLA0q0WOK2YPuJs6]{Charm} spell.</p><hr /><p><strong>Craft Requirements</strong> You must supply a casting of <em>charm</em> of the appropriate rank.</p>"
+                },
+                "strike-melee->Shortsword": {
+                    "name": "Shortsword"
+                },
+                "strike-ranged->Composite Shortbow": {
+                    "name": "Composite Shortbow"
                 }
             }
         },
@@ -81,6 +178,21 @@
                 "equipment->Religious Symbol": {
                     "name": "Religious Symbol",
                     "description": "<p>This piece of wood or silver is emblazoned with an image representing a deity. Some divine spellcasters, such as clerics, can use a religious symbol of their deity to use certain abilities and cast some spells. A religious symbol can be worn on the body on a chain or pin, or can be held.</p>"
+                },
+                "consumable->Healing Potion (Moderate)": {
+                    "name": "Healing Potion (Moderate)",
+                    "description": "<p><strong>Activate</strong> <span class=\"action-glyph\">A</span> (manipulate)</p>\n<hr />\n<p>A <em>healing potion</em> is a vial of a ruby-red liquid that imparts a tingling sensation as the drinker's wounds heal rapidly. When you drink a <em>healing potion</em>, you regain @Damage[(3d8+10)[healing]] Hit Points.</p>"
+                },
+                "action->Devil's Breath": {
+                    "name": "Devil's Breath",
+                    "description": "<p><strong>Frequency</strong> once per day</p>\n<hr />\n<p><strong>Effect</strong> The ascended disciple cuts their tongue with a slashing weapon held in a hand (taking @Damage[1[slashing]] damage), then exhales a @Template[cone|distance:15] of burning smoke. Each creature in the area must attempt a @Check[reflex|dc:22] save.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature takes @Damage[2d8[fire]] damage.</p>\n<p><strong>Failure</strong> The creature takes @Damage[4d8[fire]] damage and is @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 1} by the agonizing pain of the burns.</p>\n<p><strong>Critical Failure</strong> The creature takes @Damage[6d8[fire]] damage, is sickened 1 by the agonizing pain of the burns, and is @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 1} by the smoke for 1 minute.</p>"
+                },
+                "action->Sneak Attack": {
+                    "name": "Sneak Attack",
+                    "description": "<p>The creature's Strikes deal an additional 1d6 precision damage to @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} creatures.</p>"
+                },
+                "lore->Sandpoint Devil Lore": {
+                    "name": "Sandpoint Devil Lore"
                 }
             }
         },
@@ -97,6 +209,23 @@
                 "equipment->Religious Symbol": {
                     "name": "Religious Symbol",
                     "description": "<p>This piece of wood or silver is emblazoned with an image representing a deity. Some divine spellcasters, such as clerics, can use a religious symbol of their deity to use certain abilities and cast some spells. A religious symbol can be worn on the body on a chain or pin, or can be held.</p>"
+                },
+                "strike-melee->Machete": {
+                    "name": "Machete"
+                },
+                "strike-ranged->Shortbow": {
+                    "name": "Shortbow"
+                },
+                "action->Devil's Cursed Breath": {
+                    "name": "Devil's Cursed Breath",
+                    "description": "<p><strong>Frequency</strong> once per day</p>\n<hr />\n<p><strong>Effect</strong> Asmerelli bites down on her tongue (taking @Damage[1[slashing]] damage), then exhales a @Template[cone|distance:15] of burning smoke. Each creature in the area must attempt a @Check[reflex|dc:24] save.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature takes @Damage[3d8[fire]] damage.</p>\n<p><strong>Failure</strong> The creature takes @Damage[6d8[fire]] damage and is @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 1} by the agonizing pain of the burns.</p>\n<p><strong>Critical Failure</strong> The creature takes @Damage[6d8[fire]] damage, is sickened 1 by the agonizing pain of the burns, and becomes cursed. The victim's burns never fully vanish, and the cursed creature takes a \u20132 status penalty to all attacks from the constant pain. Healing doesn't alter the appearance of the burns or lessen the penalty, but removing the curse does.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.khL2A1slsnufpJp4]{Effect: Devil's Cursed Breath}</p>"
+                },
+                "action->Reach Spell": {
+                    "name": "Reach Spell",
+                    "description": "<p>If the next action Asmerelli takes is to Cast a Spell that has a range, increase that spell's range by 30 feet.</p>"
+                },
+                "lore->Sandpoint Devil Lore": {
+                    "name": "Sandpoint Devil Lore"
                 }
             }
         },
@@ -123,7 +252,9 @@
                     "name": "Clothing (High-Fashion Fine)",
                     "description": "<p>Fine clothing, suitable for a noble or royal, is made with expensive fabrics, precious metals, and intricate patterns. You gain a +1 item bonus to checks to Make an Impression on nobility or other upper-class folk while wearing high-fashion fine clothing.</p>",
                     "rules": {
-                        "0": "High-Fashion Clothes (Make an Impression on nobility)"
+                        "0": {
+                            "label": "High-Fashion Clothes (Make an Impression on nobility)"
+                        }
                     }
                 },
                 "equipment->Silver Flask": {
@@ -152,6 +283,9 @@
                 "action->Sneak Attack": {
                     "name": "Sneak Attack",
                     "description": "<p>The noble deals 1d6 extra precision damage to @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} creatures.</p>"
+                },
+                "lore->Gambling Lore": {
+                    "name": "Gambling Lore"
                 }
             }
         },
@@ -175,6 +309,22 @@
                 "action->Brutal Brawler": {
                     "name": "Brutal Brawler",
                     "description": "<p>Chertus can choose to inflict lethal damage with his fists, and increases the size of his damage die with fist attacks to 1d6. If he does so, on a critical hit, the target struck must succeed at a @Check[fortitude|dc:25] save or become @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned 1} by the staggering blow.</p>"
+                },
+                "action->Exacting Strike": {
+                    "name": "Exacting Strike",
+                    "description": "<p>Chertus makes a Strike. If he rolls a failure on this Strike, the attack doesn't count toward his multiple attack penalty.</p>"
+                },
+                "action->Lunge": {
+                    "name": "Lunge",
+                    "description": "<p>Chertus makes a Strike with his fist and increases his reach by 5 feet for this Strike.</p>"
+                },
+                "action->Pummeling Flurry": {
+                    "name": "Pummeling Flurry",
+                    "description": "<p>Chertus swings his fist in a pummeling arc, then makes a fist Strike and compares the attack roll result to the AC of up to two adjacent foes. He then rolls damage and applies it to each creature he hits. This counts as two attacks for his multiple attack penalty.</p>"
+                },
+                "action->Snatch Weapon": {
+                    "name": "Snatch Weapon",
+                    "description": "<p>Chertus attempts to @UUID[Compendium.pf2e.actionspf2e.Item.Dt6B1slsBy8ipJu9]{Disarm} a creature. If he knocks a weapon out of the opponent's grasp, Chertus wields the weapon and attempts a Strike against the opponent with the weapon. This counts as two attacks for his multiple attack penalty.</p>"
                 }
             }
         },
@@ -196,6 +346,29 @@
                 "action->Activate Serpent Mode": {
                     "name": "Activate Serpent Mode",
                     "description": "<p><strong>Trigger</strong> The clockwork serpent begins its turn</p>\n<hr />\n<p><strong>Effect</strong> The clockwork serpent transforms into a different mode. Roll 1d3 and consult the options below. If it rolls a mode it can't currently activate, the clockwork serpent becomes @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 1} until the start of its next turn. At the end of its turn, it automatically deactivates its serpent mode.</p>\n<p><strong>1 Cobra Mode</strong> The clockwork serpent can use Intimidating Hood.</p>\n<p><strong>2 Constrictor Mode</strong> The clockwork serpent can use its coils Strike and can Constrict.</p>\n<p><strong>3 Rattlesnake Mode</strong> The clockwork serpent can use Shattering Rattle.</p>"
+                },
+                "action->Critical Deactivation": {
+                    "name": "Critical Deactivation",
+                    "description": "<p>If a clockwork serpent takes any precision damage or takes a critical hit and it has a serpent mode active, it must attempt a @Check[flat|dc:16]. On a failure, it takes the damage from the critical hit as normal, is @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned 1}, and its serpent mode deactivates.</p>"
+                },
+                "action->Clockwork Serpent Venom": {
+                    "name": "Clockwork Serpent Venom",
+                    "description": "<p><strong>Saving Throw</strong> @Check[fortitude|dc:26]</p>\n<p><strong>Maximum Duration</strong> 6 rounds</p>\n<p><strong>Stage 1</strong> @Damage[2d6[poison]] damage and @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} (1 round)</p>\n<p><strong>Stage 2</strong> @Damage[2d6[poison]] damage, @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 1}, and off-guard (1 round)</p>"
+                },
+                "action->Constrict": {
+                    "name": "Constrict",
+                    "description": "<p>@Damage[(2d10+6)[bludgeoning]], @Check[fortitude|dc:26|basic]</p>\n<p><strong>Requirements</strong> The clockwork serpent is in constrictor mode</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Constrict]</p>"
+                },
+                "action->Intimidating Hood": {
+                    "name": "Intimidating Hood",
+                    "description": "<p><strong>Requirements</strong> The clockwork serpent is in cobra mode</p>\n<hr />\n<p><strong>Effect</strong> The clockwork serpent flares out a cobra hood. All creatures within a @Template[emanation|distance:15] must succeed at a @Check[will|dc:26] save or become @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 1} (@UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 2} on a critical failure).</p>"
+                },
+                "action->Shattering Rattle": {
+                    "name": "Shattering Rattle",
+                    "description": "<p><strong>Requirements</strong> The clockwork serpent is in rattlesnake mode</p>\n<hr />\n<p><strong>Effect</strong> The clockwork serpent rattles its tail, then snaps it like a whip to create a devastating blast of sonic energy in a @Template[cone|distance:30]. Creatures in the area take @Damage[9d6[sonic]] damage (@Check[fortitude|dc:26|basic] save).</p>"
+                },
+                "action->Grab": {
+                    "name": "Grab"
                 }
             }
         },
@@ -225,6 +398,26 @@
                 },
                 "action->+1 Status to All Saves vs. Magic": {
                     "name": "+1 Status to All Saves vs. Magic"
+                },
+                "action->Filth Vulnerability": {
+                    "name": "Filth Vulnerability",
+                    "description": "<p>A coloxus despises contact with filth and dirt. A small amount of filth held in the hand can be used against a coloxus as a Strike that has the thrown 5 feet trait, and that inflicts @Damage[2d6[mental]] damage on a hit. Forcing a coloxus to fall into or become immersed in filth deals @Damage[6d6[mental]] damage per round.</p>"
+                },
+                "action->Vanishing Words": {
+                    "name": "Vanishing Words",
+                    "description": "<p><strong>Trigger</strong> The coloxus rolls initiative with Deception or Diplomacy and can cast @UUID[Compendium.pf2e.spells-srd.Item.XXqE1eY3w3z6xJCB]{Invisibility}</p>\n<hr />\n<p><strong>Effect</strong> The coloxus casts 4th-rank <em>invisibility</em> on itself.</p>"
+                },
+                "action->Droning Wings": {
+                    "name": "Droning Wings",
+                    "description": "<p><strong>Frequency</strong> once per day</p>\n<hr />\n<p><strong>Effect</strong> The coloxus flutters its shimmering, gauzy wings and creates a mesmerizing display of color along with a sound-dampening buzzing drone. If the coloxus is @UUID[Compendium.pf2e.conditionitems.Item.zJxUflt9np0q4yML]{Invisible}, that effect ends and it becomes visible. All creatures within a @Template[emanation|distance:30] must succeed at a @Check[will|dc:29] save or become @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1} (@UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 2} on a critical failure) until the start of the coloxus's next turn. As long as Droning Wings continues, the coloxus gains immunity to sonic damage. The coloxus can Sustain Droning Wings for up to 1 minute.</p>"
+                },
+                "action->Siphon": {
+                    "name": "Siphon",
+                    "description": "<p>When a coloxus damages a creature with its jaws Strike, it siphons away the target's physical vitality and drinks from their sense of self-worth and confidence. The coloxus gains 10 temporary Hit Points, and the creature must succeed at a @Check[will|dc:32] save or become @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 1}. Further damage dealt by the coloxus increases the stupefied condition by 1 on a failed save to a maximum of @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 4}.</p>"
+                },
+                "action->Sneak Attack": {
+                    "name": "Sneak Attack",
+                    "description": "<p>The creature's Strikes deal an additional 2d6 precision damage to @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} creatures.</p>"
                 }
             }
         },
@@ -365,6 +558,9 @@
                 "action->Wing Flurry": {
                     "name": "Wing Flurry",
                     "description": "<p>The false devil's spiny wings don't afford it a typical melee option, but it can use them to scrape and slash at foes it flies by. The winged chupacabra attempts to @UUID[Compendium.pf2e.actionspf2e.Item.21WIfSu7Xd7uKqV8]{Tumble Through} an enemy's space. As it does so, it flaps its wings furiously, gaining a +2 circumstance bonus to its Acrobatics check. If it succeeds, it inflicts @Damage[4d6[slashing]] damage to the creature it Tumbled Through (or @Damage[8d6[slashing]] damage on a critical success).</p>"
+                },
+                "action->Grab": {
+                    "name": "Grab"
                 }
             }
         },
@@ -448,6 +644,35 @@
                 "action->Fungaltongue": {
                     "name": "Fungaltongue",
                     "description": "<p>A fungus tyrant can speak with all forms of fungus, be they fungal creatures or otherwise. Most normal fungi don't recognize details about creatures or know anything about the world beyond their immediate vicinity. A fungus tyrant gains a +3 circumstance bonus on all Deception, Diplomacy, or Intimidation checks made against fungus creatures.</p>"
+                },
+                "action->Constant Spells": {
+                    "name": "Constant Spells"
+                },
+                "action->+1 Status to All Saves vs. Magic": {
+                    "name": "+1 Status to All Saves vs. Magic"
+                },
+                "action->Create Spawn": {
+                    "name": "Create Spawn",
+                    "description": "<p>If a creature dies after being reduced to 0 HP by a fungus tyrant's Mind-Draining Kiss, the fungus tyrant can turn this victim into a spore thrall by donating some of their own fungal matter to the victim and leaving them to \"ripen\" within a patch of fungus for 24 hours. After this time, the creature is restored to life but gains the fungus trait and becomes a spore thrall. This prevents the creature's soul from continuing on to the afterlife in a similar manner to how undead are taken out of that cycle\u2014as such, those who hold that cycle sacred (particularly worshipers of Pharasma) regard spore thralls as bad as the undead, despite them being living creatures. If the new spore thrall is a lower level than its creator, then it's under the creator's control. If a fungus tyrant controls too many spore thralls at once (as determined by the GM), strong-willed spore thralls can free themselves by succeeding at a @Check[will|dc:28] save. Typically, a fungus tyrant avoids creating spore thralls out of fallen foes who are too powerful to control, for they're only too aware of the compulsion for revenge such victims might harbor for those who wrenched them from the afterlife.</p>"
+                },
+                "action->Grow Sporepod": {
+                    "name": "Grow Sporepod",
+                    "description": "<p>The fungus tyrant causes a human-sized pod of fungal material to burst out of the ground at any point they can see within 60 feet. Once created, a sporepod lasts for 1 minute, until the fungus tyrant moves more than 120 feet away from it, or until it's destroyed (AC 28, Hardness 10, 20 HP). The fungus tyrant cannot Grow a Sporepod again for [[/br 1d4 #Recharge Grow Sporepod]]{1d4 rounds}, but apart from this and a sporepod's 1 minute life, there is no hard limit to the number of sporepods a single fungus tyrant can have active at any one time.</p>"
+                },
+                "action->Mind-Draining Kiss": {
+                    "name": "Mind-Draining Kiss",
+                    "description": "<p><strong>Frequency</strong> once per round</p>\n<hr />\n<p><strong>Effect</strong> The fungus tyrant engages a creature they have @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed} in an act of passion in an attempt to drain its will and personality. The kiss makes the creature @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 1} or increases its stupefied condition by 1, to a maximum of 4. The creature takes @Damage[4d6[poison]] damage and must then succeed at a @Check[will|dc:28] save or be affected by a @UUID[Compendium.pf2e.spells-srd.Item.qwlh6aDgi86U3Q7H]{Suggestion} to remain immobile rather than trying to @UUID[Compendium.pf2e.actionspf2e.Item.SkZAQRkLLkmBQNB9]{Escape}.</p>"
+                },
+                "action->Sporestride": {
+                    "name": "Sporestride",
+                    "description": "<p>The fungus tyrant Steps into an adjacent sporepod and instantly teleports to any other active sporepod they've created, bursting out of the target sporepod and destroying it in the process.</p>"
+                },
+                "action->Sporewarp": {
+                    "name": "Sporewarp",
+                    "description": "<p>The fungus tyrant attempts a tentacle Strike but treats a sporepod of their choice within 120 feet that they can see as the point of origin of that tentacle Strike.</p>"
+                },
+                "action->Grab": {
+                    "name": "Grab"
                 }
             }
         },
@@ -479,6 +704,17 @@
                 "action->Power of the Haunt": {
                     "name": "Power of the Haunt",
                     "description": "<p>If a geist is within 100 feet of a haunt that isn't disabled or destroyed, they gain a +2 status bonus to AC and saving throws and deal an additional @Damage[1d6[void]] damage with bite Strikes. A creature that succeeds at a @Check[perception|dc:20|traits:action:seek] check to Seek or Recall Knowledge about the geist sees that the tendrils from the geist's cloak grow thicker and more agitated the closer it gets to the haunt.</p>"
+                },
+                "action->Void Healing": {
+                    "name": "Void Healing"
+                },
+                "action->Terrifying Laugh": {
+                    "name": "Terrifying Laugh",
+                    "description": "<p><strong>Frequency</strong> once per minute</p>\n<hr />\n<p><strong>Effect</strong> The geist unleashes soul-piercing laughter in a @Template[emanation|distance:20], lasting until the beginning of their next turn. Any creature in the area or entering it must succeed at a @Check[will|dc:26] save or be overcome with panicked laughter, becoming @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 2} (or @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 3} on a critical failure). A creature attempts only one save per Terrifying Laugh, and a creature that succeeds on its saving throw is temporarily immune for 24 hours.</p>"
+                },
+                "action->Wrath of the Haunt": {
+                    "name": "Wrath of the Haunt",
+                    "description": "<p><strong>Frequency</strong> once per round</p>\n<p><strong>Requirements</strong> The geist is within 100 feet of an active haunt</p>\n<hr />\n<p><strong>Effect</strong> The haunt feeds necromantic power into the geist, becoming inactive until the end of the geist's next turn and deactivating the power of the haunt aura until the haunt becomes active again. The edges of the geist's cloak transform into whip-like tendrils that appear to be made of fire and smoke and lash out at nearby creatures. Any living creature within 10 feet of the geist takes @Damage[4d10[fire],4d6[void]]{4d10 fire damage plus 4d6 void damage} (@Check[reflex|dc:28|basic] save).</p>"
                 }
             }
         },
@@ -493,6 +729,38 @@
                 "equipment->Religious Symbol of Kabriri": {
                     "name": "Religious Symbol of Kabriri",
                     "description": "<p>This piece of wood or silver is emblazoned with an image representing a deity. Some divine spellcasters, such as clerics, can use a religious symbol of their deity to use certain abilities and cast some spells. A religious symbol can be worn on the body on a chain or pin, or can be held.</p>"
+                },
+                "strike-melee->Jaws": {
+                    "name": "Jaws"
+                },
+                "strike-melee->Claw": {
+                    "name": "Claw"
+                },
+                "strike-melee->Flail": {
+                    "name": "Flail"
+                },
+                "action->Stench": {
+                    "name": "Stench",
+                    "description": "<p>10 feet. A creature entering the aura or starting its turn in the aura must succeed at a @Check[fortitude|dc:22] save or become @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 1} (plus @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1} as long as it's sickened on a critical failure).</p>\n<p>While within the aura, the creature takes a -2 circumstance penalty to saves against disease and to recover from the sickened condition. A creature that succeeds at its save is temporarily immune for 1 minute.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.wX9L6fbqVMLP05hn]{Effect: Stench}</p>"
+                },
+                "action->Void Healing": {
+                    "name": "Void Healing"
+                },
+                "action->Consume Flesh": {
+                    "name": "Consume Flesh",
+                    "description": "<p><strong>Requirements</strong> The ghast is adjacent to the corpse of a creature that died within the last hour.</p>\n<hr />\n<p><strong>Effect</strong> The ghast devours a chunk of the corpse and regains @Damage[5d6[healing]] Hit Points.</p>\n<p>It can regain Hit Points from any given corpse only once.</p>\n<p>A ghast cultist can also scoop up a handful of maggots to feed upon if they're adjacent to the large bowl in the middle of area <strong>J1</strong>.</p>"
+                },
+                "action->Ghast Fever": {
+                    "name": "Ghast Fever",
+                    "description": "<p><strong>Saving Throw</strong> @Check[fortitude|dc:25]</p>\n<hr />\n<p><strong>Stage 1</strong> carrier with no ill effect (1 day)</p>\n<p><strong>Stage 2</strong> @Damage[3d8[void]] damage and regains half as many Hit Points from all healing (1 day)</p>\n<p><strong>Stage 3</strong> as stage 2 (1 day)</p>\n<p><strong>Stage 4</strong> @Damage[3d8[void]] damage and gains no benefit from healing (1 day)</p>\n<p><strong>Stage 5</strong> as stage 4 (1 day)</p>\n<p><strong>Stage 6</strong> dead, and rises as a @UUID[Compendium.pf2e.pathfinder-bestiary.Actor.VC7rtYR4hLxwg7WZ]{Ghast} the next midnight</p>"
+                },
+                "action->Paralysis": {
+                    "name": "Paralysis",
+                    "description": "<p>Any living creature hit by a ghast's attack must succeed at a @Check[fortitude|dc:25] save or become @UUID[Compendium.pf2e.conditionitems.Item.6uEgoh53GbXuHpTF]{Paralyzed}. It can attempt a new save at the end of each of its turns, and the DC cumulatively decreases by 1 on each such save.</p>"
+                },
+                "action->Swift Leap": {
+                    "name": "Swift Leap",
+                    "description": "<p>The ghast jumps up to half its Speed. This movement doesn't trigger reactions.</p>"
                 }
             }
         },
@@ -532,6 +800,35 @@
                 "equipment->Religious Symbol (Bone)": {
                     "name": "Religious Symbol (Bone)",
                     "description": "<p>This piece of wood or silver is emblazoned with an image representing a deity. Some divine spellcasters, such as clerics, can use a religious symbol of their deity to use certain abilities and cast some spells. A religious symbol can be worn on the body on a chain or pin, or can be held.</p>"
+                },
+                "consumable->Wand of Fear (Rank 1)": {
+                    "name": "Wand of Fear (Rank 1)",
+                    "description": "<p>@UUID[Compendium.pf2e.spells-srd.Item.4koZzrnMXhhosn0D]{Fear}</p><hr /><p>This baton is about a foot long and contains a single spell. The appearance typically relates to the spell within.</p>\n<p><strong>Activate</strong> Cast a Spell</p>\n<p><strong>Frequency</strong> once per day, plus overcharge</p>\n<hr />\n<p><strong>Effect</strong> You Cast the Spell at the indicated rank.</p>\n<p><strong>Craft Requirements</strong> Supply a casting of the spell at the listed rank.</p>\n<hr />\n<p><em>Note: To create a scroll or wand of a specific spell, drag the spell from the compendium or compendium browser into the inventory of a PC, NPC, or loot actor.</em></p>"
+                },
+                "strike-melee->Jaws": {
+                    "name": "Jaws"
+                },
+                "strike-melee->Claw": {
+                    "name": "Claw"
+                },
+                "action->Void Healing": {
+                    "name": "Void Healing"
+                },
+                "action->Consume Flesh": {
+                    "name": "Consume Flesh",
+                    "description": "<p><strong>Requirements</strong> The ghoul is adjacent to the corpse of a creature that died within the last hour.</p>\n<hr />\n<p><strong>Effect</strong> The ghoul devours a chunk of the corpse and regains @Damage[3d6[healing]] Hit Points.</p>\n<p>It can regain Hit Points from any given corpse only once.</p>"
+                },
+                "action->Ghoul Fever": {
+                    "name": "Ghoul Fever",
+                    "description": "<p><strong>Saving Throw</strong> @Check[fortitude|dc:21]</p>\n<hr />\n<p><strong>Stage 1</strong> carrier with no ill effect (1 day)</p>\n<p><strong>Stage 2</strong> @Damage[2d6[void]] damage and regains half as many Hit Points from all healing (1 day)</p>\n<p><strong>Stage 3</strong> as stage 2 (1 day)</p>\n<p><strong>Stage 4</strong> @Damage[2d6[void]] damage and gains no benefit from healing (1 day)</p>\n<p><strong>Stage 5</strong> as stage 4 (1 day)</p>\n<p><strong>Stage 6</strong> dead, and rises as a @UUID[Compendium.pf2e.pathfinder-bestiary.Actor.LHHgGSs0ELCR4CYK]{Ghoul} the next midnight.</p>"
+                },
+                "action->Paralysis": {
+                    "name": "Paralysis",
+                    "description": "<p>Any living, non-elf creature hit by a ghoul's attack must succeed at a @Check[fortitude|dc:21] save or become @UUID[Compendium.pf2e.conditionitems.Item.6uEgoh53GbXuHpTF]{Paralyzed}. It can attempt a new save at the end of each of its turns, and the DC cumulatively decreases by 1 on each such save.</p>"
+                },
+                "action->Swift Leap": {
+                    "name": "Swift Leap",
+                    "description": "<p>The ghoul jumps up to half its Speed. This movement doesn't trigger reactions.</p>"
                 }
             }
         },
@@ -549,6 +846,22 @@
                 },
                 "action->Void Healing": {
                     "name": "Void Healing"
+                },
+                "action->Consume Flesh": {
+                    "name": "Consume Flesh",
+                    "description": "<p><strong>Requirements</strong> The ghoul is adjacent to the corpse of a creature that died within the last hour.</p>\n<hr />\n<p><strong>Effect</strong> The ghoul devours a chunk of the corpse and regains @Damage[1d6[healing]] Hit Points.</p>\n<p>It can regain Hit Points from any given corpse only once.</p>"
+                },
+                "action->Ghoul Fever": {
+                    "name": "Ghoul Fever",
+                    "description": "<p><strong>Saving Throw</strong> @Check[fortitude|dc:15]</p>\n<hr />\n<p><strong>Stage 1</strong> carrier with no ill effect (1 day)</p>\n<p><strong>Stage 2</strong> @Damage[2d6[void]] damage and regains half as many Hit Points from all healing (1 day)</p>\n<p><strong>Stage 3</strong> as stage 2 (1 day)</p>\n<p><strong>Stage 4</strong> @Damage[2d6[void]] damage and gains no benefit from healing (1 day)</p>\n<p><strong>Stage 5</strong> as stage 4 (1 day)</p>\n<p><strong>Stage 6</strong> dead, and rises as a @UUID[Compendium.pf2e.pathfinder-bestiary.Actor.LHHgGSs0ELCR4CYK]{Ghoul} the next midnight.</p>"
+                },
+                "action->Paralysis": {
+                    "name": "Paralysis",
+                    "description": "<p>Any living, non-elf creature hit by a ghoul's attack must succeed at a @Check[fortitude|dc:15] save or become @UUID[Compendium.pf2e.conditionitems.Item.6uEgoh53GbXuHpTF]{Paralyzed}. It can attempt a new save at the end of each of its turns, and the DC cumulatively decreases by 1 on each such save.</p>"
+                },
+                "action->Swift Leap": {
+                    "name": "Swift Leap",
+                    "description": "<p>The ghoul jumps up to half its Speed. This movement doesn't trigger reactions.</p>"
                 }
             }
         },
@@ -583,6 +896,16 @@
                 },
                 "action->+1 Status to All Saves vs. Magic": {
                     "name": "+1 Status to All Saves vs. Magic"
+                },
+                "action->+4 Status to All Saves vs. Mental": {
+                    "name": "+4 Status to All Saves vs. Mental"
+                },
+                "action->Attack of Opportunity": {
+                    "name": "Attack of Opportunity"
+                },
+                "action->Sinful Bite": {
+                    "name": "Sinful Bite",
+                    "description": "<p>A creature hit by the jaws of a sinspawn must attempt a @Check[will|dc:18] save as it is assailed by sinful thoughts.</p>\n<hr />\n<p><strong>Critical Success</strong> Unaffected</p>\n<p><strong>Success</strong> @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 1}</p>\n<p><strong>Failure</strong> @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 2}</p>\n<p><strong>Critical Failure</strong> sickened 2 plus @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 2} for 1 minute</p>"
                 }
             }
         },
@@ -601,6 +924,14 @@
                 "action->Hunt Prey": {
                     "name": "Hunt Prey",
                     "description": "<p>Gurlunk designates a single creature he can see or hear, and gains a +2 circumstance bonus to Perception checks to @UUID[Compendium.pf2e.actionspf2e.Item.BlAOM2X92SI6HMtJ]{Seek} and @UUID[Compendium.pf2e.actionspf2e.Item.EA5vuSgJfiHH7plD]{Track} that prey. He can only have one creature so designated at a time, and if he selects a new hunted prey, the previous designation ends.</p>"
+                },
+                "action->Hunter's Edge": {
+                    "name": "Hunter's Edge",
+                    "description": "<p>Gurlunk deals an additional 1d8 precision damage the first time he hits his hunted prey in a round.</p>"
+                },
+                "action->Whistling Threat": {
+                    "name": "Whistling Threat",
+                    "description": "<p><strong>Frequency</strong> once per day</p>\n<hr />\n<p><strong>Effect</strong> Gurlunk whistles sharply at a Medium or larger animal or beast he can see within 30 feet, using his voice to dull the creature's wits and cause it to lower its defenses. The target must attempt a @Check[will|dc:21] save.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target is @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 1}.</p>\n<p><strong>Failure</strong> The target is @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 2}.</p>\n<p><strong>Critical Failure</strong> The target is @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 3} and @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1} for 1 round as it shakes in fear.</p>"
                 }
             }
         },
@@ -725,6 +1056,21 @@
                 },
                 "action->Void Healing": {
                     "name": "Void Healing"
+                },
+                "action->Ghostly Murder": {
+                    "name": "Ghostly Murder",
+                    "description": "<p>Jervis Stoot raises a hand high, and a murder of ghostly crows manifests in a vortex above his hand. He then lowers his hand to point in a direction, and the murder of ghostly crows swarms out in a @Template[cone|distance:20]. All creatures caught in the area must attempt a @Check[reflex|dc:30] save. Jervis can't use Ghostly Murder again for [[/br 1d4 #Recharge Ghostly Murder]]{1d4 rounds}.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature takes @Damage[6d6[slashing]] damage.</p>\n<p><strong>Failure</strong> The creature takes @Damage[10d6[slashing],2d6[bleed]]{10d6 slashing damage and 2d6 bleed} damage.</p>\n<p><strong>Critical Failure</strong> The creature takes @Damage[15d6[slashing],5d6[bleed]]{15d6 slashing damage, 5d6 bleed} damage, and is @UUID[Compendium.pf2e.conditionitems.Item.XgEqL1kFApUbl5Z2]{Blinded}. The blindness persists until it's healed via an effect like restore senses.</p>"
+                },
+                "action->Malevolent Possession": {
+                    "name": "Malevolent Possession",
+                    "description": "<p>The ghost attempts to possess an adjacent corporeal creature that carries the head of the @UUID[Compendium.pf2e.equipment-srd.Item.mnEj7ll9WffO8WLu]{Clockwork Songbird} somewhere on their person. This has the same effect as the @UUID[Compendium.pf2e.spells-srd.Item.wU6hNzK8Yfqdmc8m]{Possession} spell, except since the ghost doesn't have a physical body, it is unaffected by that restriction of the spell.</p>"
+                },
+                "action->Tears of Blood": {
+                    "name": "Tears of Blood",
+                    "description": "<p><strong>Frequency</strong> once per day</p>\n<hr />\n<p><strong>Effect</strong> Jervis Stoot makes a plucking motion with his fingers. One creature he can sense within 30 feet experiences the agony of their eyes being plucked out and takes @Damage[12d6[mental]] damage from the pain (@Check[fortitude|dc:30|basic] save, plus @UUID[Compendium.pf2e.conditionitems.Item.XgEqL1kFApUbl5Z2]{Blinded} for 1 minute on a critical failure).</p>"
+                },
+                "lore->Sandpoint Lore": {
+                    "name": "Sandpoint Lore"
                 }
             }
         },
@@ -792,6 +1138,86 @@
                 "weapon->Thunderstone (Greater)": {
                     "name": "Thunderstone (Greater)",
                     "description": "<p><strong>Activate</strong> <span class=\"action-glyph\">1</span> Strike</p>\n<hr />\n<p>When this stone hits a creature or a hard surface, it explodes with a deafening bang. A thunderstone deals the listed sonic damage and sonic splash damage, and each creature within 10 feet of the space in which the stone exploded must succeed at a @Check[fortitude|dc:28|name:Greater Thunderstone|showDC:all] saving throw with the listed DC or be @UUID[Compendium.pf2e.conditionitems.Item.9PR9y0bi4JPKnHPR]{Deafened} until the end of its next turn. Many types of thunderstone grant an item bonus to attack rolls.</p>\n<p>You gain a +2 item bonus to attack rolls. The bomb deals 3d4 sonic damage and 3 sonic splash damage, and the DC is 28.</p>"
+                },
+                "consumable->Cheetah's Elixir (Greater)": {
+                    "name": "Cheetah's Elixir (Greater)",
+                    "description": "<p><strong>Activate</strong> <span class=\"action-glyph\">A</span> (manipulate)</p>\n<hr />\n<p>Enzymatic compounds in this elixir strengthen and excite the muscles in your legs. You gain a +10 foot status bonus to your Speed for 1 hour.</p>\n<p>@UUID[Compendium.pf2e.equipment-effects.Item.PeuUz7JaabCgl6Yh]{Effect: Cheetah's Elixir (Greater)}</p>"
+                },
+                "consumable->Midnight Milk (Refined)": {
+                    "name": "Midnight Milk (Refined)",
+                    "description": "<p><strong>Activate</strong> <span class=\"action-glyph\">1</span> Interact</p>\n<hr />\n<p>Midnight milk is a strange and powerful drug, originally invented by the intellect devourers of the alien city of Ilvarandin to remotely steal the bodies of distant dreaming victims through the use of an artifact called the Dream Lens. Pure midnight milk is incredibly rare\u2014almost all of that found beyond the vault of Ilvarandin is instead cut to reduce costs and expenses. Crafting a dose of this dangerous drug requires a wide range of reagents; the most difficult to acquire of these reagents are vials of refined \"sweat\" harvested via a mithral blade from the fleshy fronds of a rare form of cavetongue fungus known as authul, which grows wild only in remote corners of the Vaults of Orv. When an alchemist mixes midnight milk, they must do so while in a trancelike state that approximates the dreaming mind\u2014a classic method of reaching this state involves the repetition of a wordless chant spoken in a specific meter and rhyme scheme (one that the poet Vumeshki unknowingly duplicated with his dream-inspired poem, \"Ilvarandin\"). Recently, an experimental form of the drug created by the alchemist Aliver Podiker has been developed, but so far, attempts to replicate refined midnight milk using these methods have met with failure.</p>\n<p><strong>Saving Throw</strong> @Check[fortitude|dc:29]</p>\n<p><strong>Onset</strong> 1 minute</p>\n<p><strong>Maximum Duration</strong> 8 hours</p>\n<p><strong>Stage 1</strong> +3 item bonus to Perception (1 hour)</p>\n<p><strong>Stage 2</strong> @UUID[Compendium.pf2e.conditionitems.Item.fBnFDH2MTzgFijKf]{Unconscious} (1 hour; if the creature recovers from the dosage and wakes up before reaching</p>\n<p><strong>Stage 3</strong>, they don't remember their vivid dreams but do wake up feeling revitalized as if they'd enjoyed a full 8 hours of sleep\u2014this doesn't allow the creature to perform their daily preparations more often than once per day though)</p>\n<p><strong>Stage 3</strong> unconscious (1 hour; the vivid dreams the creature enjoys at</p>\n<p><strong>Stage 2</strong> shift into phantasmagoric nightmares as described in the text above\u2014during this stage, the creature is a viable <em>Dream Lens</em> target, and once a creature recovers and awakens from</p>\n<p><strong>Stage 3</strong>, they're @UUID[Compendium.pf2e.conditionitems.Item.HL2l2VRSaQHu9lUw]{Fatigued})</p>"
+                },
+                "consumable->Mistform Elixir (Greater)": {
+                    "name": "Mistform Elixir (Greater)",
+                    "description": "<p><strong>Activate</strong> <span class=\"action-glyph\">A</span> (manipulate)</p>\n<hr />\n<p>A faint mist emanates from your skin, making you @UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{Concealed} for 5 minutes.</p>\n<p>As usual being concealed when your position is still obvious, you can't use this concealment to @UUID[Compendium.pf2e.actionspf2e.Item.XMcnh4cSI32tljXa]{Hide} or @UUID[Compendium.pf2e.actionspf2e.Item.VMozDqMMuK5kpoX4]{Sneak}.</p>"
+                },
+                "consumable->Shadow Essence": {
+                    "name": "Shadow Essence",
+                    "description": "<p>Distilled from the Plane of Shadow, this oily substance imposes tenebrous effects. The enfeebled condition from shadow essence lasts for 24 hours.</p>\n<hr />\n<p><strong>Activate</strong> <span class=\"action-glyph\">2</span> Interact (Injury)</p>\n<p><strong>Saving Throw</strong> @Check[fortitude|dc:29]</p>\n<p><strong>Maximum Duration</strong> 6 rounds</p>\n<p><strong>Stage 1</strong> @Damage[3d6[void]] damage and @Damage[2d6[poison]] damage (1 round)</p>\n<p><strong>Stage 2</strong> @Damage[3d6[void]] damage, @Damage[2d6[poison]] damage, and @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 1} (1 round)</p>\n<p><strong>Stage 3</strong> @Damage[3d6[void]] damage, @Damage[2d6[poison]] damage, and @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 2} (1 round)</p>"
+                },
+                "treasure->Pouch of Black Onyx": {
+                    "name": "Pouch of Black Onyx"
+                },
+                "treasure->Incense and Offerings for Planar Ally": {
+                    "name": "Incense and Offerings for Planar Ally"
+                },
+                "strike-melee->Jaws": {
+                    "name": "Jaws"
+                },
+                "strike-melee->Claw": {
+                    "name": "Claw"
+                },
+                "strike-ranged->Greater Acid Flask": {
+                    "name": "Greater Acid Flask"
+                },
+                "strike-ranged->Greater Alchemist's Fire": {
+                    "name": "Greater Alchemist's Fire"
+                },
+                "strike-ranged->Greater Thunderstone": {
+                    "name": "Greater Thunderstone"
+                },
+                "action->Infused Items": {
+                    "name": "Infused Items",
+                    "description": "<p>Kanker carries the following infused items, which last for 24 hours or until the next time he makes his daily preparations: @UUID[Compendium.pf2e.equipment-srd.Item.jC8GmH0Un6vDxdMj]{Acid Flask (Greater)} (8), @UUID[Compendium.pf2e.equipment-srd.Item.n5yTlTs63o53n3k6]{Alchemist's Fire (Greater)} (8), @UUID[Compendium.pf2e.equipment-srd.Item.Cc4SokzVBoBCkHId]{Blightburn Resin}, @UUID[Compendium.pf2e.equipment-srd.Item.t4X6GDybqLmt7UkN]{Cheetah's Elixir (Greater)} (2), @UUID[Compendium.pf2e.equipment-srd.Item.EX8Ta6J56SNrYbqJ]{Midnight Milk (Refined)} (5), @UUID[Compendium.pf2e.equipment-srd.Item.04giYigfDL5geu5f]{Mistform Elixir (Greater)}, @UUID[Compendium.pf2e.equipment-srd.Item.Wjkw0lEUOhypYvzo]{Shadow Essence} (5), @UUID[Compendium.pf2e.equipment-srd.Item.dsMkvuLgpOOGLWDy]{Thunderstone (Greater)} (8)</p>"
+                },
+                "action->Evasion": {
+                    "name": "Evasion",
+                    "description": "<p>When Kanker rolls a success on a Reflex save, he gets a critical success instead.</p>"
+                },
+                "action->Stench": {
+                    "name": "Stench",
+                    "description": "<p>10 feet. A creature entering the aura or starting its turn in the aura must succeed at a @Check[fortitude|dc:29] save or become @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 1} (plus @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1} as long as it's sickened on a critical failure).</p>\n<p>While within the aura, the creature takes a -2 circumstance penalty to saves against disease and to recover from the sickened condition. A creature that succeeds at its save is temporarily immune for 1 minute.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.wX9L6fbqVMLP05hn]{Effect: Stench}</p>"
+                },
+                "action->Void Healing": {
+                    "name": "Void Healing"
+                },
+                "action->Consume Flesh": {
+                    "name": "Consume Flesh",
+                    "description": "<p><strong>Requirements</strong> The ghast is adjacent to the corpse of a creature that died within the last hour.</p>\n<hr />\n<p><strong>Effect</strong> The ghast devours a chunk of the corpse and regains @Damage[7d6[healing]] Hit Points.</p>\n<p>It can regain Hit Points from any given corpse only once.</p>\n<p>Kanker can Consume Flesh from the trough of gore in the northern alcove of his laboratory (area <strong>J12</strong>) if he's adjacent to it.</p>"
+                },
+                "action->Expanded Splash": {
+                    "name": "Expanded Splash",
+                    "description": "<p>When Kanker throws a bomb, he can maximize the bomb's explosive potential, allowing him to cause the bomb to deal 7 splash damage rather than the normal amount, and the splash damage affects every creature within 10 feet of the target.</p>"
+                },
+                "action->Ghast Fever": {
+                    "name": "Ghast Fever",
+                    "description": "<p><strong>Saving Throw</strong> @Check[fortitude|dc:32]</p>\n<hr />\n<p><strong>Stage 1</strong> carrier with no ill effect (1 day)</p>\n<p><strong>Stage 2</strong> @Damage[3d8[void]] damage and regains half as many Hit Points from all healing (1 day)</p>\n<p><strong>Stage 3</strong> as stage 2 (1 day)</p>\n<p><strong>Stage 4</strong> @Damage[3d8[void]] damage and gains no benefit from healing (1 day)</p>\n<p><strong>Stage 5</strong> as stage 4 (1 day)</p>\n<p><strong>Stage 6</strong> dead, and rises as a @UUID[Compendium.pf2e.pathfinder-bestiary.Actor.VC7rtYR4hLxwg7WZ]{Ghast} the next midnight</p>"
+                },
+                "action->Paralysis": {
+                    "name": "Paralysis",
+                    "description": "<p>Any living creature hit by a ghast's attack must succeed at a @Check[fortitude|dc:32] save or become @UUID[Compendium.pf2e.conditionitems.Item.6uEgoh53GbXuHpTF]{Paralyzed}. It can attempt a new save at the end of each of its turns, and the DC cumulatively decreases by 1 on each such save.</p>"
+                },
+                "action->Quick Bomber": {
+                    "name": "Quick Bomber",
+                    "description": "<p>Kanker draws an alchemical bomb with an Interact action and throws it as a ranged Strike.</p>"
+                },
+                "action->Swift Leap": {
+                    "name": "Swift Leap",
+                    "description": "<p>The ghast jumps up to half its Speed. This movement doesn't trigger reactions.</p>"
+                },
+                "action->Toxic Effluvium": {
+                    "name": "Toxic Effluvium",
+                    "description": "<p>Kanker has exposed himself to so many toxins and poisons over the years that it's all seeped into his undead flesh. When he activates Toxic Effluvium, these foul-smelling fluids seep from his flesh, causing his jaws and claws to secrete drooling rivulets of foul green venom that coat his teeth and talons, as well as any weapon he wields. Until the start of his next turn, Kanker's melee Strikes deal an additional 2d6 poison damage.</p>"
                 }
             }
         },
@@ -870,6 +1296,26 @@
                 },
                 "action->+1 Status to All Saves vs. Magic": {
                     "name": "+1 Status to All Saves vs. Magic"
+                },
+                "action->Command Confusion": {
+                    "name": "Command Confusion",
+                    "description": "<p><strong>Trigger</strong> A creature fails its save against Mnoghoth's mindfog aura</p>\n<hr />\n<p><strong>Effect</strong> Mnoghoth determines who the @UUID[Compendium.pf2e.conditionitems.Item.yblD8fOR1J8rDwEQ]{Confused} creature attacks for that round, instead of the target being randomly determined by the GM. If the chosen target is the confused creature's ally, the creature can immediately attempt a @Check[will|dc:25] save; on a success, its target is determined randomly as normal for confusion, and on a critical success the target is no longer confused.</p>"
+                },
+                "action->Mindfog Aura": {
+                    "name": "Mindfog Aura",
+                    "description": "<p>20 feet. A creature that starts its turn in the aura must succeed at a @Check[will|dc:25] save or become @UUID[Compendium.pf2e.conditionitems.Item.yblD8fOR1J8rDwEQ]{Confused} for 1 round; on a success, that creature is temporarily immune for 1 minute. Mnoghoth can suppress or activate this aura as a single action with the concentrate trait.</p>"
+                },
+                "action->Envenom Weapon": {
+                    "name": "Envenom Weapon",
+                    "description": "<p>Mnoghoth applies their seugathi venom to their longsword.</p>"
+                },
+                "action->Magic Item Mastery": {
+                    "name": "Magic Item Mastery",
+                    "description": "<p>Mnoghoth can Cast a Spell from a magic item even if the spell isn't on their spell list. All such spells are occult spells and use Mnoghoth's innate spell DC and attack modifier.</p>"
+                },
+                "action->Seugathi Venom": {
+                    "name": "Seugathi Venom",
+                    "description": "<p><strong>Saving Throw</strong> @Check[fortitude|dc:28]</p>\n<p><strong>Maximum Duration</strong> 6 rounds</p>\n<p><strong>Stage 1</strong> @Damage[1d6[poison]] damage and @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 1} (1 round)</p>\n<p><strong>Stage 2</strong> @Damage[2d6[poison]] damage and @UUID[Compendium.pf2e.conditionitems.Item.9PR9y0bi4JPKnHPR]{Deafened} and @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 2} (1 round)</p>"
                 }
             }
         },
@@ -898,6 +1344,10 @@
                 },
                 "action->Void Healing": {
                     "name": "Void Healing"
+                },
+                "action->Swarming Curse": {
+                    "name": "Swarming Curse",
+                    "description": "<p>Hundreds of biting flies crawl over Narlo's bones, filling out his armor almost like his flesh once did. When these flies burn, they harm Narlo as well, imparting weakness to fire 5. Whenever Narlo casts a spell, these flies burst from his body to fill a @Template[emanation|distance:10] around him in a buzzing, biting cloud until the start of his next turn. During this time, he loses his weakness to fire, and any creature that ends their turn within the emanation takes @Damage[4d6[piercing]] damage (@Check[reflex|dc:23|basic] save) from the biting flies.</p>"
                 }
             }
         },
@@ -921,6 +1371,14 @@
                 },
                 "action->Void Healing": {
                     "name": "Void Healing"
+                },
+                "action->Frightful Moan": {
+                    "name": "Frightful Moan",
+                    "description": "<p>The ghost laments its fate, forcing each living creature within @Template[emanation|distance:30]{30 feet} to attempt a @Check[will|dc:29] save. On a failure, a creature becomes @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 2} (or @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 3} on a critical failure). On a success, a creature is temporarily immune to this ghost's frightful moan for 1 minute.</p>"
+                },
+                "action->Telekinetic Assault": {
+                    "name": "Telekinetic Assault",
+                    "description": "<p>The ghost cries out in pain and anguish as small objects and debris fly about in a @Template[emanation|distance:30]. Creatures in this area take @Damage[6d6[bludgeoning]] damage, subject to a @Check[reflex|dc:29|basic] save.</p>"
                 }
             }
         },
@@ -935,6 +1393,10 @@
                 "action->Swarming Bites": {
                     "name": "Swarming Bites",
                     "description": "<p><strong>Trigger</strong> A creature moves into the room beyond the northern stairs</p>\n<hr />\n<p><strong>Effect</strong> A combination of biting flies and ravenous creepy-crawlies swarm the triggering creature. The creature takes @Damage[6d6[piercing]] damage (@Check[reflex|dc:30|basic] save). If the creature took any damage, it's automatically exposed to ghast fever. The hazard then rolls initiative.</p>"
+                },
+                "action->Ghast Fever": {
+                    "name": "Ghast Fever",
+                    "description": "<p><strong>Saving Throw</strong> @Check[fortitude|dc:30]</p>\n<hr />\n<p><strong>Stage 1</strong> carrier with no ill effect (1 day)</p>\n<p><strong>Stage 2</strong> @Damage[3d8[void]] damage and regains half as many Hit Points from all healing (1 day)</p>\n<p><strong>Stage 3</strong> as stage 2 (1 day)</p>\n<p><strong>Stage 4</strong> @Damage[3d8[void]] damage and gains no benefit from healing (1 day)</p>\n<p><strong>Stage 5</strong> as stage 4 (1 day)</p>\n<p><strong>Stage 6</strong> dead, and rises as a @UUID[Compendium.pf2e.pathfinder-bestiary.Actor.VC7rtYR4hLxwg7WZ]{Ghast} the next midnight</p>"
                 }
             }
         },
@@ -963,6 +1425,18 @@
                 },
                 "action->+1 Status to All Saves vs. Magic": {
                     "name": "+1 Status to All Saves vs. Magic"
+                },
+                "action->Unsettled Aura": {
+                    "name": "Unsettled Aura",
+                    "description": "<p>30 feet. Gosregs project a field of discordant energy that unsettles the minds of thinking creatures. Any non-mindless creature within 30 feet of a gosreg takes a -1 status penalty to Will saves.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.aOpSI5tApXF5xHCM]{Effect: Unsettled Aura}</p>"
+                },
+                "action->Change Shape": {
+                    "name": "Change Shape",
+                    "description": "<p>The gosreg takes on the appearance of any Small or Medium humanoid. This doesn't change its Speed or its attack and damage modifiers with its Strikes, but it might change the damage type its Strikes deal (typically to bludgeoning).</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.ChangeShape]</p>"
+                },
+                "action->Mind Bolt": {
+                    "name": "Mind Bolt",
+                    "description": "<p>A gosreg concentrates its field of discordant mental energy and projects it into the mind of an enemy within 60 feet. The target takes @Damage[6d6[mental]] damage (@Check[will|dc:30|basic] save). On a critical failure, the creature is also @UUID[Compendium.pf2e.conditionitems.Item.yblD8fOR1J8rDwEQ]{Confused} for [[/br 1d4 #rounds]]{1d4 rounds}.</p>"
                 }
             }
         },
@@ -990,6 +1464,33 @@
                 "action->Portentous Gaze": {
                     "name": "Portentous Gaze",
                     "description": "<p>30 feet. When a creature ends its turn in the aura, it must attempt a @Check[will|dc:31] save. A creature that fails is @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 1} (or @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 2} on a critical failure)</p>\n<p>The mothman can deactivate or activate this aura with a single action, which has the concentrate trait.</p>"
+                },
+                "action->True Temptation": {
+                    "name": "True Temptation",
+                    "description": "<p><strong>Frequency</strong> three times a day</p>\n<p><strong>Trigger</strong> A creature within 30 feet of the Red Bishop speaks Pazuzu's name aloud three times with a single breath</p>\n<hr />\n<p><strong>Effect</strong> The Red Bishop casts @UUID[Compendium.pf2e.spells-srd.Item.vLA0q0WOK2YPuJs6]{Charm} on the creature. A creature with a fly speed takes a \u20134 circumstance penalty to the saving throw against this <em>charm</em>.</p>"
+                },
+                "action->Agent of Fate": {
+                    "name": "Agent of Fate",
+                    "description": "<p><strong>Frequency</strong> once per day</p>\n<hr />\n<p><strong>Effect</strong> The mothman casts any spell of 5th level or lower that normally takes 2 or fewer actions to cast, whether they have those spells in their innate spells or not.</p>\n<p>They can use this ability only if doing so steers the flow of fate in its proper course toward a disaster or otherwise significantly memorable event.</p>\n<p>What the proper flow of fate entails is determined by the GM, but some examples include casting @UUID[Compendium.pf2e.spells-srd.Item.Ucf8eynbZMfUucjE]{Illusory Scene} to coax someone to a portentous location, casting @UUID[Compendium.pf2e.spells-srd.Item.R9xqCBblkS5KE4y7]{Sending} to deliver an important message to someone the exact moment they need to hear it, or casting @UUID[Compendium.pf2e.spells-srd.Item.0fYE64odlKqISzft]{Rusting Grasp} to weaken a structure and cause some necessary calamity.</p>"
+                },
+                "action->Change Shape": {
+                    "name": "Change Shape",
+                    "description": "<p>The Red Bishop takes on the appearance of a Tiny red sea gull or red hawk. This doesn't change his speed, but he can't make Strikes in this form.</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.ChangeShape]</p>"
+                },
+                "action->Command the Hateful Skies": {
+                    "name": "Command the Hateful Skies",
+                    "description": "<p>The Red Bishop's telepathic words carry an unsettling weight and promise of punishment when spoken to any evil creature capable of flight. Against such creatures, the Red Bishop gains a +3 circumstance bonus to attempts to @UUID[Compendium.pf2e.actionspf2e.Item.OX4fy22hQgUHDr0q]{Make an Impression}, @UUID[Compendium.pf2e.actionspf2e.Item.DCb62iCBrJXy0Ik6]{Request}, @UUID[Compendium.pf2e.actionspf2e.Item.tHCqgwjtQtzNqVvd]{Coerce}, and @UUID[Compendium.pf2e.actionspf2e.Item.2u915NdUyQan6uKF]{Demoralize}, and he increases the DC of any mental effect he uses against such creatures by 3 as well. Even without these bonuses, evil flying creatures tend to treat the Red Bishop with a mix of respect, if not outright fear.</p>"
+                },
+                "action->Extract Fear": {
+                    "name": "Extract Fear",
+                    "description": "<p>The Red Bishop reaches out with one hand toward a @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 1} creature he can see that's within 30 feet and makes a clutching motion to pull out the creature's fear and feed upon it. The Red Bishop restores @Damage[(7d8+8)[healing]] Hit Points to himself, and the target creature loses the frightened condition but must also attempt a @Check[will|dc:34] save as other emotions are drawn out of their mind as well to fade uselessly away, resulting in mental trauma and a strange numbness in the mind itself.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target takes @Damage[3d6[mental]] damage.</p>\n<p><strong>Failure</strong> The target takes @Damage[6d6[mental]] damage and is @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 1} until the end of its next turn.</p>\n<p><strong>Critical Failure</strong> The target takes @Damage[12d6[mental]] damage and is stupefied 1 until the condition is removed via an effect like restoration.</p>"
+                },
+                "action->Focus Gaze": {
+                    "name": "Focus Gaze",
+                    "description": "<p>The mothman fixes their glare at a creature they can see within 30 feet. The target must immediately attempt a Will save against the mothman's portentous gaze.</p>\n<p>If the creature is already frightened when it attempts this save, on a failure it becomes @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 1} for 24 hours in addition to the frightened effect.</p>\n<p>After attempting its save, the creature is then temporarily immune for 1 minute.</p>"
+                },
+                "lore->Engineering Lore": {
+                    "name": "Engineering Lore"
                 }
             }
         },
@@ -1009,6 +1510,29 @@
                 "action->Sacrilegious Aura": {
                     "name": "Sacrilegious Aura",
                     "description": "<p>30 feet. When a creature in the aura uses a vitality spell or ability, the graveknight automatically attempts to counteract it, with a counteract modifier of [[/r 1d20+13 #Counteract]]{+13}.</p>"
+                },
+                "action->Void Healing": {
+                    "name": "Void Healing"
+                },
+                "action->Devastating Blast": {
+                    "name": "Devastating Blast",
+                    "description": "<p>The graveknight unleashes a @Template[cone|distance:30] of energy. Creatures in the area take @Damage[4d12[fire]] damage (@Check[reflex|dc:24|basic] save).</p>\n<p>The graveknight can use this ability once every [[/br 1d4 #Recharge Devastating Blast]]{1d4 rounds}.</p>"
+                },
+                "action->Dogslicer Cruelty": {
+                    "name": "Dogslicer Cruelty",
+                    "description": "<p>On a critical hit with a dogslicer, Ripnugget yanks bits of flesh from his victim as he rips the blade free. The target becomes @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 1} from the pain, and is @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} as long as they remain sickened.</p>"
+                },
+                "action->Graveknight's Curse": {
+                    "name": "Graveknight's Curse",
+                    "description": "<p>This curse affects anyone who wears a graveknight's armor for at least 1 hour.</p>\n<p><strong>Saving Throw</strong> @Check[will|dc:24] save</p>\n<hr />\n<p><strong>Onset</strong> 1 hour</p>\n<p><strong>Stage 1</strong> @UUID[Compendium.pf2e.conditionitems.Item.3uh1r86TzbQvosxv]{Doomed 1} and cannot remove the armor (1 day)</p>\n<p><strong>Stage 2</strong> @UUID[Compendium.pf2e.conditionitems.Item.3uh1r86TzbQvosxv]{Doomed 2}, the creature's Speed is reduced by 10, and cannot remove the armor (1 day)</p>\n<p><strong>Stage 3</strong> dies and transforms into the armor's graveknight.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.6rnB7nK6J6zF4vea]{Effect: Graveknight's Curse}</p>"
+                },
+                "action->Phantom Mount": {
+                    "name": "Phantom Mount",
+                    "description": "<p>Ripnugget's mount is a giant gecko (HP 37; AC 19, Fort +11, Ref +8, Will +7) named Stickfoot.</p>\n<hr />\n<p>The graveknight summons a supernatural mount as per @UUID[Compendium.pf2e.spells-srd.Item.WPKJOhEihhcIm2uQ]{Marvelous Mount}, heightened to a level equal to half the graveknight's level.</p>\n<p>Unlike <em>phantom steed</em>, the steed's AC and saving throw bonuses are all 4 lower than the graveknight's, and the steed has one-third the graveknight's Hit Points (rounded down).</p>\n<p>If the steed is destroyed, the graveknight must wait 1 hour before using this ability again.</p>"
+                },
+                "action->Weapon Master": {
+                    "name": "Weapon Master",
+                    "description": "<p>The graveknight has access to the critical specialization effects of any weapons it wields.</p>"
                 }
             }
         },
@@ -1040,6 +1564,33 @@
                 },
                 "action->+1 Status to All Saves vs. Magic": {
                     "name": "+1 Status to All Saves vs. Magic"
+                },
+                "action->Frightful Presence": {
+                    "name": "Frightful Presence",
+                    "description": "<p>90 feet. @Check[will|dc:31]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.FrightfulPresence]</p>"
+                },
+                "action->Tail Lash": {
+                    "name": "Tail Lash",
+                    "description": "<p><strong>Trigger</strong> A creature within reach of the dragon's tail takes an action to Strike or attempt a skill check</p>\n<hr />\n<p><strong>Effect</strong> The dragon Strikes with its tail at the triggering creature at a -2 penalty. If it hits, the creature takes a -2 circumstance penalty to the triggering roll.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.QqC9xymSXSVunDgl]{Effect: Tail Lash}</p>"
+                },
+                "action->Breath Weapon": {
+                    "name": "Breath Weapon",
+                    "description": "<p>Scarhorn breathes a spray of acid that deals @Damage[15d6[acid]] damage in an @Template[line|distance:80] (@Check[reflex|dc:34|basic] save). She can't use Breath Weapon again for [[/br 1d4 #Recharge Breath Weapon]]{1d4 rounds}.</p>"
+                },
+                "action->Corrupt Water": {
+                    "name": "Corrupt Water",
+                    "description": "<p><strong>Frequency</strong> Once per day</p>\n<hr />\n<p><strong>Effect</strong> The dragon permanently befouls 10 cubic feet of liquid within 90 feet. The liquid becomes undrinkable and unable to support water-breathing life.</p>\n<p>This destroys liquid magic or alchemical items if they're of a lower level than the dragon (a creature can attempt a @Check[will|dc:31] save to protect liquids in its possession). This doesn't affect liquids in a creature's body.</p>"
+                },
+                "action->Draconic Frenzy": {
+                    "name": "Draconic Frenzy",
+                    "description": "<p>The dragon makes two claw Strikes and one horns Strike in any order.</p>"
+                },
+                "action->Draconic Momentum": {
+                    "name": "Draconic Momentum",
+                    "description": "<p>The dragon recharges its Breath Weapon whenever it scores a critical hit with a Strike</p>"
+                },
+                "lore->Thassilon Lore": {
+                    "name": "Thassilon Lore"
                 }
             }
         },
@@ -1080,6 +1631,21 @@
                 },
                 "action->+1 Status to All Saves vs. Magic": {
                     "name": "+1 Status to All Saves vs. Magic"
+                },
+                "action->+4 Status to Will Saves vs. Mental": {
+                    "name": "+4 Status to Will Saves vs. Mental"
+                },
+                "action->Raise Serpent": {
+                    "name": "Raise Serpent",
+                    "description": "<p><strong>Frequency</strong> once per day</p>\n<hr />\n<p><strong>Effect</strong> The bone prophet animates corpses of snakes, serpentfolk, or similar serpentine creatures within a @Template[emanation|distance:30]. Any flesh on the bodies sloughs off, and they rise as skeletons. The bone prophet can raise one Large creature as a @UUID[Compendium.pf2e.pathfinder-monster-core.Actor.sEgjgitJmwYYa4mV]{Skeletal Giant} or up to three Medium creatures as @UUID[Compendium.pf2e.pathfinder-monster-core.Actor.FH58AcRBZIfrHKvv]{Skeletal Champions}; the equipment and attacks might be different depending on the corpses' possessions.</p>\n<p>These skeletons have the minion trait and are under the bone prophet's control; the bone prophet can give all these minions the same command with a single action that has the concentrate trait. Any skeletal minions that still remain after 10 minutes crumble to dust.</p>"
+                },
+                "action->Serpentfolk Venom": {
+                    "name": "Serpentfolk Venom",
+                    "description": "<p><strong>Saving Throw</strong> @Check[fortitude|dc:25]</p>\n<p><strong>Maximum Duration</strong> 6 rounds</p>\n<p><strong>Stage 1</strong> @Damage[1d4[poison]] damage and @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 1} (1 round)</p>\n<p><strong>Stage 2</strong> @Damage[2d4[poison]] damage and enfeebled 1 (1 round)</p>"
+                },
+                "action->Sneak Attack": {
+                    "name": "Sneak Attack",
+                    "description": "<p>The creature's Strikes deal an additional 1d6 precision damage to @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} creatures.</p>"
                 }
             }
         },
@@ -1274,6 +1840,40 @@
                 "weapon->Glue Bomb (Moderate)": {
                     "name": "Glue Bomb (Moderate)",
                     "description": "<p><strong>Activate</strong> <span class=\"action-glyph\">1</span> Strike</p>\n<hr />\n<p>A glue bomb is a harmless explosive mechanism bursting with sticky substances. When you hit a creature with a glue bomb, that creature takes a \u201315-foot status penalty to its Speeds for 1 minute. You gain a +1 item bonus to attack rolls, and the @UUID[Compendium.pf2e.actionspf2e.Item.SkZAQRkLLkmBQNB9]{Escape} DC is 19.</p>\n<p>On a critical hit, a creature in contact with a solid surface becomes stuck to the surface and @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Immobilized} for 1 round, and a creature flying via wings has its wings tangled, causing it to fall safely to the ground and become unable to Fly again for 1 round. Glue bombs are not effective when used on a creature that is in water.</p>\n<p>The target can end any effects by Escaping or spending a total of 3 Interact actions to carefully remove the sticky substances. These Interact actions don't have to be consecutive, and other creatures can provide the actions as well.</p>\n<p>@UUID[Compendium.pf2e.equipment-effects.Item.MEreOgnjoRiXPEuq]{Effect: Glue Bomb (Moderate)}</p>"
+                },
+                "consumable->Antidote (Lesser)": {
+                    "name": "Antidote (Lesser)",
+                    "description": "<p><strong>Activate</strong> <span class=\"action-glyph\">A</span> (manipulate)</p>\n<hr />\n<p>An antidote protects you against toxins. Upon drinking an antidote, you gain a +2 item bonus to Fortitude saving throws against poisons for 6 hours.</p>\n<p>@UUID[Compendium.pf2e.equipment-effects.Item.TjBxxlTvb6tJP1jS]{Effect: Antidote}</p>"
+                },
+                "consumable->Elixir of Life (Lesser)": {
+                    "name": "Elixir of Life (Lesser)",
+                    "description": "<p><strong>Activate</strong> <span class=\"action-glyph\">A</span> (manipulate)</p>\n<hr />\n<p>Elixirs of life accelerate a living creatures natural healing processes and immune system. Upon drinking this elixir, you regain @Damage[(3d6+6)[healing]] Hit Points and gain +1 item bonus to saving throws against diseases and poisons for 10 minutes.</p>\n<p>@UUID[Compendium.pf2e.equipment-effects.Item.lPRuIRbu0rHBkoKY]{Effect: Elixir of Life}</p>"
+                },
+                "strike-ranged->Alchemist's Fire (Moderate)": {
+                    "name": "Alchemist's Fire (Moderate)"
+                },
+                "action->Infused Items": {
+                    "name": "Infused Items",
+                    "description": "<p>Tunch carries the following infused items, which last for 24 hours or until the next time he makes his daily preparations: @UUID[Compendium.pf2e.equipment-srd.Item.gWr4q4HiyGhETA8H]{Alchemist's Fire (Moderate)} (8), @UUID[Compendium.pf2e.equipment-srd.Item.ktjFOp3U0wQD9t0Z]{Antidote (Lesser)} (2), @UUID[Compendium.pf2e.equipment-srd.Item.TZUskLT7yvP7N2co]{Elixir of Life (Lesser)} (4), @UUID[Compendium.pf2e.equipment-srd.Item.evBPzM1VsuYcoenn]{Glue Bomb (Moderate)} (2)</p>"
+                },
+                "action->+1 Status vs. Poison": {
+                    "name": "+1 Status vs. Poison"
+                },
+                "action->Goblin Scuttle": {
+                    "name": "Goblin Scuttle",
+                    "description": "<p><strong>Trigger</strong> A goblin ally ends a move action adjacent to the goblin.</p>\n<hr />\n<p><strong>Effect</strong> The goblin @UUID[Compendium.pf2e.actionspf2e.Item.UHpkTuCtyaPqiCAB]{Steps}.</p>"
+                },
+                "action->Calculated Splash": {
+                    "name": "Calculated Splash",
+                    "description": "<p>When Tunch throws a bomb with the splash trait, it deals splash damage equal to his Intelligence modifier.</p>"
+                },
+                "action->Distracting Whistle": {
+                    "name": "Distracting Whistle",
+                    "description": "<p><strong>Frequency</strong> once per round</p>\n<hr />\n<p><strong>Effect</strong> Tunch whistles in a way that causes the sound to manifest elsewhere, potentially distracting a foe. One target of Tunch's choice that he can see within 30 feet must attempt a @Check[will|dc:22] save or become @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} until the start of Tunch's next turn by the distracting whistling sound that seems to come from behind them. The target is then temporarily immune to Distracting Whistle for 1 hour.</p>"
+                },
+                "action->Quick Bomber": {
+                    "name": "Quick Bomber",
+                    "description": "<p>Tunch Interacts to draw a bomb, then Strikes with it.</p>"
                 }
             }
         },
@@ -1332,6 +1932,37 @@
                 "weapon->+2 Striking Serpent Dagger": {
                     "name": "+2 Striking Serpent Dagger",
                     "description": "<p>The serrated blade of this <em>+1 striking dagger</em> has a greenish tinge, and the hilt is sculpted to look like the head of a serpent about to strike.</p>\n<p>When you critically succeed at an attack roll with the <em>serpent dagger</em>, the target becomes @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 1} unless it succeeds at a @Check[fortitude|dc:19] save. This is a poison effect.</p>\n<p>In addition, you can activate the dagger to poison a creature with a more potent poison.</p>\n<hr />\n<p><strong>Activate\u2014Drip Poison</strong> <span class=\"action-glyph\">F</span> (manipulate)</p>\n<p><strong>Frequency</strong> once per day</p>\n<p><strong>Trigger</strong> You damage a creature with the <em>serpent dagger</em></p>\n<p><strong>Effect</strong> You poison the creature you hit with dagger venom.</p>\n<hr />\n<p><strong>Dagger Venom</strong> (poison)</p>\n<p><strong>Saving Throw</strong> @Check[fortitude|dc:21]</p>\n<p><strong>Maximum Duration</strong> 4 rounds</p>\n<p><strong>Stage 1</strong> @Damage[1d8[poison]] damage and @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 1}</p>"
+                },
+                "equipment->Religious Symbol of Ydersius": {
+                    "name": "Religious Symbol of Ydersius",
+                    "description": "<p>This piece of wood or silver is emblazoned with an image representing a deity. Some divine spellcasters, such as clerics, can use a religious symbol of their deity as a divine focus to use certain abilities and cast some spells. A religious symbol must be held in one hand to use it.</p>"
+                },
+                "consumable->Wand of Vampiric Feast (Rank 3)": {
+                    "name": "Wand of Vampiric Feast (Rank 3)",
+                    "description": "<p>@UUID[Compendium.pf2e.spells-srd.Item.N1Z1oLPdBxaSgrEE]{Vampiric Feast}</p><hr /><p>This baton is about a foot long and contains a single spell. The appearance typically relates to the spell within.</p>\n<p><strong>Activate</strong> Cast a Spell</p>\n<p><strong>Frequency</strong> once per day, plus overcharge</p>\n<hr />\n<p><strong>Effect</strong> You Cast the Spell at the indicated rank.</p>\n<p><strong>Craft Requirements</strong> Supply a casting of the spell at the listed rank.</p>\n<hr />\n<p><em>Note: To create a scroll or wand of a specific spell, drag the spell from the compendium or compendium browser into the inventory of a PC, NPC, or loot actor.</em></p>"
+                },
+                "strike-melee->Fangs": {
+                    "name": "Fangs"
+                },
+                "strike-melee->Dagger": {
+                    "name": "Dagger"
+                },
+                "action->Telepathy 100 feet": {
+                    "name": "Telepathy 100 feet"
+                },
+                "action->+1 Status to All Saves vs. Magic": {
+                    "name": "+1 Status to All Saves vs. Magic"
+                },
+                "action->+4 Status to Will Saves vs. Mental": {
+                    "name": "+4 Status to Will Saves vs. Mental"
+                },
+                "action->Sacrifice Pawn": {
+                    "name": "Sacrifice Pawn",
+                    "description": "<p><strong>Frequency</strong> once per day</p>\n<hr />\n<p><strong>Effect</strong> Vizmivool attempts a dagger Strike against an ally and shifts the result of this Strike up by one degree of success. If the Strike kills the ally, the sacrificed ally's life force flows like red fire out of the wound and into Vizmivool's body, healing her for @Damage[10d6[healing]] Hit Points and making her @UUID[Compendium.pf2e.conditionitems.Item.nlCjDvLMf2EkV2dl]{Quickened} for 1 minute. She can use the additional action to Strike or Stride.</p>"
+                },
+                "action->Serpentfolk Venom": {
+                    "name": "Serpentfolk Venom",
+                    "description": "<p><strong>Saving Throw</strong> @Check[fortitude|dc:28]</p>\n<p><strong>Maximum Duration</strong> 6 rounds</p>\n<p><strong>Stage 1</strong> @Damage[1d4[poison]] damage and @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 1} (1 round)</p>\n<p><strong>Stage 2</strong> @Damage[2d4[poison]] damage and enfeebled 1 (1 round)</p>"
                 }
             }
         },
@@ -1363,6 +1994,25 @@
                 "action->Stench": {
                     "name": "Stench",
                     "description": "<p>10 feet. A creature entering the aura or starting its turn in the aura must succeed at a @Check[fortitude|dc:19] save or become @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 1} (plus @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1} as long as it's sickened on a critical failure).</p>\n<p>While within the aura, the creature takes a -2 circumstance penalty to saves against disease and to recover from the sickened condition. A creature that succeeds at its save is temporarily immune for 1 minute.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.wX9L6fbqVMLP05hn]{Effect: Stench}</p>"
+                },
+                "action->Void Healing": {
+                    "name": "Void Healing"
+                },
+                "action->Consume Flesh": {
+                    "name": "Consume Flesh",
+                    "description": "<p><strong>Requirements</strong> The ghast is adjacent to the corpse of a creature that died within the last hour.</p>\n<hr />\n<p><strong>Effect</strong> The ghast devours a chunk of the corpse and regains @Damage[4d6[healing]] Hit Points.</p>\n<p>It can regain Hit Points from any given corpse only once.</p>"
+                },
+                "action->Ghast Fever": {
+                    "name": "Ghast Fever",
+                    "description": "<p><strong>Saving Throw</strong> @Check[fortitude|dc:22]</p>\n<hr />\n<p><strong>Stage 1</strong> carrier with no ill effect (1 day)</p>\n<p><strong>Stage 2</strong> @Damage[3d8[void]] damage and regains half as many Hit Points from all healing (1 day)</p>\n<p><strong>Stage 3</strong> as stage 2 (1 day)</p>\n<p><strong>Stage 4</strong> @Damage[3d8[void]] damage and gains no benefit from healing (1 day)</p>\n<p><strong>Stage 5</strong> as stage 4 (1 day)</p>\n<p><strong>Stage 6</strong> dead, and rises as a @UUID[Compendium.pf2e.pathfinder-bestiary.Actor.VC7rtYR4hLxwg7WZ]{Ghast} the next midnight</p>"
+                },
+                "action->Paralysis": {
+                    "name": "Paralysis",
+                    "description": "<p>Any living creature hit by a ghast's attack must succeed at a @Check[fortitude|dc:22] save or become @UUID[Compendium.pf2e.conditionitems.Item.6uEgoh53GbXuHpTF]{Paralyzed}. It can attempt a new save at the end of each of its turns, and the DC cumulatively decreases by 1 on each such save.</p>"
+                },
+                "action->Swift Leap": {
+                    "name": "Swift Leap",
+                    "description": "<p>The ghast jumps up to half its Speed. This movement doesn't trigger reactions.</p>"
                 }
             }
         },
@@ -1382,6 +2032,44 @@
                 "equipment->Ventriloquist's Ring (Greater)": {
                     "name": "Ventriloquist's Ring (Greater)",
                     "description": "<p>This elegant copper ring has miniature images of songbirds engraved around its circumference. You gain a +2 item bonus to Deception checks.</p>\n<p><strong>Activate\u2014Throw Voice</strong> <span class=\"action-glyph\">2</span> (manipulate)</p>\n<p><strong>Frequency</strong> any number of times per day</p>\n<hr />\n<p><strong>Effect</strong> Twisting the ring around your finger allows you to magically throw your voice, with the effects of a 2nd-rank @UUID[Compendium.pf2e.spells-srd.Item.yV7Ouzaoe7DHLESI]{Ventriloquism} spell (@Check[perception|dc:27]).</p>"
+                },
+                "strike-melee->Tendril": {
+                    "name": "Tendril"
+                },
+                "action->Tremorsense 30 feet": {
+                    "name": "Tremorsense 30 feet"
+                },
+                "action->All-Around Vision": {
+                    "name": "All-Around Vision"
+                },
+                "action->Fast Healing 10": {
+                    "name": "Fast Healing 10"
+                },
+                "action->Swarm Mind": {
+                    "name": "Swarm Mind"
+                },
+                "action->Discorporate": {
+                    "name": "Discorporate",
+                    "description": "<p>When the worm that walks is reduced to 0 HP, it discorporates and the component worms that make up its body disperse in every direction. If even a single worm escapes, the worm that walks will eventually re-form using a process that typically takes [[/br 1d10 #Re-Form]]{1d10 days}.</p>\n<p>While the exact circumstances and surroundings determine how long the worm that walks's foes have to dispatch the fleeing worms before they escape, usually its foes have only a single round. Typically, this requires the application of an area effect or splash weapon within 1 round to the space where the worm that walks collapsed. After any amount of area or splash damage is dealt to that space, the character dealing the damage must attempt a @Check[flat|dc:15] check. Each subsequent area or splash damage effect performed on the area reduces the DC of this flat check by 2, to a minimum of DC 5. If any of these flat checks succeed, none of the worms escape, and the worm that walks is destroyed permanently.</p>\n<p>At the GM's discretion, clever means of trapping or otherwise detaining the vermin may extend the time allowed to finish off the worm that walks.</p>"
+                },
+                "action->Quickened Casting": {
+                    "name": "Quickened Casting",
+                    "description": "<p><strong>Frequency</strong> once per day</p>\n<hr />\n<p><strong>Effect</strong> If Zalavexus's next action is to cast a 3rd-or lower-rank spell or cantrip, reduce the number of actions to cast it by 1 (minimum 1 action).</p>"
+                },
+                "action->Squirming Embrace": {
+                    "name": "Squirming Embrace",
+                    "description": "<p>The worm that walks Strides, ending its movement sharing a space with a creature, and deals @Damage[4d8[piercing]] damage to the creature. The creature can attempt a @Check[reflex|dc:27|basic] save.</p>"
+                },
+                "action->Steady Spellcasting": {
+                    "name": "Steady Spellcasting",
+                    "description": "<p>If a reaction would disrupt Zalavexus's spellcasting action, he attempts a @Check[flat|dc:15]. On a success, the action isn't disrupted.</p>"
+                },
+                "action->Swarm Shape": {
+                    "name": "Swarm Shape",
+                    "description": "<p>The worm that walks collapses into a shapeless swarm of worms. It drops all held, worn, and carried items. While discorporated, the worm that walks can't use attack actions and can't cast spells, but it can move through areas small enough for its individual worms to fit without having to @UUID[Compendium.pf2e.actionspf2e.Item.kMcV8e5EZUxa6evt]{Squeeze}. It can use the same action to coalesce back into its normal form.</p>"
+                },
+                "lore->Genie Lore": {
+                    "name": "Genie Lore"
                 }
             }
         },
@@ -1406,6 +2094,33 @@
                 "equipment->Gold Religious Symbol of Calistria": {
                     "name": "Gold Religious Symbol of Calistria",
                     "description": "<p>This piece of wood or silver is emblazoned with an image representing a deity. Some divine spellcasters, such as clerics, can use a religious symbol of their deity to use certain abilities and cast some spells. A religious symbol can be worn on the body on a chain or pin, or can be held.</p>"
+                },
+                "equipment->Charm of Fire Resistance": {
+                    "name": "Charm of Fire Resistance",
+                    "description": "<p>This charm, normally hung from the belt or worn around the neck, grants you resistance 5 against one type of energy damage: acid, cold, electricity, fire, or sonic. Each charm is crafted to protect against a particular type of energy damage, and its design usually embodies the type of energy it protects the wearer from in some way. For instance, a <em>charm of cold resistance</em> could be carved in the shape of a yeti, whereas a <em>charm of fire resistance</em> would be made from volcanic glass.</p>"
+                },
+                "treasure->Bracelets and Necklaces": {
+                    "name": "Bracelets and Necklaces"
+                },
+                "strike-melee->Fangs": {
+                    "name": "Fangs"
+                },
+                "strike-ranged->Web": {
+                    "name": "Web"
+                },
+                "strike-ranged->Composite Shortbow": {
+                    "name": "Composite Shortbow"
+                },
+                "action->+1 Status to All Saves vs. Magic": {
+                    "name": "+1 Status to All Saves vs. Magic"
+                },
+                "action->Drider Venom": {
+                    "name": "Drider Venom",
+                    "description": "<p><strong>Saving Throw</strong> @Check[fortitude|dc:28]</p>\n<hr />\n<p><strong>Maximum Duration</strong> 6 rounds</p>\n<p><strong>Stage 1</strong> @Damage[1d8[poison]] damage and @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 1}</p>"
+                },
+                "action->Web Trap": {
+                    "name": "Web Trap",
+                    "description": "<p>A creature hit by a drider's web attack is @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Immobilized} and stuck to the nearest surface (@UUID[Compendium.pf2e.actionspf2e.Item.SkZAQRkLLkmBQNB9]{Escape} DC 28).</p>"
                 }
             }
         },

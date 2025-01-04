@@ -215,7 +215,20 @@
                 },
                 "action->Dirty Trick": {
                     "name": "Dirty Trick",
-                    "description": "<p><strong>Trigger</strong> Hallod scores a critical hit with a melee attack.</p>\n<hr />\n<p><strong>Effect</strong> Hallod can attempt an Athletics check to @UUID[Compendium.pf2e.actionspf2e.Item.7blmbDrQFNfdT731]{Shove} or @UUID[Compendium.pf2e.actionspf2e.Item.ge56Lu1xXVFYUnLP]{Trip} the target of his attack. This uses the same multiple attack penalty as the attack, but it does not count as an additional attack for that penalty</p>"
+                    "description": "<p><strong>Trigger</strong> Hallod scores a critical hit with a melee attack.</p>\n<hr />\n<p><strong>Effect</strong> Hallod can attempt an Athletics check to @UUID[Compendium.pf2e.actionspf2e.Item.7blmbDrQFNfdT731]{Shove} or @UUID[Compendium.pf2e.actionspf2e.Item.ge56Lu1xXVFYUnLP]{Trip} the target of his attack. This uses the same multiple attack penalty as the attack, but it does not count as an additional attack for that penalty</p>",
+                    "rules": {
+                        "0": {
+                            "text": "<div class='compact-text' data-visibility='gm'><p><strong>{item|name}</strong> <span class=\"action-glyph\">F</span></p><p><strong>Trigger</strong> Hallod scores a critical hit with a melee attack.</p><p><strong>Effect</strong> Hallod can attempt an Athletics check to @UUID[Compendium.pf2e.actionspf2e.Item.7blmbDrQFNfdT731]{Shove} or @UUID[Compendium.pf2e.actionspf2e.Item.ge56Lu1xXVFYUnLP]{Trip} the target of his attack. This uses the same multiple attack penalty as the attack, but it does not count as an additional attack for that penalty</p></div>"
+                        }
+                    }
+                },
+                "action->One-Two Move": {
+                    "name": "One-Two Move",
+                    "description": "<p>Hallod makes two Strikes, one with each hand; he usually attacks first with his kukri. If this first attack hits, the target is @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} to the second attack (which for Hallod is usually a fist Strike). The multiple attack penalty applies to these attacks as normal</p>"
+                },
+                "action->Sneak Attack": {
+                    "name": "Sneak Attack",
+                    "description": "<p>Hallod deals 1d6 extra precision damage precision damage to @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} creatures.</p>"
                 }
             }
         },
@@ -314,6 +327,25 @@
                 "weapon->Bottled Lightning (Lesser)": {
                     "name": "Bottled Lightning (Lesser)",
                     "description": "<p><strong>Activate</strong> <span class=\"action-glyph\">A</span> Strike</p>\n<p>Bottled lightning is packed with volatile reagents that create a blast of electricity when they are exposed to air. Bottled lightning deals 1d6 electricity damage and 1 electricity splash damage. On a hit, the target becomes @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} until the start of your next turn.</p>"
+                },
+                "consumable->Elixir of Life (Minor)": {
+                    "name": "Elixir of Life (Minor)",
+                    "description": "<p><strong>Activate</strong> <span class=\"action-glyph\">A</span> Interact</p>\n<p>Elixirs of life accelerate a living creature's natural healing processes and immune system. Upon drinking this elixir, you regain @Damage[1d6[healing]] Hit Points and gain +1 item bonus to saving throws against diseases and poisons for 10 minutes.</p>\n<p>@UUID[Compendium.pf2e.equipment-effects.Item.lPRuIRbu0rHBkoKY]{Effect: Elixir of Life}</p>"
+                },
+                "strike-melee->Fist": {
+                    "name": "Fist"
+                },
+                "strike-ranged->Acid Flask": {
+                    "name": "Acid Flask"
+                },
+                "strike-ranged->Alchemist's Fire": {
+                    "name": "Alchemist's Fire"
+                },
+                "strike-ranged->Bottled Lightning": {
+                    "name": "Bottled Lightning"
+                },
+                "action->Ferocity": {
+                    "name": "Ferocity"
                 }
             }
         },
@@ -340,7 +372,12 @@
                 },
                 "action->Shattering Hooves": {
                     "name": "Shattering Hooves",
-                    "description": "<p>The hooves of the stone horse are as hard as iron; if the horse makes a Hoof Strike and gets a critical hit, the target's armor is damaged as well, the attack dealing as much damage to the armor as it dealt to the target (Hardness applies as normal). If the target uses shield block against the stone horse's critical hit with a hoof attack, treat the shield's Hardness as 5 points lower (minimum 0).</p>"
+                    "description": "<p>The hooves of the stone horse are as hard as iron; if the horse makes a Hoof Strike and gets a critical hit, the target's armor is damaged as well, the attack dealing as much damage to the armor as it dealt to the target (Hardness applies as normal). If the target uses shield block against the stone horse's critical hit with a hoof attack, treat the shield's Hardness as 5 points lower (minimum 0).</p>",
+                    "rules": {
+                        "0": {
+                            "text": "If the horse makes a Hoof Strike and gets a critical hit, the target's armor is damaged as well, the attack dealing as much damage to the armor as it dealt to the target (Hardness applies as normal). If the target uses shield block against the stone horse's critical hit with a hoof attack, treat the shield's Hardness as 5 points lower (minimum 0)."
+                        }
+                    }
                 }
             }
         },
@@ -363,6 +400,14 @@
                 "action->Many Minds": {
                     "name": "Many Minds",
                     "description": "<p>The Amalgam has many consciousnesses floating inside its mind, and they are not equally affected by mental magic. The Amalgam always treats its saving throws against mental effects as one degree better.</p>"
+                },
+                "action->Too Many Limbs": {
+                    "name": "Too Many Limbs",
+                    "description": "<p>The amalgam can make up to four Strikes, one with each of its listed melee attacks, but no more than two at any one target. It takes a -2 penalty to each attack, but the multiple attack penalty does not increase until all the attacks are made.</p>"
+                },
+                "action->Trip": {
+                    "name": "Trip",
+                    "description": "<p><strong>Requirements</strong> You have at least one hand free. Your target can't be more than one size larger than you</p>\n<hr />\n<p>You try to knock a creature to the ground. Attempt an <span data-pf2-action=\"trip\" data-pf2-glyph=\"A\">Athletics</span> check against the target's Reflex DC.</p>\n<hr />\n<p><strong>Critical Success</strong> The target falls and lands @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone} and takes @Damage[1d6[bludgeoning]] damage.</p>\n<p><strong>Success</strong> The target falls and lands prone.</p>\n<p><strong>Critical Failure</strong> You lose your balance and fall and land prone.</p>"
                 }
             }
         },
@@ -400,6 +445,40 @@
                 "weapon->Frost Vial (Moderate, Infused)": {
                     "name": "Frost Vial (Moderate, Infused)",
                     "description": "<p><strong>Activate</strong> <span class=\"action-glyph\">1</span> Strike</p>\n<hr />\n<p>The liquid reagents in this vial rapidly absorb heat when exposed to air. A frost vial deals the listed cold damage and cold splash damage. On a hit, the target takes a status penalty to its Speeds until the end of its next turn. Many types of frost vial also grant an item bonus to attack rolls.</p>\n<p>You gain a +1 item bonus to attack rolls, the bomb deals 2d6 cold damage and 2 cold splash damage, and the target takes a -10-foot penalty.</p>\n<p>@UUID[Compendium.pf2e.equipment-effects.Item.dv0IKm5syOdP759w]{Effect: Frost Vial (Moderate)}</p>"
+                },
+                "consumable->Bomber's Eye Elixir (Lesser)": {
+                    "name": "Bomber's Eye Elixir (Lesser)",
+                    "description": "<p><strong>Activate</strong> <span class=\"action-glyph\">A</span> Interact</p>\n<p>This tincture lets you pinpoint your foes. For the next 5 minutes, your alchemical bomb Strikes reduce the circumstance bonus to AC your targets gain from cover by 1.</p>"
+                },
+                "consumable->Elixir of Life (Lesser, Infused)": {
+                    "name": "Elixir of Life (Lesser, Infused)",
+                    "description": "<p><strong>Activate</strong> <span class=\"action-glyph\">A</span> Interact</p>\n<p>Elixirs of life accelerate a living creatures natural healing processes and immune system. Upon drinking this elixir, you regain @Damage[(3d6+6)[healing]] Hit Points and gain +1 item bonus to saving throws against diseases and poisons for 10 minutes.</p>\n<p>@UUID[Compendium.pf2e.equipment-effects.Item.lPRuIRbu0rHBkoKY]{Effect: Elixir of Life}</p>"
+                },
+                "strike-melee->Fist": {
+                    "name": "Fist"
+                },
+                "strike-ranged->Alchemist's Fire": {
+                    "name": "Alchemist's Fire"
+                },
+                "strike-ranged->Frost Vial": {
+                    "name": "Frost Vial"
+                },
+                "strike-ranged->Acid Flask": {
+                    "name": "Acid Flask"
+                },
+                "strike-ranged->Bottled Lightning": {
+                    "name": "Bottled Lightning"
+                },
+                "action->Ferocity": {
+                    "name": "Ferocity"
+                },
+                "action->Alchemy": {
+                    "name": "Alchemy",
+                    "description": "<p>The Sculptor has used his alchemy ability to create 4 @UUID[Compendium.pf2e.equipment-srd.Item.gWr4q4HiyGhETA8H]{Alchemist's Fire (Moderate)}, 2 @UUID[Compendium.pf2e.equipment-srd.Item.TZUskLT7yvP7N2co]{Elixir of Life (Lesser)}, and 4 @UUID[Compendium.pf2e.equipment-srd.Item.nVvH1ZcM7OwIVIs8]{Frost Vial (Moderate)}. These are infusions. He can spend an action to create an additional vial of any one of those, @UUID[Compendium.pf2e.equipment-srd.Item.AFR01HVd7DcZvkpP]{Bottled Lightning (Lesser)}, or a @UUID[Compendium.pf2e.equipment-srd.Item.M1k5QQc1qQLxzyCK]{Acid Flask (Lesser)}</p>"
+                },
+                "action->Quick Bomber": {
+                    "name": "Quick Bomber",
+                    "description": "<p>The Sculptor can use Interact to draw a bomb and then Strike with it.</p>"
                 }
             }
         },
@@ -417,6 +496,67 @@
                 "weapon->Bottled Lightning (Moderate, Infused)": {
                     "name": "Bottled Lightning (Moderate, Infused)",
                     "description": "<p><strong>Activate</strong> <span class=\"action-glyph\">A</span> Strike</p>\n<p>Bottled lightning is packed with volatile reagents that create a blast of electricity when they are exposed to air. Bottled lightning deals 2d6 electricity damage and 2 electricity splash damage. On a hit, the target becomes @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} until the start of your next turn. You gain a +1 item bonus to attack rolls.</p>"
+                },
+                "weapon->Tanglefoot Bag (Lesser, Infused)": {
+                    "name": "Tanglefoot Bag (Lesser, Infused)",
+                    "description": "<p><strong>Activate</strong> <span class=\"action-glyph\">1</span> Strike</p>\n<hr />\n<p>A tanglefoot bag is filled with sticky substances. When you hit a creature with a tanglefoot bag, that creature takes a -10-foot status penalty to its Speeds for 1 minute. The Escape DC is 17.</p>\n<p>On a critical hit, a creature in contact with a solid surface becomes stuck to the surface and @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Immobilized} for 1 round, and a creature flying via wings has its wings tangled, causing it to fall safely to the ground and become unable to Fly again for 1 round. Tanglefoot bags are not effective when used on a creature that is in water.</p>\n<p>The target can end any effects by Escaping or spending a total of 3 actions to carefully remove the sticky substances. These Interact actions don't have to be consecutive, and other creatures can provide the actions as well.</p>"
+                },
+                "equipment->Key": {
+                    "name": "Key"
+                },
+                "consumable->Potion of Fire Resistance (Lesser)": {
+                    "name": "Potion of Fire Resistance (Lesser)",
+                    "description": "<p>Drinking this thick, fortifying potion grants resistance 5 against fire damage for 1 hour.</p>\n<p><strong>Activate</strong> <span class=\"action-glyph\">A</span> Interact</p>"
+                },
+                "consumable->Juggernaut Mutagen (Lesser)": {
+                    "name": "Juggernaut Mutagen (Lesser)",
+                    "description": "<p><strong>Activate</strong> <span class=\"action-glyph\">A</span> Interact</p>\n<hr />\n<p>After you drink this mutagen, your body becomes thick and sturdy. You exhibit a healthy glow, though you tend to be ponderous and unobservant.</p>\n<p><strong>Benefit</strong> You gain a +1 item bonus to Fortitude saves and 5 temporary Hit Points. Whenever you are at maximum Hit Points for at least 1 full minute, you regain the temporary Hit Points.</p>\n<p><strong>Drawback</strong> You take a -2 penalty to Will saves, Perception checks and initiative rolls.</p>\n<p><strong>Duration</strong> 1 minute.</p>\n<p>@UUID[Compendium.pf2e.equipment-effects.Item.1l139A2Qik4lBHKO]{Effect: Juggernaut Mutagen (Lesser)}</p>"
+                },
+                "consumable->Stone Body Mutagen (Lesser)": {
+                    "name": "Stone Body Mutagen (Lesser)",
+                    "description": "<p><strong>Activate</strong> <span class=\"action-glyph\">A</span> Interact</p>\n<hr />\n<p>This mutagen calcifies your body making it as hard as stone.</p>\n<p><strong>Benefit</strong> You gain resistance 5 to physical damage (except bludgeoning).</p>\n<p><strong>Drawback</strong> Your speeds are reduced by 10 feet (minimum 5 feet) and you take a -2 penalty to Reflex saves.</p>\n<p><strong>Duration</strong> 10 minute.</p>\n<p>@UUID[Compendium.pf2e.equipment-effects.Item.PEPOd38VfVzQMKG5]{Effect: Stone Body Mutagen (Lesser)}</p>"
+                },
+                "consumable->Acid Energy Mutagen (Lesser)": {
+                    "name": "Acid Energy Mutagen (Lesser)",
+                    "description": "<p><strong>Activate</strong> <span class=\"action-glyph\">A</span> Interact</p>\n<hr />\n<p>When created, this mutigen is attuned to one of four energy types: acid, cold, electricity, or fire. When consumed, the mutagen suffuses your body with energy that spills out whenever you attack. At higher levels, it can even grant you the ability to unleash the energy in controlled bursts.</p>\n<p><strong>Benefit</strong> You gain resistance 5 to the attuned energy type. Whenever you score a hit with a melee weapon, add 1 damage to the attuned energy type.</p>\n<p><strong>Drawback</strong> You gain weakness 5 to the other three energy types.</p>\n<p><strong>Duration</strong> 1 minute.</p>\n<p>@UUID[Compendium.pf2e.equipment-effects.Item.C9Tnl6Q7Z5Sbw5EY]{Effect: Energy Mutagen (Lesser)}</p>"
+                },
+                "consumable->Elixir of Life (Lesser, Infused)": {
+                    "name": "Elixir of Life (Lesser, Infused)",
+                    "description": "<p><strong>Activate</strong> <span class=\"action-glyph\">A</span> Interact</p>\n<p>Elixirs of life accelerate a living creatures natural healing processes and immune system. Upon drinking this elixir, you regain @Damage[(3d6+6)[healing]] Hit Points and gain +1 item bonus to saving throws against diseases and poisons for 10 minutes.</p>\n<p>@UUID[Compendium.pf2e.equipment-effects.Item.lPRuIRbu0rHBkoKY]{Effect: Elixir of Life}</p>"
+                },
+                "backpack->Belt Pouch": {
+                    "name": "Belt Pouch"
+                },
+                "strike-melee->Fist": {
+                    "name": "Fist"
+                },
+                "strike-ranged->Acid Flask": {
+                    "name": "Acid Flask"
+                },
+                "strike-ranged->Alchemist's Fire": {
+                    "name": "Alchemist's Fire"
+                },
+                "strike-ranged->Bottled Lightning": {
+                    "name": "Bottled Lightning"
+                },
+                "strike-ranged->Tanglefoot Bag": {
+                    "name": "Tanglefoot Bag"
+                },
+                "action->Alchemy": {
+                    "name": "Alchemy",
+                    "description": "<p>Vilree has used her alchemy ability to create 4 @UUID[Compendium.pf2e.equipment-srd.Item.SgtqZxt26BdjUmEB]{Acid Flask (Moderate)}, 6 @UUID[Compendium.pf2e.equipment-srd.Item.gWr4q4HiyGhETA8H]{Alchemist's Fire (Moderate)}, 2 @UUID[Compendium.pf2e.equipment-srd.Item.97QyNEOAyYLdGaYc]{Bottled Lightning (Moderate)}, 3 lesser elixirs of life @UUID[Compendium.pf2e.equipment-srd.Item.TZUskLT7yvP7N2co]{Elixir of Life (Lesser)}, and 2 lesser tanglefoot bags @UUID[Compendium.pf2e.equipment-srd.Item.T6Appwwl6nUl56Xj]{Tanglefoot Bag (Lesser)}. These are infusions. She can spend an action to create an additional vial of any one of these items, or any of the items listed as formulas in her book.</p>"
+                },
+                "action->Far Lob": {
+                    "name": "Far Lob",
+                    "description": "<p>Vilree's bombs have a range increment of 30 feet.</p>"
+                },
+                "action->Alchemical Crossbow": {
+                    "name": "Alchemical Crossbow",
+                    "description": "<p>Vilree's crossbow can deliver bolts that are alchemically infused. As an action, she can slot an alchemical bomb into the crossbow, and the next 3 attacks she makes with it deal 1d6 damage of the type dealt by the bomb. These attacks never deal splash damage.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.ucAwSIZsGrpBLg6G]{Effect: Alchemical Crossbow}</p>"
+                },
+                "action->Quick Bomber": {
+                    "name": "Quick Bomber",
+                    "description": "<p>Vilree can interact to draw a bomb and then make a Strike with it.</p>"
                 }
             }
         },
