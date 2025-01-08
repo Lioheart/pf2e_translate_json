@@ -672,7 +672,7 @@ def process_files(folder, version, type_system):
                             # Jeśli posiada rules, dodaj
                             if item.get('system', {}).get('rules'):
                                 for index, rule in enumerate(item['system']['rules']):
-                                    if not rule.get('label', '').startswith('PF2E') and rule.get('label'):
+                                    if not rule.get('label', '').startswith('PF2E') and rule.get('label') and not rule.get('label', '').startswith('{item'):
                                         transifex_dict["entries"][name]['items'][item_name]["rules"].update({index:{}})
                                         transifex_dict["entries"][name]['items'][item_name]["rules"][index].update({"label": rule.get('label')})
 
