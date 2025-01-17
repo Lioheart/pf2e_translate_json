@@ -10,21 +10,11 @@
                 },
                 "action->Petrifying Glance": {
                     "name": "Petrifying Glance",
-                    "description": "<p>When a creature the basilisk can see within 30 feet starts its turn, the basilisk can use its reaction to glance at the creature.</p>\n<p>The creature must attempt a @Check[fortitude|dc:20] save. If it fails, it gains the @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1} condition for 1 minute as its body slowly stiffens.</p>",
-                    "rules": {
-                        "0": {
-                            "label": "{item|name}"
-                        }
-                    }
+                    "description": "<p>When a creature the basilisk can see within 30 feet starts its turn, the basilisk can use its reaction to glance at the creature.</p>\n<p>The creature must attempt a @Check[fortitude|dc:20] save. If it fails, it gains the @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1} condition for 1 minute as its body slowly stiffens.</p>"
                 },
                 "action->Petrifying Gaze": {
                     "name": "Petrifying Gaze",
-                    "description": "<p>The basilisk stares at a creature it can see within 30 feet. If the creature can see the basilisk, that creature must attempt a @Check[fortitude|dc:22] save.</p>\n<p>If it fails and hasn't already gained the slowed condition from Petrifying Glance or this ability, it gains the @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1} condition. If the creature fails this save when it already has the slowed condition from this ability or Petrifying Glance, the creature is permanently turned to @UUID[Compendium.pf2e.conditionitems.Item.dTwPJuKgBQCMxixg]{Stone}.</p>\n<p>A creature petrified in this manner that is coated with fresh basilisk blood is instantly restored to flesh. A single basilisk contains enough blood to coat up to 2 creatures in this manner.</p>",
-                    "rules": {
-                        "0": {
-                            "label": "{item|name}"
-                        }
-                    }
+                    "description": "<p>The basilisk stares at a creature it can see within 30 feet. If the creature can see the basilisk, that creature must attempt a @Check[fortitude|dc:22] save.</p>\n<p>If it fails and hasn't already gained the slowed condition from Petrifying Glance or this ability, it gains the @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1} condition. If the creature fails this save when it already has the slowed condition from this ability or Petrifying Glance, the creature is permanently turned to @UUID[Compendium.pf2e.conditionitems.Item.dTwPJuKgBQCMxixg]{Stone}.</p>\n<p>A creature petrified in this manner that is coated with fresh basilisk blood is instantly restored to flesh. A single basilisk contains enough blood to coat up to 2 creatures in this manner.</p>"
                 }
             }
         },
@@ -553,7 +543,7 @@
                 },
                 "action->Hellfire Breath": {
                     "name": "Hellfire Breath",
-                    "description": "<p>The hell hound breathes flames that deal @Damage[4d6[fire]] damage to all creatures in a @Template[cone|distance:15]. Each affected creature must attempt a @Check[reflex|dc:19|basic] save.</p>\n<p>The hell hound can't use Breath Weapon again for [[/br 1d4 #Recharge Hellfire Breath]]{1d4 rounds}. If the hell hound would take fire damage or is the target of a fire effect, its Hellfire Breath recharges.</p>"
+                    "description": "<p>The hell hound breathes flames that deal @Damage[4d6[fire]|options:area-damage] damage to all creatures in a @Template[cone|distance:15]. Each affected creature must attempt a @Check[reflex|dc:19|basic|options:area-effect] save.</p>\n<p>The hell hound can't use Breath Weapon again for [[/gmr 1d4 #Recharge Hellfire Breath]]{1d4 rounds}. If the hell hound would take fire damage or is the target of a fire effect, its Hellfire Breath recharges.</p>"
                 },
                 "action->Pack Attack": {
                     "name": "Pack Attack",
@@ -621,7 +611,7 @@
                 },
                 "action->Poison Breath": {
                     "name": "Poison Breath",
-                    "description": "<p>The dragon breathes a toxic cloud that deals @Damage[5d6[poison]] damage in a @Template[cone|distance:30]. Each creature in the area must attempt a @Check[reflex|dc:21|basic] save.</p>\n<p>The dragon can't use their Poison Breath again for [[/br 1d4 #Recharge Poison Breath]]{1d4 rounds}.</p>"
+                    "description": "<p>The dragon breathes a toxic cloud that deals @Damage[5d6[poison]] damage in a @Template[cone|distance:30]. Each creature in the area must attempt a @Check[reflex|dc:21|basic] save.</p>\n<p>The dragon can't use their Poison Breath again for [[/gmr 1d4 #Recharge Poison Breath]]{1d4 rounds}.</p>"
                 }
             }
         },
@@ -1115,7 +1105,7 @@
                 },
                 "action->Terrifying Charge": {
                     "name": "Terrifying Charge",
-                    "description": "<p>The giant Strides and makes a horns Strike with a +4 circumstance bonus to damage.</p>\n<p>If the strike hits, the giant attempts to @UUID[Compendium.pf2e.actionspf2e.Item.2u915NdUyQan6uKF]{Demoralize} the target.</p>"
+                    "description": "<p>The giant Strides and makes a horns Strike with a +4 circumstance bonus to damage.</p>\n<p>If the strike hits, the giant attempts to [[/act demoralize]] the target.</p>"
                 }
             }
         },
