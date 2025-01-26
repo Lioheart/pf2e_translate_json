@@ -82,6 +82,8 @@ def copy_addon_folders():
 
 
 def read_leveldb_to_json(leveldb_path, output_json_path):
+    print(leveldb_path)
+    print(output_json_path)
     def list_subfolders(directory):
         try:
             # Lista folderów w katalogu
@@ -99,6 +101,7 @@ def read_leveldb_to_json(leveldb_path, output_json_path):
     for sub_folders in folders_list:
         output_path = rf'{output_json_path}\{sub_folders}.json'
         output_folder = rf'{output_json_path.split("\\")[0]}\packs\{sub_folders}'.replace('\\', '/')
+        print('output_folder', output_folder)
 
         # Ensure the output folder exists
         output_file = output_path.replace('\\', '/')
@@ -1202,9 +1205,28 @@ else:
         zip_ref.extractall(extract_folder)
 
 move_files(fr'{extract_folder}/pf2e-specific-familiars/packs', fr'{extract_folder}/packs')
+
 read_leveldb_to_json(fr'{extract_folder}\packs', fr'{extract_folder}\output')
 # === === === === === === === === === === === === === === === === === === === === === === === === === === === === ===
+# Addons13
+# Ścieżka do pliku z wersją addon13
+add_13_url = "https://github.com/7H3LaughingMan/pf2e-assistant/releases/latest/download/module.json"
 
+path_13, headers_13 = urlretrieve(add_13_url, 'module_13.json')
+version_13 = 'addon_13_' + json.loads(open('module_13.json', 'r', encoding='utf-8').read())["version"]
+zip_addons13_filename = "pf2e-assistant.zip"
+zip_addons13 = 'https://github.com/7H3LaughingMan/pf2e-assistant/releases/latest/download/module.zip'
+extract_folder = 'pack_addon_13'
+print()
+print("*** Wersja dodatku_13 PF2E: ", version_13, " ***")
+
+if create_version_directory(version_13):
+    download_and_extract_zip(zip_addons13, zip_addons13_filename, extract_folder)
+else:
+    with zipfile.ZipFile(zip_addons13_filename, 'r') as zip_ref:
+        zip_ref.extractall(extract_folder)
+
+read_leveldb_to_json(fr'{extract_folder}\packs', fr'{extract_folder}\output')
 
 # === === === === === === === === === === === === === === === === === === === === === === === === === === === === ===
 
@@ -1251,6 +1273,9 @@ process_files(folder, version_11, "pf2e-kineticists-companion")
 
 folder = r'pack_addon_12/output'
 process_files(folder, version_12, "pf2e-specific-familiars")
+
+folder = r'pack_addon_13/output'
+process_files(folder, version_13, "pf2e-assistant")
 
 copy_addon_folders()
 clean()
