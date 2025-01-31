@@ -23,12 +23,76 @@
                 }
             }
         },
+        "Bhuta Servant": {
+            "name": "Bhuta Servant",
+            "blurb": "Variant bhuta",
+            "languagesDetails": "Speak with plants",
+            "hpDetails": "void healing",
+            "items": {
+                "spellcastingEntry->Primal Innate Spells": {
+                    "name": "Primal Innate Spells"
+                },
+                "spell->Speak with Plants (Constant)": {
+                    "name": "Speak with Plants (Constant)"
+                }
+            }
+        },
+        "Boggard Cultist": {
+            "name": "Boggard Cultist",
+            "publicNotes": "<p>Boggard warriors exalt single combat and prefer to fight alone so that no one can contest their kills. They have been known to pursue enemies who flee combat with a single-mindedness that seems almost supernatural.</p>\n<hr />\n<p>Boggards are aggressive humanoid amphibians who thrive in swamps, marshes, and even some rain forests. Boggards hatch from eggs into tadpoles, fiercely competing for food and even consuming their siblings in that struggle. Over 3 years, the surviving boggards develop arms, legs, and lungs while learning the rudiments of hunting, crafts, and warfare\u2014everything needed to survive in their might-makes-right society. At the top of most boggard hierarchies lords a hulking swampseer imbued with sinister divine magic.</p>",
+            "blurb": "Variant boggard",
+            "speedsDetails": "swamp passage",
+            "items": {
+                "spellcastingEntry->Divine Prepared Spells": {
+                    "name": "Divine Prepared Spells"
+                },
+                "spellcastingEntry->Cleric Domain Spells": {
+                    "name": "Cleric Domain Spells"
+                },
+                "equipment->Ring of Keys": {
+                    "name": "Ring of Keys"
+                }
+            }
+        },
+        "Briargeist": {
+            "name": "Briargeist",
+            "publicNotes": "<p>Briargeists are verdorites unique to Tanglebriar. Millennia spent steeping in Treerazer's corruptive influence has granted them far greater strength while distorting their forms away from the vaguely humanoid to an animate tangle of thorny vines, roots, and fungal growths.</p><h2>About Verdorites</h2><p>Verdorites are the enraged spectral echoes left behind when an ecosystem experiences a catastrophic collapse. Calling upon the essences of millions of extinguished plants and animals, they punish any they deem responsible for the disaster, as well as whoever might try to harm the lands to which they are bound. Additional verdorites are detailed on pages 164\u2013165 of Pathfinder Book of the Dead.</p>",
+            "languagesDetails": "Speak with plants",
+            "items": {
+                "spellcastingEntry->Primal Innate Spells": {
+                    "name": "Primal Innate Spells"
+                },
+                "spell->Tangling Creepers (At Will)": {
+                    "name": "Tangling Creepers (At Will)"
+                },
+                "spell->Nature's Pathway (At Will, Within Tanglebriar Only)": {
+                    "name": "Nature's Pathway (At Will, Within Tanglebriar Only)"
+                },
+                "spell->Speak with Plants (Constant)": {
+                    "name": "Speak with Plants (Constant)"
+                }
+            }
+        },
         "Captain Talymir": {
             "name": "Captain Talymir",
             "publicNotes": "<p>Graveknights are undead warriors granted unlife by a cursed suit of armor.</p>",
             "blurb": "Male graveknight",
             "sensesDetails": "darkvision",
             "hpDetails": "rejuvenation, void healing"
+        },
+        "Corrupt Grove": {
+            "name": "Corrupt Grove",
+            "descriptionHazard": "<p>A noisome mass of fungus at the center of the grove raises fungal guardians from the ground to defend itself.</p>",
+            "disable": "<p>@Check[survival|dc:42] (master) six times to carefully remove all the tangled fungal clots that absorb Tanglebriar's ambient energies for nourishment or @Check[religion|dc:45] (legendary) on the grove three times by a character who has holy sanctification and who uses prayer to exorcise the unholy energies that sustain the corrupt grove</p>",
+            "reset": "<p>The corrupt grove resets 1 minute after no enemies are within the grove itself or attempting to damage the grove from beyond the crater's perimeter.</p>",
+            "routine": "<p>(1 action; poison, primal) The corrupt grove pulses and exudes a blast of toxic spores in a @Template[type:cone|distance:60] that targets the area with the densest concentration of intruders. Creatures in this area take @Damage[8d6[poison]] damage (@Check[fortitude|dc:37|basic|traits:poison,primal] save).</p>",
+            "stealth": "<p>(expert)</p>",
+            "items": {
+                "action->Awaken Guardians": {
+                    "name": "Awaken Guardians",
+                    "description": "<p><strong>Trigger</strong> A creature damages the corrupt grove, attempts but fails to disable it, or ends their turn within 10 feet of the central mass</p><hr /><p><strong>Effect</strong> The corrupt grove suddenly contracts and then exudes an unsettling, trumpeting howl and rolls initiative.</p>"
+                }
+            }
         },
         "Degholau": {
             "name": "Degholau",
@@ -111,7 +175,7 @@
                 },
                 "action->Change Shape": {
                     "name": "Change Shape",
-                    "description": "<p>The eshmok turns into their fungus form or back into their normal humanoid wasp form. In fungus form, they lose their fly Speed and can't make stinger Strikes. In wasp form, they gain a tendril melee Strike (+21 for 2d8+9 slashing plus eshmok infection); the tendril strike has the agile, magical, reach 10 feet, and unholy traits.</p><hr /><p>@Localize[PF2E.NPC.Abilities.Glossary.ChangeShape]</p>"
+                    "description": "<p>The eshmok turns into their fungus form or back into their normal humanoid wasp form. In fungus form, they lose their fly Speed and can't make stinger Strikes. In fungus form, they gain a tendril melee Strike (+21 for 2d8+9 slashing plus eshmok infection); the tendril strike has the agile, magical, reach 10 feet, and unholy traits.</p><hr /><p>@Localize[PF2E.NPC.Abilities.Glossary.ChangeShape]</p>"
                 },
                 "action->Eshmok Infection": {
                     "name": "Eshmok Infection",
@@ -120,6 +184,17 @@
                 "action->Infesting Exhalation": {
                     "name": "Infesting Exhalation",
                     "description": "<p>The eshmok exhales a wave of stinging fiendish wasps out in a @Template[type:cone|distance:30], dealing @Damage[4d8[poison]] damage to every creature within the cone (@Check[reflex|dc:28|basic] save). The swarming fiend wasps linger in the area for 6 rounds or until the eshmok is able to use Infesting Exhalation again, whichever comes first. Each creature damaged by Infesting Exhalation or that enters the area must succeed at a @Check[fortitude|dc:28] save or take @Damage[2d8[persistent,poison]] damage and become @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 1} as the poison renders them dizzy and nauseous. At the end of each of their turns, they can attempt a new Fortitude save to end the effects. The eshmok can't use Infesting Exhalation again for [[/gmr 1d6 #Recharge Infesting Exhalation]]{1d6 rounds}.</p>"
+                }
+            }
+        },
+        "Fungal Amalgamite": {
+            "name": "Fungal Amalgamite",
+            "publicNotes": "<p>Teleportation magic can prove a difficult undertaking, even for experienced spellcasters. It requires precise calculation and timing, knowledge of the intended destination, and meticulous control over surging conjuration magics. A mistake in even the most minute element of such a spell can lead to disastrous results for those involved. When a particularly powerful spellcaster makes an error of this kind, either through arrogance or simple misjudgment, they might transform into an amalgamite.</p>\n<p>A mass of flesh and misaligned limbs, an amalgamite is the warped body of a former spellcaster, sometimes joined with another version of itself to incorporate additional limbs or other irregularities. They're still alive, but they have become aberrants mentally and physically, with only the vaguest memories of their previous existence, which makes them a dangerous and bewildering foe. Their weird, warped anatomy constantly shifts and regrows, allowing the creatures to shrug off physical blows save those that pierce through its flesh and into its core being.</p>\n<p>The magical residue of an amalgamite's creation radiates from it, seeping into and destabilizing any living beings that get too close. Infected creatures then further spread the amalgamite's aura among larger groups of allies and foes alike. The amalgamite uses this power to manipulate and confuse their enemies, whom they can teleport into traps, force into confrontations with other enemies, or draw close into striking range with their own odd appendages.</p>",
+            "blurb": "Variant amalgamite",
+            "hpDetails": "Regeneration 10 (deactivated by piercing)",
+            "items": {
+                "spellcastingEntry->Occult Innate Spells": {
+                    "name": "Occult Innate Spells"
                 }
             }
         },
@@ -142,10 +217,110 @@
                 }
             }
         },
+        "Fungal Marsh Giant": {
+            "name": "Fungal Marsh Giant",
+            "publicNotes": "<p>Dwellers of brackish coastal salt marshes and fetid bogs and swamps, marsh giants appear hideous to most airbreathers, with fishlike mouths, slimy graygreen skin, and dark, beady eyes. They prefer to eat the flesh of those they slay in battle, including other marsh giants, and guzzle stagnant water from cauldrons or directly from their swampy homes.</p>\n<p>Marsh giant clans are insular, with each clan dedicating itself to zealous worship of a sea-dwelling deity, demon lord, or stranger entity. Whatever forces call to the marsh giants sometimes ensnare boggards and ogres as well, gathering in grim worship. Rather than favor these humanoid hangerson, marsh giants lavish attention on favored pets: krooths, giant octopuses, or primeval creatures like dinosaurs and the crocodilian deinosuchuses.</p>\n<p>Barely topping 11 feet tall and 1,000 pounds, marsh giants are small for giants but make up for their stature with their zealotry.</p>\n<hr />\n<p>Giants are massive humanoid creatures who live in remote regions throughout the world. They vary widely but are united in their hunger, requiring sustenance of their own element along with the feasts one would expect from such a massive humanoid. Although a simple matter for some giants, more esoteric types find this need a harsh reality. While a massive fistful of ice or snow alongside their meal will satisfy a frost giant, shadow giants hunger for the coagulated shadows of the Netherworld.</p>",
+            "blurb": "Variant marsh giant",
+            "items": {
+                "spellcastingEntry->Occult Innate Spells": {
+                    "name": "Occult Innate Spells"
+                }
+            }
+        },
         "Grizzer": {
             "name": "Grizzer",
             "publicNotes": "<p>These gangly fey lizards are known for two traits. First, they look ridiculous when they run, dashing on hind legs while waving their front legs wildly in the air. Second, they're inveterate thieves with the ability to store an extraordinary amount of goods in their stomach. Many grizzers appeared in the River Kingdoms a little over 10 years ago, but several coordinated hunts drove them further southwest, where they've begun to thrive in the forests of Razmiran.</p><h2>Strange Fey Appetites</h2><p>A grizzer's strange appetite isn't unique among fey. Azarpals, for example, can store food in their bellies and infuse them with poisons that wreak havoc on feasts and banquets. Stories of whales swimming in otherworldly seas that have swallowed entire villages, or of duplicitous serpentine fey who can assume the forms of those they consume, suggest that fey with strange appetites aren't so unusual on the First World.</p>",
             "languagesDetails": "Can't Speak Any Language"
+        },
+        "Gruddunk": {
+            "name": "Gruddunk",
+            "publicNotes": "<p>Harpies are amalgamations of human and bird, resembling feral humans with wings, talons, and sharp teeth. They use their ancestral control of the wind to lure prey or even directly pull in their next meal. They enjoy causing confusion and fear in their prey before they strike, believing it creates a savory flavor in the flesh. Harpies can eat most creatures but strongly prefer sapient prey\u2014humans and elves in particular. Although harpies will eat goblins if sufficiently hungry, they dislike their flavor and avoid eating them if possible. This doesn't comfort goblins, of course, who have a particularly strong fear of harpies.</p>\n<p>Because their aeries often reek with the gore of their kills and careless spatters of guano, harpies carry a distinctly vile scent that canny travelers associate with danger. Harpies who roost close to civilization make better efforts to keep clean, though these efforts have mixed results.</p>\n<p>Somewhere among the filth, most aeries have a shrine dedicated to the demon lord Pazuzu. Harpy legends credit him with raising them up from simple air spirits to their current station, and their gratitude typically takes the shape of a sketched figure in a corner piled with offerings. More devout families build portable wooden shrines that are carried from aerie to aerie for generations.</p>\n<p>Harpies live in family groups or larger clans. Most adults stand 5 feet tall and weigh around 90 pounds. While some use relatively simple weapons, those who master the use of the bow are regarded as heroes among their kind.</p>",
+            "blurb": "Variant male harpy",
+            "languagesDetails": "Wind's whispers",
+            "items": {
+                "spellcastingEntry->Divine Prepared Spells": {
+                    "name": "Divine Prepared Spells"
+                },
+                "consumable->Scroll of Heal (Rank 7)": {
+                    "name": "Scroll of Heal (Rank 7)",
+                    "description": "<p>@UUID[Compendium.pf2e.spells-srd.Item.rfZpqmj0AIIdkVIs]{Heal}</p><hr /><p>Casting a Spell from a scroll requires holding the scroll in one hand and activating it with a Cast a Spell activity using the normal number of actions for that spell.</p>\n<p>The spell must appear on your spell list. Because you're the one Casting the Spell, use your spell attack modifier and spell DC. The spell also gains the appropriate trait for your tradition (arcane, divine, occult, or primal).</p>\n<p>Any physical costs are provided when a scroll is created, so you don't need to provide them when casting from a scroll. If the spell requires a locus, you must have that locus to Cast the Spell from a scroll.</p>\n<hr />\n<p><em>Note: To create a scroll or wand of a specific spell, drag the spell from the compendium or compendium browser into the inventory of a PC, NPC, or loot actor.</em></p>"
+                },
+                "backpack->Sleeves of Storage (Greater)": {
+                    "name": "Sleeves of Storage (Greater)",
+                    "description": "<p>This loose robe has wide, voluminous sleeves that each contain an extradimensional space. These spaces each function as a @UUID[Compendium.pf2e.equipment-srd.Item.jaEEvuQ32GjAa8jy]{Spacious Pouch (Type I)} that can hold up to 20 Bulk of items (for a total of 40 Bulk), though no individual item can be of more than 1 Bulk; the sleeves grow slightly heavy as you reach maximum capacity. You can add or remove an item from a sleeve with a single hand free as an Interact action.</p>\n<p>If a sleeve is completely empty, you can place your own familiar into that extradimensional space. It can survive comfortably in your sleeve for up to 4 hours, after which it begins to <em>suffocate</em>. While in your sleeve, it can't be affected or targeted by any effects, but you don't benefit from any master abilities. A familiar can exit the sleeve of its own volition with a single action that has the <em>manipulate</em> and <em>move</em> traits. You can't place any other creature into your sleeves, nor can you place your familiar in a sleeve if it's larger than Tiny. If your familiar is in your sleeve, you can't place any items in the sleeve.</p>"
+                }
+            }
+        },
+        "Gruntch": {
+            "name": "Gruntch",
+            "publicNotes": "<p>While most qlippoths focus on wiping mortals from existence, gongorinans follow the divergent plan of trapping mortals in forms incapable of understanding their actions and performing any sin meriting condemnation to the Outer Rifts. What may seem as a mercy to some is a matter of dire necessity to the gongorinans, who see killing sinful mortals as tantamount to helping their foes.</p>\n<hr />\n<p>Long before the creatures known as demons came to be the dominant force in the Outer Rifts, qlippoth ruled the innumerable cracks of the Outer Sphere. These inimical creatures are a form of primordial and alien evil that predates mortal life, and most immortal life as well. Since the rise of mortal sin and the associated expansion of demonic life through the Outer Rifts, qlippoth have been driven to their deepest reaches, and they seethe with rancor at the loss of their realms. Yet, rather than directly oppose demons, qlippoth instead turn to the source\u2014mortal sin\u2014and wage an endless war to eradicate all creatures capable of sinful acts so that the demonic tide might be turned back. To ensure they do not bolster their foe's ranks, they enact horrific transformations on their targets, converting their victims into beings incapable of discerning right from wrong; this renders them unable to be judged by Pharasma's courts and thus incapable of becoming fiends. Most mortals consider the ministrations of a qlippoth to be far worse than any fate awaiting them in the afterlife.</p>",
+            "blurb": "Variant gongorinan",
+            "speedsDetails": "unfettered movement",
+            "languagesDetails": "Telepathy 100 feet",
+            "items": {
+                "spellcastingEntry->Occult Innate Spells": {
+                    "name": "Occult Innate Spells"
+                },
+                "spell->Unfettered Movement (Constant)": {
+                    "name": "Unfettered Movement (Constant)"
+                },
+                "spell->One with Stone (At Will)": {
+                    "name": "One with Stone (At Will)"
+                }
+            }
+        },
+        "Invidiak": {
+            "name": "Invidiak",
+            "publicNotes": "<p>An invidiak has no physical body and is born out of a deep sense of envy over this lack. An invidiak only feels properly \"alive\" when they're possessing a host. In many cases, an invidiak remains dormant in such a host, spending months, even years, observing from within and building up its influence over the host slowly, so as to cause as much long-lasting despair and emotional trauma to the host's friends and family as possible.</p><h2>Lengthy Possessions</h2><p>An invidiak can possess a favored host for an unlimited amount of time, and over the course of years their influence can result in their host gaining strange new and unique supernatural powers that grow from this spiritual corruption. Such powers only function as long as the possession lasts; if the invidiak is forced out of the body, these powers vanish and don't return, even if the invidiak later re-possesses the same host. These unique invidiaks are generally much more powerful than the typical one presented here.</p>",
+            "allSavesBonus": "+1 to all saves vs. magic",
+            "languagesDetails": "Telepathy 100 feet",
+            "items": {
+                "spellcastingEntry->Divine Innate Spells": {
+                    "name": "Divine Innate Spells"
+                },
+                "spell->Possession (Range Touch)": {
+                    "name": "Possession (Range Touch)"
+                },
+                "spell->Translocate (At Will)": {
+                    "name": "Translocate (At Will)"
+                }
+            }
+        },
+        "Iravalinn Morgethai": {
+            "name": "Iravalinn Morgethai",
+            "blurb": "Male elf wizard",
+            "items": {
+                "spellcastingEntry->Arcane Prepared Spells": {
+                    "name": "Arcane Prepared Spells"
+                },
+                "weapon->+2 Greater Striking Staff of Elemental Power (Major)": {
+                    "name": "+2 Greater Striking Staff of Elemental Power (Major)",
+                    "description": "<p>This staff is tapered at the base and carved into a gem-studded twist at the top. While wielding the staff, you gain a +2 circumstance bonus to checks to identify elemental creatures.</p>\n<p><strong>Activate</strong> Cast a Spell</p>\n<hr />\n<p><strong>Effect</strong> You expend a number of charges from the staff to cast a spell from its list.</p>\n<ul>\n<li><strong>Cantrip</strong> @UUID[Compendium.pf2e.spells-srd.Item.IxhGEKl63R4QBvkj]{Frostbite}</li>\n<li><strong>1st</strong> @UUID[Compendium.pf2e.spells-srd.Item.y6rAdMK6EFlV6U0t]{Breathe Fire}, @UUID[Compendium.pf2e.spells-srd.Item.Rn2LkoSq1XhLsODV]{Pummeling Rubble}, @UUID[Compendium.pf2e.spells-srd.Item.zDJS8E66UI0himqV]{Thunderstrike}</li>\n<li><strong>2nd</strong> @UUID[Compendium.pf2e.spells-srd.Item.ZxHC7V7HtjUsB8zH]{Blazing Bolt}, @UUID[Compendium.pf2e.spells-srd.Item.Fr58LDSrbndgld9n]{Resist Energy}</li>\n<li><strong>3rd</strong> @UUID[Compendium.pf2e.spells-srd.Item.sxQZ6yqTn0czJxVd]{Fireball}, @UUID[Compendium.pf2e.spells-srd.Item.9AAkVUCwF6WVNNY2]{Lightning Bolt}</li>\n<li><strong>4th</strong> @UUID[Compendium.pf2e.spells-srd.Item.Fr58LDSrbndgld9n]{Resist Energy}, @UUID[Compendium.pf2e.spells-srd.Item.IarZrgCeaiUqOuRu]{Wall of Fire}</li>\n<li><strong>5th</strong> @UUID[Compendium.pf2e.spells-srd.Item.xxWhyl81w3ckslAU]{Howling Blizzard}, @UUID[Compendium.pf2e.spells-srd.Item.R5FHRv7VqyRnxg2t]{Wall of Ice}</li>\n<li><strong>6th</strong> @UUID[Compendium.pf2e.spells-srd.Item.TDNlDWbYb58Y55Da]{Chain Lightning}, @UUID[Compendium.pf2e.spells-srd.Item.sxQZ6yqTn0czJxVd]{Fireball}</li>\n</ul>\n<p><strong>Craft Requirements</strong> Supply one casting of all listed ranks of all listed spells.</p>"
+                },
+                "equipment->Bands of Force (Greater)": {
+                    "name": "Bands of Force (Greater)",
+                    "description": "<p>Decorated with clear gemstones, these thick metal bands spread an inflexible layer of force over your body. The force grants you a +2 item bonus to AC and saving throws, and a maximum Dexterity modifier of +5 as armor. You can affix talismans to the bands as though they were light armor.</p>\n<p><strong>Activate\u2014Return Force</strong> <span class=\"action-glyph\">R</span> (force, manipulate)</p>\n<p><strong>Trigger</strong> A creature critically misses you with a melee Strike</p>\n<hr />\n<p><strong>Effect</strong> You Shove the creature using the bands' Athletics modifier of [[/r d20+21]]{+21}.</p>"
+                },
+                "equipment->Choker of Elocution (Greater)": {
+                    "name": "Choker of Elocution (Greater)",
+                    "description": "<p>This platinum choker bears characters from three language's alphabet, and it gives knowledge of those languages and the associated culture's customs.</p>\n<p>You gain a +2 item bonus to Society checks and the ability to understand, speak, and write the chosen languages (Aklo, Arboreal, and Fey).</p>\n<p>Your excellent elocution reduces the DC of the flat check to perform an auditory action while deafened from 5 to 3.</p><hr /><p><strong>Craft Requirements</strong> You know the languages the choker grants.</p>"
+                }
+            }
+        },
+        "Irshandi": {
+            "name": "Irshandi",
+            "blurb": "Variant female siabrae",
+            "speedsDetails": "earth glide",
+            "hpDetails": "void healing, rejuvenation",
+            "items": {
+                "spellcastingEntry->Primal Prepared Spells": {
+                    "name": "Primal Prepared Spells"
+                },
+                "weapon->Staff of the Tempest (Major)": {
+                    "name": "Staff of the Tempest (Major)",
+                    "description": "<p>A <em>staff of the tempest</em> is usually crafted from the wood of a tree struck by lightning. It's often gnarled and blackened with the occasional spark of electricity flashing from its length. While wielding the staff, your vision is less inhibited by stormy weather. While you hold the staff, you ignore the @UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{Concealed} condition from mist, precipitation, and the like.</p><hr /><p><strong>Activate</strong> Cast a Spell</p>\n<p><strong>Effect</strong> You expend a number of charges from the staff to cast a spell from its list.</p><ul><li><strong>Cantrip</strong> @UUID[Compendium.pf2e.spells-srd.Item.kBhaPuzLUSwS6vVf]{Electric Arc}</li><li><strong>1st</strong> @UUID[Compendium.pf2e.spells-srd.Item.jfVCuOpzC6mUrf6f]{Hydraulic Push}, @UUID[Compendium.pf2e.spells-srd.Item.zDJS8E66UI0himqV]{Thunderstrike}</li><li><strong>2nd</strong> @UUID[Compendium.pf2e.spells-srd.Item.9XHmC2JgTUIQ1CCm]{Mist}, @UUID[Compendium.pf2e.spells-srd.Item.Fr58LDSrbndgld9n]{Resist Energy} (electricity only), @UUID[Compendium.pf2e.spells-srd.Item.zDJS8E66UI0himqV]{Thunderstrike}</li><li><strong>3rd</strong> @UUID[Compendium.pf2e.spells-srd.Item.9AAkVUCwF6WVNNY2]{Lightning Bolt}, @UUID[Compendium.pf2e.spells-srd.Item.it4ZsAi6XgvGcodc]{Wall of Wind}</li><li><strong>4th</strong> @UUID[Compendium.pf2e.spells-srd.Item.Y3G6Y6EDgCY0s3fq]{Hydraulic Torrent}, @UUID[Compendium.pf2e.spells-srd.Item.9AAkVUCwF6WVNNY2]{Lightning Bolt}</li><li><strong>5th</strong> @UUID[Compendium.pf2e.spells-srd.Item.Y3G6Y6EDgCY0s3fq]{Hydraulic Torrent}, @UUID[Compendium.pf2e.spells-srd.Item.JyT346VmGtRLsDnV]{Lightning Storm}</li><li><strong>6th</strong> @UUID[Compendium.pf2e.spells-srd.Item.TDNlDWbYb58Y55Da]{Chain Lightning}, @UUID[Compendium.pf2e.spells-srd.Item.Y3G6Y6EDgCY0s3fq]{Hydraulic Torrent}</li></ul><hr /><p><strong>Craft Requirements</strong> Supply one casting of all listed ranks of all listed spells.</p>"
+                }
+            }
         },
         "Lukarazyll": {
             "name": "Lukarazyll",
@@ -164,6 +339,90 @@
                 },
                 "spell->Translocate (At Will)": {
                     "name": "Translocate (At Will)"
+                }
+            }
+        },
+        "Miastrilek": {
+            "name": "Miastrilek",
+            "publicNotes": "<p>When in their true form, miastrileks have a spider-like appearance. However, they prefer humanoid forms when interacting with mortals, posing as rich or influential figures such as nobles, merchants, or leaders of criminal organizations.</p><h2>Polluters Of Flesh</h2><p>Miastrileks are demons associated with pollution and corruption, but unlike the omox (a demon that rises from souls who routinely befouled and polluted their environmental surroundings in life), the miastrilek's sin is more focused on the pollution and corruption of the flesh\u2014such as those who in life ran complex webs of corruption in society that manufactured and distributed drugs that ruined communities, or used pollution and toxins to torture and transform their victims.</p>",
+            "languagesDetails": "Plus one additional regional language, Telepathy 100 feet",
+            "items": {
+                "spellcastingEntry->Divine Innate Spells": {
+                    "name": "Divine Innate Spells"
+                },
+                "spell->Translocate (At Will)": {
+                    "name": "Translocate (At Will)"
+                },
+                "spell->Hypnotize (At Will)": {
+                    "name": "Hypnotize (At Will)"
+                },
+                "spell->Water Walk (Constant)": {
+                    "name": "Water Walk (Constant)"
+                }
+            }
+        },
+        "Mugrisant Qlippoth": {
+            "name": "Mugrisant Qlippoth",
+            "publicNotes": "<p>Mugrisants are manifestations of the Outer Rifts' capacity for destructive transformation. This qlippoth's cycle of never-ending transformation gives them an insatiable appetite. While a mugrisant can derive nourishment from any flesh, they need not eat to survive, and favor prey that are strong enough to put up a bit of a fight before being devoured, almost turning their bodies inside out to gulp down creatures nearly as large as they are.</p><h2>Constant, Horrific Change</h2><p>A mugrisant's body is always consuming itself and generating new organs. While a few of these new body parts appear in functional locations, the rest are drawn toward the mugrisant's central growth sac, a composite organ that lies within their largest maw and is used to warp the bodies of those exposed to it. A rare few who are consumed by a mugrisant don't actually die, but are instead transformed body, mind, and soul into a new qlippoth.</p>",
+            "languagesDetails": "Telepathy 100 feet",
+            "items": {
+                "spellcastingEntry->Occult Innate Spells": {
+                    "name": "Occult Innate Spells"
+                },
+                "spell->Truesight (Constant)": {
+                    "name": "Truesight (Constant)"
+                }
+            }
+        },
+        "Pukwudgie Scribe": {
+            "name": "Pukwudgie Scribe",
+            "publicNotes": "<p>Pukwudgies go by many names in many regions, but those who know of them agree that defying their mischievous nature provokes their wrath.</p>\n<p>In ancient times, pukwudgies traveled to the Universe from the First World, perhaps in the wake of the gnome emigration. These proud fey are obsessed with displays of respect, and while they first attempted to befriend mortals, each attempt ended in tragedy as the pukwudgies perceived any potential slight as a grave insult. Mortals, fearing these reactions, began to view pukwudgies as dangerous nuisances. Pukwudgies, in turn, began to resent mortals and the gods that favored them.</p>\n<p>At their best, pukwudgies play cruel jokes on mortals they encounter. At their worst, they've been known to kidnap and even kill those who don't treat them with proper respect. Violent fey like twigjacks and redcaps often gather under pukwudgie leadership, much to the pukwudgies' glee.</p>\n<p>Pukwudgies make their villages in the oldest forests, concealed under @UUID[Compendium.pf2e.spells-srd.Item.HBJPsonQnWcC3qdX]{Mirage} spells. They travel freely between the Universe and the First World through tiny portals beneath hills, trees, or stones. No strangers to violence, pukwudgies rarely travel alone and often anoint their quills or weapons with a custom-brewed poison before entering hostile situations.</p>\n<p>Standing about 2 feet tall, a pukwudgie sports sharp quills growing from their head that extends down their back. Their skin tone varies by the region in which they live, ranging from pale gray to brown.</p>",
+            "blurb": "Variant pukwudgie cleric",
+            "items": {
+                "spellcastingEntry->Divine Prepared Spells": {
+                    "name": "Divine Prepared Spells"
+                },
+                "spellcastingEntry->Primal Innate Spells": {
+                    "name": "Primal Innate Spells"
+                },
+                "spellcastingEntry->Cleric Domain Spells": {
+                    "name": "Cleric Domain Spells"
+                },
+                "spell->Invisibility (At Will, Self Only)": {
+                    "name": "Invisibility (At Will, Self Only)"
+                }
+            }
+        },
+        "Rancorous Priesthood": {
+            "name": "Rancorous Priesthood",
+            "publicNotes": "<p>Followers of Rovagug must usually conceal their devotion to the Rough Beast, hiding in remote cave complexes or abandoned ruins; but they emerge from these strongholds when they sense weakness, gathering together into a destructive, homicidal mob to hunt down high-ranking priests of rival deities or slaughter entire towns. Alternatively, if their hidden bolthole is compromised, a mob of Rovagug's faithful might emerge-not hoping to save themselves, but intent only on taking their enemies with them as they die.</p>",
+            "speedsDetails": "troop movement",
+            "hpDetails": "troop defenses",
+            "items": {
+                "spellcastingEntry->Divine Spontaneous Spells": {
+                    "name": "Divine Spontaneous Spells"
+                },
+                "spell->Blight (Doesn't Require Secondary Casters)": {
+                    "name": "Blight (Doesn't Require Secondary Casters)"
+                },
+                "action->Form Up": {
+                    "name": "Form Up"
+                },
+                "action->Troop Defenses": {
+                    "name": "Troop Defenses",
+                    "description": "<p><strong>Thresholds</strong> 130 (12 squares), 65 (8 squares)</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.TroopDefenses]</p>"
+                },
+                "action->Troop Movement": {
+                    "name": "Troop Movement",
+                    "description": "<p>Whenever the troop Strides, they first Form Up as a free action to condense into a 20-foot-by-20-foot area (minus any missing squares), then moves up to their Speed. This works just like a Gargantuan creature moving; for instance, if any square of the troop enters difficult terrain, the extra movement cost applies to the whole troop.</p>"
+                },
+                "action->Troop Spellcasting": {
+                    "name": "Troop Spellcasting",
+                    "description": "<p>When the rancorous priesthood Casts a Spell, their constituent members combine their efforts into casting a more powerful version of the spell than any one member could achieve alone.</p>\n<p>When Casting a Spell that has an area of a burst, cone, or line and doesn't have a duration, increase the area of that spell. Add 5 feet to the radius of a burst that normally has a radius of at least 10 feet (a burst with a smaller radius is not affected). Add 5 feet to the length of a cone or line that is normally 15 feet long or smaller, and add 10 feet to the length of a larger cone or line.</p>"
+                },
+                "action->Wild Swing": {
+                    "name": "Wild Swing",
+                    "description": "<p><span class=\"action-glyph\">1</span> to <span class=\"action-glyph\">3</span></p>\n<p><strong>Frequency</strong> once per round</p>\n<hr />\n<p><strong>Effect</strong> The members of the mob wildly swing their weapons-primarily greataxes-in a chaotic attack at each enemy adjacent to the troop (@Check[reflex|dc:27|basic] save). The damage depends on the number of actions.</p>\n<p><span class=\"action-glyph\">1</span> @Damage[(1d12+2)[slashing]] damage</p>\n<p><span class=\"action-glyph\">2</span> @Damage[(2d12+9)[slashing]] damage</p>\n<p><span class=\"action-glyph\">3</span> @Damage[(3d12+9)[slashing]] damage</p>"
                 }
             }
         },
@@ -210,9 +469,37 @@
                 }
             }
         },
+        "Shalelu Andosana": {
+            "name": "Shalelu Andosana",
+            "blurb": "Female elf ranger",
+            "speedsDetails": "(climb in forests)",
+            "items": {
+                "spellcastingEntry->Ranger Warden Spells": {
+                    "name": "Ranger Warden Spells"
+                },
+                "equipment->Coyote Cloak (Greater)": {
+                    "name": "Coyote Cloak (Greater)",
+                    "description": "<p>This dusty coat is made of mangy brown-and-gray coyote fur. You gain a +2 item bonus to Survival checks. If you critically succeed at your Survival check to Subsist, you can feed four times as many additional creatures.</p>"
+                }
+            }
+        },
         "Sinmold": {
             "name": "Sinmold",
             "languagesDetails": "Telepathy 100 feet"
+        },
+        "Soul Pod": {
+            "name": "Soul Pod",
+            "descriptionHazard": "<p>An oblong, puffball-like fungus shaped ominously like a bulging coffin in which Aravashnial's distorted face can be seen silently screaming.</p>",
+            "disable": "<p>@Check[religion|dc:40] three times to exorcise Aravashnial's soul from a pod, or @Check[nature|dc:43] twice to pull the well-hidden filaments that connect the spore pod to the rest of the spires</p>",
+            "reset": "<p>A soul pod deactivates once no PCs are in the spires, then resets automatically.</p>",
+            "routine": "<p>(2 actions) The soul pod releases a soulrending shriek on its first action, then on its second action exhales a blast of spore-laden wind in a @Template[type:cone|distance:40]. Creatures in this area must attempt a @Check[fortitude|dc:36] save. This blast has the air and poison traits.</p><hr><p><strong>Critical Success</strong> The creature is unaffected.</p><p><strong>Success</strong> The creature takes @Damage[4d6[poison]] damage.</p><p><strong>Failure</strong> The creature takes @Damage[8d6[poison]] damage and is knocked @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone} by the wind.</p><p><strong>Critical Failure</strong> The creature takes @Damage[16d6[poison]] damage, is knocked prone, and is blown 10 feet backward directly away from the soul pod, possibly being blown off the edge of a platform or stairwell.</p>",
+            "stealth": "<p>(master)</p>",
+            "items": {
+                "action->Soulrending Shriek": {
+                    "name": "Soulrending Shriek",
+                    "description": "<p><strong>Trigger</strong> A round begins after all demons in the spires have been slain</p><hr /><p><strong>Effect</strong> Aravashnial's distorted face unleashes an overwhelming shriek of agony that threatens to completely warp the thoughts of all intruders. All creatures within 20 feet of a soul pod must succeed at a @Check[will|dc:36] save or become @UUID[Compendium.pf2e.conditionitems.Item.yblD8fOR1J8rDwEQ]{Confused} for 1 round (1 minute on a critical failure). A confused creature can attempt a new save at the end of each of their turns to end the confusion early. The soul pods then roll initiative.</p>"
+                }
+            }
         },
         "Spear Jaw Trap": {
             "name": "Spear Jaw Trap",
@@ -227,11 +514,140 @@
                 }
             }
         },
+        "Spore Queen Quilindra": {
+            "name": "Spore Queen Quilindra",
+            "publicNotes": "<p>Hundreds of years ago, a cadre of powerful succubus assassins invaded the Abyssal realm of the demon lord of disease and fungus, Cyth-V'sug. These succubi sought to slay a powerful witch who had befouled a profane temple the assassins served. The succubi failed at their mission, but from their corpses grew the first fungus tyrants. Pleased with this development, the witch then seeded numerous worlds on the Material Plane with fungus tyrant spores, who have since grown and thrived in their new environments as rot thrives in a corpse. Today, hundreds of fungus tyrants inhabit the fouler locales of the Material Plane. They're particularly fond of large cave systems and ruined cities, but also can be found in corrupted woodlands where blighted fey rule or in the sewers of active cities that spew vast amounts of magical waste.</p>\n<p>An encounter with a normally unintelligent plant monster acting with methodical intent can be evidence of a fungus tyrant's manipulations, but fungus tyrants are equally fond of keeping other types of creatures as pets and thralls\u2014particularly attractive humanoids. Especially favored minions are given the gift of the fungus tyrant's embrace and are transformed into fungoid minions forever loyal to their pallid ruler. Yet most fungus tyrants realize that a diverse array of guardians is best, and they often choose to keep some non-fungus minions on hand to protect their lair.</p>\n<p>Fungus tyrants are violently jealous. Any who attempt to lure away their dominated pets or cure those who have been infected by them earns their eternal ire. Yet it's succubi who enrage fungus tyrants the most. In these demons, the fungus tyrant sees a former glamour and power they no longer have access to, and only the brutal destruction of these mocking memories can salve a fungus tyrant's anger. A fungus tyrant faced with someone whom they suspect might be a succubus is terrible indeed, for in such battles, the fiendish fungal beings abandon their normal approach of subtle mental trickery and bring all of their power to bear in an attempt to rip the offending creature apart. Fungus tyrants also take great delight in transforming succubi into fungoid creatures under their control.</p>\n<p>While their jealousy doesn't compel them to do battle with other fungus tyrants, they're always careful to maintain their own territories apart from any nearby kin, and they take great pains not to \"poach\" other tyrant's charmed and infested pets.</p>\n<p>A fungus tyrant is 6 feet tall and weighs 150 pounds.</p><h2>Spore Thralls</h2><p>When a creature becomes a spore thrall, it rises from death with the same statistics it had in life, but gains the fungus trait, as well as immunity to death effects, disease, @UUID[Compendium.pf2e.conditionitems.Item.6uEgoh53GbXuHpTF]{Paralyzed}, and poison, and its alignment switches to match that of the fungus tyrant who created them. When a spore thrall is slain, its soul finally travels to the Boneyard for judgment, but the fungus-encrusted physical remains often spawn new fungal creatures, such as myceloids, violet fungi, or drakauthixes. These fungal spawn are not controlled by the fungus tyrant but generally regard them as an ally or, more often, a divinity.</p>",
+            "blurb": "Female fungus tyrant",
+            "allSavesBonus": "+1 status to all saves vs. magic",
+            "sensesDetails": "darkvision",
+            "languagesDetails": "Fungaltongue, Telepathy 100 feet, Truespeech",
+            "items": {
+                "spellcastingEntry->Occult Spontaneous Spells": {
+                    "name": "Occult Spontaneous Spells"
+                },
+                "spellcastingEntry->Divine Innate Spells": {
+                    "name": "Divine Innate Spells"
+                },
+                "spell->Truespeech (Constant)": {
+                    "name": "Truespeech (Constant)"
+                },
+                "consumable->Wand of Phantasmal Calamity (Rank 8)": {
+                    "name": "Wand of Phantasmal Calamity (Rank 8)",
+                    "description": "<p>@UUID[Compendium.pf2e.spells-srd.Item.0XP2XOxT9VSiXFDr]{Phantasmal Calamity}</p><hr /><p>This baton is about a foot long and contains a single spell. The appearance typically relates to the spell within.</p>\n<p><strong>Activate</strong> Cast a Spell</p>\n<p><strong>Frequency</strong> once per day, plus overcharge</p>\n<hr />\n<p><strong>Effect</strong> You Cast the Spell at the indicated rank.</p>\n<p><strong>Craft Requirements</strong> Supply a casting of the spell at the listed rank.</p>\n<hr />\n<p><em>Note: To create a scroll or wand of a specific spell, drag the spell from the compendium or compendium browser into the inventory of a PC, NPC, or loot actor.</em></p>"
+                }
+            }
+        },
+        "Spore Stomach": {
+            "name": "Spore Stomach",
+            "descriptionHazard": "<p>A puffball-like fungus periodically vents gray spores into the air.</p>",
+            "disable": "<p>@Check[nature|dc:37] (master) three times to carefully prune away the fungal roots that connect to the garden below, or @Check[religion|dc:37] (master) three times to exorcise the demonic energies from the fungus</p>",
+            "reset": "<p>The spore stomach deactivates if it starts a turn and there are no non-fungus creatures in area <strong>E1</strong>. It then immediately resets.</p>",
+            "routine": "<p>(1 action; divine, poison) On the first round, the spore stomach sprays a 40-foot-long cone of spores into the left half of area <strong>E1</strong>. On the second round, it sprays spores into the right half of area <strong>E1</strong>. On the third round, it takes no action. It repeats this pattern thereafter every 3 rounds. A creature in the area of spores takes @Damage[10d6[poison]] damage (@Check[fortitude|dc:37|basic|traits:divine,poison] save).</p>",
+            "stealth": "<p>(master) to detect that the spore stomach is hazardous; noticing the spore stomach has a DC of 0</p>",
+            "items": {
+                "action->Defensive Spray": {
+                    "name": "Defensive Spray",
+                    "description": "<p><strong>Trigger</strong> The spore stomach takes damage, an attempt to disable it fails, or combat breaks out in area <strong>E1</strong></p><hr /><p><strong>Effect</strong> The spore stomach clenches, exuding gray spores in a @Template[type:emanation|distance:20]. Non-fungus creatures in this area take @Damage[10d6[poison]] damage (@Check[fortitude|dc:37|basic] save). The spore stomach then rolls initiative.</p>"
+                }
+            }
+        },
+        "Spore Thrall": {
+            "name": "Spore Thrall",
+            "blurb": "Fungal Ekujae cultists of Treerazer"
+        },
         "Spore Tyrannosaurus": {
             "name": "Spore Tyrannosaurus",
             "publicNotes": "<p>Widely regarded as the king of the dinosaurs, the tyrannosaurus is a massive predator with a wide mouth filled with viciously sharp teeth. Some tribes of giants have even trained tyrannosauruses as mounts or beasts of war.</p>\n<hr />\n<p>Remnants from the world's primeval era, these enormous reptilian animals still exist in large numbers in remote wildernesses or underground in magical Darklands caverns. Lizardfolk, orcs, giants, and other humanoids who live near dinosaurs use the animals as mounts, guards, or hunting beasts. Occasionally, rich nobles will collect dinosaurs to display them in menageries, which almost inevitably leads to cast-offs being nursed back to health by druids and other champions of nature. When dinosaurs establish themselves in regions outside their normal habitats, it's often the result of a large collection being released.</p>",
             "blurb": "Variant tyrannosaurus",
             "sensesDetails": "fungalsense (imprecise) 120 feet"
+        },
+        "Sporescout": {
+            "name": "Sporescout",
+            "blurb": "Fungus leshy rogue",
+            "items": {
+                "spellcastingEntry->Divine Innate Spells": {
+                    "name": "Divine Innate Spells"
+                },
+                "equipment->Religious Symbol of Treerazer": {
+                    "name": "Religious Symbol of Treerazer",
+                    "description": "<p>This piece of wood or silver is emblazoned with an image representing a deity. Some divine spellcasters, such as clerics, can use a religious symbol of their deity to use certain abilities and cast some spells. A religious symbol can be worn on the body on a chain or pin, or can be held.</p>"
+                }
+            }
+        },
+        "Swamp Blight": {
+            "name": "Swamp Blight",
+            "publicNotes": "<p>A swamp blight appears as a quivering blob of rancid brown and green mud from which dozens of hateful red eyes peer.</p><hr /><p>Blights are corruptions of nature's wrath.</p><h2>Swampy Undead</h2><p>While a swamp blight can dominate undead in its cursed domain, it prefers to use this power to gather and control undead that would prosper in a swampy environment. When building an encounter with a swamp blight, consider adjusting existing undead to match more thematically with the swampland environment, and avoid using undead that wouldn't make sense in such a region. Adjusting an undead creature's innate spells to be primal spells associated with swampy regions is a great way to achieve this customization.</p>",
+            "languagesDetails": "Telepathy (within cursed domain)",
+            "hpDetails": "fast healing 30, rejuvenation",
+            "items": {
+                "spellcastingEntry->Primal Innate Spells": {
+                    "name": "Primal Innate Spells"
+                },
+                "spell->Dominate (At Will)": {
+                    "name": "Dominate (At Will)"
+                },
+                "spell->Nature's Pathway (At Will, Within Cursed Domain Only)": {
+                    "name": "Nature's Pathway (At Will, Within Cursed Domain Only)"
+                },
+                "spell->Command (At Will, Plants Only)": {
+                    "name": "Command (At Will, Plants Only)"
+                }
+            }
+        },
+        "Tangle Khravgodon": {
+            "name": "Tangle Khravgodon",
+            "publicNotes": "<p>Few creatures can shrug off an ankhrav's acid and crunch its chitin like a khravgodon.</p>\n<hr />\n<p>Few creatures have survived as long and in as many environments as the opossum.</p>",
+            "blurb": "Variant khravgodon",
+            "allSavesBonus": "+2 circumstance to all saves vs. disease",
+            "speedsDetails": "unfettered movement",
+            "items": {
+                "spellcastingEntry->Primal Innate Spells": {
+                    "name": "Primal Innate Spells"
+                },
+                "spell->Unfettered Movement (Constant)": {
+                    "name": "Unfettered Movement (Constant)"
+                }
+            }
+        },
+        "Tanglebriar Bhuta": {
+            "name": "Tanglebriar Bhuta",
+            "blurb": "Variant bhuta",
+            "languagesDetails": "speak with animals",
+            "hpDetails": "void healing",
+            "items": {
+                "spellcastingEntry->Primal Innate Spells": {
+                    "name": "Primal Innate Spells"
+                },
+                "spell->Nature's Enmity (Only While Within the Tar Root's Cursed Domain)": {
+                    "name": "Nature's Enmity (Only While Within the Tar Root's Cursed Domain)"
+                },
+                "spell->Speak with Plants (Constant)": {
+                    "name": "Speak with Plants (Constant)"
+                },
+                "spell->Charm (Plants and Fungi Only)": {
+                    "name": "Charm (Plants and Fungi Only)"
+                }
+            }
+        },
+        "Tanglebriar Creeper": {
+            "name": "Tanglebriar Creeper",
+            "publicNotes": "<p>The monstrous, bloated spiders from the windswept realm of Leng build eerie, dangerous lairs with the aid of magically compelled slaves. Leng spiders have anywhere from five to 13 legs, but never an even number.</p>",
+            "blurb": "Variant Leng spider ",
+            "allSavesBonus": "+1 status to all saves vs. magic",
+            "sensesDetails": "detect magic, greater web sense",
+            "languagesDetails": "Truespeech",
+            "hpDetails": "fast healing 15",
+            "items": {
+                "spellcastingEntry->Occult Innate Spells": {
+                    "name": "Occult Innate Spells"
+                },
+                "spell->Truespeech (Constant)": {
+                    "name": "Truespeech (Constant)"
+                },
+                "spell->Fly (Constant)": {
+                    "name": "Fly (Constant)"
+                }
+            }
         },
         "Tanglebriar Isqulug": {
             "name": "Tanglebriar Isqulug",
@@ -254,6 +670,25 @@
                 }
             }
         },
+        "Tanglebriar Regent": {
+            "name": "Tanglebriar Regent",
+            "publicNotes": "<p>Arboreal regents are lumbering, solitary creatures responsible for guarding an entire forest. They take an especially long view of affairs and never act brashly or without much deliberation. They occasionally come together in small groups called groves to share news and pass their wisdom down to the arboreal wardens that have sprouted under their watch. In times of grave danger, all the groves in a region may gather for a great months-long meeting to plan and, eventually, act upon a threat.</p>\n<p>The typical arboreal regent is 30 feet tall, has a trunk 2 feet in diameter, and weighs 4,500 pounds.</p><hr /><p>Arboreals are guardians of the forest and representatives of the trees. As long-lived as the woods they watch over, arboreals consider themselves parents and shepherds of trees rather than their gardeners. Consequently, while arboreals tend to be slow and methodical, they are terrifyingly swift when forced to fight in defense of the woods. Though they rarely seek out the companionship of short-lived folk\u2014even elves are fugacious in the eyes of arboreals\u2014and have an inherent distrust of change, arboreals have been known to tolerate those who seek to learn from their long-winded, rambling monologues, especially if such pupils also express a desire to protect the timberlands. Against those who threaten their realm, such as loggers eager to harvest lumber or settlers aiming to establish croplands or a town, arboreals' wrath is unwavering and devastating. Perhaps ironically, arboreals are gifted at tearing down what others build\u2014a trait that serves vengeful members of their kind well.</p>",
+            "blurb": "Variant arboreal regent",
+            "languagesDetails": "Speak with plants",
+            "items": {
+                "spellcastingEntry->Primal Innate Spells": {
+                    "name": "Primal Innate Spells"
+                },
+                "spell->Speak with Plants (Constant)": {
+                    "name": "Speak with Plants (Constant)"
+                }
+            }
+        },
+        "The Putrid": {
+            "name": "The Putrid",
+            "publicNotes": "<p>The catoblepas is an aggressive beast at the best of times. Though it prefers swamps, the catoblepas has been know to forage in plains and forests for short periods, leaving behind hunting grounds tainted by its foul breath and noxious waste that other predators and prey alike avoid for days or even weeks thereafter. The catoblepas bullies those creatures it believes are a match for it, and eats everything weaker.</p>\n<p>A catoblepas is 15 feet long and weighs 2,200 pounds.</p>",
+            "blurb": "Variant catoblepas"
+        },
         "Tithekeeper": {
             "name": "Tithekeeper",
             "publicNotes": "<p>Razmir's most powerful priests deploy tithekeepers to ensure his followers don't develop sticky fingers. These ziggurat-like constructs have over two dozen legs and a trap-like mouth. At its top, a mask with a colored ribbon attached denotes its symbolic rank in the Church of Razmir.</p><h2>Instruments of Terror</h2><p>Though the tithekeeper's primary function is to collect coins, they're capable of great violence. Priests who determine a village is too far behind on payments might have their tithekeeper skewer multiple residents and wave its victims' bodies in the air as it parades through the streets. Those who survive the ordeal are highly motivated to avoid a repeat experience.</p>"
@@ -269,6 +704,13 @@
                     "name": "Primal Innate Spells"
                 }
             }
+        },
+        "Unrisen Slithermaw": {
+            "name": "Unrisen Slithermaw",
+            "publicNotes": "<p>An unrisen is a mangled conglomeration of splintered bones, decaying organs, and rotting flesh, created when a ritual such as resurrect goes catastrophically wrong. Immense care must be taken, for if the ritual is a critical failure, an unrisen can be the result\u2014as many a ritualist has learned to their horror.</p>\n<p>Unrisen are barely intelligent, aware only of the agony constantly inflicted by their flawed creation and their resentment for the living. They tend to attack the casters involved in the botched ritual first before lashing out at everyone else around them. Though an unrisen's twisted form is unrecognizable as the intended target of the resurrection, its wordless howls are often disturbingly similar to the deceased's voice. If an unrisen is destroyed before it can rise again, it's reduced to a handful of metallic blue-green salts referred to as essential salts.</p>",
+            "blurb": "Variant unrisen",
+            "languagesDetails": "can't speak any language",
+            "hpDetails": "meant to live, void healing"
         },
         "Vintalax, The Rotting God": {
             "name": "Vintalax, The Rotting God",
@@ -301,6 +743,63 @@
                     "description": "<p>@UUID[Compendium.pf2e.spells-srd.Item.9AAkVUCwF6WVNNY2]{Lightning Bolt}</p><hr /><p>This baton is about a foot long and contains a single spell. The appearance typically relates to the spell within.</p>\n<p><strong>Activate</strong> Cast a Spell</p>\n<p><strong>Frequency</strong> once per day, plus overcharge</p>\n<hr />\n<p><strong>Effect</strong> You Cast the Spell at the indicated rank.</p>\n<p><strong>Craft Requirements</strong> Supply a casting of the spell at the listed rank.</p>\n<hr />\n<p><em>Note: To create a scroll or wand of a specific spell, drag the spell from the compendium or compendium browser into the inventory of a PC, NPC, or loot actor.</em></p>"
                 }
             }
+        },
+        "Vixivax": {
+            "name": "Vixivax",
+            "publicNotes": "<p>An invidiak has no physical body and is born out of a deep sense of envy over this lack. An invidiak only feels properly \"alive\" when they're possessing a host. In many cases, an invidiak remains dormant in such a host, spending months, even years, observing from within and building up its influence over the host slowly, so as to cause as much long-lasting despair and emotional trauma to the host's friends and family as possible.</p><h2>Lengthy Possessions</h2><p>An invidiak can possess a favored host for an unlimited amount of time, and over the course of years their influence can result in their host gaining strange new and unique supernatural powers that grow from this spiritual corruption. Such powers only function as long as the possession lasts; if the invidiak is forced out of the body, these powers vanish and don't return, even if the invidiak later re-possesses the same host. These unique invidiaks are generally much more powerful than the typical one presented here.</p>",
+            "blurb": "Variant male invidiak",
+            "allSavesBonus": "+1 to all saves vs. magic",
+            "languagesDetails": "Telepathy 100 feet",
+            "items": {
+                "spellcastingEntry->Divine Innate Spells": {
+                    "name": "Divine Innate Spells"
+                },
+                "spell->Possession (Range Touch)": {
+                    "name": "Possession (Range Touch)"
+                },
+                "spell->Translocate (At Will)": {
+                    "name": "Translocate (At Will)"
+                },
+                "spell->Fear (At Will)": {
+                    "name": "Fear (At Will)"
+                }
+            }
+        },
+        "Withermold": {
+            "name": "Withermold",
+            "descriptionHazard": "<p>Coils of pale yellow thorny fungal vines on which grow hundreds of brown puffballs suddenly whip into frenzied life.</p>",
+            "disable": "<p>@Check[religion|dc:33] (master) twice to exorcise the unholy presence within the withermold, or @Check[survival|dc:35] (master) twice to safely remove the sensory tendrils growing in the mold</p>",
+            "reset": "<p>A withermold deactivates at the end of any round when there are no targets within reach to attack with thorny vine Strikes. It resets immediately unless it's used all its Spore Burst reactions for the day, in which case the withermold resets in 24 hours.</p>",
+            "routine": "<p>(3 actions) A withermold makes three Strikes with its thorny vines on its turn, splitting its Strikes up among potential targets before striking a single target more than once.</p>",
+            "stealth": "<p>(master) (or +30 and expert if a PC critically succeeded at Recalling Knowledge about the campsite's condition)</p>",
+            "items": {
+                "action->Spore Burst": {
+                    "name": "Spore Burst",
+                    "description": "<p><strong>Frequency</strong> three times per day</p>\n<p><strong>Trigger</strong> A Small or larger creature touches or attempts to enter one of the three tents</p><hr /><p><strong>Effect</strong> The thorny vines of the three withermolds growing on the tents suddenly whip into a frenzy, filling the air with clouds of toxic spores. All creatures within a tent or within 10 feet of a tent's exterior take @Damage[8d6[poison]] damage (@Check[fortitude|dc:32|basic] save). The withermolds then roll initiative.</p>"
+                }
+            }
+        },
+        "Zauglagaul": {
+            "name": "Zauglagaul",
+            "publicNotes": "<p>The magic that flows through primal dragons can manifest more animalistic or bestial features in a given type of dragon. Notably among these are the massive paired horns of the horned dragon. While their bulky frames, natural coloration, and prominent ridged scales are all remarkable in their own way, it's the horns that are most obvious and striking at first glance. Horned dragons use their horns to impale their prey in a quick and brutal display of their might. They are generally contemplative and have a fixation on knowledge and self-discipline, traits belied by their bestial appearance. As a result, horned dragons are generally more open to speaking with outsiders.</p>\n<hr />\n<p>Dragons come in myriad forms, with many having magical abilities or connections to magic. Some dragons draw greater power from magic than others, allowing them to manifest abilities or alter their physiques with prolonged exposure to magic. These dragons become more powerful as they age and strengthen their connections with their magical origins. Scholars debate the classification of these dragons, with some preferring the name magical dragons and others using traditional dragons due to their connection to specific magical traditions. Regardless of their names, these dragons share a number of characteristics: their ability to tap into magical energies, intensified might and cunning as they grow older, and an inclination to hoard vast amounts of treasure and wealth.</p>",
+            "blurb": "Variant horned dragon",
+            "allSavesBonus": "+1 status to all saves vs. primal",
+            "speedsDetails": "forest passage, trackless journey",
+            "sensesDetails": "mist vision",
+            "items": {
+                "spellcastingEntry->Primal Prepared Spells": {
+                    "name": "Primal Prepared Spells"
+                },
+                "spellcastingEntry->Primal Innate Spells": {
+                    "name": "Primal Innate Spells"
+                },
+                "spell->Entangling Flora (At Will)": {
+                    "name": "Entangling Flora (At Will)"
+                },
+                "spell->Charm (At Will)": {
+                    "name": "Charm (At Will)"
+                }
+            }
         }
     },
     "mapping": {
@@ -313,11 +812,6 @@
         "speedsDetails": "system.attributes.speed.details",
         "sensesDetails": "system.perception.details",
         "languagesDetails": "system.details.languages.details",
-        "descriptionHazard": "system.details.description",
-        "disable": "system.details.disable",
-        "reset": "system.details.reset",
-        "routine": "system.details.routine",
-        "stealth": "system.attributes.stealth.details",
         "items": {
             "converter": "translateActorItems",
             "path": "items"
@@ -325,6 +819,11 @@
         "rules": {
             "converter": "translateRules",
             "path": "system.rules"
-        }
+        },
+        "descriptionHazard": "system.details.description",
+        "disable": "system.details.disable",
+        "reset": "system.details.reset",
+        "routine": "system.details.routine",
+        "stealth": "system.attributes.stealth.details"
     }
 }
