@@ -1131,7 +1131,7 @@
         },
         "Bone Flense": {
             "name": "Bone Flense",
-            "description": "<p>The target weapon becomes imbued with Achaekek's power and glows softly with crimson light akin to that shed by a candle. When a creature with a skeleton or exoskeleton takes damage from a Strike delivered by this weapon, the creature's bones nearest to the wound instantly sprout jagged, razor-sharp spurs that flense the muscle and flesh from inside out. The creature takes an additional 1d6 persistent bleed damage from the Strike. You can use the @UUID[Compendium.pf2e.actionspf2e.Item.wfUIsKBxCBfXi1TF]{Erupting Spurs} reaction.</p><hr /><p><strong>Heightened (+2)</strong> The persistent bleed damage increases by 1d6. The damage from Erupting Spurs increases by 4d6.</p>",
+            "description": "<p>The target weapon becomes imbued with Achaekek's power and glows softly with crimson light akin to that shed by a candle. When a creature with a skeleton or exoskeleton takes damage from a Strike delivered by this weapon, the creature's bones nearest to the wound instantly sprout jagged, razor-sharp spurs that flense the muscle and flesh from inside out. The creature takes an additional 1d6 persistent bleed damage from the Strike. You can use the @UUID[Compendium.pf2e.actionspf2e.Item.wfUIsKBxCBfXi1TF]{Erupting Spurs} reaction.</p>\n<p>@UUID[Compendium.pf2e.spell-effects.Item.P6f6UnvYSF5zATyu]{Effect: Bone Flense (Damage)}</p>\n<p>@UUID[Compendium.pf2e.spell-effects.Item.5Zof6sC46ms4JLIl]{Effect: Bone Flense (Reaction)}</p><hr /><p><strong>Heightened (+2)</strong> The persistent bleed damage increases by 1d6. The damage from Erupting Spurs increases by 4d6.</p>",
             "duration": "1 minute",
             "range": "touch",
             "target": "1 weapon that is either wielded by a member of the Red Mantis or is a praying mantis's leg Strike",
@@ -2431,7 +2431,7 @@
             "name": "Darkened Forest Form",
             "description": "<p>Your apparition casts a feral shadow over your form. You can polymorph into any form listed in @UUID[Compendium.pf2e.spells-srd.Item.gfPjmG6Fe6D3MFjl]{Pest Form}. When you transform into a form granted by a spell, you gain all the effects of the form you chose from a version of the spell heightened to darkened forest form's rank. Each time you Sustain this Spell, you can choose to change to a different shape from those available via any of the associated spells.</p><hr /><p><strong>Heightened (2nd)</strong> You can also transform into the forms listed in @UUID[Compendium.pf2e.spells-srd.Item.wp09USMB3GIW1qbp]{Animal Form}.</p>\n<p><strong>Heightened (5th)</strong> You can also transform into the forms listed in @UUID[Compendium.pf2e.spells-srd.Item.1K6AYGisvo9gqdhs]{Elemental Form}.</p>",
             "duration": "1 minute",
-            "time": "2"
+            "time": "1"
         },
         "Darkened Sight": {
             "name": "Darkened Sight",
@@ -2835,7 +2835,7 @@
             "name": "Discomfiting Whispers",
             "description": "<p>You are surrounded by an aura of spiteful murmurings that incite bad luck and punish failure. Each creature that starts their turn within the area of this spell must succeed at a Will save or roll twice on their first attack roll that round and take the lower result. If an attack roll modified in this way results in a failure, the creature that rolled the failed attack takes 1d6 void damage.</p>\n<p>@UUID[Compendium.pf2e.spell-effects.Item.JfvVyMWuD8yvSrIe]{Spell Effect: Discomfiting Whispers}</p><hr /><p><strong>Heightened (+2)</strong> The void damage dealt on a failure increases by 1d6.</p>",
             "duration": "1 minute",
-            "time": "2"
+            "time": "1"
         },
         "Disguise Magic": {
             "name": "Disguise Magic",
@@ -9031,7 +9031,7 @@
         },
         "Scintillating Safeguard": {
             "name": "Scintillating Safeguard",
-            "description": "<p><strong>Trigger</strong> An effect would deal physical or energy damage to you or a creature in range.</p><hr /><p>A sparkling magical barrier envelops each target, shielding them against the triggering effect. Choose one type of physical or energy damage the triggering effect deals. Each target gains resistance 10 against that damage type for the triggering effect. The resistance applies only against the initial damage, not against any persistent damage or other lingering effects.</p><hr /><p><strong>Heightened (+1)</strong> The resistance increases by 1.</p>",
+            "description": "<p><strong>Trigger</strong> An effect would deal physical or energy damage to you or a creature in range.</p><hr /><p>A sparkling magical barrier envelops each target, shielding them against the triggering effect. Choose one type of physical or energy damage the triggering effect deals. Each target gains resistance 10 against that damage type for the triggering effect. The resistance applies only against the initial damage, not against any persistent damage or other lingering effects.</p><hr /><p><strong>Heightened (+1)</strong> The resistance increases by 1.</p>\n<p>@UUID[Compendium.pf2e.spell-effects.Item.XstFvzPDKCfmoIED]{Spell Effect: Scintillating Safeguard}</p>",
             "range": "30 feet",
             "target": "up to 5 willing creatures who would be harmed by the triggering effect",
             "time": "reaction"
@@ -11295,7 +11295,7 @@
             "duration": "1 minute",
             "range": "30 feet",
             "target": "1 creature",
-            "time": "2"
+            "time": "1"
         },
         "Transcribe Conflict": {
             "name": "Transcribe Conflict",
@@ -12367,7 +12367,7 @@
         },
         "Whispers of the Void": {
             "name": "Whispers of the Void",
-            "description": "<p>You whisper baleful secrets that transcend language and carry magically to the ears of your foes. The words take physical form, weakening the life force of the targets, each of which must attempt a Fortitude save.</p><hr /><p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature takes @Damage[(floor(@item.rank/2))d8[persistent,void]] damage.</p>\n<p><strong>Failure</strong> The creature takes @Damage[(floor(@item.rank/2)*2)d8[persistent,void]] damage and becomes @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 1}.</p>\n<p><strong>Critical Failure</strong> The creature takes 4d8 persistent void damage and becomes @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 2} and @UUID[Compendium.pf2e.conditionitems.Item.3uh1r86TzbQvosxv]{Doomed 1}.</p><hr /><p><strong>Heightened (+2)</strong> The persistent void damage increases by 1d8 on a success, or by 2d8 on a failure or critical failure.</p>",
+            "description": "<p>You whisper baleful secrets that transcend language and carry magically to the ears of your foes. The words take physical form, weakening the life force of the targets, each of which must attempt a Fortitude save.</p><hr /><p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature takes @Damage[(floor(@item.rank/2))d8[persistent,void]] damage.</p>\n<p><strong>Failure</strong> The creature takes @Damage[(floor(@item.rank/2)*2)d8[persistent,void]] damage and becomes @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 1}.</p>\n<p><strong>Critical Failure</strong> The creature takes @Damage[(floor(@item.rank/2)*2)d8[persistent,void]] damage and becomes @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 2} and @UUID[Compendium.pf2e.conditionitems.Item.3uh1r86TzbQvosxv]{Doomed 1}.</p><hr /><p><strong>Heightened (+2)</strong> The persistent void damage increases by 1d8 on a success, or by 2d8 on a failure or critical failure.</p>",
             "range": "60 feet",
             "time": "2"
         },
