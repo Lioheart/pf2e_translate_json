@@ -5,6 +5,15 @@
             "name": "Effect: Antelope Support Benefit",
             "description": "<p>Granted by @UUID[Compendium.pf2e-animal-companions.AC-Support.Item.yIB4qKV5sqcXlOmB]{Antelope Support Benefit}</p><p>Your Strikes that damage a creature in your antelope's reach also deal bleed damage damage.</p>"
         },
+        "Effect: Ape Support Benefit": {
+            "name": "Effect: Ape Support Benefit",
+            "description": "<p>Granted by @UUID[Compendium.pf2e-animal-companions.AC-Support.Item.Qm0iwIYyy2gbnYXe]{Ape Support Benefit}</p><p>If you hit and deal damage to a creature in your ape's reach, the creature becomes @Compendium[pf2e.conditionitems.Frightened]{Frightened 1}.</p>",
+            "rules": {
+                "1": {
+                    "text": "If you hit and deal damage to a creature in your ape's reach, the creature becomes @Compendium[pf2e.conditionitems.Frightened]{Frightened 1}."
+                }
+            }
+        },
         "Effect: Badger Rage": {
             "name": "Effect: Badger Rage",
             "description": "<p>Granted by @UUID[Compendium.pf2e-animal-companions.AC-Advanced-Maneuvers.Item.HLD4JW6SUn5Oy8C9]{Badger Rage}</p><p>You deal 4 additional damage with your bite attack and 2 additional damage with your claw attack, and you take a –1 penalty to AC</p>"
@@ -84,13 +93,317 @@
             "name": "Effect: Draft Lizard Support Benefit",
             "description": "<p>Granted by @UUID[Compendium.pf2e-animal-companions.AC-Support.Item.g3Wol5lNhQdxqs7t]{Draft Lizard Support Benefit}</p><p>You gain a +1 circumstance bonus on your next attack roll to Strike a foe within your draft lizard's reach.</p>"
         },
+        "Effect: Elephant Support Benefit": {
+            "name": "Effect: Elephant Support Benefit",
+            "description": "<p>Granted by @UUID[Compendium.pf2e-animal-companions.AC-Support.Item.r7QN2lUVWXlcynMW]{Elephant Support Benefit}</p><p>Targets within your elephant's reach that you hit and deal damage to before the start of your next turn take a –4 status penalty to purely auditory Perception checks</p>",
+            "rules": {
+                "1": {
+                    "text": "Targets within your elephant's reach that you hit and deal damage take a –4 status penalty to purely auditory Perception checks. @UUID[Compendium.pf2e-animal-companions.AC-effects.Item.3EGbKKD73gGbSWIa]{Effect: Elephant Support Benefit (Penalty)}"
+                }
+            }
+        },
+        "Effect: Elephant Support Benefit (Penalty)": {
+            "name": "Effect: Elephant Support Benefit (Penalty)",
+            "description": "<p>Granted by @UUID[Compendium.pf2e-animal-companions.AC-Support.Item.r7QN2lUVWXlcynMW]{Elephant Support Benefit}</p><p>You take a -4 status penalty to purely auditory Perception checks.</p>"
+        },
+        "Effect: Elk Support Benefit": {
+            "name": "Effect: Elk Support Benefit",
+            "description": "<p>Granted by @UUID[Compendium.pf2e-animal-companions.AC-Support.Item.60lThr6OM9zZtqK2]{Elk Support Benefit}</p><p>If you hit and deal damage to a creature within your elk's reach, the creature is @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 1}.</p>",
+            "rules": {
+                "1": {
+                    "text": "If you hit and deal damage to a creature within your elk's reach, the creature is @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 1}."
+                }
+            }
+        },
+        "Effect: Fire Elemental Support Benefit": {
+            "name": "Effect: Fire Elemental Support Benefit",
+            "description": "<p>Granted by @UUID[Compendium.pf2e-animal-companions.AC-Support.Item.NSdcXgEHVHdfJlkb]{Fire Elemental Support Benefit}</p><p>your Strikes that damage a creature in your fire elemental's reach also deal 1d6 persistent fire damage. If your fire elemental is nimble or savage, the persistent fire damage increases to 2d6.</p>"
+        },
+        "Effect: Flying Squirrel Support Benefit": {
+            "name": "Effect: Flying Squirrel Support Benefit",
+            "description": "<p>Granted by @UUID[Compendium.pf2e-animal-companions.AC-Support.Item.V2kspaYOoLbHV5vb]{Flying Squirrel Support Benefit}</p><p>If your Strike damages a creature in your giant flying squirrel's reach, that creature takes a –10-foot circumstance penalty to its Speeds.</p>",
+            "rules": {
+                "1": {
+                    "text": "If your Strike damages a creature in your giant flying squirrel's reach, that creature takes a –10-foot circumstance penalty to its Speeds. @UUID[Compendium.pf2e-animal-companions.AC-effects.Item.lACoOtINmUb1fTMY]{Effect: Flying Squirrel Support Benefit (Penalty)}"
+                }
+            }
+        },
+        "Effect: Flying Squirrel Support Benefit (Penalty)": {
+            "name": "Effect: Flying Squirrel Support Benefit (Penalty)",
+            "description": "<p>Granted by @UUID[Compendium.pf2e-animal-companions.AC-Support.Item.V2kspaYOoLbHV5vb]{Flying Squirrel Support Benefit}</p><p>You take a –10-foot circumstance penalty to your Speeds.</p>"
+        },
+        "Effect: Ghost Support Benefit": {
+            "name": "Effect: Ghost Support Benefit",
+            "description": "<p>Granted by @UUID[Compendium.pf2e-animal-companions.AC-Support.Item.4kkcfQdHAb4YTVNw]{Ghost Support Benefit}</p><p>If you hit and deal damage to a creature in your ghost's reach, the creature becomes @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 1}.</p>",
+            "rules": {
+                "1": {
+                    "text": "If you hit and deal damage to a creature in your ghost's reach, the creature becomes @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 1}."
+                }
+            }
+        },
+        "Effect: Giant Wasp Support Benefit": {
+            "name": "Effect: Giant Wasp Support Benefit",
+            "description": "<p>Granted by @UUID[Compendium.pf2e-animal-companions.AC-Support.Item.V3XczB8r8fQfJIhe]{Giant Wasp Support Benefit}</p><p>if you hit and deal damage to a creature in your giant wasp's reach, the creature becomes Frightened 1.</p>",
+            "rules": {
+                "1": {
+                    "text": "If you hit and deal damage to a creature within your elk's reach, the creature is @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 1}."
+                }
+            }
+        },
+        "Effect: Giraffe Support Benefit": {
+            "name": "Effect: Giraffe Support Benefit",
+            "description": "<p>Granted by @UUID[Compendium.pf2e-animal-companions.AC-Support.Item.LcAJTLzLDcIrQ7KQ]{Giraffe Support Benefit}</p><p>Any target you successfully Shove moves 10 feet (15 feet on a critical success).</p>",
+            "rules": {
+                "1": {
+                    "text": "Your target moves 10 feet."
+                },
+                "2": {
+                    "text": "Your target moves 15 feet."
+                }
+            }
+        },
+        "Effect: Griffon Support Benefit": {
+            "name": "Effect: Griffon Support Benefit",
+            "description": "<p>Granted by @UUID[Compendium.pf2e-animal-companions.AC-Support.Item.ShKTegi69Hizn0vB]{Griffon Support Benefit}</p><p>Your gain a +2 circumstance bonus to saves against emotion effects.</p>"
+        },
+        "Effect: Hermit Krait Support Benefit": {
+            "name": "Effect: Hermit Krait Support Benefit",
+            "description": "<p>Granted by @UUID[Compendium.pf2e-animal-companions.AC-Support.Item.u9jaNQk6QF2Tm8oe]{Hermit Krait Support Benefit}</p><p>Your Strikes that damage a creature in your hermit krait's reach also deal 1d6 persistent poison damage. If your hermit krait is nimble or savage, the persistent poison damage increases to 2d6.</p>"
+        },
+        "Effect: Hippocampus Support Benefit": {
+            "name": "Effect: Hippocampus Support Benefit",
+            "description": "<p>Granted by @UUID[Compendium.pf2e-animal-companions.AC-Support.Item.t1KMf7rDzJJ2vWhe]{Hippocampus Support Benefit}</p><p>If you're mounted on your hippocampus and moved 10 feet or more on the action before a melee Strike, you gain a circumstance bonus to damage for a Strike equal to twice the number of weapon damage dice. If your weapon already has the jousting weapon trait, increase the trait's damage bonus by 2 per die instead.</p>"
+        },
+        "Effect: Hippogriff Support Benefit": {
+            "name": "Effect: Hippogriff Support Benefit",
+            "description": "<p>Granted by @UUID[Compendium.pf2e-animal-companions.AC-Support.Item.cJBAKsVacLTIiPcz]{Hippogriff Support Benefit}</p><p>If you're mounted on your hippogriff and moved 10 feet or more on the action before a melee Strike, you gain a circumstance bonus to damage for a Strike equal to twice the number of weapon damage dice. If your weapon already has the jousting weapon trait, increase the trait's damage bonus by 2 per die instead.</p>"
+        },
+        "Effect: Horse Support Benefit": {
+            "name": "Effect: Horse Support Benefit",
+            "description": "<p>Granted by @UUID[Compendium.pf2e-animal-companions.AC-Support.Item.wf20kx6pPGBWwUn2]{Horse Support Benefit}</p><p>If you're mounted on your horse and moved 10 feet or more on the action before a melee Strike, you gain a circumstance bonus to damage for a Strike equal to twice the number of weapon damage dice. If your weapon already has the jousting weapon trait, increase the trait's damage bonus by 2 per die instead.</p>"
+        },
+        "Effect: Hyena Support Benefit": {
+            "name": "Effect: Hyena Support Benefit",
+            "description": "<p>Granted by @UUID[Compendium.pf2e-animal-companions.AC-Support.Item.wlh1poSMLK9wk2Nw]{Hyena Support Benefit}</p><p>When you hit a creature in the hyena's reach with a Strike, the creature becomes Frightened 1.</p>",
+            "rules": {
+                "1": {
+                    "text": "When you hit a creature in the hyena's reach with a Strike, the creature becomes @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 1}."
+                }
+            }
+        },
+        "Effect: Metal Elemental Support Benefit": {
+            "name": "Effect: Metal Elemental Support Benefit",
+            "description": "<p>Granted by @UUID[Compendium.pf2e-animal-companions.AC-Support.Item.SZD1hU2ageIDw4To]{Metal Elemental Support Benefit}</p><p>Your Strikes that damage a creature in your metal elemental's reach also deal bleed damage damage.</p>"
+        },
+        "Effect: Mole Support Benefit": {
+            "name": "Effect: Mole Support Benefit",
+            "description": "<p>Granted by @UUID[Compendium.pf2e-animal-companions.AC-Support.Item.vvuB2kEzRYSs4IpH]{Mole Support Benefit}</p><p>If you hit and damage a creature adjacent to your mole, that creature is Clumsy 1 until it moves from its current position.</p>",
+            "rules": {
+                "1": {
+                    "text": "If you hit and damage a creature adjacent to your mole, that creature is @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 1} until it moves from its current position."
+                }
+            }
+        },
+        "Effect: Mongoose Support Benefit": {
+            "name": "Effect: Mongoose Support Benefit",
+            "description": "<p>Granted by @UUID[Compendium.pf2e-animal-companions.AC-Support.Item.vvuB2kEzRYSs4IpH]{Mole Support Benefit}</p><p>Creatures adjacent to the mongoose cannot flank you.</p>"
+        },
+        "Effect: Monitor Lizard Support Benefit": {
+            "name": "Effect: Monitor Lizard Support Benefit",
+            "description": "<p>Granted by @UUID[Compendium.pf2e-animal-companions.AC-Support.Item.2Jaz98WiQMNnqKCD]{Monitor Lizard Support Benefit}</p><p>If your Strike damages a foe, any time the foe attempts an action with the manipulate trait until the end of your next turn, it must attempt a DC 5 Flat Check. On a failure, the action is disrupted.</p>",
+            "rules": {
+                "1": {
+                    "text": "If your Strike damages a foe, any time the foe attempts an action with the manipulate trait until the end of your next turn, it must attempt a DC 5 Flat Check. @UUID[Compendium.pf2e-animal-companions.AC-effects.Item.eXABjTK48R1xCvOZ]{Effect: Monitor Lizard Support Benefit (Penalty)}"
+                }
+            }
+        },
+        "Effect: Monitor Lizard Support Benefit (Penalty)": {
+            "name": "Effect: Monitor Lizard Support Benefit (Penalty)",
+            "description": "<p>Granted by @UUID[Compendium.pf2e-animal-companions.AC-Support.Item.2Jaz98WiQMNnqKCD]{Monitor Lizard Support Benefit}</p><p>If you attempt an action with the manipulate trait, you must attempt a DC 5 Flat Check. On a failure, the action is disrupted.</p>"
+        },
+        "Effect: Moth Support Benefit": {
+            "name": "Effect: Moth Support Benefit",
+            "description": "<p>Granted by @UUID[Compendium.pf2e-animal-companions.AC-Support.Item.9Y5QKMvy0KsliE29]{Moth Support Benefit}</p><p>If you damage a Concealed or Hidden creature in your moth's reach with a Strike, that creature requires only a DC 3 Flat Check to target it if it's concealed, or DC 9 Flat Check if it's hidden.</p>",
+            "rules": {
+                "1": {
+                    "text": "If you damage a Concealed or Hidden creature in your moth's reach with a Strike, that creature requires only a DC 3 Flat Check to target it if it's concealed, or DC 9 Flat Check if it's hidden. @UUID[Compendium.pf2e-animal-companions.AC-effects.Item.Db0Vtobv3v4Iybj5]{Effect: Moth Support Benefit (Penalty)}\n\n"
+                }
+            }
+        },
+        "Effect: Moth Support Benefit (Penalty)": {
+            "name": "Effect: Moth Support Benefit (Penalty)",
+            "description": "<p>Granted by @UUID[Compendium.pf2e-animal-companions.AC-Support.Item.9Y5QKMvy0KsliE29]{Moth Support Benefit}</p><p>If you damage a Concealed or Hidden creature in your moth's reach with a Strike, that creature requires only a DC 3 Flat Check to target it if it's concealed, or DC 9 Flat Check if it's hidden.</p>",
+            "rules": {
+                "0": {
+                    "text": "If you damage a @UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{Concealed} creature in your moth's reach with a Strike, that creature requires only a @Check[flat|dc:3|showDC:all]."
+                },
+                "1": {
+                    "text": "If you damage a @UUID[Compendium.pf2e.conditionitems.Item.iU0fEDdBp3rXpTMC]{Hidden} creature in your moth's reach with a Strike, that creature requires only a @Check[flat|dc:9|showDC:all]."
+                }
+            }
+        },
+        "Effect: Pangolin Support Benefit": {
+            "name": "Effect: Pangolin Support Benefit",
+            "description": "<p>Granted by @UUID[Compendium.pf2e-animal-companions.AC-Support.Item.QiQvx7jtfrkGnf13]{Pangolin Support Benefit}</p><p>Your Strikes that damage a creature in your pangolin's reach also deal 1d6 persistent bleed damage. If your pangolin is nimble or savage, the persistent bleed damage increases to 2d6.</p>"
+        },
         "Effect: Retreat (Rider)": {
             "name": "Effect: Retreat (Rider)",
             "description": "<p>Granted by @UUID[Compendium.pf2e-animal-companions.AC-Advanced-Maneuvers.Item.SkVl3yomdYZoS7Hx]{Aerial Retreat}, @UUID[Compendium.pf2e-animal-companions.AC-Advanced-Maneuvers.Item.R2RNXJH06UhSMmzp]{Sudden Retreat}</p><p>You gain a +2 circumstance bonus to AC against reactions.</p>"
         },
+        "Effect: Rhinoceros Support Benefit": {
+            "name": "Effect: Rhinoceros Support Benefit",
+            "description": "<p>Granted by @UUID[Compendium.pf2e-animal-companions.AC-Support.Item.kecawjDhBFz5QA4f]{Rhinoceros Support Benefit}</p><p>The first creature within your rhino's reach that you hit and deal damage to before the start of your next turn becomes Clumsy 1.</p>",
+            "rules": {
+                "1": {
+                    "text": "The first creature within your rhino's reach that you hit and deal damage to before the start of your next turn becomes @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 1}."
+                }
+            }
+        },
+        "Effect: Riding Drake Support Benefit": {
+            "name": "Effect: Riding Drake Support Benefit",
+            "description": "<p>Granted by @UUID[Compendium.pf2e-animal-companions.AC-Support.Item.C41lCXjerYjMyOTI]{Riding Drake Support Benefit}</p><p>Each time you Strike while riding the drake and hit a creature in the drake's reach, the creature takes fire damage from the drake.</p>",
+            "rules": {
+                "1": {
+                    "label": "Riding the Drake"
+                }
+            }
+        },
+        "Effect: Riding Tarantula Support Benefit": {
+            "name": "Effect: Riding Tarantula Support Benefit",
+            "description": "<p>Granted by @UUID[Compendium.pf2e-animal-companions.AC-Support.Item.NKgFIZQYkL3bb6xn]{Riding Tarantula Support Benefit}</p><p>If you hit and deal damage to a creature your riding tarantula threatens, the target must succeed at a @Check[type:flat|dc:5] whenever it takes a concentrate action or that action is lost.</p>",
+            "rules": {
+                "1": {
+                    "text": "If you hit and deal damage to a creature your riding tarantula threatens, the target must succeed at a @Check[type:flat|dc:5] whenever it takes a concentrate action or that action is lost. @UUID[Compendium.pf2e-animal-companions.AC-effects.Item.6PFleA0i6lxly55o]{Effect: Riding Tarantula Support Benefit (Penalty)}"
+                }
+            }
+        },
+        "Effect: Riding Tarantula Support Benefit (Penalty)": {
+            "name": "Effect: Riding Tarantula Support Benefit (Penalty)",
+            "description": "<p>Granted by @UUID[Compendium.pf2e-animal-companions.AC-Support.Item.NKgFIZQYkL3bb6xn]{Riding Tarantula Support Benefit}</p><p>The target must succeed at a @Check[type:flat|dc:5] whenever it takes a concentrate action or that action is lost.</p>"
+        },
+        "Effect: Roc Support Benefit": {
+            "name": "Effect: Roc Support Benefit",
+            "description": "<p>Granted by @UUID[Compendium.pf2e-animal-companions.AC-Support.Item.R0e3jHpB7nTzIUPm]{Roc Support Benefit}</p><p>Your Strikes that damage a creature that your roc threatens push the target 5 feet away from your roc.</p>",
+            "rules": {
+                "1": {
+                    "text": "Your Strikes that damage a creature that your roc threatens push the target 5 feet away from your roc."
+                }
+            }
+        },
+        "Effect: Scorpion Support Benefit": {
+            "name": "Effect: Scorpion Support Benefit",
+            "description": "<p>Granted by @UUID[Compendium.pf2e-animal-companions.AC-Support.Item.xtXdDC5KrUqh7eCu]{Scorpion Support Benefit}</p><p>Your Strikes that damage a creature in your scorpion's reach also deal persistent poison damage.</p>"
+        },
+        "Effect: Shadow Hound Support Benefit": {
+            "name": "Effect: Shadow Hound Support Benefit",
+            "description": "<p>Granted by @UUID[Compendium.pf2e-animal-companions.AC-Support.Item.h65iGxPkfrT8DdPv]{Shadow Hound Support Benefit}</p><p>When you damage a creature with a Strike and that creature is within reach of your shadow hound, both you and your shadow hound become @UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{Concealed} to the creature.</p>",
+            "rules": {
+                "1": {
+                    "text": "When you damage a creature with a Strike and that creature is within reach of your shadow hound, both you and your shadow hound become @UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{Concealed} to the creature.\n\n"
+                }
+            }
+        },
+        "Effect: Shark Support Benefit": {
+            "name": "Effect: Shark Support Benefit",
+            "description": "<p>Granted by @UUID[Compendium.pf2e-animal-companions.AC-Support.Item.YsLLV4J7L6fgzTXf]{Shark Support Benefit}</p><p>Each time you hit a creature in the shark's reach with a Strike and deal slashing or piercing damage, the creature takes 1d8 slashing damage from the shark.</p>"
+        },
+        "Effect: Shotalashu Support Benefit": {
+            "name": "Effect: Shotalashu Support Benefit",
+            "description": "<p>Granted by @UUID[Compendium.pf2e-animal-companions.AC-Support.Item.ufAZJqCN7ZOBhMSJ]{Shotalashu Support Benefit}</p><p>Each time you hit a creature in the shotalashu's reach with a Strike, the creature takes mental damage from the shotalashu.</p>"
+        },
+        "Effect: Skeletal Constrictor Support Benefit": {
+            "name": "Effect: Skeletal Constrictor Support Benefit",
+            "description": "<p>Granted by @UUID[Compendium.pf2e-animal-companions.AC-Support.Item.Si13B4VFANZN8mi1]{Skeletal Constrictor Support Benefit}</p><p>Your Strikes that deal damage to the chosen creature make the target @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard}.</p>",
+            "rules": {
+                "1": {
+                    "text": "Your Strikes that deal damage to the chosen creature make the target @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard}."
+                }
+            }
+        },
+        "Effect: Skeletal Mount Support Benefit": {
+            "name": "Effect: Skeletal Mount Support Benefit",
+            "description": "<p>Granted by @UUID[Compendium.pf2e-animal-companions.AC-Support.Item.CKMQC3zu1XoGjeNd]{Skeletal Mount Support Benefit}</p><p>If you are riding your skeletal mount and move at least 10 feet on the action before your attack, any creature damaged by the attack becomes @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 1}, or @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 2} if the attack was a critical hit.</p>",
+            "rules": {
+                "1": {
+                    "text": "Any creature damaged by the attack becomes @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 1}."
+                },
+                "2": {
+                    "text": "any creature damaged by the attack becomes @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 2}."
+                }
+            }
+        },
+        "Effect: Skeletal Servant Support Benefit": {
+            "name": "Effect: Skeletal Servant Support Benefit",
+            "description": "<p>Granted by @UUID[Compendium.pf2e-animal-companions.AC-Support.Item.bHaJZSm7SakAsk00]{Skeletal Servant Support Benefit}</p><p>When a Strike you make hits and deals damage to a creature within your skeletal servant's reach, that target becomes @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard}.</p>",
+            "rules": {
+                "1": {
+                    "text": "When a Strike you make hits and deals damage to a creature within your skeletal servant's reach, that target becomes @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard}."
+                }
+            }
+        },
         "Effect: Spiked Bunker": {
             "name": "Effect: Spiked Bunker",
             "description": "<p>Granted by @UUID[Compendium.pf2e-animal-companions.AC-Advanced-Maneuvers.Item.oyNZpuQ6EU3prvo2]{Spiked Bunker}</p><p>You gain a +2 circumstance bonus to AC. Any creature that hits you are in the Spiked Bunker takes 2d6 piercing damage (or 3d6 piercing damage if your metal elemental has a specialization).</p>"
+        },
+        "Effect: Sundaflora Support Benefit": {
+            "name": "Effect: Sundaflora Support Benefit",
+            "description": "<p>Granted by @UUID[Compendium.pf2e-animal-companions.AC-Support.Item.xpEAKxiQUlUXkqV4]{Sundaflora Support Benefit}</p><p>You gain a +1 circumstance bonus to your next attack roll to Strike a foe within your sundaflora's reach.</p>"
+        },
+        "Effect: Terror Bird Support Benefit": {
+            "name": "Effect: Terror Bird Support Benefit",
+            "description": "<p>Granted by @UUID[Compendium.pf2e-animal-companions.AC-Support.Item.oLwBrrW33fIjSHLr]{Terror Bird Support Benefit}</p><p>Your Strikes that deal damage to a creature within your terror bird's reach make the target @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard}.</p>",
+            "rules": {
+                "1": {
+                    "text": "Your Strikes that deal damage to the chosen creature make the target @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard}."
+                }
+            }
+        },
+        "Effect: Tikar Urchinpad Support Benefit": {
+            "name": "Effect: Tikar Urchinpad Support Benefit",
+            "description": "<p>Granted by @UUID[Compendium.pf2e-animal-companions.AC-Support.Item.TFrCa4aCUKtwhuqn]{Tikar Urchinpad Support Benefit}</p><p>As long as you're adjacent to your urchinpad, if you attempt to @UUID[Compendium.pf2e.actionspf2e.Item.7blmbDrQFNfdT731]{Shove} or @UUID[Compendium.pf2e.actionspf2e.Item.ge56Lu1xXVFYUnLP]{Trip} an opponent and roll a critical failure, you get a failure instead.</p>"
+        },
+        "Effect: Triceratops Support Benefit": {
+            "name": "Effect: Triceratops Support Benefit",
+            "description": "<p>Granted by @UUID[Compendium.pf2e-animal-companions.AC-Support.Item.TDMhLC16cQOYBbmA]{Triceratops Support Benefit}</p><p>Your Strikes that damage a prone creature in your triceratops's reach also deal persistent bleed damage.</p>"
+        },
+        "Effect: Tyrannosaurus Support Benefit": {
+            "name": "Effect: Tyrannosaurus Support Benefit",
+            "description": "<p>Granted by @UUID[Compendium.pf2e-animal-companions.AC-Support.Item.XrxIRaD1A5tpKm1t]{Tyrannosaurus Support Benefit}</p><p>If you hit and deal damage to a creature within your tyrannosaurus's reach, the creature is @Compendium[pf2e.conditionitems.Frightened]{Frightened 1}.</p>",
+            "rules": {
+                "1": {
+                    "text": "If you hit and deal damage to a creature within your tyrannosaurus's reach, the creature is @Compendium[pf2e.conditionitems.Frightened]{Frightened 1}."
+                }
+            }
+        },
+        "Effect: Ulgrem-Lurann Support Benefit": {
+            "name": "Effect: Ulgrem-Lurann Support Benefit",
+            "description": "<p>Granted by @UUID[Compendium.pf2e-animal-companions.AC-Support.Item.uZLtEOimbFnEDUKh]{Ulgrem-Lurann Support Benefit}</p><p>Each time you hit a creature in the Ulgrem-Lurann's reach with a Strike, the creature takes an additional piercing and electricity damage from the Ulgrem-Lurann.</p>"
+        },
+        "Effect: Umbrella Mushroom Support Benefit": {
+            "name": "Effect: Umbrella Mushroom Support Benefit",
+            "description": "<p>Granted by @UUID[Compendium.pf2e-animal-companions.AC-Support.Item.XVOVZjvTwaoalpWC]{Umbrella Mushroom Support Benefit}</p><p>Your Strikes that damage a creature within your umbrella mushroom's reach becomes @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 1}. This effect has the poison trait.</p>",
+            "rules": {
+                "1": {
+                    "text": "Your Strikes that damage a creature within your umbrella mushroom's reach becomes @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 1}. This effect has the poison trait."
+                }
+            }
+        },
+        "Effect: Undead Bird of Prey Support Benefit": {
+            "name": "Effect: Undead Bird of Prey Support Benefit",
+            "description": "<p>Granted by @UUID[Compendium.pf2e-animal-companions.AC-Support.Item.bEkXle5FLNxnp3IE]{Undead Bird of Prey Support Benefit}</p><p>When you damage a creature in the bird's reach with a Strike, that creature becomes @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 1}.</p>",
+            "rules": {
+                "1": {
+                    "text": "When you damage a creature in the bird's reach with a Strike, that creature becomes @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 1}."
+                }
+            }
+        },
+        "Effect: Undead Hand Support Benefit": {
+            "name": "Effect: Undead Hand Support Benefit",
+            "description": "<p>Granted by @UUID[Compendium.pf2e-animal-companions.AC-Support.Item.imNJpD4afn4UrLpu]{Undead Hand Support Benefit}</p><p>Each time you hit a creature in the hand's reach with a Strike, the creature takes additional bludgeoning damage from the hand.</p>"
+        },
+        "Effect: Vampiric Animal Support Benefit": {
+            "name": "Effect: Vampiric Animal Support Benefit",
+            "description": "<p>Granted by @UUID[Compendium.pf2e-animal-companions.AC-Support.Item.3jZOVJsYwBQ7GPDi]{Vampiric Animal Support Benefit}</p><p>Your Strikes that damage a creature in your vampiric animal's reach also deal bleed damage.</p>"
         },
         "Effect: Wyvern Support Benefit": {
             "name": "Effect: Wyvern Support Benefit",
