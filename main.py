@@ -403,6 +403,52 @@ def process_files(folder, version, type_system):
                             }
                         )
 
+                    # ---Actors with appearance, backstory and gender---
+                    try:
+                        if new_data['system']['details']['biography']['appearance'] != "":
+                            transifex_dict["entries"][name].update(
+                                {"appearance": new_data['system']['details']['biography']['appearance']})
+                            flag.append('appearance')
+                    except KeyError:
+                        pass
+
+                    if 'appearance' in flag:
+                        transifex_dict['mapping'].update(
+                            {
+                                "appearance": "system.details.biography.appearance",
+                            }
+                        )
+
+                    try:
+                        if new_data['system']['details']['biography']['backstory'] != "":
+                            transifex_dict["entries"][name].update(
+                                {"backstory": new_data['system']['details']['biography']['backstory']})
+                            flag.append('backstory')
+                    except KeyError:
+                        pass
+
+                    if 'backstory' in flag:
+                        transifex_dict['mapping'].update(
+                            {
+                                "backstory": "system.details.biography.backstory",
+                            }
+                        )
+
+                    try:
+                        if new_data['system']['details']['gender']['value'] != "":
+                            transifex_dict["entries"][name].update(
+                                {"gender": new_data['system']['details']['gender']['value']})
+                            flag.append('gender')
+                    except KeyError:
+                        pass
+
+                    if 'gender' in flag:
+                        transifex_dict['mapping'].update(
+                            {
+                                "gender": "system.details.gender.value",
+                            }
+                        )
+
                     # ---Hazard and NPC---
                     try:
                         if new_data['system']['details']['publicNotes'] != "":
