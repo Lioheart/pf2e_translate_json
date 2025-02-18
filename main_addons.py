@@ -1120,7 +1120,7 @@ add_9_url = "https://raw.githubusercontent.com/TikaelSol/PF2e-Animal-Companions/
 path_9, headers_9 = urlretrieve(add_9_url, 'module_9.json')
 version_9 = 'addon_9_' + json.loads(open('module_9.json', 'r', encoding='utf-8').read())["version"]
 zip_addons9_filename = "pf2e-animal-companions.zip"
-zip_addons9 = 'https://github.com/TikaelSol/PF2e-Animal-Companions/releases/download/v6.3/module.zip'
+zip_addons9 = 'https://github.com/TikaelSol/PF2e-Animal-Companions/releases/latest/download/module.zip'
 extract_folder = 'pack_addon_9'
 print()
 print("*** Wersja dodatku_9 PF2E: ", version_9, " ***")
@@ -1229,7 +1229,27 @@ else:
 read_leveldb_to_json(fr'{extract_folder}\packs', fr'{extract_folder}\output')
 
 # === === === === === === === === === === === === === === === === === === === === === === === === === === === === ===
+# Addons14
+# Ścieżka do pliku z wersją addon14
+add_14_url = "https://www.dropbox.com/scl/fi/7llzr0iqqfv7r0mnpfaoc/module.json?rlkey=crj4cmuz7twfu85tgmh3ysa08&dl=1"
 
+path_14, headers_14 = urlretrieve(add_14_url, 'module_14.json')
+version_14 = 'addon_14_' + json.loads(open('module_14.json', 'r', encoding='utf-8').read())["version"]
+zip_addons14_filename = "pf2e-summons-helper.zip"
+zip_addons14 = 'https://www.dropbox.com/scl/fi/dzsizuvhxqu5hs4mlry82/pf2e-summons-helper.zip?rlkey=s9gn1u35f1vzwz8fmmblmk0ld&dl=1'
+extract_folder = 'pack_addon_14'
+print()
+print("*** Wersja dodatku_14 PF2E: ", version_14, " ***")
+
+if create_version_directory(version_14):
+    download_and_extract_zip(zip_addons14, zip_addons14_filename, extract_folder)
+else:
+    with zipfile.ZipFile(zip_addons14_filename, 'r') as zip_ref:
+        zip_ref.extractall(extract_folder)
+
+convert_extension(fr'{extract_folder}\pf2e-summons-helper\packs', "summons-effect", "summons-effect")
+convert_extension(fr'{extract_folder}\pf2e-summons-helper\packs', "summons-macros", "summons-macros")
+# === === === === === === === === === === === === === === === === === === === === === === === === === === === === ===
 # === === === === === === === === === === === === === === === === === === === === === === === === === === === === ===
 # folder = 'pack'
 # process_files(folder, version, 'system')
@@ -1276,6 +1296,9 @@ process_files(folder, version_12, "pf2e-specific-familiars")
 
 folder = r'pack_addon_13/output'
 process_files(folder, version_13, "pf2e-assistant")
+
+folder = r'pack_addon_14/pf2e-summons-helper/packs'
+process_files(folder, version_14, 'pf2e-summons-helper')
 
 copy_addon_folders()
 clean()
