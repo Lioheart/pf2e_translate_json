@@ -1,0 +1,248 @@
+{
+    "label": "Shades-Of-Blood-Bestiary",
+    "folders": {
+        "Book 1 - Thirst for Blood": "Book 1 - Thirst for Blood"
+    },
+    "entries": {
+        "Alzira Mustanir": {
+            "name": "Alzira Mustanir",
+            "blurb": "Female elf beastkin cleric of Camazotz",
+            "sensesDetails": "darkvision",
+            "items": {
+                "spellcastingEntry->Divine Prepared Spells": {
+                    "name": "Divine Prepared Spells"
+                },
+                "spellcastingEntry->Cleric Domain Spells": {
+                    "name": "Cleric Domain Spells"
+                },
+                "equipment->Intake Skeleton Key": {
+                    "name": "Intake Skeleton Key"
+                },
+                "consumable->Healing Potion (Lesser)": {
+                    "name": "Healing Potion (Lesser)",
+                    "description": "<p><strong>Activate</strong> <span class=\"action-glyph\">A</span> (manipulate)</p><hr /><p>A <em>healing potion</em> is a vial of a ruby-red liquid that imparts a tingling sensation as the drinker's wounds heal rapidly. When you drink a <em>healing potion</em>, you regain @Damage[(2d8+5)[healing]] Hit Points.</p>"
+                }
+            }
+        },
+        "Animal Pit": {
+            "name": "Animal Pit",
+            "descriptionHazard": "<p>A weight-activated trap door covers a pit that's 10 feet square and 20 feet deep.</p>",
+            "disable": "<p>@Check[thievery|dc:12] to remove the trap door</p>",
+            "reset": "<p>The trapdoors automatically reset to their closed position once a creature falls in, allowing for more creatures to fall in, though any camouflage on the trap door falls in as well, making it easier for creatures to notice the trap door.</p>",
+            "stealth": "<p>(DC 14 if the trap has been activated within the last day, or 0 if the trap door is disabled or broken)</p>",
+            "items": {
+                "action->Pitfall": {
+                    "name": "Pitfall",
+                    "description": "<p><strong>Trigger</strong> A creature weighing at least 20 pounds walks onto the trap door</p><hr /><p><strong>Effect</strong> The triggering creature falls in and takes falling damage (typically @Damage[10[bludgeoning]] damage). That creature can use the @UUID[Compendium.pf2e.actionspf2e.Item.3yoajuKjwHZ9ApUY]{Grab an Edge} reaction to avoid falling.</p>"
+                }
+            }
+        },
+        "Batkin Guard": {
+            "name": "Batkin Guard",
+            "publicNotes": "<p>Unlike true werecreatures, beastkin aren't affected by silver or the full moon, though they can still adopt a hybrid form.</p><h2>Batkin And Werebats</h2><p>Particularly large werebat colonies often host batkin among their ranks. Cultivating a population of batkin offers the werebats numerous benefits, the most obvious being the illusion of normality. Most werebats are nocturnal, so having batkin roam about during the day helps maintain the impression that the werebat settlement is nothing out of the ordinary. Batkin might also guard the colony during full moons, when the werebat members are away indulging in their lunar frenzies. Finally, batkin seem to have an easier time keeping their thirst for blood in check and thus serve as excellent infiltrators in non-werecreature settlements.</p>",
+            "blurb": "Human beastkin",
+            "items": {
+                "consumable->Elixir of Life (Minor)": {
+                    "name": "Elixir of Life (Minor)",
+                    "description": "<p><strong>Activate</strong> <span class=\"action-glyph\">A</span> (manipulate)</p><hr /><p>Elixirs of life accelerate a living creature's natural healing processes and immune system. Upon drinking this elixir, you regain @Damage[1d6[healing]] Hit Points and gain +1 item bonus to saving throws against diseases and poisons for 10 minutes.</p>\n<p>@UUID[Compendium.pf2e.equipment-effects.Item.lPRuIRbu0rHBkoKY]{Effect: Elixir of Life}</p>"
+                }
+            }
+        },
+        "Camazotz Cultist": {
+            "name": "Camazotz Cultist",
+            "blurb": "Human worshipper of Camazotz",
+            "items": {
+                "equipment->Religious Symbol of Camazotz": {
+                    "name": "Religious Symbol of Camazotz",
+                    "description": "<p>This piece of wood or silver is emblazoned with an image representing a deity. Some divine spellcasters, such as clerics, can use a religious symbol of their deity to use certain abilities and cast some spells. A religious symbol can be worn on the body on a chain or pin, or can be held.</p>"
+                }
+            }
+        },
+        "Camazotz's Swarm": {
+            "name": "Camazotz's Swarm",
+            "descriptionHazard": "<p>A massive swarm of bats flies throughout the room, hampering vision, attacking foes, and magically restoring Camazotz's followers.</p>",
+            "disable": "<p>@Check[nature|dc:17] (trained) to disperse the swarm or @Check[religion|dc:15] (trained) to disrupt Camazotz's connection, which disperses the swarm</p>",
+            "reset": "<p>The swarm disperses and returns to roost throughout the room 1 minute after all enemies leave the room. The swarm recovers 5 Hit Points per day thanks the power of Camazotz.</p>",
+            "routine": "<p>(2 actions) The swarm uses its first action to move up to 30 feet to envelop as many enemies as possible within its @Template[type:burst|distance:30] space. All enemies in the swarm's space become @UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]{Dazzled} while within the swarm. It then uses its second action to bite all enemies, dealing @Damage[(1d6+3)[piercing]|options:area-damage] damage (@Check[reflex|dc:17|basic] save) to all enemies in the space.</p>",
+            "stealth": "<p>(trained)</p>",
+            "items": {
+                "action->Swarming Descent": {
+                    "name": "Swarming Descent",
+                    "description": "<p><strong>Trigger</strong> A creature that's not a worshipper of Camazotz enters the room</p><hr /><p><strong>Effect</strong> The hundreds of bats descend down into the room in a terrifying, shrieking mass. The swarm occupies a @Template[type:burst|distance:30] on the floor of the room. All enemies within this area must attempt a @Check[will|dc:17] save. On a failure, a creature becomes @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 1} (@UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 2} on a critical failure). The swarm then rolls initiative.</p>"
+                },
+                "action->Restore Follower": {
+                    "name": "Restore Follower",
+                    "description": "<p><strong>Requirements</strong> An ally is in the swarm's space</p>\n<p><strong>Trigger</strong> The swarm dealt damage to an enemy</p><hr /><p><strong>Effect</strong> The swarm takes some of the blood it drank from an enemy and feeds it to an ally in its space. The ally restores Hit Points equal to the highest damage the swarm dealt to an enemy this turn.</p>"
+                }
+            }
+        },
+        "Desmohund": {
+            "name": "Desmohund",
+            "publicNotes": "<p>In folklore, bats and wolves are common elements of vampire stories\u2014sometimes even the focus of such tales. The veil of night, however, conceals a wide array of vampiric creatures. Neither wholly wolf nor bat, desmohunds, also called vampire hounds, use their limited flight to swiftly close the gap between themselves and fleeing prey. This rapid movement, along with a penchant for hunting in perfect darkness, is often the cause of a survivor's confusion when asked to describe just what it was that attacked them.</p>\n<p>As their common name suggests, vampire hounds share a strong affinity with vampires. While the hounds can subsist entirely on flesh, they have a particular taste for blood. A desmohund attack is brutal and violent. The creature tears their victim apart, allowing the blood to generously pool on the ground before lapping it up. Only after the blood is consumed do the beasts begin devouring flesh.</p>\n<p>Desmohunds are surprisingly loyal and often defend their masters to the death. Though they generally serve vampires, it isn't unheard of for the living to keep such creatures as pets, especially in areas like Ustalav, Nidal, and the Darklands, where they can sometimes be found prowling the grounds of foreboding estates.</p>\n<p>Vampire hunters carry a variety of tools to stalk and destroy their favored prey, but clever ones also carry items that can work against a vampire's allies too. Therefore, some carry bags of cinnamon or vials of eucalyptus oil to confuse and irritate desmohunds' keen sense of smell.</p><h2>Divine Origins</h2><p>Sources differ on the origin of desmohunds. Some legends state that Urgathoa created the first vampire hounds as pets to keep her company in undeath. Others claim that Nin distilled the best parts of vampires and wolves to create a nigh-unstoppable hunter. One story posits that Lamashtu created the first desmohunds, but Zura the Vampire Queen stole them from Lamashtu's realm of Kurnugia, claiming the creatures as her own. The only common thread among these tales is each god's insistence that they were the true creators of desmohunds, suggesting that there's an unknown reason the gods would vie for such a title.</p>",
+            "speedsDetails": "Glide"
+        },
+        "Inizkar": {
+            "name": "Inizkar",
+            "blurb": "Female lizardfolk astronomer",
+            "allSavesBonus": "+1 circumstance to all saves vs. inhaled threats",
+            "items": {
+                "equipment->Astronomy Scholarly Journal": {
+                    "name": "Astronomy Scholarly Journal"
+                }
+            }
+        },
+        "Keeper of Ancorato": {
+            "name": "Keeper of Ancorato",
+            "languagesDetails": "Truespeech",
+            "items": {
+                "spellcastingEntry->Primal Innate Spells": {
+                    "name": "Primal Innate Spells"
+                },
+                "spell->Truespeech (Constant)": {
+                    "name": "Truespeech (Constant)"
+                },
+                "spell->Feet to Fins (At Will)": {
+                    "name": "Feet to Fins (At Will)"
+                },
+                "spell->Water Breathing (At Will)": {
+                    "name": "Water Breathing (At Will)"
+                }
+            }
+        },
+        "Lesser Shadow Scamp": {
+            "name": "Lesser Shadow Scamp",
+            "publicNotes": "<p>A pale blue head and paper-thin wings peek out from the cloud that clings to the air scamp. Air scamps are short-sighted and flighty, even relative to their kin; they are as likely to fly recklessly into battle as they are to whine in terror at a loud noise.</p>\n<hr />\n<p>Elemental scamps are bat-like critters marked by elemental powers. Scamps are dispatched from the Elemental Planes by more powerful residents or called to the Universe by neophyte summoners. All scamps have a hint of magical power due to a lingering connection to their home plane, which they largely use to pull simple pranks.</p>\n<p>Scamps rapidly form a pecking order of cleverness. Humanoids often confuse scamps when meeting such creatures for the first time. These confused scamps usually resort to an escalating series of pranks and mischief, seeing what they can get away with to establish their place in the hierarchy.</p>",
+            "blurb": "Variant air scamp",
+            "hpDetails": "fast healing 2 (in shadow)",
+            "items": {
+                "spellcastingEntry->Arcane Innate Spells": {
+                    "name": "Arcane Innate Spells"
+                }
+            }
+        },
+        "Netherworld Sprigjack": {
+            "name": "Netherworld Sprigjack",
+            "publicNotes": "<p>Weaker twigjacks are often found in cultivated forests and even gardens. They seek to drive away interlopers, growing as their environment runs wild.</p>\n<hr />\n<p>Maladjusted forest denizens, twigjacks form from the cruel and prankish combination of fey and the very woods in which they reside. A twigjack's body is made up of prickly brambles woven with vines. Shaggy, mossy growth, not unlike hair, tops a twigjack's head. Its mouth is just a canyon of splintered and broken sticks bisecting its face. Leaves and sprigs of new growth randomly sprout from the creature's body. Many dense forests on Golarion have at least a handful of twigjacks living in the undergrowth.</p>\n<p>While truculent and violent, twigjacks care deeply for what they consider to be their forests. These creatures harass outsiders who delve deep into their wooded domains, forcing back even the most determined explorers, foresters, and travelers, especially when those intruders cut roads through the forest. However, they are not terribly territorial when it comes to other forest creatures. When sylvan creatures, especially fey, rally against an outside threat, twigjacks in the area eagerly arrive to fight, even if they were not invited.</p>",
+            "blurb": "Variant sprigjack"
+        },
+        "Netherworld Vampire Bat Swarm": {
+            "name": "Netherworld Vampire Bat Swarm",
+            "publicNotes": "<p>Although the typical vampire bat has a wingspan of 7 inches and doesn't pose a significant threat to larger prey alone (and indeed, these blood-drinkers can feed without their sleeping victims ever noticing), some unusually aggressive species of these bats hunt in deadly swarms. A churning cloud of vampire bats is much more dangerous than the sum of its individual parts and is capable of inflicting an overwhelming number of bleeding wounds in a frighteningly short span of time.</p>\n<hr />\n<p>A wide range of bats dwell throughout the world. Most of these nocturnal animals are harmless insectivores, but deadly breeds of vampire bats and oversized bats the size of horses pose much more significant threats to adventurers.</p>",
+            "blurb": "Variant vampire bat swarm ",
+            "items": {
+                "action->Echolocation (Precise) 20 feet": {
+                    "name": "Echolocation (Precise) 20 feet",
+                    "description": "<p>A bat swarm can use its hearing as a precise sense at the listed range.</p>"
+                },
+                "action->Swarm Mind": {
+                    "name": "Swarm Mind"
+                },
+                "action->Blood Feast": {
+                    "name": "Blood Feast",
+                    "description": "<p>Each enemy in the bat swarm's space takes @Damage[1d4[piercing],1[void]] damage (@Check[reflex|dc:16|basic] save). Creatures that fail this save also take @Damage[1[bleed]] damage.</p>"
+                }
+            }
+        },
+        "Romi Bracken": {
+            "name": "Romi Bracken",
+            "blurb": "Male human scavenger/cult leader",
+            "languagesDetails": "Bat empathy",
+            "items": {
+                "equipment->Intake Skeleton Key": {
+                    "name": "Intake Skeleton Key"
+                },
+                "consumable->Healing Potion (Lesser)": {
+                    "name": "Healing Potion (Lesser)",
+                    "description": "<p><strong>Activate</strong> <span class=\"action-glyph\">A</span> (manipulate)</p><hr /><p>A <em>healing potion</em> is a vial of a ruby-red liquid that imparts a tingling sensation as the drinker's wounds heal rapidly. When you drink a <em>healing potion</em>, you regain @Damage[(2d8+5)[healing]] Hit Points.</p>"
+                }
+            }
+        },
+        "Tormonshild": {
+            "name": "Tormonshild",
+            "publicNotes": "<p>A tormonshild begins life as a tadpole-like creature hardly largely than a human finger. In this state, the tormonshild is virtually defenseless, but the magic that flows through its body allows it to grow quickly. After a few days, it swells into its more familiar adolescent form. A fully grown tormonshild resembles a two-foot-long frog with six legs, a mouth too large for its body, and flesh the color of a storm cloud. Once grown, the tormonshild decimates the local wildlife, sometimes attacking creatures up to twice its size. Being true omnivores, tormonshilds also feed on plants, preferring juicier crops like tomatoes and fruit. Many a villager has known the anguish of losing their livestock, gardens, and even a beloved pet to a tormonshild infestation.</p><hr /><p>Concentrations of intense magical energy often result in unusual weather phenomena, typically violent storms or other natural disasters, but sometimes they also create new entirely life-forms. Tormonshilds are born during artificially created storms, when magical energy combines with rainfall to transform the droplets themselves into living creatures. Tormonshilds rarely survive long after their creation; most meet grisly ends at the hands of local predators or dissolve as the magic that fuels their physical bodies fades. A tormonshild that survives its initial weeks of life eventually grows into a pest that menaces the local environment.</p><h2>Magical Rainstorms</h2><p>The rainstorms that produce tormonshilds occur more regularly than most people realize. However, as the majority of tormonshild tadpoles fail to reach maturity, the existence of tormonshilds remains virtually unknown outside of specific areas. While the Mana Wastes regularly experiences magical storms, the region is particularly inhospitable for these creatures. Such storms frequently happen throughout the islands of Azlant, however, and the magical energies that seep from the ancient ruins create conditions ideal for young tormonshilds.</p>"
+        },
+        "Tormonshild Swarm": {
+            "name": "Tormonshild Swarm",
+            "publicNotes": "<p>Tormonshilds that survive the tadpole stage cluster together in wriggling swarms that devour everything they encounter.</p><hr /><p>Concentrations of intense magical energy often result in unusual weather phenomena, typically violent storms or other natural disasters, but sometimes they also create new entirely life-forms. Tormonshilds are born during artificially created storms, when magical energy combines with rainfall to transform the droplets themselves into living creatures. Tormonshilds rarely survive long after their creation; most meet grisly ends at the hands of local predators or dissolve as the magic that fuels their physical bodies fades. A tormonshild that survives its initial weeks of life eventually grows into a pest that menaces the local environment.</p><h2>Magical Rainstorms</h2><p>The rainstorms that produce tormonshilds occur more regularly than most people realize. However, as the majority of tormonshild tadpoles fail to reach maturity, the existence of tormonshilds remains virtually unknown outside of specific areas. While the Mana Wastes regularly experiences magical storms, the region is particularly inhospitable for these creatures. Such storms frequently happen throughout the islands of Azlant, however, and the magical energies that seep from the ancient ruins create conditions ideal for young tormonshilds.</p>",
+            "items": {
+                "action->Phlegm Skitter": {
+                    "name": "Phlegm Skitter",
+                    "description": "<p>The tormonshild swarm Strides, leaving pools of mucus as it moves. Each space the swarm moves through during this movement becomes coated with slippery mucus, which has the area effect of @UUID[Compendium.pf2e.spells-srd.Item.Wu0xFpewMKRK3HG8]{Grease} (@Check[reflex|dc:17]).</p>"
+                },
+                "action->Phlegm Spray": {
+                    "name": "Phlegm Spray",
+                    "description": "<p>The tormonshild swarm sprays globules of mucus and water in every direction, dealing @Damage[3d6[bludgeoning]] damage (@Check[reflex|dc:20|basic] save) to all creatures within 10 feet. Creatures that fail the save are covered in mucus and become @UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]{Dazzled} for 1 minute. A creature covered in mucus can end the condition by using an Interact action to remove the mucus.</p>"
+                },
+                "action->Swarming Leap": {
+                    "name": "Swarming Leap",
+                    "description": "<p>The tormonshild swarm jumps as a collective. It Leaps 50 feet horizontally.</p>"
+                },
+                "action->Torrent of Bites": {
+                    "name": "Torrent of Bites",
+                    "description": "<p>Each enemy in the tormonshild swarm's space takes @Damage[2d6[piercing]] damage (@Check[reflex|dc:20|basic] save).</p>"
+                }
+            }
+        },
+        "Tormonwird": {
+            "name": "Tormonwird",
+            "publicNotes": "<p>Left alone too long, a tormonshild eventually grows to the size of a large dog. At this stage, they're known as tormonwirds and become more formidable. A tormonwird's wide mouth develops a throat sac, which the creature uses to produce a croak that disturbs nearby water sources, including liquids inside other creatures. While off-putting, tormonwirds also possess a strangely nurturing side. They defend tormonshilds and have even been known to carry dozens of the tadpoles within their mouths for safety.</p><hr /><p>Concentrations of intense magical energy often result in unusual weather phenomena, typically violent storms or other natural disasters, but sometimes they also create new entirely life-forms. Tormonshilds are born during artificially created storms, when magical energy combines with rainfall to transform the droplets themselves into living creatures. Tormonshilds rarely survive long after their creation; most meet grisly ends at the hands of local predators or dissolve as the magic that fuels their physical bodies fades. A tormonshild that survives its initial weeks of life eventually grows into a pest that menaces the local environment.</p><h2>Magical Rainstorms</h2><p>The rainstorms that produce tormonshilds occur more regularly than most people realize. However, as the majority of tormonshild tadpoles fail to reach maturity, the existence of tormonshilds remains virtually unknown outside of specific areas. While the Mana Wastes regularly experiences magical storms, the region is particularly inhospitable for these creatures. Such storms frequently happen throughout the islands of Azlant, however, and the magical energies that seep from the ancient ruins create conditions ideal for young tormonshilds.</p><h2>Greater Tormonwirds</h2><p>As locals tend to slay the creatures upon their discovery, tormonwirds generally live short lives. Rumors persist, though, of tormonwirds that have survived for several years, with some reportedly growing to the size of a small house. While direct evidence of such tormonwirds is lacking, anecdotal accounts of these enormous specimen suggest that greater tormonwirds can use their water manipulation abilities to drain lakes or create storms that produce even more tormonshilds.</p>"
+        },
+        "Trapped Gate": {
+            "name": "Trapped Gate",
+            "descriptionHazard": "<p>A hair trigger rings an alarm and launches a small assortment of wooden spikes to impale anyone attempting to open the gate incorrectly.</p>",
+            "disable": "<p>@Check[thievery|dc:15] (trained) to disable the thin trigger that snaps when attempting to open the gate.</p>",
+            "stealth": "<p>(trained)</p>",
+            "items": {
+                "action->Impale Trespasser": {
+                    "name": "Impale Trespasser",
+                    "description": "<p><strong>Trigger</strong> A creature attempts to open the gate</p><hr /><p><strong>Effect</strong> A loud alarm rings and set of wooden spikes swings up from below and over the gate, dealing @Damage[3d8[piercing]] damage to the triggering creature (@Check[reflex|dc:17|basic] save). If the creature takes damage from the spikes, they also become Grabbed by the gate. The creature can attempt to [[/act escape dc=17]]. If the creature succeeded at their basic Reflex save, they gain a +1 circumstance bonus to their checks to Escape, as the spikes didn't fully impale them. If the creature critically failed their basic Reflex save, they take a \u20132 circumstance penalty to their checks to Escape, as the spikes are embedded particularly deep.</p>"
+                }
+            }
+        },
+        "Vampire Servant": {
+            "name": "Vampire Servant",
+            "publicNotes": "<p>Vampires use their servitor pawns for infiltration and reconnaissance.</p>\n<hr />\n<p>Vampires are undead creatures that feed on the blood of the living.</p>",
+            "blurb": "Variant vampire servitor",
+            "sensesDetails": "darkvision",
+            "hpDetails": "coffin restoration, fast healing 5, void healing"
+        },
+        "Werebat Warrior": {
+            "name": "Werebat Warrior",
+            "languagesDetails": "Bat empathy",
+            "items": {
+                "equipment->Religious Symbol of Camazotz": {
+                    "name": "Religious Symbol of Camazotz",
+                    "description": "<p>This piece of wood or silver is emblazoned with an image representing a deity. Some divine spellcasters, such as clerics, can use a religious symbol of their deity to use certain abilities and cast some spells. A religious symbol can be worn on the body on a chain or pin, or can be held.</p>"
+                },
+                "consumable->Elixir of Life (Minor)": {
+                    "name": "Elixir of Life (Minor)",
+                    "description": "<p><strong>Activate</strong> <span class=\"action-glyph\">A</span> (manipulate)</p><hr /><p>Elixirs of life accelerate a living creature's natural healing processes and immune system. Upon drinking this elixir, you regain @Damage[1d6[healing]] Hit Points and gain +1 item bonus to saving throws against diseases and poisons for 10 minutes.</p>\n<p>@UUID[Compendium.pf2e.equipment-effects.Item.lPRuIRbu0rHBkoKY]{Effect: Elixir of Life}</p>"
+                }
+            }
+        }
+    },
+    "mapping": {
+        "publicNotes": "system.details.publicNotes",
+        "privateNotes": "system.details.privateNotes",
+        "acDetails": "system.attributes.ac.details",
+        "blurb": "system.details.blurb",
+        "hpDetails": "system.attributes.hp.details",
+        "allSavesBonus": "system.attributes.allSaves.value",
+        "speedsDetails": "system.attributes.speed.details",
+        "sensesDetails": "system.perception.details",
+        "languagesDetails": "system.details.languages.details",
+        "items": {
+            "converter": "translateActorItems",
+            "path": "items"
+        },
+        "rules": {
+            "converter": "translateRules",
+            "path": "system.rules"
+        },
+        "descriptionHazard": "system.details.description",
+        "disable": "system.details.disable",
+        "reset": "system.details.reset",
+        "routine": "system.details.routine",
+        "stealth": "system.attributes.stealth.details"
+    }
+}

@@ -13,7 +13,9 @@
         "6-08": "6-08",
         "6-09": "6-09",
         "6-10": "6-10",
-        "6-11": "6-11"
+        "6-11": "6-11",
+        "6-12": "6-12",
+        "6-13": "6-13"
     },
     "entries": {
         "Abendego's Squall (1-2)": {
@@ -114,6 +116,12 @@
                 }
             }
         },
+        "Acid Ooze": {
+            "name": "Acid Ooze"
+        },
+        "Acid Oozelet": {
+            "name": "Acid Oozelet"
+        },
         "Adolescent Kirin": {
             "name": "Adolescent Kirin",
             "publicNotes": "<p>Symbols of grace and purity, unicorns resemble proud and noble horses. They typically have pure white coats, but they are best known for the single, delicate horn that extends from the center of their forehead. While unicorns often serve as protectors of unspoiled wilderness and sacred places, they are themselves highly sought after for their horns, which are said to possess potent magical properties. To many, the mere idea of hunting such a magnificent creature in the hopes of severing its horn is utterly reprehensible. Indeed, a dehorned unicorn is a sorry sight, and few such unicorns survive much longer in the wild.</p>\n<p>Unicorns are found almost exclusively in remote, unsullied areas of wilderness. Sometimes associated with good-aligned deities, other times associated with nature and the fey, unicorns are always known for their righteousness and nobility. They are wary, at best, of most humanoid creatures, due in large part to poachers' tendency to hunt them for their horns, but unicorns are often rumored to have a weakness for those who are pure of both heart and spirit. Despite some tales, unicorns are equally likely to recognize purity in people of all genders.</p>",
@@ -123,6 +131,9 @@
                     "name": "Primal Innate Spells"
                 }
             }
+        },
+        "Amalgam Ooze": {
+            "name": "Amalgam Ooze"
         },
         "Angry Chelaxian Adjutant": {
             "name": "Angry Chelaxian Adjutant",
@@ -179,6 +190,15 @@
             "items": {
                 "spellcastingEntry->Primal Innate Spells": {
                     "name": "Primal Innate Spells"
+                }
+            }
+        },
+        "Auto-Greeter": {
+            "name": "Auto-Greeter",
+            "acDetails": "construct armor",
+            "items": {
+                "spellcastingEntry->Arcane Innate Spells": {
+                    "name": "Arcane Innate Spells"
                 }
             }
         },
@@ -614,7 +634,7 @@
         },
         "Divine Oozeshard": {
             "name": "Divine Oozeshard",
-            "acDetails": " (26 while in armored apotheosis form)",
+            "acDetails": "(26 while in armored apotheosis form)",
             "items": {
                 "action->Armored Apotheosis": {
                     "name": "Armored Apotheosis",
@@ -991,6 +1011,9 @@
                 }
             }
         },
+        "Giant Stinkbug": {
+            "name": "Giant Stinkbug"
+        },
         "Gluttonous Geode (Quest 22)": {
             "name": "Gluttonous Geode (Quest 22)",
             "publicNotes": "<p>The vast ranks of earth elementals have been slow to respond to the return of the elemental lords and the Planes of Metal and Wood. These events have not broken the mountains, nor have they blown away the sands.</p>\n<h2>Earthy Emotions</h2>\n<p>Earth elementals talk even less than most elementals. They're ponderous, weighing decisions so slowly they can crush the energy from a discussion. Their foremost concern is whether a situation can be endured. Though a rare or resplendent treasure might entice an earth elemental, it's difficult to spur any sense of urgency in them without the presence of an immediate threat.</p>"
@@ -1032,6 +1055,43 @@
             "name": "Halfling Shadower",
             "publicNotes": "<p>Halflings' keen sight makes them excellent street watchers. Though the job rarely calls for fighting, most street watchers cover themselves head to ankle in whatever armor and weapons they manage to get their hands on.</p>\n<hr />\n<p>Despite their small stature, a halfling can prove to be a mighty foe if you find yourself on the wrong side of their frying pan.</p>",
             "blurb": "Variant Halfling Street Watcher"
+        },
+        "Handheld Quaker": {
+            "name": "Handheld Quaker",
+            "descriptionHazard": "<p>This small toy-like device has a hidden mechanism meant to be activated by the user, but the centuries have eroded its magical-mechanical components to the point that they activate at the slightest touch.</p>",
+            "disable": "<p>@Check[thievery|dc:18] (trained) to deactivate the mechanism; @Check[crafting|dc:16] (trained) to identify and repair the problem components; two successes are required to disable the hazard.</p>",
+            "reset": "<p>The trap deactivates and resets if 1 minute passes without a creature being within 5' of the handheld quaker.</p>",
+            "routine": "<p>At its initiative, to determine what the quaker does, roll [[/gmr 1d4]] and consult the following table:</p><p>1: No action</p><p>2: A small quake: the terrain in a @Template[type:emanation|distance:10] centered on the quaker shakes briefly. A creature in an affected square is knocked @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone} (@Check[reflex|dc:18] save).</p><p>3: A medium quake: the terrain within the vault shakes constantly, transforming it into difficult terrain until its next turn. A creature in an affected square is knocked prone and takes @Damage[1d10[bludgeoning]] damage from the fall (@Check[reflex|dc:18|basic] save).</p><p>4: A great quake: the terrain within the vault moves in waves, transforming it into greater difficult terrain until its next turn. A creature in an affected square is violently slammed to the ground, knocked prone, and takes @Damage[(1d10+4)[bludgeoning]] damage (@Check[reflex|dc:20|basic] save).</p>",
+            "items": {
+                "action->Quake!": {
+                    "name": "Quake!",
+                    "description": "<p><strong>Trigger</strong> A creature moves into a space with the handheld quaker or interacts with it</p><hr /><p><strong>Effect</strong> The handheld quaker vibrates visibly and rolls initiative.</p>"
+                },
+                "action->Shaking Earth": {
+                    "name": "Shaking Earth",
+                    "description": "<p>A creature within difficult terrain created by the quaker takes a \u20132 circumstance penalty to Reflex saves and actions with the Manipulate trait, including @UUID[Compendium.pf2e.actionspf2e.Item.cYdz2grcOcRt4jk6]{Disable Device}.</p>"
+                }
+            }
+        },
+        "Handheld Quaker Mk 2": {
+            "name": "Handheld Quaker Mk 2",
+            "descriptionHazard": "<p>This small toy-like device has a hidden mechanism meant to be activated by the user, but the centuries have eroded its magical-mechanical components to the point that they activate at the slightest touch.</p>",
+            "disable": "<p>@Check[thievery|dc:22] (trained) to deactivate the mechanism; @Check[crafting|dc:20] (trained) to identify and repair the problem components; two successes are required to disable the hazard</p>",
+            "reset": "<p>The trap deactivates and resets if 1 minute passes without a creature being within 5' of the handheld quaker.</p>",
+            "routine": "<p>At its initiative, to determine what the quaker does, roll [[/grm 1d4]] and consult the following table:</p><p>1: No action</p><p>2: A small quake: the terrain in a @Template[type:emanation|distance:10] centered on the quaker shakes briefly. A creature in an affected square is knocked @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone} (@Check[reflex|dc:21] save).</p><p>3: A medium quake: the terrain within the vault shakes constantly, transforming it into difficult terrain until its next turn. A creature in an affected square is knocked prone and takes @Damage[2d8[bludgeoning]] damage from the fall (@Check[reflex|dc:21|basic] save).</p><p>4: A great quake: the terrain within the vault moves in waves, transforming it into greater difficult terrain until its next turn. A creature in an affected square is violently slammed to the ground, knocked prone and taking @Damage[(2d8+6)[bludgeoning]] damage (@Check[reflex|dc:25|basic] save).</p>",
+            "items": {
+                "action->Quake!": {
+                    "name": "Quake!",
+                    "description": "<p><strong>Trigger</strong> A creature moves into a space with the handheld quaker or interacts with it</p><hr /><p><strong>Effect</strong> The handheld quaker vibrates visibly and rolls initiative.</p>"
+                },
+                "action->Shaking Earth": {
+                    "name": "Shaking Earth",
+                    "description": "<p>A creature within difficult terrain created by the quaker takes a \u20132 circumstance penalty to Reflex saves and actions with the Manipulate trait, including @UUID[Compendium.pf2e.actionspf2e.Item.cYdz2grcOcRt4jk6]{Disable Device}.</p>"
+                }
+            }
+        },
+        "Hatched Wasp": {
+            "name": "Hatched Wasp"
         },
         "Haunting Elegecide (Doom Demon)": {
             "name": "Haunting Elegecide (Doom Demon)",
@@ -1180,6 +1240,9 @@
             "name": "Immoral Gargarthezul Captain (Demon Pirate)",
             "languagesDetails": "telepathy 100 feet"
         },
+        "Inhabited Statue": {
+            "name": "Inhabited Statue"
+        },
         "Irrisen Bandit": {
             "name": "Irrisen Bandit"
         },
@@ -1287,6 +1350,11 @@
                 }
             }
         },
+        "Loyal Ort": {
+            "name": "Loyal Ort",
+            "publicNotes": "<p>These shapeless masses of quivering flesh are the least of devilkind. Pathetic creatures from Hell's first layer, orts roam alongside damned and suffering souls. Nessaris can combine the essence of a mob of orts to concentrate their collective wickedness within a single form, granting it an infernal sentience and transforming it into a more powerful devil (see the nessari's Shape Devils ability).</p>\n<hr />\n<p>Masters of corruption and architects of conquest, devils seek both to tempt mortal life to join in their pursuit of all things profane and to spread tyranny throughout all worlds. The temptations they offer mortals range from great powers granted by the signing of an infernal contract to twisted favors following a whispered pledge to a diabolic patron, or any number of even subtler exchanges. Those who succumb to these temptations find themselves consigned to an afterlife of endless torment in the pits of Hell, wherein the only hope of escape lies in the chance of being promoted to become a devil in the infernal ranks.</p>\n<p>Every devil has a specific role to play in the upkeep of the remorseless bureaucratic machine that is Hell, from soldiers and scholars to inquisitors, lawyers, judges, and executioners. Lowly orts perform subservient labor to more powerful and specialized devils, such as infantry and contract devils, while the greatest nessaris command entire infernal armies.</p>\n<p>Asmodeus stands at the apex of the structure he created, but the layers below him are marked by a constant jockeying for position. Most diabolic plans ultimately serve to improve the schemer's place in the hierarchy.</p>",
+            "blurb": "Variant ort"
+        },
         "Luxia Mirsaad": {
             "name": "Luxia Mirsaad",
             "items": {
@@ -1311,9 +1379,43 @@
                 }
             }
         },
+        "Major Unstable Furniture Archway": {
+            "name": "Major Unstable Furniture Archway",
+            "descriptionHazard": "<p>This unsteady pile of furniture is piled to the top of this usually high-ceilinged room. There looks to be some space to squeeze through to the other side, but even the slightest touch causes the stack to destabilize, and there's so much that once it begins to fall, it's difficult to stop.</p>",
+            "disable": "<p>@Check[athletics|dc:25] to knock the pile over in a safe direction or @Check[thievery|dc:23] (trained) to carefully rearrange the furniture to a more stable configuration.</p>",
+            "routine": "<p>On its initiative, the pile expands into an adjacent space, dealing creatures in that space 2d8 +5 bludgeoning damage with a @Check[reflex|dc:21|basic] save, pushing them into an adjacent empty space, and making that space impassable until cleared. If no adjacent empty space is available, the pile buries the creature, suffocating it. Clearing a space or pulling a creature out requires a @Check[athletics|dc:18] check.</p>",
+            "items": {
+                "action->Tumbling Down": {
+                    "name": "Tumbling Down",
+                    "description": "<p><strong>Trigger</strong> A creature moves into a space adjacent to the furniture pile</p><hr /><p><strong>Effect</strong> Part of the pile slides into a space the creature occupies, causing @Damage[(2d8+5)[bludgeoning]] damage with a basic @Check[reflex|dc:21] save. The furniture pile rolls initiative.</p>"
+                }
+            }
+        },
         "Manifestation of Nightmare": {
             "name": "Manifestation of Nightmare",
             "languagesDetails": "Telepathy 30 feet"
+        },
+        "Maralictor Marius Salutio": {
+            "name": "Maralictor Marius Salutio",
+            "items": {
+                "spellcastingEntry->Arcane Spontaneous Spells": {
+                    "name": "Arcane Spontaneous Spells"
+                }
+            }
+        },
+        "Maralictor Marius Salutio (5-6)": {
+            "name": "Maralictor Marius Salutio (5-6)",
+            "items": {
+                "spellcastingEntry->Arcane Spontaneous Spells": {
+                    "name": "Arcane Spontaneous Spells"
+                }
+            }
+        },
+        "Maralictor Petra Fidena": {
+            "name": "Maralictor Petra Fidena"
+        },
+        "Maralictor Petra Fidena (5-6)": {
+            "name": "Maralictor Petra Fidena (5-6)"
         },
         "Matriarch Szvetneera": {
             "name": "Matriarch Szvetneera",
@@ -1425,7 +1527,7 @@
         },
         "Oozeshard": {
             "name": "Oozeshard",
-            "acDetails": " (24 while in armored apotheosis form)",
+            "acDetails": "(24 while in armored apotheosis form)",
             "items": {
                 "action->Armored Apotheosis": {
                     "name": "Armored Apotheosis",
@@ -1476,6 +1578,12 @@
                     "name": "Speed 10 feet"
                 }
             }
+        },
+        "Origami Cockroach": {
+            "name": "Origami Cockroach"
+        },
+        "Origami Mite": {
+            "name": "Origami Mite"
         },
         "Pathfinder Defender": {
             "name": "Pathfinder Defender",
@@ -1567,6 +1675,17 @@
                 },
                 "equipment->Pliers": {
                     "name": "Pliers"
+                }
+            }
+        },
+        "Powered Curio": {
+            "name": "Powered Curio",
+            "items": {
+                "spellcastingEntry->Arcane Innate Spells": {
+                    "name": "Arcane Innate Spells"
+                },
+                "spell->Light (Self Only)": {
+                    "name": "Light (Self Only)"
                 }
             }
         },
@@ -1690,6 +1809,15 @@
             "name": "Rimesnap",
             "publicNotes": "<p>\"True\" twigjacks, as they consider themselves, are found in wild forests alongside the fey they idolize.</p>\n<hr />\n<p>Maladjusted forest denizens, twigjacks form from the cruel and prankish combination of fey and the very woods in which they reside. A twigjack's body is made up of prickly brambles woven with vines. Shaggy, mossy growth, not unlike hair, tops a twigjack's head. Its mouth is just a canyon of splintered and broken sticks bisecting its face. Leaves and sprigs of new growth randomly sprout from the creature's body. Many dense forests on Golarion have at least a handful of twigjacks living in the undergrowth.</p>\n<p>While truculent and violent, twigjacks care deeply for what they consider to be their forests. These creatures harass outsiders who delve deep into their wooded domains, forcing back even the most determined explorers, foresters, and travelers, especially when those intruders cut roads through the forest. However, they are not terribly territorial when it comes to other forest creatures. When sylvan creatures, especially fey, rally against an outside threat, twigjacks in the area eagerly arrive to fight, even if they were not invited.</p>",
             "blurb": "Variant twigjack"
+        },
+        "Rusty Auto-Greeter": {
+            "name": "Rusty Auto-Greeter",
+            "acDetails": "construct armor",
+            "items": {
+                "spellcastingEntry->Arcane Innate Spells": {
+                    "name": "Arcane Innate Spells"
+                }
+            }
         },
         "Sailor's Warning (1-2)": {
             "name": "Sailor's Warning (1-2)",
@@ -1911,6 +2039,34 @@
             "blurb": "Variant zombie brute",
             "hpDetails": "void healing"
         },
+        "Spiders' Hunting Pit": {
+            "name": "Spiders' Hunting Pit",
+            "descriptionHazard": "<p>Loose debris covers a patch of what appears as solid ground in a 10 feet by 5 feet area. It's actually covering thin webbing strung over a 20 foot pit.</p>",
+            "disable": "<p>@Check[thievery|dc:18] (trained) to deconstruct the webbing or @Check[acrobatics|dc:20] to pull the webbing apart without getting trapped or hit by rocks.</p>",
+            "reset": "<p>1 week</p>",
+            "items": {
+                "action->Pitfall": {
+                    "name": "Pitfall",
+                    "description": "<p><strong>Trigger</strong> A creature that isn't a spider walks onto the webbing</p><hr /><p><strong>Effect</strong> The triggering creature falls in, taking @Damage[(2d10+13)[bludgeoning]] damage with a @Check[reflex|dc:20|basic] save from rocks tumbling into the pit.</p>"
+                }
+            }
+        },
+        "Spirit Hound": {
+            "name": "Spirit Hound",
+            "hpDetails": "rejuvenation, void healing"
+        },
+        "Sticky Webbing": {
+            "name": "Sticky Webbing",
+            "descriptionHazard": "<p>Fine, sticky threads of spiders' silk are strung across their lair.</p>",
+            "disable": "<p>@Check[survival|dc:15] or @Check[thievery|dc:15] to carefully remove the strands.</p>",
+            "reset": "<p>1 day</p>",
+            "items": {
+                "action->Capturing Strands": {
+                    "name": "Capturing Strands",
+                    "description": "<p><strong>Trigger</strong> A creature that isn't a spider moves into the sticky webbing</p><hr /><p><strong>Effect</strong> The sticky webbing covers the triggering creature's body. The triggering creature must succeed at a @Check[reflex|dc:19] save or is @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 1} until a <span class=\"action-glyph\">2</span> maneuver is performed to clean off the sticky webbing.</p>"
+                }
+            }
+        },
         "Sudden Drop": {
             "name": "Sudden Drop",
             "descriptionHazard": "<p>A portion of Manaket's sewer system is under construction and has been left covered by only a few planks of wood since the Godsrain. After two weeks of wear, they're ready to collapse.</p>",
@@ -1940,6 +2096,10 @@
                 }
             }
         },
+        "The Caretaker": {
+            "name": "The Caretaker",
+            "hpDetails": "rejuvenation, void healing"
+        },
         "The Elite Appraiser": {
             "name": "The Elite Appraiser",
             "publicNotes": "<p>Neither human nor beast yet resembling both, yeongno (yeong-no) are creatures that once were denizens of heaven but were cast out, down to the mortal Universe, due to their own greed. Yeongno claim to have once been celestial dragons and wear elongated dragon masks with full-body wraps decorated with scale patterns in honor of this claim\u2014though no one has been able to confirm the veracity of this belief. As they wander, they hold a willow pipe in their mouths, producing a distinct \"bibi\" sound that often heralds their appearance.</p>\n<p>Despite their reputation as monsters who eat people, yeongno are welcomed by the poor and oppressed, who see the creatures as wise and just. Yeongno believe that by eating 100 wealthy individuals who abuse their wealth or who accumulated their wealth by underhanded or exploitative means, they can atone for their own greed, allowing them to ascend back into heaven. A corrupt and greedy individual can escape their fate of being eaten by a yeongno by giving away all of their wealth and agreeing to be transformed into a pig for one year. If the person can endure one year living as a pig in the care of a household they once harmed, the yeongno will spare them.</p>",
@@ -1968,11 +2128,48 @@
                 }
             }
         },
+        "Thorns of the Rose Pit": {
+            "name": "Thorns of the Rose Pit",
+            "descriptionHazard": "<p>Decorated smooth-hewn flagstone flooring gives way along hidden seams to a 20-foot square, 25-foot-deep pit festooned with spikes and blades of petrified wood in the darkness below.</p>",
+            "disable": "<p>@Check[thievery|dc:20] (trained) to disable the trap door mechanism</p>",
+            "reset": "<p>Creatures can still fall into the trap, but the trap door must be reset manually for the trap to become hidden again.</p>",
+            "stealth": "<p>(or 0 if the trap door is disabled or broken) or @UUID[Compendium.pf2e.spells-srd.Item.gpzpAAAJ1Lza2JVl]{Detect Magic}</p>",
+            "items": {
+                "action->Pitfall": {
+                    "name": "Pitfall",
+                    "description": "<p><strong>Trigger</strong> A creature walks onto the trap door</p><hr /><p><strong>Effect</strong> The triggering creature falls in and takes falling damage (typically @Damage[10[bludgeoning]] damage). That creature can use the @UUID[Compendium.pf2e.actionspf2e.Item.3yoajuKjwHZ9ApUY]{Grab an Edge} reaction to avoid falling.</p>\n<p>When creatures fall into the pit, the petrified wood spikes along the floor grow to attempt to plunge into the triggering creature.</p>"
+                }
+            }
+        },
+        "Thorns of the Rose Pit (5-6)": {
+            "name": "Thorns of the Rose Pit (5-6)",
+            "descriptionHazard": "<p>Decorated smooth-hewn flagstone flooring gives way along hidden seams to a 20-foot square, 25-foot-deep pit festooned with spikes and blades of petrified wood in the darkness below.</p>",
+            "disable": "<p>@Check[thievery|dc:22] (trained) to disable the trap door mechanism</p>",
+            "reset": "<p>Creatures can still fall into the trap, but the trap door must be reset manually for the trap to become hidden again.</p>",
+            "stealth": "<p>(or 0 if the trap door is disabled or broken) or @UUID[Compendium.pf2e.spells-srd.Item.gpzpAAAJ1Lza2JVl]{Detect Magic}</p>",
+            "items": {
+                "action->Pitfall": {
+                    "name": "Pitfall",
+                    "description": "<p><strong>Trigger</strong> A creature walks onto the trap door</p><hr /><p><strong>Effect</strong> The triggering creature falls in and takes falling damage (typically @Damage[10[bludgeoning]] damage). That creature can use the @UUID[Compendium.pf2e.actionspf2e.Item.3yoajuKjwHZ9ApUY]{Grab an Edge} reaction to avoid falling.</p>\n<p>When creatures fall into the pit, the petrified wood spikes along the floor grow to attempt to plunge into the triggering creature.</p>"
+                }
+            }
+        },
         "Tough Puddles Ghoul": {
             "name": "Tough Puddles Ghoul",
             "publicNotes": "<p>Ghouls stalkers are ravenous undead who haunt graveyards and eat corpses.</p>\n<hr />\n<p>Few creatures are more ubiquitous to sinister locations such as lonely graveyards and ruined crypts than the flesh-eating undead known as ghouls.</p>",
             "blurb": "Variant ghoul",
             "hpDetails": "void healing"
+        },
+        "Toy Automaton": {
+            "name": "Toy Automaton",
+            "items": {
+                "spellcastingEntry->Arcane Innate Spells": {
+                    "name": "Arcane Innate Spells"
+                },
+                "spell->Light (Self Only)": {
+                    "name": "Light (Self Only)"
+                }
+            }
         },
         "Turbulent Koi Egg": {
             "name": "Turbulent Koi Egg",
@@ -2025,6 +2222,36 @@
             "items": {
                 "spellcastingEntry->Primal Innate Spells": {
                     "name": "Primal Innate Spells"
+                }
+            }
+        },
+        "Unstable Furniture Archway": {
+            "name": "Unstable Furniture Archway",
+            "descriptionHazard": "<p>This unsteady pile of furniture is piled to the top of this usually high-ceilinged room. There looks to be some space to squeeze through to the other side, but even the slightest touch causes the stack to destabilize, and there's so much that once it begins to fall, it's difficult to stop.</p>",
+            "disable": "<p>@Check[athletics|dc:21] to knock the pile over in a safe direction or @Check[thievery|dc:19] (trained) to carefully rearrange the furniture to a stable configuration.</p>",
+            "routine": "<p>On its initiative, the pile expands into an adjacent space, dealing creatures in that space @Damage[(1d6+4)[bludgeoning]] damage with a @Check[reflex|dc:18|basic] save, pushing any creatures in that space into an adjacent empty space, and making that space impassable until cleared. If no adjacent empty space is available, the pile buries the creature, suffocating it. Clearing a space or pulling a creature out requires a @Check[athletics|dc:15] check.</p>",
+            "items": {
+                "action->Tumbling Down": {
+                    "name": "Tumbling Down",
+                    "description": "<p><strong>Trigger</strong> A creature moves into a space adjacent to the furniture pile</p><hr /><p><strong>Effect</strong> Part of the pile slides into a space the creature occupies, causing @Damage[(1d6+4)[bludgeoning]] damage with a @Check[reflex|dc:18|basic] save. The furniture pile rolls initiative.</p>"
+                }
+            }
+        },
+        "Vespiria": {
+            "name": "Vespiria",
+            "languagesDetails": "telepathy 100 feet",
+            "items": {
+                "spellcastingEntry->Divine Innate Spells": {
+                    "name": "Divine Innate Spells"
+                }
+            }
+        },
+        "Vespiria Queen": {
+            "name": "Vespiria Queen",
+            "languagesDetails": "telepathy 100 feet",
+            "items": {
+                "spellcastingEntry->Divine Innate Spells": {
+                    "name": "Divine Innate Spells"
                 }
             }
         },
@@ -2091,6 +2318,9 @@
             "name": "Weak Water Wisp",
             "publicNotes": "<p>Water wisps are swimming spheres of foam and water, perpetually humming with a wash of soft sounds. They're gentle, nurturing, and quick to help anyone in need.</p>\n<hr />\n<p>Wisps are tiny elemental beings that emerged during the creation of the Elemental Planes. The first wisps roamed the Inner Sphere in shifting symphonies that traded members with their every meeting. These symphonies of free wisps created music out of their combined resonances, but when the evil Elemental Lords realized the value of the wisps' resonance, they captured whole symphonies for use as servants.</p>\n<p>Wisps attune to each other and to those they surround themselves with. This attunement makes them naturally supportive allies. Free wisps still roam the Inner Sphere and the Material Plane, but they're usually shy and hide themselves from strangers. However, they happily offer their service to those who show them kindness. They especially find themselves drawn to spellcasters who practice elemental magic; these wisps usually watch from afar but sometimes approach those who seem safe to become familiars or comrades.</p>\n<p>Free wisps who find one another become close almost immediately. They get especially excited when they find wisps of elements other than their own, showing none of the animosity some elementals exhibit toward other types. Instead, they join in an excited dance, emitting resonances that faintly echo the symphonies of ancient days.</p>",
             "sensesDetails": "mist vision"
+        },
+        "Weak Wood Beetle": {
+            "name": "Weak Wood Beetle"
         },
         "Weak Wood Scamp": {
             "name": "Weak Wood Scamp",
@@ -2182,6 +2412,9 @@
                 }
             }
         },
+        "Wood Beetle": {
+            "name": "Wood Beetle"
+        },
         "Wood Scamp (Quest 22)": {
             "name": "Wood Scamp (Quest 22)",
             "publicNotes": "<p>These moss colonies coalesce over a century into the rough facsimile of a large sloth, right down to mimicking the unique structure of the animal's fur that attracts additional fungi and pollinating insects. Unless summoned or attacked, they rarely leave the trees upon which they first formed.</p>\n<hr />\n<p>At first glance, wood elementals might not seem to have the same destructive potential as their cousins from the Planes of Fire, Water, or Air, but don't be fooled. The woods can be a dangerous place.</p>\n<p>Though some resemble animals, the elemental beasts presented here are still plants, and their life cycles reflect it. Vegetable lambs grow on rooted stalks, from which they can't be removed until they've matured (or perhaps ripened), leaving them dependent on their immediate surroundings for food. Moss sloths are little more than lumps of green fluff for the first century of their existence, only gaining limited mobility once they can grow their defensive wooden claws.</p>\n<h2>Wild But Unwild</h2>\n<p>Many wood elementals are created by kizidhars and other powerful creatures on the Plane of Wood and placed in rote roles. Populating nature preserves and sprawling estates, they can be unsure how to behave if released into the wild. They're essentially born domesticated and will likely act far differently than the wild creatures they mimic, even in natural environments. Their natural predators are few, putting the elementals at less risk, although they're still sometimes eaten by giant termites or captured by some as pets.</p>\n<h2>A Brain By Any Other Name</h2>\n<p>Even if Lady Shumunue taught the wood elementals' ancestors to mimic animals, a wood elemental's consciousness is contained not in a brain but in its root system. Entities like nursery crawlers, living groves, and carved beasts use this to their advantage. That an elemental's wooden body can be carved and crafted, apparently without lasting harm, implies that they might not feel pain so long as their roots remain undamaged.</p>",
@@ -2193,6 +2426,11 @@
                     "name": "Oaken Resilience (Self Only)"
                 }
             }
+        },
+        "Young Giant Viper": {
+            "name": "Young Giant Viper",
+            "publicNotes": "<p>The giant viper's fangs are a frightening sight, with injection tubes as long as daggers. The sheer amount of venom injected by a giant viper can cause severe blood clotting and leave a victim utterly drained of vitality.</p>\n<hr />\n<p>Snakes come in an array of forms, from jungle-dwelling constrictors that wrap around their prey to venomous vipers with deadly bites. Regardless, all snakes consume their prey whole by unhinging their jaws and using powerful muscles to move the food down their throats and into their stomachs.</p>",
+            "blurb": "Variant Giant Viper"
         },
         "Young Warg": {
             "name": "Young Warg",
@@ -2266,7 +2504,7 @@
                 },
                 "action->Troop Defenses": {
                     "name": "Troop Defenses",
-                    "description": "<p><strong>Thresholds</strong> 40 (12 squares), 20 (8 squares)</p><hr /><p>@Localize[PF2E.NPC.Abilities.Glossary.TroopDefenses]</p>"
+                    "description": "<p><strong>Thresholds</strong> 40 (12 squares), 20 (8 squares)</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.TroopDefenses]</p>"
                 },
                 "action->Grave Tide": {
                     "name": "Grave Tide",
