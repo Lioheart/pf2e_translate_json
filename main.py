@@ -387,6 +387,25 @@ def process_files(folder, version, type_system):
                             }
                         )
 
+                    # ---Overrides---
+                    try:
+                        transifex_dict["entries"][name].update({"overrides": []})
+                        overrides = new_data['system']['overrides']
+                        flag_iter = 0
+                        for override in overrides:
+                            transifex_dict["entries"][name]["overrides"].append(override)
+                            flag_iter += 1
+                        flag.append('overrides')
+                    except KeyError:
+                        pass
+
+                    if 'overrides' in flag:
+                        transifex_dict['mapping'].update(
+                            {
+                                "overrides": "system.overrides",
+                            }
+                        )
+
                     # ---Prerequisites---
                     try:
                         new_data = exclude_empty_prerequisites(new_data)
@@ -641,7 +660,10 @@ def process_files(folder, version, type_system):
                         for item in new_data['items']:
                             # Nazwanie klucza
                             if item['type'] in ['melee', 'ranged']:
-                                type_name = f'strike-{item["system"]["weaponType"]["value"]}'
+                                try:
+                                    type_name = f'strike-{item["system"]["weaponType"]["value"]}'
+                                except KeyError:
+                                    type_name = f'strike-{item['type']}'
                             else:
                                 type_name = item['type']
                             item_name = f'{type_name}->{item["name"]}'

@@ -128,7 +128,27 @@
         },
         "Ardande Ghost": {
             "name": "Ardande Ghost",
-            "hpDetails": "rejuvenation, void healing"
+            "hpDetails": "rejuvenation, void healing",
+            "items": {
+                "strike-melee->Ghostly Hand": {
+                    "name": "Ghostly Hand"
+                },
+                "action->Rejuvenation": {
+                    "name": "Rejuvenation",
+                    "description": "<p>When a ghost is destroyed, it re-forms after [[/br 2d4 #days]]{2d4 days} within the location it's bound to, fully healed. A ghost can be permanently destroyed only if someone determines the reason for its existence and sets right whatever prevents the spirit from resting.</p>"
+                },
+                "action->Void Healing": {
+                    "name": "Void Healing"
+                },
+                "action->Corrupting Gaze": {
+                    "name": "Corrupting Gaze",
+                    "description": "<p>The ghost stares at a creature it can see within 30 feet. The target takes @Damage[6d6[void]] damage with a @Check[will|dc:30|basic] save.</p>\n<p>A creature that fails its save is also @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 1} for 1 minute.</p>"
+                },
+                "action->Phantom Blight": {
+                    "name": "Phantom Blight",
+                    "description": "<p><strong>Saving Throw</strong> @Check[fortitude|dc:30]</p>\n<p><strong>Maximum Duration</strong> 6 rounds</p>\n<p><strong>Stage 1</strong> @Damage[3d6[mental]] damage and @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 1} (1 round)</p>\n<p><strong>Stage 2</strong> @Damage[4d6[mental]] damage and clumsy 1 (1 round)</p>\n<p><strong>Stage 3</strong> @Damage[5d6[mental]] damage and clumsy 1, plus the creature takes a \u20132 penalty to saving throws against Ayrzul's Blight for 24 hours (1 round)</p>"
+                }
+            }
         },
         "Avathrael Realmshaper": {
             "name": "Avathrael Realmshaper",
@@ -354,6 +374,40 @@
                 },
                 "spell->Environmental Endurance (Constant)": {
                     "name": "Environmental Endurance (Constant)"
+                },
+                "strike-melee->Tendril": {
+                    "name": "Tendril"
+                },
+                "action->Shaped Tongue": {
+                    "name": "Shaped Tongue",
+                    "description": "<p>The speaker in spores can speak with all plants and the creature they resemble.</p>"
+                },
+                "action->Spore Matrix": {
+                    "name": "Spore Matrix",
+                    "description": "<p>60 feet.</p>\n<p>The speaker in spores is surrounded by a strong concentration of spores. The speaker can communicate telepathically to any creatures in the aura who have breathed in their spores. This communication always uses the listener's native language and can't be used with a creature that doesn't breathe.</p>"
+                },
+                "action->Sporesight (Imprecise) 120 feet": {
+                    "name": "Sporesight (Imprecise) 120 feet",
+                    "description": "<p>The speaker in spores can see through spores drifting in the air, ignoring cover. This is an imprecise sense and functions only in areas without strong wind currents. Sporesight doesn't function underwater.</p>"
+                },
+                "action->Constant Spells": {
+                    "name": "Constant Spells"
+                },
+                "action->Blight Walker": {
+                    "name": "Blight Walker",
+                    "description": "<p>The speaker in spores recovers from the @UUID[Compendium.pf2e.conditionitems.Item.6uEgoh53GbXuHpTF]{Paralyzed}, @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed}, and @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned} conditions at the end of their turn. They're also immune to penalties to their Speeds and ignore cover, concealment, difficult terrain, and greater difficult terrain resulting from plants or fungi.</p>"
+                },
+                "action->Toxic Spores": {
+                    "name": "Toxic Spores",
+                    "description": "<p><strong>Trigger</strong> A creature critically hits the speaker or the speaker dies</p><hr /><p><strong>Effect</strong> The blighted speaker in spores releases a burst of toxic spores. Any creature within 10 feet of the speaker in spores takes @Damage[3d6[poison]] damage (@Check[fortitude|dc:31|basic] save). Creatures that fail their saving throw are exposed to Ayrzul's Blight.</p>"
+                },
+                "action->Accelerate Decay": {
+                    "name": "Accelerate Decay",
+                    "description": "<p>The speaker in spores unleashes void energy that forces desiccation in a @Template[emanation|distance:30]. Each living creature in the area takes @Damage[14d6[void]] damage (@Check[fortitude|dc:33|basic] save). Creatures afflicted by a disease take a \u20132 circumstance penalty to this save.</p>\n<p>All Small or smaller non-magical plant life (though not plant creatures) in the area wither and die, eliminating any cover or concealment and leaving difficult terrain in their wake.</p>\n<p>The speaker in spores is immune to this effect and can't use this ability again for [[/gmr 1d4 #Recharge this ability]]{1d4 rounds}.</p>"
+                },
+                "action->Ayrzul's Blight": {
+                    "name": "Ayrzul's Blight",
+                    "description": "<p>Radioactive elemental energy courses through sap and blood, petrifies bark and bone, withers flesh, and mutates life. Creatures with the wood or plant trait treat critical successes against the disease as successes. The drained condition caused by Ayrzul's Blight can't be healed until the disease is removed. Ayrzul's Blight presents with obvious but varying symptoms, from coughing up black dust to suddenly becoming covered in itchy patches of flaky stone.</p>\n<p><strong>Saving Throw</strong> @Check[fortitude|dc:33]</p>\n<p><strong>Onset</strong> 1 day</p>\n<p><strong>Stage 1</strong> @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 1} (1 day)</p>\n<p><strong>Stage 2</strong> @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 2} (1 day)</p>\n<p><strong>Stage 3</strong> @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 3} (1 day)</p>\n<p><strong>Stage 4</strong> @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 4} (1 day)</p>\n<p><strong>Stage 5</strong> mutation (on a failure) or death (on a critical failure)</p>"
                 }
             }
         },
@@ -380,6 +434,32 @@
                 "equipment->Mask (Plague)": {
                     "name": "Mask (Plague)",
                     "description": "<p>A mask helps you use the @UUID[Compendium.pf2e.actionspf2e.Item.AJstokjdG6iDjVjE]{Impersonate} action to pass yourself off as someone you aren't.</p>\n<p>This stylized bird mask is equipped with a basic filter. The plague mask attempts to counteract any inhaled poisons or airborne diseases each round you breathe. The same replacement filters used in @UUID[Compendium.pf2e.equipment-srd.Item.kDrlBnkDMVxPrahI]{Water Purifiers} can be used with a plague mask, granting you the counteract modifier and effects of the filter for 20 minutes.</p>\n<p>Plague masks are uncommon items because the filters they use to protect from inhaled poisons and diseases are themselves uncommon. As such, you can buy a plague mask without a filter as a common item, though it's usually more cost-effective to buy a fine mask in the shape of a plague mask in that case.</p>"
+                },
+                "strike-melee->Hatchet": {
+                    "name": "Hatchet"
+                },
+                "action->Scent (Imprecise) 30 feet": {
+                    "name": "Scent (Imprecise) 30 feet"
+                },
+                "action->Blighted Cloak": {
+                    "name": "Blighted Cloak",
+                    "description": "<p><strong>Trigger</strong> A creature adjacent to the Bonebleacher bugbear hits them with a melee Strike;</p><hr /><p><strong>Effect</strong> The triggering creature is exposed to Ayrzul's Blight. The bugbear can't use Blighted Cloak again until they spend 10 minutes applying blighted plant matter to their cloak.</p>"
+                },
+                "action->Pinpoint Poisoner": {
+                    "name": "Pinpoint Poisoner",
+                    "description": "<p>When the Bonebleacher bugbear successfully Strikes an @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} creature with a poisoned weapon or exposes an off-guard creature to an inhaled poison, the creature takes a \u20132 circumstance penalty to its initial save against that poison.</p>"
+                },
+                "action->Poison Spray": {
+                    "name": "Poison Spray",
+                    "description": "<p><strong>Requirements</strong> The Bonebleacher bugbear is holding a contact or injury poison</p><hr /><p><strong>Effect</strong> The Bonebleacher bugbear attaches the poison container to a nozzle on their mask, which then sprays the poison from the mask in a @Template[cone|distance:15]. The bugbear isn't exposed to the poison. All creatures in the cone are immediately exposed to the poison, and each creature must attempt a Fortitude save against the poison.</p>"
+                },
+                "action->Sneak Attack": {
+                    "name": "Sneak Attack",
+                    "description": "<p>The Bonebleacher bugbear deals an additional 2d6 precision damage to @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} creatures.</p>"
+                },
+                "action->Twin Feint": {
+                    "name": "Twin Feint",
+                    "description": "<p><strong>Requirements</strong> The Bonebleacher bugbear is wielding two melee weapons, each in a different hand</p><hr /><p><strong>Effect</strong> The Bonebleacher bugbear makes a dazzling series of attacks with two weapons, using the first attack to throw their foe @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} against a second attack at a different angle. They make one Strike with each of their two melee weapons, both against the same target. The target is automatically off-guard against the second attack. Apply the bugbear's multiple attack penalty to the Strikes normally.</p>"
                 }
             }
         },
@@ -405,7 +485,34 @@
         },
         "Caustic Wraith": {
             "name": "Caustic Wraith",
-            "hpDetails": "void healing"
+            "hpDetails": "void healing",
+            "items": {
+                "strike-melee->Caustic Touch": {
+                    "name": "Caustic Touch"
+                },
+                "action->Lifesense 60 feet": {
+                    "name": "Lifesense 60 feet"
+                },
+                "action->Aggravating Aura": {
+                    "name": "Aggravating Aura",
+                    "description": "<p>10 feet. Acidic vapor surrounds the caustic wraith, making other creatures' bodies feel raw and especially sensitive to pain. A creature that begins in the area must succeed at a @Check[will|dc:28] save or gain weakness 3 to all damage for 1 round (weakness 5 on a critical failure).</p><hr /><p>@UUID[Compendium.pf2e.bestiary-effects.Item.WQsMv2KlURI9OKQQ]{Effect: Aggravating Aura}</p>"
+                },
+                "action->Void Healing": {
+                    "name": "Void Healing"
+                },
+                "action->Dissolve From the Inside": {
+                    "name": "Dissolve From the Inside",
+                    "description": "<p>The caustic wraith reaches into the body of a creature within 10 feet, melting its organs and inflicting pain. The target takes @Damage[4d8[acid]] damage with a @Check[fortitude|dc:28|basic] save. On a critical failure, the creature is also @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 2}.</p>"
+                },
+                "action->Drain Life": {
+                    "name": "Drain Life",
+                    "description": "<p>When the caustic wraith damages a living creature with its caustic touch Strike, the wraith gains 10 temporary Hit Points, and the target must succeed at a @Check[fortitude|dc:28] save or become @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 1}. Further damage dealt by the caustic wraith increases the drained condition value by 1 on a failed save, to a maximum of @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 4}.</p>"
+                },
+                "action->Wraith Spawn": {
+                    "name": "Wraith Spawn",
+                    "description": "<p>A living humanoid slain by a caustic wraith rises as a wraith spawn after [[/gmr 1d4 #rounds]]{1d4 rounds}. This wraith spawn is under the command of the wraith that killed it. It doesn't have drain life or wraith spawn and becomes @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 2}. After 24 hours, the wraith spawn dissipates and is destroyed.</p>"
+                }
+            }
         },
         "Chetamog": {
             "name": "Chetamog",
@@ -433,7 +540,44 @@
         },
         "Coiled Conifer": {
             "name": "Coiled Conifer",
-            "publicNotes": "<p>This bent and slithering entity is barely identifiable as a tree. Tentacle-like roots extend from its trunk in odd places, meeting tumorous knots filled with caustic sap.</p><hr /><p>The Plane of Wood contains many unique ecosystems formed around species of wondrous trees; when Ayrzul's Blight mutates one of these trees rather than killing it, it can have a cascading effect on the tree's biome. Multiple species often mutate in tandem, becoming warped mockeries and a vector for Ayrzul's Blight. These \"blight bonded\" creature families are parasites and predators and typically form twisted symbiotic relationships.</p>"
+            "publicNotes": "<p>This bent and slithering entity is barely identifiable as a tree. Tentacle-like roots extend from its trunk in odd places, meeting tumorous knots filled with caustic sap.</p><hr /><p>The Plane of Wood contains many unique ecosystems formed around species of wondrous trees; when Ayrzul's Blight mutates one of these trees rather than killing it, it can have a cascading effect on the tree's biome. Multiple species often mutate in tandem, becoming warped mockeries and a vector for Ayrzul's Blight. These \"blight bonded\" creature families are parasites and predators and typically form twisted symbiotic relationships.</p>",
+            "items": {
+                "strike-melee->Branchy Maw": {
+                    "name": "Branchy Maw"
+                },
+                "strike-melee->Root": {
+                    "name": "Root"
+                },
+                "action->Tremorsense (Imprecise) 120 feet": {
+                    "name": "Tremorsense (Imprecise) 120 feet"
+                },
+                "action->Regurgitate Sap": {
+                    "name": "Regurgitate Sap",
+                    "description": "<p><strong>Trigger</strong> A creature @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed} or @UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{Restrained} by the coiled conifer attempts to @UUID[Compendium.pf2e.actionspf2e.Item.SkZAQRkLLkmBQNB9]{Escape}</p><hr /><p><strong>Effect</strong> Sticky, caustic sap wells up in the conifer's maw. The DC of the Escape check increases by 2, and the creature takes @Damage[3d12[acid]] damage (@Check[reflex|dc:33|basic] save).</p>"
+                },
+                "action->Greater Constrict": {
+                    "name": "Greater Constrict",
+                    "description": "<p>@Damage[(2d10+9)[bludgeoning]], @Check[fortitude|dc:33|basic]</p><hr /><p>@Localize[PF2E.NPC.Abilities.Glossary.GreaterConstrict]</p>"
+                },
+                "action->Sap Spray": {
+                    "name": "Sap Spray",
+                    "description": "<p>The coiled conifer spews bile-like sap in a @Template[cone|distance:60]. Creatures in the area take @Damage[7d12[acid]] damage (@Check[reflex|dc:33|basic] save) and become @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 1} (@UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 2} on a critical failure).</p>\n<p>The coiled conifer can't use this ability again for [[/gmr 1d4 #Recharge this ability]]{1d4 rounds}.</p>"
+                },
+                "action->Slithering Roots": {
+                    "name": "Slithering Roots",
+                    "description": "<p><strong>Requirements</strong> The coiled conifer has at least one creature @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed}</p><hr /><p><strong>Effect</strong> The coiled conifer Strides up to its full Speed, taking any creatures it has grabbed with it.</p>"
+                },
+                "action->Swallow Whole": {
+                    "name": "Swallow Whole",
+                    "description": "<p>Large, @Damage[(3d6+9)[bludgeoning]], Rupture 24</p><hr /><p>@Localize[PF2E.NPC.Abilities.Glossary.SwallowWhole]</p>"
+                },
+                "action->Improved Grab": {
+                    "name": "Improved Grab"
+                },
+                "action->Push 10 feet": {
+                    "name": "Push 10 feet"
+                }
+            }
         },
         "Consuming Cabinet": {
             "name": "Consuming Cabinet",
@@ -584,6 +728,31 @@
             "items": {
                 "spellcastingEntry->Occult Innate Spells": {
                     "name": "Occult Innate Spells"
+                },
+                "strike-melee->Sickle": {
+                    "name": "Sickle"
+                },
+                "strike-melee->Fist": {
+                    "name": "Fist"
+                },
+                "strike-melee->Spit": {
+                    "name": "Spit"
+                },
+                "action->Balanced Blades": {
+                    "name": "Balanced Blades",
+                    "description": "<p>Druulbach's multiple attack penalty with agile weapons and agile unarmed attacks is \u20133 for his second attack and \u20136 for subsequent attacks (rather than \u20134 and \u20138).</p>"
+                },
+                "action->Drowning Hook": {
+                    "name": "Drowning Hook",
+                    "description": "<p><strong>Requirements</strong> A creature is @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone} within Druulbach's reach</p><hr /><p><strong>Effect</strong> Druulbach uses his sickle to push the creature down as water bubbles up below it. The target becomes submerged in water until they are no longer prone and must hold their breath if it can't breathe water. The target takes @Damage[6d6[bludgeoning]] damage (@Check[fortitude|dc:29|basic]) and loses 3 rounds worth of air if it fails the save.</p>"
+                },
+                "action->Flurry of Hooks": {
+                    "name": "Flurry of Hooks",
+                    "description": "<p><strong>Requirements</strong> Druulbach is wielding two sickles</p><hr /><p><strong>Effect</strong> Druulbach makes three sickle Strikes against one target. If multiple attacks hit, combine their damage and apply weaknesses and resistances only once.</p>"
+                },
+                "action->Serrated Takedown": {
+                    "name": "Serrated Takedown",
+                    "description": "<p><strong>Requirements</strong> Druulbach hit with a sickle Strike on his most recent action this turn</p><hr /><p><strong>Effect</strong> Druulbach drags down the target, knocking it @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone} and dealing @Damage[3d6[persistent,bleed]] damage to the creature.</p>"
                 }
             }
         },
@@ -763,7 +932,49 @@
             "publicNotes": "<p>Resembling twisted lumps of fused gravel with oddly angled crystal limbs, gritblights are shock troops commonly used by Ayrzul to spread terror and disease to his enemies. These creatures are the gruesome result of experiments on crystalline elementals who were once the allies or servants of Ayrzul's rival lord of elemental earth, Sairazul. Their crystalline body parts appear cracked and deformed, only their single \"eye\" left intact.</p>",
             "allSavesBonus": "+1 status vs. earth effects",
             "speedsDetails": "earth glide",
-            "sensesDetails": "blight sense (precise) 60 feet, grit vision"
+            "sensesDetails": "blight sense (precise) 60 feet, grit vision",
+            "items": {
+                "strike-melee->Claw": {
+                    "name": "Claw"
+                },
+                "strike-melee->Caustic Shard": {
+                    "name": "Caustic Shard"
+                },
+                "action->Tremorsense (Imprecise) 120 feet": {
+                    "name": "Tremorsense (Imprecise) 120 feet"
+                },
+                "action->Blight Sense": {
+                    "name": "Blight Sense",
+                    "description": "<p>A gritblight can detect the location of nearby creatures afflicted with Ayrzul's Blight as a precise sense at the listed range.</p>"
+                },
+                "action->+1 Status to Saves vs. Earth Effects": {
+                    "name": "+1 Status to Saves vs. Earth Effects"
+                },
+                "action->Blight Cloud": {
+                    "name": "Blight Cloud",
+                    "description": "<p>30 feet.</p>\n<p>A gritblight continually sheds tiny fragments of radioactive earth in a cloud around it. This cloud conceals the gritblight as a light fog and sheds dim light in the area. Any creature that begins its turn in the aura takes @Damage[2d6[poison]] damage with a @Check[fortitude|dc:30|basic] save. A creature that fails its save is exposed to Ayrzul's Blight and a creature that critically fails is additionally @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 1}.</p>"
+                },
+                "action->Ayrzul's Blight": {
+                    "name": "Ayrzul's Blight",
+                    "description": "<p>Radioactive elemental energy courses through sap and blood, petrifies bark and bone, withers flesh, and mutates life. Creatures with the wood or plant trait treat critical successes against the disease as successes. The drained condition caused by Ayrzul's Blight can't be healed until the disease is removed. Ayrzul's Blight presents with obvious but varying symptoms, from coughing up black dust to suddenly becoming covered in itchy patches of flaky stone.</p>\n<p><strong>Saving Throw</strong> @Check[fortitude|dc:33]</p>\n<p><strong>Onset</strong> 1 day</p>\n<p><strong>Stage 1</strong> @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 1} (1 day)</p>\n<p><strong>Stage 2</strong> @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 2} (1 day)</p>\n<p><strong>Stage 3</strong> @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 3} (1 day)</p>\n<p><strong>Stage 4</strong> @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 4} (1 day)</p>\n<p><strong>Stage 5</strong> mutation (on a failure) or death (on a critical failure)</p>"
+                },
+                "action->Earth Glide": {
+                    "name": "Earth Glide",
+                    "description": "<p>The gritblight can Burrow through any earthen matter, including rock. When it does so, the gritblight moves at its full burrow Speed, leaving no tunnels or signs of its passing.</p>"
+                },
+                "action->Grit Vision": {
+                    "name": "Grit Vision",
+                    "description": "<p>A gritblight's vision is unaffected by clouds of sand, dirt, grit, or other earth materials in air or water.</p>"
+                },
+                "action->Labyrinthine Vision": {
+                    "name": "Labyrinthine Vision",
+                    "description": "<p>The gritblight forces disorienting visions of Ayrzul's Blistering Labyrinth into the minds of nearby creatures. All creatures in a @Template[cone|distance:60] take @Damage[7d12[mental]] damage with a @Check[will|dc:33] save. Creatures @UUID[Compendium.pf2e.conditionitems.Item.XgEqL1kFApUbl5Z2]{Blinded} by a gritblight's Labyrinthine Vision see only endless earthen tunnels in every direction.</p>\n<p>The gritblight can't use this ability again for [[/gmr 1d4 #rounds]]{1d4 rounds}.</p><hr /><p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature takes half damage.</p>\n<p><strong>Failure</strong> The creature takes full damage and is blinded for 1 minute.</p>\n<p><strong>Critical Failure</strong> The creature takes double damage and is blinded permanently.</p>"
+                },
+                "action->Trample": {
+                    "name": "Trample",
+                    "description": "<p>Medium or smaller, claw, @Check[reflex|dc:33|basic]</p><hr /><p>@Localize[PF2E.NPC.Abilities.Glossary.Trample]</p>"
+                }
+            }
         },
         "Hateful Bear": {
             "name": "Hateful Bear",
@@ -1202,6 +1413,39 @@
                 },
                 "spell->Speak with Plants (Constant)": {
                     "name": "Speak with Plants (Constant)"
+                },
+                "strike-melee->Branch": {
+                    "name": "Branch"
+                },
+                "strike-melee->Scamp": {
+                    "name": "Scamp"
+                },
+                "action->Tremorsense": {
+                    "name": "Tremorsense"
+                },
+                "action->Constant Spells": {
+                    "name": "Constant Spells"
+                },
+                "action->All-Around Vision": {
+                    "name": "All-Around Vision"
+                },
+                "action->Abeyance Rift": {
+                    "name": "Abeyance Rift",
+                    "description": "<p>If Old Thornbarker dies unexpectedly before passing on their knowledge in a succession ritual, the amassed lore within their roots and boughs explodes out in a shock wave that deals @Damage[8d10[mental]] damage to creatures within @Template[emanation|distance:30]{30 feet} (@Check[will|dc:32|basic] save) before dissipating; those who fail also fall @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone}.</p>"
+                },
+                "action->Sycophantic Scamps": {
+                    "name": "Sycophantic Scamps",
+                    "description": "<p>Dozens of @UUID[Compendium.pf2e.rage-of-elements-bestiary.Actor.EjgbrWiEp37eIifZ]{Wood Scamps} clamber on, nest in, and flit around Old Thornbarker, feeding him their observations and gossip. The arboreal can grab a nearby scamp as if drawing a weapon, using it as a thrown weapon. The unlucky scamp impacts with a clatter of spines and toxic pollen, after which the dazed elemental scampers away to regain its senses.</p>\n<p>If Old Thornbarker takes 40 or more damage from an area effect, the scamps scatter and seek cover for [[/gmr 1d6 #rounds]]{1d6 rounds}, during which time Old Thornbarker can't make scamp Strikes and loses all-around vision.</p>"
+                },
+                "action->Memory Maelstrom": {
+                    "name": "Memory Maelstrom",
+                    "description": "<p>Old Thornbreaker tries to overwhelm foes with a surge of information it has absorbed over its long life. This surge deals @Damage[5d6[mental]] damage to each enemy within @Template[emanation|distance:40]{40 feet}, who must attempt a @Check[will|dc:32|traits:damaging-effect] save.</p><hr /><p><strong>Critical Success</strong> The creature maintains its composure, takes no damage, and is temporarily immune to Memory Maelstrom for 1 minute.</p>\n<p><strong>Success</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned 1} and takes half damage.</p>\n<p><strong>Failure</strong> The creature takes full damage and is @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned 3}.</p>\n<p><strong>Critical Failure</strong> The creature takes double damage, is @UUID[Compendium.pf2e.conditionitems.Item.yblD8fOR1J8rDwEQ]{Confused} for [[/br 2d4 #Duration Confusion]]{2d4 rounds}, and is stunned 3.</p>"
+                },
+                "action->Improved Knockdown": {
+                    "name": "Improved Knockdown"
+                },
+                "lore->Cradle of Knot Lore": {
+                    "name": "Cradle of Knot Lore"
                 }
             }
         },
@@ -1245,7 +1489,45 @@
             "name": "Phytohydra",
             "publicNotes": "<p>The fresh shoots that sprout from especially grievous cuts sometimes develop minds of their own, eventually budding off from the injured plant to create a phytohydra.</p><hr /><p>Wood elementals are nearly as varied as plant life itself. The following are particularly powerful elementals formed when immense plants experience environmental stress.</p>",
             "languagesDetails": "(can't speak any languages)",
-            "hpDetails": "phytohydra regeneration"
+            "hpDetails": "phytohydra regeneration",
+            "items": {
+                "strike-melee->Branch": {
+                    "name": "Branch"
+                },
+                "strike-melee->Fangs": {
+                    "name": "Fangs"
+                },
+                "action->Phytohydra Regeneration": {
+                    "name": "Phytohydra Regeneration",
+                    "description": "<p>The phytohydra has regeneration equal to 5 \u00d7 the number of heads it has. If a phytohydra's body is missing any heads and the remaining stumps haven't been cauterized, the phytohydra attempts a @Check[fortitude|dc:35] save after it regains Hit Points from regeneration. On a success, one unsealed stump regrows two heads; on a critical success, two unsealed stumps regrow into two heads each. The phytohydra can never grow more than double the number of heads it ordinarily has. The phytohydra's regeneration only fully deactivates if all its heads are severed and all stumps are sealed, at which point it dies.</p>"
+                },
+                "action->Coppice Regrowth": {
+                    "name": "Coppice Regrowth",
+                    "description": "<p>A phytohydra ordinarily has five heads. A creature can attempt to sever one of the heads by specifically targeting it and dealing damage equal to the head's Hit Points. A head that isn't completely severed returns to full Hit Points at the end of any creature's turn.</p>\n<p>A phytohydra can regrow a severed head using phytohydra regeneration. A creature can prevent this regrowth by dealing fire damage to the stump, sealing it. Single-target fire effects need to be targeted at a specific stump, but effects that deal splash damage or affect areas covering the hydra's whole space seal all stumps if they deal fire damage. If the attack that severs a head deals any fire damage or was dealt by an axe, the stump is sealed instantly. If all five heads are sealed, the phytohydra dies.</p><hr /><p><strong>Phytohydra Head</strong></p><ul><li><p><strong>Hit Points</strong> 30</p></li><li><p><strong>Immunities</strong> Area Damage, Bleed, Paralyzed, Poison, Sleep</p></li><li><p><strong>Weaknesses</strong> Fire 10, Slashing 5</p></li></ul><p>@UUID[Compendium.pf2e.bestiary-effects.Item.PSRUF9Elf05KtgvF]{Effect: Phytohydra Heads}</p>"
+                },
+                "action->Reactive Strike (See Reactive Heads)": {
+                    "name": "Reactive Strike (See Reactive Heads)"
+                },
+                "action->Focused Assault": {
+                    "name": "Focused Assault",
+                    "description": "<p>The phytohydra attacks a single target with its many heads. The phytohydra Strikes with its branches or its fangs. On a successful attack, the phytohydra deals damage from its branches or fangs Strike to the target, plus an additional 2d6 damage for every head it has beyond the first. On a failure (but not a critical failure), the phytohydra deals the damage from one branch or fangs Strike to the target creature. This Strike counts as a number of attacks equal to the number of heads the phytohydra has toward its multiple attack penalty.</p>"
+                },
+                "action->Reactive Heads": {
+                    "name": "Reactive Heads",
+                    "description": "<p>A phytohydra gains an extra reaction per round for each of its heads beyond the first, which it can use only to make Reactive Strikes. It can't use more than 1 reaction on the same triggering action, even if a creature leaves several squares within its reach, and the phytohydra must use a different head for each Reactive Strike it makes. Whenever one of the phytohydra's heads is severed, the phytohydra loses one of its extra reactions per round.</p>"
+                },
+                "action->Splinter Breath": {
+                    "name": "Splinter Breath",
+                    "description": "<p>The phytohydra spews splinters in a @Template[cone|distance:60] that deals @Damage[4d6[piercing]|options:area-damage] damage to all creatures in the area (@Check[reflex|dc:32|basic|options:area-effect] save). The damage increases by 2d6 for each head the phytohydra has.</p>\n<p>The phytohydra can't use Splinter Breath again for [[/gmr 1d4 #Recharge Splinter Breath]]{1d4 rounds}.</p>"
+                },
+                "action->Storm of Branches": {
+                    "name": "Storm of Branches",
+                    "description": "<p>The phytohydra makes a number of Strikes up to its number of heads, each against a different target. These attacks count toward the phytohydra's multiple attack penalty, but the multiple attack penalty doesn't increase until after the phytohydra makes all its attacks.</p>"
+                },
+                "action->Push 10 feet": {
+                    "name": "Push 10 feet"
+                }
+            }
         },
         "Phytomancer Ghost": {
             "name": "Phytomancer Ghost",
@@ -1253,6 +1535,27 @@
             "items": {
                 "spellcastingEntry->Primal Innate Spells": {
                     "name": "Primal Innate Spells"
+                },
+                "strike-melee->Ghostly Hand": {
+                    "name": "Ghostly Hand"
+                },
+                "action->Rejuvenation": {
+                    "name": "Rejuvenation",
+                    "description": "<p>When a ghost is destroyed, it re-forms after [[/br 2d4 #days]]{2d4 days} within the location it's bound to, fully healed. A ghost can be permanently destroyed only if someone determines the reason for its existence and sets right whatever prevents the spirit from resting.</p>"
+                },
+                "action->Void Healing": {
+                    "name": "Void Healing"
+                },
+                "action->Frightful Moan": {
+                    "name": "Frightful Moan",
+                    "description": "<p>The ghost laments its fate, forcing each living creature within @Template[emanation|distance:30]{30 feet} to attempt a @Check[will|dc:33] save. On a failure, a creature becomes @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 2} (or @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 3} on a critical failure). On a success, a creature is temporarily immune to this ghost's frightful moan for 1 minute.</p>"
+                },
+                "action->Memory of Leaves": {
+                    "name": "Memory of Leaves",
+                    "description": "<p>The ghost mourns its verdant birthplace, creating a swirling cloud of phantom leaves as a @Template[emanation|distance:20] until the end of its next turn. All creatures within the emanation become @UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{Concealed}, and all creatures outside the emanation become concealed to creatures within it. Creatures with the plant or wood traits ignore this concealment.</p>\n<p>The ghost can't use Memory of Leaves again for [[/gmr 1d4 #rounds]]{1d4 rounds}.</p>"
+                },
+                "lore->Plane of Wood Lore": {
+                    "name": "Plane of Wood Lore"
                 }
             }
         },
@@ -1276,6 +1579,35 @@
             "items": {
                 "spellcastingEntry->Primal Innate Spells": {
                     "name": "Primal Innate Spells"
+                },
+                "strike-melee->Mandibles": {
+                    "name": "Mandibles"
+                },
+                "strike-melee->Leg": {
+                    "name": "Leg"
+                },
+                "action->Fling": {
+                    "name": "Fling",
+                    "description": "<p>The deadly mantis flings a @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed} creature into the air, up to 30 feet overhead and up to 30 feet away from the mantis (the creature takes damage from the fall as normal). If the flung creature lands on another creature, the creature it lands on takes the same amount of bludgeoning damage with a @Check[reflex|dc:31|basic] save.</p>"
+                },
+                "action->Leaping Grab": {
+                    "name": "Leaping Grab",
+                    "description": "<p>The mantis Leaps up to 40 feet vertically and 20 feet horizontally. At any point during the jump, it can make a leg Strike. If it hits, it automatically @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.Tkd8sH4pwFIPzqTr]{Grabs} the target, bringing the creature along until the end of the jump.</p>"
+                },
+                "action->Primal Toll": {
+                    "name": "Primal Toll",
+                    "description": "<p>The primal mantis takes @Damage[2d6[mental]] damage whenever it casts a primal innate spell.</p>"
+                },
+                "action->Rending Mandibles": {
+                    "name": "Rending Mandibles",
+                    "description": "<p>The mantis makes a mandibles Strike against a creature it has @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed}. If that Strike hits and the creature is wearing armor with Hardness 12 or lower, the armor is broken. This Strike doesn't further damage armor that's already broken.</p>"
+                },
+                "action->Sudden Strike": {
+                    "name": "Sudden Strike",
+                    "description": "<p>On the first round of combat, creatures that haven't acted are @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} to the deadly mantis.</p>"
+                },
+                "action->Grab": {
+                    "name": "Grab"
                 }
             }
         },
@@ -1297,6 +1629,32 @@
                 },
                 "spell->Speak with Animals (At Will)": {
                     "name": "Speak with Animals (At Will)"
+                },
+                "strike-melee->Flourishing Fist": {
+                    "name": "Flourishing Fist"
+                },
+                "strike-melee->Rotten Bark": {
+                    "name": "Rotten Bark"
+                },
+                "action->Aura of Decay": {
+                    "name": "Aura of Decay",
+                    "description": "<p>30 feet.</p>\n<p>Plant objects and creatures in the emanation can't regain Hit Points unless the effect that attempts to heal them counteracts the aura, which has a counteract rank of 6 and a counteract DC of 32.</p>\n<p>A primal warden of Zibik can spend 1 action to reverse this aura; it becomes an aura of renewal with the healing trait, instead doubling the number of Hit Points of any healing effect received by a plant creature in the emanation.</p>"
+                },
+                "action->Primal Destruction": {
+                    "name": "Primal Destruction",
+                    "description": "<p>When the primal warden of Zibik is reduced to 0 Hit Points, it erupts with primal energy in a @Template[emanation|distance:30], dealing @Damage[12d6[void]] damage. Each creature in the area must attempt a @Check[will|dc:32] save with the following outcomes.</p><hr /><p><strong>Critical Success</strong> The creature takes half damage.</p>\n<p><strong>Success</strong> The creature takes full damage.</p>\n<p><strong>Failure</strong> The creature takes full damage and becomes temporarily cursed by Zibik to be @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 1} and @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 1} for 1 day; this is a curse effect with a counteract DC of 32.</p>\n<p><strong>Critical Failure</strong> As failure, except the creature becomes @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 2} and @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 2}.</p>"
+                },
+                "action->Rotten Burst": {
+                    "name": "Rotten Burst",
+                    "description": "<p><strong>Trigger</strong> The primal warden of Zibik takes physical damage</p><hr /><p><strong>Effect</strong> A chunk of rotten bark bursts from the warden's body at its attacker. The warden makes a rotten bark Strike against an adjacent creature without triggering reactions.</p>"
+                },
+                "action->Flourishing Growth": {
+                    "name": "Flourishing Growth",
+                    "description": "<p>The first time each round a creature takes damage from the warden's fists, the target must attempt a @Check[fortitude|dc:32] save. On a failure, tiny sprouts burst from the creature's flesh, and it becomes @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1} for 1 round.</p>"
+                },
+                "action->Fractal Rot": {
+                    "name": "Fractal Rot",
+                    "description": "<p>The first time each round a creature takes damage from the warden's rotten bark, the target becomes @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 1} as the flesh where it was struck momentarily twists and rots, causing considerable pain.</p>"
                 }
             }
         },
@@ -1436,7 +1794,34 @@
             }
         },
         "Reborn Devotee": {
-            "name": "Reborn Devotee"
+            "name": "Reborn Devotee",
+            "items": {
+                "strike-melee->Stalk": {
+                    "name": "Stalk"
+                },
+                "action->Tremorsense (Imprecise) 60 feet": {
+                    "name": "Tremorsense (Imprecise) 60 feet"
+                },
+                "action->Quick Capture": {
+                    "name": "Quick Capture",
+                    "description": "<p><strong>Trigger</strong> A creature hits or touches the reborn devotee</p><hr /><p><strong>Effect</strong> The reborn devotee makes a stalk Strike against the triggering creature. If it hits, the creature is @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed} in that stalk.</p>"
+                },
+                "action->Focused Assault": {
+                    "name": "Focused Assault",
+                    "description": "<p>The reborn devotee attacks a single target with four stalks, making one stalk Strike. On a success, the reborn devotee deals the damage from one stalk Strike plus an additional 1d8 damage for every stalk beyond the first. On a failure, the reborn devotee deals the damage from one stalk Strike, but it can't use Improved Grab. It deals no damage on a critical failure. This counts toward the reborn devotee's multiple attack penalty as a number of attacks equal to the number of stalks the devotee has.</p>"
+                },
+                "action->Hungry Flurry": {
+                    "name": "Hungry Flurry",
+                    "description": "<p>The reborn devotee makes four stalk Strikes at a \u20132 penalty, each against a different target. These attacks count toward the reborn devotee's multiple attack penalty, but the multiple attack penalty doesn't increase until after it makes all its attacks.</p>"
+                },
+                "action->Swallow Whole": {
+                    "name": "Swallow Whole",
+                    "description": "<p>Large, @Damage[(2d8+5)[bludgeoning],(2d6)[acid]], Rupture 17</p><hr /><p>@Localize[PF2E.NPC.Abilities.Glossary.SwallowWhole]</p>"
+                },
+                "action->Improved Grab": {
+                    "name": "Improved Grab"
+                }
+            }
         },
         "Redwood Leshy": {
             "name": "Redwood Leshy",
@@ -1452,17 +1837,122 @@
                 },
                 "spell->Enlarge (Self Only)": {
                     "name": "Enlarge (Self Only)"
+                },
+                "strike-melee->Bo Staff": {
+                    "name": "Bo Staff"
+                },
+                "strike-melee->Fist": {
+                    "name": "Fist"
+                },
+                "action->+2 Status to All Saves vs. Fear": {
+                    "name": "+2 Status to All Saves vs. Fear"
+                },
+                "action->Verdant Burst": {
+                    "name": "Verdant Burst",
+                    "description": "<p>When a redwood leshy dies, a burst of primal energy explodes from their body, restoring @Damage[5d8[healing]]{5d8 Hit Points} to each plant creature in a @Template[emanation|distance:30]. This area is filled with saplings, becoming difficult terrain. If the environment isn't a viable environment for these trees, they wither after 24 hours.</p>"
+                },
+                "action->Change Shape": {
+                    "name": "Change Shape",
+                    "description": "<p>The redwood leshy can take the form of a Large tree, using the effects of @UUID[Compendium.pf2e.spells-srd.Item.dileJ0Yxqg76LMvu]{One with Plants}.</p><hr /><p>@Localize[PF2E.NPC.Abilities.Glossary.ChangeShape]</p>"
+                },
+                "action->Looming Strike": {
+                    "name": "Looming Strike",
+                    "description": "<p>The leshy deals an additional 1d8 damage to creatures smaller than it.</p>"
+                },
+                "action->Needles That Catch the Clouds": {
+                    "name": "Needles That Catch the Clouds",
+                    "description": "<p>The leshy can cast @UUID[Compendium.pf2e.spells-srd.Item.WzLKjSw6hsBhuklC]{Create Water}, @UUID[Compendium.pf2e.spells-srd.Item.K4LXpaBWrGy6jIER]{Downpour}, and @UUID[Compendium.pf2e.spells-srd.Item.9XHmC2JgTUIQ1CCm]{Mist} as innate primal spells once per day, but only while Large or larger.</p>"
                 }
             }
         },
         "Rootridden": {
             "name": "Rootridden",
-            "hpDetails": "void healing"
+            "hpDetails": "void healing",
+            "items": {
+                "strike-melee->Jaws": {
+                    "name": "Jaws"
+                },
+                "strike-melee->Tendril": {
+                    "name": "Tendril"
+                },
+                "strike-melee->Spit": {
+                    "name": "Spit"
+                },
+                "action->Rooted": {
+                    "name": "Rooted",
+                    "description": "<p>A rootridden is bonded to a specific root network. If it's more than 300 feet from this network for at least 1 minute, it becomes @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 2} until it's again within 300 feet of the root network for at least 1 minute.</p>"
+                },
+                "action->Walk the Roots": {
+                    "name": "Walk the Roots",
+                    "description": "<p>The rootridden ignores the effects of difficult terrain caused by plants and fungi.</p>"
+                },
+                "action->Root Spawn": {
+                    "name": "Root Spawn",
+                    "description": "<p>A living creature slain by a rootridden that had a lower level than the rootridden rises as a new rootridden after [[/gmr 1d10 #rounds]]{1d10 rounds}, on its turn. This new rootridden is under the command of the rootridden that created it. If the creator is destroyed, any rootridden it created in the past 24 hours are destroyed as well, immediately collapsing into inert plant matter.</p>"
+                },
+                "action->Void Healing": {
+                    "name": "Void Healing"
+                },
+                "action->Root Rot Poison": {
+                    "name": "Root Rot Poison",
+                    "description": "<p><strong>Saving Throw</strong> @Check[fortitude|dc:26];</p>\n<p><strong>Maximum Duration</strong> 8 rounds</p>\n<p><strong>Stage 1</strong> @Damage[3d6[poison]] damage and @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} (1 round)</p>\n<p><strong>Stage 2</strong> @Damage[3d6[poison]] damage and @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1} (1 round)</p>\n<p><strong>Stage 3</strong> @Damage[4d6[poison]] damage and @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 2} (1 round)</p>\n<p><strong>Stage 4</strong> @Damage[4d6[poison]] damage and @UUID[Compendium.pf2e.conditionitems.Item.6uEgoh53GbXuHpTF]{Paralyzed} (1 round)</p>"
+                }
+            }
         },
         "Ruzadoya Swiftmane": {
             "name": "Ruzadoya Swiftmane",
             "blurb": "Female centaur graveknight",
-            "hpDetails": "rejuvenation, void healing"
+            "hpDetails": "rejuvenation, void healing",
+            "items": {
+                "strike-melee->Hoof": {
+                    "name": "Hoof"
+                },
+                "action->Grasping Armor": {
+                    "name": "Grasping Armor",
+                    "description": "<p>A creature that Strikes Ruzadoya with a melee weapon must succeed at a @Check[reflex|dc:31] save or be disarmed of that weapon. If the creature critically fails, the weapon ends up in Ruzadoya's space. A creature that hits Ruzadoya with an unarmed attack must succeed at a @Check[reflex|dc:31] save or become @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed} by Ruzadoya until the end of her next turn, it Escapes, or Ruzadoya moves, whichever comes first.</p>"
+                },
+                "action->Reactive Strike": {
+                    "name": "Reactive Strike"
+                },
+                "action->Rejuvenation": {
+                    "name": "Rejuvenation",
+                    "description": "<p>When Ruzadoya is destroyed, her armor rebuilds her body over the course of [[/gmr 1d10 #days]]{1d10 days}. If her body is destroyed before then, the process restarts.</p>\n<p>Ruzadoya can only be permanently destroyed by obliterating her armor (such as with @UUID[Compendium.pf2e.spells-srd.Item.r7ihOgKv19eJQnik]{Disintegrate}), transporting it to the Plane of Fire, or throwing it into the heart of a volcano.</p>"
+                },
+                "action->Sapping Aura": {
+                    "name": "Sapping Aura",
+                    "description": "<p>30 feet.</p>\n<p>When a creature in the aura uses a vitality spell or ability, Ruzadora automatically attempts to counteract it, with a [[/r 1d20+23 #Counteract]]{+23} counteract modifier.</p>"
+                },
+                "action->Void Healing": {
+                    "name": "Void Healing"
+                },
+                "action->Graveknight's Curse": {
+                    "name": "Graveknight's Curse",
+                    "description": "<p>This curse affects anyone who wears Ruzadoya's armor for at least 1 hour; Saving Throw @Check[will|dc:39]</p>\n<p><strong>Onset</strong> 1 hour</p>\n<p><strong>Stage 1</strong> @UUID[Compendium.pf2e.conditionitems.Item.3uh1r86TzbQvosxv]{Doomed 1} and can't remove the armor (1 day)</p>\n<p><strong>Stage 2</strong> @UUID[Compendium.pf2e.conditionitems.Item.3uh1r86TzbQvosxv]{Doomed 2}, \u201310-foot status penalty to Speeds, and can't remove the armor (1 day);</p>\n<p><strong>Stage 3</strong> dies and transforms into the armor's graveknight.</p>"
+                },
+                "action->Rooting Strikes": {
+                    "name": "Rooting Strikes",
+                    "description": "<p>On a critical hit with a melee weapon or unarmed attack, Ruzadoya's target is @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Immobilized} for 1 round (@UUID[Compendium.pf2e.actionspf2e.Item.SkZAQRkLLkmBQNB9]{Escape} DC 31) and @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 1} for as long as the immobilization lasts.</p>"
+                },
+                "action->Ruinous Weapons": {
+                    "name": "Ruinous Weapons",
+                    "description": "<p>Any weapon or unarmed attack Ruzadoya uses gains the effects of the +1 greater striking and wounding weapon runes.</p>"
+                },
+                "action->Trample": {
+                    "name": "Trample",
+                    "description": "<p>Medium or smaller, hoof, @Check[reflex|dc:31|basic]</p><hr /><p>@Localize[PF2E.NPC.Abilities.Glossary.Trample]</p>"
+                },
+                "action->Weapon Master": {
+                    "name": "Weapon Master",
+                    "description": "<p>The graveknight has access to the critical specialization effects of any weapons it wields.</p>"
+                },
+                "action->Withering Blast": {
+                    "name": "Withering Blast",
+                    "description": "<p>Ruzadoya unleashes a @Template[cone|distance:30] of corruption. Creatures in the area take @Damage[8d12[void]] damage (@Check[fortitude|dc:34|basic] save).</p>\n<p>Ruzadoya can use this ability once every [[/gmr 1d4 #rounds]]{1d4 rounds}.</p>"
+                },
+                "lore->Warfare Lore": {
+                    "name": "Warfare Lore"
+                }
+            }
         },
         "Ruzadoya's Chosen": {
             "name": "Ruzadoya's Chosen",
@@ -1665,7 +2155,35 @@
         "Spitting Sawfly": {
             "name": "Spitting Sawfly",
             "publicNotes": "<p>Spitting sawflies are enormous, bloated insects covered in tumor-like knots of spores. These ravenous pests sow disease and spores wherever they go, heralding the infestation of creeping cones.</p><hr /><p>The Plane of Wood contains many unique ecosystems formed around species of wondrous trees; when Ayrzul's Blight mutates one of these trees rather than killing it, it can have a cascading effect on the tree's biome. Multiple species often mutate in tandem, becoming warped mockeries and a vector for Ayrzul's Blight. These \"blight bonded\" creature families are parasites and predators and typically form twisted symbiotic relationships.</p>",
-            "sensesDetails": "wood scent (precise) 30 feet"
+            "sensesDetails": "wood scent (precise) 30 feet",
+            "items": {
+                "strike-melee->Mandibles": {
+                    "name": "Mandibles"
+                },
+                "strike-melee->Acid Spit": {
+                    "name": "Acid Spit"
+                },
+                "action->Wood Scent (Precise) 30 feet": {
+                    "name": "Wood Scent (Precise) 30 feet",
+                    "description": "<p>A spitting sawfly can smell plants and wood as a precise scent at the listed range.</p>"
+                },
+                "action->Consume Essence": {
+                    "name": "Consume Essence",
+                    "description": "<p><strong>Frequency</strong> once per day;</p>\n<p><strong>Requirements</strong> The spitting sawfly is adjacent to a creature with the wood trait or to a coiled conifer</p><hr /><p><strong>Effect</strong> The sawfly feasts upon the targeted creature or the coiled conifer's sap, regaining @Damage[5d6[healing]]{5d6 Hit Points}. A targeted creature must attempt a @Check[fortitude|dc:29] save or become @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 1} (@UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 2} on a critical failure).</p>"
+                },
+                "action->Creeping Sprout": {
+                    "name": "Creeping Sprout",
+                    "description": "<p>A creature afflicted with creeping sprout is treated by the spitting sawfly as if it has the wood trait</p>\n<p><strong>Saving Throw</strong> @Check[fortitude|dc:29];</p>\n<p><strong>Stage 1</strong> carrier with no ill effect ([[/gmr 1d4 #days]]{1d4 days})</p>\n<p><strong>Stage 2</strong> @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 1} ([[/gmr 1d4 #days]]{1d4 days});</p>\n<p><strong>Stage 3</strong> @Damage[12d6[acid]] damage, creeping cone swarm emerges (disease ends)</p>"
+                },
+                "action->Plant Spores": {
+                    "name": "Plant Spores",
+                    "description": "<p>The spitting sawfly plants spores in an adjacent creature that's @UUID[Compendium.pf2e.conditionitems.Item.6uEgoh53GbXuHpTF]{Paralyzed} or @UUID[Compendium.pf2e.conditionitems.Item.fBnFDH2MTzgFijKf]{Unconscious}, exposing it to creeping sprout disease.</p>"
+                },
+                "action->Seizing Venom": {
+                    "name": "Seizing Venom",
+                    "description": "<p><strong>Saving Throw</strong> @Check[fortitude|dc:29];</p>\n<p><strong>Maximum Duration</strong> 6 rounds</p>\n<p><strong>Stage 1</strong> @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} and @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1} (1 round)</p>\n<p><strong>Stage 2</strong> off-guard and @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 2} (1 round)</p>\n<p><strong>Stage 3</strong> @UUID[Compendium.pf2e.conditionitems.Item.6uEgoh53GbXuHpTF]{Paralyzed} (1 round)</p>"
+                }
+            }
         },
         "Splintershank": {
             "name": "Splintershank",
@@ -1853,7 +2371,37 @@
         "Timberweb": {
             "name": "Timberweb",
             "publicNotes": "<p>On the Plane of Wood, carnivorous plants sometimes grow so large that they can't sustain themselves on local prey. Rather than starve, parts of these plants sometimes tear themselves free and hunt for themselves. The resulting elementals adopt spiderlike forms and hunting strategies.</p>\n<p>Timberwebs extrude vines covered in tiny barbules and sticky sap. After finding a territory with sufficient prey, a timberweb often uses these vines to create shadowy canopies in which to launch ambushes.</p><hr /><p>Wood elementals are nearly as varied as plant life itself. The following are particularly powerful elementals formed when immense plants experience environmental stress.</p>",
-            "sensesDetails": "vine sense"
+            "sensesDetails": "vine sense",
+            "items": {
+                "strike-melee->Fangs": {
+                    "name": "Fangs"
+                },
+                "strike-melee->Leg": {
+                    "name": "Leg"
+                },
+                "strike-melee->Vine": {
+                    "name": "Vine"
+                },
+                "action->Tremorsense (Imprecise) 30 feet": {
+                    "name": "Tremorsense (Imprecise) 30 feet"
+                },
+                "action->Vine Sense": {
+                    "name": "Vine Sense",
+                    "description": "<p>The timberweb has imprecise tremorsense to detect the vibrations of creatures touching its spun vines.</p>"
+                },
+                "action->Rappel": {
+                    "name": "Rappel",
+                    "description": "<p>The timberweb moves straight down up to 60 feet on a spun vine. It can hang from the vine or drop off. The distance it descends doesn't count toward falling damage. A creature that successfully Strikes the vine (AC 36, Hardness 8, 30 HP) severs it, causing the timberweb to fall.</p>"
+                },
+                "action->Timberweb Toxin": {
+                    "name": "Timberweb Toxin",
+                    "description": "<p><strong>Saving Throw</strong> @Check[fortitude|dc:34]</p>\n<p><strong>Maximum Duration</strong> 6 rounds</p>\n<p><strong>Stage 1</strong> @Damage[5d6[poison]] damage and @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 1} (1 round)</p>\n<p><strong>Stage 2</strong> @Damage[6d6[poison]] damage and @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 2} (1 round)</p>\n<p><strong>Stage 3</strong> @Damage[8d6[poison]] damage and clumsy 2 (1 round)</p>"
+                },
+                "action->Tree Tether": {
+                    "name": "Tree Tether",
+                    "description": "<p>A creature hit by the timberweb's vine Strike becomes entangled by the sticky fibers, taking a \u201315-foot penalty to its Speeds for 1 minute or until it Escapes (DC 34) or is cut free (AC 36, Hardness 8, 30 HP). If the target is adjacent to a wooden object of its size or larger, the target is instead @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Immobilized} and stuck to that object until it Escapes or is cut free.</p>"
+                }
+            }
         },
         "Tumbo": {
             "name": "Tumbo",
@@ -2084,11 +2632,69 @@
                 },
                 "spell->Speak with Animals (At Will)": {
                     "name": "Speak with Animals (At Will)"
+                },
+                "strike-melee->Dagger": {
+                    "name": "Dagger"
+                },
+                "strike-melee->Battle Axe": {
+                    "name": "Battle Axe"
+                },
+                "strike-melee->Composite Longbow": {
+                    "name": "Composite Longbow"
+                },
+                "action->Forager": {
+                    "name": "Forager",
+                    "description": "<p>While using Survival to Subsist, if the sentry rolls a failure or a critical failure, they get a success instead. If the sentry rolls a success, they can provide food for 16 additional creatures that eat about as much as a human, or 32 creatures on a critical success.</p>"
+                },
+                "action->Forest Walker": {
+                    "name": "Forest Walker",
+                    "description": "<p>The sentry ignores the effects of difficult terrain from a forest environment. They can @UUID[Compendium.pf2e.actionspf2e.Item.VMozDqMMuK5kpoX4]{Sneak} through underbrush without the need to attempt a Stealth check as long as the sentry moves no more than 5 feet at a time and isn't within 10 feet of an enemy at any point during their movement.</p>"
+                },
+                "action->Sentry's Warning": {
+                    "name": "Sentry's Warning",
+                    "description": "<p><strong>Trigger</strong> The sentry is about to roll Perception or Survival to determine their initiative;</p><hr /><p><strong>Effect</strong> The sentry visually or audibly warns allies, granting them a +1 circumstance bonus to their initiative rolls. Depending on how the sentry warns allies, this action has the auditory or visual trait.</p>"
+                },
+                "action->Hunt Prey": {
+                    "name": "Hunt Prey",
+                    "description": "<p>The sentry designates a single creature they can see and hear, or one they're Tracking, as their prey. The sentry gains a +2 circumstance bonus to Perception checks to @UUID[Compendium.pf2e.actionspf2e.Item.BlAOM2X92SI6HMtJ]{Seek} the prey and to Survival checks to @UUID[Compendium.pf2e.actionspf2e.Item.EA5vuSgJfiHH7plD]{Track} the prey.</p>\n<p>The first time the sentry hits the designated prey in a round, they deal an additional 1d8 precision damage. The sentry also ignores the penalty for making ranged attacks within their second range increment against the prey they're hunting.</p>\n<p>These effects last until the sentry uses Hunt Prey again.</p>"
+                },
+                "action->Protector of Arenway": {
+                    "name": "Protector of Arenway",
+                    "description": "<p>The sentry can only cast its primal innate spells while on the Isle of Arenway.</p>"
+                },
+                "lore->Forest Lore": {
+                    "name": "Forest Lore"
                 }
             }
         },
         "Woodweave Caterpillar": {
-            "name": "Woodweave Caterpillar"
+            "name": "Woodweave Caterpillar",
+            "items": {
+                "strike-melee->Bite": {
+                    "name": "Bite"
+                },
+                "strike-melee->Bristles": {
+                    "name": "Bristles"
+                },
+                "strike-melee->Foot": {
+                    "name": "Foot"
+                },
+                "action->Ferocity": {
+                    "name": "Ferocity"
+                },
+                "action->Reactive Strike (Special)": {
+                    "name": "Reactive Strike (Special)",
+                    "description": "<p>Bristles only. The woodweave caterpillar gains an extra reaction at the start of each of its turns that it can use only to make a Reactive Strike. It can't use more than one Reactive Strike triggered by the same action. In addition to the normal trigger, the caterpillar can make a Reactive Strike against a creature that touches it or an adjacent creature that attempts a melee Strike against it.</p><hr /><p>@Localize[PF2E.NPC.Abilities.Glossary.ReactiveStrike]</p>"
+                },
+                "action->Penetrating Bristles": {
+                    "name": "Penetrating Bristles",
+                    "description": "<p>On a critical hit with a bristles Strike, a woodweave caterpillar's bristles lodge in the target's body, causing severe pain and blood loss. They deal @Damage[3d6[bleed]] damage, and the target is @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} as long as the persistent damage continues.</p>"
+                },
+                "action->Trample": {
+                    "name": "Trample",
+                    "description": "<p>Medium or Smaller, foot, @Check[reflex|dc:32|basic]</p><hr /><p>@Localize[PF2E.NPC.Abilities.Glossary.Trample]</p>"
+                }
+            }
         },
         "Wraithvine": {
             "name": "Wraithvine",
@@ -2211,6 +2817,74 @@
                 },
                 "spell->Nature's Pathway (At Will)": {
                     "name": "Nature's Pathway (At Will)"
+                },
+                "strike-melee->Vine": {
+                    "name": "Vine"
+                },
+                "strike-melee->Thorn": {
+                    "name": "Thorn"
+                },
+                "action->Green Tongue": {
+                    "name": "Green Tongue",
+                    "description": "<p>A green man can communicate with plants, with the effects of @UUID[Compendium.pf2e.spells-srd.Item.qvwIwJ9QBihy8R0t]{Speak with Plants}, and can use Diplomacy to @UUID[Compendium.pf2e.actionspf2e.Item.OX4fy22hQgUHDr0q]{Make an Impression} on plants and @UUID[Compendium.pf2e.actionspf2e.Item.DCb62iCBrJXy0Ik6]{Request} things from plants.</p>"
+                },
+                "action->Plantsense 60 feet": {
+                    "name": "Plantsense 60 feet",
+                    "description": "<p>A green man can sense life force via plants. This allows them to observe a living or undead creature's vital essence within 60 feet of the green man, but they can also use this precise sense to observe any living or undead creature within 60 feet of any plant matter within 120 feet of the green man. This allows the green man to see living things through solid plant matter, as well as seeing through other barriers if there are plants on the other side.</p>"
+                },
+                "action->Axe Vulnerability": {
+                    "name": "Axe Vulnerability",
+                    "description": "<p>A green man takes 20 additional damage from axes.</p>"
+                },
+                "action->Green Caress": {
+                    "name": "Green Caress",
+                    "description": "<p>60 feet. Living creatures in the area other than plants slowly transform into non-creature plants. The green man can exclude creatures from this effect, but they must be aware of a creature's presence and location to do so. A non-plant creature in the area must attempt a @Check[fortitude|dc:45] save immediately before the start of its turn.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected, or if it is slowed by green caress, it reduces its slowed value by 2.</p>\n<p><strong>Success</strong> The creature is unaffected, or if it is slowed by green caress, it reduces its slowed value by 1.</p>\n<p><strong>Failure</strong> The creature becomes @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1}, or if it was already slowed by green caress, increases the slowed value by 1, as their body transforms more and more into a non-creature plant. If the creature ever becomes slowed to the point they have no actions left for their turn, they become an inanimate plant, a condition that can only be reversed by @UUID[Compendium.pf2e.spells-srd.Item.MLNeD5sAunV0E23j]{Primal Phenomenon} or similarly powerful magic.</p>\n<p><strong>Critical Failure</strong> As failure, except the creature becomes @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 2} (or increases the condition value by 2).</p>"
+                },
+                "action->Root In Place": {
+                    "name": "Root In Place",
+                    "description": "<p><strong>Trigger</strong> A creature within the green man's reach uses a move action or leaves a square during a move action it's using</p>\n<hr />\n<p><strong>Effect</strong> The green man lashes out to hold the foe in place. The green man makes a vine Strike against the triggering creature. If the attack hits, the green man disrupts the action. If the creature was Flying when its action was disrupted, it falls.</p>"
+                },
+                "action->Absorb Magic": {
+                    "name": "Absorb Magic",
+                    "description": "<p>The green man's vines leach away magic and transform it into life essence for the green man. On a successful vine Strike, the green man attempts to counteract one spell active on the target (typically one vexing the green man, or determined randomly if they aren't aware of specific effects), with a counteract rank of 10 and a modifier of [[/r 1d20+38 #Counteract]]{+38}.</p>\n<p>If the effect is counteracted, the green man gains [[/r 30 #Temporary Hit Points]]{30 temporary Hit Points} that last for 10 minutes.</p>"
+                },
+                "action->Aura of Absorption": {
+                    "name": "Aura of Absorption",
+                    "description": "<p>120 feet.</p>\n<p>Zibik constantly absorbs toxins and pathogens from his surroundings. Zibik automatically absorbs afflictions from non-creature plants, increasing his drained value by 1 each round he absorbs any afflictions from such plants (with no maximum). Living creatures in the area can attempt a saving throw against any disease or poison afflicting them each round, increasing their degree of success for the save by one step. If a creature succeeds, Zibik automatically counteracts the affliction and increases his current drained value by 1 (with no maximum).</p>\n<p>When Zibik removes an affliction with this ability, he automatically advances to Stage 1 of the affliction and must continue to attempt saving throws as normal. Zibik can choose to exclude any number of creatures in the area from this effect, and generally does so to absorb Ayrzul's Blight while allowing natural afflictions to run their course.</p>"
+                },
+                "action->Embed": {
+                    "name": "Embed",
+                    "description": "<p>The green man's thorns embed themselves into any creature they damage, taking root into the ground. A target damaged by a thorn has its Speeds halved, and it can't Step, @UUID[Compendium.pf2e.actionspf2e.Item.cS9nfDRGD83bNU1p]{Fly}, @UUID[Compendium.pf2e.spells-srd.Item.b5sGjGlBf58f8jn0]{Air Walk}, or otherwise leave the ground until the thorn is removed.</p>\n<p>Removing a thorn requires 3 Interact actions, which don't have to be consecutive. If the creature performing the final action doesn't succeed at a @Check[medicine|dc:45] check as part of that action, the target takes @Damage[10d6[untyped]] damage upon the thorn's removal.</p>"
+                },
+                "action->Focus Vines": {
+                    "name": "Focus Vines",
+                    "description": "<p>The green man focuses all their vines against a single vexing foe, making a single vine Strike.</p>\n<p>On a success, the target takes 5d10 additional damage and is affected by Absorb Magic three times. Even on a failure, the target takes the normal effects of a hit with a vine Strike, but on a critical failure, the vines miss completely.</p>"
+                },
+                "action->Fungal Rebirth": {
+                    "name": "Fungal Rebirth",
+                    "description": "<p>When Zibik dies as the result of a disease or his Aura of Absorption, fungus rebuilds his body over the course of [[/br 3d6 #days]]{3d6 days}. If his body is destroyed before then, the process restarts.</p>\n<p>When restored to life, he's bolstered by primal might; he gains a +3 circumstance bonus to saving throws against diseases for a number of weeks equal to the number of days it took his body to regrow, and he's unaffected by the drained condition for the same duration (though he can still gain the condition).</p>"
+                },
+                "action->Green Grab": {
+                    "name": "Green Grab",
+                    "description": "<p>A green man can use their @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.i18TlebMzwONyPhI]{Improved Grab} action against a creature of any size.</p>"
+                },
+                "action->Green Rituals": {
+                    "name": "Green Rituals",
+                    "description": "<p>A green man can perform all their rituals without secondary casters, relying on their own primal ties to the vital essence in spirits of nature.</p>\n<p>A green man's @UUID[Compendium.pf2e.spells-srd.Item.B4dDkYsHFo1H0CIF]{Awaken Animal} and @UUID[Compendium.pf2e.spells-srd.Item.pZc8ZwtsyWnxUUW0]{Primal Call} rituals work on plants instead of their usual range of choices.</p>\n<p>Most green men also know the ritual to create various types of leshys and possibly even magic allowing the creation of arboreals or more powerful plant creatures.</p>"
+                },
+                "action->Purge Plaguebearers": {
+                    "name": "Purge Plaguebearers",
+                    "description": "<p>Zibik exudes a cloud of spores in a 30-foot-radius emanation. They cling to all creatures currently afflicted with any disease in the area. Afflicted creatures take @Damage[25d6[void]] damage with a @Check[fortitude|dc:48|basic] save.</p>\n<p>A creature that fails its save becomes @UUID[Compendium.pf2e.conditionitems.Item.3uh1r86TzbQvosxv]{Doomed 1} for 1 minute and @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 3}. Zibik can choose to exclude any number of creatures in the area from this effect.</p>\n<p>Zibik can't use Purge Plaguebearers again for [[/gmr 1d4 #rounds]]{1d4 rounds}.</p>"
+                },
+                "action->Vine Forest": {
+                    "name": "Vine Forest",
+                    "description": "<p>The green man lashes out with all six vines to attack many opponents. They make up to six vine Strikes, each against a different target; this counts as one attack for their multiple attack penalty, increasing only after all the attacks are made.</p>"
+                },
+                "action->Improved Grab": {
+                    "name": "Improved Grab"
+                },
+                "lore->Plane of Wood Lore": {
+                    "name": "Plane of Wood Lore"
                 }
             }
         }

@@ -29,6 +29,39 @@
                 },
                 "spell->Illusory Disguise (At Will)": {
                     "name": "Illusory Disguise (At Will)"
+                },
+                "strike-melee->Jaws": {
+                    "name": "Jaws"
+                },
+                "strike-melee->Claw": {
+                    "name": "Claw"
+                },
+                "strike-melee->Tongue": {
+                    "name": "Tongue"
+                },
+                "action->Telepathy 100 feet": {
+                    "name": "Telepathy 100 feet"
+                },
+                "action->Constant Spells": {
+                    "name": "Constant Spells"
+                },
+                "action->+1 Status to All Saves vs. Magic": {
+                    "name": "+1 Status to All Saves vs. Magic"
+                },
+                "action->Pervert Miracle": {
+                    "name": "Pervert Miracle",
+                    "description": "<p><strong>Trigger</strong> A foe within 60 feet casts @UUID[Compendium.pf2e.spells-srd.Item.XSujb7EsSwKl19Uu]{Bless} or a beneficial spell that the nikaramsa could cast to remove an affliction or condition (such as @UUID[Compendium.pf2e.spells-srd.Item.SUKaxVZW2TlM8lu0]{Cleanse Affliction})</p>\n<hr />\n<p><strong>Effect</strong> The nikaramsa attempts to counteract the enemy's spell (counteract modifier [[/r 1d20+24 #Counteract]]{+24} and counteract rank 7). If the nikaramsa succeeds, the triggering creature is subjected to the effects of a @UUID[Compendium.pf2e.spells-srd.Item.7ZinJNzxq0XF0oMx]{Bane} spell or the effect it was trying to remove.</p>"
+                },
+                "action->Towering Stance": {
+                    "name": "Towering Stance",
+                    "description": "<p>A nikaramsa is in fact a Medium creature, but appears as a Large creature due to the force of their personality. A creature interacting with the nikaramsa can attempt a @Check[will|dc:36] save to see the nikaramsa as they truly are. If the creature succeeds, the reach of nikaramsa's attacks against that foe decrease to 5 feet (10 feet for their tongue).</p>\n<p>If all creatures in the nikaramsa's vicinity successfully disbelieve this illusion, the nikaramsa becomes Medium and @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 2} for as long as everyone sees their true form.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.PxLWRiCbgpqOTLO9]{Effect: Towering Stance (Disbelieved)}</p>"
+                },
+                "action->Sap Mind": {
+                    "name": "Sap Mind",
+                    "description": "<p>The nikaramsa focuses their gaze on one creature within 60 feet. That target must attempt a @Check[will|dc:34] save. Regardless of the outcome of the saving throw, the target then becomes temporarily immune for 1 day.</p>\n<hr />\n<p><strong>Critical Success</strong> The nikaramsa is caught off guard by the strength of the target's resistance and becomes @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 2} until the end of their next turn.</p>\n<p><strong>Success</strong> The target resists the nikaramsa's influence.</p>\n<p><strong>Failure</strong> The target's focus and willpower drain away; it becomes @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 2} for 1 minute.</p>\n<p><strong>Critical Failure</strong> As failure, but the target becomes @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 3} for 1 hour.</p>"
+                },
+                "action->Improved Knockdown": {
+                    "name": "Improved Knockdown"
                 }
             }
         },
@@ -71,12 +104,122 @@
                 },
                 "spell->Shatter (At Will)": {
                     "name": "Shatter (At Will)"
+                },
+                "strike-melee->Jaws": {
+                    "name": "Jaws"
+                },
+                "strike-melee->Claw": {
+                    "name": "Claw"
+                },
+                "strike-melee->Tail": {
+                    "name": "Tail"
+                },
+                "action->Telepathy 100 feet": {
+                    "name": "Telepathy 100 feet"
+                },
+                "action->Burst of Creation": {
+                    "name": "Burst of Creation",
+                    "description": "<p>When Alktherisa and Omprisgor die, they explode in a @Template[burst|distance:30], washing all creatures in the area with protean energy. These creatures are healed @Damage[20d6[healing]] Hit Points and must succeed at a @Check[fortitude|dc:38] Save or be affected by a warpwave for 1 round.</p>"
+                },
+                "action->Entropy Sense (Imprecise) 60 feet": {
+                    "name": "Entropy Sense (Imprecise) 60 feet",
+                    "description": "<p>A keketar can anticipate the most likely presence of a creature through a supernatural insight into chaotic probabilities and chance. This grants them the ability to sense creatures within the listed range. @UUID[Compendium.pf2e.spells-srd.Item.EoKBlgf6Smt8opaU]{Veil of Privacy} prevents a creature from being detected via entropy sense automatically (without a counteract check).</p>"
+                },
+                "action->Two As One": {
+                    "name": "Two As One",
+                    "description": "<p>Alktherisa and Omprisgor are a single creature, but each of their heads rolls its own initiative and has its own turn. At the start of a head's turn, it gets 2 actions and 1 reaction. Each head controls one set of arms, but both control the serpentine body. Any ability that would sever a head doesn't cause the conjoined protean to die if it still has its other head, but it does cause it to lose the turns, actions, and reactions of the severed head. Mental effects that target a single creature affect only one of the keketar's heads.</p>"
+                },
+                "action->Constant Spells": {
+                    "name": "Constant Spells"
+                },
+                "action->+1 Status to All Saves vs. Magic": {
+                    "name": "+1 Status to All Saves vs. Magic"
+                },
+                "action->Fast Healing 15": {
+                    "name": "Fast Healing 15"
+                },
+                "action->Eat Death": {
+                    "name": "Eat Death",
+                    "description": "<p><strong>Trigger</strong> A creature within Omprisgor's reach is targeted by a spell that deals Hit Point damage</p><hr /><p><strong>Effect</strong> Omprisgor attempts to counteract the spell with a Religion check; if he succeeds, the spell is countered and Omprisgor becomes @UUID[Compendium.pf2e.conditionitems.Item.nlCjDvLMf2EkV2dl]{Quickened} for 1 round; he may use the additional action to Stride or Strike.</p>"
+                },
+                "action->Eat Life": {
+                    "name": "Eat Life",
+                    "description": "<p><strong>Trigger</strong> A creature within Alktherisa's reach is targeted by a spell that heals Hit Points or grants temporary Hit Points</p><hr /><p><strong>Effect</strong> Alktherisa and Omprisgor become additional targets of that spell, even if that spell normally couldn't target an additional creature.</p>"
+                },
+                "action->Protean Anatomy": {
+                    "name": "Protean Anatomy",
+                    "description": "<p>A keketar's vital organs shift and change shape and position constantly. Immediately after the keketar takes acid, electricity, or sonic damage, they gain the listed amount of resistance to that damage type. This lasts for 1 hour or until the next time the protean takes damage of one of the other types (in which case their resistance changes to match that type), whichever comes first.</p>\n<p>The keketar is immune to polymorph effects unless they're a willing target. If @UUID[Compendium.pf2e.conditionitems.Item.XgEqL1kFApUbl5Z2]{Blinded} or @UUID[Compendium.pf2e.conditionitems.Item.9PR9y0bi4JPKnHPR]{Deafened}, the keketar automatically recovers at the end of their next turn as new sensory organs grow to replace the compromised ones.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.c6SiBB3mzV8lZUQr]{Effect: Protean Anatomy}</p>"
+                },
+                "action->Reactive Strike": {
+                    "name": "Reactive Strike"
+                },
+                "action->Spatial Riptide": {
+                    "name": "Spatial Riptide",
+                    "description": "<p>30 feet. A creature using a teleportation ability within the aura or arriving in it via teleportation must succeed at a @Check[fortitude|dc:41] save or wink out of existence for [[/gmr 1d4 #rounds]] rounds before completing the teleport. The creature can't act, sense anything, or be targeted. On a successful save, the creature completes the teleport normally but is @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned 1}. Keketars are immune to this effect.</p>"
+                },
+                "action->Change Shape": {
+                    "name": "Change Shape",
+                    "description": "<p>The keketar can take the appearance of any Huge or smaller creature. This doesn't change their Speed or their attack and damage bonuses with their Strikes but might change the damage type their Strikes deal.</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.ChangeShape]</p>"
+                },
+                "action->Constrict": {
+                    "name": "Constrict",
+                    "description": "<p>@Damage[(1d10+15)[bludgeoning]], @Check[fortitude|dc:41|basic]</p><hr /><p>@Localize[PF2E.NPC.Abilities.Glossary.Constrict]</p>"
+                },
+                "action->Reshape Reality": {
+                    "name": "Reshape Reality",
+                    "description": "<p>When the keketar casts @UUID[Compendium.pf2e.spells-srd.Item.HBJPsonQnWcC3qdX]{Mirage}, it infuses the illusion with quasi-real substance. Creatures that do not disbelieve the illusion treat structures and terrain created through the spell as though they were real, ascending illusory stairs, becoming trapped by illusory quicksand, and so on.</p>"
+                },
+                "action->Warpwave": {
+                    "name": "Warpwave",
+                    "description": "<p>Many proteans can subject their foes to disorienting alterations perceived in time and space by creating ripples of unstable reality in the environment called warpwaves. When a creature fails its saving throw and is affected by a warpwave, roll [[/gmr 1d8 #Warpwave]]{1d8} and consult the table below for the specific effect on that creature. Unless indicated otherwise, a warpwave effect lasts for [[/gmr 1d4 #Duration Warpwave Effect]]{1d4 rounds}, and a new warpwave effect negates any previous warpwave effect already affecting a creature.</p>\n<table class=\"pf2e\">\n<thead>\n<tr>\n<th>[[/gmr 1d8 #Warpwave]]{1d8}</th>\n<th>Warpwave Effect</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>1</td>\n<td>@UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 2} (@UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 3} on a critical failure)</td>\n</tr>\n<tr>\n<td>2</td>\n<td>@UUID[Compendium.pf2e.conditionitems.Item.yblD8fOR1J8rDwEQ]{Confused} and gains [[/r 4d6 #Temporary Hit Points]]{4d6 temporary Hit Points}</td>\n</tr>\n<tr>\n<td>3</td>\n<td>@UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]{Dazzled} (permanent on a critical failure)</td>\n</tr>\n<tr>\n<td>4</td>\n<td>@UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 2} (@UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 3} on a critical failure)</td>\n</tr>\n<tr>\n<td>5</td>\n<td>@UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Immobilized} by filaments of energy</td>\n</tr>\n<tr>\n<td>6</td>\n<td>@UUID[Compendium.pf2e.conditionitems.Item.nlCjDvLMf2EkV2dl]{Quickened} (Stride, Strike, or Step only)</td>\n</tr>\n<tr>\n<td>7</td>\n<td>@UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1}</td>\n</tr>\n<tr>\n<td>8</td>\n<td>@UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 2} (@UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 3} on a critical failure)</td>\n</tr>\n</tbody>\n</table>"
+                },
+                "action->Warpwave Strike": {
+                    "name": "Warpwave Strike",
+                    "description": "<p>A creature struck by a keketar's jaws or claw Strike must succeed at a @Check[fortitude|dc:38] save or be subject to a @UUID[Compendium.pf2e.bestiary-family-ability-glossary.Item.HKFoOZZV4WdjkeeJ]{Warpwave}.</p>"
+                },
+                "action->Grab": {
+                    "name": "Grab"
                 }
             }
         },
         "Berserker Ordulf": {
             "name": "Berserker Ordulf",
-            "blurb": "Elite Ordulf Bladecaller"
+            "blurb": "Elite Ordulf Bladecaller",
+            "items": {
+                "action->Battle Arrogance": {
+                    "name": "Battle Arrogance",
+                    "description": "<p>Ordulf hasn't met a significant combat challenge in ages, and even when facing deadly foes like the PCs his arrogance can be used against him. If a PC successfully @UUID[Compendium.pf2e.actionspf2e.Item.Dt6B1slsBy8ipJu9]{Disarms}, @UUID[Compendium.pf2e.actionspf2e.Item.QNAVeNKtHA0EUw4X]{Feints}, @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightens}, or @UUID[Compendium.pf2e.actionspf2e.Item.ge56Lu1xXVFYUnLP]{Trips} Ordulf, his arrogance gets the better of him and he grows sloppy in his tactics, reducing his AC to 34 until the start of his next turn. A PC can also attempt to issue a more debilitating insult to Ordulf.</p><h2>Insult Ordulf <span class=\"action-glyph\">2</span></h2><p>The PC spends several seconds issuing insults and taunts to Ordulf, then attempts a @Check[deception|dc:38], @Check[intimidation|dc:38], or @Check[performance|dc:38] check. If the insults include challenges to Ordulf's bravery, compare him to a troll or a chicken, insult his skill at fishing, or liken him to a witch or national of Irrisen, this becomes a DC 33 check.</p><hr /><p><strong>Critical Success</strong> You strike a nerve. Not only does Ordulf become @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 2} with anger, he is also @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned 1} from the shock of your words.</p>\n<p><strong>Success</strong> Your insults cause Ordulf to become sickened 2 with anger.</p>\n<p><strong>Failure</strong> Your insult only has a brief effect, causing Ordulf to become @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 1}. He automatically recovers from this sickened condition at the end of his next turn.</p>\n<p><strong>Critical Failure</strong> Your attempt to insult Ordulf fails so spectacularly that he becomes temporarily immune to Insult Ordulf activities from you for 24 hours.</p>"
+                },
+                "action->Reactive Strike": {
+                    "name": "Reactive Strike"
+                },
+                "action->Battle Cry": {
+                    "name": "Battle Cry",
+                    "description": "<p><strong>Frequency</strong> once per day</p>\n<p><strong>Trigger</strong> Ordulf rolls initiative</p><hr /><p><strong>Effect</strong> Ordulf attempts to [[/act demoralize]] an observed foe.</p>"
+                },
+                "action->Cleaving Blow": {
+                    "name": "Cleaving Blow",
+                    "description": "<p>Ordulf Strikes two adjacent creatures within his reach. Both attacks count against his multiple attack penalty, but do not increase his penalty until he has made both attacks.</p>"
+                },
+                "action->Crushing Insult": {
+                    "name": "Crushing Insult",
+                    "description": "<p><strong>Frequency</strong> once per round</p><hr /><p><strong>Effect</strong> Ordulf issues a devastating and humiliating insult to a creature within 30 feet that he can see. Ordulf attempts an @Check[intimidation|defense:will] check against the target's Will DC. That character is then temporarily immune to Crushing Insult for 24 hours.</p><hr /><p><strong>Critical Success</strong> The insult is distracting and humiliating; the target is @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 1} and @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} for 1 minute.</p>\n<p><strong>Success</strong> The insult is distracting, but its effects pass quickly; the target is stupefied 1 and off-guard until the start of Ordulf's next turn.</p>\n<p><strong>Failure</strong> The insult barely cuts, but is distracting enough that the target is off-guard until the end of Ordulf's turn.</p>\n<p><strong>Critical Failure</strong> Ordulf's attempted insult fails spectacularly, and the PC who he was attempting to insult can instantly insult him back, using Insult Ordulf as a free action.</p>"
+                },
+                "action->Deadly Display": {
+                    "name": "Deadly Display",
+                    "description": "<p><strong>Requirements</strong> Ordulf is wielding a melee weapon</p><hr /><p><strong>Effect</strong> Ordulf brandishes his weapon in a threatening display. He [[/act demoralize]]{Demoralizes} all enemies within 30 feet, rolling once and comparing the result to each target's Will DC.</p>"
+                },
+                "action->Whirlwind Strike": {
+                    "name": "Whirlwind Strike",
+                    "description": "<p>Ordulf Strikes each enemy within his reach. Each attack counts toward his multiple attack penalty, but do not increase his penalty until he has made all his attacks.</p>"
+                },
+                "lore->Fishing Lore": {
+                    "name": "Fishing Lore"
+                },
+                "lore->Warfare Lore": {
+                    "name": "Warfare Lore"
+                }
+            }
         },
         "Bloodfog": {
             "name": "Bloodfog",
@@ -88,6 +231,25 @@
                 },
                 "spell->Blood Vendetta (At Will)": {
                     "name": "Blood Vendetta (At Will)"
+                },
+                "strike-melee->Misty Tendril": {
+                    "name": "Misty Tendril"
+                },
+                "action->Misty Form": {
+                    "name": "Misty Form",
+                    "description": "<p>A bloodfog's body is composed of a semisolid red fog similar in consistency to thick foam. This enables a bloodfog to move through spaces as narrow as 1 inch in diameter with no reduction to its Speed. However, a bloodfog can't wear or interact with objects. It also can't enter water or other fluids, and it's treated as Tiny for the purpose of how wind affects it.</p>"
+                },
+                "action->Sense Blood": {
+                    "name": "Sense Blood",
+                    "description": "<p>A bloodfog can sense creatures that have blood within 120 feet. It can sense exposed blood within a mile.</p>"
+                },
+                "action->Blood Siphon": {
+                    "name": "Blood Siphon",
+                    "description": "<p>When a bloodfog damages a creature with a misty tendril Strike, the creature must attempt a @Check[fortitude|dc:38] save. If the Strike was a critical hit, the outcome of the creature's save is one degree worse than the result of the saving throw. Any temporary Hit Points the bloodfog gains from blood siphon fade after 1 hour.</p><hr /><p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 1}.</p>\n<p><strong>Failure</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 1}, and the bloodfog gains 20 temporary Hit Points.</p>\n<p><strong>Critical Failure</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 2}. The bloodfog gains 40 temporary Hit Points and takes on an intense red hue until the end of its next turn. During this time, it gains a +2 status bonus to AC and saves and is @UUID[Compendium.pf2e.conditionitems.Item.nlCjDvLMf2EkV2dl]{Quickened}. It can use its extra action only to Strike.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.ceOkHxhJNTcvZkCy]{Effect: Blood Siphon (Critical Failure)}</p>"
+                },
+                "action->Blood Vengeance": {
+                    "name": "Blood Vengeance",
+                    "description": "<p>A bloodfog can cast blood vendetta even though it can't actually bleed. In addition to the spell's normal trigger, a bloodfog can cast blood vendetta as a reaction even if the target's piercing, slashing, or persistent bleed damage didn't actually result in damage to the bloodfog itself (either as a result of its resistance blocking the damage or its immunity to bleed coming into effect).</p>"
                 }
             }
         },
@@ -102,6 +264,27 @@
                 },
                 "spell->Translocate (At Will)": {
                     "name": "Translocate (At Will)"
+                },
+                "strike-melee->Jaws": {
+                    "name": "Jaws"
+                },
+                "strike-melee->Claw": {
+                    "name": "Claw"
+                },
+                "action->+1 Status to All Saves vs. Magic": {
+                    "name": "+1 Status to All Saves vs. Magic"
+                },
+                "action->Battle Reek": {
+                    "name": "Battle Reek",
+                    "description": "<p>30 feet. Bloody Hands exudes the carrion stink of a sprawling battlefield\u2014a cloying mixture of death and mud. Any creature entering the aura or starting its turn in the aura must succeed at a @Check[fortitude|dc:34] save or become @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 1} (plus @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1} for as long as it's sickened on a critical failure). While within the aura, affected creatures take a \u20132 circumstance penalty to saves against fear and to recover from the sickened condition. A creature that succeeds at its save is temporarily immune for 1 minute.</p>"
+                },
+                "action->Bloody Mess": {
+                    "name": "Bloody Mess",
+                    "description": "<p><strong>Frequency</strong> once per day</p><hr /><p><strong>Effect</strong> Bloody Hands slashes his claws out in all directions, causing blood from all living creatures within a @Template[emanation|distance:20]{20-foot-radius} to leap out and fill the air with a fine red mist. All creatures in the area must attempt a @Check[fortitude|dc:37|options:damaging-effect] save\u2014creatures that are already wounded take a \u20132 penalty to this saving throw. If more than 3 creatures fail this saving throw, the 20-foot-radius becomes so thick with bloody mist that all creatures in the area become @UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{Concealed} until the end of Bloody Hands' next turn.</p><hr /><p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature takes @Damage[8d6[slashing]] damage.</p>\n<p><strong>Failure</strong> The creature takes @Damage[8d6[slashing]] damage, @Damage[4d6[persistent,bleed]] damage, and becomes @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 1} from blood loss for 1 minute.</p>\n<p><strong>Critical Failure</strong> The creature takes @Damage[12d6[persistent,bleed]] damage and becomes @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 2} from blood loss.</p>"
+                },
+                "action->Leaping Slam": {
+                    "name": "Leaping Slam",
+                    "description": "<p>Bloody Hands Strides, then makes a @UUID[Compendium.pf2e.actionspf2e.Item.2HJ4yuEFY1Cast4h]{High Jump} or a @UUID[Compendium.pf2e.actionspf2e.Item.JUvAvruz7yRQXfz2]{Long Jump}, and can land in a space occupied by creatures. All creatures in the 10-foot space he lands in must attempt a @Check[reflex|dc:37|options:damaging-effect] save.</p><hr /><p><strong>Critical Success</strong> The creature dodges aside and takes no damage, and it can choose any square adjacent to Bloody Hands to immediately move into; this movement does not trigger reactions.</p>\n<p><strong>Success</strong> The creature takes @Damage[4d6[bludgeoning]] damage and is pushed into an adjacent space of Bloody Hands' choice.</p>\n<p><strong>Failure</strong> The creature takes @Damage[8d6[bludgeoning]] damage, is pushed into an adjacent space of Bloody Hands' choice, and is knocked @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone}.</p>\n<p><strong>Critical Failure</strong> The creature takes @Damage[8d6[bludgeoning]] damage, is knocked prone, and becomes pinned by Bloody Hands.</p>"
                 }
             }
         },
@@ -128,6 +311,38 @@
                 },
                 "spell->Summon Animal (Spiders Only)": {
                     "name": "Summon Animal (Spiders Only)"
+                },
+                "strike-melee->Jaws": {
+                    "name": "Jaws"
+                },
+                "strike-melee->Claw": {
+                    "name": "Claw"
+                },
+                "strike-melee->Web": {
+                    "name": "Web"
+                },
+                "action->Constant Spells": {
+                    "name": "Constant Spells"
+                },
+                "action->Darting Legs": {
+                    "name": "Darting Legs",
+                    "description": "<p><strong>Requirements</strong> The jorogumo has their spider legs extended or has Changed Shape</p>\n<p><strong>Trigger</strong> The jorogumo is targeted with an attack</p>\n<hr />\n<p><strong>Effect</strong> The jorogumo raises a leg, gaining a +2 circumstance bonus to AC against the triggering attack.</p>"
+                },
+                "action->Change Shape": {
+                    "name": "Change Shape",
+                    "description": "<p>The jorogumo takes on the appearance of any Small or Medium spider. This doesn't change their Speed or Strikes.</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.ChangeShape]</p>"
+                },
+                "action->Jorogumo Venom": {
+                    "name": "Jorogumo Venom",
+                    "description": "<p><strong>Saving Throw</strong> @Check[fortitude|dc:32]</p>\n<hr />\n<p><strong>Maximum Duration</strong> 4 hours</p>\n<p><strong>Stage 1</strong> @Damage[3d6[poison]] damage and @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 1} (1 round)</p>\n<p><strong>Stage 2</strong> @Damage[3d6[poison]] damage and @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 2} (1 round)</p>\n<p><strong>Stage 3</strong> @Damage[4d6[poison]] damage and Stupefied 2 (1 round)</p>\n<p><strong>Stage 4</strong> @UUID[Compendium.pf2e.conditionitems.Item.6uEgoh53GbXuHpTF]{Paralyzed} for [[/gmr 1d4 #Duration Paralyzed]]{1d4 hours}</p>"
+                },
+                "action->Spider Legs": {
+                    "name": "Spider Legs",
+                    "description": "<p><strong>Requirements</strong> The jorogumo is in humanoid form</p>\n<hr />\n<p><strong>Effect</strong> Eight large spider legs sprout from the jorogumo's back, granting them a 40-foot climb Speed and allowing them to use the Darting Legs reaction.</p>"
+                },
+                "action->Web Trap": {
+                    "name": "Web Trap",
+                    "description": "<p>A creature hit by the jorogumo's web attack is @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Immobilized} and stuck to the nearest surface, preventing the creature from moving.</p>\n<p>The DC to [[/act escape dc=32]]{Escape} or [[/act force-open dc=32]]{Force Open} the web trap is 32.</p>"
                 }
             }
         },
@@ -139,6 +354,21 @@
             "items": {
                 "spellcastingEntry->Divine Innate Spells": {
                     "name": "Divine Innate Spells"
+                },
+                "strike-melee->Electrical Blast": {
+                    "name": "Electrical Blast"
+                },
+                "action->Truescript": {
+                    "name": "Truescript",
+                    "description": "<p>A living rune can't speak, but it can sculpt its form into complicated scripts and pictographs that can be understood by any creature with the ability to read written language. A living rune can also understand any written or spoken language.</p>"
+                },
+                "action->Backdrop": {
+                    "name": "Backdrop",
+                    "description": "<p>When a creature attempts to Strike a living rune and critically misses, the attacker hits the surface (a canvas, wall, or so on) behind the living rune. This might damage the surface or the attacker's weapon, at the GM's discretion.</p>"
+                },
+                "action->Surface-Bound": {
+                    "name": "Surface-Bound",
+                    "description": "<p>A living rune can move only along flat surfaces. If the surface it's on is destroyed (such as a portrait hit by a @UUID[Compendium.pf2e.spells-srd.Item.sxQZ6yqTn0czJxVd]{Fireball} spell or a wall being smashed), the rune takes [[/r {7d6}]]{7d6 damage} and is shunted to the nearest flat surface. If there is no flat surface within 5 feet, the rune is destroyed.</p>"
                 }
             }
         },
@@ -151,6 +381,25 @@
                 },
                 "equipment->Note From Saviya": {
                     "name": "Note From Saviya"
+                },
+                "strike-melee->Sawtooth Saber": {
+                    "name": "Sawtooth Saber"
+                },
+                "action->Tail Trip": {
+                    "name": "Tail Trip",
+                    "description": "<p><strong>Trigger</strong> A creature within Dronuk's reach uses a move action or leaves a square during a move action it's using</p><hr /><p><strong>Effect</strong> Dronuk lashes out at the creature with his tail in an attempt to trip the triggering creature up. Dronuk attempts to @UUID[Compendium.pf2e.actionspf2e.Item.ge56Lu1xXVFYUnLP]{Trip} the triggering creature.</p>"
+                },
+                "action->Mantis's Flurry": {
+                    "name": "Mantis's Flurry",
+                    "description": "<p>Dronuk's multiple attack penalty for attacks with his sawtooth sabers is \u20132 for his second attack, and \u20134 with his third and any subsequent attacks.</p>"
+                },
+                "action->Prayer Attack": {
+                    "name": "Prayer Attack",
+                    "description": "<p><strong>Requirements</strong> Dronuk wields a sawtooth saber in each hand</p><hr /><p><strong>Effect</strong> Dronuk conspirator attempts to @UUID[Compendium.pf2e.actionspf2e.Item.QNAVeNKtHA0EUw4X]{Feint} an enemy within 30 feet. If the Feint is successful, Dronuk's next successful Strike with a sawtooth saber in that same turn deals 2d6 persistent bleed damage to the target. In addition, provided they remain visible to that target and that target remains within 30 feet of Dronuk, additional Prayer Attacks against that target automatically cause them to become @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} against Dronuk's attacks until the end of their turn.</p>"
+                },
+                "action->You're Next": {
+                    "name": "You're Next",
+                    "description": "<p><strong>Trigger</strong> Dronuk reduces an enemy to 0 Hit Points</p><hr /><p><strong>Effect</strong> Dronuk attempts to [[/act demoralize options=youre-next]] a single creature he can see. He gains a +2 circumstance bonus to this check.</p>"
                 }
             }
         },
@@ -212,12 +461,56 @@
                 "action->Sudden Blades": {
                     "name": "Sudden Blades",
                     "description": "<p><strong>Trigger</strong> Either of the weapons stored on either weapon rack is disturbed</p><hr /><p><strong>Effect</strong> Both doors into this room slam shut and lock (DC 40). The trap then rolls initiative.</p>"
+                },
+                "strike-melee->Sawtooth Saber": {
+                    "name": "Sawtooth Saber"
                 }
             }
         },
         "Frost Roc": {
             "name": "Frost Roc",
-            "publicNotes": "<p>Stories of immense rocs swooping down to carry off livestock or strafing armies into bleeding ruin are popular in taverns, but what many don't realize is that there are even more dangerous magical rocs dwelling in the remote corners of the world. These oversized birds have supernatural abilities linked to the region they favor, but they share one thing with the common roc\u2014their vast size.</p>\n<p>Frost rocs are owl-like predators adapted to life in arctic regions. They nest among the craggy peaks of snowcapped mountains or amid rifts of sprawling glaciers, treating the taigas and tundras as their sprawling hunting grounds. Frost rocs are nocturnal and tend to hunt nightly for a few weeks at a time, as the moon is waxing or waning full. They go into short periods of hibernation for the weeks on either side of a new moon, or during prolonged periods of cloud coverage, such as during a storm. They abandon these habits when they're trained to work as mounts or guardians\u2014something that giants or the church of Gorum often does in the remote reaches of the Lands of the Linnorm Kings or the Realm of the Mammoth Lords.</p><h2>Other Bestial Rocs</h2><p>Additional varieties of roc have evolved to adapt to remote, hostile environments and, like the frost roc, often possess some form of elemental magic. The albatross-like wind rocs of western Azlant nest among the ragged cliffs of shattered isles, commanding mighty winds with their wings. In remote Arcadian archipelagos, bright pink, long-legged swamp rocs stride through wetlands and use watery magic to aid their hunts. Others doubtless exist in even more remote reaches of the world.</p>"
+            "publicNotes": "<p>Stories of immense rocs swooping down to carry off livestock or strafing armies into bleeding ruin are popular in taverns, but what many don't realize is that there are even more dangerous magical rocs dwelling in the remote corners of the world. These oversized birds have supernatural abilities linked to the region they favor, but they share one thing with the common roc\u2014their vast size.</p>\n<p>Frost rocs are owl-like predators adapted to life in arctic regions. They nest among the craggy peaks of snowcapped mountains or amid rifts of sprawling glaciers, treating the taigas and tundras as their sprawling hunting grounds. Frost rocs are nocturnal and tend to hunt nightly for a few weeks at a time, as the moon is waxing or waning full. They go into short periods of hibernation for the weeks on either side of a new moon, or during prolonged periods of cloud coverage, such as during a storm. They abandon these habits when they're trained to work as mounts or guardians\u2014something that giants or the church of Gorum often does in the remote reaches of the Lands of the Linnorm Kings or the Realm of the Mammoth Lords.</p><h2>Other Bestial Rocs</h2><p>Additional varieties of roc have evolved to adapt to remote, hostile environments and, like the frost roc, often possess some form of elemental magic. The albatross-like wind rocs of western Azlant nest among the ragged cliffs of shattered isles, commanding mighty winds with their wings. In remote Arcadian archipelagos, bright pink, long-legged swamp rocs stride through wetlands and use watery magic to aid their hunts. Others doubtless exist in even more remote reaches of the world.</p>",
+            "items": {
+                "strike-melee->Wing": {
+                    "name": "Wing"
+                },
+                "strike-melee->Beak": {
+                    "name": "Beak"
+                },
+                "strike-melee->Talon": {
+                    "name": "Talon"
+                },
+                "action->Mist Sight": {
+                    "name": "Mist Sight",
+                    "description": "<p>A frost roc can see through clouds, fog, mists, and other water vapors.</p>"
+                },
+                "action->Flying Strafe": {
+                    "name": "Flying Strafe",
+                    "description": "<p>The frost roc Flies up to its Speed and makes two talon Strikes at any point during that movement. Each Strike must target a different creature. Each attack takes the normal multiple attack penalty.</p>"
+                },
+                "action->Frozen Feathers": {
+                    "name": "Frozen Feathers",
+                    "description": "<p>The frost roc spreads its wings and then flaps them furiously, unleashing a blast of ice-rimed feathers in a @Template[cone|distance:60]. All creatures in the area must attempt a @Check[reflex|dc:34|options:damaging-effect] save. The frost roc can't use Frozen Feathers again for [[/gmr 1d4 #Recharge Frozen Feathers]]{1d4 rounds}.</p><hr /><p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature takes @Damage[3d6[piercing]] damage and @Damage[5d6[cold]] damage.</p>\n<p><strong>Failure</strong> The creature takes @Damage[5d6[piercing]] damage and @Damage[10d6[cold]] damage.</p>\n<p><strong>Critical Failure</strong> The creature takes @Damage[8d6[piercing]] damage, @Damage[15d6[cold]] damage, and is @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1} for 1 minute.</p>"
+                },
+                "action->Snack": {
+                    "name": "Snack",
+                    "description": "<p>A frost roc gains a +2 circumstance bonus to hit with its beak Strike if the target is grabbed or restrained in its talon.</p>"
+                },
+                "action->Snatch": {
+                    "name": "Snatch",
+                    "description": "<p>A frost roc can Fly at half Speed while it has a creature @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed} or @UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{Restrained} in either or both of its talons, carrying that creature along with it.</p>"
+                },
+                "action->Wing Rebuff": {
+                    "name": "Wing Rebuff",
+                    "description": "<p><strong>Trigger</strong> A creature moves into the reach of the frost roc's wing</p><hr /><p><strong>Effect</strong> The frost roc makes a wing Strike against the triggering creature. If the frost roc Pushes the creature, it disrupts the triggering move action.</p>"
+                },
+                "action->Improved Grab": {
+                    "name": "Improved Grab"
+                },
+                "action->Improved Push": {
+                    "name": "Improved Push"
+                }
+            }
         },
         "Frostripper": {
             "name": "Frostripper",
@@ -227,6 +520,35 @@
             "items": {
                 "spellcastingEntry->Primal Innate Spells": {
                     "name": "Primal Innate Spells"
+                },
+                "strike-melee->Jaws": {
+                    "name": "Jaws"
+                },
+                "strike-melee->Claw": {
+                    "name": "Claw"
+                },
+                "action->Voice Imitation": {
+                    "name": "Voice Imitation",
+                    "description": "<p>Kokogiaks can mimic the sounds of a person in distress by attempting a Deception check to @UUID[Compendium.pf2e.actionspf2e.Item.ewwCglB7XOPLUz72]{Lie}. The kokogiak has a +4 circumstance bonus to this check.</p>"
+                },
+                "action->Reactive Strike": {
+                    "name": "Reactive Strike"
+                },
+                "action->Mauling Rush": {
+                    "name": "Mauling Rush",
+                    "description": "<p>The kokogiak Strides up to its Speed. It can make up to four claw Strikes at any point during this movement, each against a different target. These attacks count toward the kokogiak's multiple attack penalty, but the multiple attack penalty doesn't increase until after the kokogiak makes all of its attacks.</p>"
+                },
+                "action->Sneak Attack": {
+                    "name": "Sneak Attack",
+                    "description": "<p>The kokogiak's Strikes deal an additional 2d6 precision damage to @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} creatures.</p>"
+                },
+                "action->Tormented Snarl": {
+                    "name": "Tormented Snarl",
+                    "description": "<p>Using their voice imitation abilities, a kokogiak emits the horrific wails of its former victims. Each creature within @Template[emanation|distance:120]{120 feet} takes @Damage[4d6[mental]] damage and must attempt a @Check[will|dc:33|traits:damaging-effect] save.</p>\n<p>A creature frightened by this ability is @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} to the kokogiak.</p><hr /><p><strong>Critical Success</strong> The creature is unaffected and is temporarily immune for 1 minute.</p>\n<p><strong>Success</strong> The creature takes half damage and becomes @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 1}.</p>\n<p><strong>Failure</strong> The creature takes full damage and becomes @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 2}.</p>\n<p><strong>Critical Failure</strong> The creature takes double damage, becomes @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 3}, and is @UUID[Compendium.pf2e.conditionitems.Item.sDPxOjQ9kx2RZE8D]{Fleeing} until the end of its next turn.</p>"
+                },
+                "action->Trackless Step": {
+                    "name": "Trackless Step",
+                    "description": "<p>The kokogiak always gains the benefits of @UUID[Compendium.pf2e.actionspf2e.Item.SB7cMECVtE06kByk]{Cover Tracks} in natural surroundings, even while moving at full speed.</p>"
                 }
             }
         },
@@ -264,7 +586,34 @@
         "Gorumite Veteran": {
             "name": "Gorumite Veteran",
             "blurb": "Human fighter",
-            "allSavesBonus": "+2 circumstance vs. fear"
+            "allSavesBonus": "+2 circumstance vs. fear",
+            "items": {
+                "action->+2 Circumstance to All Saves Vs. Fear": {
+                    "name": "+2 Circumstance to All Saves Vs. Fear"
+                },
+                "action->Reactive Strike": {
+                    "name": "Reactive Strike"
+                },
+                "action->Consecrated": {
+                    "name": "Consecrated",
+                    "description": "<p>As long as the @UUID[Compendium.pf2e.spells-srd.Item.Dbd5W6G8U2vzWolN]{Consecrate} ritual effects persist in Crownhold, a Gorumite veteran gains a +1 status bonus to attack rolls, skill checks, saving throws, and Perception checks; these bonuses are not calculated into the stat block.</p>"
+                },
+                "action->Greatsword Critical Specialization": {
+                    "name": "Greatsword Critical Specialization",
+                    "description": "<p>On a critical hit with a greatsword, the target of the critical hit is knocked off-balance and becomes @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} until the start of the Gorumite veteran's next turn.</p>"
+                },
+                "action->Heavy Swing": {
+                    "name": "Heavy Swing",
+                    "description": "<p>The Gorumite veteran Strikes with their greatsword, dealing 4d12+22 slashing damage plus 1d6 persistent bleed. This counts as two attacks when calculating their multiple attack penalty.</p>"
+                },
+                "action->Pinning Throw": {
+                    "name": "Pinning Throw",
+                    "description": "<p>The Gorumite veteran attempts a ranged Strike with their javelin, dealing @Damage[(3d6+22)[piercing]] damage. If the target is adjacent to a solid surface, they become stuck to that surface by the javelin. The target is @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Immobilized} until they @UUID[Compendium.pf2e.actionspf2e.Item.SkZAQRkLLkmBQNB9]{Escape} (DC 33). The creature doesn't become stuck if it is incorporeal, is liquid (like a water elemental or some oozes), or could otherwise escape without effort.</p>"
+                },
+                "lore->Warfare Lore": {
+                    "name": "Warfare Lore"
+                }
+            }
         },
         "Gorumite Warpriest": {
             "name": "Gorumite Warpriest",
@@ -282,6 +631,20 @@
                 },
                 "equipment->Key": {
                     "name": "Key"
+                },
+                "strike-melee->Greatsword": {
+                    "name": "Greatsword"
+                },
+                "action->Consecrated": {
+                    "name": "Consecrated",
+                    "description": "<p>As long as the consecrate ritual effects persist in Crownhold, a Gorumite warpriest gains a +1 status bonus to attack rolls, skill checks, saving throws, and Perception checks; these bonuses are not calculated into the stat block.</p>"
+                },
+                "action->Fervent Casting": {
+                    "name": "Fervent Casting",
+                    "description": "<p><strong>Frequency</strong> once per day</p><hr /><p><strong>Effect</strong> The Gorumite warpriest loudly proclaims the glory of Gorum. The next divine spell they cast takes one fewer action (minimum of one), but must only target the warpriest. If the spell affects an area or multiple targets, such as bless, it only affects the warpriest, even if it lasts more than one round.</p>"
+                },
+                "lore->Warfare Lore": {
+                    "name": "Warfare Lore"
                 }
             }
         },
@@ -299,6 +662,28 @@
                 "weapon->Verdant Scythe": {
                     "name": "Verdant Scythe",
                     "description": "<p>Derived from a farming tool used to mow down long grains and cereals, this weapon has a long wooden shaft with protruding handles, capped with a curved blade set at a right angle.</p>"
+                },
+                "strike-melee->Verdant Scythe": {
+                    "name": "Verdant Scythe"
+                },
+                "action->+1 Status to All Saves vs. Poison": {
+                    "name": "+1 Status to All Saves vs. Poison"
+                },
+                "action->Mantis Commander": {
+                    "name": "Mantis Commander",
+                    "description": "<p>Mantis Keeper belongs to the animal druidic order, yet they don't have a single animal companion. Instead, they are served by the deadly mantises that dwell upon Mediogalti Isle, and their command over them is bolstered by the Mantis Stones. At any one time, Mantis Keeper is attended by two of these enormous insects, each of which treat Mantis Keeper as a valued ally. Mantis Keeper can communicate with any form of deadly mantis by speaking Wildsong to them, although the mantises cannot reply. These deadly mantises do not have the minion trait, and Mantis Keeper need not Command an Animal to command them\u2014they can simply issue orders via Wildsong as a free action.</p>"
+                },
+                "action->Mantis Stone Stride": {
+                    "name": "Mantis Stone Stride",
+                    "description": "<p>Mantis Keeper Steps, Strides, or Flies into one of the Mantis Stones, then immediately exits a different Mantis Stone into a square adjacent to the stone and continues the rest of their movement. When Mantis Keeper exits a Mantis Stone, they create a pulse of lightning that inflicts @Damage[8d6[electricity]] damage (@Check[reflex|dc:38|basic] save) to all creatures within 10 feet of Mantis Keeper when they emerge from the Mantis stone.</p>"
+                },
+                "action->Steady Spellcasting": {
+                    "name": "Steady Spellcasting",
+                    "description": "<p>If a reaction would disrupt Mantis Keeper's spellcasting action, they attempt a @Check[flat|dc:15]. If they succeed, the action isn't disrupted.</p>"
+                },
+                "action->Verdant Scythe": {
+                    "name": "Verdant Scythe",
+                    "description": "<p>Mantis Keeper has cultivated a unique seed to serve as a special verdant weapon. When they activate this ability, the seed transforms into a scythe, or the scythe transforms back into a seed. This scythe appears to be made entirely of wood, with a short upper blade that extends into a lengthy mantis-like arm when they attack. Although made of wood, Mantis Keeper's verdant scythe functions as if its blade were made of iron. If they're slain, the weapon quickly rots away, leaving behind rune-inscribed seeds that function as runestones that are inscribed with the weapon's qualities.</p>"
                 }
             }
         },
@@ -308,7 +693,60 @@
             "blurb": "Variant female mezlan",
             "allSavesBonus": "+1 status to all saves vs. magic",
             "languagesDetails": "polyglot",
-            "hpDetails": "regeneration 15 (deactivated by acid)"
+            "hpDetails": "regeneration 15 (deactivated by acid)",
+            "items": {
+                "strike-melee->Polymorphic Appendage": {
+                    "name": "Polymorphic Appendage"
+                },
+                "strike-melee->Ooze Globule": {
+                    "name": "Ooze Globule"
+                },
+                "action->Polyglot": {
+                    "name": "Polyglot",
+                    "description": "<p>A mezlan can speak and understand any language they hear spoken after listening to the language for 1 minute. These languages fade from their mind after 24 hours.</p>"
+                },
+                "action->+1 Status to All Saves vs. Magic": {
+                    "name": "+1 Status to All Saves vs. Magic"
+                },
+                "action->Regeneration 15 (Deactivated by Acid)": {
+                    "name": "Regeneration 15 (Deactivated by Acid)"
+                },
+                "action->Absorb Spell": {
+                    "name": "Absorb Spell",
+                    "description": "<p><strong>Trigger</strong> The mezlan succeeds at a saving throw against a single-target spell</p>\n<hr />\n<p><strong>Effect</strong> The mezlan absorbs the spell, nullifying its effect and storing it for later. They can Cast the Spell using the original caster's spell attack modifier and DC. They can store only one spell at a time, but they can absorb a new spell to replace the spell they currently have stored.</p>\n<p>A willing caster can allow the mezlan to Absorb a Spell without requiring a save.</p>"
+                },
+                "action->Discorporate": {
+                    "name": "Discorporate",
+                    "description": "<p>When the mezlan is reduced to 0 Hit Points, their body dissolves into colorless slime and begins seeping into nearby cracks or porous surfaces.</p>\n<p>If this material is not immediately contained or destroyed, the mezlan will eventually re-form, though they may lie dormant for years or even decades before doing so.</p>"
+                },
+                "action->Access Pipe Ambush": {
+                    "name": "Access Pipe Ambush",
+                    "description": "<p><strong>Trigger</strong> Niesha emerges from one of the Sarzari access pipes</p><hr /><p><strong>Effect</strong> Niesha makes a melee Strike against an adjacent creature as she emerges.</p>"
+                },
+                "action->Change Shape": {
+                    "name": "Change Shape",
+                    "description": "<p>The mezlan assumes the form of any Medium or Small creature, excluding those with the elemental, incorporeal, or swarm traits but including specific individuals whose appearance they've seen. This doesn't change the mezlan's Speed or their attack and damage bonus with their Strikes, but the damage type dealt by their Strikes might change based on their new form.</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.ChangeShape]</p>"
+                },
+                "action->Extend Limb": {
+                    "name": "Extend Limb",
+                    "description": "<p>The mezlan extends one of their limbs, granting themself a reach of 20 feet with their polymorphic appendages until the end of their next turn.</p>"
+                },
+                "action->Navigate Pipes": {
+                    "name": "Navigate Pipes",
+                    "description": "<p>Niesha can move though the Sarzari Access Pipes, even though they're only two feet wide; she treats these pipes as difficult terrain.</p>"
+                },
+                "action->Up From Below": {
+                    "name": "Up From Below",
+                    "description": "<p>Niesha can @UUID[Compendium.pf2e.actionspf2e.Item.7blmbDrQFNfdT731]{Shove} or @UUID[Compendium.pf2e.actionspf2e.Item.ge56Lu1xXVFYUnLP]{Trip} a creature that's standing atop a Sarzari access pipe grate while she's directly beneath that creature.</p>"
+                },
+                "action->Viscous Trap": {
+                    "name": "Viscous Trap",
+                    "description": "<p>A creature hit by the mezlan's ooze globule takes a -15-foot circumstance penalty to all Speeds for 1 minute. On a critical hit, a target standing on a solid surface also becomes @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Immobilized}, while a target Flying via wings falls to the ground and becomes unable to Fly.</p>\n<p>A target can end all effects by @UUID[Compendium.pf2e.actionspf2e.Item.SkZAQRkLLkmBQNB9]{Escaping} (DC 34) or spending a total of 3 Interact actions to free itself.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.iWLAcND0iyW4NUZm]{Effect: Viscous Trap}</p>"
+                },
+                "lore->Library Lore": {
+                    "name": "Library Lore"
+                }
+            }
         },
         "Ordulf Bladecaller": {
             "name": "Ordulf Bladecaller",
@@ -317,6 +755,43 @@
                 "consumable->Potion of Flying (Greater)": {
                     "name": "Potion of Flying (Greater)",
                     "description": "<p><strong>Activate</strong> <span class=\"action-glyph\">A</span> (manipulate)</p>\n<hr />\n<p>Upon drinking this effervescent concoction, you gain a fly Speed of 40 feet for 1 hour.</p>\n<p>@UUID[Compendium.pf2e.equipment-effects.Item.Zdh2uO1vVYJmaqld]{Effect: Potion of Flying (Greater)}</p>"
+                },
+                "action->Battle Arrogance": {
+                    "name": "Battle Arrogance",
+                    "description": "<p>Ordulf hasn't met a significant combat challenge in ages, and even when facing deadly foes like the PCs his arrogance can be used against him. If a PC successfully @UUID[Compendium.pf2e.actionspf2e.Item.Dt6B1slsBy8ipJu9]{Disarms}, @UUID[Compendium.pf2e.actionspf2e.Item.QNAVeNKtHA0EUw4X]{Feints}, @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightens}, or @UUID[Compendium.pf2e.actionspf2e.Item.ge56Lu1xXVFYUnLP]{Trips} Ordulf, his arrogance gets the better of him and he grows sloppy in his tactics, reducing his AC to 34 until the start of his next turn. A PC can also attempt to issue a more debilitating insult to Ordulf.</p><h2>Insult Ordulf <span class=\"action-glyph\">2</span></h2><p>The PC spends several seconds issuing insults and taunts to Ordulf, then attempts a @Check[deception|dc:38], @Check[intimidation|dc:38], or @Check[performance|dc:38] check. If the insults include challenges to Ordulf's bravery, compare him to a troll or a chicken, insult his skill at fishing, or liken him to a witch or national of Irrisen, this becomes a DC 33 check.</p><hr /><p><strong>Critical Success</strong> You strike a nerve. Not only does Ordulf become @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 2} with anger, he is also @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned 1} from the shock of your words.</p>\n<p><strong>Success</strong> Your insults cause Ordulf to become sickened 2 with anger.</p>\n<p><strong>Failure</strong> Your insult only has a brief effect, causing Ordulf to become @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 1}. He automatically recovers from this sickened condition at the end of his next turn.</p>\n<p><strong>Critical Failure</strong> Your attempt to insult Ordulf fails so spectacularly that he becomes temporarily immune to Insult Ordulf activities from you for 24 hours.</p>"
+                },
+                "action->Gorum's Major Boon": {
+                    "name": "Gorum's Major Boon",
+                    "description": "<p>When Ordulf is reduced to 0 Hit Points, Gorum feeds him the zeal of his Aesir, allowing Ordulf to draw upon his own life force to fight on and on without falling. He is healed to 150 Hit Points and becomes @UUID[Compendium.pf2e.conditionitems.Item.3uh1r86TzbQvosxv]{Doomed 1} (or increases his doomed condition by 1), causing his features to look progressively more gaunt and scarred. Once he reaches @UUID[Compendium.pf2e.conditionitems.Item.3uh1r86TzbQvosxv]{Doomed 4}, he dies.</p>"
+                },
+                "action->Reactive Strike": {
+                    "name": "Reactive Strike"
+                },
+                "action->Battle Cry": {
+                    "name": "Battle Cry",
+                    "description": "<p><strong>Frequency</strong> once per day</p>\n<p><strong>Trigger</strong> Ordulf rolls initiative</p><hr /><p><strong>Effect</strong> Ordulf attempts to [[/act demoralize]] an observed foe.</p>"
+                },
+                "action->Cleaving Blow": {
+                    "name": "Cleaving Blow",
+                    "description": "<p>Ordulf Strikes two adjacent creatures within his reach. Both attacks count against his multiple attack penalty, but do not increase his penalty until he has made both attacks.</p>"
+                },
+                "action->Crushing Insult": {
+                    "name": "Crushing Insult",
+                    "description": "<p><strong>Frequency</strong> once per round</p><hr /><p><strong>Effect</strong> Ordulf issues a devastating and humiliating insult to a creature within 30 feet that he can see. Ordulf attempts an @Check[intimidation|defense:will] check against the target's Will DC. That character is then temporarily immune to Crushing Insult for 24 hours.</p><hr /><p><strong>Critical Success</strong> The insult is distracting and humiliating; the target is @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 1} and @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} for 1 minute.</p>\n<p><strong>Success</strong> The insult is distracting, but its effects pass quickly; the target is stupefied 1 and off-guard until the start of Ordulf's next turn.</p>\n<p><strong>Failure</strong> The insult barely cuts, but is distracting enough that the target is off-guard until the end of Ordulf's turn.</p>\n<p><strong>Critical Failure</strong> Ordulf's attempted insult fails spectacularly, and the PC who he was attempting to insult can instantly insult him back, using Insult Ordulf as a free action.</p>"
+                },
+                "action->Deadly Display": {
+                    "name": "Deadly Display",
+                    "description": "<p><strong>Requirements</strong> Ordulf is wielding a melee weapon</p><hr /><p><strong>Effect</strong> Ordulf brandishes his weapon in a threatening display. He [[/act demoralize]]{Demoralizes} all enemies within 30 feet, rolling once and comparing the result to each target's Will DC.</p>"
+                },
+                "action->Whirlwind Strike": {
+                    "name": "Whirlwind Strike",
+                    "description": "<p>Ordulf Strikes each enemy within his reach. Each attack counts toward his multiple attack penalty, but do not increase his penalty until he has made all his attacks.</p>"
+                },
+                "lore->Fishing Lore": {
+                    "name": "Fishing Lore"
+                },
+                "lore->Warfare Lore": {
+                    "name": "Warfare Lore"
                 }
             }
         },
@@ -326,6 +801,18 @@
             "items": {
                 "equipment->Exquisite Kokogiak Harness": {
                     "name": "Exquisite Kokogiak Harness"
+                },
+                "action->Catch and Release": {
+                    "name": "Catch and Release",
+                    "description": "<p><strong>Requirements</strong> The rage rider has a hand free</p>\n<p><strong>Trigger</strong> An enemy critically misses the rage rider with a thrown weapon attack</p><hr /><p><strong>Effect</strong> The rage rider catches the thrown weapon and makes a ranged Strike with it.</p>"
+                },
+                "action->Exquisite Kokogiak Harness": {
+                    "name": "Exquisite Kokogiak Harness",
+                    "description": "<p>A rage rider is equipped with an exquisitely crafted harness when riding a kokogiak. Two rage riders can ride a willing kokogiak at once using such a harness, and both of their hands remain free while doing so. When a rage rider is attached to a kokogiak, they can't use any action that uses their speed (such as Step or Stride), and all DCs to forcibly move the rage rider or to knock them from their mount are increased by 5. If a kokogiak being ridden by a rage rider using such a harness is killed or falls @UUID[Compendium.pf2e.conditionitems.Item.fBnFDH2MTzgFijKf]{Unconscious}, the rage rider takes @Damage[3d6[bludgeoning]] damage from the fall (@Check[reflex|dc:30|basic] save). A rage rider can release their harness with an Interact action.</p>"
+                },
+                "action->Ruinous Rage": {
+                    "name": "Ruinous Rage",
+                    "description": "<p>The rage rider enters a state of pure rage that lasts either for 1 minute, until there are no enemies they can perceive, or until they fall @UUID[Compendium.pf2e.conditionitems.Item.fBnFDH2MTzgFijKf]{Unconscious}, whichever comes first. While raging, the rage rider has AC 27 and their spear Strikes deal 2d6+15 damage plus 2d6 persistent bleed damage. While raging, the rage rider can't use actions that have the concentrate trait, except for @UUID[Compendium.pf2e.actionspf2e.Item.BlAOM2X92SI6HMtJ]{Seek}. After they've stopped raging, a rage rider can't use Rage again for 1 minute.</p>"
                 }
             }
         },
@@ -343,6 +830,31 @@
                 "consumable->Potion of Flying (Standard)": {
                     "name": "Potion of Flying (Standard)",
                     "description": "<p><strong>Activate</strong> <span class=\"action-glyph\">A</span> (manipulate)</p>\n<hr />\n<p>Upon drinking this effervescent concoction, you gain a fly Speed of 40 feet for 1 minute.</p>\n<p>@UUID[Compendium.pf2e.equipment-effects.Item.Mf9EBLhYmZerf0nS]{Effect: Potion of Flying (Standard)}</p>"
+                },
+                "strike-melee->Shuriken": {
+                    "name": "Shuriken"
+                },
+                "strike-melee->Sawtooth Saber": {
+                    "name": "Sawtooth Saber"
+                },
+                "action->Blightburn Resin": {
+                    "name": "Blightburn Resin",
+                    "description": "<p><strong>Saving Throw</strong> @Check[fortitude|dc:30]</p>\n<p><strong>Onset</strong> 1 minute</p>\n<p><strong>Maximum Duration</strong> 6 rounds</p>\n<p><strong>Stage 1</strong> @Damage[6d6[poison]] damage (1 round)</p>\n<p><strong>Stage 2</strong> @Damage[7d6[poison]] damage (1 round)</p>\n<p><strong>Stage 3</strong> @Damage[9d6[poison]] damage (1 round)</p>"
+                },
+                "action->Prayer Attack": {
+                    "name": "Prayer Attack",
+                    "description": "<p><strong>Requirements</strong> The Red Mantis assassin wields a sawtooth saber in each hand</p><hr /><p><strong>Effect</strong> The Red Mantis assassin attempts to @UUID[Compendium.pf2e.actionspf2e.Item.QNAVeNKtHA0EUw4X]{Feint} an enemy within 30 feet. If the Feint is successful, the assassin's next successful strike with a sawtooth saber in that same turn deals 2d6 persistent bleed damage to the target. In addition, provided they remain visible to that target and that target remains within 30 feet of the assassin, additional Prayer Attacks against that target automatically cause them to become @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} against the assassin's attacks until the end of their turn.</p>"
+                },
+                "action->Sneak Attack": {
+                    "name": "Sneak Attack",
+                    "description": "<p>The Red Mantis assassin deals an extra 2d6 precision damage to @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} creatures.</p>"
+                },
+                "action->Surprise Attack": {
+                    "name": "Surprise Attack",
+                    "description": "<p>On the first round of combat, creatures that haven't acted yet are @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} to the Red Mantis assassin.</p>"
+                },
+                "lore->Achaekek Lore": {
+                    "name": "Achaekek Lore"
                 }
             }
         },
@@ -356,6 +868,31 @@
                 "weapon->Shuriken (With Blightburn Resin)": {
                     "name": "Shuriken (With Blightburn Resin)",
                     "description": "<p>This \"throwing star\" is a small piece of flat metal with sharp edges, designed to be flung with a flick of the wrist.</p>\n<p><strong>Saving Throw</strong> @Check[fortitude|dc:30]</p>\n<p><strong>Onset</strong> 1 minute</p>\n<p><strong>Maximum Duration</strong> 6 rounds</p>\n<p><strong>Stage 1</strong> @Damage[6d6[poison]] damage (1 round)</p>\n<p><strong>Stage 2</strong> @Damage[7d6[poison]] damage (1 round)</p>\n<p><strong>Stage 3</strong> @Damage[9d6[poison]] damage (1 round)</p>"
+                },
+                "strike-melee->Shuriken": {
+                    "name": "Shuriken"
+                },
+                "strike-melee->Sawtooth Saber": {
+                    "name": "Sawtooth Saber"
+                },
+                "action->Blightburn Resin": {
+                    "name": "Blightburn Resin",
+                    "description": "<p><strong>Saving Throw</strong> @Check[fortitude|dc:30]</p>\n<p><strong>Onset</strong> 1 minute</p>\n<p><strong>Maximum Duration</strong> 6 rounds</p>\n<p><strong>Stage 1</strong> @Damage[6d6[poison]] damage (1 round)</p>\n<p><strong>Stage 2</strong> @Damage[7d6[poison]] damage (1 round)</p>\n<p><strong>Stage 3</strong> @Damage[9d6[poison]] damage (1 round)</p>"
+                },
+                "action->Prayer Attack": {
+                    "name": "Prayer Attack",
+                    "description": "<p><strong>Requirements</strong> The Red Mantis conspirator wields a sawtooth saber in each hand</p><hr /><p><strong>Effect</strong> The Red Mantis conspirator attempts to @UUID[Compendium.pf2e.actionspf2e.Item.QNAVeNKtHA0EUw4X]{Feint} an enemy within 30 feet. If the Feint is successful, the conspirator's next successful Strike with a sawtooth saber in that same turn deals 2d6 persistent bleed damage to the target. In addition, provided they remain visible to that target and that target remains within 30 feet of the conspirator, additional Prayer Attacks against that target automatically cause them to become @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} against the conspirator's attacks until the end of their turn.</p>"
+                },
+                "action->Sneak Attack": {
+                    "name": "Sneak Attack",
+                    "description": "<p>The Red Mantis conspirator deals an extra 2d6 precision damage to @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} creatures.</p>"
+                },
+                "action->Vernai Training": {
+                    "name": "Vernai Training",
+                    "description": "<p>In order to resurrect a creature slain by a Red Mantis conspirator, a creature must counteract the conspirator's influence over the dead's remains as they cast the spell or perform the ritual (DC 34).</p>"
+                },
+                "lore->Achaekek Lore": {
+                    "name": "Achaekek Lore"
                 }
             }
         },
@@ -374,6 +911,52 @@
                 },
                 "spell->Humanoid Form (At Will)": {
                     "name": "Humanoid Form (At Will)"
+                },
+                "strike-melee->Scimitar": {
+                    "name": "Scimitar"
+                },
+                "strike-melee->Burning Wings": {
+                    "name": "Burning Wings"
+                },
+                "strike-melee->Flame Ray": {
+                    "name": "Flame Ray"
+                },
+                "action->Telepathy 100 feet": {
+                    "name": "Telepathy 100 feet"
+                },
+                "action->Smoke Vision": {
+                    "name": "Smoke Vision",
+                    "description": "<p>Rhysaphine can see through smoke with ease, and he ignores the @UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{Concealed} condition from smoke.</p>"
+                },
+                "action->Constant Spells": {
+                    "name": "Constant Spells"
+                },
+                "action->Shining Blaze": {
+                    "name": "Shining Blaze",
+                    "description": "<p>5 feet, @Damage[8d6[fire]] damage (@Check[reflex|dc:37|basic])</p>"
+                },
+                "action->Flame Jump": {
+                    "name": "Flame Jump",
+                    "description": "<p><strong>Frequency</strong> once per hour</p><hr /><p><strong>Effect</strong> Rhysaphine Strides into an open flame of medium size or larger and instantly transports himself to any other flame of sufficient size within 100 miles. Once he enters the first flame, he instantly learns the locations of all other flames within range.</p>"
+                },
+                "action->Flamewing Buffet": {
+                    "name": "Flamewing Buffet",
+                    "description": "<p>Rhysaphine makes one scimitar Strike and two burning wings Strikes, in any order.</p>"
+                },
+                "action->Greater Flameheart Weapon": {
+                    "name": "Greater Flameheart Weapon",
+                    "description": "<p>Rhysaphine can call forth a powerful weapon from his heart of flame. In his hands, this is a <em>+3 greater striking greater flaming scimitar</em> that deals 4d6 fire damage instead of 1d6.</p>"
+                },
+                "action->Trick Rider": {
+                    "name": "Trick Rider",
+                    "description": "<p><strong>Frequency</strong> once per round</p>\n<p><strong>Requirements</strong> Rhysaphine is currently mounted-or adjacent to an allied creature that can function as a mount</p><hr /><p><strong>Effect</strong> If Rhysaphine is mounted, he dismounts; if Rhysaphine is not mounted, he mounts the adjacent creature.</p>"
+                },
+                "action->Wildfire Storm": {
+                    "name": "Wildfire Storm",
+                    "description": "<p>Rhysaphine spreads his wings and spins, forming a whirlwind of flame that deals @Damage[19d6[fire]] damage in a @Template[emanation|distance:20] (@Check[reflex|dc:40|basic] save). He can't use Wildfire Storm again for [[/gmr 1d4 #Recharge Wildfire Storm]]{1d4 rounds}.</p>"
+                },
+                "lore->Elysium Lore": {
+                    "name": "Elysium Lore"
                 }
             }
         },
@@ -384,6 +967,32 @@
             "items": {
                 "spellcastingEntry->Primal Innate Spells": {
                     "name": "Primal Innate Spells"
+                },
+                "strike-melee->Jaws": {
+                    "name": "Jaws"
+                },
+                "strike-melee->Spear": {
+                    "name": "Spear"
+                },
+                "action->Aerial Wolfstorm": {
+                    "name": "Aerial Wolfstorm",
+                    "description": "<p>60 feet. A clammy, frigid mist billows forth ahead of the adlet. Creatures within the mist become @UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{Concealed}, and creatures outside the mist become concealed to creatures within it. An adlet can see through the aura without penalty. When mounted on a frost roc, this aura emanates from the roc, not the adlet, and the roc gains the ability to see through the aura without penalty as well.</p>"
+                },
+                "action->Avenging Bite": {
+                    "name": "Avenging Bite",
+                    "description": "<p><strong>Trigger</strong> A creature within reach of an adlet's jaws Strike attacks one of the adlet's allies.</p>\n<hr />\n<p><strong>Effect</strong> The adlet makes a jaws Strike against the triggering creature.</p>"
+                },
+                "action->Aerial Wolfrime": {
+                    "name": "Aerial Wolfrime",
+                    "description": "<p>The roc rider's mist turns biting cold and coalesces into a thick rime of frost that deals @Damage[7d6[cold]] damage to creatures inside the roc rider's aerial wolfstorm aura (@Check[fortitude|dc:31|basic]), and the aura is deactivated until the start of the roc rider's next turn.</p>"
+                },
+                "action->Frozen Weapons": {
+                    "name": "Frozen Weapons",
+                    "description": "<p>Weapons wielded by an adlet gain the effect of the <em>@UUID[Compendium.pf2e.equipment-srd.Item.M5M1WJ5KzbYfRGsY]{Frost}</em> property rune.</p>"
+                },
+                "action->Pack Attack": {
+                    "name": "Pack Attack",
+                    "description": "<p>An adlet's Strikes deal an additional 2d6 damage to creatures that are within the reach of at least two of the adlet's allies.</p>"
                 }
             }
         },
@@ -391,7 +1000,56 @@
             "name": "Saint Fang",
             "publicNotes": "<p>This dragon is haughty and proud, often coming across as self-righteous. As the very embodiment of just wars, he feels he can't possibly be wrong. His polished steel scales make the distinctive sound of blade scraping against blade as he moves, and his needle-like spines clink against each other with every mighty flap of his broad wings. Saint Fang is war given a dragon's form, with the temperament of a master strategist.</p>\n<p>Of late, more and more of Gorum's followers have declared war for the sake of battle. They revel in causing bloodshed for any excuse, calling on Gorum's servants for aid, but Saint Fang doesn't answer those calls. He is more likely to appear for a group of villagers who band together to unseat a local bandit king or for a native population defending their homes against colonizers. He believes that war is inevitable as long as the greedy and bloodthirsty are given weapons, and he seeks to aid those whose justification for war is because they've run out of peaceful options.</p>\n<p>Saint Fang rarely takes a rider, but he obeys the commands of his Lord in Iron, Gorum. The god occasionally commands Saint Fang to take one of his faithful into battle, and he obeys him to the letter of his command, often unseating riders he finds unworthy once they reach the battlefield.</p><h2>Saint Fang's Past</h2><p>Many theological scholars on Golarion have sought the truth behind Saint Fang's origins. The most likely (and widely believed) explanation is that he once flew the skies above Golarion, looking to protect innocent mortals from the ravages of war, but became so jaded over time, that he eventually changed into a perfect weapon for Gorum.</p><h2>Servitor Of The Divine</h2><p>All deities maintain favored agents to work their will among mortals. Heralds are among the most well-known of these agents\u2014unique entities who serve as the deity's mouthpiece and messenger and are often sent in response to a mortal spellcaster requesting aid in the form of a planar servitor ritual. But a deity's herald isn't the only agent permitted to walk among worshippers or smite enemies of the faith. Those called servitors are unique, powerful, and stand among the deity's most devoted adherents.</p>\n<p>Servitors are quite powerful, yet they're not truly immortal. Any servitor of the divine may be slain in battle or through misadventure. In some cases, a slain servitor's body vanishes and is replaced by a powerful treasure. In others, the body itself simply crumples to the ground as a corpse. Servitors can be restored to life at a deity's whim, yet in many cases their deity won't immediately grant this resurrection and may simply seek to create or elevate an entirely different servitor. Should the unthinkable happen and a deity themselves perish, their existing servitors do not die but are immediately aware of the fact that their creator has ceased to be. Some myths tell of servitors who have then gone on to ascend in power and replace their creator as a demigod or even a deity themselves, while in other stories, a desperate servitor may seek out a new god or goddess to devote themselves to.</p>\n<p>While servitors are all unique creatures, in most cases they were once mortal worshippers\u2014be they humanoid or otherwise\u2014who have particularly pleased their deity. The resulting powers and abilities granted to the servitor vary wildly, but it's almost unheard of for a servitor of any deity to be less powerful than 15th level, or at least a few levels above what they possessed in their previous life. While there are not limits to the number of servitors a deity might keep, most gods traditionally keep no more than three.</p>\n<p>In Gorum's case, his three most well-known servitors are comprised of a demon, dragon, and an elemental, creatures who either embody the chaos of battle or the raw spirit of the forge. In each case, these unique servitors' worldview and philosophy closely match that of their Lord in Iron, leaving them outcasts or even pariahs among others of their kind. Yet to Bloody Hands, Saint Fang, and Temperbrand, there is no greater comfort in life than service to the god of war.</p>",
             "allSavesBonus": "+1 status to all saves vs. magic",
-            "sensesDetails": "forge vision"
+            "sensesDetails": "forge vision",
+            "items": {
+                "strike-melee->Jaws": {
+                    "name": "Jaws"
+                },
+                "strike-melee->Claw": {
+                    "name": "Claw"
+                },
+                "strike-melee->Tail": {
+                    "name": "Tail"
+                },
+                "action->Forge Vision": {
+                    "name": "Forge Vision",
+                    "description": "<p>Saint Fang ignores the @UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{Concealed} condition from smoke and fire.</p>"
+                },
+                "action->+1 Status to All Saves vs. Magic": {
+                    "name": "+1 Status to All Saves vs. Magic"
+                },
+                "action->Buck": {
+                    "name": "Buck",
+                    "description": "<p>@Check[reflex|dc:37]</p>\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Buck]</p>"
+                },
+                "action->Frightful Presence": {
+                    "name": "Frightful Presence",
+                    "description": "<p>90 feet @Check[will|dc:37]</p><hr /><p>@Localize[PF2E.NPC.Abilities.Glossary.FrightfulPresence]</p>"
+                },
+                "action->Spiked Scales": {
+                    "name": "Spiked Scales",
+                    "description": "<p>A creature that critically fails to Strike Saint Fang in melee takes @Damage[6d6[piercing]] damage (@Check[reflex|dc:40|basic] save).</p>"
+                },
+                "action->Wing Deflection": {
+                    "name": "Wing Deflection",
+                    "description": "<p><strong>Trigger</strong> Saint Fang is targeted with an attack</p><hr /><p><strong>Effect</strong> Saint Fang raises a wing, gaining a +2 circumstance bonus to AC against the triggering attack. If he is flying, he descends 10 feet after the attack is complete.</p>"
+                },
+                "action->Draconic Frenzy": {
+                    "name": "Draconic Frenzy",
+                    "description": "<p>Saint Fang makes two claw Strikes and one tail Strike in any order.</p>"
+                },
+                "action->Draconic Momentum": {
+                    "name": "Draconic Momentum",
+                    "description": "<p>When Saint Fang scores a critical hit with a Strike, he recharges his Dragon Breath.</p>"
+                },
+                "action->Dragon Breath": {
+                    "name": "Dragon Breath",
+                    "description": "<p>Saint Fang breathes in one of two ways. He can't use Dragon Breath again for [[/gmr 1d4 #Recharge Dragon Breath]]{1d4 rounds}.</p>\n<p><strong>Blade Breath</strong> (arcane) He breathes a @Template[line|distance:100] of sharp blades that deals @Damage[19d6[slashing]] damage (@Check[reflex|dc:40|basic] save). The blades created by this breath vanish at the end of the round.</p>\n<p><strong>Forge Breath</strong> (arcane) He breathes a blast of embers and smoke, as if from an immense forge. Each creature within a @Template[cone|distance:40] takes @Damage[6d6[fire]] damage and @Damage[12d6[poison]] damage (@Check[reflex|dc:40|basic] save). Smoke lingers in the area until the end of Saint Fang's next turn; all creatures within the smoke become @UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{Concealed}, and all creatures outside the smoke become concealed to creatures within.</p>"
+                },
+                "lore->Warfare Lore": {
+                    "name": "Warfare Lore"
+                }
+            }
         },
         "Saviya": {
             "name": "Saviya",
@@ -411,6 +1069,32 @@
                 "equipment->Mask of the Mantis (Major)": {
                     "name": "Mask of the Mantis (Major)",
                     "description": "<p>The traditional headwear for the Red Mantis assassin is the <em>mask of the mantis</em>. Most of these masks are constructed from hard leather helmets that serve to obscure the assassin's identity and give them the appearance of possessing a mantis's head. Some variants, however, consist only of the mask itself, and are meant to be worn over the face. Regardless of the shape and style, all masks of the mantis function the same.</p>\n<p>Members of the Vernai can use any <em>mask of the mantis</em> to enhance their frightening presence\u2014something they often do simply to reveal their standing in the society without speaking a word, as detailed fully in the entry for Vernai's Ire activation below.</p>\n<p>While wearing a <em>mask of the mantis</em>, you gain a +3 item bonus to Perception checks.</p><hr /><p><strong>Activate\u2014Enhance Vision</strong> <span class=\"action-glyph\">2</span> (concentrate, manipulate)</p>\n<p><strong>Frequency</strong> once per day</p>\n<p><strong>Effect</strong> You cast either a 5th-rank @UUID[Compendium.pf2e.spells-srd.Item.pZTqGY1MLRjgKasV]{Darkvision} or @UUID[Compendium.pf2e.spells-srd.Item.jwK43yKsHTkJQvQ9]{See the Unseen} on yourself.</p><hr /><p><strong>Activate\u2014Vernai's Ire</strong> <span class=\"action-glyph\">1</span> (concentrate)</p>\n<p><strong>Requirements</strong> You are a member of the Vernai</p>\n<p><strong>Effect</strong> You cause the <em>mask of the mantis's</em> eyes to shimmer with crimson light, granting yourself a far more harrowing visage. This light creates illumination equivalent to that of a candle. You can use this ability again to extinguish the frightening glow, but as long as Vernai's Ire remains active, you gain a +3 item bonus to Intimidation checks.</p><hr /><p><strong>Activate\u2014Locate Target</strong> 10 minutes (concentrate)</p>\n<p><strong>Frequency</strong> once per day</p>\n<p><strong>Effect</strong> You cast @UUID[Compendium.pf2e.spells-srd.Item.CeSh8QcVnqP5OlLj]{Pinpoint}. If the target of this spell is a creature for which you've accepted a contract to assassinate, you are considered to have seen the creature in person for the purposes of <em>pinpoint's</em> requirements.</p>"
+                },
+                "strike-melee->Sawtooth Saber": {
+                    "name": "Sawtooth Saber"
+                },
+                "action->Perfect Scent": {
+                    "name": "Perfect Scent",
+                    "description": "<p>Saviya's sense of smell is a precise sense. It's particularly adept at seeing through disguises that attempt to obscure a target's actual ancestry, granting her a +4 circumstance bonus to Perception checks against such Impersonation attempts.</p>"
+                },
+                "action->Fading": {
+                    "name": "Fading",
+                    "description": "<p><strong>Frequency</strong> once per use of Crimson Shroud</p>\n<p><strong>Trigger</strong> Saviya is targeted by a Strike from a creature she can detect</p>\n<p><strong>Requirements</strong> Saviya's Crimson Shroud is active</p><hr /><p><strong>Effect</strong> Saviya fades from reality. The creature making the triggering Strike must attempt a @Check[flat|dc:11]; on a failure, the attack passes harmlessly through the immaterial image of Saviya's body, after which she returns to her physical form.</p>"
+                },
+                "action->Crimson Shroud": {
+                    "name": "Crimson Shroud",
+                    "description": "<p><strong>Frequency</strong> seven times a day</p><hr /><p><strong>Effect</strong> Saviya swathes herself in red mist for 1 minute, during which time she gains fast healing 9. She can Interact with the mist to gain a +1 circumstance bonus to AC until the beginning of her next turn. If she dies while Crimson Shroud is active, her body vanishes, leaving behind only her gear.</p>"
+                },
+                "action->Prayer Attack": {
+                    "name": "Prayer Attack",
+                    "description": "<p><strong>Requirements</strong> Saviya wields a sawtooth saber in each hand</p><hr /><p><strong>Effect</strong> Saviya attempts to @UUID[Compendium.pf2e.actionspf2e.Item.QNAVeNKtHA0EUw4X]{Feint} an enemy within 30 feet. If the Feint is successful, Saviya's next successful Strike with a sawtooth saber in that same turn deals 2d6 persistent bleed damage to the target. In addition, provided Saviya remains visible to that target and that target remains within 30 feet of Saviya, additional Prayer Attacks against that target automatically cause them to become @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} against Saviya's attacks until the end of her turn.</p>"
+                },
+                "action->Vernai Training": {
+                    "name": "Vernai Training",
+                    "description": "<p>In order to resurrect a creature slain by Saviya, a creature must counteract Saviya's influence on that creature's death as they Cast the Spell or perform the ritual (DC 41).</p>"
+                },
+                "lore->Achaekek Lore": {
+                    "name": "Achaekek Lore"
                 }
             }
         },
@@ -445,12 +1129,95 @@
                 "backpack->Spacious Pouch (Type III)": {
                     "name": "Spacious Pouch (Type III)",
                     "description": "<p>Though it appears to be a cloth bag decorated with panels of richly colored silk or stylish embroidery, a <em>spacious pouch</em> opens into a magical space larger than its outside dimensions. The Bulk held inside the bag doesn't change the Bulk of the <em>spacious pouch</em> itself. The amount of Bulk the bag's extradimensional space can hold depends on its type.</p>\n<p>You can Interact with the <em>spacious pouch</em> to stow items in it or remove them just like a mundane sack. Though the bag can hold a great amount of material, an object still needs to be able to fit through the opening of the sack to be stored inside.</p>\n<p>If the bag is overloaded or broken, it ruptures and is ruined, causing the items inside to be lost forever. If it's turned inside out, the items inside spill out unharmed, but the bag must be put right before it can be used again. A living creature placed inside the bag has enough air for 10 minutes before it begins to suffocate, and it can attempt to Escape against a DC of 13. An item inside the bag provides no benefits unless it's retrieved first. An item in the bag can't be detected by magic that detects only things on the same plane.</p>\n<hr />\n<p><strong>Capacity</strong> 100 Bulk</p>"
+                },
+                "strike-melee->Alchemist's Fire": {
+                    "name": "Alchemist's Fire"
+                },
+                "strike-melee->Dread Ampoule": {
+                    "name": "Dread Ampoule",
+                    "description": "<p>Plus @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 1}</p>"
+                },
+                "strike-melee->Glue Bomb": {
+                    "name": "Glue Bomb",
+                    "description": "<p>@UUID[Compendium.pf2e.equipment-effects.Item.sgQknR94qDt5ILBx]{Effect: Glue Bomb}</p>"
+                },
+                "strike-melee->Fist": {
+                    "name": "Fist"
+                },
+                "strike-melee->Claw": {
+                    "name": "Claw"
+                },
+                "action->Infused Items": {
+                    "name": "Infused Items",
+                    "description": "<p>Shirota carries the following infused items, which last for 24 hours or until the next time he makes his daily preparations:</p>\n<p>12 @UUID[Compendium.pf2e.equipment-srd.Item.n5yTlTs63o53n3k6]{Alchemist's Fire (Greater)}</p>\n<p>3 @UUID[Compendium.pf2e.equipment-srd.Item.PWh9oBvwMmItEmHH]{Blood Sight Elixir (Greater)}</p>\n<p>12 @UUID[Compendium.pf2e.equipment-srd.Item.kpJmjm843vaMZjIu]{Dread Ampoule (Greater)}</p>\n<p>10 @UUID[Compendium.pf2e.equipment-srd.Item.AmxSqEoFhRLMYd1W]{Elixir of Life (Major)}</p>\n<p>5 @UUID[Compendium.pf2e.equipment-srd.Item.5Qkz4RVJr2Kx3RL6]{Glue Bomb (Greater)}</p>"
+                },
+                "action->Quick Bomber": {
+                    "name": "Quick Bomber",
+                    "description": "<p>Shirota Interacts to draw a bomb, then Strikes with it.</p>"
+                },
+                "action->Reactive Bombing": {
+                    "name": "Reactive Bombing",
+                    "description": "<p><strong>Trigger</strong> A creature is damaged by one of Zaiho's Strikes</p><hr /><p><strong>Effect</strong> Shirota attacks the triggering creature with a bomb Strike.</p>"
+                },
+                "action->Sneak Attack": {
+                    "name": "Sneak Attack",
+                    "description": "<p>Shirota deals 3d6 extra precision damage with his melee Strikes to @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} creatures.</p>"
+                },
+                "action->Twinned Combat": {
+                    "name": "Twinned Combat",
+                    "description": "<p>Any enemy is @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} against Shirota's Strikes as long as that enemy is within Zaiho's reach. Shirota doesn't inflict splash damage to Zaiho with his bombs.</p>"
+                },
+                "lore->Mercantile Lore": {
+                    "name": "Mercantile Lore"
                 }
             }
         },
         "Silver Saber": {
             "name": "Silver Saber",
-            "publicNotes": "<p>This construct was built hundreds of years ago by Red Mantis arcanists, then imbued with intelligence as a divine protector by priests of Achaekek not long after the assassin cult fled Rahadoum. Silver Saber's single purpose is to guard the secrets of the Blood Mistress from those who are unworthy.</p>\n<p>When at rest, Silver Saber appears as an ornate mirror, but when confronted in battle they animate into the form of a praying mantis made of polished, almost liquid silver with a blank humanoid face.</p><h2>Life as a Mirror</h2><p>Silver Saber has watched the followers of Achaekek for centuries, sitting silently in their gold frame and pretending to be a mirror. They know more about the secret lives of the Red Mantis than has ever been recorded in the Sarzari, but their objective isn't to record history, it's to function as a guardian\u2014no more, no less.</p>"
+            "publicNotes": "<p>This construct was built hundreds of years ago by Red Mantis arcanists, then imbued with intelligence as a divine protector by priests of Achaekek not long after the assassin cult fled Rahadoum. Silver Saber's single purpose is to guard the secrets of the Blood Mistress from those who are unworthy.</p>\n<p>When at rest, Silver Saber appears as an ornate mirror, but when confronted in battle they animate into the form of a praying mantis made of polished, almost liquid silver with a blank humanoid face.</p><h2>Life as a Mirror</h2><p>Silver Saber has watched the followers of Achaekek for centuries, sitting silently in their gold frame and pretending to be a mirror. They know more about the secret lives of the Red Mantis than has ever been recorded in the Sarzari, but their objective isn't to record history, it's to function as a guardian\u2014no more, no less.</p>",
+            "items": {
+                "strike-melee->Leg": {
+                    "name": "Leg"
+                },
+                "strike-melee->Spike": {
+                    "name": "Spike"
+                },
+                "action->Evasion": {
+                    "name": "Evasion",
+                    "description": "<p>When Silver Saber rolls a success on a Reflex save, they get a critical success instead.</p>"
+                },
+                "action->Faith Bound": {
+                    "name": "Faith Bound",
+                    "description": "<p>Silver Saber can't attack a creature that openly wears or displays Achaekek's religious symbol unless that creature uses a hostile action against Silver Saber first. They can also attack a creature they believe isn't faithful to Achaekek or who wears the religious symbol as a ruse (typically after succeeding at a Perception check to @UUID[Compendium.pf2e.actionspf2e.Item.1xRFPTFtWtGJ9ELw]{Sense Motive}).</p>"
+                },
+                "action->Reflect Truths": {
+                    "name": "Reflect Truths",
+                    "description": "<p>20 feet. A creature that enters the area must succeed at a @Check[will|dc:37] save or they see their own visage in Silver Saber's reflective face looking back at them. For 1 minute, that creature can't speak any deliberate and intentional lies and takes a \u20132 status penalty to Deception checks. On a critical failure, the status penalty is increased to \u20134.</p>"
+                },
+                "action->Focus Gaze": {
+                    "name": "Focus Gaze",
+                    "description": "<p>Silver Saber focuses their gaze on a creature they can see within 30 feet. The target must immediately attempt a Will save against Reflect Truths. If the creature was already so affected, it becomes @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned 1}. After attempting its save, the creature is then temporarily immune until the start of Silver Saber's next turn.</p>"
+                },
+                "action->Liquefy": {
+                    "name": "Liquefy",
+                    "description": "<p>Silver Saber becomes fully liquid and amorphous. They gain immunity to precision damage but take double cold damage. The only actions they can use while liquefied are move actions and spike ranged Strikes. They can resume their normal form by taking this action again.</p>"
+                },
+                "action->Mirror": {
+                    "name": "Mirror",
+                    "description": "<p>Until the next time they act, Silver Saber appears to be a mirror. They have an automatic result of 53 on Deception checks and DCs to pass as a mirror.</p>"
+                },
+                "action->Silver Strikes": {
+                    "name": "Silver Strikes",
+                    "description": "<p>Silver Saber's leg and spike Strikes count as silver weapons.</p>"
+                },
+                "action->Swift Steps": {
+                    "name": "Swift Steps",
+                    "description": "<p>Silver Saber is permanently @UUID[Compendium.pf2e.conditionitems.Item.nlCjDvLMf2EkV2dl]{Quickened}, but they can use the extra action only to Step or Stride.</p>"
+                },
+                "lore->Achaekek Lore": {
+                    "name": "Achaekek Lore"
+                }
+            }
         },
         "Sister Maeri": {
             "name": "Sister Maeri",
@@ -480,6 +1247,24 @@
                 },
                 "equipment->Letter From Mantis Keeper": {
                     "name": "Letter From Mantis Keeper"
+                },
+                "strike-melee->Sawtooth Saber": {
+                    "name": "Sawtooth Saber"
+                },
+                "strike-melee->Shuriken": {
+                    "name": "Shuriken"
+                },
+                "action->Blightburn Resin": {
+                    "name": "Blightburn Resin",
+                    "description": "<p><strong>Saving Throw</strong> @Check[fortitude|dc:30]</p>\n<p><strong>Onset</strong> 1 minute</p>\n<p><strong>Maximum Duration</strong> 6 rounds</p>\n<p><strong>Stage 1</strong> @Damage[6d6[poison]] damage (1 round)</p>\n<p><strong>Stage 2</strong> @Damage[7d6[poison]] damage (1 round)</p>\n<p><strong>Stage 3</strong> @Damage[9d6[poison]] damage (1 round)</p>"
+                },
+                "action->Deadly Saber": {
+                    "name": "Deadly Saber",
+                    "description": "<p>When Sister Maeri wields a sawtooth saber, she increases the damage die size of the weapon by one step and deals an extra 2d6 precision damage to @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} creatures. When she critically succeeds at an attack roll with a sawtooth saber, she applies the weapon's critical specialization effect.</p>"
+                },
+                "action->Divine Weapon": {
+                    "name": "Divine Weapon",
+                    "description": "<p><strong>Frequency</strong> once per turn</p>\n<p><strong>Trigger</strong> Sister Maeri finishes Casting a Spell</p><hr /><p><strong>Effect</strong> Until the end of her turn, Sister Maeri's sawtooth saber deals an additional 1d4 spirit damage.</p>"
                 }
             }
         },
@@ -503,12 +1288,84 @@
                 "equipment->Mask of the Mantis (Greater)": {
                     "name": "Mask of the Mantis (Greater)",
                     "description": "<p>The traditional headwear for the Red Mantis assassin is the <em>mask of the mantis</em>. Most of these masks are constructed from hard leather helmets that serve to obscure the assassin's identity and give them the appearance of possessing a mantis's head. Some variants, however, consist only of the mask itself, and are meant to be worn over the face. Regardless of the shape and style, all masks of the mantis function the same.</p>\n<p>Members of the Vernai can use any <em>mask of the mantis</em> to enhance their frightening presence\u2014something they often do simply to reveal their standing in the society without speaking a word, as detailed fully in the entry for Vernai's Ire activation below.</p>\n<p>While wearing a <em>mask of the mantis</em>, you gain a +2 item bonus to Perception checks.</p><hr /><p><strong>Activate\u2014Enhance Vision</strong> <span class=\"action-glyph\">2</span> (concentrate, manipulate)</p>\n<p><strong>Frequency</strong> once per day</p>\n<p><strong>Effect</strong> You cast either a 5th-rank @UUID[Compendium.pf2e.spells-srd.Item.pZTqGY1MLRjgKasV]{Darkvision} or @UUID[Compendium.pf2e.spells-srd.Item.jwK43yKsHTkJQvQ9]{See the Unseen} on yourself.</p><hr /><p><strong>Activate\u2014Vernai's Ire</strong> <span class=\"action-glyph\">1</span> (concentrate)</p>\n<p><strong>Requirements</strong> You are a member of the Vernai</p>\n<p><strong>Effect</strong> You cause the <em>mask of the mantis's</em> eyes to shimmer with crimson light, granting yourself a far more harrowing visage. This light creates illumination equivalent to that of a candle. You can use this ability again to extinguish the frightening glow, but as long as Vernai's Ire remains active, you gain a +2 item bonus to Intimidation checks.</p>"
+                },
+                "strike-melee->Extending Sawtooth Saber": {
+                    "name": "Extending Sawtooth Saber"
+                },
+                "strike-melee->Wounding Sawtooth Saber": {
+                    "name": "Wounding Sawtooth Saber"
+                },
+                "strike-melee->Shuriken": {
+                    "name": "Shuriken"
+                },
+                "action->Prescient Dodge": {
+                    "name": "Prescient Dodge",
+                    "description": "<p><strong>Trigger</strong> A creature attempts to Strike Talaro and he's not @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard}</p><hr /><p><strong>Effect</strong> Talaro anticipates the Strike and gains a +2 circumstance bonus to AC against the triggering attack. He can use this once the results of the attack are known. If the attack misses, Talaro can do a quick backflip as a free action to Step.</p>"
+                },
+                "action->Blightburn Resin": {
+                    "name": "Blightburn Resin",
+                    "description": "<p><strong>Saving Throw</strong> @Check[fortitude|dc:30]</p>\n<p><strong>Onset</strong> 1 minute</p>\n<p><strong>Maximum Duration</strong> 6 rounds</p>\n<p><strong>Stage 1</strong> @Damage[6d6[poison]] damage (1 round)</p>\n<p><strong>Stage 2</strong> @Damage[7d6[poison]] damage (1 round)</p>\n<p><strong>Stage 3</strong> @Damage[9d6[poison]] damage (1 round)</p>"
+                },
+                "action->Change Shape": {
+                    "name": "Change Shape",
+                    "description": "<p>You transform into a specific alternate form determined by your heritage. If your heritage doesn't list a form, your alternate form is a tailless form, which is a common Medium humanoid ancestry prevalent where you grew up (typically human). This form is the same age and body type as your true form and has roughly analogous physical traits, such as hair color. Using Change Shape counts as creating a disguise for the Impersonate use of Deception. You lose any unarmed Strikes you gained from a kitsune heritage or ancestry feat in this form. You can remain in your alternate form indefinitely, and you can shift back to your true kitsune form by using this action again.</p>\n<p>@Localize[PF2E.NPC.Abilities.Glossary.ChangeShape]</p>"
+                },
+                "action->Crimson Shroud": {
+                    "name": "Crimson Shroud",
+                    "description": "<p><strong>Frequency</strong> five times per day</p><hr /><p><strong>Effect</strong> Talaro shrouds himself in a veil of red mist for 1 minute. While the shroud is active, he gains fast healing 7. He can Interact with his shroud, swirling it around himself to gain a +1 circumstance bonus to AC until the beginning of his next turn. If he dies while the shroud is active, his entire body vanishes into red mist, leaving behind only his gear.</p>"
+                },
+                "action->Prayer Attack": {
+                    "name": "Prayer Attack",
+                    "description": "<p><strong>Requirements</strong> Talaro wields a sawtooth saber in each hand</p><hr /><p><strong>Effect</strong> Talaro attempts to @UUID[Compendium.pf2e.actionspf2e.Item.QNAVeNKtHA0EUw4X]{Feint} an enemy within 30 feet. If the Feint is successful, his next successful Strike with a sawtooth saber in that same turn deals 2d6 persistent bleed damage to the target. In addition, provided he remains visible to that target and that target remains within 30 feet of him, additional Prayer Attacks against that target automatically cause them to become @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} against Talaro's attacks until the end of their turn.</p>"
+                },
+                "action->Sneak Attack": {
+                    "name": "Sneak Attack",
+                    "description": "<p>Talaro deals an extra 3d6 precision damage to @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} creatures.</p>"
+                },
+                "action->Surprise Attack": {
+                    "name": "Surprise Attack",
+                    "description": "<p>On the first round of combat, creatures that haven't acted yet are @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} to Talaro.</p>"
+                },
+                "lore->Achaekek Lore": {
+                    "name": "Achaekek Lore"
                 }
             }
         },
         "Temperbrand": {
             "name": "Temperbrand",
-            "publicNotes": "<p>Temperbrand is a 14-foot-tall elemental with a shape reminiscent of a dwarf, but she appears to be made entirely from orange-and-white heated metal. Blades form and collapse on her skin, the metal folding over itself constantly as she moves and fights, but the swordlike lengths that replace her hands remain in place at all times. She fights with vicious gusto, slicing through foes as her limbs either transform into fiery blades or eject metal shrapnel from her body, propelled by pockets of steam and super-heated air. Temperbrand was created by Gorum as the embodiment of modern weapons and the potential of the forge to create any instrument of war.</p>\n<p>She is a merger of Forgeheart, a powerful fire elemental, and Slageater, a powerful metal elemental. Gorum had the two elementals fight side by side for 300 years before merging them into one entity.</p>\n<p>Temperbrand is often sent to bolster soldiers who are outmatched in an attempt to even the odds on the battlefield, making for a more spectacular war in Gorum's eyes. She might appear before a quartermaster and supply as many blades, shields, and suits of armor as they require, creating the armaments from her own body.</p><h2>Temperbrand's Corpse</h2><p>It hasn't happened yet to the powerful elemental, but if Temperbrand is slain, her body collapses swiftly in upon itself, transforming into a powerful magic maul. @UUID[Compendium.pf2e.equipment-srd.Item.596xrLHt1Sx0p7Pm]{Temperbrand}</p><h2>Servitor Of The Divine</h2><p>All deities maintain favored agents to work their will among mortals. Heralds are among the most well-known of these agents\u2014unique entities who serve as the deity's mouthpiece and messenger and are often sent in response to a mortal spellcaster requesting aid in the form of a planar servitor ritual. But a deity's herald isn't the only agent permitted to walk among worshippers or smite enemies of the faith. Those called servitors are unique, powerful, and stand among the deity's most devoted adherents.</p>\n<p>Servitors are quite powerful, yet they're not truly immortal. Any servitor of the divine may be slain in battle or through misadventure. In some cases, a slain servitor's body vanishes and is replaced by a powerful treasure. In others, the body itself simply crumples to the ground as a corpse. Servitors can be restored to life at a deity's whim, yet in many cases their deity won't immediately grant this resurrection and may simply seek to create or elevate an entirely different servitor. Should the unthinkable happen and a deity themselves perish, their existing servitors do not die but are immediately aware of the fact that their creator has ceased to be. Some myths tell of servitors who have then gone on to ascend in power and replace their creator as a demigod or even a deity themselves, while in other stories, a desperate servitor may seek out a new god or goddess to devote themselves to.</p>\n<p>While servitors are all unique creatures, in most cases they were once mortal worshippers\u2014be they humanoid or otherwise\u2014who have particularly pleased their deity. The resulting powers and abilities granted to the servitor vary wildly, but it's almost unheard of for a servitor of any deity to be less powerful than 15th level, or at least a few levels above what they possessed in their previous life. While there are not limits to the number of servitors a deity might keep, most gods traditionally keep no more than three.</p>\n<p>In Gorum's case, his three most well-known servitors are comprised of a demon, dragon, and an elemental, creatures who either embody the chaos of battle or the raw spirit of the forge. In each case, these unique servitors' worldview and philosophy closely match that of their Lord in Iron, leaving them outcasts or even pariahs among others of their kind. Yet to Bloody Hands, Saint Fang, and Temperbrand, there is no greater comfort in life than service to the god of war.</p>"
+            "publicNotes": "<p>Temperbrand is a 14-foot-tall elemental with a shape reminiscent of a dwarf, but she appears to be made entirely from orange-and-white heated metal. Blades form and collapse on her skin, the metal folding over itself constantly as she moves and fights, but the swordlike lengths that replace her hands remain in place at all times. She fights with vicious gusto, slicing through foes as her limbs either transform into fiery blades or eject metal shrapnel from her body, propelled by pockets of steam and super-heated air. Temperbrand was created by Gorum as the embodiment of modern weapons and the potential of the forge to create any instrument of war.</p>\n<p>She is a merger of Forgeheart, a powerful fire elemental, and Slageater, a powerful metal elemental. Gorum had the two elementals fight side by side for 300 years before merging them into one entity.</p>\n<p>Temperbrand is often sent to bolster soldiers who are outmatched in an attempt to even the odds on the battlefield, making for a more spectacular war in Gorum's eyes. She might appear before a quartermaster and supply as many blades, shields, and suits of armor as they require, creating the armaments from her own body.</p><h2>Temperbrand's Corpse</h2><p>It hasn't happened yet to the powerful elemental, but if Temperbrand is slain, her body collapses swiftly in upon itself, transforming into a powerful magic maul. @UUID[Compendium.pf2e.equipment-srd.Item.596xrLHt1Sx0p7Pm]{Temperbrand}</p><h2>Servitor Of The Divine</h2><p>All deities maintain favored agents to work their will among mortals. Heralds are among the most well-known of these agents\u2014unique entities who serve as the deity's mouthpiece and messenger and are often sent in response to a mortal spellcaster requesting aid in the form of a planar servitor ritual. But a deity's herald isn't the only agent permitted to walk among worshippers or smite enemies of the faith. Those called servitors are unique, powerful, and stand among the deity's most devoted adherents.</p>\n<p>Servitors are quite powerful, yet they're not truly immortal. Any servitor of the divine may be slain in battle or through misadventure. In some cases, a slain servitor's body vanishes and is replaced by a powerful treasure. In others, the body itself simply crumples to the ground as a corpse. Servitors can be restored to life at a deity's whim, yet in many cases their deity won't immediately grant this resurrection and may simply seek to create or elevate an entirely different servitor. Should the unthinkable happen and a deity themselves perish, their existing servitors do not die but are immediately aware of the fact that their creator has ceased to be. Some myths tell of servitors who have then gone on to ascend in power and replace their creator as a demigod or even a deity themselves, while in other stories, a desperate servitor may seek out a new god or goddess to devote themselves to.</p>\n<p>While servitors are all unique creatures, in most cases they were once mortal worshippers\u2014be they humanoid or otherwise\u2014who have particularly pleased their deity. The resulting powers and abilities granted to the servitor vary wildly, but it's almost unheard of for a servitor of any deity to be less powerful than 15th level, or at least a few levels above what they possessed in their previous life. While there are not limits to the number of servitors a deity might keep, most gods traditionally keep no more than three.</p>\n<p>In Gorum's case, his three most well-known servitors are comprised of a demon, dragon, and an elemental, creatures who either embody the chaos of battle or the raw spirit of the forge. In each case, these unique servitors' worldview and philosophy closely match that of their Lord in Iron, leaving them outcasts or even pariahs among others of their kind. Yet to Bloody Hands, Saint Fang, and Temperbrand, there is no greater comfort in life than service to the god of war.</p>",
+            "items": {
+                "strike-melee->Slagblade": {
+                    "name": "Slagblade"
+                },
+                "strike-melee->Foot": {
+                    "name": "Foot"
+                },
+                "action->Molten Spray": {
+                    "name": "Molten Spray",
+                    "description": "<p><strong>Trigger</strong> Temperbrand takes physical damage</p><hr /><p><strong>Effect</strong> Temperbrand's body erupts at the site of the damage to spray molten iron into an adjacent square of her choice. Any creature occupying that square takes @Damage[9d6[fire]] damage (@Check[reflex|dc:37|basic] save).</p>"
+                },
+                "action->Vulnerable to Water": {
+                    "name": "Vulnerable to Water",
+                    "description": "<p>Whenever Temperbrand is targeted with a water effect, she takes @Damage[6d6[cold]] damage and becomes @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1} for [[/gmr 1d4 #rounds]]{1d4 rounds} as her body hardens into solid metal. As long as she remains slowed, her Armor Class increase to 43.</p>"
+                },
+                "action->Hurl Slagblade": {
+                    "name": "Hurl Slagblade",
+                    "description": "<p>Temperbrand whips an arm at a target within 120 feet, causing her slagblade to detach and fly through the air. The target creature must attempt a @Check[reflex|dc:40|options:damaging-effect] save. Temperbrand regrows a new slagblade instantly but can't use Hurl Slag again for [[/gmr 1d4 #Recharge Hurl Slag]]{1d4 rounds}.</p><hr /><p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature takes @Damage[5d10[fire]] damage.</p>\n<p><strong>Failure</strong> The creature takes @Damage[10d10[fire]] damage, and the slag hardens, causing the creature to become @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1} for 3 rounds. A creature can end the slowed condition early by Escaping (DC 40) the confining slag.</p>\n<p><strong>Critical Failure</strong> The creature takes @Damage[20d10[fire]] damage, and the slag swiftly anchors them in place, causing the creature to become @UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{Restrained} until they [[/act escape dc=40]].</p>"
+                },
+                "action->Ooze Form": {
+                    "name": "Ooze Form",
+                    "description": "<p>Temperbrand's body becomes amorphous. Her AC becomes 30, and she becomes immune to critical hits and precision damage. While in this form she is blind (but retains her tremorsense), and her Speeds are reduced by 15 feet (to a minimum of 5 feet). She can move through spaces as if she were a Tiny creature without penalty. As long as she remains in Ooze Form, she can't make slagblade Strikes or Hurl Slagblade, but she gains Trample. She can end Ooze Form by using this action again.</p>"
+                },
+                "action->Slagblade Storm": {
+                    "name": "Slagblade Storm",
+                    "description": "<p>Temperbrand Strikes all creatures within her reach with a slagblade Strike. Her multiple attack penalty doesn't increase until the end of this activity.</p>"
+                },
+                "action->Trample (Ooze Form Only)": {
+                    "name": "Trample (Ooze Form Only)",
+                    "description": "<p>Large or smaller, Foot, @Check[reflex|dc:40|basic]</p><hr /><p>@Localize[PF2E.NPC.Abilities.Glossary.Trample]</p>"
+                }
+            }
         },
         "The First Blade": {
             "name": "The First Blade",
@@ -521,6 +1378,52 @@
                 },
                 "spell->Fly (Constant)": {
                     "name": "Fly (Constant)"
+                },
+                "strike-melee->Greatsword": {
+                    "name": "Greatsword"
+                },
+                "strike-melee->Fist": {
+                    "name": "Fist"
+                },
+                "strike-melee->Light Hammer": {
+                    "name": "Light Hammer"
+                },
+                "action->+1 Status to All Saves vs. Magic": {
+                    "name": "+1 Status to All Saves vs. Magic"
+                },
+                "action->Disarm Vulnerability": {
+                    "name": "Disarm Vulnerability",
+                    "description": "<p>If the First Blade is disarmed, he takes @Damage[8d6[mental]] damage (@Check[will|dc:36|basic] save, plus @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned 1} on a critical failure). He also can't Conjure Weapon for 1 round.</p>"
+                },
+                "action->Fortification": {
+                    "name": "Fortification",
+                    "description": "<p>Each time the First Blade is critically hit, he attempts a @Check[flat|dc:17]. On a success, it becomes a normal hit.</p>"
+                },
+                "action->Reactive Strike": {
+                    "name": "Reactive Strike"
+                },
+                "action->Battle Sense": {
+                    "name": "Battle Sense",
+                    "description": "<p>The First Blade can detect metal weapons and metal heavy armor as a precise sense to a range of 60 feet.</p>"
+                },
+                "action->Conjure Weapon": {
+                    "name": "Conjure Weapon",
+                    "description": "<p><strong>Requirements</strong> The First Blade has a free hand</p>\n<p><strong>Frequency</strong> once per round</p><hr /><p><strong>Effect</strong> The First Blade extends an arm and makes a fist; as he does so, a common <em>+2 greater striking greater astral melee weapon</em> made of cold iron or silver appears in his fist. If he drops a conjured weapon or it is disarmed, the weapon vanishes. If he throws a conjured weapon, it vanishes after it is thrown and potentially damages its target. The First Blade prefers using a greatsword for melee Strikes and a light hammer for thrown ranged Strikes, but cannot have more than one conjured weapon in his possession at any time.</p>"
+                },
+                "action->Halo of Blades": {
+                    "name": "Halo of Blades",
+                    "description": "<p>10 feet, @Damage[3d6[slashing]] damage (@Check[reflex|dc:33|basic] save)</p>"
+                },
+                "action->Lord of Battle": {
+                    "name": "Lord of Battle",
+                    "description": "<p>The First Blade is highly skilled with all melee and thrown weapons, and gains the advantage of any such weapon's critical specialization effects. He inflicts an additional 1d6 persistent bleed damage with all melee Strikes made with melee weapons.</p>"
+                },
+                "action->Whirling Blades": {
+                    "name": "Whirling Blades",
+                    "description": "<p><strong>Frequency</strong> once per minute</p><hr /><p><strong>Effect</strong> To the faint sound of fell warhorns, the First Blade transforms into a Large cloud of whirling metal shards, then Strides twice. This movement doesn't trigger reactions, and while he can move through occupied spaces, he must end his movement in an unoccupied space, at which point he resumes his true form. All creatures who the First Blade moves through at least once during his Strides take @Damage[10d10[slashing]] damage (@Check[reflex|dc:36|basic] save).</p>"
+                },
+                "lore->Warfare Lore": {
+                    "name": "Warfare Lore"
                 }
             }
         },
@@ -533,6 +1436,45 @@
             "items": {
                 "spellcastingEntry->Divine Innate Spells": {
                     "name": "Divine Innate Spells"
+                },
+                "strike-melee->Spirit Tendril": {
+                    "name": "Spirit Tendril"
+                },
+                "strike-melee->Spirit Dart": {
+                    "name": "Spirit Dart"
+                },
+                "action->Telepathy 100 feet": {
+                    "name": "Telepathy 100 feet"
+                },
+                "action->Site Bound": {
+                    "name": "Site Bound",
+                    "description": "<p>The nemhaith is bound to a place or large stationary object and can't venture more than 500 feet from this focus.</p>\n<hr />\n<p>A typical ghost can stray only a short distance from where it was killed or the place it haunts. A typical limit is 120 feet. Some ghosts are instead bound to a room, building, item, or creature that was special to it rather than a location.</p>"
+                },
+                "action->Bound Spirits": {
+                    "name": "Bound Spirits",
+                    "description": "<p>10 feet. @Damage[4d6[void]] damage @Check[fortitude|dc:36|basic] save</p>"
+                },
+                "action->Rejuvenation": {
+                    "name": "Rejuvenation",
+                    "description": "<p>Destroying the ritual object or place used in the nemhaith's creation destroys the nemhaith, freeing its bound spirits to move on to the afterlife.</p>\n<hr />\n<p>When a ghost is destroyed, it re-forms after [[/br 2d4 #days]]{2d4 days} within the location it's bound to, fully healed. A ghost can be permanently destroyed only if someone determines the reason for its existence and sets right whatever prevents the spirit from resting.</p>"
+                },
+                "action->Void Healing": {
+                    "name": "Void Healing"
+                },
+                "action->Drain Life": {
+                    "name": "Drain Life",
+                    "description": "<p>When the nemhaith damages a living creature with its spirit tendril Strike, the creature must succeed at a @Check[fortitude|dc:36] save or become @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 2}.</p>\n<p>Further damage dealt by the nemhaith increases the condition value by 1 on a failed save, to a maximum of drained 4.</p>"
+                },
+                "action->Rage of Spirits": {
+                    "name": "Rage of Spirits",
+                    "description": "<p>The nemhaith's bound spirits rage and smash everything in a @Template[emanation|distance:30]. Creatures in this area take @Damage[4d6[sonic],4d6[void]]{4d6 sonic damage and 4d6 void damage} (@Check[fortitude|dc:36|basic] save).</p>"
+                },
+                "action->Throw Spirits": {
+                    "name": "Throw Spirits",
+                    "description": "<p>The nemhaith directs its bound spirits as a group to move up to 1 mile away (they have a fly Speed of 60 feet). The nemhaith can see and hear through the thrown spirits, but it loses its aura and can't use its spirit dart ranged Strike or Rage of Spirits.</p>\n<p>The nemhaith regains these abilities when the spirits return to the nemhaith's space.</p>"
+                },
+                "lore->Dwelling Lore": {
+                    "name": "Dwelling Lore"
                 }
             }
         },
@@ -642,6 +1584,31 @@
                 },
                 "spell->Truespeech (Constant)": {
                     "name": "Truespeech (Constant)"
+                },
+                "strike-melee->Spear": {
+                    "name": "Spear"
+                },
+                "action->Claimer of the Slain": {
+                    "name": "Claimer of the Slain",
+                    "description": "<p>Valkyries can detect the souls of those recently slain in combat. A valkyrie spends 10 minutes praying over the body of a creature who has been dead for no more than 12 hours; if that creature is worthy of becoming an @UUID[Compendium.pf2e.pathfinder-bestiary-3.Actor.VF81W91YRFgtBLli]{Einherji} and of the appropriate alignment, the valkyrie transforms that creature into an einherji.</p>"
+                },
+                "action->Ravenspeaker": {
+                    "name": "Ravenspeaker",
+                    "description": "<p>Valkyries use ravens as servants and spies. They can speak with ravens, and they can have up to three raven servitors who follow their commands. Valkyries can constantly observe whatever their commanded ravens sense.</p>"
+                },
+                "action->Constant Spells": {
+                    "name": "Constant Spells"
+                },
+                "action->Attack of Opportunity": {
+                    "name": "Attack of Opportunity"
+                },
+                "action->Recall the Fallen": {
+                    "name": "Recall the Fallen",
+                    "description": "<p><strong>Frequency</strong> once per day</p>\n<p><strong>Trigger</strong> An allied creature within 60 feet who isn't a construct or undead is reduced to 0 Hit Points and their @UUID[Compendium.pf2e.conditionitems.Item.yZRUzMqrMmfLu0V1]{Dying} value is 2 or less</p>\n<hr />\n<p><strong>Effect</strong> The valkyrie restores @Damage[5d10[healing]] Hit Points to the target.</p>"
+                },
+                "action->Storm of Battle": {
+                    "name": "Storm of Battle",
+                    "description": "<p>The valkyrie hurls her spear into the air, creating a massive storm in a @Template[burst|distance:100]. Spears of lightning rain down upon enemies in the area, dealing @Damage[4d12[electricity]] damage (@Check[reflex|dc:32|basic] save).</p>"
                 }
             }
         },
@@ -667,6 +1634,62 @@
                 },
                 "spell->Charm (At Will)": {
                     "name": "Charm (At Will)"
+                },
+                "strike-melee->Jaws": {
+                    "name": "Jaws"
+                },
+                "strike-melee->Claw": {
+                    "name": "Claw"
+                },
+                "strike-melee->Tail": {
+                    "name": "Tail"
+                },
+                "strike-melee->Mental Blast": {
+                    "name": "Mental Blast"
+                },
+                "action->Telepathy 100 feet": {
+                    "name": "Telepathy 100 feet"
+                },
+                "action->+2 Status to All Saves vs. Occult": {
+                    "name": "+2 Status to All Saves vs. Occult"
+                },
+                "action->Retract Body": {
+                    "name": "Retract Body",
+                    "description": "<p><strong>Trigger</strong> Vatumledor is hit or critically hit by an attack made by a creature the dragon can see</p><hr /><p><strong>Effect</strong> Vatumledor retracts the targeted body part or twists away to avoid the attack, gaining a +2 circumstance bonus to his Armor Class against the triggering attack.</p>"
+                },
+                "action->Conjure Disguise": {
+                    "name": "Conjure Disguise",
+                    "description": "<p><strong>Frequency</strong> once per day</p><hr /><p><strong>Effect</strong> Vatumledor conjures a flesh suit that's a replica of a humanoid he has seen and compresses himself into the suit, along with clothing appropriate for the humanoid. This process takes 1 minute, during which Vatumledor is @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard}. If he stops or is interrupted in this process, the suit is destroyed. Once the process is complete, he can remain in his disguise indefinitely.</p>\n<p>The transformation has the effects of change shape, except that the disguise is not actively magical in nature and doesn't register as magical to detect magic and similar effects. Vatumledor loses Retract Body while transformed.</p>\n<p>If Vatumledor is critically hit while wearing the disguise, the suit is destroyed, and immediately explodes. This has the effects of Detonate Disguise, except that creatures use the outcome one degree of success better than they rolled on their save.</p>"
+                },
+                "action->Detonate Disguise": {
+                    "name": "Detonate Disguise",
+                    "description": "<p><strong>Requirements</strong> Vatumledor is wearing his conjured disguise</p><hr /><p><strong>Effect</strong> Vatumledor erupts from the disguise, destroying it. The explosive revelation deals @Damage[18d6[bludgeoning]] damage to creatures adjacent to the dragon (@Check[reflex|dc:39|basic] save). Creatures that fail their save become @UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]{Dazzled} for 1 round as they become covered in scraps from the disguise. Any creatures sharing a space with Vatumledor after he erupts are pushed into the nearest empty space.</p>"
+                },
+                "action->Draconic Frenzy": {
+                    "name": "Draconic Frenzy",
+                    "description": "<p>Vatumledor makes two claw Strikes and one tail Strike in any order.</p>"
+                },
+                "action->Draconic Momentum": {
+                    "name": "Draconic Momentum",
+                    "description": "<p>When Vatumledor scores a critical hit with a Strike, he recharges Smoke Breath.</p>"
+                },
+                "action->Rushed Transformation": {
+                    "name": "Rushed Transformation",
+                    "description": "<p><strong>Frequency</strong> once per hour</p><hr /><p><strong>Effect</strong> Vatumledor quickly reshapes his body into the form of a generic humanoid figure. This has the effects of humanoid form except that it only lasts 1 minute, and he doesn't gain the +4 status bonus to Deception as the transformation makes use of his own scales and plating to crudely mimic a humanoid form. Vatumledor can Dismiss the effect. Whenever the effect ends, Vatumledor leaves behind scraps of magically conjured flesh, which could give away his presence.</p>"
+                },
+                "action->Smoke Breath": {
+                    "name": "Smoke Breath",
+                    "description": "<p>Vatumledor unleashes a @Template[cone|distance:60] of smoke that deals @Damage[16d6[poison]] damage (@Check[fortitude|dc:39|basic] save). The smoke remains for 1 minute, obscuring sight with the effects of mist in the cone's area. He can't use Smoke Breath again for [[/gmr 1d4 #Recharge Smoke Breath]]{1d4 rounds}.</p>"
+                },
+                "action->Sneak Attack": {
+                    "name": "Sneak Attack",
+                    "description": "<p>Vatumledor's Strikes deal an additional 3d6 precision damage to @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} targets.</p>"
+                },
+                "lore->Achaekek Lore": {
+                    "name": "Achaekek Lore"
+                },
+                "lore->Mediogalti Island Lore": {
+                    "name": "Mediogalti Island Lore"
                 }
             }
         },
@@ -686,6 +1709,24 @@
                 },
                 "equipment->Key": {
                     "name": "Key"
+                },
+                "strike-melee->Greatsword": {
+                    "name": "Greatsword"
+                },
+                "action->Commanding Shout": {
+                    "name": "Commanding Shout",
+                    "description": "<p>Vofnir commands the Gorumite infantry to fight for the glory of Gorum as long as the troop is within earshot. Until the start of Vofnir's next turn, the Gorumite infantry's save DCs for their Fire Crossbows! and Raise Swords! actions increase to DC 33 and they gain a +2 status bonus to their saving throws.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.F1JHRa75KBAjHOs1]{Effect: Commanding Shout}</p>"
+                },
+                "action->Consecrated": {
+                    "name": "Consecrated",
+                    "description": "<p>As long as the consecrate ritual effects persist in Crownhold, a Gorumite warpriest gains a +1 status bonus to attack rolls, skill checks, saving throws, and Perception checks; these bonuses are not calculated into the stat block.</p>"
+                },
+                "action->Fervent Casting": {
+                    "name": "Fervent Casting",
+                    "description": "<p><strong>Frequency</strong> once per day</p><hr /><p><strong>Effect</strong> The Gorumite warpriest loudly proclaims the glory of Gorum. The next divine spell they cast takes one fewer action (minimum of one), but must only target the warpriest. If the spell affects an area or multiple targets, such as bless, it only affects the warpriest, even if it lasts more than one round.</p>"
+                },
+                "lore->Warfare Lore": {
+                    "name": "Warfare Lore"
                 }
             }
         },
@@ -704,6 +1745,24 @@
                 "consumable->Rounds (Gun Sword)": {
                     "name": "Rounds (Gun Sword)",
                     "description": "<p>Firearms require ammunition consisting of a projectile and black powder. A round of ammo can vary in its composition but is typically either a prepackaged paper cartridge, including wadding, bullet, and black powder, or loose shot packed in manually. Some weapons, like hand cannons and blunderbusses, can fire other materials, but their ammunition has the same Price due to the cost of the black powder. Because making rounds of firearm ammunition requires creating black powder, you need the @UUID[Compendium.pf2e.feats-srd.Item.is3Oz9wt11lNq62K]{Alchemical Crafting} skill feat to make them. Firearm rounds are a valid option for magical ammunition, just like arrows or bolts. Crafting magical firearm ammunition requires you to be able to craft both alchemical and magical items.</p>"
+                },
+                "strike-melee->Zaiho's Gun Sword": {
+                    "name": "Zaiho's Gun Sword"
+                },
+                "action->Fiery Leap": {
+                    "name": "Fiery Leap",
+                    "description": "<p><strong>Frequency</strong> once per day</p><hr /><p><strong>Effect</strong> Zaiho Leaps. As he does so, he throws a handful of explosive devices into a square he was adjacent to just before he Leaped. A creature in this square takes @Damage[11d10[fire]] damage (@Check[reflex|dc:37|basic] save); that creature and all creatures adjacent to the target square also take @Damage[(11[splash])[fire]]{11 fire splash} damage.</p>"
+                },
+                "action->Gadget Defense": {
+                    "name": "Gadget Defense",
+                    "description": "<p><strong>Trigger</strong> Zaiho would roll a saving throw against an effect that would cause Hit Point damage</p><hr /><p><strong>Effect</strong> Zaiho quickly procures some outlandish gadget or device from his pouches to protect himself from the triggering effect. Rather than roll the normal saving throw against the effect, Zaiho instead attempts a @Check[crafting] check in place of that saving throw, treating the result of this check as the result of the saving throw instead. If this results in a critical failure, Zaiho's gadgets are damaged, and he can no longer use this reaction for 24 hours.</p>"
+                },
+                "action->Twinned Combat": {
+                    "name": "Twinned Combat",
+                    "description": "<p>Any enemy is @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} against Zaiho's Strikes if that enemy is currently taking persistent damage from or is frightened by any of Shirota's bombs. Zaiho doesn't inflict splash damage to Shirota with Fiery Leap.</p>"
+                },
+                "lore->Ilizmagorti Lore": {
+                    "name": "Ilizmagorti Lore"
                 }
             }
         }

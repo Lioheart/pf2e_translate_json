@@ -3691,7 +3691,29 @@
         },
         "Spawn of Dahak": {
             "name": "Spawn of Dahak",
-            "blurb": "Variant Racharak"
+            "blurb": "Variant Racharak",
+            "items": {
+                "action->Tail Swipe": {
+                    "name": "Tail Swipe",
+                    "description": "<p><strong>Trigger</strong> A creature within reach of the spawn's tail uses a move action or leaves a square during a move action it's using.</p>\n<hr />\n<p><strong>Effect</strong> The spawn of Dahak makes a tail Strike at the creature with a -2 penalty. If it hits, they disrupt the creature's action.</p>"
+                },
+                "action->Breath Weapon": {
+                    "name": "Breath Weapon",
+                    "description": "<p>The spawn breathes flames that deals @Damage[9d6[fire]|options:area-damage] damage to all creatures in a @Template[cone|distance:30] (@Check[reflex|dc:26|basic] save).</p>\n<p>They can't use Breath Weapon again for [[/gmr 1d4 #Recharge Breath Weapon]]{1d4 rounds}</p>"
+                },
+                "action->Draconic Frenzy": {
+                    "name": "Draconic Frenzy",
+                    "description": "<p>The spawn makes two claw Strikes and one bite Strike in any order.</p>"
+                },
+                "action->Shrieking Frenzy": {
+                    "name": "Shrieking Frenzy",
+                    "description": "<p><strong>Trigger</strong> The spawn's turn begins.</p>\n<p><strong>Frequency</strong> once per hour</p>\n<hr />\n<p><strong>Effect</strong> The spawn is @UUID[Compendium.pf2e.conditionitems.Item.nlCjDvLMf2EkV2dl]{Quickened} until the end of their turn, and can use the extra action to Stride or Strike. While in the frenzy, the spawn can't speak and automatically critically fails Stealth checks, due to their loud wailing.</p>"
+                },
+                "action->Thrown Weapon Mastery": {
+                    "name": "Thrown Weapon Mastery",
+                    "description": "<p>When the spawn throws a weapon, the weapon gains the deadly d6 weapon trait. When they throw an improvised weapon, they don't take the -2 penalty for using an improvised weapon, nor do they take the penalty for using that weapon to make a lethal attack instead of a nonlethal attack.</p>"
+                }
+            }
         },
         "Spiked Doorframe": {
             "name": "Spiked Doorframe",
