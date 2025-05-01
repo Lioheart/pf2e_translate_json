@@ -241,7 +241,7 @@
             "name": "Avalanche Legion",
             "publicNotes": "<p>Elementals of the Plane of Earth can be fiercely territorial. Some more solitary elementals protect their lairs on their own, but occasionally others band together to defend larger regions that serve as shared turf. Notable among these alliances are avalanche legions, who patrol the perimeter of these shared territories, driving off intruders who dare to trespass upon their home ground.</p>\n<h2>Familial Instincts</h2>\n<p>Although elementals don't reproduce like typical creatures, living landslides sometimes develop bonds with smaller or weaker earth elementals, such as earth wisps, living boulders, and sod hounds. When several of these smaller elementals are gathered in one place, living landslides who cared for the creatures often continue to watch over their wards. Avalanche legions sometimes form from these gatherings, as multiple living landslides join forces to protect the smaller elementals.</p>",
             "speedsDetails": "earth glide, troop movement",
-            "hpDetails": "16 squares Thresholds 160 (12 squares), 80 (8 squares)",
+            "hpDetails": "16 squares Thresholds 160 (3 segments), 80 (2 segments)",
             "items": {
                 "action->Tremorsense (Imprecise) 60 feet": {
                     "name": "Tremorsense (Imprecise) 60 feet"
@@ -249,9 +249,6 @@
                 "action->Earthbound": {
                     "name": "Earthbound",
                     "description": "<p>When not touching solid ground, the avalanche legion is @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1}.</p>"
-                },
-                "action->Form Up": {
-                    "name": "Form Up"
                 },
                 "action->Troop Defenses": {
                     "name": "Troop Defenses"
@@ -262,11 +259,11 @@
                 },
                 "action->Pummeling Boulders": {
                     "name": "Pummeling Boulders",
-                    "description": "<p><strong>Frequency</strong> once per round</p>\n<hr />\n<p><strong>Effect</strong> The avalanche legion unleashes an onslaught of blows against each enemy within 5 feet (@Check[reflex|dc:28|basic] save). The damage depends on the number of actions.</p>\n<p><span class=\"action-glyph\">1</span> @Damage[2d8[bludgeoning]] damage</p>\n<p><span class=\"action-glyph\">2</span> @Damage[(3d8+8)[bludgeoning]] damage</p>\n<p><span class=\"action-glyph\">3</span> @Damage[(4d8+11)[bludgeoning]] damage</p>"
+                    "description": "<p><strong>Frequency</strong> once per round</p>\n<hr />\n<p><strong>Effect</strong> The avalanche legion unleashes an onslaught of blows against each enemy in a @Template[emanation|distance:5] (@Check[reflex|dc:28|basic] save). The damage depends on the number of actions.</p>\n<p><span class=\"action-glyph\">1</span> @Damage[2d8[bludgeoning]] damage</p>\n<p><span class=\"action-glyph\">2</span> @Damage[(3d8+8)[bludgeoning]] damage</p>\n<p><span class=\"action-glyph\">3</span> @Damage[(4d8+11)[bludgeoning]] damage</p>"
                 },
                 "action->Spinning Stones": {
                     "name": "Spinning Stones",
-                    "description": "<p>The avalanche legion spins in place, kicking up a barrage of stones. Each creature in a @Template[burst|distance:10] within 30 feet of the troop takes @Damage[(2d12+10)[bludgeoning]] damage (@Check[reflex|dc:28|basic] save). When the troop is reduced to 8 or fewer squares, this area decreases to a @Template[burst|distance:5].</p>"
+                    "description": "<p>The avalanche legion spins in place, kicking up a barrage of stones. Each creature in a @Template[burst|distance:10] within 30 feet of the troop takes @Damage[(1d12+8)[bludgeoning]] damage (@Check[reflex|dc:28|basic] save). When the troop is reduced to 2 or fewer segments, this area decreases to a @Template[burst|distance:5].</p>"
                 },
                 "action->Trample into the Earth": {
                     "name": "Trample into the Earth",
@@ -282,11 +279,8 @@
             "name": "Blustering Gale",
             "publicNotes": "<p>Blustering gales are among the least of air elementals: spirits of the small breezes who sometimes arise in the wake of mightier creatures, like the downdraft of a swallow's wing or the sharp expulsion of a vigorous cough. Unwilling or unable to act effectively alone, they form into \"gales,\" collections of weak elementals that use their combined power to hurl insults and pummel those who defy them in a misguided attempt to rise above their humble origins.</p>\n<p>Together, they force other creatures to do their bidding, then move on when they grow bored. While most gales claim their abandoned minions were useless, in truth, blustering gales lack the commanding presence and confidence to retain vassals for long.</p>\n<h2>Lackeys</h2>\n<p>Blustering gales sometimes serve as heralds or enforcers for other creatures (including cloud dragons, jaathooms, and other powerful air elementals), bullying and intimidating others at the behest of a more influential overlord. While blustering gales often feel secure and confident in these roles, they rankle at subservience, and rarely feel content with such an arrangement for long.</p>",
             "speedsDetails": "troop movement",
-            "hpDetails": "(16 squares); Thresholds 100 (12 squares), 50 (8 squares)",
+            "hpDetails": "(16 squares); Thresholds 100 (3 segments), 50 (2 segments)",
             "items": {
-                "action->Form Up": {
-                    "name": "Form Up"
-                },
                 "action->Bullying Bluster": {
                     "name": "Bullying Bluster",
                     "description": "<p>30 feet. The blustering gale constantly unleashes a tirade of insults and aggressive taunts. Each enemy who enters or starts their turn in the aura must succeed at a @Check[will|dc:30] save or become @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 1} for as long as they remain within the aura (@UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 2} on a critical failure). The troop's members are collectively able to mimic a few curse words or insults in every language, allowing their Bullying Bluster to affect any creature who understands a language. A creature who succeeds at its save is temporarily immune for 1 hour. The blustering gale can activate or deactivate the aura with a free action, which has the concentrate trait.</p>"
@@ -304,7 +298,7 @@
                 },
                 "action->Windstorm": {
                     "name": "Windstorm",
-                    "description": "<p>The blustering gale exhales as a unit, creating a powerful windstorm. This windstorm is a @Template[burst|distance:10] within 100 feet that deals @Damage[(3d8+10)[bludgeoning]] damage (@Check[reflex|dc:30|basic] save). Creatures that fail their saving throw are pushed 10 feet in any direction (plus knocked @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone} on a critical failure). When the troop is reduced to 8 or fewer squares, this area decreases to a @Template[burst|distance:5] and the distance pushed decreases to 5 feet.</p>"
+                    "description": "<p>The blustering gale exhales as a unit, creating a powerful windstorm. This windstorm is a @Template[burst|distance:10] within 100 feet that deals @Damage[(3d8+10)[bludgeoning]] damage (@Check[reflex|dc:30|basic] save). Creatures that fail their saving throw are pushed 10 feet in any direction (plus knocked @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone} on a critical failure). When the troop is reduced to 2 or fewer segments, this area decreases to a @Template[burst|distance:5] and the distance pushed decreases to 5 feet.</p>"
                 }
             }
         },
@@ -1018,9 +1012,6 @@
             "speedsDetails": "troop movement",
             "hpDetails": "Thresholds: 90, 45",
             "items": {
-                "action->Form Up": {
-                    "name": "Form Up"
-                },
                 "action->Juice Shower": {
                     "name": "Juice Shower",
                     "description": "<p>When a harvest regiment is critically hit or critically fails a save against a damaging effect, sticky fruit juices splash out. This affects all creatures in a @Template[emanation|distance:5]. A splashed creature takes a \u201310-foot status penalty to its Speeds and everything is @UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{Concealed} to it. A creature can Interact to clear off the juice.</p>"
@@ -1034,11 +1025,11 @@
                 },
                 "action->Seed Volley": {
                     "name": "Seed Volley",
-                    "description": "<p>The harvest regiment spits an orderly volley of hard seeds drawn from within their bodies. This volley is a @Template[burst|distance:10] within 120 feet that deals @Damage[3d10[bludgeoning]] damage (@Check[reflex|dc:23|basic] save). When the harvest regiment is reduced to 8 or fewer squares, this area decreases to a @Template[burst|distance:5].</p>"
+                    "description": "<p>The harvest regiment spits an orderly volley of hard seeds drawn from within their bodies. This volley is a @Template[burst|distance:10] within 120 feet that deals @Damage[2d10[bludgeoning]] damage (@Check[reflex|dc:23|basic] save). When the harvest regiment is reduced to 8 or fewer squares, this area decreases to a @Template[burst|distance:5].</p>"
                 },
                 "action->Shell Smash": {
                     "name": "Shell Smash",
-                    "description": "<p><span class=\"action-glyph\">1</span> to <span class=\"action-glyph\">3</span></p>\n<p><strong>Frequency</strong> once per round;</p>\n<hr />\n<p><strong>Effect</strong> The harvest regiment engages in a coordinated melee attack against each enemy within 5 feet, with a @Check[reflex|dc:23|basic] save. The damage depends on the number of actions.</p>\n<p><span class=\"action-glyph\">1</span> @Damage[(1d8+3)[bludgeoning]] damage</p>\n<p><span class=\"action-glyph\">2</span> @Damage[(2d8+9)[bludgeoning]] damage</p>\n<p><span class=\"action-glyph\">3</span> @Damage[(2d8+12)[bludgeoning]] damage</p>"
+                    "description": "<p><span class=\"action-glyph\">1</span> to <span class=\"action-glyph\">3</span></p>\n<p><strong>Frequency</strong> once per round;</p><hr /><p><strong>Effect</strong> The harvest regiment engages in a coordinated melee attack against each enemy in a @Template[emanation|distance:5], with a @Check[reflex|dc:23|basic] save. The damage depends on the number of actions.</p>\n<p><span class=\"action-glyph\">1</span> @Damage[(1d8+3)[bludgeoning]] damage</p>\n<p><span class=\"action-glyph\">2</span> @Damage[(2d8+9)[bludgeoning]] damage</p>\n<p><span class=\"action-glyph\">3</span> @Damage[(2d8+12)[bludgeoning]] damage</p>"
                 },
                 "action->Troop Movement": {
                     "name": "Troop Movement",
@@ -2023,13 +2014,10 @@
             "speedsDetails": "troop movement",
             "sensesDetails": "metalsense (imprecise) 60 feet",
             "languagesDetails": "telepathy 30 feet",
-            "hpDetails": "140 (12 squares), 70 (8 squares)",
+            "hpDetails": "140 (3 segments), 70 (2 segments)",
             "items": {
                 "action->Telepathy 30 feet": {
                     "name": "Telepathy 30 feet"
-                },
-                "action->Form Up": {
-                    "name": "Form Up"
                 },
                 "action->Metalsense": {
                     "name": "Metalsense",
@@ -2048,7 +2036,7 @@
                 },
                 "action->Shard Volley": {
                     "name": "Shard Volley",
-                    "description": "<p>The pelegox cube magnetizes fragments of metal at range. This is a @Template[burst|distance:10] within 30 feet that deals @Damage[(2d6+10)[piercing]] damage (@Check[reflex|dc:27|basic] save). When the troop is reduced to 8 or fewer squares, this area decreases to a @Template[burst|distance:5].</p>"
+                    "description": "<p>The pelegox cube magnetizes fragments of metal at range. This is a @Template[burst|distance:10] within 30 feet that deals @Damage[(2d6+10)[piercing]] damage (@Check[reflex|dc:27|basic] save). When the troop is reduced to 2 or fewer segments, this area decreases to a @Template[burst|distance:5].</p>"
                 },
                 "action->Troop Movement": {
                     "name": "Troop Movement",
@@ -2227,12 +2215,9 @@
             "speedsDetails": "troop movement",
             "hpDetails": "troop defenses",
             "items": {
-                "action->Form Up": {
-                    "name": "Form Up"
-                },
                 "action->Troop Defenses": {
                     "name": "Troop Defenses",
-                    "description": "<p><strong>Thresholds</strong> 160 (12 squares), 80 (8 squares)</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.TroopDefenses]</p>"
+                    "description": "<p><strong>Thresholds</strong> 160 (3 segments), 80 (2 segments)</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.TroopDefenses]</p>"
                 },
                 "action->Lightlure": {
                     "name": "Lightlure",
@@ -2375,11 +2360,8 @@
             "publicNotes": "<p>Powerful deities and warlords strive for dominance over the Plane of Fire and the rest of the Inner Sphere in order to prove fire's supremacy. Armies of flaming soldiers go to war against each other on battlefields of smoke and smoldering char, all unable to bring their full power to bear. Ymeri, the vicious and victorious Queen of the Inferno, commands legions of sootsoldiers: elementals capable of battling the armies of her foes and, even when destroyed, rising from the ashes of the Eternal Furnace, scorched and triumphant.</p>",
             "speedsDetails": "troop movement",
             "sensesDetails": "smoke vision",
-            "hpDetails": "(16 squares); Thresholds 110 (12 squares), 55 (8 squares);",
+            "hpDetails": "(16 squares); Thresholds 110 (3 segments), 55 (2 segments);",
             "items": {
-                "action->Form Up": {
-                    "name": "Form Up"
-                },
                 "action->Ashen Smoke": {
                     "name": "Ashen Smoke",
                     "description": "<p>When the sootsoldiers are reduced by an HP Threshold or are reduced to 0 HP, the destroyed soldiers crumble to a cloud of ash-laden smoke in @Template[burst|distance:20] centered on the sootsoldiers. All creatures within the cloud are @UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{Concealed}, and all creatures outside it are concealed to those inside. The smoke lasts for 1 minute or until dispersed by a strong wind.</p>"
@@ -2416,11 +2398,8 @@
             "publicNotes": "<p>Powerful deities and warlords strive for dominance over the Plane of Fire and the rest of the Inner Sphere in order to prove fire's supremacy. Armies of flaming soldiers go to war against each other on battlefields of smoke and smoldering char, all unable to bring their full power to bear. Ymeri, the vicious and victorious Queen of the Inferno, commands legions of sootsoldiers: elementals capable of battling the armies of her foes and, even when destroyed, rising from the ashes of the Eternal Furnace, scorched and triumphant.</p>",
             "speedsDetails": "troop movement",
             "sensesDetails": "smoke vision",
-            "hpDetails": "(16 squares); Thresholds 110 (12 squares), 55 (8 squares);",
+            "hpDetails": "(16 squares); Thresholds 110 (3 segments), 55 (2 segments);",
             "items": {
-                "action->Form Up": {
-                    "name": "Form Up"
-                },
                 "action->Ashen Smoke": {
                     "name": "Ashen Smoke",
                     "description": "<p>Sootsoldiers who serve the other Lord of Fire, the Lambent King Atreia, are covered in glowing embers instead of black char.</p>\n<p>When the sootsoldiers are reduced by an HP Threshold or are reduced to 0 HP, the destroyed soldiers crumble to a cloud of ash-laden smoke in @Template[burst|distance:20] centered on the sootsoldiers. Any creature in the area must attempt a @Check[reflex|dc:29] save. On a failure, for 1 minute that creature is @UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]{Dazzled} and its invisibility is negated.</p>"
