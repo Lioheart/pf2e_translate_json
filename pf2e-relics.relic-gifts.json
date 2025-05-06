@@ -1,0 +1,767 @@
+{
+    "label": "Relic-Gifts",
+    "folders": {
+        "Grand Gifts": "Grand Gifts",
+        "Major Gifts": "Major Gifts",
+        "Minor Gifts": "Minor Gifts",
+        "Celestial": "Celestial",
+        "Luck": "Luck",
+        "Plant": "Plant",
+        "Water": "Water",
+        "Fire": "Fire",
+        "Air": "Air",
+        "Death": "Death",
+        "Life": "Life",
+        "Mind": "Mind",
+        "Shadow": "Shadow",
+        "Dragon": "Dragon",
+        "Beast": "Beast",
+        "Forge": "Forge",
+        "Metal": "Metal",
+        "Emotion": "Emotion",
+        "Artistry": "Artistry",
+        "Fiends": "Fiends",
+        "Soul": "Soul",
+        "Breath of Dragons": "Breath of Dragons",
+        "Earth": "Earth",
+        "Time": "Time",
+        "Apothecary's Garden": "Apothecary's Garden",
+        "Intelligent Relic Gifts": "Intelligent Relic Gifts"
+    },
+    "entries": {
+        "Absorb Injury": {
+            "name": "Absorb Injury",
+            "description": "<p><strong>Aspect</strong> soul</p>\n<p><strong>Activate </strong><span class=\"pf2-icon\">R</span> envision</p>\n<p><strong>Frequency</strong> once per day</p>\n<p><strong>Trigger</strong> an ally within 30 feet takes damage</p>\n<hr />\n<p><strong>Effect</strong> You forge a conduit to your ally's soul and absorb the injury to protect them. You receive the damage instead of your ally; you also take any additional effects associated with the transferred damage, such as poison on the blade, conditions, or persistent fire damage from a critical hit with a flaming rune.</p>"
+        },
+        "Against All Odds": {
+            "name": "Against All Odds",
+            "description": "<p><strong>Aspect</strong> luck</p>\n<p><strong>Activate</strong> <span class=\"action-glyph\">R</span> envision</p>\n<p><strong>Frequency</strong> once per 10 minutes</p>\n<p><strong>Trigger</strong> You attempt a skill check with a DC that is at least 15 higher than your bonus in the skill</p>\n<hr />\n<p><strong>Effect</strong> You roll twice and take the better result.</p>"
+        },
+        "All Will Decay": {
+            "name": "All Will Decay",
+            "description": "<p><strong>Aspect</strong> metal</p>\n<p>Your relic's link to the Plane of Metal tunes it in to the inevitability of rust and decay. You can cast 5th-rank @UUID[Compendium.pf2e.spells-srd.Item.yy2K51kK3a60rRIe]{Rust Cloud} at will as an innate spell.</p>\n<p><strong>Activate</strong> <span class=\"pf2-icon\">2</span> (aura, concentrate)</p>\n<p><strong>Frequency</strong> once per day</p>\n<hr />\n<p><strong>Effect</strong> Rusted flakes swirl in a cloud around you, creating a @Template[type:emanation|distance:15] that lasts for 1 minute. You're @UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{Concealed} to anyone outside the cloud. An enemy that starts its turn in the cloud takes @Damage[15[slashing]] damage with a basic Fortitude save. If the target has the metal trait or is primarily made of metal, the damage is @Damage[30[slashing]] instead. Unattended non-magical metal items within the cloud automatically become broken.</p>"
+        },
+        "Ancestors' Call": {
+            "name": "Ancestors' Call",
+            "description": "<p><strong>Aspect</strong> mind</p>\n<p>Dwarven spirits gravitate toward this relic, and you can call upon them to inhabit you and your allies to impart ancestral secrets. When you gain this gift, choose three common 1st-level dwarf ancestry feats.</p>\n<p><strong>Activate</strong> <span class=\"pf2-icon\">1</span> envision</p>\n<p><strong>Frequency</strong> once per hour</p>\n<hr />\n<p><strong>Effect</strong> Select one of the three ancestry feats. You and each ally in a @Template[type:burst|distance:10] centered on you gain that feat and the dwarf trait for 1 minute.</p>"
+        },
+        "Angelic Vessel": {
+            "name": "Angelic Vessel",
+            "description": "<p><strong>Aspect</strong> celestial</p>\n<p><strong>Frequency </strong>once per day</p>\n<div id=\"page\" class=\"page clearfix\">\n<div id=\"ctl00_RadDrawer1_Content\" class=\"k-drawer-content\">\n<div id=\"main-wrapper\" class=\"main-wrapper compressed\">\n<div id=\"main\" class=\"main\"><strong>Activate</strong> <span class=\"action action-glyph\" title=\"Two Actions\" aria-label=\"Two Actions\">2</span> (concentrate, manipulate)<hr /><span id=\"ctl00_RadDrawer1_Content_MainContent_DetailedOutput\"><strong>Effect</strong> At your invitation, a celestial imbues your body with the divine. You gain 50 additional Hit Points, increasing both your maximum and current Hit Points, as well as weakness 10 to unholy. If the relic has the righteous call gift, this activation grants the effects of that gift as well, without expending its daily use. You can Dismiss the effect. If you do, you can unleash a wave of holy power, causing the relic to cast an 8th-rank @UUID[Compendium.pf2e.spells-srd.Item.sX2o0HH4RjJDAZ8C]{Divine Decree}, with the holy trait.</span></div>\n</div>\n</div>\n</div>\n<div id=\"footer\" class=\"footer\"></div>"
+        },
+        "Apothecary's Garden": {
+            "name": "Apothecary's Garden",
+            "description": "<p><strong>Aspect</strong> plant</p><hr /><p>Your relic grows potent natural medicines. Each night, two medicinal herbs (or other plants) grow from your relic and can be harmlessly harvested during your next daily preparations. A living creature that consumes an herb with an Interact action regains [[/r 1d8[healing]]] Hit Points for every 2 relic levels (minimum 1d8). At 9th level, the relic grows three herbs each night, and at 17th level, the relic grows four herbs each night. Herbs wither away 1 day after being harvested.</p><p>@UUID[Compendium.pf2e-relics.relic-gifts.Item.Ir5KeJGBeaeMHXW8]{Apothecary's Medicinal Herb}</p><p><em><strong>Editor's Note: </strong>Drag and drop the \"Apothecary's Medicinal Herb\" into your inventory to receive your herbs each daily preparation.</em></p>"
+        },
+        "Apothecary's Medicinal Herb": {
+            "name": "Apothecary's Medicinal Herb",
+            "description": "<p>A living creature that consumes this herb with an @UUID[Compendium.pf2e.actionspf2e.Item.pvQ5rY2zrtPI614F]{Interact} action regains @Damage[(max(1,floor((@actor.level)/2)))d8[healing]] Hit Points.</p>"
+        },
+        "Artistic Perfection": {
+            "name": "Artistic Perfection",
+            "description": "<p><strong>Aspect</strong> artistry</p><hr /><p>Your relic enhances your skill with Crafting or Performance. (Choose one.) If you succeed at a check with the chosen skill, you get a critical success instead.</p>",
+            "rules": {
+                "0": {
+                    "choices": {
+                        "0": {
+                            "label": "Crafting"
+                        },
+                        "1": {
+                            "label": "Performance"
+                        }
+                    }
+                }
+            }
+        },
+        "Beast Senses": {
+            "name": "Beast Senses",
+            "description": "<p><strong>Aspect</strong> beast</p>\n<p><strong>Prerequisite</strong> The relic is a worn item</p>\n<hr />\n<p>The relic grants you an animal’s acute senses as long as you wear it. You gain low-light vision. If you already have low-light vision, you instead gain darkvision. At 10th level, the relic grants you imprecise scent with a range of 10 feet.</p>",
+            "rules": {
+                "0": {
+                    "prompt": "What makes Sense?"
+                }
+            }
+        },
+        "Beginner's Luck": {
+            "name": "Beginner's Luck",
+            "description": "<p><strong>Aspect</strong> luck</p>\n<p><strong>Activate</strong> <span class=\"action-glyph\">r</span> envision</p>\n<p><strong>Frequency</strong> once per day</p>\n<p><strong>Trigger</strong> You attempt a d20 roll you're untrained in</p>\n<hr />\n<p><strong>Effect</strong> You treat your proficiency bonus as equal to half your level, or if the relic is 7th level or higher, as equal to your level. Then, roll twice, taking the better of the two results. This doesn't allow you to use a skill's trained actions.</p>"
+        },
+        "Bestow Life": {
+            "name": "Bestow Life",
+            "description": "<p><strong>Aspect</strong> life</p>\n<p><strong>Frequency </strong>once per day</p>\n<p><strong>Activate</strong> <span class=\"action-glyph\">2</span> (concentrate)</p>\n<hr />\n<p><strong>Effect</strong> Effect An infusion of positive energy from your relic can temporarily animate an unliving object. You transform an adjacent inanimate object into an @UUID[Compendium.pf2e.spells-srd.Item.sLzPzk7DJnfuORJ0]{Animated Object} with a level equal to one-half the relic’s level and appropriate to the object (so a broom would become an animated broom). The object pursues a single simple noncombat task you state when you use Bestow Life, ignoring any subsequent commands. The object is mindless and pursues the task single-mindedly and uncreatively. The object remains animated for 1 hour.</p>"
+        },
+        "Blazing Soul": {
+            "name": "Blazing Soul",
+            "description": "<p><strong>Aspect</strong> fire</p><p>Fire magic suffuses your body and soul, protecting you from lesser flames and allowing you to kindle even the smallest sparks into powerful infernos. You gain fire resistance 10. The first time each hour you are targeted by a fire effect that would deal damage, you regain @Damage[1d8[healing]] HP for every counteract rank of the effect, in addition to taking the damage.</p><hr /><p><strong>Activate </strong><span class=\"action-glyph\">R</span> (concentrate)</p><p><strong>Trigger</strong> A creature within 60 feet is critically hit by or critically fails a save against a fire effect and is not reduced to 0 Hit Points</p><hr /><p><strong>Effect</strong> Flames roar forth from the triggering creature, dealing @Damage[6d6[fire]] damage to all creatures in a @Template[type:burst|distance:15] centered on it, including that creature (@Check[type:reflex|against:class-spell|basic:true]). You aren’t affected by the activation, though your allies are. If this damage reduces the triggering creature to 0 Hit Points, it is reduced to a fine ash, though its gear remains. You can’t use this activation again for [[/r 1d4 #Recharge]] rounds.</p>"
+        },
+        "Borrow Time": {
+            "name": "Borrow Time",
+            "description": "<p><strong>Aspect</strong> time</p>\n<p><strong>Activate</strong> <span class=\"pf2-icon\">2</span> command, Interact</p>\n<hr />\n<p><strong>Effect</strong> You point the relic at a creature within 30 feet, imbuing it with urgency. The creature gains the @UUID[Compendium.pf2e.conditionitems.Item.nlCjDvLMf2EkV2dl]{Quickened} condition for 1 round. After the condition ends, the creature is @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1} for 1 round and temporarily immune to this gift until you next perform your daily preparations.</p>\n<p><em><strong>Editor's Note of Clarity </strong>Because there is not a specified action for the granted quickened condition, the target simply gains an additional action they can use for anything, including actions that requires more than 1 action, provided you still have the necessary amount of actions.</em></p>"
+        },
+        "Bottomless Reservoir": {
+            "name": "Bottomless Reservoir",
+            "description": "<p><strong>Aspect</strong> water</p><p><strong>Activate </strong><span class=\"pf2-icon\">1</span> (manipulate)</p><hr /><p><strong>Effect</strong> Your relic can absorb and release water, storing it in a endless reservoir. You either touch your relic to an adjacent body of water and absorb 1 gallon of it into the reservoir, or you release 1 gallon of a liquid from the reservoir. You can add another action to the activation to absorb water from a touched creature made entirely of water, like a water elemental. If you do, it takes @Damage[(max(1,floor(@actor.level)))d6] damage per relic level (@Check[type:fortitude|against:class-spell|basic:true] save).</p><hr /><p><strong>Activate</strong> <span class=\"pf2-icon\">R</span> (manipulate)</p><p><strong>Frequency</strong> You are targeted by an acid or water effect</p><p><strong>Effect</strong> Your relic attempts to counteract the effect, expending 1 gallon of stored liquid. At the GM's discretion, you can use this ability on effects made of other liquids, such as blood.</p>"
+        },
+        "Breath of Dragons (Adamantine)": {
+            "name": "Breath of Dragons (Adamantine)",
+            "description": "<p><strong>Aspect</strong> dragon</p><p><strong>Activate—Avalanche Breath</strong> <span class=\"action-glyph\">2</span> (concentrate); <strong>Effect</strong> You belch out a cone of boulders. You deal @Damage[(2*max(1,floor((@actor.level)/2)))d6[bludgeoning]] damage for every 2 levels of the soul seed to all creatures in a @Template[type:cone|distance:30], with a @Check[type:reflex|against:class-spell|basic:true] save.</p>"
+        },
+        "Breath of Dragons (BASE)": {
+            "name": "Breath of Dragons (BASE)",
+            "description": "<p><strong>Aspect</strong> dragon</p><p><strong>Activate</strong> <span class=\"action-glyph\">2</span> command, envision; <strong>Effect</strong> You breathe out a cone or line of energy. You deal [[/r 2d6[untyped]]] damage for every 2 levels of the soul seed to all creatures in either a 30-foot cone or an 80-foot line, with a @Check[type:reflex|against:class-spell|basic:true] save. The shape is whichever is appropriate for the soul seed's draconic origin, as is the damage type. This ability has the trait matching the damage type.</p><p>@Template[type:cone|distance:30]</p><p>@Template[type:line|distance:80]</p><p>@Damage[(2*max(1,floor((@actor.level)/2)))d6[untyped]]{Leveled Untyped Damage}</p><p>@Check[type:reflex|against:class-spell|basic:true]</p><p><em><strong>Editor's Note</strong></em> This version is for GMs to create their own Breath of Dragons abilties for any custom dragons or alterations to existing dragons they may have made.</p>"
+        },
+        "Breath of Dragons (Black)": {
+            "name": "Breath of Dragons (Black)",
+            "description": "<p><strong>Aspect</strong> dragon</p><p><strong>Activate</strong> <span class=\"action-glyph\">2</span> command, envision; <strong>Effect</strong> You breathe out a line of energy. You deal @Damage[(2*max(1,floor((@actor.level)/2)))d6[acid]] damage for every 2 levels of the soul seed to all creatures in an @Template[type:line|distance:80], with a @Check[type:reflex|against:class-spell|basic:true] save.</p>"
+        },
+        "Breath of Dragons (Blue)": {
+            "name": "Breath of Dragons (Blue)",
+            "description": "<p><strong>Aspect</strong> dragon</p><p><strong>Activate</strong> <span class=\"action-glyph\">2</span> command, envision; <strong>Effect</strong> You breathe out a line of energy. You deal @Damage[(2*max(1,floor((@actor.level)/2)))d6[electricity]] damage for every 2 levels of the soul seed to all creatures in an @Template[type:line|distance:80], with a @Check[type:reflex|against:class-spell|basic:true] save.</p>"
+        },
+        "Breath of Dragons (Brass)": {
+            "name": "Breath of Dragons (Brass)",
+            "description": "<p><strong>Aspect</strong> dragon</p><p><strong>Activate</strong> <span class=\"action-glyph\">2</span> command, envision; <strong>Effect</strong> You breathe out a line of energy. You deal @Damage[(2*max(1,floor((@actor.level/2))))d6[fire]] damage for every 2 levels of the soul seed to all creatures in an @Template[type:line|distance:80], with a @Check[type:reflex|dc:resolve(@actor.system.attributes.classOrSpellDC.value)|basic:true] save.</p>"
+        },
+        "Breath of Dragons (Brine)": {
+            "name": "Breath of Dragons (Brine)",
+            "description": "<p><strong>Aspect</strong> dragon</p><p><strong>Activate</strong> <span class=\"action-glyph\">2</span> command, envision; <strong>Effect</strong> You breathe out a line of energy. You deal @Damage[(2*max(1,floor((@actor.level)/2)))d6[acid]] damage for every 2 levels of the soul seed to all creatures in an @Template[type:line|distance:80], with a @Check[type:reflex|against:class-spell|basic:true] save.</p>"
+        },
+        "Breath of Dragons (Bronze)": {
+            "name": "Breath of Dragons (Bronze)",
+            "description": "<p><strong>Aspect</strong> dragon</p><p><strong>Activate</strong> <span class=\"action-glyph\">2</span> command, envision; <strong>Effect</strong> You breathe out a line of energy. You deal @Damage[(2*max(1,floor((@actor.level)/2)))d6[electricity]] damage for every 2 levels of the soul seed to all creatures in an @Template[type:line|distance:80], with a @Check[type:reflex|against:class-spell|basic:true] save.</p>"
+        },
+        "Breath of Dragons (Cloud)": {
+            "name": "Breath of Dragons (Cloud)",
+            "description": "<p><strong>Aspect</strong> dragon</p><p><strong>Activate</strong> <span class=\"action-glyph\">2</span> command, envision; <strong>Effect</strong> You breathe out a cone of energy. You deal @Damage[(2*max(1,floor((@actor.level)/2)))d6[electricity]] damage for every 2 levels of the soul seed to all creatures in an @Template[type:cone|distance:30], with a @Check[type:reflex|against:class-spell|basic:true] save.</p>"
+        },
+        "Breath of Dragons (Conspirator)": {
+            "name": "Breath of Dragons (Conspirator)",
+            "description": "<p><strong>Aspect</strong> dragon</p><p><strong>Activate—Smoke Breath</strong> <span class=\"action-glyph\">2</span> (concentrate); <strong>Effect</strong> You breathe out a cone of noxious smoke. You deal @Damage[(2*max(1,floor((@actor.level)/2)))d6[poison]] damage for every 2 levels of the soul seed to all creatures in either a @Template[type:cone|distance:30], with a @Check[type:reflex|against:class-spell|basic:true] save.</p>"
+        },
+        "Breath of Dragons (Copper)": {
+            "name": "Breath of Dragons (Copper)",
+            "description": "<p><strong>Aspect</strong> dragon</p><p><strong>Activate</strong> <span class=\"action-glyph\">2</span> command, envision; <strong>Effect</strong> You breathe out a line of energy. You deal @Damage[(2*max(1,floor((@actor.level)/2)))d6[acid]] damage for every 2 levels of the soul seed to all creatures in an @Template[type:line|distance:80], with a @Check[type:reflex|against:class-spell|basic:true] save.</p>"
+        },
+        "Breath of Dragons (Diabolic)": {
+            "name": "Breath of Dragons (Diabolic)",
+            "description": "<p><strong>Aspect</strong> dragon</p><p><strong>Activate—Hellfire Breath</strong> <span class=\"action-glyph\">2</span> (concentrate); <strong>Effect</strong> You breathe out a cone of unholy fire. You deal @Damage[(2*max(1,floor((@actor.level)/2)))d6[fire,unholy]] damage for every 2 levels of the soul seed to all creatures in either a @Template[type:cone|distance:30], with a @Check[type:reflex|against:class-spell|basic:true] save.</p>"
+        },
+        "Breath of Dragons (Empyreal)": {
+            "name": "Breath of Dragons (Empyreal)",
+            "description": "<p><strong>Aspect</strong> dragon</p><p><strong>Activate—Spirit Breath</strong> <span class=\"action-glyph\">2</span> (concentrate); <strong>Effect</strong> You breathe out a cone of holy fire. You deal @Damage[(2*max(1,floor((@actor.level)/2)))d6[spirit,holy]] damage for every 2 levels of the soul seed to all creatures in either a @Template[type:cone|distance:30], with a @Check[type:reflex|against:class-spell|basic:true] save.</p>"
+        },
+        "Breath of Dragons (Fortune)": {
+            "name": "Breath of Dragons (Fortune)",
+            "description": "<p><strong>Aspect</strong> dragon</p><p><strong>Activate—Disruptive Breath</strong> <span class=\"action-glyph\">2</span> (concentrate); <strong>Effect</strong> You breathe out a cone of magic-disruupting energies. You deal @Damage[(2*max(1,floor((@actor.level)/2)))d6[force]] damage for every 2 levels of the soul seed to all creatures in either a @Template[type:cone|distance:30], with a @Check[type:reflex|against:class-spell|basic:true] save.</p>"
+        },
+        "Breath of Dragons (Gold)": {
+            "name": "Breath of Dragons (Gold)",
+            "description": "<p><strong>Aspect</strong> dragon</p><p><strong>Activate</strong> <span class=\"action-glyph\">2</span> command, envision; <strong>Effect</strong> You breathe out a cone of energy. You deal @Damage[(2*max(1,floor((@actor.level)/2)))d6[fire]] damage for every 2 levels of the soul seed to all creatures in an @Template[type:cone|distance:30], with a @Check[type:reflex|against:class-spell|basic:true] save.</p>"
+        },
+        "Breath of Dragons (Green)": {
+            "name": "Breath of Dragons (Green)",
+            "description": "<p><strong>Aspect</strong> dragon</p><p><strong>Activate</strong> <span class=\"action-glyph\">2</span> command, envision; <strong>Effect</strong> You breathe out a cone of energy. You deal @Damage[(2*max(1,floor((@actor.level)/2)))d6[poison]] damage for every 2 levels of the soul seed to all creatures in an @Template[type:cone|distance:30], with a @Check[type:reflex|against:class-spell|basic:true] save.</p>"
+        },
+        "Breath of Dragons (Horned)": {
+            "name": "Breath of Dragons (Horned)",
+            "description": "<p><strong>Aspect</strong> dragon</p><p><strong>Activate—Poison Breath</strong> <span class=\"action-glyph\">2</span> (concentrate); <strong>Effect</strong> You breathe out a cone of energy. You deal @Damage[(2*max(1,floor((@actor.level)/2)))d6[poison]] damage for every 2 levels of the soul seed to all creatures in an @Template[type:cone|distance:30], with a @Check[type:reflex|against:class-spell|basic:true] save.</p>"
+        },
+        "Breath of Dragons (Mirage)": {
+            "name": "Breath of Dragons (Mirage)",
+            "description": "<p><strong>Aspect</strong> dragon</p><p><strong>Activate—Hallucinatory Breath</strong> <span class=\"action-glyph\">2</span> (concentrate); <strong>Effect</strong> You breathe out a cone clouds that assault the senses. You deal @Damage[(2*max(1,floor((@actor.level)/2)))d6[mental]] damage for every 2 levels of the soul seed to all creatures in either a @Template[type:cone|distance:30], with a @Check[type:reflex|against:class-spell|basic:true] save.</p>"
+        },
+        "Breath of Dragons (Omen)": {
+            "name": "Breath of Dragons (Omen)",
+            "description": "<p><strong>Aspect</strong> dragon</p><p><strong>Activate—Destiny Breath</strong> <span class=\"action-glyph\">2</span> (concentrate); <strong>Effect</strong> You breathe out a cone clouds that assault the senses. You deal @Damage[(2*max(1,floor((@actor.level)/2)))d6[mental]] damage for every 2 levels of the soul seed to all creatures in either a @Template[type:cone|distance:30], with a @Check[type:reflex|against:class-spell|basic:true] save.</p>"
+        },
+        "Breath of Dragons (Red)": {
+            "name": "Breath of Dragons (Red)",
+            "description": "<p><strong>Aspect</strong> dragon</p><p><strong>Activate</strong> <span class=\"action-glyph\">2</span> command, envision; <strong>Effect</strong> You breathe out a cone of energy. You deal @Damage[(2*max(1,floor((@actor.level)/2)))d6[fire]] damage for every 2 levels of the soul seed to all creatures in an @Template[type:cone|distance:30], with a @Check[type:reflex|against:class-spell|basic:true] save.</p>"
+        },
+        "Breath of Dragons (Silver)": {
+            "name": "Breath of Dragons (Silver)",
+            "description": "<p><strong>Aspect</strong> dragon</p><p><strong>Activate</strong> <span class=\"action-glyph\">2</span> command, envision; <strong>Effect</strong> You breathe out a cone of energy. You deal @Damage[(2*max(1,floor((@actor.level)/2)))d6[cold]] damage for every 2 levels of the soul seed to all creatures in an @Template[type:cone|distance:30], with a @Check[type:reflex|against:class-spell|basic:true] save.</p>"
+        },
+        "Breath of Dragons (Sovereign)": {
+            "name": "Breath of Dragons (Sovereign)",
+            "description": "<p><strong>Aspect</strong> dragon</p><p><strong>Activate</strong> <span class=\"action-glyph\">2</span> command, envision; <strong>Effect</strong> You breathe out a cone of energy. You deal @Damage[(2*max(1,floor((@actor.level)/2)))d6[mental]] damage for every 2 levels of the soul seed to all creatures in an @Template[type:cone|distance:30], with a @Check[type:reflex|against:class-spell|basic:true] save.</p>"
+        },
+        "Breath of Dragons (Umbral)": {
+            "name": "Breath of Dragons (Umbral)",
+            "description": "<p><strong>Aspect</strong> dragon</p><p><strong>Activate</strong> <span class=\"action-glyph\">2</span> command, envision; <strong>Effect</strong> You breathe out a cone of energy. You deal @Damage[(2*max(1,floor((@actor.level)/2)))d6[void]] damage for every 2 levels of the soul seed to all creatures in an @Template[type:cone|distance:30], with a @Check[type:reflex|against:class-spell|basic:true] save.</p>"
+        },
+        "Breath of Dragons (White)": {
+            "name": "Breath of Dragons (White)",
+            "description": "<p><strong>Aspect</strong> dragon</p><p><strong>Activate</strong> <span class=\"action-glyph\">2</span> command, envision; <strong>Effect</strong> You breathe out a cone of energy. You deal @Damage[(2*max(1,floor((@actor.level)/2)))d6[cold]] damage for every 2 levels of the soul seed to all creatures in an @Template[type:cone|distance:30], with a @Check[type:reflex|against:class-spell|basic:true] save.</p><p></p>"
+        },
+        "Call of the Wild": {
+            "name": "Call of the Wild",
+            "description": "<p><strong>Aspect</strong> beast</p>\n<p><strong>Activate</strong> <span class=\"action-glyph\">2</span> (concentrate, manipulate)</p>\n<hr />\n<p><strong>Effect</strong> Your relic summons a creature to fight at your side, casting @UUID[Compendium.pf2e.spells-srd.Item.4YnON9JHYqtLzccu]{Summon Animal} with a rank of half the item’s level rounded up. You can Sustain this Activation as you would the spell.</p>"
+        },
+        "Charming": {
+            "name": "Charming",
+            "description": "<p><strong>Aspect</strong> artistry</p>\n<p><strong>Frequency </strong>once per day</p>\n<p><strong>Activate</strong> <span class=\"action-glyph\">2</span> command, envision</p>\n<hr />\n<p><strong>Effect</strong> You speak briefly about your craft or enact a short performance. The relic casts @UUID[Compendium.pf2e.spells-srd.Item.vLA0q0WOK2YPuJs6]{Charm} at a rank equal to half its item level.</p>"
+        },
+        "Clean Luck": {
+            "name": "Clean Luck",
+            "description": "<p><strong>Aspect </strong>luck</p>\n<p><strong>Activate </strong><span class=\"action-glyph\">R</span></p>\n<p><strong>Frequency </strong>once per 10 minutes</p>\n<p><strong>Trigger </strong>you attempt a d20 roll affected by a misfortune effect</p>\n<hr />\n<p><strong>Effect </strong>Negate the misfortune effect. Any other fortune effect still applies.</p>"
+        },
+        "Cleanse Soul": {
+            "name": "Cleanse Soul",
+            "description": "<p><strong>Aspect</strong> soul</p>\n<p><strong>Activate</strong> 1 minute (command, envision)</p>\n<p><strong>Frequency</strong> once per day</p>\n<hr />\n<p><strong>Effect</strong> You cleanse a soul of curses. The soul seed attempts to counteract all curses on you or another creature you touch throughout the activation. The target's soul is bolstered against further curses, and they gain a +2 status bonus to saving throws against curses for 1 hour.</p>"
+        },
+        "Command Legion": {
+            "name": "Command Legion",
+            "description": "<p><strong>Aspect</strong> fiend</p>\n<p><strong>Frequency </strong>once per day</p>\n<p><strong>Activate</strong> <span class=\"action-glyph\">3</span> (concentrate)</p>\n<hr />\n<p><strong>Effect</strong> Your relic opens a gate within itself, overwhelming your enemies with fiends. You cast 6th-rank @UUID[Compendium.pf2e.spells-srd.Item.29ytKctjg7qSW2ff]{Summon Fiend}, but summon two fiends instead of one, and you can command them both with 1 action to Sustain a Spell. If the relic has the @UUID[Compendium.pf2e-relics.relic-gifts.Item.ll3vBFxxOTJD6spG]{Profane Fervor} gift, this activation grants the effects of that gift as well, without expending its daily use. For the next minute, you can use the following activation.</p>\n<p><strong>Activate</strong> <span class=\"action-glyph\">F</span> (concentrate) <strong>Trigger</strong> One of the fiends summoned by command legion is banished; <strong>Effect</strong> You summon that same fiend again in an adjacent space. The fiend returns at full Hit Points and all conditions, spells, and other effects on it end before you summon it again. However, it does not recover any limited-use abilities it used before, such as innate spells or abilities with a Frequency entry.</p>"
+        },
+        "Curse Wound": {
+            "name": "Curse Wound",
+            "description": "<p><strong>Aspect</strong> fiend</p><p><strong>Prerequisite</strong> The relic is a weapon</p><p><strong>Activate</strong> <span class=\"action action-glyph\" title=\"Reaction\" aria-label=\"Reaction\">R</span> (concentrate)</p><p><strong>Trigger</strong> Your Strike with your relic deals damage to a creature within 60 feet</p><hr /><p><strong>Effect</strong> The evil within your relic curses an enemy's wound to ensure they won't heal. The triggering creature must attempt a @Check[type:will|against:class-spell] save or be unable to restore the Hit Points lost by damage from the triggering Strike until its next daily preparations. If you use Curse Wound on a creature already affected by your Curse Wound, your previous application expires.</p>"
+        },
+        "Dancing Shadow": {
+            "name": "Dancing Shadow",
+            "description": "<p><strong>Aspect</strong> shadow</p>\n<p><strong>Prerequisite</strong> The relic is a weapon.</p>\n<p><strong>Activate</strong> <span class=\"pf2-icon\">2</span> (concentrate, manipulate)</p>\n<p><strong>Frequency</strong> once per hour</p>\n<hr />\n<p><strong>Effect</strong> Your relic's shadow detaches from your relic and dances through the air to attack an enemy. When you Activate the relic, designate a target. The relic's shadow flies up to 60 feet until it is adjacent to that foe and then makes a Strike against it, dealing @Damage[5d8[untyped]] damage on a success or double that on a critical success; the damage type is of any type normally dealt by your relic. The shadow uses your attack bonus with the relic, and it uses and contributes to your multiple attack penalty. While this activation is in effect, you can use a single action, which has the attack and concentrate traits, to mentally direct the shadow to make another Strike against the same target. The shadow lasts until that target is reduced to 0 Hit Points, that target moves more than 400 feet from you, or that target moves to an area where no shadow could be cast, such as an area of complete darkness, whichever comes first.</p>\n<p>The shadow doesn't take up space, grant flanking, or have any other attributes a creature would, and it automatically follows the chosen foe. The shadow can't make any attack other than its Strike, and feats or spells that affect weapons do not apply to it.</p>"
+        },
+        "Dark Roads": {
+            "name": "Dark Roads",
+            "description": "<p><strong>Aspect</strong> shadow</p>\n<p><strong>Activate</strong> <span class=\"pf2-icon\">2</span> command, envision</p>\n<hr />\n<p><strong>Effect</strong> Your relic creates a path from your shadow to a nearby one, teleporting you and any items you're wearing or holding from your current space to an unoccupied one within 30 feet that you can see. You can't use the dark roads gift again for [[/r 1d4 #Recharge the dark roads gift]]{1d4 rounds}.</p>\n<p>If the destination is not within an area of bright light, the range is instead 60 feet. If this would bring another creature with you—even if you're carrying it in an extradimensional container—the gift fails.</p>"
+        },
+        "Deadly Spark": {
+            "name": "Deadly Spark",
+            "description": "<p><strong>Aspect</strong> air</p><p><strong>Activate</strong> <span class=\"action-glyph\">2 </span>(concentrate, manipulate)</p><hr /><p><strong>Effect</strong> A spark flashes out from the relic toward a creature within 20 feet. This spark deals @Damage[1d12[electricity]] damage (@Check[type:reflex|against:class-spell|basic:true] save). The damage increases by 1d12 at 6th level and by another 1d12 every 4 levels thereafter.</p><p>@Damage[(1+max(0,floor((@actor.level -2)/4)))d12[electricity]]{Leveled electricity damage}</p>"
+        },
+        "Death Gaze": {
+            "name": "Death Gaze",
+            "description": "<p><strong>Aspect</strong> death</p><p><strong>Activate</strong> <span class=\"action\" title=\"Two Actions\" aria-label=\"Two Actions\">2</span> (concentrate, manipulate)</p><hr /><p><strong>Effect</strong> Your stare causes a creature’s flesh to rot and wither away. Target a creature you can see within 30 feet. Your stare deals @Damage[(max(1,floor((@actor.level)/2)))d6[void]] damage to the creature for every 2 levels the relic has (minimum 1d6; @Check[type:fortitude|against:class-spell|basic:true]). An undead creature or other creature with void healing targeted this way is instead healed 1d6 HP per level of the relic and is temporarily immune to this effect for 10 minutes.</p>"
+        },
+        "Divine Retribution": {
+            "name": "Divine Retribution",
+            "description": "<p><strong>Aspect</strong> celestial</p>\n<p><strong>Prerequisites</strong> The relic is a weapon.</p>\n<p><strong>Activate</strong> <span class=\"action-glyph\">2</span> (concentrate)</p>\n<hr />\n<p><strong>Effect</strong> Drawing upon divine fury, you single out a target that damaged you or an ally within the past round and fill your relic with divine vengeance against them. Make a Strike against that foe, dealing an additional damage die on a hit. If the target has the unholy trait, it's also @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 1} until the start of your next turn on a hit (or @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 2} on a critical hit).</p>"
+        },
+        "Dominant Emotion": {
+            "name": "Dominant Emotion",
+            "description": "<p><strong>Aspect</strong> emotion</p>\n<p><strong>Frequency </strong>once per hour</p>\n<p><strong>Activate</strong> <span class=\"action-glyph\"><span class=\"action\" title=\"Reaction\" aria-label=\"Reaction\">R</span> </span>envision</p>\n<p><strong>Trigger</strong> You would be adversely affected by an emotion effect</p>\n<hr />\n<p><strong>Effect</strong> The relic tries to neutralize the triggering effect with its own emotion, attempting a counteract check. If the check succeeds, you feel a sudden rush of the relic's emotion and the counteracted effect doesn't take hold of you.</p>"
+        },
+        "Draconic Arrogance": {
+            "name": "Draconic Arrogance",
+            "description": "<p><strong>Aspect</strong> dragon</p>\n<p><strong>Frequency </strong>once per day</p>\n<p><strong>Activate </strong><span class=\"action-glyph\">R</span> (command, envision)</p>\n<p><strong>Trigger</strong> You're about to roll a saving throw</p>\n<hr />\n<p><strong>Effect</strong> You laugh at fate and revel in your draconic arrogance. If you roll a critical success on the saving throw, you can attempt to @UUID[Compendium.pf2e.actionspf2e.Item.2u915NdUyQan6uKF]{Demoralize} the creature that created the effect that forced you to roll the saving throw (if any). If you roll a success, you critically succeed instead. If you roll a failure (but not a critical failure), you succeed instead. If you roll a critical failure, however, you're forced to face your own hubris and become @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 2}.</p>"
+        },
+        "Draconic Ascendance": {
+            "name": "Draconic Ascendance",
+            "description": "<p><strong>Aspect</strong> dragon</p>\n<p><strong>Frequency </strong>once per hour</p>\n<div id=\"page\" class=\"page clearfix\">\n<div id=\"ctl00_RadDrawer1_Content\" class=\"k-drawer-content\">\n<div id=\"main-wrapper\" class=\"main-wrapper compressed\">\n<div id=\"main\" class=\"main\"><strong>Activate</strong> <span class=\"action action-glyph\" title=\"Two Actions\" aria-label=\"Two Actions\">2</span> command, envision<hr /><span id=\"ctl00_RadDrawer1_Content_MainContent_DetailedOutput\"><strong>Effect</strong> The soul seed casts 8th-rank @UUID[Compendium.pf2e.spells-srd.Item.5c692cCcTDXjSEzk]{Dragon Form} targeting you; you must take the dragon form corresponding to the soul seed's draconic origin.</span></div>\n<div class=\"main\"> </div>\n<div class=\"main\"><em><strong>Editor's Note:</strong> Dragon Form does not have all of the applicable dragon types, if you pick this ability and have chose a dragon type for your soul seed that is not provided in the spell's normal parameters, work with your GM on either choosing the appropriate type, and making a custom spell effect for your specific type.</em></div>\n</div>\n</div>\n</div>\n<div id=\"footer\" class=\"footer\"></div>"
+        },
+        "Draconic Resistance": {
+            "name": "Draconic Resistance",
+            "description": "<p><strong>Aspect</strong> dragon</p>\n<p>You grow scales that guard against draconic attacks. You gain a +1 status bonus to AC against attacks from dragons and resistance to an energy type corresponding to the soul seed's draconic origin (such as fire resistance from a red dragon) equal to half the relic's level (minimum resistance 1).</p>\n<p><em><strong>Editor's Note </strong></em><em>Since the only thing affected by the different type of dragon is a damage resistance, I've simplified the variants to only include one for each damage type, as opposed to the dragon type.</em></p>",
+            "rules": {
+                "2": {
+                    "choices": {
+                        "0": {
+                            "label": "Acid"
+                        },
+                        "1": {
+                            "label": "Cold"
+                        },
+                        "2": {
+                            "label": "Electricity"
+                        },
+                        "3": {
+                            "label": "Fire"
+                        },
+                        "4": {
+                            "label": "Mental"
+                        },
+                        "5": {
+                            "label": "Poison"
+                        },
+                        "6": {
+                            "label": "Void"
+                        }
+                    }
+                }
+            }
+        },
+        "Dragon Strike": {
+            "name": "Dragon Strike",
+            "description": "<p><strong>Aspect </strong>dragon</p><p><strong>Activate</strong> <span class=\"action-glyph\">1</span> (command, envision)</p><hr /><p><strong>Effect</strong> Ghostly images of draconic claws form around your hands and linger in the air when you attack. For 1 minute, when you make a successful unarmed melee Strike, you deal an additional 1d6 slashing damage. At 11th level, you can use the ability once per 10 minutes instead of once per hour.</p><hr /><p>@UUID[Compendium.pf2e-relics.relic-effects.Item.3jptXZxp07IJejPX]{Cooldown: Dragon Strike}</p>"
+        },
+        "Ease Burden": {
+            "name": "Ease Burden",
+            "description": "<p><strong>Aspect</strong> earth</p>\n<hr />\n<p>Your relic draws strength from the earth underfoot to lighten your load. As long as your relic is on your person and you are standing on the ground, you can carry 1 more Bulk than normal before becoming encumbered, and you increase your maximum Bulk by 2. At 6th level and every 4 levels thereafter, increase the Bulk you can carry before becoming encumbered by 1 and your maximum Bulk by 2.</p>"
+        },
+        "Emotion Conduit": {
+            "name": "Emotion Conduit",
+            "description": "<p><strong>Aspect </strong>emotion</p>\n<p><strong>Activate</strong><span class=\"action-glyph\"> 2 </span>(command, Interact)</p>\n<hr />\n<p><strong>Effect</strong> You channel your relic's emotion at a target within 30 feet, overpowering an emotion effect on that creature. The relic attempts a counteract check. If the check succeeds, the target feels a sudden rush of the relic's emotion, and the counteracted effect ends on the target. The target is temporarily immune to your relic's emotion conduit until you make your next daily preparations.</p>"
+        },
+        "Emotion Surge": {
+            "name": "Emotion Surge",
+            "description": "<p><strong>Aspect</strong> emotion</p>\n<p><strong>Frequency </strong>once per hour</p>\n<p><strong>Activate </strong><span class=\"action-glyph\">1 </span>command</p>\n<hr />\n<p><strong>Effect</strong> A surge of emotion emanates from your relic, granting a +1 status bonus to skill checks determined by the relic's emotion. This bonus lasts for 1 minute.</p>\n<p><strong>Anger</strong> Athletics checks<br /><strong>Awe</strong> Performance checks<br /><strong>Dedication</strong> Checks to Recall Knowledge<br /><strong>Fear</strong> Stealth checks<br /><strong>Hatred</strong> Intimidation checks<br /><strong>Joy </strong>Diplomacy checks<br /><strong>Love </strong>Medicine checks<br /><strong>Misery </strong>Survival checks<br /><strong>Pride</strong> Society checks<br /><strong>Remorse</strong> Deception checks</p>\n<p><em><strong>Editor's Note </strong>You pick one emotion for your Relic. A tip would be to write in parentheses which emotion you picked for your Relic in the name of this ability and erase all the irrelevant emotiosn from the list above. The effect has a toggle for the sake of ease.</em></p>"
+        },
+        "Encompassing Darkness": {
+            "name": "Encompassing Darkness",
+            "description": "<p><strong>Aspect</strong> shadow</p>\n<hr />\n<p>The shadows at your feet can hold objects. You can Interact with your shadow to store or remove objects, just like you would a mundane container. Your shadow can contain 3 Bulk of objects, which don’t count toward the Bulk you are carrying. At 6th level, and every 4 levels thereafter, you can store 1 additional Bulk of objects in your shadow. While the items are in your shadow and can be detected normally, you gain a +4 circumstance bonus to <span data-pf2-action=\"concealAnObject\" data-pf2-glyph=\"A\">Stealth</span>checks to @UUID[Compendium.pf2e.actionspf2e.Item.qVNVSmsgpKFGk9hV]{Conceal the Objects} unless someone knows to check your shadow for items.</p>"
+        },
+        "Enhancing Circuitry": {
+            "name": "Enhancing Circuitry",
+            "description": "<p><strong>Aspect</strong> metal</p>\n<p>Your relic is engraved with nodes and elements only visible from up close, lacking only a source of current for its machinations. You gain resistance to electricity equal to half the level of your relic (minimum 1).</p>\n<hr />\n<p><strong>Activate—Complete the Circuit </strong><span class=\"pf2-icon\">R</span> (manipulate)</p>\n<p><strong>Trigger</strong> You are targeted by or are in the area of an electricity effect</p>\n<hr />\n<p><strong>Effect</strong> Your relic uses the triggering effect to complete its circuit. You choose which path the electricity takes down the circuit, gaining the corresponding benefit.</p>\n<ul>\n<li><strong>Capacitor </strong>You become electrically charged, gaining a +1 status bonus to attack and damage rolls until the end of your next turn.</li>\n<li><strong>Inductor </strong>Your resistance against electricity damage increases to the level of your relic until the end of your next turn.</li>\n<li><strong>Resistor</strong> Your relic attempts to counteract the effect. On a failure, your relic overheats, dealing fire damage to you equal to the counteract rank of the effect (or double the counteract rank on a critical failure).</li>\n</ul>",
+            "rules": {
+                "2": {
+                    "label": "Inductor"
+                },
+                "3": {
+                    "label": "Capacitor"
+                }
+            }
+        },
+        "Enthralling": {
+            "name": "Enthralling",
+            "description": "<p><strong>Aspect</strong> artistry</p>\n<p><strong>Frequency </strong>once per day</p>\n<p><strong>Activate</strong> <span class=\"action-glyph\"><span class=\"action\" title=\"Two Actions\" aria-label=\"Two Actions\">2</span></span> (command, envision)</p>\n<hr />\n<p><strong>Effect</strong> You speak at length about or demonstrate your craft, or you enact a performance. The relic casts @UUID[Compendium.pf2e.spells-srd.Item.IihxWhRfpsBgQ5jS]{Enthrall} at a rank equal to half its item level. If you have legendary proficiency in Crafting or Performance, creatures can't critically succeed on their saves against this spell. You can use Sustain an Activation to sustain the effect as you would the spell.</p>"
+        },
+        "Fascinating": {
+            "name": "Fascinating",
+            "description": "<p><strong>Aspect</strong> artistry</p>\n<hr />\n<p>You gain the @UUID[Compendium.pf2e.feats-srd.Item.7LB00jkh6JaJr3vS]{Fascinating Performance} skill feat while wearing or wielding the relic, even if you don't meet its prerequisites. If you critically succeed against an observer, that target doesn't become temporarily immune to this effect.</p>\n<p><em><strong>Editor's Note: </strong>You will need to add the feat manually as a Bonus Feat.</em></p>"
+        },
+        "Feather Steps": {
+            "name": "Feather Steps",
+            "description": "<p><strong>Aspect</strong> air</p>\n<p><strong>Prerequisite</strong> The relic is a worn item</p>\n<hr />\n<p>While wearing the relic, you do not trigger traps that use weight or pressure plates as a trigger. Also, whenever you fall, you reduce the falling damage by the level of the relic. If this would reduce the falling damage to 0, you land on your feet and are not prone. The relic grants a +1 item bonus to Athletics checks made to Jump, increasing to +2 at 9th level and +3 at 17th level.</p>"
+        },
+        "Feral Claws": {
+            "name": "Feral Claws",
+            "description": "<p><strong>Aspect</strong> beast</p>\n<p><strong>Prerequisite</strong> The relic is a worn item</p>\n<p><strong>Activate</strong> <span class=\"action-glyph\">1</span> (concentrate)</p>\n<hr />\n<p><strong>Effect</strong> Your hands transform into a pair of claws. These grant you a claw unarmed attack that deals 1d6 slashing damage and has the agile and finesse traits. This lasts until you Dismiss the effect.</p>"
+        },
+        "Fervent Spell": {
+            "name": "Fervent Spell",
+            "description": "<p><strong>Aspect</strong> emotion</p>\n<p><strong>Prerequisite</strong> fervor gift</p>\n<hr />\n<p>While the relic's fervor gift lasts, you have access to the spell provided by the emotional state, which you can cast using your own spell slots. You also have access to the following activation.<br /><br /><strong>Activate </strong><span class=\"action-glyph\">1</span><strong> </strong>(command, Interact)</p>\n<hr />\n<p><strong>Effect</strong> The relic Casts the Spell associated with its emotional fervor at the spell's lowest level.</p>"
+        },
+        "Fervor": {
+            "name": "Fervor",
+            "description": "<p><strong>Aspect</strong> emotion</p>\n<p><strong>Activate</strong> <span class=\"action action-glyph\" title=\"Single Action\" aria-label=\"Single Action\">1</span> (command)</p>\n<hr />\n<p><strong>Effect</strong> You gain the emotional fervor benefits for your relic's emotional state for the next 3 rounds, but ignore the spell associated with the fervor. The feeling wears off quickly, so you experience no emotional fallout.</p>\n<p>@UUID[Compendium.pf2e.feat-effects.Item.JysvElDwGZ5ABQ6x]{Effect: Emotional Fervor}</p>\n<p><em><strong>Editor's Note </strong>You pick one emotion for your Relic. A tip would be to write in parentheses which emotion you picked for your Relic in the name of this ability and erase all the irrelevant emotiosn from the list above. The effect has a toggle for the sake of ease.</em></p>"
+        },
+        "Fiendish Bargain": {
+            "name": "Fiendish Bargain",
+            "description": "<p><strong>Aspect</strong> fiend</p><p><strong>Frequency </strong>once per hour</p><p><strong>Activate</strong> <span class=\"action action-glyph\" title=\"Single Action\" aria-label=\"Single Action\">1</span> (concentrate)</p><hr /><p><strong>Effect</strong> You bargain with the evil force empowering your relic for a boon, though you must trade something in return. Select one of the following benefits to gain.</p><ul><li>Your relic attempts to counteract a harmful condition affecting you.</li><li>You regain @Damage[(3d8+16)[healing]] Hit Points. This is a healing effect.</li><li>You gain a +2 status bonus to attack rolls for 1 minute. @UUID[Compendium.pf2e-relics.relic-effects.Item.b2ld3FEnHBKl9EX7]{Effect: Fiendish Bargain (Attack Bonus)}</li></ul><p>One of the following randomly determined effects occurs to you in payment, after applying the benefit.</p><ul><li>You are @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 1} for 1 minute.</li><li>You are @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 1} for 1 minute.</li><li>You lose [[/r 1d8]] Hit Points.</li><li>You take a –1 penalty to damage rolls for 1 minute. @UUID[Compendium.pf2e-relics.relic-effects.Item.kxrPNJwabHP9p4Se]{Effect: Fiendish Bargain (Damage Penalty)}</li></ul>"
+        },
+        "Fiendish Defiance": {
+            "name": "Fiendish Defiance",
+            "description": "<p><strong>Aspect</strong> fiend</p><p><strong>Prerequisite</strong> The relic is a worn item</p><hr /><p>The fiendish power of your relic offers you more protection against celestials and allows you to ignore harm. While wearing the relic, you gain a +1 status bonus to AC against attacks by celestials and resistance to an energy type corresponding to the relic's fiendish origin (such as fire resistance from a devil). The resistance is equal to half the relic's level (minimum 1).</p><hr /><p><em><strong>Editor's Note: </strong>Though some energy damage types are not officially present to existing fiends, support for all energy damage (including force, vitality, and void) has been included. Poison which was previously supported has been removed by virtue of not being an energy type. If desired, it will have to be added manually to the Choice Set.</em></p>",
+            "rules": {
+                "0": {
+                    "choices": {
+                        "0": {
+                            "label": "Acid"
+                        },
+                        "1": {
+                            "label": "Cold"
+                        },
+                        "2": {
+                            "label": "Electricity"
+                        },
+                        "3": {
+                            "label": "Fire"
+                        },
+                        "4": {
+                            "label": "Force"
+                        },
+                        "5": {
+                            "label": "Vitality"
+                        },
+                        "6": {
+                            "label": "Void"
+                        }
+                    }
+                }
+            }
+        },
+        "Flare Bolt": {
+            "name": "Flare Bolt",
+            "description": "<p><strong>Aspect</strong> fire</p><p><strong>Activate</strong> <span class=\"action-glyph\">2</span> (concentrate, manipulate)</p><hr /><p><strong>Effect</strong> A bolt of flames scorches out from the relic. Make a @Check[type:class-spell|defense:ac]{spell attack roll} with your relic against a target within 30 feet. The bolt deals @Damage[(max(1,floor((@actor.level)/2)))d6[fire]] (1d6 damage for every 2 levels the relic has (minimum 1d6)).</p><p><strong>Critical Success</strong> The bolt deals double damage, as well as @Damage[(@actor.level)[persistent,fire]]{persistent fire} damage equal to the level of the relic.</p><p><strong>Success</strong> The bolt deals full damage.</p>"
+        },
+        "Flowing Footsteps": {
+            "name": "Flowing Footsteps",
+            "description": "<p><strong>Aspect</strong> water</p>\n<hr />\n<p>Your relic ensures no water impedes your movement. You gain the effects of the @UUID[Compendium.pf2e.spells-srd.Item.Seaah9amXg70RKw2]{Water Walk} spell, and the ability to breathe water. You also gain a swim Speed equal to your Speed or 15 feet, whichever is higher.</p>"
+        },
+        "Force Blast": {
+            "name": "Force Blast",
+            "description": "<p><strong>Aspect</strong> soul</p><p><strong>Activate</strong> <span class=\"pf2-icon\">2</span> (command, envision)</p><hr /><p><strong>Effect</strong> A blast of force envelops a creature of your choosing within 30 feet. This blast deals @Damage[(1d6 + floor((@actor.level - 1) / 2)d6)[force]] damage, with a (@Check[type:fortitude|against:class-spell|basic:true]) save. The damage increases by 1d6 at 3rd level and every 2 levels thereafter.</p>"
+        },
+        "Forge Weld": {
+            "name": "Forge Weld",
+            "description": "<p><strong>Aspect</strong> forge</p>\n<p><strong>Frequency </strong>once per day</p>\n<p><strong>Activate</strong> <span class=\"action-glyph\">2</span> (command, Interact)</p>\n<hr />\n<p><strong>Effect</strong> You strike the relic against a non-magical metal object of 4 Bulk or less, repairing it. The object's edges glow white hot, and you restore 5 Hit Points to the object per level of the relic. If this repairs the item above its Broken Threshold, it is no longer broken. This ability cannot replace lost pieces or restore something that's been completely destroyed.</p>\n<p>[[/r (max(5,floor((@actor.level)*5)))]]{Leveled Repair}</p>"
+        },
+        "Form of Fury": {
+            "name": "Form of Fury",
+            "description": "<p><strong>Aspect</strong> beast</p>\n<p><strong>Prerequisite</strong> The relic is a worn item</p>\n<p><strong>Frequency </strong>twice per day</p>\n<p><strong>Activate</strong> <span class=\"action-glyph\"><span class=\"action\" title=\"Two Actions\" aria-label=\"Two Actions\">2 </span></span><span title=\"Two Actions\" aria-label=\"Two Actions\">(</span>concentrate)</p>\n<hr />\n<p><strong>Effect</strong> Calling upon the bestial nature within, you change shape into that of an animal. The relic casts @UUID[Compendium.pf2e.spells-srd.Item.wp09USMB3GIW1qbp]{Animal Form} on you, transforming you into the same type of animal every time, chosen when the gift is gained; the spell rank is half the item’s level, rounded down.</p>"
+        },
+        "Form of Vengeance": {
+            "name": "Form of Vengeance",
+            "description": "<p><strong>Aspect</strong> beast</p>\n<p><strong>Prerequisite</strong> form of fury gift</p>\n<hr />\n<p>Whenever you use the relic’s form of fury activation, it can cast @UUID[Compendium.pf2e.spells-srd.Item.NzXpEzcZAjuDTZjK]{Aerial Form} or @UUID[Compendium.pf2e.spells-srd.Item.KhM8MhoUgoUjBMIz]{Dinosaur Form} instead of @UUID[Compendium.pf2e.spells-srd.Item.wp09USMB3GIW1qbp]{Animal Form}. Like form of fury, these spells also turn you into the same type of animal each time (so you have three forms you can assume in total, one from each spell). The spell rank is the same as defined in form of fury.</p>\n<p>While transformed, you can switch from one of the three forms to another by Sustaining the Activation. This doesn’t change the duration.</p>"
+        },
+        "Grappling Vine": {
+            "name": "Grappling Vine",
+            "description": "<p><strong>Aspect</strong> plant</p><p><strong>Activate </strong><span class=\"pf2-icon\">1</span> (manipulate)</p><hr /><p><strong>Effect</strong> Your relic launches a sticky, multi-stranded vine at a target within 50 feet. Make an @Check[type:class-spell]{attack roll} as you would when using a @UUID[Compendium.pf2e.equipment-srd.Item.6DCy7tEF1cxaIJMy]{Grappling Hook}, but if you roll a critical failure on the check to secure the vine, you get a failure instead. Once the vine is anchored, creatures receive a +1 status bonus to Athletics checks to Climb the vine, and they gain a +5-foot status bonus to the distance they move with a successful check while Climbing using the vine. The vine lasts for 1 day or until you use Grappling Vine again, at which point your older vine withers.</p>"
+        },
+        "Grim Specter": {
+            "name": "Grim Specter",
+            "description": "<p><strong>Aspect</strong> death</p>\n<p><strong>Frequency </strong>once per day</p>\n<p><strong>Activate</strong> <span class=\"action-glyph\">2</span> (concentrate, polymorph, void)</p>\n<hr />\n<p><strong>Effect</strong> You can call upon the terrifying powers that fuel your relic to transform yourself into a specter of death. You become incorporeal, having no physical body. You are immune to effects that require a physical body, including precision damage as well as exposure to most diseases and poisons. You also have resistance to all damage equal to half the relic’s level; force damage, @UUID[Compendium.pf2e.equipment-srd.Item.JQdwHECogcTzdd8R]{Ghost Touch} attacks, spirit damage, void damage, and vitality damage ignore this resistance, and the resistance doubles against non-magical damage.</p>\n<p>You can move through solid objects. When inside an object, you can’t perceive, attack, or Interact with anything outside it, and you’re always @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1} on turns you start in an object. Corporeal creatures can pass through you but can’t end their movement in your space. You can’t attempt Strength-based checks against corporeal creatures or objects, unless those objects have the ghost touch property rune. Likewise, corporeal creatures can’t attempt Strength-based checks against you.</p>\n<p>You can Sustain the Activation up to 1 minute.</p>"
+        },
+        "Healing Wave": {
+            "name": "Healing Wave",
+            "description": "<p><strong>Aspect</strong> life</p><p><strong>Frequency </strong>once per hour</p><p><strong>Activate</strong> <span class=\"action action-glyph\" title=\"Two Actions\" aria-label=\"Two Actions\">2</span> (concentrate)</p><hr /><p><strong>Effect</strong> You release a wave of positive energy in a @Template[type:cone|distance:15]. You and each living target in the area regain @Damage[(max(1,floor(@actor.level)))d4[healing,vitality]] HP per level of the relic.</p>"
+        },
+        "Heat Haze": {
+            "name": "Heat Haze",
+            "description": "<p><strong>Aspect </strong>fire</p>\n<hr />\n<p>Your relic's heat keeps the air around you pleasantly warm. While you are holding or wearing the relic, it protects you from severe environmental cold. At 9th level, it also protects you from extreme cold, and at 17th level, it protects you from incredible cold. At 4th level, the relic also gains the following activation.</p>\n<hr />\n<p><strong>Activate </strong><span class=\"action-glyph\">2</span> (concentrate)</p>\n<p><strong>Frequency</strong> once per day</p>\n<p><strong>Effect </strong>Your relic erratically elevates the air temperature around you, creating heat shimmers that distort your appearance and grant you the @UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{Concealed} condition for 1 minute. As the nature of this effect still leaves your location obvious, you can't use this concealment to @UUID[Compendium.pf2e.actionspf2e.Item.XMcnh4cSI32tljXa]{Hide} or @UUID[Compendium.pf2e.actionspf2e.Item.VMozDqMMuK5kpoX4]{Sneak}.</p>"
+        },
+        "Heaven's Grace": {
+            "name": "Heaven's Grace",
+            "description": "<p><strong>Aspect</strong> celestial</p><p><strong>Prerequisite</strong> The relic is a worn item.</p><hr /><p>The heavens protect you from harm. While wearing the relic, you gain a +1 status bonus to AC against attacks by fiends and resistance to an energy type corresponding to the relic’s celestial origin (such as sonic resistance from a choral angel). The resistance is equal to half the relic’s level (minimum 1).</p><hr /><p><em><strong>Editor's Note: </strong>Though some energy damage types are not officially present to existing celestials, support for all energy damage (including force, vitality, and void) has been included.</em></p>",
+            "rules": {
+                "0": {
+                    "choices": {
+                        "0": {
+                            "label": "Acid"
+                        },
+                        "1": {
+                            "label": "Cold"
+                        },
+                        "2": {
+                            "label": "Electricity"
+                        },
+                        "3": {
+                            "label": "Fire"
+                        },
+                        "4": {
+                            "label": "Force"
+                        },
+                        "5": {
+                            "label": "Vitality"
+                        },
+                        "6": {
+                            "label": "Void"
+                        }
+                    }
+                }
+            }
+        },
+        "Incandescent Sight": {
+            "name": "Incandescent Sight",
+            "description": "<p><strong>Aspect</strong> fire</p>\n<p><strong>Frequency </strong>once per day</p>\n<p><strong>Activate</strong> <span class=\"action action-glyph\" title=\"Two Actions\" aria-label=\"Two Actions\">2</span> (concentrate)</p>\n<hr />\n<p><strong>Effect</strong> Your eyes become attuned to heat signatures as your vision extends into the infrared, granting you a heatsight precise sense for 1 minute. Your heatsight can see temperature gradients out to a range of 30 feet, allowing you to detect living creatures and warm objects even in the dark. Warm objects block your heatsight even if they are transparent, such as hot water.</p>"
+        },
+        "Inextinguishable": {
+            "name": "Inextinguishable",
+            "description": "<p><strong>Aspect </strong>life</p><hr /><p>Your connection to life force makes you more difficult to snuff out than others. You die from the dying condition at dying 5, rather than dying 4. If you roll a success on a save against a death or void effect, you get a critical success instead.</p>"
+        },
+        "Inspiring": {
+            "name": "Inspiring",
+            "description": "<p><strong>Aspect</strong> artistry</p>\n<p><strong>Activate</strong><span class=\"action-glyph\"> 1</span> varies</p>\n<hr />\n<p><strong>Effect</strong> You create a vision (envision) of a token you could have crafted or make a short performance (command) to inspire an ally within 60 feet. This otherwise works as the @UUID[Compendium.pf2e.spells-srd.Item.f0Z5mqGA6Yu79B8x]{Uplifting Overture} cantrip.</p>"
+        },
+        "Intelligent Relic": {
+            "name": "Intelligent Relic",
+            "description": "<p><strong>Aspect</strong> intelligent relic</p>\n<hr />\n<div id=\"page\" class=\"page clearfix\">\n<div id=\"ctl00_RadDrawer1_Content\" class=\"k-drawer-content\">\n<div id=\"main-wrapper\" class=\"main-wrapper compressed\">\n<div id=\"main\" class=\"main\"><span id=\"ctl00_RadDrawer1_Content_MainContent_DetailedOutput\">Your relic becomes an intelligent item. It has an alignment within one step of yours on each axis if not matching yours. It gains an alignment trait matching its alignment. The relic possesses precise sight at a range of 30 feet and imprecise hearing at a range of 30 feet. It is trained in Perception, increasing its proficiency when you increase yours. Choose whether it can speak aloud or communicate with you telepathically. It knows languages fitting its backstory, usually from among those you know. The relic is also trained in three skills, increasing one skill's proficiency each time the relic gains a new gift. Your relic's mental ability scores begin at +3, +2, and +1, arranged as you choose. The relic is also trained in Will saves, and its proficiency increases as yours does. Each time you gain a new gift, increase one of the relic's mental ability scores by 2 or two by 1. The relic otherwise functions as normal for an intelligent item.</span></div>\n</div>\n</div>\n</div>\n<div id=\"footer\" class=\"footer\"></div>"
+        },
+        "Jet Propulsion": {
+            "name": "Jet Propulsion",
+            "description": "<p><strong>Aspect</strong> fire</p>\n<p><strong>Frequency </strong>once per hour</p>\n<p><strong>Activate</strong><span class=\"action-glyph\"> <span class=\"action\" title=\"Single Action\" aria-label=\"Single Action\">1</span> </span>(concentrate)</p>\n<hr />\n<p><strong>Effect</strong> Flames from your relic channel through your body, erupting from your feet, hands, or other limbs with enough force to blast you across the ground and propel you through the air. For 1 minute, you gain a +10-foot status bonus to your Speed and gain a fly Speed equal to your new Speed or 20 feet, whichever is greater. You must end your turn on solid ground, or you fall.</p>"
+        },
+        "Lashing Currents": {
+            "name": "Lashing Currents",
+            "description": "<p><strong>Aspect</strong> water</p>\n<p><strong>Prerequisite</strong> The relic is a weapon.</p>\n<hr />\n<p>Water collects at the tip of your relic. You can adjust your grip on your relic with an Interact action to allow you to make lashing current weapon Strikes with your relic, which deal @Damage[1d4[bludgeoning]] damage; have the disarm, finesse, reach 10, trip, and versatile S traits; and are in the flail group. Your lashing current Strikes gain the benefit of your relic's fundamental and property runes, though any property runes that would not be applicable to the lashing currents are not applied. You can use another Interact action to return to your normal grip and make Strikes with the relic.</p>\n<p>@UUID[Compendium.pf2e-macro-helper-library.helper-library-macros.Macro.hRCi5uHwsTJHQ4Dt]{Lashing Currents}</p>\n<p><em><strong>Editor's Note</strong></em> The Lashing Currents macro has no way of knowing which of your weapons is actually your relic, so when you use the Macro you will have to select which weapon to use as your relic.</p>"
+        },
+        "Life Everlasting": {
+            "name": "Life Everlasting",
+            "description": "<p><strong>Aspect</strong> life</p>\n<p><strong>Frequency </strong>once per day</p>\n<p><strong>Activate</strong><span class=\"action-glyph\"> <span class=\"action\" title=\"Two Actions\" aria-label=\"Two Actions\">2</span></span> (envision)</p>\n<hr />\n<p><strong>Effect</strong> Massive amounts of vitality energy surge forth. For 1 minute, you emit vitality energy in a 10-foot emanation centered on you. At the end of your turn, you (if you are living) and allied living creatures in the emanation regain @Damage[10[healing,vitality]] Hit Points. If you or an allied creature would die due to an increased dying value, you can Dismiss the activation as a free action to prevent the death; if you do, their dying value doesn’t increase.</p>\n<p><em><strong>Editor's Note:</strong> Aura and effect is purely for measurement management and determining who is in your emanation, it does not apply healing automatically.</em></p>"
+        },
+        "Lightning Storm": {
+            "name": "Lightning Storm",
+            "description": "<p><strong>Aspect</strong> air</p><p><strong>Activate</strong> <span class=\"action-glyph\">2</span> (concentrate)</p><hr /><p><strong>Effect</strong> The relic surrounds you with a storm of wind, rain, and lightning in a 30-foot emanation. This storm is difficult terrain for creatures other than you. Any creature other than you that enters or starts its turn in the storm takes @Damage[1d12[electricity]] damage, with a @Check[type:reflex|against:class-spell|basic:true] save (@Damage[2d12[electricity]] damage at 15th level). You can Sustain this Activation up to 1 minute.</p>"
+        },
+        "Linguistics Nexus": {
+            "name": "Linguistics Nexus",
+            "description": "<p><strong>Aspect</strong> mind</p>\n<hr />\n<p>Your relic grants you a powerful neural plasticity, and as a result, you can learn languages more easily. You learn an additional language of your choice for every 2 levels of the relic (minimum 1). You can retrain one of the languages from the relic with only a single week of downtime.</p>"
+        },
+        "Little Helper": {
+            "name": "Little Helper",
+            "description": "<p><strong>Aspect</strong> fiend</p>\n<hr />\n<p>Your relic awakens to sapience, developing a personality (usually one that clashes with your own). Your relic has a personality corresponding to the type of fiend associated with the item, the unholy trait, precise vision and imprecise hearing each out to 30 feet, the ability to understand and speak one language you know, and Intelligence, Wisdom, and Charisma modifiers of +0. Your item's total Perception and Will modifiers are equal to your proficiency modifiers in Perception and Will, respectively. It's trained in the Lore associated with its fiend type (such as Demon Lore), for a total modifier of 2 + the relic's level. Unlike most intelligent items, the relic has no actions or reactions and can't use any of its own activations.</p>"
+        },
+        "Living Death": {
+            "name": "Living Death",
+            "description": "<p><strong>Aspect</strong> death</p>\n<hr />\n<p>You stand on the threshold between the living and the dead. If you attempt a saving throw against an effect that would deal void damage to you, such as harm, your outcome is one degree of success better than what you rolled. If you roll a critical success and the effect is capable of healing undead, you regain HP equal to half the spell's full damage. Any vitality spell or effect that would heal you has only half the normal effect. All these effects apply only if you are a living creature.</p>\n<p><em><strong>Editor's</strong> <strong>Note:</strong> Only the adjustment of the degree of success is automated.</em></p>"
+        },
+        "Living Forge": {
+            "name": "Living Forge",
+            "description": "<p><strong>Aspect</strong> forge</p>\n<p><strong>Activate</strong> <span class=\"action action-glyph\" title=\"Two Actions\" aria-label=\"Two Actions\">2</span> command, Interact <strong>Frequency</strong> once per day</p>\n<hr />\n<p><strong>Effect</strong> The relic is absorbed into your body, and you transform into an elemental being of red-hot steel. You gain the effects of 7th-rank @UUID[Compendium.pf2e.spells-srd.Item.1K6AYGisvo9gqdhs]{Elemental Form} and use the statistics for the forge battle form below. In this form, you can re-shape your limbs into different objects, such as a blade or hammer, by using an Interact action. Changing your limbs in this way allows you to choose between bludgeoning, physical, or slashing damage.</p>\n<ul>\n<li><strong>Forge Speed</strong> 30 feet; fire resistance 10, weakness 5 to cold and water; <strong>Melee</strong> <span class=\"action action-glyph\" title=\"Single Action\" aria-label=\"Single Action\">1</span> forgestrike, <strong>Damage</strong> 1d10 modular; 1d4 persistant fire.</li>\n</ul>\n<p><strong>Editor's Note: </strong>Due to system limitations, this ability cannot be automated at the current time. This feature will remain broken until the PF2e Foundry System supports versatile and modular traits with battle forms.</p>"
+        },
+        "Living Statue": {
+            "name": "Living Statue",
+            "description": "<p><strong>Aspect</strong> earth</p>\n<hr />\n<div id=\"page\" class=\"page clearfix\">\n<div id=\"ctl00_RadDrawer1_Content\" class=\"k-drawer-content\">\n<div id=\"main-wrapper\" class=\"main-wrapper compressed\">\n<div id=\"main\" class=\"main\">Your relic's energies have given you control over the boundary between flesh and stone. You can cast 6th-rank @UUID[Compendium.pf2e.spells-srd.Item.znv4ECL7ZtuiagtA]{Petrify} and @UUID[Compendium.pf2e.spells-srd.Item.BCuHKrDeJ4eq53M6]{Sure Footing} (to remove petrification only) as innate spells, each once per day. As long as you are standing on the earth, your body reflexively petrifies at the moment you are struck, granting you resistance 5 to physical damage (except adamantine). This increases to 8 in caves or subterranean environments.</div>\n</div>\n</div>\n</div>\n<div id=\"footer\" class=\"footer\"></div>",
+            "rules": {
+                "0": {
+                    "label": "In Cave"
+                },
+                "1": {
+                    "label": "On Ground"
+                }
+            }
+        },
+        "Living Storm": {
+            "name": "Living Storm",
+            "description": "<p>The relic grants you a fly Speed equal to your Speed or 60 feet, whichever is greater. In addition, a creature that Strikes you with a melee attack takes @Damage[5[electricity]] damage, and you can cast 5th-rank @UUID[Compendium.pf2e.spells-srd.Item.9AAkVUCwF6WVNNY2]{Lightning Bolt} as an innate spell.</p>\n<p><em><strong>Editor's Note:</strong> Will need to add innate casting of lightning bolt manually.</em></p>"
+        },
+        "Megaflora": {
+            "name": "Megaflora",
+            "description": "<p><strong>Aspect</strong> plant</p><p><strong>Activate</strong> <span class=\"pf2-icon\">2</span> (concentrate, manipulate)</p><p><strong>Frequency</strong> once per day</p><hr /><p><strong>Effect</strong> With a pulse of natural energy, your relic grows massive plants in an instant. The megaflora is of one of the following types, chosen by the GM when the relic gains this gift. A megaflora appears in an unoccupied 10-foot space within 30 feet and has 50 Hit Points, weakness to fire 5, 37 AC, [[/r 1d20+20]]{+20 Reflex}, and [[/r 1d20+30]]{+30  Fortitude}. It persists for 1 minute or until reduced to 0 Hit Points.</p><ul><li><strong>Corpseflower </strong>A single putrid-smelling flower grows at the target location. While the flower persists, each round at the end of your turn, all creatures in a @Template[type:burst|distance:20] centered on the plant except you must succeed at a @Check[type:fortitude|against:class-spell] save or be @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 2} (also @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned 2} on a critical failure). This is a poison effect.</li><li><strong>Thorns </strong>A 10-foot-tall thorned plant or bamboo stalk grows at the target location. While the stalk persists, each round at the end of your turn, sharp stakes erupt from the ground, dealing @Damage[6d8[piercing]] damage to all creatures in a @Template[type:burst|distance:20] centered on the plant except you (@Check[type:reflex|against:class-spell|basic:true])</li><li><strong>Tree of Life</strong> A large tree bearing life-giving fruit grows at the target location. While the tree persists, living creatures within reach of the tree can use an Interact action to pick and eat one of the tree's fruits, regaining @Damage[(2d8+5)[healing]] Hit Points; picking a fruit without eating it causes the fruit to instantly vanish. This is a healing effect, and a given creature can heal from the tree only once per round.</li></ul>"
+        },
+        "Mental Bastion": {
+            "name": "Mental Bastion",
+            "description": "<p><strong>Aspect</strong> mind</p>\n<hr />\n<p>Your relic takes over some of your mental processes and enhances others. You gain telepathy; if you already have telepathy, you instead increase its range by 30 feet. Whenever you would become stupefied, reduce the value by 1. You are permanently @UUID[Compendium.pf2e.conditionitems.Item.nlCjDvLMf2EkV2dl]{Quickened} and can use the additional action to Recall Knowledge.</p>\n<p><em><strong>Editor's Note </strong></em>Add telepathy manually, since it doesn't exist in player languages.</p>"
+        },
+        "Molten Crucible": {
+            "name": "Molten Crucible",
+            "description": "<p><strong>Aspect</strong> forge</p>\n<p><strong>Frequency </strong>once per day</p>\n<p><strong>Activate</strong> <span class=\"action-glyph\">3</span> (command, Interact)</p>\n<hr />\n<p><strong>Effect</strong> You strike your relic against a weapon, armor, or shield made of metal. The item becomes red hot and, over the next 10 minutes, transforms into a different base item from the same category. This changes the item's base form while retaining its same materials, runes, and magical properties. Both base items must have an item level of 1 or less, and weapons must require the same number of hands. Specific items can't be changed in this way unless the GM expressly allows it. For example, a <em>+2 cold iron mace</em> can become a <em>+2 cold iron longsword</em>, or chain mail can become half plate, but a moonlit chain can't be affected in this way.</p>"
+        },
+        "Monsoon Curtain": {
+            "name": "Monsoon Curtain",
+            "description": "<p><strong>Aspect</strong> water</p>\n<p><strong>Activate</strong> <span class=\"pf2-icon\">3</span> (concentrate)</p>\n<p><strong>Frequency</strong> once per day</p>\n<hr />\n<p><strong>Effect</strong> You call down a curtain of violent rain in a location within 120 feet. The wall is 5 feet thick, 30 feet long, up to 30 feet high, and lasts for 1 minute. The wall stands vertically, but you can shape its path. The wall has the following effects.</p>\n<ul>\n<li>If a fire effect crosses through the wall, it either uses the outcome one degree of success worse than the result of its attack roll or its targets use the outcome one degree of success better than the result of their saving throw, as appropriate.</li>\n<li>Creatures with a weakness to water that cross the wall or start their turn in the wall take damage equal to their weakness.</li>\n<li>The wall imposes a –2 status penalty to Perception checks to sense creatures or objects on the other side.</li>\n</ul>\n<p>@Template[type:line|distance:30]{Monsoon Curtain Line}</p>"
+        },
+        "Muse": {
+            "name": "Muse",
+            "description": "<p><strong>Aspect</strong> artistry</p><p><strong>Prerequisite</strong> The relic is 3rd level or higher</p><hr /><p>The relic guides you in your art like a muse, giving you inspirational ideas and providing an item bonus to Crafting or Performance checks. (Choose one. If your relic allows you to do so, you can take this gift again to choose the other.) If the relic is 3rd level or higher, you gain a +1 item bonus. Once the relic attains 9th level, the bonus increases to +2. The bonus increases to +3 when the relic is 17th level.</p>",
+            "rules": {
+                "0": {
+                    "choices": {
+                        "0": {
+                            "label": "Crafting"
+                        },
+                        "1": {
+                            "label": "Performance"
+                        }
+                    }
+                },
+                "1": {
+                    "label": "{item|name} Muse"
+                }
+            }
+        },
+        "Obscure": {
+            "name": "Obscure",
+            "description": "<p><strong>Aspect</strong> shadow</p>\n<hr />\n<p>Your relic absorbs light and wraps shadow around you, hiding you in darkness. As long as you are in dim light in an area of shadows, you can attempt a Stealth check to @UUID[Compendium.pf2e.actionspf2e.Item.XMcnh4cSI32tljXa]{Hide}, even if you aren't @UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{Concealed} against the creature, such as with a creature with @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.qCCLZhnp2HhP3Ex6]{Darkvision}.</p>"
+        },
+        "Overflowing Life": {
+            "name": "Overflowing Life",
+            "description": "<p><strong>Aspect</strong> life</p>\n<hr />\n<p>Life force flows through you, and vitality energy causes your vital essence to burst through your skin like beads of liquid light. You gain an item bonus equal to half the relic's level (minimum 1) to the Hit Points you recover from healing vitality spells; this bonus applies only the first time per casting that a particular spell heals you.</p>"
+        },
+        "Perception Filter": {
+            "name": "Perception Filter",
+            "description": "<p><strong>Aspect</strong> mind</p><p><strong>Activate</strong> <span class=\"action-glyph\">2</span> (concentrate)</p><p><strong>Frequency</strong> once per day</p><hr /><p><strong>Effect</strong> Your relic reaches into the minds of nearby creatures and blocks your presence from their perceptions. For the next 10 minutes, a creature that enters a @Template[type:emanation|distance:120], centered on you, must attempt a secret @Check[type:will|against:class-spell)|traits:secret] save, after which the creature is then temporarily immune for 1 day.</p><hr /><p><strong>Critical Success</strong> The creature is unaffected.</p><p><strong>Success</strong> The creature takes a –2 status penalty to Perception checks to @UUID[Compendium.pf2e.actionspf2e.Item.BlAOM2X92SI6HMtJ]{Seek} or otherwise detect you. @UUID[Compendium.pf2e-relics.relic-effects.Item.mHwWLTqJxH6HM6ED]{Effect: Perception Filter (Success)}</p><p><strong>Failure</strong> You filter all of the creature's senses, making it difficult for it to notice you. When you are @UUID[Compendium.pf2e.conditionitems.Item.iU0fEDdBp3rXpTMC]{Hidden} or undetected from the creature, it doesn't observe you as soon as you do anything other than @UUID[Compendium.pf2e.actionspf2e.Item.XMcnh4cSI32tljXa]{Hide}, @UUID[Compendium.pf2e.actionspf2e.Item.VMozDqMMuK5kpoX4]{Sneak}, or @UUID[Compendium.pf2e.actionspf2e.Item.UHpkTuCtyaPqiCAB]{Step}. If it rolls a Perception check to Seek or otherwise detect you, it gets the outcome one degree of success worse than what it rolled, and if you roll a Stealth check to @UUID[Compendium.pf2e.actionspf2e.Item.XMcnh4cSI32tljXa]{Hide}, @UUID[Compendium.pf2e.actionspf2e.Item.VMozDqMMuK5kpoX4]{Sneak}, or otherwise escape its attention, you get the outcome one degree of success better than what you rolled against the creature. If you use a hostile action toward the creature, the effect ends for that creature after your hostile action is completed.</p><p><strong>Critical Failure</strong> As failure, but the effect doesn't end for that creature if you use a hostile action against it.</p><p><em><strong>Editor's Note </strong></em>Due to the intended secretive nature of the GM to Player interaction regarding the rules for stealth, as well as the complexity of the effects, only the success effect of this gift is automated due to its simplistic nature. The GM should otherwise be in charge of making other necessary adjustments for the appropriate degrees of success.</p>"
+        },
+        "Petal Dance": {
+            "name": "Petal Dance",
+            "description": "<p><strong>Aspect</strong> plant</p>\n<p><strong>Activate</strong> <span class=\"pf2-icon\">2</span> (concentrate)</p>\n<p><strong>Frequency</strong> once per hour</p>\n<hr />\n<p><strong>Effect</strong> You discorporate into a cloud of petals and leaves. This grants you the swarm trait, immunity to falling damage, resistance 5 to bludgeoning and slashing damage, and weakness 5 to area and splash damage. You can fit into spaces only a few inches wide, moving your constituent petals through the gap. You don't gain the swarm mind ability, so you are still affected normally by mental effects. As a swarm, you can't speak, cast spells, use manipulate actions requiring your hands, activate your magic items, or make any of your Strikes with your normal body. You remain in this form for 1 minute or until you Dismiss the activation. At 13th level, the relic gains a reaction that triggers when you fall or take damage, applying this gift's resistances, weaknesses, and immunity to falling damage to the triggering effect.</p>"
+        },
+        "Pierce the Veil": {
+            "name": "Pierce the Veil",
+            "description": "<p><strong>Aspect</strong> death</p>\n<p><strong>Prerequisite</strong> living death gift</p>\n<hr />\n<p>The relic allows you to pierce the veil between life and death. While you are holding or wearing the relic, you have the void healing ability (as though you were undead; vitality energy harms you and void energy heals you). In addition, whenever you are healed by a void spell or effect, you gain resistance 5 to all damage (except force, ghost touch, spirit, and vitality) until the start of your next turn. Finally, you gain a +2 item bonus to all saves against death effects while you are the bearer of the relic; this increases to a +3 item bonus at 13th level.</p>"
+        },
+        "Pollen Spray": {
+            "name": "Pollen Spray",
+            "description": "<p><strong>Aspect </strong>plant</p><p><strong>Activate </strong><span class=\"pf2-icon\">2</span> (concentrate, manipulate)</p><hr /><p><strong>Effect</strong> Pollen and poison spores spray from your relic, dealing @Damage[(max(1,floor((@actor.level)/2)))d6[poison]] damage for every 2 relic levels (minimum 1d6) to all creatures in a @Template[type:cone|distance:15] (@Check[type:fortitude|against:class-spell|basic:true] save). On a critical failure, targets are also @UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]{Dazzled} for 1 round. You can't use Pollen Spray again for [[/r 1d4 #Recharge Pollen Spray]]{1d4 rounds}.</p>"
+        },
+        "Precious Anodization": {
+            "name": "Precious Anodization",
+            "description": "<p><strong>Aspect </strong>metal</p>\n<p><strong>Activate</strong> <span class=\"pf2-icon\">1</span> (concentrate)</p>\n<p><strong>Frequency</strong> once per day</p>\n<hr />\n<p><strong>Effect</strong> For one minute, your relic is affected by a @UUID[Compendium.pf2e.spells-srd.Item.7dBxguCNWCoPYxIi]{Clad In Metal} spell of a rank equal to half the relic's level, rounded up. You can choose uncommon metals in addition to common ones.</p>"
+        },
+        "Precognition": {
+            "name": "Precognition",
+            "description": "<p><strong>Aspect</strong> time</p>\n<p><strong>Activate</strong> <span class=\"pf2-icon\">R</span> envision</p>\n<p><strong>Frequency</strong> once per day</p>\n<p><strong>Trigger</strong> Your turn starts</p>\n<hr />\n<p><strong>Effect</strong> You analyze diverging time streams to determine the best course of action. Resolve two turns as if they occurred, then choose which one happens. The other does not occur.</p>"
+        },
+        "Profane Fervor": {
+            "name": "Profane Fervor",
+            "description": "<p><strong>Aspect</strong> fiend</p>\n<p><strong>Frequency </strong>once per day</p>\n<p><strong>Activate</strong> <span class=\"action-glyph\">2</span> (concentrate, manipulate)</p>\n<hr />\n<p><strong>Effect</strong> Profane energies twist your weapons, filling them with rage toward everything good. For 1 minute, your weapons and unarmed attacks gain the @UUID[Compendium.pf2e.equipment-srd.Item.gmMrJREf4JSHd2dZ]{Unholy} weapon rune while you hold them. If a weapon is at its limit on property runes, you can choose one property rune on the weapon to go dormant while the <em>unholy</em> rune takes effect. In addition, Strikes your allies make while they’re within 30 feet of you gain the unholy trait.</p>",
+            "rules": {
+                "0": {
+                    "label": "Profane Fervor"
+                }
+            }
+        },
+        "Propelling Winds": {
+            "name": "Propelling Winds",
+            "description": "<p><strong>Aspect</strong> air</p>\n<p><strong>Activate</strong> <span class=\"action-glyph\">2</span> (concentrate, manipulate)</p>\n<p><strong>Frequency</strong> once per hour</p>\n<hr />\n<p><strong>Effect</strong> The relic casts <em>@UUID[Compendium.pf2e.spells-srd.Item.A2JfEKe6BZcTG1S8]{Fly}</em> targeting you.</p>"
+        },
+        "Psychic Scream": {
+            "name": "Psychic Scream",
+            "description": "<p><strong>Aspect</strong> mind</p><p><strong>Activate </strong><span class=\"pf2-icon\">2</span> (concentrate)</p><hr /><p><strong>Effect</strong> Your thoughts build before spilling forth in a powerful telepathic scream. Enemies within a @Template[type:burst|distance:20] centered on you must attempt a (@Check[type:will|against:class-spell|basic:true]) save or take @Damage[(max(1,floor((@actor.level)/2)))d10[mental]] damage for every 2 levels of the relic. On a critical failure, they are also @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 1} for 1 minute.</p>"
+        },
+        "Quickening Emotion": {
+            "name": "Quickening Emotion",
+            "description": "<p><strong>Aspect</strong> emotion</p>\n<p><span id=\"ctl00_RadDrawer1_Content_MainContent_DetailedOutput\"><strong>Activate</strong> <span class=\"action action-glyph\" title=\"Reaction\" aria-label=\"Reaction\">R</span> envision </span></p>\n<div id=\"page\" class=\"page clearfix\">\n<div id=\"ctl00_RadDrawer1_Content\" class=\"k-drawer-content\">\n<div id=\"main-wrapper\" class=\"main-wrapper compressed\">\n<div class=\"main\"><strong>Trigger</strong> You are the target of an emotion effect from a hostile source<hr /><span id=\"ctl00_RadDrawer1_Content_MainContent_DetailedOutput\"><strong>Effect</strong> The relic attempts a counteract check. If the check succeeds, the relic absorbs the effect completely, negating it. Instead, you're @UUID[Compendium.pf2e.conditionitems.Item.nlCjDvLMf2EkV2dl]{Quickened} for up to 1 minute, but no longer than the triggering effect's duration. You then become temporarily immune to this effect for 1 hour.</span></div>\n</div>\n</div>\n</div>\n<div id=\"footer\" class=\"footer\"></div>"
+        },
+        "Rail Dash": {
+            "name": "Rail Dash",
+            "description": "<p><strong>Aspect </strong>metal</p><p><strong>Activate</strong> <span class=\"pf2-icon\">2</span></p><p><strong>Frequency</strong> once per hour</p><hr /><p><strong>Effect</strong> Your relic conjures a guideway of magnets beneath you, creating a frictionless path for you to rush forward at high speeds. You Stride up to three times in a straight line. If you end your final Stride adjacent to an object or creature, you ram into it, dealing @Damage[(max(1,floor((@actor.level)/2)))d12[bludgeoning]] damage for every 2 levels of the relic, with a @Check[type:reflex|against:class-spell|basic:true] save.</p>"
+        },
+        "Raise Ramparts": {
+            "name": "Raise Ramparts",
+            "description": "<p><strong>Aspect</strong> earth</p>\n<p><strong>Activate</strong> <span class=\"action-glyph\">3</span> (concentrate, manipulate)</p>\n<p><strong>Frequency</strong> once per day</p>\n<hr />\n<p><strong>Effect</strong> Your relic reshapes the earth around you. You cast 5th-rank <em>@UUID[Compendium.pf2e.spells-srd.Item.kOa055FIrO9Smnya]{Wall of Stone}</em>.</p>"
+        },
+        "Recalculate": {
+            "name": "Recalculate",
+            "description": "<p><strong>Aspect </strong>mind</p>\n<p><strong>Activate</strong> <span class=\"pf2-icon\">R</span> (concentrate)</p>\n<p><strong>Trigger</strong> You fail an attack roll</p>\n<hr />\n<p><strong>Effect</strong> Analysis of angles, probabilities, and myriad other factors flows from your relic into your mind after you miss an attack, preparing you for the next one. You gain a +1 circumstance bonus to your next attack roll against the target you missed, as long as it is made before the beginning of your next turn.</p>"
+        },
+        "Repository of Knowledge": {
+            "name": "Repository of Knowledge",
+            "description": "<p><strong>Aspect</strong> mind</p>\n<hr />\n<p>Your relic is imbued with the psychic impressions of ages past. While the relic is on your person, you are trained in 3 additional Lore skills of the GM's choice that fit the relic's history, decided at the time of gaining this gift. If the relic is 9th level, you instead have expert proficiency in these Lore skills, and if the relic is 17th level, you have master proficiency in these Lore skills.</p>"
+        },
+        "Righteous Call": {
+            "name": "Righteous Call",
+            "description": "<p><strong>Aspect</strong> celestial</p>\n<p><strong>Frequency </strong>once per day</p>\n<p><strong>Activate</strong> <span class=\"action action-glyph\" title=\"Two Actions\" aria-label=\"Two Actions\">2</span> (concentrate, manipulate)</p>\n<hr />\n<p><strong>Effect</strong> Holy magic fills your armaments, making them true weapons against evil. For 1 minute, your weapons and unarmed attacks gain the @UUID[Compendium.pf2e.equipment-srd.Item.DH0kB9Wbr5pDeunX]{Holy} weapon rune while you hold them. If a weapon is at its limit on property runes, you can choose one property rune on the weapon to go dormant while the <em>holy</em> rune takes effect. In addition, Strikes your allies make while they’re within 30 feet of you gain the holy trait.</p>\n<p><em><strong>Editors Note: </strong>Because of how weird the intereaction between runes are, you will have to remove one of your weapon property runes manually if it is at its limit.</em></p>",
+            "rules": {
+                "0": {
+                    "label": "Righteous Call"
+                }
+            }
+        },
+        "Ripples and Waves": {
+            "name": "Ripples and Waves",
+            "description": "<p><strong>Aspect</strong> water</p>\n<p>You become attuned to the ebb and flow of all things. You gain @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.VdSMQ6yRZ3YXNXHL]{Wavesense} 60 as a precise sense and can cast 5th-rank @UUID[Compendium.pf2e.spells-srd.Item.jfVCuOpzC6mUrf6f]{Hydraulic Push} at will as an innate spell.</p>\n<hr />\n<p><strong> Activate</strong> <span class=\"pf2-icon\">2</span> (command, envision)</p>\n<p><strong>Frequency</strong> once per day</p>\n<p><strong>Effect</strong> Ankle-deep water floods outward from you, filling a @Template[type:emanation|distance:60] centered on you for 1 minute. Enemies within the area without a swim Speed treat the area as difficult terrain for movement on land. While the effect persists, you can have any water effects you generate originate from any point within the emanation, in addition to their normal range and area.</p>"
+        },
+        "Rolling Geode": {
+            "name": "Rolling Geode",
+            "description": "<p><strong>Aspect</strong> earth</p><p><strong>Frequency </strong>once per hour</p><p><strong>Activate </strong><span class=\"action-glyph\">2</span> (concentrate)</p><hr /><p><strong>Effect</strong> Stone and crystal form a sphere that chases your foes. You create a geode in an unoccupied square within 30 feet. You can spend a single action, which has the concentrate trait, to move the geode up to 30 feet along the ground. If the geode enters a creature’s space, the creature must succeed at a @Check[type:reflex|against:class-spell|basic:true] save or take @Damage[2d6[bludgeoning]] damage; a creature can take damage this way only once per turn, even if you roll the geode through its space multiple times. The geode persists for up to 1 minute or until destroyed or Dismissed; it has AC 5, Hardness 10, and 40 Hit Points, and is immune to critical hits and precision damage.</p>"
+        },
+        "Sacred Glow": {
+            "name": "Sacred Glow",
+            "description": "<p><strong>Aspect</strong> celestial</p>\n<p><strong>Activate</strong> <span class=\"action-glyph\">2</span> (concentrate, manipulate)</p>\n<hr />\n<p><strong>Effect</strong> Your relic shines with holy light. This creates bright light in a @Template[type:emanation|distance:30] around the item. Unholy creatures in the area are @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 1}, and can't lower their frightened value below 1 as long as they remain in the light. Fiends in the area increase any weakness to holy damage they have by 5. You can Sustain this Activation for up to 1 minute.</p>\n<p><em><strong>Editor's Note: </strong>While the frightened condition will be tracked automatically, there is no automation for the weakness to holy for fiends increasing.</em></p>",
+            "rules": {
+                "0": {
+                    "label": "Sacred Glow"
+                }
+            }
+        },
+        "Sands of the Hourglass": {
+            "name": "Sands of the Hourglass",
+            "description": "<p><strong>Aspect</strong> time; <strong>Prerequisite</strong> The relic is 5th level or higher.</p><p>Activate <span class=\"pf2-icon\">2</span> command, Interact</p><p><strong>Frequency</strong> once per hour</p><hr /><p><strong>Effect</strong> You target one creature within 30 feet, temporarily imposing the decrepitude of time on it. The target must attempt a @Check[type:fortitude|against:class-spell] saving throw. The clumsy and enfeebled conditions last 1 minute.</p><hr /><p><strong>Critical Success</strong> The target is unaffected.</p><p><strong>Success</strong> The target becomes @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 1} and @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 1}.</p><p><strong>Failure</strong> The target becomes @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 2}, @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 2}, and @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 1}.</p><p><strong>Critical Failure</strong> The target becomes @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 3}, @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 3}, and @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 2}.</p>"
+        },
+        "Scrap Shot": {
+            "name": "Scrap Shot",
+            "description": "<p><strong>Aspect </strong>metal</p><p><strong>Activate</strong> <span class=\"pf2-icon\">2</span> (concentrate, manipulate)</p><hr /><p><strong>Effect</strong> Magnetic repulsion sends a sharp chunk of metal scrap flying from your relic. Make a @Check[type:class-spell|defense:ac]{spell attack roll} with your relic against a target within 30 feet. The chunk deals @Damage[(max(1,floor((@actor.level)/2)))d6[piercing]] (1d6 damage for every 2 levels the relic has (minimum 1d6)). If the target is wearing metal armor or is made of metal, you gain a +1 circumstance bonus to your spell attack roll, and the target becomes @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 1} until the start of your next turn as the scrap adheres to the target. If your relic is made of a precious metal, the shot is also made of or coated in that metal, bypassing resistances and the like accordingly. The scrap left behind by the shot rusts or crumbles quickly and isn't worth anything if sold.</p>"
+        },
+        "Searing Wave": {
+            "name": "Searing Wave",
+            "description": "<p><strong>Aspect</strong> fire</p><p><strong>Activate</strong> <span class=\"action action-glyph\" title=\"Two Actions\" aria-label=\"Two Actions\">2</span> (concentrate, manipulate)</p><hr /><p><strong>Effect</strong> You allow a portion of the fire magic housed in your relic to escape in a direction of your choice. You deal @Damage[(max(1,floor((@actor.level)/2)))d10[fire]] damage for every 2 levels of the relic to all creatures in a @Template[type:cone|distance:30] (@Check[type:reflex|against:class-spell|basic:true]). You can’t use Searing Wave again for [[/r 1d4 #Recharge]] rounds.</p>"
+        },
+        "Shadow Smith": {
+            "name": "Shadow Smith",
+            "description": "<p><strong>Aspect</strong> shadow</p>\n<p><strong>Activate</strong> <span class=\"pf2-icon\">1</span> (manipulate)</p>\n<hr />\n<p><strong>Effect</strong> Your relic pulls at nearby shadows, twisting them into the shape of a simple weapon or a simple tool or item, such as a rope or crowbar. It lasts until it is used for a single activity, until you use shadow smith again, or for 1 minute, whichever comes first, after which it dissipates.</p>"
+        },
+        "Shattered Earth": {
+            "name": "Shattered Earth",
+            "description": "<p><strong>Aspect</strong> earth</p><p><strong>Frequency </strong>once per hour</p><p><strong>Activate</strong> <span class=\"action-glyph\">2</span> (concentrate, manipulate)</p><hr /><p><strong>Effect</strong> Seismic pulses from your relic ripple through the nearby ground, shaking sharp fragments to the surface. A 10-foot-radius patch of stone or earth within 60 feet is transformed into difficult terrain. A creature that enters an affected square during a move action must succeed at an @Check[type:acrobatics|against:class-spell] check or @Check[type:reflex|against:class-spell] save or take @Damage[(1+max(0,floor((@actor.level -2)/4)))d6[piercing]] damage; it needs to roll only once per move action even if it moves through several squares. At 6th level and every 4 levels thereafter, increase the damage by 1d6.</p>"
+        },
+        "Shroud of the Afterlife": {
+            "name": "Shroud of the Afterlife",
+            "description": "<p><strong>Aspect</strong> death</p>\n<p><strong>Frequency </strong>once per day</p>\n<p><strong>Activate</strong> <span class=\"action action-glyph\" title=\"Single Action\" aria-label=\"Single Action\">1</span> (concentrate, manipulate)</p>\n<hr />\n<p><strong>Effect</strong> You shroud yourself with powers from beyond the living realm for 1 minute. While this shroud is active, you take on a pallid appearance and gain poison resistance equal to half the relic's level and a +1 status bonus to saving throws against death effects, diseases, effects that would make you paralyzed, poison, and sleep effects. In addition, the DC for your recovery checks is 9 + your dying value instead of 10 + your dying value.</p>"
+        },
+        "Soul Magic": {
+            "name": "Soul Magic",
+            "description": "<p><strong>Aspect</strong> soul</p>\n<p><strong>Activate</strong> <span class=\"pf2-icon\">1</span> envision</p>\n<p><strong>Frequency</strong> once per day</p>\n<hr />\n<p><strong>Effect</strong> You infuse yourself or a willing creature that you touch with spiritual energy. This has the effect of @UUID[Compendium.pf2e.spells-srd.Item.KtTGLbLG9nqMbUYL]{Divine Inspiration}.</p>"
+        },
+        "Soul Puppet": {
+            "name": "Soul Puppet",
+            "description": "<p><strong>Aspect</strong> soul</p>\n<p><strong>Activate</strong> <span class=\"pf2-icon\">3</span> (command, envision)</p>\n<p><strong>Frequency</strong> once per day</p>\n<hr />\n<p><strong>Effect</strong> You bind loose souls, briefly animating an undead creature. The soul seed casts @UUID[Compendium.pf2e.spells-srd.Item.9WGeBwIIbbUuWKq0]{Animate Dead} at a rank equal to half the soul seed's level rounded up. You can Sustain this Activation as you would the spell.</p>"
+        },
+        "Spirit Blink": {
+            "name": "Spirit Blink",
+            "description": "<p><strong>Aspect</strong> soul</p>\n<p><strong>Activate</strong> <span class=\"pf2-icon\">2</span> command, envision</p>\n<p><strong>Frequency</strong> once per day</p>\n<hr />\n<p><strong>Effect</strong> You blink between the realm of mortals and the Ethereal Plane. This grants you the effects of @UUID[Compendium.pf2e.spells-srd.Item.zR67Rt3UMHKC5evy]{Flicker}, except the resistance is equal to the soul seed's level instead of 5.</p>"
+        },
+        "Sprout Ally": {
+            "name": "Sprout Ally",
+            "description": "<p><strong>Aspect</strong> plant</p>\n<p><strong>Activate </strong><span class=\"pf2-icon\">2</span> (concentrate, manipulate)</p>\n<p><strong>Frequency</strong> once per day</p>\n<hr />\n<p><strong>Effect</strong> Your relic rapidly matures and animates nearby plant matter into an ally to fight by you, casting @UUID[Compendium.pf2e.spells-srd.Item.jSRAyd57kd4WZ4yE]{Summon Plant or Fungus}, with a rank of half the item's level rounded up. You can Sustain this Activation as you would the spell.</p>"
+        },
+        "Steal Luck": {
+            "name": "Steal Luck",
+            "description": "<p><strong>Aspect</strong> luck</p>\n<p><strong>Activate </strong><span class=\"action-glyph\">R</span></p>\n<p><strong>Frequency </strong>once per day</p>\n<p><strong>Trigger </strong>You or a creature within 30 feet of you rolls two d20s for a fortune or misfortune effect and you like the higher roll</p>\n<hr />\n<p><strong>Effect</strong> You steal the higher of the two numbers the triggering target rolled; the target must use the other result. Until you make your next daily preparations, you can substitute that number for one d20 roll made for a saving throw or skill check you have to make against an effect created by an enemy, hazard, or the environment. Doing so is a fortune effect. If you fail to do so before your next daily preparations, you lose the stored number.</p>"
+        },
+        "Swap Luck": {
+            "name": "Swap Luck",
+            "description": "<p><strong>Aspect </strong>luck</p>\n<p><strong>Activate<span class=\"action-glyph\"> </span></strong><span class=\"action-glyph\">R </span>envision</p>\n<p><strong>Frequency</strong> once per hour</p>\n<p><strong>Trigger</strong> You roll a failure or critical failure on a saving throw against an effect with multiple targets</p>\n<hr />\n<p><strong>Effect</strong> You swap rolls with another target who's willing to swap with you. Each of you determines the new results with your new rolls.</p>"
+        },
+        "Temporal Pulse": {
+            "name": "Temporal Pulse",
+            "description": "<p><strong>Aspect</strong> time</p>\n<p><strong>Activate </strong><span class=\"pf2-icon\">2</span> command, envision</p>\n<p><strong>Frequency</strong> once per day</p>\n<hr />\n<p><strong>Effect</strong> You make time shudder around you, stealing it from enemies and granting it to allies. Creatures of your choice within 30 feet must attempt a (@Check[type:will|dc:resolve(@actor.system.attributes.classOrSpellDC.value)]) save. For each creature you render slowed with this gift, you can render one ally within 30 feet, including you, @UUID[Compendium.pf2e.conditionitems.Item.nlCjDvLMf2EkV2dl]{Quickened} for 1 round.</p>\n<p><strong>Success</strong> The creature is unaffected.</p>\n<p><strong>Failure</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1}.</p>\n<p><strong>Critical Failure</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 2}.</p>"
+        },
+        "Tidal Crash": {
+            "name": "Tidal Crash",
+            "description": "<p><strong>Aspect</strong> water</p><p><strong>Activate</strong> <span class=\"pf2-icon\">2</span> (concentrate)</p><p><strong>Frequency</strong> once per day</p><hr /><p><strong>Effect</strong> Your relic spews forth a dense sphere of water. Make a @Check[type:class-spell|defense:ac]{spell attack roll} against a target within 30 feet. On a success, you deal @Damage[(2d10 + floor((@actor.level - 1) / 2)d10)[bludgeoning]] damage plus @Damage[(2 + floor((@actor.level - 1) / 2))[bludgeoning,splash]] damage. At 3rd level and every 2 levels thereafter, increase the initial damage by 1d10 and the splash damage by 1.</p>"
+        },
+        "Tide of Death": {
+            "name": "Tide of Death",
+            "description": "<p><strong>Aspect</strong> death</p>\n<p><strong>Prerequisite</strong> death gaze gift</p>\n<hr />\n<p>You can Activate @UUID[Compendium.pf2e-relics.relic-gifts.Item.0BdLI4DQIP2C3cVT]{Death Gaze} with 3 actions instead of 2. If you do, it targets all living creatures within 30 feet except for you. If you have the void healing ability, you can include yourself to be healed.</p>"
+        },
+        "Time Jump": {
+            "name": "Time Jump",
+            "description": "<p><strong>Aspect</strong> time</p>\n<p>Activate <span class=\"pf2-icon\">1</span> command</p>\n<p><strong>Frequency</strong> once per day</p>\n<hr />\n<p><strong>Effect</strong> Your relic casts @UUID[Compendium.pf2e.spells-srd.Item.qJGW6BbIcU6sfA1d]{Time Jump} on you to your specifications.</p>"
+        },
+        "Time Reversal": {
+            "name": "Time Reversal",
+            "description": "<p><strong>Aspect</strong> time</p>\n<p><strong>Activate</strong> <span class=\"pf2-icon\">1</span> command</p>\n<p><strong>Frequency</strong> once per day</p>\n<hr />\n<p><strong>Effect</strong> The relic casts @UUID[Compendium.pf2e.spells-srd.Item.G56DJkxlUjFv0C4Z]{Time Beacon} on you.</p>"
+        },
+        "Track of the Beast": {
+            "name": "Track of the Beast",
+            "description": "<p>The spirit of an animal fills you. The relic gives one of the following benefits, chosen by the GM when the relic gains this gift.</p>\n<ul>\n<li>A +10-foot status bonus to your land Speed.</li>\n<li>A climb Speed equal to your land Speed.</li>\n<li>A swim Speed equal to your land Speed.</li>\n</ul>\n<p><em><strong>Editor's Note:</strong> Ignore this ability, as this serves as the original \"base\" of the Track of the Beast ability. There are seprate abilities made for the different speeds, which have modified text for consistency.</em></p>",
+            "rules": {
+                "0": {
+                    "choices": {
+                        "0": {
+                            "label": "Climb"
+                        },
+                        "1": {
+                            "label": "Land"
+                        },
+                        "2": {
+                            "label": "Swim"
+                        }
+                    },
+                    "prompt": "Choose a Speed"
+                }
+            }
+        },
+        "Umbral Body": {
+            "name": "Umbral Body",
+            "description": "<p><strong>Aspect</strong> shadow</p>\n<p><strong>Activate</strong> <span class=\"pf2-icon\">2</span> (concentrate, manipulate)</p>\n<hr />\n<p><strong>Effect</strong> Shadowy essence infuses your body, and you can reshape wisps of yourself into a variety of damaging shadows. This has the effect of a 6th-rank @UUID[Compendium.pf2e.spells-srd.Item.IqJ9URobmJ9L9UBG]{Shadow Blast}, choosing from only bludgeoning, slashing, or piercing damage. You can't use this activation again for [[/r 1d4 #Recharge this activation]]{1d4 rounds}.</p>"
+        },
+        "Underground Bounty": {
+            "name": "Underground Bounty",
+            "description": "<p><strong>Aspect</strong> earth</p>\n<hr />\n<p>Your relic produces metals and stones to empower your weapons. Each day during your daily preparations, your relic conjures a magical shard of silver, cold iron, gold, or a non-precious stone or metal material of your choice (such as bronze or granite). If your relic is a weapon, it immediately absorbs the shard, causing it to gain a magical sheen of that metal or stone until your next daily preparations. If your relic is not a weapon, the shard is not immediately used, and you can touch it to a stone or metal weapon using an Interact action to give it a magical sheen of that metal or stone for 10 minutes. While coated in the magical sheen, the weapon interacts with weaknesses, resistances, and the like as if it were made of the stone or metal from the shard rather than its own. The sheen and the shard are obviously magical in nature, and if you don't use the shard, it disappears when you make your next daily preparations. At 17th level, add adamantine and dawnsilver to the available options.</p>"
+        },
+        "Vitality Siphon": {
+            "name": "Vitality Siphon",
+            "description": "<p><strong>Aspect</strong> life</p>\n<p><strong>Activate</strong> <span class=\"action action-glyph\" title=\"Reaction\" aria-label=\"Reaction\">R</span> (concentate)</p>\n<p><strong>Trigger</strong> An ally within 60 feet regains more Hit Points than it is currently down via a targeted vitality effect without a duration</p>\n<hr />\n<p><strong>Effect</strong> Your relic acts as a relay for vitality. You or an adjacent willing creature regain a number of Hit Points equal to the amount in excess of the triggering creature’s maximum Hit Points; for instance, if the triggering creature was missing 5 Hit Points and was targeted by a @UUID[Compendium.pf2e.spells-srd.Item.rfZpqmj0AIIdkVIs]{Heal} spell that restored 12 Hit Points, you or an adjacent willing creature would regain the remaining 7 Hit Points.</p>"
+        },
+        "Whammy": {
+            "name": "Whammy",
+            "description": "<p><strong>Aspect</strong> luck</p>\n<p><strong>Activate</strong> <span class=\"action-glyph\">R</span> envision</p>\n<p><strong>Frequency </strong>once per day</p>\n<p><strong>Trigger</strong> An enemy within 30 feet rolls a success on an attack roll, saving throw, or skill check</p>\n<hr />\n<p><strong>Effect </strong>Your relic sends out a wave of bad luck, forcing the creature to reroll and take the worse result.</p>"
+        },
+        "Wind Barrier": {
+            "name": "Wind Barrier",
+            "description": "<p><strong>Aspect</strong> air</p>\n<p><strong>Activate </strong><span class=\"action-glyph\">1</span> (concentrate)</p>\n<hr />\n<p><strong>Effect </strong>An invisible barrier of air deflects ranged attacks, granting you a +2 circumstance bonus to AC against ranged attacks until the beginning of your next turn. At 13th level, this increases to a +3 circumstance bonus to AC against ranged attacks.</p>"
+        },
+        "Word of Faith": {
+            "name": "Word of Faith",
+            "description": "<p><strong>Aspect</strong> celestial</p><p><strong>Activate</strong> <span class=\"action-glyph\">2</span> (concentrate, manipulate)</p><p><strong>Frequency</strong> once per hour</p><hr /><p><strong>Effect</strong> Placing your hand on yourself or an ally, you heal their wounds and bolster their spirit. The target regains @Damage[(max(1,floor(@actor.level)))d8[healing,vitality]] HP per item level and reduces their @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened} value by 1.</p>"
+        },
+        "Work Harden": {
+            "name": "Work Harden",
+            "description": "<p><strong>Aspect</strong> forge</p>\n<p><strong>Frequency </strong>once per day</p>\n<p><strong>Activate</strong> <span class=\"action-glyph\">2</span> (command, Interact)</p>\n<hr />\n<p><strong>Effect</strong> You strike the relic against a shield or armor made of metal, and steam pours from it like it's just been quenched. The target item hardens for 10 minutes, increasing its item bonus to AC by 1 if it's armor or its Hardness by 5 if it's a shield.</p>\n<p>@UUID[Compendium.pf2e-relics.relic-effects.Item.53FkfoGZ9za7cvaH]{Effect: Work Harden (Armor)}</p>\n<p>@UUID[Compendium.pf2e-relics.relic-effects.Item.gfriz81evOoKgeMM]{Effect: Work Harden (Shield)}</p>"
+        },
+        "Wyrm's Flight": {
+            "name": "Wyrm's Flight",
+            "description": "<p><strong>Aspect</strong> dragon</p>\n<p><strong>Frequency </strong>once per day</p>\n<p><strong>Activate</strong> <span class=\"action action-glyph\" title=\"Two Actions\" aria-label=\"Two Actions\">2</span> (command, envision)</p>\n<hr />\n<p><strong>Effect</strong> Ghostly draconic wings grant you a fly Speed equal to your Speed or 20 feet, whichever is greater. This lasts for 10 minutes or until you Dismiss the effect. At 17th level, you can Activate and Dismiss the ability as often as you want, and it has unlimited duration.</p>"
+        }
+    },
+    "mapping": {
+        "rules": {
+            "converter": "translateRules",
+            "path": "system.rules"
+        }
+    }
+}
