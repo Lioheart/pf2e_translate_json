@@ -233,6 +233,132 @@
                 }
             }
         },
+        "Droven (Level 1)": {
+            "name": "Droven (Level 1)",
+            "items": {
+                "feat->Specialty Crafting (Blacksmithing)": {
+                    "name": "Specialty Crafting (Blacksmithing)",
+                    "description": "<p>Your training focused on Crafting one particular kind of item. Select one of the specialties listed below; you gain a +1 circumstance bonus to Crafting checks to Craft items of that type. If you are a master in Crafting, this bonus increases to +2. If it's unclear whether the specialty applies, the GM decides. Some specialties might apply only partially. For example, if you were making a morningstar and had specialty in woodworking, the GM might give you half your bonus because the item requires both blacksmithing and woodworking.</p>\n<table class=\"pf2e\" style=\"white-space:nowrap\">\n<thead>\n<tr>\n<th>Specialty</th>\n<th>Applicable Items</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Alchemy*</td>\n<td>Alchemical items such as elixirs</td>\n</tr>\n<tr>\n<td>Artistry</td>\n<td>Fine art, including jewelry</td>\n</tr>\n<tr>\n<td>Blacksmithing</td>\n<td>Durable metal goods, including metal armor</td>\n</tr>\n<tr>\n<td>Bookmaking</td>\n<td>Books and paper</td>\n</tr>\n<tr>\n<td>Glassmaking</td>\n<td>Glass, including glassware and windows</td>\n</tr>\n<tr>\n<td>Leatherworking</td>\n<td>Leather goods, including leather armor</td>\n</tr>\n<tr>\n<td>Pottery</td>\n<td>Ceramic goods</td>\n</tr>\n<tr>\n<td>Shipbuilding</td>\n<td>Ships and boats</td>\n</tr>\n<tr>\n<td>Stonemasonry</td>\n<td>Stone goods and structures</td>\n</tr>\n<tr>\n<td>Tailoring</td>\n<td>Clothing</td>\n</tr>\n<tr>\n<td>Weaving</td>\n<td>Textiles, baskets, and rugs</td>\n</tr>\n<tr>\n<td>Woodworking</td>\n<td>Wooden goods and structures</td>\n</tr>\n</tbody>\n</table>\n<p>* You must have the @UUID[Compendium.pf2e.feats-srd.Item.is3Oz9wt11lNq62K]{Alchemical Crafting} skill feat to Craft alchemical items.</p>"
+                },
+                "action->Explode": {
+                    "name": "Explode",
+                    "description": "<p>You intentionally take your innovation beyond normal safety limits, making it explode and damage nearby creatures without damaging the innovation... hopefully. The explosion deals @Damage[max(2, @actor.level)d6[@actor.flags.pf2e.inventor.explode]|options:area-damage] damage with a @Check[reflex|against:inventor|basic|options:area-effect] to all creatures in a @Template[emanation|distance:5] around you (if you're wearing or holding the innovation) or around your innovation (if your innovation is a minion).</p>\n<p>At 3rd level, and every level thereafter, increase your explosion's damage by 1d6.</p>\n<p>If you have the breakthrough innovation class feature, you can choose either a 5-foot or @Template[emanation|distance:10] for the area when you use Explode; if you have the revolutionary innovation class feature, you can choose a 5-foot, 10-foot, or @Template[emanation|distance:15].</p>"
+                },
+                "action->Overdrive": {
+                    "name": "Overdrive",
+                    "description": "<p><strong>Frequency</strong> once per round</p><hr /><p>Temporarily cranking the gizmos on your body into overdrive, you try to add greater power to your attacks. Attempt a @Check[crafting|dc:@self.level] check that has a standard DC for your level.</p>\n<p>@UUID[Compendium.pf2e.feat-effects.Item.1XlJ9xLzL19GHoOL]{Effect: Overdrive}</p><hr /><p><strong>Critical Success</strong> Your gizmos go into a state of incredible efficiency called critical overdrive, adding great power to your attacks. Your Strikes deal additional damage equal to your Intelligence modifier for 1 minute. After the Overdrive ends, your gizmos become unusable as they cool down or reset, and you can't use Overdrive for 1 minute.</p>\n<p><strong>Success</strong> Your gizmos go into overdrive, adding power to your attacks. As critical success, except the additional damage is equal to half your Intelligence modifier.</p>\n<p><strong>Failure</strong> Your gizmos whine concerningly and begin to smoke. Your Strikes deal 1 additional fire damage.</p>\n<p><strong>Critical Failure</strong> Whoops! Something explodes. You take fire damage equal to half your level (rounded up), and you can't use Overdrive again for [[/r 1d4 #Recharge Overdrive]] rounds as your gizmos reset.</p><hr /><p><strong>Special</strong> When under the effects of Overdrive, you can still use the Overdrive action. You can't extend your Overdrive's duration this way, but you can turn an overdrive into a critical overdrive if you critically succeed. A failure has no effect on your current Overdrive, and you end your Overdrive on a critical failure.</p>"
+                },
+                "equipment->Thieves' Toolkit (built into Whirp)": {
+                    "name": "Thieves' Toolkit (built into Whirp)",
+                    "description": "<p>You need a thieves' toolkit to @UUID[Compendium.pf2e.actionspf2e.Item.2EE4aF4SZpYf0R6H]{Pick Locks} or @UUID[Compendium.pf2e.actionspf2e.Item.cYdz2grcOcRt4jk6]{Disable Devices} (of some types) using the Thievery skill.</p>\n<p>If your thieves' toolkit is broken, you can repair it by replacing the lock picks with @UUID[Compendium.pf2e.equipment-srd.Item.Sw7MBLASN3xK4Y44]{Replacement Picks} appropriate to your toolkit; this doesn't require using the Repair action. If you wear your thieves' toolkit, you can draw and replace it as part of the action that uses it.</p>"
+                },
+                "equipment->Repair Toolkit (built into Whirp)": {
+                    "name": "Repair Toolkit (built into Whirp)",
+                    "description": "<p>A repair kit allows you to perform simple repairs while traveling. It contains a portable anvil, tongs, woodworking tools, a whetstone, and oils for conditioning leather and wood. You can use a repair kit to Repair items using the Crafting skill. You can draw and replace a worn repair toolkit as part of the action that uses it.</p>"
+                },
+                "lore->Engineering Lore": {
+                    "name": "Engineering Lore"
+                },
+                "lore->Pathfinder Society Lore": {
+                    "name": "Pathfinder Society Lore"
+                },
+                "lore->Sailing Lore": {
+                    "name": "Sailing Lore"
+                }
+            }
+        },
+        "Droven (Level 3)": {
+            "name": "Droven (Level 3)",
+            "items": {
+                "feat->Specialty Crafting (Blacksmithing)": {
+                    "name": "Specialty Crafting (Blacksmithing)",
+                    "description": "<p>Your training focused on Crafting one particular kind of item. Select one of the specialties listed below; you gain a +1 circumstance bonus to Crafting checks to Craft items of that type. If you are a master in Crafting, this bonus increases to +2. If it's unclear whether the specialty applies, the GM decides. Some specialties might apply only partially. For example, if you were making a morningstar and had specialty in woodworking, the GM might give you half your bonus because the item requires both blacksmithing and woodworking.</p>\n<table class=\"pf2e\" style=\"white-space:nowrap\">\n<thead>\n<tr>\n<th>Specialty</th>\n<th>Applicable Items</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Alchemy*</td>\n<td>Alchemical items such as elixirs</td>\n</tr>\n<tr>\n<td>Artistry</td>\n<td>Fine art, including jewelry</td>\n</tr>\n<tr>\n<td>Blacksmithing</td>\n<td>Durable metal goods, including metal armor</td>\n</tr>\n<tr>\n<td>Bookmaking</td>\n<td>Books and paper</td>\n</tr>\n<tr>\n<td>Glassmaking</td>\n<td>Glass, including glassware and windows</td>\n</tr>\n<tr>\n<td>Leatherworking</td>\n<td>Leather goods, including leather armor</td>\n</tr>\n<tr>\n<td>Pottery</td>\n<td>Ceramic goods</td>\n</tr>\n<tr>\n<td>Shipbuilding</td>\n<td>Ships and boats</td>\n</tr>\n<tr>\n<td>Stonemasonry</td>\n<td>Stone goods and structures</td>\n</tr>\n<tr>\n<td>Tailoring</td>\n<td>Clothing</td>\n</tr>\n<tr>\n<td>Weaving</td>\n<td>Textiles, baskets, and rugs</td>\n</tr>\n<tr>\n<td>Woodworking</td>\n<td>Wooden goods and structures</td>\n</tr>\n</tbody>\n</table>\n<p>* You must have the @UUID[Compendium.pf2e.feats-srd.Item.is3Oz9wt11lNq62K]{Alchemical Crafting} skill feat to Craft alchemical items.</p>"
+                },
+                "action->Explode": {
+                    "name": "Explode",
+                    "description": "<p>You intentionally take your innovation beyond normal safety limits, making it explode and damage nearby creatures without damaging the innovation... hopefully. The explosion deals @Damage[max(2, @actor.level)d6[@actor.flags.pf2e.inventor.explode]|options:area-damage] damage with a @Check[reflex|against:inventor|basic|options:area-effect] to all creatures in a @Template[emanation|distance:5] around you (if you're wearing or holding the innovation) or around your innovation (if your innovation is a minion).</p>\n<p>At 3rd level, and every level thereafter, increase your explosion's damage by 1d6.</p>\n<p>If you have the breakthrough innovation class feature, you can choose either a 5-foot or @Template[emanation|distance:10] for the area when you use Explode; if you have the revolutionary innovation class feature, you can choose a 5-foot, 10-foot, or @Template[emanation|distance:15].</p>"
+                },
+                "action->Overdrive": {
+                    "name": "Overdrive",
+                    "description": "<p><strong>Frequency</strong> once per round</p><hr /><p>Temporarily cranking the gizmos on your body into overdrive, you try to add greater power to your attacks. Attempt a @Check[crafting|dc:@self.level] check that has a standard DC for your level.</p>\n<p>@UUID[Compendium.pf2e.feat-effects.Item.1XlJ9xLzL19GHoOL]{Effect: Overdrive}</p><hr /><p><strong>Critical Success</strong> Your gizmos go into a state of incredible efficiency called critical overdrive, adding great power to your attacks. Your Strikes deal additional damage equal to your Intelligence modifier for 1 minute. After the Overdrive ends, your gizmos become unusable as they cool down or reset, and you can't use Overdrive for 1 minute.</p>\n<p><strong>Success</strong> Your gizmos go into overdrive, adding power to your attacks. As critical success, except the additional damage is equal to half your Intelligence modifier.</p>\n<p><strong>Failure</strong> Your gizmos whine concerningly and begin to smoke. Your Strikes deal 1 additional fire damage.</p>\n<p><strong>Critical Failure</strong> Whoops! Something explodes. You take fire damage equal to half your level (rounded up), and you can't use Overdrive again for [[/r 1d4 #Recharge Overdrive]] rounds as your gizmos reset.</p><hr /><p><strong>Special</strong> When under the effects of Overdrive, you can still use the Overdrive action. You can't extend your Overdrive's duration this way, but you can turn an overdrive into a critical overdrive if you critically succeed. A failure has no effect on your current Overdrive, and you end your Overdrive on a critical failure.</p>"
+                },
+                "equipment->Thieves' Toolkit (built into Whirp)": {
+                    "name": "Thieves' Toolkit (built into Whirp)",
+                    "description": "<p>You need a thieves' toolkit to @UUID[Compendium.pf2e.actionspf2e.Item.2EE4aF4SZpYf0R6H]{Pick Locks} or @UUID[Compendium.pf2e.actionspf2e.Item.cYdz2grcOcRt4jk6]{Disable Devices} (of some types) using the Thievery skill.</p>\n<p>If your thieves' toolkit is broken, you can repair it by replacing the lock picks with @UUID[Compendium.pf2e.equipment-srd.Item.Sw7MBLASN3xK4Y44]{Replacement Picks} appropriate to your toolkit; this doesn't require using the Repair action. If you wear your thieves' toolkit, you can draw and replace it as part of the action that uses it.</p>"
+                },
+                "equipment->Repair Toolkit (built into Whirp)": {
+                    "name": "Repair Toolkit (built into Whirp)",
+                    "description": "<p>A repair kit allows you to perform simple repairs while traveling. It contains a portable anvil, tongs, woodworking tools, a whetstone, and oils for conditioning leather and wood. You can use a repair kit to Repair items using the Crafting skill. You can draw and replace a worn repair toolkit as part of the action that uses it.</p>"
+                },
+                "lore->Engineering Lore": {
+                    "name": "Engineering Lore"
+                },
+                "lore->Pathfinder Society Lore": {
+                    "name": "Pathfinder Society Lore"
+                },
+                "lore->Sailing Lore": {
+                    "name": "Sailing Lore"
+                },
+                "consumable->Healing Potion (Minor)": {
+                    "name": "Healing Potion (Minor)",
+                    "description": "<p><strong>Activate</strong> <span class=\"action-glyph\">A</span> (manipulate)</p><hr /><p>A <em>healing potion</em> is a vial of a ruby-red liquid that imparts a tingling sensation as the drinker's wounds heal rapidly. When you drink a <em>healing potion</em>, you regain @Damage[1d8[healing]] Hit Points.</p>"
+                },
+                "consumable->Ablative Armor Plating (Moderate)": {
+                    "name": "Ablative Armor Plating (Moderate)",
+                    "description": "<p>Ablative armor plating is additional plating, combined with springs, clever clockwork, and improvised padding, to absorb damage by knocking the additional pieces free. The pieces slowly come apart on their own with time and movement. The process of attaching the plating takes 10 minutes and grants the wearer of the armor 10 temporary Hit Points for 10 minutes or until lost. Removing the plating early destroys it.</p>\n<p>@UUID[Compendium.pf2e.equipment-effects.Item.mn39aML7EWKbttKT]{Effect: Ablative Armor Plating (Moderate)}</p>"
+                },
+                "consumable->Blast Boots (Moderate)": {
+                    "name": "Blast Boots (Moderate)",
+                    "description": "<p><strong>Activate</strong> <span class=\"action-glyph\">1</span> (manipulate)</p><hr /><p>These sets of rockets come in pairs and strap onto existing footwear (or a creature's feet). Inserting them and aligning them properly takes 1 minute. When you Activate the blast boots, you can @UUID[Compendium.pf2e.actionspf2e.Item.2HJ4yuEFY1Cast4h]{High Jump} or @UUID[Compendium.pf2e.actionspf2e.Item.JUvAvruz7yRQXfz2]{Long Jump}, without the need to Stride first.</p>\n<p>When you Activate the moderate blast boots to High Jump, you can increase the vertical distance of your High Jump by up to 30 feet. When you Activate them to Long Jump, you can increase the horizontal distance of your Long Jump by up to 45 feet.</p>"
+                }
+            }
+        },
+        "Droven (Level 5)": {
+            "name": "Droven (Level 5)",
+            "items": {
+                "feat->Specialty Crafting (Blacksmithing)": {
+                    "name": "Specialty Crafting (Blacksmithing)",
+                    "description": "<p>Your training focused on Crafting one particular kind of item. Select one of the specialties listed below; you gain a +1 circumstance bonus to Crafting checks to Craft items of that type. If you are a master in Crafting, this bonus increases to +2. If it's unclear whether the specialty applies, the GM decides. Some specialties might apply only partially. For example, if you were making a morningstar and had specialty in woodworking, the GM might give you half your bonus because the item requires both blacksmithing and woodworking.</p>\n<table class=\"pf2e\" style=\"white-space:nowrap\">\n<thead>\n<tr>\n<th>Specialty</th>\n<th>Applicable Items</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Alchemy*</td>\n<td>Alchemical items such as elixirs</td>\n</tr>\n<tr>\n<td>Artistry</td>\n<td>Fine art, including jewelry</td>\n</tr>\n<tr>\n<td>Blacksmithing</td>\n<td>Durable metal goods, including metal armor</td>\n</tr>\n<tr>\n<td>Bookmaking</td>\n<td>Books and paper</td>\n</tr>\n<tr>\n<td>Glassmaking</td>\n<td>Glass, including glassware and windows</td>\n</tr>\n<tr>\n<td>Leatherworking</td>\n<td>Leather goods, including leather armor</td>\n</tr>\n<tr>\n<td>Pottery</td>\n<td>Ceramic goods</td>\n</tr>\n<tr>\n<td>Shipbuilding</td>\n<td>Ships and boats</td>\n</tr>\n<tr>\n<td>Stonemasonry</td>\n<td>Stone goods and structures</td>\n</tr>\n<tr>\n<td>Tailoring</td>\n<td>Clothing</td>\n</tr>\n<tr>\n<td>Weaving</td>\n<td>Textiles, baskets, and rugs</td>\n</tr>\n<tr>\n<td>Woodworking</td>\n<td>Wooden goods and structures</td>\n</tr>\n</tbody>\n</table>\n<p>* You must have the @UUID[Compendium.pf2e.feats-srd.Item.is3Oz9wt11lNq62K]{Alchemical Crafting} skill feat to Craft alchemical items.</p>"
+                },
+                "action->Explode": {
+                    "name": "Explode",
+                    "description": "<p>You intentionally take your innovation beyond normal safety limits, making it explode and damage nearby creatures without damaging the innovation... hopefully. The explosion deals @Damage[max(2, @actor.level)d6[@actor.flags.pf2e.inventor.explode]|options:area-damage] damage with a @Check[reflex|against:inventor|basic|options:area-effect] to all creatures in a @Template[emanation|distance:5] around you (if you're wearing or holding the innovation) or around your innovation (if your innovation is a minion).</p>\n<p>At 3rd level, and every level thereafter, increase your explosion's damage by 1d6.</p>\n<p>If you have the breakthrough innovation class feature, you can choose either a 5-foot or @Template[emanation|distance:10] for the area when you use Explode; if you have the revolutionary innovation class feature, you can choose a 5-foot, 10-foot, or @Template[emanation|distance:15].</p>"
+                },
+                "action->Overdrive": {
+                    "name": "Overdrive",
+                    "description": "<p><strong>Frequency</strong> once per round</p><hr /><p>Temporarily cranking the gizmos on your body into overdrive, you try to add greater power to your attacks. Attempt a @Check[crafting|dc:@self.level] check that has a standard DC for your level.</p>\n<p>@UUID[Compendium.pf2e.feat-effects.Item.1XlJ9xLzL19GHoOL]{Effect: Overdrive}</p><hr /><p><strong>Critical Success</strong> Your gizmos go into a state of incredible efficiency called critical overdrive, adding great power to your attacks. Your Strikes deal additional damage equal to your Intelligence modifier for 1 minute. After the Overdrive ends, your gizmos become unusable as they cool down or reset, and you can't use Overdrive for 1 minute.</p>\n<p><strong>Success</strong> Your gizmos go into overdrive, adding power to your attacks. As critical success, except the additional damage is equal to half your Intelligence modifier.</p>\n<p><strong>Failure</strong> Your gizmos whine concerningly and begin to smoke. Your Strikes deal 1 additional fire damage.</p>\n<p><strong>Critical Failure</strong> Whoops! Something explodes. You take fire damage equal to half your level (rounded up), and you can't use Overdrive again for [[/r 1d4 #Recharge Overdrive]] rounds as your gizmos reset.</p><hr /><p><strong>Special</strong> When under the effects of Overdrive, you can still use the Overdrive action. You can't extend your Overdrive's duration this way, but you can turn an overdrive into a critical overdrive if you critically succeed. A failure has no effect on your current Overdrive, and you end your Overdrive on a critical failure.</p>"
+                },
+                "equipment->Thieves' Toolkit (built into Whirp)": {
+                    "name": "Thieves' Toolkit (built into Whirp)",
+                    "description": "<p>You need a thieves' toolkit to @UUID[Compendium.pf2e.actionspf2e.Item.2EE4aF4SZpYf0R6H]{Pick Locks} or @UUID[Compendium.pf2e.actionspf2e.Item.cYdz2grcOcRt4jk6]{Disable Devices} (of some types) using the Thievery skill.</p>\n<p>If your thieves' toolkit is broken, you can repair it by replacing the lock picks with @UUID[Compendium.pf2e.equipment-srd.Item.Sw7MBLASN3xK4Y44]{Replacement Picks} appropriate to your toolkit; this doesn't require using the Repair action. If you wear your thieves' toolkit, you can draw and replace it as part of the action that uses it.</p>"
+                },
+                "equipment->Repair Toolkit (built into Whirp)": {
+                    "name": "Repair Toolkit (built into Whirp)",
+                    "description": "<p>A repair kit allows you to perform simple repairs while traveling. It contains a portable anvil, tongs, woodworking tools, a whetstone, and oils for conditioning leather and wood. You can use a repair kit to Repair items using the Crafting skill. You can draw and replace a worn repair toolkit as part of the action that uses it.</p>"
+                },
+                "lore->Engineering Lore": {
+                    "name": "Engineering Lore"
+                },
+                "lore->Pathfinder Society Lore": {
+                    "name": "Pathfinder Society Lore"
+                },
+                "lore->Sailing Lore": {
+                    "name": "Sailing Lore"
+                },
+                "consumable->Ablative Armor Plating (Moderate)": {
+                    "name": "Ablative Armor Plating (Moderate)",
+                    "description": "<p>Ablative armor plating is additional plating, combined with springs, clever clockwork, and improvised padding, to absorb damage by knocking the additional pieces free. The pieces slowly come apart on their own with time and movement. The process of attaching the plating takes 10 minutes and grants the wearer of the armor 10 temporary Hit Points for 10 minutes or until lost. Removing the plating early destroys it.</p>\n<p>@UUID[Compendium.pf2e.equipment-effects.Item.mn39aML7EWKbttKT]{Effect: Ablative Armor Plating (Moderate)}</p>"
+                },
+                "consumable->Healing Potion (Lesser)": {
+                    "name": "Healing Potion (Lesser)",
+                    "description": "<p><strong>Activate</strong> <span class=\"action-glyph\">A</span> (manipulate)</p><hr /><p>A <em>healing potion</em> is a vial of a ruby-red liquid that imparts a tingling sensation as the drinker's wounds heal rapidly. When you drink a <em>healing potion</em>, you regain @Damage[(2d8+5)[healing]] Hit Points.</p>"
+                },
+                "consumable->Blast Boots (Moderate)": {
+                    "name": "Blast Boots (Moderate)",
+                    "description": "<p><strong>Activate</strong> <span class=\"action-glyph\">1</span> (manipulate)</p><hr /><p>These sets of rockets come in pairs and strap onto existing footwear (or a creature's feet). Inserting them and aligning them properly takes 1 minute. When you Activate the blast boots, you can @UUID[Compendium.pf2e.actionspf2e.Item.2HJ4yuEFY1Cast4h]{High Jump} or @UUID[Compendium.pf2e.actionspf2e.Item.JUvAvruz7yRQXfz2]{Long Jump}, without the need to Stride first.</p>\n<p>When you Activate the moderate blast boots to High Jump, you can increase the vertical distance of your High Jump by up to 30 feet. When you Activate them to Long Jump, you can increase the horizontal distance of your Long Jump by up to 45 feet.</p>"
+                }
+            }
+        },
         "Ezren (Level 1)": {
             "name": "Ezren (Level 1)",
             "backstory": "<p>For many adventurers, wanderlust strikes at a young age when minds are impressionable and the urge to escape the doldrums of homelife become too much to resist. In other cases, there's never a choice at all\u2014being raised on the streets leaves few other options available for those who do not wish to become criminals. Rarest are those who come to adventuring late in life.</p>\n<p>This was Ezren's path to adventure. Born to a successful spice merchant in one of Absalom's more affluent districts, Ezren's childhood was pleasantly safe. As the fourth of six siblings, he never knew the responsibility implicit in being the eldest (and therefore the one expected to carry on father's trade) or the freedom of being the youngest. He enjoyed the comforts of a well-to-do family, lived in a neighborhood relatively safe from crime, and seemed poised for a life of mediocrity.</p>\n<p>That changed when his father was taken away, charged with heresy by the church of Abadar. The charges were too spurious to stick, and while his father escaped excommunication, the damage had been done\u2014his father's business fell to pieces. Shocked, dismayed, and convinced that his father was innocent, Ezren abandoned his future and spent his adult life trying to repair his father's ruined reputation. So when Ezren finally uncovered irrefutable proof of his father's guilt, and he realized he'd wasted his life on a lie, he turned his evidence over to the church and said goodbye to his home, his family, and his life.</p>\n<p>At the age of 42, Ezren is full aware that he's missed his adulthood, yet at the same time he looks forward to discovering the world, and making a difference for a cause that he believes in. His dissatisfaction with family, religion, and government left him precious little to trust but his own intellect\u2014in fighting for his father's redemption, he had become a gifted researcher, scholar, and intellectual. Lacking the spry limbs of youth, the trust in religion, the strong arm of the soldier, or the way with words of the politician, Ezren felt he had but one option open. He traveled to tarnished Oppara, capital of Taldor and one of the oldest cities of the continent of Avistan, hoping to join one of several prestigious schools of wizardry. Yet time and time again, he was turned away due to his age. No wizard seemed to want an apprentice who, in many cases, was older than them. So Ezren was forced to strike out on his own once again.</p>\n<p>Over the next decade, as he traveled Avistan, Ezren studied where he could, picking up tricks of the wizard's trade here and there. The combination of arcane study mixed with his worldly first-hand experiences have given him an edge over young wizards fresh out of apprenticeship and eager to make names for themselves. Ezren knows about the many ways the world can trick and betray you, but now he's finally begun to master the art of magic, giving him the tools to fight back.</p>",
@@ -1744,6 +1870,91 @@
                 }
             }
         },
+        "Nhalmika (Level 1)": {
+            "name": "Nhalmika (Level 1)",
+            "items": {
+                "action->Clear a Path": {
+                    "name": "Clear a Path",
+                    "description": "<p><strong>Requirements</strong> You're wielding a two-handed firearm or two-handed crossbow.</p><hr /><p>You push outward with your weapon to clear some space before quickly reloading a fresh round. You make an Athletics check to @UUID[Compendium.pf2e.actionspf2e.Item.7blmbDrQFNfdT731]{Shove} an opponent within your reach using your weapon, then Interact to reload. For this Shove, you don't need a free hand, and you add the weapon's item bonus on attack rolls (if any) to the Athletics check. If your last action or activity this round included a ranged Strike with the weapon, use the same multiple attack penalty as the last Strike you attempted with the weapon for the Shove; the Shove still counts toward your multiple attack penalty on further attacks.</p>"
+                },
+                "action->Living Fortification": {
+                    "name": "Living Fortification",
+                    "description": "<p><strong>Trigger</strong> You roll initiative.</p><hr /><p>You posture defensively with firearms or crossbows, acting like a walking tower. Interact to draw a firearm or crossbow. You then position that weapon defensively, as the parry trait, gaining a +1 circumstance bonus to AC until the end of your first turn, or a +2 circumstance bonus if the chosen weapon has the parry trait.</p>\n<p>@UUID[Compendium.pf2e.feat-effects.Item.fRlvmul3LbLo2xvR]{Effect: Living Fortification}</p>\n<p>@UUID[Compendium.pf2e.feat-effects.Item.WxE5S3KY1DR5Nbxm]{Effect: Living Fortification (Parry Trait)}</p>"
+                },
+                "consumable->Rounds (Dwarven Scattergun)": {
+                    "name": "Rounds (Dwarven Scattergun)",
+                    "description": "<p>Firearms require ammunition consisting of a projectile and black powder. A round of ammo can vary in its composition but is typically either a prepackaged paper cartridge, including wadding, bullet, and black powder, or loose shot packed in manually. Some weapons, like hand cannons and blunderbusses, can fire other materials, but their ammunition has the same Price due to the cost of the black powder. Because making rounds of firearm ammunition requires creating black powder, you need the @UUID[Compendium.pf2e.feats-srd.Item.is3Oz9wt11lNq62K]{Alchemical Crafting} skill feat to make them. Firearm rounds are a valid option for magical ammunition, just like arrows or bolts. Crafting magical firearm ammunition requires you to be able to craft both alchemical and magical items.</p>"
+                }
+            }
+        },
+        "Nhalmika (Level 3)": {
+            "name": "Nhalmika (Level 3)",
+            "items": {
+                "action->Clear a Path": {
+                    "name": "Clear a Path",
+                    "description": "<p><strong>Requirements</strong> You're wielding a two-handed firearm or two-handed crossbow.</p><hr /><p>You push outward with your weapon to clear some space before quickly reloading a fresh round. You make an Athletics check to @UUID[Compendium.pf2e.actionspf2e.Item.7blmbDrQFNfdT731]{Shove} an opponent within your reach using your weapon, then Interact to reload. For this Shove, you don't need a free hand, and you add the weapon's item bonus on attack rolls (if any) to the Athletics check. If your last action or activity this round included a ranged Strike with the weapon, use the same multiple attack penalty as the last Strike you attempted with the weapon for the Shove; the Shove still counts toward your multiple attack penalty on further attacks.</p>"
+                },
+                "action->Living Fortification": {
+                    "name": "Living Fortification",
+                    "description": "<p><strong>Trigger</strong> You roll initiative.</p><hr /><p>You posture defensively with firearms or crossbows, acting like a walking tower. Interact to draw a firearm or crossbow. You then position that weapon defensively, as the parry trait, gaining a +1 circumstance bonus to AC until the end of your first turn, or a +2 circumstance bonus if the chosen weapon has the parry trait.</p>\n<p>@UUID[Compendium.pf2e.feat-effects.Item.fRlvmul3LbLo2xvR]{Effect: Living Fortification}</p>\n<p>@UUID[Compendium.pf2e.feat-effects.Item.WxE5S3KY1DR5Nbxm]{Effect: Living Fortification (Parry Trait)}</p>"
+                },
+                "consumable->Rounds (Dwarven Scattergun)": {
+                    "name": "Rounds (Dwarven Scattergun)",
+                    "description": "<p>Firearms require ammunition consisting of a projectile and black powder. A round of ammo can vary in its composition but is typically either a prepackaged paper cartridge, including wadding, bullet, and black powder, or loose shot packed in manually. Some weapons, like hand cannons and blunderbusses, can fire other materials, but their ammunition has the same Price due to the cost of the black powder. Because making rounds of firearm ammunition requires creating black powder, you need the @UUID[Compendium.pf2e.feats-srd.Item.is3Oz9wt11lNq62K]{Alchemical Crafting} skill feat to make them. Firearm rounds are a valid option for magical ammunition, just like arrows or bolts. Crafting magical firearm ammunition requires you to be able to craft both alchemical and magical items.</p>"
+                },
+                "consumable->Healing Potion (Lesser)": {
+                    "name": "Healing Potion (Lesser)",
+                    "description": "<p><strong>Activate</strong> <span class=\"action-glyph\">A</span> (manipulate)</p><hr /><p>A <em>healing potion</em> is a vial of a ruby-red liquid that imparts a tingling sensation as the drinker's wounds heal rapidly. When you drink a <em>healing potion</em>, you regain @Damage[(2d8+5)[healing]] Hit Points.</p>"
+                },
+                "weapon->Alchemist's Fire (Moderate)": {
+                    "name": "Alchemist's Fire (Moderate)",
+                    "description": "<p><strong>Activate</strong> <span class=\"action-glyph\">A</span> Strike</p>\n<hr />\n<p>Alchemist's fire is a combination of volatile liquids that ignite when exposed to air. Alchemist's fire deals 2d8 fire damage, 2 persistent fire damage, and 2 fire splash damage. You gain a +1 item bonus to attack rolls.</p>"
+                },
+                "lore->Warfare Lore": {
+                    "name": "Warfare Lore"
+                },
+                "consumable->Rounds (Clan Pistol)": {
+                    "name": "Rounds (Clan Pistol)",
+                    "description": "<p>Firearms require ammunition consisting of a projectile and black powder. A round of ammo can vary in its composition but is typically either a prepackaged paper cartridge, including wadding, bullet, and black powder, or loose shot packed in manually. Some weapons, like hand cannons and blunderbusses, can fire other materials, but their ammunition has the same Price due to the cost of the black powder. Because making rounds of firearm ammunition requires creating black powder, you need the @UUID[Compendium.pf2e.feats-srd.Item.is3Oz9wt11lNq62K]{Alchemical Crafting} skill feat to make them. Firearm rounds are a valid option for magical ammunition, just like arrows or bolts. Crafting magical firearm ammunition requires you to be able to craft both alchemical and magical items.</p>"
+                }
+            }
+        },
+        "Nhalmika (Level 5)": {
+            "name": "Nhalmika (Level 5)",
+            "items": {
+                "action->Clear a Path": {
+                    "name": "Clear a Path",
+                    "description": "<p><strong>Requirements</strong> You're wielding a two-handed firearm or two-handed crossbow.</p><hr /><p>You push outward with your weapon to clear some space before quickly reloading a fresh round. You make an Athletics check to @UUID[Compendium.pf2e.actionspf2e.Item.7blmbDrQFNfdT731]{Shove} an opponent within your reach using your weapon, then Interact to reload. For this Shove, you don't need a free hand, and you add the weapon's item bonus on attack rolls (if any) to the Athletics check. If your last action or activity this round included a ranged Strike with the weapon, use the same multiple attack penalty as the last Strike you attempted with the weapon for the Shove; the Shove still counts toward your multiple attack penalty on further attacks.</p>"
+                },
+                "action->Living Fortification": {
+                    "name": "Living Fortification",
+                    "description": "<p><strong>Trigger</strong> You roll initiative.</p><hr /><p>You posture defensively with firearms or crossbows, acting like a walking tower. Interact to draw a firearm or crossbow. You then position that weapon defensively, as the parry trait, gaining a +1 circumstance bonus to AC until the end of your first turn, or a +2 circumstance bonus if the chosen weapon has the parry trait.</p>\n<p>@UUID[Compendium.pf2e.feat-effects.Item.fRlvmul3LbLo2xvR]{Effect: Living Fortification}</p>\n<p>@UUID[Compendium.pf2e.feat-effects.Item.WxE5S3KY1DR5Nbxm]{Effect: Living Fortification (Parry Trait)}</p>"
+                },
+                "consumable->Rounds (Dwarven Scattergun)": {
+                    "name": "Rounds (Dwarven Scattergun)",
+                    "description": "<p>Firearms require ammunition consisting of a projectile and black powder. A round of ammo can vary in its composition but is typically either a prepackaged paper cartridge, including wadding, bullet, and black powder, or loose shot packed in manually. Some weapons, like hand cannons and blunderbusses, can fire other materials, but their ammunition has the same Price due to the cost of the black powder. Because making rounds of firearm ammunition requires creating black powder, you need the @UUID[Compendium.pf2e.feats-srd.Item.is3Oz9wt11lNq62K]{Alchemical Crafting} skill feat to make them. Firearm rounds are a valid option for magical ammunition, just like arrows or bolts. Crafting magical firearm ammunition requires you to be able to craft both alchemical and magical items.</p>"
+                },
+                "consumable->Healing Potion (Lesser)": {
+                    "name": "Healing Potion (Lesser)",
+                    "description": "<p><strong>Activate</strong> <span class=\"action-glyph\">A</span> (manipulate)</p><hr /><p>A <em>healing potion</em> is a vial of a ruby-red liquid that imparts a tingling sensation as the drinker's wounds heal rapidly. When you drink a <em>healing potion</em>, you regain @Damage[(2d8+5)[healing]] Hit Points.</p>"
+                },
+                "weapon->Alchemist's Fire (Moderate)": {
+                    "name": "Alchemist's Fire (Moderate)",
+                    "description": "<p><strong>Activate</strong> <span class=\"action-glyph\">A</span> Strike</p>\n<hr />\n<p>Alchemist's fire is a combination of volatile liquids that ignite when exposed to air. Alchemist's fire deals 2d8 fire damage, 2 persistent fire damage, and 2 fire splash damage. You gain a +1 item bonus to attack rolls.</p>"
+                },
+                "lore->Warfare Lore": {
+                    "name": "Warfare Lore"
+                },
+                "consumable->Rounds (Clan Pistol)": {
+                    "name": "Rounds (Clan Pistol)",
+                    "description": "<p>Firearms require ammunition consisting of a projectile and black powder. A round of ammo can vary in its composition but is typically either a prepackaged paper cartridge, including wadding, bullet, and black powder, or loose shot packed in manually. Some weapons, like hand cannons and blunderbusses, can fire other materials, but their ammunition has the same Price due to the cost of the black powder. Because making rounds of firearm ammunition requires creating black powder, you need the @UUID[Compendium.pf2e.feats-srd.Item.is3Oz9wt11lNq62K]{Alchemical Crafting} skill feat to make them. Firearm rounds are a valid option for magical ammunition, just like arrows or bolts. Crafting magical firearm ammunition requires you to be able to craft both alchemical and magical items.</p>"
+                },
+                "consumable->Alloy Orb (Low-Grade)": {
+                    "name": "Alloy Orb (Low-Grade)",
+                    "description": "<p><strong>Activate</strong> <span class=\"action-glyph\">A</span> (concentrate)</p>\n<hr />\n<p>Although solid, this orb of metal swirls with bright silver and dark iron colors, as if made of liquid. When you activate the <em>alloy orb</em>, select cold iron or silver. The affixed weapon functions as the chosen material for 1 minute, suppressing its original material. This orb only works on weapons of 8th level or lower.</p>\n<p>@UUID[Compendium.pf2e.equipment-effects.Item.9MU9d8tmJg3thkSc]{Effect: Alloy Orb (Low-Grade)}</p>"
+                }
+            }
+        },
         "Quinn (Level 1)": {
             "name": "Quinn (Level 1)",
             "backstory": "<p>The rule of law is only as strong as the people who uphold it, and few know this fact better than Quinn.</p>\n<p>The child of a former noble family of Galt, Quinn was raised to despise the chaos that had robbed his parents of their proper name and station, forcing them to hide as middle-class apothecaries. Yet for Quinn himself, trained as a legal clerk and never having personally known the aristocratic comforts his parents mourned, this was no true inconvenience. What frustrated him about his nation was not that power resided with the people, but rather that it was wielded in such a capricious fashion. His fellow citizens' constant false accusations and refusal to abide by court rulings\u2014not to mention the Gray Gardeners' tendency to pronounce sentences completely outside the system\u2014drove young Quinn to distraction.</p>\n<p>When Quinn was 37, having recently lost both parents to an outbreak of plague, his simmering rage finally came to a head. After the ruling faction sentenced a man to death with flagrant disregard for due process, Quinn overstepped his usual role by investigating the matter himself, turning up irrefutable proof of the man's innocence. When his attempts to reopen the case were stymied, he returned the night before the scheduled execution and set the man free\u2014only to run straight into a Gray Gardener patrol. The prisoner escaped in the ensuing fracas, and even as Quinn ran, he heard the Gardeners shouting his name.</p>\n<p>Quinn fled for the Taldan border, knowing that there was now a price on his head. Yet despite all he'd lost, he found himself laughing\u2014for here, in this tragic debacle, he had finally discovered a sense of satisfaction he'd been missing his whole life. He had upheld the law and defended the innocent in spite of government negligence and corruption. By working outside the legal system, he'd helped guide it back toward a righteous path. And he wanted more.</p>\n<p>Thus began a new chapter in Quinn's life. Roaming the nations of the Inner Sea, he constantly keeps an ear out for allegations of unjust accusations or abuses of power. When he finds one, he investigates the case himself, using a lifetime of association with law enforcement agents and detective agencies like The Sleepless to help him ferret out the truth. If the legal system seems fair, he often shows up unexpectedly at the court proceedings, presenting sworn evidence and acting as defending counsel for the accused. If he finds a court to be corrupt, he takes a more direct hand in protecting the innocent. While he respects the law, he also knows that people are imperfect, and that breaking local laws is sometimes necessary in order to uphold more universal ones. Of course, his meddling is rarely popular with the opposition, and so Quinn generally moves along as soon as he's seen justice done and taken steps to ensure that the victim won't suffer further abuses.</p>\n<p>Quinn is a genial, gentlemanly sort, quick with a joke and able to fit easily into both high society and low. His well-honed analytical mind is capable of astounding feats of logic and deduction, and he's fond of sharpening it still further with alchemical extracts learned from his parents and his own personal studies. While formidable in combat, he uses a sword cane so as not to unduly tip off his enemies to his abilities, believing that the best weapon is the one your foe never sees coming. He's loyal to his friends, and sometimes seems to have a connection in every town, yet is also wary of associating too long or too openly with his allies, knowing that his fight for justice has made him unpopular with various powerful factions.</p>\n<p>Though now well into middle age, Quinn has no intentions of slowing down. As he's fond of telling companions, \"a man needs only three things to change the world: a quick wit, a righteous heart, and a stylish coat.\"</p>",
@@ -2622,6 +2833,79 @@
                 }
             }
         },
+        "Whirp (Level 1)": {
+            "name": "Whirp (Level 1)",
+            "items": {
+                "ancestry->Prototype Construct": {
+                    "name": "Prototype Construct"
+                },
+                "class->Construct Companion": {
+                    "name": "Construct Companion"
+                },
+                "feat->Fist": {
+                    "name": "Fist",
+                    "description": "<p>Rename this feat to rename the strike created by it, the image of this feat can also be adjusted to the image you want for the strike.</p>"
+                },
+                "feat->Ear": {
+                    "name": "Ear",
+                    "description": "<p>Rename this feat to rename the strike created by it, the image of this feat can also be adjusted to the image you want for the strike.</p>"
+                },
+                "feat->Manual Dexterity": {
+                    "name": "Manual Dexterity",
+                    "description": "<p>Your construct innovation has articulated hands or similar appendages with significant manual dexterity. It can perform manipulate actions with up to two of its limbs. As normal for a companion, it still can't wield weapons or held items that don't have the companion trait, and it can't activate items.</p>"
+                }
+            }
+        },
+        "Whirp (Level 3)": {
+            "name": "Whirp (Level 3)",
+            "items": {
+                "ancestry->Prototype Construct": {
+                    "name": "Prototype Construct"
+                },
+                "class->Construct Companion": {
+                    "name": "Construct Companion"
+                },
+                "feat->Fist": {
+                    "name": "Fist",
+                    "description": "<p>Rename this feat to rename the strike created by it, the image of this feat can also be adjusted to the image you want for the strike.</p>"
+                },
+                "feat->Ear": {
+                    "name": "Ear",
+                    "description": "<p>Rename this feat to rename the strike created by it, the image of this feat can also be adjusted to the image you want for the strike.</p>"
+                },
+                "feat->Manual Dexterity": {
+                    "name": "Manual Dexterity",
+                    "description": "<p>Your construct innovation has articulated hands or similar appendages with significant manual dexterity. It can perform manipulate actions with up to two of its limbs. As normal for a companion, it still can't wield weapons or held items that don't have the companion trait, and it can't activate items.</p>"
+                }
+            }
+        },
+        "Whirp (Level 5)": {
+            "name": "Whirp (Level 5)",
+            "items": {
+                "ancestry->Prototype Construct": {
+                    "name": "Prototype Construct"
+                },
+                "class->Construct Companion": {
+                    "name": "Construct Companion"
+                },
+                "feat->Fist": {
+                    "name": "Fist",
+                    "description": "<p>Rename this feat to rename the strike created by it, the image of this feat can also be adjusted to the image you want for the strike.</p>"
+                },
+                "feat->Ear": {
+                    "name": "Ear",
+                    "description": "<p>Rename this feat to rename the strike created by it, the image of this feat can also be adjusted to the image you want for the strike.</p>"
+                },
+                "feat->Advanced Construct (CC) (Small)": {
+                    "name": "Advanced Construct (CC) (Small)",
+                    "description": "<p>To advance a prototype construct companion to an advanced construct companion (usually a result of one of your class feat choices), make the following adjustments.</p>\n<ul>\n<li>Increase its Strength, Dexterity, Constitution, and Wisdom modifiers by 1.</li>\n<li>Increase its unarmed attack damage from one die to two dice (for instance, 1d8 to 2d8).</li>\n<li>Increase its proficiency rank for Perception and all saving throws to expert.</li>\n<li>Increase its proficiency ranks in Intimidation, Stealth, and Survival to trained. If the construct is your innovation and it was already trained in those skills from a modification, increase its proficiency rank in those skills to expert.</li>\n<li>You can change your companion's Size, if you want, to either Small, Medium, or Large.\n\n</li>\n</ul>"
+                },
+                "feat->Manual Dexterity": {
+                    "name": "Manual Dexterity",
+                    "description": "<p>Your construct innovation has articulated hands or similar appendages with significant manual dexterity. It can perform manipulate actions with up to two of its limbs. As normal for a companion, it still can't wield weapons or held items that don't have the companion trait, and it can't activate items.</p>"
+                }
+            }
+        },
         "Yoon (Level 1)": {
             "name": "Yoon (Level 1)",
             "gender": "F/She/Her",
@@ -2775,8 +3059,6 @@
         }
     },
     "mapping": {
-        "backstory": "system.details.biography.backstory",
-        "gender": "system.details.gender.value",
         "items": {
             "converter": "translateActorItems",
             "path": "items"
@@ -2784,6 +3066,8 @@
         "rules": {
             "converter": "translateRules",
             "path": "system.rules"
-        }
+        },
+        "backstory": "system.details.biography.backstory",
+        "gender": "system.details.gender.value"
     }
 }

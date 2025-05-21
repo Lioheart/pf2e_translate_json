@@ -934,7 +934,7 @@
                 },
                 "action->Bombardier's Spray": {
                     "name": "Bombardier's Spray",
-                    "description": "<p>The cataclysm beetle sprays a @Template[cone|distance:60] of acid from its abdomen that deals @Damage[12d10[acid]] damage (@Check[reflex|dc:40|basic]). It can't use Bombardier's Spray or Burning Pool for [[/gmr 1d4 #Recharge Acid Action]]{1d4 rounds}.</p>"
+                    "description": "<p>The cataclysm beetle sprays a @Template[cone|distance:60] of acid from its abdomen that deals @Damage[12d10[acid]] damage (@Check[reflex|dc:40|basic|options:area-damage]). It can't use Bombardier's Spray or Burning Pool for [[/gmr 1d4 #Recharge Acid Action]]{1d4 rounds}.</p>"
                 },
                 "action->Burning Pool": {
                     "name": "Burning Pool",
@@ -3168,7 +3168,7 @@
                 },
                 "action->Beam of the Seven Suns": {
                     "name": "Beam of the Seven Suns",
-                    "description": "<p>The sun-spire collects solar energy and uses the energy to create a deadly beam of fire. It fires the beam in a @Template[line|distance:120], dealing @Damage[11d8[fire]] damage to all creatures in the line (@Check[reflex|dc:33|basic] save). The concentrated beam ignites everything in its path, including the air, creating a wall of burning flame along the line that continues to burn until the end of the sun-spire's next turn. This wall has the effects of a 5th-rank @UUID[Compendium.pf2e.spells-srd.Item.IarZrgCeaiUqOuRu]{Wall of Fire} spell, dealing @Damage[5d6[fire]] damage to any creature that crosses the wall or occupies the wall's area at the start of its turn. The sun-spire can't use the Beam of the Seven Suns again for [[/gmr 1d4 #rounds]]{1d4 rounds}, although rounds it's not in sunlight don't count toward this number.</p>"
+                    "description": "<p>The sun-spire collects solar energy and uses the energy to create a deadly beam of fire. It fires the beam in a @Template[line|distance:120], dealing @Damage[11d8[fire]|options:area-damage] damage to all creatures in the line (@Check[reflex|dc:33|basic|options:area-effect] save). The concentrated beam ignites everything in its path, including the air, creating a wall of burning flame along the line that continues to burn until the end of the sun-spire's next turn. This wall has the effects of a 5th-rank @UUID[Compendium.pf2e.spells-srd.Item.IarZrgCeaiUqOuRu]{Wall of Fire} spell, dealing @Damage[5d6[fire]|options:area-damage] damage to any creature that crosses the wall or occupies the wall's area at the start of its turn. The sun-spire can't use the Beam of the Seven Suns again for [[/gmr 1d4 #rounds]]{1d4 rounds}, although rounds it's not in sunlight don't count toward this number.</p>"
                 },
                 "action->Trample": {
                     "name": "Trample",
@@ -4498,7 +4498,7 @@
                 },
                 "action->Boneshatter": {
                     "name": "Boneshatter",
-                    "description": "<p><strong>Trigger</strong> Sparkeater takes any amount of bludgeoning damage</p>\n<hr />\n<p><strong>Effect</strong> Sparkeater's brittle bones shatter, spraying bone shards everywhere. Every creature within a @Template[emanation|distance:10]{10-foot emanation} of Sparkeater takes @Damage[7d6[piercing]] damage (@Check[reflex|dc:31|basic] save).</p>"
+                    "description": "<p><strong>Trigger</strong> Sparkeater takes any amount of bludgeoning damage</p>\n<hr />\n<p><strong>Effect</strong> Sparkeater's brittle bones shatter, spraying bone shards everywhere. Every creature within a @Template[emanation|distance:10]{10-foot emanation} of Sparkeater takes @Damage[7d6[piercing]|options:area-damage] damage (@Check[reflex|dc:31|basic|options:area-effect] save).</p>"
                 },
                 "action->Frightful Presence": {
                     "name": "Frightful Presence",
@@ -4727,7 +4727,7 @@
         "Stinger Ward Trap": {
             "name": "Stinger Ward Trap",
             "descriptionHazard": "<p>A ghostly stinger appears in the air and jabs at anyone moving through the opening.</p>",
-            "disable": "<p>@Check[thievery|dc:36|name:Prevent Ghostly Stinger from Forming|traits:uncommon,magical,trap] (master) to prevent the ghostly stinger from forming or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (6th level; counteract DC 34).</p>",
+            "disable": "<p>@Check[thievery|dc:36|name:Prevent Ghostly Stinger from Forming|traits:uncommon,magical,trap] (master) to prevent the ghostly stinger from forming or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (6th rank; counteract DC 34).</p>",
             "reset": "<p>The trap resets after 24 hours.</p>",
             "stealth": "<p>(expert)</p>",
             "items": {

@@ -32,7 +32,7 @@
         "Abyssal Firestorm Surge (7-8)": {
             "name": "Abyssal Firestorm Surge (7-8)",
             "descriptionHazard": "<p>High winds and forest fires intensified by Abyssal energy batters everything in the surge's path.</p>",
-            "disable": "<p>@Check[arcana|dc:27|name:Redirect the Storm Surge|traits:rare,fire,environmental,hazard,magical], @Check[nature|dc:27|name:Redirect the Storm Surge|traits:rare,fire,environmental,hazard,magical], @Check[occultism|dc:27|name:Redirect the Storm Surge|traits:rare,fire,environmental,hazard,magical], or @Check[religion|dc:27|name:Redirect the Storm Surge|traits:rare,fire,environmental,hazard,magical] (trained) to redirect the storm surge or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (4th level, counteract DC 23) to nullify it.</p>",
+            "disable": "<p>@Check[arcana|dc:27|name:Redirect the Storm Surge|traits:rare,fire,environmental,hazard,magical], @Check[nature|dc:27|name:Redirect the Storm Surge|traits:rare,fire,environmental,hazard,magical], @Check[occultism|dc:27|name:Redirect the Storm Surge|traits:rare,fire,environmental,hazard,magical], or @Check[religion|dc:27|name:Redirect the Storm Surge|traits:rare,fire,environmental,hazard,magical] (trained) to redirect the storm surge or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (4th rank, counteract DC 23) to nullify it.</p>",
             "stealth": "<p>(expert)</p>",
             "items": {
                 "action->Surge": {
@@ -48,7 +48,7 @@
         "Abyssal Firestorm Surge (9-10)": {
             "name": "Abyssal Firestorm Surge (9-10)",
             "descriptionHazard": "<p>High winds and forest fires intensified by Abyssal energy batters everything in the surge's path.</p>",
-            "disable": "<p>@Check[arcana|dc:33|name:Redirect the Storm Surge|traits:rare,fire,environmental,hazard,magical], @Check[nature|dc:33|name:Redirect the Storm Surge|traits:rare,fire,environmental,hazard,magical], @Check[occultism|dc:33|name:Redirect the Storm Surge|traits:rare,fire,environmental,hazard,magical], or @Check[religion|dc:33|name:Redirect the Storm Surge|traits:rare,fire,environmental,hazard,magical] (trained) to redirect the storm surge or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (5th level, counteract DC 26) to nullify it.</p>",
+            "disable": "<p>@Check[arcana|dc:33|name:Redirect the Storm Surge|traits:rare,fire,environmental,hazard,magical], @Check[nature|dc:33|name:Redirect the Storm Surge|traits:rare,fire,environmental,hazard,magical], @Check[occultism|dc:33|name:Redirect the Storm Surge|traits:rare,fire,environmental,hazard,magical], or @Check[religion|dc:33|name:Redirect the Storm Surge|traits:rare,fire,environmental,hazard,magical] (trained) to redirect the storm surge or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (5th rank, counteract DC 26) to nullify it.</p>",
             "stealth": "<p>(expert)</p>",
             "items": {
                 "action->Surge": {
@@ -643,7 +643,7 @@
                 },
                 "action->Blightburst": {
                     "name": "Blightburst",
-                    "description": "<p>When a blighted fungus leshy dies, a burst of rotted compost explodes from its body, dealing @Damage[3d6[slashing]] damage and @Damage[1d6[poison]] damage to each creature in a @Template[emanation|distance:30]. This area then fills with blighted fungi, becoming difficult terrain until the fungi wither 24 hours later.</p>"
+                    "description": "<p>When a blighted fungus leshy dies, a burst of rotted compost explodes from its body, dealing @Damage[3d6[slashing],1d6[poison]|options:area-damage]{3d6 slashing damage and 1d6 poison damage} to each creature in a @Template[emanation|distance:30]. This area then fills with blighted fungi, becoming difficult terrain until the fungi wither 24 hours later.</p>"
                 },
                 "action->Change Shape": {
                     "name": "Change Shape",
@@ -677,7 +677,7 @@
                 },
                 "action->Blightburst": {
                     "name": "Blightburst",
-                    "description": "<p>When a blighted leaf leshy dies, a burst of rotted compost explodes from its body, dealing @Damage[1d6[slashing],1d6[poison]]{1d6 slashing damage and 1d6 poison damage} to each creature in a @Template[emanation|distance:30]. This area then fills with blighted saplings, becoming difficult terrain until the saplings wither 24 hours later.</p>"
+                    "description": "<p>When a blighted leaf leshy dies, a burst of rotted compost explodes from its body, dealing @Damage[1d6[slashing],1d6[poison]|options:area-damage]{1d6 slashing damage and 1d6 poison damage} to each creature in a @Template[emanation|distance:30]. This area then fills with blighted saplings, becoming difficult terrain until the saplings wither 24 hours later.</p>"
                 },
                 "action->Change Shape": {
                     "name": "Change Shape",
@@ -712,7 +712,7 @@
         },
         "Bloody Vortex (3-4)": {
             "name": "Bloody Vortex (3-4)",
-            "disable": "<p>Slay Silaqui, or @Check[thievery|dc:17|traits:action:disable-a-device] (trained) to pry the gem out of Silaqui followed by disrupting the gem's power by either breaking it (AC 15, Hardness 5, HP 25, BT 13) or using @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (2nd level; counteract DC 15)</p>",
+            "disable": "<p>Slay Silaqui, or @Check[thievery|dc:17|traits:action:disable-a-device] (trained) to pry the gem out of Silaqui followed by disrupting the gem's power by either breaking it (AC 15, Hardness 5, HP 25, BT 13) or using @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (2nd rank; counteract DC 15)</p>",
             "routine": "<p>All creatures within 40 feet of the vortex except Silaqui are drawn toward it. They must attempt either a @Check[fortitude|dc:14] save or an @Check[athletics|dc:14|traits:action:swim] check to Swim with a DC of 14, with the following results.</p>\n<hr />\n<p><strong>Success</strong> The creature is not moved.</p>\n<p><strong>Failure</strong> The creature is moved 10 feet closer to the center of the vortex. If this causes the creature to reach the center square of the vortex, they are exposed to Consuming Maelstrom.</p>\n<p><strong>Critical Failure</strong> As failure, except the creature is moved 20 feet closer to the center of the vortex.</p>",
             "items": {
                 "action->Invoke Curse": {
@@ -728,7 +728,7 @@
         "Bloody Vortex (5-6)": {
             "name": "Bloody Vortex (5-6)",
             "descriptionHazard": "<p>A bloody vortex violently draining into a crack of raw elemental energy, fueled by the curse of a sea devil oracle.</p>",
-            "disable": "<p>Slay Silaqui, or @Check[thievery|dc:20|traits:action:disable-a-device] (trained) to pry the gem out of Silaqui followed by disrupting the gem's power by either breaking it (AC 18, Hardness 10, HP 45, BT 23) or using @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (2nd level; counteract DC 19)</p>",
+            "disable": "<p>Slay Silaqui, or @Check[thievery|dc:20|traits:action:disable-a-device] (trained) to pry the gem out of Silaqui followed by disrupting the gem's power by either breaking it (AC 18, Hardness 10, HP 45, BT 23) or using @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (2nd rank; counteract DC 19)</p>",
             "routine": "<p>All creatures within 40 feet of the vortex except Silaqui are drawn toward it. They must attempt either a @Check[fortitude|dc:17] save or an @Check[athletics|dc:17|traits:action:swim] check to Swim with a DC of 17, with the following results.</p>\n<hr />\n<p><strong>Success</strong> The creature is not moved.</p>\n<p><strong>Failure</strong> The creature is moved 10 feet closer to the center of the vortex. If this causes the creature to reach the center square of the vortex, they are exposed to Consuming Maelstrom.</p>\n<p><strong>Critical Failure</strong> As failure, except the creature is moved 20 feet closer to the center of the vortex.</p>",
             "items": {
                 "action->Invoke Curse": {
@@ -759,7 +759,7 @@
                 },
                 "action->Boneshatter": {
                     "name": "Boneshatter",
-                    "description": "<p><strong>Trigger</strong> The ravener husk takes bludgeoning damage</p><hr />\n<p><strong>Effect</strong> The ravener's brittle bones shatter, spraying bone shards everywhere. Every creature within a @Template[emanation|distance:10]{10-foot emanation} of the ravener husk takes @Damage[6d6[piercing]] damage (@Check[reflex|dc:27|basic] save).</p>"
+                    "description": "<p><strong>Trigger</strong> The ravener husk takes bludgeoning damage</p><hr />\n<p><strong>Effect</strong> The ravener's brittle bones shatter, spraying bone shards everywhere. Every creature within a @Template[emanation|distance:10]{10-foot emanation} of the ravener husk takes @Damage[6d6[piercing]|options:area-damage] damage (@Check[reflex|dc:27|basic|options:area-effect] save).</p>"
                 },
                 "action->Frightful Presence": {
                     "name": "Frightful Presence",
@@ -1348,7 +1348,7 @@
                 },
                 "action->Acrid Cloud": {
                     "name": "Acrid Cloud",
-                    "description": "<p>The burning sap that makes up the corrupted wildfire's body sputters and pops, ejecting a cloud of acrid that smoke in a @Template[emanation|distance:10] that lasts for 1 round.</p>\n<p>This smoke provides concealment to all creatures within, and deals @Damage[1d6[poison]] damage to any creature that enters or begins its turn in the cloud (@Check[fortitude|dc:20|basic]).</p>\n<p>A creature that fails is also @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 1} (or @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 2} on a critical failure).</p>"
+                    "description": "<p>The burning sap that makes up the corrupted wildfire's body sputters and pops, ejecting a cloud of acrid that smoke in a @Template[emanation|distance:10] that lasts for 1 round.</p>\n<p>This smoke provides concealment to all creatures within, and deals @Damage[1d6[poison]|options:area-damage] damage to any creature that enters or begins its turn in the cloud (@Check[fortitude|dc:20|basic|options:area-effect]).</p>\n<p>A creature that fails is also @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 1} (or @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 2} on a critical failure).</p>"
                 },
                 "action->Filthy Burn": {
                     "name": "Filthy Burn",
@@ -1372,7 +1372,7 @@
                 },
                 "action->Acrid Cloud": {
                     "name": "Acrid Cloud",
-                    "description": "<p>The burning sap that makes up the corrupted wildfire's body sputters and pops, ejecting a cloud of acrid that smoke in a @Template[emanation|distance:10] that lasts for 1 round.</p>\n<p>This smoke provides concealment to all creatures within, and deals @Damage[2d4[poison]] damage to any creature that enters or begins its turn in the cloud (@Check[fortitude|dc:22|basic]).</p>\n<p>A creature that fails is also @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 1} (or @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 2} on a critical failure).</p>"
+                    "description": "<p>The burning sap that makes up the corrupted wildfire's body sputters and pops, ejecting a cloud of acrid that smoke in a @Template[emanation|distance:10] that lasts for 1 round.</p>\n<p>This smoke provides concealment to all creatures within, and deals @Damage[2d4[poison]|options:area-damage] damage to any creature that enters or begins its turn in the cloud (@Check[fortitude|dc:22|basic|options:area-effect]).</p>\n<p>A creature that fails is also @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 1} (or @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 2} on a critical failure).</p>"
                 },
                 "action->Filthy Burn": {
                     "name": "Filthy Burn",
@@ -1450,7 +1450,7 @@
                 },
                 "action->Boneshatter": {
                     "name": "Boneshatter",
-                    "description": "<p><strong>Trigger</strong> The ravener husk takes bludgeoning damage</p><hr />\n<p><strong>Effect</strong> The ravener's brittle bones shatter, spraying bone shards everywhere. Every creature within a @Template[emanation|distance:10] of the ravener husk takes @Damage[5d6[piercing]] damage (@Check[reflex|dc:25|basic] save).</p>"
+                    "description": "<p><strong>Trigger</strong> The ravener husk takes bludgeoning damage</p><hr />\n<p><strong>Effect</strong> The ravener's brittle bones shatter, spraying bone shards everywhere. Every creature within a @Template[emanation|distance:10] of the ravener husk takes @Damage[5d6[piercing]|options:area-damage] damage (@Check[reflex|dc:25|basic|options:area-effect] save).</p>"
                 },
                 "action->Frightful Presence": {
                     "name": "Frightful Presence",
@@ -2140,7 +2140,7 @@
         "Electric Lock Rune": {
             "name": "Electric Lock Rune",
             "descriptionHazard": "<p>An invisible rune imprinted on a chest's lock releases a powerful electrical discharge.</p>",
-            "disable": "<p>@Check[thievery|dc:20|name:Scratch Out the Rune] (expert) to scratch out the rune without allowing electricity to flow, or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (2nd level; counteract DC 18) to counteract the rune</p>",
+            "disable": "<p>@Check[thievery|dc:20|name:Scratch Out the Rune] (expert) to scratch out the rune without allowing electricity to flow, or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (2nd rank; counteract DC 18) to counteract the rune</p>",
             "stealth": "<p>(trained)</p>",
             "items": {
                 "action->Electrocution": {
@@ -2186,7 +2186,7 @@
         "Empowered Blood (1-2)": {
             "name": "Empowered Blood (1-2)",
             "descriptionHazard": "<p>Glowing red Daemonic runes blaze when blood falls on them.</p>",
-            "disable": "<p>@Check[thievery|dc:18|name:Scratch Out Runes] (untrained) to scratch out enough runes to disrupt the magic or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (1st level; counteract DC 15) to counteract the runes.</p>",
+            "disable": "<p>@Check[thievery|dc:18|name:Scratch Out Runes] (untrained) to scratch out enough runes to disrupt the magic or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (1st rank; counteract DC 15) to counteract the runes.</p>",
             "reset": "<p>The hazard resets at the beginning of each round until it is disabled</p>",
             "stealth": "<p>(Untrained)</p>",
             "items": {
@@ -2199,7 +2199,7 @@
         "Empowered Blood (3-4)": {
             "name": "Empowered Blood (3-4)",
             "descriptionHazard": "<p>Glowing red Daemonic runes blaze when blood falls on them.</p>",
-            "disable": "<p>@Check[thievery|dc:20|name:Scratch Out Runes] (untrained) to scratch out enough runes to disrupt the magic or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (1st level; counteract DC 15) to counteract the runes</p>",
+            "disable": "<p>@Check[thievery|dc:20|name:Scratch Out Runes] (untrained) to scratch out enough runes to disrupt the magic or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (1st rank; counteract DC 15) to counteract the runes</p>",
             "reset": "<p>The hazard resets at the beginning of each round until it is disabled.</p>",
             "stealth": "<p>(untrained)</p>",
             "items": {
@@ -2601,7 +2601,7 @@
         "Foretold Ruin (1-2)": {
             "name": "Foretold Ruin (1-2)",
             "descriptionHazard": "<p>Daemonic curses slither and crawl through malevolent runes carved in four stone pillars. HP is per-pillar.</p>",
-            "disable": "<p>@Check[thievery|dc:17|name:Disable Thievery] (trained) to scratch out a pillar's runes, @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (1st level; counteract DC 15) to counteract a pillar's magic, or @Check[athletics|dc:18|name:Disable Athletics|traits:action:force-open]{Athletics (Force Open)} to push a pillar over. Disabling a pillar requires two actions. Disabling all four pillars or slaying Sezruth disables the trap</p>",
+            "disable": "<p>@Check[thievery|dc:17|name:Disable Thievery] (trained) to scratch out a pillar's runes, @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (1st rank; counteract DC 15) to counteract a pillar's magic, or @Check[athletics|dc:18|name:Disable Athletics|traits:action:force-open]{Athletics (Force Open)} to push a pillar over. Disabling a pillar requires two actions. Disabling all four pillars or slaying Sezruth disables the trap</p>",
             "routine": "<p><strong>Routine (4 actions)</strong> The trap loses 1 action each turn for each disabled pillar. On its initiative, the trap uses each action to afflict a different non-evil creature in the room with thirst. The creature must attempt a @Check[fortitude|dc:17|name:Foretold Ruin|traits:damaging-effect] save.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is temporarily immune to additional negative effects from the <em>foretold ruin</em> hazard's reaction for 24 hours. The hazard has no awareness of this immunity and continues to target this creature.</p>\n<p><strong>Success</strong> The creature is unaffected.</p>\n<p><strong>Failure</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.HL2l2VRSaQHu9lUw]{Fatigued} until they drink water. If the creature was already fatigued, they take @Damage[1d6[nonlethal,mental]]{1d6 nonlethal mental} damage.</p>\n<p><strong>Critical Failure</strong> The creature is fatigued until they drink water and takes 1d6 nonlethal mental damage. If the creature was already fatigued, they instead take @Damage[2d6[nonlethal,mental]]{2d6 nonlethal mental} damage.</p>",
             "stealth": "<p>(trained)</p>",
             "items": {
@@ -2614,7 +2614,7 @@
         "Foretold Ruin (3-4)": {
             "name": "Foretold Ruin (3-4)",
             "descriptionHazard": "<p>Daemonic curses slither and crawl through malevolent runes carved in four stone pillars. HP is per-pillar.</p>",
-            "disable": "<p>@Check[thievery|dc:20|name:Disable Thievery] (trained) to scratch out a pillar's runes, @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (2nd level; counteract DC 18) to counteract a pillar's magic, or @Check[athletics|dc:21|name:Disable Athletics|traits:action:force-open]{Athletics (Force Open)} to push a pillar over. Disabling a pillar requires two actions. Disabling all four pillars or slaying Sezruth disables the trap</p>",
+            "disable": "<p>@Check[thievery|dc:20|name:Disable Thievery] (trained) to scratch out a pillar's runes, @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (2nd rank; counteract DC 18) to counteract a pillar's magic, or @Check[athletics|dc:21|name:Disable Athletics|traits:action:force-open]{Athletics (Force Open)} to push a pillar over. Disabling a pillar requires two actions. Disabling all four pillars or slaying Sezruth disables the trap</p>",
             "routine": "<p><strong>Routine (4 actions)</strong> The trap loses 1 action each turn for each disabled pillar. On its initiative, the trap uses each action to afflict a different non-evil creature in the room with thirst. The creature must attempt a @Check[fortitude|dc:20|name:Foretold Ruin|traits:damaging-effect] save.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is temporarily immune to additional negative effects from the <em>foretold ruin</em> hazard's reaction for 24 hours. The hazard has no awareness of this immunity and continues to target this creature.</p>\n<p><strong>Success</strong> The creature is unaffected.</p>\n<p><strong>Failure</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.HL2l2VRSaQHu9lUw]{Fatigued} until they drink water. If the creature was already fatigued, they take @Damage[1d6[nonlethal,mental]]{1d6 nonlethal mental} damage.</p>\n<p><strong>Critical Failure</strong> The creature is fatigued until they drink water and takes 1d6 nonlethal mental damage. If the creature was already fatigued, they instead take @Damage[2d6[nonlethal,mental]]{2d6 nonlethal mental} damage.</p>",
             "items": {
                 "action->Spite": {
@@ -3742,7 +3742,7 @@
         "Mushroom Ring (3-4)": {
             "name": "Mushroom Ring (3-4)",
             "descriptionHazard": "<p>This <em>mushroom ring</em> forms a portal to the First World, allowing the Thorned Monarch's reinforcements into the Material Plane. When the PCs approach, a creature emerges. Creatures continue to emerge until the mushroom ring is disabled. Disabling the mushroom ring also causes any creatures that have emerged to disappear.</p>",
-            "disable": "<p>@Check[thievery|dc:22|traits:action:disable-a-device] (trained) or @Check[nature|dc:22] to rearrange the mushrooms to disrupt the portal (two actions) or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (2nd level, counteract DC 20) to counteract the magical properties; three successes are required to disable the portal</p>",
+            "disable": "<p>@Check[thievery|dc:22|traits:action:disable-a-device] (trained) or @Check[nature|dc:22] to rearrange the mushrooms to disrupt the portal (two actions) or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (2nd rank, counteract DC 20) to counteract the magical properties; three successes are required to disable the portal</p>",
             "routine": "<p>(1 action) A @UUID[Compendium.pf2e.pathfinder-bestiary-2.Actor.bpwaqRoO1wYo15T5]{Nuglub} emerges from the <em>mushroom ring</em> and defends it. All nuglubs use the <em>mushroom ring's</em> initiative.</p>",
             "stealth": "<p>(trained)</p>",
             "items": {
@@ -3755,7 +3755,7 @@
         "Mushroom Ring (5-6)": {
             "name": "Mushroom Ring (5-6)",
             "descriptionHazard": "<p>This <em>mushroom ring</em> forms a portal to the First World, allowing the Thorned Monarch's reinforcements into the Material Plane. When the PCs approach, a creature emerges. Creatures continue to emerge until the mushroom ring is disabled. Disabling the mushroom ring also causes any creatures that have emerged to disappear.</p>",
-            "disable": "<p>@Check[thievery|dc:21|traits:action:disable-a-device] (expert) or @Check[nature|dc:25] (trained) to rearrange the mushrooms to disrupt the portal (two actions) or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (3rd level, counteract DC 23) to counteract the magical properties; three successes are required to disable the portal</p>",
+            "disable": "<p>@Check[thievery|dc:21|traits:action:disable-a-device] (expert) or @Check[nature|dc:25] (trained) to rearrange the mushrooms to disrupt the portal (two actions) or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (3rd rank, counteract DC 23) to counteract the magical properties; three successes are required to disable the portal</p>",
             "routine": "<p>(1 action) A @UUID[Compendium.pf2e.pathfinder-bestiary-2.Actor.xIvv8vKBa0YsTEzt]{Korred} emerges from the <em>mushroom ring</em> and defends it. All korreds use the <em>mushroom ring's</em> initiative.</p>",
             "stealth": "<p>(trained)</p>",
             "items": {
@@ -3768,7 +3768,7 @@
         "Mushroom Ring (7-8)": {
             "name": "Mushroom Ring (7-8)",
             "descriptionHazard": "<p>This <em>mushroom ring</em> forms a portal to the First World, allowing the Thorned Monarch's reinforcements into the Material Plane. When the PCs approach, a creature emerges. Creatures continue to emerge until the mushroom ring is disabled. Disabling the mushroom ring also causes any creatures that have emerged to disappear.</p>",
-            "disable": "<p>@Check[thievery|dc:24|traits:action:disable-a-device] (expert) or @Check[nature|dc:28] (expert) to rearrange the mushrooms to disrupt the portal (two actions) or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (4th level, counteract DC 26) to counteract the magical properties; three successes are required to disable the portal</p>",
+            "disable": "<p>@Check[thievery|dc:24|traits:action:disable-a-device] (expert) or @Check[nature|dc:28] (expert) to rearrange the mushrooms to disrupt the portal (two actions) or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (4th rank, counteract DC 26) to counteract the magical properties; three successes are required to disable the portal</p>",
             "routine": "<p>(1 Action) A @UUID[Compendium.pf2e.pathfinder-monster-core.Actor.RJFpwZIGbuOuCtXr]{Elananx} emerges from the <em>mushroom ring</em> and defends it. All elananxes use the <em>mushroom ring's</em> initiative.</p>",
             "stealth": "<p>(expert)</p>",
             "items": {
@@ -3849,7 +3849,7 @@
                 },
                 "action->Ogre Spider Venom": {
                     "name": "Ogre Spider Venom",
-                    "description": "<p><strong>Saving Throw</strong> @Check[fortitude|dc:22]</p>\n<p><strong>Maximum Duration</strong> 6 rounds</p>\n<p><strong>Stage 1</strong> @Damage[1d6[poison]] damage (1 round)</p>\n<p><strong>Stage 2</strong> 1d6 poison damage, @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 1}, and @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 1} (1 round)</p>\n<p><strong>Stage 3</strong> @Damage[2d6[poison]] damage, Clumsy 1, and Enfeebled 1 (1 round)</p>\n<p><strong>Stage 4</strong> 2d6 poison damage, @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 2}, and @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 2} (1 round)</p>"
+                    "description": "<p><strong>Saving Throw</strong> @Check[fortitude|dc:22]</p><hr /><p><strong>Maximum Duration</strong> 6 rounds</p>\n<p><strong>Stage 1</strong> @Damage[1d6[poison]] damage (1 round)</p>\n<p><strong>Stage 2</strong> 1d6 poison damage, @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 1}, and @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 1} (1 round)</p>\n<p><strong>Stage 3</strong> @Damage[2d6[poison]] damage, clumsy 1, and enfeebled 1 (1 round)</p>\n<p><strong>Stage 4</strong> 2d6 poison damage, @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 2}, and @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 2} (1 round)</p>"
                 },
                 "action->Web Trap": {
                     "name": "Web Trap",
@@ -4166,7 +4166,7 @@
         "Planar Cracks (5-6)": {
             "name": "Planar Cracks (5-6)",
             "descriptionHazard": "<p>The cracks scintillate and shift between the elemental planes, leaking perilous energy with each shift.</p>",
-            "disable": "<p>@Check[thievery|dc:24|name:Assemble a Seal|traits:environmental,magical] (trained) twice to assemble a seal using objects strongly grounded to the Material Plane, @Check[arcana|dc:22|name:Invoke Incantations|traits:environmental,magical] (trained) twice to invoke incantations to seal the cracks, or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (3rd level, counteract DC 20) to counteract the cracks.</p>",
+            "disable": "<p>@Check[thievery|dc:24|name:Assemble a Seal|traits:environmental,magical] (trained) twice to assemble a seal using objects strongly grounded to the Material Plane, @Check[arcana|dc:22|name:Invoke Incantations|traits:environmental,magical] (trained) twice to invoke incantations to seal the cracks, or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (3rd rank, counteract DC 20) to counteract the cracks.</p>",
             "reset": "<p>The cracks re-form after 1 hour.</p>",
             "routine": "<p>(1 action) A surge of energy strikes a random non-mephit creature in the foyer. Roll [[/r 1d4]] to determine the element of the energy surge.</p>\n<p>1-Energy from the Plane of Air: the creature takes @Damage[2d8[electricity]] damage (@Check[reflex|dc:22|basic|name:Planar Cracks|traits:air,electricity] save); on a failure, the creature is pushed back 10 feet toward the entryway. The hazard gains the air and electricity traits for this round.</p>\n<p>2-Energy from the Plane of Earth: the creature takes @Damage[2d8[bludgeoning]] damage (@Check[reflex|dc:22|basic|name:Planar Cracks|traits:earth] save); on a failed save, the creature is knocked @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone}. The hazard gains the earth trait for this round.</p>\n<p>3-Energy from the Plane of Fire: the creature takes @Damage[(2d8+7)[fire]] damage (@Check[reflex|dc:22|basic|name:Planar Cracks|traits:fire] save). The hazard gains the fire trait for this round.</p>\n<p>4-Energy from the Plane of Water: the creature takes @Damage[2d8[cold]] damage (@Check[reflex|dc:22|basic|name:Planar Cracks|traits:water,cold] save); on a failed save, the creature's lungs fill with water, making them @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 1}. The hazard gains the cold and water traits for this round.</p>",
             "items": {
@@ -4179,7 +4179,7 @@
         "Planar Cracks (7-8)": {
             "name": "Planar Cracks (7-8)",
             "descriptionHazard": "<p>The cracks scintillate and shift between the elemental planes, leaking perilous energy with each shift.</p>",
-            "disable": "<p>@Check[thievery|dc:28|name:Assemble a Seal|traits:environmental,magical] (expert) twice to assemble a seal using objects strongly grounded to the Material Plane, @Check[arcana|dc:26|name:Invoke Incantations|traits:environmental,magical] (trained) twice to invoke incantations to seal the cracks, or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (4th level, counteract DC 22) to counteract the cracks.</p>",
+            "disable": "<p>@Check[thievery|dc:28|name:Assemble a Seal|traits:environmental,magical] (expert) twice to assemble a seal using objects strongly grounded to the Material Plane, @Check[arcana|dc:26|name:Invoke Incantations|traits:environmental,magical] (trained) twice to invoke incantations to seal the cracks, or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (4th rank, counteract DC 22) to counteract the cracks.</p>",
             "reset": "<p>The cracks re-form after 1 hour.</p>",
             "routine": "<p>(1 action) A surge of energy strikes a random non-mephit creature in the foyer. Roll [[/r 1d4]] to determine the element of the energy surge.</p>\n<p>1-Energy from the Plane of Air: the creature takes @Damage[(2d10+3)[electricity]] damage (@Check[reflex|dc:25|basic|name:Planar Cracks|traits:air,electricity] save); on a failure, the creature is pushed back 10 feet toward the entryway. The hazard gains the air and electricity traits for this round.</p>\n<p>2-Energy from the Plane of Earth: the creature takes @Damage[(2d10+3)[bludgeoning]] damage (@Check[reflex|dc:25|basic|name:Planar Cracks|traits:earth] save); on a failed save, the creature is knocked @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone}. The hazard gains the earth trait for this round.</p>\n<p>3-Energy from the Plane of Fire: the creature takes @Damage[(2d10+9)[fire]] damage (@Check[reflex|dc:25|basic|name:Planar Cracks|traits:fire] save). The hazard gains the fire trait for this round.</p>\n<p>4-Energy from the Plane of Water: the creature takes @Damage[(2d10+3)[cold]] damage (@Check[reflex|dc:25|basic|name:Planar Cracks|traits:water,cold] save); on a failed save, the creature's lungs fill with water, making them @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 2}. The hazard gains the cold and water traits for this round.</p>",
             "items": {
@@ -6162,7 +6162,7 @@
         "Urxehl's Firestorm (7-8)": {
             "name": "Urxehl's Firestorm (7-8)",
             "descriptionHazard": "<p>Abyssal fire rains from the sky.</p>",
-            "disable": "<p>@Check[arcana|dc:28], @Check[nature|dc:28], @Check[occultism|dc:28], or  @Check[religion|dc:28] (trained) twice or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (3rd level; counteract DC 22) to cause a temporary, local disruption to the Disciple of Urxehl's ritual. Checks to disrupt the firestorm require two actions. Defeating the Disciple of Urxehl also disables the hazard.</span></p>",
+            "disable": "<p>@Check[arcana|dc:28], @Check[nature|dc:28], @Check[occultism|dc:28], or  @Check[religion|dc:28] (trained) twice or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (3rd rank; counteract DC 22) to cause a temporary, local disruption to the Disciple of Urxehl's ritual. Checks to disrupt the firestorm require two actions. Defeating the Disciple of Urxehl also disables the hazard.</span></p>",
             "reset": "<p>The hazard activates when the PCs reach <strong>Event: Rain of Fire</strong>, area <strong>A1</strong>, and area <strong>A9</strong>. If the PCs defeat the Disciple of Urxehl, the hazard is permanently destroyed.</p>",
             "stealth": "<p>(expert)</p>",
             "items": {
@@ -6183,7 +6183,7 @@
         "Urxehl's Firestorm (9-10)": {
             "name": "Urxehl's Firestorm (9-10)",
             "descriptionHazard": "<p>Abyssal fire rains from the sky.</p>",
-            "disable": "<p>@Check[arcana|dc:31], @Check[nature|dc:31], @Check[occultism|dc:31], or  @Check[religion|dc:31] (trained) twice or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (4th level; counteract DC 24) to cause a temporary, local disruption to the Disciple of Urxehl's ritual. Checks to disrupt the firestorm require two actions. Defeating the Disciple of Urxehl also disables the hazard.</p>",
+            "disable": "<p>@Check[arcana|dc:31], @Check[nature|dc:31], @Check[occultism|dc:31], or  @Check[religion|dc:31] (trained) twice or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (4th rank; counteract DC 24) to cause a temporary, local disruption to the Disciple of Urxehl's ritual. Checks to disrupt the firestorm require two actions. Defeating the Disciple of Urxehl also disables the hazard.</p>",
             "reset": "<p>The hazard activates when the PCs reach <strong>Event: Rain of Fire</strong>, area <strong>A1</strong>, and area <strong>A9</strong>. If the PCs defeat the Disciple of Urxehl, the hazard is permanently destroyed.</p>",
             "stealth": "<p>(expert)</p>",
             "items": {

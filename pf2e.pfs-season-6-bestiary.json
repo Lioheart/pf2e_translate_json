@@ -17,7 +17,9 @@
         "6-12": "6-12",
         "6-13": "6-13",
         "6-14": "6-14",
-        "6-15": "6-15"
+        "6-15": "6-15",
+        "6-16": "6-16",
+        "6-17": "6-17"
     },
     "entries": {
         "Abendego's Squall (1-2)": {
@@ -198,6 +200,42 @@
                 }
             }
         },
+        "Amriya": {
+            "name": "Amriya",
+            "items": {
+                "spellcastingEntry->Occult Prepared Spells": {
+                    "name": "Occult Prepared Spells"
+                },
+                "weapon->Rotcarver": {
+                    "name": "Rotcarver"
+                },
+                "armor->Cultist Robes (Functioning as Leather Armor)": {
+                    "name": "Cultist Robes (Functioning as Leather Armor)",
+                    "description": "<p>A mix of flexible and molded boiled leather, a suit of this type of armor provides some protection with maximum flexibility.</p>"
+                },
+                "strike-melee->Rotcarver": {
+                    "name": "Rotcarver"
+                },
+                "strike-melee->Fist": {
+                    "name": "Fist"
+                },
+                "action->Bog Rot": {
+                    "name": "Bog Rot",
+                    "description": "<p>This affliction can't be reduced below stage 1, nor can the damage from it be healed, until it's successfully treated with remove curse or a similar effect; the affliction can then be removed as normal for a disease. A creature killed by bog rot melts into a noxious sludge and can't be resurrected except by a 7th-rank @UUID[Compendium.pf2e.spells-srd.Item.kqhPt9344UkcGVYO]{Resurrect} ritual or similar magic</p>\n<p><strong>Saving Throw</strong> @Check[fortitude|dc:21]</p>\n<p><strong>Stage 1</strong> carrier with no ill effect (1 minute)</p>\n<p><strong>Stage 2</strong> @Damage[3d6[void]] damage and @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 1} (1 day)</p>"
+                },
+                "action->Deskari's Rage": {
+                    "name": "Deskari's Rage",
+                    "description": "<p>Amriya tightens hir group on Rotcarver and attempts a powerful Strike against hir enemy. On a success, ze deals an additional 1d10 piercing damage.</p>"
+                },
+                "action->Rot and Ruin": {
+                    "name": "Rot and Ruin",
+                    "description": "<p>Amriya's mouth opens, spewing forth a vapor that triggers rot and decay. All creatures within a @Template[type:emanation|distance:20] must attempt a basic @Check[fortitude|dc:25] saving throw or take @Damage[3d12[void]] damage. On a critical failure, creatures are @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 1} for 1 minute.</p>"
+                },
+                "lore->Demon Lore": {
+                    "name": "Demon Lore"
+                }
+            }
+        },
         "Angry Chelaxian Adjutant": {
             "name": "Angry Chelaxian Adjutant",
             "items": {
@@ -249,6 +287,40 @@
                 },
                 "lore->Sailing Lore": {
                     "name": "Sailing Lore"
+                }
+            }
+        },
+        "Animated Flame": {
+            "name": "Animated Flame",
+            "publicNotes": "<p>Although arguably quite friendly, fire scamps are considered far more dangerous than their kin. They delight in fire and playing pranks on everyone they befriend. Even given time to understand others' dislike of fire, most fire scamps enjoy the feel of flames enough to constantly test their limits.</p>\n<p>Compared to the nations of other scamps, the nations on the Plane of Fire are by far the strongest. This backing inspires fire scamps to challenge authority more quickly than the others.</p>\n<hr />\n<p>Elemental scamps are bat-like critters marked by elemental powers. Scamps are dispatched from the Elemental Planes by more powerful residents or called to the Universe by neophyte summoners. All scamps have a hint of magical power due to a lingering connection to their home plane, which they largely use to pull simple pranks.</p>\n<p>Scamps rapidly form a pecking order of cleverness. Humanoids often confuse scamps when meeting such creatures for the first time. These confused scamps usually resort to an escalating series of pranks and mischief, seeing what they can get away with to establish their place in the hierarchy.</p>",
+            "blurb": "Variant fire scamp",
+            "sensesDetails": "smoke vision",
+            "hpDetails": "fast healing 2 (while touching fire)",
+            "items": {
+                "spellcastingEntry->Arcane Innate Spells": {
+                    "name": "Arcane Innate Spells"
+                },
+                "strike-melee->Ram": {
+                    "name": "Ram"
+                },
+                "action->Panic of Failure Foreseen": {
+                    "name": "Panic of Failure Foreseen",
+                    "description": "<p>If the animated flame leaves the village, willingly or otherwise, it becomes @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 2} for 2 rounds.</p>"
+                },
+                "action->Price of Failure": {
+                    "name": "Price of Failure",
+                    "description": "<p>If the animated flame starts its turn outside the village after it arrives, it dissipates.</p>"
+                },
+                "action->Smoke Vision": {
+                    "name": "Smoke Vision",
+                    "description": "<p>The animated flame ignores the @UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{Concealed} condition from smoke.</p>"
+                },
+                "action->Fast Healing 2 (While Touching Fire)": {
+                    "name": "Fast Healing 2 (While Touching Fire)"
+                },
+                "action->Flame Breath": {
+                    "name": "Flame Breath",
+                    "description": "<p>The animated flame breathes flames in a @Template[cone|distance:15] that deals @Damage[2d4[fire]|options:area-damage] damage to each creature within the area (@Check[reflex|dc:17|basic|options:area-effect] save). Creatures that fail the save also take @Damage[1d4[persistent,fire]] damage.</p>\n<p>The animated flame can't use Flame Breath again for [[/gmr 1d4 #Recharge Flame Breath]]{1d4 rounds}.</p>"
                 }
             }
         },
@@ -1095,6 +1167,21 @@
                 }
             }
         },
+        "Burning Building": {
+            "name": "Burning Building",
+            "descriptionHazard": "<p>Non-living flames burn hungrily.</p>",
+            "disable": "<p>@Check[survival|dc:19] to beat the flames with a stage curtain or similar cloth, @Check[acrobatics|dc:14] to splash liquids onto the fire, or 5 points of cold damage.</p>",
+            "items": {
+                "action->Conflagration": {
+                    "name": "Conflagration",
+                    "description": "<p><strong>Trigger</strong> A creature starts its turn in a burning building</p><hr /><p><strong>Effect</strong> The creature must attempt a @Check[reflex|dc:18] save or take @Damage[1d6[fire]] damage</p>"
+                },
+                "action->Spread": {
+                    "name": "Spread",
+                    "description": "<p><strong>Trigger</strong> The round ends and no creature has attempted to Disable it this round</p><hr /><p><strong>Effect</strong> A building within 15 feet becomes a burning building. The burning building can't use Spread next round.</p>"
+                }
+            }
+        },
         "Cackling Skull": {
             "name": "Cackling Skull",
             "publicNotes": "<p>Some beheaded are raised with their mental faculties mostly intact. These clever undead often provoke their victims into foolishly giving chase or harming themselves.</p>\n<hr />\n<p>Beheaded are disembodied floating heads transformed into undead. They are natural candidates for a necromancer's \"project minion,\" due to the inexpensive cost of creation and endlessly customizable nature. In any lair occupied for long by practicing necromancers, it isn't uncommon to find a handful of floating heads roaming about, each exhibiting completely different characteristics and even degrees of expertise in their creation.</p>",
@@ -1114,6 +1201,27 @@
                 "action->Incessant Goading": {
                     "name": "Incessant Goading",
                     "description": "<p>The skull chooses one creature within 60 feet and antagonizes it mercilessly. The target must attempt a @Check[will|dc:24] save to resist the effect.</p><hr /><p><strong>Critical Success</strong> The target is unaffected and temporarily immune for 1 minute.</p>\n<p><strong>Success</strong> The target is unaffected.</p>\n<p><strong>Failure</strong> The target is @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} for 1 round. On its next turn, if the taunting skull is within the target's reach, the target wildly attacks the taunting skull as many times as possible.</p>\n<p><strong>Critical Failure</strong> As failure, but the target also immediately performs a Strike against itself; this Strike doesn't take any actions.</p>"
+                }
+            }
+        },
+        "Calibrated Nahyndrian Focus": {
+            "name": "Calibrated Nahyndrian Focus",
+            "descriptionHazard": "<p>A metal lattice forged from warshards feeds into a dark purplish crystal that pulses with energy. If the configuration of the lattice changes, so does the energy the device emits.</p>",
+            "disable": "<p>Three [[/act disable-device dc=27]] (see Disabling the Focus under Event 1 on page 18).</p>",
+            "routine": "<p>(3 actions) The Nahyndrian Focus uses Select Condition to determine which condition it is going to inflict. It then uses Inflict twice, usually on two different targets. If the focus is broken, it is @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1}, and can only Inflict once per turn.</p>",
+            "stealth": "<p>(expert)</p>",
+            "items": {
+                "action->Offensive Configuration": {
+                    "name": "Offensive Configuration",
+                    "description": "<p><strong>Trigger</strong> Yollen activates the Nahyndrian Focus</p><hr /><p><strong>Effect</strong> The Nahyndrian Focus shifts into attack mode and rolls initiative. All creatures without the unholy trait in within @Template[emanation|distance:60]{60 feet} must make a @Check[fortitude|dc:35|basic] save against @Damage[(4d12+26)[spirit]] damage.</p>"
+                },
+                "action->Select Condition": {
+                    "name": "Select Condition",
+                    "description": "<p>The Nahyndrian Focus rolls a [[/gmr 1d4 #Condition]] to randomly decide whether it is going cause the @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy}, @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained}, @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled}, or @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied} condition when it uses Inflict until the end of its turn. After the first round, it changes the random roll die to [[/gmr 1d6 #Condition]] as it does not pick the same condition it had in the previous round.</p>"
+                },
+                "action->Inflict": {
+                    "name": "Inflict",
+                    "description": "<p>An unhealthy beam shoots out from the focus. One creature without the unholy trait within 60 feet of the Focus must make a @Check[fortitude|dc:31] save.</p><hr /><p><strong>Critical Success</strong> The target becomes immune to Inflict for 1 minute.</p>\n<p><strong>Success</strong> The targe gains the condition from Select Condition with a value of 1 for 1 minute. If the creature is sickened from the Focus' reaction, the sickened condition increase by 1, up to a maximum of 3.</p>\n<p><strong>Failure</strong> As success, but with a value of 2.</p>\n<p><strong>Critical Failure</strong> As success, but with a value of 3.</p>"
                 }
             }
         },
@@ -1535,6 +1643,23 @@
                 },
                 "lore->Warfare Lore": {
                     "name": "Warfare Lore"
+                }
+            }
+        },
+        "Cleansing Pool": {
+            "name": "Cleansing Pool",
+            "descriptionHazard": "<p>The swirling water in this pool entices anyone who can see or hear it to wander into its depths, drowning its victims.</p>",
+            "disable": "<p>@Check[thievery|dc:24] to scratch out the runes creating the effect, @Check[occultism|dc:20] (expert) or @Check[Demon Lore|dc:20] (expert) to determine the password that identifies the party as believers, or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (3rd-rank; counteract DC 22); two total successes are required to deactivate the pool.</p>",
+            "routine": "<p>(1 action; mental) The cleansing pool uses its first action to try and compel all creatures within 5 feet to enter into the pool. Creatures must attempt a @Check[will|dc:20|traits:mental] save.</p><hr><p><strong>Critical Success</strong> The creature is immune to the pool's routine for 1 minute.</p><p><strong>Success</strong> No effect.</p><p><strong>Failure</strong> The creature gains the @UUID[Compendium.pf2e.conditionitems.Item.AdPVz7rbaVSRxHFg]{Fascinated} condition and attempts to enter the pool.</p><p><strong>Critical Failure</strong> As failure, but the creature must also use all of their actions on their next turn to try and pull one of their allies into the pool with them.</p>",
+            "stealth": "<p>(expert) to notice the enticing effects of the pool</p>",
+            "items": {
+                "action->Echoing Spring": {
+                    "name": "Echoing Spring",
+                    "description": "<p><strong>Trigger</strong> a creature within 10 feet can see or hear the cleansing pool</p><hr /><p><strong>Effect</strong> each creature within range must succeed a @Check[will|dc:22] save or become @UUID[Compendium.pf2e.conditionitems.Item.AdPVz7rbaVSRxHFg]{Fascinated}, using all of their available actions to move toward and into the pool. The hazard then rolls initiative.</p>"
+                },
+                "action->Drown the Nonbelievers": {
+                    "name": "Drown the Nonbelievers",
+                    "description": "<p><strong>Trigger</strong> a @UUID[Compendium.pf2e.conditionitems.Item.AdPVz7rbaVSRxHFg]{Fascinated} creature enters the pool</p><hr /><p><strong>Effect</strong> the waters rush up to encircle the creature, which must succeed on a @Check[fortitude|dc:22] save or begin drowning.</p>"
                 }
             }
         },
@@ -2143,6 +2268,19 @@
                 }
             }
         },
+        "Doldrums Bud Pile": {
+            "name": "Doldrums Bud Pile",
+            "descriptionHazard": "<p>Doldrum heaps that have only started to grow have no intelligence, but are incredibly tenacious and can reflexively grab onto nearby prey. They obtain nutrients by drowning prey in the water they grow in.</p>",
+            "disable": "<p>@Check[athletics|dc:35] (expert) to rip the reflexive tendrils off the bud or @Check[thievery|dc:35] (expert) to trigger the tendrils beforehand and keep them occupied.</p>",
+            "reset": "<p>1 hour if the bud pile has something in its grasps. 1 round if the bud pile has nothing in its grasps.</p>",
+            "stealth": "<p>(expert)</p>",
+            "items": {
+                "action->Tendril Entanglement": {
+                    "name": "Tendril Entanglement",
+                    "description": "<p><strong>Trigger</strong> a creature moves into a square adjacent to the bud pile or into the square the bud pile occupies</p><hr /><p><strong>Effect</strong> The doldrum bud pile whips out numerous tendrils, attempting to grab the creature. The target must attempt a @Check[reflex|dc:31] save.</p><hr /><p><strong>Critical Success</strong> The target dodges the tendril and is unaffected.</p>\n<p><strong>Success</strong> A couple of tendrils latches on to the target. The target becomes @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed}. The target can @UUID[Compendium.pf2e.actionspf2e.Item.SkZAQRkLLkmBQNB9]{Escape} by attempting an Athletics or Acrobatics skill check of DC 31. The first time they fail to Escape each round, however, the bud pile constricts, dealing @Damage[(2d12+20)[bludgeoning]] damage.</p>\n<p><strong>Failure</strong> Several tendrils grab the target. The target becomes grabbed and must make a @Check[fortitude|dc:33] save or fall @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone}. If the target cannot breathe in water, they begin to suffocate. The DC to Escape increases to 36.</p>\n<p><strong>Critical Failure</strong> As failure, except the DC to Escape increases to 38.</p>"
+                }
+            }
+        },
         "Dread Leshy Ghoul": {
             "name": "Dread Leshy Ghoul",
             "publicNotes": "<p>Few creatures are more ubiquitous to sinister locations such as lonely graveyards and ruined crypts than the flesh-eating undead known as ghouls.</p>",
@@ -2366,6 +2504,40 @@
                 }
             }
         },
+        "Elite Animated Flame": {
+            "name": "Elite Animated Flame",
+            "publicNotes": "<p>Although arguably quite friendly, fire scamps are considered far more dangerous than their kin. They delight in fire and playing pranks on everyone they befriend. Even given time to understand others' dislike of fire, most fire scamps enjoy the feel of flames enough to constantly test their limits.</p>\n<p>Compared to the nations of other scamps, the nations on the Plane of Fire are by far the strongest. This backing inspires fire scamps to challenge authority more quickly than the others.</p>\n<hr />\n<p>Elemental scamps are bat-like critters marked by elemental powers. Scamps are dispatched from the Elemental Planes by more powerful residents or called to the Universe by neophyte summoners. All scamps have a hint of magical power due to a lingering connection to their home plane, which they largely use to pull simple pranks.</p>\n<p>Scamps rapidly form a pecking order of cleverness. Humanoids often confuse scamps when meeting such creatures for the first time. These confused scamps usually resort to an escalating series of pranks and mischief, seeing what they can get away with to establish their place in the hierarchy.</p>",
+            "blurb": "Variant fire scamp",
+            "sensesDetails": "smoke vision",
+            "hpDetails": "fast healing 2 (while touching fire)",
+            "items": {
+                "spellcastingEntry->Arcane Innate Spells": {
+                    "name": "Arcane Innate Spells"
+                },
+                "strike-melee->Headbutt": {
+                    "name": "Headbutt"
+                },
+                "action->Failed Task": {
+                    "name": "Failed Task",
+                    "description": "<p><strong>Trigger</strong> The animated flame starts its turn outside the village</p><hr /><p><strong>Effect</strong> The animated flame dissipates.</p>"
+                },
+                "action->Failing Task": {
+                    "name": "Failing Task",
+                    "description": "<p><strong>Trigger</strong> The animated flame leaves the village</p><hr /><p><strong>Effect</strong> The animated flame becomes @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 2}.</p>"
+                },
+                "action->Smoke Vision": {
+                    "name": "Smoke Vision",
+                    "description": "<p>The animated flame ignores the @UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{Concealed} condition from smoke.</p>"
+                },
+                "action->Fast Healing 2 (While Touching Fire)": {
+                    "name": "Fast Healing 2 (While Touching Fire)"
+                },
+                "action->Flame Breath": {
+                    "name": "Flame Breath",
+                    "description": "<p>The animated flame breathes flames in a @Template[cone|distance:15] that deals @Damage[(2d4+4)[fire]|options:area-damage] damage to each creature within the area (@Check[reflex|dc:19|basic|options:area-effect] save). Creatures that fail the save also take @Damage[1d4[persistent,fire]] damage.</p>\n<p>The animated flame can't use Flame Breath again for [[/gmr 1d4 #Recharge Flame Breath]]{1d4 rounds}.</p>"
+                }
+            }
+        },
         "Elite Concentrated Congealed Magic": {
             "name": "Elite Concentrated Congealed Magic",
             "publicNotes": "<p>Tomb jellies are animate masses of protoplasm with a sickly combination of yellow, gray, and black hues. Their acidic bodies dissolve flesh but leave other materials, including a victim's gear and bones, intact. Some ancient cultures entombed bodies in stone sarcophagi with tomb jellies to allow the ooze to break down the flesh and clean and polish the bones.</p>\n<hr />\n<p>Slimes, molds, and other oozes can be found in dank dungeons and shadowed forests. While not necessarily evil, some grow to enormous sizes and have insatiable appetites.</p>",
@@ -2536,7 +2708,7 @@
                 },
                 "action->Blades of Shade": {
                     "name": "Blades of Shade",
-                    "description": "<p>Shadow Lesolethe causes the shadows cast by those around her to transform into a mesh of blades which erupt upwards at her foes in a @Template[type:emanation|distance:30]. Enemy creatures in this area take @Damage[5d6[slashing]] damage (@Check[reflex|dc:26|basic] save).</p>"
+                    "description": "<p>Shadow Lesolethe causes the shadows cast by those around her to transform into a mesh of blades which erupt upwards at her foes in a @Template[type:emanation|distance:30]. Enemy creatures in this area take @Damage[5d6[slashing]|options:area-damage] damage (@Check[reflex|dc:26|basic|options:area-effect] save).</p>"
                 },
                 "action->Boiling Darkness": {
                     "name": "Boiling Darkness",
@@ -2558,6 +2730,43 @@
                 "action->Raise the Storm": {
                     "name": "Raise the Storm",
                     "description": "<p><strong>Trigger</strong> Xalreonshin rolls initiative, three rounds pass after the PCs begin speaking with Xalreonshin, or a creature other than Xalreonshin comes within 40 feet of the egg</p><hr /><p><strong>Effect</strong> The turbulent koi egg churns the lake surface, ejecting water into the sky. A 1-mile-radius area centered on the egg becomes filled with heavy rain and strong wind imposing a -2 circumstance penalty to Perception checks and requiring flying creatures to [[/act maneuver-in-flight dc=24]].</p>"
+                }
+            }
+        },
+        "Empowered Yollen Frivetti": {
+            "name": "Empowered Yollen Frivetti",
+            "sensesDetails": "darkvision",
+            "hpDetails": "regeneration 5 (deactivated by holy)",
+            "items": {
+                "spellcastingEntry->Arcane Prepared Spells": {
+                    "name": "Arcane Prepared Spells"
+                },
+                "spellcastingEntry->Magus Conflux Spells": {
+                    "name": "Magus Conflux Spells"
+                },
+                "strike-melee->Greataxe": {
+                    "name": "Greataxe"
+                },
+                "strike-melee->Fist": {
+                    "name": "Fist"
+                },
+                "action->Regeneration 5 (Deactivated by Holy)": {
+                    "name": "Regeneration 5 (Deactivated by Holy)"
+                },
+                "action->Frightful Presence": {
+                    "name": "Frightful Presence",
+                    "description": "<p>10 feet @Check[will|dc:26]</p><hr /><p>@Localize[PF2E.NPC.Abilities.Glossary.FrightfulPresence]</p>"
+                },
+                "action->Reactive Strike": {
+                    "name": "Reactive Strike"
+                },
+                "action->Hellish Spellstrike": {
+                    "name": "Hellish Spellstrike",
+                    "description": "<p>Yollen's signature spellstrike channels the ill will of Hell. He casts ignition, then makes a melee attack strike with his greataxe. If he successfully hits, he deals an additional 3d6 damage (6d6 on a critical hit) on top of the damage from ignition and the greataxe. This counts as two attacks for the purposes of multiple attack penalty, but the penalty does not apply until after Yollen completes this ability. Yollen cannot use Hellish Spellstrike again until he has recharge it using a single action with the concentrate trait, or cast his conflux spell.</p>"
+                },
+                "action->Voice of the Nessari": {
+                    "name": "Voice of the Nessari",
+                    "description": "<p>Through his Nahyndrian-warshard concoction, Yollen voice becomes infused with the menacing weight of a tyrant devil. All non-allied creatures within 20 feet who can hear Yollen must attempt a @Check[fortitude|dc:26] save against @Damage[7d10[spirit]] damage.</p><hr /><p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature takes half damage.</p>\n<p><strong>Failure</strong> The creature takes full damage and is @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 2} for 1 minute. The creature must also attempt a @Check[will|dc:26] save or be @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 2}.</p>\n<p><strong>Critical Failure</strong> The creature takes double damage and is enfeebled 2 for 1 minute. The creature must also attempt a @Check[will|dc:26] save or be @UUID[Compendium.pf2e.conditionitems.Item.6uEgoh53GbXuHpTF]{Paralyzed} for 1 round.</p>"
                 }
             }
         },
@@ -3428,7 +3637,7 @@
         "Hostile Architecture (1-2)": {
             "name": "Hostile Architecture (1-2)",
             "descriptionHazard": "<p>The sigils on the door's frame glow with an amber light, which collects in a facet over the center of the door.</p>",
-            "disable": "<p>@Check[religion|dc:14] (trained) to strategically destroy the runes, @Check[thievery|dc:15] to disrupt the beam from collecting the facet, or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (1st level, counteract DC 15) to dispel the rune</p>",
+            "disable": "<p>@Check[religion|dc:14] (trained) to strategically destroy the runes, @Check[thievery|dc:15] to disrupt the beam from collecting the facet, or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (1st rank, counteract DC 15) to dispel the rune</p>",
             "reset": "<p>The hostile architecture resets after being exposed to the light of a blue moon.</p>",
             "routine": "<p><span class=\"action-glyph\">a</span> The hostile architecture fires its aversion beam on a creature that is sanctified holy. If there are no sanctified holy creatures, it instead fires its beam on the nearest non-demon creature.</p>",
             "items": {
@@ -3444,7 +3653,7 @@
         "Hostile Architecture (3-4)": {
             "name": "Hostile Architecture (3-4)",
             "descriptionHazard": "<p>The sigils on the door's frame glow with an amber light, which collects in a facet over the center of the door.</p>",
-            "disable": "<p>@Check[religion|dc:17] (trained) to strategically destroy the runes, @Check[thievery|dc:18] to disrupt the beam from collecting the facet, or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (2nd level, counteract DC 18) to dispel the rune</p>",
+            "disable": "<p>@Check[religion|dc:17] (trained) to strategically destroy the runes, @Check[thievery|dc:18] to disrupt the beam from collecting the facet, or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (2nd rank, counteract DC 18) to dispel the rune</p>",
             "reset": "<p>The Hostile Architecture resets after being exposed to the light of a blue moon.</p>",
             "routine": "<p><span class=\"action-glyph\">a</span> The hostile architecture fires its aversion beam on a creature that is sanctified holy. If there are no sanctified holy creatures, it instead fires its beam on the nearest non-demon creature.</p>",
             "items": {
@@ -3617,6 +3826,18 @@
             "items": {
                 "strike-melee->Unarmed Attack": {
                     "name": "Unarmed Attack"
+                }
+            }
+        },
+        "Intense Treacherous Scree": {
+            "name": "Intense Treacherous Scree",
+            "descriptionHazard": "<p>The footing on this sloped ground appears to be stable at first glance, but the tiny rocks that cover it are loosely packed and prone to slipping.</p>",
+            "disable": "<p>@Check[survival|dc:23] (trained) to navigate a safe path</p>",
+            "stealth": "<p>(trained)</p>",
+            "items": {
+                "action->Rockslide": {
+                    "name": "Rockslide",
+                    "description": "<p>A creature steps on the unstable ground</p><hr /><p><strong>Effect</strong> Rocks tumble and slip beneath its feet. The triggering creature must attempt a @Check[reflex|dc:24] save as they tumble against the rocks, which deal @Damage[(4d8+14)[bludgeoning]] damage.</p><hr /><p><strong>Critical Success</strong> The creature takes no damage.</p>\n<p><strong>Success</strong> The creature takes half damage and falls @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone} in its space.</p>\n<p><strong>Failure</strong> The creature takes full damage, falls prone in its space, and tumbles down to the bottom of the slope.</p>\n<p><strong>Critical Failure</strong> As failure, but double damage.</p>"
                 }
             }
         },
@@ -4311,6 +4532,27 @@
                 },
                 "lore->Sailing Lore": {
                     "name": "Sailing Lore"
+                }
+            }
+        },
+        "Nahyndrian Focus": {
+            "name": "Nahyndrian Focus",
+            "descriptionHazard": "<p>A metal lattice forged from warshards feeds into a dark purplish crystal that pulses with energy. If the configuration of the lattice changes, so does the energy the device emits.</p>",
+            "disable": "<p>Three [[/act disable-device dc=27]] (see Disabling the Focus under Event 1 on page 18).</p>",
+            "routine": "<p>(3 actions) The Nahyndrian Focus uses Select Condition to determine which condition it is going to inflict. It then uses Inflict twice, usually on two different targets. If the focus is broken, it is @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1}, and can only Inflict once per turn.</p>",
+            "stealth": "<p>(expert)</p>",
+            "items": {
+                "action->Offensive Configuration": {
+                    "name": "Offensive Configuration",
+                    "description": "<p><strong>Trigger</strong> Yollen activates the Nahyndrian Focus</p><hr /><p><strong>Effect</strong> The Nahyndrian Focus shifts into attack mode and rolls initiative. All creatures without the unholy trait in within @Template[emanation|distance:60]{60 feet} must make a @Check[fortitude|dc:31|basic] save against @Damage[(4d10+22)[spirit]] damage.</p>"
+                },
+                "action->Select Condition": {
+                    "name": "Select Condition",
+                    "description": "<p>The Nahyndrian Focus rolls a [[/gmr 1d4 #Condition]] to randomly decide whether it is going cause the @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy}, @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained}, @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled}, or @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied} condition when it uses Inflict until the end of its turn. After the first round, it changes the random roll die to [[/gmr 1d6 #Condition]] as it does not pick the same condition it had in the previous round.</p>"
+                },
+                "action->Inflict": {
+                    "name": "Inflict",
+                    "description": "<p>An unhealthy beam shoots out from the focus. One creature without the unholy trait within 60 feet of the Focus must make a @Check[fortitude|dc:31] save.</p><hr /><p><strong>Critical Success</strong> The target becomes immune to Inflict for 1 minute.</p>\n<p><strong>Success</strong> The targe gains the condition from Select Condition with a value of 1 for 1 minute.</p>\n<p><strong>Failure</strong> As success, but with a value of 2.</p>\n<p><strong>Critical Failure</strong> As success, but with a value of 3.</p>"
                 }
             }
         },
@@ -5316,6 +5558,124 @@
                 }
             }
         },
+        "Sargassum Bud Pile": {
+            "name": "Sargassum Bud Pile",
+            "descriptionHazard": "<p>Sargassum heaps that have only started to grow have no intelligence, but are incredibly tenacious and can reflexively grab onto nearby prey. They obtain nutrients by drowning prey in the water they grow in.</p>",
+            "disable": "<p>@Check[athletics|dc:32] (expert) to rip the reflexive tendrils off the bud or @Check[thievery|dc:32] (expert) to trigger the tendrils beforehand and keep them occupied.</p>",
+            "reset": "<p>1 hour if the bud pile has something in its grasps. 1 round if the bud pile has nothing in its grasps.</p>",
+            "stealth": "<p>(expert)</p>",
+            "items": {
+                "action->Tendril Entanglement": {
+                    "name": "Tendril Entanglement",
+                    "description": "<p><strong>Trigger</strong> a creature moves into a square adjacent to the bud pile or into the square the bud pile occupies</p><hr /><p><strong>Effect</strong> The sargassum bud pile whips out numerous tendrils, attempting to grab the creature. The target must attempt a @Check[reflex|dc:28] save.</p><hr /><p><strong>Critical Success</strong> The target dodges the tendril and is unaffected.</p>\n<p><strong>Success</strong> A couple of tendrils latch on to the target. The target becomes @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed}. The target can @UUID[Compendium.pf2e.actionspf2e.Item.SkZAQRkLLkmBQNB9]{Escape} by attempting an Athletics or Acrobatics skill check of DC 28.</p>\n<p><strong>Failure</strong> Several tendrils grab the target. The target becomes grabbed and must make a @Check[fortitude|dc:30] or fall @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone}. If the target cannot breathe in water, they begin to suffocate. The DC to Escape increases to 30.</p>\n<p><strong>Critical Failure</strong> As failure, except the DC to Escape increases to 35.</p>"
+                }
+            }
+        },
+        "Scouring Pool": {
+            "name": "Scouring Pool",
+            "descriptionHazard": "<p>The swirling water in this pool entices anyone who can see or hear it to wander into its depths, drowning its victims.</p>",
+            "disable": "<p>@Check[thievery|dc:27] to scratch out the runes creating the effect, @Check[occultism|dc:23] (expert) or @Check[Demon Lore|dc:23] (expert) to determine the password that identifies the party as believers, or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (3rd-rank; counteract DC 25); two total successes are required to deactivate the pool.</p>",
+            "routine": "<p>(1 action; mental) The cleansing pool uses its first action to try and compel all creatures within 5 feet to enter into the pool. Creatures must attempt a @Check[will|dc:23|traits:mental] save.</p><hr><p><strong>Critical Success</strong> The creature is immune to the pool's routine for 1 minute.</p><p><strong>Success</strong> No effect.</p><p><strong>Failure</strong> The creature gains the @UUID[Compendium.pf2e.conditionitems.Item.AdPVz7rbaVSRxHFg]{Fascinated} condition and attempts to enter the pool.</p><p><strong>Critical Failure</strong> As failure, but the creature must also use all of their actions on their next turn to try and pull one of their allies into the pool with them.</p>",
+            "stealth": "<p>(expert) to notice the enticing effects of the pool</p>",
+            "items": {
+                "action->Echoing Spring": {
+                    "name": "Echoing Spring",
+                    "description": "<p><strong>Trigger</strong> a creature within 10 feet can see or hear the cleansing pool</p><hr /><p><strong>Effect</strong> each creature within range must succeed a @Check[will|dc:25] save or become @UUID[Compendium.pf2e.conditionitems.Item.AdPVz7rbaVSRxHFg]{Fascinated}, using all of their available actions to move toward and into the pool. The hazard then rolls initiative.</p>"
+                },
+                "action->Drown the Nonbelievers": {
+                    "name": "Drown the Nonbelievers",
+                    "description": "<p><strong>Trigger</strong> a @UUID[Compendium.pf2e.conditionitems.Item.AdPVz7rbaVSRxHFg]{Fascinated} creature enters the pool</p><hr /><p><strong>Effect</strong> the waters rush up to encircle the creature, which must succeed on a @Check[fortitude|dc:25] save or begin drowning.</p>"
+                }
+            }
+        },
+        "Screaming Grub Cultist": {
+            "name": "Screaming Grub Cultist",
+            "items": {
+                "armor->Cultist Garb (Functions as Leather Armor)": {
+                    "name": "Cultist Garb (Functions as Leather Armor)",
+                    "description": "<p>A mix of flexible and molded boiled leather, a suit of this type of armor provides some protection with maximum flexibility.</p>"
+                },
+                "equipment->Occult Text": {
+                    "name": "Occult Text"
+                },
+                "strike-melee->Fist": {
+                    "name": "Fist"
+                },
+                "action->Fanatical Frenzy": {
+                    "name": "Fanatical Frenzy",
+                    "description": "<p><strong>Requirements</strong> The cultist has taken damage and is neither @UUID[Compendium.pf2e.conditionitems.Item.HL2l2VRSaQHu9lUw]{Fatigued} nor already in a frenzy</p><hr /><p><strong>Effect</strong> The cultist flies into a frenzy that lasts 1 minute. While frenzied, the cultist gains a +1 status bonus to attack rolls and a +2 status bonus to damage rolls, and they take a \u20132 penalty to AC. The cultist can't voluntarily stop their frenzy. After their frenzy, the cultist is fatigued.</p>"
+                },
+                "lore->Screaming Grub Lore": {
+                    "name": "Screaming Grub Lore"
+                }
+            }
+        },
+        "Screaming Grub Necromancer": {
+            "name": "Screaming Grub Necromancer",
+            "items": {
+                "spellcastingEntry->Occult Innate Spells": {
+                    "name": "Occult Innate Spells"
+                },
+                "equipment->Hooded Robe": {
+                    "name": "Hooded Robe"
+                },
+                "strike-melee->Scythe": {
+                    "name": "Scythe"
+                },
+                "strike-melee->Fist": {
+                    "name": "Fist"
+                },
+                "action->Stench of Decay": {
+                    "name": "Stench of Decay",
+                    "description": "<p>The necromancer emits a scent of putrid rot in a @Template[type:emanation|distance:5]. Anyone that enters or begins its turn in the aura that is not a member of the Cult of the Screaming Grub is @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 1}.</p>"
+                },
+                "action->Undead, Arise!": {
+                    "name": "Undead, Arise!",
+                    "description": "<p>The necromancer summons two Medium undead entities in different empty squares up to 30 feet away. These undead entities can take the form of zombies, skeletons, or ghosts, chosen by the necromancer. The entities block movement as though they were creatures and can be attacked. Each entity has 1 Hit Point and the same AC and saves as the necromancer. They can't take actions of their own and deteriorate if the necromancer is reduced to 0 Hit Points. The necromancer can have up to four undead entities at any given time. If they call another, the oldest undead entity deteriorates.</p>\n<p>@UUID[Compendium.pf2e.pfs-season-6-bestiary.Actor.DclMSxfKDPrsc48z]{Screaming Grub Undead}</p>"
+                },
+                "action->Undead, Attack!": {
+                    "name": "Undead, Attack!",
+                    "description": "<p><strong>Requirements</strong> The necromancer has at least one undead entity active</p><hr /><p><strong>Effect</strong> The necromancer commands all their undead entities to attack. Each entity can Stride up to 20 feet into an empty square and make a Strike. The Strike has a +15 attack modifier and deals 2d12 bludgeoning damage (or spirit damage if the entity is a spirit). The Strike has the magical trait, and no multiple attack penalty applies to it.</p>"
+                },
+                "action->Wave of Death": {
+                    "name": "Wave of Death",
+                    "description": "<p><strong>Requirements</strong> The necromancer isn't drained and has at least one undead entity active</p><hr /><p><strong>Effect</strong> The necromancer overloads their undead entities with void energy, causing all of them to explode. Each entity is destroyed, dealing @Damage[4d10[void]] damage to each creature in a @Template[type:emanation|distance:10] with a @Check[fortitude|dc:23|basic] save. A creature in more than one explosion is damaged only once. The necromancer becomes @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 1}.</p>"
+                }
+            }
+        },
+        "Screaming Grub Priest": {
+            "name": "Screaming Grub Priest",
+            "items": {
+                "armor->Cultist Garb (Functions as Leather Armor)": {
+                    "name": "Cultist Garb (Functions as Leather Armor)",
+                    "description": "<p>A mix of flexible and molded boiled leather, a suit of this type of armor provides some protection with maximum flexibility.</p>"
+                },
+                "equipment->Occult Text": {
+                    "name": "Occult Text"
+                },
+                "strike-melee->Fist": {
+                    "name": "Fist"
+                },
+                "action->Fanatical Frenzy": {
+                    "name": "Fanatical Frenzy",
+                    "description": "<p><strong>Requirements</strong> The cultist has taken damage and is neither @UUID[Compendium.pf2e.conditionitems.Item.HL2l2VRSaQHu9lUw]{Fatigued} nor already in a frenzy</p><hr /><p><strong>Effect</strong> The cultist flies into a frenzy that lasts 1 minute. While frenzied, the cultist gains a +1 status bonus to attack rolls and a +2 status bonus to damage rolls, and they take a \u20132 penalty to AC. The cultist can't voluntarily stop their frenzy. After their frenzy, the cultist is fatigued.</p>"
+                },
+                "lore->Screaming Grub Lore": {
+                    "name": "Screaming Grub Lore"
+                }
+            }
+        },
+        "Screaming Grub Undead": {
+            "name": "Screaming Grub Undead",
+            "items": {
+                "strike-melee->Strike": {
+                    "name": "Strike"
+                },
+                "action->Undead Form": {
+                    "name": "Undead Form"
+                }
+            }
+        },
         "Shadow Lesolethe": {
             "name": "Shadow Lesolethe",
             "items": {
@@ -5327,7 +5687,7 @@
                 },
                 "action->Blades of Shade": {
                     "name": "Blades of Shade",
-                    "description": "<p>Shadow Lesolethe causes the shadows cast by those around her to transform into a mesh of blades which erupt upwards at her foes in a @Template[type:emanation|distance:30]. Enemy creatures in the area take @Damage[4d6[slashing]] damage (@Check[reflex|dc:24|basic] save).</p>"
+                    "description": "<p>Shadow Lesolethe causes the shadows cast by those around her to transform into a mesh of blades which erupt upwards at her foes in a @Template[type:emanation|distance:30]. Enemy creatures in the area take @Damage[4d6[slashing]|options:area-damage] damage (@Check[reflex|dc:24|basic|options:area-effect] save).</p>"
                 },
                 "action->Boiling Darkness": {
                     "name": "Boiling Darkness",
@@ -5621,6 +5981,108 @@
                 },
                 "action->Grab": {
                     "name": "Grab"
+                }
+            }
+        },
+        "Shard-Empowered Levaloch": {
+            "name": "Shard-Empowered Levaloch",
+            "publicNotes": "<p>Fearsome giants of jagged iron, levalochs serve in the armies of Hell as potent warriors and tenacious hunters-creatures of absolute discipline endlessly obedient to diabolical tyrants.</p>\n<hr />\n<p>There are countless legions of lawful fiends in the nine layers of Hell, warring against the celestial planes and scouring the Material Plane for souls to corrupt.</p>",
+            "allSavesBonus": "+1 status to all saves vs. magic",
+            "languagesDetails": "Telepathy 100 feet",
+            "items": {
+                "spellcastingEntry->Divine Innate Spells": {
+                    "name": "Divine Innate Spells"
+                },
+                "spell->Translocate (At Will)": {
+                    "name": "Translocate (At Will)"
+                },
+                "strike-melee->Trident": {
+                    "name": "Trident"
+                },
+                "strike-ranged->Barbed Net": {
+                    "name": "Barbed Net"
+                },
+                "action->Telepathy 100 feet": {
+                    "name": "Telepathy 100 feet"
+                },
+                "action->Hellstrider": {
+                    "name": "Hellstrider",
+                    "description": "<p>A levaloch ignores the effects of non-magical difficult terrain. They take no damage from caltrops or from damaging terrain that deals physical, acid, or cold damage.</p>\n<p>A levaloch can move through liquids up to 5 feet deep at their full Speed.</p>"
+                },
+                "action->+1 Status to All Saves vs. Magic": {
+                    "name": "+1 Status to All Saves vs. Magic"
+                },
+                "action->Phalanx Fighter": {
+                    "name": "Phalanx Fighter",
+                    "description": "<p>All devils of equal or lower level adjacent to a levaloch gain a +1 circumstance bonus to their AC as the levaloch shields them from harm.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.KjWPSJonzrZ8jv7X]{Effect: Phalanx Fighter}</p>"
+                },
+                "action->Stable Stance": {
+                    "name": "Stable Stance",
+                    "description": "<p>A levaloch gains a +2 circumstance bonus to their Fortitude DC against being Shoved and to other saving throws to resist being moved against their will.</p>"
+                },
+                "action->Barbed Net": {
+                    "name": "Barbed Net",
+                    "description": "<p>When a levaloch hits a creature with their barbed net, the net wraps around the target, which becomes @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 1} and takes a -10-foot circumstance penalty to its Speeds. If the Strike was a critical success, the target is also @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Immobilized}.</p>\n<p>When a creature @UUID[Compendium.pf2e.actionspf2e.Item.SkZAQRkLLkmBQNB9]{Escapes} (DC 22), or if the Strike misses, the net crumbles into rust.</p>\n<p>Each time a creature attempts to Escape, it takes @Damage[1d6[slashing]] damage from the net's barbs, regardless of whether the attempt succeeds.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.HafP5vrdGdoqoFMo]{Effect: Barbed Net}</p>"
+                },
+                "action->Forge Warshard Weapon": {
+                    "name": "Forge Warshard Weapon",
+                    "description": "<p>A levaloch recalls their warshard-infused iron back to create a new <em>+1 striking trident</em> or barbed net. A creatures on the line between the weapon and the levaloch must make a basic @Check[reflex|dc:23] save against @Damage[7d8[piercing]] damage. The levaloch's previous trident crumbles to rust. When the levaloch is destroyed, any tridents or barbed nets they created crumble to rust.</p>"
+                },
+                "action->Merciless Thrust": {
+                    "name": "Merciless Thrust",
+                    "description": "<p>When a levaloch hits a creature that has the @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy}, @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled}, @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Immobilized}, or @UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{Restrained} conditions with a melee trident Strike, the Strike deals an additional [[/r 2d6]] damage.</p>"
+                }
+            }
+        },
+        "Shard-Empowered Vordine": {
+            "name": "Shard-Empowered Vordine",
+            "publicNotes": "<p>The vast city of Dis trains endless legions of vordines to guard the upper layers of Hell and march across the planes at the archdevils' orders. Although quick to bend their knees to higher-ranking devils and even mortals favored by Asmodeus, vordines are relentlessly cruel to orts and other devils they can call their subordinates.</p>\n<p>Although higher ranks in the infernal military are held by more powerful devils, like the nessari who serve as generals, a labyrinthine structure gives each vordine a rank and certain responsibilities. Some vordines are responsible for the battlefield command of squads, while others relay orders from above or are set to handling specific administrative tasks for their unit. The greatest gift one can offer a vordine is an increased rank to lord over other vordines.</p>\n<hr />\n<p>Masters of corruption and architects of conquest, devils seek both to tempt mortal life to join in their pursuit of all things profane and to spread tyranny throughout all worlds. The temptations they offer mortals range from great powers granted by the signing of an infernal contract to twisted favors following a whispered pledge to a diabolic patron, or any number of even subtler exchanges. Those who succumb to these temptations find themselves consigned to an afterlife of endless torment in the pits of Hell, wherein the only hope of escape lies in the chance of being promoted to become a devil in the infernal ranks.</p>\n<p>Every devil has a specific role to play in the upkeep of the remorseless bureaucratic machine that is Hell, from soldiers and scholars to inquisitors, lawyers, judges, and executioners. Lowly orts perform subservient labor to more powerful and specialized devils, such as infantry and contract devils, while the greatest nessaris command entire infernal armies.</p>\n<p>Asmodeus stands at the apex of the structure he created, but the layers below him are marked by a constant jockeying for position. Most diabolic plans ultimately serve to improve the schemer's place in the hierarchy.</p>",
+            "blurb": "Variant vordine",
+            "allSavesBonus": "+1 status to all saves vs. magic",
+            "languagesDetails": "Telepathy 100 feet",
+            "items": {
+                "spellcastingEntry->Divine Innate Spells": {
+                    "name": "Divine Innate Spells"
+                },
+                "spell->Translocate (At Will)": {
+                    "name": "Translocate (At Will)"
+                },
+                "strike-melee->Trident": {
+                    "name": "Trident"
+                },
+                "strike-melee->Whip": {
+                    "name": "Whip"
+                },
+                "strike-melee->Hoof": {
+                    "name": "Hoof"
+                },
+                "action->Telepathy 100 feet": {
+                    "name": "Telepathy 100 feet"
+                },
+                "action->+1 Status to All Saves vs. Magic": {
+                    "name": "+1 Status to All Saves vs. Magic"
+                },
+                "action->Reactive Shield Arm": {
+                    "name": "Reactive Shield Arm",
+                    "description": "<p><strong>Trigger</strong> A creature successfully Strikes the vordine</p><hr /><p><strong>Effect</strong> The vordine immediately grows a warshard shield out of its arm, gaining +2 AC against the triggering Strike. This shield then functions as a 3rd-rank @UUID[Compendium.pf2e.spells-srd.Item.4k99nOJudmeNnBTF]{Shielded Arm} spell would.</p>"
+                },
+                "action->Reactive Strike": {
+                    "name": "Reactive Strike"
+                },
+                "action->Burning Hoofprints": {
+                    "name": "Burning Hoofprints",
+                    "description": "<p>The vordine Strides, trailing hoofprints in each square they exit. The hoofprints burn for 1 minute. A creature on the ground that enters a square with burning hoofprints or begins its turn in one takes @Damage[1d4[fire]] damage.</p>"
+                },
+                "action->Trident of Dis": {
+                    "name": "Trident of Dis",
+                    "description": "<p>The vordine makes a trident Strike, increasing their reach to 10 feet for that Strike. If there is an unholy ally between the vordine and their target, that creature's energy causes the Strike to deal an additional 1d6 spirit damage.</p>"
+                },
+                "action->Warshard Healing": {
+                    "name": "Warshard Healing",
+                    "description": "<p><strong>Frequency</strong> once per hour</p><hr /><p><strong>Effect</strong> The vordine draws upon the power of the warshard to bolster its health. It gains fast healing 5 for 1 minute.</p>"
+                },
+                "lore->Warfare Lore": {
+                    "name": "Warfare Lore"
                 }
             }
         },
@@ -6278,6 +6740,18 @@
                 }
             }
         },
+        "Treacherous Scree": {
+            "name": "Treacherous Scree",
+            "descriptionHazard": "<p>The footing on this sloped ground appears to be stable at first glance, but the tiny rocks that cover it are loosely packed and prone to slipping.</p>",
+            "disable": "<p>@Check[survival|dc:20] (trained) to navigate a safe path</p>",
+            "stealth": "<p>(trained)</p>",
+            "items": {
+                "action->Rockslide": {
+                    "name": "Rockslide",
+                    "description": "<p><strong>Trigger</strong> A creature steps on the unstable ground</p><hr /><p><strong>Effect</strong> Rocks tumble and slip beneath its feet. The triggering creature must attempt a @Check[reflex|dc:21] save as they tumble against the rocks, which deal @Damage[(2d10+13)[bludgeoning]] damage.</p><hr /><p><strong>Critical Success</strong> The creature takes no damage.</p>\n<p><strong>Success</strong> The creature takes half damage and falls @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone} in its space.</p>\n<p><strong>Failure</strong> The creature takes full damage, falls prone in its space, and tumbles down to the bottom of the slope.</p>\n<p><strong>Critical Failure</strong> As failure, but double damage.</p>"
+                }
+            }
+        },
         "Turbulent Koi Egg": {
             "name": "Turbulent Koi Egg",
             "descriptionHazard": "<p>A raging storm covers the mountain lake as spring water levitates from the lake to fall back down in a driving spiral of steaming rain. In the depths of the storm, barely visible, is a tiny koi egg surrounded by three bands of water.</p>",
@@ -6556,6 +7030,40 @@
                 "action->Sirocco Breath": {
                     "name": "Sirocco Breath",
                     "description": "<p>The air scamp creates cutting winds in a @Template[cone|distance:15] that deal @Damage[(2d6-4)[slashing]|options:area-damage] damage to each creature within the area (@Check[reflex|dc:15|basic|options:area-effect] save). A creature that fails its save is also pushed back 10 feet.</p>\n<p>The air scamp can't use Sirocco Breath again for [[/gmr 1d4 #Recharge Sirocco Breath]]{1d4 rounds}.</p>"
+                }
+            }
+        },
+        "Weak Animated Flame": {
+            "name": "Weak Animated Flame",
+            "publicNotes": "<p>Although arguably quite friendly, fire scamps are considered far more dangerous than their kin. They delight in fire and playing pranks on everyone they befriend. Even given time to understand others' dislike of fire, most fire scamps enjoy the feel of flames enough to constantly test their limits.</p>\n<p>Compared to the nations of other scamps, the nations on the Plane of Fire are by far the strongest. This backing inspires fire scamps to challenge authority more quickly than the others.</p>\n<hr />\n<p>Elemental scamps are bat-like critters marked by elemental powers. Scamps are dispatched from the Elemental Planes by more powerful residents or called to the Universe by neophyte summoners. All scamps have a hint of magical power due to a lingering connection to their home plane, which they largely use to pull simple pranks.</p>\n<p>Scamps rapidly form a pecking order of cleverness. Humanoids often confuse scamps when meeting such creatures for the first time. These confused scamps usually resort to an escalating series of pranks and mischief, seeing what they can get away with to establish their place in the hierarchy.</p>",
+            "blurb": "Variant fire scamp",
+            "sensesDetails": "smoke vision",
+            "hpDetails": "fast healing 1 (while touching fire)",
+            "items": {
+                "spellcastingEntry->Arcane Innate Spells": {
+                    "name": "Arcane Innate Spells"
+                },
+                "strike-melee->Ram": {
+                    "name": "Ram"
+                },
+                "action->Panic of Failure Foreseen": {
+                    "name": "Panic of Failure Foreseen",
+                    "description": "<p>If the animated flame leaves the village, willingly or otherwise, it becomes @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 2} for 2 rounds.</p>"
+                },
+                "action->Price of Failure": {
+                    "name": "Price of Failure",
+                    "description": "<p>If the animated flame starts its turn outside the village after it arrives, it dissipates.</p>"
+                },
+                "action->Smoke Vision": {
+                    "name": "Smoke Vision",
+                    "description": "<p>The animated flame ignores the @UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{Concealed} condition from smoke.</p>"
+                },
+                "action->Fast Healing 2 (While Touching Fire)": {
+                    "name": "Fast Healing 2 (While Touching Fire)"
+                },
+                "action->Flame Breath": {
+                    "name": "Flame Breath",
+                    "description": "<p>The animated flame breathes flames in a @Template[cone|distance:15] that deals @Damage[(2d4-4)[fire]|options:area-damage] damage to each creature within the area (@Check[reflex|dc:15|basic|options:area-effect] save). Creatures that fail the save also take @Damage[1d4[persistent,fire]] damage.</p>\n<p>The animated flame can't use Flame Breath again for [[/gmr 1d4 #Recharge Flame Breath]]{1d4 rounds}.</p>"
                 }
             }
         },
@@ -6926,6 +7434,34 @@
                 }
             }
         },
+        "Yollen Frivetti": {
+            "name": "Yollen Frivetti",
+            "items": {
+                "spellcastingEntry->Arcane Prepared Spells": {
+                    "name": "Arcane Prepared Spells"
+                },
+                "spellcastingEntry->Magus Conflux Spells": {
+                    "name": "Magus Conflux Spells"
+                },
+                "strike-melee->Greataxe": {
+                    "name": "Greataxe"
+                },
+                "strike-melee->Fist": {
+                    "name": "Fist"
+                },
+                "action->Reactive Strike": {
+                    "name": "Reactive Strike"
+                },
+                "action->Hellish Spellstrike": {
+                    "name": "Hellish Spellstrike",
+                    "description": "<p>Yollen's signature spellstrike channels the ill will of Hell. He casts @UUID[Compendium.pf2e.spells-srd.Item.6DfLZBl8wKIV03Iq]{Ignition}, then makes a melee attack strike with his greataxe. If he successfully hits, he deals an additional 2d6 damage (4d6 on a critical hit) on top of the damage from <em>ignition</em> and the greataxe. This counts as two attacks for the purposes of multiple attack penalty, but the penalty does not apply until after Yollen completes this ability. Yollen cannot use Hellish Spellstrike again until he has recharge it using a single action with the concentrate trait or cast his conflux spell.</p>"
+                },
+                "action->Mountain of Iron": {
+                    "name": "Mountain of Iron",
+                    "description": "<p><strong>Frequency</strong> once per hour</p><hr /><p><strong>Effect</strong> Yollen draws upon the power of the warshard to bolster his health. He gains fast healing 5 for 1 minute.</p>"
+                }
+            }
+        },
         "Young Giant Viper": {
             "name": "Young Giant Viper",
             "publicNotes": "<p>The giant viper's fangs are a frightening sight, with injection tubes as long as daggers. The sheer amount of venom injected by a giant viper can cause severe blood clotting and leave a victim utterly drained of vitality.</p>\n<hr />\n<p>Snakes come in an array of forms, from jungle-dwelling constrictors that wrap around their prey to venomous vipers with deadly bites. Regardless, all snakes consume their prey whole by unhinging their jaws and using powerful muscles to move the food down their throats and into their stomachs.</p>",
@@ -7090,6 +7626,32 @@
                 "action->Troop Movement": {
                     "name": "Troop Movement",
                     "description": "<p>Whenever a troop Strides, it first Forms Up as a free action to condense into a 20-foot-by-20-foot area (minus any missing squares), then moves up to its Speed. This works just like a Gargantuan creature moving; for instance, if any square of the troop enters difficult terrain, the extra movement cost applies to the whole troop.</p>"
+                }
+            }
+        },
+        "\u014cmukade": {
+            "name": "\u014cmukade",
+            "items": {
+                "strike-melee->Mandibles": {
+                    "name": "Mandibles"
+                },
+                "action->Tremorsense (Imprecise) 30 feet": {
+                    "name": "Tremorsense (Imprecise) 30 feet"
+                },
+                "action->Hundred Deadly Feet": {
+                    "name": "Hundred Deadly Feet",
+                    "description": "<p><strong>Trigger</strong> A creature @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed} by the \u014dmukade fails a check to @UUID[Compendium.pf2e.actionspf2e.Item.SkZAQRkLLkmBQNB9]{Escape}</p><hr /><p><strong>Effect</strong> The \u014dmukade's jaws deal @Damage[1d6[piercing]] damage and the triggering creature is injected with \u014dmukade venom.</p>"
+                },
+                "action->Deadly Charge": {
+                    "name": "Deadly Charge",
+                    "description": "<p>The \u014dmukade Strides twice and then makes a mandibles Strike. If the \u014dmukade moved at least 20 feet away from its starting position, it gains a +2 circumstance bonus to this attack roll.</p>"
+                },
+                "action->\u014cmukade Venom": {
+                    "name": "\u014cmukade Venom",
+                    "description": "<p><strong>Saving Throw</strong> @Check[fortitude|dc:17]</p>\n<p><strong>Maximum Duration</strong> 6 rounds</p>\n<p><strong>Stage 1</strong> @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 1} (1 round)</p>\n<p><strong>Stage 2</strong> @Damage[1d6[poison]] damage and @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 2} (1 round)</p>"
+                },
+                "action->Grab": {
+                    "name": "Grab"
                 }
             }
         }
