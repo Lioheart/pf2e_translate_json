@@ -101,6 +101,8 @@ def read_leveldb_to_json(leveldb_path, output_json_path):
     for sub_folders in folders_list:
         output_path = rf'{output_json_path}\{sub_folders}.json'
         output_folder = rf'{output_json_path.split("\\")[0]}\packs\{sub_folders}'.replace('\\', '/')
+        if output_json_path.split("\\")[1] == 'pf2e-macros':
+            output_folder = rf'{output_json_path.split("\\")[0]}\pf2e-macros\packs\{sub_folders}'.replace('\\', '/')
         print('output_folder', output_folder)
 
         # Ensure the output folder exists
@@ -259,6 +261,8 @@ def process_files(folders, version, type_system):
     dict_key = []
     for root, dirs, files in os.walk(folders):
         for file in files:
+            if file == "relic-macros.json":
+                continue
             if file.endswith(".json"):
                 file_path = os.path.join(root, file)
                 print('Oryginalny plik:', file)
@@ -294,6 +298,9 @@ def process_files(folders, version, type_system):
                     new_name = fr'{version}/starfinder-field-test-for-pf2e.{file}'
                 print('Nowy plik:', new_name)
                 print()
+
+                if file in ('kingmaker-tools-rolltables.json', 'kingmaker-tools-random-encounters.json', 'kingmaker-tools-settlements.json'):
+                    continue
 
                 if pathlib.Path(f'{root}/{file.split(".")[0]}_folders.json').is_file():
                     transifex_dict = {
@@ -366,16 +373,21 @@ def process_files(folders, version, type_system):
                         transifex_dict["entries"][name].update({"name": name})
 
                     # Dla Dzienników
-                    elif 'pages' in keys:
-                        transifex_dict["entries"].update({name: {}})
-                        transifex_dict["entries"][name].update({"name": name})
-                        transifex_dict["entries"][name].update({"pages": {}})
-                        for result in new_data['pages']:
-                            print(result)
-                            transifex_dict["entries"][name]['pages'].update({result['name']: {}})
-                            transifex_dict["entries"][name]['pages'][result['name']].update({"name": result['name']})
-                            transifex_dict["entries"][name]['pages'][result['name']].update(
-                                {"text": result['text']['content']})
+                    elif 'journal' in keys:
+                        transifex_dict["entries"][name.strip()].update({"journals": {}})
+                        for journal in new_data["journal"]:
+                            transifex_dict["entries"][name]["journals"].update({journal["name"]: {}})
+                            transifex_dict["entries"][name]["journals"][journal["name"].strip()].update(
+                                {"name": journal["name"]})
+                            transifex_dict["entries"][name]["journals"][journal["name"]].update({"pages": {}})
+                            for pages in journal["pages"]:
+                                transifex_dict["entries"][name]["journals"][journal["name"]]["pages"].update(
+                                    {pages["name"].strip(): {}})
+                                transifex_dict["entries"][name]["journals"][journal["name"]]["pages"][
+                                    pages["name"].strip()].update({"name": pages["name"].strip()})
+                                transifex_dict["entries"][name]["journals"][journal["name"]]["pages"][
+                                    pages["name"].strip()].update(
+                                    {"text": " ".join(pages["text"].get("content", "").split())})
 
                     elif 'permission' in keys:
                         transifex_dict["entries"].update({name: {}})
@@ -405,6 +417,23 @@ def process_files(folders, version, type_system):
                             result_name = f'{result["range"][0]}-{result["range"][1]}'
                             transifex_dict["entries"][name]['results'].update({result_name: result['text']})
 
+                    # elif 'results' in keys:
+                    #     transifex_dict["entries"].update({name: {}})
+                    #     transifex_dict["entries"][name].update({"name": name})
+                    #     transifex_dict["entries"][name].update({"description": new_data.get("description")})
+                    #     transifex_dict["entries"][name].update({"results": {}})
+                    #     try:
+                    #         for result in new_data["results"]:
+                    #             try:
+                    #                 for id_result in data:
+                    #                     if result == id_result["_id"]:
+                    #                         transifex_dict["entries"][name]['results'].update(
+                    #                             {f"{id_result['range'][0]}-{id_result['range'][1]}": id_result['text']})
+                    #             except TypeError:
+                    #                 pass
+                    #     except KeyError:
+                    #         pass
+
                     # Dla Kompendium
                     elif 'items' not in keys:
                         transifex_dict["entries"].update({name: {}})
@@ -413,6 +442,26 @@ def process_files(folders, version, type_system):
                             if not new_data['system']['description']['value'].startswith('<p>@Localize'):
                                 transifex_dict["entries"][name].update(
                                     {"description": new_data['system']['description']['value']})
+                        except KeyError:
+                            pass
+
+                    # Dla Dzienników (inna metoda)
+                    if 'pages' in keys:
+                        transifex_dict["entries"].update({name: {}})
+                        transifex_dict["entries"][name].update({"name": name})
+                        transifex_dict["entries"][name].update({"pages": {}})
+                        try:
+                            for result in new_data['pages']:
+                                for pages in data:
+                                    try:
+                                        if result == pages['_id']:
+                                            transifex_dict["entries"][name]['pages'].update({pages['name']: {}})
+                                            transifex_dict["entries"][name]['pages'][pages['name']].update(
+                                                {"name": pages['name']})
+                                            transifex_dict["entries"][name]['pages'][pages['name']].update(
+                                                {"text": pages['text']['content']})
+                                    except KeyError:
+                                        pass
                         except KeyError:
                             pass
 
@@ -1163,8 +1212,7 @@ else:
     with zipfile.ZipFile(zip_addons10_filename, 'r') as zip_ref:
         zip_ref.extractall(extract_folder)
 
-convert_extension(fr'{extract_folder}\pf2e-macros\packs', "effects", "effects")
-convert_extension(fr'{extract_folder}\pf2e-macros\packs', "macros", "macros")
+read_leveldb_to_json(fr'{extract_folder}\pf2e-macros\packs', fr'{extract_folder}\pf2e-macros\output')
 # === === === === === === === === === === === === === === === === === === === === === === === === === === === === ===
 # Addons11
 # Ścieżka do pliku z wersją addon11
@@ -1250,6 +1298,66 @@ else:
 convert_extension(fr'{extract_folder}\pf2e-summons-helper\packs', "summons-effect", "summons-effect")
 convert_extension(fr'{extract_folder}\pf2e-summons-helper\packs', "summons-macros", "summons-macros")
 # === === === === === === === === === === === === === === === === === === === === === === === === === === === === ===
+# Addons15
+# Ścieżka do pliku z wersją addon15
+add_15_url = "https://github.com/reyzor1991/pf2e-initiative-effect/releases/latest/download/module.json"
+
+path_15, headers_15 = urlretrieve(add_15_url, 'module_15.json')
+version_15 = 'addon_15_' + json.loads(open('module_15.json', 'r', encoding='utf-8').read())["version"]
+zip_addons15_filename = "pf2e-initiative-effect.zip"
+zip_addons15 = 'https://github.com/reyzor1991/pf2e-initiative-effect/releases/latest/download/pf2e-initiative-effect.zip'
+extract_folder = 'pack_addon_15'
+print()
+print("*** Wersja dodatku_15 PF2E: ", version_15, " ***")
+
+if create_version_directory(version_15):
+    download_and_extract_zip(zip_addons15, zip_addons15_filename, extract_folder)
+else:
+    with zipfile.ZipFile(zip_addons15_filename, 'r') as zip_ref:
+        zip_ref.extractall(extract_folder)
+
+convert_extension(fr'{extract_folder}\pf2e-initiative-effect\packs', "initiative-effect", "initiative-effect")
+# === === === === === === === === === === === === === === === === === === === === === === === === === === === === ===
+# Addons16
+# Ścieżka do pliku z wersją addon16
+add_16_url = "https://github.com/TheErikkuBlade/pf2e-relics/releases/latest/download/module.json"
+
+path_16, headers_16 = urlretrieve(add_16_url, 'module_16.json')
+version_16 = 'addon_16_' + json.loads(open('module_16.json', 'r', encoding='utf-8').read())["version"]
+zip_addons16_filename = "pf2e-relics.zip"
+zip_addons16 = 'https://github.com/TheErikkuBlade/pf2e-relics/releases/latest/download/pf2e-relics.zip'
+extract_folder = 'pack_addon_16'
+print()
+print("*** Wersja dodatku_16 PF2E: ", version_16, " ***")
+
+if create_version_directory(version_16):
+    download_and_extract_zip(zip_addons16, zip_addons16_filename, extract_folder)
+else:
+    with zipfile.ZipFile(zip_addons16_filename, 'r') as zip_ref:
+        zip_ref.extractall(extract_folder)
+
+read_leveldb_to_json(fr'{extract_folder}\packs', fr'{extract_folder}\output')
+# === === === === === === === === === === === === === === === === === === === === === === === === === === === === ===
+# Addons17
+# Ścieżka do pliku z wersją addon17
+add_17_url = "https://github.com/BernhardPosselt/pf2e-kingmaker-tools/releases/latest/download/module.json"
+
+path_17, headers_17 = urlretrieve(add_17_url, 'module_17.json')
+version_17 = 'addon_17_' + json.loads(open('module_17.json', 'r', encoding='utf-8').read())["version"]
+zip_addons17_filename = "pf2e-kingmaker-tools.zip"
+zip_addons17 = 'https://github.com/BernhardPosselt/pf2e-kingmaker-tools/releases/latest/download/release.zip'
+extract_folder = 'pack_addon_17'
+print()
+print("*** Wersja dodatku_17 PF2E: ", version_17, " ***")
+
+if create_version_directory(version_17):
+    download_and_extract_zip(zip_addons17, zip_addons17_filename, extract_folder)
+else:
+    with zipfile.ZipFile(zip_addons17_filename, 'r') as zip_ref:
+        zip_ref.extractall(extract_folder)
+
+move_files(fr'{extract_folder}/pf2e-kingmaker-tools/packs', fr'{extract_folder}/packs')
+read_leveldb_to_json(fr'{extract_folder}\packs', fr'{extract_folder}\output')
 # === === === === === === === === === === === === === === === === === === === === === === === === === === === === ===
 # folder = 'pack'
 # process_files(folder, version, 'system')
@@ -1285,7 +1393,7 @@ process_files(folder, version_8, "kctg-2e")
 folder = r'pack_addon_9/output'
 process_files(folder, version_9, "pf2e-animal-companions")
 
-folder = r'pack_addon_10/pf2e-macros/packs'
+folder = r'pack_addon_10/pf2e-macros/output'
 process_files(folder, version_10, "pf2e-macros")
 
 folder = r'pack_addon_11/output'
@@ -1299,6 +1407,15 @@ process_files(folder, version_13, "pf2e-assistant")
 
 folder = r'pack_addon_14/pf2e-summons-helper/packs'
 process_files(folder, version_14, 'pf2e-summons-helper')
+
+folder = r'pack_addon_15/pf2e-initiative-effect/packs'
+process_files(folder, version_15, 'pf2e-initiative-effect')
+
+folder = r'pack_addon_16/output'
+process_files(folder, version_16, "pf2e-relics")
+
+folder = r'pack_addon_17/output'
+process_files(folder, version_17, "pf2e-kingmaker-tools")
 
 copy_addon_folders()
 clean()
