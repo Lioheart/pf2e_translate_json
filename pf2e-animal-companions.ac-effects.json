@@ -3,7 +3,15 @@
     "entries": {
         "Effect: Antelope Support Benefit": {
             "name": "Effect: Antelope Support Benefit",
-            "description": "<p>Granted by @UUID[Compendium.pf2e-animal-companions.AC-Support.Item.yIB4qKV5sqcXlOmB]{Antelope Support Benefit}</p><p>Your Strikes that damage a creature in your antelope's reach also deal bleed damage damage.</p>"
+            "description": "<p>Granted by @UUID[Compendium.pf2e-animal-companions.AC-Support.Item.yIB4qKV5sqcXlOmB]{Antelope Support Benefit}</p><p>Your Strikes that damage a creature in your antelope's reach also deal bleed damage damage.</p>",
+            "rules": {
+                "0": {
+                    "prompt": "Is companion nimble or savage."
+                },
+                "2": {
+                    "text": "Your Strikes that damage a creature in your antelope's reach also deal @Damage[({item|flags.pf2e.rulesSelections.antelopeSupportBenefit})d6[persistent,bleed]] damage."
+                }
+            }
         },
         "Effect: Ape Support Benefit": {
             "name": "Effect: Ape Support Benefit",
@@ -24,12 +32,23 @@
         },
         "Effect: Bear Support Benefit": {
             "name": "Effect: Bear Support Benefit",
-            "description": "<p>Granted by @UUID[Compendium.pf2e-animal-companions.AC-Support.Item.AvDlo1mgxXd7ZA8W]{Bear Support Benefit}</p><p>When you hit a target, they also take slashing damage from the bear.</p>"
+            "description": "<p>Granted by @UUID[Compendium.pf2e-animal-companions.AC-Support.Item.AvDlo1mgxXd7ZA8W]{Bear Support Benefit}</p><p>When you hit a target, they also take slashing damage from the bear.</p>",
+            "rules": {
+                "0": {
+                    "prompt": "Is companion nimble or savage."
+                },
+                "2": {
+                    "text": "The target takes @Damage[({item|flags.pf2e.rulesSelections.bearSupportBenefit})d8[slashing]] from the bear"
+                }
+            }
         },
         "Effect: Beetle Support Benefit": {
             "name": "Effect: Beetle Support Benefit",
             "description": "<p>Granted by @UUID[Compendium.pf2e-animal-companions.AC-Support.Item.mFTzDCqNL5EdwlGm]{Beetle Support Benefit}</p><p>Your Strikes that deal damage either make the target @Compendium[pf2e.conditionitems.Off-Guard]{Off-Guard} until the end of your next turn or move the target 5 feet away from the beetle (this is forced movement). The target chooses which effect occurs.</p>",
             "rules": {
+                "0": {
+                    "prompt": "Is companion nimble or savage."
+                },
                 "2": {
                     "text": "Your Strikes that deal damage either make the target @Compendium[pf2e.conditionitems.Off-Guard]{Off-Guard} until the end of your next turn or move the target 5 feet away from the beetle (this is forced movement). The target chooses which effect occurs."
                 }
@@ -37,7 +56,15 @@
         },
         "Effect: Bird Support Benefit": {
             "name": "Effect: Bird Support Benefit",
-            "description": "<p>Granted by @UUID[Compendium.pf2e-animal-companions.AC-Support.Item.7rhcqwMDt2xqnI1N]{Bird Support Benefit}</p><p>Your Strikes that damage a creature that your bird threatens also deal persistent bleed damage, and the target is @UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]{Dazzled} until it removes the bleed damage.</p>"
+            "description": "<p>Granted by @UUID[Compendium.pf2e-animal-companions.AC-Support.Item.7rhcqwMDt2xqnI1N]{Bird Support Benefit}</p><p>Your Strikes that damage a creature that your bird threatens also deal persistent bleed damage, and the target is @UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]{Dazzled} until it removes the bleed damage.</p>",
+            "rules": {
+                "0": {
+                    "prompt": "Is companion nimble or savage."
+                },
+                "2": {
+                    "text": "Your Strikes that damage a creature that your bird threatens also deal @Damage[({item|flags.pf2e.rulesSelections.birdSupportBenefit})d4[bleed]] damage, and the target is @UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]{Dazzled} until it removes the bleed damage."
+                }
+            }
         },
         "Effect: Blood Feast": {
             "name": "Effect: Blood Feast",
@@ -45,7 +72,15 @@
         },
         "Effect: Boar Support Benefit": {
             "name": "Effect: Boar Support Benefit",
-            "description": "<p>Granted by @UUID[Compendium.pf2e-animal-companions.AC-Support.Item.8re1d4lM0Dn4sLto]{Boar Support Benefit}</p><p>Your Strikes that damage a creature in your boar's reach also deal persistent damage.</p>"
+            "description": "<p>Granted by @UUID[Compendium.pf2e-animal-companions.AC-Support.Item.8re1d4lM0Dn4sLto]{Boar Support Benefit}</p><p>Your Strikes that damage a creature in your boar's reach also deal persistent damage.</p>",
+            "rules": {
+                "0": {
+                    "prompt": "Is companion nimble or savage."
+                },
+                "2": {
+                    "text": "Your Strikes that damage a creature in your boar's reach also deal @Damage[({item|flags.pf2e.rulesSelections.boarSupportBenefit})d6[persistent,bleed]] damage."
+                }
+            }
         },
         "Effect: Capybara Support Benefit": {
             "name": "Effect: Capybara Support Benefit",
@@ -117,7 +152,15 @@
         },
         "Effect: Fire Elemental Support Benefit": {
             "name": "Effect: Fire Elemental Support Benefit",
-            "description": "<p>Granted by @UUID[Compendium.pf2e-animal-companions.AC-Support.Item.NSdcXgEHVHdfJlkb]{Fire Elemental Support Benefit}</p><p>your Strikes that damage a creature in your fire elemental's reach also deal 1d6 persistent fire damage. If your fire elemental is nimble or savage, the persistent fire damage increases to 2d6.</p>"
+            "description": "<p>Granted by @UUID[Compendium.pf2e-animal-companions.AC-Support.Item.NSdcXgEHVHdfJlkb]{Fire Elemental Support Benefit}</p><p>your Strikes that damage a creature in your fire elemental's reach also deal 1d6 persistent fire damage. If your fire elemental is nimble or savage, the persistent fire damage increases to 2d6.</p>",
+            "rules": {
+                "0": {
+                    "prompt": "Is companion nimble or savage."
+                },
+                "2": {
+                    "text": "Your Strikes that damage a creature  in your fire elemental's reach also deal @Damage[({item|flags.pf2e.rulesSelections.fireElementalSupportBenefit})d6[persistent,fire]] damage."
+                }
+            }
         },
         "Effect: Flying Squirrel Support Benefit": {
             "name": "Effect: Flying Squirrel Support Benefit",
@@ -168,7 +211,15 @@
         },
         "Effect: Hermit Krait Support Benefit": {
             "name": "Effect: Hermit Krait Support Benefit",
-            "description": "<p>Granted by @UUID[Compendium.pf2e-animal-companions.AC-Support.Item.u9jaNQk6QF2Tm8oe]{Hermit Krait Support Benefit}</p><p>Your Strikes that damage a creature in your hermit krait's reach also deal 1d6 persistent poison damage. If your hermit krait is nimble or savage, the persistent poison damage increases to 2d6.</p>"
+            "description": "<p>Granted by @UUID[Compendium.pf2e-animal-companions.AC-Support.Item.u9jaNQk6QF2Tm8oe]{Hermit Krait Support Benefit}</p><p>Your Strikes that damage a creature in your hermit krait's reach also deal 1d6 persistent poison damage. If your hermit krait is nimble or savage, the persistent poison damage increases to 2d6.</p>",
+            "rules": {
+                "0": {
+                    "prompt": "Is companion nimble or savage."
+                },
+                "2": {
+                    "text": "Your Strikes that damage a creature in your hermit krait's reach also deal @Damage[({item|flags.pf2e.rulesSelections.hermitKraitSupportBenefit})d6[persistent,poison]] damage."
+                }
+            }
         },
         "Effect: Hippocampus Support Benefit": {
             "name": "Effect: Hippocampus Support Benefit",
@@ -193,7 +244,15 @@
         },
         "Effect: Metal Elemental Support Benefit": {
             "name": "Effect: Metal Elemental Support Benefit",
-            "description": "<p>Granted by @UUID[Compendium.pf2e-animal-companions.AC-Support.Item.SZD1hU2ageIDw4To]{Metal Elemental Support Benefit}</p><p>Your Strikes that damage a creature in your metal elemental's reach also deal bleed damage damage.</p>"
+            "description": "<p>Granted by @UUID[Compendium.pf2e-animal-companions.AC-Support.Item.SZD1hU2ageIDw4To]{Metal Elemental Support Benefit}</p><p>Your Strikes that damage a creature in your metal elemental's reach also deal bleed damage damage.</p>",
+            "rules": {
+                "0": {
+                    "prompt": "Is companion nimble or savage."
+                },
+                "2": {
+                    "text": "Your Strikes that damage a creature in your metal elemental's reach also deal @Damage[({item|flags.pf2e.rulesSelections.metalElementalSupportBenefit})d6[bleed]] damage."
+                }
+            }
         },
         "Effect: Mole Support Benefit": {
             "name": "Effect: Mole Support Benefit",
@@ -244,7 +303,15 @@
         },
         "Effect: Pangolin Support Benefit": {
             "name": "Effect: Pangolin Support Benefit",
-            "description": "<p>Granted by @UUID[Compendium.pf2e-animal-companions.AC-Support.Item.QiQvx7jtfrkGnf13]{Pangolin Support Benefit}</p><p>Your Strikes that damage a creature in your pangolin's reach also deal 1d6 persistent bleed damage. If your pangolin is nimble or savage, the persistent bleed damage increases to 2d6.</p>"
+            "description": "<p>Granted by @UUID[Compendium.pf2e-animal-companions.AC-Support.Item.QiQvx7jtfrkGnf13]{Pangolin Support Benefit}</p><p>Your Strikes that damage a creature in your pangolin's reach also deal 1d6 persistent bleed damage. If your pangolin is nimble or savage, the persistent bleed damage increases to 2d6.</p>",
+            "rules": {
+                "0": {
+                    "prompt": "Is companion nimble or savage."
+                },
+                "2": {
+                    "text": "Your Strikes that damage a creature in your pangolin's reach also deal @Damage[({item|flags.pf2e.rulesSelections.pangolinSupportBenefit})d6[persistent,bleed]] damage."
+                }
+            }
         },
         "Effect: Retreat (Rider)": {
             "name": "Effect: Retreat (Rider)",
@@ -263,8 +330,14 @@
             "name": "Effect: Riding Drake Support Benefit",
             "description": "<p>Granted by @UUID[Compendium.pf2e-animal-companions.AC-Support.Item.C41lCXjerYjMyOTI]{Riding Drake Support Benefit}</p><p>Each time you Strike while riding the drake and hit a creature in the drake's reach, the creature takes fire damage from the drake.</p>",
             "rules": {
+                "0": {
+                    "prompt": "Is companion nimble or savage."
+                },
                 "1": {
                     "label": "Riding the Drake"
+                },
+                "2": {
+                    "text": "Each time you Strike while riding the drake and hit a creature in the drake's reach, the creature takes @Damage[({item|flags.pf2e.rulesSelections.ridingDrakeSupportBenefit})d4[fire]] damage from the drake."
                 }
             }
         },
@@ -292,7 +365,15 @@
         },
         "Effect: Scorpion Support Benefit": {
             "name": "Effect: Scorpion Support Benefit",
-            "description": "<p>Granted by @UUID[Compendium.pf2e-animal-companions.AC-Support.Item.xtXdDC5KrUqh7eCu]{Scorpion Support Benefit}</p><p>Your Strikes that damage a creature in your scorpion's reach also deal persistent poison damage.</p>"
+            "description": "<p>Granted by @UUID[Compendium.pf2e-animal-companions.AC-Support.Item.xtXdDC5KrUqh7eCu]{Scorpion Support Benefit}</p><p>Your Strikes that damage a creature in your scorpion's reach also deal persistent poison damage.</p>",
+            "rules": {
+                "0": {
+                    "prompt": "Is companion nimble or savage."
+                },
+                "2": {
+                    "text": "Your Strikes that damage a creature in your scorpion's reach also deal @Damage[({item|flags.pf2e.rulesSelections.scorpionSupportBenefit})d6[persistent,poison]] damage."
+                }
+            }
         },
         "Effect: Shadow Hound Support Benefit": {
             "name": "Effect: Shadow Hound Support Benefit",
@@ -305,11 +386,27 @@
         },
         "Effect: Shark Support Benefit": {
             "name": "Effect: Shark Support Benefit",
-            "description": "<p>Granted by @UUID[Compendium.pf2e-animal-companions.AC-Support.Item.YsLLV4J7L6fgzTXf]{Shark Support Benefit}</p><p>Each time you hit a creature in the shark's reach with a Strike and deal slashing or piercing damage, the creature takes 1d8 slashing damage from the shark.</p>"
+            "description": "<p>Granted by @UUID[Compendium.pf2e-animal-companions.AC-Support.Item.YsLLV4J7L6fgzTXf]{Shark Support Benefit}</p><p>Each time you hit a creature in the shark's reach with a Strike and deal slashing or piercing damage, the creature takes 1d8 slashing damage from the shark.</p>",
+            "rules": {
+                "0": {
+                    "prompt": "Is companion nimble or savage."
+                },
+                "2": {
+                    "text": "Each time you hit a creature in the shark's reach with a Strike and deal slashing or piercing damage, the creature takes @Damage[({item|flags.pf2e.rulesSelections.sharkSupportBenefit})d8[slashing]] damage from the shark."
+                }
+            }
         },
         "Effect: Shotalashu Support Benefit": {
             "name": "Effect: Shotalashu Support Benefit",
-            "description": "<p>Granted by @UUID[Compendium.pf2e-animal-companions.AC-Support.Item.ufAZJqCN7ZOBhMSJ]{Shotalashu Support Benefit}</p><p>Each time you hit a creature in the shotalashu's reach with a Strike, the creature takes mental damage from the shotalashu.</p>"
+            "description": "<p>Granted by @UUID[Compendium.pf2e-animal-companions.AC-Support.Item.ufAZJqCN7ZOBhMSJ]{Shotalashu Support Benefit}</p><p>Each time you hit a creature in the shotalashu's reach with a Strike, the creature takes mental damage from the shotalashu.</p>",
+            "rules": {
+                "0": {
+                    "prompt": "Is companion nimble or savage."
+                },
+                "2": {
+                    "text": "Each time you hit a creature in the shotalashu's reach with a Strike, the creature takes @Damage[({item|flags.pf2e.rulesSelections.shotalashuSupportBenefit})d6[mental]] damage from the shotalashu."
+                }
+            }
         },
         "Effect: Skeletal Constrictor Support Benefit": {
             "name": "Effect: Skeletal Constrictor Support Benefit",
@@ -343,7 +440,15 @@
         },
         "Effect: Spiked Bunker": {
             "name": "Effect: Spiked Bunker",
-            "description": "<p>Granted by @UUID[Compendium.pf2e-animal-companions.AC-Advanced-Maneuvers.Item.oyNZpuQ6EU3prvo2]{Spiked Bunker}</p><p>You gain a +2 circumstance bonus to AC. Any creature that hits you are in the Spiked Bunker takes 2d6 piercing damage (or 3d6 piercing damage if your metal elemental has a specialization).</p>"
+            "description": "<p>Granted by @UUID[Compendium.pf2e-animal-companions.AC-Advanced-Maneuvers.Item.oyNZpuQ6EU3prvo2]{Spiked Bunker}</p><p>You gain a +2 circumstance bonus to AC. Any creature that hits you are in the Spiked Bunker takes 2d6 piercing damage (or 3d6 piercing damage if your metal elemental has a specialization).</p>",
+            "rules": {
+                "0": {
+                    "prompt": "Is companion specialized?"
+                },
+                "2": {
+                    "text": "You take @Damage[({item|flags.pf2e.rulesSelections.isSpecialized})d6[piercing]] damage."
+                }
+            }
         },
         "Effect: Sundaflora Support Benefit": {
             "name": "Effect: Sundaflora Support Benefit",
@@ -364,7 +469,15 @@
         },
         "Effect: Triceratops Support Benefit": {
             "name": "Effect: Triceratops Support Benefit",
-            "description": "<p>Granted by @UUID[Compendium.pf2e-animal-companions.AC-Support.Item.TDMhLC16cQOYBbmA]{Triceratops Support Benefit}</p><p>Your Strikes that damage a prone creature in your triceratops's reach also deal persistent bleed damage.</p>"
+            "description": "<p>Granted by @UUID[Compendium.pf2e-animal-companions.AC-Support.Item.TDMhLC16cQOYBbmA]{Triceratops Support Benefit}</p><p>Your Strikes that damage a prone creature in your triceratops's reach also deal persistent bleed damage.</p>",
+            "rules": {
+                "0": {
+                    "prompt": "Is companion nimble or savage."
+                },
+                "2": {
+                    "text": "Your Strikes that damage a prone creature in your triceratops's reach also deal  @Damage[({item|flags.pf2e.rulesSelections.triceratopsSupportBenefit})d8[persistent,bleed]] damage."
+                }
+            }
         },
         "Effect: Tyrannosaurus Support Benefit": {
             "name": "Effect: Tyrannosaurus Support Benefit",
@@ -377,7 +490,15 @@
         },
         "Effect: Ulgrem-Lurann Support Benefit": {
             "name": "Effect: Ulgrem-Lurann Support Benefit",
-            "description": "<p>Granted by @UUID[Compendium.pf2e-animal-companions.AC-Support.Item.uZLtEOimbFnEDUKh]{Ulgrem-Lurann Support Benefit}</p><p>Each time you hit a creature in the Ulgrem-Lurann's reach with a Strike, the creature takes an additional piercing and electricity damage from the Ulgrem-Lurann.</p>"
+            "description": "<p>Granted by @UUID[Compendium.pf2e-animal-companions.AC-Support.Item.uZLtEOimbFnEDUKh]{Ulgrem-Lurann Support Benefit}</p><p>Each time you hit a creature in the Ulgrem-Lurann's reach with a Strike, the creature takes an additional piercing and electricity damage from the Ulgrem-Lurann.</p>",
+            "rules": {
+                "0": {
+                    "prompt": "Is companion nimble or savage."
+                },
+                "2": {
+                    "text": "Each time you hit a creature in the Ulgrem-Lurann's reach with a Strike, the creature takes additional @Damage[({item|flags.pf2e.rulesSelections.ulgremLurannSupportBenefit})d4[piercing]] and @Damage[({item|flags.pf2e.rulesSelections.ulgremLurannSupportBenefit})d4[electricity]]  damage from the Ulgrem-Lurann."
+                }
+            }
         },
         "Effect: Umbrella Mushroom Support Benefit": {
             "name": "Effect: Umbrella Mushroom Support Benefit",
@@ -399,11 +520,27 @@
         },
         "Effect: Undead Hand Support Benefit": {
             "name": "Effect: Undead Hand Support Benefit",
-            "description": "<p>Granted by @UUID[Compendium.pf2e-animal-companions.AC-Support.Item.imNJpD4afn4UrLpu]{Undead Hand Support Benefit}</p><p>Each time you hit a creature in the hand's reach with a Strike, the creature takes additional bludgeoning damage from the hand.</p>"
+            "description": "<p>Granted by @UUID[Compendium.pf2e-animal-companions.AC-Support.Item.imNJpD4afn4UrLpu]{Undead Hand Support Benefit}</p><p>Each time you hit a creature in the hand's reach with a Strike, the creature takes additional bludgeoning damage from the hand.</p>",
+            "rules": {
+                "0": {
+                    "prompt": "Is companion nimble or savage."
+                },
+                "2": {
+                    "text": "Each time you hit a creature in the hand's reach with a Strike, the creature takes @Damage[({item|flags.pf2e.rulesSelections.undeadHandSupportBenefit})d6[bludgeoning]] damage."
+                }
+            }
         },
         "Effect: Vampiric Animal Support Benefit": {
             "name": "Effect: Vampiric Animal Support Benefit",
-            "description": "<p>Granted by @UUID[Compendium.pf2e-animal-companions.AC-Support.Item.3jZOVJsYwBQ7GPDi]{Vampiric Animal Support Benefit}</p><p>Your Strikes that damage a creature in your vampiric animal's reach also deal bleed damage.</p>"
+            "description": "<p>Granted by @UUID[Compendium.pf2e-animal-companions.AC-Support.Item.3jZOVJsYwBQ7GPDi]{Vampiric Animal Support Benefit}</p><p>Your Strikes that damage a creature in your vampiric animal's reach also deal bleed damage.</p>",
+            "rules": {
+                "0": {
+                    "prompt": "Is companion nimble or savage."
+                },
+                "2": {
+                    "text": "Your Strikes that damage a creature in your vampiric animal's reach also deal  @Damage[({item|flags.pf2e.rulesSelections.vampiricAnimalSupportBenefit})d6[bleed]] damage."
+                }
+            }
         },
         "Effect: Water Elemental Support Benefit": {
             "name": "Effect: Water Elemental Support Benefit",
@@ -465,19 +602,51 @@
         },
         "Effect: Wyvern Support Benefit": {
             "name": "Effect: Wyvern Support Benefit",
-            "description": "<p>Granted by @UUID[Compendium.pf2e-animal-companions.AC-Support.Item.3ZYwTYI4ORCz4xQg]{Wyvern Support Benefit}</p><p>Your Strikes that damage a creature in your wyvern's reach also deal persistent poison damage.</p>"
+            "description": "<p>Granted by @UUID[Compendium.pf2e-animal-companions.AC-Support.Item.3ZYwTYI4ORCz4xQg]{Wyvern Support Benefit}</p><p>Your Strikes that damage a creature in your wyvern's reach also deal persistent poison damage.</p>",
+            "rules": {
+                "0": {
+                    "prompt": "Is companion nimble or savage."
+                },
+                "2": {
+                    "text": "Your Strikes that damage a creature in your wyvern's reach also deal @Damage[({item|flags.pf2e.rulesSelections.wyvernSupportBenefit})d6[persistent,poison]] damage."
+                }
+            }
         },
         "Effect: Zombie Carrion Bird Support Benefit": {
             "name": "Effect: Zombie Carrion Bird Support Benefit",
-            "description": "<p>Granted by @UUID[Compendium.pf2e-animal-companions.AC-Support.Item.zE01vpjowhoKygig]{Zombie Carrion Bird Support Benefit}</p><p>Each time you hit and deal damage to a creature that's within 10 feet of the zombie carrion bird, the creature takes an additional damage.</p>"
+            "description": "<p>Granted by @UUID[Compendium.pf2e-animal-companions.AC-Support.Item.zE01vpjowhoKygig]{Zombie Carrion Bird Support Benefit}</p><p>Each time you hit and deal damage to a creature that's within 10 feet of the zombie carrion bird, the creature takes an additional damage.</p>",
+            "rules": {
+                "0": {
+                    "prompt": "Is companion nimble or savage."
+                },
+                "2": {
+                    "text": "Each time you hit and deal damage to a creature that's within 10 feet of the zombie carrion bird, the creature takes an additional @Damage[({item|flags.pf2e.rulesSelections.zombieCarrionBirdSupportBenefit})d6[untyped]] damage."
+                }
+            }
         },
         "Effect: Zombie Mount Support Benefit": {
             "name": "Effect: Zombie Mount Support Benefit",
-            "description": "<p>Granted by @UUID[Compendium.pf2e-animal-companions.AC-Support.Item.N9fYaUuIgD6RQ7CY]{Zombie Mount Support Benefit}</p><p>Each time you Strike while riding the zombie mount and hit a creature in the zombie mount's reach, the creature takes additional damage from the zombie mount.</p>"
+            "description": "<p>Granted by @UUID[Compendium.pf2e-animal-companions.AC-Support.Item.N9fYaUuIgD6RQ7CY]{Zombie Mount Support Benefit}</p><p>Each time you Strike while riding the zombie mount and hit a creature in the zombie mount's reach, the creature takes additional damage from the zombie mount.</p>",
+            "rules": {
+                "0": {
+                    "prompt": "Is companion nimble or savage."
+                },
+                "3": {
+                    "text": "Each time you Strike while riding the zombie mount and hit a creature in the zombie mount's reach, the creature takes @Damage[({item|flags.pf2e.rulesSelections.zombieMountSupportBenefit})d4[{item|flags.pf2e.rulesSelections.zombieMountDamage}]] damage from the zombie mount."
+                }
+            }
         },
         "Effect: Zombie Support Benefit": {
             "name": "Effect: Zombie Support Benefit",
-            "description": "<p>Granted by @UUID[Compendium.pf2e-animal-companions.AC-Support.Item.yAYlM3aIRYnqx6j8]{Zombie Support Benefit}</p><p>Each time you hit a creature that's within 10 feet of the zombie and you deal damage, the creature takes an additional damage as the wound festers.</p>"
+            "description": "<p>Granted by @UUID[Compendium.pf2e-animal-companions.AC-Support.Item.yAYlM3aIRYnqx6j8]{Zombie Support Benefit}</p><p>Each time you hit a creature that's within 10 feet of the zombie and you deal damage, the creature takes an additional damage as the wound festers.</p>",
+            "rules": {
+                "0": {
+                    "prompt": "Is companion nimble or savage."
+                },
+                "2": {
+                    "text": "Each time you hit a creature that's within 10 feet of the zombie and you deal damage, the creature takes an additional @Damage[({item|flags.pf2e.rulesSelections.zombieMountSupportBenefit})d6[untyped]] damage as the wound festers."
+                }
+            }
         }
     },
     "mapping": {
