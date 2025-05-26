@@ -310,14 +310,17 @@ def process_files(folder, version, type_system):
                     try:
                         for rules in new_data['system']['rules']:
                             try:
-                                if rules['text'] != '' and "PF2E" not in rules['text'] and '{item' not in rules['text']:
+                                if (rules['text'] != ''
+                                        and not rules['text'].startswith("PF2E")
+                                        and not rules['text'].startswith("{item")
+                                        and not '@Localize' in rules['text']):
                                     transifex_dict["entries"][name]["rules"].update({rule_id: {"text": rules['text']}})
                                     flag.append('rules')
 
                             except KeyError:
                                 pass
                             try:
-                                if rules['label'] != '' and "PF2E" not in rules['label']:
+                                if rules['label'] != '' and not rules['label'].startswith("PF2E"):
                                     transifex_dict["entries"][name]["rules"].update(
                                         {rule_id: {"label": rules['label']}})
                                     flag.append('rules')
@@ -328,18 +331,21 @@ def process_files(folder, version, type_system):
                                 if rules['choices'] != '':
                                     transifex_dict["entries"][name]["rules"].update({rule_id: {"choices": {}}})
                                     choice_id = 0
+                                    try:
+                                        if not rules.get('prompt').startswith("PF2E"):
+                                            transifex_dict["entries"][name]["rules"][rule_id].update(
+                                                {"prompt": rules['prompt']})
+                                    except AttributeError:
+                                        pass
                                     for choice in rules['choices']:
                                         try:
-                                            if "PF2E" not in choice['label']:
+                                            if not choice['label'].startswith("PF2E"):
                                                 transifex_dict["entries"][name]["rules"][rule_id]["choices"].update(
                                                     {choice_id: {"label": choice['label']}})
                                                 flag.append('rules')
                                             choice_id += 1
                                         except TypeError:
                                             pass
-                                    if "PF2E" not in rules['prompt']:
-                                        transifex_dict["entries"][name]["rules"][rule_id].update(
-                                            {"prompt": rules['prompt']})
                             except KeyError:
                                 pass
                             rule_id += 1
@@ -664,6 +670,9 @@ def process_files(folder, version, type_system):
                                     type_name = f'strike-{item["system"]["weaponType"]["value"]}'
                                 except KeyError:
                                     type_name = f'strike-{item['type']}'
+                                    for trait in item["system"]["traits"]["value"]:
+                                        if trait.startswith("range"):
+                                            type_name = 'strike-ranged'
                             else:
                                 type_name = item['type']
                             item_name = f'{type_name}->{item["name"]}'
