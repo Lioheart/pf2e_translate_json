@@ -4166,6 +4166,50 @@
                 }
             }
         },
+        "Levaloch (PFS 6-17)": {
+            "name": "Levaloch (PFS 6-17)",
+            "publicNotes": "<p>Fearsome giants of jagged iron, levalochs serve in the armies of Hell as potent warriors and tenacious hunters-creatures of absolute discipline endlessly obedient to diabolical tyrants.</p>\n<hr />\n<p>There are countless legions of lawful fiends in the nine layers of Hell, warring against the celestial planes and scouring the Material Plane for souls to corrupt.</p>",
+            "allSavesBonus": "+1 status to all saves vs. magic",
+            "languagesDetails": "telepathy 100 feet",
+            "items": {
+                "strike-melee->Trident": {
+                    "name": "Trident"
+                },
+                "strike-ranged->Barbed Net": {
+                    "name": "Barbed Net"
+                },
+                "action->Telepathy 100 feet": {
+                    "name": "Telepathy 100 feet"
+                },
+                "action->Hellstrider": {
+                    "name": "Hellstrider",
+                    "description": "<p>A levaloch ignores the effects of non-magical difficult terrain. They take no damage from caltrops or from damaging terrain that deals physical, acid, or cold damage.</p>\n<p>A levaloch can move through liquids up to 5 feet deep at their full Speed.</p>"
+                },
+                "action->+1 Status to All Saves vs. Magic": {
+                    "name": "+1 Status to All Saves vs. Magic"
+                },
+                "action->Phalanx Fighter": {
+                    "name": "Phalanx Fighter",
+                    "description": "<p>All devils of equal or lower level adjacent to a levaloch gain a +1 circumstance bonus to their AC as the levaloch shields them from harm.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.KjWPSJonzrZ8jv7X]{Effect: Phalanx Fighter}</p>"
+                },
+                "action->Stable Stance": {
+                    "name": "Stable Stance",
+                    "description": "<p>A levaloch gains a +2 circumstance bonus to their Fortitude DC against being Shoved and to other saving throws to resist being moved against their will.</p>"
+                },
+                "action->Barbed Net": {
+                    "name": "Barbed Net",
+                    "description": "<p>When a levaloch hits a creature with their barbed net, the net wraps around the target, which becomes @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 1} and takes a -10-foot circumstance penalty to its Speeds. If the Strike was a critical success, the target is also @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Immobilized}.</p>\n<p>When a creature @UUID[Compendium.pf2e.actionspf2e.Item.SkZAQRkLLkmBQNB9]{Escapes} (DC 22), or if the Strike misses, the net crumbles into rust.</p>\n<p>Each time a creature attempts to Escape, it takes @Damage[1d6[slashing]] damage from the net's barbs, regardless of whether the attempt succeeds.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.HafP5vrdGdoqoFMo]{Effect: Barbed Net}</p>"
+                },
+                "action->Forge Weapon": {
+                    "name": "Forge Weapon",
+                    "description": "<p>A levaloch reforges part of their barbed iron substance into a new <em>+1 @UUID[Compendium.pf2e.equipment-srd.Item.DxCuJKynlnMQZHgp]{Striking} trident</em> or barbed net. Their previous trident crumbles to rust.</p>\n<p>When the levaloch is destroyed, any tridents or barbed nets they created crumble to rust.</p>"
+                },
+                "action->Merciless Thrust": {
+                    "name": "Merciless Thrust",
+                    "description": "<p>When a levaloch hits a creature that has the @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy}, @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled}, @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Immobilized}, or @UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{Restrained} conditions with a melee trident Strike, the Strike deals an additional [[/r 2d6]] damage.</p>"
+                }
+            }
+        },
         "Lightning Strikes (1-2)": {
             "name": "Lightning Strikes (1-2)",
             "descriptionHazard": "<p>The air grows thick as the Planes of Metal and Air both bleed into the swamp once again. A small fissure opens, causing static electricity to build and, fueled by the increased presence of metal in the area, sparks begin to fly. Electrical discharges begin to break out reaching from objects to unlucky creatures.</p>",
@@ -5989,6 +6033,7 @@
             "publicNotes": "<p>Fearsome giants of jagged iron, levalochs serve in the armies of Hell as potent warriors and tenacious hunters-creatures of absolute discipline endlessly obedient to diabolical tyrants.</p>\n<hr />\n<p>There are countless legions of lawful fiends in the nine layers of Hell, warring against the celestial planes and scouring the Material Plane for souls to corrupt.</p>",
             "allSavesBonus": "+1 status to all saves vs. magic",
             "languagesDetails": "Telepathy 100 feet",
+            "hpDetails": "fast healing 5 (deactivated by holy)",
             "items": {
                 "spellcastingEntry->Divine Innate Spells": {
                     "name": "Divine Innate Spells"
@@ -6012,6 +6057,9 @@
                 "action->+1 Status to All Saves vs. Magic": {
                     "name": "+1 Status to All Saves vs. Magic"
                 },
+                "action->Fast Healing 5 (Deactivated by Holy)": {
+                    "name": "Fast Healing 5 (Deactivated by Holy)"
+                },
                 "action->Phalanx Fighter": {
                     "name": "Phalanx Fighter",
                     "description": "<p>All devils of equal or lower level adjacent to a levaloch gain a +1 circumstance bonus to their AC as the levaloch shields them from harm.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.KjWPSJonzrZ8jv7X]{Effect: Phalanx Fighter}</p>"
@@ -6022,7 +6070,7 @@
                 },
                 "action->Barbed Net": {
                     "name": "Barbed Net",
-                    "description": "<p>When a levaloch hits a creature with their barbed net, the net wraps around the target, which becomes @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 1} and takes a -10-foot circumstance penalty to its Speeds. If the Strike was a critical success, the target is also @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Immobilized}.</p>\n<p>When a creature @UUID[Compendium.pf2e.actionspf2e.Item.SkZAQRkLLkmBQNB9]{Escapes} (DC 22), or if the Strike misses, the net crumbles into rust.</p>\n<p>Each time a creature attempts to Escape, it takes @Damage[1d6[slashing]] damage from the net's barbs, regardless of whether the attempt succeeds.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.HafP5vrdGdoqoFMo]{Effect: Barbed Net}</p>"
+                    "description": "<p>When a levaloch hits a creature with their barbed net, the net wraps around the target, which becomes @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 1} and takes a -10-foot circumstance penalty to its Speeds. If the Strike was a critical success, the target is also @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Immobilized}.</p>\n<p>When a creature @UUID[Compendium.pf2e.actionspf2e.Item.SkZAQRkLLkmBQNB9]{Escapes} (DC 23), or if the Strike misses, the net crumbles into rust.</p>\n<p>Each time a creature attempts to Escape, it takes @Damage[1d6[slashing]] damage from the net's barbs, regardless of whether the attempt succeeds.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.HafP5vrdGdoqoFMo]{Effect: Barbed Net}</p>"
                 },
                 "action->Forge Warshard Weapon": {
                     "name": "Forge Warshard Weapon",
