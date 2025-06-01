@@ -491,14 +491,14 @@ def process_files(folders, version, type_system):
                     try:
                         for rules in new_data['system']['rules']:
                             try:
-                                if rules['text'] != '' and "PF2E" not in rules['text'] and '{item' not in rules['text']:
+                                if rules['text'] != '' and not rules['text'].startswith("PF2E") and not rules['text'].startswith("{item"):
                                     transifex_dict["entries"][name]["rules"].update({rule_id: {"text": rules['text']}})
                                     flag.append('rules')
 
                             except KeyError:
                                 pass
                             try:
-                                if rules['label'] != '' and "PF2E" not in rules['label']:
+                                if rules['label'] != '' and not rules['label'].startswith("PF2E"):
                                     transifex_dict["entries"][name]["rules"].update(
                                         {rule_id: {"label": rules['label']}})
                                     flag.append('rules')
@@ -509,18 +509,21 @@ def process_files(folders, version, type_system):
                                 if rules['choices'] != '':
                                     transifex_dict["entries"][name]["rules"].update({rule_id: {"choices": {}}})
                                     choice_id = 0
+                                    try:
+                                        if not rules.get('prompt').startswith("PF2E") :
+                                            transifex_dict["entries"][name]["rules"][rule_id].update(
+                                                {"prompt": rules['prompt']})
+                                    except AttributeError:
+                                        pass
                                     for choice in rules['choices']:
                                         try:
-                                            if "PF2E" not in choice['label']:
+                                            if not choice['label'].startswith("PF2E"):
                                                 transifex_dict["entries"][name]["rules"][rule_id]["choices"].update(
                                                     {choice_id: {"label": choice['label']}})
                                                 flag.append('rules')
                                             choice_id += 1
                                         except TypeError:
                                             pass
-                                    if "PF2E" not in rules['prompt']:
-                                        transifex_dict["entries"][name]["rules"][rule_id].update(
-                                            {"prompt": rules['prompt']})
                             except KeyError:
                                 pass
                             rule_id += 1
@@ -1359,6 +1362,28 @@ else:
 move_files(fr'{extract_folder}/pf2e-kingmaker-tools/packs', fr'{extract_folder}/packs')
 read_leveldb_to_json(fr'{extract_folder}\packs', fr'{extract_folder}\output')
 # === === === === === === === === === === === === === === === === === === === === === === === === === === === === ===
+# Addons18
+# Ścieżka do pliku z wersją addon18
+add_18_url = "https://github.com/FreedomIronbullet/pf2e-variant-cantrips/releases/latest/download/module.json"
+
+path_18, headers_18 = urlretrieve(add_18_url, 'module_18.json')
+version_18 = 'addon_18_' + json.loads(open('module_18.json', 'r', encoding='utf-8').read())["version"]
+zip_addons18_filename = "pf2e-variant-cantrips.zip"
+zip_addons18 = 'https://github.com/FreedomIronbullet/pf2e-variant-cantrips/releases/latest/download/module.zip'
+extract_folder = 'pack_addon_18'
+print()
+print("*** Wersja dodatku_18 PF2E: ", version_18, " ***")
+
+if create_version_directory(version_18):
+    download_and_extract_zip(zip_addons18, zip_addons18_filename, extract_folder)
+else:
+    with zipfile.ZipFile(zip_addons18_filename, 'r') as zip_ref:
+        zip_ref.extractall(extract_folder)
+
+move_files(fr'{extract_folder}/pf2e-variant-cantrips/packs', fr'{extract_folder}/packs')
+read_leveldb_to_json(fr'{extract_folder}\packs', fr'{extract_folder}\output')
+# === === === === === === === === === === === === === === === === === === === === === === === === === === === === ===
+
 # folder = 'pack'
 # process_files(folder, version, 'system')
 print('\n*** KONWERSJA ***\n')
@@ -1416,6 +1441,9 @@ process_files(folder, version_16, "pf2e-relics")
 
 folder = r'pack_addon_17/output'
 process_files(folder, version_17, "pf2e-kingmaker-tools")
+
+folder = r'pack_addon_18/output'
+process_files(folder, version_18, "pf2e-variant-cantrips")
 
 copy_addon_folders()
 clean()

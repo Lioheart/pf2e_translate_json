@@ -1,0 +1,57 @@
+{
+    "label": "Variant-Spells",
+    "folders": {
+        "Spell Effects": "Spell Effects",
+        "Remaster Cantrips": "Remaster Cantrips"
+    },
+    "entries": {
+        "Blaze": {
+            "name": "Blaze",
+            "description": "<p><strong>Replaces @UUID[Compendium.pf2e.spells-srd.Item.6DfLZBl8wKIV03Iq]{Ignition}</strong></p><p></p><p>You snap your fingers and point at a target, which begins to smolder. Make a spell attack roll against the target's AC, dealing 2d6 fire damage on a hit. If the target is within your melee reach, you can choose to make a melee spell attack with the flame instead of a ranged spell attack, which increases all the spell's damage dice to d8s.</p><hr /><p><strong>Critical Success</strong> The target takes double damage and 1d4 persistent fire damage.</p><p><strong>Success</strong> The target takes full damage.</p><hr /><p><strong>Heightened (+1)</strong> The initial damage increases by 1d6 and the persistent fire damage on a critical hit increases by 1d4.</p><p>@Damage[(@item.rank)d4[persistent,fire]]{Scaling Persistent Fire Damage}</p><p>@Damage[(@item.rank)d6[persistent,fire]]{Scaling Persistent Fire Damage (Melee)}</p>"
+        },
+        "Chant": {
+            "name": "Chant",
+            "description": "<p><strong>Replaces @UUID[Compendium.pf2e.spells-srd.Item.b5BQbwmuBhgPXTyi]{Haunting Hymn}</strong></p><p></p><p>You echo a jarring hymn that only creatures in the area can hear. The hymn deals 2d4 with a basic Fortitude save. If a target critically fails the save, it's also @UUID[Compendium.pf2e.conditionitems.Item.9PR9y0bi4JPKnHPR]{Deafened} for 1 minute.</p><hr /><p><strong>Heightened (+1)</strong> The damage increases by 1d4.</p>"
+        },
+        "Cleanse": {
+            "name": "Cleanse",
+            "description": "<p><strong>Replaces</strong> @UUID[Compendium.pf2e.spells-srd.Item.kcelf6IHl3L9VXXg]{Vitality Lash}</p><p></p><p>You demolish the target's corrupted essence with energy from Creation's Forge. You deal vitality damage equal to 2d8 with a basic Fortitude save. If the creature critically fails the save, it is also @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 1} until the start of your next turn.</p><hr /><p><strong>Heightened (+1)</strong> The damage increases by 1d8.</p>"
+        },
+        "Dissolve": {
+            "name": "Dissolve",
+            "description": "<p><strong>Replaces</strong> @UUID[Compendium.pf2e.spells-srd.Item.thAHF1zxNplLCJPO]{Caustic Blast} and @UUID[Compendium.pf2e.spells-srd.Item.gISYsBFby1TiXfBt]{Acid Splash}</p><p></p><p>You fling a large glob of acid that immediately detonates, spraying nearby creatures. Creatures in the area take 2d4 acid damage with a basic Reflex save; on a critical failure, the creature also takes <a class=\"inline-roll roll\" draggable=\"true\" data-formula=\"{1[acid,persistent]}\" data-base-formula=\"(1+floor((@item.rank )/2))[persistent,acid]\" data-damage-roll=\"(1+floor((@item.rank )/2))[persistent,acid]\" data-traits=\"acid,cantrip,concentrate,manipulate\" data-item-id=\"9La62tVrVKGK506h\" data-persistent>1 persistent acid</a> damage.</p><hr /><p><strong>Heightened (+1)</strong> The initial damage increases by 1d4, and the persistent damage on a critical failure increases by 1.</p><h5> </h5>"
+        },
+        "Freeze": {
+            "name": "Freeze",
+            "description": "<p><strong>Replaces </strong>@UUID[Compendium.pf2e.spells-srd.Item.gYjPm7YwGtEa1oxh]{Ray of Frost} and @UUID[Compendium.pf2e.spells-srd.Item.IxhGEKl63R4QBvkj]{Frostbite}</p><p></p><p>An orb of biting cold coalesces around your target, freezing its body. The target takes 2d6 cold damage with a basic Fortitude save.</p><p></p><hr /><p><strong>Critical Success</strong> The creature is unaffected.</p><p><strong>Success</strong> The creature takes half damage.</p><p><strong>Failure</strong> The creature takes full damage and takes a -5 foot status penalty to its speeds until the start of your next turn. @UUID[Compendium.pf2e-variant-cantrips.variant-spells.Item.cdcEZpMaDhNBGARS]{Spell Effect: Freeze -5 Speed}</p><p><strong>Critical Failure</strong> The creature takes double damage, gains weakness 1 to bludgeoning, and takes a -10 foot status penalty to its speeds until the start of your next turn.</p><p>@UUID[Compendium.pf2e-variant-cantrips.variant-spells.Item.RlrvMxaqytg6cOM7]{Spell Effect: Freeze Weakness}</p><p>@UUID[Compendium.pf2e-variant-cantrips.variant-spells.Item.Ob1aAInUML4GLDXR]{Spell Effect: Freeze -10 Speed}</p><hr /><p><strong>Heightened (+1)</strong> The damage increases by 1d6 and the weakness on a critical failure increases by 1.</p>"
+        },
+        "Gush": {
+            "name": "Gush",
+            "description": "<p><strong>Replaces </strong>@UUID[Compendium.pf2e.spells-srd.Item.eSL5hVT9gXrnRLtd]{Spout}</p><p></p><p>Water blasts upward, coming out of the ground, rising from a pool, or even manifesting from thin air. Any creatures in the area take 2d6, with a basic Reflex saving throw. A creature that critically fails its save is disoriented by the explosion of water, becoming @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} until the end of your next turn.</p><p>You can change this spell's area to a @Template[burst|distance:5], provided you center the burst in a body of water. This body of water can be as small as a pond or creek, but not as small as a puddle or bathtub.</p><hr /><p><strong>Heightened (+1)</strong> The damage increases by 1d6.</p>"
+        },
+        "Intoxicate": {
+            "name": "Intoxicate",
+            "description": "<p><strong>Replaces @UUID[Compendium.pf2e.spells-srd.Item.D7ZEhTNIDWDLC2J4]{Puff of Poison}</strong></p><p></p><p><span style=\"font-family:Roboto, sans-serif\">You exhale a shimmering cloud of toxic breath at an enemy's face. The target takes 2d4 poison damage and </span>@Damage[(ceil(@item.level))[persistent,poison]]<span style=\"font-family:Roboto, sans-serif\">, depending on its Fortitude save.</span></p><hr style=\"box-sizing:border-box;user-select:text;scrollbar-width:initial;scrollbar-color:initial;border-right:none;border-left:none;border-image:initial;border-top:1px solid var(--app-border-color);border-bottom:1px solid var(--app-border-color);color:rgb(239, 230, 216);font-family:Roboto, sans-serif;font-size:14px;font-style:normal;font-variant-ligatures:normal;font-variant-caps:normal;font-weight:400;letter-spacing:normal;orphans:2;text-align:start;text-indent:0px;text-transform:none;widows:2;word-spacing:0px;-webkit-text-stroke-width:0px;white-space:normal;text-decoration-thickness:initial;text-decoration-style:initial;text-decoration-color:initial\" /><p><strong>Critical Success</strong> The creature is unaffected.</p><p><strong>Success</strong> The target takes half initial damage and persistent damage.</p><p><strong>Failure</strong> The target takes full initial and persistent damage.</p><p><strong>Critical Failure</strong> The target takes double initial and persistent damage.</p><hr /><p><strong>Heightened (+1)</strong> The initial poison damage increases by 1d4, and the persistent poison damage increases by 1.</p>"
+        },
+        "Spell Effect: Freeze -10 Speed": {
+            "name": "Spell Effect: Freeze -10 Speed",
+            "description": "<p>Granted by @UUID[Item.eKUoT3rSRfTMPPPu]{Freeze}</p><p>You take a -10-foot status penalty to your Speeds.</p>"
+        },
+        "Spell Effect: Freeze -5 Speed": {
+            "name": "Spell Effect: Freeze -5 Speed",
+            "description": "<p>Granted by @UUID[Item.eKUoT3rSRfTMPPPu]{Freeze}</p><p></p><p>You take a -5-foot status penalty to your Speeds.</p>"
+        },
+        "Spell Effect: Freeze Weakness": {
+            "name": "Spell Effect: Freeze Weakness",
+            "description": "<p>Granted by @UUID[Item.eKUoT3rSRfTMPPPu]{Freeze}</p><p>The target gains weakness to bludgeoning equal to the spell rank.</p>"
+        },
+        "Stagger": {
+            "name": "Stagger",
+            "description": "<p><strong>Replaces</strong> <span style=\"font-family:Roboto\">@UUID[Compendium.pf2e.spells-srd.Item.4gBIw4IDrSfFHik4]{Daze}</span></p><p></p><p>You deal mental damage equal to 2d6 with a basic Will save. If the target critically fails the save, it is also <a class=\"content-link\" draggable=\"true\" data-link data-uuid=\"Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix\" data-id=\"dfCMdR4wnpbYNTix\" data-type=\"Item\" data-pack=\"pf2e.conditionitems\" data-tooltip=\"Condition Item\">Stunned 1</a>.</p><hr /><p><strong>Heightened (+1)</strong> The damage increases by 1d6.</p><h5> </h5>"
+        },
+        "Void Rot": {
+            "name": "Void Rot",
+            "description": "<p><strong>Replaces</strong> @UUID[Compendium.pf2e.spells-srd.Item.mAMEt4FFbdqoRnkN]{Void Warp}</p><p></p><p><strong>Living Creature</strong> The spell deals void damage equal to 2d6 with a basic Fortitude save. On a critical failure the target is also @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 1} for 1 round .</p><p><strong>Undead Creature</strong> The target is @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} for 1 round on a failed Fortitude save. On a critical failure, the target is also @UUID[Compendium.pf2e.conditionitems.Item.sDPxOjQ9kx2RZE8D]{Fleeing} for 1 round unless it succeeds at a Will save.</p><hr /><p><strong>Heightened (+1)</strong> The void damage to living creatures increases by 1d6.</p>"
+        }
+    }
+}
