@@ -33,6 +33,10 @@
             "name": "Fiendish Temptation",
             "description": "<p><strong>Frequency</strong> once per day.</p><hr /><p><strong>Effect</strong> The imp offers a non-fiend within 15 feet a bargain, granting a boon of good luck @UUID[Compendium.pf2e-specific-familiars.specific-familiars-effects.Item.0zZUwMQW9bgJ2sZd]{Fiendish Temptation} if the creature accepts. The boon lasts for 1 hour once accepted.</p><p>Once during the hour, the creature can roll an attack roll or saving throw twice and use the higher result.</p><p>If the creature dies while the boon is in place, the imp decides where the creature's soul travels. This typically makes the soul bound for eternity in the imp's home plane, and the creature is unable to be raised or resurrected except by the @UUID[Compendium.pf2e.spells-srd.Item.6dDtGIUerazSHIOu]{Wish} ritual or similar magic.</p>"
         },
+        "Forage": {
+            "name": "Forage",
+            "description": "<p><strong>Frequency</strong> once per 10 minutes</p><hr /><p><strong>Effect</strong> A grindle-drake is adept at finding sustenance for itself in almost any environment. The grindle-drake recovers a number of Hit Points equal to half your level.</p><p>@Damage[(floor(@actor.master.level/2))[healing]]</p>"
+        },
         "Gibe": {
             "name": "Gibe",
             "description": "<p><strong>Frequency</strong> once per round</p><hr /><p><strong>Effect</strong> The mockingfey takes on the imperfect, illusory appearance of a creature it can see within 60 feet, pantomiming the mannerisms in a derisive fashion. This illusion doesn't make the mockingfey look any larger and lasts until the end of your next turn.<br />The creature must attempt a @Check[type:will|dc:resolve(@actor.master.attributes.classOrSpellDC.value)] save against your class DC or spell DC, whichever is the higher. Regardless of the result, the creature is immune for 1 minute.</p><p><strong>Success</strong> The creature is unaffected</p><p><strong>Failure</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{off-guard} until the start of your next turn, as it's distracted by your familiar's taunts.</p><p><strong>Critical Failure</strong> The creature is off-guard until the end of your next turn</p><p></p>"
@@ -76,6 +80,10 @@
         "Steam Screen": {
             "name": "Steam Screen",
             "description": "<p><strong>Frequency</strong> once per minute;</p><hr /><p><strong>Effect</strong> Your clockwork familiar blows a billowing plume of steam into its square around itself. It gains a +1 circumstance bonus to its Intimidation checks, and any creature in the familiar's square has concealment, though creatures in the square can't use this concealment to Hide or Sneak.</p><p>The steam and its effects remain for 1 round.</p><p>To use this ability, your clockwork familiar must spend 1 hour of operational time.</p>"
+        },
+        "Sure and Steady": {
+            "name": "Sure and Steady",
+            "description": "<p>When placing all six legs on any ground or on stone flooring, a grindle-drake can extract knowledge about the surface under its feet in a <span style=\"font-family:ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace\">@Template[type:emanation|distance:10]</span> in all directions. This knowledge can include whether the ground is enchanted, hollow, treacherous, or otherwise different than it appears. The grindle-drake can then communicate this information through touch telepathy.</p>"
         },
         "Toggle Standby Mode": {
             "name": "Toggle Standby Mode",
