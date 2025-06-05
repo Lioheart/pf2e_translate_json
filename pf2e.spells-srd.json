@@ -4,16 +4,16 @@
         "10th Rank": "10th Rank",
         "1st Rank": "1st Rank",
         "2nd Rank": "2nd Rank",
-        "3rd Rank": "3rd Rank",
         "4th Rank": "4th Rank",
-        "5th Rank": "5th Rank",
         "6th Rank": "6th Rank",
         "7th Rank": "7th Rank",
         "8th Rank": "8th Rank",
         "9th Rank": "9th Rank",
         "Cantrip": "Cantrip",
         "Focus": "Focus",
-        "Ritual": "Ritual"
+        "Ritual": "Ritual",
+        "3rd Rank": "3rd Rank",
+        "5th Rank": "5th Rank"
     },
     "entries": {
         "500 Toads": {
@@ -61,7 +61,7 @@
             "name": "Achaekek's Clutch",
             "description": "<p>You mark the holy symbol of Achaekek in a visible location on the target's body.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target is marked by Achaekek's symbol. For 1 minute, the first time per round that the target gains @UUID[Compendium.pf2e.conditionitems.Item.lDVqvLKA6eF3Df60]{Persistent Bleed Damage}, they immediately take that amount of slashing damage as the mantis claws grow off the symbol and rake them.</p>\n<p><strong>Failure</strong> As success, but the curse has an unlimited duration.</p>\n<p><strong>Critical Failure</strong> As failure, but the DC on the target's flat check to remove persistent bleed damage increases to 20 (15 with particularly effective assistance).</p>",
             "range": "30 feet",
-            "target": "1 Creature",
+            "target": "1 creature",
             "time": "2"
         },
         "Acid Arrow": {
@@ -642,6 +642,14 @@
             "primarycheck": "Nature or Religion (expert)",
             "secondarycheck": "Nature or Religion (whichever is used for the primary check)"
         },
+        "Attacked from Within": {
+            "name": "Attacked from Within",
+            "description": "<p>You assert your power over the target's own spirit as you reach deep into its soul in order to discover a moment of excruciating anguish, debilitating humiliation, or abject despair. The target takes 12d8 spirit damage and must attempt a Will save.</p><hr /><p><strong>Critical Success</strong> The target takes no damage, with a brief sensation of pain followed by a pleasant memory.</p>\n<p><strong>Success</strong> The target takes half damage and is @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 1}.</p>\n<p><strong>Failure</strong> The target takes full damage and is @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 2}.</p>\n<p><strong>Critical Failure</strong> The target takes double damage and is frightened 2 and @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} for 1 round.</p><hr /><p><strong>Heightened (+1)</strong> The damage increases by 2d8.</p>",
+            "duration": "varies",
+            "range": "30 feet",
+            "target": "1 creature",
+            "time": "2"
+        },
         "Augmented Body": {
             "name": "Augmented Body",
             "description": "<p>You magically augment your body with clockwork parts and magitech innovations. Choose any one effect of your choice. You can Dismiss the spell.</p><ul><li><strong>Ablative Plating</strong> You coat your body with metal plates that protect your vital organs. You gain resistance 1 to physical damage.</li><li><strong>Clockwork Arm</strong> You transform one of your arms into a clockwork arm powered by gears, springs, and pneumatic actuators. You gain a clockwork fist unarmed attack, which has the agile, finesse, and free-hand traits and deals 1d6 bludgeoning damage.</li><li><strong>Spined Fingertips</strong> Your fingers sprout microscopic metal spines that enable you to cling to surfaces like a spider. You gain a climb Speed of 20 feet.</li><li><strong>Spring-Loaded Legs</strong> Your leg muscles are augmented with powerful springs. You gain a +10-foot status bonus to your Speed and double the distance you @UUID[Compendium.pf2e.actionspf2e.Item.d5I6018Mci2SWokk]{Leap}.</li></ul><p>@UUID[Compendium.pf2e.spell-effects.Item.CVR6mkf5bVIK9KjU]{Spell Effect: Augmented Body}</p><hr /><p><strong>Heightened (3rd)</strong> The ablative plating's resistance increases to 2. The clockwork fist is a +1 striking weapon.</p>\n<p><strong>Heightened (5th)</strong> The ablative plating's resistance increases to 3, and the clockwork fist is a +2 striking weapon.</p>\n<p><strong>Heightened (7th)</strong> The ablative plating's resistance increases to 4, and the clockwork fist is a +2 greater striking weapon.</p>\n<p><strong>Heightened (9th)</strong> The ablative plating's resistance increases to 5 and the clockwork fist is a +3 major striking weapon.</p>",
@@ -664,6 +672,24 @@
             "description": "<p>You transform into an avatar of your deity, assuming a Huge battle form. You have hands in this battle form and can take manipulate actions. You can Dismiss this spell. You gain the following statistics and abilities regardless of which deity's battle form you assume:</p>\n<ul>\n<li>AC = 25 + your level. Ignore your armor's check penalty and Speed reduction.</li>\n<li>30 temporary Hit Points.</li>\n<li>Darkvision.</li>\n<li>One or more attacks specific to your deity's battle form, which are the only attacks you can @UUID[Compendium.pf2e.actionspf2e.Item.VjxZFuUXrCU94MWR]{Strike} with. You're trained with them. Your attack modifier is +33, and you use the listed damage. Melee attacks are Strength based (for the purposes of the @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled} condition, for example) unless they have the finesse trait, and all ranged attacks are Dexterity based.</li>\n<li>Athletics modifier of +35, unless your own is higher.</li>\n</ul>\n<hr />\n<p>You also gain the specific abilities listed for your deity below:</p>\n<ul>\n<li><strong>Abadar</strong>\n<ul>\n<li>Speed 50 feet, burrow Speed 30 feet, immune to @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Immobilized};</li>\n<li><strong>Ranged</strong> <span class=\"action-glyph\">a</span> crossbow (range increment 120 feet, reload 1), <strong>Damage</strong> 6d10+3 piercing.</li>\n</ul>\n</li>\n<li><strong>Achaekek</strong>\n<ul>\n<li>Speed 70 feet, climb Speed 50 feet, ignore difficult terrain and greater difficult terrain;</li>\n<li><strong>Melee</strong> <span class=\"action-glyph\">a</span> mantis claw (agile, backswing, finesse, reach 15 feet, versatile P), <strong>Damage</strong> 6d8+6 slashing;</li>\n<li><strong>Ranged</strong> <span class=\"action-glyph\">a</span> spine volley (range 60 feet), <strong>Damage</strong> 6d6+3 piercing</li>\n</ul>\n</li>\n<li><strong>Asmodeus</strong>\n<ul>\n<li>Speed 70 feet, fly;</li>\n<li><strong>Melee</strong> <span class=\"action-glyph\">a</span> mace (reach 15 feet), <strong>Damage</strong> 6d10+6 bludgeoning;</li>\n<li><strong>Ranged</strong> <span class=\"action-glyph\">a</span> hell fire (range 120 feet), <strong>Damage</strong> 6d6+3 fire.</li>\n</ul>\n</li>\n<li><strong>Calistria</strong>\n<ul>\n<li>Speed 30 feet, fly Speed 70 feet;</li>\n<li><strong>Melee</strong> <span class=\"action-glyph\">a</span> whip (disarm, finesse, nonlethal, reach 20 feet), <strong>Damage</strong> 6d4+6 slashing;</li>\n<li><strong>Ranged</strong> <span class=\"action-glyph\">a</span> savored sting (range 60 feet), <strong>Damage</strong> 6d6+3 poison.</li>\n</ul>\n</li>\n<li><strong>Cayden Cailean</strong>\n<ul>\n<li>Speed 70 feet, fly, ignore difficult terrain and greater difficult terrain;</li>\n<li><strong>Melee</strong> <span class=\"action-glyph\">a</span> rapier (deadly 3d8, reach 15 feet), <strong>Damage</strong> 6d6+6 piercing;</li>\n<li><strong>Ranged</strong> <span class=\"action-glyph\">a</span> ale splash (range 120 feet), <strong>Damage</strong> 6d6+3 poison.</li>\n</ul>\n</li>\n<li><strong>Desna</strong>\n<ul>\n<li>Speed 30 feet, fly Speed 70 feet;</li>\n<li><strong>Melee</strong> <span class=\"action-glyph\">a</span> starknife (agile, deadly 3d4, finesse, reach 15 feet, silver, thrown 60 feet), <strong>Damage</strong> 6d4+6 piercing;</li>\n<li><strong>Ranged</strong> <span class=\"action-glyph\">a</span> moonbeam (range 120 feet, silver), <strong>Damage</strong> 6d6+3 fire.</li>\n</ul>\n</li>\n<li><strong>Erastil</strong>\n<ul>\n<li>Speed 70 feet, fly, ignore difficult terrain and greater difficult terrain;</li>\n<li><strong>Ranged</strong> <span class=\"action-glyph\">a</span> longbow (deadly 3d8, range increment 150 feet), <strong>Damage</strong> 6d8+3 piercing.</li>\n</ul>\n</li>\n<li><strong>Gorum</strong>\n<ul>\n<li>Speed 70 feet, immune to @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Immobilized};</li>\n<li><strong>Melee</strong> <span class=\"action-glyph\">a</span> greatsword (versatile P, reach 15 feet), <strong>Damage</strong> 6d12+6 slashing.</li>\n</ul>\n</li>\n<li><strong>Gozreh</strong>\n<ul>\n<li>no land Speed, fly Speed 70 feet, swim Speed 70 feet, ignore difficult terrain and greater difficult terrain;</li>\n<li><strong>Melee</strong> <span class=\"action-glyph\">a</span> waves (reach 15 feet, shove, thrown 20 feet), <strong>Damage</strong> 6d8+6 bludgeoning;</li>\n<li><strong>Ranged</strong> <span class=\"action-glyph\">a</span> wind (versatile electricity, range 120 feet), <strong>Damage</strong> 6d6+3 bludgeoning.</li>\n</ul>\n</li>\n<li><strong>Iomedae</strong>\n<ul>\n<li>Speed 70 feet, fly; shield (15 Hardness, can't be damaged);</li>\n<li><strong>Melee</strong> <span class=\"action-glyph\">a</span> longsword (versatile P, reach 15 feet), <strong>Damage</strong> 6d8+6 slashing.</li>\n</ul>\n</li>\n<li><strong>Irori</strong>\n<ul>\n<li>Speed 80 feet, fly;</li>\n<li><strong>Melee</strong> <span class=\"action-glyph\">a</span> unfettered strike (agile, versatile P or S, finesse, reach 15 feet), <strong>Damage</strong> 6d8+6 bludgeoning;</li>\n<li><strong>Ranged</strong> <span class=\"action-glyph\">a</span> wind strike (range 60 feet), <strong>Damage</strong> 6d4+6 bludgeoning.</li>\n</ul>\n</li>\n<li><strong>Lamashtu</strong>\n<ul>\n<li>Speed 30 feet, fly Speed 70 feet;</li>\n<li><strong>Melee</strong> <span class=\"action-glyph\">a</span> falchion (forceful, reach 15 feet), <strong>Damage</strong> 6d10+6 slashing;</li>\n<li><strong>Ranged</strong> <span class=\"action-glyph\">a</span> waters of Lamashtu (range 120 feet), <strong>Damage</strong> 6d6+3 poison.</li>\n</ul>\n</li>\n<li><strong>Nethys</strong>\n<ul>\n<li>Speed 70 feet, fly;</li>\n<li><strong>Ranged</strong> <span class=\"action-glyph\">a</span> raw magic (range 120 feet; versatile cold, electricity, or fire), <strong>Damage</strong> 6d6 force.</li>\n</ul>\n</li>\n<li><strong>Norgorber</strong>\n<ul>\n<li>Speed 70 feet, fly, ignore difficult terrain and greater difficult terrain;</li>\n<li><strong>Melee</strong> <span class=\"action-glyph\">a</span> shortsword (agile, finesse, versatile S, reach 15 feet), <strong>Damage</strong> 6d6+6 piercing;</li>\n<li><strong>Ranged</strong> <span class=\"action-glyph\">a</span> blackfinger toss (range 120 feet), <strong>Damage</strong> 6d6+3 poison.</li>\n</ul>\n</li>\n<li><strong>Pharasma</strong>\n<ul>\n<li>Speed 70 feet, fly;</li>\n<li><strong>Melee</strong> <span class=\"action-glyph\">a</span> dagger (agile, finesse, reach 15 feet, thrown 40 feet), <strong>Damage</strong> 6d6+6 slashing;</li>\n<li><strong>Ranged</strong> <span class=\"action-glyph\">a</span> spiral blast (range 120 feet, damages only undead), <strong>Damage</strong> 6d8+3 vitality.</li>\n</ul>\n</li>\n<li><strong>Rovagug</strong>\n<ul>\n<li>Speed 50 feet, burrow Speed 30 feet, immune to @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Immobilized};</li>\n<li><strong>Melee</strong> <span class=\"action-glyph\">a</span> jaws (reach 15 feet), <strong>Damage</strong> 6d12+6 piercing;</li>\n<li><strong>Melee</strong> <span class=\"action-glyph\">a</span> leg (agile, versatile P, reach 15 feet), <strong>Damage</strong> 6d8+6 bludgeoning.</li>\n</ul>\n</li>\n<li><strong>Sarenrae</strong>\n<ul>\n<li>Speed 30 feet, fly Speed 70 feet;</li>\n<li><strong>Melee</strong> <span class=\"action-glyph\">a</span> scimitar (forceful, nonlethal, reach 15 feet), <strong>Damage</strong> 6d6+6 slashing;</li>\n<li><strong>Ranged</strong> <span class=\"action-glyph\">a</span> everflame (nonlethal, range 120 feet), <strong>Damage</strong> 6d6+3 fire.</li>\n</ul>\n</li>\n<li><strong>Shelyn</strong>\n<ul>\n<li>Speed 70 feet, fly, ignore difficult terrain and greater difficult terrain;</li>\n<li><strong>Melee</strong> <span class=\"action-glyph\">a</span> glaive (deadly 3d8, nonlethal, reach 20 feet), <strong>Damage</strong> 6d8+6 slashing;</li>\n<li><strong>Ranged</strong> <span class=\"action-glyph\">a</span> melody of inner beauty, (nonlethal, range 120 feet), <strong>Damage</strong> 6d6+3 sonic.</li>\n</ul>\n</li>\n<li><strong>Torag</strong>\n<ul>\n<li>Speed 50 feet, burrow Speed 30 feet, immune to @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Immobilized}; shield (15 Hardness, can't be damaged);</li>\n<li><strong>Melee</strong> <span class=\"action-glyph\">a</span> warhammer (reach 15 feet, shove), <strong>Damage</strong> 6d8+6 bludgeoning.</li>\n</ul>\n</li>\n<li><strong>Urgathoa</strong>\n<ul>\n<li>Speed 70 feet, fly;</li>\n<li><strong>Melee</strong> <span class=\"action-glyph\">a</span> scythe (deadly 3d10, trip, reach 15 feet), <strong>Damage</strong> 6d10+6 slashing;</li>\n<li><strong>Ranged</strong> <span class=\"action-glyph\">a</span> pallid plague (range 120 feet), <strong>Damage</strong> 6d6+3 void.</li>\n</ul>\n</li>\n<li><strong>Zon-Kuthon</strong>\n<ul>\n<li>Speed 70 feet, fly, ignore difficult terrain and greater difficult terrain;</li>\n<li><strong>Melee</strong> <span class=\"action-glyph\">a</span> spiked chain (disarm, trip, reach 15 feet), <strong>Damage</strong> 6d8+6 slashing;</li>\n<li><strong>Ranged</strong> <span class=\"action-glyph\">a</span> midnight pain (mental, nonlethal, range 120 feet), <strong>Damage</strong> 6d6+3 mental.</li>\n</ul>\n</li>\n</ul>",
             "duration": "1 minute",
             "time": "2"
+        },
+        "Avenging Wildwood": {
+            "name": "Avenging Wildwood",
+            "description": "<p>A Medium tree sprouts in an unoccupied square within range, its branches capable of striking out at your foes. This animated tree uses your spell attack modifier for its attack rolls and your spell DC for its AC. Its saving throw modifiers are equal to your spell DC \u2013 10, and it has 20 Hit Points. Other creatures can't occupy its space, but allies can pass through its space. When you Cast the Spell and each time you Sustain it, you can have the tree make a branches Strike against a creature within 15 feet of it, dealing 2d8 bludgeoning, piercing, or slashing damage. You choose the damage type each time.</p>\n<p>If the tree is in soil and survives to the end of the spell's duration, it remains as an ordinary, non-magical tree and continues to grow and thrive. The GM might determine that the tree disappears immediately in certain inhospitable situations.</p><hr /><p><strong>Heightened (+2)</strong> The animated tree has 10 additional Hit Points, and its branches Strike deals 1d8 additional damage.</p>",
+            "duration": "1 minute",
+            "range": "60 feet",
+            "time": "3",
+            "spellVariants": {
+                "D7cGOyqd1MvtKMWJ": {
+                    "name": "Avenging Wildwood (Slashing)"
+                },
+                "PECGNRQBBib856OP": {
+                    "name": "Avenging Wildwood (Piercing)"
+                },
+                "UvAHpAnnmzss17Wp": {
+                    "name": "Avenging Wildwood (Bludgeoning)"
+                }
+            }
         },
         "Awaken Animal": {
             "name": "Awaken Animal",
@@ -1491,6 +1517,11 @@
             "range": "120 feet",
             "target": "1 creature",
             "time": "2"
+        },
+        "Capital Dividend": {
+            "name": "Capital Dividend",
+            "description": "<p><strong>Trigger</strong> You would be reduced to 0 Hit Points but not immediately killed.</p><hr /><p>Through diet and other strict regimens, you've fortified your body as Kalistrade's teachings have fortified your mind. You remain at 1 Hit Point, and your skin takes on a slight warm glow.</p>\n<p>For the next minute, any time you would regain Hit Points from a healing effect, this magic amplifies the effect, and you regain an additional 8 Hit Points.</p><hr /><p><strong>Heightened (+1)</strong> The additional healing increases by 2 Hit Points.</p>\n<p>@UUID[Compendium.pf2e.spell-effects.Item.Of5VbKBH0fLZHm8Z]{Spell Effect: Capital Dividend}</p>",
+            "time": "reaction"
         },
         "Captivating Adoration": {
             "name": "Captivating Adoration",
@@ -2694,6 +2725,14 @@
             "duration": "1 hour",
             "time": "2"
         },
+        "Defended by Spirits": {
+            "name": "Defended by Spirits",
+            "description": "<p>You entreat a spirit or the spiritual energies in your location to surround and protect an ally from an certain foe. Each time the enemy attacks and damages the ally, the enemy takes 1d6 spirit damage. The enemy is aware of these spirits and has a general sense that attacking the ally will draw the spirits' ire.</p><hr /><p><strong>Heightened (+2)</strong> The damage increases by 1d6.</p>",
+            "duration": "1 minute",
+            "range": "30 feet",
+            "target": "1 ally and 1 enemy",
+            "time": "2"
+        },
         "Dehydrate": {
             "name": "Dehydrate",
             "description": "<p>You stir the inner fire of all things within the area, driving out moisture. All creatures in the area take 1d6 persistent fire damage with a basic Fortitude save; creatures with the water or plant traits get a result one degree of success worse than they rolled. The spell ends for a creature when its persistent damage ends.</p>\n<p>A creature affected by <em>dehydrate</em> attempts an additional Fortitude save at the end of each of its turns, before rolling to recover from the persistent damage. It can forgo this additional save if it consumed water or a similar hydrating liquid within the last round (drinking typically requires a single action).</p>\n<hr />\n<p><strong>Success</strong> The creature takes no additional effect.</p>\n<p><strong>Failure</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 1} until the end of its next turn.</p>\n<p><strong>Critical Failure</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 2} until the end of its next turn.</p>\n<hr />\n<p><strong>Heightened (+2)</strong> The range increases by 10 feet, the burst increases by 5 feet, and the persistent fire damage increases by 3d6.</p>",
@@ -3345,6 +3384,11 @@
             "target": "1 creature",
             "time": "2"
         },
+        "Eagle's Cry": {
+            "name": "Eagle's Cry",
+            "description": "<p>You let out the mighty cry of a majestic eagle that pierces eardrums. This cry deals 4d8 sonic damage. Each creature in the area must attempt a Fortitude saving throw.</p><hr /><p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature takes half damage and is @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 1}.</p>\n<p><strong>Failure</strong> The creature takes full damage and is @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 2}.</p>\n<p><strong>Critical Failure</strong> The creature takes double damage, is frightened 2, and is @UUID[Compendium.pf2e.conditionitems.Item.sDPxOjQ9kx2RZE8D]{Fleeing} for 1 round.</p><hr /><p><strong>Heightened (+2)</strong> The damage increases by 3d8.</p>",
+            "time": "2"
+        },
         "Earth's Bile": {
             "name": "Earth's Bile",
             "description": "<p>Your apparition is the will of lava and magma made manifest, the earth's molten blood unleashing devastating bursts of liquid stone and unquenchable fire at your command. When you Cast this Spell and the first time you Sustain it each round thereafter, choose an area within range. Each creature in the area takes 1d4 fire damage, 1d4 bludgeoning damage, and @Damage[(ceil(@item.rank/2))[persistent,fire]] damage (the persistent fire damage is negated on a successful save).</p><hr /><p><strong>Heightened (+2)</strong> The fire and bludgeoning damage each increase by 1d4, and the persistent fire damage increases by 1.</p>",
@@ -3384,6 +3428,12 @@
             "description": "<p><strong>Trigger</strong> You would take fire damage.</p>\n<hr />\n<p>You consume and ingest fire, making it less harmful to you. You gain resistance 5 to fire damage until the end of the current turn. During the remaining duration of the spell, you can use the Belch Smoke action. The spell ends if you fall @UUID[Compendium.pf2e.conditionitems.Item.fBnFDH2MTzgFijKf]{Unconscious}, inhale, or exhale (this includes speaking).</p>\n<p>@UUID[Compendium.pf2e.spell-effects.Item.BGv44XBGtD4zOJBd]{Spell Effect: Eat Fire}</p>\n<p><strong>Belch Smoke</strong> <span class=\"action-glyph\">1</span> You exhale what remains of the smoke, ending the spell and creating a smoke cloud in a @Template[burst|distance:5] within 20 feet. All creatures within the smoke cloud are @UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{Concealed}, and all other creatures are concealed to them. The smoke lasts for 1 minute or until dispersed by a strong wind.</p>\n<hr />\n<p><strong>Heightened (+3)</strong> The resistance increases by 5.</p>",
             "duration": "until the end of your next turn",
             "time": "reaction"
+        },
+        "Echo Jump": {
+            "name": "Echo Jump",
+            "description": "<p>You teleport to an unoccupied space within range, leaving behind a faint echo of your form that explodes with magical force. Each creature within a 10-foot emanation from your previous location takes 4d8 force damage.</p><hr /><p><strong>Heightened (+2)</strong> The range increases by 10 feet, and the damage increases by 3d8.</p>",
+            "range": "30 feet",
+            "time": "2"
         },
         "Echoing Weapon": {
             "name": "Echoing Weapon",
@@ -3559,6 +3609,12 @@
             "time": "1 day",
             "primarycheck": "Arcana or Nature (expert)",
             "secondarycheck": "Diplomacy"
+        },
+        "Elemental Sheath": {
+            "name": "Elemental Sheath",
+            "description": "<p>You coat yourself in nature's power. Choose air, earth, fire, metal, water, or wood; the spell gains that trait. You become completely covered by armor formed from that element, gaining a +1 circumstance bonus to AC and resistance 5 to two types of damage based on the element you choose.</p>\n<p><strong>Air</strong> bludgeoning and electricity</p>\n<p><strong>Earth</strong> bludgeoning and poison</p>\n<p><strong>Fire</strong> fire and slashing</p>\n<p><strong>Metal</strong> acid and slashing</p>\n<p><strong>Water</strong> cold and piercing</p>\n<p><strong>Wood</strong> piercing and void.</p><hr /><p><strong>Heightened (+2)</strong> The resistance increases by 5.</p>\n<p>@UUID[Compendium.pf2e.spell-effects.Item.fEtZHzAhRYuNX2u1]{Spell Effect: Elemental Sheath}</p>",
+            "duration": "1 minute",
+            "time": "2"
         },
         "Elemental Tempest": {
             "name": "Elemental Tempest",
@@ -3834,6 +3890,14 @@
             "name": "Ephemeral Tracking",
             "description": "<p>You can look at currents in the air and water and see tracks that you can follow just as you would on land. You can use Survival to @UUID[Compendium.pf2e.actionspf2e.Item.EA5vuSgJfiHH7plD]{Track} through both air and water, noticing aerial or aquatic \"tracks\" of all creatures who passed nearby in the last hour. It's more difficult to Track in this way: the DC to Track through air or water is always at least 30, or higher after precipitation or wind (in the air) or heavy tides or currents (in the water). It's possible to @UUID[Compendium.pf2e.actionspf2e.Item.SB7cMECVtE06kByk]{Cover Tracks} against this spell, but creatures might not realize they need to do so.</p>",
             "duration": "1 hour",
+            "time": "2"
+        },
+        "Equal Footing": {
+            "name": "Equal Footing",
+            "description": "<p>You level the field between yourself and another creature, hampering its movements if it's quicker than you. The target attempts a Will save.</p><hr /><p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target is @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 1} and takes a \u201310-foot status penalty to all its Speeds until the end of your next turn.</p>\n<p>@UUID[Compendium.pf2e.spell-effects.Item.HjYFYIlwraTRSHOX]{Spell Effect: Equal Footing (Success)}</p>\n<p><strong>Failure</strong> The target is clumsy 1 and takes a \u201315-foot status penalty to all its Speeds for 1 minute. During this time, it can't benefit from bonuses to its Speeds or take other penalties to its Speeds.</p>\n<p><strong>Critical Failure</strong> The target is @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 2} and takes a \u201315-foot status penalty to all its Speeds for 1 minute. During this time, it can't benefit from bonuses to its Speeds or take other penalties to its Speeds.</p>\n<p>@UUID[Compendium.pf2e.spell-effects.Item.MFvCd82lxTQGZERm]{Spell Effect: Equal Footing (Failure or Critical Failure)}</p>",
+            "duration": "varies",
+            "range": "30 feet",
+            "target": "1 creature with a land Speed greater than yours",
             "time": "2"
         },
         "Eradicate Undeath": {
@@ -4624,6 +4688,14 @@
             "target": "1 creature",
             "time": "2"
         },
+        "Forest of Gates": {
+            "name": "Forest of Gates",
+            "description": "<p>You transport yourself and your allies to a peaceful extraplanar realm of towering trees, each of which holds a misty gateway to another location. When you Cast this Spell, you choose a specific destination within 1,000 miles that you can identify by its position relative to your starting position and by its appearance (or other identifying features). Incorrect knowledge of the location causes the spell to fail. You and your allies walk for 1 hour through the forest, and each of you regains Hit Points and reduces the value of any doomed or drained condition as if you'd taken a full night's rest. At the end of the journey, you attempt a @Check[arcana|dc:40|showDC:all] or @Check[nature|dc:40|showDC:all] check to find the correct gate to your desired location.</p><hr /><p><strong>Critical Success</strong> You and your allies arrive within 1,000 feet of your desired location. Success You and your allies arrive within 1 mile of your desired location.</p>\n<p><strong>Failure</strong> You and your allies arrive within 10 miles of your desired location.</p>\n<p><strong>Critical Failure</strong> You and your allies exit the forest within 1 mile of your original location.</p>",
+            "duration": "1 hour",
+            "range": "1000 miles",
+            "target": "you and up to 6 willing creatures",
+            "time": "10 minutes"
+        },
         "Forge": {
             "name": "Forge",
             "description": "<p>Developed before the introduction of the Iron Lagoon, this cantrip for superheating metal has also found valuable combat use. You superheat the target, dealing 3d6 fire damage. If the target is a metal object, reduce its Hardness by an amount equal to the damage dealt until the end of your next turn.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target takes half damage.</p>\n<p><strong>Failure</strong> The target takes full damage.</p>\n<p><strong>Critical Failure</strong> The target takes double damage, and if it's a metal creature, it gains weakness 2 to physical damage until the end of your next turn.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The damage increases by 2d6, and the weakness on a critical failure increases by 2.</p>\n<p>@UUID[Compendium.pf2e.spell-effects.Item.zbTpf11NtbmizuzR]{Spell Effect: Forge (Critical Failure)}</p>",
@@ -4711,6 +4783,14 @@
             "range": "30 feet",
             "target": "1 or 2 willing creatures",
             "time": "2"
+        },
+        "Friendly Push": {
+            "name": "Friendly Push",
+            "description": "<p>You exert magical force to propel a willing creature up to 10 feet in a straight line, including upward, though if they aren't on solid ground or have another way to maintain their height (such as a fly Speed) when the movement ends, they fall. When you Sustain the spell, you can move them again or choose a new target within range and move them instead.</p>\n<p>You can cast this spell on an @UUID[Compendium.pf2e.conditionitems.Item.fBnFDH2MTzgFijKf]{Unconscious} ally, and if you do, the movement from this spell doesn't trigger reactions.</p><hr /><p><strong>Heightened (4th)</strong> The distance increases to 20 feet.</p>\n<p><strong>Heightened (7th)</strong> The distance increases to 30 feet.</p>",
+            "duration": "1 minute",
+            "range": "60 feet",
+            "target": "1 willing creature",
+            "time": "1"
         },
         "Frigid Flurry": {
             "name": "Frigid Flurry",
@@ -6188,6 +6268,13 @@
             "target": "1 or more creatures",
             "time": "1 to 3"
         },
+        "King's Castle": {
+            "name": "King's Castle",
+            "description": "<p>You and a willing creature swap places. You appear in the target's former space, and the target appears in your former space. You and your target must each be able to fit in the new spaces within range; otherwise, the spell fails.</p>",
+            "range": "60 feet",
+            "target": "1 willing creature",
+            "time": "2"
+        },
         "Knock": {
             "name": "Knock",
             "description": "<p>You make the target easier to open. Knock grants a +4 status bonus to any creature that tries to open the target door, lock, or container with an Athletics or a Thievery check. You can attempt a Thievery check to open the target as part of casting knock, and you add your level even if you're untrained.</p>\n<p><em>Knock</em> counteracts @UUID[Compendium.pf2e.spells-srd.Item.Azoh0BSoCASrA1lr]{Lock}.</p>\n<p>@UUID[Compendium.pf2e.spell-effects.Item.OSapCU8heNHst21y]{Spell Effect: Knock}</p>",
@@ -6705,6 +6792,14 @@
             "description": "<p>You spin secrets from the fundaments of magic, shaping them into a power with nearly unlimited potential. You duplicate a spell of 9th rank or lower of the tradition from which you cast <em>manifestation</em>, or a spell of 7th rank or lower from any tradition. Though you can normally choose only spells that are common or to which you have access, the GM might allow broader options.</p>",
             "time": "3"
         },
+        "Manifestation of Spirits": {
+            "name": "Manifestation of Spirits",
+            "description": "<p>You open the target's eyes to the plethora of spirits surrounding it\u2014and it sees all these spirits as menacing and powerful. The target must attempt a Will save.</p><hr /><p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target believes every spirit it sees is an imminent threat. It's @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 3} for 1 round.</p>\n<p><strong>Failure</strong> As success, but the effect lasts 1 minute.</p>\n<p><strong>Critical Failure</strong> As failure, and the target becomes @UUID[Compendium.pf2e.conditionitems.Item.yblD8fOR1J8rDwEQ]{Confused} for 1 round.</p><hr /><p><strong>Heightened (6th)</strong> You can target up to 5 creatures.</p>",
+            "duration": "varies",
+            "range": "30 feet",
+            "target": "1 creature",
+            "time": "2"
+        },
         "Manifold Lives": {
             "name": "Manifold Lives",
             "description": "<p>You cast a creature's mind back through time, forcing them to take other paths and make other choices, experiencing countless alternate lives in an instant. The creature becomes overwhelmed with regret over paths untraveled, lives unlived, and times unrealized. The creature takes 6d6 mental damage and must attempt a Will save. After the effect is resolved, the target is then temporarily immune for 1 day.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature takes half damage and is @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 2} for 1 round.</p>\n<p><strong>Failure</strong> The creature takes full damage and is stupefied 2 for 1 minute. While affected, the creature must attempt another save at the start of its turn; on a failure, it's @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1} for that turn as it sobs uncontrollably.</p>\n<p><strong>Critical Failure</strong> The creature takes double damage and for 1 minute, it's @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 4} and slowed 1 as it sobs uncontrollably.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The mental damage increases by 1d6.</p>",
@@ -6815,6 +6910,12 @@
             "name": "Medusa's Wrath",
             "description": "<p>You make an attack filled with a medusa's petrifying power. Make an unarmed Strike with the following additional effects.</p><hr /><p><strong>Critical Success</strong> The target is @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 2} and must attempt a Fortitude save at the end of each of its turns; this ongoing save has the incapacitation trait. On a failed save, the slowed condition increases by 1 (2 on a critical failure). A successful save reduces the slowed condition by 1. When a creature is unable to act due to the slowed condition from medusa's wrath, it is @UUID[Compendium.pf2e.conditionitems.Item.dTwPJuKgBQCMxixg]{Petrified} permanently. The spell ends if the creature is petrified or the slowed condition is removed.</p>\n<p><strong>Success</strong> As critical success, but the target is initially @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1}</p>",
             "time": "2"
+        },
+        "Menacing Lament": {
+            "name": "Menacing Lament",
+            "description": "<p>You wail a dirge for your enemies. Enemies in the area are @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} against your attacks and gain no benefits from flanking you for the duration.</p>",
+            "duration": "1 round",
+            "time": "1"
         },
         "Mending": {
             "name": "Mending",
@@ -7618,6 +7719,12 @@
             "range": "30 feet",
             "target": "1 creature",
             "time": "1"
+        },
+        "Pain of Ages": {
+            "name": "Pain of Ages",
+            "description": "<p>You sense a spiritual resonance of deep anguish in the earth beneath your feet, the walls surrounding you, or the fragments of souls left behind in a place of calamity. You draw on this reservoir of pain and unleash its force against your enemies, dealing 8d8 spirit damage. On a critical failure, the creature is also @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned} for 1 round as it reels from the impact of so much anguish.</p><hr /><p><strong>Heightened (+1)</strong> The damage increases by 2d8.</p>",
+            "range": "120 feet",
+            "time": "2"
         },
         "Painful Vibrations": {
             "name": "Painful Vibrations",
@@ -8545,6 +8652,13 @@
             "range": "120 feet",
             "time": "3"
         },
+        "Radiant Globe": {
+            "name": "Radiant Globe",
+            "description": "<p>You create a dome of brilliant light that destroys projectiles attempting to pass through it. Ammunition from physical ranged attacks\u2014such as arrows, bolts, sling bullets, and other objects of similar size\u2014is destroyed in a flash of light when it passes into or out of the globe's area. Attackers targeting creatures or objects through the globe's surface with physical ranged attacks must succeed at a Fortitude save or become @UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]{Dazzled} for 1 round (@UUID[Compendium.pf2e.conditionitems.Item.XgEqL1kFApUbl5Z2]{Blinded} for 1 round on a critical failure).</p>",
+            "duration": "1 minute",
+            "range": "120 feet",
+            "time": "3"
+        },
         "Radiant Heart of Devotion": {
             "name": "Radiant Heart of Devotion",
             "description": "<p>You speak a fervent prayer for the heavens to assist you and your righteous allies. Your heart begins to glow with a radiance that fills the area with bright light. The spell has the following effects on creatures in the area, based on the creature's alignment on the good-evil axis.</p>\n<ul>\n<li><strong>Good Creatures</strong> Good creatures in the emanation gain a +1 status bonus to attack rolls and their Strikes deal an additional 1d6 spirit damage.</li>\n<li><strong>Neutral Creatures</strong> Neutral creatures that begin their turn in the emanation must succeed at a Will save or be @UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]{Dazzled} for 1 round.</li>\n<li><strong>Evil Creatures</strong> Evil creatures that begin their turn in the emanation must succeed at a Will save or be @UUID[Compendium.pf2e.conditionitems.Item.XgEqL1kFApUbl5Z2]{Blinded} for 1 round.</li>\n</ul>\n<hr />\n<p><strong>Heightened (+2)</strong> The additional spirit damage increases by 1d6.</p>",
@@ -8634,6 +8748,12 @@
             "range": "touch",
             "target": "your companion or eidolon",
             "time": "2"
+        },
+        "Rapid Retreat": {
+            "name": "Rapid Retreat",
+            "description": "<p><strong>Trigger</strong> You take damage from an attack or spell.</p><hr /><p>You know how to swiftly escape from harm. You instantly teleport out of danger into an unoccupied space within range, and you gain resistance to all damage against the triggering damage equal to your level. You can't Cast this Spell if there's no space to move into.</p>\n<p>@UUID[Compendium.pf2e.spell-effects.Item.n4aQ7fwJ5ogn1ekG]{Spell Effect: Rapid Retreat}</p>",
+            "range": "20 feet",
+            "time": "reaction"
         },
         "Ravening Maw": {
             "name": "Ravening Maw",
@@ -10275,6 +10395,14 @@
             "duration": "1 minute",
             "time": "2"
         },
+        "Spirit Ward": {
+            "name": "Spirit Ward",
+            "description": "<p>You draw on nearby spiritual energy or on echoes of the spirits you've invoked throughout your life to temporarily ward living flesh against dangerous spirits. You grant the target a +1 status bonus to saving throws against spells and effects caused by creatures that have the spirit trait and haunts. The number of actions you spend when Casting this Spell determines its targets, range, area, and other parameters.</p>\n<p><span class=\"action-glyph\">1</span> The spell has a range of touch.</p>\n<p><span class=\"action-glyph\">2</span> (concentrate) The spell has a range of 30 feet. If you target a living creature, the bonus increases to +2.</p>\n<p><span class=\"action-glyph\">3</span> (concentrate) You create a ward in a @Template[type:emanation|distance:30]. This targets you and all your allies in the burst.</p>\n<p>@UUID[Compendium.pf2e.spell-effects.Item.0P4JYUQO20mX4rCS]{Spell Effect: Spirit Ward}</p>",
+            "duration": "1 minute",
+            "range": "varies",
+            "target": "1 creature",
+            "time": "1 to 3"
+        },
         "Spirit of the Beast": {
             "name": "Spirit of the Beast",
             "description": "<p>You bring out the spirit of another animal that lives within your companion. Its body morphs slightly to take on an aspect of the animal you choose to have it emulate\u2014for example, it might grow a pair of horns if the spirit is a bull or a tail if the spirit is a monkey. When you Cast this Spell, select from one of the following aspects.</p>\n<p>@UUID[Compendium.pf2e.spell-effects.Item.l9kHsnm7dBQx52JI]{Spell Effect: Spirit of the Beast}</p>\n<ul>\n<li><strong>Aspect of Might:</strong> Your companion gains a +1 status bonus to Athletics checks, Intimidation checks to @UUID[Compendium.pf2e.actionspf2e.Item.2u915NdUyQan6uKF]{Demoralize}, and Fortitude saves.</li>\n<li><strong>Aspect of Swiftness:</strong> Your companion gains a +1 status bonus to Acrobatics checks, Stealth checks to Hide or @UUID[Compendium.pf2e.actionspf2e.Item.VMozDqMMuK5kpoX4]{Sneak}, and Reflex saves.</li>\n<li><strong>Aspect of Insight:</strong> Your companion gains a +1 status bonus to Perception checks to @UUID[Compendium.pf2e.actionspf2e.Item.BlAOM2X92SI6HMtJ]{Seek}, Survival checks to Sense Direction or @UUID[Compendium.pf2e.actionspf2e.Item.EA5vuSgJfiHH7plD]{Track}, and Will saves.</li>\n</ul>\n<hr />\n<p><strong>Heightened (5th)</strong> The status bonuses increase to +2.</p>\n<p><strong>Heightened (8th)</strong> The status bonuses increase to +3.</p>",
@@ -10334,9 +10462,23 @@
             "range": "120 feet",
             "time": "2"
         },
+        "Spiritual Renewal": {
+            "name": "Spiritual Renewal",
+            "description": "<p>You draw upon the restorative power of the spirits around you. The target gains fast healing 8.</p><hr /><p><strong>Heightened (+1)</strong> The fast healing increases by 2.</p>\n<p>@UUID[Compendium.pf2e.spell-effects.Item.rtkSifnBQaf0TEPo]{Spell Effect: Spiritual Renewal}</p>",
+            "duration": "4 rounds",
+            "range": "touch",
+            "target": "1 living creature",
+            "time": "2"
+        },
         "Spiritual Torrent": {
             "name": "Spiritual Torrent",
             "description": "<p>You release your spiritual essence in a torrential blast of energy, dealing 10d6 damage. If you're a living creature, this spell deals vitality damage and gains the vitality trait. If you're an undead creature, this spell deals void damage and gains the void trait. The spell's effect is based on how many actions you spend when Casting the Spell.</p>\n<p><span class=\"action-glyph\">2</span> (somatic, verbal) The spell targets all creatures in a 60-foot line.</p>\n<p><span class=\"action-glyph\">3</span> (material, somatic, verbal) The spell targets all creatures in a 60-foot cone.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The spell's damage increases by 2d6.</p>",
+            "time": "2"
+        },
+        "Spiritual Transport": {
+            "name": "Spiritual Transport",
+            "description": "<p>You call upon the spiritual energies surrounding you to teleport you to an unoccupied space within range that you can see. Any items you're wearing and holding come with you. Your familiar or animal companion, if you have one that's sharing your space or adjacent to your space, is transported with you, but any other creature sharing your space remains in that space.</p><hr /><p><strong>Heightened (7th)</strong> The range increases to 1 mile. You don't need to be able to see your destination, as long as you have been there in the past and know its relative direction from you.</p>",
+            "range": "240 feet",
             "time": "2"
         },
         "Spiritual Weapon": {
@@ -10629,6 +10771,12 @@
             "description": "<p><strong>Trigger</strong> An enemy misses you with a melee attack.</p>\n<hr />\n<p>You swiftly move from a dangerous spot and veil yourself. You Step and become @UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{Concealed}.</p>",
             "duration": "until the end of your next turn",
             "time": "reaction"
+        },
+        "Sudden Transposition": {
+            "name": "Sudden Transposition",
+            "description": "<p>You wrench the targets off their feet, forcefully teleporting them within the area. The creatures must each be able to fit in their new space, and their positions must be unoccupied, entirely within the area, and in your line of sight. Each target attempts a Fortitude save.</p><hr /><p><strong>Critical Success</strong> The target can teleport if it wants, but it chooses the destination within the area.</p>\n<p><strong>Success</strong> The target is unaffected.</p>\n<p><strong>Failure</strong> You teleport the target and choose its destination; the target takes 10d10 bludgeoning damage.</p>\n<p><strong>Critical Failure</strong> You teleport the target and choose its destination; the target takes @Damage[20d10[bludgeoning]] damage and is knocked @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone}.</p>",
+            "target": "up to 2 creatures",
+            "time": "2"
         },
         "Suffocate": {
             "name": "Suffocate",
@@ -11644,6 +11792,13 @@
             "target": "1 creature",
             "time": "1"
         },
+        "Trade Items": {
+            "name": "Trade Items",
+            "description": "<p>You magically swap an item you're holding for another that someone else has. The second item appears in the hand you were holding the first item (or it falls to the ground in your square if you're unable to hold it), and the first item appears in the same place on the other creature's possession where the second item was (held in a hand or attached to a belt, for instance). If the second item is in the possession of a creature unwilling to relinquish it, they can prevent the transposition with a successful Reflex save.</p><hr /><p><strong>Heightened (5th)</strong> Each object's maximum Bulk increases to 1. If one of the items is 1 Bulk and the other isn't, an unwilling creature gains a +2 circumstance bonus to their saving throw.</p>",
+            "range": "60 feet",
+            "target": "1 item you\u2019re holding and 1 item in another creature\u2019s possession you can see, each no more than light Bulk",
+            "time": "2"
+        },
         "Transcribe Conflict": {
             "name": "Transcribe Conflict",
             "description": "<p>You cause a sheet of paper to appear in your hand, and a moment later a detailed description of a combat you experienced within the last hour is recorded on that sheet of paper in a language that you know of your choice. The description is detailed enough that anyone who spends 1 minute reading the page can attempt to Recall Knowledge about the event as if they had been there, but the primary purpose of the transcribed conflict is to give you additional insight into the fight by allowing you to study the conflict and learn from errors or tactical blunders participants in the battle may have committed.</p>\n<p>When you cast this spell, choose a type of foe in the fight you transcribed and attempt to Recall Knowledge about that foe using your spell DC-10 instead of your skill modifier in an appropriate skill to do so. For this action, you can't use any special abilities, reactions, or free actions that trigger when you Recall Knowledge. If you are successful, you not only learn information about that foe as determined by the GM, but for the remainder of transcribe conflict's duration, you gain a +1 status bonus to Initiative checks in combats where you face that exact kind of foe. For example, if you made the check against a wrath demon, the bonus would apply only to wrath demons, not to other demons. The GM decides if a foe who is disguised grants you this bonus.</p>\n<hr />\n<p><strong>Heightened (5th)</strong> The bonus to initiative increases to +2 and the duration increases to 8 hours.</p>\n<p><strong>Heightened (8th)</strong> The bonus to initiative increases to +3 and the duration increases until the next time you do your daily preparations, and the status bonus to Initiative checks applies to any allies who took part in the fight you transcribed as long as they are within 30 feet of you when you cast the spell.</p>",
@@ -11935,6 +12090,14 @@
             "target": "1 creature other than the triggering enemy",
             "time": "reaction"
         },
+        "Unexpected Windfall": {
+            "name": "Unexpected Windfall",
+            "description": "<p>Coins, trinkets carved from heavy stone, and other cumbersome treasures rain down upon a foe. The target must attempt a Fortitude save.</p><hr /><p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target is @UUID[Compendium.pf2e.conditionitems.Item.D5mg6Tc7Jzrj6ro7]{Encumbered} for 1 round.</p>\n<p><strong>Failure</strong> The target is encumbered for the duration of the spell.</p>\n<p><strong>Critical Failure</strong> As failure, but the extra weight also knocks the target @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone}.</p>",
+            "duration": "1 minute",
+            "range": "30 feet",
+            "target": "1 creature",
+            "time": "2"
+        },
         "Unfathomable Song": {
             "name": "Unfathomable Song",
             "description": "<p>Fleeting notes of a strange and unnatural song fill the air, overtaking the mind. Each target must attempt a Will save when you cast the spell, and again the first time you Sustain this Spell each round. A creature needs to attempt only one save against the song each round, and you have to keep the same targets when you Sustain the Spell.</p><hr /><p><strong>Critical Success</strong> The target is unaffected, can't be affected on subsequent rounds, and is temporarily immune for 1 minute.</p>\n<p><strong>Success</strong> The target is unaffected this round, but it can be affected on subsequent rounds.</p>\n<p><strong>Failure</strong> Roll [[/r 1d4]] on the table below.</p>\n<p><strong>Critical Failure</strong> Roll [[/r 1d4+1]] on the table below.</p><table class=\"pf2e remaster\"><thead><tr><th>Result</th><th>Effect</th></tr></thead><tbody><tr><td>1</td><td>The target is @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 2}</td></tr><tr><td>2</td><td>The target is @UUID[Compendium.pf2e.conditionitems.Item.yblD8fOR1J8rDwEQ]{Confused} for 1 round</td></tr><tr><td>3</td><td>The target is @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 4} for 1 round</td></tr><tr><td>4</td><td>The target is @UUID[Compendium.pf2e.conditionitems.Item.XgEqL1kFApUbl5Z2]{Blinded} for 1 round</td></tr><tr><td>5</td><td>The target is @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned} for 1 round and @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 1} for an unlimited duration</td></tr></tbody></table>",
@@ -12146,6 +12309,12 @@
             "duration": "1 minute",
             "time": "2"
         },
+        "Valiant Anthem": {
+            "name": "Valiant Anthem",
+            "description": "<p>You chant a rallying cry to bolster your allies. Your allies in the area gain a +10-foot status bonus to all Speeds and a +1 status bonus to attack rolls.</p>\n<p>@UUID[Compendium.pf2e.spell-effects.Item.0px2AJh9TBgU4iao]{Spell Effect: Valiant Anthem}</p>",
+            "duration": "1 round",
+            "time": "1"
+        },
         "Vampiric Exsanguination": {
             "name": "Vampiric Exsanguination",
             "description": "<p>You draw in the blood and life force of other creatures through your outstretched arms. You deal 12d6 void damage to living creatures in the area with a basic Fortitude save.</p>\n<p>You gain temporary Hit Points equal to half the damage a single creature takes from this spell; calculate these temporary Hit Points using the creature that took the most damage. You lose any remaining temporary Hit Points after 1 minute.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The damage increases by 2d6.</p>",
@@ -12219,6 +12388,13 @@
             "target": "1 creature or object",
             "time": "10 minutes"
         },
+        "Veil of Spirits": {
+            "name": "Veil of Spirits",
+            "description": "<p>You draw on the essence of spiritual energy surrounding you to manifest a misty veil. When a creature that isn't immune to spirit damage begins its turn within the area, it must attempt a Reflex save. You can Dismiss the veil.</p><hr /><p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]{Dazzled} until the beginning of its next turn.</p>\n<p><strong>Failure</strong> The creature is dazzled and gains a weakness to spirit damage equal to half your level until the beginning of its next turn as spiritual energy clings to it. A creature with spiritsense can't use that imprecise sense while it's dazzled in this way.</p>\n<p><strong>Critical Failure</strong> As failure, but the weakness is equal to your level.</p>\n<p>@UUID[Compendium.pf2e.spell-effects.Item.0L9LAkGW2FtmZOgb]{Spell Effect: Veil of Spirits}</p>",
+            "duration": "1 minute",
+            "range": "120 feet",
+            "time": "3"
+        },
         "Vengeful Glare": {
             "name": "Vengeful Glare",
             "description": "<p>Your gaze falls on a creature, filled with icy vengeance or fiery wrath. The gaze deals 1d4 damage (basic Fortitude save). It deals your choice of cold damage or fire damage and gains the appropriate trait. If you already dealt damage to the creature earlier this turn, it also takes 1 persistent damage of the gaze's type (@Damage[(@item.rank)[cold,persistent]]{persistent cold damage} or @Damage[(@item.rank)[fire,persistent]]{persistent fire damage}).</p><hr /><p><strong>Heightened (+1)</strong> The initial damage increases by 1d4 and persistent damage by 1.</p>",
@@ -12272,6 +12448,12 @@
             "description": "<p>Your voice trills in perfect vibrato. When casting the spell, you can make the area any radius you choose, up to 40 feet. The reverberations of your voice continue to shimmer and hang in the air as long as you Sustain the spell but can't be heard at all outside of the area. A creature must attempt a Will save if it's within the area when you Cast the Spell or as soon as it enters the area while the spell is in effect. Once a creature has attempted the save, it uses the same result for that casting of vibrant vibrato.</p><hr /><p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature takes @Damage[5d10[persistent,sonic]] damage at the end of their turn as long as they remain within the aura's area of effect.</p>\n<p><strong>Failure</strong> As success, but if the creature leaves the area, or if you move far enough from the creature that they're no longer in the area, the creature hears a shattering sound and takes 5d10 sonic damage and is @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned 1}. The creature is then @UUID[Compendium.pf2e.conditionitems.Item.9PR9y0bi4JPKnHPR]{Deafened} for the rest of the spell's duration.</p>\n<p><strong>Critical Failure</strong> As failure, but the creature takes double the sonic damage and is @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned 3}.</p><hr /><p><strong>Heightened (+1)</strong> The damage on a failed save increases by 1d10.</p>",
             "duration": "1 minute",
             "time": "2"
+        },
+        "Vicious Howl": {
+            "name": "Vicious Howl",
+            "description": "<p>You howl with passion for your cause, empowering yourself to push beyond your limits. You gain a number of temporary Hit Points equal to your level and a +4 circumstance bonus to damage. If you reduce a fiend to 0 Hit Points during this duration, you regain a number of Hit Points equal to the creature's level.</p>\n<p>@UUID[Compendium.pf2e.spell-effects.Item.cSlCn3KoAhsKxm4y]{Spell Effect: Vicious Howl}</p>",
+            "duration": "1 minute",
+            "time": "1"
         },
         "Vicious Jealousy": {
             "name": "Vicious Jealousy",
@@ -12585,6 +12767,13 @@
             "duration": "1 minute",
             "range": "60 feet",
             "time": "1 to 3"
+        },
+        "Warping Pull": {
+            "name": "Warping Pull",
+            "description": "<p><strong>Trigger</strong> An effect would deal damage to an ally within range.</p><hr /><p>You get an ally out of danger with a teleporting pull. You teleport the target to an unoccupied square up to 10 feet closer to you. The target gains resistance 5 to all damage against the triggering effect.</p><hr /><p><strong>Heightened (+2)</strong> The resistance increases by 5.</p>\n<p>@UUID[Compendium.pf2e.spell-effects.Item.uHNehgyXeNsdd3or]{Spell Effect: Warping Pull}</p>",
+            "range": "30 feet",
+            "target": "1 willing creature that would take damage from the triggering effect",
+            "time": "reaction"
         },
         "Warrior's Regret": {
             "name": "Warrior's Regret",
