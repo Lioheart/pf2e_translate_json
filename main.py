@@ -364,8 +364,8 @@ def process_files(folder, version, type_system):
 
                     # ---Trained Lore---
                     try:
-                        if new_data['system']['trainedLore'] != "":
-                            transifex_dict["entries"][name].update({"trainedLore": new_data['system']['trainedLore']})
+                        if new_data['system']['trainedSkills']['lore'] != "":
+                            transifex_dict["entries"][name].update({"trainedLore": new_data['system']['trainedSkills']['lore']})
                             flag.append('trainedLore')
                     except KeyError:
                         pass
