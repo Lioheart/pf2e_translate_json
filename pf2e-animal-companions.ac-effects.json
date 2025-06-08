@@ -22,6 +22,15 @@
                 }
             }
         },
+        "Effect: Bacallia Support Benefit": {
+            "name": "Effect: Bacallia Support Benefit",
+            "description": "<p>Granted by @UUID[Compendium.pf2e-animal-companions.AC-Support.Item.ZQZD767JGaTcOfWd]{Bacallia Support Benefit}</p><p>Creatures within your bacallia's reach that you damage with your Strikes are @UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]{Dazzled}.</p>",
+            "rules": {
+                "1": {
+                    "text": "COMP.SpecificRule.Bacallia.EffectNote"
+                }
+            }
+        },
         "Effect: Badger Rage": {
             "name": "Effect: Badger Rage",
             "description": "<p>Granted by @UUID[Compendium.pf2e-animal-companions.AC-Advanced-Maneuvers.Item.HLD4JW6SUn5Oy8C9]{Badger Rage}</p><p>You deal 4 additional damage with your bite attack and 2 additional damage with your claw attack, and you take a –1 penalty to AC</p>"
@@ -98,6 +107,15 @@
         "Effect: Cave Gecko Support Benefit": {
             "name": "Effect: Cave Gecko Support Benefit",
             "description": "<p>Granted by @UUID[Compendium.pf2e-animal-companions.AC-Support.Item.nDUwRm0TOtc2EX0O]{Cave Gecko Support Benefit}</p><p>if you attempt to Disarm, Shove, or Trip an opponent and roll a critical failure, you get a failure instead.</p>"
+        },
+        "Effect: Cragstone Bear Support Benefit": {
+            "name": "Effect: Cragstone Bear Support Benefit",
+            "description": "<p>Granted by @UUID[Compendium.pf2e-animal-companions.AC-Support.Item.6dStcNwpIK7WeAeo]{Cragstone Bear Support Benefit}</p><p>You gain a circumstance bonus to your AC if your cragstone bear is adjacent to you.</p>",
+            "rules": {
+                "0": {
+                    "prompt": "COMP.Prompt.IsSpecialized"
+                }
+            }
         },
         "Effect: Crocodile Support Benefit": {
             "name": "Effect: Crocodile Support Benefit",
@@ -184,6 +202,15 @@
                 }
             }
         },
+        "Effect: Giant Rock Tuatara Support Benefit": {
+            "name": "Effect: Giant Rock Tuatara Support Benefit",
+            "description": "<p>Granted by @UUID[Compendium.pf2e-animal-companions.AC-Support.Item.BgqGqrzRNnm8QaN9]{Giant Rock Tuatara Support}</p><p>Creatures within your giant rock tuatara's reach that you damage with your Strikes are @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 1}.</p>",
+            "rules": {
+                "1": {
+                    "text": "COMP.SpecificRule.GiantRockTuatara.EffectNote"
+                }
+            }
+        },
         "Effect: Giant Wasp Support Benefit": {
             "name": "Effect: Giant Wasp Support Benefit",
             "description": "<p>Granted by @UUID[Compendium.pf2e-animal-companions.AC-Support.Item.V3XczB8r8fQfJIhe]{Giant Wasp Support Benefit}</p><p>if you hit and deal damage to a creature in your giant wasp's reach, the creature becomes Frightened 1.</p>",
@@ -202,6 +229,21 @@
                 },
                 "2": {
                     "text": "Your target moves 15 feet."
+                }
+            }
+        },
+        "Effect: Gray Bladeling Support Benefit": {
+            "name": "Effect: Gray Bladeling Support Benefit",
+            "description": "<p>Granted by @UUID[Compendium.pf2e-animal-companions.AC-Support.Item.XDmtg6o5B2MaA4Ke]{Gray Bladeling Support Benefit}</p><p><span style=\"font-family:Roboto, sans-serif\">Your Strikes that damage a creature in your gray bladeling's reach also deal bleed damage or becomes </span>@UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 1} if it's already taking persistent bleed damage.</p>",
+            "rules": {
+                "0": {
+                    "prompt": "COMP.Prompt.IsSpecialized"
+                },
+                "2": {
+                    "text": "COMP.SpecificRule.GrayBladeling.EffectNote.Bleeding"
+                },
+                "3": {
+                    "text": "COMP.SpecificRule.GrayBladeling.EffectNote.Frightened"
                 }
             }
         },
@@ -231,7 +273,7 @@
         },
         "Effect: Horse Support Benefit": {
             "name": "Effect: Horse Support Benefit",
-            "description": "<p>Granted by @UUID[Compendium.pf2e-animal-companions.AC-Support.Item.wf20kx6pPGBWwUn2]{Horse Support Benefit}</p><p>If you're mounted on your horse and moved 10 feet or more on the action before a melee Strike, you gain a circumstance bonus to damage for a Strike equal to twice the number of weapon damage dice. If your weapon already has the jousting weapon trait, increase the trait's damage bonus by 2 per die instead.</p>"
+            "description": "<p>Granted by @UUID[Compendium.pf2e-animal-companions.AC-Support.Item.wf20kx6pPGBWwUn2]{Horse Support Benefit}</p><p>If you're mounted on your horse and moved 10 feet or more on the action before a melee Strike, you gain a circumstance bonus to damage for a Strike equal to twice the number of weapon damage dice.</p>"
         },
         "Effect: Hyena Support Benefit": {
             "name": "Effect: Hyena Support Benefit",
@@ -239,6 +281,18 @@
             "rules": {
                 "1": {
                     "text": "When you hit a creature in the hyena's reach with a Strike, the creature becomes @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 1}."
+                }
+            }
+        },
+        "Effect: Keulia Support Benefit": {
+            "name": "Effect: Keulia Support Benefit",
+            "description": "<p>Granted by @UUID[Compendium.pf2e-animal-companions.AC-Support.Item.IsdduEnR9bFi2vDS]{Keulia Support Benefit}</p><p>Your Strikes that damage a creature in your Keulia's reach also deal bludgeoning damage.</p>",
+            "rules": {
+                "0": {
+                    "prompt": "COMP.Prompt.IsSpecialized"
+                },
+                "2": {
+                    "text": "COMP.SpecificRule.Keulia.EffectNote"
                 }
             }
         },
@@ -374,6 +428,19 @@
                     "text": "Your Strikes that damage a creature in your scorpion's reach also deal @Damage[({item|flags.pf2e.rulesSelections.scorpionSupportBenefit})d6[persistent,poison]] damage."
                 }
             }
+        },
+        "Effect: Severed Head Support Benefit": {
+            "name": "Effect: Severed Head Support Benefit",
+            "description": "<p>Granted by @UUID[Compendium.pf2e-animal-companions.AC-Support.Item.z6bNmmf5YiJrPbot]{Severed Head Support Benefit}</p><p>Your Strikes t<span style=\"font-family:Roboto, sans-serif\">hat damage a creature in your severed head's reach take a penalty to their speed and must succeed at a flat check to use reactions.</span></p>",
+            "rules": {
+                "1": {
+                    "text": "COMP.SpecificRule.EffectNote.EffectNote.SupportBenefit"
+                }
+            }
+        },
+        "Effect: Severed Head Support Benefit (Penalty)": {
+            "name": "Effect: Severed Head Support Benefit (Penalty)",
+            "description": "<p>Granted by Severed Head Support Benefit</p><p>You take a -5-foot status penalty to your Speeds and must succeed at a DC 5 flat check to use reactions triggered by the origin's actions.</p>"
         },
         "Effect: Shadow Hound Support Benefit": {
             "name": "Effect: Shadow Hound Support Benefit",
@@ -539,6 +606,15 @@
                 },
                 "2": {
                     "text": "Your Strikes that damage a creature in your vampiric animal's reach also deal  @Damage[({item|flags.pf2e.rulesSelections.vampiricAnimalSupportBenefit})d6[bleed]] damage."
+                }
+            }
+        },
+        "Effect: War Pig Support Benefit": {
+            "name": "Effect: War Pig Support Benefit",
+            "description": "<p>Granted by War Pig Support Benefit</p><p>Strikes you make that deal damage to a creature within your war pig's reach make the target @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 1}</p>",
+            "rules": {
+                "1": {
+                    "text": "If you hit and deal damage to a creature within your war pig's reach, the creature is @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 1}."
                 }
             }
         },
