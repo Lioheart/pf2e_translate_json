@@ -668,10 +668,13 @@ def process_files(folder, version, type_system):
                             if item['type'] in ['melee', 'ranged']:
                                 try:
                                     type_name = f'strike-{item["system"]["weaponType"]["value"]}'
+                                    for trait in item["system"]["traits"]["value"]:
+                                        if (trait.startswith("range-") or trait.startswith("thrown-")) and item["system"]["weaponType"]["value"] != item['type']:
+                                            type_name = 'strike-ranged'
                                 except KeyError:
                                     type_name = f'strike-{item['type']}'
                                     for trait in item["system"]["traits"]["value"]:
-                                        if trait.startswith("range"):
+                                        if trait.startswith("range-") or trait.startswith("thrown-"):
                                             type_name = 'strike-ranged'
                             else:
                                 type_name = item['type']
@@ -716,6 +719,7 @@ def process_files(folder, version, type_system):
                                         "skillVariants": {'0': {'label': item['system']['variants']['0']['label']}}}
                                     })
                                 continue
+
 
                             # Jeśli przedmiot jest z istniejącej publikacji i nie jest przedmiotem z innego kompendium
                             try:
@@ -774,6 +778,29 @@ def process_files(folder, version, type_system):
                                 }
                             }
                         )
+
+                    # Sprawdza, czy są dodatkowe etykiety w Skills
+                    try:
+                        if new_data['type'] == 'npc':
+                            transifex_dict["entries"][name].update({"skills": {}})
+                            for skill in new_data['system']['skills']:
+                                try:
+                                    if new_data['system']['skills'][skill]['special']:
+                                        transifex_dict["entries"][name]["skills"].update(
+                                            {skill:{"label":new_data['system']['skills'][skill]['special'][0]['label']}}
+                                        )
+                                    transifex_dict['mapping'].update(
+                                        {
+                                            "skills": {
+                                                "converter":"translateSkills",
+                                                "path": "system.skills"
+                                            }
+                                        }
+                                    )
+                                except KeyError:
+                                    continue
+                    except KeyError:
+                        continue
 
                     # SPELLS =============================================================================================
                     if file == 'spells.json':
