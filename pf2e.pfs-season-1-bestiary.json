@@ -56,6 +56,13 @@
                     "name": "Berserk Slam",
                     "description": "<p><strong>Requirements</strong> The golem is berserk</p>\n<hr />\n<p><strong>Effect</strong> The flesh golem Strikes with its fist at a -1 circumstance penalty. If it hits, it deals 1d4 extra damage and knocks the target @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone}.</p>"
                 }
+            },
+            "system": {
+                "skills": {
+                    "deception": {
+                        "label": "to impersonate a zombie"
+                    }
+                }
             }
         },
         "'Zombie' Flesh Golem (5-6)": {
@@ -83,6 +90,13 @@
                 "action->Berserk Slam": {
                     "name": "Berserk Slam",
                     "description": "<p><strong>Requirements</strong> The golem is berserk</p>\n<hr />\n<p><strong>Effect</strong> The flesh golem Strikes with its fist at a -1 circumstance penalty. If it hits, it deals 1d6 extra damage and knocks the target @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone}.</p>"
+                }
+            },
+            "system": {
+                "skills": {
+                    "deception": {
+                        "label": "to impersonate a zombie"
+                    }
                 }
             }
         },
@@ -128,6 +142,13 @@
                 "action->Spine Rake": {
                     "name": "Spine Rake",
                     "description": "<p>The young sea serpent extends the spines along its back and Swims or Strides. Each creature the serpent is adjacent to at any point during its movement takes @Damage[(1d8+4)[slashing]] damage (@Check[reflex|dc:17|basic] save).</p>"
+                }
+            },
+            "system": {
+                "skills": {
+                    "athletics": {
+                        "label": "to swim"
+                    }
                 }
             }
         },
@@ -434,6 +455,13 @@
                 },
                 "action->Grab": {
                     "name": "Grab"
+                }
+            },
+            "system": {
+                "skills": {
+                    "athletics": {
+                        "label": "to Grapple"
+                    }
                 }
             }
         },
@@ -1059,6 +1087,13 @@
                     "name": "Tongue Grab",
                     "description": "<p>If the boggard warrior hits a creature with its tongue, that creature becomes @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed} by the boggard. Unlike with a normal grab, the creature isn't @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Immobilized}, but it can't move beyond the reach of the boggard's tongue.</p>\n<p>A creature can sever the tongue by hitting AC 15 and dealing at least 3 slashing damage. Though this doesn't deal any damage to the boggard, it prevents it from using its tongue Strike until it regrows its tongue, which takes a week.</p>"
                 }
+            },
+            "system": {
+                "skills": {
+                    "stealth": {
+                        "label": "in water"
+                    }
+                }
             }
         },
         "Cairn Wight (PFS 1-20)": {
@@ -1431,6 +1466,13 @@
                     "name": "Poison Tooth",
                     "description": "<p><strong>Requirements</strong> The krooth damaged a creature with its jaws Strike on its most recent action this turn</p><hr />\n<p><strong>Effect</strong> The krooth snaps off one of its teeth in the creature it hit. The creature takes @Damage[1d6[bleed]] and is @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 1}. Neither the persistent bleed damage nor the drained condition can be healed while the tooth remains. Removing the tooth safely requires a successful @Check[medicine|dc:24|traits:action:administer-first-aid] check to Administer First Aid. Instead of ending bleeding or stabilizing, this removes the drained condition, but it doesn't automatically end the bleed damage.</p>"
                 }
+            },
+            "system": {
+                "skills": {
+                    "survival": {
+                        "label": "to track a bleeding creature"
+                    }
+                }
             }
         },
         "Desert Wind": {
@@ -1695,6 +1737,13 @@
                 "action->Tree Meld": {
                     "name": "Tree Meld",
                     "description": "<p>The dryad touches a tree of enough volume to contain her and merges into it for as long as she wishes. She can Cast a Spell while inside as long as the spell doesn't require a line of effect outside the tree. She can hear, but not see, what's going on outside the tree. She can Dismiss this effect.</p>\n<p>Significant physical damage dealt to the tree expels the dryad from the tree and deals [[/r {3d6}]]{3d6 damage} to her. @UUID[Compendium.pf2e.spells-srd.Item.115Xp9E38CJENhNS]{Magic Passage} expels the dryad without dealing damage.</p>\n<p>If a dryad uses this ability on her bonded tree, she instead enters an extradimensional living space within the tree; Tree Meld gains the extradimensional trait. A dryad can bring up to two other creatures with her when entering her home within her bonded tree. The dryad can still be expelled from this space as above.</p>"
+                }
+            },
+            "system": {
+                "skills": {
+                    "crafting": {
+                        "label": "woodworking"
+                    }
                 }
             }
         },
@@ -1963,6 +2012,13 @@
                 "action->Filth Wave": {
                     "name": "Filth Wave",
                     "description": "<p><strong>Frequency</strong> once per minute</p>\n<hr />\n<p><strong>Effect</strong> The sewer ooze unleashes a wave of filth, covering all creatures within a @Template[emanation|distance:20]. Each creature in the area must succeed at a @Check[reflex|dc:19|traits:damaging-effect] save or take @Damage[1d4[acid]] damage and take a -10-foot penalty to its Speeds for 1 minute (on a critical failure, the creature also falls @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone}). A creature can spend and Interact action to clean someone off, decreasing the Speed penalty by 5 feet with each action.</p>"
+                }
+            },
+            "system": {
+                "skills": {
+                    "stealth": {
+                        "label": "in sewers"
+                    }
                 }
             }
         },
@@ -2369,6 +2425,13 @@
                     "name": "Distraction",
                     "description": "<p>Any living creature within the area of a frog swarm must attempt a @Check[will|dc:12] save. Humanoids that fail this save are @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned 1} (@UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned 2} on a critical failure). Animals are @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 1} on a successful save, @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 2} and @UUID[Compendium.pf2e.conditionitems.Item.sDPxOjQ9kx2RZE8D]{Fleeing} on a failure, and @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 3} and fleeing on a critical failure.</p>"
                 }
+            },
+            "system": {
+                "skills": {
+                    "acrobatics": {
+                        "label": "to jump"
+                    }
+                }
             }
         },
         "Ghost Of Diggen Thrune (1-2)": {
@@ -2499,6 +2562,13 @@
                     "name": "Shrew Venom",
                     "description": "<p><strong>Saving Throw</strong> @Check[fortitude|dc:14]</p>\n<p><strong>Maximum Duration</strong> 4 rounds</p>\n<p><strong>Stage 1</strong> @Damage[1d4[poison]] (1 round)</p>"
                 }
+            },
+            "system": {
+                "skills": {
+                    "athletics": {
+                        "label": "to Climb or Swim"
+                    }
+                }
             }
         },
         "Glass River Midge": {
@@ -2611,6 +2681,13 @@
                 },
                 "action->Knockdown": {
                     "name": "Knockdown"
+                }
+            },
+            "system": {
+                "skills": {
+                    "survival": {
+                        "label": "to track"
+                    }
                 }
             }
         },
@@ -2790,6 +2867,13 @@
                     "name": "Vengeful Anger",
                     "description": "<p>As long as it isn't @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened}, a mitflit gains a +2 status bonus to damage rolls against a creature that has previously damaged or tormented it.</p>"
                 }
+            },
+            "system": {
+                "skills": {
+                    "diplomacy": {
+                        "label": "vs. arthropods"
+                    }
+                }
             }
         },
         "Gwibble (3-4)": {
@@ -2830,6 +2914,13 @@
                 "action->Vengeful Anger": {
                     "name": "Vengeful Anger",
                     "description": "<p>As long as it isn't @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened}, a mitflit gains a +2 status bonus to damage rolls against a creature that has previously damaged or tormented it.</p>"
+                }
+            },
+            "system": {
+                "skills": {
+                    "diplomacy": {
+                        "label": "vs. arthropods"
+                    }
                 }
             }
         },
@@ -3171,6 +3262,13 @@
                     "name": "Quick Bomber",
                     "description": "<p>Iloise can use Interact to draw a bomb, then Strike with it</p>"
                 }
+            },
+            "system": {
+                "skills": {
+                    "performance": {
+                        "label": "with Tesla Coil"
+                    }
+                }
             }
         },
         "Iloise (7-8)": {
@@ -3234,6 +3332,13 @@
                     "name": "Uncanny Climber",
                     "description": "<p>A giant gecko's feet allow it to climb virtually any surface, no matter how slick or sheer. If a giant gecko attempts an Athletics check to @UUID[Compendium.pf2e.actionspf2e.Item.pprgrYQ1QnIDGZiy]{Climb} and critically fails, it gets a failure instead.</p>"
                 }
+            },
+            "system": {
+                "skills": {
+                    "athletics": {
+                        "label": "to climb"
+                    }
+                }
             }
         },
         "Injured Sewer Ooze": {
@@ -3250,6 +3355,13 @@
                 "action->Filth Wave": {
                     "name": "Filth Wave",
                     "description": "<p><strong>Frequency</strong> once per minute</p>\n<hr />\n<p><strong>Effect</strong> The sewer ooze unleashes a wave of filth, covering all creatures within a @Template[emanation|distance:20]. Each creature in the area must succeed at a @Check[reflex|dc:15|traits:damaging-effect] save or take @Damage[1d4[acid]] damage and take a -10-foot penalty to its Speeds for 1 minute (on a critical failure, the creature also falls @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone}). A creature can spend and Interact action to clean someone off, decreasing the Speed penalty by 5 feet with each action.</p>"
+                }
+            },
+            "system": {
+                "skills": {
+                    "stealth": {
+                        "label": "in sewers"
+                    }
                 }
             }
         },
@@ -3282,6 +3394,13 @@
                 "action->Grab": {
                     "name": "Grab"
                 }
+            },
+            "system": {
+                "skills": {
+                    "stealth": {
+                        "label": "in lair"
+                    }
+                }
             }
         },
         "Jinkin (PFS 1-17)": {
@@ -3301,6 +3420,13 @@
                 "action->Tinker": {
                     "name": "Tinker",
                     "description": "<p>A group of six jinkins can work together for an hour to imbue an item with a curse at a range of 60 feet. While this process is lengthy, it's also unobtrusive and can be performed while @UUID[Compendium.pf2e.actionspf2e.Item.XMcnh4cSI32tljXa]{Hiding}. Jinkins prefer to use this ability on magic items. The curse makes the item unreliable (@Check[flat|dc:5] check or waste any action to Interact with or Activate the item), adds a bizarre requirement to use the item, or imparts some other curse of a similar caliber.</p>"
+                }
+            },
+            "system": {
+                "skills": {
+                    "crafting": {
+                        "label": "traps"
+                    }
                 }
             }
         },
@@ -3543,6 +3669,13 @@
                     "name": "Sneak Attack",
                     "description": "<p>The kobold warrior deals an extra 1d6 precision damage to @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} creatures.</p>"
                 }
+            },
+            "system": {
+                "skills": {
+                    "crafting": {
+                        "label": "traps"
+                    }
+                }
             }
         },
         "Kobold Scout (PFS 1-11)": {
@@ -3556,6 +3689,13 @@
                 "action->Sneak Attack": {
                     "name": "Sneak Attack",
                     "description": "<p>The kobold scout deals an extra 1d6 precision damage to @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} creatures.</p>"
+                }
+            },
+            "system": {
+                "skills": {
+                    "crafting": {
+                        "label": "traps"
+                    }
                 }
             }
         },
@@ -3578,6 +3718,13 @@
                     "name": "Sneak Attack",
                     "description": "<p>The kobold warrior deals an extra 1d4 precision damage to @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} creatures.</p>"
                 }
+            },
+            "system": {
+                "skills": {
+                    "crafting": {
+                        "label": "traps"
+                    }
+                }
             }
         },
         "Kobold Warrior (PFS 1-11)": {
@@ -3592,6 +3739,13 @@
                     "name": "Sneak Attack",
                     "description": "<p>The kobold warrior deals an extra 1d4 precision damage to @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} creatures.</p>"
                 }
+            },
+            "system": {
+                "skills": {
+                    "crafting": {
+                        "label": "traps"
+                    }
+                }
             }
         },
         "Krooth Hatchlings": {
@@ -3600,6 +3754,13 @@
                 "action->Swarming Bites": {
                     "name": "Swarming Bites",
                     "description": "<p>Each enemy in the swarm's space takes @Damage[1d8[piercing]] damage (@Check[reflex|dc:20|basic]) and @Damage[1d4[bleed]].</p>"
+                }
+            },
+            "system": {
+                "skills": {
+                    "stealth": {
+                        "label": "in water"
+                    }
                 }
             }
         },
@@ -3747,6 +3908,13 @@
                 },
                 "action->Grab": {
                     "name": "Grab"
+                }
+            },
+            "system": {
+                "skills": {
+                    "stealth": {
+                        "label": "in undergrowth"
+                    }
                 }
             }
         },
@@ -3931,6 +4099,13 @@
                     "name": "Entangling Slime",
                     "description": "<p>A creature struck by a slurk's slime squirt becomes @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 1} and takes a -5-foot penalty to Speed for 1 hour or until the slime is removed. The slime can be removed with a total of three Interact actions by the entangled creature or creatures adjacent to the creature.</p>\n<p>These actions don't need to be consecutive or made by the same creature.</p>"
                 }
+            },
+            "system": {
+                "skills": {
+                    "acrobatics": {
+                        "label": "to escape"
+                    }
+                }
             }
         },
         "Little Zura (3-4)": {
@@ -3955,6 +4130,13 @@
                 "action->Entangling Slime": {
                     "name": "Entangling Slime",
                     "description": "<p>A creature struck by a slurk's slime squirt becomes @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 1} and takes a -5-foot penalty to Speed for 1 hour or until the slime is removed. The slime can be removed with a total of three Interact actions by the entangled creature or creatures adjacent to the creature.</p>\n<p>These actions don't need to be consecutive or made by the same creature.</p>"
+                }
+            },
+            "system": {
+                "skills": {
+                    "acrobatics": {
+                        "label": "to Escape"
+                    }
                 }
             }
         },
@@ -4285,6 +4467,13 @@
                 "action->Knockdown": {
                     "name": "Knockdown"
                 }
+            },
+            "system": {
+                "skills": {
+                    "survival": {
+                        "label": "to track"
+                    }
+                }
             }
         },
         "Minor Summoning Rune": {
@@ -4366,6 +4555,13 @@
                     "name": "Vengeful Anger",
                     "description": "<p>As long as it isn't @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened}, a mitflit gains a +2 status bonus to damage rolls against a creature that has previously damaged or tormented it.</p>"
                 }
+            },
+            "system": {
+                "skills": {
+                    "diplomacy": {
+                        "label": "vs. arthropods"
+                    }
+                }
             }
         },
         "Mitflit Sneak": {
@@ -4398,6 +4594,13 @@
                 "action->Vengeful Anger": {
                     "name": "Vengeful Anger",
                     "description": "<p>As long as it isn't @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened}, a mitflit gains a +2 status bonus to damage rolls against a creature that has previously damaged or tormented it.</p>"
+                }
+            },
+            "system": {
+                "skills": {
+                    "diplomacy": {
+                        "label": "vs. arthropods"
+                    }
                 }
             }
         },
@@ -5253,6 +5456,13 @@
                     "name": "Sap",
                     "description": "<p>A pine brute's bark secretes sticky sap. Any creature that hits the pine brute with a melee attack, is hit by the pine brute, or otherwise touches the pine brute must succeed at a @Check[reflex|dc:17] save or suffer the effects of a lesser tanglefoot bag, also becoming @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 1} until the sticky substance is removed. A creature striking the pine brute with a weapon or object can automatically succeed at this Reflex save by leaving the object stuck to the pine brute. The object can then be removed with a successful @Check[athletics|dc:17|name:Unstick Object] check (made as a single action).</p>\n<p>A pine brute can have any number of objects stuck to it at a time. The pine brute can release a stuck object by using a single action, and the sap dissolves 1 minute after the pine brute dies, releasing all stuck objects.</p>\n<p>@UUID[Compendium.pf2e.equipment-effects.Item.sgQknR94qDt5ILBx]{Effect: Tanglefoot Bag (Lesser)}</p>"
                 }
+            },
+            "system": {
+                "skills": {
+                    "stealth": {
+                        "label": "in forests"
+                    }
+                }
             }
         },
         "Plum Leshy (1-2)": {
@@ -5627,6 +5837,13 @@
                     "name": "Swarming Claws and Teeth",
                     "description": "<p>Each enemy in the swarm's space takes @Damage[1d4[piercing]] damage and must attempt a @Check[reflex|dc:17|traits:damaging-effect] save.</p>\n<p>A creature affected by this attack can spend 2 actions on its turn to attempt another @Check[reflex|dc:17] to remove the clumsy condition.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature takes half damage</p>\n<p><strong>Failure</strong> The creature takes full damage, is @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 2}, and is exposed to rabies.</p>\n<p><strong>Critical Failure</strong> The creature takes double damage, is clumsy 2, falls @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone}, and is exposed to rabies.</p>"
                 }
+            },
+            "system": {
+                "skills": {
+                    "athletics": {
+                        "label": "to Climb"
+                    }
+                }
             }
         },
         "Raging Forest Fire": {
@@ -5749,6 +5966,13 @@
                     "name": "Swear Vengeance",
                     "description": "<p><strong>Trigger</strong> A creature that Reast can see damages a follower of Groetus other than Reast</p>\n<hr />\n<p><strong>Effect</strong> Reast gains the effect of a 1st-rank @UUID[Compendium.pf2e.spells-srd.Item.Gb7SeieEvd0pL2Eh]{Sure Strike} spell. If Reast makes an attack roll against anyone other than the triggering creature, the true strike ends with no effect.</p>\n<p>Reast can use this reaction once per day.</p>"
                 }
+            },
+            "system": {
+                "skills": {
+                    "performance": {
+                        "label": "to deliver sermons"
+                    }
+                }
             }
         },
         "Reast Mycer (3-4)": {
@@ -5825,6 +6049,13 @@
                 "action->Grab": {
                     "name": "Grab"
                 }
+            },
+            "system": {
+                "skills": {
+                    "athletics": {
+                        "label": "to Swim"
+                    }
+                }
             }
         },
         "Reefclaw Spawn": {
@@ -5848,6 +6079,13 @@
                 },
                 "action->Grab": {
                     "name": "Grab"
+                }
+            },
+            "system": {
+                "skills": {
+                    "athletics": {
+                        "label": "to Swim"
+                    }
                 }
             }
         },
@@ -5973,6 +6211,13 @@
                     "name": "Bloodletting",
                     "description": "<p>When the sea devil deals piercing or slashing damage, it also deals @Damage[1d4[bleed]] if the target was @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} or if the attack was a critical hit.</p>"
                 }
+            },
+            "system": {
+                "skills": {
+                    "athletics": {
+                        "label": "to swim"
+                    }
+                }
             }
         },
         "Seaborn Captain": {
@@ -5993,6 +6238,13 @@
                 "lore->Ocean Lore": {
                     "name": "Ocean Lore"
                 }
+            },
+            "system": {
+                "skills": {
+                    "athletics": {
+                        "label": "to swim"
+                    }
+                }
             }
         },
         "Seaborn Fisher": {
@@ -6012,6 +6264,13 @@
                 },
                 "lore->Ocean Lore": {
                     "name": "Ocean Lore"
+                }
+            },
+            "system": {
+                "skills": {
+                    "athletics": {
+                        "label": "to swim"
+                    }
                 }
             }
         },
@@ -6336,6 +6595,13 @@
                 "action->Swarming Claws and Teeth": {
                     "name": "Swarming Claws and Teeth",
                     "description": "<p>Each enemy in the swarm's space takes @Damage[1d4[piercing]] damage and must attempt a @Check[reflex|dc:17|traits:damaging-effect] save.</p>\n<p>A creature affected by this attack can spend 2 actions on it's turn to attempt another @Check[reflex|dc:17] to remove the clumsy condition.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature takes half damage</p>\n<p><strong>Failure</strong> The creature takes full damage and is @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 2}.</p>\n<p><strong>Critical Failure</strong> The creature takes double damage, is clumsy 2, and falls @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone}.</p>"
+                }
+            },
+            "system": {
+                "skills": {
+                    "athletics": {
+                        "label": "to Climb"
+                    }
                 }
             }
         },
@@ -6723,6 +6989,13 @@
                     "name": "Shrew Venom",
                     "description": "<p><strong>Saving Throw</strong> @Check[fortitude|dc:15]</p>\n<p><strong>Maximum Duration</strong> 6 rounds</p>\n<p><strong>Stage 1</strong> @Damage[1d6[poison]] (1 round)</p>\n<p><strong>Stage 2</strong> @Damage[1d6[poison]] and @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 1}</p>"
                 }
+            },
+            "system": {
+                "skills": {
+                    "athletics": {
+                        "label": "to Climb or Swim"
+                    }
+                }
             }
         },
         "Tough Mountain Goat": {
@@ -7091,6 +7364,13 @@
                     "name": "Shield Push",
                     "description": "<p>The arboreal warden Strides and then makes a shield bash Strike. If the attack hits, the target is pushed 10 feet.</p>"
                 }
+            },
+            "system": {
+                "skills": {
+                    "stealth": {
+                        "label": "in forests"
+                    }
+                }
             }
         },
         "Weak Ceustodaemon (PFS 1-01)": {
@@ -7443,6 +7723,13 @@
                 "action->Grab": {
                     "name": "Grab"
                 }
+            },
+            "system": {
+                "skills": {
+                    "athletics": {
+                        "label": "to swim"
+                    }
+                }
             }
         },
         "Zatqualmish (3-4)": {
@@ -7517,6 +7804,13 @@
                 },
                 "lore->Underworld Lore": {
                     "name": "Underworld Lore"
+                }
+            },
+            "system": {
+                "skills": {
+                    "society": {
+                        "label": "to Create Forgeries"
+                    }
                 }
             }
         },
@@ -7595,6 +7889,13 @@
                 },
                 "lore->Underworld Lore": {
                     "name": "Underworld Lore"
+                }
+            },
+            "system": {
+                "skills": {
+                    "society": {
+                        "label": "to Create Forgeries"
+                    }
                 }
             }
         },
@@ -7803,6 +8104,10 @@
         "speedsDetails": "system.attributes.speed.details",
         "sensesDetails": "system.perception.details",
         "languagesDetails": "system.details.languages.details",
+        "skills": {
+            "converter": "translateSkills",
+            "path": "system.skills"
+        },
         "descriptionHazard": "system.details.description",
         "disable": "system.details.disable",
         "reset": "system.details.reset",

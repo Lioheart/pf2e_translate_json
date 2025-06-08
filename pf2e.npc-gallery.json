@@ -82,6 +82,13 @@
                 "lore->Sailing Lore": {
                     "name": "Sailing Lore"
                 }
+            },
+            "system": {
+                "skills": {
+                    "stealth": {
+                        "label": "underwater"
+                    }
+                }
             }
         },
         "Barkeep": {
@@ -550,6 +557,13 @@
                 "action->Throw Rock": {
                     "name": "Throw Rock"
                 }
+            },
+            "system": {
+                "skills": {
+                    "stealth": {
+                        "label": "in rocky terrain"
+                    }
+                }
             }
         },
         "Tempest-Sun Mage": {
@@ -679,6 +693,10 @@
         "rules": {
             "converter": "translateRules",
             "path": "system.rules"
+        },
+        "skills": {
+            "converter": "translateSkills",
+            "path": "system.skills"
         }
     }
 }

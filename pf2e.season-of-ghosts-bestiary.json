@@ -283,6 +283,13 @@
                     "name": "Stunning Despair",
                     "description": "<p>The false governor unleashes several overwhelming sobs of despair. Creatures within 30 feet must attempt a @Check[will|dc:29] save to avoid becoming @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned 1} (@UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned 3} on a critical failure). The false governor can't use Stunning Despair again for [[/gmr 1d4 #Recharge Stunning Despair]]{1d4 rounds}.</p>"
                 }
+            },
+            "system": {
+                "skills": {
+                    "deception": {
+                        "label": "Impersonating Governor Heh Shan-Bao"
+                    }
+                }
             }
         },
         "False Victory": {
@@ -365,6 +372,13 @@
                 "action->Thicket Walker": {
                     "name": "Thicket Walker",
                     "description": "<p>Thatchlings ignore difficult terrain caused by brambles, tangled grass, and undergrowth, even those manipulated by magic.</p>"
+                }
+            },
+            "system": {
+                "skills": {
+                    "stealth": {
+                        "label": "in undergrowth"
+                    }
                 }
             }
         },
@@ -864,6 +878,13 @@
                     "name": "Tinker",
                     "description": "<p>A group of six jinkins can work together for an hour to imbue an item with a curse at a range of 60 feet. While this process is lengthy, it's also unobtrusive and can be performed while @UUID[Compendium.pf2e.actionspf2e.Item.XMcnh4cSI32tljXa]{Hiding}. Jinkins prefer to use this ability on magic items. The curse makes the item unreliable (@Check[flat|dc:5] check or waste any action to Interact with or Activate the item), adds a bizarre requirement to use the item, or imparts some other curse of a similar caliber.</p>"
                 }
+            },
+            "system": {
+                "skills": {
+                    "crafting": {
+                        "label": "traps"
+                    }
+                }
             }
         },
         "Kagekuma": {
@@ -904,6 +925,13 @@
                 "action->Shed Bundle": {
                     "name": "Shed Bundle",
                     "description": "<p><strong>Requirements</strong> The kagekuma has a manifested bundle</p>\n<p><strong>Frequency</strong> once per day</p>\n<hr />\n<p><strong>Effect</strong> The kagekuma causes its bundle to vanish, Strides, and then attempts a kusarigama Strike and a bite Strike.</p>"
+                }
+            },
+            "system": {
+                "skills": {
+                    "deception": {
+                        "label": "to Impersonate a peasant or laborer"
+                    }
                 }
             }
         },
@@ -1570,6 +1598,13 @@
                     "name": "Thicket Walker",
                     "description": "<p>Thatchlings ignore difficult terrain caused by brambles, tangled grass, and undergrowth, even those manipulated by magic.</p>"
                 }
+            },
+            "system": {
+                "skills": {
+                    "stealth": {
+                        "label": "in undergrowth"
+                    }
+                }
             }
         },
         "Ren Mei Li": {
@@ -1790,6 +1825,13 @@
                 },
                 "action->Grab": {
                     "name": "Grab"
+                }
+            },
+            "system": {
+                "skills": {
+                    "acrobatics": {
+                        "label": "to Escape"
+                    }
                 }
             }
         },
@@ -2053,6 +2095,13 @@
                     "name": "Thicket Walker",
                     "description": "<p>Thatchlings ignore difficult terrain caused by brambles, tangled grass, and undergrowth, even those manipulated by magic.</p>"
                 }
+            },
+            "system": {
+                "skills": {
+                    "stealth": {
+                        "label": "in undergrowth"
+                    }
+                }
             }
         },
         "The Chewer": {
@@ -2183,6 +2232,13 @@
                 "action->Far Too Drunk": {
                     "name": "Far Too Drunk",
                     "description": "<p>The jinkins are inefficient with their actions and always spend one action each round to cackle, stumble in place, or otherwise perform ineffective antics.</p>"
+                }
+            },
+            "system": {
+                "skills": {
+                    "crafting": {
+                        "label": "traps"
+                    }
                 }
             }
         },
@@ -2437,6 +2493,10 @@
         "rules": {
             "converter": "translateRules",
             "path": "system.rules"
+        },
+        "skills": {
+            "converter": "translateSkills",
+            "path": "system.skills"
         },
         "descriptionHazard": "system.details.description",
         "disable": "system.details.disable",

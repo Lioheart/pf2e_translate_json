@@ -37,6 +37,13 @@
                 "action->Knockdown": {
                     "name": "Knockdown"
                 }
+            },
+            "system": {
+                "skills": {
+                    "stealth": {
+                        "label": "in forests and snow"
+                    }
+                }
             }
         },
         "Collapsing Structure": {
@@ -1259,6 +1266,13 @@
                     "name": "Vault",
                     "description": "<p>Spring-Heeled Jack jumps up to 20 feet in any direction, including vertically. This movement doesn't trigger reactions based on movement.</p>"
                 }
+            },
+            "system": {
+                "skills": {
+                    "athletics": {
+                        "label": "to High Jump or Long Jump"
+                    }
+                }
             }
         },
         "Storm Discharge": {
@@ -1977,6 +1991,13 @@
                 "lore->Ocean Lore": {
                     "name": "Ocean Lore"
                 }
+            },
+            "system": {
+                "skills": {
+                    "survival": {
+                        "label": "to navigate"
+                    }
+                }
             }
         },
         "Temteki": {
@@ -2016,6 +2037,13 @@
                 },
                 "action->Push": {
                     "name": "Push"
+                }
+            },
+            "system": {
+                "skills": {
+                    "stealth": {
+                        "label": "in forests"
+                    }
                 }
             }
         },
@@ -2073,6 +2101,13 @@
                 },
                 "action->Grab": {
                     "name": "Grab"
+                }
+            },
+            "system": {
+                "skills": {
+                    "stealth": {
+                        "label": "in water"
+                    }
                 }
             }
         },
@@ -2238,6 +2273,10 @@
         "allSavesBonus": "system.attributes.allSaves.value",
         "speedsDetails": "system.attributes.speed.details",
         "sensesDetails": "system.perception.details",
-        "languagesDetails": "system.details.languages.details"
+        "languagesDetails": "system.details.languages.details",
+        "skills": {
+            "converter": "translateSkills",
+            "path": "system.skills"
+        }
     }
 }

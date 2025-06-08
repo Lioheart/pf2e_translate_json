@@ -62,6 +62,13 @@
                     "name": "Siphon Vitality",
                     "description": "<p>The blood ooze draws forth blood from nearby creatures, causing their flesh to break open and blood to spill out which replenishes the blood ooze. Each living creature @Template[emanation|distance:15]{within 15 feet} takes @Damage[3d6[slashing]] damage (@Check[fortitude|dc:21|basic] save).</p>\n<p>The blood ooze regains an amount of Hit Points equal to half the damage Siphon Vitality dealt to the single creature that took the most damage.</p>"
                 }
+            },
+            "system": {
+                "skills": {
+                    "stealth": {
+                        "label": "if hiding inside a body"
+                    }
+                }
             }
         },
         "Bloodlash Bush": {
@@ -253,6 +260,13 @@
                 "action->Icy Death": {
                     "name": "Icy Death",
                     "description": "<p>When an icy rat is slain, its body explodes in a burst of frozen fur and bone, dealing @Damage[2d4[cold]] damage to all adjacent creatures (@Check[reflex|dc:14|basic] save).</p>"
+                }
+            },
+            "system": {
+                "skills": {
+                    "athletics": {
+                        "label": "to Climb or Swim"
+                    }
                 }
             }
         },
@@ -598,6 +612,10 @@
         "speedsDetails": "system.attributes.speed.details",
         "sensesDetails": "system.perception.details",
         "languagesDetails": "system.details.languages.details",
+        "skills": {
+            "converter": "translateSkills",
+            "path": "system.skills"
+        },
         "descriptionHazard": "system.details.description",
         "disable": "system.details.disable",
         "reset": "system.details.reset",

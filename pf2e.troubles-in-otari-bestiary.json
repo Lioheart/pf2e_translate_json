@@ -7,6 +7,13 @@
                 "strike-melee->Jaws": {
                     "name": "Jaws"
                 }
+            },
+            "system": {
+                "skills": {
+                    "athletics": {
+                        "label": "to Climb or Swim"
+                    }
+                }
             }
         },
         "Bugbear Marauder": {
@@ -74,6 +81,13 @@
                 "lore->Fiend Lore": {
                     "name": "Fiend Lore"
                 }
+            },
+            "system": {
+                "skills": {
+                    "diplomacy": {
+                        "label": "against Devils"
+                    }
+                }
             }
         },
         "Kobold Trapmaster": {
@@ -124,6 +138,13 @@
                 "action->Unburdened Iron": {
                     "name": "Unburdened Iron",
                     "description": "<p>Kotgar ignores the reduction to his Speed from armor and deducts 5 feet from any one penalty to his Speed (such as from a spell).</p>"
+                }
+            },
+            "system": {
+                "skills": {
+                    "athletics": {
+                        "label": "to shove"
+                    }
                 }
             }
         },
@@ -209,6 +230,13 @@
                 },
                 "lore->Demon Lore": {
                     "name": "Demon Lore"
+                }
+            },
+            "system": {
+                "skills": {
+                    "diplomacy": {
+                        "label": "against Demons"
+                    }
                 }
             }
         },
@@ -378,6 +406,10 @@
         "rules": {
             "converter": "translateRules",
             "path": "system.rules"
+        },
+        "skills": {
+            "converter": "translateSkills",
+            "path": "system.skills"
         },
         "publicNotes": "system.details.publicNotes",
         "privateNotes": "system.details.privateNotes",

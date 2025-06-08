@@ -237,6 +237,13 @@
                 "action->Improved Grab": {
                     "name": "Improved Grab"
                 }
+            },
+            "system": {
+                "skills": {
+                    "survival": {
+                        "label": "to Track"
+                    }
+                }
             }
         },
         "Mythic Griffon": {
@@ -540,6 +547,13 @@
                     "name": "Mythic Power",
                     "description": "<p>The creature has a pool of 3 Mythic Points, and can spend those Mythic Points for any of the actions it has.</p>"
                 }
+            },
+            "system": {
+                "skills": {
+                    "nature": {
+                        "label": ""
+                    }
+                }
             }
         },
         "Trump of the Oliphaunt": {
@@ -805,6 +819,10 @@
         "rules": {
             "converter": "translateRules",
             "path": "system.rules"
+        },
+        "skills": {
+            "converter": "translateSkills",
+            "path": "system.skills"
         },
         "descriptionHazard": "system.details.description",
         "disable": "system.details.disable",

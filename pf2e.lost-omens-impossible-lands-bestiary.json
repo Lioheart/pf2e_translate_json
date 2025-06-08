@@ -430,6 +430,13 @@
                 "action->Grab": {
                     "name": "Grab"
                 }
+            },
+            "system": {
+                "skills": {
+                    "stealth": {
+                        "label": "in blood or water"
+                    }
+                }
             }
         },
         "Spell Pitchers": {
@@ -552,6 +559,10 @@
         "disable": "system.details.disable",
         "reset": "system.details.reset",
         "routine": "system.details.routine",
-        "stealth": "system.attributes.stealth.details"
+        "stealth": "system.attributes.stealth.details",
+        "skills": {
+            "converter": "translateSkills",
+            "path": "system.skills"
+        }
     }
 }

@@ -193,6 +193,13 @@
                     "name": "Trap Tinker",
                     "description": "<p>Noolik can cause a complex mechanical trap to continue longer than its normal duration. She moves up to her speed and Interacts with a trap. The trap can use its reaction during its next round as well as its routine, although its initiative doesn't change.</p>"
                 }
+            },
+            "system": {
+                "skills": {
+                    "crafting": {
+                        "label": "traps"
+                    }
+                }
             }
         },
         "Sand Wolf": {
@@ -227,6 +234,13 @@
                 },
                 "action->Grab": {
                     "name": "Grab"
+                }
+            },
+            "system": {
+                "skills": {
+                    "stealth": {
+                        "label": "in deserts"
+                    }
                 }
             }
         },
@@ -263,6 +277,13 @@
                 "action->Rebuild Armor": {
                     "name": "Rebuild Armor",
                     "description": "<p><strong>Requirements</strong> The scrapborn's previous action was a successful claw Strike against a target wearing armor and that armor is not broken</p>\n<hr />\n<p><strong>Effect</strong> The scrapborn pulls and rips at the target's armor. The target must attempt a @Check[reflex|dc:20] save.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target's armor takes @Damage[1d8[piercing]] damage, ignoring the armor's Hardness.</p>\n<p><strong>Failure</strong> The target's armor takes @Damage[2d8[piercing]] damage, which ignores the armor's Hardness; if this causes the armor to become broken, the scrapborn can incorporate the removed armor piece into its own body and raise its AC by 1 (to a maximum of 22).</p>\n<p><strong>Critical Failure</strong> As failure, except instead of damage, the target's armor is automatically reduced to its BT and the scrapborn increases its AC by 2.</p>"
+                }
+            },
+            "system": {
+                "skills": {
+                    "stealth": {
+                        "label": "in sewers and scrapyards"
+                    }
                 }
             }
         },
@@ -446,6 +467,10 @@
         "allSavesBonus": "system.attributes.allSaves.value",
         "speedsDetails": "system.attributes.speed.details",
         "sensesDetails": "system.perception.details",
-        "languagesDetails": "system.details.languages.details"
+        "languagesDetails": "system.details.languages.details",
+        "skills": {
+            "converter": "translateSkills",
+            "path": "system.skills"
+        }
     }
 }

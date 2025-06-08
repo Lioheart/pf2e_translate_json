@@ -634,6 +634,13 @@
                 "lore->Theater Lore": {
                     "name": "Theater Lore"
                 }
+            },
+            "system": {
+                "skills": {
+                    "performance": {
+                        "label": "with violin"
+                    }
+                }
             }
         },
         "Father Skinsaw": {
@@ -810,6 +817,13 @@
                 "action->Sticky Slime": {
                     "name": "Sticky Slime",
                     "description": "<p>A creature that's critically hit by a furnerico's acidic slime becomes @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Immobilized} until they @UUID[Compendium.pf2e.actionspf2e.Item.SkZAQRkLLkmBQNB9]{Escape} (DC 34) or 1 minute passes, after which the slime dissolves.</p>"
+                }
+            },
+            "system": {
+                "skills": {
+                    "stealth": {
+                        "label": "to Hide in sewage"
+                    }
                 }
             }
         },
@@ -2040,6 +2054,13 @@
                 "lore->Theater Lore": {
                     "name": "Theater Lore"
                 }
+            },
+            "system": {
+                "skills": {
+                    "performance": {
+                        "label": "when acting, orating, performing comedy, or singing"
+                    }
+                }
             }
         },
         "Prince of Propaganda": {
@@ -2131,6 +2152,13 @@
                 "action->Perfect Camouflage": {
                     "name": "Perfect Camouflage",
                     "description": "<p><strong>Requirements</strong> The skull peeler is in a treetop or standing on a tree limb</p>\n<hr />\n<p><strong>Effect</strong> Until the next time it acts, the skull peeler hangs perfectly still, blending into the treetop surroundings. It has an automatic result of 36 on Stealth checks and DCs to @UUID[Compendium.pf2e.actionspf2e.Item.XMcnh4cSI32tljXa]{Hide} from any creature more than 10 feet away from it.</p>"
+                }
+            },
+            "system": {
+                "skills": {
+                    "deception": {
+                        "label": "to pose as a harmless pet"
+                    }
                 }
             }
         },
@@ -2396,6 +2424,13 @@
                     "name": "Ranged Trip",
                     "description": "<p>A Leng spider can use a web bola to @UUID[Compendium.pf2e.actionspf2e.Item.ge56Lu1xXVFYUnLP]{Trip} a target with the Athletics skill. The skill check takes a -2 circumstance penalty. A web bola deals no damage when used to Trip.</p>"
                 }
+            },
+            "system": {
+                "skills": {
+                    "crafting": {
+                        "label": "to make traps"
+                    }
+                }
             }
         },
         "Rusalka": {
@@ -2454,6 +2489,13 @@
                 },
                 "action->Improved Grab": {
                     "name": "Improved Grab"
+                }
+            },
+            "system": {
+                "skills": {
+                    "performance": {
+                        "label": "to sing"
+                    }
                 }
             }
         },
@@ -2735,6 +2777,13 @@
                     "name": "Sneak Attack",
                     "description": "<p>The Final Herald deals 3d6 extra precision damage to @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} creatures.</p>"
                 }
+            },
+            "system": {
+                "skills": {
+                    "deception": {
+                        "label": "to Impersonate a forgettable background character"
+                    }
+                }
             }
         },
         "Thunderclap Rune": {
@@ -2811,6 +2860,13 @@
                 "lore->Norgorber Lore": {
                     "name": "Norgorber Lore"
                 }
+            },
+            "system": {
+                "skills": {
+                    "stealth": {
+                        "label": "in water"
+                    }
+                }
             }
         },
         "Vorens": {
@@ -2863,6 +2919,13 @@
                 "action->Enervating Howl": {
                     "name": "Enervating Howl",
                     "description": "<p>The waxen effigy emits a gurgling howl, sapping the life energy from all living creatures within 30 feet. Affected creatures must attempt a @Check[fortitude|dc:40] save. The waxen effigy can't use Enervating Howl again for [[/gmr 1d4 #Recharge Enervating Howl]]{1d4 rounds}</p><hr /><p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature takes @Damage[6d6[void]] damage and is @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 1}.</p>\n<p><strong>Failure</strong> The creature takes @Damage[12d6[void]] damage and is @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 2}.</p>\n<p><strong>Critical Failure</strong> The creature takes @Damage[24d6[void]] damage, is drained 2, and is @UUID[Compendium.pf2e.conditionitems.Item.3uh1r86TzbQvosxv]{Doomed 1} for as long as they have the drained condition.</p>"
+                }
+            },
+            "system": {
+                "skills": {
+                    "stealth": {
+                        "label": "among other wax statues"
+                    }
                 }
             }
         },
@@ -2929,6 +2992,10 @@
         "allSavesBonus": "system.attributes.allSaves.value",
         "speedsDetails": "system.attributes.speed.details",
         "sensesDetails": "system.perception.details",
-        "languagesDetails": "system.details.languages.details"
+        "languagesDetails": "system.details.languages.details",
+        "skills": {
+            "converter": "translateSkills",
+            "path": "system.skills"
+        }
     }
 }

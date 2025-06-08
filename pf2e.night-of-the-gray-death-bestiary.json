@@ -62,6 +62,13 @@
                     "name": "Skip Between",
                     "description": "<p>The chakanaj sahkil moves from the Material Plane to the Ethereal Plane or vice versa, with the effects of @UUID[Compendium.pf2e.spells-srd.Item.D2nPKbIS67m9199U]{Ethereal Jaunt} except the effect has an unlimited duration and can be Dismissed. A summoned sahkil can't use Skip Between.</p>"
                 }
+            },
+            "system": {
+                "skills": {
+                    "deception": {
+                        "label": "to impersonate clothing"
+                    }
+                }
             }
         },
         "Conqueror Worm": {
@@ -212,6 +219,13 @@
                 "action->Surprise Attack": {
                     "name": "Surprise Attack",
                     "description": "<p>On the first round of combat, creatures that haven't acted yet are @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} to the Gray Gardener assassin.</p>"
+                }
+            },
+            "system": {
+                "skills": {
+                    "stealth": {
+                        "label": "to hide"
+                    }
                 }
             }
         },
@@ -769,6 +783,13 @@
                     "name": "Surprise Attack",
                     "description": "<p>On the first round of combat, creatures that haven't acted yet are @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} to the Gray Gardener assassin.</p>"
                 }
+            },
+            "system": {
+                "skills": {
+                    "stealth": {
+                        "label": "to hide"
+                    }
+                }
             }
         }
     },
@@ -780,6 +801,10 @@
         "rules": {
             "converter": "translateRules",
             "path": "system.rules"
+        },
+        "skills": {
+            "converter": "translateSkills",
+            "path": "system.skills"
         },
         "publicNotes": "system.details.publicNotes",
         "privateNotes": "system.details.privateNotes",

@@ -177,6 +177,13 @@
                     "name": "The Upper Hand",
                     "description": "<p><strong>Requirements</strong> The cadaverous rake's last action was a melee Strike that critically succeeded</p>\n<hr />\n<p><strong>Effect</strong> The cadaverous rake @UUID[Compendium.pf2e.actionspf2e.Item.Dt6B1slsBy8ipJu9]{Disarms} the creature they hit, as a critical success on a Disarm attempt. The weapon falls to the ground in a space adjacent to the creature (rake's choice).</p>"
                 }
+            },
+            "system": {
+                "skills": {
+                    "athletics": {
+                        "label": "to Disarm"
+                    }
+                }
             }
         },
         "Cannibalistic Echoes": {
@@ -337,6 +344,13 @@
                 },
                 "action->Grab": {
                     "name": "Grab"
+                }
+            },
+            "system": {
+                "skills": {
+                    "survival": {
+                        "label": "to track anyone involved in the desecration that created them"
+                    }
                 }
             }
         },
@@ -548,6 +562,13 @@
                         }
                     }
                 }
+            },
+            "system": {
+                "skills": {
+                    "intimidation": {
+                        "label": "when skinless"
+                    }
+                }
             }
         },
         "Ectoplasmic Grasp": {
@@ -721,6 +742,13 @@
                 "action->Brain Rot": {
                     "name": "Brain Rot",
                     "description": "<p><strong>Saving Throw</strong> @Check[fortitude|dc:14]</p>\n<hr />\n<p><strong>Onset</strong> 1 day</p>\n<p><strong>Stage 1</strong> @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 1} (3 days)</p>\n<p><strong>Stage 2</strong> @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 2} and @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1} (1 day)</p>\n<p><strong>Stage 3</strong> @UUID[Compendium.pf2e.conditionitems.Item.6uEgoh53GbXuHpTF]{Paralyzed} with spasms (1 day)</p>\n<p><strong>Stage 4</strong> death</p>"
+                }
+            },
+            "system": {
+                "skills": {
+                    "acrobatics": {
+                        "label": "to Maneuver in Flight"
+                    }
                 }
             }
         },
@@ -1648,6 +1676,13 @@
                     "name": "Paralyzing Spew",
                     "description": "<p>The lacedon discharges a spray of carrion vomit at a creature within 20 feet, dealing @Damage[1d6[poison]] damage with a @Check[fortitude|dc:17|basic]. A non-elf creature that fails its save is also @UUID[Compendium.pf2e.conditionitems.Item.6uEgoh53GbXuHpTF]{Paralyzed}. It can attempt a new save to end the paralysis at the end of each of its turns, and the DC cumulatively decreases by 1 on each such save. The lacedon can't use Paralyzing Spew again for [[/gmr 1d4 #Recharge Paralyzing Spew]]{1d4 rounds}.</p>"
                 }
+            },
+            "system": {
+                "skills": {
+                    "athletics": {
+                        "label": "to Swim"
+                    }
+                }
             }
         },
         "Last Guard": {
@@ -1723,6 +1758,13 @@
                 },
                 "action->Grab": {
                     "name": "Grab"
+                }
+            },
+            "system": {
+                "skills": {
+                    "athletics": {
+                        "label": "to Grapple"
+                    }
                 }
             }
         },
@@ -2237,6 +2279,13 @@
                 "action->Feral Leap": {
                     "name": "Feral Leap",
                     "description": "<p>The predatory rabbit jumps with a maximum height and distance each equal to half its Speed. This movement doesn't trigger reactions. At any point, the predatory rabbit attempts a jaws Strike.</p>"
+                }
+            },
+            "system": {
+                "skills": {
+                    "athletics": {
+                        "label": "when jumping"
+                    }
                 }
             }
         },
@@ -3035,6 +3084,13 @@
                 "action->Incessant Goading": {
                     "name": "Incessant Goading",
                     "description": "<p>The skull chooses one creature within 60 feet and antagonizes it mercilessly. The target must attempt a @Check[will|dc:22] save to resist the effect.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected and is temporarily immune for 1 minute.</p>\n<p><strong>Success</strong> The target is unaffected.</p>\n<p><strong>Failure</strong> The target is @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} for 1 round. On its next turn, if the taunting skull is within the target's reach, the target wildly attacks the taunting skull as many times as possible.</p>\n<p><strong>Critical Failure</strong> As failure, but the target also immediately performs a Strike against itself; this Strike doesn't take any actions.</p>"
+                }
+            },
+            "system": {
+                "skills": {
+                    "intimidation": {
+                        "label": "to Demoralize"
+                    }
                 }
             }
         },
@@ -3863,6 +3919,10 @@
         "disable": "system.details.disable",
         "reset": "system.details.reset",
         "routine": "system.details.routine",
-        "stealth": "system.attributes.stealth.details"
+        "stealth": "system.attributes.stealth.details",
+        "skills": {
+            "converter": "translateSkills",
+            "path": "system.skills"
+        }
     }
 }

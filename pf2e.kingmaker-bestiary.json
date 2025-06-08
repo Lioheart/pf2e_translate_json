@@ -809,6 +809,13 @@
                     "name": "Spew Seed Pod",
                     "description": "<p>The bloom of Lamashtu's central stalk disgorges a pulsing seed pod from its flower, spitting it at a range of up to 60 feet and creating a @Template[burst|distance:20] when the seed pod explodes into a spray of supernatural acidic poison. All creatures in this area must attempt a @Check[reflex|dc:29] save. The bloom of Lamashtu can't Spew Seed Pod for [[/gmr 1d4 #Recharge Spew Seed Pod]]{1d4 rounds}.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature takes @Damage[3d6[acid]] damage and @Damage[3d6[poison]] damage.</p>\n<p><strong>Failure</strong> The creature takes @Damage[5d6[acid]] damage and @Damage[5d6[poison]] damage and is exposed to the bloom curse.</p>\n<p><strong>Critical Failure</strong> As failure, but @Damage[10d6[acid]] damage and @Damage[10d6[poison]] damage, plus knocked @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone} by the force of the blast.</p>"
                 }
+            },
+            "system": {
+                "skills": {
+                    "stealth": {
+                        "label": "in wooded or underground areas"
+                    }
+                }
             }
         },
         "Bloomborn Athach": {
@@ -882,6 +889,13 @@
                     "name": "Bog Rot",
                     "description": "<p>This affliction can't be reduced below stage 1, nor can the damage from it be healed, until it's successfully treated with remove curse or a similar effect; the affliction can then be removed as normal for a disease. A creature killed by bog rot melts into a noxious sludge and can't be brought back to life except by a 7th-rank @UUID[Compendium.pf2e.spells-srd.Item.kqhPt9344UkcGVYO]{Resurrect} ritual or similar magic</p>\n<p><strong>Saving Throw</strong> @Check[fortitude|dc:28]</p>\n<p><strong>Stage 1</strong> carrier with no ill effect (1 minute)</p>\n<p><strong>Stage 2</strong> @Damage[3d6[void]] damage and @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 1} (1 day)</p>"
                 }
+            },
+            "system": {
+                "skills": {
+                    "stealth": {
+                        "label": "while buried in a bog"
+                    }
+                }
             }
         },
         "Boggard Cultist": {
@@ -952,6 +966,13 @@
                 "action->Tongue Grab": {
                     "name": "Tongue Grab",
                     "description": "<p>If the boggard warden hits a creature with its tongue, that creature becomes @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed} by the boggard. Unlike with a normal Grab, the creature isn't @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Immobilized}, but it can't move beyond the reach of the boggard's tongue. A creature can sever the tongue by hitting AC 24 and dealing at least 10 slashing damage. Though this doesn't deal any damage to the boggard, it prevents it from using its tongue Strike until it regrows its tongue, which takes a week.</p>"
+                }
+            },
+            "system": {
+                "skills": {
+                    "stealth": {
+                        "label": "in water"
+                    }
                 }
             }
         },
@@ -1174,6 +1195,13 @@
                 "action->Unbalancing Blow": {
                     "name": "Unbalancing Blow",
                     "description": "<p>Whenever Chief Sootscale critically hits and deals damage to a foe with a Strike, the creature struck is @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} against his attacks until the end of his next turn.</p>"
+                }
+            },
+            "system": {
+                "skills": {
+                    "crafting": {
+                        "label": "traps"
+                    }
                 }
             }
         },
@@ -1434,6 +1462,13 @@
                 "action->Tortuous Touch": {
                     "name": "Tortuous Touch",
                     "description": "<p>A creature struck by the defaced naiad queen's painful caress Strike must attempt a @Check[fortitude|dc:36] save. On a failure, painful, jagged wounds open on the creature's body, the pain of which makes it @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 1} (@UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 2} and fall @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone} on a critical failure). The clumsy condition is permanent until it is removed via an effect like @UUID[Compendium.pf2e.spells-srd.Item.SnaLVgxZ9ryUFmUr]{Restoration}.</p>"
+                }
+            },
+            "system": {
+                "skills": {
+                    "athletics": {
+                        "label": "to Swim"
+                    }
                 }
             }
         },
@@ -1804,6 +1839,13 @@
                 "action->Grab": {
                     "name": "Grab"
                 }
+            },
+            "system": {
+                "skills": {
+                    "acrobatics": {
+                        "label": "to Maneuver in Flight"
+                    }
+                }
             }
         },
         "Enormous Flame Drake": {
@@ -1892,6 +1934,13 @@
                 },
                 "lore->First World Lore": {
                     "name": "First World Lore"
+                }
+            },
+            "system": {
+                "skills": {
+                    "athletics": {
+                        "label": "to Swim"
+                    }
                 }
             }
         },
@@ -2286,6 +2335,13 @@
                     "name": "Targeting Shot",
                     "description": "<p><strong>Requirements</strong> Gaetane is currently suffering a multiple attack penalty</p>\n<hr />\n<p><strong>Effect</strong> Gaetane aims carefully, then makes an oathbow Strike; he ignores the target's @UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{Concealed} condition and all cover.</p>"
                 }
+            },
+            "system": {
+                "skills": {
+                    "athletics": {
+                        "label": "to Climb or Swim"
+                    }
+                }
             }
         },
         "Gedovius": {
@@ -2491,6 +2547,13 @@
                 "action->Vengeful Anger": {
                     "name": "Vengeful Anger",
                     "description": "<p>As long as it isn't @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened}, a mitflit gains a +2 status bonus to damage rolls against a creature that has previously damaged or tormented it.</p>"
+                }
+            },
+            "system": {
+                "skills": {
+                    "diplomacy": {
+                        "label": "vs. arthropods"
+                    }
                 }
             }
         },
@@ -2884,6 +2947,13 @@
                     "name": "Storm of Jaws",
                     "description": "<p>The hydra makes a number of Strikes up to its number of heads, each against a different target. These attacks count toward the hydra's multiple attack penalty, but the multiple attack penalty doesn't increase until after the hydra makes all its attacks.</p>"
                 }
+            },
+            "system": {
+                "skills": {
+                    "stealth": {
+                        "label": "in water"
+                    }
+                }
             }
         },
         "Horagnamon": {
@@ -2934,6 +3004,13 @@
                 },
                 "lore->River Lore": {
                     "name": "River Lore"
+                }
+            },
+            "system": {
+                "skills": {
+                    "athletics": {
+                        "label": "to Jump"
+                    }
                 }
             }
         },
@@ -3078,6 +3155,13 @@
                 "action->Improved Grab": {
                     "name": "Improved Grab"
                 }
+            },
+            "system": {
+                "skills": {
+                    "stealth": {
+                        "label": "in vegetation"
+                    }
+                }
             }
         },
         "Irahkatu": {
@@ -3108,6 +3192,13 @@
                 },
                 "action->Improved Grab": {
                     "name": "Improved Grab"
+                }
+            },
+            "system": {
+                "skills": {
+                    "deception": {
+                        "label": "when using Voice Imitation"
+                    }
                 }
             }
         },
@@ -3497,6 +3588,13 @@
                     "name": "Wide Swing",
                     "description": "<p>The frost giant makes a single greataxe Strike and compares the attack roll result to the ACs of up to two foes within its reach. This counts as two attacks for the frost giant's multiple attack penalty.</p>"
                 }
+            },
+            "system": {
+                "skills": {
+                    "stealth": {
+                        "label": "in snow"
+                    }
+                }
             }
         },
         "Kargstaad's Giant": {
@@ -3535,6 +3633,13 @@
                 "action->Wide Swing": {
                     "name": "Wide Swing",
                     "description": "<p>The frost giant makes a single greataxe Strike and compares the attack roll result to the ACs of up to two foes within its reach. This counts as two attacks for the frost giant's multiple attack penalty.</p>"
+                }
+            },
+            "system": {
+                "skills": {
+                    "stealth": {
+                        "label": "in snow"
+                    }
                 }
             }
         },
@@ -4246,6 +4351,13 @@
                     "name": "Swarming Bites",
                     "description": "<p>Each enemy in the swarm's space takes @Damage[7d8[piercing]] damage (@Check[reflex|dc:40|basic]) and is exposed to mandragora swarm venom. A successful save negates the poison exposure.</p>"
                 }
+            },
+            "system": {
+                "skills": {
+                    "stealth": {
+                        "label": "in vegetation"
+                    }
+                }
             }
         },
         "Mastiff Of Tindalos": {
@@ -4283,6 +4395,13 @@
                 "action->Angled Entry": {
                     "name": "Angled Entry",
                     "description": "<p>The hound of Tindalos casts a 7th-rank @UUID[Compendium.pf2e.spells-srd.Item.VlNcjmYyu95vOUe8]{Translocate} spell, but it must transport itself into a space adjacent to an angle of 90\u00ba (or more acute) in the structure or environment around it. For example, it could teleport to a space adjacent to a wall (using the angle between the wall and floor) or a corner in a room, or adjacent to a sizable tree growing straight up out of the ground, but not to a flat plain or a room with only curved corners and edges.</p>\n<p>Once per day, the hound can use this ability to plane shift to or from the Dimension of Time, with the same restrictions on what angles it can appear next to.</p>"
+                }
+            },
+            "system": {
+                "skills": {
+                    "survival": {
+                        "label": "to Track"
+                    }
                 }
             }
         },
@@ -4969,6 +5088,13 @@
                     "name": "Shell Defense",
                     "description": "<p>Old Crackjaw retracts its limbs and head into its shell and ends its turn. This increases its AC to 25, but it can't act except to reemerge, which it can do as a single action.</p>"
                 }
+            },
+            "system": {
+                "skills": {
+                    "stealth": {
+                        "label": "in Water"
+                    }
+                }
             }
         },
         "Oleg": {
@@ -5365,6 +5491,13 @@
                     "name": "Vengeful Anger",
                     "description": "<p>As long as it isn't @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened}, a mitflit gains a +2 status bonus to damage rolls against a creature that has previously damaged or tormented it.</p>"
                 }
+            },
+            "system": {
+                "skills": {
+                    "diplomacy": {
+                        "label": "vs. arthropods"
+                    }
+                }
             }
         },
         "Prazil": {
@@ -5758,6 +5891,13 @@
                     "name": "Tongue Grab",
                     "description": "<p>If the boggard warden hits a creature with its tongue, that creature becomes @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed} by the boggard. Unlike with a normal Grab, the creature isn't @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Immobilized}, but it can't move beyond the reach of the boggard's tongue. A creature can sever the tongue by hitting AC 27 and dealing at least 14 slashing damage. Though this doesn't deal any damage to the boggard, it prevents it from using its tongue Strike until it regrows its tongue, which takes a week.</p>"
                 }
+            },
+            "system": {
+                "skills": {
+                    "stealth": {
+                        "label": "in water"
+                    }
+                }
             }
         },
         "Shambler": {
@@ -5794,6 +5934,13 @@
                 },
                 "action->Grab": {
                     "name": "Grab"
+                }
+            },
+            "system": {
+                "skills": {
+                    "stealth": {
+                        "label": "in forests or swamps"
+                    }
                 }
             }
         },
@@ -6018,6 +6165,13 @@
                 "action->Sunder Objects": {
                     "name": "Sunder Objects",
                     "description": "<p>When a storm-struck arboreal damages an item or structure it deals an additional [[/r 3d12]] damage to that item or structure.</p>"
+                }
+            },
+            "system": {
+                "skills": {
+                    "stealth": {
+                        "label": "in forests"
+                    }
                 }
             }
         },
@@ -6301,6 +6455,13 @@
                     "name": "Drink Blood",
                     "description": "<p><strong>Requirements</strong> A bleeding creature is within the baobhan sith's reach</p>\n<hr />\n<p><strong>Effect</strong> The baobhan sith tries to Drink the Blood from the bleeding creature's wounds. The baobhan sith attempts an @Check[athletics|defense:fortitude] check against the victim's Fortitude DC. On a success, the victim becomes @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 1} and the baobhan sith regains @Damage[10[healing]] HP, gaining any Hit Points in excess of their maximum Hit Points as temporary Hit Points.</p>\n<p>Drinking Blood from a victim that's already drained doesn't restore any Hit Points to the baobhan sith but increases the victim's drained value by 1. A victim's drained condition decreases by 1 per week. A blood transfusion, which requires 10 minutes, a successful @Check[medicine|dc:20] check, and sufficient blood or a blood donor, reduces the drained value by 1.</p>"
                 }
+            },
+            "system": {
+                "skills": {
+                    "performance": {
+                        "label": "when dancing"
+                    }
+                }
             }
         },
         "The First Faithful": {
@@ -6505,6 +6666,13 @@
                 },
                 "action->Grab": {
                     "name": "Grab"
+                }
+            },
+            "system": {
+                "skills": {
+                    "athletics": {
+                        "label": "to Grapple"
+                    }
                 }
             }
         },
@@ -6783,6 +6951,13 @@
                 },
                 "lore->Yog-Sothoth Lore": {
                     "name": "Yog-Sothoth Lore"
+                }
+            },
+            "system": {
+                "skills": {
+                    "intimidation": {
+                        "label": "to Demoralize"
+                    }
                 }
             }
         },
@@ -7097,6 +7272,13 @@
                 "action->Woodland Ambush": {
                     "name": "Woodland Ambush",
                     "description": "<p><strong>Requirements</strong> The Tree that Weeps is using Dead Tree in forested terrain, and a creature that hasn't detected it is within 30 feet</p>\n<p><strong>Effect</strong> The Tree that Weeps Strides with a +10-foot circumstance bonus to its Speed in the direction of the triggering creature. Once the creature is in reach, the Tree that Weeps makes a scythe branch Strike against it. The creature is @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} against this Strike.</p>"
+                }
+            },
+            "system": {
+                "skills": {
+                    "stealth": {
+                        "label": "in forests"
+                    }
                 }
             }
         },
@@ -8077,6 +8259,13 @@
                 "action->Knockdown": {
                     "name": "Knockdown"
                 }
+            },
+            "system": {
+                "skills": {
+                    "survival": {
+                        "label": "when Tracking"
+                    }
+                }
             }
         },
         "Wild Hunt Monarch": {
@@ -8408,6 +8597,10 @@
         "allSavesBonus": "system.attributes.allSaves.value",
         "speedsDetails": "system.attributes.speed.details",
         "sensesDetails": "system.perception.details",
-        "languagesDetails": "system.details.languages.details"
+        "languagesDetails": "system.details.languages.details",
+        "skills": {
+            "converter": "translateSkills",
+            "path": "system.skills"
+        }
     }
 }

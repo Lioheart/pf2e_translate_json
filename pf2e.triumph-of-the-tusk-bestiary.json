@@ -1121,6 +1121,13 @@
                 "lore->Shadefields Lore": {
                     "name": "Shadefields Lore"
                 }
+            },
+            "system": {
+                "skills": {
+                    "stealth": {
+                        "label": "in moonlight"
+                    }
+                }
             }
         },
         "Murshek": {
@@ -1553,6 +1560,13 @@
                 },
                 "action->Grab": {
                     "name": "Grab"
+                }
+            },
+            "system": {
+                "skills": {
+                    "stealth": {
+                        "label": "in sand"
+                    }
                 }
             }
         },
@@ -2040,6 +2054,13 @@
                 "action->Improved Grab": {
                     "name": "Improved Grab"
                 }
+            },
+            "system": {
+                "skills": {
+                    "stealth": {
+                        "label": "in sand"
+                    }
+                }
             }
         },
         "Troll": {
@@ -2339,6 +2360,13 @@
                     "name": "Wyvern's Swoop",
                     "description": "<p><strong>Requirements</strong> The wyvern rider is mounting their wyvern</p><hr /><p><strong>Effect</strong> The wyvern rider Commands their mount to Stride twice. At any point during this movement, they can Strike one enemy within reach or within the first range increment of their ranged weapon, with a +1 circumstance bonus to their attack roll. If they begin this movement at a higher point than their target, they deal an additional die of damage with this Strike.</p>"
                 }
+            },
+            "system": {
+                "skills": {
+                    "nature": {
+                        "label": "to Command their wyvern"
+                    }
+                }
             }
         },
         "Wraithwell": {
@@ -2482,6 +2510,10 @@
         "allSavesBonus": "system.attributes.allSaves.value",
         "speedsDetails": "system.attributes.speed.details",
         "sensesDetails": "system.perception.details",
-        "languagesDetails": "system.details.languages.details"
+        "languagesDetails": "system.details.languages.details",
+        "skills": {
+            "converter": "translateSkills",
+            "path": "system.skills"
+        }
     }
 }

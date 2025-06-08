@@ -109,6 +109,13 @@
                 "action->Grab": {
                     "name": "Grab"
                 }
+            },
+            "system": {
+                "skills": {
+                    "stealth": {
+                        "label": "in seaweed or rocky areas"
+                    }
+                }
             }
         },
         "Animal Pit": {
@@ -360,6 +367,13 @@
                     "name": "Siphon Vitality",
                     "description": "<p>The blood ooze draws forth blood from nearby creatures, causing their flesh to break open and blood to spill out, which replenishes the blood ooze. Each living creature within @Template[emanation|distance:15]{15 feet} takes @Damage[4d6[slashing]|options:area-damage] damage (@Check[fortitude|dc:24|basic] save). The blood ooze regains an amount of Hit Points equal to half the damage Siphon Vitality dealt to the single creature that took the most damage.</p>"
                 }
+            },
+            "system": {
+                "skills": {
+                    "stealth": {
+                        "label": "if hiding inside a dead body"
+                    }
+                }
             }
         },
         "Camazotz Cultist": {
@@ -469,6 +483,13 @@
                 },
                 "action->Push": {
                     "name": "Push"
+                }
+            },
+            "system": {
+                "skills": {
+                    "athletics": {
+                        "label": "to Grapple, Shove, or Trip"
+                    }
                 }
             }
         },
@@ -1913,6 +1934,13 @@
                     "name": "Swipe",
                     "description": "<p>The morlock thrall makes a melee Strike and compares the attack roll result to the AC of up to two foes, each of whom must be within the morlock's melee reach and adjacent to each other. The sweep bonus of the morlock's falchion applies to these attacks. Roll damage once and apply it to each creature hit. A Swipe counts as two attacks toward the morlock's multiple attack penalty.</p>"
                 }
+            },
+            "system": {
+                "skills": {
+                    "athletics": {
+                        "label": "climbing"
+                    }
+                }
             }
         },
         "Mournful Petals Haunt": {
@@ -2028,6 +2056,13 @@
                 "action->Blood Feast": {
                     "name": "Blood Feast",
                     "description": "<p>Each enemy in the bat swarm's space takes @Damage[1d4[piercing],1[void]] damage (@Check[reflex|dc:16|basic] save). Creatures that fail this save also take @Damage[1[bleed]] damage.</p>"
+                }
+            },
+            "system": {
+                "skills": {
+                    "athletics": {
+                        "label": "to Climb"
+                    }
                 }
             }
         },
@@ -2626,6 +2661,13 @@
                     "name": "Pouncing Bite",
                     "description": "<p>The tormonshild compresses itself and then makes an enormous jump. It Leaps 50 feet horizontally. If it lands within reach of a creature, it can make a jaws Strike against that creature.</p>"
                 }
+            },
+            "system": {
+                "skills": {
+                    "stealth": {
+                        "label": "in Water"
+                    }
+                }
             }
         },
         "Tormonshild Swarm": {
@@ -2647,6 +2689,13 @@
                 "action->Torrent of Bites": {
                     "name": "Torrent of Bites",
                     "description": "<p>Each enemy in the tormonshild swarm's space takes @Damage[2d6[piercing]] damage (@Check[reflex|dc:20|basic] save).</p>"
+                }
+            },
+            "system": {
+                "skills": {
+                    "stealth": {
+                        "label": "in Water"
+                    }
                 }
             }
         },
@@ -2683,6 +2732,13 @@
                 "action->Grab": {
                     "name": "Grab"
                 }
+            },
+            "system": {
+                "skills": {
+                    "stealth": {
+                        "label": "in Water"
+                    }
+                }
             }
         },
         "Trapped Gate": {
@@ -2715,6 +2771,13 @@
                 "action->Bloodless Guardian": {
                     "name": "Bloodless Guardian",
                     "description": "<p>A living humanoid that dies while under the effects of alluring scent rises as a @UUID[Compendium.pf2e.pathfinder-monster-core.Actor.Xo4IGzw28hivgMmM]{Zombie Shambler} after [[/gmr 1d4 #rounds]]{1d4 rounds}. The zombie isn't controlled by the vampire nettle but typically remains in the area to guard the plant for [[/gmr 1d4 #days]]{1d4 days} before wandering off. At some point within 1 week after leaving, the zombie collapses, and a new, fully grown vampire nettle erupts from its chest.</p>"
+                }
+            },
+            "system": {
+                "skills": {
+                    "stealth": {
+                        "label": "in undergrowth"
+                    }
                 }
             }
         },
@@ -2986,6 +3049,13 @@
                     "name": "Wooden Stake Pick",
                     "description": "<p>Vool's \"pick\" consists of a femur with a wooden stake lashed to one end. This weapon functions as a light pick that also has the versatile bludgeoning trait. If Vool critically fails a Strike with the janky weapon, it breaks and becomes useless until he repairs it. If he critically hits a vampire with the weapon, the vampire must succeed at a @Check[fortitude|dc:21] save or the stake is driven into its heart, reducing the vampire to 0 Hit Points. Despite his best efforts, Vool can't teach anyone to use the otherwise awkward weapon, although anyone can wield it as a normal +1 light pick with a head made of wood.</p>"
                 }
+            },
+            "system": {
+                "skills": {
+                    "athletics": {
+                        "label": "Climbing"
+                    }
+                }
             }
         },
         "Vye": {
@@ -3221,6 +3291,13 @@
                     "name": "Yobnobby's Armor",
                     "description": "<p>Yobnobby's armor grants resistance 4 to acid and electricity damage. This resistance increases to 6 when she successfully activates Expert Overdrive.</p>"
                 }
+            },
+            "system": {
+                "skills": {
+                    "crafting": {
+                        "label": "traps"
+                    }
+                }
             }
         },
         "Zer": {
@@ -3334,6 +3411,10 @@
         "disable": "system.details.disable",
         "reset": "system.details.reset",
         "routine": "system.details.routine",
-        "stealth": "system.attributes.stealth.details"
+        "stealth": "system.attributes.stealth.details",
+        "skills": {
+            "converter": "translateSkills",
+            "path": "system.skills"
+        }
     }
 }

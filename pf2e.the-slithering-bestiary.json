@@ -65,6 +65,13 @@
                         }
                     }
                 }
+            },
+            "system": {
+                "skills": {
+                    "intimidation": {
+                        "label": "against humanoids"
+                    }
+                }
             }
         },
         "Angazhan's Rake Trap": {
@@ -113,6 +120,13 @@
                 },
                 "lore->Demon Lore": {
                     "name": "Demon Lore"
+                }
+            },
+            "system": {
+                "skills": {
+                    "diplomacy": {
+                        "label": "against demons"
+                    }
                 }
             }
         },
@@ -379,6 +393,13 @@
                 "lore->Demon Lore": {
                     "name": "Demon Lore"
                 }
+            },
+            "system": {
+                "skills": {
+                    "diplomacy": {
+                        "label": "against demons"
+                    }
+                }
             }
         },
         "Paga Nikohian": {
@@ -487,6 +508,10 @@
         "disable": "system.details.disable",
         "reset": "system.details.reset",
         "routine": "system.details.routine",
-        "stealth": "system.attributes.stealth.details"
+        "stealth": "system.attributes.stealth.details",
+        "skills": {
+            "converter": "translateSkills",
+            "path": "system.skills"
+        }
     }
 }

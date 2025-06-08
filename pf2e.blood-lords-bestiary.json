@@ -279,6 +279,13 @@
                 "action->Grab": {
                     "name": "Grab"
                 }
+            },
+            "system": {
+                "skills": {
+                    "stealth": {
+                        "label": "in moist environments"
+                    }
+                }
             }
         },
         "Arboreal Snag": {
@@ -318,6 +325,13 @@
                 "action->Knockdown": {
                     "name": "Knockdown"
                 }
+            },
+            "system": {
+                "skills": {
+                    "stealth": {
+                        "label": "in Forests"
+                    }
+                }
             }
         },
         "Arboreal Snag (Axan Wood)": {
@@ -356,6 +370,13 @@
                 },
                 "action->Knockdown": {
                     "name": "Knockdown"
+                }
+            },
+            "system": {
+                "skills": {
+                    "stealth": {
+                        "label": "in Forests"
+                    }
                 }
             }
         },
@@ -852,6 +873,13 @@
                     "name": "Bayonet Charge",
                     "description": "<p>The clockwork rifler Strides twice and Strikes with its bayonet.</p>"
                 }
+            },
+            "system": {
+                "skills": {
+                    "athletics": {
+                        "label": "to Disarm, Grappe, or avoid being Disarmed"
+                    }
+                }
             }
         },
         "Cobblebone Swarm": {
@@ -1183,6 +1211,13 @@
                     "name": "Whirlpool",
                     "description": "<p><strong>Requirements</strong> The drowned mummy is underwater</p>\n<hr />\n<p><strong>Effect</strong> The drowned mummy commands the water to churn, creating a powerful whirlpool centered on itself. Each creature within a @Template[emanation|distance:30] centered on the drowned mummy takes @Damage[14d8[bludgeoning]] damage (@Check[reflex|dc:38|basic]) as the powerful current batters them around. A creature that fails this save is pushed 20 feet away from the mummy and also falls @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone} on a critical failure. The drowned mummy can't use Whirlpool again for [[/gmr 1d4 #Recharge Whirlpool]]{1d4 rounds}.</p>"
                 }
+            },
+            "system": {
+                "skills": {
+                    "stealth": {
+                        "label": "While Underwater"
+                    }
+                }
             }
         },
         "Drusilla": {
@@ -1217,6 +1252,13 @@
                 "action->Manipulate Luck": {
                     "name": "Manipulate Luck",
                     "description": "<p>Drusilla touches another creature to manipulate the creature's luck. The creature must attempt a @Check[will|dc:25] save. On a failure, Drusilla chooses good luck or bad luck. If she chooses good luck, the affected creature can roll twice on one d20 roll within the next day and use the higher result; this is a fortune effect. If Drusilla chooses bad luck, the creature must roll twice and use the lower result on its next d20 roll; this is a misfortune effect. Once Drusilla has affected a target with Manipulate Luck, that target is temporarily immune to Manipulate Luck from any huldra for 1 day.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.WKQNGK6hd5O7uLC1]{Effect: Manipulate Luck - Drusilla (Good)}</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.zzdOof9hHUf9s13H]{Effect: Manipulate Luck (Bad)}</p>"
+                }
+            },
+            "system": {
+                "skills": {
+                    "deception": {
+                        "label": "to Impersonate a human version of themselves"
+                    }
                 }
             }
         },
@@ -1791,6 +1833,13 @@
                 },
                 "action->Grab": {
                     "name": "Grab"
+                }
+            },
+            "system": {
+                "skills": {
+                    "stealth": {
+                        "label": "in water"
+                    }
                 }
             }
         },
@@ -2539,6 +2588,13 @@
                 "action->Grab": {
                     "name": "Grab"
                 }
+            },
+            "system": {
+                "skills": {
+                    "athletics": {
+                        "label": "to Grapple"
+                    }
+                }
             }
         },
         "Kapoacinth": {
@@ -2935,6 +2991,13 @@
                 },
                 "lore->Holomog Lore": {
                     "name": "Holomog Lore"
+                }
+            },
+            "system": {
+                "skills": {
+                    "diplomacy": {
+                        "label": "when orating"
+                    }
                 }
             }
         },
@@ -4503,6 +4566,13 @@
                 "action->Improved Grab": {
                     "name": "Improved Grab"
                 }
+            },
+            "system": {
+                "skills": {
+                    "stealth": {
+                        "label": "in Dim Light or Darkness"
+                    }
+                }
             }
         },
         "Shadowbound Monk Statue": {
@@ -5117,6 +5187,13 @@
                 "action->Throw Rock": {
                     "name": "Throw Rock"
                 }
+            },
+            "system": {
+                "skills": {
+                    "stealth": {
+                        "label": "to Hide in Dim Light or Darkness"
+                    }
+                }
             }
         },
         "Terra-cotta Soldier": {
@@ -5724,6 +5801,13 @@
                 "action->Grab": {
                     "name": "Grab"
                 }
+            },
+            "system": {
+                "skills": {
+                    "athletics": {
+                        "label": "to Grapple"
+                    }
+                }
             }
         },
         "Vanth Warrior": {
@@ -6184,6 +6268,13 @@
                     "name": "Swift Leap",
                     "description": "<p>The ghoul jumps up to half its Speed. This movement doesn't trigger reactions.</p>"
                 }
+            },
+            "system": {
+                "skills": {
+                    "acrobatics": {
+                        "label": "to Maneuver in Flight"
+                    }
+                }
             }
         },
         "Zombie Chuul": {
@@ -6352,6 +6443,10 @@
         "allSavesBonus": "system.attributes.allSaves.value",
         "speedsDetails": "system.attributes.speed.details",
         "sensesDetails": "system.perception.details",
-        "languagesDetails": "system.details.languages.details"
+        "languagesDetails": "system.details.languages.details",
+        "skills": {
+            "converter": "translateSkills",
+            "path": "system.skills"
+        }
     }
 }

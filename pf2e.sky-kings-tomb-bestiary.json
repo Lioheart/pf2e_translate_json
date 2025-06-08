@@ -43,6 +43,13 @@
                 "action->Grab": {
                     "name": "Grab"
                 }
+            },
+            "system": {
+                "skills": {
+                    "stealth": {
+                        "label": "in forests or grasslands"
+                    }
+                }
             }
         },
         "Algerschmick": {
@@ -701,6 +708,13 @@
                 "action->Sneak Attack": {
                     "name": "Sneak Attack",
                     "description": "<p>The kobold scout deals an extra 1d6 precision damage to @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} creatures.</p>"
+                }
+            },
+            "system": {
+                "skills": {
+                    "crafting": {
+                        "label": "traps"
+                    }
                 }
             }
         },
@@ -1605,6 +1619,13 @@
                 "action->Tinker": {
                     "name": "Tinker",
                     "description": "<p>A group of six jinkins can work together for an hour to imbue an item with a curse at a range of 60 feet. While this process is lengthy, it's also unobtrusive and can be performed while @UUID[Compendium.pf2e.actionspf2e.Item.XMcnh4cSI32tljXa]{Hiding}. Jinkins prefer to use this ability on magic items. The curse makes the item unreliable (@Check[flat|dc:5] check or waste any action to Interact with or Activate the item), adds a bizarre requirement to use the item, or imparts some other curse of a similar caliber.</p>"
+                }
+            },
+            "system": {
+                "skills": {
+                    "crafting": {
+                        "label": "traps"
+                    }
                 }
             }
         },
@@ -2855,6 +2876,13 @@
                 "action->Void Healing": {
                     "name": "Void Healing"
                 }
+            },
+            "system": {
+                "skills": {
+                    "acrobatics": {
+                        "label": "to Maneuver in Flight"
+                    }
+                }
             }
         },
         "Stonemaker": {
@@ -3050,6 +3078,13 @@
                 "action->Kirtanang": {
                     "name": "Kirtanang",
                     "description": "<p>The initiate's Strikes take no penalty from passing through water.</p>"
+                }
+            },
+            "system": {
+                "skills": {
+                    "stealth": {
+                        "label": "while swimming"
+                    }
                 }
             }
         },
@@ -3307,6 +3342,10 @@
         "allSavesBonus": "system.attributes.allSaves.value",
         "speedsDetails": "system.attributes.speed.details",
         "sensesDetails": "system.perception.details",
-        "languagesDetails": "system.details.languages.details"
+        "languagesDetails": "system.details.languages.details",
+        "skills": {
+            "converter": "translateSkills",
+            "path": "system.skills"
+        }
     }
 }

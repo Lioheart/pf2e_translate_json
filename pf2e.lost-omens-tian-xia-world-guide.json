@@ -112,6 +112,13 @@
                     "name": "Trample",
                     "description": "<p>Medium, Hoof, @Check[reflex|dc:29|basic]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Trample]</p>"
                 }
+            },
+            "system": {
+                "skills": {
+                    "survival": {
+                        "label": "in mountains"
+                    }
+                }
             }
         },
         "Aso Berang": {
@@ -457,6 +464,13 @@
                     "name": "Ink Blot",
                     "description": "<p>The inkdrop leaves a pattern it remembers over a square foot of surface. If there's existing non-magical ink on the surface, the inkdrop erases the nonmagical ink.</p>"
                 }
+            },
+            "system": {
+                "skills": {
+                    "stealth": {
+                        "label": "in dim light or darkness"
+                    }
+                }
             }
         },
         "Jiidon": {
@@ -612,6 +626,13 @@
                 },
                 "action->Grab": {
                     "name": "Grab"
+                }
+            },
+            "system": {
+                "skills": {
+                    "deception": {
+                        "label": "to impersonate"
+                    }
                 }
             }
         },
@@ -892,6 +913,10 @@
         "rules": {
             "converter": "translateRules",
             "path": "system.rules"
+        },
+        "skills": {
+            "converter": "translateSkills",
+            "path": "system.skills"
         }
     }
 }

@@ -711,6 +711,13 @@
                     "name": "Hungry Flurry",
                     "description": "<p>The flytrap makes four leaf Strikes at a -2 penalty, each against a different target. These attacks count toward the flytrap's multiple attack penalty, but the multiple attack penalty doesn't increase until after it makes all its attacks.</p>"
                 }
+            },
+            "system": {
+                "skills": {
+                    "stealth": {
+                        "label": "in undergrowth"
+                    }
+                }
             }
         },
         "Fungal Forge": {
@@ -766,6 +773,13 @@
                 "action->Twist the Hook": {
                     "name": "Twist the Hook",
                     "description": "<p>The fungal marsh giant makes a melee Strike with its scythe. If it hits, it twists and yanks the scythe to knock the target @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone} and create an awful wound, dealing @Damage[2d6[persistent,bleed]] damage to the creature.</p>"
+                }
+            },
+            "system": {
+                "skills": {
+                    "stealth": {
+                        "label": "in fungal swamps"
+                    }
                 }
             }
         },
@@ -1227,6 +1241,13 @@
                     "name": "Tremortoxin",
                     "description": "<p><strong>Saving Throw</strong> @Check[fortitude|dc:30]</p>\n<p><strong>Maximum Duration</strong> 6 rounds</p>\n<p><strong>Stage 1</strong> \u201310-foot status penalty to all Speeds (1 round)</p>\n<p><strong>Stage 2</strong> \u201310-foot status penalty to all Speeds and a \u20131 circumstance penalty to attack rolls and checks requiring a firm grasp on held items (1 round)</p>\n<p><strong>Stage 3</strong> as</p>\n<p><strong>Stage 2</strong>, but increase the circumstance penalty to checks to \u20132 (1 round)</p>"
                 }
+            },
+            "system": {
+                "skills": {
+                    "crafting": {
+                        "label": "for poisons"
+                    }
+                }
             }
         },
         "Mugrisant Qlippoth": {
@@ -1586,6 +1607,13 @@
                     "name": "Rotter Infestation",
                     "description": "<p><strong>Saving Throw</strong> @Check[fortitude|dc:27]</p>\n<p><strong>Onset</strong> 1 day</p>\n<p><strong>Stage 1</strong> @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 1} (1 day)</p>\n<p><strong>Stage 2</strong> @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 2} and can sense the presence of root rotters within 30 feet as an imprecise sense (1 round)</p>\n<p><strong>Stage 3</strong> as stage 2, but transformation into a root rotter upon death (1 day)</p>"
                 }
+            },
+            "system": {
+                "skills": {
+                    "stealth": {
+                        "label": "in fungal environs"
+                    }
+                }
             }
         },
         "Rotting Cultist": {
@@ -1641,6 +1669,13 @@
                 },
                 "action->Improved Knockdown": {
                     "name": "Improved Knockdown"
+                }
+            },
+            "system": {
+                "skills": {
+                    "stealth": {
+                        "label": "in forests"
+                    }
                 }
             }
         },
@@ -1765,6 +1800,13 @@
                 "action->Spore Purge": {
                     "name": "Spore Purge",
                     "description": "<p><strong>Requirements</strong> The sinmold has temporary Hit Points from digestion</p><hr /><p><strong>Effect</strong> The sinmold loses all temporary Hit Points and releases any creatures it currently has engulfed, pushing them into the nearest unoccupied spaces. It releases a cloud of spores from its body, dealing @Damage[5d8[poison]] damage (@Check[fortitude|dc:29|basic] save) in a @Template[type:emanation|distance:20]. Any creature that fails this save also must attempt a save against sinmold infestation.</p>"
+                }
+            },
+            "system": {
+                "skills": {
+                    "stealth": {
+                        "label": "in fungal terrain"
+                    }
                 }
             }
         },
@@ -2155,6 +2197,13 @@
                 "lore->Swamp Lore": {
                     "name": "Swamp Lore"
                 }
+            },
+            "system": {
+                "skills": {
+                    "stealth": {
+                        "label": "in swamps"
+                    }
+                }
             }
         },
         "Tangle Khravgodon": {
@@ -2310,6 +2359,13 @@
                     "name": "Ranged Trip",
                     "description": "<p>A Leng spider can use a web bola to @UUID[Compendium.pf2e.actionspf2e.Item.ge56Lu1xXVFYUnLP]{Trip} a target with the Athletics skill. The skill check takes a -2 circumstance penalty. A web bola deals no damage when used to Trip.</p>"
                 }
+            },
+            "system": {
+                "skills": {
+                    "crafting": {
+                        "label": "to make traps"
+                    }
+                }
             }
         },
         "Tanglebriar Isqulug": {
@@ -2404,6 +2460,13 @@
                 "action->Throw Rock": {
                     "name": "Throw Rock"
                 }
+            },
+            "system": {
+                "skills": {
+                    "stealth": {
+                        "label": "in Tanglebriar"
+                    }
+                }
             }
         },
         "The Putrid": {
@@ -2438,6 +2501,13 @@
                 "action->Trample": {
                     "name": "Trample",
                     "description": "<p>Huge or smaller, hoof, @Check[reflex|dc:36|basic]</p><hr /><p>@Localize[PF2E.NPC.Abilities.Glossary.Trample]</p>"
+                }
+            },
+            "system": {
+                "skills": {
+                    "stealth": {
+                        "label": "in swamps"
+                    }
                 }
             }
         },
@@ -2753,6 +2823,13 @@
                 },
                 "action->Improved Grab": {
                     "name": "Improved Grab"
+                }
+            },
+            "system": {
+                "skills": {
+                    "stealth": {
+                        "label": "in Swamps"
+                    }
                 }
             }
         },
@@ -3132,6 +3209,10 @@
         "allSavesBonus": "system.attributes.allSaves.value",
         "speedsDetails": "system.attributes.speed.details",
         "sensesDetails": "system.perception.details",
-        "languagesDetails": "system.details.languages.details"
+        "languagesDetails": "system.details.languages.details",
+        "skills": {
+            "converter": "translateSkills",
+            "path": "system.skills"
+        }
     }
 }
