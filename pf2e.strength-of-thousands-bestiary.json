@@ -733,7 +733,7 @@
                 },
                 "action->Caustic Rain": {
                     "name": "Caustic Rain",
-                    "description": "<p>The ba'aupa mdoudu spews copious amounts of acid into the air, creating a cascading rain to fall in a @Template[emanation|distance:10] around itself. All creatures in the area take @Damage[14d6[acid]] damage (@Check[reflex|dc:33|basic] save) plus Caustic Acid. The ba'aupa mdoudu can't use Caustic Rain again for [[/gmr 1d4 #Recharge Caustic Rain]]{1d4 rounds}.</p>"
+                    "description": "<p>The ba'aupa mdoudu spews copious amounts of acid into the air, creating a cascading rain to fall in a @Template[emanation|distance:10] around itself. All creatures in the area take @Damage[14d6[acid]|options:area-damage] damage (@Check[reflex|dc:33|basic|options:area-effect] save) plus Caustic Acid. The ba'aupa mdoudu can't use Caustic Rain again for [[/gmr 1d4 #Recharge Caustic Rain]]{1d4 rounds}.</p>"
                 },
                 "action->Stone Tunneler": {
                     "name": "Stone Tunneler",
@@ -987,7 +987,7 @@
                 },
                 "action->Burning Pool": {
                     "name": "Burning Pool",
-                    "description": "<p>The cataclysm beetle spills acid directly from its abdomen, creating a wave of acid that deals @Damage[10d12[acid]] damage to all creatures in a @Template[emanation|distance:30] (@Check[fortitude|dc:40|basic]). Creatures that fail this save are pushed back 10 feet from the cataclysm beetle (30 feet on a critical failure). It can't use Bombardier's Spray or Burning Pool for [[/gmr 1d4 #Recharge Acid Action]]{1d4 rounds}.</p>"
+                    "description": "<p>The cataclysm beetle spills acid directly from its abdomen, creating a wave of acid that deals @Damage[10d12[acid]|options:area-damage] damage to all creatures in a @Template[emanation|distance:30] (@Check[fortitude|dc:40|basic|options:area-effect]). Creatures that fail this save are pushed back 10 feet from the cataclysm beetle (30 feet on a critical failure). It can't use Bombardier's Spray or Burning Pool for [[/gmr 1d4 #Recharge Acid Action]]{1d4 rounds}.</p>"
                 },
                 "action->Grab": {
                     "name": "Grab"
@@ -2125,7 +2125,7 @@
                 },
                 "action->Death Throes": {
                     "name": "Death Throes",
-                    "description": "<p>When the gold defender is destroyed, it melts into worthless slag. As it melts, it releases a @Template[burst|distance:10] cloud of fumes and a 10-foot radius puddle of molten metal. Creatures that breathe fumes are exposed to gold defender poison. Creatures that move through the puddle take @Damage[10d6[fire]] damage. The fumes dissipate after 1 round and the puddle cools after 1 minute.</p>"
+                    "description": "<p>When the gold defender is destroyed, it melts into worthless slag. As it melts, it releases a @Template[burst|distance:10] cloud of fumes and a 10-foot radius puddle of molten metal. Creatures that breathe fumes are exposed to gold defender poison. Creatures that move through the puddle take @Damage[10d6[fire]|options:area-effect] damage. The fumes dissipate after 1 round and the puddle cools after 1 minute.</p>"
                 },
                 "action->Golem Antimagic": {
                     "name": "Golem Antimagic",
@@ -2162,7 +2162,7 @@
                 },
                 "action->Death Throes": {
                     "name": "Death Throes",
-                    "description": "<p>As the garrison's numbers dwindle, gold defenders melt away into worthless slag. Every time that the garrison is reduced to a threshold, it leaves behind a @Template[burst|distance:10]{10-foot radius} cloud of fumes and a 10-foot radius puddle of molten metal. Creatures that breathe fumes are exposed to gold defender poison. Creatures that move through the puddle take @Damage[10d6[fire]] damage. The fumes dissipate after 1 round and the puddle completely evaporates after 1 minute.</p>"
+                    "description": "<p>As the garrison's numbers dwindle, gold defenders melt away into worthless slag. Every time that the garrison is reduced to a threshold, it leaves behind a @Template[burst|distance:10]{10-foot radius} cloud of fumes and a 10-foot radius puddle of molten metal. Creatures that breathe fumes are exposed to gold defender poison. Creatures that move through the puddle take @Damage[10d6[fire]|options:area-damage] damage. The fumes dissipate after 1 round and the puddle completely evaporates after 1 minute.</p>"
                 },
                 "action->Golem Antimagic": {
                     "name": "Golem Antimagic",
@@ -2378,7 +2378,7 @@
                 },
                 "action->Death Flood": {
                     "name": "Death Flood",
-                    "description": "<p>When the great grodair dies, his body explodes in a blast of pressurized water that deals @Damage[6d6[bludgeoning]] damage to creatures within a @Template[emanation|distance:15] (@Check[reflex|dc:25|basic|traits:amphibious,beast,fey] save). A creature that fails its save is pushed 5 feet (or 10 feet on a critical failure).</p>"
+                    "description": "<p>When the great grodair dies, his body explodes in a blast of pressurized water that deals @Damage[6d6[bludgeoning]|options:area-damage] damage to creatures within a @Template[emanation|distance:15] (@Check[reflex|dc:25|basic|options:area-effect] save). A creature that fails its save is pushed 5 feet (or 10 feet on a critical failure).</p>"
                 },
                 "action->Muddy Field": {
                     "name": "Muddy Field",
@@ -3756,7 +3756,7 @@
                 },
                 "action->Burning Sacrifice": {
                     "name": "Burning Sacrifice",
-                    "description": "<p>When the sun hunter is destroyed, they explode in a blast of flame that deals @Damage[6d6[fire]] damage in a @Template[emanation|distance:10] (@Check[reflex|dc:27|basic] save). Creatures that critically fail their saves are marked with Walkena's religious symbol on a visible area of their body, which remains for 1 day. This mark allows Walkena to treat the creature as if he knew the creature's identity but not having met them for the purposes of @UUID[Compendium.pf2e.spells-srd.Item.r784cIz17eWujtQj]{Scrying}, lowering the spell's DC by 2. The sun hunter's gear and treasure are unaffected by the explosion and left in a pile where they die.</p>"
+                    "description": "<p>When the sun hunter is destroyed, they explode in a blast of flame that deals @Damage[6d6[fire]|options:area-damage] damage in a @Template[emanation|distance:10] (@Check[reflex|dc:27|basic|options:area-effect] save). Creatures that critically fail their saves are marked with Walkena's religious symbol on a visible area of their body, which remains for 1 day. This mark allows Walkena to treat the creature as if he knew the creature's identity but not having met them for the purposes of @UUID[Compendium.pf2e.spells-srd.Item.r784cIz17eWujtQj]{Scrying}, lowering the spell's DC by 2. The sun hunter's gear and treasure are unaffected by the explosion and left in a pile where they die.</p>"
                 },
                 "action->Nimble Dodge": {
                     "name": "Nimble Dodge",
@@ -3804,7 +3804,7 @@
                 },
                 "action->Burning Sacrifice": {
                     "name": "Burning Sacrifice",
-                    "description": "<p>When the sun mage is destroyed, they explode in a blast of flame that deals @Damage[6d6[fire]] damage in a @Template[emanation|distance:10] (@Check[reflex|dc:27|basic] save). Creatures that critically fail their saves are marked with Walkena's religious symbol on a visible area of their body, which remains for 1 day. This mark allows Walkena to treat the creature as if he knew the creature's identity but not having met them for the purposes of @UUID[Compendium.pf2e.spells-srd.Item.r784cIz17eWujtQj]{Scrying}, lowering the spell's DC by 2. The sun mage's gear and treasure are unaffected by the explosion and left in a pile where they die.</p>"
+                    "description": "<p>When the sun mage is destroyed, they explode in a blast of flame that deals @Damage[6d6[fire]|options:area-damage] damage in a @Template[emanation|distance:10] (@Check[reflex|dc:27|basic|options:area-effect] save). Creatures that critically fail their saves are marked with Walkena's religious symbol on a visible area of their body, which remains for 1 day. This mark allows Walkena to treat the creature as if he knew the creature's identity but not having met them for the purposes of @UUID[Compendium.pf2e.spells-srd.Item.r784cIz17eWujtQj]{Scrying}, lowering the spell's DC by 2. The sun mage's gear and treasure are unaffected by the explosion and left in a pile where they die.</p>"
                 },
                 "action->Void Healing": {
                     "name": "Void Healing"
@@ -3841,7 +3841,7 @@
                 },
                 "action->Burning Sacrifice": {
                     "name": "Burning Sacrifice",
-                    "description": "<p>When the sun warrior is destroyed, they explode in a blast of flame that deals @Damage[6d6[fire]] damage in a @Template[emanation|distance:10] (@Check[reflex|dc:27|basic] save). Creatures that critically fail their saves are marked with Walkena's religious symbol on a visible area of their body, which remains for 1 day. This mark allows Walkena to treat the creature as if he knew the creature's identity but not having met them for the purposes of @UUID[Compendium.pf2e.spells-srd.Item.r784cIz17eWujtQj]{Scrying}, lowering the spell's DC by 2. The sun warrior's gear and treasure are unaffected by the explosion and left in a pile where they die.</p>"
+                    "description": "<p>When the sun warrior is destroyed, they explode in a blast of flame that deals @Damage[6d6[fire]|options:area-damage] damage in a @Template[emanation|distance:10] (@Check[reflex|dc:27|basic|options:area-effect] save). Creatures that critically fail their saves are marked with Walkena's religious symbol on a visible area of their body, which remains for 1 day. This mark allows Walkena to treat the creature as if he knew the creature's identity but not having met them for the purposes of @UUID[Compendium.pf2e.spells-srd.Item.r784cIz17eWujtQj]{Scrying}, lowering the spell's DC by 2. The sun warrior's gear and treasure are unaffected by the explosion and left in a pile where they die.</p>"
                 },
                 "action->Void Healing": {
                     "name": "Void Healing"
@@ -4577,7 +4577,7 @@
                 },
                 "action->Cosmic Explosion": {
                     "name": "Cosmic Explosion",
-                    "description": "<p>The soul swarm unleashes a blast of burning sunlight or moonlight, dealing @Damage[(4d8+6)[fire]] damage to creatures in a @Template[burst|distance:10] within 20 feet (@Check[reflex|dc:30|basic|traits:fire] save). When the soul swarm is reduced to 8 or fewer squares, this decreases to a @Template[burst|distance:5].</p>"
+                    "description": "<p>The soul swarm unleashes a blast of burning sunlight or moonlight, dealing @Damage[(4d8+6)[fire]|options:area-damage] damage to creatures in a @Template[burst|distance:10] within 20 feet (@Check[reflex|dc:30|basic|options:area-effect] save). When the soul swarm is reduced to 8 or fewer squares, this decreases to a @Template[burst|distance:5].</p>"
                 },
                 "action->Soul Grasp": {
                     "name": "Soul Grasp",

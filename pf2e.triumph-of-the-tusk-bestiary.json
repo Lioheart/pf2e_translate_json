@@ -6,6 +6,59 @@
         "Book 3 - Destroyer's Doom": "Book 3 - Destroyer's Doom"
     },
     "entries": {
+        "Ankhrav": {
+            "name": "Ankhrav",
+            "publicNotes": "<p>These horse-sized, burrowing monsters generally avoid heavily settled areas like cities, but ankhravs' predilection for livestock and humanoid flesh ensures that the creatures do not remain in the deep wilderness for long. Desperate farmers whose fields become infested by ankhravs often have little recourse but to seek the aid of adventurers.</p>\n<hr />\n<p>Ankhravs are immense, burrowing, and insectile predators, considered by inhabitants of the rural areas of the world to be an all-too-common plague.</p>",
+            "items": {
+                "strike-melee->Mandibles": {
+                    "name": "Mandibles"
+                },
+                "strike-ranged->Acid Spit": {
+                    "name": "Acid Spit"
+                },
+                "action->Tremorsense (Imprecise) 30 feet": {
+                    "name": "Tremorsense (Imprecise) 30 feet"
+                },
+                "action->Armor-Rending Bite": {
+                    "name": "Armor-Rending Bite",
+                    "description": "<p>The ankhrav makes a mandibles Strike; if the Strike hits, the target's armor takes the damage and the acid damage bypasses the armor's Hardness.</p>"
+                },
+                "action->Spray Acid": {
+                    "name": "Spray Acid",
+                    "description": "<p><strong>Frequency</strong> once per hour</p>\n<hr />\n<p><strong>Effect</strong> The ankhrav spews acid in a @Template[cone|distance:30], dealing @Damage[3d6[acid],1d6[persistent,acid]|options:area-damage]{3d6 acid damage and 1d6 persistent acid damage} (@Check[reflex|dc:20|basic|options:area-effect] save).</p>"
+                }
+            }
+        },
+        "Ankhrav Hive Mother": {
+            "name": "Ankhrav Hive Mother",
+            "publicNotes": "<p>Ankhrav hive mothers are fearsome predators that one can easily distinguish from the typical ankhrav not only by their greater size, but the presence of a large pair of razor-sharp, mantis-like arms.</p>\n<hr />\n<p>Ankhravs are immense, burrowing, and insectile predators, considered by inhabitants of the rural areas of the world to be an all-too-common plague.</p>",
+            "items": {
+                "strike-melee->Mandibles": {
+                    "name": "Mandibles"
+                },
+                "strike-ranged->Acid Spit": {
+                    "name": "Acid Spit"
+                },
+                "action->Tremorsense (Imprecise) 90 feet": {
+                    "name": "Tremorsense (Imprecise) 90 feet"
+                },
+                "action->Reactive Strike": {
+                    "name": "Reactive Strike"
+                },
+                "action->Armor-Rending Bite": {
+                    "name": "Armor-Rending Bite",
+                    "description": "<p>The hive mother makes a mandibles Strike; if the Strike hits, the target's armor takes the damage and the acid damage bypasses the armor's Hardness.</p>"
+                },
+                "action->Frenzy Pheromone": {
+                    "name": "Frenzy Pheromone",
+                    "description": "<p>The hive mother unleashes a pheromone that causes all other ankhravs within a @Template[emanation|distance:100] to become @UUID[Compendium.pf2e.conditionitems.Item.nlCjDvLMf2EkV2dl]{Quickened 1} until the start of the hive mother's next turn, and they can use the extra action only for Burrow, Stride, or Strike actions.</p>\n<p>The hive mother can't unleash the pheromone again for [[/gmr 1d4 #Recharge Frenzy Pheromone]]{1d4 rounds}.</p>"
+                },
+                "action->Spray Acid": {
+                    "name": "Spray Acid",
+                    "description": "<p>The hive mother spews acid in a @Template[cone|distance:60], dealing @Damage[8d6[acid],1d6[persistent,acid]|options:area-damage]{8d6 acid damage and 1d6 persistent acid damage} (@Check[reflex|dc:26|basic|options:area-effect] save).</p>\n<p>It can't spew acid again for [[/gmr 1d4 #Recharge Spray Acid]]{1d4 rounds}.</p>"
+                }
+            }
+        },
         "Ardax's Puzzle Box": {
             "name": "Ardax's Puzzle Box",
             "descriptionHazard": "<p>A chest-sized puzzle box is covered in intricate designs, with no immediately obvious way to open it.</p>",
@@ -1685,7 +1738,7 @@
                 },
                 "action->Cindery Assault": {
                     "name": "Cindery Assault",
-                    "description": "<p>The Shadefield spirit cries out in pain and anguish as flaming objects and debris fly about in a @Template[type:emanation|distance:30]. Creatures in this area take @Damage[3d6[bludgeoning]] damage plus @Damage[1d6[persistent,fire]] damage (@Check[reflex|dc:20|basic] save).</p>"
+                    "description": "<p>The Shadefield spirit cries out in pain and anguish as flaming objects and debris fly about in a @Template[type:emanation|distance:30]. Creatures in this area take @Damage[3d6[bludgeoning],1d6[persistent,fire]|options:area-damage]{3d6 bludgeoning damage plus 1d6 persistent fire damage} (@Check[reflex|dc:20|basic|options:area-effect] save).</p>"
                 },
                 "action->Corrupting Gaze": {
                     "name": "Corrupting Gaze",

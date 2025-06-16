@@ -4886,7 +4886,7 @@
                 },
                 "action->Breath Weapon": {
                     "name": "Breath Weapon",
-                    "description": "<p>The scalding mephit spits a cloud of steam in a @Template[cone|distance:15] that deals @Damage[3d6[fire]] damage to each creature within the area (@Check[reflex|dc:18|basic] save).</p>\n<p>The scalding mephit can't use Breath Weapon again for [[/gmr 1d4 #Recharge Breath Weapon]]{1d4 rounds}.</p>"
+                    "description": "<p>The scalding mephit spits a cloud of steam in a @Template[cone|distance:15] that deals @Damage[3d6[fire]|options:area-damage] damage to each creature within the area (@Check[reflex|dc:18|basic|options:area-effect] save).</p>\n<p>The scalding mephit can't use Breath Weapon again for [[/gmr 1d4 #Recharge Breath Weapon]]{1d4 rounds}.</p>"
                 }
             }
         },
@@ -6450,12 +6450,6 @@
                     "name": "Studded Leather Armor",
                     "description": "<p>This leather armor is reinforced with metal studs and sometimes small metal plates, providing most of the flexibility of leather armor with more robust protection.</p>"
                 },
-                "strike-melee->Fangs": {
-                    "name": "Fangs"
-                },
-                "strike-melee->Wing": {
-                    "name": "Wing"
-                },
                 "action->Bat Empathy": {
                     "name": "Bat Empathy",
                     "description": "<p>A werebat can communicate with bats.</p>"
@@ -6487,12 +6481,6 @@
             "publicNotes": "<p>These ferocious werecreatures stalk prey with the cunning and skill of a true apex predator. Weretigers typically view all life as a potential meal. Powerful nocturnal hunters with excellent senses that help them ambush prey, weretigers are adaptable to an extreme range of environments. However, weretigers living in densely populated cities (potentially as courtesans, assassins, or guild leaders) often struggle to suppress their killer instincts, becoming overwhelmed by the urge to hunt. They prefer to wear loose-fitting clothing and rely on their claws and jaws in a fight.</p>\n<hr />\n<p>Werecreatures transform into animals and animal-humanoid hybrids under the light of the full moon. The doomed fate of these shapechanging creatures derives from an ancient primal curse that they can, in turn, transmit through their own bites. The stat blocks in this section reflect werecreatures in their hybrid forms.</p>",
             "languagesDetails": "tiger empathy",
             "items": {
-                "strike-melee->Jaws": {
-                    "name": "Jaws"
-                },
-                "strike-melee->Claw": {
-                    "name": "Claw"
-                },
                 "action->Tiger Empathy": {
                     "name": "Tiger Empathy",
                     "description": "<p>The weretiger can communicate with felines.</p>"
@@ -6502,7 +6490,7 @@
                 },
                 "action->Change Shape": {
                     "name": "Change Shape",
-                    "description": "<p>The weretiger changes into their animal, human, or hybrid shape; they are presented in their animal shape. Each shape has a specific, persistent appearance.</p>\n<p>In human or hybrid form, the weretiger's size changes to Medium, they lose their Wrestle ability, and their speed decreases to 25 feet. In human form, they also lose their jaws and claw Strikes and gain a melee fist Strike ([[/r {1d20+14} #fist attack]]{+14} for @Damage[(1d4+7)[bludgeoning]] damage).</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.ChangeShape]</p>"
+                    "description": "<p>The weretiger changes into their animal, human, or hybrid shape; they are presented in their animal shape. Each shape has a specific, persistent appearance.</p>\n<p>In human or hybrid form, the weretiger's size changes to Medium, they lose their Wrestle ability, and their speed decreases to 25 feet. In human form, they also lose their jaws and claw Strikes and gain a melee fist Strike ([[/r {1d20+14} #fist attack]]{+14} for @Damage[(1d4+7)[bludgeoning]] damage).</p><hr /><p>@Localize[PF2E.NPC.Abilities.Glossary.ChangeShape]</p>"
                 },
                 "action->Curse of the Weretiger": {
                     "name": "Curse of the Weretiger",
@@ -6512,8 +6500,8 @@
                     "name": "Moon Frenzy",
                     "description": "<p>When a full moon appears in the night sky, the weretiger must enter hybrid form and can't Change Shape thereafter. When the moon sets or the sun rises, the weretiger returns to humanoid form and is @UUID[Compendium.pf2e.conditionitems.Item.HL2l2VRSaQHu9lUw]{Fatigued} for [[/br 2d4 #Fatigued duration]]{2d4 hours}.</p>"
                 },
-                "action->Wrestle": {
-                    "name": "Wrestle",
+                "action->Wrestle (Animal Shape)": {
+                    "name": "Wrestle (Animal Shape)",
                     "description": "<p>The weretiger makes a claw Strike against a creature it is grabbing. If the attack hits, that creature is knocked @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone}. A weretiger can only use this ability in animal form.</p>"
                 },
                 "action->Grab": {
