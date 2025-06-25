@@ -1027,7 +1027,7 @@
                 },
                 "action->Destructive Croak": {
                     "name": "Destructive Croak",
-                    "description": "<p>The swampseer utters a powerful croak that deals @Damage[4d6[sonic]] damage to any non-boggard within a @Template[emanation|distance:15] (@Check[fortitude|dc:19|basic] save).</p>\n<p>Any creature with the @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened} condition takes additional sonic damage equal to twice the value of their frightened condition.</p>\n<p>The boggard can't use Destructive Croak again for [[/gmr 1d4 #Recharge Destructive Croak]]{1d4 rounds}</p>"
+                    "description": "<p>The swampseer utters a powerful croak that deals @Damage[4d6[sonic]|options:area-damage] damage to any non-boggard within a @Template[emanation|distance:15] (@Check[fortitude|dc:19|basic|options:area-effect] save).</p>\n<p>Any creature with the @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened} condition takes additional sonic damage equal to twice the value of their frightened condition.</p>\n<p>The boggard can't use Destructive Croak again for [[/gmr 1d4 #Recharge Destructive Croak]]{1d4 rounds}</p>"
                 },
                 "action->Drowning Drone": {
                     "name": "Drowning Drone",
@@ -1575,7 +1575,7 @@
                 },
                 "action->Heft Crate": {
                     "name": "Heft Crate",
-                    "description": "<p><strong>Requirements</strong> The dockhand is adjacent to a crate</p>\n<hr />\n<p><strong>Effect</strong> The dockhand picks up a crate and heaves it up to 15 feet. Upon landing, the crate breaks open in a @Template[burst|distance:5]. Each creature within the area takes @Damage[2d6[bludgeoning]] damage (@Check[reflex|dc:13|basic] save), and the area becomes difficult terrain until cleared.</p>"
+                    "description": "<p><strong>Requirements</strong> The dockhand is adjacent to a crate</p>\n<hr />\n<p><strong>Effect</strong> The dockhand picks up a crate and heaves it up to 15 feet. Upon landing, the crate breaks open in a @Template[burst|distance:5]. Each creature within the area takes @Damage[2d6[bludgeoning]|options:area-damage] damage (@Check[reflex|dc:13|basic|options:area-effect] save), and the area becomes difficult terrain until cleared.</p>"
                 },
                 "action->Swig": {
                     "name": "Swig",
@@ -1795,7 +1795,7 @@
                 },
                 "action->Destructive Croak": {
                     "name": "Destructive Croak",
-                    "description": "<p>The swampseer utters a powerful croak that deals @Damage[(4d6+4)[sonic]] damage to any non-boggard within a @Template[emanation|distance:15] (@Check[fortitude|dc:17|basic] save).</p>\n<p>Any creature with the @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened} condition takes additional sonic damage equal to twice the value of their frightened condition.</p>\n<p>The boggard can't use Destructive Croak again for [[/gmr 1d4 #Recharge Destructive Croak]]{1d4 rounds}</p>"
+                    "description": "<p>The swampseer utters a powerful croak that deals @Damage[(4d6+4)[sonic]|options:area-damage] damage to any non-boggard within a @Template[emanation|distance:15] (@Check[fortitude|dc:17|basic|options:area-effect] save).</p>\n<p>Any creature with the @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened} condition takes additional sonic damage equal to twice the value of their frightened condition.</p>\n<p>The boggard can't use Destructive Croak again for [[/gmr 1d4 #Recharge Destructive Croak]]{1d4 rounds}</p>"
                 },
                 "action->Drowning Drone": {
                     "name": "Drowning Drone",
@@ -1831,7 +1831,7 @@
                 },
                 "action->Destructive Croak": {
                     "name": "Destructive Croak",
-                    "description": "<p>The swampseer utters a powerful croak that deals @Damage[(4d6+4)[sonic]] damage to any non-boggard within a @Template[emanation|distance:15] (@Check[fortitude|dc:17|basic] save).</p>\n<p>Any creature with the @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened} condition takes additional sonic damage equal to twice the value of their frightened condition.</p>\n<p>The boggard can't use Destructive Croak again for [[/gmr 1d4 #Recharge Destructive Croak]]{1d4 rounds}</p>"
+                    "description": "<p>The swampseer utters a powerful croak that deals @Damage[(4d6+4)[sonic]|options:area-damage] damage to any non-boggard within a @Template[emanation|distance:15] (@Check[fortitude|dc:17|basic|options:area-effect] save).</p>\n<p>Any creature with the @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened} condition takes additional sonic damage equal to twice the value of their frightened condition.</p>\n<p>The boggard can't use Destructive Croak again for [[/gmr 1d4 #Recharge Destructive Croak]]{1d4 rounds}</p>"
                 },
                 "action->Drowning Drone": {
                     "name": "Drowning Drone",
@@ -2000,7 +2000,7 @@
                 },
                 "action->Filth Wave": {
                     "name": "Filth Wave",
-                    "description": "<p><strong>Frequency</strong> once per minute</p>\n<hr />\n<p><strong>Effect</strong> The sewer ooze unleashes a wave of filth, covering all creatures within a @Template[emanation|distance:20]. Each creature in the area must succeed at a @Check[reflex|dc:19|traits:damaging-effect] save or take @Damage[1d4[acid]] damage and take a -10-foot penalty to its Speeds for 1 minute (on a critical failure, the creature also falls @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone}). A creature can spend and Interact action to clean someone off, decreasing the Speed penalty by 5 feet with each action.</p>"
+                    "description": "<p><strong>Frequency</strong> once per minute</p>\n<hr />\n<p><strong>Effect</strong> The sewer ooze unleashes a wave of filth, covering all creatures within a @Template[emanation|distance:20]. Each creature in the area must succeed at a @Check[reflex|dc:19|options:area-effect,damaging-effect] save or take @Damage[1d4[acid]|options:area-damage] damage and take a -10-foot penalty to its Speeds for 1 minute (on a critical failure, the creature also falls @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone}). A creature can spend and Interact action to clean someone off, decreasing the Speed penalty by 5 feet with each action.</p>"
                 }
             },
             "skills": {
@@ -3327,7 +3327,7 @@
                 },
                 "action->Filth Wave": {
                     "name": "Filth Wave",
-                    "description": "<p><strong>Frequency</strong> once per minute</p>\n<hr />\n<p><strong>Effect</strong> The sewer ooze unleashes a wave of filth, covering all creatures within a @Template[emanation|distance:20]. Each creature in the area must succeed at a @Check[reflex|dc:15|traits:damaging-effect] save or take @Damage[1d4[acid]] damage and take a -10-foot penalty to its Speeds for 1 minute (on a critical failure, the creature also falls @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone}). A creature can spend and Interact action to clean someone off, decreasing the Speed penalty by 5 feet with each action.</p>"
+                    "description": "<p><strong>Frequency</strong> once per minute</p>\n<hr />\n<p><strong>Effect</strong> The sewer ooze unleashes a wave of filth, covering all creatures within a @Template[emanation|distance:20]. Each creature in the area must succeed at a @Check[reflex|dc:15|options:area-effect,damaging-effect] save or take @Damage[1d4[acid]|options:area-damage] damage and take a -10-foot penalty to its Speeds for 1 minute (on a critical failure, the creature also falls @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone}). A creature can spend and Interact action to clean someone off, decreasing the Speed penalty by 5 feet with each action.</p>"
                 }
             },
             "skills": {
@@ -3989,7 +3989,7 @@
             "items": {
                 "action->Magnetic Drag": {
                     "name": "Magnetic Drag",
-                    "description": "<p><strong>Trigger</strong> A creature moves within 10 feet of the platform</p>\n<hr />\n<p><strong>Effect</strong> All creatures within 10 feet of the platform must each attempt a @Check[fortitude|dc:23|traits:magical,trap] save. Creatures who are wearing metal armor or are made of metal suffer a -2 circumstance penalty to this save.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature is dragged 5 feet toward the platform.</p>\n<p><strong>Failure</strong> The creature is dragged onto the platform, which is quickly raised on chains 20 feet into the air. The creature is then struck by lightning for @Damage[(2d10+13)[electricity]] damage.</p>\n<p><strong>Critical Failure</strong> As failure, but the creature is also knocked @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone} and @UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{Restrained} on the platform (Escape DC 20).</p>"
+                    "description": "<p><strong>Trigger</strong> A creature moves within 10 feet of the platform</p>\n<hr />\n<p><strong>Effect</strong> All creatures within 10 feet of the platform must each attempt a @Check[fortitude|dc:23|traits:magical,trap] save. Creatures who are wearing metal armor or are made of metal suffer a -2 circumstance penalty to this save.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature is dragged 5 feet toward the platform.</p>\n<p><strong>Failure</strong> The creature is dragged onto the platform, which is quickly raised on chains 20 feet into the air. The creature is then struck by lightning for @Damage[(2d10+13)[electricity]] damage.</p>\n<p><strong>Critical Failure</strong> As failure, but the creature is also knocked @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone} and @UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{Restrained} on the platform ([[/act escape dc=20]]).</p>"
                 }
             }
         },
@@ -4001,7 +4001,7 @@
             "items": {
                 "action->Magnetic Drag": {
                     "name": "Magnetic Drag",
-                    "description": "<p><strong>Trigger</strong> A creature moves within 10 feet of the platform</p>\n<hr />\n<p><strong>Effect</strong> All creatures within 10 feet of the platform must each attempt a @Check[fortitude|dc:23|traits:magical,trap] save. Creatures who are wearing metal armor or are made of metal suffer a -2 circumstance penalty to this save.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature is dragged 5 feet toward the platform.</p>\n<p><strong>Failure</strong> The creature is dragged onto the platform, which is quickly raised on chains 30 feet into the air. The creature is then struck by lightning for @Damage[(4d8+14)[electricity]] damage.</p>\n<p><strong>Critical Failure</strong> As failure, but the creature is also knocked @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone} and @UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{Restrained} on the platform (Escape DC 20).</p>"
+                    "description": "<p><strong>Trigger</strong> A creature moves within 10 feet of the platform</p>\n<hr />\n<p><strong>Effect</strong> All creatures within 10 feet of the platform must each attempt a @Check[fortitude|dc:23|traits:magical,trap] save. Creatures who are wearing metal armor or are made of metal suffer a -2 circumstance penalty to this save.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature is dragged 5 feet toward the platform.</p>\n<p><strong>Failure</strong> The creature is dragged onto the platform, which is quickly raised on chains 30 feet into the air. The creature is then struck by lightning for @Damage[(4d8+14)[electricity]] damage.</p>\n<p><strong>Critical Failure</strong> As failure, but the creature is also knocked @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone} and @UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{Restrained} on the platform ([[/act escape dc=20]]).</p>"
                 }
             }
         },

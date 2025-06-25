@@ -572,7 +572,7 @@
                 },
                 "action->Hurl Debris": {
                     "name": "Hurl Debris",
-                    "description": "<p><strong>Frequency</strong> once per round</p>\n<hr />\n<p><strong>Effect</strong> The throng hurls debris, creating a @Template[burst|distance:10] within 30 feet (@Check[reflex|dc:25|basic] save). When the throng is reduced to 8 or fewer squares, this area decreases to a @Template[burst|distance:5]. Damage depends on the number of actions.</p>\n<p><span class=\"action-glyph\">1</span> Damage @Damage[2d10[bludgeoning]] damage</p>\n<p><span class=\"action-glyph\">2</span> Damage @Damage[4d10[bludgeoning]] damage</p>\n<p><span class=\"action-glyph\">3</span> Damage @Damage[6d10[bludgeoning]] damage</p>"
+                    "description": "<p><strong>Frequency</strong> once per round</p>\n<hr />\n<p><strong>Effect</strong> The throng hurls debris, creating a @Template[burst|distance:10] within 30 feet (@Check[reflex|dc:25|basic|options:area-effect] save). When the throng is reduced to 8 or fewer squares, this area decreases to a @Template[burst|distance:5]. Damage depends on the number of actions.</p>\n<p><span class=\"action-glyph\">1</span> Damage @Damage[2d10[bludgeoning]|options:area-damage] damage</p>\n<p><span class=\"action-glyph\">2</span> Damage @Damage[4d10[bludgeoning]|options:area-damage] damage</p>\n<p><span class=\"action-glyph\">3</span> Damage @Damage[6d10[bludgeoning]|options:area-damage] damage</p>"
                 },
                 "action->Serenity Vulnerability": {
                     "name": "Serenity Vulnerability",
@@ -870,7 +870,7 @@
                 },
                 "action->Exhale Chains": {
                     "name": "Exhale Chains",
-                    "description": "<p>The ephialtes exhales a tangle of barbed chains. All creatures in a @Template[cone|distance:50] must attempt a @Check[reflex|dc:37] save. The ephialtes can't Exhale Chains for [[/gmr 1d4 #Recharge Exhale Chains]]{1d4 rounds}.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> It takes @Damage[8d6[piercing]] damage.</p>\n<p><strong>Failure</strong> It takes @Damage[15d6[piercing]] damage, @Damage[2d6[persistent,bleed]] damage, and is @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} for 1 round.</p>\n<p><strong>Critical Failure</strong> As failure, but @Damage[30d6[piercing]] damage, @Damage[2d6[persistent,bleed]] damage, and is @UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{Restrained} until they @UUID[Compendium.pf2e.actionspf2e.Item.SkZAQRkLLkmBQNB9]{Escape} (DC 37).</p>"
+                    "description": "<p>The ephialtes exhales a tangle of barbed chains. All creatures in a @Template[cone|distance:50] must attempt a @Check[reflex|dc:37|options:area-effect,damaging-effect] save. The ephialtes can't Exhale Chains for [[/gmr 1d4 #Recharge Exhale Chains]]{1d4 rounds}.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> It takes @Damage[8d6[piercing]|options:area-damage] damage.</p>\n<p><strong>Failure</strong> It takes @Damage[15d6[piercing],2d6[bleed]|options:area-damage]{15d6 piercing damage, 2d6 persistent bleed damage}, and is @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} for 1 round.</p>\n<p><strong>Critical Failure</strong> As failure, but @Damage[30d6[piercing],2d6[bleed]]{30d6 piercing damage, 2d6 persistent bleed damage}, and is @UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{Restrained} until they @UUID[Compendium.pf2e.actionspf2e.Item.SkZAQRkLLkmBQNB9]{Escape} ([[/act escape dc=37]]).</p>"
                 },
                 "action->Focus Gaze": {
                     "name": "Focus Gaze",
@@ -2247,7 +2247,7 @@
                 },
                 "action->Dread Cry": {
                     "name": "Dread Cry",
-                    "description": "<p>Queen Kawlinawk utters a screech in a @Template[cone|distance:60] that harms her enemies but heartens her allies. The screech deals @Damage[14d6[sonic]] damage to non-harpy creatures in the area (@Check[fortitude|dc:33|basic]). Harpies in the area can instead use a reaction to Fly, Step, or Stride; one harpy in the area, of Queen Kawlinawk's choice, can instead use a reaction to Strike. Queen Kawlinawk can't use Dread Cry for [[/gmr 1d4 #Recharge Dread Cry]]{1d4 rounds}.</p>"
+                    "description": "<p>Queen Kawlinawk utters a screech in a @Template[cone|distance:60] that harms her enemies but heartens her allies. The screech deals @Damage[14d6[sonic]|options:area-damage] damage to non-harpy creatures in the area (@Check[fortitude|dc:33|basic|options:area-effect]). Harpies in the area can instead use a reaction to Fly, Step, or Stride; one harpy in the area, of Queen Kawlinawk's choice, can instead use a reaction to Strike. Queen Kawlinawk can't use Dread Cry for [[/gmr 1d4 #Recharge Dread Cry]]{1d4 rounds}.</p>"
                 },
                 "action->War Formation": {
                     "name": "War Formation",
@@ -2401,7 +2401,7 @@
                 },
                 "action->Harrow Burst": {
                     "name": "Harrow Burst",
-                    "description": "<p>Raven unleashes a mass of magical harrow cards, dealing @Damage[15d8[slashing]] damage in a @Template[emanation|distance:30] (@Check[reflex|dc:42|basic] save). A creature that fails its save rolls 1d6 to determine a suit of cards: 1 = hammers (Strength), 2 = keys (Dexterity), 3 = shields (Constitution), 4 = books (Intelligence), 5 = stars (Wisdom), 6 = crowns (Charisma). The creature takes a \u20131 status penalty to all checks related to that ability score for 1 round (\u20132 status penalty on a critical failure). Raven can't use Harrow Burst again for [[/gmr 1d4 #Recharge Harrow Burst]]{1d4 rounds}.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.eqzDPseLIfWJMxAR]{Effect: Harrow Burst}</p>"
+                    "description": "<p>Raven unleashes a mass of magical harrow cards, dealing @Damage[15d8[slashing]|options:area-damage] damage in a @Template[emanation|distance:30] (@Check[reflex|dc:42|basic|options:area-effect] save). A creature that fails its save rolls 1d6 to determine a suit of cards: 1 = hammers (Strength), 2 = keys (Dexterity), 3 = shields (Constitution), 4 = books (Intelligence), 5 = stars (Wisdom), 6 = crowns (Charisma). The creature takes a \u20131 status penalty to all checks related to that ability score for 1 round (\u20132 status penalty on a critical failure). Raven can't use Harrow Burst again for [[/gmr 1d4 #Recharge Harrow Burst]]{1d4 rounds}.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.eqzDPseLIfWJMxAR]{Effect: Harrow Burst}</p>"
                 },
                 "lore->Fortune-Telling Lore": {
                     "name": "Fortune-Telling Lore"
@@ -4276,7 +4276,7 @@
                 },
                 "action->Festival of Ruin": {
                     "name": "Festival of Ruin",
-                    "description": "<p><strong>Frequency</strong> once per round</p>\n<hr />\n<p><strong>Effect</strong> Each non-demon creature in the throng or within a @Template[emanation|distance:20] from it takes damage based on the number of actions used (@Check[reflex|dc:37|basic] save). Damage depends on the number of actions.</p>\n<p><span class=\"action-glyph\">1</span> Damage @Damage[4d6[electricity]]</p>\n<p><span class=\"action-glyph\">2</span> Damage @Damage[8d6[electricity]]</p>\n<p><span class=\"action-glyph\">3</span> Damage @Damage[12d6[electricity]]</p>"
+                    "description": "<p><strong>Frequency</strong> once per round</p>\n<hr />\n<p><strong>Effect</strong> Each non-demon creature in the throng or within a @Template[emanation|distance:20] from it takes damage based on the number of actions used (@Check[reflex|dc:37|basic|options:area-effect] save). Damage depends on the number of actions.</p>\n<p><span class=\"action-glyph\">1</span> Damage @Damage[4d6[electricity]|options:area-damage]</p>\n<p><span class=\"action-glyph\">2</span> Damage @Damage[8d6[electricity]|options:area-damage]</p>\n<p><span class=\"action-glyph\">3</span> Damage @Damage[12d6[electricity]|options:area-damage]</p>"
                 },
                 "action->Troop Movement": {
                     "name": "Troop Movement",
@@ -4429,7 +4429,7 @@
                 },
                 "action->Flurry of Cards": {
                     "name": "Flurry of Cards",
-                    "description": "<p>Zellara unleashes a barrage of harrow cards that deals @Damage[7d6[void]] damage in a @Template[cone|distance:30] (@Check[reflex|dc:34|basic] save).</p>"
+                    "description": "<p>Zellara unleashes a barrage of harrow cards that deals @Damage[7d6[void]|options:area-damage] damage in a @Template[cone|distance:30] (@Check[reflex|dc:34|basic|options:area-effect] save).</p>"
                 },
                 "action->Harrow Binding": {
                     "name": "Harrow Binding",

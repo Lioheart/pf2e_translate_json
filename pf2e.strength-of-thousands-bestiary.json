@@ -783,7 +783,7 @@
                 },
                 "action->Devastating Blast": {
                     "name": "Devastating Blast",
-                    "description": "<p>Bharlen unleashes crackling lightning in a @Template[cone|distance:30|damaging:yes]. Creatures in the area take @Damage[6d12[electricity]] damage (@Check[reflex|dc:30|basic] save).</p>\n<p>Bharlen can use this ability once every [[/gmr 1d4 #rounds]]{1d4 rounds}.</p>"
+                    "description": "<p>Bharlen unleashes crackling lightning in a @Template[cone|distance:30|damaging:yes]. Creatures in the area take @Damage[6d12[electricity]|options:area-damage] damage (@Check[reflex|dc:30|basic|options:area-effect] save).</p>\n<p>Bharlen can use this ability once every [[/gmr 1d4 #Recharge Devastating Blast]]{1d4 rounds}.</p>"
                 },
                 "action->Graveknight's Curse": {
                     "name": "Graveknight's Curse",
@@ -1634,7 +1634,7 @@
                 },
                 "weapon->Fulminating Spear": {
                     "name": "Fulminating Spear",
-                    "description": "<p>This <em>+1 striking returning spear</em> is warm to the touch. The head of the spear is crafted from gold with ivory inlay and has a ruby set into the shaft. You can make the spear glow like a torch or suppress its light by using an action, which has the concentrate trait.</p>\n<hr />\n<p><strong>Activate</strong> <span class=\"action-glyph\">2</span> envision, Interact</p>\n<p><strong>Frequency</strong> once per day</p>\n<hr />\n<p><strong>Effect</strong> You touch the ruby and hurl the spear at a square within 40 feet. When the spear lands, it detonates, dealing @Damage[6d6[fire]] damage (@Check[reflex|dc:23|basic|name:Fulminating Spear Explosion|traits:uncommon]) to all creatures in a @Template[emanation|distance:10]. It then flies back to your hand.</p>"
+                    "description": "<p>This <em>+1 striking returning spear</em> is warm to the touch. The head of the spear is crafted from gold with ivory inlay and has a ruby set into the shaft. You can make the spear glow like a torch or suppress its light by using an action, which has the concentrate trait.</p>\n<hr />\n<p><strong>Activate</strong> <span class=\"action-glyph\">2</span> envision, Interact</p>\n<p><strong>Frequency</strong> once per day</p>\n<hr />\n<p><strong>Effect</strong> You touch the ruby and hurl the spear at a square within 40 feet. When the spear lands, it detonates, dealing @Damage[6d6[fire]|options:area-damage] damage (@Check[reflex|dc:23|basic|name:Fulminating Spear Explosion|options:area-effect|traits:uncommon]) to all creatures in a @Template[emanation|distance:10]. It then flies back to your hand.</p>"
                 },
                 "weapon->Alchemist's Fire (Moderate) (Infused)": {
                     "name": "Alchemist's Fire (Moderate) (Infused)",
@@ -1642,7 +1642,7 @@
                 },
                 "weapon->Tanglefoot Bag (Moderate) (Infused)": {
                     "name": "Tanglefoot Bag (Moderate) (Infused)",
-                    "description": "<p><strong>Activate</strong> <span class=\"action-glyph\">1</span> Strike</p>\n<hr />\n<p>A tanglefoot bag is filled with sticky substances. When you hit a creature with a tanglefoot bag, that creature takes a -15-foot status penalty to its Speeds for 1 minute. You gain a +1 item bonus to attack rolls, and the Escape DC is 19.</p>\n<p>On a critical hit, a creature in contact with a solid surface becomes stuck to the surface and @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Immobilized} for 1 round, and a creature flying via wings has its wings tangled, causing it to fall safely to the ground and become unable to Fly again for 1 round. Tanglefoot bags are not effective when used on a creature that is in water.</p>\n<p>The target can end any effects by Escaping or spending a total of 3 actions to carefully remove the sticky substances. These Interact actions don't have to be consecutive, and other creatures can provide the actions as well.</p>"
+                    "description": "<p><strong>Activate</strong> <span class=\"action-glyph\">1</span> Strike</p>\n<hr />\n<p>A tanglefoot bag is filled with sticky substances. When you hit a creature with a tanglefoot bag, that creature takes a -15-foot status penalty to its Speeds for 1 minute. You gain a +1 item bonus to attack rolls, and the Escape DC is 19 ([[/act escape dc=19]]).</p>\n<p>On a critical hit, a creature in contact with a solid surface becomes stuck to the surface and @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Immobilized} for 1 round, and a creature flying via wings has its wings tangled, causing it to fall safely to the ground and become unable to Fly again for 1 round. Tanglefoot bags are not effective when used on a creature that is in water.</p>\n<p>The target can end any effects by Escaping or spending a total of 3 actions to carefully remove the sticky substances. These Interact actions don't have to be consecutive, and other creatures can provide the actions as well.</p>"
                 },
                 "armor->Smock": {
                     "name": "Smock",
@@ -2125,7 +2125,7 @@
                 },
                 "action->Death Throes": {
                     "name": "Death Throes",
-                    "description": "<p>When the gold defender is destroyed, it melts into worthless slag. As it melts, it releases a @Template[burst|distance:10] cloud of fumes and a 10-foot radius puddle of molten metal. Creatures that breathe fumes are exposed to gold defender poison. Creatures that move through the puddle take @Damage[10d6[fire]|options:area-effect] damage. The fumes dissipate after 1 round and the puddle cools after 1 minute.</p>"
+                    "description": "<p>When the gold defender is destroyed, it melts into worthless slag. As it melts, it releases a @Template[burst|distance:10] cloud of fumes and a 10-foot radius puddle of molten metal. Creatures that breathe fumes are exposed to gold defender poison. Creatures that move through the puddle take @Damage[10d6[fire]|options:area-damage] damage. The fumes dissipate after 1 round and the puddle cools after 1 minute.</p>"
                 },
                 "action->Golem Antimagic": {
                     "name": "Golem Antimagic",
@@ -2287,7 +2287,7 @@
                 },
                 "action->Devastating Blast": {
                     "name": "Devastating Blast",
-                    "description": "<p>The graveknight unleashes a @Template[cone|distance:30] of energy. Creatures in the area take @Damage[4d12[electricity]] damage (@Check[reflex|dc:24|traits:electricity,damaging-effect]{DC 24 basic Reflex} save).</p>\n<p>The graveknight can use this ability once every [[/gmr 1d4 #rounds]]{1d4 rounds}.</p>"
+                    "description": "<p>The graveknight unleashes a @Template[cone|distance:30] of energy. Creatures in the area take @Damage[4d12[electricity]|options:area-damage] damage (@Check[reflex|dc:24|basic|options:area-effect] save).</p>\n<p>The graveknight can use this ability once every [[/gmr 1d4 #Recharge Devastating Blast]]{1d4 rounds}.</p>"
                 },
                 "action->Graveknight's Curse": {
                     "name": "Graveknight's Curse",
@@ -2346,7 +2346,7 @@
                 },
                 "action->Devastating Blast": {
                     "name": "Devastating Blast",
-                    "description": "<p>The graveknight unleashes a @Template[cone|distance:30] of energy. Creatures in the area take @Damage[8d12[fire]] damage (@Check[reflex|dc:36|basic|traits:fire] save).</p>\n<p>The graveknight can use this ability once every [[/gmr 1d4 #rounds]]{1d4 rounds}.</p>"
+                    "description": "<p>The graveknight unleashes a @Template[cone|distance:30] of energy. Creatures in the area take @Damage[8d12[fire]|options:area-damage] damage (@Check[reflex|dc:36|basic|options:area-effect] save).</p>\n<p>The graveknight can use this ability once every [[/gmr 1d4 #Recharge Devastating Blast]]{1d4 rounds}.</p>"
                 },
                 "action->Graveknight's Curse": {
                     "name": "Graveknight's Curse",
@@ -3417,7 +3417,7 @@
                 },
                 "action->Filth Wave": {
                     "name": "Filth Wave",
-                    "description": "<p><strong>Frequency</strong> once per minute</p>\n<hr />\n<p><strong>Effect</strong> The sewer ooze unleashes a wave of filth, covering all creatures within a @Template[emanation|distance:20]. Each creature in the area must succeed at a @Check[reflex|dc:24|traits:damaging-effect] save or take @Damage[1d4[acid]] damage and a -10-foot penalty to its Speeds for 1 minute (on a critical failure, the creature also falls @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone}). A creature can spend an Interact action to clean someone off, decreasing the Speed penalty by 5 feet with each action.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.Qomp2EujVCbzJb4X]{Effect: Filth Wave}</p>"
+                    "description": "<p><strong>Frequency</strong> once per minute</p>\n<hr />\n<p><strong>Effect</strong> The sewer ooze unleashes a wave of filth, covering all creatures within a @Template[emanation|distance:20]. Each creature in the area must succeed at a @Check[reflex|dc:24|options:area-effect,damaging-effect] save or take @Damage[1d4[acid]|options:area-damage] damage and a -10-foot penalty to its Speeds for 1 minute (on a critical failure, the creature also falls @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone}). A creature can spend an Interact action to clean someone off, decreasing the Speed penalty by 5 feet with each action.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.Qomp2EujVCbzJb4X]{Effect: Filth Wave}</p>"
                 }
             },
             "skills": {
@@ -3856,7 +3856,7 @@
                 },
                 "action->Pinning Thrust": {
                     "name": "Pinning Thrust",
-                    "description": "<p>The sun warrior attempts to drive their spear through a foe to pin them in place. The sun warrior makes a spear Strike. On a hit, the target's clothes, armor, or other piece of equipment becomes pinned to the ground. The sun warrior Releases the spear, and the target is @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Immobilized} until they can remove the spear (Escape DC 27). If the Strike was a critical hit, the DC increases by 2.</p>"
+                    "description": "<p>The sun warrior attempts to drive their spear through a foe to pin them in place. The sun warrior makes a spear Strike. On a hit, the target's clothes, armor, or other piece of equipment becomes pinned to the ground. The sun warrior Releases the spear, and the target is @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Immobilized} until they can remove the spear ([[/act escape dc=27]]). If the Strike was a critical hit, the DC increases by 2.</p>"
                 },
                 "action->Grab": {
                     "name": "Grab"
@@ -3911,7 +3911,7 @@
                 },
                 "action->Formic Acid Spray": {
                     "name": "Formic Acid Spray",
-                    "description": "<p>The red guard ant sprays a @Template[cone|distance:15] of acid from its abdomen that deals @Damage[10d10[acid]] damage (@Check[reflex|dc:34|basic]). It can't use Formic Acid Spray again for [[/gmr 1d4 #Recharge Acid Spray]]{1d4 rounds}.</p>"
+                    "description": "<p>The red guard ant sprays a @Template[cone|distance:15] of acid from its abdomen that deals @Damage[10d10[acid]|options:area-damage] damage (@Check[reflex|dc:34|basic|options:area-effect]). It can't use Formic Acid Spray again for [[/gmr 1d4 #Recharge Formic Acid Spray]]{1d4 rounds}.</p>"
                 },
                 "action->Haul Away": {
                     "name": "Haul Away",
@@ -4537,7 +4537,7 @@
                 },
                 "action->Great Roar": {
                     "name": "Great Roar",
-                    "description": "<p>The slana emits a deafening roar. All creatures within a @Template[cone|distance:100] take @Damage[16d8[sonic]] damage (@Check[reflex|dc:44|basic] saving throw). On a failed save, a creature is also @UUID[Compendium.pf2e.conditionitems.Item.9PR9y0bi4JPKnHPR]{Deafened} for 1 minute and @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned 1} (or deafened permanently and @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned 3} on a critical failure). The slana can't use Great Roar again for [[/gmr 1d4 #Recharge Great Roar]]{1d4 rounds}.</p>"
+                    "description": "<p>The slana emits a deafening roar. All creatures within a @Template[cone|distance:100] take @Damage[16d8[sonic]|options:area-damage] damage (@Check[reflex|dc:44|basic|options:area-effect] saving throw). On a failed save, a creature is also @UUID[Compendium.pf2e.conditionitems.Item.9PR9y0bi4JPKnHPR]{Deafened} for 1 minute and @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned 1} (or deafened permanently and @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned 3} on a critical failure). The slana can't use Great Roar again for [[/gmr 1d4 #Recharge Great Roar]]{1d4 rounds}.</p>"
                 },
                 "action->Pounce": {
                     "name": "Pounce",

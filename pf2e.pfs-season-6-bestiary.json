@@ -1,25 +1,27 @@
 {
     "label": "Pfs-Season-6-Bestiary",
     "folders": {
+        "Quests": "Quests",
         "6-00": "6-00",
-        "6-01": "6-01",
+        "6-18": "6-18",
+        "6-04": "6-04",
         "6-02": "6-02",
         "6-03": "6-03",
-        "6-04": "6-04",
+        "6-01": "6-01",
         "6-05": "6-05",
-        "Quests": "Quests",
-        "6-06": "6-06",
-        "6-07": "6-07",
+        "6-19": "6-19",
+        "6-13": "6-13",
+        "6-15": "6-15",
         "6-08": "6-08",
         "6-09": "6-09",
+        "6-07": "6-07",
         "6-10": "6-10",
-        "6-11": "6-11",
-        "6-12": "6-12",
-        "6-13": "6-13",
-        "6-14": "6-14",
-        "6-15": "6-15",
         "6-16": "6-16",
-        "6-17": "6-17"
+        "6-06": "6-06",
+        "6-14": "6-14",
+        "6-11": "6-11",
+        "6-17": "6-17",
+        "6-12": "6-12"
     },
     "entries": {
         "Abendego's Squall (1-2)": {
@@ -442,7 +444,7 @@
                 },
                 "action->Floodwaters": {
                     "name": "Floodwaters",
-                    "description": "<p>Waters rush forth in a @Template[type:line|distance:60], dealing @Damage[5d6[bludgeoning]] damage (@Check[reflex|dc:28|basic] save). Creatures that fail the save and aren't @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed} by the imugi are pushed 10 feet away.</p>"
+                    "description": "<p>Waters rush forth in a @Template[type:line|distance:60], dealing @Damage[5d6[bludgeoning]|options:area-damage] damage (@Check[reflex|dc:28|basic|options:area-effect] save). Creatures that fail the save and aren't @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed} by the imugi are pushed 10 feet away.</p>"
                 },
                 "action->Storm Veil": {
                     "name": "Storm Veil",
@@ -1230,6 +1232,27 @@
                 "action->Spread": {
                     "name": "Spread",
                     "description": "<p><strong>Trigger</strong> The round ends and no creature has attempted to Disable it this round</p><hr /><p><strong>Effect</strong> A building within 15 feet becomes a burning building. The burning building can't use Spread next round.</p>"
+                }
+            }
+        },
+        "Burning Silver Najid": {
+            "name": "Burning Silver Najid",
+            "items": {
+                "action->Burning Strike": {
+                    "name": "Burning Strike",
+                    "description": "<p><strong>Requirements</strong> Najid's divine spark is focused in his blades.</p><hr /><p><strong>Effect</strong> Najid's blades ignite for just a moment. He can make two Strikes with his burning blades, each against the same target and Najid's current multiple attack penalty. If both attacks hit, combine their damage for the purposes of weakness and resistance. Both strikes deal fire damage regardless of the usual damage type. This counts as two attacks when calculating Najid's multiple attack penalty. Najid's focus leaves his blades.</p>"
+                },
+                "action->Fennic Scream": {
+                    "name": "Fennic Scream",
+                    "description": "<p><strong>Requirements</strong> Najid's divine spark is focused in his voice.</p><hr /><p><strong>Effect</strong> Najid screams at one creature within 20 feet, freezing their muscles with his rage. The target must attempt a @Check[fortitude|dc:21] save.</p>\n<p><strong>Success</strong> The target is unaffected.</p>\n<p><strong>Failure</strong> The target is Stunned 2.</p>\n<p><strong>Failure</strong> the target is Stunned for one round.</p>\n<p><strong>Critical Failure</strong> the target is Stunned for one round and @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1} for 1 round thereafter.</p>\n<p>Regardless of outcome, Najid's focus leaves his voice.</p>"
+                },
+                "action->Roguish Smile": {
+                    "name": "Roguish Smile",
+                    "description": "<p><strong>Requirements</strong> Najid's divine spark is focused in his smile.</p><hr /><p><strong>Effect</strong> Najid focuses on a creature within 30 feet while smiling confidently. The target attempts a @Check[will|dc:21] save.</p>\n<p><strong>Success</strong> the target is unaffected.</p>\n<p><strong>Failure</strong> the target is @UUID[Compendium.pf2e.conditionitems.Item.AdPVz7rbaVSRxHFg]{Fascinated} for one round. The condition ends if Najid uses a hostile action against the target, but not if Najid uses a hostile action against the target's allies.</p>\n<p><strong>Critical Failure</strong> the target is fascinated for one minute. The condition ends if Najid uses a hostile action against the target, but not if Najid uses a hostile action against the target's allies.</p>\n<p>Regardless of outcome, Najid's focus leaves his smile.</p>"
+                },
+                "action->Sliver of Divinity": {
+                    "name": "Sliver of Divinity",
+                    "description": "<p>Najid focuses his divine spark into his short swords, his voice, or his smile, allowing himself to use the associated exemplar ability.</p>"
                 }
             }
         },
@@ -2264,6 +2287,15 @@
                 }
             }
         },
+        "Deskari Locust Swarm": {
+            "name": "Deskari Locust Swarm",
+            "items": {
+                "action->Acidic Swarm": {
+                    "name": "Acidic Swarm",
+                    "description": "<p>Each enemy in the swarm's space takes @Damage[2d8[piercing],2d8[acid]|options:area-damage] damage (@Check[reflex|dc:26|basic|options:area-effect] save). Any creature that failures its saving throw also takes @Damage[1d6[persistent,acid]] damage.</p>"
+                }
+            }
+        },
         "Disillusioned Oloranvis Elvanna": {
             "name": "Disillusioned Oloranvis Elvanna",
             "privateNotes": "<p>In the adventure text, the cantrips aren't heightened but they have been in Foundry</p>",
@@ -2316,7 +2348,7 @@
                 },
                 "action->Engulf (Ooze Form Only)": {
                     "name": "Engulf (Ooze Form Only)",
-                    "description": "<p>@Check[reflex|dc:25], @Damage[3d8[acid]] damage, Escape DC 25, Rupture 22</p><hr /><p>@Localize[PF2E.NPC.Abilities.Glossary.Engulf]</p>"
+                    "description": "<p>@Check[reflex|dc:25], @Damage[3d8[acid]] damage, [[/act escape dc=25]], Rupture 22</p><hr /><p>@Localize[PF2E.NPC.Abilities.Glossary.Engulf]</p>"
                 },
                 "action->Gorumite Echoes": {
                     "name": "Gorumite Echoes",
@@ -2531,6 +2563,26 @@
                 "action->A Pit!": {
                     "name": "A Pit!",
                     "description": "<p><strong>Trigger</strong> A creature of size Small or larger steps into an affected square or is standing on a square that becomes a sinkhole</p><hr /><p><strong>Effect</strong> The ground beneath the creature gives way. The creature must attempt a @Check[reflex|dc:18] Save.</p><hr /><p><strong>Critical Success</strong> The creature is able to move to an adjacent square.</p>\n<p><strong>Success</strong> The creature grabs an edge.</p>\n<p><strong>Failure</strong> The creature falls into the pit and lands @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone}. It takes @Damage[5[bludgeoning]|options:fall-damage] damage. Due to roots in the pit wall, it is easy to climb out of, requiring only a @Check[type:athletics|dc:13] check.</p>"
+                }
+            }
+        },
+        "Earthquake": {
+            "name": "Earthquake",
+            "descriptionHazard": "<p>The earth shakes violently side to side, opening a fissure in the ground, partially collapsing builds, and scattering debris in all directions.</p>",
+            "items": {
+                "action->Quake": {
+                    "name": "Quake",
+                    "description": "<p>The ground shakes violently. All creatures in the area take @Damage[6d10[bludgeoning]|options:area-damage] damage with a @Check[reflex|dc:30|basic|options:area-effect] save. On a critical failure, the creature falls into a 40-foot-deep fissure opened by the tremor. They can attempt to @UUID[Compendium.pf2e.actionspf2e.Item.3yoajuKjwHZ9ApUY]{Grab an Edge} (DC 30 to prevent the fall, with a \u20132 circumstance penalty due to the moving ground). A creature that falls takes an additional @Damage[20[bludgeoning]]{20} falling damage, is knocked @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone}, and must be rescued from their predicament by another PC taking one action to pull them free. If any creatures are still in fissures due to previous tremors, they automatically get a Failure on this save.</p>"
+                }
+            }
+        },
+        "Earthquake (13-14)": {
+            "name": "Earthquake (13-14)",
+            "descriptionHazard": "<p>The earth shakes violently side to side, opening a fissure in the ground, partially collapsing builds, and scattering debris in all directions.</p>",
+            "items": {
+                "action->Quake": {
+                    "name": "Quake",
+                    "description": "<p>The ground shakes violently. All creatures in the area take @Damage[8d10[bludgeoning]|options:area-damage] damage with a @Check[reflex|dc:30|basic|options:area-effect] save. On a critical failure, the creature falls into a 60-foot-deep fissure opened by the tremor. They can attempt to @UUID[Compendium.pf2e.actionspf2e.Item.3yoajuKjwHZ9ApUY]{Grab an Edge} (DC 30 to prevent the fall, with a \u20132 circumstance penalty due to the moving ground). A creature that falls takes an additional @Damage[30[bludgeoning]]{30} falling damage, is knocked @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone}, and must be rescued from their predicament by another PC taking one action to pull them free. If any creatures are still in fissures due to previous tremors, they automatically get a Failure on this save.</p>"
                 }
             }
         },
@@ -3419,6 +3471,15 @@
                 }
             }
         },
+        "Greater Deskari Locust Swarm": {
+            "name": "Greater Deskari Locust Swarm",
+            "items": {
+                "action->Acidic Swarm": {
+                    "name": "Acidic Swarm",
+                    "description": "<p>Each enemy in the swarm's space takes @Damage[3d8[piercing],3d8[acid]|options:area-damage] damage (@Check[reflex|dc:28|basic|options:area-effect] save). Any creature that failures its saving throw also takes @Damage[2d6[persistent,acid]] damage.</p>"
+                }
+            }
+        },
         "Greater Gargarthezul": {
             "name": "Greater Gargarthezul",
             "languagesDetails": "telepathy 100 feet",
@@ -3448,6 +3509,65 @@
                 "action->Vicious Bluster": {
                     "name": "Vicious Bluster",
                     "description": "<p>When a gargarthezul successfully @UUID[Compendium.pf2e.actionspf2e.Item.2u915NdUyQan6uKF]{Demoralizes} a foe, it gains 1d6 temporary Hit Points (2d6 on a critical success) that last for 1 minute.</p><hr /><p>@UUID[Compendium.pf2e.bestiary-effects.Item.P8LdA05tK20u98MF]{Effect: Vicious Bluster}</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.Ty2YFxv2EDBOSjxl]{Effect: Vicious Bluster (Critical Success)}</p>"
+                }
+            }
+        },
+        "Greater Kithangian": {
+            "name": "Greater Kithangian",
+            "publicNotes": "<p>The kithangian\u2014a horrifying amalgam of horse and scorpion also known as a \"beast demon\"\u2014is a foul fend born of the souls of mortals who abused and tormented animals in life. Kithangians tend to roam wild areas rife with animals to torture, though humanoid settlements with plenty of pets or livestock also make for tantalizing hunting grounds. Uncontested for too long, a kithangian's presence has a corrupting influence on the local fauna, which birth fiendish monstrosities until the demon is vanquished. If it realizes it's being tracked by vengeful druids or demon slayers, a kithangian assumes the shape of an unassuming animal so it can get the jump on its pursuers.</p>",
+            "blurb": "Variant kithangian",
+            "allSavesBonus": "+1 status to all saves vs. magic",
+            "languagesDetails": "Speak with animals, Telepathy 100 feet",
+            "items": {
+                "spellcastingEntry->Divine Innate Spells": {
+                    "name": "Divine Innate Spells"
+                },
+                "spell->Speak with Animals (Constant)": {
+                    "name": "Speak with Animals (Constant)"
+                },
+                "spell->Command (At Will, Animals Only)": {
+                    "name": "Command (At Will, Animals Only)"
+                },
+                "strike-melee->Pincer": {
+                    "name": "Pincer"
+                },
+                "strike-melee->Stinger": {
+                    "name": "Stinger"
+                },
+                "action->Telepathy 100 feet": {
+                    "name": "Telepathy 100 feet"
+                },
+                "action->Constant Spells": {
+                    "name": "Constant Spells"
+                },
+                "action->All-Around Vision": {
+                    "name": "All-Around Vision"
+                },
+                "action->+1 Status to All Saves vs. Magic": {
+                    "name": "+1 Status to All Saves vs. Magic"
+                },
+                "action->Animal Kindness Vulnerability": {
+                    "name": "Animal Kindness Vulnerability",
+                    "description": "<p>Kithangians find kindness to animals revolting. The first time each round that a kithangian sees someone heal or otherwise provide aid to a creature that has the animal trait, the kithangian takes @Damage[3d6[mental]].</p>"
+                },
+                "action->Animal Killer": {
+                    "name": "Animal Killer",
+                    "description": "<p>A kithangian's melee Strikes deal an additional 2d6 damage to animals.</p>"
+                },
+                "action->Change Shape": {
+                    "name": "Change Shape",
+                    "description": "<p>The kithangian can take on the appearance of any Medium or Large animal. This doesn't change its Speed or their attack and damage modif ers with its Strikes, but it might change the damage type its Strikes deal.</p>\n<p>@Localize[PF2E.NPC.Abilities.Glossary.ChangeShape]</p>"
+                },
+                "action->Kithangian Venom": {
+                    "name": "Kithangian Venom",
+                    "description": "<p><strong>Saving Throw</strong> @Check[fortitude|dc:27]</p>\n<p><strong>Maximum Duration</strong> 6 rounds</p>\n<p><strong>Stage 1</strong> @Damage[2d6[poison]] damage (2 rounds)</p>\n<p><strong>Stage 2</strong> @Damage[2d6[poison]] damage and @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 1} (2 rounds)</p>\n<p><strong>Stage 3</strong> @Damage[3d6[poison]] damage and @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 2} (2 rounds)</p>"
+                },
+                "action->Rasping Tongues": {
+                    "name": "Rasping Tongues",
+                    "description": "<p><strong>Frequency</strong> once per round;</p>\n<p><strong>Requirements</strong> The kithangian has a creature @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed} in one or both pincers</p><hr /><p><strong>Effect</strong> Barbed tongues slither out of the faces in the kithangian's pincers. The tongues burrow into grabbed creatures and inject their minds with haunting psychic screams. Each grabbed creature takes @Damage[2d8[piercing]] damage and @Damage[2d8[mental]] damage. A creature can try to resist the mental damage by attempting a @Check[will|dc:27|basic] save.</p>"
+                },
+                "action->Grab": {
+                    "name": "Grab"
                 }
             }
         },
@@ -3523,6 +3643,75 @@
                 "action->Shaking Earth": {
                     "name": "Shaking Earth",
                     "description": "<p>A creature within difficult terrain created by the quaker takes a \u20132 circumstance penalty to Reflex saves and actions with the Manipulate trait, including @UUID[Compendium.pf2e.actionspf2e.Item.cYdz2grcOcRt4jk6]{Disable Device}.</p>"
+                }
+            }
+        },
+        "Hatched Shemhazian": {
+            "name": "Hatched Shemhazian",
+            "publicNotes": "<p>Shemhazians rise from the souls of torturers and those who reveled in mutilating the physical bodies of their victims. Standing 35 feet tall, a shemhazian is well equipped with a wide range of claws, pincers, and fangs to continue inflicting such torments on those they encounter.</p>\n<p>Shemhazians delight in tormenting mortals, of course, but more than most demons, they revel in sharing the pain with their own kind. Other demons fear and hate shemhazians for this reason, with only the most powerful willing to work with a shemhazian to achieve a shared goal. Even then, the shemhazian is always on the watch for an opportunity to bring pain and suffering to their allies along with any foe.</p>\n<hr />\n<p>When a sinful mortal soul is judged and sent on to the Outer Rifts, it can become a deadly fiend\u2014a demon. Demons are living incarnations of sin\u2014be they classic sins like wrath or gluttony, or more \"specialized\" depravities like an obsession with torture or the act of treason or treachery. Once formed, a demon's driving goals are twofold\u2014the amassing of personal power, and the corruption of mortal souls to cause them to become tainted by sin. In this way demons ensure a never-ending supply of new demons to bolster their ever-growing ranks in the Outer Rifts.</p>\n<p>Demons are selfish and self-absorbed creatures, and most firmly believe that mortals only play at being more virtuous than fiends. They enjoy tempting mortals into damnation to both indulge their egos and swell their armies. Like many other fiends, one of the great rewards of this manipulation is fulfilling their hunger for souls. In their eyes, the primary use for these souls is to spawn new demons, who can serve as soldiers, slaves, pawns, or even currency for their more powerful masters.</p>",
+            "blurb": "Variant shemhazian",
+            "allSavesBonus": "+1 status to all saves vs. magic",
+            "languagesDetails": "Telepathy 100 feet",
+            "items": {
+                "spellcastingEntry->Divine Innate Spells": {
+                    "name": "Divine Innate Spells"
+                },
+                "spell->Truesight (Constant)": {
+                    "name": "Truesight (Constant)"
+                },
+                "spell->Translocate (At Will)": {
+                    "name": "Translocate (At Will)"
+                },
+                "spell->Invisibility (At Will)": {
+                    "name": "Invisibility (At Will)"
+                },
+                "strike-melee->Jaws": {
+                    "name": "Jaws"
+                },
+                "strike-melee->Claw": {
+                    "name": "Claw"
+                },
+                "strike-melee->Pincer": {
+                    "name": "Pincer"
+                },
+                "strike-melee->Tail": {
+                    "name": "Tail"
+                },
+                "action->Telepathy 100 feet": {
+                    "name": "Telepathy 100 feet"
+                },
+                "action->Constant Spells": {
+                    "name": "Constant Spells"
+                },
+                "action->+1 Status to All Saves vs. Magic": {
+                    "name": "+1 Status to All Saves vs. Magic"
+                },
+                "action->Paralyzing Gaze": {
+                    "name": "Paralyzing Gaze",
+                    "description": "<p>30 feet. A non-demon creature that ends its turn in the aura must attempt a @Check[fortitude|dc:31] save. If it fails, it's @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1} for 1 round, and if it critically fails, it is @UUID[Compendium.pf2e.conditionitems.Item.6uEgoh53GbXuHpTF]{Paralyzed} for 1 round.</p>"
+                },
+                "action->Succor Vulnerability": {
+                    "name": "Succor Vulnerability",
+                    "description": "<p>A shemhazian's mutilation is a part of them, and they can't bear to see it reversed. The first time each round that a creature heals from damage the shemhazian dealt on their last turn, the demon takes @Damage[3d6[mental]] damage.</p>"
+                },
+                "action->Tail Whip": {
+                    "name": "Tail Whip",
+                    "description": "<p><strong>Trigger</strong> A creature within reach of the shemhazian's tail leaves a square during a move action it's using</p>\n<hr />\n<p><strong>Effect</strong> The shemhazian attempts to @UUID[Compendium.pf2e.actionspf2e.Item.ge56Lu1xXVFYUnLP]{Trip} the triggering creature. On a success, the creature also takes damage as if the shemhazian had hit with a tail Strike, and if the creature was flying, it falls 30 feet.</p>"
+                },
+                "action->Enfeebling Bite": {
+                    "name": "Enfeebling Bite",
+                    "description": "<p>If the shemhazian's jaws Strike damages a creature, the target is @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 3} for 24 hours. The target can attempt a @Check[fortitude|dc:33] save to reduce this to @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 1} (or be unaffected on a critical success).</p>"
+                },
+                "action->Focused Gaze": {
+                    "name": "Focused Gaze",
+                    "description": "<p>The shemhazian focuses their gaze on a non-demon creature they can see within 30 feet. If that creature isn't already @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed} by the shemhazian's paralyzing gaze, it must attempt a save against the shemhazian's paralyzing gaze. If that creature is slowed, it must succeed at a @Check[fortitude|dc:31] save or be @UUID[Compendium.pf2e.conditionitems.Item.6uEgoh53GbXuHpTF]{Paralyzed} for 1 round.</p>\n<p>A shemhazian can't use this ability against the same creature more than once per round.</p>"
+                },
+                "action->Rend": {
+                    "name": "Rend",
+                    "description": "<p>Claw</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Rend]</p>"
+                },
+                "action->Improved Grab": {
+                    "name": "Improved Grab"
                 }
             }
         },
@@ -4428,11 +4617,11 @@
             "name": "Major Unstable Furniture Archway",
             "descriptionHazard": "<p>This unsteady pile of furniture is piled to the top of this usually high-ceilinged room. There looks to be some space to squeeze through to the other side, but even the slightest touch causes the stack to destabilize, and there's so much that once it begins to fall, it's difficult to stop.</p>",
             "disable": "<p>@Check[athletics|dc:25] to knock the pile over in a safe direction or @Check[thievery|dc:23] (trained) to carefully rearrange the furniture to a more stable configuration.</p>",
-            "routine": "<p>On its initiative, the pile expands into an adjacent space, dealing creatures in that space 2d8 +5 bludgeoning damage with a @Check[reflex|dc:21|basic] save, pushing them into an adjacent empty space, and making that space impassable until cleared. If no adjacent empty space is available, the pile buries the creature, suffocating it. Clearing a space or pulling a creature out requires a @Check[athletics|dc:18] check.</p>",
+            "routine": "<p>On its initiative, the pile expands into an adjacent space, dealing creatures in that space @Damage[(2d8+5)[bludgeoning]] damage with a @Check[reflex|dc:21|basic] save, pushing them into an adjacent empty space, and making that space impassable until cleared. If no adjacent empty space is available, the pile buries the creature, suffocating it. Clearing a space or pulling a creature out requires a @Check[athletics|dc:18] check.</p>",
             "items": {
                 "action->Tumbling Down": {
                     "name": "Tumbling Down",
-                    "description": "<p><strong>Trigger</strong> A creature moves into a space adjacent to the furniture pile</p><hr /><p><strong>Effect</strong> Part of the pile slides into a space the creature occupies, causing @Damage[(2d8+5)[bludgeoning]] damage with a basic @Check[reflex|dc:21] save. The furniture pile rolls initiative.</p>"
+                    "description": "<p><strong>Trigger</strong> A creature moves into a space adjacent to the furniture pile</p><hr /><p><strong>Effect</strong> Part of the pile slides into a space the creature occupies, causing @Damage[(2d8+5)[bludgeoning]] damage with a @Check[reflex|dc:21|basic] save. The furniture pile rolls initiative.</p>"
                 }
             }
         },
@@ -4545,6 +4734,49 @@
                 "action->Experienced Swordsmith": {
                     "name": "Experienced Swordsmith",
                     "description": "<p>Petra has spent years training with a longsword in hand. When she critically succeeds at a Strike with her longsword, the target is @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} until the beginning of her next turn.</p>"
+                }
+            }
+        },
+        "Master Bodyguard": {
+            "name": "Master Bodyguard",
+            "publicNotes": "<p>Hired to protect someone famous or powerful, bodyguards use intimidation, quick wits, and martial skill to keep their charges safe. Such mercenaries might be auxiliaries to a noble's personal guards, but with special directives to safeguard their patrons.</p><hr /><p>Whether they're hired to wage war, protect a caravan, or infiltrate an impenetrable fortress, there's ample work for mercenaries all over Golarion.</p>",
+            "blurb": "Variant Bodyguard",
+            "items": {
+                "weapon->Greatclub": {
+                    "name": "Greatclub",
+                    "description": "<p>While many greatclubs are intricately carved, others are little more than a sturdy tree branch. These massive clubs are too heavy to wield with only one hand.</p>"
+                },
+                "weapon->Sap": {
+                    "name": "Sap",
+                    "description": "<p>A sap has a soft wrapping around a dense core, typically a leather sheath around a lead rod. Its head is wider than its grip to disperse the force of a blow, as the weapon's purpose is to knock out its victim rather than to draw blood.</p>"
+                },
+                "weapon->Sling": {
+                    "name": "Sling",
+                    "description": "<p>Little more than a leather cup attached to a pair of straps, a sling can be used to fling smooth stones or sling bullets at a range.</p>"
+                },
+                "armor->Studded Leather Armor": {
+                    "name": "Studded Leather Armor",
+                    "description": "<p>This leather armor is reinforced with metal studs and sometimes small metal plates, providing most of the flexibility of leather armor with more robust protection.</p>"
+                },
+                "strike-melee->Fist": {
+                    "name": "Fist"
+                },
+                "strike-melee->Greatclub": {
+                    "name": "Greatclub"
+                },
+                "strike-melee->Sap": {
+                    "name": "Sap"
+                },
+                "strike-ranged->Sling": {
+                    "name": "Sling"
+                },
+                "action->Bodyguard's Reprisal": {
+                    "name": "Bodyguard's Reprisal",
+                    "description": "<p><strong>Trigger</strong> A creature attacks the subject of bodyguard's defense</p><hr /><p><strong>Effect</strong> The bodyguard makes a Strike against the triggering creature.</p>"
+                },
+                "action->Bodyguard's Defense": {
+                    "name": "Bodyguard's Defense",
+                    "description": "<p>The bodyguard grants an adjacent ally a +2 circumstance bonus to AC. This lasts until the start of the bodyguard's next turn or until the ally is no longer adjacent, whichever comes first.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.IfUod2VxNmZMGGPq]{Effect: Bodyguard's Defense}</p>"
                 }
             }
         },
@@ -4717,6 +4949,27 @@
                 }
             }
         },
+        "Najid Ouidda": {
+            "name": "Najid Ouidda",
+            "items": {
+                "action->Burning Strike": {
+                    "name": "Burning Strike",
+                    "description": "<p><strong>Requirements</strong> Najid's divine spark is focused in his blades.</p><hr /><p><strong>Effect</strong> Najid's blades ignite for just a moment. He can make two Strikes with his burning blades, each against the same target and Najid's current multiple attack penalty. If both attacks hit, combine their damage for the purposes of weakness and resistance. Both strikes deal fire damage regardless of the usual damage type. This counts as two attacks when calculating Najid's multiple attack penalty. Najid's focus leaves his blades.</p>"
+                },
+                "action->Fennic Scream": {
+                    "name": "Fennic Scream",
+                    "description": "<p><strong>Requirements</strong> Najid's divine spark is focused in his voice.</p><hr /><p><strong>Effect</strong> Najid screams at one creature within 20 feet, freezing their muscles with his rage. The target must attempt a @Check[fortitude|dc:18] save.</p>\n<p><strong>Success</strong> The target is unaffected.</p>\n<p><strong>Failure</strong> The target is Stunned 2.</p>\n<p><strong>Failure</strong> the target is Stunned for one round.</p>\n<p><strong>Critical Failure</strong> the target is Stunned for one round and @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1} for 1 round thereafter.</p>\n<p>Regardless of outcome, Najid's focus leaves his voice.</p>"
+                },
+                "action->Roguish Smile": {
+                    "name": "Roguish Smile",
+                    "description": "<p><strong>Requirements</strong> Najid's divine spark is focused in his smile.</p><hr /><p><strong>Effect</strong> Najid focuses on a creature within 30 feet while smiling confidently. The target attempts a @Check[will|dc:18] save.</p>\n<p><strong>Success</strong> the target is unaffected.</p>\n<p><strong>Failure</strong> the target is @UUID[Compendium.pf2e.conditionitems.Item.AdPVz7rbaVSRxHFg]{Fascinated} for one round. The condition ends if Najid uses a hostile action against the target, but not if Najid uses a hostile action against the target's allies.</p>\n<p><strong>Critical Failure</strong> the target is fascinated for one minute. The condition ends if Najid uses a hostile action against the target, but not if Najid uses a hostile action against the target's allies.</p>\n<p>Regardless of outcome, Najid's focus leaves his smile.</p>"
+                },
+                "action->Sliver of Divinity": {
+                    "name": "Sliver of Divinity",
+                    "description": "<p>Najid focuses his divine spark into his short swords, his voice, or his smile, allowing himself to use the associated exemplar ability.</p>"
+                }
+            }
+        },
         "Norvix (1-2)": {
             "name": "Norvix (1-2)",
             "blurb": "Male human witch",
@@ -4828,7 +5081,7 @@
                 },
                 "action->Engulf (Ooze Form Only)": {
                     "name": "Engulf (Ooze Form Only)",
-                    "description": "<p>@Check[reflex|dc:23], @Damage[2d8[acid]] damage, Escape DC 23, Rupture 20</p><hr /><p>@Localize[PF2E.NPC.Abilities.Glossary.Engulf]</p>"
+                    "description": "<p>@Check[reflex|dc:23], @Damage[2d8[acid]] damage, [[/act escape dc=23]], Rupture 20</p><hr /><p>@Localize[PF2E.NPC.Abilities.Glossary.Engulf]</p>"
                 },
                 "action->Gorumite Echoes": {
                     "name": "Gorumite Echoes",
@@ -5198,6 +5451,30 @@
                 },
                 "action->Grab": {
                     "name": "Grab"
+                }
+            }
+        },
+        "Pitborn Fire Giant Cavalry": {
+            "name": "Pitborn Fire Giant Cavalry",
+            "publicNotes": "<p>The most militaristic of giants, fire giants focus obsessively on learning combat techniques, mastering the arts of forging weapons and armor, and finding new ways to dominate their enemies. Most fire giant communities are built around elemental rifts, hot springs, or volcanic calderas and cannot be moved easily, inspiring unwavering defense against any intruders. As a result, their social and political structures are grounded firmly in martial hierarchies, with a strict emphasis on following the orders of one's superior.</p>\n<p>As soon as a fire giant can walk, they are fitted with their first suit of forged armor. This armor is constantly remolded and replaced as the giant matures. Beyond what they can forge in their volcanic furnaces, fire giants also look to tame dinosaurs, drakes, and hell hounds as tools of war.</p>\n<p>Fire giants are usually identified by their powerful stature and bright orange hair that flickers and dances as if aflame. A typical fire giant stands about 14 feet tall, weighs around 7,000 pounds, and lives to be 350 years old.</p><hr /><p>Giants are massive humanoid creatures who live in remote regions throughout the world. They vary widely but are united in their hunger, requiring sustenance of their own element along with the feasts one would expect from such a massive humanoid. Although a simple matter for some giants, more esoteric types find this need a harsh reality. While a massive fistful of ice or snow alongside their meal will satisfy a frost giant, shadow giants hunger for the coagulated shadows of the Netherworld.</p>",
+            "blurb": "Variant fire giant",
+            "items": {
+                "strike-melee->Fist": {
+                    "name": "Fist"
+                },
+                "strike-ranged->Flame": {
+                    "name": "Flame"
+                },
+                "action->Reactive Strike": {
+                    "name": "Reactive Strike"
+                },
+                "action->Intimidating Charge": {
+                    "name": "Intimidating Charge",
+                    "description": "<p>The pitborn cavalry commands his mount to Stride twice directly toward a creature. The creature must attempt a @Check[will|dc:27] save. Regardless of the results of the save, the pitborn cavalry makes an axe Strike at the creature.</p><hr /><p><strong>Success</strong> The creature is unaffected.</p>\n<p><strong>Failure</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 1} and @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} to the giant until the start of the giant's next turn.</p>\n<p><strong>Critical Failure</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 2} for 1 minute and off-guard to the giant until the start of the giant's next turn.</p>"
+                },
+                "action->Mounted Combat": {
+                    "name": "Mounted Combat",
+                    "description": "<p>A pitborn fire giant cavalry automatically succeeds at attempts to Command their mounts. They can wield their greataxes one-handed while mounted. While doing so they cannot use their fist or flame Strikes.</p>"
                 }
             }
         },
@@ -5761,6 +6038,21 @@
                 "action->Tendril Entanglement": {
                     "name": "Tendril Entanglement",
                     "description": "<p><strong>Trigger</strong> a creature moves into a square adjacent to the bud pile or into the square the bud pile occupies</p><hr /><p><strong>Effect</strong> The sargassum bud pile whips out numerous tendrils, attempting to grab the creature. The target must attempt a @Check[reflex|dc:28] save.</p><hr /><p><strong>Critical Success</strong> The target dodges the tendril and is unaffected.</p>\n<p><strong>Success</strong> A couple of tendrils latch on to the target. The target becomes @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed}. The target can @UUID[Compendium.pf2e.actionspf2e.Item.SkZAQRkLLkmBQNB9]{Escape} by attempting an Athletics or Acrobatics skill check of DC 28.</p>\n<p><strong>Failure</strong> Several tendrils grab the target. The target becomes grabbed and must make a @Check[fortitude|dc:30] or fall @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone}. If the target cannot breathe in water, they begin to suffocate. The DC to Escape increases to 30.</p>\n<p><strong>Critical Failure</strong> As failure, except the DC to Escape increases to 35.</p>"
+                }
+            }
+        },
+        "Sarkorian Red Bison": {
+            "name": "Sarkorian Red Bison",
+            "items": {
+                "strike-melee->Horn": {
+                    "name": "Horn"
+                },
+                "strike-melee->Hoof": {
+                    "name": "Hoof"
+                },
+                "action->Thundering Hooves": {
+                    "name": "Thundering Hooves",
+                    "description": "<p>A Sarkorian red bison's charge shakes the earth. The bison Strides twice and can move through the spaces of creatures at least one size smaller. Each creature whose square the bison enters must takes @Damage[(2d6+9)[bludgeoning]] damage (@Check[reflex|dc:24|basic] save). A creature that critically fails this save takes double damage and is knocked @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone}.</p>"
                 }
             }
         },
@@ -6865,6 +7157,80 @@
                 }
             }
         },
+        "The Husk of Deskari": {
+            "name": "The Husk of Deskari",
+            "sensesDetails": "swarmsense 120 feet",
+            "items": {
+                "strike-melee->Bite": {
+                    "name": "Bite"
+                },
+                "strike-melee->Stinger": {
+                    "name": "Stinger"
+                },
+                "action->Locust Horde": {
+                    "name": "Locust Horde",
+                    "description": "<p>Once the Husk of Deskari has been reduced to 160 hp the surviving locusts retreat inside the Husk rather than surrounding it. At this point the Disgorge Swarm aura ceases to function, the Husk loses its weakness to splash effects and area of effect attacks, and any creature still taking persistent damage from this effect automatically succeeds on their next flat check to remove it.</p>"
+                },
+                "action->All-Around Vision": {
+                    "name": "All-Around Vision"
+                },
+                "action->Cacophony": {
+                    "name": "Cacophony",
+                    "description": "<p>The droning buzz of locusts fills the air and mingles with the rasping, screeching sounds of the Husk's carapace plates grinding as it moves. Any creature that begins its turn or moves within 60 feet of the Husk of Deskari must attempt a @Check[fortitude|dc:33] save or be @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 1}. After attempting the save a creature is immune to the effects of cacophony for 1 minute. On a critical failure, a creature is only immune for 1 round.</p>"
+                },
+                "action->Reactive Strike (Stinger Only)": {
+                    "name": "Reactive Strike (Stinger Only)"
+                },
+                "action->Disgorge Swarm": {
+                    "name": "Disgorge Swarm",
+                    "description": "<p>Millions of fiendish locusts swarm out of the Husk of Deskari, surrounding it in a @Template[type:emanation|distance:30]. The emanation moves with the Husk and remains until removed by Locust Horde. Any creature that enters or begins its turn in the emanation must attempt a @Check[reflex|dc:36] save, with effects based on the results of the save.</p><hr /><p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature takes @Damage[2d8[piercing]|options:area-damage] damage and is @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 1} for 1 round.</p>\n<p><strong>Failure</strong> The creature takes @Damage[4d8[piercing]|options:area-damage] damage and is clumsy 1 for 1 minute.</p>\n<p><strong>Critical Failure</strong> The creature takes @Damage[8d8[piercing]|options:area-damage] damage and is @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 2} for one minute.</p>"
+                },
+                "action->Swarmsense": {
+                    "name": "Swarmsense",
+                    "description": "<p>The Husk of Deskari can see through the eyes of each insect in the swarms infesting its body or those created by its breath weapon. This grants the Husk of Deskari All-Around Vision.</p>"
+                },
+                "action->Knockdown": {
+                    "name": "Knockdown"
+                }
+            }
+        },
+        "The Husk of Deskari (13-14)": {
+            "name": "The Husk of Deskari (13-14)",
+            "sensesDetails": "swarmsense 120 feet",
+            "items": {
+                "strike-melee->Bite": {
+                    "name": "Bite"
+                },
+                "strike-melee->Stinger": {
+                    "name": "Stinger"
+                },
+                "action->Locust Horde": {
+                    "name": "Locust Horde",
+                    "description": "<p>Once the Husk of Deskari has been reduced to 200 hp the surviving locusts retreat inside the Husk rather than surrounding it. At this point the Disgorge Swarm aura ceases to function, the Husk loses its weakness to splash effects and area of effect attacks, and any creature still taking persistent damage from this effect automatically succeeds on their next flat check to remove it.</p>"
+                },
+                "action->All-Around Vision": {
+                    "name": "All-Around Vision"
+                },
+                "action->Cacophony": {
+                    "name": "Cacophony",
+                    "description": "<p>The droning buzz of locusts fills the air and mingles with the rasping, screeching sounds of the Husk's carapace plates grinding as it moves. Any creature that begins its turn or moves within 60 feet of the Husk of Deskari must attempt a @Check[fortitude|dc:37] save or be @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 1}. After attempting the save a creature is immune to the effects of cacophony for 1 minute. On a critical failure, a creature is only immune for 1 round.</p>"
+                },
+                "action->Reactive Strike (Stinger Only)": {
+                    "name": "Reactive Strike (Stinger Only)"
+                },
+                "action->Disgorge Swarm": {
+                    "name": "Disgorge Swarm",
+                    "description": "<p>Millions of fiendish locusts swarm out of the Husk of Deskari, surrounding it in a @Template[type:emanation|distance:30]. The swarm moves with the Husk and remains until removed by Locust Horde. Any creature that enters or begins its turn in the emanation must attempt a @Check[reflex|dc:37] save, with effects based on the results of the save.</p><hr /><p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature takes @Damage[2d8[piercing]|options:area-damage] damage and is @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 1} for 1 round.</p>\n<p><strong>Failure</strong> The creature takes @Damage[4d8[piercing]|options:area-damage] damage and is clumsy 1 for 1 minute.</p>\n<p><strong>Critical Failure</strong> The creature takes @Damage[8d8[piercing]|options:area-damage] damage and is @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 2} for one minute.</p>"
+                },
+                "action->Swarmsense": {
+                    "name": "Swarmsense",
+                    "description": "<p>The Husk of Deskari can see through the eyes of each insect in the swarms infesting its body or those created by its breath weapon. This grants the Husk of Deskari All-Around Vision.</p>"
+                },
+                "action->Knockdown": {
+                    "name": "Knockdown"
+                }
+            }
+        },
         "Thorns of the Rose Pit": {
             "name": "Thorns of the Rose Pit",
             "descriptionHazard": "<p>Decorated smooth-hewn flagstone flooring gives way along hidden seams to a 20-foot square, 25-foot-deep pit festooned with spikes and blades of petrified wood in the darkness below.</p>",
@@ -6945,6 +7311,38 @@
             "skills": {
                 "stealth": {
                     "label": "when still"
+                }
+            }
+        },
+        "Trained Triceratops": {
+            "name": "Trained Triceratops",
+            "publicNotes": "<p>Triceratopses are muscular quadrupeds with powerful short legs, thick necks, and heads crowned by a wide, bony frill. Though they bear three large horns, they use these bony protrusions only to defend themselves or fight for dominance. Short-tempered and obstinate, triceratopses are unlikely to back down from a fight unless they are hopelessly outmatched, and the creatures are known to fight to the death for no apparent reason beyond stubbornness. Triceratopses often serve as mounts for humanoids, particularly giants, who can comfortably ride behind the dinosaurs' protective bone frills. A triceratops is 30 feet long and weighs as much as 10 tons.</p>\n<hr />\n<p>Remnants from the world's primeval era, these enormous reptilian animals still exist in large numbers in remote wildernesses or underground in magical Darklands caverns. Lizardfolk, orcs, giants, and other humanoids who live near dinosaurs use the animals as mounts, guards, or hunting beasts. Occasionally, rich nobles will collect dinosaurs to display them in menageries, which almost inevitably leads to cast-offs being nursed back to health by druids and other champions of nature. When dinosaurs establish themselves in regions outside their normal habitats, it's often the result of a large collection being released.</p>",
+            "blurb": "Variant triceratops",
+            "items": {
+                "strike-melee->Horns": {
+                    "name": "Horns"
+                },
+                "strike-melee->Foot": {
+                    "name": "Foot"
+                },
+                "action->Frill Defense": {
+                    "name": "Frill Defense",
+                    "description": "<p><strong>Trigger</strong> The rider is targeted with an attack.</p>\n<p><strong>Requirements</strong> A creature must be mounted on the triceratops.</p><hr /><p><strong>Effect</strong> The triceratops intercepts the attack with its bony frill. The rider gains a +2 circumstance bonus to its AC against the triggering attack.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.enrTKgEzu2quCj0z]{Effect: Frill Defense}</p>"
+                },
+                "action->Lumbering Charge": {
+                    "name": "Lumbering Charge",
+                    "description": "<p>The triceratops Strides up to 10 feet and then makes a Strike.</p>"
+                },
+                "action->Trample": {
+                    "name": "Trample",
+                    "description": "<p>Large or smaller, foot, @Check[reflex|dc:30|basic]</p><hr /><p>@Localize[PF2E.NPC.Abilities.Glossary.Trample]</p>"
+                },
+                "action->Vicious Gore": {
+                    "name": "Vicious Gore",
+                    "description": "<p>A triceratops deals 2d6 extra persistent bleed damage to @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone} targets it hits with its horns.</p>"
+                },
+                "action->Knockdown": {
+                    "name": "Knockdown"
                 }
             }
         },
@@ -7146,6 +7544,24 @@
                 "action->Wasp Larva": {
                     "name": "Wasp Larva",
                     "description": "<p><strong>Saving Throw</strong> @Check[fortitude|dc:22]</p>\n<p><strong>Stage 1</strong> carrier with no ill effect (1d6 days)</p>\n<p><strong>Stage 2</strong> @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 1} (1d3 days)</p>\n<p><strong>Stage 3</strong> @Damage[5d6[untyped]] damage, larva emerges (disease ends)</p>"
+                }
+            }
+        },
+        "Veteran Bodyguard": {
+            "name": "Veteran Bodyguard",
+            "publicNotes": "<p>Hired to protect someone famous or powerful, bodyguards use intimidation, quick wits, and martial skill to keep their charges safe. Such mercenaries might be auxiliaries to a noble's personal guards, but with special directives to safeguard their patrons.</p><hr /><p>Whether they're hired to wage war, protect a caravan, or infiltrate an impenetrable fortress, there's ample work for mercenaries all over Golarion.</p>",
+            "blurb": "Variant Bodyguard",
+            "items": {
+                "strike-melee->Fist": {
+                    "name": "Fist"
+                },
+                "action->Bodyguard's Reprisal": {
+                    "name": "Bodyguard's Reprisal",
+                    "description": "<p><strong>Trigger</strong> A creature attacks the subject of bodyguard's defense</p><hr /><p><strong>Effect</strong> The bodyguard makes a Strike against the triggering creature.</p>"
+                },
+                "action->Bodyguard's Defense": {
+                    "name": "Bodyguard's Defense",
+                    "description": "<p>The bodyguard grants an adjacent ally a +2 circumstance bonus to AC. This lasts until the start of the bodyguard's next turn or until the ally is no longer adjacent, whichever comes first.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.IfUod2VxNmZMGGPq]{Effect: Bodyguard's Defense}</p>"
                 }
             }
         },

@@ -213,7 +213,7 @@
                 },
                 "action->Devastating Blast": {
                     "name": "Devastating Blast",
-                    "description": "<p>The graveknight unleashes a @Template[cone|distance:30] of energy. Creatures in the area take @Damage[12d6[cold]] with a @Check[reflex|dc:30|basic]. The graveknight can use this ability once every [[/gmr 1d4 #Recharge devastating blast]] rounds.</p>"
+                    "description": "<p>The graveknight unleashes a @Template[cone|distance:30] of energy. Creatures in the area take @Damage[12d6[cold]|options:area-damage] with a @Check[reflex|dc:30|basic|options:area-effect]. The graveknight can use this ability once every [[/gmr 1d4 #Recharge Devastating Blast]] rounds.</p>"
                 },
                 "action->Graveknight's Curse": {
                     "name": "Graveknight's Curse",
@@ -457,7 +457,7 @@
                 },
                 "action->Infesting Exhalation": {
                     "name": "Infesting Exhalation",
-                    "description": "<p>The eshmok exhales a wave of stinging fiendish wasps out in a @Template[type:cone|distance:30], dealing @Damage[4d8[poison]] damage to every creature within the cone (@Check[reflex|dc:28|basic] save). The swarming fiend wasps linger in the area for 6 rounds or until the eshmok is able to use Infesting Exhalation again, whichever comes first. Each creature damaged by Infesting Exhalation or that enters the area must succeed at a @Check[fortitude|dc:28] save or take @Damage[2d8[persistent,poison]] damage and become @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 1} as the poison renders them dizzy and nauseous. At the end of each of their turns, they can attempt a new Fortitude save to end the effects. The eshmok can't use Infesting Exhalation again for [[/gmr 1d6 #Recharge Infesting Exhalation]]{1d6 rounds}.</p>"
+                    "description": "<p>The eshmok exhales a wave of stinging fiendish wasps out in a @Template[type:cone|distance:30], dealing @Damage[4d8[poison]|options:area-damage] damage to every creature within the cone (@Check[reflex|dc:28|basic|options:area-effect] save). The swarming fiend wasps linger in the area for 6 rounds or until the eshmok is able to use Infesting Exhalation again, whichever comes first. Each creature damaged by Infesting Exhalation or that enters the area must succeed at a @Check[fortitude|dc:28] save or take @Damage[2d8[persistent,poison]] damage and become @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 1} as the poison renders them dizzy and nauseous. At the end of each of their turns, they can attempt a new Fortitude save to end the effects. The eshmok can't use Infesting Exhalation again for [[/gmr 1d6 #Recharge Infesting Exhalation]]{1d6 rounds}.</p>"
                 }
             }
         },
@@ -582,7 +582,7 @@
                 },
                 "action->Engulf": {
                     "name": "Engulf",
-                    "description": "<p>@Check[reflex|dc:40|traits:damaging-effect], @Damage[6d6[acid]] damage, Escape DC 40, Rupture 40</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Engulf]</p>"
+                    "description": "<p>@Check[reflex|dc:40|traits:damaging-effect], @Damage[6d6[acid]] damage, [[/act escape dc=40]], Rupture 40</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Engulf]</p>"
                 },
                 "action->Toxic Sporecloud": {
                     "name": "Toxic Sporecloud",
@@ -1591,11 +1591,11 @@
                 },
                 "action->Disperse": {
                     "name": "Disperse",
-                    "description": "<p><strong>Requirements</strong> The root rotter has 25 Hit Points or fewer</p><hr /><p><strong>Effect</strong> The root rotter destroys themself. Thorny fungal roots explode from their body, dealing @Damage[10d6[piercing]] damage in a @Template[type:emanation|distance:10] (@Check[reflex|dc:25|basic] save). Any creature who fails the save is exposed to rotter infestation.</p>"
+                    "description": "<p><strong>Requirements</strong> The root rotter has 25 Hit Points or fewer</p><hr /><p><strong>Effect</strong> The root rotter destroys themself. Thorny fungal roots explode from their body, dealing @Damage[10d6[piercing]|options:area-damage] damage in a @Template[type:emanation|distance:10] (@Check[reflex|dc:25|basic|options:area-effect] save). Any creature who fails the save is exposed to rotter infestation.</p>"
                 },
                 "action->Fungal Root": {
                     "name": "Fungal Root",
-                    "description": "<p><strong>Requirements</strong> The root rotter is standing in fungal terrain</p><hr /><p><strong>Effect</strong> Fungal roots reach out to snag a nearby foe. An enemy within 30 feet of the root rotter takes @Damage[4d6[piercing]] damage and must attempt a @Check[reflex|dc:27] saving throw.</p><hr /><p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature takes half damage and becomes @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 1} until the end of its next turn.</p>\n<p><strong>Failure</strong> The creature takes full damage and becomes clumsy 1 with an unlimited duration. In addition, the creature is @UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{Restrained} (@UUID[Compendium.pf2e.actionspf2e.Item.SkZAQRkLLkmBQNB9]{Escape} DC 27) for 1 minute.</p>\n<p><strong>Critical Failure</strong> As failure but double damage. In addition, the creature is exposed to rotter infestation.</p>"
+                    "description": "<p><strong>Requirements</strong> The root rotter is standing in fungal terrain</p><hr /><p><strong>Effect</strong> Fungal roots reach out to snag a nearby foe. An enemy within 30 feet of the root rotter takes @Damage[4d6[piercing]] damage and must attempt a @Check[reflex|dc:27] saving throw.</p><hr /><p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature takes half damage and becomes @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 1} until the end of its next turn.</p>\n<p><strong>Failure</strong> The creature takes full damage and becomes clumsy 1 with an unlimited duration. In addition, the creature is @UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{Restrained} ([[/act escape dc=27]]) for 1 minute.</p>\n<p><strong>Critical Failure</strong> As failure but double damage. In addition, the creature is exposed to rotter infestation.</p>"
                 },
                 "action->Rotter Infestation": {
                     "name": "Rotter Infestation",
@@ -1781,7 +1781,7 @@
                 },
                 "action->Engulf": {
                     "name": "Engulf",
-                    "description": "<p>@Check[reflex|dc:32], @Damage[3d10[acid]] damage plus digestion, Escape DC 32, Rupture 18</p><hr /><p>@Localize[PF2E.NPC.Abilities.Glossary.Engulf]</p>"
+                    "description": "<p>@Check[reflex|dc:32], @Damage[3d10[acid]] damage plus digestion, [[/act escape dc=32]], Rupture 18</p><hr /><p>@Localize[PF2E.NPC.Abilities.Glossary.Engulf]</p>"
                 },
                 "action->Sinmold Infestation": {
                     "name": "Sinmold Infestation",
@@ -2393,7 +2393,7 @@
                 },
                 "action->Expel Infestation": {
                     "name": "Expel Infestation",
-                    "description": "<p>The isqulug expels larvae from the hivemind in its head in a @Template[cone|distance:30]. Creatures in this area take @Damage[6d10[piercing]] damage as the swarm feeds on their flesh (@Check[reflex|dc:32|basic] save). Any creature that takes damage is exposed to isqulugia.</p>\n<p>The isqulug becomes @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 1} for [[/gmr 1d4 #Stupified Duration]]{1d4 rounds}, during which it can't Expel Infestation.</p>"
+                    "description": "<p>The isqulug expels larvae from the hivemind in its head in a @Template[cone|distance:30]. Creatures in this area take @Damage[6d10[piercing]|options:area-damage] damage as the swarm feeds on their flesh (@Check[reflex|dc:32|basic|options:area-effect] save). Any creature that takes damage is exposed to isqulugia.</p>\n<p>The isqulug becomes @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 1} for [[/gmr 1d4 #Stupified Duration]]{1d4 rounds}, during which it can't Expel Infestation.</p>"
                 },
                 "action->Isqulugia": {
                     "name": "Isqulugia",

@@ -6,42 +6,10 @@
         "Book 3 - Dreamers of the Nameless Spires": "Book 3 - Dreamers of the Nameless Spires"
     },
     "entries": {
-        "Abyssal Muckrager": {
-            "name": "Abyssal Muckrager",
-            "publicNotes": "<p>This wave of dirt takes the crude likeness of the melded forequarters of a charging warhorse and a rocky knight wielding a rudimentary lance of gray stone.</p>",
-            "blurb": "earthen destrier",
-            "items": {
-                "strike-melee->Lance Arm": {
-                    "name": "Lance Arm"
-                },
-                "strike-melee->Hoof": {
-                    "name": "Hoof"
-                },
-                "action->Tremorsense 60 feet": {
-                    "name": "Tremorsense 60 feet"
-                },
-                "action->Earth Glide": {
-                    "name": "Earth Glide",
-                    "description": "<p>An earthen destrier can @UUID[Compendium.pf2e.actionspf2e.Item.H6v1VgowHaKHnVlG]{Burrow} through earthen matter, including rock. When it does so, it moves at its full burrow Speed, leaving no tunnels or signs of its passing.</p>"
-                },
-                "action->Lancing Charge": {
-                    "name": "Lancing Charge",
-                    "description": "<p>If the destrier moved at least 10 feet directly before its lance arm Strike, it gains a +2 circumstance bonus to its damage roll.</p>"
-                },
-                "action->Tilting Strike": {
-                    "name": "Tilting Strike",
-                    "description": "<p><strong>Trigger</strong> The earthen destrier tramples a creature</p>\n<hr />\n<p><strong>Effect</strong> The earthen destrier makes a lance arm Strike against the creature it's trampling at a -5 penalty.</p>"
-                },
-                "action->Trample": {
-                    "name": "Trample",
-                    "description": "<p>Medium or smaller, hoof, @Check[reflex|dc:20|basic]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Trample]</p>"
-                }
-            }
-        },
         "Ainamuuren": {
             "name": "Ainamuuren",
             "blurb": "Male saumen kar last scion",
-            "allSavesBonus": "+1 status bonus to saves against good and necromancy spells and effects",
+            "allSavesBonus": "+1 status bonus to saves against holy spells and effects",
             "items": {
                 "spellcastingEntry->Occult Innate Spells": {
                     "name": "Occult Innate Spells"
@@ -52,16 +20,15 @@
                 "strike-melee->Horns": {
                     "name": "Horns"
                 },
-                "action->+1 Status to Saves Against Good and Necromancy Spells and Effects": {
-                    "name": "+1 Status to Saves Against Good and Necromancy Spells and Effects"
-                },
-                "action->Attack of Opportunity (Tentacle Only)": {
-                    "name": "Attack of Opportunity (Tentacle Only)",
-                    "description": "<p>Tentacle only</p>\n<p>@Localize[PF2E.NPC.Abilities.Glossary.AttackOfOpportunity]</p>"
+                "action->+1 Status Bonus to Saves Against Holy Spells and Effects": {
+                    "name": "+1 Status Bonus to Saves Against Holy Spells and Effects"
                 },
                 "action->Blackfrost Evasion": {
                     "name": "Blackfrost Evasion",
                     "description": "<p><strong>Trigger</strong> Ainamuuren takes at least 35 physical damage from a single attack, and he isn't currently discorporated</p>\n<hr />\n<p><strong>Effect</strong> Ainamuuren discorporates into a whirling blizzard of blackfrost for 3 rounds. During this time, he gains resistance 10 to physical damage and weakness 10 to force damage. He gains a fly Speed of 40 feet, but the only action he can take is to Fly. While discorporated, the first time each round that Ainamuuren enters another creature's space or a creature enters Ainamuuren's space, that creature takes @Damage[4d8[cold]] and is exposed to blackfrost. At the start of his turn, Ainamuuren can end this effect as a free action.</p>"
+                },
+                "action->Reactive Strike (Tentacle Only)": {
+                    "name": "Reactive Strike (Tentacle Only)"
                 },
                 "action->Reactive Tentacles": {
                     "name": "Reactive Tentacles",
@@ -179,6 +146,33 @@
                 }
             }
         },
+        "Animate Dream": {
+            "name": "Animate Dream",
+            "publicNotes": "<p>An animate dream coalesces from centuries of stray fragments of reverie and dream left behind as slumbering minds drift through the Dimension of Dreams. In most cases, these fragments simply disperse on their own, but when dreamers flee from nightmares back to the waking world, these fragments can take on a supernatural life of their own. They have little reasoning and intent except to seek similar fragments, absorb them, and grow. When enough of them gather together, they merge into a horrific form as an animate dream.</p>\n<p>Individually, animate dreams can hold a wide range of appearances, but most take on rudimentary shapes akin to the living forms of the minds that spawned them. Animate dreams that rise from slumbering humanoids, the most commonly encountered, thus appear humanoid, but with distorted, nightmarish shapes that incorporate additional twisted limbs and frightening features. In these forms, animate dreams find their way out of the Dreamlands and into the waking world, only to discover they have no way of returning and suffer a relentless hunger that only new nightmares can sate.</p>\n<p>An animate dream thrives on the terror fueled by nightmares and fear and uses its supernatural abilities to invoke such feelings in the minds of its victims, cursing its prey by creating a permanent link to that individual's dreams. Thereafter, the victim is subjected to all manner of reoccurring nightmares. As the nightmares continue, the victim finds it more and more difficult to remain awake. In the end, the victim plunges into an accursed slumber from which it cannot return. These victims provide the animate dream with the purest form of fear and are its preferred sustenance.</p>\n<p>An animate dream can subsist on the ambient fear generated by regular nightmares, but these lesser fears aren't as satisfying, often driving the animate dream to seek out new victims. Left without a source of fear, an animate dream won't starve to death, but it will grow increasingly violent and desperate. Famished animate dreams are the ones most often encountered, as they have been forced to abandon subtlety to pursue more blatant methods of harvesting fear. Yet such animate dreams also tend to be the least powerful of their kind. Those who have grown metaphysically fat on fear have generally done so by adopting a specific nightmare theme, such as being buried alive, being swept away by ocean waves, or being consumed by wild beasts. Such animate dreams often have similarly themed innate spells to augment their powers.</p>",
+            "allSavesBonus": "+1 status to all saves vs. magic",
+            "languagesDetails": "telepathy 100 feet",
+            "items": {
+                "spellcastingEntry->Occult Innate Spells": {
+                    "name": "Occult Innate Spells"
+                },
+                "spell->Translocate (At Will)": {
+                    "name": "Translocate (At Will)"
+                },
+                "strike-melee->Nightmare Tendril": {
+                    "name": "Nightmare Tendril"
+                },
+                "action->Telepathy 100 feet": {
+                    "name": "Telepathy 100 feet"
+                },
+                "action->+1 Status to All Saves vs. Magic": {
+                    "name": "+1 Status to All Saves vs. Magic"
+                },
+                "action->Endless Nightmare": {
+                    "name": "Endless Nightmare",
+                    "description": "<p>An animate dream's touch fills the victim's mind with terrifying visions</p>\n<p><strong>Saving Throw</strong> @Check[fortitude|dc:26]</p>\n<p><strong>Stage 1</strong> @UUID[Compendium.pf2e.conditionitems.Item.HL2l2VRSaQHu9lUw]{Fatigued} (1 day)</p>\n<p><strong>Stage 2</strong> fatigued and @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 1} (1 day)</p>\n<p><strong>Stage 3</strong> The victim falls @UUID[Compendium.pf2e.conditionitems.Item.fBnFDH2MTzgFijKf]{Unconscious} and can't be awakened as long as they remain at this stage (1 day).</p>"
+                }
+            }
+        },
         "Apothecary's Cabinet": {
             "name": "Apothecary's Cabinet",
             "acDetails": "(20 when broken); construct armor",
@@ -199,6 +193,47 @@
                 }
             }
         },
+        "Arctic Bloom": {
+            "name": "Arctic Bloom",
+            "sensesDetails": "pheromones (precise) 20 feet",
+            "languagesDetails": "Pheromones",
+            "items": {
+                "strike-melee->Bite": {
+                    "name": "Bite"
+                },
+                "strike-ranged->Spore Sap": {
+                    "name": "Spore Sap"
+                },
+                "action->Alluring Spores": {
+                    "name": "Alluring Spores",
+                    "description": "<p><strong>Saving Throw</strong> @Check[fortitude|dc:19]</p>\n<p><strong>Maximum Duration</strong> 6 rounds</p>\n<p><strong>Stage 1</strong> @UUID[Compendium.pf2e.conditionitems.Item.AdPVz7rbaVSRxHFg]{Fascinated} by the arctic bloom (1 round)</p>\n<p><strong>Stage 2</strong> @UUID[Compendium.pf2e.conditionitems.Item.9qGBRpbX9NEwtAAr]{Controlled} by the arctic bloom (1 round)</p>"
+                },
+                "action->Feed": {
+                    "name": "Feed",
+                    "description": "<p>The arctic bloom draws nutrients from a living creature it has swallowed, regaining @Damage[(3d8+24)[healing]] HP. The swallowed creature takes @Damage[(2d12+8)[bludgeoning]] damage.</p>"
+                },
+                "action->Paralyzing Poison": {
+                    "name": "Paralyzing Poison",
+                    "description": "<p>The plants send out runner shoots that quickly develop purple bulbs. These bulbs, the plant's polyps, sprout many long, hooked vines before detaching from the mother plant. Dusk poppies are short lived but active, foraging for a week or so before they shrivel and die. The poppies aren't dangerous unless handled, as they secrete a fine dust that seizes the nervous system of creatures who come in contact with them.</p>\n<p><strong>Saving Throw</strong> @Check[fortitude|dc:19]</p>\n<p><strong>Maximum Duration</strong> 6 rounds</p>\n<p><strong>Stage 1</strong> @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} and @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 1} (1 round)</p>\n<p><strong>Stage 2</strong> off-guard and @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 2} (1 round)</p>\n<p><strong>Stage 3</strong> @UUID[Compendium.pf2e.conditionitems.Item.6uEgoh53GbXuHpTF]{Paralyzed} (1 round)</p>"
+                },
+                "action->Pheromones": {
+                    "name": "Pheromones",
+                    "description": "<p>5 miles. Arctic blooms communicate with others of their kind via airborne pheromones. They can use this form of communication to determine their relative distance to each other, call for help if they are under attack or need sustenance, announce that they've detected prey, and convey similar basic concepts. Pheromones coat everything within the aura and allow dusk poppies to perceive with their pheromones.</p>"
+                },
+                "action->Swallow Whole": {
+                    "name": "Swallow Whole",
+                    "description": "<p>Medium, @Damage[(2d12+8)[bludgeoning]], Rupture 18</p><hr /><p>@Localize[PF2E.NPC.Abilities.Glossary.SwallowWhole]</p>"
+                },
+                "action->Improved Grab": {
+                    "name": "Improved Grab"
+                }
+            },
+            "skills": {
+                "stealth": {
+                    "label": "in tundra"
+                }
+            }
+        },
         "Aspect of Ruun": {
             "name": "Aspect of Ruun",
             "publicNotes": "<p>Sage spirit guides are among the wisest spirits. They often take the forms of raptors such as owls, using their keen senses to evaluate situations from high above before swooping in to aid imperiled mortals.</p>\n<p>Adventurers who befriend a sage guide are fortunate indeed; in addition to providing sage counsel before conflict begins, sage guides can restore and tend to their allies in the aftermath of a violent dispute.</p>\n<p>In many stories, the sage guide assumes the form of a large owl whose proud breast is composed of hard stone. This depiction combines the wisdom commonly attributed to the owl with the strength and fortitude of the earth.</p>\n<hr />\n<p>Spirit guides are ghostly creatures that manifest as primordial animals on the Material Plane. Many Sarkorian cultures believe that spirit guides came into being at the same time as the first mortal hunting bands. In this time before time, spirit guides took on the most elemental shapes of animals, and they taught humanoid communities about important aspects of nature. As they imparted their wisdom, these spirit guides took physical forms, becoming the wild animals that exist today. Though spirit guides bestowed most of their gifts unto mortals in ancient times, a rare few continue to lurk in forgotten or as-of-yet-undiscovered corners of the physical world.</p>",
@@ -208,8 +243,8 @@
                 "spellcastingEntry->Primal Innate Spells": {
                     "name": "Primal Innate Spells"
                 },
-                "spell->Tongues (Constant)": {
-                    "name": "Tongues (Constant)"
+                "spell->Truespeech (Constant)": {
+                    "name": "Truespeech (Constant)"
                 },
                 "strike-melee->Talon": {
                     "name": "Talon"
@@ -377,9 +412,6 @@
                 "spellcastingEntry->Druid Order Spells": {
                     "name": "Druid Order Spells"
                 },
-                "spell->Wild Morph (Plant Shape)": {
-                    "name": "Wild Morph (Plant Shape)"
-                },
                 "equipment->Leaf Mask": {
                     "name": "Leaf Mask"
                 },
@@ -388,7 +420,7 @@
                 },
                 "action->Guardian Thorns": {
                     "name": "Guardian Thorns",
-                    "description": "<p>Bolan compels plant-based materials within @Template[emanation|distance:10]{10 feet} of him to grow sharp thorns and spiky branches. This ability affects all walls, floors, and large objects made from dead organic material, such as wood. Affected areas become difficult terrain. Non-fey and non-plant creatures in the affected area or those who move through an affected square take @Damage[2d10[piercing]] (@Check[reflex|dc:18|basic]). This ability does not affect stone, dirt, living plants, or other materials. The effect ends when Bolan moves out of his square.</p>"
+                    "description": "<p>Bolan compels plant-based materials within @Template[emanation|distance:10]{10 feet} of him to grow sharp thorns and spiky branches. This ability affects all walls, floors, and large objects made from dead organic material, such as wood. Affected areas become difficult terrain. Non-fey and non-plant creatures in the affected area or those who move through an affected square take @Damage[2d10[piercing]|options:area-damage] (@Check[reflex|dc:18|basic|options:area-effect]). This ability does not affect stone, dirt, living plants, or other materials. The effect ends when Bolan moves out of his square.</p>"
                 },
                 "action->Item Treachery": {
                     "name": "Item Treachery",
@@ -402,7 +434,7 @@
         },
         "Capstan Swabbie": {
             "name": "Capstan Swabbie",
-            "publicNotes": "<p>Capstan swabbies are constructs specially designed for seafaring. Sea captains looking for unwavering loyalty and competence can do far worse than a swabbie.</p>\n<p>Built to resemble and assume the place of a ship's capstan\u2014the winch that raises and lowers the anchor\u2014a capstan swabbie is a round, stout cylinder of wood wrapped in heavy-duty rope. Spars spaced evenly around its frame complete the look, while castors on its base give the swabbie mobility. A capstan swabbie also sports a few small pegs around its diameter. It can use these appendages to \"grab\" other ropes from the rigging to help sail the ship. Some crews decorate their capstan swabbies with paint or rags to give the constructs a personal touch.</p>\n<p>A capstan swabbie instinctively protects its captain's ship. Using short ropes attached to its sides, the swabbie can lash and trip foes or make emergency repairs to itself or its vessel. Far more dangerous, of course, is the anchor to which the swabbie's longest rope is attached. A capstan swabbie can swing this anchor in wide arcs and reel it back in at a moment's notice.</p>",
+            "publicNotes": "<p>Capstan swabbies are constructs specially designed for seafaring. Sea captains looking for unwavering loyalty and competence can do far worse than a swabbie.</p>\n<p>Built to resemble and assume the place of a ship's capstan\u2014the winch that raises and lowers the anchor\u2014a capstan swabbie is a round, stout cylinder of wood wrapped in heavy-duty rope. Spars spaced evenly around its frame complete the look, while castors on its base give the swabbie mobility. A capstan swabbie also sports a few small pegs around its diameter. It can use these appendages to \"grab\" other ropes from the rigging to help sail the ship. Some crews decorate their capstan swabbies with paint or rags to give the constructs a personal touch.</p>\n<p>A capstan swabbie instinctively protects its captain's ship. Using short ropes attached to its sides, the swabbie can lash and trip foes or make emergency repairs to itself or its vessel. Far more dangerous, of course, is the anchor to which the swabbie's longest rope is attached. A capstan swabbie can swing this anchor in wide arcs and reel it back in at a moment's notice.</p><h2>Constructed Crews</h2><p>Only the wealthiest captains can afford to craft or purchase a capstan swabbie, but there might be another way to obtain one. According to legend, the ancient Jistka Imperium possessed a \"mechanical navy\"\u2014a fleet of warships crewed by constructs under the command of a powerful mage. Treasure hunters plying the right waters might be lucky enough to find an intact capstan swabbie from this bygone empire.</p>",
             "items": {
                 "equipment->Anchor": {
                     "name": "Anchor"
@@ -443,6 +475,9 @@
             "acDetails": "22 with shield raised",
             "blurb": "Female centaur",
             "items": {
+                "equipment->Horse Skull Helmet": {
+                    "name": "Horse Skull Helmet"
+                },
                 "strike-melee->Hoof": {
                     "name": "Hoof"
                 },
@@ -451,7 +486,7 @@
                 },
                 "action->Trample": {
                     "name": "Trample",
-                    "description": "<p>Medium or smaller, hoof, @Check[reflex|dc:18|basic] save</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Trample]</p>"
+                    "description": "<p>Medium or smaller, hoof, @Check[reflex|dc:18|basic]</p><hr /><p>@Localize[PF2E.NPC.Abilities.Glossary.Trample]</p>"
                 }
             }
         },
@@ -475,7 +510,7 @@
         },
         "Cordon Alarm": {
             "name": "Cordon Alarm",
-            "descriptionHazard": "<p>A hempen rope tied between trees emanates an @UUID[Compendium.pf2e.conditionitems.Item.zJxUflt9np0q4yML]{Invisible}, cylindrical barrier that sounds an alarm when crossed.</p>",
+            "descriptionHazard": "<p>A hempen rope tied between trees emanates an invisible, cylindrical barrier that sounds an alarm when crossed.</p>",
             "disable": "<p>@Check[thievery|dc:18] (trained) to move the rope without setting of the alarm, or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (1st rank; counteract DC 16) to disable the rope's magic</p>",
             "reset": "<p>The alarm resets immediately. Multiple breaches can cause the alarm to sound in multiple places at the same time, though the alarm can still be triggered only once per round.</p>",
             "stealth": "<p>(trained)</p>",
@@ -502,6 +537,34 @@
                 }
             }
         },
+        "Creeping Evil": {
+            "name": "Creeping Evil",
+            "publicNotes": "<p>Religious philosophers have noted that while the virtuous are often filled with a righteous conviction that inures them from hopelessness and fear, the wicked are beset by constant doubt, driving them to commit even greater atrocities in an effort to stave off their insecurities. Sometimes, when this cycle reaches a crisis point, persistent doubt can even break from the psyche that created it, adopting a physical form known as a creeping evil.</p>\n<p>While demons, devils, and other fiends are those most likely to spawn a creeping evil, a mortal tyrant gripped by constant fear of rebellion or a murderer compelled to kill again in order to cover up their previous crimes can manifest one as well. Often, a creeping evil will linger near the creature that created it, sparing their life but lurking in the shadows as a constant reminder of their failures. Only when the creature summons their courage and finally confronts their fear head-on does the creeping evil turn on them. Other creeping evils abandon their creators as soon as they spawn, slithering down lightless alleyways or into abandoned sewer tunnels to search for new souls to corrupt.</p>\n<p>Though its body has the consistency of flowing tar, a creeping evil's predator-like cunning and unnatural ability to vary its volume at a whim set it apart from the living oozes often encountered by adventurers.</p>",
+            "items": {
+                "strike-melee->Pseudopod": {
+                    "name": "Pseudopod"
+                },
+                "action->Motion Sense": {
+                    "name": "Motion Sense",
+                    "description": "<p>A creeping evil can feel nearby motion through vibration and air movement.</p>"
+                },
+                "action->Slithering Strike": {
+                    "name": "Slithering Strike",
+                    "description": "<p>The creeping evil Strides twice, then makes a pseudopod Strike. The target is @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} against this Strike unless it has seen a Slithering Strike before.</p>"
+                },
+                "action->Stir Doubts": {
+                    "name": "Stir Doubts",
+                    "description": "<p>The creeping evil reaches psychically into a creature's innermost thoughts, taking hold of that creature's insecurities and bringing them to front of mind. One creature @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed} or @UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{Restrained} by the creeping evil takes @Damage[4d8[mental]] damage (@Check[will|dc:28|basic] save). A creature that fails the save is also @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 1} (or @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 2} on a critical failure).</p>"
+                },
+                "action->Variable Volume": {
+                    "name": "Variable Volume",
+                    "description": "<p>The creeping evil squeezes itself into a container or other space large enough to fit a Tiny creature. It can exit the container by taking this action again, immediately returning to its normal size. If creatures or objects would occupy the creeping evil's space, it automatically pushes those creatures and objects out of the way to fill a space.</p>"
+                },
+                "action->Grab": {
+                    "name": "Grab"
+                }
+            }
+        },
         "Crownbound Constellation": {
             "name": "Crownbound Constellation",
             "publicNotes": "<p>Crownbound constellations are the essence of stars granted sentience by the goddess Desna, who created them to survey the vastness of space and help her craft the galaxy. Their intergalactic travels once took them far, but Lamashtu sought to ensnare Desna's creation. The Mother of Beasts lured them to Golarion and then, exploiting the power of Golarion's sun, corrupted their ability to star travel. Stranded on the planet and unable to bear sunlight, these creatures traveled to the Crown of the World, where they have settled ever since.</p>\n<h3>An Eon's Long Memory</h3>\n<p>Crownbound constellations have not forgotten Lamashtu's deception, or the commission set for them by Desna. Crownbound constellations frequently attack those they assume to be in league with the Mother of Monsters, and their hatred for her has severed their connection to Desna, just as Lamashtu planned.</p>",
@@ -516,8 +579,8 @@
                 "action->All-Around Vision": {
                     "name": "All-Around Vision"
                 },
-                "action->Attack of Opportunity": {
-                    "name": "Attack of Opportunity"
+                "action->Reactive Strike": {
+                    "name": "Reactive Strike"
                 },
                 "action->Solar Instability": {
                     "name": "Solar Instability",
@@ -571,9 +634,41 @@
                 "strike-ranged->Acid Flask (Lesser)": {
                     "name": "Acid Flask (Lesser)"
                 },
-                "action->Wild Shape": {
-                    "name": "Wild Shape",
-                    "description": "<p><strong>Frequency</strong> once per day</p>\n<hr />\n<p><strong>Effect</strong> The Oaksteward's hands transform into wild claws for 1 minute.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.lBpprC8VD4GRzTtg]{Effect: Wild Shape (Oaksteward)}</p>"
+                "action->Untamed Shift": {
+                    "name": "Untamed Shift",
+                    "description": "<p><strong>Frequency</strong> once per day</p><hr /><p><strong>Effect</strong> The Oaksteward's hands transform into wild claws for 1 minute. The Oaksteward gains the following Strike.</p>\n<p><strong>Melee</strong> <span class=\"action-glyph\">1</span> claw +7 (agile, finesse), <strong>Damage</strong> 1d6+2 slashing</p>"
+                }
+            }
+        },
+        "Demonic Muckrager": {
+            "name": "Demonic Muckrager",
+            "publicNotes": "<p>This wave of dirt takes the crude likeness of the melded forequarters of a charging warhorse and a rocky knight wielding a rudimentary lance of gray stone.</p>",
+            "blurb": "Variant earthen destrier",
+            "items": {
+                "strike-melee->Lance Arm": {
+                    "name": "Lance Arm"
+                },
+                "strike-melee->Hoof": {
+                    "name": "Hoof"
+                },
+                "action->Tremorsense 60 feet": {
+                    "name": "Tremorsense 60 feet"
+                },
+                "action->Earth Glide": {
+                    "name": "Earth Glide",
+                    "description": "<p>An earthen destrier can @UUID[Compendium.pf2e.actionspf2e.Item.H6v1VgowHaKHnVlG]{Burrow} through earthen matter, including rock. When it does so, it moves at its full burrow Speed, leaving no tunnels or signs of its passing.</p>"
+                },
+                "action->Lancing Charge": {
+                    "name": "Lancing Charge",
+                    "description": "<p>If the destrier moved at least 10 feet directly before its lance arm Strike, it gains a +2 circumstance bonus to its damage roll.</p>"
+                },
+                "action->Tilting Strike": {
+                    "name": "Tilting Strike",
+                    "description": "<p><strong>Trigger</strong> The earthen destrier tramples a creature</p>\n<hr />\n<p><strong>Effect</strong> The earthen destrier makes a lance arm Strike against the creature it's trampling at a -5 penalty.</p>"
+                },
+                "action->Trample": {
+                    "name": "Trample",
+                    "description": "<p>Medium or smaller, hoof, @Check[reflex|dc:20|basic]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Trample]</p>"
                 }
             }
         },
@@ -606,7 +701,7 @@
                 },
                 "action->Engulf": {
                     "name": "Engulf",
-                    "description": "<p>@Check[reflex|dc:22|traits:damaging-effect], @Damage[3d8[piercing]], Escape DC 22, Rupture 8</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Engulf]</p>"
+                    "description": "<p>@Check[reflex|dc:22|traits:damaging-effect], @Damage[3d8[piercing]], [[/act escape dc=22]], Rupture 8</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Engulf]</p>"
                 },
                 "action->Ground Manipulation": {
                     "name": "Ground Manipulation",
@@ -614,6 +709,30 @@
                 },
                 "action->Grab": {
                     "name": "Grab"
+                }
+            }
+        },
+        "Deniigi": {
+            "name": "Deniigi",
+            "blurb": "Female human hunter",
+            "items": {
+                "equipment->Winter Clothing": {
+                    "name": "Winter Clothing"
+                },
+                "action->Arctic Forager": {
+                    "name": "Arctic Forager",
+                    "description": "<p>While using Survival to Subsist in arctic environments, if Deniigi rolls a failure or a critical failure, she gets a success instead. If Deniigi rolls a success, she can provide food for 4 additional creatures that eat about as much as a human, or 8 creatures on a critical success.</p>"
+                },
+                "action->Snow Tracker": {
+                    "name": "Snow Tracker",
+                    "description": "<p>In an arctic environment, Deniigi can @UUID[Compendium.pf2e.actionspf2e.Item.EA5vuSgJfiHH7plD]{Track} while moving at full speed.</p>"
+                },
+                "action->Cooperative Hunting": {
+                    "name": "Cooperative Hunting",
+                    "description": "<p>After Deniigi attempts a Strike at a Large or larger target (regardless of success or failure), the next Strike one of her allies makes against the same target gains a +2 circumstance bonus to the attack roll.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.FngohajUtnPe9vmJ]{Effect: Cooperative Hunting}</p>"
+                },
+                "lore->Hunting Lore": {
+                    "name": "Hunting Lore"
                 }
             }
         },
@@ -630,7 +749,7 @@
                 },
                 "action->Fire Blast": {
                     "name": "Fire Blast",
-                    "description": "<p>The desa-desa releases a burst of explosive gasses in all directions, dealing @Damage[3d6[fire]] to all creatures in a @Template[emanation|distance:5]. The desa-desa can't use Fire Blast again for [[/gmr 1d4 #Recharge Fire Blast]]{1d4 rounds}.</p>"
+                    "description": "<p>The desa-desa releases a burst of explosive gasses in all directions, dealing @Damage[3d6[fire]|options:area-damage] to all creatures in a @Template[emanation|distance:5]. The desa-desa can't use Fire Blast again for [[/gmr 1d4 #Recharge Fire Blast]]{1d4 rounds}.</p>"
                 },
                 "action->Volatile Gasses": {
                     "name": "Volatile Gasses",
@@ -641,7 +760,7 @@
         "Dream-Poisoned Door": {
             "name": "Dream-Poisoned Door",
             "descriptionHazard": "<p>Eerie shapes manifest within the doorway as it's opened, conjuring a group of four @UUID[Compendium.pf2e.pathfinder-bestiary-2.Actor.Y9SDbANT1DWI1DKU]{Animate Dreams} into being.</p>",
-            "disable": "<p>@Check[occultism|dc:30] (expert) to concentrate on the eldritch energies and diffuse them through meditation, @Check[thievery|dc:35] (master) to scratch warding runes along the door's hinges and block dreams from manifesting, or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (6th rank; counteract DC 30) to counteract the trap.</p>",
+            "disable": "<p>@Check[occultism|dc:30] (expert) to concentrate on the eldritch energies and diffuse them through meditation, @Check[thievery|dc:35] (master) to scratch warding runes along the door's hinges and block dreams from manifesting, or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (6th rank; counteract DC 30) to counteract the trap</p>",
             "stealth": "<p>(master)</p>",
             "items": {
                 "action->Manifest Dream Guardians": {
@@ -660,8 +779,8 @@
                 "spellcastingEntry->Occult Innate Spells": {
                     "name": "Occult Innate Spells"
                 },
-                "spell->Freedom of Movement (Constant)": {
-                    "name": "Freedom of Movement (Constant)"
+                "spell->Unfettered Movement (Constant)": {
+                    "name": "Unfettered Movement (Constant)"
                 },
                 "strike-melee->Claws": {
                     "name": "Claws"
@@ -688,7 +807,7 @@
                 },
                 "action->Dream Step": {
                     "name": "Dream Step",
-                    "description": "<p>The dreamscraper shifts to either the Dimension of Dreams or the Material Plane. While in the Dimension of Dreams, it can see clearly onto the Material Plane with a range of 60 feet. On its first round in an encounter, the dreamscraper can use this ability once as a free action.</p>"
+                    "description": "<p>The dreamscraper shifts to either the Dimension of Dreams or the Universe. While in the Dimension of Dreams, it can see clearly into the Universe with a range of 60 feet. On its first round in an encounter, the dreamscraper can use this ability once as a free action.</p>"
                 },
                 "action->Stolen Dreams": {
                     "name": "Stolen Dreams",
@@ -824,7 +943,7 @@
                 },
                 "action->Frozen Breath": {
                     "name": "Frozen Breath",
-                    "description": "<p>Equendia exhales a @Template[cone|distance:60] of icy shards that deal @Damage[6d6[cold],6d6[slashing]]{6d6 cold and 6d6 slashing} (@Check[reflex|dc:30|basic]). She can't use Frozen Breath again for [[/gmr 1d4 #Recharge Frozen Breath]]{1d4 rounds}.</p>"
+                    "description": "<p>Equendia exhales a @Template[cone|distance:60] of icy shards that deal @Damage[6d6[cold],6d6[slashing]|options:area-damage]{6d6 cold and 6d6 slashing} (@Check[reflex|dc:30|basic|options:area-effect]). She can't use Frozen Breath again for [[/gmr 1d4 #Recharge Frozen Breath]]{1d4 rounds}.</p>"
                 },
                 "action->Hissing Command": {
                     "name": "Hissing Command",
@@ -847,13 +966,13 @@
                 "spellcastingEntry->Occult Innate Spells": {
                     "name": "Occult Innate Spells"
                 },
-                "weapon->Alchemist's Fire (Moderate) (Infused)": {
-                    "name": "Alchemist's Fire (Moderate) (Infused)",
-                    "description": "<p><strong>Activate</strong> <span class=\"action-glyph\">A</span> Strike</p>\n<p>Alchemist's fire is a combination of volatile liquids that ignite when exposed to air. Alchemist's fire deals 2d8 fire damage, 2 persistent fire damage, and 2 fire splash damage. You gain a +1 item bonus to attack rolls.</p>"
+                "weapon->Alchemist's Fire (Moderate)": {
+                    "name": "Alchemist's Fire (Moderate)",
+                    "description": "<p><strong>Activate</strong> <span class=\"action-glyph\">A</span> Strike</p>\n<hr />\n<p>Alchemist's fire is a combination of volatile liquids that ignite when exposed to air. Alchemist's fire deals 2d8 fire damage, 2 persistent fire damage, and 2 fire splash damage. You gain a +1 item bonus to attack rolls.</p>"
                 },
                 "equipment->Pendant of the Occult (Greater)": {
                     "name": "Pendant of the Occult (Greater)",
-                    "description": "<p>This amulet is hollow and shaped in the form of an unblinking eye. Its cavity typically holds some fragment of occult text. While wearing the pendant, you gain a +2 item bonus to Occultism checks, and you can cast the @UUID[Compendium.pf2e.spells-srd.Item.izcxFQFwf3woCnFs]{Guidance} cantrip as an occult innate spell.</p>\n<p>The pendant can be activated.</p>\n<p><strong>Activate</strong> 10 minutes (Cast a Spell)</p>\n<p><strong>Frequency</strong> once per day</p>\n<hr />\n<p><strong>Effect</strong> You cast a 4th-rank @UUID[Compendium.pf2e.spells-srd.Item.yM3KTTSAIHhyuP14]{Dream Message} spell.</p>"
+                    "description": "<p>This amulet is hollow and shaped in the form of an unblinking eye. Its cavity typically holds some fragment of occult text. While wearing the pendant, you gain a +2 item bonus to Occultism checks, and you can cast the @UUID[Compendium.pf2e.spells-srd.Item.izcxFQFwf3woCnFs]{Guidance} cantrip as an occult innate spell.</p>\n<p>The pendant can be activated.</p>\n<p><strong>Activate\u2014Dream Message</strong> 10 minutes (concentrate, manipulate)</p>\n<p><strong>Frequency</strong> once per day</p>\n<hr />\n<p><strong>Effect</strong> You cast a 4th-rank @UUID[Compendium.pf2e.spells-srd.Item.yM3KTTSAIHhyuP14]{Dream Message} spell.</p>"
                 },
                 "equipment->Manor Keys": {
                     "name": "Manor Keys"
@@ -870,29 +989,21 @@
                     "name": "Scroll of Fly (Level 4)",
                     "description": "<p>@UUID[Compendium.pf2e.spells-srd.Item.A2JfEKe6BZcTG1S8]{Fly}</p><hr /><p>Casting a Spell from a scroll requires holding the scroll in one hand and activating it with a Cast a Spell activity using the normal number of actions for that spell.</p>\n<p>To Cast a Spell from a scroll, the spell must appear on your spell list. Because you're the one Casting the Spell, use your spell attack roll and spell DC. The spell also gains the appropriate trait for your tradition (arcane, divine, occult, or primal).</p>\n<p>Any physical material components and costs are provided when a scroll is created, so you don't need to provide them when Casting a Spell from a scroll. You must replace any required material component for that spell with a somatic component. If the spell requires a focus, you must have that focus to Cast the Spell from a scroll.</p>\n<hr />\n<p><em>Note: To create a scroll or wand of a specific spell, drag the spell from the compendium or compendium browser into the inventory of a PC, NPC, or loot actor.</em></p>"
                 },
-                "consumable->Cognitive Mutagen (Moderate) (Infused)": {
-                    "name": "Cognitive Mutagen (Moderate) (Infused)",
-                    "description": "<p><strong>Activate</strong> <span class=\"action-glyph\">A</span> Interact</p>\n<hr />\n<p>Your mind becomes clear and cognition flows freely, but physical matters seem ephemeral.</p>\n<p><strong>Benefit</strong> You gain a +2 item bonus to Arcana, Crafting, Lore, Occultism, and Society checks and all checks to @UUID[Compendium.pf2e.actionspf2e.Item.1OagaWtBpVXExToo]{Recall Knowledge}. Your critical failures on Recall Knowledge checks become failures instead.</p>\n<p><strong>Drawback</strong> You take a -2 penalty to weapon and unarmed attack rolls, Athletics checks, and acrobatics checks. You can carry 2 less Bulk than normal before becoming encumbered, and the maximum Bulk you can carry is reduced by 4.</p>\n<p><strong>Duration</strong> 10 minutes.</p>\n<p>@UUID[Compendium.pf2e.equipment-effects.Item.ztxW3lBPRcesF7wK]{Effect: Cognitive Mutagen (Moderate)}</p>"
+                "consumable->Cognitive Mutagen (Moderate)": {
+                    "name": "Cognitive Mutagen (Moderate)",
+                    "description": "<p><strong>Activate</strong> <span class=\"action-glyph\">A</span> (manipulate)</p><hr /><p>Your mind becomes clear, but physical matters seem ephemeral.</p>\n<p><strong>Benefit</strong> You gain a +2 item bonus to Arcana, Crafting, Lore, Occultism, and Society checks and all checks to @UUID[Compendium.pf2e.actionspf2e.Item.1OagaWtBpVXExToo]{Recall Knowledge}. Your critical failures on Recall Knowledge checks become failures instead.</p>\n<p><strong>Drawback</strong> You take a -2 penalty to weapon and unarmed attack rolls, Athletics checks, and acrobatics checks. You can carry 2 less Bulk than normal before becoming encumbered, and the maximum Bulk you can carry is reduced by 4.</p>\n<p><strong>Duration</strong> 10 minutes.</p>\n<p>@UUID[Compendium.pf2e.equipment-effects.Item.ztxW3lBPRcesF7wK]{Effect: Cognitive Mutagen (Moderate)}</p>"
                 },
-                "consumable->Comprehension Elixir (Greater) (Infused)": {
-                    "name": "Comprehension Elixir (Greater) (Infused)",
-                    "description": "<p>This bitter draught opens your mind to the potential of the written word. For the listed duration after drinking this elixir, you can understand any words you read, so long as they are written in a common language. This elixir doesn't automatically allow you to understand codes or extremely esoteric passages-you still need to attempt a skill check to Decipher Writing. The duration is 10 minutes.</p>"
+                "consumable->Comprehension Elixir (Greater)": {
+                    "name": "Comprehension Elixir (Greater)",
+                    "description": "<p><strong>Activate</strong> <span class=\"action-glyph\">1</span> (manipulate)</p><hr /><p>This bitter draught opens your mind to the potential of the written word. For the listed duration after drinking this elixir, you can understand any words you read, so long as they are written in a common language. This elixir doesn't automatically allow you to understand codes or extremely esoteric passages-you still need to attempt a skill check to Decipher Writing. The duration is 10 minutes.</p>"
                 },
-                "consumable->Elixir of Life (Moderate) (Infused)": {
-                    "name": "Elixir of Life (Moderate) (Infused)",
-                    "description": "<p><strong>Activate</strong> <span class=\"action-glyph\">A</span> Interact</p>\n<p>Elixirs of life accelerate a living creature's natural healing processes and immune system. Upon drinking this elixir, you regain @Damage[(5d6+12)[healing]] Hit Points and gain +2 item bonus to saving throws against diseases and poisons for 10 minutes.</p>\n<p>@UUID[Compendium.pf2e.equipment-effects.Item.lPRuIRbu0rHBkoKY]{Effect: Elixir of Life}</p>"
+                "consumable->Elixir of Life (Moderate)": {
+                    "name": "Elixir of Life (Moderate)",
+                    "description": "<p><strong>Activate</strong> <span class=\"action-glyph\">A</span> (manipulate)</p><hr /><p>Elixirs of life accelerate a living creature's natural healing processes and immune system. Upon drinking this elixir, you regain @Damage[(5d6+12)[healing]] Hit Points and gain +2 item bonus to saving throws against diseases and poisons for 10 minutes.</p>\n<p>@UUID[Compendium.pf2e.equipment-effects.Item.lPRuIRbu0rHBkoKY]{Effect: Elixir of Life}</p>"
                 },
-                "consumable->Psychic Colors Elixir (Infused)": {
-                    "name": "Psychic Colors Elixir (Infused)",
-                    "description": "<p><strong>Activate</strong> <span class=\"action-glyph\">1</span> Interact</p>\n<p>This orange liquid lets you visibly detect the psychic energies that enable telekinesis and telepathy. For the next minute, you can sense if a creature you can see is using a telepathic or telekinetic ability, such as the telepathy monster ability, spells like @UUID[Compendium.pf2e.spells-srd.Item.60sgbuMWN0268dB7]{Telekinetic Projectile} or @UUID[Compendium.pf2e.spells-srd.Item.gfVXAW95YWRz0pJC]{Telepathic Bond}, or similar abilities. You also can sense if an object or creature you can see is being manipulated or contacted by such an ability. Both the user and the target of the ability are outlined in faint shimmers of matching color.</p>"
-                },
-                "consumable->Vat-Grown Brain (Infused)": {
-                    "name": "Vat-Grown Brain (Infused)",
-                    "description": "<p><strong>Activate</strong> <span class=\"action-glyph\">3</span> Interact</p>\n<p>A malformed, artificial brain pulses with alchemical life inside a nutrient-rich vat. When the vat-grown brain is activated, it attempts to counteract one condition of your choice that was gained from an ability with the mental trait, which it does by drawing the negative mental impressions into itself. However, the artificial brain is not robust, and the strain of the transfer quickly destroys it. The vat-grown brain has a counteract rank of 5 and a [[/r 1d20+17 #Counteract]]{+17} modifier on the roll.</p>"
-                },
-                "consumable->Winter Wolf Elixir (Lesser) (Infused)": {
-                    "name": "Winter Wolf Elixir (Lesser) (Infused)",
-                    "description": "<p><strong>Activate</strong> <span class=\"action-glyph\">1</span> Interact</p>\n<p>This elixir warms your core and improves your circulation. For 24 hours, you are protected from the effects of severe cold.</p>"
+                "consumable->Witchwarg Elixir (Lesser)": {
+                    "name": "Witchwarg Elixir (Lesser)",
+                    "description": "<p><strong>Activate</strong> <span class=\"action-glyph\">1</span> (manipulate)</p><hr /><p>This elixir warms your core and improves your circulation. For 24 hours, you are protected from the effects of severe cold.</p>"
                 },
                 "strike-melee->Dagger": {
                     "name": "Dagger"
@@ -929,12 +1040,12 @@
             "descriptionHazard": "<p>The incense burners begin to smoke, filling the air with strangely nostalgic scents.</p>",
             "disable": "<p>@Check[occultism|dc:26] (expert) to enter a state akin to lucid dreaming so as to unweave the nightmare from within, or @Check[intimidation|dc:30] (master) to stand resolute against the nightmares and turn the fear back upon itself</p>",
             "reset": "<p>The hazard resets when Etward dreams in this room.</p>",
-            "routine": "<p>(2 actions; cold, enchantment, mental, occult) The haunt uses its first action to light incense burners again, forcing any creature that isn't already @UUID[Compendium.pf2e.conditionitems.Item.fBnFDH2MTzgFijKf]{Unconscious} to save against that effect once more. Its second action is to cause any unconscious creatures in the room to experience horrific, vivid dreams about being lost in the arctic during a blizzard, while enormous furred figures&mdash; saumen kar&mdash;lunge at them through the snow to attack repeatedly. Each unconscious creature must attempt a @Check[fortitude|dc:28|traits:cold,enchantment,mental,occult] saving throw. If at the end of the round there are no unconscious creatures in the room, Etward's nightmare ends and the trap deactivates.</p>\n<hr>\n<p><strong>Critical Success</strong> The creature is unaffected and wakes up.</p>\n<p><strong>Success</strong> The creature remains unconscious and takes @Damage[1d10[cold]] and @Damage[1d10[mental]]. This damage does not wake the creature, and those who are awake can see the unconscious creature thrash as if in the throes of a nightmare while their body rimes over with layers of frost. The creature can fight against the bitter cold and monstrous shapes by attempting a @Check[will|dc:28|traits:cold,enchantment,mental,occult] save as a three-action activity on its turn&mdash; on a success, the creature wakes up.</p>\n<p><strong>Failure</strong> As success, but 1d10+6 cold and @Damage[(1d10+6)[mental]], and with a @Check[will|dc:32|traits:cold,enchantment,mental,occult] save to wake up.</p>\n<p><strong>Critical Failure</strong> The creature remains unconscious and takes @Damage[(2d10+12)[cold]] and @Damage[(2d10+12)[mental]].</p>",
+            "routine": "<p>(2 actions; cold, mental, occult) The haunt uses its first action to light incense burners again, forcing any creature that isn't already @UUID[Compendium.pf2e.conditionitems.Item.fBnFDH2MTzgFijKf]{Unconscious} to save against that effect once more. Its second action is to cause any unconscious creatures in the room to experience horrific, vivid dreams about being lost in the arctic during a blizzard, while enormous furred figures\u2014 saumen kar\u2014lunge at them through the snow to attack repeatedly. Each unconscious creature must attempt a @Check[fortitude|dc:28|traits:cold,mental,occult] saving throw. If at the end of the round there are no unconscious creatures in the room, Etward's nightmare ends and the trap deactivates.</p><hr><p><strong>Critical Success</strong> The creature is unaffected and wakes up.</p><p><strong>Success</strong> The creature remains unconscious and takes @Damage[1d10[cold],1d10[mental]]. This damage does not wake the creature, and those who are awake can see the unconscious creature thrash as if in the throes of a nightmare while their body rimes over with layers of frost. The creature can fight against the bitter cold and monstrous shapes by attempting a @Check[will|dc:28|traits:cold,enchantment,mental,occult] save as a three-action activity on its turn\u2014 on a success, the creature wakes up.</p><p><strong>Failure</strong> As success, but @Damage[(1d10+6)[cold],(1d10+6)[mental]], and with a @Check[will|dc:32|traits:cold,mental,occult] save to wake up.</p><p><strong>Critical Failure</strong> The creature remains unconscious and takes @Damage[(2d10+12)[cold],(2d10+12)[mental]].</p>",
             "stealth": "<p>(master)</p>",
             "items": {
                 "action->Light Incense Burners": {
                     "name": "Light Incense Burners",
-                    "description": "<p><strong>Trigger</strong> A creature lies down on the bed, or a living creature spends more than 3 rounds inside this room</p>\n<hr />\n<p><strong>Effect</strong> Incense swiftly fills the room (even if the incense burners have been removed or were destroyed). All creatures in area <strong>A12</strong> must attempt a @Check[fortitude|dc:32] save. The haunt then rolls initiative.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 1} by the incense's scent.</p>\n<p><strong>Failure</strong> The creature falls @UUID[Compendium.pf2e.conditionitems.Item.fBnFDH2MTzgFijKf]{Unconscious}. If it's still unconscious after 1 minute, it wakes up automatically.</p>\n<p><strong>Critical Failure</strong> As failure, but if it's still unconscious after 1 hour, it wakes up automatically.</p>"
+                    "description": "<p><strong>Trigger</strong> A creature lies down on the bed, or a living creature spends more than 3 rounds inside this room</p><hr /><p><strong>Effect</strong> Incense swiftly fills the room (even if the incense burners have been removed or were destroyed). All creatures in area <strong>A12</strong> must attempt a @Check[fortitude|dc:32] save. The haunt then rolls initiative.</p><hr /><p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 1} by the incense's scent.</p>\n<p><strong>Failure</strong> The creature falls @UUID[Compendium.pf2e.conditionitems.Item.fBnFDH2MTzgFijKf]{Unconscious}. If it's still unconscious after 1 minute, it wakes up automatically.</p>\n<p><strong>Critical Failure</strong> As failure, but if it's still unconscious after 1 hour, it wakes up automatically.</p>"
                 }
             }
         },
@@ -1055,16 +1166,32 @@
                 }
             }
         },
+        "Gokeki": {
+            "name": "Gokeki",
+            "publicNotes": "<p>A gokeki looks like a cross between a monkey and a scorpion, with a harpoon of solidified webbing connected to spinnerets at its aft end, held by the coiled, scorpion-like tail that acts like an atlatl. Adding further to the gokeki's bizarre appearance are the creature's extra pair of eyes and the nearly vestigial pincers sprouting from its chest. Gokeki fur is generally light tan in color, darkening noticeably toward the creature's tail, although subspecies with bright green, yellow, or even fluorescent pink or purple fur have also been reported.</p>\n<p>Unlike many of Castrovel's native creatures, gokekis aren't generally regarded to be a product of natural evolution, but rather the result of a genetic experiment that broke loose from its creator and escaped into the wild. Gokekis have adapted frighteningly well to the planet's harsh jungle environment, although thankfully they seem to lack both the intelligence and sociability often exhibited by primates. Gokekis hunt alone or, more rarely, in mated pairs. Attempts to domesticate gokekis often result in the death of their would-be owners, although when provided with a proper range in which to hunt, gokekis can serve as guardians for those looking to deter unwanted visitors.</p>\n<p>Though dangerous predators, gokekis are highly sought after by Castrovel's hunting cultures, particularly the lizardfolk and tripkees who call the jungle continent of Ukulam their home. The former value gokekis for their webbing harpoons, which function as ready-made javelins. Meanwhile, tripkees harvest the gokeki's filament gland to aid in the construction of the treetop homes. Both peoples also eat gokeki meat, which when properly prepared can be made into a flavorful and hearty jerky.</p><h2>Harvested Treasures</h2><p>While gokekis aren't intelligent enough to gather treasure of their own, many natives of Castrovel consider their bodies a valuable resource. If harvested with a successful @Check[nature|dc:17] or @Check[survival|dc:17] check, the gokeki's filament gland can be used as 25 gp worth of raw materials for potent glues such as @UUID[Compendium.pf2e.equipment-srd.Item.7IrQPyMm76nLVoXx]{Everlasting Adhesive}. The filament itself is identical to a 60-foot length of rope. Finally, the creature's harpoon can be used as a javelin.</p>",
+            "items": {
+                "strike-melee->Claw": {
+                    "name": "Claw"
+                },
+                "strike-ranged->Harpoon": {
+                    "name": "Harpoon"
+                },
+                "action->Barbed Filament": {
+                    "name": "Barbed Filament",
+                    "description": "<p>A creature hit by the tree fisher's barbed filament is @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed}. The tree fisher can move while it has a creature grabbed with its filament, but automatically releases the Grab if the tree fisher moves beyond the filament's 60-foot length. A creature grabbed by the filament at the beginning of its turn takes @Damage[5[bleed]].</p>\n<p>The tree fisher can sever the filament and release any creature grabbed by it as a free action. The filament can be severed by a Strike that deals at least @Damage[10[slashing]] to it. This doesn't deal any damage to the tree fisher itself. The filament has AC 17, and its @UUID[Compendium.pf2e.actionspf2e.Item.SkZAQRkLLkmBQNB9]{Escape} DC is 19.</p>\n<p>The tree fisher has only one harpoon; if the filament is severed, the tree fisher loses this ability and its ranged attack for 1 week as it fashions a new harpoon.</p>"
+                }
+            }
+        },
         "Green Monkey": {
             "name": "Green Monkey",
-            "publicNotes": "<p>Nimble spirit guides are small and discreet, using their diminutive size and natural agility to dart from hiding place to hiding place. They tend to be much shyer than other spirit guides, at least initially, preferring to watch nearby mortals from a distance before deciding whether to trust them. When their trust is so earned, nimble spirit guides are often playful and contagiously exuberant. These spirit guides can often be found entertaining lost children with antics until they are rescued or freeing prisoners by stealing keys and picking locks. The green monkey is a nimble spirit guide who takes the appearance of a tiny primate with green fur that, on closer inspection, turns out to be fine blades of grass.</p>\n<hr />\n<p>Spirit guides are ghostly creatures that manifest as primordial animals on the Material Plane. Many Sarkorian cultures believe that spirit guides came into being at the same time as the first mortal hunting bands. In this time before time, spirit guides took on the most elemental shapes of animals, and they taught humanoid communities about important aspects of nature. As they imparted their wisdom, these spirit guides took physical forms, becoming the wild animals that exist today. Though spirit guides bestowed most of their gifts unto mortals in ancient times, a rare few continue to lurk in forgotten or as-of-yet-undiscovered corners of the physical world.</p>",
+            "publicNotes": "<p>Nimble spirit guides are small and discreet, using their diminutive size and natural agility to dart from hiding place to hiding place. They tend to be much shyer than other spirit guides, at least initially, preferring to watch nearby mortals from a distance before deciding whether to trust them. When their trust is so earned, nimble spirit guides are often playful and contagiously exuberant. These spirit guides can often be found entertaining lost children with antics until they are rescued or freeing prisoners by stealing keys and picking locks.</p>\n<p>The green monkey is a nimble spirit guide who takes the appearance of a tiny primate with green fur that, on closer inspection, turns out to be fine blades of grass.</p><hr /><p>Spirit guides are ghostly creatures that manifest as primordial animals in the Universe. Many Sarkorian cultures believe that spirit guides came into being as the first mortal hunting bands began to form. In this time before time, spirit guides adopted the most elemental shapes of animals, and they taught humanoid communities about important aspects of nature, such as where to find fresh water, which plants were safe to eat, and how to live in harmony with their environment. As they imparted their wisdom, spirit guides took more physical forms, eventually becoming the wild animals that exist today. Though spirit guides bestowed most of their gifts unto mortals in ancient times, a rare few continue to lurk in forgotten or as-of-yet-undiscovered corners of the physical world.</p><h2>Spirit Guide Companions</h2><p>One way to gain the aid of a spirit guide is to take the @UUID[Compendium.pf2e.journals.JournalEntry.vx5FGEG34AxI2dow.JournalEntryPage.J0AfK0jJgS5WxhCE]{scion of Domora} archetype. This archetype allows character to choose a spirit guide to accompany them on their adventures\u2014provided they first prove themselves worthy of the honor.</p><h2>The Sarkoris Scar</h2><p>Some spirit guides encountered in the haunted badlands now known as the Sarkoris Scar are remnants of god calling, an ancient tradition practiced by many Sarkorian cultures. Severed from their callers by the demonic war that devastated the land for over a century, such gods now roam the blasted landscape, occasionally helping those they find worthy.</p>",
             "languagesDetails": "tongues",
             "items": {
                 "spellcastingEntry->Primal Innate Spells": {
                     "name": "Primal Innate Spells"
                 },
-                "spell->Tongues (Constant)": {
-                    "name": "Tongues (Constant)"
+                "spell->Truespeech (Constant)": {
+                    "name": "Truespeech (Constant)"
                 },
                 "strike-melee->Jaws": {
                     "name": "Jaws"
@@ -1148,7 +1275,7 @@
         },
         "Ilverani Sentry": {
             "name": "Ilverani Sentry",
-            "blurb": "Elf hunters",
+            "blurb": "Elf hunter",
             "items": {
                 "action->Arctic Forager": {
                     "name": "Arctic Forager",
@@ -1186,6 +1313,62 @@
                 "action->Heat Beam": {
                     "name": "Heat Beam",
                     "description": "<p>The immolis targets a living creature within 30 feet and directs a beam of volatile psychic energy toward it, increasing the rate at which the creature's body produces heat. The target must attempt a @Check[fortitude|dc:20] save. The second and third time an immolis uses Heat Beam in the same round, the DC lowers to @Check[fortitude|dc:16] or @Check[fortitude|dc:12], respectively.</p>\n<p><strong>Success</strong> The creature is unaffected.</p>\n<p><strong>Failure</strong> The creature takes @Damage[(2d6+5)[fire]] damage.</p>\n<p><strong>Critical Failure</strong> The creature takes @Damage[(4d6+5)[fire],5[persistent,fire]]{4d6+5 fire damage and 5 persistent fire damage}.</p>"
+                }
+            }
+        },
+        "Innumma": {
+            "name": "Innumma",
+            "blurb": "Male human survivalist",
+            "items": {
+                "equipment->Winter Clothing": {
+                    "name": "Winter Clothing"
+                },
+                "action->Predict Weather": {
+                    "name": "Predict Weather",
+                    "description": "<p><strong>Requirements</strong> Innumma is outdoors</p>\n<p><strong>Frequency</strong> once per day</p><hr /><p><strong>Effect</strong> Innumma spends 10 minutes observing the environment, trying to predict the day's weather. He attempts a @Check[survival|dc:20] or @Check[Weather Lore|dc:20] check. This check is reduced to DC 15 in an arctic environment such as the Crown of the World (@Check[survival|dc:15] or @Check[Weather Lore|dc:15]).</p><hr /><p><strong>Critical Success</strong> Innumma accurately predicts the day's weather. He learns if a weather event will occur in the region within the next 24 hours, and if so, what the event is and approximately when it will occur. He gains a +2 circumstance bonus to Survival checks made to prepare for this weather event.</p>\n<p><strong>Success</strong> As critical success, but Innumma gains only a +1 circumstance bonus to Survival checks made to prepare for any weather event that might occur.</p>\n<p><strong>Failure</strong> Innumma can't determine anything about the day's weather.</p>\n<p><strong>Critical Failure</strong> Innumma misinterprets the environment's indicators, predicting a weather event as if he had earned a critical success but which will not occur that day.</p>"
+                },
+                "lore->Weather Lore": {
+                    "name": "Weather Lore"
+                }
+            }
+        },
+        "Jarvs": {
+            "name": "Jarvs",
+            "publicNotes": "<p>Often seen at the sides of spellcasters, scalescribes are tiny, snakelike creatures with numerous hands that usually hold a multitude of fountain pens in various ink colors. The words scrawled across their bodies shift depending on what texts they've encountered recently. Scalescribes have a fondness for language, especially magical language, and make their homes in libraries or other places of learning.</p>",
+            "allSavesBonus": "+2 status to all saves vs. linguistic effects",
+            "items": {
+                "spellcastingEntry->Arcane Innate Spells": {
+                    "name": "Arcane Innate Spells"
+                },
+                "spell->Translate (Self Only)": {
+                    "name": "Translate (Self Only)"
+                },
+                "strike-melee->Fountain Pen": {
+                    "name": "Fountain Pen"
+                },
+                "strike-ranged->Morpheme Glyph": {
+                    "name": "Morpheme Glyph"
+                },
+                "action->Mage Bond": {
+                    "name": "Mage Bond",
+                    "description": "<p>After performing a 1-hour ritual, a scalescribe can bond with one willing creature capable of Casting Spells.</p>\n<p>The scalescribe can @UUID[Compendium.pf2e.actionspf2e.Item.HCl3pzVefiv9ZKQW]{Aid} their bonded caster in @UUID[Compendium.pf2e.actionspf2e.Item.rmwa3OyhTZ2i2AHl]{Crafting} a scroll, and they can make their Transcribed spell available to the caster so long as the spell is of the caster's tradition.</p>\n<p>A bonded prepared caster can prepare the spell. A bonded spontaneous caster can add the spell to their spell repertoire during their daily preparations, and it remains as long as the Transcribed scroll exists.</p>"
+                },
+                "action->+2 Status Bonus on Saves vs. Linguistic Effects": {
+                    "name": "+2 Status Bonus on Saves vs. Linguistic Effects"
+                },
+                "action->Transcribe": {
+                    "name": "Transcribe",
+                    "description": "<p><strong>Trigger</strong> Another creature targets the scalescribe with a spell requiring verbal components</p>\n<hr />\n<p><strong>Effect</strong> The scalescribe attempts to copy the incantation onto a scroll by attempting a counteract check (counteract rank 2, counteract modifier [[/r 1d20+10 #Counteract]]{+10}) with the following effects instead of the normal effects of counteracting. The spell still affects the scalescribe, regardless of the results of this check.</p>\n<p>The scalescribe can Cast a Spell from any scroll they Transcribe as if it were on their spell list. Transcribing a new scroll renders any previously Transcribed scroll inert.</p>\n<hr />\n<p><strong>Critical Success</strong> If the triggering spell's rank was no more than 3 higher than the scalescribe's counteract rank, the scalescribe captures a copy of the spell in a scroll that appears in their hand. This scroll can be used normally but fades after 24 hours if not used before then.</p>\n<p><strong>Success</strong> As critical success, but only if the spell's rank is no more than 1 higher than the scalescribe's counteract rank.</p>\n<p><strong>Failure</strong> As critical success, but only if the spell's rank is lower than the scalescribe's counteract rank.</p>\n<p><strong>Critical Failure</strong> The scalescribe fails to copy the spell.</p>"
+                },
+                "action->Inkstain": {
+                    "name": "Inkstain",
+                    "description": "<p>When the scalescribe deals damage to a creature with their fountain pen, the creature takes @Damage[1d4[persistent,poison]].</p>\n<p>When a creature taking this damage attempts to take an action with the concentrate trait, it must succeed at a @Check[flat|dc:5] check or the action is disrupted.</p>"
+                },
+                "lore->Library Lore": {
+                    "name": "Library Lore"
+                },
+                "lore->Scribing Lore": {
+                    "name": "Scribing Lore"
                 }
             }
         },
@@ -1252,7 +1435,7 @@
                 },
                 "action->No Quarter!": {
                     "name": "No Quarter!",
-                    "description": "<p>The captain orders their shipmates to fight without mercy. All allied creatures of equal or lower level within 20 feet of the ship captain gain a+1 status bonus to attack rolls and damage rolls until the end of the ship captain's next turn.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.TjRZbd52qWPjTbNT]{Effect: No Quarter!}</p>"
+                    "description": "<p>The captain orders their shipmates to fight without mercy. All allied creatures of equal or lower level within 20 feet of the ship captain gain a +1 status bonus to attack rolls and damage rolls until the end of the ship captain's next turn.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.TjRZbd52qWPjTbNT]{Effect: No Quarter!}</p>"
                 },
                 "lore->Sailing Lore": {
                     "name": "Sailing Lore"
@@ -1346,6 +1529,53 @@
             "skills": {
                 "stealth": {
                     "label": "in Water"
+                }
+            }
+        },
+        "Leiko": {
+            "name": "Leiko",
+            "publicNotes": "<p>Shae are wispy, tenebrous creatures native to the Plane of Shadow. Their amorphous bodies appear in constant states of flux. They cast no shadows of their own, instead gaining and losing umbral energy to nearby shadows that shrink and grow alongside them.</p>\n<p>Most shae wear clothing spun from shadows that shift with them, though diplomats sometimes don more conventional garments while entertaining outsiders. Their most distinctive apparel are their white stone masks, which shae don only when they must put on a discernible \"face\" for interacting with humanoids and similar creatures. They do so begrudgingly, as they consider themselves superior to humanoids, but donning their masks allows them to be more easily understood and thus keeps their interactions with their lessers as brief as possible.</p>\n<p>The dynamic between a shae and humanoids shifts when humanoids come to worship a shae, however. A mortal who shows a shae their due deference is worth keeping around, so many shae collect cults of personality or expansive entourages. Even getting a meeting with such a self-important shae can present a challenge that requires one to deal with many layers of hangers-on who insist on vetting the newcomer before wasting the shae's precious time.</p>\n<p>According to shae lore, they've transcended the material world and now embody a cosmological equilibrium of reality and illusion. Their claims to metaphysical ascendance and knowledge of the secrets of shadows entice many mortal supplicants to join shae courts and cults. In the shae language, their name means \"unbound,\" in accordance with their belief that their ephemeral nature makes them free of the moral and social strictures that bind other sentient creatures, and they essentially make a virtue of capriciousness. Shae feel little obligation to follow through with oaths or obey laws, so sealing a compact with a mortal means little to them.</p>",
+            "blurb": "Female shae experimenter",
+            "speedsDetails": "swift steps, tenebral form",
+            "items": {
+                "spellcastingEntry->Occult Innate Spells": {
+                    "name": "Occult Innate Spells"
+                },
+                "spell->Interplanar Teleport (Self Only; to Netherworld or the Universe Only)": {
+                    "name": "Interplanar Teleport (Self Only; to Netherworld or the Universe Only)"
+                },
+                "strike-melee->Dagger": {
+                    "name": "Dagger"
+                },
+                "strike-ranged->Dagger": {
+                    "name": "Dagger"
+                },
+                "action->Shadow Shift": {
+                    "name": "Shadow Shift",
+                    "description": "<p>Beingmade partially of shadow themselves, shae are @UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{Concealed} in dim light or darkness even to creatures that can see clearly in those light levels.</p>"
+                },
+                "action->Counterattack": {
+                    "name": "Counterattack",
+                    "description": "<p><strong>Trigger</strong> Leiko is targeted by an attack from an adjacent creature that misses due to Leiko being @UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{Concealed}</p>\n<p><strong>Requirements</strong> Leiko is aware of the attack</p><hr /><p><strong>Effect</strong> Leiko makes a Strike against the attacker.</p>"
+                },
+                "action->Slip": {
+                    "name": "Slip",
+                    "description": "<p><strong>Trigger</strong> A creature moves adjacent to Leiko</p><hr /><p><strong>Effect</strong> Leiko teleports to a clear space adjacent to another creature she can see within 30 feet.</p>"
+                },
+                "action->Bide": {
+                    "name": "Bide",
+                    "description": "<p>Leiko prepares to take action against her foes, watching her opponent and waiting for the right opportunity to respond. Leiko gains a second reaction until the start of her next turn, though she still can't use more than one reaction on the same triggering action.</p>"
+                },
+                "action->Swift Steps": {
+                    "name": "Swift Steps",
+                    "description": "<p>Leiko's movement doesn't trigger reactions.</p>"
+                },
+                "action->Tenebral Form": {
+                    "name": "Tenebral Form",
+                    "description": "<p>Leiko can Fly at full Speed in @UUID[Compendium.pf2e.spells-srd.Item.V8wXOsoejQhe6CyG]{Vapor Form}.</p>"
+                },
+                "lore->Netherworld Lore": {
+                    "name": "Netherworld Lore"
                 }
             }
         },
@@ -1453,8 +1683,8 @@
                     "name": "Ley Line Sense (Imprecise)",
                     "description": "<p>The myroga can sense the presence, direction, and strength of any ley line within 1 mile.</p>"
                 },
-                "action->Attack of Opportunity (Fangs Only)": {
-                    "name": "Attack of Opportunity (Fangs Only)"
+                "action->Reactive Strike (Fangs Only)": {
+                    "name": "Reactive Strike (Fangs Only)"
                 },
                 "action->Resistance 5 to Physical Near a Ley Line": {
                     "name": "Resistance 5 to Physical Near a Ley Line",
@@ -1490,9 +1720,9 @@
                 "strike-ranged->Dagger": {
                     "name": "Dagger"
                 },
-                "action->Wild Shape": {
-                    "name": "Wild Shape",
-                    "description": "<p><strong>Frequency</strong> once per day</p>\n<hr />\n<p><strong>Effect</strong> The Oaksteward's hands transform into wild claws for 1 minute.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.lBpprC8VD4GRzTtg]{Effect: Wild Shape (Oaksteward)}</p>"
+                "action->Untamed Shift": {
+                    "name": "Untamed Shift",
+                    "description": "<p><strong>Frequency</strong> once per day</p><hr /><p><strong>Effect</strong> The Oaksteward's hands transform into wild claws for 1 minute. The Oaksteward gains the following Strike.</p>\n<p><strong>Melee</strong> <span class=\"action-glyph\">1</span> claw +7 (agile, finesse), <strong>Damage</strong> 1d6+2 slashing</p>"
                 }
             }
         },
@@ -1512,15 +1742,15 @@
                 "strike-ranged->Heavy Crossbow": {
                     "name": "Heavy Crossbow"
                 },
-                "action->Wild Shape": {
-                    "name": "Wild Shape",
-                    "description": "<p><strong>Frequency</strong> once per day</p>\n<hr />\n<p><strong>Effect</strong> The Oaksteward's hands transform into wild claws for 1 minute.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.lBpprC8VD4GRzTtg]{Effect: Wild Shape (Oaksteward)}</p>"
+                "action->Untamed Shift": {
+                    "name": "Untamed Shift",
+                    "description": "<p><strong>Frequency</strong> once per day</p><hr /><p><strong>Effect</strong> The Oaksteward's hands transform into wild claws for 1 minute. The Oaksteward gains the following Strike.</p>\n<p><strong>Melee</strong> <span class=\"action-glyph\">1</span> claw +7 (agile, finesse), <strong>Damage</strong> 1d6+2 slashing</p>"
                 }
             }
         },
         "Ocluai": {
             "name": "Ocluai",
-            "publicNotes": "<p>Ocluais embody the fear of being lost and helpless in the darkness as well as the danger of unreasoning terror. An ocluai's gray body resembles that of a featherless owl with a serrated beak, the legs of a monkey, and oversized eye sockets full of shadow. The field of unnatural darkness that surrounds an ocluai disorients most creatures; while other gorgas are quick to move in for the kill, ocluais love to perch on a low branch or lintel and watch with their blank expressions as prey succumbs to panic. Though capable fighters, ocluais prefer to hang back and slash at those whose frantic fight brings them within range, letting their prey's own terror drive them over cliffs or bring them to their knees.</p>\n<p>Ocluais understand several languages but rarely communicate with non-fey. When they do, their communication takes the form of unsettling telepathic images projected directly into the other party's mind as the ocluai holds their gaze.</p>\n<hr />\n<p>Gorgas are fey embodiments of diurnal creatures' fear of the dark. Beings of shadow and hunger, they love to prey upon light-loving creatures. Many different kinds of gorgas exist, and each embodies a different facet of the night's countless terrors.</p>\n<p>Gorgas are common in the First World realm of Nighthold, where they once served the mysterious Count Ranalc. After Ranalc's disappearance, the gorgas quickly lost what little compassion they had, scattered into small bands led by their strongest members, and began hunting any fey they could find. All gorgas carry shrouds of shadow within them, and most find daylight unpleasant, tending to remain within Nighthold's perpetual gloom or hole up in caverns or deep forests until night falls. Their bizarre eyes\u2014hollow pools of magical shadow\u2014allow them to see even in magical darkness.</p>",
+            "publicNotes": "<p>Ocluais embody the fear of being lost and helpless in the darkness as well as the danger of unreasoning terror. An ocluai's gray body resembles that of a featherless owl with a serrated beak, the legs of a monkey, and oversized eye sockets full of shadow. The field of unnatural darkness that surrounds an ocluai disorients most creatures; while other gorgas are quick to move in for the kill, ocluais love to perch on a low branch or lintel and watch with their blank expressions as prey succumbs to panic. Though capable fighters, ocluais prefer to hang back and slash at those whose frantic flight brings them within range, letting their prey's own terror drive them over cliffs or bring them to their knees.</p>\n<p>Ocluais understand several languages but rarely communicate with non-fey. When they do, their communication takes the form of unsettling telepathic images projected directly into the other party's mind as the ocluai holds their gaze.</p><hr /><p>Gorgas are fey embodiments of diurnal creatures' fear of the dark. Beings of shadow and hunger, they love to prey upon light-loving creatures. Many different kinds of gorgas exist, and each embodies a different facet of the night's countless terrors.</p>\n<p>Gorgas are common in the First World realm of Nighthold, where they once served the mysterious Count Ranalc. After Ranalc's disappearance, the gorgas quickly lost what little compassion they had, scattered into small bands led by their strongest members, and began hunting any fey they could find. All gorgas carry shrouds of shadow within them, and most find daylight unpleasant, tending to remain within Nighthold's perpetual gloom or hole up in caverns or deep forests until night falls. Their bizarre eyes\u2014hollow pools of magical shadow\u2014allow them to see even in magical darkness.</p><h2>Gorgas and Elves</h2><p>For thousands of years, gorgas have sought vengeance for the loss of their beloved Count Ranalc. A few centuries ago, a fey schemer named Kaneepo the Slim saw in the shadowy creatures' grudge an opportunity to carry out their own vendetta. The slick-tongued fey convinced a group of gorgas that elves were behind Count Ranalc's disappearance and that the gorgas could achieve vengeance if they joined Kaneepo's assaults on the Universe. Though some of the brighter gorgas have seen through the ruse, most are content to have an outlet for their fury.</p><h2>Other Gorgas</h2><p>As many different types of gorgas exist as there are ways to fear the dark. The fear of losing one's sole source of illumination\u2014a flickering torch in a rainstorm, the last candle on a moonless night\u2014manifests as a notua, capable of snuffing lights as well as lives. When the dark makes distant objects appear to be something other than they are\u2014a tree trunk seems to be a crouching beast, a drape of moss becoming a dangling snake\u2014the gaiomyr gorga dances with delight and brings its victims' imagined dangers to horrific life. Some gorgas, it's said, represent nocturnal fears that defy description altogether\u2014the fear of unknown unknowns, perhaps.</p>",
             "languagesDetails": "can't speak any language; telepathy 100 feet, images only",
             "items": {
                 "strike-melee->Talon": {
@@ -1546,8 +1776,8 @@
                 "spellcastingEntry->Occult Innate Spells": {
                     "name": "Occult Innate Spells"
                 },
-                "spell->Dimension Door (At will)": {
-                    "name": "Dimension Door (At will)"
+                "spell->Translocate (At Will)": {
+                    "name": "Translocate (At Will)"
                 },
                 "strike-melee->Nightmare Tendril": {
                     "name": "Nightmare Tendril"
@@ -1626,7 +1856,7 @@
         "Poisonous Atmosphere": {
             "name": "Poisonous Atmosphere",
             "descriptionHazard": "<p>Aucturn's poisonous, magical atmosphere has strange effects on the planet's creatures.</p>",
-            "disable": "<p>@Check[survival|dc:20] (trained) or Occultism (trained) to breathe pockets of safe air trapped in bags and clothing</p>",
+            "disable": "<p>@Check[survival|dc:20] (trained) or @Check[occultism|dc:20] (trained) to breathe pockets of safe air trapped in bags and clothing</p>",
             "routine": "<p>(1 action; illusion, mental, occult) The atmosphere continues to affect all creatures in the area, requiring a new Fortitude save each round against its Poisonous Atmosphere. A creature holding its breath gains a +2 circumstance bonus to the save.</p>",
             "stealth": "<p>(expert) to identify the source of sudden nausea</p>",
             "items": {
@@ -1639,40 +1869,20 @@
         "Protosoul": {
             "name": "Protosoul",
             "publicNotes": "<p>Though many spellcasters can harness the forces of magic in a consistent manner, such power can't always be controlled, especially in the hands of reckless researchers, megalomaniacal villains, or untested novices. When magical accidents result in large-scale property damage and the loss of life, these forces sometimes take on lives of their own, forming a dangerous amalgamation of ongoing magical energy known as a roiling incant.</p>\n<p>A roiling incant's appearance depends on the type of magic it sprang forth from, though it always carries with it an echo of the destruction it has caused. A fiery evocation roiling incant might look like a storm of burning ashes echoing with the sounds of crackling timber, while a necromancy roiling incant could be mistaken for ghostly tendrils puppeteering shambling corpses. No matter what it looks like, a roiling incant roams mindlessly, attacking everything it encounters, heedless of further carnage it causes.</p>",
-            "blurb": "Variant roiling incant",
+            "hpDetails": "void healing",
             "items": {
-                "spellcastingEntry->Divine Innate Spells": {
-                    "name": "Divine Innate Spells"
+                "strike-melee->Void Tendril": {
+                    "name": "Void Tendril"
                 },
-                "spell->Enervation (At Will, see Unstable Magic)": {
-                    "name": "Enervation (At Will, see Unstable Magic)"
+                "strike-ranged->Void Bolt": {
+                    "name": "Void Bolt"
                 },
-                "spell->Sudden Blight (At Will, see Unstable Magic)": {
-                    "name": "Sudden Blight (At Will, see Unstable Magic)"
-                },
-                "spell->Harm (At Will, see Unstable Magic)": {
-                    "name": "Harm (At Will, see Unstable Magic)"
-                },
-                "strike-melee->Necromantic Tendril": {
-                    "name": "Necromantic Tendril"
-                },
-                "strike-ranged->Necromantic Bolt": {
-                    "name": "Necromantic Bolt"
-                },
-                "action->Lifesense": {
-                    "name": "Lifesense"
-                },
-                "action->Absorb Necromancy": {
-                    "name": "Absorb Necromancy",
-                    "description": "<p>A protosoul is made of necromantic energy. Any time it would be affected by another creature's non-cantrip necromancy spell, after applying its immunity, it also regains @Damage[10[healing]] Hit Points.</p>"
-                },
-                "action->Engulf": {
-                    "name": "Engulf",
-                    "description": "<p>@Check[reflex|dc:30], @Damage[2d8[force],3d8[void]]{2d8 force damage plus 3d8 void damage}, @UUID[Compendium.pf2e.actionspf2e.Item.SkZAQRkLLkmBQNB9]{Escape} DC 30, Rupture 25</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Engulf]</p>"
+                "action->Void Healing": {
+                    "name": "Void Healing"
                 },
                 "action->Unstable Magic": {
                     "name": "Unstable Magic",
-                    "description": "<p>The roiling protosoul can't be healed or Repaired, and is destroyed at 0 Hit Points. So long as it is not destroyed, it naturally recovers @Damage[77[healing]] Hit Points each day. Each time a roiling protosoul casts one of its non-cantrip spells, it drains its own magic to do so, taking @Damage[6[force]] damage.</p>"
+                    "description": "<p>The protosoul takes @Damage[10[force]|options:area-damage] damage as it releases a burst of uncontained void energy in a @Template[type:emanation|distance:30]. Creatures in the area take @Damage[5d8[void]|options:area-damage] damage (@Check[fortitude|dc:30|basic] save).</p>"
                 }
             }
         },
@@ -1718,14 +1928,14 @@
         },
         "Rushing Wind": {
             "name": "Rushing Wind",
-            "descriptionHazard": "<p>A raging wind sucks creatures in the area toward the aiudara.</p>",
-            "disable": "<p>@Check[thievery|dc:20] (trained) or Arcana (trained) to recognize what's happening and craft a patch to block air from escaping through the portal</p>",
-            "routine": "<p>(1 action) The hazard uses its action to suck each creature (except the cairn wight) toward the aiudara. Each affected creature must attempt a @Check[fortitude|dc:18] save.</p>\n<p><strong>Success</strong> The creature is unaffected.</p>\n<p><strong>Failure</strong> The creature is pulled 5 feet toward the aiudara and is @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned 1}. If the creature is already adjacent to the aiudara, it doesn't move but is @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned 2}.</p>\n<p><strong>Critical Failure</strong> The creature is pulled 10 feet toward the aiudara, falls @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone}, and is stunned 1. If the creature is already adjacent to the aiudara, it doesn't move but falls prone and is stunned 2.</p>",
+            "descriptionHazard": "<p>A raging wind sucks creatures in the area toward the <em>aiudara</em>.</p>",
+            "disable": "<p>@Check[arcana|dc:20] (trained) or @Check[thievery|dc:20] (trained) to recognize what's happening and craft a patch to block air from escaping through the portal</p>",
+            "routine": "<p>(1 action) The hazard uses its action to suck each creature (except the cairn wight) toward the <em>aiudara</em>. Each affected creature must attempt a @Check[fortitude|dc:18] save.</p><p><strong>Success</strong> The creature is unaffected.</p><p><strong>Failure</strong> The creature is pulled 5 feet toward the <em>aiudara</em> and is @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned 1}. If the creature is already adjacent to the <em>aiudara</em>, it doesn't move but is @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned 2}.</p><p><strong>Critical Failure</strong> The creature is pulled 10 feet toward the <em>aiudara</em>, falls @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone}, and is stunned 1. If the creature is already adjacent to the <em>aiudara</em>, it doesn't move but falls prone and is stunned 2.</p>",
             "stealth": "<p>(trained) to detect the change in pressure</p>",
             "items": {
                 "action->Gale": {
                     "name": "Gale",
-                    "description": "<p><strong>Trigger</strong> The aiudara appears here on Eox</p>\n<hr />\n<p><strong>Effect</strong> A jet of wind pulls creatures caught between the worlds toward the archway. The hazard rolls initiative.</p>"
+                    "description": "<p><strong>Trigger</strong> The <em>aiudara</em> appears here on Eox</p><hr /><p><strong>Effect</strong> A jet of wind pulls creatures caught between the worlds toward the archway. The hazard rolls initiative.</p>"
                 }
             }
         },
@@ -1749,9 +1959,8 @@
                 "spellcastingEntry->Occult Prepared Spells": {
                     "name": "Occult Prepared Spells"
                 },
-                "equipment->Clothing (Winter)": {
-                    "name": "Clothing (Winter)",
-                    "description": "<p>Winter clothing allows you to negate the damage from severe environmental cold and reduce the damage from extreme cold to that of severe cold.</p>"
+                "equipment->Winter Clothing": {
+                    "name": "Winter Clothing"
                 },
                 "strike-melee->Spear": {
                     "name": "Spear"
@@ -1773,10 +1982,10 @@
         },
         "Scholar's Bane": {
             "name": "Scholar's Bane",
-            "descriptionHazard": "<p>Illusion magic overwhelms the minds of particularly intelligent creatures, forcing them to relive every intellectual failure and shame they've ever suffered.</p>",
+            "descriptionHazard": "<p>Illusions overwhelm the minds of particularly intelligent creatures, forcing them to relive every intellectual failure and shame they've ever suffered.</p>",
             "disable": "<p>@Check[thievery|dc:22] (trained) to carve out one eye sensor, @Check[arcana|dc:22] or @Check[occultism|dc:22] (trained) to blank out one's mind (disables trap for self only), or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (2nd rank; counteract DC 20) to counteract one eye sensor</p>",
             "reset": "<p>The trap can function for 10 rounds, which don't need to be consecutive, before it must recharge for 24 hours.</p>",
-            "routine": "<p>(4 actions) The trap uses each action to target a creature in the room with an Intelligence score of 10 or greater. A target must succeed at a @Check[will|dc:22] save or take @Damage[(2d8+2)[mental]]. On a critical failure, the creature takes a &ndash;10-foot status penalty to Speed for 1 minute as they stagger under the weight of their failures. The trap loses 1 action for each eye sensor disabled or destroyed.</p>",
+            "routine": "<p>(4 actions) The trap uses each action to target a creature in the room with an Intelligence score of 10 or greater. A target must succeed at a @Check[will|dc:22] save or take @Damage[(2d8+2)[mental]] damage. On a critical failure, the creature takes a \u201310-foot status penalty to Speed for 1 minute as they stagger under the weight of their failures. The trap loses 1 action for each eye sensor disabled or destroyed.</p>",
             "stealth": "<p>(trained) to notice magical sensors hidden within four of the carvings' eyes</p>",
             "items": {
                 "action->Reveal Failure": {
@@ -1807,7 +2016,7 @@
             "descriptionHazard": "<p>Cross-planar seepage from the Oaksteward rebels' ritual causes shadowy warping effects to strain and damage living creatures in the forest clearing.</p>",
             "disable": "<p>@Check[arcana|dc:17] (trained) to will the Material Plane's hold on the area back into firmness and disable the effect for 1 hour, or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (1st rank; counteract DC 15) to end the effect permanently</p>",
             "reset": "<p>This effect continues for 1 day, after which it ends and cannot be triggered again without another ritual.</p>",
-            "routine": "<p>(1 action) Each creature in the clearing must attempt a @Check[fortitude|dc:17] save as the planar warping threatens to create microscopic tears inside their body. Fey, plant creatures, and druids are unaffected.</p>\n<hr>\n<p><strong>Critical Success</strong> The creature is unaffected and immune for 24 hours. The land is healed [[/gmr 1d6]] points by the primal magic.</p>\n<p><strong>Success</strong> The creature is unaffected and immune to the effect for 24 hours.</p>\n<p><strong>Failure</strong> The creature takes @Damage[(1d6+3)[force]].</p>\n<p><strong>Critical Failure</strong> The creature takes @Damage[(2d6+6)[force]].</p>",
+            "routine": "<p>Each creature in the clearing must attempt a @Check[fortitude|dc:17] save as the planar warping threatens to create microscopic tears inside their body. Fey, plant creatures, and druids are unaffected.</p><hr><p><strong>Critical Success</strong> As success, and the creature is healed by the primal magic, regaining @Damage[1d6[healing]] Hit Points.</p><p><strong>Success</strong> The creature is unaffected and immune to the effect for 24 hours.</p><p><strong>Failure</strong> The creature takes @Damage[(1d6+3)[force]] damage.</p><p><strong>Critical Failure</strong> The creature takes @Damage[(2d6+6)[force]] damage.</p>",
             "stealth": "<p>(trained) to notice the air and plants wavering and shifting</p>",
             "items": {
                 "action->Shadowshift": {
@@ -1818,19 +2027,53 @@
         },
         "Shroud of Silence": {
             "name": "Shroud of Silence",
-            "descriptionHazard": "<p>Sounds become muted in a 20-foot-wide, 100-foot-long segment of this street corridor.</p>",
+            "descriptionHazard": "<p>Sounds become muted in a @Template[line|distance:100|width:20]{20-foot-wide, 100-foot-long} segment of this street corridor.</p>",
             "disable": "<p>@Check[occultism|dc:25] (expert) to twist the magic of the ley line around you, disabling the hazard for only you; or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (4th rank; counteract DC 23) to disable the hazard permanently</p>",
             "stealth": "<p>(expert)</p>",
             "items": {
                 "action->Hush": {
                     "name": "Hush",
-                    "description": "<p><strong>Trigger</strong> A creature reaches the street's halfway point</p>\n<hr />\n<p><strong>Effect</strong> Each creature in the affected area must succeed at a @Check[will|dc:23] saving throw or be silenced as long as it remains in the area. A silenced creature makes no sound and can't use abilities with the sonic or auditory traits, including spells with verbal components.</p>"
+                    "description": "<p><strong>Trigger</strong> A creature reaches the street's halfway point</p><hr /><p><strong>Effect</strong> Each creature in the affected area must succeed at a @Check[will|dc:23] saving throw or be silenced as long as it remains in the area. A silenced creature makes no sound and can't use abilities with the sonic or auditory traits, including casting spells that don't have the subtle trait.</p>"
+                }
+            }
+        },
+        "Sickly Eshmok": {
+            "name": "Sickly Eshmok",
+            "publicNotes": "<p>Eshmoks are proof that anger consumes a creature. Formed from wrathful souls, these demons resemble giant humanoid wasps who have fallen victim to parasitic fungi. The fungi's foul-looking fibrous material is a physical manifestation of wrath. Tendrils of it burst from eshmok bodies, emitting rage-inducing spores, while lattices of nest-like growths from their torsos shelter wasplike infestations.</p><h2>Wrathful Parasites</h2><p>The swarms that infest an eshmok aren't its allies, but incarnations of anger that serve to constantly harry and agonize the creature. Some maintain that these wasps are manifestations of Calistria's vengeance, but her faithful believe something closer to the truth\u2014that these wasps represent a mockery of vengeance and a corruption of the directed rage their goddess teaches and epitomizes. Eshmoks are particularly reviled by worshipers of Calistria as a result.</p>",
+            "blurb": "Variant eshmok",
+            "allSavesBonus": "+1 status to all saves vs. magic",
+            "languagesDetails": "Telepathy 100 feet",
+            "items": {
+                "spellcastingEntry->Divine Innate Spells": {
+                    "name": "Divine Innate Spells"
+                },
+                "spell->Translocate (At Will)": {
+                    "name": "Translocate (At Will)"
+                },
+                "action->+1 Status to All Saves vs. Magic": {
+                    "name": "+1 Status to All Saves vs. Magic"
+                },
+                "action->Harmony Vulnerability": {
+                    "name": "Harmony Vulnerability",
+                    "description": "<p>An eshmok's wrathful infestations defines them, and forcing peace upon them wrenches at their soul. If they fail a save against calm or a similar effect forcing them to be peaceful, an eshmok takes @Damage[4d6[mental]] damage.</p>"
+                },
+                "action->Change Shape": {
+                    "name": "Change Shape",
+                    "description": "<p>The eshmok turns into their fungus form or back into their normal humanoid wasp form. In fungus form, they lose their fly Speed and can't make stinger Strikes. In fungus form, they gain a tendril melee Strike (+21 for 2d8+9 slashing plus eshmok infection); the tendril strike has the agile, magical, reach 10 feet, and unholy traits.</p><hr /><p>@Localize[PF2E.NPC.Abilities.Glossary.ChangeShape]</p>"
+                },
+                "action->Eshmok Infection": {
+                    "name": "Eshmok Infection",
+                    "description": "<p>A creature that's @UUID[Compendium.pf2e.conditionitems.Item.nlCjDvLMf2EkV2dl]{Quickened} by eshmok infection can use the extra action each round for only Strike actions. A creature that's @UUID[Compendium.pf2e.conditionitems.Item.yblD8fOR1J8rDwEQ]{Confused} by eshmok infection never considers an eshmok in fungal form as a target</p>\n<p><strong>Saving Throw</strong> @Check[will|dc:26]</p>\n<p><strong>Maximum Duration</strong> 6 rounds</p>\n<p><strong>Stage 1</strong> confused (1 round)</p>\n<p><strong>Stage 2</strong> confused and quickened (1 round)</p>\n<p><strong>Stage 3</strong> confused, @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard}, and quickened (1 round)</p>"
+                },
+                "action->Infesting Exhalation": {
+                    "name": "Infesting Exhalation",
+                    "description": "<p>The eshmok exhales a wave of stinging fiendish wasps out in a @Template[type:cone|distance:30], dealing @Damage[4d8[poison]|options:area-damage] damage to every creature within the cone (@Check[reflex|dc:28|basic|options:area-effect] save). The swarming fiend wasps linger in the area for 6 rounds or until the eshmok is able to use Infesting Exhalation again, whichever comes first. Each creature damaged by Infesting Exhalation or that enters the area must succeed at a @Check[fortitude|dc:28] save or take @Damage[2d8[persistent,poison]] damage and become @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 1} as the poison renders them dizzy and nauseous. At the end of each of their turns, they can attempt a new Fortitude save to end the effects. The eshmok can't use Infesting Exhalation again for [[/gmr 1d6 #Recharge Infesting Exhalation]]{1d6 rounds}.</p>"
                 }
             }
         },
         "Skin Beetle": {
             "name": "Skin Beetle",
-            "publicNotes": "<p>A typical skin beetle is 1-1/2 feet long and weighs 10 pounds\u2014about the size of a house cat. Its oval-shaped body is covered in dull-colored scales, and short, club-like antennae stem from shallow grooves in its head.</p>\n<hr />\n<p>Skin beetles are found in most environments that can sustain life, from cold, dry steppes to dense, humid jungles. They use their complex multi-jointed mandibles to strip the skin and flesh from recently deceased creatures with almost surgical precision.</p>\n<p>While skin beetles eat most of what they remove, they also preserve chunks for later by coating it in special salivary secretions similar to formaldehyde. The skin beetle rolls this coated flesh into a ball, then stores it under an exposed tree root or rock for leaner times. Signs of skin beetle activity include excoriated skeletons and the smell of the beetles' preservative saliva.</p>",
+            "publicNotes": "<p>A typical skin beetle is 1-1/2 feet long and weighs 10 pounds\u2014about the size of a house cat. Its oval-shaped body is covered in dull-colored scales, and short, club-like antennae stem from shallow grooves in its head.</p><hr /><p>Skin beetles are found in most environments that can sustain life, from cold, dry steppes to dense, humid jungles. They use their complex multi-jointed mandibles to strip the skin and flesh from recently deceased creatures with almost surgical precision. While skin beetles eat most of what they remove, they also preserve chunks for later by coating it in special salivary secretions similar to formaldehyde. The skin beetle rolls this coated flesh into a ball, then stores it under an exposed tree root or rock for leaner times. Signs of skin beetle activity include excoriated skeletons and the smell of the beetles' preservative saliva.</p><h2>Umasi Beetle Masters</h2><p>Though best known for flaying carrion, skin beetles can also heal gravely wounded individuals. Skin beetles can graft preserved flesh onto a dying animal or humanoid. The end result isn't pretty, but it sometimes works. From the perspective of the healed, the blessing can be mixed, as the beetle's surgery often transforms the subject into a patchwork aberration called an @UUID[Compendium.pf2e.pathfinder-bestiary-3.Actor.mupW1Mgec250lQiZ]{Umasi}.</p>\n<p>Umasi created by skin beetles sometimes develop supernatural connections to their insectoid saviors. Such umasi can command skin beetles to harvest more flesh to keep their decaying bodies intact.</p>",
             "items": {
                 "strike-melee->Mandibles": {
                     "name": "Mandibles"
@@ -1854,7 +2097,7 @@
         },
         "Skin Beetle Swarm": {
             "name": "Skin Beetle Swarm",
-            "publicNotes": "<p>When a massive creature such a dinosaur or giant dies in skin beetle territory, the industrious vermin swarm together.</p>\n<hr />\n<p>Skin beetles are found in most environments that can sustain life, from cold, dry steppes to dense, humid jungles. They use their complex multi-jointed mandibles to strip the skin and flesh from recently deceased creatures with almost surgical precision.</p>\n<p>While skin beetles eat most of what they remove, they also preserve chunks for later by coating it in special salivary secretions similar to formaldehyde. The skin beetle rolls this coated flesh into a ball, then stores it under an exposed tree root or rock for leaner times. Signs of skin beetle activity include excoriated skeletons and the smell of the beetles' preservative saliva.</p>",
+            "publicNotes": "<p>When a massive creature such a dinosaur or giant dies in skin beetle territory, the industrious vermin swarm together.</p><hr /><p>Skin beetles are found in most environments that can sustain life, from cold, dry steppes to dense, humid jungles. They use their complex multi-jointed mandibles to strip the skin and flesh from recently deceased creatures with almost surgical precision. While skin beetles eat most of what they remove, they also preserve chunks for later by coating it in special salivary secretions similar to formaldehyde. The skin beetle rolls this coated flesh into a ball, then stores it under an exposed tree root or rock for leaner times. Signs of skin beetle activity include excoriated skeletons and the smell of the beetles' preservative saliva.</p><h2>Umasi Beetle Masters</h2><p>Though best known for flaying carrion, skin beetles can also heal gravely wounded individuals. Skin beetles can graft preserved flesh onto a dying animal or humanoid. The end result isn't pretty, but it sometimes works. From the perspective of the healed, the blessing can be mixed, as the beetle's surgery often transforms the subject into a patchwork aberration called an @UUID[Compendium.pf2e.pathfinder-bestiary-3.Actor.mupW1Mgec250lQiZ]{Umasi}.</p>\n<p>Umasi created by skin beetles sometimes develop supernatural connections to their insectoid saviors. Such umasi can command skin beetles to harvest more flesh to keep their decaying bodies intact.</p>",
             "items": {
                 "action->Swarming Bites": {
                     "name": "Swarming Bites",
@@ -1870,8 +2113,7 @@
                     "name": "Occult Prepared Spells"
                 },
                 "equipment->Hide Clothing": {
-                    "name": "Hide Clothing",
-                    "description": "<p>Winter clothing allows you to negate the damage from severe environmental cold and reduce the damage from extreme cold to that of severe cold.</p>"
+                    "name": "Hide Clothing"
                 },
                 "strike-melee->Fist": {
                     "name": "Fist"
@@ -1906,14 +2148,14 @@
         },
         "Stone-Breasted Owl": {
             "name": "Stone-Breasted Owl",
-            "publicNotes": "<p>Sage spirit guides are among the wisest spirits. They often take the forms of raptors such as owls, using their keen senses to evaluate situations from high above before swooping in to aid imperiled mortals.</p>\n<p>Adventurers who befriend a sage guide are fortunate indeed; in addition to providing sage counsel before conflict begins, sage guides can restore and tend to their allies in the aftermath of a violent dispute.</p>\n<p>In many stories, the sage guide assumes the form of a large owl whose proud breast is composed of hard stone. This depiction combines the wisdom commonly attributed to the owl with the strength and fortitude of the earth.</p>\n<hr />\n<p>Spirit guides are ghostly creatures that manifest as primordial animals on the Material Plane. Many Sarkorian cultures believe that spirit guides came into being at the same time as the first mortal hunting bands. In this time before time, spirit guides took on the most elemental shapes of animals, and they taught humanoid communities about important aspects of nature. As they imparted their wisdom, these spirit guides took physical forms, becoming the wild animals that exist today. Though spirit guides bestowed most of their gifts unto mortals in ancient times, a rare few continue to lurk in forgotten or as-of-yet-undiscovered corners of the physical world.</p>",
+            "publicNotes": "<p>Sage spirit guides are among the wisest spirits. They often take the forms of raptors such as owls, using their keen senses to evaluate situations from high above before swooping in to aid imperiled mortals.</p>\n<p>Adventurers who befriend a sage guide are fortunate indeed; in addition to providing sage counsel before conflict begins, sage guides can restore and tend to their allies in the aftermath of a violent dispute.</p>\n<p>In many stories, the sage guide assumes the form of a large owl whose proud breast is composed of hard stone. This depiction combines the wisdom commonly attributed to the owl with the strength and fortitude of the earth.</p><hr /><p>Spirit guides are ghostly creatures that manifest as primordial animals in the Universe. Many Sarkorian cultures believe that spirit guides came into being as the first mortal hunting bands began to form. In this time before time, spirit guides adopted the most elemental shapes of animals, and they taught humanoid communities about important aspects of nature, such as where to find fresh water, which plants were safe to eat, and how to live in harmony with their environment. As they imparted their wisdom, spirit guides took more physical forms, eventually becoming the wild animals that exist today. Though spirit guides bestowed most of their gifts unto mortals in ancient times, a rare few continue to lurk in forgotten or as-of-yet-undiscovered corners of the physical world.</p><h2>Spirit Guide Companions</h2><p>One way to gain the aid of a spirit guide is to take the @UUID[Compendium.pf2e.journals.JournalEntry.vx5FGEG34AxI2dow.JournalEntryPage.J0AfK0jJgS5WxhCE]{scion of Domora} archetype. This archetype allows character to choose a spirit guide to accompany them on their adventures\u2014provided they first prove themselves worthy of the honor.</p><h2>The Sarkoris Scar</h2><p>Some spirit guides encountered in the haunted badlands now known as the Sarkoris Scar are remnants of god calling, an ancient tradition practiced by many Sarkorian cultures. Severed from their callers by the demonic war that devastated the land for over a century, such gods now roam the blasted landscape, occasionally helping those they find worthy.</p>",
             "languagesDetails": "tongues",
             "items": {
                 "spellcastingEntry->Primal Innate Spells": {
                     "name": "Primal Innate Spells"
                 },
-                "spell->Tongues (Constant)": {
-                    "name": "Tongues (Constant)"
+                "spell->Truespeech (Constant)": {
+                    "name": "Truespeech (Constant)"
                 },
                 "strike-melee->Talon": {
                     "name": "Talon"
@@ -1954,18 +2196,18 @@
         },
         "Temagyr": {
             "name": "Temagyr",
-            "publicNotes": "<p>Temagyrs embody the fear of nocturnal hunters\u2014predators that stalk through the dark of night and attack when their prey is most vulnerable. Able to blend in with and step between shadows to surprise victims, temagyrs delight in ambush tactics.</p>\n<p>An average temagyr is 8 feet long and weighs 500 pounds but moves with unnatural fluidity and grace, the shadows they carry seeming to hang in the air behind them. In combat, a temagyr can take down opponents either with physical attacks or by taking bites out of their enemy's shadow. These shadow wounds, which remain visible unless healed, often perplex Material Plane doctors and investigators; a corpse from a temagyr attack can appear pristine, its tattered shadow the only clue to how it met its untimely fate.</p>\n<hr />\n<p>Gorgas are fey embodiments of diurnal creatures' fear of the dark. Beings of shadow and hunger, they love to prey upon light-loving creatures. Many different kinds of gorgas exist, and each embodies a different facet of the night's countless terrors.</p>\n<p>Gorgas are common in the First World realm of Nighthold, where they once served the mysterious Count Ranalc. After Ranalc's disappearance, the gorgas quickly lost what little compassion they had, scattered into small bands led by their strongest members, and began hunting any fey they could find. All gorgas carry shrouds of shadow within them, and most find daylight unpleasant, tending to remain within Nighthold's perpetual gloom or hole up in caverns or deep forests until night falls. Their bizarre eyes\u2014hollow pools of magical shadow\u2014allow them to see even in magical darkness.</p>",
+            "publicNotes": "<p>Temagyrs embody the fear of nocturnal hunters\u2014predators that stalk through the dark of night and attack when their prey is most vulnerable. Able to blend in with and step between shadows to surprise victims, temagyrs delight in ambush tactics.</p>\n<p>An average temagyr is 8 feet long and weighs 500 pounds but moves with unnatural fluidity and grace, the shadows they carry seeming to hang in the air behind them. In combat, a temagyr can take down opponents either with physical attacks or by taking bites out of their enemy's shadow. These shadow wounds, which remain visible unless healed, often perplex doctors and investigators from the Universe; a corpse from a temagyr attack can appear pristine, its tattered shadow the only clue to how it met its untimely fate.</p><hr /><p>Gorgas are fey embodiments of diurnal creatures' fear of the dark. Beings of shadow and hunger, they love to prey upon light-loving creatures. Many different kinds of gorgas exist, and each embodies a different facet of the night's countless terrors.</p>\n<p>Gorgas are common in the First World realm of Nighthold, where they once served the mysterious Count Ranalc. After Ranalc's disappearance, the gorgas quickly lost what little compassion they had, scattered into small bands led by their strongest members, and began hunting any fey they could find. All gorgas carry shrouds of shadow within them, and most find daylight unpleasant, tending to remain within Nighthold's perpetual gloom or hole up in caverns or deep forests until night falls. Their bizarre eyes\u2014hollow pools of magical shadow\u2014allow them to see even in magical darkness.</p><h2>Gorgas and Elves</h2><p>For thousands of years, gorgas have sought vengeance for the loss of their beloved Count Ranalc. A few centuries ago, a fey schemer named Kaneepo the Slim saw in the shadowy creatures' grudge an opportunity to carry out their own vendetta. The slick-tongued fey convinced a group of gorgas that elves were behind Count Ranalc's disappearance and that the gorgas could achieve vengeance if they joined Kaneepo's assaults on the Universe. Though some of the brighter gorgas have seen through the ruse, most are content to have an outlet for their fury.</p><h2>Other Gorgas</h2><p>As many different types of gorgas exist as there are ways to fear the dark. The fear of losing one's sole source of illumination\u2014a flickering torch in a rainstorm, the last candle on a moonless night\u2014manifests as a notua, capable of snuffing lights as well as lives. When the dark makes distant objects appear to be something other than they are\u2014a tree trunk seems to be a crouching beast, a drape of moss becoming a dangling snake\u2014the gaiomyr gorga dances with delight and brings its victims' imagined dangers to horrific life. Some gorgas, it's said, represent nocturnal fears that defy description altogether\u2014the fear of unknown unknowns, perhaps.</p>",
             "languagesDetails": "can't speak any language",
             "items": {
                 "strike-melee->Bite": {
                     "name": "Bite"
                 },
-                "action->Attack of Opportunity": {
-                    "name": "Attack of Opportunity"
-                },
                 "action->Cloak of Shadows": {
                     "name": "Cloak of Shadows",
                     "description": "<p>Temagyrs are constantly surrounded by shifting shadows. A temagyr can always Hide in dim light or darkness.</p>"
+                },
+                "action->Reactive Strike": {
+                    "name": "Reactive Strike"
                 },
                 "action->Shadow Bite": {
                     "name": "Shadow Bite",
@@ -2005,7 +2247,7 @@
                 },
                 "action->Frozen Wind": {
                     "name": "Frozen Wind",
-                    "description": "<p>The guest exhales a blast of freezing wind from its body in a @Template[cone|distance:20]. All creatures in this area take @Damage[8d6[cold]] (@Check[reflex|dc:25|basic]). The Guest can't use Frozen Wind again for [[/gmr 1d4 #Recharge Frozen Wind]]{1d4 rounds}.</p>"
+                    "description": "<p>The guest exhales a blast of freezing wind from its body in a @Template[cone|distance:20]. All creatures in this area take @Damage[8d6[cold]|options:area-damage] (@Check[reflex|dc:25|basic|options:area-effect]). The Guest can't use Frozen Wind again for [[/gmr 1d4 #Recharge Frozen Wind]]{1d4 rounds}.</p>"
                 },
                 "action->Stunning Critical": {
                     "name": "Stunning Critical",
@@ -2027,8 +2269,8 @@
                 "spellcastingEntry->Occult Innate Spells": {
                     "name": "Occult Innate Spells"
                 },
-                "spellcastingEntry->Transmutation School Spell": {
-                    "name": "Transmutation School Spell"
+                "spellcastingEntry->School of Protean Form Spell": {
+                    "name": "School of Protean Form Spell"
                 },
                 "equipment->Stalk Goggles (Greater)": {
                     "name": "Stalk Goggles (Greater)",
@@ -2036,7 +2278,7 @@
                 },
                 "equipment->Spellbook": {
                     "name": "Spellbook",
-                    "description": "<p>A spellbook holds the written knowledge necessary to learn and prepare various spells, a necessity for wizards (who typically get one for free) and a useful luxury for other spellcasters looking to learn additional spells. Each spellbook can hold up to 100 spells. The Price listed is for a blank spellbook.</p>\n<p>@UUID[Compendium.pf2e.spells-srd.Item.f8hRqLJaxBVhF1u0]{Acid Arrow}</p>\n<p>@UUID[Compendium.pf2e.spells-srd.Item.ZxHC7V7HtjUsB8zH]{Blazing Bolt}</p>\n<p>@UUID[Compendium.pf2e.spells-srd.Item.5KobTMrZeZxuXMgl]{Gecko Grip}</p>\n<p>@UUID[Compendium.pf2e.spells-srd.Item.gKKqvLohtrSJj3BM]{Force Barrage}</p>\n<p>@UUID[Compendium.pf2e.spells-srd.Item.r3NeUnsgt9mS03Sn]{Shocking Grasp}</p>\n<p>@UUID[Compendium.pf2e.spells-srd.Item.pwzdSlJgYqN7bs2w]{Telekinetic Hand}</p>\n<p>@UUID[Compendium.pf2e.spells-srd.Item.TVKNbcgTee19PXZR]{Shield}</p>\n<p>@UUID[Compendium.pf2e.spells-srd.Item.uZK2BYzPnxUBnDjr]{Tangle Vine}</p>"
+                    "description": "<p>A spellbook holds the written knowledge necessary to learn and prepare various spells, a necessity for wizards (who typically get one for free) and a useful luxury for other spellcasters looking to learn additional spells. Each spellbook can hold up to 100 spells. The Price listed is for a blank spellbook.</p>\n<p><strong>Cantrips</strong></p>\n<p>@UUID[Compendium.pf2e.spells-srd.Item.TVKNbcgTee19PXZR]{Shield}</p>\n<p>@UUID[Compendium.pf2e.spells-srd.Item.uZK2BYzPnxUBnDjr]{Tangle Vine}</p>\n<p>@UUID[Compendium.pf2e.spells-srd.Item.pwzdSlJgYqN7bs2w]{Telekinetic Hand}</p>\n<p><strong>1st</strong></p>\n<p>@UUID[Compendium.pf2e.spells-srd.Item.gKKqvLohtrSJj3BM]{Force Barrage}</p>\n<p>@UUID[Compendium.pf2e.spells-srd.Item.zDJS8E66UI0himqV]{Thunderstrike}</p>\n<p><strong>2nd</strong></p>\n<p>@UUID[Compendium.pf2e.spells-srd.Item.9h9YCncqah6VNsKf]{Acid Grip}</p>\n<p>@UUID[Compendium.pf2e.spells-srd.Item.ZxHC7V7HtjUsB8zH]{Blazing Bolt}</p>\n<p>@UUID[Compendium.pf2e.spells-srd.Item.5KobTMrZeZxuXMgl]{Gecko Grip}</p>"
                 },
                 "equipment->Ring With Nethys Mask Sigil": {
                     "name": "Ring With Nethys Mask Sigil",
@@ -2058,7 +2300,7 @@
                 },
                 "action->Stalk Goggles Specialist": {
                     "name": "Stalk Goggles Specialist",
-                    "description": "<p>As long as he wears his greater stalk goggles, the Looksee Man can't be flanked by creatures of 4th level or lower.</p>"
+                    "description": "<p>As long as he wears his @UUID[Compendium.pf2e.equipment-srd.Item.U7UVGM93EaNc6lzY]{Greater Stalk Goggles}, the Looksee Man can't be flanked by creatures of 4th level or lower.</p>"
                 }
             }
         },
@@ -2074,18 +2316,25 @@
                 }
             }
         },
-        "Tree Fisher": {
-            "name": "Tree Fisher",
+        "Ulikuq": {
+            "name": "Ulikuq",
+            "blurb": "Nonbinary human navigator",
             "items": {
-                "strike-melee->Claw": {
-                    "name": "Claw"
+                "equipment->Winter Clothing": {
+                    "name": "Winter Clothing"
                 },
-                "strike-ranged->Harpoon": {
-                    "name": "Harpoon"
+                "action->Chart a Course": {
+                    "name": "Chart a Course",
+                    "description": "<p>Ulikuq spends 10 minutes to plot a course and attempts a @Check[Sailing Lore|dc:20] or @Check[survival|dc:20] check. This check is reduced to DC 15 in an arctic environment such as the Crown of the World (@Check[Sailing Lore|dc:15] or @Check[survival|dc:15]). On a success, the severity of environmental conditions during the journey is reduced by one step for 24 hours (two steps on a critical success). This changes moderate damage to minor damage, winds that create greater difficult terrain cause only difficult terrain, and so on.</p>"
                 },
-                "action->Barbed Filament": {
-                    "name": "Barbed Filament",
-                    "description": "<p>A creature hit by the tree fisher's barbed filament is @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed}. The tree fisher can move while it has a creature grabbed with its filament, but automatically releases the Grab if the tree fisher moves beyond the filament's 60-foot length. A creature grabbed by the filament at the beginning of its turn takes @Damage[5[bleed]].</p>\n<p>The tree fisher can sever the filament and release any creature grabbed by it as a free action. The filament can be severed by a Strike that deals at least @Damage[10[slashing]] to it. This doesn't deal any damage to the tree fisher itself. The filament has AC 17, and its @UUID[Compendium.pf2e.actionspf2e.Item.SkZAQRkLLkmBQNB9]{Escape} DC is 19.</p>\n<p>The tree fisher has only one harpoon; if the filament is severed, the tree fisher loses this ability and its ranged attack for 1 week as it fashions a new harpoon.</p>"
+                "lore->Astronomy Lore": {
+                    "name": "Astronomy Lore"
+                },
+                "lore->Fortune-Telling Lore": {
+                    "name": "Fortune-Telling Lore"
+                },
+                "lore->Sailing Lore": {
+                    "name": "Sailing Lore"
                 }
             }
         },
@@ -2099,10 +2348,6 @@
             "items": {
                 "equipment->Keys to the Front Door and Dungeon Cell": {
                     "name": "Keys to the Front Door and Dungeon Cell"
-                },
-                "consumable->Blowgun Darts with Harvester Poison": {
-                    "name": "Blowgun Darts with Harvester Poison",
-                    "description": "<p>These thin, light darts are typically made of hardwood and stabilized with fletching of down or fur. They are often hollow so they can be used to deliver poison.</p>"
                 },
                 "strike-melee->Claw": {
                     "name": "Claw"
@@ -2124,10 +2369,6 @@
                 "action->Consume Organ": {
                     "name": "Consume Organ",
                     "description": "<p><strong>Requirements</strong> The umasi is adjacent to the corpse of a Small or larger creature that died within the last minute</p>\n<hr />\n<p><strong>Effect</strong> The umasi harvests and consumes a vital organ from the corpse, gaining [[/r 15 #Temporary Hit Points]]{15 temporary Hit Points} and a +1 status bonus to attack and damage rolls for 10 minutes. They can gain this benefit only once from any given corpse.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.Qa0HP5uCuqh4vxBh]{Effect: Consume Organ}</p>"
-                },
-                "action->Harvester Poison": {
-                    "name": "Harvester Poison",
-                    "description": "<p><strong>Saving Throw</strong> @Check[fortitude|dc:24]</p>\n<hr />\n<p><strong>Maximum Duration</strong> 4 rounds</p>\n<p><strong>Stage 1</strong> @Damage[2d6[poison]] damage (1 round)</p>\n<p><strong>Stage 2</strong> @Damage[3d6[poison]] damage (1 round)</p>"
                 }
             }
         },

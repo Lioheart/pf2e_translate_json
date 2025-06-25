@@ -206,7 +206,7 @@
                 },
                 "action->Dominance Display": {
                     "name": "Dominance Display",
-                    "description": "<p><strong>Frequency</strong> once per hour</p>\n<hr />\n<p><strong>Effect</strong> The arabuk postures and roars. All non-arabuk creatures within @Template[emanation|distance:30]{30 feet} must attempt a @Check[will|dc:20] save.</p><hr /><p><strong>Critical Success</strong> The creature is unaffected and is temporarily immune to this arabuk's Dominance Display for 24 hours.</p>\n<p><strong>Success</strong> The creature takes @Damage[2d8[sonic]] damage.</p>\n<p><strong>Failure</strong> The creature takes @Damage[(2d8+9)[sonic]] damage and is @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 1}.</p>\n<p><strong>Critical Failure</strong> The creature takes @Damage[(2d8+9)[sonic]] damage and is @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 2}.</p>"
+                    "description": "<p><strong>Frequency</strong> once per hour</p>\n<hr />\n<p><strong>Effect</strong> The arabuk postures and roars. All non-arabuk creatures within @Template[emanation|distance:30]{30 feet} must attempt a @Check[will|dc:20|options:area-effect,damaging-effect] save.</p><hr /><p><strong>Critical Success</strong> The creature is unaffected and is temporarily immune to this arabuk's Dominance Display for 24 hours.</p>\n<p><strong>Success</strong> The creature takes @Damage[2d8[sonic]|options:area-damage] damage.</p>\n<p><strong>Failure</strong> The creature takes @Damage[(2d8+9)[sonic]|options:area-damage] damage and is @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 1}.</p>\n<p><strong>Critical Failure</strong> The creature takes @Damage[(2d8+9)[sonic]|options:area-damage] damage and is @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 2}.</p>"
                 },
                 "action->Pounce": {
                     "name": "Pounce",
@@ -1139,7 +1139,7 @@
             "items": {
                 "weapon->Tanglefoot Bag (Moderate)": {
                     "name": "Tanglefoot Bag (Moderate)",
-                    "description": "<p><strong>Activate</strong> <span class=\"action-glyph\">1</span> Strike</p>\n<hr />\n<p>A tanglefoot bag is filled with sticky substances. When you hit a creature with a tanglefoot bag, that creature takes a -15-foot status penalty to its Speeds for 1 minute. You gain a +1 item bonus to attack rolls, and the Escape DC is 19.</p>\n<p>On a critical hit, a creature in contact with a solid surface becomes stuck to the surface and @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Immobilized} for 1 round, and a creature flying via wings has its wings tangled, causing it to fall safely to the ground and become unable to Fly again for 1 round. Tanglefoot bags are not effective when used on a creature that is in water.</p>\n<p>The target can end any effects by Escaping or spending a total of 3 actions to carefully remove the sticky substances. These Interact actions don't have to be consecutive, and other creatures can provide the actions as well.</p>"
+                    "description": "<p><strong>Activate</strong> <span class=\"action-glyph\">1</span> Strike</p>\n<hr />\n<p>A tanglefoot bag is filled with sticky substances. When you hit a creature with a tanglefoot bag, that creature takes a -15-foot status penalty to its Speeds for 1 minute. You gain a +1 item bonus to attack rolls, and the Escape DC is 19 ([[/act escape dc=19]]).</p>\n<p>On a critical hit, a creature in contact with a solid surface becomes stuck to the surface and @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Immobilized} for 1 round, and a creature flying via wings has its wings tangled, causing it to fall safely to the ground and become unable to Fly again for 1 round. Tanglefoot bags are not effective when used on a creature that is in water.</p>\n<p>The target can end any effects by Escaping or spending a total of 3 actions to carefully remove the sticky substances. These Interact actions don't have to be consecutive, and other creatures can provide the actions as well.</p>"
                 },
                 "consumable->Healing Potion (Minor)": {
                     "name": "Healing Potion (Minor)",
@@ -1991,7 +1991,7 @@
                 },
                 "action->Explosive Harness": {
                     "name": "Explosive Harness",
-                    "description": "<p>The rat is connected to an explosive harness, which displays an ominous 1-minute pocket watch. The harness will explode after 1 minute (10 rounds) if it is not disabled, or immediately if the rat takes fire damage. This explosion deals @Damage[2d6[fire]] damage to the rat and all creatures within a @Template[burst|distance:5]{5-foot burst} (@Check[reflex|dc:15|basic] save) and ignites flammable objects in the area.</p>\n<p>If the rat is @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grappled}, @UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{Restrained}, or @UUID[Compendium.pf2e.conditionitems.Item.fBnFDH2MTzgFijKf]{Unconscious}, an adjacent creature can attempt to safely remove and disable the harness with a successful @Check[nature|dc:17] or @Check[thievery|dc:17] check or a successful @Check[tanning-lore|dc:15] check. An attempt to disable the harness uses two actions.</p>"
+                    "description": "<p>The rat is connected to an explosive harness, which displays an ominous 1-minute pocket watch. The harness will explode after 1 minute (10 rounds) if it is not disabled, or immediately if the rat takes fire damage. This explosion deals @Damage[2d6[fire]|options:area-damage] damage to the rat and all creatures within a @Template[burst|distance:5] (@Check[reflex|dc:15|basic|options:area-effect] save) and ignites flammable objects in the area.</p>\n<p>If the rat is @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grappled}, @UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{Restrained}, or @UUID[Compendium.pf2e.conditionitems.Item.fBnFDH2MTzgFijKf]{Unconscious}, an adjacent creature can attempt to safely remove and disable the harness with a successful @Check[nature|dc:17] or @Check[thievery|dc:17] check or a successful @Check[tanning-lore|dc:15] check. An attempt to disable the harness uses two actions.</p>"
                 }
             },
             "skills": {
@@ -2544,7 +2544,7 @@
                 },
                 "action->Envelop": {
                     "name": "Envelop",
-                    "description": "<p><strong>Requirements</strong> The giant amoeba begins its turn with a target its size or smaller @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed}</p>\n<hr />\n<p><strong>Effect</strong> The giant amoeba maintains the @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.Tkd8sH4pwFIPzqTr]{Grab} and extends pseudopods to surround the creature and pull it inside the amoeba's body. This thereafter has the same effect as if the amoeba had @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.zU3Ovaet4xQ5Gmvy]{Engulfed} the creature (DC 17, @Damage[1d6[acid]] damage, Escape DC 17, Rupture 3).</p>"
+                    "description": "<p><strong>Requirements</strong> The giant amoeba begins its turn with a target its size or smaller @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed}</p>\n<hr />\n<p><strong>Effect</strong> The giant amoeba maintains the @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.Tkd8sH4pwFIPzqTr]{Grab} and extends pseudopods to surround the creature and pull it inside the amoeba's body. This thereafter has the same effect as if the amoeba had @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.zU3Ovaet4xQ5Gmvy]{Engulfed} the creature (DC 17, @Damage[1d6[acid]] damage, [[/act escape dc=17]], Rupture 3).</p>"
                 },
                 "action->Weak Acid": {
                     "name": "Weak Acid",
@@ -2907,7 +2907,7 @@
                 },
                 "action->Heft Crate": {
                     "name": "Heft Crate",
-                    "description": "<p><strong>Requirements</strong> The deckhand is adjacent to a crate</p>\n<hr />\n<p><strong>Effect</strong> The deckhand picks up a crate and heaves it up to 15 feet. Upon landing, the crate breaks open in a @Template[burst|distance:5]. Each creature within the area takes @Damage[2d4[bludgeoning]] damage (@Check[reflex|dc:13|basic] save), and the area becomes difficult terrain until cleared.</p>"
+                    "description": "<p><strong>Requirements</strong> The deckhand is adjacent to a crate</p>\n<hr />\n<p><strong>Effect</strong> The deckhand picks up a crate and heaves it up to 15 feet. Upon landing, the crate breaks open in a @Template[burst|distance:5]. Each creature within the area takes @Damage[2d4[bludgeoning]|options:area-damage] damage (@Check[reflex|dc:13|basic|options:area-effect] save), and the area becomes difficult terrain until cleared.</p>"
                 },
                 "action->Swig": {
                     "name": "Swig",
@@ -3181,7 +3181,7 @@
                 },
                 "action->Expel Infestation": {
                     "name": "Expel Infestation",
-                    "description": "<p>The isqulug expels larvae from the hivemind in its head in a @Template[cone|distance:30]. Creatures in this area take @Damage[5d10[piercing]] damage as the swarm feeds on their flesh (@Check[reflex|dc:28|basic] save). Any creature that takes damage is exposed to isqulugia.</p>\n<p>The isqulug becomes @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 1} for [[/gmr 1d4 #Stupifed Duration]]{1d4 rounds}, during which it can't Expel Infestation.</p>"
+                    "description": "<p>The isqulug expels larvae from the hivemind in its head in a @Template[cone|distance:30]. Creatures in this area take @Damage[5d10[piercing]|options:area-damage] damage as the swarm feeds on their flesh (@Check[reflex|dc:28|basic|options:area-effect] save). Any creature that takes damage is exposed to isqulugia.</p>\n<p>The isqulug becomes @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 1} for [[/gmr 1d4 #Stupifed Duration]]{1d4 rounds}, during which it can't Expel Infestation.</p>"
                 },
                 "action->Isqulugia": {
                     "name": "Isqulugia",
@@ -3542,7 +3542,7 @@
                 },
                 "action->Dominance Display": {
                     "name": "Dominance Display",
-                    "description": "<p><strong>Frequency</strong> once per hour</p>\n<hr />\n<p><strong>Effect</strong> The arabuk postures and roars. All non-arabuk creatures within @Template[emanation|distance:30]{30 feet} must attempt a @Check[will|dc:23] save.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected and is temporarily immune to this arabuk's Dominance Display for 24 hours.</p>\n<p><strong>Success</strong> The creature takes @Damage[2d12[sonic]] damage.</p>\n<p><strong>Failure</strong> The creature takes @Damage[(2d12+13)[sonic]] damage and is @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 1}.</p>\n<p><strong>Critical Failure</strong> The creature takes @Damage[(2d12+13)[sonic]] damage and is @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 2}.</p>"
+                    "description": "<p><strong>Frequency</strong> once per hour</p>\n<hr />\n<p><strong>Effect</strong> The arabuk postures and roars. All non-arabuk creatures within @Template[emanation|distance:30]{30 feet} must attempt a @Check[will|dc:23|options:area-effect,damaging-effect] save.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected and is temporarily immune to this arabuk's Dominance Display for 24 hours.</p>\n<p><strong>Success</strong> The creature takes @Damage[2d12[sonic]|options:area-damage] damage.</p>\n<p><strong>Failure</strong> The creature takes @Damage[(2d12+13)[sonic]|options:area-damage] damage and is @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 1}.</p>\n<p><strong>Critical Failure</strong> The creature takes @Damage[(2d12+13)[sonic]|options:area-damage] damage and is @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 2}.</p>"
                 },
                 "action->Pounce": {
                     "name": "Pounce",
@@ -6312,7 +6312,7 @@
             "items": {
                 "action->Seize": {
                     "name": "Seize",
-                    "description": "<p>Trigger A living creature spends 1 round in the area</p>\n<p>Effect A whispered shout carries through the air: \"I have a face! I have a name! My sisters may be forgotten, but I will reclaim what's mine\" Sinking statues desperately grasp at creatures in the area, struggling to stay above the surface. The haunt attempts an [[/r 1d20+18 #Grapple]]{Athletics check (with a +18 modifier)} to @UUID[Compendium.pf2e.actionspf2e.Item.PMbdMWc2QroouFGD]{Grapple} each creature in the area. On a success, a creature is @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed} (Escape DC 28). The haunt then rolls initiative.</p>"
+                    "description": "<p>Trigger A living creature spends 1 round in the area</p>\n<p>Effect A whispered shout carries through the air: \"I have a face! I have a name! My sisters may be forgotten, but I will reclaim what's mine\" Sinking statues desperately grasp at creatures in the area, struggling to stay above the surface. The haunt attempts an [[/r 1d20+18 #Grapple]]{Athletics check (with a +18 modifier)} to @UUID[Compendium.pf2e.actionspf2e.Item.PMbdMWc2QroouFGD]{Grapple} each creature in the area. On a success, a creature is @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed} ([[/act escape dc=28]]). The haunt then rolls initiative.</p>"
                 }
             }
         },
@@ -6326,7 +6326,7 @@
             "items": {
                 "action->Seize": {
                     "name": "Seize",
-                    "description": "<p>Trigger A living creature spends 1 round in the area</p>\n<p>Effect A whispered shout carries through the air: \"I have a face! I have a name! My sisters may be forgotten, but I will reclaim what's mine\" Sinking statues desperately grasp at creatures in the area, struggling to stay above the surface. The haunt attempts an [[/r 1d20+21 #Grapple]]{Athletics check (with a +21 modifier)} to @UUID[Compendium.pf2e.actionspf2e.Item.PMbdMWc2QroouFGD]{Grapple} each creature in the area. On a success, a creature is @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed} (Escape DC 31). The haunt then rolls initiative.</p>"
+                    "description": "<p>Trigger A living creature spends 1 round in the area</p>\n<p>Effect A whispered shout carries through the air: \"I have a face! I have a name! My sisters may be forgotten, but I will reclaim what's mine\" Sinking statues desperately grasp at creatures in the area, struggling to stay above the surface. The haunt attempts an [[/r 1d20+21 #Grapple]]{Athletics check (with a +21 modifier)} to @UUID[Compendium.pf2e.actionspf2e.Item.PMbdMWc2QroouFGD]{Grapple} each creature in the area. On a success, a creature is @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed} ([[/act escape dc=31]]). The haunt then rolls initiative.</p>"
                 }
             }
         },
