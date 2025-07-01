@@ -2149,7 +2149,7 @@
                 },
                 "action->Light Reflection": {
                     "name": "Light Reflection",
-                    "description": "<p><strong>Requirements</strong> The gold defender is not in darkness</p>\n<hr />\n<p><strong>Effect</strong> The gold defender reshapes its skin into a reflective surface that magnifies ambient light into a precise beam that burns all creatures in a @Template[cone|distance:30], dealing @Damage[14d6[fire]] damage (@Check[reflex|dc:31|name:Light Reflection in Dim Light|traits:fire,damaging-effect] save if the gold defender is in dim light, @Check[reflex|dc:33|name:Light Reflection in Bright Light|traits:fire,damaging-effect] save if it's in bright light). It can't use Light Reflection again for [[/gmr 1d4 #Recharge Light Reflection]]{1d4 rounds}.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature takes no damage.</p>\n<p><strong>Success</strong> The creature takes half damage.</p>\n<p><strong>Failure</strong> The creature takes full damage and catches fire, taking @Damage[1d6[persistent,fire]] damage.</p>\n<p><strong>Critical Failure</strong> As failure, but the persistent fire damage is @Damage[5d6[persistent,fire]].</p>"
+                    "description": "<p><strong>Requirements</strong> The gold defender is not in darkness</p>\n<hr />\n<p><strong>Effect</strong> The gold defender reshapes its skin into a reflective surface that magnifies ambient light into a precise beam that burns all creatures in a @Template[cone|distance:30], dealing @Damage[14d6[fire]|options:area-damage] damage (@Check[reflex|dc:31|name:Light Reflection in Dim Light|options:area-effect,damaging-effect] save if the gold defender is in dim light, @Check[reflex|dc:33|name:Light Reflection in Bright Light|options:area-effect,damaging-effect] save if it's in bright light). It can't use Light Reflection again for [[/gmr 1d4 #Recharge Light Reflection]]{1d4 rounds}.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature takes no damage.</p>\n<p><strong>Success</strong> The creature takes half damage.</p>\n<p><strong>Failure</strong> The creature takes full damage and catches fire, taking @Damage[1d6[persistent,fire]] damage.</p>\n<p><strong>Critical Failure</strong> As failure, but the persistent fire damage is @Damage[5d6[persistent,fire]].</p>"
                 }
             }
         },
@@ -2181,7 +2181,7 @@
                 },
                 "action->Light Reflection": {
                     "name": "Light Reflection",
-                    "description": "<p><strong>Requirements</strong> The gold defender garrison is not in darkness</p>\n<hr />\n<p><strong>Effect</strong> The gold defender garrison reshapes its skin into a reflective surface that magnifies ambient light into a precise beam that burns all creatures in a @Template[cone|distance:30], dealing @Damage[14d6[fire]] damage (@Check[reflex|dc:31|name:Light Reflection in Dim Light|traits:fire,damaging-effect] save if the gold defender is in dim light, @Check[reflex|dc:33|name:Light Reflection in Bright Light|traits:fire,damaging-effect] save if it's in bright light). The size of the cone reduces to a @Template[cone|distance:15] when the garrison is reduced to 8 or fewer squares. It can't use Light Reflection again for [[/gmr 1d4 #Recharge Light Reflection]]{1d4 rounds}.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature takes no damage.</p>\n<p><strong>Success</strong> The creature takes half damage.</p>\n<p><strong>Failure</strong> The creature takes full damage and catches fire, taking @Damage[1d6[persistent,fire]] damage.</p>\n<p><strong>Critical Failure</strong> As failure, but the persistent fire damage is @Damage[5d6[persistent,fire]].</p>"
+                    "description": "<p><strong>Requirements</strong> The gold defender garrison is not in darkness</p>\n<hr />\n<p><strong>Effect</strong> The gold defender garrison reshapes its skin into a reflective surface that magnifies ambient light into a precise beam that burns all creatures in a @Template[cone|distance:30], dealing @Damage[14d6[fire]|options:area-damage] damage (@Check[reflex|dc:31|name:Light Reflection in Dim Light|options:area-effect,damaging-effect] save if the gold defender is in dim light, @Check[reflex|dc:33|name:Light Reflection in Bright Light|options:area-effect,damaging-effect] save if it's in bright light). The size of the cone reduces to a @Template[cone|distance:15] when the garrison is reduced to 8 or fewer squares. It can't use Light Reflection again for [[/gmr 1d4 #Recharge Light Reflection]]{1d4 rounds}.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature takes no damage.</p>\n<p><strong>Success</strong> The creature takes half damage.</p>\n<p><strong>Failure</strong> The creature takes full damage and catches fire, taking @Damage[1d6[persistent,fire]] damage.</p>\n<p><strong>Critical Failure</strong> As failure, but the persistent fire damage is @Damage[5d6[persistent,fire]].</p>"
                 },
                 "action->Troop Movement": {
                     "name": "Troop Movement",
@@ -4957,7 +4957,7 @@
                 },
                 "action->Nova Burst": {
                     "name": "Nova Burst",
-                    "description": "<p>The sunburst corpse intensifies its light and unleashes a burning blast of energy. It deals @Damage[12d8[fire]] damage to all creatures in a @Template[emanation|distance:20] (@Check[fortitude|dc:34|basic] save). A creature that fails its save becomes @UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]{Dazzled} until the end of its next turn. The sunburst corpse can't use Nova Burst again for [[/gmr 1d4 #Recharge Nova Burst]]{1d4 rounds}, and its blinding aura becomes inactive during this time.</p>"
+                    "description": "<p>The sunburst corpse intensifies its light and unleashes a burning blast of energy. It deals @Damage[12d8[fire]|options:area-damage] damage to all creatures in a @Template[emanation|distance:20] (@Check[fortitude|dc:34|basic|options:area-effect] save). A creature that fails its save becomes @UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]{Dazzled} until the end of its next turn. The sunburst corpse can't use Nova Burst again for [[/gmr 1d4 #Recharge Nova Burst]]{1d4 rounds}, and its blinding aura becomes inactive during this time.</p>"
                 },
                 "action->Residual Light": {
                     "name": "Residual Light",
@@ -5649,12 +5649,6 @@
             "publicNotes": "<p>Insectile werecreatures, such as wereants, only come about in unusual circumstances, such as powerful curses from inhuman gods or transformative magic run amok. Wereants work together with a natural cohesion that's rare in other types of werecreatures. The wereants presented here are more powerful than most wereants, as they've been warped by the forces contained within the Vesicant Egg.</p>\n<p>Some wereants have a religious zeal about training to protect their community and gladly give their lives for the hive.</p>",
             "languagesDetails": "insect empathy, telepathy 120 feet",
             "items": {
-                "strike-melee->Mandibles": {
-                    "name": "Mandibles"
-                },
-                "strike-melee->Carapace Fist": {
-                    "name": "Carapace Fist"
-                },
                 "action->Telepathy 120 feet": {
                     "name": "Telepathy 120 feet"
                 },
@@ -5672,7 +5666,12 @@
                 },
                 "action->Change Shape": {
                     "name": "Change Shape",
-                    "description": "<p>The wereant changes into their humanoid, hybrid, or animal shape. Each shape has a specific, persistent appearance. A true wereant's natural form is their hybrid shape. In humanoid shape, they use their original humanoid size, lose their jaws and claw Strikes, and gain a melee fist Strike that deals bludgeoning damage equal to the slashing damage dealt by their mandibles. In animal shape, they take the form of a Medium giant ant, gain a climb Speed of 20 feet, gain Grab on their mandibles Strike, and lose their weapon Strikes.</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.ChangeShape]</p>"
+                    "description": "<p>The wereant changes into their humanoid, hybrid, or animal shape. Each shape has a specific, persistent appearance. A true wereant's natural form is their hybrid shape. In humanoid shape, they use their original humanoid size, lose their jaws and claw Strikes, and gain a melee fist Strike that deals bludgeoning damage equal to the slashing damage dealt by their mandibles. In animal shape, they take the form of a Medium giant ant, gain a climb Speed of 20 feet, gain Grab on their mandibles Strike, and lose their weapon Strikes.</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.ChangeShape]</p>",
+                    "rules": {
+                        "4": {
+                            "text": "@Localize[PF2E.NPC.Abilities.Glossary.Grab]"
+                        }
+                    }
                 },
                 "action->Curse of the Wereant": {
                     "name": "Curse of the Wereant",
@@ -5697,9 +5696,6 @@
             "publicNotes": "<p>Insectile werecreatures, such as wereants, only come about in unusual circumstances, such as powerful curses from inhuman gods or transformative magic run amok. Wereants work together with a natural cohesion that's rare in other types of werecreatures. The wereants presented here are more powerful than most wereants, as they've been warped by the forces contained within the Vesicant Egg.</p>\n<p>When overwhelming force is inadvisable, a wereant hive sends a poison-dripping assassin for murderous work. These poisoners love to terrify those dying in agony from their toxins.</p>",
             "languagesDetails": "inset empathy; telepathy 120 feet",
             "items": {
-                "strike-melee->Mandibles": {
-                    "name": "Mandibles"
-                },
                 "action->Telepathy 120 feet": {
                     "name": "Telepathy 120 feet"
                 },
@@ -5717,7 +5713,12 @@
                 },
                 "action->Change Shape": {
                     "name": "Change Shape",
-                    "description": "<p>The wereant changes into their humanoid, hybrid, or animal shape. Each shape has a specific, persistent appearance. A true wereant's natural form is their hybrid shape. In humanoid shape, they use their original humanoid size, lose their jaws and claw Strikes, and gain a melee fist Strike that deals bludgeoning damage equal to the slashing damage dealt by their mandibles. In animal shape, they take the form of a Medium giant ant, gain a climb Speed of 20 feet, gain Grab on their mandibles Strike, and lose their weapon Strikes.</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.ChangeShape]</p>"
+                    "description": "<p>The wereant changes into their humanoid, hybrid, or animal shape. Each shape has a specific, persistent appearance. A true wereant's natural form is their hybrid shape. In humanoid shape, they use their original humanoid size, lose their jaws and claw Strikes, and gain a melee fist Strike that deals bludgeoning damage equal to the slashing damage dealt by their mandibles. In animal shape, they take the form of a Medium giant ant, gain a climb Speed of 20 feet, gain Grab on their mandibles Strike, and lose their weapon Strikes.</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.ChangeShape]</p>",
+                    "rules": {
+                        "2": {
+                            "text": "@Localize[PF2E.NPC.Abilities.Glossary.Grab]"
+                        }
+                    }
                 },
                 "action->Curse of the Wereant": {
                     "name": "Curse of the Wereant",
@@ -5750,9 +5751,6 @@
                     "name": "Sturdy Shield (Major)",
                     "description": "<p>With a superior design and excellent craftsmanship, this steel shield has higher Hardness than its non-magical counterparts, making it harder to break and destroy.</p>\n<p>The shield has Hardness 17, HP 136, and BT 68.</p>"
                 },
-                "strike-melee->Mandibles": {
-                    "name": "Mandibles"
-                },
                 "action->Insect Empathy": {
                     "name": "Insect Empathy",
                     "description": "<p>The wereant can communicate with insects.</p>"
@@ -5771,7 +5769,15 @@
                 },
                 "action->Change Shape": {
                     "name": "Change Shape",
-                    "description": "<p>The wereant changes into their humanoid, hybrid, or animal shape. Each shape has a specific, persistent appearance. A true wereant's natural form is their hybrid shape. In humanoid shape, they use their original humanoid size, lose their jaws and claw Strikes, and gain a melee fist Strike that deals bludgeoning damage equal to the slashing damage dealt by their mandibles. In animal shape, they take the form of a Medium giant ant, gain a climb Speed of 20 feet, gain Grab on their mandibles Strike, and lose their weapon Strikes.</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.ChangeShape]</p>"
+                    "description": "<p>The wereant changes into their humanoid, hybrid, or animal shape. Each shape has a specific, persistent appearance. A true wereant's natural form is their hybrid shape. In humanoid shape, they use their original humanoid size, lose their jaws and claw Strikes, and gain a melee fist Strike that deals bludgeoning damage equal to the slashing damage dealt by their mandibles. In animal shape, they take the form of a Medium giant ant, gain a climb Speed of 20 feet, gain Grab on their mandibles Strike, and lose their weapon Strikes.</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.ChangeShape]</p>",
+                    "rules": {
+                        "3": {
+                            "text": "@Localize[PF2E.NPC.Abilities.Glossary.Grab]"
+                        },
+                        "4": {
+                            "text": "@Localize[PF2E.NPC.Abilities.Glossary.Knockdown]"
+                        }
+                    }
                 },
                 "action->Curse of the Wereant": {
                     "name": "Curse of the Wereant",

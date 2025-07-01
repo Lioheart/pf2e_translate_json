@@ -988,7 +988,7 @@
                 },
                 "action->Labyrinthine Vision": {
                     "name": "Labyrinthine Vision",
-                    "description": "<p>The gritblight forces disorienting visions of Ayrzul's Blistering Labyrinth into the minds of nearby creatures. All creatures in a @Template[cone|distance:60] take @Damage[7d12[mental]] damage with a @Check[will|dc:33] save. Creatures @UUID[Compendium.pf2e.conditionitems.Item.XgEqL1kFApUbl5Z2]{Blinded} by a gritblight's Labyrinthine Vision see only endless earthen tunnels in every direction.</p>\n<p>The gritblight can't use this ability again for [[/gmr 1d4 #rounds]]{1d4 rounds}.</p><hr /><p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature takes half damage.</p>\n<p><strong>Failure</strong> The creature takes full damage and is blinded for 1 minute.</p>\n<p><strong>Critical Failure</strong> The creature takes double damage and is blinded permanently.</p>"
+                    "description": "<p>The gritblight forces disorienting visions of Ayrzul's Blistering Labyrinth into the minds of nearby creatures. All creatures in a @Template[cone|distance:60] take @Damage[7d12[mental]|options:area-damage] damage with a @Check[will|dc:33|options:area-effect,damaging-effect] save. Creatures @UUID[Compendium.pf2e.conditionitems.Item.XgEqL1kFApUbl5Z2]{Blinded} by a gritblight's Labyrinthine Vision see only endless earthen tunnels in every direction.</p>\n<p>The gritblight can't use this ability again for [[/gmr 1d4 #Recharge Labyrinthine Vision]]{1d4 rounds}.</p><hr /><p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature takes half damage.</p>\n<p><strong>Failure</strong> The creature takes full damage and is blinded for 1 minute.</p>\n<p><strong>Critical Failure</strong> The creature takes double damage and is blinded permanently.</p>"
                 },
                 "action->Trample": {
                     "name": "Trample",
@@ -2107,19 +2107,18 @@
             "blurb": "Female werebear trader",
             "languagesDetails": "bear empathy",
             "items": {
-                "strike-melee->Claw": {
-                    "name": "Claw"
-                },
-                "strike-melee->Jaws": {
-                    "name": "Jaws"
-                },
                 "action->Bear Empathy": {
                     "name": "Bear Empathy",
                     "description": "<p>The werebear can communicate with ursine creatures.</p>\n<hr />\n<p>The werecreature can ask questions of, receive answers from, and use the Diplomacy skill with animals of its general kind.</p>"
                 },
                 "action->Change Shape": {
                     "name": "Change Shape",
-                    "description": "<ul>\n<li><strong>Human</strong>\n<ul>\n<li><strong>Size</strong> Medium</li>\n<li><strong>Melee</strong> fist +16 <strong>Damage</strong> 1d4+10</li>\n</ul>\n</li>\n<li><strong>Grizzly Bear</strong>\n<ul>\n<li><strong>Speed</strong> 35 feet</li>\n</ul>\n</li>\n</ul>\n<hr />\n<p>The werecreature changes into its humanoid, hybrid, or animal shape. Each shape has a specific, persistent appearance. A true werecreature's natural form is its hybrid shape.</p>\n<p>In humanoid shape, the werecreature uses its original humanoid size, loses its jaws and claws Strikes, and gains a melee fist Strike that deals bludgeoning damage equal to the slashing damage dealt by its claw.</p>\n<p>In animal shape, its Speed and size change to that of the animal, it gains any special Strike effects of the animal that it didn't already have (such as Grab), and it loses its weapon Strikes.</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.ChangeShape]</p>"
+                    "description": "<ul>\n<li><strong>Human</strong>\n<ul>\n<li><strong>Size</strong> Medium</li>\n<li><strong>Melee</strong> fist +16 <strong>Damage</strong> 1d4+10</li>\n</ul>\n</li>\n<li><strong>Grizzly Bear</strong>\n<ul>\n<li><strong>Speed</strong> 35 feet</li>\n</ul>\n</li>\n</ul>\n<hr />\n<p>The werecreature changes into its humanoid, hybrid, or animal shape. Each shape has a specific, persistent appearance. A true werecreature's natural form is its hybrid shape.</p>\n<p>In humanoid shape, the werecreature uses its original humanoid size, loses its jaws and claws Strikes, and gains a melee fist Strike that deals bludgeoning damage equal to the slashing damage dealt by its claw.</p>\n<p>In animal shape, its Speed and size change to that of the animal, it gains any special Strike effects of the animal that it didn't already have (such as Grab), and it loses its weapon Strikes.</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.ChangeShape]</p>",
+                    "rules": {
+                        "5": {
+                            "text": "@Localize[PF2E.NPC.Abilities.Glossary.Grab]"
+                        }
+                    }
                 },
                 "action->Grab": {
                     "name": "Grab"

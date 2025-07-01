@@ -179,12 +179,6 @@
                     "name": "Ring of Energy Resistance (Cold)",
                     "description": "<p>This ring grants you resistance 5 against one type of energy damage: acid, cold, electricity, fire, or sonic. Each ring is crafted to protect against a particular type of energy damage, and its design usually embodies the type of energy it protects the wearer from in some way. For instance, a <em>ring of fire resistance</em> might be capped with a ruby, whereas a <em>ring of cold resistance</em> features a sapphire instead.</p>"
                 },
-                "strike-melee->Jaws": {
-                    "name": "Jaws"
-                },
-                "strike-melee->Claw": {
-                    "name": "Claw"
-                },
                 "action->Tiger Empathy": {
                     "name": "Tiger Empathy",
                     "description": "<p>Alasen can communicate with felines.</p>"
@@ -2283,12 +2277,6 @@
             "blurb": "Male human wererat ranger",
             "languagesDetails": "rat empathy",
             "items": {
-                "strike-melee->Jaws": {
-                    "name": "Jaws"
-                },
-                "strike-melee->Claw": {
-                    "name": "Claw"
-                },
                 "action->Rat Empathy": {
                     "name": "Rat Empathy",
                     "description": "<p>Gaetane can communicate with rodents.</p>"
@@ -3819,18 +3807,6 @@
             "blurb": "Male human werewolf",
             "languagesDetails": "wolf empathy",
             "items": {
-                "strike-melee->Jaws": {
-                    "name": "Jaws"
-                },
-                "strike-melee->Claw": {
-                    "name": "Claw"
-                },
-                "strike-melee->Fist": {
-                    "name": "Fist"
-                },
-                "strike-melee->Wolf Jaws": {
-                    "name": "Wolf Jaws"
-                },
                 "action->Wolf Empathy": {
                     "name": "Wolf Empathy",
                     "description": "<p>Kundal can communicate with lupines.</p>"
@@ -3844,7 +3820,12 @@
                 },
                 "action->Change Shape": {
                     "name": "Change Shape",
-                    "description": "<p>Human with fist +16 for 1d4+7 bludgeoning, or wolf with Speed 40 feet and jaws with Knockdown.</p>\n<p>@Localize[PF2E.NPC.Abilities.Glossary.ChangeShape]</p>"
+                    "description": "<p>Human with fist +16 for 1d4+7 bludgeoning, or wolf with Speed 40 feet and jaws with Knockdown.</p>\n<p>@Localize[PF2E.NPC.Abilities.Glossary.ChangeShape]</p>",
+                    "rules": {
+                        "2": {
+                            "text": "@Localize[PF2E.NPC.Abilities.Glossary.Knockdown]"
+                        }
+                    }
                 },
                 "action->Curse of the Werewolf": {
                     "name": "Curse of the Werewolf",
@@ -3856,7 +3837,7 @@
                 },
                 "action->Rip and Drag": {
                     "name": "Rip and Drag",
-                    "description": "<p><strong>Requirement</strong> Kundal damaged a target with his jaws Strike with a previous action this round.</p>\n<hr />\n<p><strong>Effect</strong> Kundal chews the bitten creature as he attempts to overwhelm them by attempting an @Check[athletics|defense:fortitude] check against the bitten creature's Fortitude DC.</p>\n<hr />\n<p><strong>Critical Success</strong> Kundal inflicts @Damage[5d6[piercing]] damage on the target, exposes them to the curse of the werewolf, and can Stride up to half his speed. If his target is Medium or smaller, he drags the target with him into a new adjacent square.</p>\n<p><strong>Success</strong> Kundal inflicts @Damage[5d6[piercing]] damage on the target and exposes them to the curse of the werewolf. He can reposition the target up to five feet into an adjacent square.</p>\n<p><strong>Failure</strong> As success, except only @Damage[2d6[piercing]] damage.</p>\n<p><strong>Critical Failure</strong> Kundal fails to inflict any damage.</p>"
+                    "description": "<p><strong>Requirement</strong> Kundal damaged a target with his jaws Strike with a previous action this round.</p><hr /><p><strong>Effect</strong> Kundal chews the bitten creature as he attempts to overwhelm them by attempting an @Check[athletics|defense:fortitude] check against the bitten creature's Fortitude DC.</p><hr /><p><strong>Critical Success</strong> Kundal inflicts @Damage[5d6[piercing]] damage on the target, exposes them to the curse of the werewolf, and can Stride up to half his speed. If his target is Medium or smaller, he drags the target with him into a new adjacent square.</p>\n<p><strong>Success</strong> Kundal inflicts @Damage[5d6[piercing]] damage on the target and exposes them to the curse of the werewolf. He can reposition the target up to five feet into an adjacent square.</p>\n<p><strong>Failure</strong> As success, except only @Damage[2d6[piercing]] damage.</p>\n<p><strong>Critical Failure</strong> Kundal fails to inflict any damage.</p>"
                 },
                 "action->Knockdown": {
                     "name": "Knockdown"
@@ -8009,7 +7990,7 @@
                 },
                 "action->Mind-Numbing Breath": {
                     "name": "Mind-Numbing Breath",
-                    "description": "<p>The whimwyrm exhales a @Template[cone|distance:40] of sparkling magenta mist. Creatures within the area must attempt a @Check[will|dc:38] save as their minds are overwhelmed by a sudden riot of false (and typically unpleasant) memories, taking @Damage[10d12[mental]] damage depending on their save. The whimwyrm can't use mind-numbing breath for [[/gmr 1d4 #rounds]]{1d4 rounds}.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature becomes outlined in sparkling dust, negating any @UUID[Compendium.pf2e.spells-srd.Item.XXqE1eY3w3z6xJCB]{Invisibility} it has in effect for 1 round and takes no damage.</p>\n<p><strong>Success</strong> The creature takes half damage, and its invisibility is negated for 2 rounds.</p>\n<p><strong>Failure</strong> The creature takes full damage, is @UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]{Dazzled} for 1 minute, and its invisibility is negated for 1 minute.</p>\n<p><strong>Critical Failure</strong> The creature takes double damage, is @UUID[Compendium.pf2e.conditionitems.Item.XgEqL1kFApUbl5Z2]{Blinded} for 1 round, dazzled for 1 minute, and its invisibility is negated for 1 minute.</p>"
+                    "description": "<p>The whimwyrm exhales a @Template[cone|distance:40] of sparkling magenta mist. Creatures within the area must attempt a @Check[will|dc:38|options:area-effect,damaging-effect] save as their minds are overwhelmed by a sudden riot of false (and typically unpleasant) memories, taking @Damage[10d12[mental]|options:area-damage] damage depending on their save. The whimwyrm can't use mind-numbing breath for [[/gmr 1d4 #Recharge Mind-Numbing Breath]]{1d4 rounds}.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature becomes outlined in sparkling dust, negating any @UUID[Compendium.pf2e.spells-srd.Item.XXqE1eY3w3z6xJCB]{Invisibility} it has in effect for 1 round and takes no damage.</p>\n<p><strong>Success</strong> The creature takes half damage, and its invisibility is negated for 2 rounds.</p>\n<p><strong>Failure</strong> The creature takes full damage, is @UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]{Dazzled} for 1 minute, and its invisibility is negated for 1 minute.</p>\n<p><strong>Critical Failure</strong> The creature takes double damage, is @UUID[Compendium.pf2e.conditionitems.Item.XgEqL1kFApUbl5Z2]{Blinded} for 1 round, dazzled for 1 minute, and its invisibility is negated for 1 minute.</p>"
                 }
             }
         },

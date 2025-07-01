@@ -39,7 +39,7 @@
                 },
                 "action->Liberate the Earth": {
                     "name": "Liberate the Earth",
-                    "description": "<p>The aeolaeka conjures churning stones, creating a @Template[line|distance:60]{60-foot-long line} of rolling boulders that deals @Damage[10d6[bludgeoning]] damage. All creatures in the area must attempt a @Check[reflex|traits:damaging-effect|dc:32] save, after which the area becomes difficult terrain for 24 hours before the leftover stone crumbles to dust. The aeolaeka can't Liberate the Earth for [[/gmr 1d4 #Recharge Liberate the Earth]]{1d4 rounds}.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature takes no damage.</p>\n<p><strong>Success</strong> The creature takes half damage.</p>\n<p><strong>Failure</strong> The creature takes full damage and is knocked @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone}.</p>\n<p><strong>Critical Failure</strong> The creature takes double damage, is knocked prone, and is @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Immobilized} by the rubble (@UUID[Compendium.pf2e.actionspf2e.Item.SkZAQRkLLkmBQNB9]{Escape} DC 32).</p>"
+                    "description": "<p>The aeolaeka conjures churning stones, creating a @Template[line|distance:60] of rolling boulders that deals @Damage[10d6[bludgeoning]|options:area-damage] damage. All creatures in the area must attempt a @Check[reflex|dc:32|options:area-effect,damaging-effect] save, after which the area becomes difficult terrain for 24 hours before the leftover stone crumbles to dust. The aeolaeka can't Liberate the Earth for [[/gmr 1d4 #Recharge Liberate the Earth]]{1d4 rounds}.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature takes no damage.</p>\n<p><strong>Success</strong> The creature takes half damage.</p>\n<p><strong>Failure</strong> The creature takes full damage and is knocked @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone}.</p>\n<p><strong>Critical Failure</strong> The creature takes double damage, is knocked prone, and is @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Immobilized} by the rubble (@UUID[Compendium.pf2e.actionspf2e.Item.SkZAQRkLLkmBQNB9]{Escape} DC 32).</p>"
                 },
                 "action->Sacred Hammer": {
                     "name": "Sacred Hammer",
@@ -3155,10 +3155,6 @@
             "name": "Mithral Golem",
             "publicNotes": "<p>Mithral golems are gorgeously crafted, silvery humanoids made from colossal amounts of the purest dawnsilver. While massive in construction, they possess amazing speed and grace through literal fluidity. Unpredictable and flexible, they can melt into liquid form and reform into a solid shape in mere seconds, allowing them to shape their limbs into sharp spikes or heavy fists as needed.</p>\n<hr />\n<p>Powerful constructs that blend magic and raw material, golems make ideal guardians and bodyguards, with forms and functions as varied as the needs of those who employ them. As their crafters experiment with more exotic components and create new formulas, golems with surprising abilities emerge.</p>",
             "items": {
-                "condition->Quickened": {
-                    "name": "Quickened",
-                    "description": "<p>You gain 1 additional action at the start of your turn each round. Many effects that make you quickened specify the types of actions you can use with this additional action. If you become quickened from multiple sources, you can use the extra action you've been granted for any single action allowed by any of the effects that made you quickened. Because quickened has its effect at the start of your turn, you don't immediately gain actions if you become quickened during your turn.</p>"
-                },
                 "strike-melee->Fist": {
                     "name": "Fist"
                 },
@@ -5125,7 +5121,7 @@
                 },
                 "action->Necromantic Revitalization": {
                     "name": "Necromantic Revitalization",
-                    "description": "<p><strong>Frequency</strong> once per day</p>\n<hr />\n<p><strong>Effect</strong> The teaching assistant disperses void energy in a @Template[emanation|distance:30]. Living creatures in the area take @Damage[3d8[void]] damage (@Check[fortitude|dc:22|basic]); willing undead creatures in the area regain an equal amount of Hit Points.</p>"
+                    "description": "<p><strong>Frequency</strong> once per day</p>\n<hr />\n<p><strong>Effect</strong> The teaching assistant disperses void energy in a @Template[emanation|distance:30]. Living creatures in the area take @Damage[3d8[void]|options:area-damage] damage (@Check[fortitude|dc:22|basic|options:area-effect]); willing undead creatures in the area regain an equal amount of Hit Points.</p>"
                 },
                 "lore->Twilight Castrum Lore": {
                     "name": "Twilight Castrum Lore"
