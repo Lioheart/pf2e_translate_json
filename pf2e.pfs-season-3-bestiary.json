@@ -484,7 +484,7 @@
                 },
                 "action->Shadow Crystal": {
                     "name": "Shadow Crystal",
-                    "description": "<p>While holding the shadow crystal, Aydrian Thrune receives the following benefits. She gains @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.qCCLZhnp2HhP3Ex6]{Darkvision} and can cast <em>shadow step</em> once per day. Additionally, if she dies, is dying, or someone else holds the shadow crystal, it shatters, dealing @Damage[3d6[void]] damage in a @Template[burst|distance:5] @Check[reflex|dc:17|basic] save.</p>\n<hr />\n<p><strong>Shadow Step</strong></p>\n<p><strong>Activate</strong> <span class=\"action-glyph\">1</span> (conjuration, occult, shadow, teleportation)</p>\n<p><strong>Frequency</strong> once per day</p>\n<p><strong>Requirements</strong> Aydrian Thrune is in dim light or darkness</p>\n<hr />\n<p><strong>Effect</strong> Aydrian teleports up to 30 feet. The destination must be in dim light or darkness and must be within her line of sight and line of effect.</p>"
+                    "description": "<p>While holding the shadow crystal, Aydrian Thrune receives the following benefits. She gains @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.qCCLZhnp2HhP3Ex6]{Darkvision} and can cast <em>shadow step</em> once per day. Additionally, if she dies, is dying, or someone else holds the shadow crystal, it shatters, dealing @Damage[3d6[void]|options:area-damage] damage in a @Template[burst|distance:5] @Check[reflex|dc:17|basic|options:area-effect] save.</p>\n<hr />\n<p><strong>Shadow Step</strong></p>\n<p><strong>Activate</strong> <span class=\"action-glyph\">1</span> (conjuration, occult, shadow, teleportation)</p>\n<p><strong>Frequency</strong> once per day</p>\n<p><strong>Requirements</strong> Aydrian Thrune is in dim light or darkness</p>\n<hr />\n<p><strong>Effect</strong> Aydrian teleports up to 30 feet. The destination must be in dim light or darkness and must be within her line of sight and line of effect.</p>"
                 }
             }
         },
@@ -510,7 +510,7 @@
                 },
                 "action->Shadow Crystal": {
                     "name": "Shadow Crystal",
-                    "description": "<p>While holding the shadow crystal, Aydrian Thrune receives the following benefits. She gains @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.qCCLZhnp2HhP3Ex6]{Darkvision} and can cast <em>shadow step</em> once per day. Additionally, if she dies, is dying, or someone else holds the shadow crystal, it shatters, dealing @Damage[4d6[void]] damage in a @Template[burst|distance:5] @Check[reflex|dc:19|basic] save</p>\n<hr />\n<p><strong>Shadow Step</strong></p>\n<p><strong>Activate</strong> <span class=\"action-glyph\">1</span> (conjuration, occult, shadow, teleportation)</p>\n<p><strong>Frequency</strong> once per day</p>\n<p><strong>Requirements</strong> Aydrian Thrune is in dim light or darkness</p>\n<hr />\n<p><strong>Effect</strong> Aydrian teleports up to 30 feet. The destination must be in dim light or darkness and must be within her line of sight and line of effect.</p>"
+                    "description": "<p>While holding the shadow crystal, Aydrian Thrune receives the following benefits. She gains @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.qCCLZhnp2HhP3Ex6]{Darkvision} and can cast <em>shadow step</em> once per day. Additionally, if she dies, is dying, or someone else holds the shadow crystal, it shatters, dealing @Damage[4d6[void]|options:area-damage] damage in a @Template[burst|distance:5] @Check[reflex|dc:19|basic|options:area-effect] save</p>\n<hr />\n<p><strong>Shadow Step</strong></p>\n<p><strong>Activate</strong> <span class=\"action-glyph\">1</span> (conjuration, occult, shadow, teleportation)</p>\n<p><strong>Frequency</strong> once per day</p>\n<p><strong>Requirements</strong> Aydrian Thrune is in dim light or darkness</p>\n<hr />\n<p><strong>Effect</strong> Aydrian teleports up to 30 feet. The destination must be in dim light or darkness and must be within her line of sight and line of effect.</p>"
                 }
             }
         },
@@ -766,11 +766,11 @@
                 },
                 "action->Drain Life": {
                     "name": "Drain Life",
-                    "description": "<p>When the cairn wight damages a living creature with a melee Strike, using an unarmed attack or its bound weapon, the cairn wight gains [[/r 5 #Temporary Hit Points]]{5 temporary Hit Points} and the creature must succeed at a @Check[fortitude|dc:18] save or become @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 1}. Further damage dealt by the cairn wraith increases the drained condition value by 1 on a failed save, to a maximum of drained 4.</p>"
+                    "description": "<p>When the cairn wight damages a living creature with a melee Strike, using an unarmed attack or its bound weapon, the cairn wight gains 5 temporary Hit Points and the creature must succeed at a @Check[fortitude|dc:18|options:inflicts:drained] save or become @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 1}. Further damage dealt by the cairn wraith increases the drained condition value by 1 on a failed save, to a maximum of drained 4.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.LRIYUFQ7FE9H4RWD]{Effect: Drain Life}</p>"
                 },
                 "action->Funereal Dirge": {
                     "name": "Funereal Dirge",
-                    "description": "<p>The cairn wight chants a low, haunting melody. Living creatures within @Template[emanation|distance:50]{50 feet} must attempt a @Check[will|dc:21] save.</p>\n<p>The cairn wight can't chant a new Funereal Dirge for [[/gmr 1d4 #Recharge Funereal Dirge]]{1d4 rounds}.</p><hr /><p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 1}.</p>\n<p><strong>Failure</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 2}.</p>\n<p><strong>Critical Failure</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 2} and takes a -2 status penalty to saving throws against drain life.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.8ecPVgMeWDxc4jI4]{Effect: Funereal Dirge}</p>"
+                    "description": "<p>The cairn wight chants a low, haunting melody. Living creatures within @Template[emanation|distance:50]{50 feet} must attempt a @Check[will|dc:21|options:area-effect,inflicts:frightened] save.</p>\n<p>The cairn wight can't chant a new Funereal Dirge for [[/gmr 1d4 #Recharge Funereal Dirge]]{1d4 rounds}.</p><hr /><p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 1}.</p>\n<p><strong>Failure</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 2}.</p>\n<p><strong>Critical Failure</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 2} and takes a \u20132 status penalty to saving throws against drain life.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.8ecPVgMeWDxc4jI4]{Effect: Funereal Dirge}</p>"
                 }
             }
         },
@@ -2136,7 +2136,7 @@
                 },
                 "action->Shambling Onslaught": {
                     "name": "Shambling Onslaught",
-                    "description": "<p><span class=\"action-glyph\">1</span> to <span class=\"action-glyph\">2</span></p>\n<p><strong>Frequency</strong> once per round</p>\n<hr />\n<p><strong>Effect</strong> The shamblers lash out at any enemies in their squares or within 5 feet (@Check[reflex|dc:21|basic] save). The damage depends on the number of actions.</p>\n<p><span class=\"action-glyph\">1</span> @Damage[(2d6+8)[bludgeoning]] damage</p>\n<p><span class=\"action-glyph\">2</span> @Damage[(2d6+13)[bludgeoning]] damage</p>"
+                    "description": "<p><span class=\"action-glyph\">1</span> to <span class=\"action-glyph\">2</span></p>\n<p><strong>Frequency</strong> once per round</p>\n<hr />\n<p><strong>Effect</strong> The shamblers lash out at any enemies in their squares or within 5 feet (@Check[reflex|dc:21|basic|options:area-effect] save). The damage depends on the number of actions.</p>\n<p><span class=\"action-glyph\">1</span> @Damage[(2d6+8)[bludgeoning]|options:area-damage] damage</p>\n<p><span class=\"action-glyph\">2</span> @Damage[(2d6+13)[bludgeoning]|options:area-damage] damage</p>"
                 },
                 "action->Troop Movement": {
                     "name": "Troop Movement",
@@ -3056,7 +3056,7 @@
                 },
                 "action->Sandstorm Wrath": {
                     "name": "Sandstorm Wrath",
-                    "description": "<p>The mummy pharaoh exhales a @Template[cone|distance:60] of superheated sand that deals @Damage[5d6[fire],5d6[slashing]]{5d6 fire damage and 5d6 slashing damage} (@Check[reflex|dc:28|basic] save).</p>\n<p>The mummy pharaoh can't use Sandstorm Wrath again for [[/gmr 1d4 #Recharge Sandstorm Wrath]]{1d4 rounds}.</p>"
+                    "description": "<p>The mummy pharaoh exhales a @Template[cone|distance:60] of superheated sand that deals @Damage[5d6[fire],5d6[slashing]|options:area-damage]{5d6 fire damage and 5d6 slashing damage} (@Check[reflex|dc:28|basic|options:area-effect] save).</p>\n<p>The mummy pharaoh can't use Sandstorm Wrath again for [[/gmr 1d4 #Recharge Sandstorm Wrath]]{1d4 rounds}.</p>"
                 }
             }
         },
@@ -5989,7 +5989,7 @@
                 },
                 "action->Shadow Breath": {
                     "name": "Shadow Breath",
-                    "description": "<p>An umbral drake spits a ball of black liquid that explodes into a cloud of frigid black shadow. This attack has a range of 40 feet and explodes in a @Template[burst|distance:5]{5-foot-radius burst}. Creatures within the burst take @Damage[4d6[cold]] damage (@Check[reflex|dc:20|basic] save). The explosion of shadow also snuffs out mundane light sources the size of a torch, lantern, or smaller, and attempts to counteract magical light with a [[/r 1d20+12 #Counteract Light]]{+12} counteract modifier.</p>\n<p>The umbral drake can't use Shadow Breath again for [[/gmr 1d6]] rounds.</p>"
+                    "description": "<p>An umbral drake spits a ball of black liquid that explodes into a cloud of frigid black shadow. This attack has a range of 40 feet and explodes in a @Template[burst|distance:5]{5-foot-radius burst}. Creatures within the burst take @Damage[4d6[cold]|options:area-damage] damage (@Check[reflex|dc:20|basic|options:area-effect] save). The explosion of shadow also snuffs out mundane light sources the size of a torch, lantern, or smaller, and attempts to counteract magical light with a [[/r 1d20+12 #Counteract Light]]{+12} counteract modifier.</p>\n<p>The umbral drake can't use Shadow Breath again for [[/gmr 1d6 #Recharge Shadow Breath]] rounds.</p>"
                 },
                 "action->Speed Surge": {
                     "name": "Speed Surge",

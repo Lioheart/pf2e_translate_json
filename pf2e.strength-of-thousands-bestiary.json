@@ -683,7 +683,7 @@
                 },
                 "action->Pull Down the Sun": {
                     "name": "Pull Down the Sun",
-                    "description": "<p>The avatar of Walkena plucks a small drop of sunlight from the sky and rains down sunfire on the battlefield. The avatar selects a @Template[burst|distance:20] within 90 feet. Sunfire rains down in the area, dealing @Damage[12d8[fire]] damage (@Check[reflex|dc:38|basic] save) to all creatures that enter or begin their turn in the area. The power of the sun restores the avatar; it instead recovers an equal number of Hit Points while in the area. The sunfire continues to rain until the end of the avatar's next turn. The avatar can't use Pull Down the Sun again for [[/gmr 1d4 #Recharge Pull Down the Sun]]{1d4 rounds}.</p>"
+                    "description": "<p>The avatar of Walkena plucks a small drop of sunlight from the sky and rains down sunfire on the battlefield. The avatar selects a @Template[burst|distance:20] within 90 feet. Sunfire rains down in the area, dealing @Damage[12d8[fire]|options:area-damage] damage (@Check[reflex|dc:38|basic|options:area-effect] save) to all creatures that enter or begin their turn in the area. The power of the sun restores the avatar; it instead recovers an equal number of Hit Points while in the area. The sunfire continues to rain until the end of the avatar's next turn. The avatar can't use Pull Down the Sun again for [[/gmr 1d4 #Recharge Pull Down the Sun]]{1d4 rounds}.</p>"
                 },
                 "action->Radiate Glory": {
                     "name": "Radiate Glory",
@@ -1366,11 +1366,11 @@
                 },
                 "action->Drain Life": {
                     "name": "Drain Life",
-                    "description": "<p>When the nemhaith damages a living creature with its spirit tendril Strike, the creature must succeed at a @Check[fortitude|dc:36] save or become @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 2}.</p>\n<p>Further damage dealt by the nemhaith increases the condition value by 1 on a failed save, to a maximum of drained 4.</p>"
+                    "description": "<p>When the nemhaith damages a living creature with its spirit tendril Strike, the creature must succeed at a @Check[fortitude|dc:36|options:inflicts:drained] save or become @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 2}.</p>\n<p>Further damage dealt by the nemhaith increases the condition value by 1 on a failed save, to a maximum of drained 4.</p>"
                 },
                 "action->Rage of Spirits": {
                     "name": "Rage of Spirits",
-                    "description": "<p>The nemhaith's bound spirits rage and smash everything in a @Template[emanation|distance:30]. Creatures in this area take @Damage[4d6[sonic]] damage and @Damage[4d6[void]] damage (@Check[fortitude|dc:36|basic] save).</p>"
+                    "description": "<p>The nemhaith's bound spirits rage and smash everything in a @Template[emanation|distance:30]. Creatures in this area take @Damage[4d6[sonic],4d6[void]|options:area-damage]{4d6 sonic damage and 4d6 void damage} (@Check[fortitude|dc:36|basic|options:area-effect] save).</p>"
                 },
                 "action->Throw Spirits": {
                     "name": "Throw Spirits",

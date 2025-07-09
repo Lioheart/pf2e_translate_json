@@ -231,7 +231,7 @@
                 },
                 "action->Rot and Ruin": {
                     "name": "Rot and Ruin",
-                    "description": "<p>Amriya's mouth opens, spewing forth a vapor that triggers rot and decay. All creatures within a @Template[type:emanation|distance:20] must attempt a basic @Check[fortitude|dc:25] saving throw or take @Damage[3d12[void]] damage. On a critical failure, creatures are @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 1} for 1 minute.</p>"
+                    "description": "<p>Amriya's mouth opens, spewing forth a vapor that triggers rot and decay. All creatures within a @Template[type:emanation|distance:20] must attempt a basic @Check[fortitude|dc:25|options:area-effect,damaging-effect,inflicts:sickened] saving throw or take @Damage[3d12[void]|options:area-damage] damage. On a critical failure, creatures are @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 1} for 1 minute.</p>"
                 },
                 "lore->Demon Lore": {
                     "name": "Demon Lore"
@@ -1808,7 +1808,7 @@
                 },
                 "action->Tag Team": {
                     "name": "Tag Team",
-                    "description": "<p><strong>Requirements</strong> another congealed magic is within 30 feet</p><hr /><p><strong>Effect</strong> The ooze arcs magical essence to the other congealed magic. Creatures in that line take @Damage[3d6[void]] damage with a @Check[reflex|dc:16|basic] save. A creature that fails its save is also knocked @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone}.</p>"
+                    "description": "<p><strong>Requirements</strong> another congealed magic is within 30 feet</p><hr /><p><strong>Effect</strong> The ooze arcs magical essence to the other congealed magic. Creatures in that line take @Damage[3d6[void]|options:area-damage] damage with a @Check[reflex|dc:16|basic|options:area-effect,inflicts:prone] save. A creature that fails its save is also knocked @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone}.</p>"
                 }
             },
             "skills": {
@@ -1863,7 +1863,7 @@
                 },
                 "action->Self Destruct": {
                     "name": "Self Destruct",
-                    "description": "<p>A cybernetic zombie must use this reaction unless its cybernetics are disabled</p>\n<p><strong>Trigger</strong> The cybernetic zombie is reduced to 0 Hit Points</p><hr /><p><strong>Effect</strong> The zombie's damaged cybernetics explode, dealing @Damage[(2d8+2)[electricity]] damage in a @Template[emanation|distance:10]{10-foot radius} (@Check[reflex|dc:15|basic] save). This ability destroys any technological items on the zombie.</p>"
+                    "description": "<p>A cybernetic zombie must use this reaction unless its cybernetics are disabled</p>\n<p><strong>Trigger</strong> The cybernetic zombie is reduced to 0 Hit Points</p><hr /><p><strong>Effect</strong> The zombie's damaged cybernetics explode, dealing @Damage[(2d8+2)[electricity]|options:area-damage] damage in a @Template[emanation|distance:10]{10-foot radius} (@Check[reflex|dc:15|basic|options:area-effect] save). This ability destroys any technological items on the zombie.</p>"
                 }
             }
         },
@@ -2534,7 +2534,7 @@
                 },
                 "action->Shambling Onslaught": {
                     "name": "Shambling Onslaught",
-                    "description": "<p><strong>Frequency</strong> once per round</p><hr /><p><strong>Effect</strong> The leshy zombies lash out at any enemies in their squares or within 5 feet (@Check[reflex|dc:18|basic] save). The damage depends on the number of actions.</p>\n<p><span class=\"action-glyph\">1</span> @Damage[(1d12+5)[bludgeoning]] damage</p>\n<p><span class=\"action-glyph\">2</span> @Damage[(1d12+10)[bludgeoning]] damage</p>"
+                    "description": "<p><strong>Frequency</strong> once per round</p><hr /><p><strong>Effect</strong> The leshy zombies lash out at any enemies in their squares or within 5 feet (@Check[reflex|dc:18|basic|options:area-effect] save). The damage depends on the number of actions.</p>\n<p><span class=\"action-glyph\">1</span> @Damage[(1d12+5)[bludgeoning]|options:area-damage] damage</p>\n<p><span class=\"action-glyph\">2</span> @Damage[(1d12+10)[bludgeoning]|options:area-damage] damage</p>"
                 },
                 "action->Troop Movement": {
                     "name": "Troop Movement",
@@ -2717,7 +2717,7 @@
                 },
                 "action->Tag Team": {
                     "name": "Tag Team",
-                    "description": "<p><strong>Requirements</strong> another congealed magic is within 30 feet</p><hr /><p><strong>Effect</strong> The ooze arcs magical essence to the other congealed magic. Creatures in that line take @Damage[(3d6-2)[void]] damage with a @Check[reflex|dc:16|basic] save. A creature that fails its save is also knocked @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone}.</p>"
+                    "description": "<p><strong>Requirements</strong> another congealed magic is within 30 feet</p><hr /><p><strong>Effect</strong> The ooze arcs magical essence to the other congealed magic. Creatures in that line take @Damage[(3d6-2)[void]|options:area-damage] damage with a @Check[reflex|dc:16|basic|options:area-effect,inflicts:prone] save. A creature that fails its save is also knocked @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone}.</p>"
                 }
             },
             "skills": {
@@ -3250,7 +3250,7 @@
                 },
                 "action->Self Destruct": {
                     "name": "Self Destruct",
-                    "description": "<p>A cybernetic zombie must use this reaction unless its cybernetics are disabled</p>\n<p><strong>Trigger</strong> The cybernetic zombie is reduced to 0 Hit Points</p><hr /><p><strong>Effect</strong> The zombie's damaged cybernetics explode, dealing @Damage[(3d8+2)[electricity]] damage in a @Template[emanation|distance:10]{10-foot radius} (@Check[reflex|dc:19|basic] save). This ability destroys any technological items on the zombie.</p>"
+                    "description": "<p>A cybernetic zombie must use this reaction unless its cybernetics are disabled</p>\n<p><strong>Trigger</strong> The cybernetic zombie is reduced to 0 Hit Points</p><hr /><p><strong>Effect</strong> The zombie's damaged cybernetics explode, dealing @Damage[(3d8+2)[electricity]|options:area-damage] damage in a @Template[emanation|distance:10]{10-foot radius} (@Check[reflex|dc:19|basic|options:area-effect] save). This ability destroys any technological items on the zombie.</p>"
                 },
                 "action->Short Circuit": {
                     "name": "Short Circuit",
@@ -4176,7 +4176,7 @@
                 },
                 "action->Pine Spray": {
                     "name": "Pine Spray",
-                    "description": "<p>Rimesnap sprays a volley of frozen pine needles from their body in a @Template[type:cone|distance:15], dealing @Damage[4d6[piercing],1d6[cold]]{4d6 piercing and 1d6 cold} damage (@Check[reflex|dc:21|basic] save). Rimesnap can't use Pine spray again for [[/gmr 1d4 #Recharge Pine spray]]{1d4 rounds}.</p>"
+                    "description": "<p>Rimesnap sprays a volley of frozen pine needles from their body in a @Template[type:cone|distance:15], dealing @Damage[4d6[piercing],1d6[cold]|options:area-damage]{4d6 piercing and 1d6 cold} damage (@Check[reflex|dc:21|basic|options:area-effect] save). Rimesnap can't use Pine spray again for [[/gmr 1d4 #Recharge Pine spray]]{1d4 rounds}.</p>"
                 }
             }
         },
@@ -5897,7 +5897,7 @@
                 },
                 "action->Pine Spray": {
                     "name": "Pine Spray",
-                    "description": "<p>Rimesnap sprays a volley of frozen pine needles from their body in a @Template[type:cone|distance:15], dealing @Damage[1d6[piercing],1d6[cold]]{1d6 piercing and 1d6 cold} damage (@Check[reflex|dc:18|basic] save). Rimesnap can't use Pine spray again for [[/gmr 1d4 #Recharge Pine spray]]{1d4 rounds}.</p>"
+                    "description": "<p>Rimesnap sprays a volley of frozen pine needles from their body in a @Template[type:cone|distance:15], dealing @Damage[1d6[piercing],1d6[cold]|options:area-damage]{1d6 piercing and 1d6 cold} damage (@Check[reflex|dc:18|basic|options:area-effect] save). Rimesnap can't use Pine spray again for [[/gmr 1d4 #Recharge Pine spray]]{1d4 rounds}.</p>"
                 }
             }
         },
@@ -6872,7 +6872,7 @@
                 },
                 "action->Self Destruct": {
                     "name": "Self Destruct",
-                    "description": "<p>A cybernetic zombie must use this reaction unless its cybernetics are disabled</p>\n<p><strong>Trigger</strong> The cybernetic zombie is reduced to 0 Hit Points</p><hr /><p><strong>Effect</strong> The zombie's damaged cybernetics explode, dealing @Damage[(3d8+2)[electricity]] damage in a @Template[emanation|distance:10]{10-foot radius} (@Check[reflex|dc:19|basic] save). This ability destroys any technological items on the zombie.</p>"
+                    "description": "<p>A cybernetic zombie must use this reaction unless its cybernetics are disabled</p>\n<p><strong>Trigger</strong> The cybernetic zombie is reduced to 0 Hit Points</p><hr /><p><strong>Effect</strong> The zombie's damaged cybernetics explode, dealing @Damage[(3d8+2)[electricity]|options:area-damage] damage in a @Template[emanation|distance:10]{10-foot radius} (@Check[reflex|dc:19|basic|options:area-effect] save). This ability destroys any technological items on the zombie.</p>"
                 }
             }
         },
@@ -7873,7 +7873,7 @@
                 },
                 "action->Poison Breath": {
                     "name": "Poison Breath",
-                    "description": "<p>The dragon breathes a toxic cloud that deals @Damage[(9d6-4)[poison]] damage in a @Template[cone|distance:40] (@Check[fortitude|dc:23|basic] save).</p>\n<p>They can't use Poison Breath again for [[/gmr 1d4 #Recharge Poison Breath]]{1d4 rounds}.</p>"
+                    "description": "<p>The dragon breathes a toxic cloud that deals @Damage[(9d6-4)[poison]|options:area-damage] damage in a @Template[cone|distance:40] (@Check[fortitude|dc:23|basic|options:area-effect] save).</p>\n<p>They can't use Poison Breath again for [[/gmr 1d4 #Recharge Poison Breath]]{1d4 rounds}.</p>"
                 },
                 "lore->Forest Lore": {
                     "name": "Forest Lore"
@@ -8245,7 +8245,7 @@
                 },
                 "action->Shambling Onslaught": {
                     "name": "Shambling Onslaught",
-                    "description": "<p><strong>Frequency</strong> once per round</p><hr /><p><strong>Effect</strong> The leshy zombies lash out at any enemies in their squares or within 5 feet (@Check[reflex|dc:15|basic] save). The damage depends on the number of actions.</p>\n<p><span class=\"action-glyph\">1</span> @Damage[(1d8+4)[bludgeoning]] damage</p>\n<p><span class=\"action-glyph\">2</span> @Damage[(1d8+8)[bludgeoning]] damage</p>"
+                    "description": "<p><strong>Frequency</strong> once per round</p><hr /><p><strong>Effect</strong> The leshy zombies lash out at any enemies in their squares or within 5 feet (@Check[reflex|dc:15|basic|options:area-effect] save). The damage depends on the number of actions.</p>\n<p><span class=\"action-glyph\">1</span> @Damage[(1d8+4)[bludgeoning]|options:area-damage] damage</p>\n<p><span class=\"action-glyph\">2</span> @Damage[(1d8+8)[bludgeoning]|options:area-damage] damage</p>"
                 },
                 "action->Troop Movement": {
                     "name": "Troop Movement",

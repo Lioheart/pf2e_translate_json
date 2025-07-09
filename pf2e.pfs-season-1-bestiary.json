@@ -1105,7 +1105,7 @@
                 },
                 "action->Drain Life": {
                     "name": "Drain Life",
-                    "description": "<p>When the wight damages a living creature with its claw Strike, the wight gains 3 temporary Hit Points and the creature must succeed at a @Check[fortitude|dc:17] save or become @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 1}. Further damage dealt by the wraith increases the amount of drain by 1 on a failed save to a maximum of drained 4.</p>"
+                    "description": "<p>When the wight damages a living creature with its claw Strike, the wight gains 3 temporary Hit Points and the creature must succeed at a @Check[fortitude|dc:17|options:inflicts:drained] save or become @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 1}. Further damage dealt by the wraith increases the amount of drain by 1 on a failed save to a maximum of drained 4.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.LRIYUFQ7FE9H4RWD]{Effect: Drain Life}</p>"
                 },
                 "action->Wight Spawn": {
                     "name": "Wight Spawn",
@@ -6703,7 +6703,7 @@
                 },
                 "action->Self-Destruct": {
                     "name": "Self-Destruct",
-                    "description": "<p><strong>Requirements</strong> Synthetic Khismar has 20 HP or fewer</p>\n<hr />\n<p><strong>Effect</strong> Synthetic Khismar explodes in a ball of burning plasma, destroying himself completely and dealing @Damage[8d6[electricity]] damage to all creatures within @Template[emanation|distance:10] (@Check[reflex|dc:24|basic])</p>\n<hr />\n<p><strong>Special</strong> Synthetic Khismar automatically activates this ability as a free action when brought to 0 Hit Points.</p>"
+                    "description": "<p><strong>Requirements</strong> Synthetic Khismar has 20 HP or fewer</p>\n<hr />\n<p><strong>Effect</strong> Synthetic Khismar explodes in a ball of burning plasma, destroying himself completely and dealing @Damage[8d6[electricity]|options:area-damage] damage to all creatures within @Template[emanation|distance:10] (@Check[reflex|dc:24|basic|options:area-effect])</p>\n<hr />\n<p><strong>Special</strong> Synthetic Khismar automatically activates this ability as a free action when brought to 0 Hit Points.</p>"
                 },
                 "action->Technology Control": {
                     "name": "Technology Control",
@@ -6743,7 +6743,7 @@
                 },
                 "action->Self-Destruct": {
                     "name": "Self-Destruct",
-                    "description": "<p><strong>Requirements</strong> Synthetic Khismar has 20 HP or fewer</p>\n<hr />\n<p><strong>Effect</strong> Synthetic Khismar explodes in a ball of burning plasma, destroying himself completely and dealing @Damage[10d6[electricity]] damage to all creatures within @Template[emanation|distance:10] (@Check[reflex|dc:26|basic])</p>\n<hr />\n<p><strong>Special</strong> Synthetic Khismar automatically activates this ability as a free action when brought to 0 Hit Points.</p>"
+                    "description": "<p><strong>Requirements</strong> Synthetic Khismar has 20 HP or fewer</p>\n<hr />\n<p><strong>Effect</strong> Synthetic Khismar explodes in a ball of burning plasma, destroying himself completely and dealing @Damage[10d6[electricity]|options:area-damage] damage to all creatures within @Template[emanation|distance:10] (@Check[reflex|dc:26|basic|options:area-effect])</p>\n<hr />\n<p><strong>Special</strong> Synthetic Khismar automatically activates this ability as a free action when brought to 0 Hit Points.</p>"
                 },
                 "action->Technology Control": {
                     "name": "Technology Control",

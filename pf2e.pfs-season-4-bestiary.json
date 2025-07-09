@@ -713,7 +713,7 @@
                 },
                 "action->Shattered Mirror": {
                     "name": "Shattered Mirror",
-                    "description": "<p>When an Aslynn's eye dies, their body explodes in a @Template[burst|distance:20] of jagged glass shards that deal @Damage[5d6[slashing]] damage to each creature in the area (@Check[reflex|dc:18|basic] save).</p>"
+                    "description": "<p>When an Aslynn's eye dies, their body explodes in a @Template[burst|distance:20] of jagged glass shards that deal @Damage[5d6[slashing]|options:area-damage] damage to each creature in the area (@Check[reflex|dc:18|basic|options:area-effect] save).</p>"
                 },
                 "action->Dream Eating": {
                     "name": "Dream Eating",
@@ -755,7 +755,7 @@
                 },
                 "action->Shattered Mirror": {
                     "name": "Shattered Mirror",
-                    "description": "<p>When an Aslynn's eye dies, their body explodes in a @Template[burst|distance:20] of jagged glass shards that deal @Damage[7d6[slashing]] damage to each creature in the area (@Check[reflex|dc:21|basic] save).</p>"
+                    "description": "<p>When an Aslynn's eye dies, their body explodes in a @Template[burst|distance:20] of jagged glass shards that deal @Damage[7d6[slashing]|options:area-damage] damage to each creature in the area (@Check[reflex|dc:21|basic|options:area-effect] save).</p>"
                 },
                 "action->Dream Eating": {
                     "name": "Dream Eating",
@@ -2071,7 +2071,7 @@
                 },
                 "action->Shrieking Scream": {
                     "name": "Shrieking Scream",
-                    "description": "<p>The clacking skull swarm emits a terrifying, painful scream that deals @Damage[(10d6+4)[sonic]] damage to all creatures in a @Template[cone|distance:30] (@Check[will|dc:31|basic] save). A creature that fails this save is also @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 1} (@UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 2} on a critical failure).</p>\n<p>The swarm can't use Frightening Scream again for [[/gmr 1d4 #Recharge Shrieking Scream]]{1d4 rounds}.</p>"
+                    "description": "<p>The clacking skull swarm emits a terrifying, painful scream that deals @Damage[(10d6+4)[sonic]|options:area-damage] damage to all creatures in a @Template[cone|distance:30] (@Check[will|dc:31|basic|options:area-effect,inflicts:frightened]] save). A creature that fails this save is also @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 1} (@UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 2} on a critical failure).</p>\n<p>The swarm can't use Frightening Scream again for [[/gmr 1d4 #Recharge Shrieking Scream]]{1d4 rounds}.</p>"
                 },
                 "action->Swarming Gnaw": {
                     "name": "Swarming Gnaw",
@@ -2177,7 +2177,7 @@
                 },
                 "action->Drain Life": {
                     "name": "Drain Life",
-                    "description": "<p>When the deadeye wight damages a living creature using an unarmed attack or their bound weapon, they gain 10 temporary Hit Points, and the creature must succeed at a @Check[fortitude|dc:27] save or become @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 1}. Further damage dealt by the deadeye wight's unarmed and bound weapon attacks increases the value of the drained condition by 1 on a failed save, to a maximum of drained 4.</p>"
+                    "description": "<p>When the deadeye wight damages a living creature using an unarmed attack or their bound weapon, they gain 10 temporary Hit Points, and the creature must succeed at a @Check[fortitude|dc:27|options:inflicts:drained] save or become @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 1}. Further damage dealt by the deadeye wight's unarmed and bound weapon attacks increases the value of the drained condition by 1 on a failed save, to a maximum of drained 4.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.LRIYUFQ7FE9H4RWD]{Effect: Drain Life}</p>"
                 },
                 "action->Spawn Deadeye Wight": {
                     "name": "Spawn Deadeye Wight",
@@ -2207,7 +2207,7 @@
                 },
                 "action->Drain Life": {
                     "name": "Drain Life",
-                    "description": "<p>When the hunter wight damages a living creature using an unarmed attack or their bound weapon, they gain 8 temporary Hit Points, and the creature must succeed at a @Check[fortitude|dc:24] save or become @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 1}. Further damage dealt by the hunter wight's unarmed and bound weapon attacks increases the value of the drained condition by 1 on a failed save, to a maximum of drained 4.</p>"
+                    "description": "<p>When the hunter wight damages a living creature using an unarmed attack or their bound weapon, they gain 8 temporary Hit Points, and the creature must succeed at a @Check[fortitude|dc:24|options:inflicts:drained] save or become @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 1}. Further damage dealt by the hunter wight's unarmed and bound weapon attacks increases the value of the drained condition by 1 on a failed save, to a maximum of drained 4.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.LRIYUFQ7FE9H4RWD]{Effect: Drain Life}</p>"
                 },
                 "action->Spawn Hunter Wight": {
                     "name": "Spawn Hunter Wight",
@@ -2236,7 +2236,7 @@
                 },
                 "action->Drain Life": {
                     "name": "Drain Life",
-                    "description": "<p>When the hunter wight damages a living creature using an unarmed attack or their bound weapon, they gain 10 temporary Hit Points, and the creature must succeed at a @Check[fortitude|dc:27] save or become @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 1}. Further damage dealt by the hunter wight's unarmed and bound weapon attacks increases the value of the drained condition by 1 on a failed save, to a maximum of drained 4.</p>"
+                    "description": "<p>When the hunter wight damages a living creature using an unarmed attack or their bound weapon, they gain 10 temporary Hit Points, and the creature must succeed at a @Check[fortitude|dc:27|options:inflicts:drained] save or become @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 1}. Further damage dealt by the hunter wight's unarmed and bound weapon attacks increases the value of the drained condition by 1 on a failed save, to a maximum of drained 4.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.LRIYUFQ7FE9H4RWD]{Effect: Drain Life}</p>"
                 },
                 "action->Feign Death": {
                     "name": "Feign Death",
@@ -2279,7 +2279,7 @@
                 },
                 "action->Drain Life": {
                     "name": "Drain Life",
-                    "description": "<p>When the stalker wight damages a living creature using an unarmed attack or their bound weapon, they gain 8 temporary Hit Points, and the creature must succeed at a @Check[fortitude|dc:24] save or become @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 1}. Further damage dealt by the stalker wight's unarmed and bound weapon attacks increases the value of the drained condition by 1 on a failed save, to a maximum of drained 4.</p>"
+                    "description": "<p>When the stalker wight damages a living creature using an unarmed attack or their bound weapon, they gain 8 temporary Hit Points, and the creature must succeed at a @Check[fortitude|dc:24|options:inflicts:drained] save or become @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 1}. Further damage dealt by the stalker wight's unarmed and bound weapon attacks increases the value of the drained condition by 1 on a failed save, to a maximum of drained 4.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.LRIYUFQ7FE9H4RWD]{Effect: Drain Life}</p>"
                 },
                 "action->Feign Death": {
                     "name": "Feign Death",
@@ -2349,7 +2349,7 @@
                 },
                 "action->Drain Life": {
                     "name": "Drain Life",
-                    "description": "<p>When the wight captain damages a living creature using an unarmed attack or their bound weapon, they gain 11 temporary Hit Points, and the creature must succeed at a @Check[fortitude|dc:28] save or become @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 1}. Further damage dealt by the hunter wight's unarmed and bound weapon attacks increases the value of the drained condition by 1 on a failed save, to a maximum of drained 4.</p>"
+                    "description": "<p>When the wight captain damages a living creature using an unarmed attack or their bound weapon, they gain 11 temporary Hit Points, and the creature must succeed at a @Check[fortitude|dc:28|options:inflicts:drained] save or become @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 1}. Further damage dealt by the hunter wight's unarmed and bound weapon attacks increases the value of the drained condition by 1 on a failed save, to a maximum of drained 4.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.LRIYUFQ7FE9H4RWD]{Effect: Drain Life}</p>"
                 },
                 "action->Spawn Wight Soldier": {
                     "name": "Spawn Wight Soldier",
@@ -2412,7 +2412,7 @@
                 },
                 "action->Drain Life": {
                     "name": "Drain Life",
-                    "description": "<p>When the hunter wight damages a living creature using an unarmed attack or their bound weapon, they gain 13 temporary Hit Points, and the creature must succeed at a @Check[fortitude|dc:31] save or become @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 1}. Further damage dealt by the hunter wight's unarmed and bound weapon attacks increases the value of the drained condition by 1 on a failed save, to a maximum of drained 4.</p>"
+                    "description": "<p>When the hunter wight damages a living creature using an unarmed attack or their bound weapon, they gain 13 temporary Hit Points, and the creature must succeed at a @Check[fortitude|dc:31|options:inflicts:drained] save or become @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 1}. Further damage dealt by the hunter wight's unarmed and bound weapon attacks increases the value of the drained condition by 1 on a failed save, to a maximum of drained 4.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.LRIYUFQ7FE9H4RWD]{Effect: Drain Life}</p>"
                 },
                 "action->Spawn Wight Soldier": {
                     "name": "Spawn Wight Soldier",
@@ -3153,7 +3153,7 @@
                 },
                 "action->Shadow Breath": {
                     "name": "Shadow Breath",
-                    "description": "<p>A shadow drake spits a ball of black liquid that explodes into a cloud of frigid black shadow. This attack has a range of 40 feet and explodes in a 5-foot-radius burst. Creatures within the burst take @Damage[(3d6-4)[cold]] damage (@Check[reflex|dc:16|basic] save). The explosion of shadow also snuffs out mundane light sources the size of a torch, lantern, or smaller, and attempts to counteract magical light with a +10 counteract modifier.</p>\n<p>The shadow drake can't use Shadow Breath again for [[/r 1d6]] rounds.</p>"
+                    "description": "<p>A shadow drake spits a ball of black liquid that explodes into a cloud of frigid black shadow. This attack has a range of 40 feet and explodes in a @Template[burst|distance:5]{5-foot-radius burst}. Creatures within the burst take @Damage[(3d6-4)[cold]|options:area-damage] damage (@Check[reflex|dc:16|basic|options:area-effect] save). The explosion of shadow also snuffs out mundane light sources the size of a torch, lantern, or smaller, and attempts to counteract magical light with a [[/r 1d20+10 #Counteract Light]]{+10} counteract modifier.</p>\n<p>The shadow drake can't use Shadow Breath again for [[/gmr 1d6 #Recharge Shadow Breath]] rounds.</p>"
                 },
                 "action->Speed Surge": {
                     "name": "Speed Surge",
@@ -3260,7 +3260,7 @@
                 },
                 "action->Sonic Screech": {
                     "name": "Sonic Screech",
-                    "description": "<p>The harpy wailer unleashes blast of sound that deals @Damage[10d6[sonic]] damage in a @Template[line|distance:60] (@Check[reflex|dc:27|basic]). She can't use Sonic Screech again for [[/gmr 1d4 #Recharge Sonic Screech]]{1d4 rounds}.</p>"
+                    "description": "<p>The harpy wailer unleashes blast of sound that deals @Damage[10d6[sonic]|options:area-damage] damage in a @Template[line|distance:60] (@Check[reflex|dc:27|basic|options:area-effect]). She can't use Sonic Screech again for [[/gmr 1d4 #Recharge Sonic Screech]]{1d4 rounds}.</p>"
                 },
                 "action->Captivating Song": {
                     "name": "Captivating Song",
@@ -3418,7 +3418,7 @@
                 },
                 "action->Scrap Tempest": {
                     "name": "Scrap Tempest",
-                    "description": "<p>The infested clockwork heap unleashes a cloud of loosely connected debris that whirls around its body at incredible speed. Each creature within @Template[burst|distance:30]{30 feet} takes @Damage[2d10[bludgeoning]] damage (@Check[fortitude|dc:22|basic]).</p>"
+                    "description": "<p>The infested clockwork heap unleashes a cloud of loosely connected debris that whirls around its body at incredible speed. Each creature within @Template[emanation|distance:30]{30 feet} takes @Damage[2d10[bludgeoning]|options:area-damage] damage (@Check[fortitude|dc:22|basic|options:area-effect]).</p>"
                 }
             }
         },
@@ -3700,7 +3700,7 @@
                 },
                 "action->Shadow Breath": {
                     "name": "Shadow Breath",
-                    "description": "<p>A shadow drake spits a ball of black liquid that explodes into a cloud of frigid black shadow. This attack has a range of 40 feet and explodes in a 5-foot-radius burst. Creatures within the burst take @Damage[3d6[cold]] damage (@Check[reflex|dc:18|basic] save). The explosion of shadow also snuffs out mundane light sources the size of a torch, lantern, or smaller, and attempts to counteract magical light with a +10 counteract modifier.</p>\n<p>The shadow drake can't use Shadow Breath again for [[/r 1d6]] rounds.</p>"
+                    "description": "<p>A shadow drake spits a ball of black liquid that explodes into a cloud of frigid black shadow. This attack has a range of 40 feet and explodes in a @Template[burst|distance:5]{5-foot-radius burst}. Creatures within the burst take @Damage[3d6[cold]|options:area-damage] damage (@Check[reflex|dc:18|basic|options:area-effect] save). The explosion of shadow also snuffs out mundane light sources the size of a torch, lantern, or smaller, and attempts to counteract magical light with a [[/r 1d20+10 #Counteract Light]]{+10} counteract modifier.</p>\n<p>The shadow drake can't use Shadow Breath again for [[/gmr 1d6 #Recharge Shadow Breath]] rounds.</p>"
                 },
                 "action->Speed Surge": {
                     "name": "Speed Surge",
@@ -3736,7 +3736,7 @@
                 },
                 "action->Shadow Breath": {
                     "name": "Shadow Breath",
-                    "description": "<p>A shadow drake spits a ball of black liquid that explodes into a cloud of frigid black shadow. This attack has a range of 40 feet and explodes in a 5-foot-radius burst. Creatures within the burst take @Damage[(3d6+4)[cold]] damage (@Check[reflex|dc:20|basic] save). The explosion of shadow also snuffs out mundane light sources the size of a torch, lantern, or smaller, and attempts to counteract magical light with a +10 counteract modifier.</p>\n<p>The shadow drake can't use Shadow Breath again for [[/r 1d6]] rounds.</p>"
+                    "description": "<p>A shadow drake spits a ball of black liquid that explodes into a cloud of frigid black shadow. This attack has a range of 40 feet and explodes in a @Template[burst|distance:5]{5-foot-radius burst}. Creatures within the burst take @Damage[(3d6+4)[cold]|options:area-damage] damage (@Check[reflex|dc:20|basic|options:area-effect] save). The explosion of shadow also snuffs out mundane light sources the size of a torch, lantern, or smaller, and attempts to counteract magical light with a [[/r 1d20+10 #Counteract Light]]{+10} counteract modifier.</p>\n<p>The shadow drake can't use Shadow Breath again for [[/gmr 1d6 #Recharge Shadow Breath]] rounds.</p>"
                 },
                 "action->Speed Surge": {
                     "name": "Speed Surge",
@@ -4019,7 +4019,7 @@
                 },
                 "action->Scrap Tempest": {
                     "name": "Scrap Tempest",
-                    "description": "<p>The infested clockwork heap unleashes a cloud of loosely connected debris that whirls around its body at incredible speed. Each creature within @Template[burst|distance:30]{30 feet} takes @Damage[3d8[bludgeoning]] damage (@Check[fortitude|dc:25|basic]).</p>"
+                    "description": "<p>The infested clockwork heap unleashes a cloud of loosely connected debris that whirls around its body at incredible speed. Each creature within @Template[emanation|distance:30]{30 feet} takes @Damage[3d8[bludgeoning]|options:area-damage] damage (@Check[fortitude|dc:25|basic|options:area-effect]).</p>"
                 }
             }
         },
@@ -4706,7 +4706,7 @@
                 },
                 "action->Drain Life": {
                     "name": "Drain Life",
-                    "description": "<p>When the deadeye wight damages a living creature using an unarmed attack or their bound weapon, they gain 9 temporary Hit Points, and the creature must succeed at a @Check[fortitude|dc:25] save or become @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 1}. Further damage dealt by the deadeye wight's unarmed and bound weapon attacks increases the value of the drained condition by 1 on a failed save, to a maximum of drained 4.</p>"
+                    "description": "<p>When the deadeye wight damages a living creature using an unarmed attack or their bound weapon, they gain 9 temporary Hit Points, and the creature must succeed at a @Check[fortitude|dc:25|options:inflicts:drained] save or become @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 1}. Further damage dealt by the deadeye wight's unarmed and bound weapon attacks increases the value of the drained condition by 1 on a failed save, to a maximum of drained 4.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.LRIYUFQ7FE9H4RWD]{Effect: Drain Life}</p>"
                 },
                 "action->Spawn Deadeye Wight": {
                     "name": "Spawn Deadeye Wight",
@@ -4736,7 +4736,7 @@
                 },
                 "action->Drain Life": {
                     "name": "Drain Life",
-                    "description": "<p>When the hunter wight damages a living creature using an unarmed attack or their bound weapon, they gain 7 temporary Hit Points, and the creature must succeed at a @Check[fortitude|dc:22] save or become @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 1}. Further damage dealt by the hunter wight's unarmed and bound weapon attacks increases the value of the drained condition by 1 on a failed save, to a maximum of drained 4.</p>"
+                    "description": "<p>When the hunter wight damages a living creature using an unarmed attack or their bound weapon, they gain 7 temporary Hit Points, and the creature must succeed at a @Check[fortitude|dc:22|options:inflicts:drained] save or become @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 1}. Further damage dealt by the hunter wight's unarmed and bound weapon attacks increases the value of the drained condition by 1 on a failed save, to a maximum of drained 4.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.LRIYUFQ7FE9H4RWD]{Effect: Drain Life}</p>"
                 },
                 "action->Spawn Hunter Wight": {
                     "name": "Spawn Hunter Wight",
@@ -4765,7 +4765,7 @@
                 },
                 "action->Drain Life": {
                     "name": "Drain Life",
-                    "description": "<p>When the hunter wight damages a living creature using an unarmed attack or their bound weapon, they gain 9 temporary Hit Points, and the creature must succeed at a @Check[fortitude|dc:25] save or become @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 1}. Further damage dealt by the hunter wight's unarmed and bound weapon attacks increases the value of the drained condition by 1 on a failed save, to a maximum of drained 4.</p>"
+                    "description": "<p>When the hunter wight damages a living creature using an unarmed attack or their bound weapon, they gain 9 temporary Hit Points, and the creature must succeed at a @Check[fortitude|dc:25|options:inflicts:drained] save or become @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 1}. Further damage dealt by the hunter wight's unarmed and bound weapon attacks increases the value of the drained condition by 1 on a failed save, to a maximum of drained 4.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.LRIYUFQ7FE9H4RWD]{Effect: Drain Life}</p>"
                 },
                 "action->Feign Death": {
                     "name": "Feign Death",
@@ -4808,7 +4808,7 @@
                 },
                 "action->Drain Life": {
                     "name": "Drain Life",
-                    "description": "<p>When the stalker wight damages a living creature using an unarmed attack or their bound weapon, they gain 7 temporary Hit Points, and the creature must succeed at a @Check[fortitude|dc:22] save or become @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 1}. Further damage dealt by the stalker wight's unarmed and bound weapon attacks increases the value of the drained condition by 1 on a failed save, to a maximum of drained 4.</p>"
+                    "description": "<p>When the stalker wight damages a living creature using an unarmed attack or their bound weapon, they gain 7 temporary Hit Points, and the creature must succeed at a @Check[fortitude|dc:22|options:inflicts:drained] save or become @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 1}. Further damage dealt by the stalker wight's unarmed and bound weapon attacks increases the value of the drained condition by 1 on a failed save, to a maximum of drained 4.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.LRIYUFQ7FE9H4RWD]{Effect: Drain Life}</p>"
                 },
                 "action->Feign Death": {
                     "name": "Feign Death",
@@ -4878,7 +4878,7 @@
                 },
                 "action->Drain Life": {
                     "name": "Drain Life",
-                    "description": "<p>When the wight captain damages a living creature using an unarmed attack or their bound weapon, they gain 10 temporary Hit Points, and the creature must succeed at a @Check[fortitude|dc:26] save or become @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 1}. Further damage dealt by the hunter wight's unarmed and bound weapon attacks increases the value of the drained condition by 1 on a failed save, to a maximum of drained 4.</p>"
+                    "description": "<p>When the wight captain damages a living creature using an unarmed attack or their bound weapon, they gain 10 temporary Hit Points, and the creature must succeed at a @Check[fortitude|dc:26|options:inflicts:drained] save or become @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 1}. Further damage dealt by the hunter wight's unarmed and bound weapon attacks increases the value of the drained condition by 1 on a failed save, to a maximum of drained 4.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.LRIYUFQ7FE9H4RWD]{Effect: Drain Life}</p>"
                 },
                 "action->Spawn Wight Soldier": {
                     "name": "Spawn Wight Soldier",
@@ -4941,7 +4941,7 @@
                 },
                 "action->Drain Life": {
                     "name": "Drain Life",
-                    "description": "<p>When the hunter wight damages a living creature using an unarmed attack or their bound weapon, they gain 12 temporary Hit Points, and the creature must succeed at a @Check[fortitude|dc:29] save or become @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 1}. Further damage dealt by the hunter wight's unarmed and bound weapon attacks increases the value of the drained condition by 1 on a failed save, to a maximum of drained 4.</p>"
+                    "description": "<p>When the hunter wight damages a living creature using an unarmed attack or their bound weapon, they gain 12 temporary Hit Points, and the creature must succeed at a @Check[fortitude|dc:29|options:inflicts:drained] save or become @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 1}. Further damage dealt by the hunter wight's unarmed and bound weapon attacks increases the value of the drained condition by 1 on a failed save, to a maximum of drained 4.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.LRIYUFQ7FE9H4RWD]{Effect: Drain Life}</p>"
                 },
                 "action->Spawn Wight Soldier": {
                     "name": "Spawn Wight Soldier",
@@ -5831,7 +5831,7 @@
                 },
                 "action->Shrieking Scream": {
                     "name": "Shrieking Scream",
-                    "description": "<p>The clacking skull swarm emits a terrifying, painful scream that deals @Damage[(10d6-4)[sonic]] damage to all creatures in a @Template[cone|distance:30] (@Check[will|dc:27|basic] save). A creature that fails this save is also @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 1} (@UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 2} on a critical failure).</p>\n<p>The swarm can't use Frightening Scream again for [[/gmr 1d4 #Recharge Shrieking Scream]]{1d4 rounds}.</p>"
+                    "description": "<p>The clacking skull swarm emits a terrifying, painful scream that deals @Damage[(10d6-4)[sonic]|options:area-damage] damage to all creatures in a @Template[cone|distance:30] (@Check[will|dc:27|basic|options:area-effect,inflicts:frightened]] save). A creature that fails this save is also @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 1} (@UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 2} on a critical failure).</p>\n<p>The swarm can't use Frightening Scream again for [[/gmr 1d4 #Recharge Shrieking Scream]]{1d4 rounds}.</p>"
                 },
                 "action->Swarming Gnaw": {
                     "name": "Swarming Gnaw",
