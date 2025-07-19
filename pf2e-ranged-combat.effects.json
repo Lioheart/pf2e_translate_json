@@ -101,9 +101,25 @@
                 }
             }
         },
+        "Effect: Risky Reload": {
+            "name": "Effect: Risky Reload",
+            "description": "<p>You have rapidly reloaded your firearm, but attempting to use this technique is a dangerous gamble with your firearm's functionality.</p><p>If your Strike fails, the firearm misfires.</p>",
+            "rules": {
+                "1": {
+                    "label": "Risky Reload"
+                },
+                "2": {
+                    "text": "If your Strike fails, the firearm misfires and becomes @UUID[Compendium.pf2e-ranged-combat.effects.Item.gWyiBrwEyHTvua6t]."
+                }
+            }
+        },
         "Hunted Prey": {
             "name": "Hunted Prey",
             "description": "<p>You have designated this creature as your prey.</p>"
+        },
+        "Jammed": {
+            "name": "Jammed",
+            "description": "<p>This weapon is jammed. You must use an Interact action to clear the jam before you can reload the weapon and fire again.</p>"
         },
         "Loaded": {
             "name": "Loaded",
