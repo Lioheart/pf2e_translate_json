@@ -1,0 +1,44 @@
+{
+    "label": "Alchemist-Duct-Tape-Items",
+    "entries": {
+        "Effect: Coagulant Immunity": {
+            "name": "Effect: Coagulant Immunity",
+            "description": "<p>Immune to Hit Point healing from alchemical items with the <em data-start=\"863\" data-end=\"874\">coagulant</em> trait. Other effects still apply. Duration: 10 minutes.</p>"
+        },
+        "Effect: Mutagenist Resistance": {
+            "name": "Effect: Mutagenist Resistance",
+            "description": "<p>Granted by <a class=\"content-link\" draggable=\"true\" data-link data-uuid=\"Compendium.pf2e.classfeatures.Item.wYOdTCWQQ6ec8I6b\" data-id=\"wYOdTCWQQ6ec8I6b\" data-type=\"Item\" data-pack=\"pf2e.classfeatures\" data-tooltip=\"Feat/Feature Item\"><strong>Advanced Vials</strong></a><strong> (11th)</strong> When you drink one of your field vials, you also gain resistance to physical damage for the same duration. The resistance is equal to half your level.</p>"
+        },
+        "Healing Bomb": {
+            "name": "Healing Bomb",
+            "description": "<p><span style=\"font-family:'Century Gothic', CenturyGothic, AppleGothic, sans-serif\">You can add a foamy catalyst to an @UUID[Compendium.pf2e.equipment-srd.Item.hDLbR56Id2OtU318]{Elixir of Life} to turn it into a topical projectile. You can throw the elixir as though it were an alchemical bomb</span>, with the following results.<span style=\"font-family:'Century Gothic', CenturyGothic, AppleGothic, sans-serif\"><br style=\"color:rgb(255, 255, 255);font-family:'Century Gothic', CenturyGothic, AppleGothic, sans-serif;font-size:15px;font-style:normal;font-variant-ligatures:normal;font-variant-caps:normal;font-weight:400;letter-spacing:normal;orphans:2;text-align:start;text-indent:0px;text-transform:none;widows:2;word-spacing:0px;-webkit-text-stroke-width:0px;white-space:normal;background-color:rgb(15, 15, 15);text-decoration-thickness:initial;text-decoration-style:initial;text-decoration-color:initial\" /><br style=\"color:rgb(255, 255, 255);font-family:'Century Gothic', CenturyGothic, AppleGothic, sans-serif;font-size:15px;font-style:normal;font-variant-ligatures:normal;font-variant-caps:normal;font-weight:400;letter-spacing:normal;orphans:2;text-align:start;text-indent:0px;text-transform:none;widows:2;word-spacing:0px;-webkit-text-stroke-width:0px;white-space:normal;background-color:rgb(15, 15, 15);text-decoration-thickness:initial;text-decoration-style:initial;text-decoration-color:initial\" /><strong>Success</strong>: </span>The target is affected as though it drank the elixir, and each living creature adjacent to it regains HP from the bomb equal to the elixir's number of damage dice. The target also gains @UUID[Compendium.pf2e.equipment-effects.Item.lPRuIRbu0rHBkoKY]{Effect: Elixir of Life} per the elixir level used.</p><p><span style=\"font-family:'Century Gothic', CenturyGothic, AppleGothic, sans-serif\"><strong>Failure</strong>: </span>The target regains HP equal to the elixir's number of damage dice.<span style=\"font-family:'Century Gothic', CenturyGothic, AppleGothic, sans-serif\"><br style=\"color:rgb(255, 255, 255);font-family:'Century Gothic', CenturyGothic, AppleGothic, sans-serif;font-size:15px;font-style:normal;font-variant-ligatures:normal;font-variant-caps:normal;font-weight:400;letter-spacing:normal;orphans:2;text-align:start;text-indent:0px;text-transform:none;widows:2;word-spacing:0px;-webkit-text-stroke-width:0px;white-space:normal;background-color:rgb(15, 15, 15);text-decoration-thickness:initial;text-decoration-style:initial;text-decoration-color:initial\" /><strong>Critical Failure</strong>: </span>The healing bomb has no effect.</p>"
+        },
+        "Healing Quick Vial": {
+            "name": "Healing Quick Vial",
+            "description": "<p>Applies @UUID[Compendium.pf2e-alchemist-remaster-ducttape.alchemist-duct-tape-items.Item.htVOAKfVmVYafFrQ]{Effect: Coagulant Immunity}<br /><strong><br /></strong></p><hr /><p></p><p><strong>Field Vials</strong> Your versatile vials can be used to heal a living creature a number of Hit Points equal to the vial's initial damage. A creature can drink the vial for this benefit, or you can throw the vial at a willing creature within 20 feet as an Interact action to heal that creature. In either case, a vial used this way loses the acid and splash traits and gains the coagulant and healing traits, plus the elixir trait if a creature drinks it.</p><p><strong>@UUID[Compendium.pf2e.classfeatures.Item.qC0Iz6SlG2i9gv6g]{Field Discovery} (5th)</strong> Your medicinal elixirs are quite fortifying. When a creature drinks an infused elixir with the healing trait that you have created, that creature gains a number of temporary Hit Points equal to your Intelligence modifier (minimum 0); these temporary Hit Points last for 1 minute.</p><p><strong>@UUID[Compendium.pf2e.classfeatures.Item.6d8JFjFuvH27dpiw]{Advanced Vials} (11th)</strong> When you use a field vial to heal a creature that has half its maximum Hit Points or fewer, the coagulant trait doesn't apply to that healing.</p><p><strong>@UUID[Compendium.pf2e.classfeatures.Item.JJcaVijwRt9dsnac]{Greater Field Discovery} (13th)</strong> When you use Quick Alchemy to create any type of elixir of life, the creature healed by the item regains the maximum Hit Points possible, instead of rolling to determine the number of Hit Points regained.</p>"
+        },
+        "Poison Quick Vial": {
+            "name": "Poison Quick Vial",
+            "description": "",
+            "rules": {
+                "0": {
+                    "label": "Poison Quick Vial"
+                }
+            }
+        },
+        "Quick Vial": {
+            "name": "Quick Vial",
+            "description": "<p>This tiny glass flask contains volatile chemicals that can be used offensively in a pinch. The bomb deals acid damage and acid splash damage.</p>"
+        },
+        "Quick vial injury poison (*Temporary)": {
+            "name": "Quick vial injury poison (*Temporary)",
+            "description": "<p>Applied as an injury poison. Adds damage to the first successful Strike.</p>"
+        }
+    },
+    "mapping": {
+        "rules": {
+            "converter": "translateRules",
+            "path": "system.rules"
+        }
+    }
+}
