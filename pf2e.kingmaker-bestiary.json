@@ -801,7 +801,7 @@
                 },
                 "action->Spew Seed Pod": {
                     "name": "Spew Seed Pod",
-                    "description": "<p>The bloom of Lamashtu's central stalk disgorges a pulsing seed pod from its flower, spitting it at a range of up to 60 feet and creating a @Template[burst|distance:20] when the seed pod explodes into a spray of supernatural acidic poison. All creatures in this area must attempt a @Check[reflex|dc:29] save. The bloom of Lamashtu can't Spew Seed Pod for [[/gmr 1d4 #Recharge Spew Seed Pod]]{1d4 rounds}.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature takes @Damage[3d6[acid]] damage and @Damage[3d6[poison]] damage.</p>\n<p><strong>Failure</strong> The creature takes @Damage[5d6[acid]] damage and @Damage[5d6[poison]] damage and is exposed to the bloom curse.</p>\n<p><strong>Critical Failure</strong> As failure, but @Damage[10d6[acid]] damage and @Damage[10d6[poison]] damage, plus knocked @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone} by the force of the blast.</p>"
+                    "description": "<p>The bloom of Lamashtu's central stalk disgorges a pulsing seed pod from its flower, spitting it at a range of up to 60 feet and creating a @Template[burst|distance:20] when the seed pod explodes into a spray of supernatural acidic poison. All creatures in this area must attempt a @Check[reflex|dc:29|options:area-effect,damaging-effect,inflicts:prone] save. The bloom of Lamashtu can't Spew Seed Pod for [[/gmr 1d4 #Recharge Spew Seed Pod]]{1d4 rounds}.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature takes @Damage[3d6[acid],3d6[poison]]{3d6 acid damage and 3d6 poison damage}.</p>\n<p><strong>Failure</strong> The creature takes @Damage[5d6[acid],5d6[poison]]{5d6 acid damage and 5d6 poison damage} and is exposed to the bloom curse.</p>\n<p><strong>Critical Failure</strong> As failure, but @Damage[10d6[acid],10d6[poison]]{10d6 acid damage and 10d6 poison damage}, plus knocked @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone} by the force of the blast.</p>"
                 }
             },
             "skills": {
@@ -2180,10 +2180,6 @@
                 "campaignFeature->Dirty Fighting": {
                     "name": "Dirty Fighting",
                     "description": "<p><strong>Requirement</strong> @UUID[Compendium.pf2e.kingmaker-features.Item.mHWF5XwUi8RK2lET]{Flexible Tactics}</p>\n<hr />\n<p>Your army uses trickery, deception, and unfair tactics to attempt a devastating attack against an outflanked army. Attempt a melee Strike or a ranged Strike against the AC of a target outflanked army that is not distant.</p>\n<p><strong>Critical Success</strong> The target army becomes @UUID[Compendium.pf2e.kingmaker-features.Item.dmzpRlOrorEFUETl]{Weary 2} until the start of your next turn.</p>\n<p><strong>Success</strong> The target army becomes weary 1 until the start of your next turn.</p>\n<p><strong>Critical Failure</strong> Your attack deals no damage to the target army, which is emboldened by your failed attempt at dirty fighting. This reduces the target army's weary value by 1.</p>"
-                },
-                "campaignFeature->Taunt": {
-                    "name": "Taunt",
-                    "description": "<p><strong>Requirement</strong>@UUID[Compendium.pf2e.kingmaker-features.Item.DxZRVOsPVnQvI0fe]{Focused Devotion}</p>\n<hr />\n<p>Your army attempts to frighten and cow an enemy army. Attempt a @Check[morale|defense:morale|roller:self] check against the target army.</p>\n<p><strong>Critical Success</strong> The target army becomes @UUID[Compendium.pf2e.kingmaker-features.Item.7LMDwpVijK7x5Jst]{Shaken 2} until the start of your next turn.</p>\n<p><strong>Success</strong> The target army becomes shaken 1 until the start of your next turn.</p>\n<p><strong>Critical Failure</strong> Your failed attempt bolsters the enemy's spirits. This reduces the target army's shaken value by 1.</p>"
                 }
             }
         },
@@ -3314,7 +3310,7 @@
                 },
                 "action->Telekinetic Assault": {
                     "name": "Telekinetic Assault",
-                    "description": "<p>The ghost cries out in pain and anguish as small objects and debris fly about in a @Template[emanation|distance:30]. Creatures in this area take @Damage[5d6[bludgeoning]] damage, subject to a @Check[reflex|dc:28|basic] save.</p>"
+                    "description": "<p>The ghost cries out in pain and anguish as small objects and debris fly about in a @Template[emanation|distance:30]. Creatures in this area take @Damage[5d6[bludgeoning]|options:area-damage] damage, subject to a @Check[reflex|dc:28|basic|options:area-effect] save.</p>"
                 }
             }
         },
@@ -4231,10 +4227,6 @@
                 "campaignFeature->Chorus of Croaks": {
                     "name": "Chorus of Croaks",
                     "description": "<p>The terrifying croaking that constantly issues from this army of boggards causes all engaged enemy armies to suffer a -2 status penalty on Morale checks. The M'botuu Frog Riders can use the Taunt tactical action. If they know the Focused Devotion tactic, they treat critical failures made when attempting to Taunt as failures instead.</p>"
-                },
-                "campaignFeature->Taunt": {
-                    "name": "Taunt",
-                    "description": "<p><strong>Requirement</strong>@UUID[Compendium.pf2e.kingmaker-features.Item.DxZRVOsPVnQvI0fe]{Focused Devotion}</p>\n<hr />\n<p>Your army attempts to frighten and cow an enemy army. Attempt a @Check[morale|defense:morale|roller:self] check against the target army.</p>\n<p><strong>Critical Success</strong> The target army becomes @UUID[Compendium.pf2e.kingmaker-features.Item.7LMDwpVijK7x5Jst]{Shaken 2} until the start of your next turn.</p>\n<p><strong>Success</strong> The target army becomes shaken 1 until the start of your next turn.</p>\n<p><strong>Critical Failure</strong> Your failed attempt bolsters the enemy's spirits. This reduces the target army's shaken value by 1.</p>"
                 }
             }
         },
@@ -6479,7 +6471,7 @@
                 },
                 "action->Telekinetic Assault": {
                     "name": "Telekinetic Assault",
-                    "description": "<p>The ghost cries out in pain and anguish as small objects and debris fly about in a @Template[emanation|distance:30]. Creatures in this area take @Damage[9d6[bludgeoning]] damage, subject to a @Check[reflex|dc:37|basic] save.</p>"
+                    "description": "<p>The ghost cries out in pain and anguish as small objects and debris fly about in a @Template[emanation|distance:30]. Creatures in this area take @Damage[9d6[bludgeoning]|options:area-damage] damage, subject to a @Check[reflex|dc:37|basic|options:area-effect] save.</p>"
                 }
             }
         },
@@ -7081,10 +7073,6 @@
                 "campaignFeature->Counterattack": {
                     "name": "Counterattack",
                     "description": "<p><strong>Requirement</strong> @UUID[Compendium.pf2e.kingmaker-features.Item.mHWF5XwUi8RK2lET]{Flexible Tactics}</p>\n<p><strong>Trigger</strong> An army you are engaged with attempts a maneuver war action.</p>\n<hr />\n<p>Your army lashes out at the foe as they attempt to perform a maneuver. Attempt a melee Strike against the triggering army's AC. Counterattack doesn't count toward your multiple attack penalty, and your multiple attack penalty doesn't apply to this Strike.</p>\n<p><strong>Critical Success</strong> You inflict 1 point of damage on the army and increase its @UUID[Compendium.pf2e.kingmaker-features.Item.7LMDwpVijK7x5Jst]{Shaken} condition value by 1.</p>\n<p><strong>Success</strong> You inflict 1 point of damage on the army.</p>"
-                },
-                "campaignFeature->Taunt": {
-                    "name": "Taunt",
-                    "description": "<p><strong>Requirement</strong>@UUID[Compendium.pf2e.kingmaker-features.Item.DxZRVOsPVnQvI0fe]{Focused Devotion}</p>\n<hr />\n<p>Your army attempts to frighten and cow an enemy army. Attempt a @Check[morale|defense:morale|roller:self] check against the target army.</p>\n<p><strong>Critical Success</strong> The target army becomes @UUID[Compendium.pf2e.kingmaker-features.Item.7LMDwpVijK7x5Jst]{Shaken 2} until the start of your next turn.</p>\n<p><strong>Success</strong> The target army becomes shaken 1 until the start of your next turn.</p>\n<p><strong>Critical Failure</strong> Your failed attempt bolsters the enemy's spirits. This reduces the target army's shaken value by 1.</p>"
                 }
             }
         },
@@ -7429,10 +7417,6 @@
                     "name": "Frightening Foe",
                     "description": "<p>The Troll Marauders can use the @UUID[Compendium.pf2e.kingmaker-features.Item.ggVahjiAlVICpiPA]{Taunt} tactical action. When they do, they gain a +2 status bonus on their Morale check if they used the Regeneration tactic this turn.</p>"
                 },
-                "campaignFeature->Taunt": {
-                    "name": "Taunt",
-                    "description": "<p><strong>Requirement</strong>@UUID[Compendium.pf2e.kingmaker-features.Item.DxZRVOsPVnQvI0fe]{Focused Devotion}</p>\n<hr />\n<p>Your army attempts to frighten and cow an enemy army. Attempt a @Check[morale|defense:morale|roller:self] check against the target army.</p>\n<p><strong>Critical Success</strong> The target army becomes @UUID[Compendium.pf2e.kingmaker-features.Item.7LMDwpVijK7x5Jst]{Shaken 2} until the start of your next turn.</p>\n<p><strong>Success</strong> The target army becomes shaken 1 until the start of your next turn.</p>\n<p><strong>Critical Failure</strong> Your failed attempt bolsters the enemy's spirits. This reduces the target army's shaken value by 1.</p>"
-                },
                 "campaignFeature->Regeneration": {
                     "name": "Regeneration",
                     "description": "<p>At the beginning of its turn, the Troll Marauders regain 1 Hit Point. The Troll Marauders cannot be destroyed as usual unless they lose this tactic. The PCs can cause the trolls to lose the Regeneration tactic via prepared firepots (see Kingmaker page 296); while the trolls' Regeneration tactic is lost, their RT increases to 3.</p>\n<p>Otherwise, an army that engages the Troll Marauders while they are defeated can take a three-round action to burn the trolls and destroy their army.</p>"
@@ -7531,10 +7515,6 @@
                 "campaignFeature->Covering Fire": {
                     "name": "Covering Fire",
                     "description": "<p><strong>Requirement</strong> @UUID[Compendium.pf2e.kingmaker-features.Item.lcNZMlMNPUrnMgQ2]{Sharpshooter}</p>\n<hr />\n<p>Your army's ranged fire provides cover and protection for an allied army to maneuver. Attempt a ranged Strike against a target army's AC.</p>\n<p><strong>Critical Success</strong> You inflict 2 points of damage to the target army, and it cannot take reactions triggered by maneuver war actions from any army until the start of your next turn.</p>\n<p><strong>Success</strong> You inflict 1 point of damage to the target army, and it can't take reactions triggered by maneuver war actions from any army until the start of your next turn.</p>\n<p><strong>Failure</strong> Your attack fails to provide covering fire, but you inflict 1 point of damage to the target army.</p>\n<p><strong>Critical Failure</strong> Your attempt fails.</p>"
-                },
-                "campaignFeature->Taunt": {
-                    "name": "Taunt",
-                    "description": "<p><strong>Requirement</strong>@UUID[Compendium.pf2e.kingmaker-features.Item.DxZRVOsPVnQvI0fe]{Focused Devotion}</p>\n<hr />\n<p>Your army attempts to frighten and cow an enemy army. Attempt a @Check[morale|defense:morale|roller:self] check against the target army.</p>\n<p><strong>Critical Success</strong> The target army becomes @UUID[Compendium.pf2e.kingmaker-features.Item.7LMDwpVijK7x5Jst]{Shaken 2} until the start of your next turn.</p>\n<p><strong>Success</strong> The target army becomes shaken 1 until the start of your next turn.</p>\n<p><strong>Critical Failure</strong> Your failed attempt bolsters the enemy's spirits. This reduces the target army's shaken value by 1.</p>"
                 },
                 "campaignFeature->Trampling Charge": {
                     "name": "Trampling Charge"
@@ -8183,7 +8163,7 @@
                 },
                 "action->Summon Pack": {
                     "name": "Summon Pack",
-                    "description": "<p><strong>Frequency</strong> once per day</p>\n<p><strong>Effect</strong> With a howl, the wild hunt hound summons a fog that manifests into several misty hounds. These foggy hounds shift and race and howl in a @Template[emanation|distance:20] @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.v61oEQaDdcRpaZ9X]{Aura} as long as the wild hunt hound Sustains the effect. While the hounds seem to be made of fog, their teeth are very real, and any creature that ends its turn in this aura takes @Damage[6d6[piercing]] damage from numerous bites (@Check[reflex|dc:31|basic]).</p>"
+                    "description": "<p><strong>Frequency</strong> once per day</p>\n<p><strong>Effect</strong> With a howl, the wild hunt hound summons a fog that manifests into several misty hounds. These foggy hounds shift and race and howl in a 20-foot aura as long as the wild hunt hound Sustains the effect. While the hounds seem to be made of fog, their teeth are very real, and any creature that ends its turn in this aura takes @Damage[6d6[piercing]|options:area-damage] damage from numerous bites (@Check[reflex|dc:31|basic|options:area-effect]).</p>"
                 },
                 "action->Knockdown": {
                     "name": "Knockdown"

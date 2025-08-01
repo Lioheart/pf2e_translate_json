@@ -104,12 +104,6 @@
                     "name": "Wandering Pipe",
                     "description": "<p>This long-stemmed pipe always emits a thin plume of smoke, even when not lit or in active use. The exact material the pipe is made of varies in every accounting; sometimes made of polished oak, other times ebony, sometimes stone, and in one Erutaki legend the pipe is made of pure ice that somehow holds a flame. Though the <em>wandering pipe</em> is not intelligent, it is rumored to possess a certain capriciousness, leaving the possession of mortals whose lives are not exciting enough but inevitably finding its way back to its one true owner.</p>\n<p>When held in one hand, the pipe grants its holder a +2 circumstance bonus to Deception checks but imposes a -1 circumstance penalty to Stealth checks made to Hide or @UUID[Compendium.pf2e.actionspf2e.Item.VMozDqMMuK5kpoX4]{Sneak}, as its telltale plume of smoke gives away the bearer's position.</p>\n<p><strong>Activate\u2014Smoky Protections</strong> <span class=\"action-glyph\">2</span> (concentrate, manipulate, primal)</p>\n<p><strong>Frequency</strong> once per hour; <strong>Cost</strong> 1 Mythic Point</p><hr /><p><strong>Effect</strong> For the next 10 minutes, smoke gathers around you buoying your steps and protecting you. For the duration of this effect, you gain a fly Speed equal to your land Speed and automatically hover in place, and you have concealment from ranged attacks.</p>\n<p>@UUID[Compendium.pf2e.equipment-effects.Item.z480XhE3nft1TQDj]{Effect: Smoky Protections}</p><hr /><p><strong>Destruction</strong> The <em>wandering pipe</em> can be broken as easily as any other wooden pipe, but it always reforms afterward in the hands of the Immortal Trickster or one of his bonded mortals. It can only be broken by the hands of one of the Trickster's bonded mortals who is an honest person acting with good intent; it is said that if this occurs, the Trickster would also be significantly weakened as a result.</p>"
                 },
-                "strike-melee->Pipe": {
-                    "name": "Pipe"
-                },
-                "strike-ranged->Telekinetic Manipulation": {
-                    "name": "Telekinetic Manipulation"
-                },
                 "action->Recklessly Overconfident": {
                     "name": "Recklessly Overconfident",
                     "description": "<p>The Immortal Trickster knows he is immortal and takes risks that cause his failures to be particularly spectacular. Whenever the Immortal Trickster would fail at a Deception, Stealth, or Thievery check, he critically fails instead.</p>"
@@ -228,7 +222,7 @@
                 },
                 "action->Mythic Skill": {
                     "name": "Mythic Skill",
-                    "description": "<p><strong>Cost</strong> 1 Mythic Point</p><hr /><p><strong>Effect</strong> The Mythic Gogiteth attempts its next Athletics or Stealth skill check with a +4 bonus and is considered to have mythic proficiency for that check. This applies to one skill when this ability is gained and a second skill if the creature is 12th level or higher.</p>"
+                    "description": "<p><strong>Cost</strong> 1 Mythic Point</p><hr /><p><strong>Effect</strong> The Mythic Gogiteth attempts its next Athletics or Stealth skill check with a +4 bonus and is considered to have mythic proficiency for that check.</p>"
                 },
                 "action->Skittering Assault": {
                     "name": "Skittering Assault",
@@ -271,7 +265,7 @@
                 },
                 "action->Mythic Skill (Acrobatics)": {
                     "name": "Mythic Skill (Acrobatics)",
-                    "description": "<p><strong>Cost</strong> 1 Mythic Point</p><hr /><p><strong>Effect</strong> The Mythic Griffon attempts its next Acrobatics skill check with a +4 bonus and is considered to have mythic proficiency for that check. This applies to one skill when this ability is gained and a second skill if the creature is 12th level or higher.</p>"
+                    "description": "<p><strong>Cost</strong> 1 Mythic Point</p><hr /><p><strong>Effect</strong> The Mythic Griffon attempts its next Acrobatics skill check with a +4 bonus and is considered to have mythic proficiency for that check.</p>"
                 },
                 "action->Pounce": {
                     "name": "Pounce",
@@ -448,7 +442,7 @@
                 },
                 "action->Undying Myth": {
                     "name": "Undying Myth",
-                    "description": "<p><strong>Cost</strong> all the creature's Mythic Points</p>\n<p><strong>Trigger</strong> The creature would die and has at least 1 Mythic Point</p><hr /><p><strong>Effect</strong> When the Oliphaunt of Jandelay would die, as long as it has at least 1 Mythic Point, it immediately expends all remaining Mythic Points it has, remains standing and conscious, and recovers 50% of its maximum Hit Points.</p>"
+                    "description": "<p><strong>Cost</strong> all the creature's Mythic Points</p>\n<p><strong>Trigger</strong> The creature would die and has at least 1 Mythic Point</p><hr /><p><strong>Effect</strong> When the Oliphaunt of Jandelay would die, as long as it has at least 1 Mythic Point, it immediately expends all remaining Mythic Points it has, remains standing and conscious, and recovers @Damage[(floor(@actor.system.attributes.hp.max/2))[healing]]{50% of its maximum Hit Points}.</p>"
                 },
                 "action->Brutal Drag": {
                     "name": "Brutal Drag",
@@ -472,7 +466,7 @@
                 },
                 "action->Trumpeting Blast": {
                     "name": "Trumpeting Blast",
-                    "description": "<p>The Oliphaunt of Jandelay emits a cacophonous blast from its trunk in a @Template[type:cone|distance:120]. Each creature in the area must attempt a @Check[fortitude|dc:49] save. If the Oliphaunt spends 1 Mythic Point as part of the activity, the DC becomes 51 and the damage dice are increased to d12s. The Oliphaunt of Jandelay can't use Trumpeting Blast again for [[/gmr 1d4 #Recharge Trumpeting Blast]]{1d4 rounds}.</p><hr /><p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature takes @Damage[7d10[sonic]] damage and is @UUID[Compendium.pf2e.conditionitems.Item.9PR9y0bi4JPKnHPR]{Deafened} for 1 round.</p>\n<p><strong>Failure</strong> The creature takes @Damage[14d10[sonic]] damage, is @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1} for 2 rounds, and is deafened for 2 rounds.</p>\n<p><strong>Critical Failure</strong> The creature takes @Damage[28d10[sonic]] damage, is @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 2} for 2 rounds, and is deafened for 4 rounds.</p>"
+                    "description": "<p>The Oliphaunt of Jandelay emits a cacophonous blast from its trunk in a @Template[type:cone|distance:120]. Each creature in the area must attempt a @Check[fortitude|dc:49|options:area-effect,damaging-effect,inflicts:deafened,inflicts:slowed] save. If the Oliphaunt spends 1 Mythic Point as part of the activity, the DC becomes 51 and the damage dice are increased to d12s. The Oliphaunt of Jandelay can't use Trumpeting Blast again for [[/gmr 1d4 #Recharge Trumpeting Blast]]{1d4 rounds}.</p><hr /><p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature takes @Damage[7d10[sonic]|options:area-damage] damage and is @UUID[Compendium.pf2e.conditionitems.Item.9PR9y0bi4JPKnHPR]{Deafened} for 1 round.</p>\n<p><strong>Failure</strong> The creature takes @Damage[14d10[sonic]|options:area-damage] damage, is @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1} for 2 rounds, and is deafened for 2 rounds.</p>\n<p><strong>Critical Failure</strong> The creature takes @Damage[28d10[sonic]|options:area-damage] damage, is @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 2} for 2 rounds, and is deafened for 4 rounds.</p>"
                 }
             }
         },
@@ -606,7 +600,7 @@
                 },
                 "action->Undying Myth": {
                     "name": "Undying Myth",
-                    "description": "<p><strong>Cost</strong> all the creature's Mythic Points</p>\n<p><strong>Trigger</strong> Verex-That-Was would die and has at least 1 Mythic Point</p><hr /><p><strong>Effect</strong> Verex remains standing and conscious, and recovers 50% of his maximum Hit Points.</p>"
+                    "description": "<p><strong>Cost</strong> all the creature's Mythic Points</p>\n<p><strong>Trigger</strong> Verex-That-Was would die and has at least 1 Mythic Point</p><hr /><p><strong>Effect</strong> Verex remains standing and conscious, and @Damage[(floor(@actor.system.attributes.hp.max/2))[healing]]{50% of its maximum Hit Points}.</p>"
                 },
                 "action->Battlefield Eruption": {
                     "name": "Battlefield Eruption",

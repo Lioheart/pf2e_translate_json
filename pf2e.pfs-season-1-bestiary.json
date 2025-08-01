@@ -2742,7 +2742,7 @@
                 },
                 "action->Fanatical Frenzy": {
                     "name": "Fanatical Frenzy",
-                    "description": "<p><strong>Requirements</strong> The cultist has taken damage and is neither fatigued nor already in a frenzy</p>\n<hr />\n<p><strong>Effect</strong> The cultist flies into a frenzy that lasts 1 minute.</p>\n<p>While frenzied, the cultist gains a +1 status bonus to attack rolls and a +2 status bonus to damage rolls, and they take a -2 status penalty to AC. The cultist can't voluntarily stop their frenzy. After their frenzy, the cultist is @UUID[Compendium.pf2e.conditionitems.Item.HL2l2VRSaQHu9lUw]{Fatigued}.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.3Wtzyb0ZgkaC7vHY]{Effect: Fanatical Frenzy}</p>"
+                    "description": "<p><strong>Requirements</strong> The cultist has taken damage and is neither @UUID[Compendium.pf2e.conditionitems.Item.HL2l2VRSaQHu9lUw]{Fatigued} nor already in a frenzy</p><hr /><p><strong>Effect</strong> The cultist flies into a frenzy that lasts 1 minute.</p>\n<p>While frenzied, the cultist gains a +1 status bonus to attack rolls and a +2 status bonus to damage rolls, and they take a \u20132 status penalty to AC. The cultist can't voluntarily stop their frenzy. After their frenzy, the cultist is fatigued.</p>"
                 },
                 "lore->Groetus Lore": {
                     "name": "Groetus Lore"
@@ -2770,7 +2770,7 @@
                 },
                 "action->Fanatical Frenzy": {
                     "name": "Fanatical Frenzy",
-                    "description": "<p><strong>Requirements</strong> The cultist has taken damage and is neither fatigued nor already in a frenzy</p>\n<hr />\n<p><strong>Effect</strong> The cultist flies into a frenzy that lasts 1 minute.</p>\n<p>While frenzied, the cultist gains a +1 status bonus to attack rolls and a +2 status bonus to damage rolls, and they take a -2 status penalty to AC. The cultist can't voluntarily stop their frenzy. After their frenzy, the cultist is @UUID[Compendium.pf2e.conditionitems.Item.HL2l2VRSaQHu9lUw]{Fatigued}.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.3Wtzyb0ZgkaC7vHY]{Effect: Fanatical Frenzy}</p>"
+                    "description": "<p><strong>Requirements</strong> The cultist has taken damage and is neither @UUID[Compendium.pf2e.conditionitems.Item.HL2l2VRSaQHu9lUw]{Fatigued} nor already in a frenzy</p><hr /><p><strong>Effect</strong> The cultist flies into a frenzy that lasts 1 minute.</p>\n<p>While frenzied, the cultist gains a +1 status bonus to attack rolls and a +2 status bonus to damage rolls, and they take a \u20132 status penalty to AC. The cultist can't voluntarily stop their frenzy. After their frenzy, the cultist is fatigued.</p>"
                 },
                 "lore->Groetus Lore": {
                     "name": "Groetus Lore"
@@ -6624,7 +6624,7 @@
                 },
                 "action->Storm Smite": {
                     "name": "Storm Smite",
-                    "description": "<p><strong>Trigger</strong> The storm acolyte critically hits with a scimitar Strike</p>\n<hr />\n<p><strong>Effect</strong> The storm acolyte releases a blast of lighting in a @Template[burst|distance:10] centered on the target. A creature in the area other than the storm acolyte takes @Damage[1d6[electricity]] damage (@Check[reflex|dc:13|basic] save). On a critical failure, such a creature is also @UUID[Compendium.pf2e.conditionitems.Item.9PR9y0bi4JPKnHPR]{Deafened} for 1 round.</p>"
+                    "description": "<p><strong>Trigger</strong> The storm acolyte critically hits with a scimitar Strike</p>\n<hr />\n<p><strong>Effect</strong> The storm acolyte releases a blast of lighting in a @Template[burst|distance:10] centered on the target. A creature in the area other than the storm acolyte takes @Damage[1d6[electricity]|options:area-damage] damage (@Check[reflex|dc:13|basic|options:area-effect,inflicts:deafened] save). On a critical failure, such a creature is also @UUID[Compendium.pf2e.conditionitems.Item.9PR9y0bi4JPKnHPR]{Deafened} for 1 round.</p>"
                 }
             }
         },
@@ -6644,7 +6644,7 @@
                 },
                 "action->Storm Smite": {
                     "name": "Storm Smite",
-                    "description": "<p><strong>Trigger</strong> The storm warrior-priest critically hits with a scimitar Strike</p>\n<hr />\n<p><strong>Effect</strong> The storm warrior-priest releases a blast of lighting in a @Template[burst|distance:10] centered on the target. A creature in the area other than the storm warrior-priest takes @Damage[2d6[electricity]] damage (@Check[reflex|dc:15|basic] save). On a critical failure, such a creature is also @UUID[Compendium.pf2e.conditionitems.Item.9PR9y0bi4JPKnHPR]{Deafened} for 1 round.</p>"
+                    "description": "<p><strong>Trigger</strong> The storm warrior-priest critically hits with a scimitar Strike</p>\n<hr />\n<p><strong>Effect</strong> The storm warrior-priest releases a blast of lighting in a @Template[burst|distance:10] centered on the target. A creature in the area other than the storm warrior-priest takes @Damage[2d6[electricity]|options:area-damage] damage (@Check[reflex|dc:15|basic|options:area-effect,inflicts:deafened] save). On a critical failure, such a creature is also @UUID[Compendium.pf2e.conditionitems.Item.9PR9y0bi4JPKnHPR]{Deafened} for 1 round.</p>"
                 }
             }
         },

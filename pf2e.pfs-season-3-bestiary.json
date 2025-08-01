@@ -2008,7 +2008,7 @@
             "items": {
                 "action->Timber!": {
                     "name": "Timber!",
-                    "description": "<p><strong>Trigger</strong> A living creature enters the area of collapse</p>\n<hr />\n<p><strong>Effect</strong> The tree falls over, dealing @Damage[(4d8+10)[bludgeoning]] damage to all creatures in the area (@Check[reflex|dc:22|basic]).</p>"
+                    "description": "<p><strong>Trigger</strong> A living creature enters the area of collapse</p>\n<hr />\n<p><strong>Effect</strong> The tree falls over, dealing @Damage[(4d8+10)[bludgeoning]|options:area-damage] damage to all creatures in the area (@Check[reflex|dc:22|basic|options:area-effect]).</p>"
                 }
             }
         },
@@ -3892,7 +3892,7 @@
                 },
                 "action->Air of Authority": {
                     "name": "Air of Authority",
-                    "description": "<p>10 feet. Creatures in the aura who are the same or lower level than the operative take a -2 status penalty to their Will DC against the operative's attempts to @UUID[Compendium.pf2e.actionspf2e.Item.tHCqgwjtQtzNqVvd]{Coerce} or @UUID[Compendium.pf2e.actionspf2e.Item.2u915NdUyQan6uKF]{Demoralize} them.</p>"
+                    "description": "<p>10 feet. Creatures in the aura who are the same or lower level than the operative take a -2 status penalty to their Will DC against the operative's attempts to [[/act coerce]] or [[/act demoralize]] them.</p>"
                 },
                 "action->Attack of Opportunity": {
                     "name": "Attack of Opportunity"
@@ -5501,7 +5501,7 @@
                 },
                 "action->Temporal Shudder": {
                     "name": "Temporal Shudder",
-                    "description": "<p>The temporal echo screams, causing time to shudder and bend around it. All creatures in a @Template[emanation|distance:10] take @Damage[1d10[mental]] damage (@Check[will|dc:13|basic] save). The echo can't use Temporal Shudder again for [[/r {1d4} #Recharge Temporal Shudder]]{1d4 rounds}.</p>"
+                    "description": "<p>The temporal echo screams, causing time to shudder and bend around it. All creatures in a @Template[emanation|distance:10] take @Damage[1d10[mental]|options:area-damage] damage (@Check[will|dc:13|basic|options:area-effect] save). The echo can't use Temporal Shudder again for [[/r {1d4} #Recharge Temporal Shudder]]{1d4 rounds}.</p>"
                 }
             }
         },
@@ -5521,7 +5521,7 @@
                 },
                 "action->Temporal Shudder": {
                     "name": "Temporal Shudder",
-                    "description": "<p>The temporal echo screams, causing time to shudder and bend around it. All creatures in a @Template[emanation|distance:10] take @Damage[3d6[mental]] damage (@Check[will|dc:15|basic] save). Creatures that critically fail the saving throw are @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1} for 1 round. The echo can't use Temporal Shudder again for [[/r {1d4} #Recharge Temporal Shudder]]{1d4 rounds}.</p>"
+                    "description": "<p>The temporal echo screams, causing time to shudder and bend around it. All creatures in a @Template[emanation|distance:10] take @Damage[3d6[mental]|options:area-damage] damage (@Check[will|dc:15|basic|options:area-effect,inflicts:slowed] save). Creatures that critically fail the saving throw are @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1} for 1 round. The echo can't use Temporal Shudder again for [[/r {1d4} #Recharge Temporal Shudder]]{1d4 rounds}.</p>"
                 }
             }
         },
@@ -5541,7 +5541,7 @@
                 },
                 "action->Temporal Shudder": {
                     "name": "Temporal Shudder",
-                    "description": "<p>The temporal echo screams, causing time to shudder and bend around it. All creatures in a @Template[emanation|distance:10] take @Damage[5d6[mental]] damage (@Check[will|dc:18|basic] save). Creatures that fail the saving throw are also @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1} for 1 round. The echo can't use Temporal Shudder again for [[/r {1d4} #Recharge Temporal Shudder]]{1d4 rounds}.</p>"
+                    "description": "<p>The temporal echo screams, causing time to shudder and bend around it. All creatures in a @Template[emanation|distance:10] take @Damage[5d6[mental]|options:area-damage] damage (@Check[will|dc:18|basic|options:area-effect,inflicts:slowed] save). Creatures that fail the saving throw are also @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1} for 1 round. The echo can't use Temporal Shudder again for [[/r {1d4} #Recharge Temporal Shudder]]{1d4 rounds}.</p>"
                 }
             }
         },
@@ -5561,7 +5561,7 @@
                 },
                 "action->Temporal Shudder": {
                     "name": "Temporal Shudder",
-                    "description": "<p>The temporal echo screams, causing time to shudder and bend around it. All creatures in a @Template[emanation|distance:10] take @Damage[7d6[mental]] damage (@Check[will|dc:21|basic] save). Creatures that fail the saving throw are also @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1} for 1 round. The echo can't use Temporal Shudder again for [[/r {1d4} #Recharge Temporal Shudder]]{1d4 rounds}.</p>"
+                    "description": "<p>The temporal echo screams, causing time to shudder and bend around it. All creatures in a @Template[emanation|distance:10] take @Damage[7d6[mental]|options:area-damage] damage (@Check[will|dc:21|basic|options:area-effect,inflicts:slowed] save). Creatures that fail the saving throw are also @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1} for 1 round. The echo can't use Temporal Shudder again for [[/r {1d4} #Recharge Temporal Shudder]]{1d4 rounds}.</p>"
                 }
             }
         },
@@ -6168,7 +6168,7 @@
                 },
                 "action->Fanatical Frenzy": {
                     "name": "Fanatical Frenzy",
-                    "description": "<p><strong>Requirements</strong> The fanatic has taken damage and is neither @UUID[Compendium.pf2e.conditionitems.Item.HL2l2VRSaQHu9lUw]{Fatigued} nor already in a frenzy</p>\n<hr />\n<p><strong>Effect</strong> The cultist flies into a frenzy that lasts 1 minute. While frenzied, the cultist gains a +1 status bonus to attack rolls and a +2 status bonus to damage rolls, and they take a -2 status penalty to AC. The cultist can't voluntarily stop their frenzy. After their frenzy, the cultist is @UUID[Compendium.pf2e.conditionitems.Item.HL2l2VRSaQHu9lUw]{Fatigued}.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.3Wtzyb0ZgkaC7vHY]{Effect: Fanatical Frenzy}</p>"
+                    "description": "<p><strong>Requirements</strong> The fanatic has taken damage and is neither @UUID[Compendium.pf2e.conditionitems.Item.HL2l2VRSaQHu9lUw]{Fatigued} nor already in a frenzy</p><hr /><p><strong>Effect</strong> The cultist flies into a frenzy that lasts 1 minute. While frenzied, the cultist gains a +1 status bonus to attack rolls and a +2 status bonus to damage rolls, and they take a \u20132 status penalty to AC. The cultist can't voluntarily stop their frenzy. After their frenzy, the cultist is fatigued.</p>"
                 },
                 "lore->Iron Ring Lore": {
                     "name": "Iron Ring Lore"

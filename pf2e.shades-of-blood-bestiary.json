@@ -16,7 +16,7 @@
             "items": {
                 "action->Spray Acid": {
                     "name": "Spray Acid",
-                    "description": "<p><strong>Trigger</strong> A creature steps on the south stairs</p><hr /><p><strong>Effect</strong> The guardrail sprays flesh-eating acid, filling the entire stairwell. All living creatures on the stairs area take @Damage[(2d8+9)[acid]] damage (@Check[reflex|dc:27|basic] save). The trap then rolls initiative.</p>"
+                    "description": "<p><strong>Trigger</strong> A creature steps on the south stairs</p><hr /><p><strong>Effect</strong> The guardrail sprays flesh-eating acid, filling the entire stairwell. All living creatures on the stairs area take @Damage[(2d8+9)[acid]|options:area-damage] damage (@Check[reflex|dc:27|basic|options:area-effect] save). The trap then rolls initiative.</p>"
                 }
             }
         },
@@ -37,7 +37,7 @@
                 },
                 "action->Stone Shatter": {
                     "name": "Stone Shatter",
-                    "description": "<p>When an aeon stone swarm is reduced to 0 Hit Points, it explodes in a burst of gem shards, dealing @Damage[3d12[piercing]] damage (@Check[reflex|dc:28|basic] save) in a @Template[type:emanation|distance:30].</p>"
+                    "description": "<p>When an aeon stone swarm is reduced to 0 Hit Points, it explodes in a burst of gem shards, dealing @Damage[3d12[piercing]|options:area-damage] damage (@Check[reflex|dc:28|basic|options:area-effect] save) in a @Template[type:emanation|distance:30].</p>"
                 },
                 "action->Aeon Resonance": {
                     "name": "Aeon Resonance",
@@ -558,7 +558,7 @@
                 },
                 "action->Unholy Exaltation": {
                     "name": "Unholy Exaltation",
-                    "description": "<p>The conductor lets out a terrible scream of joy, dealing @Damage[10d6[sonic]] damage to all creatures in either a @Template[type:cone|distance:30] or a @Template[type:line|distance:90] (@Check[will|dc:28|basic] save). Holy creatures that fail this save are also @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 2}. The conductor can't use Unholy Exaltation again for [[/gmr 1d4 #Recharge Unholy Exaltation]]{1d4 rounds}.</p>"
+                    "description": "<p>The conductor lets out a terrible scream of joy, dealing @Damage[10d6[sonic]|options:area-damage] damage to all creatures in either a @Template[type:cone|distance:30] or a @Template[type:line|distance:90] (@Check[will|dc:28|basic|options:area-effect,inflicts:sickened] save). Holy creatures that fail this save are also @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 2}. The conductor can't use Unholy Exaltation again for [[/gmr 1d4 #Recharge Unholy Exaltation]]{1d4 rounds}.</p>"
                 },
                 "lore->Torture Lore": {
                     "name": "Torture Lore"
@@ -2648,7 +2648,7 @@
                 },
                 "action->Phlegm Mortar": {
                     "name": "Phlegm Mortar",
-                    "description": "<p>The tormonshild spits a globule of mucus and water at a square within 30 feet. Any creature in that square takes @Damage[2d4[bludgeoning]|options:area-effect] damage (@Check[reflex|dc:14|basic|options:area-damage] save). The square also becomes coated with slippery mucus, which has the area effect of @UUID[Compendium.pf2e.spells-srd.Item.Wu0xFpewMKRK3HG8]{Grease} (@Check[reflex|dc:14|options:area-effect]).</p>"
+                    "description": "<p>The tormonshild spits a globule of mucus and water at a square within 30 feet. Any creature in that square takes @Damage[2d4[bludgeoning]|options:area-damage] damage (@Check[reflex|dc:14|basic|options:area-effect] save). The square also becomes coated with slippery mucus, which has the area effect of @UUID[Compendium.pf2e.spells-srd.Item.Wu0xFpewMKRK3HG8]{Grease} (@Check[reflex|dc:14|options:area-effect]).</p>"
                 },
                 "action->Pouncing Bite": {
                     "name": "Pouncing Bite",
@@ -3077,7 +3077,7 @@
                 },
                 "action->Stench of Decay": {
                     "name": "Stench of Decay",
-                    "description": "<p>The necromancer emits a scent of putrid rot in a @Template[type:emanation|distance:5]. A living creature that enters or begins its turn in the aura is @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 1}.</p>"
+                    "description": "<p>The necromancer emits a scent of putrid rot in a 5-foot emanation. A living creature that enters or begins its turn in the aura is @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 1}.</p>"
                 },
                 "action->Vulnerable to Sunlight": {
                     "name": "Vulnerable to Sunlight",

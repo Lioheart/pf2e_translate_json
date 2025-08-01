@@ -1935,7 +1935,7 @@
                 },
                 "action->Soulfire Breath": {
                     "name": "Soulfire Breath",
-                    "description": "<p>Mogaran exhales ghostly green fire in a @Template[cone|distance:60]. Living creatures in the area take @Damage[18d6[void]|options:area-damage] damage (@Check[reflex|dc:38|basic|options:area-effect] save). A good creature that fails this save becomes @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 2} for 1 minute (@UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 4} on a critical failure). A creature slain by Soulfire Breath can't be resurrected except by powerful magic such as a wish spell. Mogaran can't use Soulfire Breath again for [[/gmr 1d4 #Recharge Soulfire Breath]]{1d4 rounds}.</p>"
+                    "description": "<p>Mogaran exhales ghostly green fire in a @Template[cone|distance:60]. Living creatures in the area take @Damage[18d6[void]|options:area-damage] damage (@Check[reflex|dc:38|basic|options:area-effect,inflicts:stupefied] save). A good creature that fails this save becomes @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 2} for 1 minute (@UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 4} on a critical failure). A creature slain by Soulfire Breath can't be resurrected except by powerful magic such as a wish spell. Mogaran can't use Soulfire Breath again for [[/gmr 1d4 #Recharge Soulfire Breath]]{1d4 rounds}.</p>"
                 },
                 "action->Soulfire Inhalation": {
                     "name": "Soulfire Inhalation",
@@ -2157,7 +2157,7 @@
                 },
                 "action->Trumpet Blast": {
                     "name": "Trumpet Blast",
-                    "description": "<p>The oppali emits a massive blast of discordant noise that deals @Damage[9d8[sonic]] damage to creatures within a @Template[cone|distance:60] (@Check[fortitude|dc:29|basic]). Creatures who fail the save are also @UUID[Compendium.pf2e.conditionitems.Item.9PR9y0bi4JPKnHPR]{Deafened} for 1 round. The oppali can't use its Trumpet Blast again for [[/gmr 1d4 #Recharge Trumpet Blast]]{1d4 rounds} or until it takes at least 20 points of sonic damage from a single source (whichever comes first).</p>"
+                    "description": "<p>The oppali emits a massive blast of discordant noise that deals @Damage[9d8[sonic]|options:area-damage] damage to creatures within a @Template[cone|distance:60] (@Check[fortitude|dc:29|basic|options:area-effect,inflicts:deafened]). Creatures who fail the save are also @UUID[Compendium.pf2e.conditionitems.Item.9PR9y0bi4JPKnHPR]{Deafened} for 1 round. The oppali can't use its Trumpet Blast again for [[/gmr 1d4 #Recharge Trumpet Blast]]{1d4 rounds} or until it takes at least 20 points of sonic damage from a single source (whichever comes first).</p>"
                 }
             },
             "skills": {
@@ -2810,7 +2810,7 @@
                 },
                 "action->Storm of Battle": {
                     "name": "Storm of Battle",
-                    "description": "<p>The commander hurls their spear into the air, creating a massive storm in a @Template[burst|distance:100]. Spears of lightning rain down upon enemies in the area, dealing @Damage[5d12[electricity]] damage (@Check[reflex|dc:41|basic] save).</p>"
+                    "description": "<p>The commander hurls their spear into the air, creating a massive storm in a @Template[burst|distance:100]. Spears of lightning rain down upon enemies in the area, dealing @Damage[5d12[electricity]|options:area-damage] damage (@Check[reflex|dc:41|basic|options:area-effect] save).</p>"
                 }
             }
         },

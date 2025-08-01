@@ -16,12 +16,14 @@
         "6-09": "6-09",
         "6-07": "6-07",
         "6-10": "6-10",
+        "6-20": "6-20",
         "6-16": "6-16",
         "6-06": "6-06",
         "6-14": "6-14",
         "6-11": "6-11",
         "6-17": "6-17",
-        "6-12": "6-12"
+        "6-12": "6-12",
+        "6-99": "6-99"
     },
     "entries": {
         "Abendego's Squall (1-2)": {
@@ -300,6 +302,27 @@
                 },
                 "lore->Sailing Lore": {
                     "name": "Sailing Lore"
+                }
+            }
+        },
+        "Angry Victims": {
+            "name": "Angry Victims",
+            "descriptionHazard": "<p>The souls of the ghouls' recent meals cry out from their pile of bones in the nearby tunnel, lamenting their fate.</p>",
+            "disable": "<p>@Check[religion|dc:12] (trained) sets the spirits at ease, or @Check[deception|dc:15], @Check[diplomacy|dc:15], or @Check[intimidation|dc:15] to convince the spirits to not interfere right now. A single success disables the haunt. PCs may accrue additional successes beyond the first\u2014each one convinces the haunt to use telekinetic interference once against ghouls in the haunt's range instead of the living creatures.</p>",
+            "routine": "<p>(two actions) The haunt uses one action to activate its gurgling gasp and then uses telekinetic interference for all of its other actions until it can use gurgling gasp again.</p>",
+            "stealth": "<p>(trained)</p>",
+            "items": {
+                "action->Remember Us!": {
+                    "name": "Remember Us!",
+                    "description": "<p><strong>Trigger</strong> Combat begins</p><hr /><p><strong>Effect</strong> The haunt rolls initiative.</p>"
+                },
+                "action->Gurgling Gasp": {
+                    "name": "Gurgling Gasp",
+                    "description": "<p>The haunt emits a cacophony of the ghoul victims' death rattles, forcing all living creatures within @Template[emanation|distance:80]{80 feet} to attempt a @Check[will|dc:16|options:area-effect,inflicts:frightened] save. On a failure, the creature becomes @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 2} (@UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 3} on a critical failure). On a success, a creature is temporarily immune to gurgling gasp for 1 hour. The haunt cannot use gurgling gasp again for [[/gmr 1d6 #Recharge Gurgling Gasp]]{1d6 rounds}.</p>"
+                },
+                "action->Telekinetic Interference": {
+                    "name": "Telekinetic Interference",
+                    "description": "<p>The haunt attempts to @UUID[Compendium.pf2e.actionspf2e.Item.ge56Lu1xXVFYUnLP]{Trip} a living creature within 60 feet with a bonus of [[/r 1d20+8]]{+8}.</p>"
                 }
             }
         },
@@ -2326,6 +2349,191 @@
                 }
             }
         },
+        "Dispatch Disciple": {
+            "name": "Dispatch Disciple",
+            "items": {
+                "weapon->Dagger": {
+                    "name": "Dagger",
+                    "description": "<p>This small, bladed weapon is held in one hand and used to stab a creature in close combat. It can also be thrown.</p>"
+                },
+                "armor->Leather Armor": {
+                    "name": "Leather Armor",
+                    "description": "<p>A mix of flexible and molded boiled leather, a suit of this type of armor provides some protection with maximum flexibility.</p>"
+                },
+                "equipment->Crimson Cloak": {
+                    "name": "Crimson Cloak"
+                },
+                "strike-melee->Dagger": {
+                    "name": "Dagger"
+                },
+                "strike-melee->Fist": {
+                    "name": "Fist"
+                },
+                "strike-ranged->Dagger": {
+                    "name": "Dagger"
+                },
+                "action->Snagging Catch": {
+                    "name": "Snagging Catch",
+                    "description": "<p><strong>Requirements</strong> The disciple has their crimson cloak raised</p>\n<p><strong>Trigger</strong> The disciple is attacked by a melee weapon</p><hr /><p><strong>Effect</strong> After the attack's result is resolved, the disciple attempts to @UUID[Compendium.pf2e.actionspf2e.Item.Dt6B1slsBy8ipJu9]{Disarm} the triggering weapon, gaining a +1 circumstance bonus. The cloak is destroyed after this action.</p>"
+                },
+                "action->Cloak and Dagger": {
+                    "name": "Cloak and Dagger",
+                    "description": "<p>The disciple raises their heavy crimson cloak, providing them with a +1 circumstance bonus to their AC and also giving them access to the Snagging Catch reaction.</p>"
+                },
+                "action->Pattern Attack": {
+                    "name": "Pattern Attack",
+                    "description": "<p>The disciple's strikes deal 1d4 extra damage to creatures within reach of at least one of the disciple's allies.</p>"
+                }
+            }
+        },
+        "Dispatch Disciple Captain": {
+            "name": "Dispatch Disciple Captain",
+            "items": {
+                "weapon->Dagger": {
+                    "name": "Dagger",
+                    "description": "<p>This small, bladed weapon is held in one hand and used to stab a creature in close combat. It can also be thrown.</p>"
+                },
+                "armor->Leather Armor": {
+                    "name": "Leather Armor",
+                    "description": "<p>A mix of flexible and molded boiled leather, a suit of this type of armor provides some protection with maximum flexibility.</p>"
+                },
+                "equipment->Crimson Cloak": {
+                    "name": "Crimson Cloak"
+                },
+                "strike-melee->Dagger": {
+                    "name": "Dagger"
+                },
+                "strike-melee->Fist": {
+                    "name": "Fist"
+                },
+                "strike-ranged->Dagger": {
+                    "name": "Dagger"
+                },
+                "action->Snagging Catch": {
+                    "name": "Snagging Catch",
+                    "description": "<p><strong>Requirements</strong> The disciple has their crimson cloak raised</p>\n<p><strong>Trigger</strong> The disciple is attacked by a melee weapon</p><hr /><p><strong>Effect</strong> After the attack's result is resolved, the disciple attempts to @UUID[Compendium.pf2e.actionspf2e.Item.Dt6B1slsBy8ipJu9]{Disarm} the triggering weapon, gaining a +1 circumstance bonus. The cloak is destroyed after this action.</p>"
+                },
+                "action->Cloak and Dagger": {
+                    "name": "Cloak and Dagger",
+                    "description": "<p>The disciple raises their heavy crimson cloak, providing them with a +1 circumstance bonus to their AC and also giving them access to the Snagging Catch reaction.</p>"
+                },
+                "action->Pattern Attack": {
+                    "name": "Pattern Attack",
+                    "description": "<p>The disciple's strikes deal 2d6 extra damage to creatures within reach of at least one of the disciple's allies.</p>"
+                }
+            }
+        },
+        "Dispatch Disciple Novice": {
+            "name": "Dispatch Disciple Novice",
+            "items": {
+                "weapon->Dagger": {
+                    "name": "Dagger",
+                    "description": "<p>This small, bladed weapon is held in one hand and used to stab a creature in close combat. It can also be thrown.</p>"
+                },
+                "armor->Leather Armor": {
+                    "name": "Leather Armor",
+                    "description": "<p>A mix of flexible and molded boiled leather, a suit of this type of armor provides some protection with maximum flexibility.</p>"
+                },
+                "equipment->Crimson Cloak": {
+                    "name": "Crimson Cloak"
+                },
+                "strike-melee->Dagger": {
+                    "name": "Dagger"
+                },
+                "strike-melee->Fist": {
+                    "name": "Fist"
+                },
+                "strike-ranged->Dagger": {
+                    "name": "Dagger"
+                },
+                "action->Snagging Catch": {
+                    "name": "Snagging Catch",
+                    "description": "<p><strong>Requirements</strong> The disciple has their crimson cloak raised</p>\n<p><strong>Trigger</strong> The disciple is attacked by a melee weapon</p><hr /><p><strong>Effect</strong> After the attack's result is resolved, the disciple attempts to @UUID[Compendium.pf2e.actionspf2e.Item.Dt6B1slsBy8ipJu9]{Disarm} the triggering weapon, gaining a +1 circumstance bonus. The cloak is destroyed after this action.</p>"
+                },
+                "action->Cloak and Dagger": {
+                    "name": "Cloak and Dagger",
+                    "description": "<p>The disciple raises their heavy crimson cloak, providing them with a +1 circumstance bonus to their AC and also giving them access to the Snagging Catch reaction.</p>"
+                },
+                "action->Pattern Attack": {
+                    "name": "Pattern Attack",
+                    "description": "<p>The disciple's strikes deal 1d4 extra damage to creatures within reach of at least one of the disciple's allies.</p>"
+                }
+            }
+        },
+        "Dispatch Disciple Trainee": {
+            "name": "Dispatch Disciple Trainee",
+            "items": {
+                "weapon->Dagger": {
+                    "name": "Dagger",
+                    "description": "<p>This small, bladed weapon is held in one hand and used to stab a creature in close combat. It can also be thrown.</p>"
+                },
+                "armor->Leather Armor": {
+                    "name": "Leather Armor",
+                    "description": "<p>A mix of flexible and molded boiled leather, a suit of this type of armor provides some protection with maximum flexibility.</p>"
+                },
+                "equipment->Crimson Cloak": {
+                    "name": "Crimson Cloak"
+                },
+                "strike-melee->Dagger": {
+                    "name": "Dagger"
+                },
+                "strike-melee->Fist": {
+                    "name": "Fist"
+                },
+                "strike-ranged->Dagger": {
+                    "name": "Dagger"
+                },
+                "action->Snagging Catch": {
+                    "name": "Snagging Catch",
+                    "description": "<p><strong>Requirements</strong> The disciple has their crimson cloak raised</p>\n<p><strong>Trigger</strong> The disciple is attacked by a melee weapon</p><hr /><p><strong>Effect</strong> After the attack's result is resolved, the disciple attempts to @UUID[Compendium.pf2e.actionspf2e.Item.Dt6B1slsBy8ipJu9]{Disarm} the triggering weapon, gaining a +1 circumstance bonus. The cloak is destroyed after this action.</p>"
+                },
+                "action->Cloak and Dagger": {
+                    "name": "Cloak and Dagger",
+                    "description": "<p>The disciple raises their heavy crimson cloak, providing them with a +1 circumstance bonus to their AC and also giving them access to the Snagging Catch reaction.</p>"
+                },
+                "action->Pattern Attack": {
+                    "name": "Pattern Attack",
+                    "description": "<p>The disciple's strikes deal 1d4 extra damage to creatures within reach of at least one of the disciple's allies.</p>"
+                }
+            }
+        },
+        "Dispatch Disciple Veteran": {
+            "name": "Dispatch Disciple Veteran",
+            "items": {
+                "weapon->Dagger": {
+                    "name": "Dagger",
+                    "description": "<p>This small, bladed weapon is held in one hand and used to stab a creature in close combat. It can also be thrown.</p>"
+                },
+                "armor->Leather Armor": {
+                    "name": "Leather Armor",
+                    "description": "<p>A mix of flexible and molded boiled leather, a suit of this type of armor provides some protection with maximum flexibility.</p>"
+                },
+                "equipment->Crimson Cloak": {
+                    "name": "Crimson Cloak"
+                },
+                "strike-melee->Dagger": {
+                    "name": "Dagger"
+                },
+                "strike-melee->Fist": {
+                    "name": "Fist"
+                },
+                "strike-ranged->Dagger": {
+                    "name": "Dagger"
+                },
+                "action->Snagging Catch": {
+                    "name": "Snagging Catch",
+                    "description": "<p><strong>Requirements</strong> The disciple has their crimson cloak raised</p>\n<p><strong>Trigger</strong> The disciple is attacked by a melee weapon</p><hr /><p><strong>Effect</strong> After the attack's result is resolved, the disciple attempts to @UUID[Compendium.pf2e.actionspf2e.Item.Dt6B1slsBy8ipJu9]{Disarm} the triggering weapon, gaining a +1 circumstance bonus. The cloak is destroyed after this action.</p>"
+                },
+                "action->Cloak and Dagger": {
+                    "name": "Cloak and Dagger",
+                    "description": "<p>The disciple raises their heavy crimson cloak, providing them with a +1 circumstance bonus to their AC and also giving them access to the Snagging Catch reaction.</p>"
+                },
+                "action->Pattern Attack": {
+                    "name": "Pattern Attack",
+                    "description": "<p>The disciple's strikes deal 1d6 extra damage to creatures within reach of at least one of the disciple's allies.</p>"
+                }
+            }
+        },
         "Divine Oozeshard": {
             "name": "Divine Oozeshard",
             "acDetails": "(26 while in armored apotheosis form)",
@@ -2453,7 +2661,7 @@
                 },
                 "action->Spore Cloud": {
                     "name": "Spore Cloud",
-                    "description": "<p>A leshy ghoul can unleash a cloud of spores that irritates the eyes and throats of non-fungus creatures in a @Template[type:emanation|distance:15]. Each creature must succeed at a @Check[fortitude|dc:19] save or take @Damage[1[persistent,poison]] damage. A creature has its vision reduced as long as the persistent damage continues and can see only within 20 feet.</p>"
+                    "description": "<p>A leshy ghoul can unleash a cloud of spores that irritates the eyes and throats of non-fungus creatures in a @Template[type:emanation|distance:15]. Each creature must succeed at a @Check[fortitude|dc:19|options:area-effect,damaging-effect] save or take @Damage[1[persistent,poison]|options:area-damage] damage. A creature has its vision reduced as long as the persistent damage continues and can see only within 20 feet.</p>"
                 },
                 "action->Spores": {
                     "name": "Spores",
@@ -2837,6 +3045,51 @@
                 }
             }
         },
+        "Empowered Rowan the Whispering": {
+            "name": "Empowered Rowan the Whispering",
+            "items": {
+                "weapon->Dagger": {
+                    "name": "Dagger",
+                    "description": "<p>This small, bladed weapon is held in one hand and used to stab a creature in close combat. It can also be thrown.</p>"
+                },
+                "weapon->Serpent Dagger": {
+                    "name": "Serpent Dagger",
+                    "description": "<p>The serrated blade of this <em>+1 striking dagger</em> has a greenish tinge, and the hilt is sculpted to look like the head of a serpent about to strike.</p>\n<p>When you critically succeed at an attack roll with the <em>serpent dagger</em>, the target becomes @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 1} unless it succeeds at a @Check[fortitude|dc:19] save. This is a poison effect.</p>\n<p>In addition, you can activate the dagger to poison a creature with a more potent poison.</p>\n<hr />\n<p><strong>Activate\u2014Drip Poison</strong> <span class=\"action-glyph\">F</span> (manipulate)</p>\n<p><strong>Frequency</strong> once per day</p>\n<p><strong>Trigger</strong> You damage a creature with the <em>serpent dagger</em></p>\n<p><strong>Effect</strong> You poison the creature you hit with dagger venom.</p>\n<hr />\n<p><strong>Dagger Venom</strong> (poison)</p>\n<p><strong>Saving Throw</strong> @Check[fortitude|dc:21]</p>\n<p><strong>Maximum Duration</strong> 4 rounds</p>\n<p><strong>Stage 1</strong> @Damage[1d8[poison]] damage and @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 1}</p>"
+                },
+                "weapon->+1 Striking Handwraps of Mighty Blows": {
+                    "name": "+1 Striking Handwraps of Mighty Blows",
+                    "description": "<p>As you invest these embroidered strips of cloth, you must meditate and slowly wrap them around your hands. These handwraps have weapon runes etched into them to give your unarmed attacks the benefits of those runes, making your unarmed attacks work like magic weapons. For example, <em>+1 striking handwraps of mighty blows</em> would give you a +1 item bonus to attack rolls with your unarmed attacks and increase the damage of your unarmed attacks from one weapon die to two (normally 2d4 instead of 1d4, but if your fists have a different weapon damage die or you have other unarmed attacks, use two of that die size instead).</p>\n<p>You can upgrade, add, and transfer runes to and from the handwraps just as you would for a weapon, and you can attach talismans to the handwraps. Treat the handwraps as melee weapons of the brawling group with light Bulk for these purposes. Property runes apply only when they would be applicable to the unarmed attack you're using. For example, a property that must be applied to a slashing weapon wouldn't function when you attacked with a fist, but you would gain its benefits if you attacked with a claw or some other slashing unarmed attack.</p>"
+                },
+                "armor->Leather Armor": {
+                    "name": "Leather Armor",
+                    "description": "<p>A mix of flexible and molded boiled leather, a suit of this type of armor provides some protection with maximum flexibility.</p>"
+                },
+                "strike-melee->Serpent Dagger": {
+                    "name": "Serpent Dagger"
+                },
+                "strike-melee->Dagger": {
+                    "name": "Dagger"
+                },
+                "strike-melee->Fist": {
+                    "name": "Fist"
+                },
+                "strike-ranged->Serpent Dagger": {
+                    "name": "Serpent Dagger"
+                },
+                "action->Tether Pull": {
+                    "name": "Tether Pull",
+                    "description": "<p><strong>Trigger</strong> Rowan has thrown her @UUID[Compendium.pf2e.equipment-srd.Item.ZvIEJCY60fHqzl6r]{Serpent Dagger} at a target</p>\n<p><strong>Frequency</strong> once per turn</p><hr /><p><strong>Effect</strong> After the attack's result is resolved, Rowan yanks on the cord attached to the weapon's hilt, returning it to her hand. If she throws the weapon to a distance of 20 feet or beyond, this ability becomes 1-action and gains the manipulate trait.</p>"
+                },
+                "action->Flash Attack": {
+                    "name": "Flash Attack",
+                    "description": "<p>Rowan's strikes deal 2d6 extra damage to creatures who are @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} to her, or who are within reach of at least one of her allies.</p>"
+                },
+                "action->Mirror Step": {
+                    "name": "Mirror Step",
+                    "description": "<p><strong>Requirements</strong> Rowan is within 30 feet of one of the circular mirrors in the southern two rooms of the laboratory</p><hr /><p><strong>Effect</strong> Rowan uses her connection to the aiudara fragments to translocate. She Strides once into one of the circular mirrors, teleporting to any other such mirror of her choice. When she does this, she leaves behind a mirrored image of herself until the start of her next turn. This image acts as an ally for all purposes, but has an AC of 0, 1 HP, and cannot take actions.</p>"
+                }
+            }
+        },
         "Empowered Shadow Lesolethe": {
             "name": "Empowered Shadow Lesolethe",
             "items": {
@@ -3054,6 +3307,47 @@
                 }
             }
         },
+        "Enraged Rowan the Whispering": {
+            "name": "Enraged Rowan the Whispering",
+            "items": {
+                "weapon->Dagger": {
+                    "name": "Dagger",
+                    "description": "<p>This small, bladed weapon is held in one hand and used to stab a creature in close combat. It can also be thrown.</p>"
+                },
+                "weapon->Serpent Dagger": {
+                    "name": "Serpent Dagger",
+                    "description": "<p>The serrated blade of this <em>+1 striking dagger</em> has a greenish tinge, and the hilt is sculpted to look like the head of a serpent about to strike.</p>\n<p>When you critically succeed at an attack roll with the <em>serpent dagger</em>, the target becomes @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 1} unless it succeeds at a @Check[fortitude|dc:19] save. This is a poison effect.</p>\n<p>In addition, you can activate the dagger to poison a creature with a more potent poison.</p>\n<hr />\n<p><strong>Activate\u2014Drip Poison</strong> <span class=\"action-glyph\">F</span> (manipulate)</p>\n<p><strong>Frequency</strong> once per day</p>\n<p><strong>Trigger</strong> You damage a creature with the <em>serpent dagger</em></p>\n<p><strong>Effect</strong> You poison the creature you hit with dagger venom.</p>\n<hr />\n<p><strong>Dagger Venom</strong> (poison)</p>\n<p><strong>Saving Throw</strong> @Check[fortitude|dc:21]</p>\n<p><strong>Maximum Duration</strong> 4 rounds</p>\n<p><strong>Stage 1</strong> @Damage[1d8[poison]] damage and @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 1}</p>"
+                },
+                "armor->Leather Armor": {
+                    "name": "Leather Armor",
+                    "description": "<p>A mix of flexible and molded boiled leather, a suit of this type of armor provides some protection with maximum flexibility.</p>"
+                },
+                "strike-melee->Serpent Dagger": {
+                    "name": "Serpent Dagger"
+                },
+                "strike-melee->Dagger": {
+                    "name": "Dagger"
+                },
+                "strike-melee->Fist": {
+                    "name": "Fist"
+                },
+                "strike-ranged->Serpent Dagger": {
+                    "name": "Serpent Dagger"
+                },
+                "action->Tether Pull": {
+                    "name": "Tether Pull",
+                    "description": "<p><strong>Trigger</strong> Rowan has thrown her @UUID[Compendium.pf2e.equipment-srd.Item.ZvIEJCY60fHqzl6r]{Serpent Dagger} at a target</p>\n<p><strong>Frequency</strong> once per turn</p><hr /><p><strong>Effect</strong> After the attack's result is resolved, Rowan yanks on the cord attached to the weapon's hilt, returning it to her hand. If she throws the weapon to a distance of 20 feet or beyond, this ability becomes 1-action and gains the manipulate trait.</p>"
+                },
+                "action->Flash Attack": {
+                    "name": "Flash Attack",
+                    "description": "<p>Rowan's strikes deal 1d6 extra damage to creatures who are @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} to her, or who are within reach of at least one of her allies.</p>"
+                },
+                "action->Mirror Step": {
+                    "name": "Mirror Step",
+                    "description": "<p><strong>Requirements</strong> Rowan is within 30 feet of one of the circular mirrors in the southern two rooms of the laboratory</p><hr /><p><strong>Effect</strong> Rowan uses her connection to the aiudara fragments to translocate. She Strides once into one of the circular mirrors, teleporting to any other such mirror of her choice. When she does this, she leaves behind a mirrored image of herself until the start of her next turn. This image acts as an ally for all purposes, but has an AC of 0, 1 HP, and cannot take actions.</p>"
+                }
+            }
+        },
         "Enraged The Heartwood Rots": {
             "name": "Enraged The Heartwood Rots",
             "publicNotes": "<p>Vampires use their servitor pawns for infiltration and reconnaissance.</p>\n<hr />\n<p>Vampires are undead creatures that feed on the blood of the living.</p>",
@@ -3149,6 +3443,26 @@
                 "action->Lunge": {
                     "name": "Lunge",
                     "description": "<p>The bandit makes a Strike with the spiked chain, increasing their reach by 5 feet for that Strike. The bandit can @UUID[Compendium.pf2e.actionspf2e.Item.Dt6B1slsBy8ipJu9]{Disarm} or @UUID[Compendium.pf2e.actionspf2e.Item.ge56Lu1xXVFYUnLP]{Trip} instead of a Strike.</p>"
+                }
+            }
+        },
+        "Extremely Haunted Hollows": {
+            "name": "Extremely Haunted Hollows",
+            "descriptionHazard": "<p>The spirits of innumerable dryads and peaceful wood elementals, ripped from their bodies as they were turned into furniture, writhe and seethe, lashing out at both living and undead alike.</p>",
+            "disable": "<p>@Check[diplomacy|dc:23] (trained), @Check[nature|dc:23] (trained), or @Check[religion|dc:23] (trained) to set the spirits to rest or @Check[deception|dc:27], @Check[intimidation|dc:27], or @Check[occultism|dc:27] to convince the spirits that their eternal rest is coming soon.</p><p>A PC may make a Strike against AC 22 to destroy a single table or chair in the room, this functions as a successful check to @UUID[Compendium.pf2e.actionspf2e.Item.HCl3pzVefiv9ZKQW]{Aid} another PC attempting to disable the haunt; two total successes are required to disable the haunt. If all of the tables and chairs are destroyed, the haunt is temporarily disabled until dawn of the next day.</p>",
+            "routine": "<p>(two actions) The Haunted Hollows haunt uses table flip or chair toss Strikes at different creatures in the area, favoring those who are trying to disable the haunt first, but otherwise choosing randomly. The table flip Strikes originate with any table in the room, destroying the table in the process. The chair toss Strikes originate with any chair or bar stool in the room, destroying that object in the process. If the haunt is not disabled, these objects reform and return to their original positions at dawn of the next day.</p>",
+            "stealth": "<p>(expert)</p>",
+            "items": {
+                "action->Warped Wood": {
+                    "name": "Warped Wood",
+                    "description": "<p><strong>Trigger</strong> Any living or undead creatures approach within 30 feet of the haunt's locus (the center of the open balcony) inside the tavern</p><hr /><p><strong>Effect</strong> The haunt makes a table flip Strike with a reach of 20 feet against a random creature in the area, and then rolls initiative.</p>"
+                },
+                "strike-melee->Table Flip": {
+                    "name": "Table Flip"
+                },
+                "strike-ranged->Chair Toss": {
+                    "name": "Chair Toss",
+                    "description": "<p>No multiple attack penalty</p>"
                 }
             }
         },
@@ -3415,6 +3729,60 @@
                 }
             }
         },
+        "Ghoul Commando": {
+            "name": "Ghoul Commando",
+            "publicNotes": "<p>Retaining their martial skill, these powerful ghouls are not afraid to meet their foe in the open, feeding on the flesh of their fallen opponents to learn their combat abilities.</p>\n<hr />\n<p>Few creatures are more ubiquitous to sinister locations such as lonely graveyards and ruined crypts than the flesh-eating undead known as ghouls.</p>",
+            "blurb": "Variant ghoul soldier",
+            "hpDetails": "void healing",
+            "items": {
+                "weapon->Bastard Sword": {
+                    "name": "Bastard Sword",
+                    "description": "<p>This broad-bladed sword, sometimes called the hand-and-a-half sword, has a longer grip so it can be held in one hand or used with two hands to provide extra slashing power.</p>"
+                },
+                "armor->Breastplate": {
+                    "name": "Breastplate",
+                    "description": "<p>Though referred to as a breastplate, this type of armor consists of several pieces of plate or @UUID[Compendium.pf2e.equipment-srd.Item.pRoikbRo5HFW6YUB]{Half Plate} armor that protect the torso, chest, neck, and sometimes the hips and lower legs. It strategically grants some of the protection of plate while allowing greater flexibility and speed.</p>"
+                },
+                "strike-melee->Jaws": {
+                    "name": "Jaws"
+                },
+                "strike-melee->Claw": {
+                    "name": "Claw"
+                },
+                "strike-melee->Bastard Sword": {
+                    "name": "Bastard Sword"
+                },
+                "action->Reactive Strike": {
+                    "name": "Reactive Strike"
+                },
+                "action->Stench": {
+                    "name": "Stench",
+                    "description": "<p>10 feet, @Check[fortitude|dc:19]</p><hr /><p>@Localize[PF2E.NPC.Abilities.Glossary.Stench]</p>"
+                },
+                "action->Void Healing": {
+                    "name": "Void Healing"
+                },
+                "action->Consume Flesh": {
+                    "name": "Consume Flesh",
+                    "description": "<p><strong>Requirements</strong> The ghoul is adjacent to the corpse of a creature that died within the last hour.</p><hr /><p><strong>Effect</strong> The ghoul devours a chunk of the corpse and regains @Damage[3d6[healing]] Hit Points.</p>\n<p>It can regain Hit Points from any given corpse only once.</p>"
+                },
+                "action->Ghoul Whispers": {
+                    "name": "Ghoul Whispers",
+                    "description": "<p><strong>Requirements</strong> A @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed}, @UUID[Compendium.pf2e.conditionitems.Item.6uEgoh53GbXuHpTF]{Paralyzed}, @UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{Restrained}, or @UUID[Compendium.pf2e.conditionitems.Item.fBnFDH2MTzgFijKf]{Unconscious} creature is within the ghoul's reach</p><hr /><p><strong>Effect</strong> The ghoul whispers dark thoughts and vile cravings into the creature's ears. The creature must save against the forbidden cravings curse.</p>\n<p><strong>Forbidden Cravings</strong> (curse) A creature can still eat and drink while sickened by this curse</p>\n<p><strong>Saving Throw</strong> @Check[will|dc:22|traits:curse]</p>\n<p><strong>Stage 1</strong> carrier with no ill effects (1 day)</p>\n<p><strong>Stage 2</strong> @Damage[2d6[void]] damage and the target is @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 1} until it consumes raw meat (1 day)</p>\n<p><strong>Stage 3</strong> as stage 2</p>\n<p><strong>Stage 4</strong> as stage 2 unless the target has consumed raw meat in the past 24 hours, then it takes @Damage[4d6[void]] damage and is @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 2} until it consumes raw meat;</p>\n<p><strong>Stage 5</strong> if the creature has eaten raw meat in the past 24 hours, it dies and rises as a ghoul, if not, it returns to stage 4</p>"
+                },
+                "action->Grave Knowledge": {
+                    "name": "Grave Knowledge",
+                    "description": "<p>[[/r 1d20+13]]{+13} skill modifier</p><hr /><p><strong>Frequency</strong> once per hour</p><hr /><p><strong>Effect</strong> The ghoul calls upon knowledge it retains from one creature it has consumed in the past 7 days. The ghoul attempts a skill check using a skill in which the consumed creature was trained (if it's unclear whether the creature was trained, the GM decides). The ghoul is treated as trained and uses the high skill modifier for the ghoul's level. This takes the same amount of actions or time as usual for the check.</p>\n<p>The ghoul can instead automatically learn something specific known by a creature it consumed in the last 7 days, like the location of a @UUID[Compendium.pf2e.conditionitems.Item.iU0fEDdBp3rXpTMC]{Hidden} treasure or the name of a loved one. The ghoul can do this only once for a given creature, no matter how much of its flesh the ghoul consumed.</p>"
+                },
+                "action->Swift Leap": {
+                    "name": "Swift Leap",
+                    "description": "<p>The ghoul jumps up to half its Speed. This movement doesn't trigger reactions.</p>"
+                },
+                "action->Grab": {
+                    "name": "Grab"
+                }
+            }
+        },
         "Giant Stinkbug": {
             "name": "Giant Stinkbug",
             "items": {
@@ -3423,7 +3791,7 @@
                 },
                 "action->Stink Blast": {
                     "name": "Stink Blast",
-                    "description": "<p><strong>Frequency</strong> once per minute</p><hr /><p><strong>Effect</strong> The giant stinkbug turns and sends a spurt of foul liquid from its rear in a @Template[type:cone|distance:10], dealing @Damage[2d6[poison]] damage with a @Check[reflex|dc:15|basic] save. On a critical failure, an affected creature is also @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 1}.</p>"
+                    "description": "<p><strong>Frequency</strong> once per minute</p><hr /><p><strong>Effect</strong> The giant stinkbug turns and sends a spurt of foul liquid from its rear in a @Template[type:cone|distance:10], dealing @Damage[2d6[poison]|options:area-damage] damage with a @Check[reflex|dc:15|basic|options:area-effect,inflicts:sickened] save. On a critical failure, an affected creature is also @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 1}.</p>"
                 }
             }
         },
@@ -3646,6 +4014,56 @@
                 }
             }
         },
+        "Harbinger of Ingalor": {
+            "name": "Harbinger of Ingalor",
+            "items": {
+                "action->Chthonic Cloud": {
+                    "name": "Chthonic Cloud",
+                    "description": "<p>Creatures inside the swarm's space are @UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{Concealed} from creatures outside of its space, and vice versa.</p>"
+                },
+                "action->Disgusting Chorus": {
+                    "name": "Disgusting Chorus",
+                    "description": "<p>20 feet. The swarm's component members cry out, crawling all over everything and everyone with sickening sounds and limbs. Creatures who enter or begin their turns inside the aura must attempt a @Check[fortitude|dc:25|options:inflicts:sickened] save. Once a creature has been targeted by this ability, regardless of the result, they are temporarily immune to Disgusting Chorus for 1 hour.</p><hr /><p><strong>Success</strong> No effect.</p>\n<p><strong>Failure</strong> The creature becomes @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 1}, and cannot reduce their sickened condition below 1 while inside the swarm's space.</p>\n<p><strong>Critical Failure</strong> The creature becomes @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 2}, and cannot reduce their sickened condition below 1 while inside the swarm's space.</p>"
+                },
+                "action->Feast on Flesh": {
+                    "name": "Feast on Flesh",
+                    "description": "<p>The swarm pulls at flesh just as locusts strip away vegetation. Each enemy in the swarm's space must succeed at a @Check[fortitude|dc:23|options:area-effect,damaging-effect] save or take @Damage[3d6[persistent,bleed]|options:area-damage] damage.</p>"
+                },
+                "action->Swallowed Foulness": {
+                    "name": "Swallowed Foulness",
+                    "description": "<p><strong>Trigger</strong> A creature begins its turn inside the swarm's space and isn't holding its breath</p><hr /><p><strong>Effect</strong> Individual insects swarm down the creature's throat and explode, dealing them @Damage[1[acid]] damage and requiring them to make a @Check[will|dc:25] save.</p><hr /><p><strong>Success</strong> No effect.</p>\n<p><strong>Failure</strong> The creature becomes @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 1} until the end of their current turn as they recover from the disgusting experience.</p>\n<p><strong>Critical Failure</strong> As success, but until the end of their next turn.</p>"
+                },
+                "action->Thousands of Teeth": {
+                    "name": "Thousands of Teeth",
+                    "description": "<p>Each enemy in the swarm's space takes @Damage[3d10[piercing]|options:area-damage] damage (@Check[reflex|dc:25|basic|options:area-effect] save)</p>"
+                }
+            }
+        },
+        "Harbinger of Ingalor (11-12)": {
+            "name": "Harbinger of Ingalor (11-12)",
+            "items": {
+                "action->Chthonic Cloud": {
+                    "name": "Chthonic Cloud",
+                    "description": "<p>Creatures inside the swarm's space are @UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{Concealed} from creatures outside of its space, and vice versa.</p>"
+                },
+                "action->Disgusting Chorus": {
+                    "name": "Disgusting Chorus",
+                    "description": "<p>20 feet. The swarm's component members cry out, crawling all over everything and everyone with sickening sounds and limbs. Creatures who enter or begin their turns inside the aura must attempt a @Check[fortitude|dc:28|options:inflicts:sickened] save. Once a creature has been targeted by this ability, regardless of the result, they are temporarily immune to Disgusting Chorus for 1 hour.</p><hr /><p><strong>Success</strong> No effect.</p>\n<p><strong>Failure</strong> The creature becomes @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 1}, and cannot reduce their sickened condition below 1 while inside the swarm's space.</p>\n<p><strong>Critical Failure</strong> The creature becomes @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 2}, and cannot reduce their sickened condition below 1 while inside the swarm's space.</p>"
+                },
+                "action->Feast on Flesh": {
+                    "name": "Feast on Flesh",
+                    "description": "<p>The swarm pulls at flesh just as locusts strip away vegetation. Each enemy in the swarm's space must succeed at a @Check[fortitude|dc:26|options:area-effect,damaging-effect] save or take @Damage[3d6[persistent,bleed]|options:area-damage] damage.</p>"
+                },
+                "action->Swallowed Foulness": {
+                    "name": "Swallowed Foulness",
+                    "description": "<p><strong>Trigger</strong> A creature begins its turn inside the swarm's space and isn't holding its breath</p><hr /><p><strong>Effect</strong> Individual insects swarm down the creature's throat and explode, dealing them @Damage[1[acid]] damage and requiring them to make a @Check[will|dc:28] save.</p><hr /><p><strong>Success</strong> No effect.</p>\n<p><strong>Failure</strong> The creature becomes @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 1} until the end of their current turn as they recover from the disgusting experience.</p>\n<p><strong>Critical Failure</strong> As success, but until the end of their next turn.</p>"
+                },
+                "action->Thousands of Teeth": {
+                    "name": "Thousands of Teeth",
+                    "description": "<p>Each enemy in the swarm's space takes @Damage[3d12[piercing]|options:area-damage] damage (@Check[reflex|dc:28|basic|options:area-effect] save)</p>"
+                }
+            }
+        },
         "Hatched Shemhazian": {
             "name": "Hatched Shemhazian",
             "publicNotes": "<p>Shemhazians rise from the souls of torturers and those who reveled in mutilating the physical bodies of their victims. Standing 35 feet tall, a shemhazian is well equipped with a wide range of claws, pincers, and fangs to continue inflicting such torments on those they encounter.</p>\n<p>Shemhazians delight in tormenting mortals, of course, but more than most demons, they revel in sharing the pain with their own kind. Other demons fear and hate shemhazians for this reason, with only the most powerful willing to work with a shemhazian to achieve a shared goal. Even then, the shemhazian is always on the watch for an opportunity to bring pain and suffering to their allies along with any foe.</p>\n<hr />\n<p>When a sinful mortal soul is judged and sent on to the Outer Rifts, it can become a deadly fiend\u2014a demon. Demons are living incarnations of sin\u2014be they classic sins like wrath or gluttony, or more \"specialized\" depravities like an obsession with torture or the act of treason or treachery. Once formed, a demon's driving goals are twofold\u2014the amassing of personal power, and the corruption of mortal souls to cause them to become tainted by sin. In this way demons ensure a never-ending supply of new demons to bolster their ever-growing ranks in the Outer Rifts.</p>\n<p>Demons are selfish and self-absorbed creatures, and most firmly believe that mortals only play at being more virtuous than fiends. They enjoy tempting mortals into damnation to both indulge their egos and swell their armies. Like many other fiends, one of the great rewards of this manipulation is fulfilling their hunger for souls. In their eyes, the primary use for these souls is to spawn new demons, who can serve as soldiers, slaves, pawns, or even currency for their more powerful masters.</p>",
@@ -3735,6 +4153,26 @@
                 }
             }
         },
+        "Haunted Hollows": {
+            "name": "Haunted Hollows",
+            "descriptionHazard": "<p>The spirits of innumerable dryads and peaceful wood elementals, ripped from their bodies as they were turned into furniture, writhe and seethe, lashing out at both living and undead alike.</p>",
+            "disable": "<p>@Check[diplomacy|dc:17] (trained), @Check[nature|dc:17] (trained), or @Check[religion|dc:17] (trained) to set the spirits to rest or @Check[deception|dc:20], @Check[intimidation|dc:20], or @Check[occultism|dc:20] to convince the spirits that their eternal rest is coming soon.</p><p>A PC may make a Strike against AC 16 to destroy a single table or chair in the room, this functions as a successful check to @UUID[Compendium.pf2e.actionspf2e.Item.HCl3pzVefiv9ZKQW]{Aid} another PC attempting to disable the haunt; two total successes are required to disable the haunt. If all of the tables and chairs are destroyed, the haunt is temporarily disabled until dawn of the next day.</p>",
+            "routine": "<p>(two actions) The Haunted Hollows haunt uses one table flip Strike or two chair toss Strikes at random creatures in the area, favoring those who are trying to disable the haunt first. The table flip Strikes originate with any table in the room, destroying the table in the process. The chair toss Strikes originate with any chair or bar stool in the room, destroying that object in the process. If the haunt is not disabled, these objects reform and return to their original positions at dawn of the next day.</p>",
+            "stealth": "<p>(trained)</p>",
+            "items": {
+                "action->Warped Wood": {
+                    "name": "Warped Wood",
+                    "description": "<p><strong>Trigger</strong> Any living or undead creatures approach within 30 feet of the haunt's locus (the center of the open balcony) inside the tavern</p><hr /><p><strong>Effect</strong> The haunt makes a table flip Strike with a reach of 20 feet against a random creature in the area, and then rolls initiative.</p>"
+                },
+                "strike-melee->Table Flip": {
+                    "name": "Table Flip"
+                },
+                "strike-ranged->Chair Toss": {
+                    "name": "Chair Toss",
+                    "description": "<p>No multiple attack penalty</p>"
+                }
+            }
+        },
         "Haunting Elegecide (Doom Demon)": {
             "name": "Haunting Elegecide (Doom Demon)",
             "languagesDetails": "telepathy 100 feet",
@@ -3760,6 +4198,96 @@
                 "action->Dorsal Lash": {
                     "name": "Dorsal Lash",
                     "description": "<p>The elegecide lashes out with its trailing dorsal fins, looping them around a target within 15 feet. It sends a burst of telepathic information about all the possible ways the target can be injured in the next minute. The target takes @Damage[(1d4+2)[mental]] damage and must attempt a @Check[reflex|dc:18|traits:damaging-effect] save.</p><hr /><p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target takes half damage.</p>\n<p><strong>Failure</strong> The target takes full damage and is @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed} by the elegecide.</p>\n<p><strong>Critical Failure</strong> The target takes double damage and is @UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{Restrained} by the elegecide.</p>"
+                }
+            }
+        },
+        "Hesla, The Broken Ember": {
+            "name": "Hesla, The Broken Ember",
+            "allSavesBonus": "+2 status bonus versus attempts to disarm",
+            "items": {
+                "strike-melee->Fist": {
+                    "name": "Fist"
+                },
+                "strike-ranged->Rift Locusts": {
+                    "name": "Rift Locusts"
+                },
+                "action->Rift-Enhanced": {
+                    "name": "Rift-Enhanced",
+                    "description": "<p>While wielding <em>Riftcarver</em>, Hesla Embersplitter is empowered by this demonic artifact and gains one additional reaction at the beginning of each of her turns.</p>"
+                },
+                "action->+2 Status Bonus Versus Attempts to Disarm": {
+                    "name": "+2 Status Bonus Versus Attempts to Disarm"
+                },
+                "action->Ember Spinner": {
+                    "name": "Ember Spinner",
+                    "description": "<p><strong>Requirements</strong> Hesla Embersplitter is wielding <em>Riftcarver</em></p>\n<p><strong>Trigger</strong> Hesla is targeted by a Strike or spell with the attack trait</p><hr /><p><strong>Effect</strong> Hesla spins <em>Riftcarver</em> at high speed, making her @UUID[Compendium.pf2e.conditionitems.Item.iU0fEDdBp3rXpTMC]{Hidden} from the triggering Strike or spell. If she still takes damage, she can attempt to redirect some of that energy back to the creature who damaged her by making a melee Strike with <em>Riftcarver</em> against a DC equal to the attack roll that hit her, even at range. If she succeeds, the target creature takes @Damage[12[spirit]] damage (double on a critical success, @Damage[24[spirit]]).</p>"
+                },
+                "action->Reactive Strike": {
+                    "name": "Reactive Strike"
+                },
+                "action->Betrayer of Demons": {
+                    "name": "Betrayer of Demons",
+                    "description": "<p><strong>Requirements</strong> Hesla critically hits a foe or critically succeeds at her Ember Spinner reaction</p><hr /><p><strong>Effect</strong> Demonic hands tear through reality, ripping at the soul of a different enemy selected at random within 30 feet of the initial target, dealing @Damage[7d6[spirit]] damage with a @Check[will|dc:32|basic] save.</p>"
+                },
+                "action->Breaker of Cities": {
+                    "name": "Breaker of Cities",
+                    "description": "<p><strong>Requirements</strong> Hesla is wielding <em>Riftcarver</em></p><hr /><p><strong>Effect</strong> <em>Riftcarver</em> extends to an impossible length, dealing @Damage[6d8[slashing]|options:area-damage] damage to all creatures in a @Template[type:line|distance:60] with a @Check[reflex|dc:32|basic|options:area-effect] save.</p>"
+                },
+                "action->Drink of the Embers": {
+                    "name": "Drink of the Embers",
+                    "description": "<p><strong>Requirements</strong> Hesla's last action was a successful Strike against a creature</p><hr /><p><strong>Effect</strong> Embers burn around Hesla Embersplitter's body as she absorbs their lost energy. She regains Hit Points equal to half the damage dealt.</p>"
+                },
+                "action->Unholy Scythe": {
+                    "name": "Unholy Scythe",
+                    "description": "<p>As an unholy artifact, melee and ranged attacks from <em>Riftcarver</em> deal an extra 2d4 points of spirit damage to holy targets.</p>"
+                },
+                "lore->Deskari Lore": {
+                    "name": "Deskari Lore"
+                }
+            }
+        },
+        "Hesla, The Broken Ember (11-12)": {
+            "name": "Hesla, The Broken Ember (11-12)",
+            "allSavesBonus": "+2 status bonus versus attempts to disarm",
+            "items": {
+                "strike-melee->Fist": {
+                    "name": "Fist"
+                },
+                "strike-ranged->Rift Locusts": {
+                    "name": "Rift Locusts"
+                },
+                "action->Rift-Enhanced": {
+                    "name": "Rift-Enhanced",
+                    "description": "<p>While wielding <em>Riftcarver</em>, Hesla Embersplitter is empowered by this demonic artifact and gains one additional reaction at the beginning of each of her turns.</p>"
+                },
+                "action->+2 Status Bonus Versus Attempts to Disarm": {
+                    "name": "+2 Status Bonus Versus Attempts to Disarm"
+                },
+                "action->Ember Spinner": {
+                    "name": "Ember Spinner",
+                    "description": "<p><strong>Requirements</strong> Hesla Embersplitter is wielding <em>Riftcarver</em></p>\n<p><strong>Trigger</strong> Hesla is targeted by a Strike or spell with the attack trait</p><hr /><p><strong>Effect</strong> Hesla spins <em>Riftcarver</em> at high speed, making her @UUID[Compendium.pf2e.conditionitems.Item.iU0fEDdBp3rXpTMC]{Hidden} from the triggering Strike or spell. If she still takes damage, she can attempt to redirect some of that energy back to the creature who damaged her by making a melee Strike with <em>Riftcarver</em> against a DC equal to the attack roll that hit her, even at range. If she succeeds, the target creature takes @Damage[14[spirit]] damage (double on a critical success, @Damage[28[spirit]]).</p>"
+                },
+                "action->Reactive Strike": {
+                    "name": "Reactive Strike"
+                },
+                "action->Betrayer of Demons": {
+                    "name": "Betrayer of Demons",
+                    "description": "<p><strong>Requirements</strong> Hesla critically hits a foe or critically succeeds at her Ember Spinner reaction</p><hr /><p><strong>Effect</strong> Demonic hands tear through reality, ripping at the soul of a different enemy selected at random within 30 feet of the initial target, dealing @Damage[8d6[spirit]] damage with a @Check[will|dc:34|basic] save.</p>"
+                },
+                "action->Breaker of Cities": {
+                    "name": "Breaker of Cities",
+                    "description": "<p><strong>Requirements</strong> Hesla is wielding <em>Riftcarver</em></p><hr /><p><strong>Effect</strong> <em>Riftcarver</em> extends to an impossible length, dealing @Damage[7d8[slashing]|options:area-damage] damage to all creatures in a @Template[type:line|distance:60] with a @Check[reflex|dc:34|basic|options:area-effect] save.</p>"
+                },
+                "action->Drink of the Embers": {
+                    "name": "Drink of the Embers",
+                    "description": "<p><strong>Requirements</strong> Hesla's last action was a successful Strike against a creature</p><hr /><p><strong>Effect</strong> Embers burn around Hesla Embersplitter's body as she absorbs their lost energy. She regains Hit Points equal to half the damage dealt.</p>"
+                },
+                "action->Unholy Scythe": {
+                    "name": "Unholy Scythe",
+                    "description": "<p>As an unholy artifact, melee and ranged attacks from <em>Riftcarver</em> deal an extra 2d4 points of spirit damage to holy targets.</p>"
+                },
+                "lore->Deskari Lore": {
+                    "name": "Deskari Lore"
                 }
             }
         },
@@ -4131,6 +4659,35 @@
                 }
             }
         },
+        "Invigorated Sotroz": {
+            "name": "Invigorated Sotroz",
+            "items": {
+                "spellcastingEntry->Arcane Prepared Spells": {
+                    "name": "Arcane Prepared Spells"
+                },
+                "strike-melee->Jaws": {
+                    "name": "Jaws"
+                },
+                "strike-melee->Claw": {
+                    "name": "Claw"
+                },
+                "action->Arcane Secrets": {
+                    "name": "Arcane Secrets",
+                    "description": "<p><strong>Frequency</strong> once per round</p><hr /><p>Sotroz applies their arcane knowledge to a problem in a unique way, allowing them to roll any skill check using Arcana, even if they are untrained.</p>"
+                },
+                "action->Stench": {
+                    "name": "Stench",
+                    "description": "<p>10 feet, @Check[fortitude|dc:28]</p><hr /><p>@Localize[PF2E.NPC.Abilities.Glossary.Stench]</p>"
+                },
+                "action->Void Healing": {
+                    "name": "Void Healing"
+                },
+                "action->Ritual Sacrifice": {
+                    "name": "Ritual Sacrifice",
+                    "description": "<p><span class=\"action-glyph\">1</span> to <span class=\"action-glyph\">3</span></p><hr /><p><strong>Requirements</strong> Sotroz is within 30 feet of a bonded cage that has a living small or tiny animal inside of it</p><hr /><p><strong>Effect</strong> Sotroz steals the life-force of the trapped animal, killing it instantly and gaining one of the following abilities depending on the number of actions spent.</p><ul><li><strong>Gate Jump</strong> <span class=\"action-glyph\">1</span> Sotroz teleports to a space within any ritual circle in their sanctum.</li><li><strong>Transmute Death</strong> <span class=\"action-glyph\">2</span> Sotroz casts @UUID[Compendium.pf2e.spells-srd.Item.Jmxru8zMdYMRuO5n]{Vision of Death} on a living target within 60 feet of their current location.</li><li><strong>Life Steal</strong> <span class=\"action-glyph\">3</span> Sotroz casts a 4th-rank @UUID[Compendium.pf2e.spells-srd.Item.N1Z1oLPdBxaSgrEE]{Vampiric Feast} on a living target within 30 feet of their current location.</li></ul>"
+                }
+            }
+        },
         "Irrisen Bandit": {
             "name": "Irrisen Bandit"
         },
@@ -4367,7 +4924,7 @@
                 },
                 "action->Spore Cloud": {
                     "name": "Spore Cloud",
-                    "description": "<p>A leshy ghoul can unleash a cloud of spores that irritates the eyes and throats of non-fungus creatures in a @Template[type:emanation|distance:15]. Each creature must succeed at a @Check[fortitude|dc:17] save or take @Damage[1[persistent,poison]] damage. A creature has its vision reduced as long as the persistent damage continues and can see only within 20 feet.</p>"
+                    "description": "<p>A leshy ghoul can unleash a cloud of spores that irritates the eyes and throats of non-fungus creatures in a @Template[type:emanation|distance:15]. Each creature must succeed at a @Check[fortitude|dc:17|options:area-effect,damaging-effect] save or take @Damage[1[persistent,poison]|options:area-damage] damage. A creature has its vision reduced as long as the persistent damage continues and can see only within 20 feet.</p>"
                 },
                 "action->Spores": {
                     "name": "Spores",
@@ -4534,6 +5091,27 @@
                 "action->Bolt from the Blue!": {
                     "name": "Bolt from the Blue!",
                     "description": "<p><strong>Trigger</strong> A non-elemental creature approaches within 20 feet;</p><hr /><p><strong>Effect</strong> A bolt of electricity targets the creature for @Damage[3d4[electricity]] damage with a @Check[reflex|dc:18|basic] save. The hazard then rolls initiative.</p>"
+                }
+            }
+        },
+        "Livid Victims": {
+            "name": "Livid Victims",
+            "descriptionHazard": "<p>The souls of the ghouls' recent meals cry out from their pile of bones in the nearby tunnel, lamenting their fate.</p>",
+            "disable": "<p>@Check[religion|dc:14] (trained) sets the spirits at ease, or @Check[deception|dc:17], @Check[diplomacy|dc:17], or @Check[intimidation|dc:17] to convince the spirits to not interfere right now. A single success disables the haunt. PCs may accrue additional successes beyond the first\u2014each one convinces the haunt to use telekinetic interference once against ghouls in the haunt's range instead of the living creatures.</p>",
+            "routine": "<p>(two actions) The haunt uses one action to activate its gurgling gasp and then uses telekinetic interference for all of its other actions until it can use gurgling gasp again.</p>",
+            "stealth": "<p>(trained)</p>",
+            "items": {
+                "action->Remember Us!": {
+                    "name": "Remember Us!",
+                    "description": "<p><strong>Trigger</strong> Combat begins</p><hr /><p><strong>Effect</strong> The haunt rolls initiative.</p>"
+                },
+                "action->Gurgling Gasp": {
+                    "name": "Gurgling Gasp",
+                    "description": "<p>The haunt emits a cacophony of the ghoul victims' death rattles, forcing all living creatures within @Template[emanation|distance:80]{80 feet} to attempt a @Check[will|dc:17|options:area-effect,inflicts:frightened] save. On a failure, the creature becomes @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 2} (@UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 3} on a critical failure). On a success, a creature is temporarily immune to gurgling gasp for 1 hour. The haunt cannot use gurgling gasp again for [[/gmr 1d6 #Recharge Gurgling Gasp]]{1d6 rounds}.</p>"
+                },
+                "action->Telekinetic Interference": {
+                    "name": "Telekinetic Interference",
+                    "description": "<p>The haunt attempts to @UUID[Compendium.pf2e.actionspf2e.Item.ge56Lu1xXVFYUnLP]{Trip} a living creature within 60 feet with a bonus of [[/r 1d20+9]]{+9}.</p>"
                 }
             }
         },
@@ -5880,6 +6458,40 @@
                 }
             }
         },
+        "Riftcarver": {
+            "name": "Riftcarver",
+            "descriptionHazard": "<p><em>Riftcarver</em> is the chthonic artifact weapon of Deskari, the slain demon lord of the locust host and plague of the Worldwound (now known as the Sarkoris Scar). Unfettered from its creator, it now wreaks havoc on the enemies of its current master, Hesla Embersplitter.</p>",
+            "disable": "<p>@Check[deception|dc:24] (expert), @Check[Demon Lore|dc:24] (trained), or @Check[religion|dc:24] (expert) to remind <em>Riftcarver</em> that it should not serve an interloper; @Check[intimidation|dc:28] (trained), @Check[nature|dc:28] (trained), or @Check[occultism|dc:28] (trained) to temporarily make <em>Riftcarver's</em> spirit cower; @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (5th rank, counteract DC 25); three total successes are required to disable the hazard. The first time <em>Riftcarver</em> is taken away from Hesla Embersplitter against her will (via disarm, a spell, or some other method), it also counts as one success. If Hesla Embersplitter is rendered @UUID[Compendium.pf2e.conditionitems.Item.fBnFDH2MTzgFijKf]{Unconscious} or killed, the hazard immediately ends.</p>",
+            "routine": "<p>(three actions) <em>Riftcarver</em> lives up to its name, using all three of its actions to carve a new rift in a random direction (rolling [[/gmr 1d8]] to determine that direction). Hesla Embersplitter is immune to the effects of these rifts while wielding <em>Riftcarver</em>.</p>",
+            "stealth": "<p>(trained)</p>",
+            "items": {
+                "action->Infectious Memory": {
+                    "name": "Infectious Memory",
+                    "description": "<p><strong>Trigger</strong> An enemy of Hesla Embersplitter rolls for initiative</p><hr /><p><strong>Effect</strong> <em>Riftcarver</em> calls out with thousands of voices to infest the minds of the righteous. Any creature within 60 feet with the holy trait must succeed at a @Check[will|dc:30|options:area-effect,inflicts:frightened] save or become @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 2} (@UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 3} on a critical failure). <em>Riftcarver</em> then rolls initiative.</p>"
+                },
+                "action->Carve Rift": {
+                    "name": "Carve Rift",
+                    "description": "<p>A line of acid slices through creatures and terrain alike, creating a rift that is 20 feet high, 100 feet long, and 1 inch thick. This rift provides cover. The rift deals @Damage[5d8[acid]|options:area-damage] damage to each creature that is in its space when it is first created, that attempts to pass through it, or that ends its turn inside the rift, with a @Check[reflex|dc:26|basic|options:area-effect] save. A creature that succeeds at this save when the chasm is created is pushed to the nearest space on the side of its choice. Creatures trying to move through the rift fail to do so if they critically fail their save, ending their movement next to the rift.</p>"
+                }
+            }
+        },
+        "Riftcarver (11-12)": {
+            "name": "Riftcarver (11-12)",
+            "descriptionHazard": "<p><em>Riftcarver</em> is the chthonic artifact weapon of Deskari, the slain demon lord of the locust host and plague of the Worldwound (now known as the Sarkoris Scar). Unfettered from its creator, it now wreaks havoc on the enemies of its current master, Hesla Embersplitter.</p>",
+            "disable": "<p>@Check[deception|dc:27] (expert), @Check[Demon Lore|dc:27] (trained), or @Check[religion|dc:27] (expert) to remind <em>Riftcarver</em> that it should not serve an interloper; @Check[intimidation|dc:32] (trained), @Check[nature|dc:32] (trained), or @Check[occultism|dc:32] (trained) to temporarily make <em>Riftcarver's</em> spirit cower; @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (6th rank, counteract DC 28); three total successes are required to disable the hazard. The first time <em>Riftcarver</em> is taken away from Hesla Embersplitter against her will (via disarm, a spell, or some other method), it also counts as one success. If Hesla Embersplitter is rendered @UUID[Compendium.pf2e.conditionitems.Item.fBnFDH2MTzgFijKf]{Unconscious} or killed, the hazard immediately ends.</p>",
+            "routine": "<p>(three actions) <em>Riftcarver</em> lives up to its name, using all three of its actions to carve a new rift in a random direction (rolling [[/gmr 1d8]] to determine that direction). Hesla Embersplitter is immune to the effects of these rifts while wielding <em>Riftcarver</em>.</p>",
+            "stealth": "<p>(trained)</p>",
+            "items": {
+                "action->Infectious Memory": {
+                    "name": "Infectious Memory",
+                    "description": "<p><strong>Trigger</strong> An enemy of Hesla Embersplitter rolls for initiative</p><hr /><p><strong>Effect</strong> <em>Riftcarver</em> calls out with thousands of voices to infest the minds of the righteous. Any creature within 60 feet with the holy trait must succeed at a @Check[will|dc:33|options:area-effect,inflicts:frightened] save or become @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 2} (@UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 3} on a critical failure). <em>Riftcarver</em> then rolls initiative.</p>"
+                },
+                "action->Carve Rift": {
+                    "name": "Carve Rift",
+                    "description": "<p>A line of acid slices through creatures and terrain alike, creating a rift that is 20 feet high, 100 feet long, and 1 inch thick. This rift provides cover. The rift deals @Damage[6d8[acid]|options:area-damage] damage to each creature that is in its space when it is first created, that attempts to pass through it, or that ends its turn inside the rift, with a @Check[reflex|dc:29|basic|options:area-effect] save. A creature that succeeds at this save when the chasm is created is pushed to the nearest space on the side of its choice. Creatures trying to move through the rift fail to do so if they critically fail their save, ending their movement next to the rift.</p>"
+                }
+            }
+        },
         "Rimesnap": {
             "name": "Rimesnap",
             "publicNotes": "<p>\"True\" twigjacks, as they consider themselves, are found in wild forests alongside the fey they idolize.</p>\n<hr />\n<p>Maladjusted forest denizens, twigjacks form from the cruel and prankish combination of fey and the very woods in which they reside. A twigjack's body is made up of prickly brambles woven with vines. Shaggy, mossy growth, not unlike hair, tops a twigjack's head. Its mouth is just a canyon of splintered and broken sticks bisecting its face. Leaves and sprigs of new growth randomly sprout from the creature's body. Many dense forests on Golarion have at least a handful of twigjacks living in the undergrowth.</p>\n<p>While truculent and violent, twigjacks care deeply for what they consider to be their forests. These creatures harass outsiders who delve deep into their wooded domains, forcing back even the most determined explorers, foresters, and travelers, especially when those intruders cut roads through the forest. However, they are not terribly territorial when it comes to other forest creatures. When sylvan creatures, especially fey, rally against an outside threat, twigjacks in the area eagerly arrive to fight, even if they were not invited.</p>",
@@ -5918,6 +6530,47 @@
                 "action->Demonic Energy": {
                     "name": "Demonic Energy",
                     "description": "<p>Targets take @Damage[(1d8+4)[void]] damage (@Check[fortitude|dc:23|basic] save). On a critical failure, the target is @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 1}. Holy creatures treat their save as one degree worse for the purposes of the sickened condition only.</p>"
+                }
+            }
+        },
+        "Rowan the Whispering": {
+            "name": "Rowan the Whispering",
+            "items": {
+                "weapon->Dagger": {
+                    "name": "Dagger",
+                    "description": "<p>This small, bladed weapon is held in one hand and used to stab a creature in close combat. It can also be thrown.</p>"
+                },
+                "weapon->Serpent Dagger": {
+                    "name": "Serpent Dagger",
+                    "description": "<p>The serrated blade of this <em>+1 striking dagger</em> has a greenish tinge, and the hilt is sculpted to look like the head of a serpent about to strike.</p>\n<p>When you critically succeed at an attack roll with the <em>serpent dagger</em>, the target becomes @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 1} unless it succeeds at a @Check[fortitude|dc:19] save. This is a poison effect.</p>\n<p>In addition, you can activate the dagger to poison a creature with a more potent poison.</p>\n<hr />\n<p><strong>Activate\u2014Drip Poison</strong> <span class=\"action-glyph\">F</span> (manipulate)</p>\n<p><strong>Frequency</strong> once per day</p>\n<p><strong>Trigger</strong> You damage a creature with the <em>serpent dagger</em></p>\n<p><strong>Effect</strong> You poison the creature you hit with dagger venom.</p>\n<hr />\n<p><strong>Dagger Venom</strong> (poison)</p>\n<p><strong>Saving Throw</strong> @Check[fortitude|dc:21]</p>\n<p><strong>Maximum Duration</strong> 4 rounds</p>\n<p><strong>Stage 1</strong> @Damage[1d8[poison]] damage and @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 1}</p>"
+                },
+                "armor->Leather Armor": {
+                    "name": "Leather Armor",
+                    "description": "<p>A mix of flexible and molded boiled leather, a suit of this type of armor provides some protection with maximum flexibility.</p>"
+                },
+                "strike-melee->Dagger": {
+                    "name": "Dagger"
+                },
+                "strike-melee->Fist": {
+                    "name": "Fist"
+                },
+                "strike-melee->Serpent Dagger": {
+                    "name": "Serpent Dagger"
+                },
+                "strike-ranged->Serpent Dagger": {
+                    "name": "Serpent Dagger"
+                },
+                "action->Tether Pull": {
+                    "name": "Tether Pull",
+                    "description": "<p><strong>Trigger</strong> Rowan has thrown her @UUID[Compendium.pf2e.equipment-srd.Item.ZvIEJCY60fHqzl6r]{Serpent Dagger} at a target</p>\n<p><strong>Frequency</strong> once per turn</p><hr /><p><strong>Effect</strong> After the attack's result is resolved, Rowan yanks on the cord attached to the weapon's hilt, returning it to her hand. If she throws the weapon to a distance of 20 feet or beyond, this ability becomes 1-action and gains the manipulate trait.</p>"
+                },
+                "action->Flash Attack": {
+                    "name": "Flash Attack",
+                    "description": "<p>Rowan's strikes deal 1d6 extra damage to creatures who are @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} to her, or who are within reach of at least one of her allies.</p>"
+                },
+                "action->Mirror Step": {
+                    "name": "Mirror Step",
+                    "description": "<p><strong>Requirements</strong> Rowan is within 30 feet of one of the circular mirrors in the southern two rooms of the laboratory</p><hr /><p><strong>Effect</strong> Rowan uses her connection to the aiudara fragments to translocate. She Strides once into one of the circular mirrors, teleporting to any other such mirror of her choice. When she does this, she leaves behind a mirrored image of herself until the start of her next turn. This image acts as an ally for all purposes, but has an AC of 0, 1 HP, and cannot take actions.</p>"
                 }
             }
         },
@@ -6112,7 +6765,7 @@
                 },
                 "action->Stench of Decay": {
                     "name": "Stench of Decay",
-                    "description": "<p>The necromancer emits a scent of putrid rot in a @Template[type:emanation|distance:5]. Anyone that enters or begins its turn in the aura that is not a member of the Cult of the Screaming Grub is @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 1}.</p>"
+                    "description": "<p>The necromancer emits a scent of putrid rot in a 5-foot emanation. Anyone that enters or begins its turn in the aura that is not a member of the Cult of the Screaming Grub is @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 1}.</p>"
                 },
                 "action->Undead, Arise!": {
                     "name": "Undead, Arise!",
@@ -6850,6 +7503,55 @@
                 }
             }
         },
+        "Somewhat Haunted Hollows": {
+            "name": "Somewhat Haunted Hollows",
+            "descriptionHazard": "<p>The spirits of innumerable dryads and peaceful wood elementals, ripped from their bodies as they were turned into furniture, writhe and seethe, lashing out at both living and undead alike.</p>",
+            "disable": "<p>@Check[diplomacy|dc:14] (trained), @Check[nature|dc:14] (trained), or @Check[religion|dc:14] (trained) to set the spirits to rest or @Check[deception|dc:17], @Check[intimidation|dc:17], or @Check[occultism|dc:17] to convince the spirits that their eternal rest is coming soon.</p><p>A PC may make a Strike against AC 13 to destroy a single table or chair in the room, this functions as a successful check to @UUID[Compendium.pf2e.actionspf2e.Item.HCl3pzVefiv9ZKQW]{Aid} another PC attempting to disable the haunt; two total successes are required to disable the haunt. If all of the tables and chairs are destroyed, the haunt is temporarily disabled until dawn of the next day.</p>",
+            "routine": "<p>(two actions) The Haunted Hollows haunt uses table flip or chair toss Strikes at different creatures in the area, favoring those who are trying to disable the haunt first, but otherwise choosing randomly. The table flip Strikes originate with any table in the room, destroying the table in the process. The chair toss Strikes originate with any chair or bar stool in the room, destroying that object in the process. If the haunt is not disabled, these objects reform and return to their original positions at dawn of the next day.</p>",
+            "stealth": "<p>(trained)</p>",
+            "items": {
+                "action->Warped Wood": {
+                    "name": "Warped Wood",
+                    "description": "<p><strong>Trigger</strong> Any living or undead creatures approach within 30 feet of the haunt's locus (the center of the open balcony) inside the tavern</p><hr /><p><strong>Effect</strong> The haunt makes a table flip Strike with a reach of 20 feet against a random creature in the area, and then rolls initiative.</p>"
+                },
+                "strike-melee->Table Flip": {
+                    "name": "Table Flip"
+                },
+                "strike-ranged->Chair Toss": {
+                    "name": "Chair Toss",
+                    "description": "<p>No multiple attack penalty</p>"
+                }
+            }
+        },
+        "Sotroz": {
+            "name": "Sotroz",
+            "items": {
+                "spellcastingEntry->Arcane Prepared Spells": {
+                    "name": "Arcane Prepared Spells"
+                },
+                "strike-melee->Jaws": {
+                    "name": "Jaws"
+                },
+                "strike-melee->Claw": {
+                    "name": "Claw"
+                },
+                "action->Arcane Secrets": {
+                    "name": "Arcane Secrets",
+                    "description": "<p><strong>Frequency</strong> once per round</p><hr /><p>Sotroz applies their arcane knowledge to a problem in a unique way, allowing them to roll any skill check using Arcana, even if they are untrained.</p>"
+                },
+                "action->Stench": {
+                    "name": "Stench",
+                    "description": "<p>10 feet, @Check[fortitude|dc:25]</p><hr /><p>@Localize[PF2E.NPC.Abilities.Glossary.Stench]</p>"
+                },
+                "action->Void Healing": {
+                    "name": "Void Healing"
+                },
+                "action->Ritual Sacrifice": {
+                    "name": "Ritual Sacrifice",
+                    "description": "<p><span class=\"action-glyph\">1</span> to <span class=\"action-glyph\">3</span></p><hr /><p><strong>Requirements</strong> Sotroz is within 30 feet of a bonded cage that has a living small or tiny animal inside of it</p><hr /><p><strong>Effect</strong> Sotroz steals the life-force of the trapped animal, killing it instantly and gaining one of the following abilities depending on the number of actions spent.</p><ul><li><strong>Gate Jump</strong> <span class=\"action-glyph\">1</span> Sotroz teleports to a space within any ritual circle in their sanctum.</li><li><strong>Transmute Death</strong> <span class=\"action-glyph\">2</span> Sotroz casts @UUID[Compendium.pf2e.spells-srd.Item.Jmxru8zMdYMRuO5n]{Vision of Death} on a living target within 60 feet of their current location.</li><li><strong>Life Steal</strong> <span class=\"action-glyph\">3</span> Sotroz casts a 4th-rank @UUID[Compendium.pf2e.spells-srd.Item.N1Z1oLPdBxaSgrEE]{Vampiric Feast} on a living target within 30 feet of their current location.</li></ul>"
+                }
+            }
+        },
         "Sparking Cybernetic Zombie": {
             "name": "Sparking Cybernetic Zombie",
             "blurb": "Variant cybernetic zombie",
@@ -7263,6 +7965,41 @@
                 }
             }
         },
+        "Tired Dockhand": {
+            "name": "Tired Dockhand",
+            "publicNotes": "<p>Working to load and unload cargo from ships, dockhands are considered unruly, but many stay focused and work hard until the job is done.</p><hr /><p>Society is built upon the backs of laborers.</p>",
+            "blurb": "Variant dockhand",
+            "items": {
+                "armor->Work Clothes (Functions as Leather Armor)": {
+                    "name": "Work Clothes (Functions as Leather Armor)",
+                    "description": "<p>A mix of flexible and molded boiled leather, a suit of this type of armor provides some protection with maximum flexibility.</p>"
+                },
+                "equipment->Empty Bottle": {
+                    "name": "Empty Bottle"
+                },
+                "consumable->Whiskey": {
+                    "name": "Whiskey",
+                    "description": "<p>Alcohol is a common substance available in stunning variety. The Price of a dose of alcohol depends on the specific beverage. You can't recover from the sickened condition from alcohol while affected.</p>\n<p>If you fail a saving throw against alcohol other than initial saves, the affliction's stage doesn't increase; the only way to increase the stage of alcohol's affliction is to consume more alcohol.</p>\n<hr />\n<p><strong>Activate</strong> <span class=\"action-glyph\">A</span> Interact (Ingested)</p>\n<p><strong>Saving Throw</strong> @Check[fortitude|dc:12]</p>\n<p><strong>Onset</strong> 10 minutes</p>\n<p><strong>Stage 1</strong> +1 item bonus to saving throws against fear (10 minutes)</p>\n<p><strong>Stage 2</strong> @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard}, +1 item bonus to saving throws against fear effects (10 minutes)</p>\n<p><strong>Stage 3</strong> @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 1}, off-guard, @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 2} (10 minutes)</p>\n<p><strong>Stage 4</strong> @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 2} and @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 2} (10 minutes)</p>\n<p><strong>Stage 5</strong> clumsy 2, sickened 2, and stupefied 2 (10 minutes)</p>\n<p><strong>Stage 6</strong> @UUID[Compendium.pf2e.conditionitems.Item.fBnFDH2MTzgFijKf]{Unconscious} (8 hours)</p>\n<p><strong>Stage 7</strong> death</p>"
+                },
+                "strike-melee->Fist": {
+                    "name": "Fist"
+                },
+                "strike-ranged->Bottle": {
+                    "name": "Bottle"
+                },
+                "action->Heft Crate": {
+                    "name": "Heft Crate",
+                    "description": "<p><strong>Requirements</strong> The dockhand is adjacent to a crate</p><hr /><p><strong>Effect</strong> The dockhand picks up a crate and heaves it up to 15 feet. Upon landing, the crate breaks open in a @Template[type:burst|distance:5]. Each creature in the area takes @Damage[1d6[bludgeoning]|options:area-damage] damage with a @Check[reflex|dc:13|basic|options:area-effect] save, and the area is difficult terrain until cleared.</p>"
+                },
+                "action->Swig": {
+                    "name": "Swig",
+                    "description": "<p>The dockhand Interacts to either draw a bottle of @UUID[Compendium.pf2e.equipment-srd.Item.UMAXLDpI6YLSfYX1]{Alcohol} or pick up a nearby unattended bottle of alcohol, then drinks the whole thing. For 1 minute, the dockhand gains a +2 item bonus to melee damage rolls and saving throws against fear but is @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard}.</p>"
+                },
+                "lore->Labor Lore": {
+                    "name": "Labor Lore"
+                }
+            }
+        },
         "Tough Puddles Ghoul": {
             "name": "Tough Puddles Ghoul",
             "publicNotes": "<p>Ghouls stalkers are ravenous undead who haunt graveyards and eat corpses.</p>\n<hr />\n<p>Few creatures are more ubiquitous to sinister locations such as lonely graveyards and ruined crypts than the flesh-eating undead known as ghouls.</p>",
@@ -7476,6 +8213,26 @@
                 "action->Tumbling Down": {
                     "name": "Tumbling Down",
                     "description": "<p><strong>Trigger</strong> A creature moves into a space adjacent to the furniture pile</p><hr /><p><strong>Effect</strong> Part of the pile slides into a space the creature occupies, causing @Damage[(1d6+4)[bludgeoning]] damage with a @Check[reflex|dc:18|basic] save. The furniture pile rolls initiative.</p>"
+                }
+            }
+        },
+        "Very Haunted Hollows": {
+            "name": "Very Haunted Hollows",
+            "descriptionHazard": "<p>The spirits of innumerable dryads and peaceful wood elementals, ripped from their bodies as they were turned into furniture, writhe and seethe, lashing out at both living and undead alike.</p>",
+            "disable": "<p>@Check[diplomacy|dc:20] (trained), @Check[nature|dc:20] (trained), or @Check[religion|dc:20] (trained) to set the spirits to rest or @Check[deception|dc:23], @Check[intimidation|dc:23], or @Check[occultism|dc:23] to convince the spirits that their eternal rest is coming soon.</p><p>A PC may make a Strike against AC 19 to destroy a single table or chair in the room, this functions as a successful check to @UUID[Compendium.pf2e.actionspf2e.Item.HCl3pzVefiv9ZKQW]{Aid} another PC attempting to disable the haunt; two total successes are required to disable the haunt. If all of the tables and chairs are destroyed, the haunt is temporarily disabled until dawn of the next day.</p>",
+            "routine": "<p>(two actions) The Haunted Hollows haunt uses one table flip Strike or two chair toss Strikes at random creatures in the area, favoring those who are trying to disable the haunt first. The table flip Strikes originate with any table in the room, destroying the table in the process. The chair toss Strikes originate with any chair or bar stool in the room, destroying that object in the process. If the haunt is not disabled, these objects reform and return to their original positions at dawn of the next day.</p>",
+            "stealth": "<p>(expert)</p>",
+            "items": {
+                "action->Warped Wood": {
+                    "name": "Warped Wood",
+                    "description": "<p><strong>Trigger</strong> Any living or undead creatures approach within 30 feet of the haunt's locus (the center of the open balcony) inside the tavern</p><hr /><p><strong>Effect</strong> The haunt makes a table flip Strike with a reach of 20 feet against a random creature in the area, and then rolls initiative.</p>"
+                },
+                "strike-melee->Table Flip": {
+                    "name": "Table Flip"
+                },
+                "strike-ranged->Chair Toss": {
+                    "name": "Chair Toss",
+                    "description": "<p>No multiple attack penalty</p>"
                 }
             }
         },
@@ -8289,6 +9046,11 @@
             "converter": "translateRules",
             "path": "system.rules"
         },
+        "descriptionHazard": "system.details.description",
+        "disable": "system.details.disable",
+        "reset": "system.details.reset",
+        "routine": "system.details.routine",
+        "stealth": "system.attributes.stealth.details",
         "publicNotes": "system.details.publicNotes",
         "privateNotes": "system.details.privateNotes",
         "acDetails": "system.attributes.ac.details",
@@ -8298,11 +9060,6 @@
         "speedsDetails": "system.attributes.speed.details",
         "sensesDetails": "system.perception.details",
         "languagesDetails": "system.details.languages.details",
-        "descriptionHazard": "system.details.description",
-        "disable": "system.details.disable",
-        "reset": "system.details.reset",
-        "routine": "system.details.routine",
-        "stealth": "system.attributes.stealth.details",
         "skills": {
             "converter": "translateSkills",
             "path": "system.skills"

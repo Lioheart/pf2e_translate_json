@@ -870,7 +870,7 @@
                 },
                 "action->Shambling Onslaught": {
                     "name": "Shambling Onslaught",
-                    "description": "<p><span class=\"action-glyph\">1</span> to <span class=\"action-glyph\">2</span></p>\n<p><strong>Frequency</strong> once per round</p>\n<hr />\n<p><strong>Effect</strong> The shamblers lash out at any enemies in their squares or within 5 feet (@Check[reflex|dc:25|basic|options:area-damage] save). The damage depends on the number of actions.</p>\n<p><span class=\"action-glyph\">1</span> @Damage[(3d6+9)[bludgeoning]|options:area-damage] damage</p>\n<p><span class=\"action-glyph\">2</span> @Damage[(3d8+13)[bludgeoning]|options:area-damage] damage</p>"
+                    "description": "<p><span class=\"action-glyph\">1</span> to <span class=\"action-glyph\">2</span></p>\n<p><strong>Frequency</strong> once per round</p>\n<hr />\n<p><strong>Effect</strong> The shamblers lash out at any enemies in their squares or within 5 feet (@Check[reflex|dc:25|basic|options:area-effect] save). The damage depends on the number of actions.</p>\n<p><span class=\"action-glyph\">1</span> @Damage[(3d6+9)[bludgeoning]|options:area-damage] damage</p>\n<p><span class=\"action-glyph\">2</span> @Damage[(3d8+13)[bludgeoning]|options:area-damage] damage</p>"
                 },
                 "action->Troop Movement": {
                     "name": "Troop Movement",
@@ -1660,7 +1660,7 @@
                 },
                 "action->Throw Skull": {
                     "name": "Throw Skull",
-                    "description": "<p><strong>Frequency</strong> once (until a new clockwork skull is crafted)</p>\n<hr />\n<p><strong>Effect</strong> The headless rustler throws its clockwork skull at a target within 30 feet. The skull explodes, dealing @Damage[8d6[fire]] damage to creatures in a @Template[burst|distance:15]{15-foot radius} (@Check[reflex|dc:23|basic]).</p>"
+                    "description": "<p><strong>Frequency</strong> once (until a new clockwork skull is crafted)</p>\n<hr />\n<p><strong>Effect</strong> The headless rustler throws its clockwork skull at a target within 30 feet. The skull explodes, dealing @Damage[8d6[fire]|options:area-damage] damage to creatures in a @Template[burst|distance:15]{15-foot radius} (@Check[reflex|dc:23|basic|options:area-effect]).</p>"
                 }
             }
         },
@@ -2009,7 +2009,7 @@
                 },
                 "action->Squirt Acid": {
                     "name": "Squirt Acid",
-                    "description": "<p>The mutant giant toad squirts a @Template[line|distance:60] of acid from the pustules on its back. Creatures in the area take @Damage[3d6[acid]] damage (@Check[reflex|dc:20|basic]). The mutant giant toad can't Squirt Acid for [[/gmr 1d4 #Recharge Squirt Acid]]{1d4 rounds}.</p>"
+                    "description": "<p>The mutant giant toad squirts a @Template[line|distance:60] of acid from the pustules on its back. Creatures in the area take @Damage[3d6[acid]|options:area-damage] damage (@Check[reflex|dc:20|basic|options:area-effect]). The mutant giant toad can't Squirt Acid for [[/gmr 1d4 #Recharge Squirt Acid]]{1d4 rounds}.</p>"
                 },
                 "action->Swallow Whole": {
                     "name": "Swallow Whole",
@@ -2051,7 +2051,7 @@
                 },
                 "action->Throw Powder Keg": {
                     "name": "Throw Powder Keg",
-                    "description": "<p><strong>Frequency</strong> once (until the ogre acquires another powder keg)</p>\n<hr />\n<p><strong>Effect</strong> The ogre lights and hurls a powder keg of gunpowder at a point within 40 feet. The fuse continues to burn for 1 round, during which time an adjacent creature can use an Interact action to remove the lit fuse, rendering the keg harmless. At the start of the ogre's next turn, if the fuse is still lit, the keg explodes, dealing @Damage[3d8[fire],3d8[bludgeoning]]{3d8 fire damage and 3d8 bludgeoning damage} to creatures in a @Template[burst|distance:15] (@Check[reflex|dc:20|basic]).</p>"
+                    "description": "<p><strong>Frequency</strong> once (until the ogre acquires another powder keg)</p>\n<hr />\n<p><strong>Effect</strong> The ogre lights and hurls a powder keg of gunpowder at a point within 40 feet. The fuse continues to burn for 1 round, during which time an adjacent creature can use an Interact action to remove the lit fuse, rendering the keg harmless. At the start of the ogre's next turn, if the fuse is still lit, the keg explodes, dealing @Damage[3d8[fire],3d8[bludgeoning]|options:area-damage]{3d8 fire damage and 3d8 bludgeoning damage} to creatures in a @Template[burst|distance:15] (@Check[reflex|dc:20|basic|options:area-effect]).</p>"
                 },
                 "action->Grab": {
                     "name": "Grab"
@@ -2290,7 +2290,7 @@
                 },
                 "action->Split": {
                     "name": "Split",
-                    "description": "<p>When a Large pyronite ooze is hit by an attack that would deal bludgeoning or fire damage and it has 10 or more HP, it explodes, dealing @Damage[6d6[fire]] damage to creatures in a @Template[emanation|distance:10]{10-foot radius} (@Check[reflex|dc:29|basic]). This explosion can't cause other pyronite oozes to split. After exploding, the ooze splits into two Medium pyronite oozes, each with half the original's HP, which each fly through the air and land 15 feet from the original ooze in a random direction. If no space is unoccupied where the ooze would land, it automatically pushes creatures and objects out of the way to fill a space (the GM decides if an object or creature is too big or sturdy to push).</p>"
+                    "description": "<p>When a Large pyronite ooze is hit by an attack that would deal bludgeoning or fire damage and it has 10 or more HP, it explodes, dealing @Damage[6d6[fire]|options:area-damage] damage to creatures in a @Template[emanation|distance:10]{10-foot radius} (@Check[reflex|dc:29|basic|options:area-effect]). This explosion can't cause other pyronite oozes to split. After exploding, the ooze splits into two Medium pyronite oozes, each with half the original's HP, which each fly through the air and land 15 feet from the original ooze in a random direction. If no space is unoccupied where the ooze would land, it automatically pushes creatures and objects out of the way to fill a space (the GM decides if an object or creature is too big or sturdy to push).</p>"
                 },
                 "action->Exploding Split": {
                     "name": "Exploding Split",

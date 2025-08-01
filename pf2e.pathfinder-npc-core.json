@@ -77,19 +77,14 @@
         "Accuser Agent": {
             "name": "Accuser Agent",
             "publicNotes": "<p>Accuser agents might be high court advocates, official spymasters, or innocuous adjutants delivering important messages to magistrates, generals, officers, or mercenaries. They have ample latitude in matters of government security, though they sometimes have little oversight. When their findings demand an official response, accuser agents present cases before national tribunals or in royal courts.</p><hr /><p>Larger societies rely on those with the authority and the ability to interpret and enforce laws. Some carry out these duties fairly, but others are harsh and cruel, imposing severe punishments on anyone unable to pay for clemency.</p>",
-            "sensesDetails": "+21 to Sense Motive",
+            "sensesDetails": "(+21 to Sense Motive)",
             "languagesDetails": "up to 3 additional languages",
             "items": {
                 "strike-melee->Fist": {
                     "name": "Fist"
                 },
                 "action->+2 to Sense Motive": {
-                    "name": "+2 to Sense Motive",
-                    "rules": {
-                        "0": {
-                            "label": "To Sense Motive"
-                        }
-                    }
+                    "name": "+2 to Sense Motive"
                 },
                 "action->Insightful": {
                     "name": "Insightful",
@@ -101,12 +96,7 @@
                 },
                 "action->Debilitating Sneak Attack": {
                     "name": "Debilitating Sneak Attack",
-                    "description": "<p>The accuser agent's Strikes deal an extra 3d6 precision damage to @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} creatures. A target who takes this additional precision damage also either becomes @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 1} or takes a \u201310-foot status penalty to its Speeds until the end of the agent's next turn.</p>",
-                    "rules": {
-                        "2": {
-                            "text": "The accuser agent's Strikes deal an extra 3d6 precision damage to @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} creatures. A target who takes this additional precision damage also either becomes @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 1} or takes a \u201310-foot status penalty to its Speeds until the end of the agent's next turn."
-                        }
-                    }
+                    "description": "<p>The accuser agent's Strikes deal an extra 3d6 precision damage to @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} creatures. A target who takes this additional precision damage also either becomes @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 1} or takes a \u201310-foot status penalty to its Speeds until the end of the agent's next turn.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.MIznUE9YmCI01ZMr]{Effect: Debilitating Sneak Attack}</p>"
                 },
                 "lore->Legal Lore": {
                     "name": "Legal Lore"
@@ -151,12 +141,7 @@
                 },
                 "action->Steady Balance": {
                     "name": "Steady Balance",
-                    "description": "<p>When the acrobat rolls a success on an Acrobatics check, they get a critical success instead.</p>\n<p>They aren't @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} when attempting to @UUID[Compendium.pf2e.actionspf2e.Item.M76ycLAqHoAgbcej]{Balance} and can attempt an Acrobatics check instead of a Reflex save to @UUID[Compendium.pf2e.actionspf2e.Item.3yoajuKjwHZ9ApUY]{Grab an Edge}.</p>",
-                    "rules": {
-                        "0": {
-                            "text": "When the acrobat rolls a success on an Acrobatics check, they get a critical success instead."
-                        }
-                    }
+                    "description": "<p>When the acrobat rolls a success on an Acrobatics check, they get a critical success instead.</p>\n<p>They aren't @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} when attempting to @UUID[Compendium.pf2e.actionspf2e.Item.M76ycLAqHoAgbcej]{Balance} and can attempt an Acrobatics check instead of a Reflex save to @UUID[Compendium.pf2e.actionspf2e.Item.3yoajuKjwHZ9ApUY]{Grab an Edge}.</p>"
                 },
                 "action->Cat Fall": {
                     "name": "Cat Fall",
@@ -192,6 +177,9 @@
                 "equipment->Robes": {
                     "name": "Robes"
                 },
+                "equipment->Scroll Case": {
+                    "name": "Scroll Case"
+                },
                 "strike-melee->Fist": {
                     "name": "Fist"
                 },
@@ -200,7 +188,7 @@
                 },
                 "action->Focused Thinker": {
                     "name": "Focused Thinker",
-                    "description": "<p>The adept concentrates to muster knowledge and wisdom. While focusing, they gain a +2 status bonus to checks to Recall Knowledge, but take a \u20132 penalty to Perception. They can Dismiss this focused state.</p>"
+                    "description": "<p>The adept concentrates to muster knowledge and wisdom. While focusing, they gain a +2 status bonus to checks to @UUID[Compendium.pf2e.actionspf2e.Item.1OagaWtBpVXExToo]{Recall Knowledge}, but take a \u20132 penalty to Perception. They can Dismiss this focused state.</p>"
                 },
                 "lore->Scribing Lore": {
                     "name": "Scribing Lore"
@@ -346,12 +334,6 @@
                         }
                     }
                 },
-                "strike-melee->Dagger": {
-                    "name": "Dagger"
-                },
-                "strike-ranged->Dagger": {
-                    "name": "Dagger"
-                },
                 "strike-melee->Fist": {
                     "name": "Fist"
                 },
@@ -383,7 +365,7 @@
         "Arms Dealer": {
             "name": "Arms Dealer",
             "publicNotes": "<p>A seedy arms dealer has access to all kinds of deadly weapons and can quickly provide them to clients in need\u2026 for the right price, of course.</p><hr /><p>These lone wolves have an aura of mystery, bravado, and swagger.</p>",
-            "sensesDetails": "+11 to Sense Motive",
+            "sensesDetails": "(+11 to Sense Motive)",
             "items": {
                 "consumable->Rounds (Flintlock Musket)": {
                     "name": "Rounds (Flintlock Musket)",
@@ -451,7 +433,7 @@
                 },
                 "action->Sweep the Area": {
                     "name": "Sweep the Area",
-                    "description": "<p>The arresters @UUID[Compendium.pf2e.actionspf2e.Item.BlAOM2X92SI6HMtJ]{Seek} in a @Template[type:burst|distance:40] or @Template[type:cone|distance:80] and Point Out up to four targets.</p>"
+                    "description": "<p>The arresters @UUID[Compendium.pf2e.actionspf2e.Item.BlAOM2X92SI6HMtJ]{Seek} in a @Template[type:burst|distance:40] or @Template[type:cone|distance:80] and @UUID[Compendium.pf2e.actionspf2e.Item.sn2hIy1iIJX9Vpgj]{Point Out} up to four targets.</p>"
                 },
                 "lore->Settlement Lore": {
                     "name": "Settlement Lore"
@@ -690,12 +672,12 @@
             "name": "Barrister",
             "publicNotes": "<p>Barristers may serve as criminal prosecutors or legal advocates, defending the rights of those accused of crimes or named as defendants in civil cases.</p><hr /><p>Larger societies rely on those with the authority and the ability to interpret and enforce laws. Some carry out these duties fairly, but others are harsh and cruel, imposing severe punishments on anyone unable to pay for clemency.</p>",
             "items": {
-                "equipment->Court Garb": {
-                    "name": "Court Garb",
+                "equipment->Court Garb (Functions as Fine Clothing)": {
+                    "name": "Court Garb (Functions as Fine Clothing)",
                     "description": "<p>Fine clothing, suitable for a noble or royal, is made with expensive fabrics, precious metals, and intricate patterns.</p>"
                 },
-                "equipment->Law Book": {
-                    "name": "Law Book",
+                "equipment->Law Book (Functions as Scholarly Journal)": {
+                    "name": "Law Book (Functions as Scholarly Journal)",
                     "description": "<p>Scholarly journals are uncommon. Each scholarly journal is a folio on a very specific topic, such as vampires or the history of a single town or neighborhood of a city. If you spend 1 minute referencing an academic journal before attempting a skill check to Recall Knowledge about the subject, you gain a +1 item bonus to the check. A compendium of journals costs five times as much as a single journal and requires both hands to use; each compendium contains several journals and grants its bonus on a broader topic, such as all undead or a whole city. The GM determines what scholarly journals are available in any location.</p>"
                 },
                 "strike-melee->Fist": {
@@ -707,12 +689,7 @@
                 },
                 "action->Sway the Judge and Jury": {
                     "name": "Sway the Judge and Jury",
-                    "description": "<p>A barrister gains a +2 circumstance bonus to Diplomacy checks to @UUID[Compendium.pf2e.actionspf2e.Item.OX4fy22hQgUHDr0q]{Make an Impression} or @UUID[Compendium.pf2e.actionspf2e.Item.DCb62iCBrJXy0Ik6]{Request} something of the deciding members within a courtroom.</p>\n<p>If the barrister successfully @UUID[Compendium.pf2e.actionspf2e.Item.EEDElIyin4z60PXx]{Performs} against a @Check[performance|dc:20] during the 20 minutes prior to the check, they increase the circumstance bonus to +4.</p>",
-                    "rules": {
-                        "1": {
-                            "label": "Sway the Judge and Jury - Successful Performance"
-                        }
-                    }
+                    "description": "<p>A barrister gains a +2 circumstance bonus to Diplomacy checks to [[/act make-an-impression]] or [[/act request]] something of the deciding members within a courtroom.</p>\n<p>If the barrister successfully @Check[performance|dc:20]{Performs} against a DC of 20 during the 20 minutes prior to the check, they increase the circumstance bonus to +4.</p>"
                 },
                 "action->Cite Precedent": {
                     "name": "Cite Precedent",
@@ -1024,8 +1001,8 @@
             "name": "Bosun",
             "publicNotes": "<p>A ship's boatswain, or bosun, leads the deckhands who maintain the ship.</p><hr /><p>Adventurers may need passage on a swift vessel, or they might face danger from raiders at sea or in coastal settlements.</p>",
             "items": {
-                "weapon->Naval Pike": {
-                    "name": "Naval Pike",
+                "weapon->Naval Pike (Functions as a Spear)": {
+                    "name": "Naval Pike (Functions as a Spear)",
                     "description": "<p>A long metal shaft ending with a metal spike, a spear can be used one-handed as a melee weapon and can be thrown.</p>"
                 },
                 "strike-melee->Fist": {
@@ -1043,7 +1020,7 @@
                 },
                 "action->Pike and Strike": {
                     "name": "Pike and Strike",
-                    "description": "<p>The bosun Strikes with their naval pike.</p>\n<p>If this Strike hits, the bosun can either move the target 5 feet within the pike's reach or make a fist Strike against the target without increasing their multiple attack penalty until after the fist Strike.</p>"
+                    "description": "<p>The bosun makes a melee Strike with their naval pike.</p>\n<p>If this Strike hits, the bosun can either move the target 5 feet within the pike's reach or make a fist Strike against the target without increasing their multiple attack penalty until after the fist Strike.</p>"
                 },
                 "lore->Sailing Lore": {
                     "name": "Sailing Lore"
@@ -1152,7 +1129,7 @@
                 },
                 "action->Shielded Advance": {
                     "name": "Shielded Advance",
-                    "description": "<p><strong>Requirements</strong> The captain of the guard has their shield raised</p><hr /><p><strong>Effect</strong> The captain of the guard presses forward, using their shield to push back foes. The captain Strides and Shoves, in either order. The multiple attack penalty doesn't apply to this @UUID[Compendium.pf2e.actionspf2e.Item.7blmbDrQFNfdT731]{Shove}, though the Shove does count toward the captain's multiple attack penalty.</p>"
+                    "description": "<p><strong>Requirements</strong> The captain of the guard has their shield raised</p><hr /><p><strong>Effect</strong> The captain of the guard presses forward, using their shield to push back foes. The captain Strides and [[/act shove]]{Shoves}, in either order. The multiple attack penalty doesn't apply to this Shove, though the Shove does count toward the captain's multiple attack penalty.</p>"
                 },
                 "lore->Legal Lore": {
                     "name": "Legal Lore"
@@ -1169,9 +1146,13 @@
                 "strike-melee->Fist": {
                     "name": "Fist"
                 },
+                "action->Skittish": {
+                    "name": "Skittish",
+                    "description": "<p><strong>Trigger</strong> The castaway takes damage from a Strike</p><hr /><p><strong>Effect</strong> The castaway Steps away from the source of the Strike.</p>"
+                },
                 "action->Cockamamie Rant": {
                     "name": "Cockamamie Rant",
-                    "description": "<p>The castaway launches into a nonsensical verbal stream of consciousness. Creatures in a @Template[type:emanation|distance:30] must succeed at a @Check[will|dc:19] save or be @UUID[Compendium.pf2e.conditionitems.Item.yblD8fOR1J8rDwEQ]{Confused} for 1 round. Once a creature has succeeded at a save against the castaway's Cockamamie Rant, they are immune to its effects for 24 hours.</p>"
+                    "description": "<p>The castaway launches into a nonsensical verbal stream of consciousness. Creatures in a @Template[type:emanation|distance:30] must succeed at a @Check[will|dc:19|options:inflicts:confused] save or be @UUID[Compendium.pf2e.conditionitems.Item.yblD8fOR1J8rDwEQ]{Confused} for 1 round. Once a creature has succeeded at a save against the castaway's Cockamamie Rant, they are immune to its effects for 24 hours.</p>"
                 },
                 "action->Snare Master": {
                     "name": "Snare Master",
@@ -1696,8 +1677,8 @@
                 "strike-melee->Fist": {
                     "name": "Fist"
                 },
-                "action->+4 Bonus on Perception to Sense Motive": {
-                    "name": "+4 Bonus on Perception to Sense Motive"
+                "action->+4 to Sense Motive": {
+                    "name": "+4 to Sense Motive"
                 },
                 "action->Group Impression": {
                     "name": "Group Impression",
@@ -1749,7 +1730,7 @@
                 },
                 "action->Shared Confidence": {
                     "name": "Shared Confidence",
-                    "description": "<p>When a coven aspirant is within 30 feet of at least two allies, they and their allies gain a +1 status bonus to Will saves.</p>"
+                    "description": "<p>When a coven aspirant is within @Template[emanation|distance:30]{30 feet} of at least two allies, they and their allies gain a +1 status bonus to Will saves.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.uKJRRrlReO0CceVc]{Effect: Shared Confidence}</p>"
                 },
                 "action->Forge Pact": {
                     "name": "Forge Pact",
@@ -1773,8 +1754,8 @@
                 "strike-melee->Fist": {
                     "name": "Fist"
                 },
-                "action->+2 Bonus on Perception to Sense Motive": {
-                    "name": "+2 Bonus on Perception to Sense Motive"
+                "action->+2 to Sense Motive": {
+                    "name": "+2 to Sense Motive"
                 },
                 "action->Deny Advantage": {
                     "name": "Deny Advantage",
@@ -1849,10 +1830,11 @@
         "Cultist": {
             "name": "Cultist",
             "publicNotes": "<p>Hidden secrets and occult powers have an irresistible lure for many. Since the majority of these NPCs are spellcasters, consider using alternative spell lists to adjust their themes.</p>",
+            "allSavesBonus": "(Will +2 vs. higher-ranking members of the cult)",
             "items": {
-                "armor->Cultist Garb": {
-                    "name": "Cultist Garb",
-                    "description": "<p>Functions as leather armor.</p>"
+                "armor->Cultist Garb (Functions as Leather Armor)": {
+                    "name": "Cultist Garb (Functions as Leather Armor)",
+                    "description": "<p>A mix of flexible and molded boiled leather, a suit of this type of armor provides some protection with maximum flexibility.</p>"
                 },
                 "equipment->Occult Text": {
                     "name": "Occult Text"
@@ -1875,6 +1857,7 @@
         "Curse Monger": {
             "name": "Curse Monger",
             "publicNotes": "<p>Oracles who have been consumed by their visions and the divine gifts bestowed upon them turn to more sinister paths, becoming curse mongers. Seeking to rid themselves of the shadows that haunt them, curse mongers lash out and attempt to bind others to their fate.</p><hr /><p>Hidden secrets and occult powers have an irresistible lure for many. Since the majority of these NPCs are spellcasters, consider using alternative spell lists to adjust their themes.</p>",
+            "allSavesBonus": "\u20132 to all saves vs. curses",
             "items": {
                 "spellcastingEntry->Occult Spontaneous Spells": {
                     "name": "Occult Spontaneous Spells"
@@ -1893,9 +1876,12 @@
                     "name": "Incurable Curse",
                     "description": "<p>The curse monger is permanently @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 1}, @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 1}, @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 1}, or @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 1} by a curse that can't be removed from them in any way. The GM chooses the condition and decides whether the curse is arcane, divine, occult, or primal.</p>"
                 },
+                "action->\u20132 To All Saves vs. Curses": {
+                    "name": "\u20132 To All Saves vs. Curses"
+                },
                 "action->Cursed Aura": {
                     "name": "Cursed Aura",
-                    "description": "<p>30 feet. The very earth and air around the curse monger are poisoned by the curses that burden their soul. Any creature who enters or starts their turn in the aura must succeed at a @Check[will|dc:31] save or be @UUID[Compendium.pf2e.conditionitems.Item.3uh1r86TzbQvosxv]{Doomed 1} (or @UUID[Compendium.pf2e.conditionitems.Item.3uh1r86TzbQvosxv]{Doomed 2} on a critical failure). Regardless of the result of its save, the creature is then temporarily immune for 1 hour.</p>"
+                    "description": "<p>30 feet. The very earth and air around the curse monger are poisoned by the curses that burden their soul. Any creature who enters or starts their turn in the aura must succeed at a @Check[will|dc:31|options:inflicts:doomed] save or be @UUID[Compendium.pf2e.conditionitems.Item.3uh1r86TzbQvosxv]{Doomed 1} (or @UUID[Compendium.pf2e.conditionitems.Item.3uh1r86TzbQvosxv]{Doomed 2} on a critical failure). Regardless of the result of its save, the creature is then temporarily immune for 1 hour.</p>"
                 },
                 "action->Share Burden": {
                     "name": "Share Burden",
@@ -2203,13 +2189,16 @@
                 "strike-melee->Longspear": {
                     "name": "Longspear"
                 },
+                "strike-melee->Fist": {
+                    "name": "Fist"
+                },
                 "action->Demonic Temptation": {
                     "name": "Demonic Temptation",
                     "description": "<p>Demonic study has garnered the attention of at least one demon who is actively trying to possess the demonologist. When the demonologist publicly espouses the benefits of demonic power (whether they believe it a good thing or not), they gain a +1 status bonus to skill checks, AC, and saves for 1 day. These bonuses don't apply against demons. At the end of the day, the demonologist must attempt a @Check[will|dc:20] save, becoming possessed for 1 day on a failure (or permanently on a critical failure).</p>"
                 },
                 "action->Breach the Outer Rifts": {
                     "name": "Breach the Outer Rifts",
-                    "description": "<p><strong>Requirements</strong> The demonologist's last action was to cast a non-cantrip spell</p><hr /><p><strong>Effect</strong> The demonologist siphons energy drawn from the Outer Rifts into their weapon. Until the end of the turn, the weapon deals an extra 2d6 damage. Roll 1d20 to determine the type: 1\u20137 acid, 8\u20139 cold, 10\u201311 electricity, 12\u201318 fire, 19\u201320 void.</p>"
+                    "description": "<p><strong>Requirements</strong> The demonologist's last action was to cast a non-cantrip spell</p><hr /><p><strong>Effect</strong> The demonologist siphons energy drawn from the Outer Rifts into their weapon. Until the end of the turn, the weapon deals an extra 2d6 damage.</p>\n<p>Roll 1d20 to determine the type:</p><ul><li>1\u20137 acid</li><li>8\u20139 cold</li><li>10\u201311 electricity</li><li>12\u201318 fire</li><li>19\u201320 void.</li></ul>"
                 },
                 "action->Demon Summoning": {
                     "name": "Demon Summoning",
@@ -2317,7 +2306,11 @@
                 },
                 "action->Skilled Diver": {
                     "name": "Skilled Diver",
-                    "description": "<p>The diver gains a +12 circumstance bonus to any skill check involved in underwater exploration activities and is considered a master in the skill for such checks. This bonus also applies to any initiative roll while the driver is underwater. Strong Lungs The diver can hold their breath for up to 5 minutes (50 rounds).</p>"
+                    "description": "<p>The diver gains a +12 circumstance bonus to any skill check involved in underwater exploration activities and is considered a master in the skill for such checks. This bonus also applies to any initiative roll while the driver is underwater.</p>"
+                },
+                "action->Strong Lungs": {
+                    "name": "Strong Lungs",
+                    "description": "<p>The diver can hold their breath for up to 5 minutes (50 rounds).</p>"
                 },
                 "action->Underwater Fighter": {
                     "name": "Underwater Fighter",
@@ -2636,7 +2629,7 @@
                 },
                 "action->Hammer Critical Specialization": {
                     "name": "Hammer Critical Specialization",
-                    "description": "<p>When the general critically hits with a hammer, the target of the critical hit is knocked @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone} unless it succeeds at a @Check[fortitude|dc:26] save.</p>"
+                    "description": "<p>When the general critically hits with a hammer, the target of the critical hit is knocked @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone} unless it succeeds at a @Check[fortitude|dc:26|options:inflicts:prone] save.</p>"
                 },
                 "action->Sudden Charge": {
                     "name": "Sudden Charge",
@@ -2785,7 +2778,7 @@
         "Elven Court Guard": {
             "name": "Elven Court Guard",
             "publicNotes": "<p>In the tangled web of lineages, rivalries, and shifting alliances that is an elven noble court, aristocratic families employ bodyguards loyal to them alone.</p><hr /><p>Elves' long lives give them centuries to delve into studies, artistry, or exploration.</p>",
-            "allSavesBonus": "1 status vs. mental effects",
+            "allSavesBonus": "+1 status vs. mental effects",
             "sensesDetails": "plus vigilance",
             "languagesDetails": "plus one regional language",
             "items": {
@@ -2858,12 +2851,13 @@
         "Enigmatic Conspirant": {
             "name": "Enigmatic Conspirant",
             "publicNotes": "<p>Powerful organizations work out of public view, shaping lives while facing few consequences. Searching for these secret societies, whether to join them or destroy them, has given the enigmatic conspiracist uncanny insight.</p><hr /><p>Hidden secrets and occult powers have an irresistible lure for many. Since the majority of these NPCs are spellcasters, consider using alternative spell lists to adjust their themes.</p>",
+            "sensesDetails": "(+12 to Sense Motive)",
             "items": {
                 "strike-melee->Fist": {
                     "name": "Fist"
                 },
-                "action->+12 to Sense Motive": {
-                    "name": "+12 to Sense Motive"
+                "action->+2 to Sense Motive": {
+                    "name": "+2 to Sense Motive"
                 },
                 "action->Knowing Glance": {
                     "name": "Knowing Glance",
@@ -2875,7 +2869,7 @@
                 },
                 "action->Unbelievable Connection": {
                     "name": "Unbelievable Connection",
-                    "description": "<p>The enigmatic conspiracist recites a convoluted conspiracy theory about a creature within 30 feet, then attempts an @Check[occultism|against:will] check against the Will DC of that creature. On a success, the target is @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 1} for 1 minute and @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} against the conspiracist's attacks until no longer stupefied.</p>"
+                    "description": "<p>The enigmatic conspiracist recites a convoluted conspiracy theory about a creature within 30 feet, then attempts an @Check[occultism|against:will|options:inflicts:stupefied] check against the Will DC of that creature. On a success, the target is @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 1} for 1 minute and @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} against the conspiracist's attacks until no longer stupefied.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.Q4LJQDtEYEYw5Sjo]{Effect: Unbelievable Connection}</p>"
                 },
                 "lore->Secret Society Lore": {
                     "name": "Secret Society Lore"
@@ -2901,8 +2895,8 @@
                 "strike-melee->Fist": {
                     "name": "Fist"
                 },
-                "action->+6 Bonus on Perception to Sense Motive": {
-                    "name": "+6 Bonus on Perception to Sense Motive"
+                "action->+6 to Sense Motive": {
+                    "name": "+6 to Sense Motive"
                 },
                 "action->Diplomatic Specialist": {
                     "name": "Diplomatic Specialist",
@@ -2931,11 +2925,11 @@
                 },
                 "action->Opportune Maneuver": {
                     "name": "Opportune Maneuver",
-                    "description": "<p><strong>Trigger</strong> A creature within 10 feet uses an action with the move trait or leaves a space within the constable's reach during its move action</p><hr /><p><strong>Effect</strong> The constable attempts to @UUID[Compendium.pf2e.actionspf2e.Item.ge56Lu1xXVFYUnLP]{Trip} the triggering creature. On a success, the triggering action is disrupted.</p>"
+                    "description": "<p><strong>Trigger</strong> A creature within 10 feet uses an action with the move trait or leaves a space within the constable's reach during its move action</p><hr /><p><strong>Effect</strong> The constable attempts to [[/act trip]] the triggering creature. On a success, the triggering action is disrupted.</p>"
                 },
                 "action->Vigilant Vantage": {
                     "name": "Vigilant Vantage",
-                    "description": "<p>The equestrian constable @UUID[Compendium.pf2e.actionspf2e.Item.BlAOM2X92SI6HMtJ]{Seeks} or @UUID[Compendium.pf2e.actionspf2e.Item.sn2hIy1iIJX9Vpgj]{Points Out} a target. They can @UUID[Compendium.pf2e.actionspf2e.Item.pvQ5rY2zrtPI614F]{Interact} to draw an item or @UUID[Compendium.pf2e.actionspf2e.Item.q9nbyIF0PEBqMtYe]{Command an Animal} to approach or attack the target.</p>"
+                    "description": "<p>The equestrian constable [[/act seek]]{Seeks} or @UUID[Compendium.pf2e.actionspf2e.Item.sn2hIy1iIJX9Vpgj]{Points Out} a target. They can Interact to draw an item or @UUID[Compendium.pf2e.actionspf2e.Item.q9nbyIF0PEBqMtYe]{Command an Animal} to approach or attack the target.</p>"
                 },
                 "lore->Settlement Lore": {
                     "name": "Settlement Lore"
@@ -2955,7 +2949,7 @@
                 },
                 "action->Behead": {
                     "name": "Behead",
-                    "description": "<p><strong>Requirements</strong> The executioner is adjacent to a dying creature or a creature specifically prepared for a killing blow</p><hr /><p><strong>Effect</strong> The executioner Strikes the creature with their greataxe. On a hit, in addition to taking damage, the target must attempt a @Check[fortitude|dc:23] save or be reduced to 0 HP and become @UUID[Compendium.pf2e.conditionitems.Item.yZRUzMqrMmfLu0V1]{Dying 1}. If the creature was already dying (including if it was reduced to 0 HP by the Strike's damage), the creature's dying value increases by 1, in addition to any increase from the Strike. On a critical failure, the creature dies instantly. If the executioner's Strike was a critical hit, the target uses the outcome one degree of success worse than the result of their saving throw.</p>"
+                    "description": "<p><strong>Requirements</strong> The executioner is adjacent to a dying creature or a creature specifically prepared for a killing blow</p><hr /><p><strong>Effect</strong> The executioner Strikes the creature with their greataxe. On a hit, in addition to taking damage, the target must attempt a @Check[fortitude|dc:23|options:inflicts:dying] save or be reduced to 0 HP and become @UUID[Compendium.pf2e.conditionitems.Item.yZRUzMqrMmfLu0V1]{Dying 1}. If the creature was already dying (including if it was reduced to 0 HP by the Strike's damage), the creature's dying value increases by 1, in addition to any increase from the Strike. On a critical failure, the creature dies instantly. If the executioner's Strike was a critical hit, the target uses the outcome one degree of success worse than the result of their saving throw.</p>"
                 },
                 "action->Intimidating Strike": {
                     "name": "Intimidating Strike",
@@ -2963,12 +2957,7 @@
                 },
                 "action->Mark for Death": {
                     "name": "Mark for Death",
-                    "description": "<p>The executioner marks a single creature they can see for death. The first time each round the executioner Strikes that creature, the Strike deals an extra 1d12 precision damage.</p>\n<p>The creature remains marked for death until the executioner is knocked out, marks a different creature for death, or the encounter ends.</p>",
-                    "rules": {
-                        "0": {
-                            "label": "First attack on marked target this round"
-                        }
-                    }
+                    "description": "<p>The executioner marks a single creature they can see for death. The first time each round the executioner Strikes that creature, the Strike deals an extra 1d12 precision damage.</p>\n<p>The creature remains marked for death until the executioner is knocked out, marks a different creature for death, or the encounter ends.</p>"
                 }
             }
         },
@@ -2983,8 +2972,8 @@
                 "strike-melee->Fist": {
                     "name": "Fist"
                 },
-                "action->+3 Perception to Sense Motive": {
-                    "name": "+3 Perception to Sense Motive"
+                "action->+3 to Sense Motive": {
+                    "name": "+3 to Sense Motive"
                 },
                 "action->Former Courtier": {
                     "name": "Former Courtier",
@@ -3134,22 +3123,20 @@
                 "treasure->Collection of Fake Relics": {
                     "name": "Collection of Fake Relics"
                 },
+                "strike-melee->Fist": {
+                    "name": "Fist"
+                },
                 "action->Deceiver's Surprise": {
                     "name": "Deceiver's Surprise",
                     "description": "<p>On the first round of combat, if the false priest rolls Deception or Performance for initiative, creatures that haven't acted yet are @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} to the false priest.</p>"
                 },
                 "action->Fickle Prophecy": {
                     "name": "Fickle Prophecy",
-                    "description": "<p>The false priest convinces someone of their omnipotence by attempting a Deception check compared to the creature's Will DC.</p>\n<p>If successful, the target gains [[/r 1d8+4 #Temporary Hit Points]]{1d8+4 temporary Hit Points} that last for 1 hour or until the false priest removes them by rebuking the target, whichever occurs first.</p>"
+                    "description": "<p>The false priest convinces someone of their omnipotence by attempting a @Check[deception|against:will] check compared to the creature's Will DC.</p>\n<p>If successful, the target gains 1d8+4 temporary Hit Points that last for 1 hour or until the false priest removes them by rebuking the target, whichever occurs first.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.GXQg0rAJGgk7Kfx9]{Effect: Fickle Prophecy}</p>"
                 },
                 "action->Sneak Attack": {
                     "name": "Sneak Attack",
-                    "description": "<p>The false priest deals an extra 1d6 precision damage to @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} creatures. This increases to 2d6 precision damage against creatures off-guard due to the false priest's @UUID[Compendium.pf2e.actionspf2e.Item.QNAVeNKtHA0EUw4X]{Feint} or deceiver's surprise.</p>",
-                    "rules": {
-                        "0": {
-                            "label": "Target is Off-Guard due to a Feint or Deceiver's Surprise"
-                        }
-                    }
+                    "description": "<p>The false priest deals an extra 1d6 precision damage to @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} creatures. This increases to 2d6 precision damage against creatures off-guard due to the false priest's @UUID[Compendium.pf2e.actionspf2e.Item.QNAVeNKtHA0EUw4X]{Feint} or deceiver's surprise.</p>"
                 },
                 "action->The Jig Is Up": {
                     "name": "The Jig Is Up",
@@ -3535,7 +3522,7 @@
         "Gambling Companion": {
             "name": "Gambling Companion",
             "publicNotes": "<p>A reputation for protecting against bad luck, combined with skill and knowledge, establish these tengu as ideal gambling companions. Their role includes providing local knowledge of establishments as well as the various games available. Refined skills of observation and an ability to read other players increases the value of their services. The example provided is for a companion who frequents the finer establishments. For some areas, a patron would look for a companion with greater fighting skills to also fill the role of bodyguard</p><hr /><p>Originally hailing from the continent of Tian Xia, tengu have spread across the globe. Though some staunchly uphold traditions, gazing at the sky from the tallest mountaintops, other tengu remain on the ground, adapting and blending into the societies in which they settle.</p>",
-            "sensesDetails": "+14 to Sense Motive",
+            "sensesDetails": "(+14 to Sense Motive)",
             "languagesDetails": "plus three others",
             "items": {
                 "equipment->Set of six ivory dice": {
@@ -3663,11 +3650,11 @@
                 },
                 "action->Reactive Strike": {
                     "name": "Reactive Strike",
-                    "description": "<p>The gendarme can Disarm instead of Striking.</p>\n<p>@Localize[PF2E.NPC.Abilities.Glossary.ReactiveStrike]</p>"
+                    "description": "<p>The gendarme can [[/act disarm]] instead of Striking.</p><hr /><p>@Localize[PF2E.NPC.Abilities.Glossary.ReactiveStrike]</p>"
                 },
                 "action->Shoot Down": {
                     "name": "Shoot Down",
-                    "description": "<p>The gendarme carefully makes a ranged Strike. If the Strike deals damage, the target must succeed at a @Check[reflex|dc:26] saving throw or fall @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone}.</p>"
+                    "description": "<p>The gendarme carefully makes a ranged Strike. If the Strike deals damage, the target must succeed at a @Check[reflex|dc:26|options:inflicts:prone] saving throw or fall @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone}.</p>"
                 },
                 "action->Stop in the Name of the Law!": {
                     "name": "Stop in the Name of the Law!",
@@ -3985,28 +3972,24 @@
             "name": "Grand Inquisitor",
             "publicNotes": "<p>A grand inquisitor leads powerful governmental forces. They're often champions of oppressive empires or overzealous intelligence networks.</p><hr /><p>Larger societies rely on those with the authority and the ability to interpret and enforce laws. Some carry out these duties fairly, but others are harsh and cruel, imposing severe punishments on anyone unable to pay for clemency.</p>",
             "allSavesBonus": "+23 reflex vs damaging effects",
-            "sensesDetails": "+31 to Sense Motive",
+            "sensesDetails": "(+31 to Sense Motive)",
             "items": {
                 "strike-melee->Fist": {
                     "name": "Fist"
                 },
                 "action->+3 to Sense Motive": {
-                    "name": "+3 to Sense Motive",
-                    "rules": {
-                        "0": {
-                            "label": "To Sense Motive"
-                        }
-                    }
+                    "name": "+3 to Sense Motive"
                 },
                 "action->+3 to Reflex vs. Damaging Effects": {
                     "name": "+3 to Reflex vs. Damaging Effects"
                 },
                 "action->Reactive Strike": {
-                    "name": "Reactive Strike"
+                    "name": "Reactive Strike",
+                    "description": "<p>If the grand inquisitor's attack hits and this reaction was triggered by a @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened} creature, the triggering action is disrupted.</p><hr /><p>@Localize[PF2E.NPC.Abilities.Glossary.ReactiveStrike]</p>"
                 },
                 "action->Searching Gaze": {
                     "name": "Searching Gaze",
-                    "description": "<p>30 feet. When an opponent ends its turn in the aura, it must attempt a @Check[will|dc:36] save or it becomes @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 1} (@UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 2} on a critical failure), and the grand inquisitor learns its surface thoughts (and underlying motive on a critical failure).</p>"
+                    "description": "<p>30 feet. When an opponent ends its turn in the aura, it must attempt a @Check[will|dc:36|options:inflicts:frightened] save or it becomes @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 1} (@UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 2} on a critical failure), and the grand inquisitor learns its surface thoughts (and underlying motive on a critical failure).</p>"
                 },
                 "action->Symbol of Loyalty": {
                     "name": "Symbol of Loyalty",
@@ -4014,11 +3997,11 @@
                 },
                 "action->Condemn": {
                     "name": "Condemn",
-                    "description": "<p>The grand inquisitor @UUID[Compendium.pf2e.actionspf2e.Item.2u915NdUyQan6uKF]{Demoralizes}. On a success, the target is @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned} with a value equal to its @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened} condition.</p>"
+                    "description": "<p>The grand inquisitor [[/act demoralize]]{Demoralizes}. On a success, the target is @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned} with a value equal to its @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened} condition.</p>"
                 },
                 "action->I Am the Law!": {
                     "name": "I Am the Law!",
-                    "description": "<p>The grand inquisitor vows to bring down all the fury of a nation down upon their foes. Up to three lower-level allies within 60 feet of the grand inquisitor can use their reaction to @UUID[Compendium.pf2e.actionspf2e.Item.PMbdMWc2QroouFGD]{Grapple}, @UUID[Compendium.pf2e.actionspf2e.Item.VjxZFuUXrCU94MWR]{Strike}, or @UUID[Compendium.pf2e.actionspf2e.Item.ge56Lu1xXVFYUnLP]{Trip} with a +2 status bonus.</p>"
+                    "description": "<p>The grand inquisitor vows to bring down all the fury of a nation down upon their foes. Up to three lower-level allies within @Template[emanation|distance:60]{60 feet} of the grand inquisitor can use their reaction to @UUID[Compendium.pf2e.actionspf2e.Item.PMbdMWc2QroouFGD]{Grapple}, @UUID[Compendium.pf2e.actionspf2e.Item.VjxZFuUXrCU94MWR]{Strike}, or @UUID[Compendium.pf2e.actionspf2e.Item.ge56Lu1xXVFYUnLP]{Trip} with a +2 status bonus.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.y3D02GsvQHveTnuz]{Effect: I Am the Law!}</p>"
                 },
                 "action->Twisting Fear": {
                     "name": "Twisting Fear",
@@ -4233,9 +4216,6 @@
                 },
                 "strike-melee->Fist": {
                     "name": "Fist"
-                },
-                "strike-ranged->Dueling Pistol": {
-                    "name": "Dueling Pistol"
                 },
                 "action->Firearm Specialist": {
                     "name": "Firearm Specialist",
@@ -4461,6 +4441,7 @@
         "Harbormaster": {
             "name": "Harbormaster",
             "publicNotes": "<p>A port must sustain itself on different types of flows: the seaward and coastal flows, marked by the rising and falling of the tides, and the constant flow of trade. A harbormaster is expected to know the former reflexively and encourage the latter within the jurisdictional rules of law.</p><hr /><p>Larger societies rely on those with the authority and the ability to interpret and enforce laws. Some carry out these duties fairly, but others are harsh and cruel, imposing severe punishments on anyone unable to pay for clemency.</p>",
+            "languagesDetails": "up to 2 additional languages",
             "items": {
                 "equipment->Manacles (Average)": {
                     "name": "Manacles (Average)",
@@ -4474,12 +4455,7 @@
                 },
                 "action->Steady Balance": {
                     "name": "Steady Balance",
-                    "description": "<p>Whenever the harbormaster rolls a success on a check to @UUID[Compendium.pf2e.actionspf2e.Item.M76ycLAqHoAgbcej]{Balance}, they get a critical success instead. They're not @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} while Balancing on narrow surfaces and uneven ground.</p>",
-                    "rules": {
-                        "1": {
-                            "text": "Whenever the harbormaster rolls a success on a a check to @UUID[Compendium.pf2e.actionspf2e.Item.M76ycLAqHoAgbcej]{Balance}, they get a critical success instead."
-                        }
-                    }
+                    "description": "<p>Whenever the harbormaster rolls a success on a check to [[/act balance]], they get a critical success instead. They're not @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} while Balancing on narrow surfaces and uneven ground.</p>"
                 },
                 "action->Experienced Hand": {
                     "name": "Experienced Hand",
@@ -4698,7 +4674,7 @@
         "High Roller": {
             "name": "High Roller",
             "publicNotes": "<p>Those with a particular mastery over luck can make a living through games of chance as professional gamblers.</p><hr /><p>These lone wolves have an aura of mystery, bravado, and swagger.</p>",
-            "sensesDetails": "+26 for Sense Motive",
+            "sensesDetails": "(+26 for Sense Motive)",
             "items": {
                 "equipment->Playing Cards (54-Card Deck)": {
                     "name": "Playing Cards (54-Card Deck)",
@@ -4908,7 +4884,7 @@
             "name": "Infernal Registrar",
             "publicNotes": "<p>The infernal registrar is a mortal representative of Hell's bureaucracy. They can access copies of all infernal contracts signed by a denizen of their world and can navigate the machinations of Hell's many devils. They can grant special access\u2014for a price.</p><hr /><p>Larger societies rely on those with the authority and the ability to interpret and enforce laws. Some carry out these duties fairly, but others are harsh and cruel, imposing severe punishments on anyone unable to pay for clemency.</p>",
             "allSavesBonus": "+2 circumstance to all saves vs fear",
-            "sensesDetails": "+33 to Sense Motive",
+            "sensesDetails": "(+33 to Sense Motive)",
             "items": {
                 "spellcastingEntry->Divine Innate Spells": {
                     "name": "Divine Innate Spells"
@@ -4916,19 +4892,18 @@
                 "spell->Translate (At Will)": {
                     "name": "Translate (At Will)"
                 },
-                "strike-melee->Staff": {
-                    "name": "Staff"
+                "weapon->Staff of Office (Functions as +1 Flaming Striking Staff)": {
+                    "name": "Staff of Office (Functions as +1 Flaming Striking Staff)",
+                    "description": "<p>This long piece of wood can aid in walking and deliver a mighty blow.</p>"
+                },
+                "strike-melee->Staff of Office": {
+                    "name": "Staff of Office"
                 },
                 "strike-melee->Fist": {
                     "name": "Fist"
                 },
                 "action->+14 to Sense Motive": {
-                    "name": "+14 to Sense Motive",
-                    "rules": {
-                        "0": {
-                            "label": "To Sense Motive"
-                        }
-                    }
+                    "name": "+14 to Sense Motive"
                 },
                 "action->Contract Specialist": {
                     "name": "Contract Specialist",
@@ -4944,7 +4919,7 @@
                 },
                 "action->Technically Correct": {
                     "name": "Technically Correct",
-                    "description": "<p>The infernal registrar uses their Legal Lore modifier on all Deception checks to @UUID[Compendium.pf2e.actionspf2e.Item.ewwCglB7XOPLUz72]{Lie}.</p>"
+                    "description": "<p>The infernal registrar uses their Legal Lore modifier on all Deception checks to [[/act lie statistic=legal-lore]]{Lie}.</p>"
                 },
                 "action->+2 circumstance to all saves vs fear": {
                     "name": "+2 circumstance to all saves vs fear"
@@ -4955,7 +4930,7 @@
                 },
                 "action->Request Document": {
                     "name": "Request Document",
-                    "description": "<p>The infernal registrar makes a request to summon a copy of any infernal contract a specific creature has signed. They must know enough information to specifically identify the individual who signed. The infernal registrar attempts a Legal Lore check with a DC equal to a hard DC of the level of the creature in question. The infernal registrar will never promise a successful use of this ability in the agreements they make. Each agreement is typically for one attempt. Any copy summoned is simply a copy, has no impact on the original contract if destroyed or altered, and will vanish if taken more than 20 feet from the infernal registrar.</p><hr /><p><strong>Critical Success</strong> A copy of the contract appears before the infernal registrar after 10 minutes.</p>\n<p><strong>Success</strong> A copy of the contract appears before the infernal registrar after 1 hour.</p>\n<p><strong>Failure</strong> The attempt fails, but the infernal registrar can try again after 24 hours.</p>\n<p><strong>Critical Failure</strong> The attempt fails, and the infernal registrar can't try again for the named creature for 1 year.</p>"
+                    "description": "<p>The infernal registrar makes a request to summon a copy of any infernal contract a specific creature has signed. They must know enough information to specifically identify the individual who signed. The infernal registrar attempts a @Check[legal-lore] check with a DC equal to a hard DC of the level of the creature in question. The infernal registrar will never promise a successful use of this ability in the agreements they make. Each agreement is typically for one attempt. Any copy summoned is simply a copy, has no impact on the original contract if destroyed or altered, and will vanish if taken more than 20 feet from the infernal registrar.</p><hr /><p><strong>Critical Success</strong> A copy of the contract appears before the infernal registrar after 10 minutes.</p>\n<p><strong>Success</strong> A copy of the contract appears before the infernal registrar after 1 hour.</p>\n<p><strong>Failure</strong> The attempt fails, but the infernal registrar can try again after 24 hours.</p>\n<p><strong>Critical Failure</strong> The attempt fails, and the infernal registrar can't try again for the named creature for 1 year.</p>"
                 },
                 "lore->Legal Lore": {
                     "name": "Legal Lore"
@@ -5018,7 +4993,7 @@
         "Inspector": {
             "name": "Inspector",
             "publicNotes": "<p>Inspectors cultivate a wide selection of skills to investigate arson, murder, and other serious crimes, usually in major urban centers. They can assist adventurers, perhaps noticing an object or creature that seems out of the ordinary without being sure why.</p><hr /><p>Larger societies rely on those with the authority and the ability to interpret and enforce laws. Some carry out these duties fairly, but others are harsh and cruel, imposing severe punishments on anyone unable to pay for clemency.</p>",
-            "sensesDetails": "+15 to Sense Motive, Seek, or Search",
+            "sensesDetails": "(+15 to Sense Motive, Seek, or Search)",
             "languagesDetails": "up to 3 additional languages",
             "items": {
                 "strike-melee->Fist": {
@@ -5033,7 +5008,7 @@
                 },
                 "action->Sense Demise": {
                     "name": "Sense Demise",
-                    "description": "<p>The inspector can @UUID[Compendium.pf2e.actionspf2e.Item.1xRFPTFtWtGJ9ELw]{Sense Motive} on a corpse, learning about the creature in the moments before its death.</p>"
+                    "description": "<p>The inspector can [[/act sense-motive]] on a corpse, learning about the creature in the moments before its death.</p>"
                 },
                 "action->Unavoidable Question": {
                     "name": "Unavoidable Question",
@@ -5187,10 +5162,11 @@
         "Judge": {
             "name": "Judge",
             "publicNotes": "<p>Properly exercised, the duties of a judge include strict adherence to the law regardless of station, with minimal sentimentality. Yet for every unbiased justice, there's one who is zealously confident in their own agenda.</p><hr /><p>Larger societies rely on those with the authority and the ability to interpret and enforce laws. Some carry out these duties fairly, but others are harsh and cruel, imposing severe punishments on anyone unable to pay for clemency.</p>",
-            "sensesDetails": "(+15 to sense motive)",
+            "sensesDetails": "(+15 to Sense Motive)",
             "items": {
-                "weapon->Gavel": {
-                    "name": "Gavel"
+                "weapon->Gavel (Functions as a Club)": {
+                    "name": "Gavel (Functions as a Club)",
+                    "description": "<p>This is a piece of stout wood shaped or repurposed to bludgeon an enemy. Clubs can be intricately carved pieces of martial art or as simple as a tree branch or piece of wood.</p>"
                 },
                 "equipment->Judge's Robes": {
                     "name": "Judge's Robes",
@@ -5199,26 +5175,21 @@
                 "treasure->Law and Rhetoric Book": {
                     "name": "Law and Rhetoric Book"
                 },
-                "strike-melee->Gavel": {
-                    "name": "Gavel"
-                },
                 "strike-melee->Fist": {
                     "name": "Fist"
+                },
+                "strike-melee->Gavel": {
+                    "name": "Gavel"
                 },
                 "strike-ranged->Gavel": {
                     "name": "Gavel"
                 },
                 "action->+7 to Sense Motive": {
-                    "name": "+7 to Sense Motive",
-                    "rules": {
-                        "0": {
-                            "label": "To Sense Motive"
-                        }
-                    }
+                    "name": "+7 to Sense Motive"
                 },
                 "action->Group Impression": {
                     "name": "Group Impression",
-                    "description": "<p>When the judge @UUID[Compendium.pf2e.actionspf2e.Item.OX4fy22hQgUHDr0q]{Make an Impression}, they can compare their Diplomacy check result to the Will DCs of up to four targets instead of one.</p>"
+                    "description": "<p>When the judge @UUID[Compendium.pf2e.actionspf2e.Item.OX4fy22hQgUHDr0q]{Makes an Impression}, they can compare their Diplomacy check result to the Will DCs of up to four targets instead of one.</p>"
                 },
                 "action->Legal Specialist": {
                     "name": "Legal Specialist",
@@ -5226,7 +5197,7 @@
                 },
                 "action->Remember, You're Under Oath": {
                     "name": "Remember, You're Under Oath",
-                    "description": "<p>The judge reminds a creature of the oath they swore to the court. The judge makes an Intimidation check against the target's Will DC. On a success, the target takes a \u20132 status penalty to Deception checks to @UUID[Compendium.pf2e.actionspf2e.Item.ewwCglB7XOPLUz72]{Lie} for 10 minutes (or a \u20134 status penalty on a critical success). Regardless of the result, the target is temporarily immune to this ability for 24 hours.</p>"
+                    "description": "<p>The judge reminds a creature of the oath they swore to the court. The judge makes an @Check[intimidation|defense:will] check against the target's Will DC. On a success, the target takes a \u20132 status penalty to Deception checks to @UUID[Compendium.pf2e.actionspf2e.Item.ewwCglB7XOPLUz72]{Lie} for 10 minutes (or a \u20134 status penalty on a critical success). Regardless of the result, the target is temporarily immune to this ability for 24 hours.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.ESvcHy4CQbYLaZVu]{Effect: Remember, You're Under Oath}</p>"
                 },
                 "lore->Legal Lore": {
                     "name": "Legal Lore"
@@ -5895,8 +5866,8 @@
                 "strike-melee->Fist": {
                     "name": "Fist"
                 },
-                "action->+4 Bonus on Perception to Sense Motive": {
-                    "name": "+4 Bonus on Perception to Sense Motive"
+                "action->+4 to Sense Motive": {
+                    "name": "+4 to Sense Motive"
                 },
                 "action->Deep Cover": {
                     "name": "Deep Cover",
@@ -5930,6 +5901,7 @@
         "Mastermind": {
             "name": "Mastermind",
             "publicNotes": "<p>Masterminds weave long-ranged plots to see their nefarious goals come to fruition, deftly manipulating those around them, turning enemies into friends and then pitting them against one another.</p><hr /><p>Villains pursue selfish and cruel goals, trampling over anyone in their way.</p>",
+            "sensesDetails": "(+17 to Sense Motive)",
             "languagesDetails": "two additional languages",
             "items": {
                 "spellcastingEntry->Occult Spontaneous Spells": {
@@ -5947,12 +5919,12 @@
                 "strike-ranged->Hand Crossbow": {
                     "name": "Hand Crossbow"
                 },
+                "action->+7 to Sense Motive": {
+                    "name": "+7 to Sense Motive"
+                },
                 "action->Manipulation Specialist": {
                     "name": "Manipulation Specialist",
                     "description": "<p>When competing in a social or intellectual arena, the mastermind is a 7th-level challenge.</p>"
-                },
-                "action->Perception +17 to Sense Motive": {
-                    "name": "Perception +17 to Sense Motive"
                 },
                 "action->Versatile Performance": {
                     "name": "Versatile Performance",
@@ -5976,8 +5948,8 @@
             "publicNotes": "<p>The mayor is the political leader of a settlement. While not always an elected position, it usually involves devoting time to both civic and ceremonial functions and knowing the needs of their settlement.</p><hr /><p>Larger societies rely on those with the authority and the ability to interpret and enforce laws. Some carry out these duties fairly, but others are harsh and cruel, imposing severe punishments on anyone unable to pay for clemency.</p>",
             "languagesDetails": "up to 2 additional languages spoken in their settlement",
             "items": {
-                "weapon->Decorative Sword of Station": {
-                    "name": "Decorative Sword of Station",
+                "weapon->Decorative Sword of Station (Functions as Shortsword)": {
+                    "name": "Decorative Sword of Station (Functions as Shortsword)",
                     "description": "<p>These blades come in a variety of shapes and styles, but they are typically 2 feet long.</p>"
                 },
                 "strike-melee->Decorative Sword of Station": {
@@ -5986,9 +5958,17 @@
                 "strike-melee->Fist": {
                     "name": "Fist"
                 },
+                "action->Political Specialist": {
+                    "name": "Political Specialist",
+                    "description": "<p>For encounters involving seeking political favors, the mayor is a 6th-level challenge.</p>"
+                },
+                "action->Pulse of the Electorate": {
+                    "name": "Pulse of the Electorate",
+                    "description": "<p>The mayor can quickly find things out, and 1 hour after anyone in their settlement becomes aware of an event or activity, the mayor becomes aware of it, so long as they have had time to hobnob with their constituents.</p>"
+                },
                 "action->But Will It Lose Me Votes": {
                     "name": "But Will It Lose Me Votes",
-                    "description": "<p><strong>Frequency</strong> once per hour</p>\n<p><strong>Trigger</strong> A creature succeeds (but doesn't critically succeed) at a Diplomacy check to make a Request of the mayor</p><hr /><p><strong>Effect</strong> The triggering creature (or one of its allies) must attempt the check again within the next hour, this time against the mayor's Society DC. Society or a relevant Lore skill may be used for this check instead of Diplomacy.</p>"
+                    "description": "<p><strong>Frequency</strong> once per hour</p>\n<p><strong>Trigger</strong> A creature succeeds (but doesn't critically succeed) at a Diplomacy check to make a @UUID[Compendium.pf2e.actionspf2e.Item.DCb62iCBrJXy0Ik6]{Request} of the mayor</p><hr /><p><strong>Effect</strong> The triggering creature (or one of its allies) must attempt the check again within the next hour, this time against the mayor's Society DC. Society or a relevant Lore skill may be used for this check instead of Diplomacy.</p>"
                 },
                 "lore->Guild Lore": {
                     "name": "Guild Lore"
@@ -6199,7 +6179,7 @@
                 },
                 "action->Looking Glass Magic": {
                     "name": "Looking Glass Magic",
-                    "description": "<p>The mirror seer accesses power from their wicked benefactor through two mirrors: one full-sized @UUID[Compendium.pf2e.equipment-srd.Item.5oXpYSNiqxVWSafq]{Malefic Mirror} in their sanctum and an enchanted hand mirror they can carry on their person.</p><ul><li><strong>Malefic Mirror</strong> The mirror seer must visit the malefic mirror once per day to retain their spellcasting abilities, and they can activate the mirror for special scrying and illusory disguise spells as noted in the mirror's stat block.</li><li><p><strong>Enchanted Hand Mirror</strong> Without their enchanted hand mirror on their person, the mirror seer takes a \u20132 circumstance penalty to spell attack rolls and DCs and can't cast their 7th-rank spells. If it's not attended by the mirror seer, the hand mirror has AC 10, Hardness 0, and 1 HP.</p></li></ul>"
+                    "description": "<p>The mirror seer accesses power from their wicked benefactor through two mirrors: one full-sized @UUID[Compendium.pf2e.equipment-srd.Item.5oXpYSNiqxVWSafq]{Malefic Mirror} in their sanctum and an <em>enchanted hand mirror</em> they can carry on their person.</p><ul><li><strong>Malefic Mirror</strong> The mirror seer must visit the <em>malefic mirror</em> once per day to retain their spellcasting abilities, and they can activate the mirror for special @UUID[Compendium.pf2e.spells-srd.Item.r784cIz17eWujtQj]{Scrying} and @UUID[Compendium.pf2e.spells-srd.Item.i35dpZFI7jZcRoBo]{Illusory Disguise} spells as noted in the mirror's stat block.</li><li><p><strong>Enchanted Hand Mirror</strong> Without their <em>enchanted hand mirror</em> on their person, the mirror seer takes a \u20132 circumstance penalty to spell attack rolls and DCs and can't cast their 7th-rank spells. If it's not attended by the mirror seer, the hand mirror has AC 10, Hardness 0, and 1 HP.</p></li></ul>"
                 },
                 "action->Rightfully Mine": {
                     "name": "Rightfully Mine",
@@ -6207,11 +6187,11 @@
                 },
                 "action->A Fairer Face": {
                     "name": "A Fairer Face",
-                    "description": "<p>The mirror seer chooses a creature within 100 feet that can see its own reflection in a mirror. The creature must succeed at a @Check[will|dc:29] save or become @UUID[Compendium.pf2e.conditionitems.Item.AdPVz7rbaVSRxHFg]{Fascinated} by their reflection for 1 minute. The creature can attempt a new save to end the effect at the end of each of its turns.</p>"
+                    "description": "<p>The mirror seer chooses a creature within 100 feet that can see its own reflection in a mirror. The creature must succeed at a @Check[will|dc:29|options:inflicts:fascinated] save or become @UUID[Compendium.pf2e.conditionitems.Item.AdPVz7rbaVSRxHFg]{Fascinated} by their reflection for 1 minute. The creature can attempt a new save to end the effect at the end of each of its turns.</p>"
                 },
                 "action->Hall of Mirrors": {
                     "name": "Hall of Mirrors",
-                    "description": "<p><strong>Frequency</strong> once per day</p><hr /><p><strong>Effect</strong> The mirror seer causes all surfaces in a @Template[type:burst|distance:30] within 100 feet to become reflective for 1 minute. Every creature in the area or that later enters the area must succeed at a @Check[will|dc:27] save or become @UUID[Compendium.pf2e.conditionitems.Item.yblD8fOR1J8rDwEQ]{Confused} by the reflections and refractions. The confusion ends if the creature leaves the area, and the creature can attempt a new save to end the effect at the end of each of its turns. When the effect ends for a creature, that creature becomes temporarily immune for 10 minutes.</p>"
+                    "description": "<p><strong>Frequency</strong> once per day</p><hr /><p><strong>Effect</strong> The mirror seer causes all surfaces in a @Template[type:burst|distance:30] within 100 feet to become reflective for 1 minute. Every creature in the area or that later enters the area must succeed at a @Check[will|dc:27|options:area-effect,inflicts:confused] save or become @UUID[Compendium.pf2e.conditionitems.Item.yblD8fOR1J8rDwEQ]{Confused} by the reflections and refractions. The confusion ends if the creature leaves the area, and the creature can attempt a new save to end the effect at the end of each of its turns. When the effect ends for a creature, that creature becomes temporarily immune for 10 minutes.</p>"
                 }
             }
         },
@@ -6422,13 +6402,20 @@
                 "equipment->Scroll Case with Ship's Charts": {
                     "name": "Scroll Case with Ship's Charts"
                 },
+                "strike-melee->Fist": {
+                    "name": "Fist"
+                },
                 "action->Chart a Course": {
                     "name": "Chart a Course",
                     "description": "<p>By spending 10 minutes of work and succeeding at a @Check[sailing-lore|dc:22]{Sailing Lore} check, the navigator plots an optimal course.</p>\n<p>The severity of environmental conditions other than temperature are reduced by one step for 24 hours (two steps on a critical success). This changes moderate damage to minor damage, winds that create greater difficult terrain cause only difficult terrain, and so on.</p>"
                 },
+                "action->Sailing Specialist": {
+                    "name": "Sailing Specialist",
+                    "description": "<p>For encounters involving navigation or sailing, the navigator is a 4th-level challenge.</p>"
+                },
                 "action->Navigator's Edge": {
                     "name": "Navigator's Edge",
-                    "description": "<p>The navigator deals an additional 1d6 weapon damage when on a ship.</p>"
+                    "description": "<p>The navigator's Strikes deal an additional 1d6 damage when on a ship.</p>"
                 },
                 "lore->Sailing Lore": {
                     "name": "Sailing Lore"
@@ -6454,7 +6441,7 @@
                 },
                 "action->Stench of Decay": {
                     "name": "Stench of Decay",
-                    "description": "<p>The necromancer emits a scent of putrid rot in a @Template[type:emanation|distance:5]. A living creature that enters or begins its turn in the aura is @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 1}.</p>"
+                    "description": "<p>The necromancer emits a scent of putrid rot in a 5-foot emanation. A living creature that enters or begins its turn in the aura is @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 1}.</p>"
                 },
                 "action->Undead, Arise!": {
                     "name": "Undead, Arise!",
@@ -6462,7 +6449,7 @@
                 },
                 "action->Undead, Attack!": {
                     "name": "Undead, Attack!",
-                    "description": "<p><strong>Requirements</strong> The necromancer has at least one undead entity active</p><hr /><p><strong>Effect</strong> The necromancer commands all their undead entities to attack. Each entity can Stride up to 20 feet into an empty square and make a Strike. The Strike has a +15 attack modifier and deals @Damage[2d12[bludgeoning]|traits:magical] damage (or @Damage[2d12[spirit]|traits:magical]{spirit} damage if the entity is a spirit). The Strike has the magical trait, and no multiple attack penalty applies to it.</p>"
+                    "description": "<p><strong>Requirements</strong> The necromancer has at least one undead entity active</p><hr /><p><strong>Effect</strong> The necromancer commands all their undead entities to attack. Each entity can Stride up to 20 feet into an empty square and make a Strike. The Strike has a [[/r 1d20+15 #Attack]]{+15} attack modifier and deals @Damage[2d12[bludgeoning]|traits:magical] damage (or @Damage[2d12[spirit]|traits:magical]{spirit} damage if the entity is a spirit). The Strike has the magical trait, and no multiple attack penalty applies to it.</p>"
                 },
                 "action->Wave of Death": {
                     "name": "Wave of Death",
@@ -6567,7 +6554,7 @@
                 },
                 "action->Practiced Swimmer": {
                     "name": "Practiced Swimmer",
-                    "description": "<p>When the ocean nomad rolls a success on an Athletics check to Swim, they get a critical success instead.</p>"
+                    "description": "<p>When the ocean nomad rolls a success on an Athletics check to [[/act swim]], they get a critical success instead.</p>"
                 },
                 "action->Strong Lungs": {
                     "name": "Strong Lungs",
@@ -6579,7 +6566,7 @@
                 },
                 "action->Stab and Twist": {
                     "name": "Stab and Twist",
-                    "description": "<p><strong>Requirements</strong> The ocean nomad's last action was a successful melee trident Strike</p><hr /><p><strong>Effect</strong> The ocean nomad wrenches out the barbed tines of their trident, inflicting 1d6 persistent bleed to the target.</p>"
+                    "description": "<p><strong>Requirements</strong> The ocean nomad's last action was a successful melee trident Strike</p><hr /><p><strong>Effect</strong> The ocean nomad wrenches out the barbed tines of their trident, inflicting @Damage[1d6[bleed]] to the target.</p>"
                 },
                 "lore->Sailing Lore": {
                     "name": "Sailing Lore"
@@ -6980,19 +6967,22 @@
             "name": "Pirate",
             "publicNotes": "<p>These scourges are a threat to anyone who spends time away from land.</p><hr /><p>Adventurers may need passage on a swift vessel, or they might face danger from raiders at sea or in coastal settlements.</p>",
             "items": {
-                "weapon->Cutlass": {
-                    "name": "Cutlass",
+                "weapon->Cutlass (Functions as a Scimitar)": {
+                    "name": "Cutlass (Functions as a Scimitar)",
                     "description": "<p>This one-handed curved blade is sharp on one side.</p>"
                 },
                 "strike-melee->Cutlass": {
                     "name": "Cutlass"
                 },
-                "action->Attack of Opportunity": {
-                    "name": "Attack of Opportunity"
+                "strike-melee->Fist": {
+                    "name": "Fist"
                 },
                 "action->Bravery": {
                     "name": "Bravery",
                     "description": "<p>When the pirate rolls a success on a Will save against a fear effect, they get a critical success instead. In addition, any time they gain the @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened} condition, reduce its value by 1.</p>"
+                },
+                "action->Reactive Strike": {
+                    "name": "Reactive Strike"
                 },
                 "action->Boarding Action": {
                     "name": "Boarding Action",
@@ -7051,9 +7041,6 @@
                     "name": "Snare Toolkit (Functions as Artisan's Toolkit)",
                     "description": "<p>You need these tools to create items from raw materials with the Craft skill. Different sets are needed for different work, as determined by the GM; for example, a blacksmith's toolkit differs from a woodworker's toolkit. If you wear your artisan's toolkit, you can draw and replace it as part of the action that uses it.</p>"
                 },
-                "strike-melee->Light Mace": {
-                    "name": "Light Mace"
-                },
                 "strike-melee->Fist": {
                     "name": "Fist"
                 },
@@ -7074,7 +7061,7 @@
         "Political Upstart": {
             "name": "Political Upstart",
             "publicNotes": "<p>Fiery and heady, a political upstart actively pushes against the status quo.</p><hr /><p>These lone wolves have an aura of mystery, bravado, and swagger.</p>",
-            "sensesDetails": "+11 to Sense Motive",
+            "sensesDetails": "(+11 to Sense Motive)",
             "items": {
                 "armor->Long Coat (Functions as Leather Armor)": {
                     "name": "Long Coat (Functions as Leather Armor)",
@@ -7146,10 +7133,14 @@
         "Prime Minister": {
             "name": "Prime Minister",
             "publicNotes": "<p>The prime minister is the leader of a nation's bureaucracy. They are experienced politicians in charge of the laws and regulations of their territory, answering only to a monarch, if there is one. Often, though, a vote of \"No Confidence\" or similar legal procedure exists for removing the prime minister.</p><hr /><p>Larger societies rely on those with the authority and the ability to interpret and enforce laws. Some carry out these duties fairly, but others are harsh and cruel, imposing severe punishments on anyone unable to pay for clemency.</p>",
+            "sensesDetails": "(+19 to Sense Motive)",
             "languagesDetails": "up to 3 additional languages spoken in their nation",
             "items": {
                 "strike-melee->Fist": {
                     "name": "Fist"
+                },
+                "action->+10 to Sense Motive": {
+                    "name": "+10 to Sense Motive"
                 },
                 "action->Political Specialist": {
                     "name": "Political Specialist",
@@ -7202,6 +7193,7 @@
         "Propagandist": {
             "name": "Propagandist",
             "publicNotes": "<p>The misleadings, half-facts, and effortless spin propagandists cast over events create proof of whatever their bosses need them to prove.</p><hr /><p>Villains pursue selfish and cruel goals, trampling over anyone in their way.</p>",
+            "sensesDetails": "(+12 to Sense Motive)",
             "items": {
                 "spellcastingEntry->Occult Spontaneous Spells": {
                     "name": "Occult Spontaneous Spells"
@@ -7225,12 +7217,12 @@
                 "strike-melee->Fist": {
                     "name": "Fist"
                 },
+                "action->+2 to Sense Motive": {
+                    "name": "+2 to Sense Motive"
+                },
                 "action->Nuanced Spin": {
                     "name": "Nuanced Spin",
                     "description": "<p>The propagandist phrases everything loosely and vaguely enough that, though it's always misleading, none of it is false. The propagandist can use Diplomacy instead of Deception to @UUID[Compendium.pf2e.actionspf2e.Item.GkmbTGfg8KcgynOA]{Create a Diversion} or [[/act feint statistic=diplomacy]], and instead of Intimidation to [[/act coerce statistic=diplomacy]]. A creature attempting to @UUID[Compendium.pf2e.actionspf2e.Item.1xRFPTFtWtGJ9ELw]{Sense Motive} against the propagandist gets a result one degree of success worse than they rolled.</p>"
-                },
-                "action->Perception +12 to Sense Motive": {
-                    "name": "Perception +12 to Sense Motive"
                 },
                 "action->No Hard Feelings": {
                     "name": "No Hard Feelings",
@@ -7412,7 +7404,7 @@
         },
         "Rigger": {
             "name": "Rigger",
-            "publicNotes": "<p>Adventurers may need passage on a swift vessel, or they might face danger from raiders at sea or in coastal settlements.</p>",
+            "publicNotes": "<p>A knack for knots and no fear of heights are the prime qualifications of these high-flying rope wranglers and lookouts.</p><hr /><p>Adventurers may need passage on a swift vessel, or they might face danger from raiders at sea or in coastal settlements.</p>",
             "items": {
                 "strike-melee->Fist": {
                     "name": "Fist"
@@ -7598,14 +7590,8 @@
                     "name": "Artisan's Toolkit (Snare Toolkit)",
                     "description": "<p>You need these tools to create items from raw materials with the Craft skill. Different sets are needed for different work, as determined by the GM; for example, a blacksmith's toolkit differs from a woodworker's toolkit. If you wear your artisan's toolkit, you can draw and replace it as part of the action that uses it.</p>"
                 },
-                "strike-melee->Sap": {
-                    "name": "Sap"
-                },
                 "strike-melee->Fist": {
                     "name": "Fist"
-                },
-                "strike-ranged->Hand Crossbow": {
-                    "name": "Hand Crossbow"
                 },
                 "action->Snare Crafting": {
                     "name": "Snare Crafting",
@@ -7698,8 +7684,8 @@
             "name": "Ship Captain",
             "publicNotes": "<p>The captain is the ultimate authority on a vessel, responsible for the livelihood and well-being of everyone on the ship.</p><hr /><p>Adventurers may need passage on a swift vessel, or they might face danger from raiders at sea or in coastal settlements.</p>",
             "items": {
-                "strike-melee->Main-Gauche": {
-                    "name": "Main-Gauche"
+                "strike-melee->Fist": {
+                    "name": "Fist"
                 },
                 "action->Bravery": {
                     "name": "Bravery",
@@ -7707,7 +7693,7 @@
                 },
                 "action->Dual Disarm": {
                     "name": "Dual Disarm",
-                    "description": "<p>The captain makes two Strikes, one with their rapier and one with their main-gauche (in either order). If both Strikes hit, the ship captain can attempt to @UUID[Compendium.pf2e.actionspf2e.Item.Dt6B1slsBy8ipJu9]{Disarm} the target.</p>\n<p>Their multiple attack penalty increases only after all the attacks are made.</p>"
+                    "description": "<p>The captain makes two Strikes, one with their rapier and one with their main-gauche (in either order). If both Strikes hit, the ship captain can attempt to [[/act disarm]] the target.</p>\n<p>Their multiple attack penalty increases only after all the attacks are made.</p>"
                 },
                 "action->No Quarter!": {
                     "name": "No Quarter!",
@@ -7909,7 +7895,8 @@
                     "name": "Ghost Claw"
                 },
                 "strike-ranged->Spirit Pitch": {
-                    "name": "Spirit Pitch"
+                    "name": "Spirit Pitch",
+                    "description": "<p><span class=\"action-glyph\">2</span></p>"
                 },
                 "action->Spiritsense": {
                     "name": "Spiritsense",
@@ -7917,7 +7904,7 @@
                 },
                 "action->Haunting Spirits": {
                     "name": "Haunting Spirits",
-                    "description": "<p>30 feet. The spirits bound by a spirit binder swirl around, lashing out at their foes. An enemy that enters or starts its turn in the aura must succeed at a @Check[will|dc:27|options:area-effect,damaging-effect] save or take @Damage[3d6[spirit]|options:area-damage] damage and be @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 1} (double damage and @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 2} on a critical failure).</p>"
+                    "description": "<p>30 feet. The spirits bound by a spirit binder swirl around, lashing out at their foes. An enemy that enters or starts its turn in the aura must succeed at a @Check[will|dc:27|options:area-effect,damaging-effect,inflicts:frightened] save or take @Damage[3d6[spirit]|options:area-damage] damage and be @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 1} (double damage and @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 2} on a critical failure).</p>"
                 },
                 "action->Spirit Scrying": {
                     "name": "Spirit Scrying",
@@ -8177,7 +8164,7 @@
         "Tax Collector": {
             "name": "Tax Collector",
             "publicNotes": "<p>Ledgers and marks, positive and negative flows, and levies and allotments are a tax collector's daily bread. Where coin is gained, from whom it's collected, and to whom it's disbursed are their concerns\u2014not who can afford the taxes.</p><hr /><p>Larger societies rely on those with the authority and the ability to interpret and enforce laws. Some carry out these duties fairly, but others are harsh and cruel, imposing severe punishments on anyone unable to pay for clemency.</p>",
-            "sensesDetails": "(dc 19 against stealing)",
+            "sensesDetails": "(DC 19 against Stealing)",
             "items": {
                 "equipment->Tax Documents in Scroll Case": {
                     "name": "Tax Documents in Scroll Case"
@@ -8188,6 +8175,9 @@
                 },
                 "strike-melee->Fist": {
                     "name": "Fist"
+                },
+                "action->DC 19 Against Stealing": {
+                    "name": "DC 19 Against Stealing"
                 },
                 "action->Financial Specialist": {
                     "name": "Financial Specialist",
@@ -8315,7 +8305,7 @@
         "Therapeutic Healer": {
             "name": "Therapeutic Healer",
             "publicNotes": "<p>Some healers feel great empathy for their charges and take great pains to help shoulder their allies' burdens both in and out of combat.</p><hr /><p>The world is a dangerous place. Thankfully, there are those who devote their lives to easing the pain and suffering of others.</p>",
-            "sensesDetails": "+16 to Sense Motive",
+            "sensesDetails": "(+16 to Sense Motive)",
             "languagesDetails": "two additional humanoid languages",
             "items": {
                 "spellcastingEntry->Occult Spontaneous Spells": {
@@ -8492,12 +8482,6 @@
             "items": {
                 "strike-melee->Fist": {
                     "name": "Fist"
-                },
-                "strike-melee->Nunchaku": {
-                    "name": "Nunchaku"
-                },
-                "strike-ranged->Shuriken": {
-                    "name": "Shuriken"
                 },
                 "action->Work the Crowd": {
                     "name": "Work the Crowd",
@@ -8887,7 +8871,7 @@
         "Unsanctioned Sheriff": {
             "name": "Unsanctioned Sheriff",
             "publicNotes": "<p>Believing the ends justify the means, the unsanctioned sheriff is unafraid to use others for their own gain, through bribes, manipulation, or force.</p><hr /><p>These lone wolves have an aura of mystery, bravado, and swagger.</p>",
-            "sensesDetails": "+15 to Sense Motive",
+            "sensesDetails": "(+15 to Sense Motive)",
             "items": {
                 "equipment->Badge": {
                     "name": "Badge"
@@ -9079,7 +9063,7 @@
             "name": "Watch Officer",
             "publicNotes": "<p>Often leading a small team of lower-ranking guards, watch officers patrol their assigned areas to maintain order and enforce laws. Watch officers get the job done, though their methods aren't always gentle or kind.</p><hr /><p>Larger societies rely on those with the authority and the ability to interpret and enforce laws. Some carry out these duties fairly, but others are harsh and cruel, imposing severe punishments on anyone unable to pay for clemency.</p>",
             "acDetails": "(21 with shield raised)",
-            "sensesDetails": "(+9 to sense motive)",
+            "sensesDetails": "(+9 to Sense Motive)",
             "items": {
                 "strike-melee->Fist": {
                     "name": "Fist"
@@ -9089,7 +9073,7 @@
                 },
                 "action->Air of Authority": {
                     "name": "Air of Authority",
-                    "description": "<p>10 feet. Creatures in the aura who are the same or lower level than the watch officer take a -2 status penalty to their Will DC against the watch officer's attempts to @UUID[Compendium.pf2e.actionspf2e.Item.tHCqgwjtQtzNqVvd]{Coerce} or @UUID[Compendium.pf2e.actionspf2e.Item.2u915NdUyQan6uKF]{Demoralize} them.</p>"
+                    "description": "<p>10 feet. Creatures in the aura who are the same or lower level than the watch officer take a -2 status penalty to their Will DC against the watch officer's attempts to [[/act coerce]] or [[/act demoralize]] them.</p>"
                 },
                 "action->Bravery": {
                     "name": "Bravery",
@@ -9129,11 +9113,11 @@
                 },
                 "action->Arcane Watch": {
                     "name": "Arcane Watch",
-                    "description": "<p>The watchmage can either @UUID[Compendium.pf2e.actionspf2e.Item.EwgTZBWsc8qKaViP]{Investigate} or @UUID[Compendium.pf2e.actionspf2e.Item.TiNDYUGlMmxzxBYU]{Search} while using the Detect Magic exploration activity.</p>"
+                    "description": "<p>The watchmage can either @UUID[Compendium.pf2e.actionspf2e.Item.EwgTZBWsc8qKaViP]{Investigate} or @UUID[Compendium.pf2e.actionspf2e.Item.TiNDYUGlMmxzxBYU]{Search} while using the @UUID[Compendium.pf2e.actionspf2e.Item.Yb0C1uLzeHrVLl7a]{Detect Magic} exploration activity.</p>"
                 },
                 "action->Counter Escape": {
                     "name": "Counter Escape",
-                    "description": "<p><strong>Trigger</strong> A creature @UUID[Compendium.pf2e.actionspf2e.Item.aBQ8ajvEBByv45yz]{Casts a Spell} with the teleportation trait or as a reaction</p><hr /><p><strong>Effect</strong> The watchmage expends a spell slot of the same rank or higher as the trigger creature's spell and attempts to counteract the triggering spell (counteract modifier +11).</p>"
+                    "description": "<p><strong>Trigger</strong> A creature Casts a Spell with the teleportation trait or as a reaction</p><hr /><p><strong>Effect</strong> The watchmage expends a spell slot of the same rank or higher as the trigger creature's spell and attempts to counteract the triggering spell (counteract modifier [[/r 1d20+11 #Counteract]]{+11}).</p>"
                 },
                 "action->Eldritch Arms": {
                     "name": "Eldritch Arms",
@@ -9159,7 +9143,7 @@
                 },
                 "action->Invisibility Scan": {
                     "name": "Invisibility Scan",
-                    "description": "<p>Invisibility can't make anything undetected or unnoticed to the watchmage squadron.</p>"
+                    "description": "<p>Invisibility can't make anything @UUID[Compendium.pf2e.conditionitems.Item.VRSef5y1LmL2Hkjf]{Undetected} or @UUID[Compendium.pf2e.conditionitems.Item.9evPzg9E6muFcoSk]{Unnoticed} to the watchmage squadron.</p>"
                 },
                 "action->Troop Defenses": {
                     "name": "Troop Defenses",
@@ -9175,7 +9159,7 @@
                 },
                 "action->Fire Shortbows!": {
                     "name": "Fire Shortbows!",
-                    "description": "<p><span class=\"action-glyph\">1 </span>to<span class=\"action-glyph\"> 3</span></p>\n<p><strong>Frequency</strong> once per round</p><hr /><p><strong>Effect</strong> The watchmages fire a volley against each enemy in a @Template[type:burst|distance:10] within 150 feet, with a @Check[reflex|dc:26|basic|options:area-effect] save. The damage depends on the number of actions. When the squadron is reduced to 2 or fewer segments, this area decreases to a @Template[type:burst|distance:5].</p>\n<p><span class=\"action-glyph\">1</span> @Damage[(1d6+3)[piercing],1d6[force]]{1d6+3 piercing plus 1d6 force} damage</p>\n<p><span class=\"action-glyph\">2</span> @Damage[(3d6+6)[piercing],1d6[force]]{3d6+6 piercing plus 1d6 force} damage</p>\n<p><span class=\"action-glyph\">3</span> @Damage[(4d6+6)[piercing],1d6[force]]{4d6+6 piercing plus 1d6 force} damage</p>"
+                    "description": "<p><span class=\"action-glyph\">1 </span>to<span class=\"action-glyph\"> 3</span></p>\n<p><strong>Frequency</strong> once per round</p><hr /><p><strong>Effect</strong> The watchmages fire a volley against each enemy in a @Template[type:burst|distance:10] within 150 feet, with a @Check[reflex|dc:26|basic|options:area-effect] save. The damage depends on the number of actions. When the squadron is reduced to 2 or fewer segments, this area decreases to a @Template[type:burst|distance:5].</p>\n<p><span class=\"action-glyph\">1</span> @Damage[(1d6+3)[piercing],1d6[force]|options:area-damage]{1d6+3 piercing plus 1d6 force} damage</p>\n<p><span class=\"action-glyph\">2</span> @Damage[(3d6+6)[piercing],1d6[force]|options:area-damage]{3d6+6 piercing plus 1d6 force} damage</p>\n<p><span class=\"action-glyph\">3</span> @Damage[(4d6+6)[piercing],1d6[force]|options:area-damage]{4d6+6 piercing plus 1d6 force} damage</p>"
                 },
                 "action->Troop Spellcasting": {
                     "name": "Troop Spellcasting",
