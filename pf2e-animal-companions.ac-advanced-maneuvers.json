@@ -251,7 +251,12 @@
         },
         "Rolling Charge": {
             "name": "Rolling Charge",
-            "description": "<p>The cragstone bear tucks itself into a ball and Strides twice in a straight line. It can make a slam Strike against one creature it's adjacent to at any point during this movement. If the Strike is a critical hit, the target is also knocked @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone}.</p>"
+            "description": "<p>The cragstone bear tucks itself into a ball and Strides twice in a straight line. It can make a slam Strike against one creature it's adjacent to at any point during this movement. If the Strike is a critical hit, the target is also knocked @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone}.</p>",
+            "rules": {
+                "1": {
+                    "text": "COMP.SpecificRule.CragstoneBear.RollingCharge.Note"
+                }
+            }
         },
         "Rolling Knockdown": {
             "name": "Rolling Knockdown",
@@ -291,7 +296,12 @@
         },
         "Spit": {
             "name": "Spit",
-            "description": "<p>The bacallia regurgitates a portion of its stomach's contents as a ranged spit Strike that deals a base of @Damage[1d6[acid]] damage with a range increment of 10 feet. The damage is 2d6 for a mature bacallia and 3d6 for a specialized one. A living creature hit with this Strike is also @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 1} (@UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 2} on a critical hit).</p>"
+            "description": "<p>The bacallia regurgitates a portion of its stomach's contents as a ranged spit Strike that deals a base of 1d6 acid damage with a range increment of 10 feet. The damage is 2d6 for a mature bacallia and 3d6 for a specialized one. A living creature hit with this Strike is also @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 1} (@UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 2} on a critical hit).</p>",
+            "rules": {
+                "3": {
+                    "text": "COMP.SpecificRule.Bacallia.AdvancedManeuver.Note"
+                }
+            }
         },
         "Spring Kick": {
             "name": "Spring Kick",

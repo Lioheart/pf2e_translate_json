@@ -1,5 +1,10 @@
 {
     "label": "Ac-Features",
+    "folders": {
+        "Swarm Eidolon": "Swarm Eidolon",
+        "Actions": "Actions",
+        "Followers": "Followers"
+    },
     "entries": {
         "Adaptable Elemental": {
             "name": "Adaptable Elemental",
@@ -23,7 +28,7 @@
         },
         "Angelic Mercy": {
             "name": "Angelic Mercy",
-            "description": "<p>Your eidolon's angelic power allows them to assuage a variety of ailments, just like most other powerful angels. Your eidolon can cast <em>@Compendium[pf2e.spells-srd.OyFCwQuw8XRazsNr]{Remove Curse}</em>, <em>@Compendium[pf2e.spells-srd.RneiyehRO6f7LP44]{Remove Disease}</em>, <em>@Compendium[pf2e.spells-srd.EfFMLVbmkBWmzoLF]{Remove Fear}</em>, and <em>@Compendium[pf2e.spells-srd.BCuHKrDeJ4eq53M6]{Remove Paralysis}</em> once per day each as 9th-level divine innate spells.</p>"
+            "description": "<p>Your eidolon's angelic power allows them to assuage a variety of ailments, just like most other powerful angels. Your eidolon can cast @UUID[Compendium.pf2e.spells-srd.Item.SUKaxVZW2TlM8lu0]{Cleanse Affliction} two times per day, @UUID[Compendium.pf2e.spells-srd.Item.EfFMLVbmkBWmzoLF]{Clear Mind} once per day, and @UUID[Compendium.pf2e.spells-srd.Item.BCuHKrDeJ4eq53M6]{Sure Footing} once per day each as 9th-rank divine innate spells.</p>"
         },
         "Anger Aura": {
             "name": "Anger Aura",
@@ -40,6 +45,10 @@
         "Blasphemous Decree": {
             "name": "Blasphemous Decree",
             "description": "<p>Your demon utters indescribable words writhing with its associated sin. It can cast an evil <em>@Compendium[pf2e.spells-srd.sX2o0HH4RjJDAZ8C]{Divine Decree}</em> once per day as a 9th-level spell. You are unaffected by this decree, even if you aren't evil. At 19th level, this becomes a 10th-level divine decree instead.</p>"
+        },
+        "Brazen Swarm": {
+            "name": "Brazen Swarm",
+            "description": "<p><em>Str</em> +4, <em>Dex</em> +2, <em>Con</em> +3, <em>Int</em> +0, <em>Wis</em> +0, <em>Cha</em> +0; +2 AC (+3 Dex cap)</p>"
         },
         "Breath Weapon": {
             "name": "Breath Weapon",
@@ -192,6 +201,10 @@
             "name": "Enraged Assassin",
             "description": "<p>Str 14, Dex 18, Con 16, Int 10, Wis 8, Cha 12; +1 AC (+4 Dex cap)</p>"
         },
+        "Exploit Injury": {
+            "name": "Exploit Injury",
+            "description": "<p><strong>Requirements</strong> The scout's last action was a successful melee Strike against an @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} target</p><hr /><p><strong>Effect</strong> The target of the Strike is off-guard until the end of your next turn.</p>"
+        },
         "Fey Chicanery": {
             "name": "Fey Chicanery",
             "description": "<p>Ever full of tricks, your fey eidolon twists magical protections into your shared life force, granting it a contingency in its back pocket for desperate situations. During your daily preparations, your eidolon can cast a @Compendium[pf2e.spells-srd.WG91Z5TiR6oO5FOw]{Contingency} spell. The 4th-level spell it chooses must come from the primal or fey gift list, and must either be common or be another spell you have access to.</p>"
@@ -211,6 +224,14 @@
         "Fleet Beast": {
             "name": "Fleet Beast",
             "description": "<p>Str 14, Dex 18, Con 16, Int 8, Wis 12, Cha 10; +1 AC (+4 Dex cap)</p>"
+        },
+        "Follower": {
+            "name": "Follower",
+            "description": "<p>A follower is an NPC who accompanies and assists you for an extended period of time, perhaps even an entire campaign. You can gain a follower by taking the captain archetype. Followers are companions who rely upon you for direction in combat; they have the minion trait. You can have a follower and a familiar or pet, but you can't have a follower if you already have an animal companion or another companion that prevents you from having an animal companion.</p><p><strong>Ancestry:</strong> Most followers are human, and so have the human and humanoid traits. They are size Medium, have a 25-foot Speed, and speak Common plus a number of additional languages equal to 1 + their Intelligence modifier. While followers have a heritage that is part of their personal story and background, followers don't gain mechanical benefits from their heritage. For information on followers of other ancestries, see the @UUID[Compendium.pf2e.feats-srd.Item.mW9uqRmI0Wi2qYSm]{Leader of All} feat.</p><p><strong>Follower Type:</strong> Followers can come from all walks of life and have a wide variety of experiences and abilities. For ease of play, followers are grouped into broad categories called follower types, such as berserker or medic.</p><p><strong>Kits:</strong> Each follower has a personal set of gear called a kit, which automatically improves as the PCs level up and has a level equal to the PCs' level. The kit includes the follower's weapons, armor, and other items that they require to perform the actions listed in their statistics. Followers can't wear or use items other than those in their kit, nor can they share equipment with the PCs. A follower's damage with melee and ranged Strikes depends upon their follower type. Each follower type has a default weapon listed; if you would like your follower to use a different weapon that deals the same or lower damage from the same category (for example, simple melee weapon or martial ranged weapon) that requires the same number of hands to wield, talk to your GM. Followers are assumed to maintain their kit. This includes procuring adequate ammunition for ranged weapons, as well as repairing damaged gear. A follower can spend 10 minutes to repair all their broken and damaged equipment, and they can replace destroyed equipment during daily preparations.</p><p><strong>Payment:</strong> The follower mechanics abstract away the compensation that followers receive for their work, so as not to impact the expected party wealth. Followers are assumed to earn enough income to provide for their own food, clothing, and shelter, to maintain and upgrade their kits (see above), and to have a comfortable standard of living. The source of this income is up to the GM and player to decide based on the follower's circumstances; perhaps they have been hired by the PCs' patron or an outside organization to work with the PCs, or perhaps the PCs earn additional wealth in their adventures that is earmarked for the follower.</p><p><strong>Replacing a Follower:</strong> Followers might part ways with the PCs for a variety of reasons, whether it be the follower's death or other events during the campaign. If a PC loses a follower, they can spend a week of downtime to replace them. Replacing a follower generally requires the PC to be in a settlement or other location where recruits are available, but the GM can also introduce followers organically during the adventure.</p>"
+        },
+        "Following Shot": {
+            "name": "Following Shot",
+            "description": "<p><strong>Frequency</strong> once per turn</p><p><strong>Trigger</strong> The sharpshooter critically hits with a ranged Strike</p><p><strong>Requirements</strong> The sharpshooter is wielding a weapon with reload 0</p><hr /><p><strong>Effect</strong> Bolstered by their success, the sharpshooter quickly takes another shot. They make another ranged Strike with the same weapon at the same multiple attack penalty. This attack still counts toward the sharpshooter's multiple attack penalty.</p>"
         },
         "Furious Strike": {
             "name": "Furious Strike",
@@ -232,6 +253,10 @@
             "name": "Hallowed Strikes",
             "description": "<p>Your eidolon's attacks are hallowed by the celestial realms. Your eidolon's unarmed Strikes gain the holy trait and deal 1 extra spirit damage to unholy creatures and creatures with weakness to holy. Additionally, your eidolon can make nonlethal attacks with its unarmed attacks without taking the usual -2 circumstance penalty.</p>"
         },
+        "Haunting Visage": {
+            "name": "Haunting Visage",
+            "description": "<p><strong>Requirements</strong> Your eidolon is condensed. </p><hr /><p>Your eidolon suddenly shifts itself into a terrifying shape of its choosing, rather than a simple mound, by closely controlling the positioning of its component bodies. The eidolon attempts to @UUID[Compendium.pf2e.actionspf2e.Item.2u915NdUyQan6uKF]{Demoralize} a creature within 15 feet; this Demoralize attempt loses the auditory trait, gains the visual trait, and the eidolon doesn't take a –4 circumstance penalty to the check if they don't share a language with their target. On a success or critical success, the target is additionally @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} for 1 round.</p>"
+        },
         "Hidden Watcher": {
             "name": "Hidden Watcher",
             "description": "<p>Your eidolon can render both of you unseen. Once per hour, it can cast @Compendium[pf2e.spells-srd.XXqE1eY3w3z6xJCB]{Invisibility} targeting you, them, or both of you at once. If the spell targeted both of you, the spell ends for both of you if either of you uses a hostile action.</p>"
@@ -240,9 +265,17 @@
             "name": "Intelligence Boost",
             "description": ""
         },
+        "Kit Armor": {
+            "name": "Kit Armor",
+            "description": "<p>Your follower is trained in this armor.</p>"
+        },
         "Marauding Dragon": {
             "name": "Marauding Dragon",
             "description": "<p>Str 18, Dex 14, Con 16, Int 10, Wis 10, Cha 10; +2 AC (+3 Dex cap)</p>"
+        },
+        "Medic's Treatment": {
+            "name": "Medic's Treatment",
+            "description": "<p><strong>Requirements</strong> The medic is wearing or holding a healer's toolkit</p><hr /><p><strong>Effect</strong> The medic treats an adjacent creature in an attempt to reduce the @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy}, @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled}, @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened}, or @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied} condition. If a creature has multiple conditions from this list, the medic chooses one to treat. The medic attempts a counteract check against the condition, using their @Check[medicine] modifier as their counteract modifier and half their level as the counteract rank. The condition's source determines the DC.</p><p>The medic can't treat a condition that came from an artifact or an effect above 20th level. Using Medic's Treatment on a condition that is continually applied (for instance, the enfeebled condition a holy creature gains from carrying an unholy weapon) has no effect as long as the circumstances continue.</p><hr /><p><strong>Critical Success</strong> Reduce the chosen condition's value by 2.</p><p><strong>Success</strong> Reduce the chosen condition's value by 1.</p><p><strong>Critical Failure</strong> Increase the chosen condition's value by 1.</p>"
         },
         "Mindless Companion": {
             "name": "Mindless Companion",
@@ -291,9 +324,21 @@
             "name": "Primordial Elemental",
             "description": "<p>Str +4, Dex +2, Con +3, Int –1, Wis +1, Cha +0; +2 AC (+3 Dex cap)</p>"
         },
+        "Quick Treatment": {
+            "name": "Quick Treatment",
+            "description": "<p><strong>Frequency</strong> once per round</p><hr /><p><strong>Effect</strong> The medic Strides and then uses @UUID[Compendium.pf2e.actionspf2e.Item.MHLuKy4nQO2Z4Am1]{Administer First Aid}, @UUID[Compendium.pf2e.feats-srd.Item.wYerMk6F1RZb0Fwt]{Battle Medicine}, @UUID[Compendium.pf2e-animal-companions.AC-Features.Item.ma45EqTK72KQLca3]{Medic's Treatment}, or @UUID[Compendium.pf2e.actionspf2e.Item.KjoCEEmPGTeFE4hh]{Treat Poison}.</p>"
+        },
+        "Reckless Attack": {
+            "name": "Reckless Attack",
+            "description": "<p><strong>Frequency</strong> once per turn</p><p><strong>Trigger</strong> You Direct the berserker</p><hr /><p><strong>Effect</strong> The berserker gains a +1 circumstance bonus to their next attack roll on this turn. They are @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} until the beginning of your next turn.</p>"
+        },
         "Reconfigured Evolution": {
             "name": "Reconfigured Evolution",
             "description": "<p>Your construct eidolon is particularly easy to reconfigure, gaining an additional evolution that suits both of your whims. Choose one additional evolution feat of 6th level or lower. Your eidolon gains that feat. You can Retrain this feat for any other evolution feat of 6th level or lower with only a single day of downtime if you succeed at a <span data-pf2-check=\"crafting\" data-pf2-label=\"Reconfigured Evolution DC\" data-pf2-dc=\"@self.level\" data-pf2-show-dc=\"gm\">Crafting</span> check, with a standard DC of your eidolon's level. If you fail, you can try again on a later day. Many summoners choose Eidolon's Wrath for this ability.</p>"
+        },
+        "Redistribute": {
+            "name": "Redistribute",
+            "description": "<p><strong>Trigger</strong> An enemy's Strike against your eidolon is a critical hit. </p><hr /><p>Your eidolon rearranges its component bodies in response to a powerful blow, mitigating the worst of the damage they would have taken. The triggering critical hit becomes a hit. Your eidolon immediately switches forms, from condensed to dispersed or from dispersed to condensed.</p>"
         },
         "Rejuvenation": {
             "name": "Rejuvenation",
@@ -315,9 +360,25 @@
             "name": "Seething Frenzy",
             "description": "<p>Your eidolon can stoke itself into a frenzy. It gains the @Compendium[pf2e-animal-companions.AC-Features.7K6UJ3D3owmOQS03]{Seething Frenzy} action.</p>"
         },
+        "Share the Pain": {
+            "name": "Share the Pain",
+            "description": "<p><strong>Trigger</strong> The berserker is critically hit by a creature that is within their reach</p><hr /><p><strong>Effect</strong> The berserker makes a melee Strike against that creature.</p>"
+        },
+        "Sickening Assault": {
+            "name": "Sickening Assault",
+            "description": "<p><strong>Requirements</strong> Your eidolon is dispersed. </p><hr /><p>Your eidolon focuses on inflicting the most damage possible on its foes. If your eidolon's next action is to use Swarming Assault, the number of damage dice of the Swarming Assault are doubled. Additionally, creatures that fail their Reflex save against that Swarming Assault are @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 2} (@UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 4} on a critical failure).</p>"
+        },
+        "Sickening Swarm": {
+            "name": "Sickening Swarm",
+            "description": "<p>Your eidolon is particularly good at distracting and hindering its foes while dispersed. While dispersed, spaces your eidolon occupies are difficult terrain for other creatures. In addition, your eidolon gains the @UUID[Compendium.pf2e-animal-companions.AC-Features.Item.gGVaSvIhobXXsqTZ]{Sickening Assault} action.</p>"
+        },
         "Skirmisher Fey": {
             "name": "Skirmisher Fey",
             "description": "<p>Str 14, Dex 18, Con 14, Int 10, Wis 10, Cha 12; +1 AC (+4 Dex cap)</p>"
+        },
+        "Slinking Swarm": {
+            "name": "Slinking Swarm",
+            "description": "<p><em>Str</em> +2, <em>Dex</em> +4, <em>Con</em> +3, <em>Int</em> +0, <em>Wis</em> +1, <em>Cha</em> –1; +1 AC (+4 Dex cap)</p>"
         },
         "Soul Guardian": {
             "name": "Soul Guardian",
@@ -343,9 +404,30 @@
             "name": "Strength Boost",
             "description": ""
         },
+        "Sudden Shift": {
+            "name": "Sudden Shift",
+            "description": "<p>Once per round, your eidolon can switch forms between condensed and dispersed as a free action, rather than a single action. In addition, your eidolon gains the @UUID[Compendium.pf2e-animal-companions.AC-Features.Item.8NK5Z7vLxkTB6pIV]{Redistribute} reaction.</p>"
+        },
+        "Swarm Form": {
+            "name": "Swarm Form",
+            "description": "<p>Your eidolon is an intelligent swarm composed of hundreds of Tiny creatures, and it's immune to the @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed}, @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone}, and @UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{Restrained} conditions. It can fit through tight spaces as though it were a Tiny creature. It has weakness to area damage equal to its level. Your eidolon has two forms: condensed and dispersed. When you Manifest Eidolon, it manifests condensed. It can switch between these two forms as a single action that has the concentrate trait.</p><p><strong>Condensed Form:</strong> When condensed, your eidolon draws all its component bodies into a single, condensed mound that functions as a Medium creature. It has a reach of 5 feet, can make Strikes, and can't occupy the same space as other creatures. While condensed, it can use the @UUID[Compendium.pf2e-animal-companions.AC-Features.Item.roBX7VxpVKkRpClJ]{Haunting Visage} action.</p><p><strong>Dispersed Form:</strong> When dispersed, your eidolon scatters its component bodies across a wider area, increasing its size by one category (to Large for most swarm eidolons). It has a reach of 0 feet, can't make Strikes, and can occupy the same space as other creatures. While dispersed, it can use the @UUID[Compendium.pf2e-animal-companions.AC-Features.Item.fUTBJxjPmiP4KVVI]{Swarming Assault} activity.</p>",
+            "rules": {
+                "0": {
+                    "label": "Swarm Form"
+                }
+            }
+        },
+        "Swarming Assault": {
+            "name": "Swarming Assault",
+            "description": "<p><strong>Requirements</strong> Your eidolon is dispersed.</p><hr /><p>Your eidolon swarms over each creature occupying its space, biting, pecking, clawing, or making similar attacks with its component bodies. It deals @Damage[(1 + floor((@actor.level - 1)/2))d6[untyped]] damage to each creature in the area, with a basic Reflex save against your spell DC. You choose each time your eidolon uses Swarming Assault whether it deals piercing or slashing damage. Your eidolon then can't use Swarming Assault again for the next [[/gmr 1d4 #rounds]]{1d4 rounds}.</p><p>At 3rd level and every 2 levels thereafter, the damage increases by 1d6.</p>"
+        },
         "Swift Protector": {
             "name": "Swift Protector",
             "description": "<p>Str 14, Dex 18, Con 16, Int 10, Wis 10, Cha 10; +1 AC (+4 Dex cap)</p>"
+        },
+        "Take Aim": {
+            "name": "Take Aim",
+            "description": "<p>The sharpshooter takes aim at their foe and makes a ranged Strike, gaining a +2 circumstance bonus to the attack roll.</p>"
         },
         "Tempter Demon": {
             "name": "Tempter Demon",
