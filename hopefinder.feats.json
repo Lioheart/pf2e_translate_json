@@ -1,0 +1,543 @@
+{
+    "label": "Feats",
+    "entries": {
+        "Adept": {
+            "name": "Adept",
+            "description": "<p>You are really good at one skill. Increase your proficiency in one skill by 1 step. You gain the @Compendium[pf2e.feats-srd.W6Gl9ePmItfDHji0]{Assurance} skill feat in that skill.</p>"
+        },
+        "Agile": {
+            "name": "Agile",
+            "description": "<p>Whenever you take the Dodge reaction, you receive a +3 circumstance bonus to AC. In addition, if the triggering attack still hits, you receive a +1 circumstance bonus to your AC until the end of the triggering creature's turn.</p>",
+            "rules": {
+                "0": {
+                    "label": "The triggering attack still hit"
+                }
+            }
+        },
+        "Armored": {
+            "name": "Armored",
+            "description": "<p>You have learned how to wear armor. Increase your proficiency in both light and heavy armor by 1 step.</p>"
+        },
+        "Assassinate": {
+            "name": "Assassinate",
+            "description": "<p>You can perform a deadly strike against a foe that is unaware of your presence. Attempt a Strike against a foe that has not detected you. If the attack hits, treat it as a critical hit. You add your damage from precision to this Strike as normal.</p>",
+            "prerequisites": [
+                {
+                    "value": "Precision feat"
+                }
+            ]
+        },
+        "Bandage": {
+            "name": "Bandage",
+            "description": "<p>You gain the @Compendium[pf2e.feats-srd.wYerMk6F1RZb0Fwt]{Battle Medicine} skill feat. In addition, you can create a bandage by ripping up a set of clothing. This is an interact action that deals 2 dings to clothing. Finally, whenever you use Battle Medicine, add half your Medicine proficiency bonus to the Hit Points restored.</p>"
+        },
+        "Basic Maintenance": {
+            "name": "Basic Maintenance",
+            "description": "<p>You can use the @Compendium[hopefinder.actions.kKDBzhpz0UdYA7dq]{Fix} activity using the Driving skill to repair vehicles.</p>",
+            "prerequisites": [
+                {
+                    "value": "trained in Driving"
+                }
+            ]
+        },
+        "Breakdown": {
+            "name": "Breakdown",
+            "description": "<p>You can cause a machine or computer system to stop functioning. Target one computer or device that you are adjacent to and attempt a Computers or Machinery skill check (DC set by the narrator based on the complexity of the device). On a success you can shut down the device, causing it to stop working in whatever state it is in at that moment (a door that was closed would stay closed). On a critical success you can change the final state of the device before it stops functioning (cause a tractor to roll forward 20 feet before its engine dies).</p>"
+        },
+        "Built": {
+            "name": "Built",
+            "description": "<p>You have been training with a lot of gear and armor. Increase your bulk limit by 2. When you wear two sets of armor, you are not clumsy 1.</p>"
+        },
+        "Bypass Security": {
+            "name": "Bypass Security",
+            "description": "<p>When you @Compendium[hopefinder.actions.tXtfx1ZQnyySXnUH]{Hack} using the Computer skill, reduce the number of successes needed for you to gain access to the system by half (minimum 1).</p>",
+            "prerequisites": [
+                {
+                    "value": "trained in Computer"
+                }
+            ]
+        },
+        "Careful Hacker": {
+            "name": "Careful Hacker",
+            "description": "<p>When you @Compendium[hopefinder.actions.tXtfx1ZQnyySXnUH]{Hack} using the Computer skill, failed checks do not register in the system (and therefore do not count toward lockout). Critical failures still count as normal.</p>",
+            "prerequisites": [
+                {
+                    "value": "expert in Computer"
+                }
+            ]
+        },
+        "Caregiver": {
+            "name": "Caregiver",
+            "description": "<p>You know how to look after others to ensure they heal quickly. You can care for a number of other characters equal to half your Medicine proficiency bonus. Characters you care for regain twice as many Hit Points from resting and heal twice as many bruises. This bonus does not apply to other methods of healing.</p>"
+        },
+        "Charge": {
+            "name": "Charge",
+            "description": "<p>You charge across the battlefield and make a devastating attack. Stride twice. At the end of your movement attempt a Strike using a melee weapon or unarmed attack. This attack deals one additional die of damage.</p>"
+        },
+        "Close Training": {
+            "name": "Close Training",
+            "description": "<p>You become more skilled with melee weapons. Increase your training in all simple and martial melee weapons by 1 step. You can take this feat a second time as a Greater feat.</p>",
+            "rules": {
+                "0": {
+                    "label": "Simple Melee"
+                },
+                "3": {
+                    "label": "Martial Melee"
+                }
+            }
+        },
+        "Control": {
+            "name": "Control",
+            "description": "<p><strong>Requirements</strong> You have access to a system or device that is not locked or encrypted.</p>\n<hr />\n<p>You infiltrate a system quickly to gain basic control over its function. Attempt a Computers or Machinery skill check (DC set by the narrator based on the complexity of the device). On a success you gain basic control over the system and can make it do any of the things it was designed to do (make a vending machine spit out beverages, redirect a CCTV system, etc). On a critical success you can make it do something that it was not meant to do but within its capabilities.</p>"
+        },
+        "Deadeye": {
+            "name": "Deadeye",
+            "description": "<p>You take a moment to line up your shot. When you take the @Compendium[hopefinder.actions.ly0oPyA1abcq0MNc]{Aim} action, you get a +2 circumstance bonus on the attack roll and may add your proficiency bonus with the weapon to the damage roll if your next attack hits.</p>"
+        },
+        "Direct": {
+            "name": "Direct",
+            "description": "<p>You can sacrifice some of your turn to give someone else a fighting chance. Select one ally within 30 feet that can see and hear you to take either a Step, Stride, or Strike action. The ally can choose to take the action that you direct for free.</p>"
+        },
+        "Distraction": {
+            "name": "Distraction",
+            "description": "<p>Whenever you @Compendium[pf2e.actionspf2e.Feint]{Feint}, you can target a number of creatures equal to your Wisdom modifier. All the targets must be within 30 feet of you. You only roll once and compare that result to each creature to determine the effect.</p>",
+            "prerequisites": [
+                {
+                    "value": "Misdirect feat"
+                }
+            ]
+        },
+        "Exceptional": {
+            "name": "Exceptional",
+            "description": "<p>You are just that good. Increase any one ability modifier by +1. You cannot increase your highest ability modifier in this way.</p>",
+            "rules": {
+                "0": {
+                    "prompt": "Select an ability score to increase"
+                }
+            }
+        },
+        "Fatality": {
+            "name": "Fatality",
+            "description": "<p>You are especially lethal with melee weapons. All your melee weapons deal an additional die of damage. On a critical hit with a melee weapon, double the added critical effect of bludgeoning (@UUID[Compendium.hopefinder.effects.KNcK8MtYgm6ka7PO]{Bruised 2}), piercing (@Compendium[pf2e.conditionitems.Sickened]{Sickened 2}), and slashing ([[/r {2}[persistent,bleed]]]{2 persistent bleed}) weapons.</p>",
+            "rules": {
+                "0": {
+                    "text": "Critical hits from bludgeoning weapons also deal 2 bruises."
+                },
+                "1": {
+                    "text": "<p>Critical hits from slashing weapons cause the target to take [[/r {2}[persistent,bleed]]]{2} @Compendium[pf2e.conditionitems.Persistent Damage]{Persistent bleed Damage}.</p>"
+                },
+                "2": {
+                    "text": "<p>Critical hits from piercing weapons cause the target to be @Compendium[pf2e.conditionitems.Sickened]{Sickened 2} until the target receives any amount of healing.</p>"
+                }
+            }
+        },
+        "Fleet": {
+            "name": "Fleet",
+            "description": "<p>You are quick on your feet. Increase your speed by 10 feet. At the start of combat, when initiative is rolled, you may take a Step for free.</p>",
+            "rules": {
+                "2": {
+                    "text": "When initiative is rolled, you may take a Step for free."
+                }
+            }
+        },
+        "Flurry": {
+            "name": "Flurry",
+            "description": "<p>You last out a whirlwind of attacks. Attempt a melee Strike with one of your weapons against each foe within reach. All of these attacks count against your multiple attack penalty, but not until all the attacks are resolved.</p>"
+        },
+        "Ghost": {
+            "name": "Ghost",
+            "description": "<p>You have a knack for getting undead to lose track of your location. Stride up to your speed. If at the end of this movement, an undead creature cannot see you, attempt a Stealth check against it's Perception DC. If you succeed the undead treats you as undetected, even if it could have otherwise obviously seen where you went.</p>",
+            "prerequisites": [
+                {
+                    "value": "Quiet feat"
+                }
+            ]
+        },
+        "Glory": {
+            "name": "Glory",
+            "description": "<p>Your words can truly make a difference, inspiring those around you to greatness. Spend 10 minutes to grant 1 temporary Hope to those who can hear your voice. They can spend that Hope on a reroll any time in the next hour. They are immune to any further use of this ability (from anyone) for 24 hours.</p>",
+            "prerequisites": [
+                {
+                    "value": "Inspire feat"
+                }
+            ]
+        },
+        "Grapple": {
+            "name": "Grapple",
+            "description": "<p>You have learned how to grab hold of a creature more effectively in combat. Whenever you succeed at Grappling a creature, it must attempt a @Check[type:flat|dc:5] to Strike you (this does not apply to checks made to @Compendium[pf2e.actionspf2e.Escape]{Escape}). In addition, if you Step while grappling a target, the target moves with you.</p>"
+        },
+        "Hammer": {
+            "name": "Hammer",
+            "description": "<p>Tools gain the deadly trait when you wield them. Your second attack with a tool in one round only takes a -4 penalty and the third only takes a -8 penalty.</p>",
+            "prerequisites": [
+                {
+                    "value": "Handy feat"
+                }
+            ]
+        },
+        "Handy": {
+            "name": "Handy",
+            "description": "<p>Tools are an extension of your hand, and you wield them with force. When you wield a heavy tool, it deals 1d8 bludgeoning damage (instead of 1d6). If you score a critical hit with a tool, the target's armor takes 1 ding even if the damage bypasses their resistance.</p>"
+        },
+        "Hardy": {
+            "name": "Hardy",
+            "description": "<p>You can take a beating. Increase your Fortitude proficiency by 1 step. Increase your hit points by 4.</p>"
+        },
+        "Hauler": {
+            "name": "Hauler",
+            "description": "<p>You always have the right tool for the job. Increase your bulk limit by 3. Once per session you can spend 10 minutes to find one item of your choice with a barter value equal to your level.</p>"
+        },
+        "Headshot": {
+            "name": "Headshot",
+            "description": "<p>You know how to place a shot right where it counts. Attempt a Strike against a single target. If the attack roll exceeds their AC by 5 or more it is a critical success. If the weapon is deadly, this attack automatically reduces the target to 0 Hit Points if the attack roll exceeds their AC by 15 or more.</p>"
+        },
+        "Herbalism": {
+            "name": "Herbalism",
+            "description": "<p>You can perform First Aid checks without a kit as long as you spend 10 minutes foraging for herbs and other medicinal plants from any overgrown or wilderness area. In addition, you receive a +2 circumstance bonus on Medicine skill checks to treat ailments if you have similar access to herbs and medicinal plants.</p>",
+            "rules": {
+                "0": {
+                    "label": "Have access to herbs and medicinal plants"
+                }
+            }
+        },
+        "Improvise": {
+            "name": "Improvise",
+            "description": "<p>You can erect barricades with incredible speed. Attempt to erect a Barricade using the Crafting skill. The DC for this check is 5 higher than normal.</p>"
+        },
+        "Indestructible": {
+            "name": "Indestructible",
+            "description": "<p>You just keep on going, no matter the pain. Bruises no longer cause you to take any penalties and they cannot cause you to fall @Compendium[pf2e.conditionitems.Unconscious]{Unconscious}. Should you ever have a number of bruises equal to or greater than five times your total Hit Points, you die.</p>"
+        },
+        "Inoculated": {
+            "name": "Inoculated",
+            "description": "<p>You have received the basic inoculation against the Z Plague. If you contract the disease, while you are in Stage 1 you roll Fortitude saves to resist the infection twice, taking the better result.</p>"
+        },
+        "Inspire": {
+            "name": "Inspire",
+            "description": "<p>With a few choice words or a hopeful tune, you inspire courage in those around you. Allies within 50 feet who can hear you gain a +1 status bonus on attack rolls, damage rolls, and saving throws against fear until the start of your next turn.</p>\n<p>@UUID[Compendium.hopefinder.effects.k64Kln6sGrwVipq4]{Effect: Inspire}</p>"
+        },
+        "Insult": {
+            "name": "Insult",
+            "description": "<p>Your wit can drive people into a rage directed solely at you. When you use this feat, you spend two actions berating and belittling a human target. Attempt an Intimidation skill check against the target's Will DC. If you succeed, the target becomes enraged and takes a -2 circumstance penalty when attacking anyone except you (-4 on a critical success). This penalty lasts until you are @Compendium[pf2e.conditionitems.Unconscious]{Unconscious}, or the target hits you with a critical hit.</p>\n<p>@UUID[Compendium.hopefinder.effects.HZMvFstS4np7q83t]{Effect: Insulted}</p>"
+        },
+        "Keen": {
+            "name": "Keen",
+            "description": "<p>Always being on edge has honed your senses. Increase your Perception proficiency by 1 step. You lose 1 fewer action if surprised at the start of combat.</p>"
+        },
+        "Knockback": {
+            "name": "Knockback",
+            "description": "<p>Whenever you score a critical hit with melee Strike the foe is pushed back 5 feet. If the weapon is 2 handed, increase this to 10 feet.</p>",
+            "rules": {
+                "0": {
+                    "text": "Whenever you score a critical hit with a two-handed melee Strike the foe is pushed back 10 feet."
+                },
+                "1": {
+                    "text": "Whenever you score a critical hit with melee Strike the foe is pushed back 5 feet."
+                }
+            }
+        },
+        "Lure": {
+            "name": "Lure",
+            "description": "<p>By tossing an old can, broken bottle, or bit of debris, you attempt to lure the dead to a nearby location. Select a spot that is within 30 feet that you can target with a thrown object. Zombies within 30 feet of that location must attempt a @Check[type:will|dc:resolve(10+@actor.system.skills.deception.value)] save against your Deception DC. Those who fail move to investigate the noise, where they remain for 1 minute. Those that critically succeed on this check detect you instead. This ability cannot be used in combat and if you attempt to use it more than once against the same zombie in a 1-hour period, it instantly detects you.</p>"
+        },
+        "Machine Fixer": {
+            "name": "Machine Fixer",
+            "description": "<p>When you @Compendium[hopefinder.actions.kKDBzhpz0UdYA7dq]{Fix} a machine using the Machinery skill, reduce the number of successes needed for you to finish the job by half (minimum 1).</p>",
+            "prerequisites": [
+                {
+                    "value": "trained in Machinery"
+                }
+            ]
+        },
+        "Menace": {
+            "name": "Menace",
+            "description": "<p>Your words can cause fear and doubt to creep in the minds of even the most resolute foes. Attempt an Intimidation check to @Compendium[pf2e.actionspf2e.2u915NdUyQan6uKF]{Demoralize} and compare the result to all enemy humans within 30 feet who hear your words.</p>"
+        },
+        "Misdirect": {
+            "name": "Misdirect",
+            "description": "<p>You can use @Compendium[pf2e.actionspf2e.Feint]{Feint} against any creature within 30 feet. On a success, that creature is @Compendium[pf2e.conditionitems.Off-Guard]{Off-Guard} to the next attack made against the creature before the start of your next turn. On a critical success, it is off-guard against all attacks made against the creature before the start of your next turn.</p>"
+        },
+        "Multilingual": {
+            "name": "Multilingual",
+            "description": "<p>Communication is key in apocalypse. Add two languages to your list of languages known.</p>"
+        },
+        "Nimble": {
+            "name": "Nimble",
+            "description": "<p>You are quick on your feet. Increase your Reflex proficiency by 1 step. Increase you speed by 5 feet.</p>"
+        },
+        "Override": {
+            "name": "Override",
+            "description": "<p><strong>Requirements</strong> You have access to a device that is locked or otherwise protected</p>\n<hr />\n<p>You have learned how to physically bypass devices that protect machinery (such as hotwiring a car). Attempt a Machinery skill check (DC set by the narrator based on the level of security). Success allows you to gain control over the machine. A critical success allows you to do so in a way that is not noticeable later.</p>"
+        },
+        "Overwatch": {
+            "name": "Overwatch",
+            "description": "<p>Keeping careful eye on an area, you prepare to take a shot at any enemy that appears. The area that you can overwatch is a cone with double your weapon's range. Set this area when you use this action. There cannot be any visible enemies in this cone when it is set. Until the start of your next turn, you can spend a reaction to attempt a Strike with your readied ranged weapon at any target that you see in this area. If you use this ability again, it allows you to set a new cone and you are no longer watching the previous cone.</p>"
+        },
+        "Parkour": {
+            "name": "Parkour",
+            "description": "<p>Gathering up momentum, you move easily through a space, jumping over, sliding around, and dodging all obstacles. Stride twice. This movement ignores difficult terrain and does not trigger reactions. During this move, you can move over objects up to 4 feet high and under objects with at least 2 feet of clearance without making skill checks or slowing down your movement.</p>"
+        },
+        "Parry": {
+            "name": "Parry",
+            "description": "<p><strong>Requirements</strong> Wielding a melee weapon</p>\n<hr />\n<p>You use your weapon to defend yourself from harm. Until your next turn, you receive a +2 circumstance bonus to AC against melee attacks. If you are hit by a melee attack before your next turn, your weapon takes 1 ding at the start of your next turn.</p>"
+        },
+        "Patch": {
+            "name": "Patch",
+            "description": "<p>You can quickly apply a temporary patch to get a machine (including a gun) or system working again (even if it is broken). Attempt a @Check[type:computers|dc:20] or @Check[type:machinery|dc:20] skill check. You get a +4 circumstance bonus on the check if you spend an appropriate part on the check. If you succeed the device functions for 1 minute or until it takes a ding (increased to 1 hour on a critical success).</p>"
+        },
+        "Perceptive": {
+            "name": "Perceptive",
+            "description": "<p>You notice things others do not. Increase your proficiency in Perception by 1 step. You lose 1 fewer actions when you are surprised.</p>"
+        },
+        "Practiced": {
+            "name": "Practiced",
+            "description": "<p>You know how to use one weapon very well. Increase your proficiency in one type of simple weapon by 1 step. Once per combat you can ignore one ding to that weapon caused by a critical failure on a Strike.</p>",
+            "rules": {
+                "0": {
+                    "choices": {
+                        "0": {
+                            "label": "Clubs"
+                        },
+                        "1": {
+                            "label": "Tools"
+                        },
+                        "2": {
+                            "label": "Blades"
+                        },
+                        "3": {
+                            "label": "Patchwork"
+                        },
+                        "4": {
+                            "label": "Axes"
+                        },
+                        "5": {
+                            "label": "Bows"
+                        },
+                        "6": {
+                            "label": "Pistols"
+                        },
+                        "7": {
+                            "label": "Rifles"
+                        },
+                        "8": {
+                            "label": "Fuel"
+                        },
+                        "9": {
+                            "label": "Grenades"
+                        },
+                        "10": {
+                            "label": "Shotguns"
+                        }
+                    }
+                },
+                "1": {
+                    "label": "Practiced Weapons"
+                }
+            }
+        },
+        "Precision": {
+            "name": "Precision",
+            "description": "<p>Whenever you catch a foe unaware, you can deal extra damage to them. If you Strike a @Compendium[pf2e.conditionitems.Off-Guard]{Off-Guard} creature, you deal an additional 1d6 precision damage. This damage increases to 2d6 if you have at least 2 other agility feats.</p>"
+        },
+        "Prepared": {
+            "name": "Prepared",
+            "description": "<p>By meticulous planning and preparation, you always have what you need to get the job done. Whenever you are at a trader, you can give them a single item with a barter value up to twice your level. When out exploring or on a mission, you can trade that item for any item of lesser value in the trader's inventory gaining that item immediately (because you traded for it when back in the settlement). You can get multiple items of the same type, but you cannot get multiple different items in this way. Excess barter value is lost. The item gained is placed on your person in any open spot (except your hands).</p>"
+        },
+        "Push": {
+            "name": "Push",
+            "description": "<p>Whenever you successfully @Compendium[pf2e.actionspf2e.Shove]{Shove} a creature, you also move a number of creatures behind it so long as your check would beat their Fortitude DC as well. You can only move up to a number of creatures equal to your Strength bonus in this way. Any creature that could be moved, but that cannot move to due insufficient space takes [[/r {1d6}[bludgeoning]]]{1d6 bludgeoning damage} plus your Strength.</p>"
+        },
+        "Quick Diagnosis": {
+            "name": "Quick Diagnosis",
+            "description": "<p>You can @Compendium[hopefinder.actions.tkcWD2z7JPkGpfZF]{Diagnose} a problem with a computer or machine (based on your skill) in just 1 minute. If you are at least an Master in the skill, this time is reduced to 1 action.</p>",
+            "prerequisites": [
+                {
+                    "value": "trained in Computer or Machinery"
+                }
+            ]
+        },
+        "Quiet": {
+            "name": "Quiet",
+            "description": "<p>Whenever you @Compendium[pf2e.actionspf2e.Sneak]{Sneak}, undead do not get a Perception check to notice you if they cannot see you.</p>"
+        },
+        "Ranged Training": {
+            "name": "Ranged Training",
+            "description": "<p>You become more skilled with ranged weapons. Increase your training in all simple and martial ranged weapons by 1 step. You can take this feat a second time as a Greater feat.</p>",
+            "rules": {
+                "0": {
+                    "label": "Simple Ranged"
+                },
+                "3": {
+                    "label": "Martial Ranged"
+                }
+            }
+        },
+        "Reload": {
+            "name": "Reload",
+            "description": "<p>You have learned how to reload your weapons quickly. Whenever you reload a weapon, reduce the number of actions required by 1, to a minimum of 1.</p>"
+        },
+        "Requisition": {
+            "name": "Requisition",
+            "description": "<p>Before you head out on a mission, you can attempt to requisition one piece of gear or one weapon that the settlement might have to help you achieve your objective. Attempt a Diplomacy skill check with a DC equal to 10 + the barter value of the object. If you requisition food or basic ammunition, you can get 10 bullets or 2 food and 2 hydration for each member of your group.</p>"
+        },
+        "Resilient": {
+            "name": "Resilient",
+            "description": "<p>You are capable of withstanding more than most. Increase your proficiency in one type of saving throw by 1 step. If you are a master in that saving throw, whenever you get a success, treat it as a critical success instead.</p>"
+        },
+        "Resolute": {
+            "name": "Resolute",
+            "description": "<p>Nothing scares you. Increase your Will proficiency by 1 step. You are immune to the frightened condition.</p>"
+        },
+        "Revive": {
+            "name": "Revive",
+            "description": "<p>You can try and save someone who has died using the contents of a first aid kit. Attempt a @Check[type:medicine|dc:25] skill check on an adjacent creature that has died. If the creature died within 1 minute, the DC is 25. Increase the DC by 5 for each minute beyond the first. If successful, the creature is returned to life, at 0 hit points, and stable. The creature gains the @Compendium[pf2e.conditionitems.Yl48xTdMh3aeQYL2]{Wounded 2} condition. The DC increases by 1 for each time this check is failed. This has no effect on zombies.</p>",
+            "prerequisites": [
+                {
+                    "value": "Rouse feat"
+                }
+            ]
+        },
+        "Rich": {
+            "name": "Rich",
+            "description": "<p>You just have more stuff than most. Increase your starting gear by 4 barter. Every time you increase your survivor level, gain an additional 4 barter worth of gear.</p>"
+        },
+        "Rouse": {
+            "name": "Rouse",
+            "description": "<p>Using the contents of a first aid kit, you attempt to waken an adjacent target that is @Compendium[pf2e.conditionitems.Unconscious]{Unconscious} and dying. Attempt a @Check[type:medicine] skill check against DC 15 + the target's dying value. If you succeed, the target is restored to 1 Hit Point, gaining the @Compendium[pf2e.conditionitems.Yl48xTdMh3aeQYL2]{Wounded} condition as normal.</p>"
+        },
+        "Search": {
+            "name": "Search",
+            "description": "<p>You are an expert at digging through the files and directories of computers to get the information that you need. Operating a computer is an action for you (instead of a 1 minute activity). In addition, you do not need to attempt a check to understand and catalog the public and easily accessible information contained within a device, giving you a list of topics and file names. Finally, if you are looking through a database, you receive a +4 circumstance bonus on any related skill checks (instead of the usual +2 for having reference materials).</p>"
+        },
+        "Shoulder": {
+            "name": "Shoulder",
+            "description": "<p>You can lower your shoulder and clear a path. Move up to twice your speed in a straight line. You must attempt an Athletics check versus the Fortitude DC of each creature in your path. If you succeed, they move to an adjacent space, not in the line if possible (or fall @Compendium[pf2e.conditionitems.Prone]{Prone} if none are available), and you continue moving. If you fail, your movement stops in the space in front of them. If you critically fail the check you stop moving and fall prone. This movement does not trigger reactions.</p>"
+        },
+        "Sidekick": {
+            "name": "Sidekick",
+            "description": "<p>You have formed a bond with a very close ally who follows you on your missions. You and the narrator work together to determine the name and personality of the sidekick. The sidekick does not enter dangerous areas, instead acting as a lookout outside. The sidekick can also make trips back to the nearest settlement to perform trades on your behalf. The sidekick can carry up to 5 bulk of items for you and can use the Craft and Medicine skills to aid you (both at a +6 bonus). If the sidekick dies, you must replace this feat at the start of the next session and carry their memory.</p>"
+        },
+        "Snare": {
+            "name": "Snare",
+            "description": "<p>You set up a trap, which normally takes 1 minute. You must have the trap ready to use this feat. If you spend 10 minutes instead, you can create a trip wire trap and set it up, scrounging parts from the area. You can only have one such scrounged trap in the area at a time.</p>"
+        },
+        "Specialist": {
+            "name": "Specialist",
+            "description": "<p>You have learned of a way to treat the Z Plague if it has not progressed too far. Unfortunately, unlike doses of the highly coveted Z-Noc, your treatment is dangerous and far from certain. You can use @Compendium[pf2e.actionspf2e.Treat Disease]{Treat Disease} on the Z Plague if the victim is still in stage 1. Attempt a Medicine skill check against the DC of the plague +5. If successful, your treatment acts as one successful saving throw and it cures them entirely on a critical success. The creature you treat gains [[/r 1d4 #Bruises]]{1d4 bruises} from the harsh chemicals used.</p>"
+        },
+        "Speed Demon": {
+            "name": "Speed Demon",
+            "description": "<p>Reduce the travel time to any destination by 25%. When driving a vehicle, you can coax more power from the engine, increasing its maximum speed by 10%.</p>",
+            "prerequisites": [
+                {
+                    "value": "expert in Driving"
+                }
+            ]
+        },
+        "Spray": {
+            "name": "Spray",
+            "description": "<p><strong>Requirements</strong> You are wielding a burst weapon with at least half its clip remaining</p>\n<hr />\n<p>You spray and area with gunfire. You weapon deals damage in a cone with a range equal to the weapon's range increment. All targets in this area take the weapon's damage, but can reduce the damage with a basic Reflex save (DC = 10 + you attack bonus with the weapon). This attack uses up an amount of ammunition equal to half the weapon's clip size. This counts as only one attack for the multiple attack penalty.</p>"
+        },
+        "Sunday Driver": {
+            "name": "Sunday Driver",
+            "description": "<p>Through careful driving, you can get more miles out of your vehicle. Increase the MPG of any vehicle you are driving by 10%.</p>",
+            "prerequisites": [
+                {
+                    "value": "trained in Driving"
+                }
+            ]
+        },
+        "Surgery": {
+            "name": "Surgery",
+            "description": "<p>You can perform surgery to heal other survivors. This takes at least 1 hour to perform, you must have a surgical kit, and at the end you must attempt a Medicine skill check. The DC depends on how many Hit Points the target had remaining at the start of the operation (@Check[type:medicine|dc:25] if at less than 1/4, @Check[type:medicine|dc:20] if at less than 1/2, @Check[type:medicine|dc:15] if at less than 3/4, and @Check[type:medicine|dc:10] if at more than 3/4). If successful, you heal the target for half of the Hit Points it is missing (3/4 on a critical success). You do not need a sedative if the target has more than half its Hit Points at the start of the operation, but otherwise this check takes a -4 if the target is not @Compendium[pf2e.conditionitems.Unconscious]{Unconscious}.</p>"
+        },
+        "Surrender": {
+            "name": "Surrender",
+            "description": "<p><strong>Requirements</strong> You are in combat with one human who has taken damage</p>\n<hr />\n<p>You attempt to get a human enemy to surrender. Attempt a Diplomacy or Intimidation skill check against the target's Will DC. Increase the DC by 5 if the target is not below half Hit Points. Increase the DC by 10 if the target has allies in the area. If you succeed, the target attempts to flee (if able, narrator's discretion) and surrenders if flight is impossible. If you critically succeed, the target gives up their weapon and surrenders to you. The target is immune to this feat for 24 hours.</p>"
+        },
+        "Swipe": {
+            "name": "Swipe",
+            "description": "<p>You take a broad sweeping attack with your weapon. Attempt two Strikes with a bludgeoning or slashing melee weapon against two different foes who are adjacent to you. Both count toward your multiple attack penalty, but not until both attacks are resolved.</p>"
+        },
+        "Talented": {
+            "name": "Talented",
+            "description": "<p>You have a knack for picking up new skills. Increase two untrained skills to trained.</p>"
+        },
+        "Target": {
+            "name": "Target",
+            "description": "<p>By taking careful aim, you can target legs, hands, or the gaps in its armor. Declare the target and attempt a Strike. If you target the legs or hands, the strike is made at a -2 circumstance penalty. If you hit the legs the target falls @Compendium[pf2e.conditionitems.Prone]{Prone}. If you hit the hands, it drops one item it is carrying. If you target the gaps in its armor, the strike is made with a -4 circumstance penalty and the damage ignores the target's armor resistance. The Strike deals damage as normal.</p>",
+            "rules": {
+                "0": {
+                    "label": "Targeting legs or hands"
+                },
+                "1": {
+                    "label": "Targeting gaps in armor"
+                },
+                "2": {
+                    "label": "Targeting Legs or Hands"
+                },
+                "3": {
+                    "label": "Targeting Gaps in Armor"
+                }
+            },
+            "prerequisites": [
+                {
+                    "value": "Aim feat"
+                }
+            ]
+        },
+        "Teardown": {
+            "name": "Teardown",
+            "description": "<p>Whenever you attempt to @Compendium[pf2e.actionspf2e.Force Open]{Force Open} an enclosure or Batter an object, you get a +2 circumstance bonus to your Athletics check. In addition, when take apart an item for parts and you succeed on the craft check, you get a number of parts equal to the items break value.</p>"
+        },
+        "Throw": {
+            "name": "Throw",
+            "description": "<p>You can throw a creature that you are grappling. Attempt an Athletics check against the Fortitude DC of the creature you are grappling. If it is larger than you, increase it's DC by 5 for each step larger. If you succeed, you throw the creature a number of squares away from you equal to your Strength (minimum 1). On a critical success, it is thrown twice this distance. It also takes bludgeoning damage equal to [[/r {1d6}[bludgeoning]]]{1d6} + the total number of squares thrown. If thrown into another creature, that creature takes the damage as well (basic @Check[type:reflex|dc:15]). The creature thrown lands @Compendium[pf2e.conditionitems.Prone]{Prone}.</p>",
+            "prerequisites": [
+                {
+                    "value": "Grapple feat"
+                }
+            ]
+        },
+        "Tough": {
+            "name": "Tough",
+            "description": "<p>You are just hard to kill. You gain 2 hit points for every level that you have when you take this feat and 2 extra hit points whenever you gain a new level. In addition, you do not die until you reach dying 5.</p>"
+        },
+        "Troubleshoot": {
+            "name": "Troubleshoot",
+            "description": "<p>You can diagnose a problem using the Computers or Machinery skill as an action (instead of taking 10 minutes). If you succeed, you get a +2 circumstance bonus on any related checks to fix the device or system. If you get a critical success and the device or system has not been intentionally sabotaged, you can attempt a check to fix it as a free action (assuming it can be fixed in less than 1 minute normally).</p>"
+        },
+        "Unkillable": {
+            "name": "Unkillable",
+            "description": "<p>You do not fall @Compendium[pf2e.conditionitems.Unconscious]{Unconscious} at 0 Hit Points. You still gain the dying condition and still check to see if it increases at the end of your turn. You take a penalty on all checks equal to your dying condition. When you reach dying 6, you fall down dead.</p>",
+            "prerequisites": [
+                {
+                    "value": "Tough feat"
+                }
+            ]
+        },
+        "Virus": {
+            "name": "Virus",
+            "description": "<p><strong>Requirements</strong> You have access to a system that is locked by encryption</p>\n<hr />\n<p>You have a suite of special programs at your disposal that can allow you to quickly overcome a system's defenses and fail safes. Attempt to Hack using the Computers skill. Success allows you to access the system for 1 minute, even if the system would normally require multiple successes to access. A critical success gives you unlimited access.</p>"
+        },
+        "Warrior": {
+            "name": "Warrior",
+            "description": "<p>Living in the apocalypse has forged you into a capable combatant. You are trained in martial weapons and heavy armor.</p>"
+        },
+        "Workhorse": {
+            "name": "Workhorse",
+            "description": "<p>You are used to carrying heavy loads and working long hours. Increase the amount of bulk you can carry by 3 (although this does not let you carry more items than will fit in your inventory). In addition, you can drag items with a bulk equal to 15 + your Strength and when you drag items you can do so at up to 100 feet per minute. Finally, if you take 10 minutes to rest immediately after combat, you heal 1 bruise. You cannot do this again until after another combat.</p>"
+        },
+        "Wreck": {
+            "name": "Wreck",
+            "description": "<p>You are good at breaking things. When you succeed at battering an object it takes one additional ding, two on a critical success.</p>"
+        }
+    },
+    "mapping": {
+        "prerequisites": "system.prerequisites.value",
+        "rules": {
+            "converter": "translateRules",
+            "path": "system.rules"
+        }
+    }
+}

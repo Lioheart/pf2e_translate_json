@@ -1,0 +1,97 @@
+{
+    "label": "Actions",
+    "entries": {
+        "Aim": {
+            "name": "Aim",
+            "description": "<p>You take aim at a target with a ranged weapon, increasing your chance to hit. If your next action is to strike with that weapon, you receive a +1 circumstance bonus on the attack roll.</p>"
+        },
+        "Barricade": {
+            "name": "Barricade",
+            "description": "<p>You spend 10 minutes erecting a quick barrier or obstacle using junk and debris from the surrounding area. This barrier blocks one edge of a square and must be anchored to solid objects on both sides (usually a door frame, but between a pair of heavy desks might also work). Attempt a @Check[type:crafting|dc:15|immutable:true] skill check. On a success the barrier has break value of 1 and the DC to force it open is a 10. On a critical success, double the break value and increase the DC by 5. You can elect to increase the DC of the Craft check by 5 to increase the first break value by 1 and the DC to force it open by 5. You can use this action up to 3 times on barrier to increase its break value (but you still only use the highest force open DC).</p>"
+        },
+        "Batter": {
+            "name": "Batter",
+            "description": "<p>You make an attack made with a melee weapon or tool against an inanimate object, trying to either force it open or break it.</p>"
+        },
+        "Case the Joint": {
+            "name": "Case the Joint",
+            "description": "<p>Spend 10 minutes studying a location and attempt a @Check[type:perception|traits:action:case-the-joint] to learn about it. The DC is set by the narrator. A success tells you general details about what you might find in this location, including likely loot and any routine barriers or challenges you might encounter. A critical success reveals that plus one specific thing about this location that you might be able to see from your vantage point. This can only tell you about an area the size of a gas station. If the location is larger than that, you must focus on one part of it to learn about.</p>"
+        },
+        "Cook": {
+            "name": "Cook",
+            "description": "<p>You can cook raw food to make it last longer and sterilize water to make it safe to drink (at least from parasites and other water born contagions). Spend 10 minutes with a fire and cooking implements, then attempt a Survival skill check. The DC is typically 10, but it might be higher if your tools are poor or the situation is making it difficult. On a success you can make expired canned good safe to eat or turn raw meat or fresh vegetables into cooked meat or cooked vegetables. These take twice as long to spoil. If you have a source of water that is not contaminated with chemicals, you can also use this time to create 1 gallon of drinking water.</p>"
+        },
+        "Craft": {
+            "name": "Craft",
+            "description": "<p>Making items in the ruined world is not about money, its about access to the right parts. Each item has a type, indicating the broad category of materials used to make the time, and a break value, which roughly indicates the item's durability. To make an item, you must have a number of parts equal to twice the item's break value and all of these parts must be of the same type as the item (except for patchwork items, which can be made from any part). Electronics. medicine, and synthetic items require a number of parts equal to 4 times their break value to craft.</p>\n<p>Once you have all the necessary parts, you must spend time making the item. This is typically a number of hours equal to the number of parts spent, although the narrator might increase or reduce this time based on the item in question (crafting a bandage only takes a minute or two, whereas building a generator from parts may take many days). At the end of this time, you attempt a Crafting skill check, with a DC of 10 + the break value of the item (+4 if it is an electronic, medicine, or synthetic item).</p>\n<p>Computers or Machines can be crafted using the Computers or Machinery skills using these same rules.</p>\n<hr />\n<p><strong>Critical Success</strong> You make the item and spend 10% fewer parts than were required (minimum 1).</p>\n<p><strong>Success</strong> Your attempt was successful and item is finished.</p>\n<p><strong>Failure</strong> You did not create the item and you lost one part during the process.</p>\n<p><strong>Critical Failure</strong> The attempt was a disaster. Lose half the parts.</p>"
+        },
+        "Diagnose": {
+            "name": "Diagnose",
+            "description": "<p>You can figure out what is wrong with a device or system that is malfunctioning. Spend 10 minutes looking over a system or device that you can see in its entirely and attempt a @Check[type:computers|dc:15|immutable:true]{Computers}  or @Check[type:machinery|dc:15|immutable:true]{Machinery} skill check (@Check[type:computers|dc:20|immutable:true]{Computers} or @Check[type:machinery|dc:20|immutable:true]{Machinery} if you can only see most of it). If you succeed you learn about what problems, if any, are preventing the system from functioning normally. If you critically succeed you also detect any intentional sabotage.</p>"
+        },
+        "Dodge": {
+            "name": "Dodge",
+            "description": "<p><strong>Trigger</strong> You are targeted by a melee attack and you can see the attacker.</p>\n<p><strong>Requirements</strong> You are not encumbered.</p>\n<hr />\n<p>You try to dodge the attack, making you harder to hit. You gain a +2 circumstance bonus to AC against the triggering attack.</p>"
+        },
+        "Educate": {
+            "name": "Educate",
+            "description": "<p>By spending 10 minutes talking and working through problems with a target, you can give them the basic knowledge needed to attempt a skill check for any skill in which you are at least trained. They gain half your proficiency bonus on this check. This only applies to the first check they attempt and if not used within 1 hour, the benefit is lost. If they are trained in this skill, this ability grants them a +1 circumstance bonus as long as your proficiency is greater than theirs.</p>"
+        },
+        "Fix": {
+            "name": "Fix",
+            "description": "<p>You attempt to repair a computer, electronic system, or machine that is broken or malfunctioning. Spend 10 minutes and attempt a Computers check for computers, or a Machinery check for machines. The DC of this check is determined by the difficulty of the problem, as determined by the narrator. Complex problems can take multiple successful checks to repair and in such cases, a critical success counts as two checks toward completing the task.</p>"
+        },
+        "Hack": {
+            "name": "Hack",
+            "description": "<p>You attempt to bypass a computer or electronic system's security, from a simple password or keycard system to something more complex, such as a biometric ID scan. The DC of this check is determined by the complexity of the system (as determined by the narrator). Systems of higher quality likely require multiple consecutive successes to bypass their security, and some might even lock you out if you fail too many checks. A critical success on such systems counts as two successes toward completion, whereas a critical failure might immediately lock you out for a period of time.</p>"
+        },
+        "Hit The Deck": {
+            "name": "Hit The Deck",
+            "description": "<p><strong>Trigger</strong> You are targeted by a ranged attack and you can see the attacker.</p>\n<p><strong>Requirements</strong> You are not @Compendium[pf2e.conditionitems.Prone]{Prone}.</p>\n<hr />\n<p>You drop prone to make yourself a harder target to hit. You are @Compendium[pf2e.conditionitems.Off-Guard]{Off-Guard}, but you gain a +4 circumstance bonus to AC against the ranged attacks until you stand up again.</p>"
+        },
+        "Hotwire": {
+            "name": "Hotwire",
+            "description": "<p>You bypass the vehicles security, typically a key, to get it to start. This functions just like the Hack use of the Computers skill, but using the Driving skill instead (cars with still functioning electronics can be turned on using the Computers skill as well).</p>"
+        },
+        "Maneuver": {
+            "name": "Maneuver",
+            "description": "<p>You try a difficult maneuver for the current speed of your vehicle. Attempt a Driving check. The narrator determines what maneuvers are possible at your speed and the DC of this check. On a success, you perform the maneuver. On a failure, you crash, the vehicle takes damage (typically [[/r 1d6 #Dings]] dings), but it is otherwise still functional. On a critical failure the crash deals [[/r 2d6 #Dings]] dings and the nature of the mishap prevents it from functioning without further repairs or checks (perhaps you drove into a ditch and are stuck, or you have a flat tire).</p>"
+        },
+        "Navigate": {
+            "name": "Navigate",
+            "description": "<p>You spend a time driving to an unfamiliar destination based on maps and your knowledge of the area. Attempt a Driving check. On a success, you arrive at your intended destination. On a failure you arrive late, adding 20% to the total travel time. On a critical failure you arrive at the wrong (and possibly dangerous) destination and must spend at least 50% of the original travel time to attempt this check again.</p>"
+        },
+        "Operate": {
+            "name": "Operate",
+            "description": "<p>You use a computer system or machine to perform one of the functions it was designed to do. This is determined by the computer or machine itself, but typical uses include opening a database, transferring a file to a portable drive, or utilizing the function of devices attached to the computer system, such as a security camera or remotely operated door. This might include a Computers skill check to ensure you find what you are looking for quickly or that you use it in the right way.</p>\n<p>For a machine a task may include using a crane to pick up a car, triggering an iron press to crush a zombie, or to turn off a giant trash compactor. This might require a successful Machinery skill check if the machine is particularly complex.</p>"
+        },
+        "Rehearse": {
+            "name": "Rehearse",
+            "description": "<p>You have learned how to clear you mind before undertaking an important task. Spend 10 minutes rehearsing, meditating, or otherwise preparing for a task. You get a +2 circumstance bonus on that task if you attempt the check within the next hour. You must name the task when you make your preparations. If you enter combat, this preparation is lost.</p>"
+        },
+        "Reload": {
+            "name": "Reload",
+            "description": "<p>You drop an empty clip out of a weapon, draw a new one, and slot it into the weapon. The number of actions is dependent on the weapon, but unlike other activities, these do not need to be consecutive. The first action is to always drop the clip out of the weapon, leaving at most 1 round in the chamber if it is a gun. Additional actions are to draw and slot in the new cartridge, and then to load the weapon. This can take one to three additional actions.</p>"
+        },
+        "Repair": {
+            "name": "Repair",
+            "description": "<p>You spend 10 minutes attempting to fix a damaged item by expending the necessary parts and using the applicable repair kit. Attempt a Crafting skill check. The DC is typically 10 + the break value of the item (+4 if it is an electronic, medicine, or synthetic item). Each attempt expends one part of the same type as the item. You cannot repair a destroyed item.</p>\n<hr />\n<p><strong>Critical Success</strong> Remove two dings from the item (three if you are a Crafting master, four if you are a legend).</p>\n<p><strong>Success</strong> Remove one ding from the item (two if you are a Crafting master).</p>\n<p><strong>Failure</strong> You do not repair the item, but you do not lose the part.</p>\n<p><strong>Critical Failure</strong> You damage the item, giving it one ding, and you lose the part.</p>"
+        },
+        "Research": {
+            "name": "Research",
+            "description": "<p>There is not a problem you cannot solve by doing a little research. By spending 1 hour using a working computer or a research library, you can attempt any Lore skill check as if you were trained in that skill or give yourself a +2 circumstance bonus on the check if you are trained or higher in that Lore skill. You can also use this ability whenever you attempt a check to Recall Knowledge to give yourself a +2 circumstance bonus on the check.</p>"
+        },
+        "Survivor's Feast": {
+            "name": "Survivor's Feast",
+            "description": "<p>Once per day, you can spend 1 hour at a firepit creating a feast. Anyone who spends at least 10 minutes eating this feast heals 1 bruise and a number of hit points equal to 1d4 + your Survival proficiency bonus. In addition, they gain 1 temporary Hope that can only be used on a reroll and if not spent in the next hour, it is lost. This feast uses up and counts as 2 food and 1 hydration for each participant.</p>"
+        },
+        "Treat Wounds": {
+            "name": "Treat Wounds",
+            "description": "<p>This works as it does in Pathfinder (@Compendium[pf2e.actionspf2e.1kGNdIIhuglAjIp9]{Treat Wounds}),  but you need a @Compendium[hopefinder.equipment.PHClSyVXwCmuYZRk]{First Aid Kit} (not healer's tools) or a @Compendium[hopefinder.equipment.ozj1ME9TaDsTOYMF]{Bandage}. It can be performed untrained and the DC and amount of healing is different, as noted on the chart below (for a greater amount, see the @Compendium[hopefinder.feats.y9oAlWcDVlCAucqA]{Surgery} feat in the Advanced Feats section on page 57 of the Hopefinder Survivor's Guide). Treat wounds can also heal bruises at the same time (twice that number on a critical success).</p>\n<table style=\"border-width:1px;margin-left:0px;margin-right:auto\" border=\"1\">\n<tbody>\n<tr>\n<th style=\"border-width:1px\">Proficiency</th>\n<th style=\"border-width:1px\">DC</th>\n<th style=\"border-width:1px\">Success Healing</th>\n<th style=\"border-width:1px\">Critical Healing</th>\n<th style=\"border-width:1px\">Bruise</th>\n</tr>\n<tr>\n<td style=\"border-width:1px\">Untrained</td>\n<td style=\"border-width:1px\">@Check[type:medicine|dc:10]</td>\n<td style=\"border-width:1px\">[[/r {1d4}[healing]]]{1d4}</td>\n<td style=\"border-width:1px\">[[/r {2d4}[healing]]]{2d4}</td>\n<td style=\"border-width:1px\">0</td>\n</tr>\n<tr>\n<td style=\"border-width:1px\">Trained*</td>\n<td style=\"border-width:1px\">@Check[type:medicine|dc:15]</td>\n<td style=\"border-width:1px\">[[/r {1d4+2}[healing]]]{1d4+2}</td>\n<td style=\"border-width:1px\">[[/r {2d4+2}[healing]]]{2d4+2}</td>\n<td style=\"border-width:1px\">1</td>\n</tr>\n<tr>\n<td style=\"border-width:1px\">Expert*</td>\n<td style=\"border-width:1px\">@Check[type:medicine|dc:20]</td>\n<td style=\"border-width:1px\">[[/r {1d4+4}[healing]]]{1d4+4}</td>\n<td style=\"border-width:1px\">[[/r {2d4+4}[healing]]]{2d4+4}</td>\n<td style=\"border-width:1px\">1</td>\n</tr>\n<tr>\n<td style=\"border-width:1px\">Master*</td>\n<td style=\"border-width:1px\">@Check[type:medicine|dc:25]</td>\n<td style=\"border-width:1px\">[[/r {1d4+6}[healing]]]{1d4+6}</td>\n<td style=\"border-width:1px\">[[/r {2d4+6}[healing]]]{2d4+6}</td>\n<td style=\"border-width:1px\">2</td>\n</tr>\n<tr>\n<td style=\"border-width:1px\">Legendary*</td>\n<td style=\"border-width:1px\">@Check[type:medicine|dc:30]</td>\n<td style=\"border-width:1px\">[[/r {1d4+8}[healing]]]{1d4+8}</td>\n<td style=\"border-width:1px\">[[/r {2d4+8}[healing]]]{2d4+8}</td>\n<td style=\"border-width:1px\">2</td>\n</tr>\n</tbody>\n</table>\n<p>*Rolling against a higher DC is optional.</p>"
+        },
+        "Urban Foraging": {
+            "name": "Urban Foraging",
+            "description": "<p>You have a great eye for finding valuables in the discarded scraps. Spend 10 minutes going through the garbage and debris in a nearby area and attempt a Society skill check.</p>\n<p>The narrator sets the DC for this check based on how often scavengers may have already gone through this debris. A success turns up a random item with a barter value equal to your level (or 2 items that are at least 1 level lower). A critical success turns up a random item with a barter value equal to double your level. You can only use this once per scene.</p>"
+        }
+    }
+}
