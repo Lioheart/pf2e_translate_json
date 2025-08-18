@@ -1662,6 +1662,10 @@
                     "name": "Bag of Holding (Type I)",
                     "description": "<p>Though it appears to be a cloth sack decorated with panels of richly colored silk or stylish embroidery, a <em>bag of holding</em> opens into an extradimensional space larger than its outside dimensions. The Bulk held inside the bag doesn't change the Bulk of the <em>bag of holding</em> itself. The amount of Bulk the bag's extradimensional space can hold depends on its type.</p>\n<p>You can Interact with the <em>bag of holding</em> to put items in or remove them just like a mundane sack. Though the bag can hold a great amount of material, an object still needs to be able to fit through the opening of the sack to be stored inside.</p>\n<p>If the bag is overloaded or broken, it ruptures and is ruined, causing the items inside to be lost forever. If it's turned inside out, the items inside spill out unharmed, but the bag must be put right before it can be used again. A living creature placed inside the bag has enough air for 10 minutes before it begins to suffocate, and it can attempt to Escape against a DC of 13. An item inside the bag provides no benefits unless it's retrieved first. An item in the bag can't be detected by magic that detects only things on the same plane.</p>\n<p><strong>Capacity</strong> 25 Bulk</p>"
                 },
+                "feat->Animal Companion (Ranger)": {
+                    "name": "Animal Companion (Ranger)",
+                    "description": "<p>You gain the service of a young animal companion that travels with you and obeys simple commands. When you @UUID[Compendium.pf2e.actionspf2e.Item.JYi4MnsdFu618hPm]{Hunt Prey}, your animal companion gains the action's benefits and your hunter's edge benefit if you have one.</p>"
+                },
                 "feat->Mature Animal Companion (Ranger)": {
                     "name": "Mature Animal Companion (Ranger)",
                     "description": "<p>Your animal companion grows up, becoming a mature animal companion and gaining additional capabilities. If you have the @UUID[Compendium.pf2e.actionspf2e.Item.JYi4MnsdFu618hPm]{Hunt Prey} action, your animal companion assaults the prey even without your orders.</p>\n<p>During an encounter, even if you don't use the @UUID[Compendium.pf2e.actionspf2e.Item.q9nbyIF0PEBqMtYe]{Command an Animal} action, your animal companion can still use 1 action that round on your turn to Stride toward or Strike your prey.</p>"
@@ -1702,7 +1706,7 @@
                 },
                 "action->Surge": {
                     "name": "Surge",
-                    "description": "<p>The elemental tsunami quickly expands its space to fill the area of its vortex. Creatures within the vortex's emanation take @Damage[(6d12+8)[bludgeoning]] damage (@Check[fortitude|dc:34|basic] save). A creature that fails this save is Pushed 20 feet. The elemental tsunami then retracts to its former space.</p>\n<p>A creature that takes damage is exposed to blinding sickness.</p>\n<p>The elemental tsunami can't Surge again for [[/gmr 1d4 #Recharge Surge]]{1d4 rounds}.</p>"
+                    "description": "<p>The elemental tsunami quickly expands its space to fill the area of its vortex. Creatures within the vortex's emanation take @Damage[(6d12+8)[bludgeoning]|options:area-damage] damage (@Check[fortitude|dc:34|basic|options:area-effect,inflicts:forced-movement] save). A creature that fails this save is Pushed 20 feet. The elemental tsunami then retracts to its former space.</p>\n<p>A creature that takes damage is exposed to blinding sickness.</p>\n<p>The elemental tsunami can't Surge again for [[/gmr 1d4 #Recharge Surge]]{1d4 rounds}.</p>"
                 },
                 "action->Push or Pull 10 feet": {
                     "name": "Push or Pull 10 feet",
@@ -2428,7 +2432,7 @@
                 },
                 "action->Frightful Moan": {
                     "name": "Frightful Moan",
-                    "description": "<p>The ghost laments its fate, forcing each living creature within @Template[emanation|distance:30]{30 feet} to attempt a @Check[will|dc:36] save. On a failure, a creature becomes @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 2} (or @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 3} on a critical failure). On a success, a creature is temporarily immune to this ghost's frightful moan for 1 minute.</p>"
+                    "description": "<p>The ghost laments its fate, forcing each living creature within @Template[emanation|distance:30]{30 feet} to attempt a @Check[will|dc:36|options:area-effect,inflicts:frightened] save. On a failure, a creature becomes @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 2} (or @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 3} on a critical failure). On a success, a creature is temporarily immune to this ghost's frightful moan for 1 minute.</p>"
                 },
                 "action->Sneak Attack": {
                     "name": "Sneak Attack",
@@ -3306,7 +3310,7 @@
                 },
                 "action->Frightful Moan": {
                     "name": "Frightful Moan",
-                    "description": "<p>The ghost laments its fate, forcing each living creature within @Template[emanation|distance:30]{30 feet} to attempt a @Check[will|dc:28] save. On a failure, a creature becomes @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 2} (or @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 3} on a critical failure). On a success, a creature is temporarily immune to this ghost's frightful moan for 1 minute.</p>"
+                    "description": "<p>The ghost laments its fate, forcing each living creature within @Template[emanation|distance:30]{30 feet} to attempt a @Check[will|dc:28|options:area-effect,inflicts:frightened] save. On a failure, a creature becomes @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 2} (or @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 3} on a critical failure). On a success, a creature is temporarily immune to this ghost's frightful moan for 1 minute.</p>"
                 },
                 "action->Telekinetic Assault": {
                     "name": "Telekinetic Assault",
@@ -5218,6 +5222,22 @@
                 }
             }
         },
+        "Phantasmal Protagonist": {
+            "name": "Phantasmal Protagonist",
+            "items": {
+                "strike-melee->Thematic Action - Hero": {
+                    "name": "Thematic Action - Hero"
+                },
+                "action->Thematic Action - Ally": {
+                    "name": "Thematic Action - Ally",
+                    "description": "<p>The protagonist takes the form of a recognizable support character. Its thematic action is to grant an adjacent creature 4d4 temporary Hit Points, which last for 1 round.</p>"
+                },
+                "action->Thematic Action - Villain": {
+                    "name": "Thematic Action - Villain",
+                    "description": "<p>The protagonist takes the form of a notorious villain. Its thematic action is to harry and mock an adjacent target. The target must succeed at a Will save or become @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} (@UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1} on a critical failure) until the end of your next turn.</p>"
+                }
+            }
+        },
         "Phomandala": {
             "name": "Phomandala",
             "publicNotes": "<p>Monstrous humanoids that resemble humans with snakes instead of hair, medusas are best known for their petrifying gazes that-if lingered upon-can permanently transform mortals to stone. Medusas are shrewd and manipulative adversaries who collect and covet secrets, and who use threats and guile to exploit the fears of weaker creatures. A medusa may seek out powerful magic items, use divination magic to discover secret knowledge and unlock forbidden power, or infiltrate a society to beguile influential politicians. Their ability to worm their way into powerful organizations makes them natural leaders of criminal outfits and thieves' guilds, and their interest in magical phenomena leads some to pursue careers as oracles who offer to help adventurers find what they seek-for a price. Of course, if wit and deception proves insufficient, a medusa can always simply turn rivals into ornate stone decorations with little more than a glare.</p>\n<p>Exceptionally agile and surprisingly hardy, a medusa rarely backs down from a conflict even when cornered. Many adventurers who thought themselves readied to resist the effects of a medusa's gaze have nevertheless fallen to a medusa, as these creatures are also often deadly archers able to riddle their foes with venom-coated arrows from a distance. Still, a medusa may barter for their life if no alternatives remain, and the secrets carried by these powerful villains often make it more than worth sparing the monster's life.</p>",
@@ -6558,7 +6578,7 @@
                 },
                 "equipment->Wand of Slaying (7th-Rank Spell)": {
                     "name": "Wand of Slaying (7th-Rank Spell)",
-                    "description": "<p>This polished black wand has a green gem at the tip, and anyone who looks into it sees a reflection of a grinning skull instead of their face.</p>\n<p><strong>Activate</strong> Cast a Spell</p>\n<p><strong>Frequency</strong> Once per day, plus overcharge</p>\n<hr />\n<p><strong>Effect</strong> You cast @UUID[Compendium.pf2e.spells-srd.Item.Z9OrRXKgAPv6Hn5l]{Execute} at 7th rank.</p>\n<p>If the spell slays its target, the corpse releases void energy in a @Template[emanation|distance:20], dealing void damage equal to double the spell's rank (@Damage[14[void]] damage).</p>\n<hr />\n<p><strong>Craft Requirements</strong> Supply a casting of finger of death of the appropriate rank.</p>"
+                    "description": "<p>This polished black wand has a green gem at the tip, and anyone who looks into it sees a reflection of a grinning skull instead of their face.</p>\n<p><strong>Activate</strong> Cast a Spell</p>\n<p><strong>Frequency</strong> Once per day, plus overcharge</p>\n<hr />\n<p><strong>Effect</strong> You cast @UUID[Compendium.pf2e.spells-srd.Item.Z9OrRXKgAPv6Hn5l]{Execute} at 7th rank.</p>\n<p>If the spell slays its target, the corpse releases void energy in a @Template[emanation|distance:20], dealing void damage equal to double the spell's rank (@Damage[14[void]|options:area-damage] damage).</p>\n<hr />\n<p><strong>Craft Requirements</strong> Supply a casting of finger of death of the appropriate rank.</p>"
                 },
                 "strike-melee->Claw": {
                     "name": "Claw"

@@ -1187,7 +1187,7 @@
                 },
                 "action->Spore Burst": {
                     "name": "Spore Burst",
-                    "description": "<p>Whenever Lukarazyll picks up debris to throw, tendrils of fungus burrow out from his hands, infesting the debris so that when it hits, it explodes into a cloud of toxic spores. All non-fungus creatures in a @Template[type:emanation|distance:10] (including the target) must attempt a @Check[fortitude|dc:32] save. The target of the debris takes a \u20132 circumstance penalty to this save. Those that fail take @Damage[2d6[persistent,poison]] damage and are @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 1}. Creatures can't remove the sickened condition while this persistent damage remains.</p>"
+                    "description": "<p>Whenever Lukarazyll picks up debris to throw, tendrils of fungus burrow out from his hands, infesting the debris so that when it hits, it explodes into a cloud of toxic spores. All non-fungus creatures in a @Template[type:emanation|distance:10] (including the target) must attempt a @Check[fortitude|dc:32|options:area-effect,damaging-effect,inflicts:sickened] save. The target of the debris takes a \u20132 circumstance penalty to this save. Those that fail take @Damage[2d6[persistent,poison]|options:area-damage] damage and are @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 1}. Creatures can't remove the sickened condition while this persistent damage remains.</p>"
                 },
                 "action->Wreck": {
                     "name": "Wreck",

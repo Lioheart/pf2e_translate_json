@@ -150,7 +150,7 @@
                 },
                 "action->Trash the Place": {
                     "name": "Trash the Place",
-                    "description": "<p>The animated treasure swarm hurls its most fragile components in a destructive barrage, dealing @Damage[4d6[bludgeoning]|options:area-damage] damage to all creatures in a @Template[type:burst|distance:20] within 100 feet (@Check[reflex|dc:25|basic] save).</p>"
+                    "description": "<p>The animated treasure swarm hurls its most fragile components in a destructive barrage, dealing @Damage[4d6[bludgeoning]|options:area-damage] damage to all creatures in a @Template[type:burst|distance:20] within 100 feet (@Check[reflex|dc:25|basic|options:area-effect] save).</p>"
                 }
             }
         },
@@ -239,7 +239,7 @@
                 },
                 "action->Dead, But Not Forgotten": {
                     "name": "Dead, But Not Forgotten",
-                    "description": "<p>The countless ghostly echoes that compose Anvaca's spirit surround the poppet's body, then surge out in either a @Template[type:emanation|distance:15] or a @Template[type:line|distance:60], dealing @Damage[6d10[spirit]|options:area-damage] damage to all creatures in the area (@Check[reflex|dc:28|basic] save). Anvaca can't use Dead, But Not Forgotten again for [[/gmr 1d4 #Recharge Dead, But Not Forgotten]]{1d4 rounds}.</p>"
+                    "description": "<p>The countless ghostly echoes that compose Anvaca's spirit surround the poppet's body, then surge out in either a @Template[type:emanation|distance:15] or a @Template[type:line|distance:60], dealing @Damage[6d10[spirit]|options:area-damage] damage to all creatures in the area (@Check[reflex|dc:28|basic|options:area-effect] save). Anvaca can't use Dead, But Not Forgotten again for [[/gmr 1d4 #Recharge Dead, But Not Forgotten]]{1d4 rounds}.</p>"
                 },
                 "action->Moon-Blessed Hoplite": {
                     "name": "Moon-Blessed Hoplite",
@@ -1184,7 +1184,7 @@
                 },
                 "action->1,000 Cuts": {
                     "name": "1,000 Cuts",
-                    "description": "<p>Geff hurls a barrage of scalpels, knives, and other nearby surgical instruments at his enemies, dealing @Damage[4d6[piercing]|options:area-damage] damage to all creatures in a @Template[type:cone|distance:15] (@Check[reflex|dc:24|basic] save).</p>"
+                    "description": "<p>Geff hurls a barrage of scalpels, knives, and other nearby surgical instruments at his enemies, dealing @Damage[4d6[piercing]|options:area-damage] damage to all creatures in a @Template[type:cone|distance:15] (@Check[reflex|dc:24|basic|options:area-effect] save).</p>"
                 },
                 "action->Deep Cut": {
                     "name": "Deep Cut",
@@ -1768,7 +1768,6 @@
         "Losko": {
             "name": "Losko",
             "publicNotes": "<p>These skeletons retain the cunning they possessed in life.</p>\n<hr />\n<p>Animated skeletons are among the most common types of undead.</p>",
-            "acDetails": "(21 with shield raised)",
             "blurb": "Variant skeletal champion",
             "hpDetails": "void healing",
             "items": {
@@ -1876,7 +1875,7 @@
                 },
                 "action->Zura's Gift": {
                     "name": "Zura's Gift",
-                    "description": "<p>Miranette motions toward a creature taking persistent bleed damage within 30 feet, causing their blood to transform into a whipping tendril. The creature must attempt a @Check[fortitude|dc:26] save. Miranette can't use Zura's Gift again for [[/gmr 1d4 #Recharge Zura's Gift]]{1d4 rounds}.</p><hr /><p><strong>Critical Success</strong> The creature takes no damage, and their persistent bleed damage ends.</p>\n<p><strong>Success</strong> The creature becomes @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 1} until the end of their next turn as the blood tendril interferes with their movements.</p>\n<p><strong>Failure</strong> The creature becomes clumsy 1 and @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1} until the end of their next turn. The blood tendril lashes about in a @Template[type:emanation|distance:10], dealing @Damage[6d6[slashing]] damage to all other creatures in the area (@Check[reflex|dc:26|basic] save). Fiends and the initial target of Zura's Gift are immune to this slashing damage.</p>\n<p><strong>Critical Failure</strong> As failure, but with a @Template[type:emanation|distance:20], and the creature is also @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 1}.</p>"
+                    "description": "<p>Miranette motions toward a creature taking persistent bleed damage within 30 feet, causing their blood to transform into a whipping tendril. The creature must attempt a @Check[fortitude|dc:26|options:area-effect,damaging-effect,inflicts:clumsy,inflicts:drained,inflicts:slowed] save. Miranette can't use Zura's Gift again for [[/gmr 1d4 #Recharge Zura's Gift]]{1d4 rounds}.</p><hr /><p><strong>Critical Success</strong> The creature takes no damage, and their persistent bleed damage ends.</p>\n<p><strong>Success</strong> The creature becomes @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 1} until the end of their next turn as the blood tendril interferes with their movements.</p>\n<p><strong>Failure</strong> The creature becomes clumsy 1 and @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1} until the end of their next turn. The blood tendril lashes about in a @Template[type:emanation|distance:10], dealing @Damage[6d6[slashing]|options:area-damage] damage to all other creatures in the area (@Check[reflex|dc:26|basic|options:area-effect] save). Fiends and the initial target of Zura's Gift are immune to this slashing damage.</p>\n<p><strong>Critical Failure</strong> As failure, but with a @Template[type:emanation|distance:20], and the creature is also @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 1}.</p>"
                 }
             }
         },
@@ -2608,7 +2607,7 @@
                 },
                 "action->Spiral Swing": {
                     "name": "Spiral Swing",
-                    "description": "<p><strong>Requirements</strong> Tokainen is wielding her meteor hammer and is in Channel Cataclysm stance</p><hr /><p><strong>Effect</strong> Tokainen swings her meteor hammer in a wide circle, dealing @Damage[4d8[bludgeoning],4d8[fire]] damage to each enemy in a @Template[emanation|distance:10]. Tokainen can't use Spiral Swing again for [[/gmr 1d4 #Recharge Spiral Swing]]{1d4 rounds}.</p>"
+                    "description": "<p><strong>Requirements</strong> Tokainen is wielding her meteor hammer and is in Channel Cataclysm stance</p><hr /><p><strong>Effect</strong> Tokainen swings her meteor hammer in a wide circle, dealing @Damage[4d8[bludgeoning],4d8[fire]|options:area-damage] damage to each enemy in a @Template[emanation|distance:10]. Tokainen can't use Spiral Swing again for [[/gmr 1d4 #Recharge Spiral Swing]]{1d4 rounds}.</p>"
                 }
             }
         },

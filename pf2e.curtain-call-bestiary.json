@@ -583,7 +583,7 @@
                 },
                 "action->Unsettle": {
                     "name": "Unsettle",
-                    "description": "<p><strong>Trigger</strong> Facade Strikes a creature they've assumed the basic appearance of</p><hr /><p><strong>Effect</strong> s The damaged creature becomes @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 1} (@UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 2} on a critical hit).</p>"
+                    "description": "<p><strong>Trigger</strong> Facade Strikes a creature they've assumed the basic appearance of</p><hr /><p><strong>Effects</strong> The damaged creature becomes @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 1} (@UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 2} on a critical hit).</p>"
                 },
                 "action->Grab": {
                     "name": "Grab"
@@ -953,7 +953,7 @@
                 },
                 "action->Protean Anatomy 15": {
                     "name": "Protean Anatomy 15",
-                    "description": "<p>An imentesh's vital organs shift and change shape and position constantly. Immediately after the imentesh takes acid, electricity, or sonic damage, it gains the listed amount of resistance to that damage type. This lasts for 1 hour or until the next time the protean takes damage of one of the other types (in which case its resistance changes to match that type), whichever comes first.</p>\n<p>The imentesh is immune to polymorph effects unless it is a willing target. If @UUID[Compendium.pf2e.conditionitems.Item.XgEqL1kFApUbl5Z2]{Blinded} or @UUID[Compendium.pf2e.conditionitems.Item.9PR9y0bi4JPKnHPR]{Deafened}, the imentesh automatically recovers at the end of its next turn as new sensory organs grow to replace the compromised ones.</p>"
+                    "description": "<p>An imentesh's vital organs shift and change shape and position constantly. Immediately after the imentesh takes acid, electricity, or sonic damage, it gains the listed amount of resistance to that damage type. This lasts for 1 hour or until the next time the protean takes damage of one of the other types (in which case its resistance changes to match that type), whichever comes first.</p>\n<p>The imentesh is immune to polymorph effects unless it is a willing target. If @UUID[Compendium.pf2e.conditionitems.Item.XgEqL1kFApUbl5Z2]{Blinded} or @UUID[Compendium.pf2e.conditionitems.Item.9PR9y0bi4JPKnHPR]{Deafened}, the imentesh automatically recovers at the end of its next turn as new sensory organs grow to replace the compromised ones.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.c6SiBB3mzV8lZUQr]{Effect: Protean Anatomy}</p>"
                 },
                 "action->Change Shape": {
                     "name": "Change Shape",
@@ -1057,7 +1057,7 @@
                 },
                 "action->Wrath of the Trap": {
                     "name": "Wrath of the Trap",
-                    "description": "<p><strong>Frequency</strong> once per round</p>\n<p><strong>Requirements</strong> Gray Master is within 100 feet of an active complex trap</p><hr /><p><strong>Effect</strong> Gray Master absorbs the power of the complex trap. It becomes inactive until the end of his next turn, and Power of the Trap deactivates until the complex trap becomes active again. The edges of Gray Master's cloak transform into knife-like blades that stab out at all nearby creatures. Any living creature within @Template[type:emanation|distance:10]{10 feet} of Gray Master takes @Damage[8d10[slashing],8d6[void]]{8d10 slashing damage and 8d6 void} damage (@Check[reflex|dc:40|basic] save).</p>"
+                    "description": "<p><strong>Frequency</strong> once per round</p>\n<p><strong>Requirements</strong> Gray Master is within 100 feet of an active complex trap</p><hr /><p><strong>Effect</strong> Gray Master absorbs the power of the complex trap. It becomes inactive until the end of his next turn, and Power of the Trap deactivates until the complex trap becomes active again. The edges of Gray Master's cloak transform into knife-like blades that stab out at all nearby creatures. Any living creature within @Template[type:emanation|distance:10]{10 feet} of Gray Master takes @Damage[8d10[slashing],8d6[void]|options:area-damage]{8d10 slashing damage and 8d6 void} damage (@Check[reflex|dc:40|basic|options:area-effect] save).</p>"
                 },
                 "lore->Norgorber Lore": {
                     "name": "Norgorber Lore"
@@ -1096,14 +1096,14 @@
                 },
                 "action->Brimstone Cloak": {
                     "name": "Brimstone Cloak",
-                    "description": "<p>10 feet. The hellshadow constantly exudes a cloud of smoke that scorches flesh but leaves other materials unharmed. Living creatures who start their turn in this aura take @Damage[2d6[fire]] damage (DC 30 basic Reflex). On a critical failure, the creature is also @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 1}.</p>"
+                    "description": "<p>10 feet. The hellshadow constantly exudes a cloud of smoke that scorches flesh but leaves other materials unharmed. Living creatures who start their turn in this aura take @Damage[2d6[fire]|options:area-damage] damage (@Check[reflex|dc:30|basic|options:area-effect,inflicts:sickened]). On a critical failure, the creature is also @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 1}.</p>"
                 },
                 "action->Void Healing": {
                     "name": "Void Healing"
                 },
                 "action->Clinging Smoke": {
                     "name": "Clinging Smoke",
-                    "description": "<p>A creature that takes damage from the hellshadow's brimstone tendrils Strike has coils of the creature's smoke solidify around their body, impeding movement. The creature must attempt a @Check[reflex|dc:33] save.</p><hr /><p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The smoke solidifies as it coils around their limbs, imposing a \u20135-foot status penalty to all Speeds until the end of the creature's next turn.</p>\n<p><strong>Failure</strong> As success, except \u201310 feet to speed and the creature is also @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 1} until the end of their next turn.</p>\n<p><strong>Critical Failure</strong> As failure, except the creature is also @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1} until the end of their next turn.</p>"
+                    "description": "<p>A creature that takes damage from the hellshadow's brimstone tendrils Strike has coils of the creature's smoke solidify around their body, impeding movement. The creature must attempt a @Check[reflex|dc:33] save.</p><hr /><p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The smoke solidifies as it coils around their limbs, imposing a \u20135-foot status penalty to all Speeds until the end of the creature's next turn.</p>\n<p><strong>Failure</strong> As success, except \u201310 feet to speed and the creature is also @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 1} until the end of their next turn.</p>\n<p><strong>Critical Failure</strong> As failure, except the creature is also @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1} until the end of their next turn.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.hHALCOBKk1j8yRfv]{Effect: Clinging Smoke}</p>"
                 }
             }
         },
@@ -2841,7 +2841,7 @@
                 },
                 "action->Surge": {
                     "name": "Surge",
-                    "description": "<p>Venomfist expands their space to fill the area of their vortex. Creatures within the aura take @Damage[(6d12+6)[bludgeoning],(6d12+6)[poison]]{6d12+6 bludgeoning and 6d12+6 poison} damage with a @Check[fortitude|dc:45|basic] save. A creature that fails this save is pushed 40 feet. Venomfist then retracts to their former space and cannot use Surge again for [[/gmr 1d4 #rounds]]{1d4 rounds}.</p>"
+                    "description": "<p>Venomfist expands their space to fill the area of their vortex. Creatures within the aura take @Damage[(6d12+6)[bludgeoning],(6d12+6)[poison]|options:area-damage]{6d12+6 bludgeoning and 6d12+6 poison} damage with a @Check[fortitude|dc:45|basic|options:area-effect,inflicts:forced-movement] save. A creature that fails this save is pushed 40 feet. Venomfist then retracts to their former space and cannot use Surge again for [[/gmr 1d4 #Recharge Surge]]{1d4 rounds}.</p>"
                 },
                 "action->Improved Grab": {
                     "name": "Improved Grab"

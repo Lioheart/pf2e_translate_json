@@ -26,7 +26,7 @@
                 },
                 "action->Admonishing Hymn": {
                     "name": "Admonishing Hymn",
-                    "description": "<p>The angelic choir raises their voices in song, singing a note that vibrates the very fabric of being. This takes the form of a @Template[type:burst|distance:15] within 90 feet that deals @Damage[6d6[sonic]|options:area-damage] damage (@Check[fortitude|dc:29|basic|options:area-effect|inflicts:deafened] save). A creature who critically fails the save is @UUID[Compendium.pf2e.conditionitems.Item.9PR9y0bi4JPKnHPR]{Deafened} for 1 minute. When the angelic chorus is reduced to 2 segments, this area decreases to a @Template[type:burst|distance:10].</p>"
+                    "description": "<p>The angelic choir raises their voices in song, singing a note that vibrates the very fabric of being. This takes the form of a @Template[type:burst|distance:15] within 90 feet that deals @Damage[6d6[sonic]|options:area-damage] damage (@Check[fortitude|dc:29|basic|options:area-effect,inflicts:deafened] save). A creature who critically fails the save is @UUID[Compendium.pf2e.conditionitems.Item.9PR9y0bi4JPKnHPR]{Deafened} for 1 minute. When the angelic chorus is reduced to 2 segments, this area decreases to a @Template[type:burst|distance:10].</p>"
                 },
                 "action->Harmonized Spellcasting": {
                     "name": "Harmonized Spellcasting",
@@ -79,7 +79,7 @@
                 },
                 "action->Barrage of Force": {
                     "name": "Barrage of Force",
-                    "description": "<p>The apprentice magicians launch shards of pure magic at all creatures in a @Template[type:burst|distance:10] within 120 feet. This barrage deals @Damage[5d4[force]|options:area-damage] damage (@Check[reflex|dc:19|basic] save). When the clique is reduced to 2 segments, this area decreases to a @Template[type:burst|distance:5].</p>"
+                    "description": "<p>The apprentice magicians launch shards of pure magic at all creatures in a @Template[type:burst|distance:10] within 120 feet. This barrage deals @Damage[5d4[force]|options:area-damage] damage (@Check[reflex|dc:19|basic|options:area-effect] save). When the clique is reduced to 2 segments, this area decreases to a @Template[type:burst|distance:5].</p>"
                 },
                 "action->Clique Spellcasting": {
                     "name": "Clique Spellcasting",
@@ -114,7 +114,7 @@
                 },
                 "action->Shoving Shield Wall": {
                     "name": "Shoving Shield Wall",
-                    "description": "<p>The arboreal copse Strides. All enemies whose square the copse begins in or passes through during their movement take @Damage[5d6[bludgeoning]|options:area-damage] damage (@Check[fortitude|dc:25|basic||options:area-effect|inflicts:forced-movement]). On a failed saving throw, the arboreal copse carries the creature along on their shields, moving them in the same distance and direction for the rest of their Stride.</p>"
+                    "description": "<p>The arboreal copse Strides. All enemies whose square the copse begins in or passes through during their movement take @Damage[5d6[bludgeoning]|options:area-damage] damage (@Check[fortitude|dc:25|basic|options:area-effect,inflicts:forced-movement]). On a failed saving throw, the arboreal copse carries the creature along on their shields, moving them in the same distance and direction for the rest of their Stride.</p>"
                 },
                 "action->Sword Bash": {
                     "name": "Sword Bash",
@@ -265,7 +265,7 @@
                 },
                 "action->Morningstar Massacre": {
                     "name": "Morningstar Massacre",
-                    "description": "<p><strong>Frequency</strong> once per round</p><hr /><p><strong>Effect</strong> The boggards execute coordinated melee attacks against each enemy in a @Template[type:emanation|distance:5], with a @Check[reflex|dc:21|basic] save. The damage dealt depends on the number of actions.</p>\n<p><span class=\"action-glyph\">1</span> @Damage[1d6[untyped]] damage</p>\n<p><span class=\"action-glyph\">2</span> @Damage[(2d6+7)[untyped]] damage</p>\n<p><span class=\"action-glyph\">3</span> @Damage[(2d6+11)[untyped]] damage</p>"
+                    "description": "<p><strong>Frequency</strong> once per round</p><hr /><p><strong>Effect</strong> The boggards execute coordinated melee attacks against each enemy in a @Template[type:emanation|distance:5], with a @Check[reflex|dc:21|basic|options:area-effect] save. The damage dealt depends on the number of actions.</p>\n<p><span class=\"action-glyph\">1</span> @Damage[1d6[untyped]|options:area-damage] damage</p>\n<p><span class=\"action-glyph\">2</span> @Damage[(2d6+7)[untyped]|options:area-damage] damage</p>\n<p><span class=\"action-glyph\">3</span> @Damage[(2d6+11)[untyped]|options:area-damage] damage</p>"
                 },
                 "action->Sling Barrage": {
                     "name": "Sling Barrage",
@@ -323,7 +323,7 @@
                 },
                 "action->Reactive Sweep": {
                     "name": "Reactive Sweep",
-                    "description": "<p><strong>Trigger</strong> An enemy within a @Template[type:emanation|distance:10] uses a manipulate action or a move action, makes a ranged attack, or leaves a square in the area during a move action it's using</p><hr /><p><strong>Effect</strong> The clockwork infantry lashes out with their halberds. The triggering enemy takes @Damage[(2d10+10)[untyped]] damage (@Check[reflex|dc:27|basic] save). If the enemy critically fails this saving throw and the trigger was a manipulate action, the damage disrupts that action.</p>"
+                    "description": "<p><strong>Trigger</strong> An enemy within a @Template[type:emanation|distance:10] uses a manipulate action or a move action, makes a ranged attack, or leaves a square in the area during a move action it's using</p><hr /><p><strong>Effect</strong> The clockwork infantry lashes out with their halberds. The triggering enemy takes @Damage[(2d10+10)[untyped]|options:area-damage] damage (@Check[reflex|dc:27|basic|options:area-effect] save). If the enemy critically fails this saving throw and the trigger was a manipulate action, the damage disrupts that action.</p>"
                 },
                 "action->Troop Defenses": {
                     "name": "Troop Defenses",
@@ -361,7 +361,7 @@
                 },
                 "action->Fire Crossbows": {
                     "name": "Fire Crossbows",
-                    "description": "<p>The clockwork runners reload the crossbows built onto their backs, then launch a ranged attack in the form of a volley. This volley is a @Template[type:burst|distance:10] within 120 feet that deals @Damage[2d8[piercing]|options:area-damage] damage (@Check[reflex|dc:19|basic] save). When the clockwork runners are reduced to 2 segments, this area decreases to a @Template[type:burst|distance:5].</p>"
+                    "description": "<p>The clockwork runners reload the crossbows built onto their backs, then launch a ranged attack in the form of a volley. This volley is a @Template[type:burst|distance:10] within 120 feet that deals @Damage[2d8[piercing]|options:area-damage] damage (@Check[reflex|dc:19|basic|options:area-effect] save). When the clockwork runners are reduced to 2 segments, this area decreases to a @Template[type:burst|distance:5].</p>"
                 },
                 "action->Scratch and Bite": {
                     "name": "Scratch and Bite",
@@ -369,7 +369,7 @@
                 },
                 "action->War Pounce": {
                     "name": "War Pounce",
-                    "description": "<p><strong>Frequency</strong> once per round</p><hr /><p><strong>Effect</strong> The clockwork runner pack Strides, ignoring difficult terrain (but not greater difficult terrain). At the end of this movement, each enemy in a @Template[type:emanation|distance:5] takes @Damage[1d8[untyped]] damage (@Check[reflex|dc:19|basic] save).</p>"
+                    "description": "<p><strong>Frequency</strong> once per round</p><hr /><p><strong>Effect</strong> The clockwork runner pack Strides, ignoring difficult terrain (but not greater difficult terrain). At the end of this movement, each enemy in a @Template[type:emanation|distance:5] takes @Damage[1d8[untyped]|options:area-damage] damage (@Check[reflex|dc:19|basic|options:area-effect] save).</p>"
                 }
             },
             "skills": {
@@ -432,7 +432,7 @@
                 },
                 "action->Acid Rain": {
                     "name": "Acid Rain",
-                    "description": "<p>The dezullon thicket discharges a cascade of acidic digestive juices as a ranged attack, dealing @Damage[6d6[acid]|options:area-damage,inflicts:amnesia-venom] damage in a @Template[type:burst|distance:10] within 30 feet (@Check[reflex|dc:33|basic] save) and exposing any creature struck to amnesia venom. When the thicket is reduced to 2 segments, this area decreases to a @Template[type:burst|distance:5].</p>"
+                    "description": "<p>The dezullon thicket discharges a cascade of acidic digestive juices as a ranged attack, dealing @Damage[6d6[acid]|options:area-damage,inflicts:amnesia-venom] damage in a @Template[type:burst|distance:10] within 30 feet (@Check[reflex|dc:33|basic|options:area-effect] save) and exposing any creature struck to amnesia venom. When the thicket is reduced to 2 segments, this area decreases to a @Template[type:burst|distance:5].</p>"
                 },
                 "action->Amnesia Venom": {
                     "name": "Amnesia Venom",
@@ -477,11 +477,11 @@
                 },
                 "action->Draconic Onslaught": {
                     "name": "Draconic Onslaught",
-                    "description": "<p>The drakes frenzy, lashing out with fangs and tails. Each enemy in a @Template[type:emanation|distance:10] attempts a @Check[reflex|dc:30|basic] save. The damage depends on the number of actions.</p>\n<p><span class=\"action-glyph\">1</span> @Damage[2d8[untyped]] damage</p>\n<p><span class=\"action-glyph\">2</span> @Damage[(3d8+10)[untyped]] damage</p>\n<p><span class=\"action-glyph\">3</span> @Damage[(4d8+14)[untyped]] damage</p>"
+                    "description": "<p>The drakes frenzy, lashing out with fangs and tails. Each enemy in a @Template[type:emanation|distance:10] attempts a @Check[reflex|dc:30|basic|options:area-effect] save. The damage depends on the number of actions.</p>\n<p><span class=\"action-glyph\">1</span> @Damage[2d8[untyped]|options:area-damage] damage</p>\n<p><span class=\"action-glyph\">2</span> @Damage[(3d8+10)[untyped]|options:area-damage] damage</p>\n<p><span class=\"action-glyph\">3</span> @Damage[(4d8+14)[untyped]|options:area-damage] damage</p>"
                 },
                 "action->Drake Breath": {
                     "name": "Drake Breath",
-                    "description": "<p>Certain drakes within the flight bring their breath weapon (or similar ability) to bear, exhaling energy that explodes in a @Template[type:burst|distance:15] within 120 feet. This explosion deals @Damage[5d6[untyped]] damage (acid, cold, fire, or poison damage); the ability gains the corresponding trait. The drake flight can't choose the same damage type until it uses this ability with a different damage type. When the drakes are reduced to 2 segments, this area decreases to a @Template[type:burst|distance:10].</p>"
+                    "description": "<p>Certain drakes within the flight bring their breath weapon (or similar ability) to bear, exhaling energy that explodes in a @Template[type:burst|distance:15] within 120 feet. This explosion deals @Damage[5d6[untyped]|options:area-damage] damage (acid, cold, fire, or poison damage); the ability gains the corresponding trait. The drake flight can't choose the same damage type until it uses this ability with a different damage type. When the drakes are reduced to 2 segments, this area decreases to a @Template[type:burst|distance:10].</p>"
                 },
                 "action->Speed Surge": {
                     "name": "Speed Surge",
@@ -534,11 +534,11 @@
                 },
                 "action->Call Down the Storm": {
                     "name": "Call Down the Storm",
-                    "description": "<p>The druids summon wind and lightning against all creatures in a @Template[type:burst|distance:10] within 80 feet. This storm deals @Damage[3d10[electricity]|options:area-damage|inflicts:forced-movement] damage (@Check[reflex|dc:29|basic|options:area-effect] save). A creature who fails the save is also pushed 5 feet away from the druid circle. When the druid circle is reduced to 2 segments, this area decreases to a @Template[type:burst|distance:5].</p>"
+                    "description": "<p>The druids summon wind and lightning against all creatures in a @Template[type:burst|distance:10] within 80 feet. This storm deals @Damage[3d10[electricity]|options:area-damage] damage (@Check[reflex|dc:29|basic|options:area-effect,inflicts:forced-movement] save). A creature who fails the save is also pushed 5 feet away from the druid circle. When the druid circle is reduced to 2 segments, this area decreases to a @Template[type:burst|distance:5].</p>"
                 },
                 "action->Sickle and Staff": {
                     "name": "Sickle and Staff",
-                    "description": "<p><strong>Frequency</strong> once per round</p><hr /><p><strong>Effect</strong> The druids strike out in a coordinated melee attack against all enemies in a @Template[type:emanation|distance:5] with a @Check[reflex|dc:29|basic] save. The damage dealt depends on the number of actions.</p>\n<p><span class=\"action-glyph\">1</span> @Damage[2d6[untyped]|options:area-damage] damage</p>\n<p><span class=\"action-glyph\">2</span> @Damage[(4d6+9)[untyped]|options:area-damage] damage</p>\n<p><span class=\"action-glyph\">3</span> @Damage[(5d6+13)[untyped]|options:area-damage] damage</p>"
+                    "description": "<p><strong>Frequency</strong> once per round</p><hr /><p><strong>Effect</strong> The druids strike out in a coordinated melee attack against all enemies in a @Template[type:emanation|distance:5] with a @Check[reflex|dc:29|basic|options:area-effect] save. The damage dealt depends on the number of actions.</p>\n<p><span class=\"action-glyph\">1</span> @Damage[2d6[untyped]|options:area-damage] damage</p>\n<p><span class=\"action-glyph\">2</span> @Damage[(4d6+9)[untyped]|options:area-damage] damage</p>\n<p><span class=\"action-glyph\">3</span> @Damage[(5d6+13)[untyped]|options:area-damage] damage</p>"
                 },
                 "action->Troop Spellcasting": {
                     "name": "Troop Spellcasting",
@@ -622,7 +622,7 @@
                 },
                 "action->Clash of Steel": {
                     "name": "Clash of Steel",
-                    "description": "<p><strong>Frequency</strong> once per round</p><hr /><p><strong>Effect</strong> The first-class infantry attacks each enemy in a @Template[type:emanation|distance:5], with a @Check[reflex|dc:29|basic] save. The damage depends on the number of actions.</p>\n<p><span class=\"action-glyph\">1</span> @Damage[(2d6+1)[slashing]|options:area-damage] damage</p>\n<p><span class=\"action-glyph\">2</span> @Damage[(4d6+10)[slashing]|options:area-damage] damage</p>\n<p><span class=\"action-glyph\">3</span> @Damage[(4d6+18)[slashing]|options:area-damage] damage</p>"
+                    "description": "<p><strong>Frequency</strong> once per round</p><hr /><p><strong>Effect</strong> The first-class infantry attacks each enemy in a @Template[type:emanation|distance:5], with a @Check[reflex|dc:29|basic|options:area-effect] save. The damage depends on the number of actions.</p>\n<p><span class=\"action-glyph\">1</span> @Damage[(2d6+1)[slashing]|options:area-damage] damage</p>\n<p><span class=\"action-glyph\">2</span> @Damage[(4d6+10)[slashing]|options:area-damage] damage</p>\n<p><span class=\"action-glyph\">3</span> @Damage[(4d6+18)[slashing]|options:area-damage] damage</p>"
                 },
                 "action->Drilled in Formations": {
                     "name": "Drilled in Formations",
@@ -646,7 +646,7 @@
             "items": {
                 "action->Brutal Retaliation": {
                     "name": "Brutal Retaliation",
-                    "description": "<p><strong>Trigger</strong> The fleshwarp amalgam loses a segment due to passing a Hit Point threshold</p><hr /><p><strong>Effect</strong> The fleshwarp amalgam lashes out in retaliation. Each enemy in a @Template[type:emanation|distance:5] takes @Damage[2d10+6[untyped]] damage (@Check[reflex|dc:23|basic|inflicts:forced-movement]). A creature who fails the save is also pushed 5 feet away from the amalgam.</p>"
+                    "description": "<p><strong>Trigger</strong> The fleshwarp amalgam loses a segment due to passing a Hit Point threshold</p><hr /><p><strong>Effect</strong> The fleshwarp amalgam lashes out in retaliation. Each enemy in a @Template[type:emanation|distance:5] takes @Damage[2d10+6[untyped]|options:area-damage] damage (@Check[reflex|dc:23|basic|options:area-effect,inflicts:forced-movement]). A creature who fails the save is also pushed 5 feet away from the amalgam.</p>"
                 },
                 "action->Troop Defenses": {
                     "name": "Troop Defenses",
@@ -661,7 +661,7 @@
                 },
                 "action->Frenzy of Tentacles and Claws": {
                     "name": "Frenzy of Tentacles and Claws",
-                    "description": "<p><strong>Frequency</strong> once per round</p><hr /><p><strong>Effect</strong> The fleshwarps make wild melee attacks against each enemy in a @Template[type:emanation|distance:5] (@Check[reflex|dc:23|basic] save). The damage depends on the number of actions.</p>\n<p><span class=\"action-glyph\">1</span> @Damage[1d10[untyped]] damage</p>\n<p><span class=\"action-glyph\">2</span> @Damage[(2d10+6)[untyped]] damage</p>\n<p><span class=\"action-glyph\">3</span> @Damage[(2d10+11)[untyped]] damage</p>"
+                    "description": "<p><strong>Frequency</strong> once per round</p><hr /><p><strong>Effect</strong> The fleshwarps make wild melee attacks against each enemy in a @Template[type:emanation|distance:5] (@Check[reflex|dc:23|basic|options:area-effect] save). The damage depends on the number of actions.</p>\n<p><span class=\"action-glyph\">1</span> @Damage[1d10[untyped]|options:area-damage] damage</p>\n<p><span class=\"action-glyph\">2</span> @Damage[(2d10+6)[untyped]|options:area-damage] damage</p>\n<p><span class=\"action-glyph\">3</span> @Damage[(2d10+11)[untyped]|options:area-damage] damage</p>"
                 },
                 "action->Many-Limbed Stride": {
                     "name": "Many-Limbed Stride",
@@ -723,7 +723,7 @@
                 },
                 "action->Mandible Frenzy": {
                     "name": "Mandible Frenzy",
-                    "description": "<p><strong>Frequency</strong> once per round</p><hr /><p><strong>Effect</strong> The army makes a savage bite attack against each enemy in a @Template[type:emanation|distance:5] (@Check[reflex|dc:22|basic] save). The damage dealt depends on the number of actions.</p>\n<p><span class=\"action-glyph\">1</span> @Damage[1d8[slashing]|options:area-damage,grasping-mandibles] damage plus Grasping Mandibles</p>\n<p><span class=\"action-glyph\">2</span> @Damage[(2d8+6)[slashing]|options:area-damage,grasping-mandibles] damage plus Grasping Mandibles</p>\n<p><span class=\"action-glyph\">3</span> @Damage[(2d8+11)[slashing]|options:area-damage] damage</p>"
+                    "description": "<p><strong>Frequency</strong> once per round</p><hr /><p><strong>Effect</strong> The army makes a savage bite attack against each enemy in a @Template[type:emanation|distance:5] (@Check[reflex|dc:22|basic|options:area-effect] save). The damage dealt depends on the number of actions.</p>\n<p><span class=\"action-glyph\">1</span> @Damage[1d8[slashing]|options:area-damage,grasping-mandibles] damage plus Grasping Mandibles</p>\n<p><span class=\"action-glyph\">2</span> @Damage[(2d8+6)[slashing]|options:area-damage,grasping-mandibles] damage plus Grasping Mandibles</p>\n<p><span class=\"action-glyph\">3</span> @Damage[(2d8+11)[slashing]|options:area-damage] damage</p>"
                 },
                 "action->Overwhelm": {
                     "name": "Overwhelm",
@@ -754,7 +754,7 @@
                 },
                 "action->Direct Hit": {
                     "name": "Direct Hit",
-                    "description": "<p>The gnomes fire a more mundane round from one of their cannons at a single target within 60 feet, who takes @Damage[(3d10+6)[bludgeoning]] damage (@Check[reflex|dc:22|basic|inflicts:forced-movement] save). On a failed save, the creature is also pushed 5 feet away from the troop.</p>"
+                    "description": "<p>The gnomes fire a more mundane round from one of their cannons at a single target within 60 feet, who takes @Damage[(3d10+6)[bludgeoning]] damage (@Check[reflex|dc:22|basic|options:inflicts:forced-movement] save). On a failed save, the creature is also pushed 5 feet away from the troop.</p>"
                 }
             }
         },
@@ -806,7 +806,7 @@
                 },
                 "action->False Cuts": {
                     "name": "False Cuts",
-                    "description": "<p><strong>Frequency</strong> once per round</p><hr /><p><strong>Effect</strong> The halflings feint with their cards and then lash out with their daggers in a coordinated melee attack against enemies in a @Template[type:emanation|distance:5], with a @Check[reflex|dc:23|basic] save. The damage depends on the number of actions.</p>\n<p><span class=\"action-glyph\">1</span> @Damage[1d4[piercing],1d4[precision]] precision damage</p>\n<p><span class=\"action-glyph\">2</span> @Damage[(2d4+7)[piercing],2d4[precision]] precision damage</p>\n<p><span class=\"action-glyph\">3</span> @Damage[(3d4+10)[piercing],2d4[precision]] precision damage</p>"
+                    "description": "<p><strong>Frequency</strong> once per round</p><hr /><p><strong>Effect</strong> The halflings feint with their cards and then lash out with their daggers in a coordinated melee attack against enemies in a @Template[type:emanation|distance:5], with a @Check[reflex|dc:23|basic|options:area-effect] save. The damage depends on the number of actions.</p>\n<p><span class=\"action-glyph\">1</span> @Damage[1d4[piercing],1d4[precision]|options:area-damage] precision damage</p>\n<p><span class=\"action-glyph\">2</span> @Damage[(2d4+7)[piercing],2d4[precision]|options:area-damage] precision damage</p>\n<p><span class=\"action-glyph\">3</span> @Damage[(3d4+10)[piercing],2d4[precision]|options:area-damage] precision damage</p>"
                 },
                 "action->Troop Harrowing": {
                     "name": "Troop Harrowing",
@@ -838,7 +838,7 @@
                 },
                 "action->Infernal Mauling": {
                     "name": "Infernal Mauling",
-                    "description": "<p><strong>Frequency</strong> once per round</p><hr /><p><strong>Effect</strong> The pack tears into each enemy in a @Template[type:emanation|distance:5] with their flaming jaws (@Check[reflex|dc:23|basic] save). The damage dealt depends on the number of actions.</p>\n<p><span class=\"action-glyph\">1</span> @Damage[1d4[piercing],1d6[fire]|options:area-damage]{1d4 piercing damage plus 1d6 fire damage}</p>\n<p><span class=\"action-glyph\">2</span> @Damage[(1d8+7)[piercing],2d6[fire]|options:area-damage]{1d8+7 piercing damage plus 2d6 fire damage}</p>\n<p><span class=\"action-glyph\">3</span> @Damage[(2d8+7)[piercing],2d6[fire]|options:area-damage]{2d8+7 piercing damage plus 2d6 fire damage}</p>"
+                    "description": "<p><strong>Frequency</strong> once per round</p><hr /><p><strong>Effect</strong> The pack tears into each enemy in a @Template[type:emanation|distance:5] with their flaming jaws (@Check[reflex|dc:23|basic|options:area-effect] save). The damage dealt depends on the number of actions.</p>\n<p><span class=\"action-glyph\">1</span> @Damage[1d4[piercing],1d6[fire]|options:area-damage]{1d4 piercing damage plus 1d6 fire damage}</p>\n<p><span class=\"action-glyph\">2</span> @Damage[(1d8+7)[piercing],2d6[fire]|options:area-damage]{1d8+7 piercing damage plus 2d6 fire damage}</p>\n<p><span class=\"action-glyph\">3</span> @Damage[(2d8+7)[piercing],2d6[fire]|options:area-damage]{2d8+7 piercing damage plus 2d6 fire damage}</p>"
                 }
             },
             "skills": {
@@ -879,7 +879,7 @@
                 },
                 "action->Shortbow Volley": {
                     "name": "Shortbow Volley",
-                    "description": "<p>The hobgoblins draw their shortbows, then launch a ranged attack in the form of a volley. This volley is a @Template[type:burst|distance:10] within 60 feet that deals @Damage[4d6[piercing]|options:area-damage] damage with a @Check[reflex|dc:25|basic] save. When the regiment is reduced to 2 segments, this area decreases to a @Template[type:burst|distance:5].</p>"
+                    "description": "<p>The hobgoblins draw their shortbows, then launch a ranged attack in the form of a volley. This volley is a @Template[type:burst|distance:10] within 60 feet that deals @Damage[4d6[piercing]|options:area-damage] damage with a @Check[reflex|dc:25|basic|options:area-effect] save. When the regiment is reduced to 2 segments, this area decreases to a @Template[type:burst|distance:5].</p>"
                 }
             }
         },
@@ -954,7 +954,7 @@
                 },
                 "action->Pestilent Wheeze": {
                     "name": "Pestilent Wheeze",
-                    "description": "<p>The leukodaemons exhale a @Template[type:cone|distance:30] of disease-ridden black flies that deal @Damage[5d8[piercing]|options:area-damage] damage (@Check[reflex|dc:31|basic] save). A creature that fails the save also becomes @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 1} (or @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 2} on a critical failure). When the leukodaemon plague is reduced to 2 segments, this area decreases to a @Template[type:cone|distance:20].</p>"
+                    "description": "<p>The leukodaemons exhale a @Template[type:cone|distance:30] of disease-ridden black flies that deal @Damage[5d8[piercing]|options:area-damage] damage (@Check[reflex|dc:31|basic|options:area-effect,inflicts:sickened] save). A creature that fails the save also becomes @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 1} (or @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 2} on a critical failure). When the leukodaemon plague is reduced to 2 segments, this area decreases to a @Template[type:cone|distance:20].</p>"
                 },
                 "action->Quicken Pestilence": {
                     "name": "Quicken Pestilence",
@@ -1062,7 +1062,7 @@
                 },
                 "action->Pummeling Punches": {
                     "name": "Pummeling Punches",
-                    "description": "<p><strong>Frequency</strong> once per round</p><hr /><p><strong>Effect</strong> The monks perform well-timed coordinated melee attacks against all enemies in a @Template[type:emanation|distance:5], with a @Check[reflex|dc:31|basic|options:area-damage] save. The damage depends on the number of actions.</p>\n<p><span class=\"action-glyph\">1</span> @Damage[2d8[bludgeoning]|options:area-damage] damage</p>\n<p><span class=\"action-glyph\">2</span> @Damage[(4d8+8)[bludgeoning]|options:area-damage] damage</p>\n<p><span class=\"action-glyph\">3</span> @Damage[(4d8+16)[bludgeoning]|options:area-damage] damage</p>"
+                    "description": "<p><strong>Frequency</strong> once per round</p><hr /><p><strong>Effect</strong> The monks perform well-timed coordinated melee attacks against all enemies in a @Template[type:emanation|distance:5], with a @Check[reflex|dc:31|basic|options:area-effect] save. The damage depends on the number of actions.</p>\n<p><span class=\"action-glyph\">1</span> @Damage[2d8[bludgeoning]|options:area-damage] damage</p>\n<p><span class=\"action-glyph\">2</span> @Damage[(4d8+8)[bludgeoning]|options:area-damage] damage</p>\n<p><span class=\"action-glyph\">3</span> @Damage[(4d8+16)[bludgeoning]|options:area-damage] damage</p>"
                 },
                 "action->Qi Blast": {
                     "name": "Qi Blast",
@@ -1102,7 +1102,7 @@
                 },
                 "action->Putrid Pummeling": {
                     "name": "Putrid Pummeling",
-                    "description": "<p><strong>Frequency</strong> once per round</p><hr /><p><strong>Effect</strong> The ofalths pummel all enemies in a @Template[type:emanation|distance:10], with a @Check[reflex|dc:33|basic] save. The damage depends on the number of actions. Creatures that fail the saving throw are exposed to wretched weeps.</p>\n<p><span class=\"action-glyph\">1</span> @Damage[(1d12+3)[bludgeoning]|options:area-damage] damage</p>\n<p><span class=\"action-glyph\">2</span> @Damage[(3d12+7)[bludgeoning]|options:area-damage] damage</p>\n<p><span class=\"action-glyph\">3</span> @Damage[(4d12+10)[bludgeoning]|options:area-damage] damage</p>"
+                    "description": "<p><strong>Frequency</strong> once per round</p><hr /><p><strong>Effect</strong> The ofalths pummel all enemies in a @Template[type:emanation|distance:10], with a @Check[reflex|dc:33|basic|options:area-effect] save. The damage depends on the number of actions. Creatures that fail the saving throw are exposed to wretched weeps.</p>\n<p><span class=\"action-glyph\">1</span> @Damage[(1d12+3)[bludgeoning]|options:area-damage] damage</p>\n<p><span class=\"action-glyph\">2</span> @Damage[(3d12+7)[bludgeoning]|options:area-damage] damage</p>\n<p><span class=\"action-glyph\">3</span> @Damage[(4d12+10)[bludgeoning]|options:area-damage] damage</p>"
                 },
                 "action->Wretched Weeps": {
                     "name": "Wretched Weeps",
@@ -1160,7 +1160,7 @@
                 },
                 "action->Waves of Sludge": {
                     "name": "Waves of Sludge",
-                    "description": "<p><strong>Frequency</strong> once per round</p><hr /><p><strong>Effect</strong> The omoxes attack all enemies in a @Template[type:emanation|distance:5] with slimy tendrils (@Check[reflex|dc:35|basic] save). A creature that critically fails this saving throw is also @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed} by the slime pool. The damage depends on the number of actions.</p>\n<p><span class=\"action-glyph\">1</span> @Damage[(1d6+3)[bludgeoning],1d6[acid]|options:area-damage]{1d6+3 bludgeoning damage plus 1d6 acid damage}</p>\n<p><span class=\"action-glyph\">2</span> @Damage[(3d6+12)[bludgeoning],2d6[acid]|options:area-damage]{3d6+12 bludgeoning damage plus 2d6 acid damage}</p>\n<p><span class=\"action-glyph\">3</span> @Damage[(4d6+14)[bludgeoning],3d6[acid]|options:area-damage]{4d6+14 bludgeoning damage plus 3d6 acid damage}</p>"
+                    "description": "<p><strong>Frequency</strong> once per round</p><hr /><p><strong>Effect</strong> The omoxes attack all enemies in a @Template[type:emanation|distance:5] with slimy tendrils (@Check[reflex|dc:35|basic|options:area-effect] save). A creature that critically fails this saving throw is also @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed} by the slime pool. The damage depends on the number of actions.</p>\n<p><span class=\"action-glyph\">1</span> @Damage[(1d6+3)[bludgeoning],1d6[acid]|options:area-damage]{1d6+3 bludgeoning damage plus 1d6 acid damage}</p>\n<p><span class=\"action-glyph\">2</span> @Damage[(3d6+12)[bludgeoning],2d6[acid]|options:area-damage]{3d6+12 bludgeoning damage plus 2d6 acid damage}</p>\n<p><span class=\"action-glyph\">3</span> @Damage[(4d6+14)[bludgeoning],3d6[acid]|options:area-damage]{4d6+14 bludgeoning damage plus 3d6 acid damage}</p>"
                 }
             }
         },
@@ -1198,6 +1198,7 @@
         "Protean Tumult": {
             "name": "Protean Tumult",
             "publicNotes": "<p>Due to the inherently chaotic nature of proteans, many would assume they are incapable of cooperation. However, they are cunning enough to be able to unite in the face of danger or at the behest of more powerful beings, sometimes acting as a group called a protean tumult. Such an association is comprising of dozens of proteans of different shapes and sizes, many of whom continually alter their forms from moment to moment.</p>",
+            "allSavesBonus": "+1 status to all saves vs. magic",
             "speedsDetails": "troop movement, unfettered movement",
             "sensesDetails": "entropy sense (imprecise) 30 feet",
             "hpDetails": "(4 segments); Thresholds 140 (3 segments), 70 (2 segments)",
@@ -1212,22 +1213,18 @@
                     "name": "Spell Effect: Unfettered Movement (Constant)",
                     "description": "<p>Granted by @UUID[Compendium.pf2e.spells-srd.Item.aqRYNoSvxsVfqglH]{Unfettered Movement}</p>\n<p>You ignore circumstance penalties to your Speed.</p>"
                 },
-                "effect->Effect: Adaptive Strike (Adamantine)": {
-                    "name": "Effect: Adaptive Strike (Adamantine)",
-                    "description": "<p>The creature's melee strikes count either as adamantine, cold iron or silver.</p>"
-                },
                 "action->Entropy Sense": {
                     "name": "Entropy Sense",
-                    "description": "<p>A protean tumult can anticipate the most likely presence of a creature through a supernatural insight into chaotic probabilities and chance. This grants it the ability to sense creatures within the listed range. Veil of privacy prevents a creature from being detected via entropy sense automatically (without a counteract check).</p>"
+                    "description": "<p>A protean tumult can anticipate the most likely presence of a creature through a supernatural insight into chaotic probabilities and chance. This grants it the ability to sense creatures within the listed range. @UUID[Compendium.pf2e.spells-srd.Item.EoKBlgf6Smt8opaU]{Veil of Privacy} prevents a creature from being detected via entropy sense automatically (without a counteract check).</p>"
                 },
                 "action->+1 Status to All Saves vs. Magic": {
                     "name": "+1 Status to All Saves vs. Magic"
                 },
-                "action->Fast Healing": {
-                    "name": "Fast Healing"
+                "action->Fast Healing 8": {
+                    "name": "Fast Healing 8"
                 },
-                "action->Protean Anatomy": {
-                    "name": "Protean Anatomy",
+                "action->Protean Anatomy 12": {
+                    "name": "Protean Anatomy 12",
                     "description": "<p>A protean's vital organs shift and change shape and position constantly. Immediately after the protean takes acid, electricity, or sonic damage, it gains the listed amount of resistance to that damage type. This lasts for 1 hour or until the next time the protean takes damage of one of the other types (in which case its resistance changes to match that type), whichever comes first. The protean is immune to polymorph effects unless it is a willing target. If @UUID[Compendium.pf2e.conditionitems.Item.XgEqL1kFApUbl5Z2]{Blinded} or @UUID[Compendium.pf2e.conditionitems.Item.9PR9y0bi4JPKnHPR]{Deafened}, the protean automatically recovers at the end of its next turn as new sensory organs grow to replace the compromised ones.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.c6SiBB3mzV8lZUQr]{Effect: Protean Anatomy}</p>"
                 },
                 "action->Troop Defenses": {
@@ -1239,7 +1236,7 @@
                 },
                 "action->Chaos Flux": {
                     "name": "Chaos Flux",
-                    "description": "<p>A protean tumult is less organized and more vicious than most troops. It can move into other creatures' spaces, and other creatures can move into its spaces. Its spaces are difficult terrain to non-protean creatures. A creature that willingly moves into a protean tumult's space takes @Damage[(1d12+1)[bludgeoning]] damage (@Check[reflex|dc:29|basic|options:area-effect] save); a creature takes this damage only once per round.</p>"
+                    "description": "<p>A protean tumult is less organized and more vicious than most troops. It can move into other creatures' spaces, and other creatures can move into its spaces. Its spaces are difficult terrain to non-protean creatures. A creature that willingly moves into a protean tumult's space takes @Damage[(1d12+1)[untyped]] damage (@Check[reflex|dc:29|basic|options:area-effect] save); a creature takes this damage only once per round.</p>"
                 },
                 "action->Chaos Strike": {
                     "name": "Chaos Strike",
@@ -1247,16 +1244,11 @@
                 },
                 "action->Claws, Jaws, and Tails": {
                     "name": "Claws, Jaws, and Tails",
-                    "description": "<p><strong>Frequency</strong> once per round</p><hr /><p><strong>Effect</strong> The tumult viciously attacks each enemy within a @Template[type:emanation|distance:5] (@Check[reflex|dc:29|basic|options:area-effect] save). The damage depends on the number of actions.</p>\n<p><span class=\"action-glyph\">1</span> @Damage[(1d12+1)[bludgeoning]] damage</p>\n<p><span class=\"action-glyph\">2</span> @Damage[(2d12+10)[bludgeoning]] damage</p>\n<p><span class=\"action-glyph\">3</span> @Damage[(3d12+11)[bludgeoning]] damage</p>",
-                    "rules": {
-                        "0": {
-                            "label": "Protean Tumult Attack Damage Type"
-                        }
-                    }
+                    "description": "<p><span class=\"action-glyph\">1</span> to <span class=\"action-glyph\">3</span></p><hr /><p><strong>Frequency</strong> once per round</p><hr /><p><strong>Effect</strong> The tumult viciously attacks each enemy within a @Template[type:emanation|distance:5] (@Check[reflex|dc:29|basic|options:area-effect] save). The damage depends on the number of actions.</p>\n<p><span class=\"action-glyph\">1</span> @Damage[(1d12+1)[untyped]|options:area-damage] damage</p>\n<p><span class=\"action-glyph\">2</span> @Damage[(2d12+10)[untyped]|options:area-damage] damage</p>\n<p><span class=\"action-glyph\">3</span> @Damage[(3d12+11)[untyped]|options:area-damage] damage</p>"
                 },
                 "action->Stupefying Swipe": {
                     "name": "Stupefying Swipe",
-                    "description": "<p>The protean tumult makes their way across the battlefield. It Strides. At the end of this movement, they lash out at the enemy with tentacles and other blunt body parts, dealing @Damage[(2d12+10)[bludgeoning]|options:area-damage] damage in a @Template[type:emanation|distance:5] (@Check[reflex|dc:29|basic|options:area-effect] save). A creature who fails this save is also @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 2} for 2 rounds (@UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 3} on a critical failure).</p>"
+                    "description": "<p>The protean tumult makes their way across the battlefield. It Strides. At the end of this movement, they lash out at the enemy with tentacles and other blunt body parts, dealing @Damage[(2d12+10)[bludgeoning]|options:area-damage] damage in a @Template[type:emanation|distance:5] (@Check[reflex|dc:29|basic|options:area-effect,inflicts:stupefied] save). A creature who fails this save is also @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 2} for 2 rounds (@UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 3} on a critical failure).</p>"
                 }
             }
         },
@@ -1322,7 +1314,7 @@
                 },
                 "action->Shank 'Em": {
                     "name": "Shank 'Em",
-                    "description": "<p><strong>Frequency</strong> once per round</p><hr /><p><strong>Effect</strong> The shank squad makes a coordinated attack with shivs and daggers against each enemy in a @Template[type:emanation|distance:5], with a @Check[reflex|dc:22|basic] save. The damage depends on the number of actions.</p>\n<p><span class=\"action-glyph\">1</span> @Damage[1d6[slashing],1d4[precision]|options:area-damage]{1d6 slashing damage and 1d4 precision damage}</p>\n<p><span class=\"action-glyph\">2</span> @Damage[(2d6+3)[slashing],2d4[precision]|options:area-damage]{2d6+3 slashing damage and 2d4 precision damage}</p>\n<p><span class=\"action-glyph\">3</span> @Damage[(2d6+6)[slashing],3d4[precision]|options:area-damage]{2d6+6 slashing damage and 3d4 precision damage}</p>"
+                    "description": "<p><strong>Frequency</strong> once per round</p><hr /><p><strong>Effect</strong> The shank squad makes a coordinated attack with shivs and daggers against each enemy in a @Template[type:emanation|distance:5], with a @Check[reflex|dc:22|basic|options:area-effect] save. The damage depends on the number of actions.</p>\n<p><span class=\"action-glyph\">1</span> @Damage[1d6[slashing],1d4[precision]|options:area-damage]{1d6 slashing damage and 1d4 precision damage}</p>\n<p><span class=\"action-glyph\">2</span> @Damage[(2d6+3)[slashing],2d4[precision]|options:area-damage]{2d6+3 slashing damage and 2d4 precision damage}</p>\n<p><span class=\"action-glyph\">3</span> @Damage[(2d6+6)[slashing],3d4[precision]|options:area-damage]{2d6+6 slashing damage and 3d4 precision damage}</p>"
                 }
             }
         },
@@ -1544,7 +1536,7 @@
                 },
                 "action->Sirocco Breath": {
                     "name": "Sirocco Breath",
-                    "description": "<p>The scamp whirlwind breathes in a @Template[type:cone|distance:15] that deals @Damage[3d6[slashing]|options:area-damage|inflicts:forced-movement] damage to each creature within the area (@Check[reflex|dc:21|basic|options:area-effect] save). Creatures that fail the save also get pushed back by 10 feet. The scamp whirlwind can't use Sirocco Breath again for [[/gmr 1d4 #Sirocco Breath]]{1d4 rounds}.</p>"
+                    "description": "<p>The scamp whirlwind breathes in a @Template[type:cone|distance:15] that deals @Damage[3d6[slashing]|options:area-damage] damage to each creature within the area (@Check[reflex|dc:21|basic|options:area-effect,inflicts:forced-movement] save). Creatures that fail the save also get pushed back by 10 feet. The scamp whirlwind can't use Sirocco Breath again for [[/gmr 1d4 #Recharge Sirocco Breath]]{1d4 rounds}.</p>"
                 },
                 "action->Sonic Slams": {
                     "name": "Sonic Slams",
@@ -1606,7 +1598,7 @@
                 },
                 "action->Rattling Bones": {
                     "name": "Rattling Bones",
-                    "description": "<p><strong>Frequency</strong> once per round</p><hr /><p><strong>Effect</strong> The skeletons engage using their claws and broken bones to attack each enemy in a @Template[type:emanation|distance:5], with a @Check[reflex|dc:21|basic] save. The damage depends on the number of actions.</p>\n<p><span class=\"action-glyph\">1</span> @Damage[(1d4+1)[piercing]] damage</p>\n<p><span class=\"action-glyph\">2</span> @Damage[(2d4+7)[piercing]] damage</p>\n<p><span class=\"action-glyph\">3</span> @Damage[(3d4+10)[piercing]] damage</p>"
+                    "description": "<p><strong>Frequency</strong> once per round</p><hr /><p><strong>Effect</strong> The skeletons engage using their claws and broken bones to attack each enemy in a @Template[type:emanation|distance:5], with a @Check[reflex|dc:21|basic|options:area-effect] save. The damage depends on the number of actions.</p>\n<p><span class=\"action-glyph\">1</span> @Damage[(1d4+1)[piercing]|options:area-damage] damage</p>\n<p><span class=\"action-glyph\">2</span> @Damage[(2d4+7)[piercing]|options:area-damage] damage</p>\n<p><span class=\"action-glyph\">3</span> @Damage[(3d4+10)[piercing]|options:area-damage] damage</p>"
                 }
             }
         },
@@ -1646,7 +1638,7 @@
                 },
                 "action->Harvest the Wicked": {
                     "name": "Harvest the Wicked",
-                    "description": "<p><strong>Frequency</strong> once per round</p><hr /><p><strong>Effect</strong> The vanths swing their scythes in a coordinated melee attack. Each enemy in a @Template[type:emanation|distance:5] must attempt a @Check[reflex|dc:30|basic] save. The damage depends on the number of actions. The slashing damage is treated as adamantine, cold iron, and silver.</p>\n<p><span class=\"action-glyph\">1</span> @Damage[(1d10+1)[slashing],1d6[untyped]|options:area-damage,item:rune:property:ghost-touch]{1d10+1 slashing damage plus 1d6 shepherd's touch}</p>\n<p><span class=\"action-glyph\">2</span> @Damage[(2d10+3)[slashing],3d6[untyped]|options:area-damage,item:rune:property:ghost-touch]{2d10+3 slashing damage plus 3d6 shepherd's touch}</p>\n<p><span class=\"action-glyph\">3</span> @Damage[(2d10+7)[slashing],4d6[untyped]|options:area-damage,item:rune:property:ghost-touch]{2d10+7 slashing damage plus 4d6 shepherd's touch}</p>"
+                    "description": "<p><strong>Frequency</strong> once per round</p><hr /><p><strong>Effect</strong> The vanths swing their scythes in a coordinated melee attack. Each enemy in a @Template[type:emanation|distance:5] must attempt a @Check[reflex|dc:30|basic|options:area-effect] save. The damage depends on the number of actions. The slashing damage is treated as adamantine, cold iron, and silver.</p>\n<p><span class=\"action-glyph\">1</span> @Damage[(1d10+1)[slashing],1d6[untyped]|options:area-damage,item:rune:property:ghost-touch]{1d10+1 slashing damage plus 1d6 shepherd's touch}</p>\n<p><span class=\"action-glyph\">2</span> @Damage[(2d10+3)[slashing],3d6[untyped]|options:area-damage,item:rune:property:ghost-touch]{2d10+3 slashing damage plus 3d6 shepherd's touch}</p>\n<p><span class=\"action-glyph\">3</span> @Damage[(2d10+7)[slashing],4d6[untyped]|options:area-damage,item:rune:property:ghost-touch]{2d10+7 slashing damage plus 4d6 shepherd's touch}</p>"
                 },
                 "action->Shepherd\u2019s Touch": {
                     "name": "Shepherd\u2019s Touch",
@@ -1679,7 +1671,7 @@
                 },
                 "action->Berserker Strikes": {
                     "name": "Berserker Strikes",
-                    "description": "<p><strong>Frequency</strong> once per round</p><hr /><p><strong>Effect</strong> Battle axes in hand, the viking guard engages in a coordinated melee attack against enemies in a @Template[type:emanation|distance:5], with a @Check[reflex|dc:27|basic] save. The damage depends on the number of actions.</p>\n<p><span class=\"action-glyph\">1</span> @Damage[(1d8+3)[slashing]|options:area-damage] damage</p>\n<p><span class=\"action-glyph\">2</span> @Damage[(2d8+12)[slashing]|options:area-damage] damage</p>\n<p><span class=\"action-glyph\">3</span> @Damage[(3d8+15)[slashing]|options:area-damage] damage</p>"
+                    "description": "<p><strong>Frequency</strong> once per round</p><hr /><p><strong>Effect</strong> Battle axes in hand, the viking guard engages in a coordinated melee attack against enemies in a @Template[type:emanation|distance:5], with a @Check[reflex|dc:27|basic|options:area-effect] save. The damage depends on the number of actions.</p>\n<p><span class=\"action-glyph\">1</span> @Damage[(1d8+3)[slashing]|options:area-damage] damage</p>\n<p><span class=\"action-glyph\">2</span> @Damage[(2d8+12)[slashing]|options:area-damage] damage</p>\n<p><span class=\"action-glyph\">3</span> @Damage[(3d8+15)[slashing]|options:area-damage] damage</p>"
                 },
                 "action->Guard Charge": {
                     "name": "Guard Charge",
@@ -1762,7 +1754,7 @@
                 },
                 "action->Hateful Daggers": {
                     "name": "Hateful Daggers",
-                    "description": "<p>The wights coordinate melee attacks with the daggers they were buried with. Each enemy within a @Template[type:emanation|distance:5] attempts a @Check[reflex|dc:25|basic] save. The damage depends on the number of actions. On a failed save, the creature is also exposed to corrupting spite.</p>\n<p><span class=\"action-glyph\">1</span> @Damage[2d4[piercing]|options:area-damage] damage</p>\n<p><span class=\"action-glyph\">2</span> @Damage[(4d4+8)[piercing]|options:area-damage] damage</p>\n<p><span class=\"action-glyph\">3</span> @Damage[(4d4+14)[piercing]|options:area-damage] damage</p>"
+                    "description": "<p>The wights coordinate melee attacks with the daggers they were buried with. Each enemy within a @Template[type:emanation|distance:5] attempts a @Check[reflex|dc:25|basic|options:area-effect] save. The damage depends on the number of actions. On a failed save, the creature is also exposed to corrupting spite.</p>\n<p><span class=\"action-glyph\">1</span> @Damage[2d4[piercing]|options:area-damage] damage</p>\n<p><span class=\"action-glyph\">2</span> @Damage[(4d4+8)[piercing]|options:area-damage] damage</p>\n<p><span class=\"action-glyph\">3</span> @Damage[(4d4+14)[piercing]|options:area-damage] damage</p>"
                 }
             }
         },
