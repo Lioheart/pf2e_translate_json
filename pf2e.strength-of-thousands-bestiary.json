@@ -114,7 +114,7 @@
             "items": {
                 "action->Trapping Vines": {
                     "name": "Trapping Vines",
-                    "description": "<p><strong>Trigger</strong> A creature moves within reach of the carnivorous plants' vines</p>\n<hr />\n<p><strong>Effect</strong> The vines wrap around the triggering creature. The creature must succeed at a @Check[reflex|dc:22] save or be @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed} until it Escapes (DC 22). Whether or not the creature is grabbed, the plants make a gnawing plants Strike against the creature.</p>"
+                    "description": "<p><strong>Trigger</strong> A creature moves within reach of the carnivorous plants' vines</p>\n<hr />\n<p><strong>Effect</strong> The vines wrap around the triggering creature. The creature must succeed at a @Check[reflex|dc:22] save or be @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed} until it [[/act escape dc=22]]{Escapes}. Whether or not the creature is grabbed, the plants make a gnawing plants Strike against the creature.</p>"
                 },
                 "strike-melee->Gnawing Plants": {
                     "name": "Gnawing Plants"
@@ -1253,7 +1253,7 @@
                 },
                 "action->Engulf": {
                     "name": "Engulf",
-                    "description": "<p>@Check[reflex|dc:37] save, @Damage[5d10[acid]] damage, @UUID[Compendium.pf2e.actionspf2e.Item.SkZAQRkLLkmBQNB9]{Escape} DC 37, Rupture 20. A crawling slurry regains @Damage[30[healing]] Hit Points if a living creature it is engulfing dies.</p>\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Engulf]</p>"
+                    "description": "<p>@Check[reflex|dc:37] save, @Damage[5d10[acid]] damage, [[/act escape dc=37]], Rupture 20. A crawling slurry regains @Damage[30[healing]] Hit Points if a living creature it is engulfing dies.</p>\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Engulf]</p>"
                 },
                 "action->Grab": {
                     "name": "Grab"
@@ -4891,7 +4891,7 @@
                 },
                 "action->Entombing Grasp": {
                     "name": "Entombing Grasp",
-                    "description": "<p><strong>Requirements</strong> A foe within Stone Ghost's reach is standing on stone or soil</p>\n<hr />\n<p><strong>Effect</strong> Stone Ghost briefly extends his intangibility to a foe and drags or pounds them into the earth. He makes an @Check[athletics|defense:fortitude] check against the target's Fortitude DC. On a success, the foe is planted waist-deep in the ground and is immobilized and off-guard until it Escapes (DC 22). On a critical success, the foe is completely buried and must hold its breath until it is free or else start suffocating. A successful Escape returns the foe to its original square on the surface, or the closest unoccupied square.</p>"
+                    "description": "<p><strong>Requirements</strong> A foe within Stone Ghost's reach is standing on stone or soil</p>\n<hr />\n<p><strong>Effect</strong> Stone Ghost briefly extends his intangibility to a foe and drags or pounds them into the earth. He makes an @Check[athletics|against:fortitude] check against the target's Fortitude DC. On a success, the foe is planted waist-deep in the ground and is @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Immobilized} and @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} until it [[/act escape dc=22]]{Escapes}. On a critical success, the foe is completely buried and must hold its breath until it is free or else start suffocating. A successful Escape returns the foe to its original square on the surface, or the closest unoccupied square.</p>"
                 },
                 "lore->Magaambya Lore": {
                     "name": "Magaambya Lore"

@@ -39,7 +39,7 @@
                 },
                 "action->Liberate the Earth": {
                     "name": "Liberate the Earth",
-                    "description": "<p>The aeolaeka conjures churning stones, creating a @Template[line|distance:60] of rolling boulders that deals @Damage[10d6[bludgeoning]|options:area-damage] damage. All creatures in the area must attempt a @Check[reflex|dc:32|options:area-effect,damaging-effect] save, after which the area becomes difficult terrain for 24 hours before the leftover stone crumbles to dust. The aeolaeka can't Liberate the Earth for [[/gmr 1d4 #Recharge Liberate the Earth]]{1d4 rounds}.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature takes no damage.</p>\n<p><strong>Success</strong> The creature takes half damage.</p>\n<p><strong>Failure</strong> The creature takes full damage and is knocked @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone}.</p>\n<p><strong>Critical Failure</strong> The creature takes double damage, is knocked prone, and is @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Immobilized} by the rubble (@UUID[Compendium.pf2e.actionspf2e.Item.SkZAQRkLLkmBQNB9]{Escape} DC 32).</p>"
+                    "description": "<p>The aeolaeka conjures churning stones, creating a @Template[line|distance:60] of rolling boulders that deals @Damage[10d6[bludgeoning]|options:area-damage] damage. All creatures in the area must attempt a @Check[reflex|dc:32|options:area-effect,damaging-effect] save, after which the area becomes difficult terrain for 24 hours before the leftover stone crumbles to dust. The aeolaeka can't Liberate the Earth for [[/gmr 1d4 #Recharge Liberate the Earth]]{1d4 rounds}.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature takes no damage.</p>\n<p><strong>Success</strong> The creature takes half damage.</p>\n<p><strong>Failure</strong> The creature takes full damage and is knocked @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone}.</p>\n<p><strong>Critical Failure</strong> The creature takes double damage, is knocked prone, and is @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Immobilized} by the rubble ([[/act escape dc=32]]).</p>"
                 },
                 "action->Sacred Hammer": {
                     "name": "Sacred Hammer",
@@ -922,7 +922,7 @@
             "name": "Compression Tunnel",
             "descriptionHazard": "<p>This shadow tunnel compresses when creatures pass through.</p>",
             "disable": "<p>@Check[athletics|dc:46] (legendary) twice to push back the shadows or @Check[thievery|dc:48] (legendary) three times to pierce through the shadows</p>",
-            "routine": "<p>(1 action) The tunnel compresses, crushing all creatures in it and dealing @Damage[(4d10+22)[bludgeoning]] damage (@Check[fortitude|dc:42|basic]). On a failed save, a creature additionally becomes @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Immobilized} (@UUID[Compendium.pf2e.actionspf2e.Item.SkZAQRkLLkmBQNB9]{Escape} DC 42).</p>",
+            "routine": "<p>(1 action) The tunnel compresses, crushing all creatures in it and dealing @Damage[(4d10+22)[bludgeoning]] damage (@Check[fortitude|dc:42|basic]). On a failed save, a creature additionally becomes @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Immobilized} ([[/act escape dc=42]]).</p>",
             "stealth": "<p>(legendary)</p>",
             "items": {
                 "action->Shudder": {
@@ -2553,7 +2553,7 @@
                 },
                 "action->Bonds of Iron": {
                     "name": "Bonds of Iron",
-                    "description": "<p><strong>Frequency</strong> once per day</p>\n<hr />\n<p><strong>Effect</strong> Iron Taviah can cause a cage built of cold iron fingernails to spring from nothingness around a target at a range of up to 30 feet, attempting an Athletics check to [[/act grapple]] against the target's Fortitude DC; if the target has a weakness to cold iron, Taviah gains a +2 circumstance bonus to this check. Unlike a normal Grapple, Taviah doesn't need to be within reach and can move as she pleases, and a successful attempt lasts until the creature [[/act escape dc=24]]{Escapes} (DC 24), causing the cage to crumble into rust. Any creature can attempt to destroy the cage by attacking it; the cage has an AC of 19, Hardness 10, and 40 Hit Points.</p>"
+                    "description": "<p><strong>Frequency</strong> once per day</p>\n<hr />\n<p><strong>Effect</strong> Iron Taviah can cause a cage built of cold iron fingernails to spring from nothingness around a target at a range of up to 30 feet, attempting an Athletics check to [[/act grapple]] against the target's Fortitude DC; if the target has a weakness to cold iron, Taviah gains a +2 circumstance bonus to this check. Unlike a normal Grapple, Taviah doesn't need to be within reach and can move as she pleases, and a successful attempt lasts until the creature [[/act escape dc=24]]{Escapes}, causing the cage to crumble into rust. Any creature can attempt to destroy the cage by attacking it; the cage has an AC of 19, Hardness 10, and 40 Hit Points.</p>"
                 },
                 "action->Change Shape": {
                     "name": "Change Shape",
@@ -3633,7 +3633,7 @@
                 },
                 "action->Countless Digits": {
                     "name": "Countless Digits",
-                    "description": "<p>Each other creature in the phalanx of phalanges' space takes @Damage[1d6[piercing]] damage (@Damage[(1d6+2)[piercing]] damage if the swarm is berserk) (@Check[reflex|dc:17|basic]). On a critical failure, the target is thoroughly pinned by the phalanges, becoming @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Immobilized} until it @UUID[Compendium.pf2e.actionspf2e.Item.SkZAQRkLLkmBQNB9]{Escapes} (DC 17) or until any creature uses 2 Interact actions to scrape away the bones pinning them down.</p>"
+                    "description": "<p>Each other creature in the phalanx of phalanges' space takes @Damage[1d6[piercing]] damage (@Damage[(1d6+2)[piercing]] damage if the swarm is berserk) (@Check[reflex|dc:17|basic]). On a critical failure, the target is thoroughly pinned by the phalanges, becoming @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Immobilized} until it [[/act escape dc=17]]{Escapes} or until any creature uses 2 Interact actions to scrape away the bones pinning them down.</p>"
                 }
             }
         },
@@ -4174,7 +4174,7 @@
             "items": {
                 "action->Entangling Net": {
                     "name": "Entangling Net",
-                    "description": "<p>A Sallowdrudge uses their net to @UUID[Compendium.pf2e.actionspf2e.Item.PMbdMWc2QroouFGD]{Grapple} a Medium or smaller creature within 30 feet. On a success, the target is @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed} until it Escapes (DC 16) or until an adjacent creature Interacts to remove the net. On a critical hit, the target is @UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{Restrained} rather than grabbed. The Sallowdrudge can't use Entangling Net again until they take 1 minute to refold their net.</p>"
+                    "description": "<p>A Sallowdrudge uses their net to @UUID[Compendium.pf2e.actionspf2e.Item.PMbdMWc2QroouFGD]{Grapple} a Medium or smaller creature within 30 feet. On a success, the target is @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed} until it [[/act escape dc=16]]{Escapes} or until an adjacent creature Interacts to remove the net. On a critical hit, the target is @UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{Restrained} rather than grabbed. The Sallowdrudge can't use Entangling Net again until they take 1 minute to refold their net.</p>"
                 },
                 "action->Spear Fisher": {
                     "name": "Spear Fisher",
@@ -4629,7 +4629,7 @@
                 },
                 "action->Trip": {
                     "name": "Trip",
-                    "description": "<p><strong>Requirements</strong> You have at least one hand free. Your target can't be more than one size larger than you</p>\n<hr />\n<p>You try to knock a creature to the ground. Attempt an <span data-pf2-action=\"trip\" data-pf2-glyph=\"A\">Athletics</span> check against the target's Reflex DC.</p>\n<hr />\n<p><strong>Critical Success</strong> The target falls and lands @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone} and takes @Damage[1d6[bludgeoning]] damage.</p>\n<p><strong>Success</strong> The target falls and lands prone.</p>\n<p><strong>Critical Failure</strong> You lose your balance and fall and land prone.</p>"
+                    "description": "<p><strong>Requirements</strong> You have at least one hand free. Your target can't be more than one size larger than you</p>\n<hr />\n<p>You try to knock a creature to the ground. Attempt an [[/act trip]]{Athletics} check against the target's Reflex DC.</p>\n<hr />\n<p><strong>Critical Success</strong> The target falls and lands @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone} and takes @Damage[1d6[bludgeoning]] damage.</p>\n<p><strong>Success</strong> The target falls and lands prone.</p>\n<p><strong>Critical Failure</strong> You lose your balance and fall and land prone.</p>"
                 },
                 "action->Grab": {
                     "name": "Grab"
@@ -4847,7 +4847,7 @@
             "items": {
                 "action->Slam Shut": {
                     "name": "Slam Shut",
-                    "description": "<p><strong>Trigger</strong> The door is opened more than halfway</p>\n<hr />\n<p><strong>Effect</strong> The door slams shut and deals @Damage[3d8[bludgeoning]] damage to any creature in the way (@Check[reflex|dc:17|basic]). On a critical failure, the creature is also @UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{Restrained} by the closed door until it @UUID[Compendium.pf2e.actionspf2e.Item.SkZAQRkLLkmBQNB9]{Escapes} (DC 17)</p>"
+                    "description": "<p><strong>Trigger</strong> The door is opened more than halfway</p>\n<hr />\n<p><strong>Effect</strong> The door slams shut and deals @Damage[3d8[bludgeoning]] damage to any creature in the way (@Check[reflex|dc:17|basic]). On a critical failure, the creature is also @UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{Restrained} by the closed door until it [[/act escape dc=17]]{Escapes}</p>"
                 }
             }
         },
@@ -5759,7 +5759,7 @@
                 },
                 "action->Bonds of Iron": {
                     "name": "Bonds of Iron",
-                    "description": "<p><strong>Frequency</strong> once per day</p>\n<hr />\n<p><strong>Effect</strong> Taviah can cause a cage built of cold-iron fingernails to spring from nothingness around a target at a range of up to 30 feet, attempting an Athletics check to [[/act grapple]] against the target's Fortitude DC. If the target has a weakness to cold iron, Taviah gains a +2 circumstance bonus to this check. Unlike a normal Grapple, Taviah doesn't need to be within reach and can move as she pleases, and a successful attempt lasts until the creature [[/act escape dc=29]]{Escapes} (DC 29), causing the cage to crumble into rust. Any creature can attempt to destroy the cage by attacking it; it has an AC of 19, Hardness 10, and 40 Hit Points.</p>"
+                    "description": "<p><strong>Frequency</strong> once per day</p>\n<hr />\n<p><strong>Effect</strong> Taviah can cause a cage built of cold-iron fingernails to spring from nothingness around a target at a range of up to 30 feet, attempting an Athletics check to [[/act grapple]] against the target's Fortitude DC. If the target has a weakness to cold iron, Taviah gains a +2 circumstance bonus to this check. Unlike a normal Grapple, Taviah doesn't need to be within reach and can move as she pleases, and a successful attempt lasts until the creature [[/act escape dc=29]]{Escapes}, causing the cage to crumble into rust. Any creature can attempt to destroy the cage by attacking it; it has an AC of 19, Hardness 10, and 40 Hit Points.</p>"
                 },
                 "action->Drain Thoughts": {
                     "name": "Drain Thoughts",

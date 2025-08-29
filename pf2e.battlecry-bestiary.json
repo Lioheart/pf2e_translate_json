@@ -973,7 +973,7 @@
                 },
                 "action->Frightful Presence": {
                     "name": "Frightful Presence",
-                    "description": "<p>60 feet @Check[will|dc:]</p><hr /><p>@Localize[PF2E.NPC.Abilities.Glossary.FrightfulPresence]</p>"
+                    "description": "<p>60 feet @Check[will|dc:37]</p><hr /><p>@Localize[PF2E.NPC.Abilities.Glossary.FrightfulPresence]</p>"
                 },
                 "action->Mass Rejuvenation": {
                     "name": "Mass Rejuvenation",
@@ -1152,7 +1152,7 @@
                 },
                 "action->Slime Barrage": {
                     "name": "Slime Barrage",
-                    "description": "<p>The omoxes hurl balls of heavy slime in a @Template[type:burst|distance:10] within 30 feet. All creatures in the area take @Damage[4d6[bludgeoning],2d6[acid]|options:area-damage]{4d6 bludgeoning damage and 2d6 acid damage} (@Check[reflex|dc:35|basic|options:area-effect] save). A creature that fails the save is mired in the slime, taking a \u201310-foot circumstance penalty to its Speeds for 1 minute or until it Escapes ([[/act escape dc=38]]{DC 38}); on a critical failure, the creature is also @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 1} for the same duration. When the slime pool is reduced to 2 segments, the area decreases to a @Template[type:burst|distance:5].</p>"
+                    "description": "<p>The omoxes hurl balls of heavy slime in a @Template[type:burst|distance:10] within 30 feet. All creatures in the area take @Damage[4d6[bludgeoning],2d6[acid]|options:area-damage]{4d6 bludgeoning damage and 2d6 acid damage} (@Check[reflex|dc:35|basic|options:area-effect] save). A creature that fails the save is mired in the slime, taking a \u201310-foot circumstance penalty to its Speeds for 1 minute or until it [[/act escape dc=38]]{Escapes}; on a critical failure, the creature is also @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 1} for the same duration. When the slime pool is reduced to 2 segments, the area decreases to a @Template[type:burst|distance:5].</p>"
                 },
                 "action->Smothering Grasp": {
                     "name": "Smothering Grasp",
@@ -1842,7 +1842,7 @@
                 },
                 "action->Trample": {
                     "name": "Trample",
-                    "description": "<p>[Size], [Listed Strike], @Check[reflex|dc:|basic]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Trample]</p>"
+                    "description": "<p>Large or smaller, @Damage[(2d6+2)[bludgeoning]], @Check[reflex|dc:30|basic]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Trample]</p>"
                 },
                 "lore->Dinosaur Lore": {
                     "name": "Dinosaur Lore"
@@ -1872,7 +1872,7 @@
                 },
                 "action->Mucus Deluge": {
                     "name": "Mucus Deluge",
-                    "description": "<p>The horde spits a volley of larva-infested mucus as a @Template[type:burst|distance:10] within 30 feet. Each creature in the area must succeed at a @Check[reflex|dc:27|options:area-effect,inflicts:immobilized] save or be stuck to the nearest surface, @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Immobilized} until they @UUID[Compendium.pf2e.actionspf2e.Item.SkZAQRkLLkmBQNB9]{Escape} ([[/act escape dc=30]]{DC 30}). Any creature so immobilized is exposed to zecui larvae at the end of each of its turns. When the zecui horde is reduced to 2 segments, this area decreases to a @Template[type:burst|distance:5].</p>"
+                    "description": "<p>The horde spits a volley of larva-infested mucus as a @Template[type:burst|distance:10] within 30 feet. Each creature in the area must succeed at a @Check[reflex|dc:27|options:area-effect,inflicts:immobilized] save or be stuck to the nearest surface, @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Immobilized} until they [[/act escape dc=30]]. Any creature so immobilized is exposed to zecui larvae at the end of each of its turns. When the zecui horde is reduced to 2 segments, this area decreases to a @Template[type:burst|distance:5].</p>"
                 },
                 "action->Subterranean Ambush": {
                     "name": "Subterranean Ambush",
