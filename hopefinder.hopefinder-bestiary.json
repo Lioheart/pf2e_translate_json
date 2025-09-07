@@ -1,470 +1,1023 @@
 {
     "label": "Bestiary",
     "entries": {
-        "+4 Item Bonus On Saving Throws Against Acid, Fire, Infections, Poison, And Smoke": {
-            "name": "+4 Item Bonus On Saving Throws Against Acid, Fire, Infections, Poison, And Smoke"
-        },
-        "Acidic Spray": {
-            "name": "Acidic Spray"
-        },
-        "Ambush": {
-            "name": "Ambush"
-        },
-        "Ankle Bite": {
-            "name": "Ankle Bite"
-        },
         "Armored": {
-            "name": "Armored"
-        },
-        "Arrows": {
-            "name": "Arrows"
-        },
-        "Bandages": {
-            "name": "Bandages"
-        },
-        "Baseball Bat": {
-            "name": "Baseball Bat"
+            "name": "Armored",
+            "items": {
+                "action->Z-Plague": {
+                    "name": "Z-Plague",
+                    "description": "<p>@Check[type:fortitude|dc:16|traits:secret] The armored transmits the Z Plague through its jaws and only on a critical hit.</p>\n<hr />\n<p>Those who survived the initial zombie outbreak that brought the Fall of civilization did so through a combination of precaution and a bit of genetic luck. That said, no one is fully immune. Even those who manage to get a dose of the coveted \"Z-Noc\" inoculation gain only a resistance to the infection while still in stage 1.</p>\n<p>If you are exposed to the Z-Plague (technically called Zynocol Amebic Encephalitis), the narrator will attempt a secret Fortitude save. If you fail this saving throw, you contract the first stage of the disease. If you critically fail, you contract the disease and lose 1 HOPE the next time you rest.</p>\n<p><strong>Stage 1</strong>: You lose 1 HOPE each day, becoming more and more morose. You cannot gain HOPE. Others around you can ask for @Compendium[pf2e.actionspf2e.Sense Motive]{Sense Motive} checks using Perception to notice something is amiss. At the end of each day, attempt a Fortitude saving throw against the original DC. If you succeed at 2 saves on consecutive days or critically succeed a save, you manage to shake off the infection and stop losing Hope. If you run out of Hope and are required to lose another you progress to Stage 2.</p>\n<p><strong>Stage 2</strong>: You become @Compendium[pf2e.conditionitems.Stupefied]{Stupefied 1} and the narrator secretly rolls a d20 to set the duration in hours. At the end of that duration, your stupefied value increases by 1 and the narrator rolls to set the duration again. When your stupefied value is greater than all three of your mental ability modifiers combined (Int, Wis, Cha), you progress to stage 3. There is no known way to save anyone who has reached Stage 2. Infected people in Stage 2 are contagious and they shed parasites through coughing and other body fluids. Anyone who spends more than 1 minute within 10 feet of a contagious individual must attempt a Fortitude save (at the same DC as the infected person) to avoid contracting the plague.</p>\n<p><strong>Stage 3</strong>: You fall @Compendium[pf2e.conditionitems.Unconscious]{Unconscious} and lose [[/r 1d4]] hit points per minute. When your hit points reach 0, you die and rise as a zombie within [[/r 1d10 #Minutes]]{1d10 minutes}.</p>"
+                },
+                "action->Zombie Immuinities": {
+                    "name": "Zombie Immuinities",
+                    "description": "<p>As dead things, zombies are immune to a number of things that affect the living. Unless otherwise noted, zombies are immune to disease, mental effects, poison, and anything that would render them @Compendium[pf2e.conditionitems.Unconscious]{Unconscious}. Zombies do not take bruises nor do they need to eat or drink (although some gain abilities if they have recently consumed living flesh). Zombies are destroyed immediately upon being reduce to 0 Hit Points.</p>"
+                },
+                "action->Block": {
+                    "name": "Block",
+                    "description": "<p><strong>Trigger</strong> An adjacent creature hits the armored with a melee Strike</p>\n<hr />\n<p><strong>Effect</strong> The armored's resistance against the attack is doubled. Then permanently reduce its resistance by 1.</p>"
+                },
+                "melee->Jaws": {
+                    "name": "Jaws"
+                },
+                "melee->Fist": {
+                    "name": "Fist"
+                },
+                "action->Double Fisted Smash": {
+                    "name": "Double Fisted Smash",
+                    "description": "<p>The armored makes a terrifying two-fisted overhand smash attack. The armored makes a fist Strike that deals one extra die of damage (2d6+3) and the target must attempt a @Check[type:reflex|dc:17] save, falling @Compendium[pf2e.conditionitems.Prone]{Prone} if it fails. This counts as two attacks for the multiple attack penalty.</p>"
+                },
+                "armor->Light Patchwork": {
+                    "name": "Light Patchwork",
+                    "description": "<p><strong>Resist</strong> 3 All</p>\n<p><strong>Break</strong> 10</p>"
+                }
+            }
         },
         "Bear (Black)": {
-            "name": "Bear (Black)"
+            "name": "Bear (Black)",
+            "items": {
+                "action->Scent (Imprecise) 30 feet": {
+                    "name": "Scent (Imprecise) 30 feet"
+                },
+                "melee->Jaws": {
+                    "name": "Jaws"
+                },
+                "action->Grab": {
+                    "name": "Grab"
+                },
+                "melee->Claw": {
+                    "name": "Claw"
+                },
+                "action->Maul": {
+                    "name": "Maul",
+                    "description": "<p>The brown bear gains a +2 circumstance bonus to damage rolls against creatures it has @Compendium[pf2e.conditionitems.Grabbed]{Grabbed}</p>"
+                }
+            }
         },
         "Bear (Brown)": {
-            "name": "Bear (Brown)"
-        },
-        "Beer": {
-            "name": "Beer"
+            "name": "Bear (Brown)",
+            "items": {
+                "action->Scent (Imprecise) 30 feet": {
+                    "name": "Scent (Imprecise) 30 feet"
+                },
+                "melee->Jaws": {
+                    "name": "Jaws"
+                },
+                "action->Grab": {
+                    "name": "Grab"
+                },
+                "melee->Claw": {
+                    "name": "Claw"
+                },
+                "action->Maul": {
+                    "name": "Maul",
+                    "description": "<p>The brown bear gains a +2 circumstance bonus to damage rolls against creatures it has @Compendium[pf2e.conditionitems.Grabbed]{Grabbed}</p>"
+                },
+                "action->Demolish": {
+                    "name": "Demolish",
+                    "description": "<p>The brown bear is particularly effective at tearing down barricades. The brown bear deals twice as many dings when it @Compendium[hopefinder.actions.EAkekNb9khxY2Gir]{Batters} an object.</p>"
+                },
+                "action->Rush": {
+                    "name": "Rush",
+                    "description": "<p>The brown bear Strides and makes a Strike at the end of that movement. During the Strike, the brown bear gains a +10-foot circumstance bonus to its Speed.</p>"
+                }
+            }
         },
         "Big Ben": {
             "name": "Big Ben",
-            "blurb": "Zombie bear"
+            "blurb": "Zombie bear",
+            "items": {
+                "action->Z-Plague": {
+                    "name": "Z-Plague",
+                    "description": "<p>@Check[type:fortitude|dc:16|traits:secret] The armored transmits the Z Plague through its jaws and only on a critical hit.</p>\n<hr />\n<p>Those who survived the initial zombie outbreak that brought the Fall of civilization did so through a combination of precaution and a bit of genetic luck. That said, no one is fully immune. Even those who manage to get a dose of the coveted \"Z-Noc\" inoculation gain only a resistance to the infection while still in stage 1.</p>\n<p>If you are exposed to the Z-Plague (technically called Zynocol Amebic Encephalitis), the narrator will attempt a secret Fortitude save. If you fail this saving throw, you contract the first stage of the disease. If you critically fail, you contract the disease and lose 1 HOPE the next time you rest.</p>\n<p><strong>Stage 1</strong>: You lose 1 HOPE each day, becoming more and more morose. You cannot gain HOPE. Others around you can ask for @Compendium[pf2e.actionspf2e.Sense Motive]{Sense Motive} checks using Perception to notice something is amiss. At the end of each day, attempt a Fortitude saving throw against the original DC. If you succeed at 2 saves on consecutive days or critically succeed a save, you manage to shake off the infection and stop losing Hope. If you run out of Hope and are required to lose another you progress to Stage 2.</p>\n<p><strong>Stage 2</strong>: You become @Compendium[pf2e.conditionitems.Stupefied]{Stupefied 1} and the narrator secretly rolls a d20 to set the duration in hours. At the end of that duration, your stupefied value increases by 1 and the narrator rolls to set the duration again. When your stupefied value is greater than all three of your mental ability modifiers combined (Int, Wis, Cha), you progress to stage 3. There is no known way to save anyone who has reached Stage 2. Infected people in Stage 2 are contagious and they shed parasites through coughing and other body fluids. Anyone who spends more than 1 minute within 10 feet of a contagious individual must attempt a Fortitude save (at the same DC as the infected person) to avoid contracting the plague.</p>\n<p><strong>Stage 3</strong>: You fall @Compendium[pf2e.conditionitems.Unconscious]{Unconscious} and lose [[/r 1d4]] hit points per minute. When your hit points reach 0, you die and rise as a zombie within [[/r 1d10 #Minutes]]{1d10 minutes}.</p>"
+                },
+                "action->Zombie Immuinities": {
+                    "name": "Zombie Immuinities",
+                    "description": "<p>As dead things, zombies are immune to a number of things that affect the living. Unless otherwise noted, zombies are immune to disease, mental effects, poison, and anything that would render them @Compendium[pf2e.conditionitems.Unconscious]{Unconscious}. Zombies do not take bruises nor do they need to eat or drink (although some gain abilities if they have recently consumed living flesh). Zombies are destroyed immediately upon being reduce to 0 Hit Points.</p>"
+                },
+                "melee->Jaws": {
+                    "name": "Jaws"
+                },
+                "melee->Claw": {
+                    "name": "Claw"
+                },
+                "action->Grab": {
+                    "name": "Grab"
+                },
+                "action->Destroy": {
+                    "name": "Destroy",
+                    "description": "<p>Big Ben can rip apart barricades and obstacles. The zombie bear deals three times as many dings when it @Compendium[hopefinder.actions.EAkekNb9khxY2Gir]{Batters} an object.</p>"
+                },
+                "action->Maul": {
+                    "name": "Maul",
+                    "description": "<p>Big Ben gains a +4 circumstance bonus to damage rolls against creatures it has @Compendium[pf2e.conditionitems.Grabbed]{Grabbed}</p>"
+                },
+                "action->Rush": {
+                    "name": "Rush",
+                    "description": "<p>Big Ben Strides and makes a Strike at the end of that movement. During the Strike, Big Ben gains a +10-foot circumstance bonus to its Speed.</p>"
+                },
+                "action->Terrifying Growl": {
+                    "name": "Terrifying Growl",
+                    "description": "<p>Big Ben unleashes a terrifying growl, attempting an Intimidation check to @Compendium[pf2e.actionspf2e.2u915NdUyQan6uKF]{Demoralize} all living creatures within 60 feet. It only rolls once and applies that result to all targets. After resolving this check, all targets are immune to further terrifying growls for 24 hours.</p>"
+                }
+            }
         },
         "Big Boss": {
-            "name": "Big Boss"
-        },
-        "Biker Gear": {
-            "name": "Biker Gear"
+            "name": "Big Boss",
+            "items": {
+                "weapon->Heavy Machinegun": {
+                    "name": "Heavy Machinegun",
+                    "description": "<p><strong>Break</strong> 6</p>"
+                },
+                "consumable->Bullets (Rifle)": {
+                    "name": "Bullets (Rifle)",
+                    "description": "<p>Standard round of ammunition. Deals the damage listed in the weapon's description.</p>\n<hr />\n<p><strong>Break</strong> 1</p>"
+                },
+                "armor->Police Body Armor": {
+                    "name": "Police Body Armor",
+                    "description": "<p><strong>Resist</strong> 7 All</p>\n<p><strong>Break</strong> 16</p>"
+                },
+                "weapon->Sledgehammer": {
+                    "name": "Sledgehammer",
+                    "description": "<p><strong>Break</strong> 6</p>"
+                },
+                "melee->Sledgehammer": {
+                    "name": "Sledgehammer"
+                },
+                "melee->Heavy Machinegun": {
+                    "name": "Heavy Machinegun"
+                },
+                "action->Demand Results": {
+                    "name": "Demand Results",
+                    "description": "<p>The big boss calls out to all their allies, demanding that they do better. All allies of the big boss within 60 feet gain a +1 status bonus to attack and damage rolls until the start of the big boss' next turn.</p>\n<p>@UUID[Compendium.hopefinder.effects.UYjgRxYbpQHmDShm]{Effect: Demand Results}</p>"
+                },
+                "action->Devastating Smash": {
+                    "name": "Devastating Smash",
+                    "description": "<p>The big boss makes a melee Strike that deals one extra die of damage (3d6+4 damage with the sledgehammer, for example). This attack deals 2 dings to the target's armor if it gets past its resistance and 2 bruises if it does not.</p>"
+                },
+                "action->Spray": {
+                    "name": "Spray",
+                    "description": "<p>The big boss sprays heavy machinegun fire in a @Template[type:cone|distance:30], dealing [[/r 2d8[piercing]]] to all targets in that area (@Check[type:reflex|dc:21|basic:true]). This attack uses 15 bullets.</p>"
+                }
+            }
         },
         "Bloated": {
-            "name": "Bloated"
-        },
-        "Block": {
-            "name": "Block"
-        },
-        "Body Slam": {
-            "name": "Body Slam"
-        },
-        "Bottle": {
-            "name": "Bottle"
-        },
-        "Branch": {
-            "name": "Branch"
+            "name": "Bloated",
+            "items": {
+                "action->Z-Plague": {
+                    "name": "Z-Plague",
+                    "description": "<p>@Check[type:fortitude|dc:16|traits:secret] The armored transmits the Z Plague through its jaws and only on a critical hit.</p>\n<hr />\n<p>Those who survived the initial zombie outbreak that brought the Fall of civilization did so through a combination of precaution and a bit of genetic luck. That said, no one is fully immune. Even those who manage to get a dose of the coveted \"Z-Noc\" inoculation gain only a resistance to the infection while still in stage 1.</p>\n<p>If you are exposed to the Z-Plague (technically called Zynocol Amebic Encephalitis), the narrator will attempt a secret Fortitude save. If you fail this saving throw, you contract the first stage of the disease. If you critically fail, you contract the disease and lose 1 HOPE the next time you rest.</p>\n<p><strong>Stage 1</strong>: You lose 1 HOPE each day, becoming more and more morose. You cannot gain HOPE. Others around you can ask for @Compendium[pf2e.actionspf2e.Sense Motive]{Sense Motive} checks using Perception to notice something is amiss. At the end of each day, attempt a Fortitude saving throw against the original DC. If you succeed at 2 saves on consecutive days or critically succeed a save, you manage to shake off the infection and stop losing Hope. If you run out of Hope and are required to lose another you progress to Stage 2.</p>\n<p><strong>Stage 2</strong>: You become @Compendium[pf2e.conditionitems.Stupefied]{Stupefied 1} and the narrator secretly rolls a d20 to set the duration in hours. At the end of that duration, your stupefied value increases by 1 and the narrator rolls to set the duration again. When your stupefied value is greater than all three of your mental ability modifiers combined (Int, Wis, Cha), you progress to stage 3. There is no known way to save anyone who has reached Stage 2. Infected people in Stage 2 are contagious and they shed parasites through coughing and other body fluids. Anyone who spends more than 1 minute within 10 feet of a contagious individual must attempt a Fortitude save (at the same DC as the infected person) to avoid contracting the plague.</p>\n<p><strong>Stage 3</strong>: You fall @Compendium[pf2e.conditionitems.Unconscious]{Unconscious} and lose [[/r 1d4]] hit points per minute. When your hit points reach 0, you die and rise as a zombie within [[/r 1d10 #Minutes]]{1d10 minutes}.</p>"
+                },
+                "action->Zombie Immuinities": {
+                    "name": "Zombie Immuinities",
+                    "description": "<p>As dead things, zombies are immune to a number of things that affect the living. Unless otherwise noted, zombies are immune to disease, mental effects, poison, and anything that would render them @Compendium[pf2e.conditionitems.Unconscious]{Unconscious}. Zombies do not take bruises nor do they need to eat or drink (although some gain abilities if they have recently consumed living flesh). Zombies are destroyed immediately upon being reduce to 0 Hit Points.</p>"
+                },
+                "melee->Fist": {
+                    "name": "Fist"
+                },
+                "action->Slow": {
+                    "name": "Slow",
+                    "description": "<p>A bloated only takes 2 actions each round and cannot take reactions.</p>"
+                },
+                "action->Death Burst": {
+                    "name": "Death Burst",
+                    "description": "<p>When the bloated dies, its body bursts open, spraying all adjacent creatures, dealing [[/r 1d6[acid]]] (basic @Check[type:reflex|dc:16]). If its death also causes a gore spray, the target of the spray is immune to this effect. Zombies are immune to this damage.</p>"
+                },
+                "action->Gore Spray": {
+                    "name": "Gore Spray",
+                    "description": "<p><strong>Trigger</strong> An adjacent creature critically hits the bloated with a Strike that deals slashing damage</p>\n<hr />\n<p><strong>Effect</strong> The bloated sprays viscera at the attacker, dealing [[/r 2d6[acid]]] (basic @Check[type:reflex|dc:16]).</p>"
+                }
+            }
         },
         "Brood Mother": {
             "name": "Brood Mother",
-            "blurb": "Zombie pig"
-        },
-        "Bullet Proof Vest": {
-            "name": "Bullet Proof Vest"
-        },
-        "Bullets (Pistol)": {
-            "name": "Bullets (Pistol)"
-        },
-        "Bullets (Rifle)": {
-            "name": "Bullets (Rifle)"
-        },
-        "Bullets (Shotgun)": {
-            "name": "Bullets (Shotgun)"
-        },
-        "Burning Branch": {
-            "name": "Burning Branch"
-        },
-        "Canned Goods (Expired)": {
-            "name": "Canned Goods (Expired)"
-        },
-        "Cherenkov Glow": {
-            "name": "Cherenkov Glow"
-        },
-        "Claw": {
-            "name": "Claw"
-        },
-        "Climbing Kit": {
-            "name": "Climbing Kit"
-        },
-        "Clothes (Winter)": {
-            "name": "Clothes (Winter)"
-        },
-        "Clouded Mind": {
-            "name": "Clouded Mind"
-        },
-        "Command the Dead": {
-            "name": "Command the Dead"
-        },
-        "Compound Bow": {
-            "name": "Compound Bow"
-        },
-        "Computers": {
-            "name": "Computers"
-        },
-        "Consume": {
-            "name": "Consume"
+            "blurb": "Zombie pig",
+            "items": {
+                "action->Z-Plague": {
+                    "name": "Z-Plague",
+                    "description": "<p>@Check[type:fortitude|dc:16|traits:secret] The armored transmits the Z Plague through its jaws and only on a critical hit.</p>\n<hr />\n<p>Those who survived the initial zombie outbreak that brought the Fall of civilization did so through a combination of precaution and a bit of genetic luck. That said, no one is fully immune. Even those who manage to get a dose of the coveted \"Z-Noc\" inoculation gain only a resistance to the infection while still in stage 1.</p>\n<p>If you are exposed to the Z-Plague (technically called Zynocol Amebic Encephalitis), the narrator will attempt a secret Fortitude save. If you fail this saving throw, you contract the first stage of the disease. If you critically fail, you contract the disease and lose 1 HOPE the next time you rest.</p>\n<p><strong>Stage 1</strong>: You lose 1 HOPE each day, becoming more and more morose. You cannot gain HOPE. Others around you can ask for @Compendium[pf2e.actionspf2e.Sense Motive]{Sense Motive} checks using Perception to notice something is amiss. At the end of each day, attempt a Fortitude saving throw against the original DC. If you succeed at 2 saves on consecutive days or critically succeed a save, you manage to shake off the infection and stop losing Hope. If you run out of Hope and are required to lose another you progress to Stage 2.</p>\n<p><strong>Stage 2</strong>: You become @Compendium[pf2e.conditionitems.Stupefied]{Stupefied 1} and the narrator secretly rolls a d20 to set the duration in hours. At the end of that duration, your stupefied value increases by 1 and the narrator rolls to set the duration again. When your stupefied value is greater than all three of your mental ability modifiers combined (Int, Wis, Cha), you progress to stage 3. There is no known way to save anyone who has reached Stage 2. Infected people in Stage 2 are contagious and they shed parasites through coughing and other body fluids. Anyone who spends more than 1 minute within 10 feet of a contagious individual must attempt a Fortitude save (at the same DC as the infected person) to avoid contracting the plague.</p>\n<p><strong>Stage 3</strong>: You fall @Compendium[pf2e.conditionitems.Unconscious]{Unconscious} and lose [[/r 1d4]] hit points per minute. When your hit points reach 0, you die and rise as a zombie within [[/r 1d10 #Minutes]]{1d10 minutes}.</p>"
+                },
+                "action->Zombie Immuinities": {
+                    "name": "Zombie Immuinities",
+                    "description": "<p>As dead things, zombies are immune to a number of things that affect the living. Unless otherwise noted, zombies are immune to disease, mental effects, poison, and anything that would render them @Compendium[pf2e.conditionitems.Unconscious]{Unconscious}. Zombies do not take bruises nor do they need to eat or drink (although some gain abilities if they have recently consumed living flesh). Zombies are destroyed immediately upon being reduce to 0 Hit Points.</p>"
+                },
+                "melee->Tusk": {
+                    "name": "Tusk"
+                },
+                "action->Rage": {
+                    "name": "Rage",
+                    "description": "<p><strong>Requirements</strong> A @UUID[Compendium.hopefinder.hopefinder-bestiary.A0ss4E2gULizby7E]{Dead Hog} was slain within 60 feet during the previous round.</p>\n<hr />\n<p><strong>Effect</strong> The brood mother goes into a rage for 1 minute, gaining a +2 status bonus on attack and damage rolls, and a -2 status penalty to its AC.</p>\n<p>@Compendium[pf2e.feat-effects.z3uyCMBddrPK5umr]{Effect: Rage}</p>"
+                }
+            }
         },
         "Cougar": {
-            "name": "Cougar"
+            "name": "Cougar",
+            "items": {
+                "action->Scent": {
+                    "name": "Scent"
+                },
+                "melee->Jaws": {
+                    "name": "Jaws"
+                },
+                "melee->Claw": {
+                    "name": "Claw"
+                },
+                "action->Grab": {
+                    "name": "Grab"
+                },
+                "action->Pounce": {
+                    "name": "Pounce",
+                    "description": "<p>The cougar Strides and makes a Strike at the end of that movement. If the cougar began this action @Compendium[pf2e.conditionitems.Hidden]{Hidden}, it remains hidden until after this ability's Strike.</p>"
+                },
+                "action->Drag": {
+                    "name": "Drag",
+                    "description": "<p>Whenever the cougar takes a Step while grappling a creature, that creature moves with it.</p>"
+                },
+                "action->Sneak Attack": {
+                    "name": "Sneak Attack",
+                    "description": "<p>The cougar deals 1d6 extra precision damage to @Compendium[pf2e.conditionitems.Off-Guard]{Off-Guard} creatures.</p>"
+                }
+            }
         },
         "Crawler": {
             "name": "Crawler",
-            "speedsDetails": "crawling"
-        },
-        "Creepy Crawler": {
-            "name": "Creepy Crawler"
-        },
-        "Crowbar": {
-            "name": "Crowbar"
-        },
-        "Crude Bow": {
-            "name": "Crude Bow"
-        },
-        "Crude Pistol": {
-            "name": "Crude Pistol"
-        },
-        "Crude Spear": {
-            "name": "Crude Spear"
-        },
-        "Darkvision": {
-            "name": "Darkvision"
+            "items": {
+                "action->Z-Plague": {
+                    "name": "Z-Plague",
+                    "description": "<p>@Check[type:fortitude|dc:16|traits:secret] The armored transmits the Z Plague through its jaws and only on a critical hit.</p>\n<hr />\n<p>Those who survived the initial zombie outbreak that brought the Fall of civilization did so through a combination of precaution and a bit of genetic luck. That said, no one is fully immune. Even those who manage to get a dose of the coveted \"Z-Noc\" inoculation gain only a resistance to the infection while still in stage 1.</p>\n<p>If you are exposed to the Z-Plague (technically called Zynocol Amebic Encephalitis), the narrator will attempt a secret Fortitude save. If you fail this saving throw, you contract the first stage of the disease. If you critically fail, you contract the disease and lose 1 HOPE the next time you rest.</p>\n<p><strong>Stage 1</strong>: You lose 1 HOPE each day, becoming more and more morose. You cannot gain HOPE. Others around you can ask for @Compendium[pf2e.actionspf2e.Sense Motive]{Sense Motive} checks using Perception to notice something is amiss. At the end of each day, attempt a Fortitude saving throw against the original DC. If you succeed at 2 saves on consecutive days or critically succeed a save, you manage to shake off the infection and stop losing Hope. If you run out of Hope and are required to lose another you progress to Stage 2.</p>\n<p><strong>Stage 2</strong>: You become @Compendium[pf2e.conditionitems.Stupefied]{Stupefied 1} and the narrator secretly rolls a d20 to set the duration in hours. At the end of that duration, your stupefied value increases by 1 and the narrator rolls to set the duration again. When your stupefied value is greater than all three of your mental ability modifiers combined (Int, Wis, Cha), you progress to stage 3. There is no known way to save anyone who has reached Stage 2. Infected people in Stage 2 are contagious and they shed parasites through coughing and other body fluids. Anyone who spends more than 1 minute within 10 feet of a contagious individual must attempt a Fortitude save (at the same DC as the infected person) to avoid contracting the plague.</p>\n<p><strong>Stage 3</strong>: You fall @Compendium[pf2e.conditionitems.Unconscious]{Unconscious} and lose [[/r 1d4]] hit points per minute. When your hit points reach 0, you die and rise as a zombie within [[/r 1d10 #Minutes]]{1d10 minutes}.</p>"
+                },
+                "action->Zombie Immuinities": {
+                    "name": "Zombie Immuinities",
+                    "description": "<p>As dead things, zombies are immune to a number of things that affect the living. Unless otherwise noted, zombies are immune to disease, mental effects, poison, and anything that would render them @Compendium[pf2e.conditionitems.Unconscious]{Unconscious}. Zombies do not take bruises nor do they need to eat or drink (although some gain abilities if they have recently consumed living flesh). Zombies are destroyed immediately upon being reduce to 0 Hit Points.</p>"
+                },
+                "melee->Fist": {
+                    "name": "Fist"
+                },
+                "action->Grab": {
+                    "name": "Grab"
+                },
+                "melee->Ankle Bite": {
+                    "name": "Ankle Bite",
+                    "description": "<p><strong>Requirements</strong> The crawler has a creature @Compendium[pf2e.conditionitems.Grabbed]{Grabbed} or @Compendium[pf2e.conditionitems.Restrained]{Restrained}.</p>"
+                },
+                "action->Creepy Crawler": {
+                    "name": "Creepy Crawler",
+                    "description": "<p>A crawler does not trigger reactions from crawling on the ground. It automatically fails all saving throws to avoid setting off traps on the ground.</p>"
+                },
+                "action->Low Profile": {
+                    "name": "Low Profile",
+                    "description": "<p>The crawler receives a +4 circumstance bonus to AC against ranged attacks that are made from more than 10 feet away.</p>"
+                },
+                "action->Slow": {
+                    "name": "Slow",
+                    "description": "<p>A crawler only takes 2 actions each round and cannot take reactions.</p>"
+                }
+            }
         },
         "Dead Hog": {
             "name": "Dead Hog",
-            "blurb": "Zombie pig"
-        },
-        "Death Burst": {
-            "name": "Death Burst"
-        },
-        "Demand Results": {
-            "name": "Demand Results"
-        },
-        "Demolish": {
-            "name": "Demolish"
-        },
-        "Destroy": {
-            "name": "Destroy"
-        },
-        "Devastating Smash": {
-            "name": "Devastating Smash"
-        },
-        "Double Fisted Smash": {
-            "name": "Double Fisted Smash"
-        },
-        "Drag": {
-            "name": "Drag"
-        },
-        "Drive-By": {
-            "name": "Drive-By"
-        },
-        "Driving": {
-            "name": "Driving"
-        },
-        "Egg": {
-            "name": "Egg"
-        },
-        "Fist": {
-            "name": "Fist"
-        },
-        "Fluid Draw": {
-            "name": "Fluid Draw"
-        },
-        "Gnaw": {
-            "name": "Gnaw"
-        },
-        "Golf Club": {
-            "name": "Golf Club"
-        },
-        "Gore Spray": {
-            "name": "Gore Spray"
-        },
-        "Grab": {
-            "name": "Grab"
-        },
-        "Groan": {
-            "name": "Groan"
-        },
-        "Hangry": {
-            "name": "Hangry"
-        },
-        "Heavy Machinegun": {
-            "name": "Heavy Machinegun"
-        },
-        "Hog Charge": {
-            "name": "Hog Charge"
-        },
-        "Hop": {
-            "name": "Hop"
-        },
-        "Horrid Kiss": {
-            "name": "Horrid Kiss"
-        },
-        "Howl": {
-            "name": "Howl"
+            "blurb": "Zombie pig",
+            "items": {
+                "action->Z-Plague": {
+                    "name": "Z-Plague",
+                    "description": "<p>@Check[type:fortitude|dc:16|traits:secret] The armored transmits the Z Plague through its jaws and only on a critical hit.</p>\n<hr />\n<p>Those who survived the initial zombie outbreak that brought the Fall of civilization did so through a combination of precaution and a bit of genetic luck. That said, no one is fully immune. Even those who manage to get a dose of the coveted \"Z-Noc\" inoculation gain only a resistance to the infection while still in stage 1.</p>\n<p>If you are exposed to the Z-Plague (technically called Zynocol Amebic Encephalitis), the narrator will attempt a secret Fortitude save. If you fail this saving throw, you contract the first stage of the disease. If you critically fail, you contract the disease and lose 1 HOPE the next time you rest.</p>\n<p><strong>Stage 1</strong>: You lose 1 HOPE each day, becoming more and more morose. You cannot gain HOPE. Others around you can ask for @Compendium[pf2e.actionspf2e.Sense Motive]{Sense Motive} checks using Perception to notice something is amiss. At the end of each day, attempt a Fortitude saving throw against the original DC. If you succeed at 2 saves on consecutive days or critically succeed a save, you manage to shake off the infection and stop losing Hope. If you run out of Hope and are required to lose another you progress to Stage 2.</p>\n<p><strong>Stage 2</strong>: You become @Compendium[pf2e.conditionitems.Stupefied]{Stupefied 1} and the narrator secretly rolls a d20 to set the duration in hours. At the end of that duration, your stupefied value increases by 1 and the narrator rolls to set the duration again. When your stupefied value is greater than all three of your mental ability modifiers combined (Int, Wis, Cha), you progress to stage 3. There is no known way to save anyone who has reached Stage 2. Infected people in Stage 2 are contagious and they shed parasites through coughing and other body fluids. Anyone who spends more than 1 minute within 10 feet of a contagious individual must attempt a Fortitude save (at the same DC as the infected person) to avoid contracting the plague.</p>\n<p><strong>Stage 3</strong>: You fall @Compendium[pf2e.conditionitems.Unconscious]{Unconscious} and lose [[/r 1d4]] hit points per minute. When your hit points reach 0, you die and rise as a zombie within [[/r 1d10 #Minutes]]{1d10 minutes}.</p>"
+                },
+                "action->Zombie Immuinities": {
+                    "name": "Zombie Immuinities",
+                    "description": "<p>As dead things, zombies are immune to a number of things that affect the living. Unless otherwise noted, zombies are immune to disease, mental effects, poison, and anything that would render them @Compendium[pf2e.conditionitems.Unconscious]{Unconscious}. Zombies do not take bruises nor do they need to eat or drink (although some gain abilities if they have recently consumed living flesh). Zombies are destroyed immediately upon being reduce to 0 Hit Points.</p>"
+                },
+                "melee->Tusk": {
+                    "name": "Tusk"
+                },
+                "action->Hog Charge": {
+                    "name": "Hog Charge",
+                    "description": "<p>The dead hog Strides twice and then makes a tusk Strike. As long as it moved at least 20 feet, it gains a +2 circumstance bonus to its attack roll.</p>"
+                }
+            }
         },
         "Howling Hound": {
             "name": "Howling Hound",
-            "blurb": "Zombie dog"
+            "blurb": "Zombie dog",
+            "items": {
+                "action->Z-Plague": {
+                    "name": "Z-Plague",
+                    "description": "<p>@Check[type:fortitude|dc:16|traits:secret] The armored transmits the Z Plague through its jaws and only on a critical hit.</p>\n<hr />\n<p>Those who survived the initial zombie outbreak that brought the Fall of civilization did so through a combination of precaution and a bit of genetic luck. That said, no one is fully immune. Even those who manage to get a dose of the coveted \"Z-Noc\" inoculation gain only a resistance to the infection while still in stage 1.</p>\n<p>If you are exposed to the Z-Plague (technically called Zynocol Amebic Encephalitis), the narrator will attempt a secret Fortitude save. If you fail this saving throw, you contract the first stage of the disease. If you critically fail, you contract the disease and lose 1 HOPE the next time you rest.</p>\n<p><strong>Stage 1</strong>: You lose 1 HOPE each day, becoming more and more morose. You cannot gain HOPE. Others around you can ask for @Compendium[pf2e.actionspf2e.Sense Motive]{Sense Motive} checks using Perception to notice something is amiss. At the end of each day, attempt a Fortitude saving throw against the original DC. If you succeed at 2 saves on consecutive days or critically succeed a save, you manage to shake off the infection and stop losing Hope. If you run out of Hope and are required to lose another you progress to Stage 2.</p>\n<p><strong>Stage 2</strong>: You become @Compendium[pf2e.conditionitems.Stupefied]{Stupefied 1} and the narrator secretly rolls a d20 to set the duration in hours. At the end of that duration, your stupefied value increases by 1 and the narrator rolls to set the duration again. When your stupefied value is greater than all three of your mental ability modifiers combined (Int, Wis, Cha), you progress to stage 3. There is no known way to save anyone who has reached Stage 2. Infected people in Stage 2 are contagious and they shed parasites through coughing and other body fluids. Anyone who spends more than 1 minute within 10 feet of a contagious individual must attempt a Fortitude save (at the same DC as the infected person) to avoid contracting the plague.</p>\n<p><strong>Stage 3</strong>: You fall @Compendium[pf2e.conditionitems.Unconscious]{Unconscious} and lose [[/r 1d4]] hit points per minute. When your hit points reach 0, you die and rise as a zombie within [[/r 1d10 #Minutes]]{1d10 minutes}.</p>"
+                },
+                "action->Zombie Immuinities": {
+                    "name": "Zombie Immuinities",
+                    "description": "<p>As dead things, zombies are immune to a number of things that affect the living. Unless otherwise noted, zombies are immune to disease, mental effects, poison, and anything that would render them @Compendium[pf2e.conditionitems.Unconscious]{Unconscious}. Zombies do not take bruises nor do they need to eat or drink (although some gain abilities if they have recently consumed living flesh). Zombies are destroyed immediately upon being reduce to 0 Hit Points.</p>"
+                },
+                "action->Grab": {
+                    "name": "Grab"
+                },
+                "action->Howl": {
+                    "name": "Howl",
+                    "description": "<p>All living creatures within 30 feet must attempt a @Check[type:will|dc:14] save. Those who fail are @Compendium[pf2e.conditionitems.Frightened]{Frightened 1} (@Compendium[pf2e.conditionitems.Frightened]{Frightened 2} on a critical failure). Other howling hounds in the area can howl as a reaction to enlarge the area. Targets are then immune to the howling howl for 24 hours.</p>"
+                },
+                "melee->Jaws": {
+                    "name": "Jaws"
+                }
+            }
         },
         "Hulk": {
-            "name": "Hulk"
-        },
-        "Immolate": {
-            "name": "Immolate"
+            "name": "Hulk",
+            "items": {
+                "action->Z-Plague": {
+                    "name": "Z-Plague",
+                    "description": "<p>@Check[type:fortitude|dc:16|traits:secret] The armored transmits the Z Plague through its jaws and only on a critical hit.</p>\n<hr />\n<p>Those who survived the initial zombie outbreak that brought the Fall of civilization did so through a combination of precaution and a bit of genetic luck. That said, no one is fully immune. Even those who manage to get a dose of the coveted \"Z-Noc\" inoculation gain only a resistance to the infection while still in stage 1.</p>\n<p>If you are exposed to the Z-Plague (technically called Zynocol Amebic Encephalitis), the narrator will attempt a secret Fortitude save. If you fail this saving throw, you contract the first stage of the disease. If you critically fail, you contract the disease and lose 1 HOPE the next time you rest.</p>\n<p><strong>Stage 1</strong>: You lose 1 HOPE each day, becoming more and more morose. You cannot gain HOPE. Others around you can ask for @Compendium[pf2e.actionspf2e.Sense Motive]{Sense Motive} checks using Perception to notice something is amiss. At the end of each day, attempt a Fortitude saving throw against the original DC. If you succeed at 2 saves on consecutive days or critically succeed a save, you manage to shake off the infection and stop losing Hope. If you run out of Hope and are required to lose another you progress to Stage 2.</p>\n<p><strong>Stage 2</strong>: You become @Compendium[pf2e.conditionitems.Stupefied]{Stupefied 1} and the narrator secretly rolls a d20 to set the duration in hours. At the end of that duration, your stupefied value increases by 1 and the narrator rolls to set the duration again. When your stupefied value is greater than all three of your mental ability modifiers combined (Int, Wis, Cha), you progress to stage 3. There is no known way to save anyone who has reached Stage 2. Infected people in Stage 2 are contagious and they shed parasites through coughing and other body fluids. Anyone who spends more than 1 minute within 10 feet of a contagious individual must attempt a Fortitude save (at the same DC as the infected person) to avoid contracting the plague.</p>\n<p><strong>Stage 3</strong>: You fall @Compendium[pf2e.conditionitems.Unconscious]{Unconscious} and lose [[/r 1d4]] hit points per minute. When your hit points reach 0, you die and rise as a zombie within [[/r 1d10 #Minutes]]{1d10 minutes}.</p>"
+                },
+                "action->Zombie Immuinities": {
+                    "name": "Zombie Immuinities",
+                    "description": "<p>As dead things, zombies are immune to a number of things that affect the living. Unless otherwise noted, zombies are immune to disease, mental effects, poison, and anything that would render them @Compendium[pf2e.conditionitems.Unconscious]{Unconscious}. Zombies do not take bruises nor do they need to eat or drink (although some gain abilities if they have recently consumed living flesh). Zombies are destroyed immediately upon being reduce to 0 Hit Points.</p>"
+                },
+                "melee->Fist": {
+                    "name": "Fist"
+                },
+                "action->Grab": {
+                    "name": "Grab"
+                },
+                "action->Consume": {
+                    "name": "Consume",
+                    "description": "<p><strong>Requirements</strong> The hulk has a creature @Compendium[pf2e.conditionitems.Grabbed]{Grabbed} or @Compendium[pf2e.conditionitems.Restrained]{Restrained}.</p>\n<hr />\n<p><strong>Effect</strong> The hulk attempts to swallow a human whole by attempting an Athletics check against the grabbed or restrained target's Fortitude DC. If successful, the creature takes [[/r (2d6+7)[piercing]]], is exposed to the Z Plague, and is transferred to the Hulk's mouth. It can then attempt to swallow whole.</p>"
+                },
+                "action->Throw": {
+                    "name": "Throw",
+                    "description": "<p><strong>Requirements</strong> The hulk has a creature @Compendium[pf2e.conditionitems.Grabbed]{Grabbed} or @Compendium[pf2e.conditionitems.Restrained]{Restrained}.</p>\n<hr />\n<p><strong>Effect</strong> The hulk attempts an Athletics skill check against the target's Fortitude DC. If successful, the target is thrown 20 feet, landing @Compendium[pf2e.conditionitems.Prone]{Prone} and takes [[/r 3d6[bludgeoning]]] (30 feet on a critical success). If the target hits an object, it takes [[/r 1d6[bludgeoning]]]{1d6 additional bludgeoning} for every 5 feet it did not travel. A @Check[type:reflex|dc:24|basic:true] can reduce this damage.</p>"
+                },
+                "action->Zombie Vomit": {
+                    "name": "Zombie Vomit",
+                    "description": "<p>Creature's that die inside a zombie hulk become zombies one round later that the Hulk can vomit into an adjacent square. These are usually armored or runners. The new zombies start their turn @Compendium[pf2e.conditionitems.Prone]{Prone}.</p>"
+                },
+                "action->Swallow Whole": {
+                    "name": "Swallow Whole",
+                    "description": "<p>Medium, [[/r 3d6[acid]]] plus Z plague, Rupture 20</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.SwallowWhole]</p>"
+                },
+                "action->Obliterate": {
+                    "name": "Obliterate",
+                    "description": "<p>The hulk can tear through nearly anything in its path, dealing four times as many dings when it Batters an object.</p>"
+                }
+            }
         },
         "Infested": {
-            "name": "Infested"
-        },
-        "Jaws": {
-            "name": "Jaws"
-        },
-        "Katana": {
-            "name": "Katana"
+            "name": "Infested",
+            "items": {
+                "action->Z-Plague": {
+                    "name": "Z-Plague",
+                    "description": "<p>@Check[type:fortitude|dc:16|traits:secret] The armored transmits the Z Plague through its jaws and only on a critical hit.</p>\n<hr />\n<p>Those who survived the initial zombie outbreak that brought the Fall of civilization did so through a combination of precaution and a bit of genetic luck. That said, no one is fully immune. Even those who manage to get a dose of the coveted \"Z-Noc\" inoculation gain only a resistance to the infection while still in stage 1.</p>\n<p>If you are exposed to the Z-Plague (technically called Zynocol Amebic Encephalitis), the narrator will attempt a secret Fortitude save. If you fail this saving throw, you contract the first stage of the disease. If you critically fail, you contract the disease and lose 1 HOPE the next time you rest.</p>\n<p><strong>Stage 1</strong>: You lose 1 HOPE each day, becoming more and more morose. You cannot gain HOPE. Others around you can ask for @Compendium[pf2e.actionspf2e.Sense Motive]{Sense Motive} checks using Perception to notice something is amiss. At the end of each day, attempt a Fortitude saving throw against the original DC. If you succeed at 2 saves on consecutive days or critically succeed a save, you manage to shake off the infection and stop losing Hope. If you run out of Hope and are required to lose another you progress to Stage 2.</p>\n<p><strong>Stage 2</strong>: You become @Compendium[pf2e.conditionitems.Stupefied]{Stupefied 1} and the narrator secretly rolls a d20 to set the duration in hours. At the end of that duration, your stupefied value increases by 1 and the narrator rolls to set the duration again. When your stupefied value is greater than all three of your mental ability modifiers combined (Int, Wis, Cha), you progress to stage 3. There is no known way to save anyone who has reached Stage 2. Infected people in Stage 2 are contagious and they shed parasites through coughing and other body fluids. Anyone who spends more than 1 minute within 10 feet of a contagious individual must attempt a Fortitude save (at the same DC as the infected person) to avoid contracting the plague.</p>\n<p><strong>Stage 3</strong>: You fall @Compendium[pf2e.conditionitems.Unconscious]{Unconscious} and lose [[/r 1d4]] hit points per minute. When your hit points reach 0, you die and rise as a zombie within [[/r 1d10 #Minutes]]{1d10 minutes}.</p>"
+                },
+                "action->Zombie Immuinities": {
+                    "name": "Zombie Immuinities",
+                    "description": "<p>As dead things, zombies are immune to a number of things that affect the living. Unless otherwise noted, zombies are immune to disease, mental effects, poison, and anything that would render them @Compendium[pf2e.conditionitems.Unconscious]{Unconscious}. Zombies do not take bruises nor do they need to eat or drink (although some gain abilities if they have recently consumed living flesh). Zombies are destroyed immediately upon being reduce to 0 Hit Points.</p>"
+                },
+                "melee->Jaws": {
+                    "name": "Jaws"
+                },
+                "action->Grab": {
+                    "name": "Grab"
+                },
+                "melee->Fist": {
+                    "name": "Fist"
+                },
+                "action->Horrid Kiss": {
+                    "name": "Horrid Kiss",
+                    "description": "<p><strong>Requirements</strong> The infested has a creature @Compendium[pf2e.conditionitems.Grabbed]{Grabbed} or @Compendium[pf2e.conditionitems.Restrained]{Restrained}.</p>\n<hr />\n<p><strong>Effect</strong> The infested forces parasites into the grabbed or restrained creature's mouth. The infested attempts an Athletics check against the target's Reflex DC. If successful, the target is exposed to the Z Plague and their initial save is made at a -2 penalty.</p>"
+                },
+                "action->Spew Parasites": {
+                    "name": "Spew Parasites",
+                    "description": "<p>The infested unleashes a cone of parasites and stomach acid in a @Template[type:cone|distance:15]. Living creatures in this area take [[/r 3d6[acid]]] (@Check[type:reflex|dc:18|basic:true]). Those that fail this save are also exposed to the Z Plague. It can't use Spew Parasites again for [[/r 1d4 #rounds]]{1d4 rounds}.</p>"
+                }
+            }
         },
         "Katana Guy/Gal/Pal": {
-            "name": "Katana Guy/Gal/Pal"
-        },
-        "Kitchen Knife": {
-            "name": "Kitchen Knife"
-        },
-        "Knockdown": {
-            "name": "Knockdown"
-        },
-        "Lab Gear": {
-            "name": "Lab Gear"
-        },
-        "Leap": {
-            "name": "Leap"
+            "name": "Katana Guy/Gal/Pal",
+            "items": {
+                "lore->Computers": {
+                    "name": "Computers"
+                },
+                "consumable->Bandages": {
+                    "name": "Bandages",
+                    "description": "<p>Allows for the use of First Aid and @Compendium[pf2e.actionspf2e.1kGNdIIhuglAjIp9]{Treat Wounds}. Consumed on use.</p>\n<hr />\n<p><strong>Break</strong> 1</p>"
+                },
+                "equipment->Climbing Kit": {
+                    "name": "Climbing Kit",
+                    "description": "<p>Gives a +2 bonus on Athletic checks made to Climb.</p>\n<hr />\n<p><strong>Break</strong> 4</p>"
+                },
+                "weapon->Compound Bow": {
+                    "name": "Compound Bow",
+                    "description": "<p><strong>Break</strong> 6</p>"
+                },
+                "weapon->Katana": {
+                    "name": "Katana",
+                    "description": "<p><strong>Break</strong> 6</p>"
+                },
+                "armor->Sports Protection": {
+                    "name": "Sports Protection",
+                    "description": "<p><strong>Resist</strong> 5 All</p>\n<p><strong>Break</strong> 12</p>"
+                },
+                "consumable->Ration (Bar)": {
+                    "name": "Ration (Bar)",
+                    "description": "<p>Basic military ration bar. Counts as 1 food.</p>\n<hr />\n<p><strong>Break</strong> 1</p>"
+                },
+                "melee->Katana": {
+                    "name": "Katana"
+                },
+                "melee->Compound Bow": {
+                    "name": "Compound Bow"
+                },
+                "consumable->Arrows": {
+                    "name": "Arrows",
+                    "description": "<p><strong>Break</strong> 1</p>"
+                },
+                "action->Fluid Draw": {
+                    "name": "Fluid Draw",
+                    "description": "<p>The katana guy/gal/pal draws a melee weapon and uses it to make a melee Strike.</p>"
+                },
+                "action->Overhead Cut": {
+                    "name": "Overhead Cut",
+                    "description": "<p>The katana guy/gal/pal makes a melee Strike that deals one extra die of damage (2d10+4 damage with the katana, for example).</p>"
+                },
+                "action->Sneak Attack": {
+                    "name": "Sneak Attack",
+                    "description": "<p>The katana guy/gal/pal deals 1d6 extra precision damage to @Compendium[pf2e.conditionitems.Off-Guard]{Off-Guard} creatures.</p>"
+                }
+            }
         },
         "Leaper": {
-            "name": "Leaper"
-        },
-        "Light Patchwork": {
-            "name": "Light Patchwork"
-        },
-        "Lighter": {
-            "name": "Lighter"
-        },
-        "Liquor": {
-            "name": "Liquor"
-        },
-        "Low Profile": {
-            "name": "Low Profile"
-        },
-        "Low-Light Vision": {
-            "name": "Low-Light Vision"
-        },
-        "Machinery": {
-            "name": "Machinery"
-        },
-        "Mandibles": {
-            "name": "Mandibles"
-        },
-        "Maul": {
-            "name": "Maul"
-        },
-        "Menace": {
-            "name": "Menace"
-        },
-        "Military Helmet": {
-            "name": "Military Helmet"
-        },
-        "Molotov Cocktail": {
-            "name": "Molotov Cocktail",
-            "rules": {
-                "0": {
-                    "text": "Plus [[/r {1d6}[splash,fire]]]{1d6 Fire Splash} damage."
+            "name": "Leaper",
+            "items": {
+                "action->Z-Plague": {
+                    "name": "Z-Plague",
+                    "description": "<p>@Check[type:fortitude|dc:16|traits:secret] The armored transmits the Z Plague through its jaws and only on a critical hit.</p>\n<hr />\n<p>Those who survived the initial zombie outbreak that brought the Fall of civilization did so through a combination of precaution and a bit of genetic luck. That said, no one is fully immune. Even those who manage to get a dose of the coveted \"Z-Noc\" inoculation gain only a resistance to the infection while still in stage 1.</p>\n<p>If you are exposed to the Z-Plague (technically called Zynocol Amebic Encephalitis), the narrator will attempt a secret Fortitude save. If you fail this saving throw, you contract the first stage of the disease. If you critically fail, you contract the disease and lose 1 HOPE the next time you rest.</p>\n<p><strong>Stage 1</strong>: You lose 1 HOPE each day, becoming more and more morose. You cannot gain HOPE. Others around you can ask for @Compendium[pf2e.actionspf2e.Sense Motive]{Sense Motive} checks using Perception to notice something is amiss. At the end of each day, attempt a Fortitude saving throw against the original DC. If you succeed at 2 saves on consecutive days or critically succeed a save, you manage to shake off the infection and stop losing Hope. If you run out of Hope and are required to lose another you progress to Stage 2.</p>\n<p><strong>Stage 2</strong>: You become @Compendium[pf2e.conditionitems.Stupefied]{Stupefied 1} and the narrator secretly rolls a d20 to set the duration in hours. At the end of that duration, your stupefied value increases by 1 and the narrator rolls to set the duration again. When your stupefied value is greater than all three of your mental ability modifiers combined (Int, Wis, Cha), you progress to stage 3. There is no known way to save anyone who has reached Stage 2. Infected people in Stage 2 are contagious and they shed parasites through coughing and other body fluids. Anyone who spends more than 1 minute within 10 feet of a contagious individual must attempt a Fortitude save (at the same DC as the infected person) to avoid contracting the plague.</p>\n<p><strong>Stage 3</strong>: You fall @Compendium[pf2e.conditionitems.Unconscious]{Unconscious} and lose [[/r 1d4]] hit points per minute. When your hit points reach 0, you die and rise as a zombie within [[/r 1d10 #Minutes]]{1d10 minutes}.</p>"
+                },
+                "action->Zombie Immuinities": {
+                    "name": "Zombie Immuinities",
+                    "description": "<p>As dead things, zombies are immune to a number of things that affect the living. Unless otherwise noted, zombies are immune to disease, mental effects, poison, and anything that would render them @Compendium[pf2e.conditionitems.Unconscious]{Unconscious}. Zombies do not take bruises nor do they need to eat or drink (although some gain abilities if they have recently consumed living flesh). Zombies are destroyed immediately upon being reduce to 0 Hit Points.</p>"
+                },
+                "action->Hop": {
+                    "name": "Hop",
+                    "description": "<p><strong>Trigger</strong> An adjacent creature targets the leaper with a melee strike.</p>\n<hr />\n<p><strong>Effect</strong> The leaper gets a +2 circumstance bonus to AC against the triggering attack. If the attack misses, the leaper may Step to an adjacent space.</p>"
+                },
+                "melee->Jaws": {
+                    "name": "Jaws"
+                },
+                "action->Leap": {
+                    "name": "Leap",
+                    "description": "<p>The leaper attempts a @Compendium[pf2e.actionspf2e.2HJ4yuEFY1Cast4h]{High Jump} or a @Compendium[pf2e.actionspf2e.JUvAvruz7yRQXfz2]{Long Jump}, using Acrobatics. It does not need to move 10 feet before attempting these jumps and all DCs are reduced by 10.</p>"
+                },
+                "action->Spring and Attack": {
+                    "name": "Spring and Attack",
+                    "description": "<p>If the leaper's previous action was to jump using Acrobatics and its next action is a jaws attack, that attack gains a +2 circumstance bonus to the attack roll and damage roll.</p>"
                 }
             }
         },
         "Mutant": {
-            "name": "Mutant"
-        },
-        "Obliterate": {
-            "name": "Obliterate"
-        },
-        "Overhead Cut": {
-            "name": "Overhead Cut"
+            "name": "Mutant",
+            "items": {
+                "action->Z-Plague": {
+                    "name": "Z-Plague",
+                    "description": "<p>@Check[type:fortitude|dc:16|traits:secret] The armored transmits the Z Plague through its jaws and only on a critical hit.</p>\n<hr />\n<p>Those who survived the initial zombie outbreak that brought the Fall of civilization did so through a combination of precaution and a bit of genetic luck. That said, no one is fully immune. Even those who manage to get a dose of the coveted \"Z-Noc\" inoculation gain only a resistance to the infection while still in stage 1.</p>\n<p>If you are exposed to the Z-Plague (technically called Zynocol Amebic Encephalitis), the narrator will attempt a secret Fortitude save. If you fail this saving throw, you contract the first stage of the disease. If you critically fail, you contract the disease and lose 1 HOPE the next time you rest.</p>\n<p><strong>Stage 1</strong>: You lose 1 HOPE each day, becoming more and more morose. You cannot gain HOPE. Others around you can ask for @Compendium[pf2e.actionspf2e.Sense Motive]{Sense Motive} checks using Perception to notice something is amiss. At the end of each day, attempt a Fortitude saving throw against the original DC. If you succeed at 2 saves on consecutive days or critically succeed a save, you manage to shake off the infection and stop losing Hope. If you run out of Hope and are required to lose another you progress to Stage 2.</p>\n<p><strong>Stage 2</strong>: You become @Compendium[pf2e.conditionitems.Stupefied]{Stupefied 1} and the narrator secretly rolls a d20 to set the duration in hours. At the end of that duration, your stupefied value increases by 1 and the narrator rolls to set the duration again. When your stupefied value is greater than all three of your mental ability modifiers combined (Int, Wis, Cha), you progress to stage 3. There is no known way to save anyone who has reached Stage 2. Infected people in Stage 2 are contagious and they shed parasites through coughing and other body fluids. Anyone who spends more than 1 minute within 10 feet of a contagious individual must attempt a Fortitude save (at the same DC as the infected person) to avoid contracting the plague.</p>\n<p><strong>Stage 3</strong>: You fall @Compendium[pf2e.conditionitems.Unconscious]{Unconscious} and lose [[/r 1d4]] hit points per minute. When your hit points reach 0, you die and rise as a zombie within [[/r 1d10 #Minutes]]{1d10 minutes}.</p>"
+                },
+                "action->Zombie Immuinities": {
+                    "name": "Zombie Immuinities",
+                    "description": "<p>As dead things, zombies are immune to a number of things that affect the living. Unless otherwise noted, zombies are immune to disease, mental effects, poison, and anything that would render them @Compendium[pf2e.conditionitems.Unconscious]{Unconscious}. Zombies do not take bruises nor do they need to eat or drink (although some gain abilities if they have recently consumed living flesh). Zombies are destroyed immediately upon being reduce to 0 Hit Points.</p>"
+                },
+                "melee->Tentacle": {
+                    "name": "Tentacle"
+                },
+                "melee->Polyp": {
+                    "name": "Polyp"
+                },
+                "action->Grab": {
+                    "name": "Grab"
+                },
+                "action->Destroy": {
+                    "name": "Destroy",
+                    "description": "<p>The mutant can rip apart barricades and obstacles. The mutant deals three times as many dings when it @Compendium[hopefinder.actions.EAkekNb9khxY2Gir]{Batters} an object.</p>"
+                },
+                "action->Overrun": {
+                    "name": "Overrun",
+                    "description": "<p>The mutant charges through obstacles and foes, moving up to twice its speed in a straight line. It must attempt an Athletics check against each obstacle (using its Break DC) or creature (using its Fortitude DC). If it succeeds, the obstacle is broken or the creature is pushed aside (or knocked @Compendium[pf2e.conditionitems.Prone]{Prone} if no space outside the line is available). If it fails a check, it just before that obstacle or creature. Creatures pushed aside in this attack take [[/r (1d6+5)[bludgeoning]]] (@Check[type:reflex|dc:20|basic:true]).</p>"
+                },
+                "action->Swing Around": {
+                    "name": "Swing Around",
+                    "description": "<p>The mutant swings its tentacle is a wide arc, hitting all targets within 10 feet. The mutant makes a tentacle Strike against each target individually. This only counts as one attack for its multiple attack penalty and only after all the attacks are resolved. It cannot grab anyone after using this ability.</p>"
+                },
+                "melee->Gnaw": {
+                    "name": "Gnaw",
+                    "description": "<p><strong>Requirements</strong> The mutant has a creature @Compendium[pf2e.conditionitems.Grabbed]{Grabbed} or @Compendium[pf2e.conditionitems.Restrained]{Restrained}.</p>"
+                }
+            }
         },
         "Overmind": {
             "name": "Overmind",
-            "sensesDetails": "sense infected (60 feet)"
-        },
-        "Override": {
-            "name": "Override"
-        },
-        "Overrun": {
-            "name": "Overrun"
-        },
-        "Pack Coordination": {
-            "name": "Pack Coordination"
-        },
-        "Police Body Armor": {
-            "name": "Police Body Armor"
-        },
-        "Polyp": {
-            "name": "Polyp"
-        },
-        "Pounce": {
-            "name": "Pounce"
-        },
-        "Pry Open": {
-            "name": "Pry Open"
-        },
-        "Pump Shotgun": {
-            "name": "Pump Shotgun"
+            "items": {
+                "action->Z-Plague": {
+                    "name": "Z-Plague",
+                    "description": "<p>@Check[type:fortitude|dc:16|traits:secret] The armored transmits the Z Plague through its jaws and only on a critical hit.</p>\n<hr />\n<p>Those who survived the initial zombie outbreak that brought the Fall of civilization did so through a combination of precaution and a bit of genetic luck. That said, no one is fully immune. Even those who manage to get a dose of the coveted \"Z-Noc\" inoculation gain only a resistance to the infection while still in stage 1.</p>\n<p>If you are exposed to the Z-Plague (technically called Zynocol Amebic Encephalitis), the narrator will attempt a secret Fortitude save. If you fail this saving throw, you contract the first stage of the disease. If you critically fail, you contract the disease and lose 1 HOPE the next time you rest.</p>\n<p><strong>Stage 1</strong>: You lose 1 HOPE each day, becoming more and more morose. You cannot gain HOPE. Others around you can ask for @Compendium[pf2e.actionspf2e.Sense Motive]{Sense Motive} checks using Perception to notice something is amiss. At the end of each day, attempt a Fortitude saving throw against the original DC. If you succeed at 2 saves on consecutive days or critically succeed a save, you manage to shake off the infection and stop losing Hope. If you run out of Hope and are required to lose another you progress to Stage 2.</p>\n<p><strong>Stage 2</strong>: You become @Compendium[pf2e.conditionitems.Stupefied]{Stupefied 1} and the narrator secretly rolls a d20 to set the duration in hours. At the end of that duration, your stupefied value increases by 1 and the narrator rolls to set the duration again. When your stupefied value is greater than all three of your mental ability modifiers combined (Int, Wis, Cha), you progress to stage 3. There is no known way to save anyone who has reached Stage 2. Infected people in Stage 2 are contagious and they shed parasites through coughing and other body fluids. Anyone who spends more than 1 minute within 10 feet of a contagious individual must attempt a Fortitude save (at the same DC as the infected person) to avoid contracting the plague.</p>\n<p><strong>Stage 3</strong>: You fall @Compendium[pf2e.conditionitems.Unconscious]{Unconscious} and lose [[/r 1d4]] hit points per minute. When your hit points reach 0, you die and rise as a zombie within [[/r 1d10 #Minutes]]{1d10 minutes}.</p>"
+                },
+                "action->Zombie Immuinities": {
+                    "name": "Zombie Immuinities",
+                    "description": "<p>As dead things, zombies are immune to a number of things that affect the living. Unless otherwise noted, zombies are immune to disease, mental effects, poison, and anything that would render them @Compendium[pf2e.conditionitems.Unconscious]{Unconscious}. Zombies do not take bruises nor do they need to eat or drink (although some gain abilities if they have recently consumed living flesh). Zombies are destroyed immediately upon being reduce to 0 Hit Points.</p>"
+                },
+                "action->Sense Infected (Imprecise) 60 feet": {
+                    "name": "Sense Infected (Imprecise) 60 feet",
+                    "description": "<p>The overmind knows whether any creatures within 60 feet are infected with the Z Plague. It can detect these creatures as an imprecise sense if it cannot see them.</p>"
+                },
+                "action->Clouded Mind": {
+                    "name": "Clouded Mind",
+                    "description": "<p>@Template[type:emanation|distance:10] @Compendium[pf2e.bestiary-ability-glossary-srd.Aura]{Aura}</p>\n<p>A living creature that enters the area must attempt a @Check[type:will|dc:24] save. On a failure, the creature is @Compendium[pf2e.conditionitems.Stupefied]{Stupefied 1}, and on a critical failure, the creature is @Compendium[pf2e.conditionitems.Confused]{Confused} for 1 minute, but may attempt another save at the end of each of its turns to end the effect.</p>"
+                },
+                "action->Command the Dead": {
+                    "name": "Command the Dead",
+                    "description": "<p>The overmind can command any undead with 60 feet, causing them to act with tactics and intelligence not normally seen by the dead. They will avoid obstacles, move to get flanking attacks, and focus on vulnerable foes. The undead still act on their turn with their normal number of actions. The overmind can spend an action to specifically direct an undead in this radius to act in any way that the overmind desires.</p>"
+                },
+                "melee->Mandibles": {
+                    "name": "Mandibles"
+                },
+                "melee->Egg": {
+                    "name": "Egg"
+                },
+                "action->Acidic Spray": {
+                    "name": "Acidic Spray",
+                    "description": "<p>The overmind unleashes a @Template[type:line|distance:30] of acidic parasites. Living creatures in this area take [[/r 6d6[acid]]] (@Check[type:reflex|dc:22|basic:true]). Those that fail this save are also exposed to the Z Plague. It can't use Acidic Spray again for [[/br 1d4 #Acidic Spray Recharge]]{1d4 rounds}.</p>"
+                },
+                "action->Override": {
+                    "name": "Override",
+                    "description": "<p>The overmind reaches out to the parasite infecting a living creature within 60 feet, attempting to take control. The target must attempt a @Check[type:will|dc:24] save. On a success it is immune to this ability for 24 hours. On a failure, it is @Compendium[pf2e.conditionitems.Slowed]{Slowed 1} for 1 round. On a critical failure, it must take a simple action dictated by the overmind (as per the spell command) and it must also make another save against the Z Plague, as the parasites within them become empowered.</p>"
+                }
+            }
         },
         "Pyro": {
             "name": "Pyro",
-            "allSavesBonus": "+4 item bonus on saving throws against acid, fire, infections, poison, and smoke"
-        },
-        "R.O.U.S": {
-            "name": "R.O.U.S"
+            "items": {
+                "consumable->Beer": {
+                    "name": "Beer",
+                    "description": "<p>Counts as -1 Hydration. Drinking it removes 1 bruise. Can only benefit from this once per day.</p>\n<hr />\n<p><strong>Break</strong> 1</p>"
+                },
+                "weapon->Branch": {
+                    "name": "Branch",
+                    "description": "<p><strong>Break</strong> 2</p>"
+                },
+                "weapon->Crude Pistol": {
+                    "name": "Crude Pistol",
+                    "description": "<p><strong>Break</strong> 2</p>"
+                },
+                "consumable->Bullets (Pistol)": {
+                    "name": "Bullets (Pistol)",
+                    "description": "<p>Standard round of ammunition. Deals the damage listed in the weapon's description.</p>\n<hr />\n<p><strong>Break</strong> 1</p>"
+                },
+                "armor->Lab Gear": {
+                    "name": "Lab Gear",
+                    "description": "<p><strong>Resist</strong> 2 All</p>\n<p><strong>Break</strong> 10</p>"
+                },
+                "equipment->Lighter": {
+                    "name": "Lighter",
+                    "description": "<hr />\n<p><strong>Break</strong> 1</p>"
+                },
+                "weapon->Molotov Cocktail": {
+                    "name": "Molotov Cocktail",
+                    "description": "<p><strong>Break</strong> C</p>"
+                },
+                "melee->Branch": {
+                    "name": "Branch"
+                },
+                "melee->Crude Pistol": {
+                    "name": "Crude Pistol"
+                },
+                "melee->Molotov Cocktail": {
+                    "name": "Molotov Cocktail",
+                    "description": "<p>Plus [[/r 1d6[splash,fire]]]</p>"
+                },
+                "action->+4 Item Bonus On Saving Throws Against Acid, Fire, Infections, Poison, And Smoke": {
+                    "name": "+4 Item Bonus On Saving Throws Against Acid, Fire, Infections, Poison, And Smoke"
+                },
+                "action->Burning Branch": {
+                    "name": "Burning Branch",
+                    "description": "<p>Using a lighter, the pyro lights a branch on fire. For the next two rounds, any attacks with the burning branch that hit deal an additional [[/r 1d4[fire]]]. The branch takes 1 ding at the end of pyro's turn.</p>\n<p>@UUID[Compendium.hopefinder.effects.AIkvpZ8dxtrrlrJ3]{Effect: Burning Branch}</p>"
+                },
+                "action->Immolate": {
+                    "name": "Immolate",
+                    "description": "<p>If pyro takes a critical hit by a bludgeoning weapon, several of the bottles of flammable liquid strapped to their body burst. If they are wielding a burning branch or they take fire damage, these liquids ignite and the pyro takes [[/r 2d6[persistent,fire]]] @Compendium[pf2e.conditionitems.Persistent Damage]{Persistent fire Damage} and all of its melee attacks deal an additional [[/r 1d6[fire]]].</p>"
+                }
+            }
         },
         "Rad Zombie": {
-            "name": "Rad Zombie"
-        },
-        "Radiation Sickness": {
-            "name": "Radiation Sickness"
-        },
-        "Radioactive": {
-            "name": "Radioactive"
-        },
-        "Rage": {
-            "name": "Rage"
+            "name": "Rad Zombie",
+            "items": {
+                "action->Z-Plague": {
+                    "name": "Z-Plague",
+                    "description": "<p>@Check[type:fortitude|dc:16|traits:secret] The armored transmits the Z Plague through its jaws and only on a critical hit.</p>\n<hr />\n<p>Those who survived the initial zombie outbreak that brought the Fall of civilization did so through a combination of precaution and a bit of genetic luck. That said, no one is fully immune. Even those who manage to get a dose of the coveted \"Z-Noc\" inoculation gain only a resistance to the infection while still in stage 1.</p>\n<p>If you are exposed to the Z-Plague (technically called Zynocol Amebic Encephalitis), the narrator will attempt a secret Fortitude save. If you fail this saving throw, you contract the first stage of the disease. If you critically fail, you contract the disease and lose 1 HOPE the next time you rest.</p>\n<p><strong>Stage 1</strong>: You lose 1 HOPE each day, becoming more and more morose. You cannot gain HOPE. Others around you can ask for @Compendium[pf2e.actionspf2e.Sense Motive]{Sense Motive} checks using Perception to notice something is amiss. At the end of each day, attempt a Fortitude saving throw against the original DC. If you succeed at 2 saves on consecutive days or critically succeed a save, you manage to shake off the infection and stop losing Hope. If you run out of Hope and are required to lose another you progress to Stage 2.</p>\n<p><strong>Stage 2</strong>: You become @Compendium[pf2e.conditionitems.Stupefied]{Stupefied 1} and the narrator secretly rolls a d20 to set the duration in hours. At the end of that duration, your stupefied value increases by 1 and the narrator rolls to set the duration again. When your stupefied value is greater than all three of your mental ability modifiers combined (Int, Wis, Cha), you progress to stage 3. There is no known way to save anyone who has reached Stage 2. Infected people in Stage 2 are contagious and they shed parasites through coughing and other body fluids. Anyone who spends more than 1 minute within 10 feet of a contagious individual must attempt a Fortitude save (at the same DC as the infected person) to avoid contracting the plague.</p>\n<p><strong>Stage 3</strong>: You fall @Compendium[pf2e.conditionitems.Unconscious]{Unconscious} and lose [[/r 1d4]] hit points per minute. When your hit points reach 0, you die and rise as a zombie within [[/r 1d10 #Minutes]]{1d10 minutes}.</p>"
+                },
+                "action->Zombie Immuinities": {
+                    "name": "Zombie Immuinities",
+                    "description": "<p>As dead things, zombies are immune to a number of things that affect the living. Unless otherwise noted, zombies are immune to disease, mental effects, poison, and anything that would render them @Compendium[pf2e.conditionitems.Unconscious]{Unconscious}. Zombies do not take bruises nor do they need to eat or drink (although some gain abilities if they have recently consumed living flesh). Zombies are destroyed immediately upon being reduce to 0 Hit Points.</p>"
+                },
+                "action->Cherenkov Glow": {
+                    "name": "Cherenkov Glow",
+                    "description": "<p>The rad zombie glows with a blue light. It fails all Stealth checks made to Hide in dim light or darkness, but in such environments it is @Compendium[pf2e.conditionitems.Concealed]{Concealed} from attacks made from greater than 20 feet away.</p>"
+                },
+                "action->Radioactive": {
+                    "name": "Radioactive",
+                    "description": "<p>@Template[type:emanation|distance:10] @Compendium[pf2e.bestiary-ability-glossary-srd.Aura]{Aura}</p>\n<p>Living creatures that start their turn in this aura take [[/r 2d6[poison]]] (@Check[type:fortitude|dc:20|basic:true]). Living creatures that critically fail this saving throw also gain radiation sickness.</p>"
+                },
+                "action->Radiation Sickness": {
+                    "name": "Radiation Sickness",
+                    "description": "<p>Living creatures that are damaged by a rad zombie's melee attacks must attempt a @Check[type:fortitude|dc:20] save. Those that fail gain radiation sickness (as well as those who critically fail the save against the radioactive aura). At the start of each day, those with radiation sickness take [[/r 1d4[poison]]] that cannot be resisted or healed. They then attempt a @Check[type:fortitude|dc:20] save. Those that succeed end the sickness. Iodine supplements give a +4 item bonus to this save.</p>"
+                },
+                "melee->Jaws": {
+                    "name": "Jaws"
+                },
+                "melee->Fist": {
+                    "name": "Fist"
+                }
+            }
         },
         "Raider": {
-            "name": "Raider"
+            "name": "Raider",
+            "items": {
+                "weapon->Crude Pistol": {
+                    "name": "Crude Pistol",
+                    "description": "<p><strong>Break</strong> 2</p>"
+                },
+                "weapon->Crude Spear": {
+                    "name": "Crude Spear",
+                    "description": "<p><strong>Break</strong> 1</p>"
+                },
+                "weapon->Wrench": {
+                    "name": "Wrench",
+                    "description": "<p><strong>Break</strong> 4</p>"
+                },
+                "consumable->Bullets (Pistol)": {
+                    "name": "Bullets (Pistol)",
+                    "description": "<p>Standard round of ammunition. Deals the damage listed in the weapon's description.</p>\n<hr />\n<p><strong>Break</strong> 1</p>"
+                },
+                "consumable->Canned Goods (Expired)": {
+                    "name": "Canned Goods (Expired)",
+                    "description": "<p>Counts as 1 food. If you eat expired food, you must attempt a @Check[type:fortitude|dc:15] save or be @Compendium[pf2e.conditionitems.fesd1n5eVhpCSS18]{Sickened} for 1 day.</p>\n<hr />\n<p><strong>Break</strong> 1</p>"
+                },
+                "armor->Workwear": {
+                    "name": "Workwear",
+                    "description": "<p><strong>Resist</strong> 2 B/P/S</p>\n<p><strong>Break</strong> 10</p>"
+                },
+                "melee->Crude Spear": {
+                    "name": "Crude Spear"
+                },
+                "melee->Crude Pistol": {
+                    "name": "Crude Pistol"
+                },
+                "action->Menace": {
+                    "name": "Menace",
+                    "description": "<p>The raider gets a +1 circumstance bonus on Intimidation checks made to @Compendium[pf2e.actionspf2e.2u915NdUyQan6uKF]{Demoralize} for each other visible raider or road warrior in the area (maximum +4).</p>\n<p>@UUID[Compendium.hopefinder.effects.SIbzbl01JvQibJFx]{Effect: Menace 1}</p>"
+                },
+                "action->Reckless Charge": {
+                    "name": "Reckless Charge",
+                    "description": "<p>The raider Strides and makes a melee Strike at the end of that movement. The raider is @Compendium[pf2e.conditionitems.Off-Guard]{Off-Guard} until the start of its next turn.</p>"
+                }
+            }
         },
         "Rat King": {
             "name": "Rat King",
-            "blurb": "Zombie rat"
-        },
-        "Ration (Bar)": {
-            "name": "Ration (Bar)"
-        },
-        "Reckless Charge": {
-            "name": "Reckless Charge"
+            "blurb": "Zombie rat",
+            "items": {
+                "action->Z-Plague": {
+                    "name": "Z-Plague",
+                    "description": "<p>@Check[type:fortitude|dc:16|traits:secret] The armored transmits the Z Plague through its jaws and only on a critical hit.</p>\n<hr />\n<p>Those who survived the initial zombie outbreak that brought the Fall of civilization did so through a combination of precaution and a bit of genetic luck. That said, no one is fully immune. Even those who manage to get a dose of the coveted \"Z-Noc\" inoculation gain only a resistance to the infection while still in stage 1.</p>\n<p>If you are exposed to the Z-Plague (technically called Zynocol Amebic Encephalitis), the narrator will attempt a secret Fortitude save. If you fail this saving throw, you contract the first stage of the disease. If you critically fail, you contract the disease and lose 1 HOPE the next time you rest.</p>\n<p><strong>Stage 1</strong>: You lose 1 HOPE each day, becoming more and more morose. You cannot gain HOPE. Others around you can ask for @Compendium[pf2e.actionspf2e.Sense Motive]{Sense Motive} checks using Perception to notice something is amiss. At the end of each day, attempt a Fortitude saving throw against the original DC. If you succeed at 2 saves on consecutive days or critically succeed a save, you manage to shake off the infection and stop losing Hope. If you run out of Hope and are required to lose another you progress to Stage 2.</p>\n<p><strong>Stage 2</strong>: You become @Compendium[pf2e.conditionitems.Stupefied]{Stupefied 1} and the narrator secretly rolls a d20 to set the duration in hours. At the end of that duration, your stupefied value increases by 1 and the narrator rolls to set the duration again. When your stupefied value is greater than all three of your mental ability modifiers combined (Int, Wis, Cha), you progress to stage 3. There is no known way to save anyone who has reached Stage 2. Infected people in Stage 2 are contagious and they shed parasites through coughing and other body fluids. Anyone who spends more than 1 minute within 10 feet of a contagious individual must attempt a Fortitude save (at the same DC as the infected person) to avoid contracting the plague.</p>\n<p><strong>Stage 3</strong>: You fall @Compendium[pf2e.conditionitems.Unconscious]{Unconscious} and lose [[/r 1d4]] hit points per minute. When your hit points reach 0, you die and rise as a zombie within [[/r 1d10 #Minutes]]{1d10 minutes}.</p>"
+                },
+                "action->Zombie Immuinities": {
+                    "name": "Zombie Immuinities",
+                    "description": "<p>As dead things, zombies are immune to a number of things that affect the living. Unless otherwise noted, zombies are immune to disease, mental effects, poison, and anything that would render them @Compendium[pf2e.conditionitems.Unconscious]{Unconscious}. Zombies do not take bruises nor do they need to eat or drink (although some gain abilities if they have recently consumed living flesh). Zombies are destroyed immediately upon being reduce to 0 Hit Points.</p>"
+                },
+                "melee->Jaws": {
+                    "name": "Jaws"
+                },
+                "action->R.O.U.S": {
+                    "name": "R.O.U.S",
+                    "description": "<p>The rat king large size is because it infested with smaller Z rats, carried within. When a rat king dies, [[/br 1d4 #Z Rats]] @UUID[Compendium.hopefinder.hopefinder-bestiary.i0zfqzuuKte4qXJy]{Z Rats} emerge from the body on the next round.</p>"
+                }
+            }
         },
         "Road Warrior": {
-            "name": "Road Warrior"
+            "name": "Road Warrior",
+            "items": {
+                "lore->Driving": {
+                    "name": "Driving"
+                },
+                "lore->Machinery": {
+                    "name": "Machinery"
+                },
+                "weapon->Baseball Bat": {
+                    "name": "Baseball Bat",
+                    "description": "<p><strong>Break</strong> 4</p>"
+                },
+                "armor->Biker Gear": {
+                    "name": "Biker Gear",
+                    "description": "<p><strong>Resist</strong> 3 B/P/S</p>\n<p><strong>Break</strong> 10</p>"
+                },
+                "weapon->Crowbar": {
+                    "name": "Crowbar",
+                    "description": "<p><strong>Break</strong> 4</p>"
+                },
+                "consumable->Liquor": {
+                    "name": "Liquor",
+                    "description": "<p>Counts a -1 Hydration. Drinking it removes 2 bruises. Can only benefit from this once per day.</p>\n<hr />\n<p><strong>Break</strong> 1</p>"
+                },
+                "consumable->Ration (Bar)": {
+                    "name": "Ration (Bar)",
+                    "description": "<p>Basic military ration bar. Counts as 1 food.</p>\n<hr />\n<p><strong>Break</strong> 1</p>"
+                },
+                "weapon->Pump Shotgun": {
+                    "name": "Pump Shotgun",
+                    "description": "<p><strong>Break</strong> 4</p>"
+                },
+                "consumable->Bullets (Shotgun)": {
+                    "name": "Bullets (Shotgun)",
+                    "description": "<p>Standard round of ammunition. Deals the damage listed in the weapon's description.</p>\n<hr />\n<p><strong>Break</strong> 1</p>"
+                },
+                "melee->Baseball Bat": {
+                    "name": "Baseball Bat"
+                },
+                "melee->Pump Shotgun": {
+                    "name": "Pump Shotgun"
+                },
+                "action->Swipe": {
+                    "name": "Swipe",
+                    "description": "<p>The road warrior makes two Strikes with a bludgeoning or slashing melee weapon against two different adjacent foes. Both count toward your multiple attack penalty, but not until both attacks are resolved.</p>"
+                },
+                "action->Drive-By": {
+                    "name": "Drive-By",
+                    "description": "<p>The road warrior does not take any penalties from making ranged Strikes from a moving vehicle.</p>"
+                },
+                "action->Menace": {
+                    "name": "Menace",
+                    "description": "<p>The road warrior gets a +1 circumstance bonus on Intimidation checks made to @Compendium[pf2e.actionspf2e.2u915NdUyQan6uKF]{Demoralize} for each other visible raider or road warrior in the area (maximum +4).</p>\n<p>@Compendium[hopefinder.effects.SIbzbl01JvQibJFx]{Effect: Menace 1}</p>"
+                }
+            }
         },
         "Runner": {
-            "name": "Runner"
-        },
-        "Rush": {
-            "name": "Rush"
-        },
-        "Scavenge": {
-            "name": "Scavenge"
-        },
-        "Scent": {
-            "name": "Scent"
-        },
-        "Scent (Imprecise) 30 feet": {
-            "name": "Scent (Imprecise) 30 feet"
-        },
-        "Semiauto Pistol": {
-            "name": "Semiauto Pistol"
-        },
-        "Sense Infected (Imprecise) 60 feet": {
-            "name": "Sense Infected (Imprecise) 60 feet"
+            "name": "Runner",
+            "items": {
+                "action->Z-Plague": {
+                    "name": "Z-Plague",
+                    "description": "<p>@Check[type:fortitude|dc:16|traits:secret] The armored transmits the Z Plague through its jaws and only on a critical hit.</p>\n<hr />\n<p>Those who survived the initial zombie outbreak that brought the Fall of civilization did so through a combination of precaution and a bit of genetic luck. That said, no one is fully immune. Even those who manage to get a dose of the coveted \"Z-Noc\" inoculation gain only a resistance to the infection while still in stage 1.</p>\n<p>If you are exposed to the Z-Plague (technically called Zynocol Amebic Encephalitis), the narrator will attempt a secret Fortitude save. If you fail this saving throw, you contract the first stage of the disease. If you critically fail, you contract the disease and lose 1 HOPE the next time you rest.</p>\n<p><strong>Stage 1</strong>: You lose 1 HOPE each day, becoming more and more morose. You cannot gain HOPE. Others around you can ask for @Compendium[pf2e.actionspf2e.Sense Motive]{Sense Motive} checks using Perception to notice something is amiss. At the end of each day, attempt a Fortitude saving throw against the original DC. If you succeed at 2 saves on consecutive days or critically succeed a save, you manage to shake off the infection and stop losing Hope. If you run out of Hope and are required to lose another you progress to Stage 2.</p>\n<p><strong>Stage 2</strong>: You become @Compendium[pf2e.conditionitems.Stupefied]{Stupefied 1} and the narrator secretly rolls a d20 to set the duration in hours. At the end of that duration, your stupefied value increases by 1 and the narrator rolls to set the duration again. When your stupefied value is greater than all three of your mental ability modifiers combined (Int, Wis, Cha), you progress to stage 3. There is no known way to save anyone who has reached Stage 2. Infected people in Stage 2 are contagious and they shed parasites through coughing and other body fluids. Anyone who spends more than 1 minute within 10 feet of a contagious individual must attempt a Fortitude save (at the same DC as the infected person) to avoid contracting the plague.</p>\n<p><strong>Stage 3</strong>: You fall @Compendium[pf2e.conditionitems.Unconscious]{Unconscious} and lose [[/r 1d4]] hit points per minute. When your hit points reach 0, you die and rise as a zombie within [[/r 1d10 #Minutes]]{1d10 minutes}.</p>"
+                },
+                "action->Zombie Immuinities": {
+                    "name": "Zombie Immuinities",
+                    "description": "<p>As dead things, zombies are immune to a number of things that affect the living. Unless otherwise noted, zombies are immune to disease, mental effects, poison, and anything that would render them @Compendium[pf2e.conditionitems.Unconscious]{Unconscious}. Zombies do not take bruises nor do they need to eat or drink (although some gain abilities if they have recently consumed living flesh). Zombies are destroyed immediately upon being reduce to 0 Hit Points.</p>"
+                },
+                "melee->Jaws": {
+                    "name": "Jaws"
+                },
+                "melee->Fist": {
+                    "name": "Fist"
+                },
+                "action->Body Slam": {
+                    "name": "Body Slam",
+                    "description": "<p>The runner moves up to twice its speed, ending in a space adjacent to another creature. It slams into that creature, attempting an Acrobatics check against their Fortitude DC. If the check succeeds, both the target and the runner are knocked @Compendium[pf2e.conditionitems.Prone]{Prone} (only the target on a critical success). On a failure, neither are knocked prone and on a critical failure only the runner is knocked prone.</p>"
+                }
+            }
         },
         "Shambler": {
-            "name": "Shambler"
-        },
-        "Shred": {
-            "name": "Shred"
-        },
-        "Silent Stalker": {
-            "name": "Silent Stalker"
-        },
-        "Sledgehammer": {
-            "name": "Sledgehammer"
-        },
-        "Slow": {
-            "name": "Slow"
-        },
-        "Sneak Attack": {
-            "name": "Sneak Attack"
+            "name": "Shambler",
+            "items": {
+                "action->Z-Plague": {
+                    "name": "Z-Plague",
+                    "description": "<p>@Check[type:fortitude|dc:16|traits:secret] The armored transmits the Z Plague through its jaws and only on a critical hit.</p>\n<hr />\n<p>Those who survived the initial zombie outbreak that brought the Fall of civilization did so through a combination of precaution and a bit of genetic luck. That said, no one is fully immune. Even those who manage to get a dose of the coveted \"Z-Noc\" inoculation gain only a resistance to the infection while still in stage 1.</p>\n<p>If you are exposed to the Z-Plague (technically called Zynocol Amebic Encephalitis), the narrator will attempt a secret Fortitude save. If you fail this saving throw, you contract the first stage of the disease. If you critically fail, you contract the disease and lose 1 HOPE the next time you rest.</p>\n<p><strong>Stage 1</strong>: You lose 1 HOPE each day, becoming more and more morose. You cannot gain HOPE. Others around you can ask for @Compendium[pf2e.actionspf2e.Sense Motive]{Sense Motive} checks using Perception to notice something is amiss. At the end of each day, attempt a Fortitude saving throw against the original DC. If you succeed at 2 saves on consecutive days or critically succeed a save, you manage to shake off the infection and stop losing Hope. If you run out of Hope and are required to lose another you progress to Stage 2.</p>\n<p><strong>Stage 2</strong>: You become @Compendium[pf2e.conditionitems.Stupefied]{Stupefied 1} and the narrator secretly rolls a d20 to set the duration in hours. At the end of that duration, your stupefied value increases by 1 and the narrator rolls to set the duration again. When your stupefied value is greater than all three of your mental ability modifiers combined (Int, Wis, Cha), you progress to stage 3. There is no known way to save anyone who has reached Stage 2. Infected people in Stage 2 are contagious and they shed parasites through coughing and other body fluids. Anyone who spends more than 1 minute within 10 feet of a contagious individual must attempt a Fortitude save (at the same DC as the infected person) to avoid contracting the plague.</p>\n<p><strong>Stage 3</strong>: You fall @Compendium[pf2e.conditionitems.Unconscious]{Unconscious} and lose [[/r 1d4]] hit points per minute. When your hit points reach 0, you die and rise as a zombie within [[/r 1d10 #Minutes]]{1d10 minutes}.</p>"
+                },
+                "action->Zombie Immuinities": {
+                    "name": "Zombie Immuinities",
+                    "description": "<p>As dead things, zombies are immune to a number of things that affect the living. Unless otherwise noted, zombies are immune to disease, mental effects, poison, and anything that would render them @Compendium[pf2e.conditionitems.Unconscious]{Unconscious}. Zombies do not take bruises nor do they need to eat or drink (although some gain abilities if they have recently consumed living flesh). Zombies are destroyed immediately upon being reduce to 0 Hit Points.</p>"
+                },
+                "melee->Fist": {
+                    "name": "Fist"
+                },
+                "melee->Gnaw": {
+                    "name": "Gnaw",
+                    "description": "<p><strong>Requirements</strong> The shambler has a creature @Compendium[pf2e.conditionitems.Grabbed]{Grabbed} or @Compendium[pf2e.conditionitems.Restrained]{Restrained}.</p>"
+                },
+                "action->Slow": {
+                    "name": "Slow",
+                    "description": "<p>A shambler only takes 2 actions each round and cannot take reactions.</p>"
+                },
+                "action->Groan": {
+                    "name": "Groan",
+                    "description": "<p>Shamblers emit small moans and growls as they move, giving them a -4 circumstance penalty on Stealth checks.</p>"
+                }
+            }
         },
         "Sneaker": {
-            "name": "Sneaker"
+            "name": "Sneaker",
+            "items": {
+                "action->Z-Plague": {
+                    "name": "Z-Plague",
+                    "description": "<p>@Check[type:fortitude|dc:16|traits:secret] The armored transmits the Z Plague through its jaws and only on a critical hit.</p>\n<hr />\n<p>Those who survived the initial zombie outbreak that brought the Fall of civilization did so through a combination of precaution and a bit of genetic luck. That said, no one is fully immune. Even those who manage to get a dose of the coveted \"Z-Noc\" inoculation gain only a resistance to the infection while still in stage 1.</p>\n<p>If you are exposed to the Z-Plague (technically called Zynocol Amebic Encephalitis), the narrator will attempt a secret Fortitude save. If you fail this saving throw, you contract the first stage of the disease. If you critically fail, you contract the disease and lose 1 HOPE the next time you rest.</p>\n<p><strong>Stage 1</strong>: You lose 1 HOPE each day, becoming more and more morose. You cannot gain HOPE. Others around you can ask for @Compendium[pf2e.actionspf2e.Sense Motive]{Sense Motive} checks using Perception to notice something is amiss. At the end of each day, attempt a Fortitude saving throw against the original DC. If you succeed at 2 saves on consecutive days or critically succeed a save, you manage to shake off the infection and stop losing Hope. If you run out of Hope and are required to lose another you progress to Stage 2.</p>\n<p><strong>Stage 2</strong>: You become @Compendium[pf2e.conditionitems.Stupefied]{Stupefied 1} and the narrator secretly rolls a d20 to set the duration in hours. At the end of that duration, your stupefied value increases by 1 and the narrator rolls to set the duration again. When your stupefied value is greater than all three of your mental ability modifiers combined (Int, Wis, Cha), you progress to stage 3. There is no known way to save anyone who has reached Stage 2. Infected people in Stage 2 are contagious and they shed parasites through coughing and other body fluids. Anyone who spends more than 1 minute within 10 feet of a contagious individual must attempt a Fortitude save (at the same DC as the infected person) to avoid contracting the plague.</p>\n<p><strong>Stage 3</strong>: You fall @Compendium[pf2e.conditionitems.Unconscious]{Unconscious} and lose [[/r 1d4]] hit points per minute. When your hit points reach 0, you die and rise as a zombie within [[/r 1d10 #Minutes]]{1d10 minutes}.</p>"
+                },
+                "action->Zombie Immuinities": {
+                    "name": "Zombie Immuinities",
+                    "description": "<p>As dead things, zombies are immune to a number of things that affect the living. Unless otherwise noted, zombies are immune to disease, mental effects, poison, and anything that would render them @Compendium[pf2e.conditionitems.Unconscious]{Unconscious}. Zombies do not take bruises nor do they need to eat or drink (although some gain abilities if they have recently consumed living flesh). Zombies are destroyed immediately upon being reduce to 0 Hit Points.</p>"
+                },
+                "melee->Jaws": {
+                    "name": "Jaws"
+                },
+                "melee->Fist": {
+                    "name": "Fist"
+                },
+                "action->Ambush": {
+                    "name": "Ambush",
+                    "description": "<p>Sneakers often lie in wait, hiding until prey comes to within 20 feet before springing forth to attack. Sneakers deal an additional 1d4 precision damage on Strikes made against foes that are surprised on the first round of combat.</p>"
+                }
+            }
         },
         "Soldier": {
-            "name": "Soldier"
-        },
-        "Spew Parasites": {
-            "name": "Spew Parasites"
-        },
-        "Sports Protection": {
-            "name": "Sports Protection"
-        },
-        "Spray": {
-            "name": "Spray"
-        },
-        "Spring and Attack": {
-            "name": "Spring and Attack"
+            "name": "Soldier",
+            "items": {
+                "action->Z-Plague": {
+                    "name": "Z-Plague",
+                    "description": "<p>@Check[type:fortitude|dc:16|traits:secret] The armored transmits the Z Plague through its jaws and only on a critical hit.</p>\n<hr />\n<p>Those who survived the initial zombie outbreak that brought the Fall of civilization did so through a combination of precaution and a bit of genetic luck. That said, no one is fully immune. Even those who manage to get a dose of the coveted \"Z-Noc\" inoculation gain only a resistance to the infection while still in stage 1.</p>\n<p>If you are exposed to the Z-Plague (technically called Zynocol Amebic Encephalitis), the narrator will attempt a secret Fortitude save. If you fail this saving throw, you contract the first stage of the disease. If you critically fail, you contract the disease and lose 1 HOPE the next time you rest.</p>\n<p><strong>Stage 1</strong>: You lose 1 HOPE each day, becoming more and more morose. You cannot gain HOPE. Others around you can ask for @Compendium[pf2e.actionspf2e.Sense Motive]{Sense Motive} checks using Perception to notice something is amiss. At the end of each day, attempt a Fortitude saving throw against the original DC. If you succeed at 2 saves on consecutive days or critically succeed a save, you manage to shake off the infection and stop losing Hope. If you run out of Hope and are required to lose another you progress to Stage 2.</p>\n<p><strong>Stage 2</strong>: You become @Compendium[pf2e.conditionitems.Stupefied]{Stupefied 1} and the narrator secretly rolls a d20 to set the duration in hours. At the end of that duration, your stupefied value increases by 1 and the narrator rolls to set the duration again. When your stupefied value is greater than all three of your mental ability modifiers combined (Int, Wis, Cha), you progress to stage 3. There is no known way to save anyone who has reached Stage 2. Infected people in Stage 2 are contagious and they shed parasites through coughing and other body fluids. Anyone who spends more than 1 minute within 10 feet of a contagious individual must attempt a Fortitude save (at the same DC as the infected person) to avoid contracting the plague.</p>\n<p><strong>Stage 3</strong>: You fall @Compendium[pf2e.conditionitems.Unconscious]{Unconscious} and lose [[/r 1d4]] hit points per minute. When your hit points reach 0, you die and rise as a zombie within [[/r 1d10 #Minutes]]{1d10 minutes}.</p>"
+                },
+                "action->Zombie Immuinities": {
+                    "name": "Zombie Immuinities",
+                    "description": "<p>As dead things, zombies are immune to a number of things that affect the living. Unless otherwise noted, zombies are immune to disease, mental effects, poison, and anything that would render them @Compendium[pf2e.conditionitems.Unconscious]{Unconscious}. Zombies do not take bruises nor do they need to eat or drink (although some gain abilities if they have recently consumed living flesh). Zombies are destroyed immediately upon being reduce to 0 Hit Points.</p>"
+                },
+                "armor->Bullet Proof Vest": {
+                    "name": "Bullet Proof Vest",
+                    "description": "<p><strong>Resist</strong> 5 B/P/S</p>\n<p><strong>Break</strong> 10</p>"
+                },
+                "equipment->Military Helmet": {
+                    "name": "Military Helmet",
+                    "description": "<p>This adds a helmet to your armor, offering you protection against critical hits.</p>\n<hr />\n<p><strong>Break</strong> 8</p>"
+                },
+                "weapon->Semiauto Pistol": {
+                    "name": "Semiauto Pistol",
+                    "description": "<p><strong>Break</strong> 4</p>"
+                },
+                "consumable->Bullets (Pistol)": {
+                    "name": "Bullets (Pistol)",
+                    "description": "<p>Standard round of ammunition. Deals the damage listed in the weapon's description.</p>\n<hr />\n<p><strong>Break</strong> 1</p>"
+                },
+                "melee->Jaws": {
+                    "name": "Jaws"
+                },
+                "melee->Fist": {
+                    "name": "Fist"
+                },
+                "action->Grab": {
+                    "name": "Grab"
+                },
+                "action->Pry Open": {
+                    "name": "Pry Open",
+                    "description": "<p><strong>Requirements</strong> The soldier has a creature @Compendium[pf2e.conditionitems.Grabbed]{Grabbed} or @Compendium[pf2e.conditionitems.Restrained]{Restrained}.</p>\n<hr />\n<p><strong>Effect</strong> Using its immense strength, the soldier pries open the target's armor to bite flesh. The soldier attempts a jaws Strike on the creature it has grabbed or restrained, with a -2 circumstance penalty. If the Strike hits it ignores their armor resistance.</p>"
+                },
+                "action->Demolish": {
+                    "name": "Demolish",
+                    "description": "<p>The soldier is particularly effective at tearing down barricades. The soldier deals twice as many dings when it @Compendium[hopefinder.actions.EAkekNb9khxY2Gir]{Batters} an object.</p>"
+                }
+            }
         },
         "Starved": {
-            "name": "Starved"
-        },
-        "Swallow Whole": {
-            "name": "Swallow Whole"
-        },
-        "Swing Around": {
-            "name": "Swing Around"
-        },
-        "Swipe": {
-            "name": "Swipe"
-        },
-        "Tentacle": {
-            "name": "Tentacle"
-        },
-        "Terrifying Growl": {
-            "name": "Terrifying Growl"
-        },
-        "Throw": {
-            "name": "Throw"
+            "name": "Starved",
+            "items": {
+                "weapon->Bottle": {
+                    "name": "Bottle",
+                    "description": "<p><strong>Break</strong> C</p>"
+                },
+                "weapon->Golf Club": {
+                    "name": "Golf Club",
+                    "description": "<p><strong>Break</strong> 4</p>"
+                },
+                "melee->Golf Club": {
+                    "name": "Golf Club"
+                },
+                "melee->Bottle": {
+                    "name": "Bottle"
+                },
+                "action->Hangry": {
+                    "name": "Hangry",
+                    "description": "<p>The starved flies into a hangry rage that lasts for 1 minute. While raging the starved's AC is 13, but its melee attacks receive a +2 status bonus to damage. If the starved finds food while in a rage, it eats the food as soon as possible.</p>\n<p>@Compendium[pf2e.feat-effects.z3uyCMBddrPK5umr]{Effect: Rage}</p>"
+                }
+            }
         },
         "Timber Wolf": {
-            "name": "Timber Wolf"
-        },
-        "Tusk": {
-            "name": "Tusk"
+            "name": "Timber Wolf",
+            "items": {
+                "action->Scent (Imprecise) 30 feet": {
+                    "name": "Scent (Imprecise) 30 feet"
+                },
+                "action->Knockdown": {
+                    "name": "Knockdown"
+                },
+                "melee->Jaws": {
+                    "name": "Jaws"
+                },
+                "action->Pack Coordination": {
+                    "name": "Pack Coordination",
+                    "description": "<p>The wolf is treated as flanking a creature if it is adjacent to a foe and an ally with this ability is also adjacent. They do not have to be on opposite sides.</p>"
+                }
+            }
         },
         "Wanderer": {
-            "name": "Wanderer"
+            "name": "Wanderer",
+            "items": {
+                "weapon->Crude Bow": {
+                    "name": "Crude Bow",
+                    "description": "<p><strong>Break</strong> 2</p>"
+                },
+                "consumable->Arrows": {
+                    "name": "Arrows",
+                    "description": "<p><strong>Break</strong> 1</p>"
+                },
+                "consumable->Canned Goods (Expired)": {
+                    "name": "Canned Goods (Expired)",
+                    "description": "<p>Counts as 1 food. If you eat expired food, you must attempt a @Check[type:fortitude|dc:15] save or be @Compendium[pf2e.conditionitems.fesd1n5eVhpCSS18]{Sickened} for 1 day.</p>\n<hr />\n<p><strong>Break</strong> 1</p>"
+                },
+                "weapon->Kitchen Knife": {
+                    "name": "Kitchen Knife",
+                    "description": "<p><strong>Break</strong> 2</p>"
+                },
+                "equipment->Lighter": {
+                    "name": "Lighter",
+                    "description": "<hr />\n<p><strong>Break</strong> 1</p>"
+                },
+                "armor->Clothes (Winter)": {
+                    "name": "Clothes (Winter)",
+                    "description": "<p><strong>Resist</strong> 2 B/P/S</p>\n<p><strong>Break</strong> 8</p>"
+                },
+                "melee->Kitchen Knife": {
+                    "name": "Kitchen Knife"
+                },
+                "melee->Crude Bow": {
+                    "name": "Crude Bow"
+                },
+                "action->Scavenge": {
+                    "name": "Scavenge",
+                    "description": "<p>The wanderer spends a moment scrounging through the area within reach, finding any item worth 0 barter, such as an @Compendium[hopefinder.equipment.lozP2PiOnHWiQwEd]{Improvised Shield}, a @Compendium[hopefinder.equipment.1WENGnxWyoab6BUJ]{Brick}, a @Compendium[hopefinder.equipment.0O5HOhxzRDK9rOb1]{Bottle}, or a @Compendium[hopefinder.equipment.nieY1HKSGsq4XHBq]{Shiv}.</p>"
+                }
+            }
         },
         "Warg": {
             "name": "Warg",
-            "blurb": "Zombie wolf"
+            "blurb": "Zombie wolf",
+            "items": {
+                "action->Z-Plague": {
+                    "name": "Z-Plague",
+                    "description": "<p>@Check[type:fortitude|dc:16|traits:secret] The armored transmits the Z Plague through its jaws and only on a critical hit.</p>\n<hr />\n<p>Those who survived the initial zombie outbreak that brought the Fall of civilization did so through a combination of precaution and a bit of genetic luck. That said, no one is fully immune. Even those who manage to get a dose of the coveted \"Z-Noc\" inoculation gain only a resistance to the infection while still in stage 1.</p>\n<p>If you are exposed to the Z-Plague (technically called Zynocol Amebic Encephalitis), the narrator will attempt a secret Fortitude save. If you fail this saving throw, you contract the first stage of the disease. If you critically fail, you contract the disease and lose 1 HOPE the next time you rest.</p>\n<p><strong>Stage 1</strong>: You lose 1 HOPE each day, becoming more and more morose. You cannot gain HOPE. Others around you can ask for @Compendium[pf2e.actionspf2e.Sense Motive]{Sense Motive} checks using Perception to notice something is amiss. At the end of each day, attempt a Fortitude saving throw against the original DC. If you succeed at 2 saves on consecutive days or critically succeed a save, you manage to shake off the infection and stop losing Hope. If you run out of Hope and are required to lose another you progress to Stage 2.</p>\n<p><strong>Stage 2</strong>: You become @Compendium[pf2e.conditionitems.Stupefied]{Stupefied 1} and the narrator secretly rolls a d20 to set the duration in hours. At the end of that duration, your stupefied value increases by 1 and the narrator rolls to set the duration again. When your stupefied value is greater than all three of your mental ability modifiers combined (Int, Wis, Cha), you progress to stage 3. There is no known way to save anyone who has reached Stage 2. Infected people in Stage 2 are contagious and they shed parasites through coughing and other body fluids. Anyone who spends more than 1 minute within 10 feet of a contagious individual must attempt a Fortitude save (at the same DC as the infected person) to avoid contracting the plague.</p>\n<p><strong>Stage 3</strong>: You fall @Compendium[pf2e.conditionitems.Unconscious]{Unconscious} and lose [[/r 1d4]] hit points per minute. When your hit points reach 0, you die and rise as a zombie within [[/r 1d10 #Minutes]]{1d10 minutes}.</p>"
+                },
+                "action->Zombie Immuinities": {
+                    "name": "Zombie Immuinities",
+                    "description": "<p>As dead things, zombies are immune to a number of things that affect the living. Unless otherwise noted, zombies are immune to disease, mental effects, poison, and anything that would render them @Compendium[pf2e.conditionitems.Unconscious]{Unconscious}. Zombies do not take bruises nor do they need to eat or drink (although some gain abilities if they have recently consumed living flesh). Zombies are destroyed immediately upon being reduce to 0 Hit Points.</p>"
+                },
+                "action->Knockdown": {
+                    "name": "Knockdown"
+                },
+                "melee->Jaws": {
+                    "name": "Jaws"
+                },
+                "action->Pack Coordination": {
+                    "name": "Pack Coordination",
+                    "description": "<p>The warg is treated as flanking a creature if it is adjacent to a foe and an ally with this ability is also adjacent. They do not have to be on opposite sides.</p>"
+                },
+                "action->Silent Stalker": {
+                    "name": "Silent Stalker",
+                    "description": "<p>The warg is silent when it moves and does not need to attempt a Stealth check to remain undetected if no creature can see it.</p>"
+                },
+                "action->Sneak Attack": {
+                    "name": "Sneak Attack",
+                    "description": "<p>The warg deals 1d6 extra precision damage to @Compendium[pf2e.conditionitems.Off-Guard]{Off-Guard} creatures.</p>"
+                }
+            }
         },
         "Wild Dog": {
-            "name": "Wild Dog"
-        },
-        "Workwear": {
-            "name": "Workwear"
-        },
-        "Wrench": {
-            "name": "Wrench"
+            "name": "Wild Dog",
+            "items": {
+                "action->Scent (Imprecise) 30 feet": {
+                    "name": "Scent (Imprecise) 30 feet"
+                },
+                "melee->Jaws": {
+                    "name": "Jaws"
+                },
+                "action->Shred": {
+                    "name": "Shred",
+                    "description": "<p>The dog rips and shreds a creature it has @Compendium[pf2e.conditionitems.Grabbed]{Grabbed}. This deals [[/r 1d4[piercing]]]. If the damage fails to penetrate the target's armor resistance, their armor takes a ding (instead of dealing them a bruise).</p>"
+                },
+                "action->Grab": {
+                    "name": "Grab"
+                }
+            }
         },
         "Z Rat": {
             "name": "Z Rat",
-            "blurb": "Zombie rat"
-        },
-        "Z-Plague": {
-            "name": "Z-Plague"
-        },
-        "Zombie Immuinities": {
-            "name": "Zombie Immuinities"
-        },
-        "Zombie Vomit": {
-            "name": "Zombie Vomit"
+            "blurb": "Zombie rat",
+            "items": {
+                "action->Z-Plague": {
+                    "name": "Z-Plague",
+                    "description": "<p>@Check[type:fortitude|dc:16|traits:secret] The armored transmits the Z Plague through its jaws and only on a critical hit.</p>\n<hr />\n<p>Those who survived the initial zombie outbreak that brought the Fall of civilization did so through a combination of precaution and a bit of genetic luck. That said, no one is fully immune. Even those who manage to get a dose of the coveted \"Z-Noc\" inoculation gain only a resistance to the infection while still in stage 1.</p>\n<p>If you are exposed to the Z-Plague (technically called Zynocol Amebic Encephalitis), the narrator will attempt a secret Fortitude save. If you fail this saving throw, you contract the first stage of the disease. If you critically fail, you contract the disease and lose 1 HOPE the next time you rest.</p>\n<p><strong>Stage 1</strong>: You lose 1 HOPE each day, becoming more and more morose. You cannot gain HOPE. Others around you can ask for @Compendium[pf2e.actionspf2e.Sense Motive]{Sense Motive} checks using Perception to notice something is amiss. At the end of each day, attempt a Fortitude saving throw against the original DC. If you succeed at 2 saves on consecutive days or critically succeed a save, you manage to shake off the infection and stop losing Hope. If you run out of Hope and are required to lose another you progress to Stage 2.</p>\n<p><strong>Stage 2</strong>: You become @Compendium[pf2e.conditionitems.Stupefied]{Stupefied 1} and the narrator secretly rolls a d20 to set the duration in hours. At the end of that duration, your stupefied value increases by 1 and the narrator rolls to set the duration again. When your stupefied value is greater than all three of your mental ability modifiers combined (Int, Wis, Cha), you progress to stage 3. There is no known way to save anyone who has reached Stage 2. Infected people in Stage 2 are contagious and they shed parasites through coughing and other body fluids. Anyone who spends more than 1 minute within 10 feet of a contagious individual must attempt a Fortitude save (at the same DC as the infected person) to avoid contracting the plague.</p>\n<p><strong>Stage 3</strong>: You fall @Compendium[pf2e.conditionitems.Unconscious]{Unconscious} and lose [[/r 1d4]] hit points per minute. When your hit points reach 0, you die and rise as a zombie within [[/r 1d10 #Minutes]]{1d10 minutes}.</p>"
+                },
+                "action->Zombie Immuinities": {
+                    "name": "Zombie Immuinities",
+                    "description": "<p>As dead things, zombies are immune to a number of things that affect the living. Unless otherwise noted, zombies are immune to disease, mental effects, poison, and anything that would render them @Compendium[pf2e.conditionitems.Unconscious]{Unconscious}. Zombies do not take bruises nor do they need to eat or drink (although some gain abilities if they have recently consumed living flesh). Zombies are destroyed immediately upon being reduce to 0 Hit Points.</p>"
+                },
+                "melee->Jaws": {
+                    "name": "Jaws"
+                }
+            }
         }
     },
     "mapping": {
@@ -476,10 +1029,6 @@
         "allSavesBonus": "system.attributes.allSaves.value",
         "speedsDetails": "system.attributes.speed.details",
         "sensesDetails": "system.perception.details",
-        "languagesDetails": "system.details.languages.details",
-        "rules": {
-            "converter": "translateRules",
-            "path": "system.rules"
-        }
+        "languagesDetails": "system.details.languages.details"
     }
 }
