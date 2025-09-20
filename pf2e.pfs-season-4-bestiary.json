@@ -806,7 +806,7 @@
             "items": {
                 "weapon->Tanglefoot Bag (Moderate)": {
                     "name": "Tanglefoot Bag (Moderate)",
-                    "description": "<p><strong>Activate</strong> <span class=\"action-glyph\">1</span> Strike</p>\n<hr />\n<p>A tanglefoot bag is filled with sticky substances. When you hit a creature with a tanglefoot bag, that creature takes a -15-foot status penalty to its Speeds for 1 minute. You gain a +1 item bonus to attack rolls, and the Escape DC is 19 ([[/act escape dc=19]]).</p>\n<p>On a critical hit, a creature in contact with a solid surface becomes stuck to the surface and @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Immobilized} for 1 round, and a creature flying via wings has its wings tangled, causing it to fall safely to the ground and become unable to Fly again for 1 round. Tanglefoot bags are not effective when used on a creature that is in water.</p>\n<p>The target can end any effects by Escaping or spending a total of 3 actions to carefully remove the sticky substances. These Interact actions don't have to be consecutive, and other creatures can provide the actions as well.</p>"
+                    "description": "<p><strong>Activate</strong> <span class=\"action-glyph\">1</span> Strike</p>\n<hr />\n<p>A tanglefoot bag is filled with sticky substances. When you hit a creature with a tanglefoot bag, that creature takes a \u201315-foot status penalty to its Speeds for 1 minute. You gain a +1 item bonus to attack rolls, and the Escape DC is 19 ([[/act escape dc=19]]).</p>\n<p>On a critical hit, a creature in contact with a solid surface becomes stuck to the surface and @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Immobilized} for 1 round, and a creature flying via wings has its wings tangled, causing it to fall safely to the ground and become unable to Fly again for 1 round. Tanglefoot bags are not effective when used on a creature that is in water.</p>\n<p>The target can end any effects by Escaping or spending a total of 3 actions to carefully remove the sticky substances. These Interact actions don't have to be consecutive, and other creatures can provide the actions as well.</p>"
                 },
                 "consumable->Healing Potion (Minor)": {
                     "name": "Healing Potion (Minor)",
@@ -1269,7 +1269,7 @@
                 },
                 "action->Versatile Performance": {
                     "name": "Versatile Performance",
-                    "description": "<p>The charlatan can use Performance instead of Diplomacy to @UUID[Compendium.pf2e.actionspf2e.Item.OX4fy22hQgUHDr0q]{Make an Impression} and instead of Intimidation to @UUID[Compendium.pf2e.actionspf2e.Item.2u915NdUyQan6uKF]{Demoralize}. They can also use an acting Performance instead of Deception to @UUID[Compendium.pf2e.actionspf2e.Item.AJstokjdG6iDjVjE]{Impersonate}.</p>"
+                    "description": "<p>The charlatan can use Performance instead of Diplomacy to [[/act make-an-impression statistic=performance]] and instead of Intimidation to [[/act demoralize statistic=performance]]. They can also use an acting Performance instead of Deception to [[/act impersonate statistic=performance]].</p>"
                 },
                 "action->Sneak Attack": {
                     "name": "Sneak Attack",
@@ -1459,7 +1459,7 @@
                 },
                 "action->Barbed Net": {
                     "name": "Barbed Net",
-                    "description": "<p>When a crumbling automaton hits a creature with their barbed net, the net wraps around the target, which becomes @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 1} and takes a -10-foot circumstance penalty to its Speeds. If the Strike was a critical success, the target is also @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Immobilized}. When a creature Escapes (DC 17), or if the Strike misses, the net crumbles into nothing. Each time a creature attempts to @UUID[Compendium.pf2e.actionspf2e.Item.SkZAQRkLLkmBQNB9]{Escape}, it takes @Damage[1d6[slashing]] damage from the net's barbs, regardless of whether the attempt succeeds.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.HafP5vrdGdoqoFMo]{Effect: Barbed Net}</p>"
+                    "description": "<p>When a crumbling automaton hits a creature with their barbed net, the net wraps around the target, which becomes @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 1} and takes a \u201310-foot circumstance penalty to its Speeds. If the Strike was a critical success, the target is also @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Immobilized}. When a creature Escapes (DC 17), or if the Strike misses, the net crumbles into nothing. Each time a creature attempts to @UUID[Compendium.pf2e.actionspf2e.Item.SkZAQRkLLkmBQNB9]{Escape}, it takes @Damage[1d6[slashing]] damage from the net's barbs, regardless of whether the attempt succeeds.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.HafP5vrdGdoqoFMo]{Effect: Barbed Net}</p>"
                 }
             }
         },
@@ -2161,6 +2161,10 @@
             "blurb": "Variant hunter wight",
             "hpDetails": "void healing",
             "items": {
+                "equipment->Snare Kit": {
+                    "name": "Snare Kit",
+                    "description": "<p>This kit contains tools and materials for creating snares. A snare kit allows you to Craft snares using the Crafting skill.</p>"
+                },
                 "strike-melee->Claw": {
                     "name": "Claw"
                 },
@@ -2191,6 +2195,10 @@
             "blurb": "Variant hunter wight",
             "hpDetails": "void healing",
             "items": {
+                "equipment->Snare Kit": {
+                    "name": "Snare Kit",
+                    "description": "<p>This kit contains tools and materials for creating snares. A snare kit allows you to Craft snares using the Crafting skill.</p>"
+                },
                 "strike-melee->Claw": {
                     "name": "Claw"
                 },
@@ -2511,7 +2519,7 @@
                 },
                 "weapon->Frost Vial (Lesser) (Infused)": {
                     "name": "Frost Vial (Lesser) (Infused)",
-                    "description": "<p><strong>Activate</strong> <span class=\"action-glyph\">1</span> Strike</p>\n<hr />\n<p>The liquid reagents in this vial rapidly absorb heat when exposed to air. A frost vial deals the listed cold damage and cold splash damage. On a hit, the target takes a status penalty to its Speeds until the end of its next turn. Many types of frost vial also grant an item bonus to attack rolls.</p>\n<p>The bomb deals 1d6 cold damage and 1 cold splash damage, and the target takes a -5-foot penalty.</p>\n<p>@UUID[Compendium.pf2e.equipment-effects.Item.LdmzgBOTjCete4F7]{Effect: Frost Vial}</p>"
+                    "description": "<p><strong>Activate</strong> <span class=\"action-glyph\">1</span> Strike</p>\n<hr />\n<p>The liquid reagents in this vial rapidly absorb heat when exposed to air. A frost vial deals the listed cold damage and cold splash damage. On a hit, the target takes a status penalty to its Speeds until the end of its next turn. Many types of frost vial also grant an item bonus to attack rolls.</p>\n<p>The bomb deals 1d6 cold damage and 1 cold splash damage, and the target takes a \u20135-foot penalty.</p>\n<p>@UUID[Compendium.pf2e.equipment-effects.Item.LdmzgBOTjCete4F7]{Effect: Frost Vial}</p>"
                 },
                 "weapon->Thunderstone (Lesser) (Infused)": {
                     "name": "Thunderstone (Lesser) (Infused)",
@@ -3451,7 +3459,7 @@
             },
             "skills": {
                 "athletics": {
-                    "label": "to Disarm, Grappe, or avoid being Disarmed"
+                    "label": "to Disarm, Grapple, or avoid being Disarmed"
                 }
             }
         },
@@ -3994,7 +4002,7 @@
                 },
                 "action->Barbed Net": {
                     "name": "Barbed Net",
-                    "description": "<p>When a crumbling automaton hits a creature with their barbed net, the net wraps around the target, which becomes @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 1} and takes a -10-foot circumstance penalty to its Speeds. If the Strike was a critical success, the target is also @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Immobilized}. When a creature Escapes (DC 20), or if the Strike misses, the net crumbles into nothing. Each time a creature attempts to @UUID[Compendium.pf2e.actionspf2e.Item.SkZAQRkLLkmBQNB9]{Escape}, it takes @Damage[1d8[slashing]] damage from the net's barbs, regardless of whether the attempt succeeds.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.HafP5vrdGdoqoFMo]{Effect: Barbed Net}</p>"
+                    "description": "<p>When a crumbling automaton hits a creature with their barbed net, the net wraps around the target, which becomes @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 1} and takes a \u201310-foot circumstance penalty to its Speeds. If the Strike was a critical success, the target is also @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Immobilized}. When a creature Escapes (DC 20), or if the Strike misses, the net crumbles into nothing. Each time a creature attempts to @UUID[Compendium.pf2e.actionspf2e.Item.SkZAQRkLLkmBQNB9]{Escape}, it takes @Damage[1d8[slashing]] damage from the net's barbs, regardless of whether the attempt succeeds.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.HafP5vrdGdoqoFMo]{Effect: Barbed Net}</p>"
                 }
             }
         },
@@ -4052,7 +4060,7 @@
             },
             "skills": {
                 "athletics": {
-                    "label": "to Disarm, Grappe, or avoid being Disarmed"
+                    "label": "to Disarm, Grapple, or avoid being Disarmed"
                 }
             }
         },
@@ -4131,6 +4139,10 @@
             "publicNotes": "<p>Some forests are protected by kings, others only by wild things. Laws against hunting may protect the private reserves of nobles or guard the viability of animal populations of shared forests during specific seasons. Poachers violate those laws- sometimes out of greed, sometimes out of desperation, and sometimes for sport. Although penalties against poaching often include public shaming, in lean times a successful poacher is a local hero.</p>\n<hr />\n<p>From the managed and cultivated forests that support villages to the tree-covered crown lands where only nobles and their servants are permitted to hunt, forests provide. To communities, forests provide fuel, food, medicine, and raw materials, while royally protected forests provide food for the nobles' table and a source of entertainment in the form of organized hunts. Even the ancient woods untouched by mortal hand or blade provide bards with settings where legends happened and could happen again. Many find the forest depths unsettling, but others live their lives among the trees and alongside the creatures that make their homes there.</p>",
             "blurb": "Variant poacher",
             "items": {
+                "equipment->Snare Kit": {
+                    "name": "Snare Kit",
+                    "description": "<p>This kit contains tools and materials for creating snares. A snare kit allows you to Craft snares using the Crafting skill.</p>"
+                },
                 "action->Forager": {
                     "name": "Forager",
                     "description": "<p>While using Survival to @UUID[Compendium.pf2e.actionspf2e.Item.49y9Ec4bDii8pcD3]{Subsist}, if the recon patroller rolls a failure or a critical failure, they get a success instead. If the recon patroller rolls a success, they can provide food for 4 additional creatures that eat about as much as a human, or 8 creatures on a critical success.</p>"
@@ -4690,6 +4702,10 @@
             "blurb": "Variant hunter wight",
             "hpDetails": "void healing",
             "items": {
+                "equipment->Snare Kit": {
+                    "name": "Snare Kit",
+                    "description": "<p>This kit contains tools and materials for creating snares. A snare kit allows you to Craft snares using the Crafting skill.</p>"
+                },
                 "strike-melee->Claw": {
                     "name": "Claw"
                 },
@@ -4720,6 +4736,10 @@
             "blurb": "Variant hunter wight",
             "hpDetails": "void healing",
             "items": {
+                "equipment->Snare Kit": {
+                    "name": "Snare Kit",
+                    "description": "<p>This kit contains tools and materials for creating snares. A snare kit allows you to Craft snares using the Crafting skill.</p>"
+                },
                 "strike-melee->Claw": {
                     "name": "Claw"
                 },

@@ -34,7 +34,7 @@
                 },
                 "action->Grasping Foliage": {
                     "name": "Grasping Foliage",
-                    "description": "<p><strong>Trigger</strong> The assassin vine detects a creature within 20 feet via @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.j2wsK6IsW5yMW1jW]{Tremorsense}</p>\n<hr />\n<p><strong>Effect</strong> The assassin vine causes vegetation within a @Template[emanation|distance:20] to writhe for 1 round, turning this area into difficult terrain. When a creature starts its turn in this area, it must attempt a @Check[reflex|dc:20] save. On a failure, it takes a -10-foot circumstance penalty to its Speeds until it leaves the area, and on a critical failure it is also @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Immobilized} for 1 round. A creature can attempt to @UUID[Compendium.pf2e.actionspf2e.Item.SkZAQRkLLkmBQNB9]{Escape} to remove these effects.</p>\n<p>Assassin vines are immune to Grasping Foliage.</p>"
+                    "description": "<p><strong>Trigger</strong> The assassin vine detects a creature within 20 feet via @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.j2wsK6IsW5yMW1jW]{Tremorsense}</p>\n<hr />\n<p><strong>Effect</strong> The assassin vine causes vegetation within a @Template[emanation|distance:20] to writhe for 1 round, turning this area into difficult terrain. When a creature starts its turn in this area, it must attempt a @Check[reflex|dc:20] save. On a failure, it takes a \u201310-foot circumstance penalty to its Speeds until it leaves the area, and on a critical failure it is also @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Immobilized} for 1 round. A creature can attempt to @UUID[Compendium.pf2e.actionspf2e.Item.SkZAQRkLLkmBQNB9]{Escape} to remove these effects.</p>\n<p>Assassin vines are immune to Grasping Foliage.</p>"
                 },
                 "action->Constrict": {
                     "name": "Constrict",
@@ -147,6 +147,24 @@
                 }
             }
         },
+        "Ancestor Statue": {
+            "name": "Ancestor Statue",
+            "publicNotes": "<p>Animated statues are often used to guard crypts, small shrines, or areas in government buildings where they can be positioned amid normal statues to hide their true nature until an intruder arouses their ire. Adventurers' suspicions regarding statues suddenly animating and attacking has led many less scrupulous adventurers to automatically attack any statues they encounter, ruining harmless, ancient relics.</p>\n<hr />\n<p>Granted a semblance of life through the use of rituals or other strange magic, animated objects take many forms and serve a variety of uses. A few examples of typical animated objects are listed below. Many of these creatures serve as guardians, surprising unsuspecting adventurers when they suddenly attack. Others serve as idle distractions for the exceptionally rich, simple servants created to handle odd jobs, and the like.</p>",
+            "acDetails": "(17 when broken); construct armor",
+            "blurb": "Elite animated statue",
+            "items": {
+                "strike-melee->Fist": {
+                    "name": "Fist"
+                },
+                "action->Construct Armor (Hardness 6)": {
+                    "name": "Construct Armor (Hardness 6)",
+                    "description": "<p>Like normal objects, an animated statue has Hardness. This Hardness reduces any damage it takes by an amount equal to the Hardness.</p>\n<p>Once an elite animated statue is reduced to less than half its Hit Points, or immediately upon being damaged by a critical hit, its construct armor breaks and its Armor Class is reduced to 17.</p>"
+                },
+                "action->Grab": {
+                    "name": "Grab"
+                }
+            }
+        },
         "Ancestral Echo": {
             "name": "Ancestral Echo",
             "hpDetails": "void healing, rejuvenation",
@@ -182,24 +200,6 @@
                 "action->Howl of Agony": {
                     "name": "Howl of Agony",
                     "description": "<p><strong>Trigger</strong> At least two living creatures step on the staircase</p>\n<hr />\n<p><strong>Effect</strong> Dozens of mouths open on the stairs and eastern wall doors of the chamber and howl in anger and misery. Creatures in the area are @UUID[Compendium.pf2e.conditionitems.Item.9PR9y0bi4JPKnHPR]{Deafened} for 2 rounds and @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 2} unless they succeed at a @Check[fortitude|dc:27] save. Creatures who critically fail are deafened for 1 minute and @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 3}. The haunt then rolls initiative.</p>"
-                }
-            }
-        },
-        "Ansestor Statue": {
-            "name": "Ansestor Statue",
-            "publicNotes": "<p>Animated statues are often used to guard crypts, small shrines, or areas in government buildings where they can be positioned amid normal statues to hide their true nature until an intruder arouses their ire. Adventurers' suspicions regarding statues suddenly animating and attacking has led many less scrupulous adventurers to automatically attack any statues they encounter, ruining harmless, ancient relics.</p>\n<hr />\n<p>Granted a semblance of life through the use of rituals or other strange magic, animated objects take many forms and serve a variety of uses. A few examples of typical animated objects are listed below. Many of these creatures serve as guardians, surprising unsuspecting adventurers when they suddenly attack. Others serve as idle distractions for the exceptionally rich, simple servants created to handle odd jobs, and the like.</p>",
-            "acDetails": "(17 when broken); construct armor",
-            "blurb": "Elite animated statue",
-            "items": {
-                "strike-melee->Fist": {
-                    "name": "Fist"
-                },
-                "action->Construct Armor (Hardness 6)": {
-                    "name": "Construct Armor (Hardness 6)",
-                    "description": "<p>Like normal objects, an animated statue has Hardness. This Hardness reduces any damage it takes by an amount equal to the Hardness.</p>\n<p>Once an elite animated statue is reduced to less than half its Hit Points, or immediately upon being damaged by a critical hit, its construct armor breaks and its Armor Class is reduced to 17.</p>"
-                },
-                "action->Grab": {
-                    "name": "Grab"
                 }
             }
         },
@@ -699,6 +699,10 @@
             "publicNotes": "<p>Most kobolds encountered outside of a well-defended warren or lair are kobold scouts, creatures trained for stalking and the hunt.</p>\n<hr />\n<p>Kobolds are small, reptilian humanoids who carry physical similarities to true dragons. They lurk in dark spaces, usually tunnels and mines beneath the earth, in either warrens of their own design or complexes discovered and colonized after the original builders have moved on. Though kobolds are far more pragmatic than they are courageous, they use every inch of their cunning to even the playing field between themselves and other, stronger creatures. They attack from the darkness and at range, and kobold artificers and engineers master the art of simple but effective traps, which they use to protect their lairs. Kobolds are skilled at working together by necessity, and they often set up ambushes or hit-and-run assaults that allow them to do the most damage possible without being harmed in return.</p>\n<p>Kobolds are diligent and hardworking creatures, though they often turn these virtues toward selfish ends. While some kobolds live in communal collectives that maintain neutral relations with the creatures around them, they can be easily swayed into serving malevolent powers or megalomaniac leaders. This is in part due to kobolds' innate pragmatism, as they would rather concede to servitude than risk being killed, but it is also in part due to a reverence for the power that kobolds generally lack. Dragons in particular are viewed with a deferential awe, and kobolds eagerly offer their services to such mighty and glorious creatures when they can. While kobolds may scheme against other leaders, especially those that control them via subjugation, dragons are usually viewed with adoration, no matter how brutal they might be to their kobold minions.</p>",
             "blurb": "Variant Kobold Scout",
             "items": {
+                "equipment->Snare Kit": {
+                    "name": "Snare Kit",
+                    "description": "<p>This kit contains tools and materials for creating snares. A snare kit allows you to Craft snares using the Crafting skill.</p>"
+                },
                 "action->Hurried Retreat": {
                     "name": "Hurried Retreat",
                     "description": "<p><strong>Requirements</strong> The kobold scout is adjacent to at least one enemy.</p>\n<hr />\n<p><strong>Effect</strong> The kobold scout Strides up to its Speed plus 5 feet and gains a +2 circumstance bonus to AC against reactions triggered by this movement. It must end this movement in a space that's not adjacent to any enemy.</p>"
@@ -972,7 +976,7 @@
                 },
                 "equipment->Manacles (Simple)": {
                     "name": "Manacles (Simple)",
-                    "description": "<p>You can manacle someone who is willing or otherwise at your mercy as an exploration activity taking 10-30 seconds depending on the creature's size and how many manacles you apply. A two-legged creature with its legs bound takes a -15-foot circumstance penalty to its Speeds, and a two-handed creature with its wrists bound has to succeed at a @Check[flat|dc:5] any time it uses a manipulate action or else that action fails. This DC may be higher depending on how tightly the manacles constrain the hands. A creature bound to a stationary object is immobilized. For creatures with more or fewer limbs, the GM determines what effect manacles have, if any. Freeing a creature from simple manacles requires three successful @Check[thievery|dc:22|traits:action:pick-a-lock] checks.</p>"
+                    "description": "<p>You can manacle someone who is willing or otherwise at your mercy as an exploration activity taking 10-30 seconds depending on the creature's size and how many manacles you apply. A two-legged creature with its legs bound takes a \u201315-foot circumstance penalty to its Speeds, and a two-handed creature with its wrists bound has to succeed at a @Check[flat|dc:5] any time it uses a manipulate action or else that action fails. This DC may be higher depending on how tightly the manacles constrain the hands. A creature bound to a stationary object is immobilized. For creatures with more or fewer limbs, the GM determines what effect manacles have, if any. Freeing a creature from simple manacles requires three successful @Check[thievery|dc:22|traits:action:pick-a-lock] checks.</p>"
                 },
                 "strike-melee->Guisarme": {
                     "name": "Guisarme"
@@ -1299,7 +1303,7 @@
                 },
                 "equipment->Manacles (Average)": {
                     "name": "Manacles (Average)",
-                    "description": "<p>You can manacle someone who is willing or otherwise at your mercy as an exploration activity taking 10-30 seconds depending on the creature's size and how many manacles you apply. A two-legged creature with its legs bound takes a -15-foot circumstance penalty to its Speeds, and a two-handed creature with its wrists bound has to succeed at a @Check[flat|dc:5] any time it uses a manipulate action or else that action fails. This DC may be higher depending on how tightly the manacles constrain the hands. A creature bound to a stationary object is immobilized. For creatures with more or fewer limbs, the GM determines what effect manacles have, if any. Freeing a creature from average manacles requires four successful @Check[thievery|dc:27|traits:action:pick-a-lock] checks.</p>"
+                    "description": "<p>You can manacle someone who is willing or otherwise at your mercy as an exploration activity taking 10-30 seconds depending on the creature's size and how many manacles you apply. A two-legged creature with its legs bound takes a \u201315-foot circumstance penalty to its Speeds, and a two-handed creature with its wrists bound has to succeed at a @Check[flat|dc:5] any time it uses a manipulate action or else that action fails. This DC may be higher depending on how tightly the manacles constrain the hands. A creature bound to a stationary object is immobilized. For creatures with more or fewer limbs, the GM determines what effect manacles have, if any. Freeing a creature from average manacles requires four successful @Check[thievery|dc:27|traits:action:pick-a-lock] checks.</p>"
                 },
                 "equipment->Manacles Key": {
                     "name": "Manacles Key"
@@ -1475,7 +1479,7 @@
                 },
                 "weapon->Tanglefoot Bag (Moderate)": {
                     "name": "Tanglefoot Bag (Moderate)",
-                    "description": "<p><strong>Activate</strong> <span class=\"action-glyph\">1</span> Strike</p>\n<hr />\n<p>A tanglefoot bag is filled with sticky substances. When you hit a creature with a tanglefoot bag, that creature takes a -15-foot status penalty to its Speeds for 1 minute. You gain a +1 item bonus to attack rolls, and the Escape DC is 19 ([[/act escape dc=19]]).</p>\n<p>On a critical hit, a creature in contact with a solid surface becomes stuck to the surface and @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Immobilized} for 1 round, and a creature flying via wings has its wings tangled, causing it to fall safely to the ground and become unable to Fly again for 1 round. Tanglefoot bags are not effective when used on a creature that is in water.</p>\n<p>The target can end any effects by Escaping or spending a total of 3 actions to carefully remove the sticky substances. These Interact actions don't have to be consecutive, and other creatures can provide the actions as well.</p>"
+                    "description": "<p><strong>Activate</strong> <span class=\"action-glyph\">1</span> Strike</p>\n<hr />\n<p>A tanglefoot bag is filled with sticky substances. When you hit a creature with a tanglefoot bag, that creature takes a \u201315-foot status penalty to its Speeds for 1 minute. You gain a +1 item bonus to attack rolls, and the Escape DC is 19 ([[/act escape dc=19]]).</p>\n<p>On a critical hit, a creature in contact with a solid surface becomes stuck to the surface and @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Immobilized} for 1 round, and a creature flying via wings has its wings tangled, causing it to fall safely to the ground and become unable to Fly again for 1 round. Tanglefoot bags are not effective when used on a creature that is in water.</p>\n<p>The target can end any effects by Escaping or spending a total of 3 actions to carefully remove the sticky substances. These Interact actions don't have to be consecutive, and other creatures can provide the actions as well.</p>"
                 },
                 "consumable->Healing Potion (Minor)": {
                     "name": "Healing Potion (Minor)",
