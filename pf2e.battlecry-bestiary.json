@@ -4,6 +4,7 @@
         "Angelic Chorus": {
             "name": "Angelic Chorus",
             "publicNotes": "<p>While choral angels are content to sing their hymns in Nirvana, they must sometimes take to the mortal realm to provide needed succor for those engaged in righteous battle against the wicked. An angelic chorus often acts as support for armies who have gained the favor of the celestial realms.</p>",
+            "allSavesBonus": "+1 status to all saves vs. magic",
             "speedsDetails": "troop movement",
             "languagesDetails": "Truespeech",
             "hpDetails": "(4 segments); Thresholds 210 (4 segments); Thresholds 140 (3 segments), 70 (2 segments)",
@@ -14,12 +15,28 @@
                 "spell->Truespeech (Constant)": {
                     "name": "Truespeech (Constant)"
                 },
+                "spell->Cleanse Affliction (At Will)": {
+                    "name": "Cleanse Affliction (At Will)"
+                },
+                "spell->Clear Mind (At Will)": {
+                    "name": "Clear Mind (At Will)"
+                },
+                "spell->Noise Blast (At Will)": {
+                    "name": "Noise Blast (At Will)"
+                },
+                "spell->Counter Performance (At Will)": {
+                    "name": "Counter Performance (At Will)"
+                },
                 "action->+1 Status to All Saves vs. Magic": {
                     "name": "+1 Status to All Saves vs. Magic"
                 },
+                "action->Harmonizing Aura": {
+                    "name": "Harmonizing Aura",
+                    "description": "<p>20 feet.</p>\n<p>Allies in the aura gain a +2 status bonus to sonic damage rolls and a +1 status bonus to AC and all saves against effects with the auditory or sonic trait. Enemies in the aura take a \u20132 status penalty to sonic damage rolls and a \u20131 status penalty to AC and all saves against auditory and sonic effects.</p>"
+                },
                 "action->Troop Defenses": {
                     "name": "Troop Defenses",
-                    "description": "<p><strong>HP</strong> 210 (4 segments); <strong>Thresholds</strong> 210 (4 segments); Thresholds 140 (3 segments), 70 (2 segments)</p>\n<p>@Localize[PF2E.NPC.Abilities.Glossary.TroopDefenses]</p>"
+                    "description": "<p><strong>HP</strong> 210 (4 segments); <strong>Thresholds</strong> 140 (3 segments), 70 (2 segments)</p>\n<p>@Localize[PF2E.NPC.Abilities.Glossary.TroopDefenses]</p>"
                 },
                 "action->Troop Movement": {
                     "name": "Troop Movement"
@@ -34,7 +51,7 @@
                 },
                 "action->Righteous Clamor": {
                     "name": "Righteous Clamor",
-                    "description": "<p><strong>Frequency</strong> once per round</p><hr /><p><strong>Effect</strong> With sonorous shouts, the angelic chorus lashes out with their fists in a coordinated melee attack against each enemy in a @Template[type:emanation|distance:5] (@Check[reflex|dc:29|basic|options:area-effect] save). The damage depends on the number of actions</p>\n<p><span class=\"action-glyph\">1</span> @Damage[1d8[bludgeoning],1d6[sonic]|options:area-damage]{1d8 bludgeoning damage plus 1d6 sonic damage}</p>\n<p><span class=\"action-glyph\">2</span> @Damage[(2d8+7)[bludgeoning],2d6[sonic]|options:area-damage]{2d8+7 bludgeoning damage plus 2d6 sonic damage}</p>\n<p><span class=\"action-glyph\">3</span> @Damage[(3d8+10)[bludgeoning],2d6[sonic]|options:area-damage]{3d8+10 bludgeoning damage plus 2d6 sonic damage}</p>"
+                    "description": "<p><span class=\"action-glyph\">1</span> to <span class=\"action-glyph\">3</span></p>\n<p><strong>Frequency</strong> once per round</p><hr /><p><strong>Effect</strong> With sonorous shouts, the angelic chorus lashes out with their fists in a coordinated melee attack against each enemy in a @Template[type:emanation|distance:5] (@Check[reflex|dc:29|basic|options:area-effect] save). The damage depends on the number of actions</p>\n<p><span class=\"action-glyph\">1</span> @Damage[1d8[bludgeoning],1d6[sonic]|options:area-damage]{1d8 bludgeoning damage plus 1d6 sonic damage}</p>\n<p><span class=\"action-glyph\">2</span> @Damage[(2d8+7)[bludgeoning],2d6[sonic]|options:area-damage]{2d8+7 bludgeoning damage plus 2d6 sonic damage}</p>\n<p><span class=\"action-glyph\">3</span> @Damage[(3d8+10)[bludgeoning],2d6[sonic]|options:area-damage]{3d8+10 bludgeoning damage plus 2d6 sonic damage}</p>"
                 }
             }
         },
@@ -57,7 +74,7 @@
                 },
                 "action->Battering Fists": {
                     "name": "Battering Fists",
-                    "description": "<p><strong>Frequency</strong> once per round</p><hr /><p><strong>Effect</strong> The animated army makes a melee attack against each enemy in a @Template[type:emanation|distance:5] (@Check[reflex|dc:23|basic|options:area-effect] save). The damage dealt depends on the number of actions.</p>\n<p><span class=\"action-glyph\">1</span> @Damage[(1d8+2)[bludgeoning]|options:area-damage] damage</p>\n<p><span class=\"action-glyph\">2</span> @Damage[(2d8+8)[bludgeoning]|options:area-damage] damage</p>\n<p><span class=\"action-glyph\">3</span> @Damage[(3d8+10)[bludgeoning]|options:area-damage] damage</p>"
+                    "description": "<p><span class=\"action-glyph\">1</span> to <span class=\"action-glyph\">3</span></p>\n<p><strong>Frequency</strong> once per round</p><hr /><p><strong>Effect</strong> The animated army makes a melee attack against each enemy in a @Template[type:emanation|distance:5] (@Check[reflex|dc:23|basic|options:area-effect] save). The damage dealt depends on the number of actions.</p>\n<p><span class=\"action-glyph\">1</span> @Damage[(1d8+2)[bludgeoning]|options:area-damage] damage</p>\n<p><span class=\"action-glyph\">2</span> @Damage[(2d8+8)[bludgeoning]|options:area-damage] damage</p>\n<p><span class=\"action-glyph\">3</span> @Damage[(3d8+10)[bludgeoning]|options:area-damage] damage</p>"
                 }
             }
         },
@@ -87,7 +104,7 @@
                 },
                 "action->Sparking Wands": {
                     "name": "Sparking Wands",
-                    "description": "<p><strong>Frequency</strong> once per round</p><hr /><p><strong>Effect</strong> The apprentice magicians wave wands that shoot out minor bolts of electricity at short range. Each enemy in a @Template[type:emanation|distance:5] must attempt a @Check[reflex|dc:19|basic|options:area-effect] save. The damage dealt depends on the number of actions.</p>\n<p><span class=\"action-glyph\">1</span> @Damage[1d8[electricity]|options:area-damage] damage</p>\n<p><span class=\"action-glyph\">2</span> @Damage[(2d8+3)[electricity]|options:area-damage] damage</p>\n<p><span class=\"action-glyph\">3</span> @Damage[(2d8+7)[electricity]|options:area-damage] damage</p>"
+                    "description": "<p><span class=\"action-glyph\">1</span> to <span class=\"action-glyph\">3</span></p>\n<p><strong>Frequency</strong> once per round</p><hr /><p><strong>Effect</strong> The apprentice magicians wave wands that shoot out minor bolts of electricity at short range. Each enemy in a @Template[type:emanation|distance:5] must attempt a @Check[reflex|dc:19|basic|options:area-effect] save. The damage dealt depends on the number of actions.</p>\n<p><span class=\"action-glyph\">1</span> @Damage[1d8[electricity]|options:area-damage] damage</p>\n<p><span class=\"action-glyph\">2</span> @Damage[(2d8+3)[electricity]|options:area-damage] damage</p>\n<p><span class=\"action-glyph\">3</span> @Damage[(2d8+7)[electricity]|options:area-damage] damage</p>"
                 }
             }
         },
@@ -118,7 +135,7 @@
                 },
                 "action->Sword Bash": {
                     "name": "Sword Bash",
-                    "description": "<p>The arboreal copse uses their blunt stone longswords to pummel its foes. Each enemy in a @Template[type:emanation|distance:10] must attempt a @Check[reflex|dc:25|basic|options:area-effect] save. The damage depends on the number of actions.</p>\n<p><span class=\"action-glyph\">1</span> @Damage[(1d8+1)[bludgeoning]|options:area-damage] damage</p>\n<p><span class=\"action-glyph\">2</span> @Damage[(2d8+9)[bludgeoning]|options:area-damage] damage</p>\n<p><span class=\"action-glyph\">3</span> @Damage[(3d8+10)[bludgeoning]|options:area-damage] damage</p>"
+                    "description": "<p><span class=\"action-glyph\">1</span> to <span class=\"action-glyph\">3</span></p><hr /><p>The arboreal copse uses their blunt stone longswords to pummel its foes. Each enemy in a @Template[type:emanation|distance:10] must attempt a @Check[reflex|dc:25|basic|options:area-effect] save. The damage depends on the number of actions.</p>\n<p><span class=\"action-glyph\">1</span> @Damage[(1d8+1)[bludgeoning]|options:area-damage] damage</p>\n<p><span class=\"action-glyph\">2</span> @Damage[(2d8+9)[bludgeoning]|options:area-damage] damage</p>\n<p><span class=\"action-glyph\">3</span> @Damage[(3d8+10)[bludgeoning]|options:area-damage] damage</p>"
                 }
             },
             "skills": {
@@ -142,7 +159,7 @@
                 },
                 "action->Dagger Defense": {
                     "name": "Dagger Defense",
-                    "description": "<p>The archer regiment draws daggers to attack close-range enemies. Each enemy in a @Template[type:emanation|distance:5] must attempt a @Check[reflex|dc:29|basic|options:area-effect] save. The damage depends on the number of actions. The archer regiment gains a +1 circumstance bonus to AC until the beginning of their next turn.</p>\n<p><span class=\"action-glyph\">1</span> @Damage[(2d4+2)[piercing]|options:area-damage] damage</p>\n<p><span class=\"action-glyph\">2</span> @Damage[(4d4+12)[piercing]|options:area-damage] damage</p>\n<p><span class=\"action-glyph\">3</span> @Damage[(4d4+15)[piercing]|options:area-damage] damage</p>"
+                    "description": "<p><span class=\"action-glyph\">1</span> to <span class=\"action-glyph\">3</span></p><hr /><p>The archer regiment draws daggers to attack close-range enemies. Each enemy in a @Template[type:emanation|distance:5] must attempt a @Check[reflex|dc:29|basic|options:area-effect] save. The damage depends on the number of actions. The archer regiment gains a +1 circumstance bonus to AC until the beginning of their next turn.</p>\n<p><span class=\"action-glyph\">1</span> @Damage[(2d4+2)[piercing]|options:area-damage] damage</p>\n<p><span class=\"action-glyph\">2</span> @Damage[(4d4+12)[piercing]|options:area-damage] damage</p>\n<p><span class=\"action-glyph\">3</span> @Damage[(4d4+15)[piercing]|options:area-damage] damage</p>"
                 },
                 "action->Drilled in Formations": {
                     "name": "Drilled in Formations",
@@ -194,7 +211,7 @@
                 },
                 "action->Smiting Lances": {
                     "name": "Smiting Lances",
-                    "description": "<p><strong>Frequency</strong> once per round</p><hr /><p><strong>Effect</strong> The archon bastion engages in a uniform melee attack against each enemy in @Template[type:emanation|distance:10] (@Check[reflex|dc:34|basic|options:area-effect] save). The damage depends on the number of actions. An unholy creature that fails its save against this effect takes an additional @Damage[2d6[spirit]|options:area-damage] damage (or @Damage[1d6[spirit]|options:area-damage] damage for the one-action version).</p>\n<p><span class=\"action-glyph\">1</span> @Damage[(1d8+4)[piercing]|options:area-damage] damage</p>\n<p><span class=\"action-glyph\">2</span> @Damage[(3d8+14)[piercing]|options:area-damage] damage</p>\n<p><span class=\"action-glyph\">3</span> @Damage[(4d8+19)[piercing]|options:area-damage] damage</p>"
+                    "description": "<p><span class=\"action-glyph\">1</span> to <span class=\"action-glyph\">3</span></p>\n<p><strong>Frequency</strong> once per round</p><hr /><p><strong>Effect</strong> The archon bastion engages in a uniform melee attack against each enemy in @Template[type:emanation|distance:10] (@Check[reflex|dc:34|basic|options:area-effect] save). The damage depends on the number of actions. An unholy creature that fails its save against this effect takes an additional @Damage[2d6[spirit]|options:area-damage] damage (or @Damage[1d6[spirit]|options:area-damage] damage for the one-action version).</p>\n<p><span class=\"action-glyph\">1</span> @Damage[(1d8+4)[piercing]|options:area-damage] damage</p>\n<p><span class=\"action-glyph\">2</span> @Damage[(3d8+14)[piercing]|options:area-damage] damage</p>\n<p><span class=\"action-glyph\">3</span> @Damage[(4d8+19)[piercing]|options:area-damage] damage</p>"
                 }
             }
         },
@@ -213,7 +230,7 @@
                 },
                 "action->Batrachian Blitz": {
                     "name": "Batrachian Blitz",
-                    "description": "<p><strong>Frequency</strong> once per round</p><hr /><p><strong>Effect</strong> The boggard dreadknot pummels each enemy in a @Template[type:emanation|distance:5] with their clubs, with a @Check[reflex|dc:26|basic|options:area-effect] save. The damage dealt depends on the number of actions.</p>\n<p><span class=\"action-glyph\">1</span> @Damage[2d6[bludgeoning]|options:area-damage] damage</p>\n<p><span class=\"action-glyph\">2</span> @Damage[(3d6+10)[bludgeoning]|options:area-damage] damage</p>\n<p><span class=\"action-glyph\">3</span> @Damage[(4d6+13)[bludgeoning]|options:area-damage] damage</p>"
+                    "description": "<p><span class=\"action-glyph\">1</span> to <span class=\"action-glyph\">3</span></p>\n<p><strong>Frequency</strong> once per round</p><hr /><p><strong>Effect</strong> The boggard dreadknot pummels each enemy in a @Template[type:emanation|distance:5] with their clubs, with a @Check[reflex|dc:26|basic|options:area-effect] save. The damage dealt depends on the number of actions.</p>\n<p><span class=\"action-glyph\">1</span> @Damage[2d6[bludgeoning]|options:area-damage] damage</p>\n<p><span class=\"action-glyph\">2</span> @Damage[(3d6+10)[bludgeoning]|options:area-damage] damage</p>\n<p><span class=\"action-glyph\">3</span> @Damage[(4d6+13)[bludgeoning]|options:area-damage] damage</p>"
                 },
                 "action->Chorus of Croaks": {
                     "name": "Chorus of Croaks",
@@ -265,7 +282,7 @@
                 },
                 "action->Morningstar Massacre": {
                     "name": "Morningstar Massacre",
-                    "description": "<p><strong>Frequency</strong> once per round</p><hr /><p><strong>Effect</strong> The boggards execute coordinated melee attacks against each enemy in a @Template[type:emanation|distance:5], with a @Check[reflex|dc:21|basic|options:area-effect] save. The damage dealt depends on the number of actions.</p>\n<p><span class=\"action-glyph\">1</span> @Damage[1d6[untyped]|options:area-damage] damage</p>\n<p><span class=\"action-glyph\">2</span> @Damage[(2d6+7)[untyped]|options:area-damage] damage</p>\n<p><span class=\"action-glyph\">3</span> @Damage[(2d6+11)[untyped]|options:area-damage] damage</p>"
+                    "description": "<p><span class=\"action-glyph\">1</span> to <span class=\"action-glyph\">3</span></p>\n<p><strong>Frequency</strong> once per round</p><hr /><p><strong>Effect</strong> The boggards execute coordinated melee attacks against each enemy in a @Template[type:emanation|distance:5], with a @Check[reflex|dc:21|basic|options:area-effect] save. The damage dealt depends on the number of actions.</p>\n<p><span class=\"action-glyph\">1</span> @Damage[1d6[untyped]|options:area-damage] damage</p>\n<p><span class=\"action-glyph\">2</span> @Damage[(2d6+7)[untyped]|options:area-damage] damage</p>\n<p><span class=\"action-glyph\">3</span> @Damage[(2d6+11)[untyped]|options:area-damage] damage</p>"
                 },
                 "action->Sling Barrage": {
                     "name": "Sling Barrage",
@@ -298,7 +315,7 @@
                 },
                 "action->Frenzied Hatchets": {
                     "name": "Frenzied Hatchets",
-                    "description": "<p><strong>Frequency</strong> once per round</p><hr /><p><strong>Effect</strong> The charau-ka engage in a coordinated melee attack against each enemy in a @Template[type:emanation|distance:5] (@Check[reflex|dc:23|basic|options:area-effect] save). The damage depends on the number of actions.</p>\n<p><span class=\"action-glyph\">1</span> @Damage[(1d6+2)[slashing]|options:area-damage] damage</p>\n<p><span class=\"action-glyph\">2</span> @Damage[(2d6+10)[slashing]|options:area-damage] damage</p>\n<p><span class=\"action-glyph\">3</span> @Damage[(3d6+13)[slashing]|options:area-damage] damage</p>"
+                    "description": "<p><span class=\"action-glyph\">1</span> to <span class=\"action-glyph\">3</span></p>\n<p><strong>Frequency</strong> once per round</p><hr /><p><strong>Effect</strong> The charau-ka engage in a coordinated melee attack against each enemy in a @Template[type:emanation|distance:5] (@Check[reflex|dc:23|basic|options:area-effect] save). The damage depends on the number of actions.</p>\n<p><span class=\"action-glyph\">1</span> @Damage[(1d6+2)[slashing]|options:area-damage] damage</p>\n<p><span class=\"action-glyph\">2</span> @Damage[(2d6+10)[slashing]|options:area-damage] damage</p>\n<p><span class=\"action-glyph\">3</span> @Damage[(3d6+13)[slashing]|options:area-damage] damage</p>"
                 },
                 "action->Shrieking Charge": {
                     "name": "Shrieking Charge",
@@ -319,7 +336,7 @@
             "items": {
                 "action->Wind-Up": {
                     "name": "Wind-Up",
-                    "description": "<p>24 hours, [[/act disable-device dc=27]], standy</p><hr /><p>For a clockwork to act, it must be wound with a unique key by another creature. This takes 1 minute. Once wound, it remains operational for the listed amount of time, usually 24 hours, after which time it becomes unaware of its surroundings and can't act until it's wound again. Some clockworks' abilities require them to spend some of their remaining operational time. They can't spend more than they have and shut down immediately once they have 0 time remaining. If it's unclear when a clockwork was last wound, most clockwork keepers wind all their clockworks at a set time, typically 8 a.m.</p>\n<p>A clockwork that lists standby in its wind-up entry can enter standby mode as a 3-action activity. Its operational time doesn't decrease in standby, but it can sense its surroundings (with a -2 penalty to Perception). It can't act, with one exception: when it perceives a creature, it can exit standby as a reaction (rolling initiative if appropriate).</p>\n<p>A creature can attempt to Disable a Device to wind a clockwork down (with a DC listed in the wind-up entry). For each success, the clockwork loses 1 hour of operational time. This can be done even if the clockwork is in standby mode.</p>"
+                    "description": "<p>24 hours, [[/act disable-device dc=27]], standby</p><hr /><p>For a clockwork to act, it must be wound with a unique key by another creature. This takes 1 minute. Once wound, it remains operational for the listed amount of time, usually 24 hours, after which time it becomes unaware of its surroundings and can't act until it's wound again. Some clockworks' abilities require them to spend some of their remaining operational time. They can't spend more than they have and shut down immediately once they have 0 time remaining. If it's unclear when a clockwork was last wound, most clockwork keepers wind all their clockworks at a set time, typically 8 a.m.</p>\n<p>A clockwork that lists standby in its wind-up entry can enter standby mode as a 3-action activity. Its operational time doesn't decrease in standby, but it can sense its surroundings (with a -2 penalty to Perception). It can't act, with one exception: when it perceives a creature, it can exit standby as a reaction (rolling initiative if appropriate).</p>\n<p>A creature can attempt to Disable a Device to wind a clockwork down (with a DC listed in the wind-up entry). For each success, the clockwork loses 1 hour of operational time. This can be done even if the clockwork is in standby mode.</p>"
                 },
                 "action->Reactive Sweep": {
                     "name": "Reactive Sweep",
@@ -334,7 +351,7 @@
                 },
                 "action->Halberd Sweep": {
                     "name": "Halberd Sweep",
-                    "description": "<p><strong>Frequency</strong> once per round</p><hr /><p><strong>Effect</strong> The clockwork infantry engages in a coordinated melee attack against each enemy in a @Template[type:emanation|distance:10], with a @Check[reflex|dc:27|basic|options:area-effect] save. The damage depends on the number of actions.</p>\n<p><span class=\"action-glyph\">1</span> @Damage[(1d10+2)[untyped]|options:area-damage] damage</p>\n<p><span class=\"action-glyph\">2</span> @Damage[(2d10+10)[untyped]|options:area-damage] damage</p>\n<p><span class=\"action-glyph\">3</span> @Damage[(3d10+12)[untyped]|options:area-damage] damage</p>"
+                    "description": "<p><span class=\"action-glyph\">1</span> to <span class=\"action-glyph\">3</span></p>\n<p><strong>Frequency</strong> once per round</p><hr /><p><strong>Effect</strong> The clockwork infantry engages in a coordinated melee attack against each enemy in a @Template[type:emanation|distance:10], with a @Check[reflex|dc:27|basic|options:area-effect] save. The damage depends on the number of actions.</p>\n<p><span class=\"action-glyph\">1</span> @Damage[(1d10+2)[untyped]|options:area-damage] damage</p>\n<p><span class=\"action-glyph\">2</span> @Damage[(2d10+10)[untyped]|options:area-damage] damage</p>\n<p><span class=\"action-glyph\">3</span> @Damage[(3d10+12)[untyped]|options:area-damage] damage</p>"
                 },
                 "action->Raise Defenses": {
                     "name": "Raise Defenses",
@@ -350,7 +367,7 @@
             "items": {
                 "action->Wind-Up": {
                     "name": "Wind-Up",
-                    "description": "<p>48 hours, [[/act disable-device dc=19]], standy</p><hr /><p>For a clockwork to act, it must be wound with a unique key by another creature. This takes 1 minute. Once wound, it remains operational for the listed amount of time, usually 24 hours, after which time it becomes unaware of its surroundings and can't act until it's wound again. Some clockworks' abilities require them to spend some of their remaining operational time. They can't spend more than they have and shut down immediately once they have 0 time remaining. If it's unclear when a clockwork was last wound, most clockwork keepers wind all their clockworks at a set time, typically 8 a.m.</p>\n<p>A clockwork that lists standby in its wind-up entry can enter standby mode as a 3-action activity. Its operational time doesn't decrease in standby, but it can sense its surroundings (with a -2 penalty to Perception). It can't act, with one exception: when it perceives a creature, it can exit standby as a reaction (rolling initiative if appropriate).</p>\n<p>A creature can attempt to Disable a Device to wind a clockwork down (with a DC listed in the wind-up entry). For each success, the clockwork loses 1 hour of operational time. This can be done even if the clockwork is in standby mode.</p>"
+                    "description": "<p>48 hours, [[/act disable-device dc=19]], standby</p><hr /><p>For a clockwork to act, it must be wound with a unique key by another creature. This takes 1 minute. Once wound, it remains operational for the listed amount of time, usually 24 hours, after which time it becomes unaware of its surroundings and can't act until it's wound again. Some clockworks' abilities require them to spend some of their remaining operational time. They can't spend more than they have and shut down immediately once they have 0 time remaining. If it's unclear when a clockwork was last wound, most clockwork keepers wind all their clockworks at a set time, typically 8 a.m.</p>\n<p>A clockwork that lists standby in its wind-up entry can enter standby mode as a 3-action activity. Its operational time doesn't decrease in standby, but it can sense its surroundings (with a -2 penalty to Perception). It can't act, with one exception: when it perceives a creature, it can exit standby as a reaction (rolling initiative if appropriate).</p>\n<p>A creature can attempt to Disable a Device to wind a clockwork down (with a DC listed in the wind-up entry). For each success, the clockwork loses 1 hour of operational time. This can be done even if the clockwork is in standby mode.</p>"
                 },
                 "action->Troop Defenses": {
                     "name": "Troop Defenses",
@@ -365,7 +382,7 @@
                 },
                 "action->Scratch and Bite": {
                     "name": "Scratch and Bite",
-                    "description": "<p><strong>Frequency</strong> once per round</p><hr /><p><strong>Effect</strong> The clockwork runners engage in a pack attack against each enemy in a @Template[type:emanation|distance:5], with a @Check[reflex|dc:19|basic|options:area-effect] save. The damage depends on the number of actions.</p>\n<p><span class=\"action-glyph\">1</span> @Damage[1d8[untyped]|options:area-damage] damage</p>\n<p><span class=\"action-glyph\">2</span> @Damage[(2d8+3)[untyped]|options:area-damage] damage</p>\n<p><span class=\"action-glyph\">3</span> @Damage[(2d8+7)[untyped]|options:area-damage] damage</p>"
+                    "description": "<p><span class=\"action-glyph\">1</span> to <span class=\"action-glyph\">3</span></p>\n<p><strong>Frequency</strong> once per round</p><hr /><p><strong>Effect</strong> The clockwork runners engage in a pack attack against each enemy in a @Template[type:emanation|distance:5], with a @Check[reflex|dc:19|basic|options:area-effect] save. The damage depends on the number of actions.</p>\n<p><span class=\"action-glyph\">1</span> @Damage[1d8[untyped]|options:area-damage] damage</p>\n<p><span class=\"action-glyph\">2</span> @Damage[(2d8+3)[untyped]|options:area-damage] damage</p>\n<p><span class=\"action-glyph\">3</span> @Damage[(2d8+7)[untyped]|options:area-damage] damage</p>"
                 },
                 "action->War Pounce": {
                     "name": "War Pounce",
@@ -394,7 +411,7 @@
                 },
                 "action->Jaws and Claws": {
                     "name": "Jaws and Claws",
-                    "description": "<p><strong>Frequency</strong> once per round</p><hr /><p><strong>Effect</strong> The pack makes a melee attack against each enemy in a @Template[type:emanation|distance:5] (@Check[reflex|dc:22|basic|options:area-effect] save). The damage depends on the number of actions.</p>\n<p><span class=\"action-glyph\">1</span> @Damage[1d6[piercing],1d4[persistent,bleed]|options:area-damage] damage</p>\n<p><span class=\"action-glyph\">2</span> @Damage[(2d6+4)[piercing],2d4[persistent,bleed]|options:area-damage] damage</p>\n<p><span class=\"action-glyph\">3</span> @Damage[(3d6+6)[piercing],2d4[persistent,bleed]|options:area-damage] damage</p>"
+                    "description": "<p><span class=\"action-glyph\">1</span> to <span class=\"action-glyph\">3</span></p>\n<p><strong>Frequency</strong> once per round</p><hr /><p><strong>Effect</strong> The pack makes a melee attack against each enemy in a @Template[type:emanation|distance:5] (@Check[reflex|dc:22|basic|options:area-effect] save). The damage depends on the number of actions.</p>\n<p><span class=\"action-glyph\">1</span> @Damage[1d6[piercing],1d4[persistent,bleed]|options:area-damage] damage</p>\n<p><span class=\"action-glyph\">2</span> @Damage[(2d6+4)[piercing],2d4[persistent,bleed]|options:area-damage] damage</p>\n<p><span class=\"action-glyph\">3</span> @Damage[(3d6+6)[piercing],2d4[persistent,bleed]|options:area-damage] damage</p>"
                 },
                 "action->Predator's Advantage": {
                     "name": "Predator's Advantage",
@@ -448,7 +465,7 @@
                 },
                 "action->Thrashing Vines": {
                     "name": "Thrashing Vines",
-                    "description": "<p><strong>Frequency</strong> once per round</p><hr /><p><strong>Effect</strong> The thicket makes a melee attack against each enemy within a @Template[type:emanation|distance:5] (@Check[reflex|dc:33|basic|options:area-effect] save). The damage depends on the number of actions.</p>\n<p><span class=\"action-glyph\">1</span> @Damage[(1d8+3)[bludgeoning],1d6[acid]|options:area-damage]{1d8+3 bludgeoning plus 1d6 acid}</p>\n<p><span class=\"action-glyph\">2</span> @Damage[(2d8+11)[bludgeoning],2d6[acid]|options:area-damage,mass-improved-grab]{2d8+11 bludgeoning plus 2d6 acid} and Mass Improved Grab</p>\n<p><span class=\"action-glyph\">3</span> @Damage[(3d8+12)[bludgeoning],3d6[acid]|options:area-damage,mass-improved-grab]{3d8+12 bludgeoning plus 3d6 acid} and Mass Improved Grab</p>"
+                    "description": "<p><span class=\"action-glyph\">1</span> to <span class=\"action-glyph\">3</span></p>\n<p><strong>Frequency</strong> once per round</p><hr /><p><strong>Effect</strong> The thicket makes a melee attack against each enemy within a @Template[type:emanation|distance:5] (@Check[reflex|dc:33|basic|options:area-effect] save). The damage depends on the number of actions.</p>\n<p><span class=\"action-glyph\">1</span> @Damage[(1d8+3)[bludgeoning],1d6[acid]|options:area-damage]{1d8+3 bludgeoning plus 1d6 acid}</p>\n<p><span class=\"action-glyph\">2</span> @Damage[(2d8+11)[bludgeoning],2d6[acid]|options:area-damage,mass-improved-grab]{2d8+11 bludgeoning plus 2d6 acid} and Mass Improved Grab</p>\n<p><span class=\"action-glyph\">3</span> @Damage[(3d8+12)[bludgeoning],3d6[acid]|options:area-damage,mass-improved-grab]{3d8+12 bludgeoning plus 3d6 acid} and Mass Improved Grab</p>"
                 },
                 "action->Mass Improved Grab": {
                     "name": "Mass Improved Grab",
@@ -477,7 +494,7 @@
                 },
                 "action->Draconic Onslaught": {
                     "name": "Draconic Onslaught",
-                    "description": "<p>The drakes frenzy, lashing out with fangs and tails. Each enemy in a @Template[type:emanation|distance:10] attempts a @Check[reflex|dc:30|basic|options:area-effect] save. The damage depends on the number of actions.</p>\n<p><span class=\"action-glyph\">1</span> @Damage[2d8[untyped]|options:area-damage] damage</p>\n<p><span class=\"action-glyph\">2</span> @Damage[(3d8+10)[untyped]|options:area-damage] damage</p>\n<p><span class=\"action-glyph\">3</span> @Damage[(4d8+14)[untyped]|options:area-damage] damage</p>"
+                    "description": "<p><span class=\"action-glyph\">1</span> to <span class=\"action-glyph\">3</span></p><hr /><p>The drakes frenzy, lashing out with fangs and tails. Each enemy in a @Template[type:emanation|distance:10] attempts a @Check[reflex|dc:30|basic|options:area-effect] save. The damage depends on the number of actions.</p>\n<p><span class=\"action-glyph\">1</span> @Damage[2d8[untyped]|options:area-damage] damage</p>\n<p><span class=\"action-glyph\">2</span> @Damage[(3d8+10)[untyped]|options:area-damage] damage</p>\n<p><span class=\"action-glyph\">3</span> @Damage[(4d8+14)[untyped]|options:area-damage] damage</p>"
                 },
                 "action->Drake Breath": {
                     "name": "Drake Breath",
@@ -512,7 +529,7 @@
                 },
                 "action->Disciplined Strikes": {
                     "name": "Disciplined Strikes",
-                    "description": "<p><strong>Frequency</strong> once per round</p><hr /><p><strong>Effect</strong> The dromaars coordinate melee attacks with their axes against all enemies in a @Template[type:emanation|distance:5] (@Check[reflex|dc:21|basic|options:area-effect] save). The damage depends on the number of actions.</p>\n<p><span class=\"action-glyph\">1</span> @Damage[1d8[slashing]|options:area-damage] damage</p>\n<p><span class=\"action-glyph\">2</span> @Damage[(2d8+5)[slashing]|options:area-damage] damage</p>\n<p><span class=\"action-glyph\">3</span> @Damage[(2d8+10)[slashing]|options:area-damage] damage</p>"
+                    "description": "<p><span class=\"action-glyph\">1</span> to <span class=\"action-glyph\">3</span></p>\n<p><strong>Frequency</strong> once per round</p><hr /><p><strong>Effect</strong> The dromaars coordinate melee attacks with their axes against all enemies in a @Template[type:emanation|distance:5] (@Check[reflex|dc:21|basic|options:area-effect] save). The damage depends on the number of actions.</p>\n<p><span class=\"action-glyph\">1</span> @Damage[1d8[slashing]|options:area-damage] damage</p>\n<p><span class=\"action-glyph\">2</span> @Damage[(2d8+5)[slashing]|options:area-damage] damage</p>\n<p><span class=\"action-glyph\">3</span> @Damage[(2d8+10)[slashing]|options:area-damage] damage</p>"
                 }
             }
         },
@@ -538,7 +555,7 @@
                 },
                 "action->Sickle and Staff": {
                     "name": "Sickle and Staff",
-                    "description": "<p><strong>Frequency</strong> once per round</p><hr /><p><strong>Effect</strong> The druids strike out in a coordinated melee attack against all enemies in a @Template[type:emanation|distance:5] with a @Check[reflex|dc:29|basic|options:area-effect] save. The damage dealt depends on the number of actions.</p>\n<p><span class=\"action-glyph\">1</span> @Damage[2d6[untyped]|options:area-damage] damage</p>\n<p><span class=\"action-glyph\">2</span> @Damage[(4d6+9)[untyped]|options:area-damage] damage</p>\n<p><span class=\"action-glyph\">3</span> @Damage[(5d6+13)[untyped]|options:area-damage] damage</p>"
+                    "description": "<p><span class=\"action-glyph\">1</span> to <span class=\"action-glyph\">3</span></p>\n<p><strong>Frequency</strong> once per round</p><hr /><p><strong>Effect</strong> The druids strike out in a coordinated melee attack against all enemies in a @Template[type:emanation|distance:5] with a @Check[reflex|dc:29|basic|options:area-effect] save. The damage dealt depends on the number of actions.</p>\n<p><span class=\"action-glyph\">1</span> @Damage[2d6[untyped]|options:area-damage] damage</p>\n<p><span class=\"action-glyph\">2</span> @Damage[(4d6+9)[untyped]|options:area-damage] damage</p>\n<p><span class=\"action-glyph\">3</span> @Damage[(5d6+13)[untyped]|options:area-damage] damage</p>"
                 },
                 "action->Troop Spellcasting": {
                     "name": "Troop Spellcasting",
@@ -565,7 +582,7 @@
                 },
                 "action->Brandish Bayonets!": {
                     "name": "Brandish Bayonets!",
-                    "description": "<p><strong>Frequency</strong> once per round</p><hr /><p><strong>Effect</strong> Using blades attached to their crossbows, the dwarven longshots engages in a coordinated melee attack against enemies in a @Template[type:emanation|distance:5], with a @Check[reflex|dc:26|basic|options:area-effect] save. The damage depends on the number of actions.</p>\n<p><span class=\"action-glyph\">1</span> @Damage[(1d8+2)[piercing]|options:area-damage] damage</p>\n<p><span class=\"action-glyph\">2</span> @Damage[(2d8+11)[piercing]|options:area-damage] damage</p>\n<p><span class=\"action-glyph\">3</span> @Damage[(3d8+13)[piercing]|options:area-damage] damage</p>"
+                    "description": "<p><span class=\"action-glyph\">1</span> to <span class=\"action-glyph\">3</span></p>\n<p><strong>Frequency</strong> once per round</p><hr /><p><strong>Effect</strong> Using blades attached to their crossbows, the dwarven longshots engages in a coordinated melee attack against enemies in a @Template[type:emanation|distance:5], with a @Check[reflex|dc:26|basic|options:area-effect] save. The damage depends on the number of actions.</p>\n<p><span class=\"action-glyph\">1</span> @Damage[(1d8+2)[piercing]|options:area-damage] damage</p>\n<p><span class=\"action-glyph\">2</span> @Damage[(2d8+11)[piercing]|options:area-damage] damage</p>\n<p><span class=\"action-glyph\">3</span> @Damage[(3d8+13)[piercing]|options:area-damage] damage</p>"
                 },
                 "action->Hampering Fusillade": {
                     "name": "Hampering Fusillade",
@@ -588,7 +605,7 @@
                 },
                 "action->Brandish Bayonets!": {
                     "name": "Brandish Bayonets!",
-                    "description": "<p><strong>Frequency</strong> once per round</p><hr /><p><strong>Effect</strong> Using blades attached to their rifles, the dwarven longshots engages in a coordinated melee attack against enemies in a @Template[type:emanation|distance:5], with a @Check[reflex|dc:26|basic|options:area-effect] save. The damage depends on the number of actions.</p>\n<p><span class=\"action-glyph\">1</span> @Damage[(1d8+2)[piercing]|options:area-damage] damage</p>\n<p><span class=\"action-glyph\">2</span> @Damage[(2d8+11)[piercing]|options:area-damage] damage</p>\n<p><span class=\"action-glyph\">3</span> @Damage[(3d8+13)[piercing]|options:area-damage] damage</p>"
+                    "description": "<p><span class=\"action-glyph\">1</span> to <span class=\"action-glyph\">3</span></p>\n<p><strong>Frequency</strong> once per round</p><hr /><p><strong>Effect</strong> Using blades attached to their rifles, the dwarven longshots engages in a coordinated melee attack against enemies in a @Template[type:emanation|distance:5], with a @Check[reflex|dc:26|basic|options:area-effect] save. The damage depends on the number of actions.</p>\n<p><span class=\"action-glyph\">1</span> @Damage[(1d8+2)[piercing]|options:area-damage] damage</p>\n<p><span class=\"action-glyph\">2</span> @Damage[(2d8+11)[piercing]|options:area-damage] damage</p>\n<p><span class=\"action-glyph\">3</span> @Damage[(3d8+13)[piercing]|options:area-damage] damage</p>"
                 },
                 "action->Bullet Smog": {
                     "name": "Bullet Smog",
@@ -622,7 +639,7 @@
                 },
                 "action->Clash of Steel": {
                     "name": "Clash of Steel",
-                    "description": "<p><strong>Frequency</strong> once per round</p><hr /><p><strong>Effect</strong> The first-class infantry attacks each enemy in a @Template[type:emanation|distance:5], with a @Check[reflex|dc:29|basic|options:area-effect] save. The damage depends on the number of actions.</p>\n<p><span class=\"action-glyph\">1</span> @Damage[(2d6+1)[slashing]|options:area-damage] damage</p>\n<p><span class=\"action-glyph\">2</span> @Damage[(4d6+10)[slashing]|options:area-damage] damage</p>\n<p><span class=\"action-glyph\">3</span> @Damage[(4d6+18)[slashing]|options:area-damage] damage</p>"
+                    "description": "<p><span class=\"action-glyph\">1</span> to <span class=\"action-glyph\">3</span></p>\n<p><strong>Frequency</strong> once per round</p><hr /><p><strong>Effect</strong> The first-class infantry attacks each enemy in a @Template[type:emanation|distance:5], with a @Check[reflex|dc:29|basic|options:area-effect] save. The damage depends on the number of actions.</p>\n<p><span class=\"action-glyph\">1</span> @Damage[(2d6+1)[slashing]|options:area-damage] damage</p>\n<p><span class=\"action-glyph\">2</span> @Damage[(4d6+10)[slashing]|options:area-damage] damage</p>\n<p><span class=\"action-glyph\">3</span> @Damage[(4d6+18)[slashing]|options:area-damage] damage</p>"
                 },
                 "action->Drilled in Formations": {
                     "name": "Drilled in Formations",
@@ -661,7 +678,7 @@
                 },
                 "action->Frenzy of Tentacles and Claws": {
                     "name": "Frenzy of Tentacles and Claws",
-                    "description": "<p><strong>Frequency</strong> once per round</p><hr /><p><strong>Effect</strong> The fleshwarps make wild melee attacks against each enemy in a @Template[type:emanation|distance:5] (@Check[reflex|dc:23|basic|options:area-effect] save). The damage depends on the number of actions.</p>\n<p><span class=\"action-glyph\">1</span> @Damage[1d10[untyped]|options:area-damage] damage</p>\n<p><span class=\"action-glyph\">2</span> @Damage[(2d10+6)[untyped]|options:area-damage] damage</p>\n<p><span class=\"action-glyph\">3</span> @Damage[(2d10+11)[untyped]|options:area-damage] damage</p>"
+                    "description": "<p><span class=\"action-glyph\">1</span> to <span class=\"action-glyph\">3</span></p>\n<p><strong>Frequency</strong> once per round</p><hr /><p><strong>Effect</strong> The fleshwarps make wild melee attacks against each enemy in a @Template[type:emanation|distance:5] (@Check[reflex|dc:23|basic|options:area-effect] save). The damage depends on the number of actions.</p>\n<p><span class=\"action-glyph\">1</span> @Damage[1d10[untyped]|options:area-damage] damage</p>\n<p><span class=\"action-glyph\">2</span> @Damage[(2d10+6)[untyped]|options:area-damage] damage</p>\n<p><span class=\"action-glyph\">3</span> @Damage[(2d10+11)[untyped]|options:area-damage] damage</p>"
                 },
                 "action->Many-Limbed Stride": {
                     "name": "Many-Limbed Stride",
@@ -692,7 +709,7 @@
                 },
                 "action->Raking Swoop": {
                     "name": "Raking Swoop",
-                    "description": "<p><strong>Frequency</strong> once per round</p><hr /><p><strong>Effect</strong> The gargoyle wing rips and tears with their stony talons at each enemy in a @Template[type:emanation|distance:5] (@Check[reflex|dc:28|basic|options:area-effect] save). The damage dealt depends on the number of actions.</p>\n<p><span class=\"action-glyph\">1</span> @Damage[(1d8+2)[slashing]|options:area-damage] damage</p>\n<p><span class=\"action-glyph\">2</span> @Damage[(2d8+9)[slashing]|options:area-damage] damage</p>\n<p><span class=\"action-glyph\">3</span> @Damage[(3d8+11)[slashing]|options:area-damage] damage</p>"
+                    "description": "<p><span class=\"action-glyph\">1</span> to <span class=\"action-glyph\">3</span></p>\n<p><strong>Frequency</strong> once per round</p><hr /><p><strong>Effect</strong> The gargoyle wing rips and tears with their stony talons at each enemy in a @Template[type:emanation|distance:5] (@Check[reflex|dc:28|basic|options:area-effect] save). The damage dealt depends on the number of actions.</p>\n<p><span class=\"action-glyph\">1</span> @Damage[(1d8+2)[slashing]|options:area-damage] damage</p>\n<p><span class=\"action-glyph\">2</span> @Damage[(2d8+9)[slashing]|options:area-damage] damage</p>\n<p><span class=\"action-glyph\">3</span> @Damage[(3d8+11)[slashing]|options:area-damage] damage</p>"
                 }
             }
         },
@@ -723,7 +740,7 @@
                 },
                 "action->Mandible Frenzy": {
                     "name": "Mandible Frenzy",
-                    "description": "<p><strong>Frequency</strong> once per round</p><hr /><p><strong>Effect</strong> The army makes a savage bite attack against each enemy in a @Template[type:emanation|distance:5] (@Check[reflex|dc:22|basic|options:area-effect] save). The damage dealt depends on the number of actions.</p>\n<p><span class=\"action-glyph\">1</span> @Damage[1d8[slashing]|options:area-damage,grasping-mandibles] damage plus Grasping Mandibles</p>\n<p><span class=\"action-glyph\">2</span> @Damage[(2d8+6)[slashing]|options:area-damage,grasping-mandibles] damage plus Grasping Mandibles</p>\n<p><span class=\"action-glyph\">3</span> @Damage[(2d8+11)[slashing]|options:area-damage] damage</p>"
+                    "description": "<p><span class=\"action-glyph\">1</span> to <span class=\"action-glyph\">3</span></p>\n<p><strong>Frequency</strong> once per round</p><hr /><p><strong>Effect</strong> The army makes a savage bite attack against each enemy in a @Template[type:emanation|distance:5] (@Check[reflex|dc:22|basic|options:area-effect] save). The damage dealt depends on the number of actions.</p>\n<p><span class=\"action-glyph\">1</span> @Damage[1d8[slashing]|options:area-damage,grasping-mandibles] damage plus Grasping Mandibles</p>\n<p><span class=\"action-glyph\">2</span> @Damage[(2d8+6)[slashing]|options:area-damage,grasping-mandibles] damage plus Grasping Mandibles</p>\n<p><span class=\"action-glyph\">3</span> @Damage[(2d8+11)[slashing]|options:area-damage] damage</p>"
                 },
                 "action->Overwhelm": {
                     "name": "Overwhelm",
@@ -750,7 +767,7 @@
                 },
                 "action->Cannon Vent": {
                     "name": "Cannon Vent",
-                    "description": "<p><strong>Frequency</strong> once per round</p><hr /><p><strong>Effect</strong> The gnome engineers vent the cannons' energy in a blast that hits all creatures in a @Template[type:emanation|distance:5] (@Check[reflex|dc:22|basic|options:area-effect] save). The damage depends on the number of actions.</p>\n<p><span class=\"action-glyph\">1</span> @Damage[(1d6+2)[fire]|options:area-damage] damage</p>\n<p><span class=\"action-glyph\">2</span> @Damage[(2d6+8)[fire]|options:area-damage] damage</p>\n<p><span class=\"action-glyph\">3</span> @Damage[(3d6+10)[fire]|options:area-damage] damage</p>"
+                    "description": "<p><span class=\"action-glyph\">1</span> to <span class=\"action-glyph\">3</span></p>\n<p><strong>Frequency</strong> once per round</p><hr /><p><strong>Effect</strong> The gnome engineers vent the cannons' energy in a blast that hits all creatures in a @Template[type:emanation|distance:5] (@Check[reflex|dc:22|basic|options:area-effect] save). The damage depends on the number of actions.</p>\n<p><span class=\"action-glyph\">1</span> @Damage[(1d6+2)[fire]|options:area-damage] damage</p>\n<p><span class=\"action-glyph\">2</span> @Damage[(2d6+8)[fire]|options:area-damage] damage</p>\n<p><span class=\"action-glyph\">3</span> @Damage[(3d6+10)[fire]|options:area-damage] damage</p>"
                 },
                 "action->Direct Hit": {
                     "name": "Direct Hit",
@@ -773,7 +790,7 @@
                 },
                 "action->Dogpile": {
                     "name": "Dogpile",
-                    "description": "<p>The goblin rabble engage in as coordinated an attack as they can with their dogslicers, attacking each enemy in a @Template[type:emanation|distance:5] (@Check[reflex|dc:18|basic|options:area-effect,inflicts:prone] save). The damage depends on the number of actions. A creature who critically fails their save is also knocked @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone}.</p>\n<p><span class=\"action-glyph\">1</span> @Damage[1d6[slashing]|options:area-damage] damage</p>\n<p><span class=\"action-glyph\">2</span> @Damage[(2d6+4)[slashing]|options:area-damage] damage</p>\n<p><span class=\"action-glyph\">3</span> @Damage[(2d6+7)[slashing]|options:area-damage] damage</p>"
+                    "description": "<p><span class=\"action-glyph\">1</span> to <span class=\"action-glyph\">3</span></p><hr /><p>The goblin rabble engage in as coordinated an attack as they can with their dogslicers, attacking each enemy in a @Template[type:emanation|distance:5] (@Check[reflex|dc:18|basic|options:area-effect,inflicts:prone] save). The damage depends on the number of actions. A creature who critically fails their save is also knocked @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone}.</p>\n<p><span class=\"action-glyph\">1</span> @Damage[1d6[slashing]|options:area-damage] damage</p>\n<p><span class=\"action-glyph\">2</span> @Damage[(2d6+4)[slashing]|options:area-damage] damage</p>\n<p><span class=\"action-glyph\">3</span> @Damage[(2d6+7)[slashing]|options:area-damage] damage</p>"
                 },
                 "action->Hobble Pursuit": {
                     "name": "Hobble Pursuit",
@@ -806,7 +823,7 @@
                 },
                 "action->False Cuts": {
                     "name": "False Cuts",
-                    "description": "<p><strong>Frequency</strong> once per round</p><hr /><p><strong>Effect</strong> The halflings feint with their cards and then lash out with their daggers in a coordinated melee attack against enemies in a @Template[type:emanation|distance:5], with a @Check[reflex|dc:23|basic|options:area-effect] save. The damage depends on the number of actions.</p>\n<p><span class=\"action-glyph\">1</span> @Damage[1d4[piercing],1d4[precision]|options:area-damage] precision damage</p>\n<p><span class=\"action-glyph\">2</span> @Damage[(2d4+7)[piercing],2d4[precision]|options:area-damage] precision damage</p>\n<p><span class=\"action-glyph\">3</span> @Damage[(3d4+10)[piercing],2d4[precision]|options:area-damage] precision damage</p>"
+                    "description": "<p><span class=\"action-glyph\">1</span> to <span class=\"action-glyph\">3</span></p>\n<p><strong>Frequency</strong> once per round</p><hr /><p><strong>Effect</strong> The halflings feint with their cards and then lash out with their daggers in a coordinated melee attack against enemies in a @Template[type:emanation|distance:5], with a @Check[reflex|dc:23|basic|options:area-effect] save. The damage depends on the number of actions.</p>\n<p><span class=\"action-glyph\">1</span> @Damage[1d4[piercing],1d4[precision]|options:area-damage] precision damage</p>\n<p><span class=\"action-glyph\">2</span> @Damage[(2d4+7)[piercing],2d4[precision]|options:area-damage] precision damage</p>\n<p><span class=\"action-glyph\">3</span> @Damage[(3d4+10)[piercing],2d4[precision]|options:area-damage] precision damage</p>"
                 },
                 "action->Troop Harrowing": {
                     "name": "Troop Harrowing",
@@ -838,7 +855,7 @@
                 },
                 "action->Infernal Mauling": {
                     "name": "Infernal Mauling",
-                    "description": "<p><strong>Frequency</strong> once per round</p><hr /><p><strong>Effect</strong> The pack tears into each enemy in a @Template[type:emanation|distance:5] with their flaming jaws (@Check[reflex|dc:23|basic|options:area-effect] save). The damage dealt depends on the number of actions.</p>\n<p><span class=\"action-glyph\">1</span> @Damage[1d4[piercing],1d6[fire]|options:area-damage]{1d4 piercing damage plus 1d6 fire damage}</p>\n<p><span class=\"action-glyph\">2</span> @Damage[(1d8+7)[piercing],2d6[fire]|options:area-damage]{1d8+7 piercing damage plus 2d6 fire damage}</p>\n<p><span class=\"action-glyph\">3</span> @Damage[(2d8+7)[piercing],2d6[fire]|options:area-damage]{2d8+7 piercing damage plus 2d6 fire damage}</p>"
+                    "description": "<p><span class=\"action-glyph\">1</span> to <span class=\"action-glyph\">3</span></p>\n<p><strong>Frequency</strong> once per round</p><hr /><p><strong>Effect</strong> The pack tears into each enemy in a @Template[type:emanation|distance:5] with their flaming jaws (@Check[reflex|dc:23|basic|options:area-effect] save). The damage dealt depends on the number of actions.</p>\n<p><span class=\"action-glyph\">1</span> @Damage[1d4[piercing],1d6[fire]|options:area-damage]{1d4 piercing damage plus 1d6 fire damage}</p>\n<p><span class=\"action-glyph\">2</span> @Damage[(1d8+7)[piercing],2d6[fire]|options:area-damage]{1d8+7 piercing damage plus 2d6 fire damage}</p>\n<p><span class=\"action-glyph\">3</span> @Damage[(2d8+7)[piercing],2d6[fire]|options:area-damage]{2d8+7 piercing damage plus 2d6 fire damage}</p>"
                 }
             },
             "skills": {
@@ -871,7 +888,7 @@
                 },
                 "action->Disciplined Strikes": {
                     "name": "Disciplined Strikes",
-                    "description": "<p><strong>Frequency</strong> once per round</p><hr /><p><strong>Effect</strong> The hobgoblins engage in a coordinated melee attack against each enemy in a @Template[type:emanation|distance:5], with a @Check[reflex|dc:25|basic|options:area-effect] save. The damage depends on the number of actions.</p>\n<p><span class=\"action-glyph\">1</span> @Damage[(1d8+2)[slashing]|options:area-damage] damage</p>\n<p><span class=\"action-glyph\">2</span> @Damage[(2d8+9)[slashing]|options:area-damage] damage</p>\n<p><span class=\"action-glyph\">3</span> @Damage[(3d8+11)[slashing]|options:area-damage] damage</p>"
+                    "description": "<p><span class=\"action-glyph\">1</span> to <span class=\"action-glyph\">3</span></p>\n<p><strong>Frequency</strong> once per round</p><hr /><p><strong>Effect</strong> The hobgoblins engage in a coordinated melee attack against each enemy in a @Template[type:emanation|distance:5], with a @Check[reflex|dc:25|basic|options:area-effect] save. The damage depends on the number of actions.</p>\n<p><span class=\"action-glyph\">1</span> @Damage[(1d8+2)[slashing]|options:area-damage] damage</p>\n<p><span class=\"action-glyph\">2</span> @Damage[(2d8+9)[slashing]|options:area-damage] damage</p>\n<p><span class=\"action-glyph\">3</span> @Damage[(3d8+11)[slashing]|options:area-damage] damage</p>"
                 },
                 "action->Overrun": {
                     "name": "Overrun",
@@ -911,7 +928,7 @@
                 },
                 "action->Spear Jabs": {
                     "name": "Spear Jabs",
-                    "description": "<p><strong>Frequency</strong> once per round</p><hr /><p><strong>Effect</strong> The kobold trap squad engages in a coordinated melee attack against all enemies in a @Template[type:emanation|distance:5], with a @Check[reflex|dc:18|basic|options:area-effect] save. The damage depends on the number of actions.</p>\n<p><span class=\"action-glyph\">1</span> @Damage[1d6[piercing]|options:area-damage] damage</p>\n<p><span class=\"action-glyph\">2</span> @Damage[(2d6+4)[piercing]|options:area-damage] damage</p>\n<p><span class=\"action-glyph\">3</span> @Damage[(2d6+7)[piercing]|options:area-damage] damage</p>"
+                    "description": "<p><span class=\"action-glyph\">1</span> to <span class=\"action-glyph\">3</span></p>\n<p><strong>Frequency</strong> once per round</p><hr /><p><strong>Effect</strong> The kobold trap squad engages in a coordinated melee attack against all enemies in a @Template[type:emanation|distance:5], with a @Check[reflex|dc:18|basic|options:area-effect] save. The damage depends on the number of actions.</p>\n<p><span class=\"action-glyph\">1</span> @Damage[1d6[piercing]|options:area-damage] damage</p>\n<p><span class=\"action-glyph\">2</span> @Damage[(2d6+4)[piercing]|options:area-damage] damage</p>\n<p><span class=\"action-glyph\">3</span> @Damage[(2d6+7)[piercing]|options:area-damage] damage</p>"
                 }
             }
         },
@@ -950,7 +967,7 @@
                 },
                 "action->Infected Jaws and Claws": {
                     "name": "Infected Jaws and Claws",
-                    "description": "<p><strong>Frequency</strong> once per round</p><hr /><p><strong>Effect</strong> The leukodaemons unleash an onslaught of blows against each enemy in a @Template[type:emanation|distance:10] (@Check[reflex|dc:31|basic|options:area-effect] save). The damage depends on the number of actions.</p>\n<p><span class=\"action-glyph\">1</span> @Damage[(1d10+3)[untyped]] damage plus daemonic pestilence</p>\n<p><span class=\"action-glyph\">2</span> @Damage[(3d10+9)[untyped]] damage plus daemonic pestilence</p>\n<p><span class=\"action-glyph\">3</span> @Damage[(4d10+12)[untyped]] damage plus daemonic pestilence</p>"
+                    "description": "<p><span class=\"action-glyph\">1</span> to <span class=\"action-glyph\">3</span></p>\n<p><strong>Frequency</strong> once per round</p><hr /><p><strong>Effect</strong> The leukodaemons unleash an onslaught of blows against each enemy in a @Template[type:emanation|distance:10] (@Check[reflex|dc:31|basic|options:area-effect] save). The damage depends on the number of actions.</p>\n<p><span class=\"action-glyph\">1</span> @Damage[(1d10+3)[untyped]] damage plus daemonic pestilence</p>\n<p><span class=\"action-glyph\">2</span> @Damage[(3d10+9)[untyped]] damage plus daemonic pestilence</p>\n<p><span class=\"action-glyph\">3</span> @Damage[(4d10+12)[untyped]] damage plus daemonic pestilence</p>"
                 },
                 "action->Pestilent Wheeze": {
                     "name": "Pestilent Wheeze",
@@ -995,7 +1012,7 @@
                 },
                 "action->Siphoning Grip": {
                     "name": "Siphoning Grip",
-                    "description": "<p><strong>Frequency</strong> once per round</p><hr /><p><strong>Effect</strong> The lich legion touches all enemies within a @Template[type:emanation|distance:5] to drain their life (@Check[reflex|dc:37|basic|options:area-effect] save). The damage depends on the number of actions. For each action the lich legion uses, the legion gains 10 temporary Hit Points that last 1 minute.</p>\n<p><span class=\"action-glyph\">1</span> @Damage[2d8[void]|options:area-damage] damage</p>\n<p><span class=\"action-glyph\">2</span> @Damage[(4d8+11)[void]|options:area-damage] damage</p>\n<p><span class=\"action-glyph\">3</span> @Damage[(6d8+13)[void]|options:area-damage] damage</p>"
+                    "description": "<p><span class=\"action-glyph\">1</span> to <span class=\"action-glyph\">3</span></p>\n<p><strong>Frequency</strong> once per round</p><hr /><p><strong>Effect</strong> The lich legion touches all enemies within a @Template[type:emanation|distance:5] to drain their life (@Check[reflex|dc:37|basic|options:area-effect] save). The damage depends on the number of actions. For each action the lich legion uses, the legion gains 10 temporary Hit Points that last 1 minute.</p>\n<p><span class=\"action-glyph\">1</span> @Damage[2d8[void]|options:area-damage] damage</p>\n<p><span class=\"action-glyph\">2</span> @Damage[(4d8+11)[void]|options:area-damage] damage</p>\n<p><span class=\"action-glyph\">3</span> @Damage[(6d8+13)[void]|options:area-damage] damage</p>"
                 },
                 "action->Steady Troop Spellcasting": {
                     "name": "Steady Troop Spellcasting",
@@ -1022,7 +1039,7 @@
                 },
                 "action->Crawling Stabs": {
                     "name": "Crawling Stabs",
-                    "description": "<p><strong>Frequency</strong> once per round</p><hr /><p><strong>Effect</strong> The mitflits thrust with their shortswords, coordinated with bites from their giant vermin mounts. All enemies in a @Template[type:emanation|distance:5] must attempt a @Check[reflex|dc:18|basic|options:area-effect] save. The damage depends on the number of actions.</p>\n<p><span class=\"action-glyph\">1</span> @Damage[1d6[piercing]|options:area-damage] damage</p>\n<p><span class=\"action-glyph\">2</span> @Damage[(2d6+4)[piercing]|options:area-damage] damage</p>\n<p><span class=\"action-glyph\">3</span> @Damage[(2d6+8)[piercing]|options:area-damage] damage</p>"
+                    "description": "<p><span class=\"action-glyph\">1</span> to <span class=\"action-glyph\">3</span></p>\n<p><strong>Frequency</strong> once per round</p><hr /><p><strong>Effect</strong> The mitflits thrust with their shortswords, coordinated with bites from their giant vermin mounts. All enemies in a @Template[type:emanation|distance:5] must attempt a @Check[reflex|dc:18|basic|options:area-effect] save. The damage depends on the number of actions.</p>\n<p><span class=\"action-glyph\">1</span> @Damage[1d6[piercing]|options:area-damage] damage</p>\n<p><span class=\"action-glyph\">2</span> @Damage[(2d6+4)[piercing]|options:area-damage] damage</p>\n<p><span class=\"action-glyph\">3</span> @Damage[(2d6+8)[piercing]|options:area-damage] damage</p>"
                 },
                 "action->Leaping Charge": {
                     "name": "Leaping Charge",
@@ -1062,7 +1079,7 @@
                 },
                 "action->Pummeling Punches": {
                     "name": "Pummeling Punches",
-                    "description": "<p><strong>Frequency</strong> once per round</p><hr /><p><strong>Effect</strong> The monks perform well-timed coordinated melee attacks against all enemies in a @Template[type:emanation|distance:5], with a @Check[reflex|dc:31|basic|options:area-effect] save. The damage depends on the number of actions.</p>\n<p><span class=\"action-glyph\">1</span> @Damage[2d8[bludgeoning]|options:area-damage] damage</p>\n<p><span class=\"action-glyph\">2</span> @Damage[(4d8+8)[bludgeoning]|options:area-damage] damage</p>\n<p><span class=\"action-glyph\">3</span> @Damage[(4d8+16)[bludgeoning]|options:area-damage] damage</p>"
+                    "description": "<p><span class=\"action-glyph\">1</span> to <span class=\"action-glyph\">3</span></p>\n<p><strong>Frequency</strong> once per round</p><hr /><p><strong>Effect</strong> The monks perform well-timed coordinated melee attacks against all enemies in a @Template[type:emanation|distance:5], with a @Check[reflex|dc:31|basic|options:area-effect] save. The damage depends on the number of actions.</p>\n<p><span class=\"action-glyph\">1</span> @Damage[2d8[bludgeoning]|options:area-damage] damage</p>\n<p><span class=\"action-glyph\">2</span> @Damage[(4d8+8)[bludgeoning]|options:area-damage] damage</p>\n<p><span class=\"action-glyph\">3</span> @Damage[(4d8+16)[bludgeoning]|options:area-damage] damage</p>"
                 },
                 "action->Qi Blast": {
                     "name": "Qi Blast",
@@ -1102,7 +1119,7 @@
                 },
                 "action->Putrid Pummeling": {
                     "name": "Putrid Pummeling",
-                    "description": "<p><strong>Frequency</strong> once per round</p><hr /><p><strong>Effect</strong> The ofalths pummel all enemies in a @Template[type:emanation|distance:10], with a @Check[reflex|dc:33|basic|options:area-effect] save. The damage depends on the number of actions. Creatures that fail the saving throw are exposed to wretched weeps.</p>\n<p><span class=\"action-glyph\">1</span> @Damage[(1d12+3)[bludgeoning]|options:area-damage] damage</p>\n<p><span class=\"action-glyph\">2</span> @Damage[(3d12+7)[bludgeoning]|options:area-damage] damage</p>\n<p><span class=\"action-glyph\">3</span> @Damage[(4d12+10)[bludgeoning]|options:area-damage] damage</p>"
+                    "description": "<p><span class=\"action-glyph\">1</span> to <span class=\"action-glyph\">3</span></p>\n<p><strong>Frequency</strong> once per round</p><hr /><p><strong>Effect</strong> The ofalths pummel all enemies in a @Template[type:emanation|distance:10], with a @Check[reflex|dc:33|basic|options:area-effect] save. The damage depends on the number of actions. Creatures that fail the saving throw are exposed to wretched weeps.</p>\n<p><span class=\"action-glyph\">1</span> @Damage[(1d12+3)[bludgeoning]|options:area-damage] damage</p>\n<p><span class=\"action-glyph\">2</span> @Damage[(3d12+7)[bludgeoning]|options:area-damage] damage</p>\n<p><span class=\"action-glyph\">3</span> @Damage[(4d12+10)[bludgeoning]|options:area-damage] damage</p>"
                 },
                 "action->Wretched Weeps": {
                     "name": "Wretched Weeps",
@@ -1160,7 +1177,7 @@
                 },
                 "action->Waves of Sludge": {
                     "name": "Waves of Sludge",
-                    "description": "<p><strong>Frequency</strong> once per round</p><hr /><p><strong>Effect</strong> The omoxes attack all enemies in a @Template[type:emanation|distance:5] with slimy tendrils (@Check[reflex|dc:35|basic|options:area-effect] save). A creature that critically fails this saving throw is also @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed} by the slime pool. The damage depends on the number of actions.</p>\n<p><span class=\"action-glyph\">1</span> @Damage[(1d6+3)[bludgeoning],1d6[acid]|options:area-damage]{1d6+3 bludgeoning damage plus 1d6 acid damage}</p>\n<p><span class=\"action-glyph\">2</span> @Damage[(3d6+12)[bludgeoning],2d6[acid]|options:area-damage]{3d6+12 bludgeoning damage plus 2d6 acid damage}</p>\n<p><span class=\"action-glyph\">3</span> @Damage[(4d6+14)[bludgeoning],3d6[acid]|options:area-damage]{4d6+14 bludgeoning damage plus 3d6 acid damage}</p>"
+                    "description": "<p><span class=\"action-glyph\">1</span> to <span class=\"action-glyph\">3</span></p>\n<p><strong>Frequency</strong> once per round</p><hr /><p><strong>Effect</strong> The omoxes attack all enemies in a @Template[type:emanation|distance:5] with slimy tendrils (@Check[reflex|dc:35|basic|options:area-effect] save). A creature that critically fails this saving throw is also @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed} by the slime pool. The damage depends on the number of actions.</p>\n<p><span class=\"action-glyph\">1</span> @Damage[(1d6+3)[bludgeoning],1d6[acid]|options:area-damage]{1d6+3 bludgeoning damage plus 1d6 acid damage}</p>\n<p><span class=\"action-glyph\">2</span> @Damage[(3d6+12)[bludgeoning],2d6[acid]|options:area-damage]{3d6+12 bludgeoning damage plus 2d6 acid damage}</p>\n<p><span class=\"action-glyph\">3</span> @Damage[(4d6+14)[bludgeoning],3d6[acid]|options:area-damage]{4d6+14 bludgeoning damage plus 3d6 acid damage}</p>"
                 }
             }
         },
@@ -1191,7 +1208,7 @@
                 },
                 "action->Rip Them Up": {
                     "name": "Rip Them Up",
-                    "description": "<p><strong>Frequency</strong> once per round</p><hr /><p><strong>Effect</strong> The orc raiders batter all enemies in a @Template[type:emanation|distance:5] with coordinated knuckle dagger strikes (@Check[reflex|dc:19|basic|options:area-effect] save). The damage depends on the number of actions.</p>\n<p><span class=\"action-glyph\">1</span> @Damage[(1d6+2)[piercing]|options:area-damage] damage</p>\n<p><span class=\"action-glyph\">2</span> @Damage[(2d6+5)[piercing]|options:area-damage] damage</p>\n<p><span class=\"action-glyph\">3</span> @Damage[(3d6+7)[piercing]|options:area-damage] damage</p>"
+                    "description": "<p><span class=\"action-glyph\">1</span> to <span class=\"action-glyph\">3</span></p>\n<p><strong>Frequency</strong> once per round</p><hr /><p><strong>Effect</strong> The orc raiders batter all enemies in a @Template[type:emanation|distance:5] with coordinated knuckle dagger strikes (@Check[reflex|dc:19|basic|options:area-effect] save). The damage depends on the number of actions.</p>\n<p><span class=\"action-glyph\">1</span> @Damage[(1d6+2)[piercing]|options:area-damage] damage</p>\n<p><span class=\"action-glyph\">2</span> @Damage[(2d6+5)[piercing]|options:area-damage] damage</p>\n<p><span class=\"action-glyph\">3</span> @Damage[(3d6+7)[piercing]|options:area-damage] damage</p>"
                 }
             }
         },
@@ -1244,7 +1261,7 @@
                 },
                 "action->Claws, Jaws, and Tails": {
                     "name": "Claws, Jaws, and Tails",
-                    "description": "<p><span class=\"action-glyph\">1</span> to <span class=\"action-glyph\">3</span></p><hr /><p><strong>Frequency</strong> once per round</p><hr /><p><strong>Effect</strong> The tumult viciously attacks each enemy within a @Template[type:emanation|distance:5] (@Check[reflex|dc:29|basic|options:area-effect] save). The damage depends on the number of actions.</p>\n<p><span class=\"action-glyph\">1</span> @Damage[(1d12+1)[untyped]|options:area-damage] damage</p>\n<p><span class=\"action-glyph\">2</span> @Damage[(2d12+10)[untyped]|options:area-damage] damage</p>\n<p><span class=\"action-glyph\">3</span> @Damage[(3d12+11)[untyped]|options:area-damage] damage</p>"
+                    "description": "<p><span class=\"action-glyph\">1</span> to <span class=\"action-glyph\">3</span></p>\n<p><strong>Frequency</strong> once per round</p><hr /><p><strong>Effect</strong> The tumult viciously attacks each enemy within a @Template[type:emanation|distance:5] (@Check[reflex|dc:29|basic|options:area-effect] save). The damage depends on the number of actions.</p>\n<p><span class=\"action-glyph\">1</span> @Damage[(1d12+1)[untyped]|options:area-damage] damage</p>\n<p><span class=\"action-glyph\">2</span> @Damage[(2d12+10)[untyped]|options:area-damage] damage</p>\n<p><span class=\"action-glyph\">3</span> @Damage[(3d12+11)[untyped]|options:area-damage] damage</p>"
                 },
                 "action->Stupefying Swipe": {
                     "name": "Stupefying Swipe",
@@ -1283,7 +1300,7 @@
                 },
                 "action->Scimitar Assault": {
                     "name": "Scimitar Assault",
-                    "description": "<p><strong>Frequency</strong> once per round</p><hr /><p><strong>Effect</strong> The camel corps engages in a coordinated melee attack against each enemy in a @Template[type:emanation|distance:5] (@Check[reflex|dc:21|basic|options:area-effect] save). The damage depends on the number of actions.</p>\n<p><span class=\"action-glyph\">1</span> @Damage[(1d6+1)[slashing]|options:area-damage] damage</p>\n<p><span class=\"action-glyph\">2</span> @Damage[(2d6+7)[slashing]|options:area-damage] damage</p>\n<p><span class=\"action-glyph\">3</span> @Damage[(2d6+11)[slashing]|options:area-damage] damage</p>"
+                    "description": "<p><span class=\"action-glyph\">1</span> to <span class=\"action-glyph\">3</span></p>\n<p><strong>Frequency</strong> once per round</p><hr /><p><strong>Effect</strong> The camel corps engages in a coordinated melee attack against each enemy in a @Template[type:emanation|distance:5] (@Check[reflex|dc:21|basic|options:area-effect] save). The damage depends on the number of actions.</p>\n<p><span class=\"action-glyph\">1</span> @Damage[(1d6+1)[slashing]|options:area-damage] damage</p>\n<p><span class=\"action-glyph\">2</span> @Damage[(2d6+7)[slashing]|options:area-damage] damage</p>\n<p><span class=\"action-glyph\">3</span> @Damage[(2d6+11)[slashing]|options:area-damage] damage</p>"
                 },
                 "action->Trailblazing Stride": {
                     "name": "Trailblazing Stride",
@@ -1314,7 +1331,7 @@
                 },
                 "action->Shank 'Em": {
                     "name": "Shank 'Em",
-                    "description": "<p><strong>Frequency</strong> once per round</p><hr /><p><strong>Effect</strong> The shank squad makes a coordinated attack with shivs and daggers against each enemy in a @Template[type:emanation|distance:5], with a @Check[reflex|dc:22|basic|options:area-effect] save. The damage depends on the number of actions.</p>\n<p><span class=\"action-glyph\">1</span> @Damage[1d6[slashing],1d4[precision]|options:area-damage]{1d6 slashing damage and 1d4 precision damage}</p>\n<p><span class=\"action-glyph\">2</span> @Damage[(2d6+3)[slashing],2d4[precision]|options:area-damage]{2d6+3 slashing damage and 2d4 precision damage}</p>\n<p><span class=\"action-glyph\">3</span> @Damage[(2d6+6)[slashing],3d4[precision]|options:area-damage]{2d6+6 slashing damage and 3d4 precision damage}</p>"
+                    "description": "<p><span class=\"action-glyph\">1</span> to <span class=\"action-glyph\">3</span></p>\n<p><strong>Frequency</strong> once per round</p><hr /><p><strong>Effect</strong> The shank squad makes a coordinated attack with shivs and daggers against each enemy in a @Template[type:emanation|distance:5], with a @Check[reflex|dc:22|basic|options:area-effect] save. The damage depends on the number of actions.</p>\n<p><span class=\"action-glyph\">1</span> @Damage[1d6[slashing],1d4[precision]|options:area-damage]{1d6 slashing damage and 1d4 precision damage}</p>\n<p><span class=\"action-glyph\">2</span> @Damage[(2d6+3)[slashing],2d4[precision]|options:area-damage]{2d6+3 slashing damage and 2d4 precision damage}</p>\n<p><span class=\"action-glyph\">3</span> @Damage[(2d6+6)[slashing],3d4[precision]|options:area-damage]{2d6+6 slashing damage and 3d4 precision damage}</p>"
                 }
             }
         },
@@ -1344,7 +1361,7 @@
                 },
                 "action->Bloody Reaping": {
                     "name": "Bloody Reaping",
-                    "description": "<p><strong>Frequency</strong> once per round</p><hr /><p><strong>Effect</strong> The redcaps in the brigade wildly swing their halberds and sickles at each enemy in a @Template[type:emanation|distance:10], with a @Check[reflex|dc:26|basic|options:area-effect] save. The damage depends on the number of actions.</p>\n<p><span class=\"action-glyph\">1</span> @Damage[(1d10+2)[slashing]|options:area-damage,bloody-reaping-one]</p>\n<p><span class=\"action-glyph\">2</span> @Damage[(2d10+9)[slashing]|options:area-damage,bloody-reaping-two]</p>\n<p><span class=\"action-glyph\">3</span> @Damage[(3d10+10)[slashing]|options:area-damage,bloody-reaping-three]</p>"
+                    "description": "<p><span class=\"action-glyph\">1</span> to <span class=\"action-glyph\">3</span></p>\n<p><strong>Frequency</strong> once per round</p><hr /><p><strong>Effect</strong> The redcaps in the brigade wildly swing their halberds and sickles at each enemy in a @Template[type:emanation|distance:10], with a @Check[reflex|dc:26|basic|options:area-effect] save. The damage depends on the number of actions.</p>\n<p><span class=\"action-glyph\">1</span> @Damage[(1d10+2)[slashing]|options:area-damage,bloody-reaping-one]</p>\n<p><span class=\"action-glyph\">2</span> @Damage[(2d10+9)[slashing]|options:area-damage,bloody-reaping-two]</p>\n<p><span class=\"action-glyph\">3</span> @Damage[(3d10+10)[slashing]|options:area-damage,bloody-reaping-three]</p>"
                 },
                 "action->Bowl Over and Stomp": {
                     "name": "Bowl Over and Stomp",
@@ -1382,7 +1399,7 @@
                 },
                 "action->Stone Slams": {
                     "name": "Stone Slams",
-                    "description": "<p>The scamp avalanche attacks with a flurry of tiny slams. Each enemy in a @Template[type:emanation|distance:5] must attempt a @Check[reflex|dc:21|basic|options:area-effect] save. The damage depends on the number of actions.</p>\n<p><span class=\"action-glyph\">1</span> @Damage[1d6[bludgeoning],1d4[poison]|options:area-damage]{1d6 bludgeoning damage and 1d4 poison damage}</p>\n<p><span class=\"action-glyph\">2</span> @Damage[(2d6+2)[bludgeoning],2d4[poison]|options:area-damage]{2d6+2 bludgeoning damage and 2d4 poison damage}</p>\n<p><span class=\"action-glyph\">3</span> @Damage[(2d6+4)[bludgeoning],3d4[poison]|options:area-damage]{2d6+4 bludgeoning damage and 3d4 poison damage}</p>"
+                    "description": "<p><span class=\"action-glyph\">1</span> to <span class=\"action-glyph\">3</span></p><hr /><p>The scamp avalanche attacks with a flurry of tiny slams. Each enemy in a @Template[type:emanation|distance:5] must attempt a @Check[reflex|dc:21|basic|options:area-effect] save. The damage depends on the number of actions.</p>\n<p><span class=\"action-glyph\">1</span> @Damage[1d6[bludgeoning],1d4[poison]|options:area-damage]{1d6 bludgeoning damage and 1d4 poison damage}</p>\n<p><span class=\"action-glyph\">2</span> @Damage[(2d6+2)[bludgeoning],2d4[poison]|options:area-damage]{2d6+2 bludgeoning damage and 2d4 poison damage}</p>\n<p><span class=\"action-glyph\">3</span> @Damage[(2d6+4)[bludgeoning],3d4[poison]|options:area-damage]{2d6+4 bludgeoning damage and 3d4 poison damage}</p>"
                 }
             }
         },
@@ -1411,7 +1428,7 @@
                 },
                 "action->Drenching Claws": {
                     "name": "Drenching Claws",
-                    "description": "<p>The scamp flood attacks with a flurry of tiny claws. Each enemy in a @Template[type:emanation|distance:5] must attempt a @Check[reflex|dc:21|basic|options:area-effect] save. The damage depends on the number of actions.</p>\n<p><span class=\"action-glyph\">1</span> @Damage[1d6[slashing],1d4[acid]|options:area-damage]{1d6 slashing damage and 1d4 acid damage}</p>\n<p><span class=\"action-glyph\">2</span> @Damage[(2d6+2)[slashing],2d4[acid]|options:area-damage]{2d6+2 slashing damage and 2d4 acid damage}</p>\n<p><span class=\"action-glyph\">3</span> @Damage[(2d6+4)[slashing],3d4[acid]|options:area-damage]{2d6+4 slashing damage and 3d4 acid damage}</p>"
+                    "description": "<p><span class=\"action-glyph\">1</span> to <span class=\"action-glyph\">3</span></p><hr /><p>The scamp flood attacks with a flurry of tiny claws. Each enemy in a @Template[type:emanation|distance:5] must attempt a @Check[reflex|dc:21|basic|options:area-effect] save. The damage depends on the number of actions.</p>\n<p><span class=\"action-glyph\">1</span> @Damage[1d6[slashing],1d4[acid]|options:area-damage]{1d6 slashing damage and 1d4 acid damage}</p>\n<p><span class=\"action-glyph\">2</span> @Damage[(2d6+2)[slashing],2d4[acid]|options:area-damage]{2d6+2 slashing damage and 2d4 acid damage}</p>\n<p><span class=\"action-glyph\">3</span> @Damage[(2d6+4)[slashing],3d4[acid]|options:area-damage]{2d6+4 slashing damage and 3d4 acid damage}</p>"
                 }
             }
         },
@@ -1441,7 +1458,7 @@
                 },
                 "action->Burning Bites": {
                     "name": "Burning Bites",
-                    "description": "<p>The scamp inferno attacks with a flurry of tiny teeth and flickering flames. Each enemy in a @Template[type:emanation|distance:5] must attempt a @Check[reflex|dc:21|basic|options:area-effect] save. The damage depends on the number of actions.</p>\n<p><span class=\"action-glyph\">1</span> @Damage[1d6[piercing],1d4[fire]|options:area-damage]{1d6 piercing damage and 1d4 fire damage}</p>\n<p><span class=\"action-glyph\">2</span> @Damage[(2d6+2)[piercing],2d4[fire]|options:area-damage]{2d6+2 piercing damage and 2d4 fire damage}</p>\n<p><span class=\"action-glyph\">3</span> @Damage[(2d6+4)[piercing],3d4[fire]|options:area-damage]{2d6+4 piercing damage and 3d4 fire damage}</p>"
+                    "description": "<p><span class=\"action-glyph\">1</span> to <span class=\"action-glyph\">3</span></p><hr /><p>The scamp inferno attacks with a flurry of tiny teeth and flickering flames. Each enemy in a @Template[type:emanation|distance:5] must attempt a @Check[reflex|dc:21|basic|options:area-effect] save. The damage depends on the number of actions.</p>\n<p><span class=\"action-glyph\">1</span> @Damage[1d6[piercing],1d4[fire]|options:area-damage]{1d6 piercing damage and 1d4 fire damage}</p>\n<p><span class=\"action-glyph\">2</span> @Damage[(2d6+2)[piercing],2d4[fire]|options:area-damage]{2d6+2 piercing damage and 2d4 fire damage}</p>\n<p><span class=\"action-glyph\">3</span> @Damage[(2d6+4)[piercing],3d4[fire]|options:area-damage]{2d6+4 piercing damage and 3d4 fire damage}</p>"
                 },
                 "action->Flame Breath": {
                     "name": "Flame Breath",
@@ -1470,7 +1487,7 @@
                 },
                 "action->Metallic Claws": {
                     "name": "Metallic Claws",
-                    "description": "<p>The scamp shrapnel attacks with a flurry of tiny claws. Each enemy in a @Template[type:emanation|distance:5] must attempt a @Check[reflex|dc:21|basic|options:area-effect] save. The damage depends on the number of actions.</p>\n<p><span class=\"action-glyph\">1</span> @Damage[1d6[slashing],1d4[bleed]|options:area-damage]{1d6 slashing damage and 1d4 bleed damage}</p>\n<p><span class=\"action-glyph\">2</span> @Damage[(2d6+2)[slashing],2d4[bleed]|options:area-damage]{2d6+2 slashing damage and 2d4 bleed damage}</p>\n<p><span class=\"action-glyph\">3</span> @Damage[(2d6+4)[slashing],3d4[bleed]|options:area-damage]{2d6+4 slashing damage and 3d4 bleed damage}</p>"
+                    "description": "<p><span class=\"action-glyph\">1</span> to <span class=\"action-glyph\">3</span></p><hr /><p>The scamp shrapnel attacks with a flurry of tiny claws. Each enemy in a @Template[type:emanation|distance:5] must attempt a @Check[reflex|dc:21|basic|options:area-effect] save. The damage depends on the number of actions.</p>\n<p><span class=\"action-glyph\">1</span> @Damage[1d6[slashing],1d4[bleed]|options:area-damage]{1d6 slashing damage and 1d4 bleed damage}</p>\n<p><span class=\"action-glyph\">2</span> @Damage[(2d6+2)[slashing],2d4[bleed]|options:area-damage]{2d6+2 slashing damage and 2d4 bleed damage}</p>\n<p><span class=\"action-glyph\">3</span> @Damage[(2d6+4)[slashing],3d4[bleed]|options:area-damage]{2d6+4 slashing damage and 3d4 bleed damage}</p>"
                 },
                 "action->Shrapnel Breath": {
                     "name": "Shrapnel Breath",
@@ -1506,7 +1523,7 @@
                 },
                 "action->Thorny Claws": {
                     "name": "Thorny Claws",
-                    "description": "<p>The scamp tangle attacks with a flurry of tiny claws. Each enemy in a @Template[type:emanation|distance:5] must attempt a @Check[reflex|dc:21|basic|options:area-effect] save. The damage depends on the number of actions.</p>\n<p><span class=\"action-glyph\">1</span> @Damage[1d6[piercing],1d4[bleed]|options:area-damage]{1d6 piercing damage and 1d4 persistent bleed damage}</p>\n<p><span class=\"action-glyph\">2</span> @Damage[(2d6+2)[piercing],2d4[bleed]|options:area-damage]{2d6+2 piercing damage and 2d4 persistent bleed damage}</p>\n<p><span class=\"action-glyph\">3</span> @Damage[(2d6+4)[piercing],3d4[bleed]|options:area-damage]{2d6+4 piercing damage and 3d4 persistent bleed damage}</p>"
+                    "description": "<p><span class=\"action-glyph\">1</span> to <span class=\"action-glyph\">3</span></p><hr /><p>The scamp tangle attacks with a flurry of tiny claws. Each enemy in a @Template[type:emanation|distance:5] must attempt a @Check[reflex|dc:21|basic|options:area-effect] save. The damage depends on the number of actions.</p>\n<p><span class=\"action-glyph\">1</span> @Damage[1d6[piercing],1d4[bleed]|options:area-damage]{1d6 piercing damage and 1d4 persistent bleed damage}</p>\n<p><span class=\"action-glyph\">2</span> @Damage[(2d6+2)[piercing],2d4[bleed]|options:area-damage]{2d6+2 piercing damage and 2d4 persistent bleed damage}</p>\n<p><span class=\"action-glyph\">3</span> @Damage[(2d6+4)[piercing],3d4[bleed]|options:area-damage]{2d6+4 piercing damage and 3d4 persistent bleed damage}</p>"
                 }
             }
         },
@@ -1540,7 +1557,7 @@
                 },
                 "action->Sonic Slams": {
                     "name": "Sonic Slams",
-                    "description": "<p>The scamp whirlwind attacks with a flurry of tiny slams. Each enemy in a @Template[type:emanation|distance:5] must attempt a @Check[reflex|dc:21|basic|options:area-effect] save. The damage depends on the number of actions.</p>\n<p><span class=\"action-glyph\">1</span> @Damage[1d6[bludgeoning],1d4[sonic]|options:area-damage]{1d6 bludgeoning damage and 1d4 sonic damage}</p>\n<p><span class=\"action-glyph\">2</span> @Damage[(2d6+2)[bludgeoning],2d4[sonic]|options:area-damage]{2d6+2 bludgeoning damage and 2d4 sonic damage}</p>\n<p><span class=\"action-glyph\">3</span> @Damage[(2d6+4)[bludgeoning],3d4[sonic]|options:area-damage]{2d6+4 bludgeoning damage and 3d4 sonic damage}</p>"
+                    "description": "<p><span class=\"action-glyph\">1</span> to <span class=\"action-glyph\">3</span></p><hr /><p>The scamp whirlwind attacks with a flurry of tiny slams. Each enemy in a @Template[type:emanation|distance:5] must attempt a @Check[reflex|dc:21|basic|options:area-effect] save. The damage depends on the number of actions.</p>\n<p><span class=\"action-glyph\">1</span> @Damage[1d6[bludgeoning],1d4[sonic]|options:area-damage]{1d6 bludgeoning damage and 1d4 sonic damage}</p>\n<p><span class=\"action-glyph\">2</span> @Damage[(2d6+2)[bludgeoning],2d4[sonic]|options:area-damage]{2d6+2 bludgeoning damage and 2d4 sonic damage}</p>\n<p><span class=\"action-glyph\">3</span> @Damage[(2d6+4)[bludgeoning],3d4[sonic]|options:area-damage]{2d6+4 bludgeoning damage and 3d4 sonic damage}</p>"
                 }
             }
         },
@@ -1568,7 +1585,7 @@
                 },
                 "action->Sinful Assault": {
                     "name": "Sinful Assault",
-                    "description": "<p><strong>Frequency</strong> once per round</p><hr /><p><strong>Effect</strong> The sinswarm makes a coordinated attack against each enemy in a @Template[type:emanation|distance:5], with a @Check[reflex|dc:25|basic|options:area-effect] save. The damage depends on the number of actions.</p>\n<p><span class=\"action-glyph\">1</span> @Damage[(1d8+2)[piercing]|options:area-damage] damage</p>\n<p><span class=\"action-glyph\">2</span> @Damage[(2d8+9)[piercing]|options:area-damage,sinful-bite] damage plus sinful bite</p>\n<p><span class=\"action-glyph\">3</span> @Damage[(3d8+11)[piercing]|options:area-damage,sinful-bite] damage plus sinful bite</p>"
+                    "description": "<p><span class=\"action-glyph\">1</span> to <span class=\"action-glyph\">3</span></p>\n<p><strong>Frequency</strong> once per round</p><hr /><p><strong>Effect</strong> The sinswarm makes a coordinated attack against each enemy in a @Template[type:emanation|distance:5], with a @Check[reflex|dc:25|basic|options:area-effect] save. The damage depends on the number of actions.</p>\n<p><span class=\"action-glyph\">1</span> @Damage[(1d8+2)[piercing]|options:area-damage] damage</p>\n<p><span class=\"action-glyph\">2</span> @Damage[(2d8+9)[piercing]|options:area-damage,sinful-bite] damage plus sinful bite</p>\n<p><span class=\"action-glyph\">3</span> @Damage[(3d8+11)[piercing]|options:area-damage,sinful-bite] damage plus sinful bite</p>"
                 },
                 "action->Sinful Bite": {
                     "name": "Sinful Bite",
@@ -1598,7 +1615,7 @@
                 },
                 "action->Rattling Bones": {
                     "name": "Rattling Bones",
-                    "description": "<p><strong>Frequency</strong> once per round</p><hr /><p><strong>Effect</strong> The skeletons engage using their claws and broken bones to attack each enemy in a @Template[type:emanation|distance:5], with a @Check[reflex|dc:21|basic|options:area-effect] save. The damage depends on the number of actions.</p>\n<p><span class=\"action-glyph\">1</span> @Damage[(1d4+1)[piercing]|options:area-damage] damage</p>\n<p><span class=\"action-glyph\">2</span> @Damage[(2d4+7)[piercing]|options:area-damage] damage</p>\n<p><span class=\"action-glyph\">3</span> @Damage[(3d4+10)[piercing]|options:area-damage] damage</p>"
+                    "description": "<p><span class=\"action-glyph\">1</span> to <span class=\"action-glyph\">3</span></p>\n<p><strong>Frequency</strong> once per round</p><hr /><p><strong>Effect</strong> The skeletons engage using their claws and broken bones to attack each enemy in a @Template[type:emanation|distance:5], with a @Check[reflex|dc:21|basic|options:area-effect] save. The damage depends on the number of actions.</p>\n<p><span class=\"action-glyph\">1</span> @Damage[(1d4+1)[piercing]|options:area-damage] damage</p>\n<p><span class=\"action-glyph\">2</span> @Damage[(2d4+7)[piercing]|options:area-damage] damage</p>\n<p><span class=\"action-glyph\">3</span> @Damage[(3d4+10)[piercing]|options:area-damage] damage</p>"
                 }
             }
         },
@@ -1638,7 +1655,7 @@
                 },
                 "action->Harvest the Wicked": {
                     "name": "Harvest the Wicked",
-                    "description": "<p><strong>Frequency</strong> once per round</p><hr /><p><strong>Effect</strong> The vanths swing their scythes in a coordinated melee attack. Each enemy in a @Template[type:emanation|distance:5] must attempt a @Check[reflex|dc:30|basic|options:area-effect] save. The damage depends on the number of actions. The slashing damage is treated as adamantine, cold iron, and silver.</p>\n<p><span class=\"action-glyph\">1</span> @Damage[(1d10+1)[slashing],1d6[untyped]|options:area-damage,item:rune:property:ghost-touch]{1d10+1 slashing damage plus 1d6 shepherd's touch}</p>\n<p><span class=\"action-glyph\">2</span> @Damage[(2d10+3)[slashing],3d6[untyped]|options:area-damage,item:rune:property:ghost-touch]{2d10+3 slashing damage plus 3d6 shepherd's touch}</p>\n<p><span class=\"action-glyph\">3</span> @Damage[(2d10+7)[slashing],4d6[untyped]|options:area-damage,item:rune:property:ghost-touch]{2d10+7 slashing damage plus 4d6 shepherd's touch}</p>"
+                    "description": "<p><span class=\"action-glyph\">1</span> to <span class=\"action-glyph\">3</span></p>\n<p><strong>Frequency</strong> once per round</p><hr /><p><strong>Effect</strong> The vanths swing their scythes in a coordinated melee attack. Each enemy in a @Template[type:emanation|distance:5] must attempt a @Check[reflex|dc:30|basic|options:area-effect] save. The damage depends on the number of actions. The slashing damage is treated as adamantine, cold iron, and silver.</p>\n<p><span class=\"action-glyph\">1</span> @Damage[(1d10+1)[slashing],1d6[untyped]|options:area-damage,item:rune:property:ghost-touch]{1d10+1 slashing damage plus 1d6 shepherd's touch}</p>\n<p><span class=\"action-glyph\">2</span> @Damage[(2d10+3)[slashing],3d6[untyped]|options:area-damage,item:rune:property:ghost-touch]{2d10+3 slashing damage plus 3d6 shepherd's touch}</p>\n<p><span class=\"action-glyph\">3</span> @Damage[(2d10+7)[slashing],4d6[untyped]|options:area-damage,item:rune:property:ghost-touch]{2d10+7 slashing damage plus 4d6 shepherd's touch}</p>"
                 },
                 "action->Shepherd\u2019s Touch": {
                     "name": "Shepherd\u2019s Touch",
@@ -1671,7 +1688,7 @@
                 },
                 "action->Berserker Strikes": {
                     "name": "Berserker Strikes",
-                    "description": "<p><strong>Frequency</strong> once per round</p><hr /><p><strong>Effect</strong> Battle axes in hand, the viking guard engages in a coordinated melee attack against enemies in a @Template[type:emanation|distance:5], with a @Check[reflex|dc:27|basic|options:area-effect] save. The damage depends on the number of actions.</p>\n<p><span class=\"action-glyph\">1</span> @Damage[(1d8+3)[slashing]|options:area-damage] damage</p>\n<p><span class=\"action-glyph\">2</span> @Damage[(2d8+12)[slashing]|options:area-damage] damage</p>\n<p><span class=\"action-glyph\">3</span> @Damage[(3d8+15)[slashing]|options:area-damage] damage</p>"
+                    "description": "<p><span class=\"action-glyph\">1</span> to <span class=\"action-glyph\">3</span></p>\n<p><strong>Frequency</strong> once per round</p><hr /><p><strong>Effect</strong> Battle axes in hand, the viking guard engages in a coordinated melee attack against enemies in a @Template[type:emanation|distance:5], with a @Check[reflex|dc:27|basic|options:area-effect] save. The damage depends on the number of actions.</p>\n<p><span class=\"action-glyph\">1</span> @Damage[(1d8+3)[slashing]|options:area-damage] damage</p>\n<p><span class=\"action-glyph\">2</span> @Damage[(2d8+12)[slashing]|options:area-damage] damage</p>\n<p><span class=\"action-glyph\">3</span> @Damage[(3d8+15)[slashing]|options:area-damage] damage</p>"
                 },
                 "action->Guard Charge": {
                     "name": "Guard Charge",
@@ -1717,7 +1734,7 @@
                 },
                 "action->Tines of Dis": {
                     "name": "Tines of Dis",
-                    "description": "<p><strong>Frequency</strong> once per round</p><hr /><p><strong>Effect</strong> The vordines of the legion make coordinated melee attacks with their tridents. Each enemy within a @Template[type:emanation|distance:5] must attempt a @Check[reflex|dc:26|basic|options:area-effect] save. The damage depends on the number of actions.</p>\n<p><span class=\"action-glyph\">1</span> @Damage[(1d8+2)[piercing]|options:area-damage] damage</p>\n<p><span class=\"action-glyph\">2</span> @Damage[(2d8+11)[piercing]|options:area-damage] damage</p>\n<p><span class=\"action-glyph\">3</span> @Damage[(3d8+14)[piercing]|options:area-damage] damage</p>"
+                    "description": "<p><span class=\"action-glyph\">1</span> to <span class=\"action-glyph\">3</span></p>\n<p><strong>Frequency</strong> once per round</p><hr /><p><strong>Effect</strong> The vordines of the legion make coordinated melee attacks with their tridents. Each enemy within a @Template[type:emanation|distance:5] must attempt a @Check[reflex|dc:26|basic|options:area-effect] save. The damage depends on the number of actions.</p>\n<p><span class=\"action-glyph\">1</span> @Damage[(1d8+2)[piercing]|options:area-damage] damage</p>\n<p><span class=\"action-glyph\">2</span> @Damage[(2d8+11)[piercing]|options:area-damage] damage</p>\n<p><span class=\"action-glyph\">3</span> @Damage[(3d8+14)[piercing]|options:area-damage] damage</p>"
                 },
                 "lore->Warfare Lore": {
                     "name": "Warfare Lore"
@@ -1754,7 +1771,7 @@
                 },
                 "action->Hateful Daggers": {
                     "name": "Hateful Daggers",
-                    "description": "<p>The wights coordinate melee attacks with the daggers they were buried with. Each enemy within a @Template[type:emanation|distance:5] attempts a @Check[reflex|dc:25|basic|options:area-effect] save. The damage depends on the number of actions. On a failed save, the creature is also exposed to corrupting spite.</p>\n<p><span class=\"action-glyph\">1</span> @Damage[2d4[piercing]|options:area-damage] damage</p>\n<p><span class=\"action-glyph\">2</span> @Damage[(4d4+8)[piercing]|options:area-damage] damage</p>\n<p><span class=\"action-glyph\">3</span> @Damage[(4d4+14)[piercing]|options:area-damage] damage</p>"
+                    "description": "<p><span class=\"action-glyph\">1</span> to <span class=\"action-glyph\">3</span></p><hr /><p>The wights coordinate melee attacks with the daggers they were buried with. Each enemy within a @Template[type:emanation|distance:5] attempts a @Check[reflex|dc:25|basic|options:area-effect] save. The damage depends on the number of actions. On a failed save, the creature is also exposed to corrupting spite.</p>\n<p><span class=\"action-glyph\">1</span> @Damage[2d4[piercing]|options:area-damage] damage</p>\n<p><span class=\"action-glyph\">2</span> @Damage[(4d4+8)[piercing]|options:area-damage] damage</p>\n<p><span class=\"action-glyph\">3</span> @Damage[(4d4+14)[piercing]|options:area-damage] damage</p>"
                 }
             }
         },
@@ -1777,7 +1794,7 @@
                 },
                 "action->Pack Hunt": {
                     "name": "Pack Hunt",
-                    "description": "<p>The wolves work together to fell their opponents. Each enemy within a @Template[type:emanation|distance:5] attempts a @Check[reflex|dc:21|basic|options:area-effect] save. A creature who is @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone} is @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 2} for this attack. The damage depends on the number of actions.</p>\n<p><span class=\"action-glyph\">1</span> @Damage[(1d6+1)[piercing]|options:area-damage] damage</p>\n<p><span class=\"action-glyph\">2</span> @Damage[(2d6+7)[piercing]|options:area-damage] damage</p>\n<p><span class=\"action-glyph\">3</span> @Damage[(2d6+11)[piercing]|options:area-damage] damage</p>"
+                    "description": "<p><span class=\"action-glyph\">1</span> to <span class=\"action-glyph\">3</span></p><hr /><p>The wolves work together to fell their opponents. Each enemy within a @Template[type:emanation|distance:5] attempts a @Check[reflex|dc:21|basic|options:area-effect] save. A creature who is @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone} is @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 2} for this attack. The damage depends on the number of actions.</p>\n<p><span class=\"action-glyph\">1</span> @Damage[(1d6+1)[piercing]|options:area-damage] damage</p>\n<p><span class=\"action-glyph\">2</span> @Damage[(2d6+7)[piercing]|options:area-damage] damage</p>\n<p><span class=\"action-glyph\">3</span> @Damage[(2d6+11)[piercing]|options:area-damage] damage</p>"
                 }
             }
         },
@@ -1799,7 +1816,7 @@
                 },
                 "action->Club Offensive": {
                     "name": "Club Offensive",
-                    "description": "<p><strong>Frequency</strong> once per round</p><hr /><p><strong>Effect</strong> The xulgaths make coordinated melee attacks against each enemy in @Template[type:emanation|distance:5], with a @Check[reflex|dc:21|basic|options:area-effect] save. The damage dealt depends on the number of actions.</p>\n<p><span class=\"action-glyph\">1</span> @Damage[(1d6+1)[bludgeoning]|options:area-damage] damage</p>\n<p><span class=\"action-glyph\">2</span> @Damage[(2d6+7)[bludgeoning]|options:area-damage] damage</p>\n<p><span class=\"action-glyph\">3</span> @Damage[(2d6+12)[bludgeoning]|options:area-damage] damage</p>"
+                    "description": "<p><span class=\"action-glyph\">1</span> to <span class=\"action-glyph\">3</span></p>\n<p><strong>Frequency</strong> once per round</p><hr /><p><strong>Effect</strong> The xulgaths make coordinated melee attacks against each enemy in @Template[type:emanation|distance:5], with a @Check[reflex|dc:21|basic|options:area-effect] save. The damage dealt depends on the number of actions.</p>\n<p><span class=\"action-glyph\">1</span> @Damage[(1d6+1)[bludgeoning]|options:area-damage] damage</p>\n<p><span class=\"action-glyph\">2</span> @Damage[(2d6+7)[bludgeoning]|options:area-damage] damage</p>\n<p><span class=\"action-glyph\">3</span> @Damage[(2d6+12)[bludgeoning]|options:area-damage] damage</p>"
                 },
                 "action->Javelin Barrage": {
                     "name": "Javelin Barrage",
@@ -1838,7 +1855,7 @@
                 },
                 "action->Spears, Teeth, and Horns": {
                     "name": "Spears, Teeth, and Horns",
-                    "description": "<p><strong>Frequency</strong> once per round</p><hr /><p><strong>Effect</strong> The cavalry makes a coordinated melee attack against each enemy in @Template[type:emanation|distance:10], with a @Check[reflex|dc:30|basic|options:area-effect] save. The damage dealt depends on the number of actions.</p>\n<p><span class=\"action-glyph\">1</span> @Damage[(2d6+2)[piercing]|options:area-damage] damage</p>\n<p><span class=\"action-glyph\">2</span> @Damage[(4d6+10)[piercing]|options:area-damage] damage</p>\n<p><span class=\"action-glyph\">3</span> @Damage[(5d6+15)[piercing]|options:area-damage] damage</p>"
+                    "description": "<p><span class=\"action-glyph\">1</span> to <span class=\"action-glyph\">3</span></p>\n<p><strong>Frequency</strong> once per round</p><hr /><p><strong>Effect</strong> The cavalry makes a coordinated melee attack against each enemy in @Template[type:emanation|distance:10], with a @Check[reflex|dc:30|basic|options:area-effect] save. The damage dealt depends on the number of actions.</p>\n<p><span class=\"action-glyph\">1</span> @Damage[(2d6+2)[piercing]|options:area-damage] damage</p>\n<p><span class=\"action-glyph\">2</span> @Damage[(4d6+10)[piercing]|options:area-damage] damage</p>\n<p><span class=\"action-glyph\">3</span> @Damage[(5d6+15)[piercing]|options:area-damage] damage</p>"
                 },
                 "action->Trample": {
                     "name": "Trample",
@@ -1868,7 +1885,7 @@
                 },
                 "action->Mandible Frenzy": {
                     "name": "Mandible Frenzy",
-                    "description": "<p><strong>Frequency</strong> once per round</p><hr /><p><strong>Effect</strong> The horde makes a vicious bite attack against each enemy in a @Template[type:emanation|distance:5] (@Check[reflex|dc:27|basic|options:area-effect] save). The damage dealt depends on the number of actions.</p>\n<p><span class=\"action-glyph\">1</span> @Damage[(1d8+2)[piercing]|options:area-damage] damage</p>\n<p><span class=\"action-glyph\">2</span> @Damage[(2d8+12)[piercing]|options:area-damage] damage</p>\n<p><span class=\"action-glyph\">3</span> @Damage[(3d8+15)[piercing]|options:area-damage] damage</p>"
+                    "description": "<p><span class=\"action-glyph\">1</span> to <span class=\"action-glyph\">3</span></p>\n<p><strong>Frequency</strong> once per round</p><hr /><p><strong>Effect</strong> The horde makes a vicious bite attack against each enemy in a @Template[type:emanation|distance:5] (@Check[reflex|dc:27|basic|options:area-effect] save). The damage dealt depends on the number of actions.</p>\n<p><span class=\"action-glyph\">1</span> @Damage[(1d8+2)[piercing]|options:area-damage] damage</p>\n<p><span class=\"action-glyph\">2</span> @Damage[(2d8+12)[piercing]|options:area-damage] damage</p>\n<p><span class=\"action-glyph\">3</span> @Damage[(3d8+15)[piercing]|options:area-damage] damage</p>"
                 },
                 "action->Mucus Deluge": {
                     "name": "Mucus Deluge",
