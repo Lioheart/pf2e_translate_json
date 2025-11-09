@@ -825,22 +825,22 @@
                     "name": "Dragon Bile (Applied to body)",
                     "description": "<p>A mix of digestive juices and green dragon poison glands nauseates the victim as its flesh is digested from within.</p>\n<p><strong>Activate</strong> <span class=\"action-glyph\">A</span> Interact (Contact)</p>\n<p><strong>Saving Throw</strong> @Check[fortitude|dc:37]</p>\n<p><strong>Onset</strong> 1 minute</p>\n<p><strong>Maximum Duration</strong> 6 rounds</p>\n<p><strong>Stage 1</strong> @Damage[6d6[poison]] damage and @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 2} (1 round)</p>\n<p><strong>Stage 2</strong> @Damage[7d6[poison]] damage and @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 3} (1 round)</p>\n<p><strong>Stage 3</strong> @Damage[9d6[poison]] damage and @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 4} (1 round)</p>"
                 },
-                "strike-ranged->Major Acid Flask": {
+                "strike-melee->Major Acid Flask": {
                     "name": "Major Acid Flask"
                 },
-                "strike-ranged->Major Tanglefoot Bag": {
+                "strike-melee->Major Tanglefoot Bag": {
                     "name": "Major Tanglefoot Bag"
                 },
-                "strike-ranged->Major Bottled Lightning": {
+                "strike-melee->Major Bottled Lightning": {
                     "name": "Major Bottled Lightning"
                 },
-                "strike-ranged->Major Frost Vial": {
+                "strike-melee->Major Frost Vial": {
                     "name": "Major Frost Vial"
                 },
-                "strike-ranged->Major Thunderstone": {
+                "strike-melee->Major Thunderstone": {
                     "name": "Major Thunderstone"
                 },
-                "strike-ranged->Hidden Cheek Needles": {
+                "strike-melee->Hidden Cheek Needles": {
                     "name": "Hidden Cheek Needles",
                     "description": "<p>Only one poison is applied</p>"
                 },
@@ -2298,7 +2298,7 @@
                 "strike-melee->Claw": {
                     "name": "Claw"
                 },
-                "strike-ranged->Foxfire": {
+                "strike-melee->Foxfire": {
                     "name": "Foxfire"
                 },
                 "action->Emotionsense": {
@@ -3399,7 +3399,7 @@
                     "name": "Steel Shield",
                     "description": "<p>Like wooden shields, steel shields come in a variety of shapes and sizes. Though more expensive than wooden shields, they are much more durable.</p>\n<table class=\"pf2e\">\n<thead>\n<tr>\n<th>Hardness</th>\n<th>HP</th>\n<th>BT</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>5</td>\n<td>20</td>\n<td>10</td>\n</tr>\n</tbody>\n</table>"
                 },
-                "consumable->Arrows": {
+                "ammo->Arrows": {
                     "name": "Arrows",
                     "description": "<p>These projectiles are the ammunition for bows. The shaft of an arrow is made of wood. It is stabilized in flight by fletching at one end and bears a metal head on the other.</p>"
                 },
@@ -3664,11 +3664,11 @@
                     "name": "Halfling Sling Staff",
                     "description": "<p>This staff ends in a Y-shaped split that cradles a sling. The length of the staff provides excellent leverage when used two-handed to fling rocks or bullets from the sling.</p>"
                 },
-                "consumable->Explosive Ammunition (Greater)": {
+                "ammo->Explosive Ammunition (Greater)": {
                     "name": "Explosive Ammunition (Greater)",
                     "description": "<p><strong>Activate</strong> <span class=\"action-glyph\">A</span> Interact</p>\n<p>This piece of ammunition is coated in gritty black soot. When activated <em>explosive ammunition</em> hits a target, the missile explodes in a @Template[burst|distance:10], dealing [[/r10d6]] fire damage to each creature in the area (including the target). Each creature must attempt a @Check[reflex|dc:30|basic|name:Greater Explosive Ammunition] save.</p>"
                 },
-                "consumable->Sling Bullets": {
+                "ammo->Sling Bullets": {
                     "name": "Sling Bullets",
                     "description": "<p>These are small metal balls, typically either iron or lead, designed to be used as ammunition in slings.</p>"
                 },
@@ -3705,7 +3705,7 @@
             "blurb": "Male frost goblin wrestler",
             "allSavesBonus": "+3 status to all saves vs. evocation",
             "items": {
-                "consumable->Explosive Ammunition (Greater)": {
+                "ammo->Explosive Ammunition (Greater)": {
                     "name": "Explosive Ammunition (Greater)",
                     "description": "<p><strong>Ammunition</strong> any</p>\n<p><strong>Activate</strong> <span class=\"action-glyph\">A</span> (manipulate)</p>\n<hr />\n<p>This piece of ammunition is coated in gritty black soot. When activated <em>greater explosive ammunition</em> hits a target, the missile explodes in a @Template[burst|distance:10], dealing @Damage[10d6[fire]|options:area-damage] damage to each creature in the area (including the target). Each creature must attempt a @Check[reflex|dc:30|basic|options:area-effect] save.</p>"
                 },
@@ -4121,7 +4121,7 @@
                 "strike-melee->Palm": {
                     "name": "Palm"
                 },
-                "strike-ranged->Vitality Blast": {
+                "strike-melee->Vitality Blast": {
                     "name": "Vitality Blast"
                 },
                 "action->Lifesense": {
@@ -4246,7 +4246,7 @@
                 "strike-melee->Tentacle": {
                     "name": "Tentacle"
                 },
-                "strike-ranged->Warpspines": {
+                "strike-melee->Warpspines": {
                     "name": "Warpspines"
                 },
                 "action->Center of the World": {
@@ -4489,8 +4489,8 @@
                 "action->Constant Spells": {
                     "name": "Constant Spells"
                 },
-                "action->+2 status to all saves vs. chaotic": {
-                    "name": "+2 status to all saves vs. chaotic"
+                "action->+2 Status to All Saves vs. Chaotic": {
+                    "name": "+2 Status to All Saves vs. Chaotic"
                 },
                 "action->Fast Healing 20": {
                     "name": "Fast Healing 20"
@@ -4719,11 +4719,11 @@
             "allSavesBonus": "+2 status to all saves vs. air and electricity",
             "languagesDetails": "(can't speak any language)",
             "items": {
-                "strike-ranged->Vacuum Slash": {
+                "strike-melee->Vacuum Slash": {
                     "name": "Vacuum Slash"
                 },
-                "action->+2 status to all saves vs. air and electricity": {
-                    "name": "+2 status to all saves vs. air and electricity"
+                "action->+2 Status to All Saves vs. Air and Electricity": {
+                    "name": "+2 Status to All Saves vs. Air and Electricity"
                 },
                 "action->Attack of Opportunity": {
                     "name": "Attack of Opportunity"
@@ -5327,7 +5327,7 @@
                 "strike-melee->Fangs": {
                     "name": "Fangs"
                 },
-                "strike-ranged->Venom": {
+                "strike-melee->Venom": {
                     "name": "Venom"
                 },
                 "action->Poisonous Floodwaters": {

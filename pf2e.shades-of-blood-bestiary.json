@@ -25,7 +25,7 @@
             "publicNotes": "<p>Aeon stone swarms are constructs composed of hundreds of magical gems called <em>aeon stones</em> that orbit around a central point in a tumultuous, ever-shifting mass. Each swarm is imbued with intelligence and composed of a collection of <em>aeon stones</em>, which can arrange themselves in a variety of configurations to activate unique resonant powers. While most aeon stone swarms adopt similar configurations, it's possible to create swarms with experimental structures, resulting in different or additional resonant powers.</p>\n<p>Many aeon stone swarms are created to protect a particular location clandestinely, with the swarm using its subterfuge resonance to disguise itself as a mosaic of precious stones or a pile of gemstones lying in an open chest. Unfortunately for would-be thieves, nearly all the <em>aeon stones</em> composing an aeon stone swarm shatter when the swarm is destroyed.</p><h2>Aeon Stones</h2><p>When an aeon stone swarm is destroyed, most of the <em>aeon stones</em> composing its body shatter and explode, but a few remain whole. Adventurers willing to sift through mounds of sharp aeon stone shards are usually rewarded with a <em>consumed aeon stone</em>, a <em>preserving aeon stone</em>, or a <em>sprouting aeon stone</em>\u2014perhaps even a <em>nourishing aeon stone</em> or <em>smoothing aeon stone</em> for the particularly lucky!</p>",
             "languagesDetails": "can't speak any language",
             "items": {
-                "strike-ranged->Launched Aeon Stone": {
+                "strike-melee->Launched Aeon Stone": {
                     "name": "Launched Aeon Stone"
                 },
                 "action->Swarm Mind": {
@@ -222,7 +222,7 @@
                     "name": "Sturdy Shield (Lesser)",
                     "description": "<p>With a superior design and excellent craftsmanship, this steel shield has higher Hardness than its non-magical counterparts, making it harder to break and destroy.</p>\n<p>The shield has Hardness 10, HP 80, and BT 40.</p>"
                 },
-                "strike-ranged->Bolt Emitter": {
+                "strike-melee->Bolt Emitter": {
                     "name": "Bolt Emitter",
                     "description": "<p>See below.</p>"
                 },
@@ -265,7 +265,7 @@
                 "strike-melee->Ranseur": {
                     "name": "Ranseur"
                 },
-                "strike-ranged->Hand Crossbow": {
+                "strike-melee->Hand Crossbow": {
                     "name": "Hand Crossbow"
                 },
                 "action->Vulnerable to Sunlight": {
@@ -419,7 +419,7 @@
                 "strike-melee->Fist": {
                     "name": "Fist"
                 },
-                "strike-ranged->Festering Fluid": {
+                "strike-melee->Festering Fluid": {
                     "name": "Festering Fluid"
                 },
                 "action->Wind-Up": {
@@ -452,7 +452,7 @@
                 "strike-melee->Fist": {
                     "name": "Fist"
                 },
-                "strike-ranged->Pulse Blast": {
+                "strike-melee->Pulse Blast": {
                     "name": "Pulse Blast"
                 },
                 "action->Wind-Up": {
@@ -524,7 +524,7 @@
                 "strike-melee->Conductor's Baton": {
                     "name": "Conductor's Baton"
                 },
-                "strike-ranged->Pinpoint Shriek": {
+                "strike-melee->Pinpoint Shriek": {
                     "name": "Pinpoint Shriek"
                 },
                 "action->Painsight": {
@@ -705,7 +705,7 @@
                 "strike-melee->Gauntlet": {
                     "name": "Gauntlet"
                 },
-                "strike-ranged->Energy Expulsor Innovation": {
+                "strike-melee->Energy Expulsor Innovation": {
                     "name": "Energy Expulsor Innovation"
                 },
                 "action->Gas 'Em!": {
@@ -871,7 +871,7 @@
                 "spell->Telekinetic Maneuver (At Will)": {
                     "name": "Telekinetic Maneuver (At Will)"
                 },
-                "strike-ranged->Telekinetic Object": {
+                "strike-melee->Telekinetic Object": {
                     "name": "Telekinetic Object",
                     "description": "<p>Damage type depends on object thrown</p>"
                 },
@@ -931,11 +931,11 @@
             "publicNotes": "<p>Monstrous humanoids that resemble humans with snakes instead of hair, medusas are best known for their petrifying gazes that\u2014if lingered upon\u2014can permanently transform mortals to stone. Medusas are shrewd and manipulative adversaries who collect and covet secrets, and who use threats and guile to exploit the fears of weaker creatures. A medusa may seek out powerful magic items, use divining magic to discover secret knowledge and unlock forbidden power, or infiltrate a society to beguile influential politicians. Their ability to worm their way into powerful organizations makes them natural leaders of criminal outfits and thieves' guilds, and their interest in magical phenomena leads some to pursue careers as oracles who offer to help adventurers find what they seek\u2014for a price. Of course, if wit and deception prove insufficient, a medusa can always simply turn rivals into ornate stone decorations with little more than a glare. Many medusas build elaborate lairs to call home, often decorated with the statues of their foes turned into macabre trophies on prominent display.</p>\n<p>Exceptionally agile and surprisingly hardy, a medusa rarely backs down from a conflict, even when cornered. Many adventurers who thought themselves readied to resist the effects of a medusa's gaze have nevertheless fallen to a medusa, as these creatures are also often deadly archers able to riddle their foes with venom-coated arrows from a distance. Still, a medusa may barter for their life if no alternatives remain, and the secrets carried by these powerful villains often make it more than worth sparing their lives.</p>",
             "acDetails": "all-around vision",
             "items": {
-                "consumable->Explosive Arrow": {
+                "ammo->Explosive Arrow": {
                     "name": "Explosive Arrow",
                     "description": "<p><strong>Ammunition</strong> any</p>\n<p><strong>Activate</strong> <span class=\"action-glyph\">A</span> (manipulate)</p>\n<hr />\n<p>This piece of ammunition is coated in gritty black soot. When activated <em>explosive ammunition</em> hits a target, the missile explodes in a @Template[burst|distance:10], dealing @Damage[6d6[fire]|options:area-damage] damage to each creature in the area (including the target). Each creature must attempt a @Check[reflex|dc:25|basic|options:area-effect] save.</p>"
                 },
-                "consumable->Sighting Shot Arrow": {
+                "ammo->Sighting Shot Arrow": {
                     "name": "Sighting Shot Arrow",
                     "description": "<p><strong>Ammunition</strong> any</p>\n<p><strong>Activate</strong> <span class=\"action-glyph\">2</span> command, envision</p>\n<p>Eyes are carved onto a sighting shot. When you Activate the ammunition, it glows, shedding bright light for 20 feet and dim light for 20 feet beyond that. If you shot the activated ammunition, your mind swirls with images of what the sighting shot passed and hit as if you sprinted along the ammunition's course. You see this path as if with your normal visual senses. Once a sighting shot hits anything or reaches its maximum range, it stops transmitting images to you. A sighting shot's light is visible to creatures who didn't Activate the ammunition, but they receive no special information from it.</p>"
                 },
@@ -989,7 +989,7 @@
                 "strike-melee->Tendrils": {
                     "name": "Tendrils"
                 },
-                "strike-ranged->Harpoon Hook": {
+                "strike-melee->Harpoon Hook": {
                     "name": "Harpoon Hook"
                 },
                 "action->Mist Vision": {
@@ -1216,7 +1216,7 @@
                 "strike-melee->Sickle": {
                     "name": "Sickle"
                 },
-                "strike-ranged->Blood Bomb": {
+                "strike-melee->Blood Bomb": {
                     "name": "Blood Bomb"
                 },
                 "action->Blood Bombs": {
@@ -1439,13 +1439,17 @@
                     "name": "Aeon Stone (Preserving)",
                     "description": "<p>Over millennia, these mysterious, intricately cut gemstones have been hoarded by mystics and fanatics hoping to discover their secrets. Despite their myriad forms and functions, these stones are purportedly all fragments of crystal tools used by otherworldly entities to construct the universe in primeval times.</p>\n<p>When you invest one of these precisely shaped crystals, the stone orbits your head instead of being worn on your body. You can stow an <em>aeon stone</em> with an Interact action, and an orbiting stone can be snatched out of the air with a successful Disarm action against you. A stowed or removed stone remains invested, but its effects are suppressed until you return it to orbit your head again.</p>\n<p>There are various types of <em>aeon stones</em>, each with a different appearance and magical effect. Each <em>aeon stone</em> also gains a resonant power when slotted into a special magical item called a <em>wayfinder</em>.</p>\n<hr />\n<p>This red crystalline star covers you in a faint aura when you are subject to lingering wounds. You gain resistance 3 to persistent damage. At the end of any turn where the persistent damage can't overcome this resistance, end that condition.</p>\n<p>The resonant power allows you to cast @UUID[Compendium.pf2e.spells-srd.Item.SnjhtQYexDtNDdEg]{Stabilize} as a primal innate cantrip.</p>"
                 },
+                "ammo->Magazine with 5 Bolts": {
+                    "name": "Magazine with 5 Bolts",
+                    "description": "<p>Magazine with 5 bolts for use with the @UUID[Compendium.pf2e.equipment-srd.Item.zcrIuILnp6oh4dr9]{Repeating Hand Crossbow}.</p>"
+                },
                 "strike-melee->Rapier": {
                     "name": "Rapier"
                 },
                 "strike-melee->Claw": {
                     "name": "Claw"
                 },
-                "strike-ranged->Repeating Crossbow": {
+                "strike-melee->Repeating Crossbow": {
                     "name": "Repeating Crossbow"
                 },
                 "action->Children of the Night": {
@@ -1546,7 +1550,7 @@
                 "spell->Dominate (At Will) (See Dominate)": {
                     "name": "Dominate (At Will) (See Dominate)"
                 },
-                "consumable->Silver Arrows": {
+                "ammo->Silver Arrows": {
                     "name": "Silver Arrows",
                     "description": "<p>These projectiles are the ammunition for bows. The shaft of an arrow is made of wood. It is stabilized in flight by fletching at one end and bears a metal head on the other.</p>"
                 },
@@ -1556,7 +1560,7 @@
                 "strike-melee->Claw": {
                     "name": "Claw"
                 },
-                "strike-ranged->Composite Shortbow": {
+                "strike-melee->Composite Shortbow": {
                     "name": "Composite Shortbow"
                 },
                 "action->Children of the Night": {
@@ -2022,7 +2026,7 @@
                 "strike-melee->Claw": {
                     "name": "Claw"
                 },
-                "strike-ranged->Splinter": {
+                "strike-melee->Splinter": {
                     "name": "Splinter"
                 },
                 "action->Bramble Jump": {
@@ -2182,7 +2186,7 @@
                 "strike-melee->Claw": {
                     "name": "Claw"
                 },
-                "strike-ranged->Shortbow": {
+                "strike-melee->Shortbow": {
                     "name": "Shortbow"
                 },
                 "action->Fast Healing 10": {
@@ -2244,7 +2248,7 @@
                 "strike-melee->Bottled Lightning (Moderate)": {
                     "name": "Bottled Lightning (Moderate)"
                 },
-                "strike-ranged->Hand Crossbow": {
+                "strike-melee->Hand Crossbow": {
                     "name": "Hand Crossbow"
                 },
                 "action->Ill Glow": {
@@ -2290,7 +2294,7 @@
                     "name": "Opening Shot",
                     "description": "<p><strong>Trigger</strong> A creature enters area <strong>A1</strong>, and that creature isn't wearing a <em>security badge</em> and isn't in the custody of a creature wearing a <em>security badge</em></p><hr /><p><strong>Effect</strong> All four prisms light up, shedding dim light in 15 feet. The trap makes one energy ray Strike against the triggering creature. The trap then rolls initiative.</p>"
                 },
-                "strike-ranged->Energy Ray": {
+                "strike-melee->Energy Ray": {
                     "name": "Energy Ray"
                 }
             }
@@ -2638,7 +2642,7 @@
                 "strike-melee->Jaws": {
                     "name": "Jaws"
                 },
-                "strike-ranged->Spit": {
+                "strike-melee->Spit": {
                     "name": "Spit"
                 },
                 "action->Phlegm Mortar": {
@@ -2690,7 +2694,7 @@
                 "strike-melee->Jaws": {
                     "name": "Jaws"
                 },
-                "strike-ranged->Spit": {
+                "strike-melee->Spit": {
                     "name": "Spit"
                 },
                 "action->Compression": {
@@ -2952,7 +2956,7 @@
                 "strike-melee->Jaws": {
                     "name": "Jaws"
                 },
-                "strike-ranged->Spit Poison": {
+                "strike-melee->Spit Poison": {
                     "name": "Spit Poison"
                 },
                 "action->Oily Coils": {
@@ -3175,13 +3179,17 @@
                     "name": "Aeon Stone (Agate Ellipsoid)",
                     "description": "<p>This aeon stone allows you to cast 2nd-rank @UUID[Compendium.pf2e.spells-srd.Item.41TZEjhO6D1nWw2X]{Augury} as a divine innate spell once per day.</p>\n<p>The resonant power causes the <em>augury</em> spell from the aeon stone to always succeed at the @Check[flat|dc:6] to give an answer other than \"nothing.\"</p>"
                 },
+                "ammo->Magazine with 5 Bolts": {
+                    "name": "Magazine with 5 Bolts",
+                    "description": "<p>Magazine with 5 bolts for use with the @UUID[Compendium.pf2e.equipment-srd.Item.zcrIuILnp6oh4dr9]{Repeating Hand Crossbow}.</p>"
+                },
                 "strike-melee->Rapier": {
                     "name": "Rapier"
                 },
                 "strike-melee->Claw": {
                     "name": "Claw"
                 },
-                "strike-ranged->Repeating Crossbow": {
+                "strike-melee->Repeating Crossbow": {
                     "name": "Repeating Crossbow"
                 },
                 "action->Children of the Night": {
@@ -3299,7 +3307,7 @@
                 "strike-melee->Fist": {
                     "name": "Fist"
                 },
-                "strike-ranged->Alchemical Grenade": {
+                "strike-melee->Alchemical Grenade": {
                     "name": "Alchemical Grenade"
                 },
                 "action->Unstable Collection": {

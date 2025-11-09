@@ -522,9 +522,6 @@
                 "spellcastingEntry->Divine Innate Spells": {
                     "name": "Divine Innate Spells"
                 },
-                "equipment->Outrageous Hat": {
-                    "name": "Outrageous Hat"
-                },
                 "strike-melee->Shortsword": {
                     "name": "Shortsword"
                 },
@@ -5280,32 +5277,28 @@
             "name": "Kimenhul",
             "publicNotes": "<p>Among the strongest of their kind aside from the sahkil tormentors, kimenhuls work their craft to foment despair in those who fear failure, forming cycles of self-loathing. These powerful sahkils focus their attention on mortals who are seemingly at the peak of their ability yet harbor secret fears of inadequacy. A kimenhul's predations can leave an indelible mark on its victims. The kimenhul whispers threats and sends fears of crushing failure to its prey, seemingly originating from their own minds, a trauma that can be difficult to bear without help. These sahkils torment their prey as long as the hapless victims live, using their Eternal Fear ability every day to psychically remind their previous victims of their failings.</p>\n<p>Some unique kimenhuls find themselves in a position of leadership in Xibalba, where they carve out their own small kingdoms and direct groups of sahkils to help them find mortals to torment. They rule these nightmare kingdoms through terror, often delighting in tormenting new petitioners or scheming ways to work against their immortal foes.</p>\n<hr />\n<p>Ages ago, when this cycle of the multiverse was still adolescent, a cabal of psychopomps who already felt bored and restrained in their role of ushering souls to their ultimate resting place rebelled against their station. It was this corruption of the cycle of souls that spawned the first sahkils.</p>\n<p>Ambivalent to the prescribed order of the multiverse and spiteful of mortals, sahkils delight in spreading fear and unease to all beings, clogging up the metaphysical cycle with anxiety-ridden mortals too scared to achieve their potential. These fiends have drastically changed from their dedicated psychopomp predecessors. They are creatures of spite and torment, fear and disgust. They exploit the most common and rare fears for their own perverse satisfaction, and they want nothing more than to frighten mortals and make them question their reason for existence.</p>\n<p>Most sahkils lurk on the Ethereal Plane, but they frequently invade the Material Plane to torment mortals and spread terror. They use their innate ability to slip between the veils of the Ethereal and Material effortlessly, often stalking their targets for days or weeks before enacting their devious plots.</p>",
             "acDetails": "all-around vision",
-            "languagesDetails": "telepathy 100 feet",
+            "languagesDetails": "Telepathy 100 feet",
             "items": {
                 "spellcastingEntry->Divine Innate Spells": {
                     "name": "Divine Innate Spells"
                 },
-                "spell->Mind Blank (Constant)": {
-                    "name": "Mind Blank (Constant)"
+                "spell->Hidden Mind (constant)": {
+                    "name": "Hidden Mind (constant)"
                 },
-                "spell->Mask of Terror (At Will)": {
-                    "name": "Mask of Terror (At Will)"
+                "spell->Mask of Terror (at will)": {
+                    "name": "Mask of Terror (at will)"
                 },
-                "spell->True Seeing (Constant)": {
-                    "name": "True Seeing (Constant)"
+                "spell->Truesight (constant)": {
+                    "name": "Truesight (constant)"
                 },
-                "spell->Suggestion (At Will)": {
-                    "name": "Suggestion (At Will)"
+                "spell->Suggestion (at will)": {
+                    "name": "Suggestion (at will)"
                 },
-                "spell->Dispel Magic (At Will)": {
-                    "name": "Dispel Magic (At Will)"
+                "spell->Dispel Magic (at will)": {
+                    "name": "Dispel Magic (at will)"
                 },
-                "spell->Fear (At Will)": {
-                    "name": "Fear (At Will)"
-                },
-                "effect->Spell Effect: Mind Blank": {
-                    "name": "Spell Effect: Mind Blank",
-                    "description": "<p>Powerful wards hide a creature from divination magic. The target gains a +4 status bonus to saves against mental effects. Mind blank attempts to counteract any detection, revelation, and scrying effects as if its spell rank were 1 higher than its actual level. On a success, the divination effect functions normally except that it detects nothing about the target and its possessions. For instance, detect magic would still detect other magic in the area, but not any magic on the target.</p>"
+                "spell->Fear (at will)": {
+                    "name": "Fear (at will)"
                 },
                 "strike-melee->Jaws": {
                     "name": "Jaws"
@@ -5326,13 +5319,13 @@
                 "action->All-Around Vision": {
                     "name": "All-Around Vision"
                 },
-                "action->Attack of Opportunity (Special)": {
-                    "name": "Attack of Opportunity (Special)",
-                    "description": "<p>If the triggering creature is subject to an effect with the fear trait, the kimenhul can make two claw Strikes against the creature instead of one Strike.</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.AttackOfOpportunity]</p>"
-                },
                 "action->Feed on Fear": {
                     "name": "Feed on Fear",
                     "description": "<p>The kimenhul regains @Damage[30[healing]] Hit Points at the start of its turn as long as any @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened} creature is within @Template[emanation|distance:100]{100 feet} of it.</p>"
+                },
+                "action->Reactive Strike (Special)": {
+                    "name": "Reactive Strike (Special)",
+                    "description": "<p>If the triggering creature is frightened, the kimenhul can make two claw Strikes against the creature instead of one Strike.</p><hr /><p>@Localize[PF2E.NPC.Abilities.Glossary.ReactiveStrike]</p>"
                 },
                 "action->Eternal Fear": {
                     "name": "Eternal Fear",
@@ -5348,7 +5341,7 @@
                 },
                 "action->Skip Between": {
                     "name": "Skip Between",
-                    "description": "<p>The kimenhul moves from the Material Plane to the Ethereal Plane or vice-versa, with the effects of @UUID[Compendium.pf2e.spells-srd.Item.D2nPKbIS67m9199U]{Ethereal Jaunt} except that the effect has an unlimited duration and can be Dismissed.</p>\n<p>A summoned kimenhul can't use Skip Between.</p>"
+                    "description": "<p>The sahkil moves from the Universe to the Ethereal Plane or vice-versa. While in the Ethereal Plane, they're unable to affect anything in the Universe, and they cannot be seen by beings or abilities in the Universe, unless these have an ability that can gaze into the Ethereal Plane. While on the Material Plane the inverse is true for anything on the Ethereal Plane. A summoned sahkil can't use Skip Between.</p>"
                 },
                 "action->Snatch Between": {
                     "name": "Snatch Between",
@@ -5357,9 +5350,6 @@
                 "action->Unsettled Mind": {
                     "name": "Unsettled Mind",
                     "description": "<p>Any creature affected by any of a kimenhul's mental spells or abilities becomes @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 3} for the duration of that effect and for [[/gmr 1d4 #Duration Stupefied]]{1d4 rounds} thereafter.</p>"
-                },
-                "action->Improved Grab": {
-                    "name": "Improved Grab"
                 }
             }
         },
@@ -7786,7 +7776,7 @@
         },
         "Ostovite": {
             "name": "Ostovite",
-            "publicNotes": "<p>Skittering scavenger vermin common throughout the Abyss, ostovites roam battlefields to harvest flesh and bones. After the ostovites dissolve and slurp up the flesh for sustenance, they craft the bones into elaborate shells they refer to as \"bone chariots.\"</p>\n<p>These bone chariots move under the ostovites' command and serve as an important marker of rank in ostovite nests. To the tiny ostovites, bigger is better, and building large skeletal conveyances is the only way for them to increase their standing in life. Although they feel deeply inferior to creatures larger than themselves, this fear can be overwhelmed by the ostovites' visceral desire to harvest those creatures' bones to increase their own status. When confronted with a particularly massive skeleton, ostovites generally fight among themselves and end up splitting the haul. However, there are rare instances of the selfish creatures working together to puppeteer a much larger bone chariot.</p>\n<p>Ostovites' faint understanding of anatomy results in bone chariots that look more like a nightmarish attempt at art than any creature the bones were pulled from. Some powerful fiends and their admirers collect this strange art by bribing ostovites with skeletons or finding ways to kill ostovites without disrupting the chariot around them.</p>\n<p>Despite ostovites' origins in the Abyss, they are neither demons nor qlippoth. Without the protection of the major fiends, they find their homes in nooks and crannies along the corners of their home plane. Though they have no innate ability to cross the planar boundaries, flaws in the Abyss's fabric often lead them to worlds across the planes. Ostovites that have thus migrated are often much happier. Away from demonic abuse, they usually can be found near mortal crypts and battlefields. On the Material Plane, they rarely have to face any threats other than the undead, clerics of Pharasma, and families of the deceased.</p>",
+            "publicNotes": "<p>Skittering scavenger vermin common throughout the Abyss, ostovites roam battlefields to harvest flesh and bones. After the ostovites dissolve and slurp up the flesh for sustenance, they craft the bones into elaborate shells they refer to as \"bone chariots.\"</p>\n<p>These bone chariots move under the ostovites' command and serve as an important marker of rank in ostovite nests. To the tiny ostovites, bigger is better, and building large skeletal conveyances is the only way for them to increase their standing in life. Although they feel deeply inferior to creatures larger than themselves, this fear can be overwhelmed by the ostovites' visceral desire to harvest those creatures' bones to increase their own status. When confronted with a particularly massive skeleton, ostovites generally fight among themselves and end up splitting the haul. However, there are rare instances of the selfish creatures working together to puppeteer a much larger bone chariot.</p>\n<p>Ostovites' faint understanding of anatomy results in bone chariots that look more like a nightmarish attempt at art than any creature the bones were pulled from. Some powerful fiends and their admirers collect this strange art by bribing ostovites with skeletons or finding ways to kill ostovites without disrupting the chariot around them.</p>\n<p>Despite ostovites' origins in the Outer Rifts, they are neither demons nor qlippoth. Without the protection of the major fiends, they find their homes in nooks and crannies along the corners of their home plane. Though they have no innate ability to cross the planar boundaries, flaws in the Outer Rifts' fabric often lead them to worlds across the planes. Ostovites that have thus migrated are often much happier. Away from demonic abuse, they usually can be found near mortal crypts and battlefields. In the Universe, they rarely have to face any threats other than the undead, clerics of Pharasma, and families of the deceased.</p>",
             "items": {
                 "strike-melee->Mandibles": {
                     "name": "Mandibles"
@@ -10515,7 +10505,7 @@
                 },
                 "action->Inspire Envoy": {
                     "name": "Inspire Envoy",
-                    "description": "<p><strong>Frequency</strong> once per day</p>\n<hr />\n<p><strong>Effect</strong> The dragon chooses a mortal they've observed performing an exceptional act and offers their august blessing in exchange for the creature carrying out a specific directive, such as defeating a tyrant or protecting a sacred site.</p>\n<p>If the creature agrees, until its next daily preparations, it gains a +1 status bonus to the dragon's choice of attack rolls, AC, or all of the following: Perception, Will saves, and Charisma-based skill checks.</p>\n<p>The dragon can Dismiss this benefit by spending a single action (that has the concentrate trait), which they're swift to do if the mortal dares to defy the dragon's directive.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.YDJnC3Bdc2GI6hX5]{Effect: Inspire Envoy}</p>"
+                    "description": "<p><strong>Frequency</strong> once per day</p><hr /><p><strong>Effect</strong> The dragon chooses a mortal they've observed performing an exceptional act and offers their august blessing in exchange for the creature carrying out a specific directive, such as defeating a tyrant or protecting a sacred site.</p>\n<p>If the creature agrees, until its next daily preparations, it gains a +1 status bonus to the dragon's choice of attack rolls, AC, or all of the following: Perception, Will saves, and Charisma-based skill checks.</p>\n<p>The dragon can Dismiss this benefit by spending a single action (that has the concentrate trait), which they're swift to do if the mortal dares to defy the dragon's directive.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.YDJnC3Bdc2GI6hX5]{Effect: Inspire Envoy}</p>"
                 },
                 "action->Grab": {
                     "name": "Grab"
@@ -11142,7 +11132,7 @@
                 },
                 "action->Strix Vengeance": {
                     "name": "Strix Vengeance",
-                    "description": "<p><strong>Frequency</strong> once per 10 minutes</p>\n<p><strong>Trigger</strong> The kinmate or a strix ally they can see is damaged by an enemy's critical hit</p>\n<hr />\n<p><strong>Effect</strong> Until the end of their next turn, the kinmate gains a +[[/r {1d6}]]{1d6} status bonus to damage rolls on Strikes they make against the triggering enemy.</p>"
+                    "description": "<p><strong>Frequency</strong> once per 10 minutes</p>\n<p><strong>Trigger</strong> The kinmate or a strix ally they can see is damaged by an enemy's critical hit</p><hr /><p><strong>Effect</strong> Until the end of their next turn, the kinmate gains a +[[/r {1d6}]]{1d6} status bonus to damage rolls on Strikes they make against the triggering enemy.</p>"
                 }
             }
         },
@@ -11240,7 +11230,7 @@
                 },
                 "action->Whip Drain": {
                     "name": "Whip Drain",
-                    "description": "<p><strong>Requirements</strong> The sumbreiva has a creature @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed} with their shadow whip</p>\n<hr />\n<p><strong>Effect</strong> The grabbed creature must succeed at a @Check[fortitude|dc:38] save or become @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 2} (@UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 3} on a critical failure). If the creature is already drained, this increases its drained value instead, to a maximum of @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 4}.</p>"
+                    "description": "<p><strong>Requirements</strong> The sumbreiva has a creature @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed} with their shadow whip</p><hr /><p><strong>Effect</strong> The grabbed creature must succeed at a @Check[fortitude|dc:38] save or become @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 2} (@UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 3} on a critical failure). If the creature is already drained, this increases its drained value instead, to a maximum of @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 4}.</p>"
                 },
                 "action->Improved Grab": {
                     "name": "Improved Grab"
@@ -12037,7 +12027,7 @@
             "allSavesBonus": "+2 status to all saves vs. poison",
             "hpDetails": "immortal flesh",
             "items": {
-                "consumable->Blowgun Darts with Harvester Poison": {
+                "ammo->Blowgun Darts with Harvester Poison": {
                     "name": "Blowgun Darts with Harvester Poison",
                     "description": "<p>These thin, light darts are typically made of hardwood and stabilized with fletching of down or fur. They are often hollow so they can be used to deliver poison.</p>"
                 },

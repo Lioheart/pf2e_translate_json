@@ -5763,7 +5763,7 @@
                     "name": "Club",
                     "description": "<p>This is a piece of stout wood shaped or repurposed to bludgeon an enemy. Clubs can be intricately carved pieces of martial art or as simple as a tree branch or piece of wood.</p>"
                 },
-                "consumable->Rock": {
+                "ammo->Rock": {
                     "name": "Rock"
                 },
                 "backpack->Pouch": {
@@ -7456,7 +7456,7 @@
                     "name": "Breastplate",
                     "description": "<p>Though referred to as a breastplate, this type of armor consists of several pieces of plate or half-plate armor that protect the torso, chest, neck, and sometimes the hips and lower legs. It strategically grants some of the protection of plate while allowing greater flexibility and speed.</p>"
                 },
-                "consumable->Arrows": {
+                "ammo->Arrows": {
                     "name": "Arrows",
                     "description": "<p>These projectiles are the ammunition for bows. The shaft of an arrow is made of wood. It is stabilized in flight by fletching at one end and bears a metal head on the other.</p>"
                 },
@@ -9544,7 +9544,7 @@
                     "name": "Morningstar",
                     "description": "<p>This weapon has a short shaft ending in a metal ball studded with spikes.</p>"
                 },
-                "consumable->Bolts": {
+                "ammo->Bolts": {
                     "name": "Bolts",
                     "description": "<p>Shorter than traditional arrows but similar in construction, bolts are the ammunition used by crossbows.</p>"
                 },
@@ -9583,7 +9583,7 @@
                     "name": "+1 Morningstar",
                     "description": "<p>This weapon has a short shaft ending in a metal ball studded with spikes.</p>"
                 },
-                "consumable->Bolts": {
+                "ammo->Bolts": {
                     "name": "Bolts",
                     "description": "<p>Shorter than traditional arrows but similar in construction, bolts are the ammunition used by crossbows.</p>"
                 },
@@ -9744,9 +9744,6 @@
                 "spellcastingEntry->Occult Innate Spells": {
                     "name": "Occult Innate Spells"
                 },
-                "treasure->Gemstone": {
-                    "name": "Gemstone"
-                },
                 "strike-melee->Claw": {
                     "name": "Claw"
                 },
@@ -9873,7 +9870,7 @@
                     "name": "Longspear",
                     "description": "<p>This very long spear, sometimes called a pike, is purely for thrusting rather than throwing. Used by many soldiers and city watch for crowd control and defense against charging enemies, it must be wielded with two hands.</p>"
                 },
-                "consumable->Sack of Rocks": {
+                "ammo->Sack of Rocks": {
                     "name": "Sack of Rocks"
                 },
                 "strike-melee->Fist": {
@@ -10504,7 +10501,7 @@
                 },
                 "action->Breath Weapon": {
                     "name": "Breath Weapon",
-                    "description": "<p>The umbral dragon breathes in one of two ways. They can't use Breath Weapon again for [[/gmr 1d4 #Recharge Breath Weapon]]{1d4 rounds}.</p>\n<ul>\n<li><strong>Void</strong> The dragon breathes a blast of darkness in a @Template[cone|distance:40] that deals @Damage[16d6[void]|options:area-damage] damage (@Check[reflex|dc:36|basic|options:area-effect] save). Undead creatures take @Damage[19d6[force]|options:area-damage] damage instead of the void damage.</li>\n<li><p><strong>Shadows</strong> The dragon breathes a blast of shadows in a @Template[cone|distance:40]. Each creature within the cone must attempt a @Check[fortitude|dc:36|options:area-effect] save.</p>\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 2} for 1 round.</p>\n<p><strong>Failure</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 2} for 1 minute.</p>\n<p><strong>Critical Failure</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 2} for 1 minute and @UUID[Compendium.pf2e.conditionitems.Item.XgEqL1kFApUbl5Z2]{Blinded} for 1 round.</p>\n</li>\n</ul>"
+                    "description": "<p>The umbral dragon breathes in one of two ways. They can't use Breath Weapon again for [[/gmr 1d4 #Recharge Breath Weapon]]{1d4 rounds}.</p><ul><li><strong>Void</strong> The dragon breathes a blast of darkness in a @Template[cone|distance:40] that deals @Damage[16d6[void]|options:area-damage] damage (@Check[reflex|dc:36|basic|options:area-effect] save). Undead creatures take @Damage[19d6[force]|options:area-damage] damage instead of the void damage.</li><li><p><strong>Shadows</strong> The dragon breathes a blast of shadows in a @Template[cone|distance:40]. Each creature within the cone must attempt a @Check[fortitude|dc:36|options:area-effect] save.</p>\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 2} for 1 round.</p>\n<p><strong>Failure</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 2} for 1 minute.</p>\n<p><strong>Critical Failure</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 2} for 1 minute and @UUID[Compendium.pf2e.conditionitems.Item.XgEqL1kFApUbl5Z2]{Blinded} for 1 round.</p></li></ul>"
                 },
                 "action->Draconic Frenzy": {
                     "name": "Draconic Frenzy",
@@ -10578,6 +10575,9 @@
                 "spell->Darkness (At Will)": {
                     "name": "Darkness (At Will)"
                 },
+                "spell->Vampiric Exsanguination (At Will)": {
+                    "name": "Vampiric Exsanguination (At Will)"
+                },
                 "spell->Create Undead (Shadows Only)": {
                     "name": "Create Undead (Shadows Only)"
                 },
@@ -10642,6 +10642,9 @@
                 },
                 "spell->Darkness (At Will)": {
                     "name": "Darkness (At Will)"
+                },
+                "spell->Vampiric Exsanguination (At Will)": {
+                    "name": "Vampiric Exsanguination (At Will)"
                 },
                 "spell->Create Undead (Shadows Only)": {
                     "name": "Create Undead (Shadows Only)"
@@ -10884,7 +10887,7 @@
                     "name": "Studded Leather Armor",
                     "description": "<p>This leather armor is reinforced with metal studs and sometimes small metal plates, providing most of the flexibility of leather armor with more robust protection.</p>"
                 },
-                "consumable->Arrows": {
+                "ammo->Arrows": {
                     "name": "Arrows",
                     "description": "<p>These projectiles are the ammunition for bows. The shaft of an arrow is made of wood. It is stabilized in flight by fletching at one end and bears a metal head on the other.</p>"
                 },
@@ -11645,7 +11648,7 @@
                     "name": "Hide",
                     "description": "<p>A mix of furs, sturdy hide, and sometimes molded boiled leather, this armor provides protection due to its layers of leather, though its bulkiness slows the wearer down and decreases mobility.</p>"
                 },
-                "consumable->Arrows": {
+                "ammo->Arrows": {
                     "name": "Arrows",
                     "description": "<p>These projectiles are the ammunition for bows. The shaft of an arrow is made of wood. It is stabilized in flight by fletching at one end and bears a metal head on the other.</p>"
                 },
@@ -11776,7 +11779,7 @@
                     "name": "Breastplate",
                     "description": "<p>Though referred to as a breastplate, this type of armor consists of several pieces of plate or half-plate armor that protect the torso, chest, neck, and sometimes the hips and lower legs. It strategically grants some of the protection of plate while allowing greater flexibility and speed.</p>"
                 },
-                "consumable->Arrows": {
+                "ammo->Arrows": {
                     "name": "Arrows",
                     "description": "<p>These projectiles are the ammunition for bows. The shaft of an arrow is made of wood. It is stabilized in flight by fletching at one end and bears a metal head on the other.</p>"
                 },

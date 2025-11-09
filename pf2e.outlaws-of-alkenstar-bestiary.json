@@ -18,13 +18,13 @@
                     "name": "Feather Token (Chest)",
                     "description": "<p>Each feather token appears to be a simple feather from some exotic bird. The feather's shaft, dipped in gold, bears a single arcane rune. Activating a feather token causes it to transform into another object, which then can be used as normal for that object. Each feather can be activated only once, with most of them permanently becoming the item in their description.</p>\n<p><strong>Activate</strong> <span class=\"action-glyph\">A</span> Interact</p>\n<p>When you use this token, a small wooden chest appears and immediately opens. This chest can hold up to 10 Bulk worth of items. Once the chest is closed, it transforms again-this time into a key-taking all of the stored items with it. You can activate this key by spending an Interact action to turn it in an imaginary lock, which causes it to transform back into a chest with all of the items still inside. Once it has turned into a chest a second time, it forever remains a wooden chest.</p>"
                 },
-                "consumable->Rounds (Coat Pistol)": {
-                    "name": "Rounds (Coat Pistol)",
-                    "description": "<p>Firearms require ammunition consisting of a projectile and black powder. A round of ammo can vary in its composition but is typically either a prepackaged paper cartridge, including wadding, bullet, and black powder, or loose shot packed in manually. Some weapons, like hand cannons and blunderbusses, can fire other materials, but their ammunition has the same Price due to the cost of the black powder. Because making rounds of firearm ammunition requires creating black powder, you need the @UUID[Compendium.pf2e.feats-srd.Item.is3Oz9wt11lNq62K]{Alchemical Crafting} skill feat to make them. Firearm rounds are a valid option for magical ammunition, just like arrows or bolts. Crafting magical firearm ammunition requires you to be able to craft both alchemical and magical items.</p>"
-                },
                 "consumable->Hunting Spider Venom": {
                     "name": "Hunting Spider Venom",
                     "description": "<p>This venom erodes its target's defenses, aiding the spider in securing prey.</p>\n<hr />\n<p><strong>Activate</strong> <span class=\"action-glyph\">2</span> Interact (Injury)</p>\n<p><strong>Saving Throw</strong> @Check[fortitude|dc:21]</p>\n<p><strong>Maximum Duration</strong> 6 rounds</p>\n<p><strong>Stage 1</strong> @Damage[1d10[poison]] damage and @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} (1 round)</p>\n<p><strong>Stage 2</strong> @Damage[1d12[poison]] damage, @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 1}, and off-guard (1 round)</p>\n<p><strong>Stage 3</strong> @Damage[2d6[poison]] damage, clumsy 2, and off-guard (1 round)</p>"
+                },
+                "ammo->Rounds (Coat Pistol)": {
+                    "name": "Rounds (Coat Pistol)",
+                    "description": "<p>Firearms require ammunition consisting of a projectile and black powder. A round of ammo can vary in its composition but is typically either a prepackaged paper cartridge, including wadding, bullet, and black powder, or loose shot packed in manually. Some weapons, like hand cannons and blunderbusses, can fire other materials, but their ammunition has the same Price due to the cost of the black powder. Because making rounds of firearm ammunition requires creating black powder, you need the @UUID[Compendium.pf2e.feats-srd.Item.is3Oz9wt11lNq62K]{Alchemical Crafting} skill feat to make them. Firearm rounds are a valid option for magical ammunition, just like arrows or bolts. Crafting magical firearm ammunition requires you to be able to craft both alchemical and magical items.</p>"
                 },
                 "action->Scoundrel's Feint": {
                     "name": "Scoundrel's Feint",
@@ -100,11 +100,11 @@
             "name": "Ambrost Mugland",
             "blurb": "Male halfling criminal mogul",
             "items": {
-                "consumable->Rounds (Cane Pistol)": {
+                "ammo->Rounds (Cane Pistol)": {
                     "name": "Rounds (Cane Pistol)",
                     "description": "<p>Firearms require ammunition consisting of a projectile and black powder. A round of ammo can vary in its composition but is typically either a prepackaged paper cartridge, including wadding, bullet, and black powder, or loose shot packed in manually. Some weapons, like hand cannons and blunderbusses, can fire other materials, but their ammunition has the same Price due to the cost of the black powder. Because making rounds of firearm ammunition requires creating black powder, you need the @UUID[Compendium.pf2e.feats-srd.Item.is3Oz9wt11lNq62K]{Alchemical Crafting} skill feat to make them. Firearm rounds are a valid option for magical ammunition, just like arrows or bolts. Crafting magical firearm ammunition requires you to be able to craft both alchemical and magical items.</p>"
                 },
-                "consumable->Rounds (Dueling Pistol)": {
+                "ammo->Rounds (Dueling Pistol)": {
                     "name": "Rounds (Dueling Pistol)",
                     "description": "<p>Firearms require ammunition consisting of a projectile and black powder. A round of ammo can vary in its composition but is typically either a prepackaged paper cartridge, including wadding, bullet, and black powder, or loose shot packed in manually. Some weapons, like hand cannons and blunderbusses, can fire other materials, but their ammunition has the same Price due to the cost of the black powder. Because making rounds of firearm ammunition requires creating black powder, you need the @UUID[Compendium.pf2e.feats-srd.Item.is3Oz9wt11lNq62K]{Alchemical Crafting} skill feat to make them. Firearm rounds are a valid option for magical ammunition, just like arrows or bolts. Crafting magical firearm ammunition requires you to be able to craft both alchemical and magical items.</p>"
                 },
@@ -148,16 +148,16 @@
                     "name": "Blazons of Shared Power (attached to pistol and reinforced stock)",
                     "description": "<p>These brass emblems come in a variety of designs, usually customized to the purchaser to reflect the heraldry of a family or guild. <em>Blazons of shared power</em> come in sets of three. When you invest the blazons, you wear one of the three on your chest, and you attach the others to a pair of one-handed weapons, choosing one as the primary weapon and one as the secondary weapon. These weapons can be either melee weapons or ranged weapons. As long as you're wielding both the primary weapon and the secondary weapon, the secondary weapon gains the benefit of the fundamental runes on the primary weapon. A weapon can only have a single blazon of shared power attached to it at a time.</p>"
                 },
-                "consumable->Rounds (Dueling Pistol)": {
+                "consumable->Infused Pyronite Charge": {
+                    "name": "Infused Pyronite Charge"
+                },
+                "ammo->Rounds (Dueling Pistol)": {
                     "name": "Rounds (Dueling Pistol)",
                     "description": "<p>Firearms require ammunition consisting of a projectile and black powder. A round of ammo can vary in its composition but is typically either a prepackaged paper cartridge, including wadding, bullet, and black powder, or loose shot packed in manually. Some weapons, like hand cannons and blunderbusses, can fire other materials, but their ammunition has the same Price due to the cost of the black powder. Because making rounds of firearm ammunition requires creating black powder, you need the @UUID[Compendium.pf2e.feats-srd.Item.is3Oz9wt11lNq62K]{Alchemical Crafting} skill feat to make them. Firearm rounds are a valid option for magical ammunition, just like arrows or bolts. Crafting magical firearm ammunition requires you to be able to craft both alchemical and magical items.</p>"
                 },
-                "consumable->Rounds (Arquebus)": {
+                "ammo->Rounds (Arquebus)": {
                     "name": "Rounds (Arquebus)",
                     "description": "<p>Firearms require ammunition consisting of a projectile and black powder. A round of ammo can vary in its composition but is typically either a prepackaged paper cartridge, including wadding, bullet, and black powder, or loose shot packed in manually. Some weapons, like hand cannons and blunderbusses, can fire other materials, but their ammunition has the same Price due to the cost of the black powder. Because making rounds of firearm ammunition requires creating black powder, you need the @UUID[Compendium.pf2e.feats-srd.Item.is3Oz9wt11lNq62K]{Alchemical Crafting} skill feat to make them. Firearm rounds are a valid option for magical ammunition, just like arrows or bolts. Crafting magical firearm ammunition requires you to be able to craft both alchemical and magical items.</p>"
-                },
-                "consumable->Infused Pyronite Charge": {
-                    "name": "Infused Pyronite Charge"
                 },
                 "strike-melee->Reinforced Stock": {
                     "name": "Reinforced Stock"
@@ -1128,7 +1128,7 @@
                     "name": "Healing Potion (Minor)",
                     "description": "<p>A healing potion is a vial of a ruby-red liquid that imparts a tingling sensation as the drinker's wounds heal rapidly. When you drink a healing potion, you regain @Damage[1d8[healing]] Hit Points.</p>"
                 },
-                "consumable->Rounds (Flintlock Musket)": {
+                "ammo->Rounds (Flintlock Musket)": {
                     "name": "Rounds (Flintlock Musket)",
                     "description": "<p>Firearms require ammunition consisting of a projectile and black powder. A round of ammo can vary in its composition but is typically either a prepackaged paper cartridge, including wadding, bullet, and black powder, or loose shot packed in manually. Some weapons, like hand cannons and blunderbusses, can fire other materials, but their ammunition has the same Price due to the cost of the black powder. Because making rounds of firearm ammunition requires creating black powder, you need the @UUID[Compendium.pf2e.feats-srd.Item.is3Oz9wt11lNq62K]{Alchemical Crafting} skill feat to make them. Firearm rounds are a valid option for magical ammunition, just like arrows or bolts. Crafting magical firearm ammunition requires you to be able to craft both alchemical and magical items.</p>"
                 },
@@ -1246,13 +1246,13 @@
                     "name": "Thunderstone (Moderate)",
                     "description": "<p><strong>Activate</strong> <span class=\"action-glyph\">1</span> Strike</p>\n<hr />\n<p>When this stone hits a creature or a hard surface, it explodes with a deafening bang. A thunderstone deals the listed sonic damage and sonic splash damage, and each creature within 10 feet of the space in which the stone exploded must succeed at a @Check[fortitude|dc:20|name:Moderate Thunderstone|showDC:all] saving throw with the listed DC or be @UUID[Compendium.pf2e.conditionitems.Item.9PR9y0bi4JPKnHPR]{Deafened} until the end of its next turn. Many types of thunderstone grant an item bonus to attack rolls.</p>\n<p>You gain a +1 item bonus to attack rolls. The bomb deals 2d4 sonic damage and 2 sonic splash damage, and the DC is 20.</p>"
                 },
-                "consumable->Rounds (Dueling Pistol)": {
-                    "name": "Rounds (Dueling Pistol)",
-                    "description": "<p>Firearms require ammunition consisting of a projectile and black powder. A round of ammo can vary in its composition but is typically either a prepackaged paper cartridge, including wadding, bullet, and black powder, or loose shot packed in manually. Some weapons, like hand cannons and blunderbusses, can fire other materials, but their ammunition has the same Price due to the cost of the black powder. Because making rounds of firearm ammunition requires creating black powder, you need the @UUID[Compendium.pf2e.feats-srd.Item.is3Oz9wt11lNq62K]{Alchemical Crafting} skill feat to make them. Firearm rounds are a valid option for magical ammunition, just like arrows or bolts. Crafting magical firearm ammunition requires you to be able to craft both alchemical and magical items.</p>"
-                },
                 "consumable->Golden Silencer (Standard)": {
                     "name": "Golden Silencer (Standard)",
                     "description": "<p><strong>Activate</strong> <span class=\"action-glyph\">1</span> Interact</p>\n<p><strong>Requirements</strong> You're an expert in Stealth.</p>\n<hr />\n<p>The Golden Gunners are dreaded for their use of their golden silencers, which they put to good use in clandestine raids. They silence both the loud gunshot and the screams of creatures wounded by its shot. A weapon with a golden silencer attached emits no light and makes no noise when fired. A target hit by a ranged Strike from the affixed weapon must succeed at a @Check[fortitude|dc:20] save or be silenced as well until the start of its next turn. A silenced creature can't call for help or use sonic abilities, nor can it use abilities with the auditory trait. This prevents it from casting spells that include verbal components.</p>"
+                },
+                "ammo->Rounds (Dueling Pistol)": {
+                    "name": "Rounds (Dueling Pistol)",
+                    "description": "<p>Firearms require ammunition consisting of a projectile and black powder. A round of ammo can vary in its composition but is typically either a prepackaged paper cartridge, including wadding, bullet, and black powder, or loose shot packed in manually. Some weapons, like hand cannons and blunderbusses, can fire other materials, but their ammunition has the same Price due to the cost of the black powder. Because making rounds of firearm ammunition requires creating black powder, you need the @UUID[Compendium.pf2e.feats-srd.Item.is3Oz9wt11lNq62K]{Alchemical Crafting} skill feat to make them. Firearm rounds are a valid option for magical ammunition, just like arrows or bolts. Crafting magical firearm ammunition requires you to be able to craft both alchemical and magical items.</p>"
                 },
                 "strike-ranged->Thunderstone": {
                     "name": "Thunderstone"
@@ -1275,7 +1275,7 @@
                     "name": "Black Powder (Horn)",
                     "description": "<p><strong>Activate</strong> <span class=\"action-glyph\">1</span> (manipulate)</p><hr /><p>Black powder is a volatile and explosive alchemical substance commonly used in the production of firearm munitions. Black powder becomes inert and useless when wet and must be kept in a sealed, water-tight container.</p>\n<p>A horn contains 500 doses worth of black powder. A horn can be detonated by leaving a small trail of black powder and then lighting it. Each 5-foot square requires one dose of black powder to create a trail through. As long as the horn is mostly full (at least 400 doses remaining) it can be detonated to deal @Damage[1d6[fire]|options:area-damage] damage in a @Template[type:burst|distance:5] (@Check[reflex|dc:16|basic|options:area-effect] save). It takes 1 round per 15 feet of powder trail laid down for a horn to detonate after the trail is lit. If multiple horns detonate simultaneously, it can increase the area of the explosion, but the damage in overlapping areas doesn't increase.</p>"
                 },
-                "consumable->Rounds (Flintlock Pistol)": {
+                "ammo->Rounds (Flintlock Pistol)": {
                     "name": "Rounds (Flintlock Pistol)",
                     "description": "<p>Firearms require ammunition consisting of a projectile and black powder. A round of ammo can vary in its composition but is typically either a prepackaged paper cartridge, including wadding, bullet, and black powder, or loose shot packed in manually. Some weapons, like hand cannons and blunderbusses, can fire other materials, but their ammunition has the same Price due to the cost of the black powder. Because making rounds of firearm ammunition requires creating black powder, you need the @UUID[Compendium.pf2e.feats-srd.Item.is3Oz9wt11lNq62K]{Alchemical Crafting} skill feat to make them. Firearm rounds are a valid option for magical ammunition, just like arrows or bolts. Crafting magical firearm ammunition requires you to be able to craft both alchemical and magical items.</p>"
                 },
@@ -1296,7 +1296,7 @@
                     "name": "Golden Silencer (Standard) (Affixed to Dueling Pistol)",
                     "description": "<p><strong>Activate</strong> <span class=\"action-glyph\">1</span> Interact</p>\n<p><strong>Requirements</strong> You're an expert in Stealth.</p>\n<hr />\n<p>The Golden Gunners are dreaded for their use of their golden silencers, which they put to good use in clandestine raids. They silence both the loud gunshot and the screams of creatures wounded by its shot. A weapon with a golden silencer attached emits no light and makes no noise when fired. A target hit by a ranged Strike from the affixed weapon must succeed at a @Check[fortitude|dc:20] save or be silenced as well until the start of its next turn. A silenced creature can't call for help or use sonic abilities, nor can it use abilities with the auditory trait. This prevents it from casting spells that include verbal components.</p>"
                 },
-                "consumable->Rounds (Dueling Pistol)": {
+                "ammo->Rounds (Dueling Pistol)": {
                     "name": "Rounds (Dueling Pistol)",
                     "description": "<p>Firearms require ammunition consisting of a projectile and black powder. A round of ammo can vary in its composition but is typically either a prepackaged paper cartridge, including wadding, bullet, and black powder, or loose shot packed in manually. Some weapons, like hand cannons and blunderbusses, can fire other materials, but their ammunition has the same Price due to the cost of the black powder. Because making rounds of firearm ammunition requires creating black powder, you need the @UUID[Compendium.pf2e.feats-srd.Item.is3Oz9wt11lNq62K]{Alchemical Crafting} skill feat to make them. Firearm rounds are a valid option for magical ammunition, just like arrows or bolts. Crafting magical firearm ammunition requires you to be able to craft both alchemical and magical items.</p>"
                 },
@@ -1546,7 +1546,7 @@
             "name": "Gunmarshal",
             "blurb": "Rookie shieldmarshal",
             "items": {
-                "consumable->Rounds (Flintlock Musket)": {
+                "ammo->Rounds (Flintlock Musket)": {
                     "name": "Rounds (Flintlock Musket)",
                     "description": "<p>Firearms require ammunition consisting of a projectile and black powder. A round of ammo can vary in its composition but is typically either a prepackaged paper cartridge, including wadding, bullet, and black powder, or loose shot packed in manually. Some weapons, like hand cannons and blunderbusses, can fire other materials, but their ammunition has the same Price due to the cost of the black powder. Because making rounds of firearm ammunition requires creating black powder, you need the @UUID[Compendium.pf2e.feats-srd.Item.is3Oz9wt11lNq62K]{Alchemical Crafting} skill feat to make them. Firearm rounds are a valid option for magical ammunition, just like arrows or bolts. Crafting magical firearm ammunition requires you to be able to craft both alchemical and magical items.</p>"
                 },
@@ -1573,7 +1573,7 @@
                     "name": "Healing Potion (Minor)",
                     "description": "<p>A healing potion is a vial of a ruby-red liquid that imparts a tingling sensation as the drinker's wounds heal rapidly. When you drink a healing potion, you regain @Damage[1d8[healing]] Hit Points.</p>"
                 },
-                "consumable->Rounds (Flintlock Pistol)": {
+                "ammo->Rounds (Flintlock Pistol)": {
                     "name": "Rounds (Flintlock Pistol)",
                     "description": "<p>Firearms require ammunition consisting of a projectile and black powder. A round of ammo can vary in its composition but is typically either a prepackaged paper cartridge, including wadding, bullet, and black powder, or loose shot packed in manually. Some weapons, like hand cannons and blunderbusses, can fire other materials, but their ammunition has the same Price due to the cost of the black powder. Because making rounds of firearm ammunition requires creating black powder, you need the @UUID[Compendium.pf2e.feats-srd.Item.is3Oz9wt11lNq62K]{Alchemical Crafting} skill feat to make them. Firearm rounds are a valid option for magical ammunition, just like arrows or bolts. Crafting magical firearm ammunition requires you to be able to craft both alchemical and magical items.</p>"
                 },
@@ -1792,7 +1792,7 @@
                     "name": "Elixir of Life (Minor)",
                     "description": "<p><strong>Activate</strong> <span class=\"action-glyph\">A</span> Interact</p>\n<p>Elixirs of life accelerate a living creature's natural healing processes and immune system. Upon drinking this elixir, you regain @Damage[1d6[healing]] Hit Points and gain +1 item bonus to saving throws against diseases and poisons for 10 minutes.</p>\n<p>@UUID[Compendium.pf2e.equipment-effects.Item.lPRuIRbu0rHBkoKY]{Effect: Elixir of Life}</p>"
                 },
-                "consumable->Rounds (Flintlock Pistol)": {
+                "ammo->Rounds (Flintlock Pistol)": {
                     "name": "Rounds (Flintlock Pistol)",
                     "description": "<p>Firearms require ammunition consisting of a projectile and black powder. A round of ammo can vary in its composition but is typically either a prepackaged paper cartridge, including wadding, bullet, and black powder, or loose shot packed in manually. Some weapons, like hand cannons and blunderbusses, can fire other materials, but their ammunition has the same Price due to the cost of the black powder. Because making rounds of firearm ammunition requires creating black powder, you need the @UUID[Compendium.pf2e.feats-srd.Item.is3Oz9wt11lNq62K]{Alchemical Crafting} skill feat to make them. Firearm rounds are a valid option for magical ammunition, just like arrows or bolts. Crafting magical firearm ammunition requires you to be able to craft both alchemical and magical items.</p>"
                 },
@@ -2065,7 +2065,7 @@
                 "equipment->Scimitar Sheath (Empty)": {
                     "name": "Scimitar Sheath (Empty)"
                 },
-                "consumable->Rounds (Piercing Wind)": {
+                "ammo->Rounds (Piercing Wind)": {
                     "name": "Rounds (Piercing Wind)",
                     "description": "<p>Firearms require ammunition consisting of a projectile and black powder. A round of ammo can vary in its composition but is typically either a prepackaged paper cartridge, including wadding, bullet, and black powder, or loose shot packed in manually. Some weapons, like hand cannons and blunderbusses, can fire other materials, but their ammunition has the same Price due to the cost of the black powder. Because making rounds of firearm ammunition requires creating black powder, you need the @UUID[Compendium.pf2e.feats-srd.Item.is3Oz9wt11lNq62K]{Alchemical Crafting} skill feat to make them. Firearm rounds are a valid option for magical ammunition, just like arrows or bolts. Crafting magical firearm ammunition requires you to be able to craft both alchemical and magical items.</p>"
                 },
@@ -2180,13 +2180,13 @@
                     "name": "Alchemist's Fire (Lesser)",
                     "description": "<p><strong>Activate</strong> <span class=\"action-glyph\">A</span> Strike</p>\n<p>Alchemist's fire is a combination of volatile liquids that ignite when exposed to air. Alchemist's fire deals 1d8 fire damage, 1 persistent fire damage, and 1 fire splash damage.</p>"
                 },
-                "consumable->Rounds (Flintlock Pistol)": {
-                    "name": "Rounds (Flintlock Pistol)",
-                    "description": "<p>Firearms require ammunition consisting of a projectile and black powder. A round of ammo can vary in its composition but is typically either a prepackaged paper cartridge, including wadding, bullet, and black powder, or loose shot packed in manually. Some weapons, like hand cannons and blunderbusses, can fire other materials, but their ammunition has the same Price due to the cost of the black powder. Because making rounds of firearm ammunition requires creating black powder, you need the @UUID[Compendium.pf2e.feats-srd.Item.is3Oz9wt11lNq62K]{Alchemical Crafting} skill feat to make them. Firearm rounds are a valid option for magical ammunition, just like arrows or bolts. Crafting magical firearm ammunition requires you to be able to craft both alchemical and magical items.</p>"
-                },
                 "consumable->Searing Suture (Lesser)": {
                     "name": "Searing Suture (Lesser)",
                     "description": "<p><strong>Activate</strong> <span class=\"action-glyph\">1</span> Interact</p>\n<hr />\n<p>Activating this black powder-infused alchemical bandage cauterizes wounds. You can apply a searing suture to yourself or an adjacent willing creature as you activate it. The target creature takes @Damage[1d6[fire]] damage and can immediately attempt a @Check[flat|dc:15] to remove the persistent bleed damage. When applied against a bleed effect that is lower level than the searing suture, the flat check is automatically successful.</p>"
+                },
+                "ammo->Rounds (Flintlock Pistol)": {
+                    "name": "Rounds (Flintlock Pistol)",
+                    "description": "<p>Firearms require ammunition consisting of a projectile and black powder. A round of ammo can vary in its composition but is typically either a prepackaged paper cartridge, including wadding, bullet, and black powder, or loose shot packed in manually. Some weapons, like hand cannons and blunderbusses, can fire other materials, but their ammunition has the same Price due to the cost of the black powder. Because making rounds of firearm ammunition requires creating black powder, you need the @UUID[Compendium.pf2e.feats-srd.Item.is3Oz9wt11lNq62K]{Alchemical Crafting} skill feat to make them. Firearm rounds are a valid option for magical ammunition, just like arrows or bolts. Crafting magical firearm ammunition requires you to be able to craft both alchemical and magical items.</p>"
                 },
                 "strike-melee->Fist": {
                     "name": "Fist"
@@ -2388,7 +2388,7 @@
             "name": "Sabora Sharkosa",
             "blurb": "Female half-elf martial artist gang leader",
             "items": {
-                "consumable->Rounds (Dueling Pistol)": {
+                "ammo->Rounds (Dueling Pistol)": {
                     "name": "Rounds (Dueling Pistol)",
                     "description": "<p>Firearms require ammunition consisting of a projectile and black powder. A round of ammo can vary in its composition but is typically either a prepackaged paper cartridge, including wadding, bullet, and black powder, or loose shot packed in manually. Some weapons, like hand cannons and blunderbusses, can fire other materials, but their ammunition has the same Price due to the cost of the black powder. Because making rounds of firearm ammunition requires creating black powder, you need the @UUID[Compendium.pf2e.feats-srd.Item.is3Oz9wt11lNq62K]{Alchemical Crafting} skill feat to make them. Firearm rounds are a valid option for magical ammunition, just like arrows or bolts. Crafting magical firearm ammunition requires you to be able to craft both alchemical and magical items.</p>"
                 },
@@ -2779,13 +2779,13 @@
                 "equipment->Pewter Mug": {
                     "name": "Pewter Mug"
                 },
-                "consumable->Rounds (Dwarven Scattergun)": {
-                    "name": "Rounds (Dwarven Scattergun)",
-                    "description": "<p>Firearms require ammunition consisting of a projectile and black powder. A round of ammo can vary in its composition but is typically either a prepackaged paper cartridge, including wadding, bullet, and black powder, or loose shot packed in manually. Some weapons, like hand cannons and blunderbusses, can fire other materials, but their ammunition has the same Price due to the cost of the black powder. Because making rounds of firearm ammunition requires creating black powder, you need the @UUID[Compendium.pf2e.feats-srd.Item.is3Oz9wt11lNq62K]{Alchemical Crafting} skill feat to make them. Firearm rounds are a valid option for magical ammunition, just like arrows or bolts. Crafting magical firearm ammunition requires you to be able to craft both alchemical and magical items.</p>"
-                },
                 "consumable->Flask of Whiskey": {
                     "name": "Flask of Whiskey",
                     "description": "<p>Alcohol is a common substance available in stunning variety. The Price of a dose of alcohol depends on the specific beverage. You can't recover from the sickened condition from alcohol while affected.</p>\n<p>If you fail a saving throw against alcohol other than initial saves, the affliction's stage doesn't increase; the only way to increase the stage of alcohol's affliction is to consume more alcohol.</p>\n<hr />\n<p><strong>Activate</strong> <span class=\"action-glyph\">A</span> Interact (Ingested)</p>\n<p><strong>Saving Throw</strong> @Check[fortitude|dc:12]</p>\n<p><strong>Onset</strong> 10 minutes</p>\n<p><strong>Stage 1</strong> +1 item bonus to saving throws against fear (10 minutes)</p>\n<p><strong>Stage 2</strong> @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard}, +1 item bonus to saving throws against fear effects (10 minutes)</p>\n<p><strong>Stage 3</strong> @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 1}, off-guard, @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 2} (10 minutes)</p>\n<p><strong>Stage 4</strong> clumsy 2 and @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 2} (10 minutes)</p>\n<p><strong>Stage 5</strong> clumsy 2, sickened 2, and stupefied 2 (10 minutes)</p>\n<p><strong>Stage 6</strong> @UUID[Compendium.pf2e.conditionitems.Item.fBnFDH2MTzgFijKf]{Unconscious} (8 hours)</p>\n<p><strong>Stage 7</strong> death</p>"
+                },
+                "ammo->Rounds (Dwarven Scattergun)": {
+                    "name": "Rounds (Dwarven Scattergun)",
+                    "description": "<p>Firearms require ammunition consisting of a projectile and black powder. A round of ammo can vary in its composition but is typically either a prepackaged paper cartridge, including wadding, bullet, and black powder, or loose shot packed in manually. Some weapons, like hand cannons and blunderbusses, can fire other materials, but their ammunition has the same Price due to the cost of the black powder. Because making rounds of firearm ammunition requires creating black powder, you need the @UUID[Compendium.pf2e.feats-srd.Item.is3Oz9wt11lNq62K]{Alchemical Crafting} skill feat to make them. Firearm rounds are a valid option for magical ammunition, just like arrows or bolts. Crafting magical firearm ammunition requires you to be able to craft both alchemical and magical items.</p>"
                 },
                 "strike-melee->Fist": {
                     "name": "Fist"
@@ -2940,7 +2940,7 @@
             "name": "Vewslog",
             "blurb": "Male cyclops gunslinger",
             "items": {
-                "consumable->Rounds (Dueling Pistol)": {
+                "ammo->Rounds (Dueling Pistol)": {
                     "name": "Rounds (Dueling Pistol)",
                     "description": "<p>Firearms require ammunition consisting of a projectile and black powder. A round of ammo can vary in its composition but is typically either a prepackaged paper cartridge, including wadding, bullet, and black powder, or loose shot packed in manually. Some weapons, like hand cannons and blunderbusses, can fire other materials, but their ammunition has the same Price due to the cost of the black powder. Because making rounds of firearm ammunition requires creating black powder, you need the @UUID[Compendium.pf2e.feats-srd.Item.is3Oz9wt11lNq62K]{Alchemical Crafting} skill feat to make them. Firearm rounds are a valid option for magical ammunition, just like arrows or bolts. Crafting magical firearm ammunition requires you to be able to craft both alchemical and magical items.</p>"
                 },
