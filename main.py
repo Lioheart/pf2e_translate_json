@@ -277,7 +277,13 @@ def process_files(folder, version, type_system):
                         transifex_dict["entries"][name].update({"results": {}})
                         for result in new_data['results']:
                             result_name = f'{result["range"][0]}-{result["range"][1]}'
-                            transifex_dict["entries"][name]['results'].update({result_name: result['text']})
+                            try:
+                                transifex_dict["entries"][name]['results'].update({result_name: result['text']})
+                            except KeyError: # Warunek tylko dla poniższego
+                                if name == 'Wellspring Surges':
+                                    transifex_dict["entries"][name]['results'].update({result_name: result['description']})
+                                else:
+                                    transifex_dict["entries"][name]['results'].update({result_name: ''})
 
                     # Dla Kompendium
                     elif 'items' not in keys:
@@ -319,6 +325,7 @@ def process_files(folder, version, type_system):
 
                             except KeyError:
                                 pass
+
                             try:
                                 if rules['label'] != '' and not rules['label'].startswith("PF2E"):
                                     transifex_dict["entries"][name]["rules"].update(
@@ -327,6 +334,22 @@ def process_files(folder, version, type_system):
 
                             except KeyError:
                                 pass
+
+                            # Nazwy ataków BattleForm
+                            if rules.get('key') == 'BattleForm':
+                                transifex_dict.setdefault("entries", {}).setdefault(name, {}).setdefault("rules",
+                                                                                                         {})
+                                transifex_dict["entries"][name]["rules"][rule_id] = {"overrides": {"strikes": {}}}
+
+                                strikes = rules.get('overrides', {}).get('strikes', {})
+
+                                for strike_key, strike in strikes.items():
+                                    label = strike.get('label')
+                                    if label and not label.startswith("PF2E"):
+                                        transifex_dict["entries"][name]["rules"][rule_id]["overrides"]["strikes"][
+                                            strike_key] = {"label": label}
+                                        flag.append('rules')
+
                             try:
                                 if rules['choices'] != '':
                                     transifex_dict["entries"][name]["rules"].update({rule_id: {"choices": {}}})
@@ -891,6 +914,7 @@ def process_files(folder, version, type_system):
                         except KeyError:
                             pass
 
+                transifex_dict = remove_empty_values(transifex_dict)
                 transifex_dict = remove_empty_values(transifex_dict)
                 transifex_dict = remove_empty_values(transifex_dict)
                 transifex_dict = remove_empty_values(transifex_dict)
