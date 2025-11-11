@@ -146,6 +146,15 @@
             "name": "Spell Effect: Elemental Form (Forge)",
             "description": "<p>Granted from @UUID[Compendium.pf2e.spells-srd.1K6AYGisvo9gqdhs]{Elemental Form} and @UUID[Compendium.pf2e-relics.relic-gifts.5BX9BGusRyMqWftu]{Living Forge}</p><hr /><p>Your battle form is Huge and your attacks have 15-foot reach. You must have space to expand or the spell is lost. You instead gain AC = 22 + your level, 20 temporary HP, an attack modifier of +25, a damage bonus of +11, double the number of damage dice (including persistent damage), and Acrobatics or Athletics +25. You also gain the following benefits: </p><ul><li><strong>Forge Speed</strong> 30 feet; fire resistance 10, weakness 5 to cold and water; <strong>Melee</strong> <span class=\"action action-glyph\" title=\"Single Action\" aria-label=\"Single Action\">1</span> forgestrike, <strong>Damage</strong> 1d10 modular; 1d4 persistant fire.</li></ul>",
             "rules": {
+                "0": {
+                    "overrides": {
+                        "strikes": {
+                            "forgestrike": {
+                                "label": "Forgestrike"
+                            }
+                        }
+                    }
+                },
                 "1": {
                     "label": "Forgestrike Modular Damage"
                 },
