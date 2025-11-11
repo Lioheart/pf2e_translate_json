@@ -1,15 +1,21 @@
 {
     "label": "Ac-Effects",
     "entries": {
+        "Effect: Air Elemental Support Benefit": {
+            "name": "Effect: Air Elemental Support Benefit",
+            "description": "<p>Granted by @UUID[Compendium.pf2e-animal-companions.AC-Support.Item.aMFtyZ3QNQkduwqR]{Air Elemental Support Benefit}</p><p>If you hit with a Strike and deal damage to a creature in your air elemental's reach, you are @UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{Concealed} to that creature until the start of your next turn.</p>",
+            "rules": {
+                "1": {
+                    "text": "COMP.SpecificRule.AirElemental.EffectNote"
+                }
+            }
+        },
         "Effect: Antelope Support Benefit": {
             "name": "Effect: Antelope Support Benefit",
             "description": "<p>Granted by @UUID[Compendium.pf2e-animal-companions.AC-Support.Item.yIB4qKV5sqcXlOmB]{Antelope Support Benefit}</p><p>Your Strikes that damage a creature in your antelope's reach also deal bleed damage.</p>",
             "rules": {
                 "0": {
                     "prompt": "Is companion nimble or savage."
-                },
-                "3": {
-                    "text": "COMP.SpecificRule.Antelope.EffectNote"
                 }
             }
         },
@@ -45,9 +51,6 @@
             "rules": {
                 "0": {
                     "prompt": "Is companion nimble or savage."
-                },
-                "3": {
-                    "text": "COMP.SpecificRule.Bear.EffectNote"
                 }
             }
         },
@@ -86,9 +89,6 @@
             "rules": {
                 "0": {
                     "prompt": "Is companion nimble or savage."
-                },
-                "3": {
-                    "text": "COMP.SpecificRule.Boar.EffectNote"
                 }
             }
         },
@@ -175,13 +175,10 @@
         },
         "Effect: Fire Elemental Support Benefit": {
             "name": "Effect: Fire Elemental Support Benefit",
-            "description": "<p>Granted by @UUID[Compendium.pf2e-animal-companions.AC-Support.Item.NSdcXgEHVHdfJlkb]{Fire Elemental Support Benefit}</p><p>your Strikes that damage a creature in your fire elemental's reach also deal 1d6 persistent fire damage. If your fire elemental is nimble or savage, the persistent fire damage increases to 2d6.</p>",
+            "description": "<p>Granted by @UUID[Compendium.pf2e-animal-companions.AC-Support.Item.NSdcXgEHVHdfJlkb]{Fire Elemental Support Benefit}</p><p>Your Strikes that damage a creature in your fire elemental's reach also deal persistent fire damage.</p>",
             "rules": {
                 "0": {
                     "prompt": "Is companion nimble or savage."
-                },
-                "3": {
-                    "text": "COMP.SpecificRule.FireElemental.EffectNote"
                 }
             }
         },
@@ -244,9 +241,6 @@
                 "0": {
                     "prompt": "COMP.Prompt.IsSpecialized"
                 },
-                "3": {
-                    "text": "COMP.SpecificRule.GrayBladeling.EffectNote.Bleeding"
-                },
                 "4": {
                     "text": "COMP.SpecificRule.GrayBladeling.EffectNote.Frightened"
                 }
@@ -258,13 +252,10 @@
         },
         "Effect: Hermit Krait Support Benefit": {
             "name": "Effect: Hermit Krait Support Benefit",
-            "description": "<p>Granted by @UUID[Compendium.pf2e-animal-companions.AC-Support.Item.u9jaNQk6QF2Tm8oe]{Hermit Krait Support Benefit}</p><p>Your Strikes that damage a creature in your hermit krait's reach also deal 1d6 persistent poison damage. If your hermit krait is nimble or savage, the persistent poison damage increases to 2d6.</p>",
+            "description": "<p>Granted by @UUID[Compendium.pf2e-animal-companions.AC-Support.Item.u9jaNQk6QF2Tm8oe]{Hermit Krait Support Benefit}</p><p>Your Strikes that damage a creature in your hermit krait's reach also deal persistent poison damage.</p>",
             "rules": {
                 "0": {
                     "prompt": "Is companion nimble or savage."
-                },
-                "3": {
-                    "text": "COMP.SpecificRule.HermitKrait.EffectNote"
                 }
             }
         },
@@ -295,9 +286,6 @@
             "rules": {
                 "0": {
                     "prompt": "COMP.Prompt.IsSpecialized"
-                },
-                "3": {
-                    "text": "COMP.SpecificRule.Keulia.EffectNote"
                 }
             }
         },
@@ -307,9 +295,6 @@
             "rules": {
                 "0": {
                     "prompt": "Is companion nimble or savage."
-                },
-                "3": {
-                    "text": "COMP.SpecificRule.MetalElemental.EffectNote"
                 }
             }
         },
@@ -344,7 +329,7 @@
             "description": "<p>Granted by @UUID[Compendium.pf2e-animal-companions.AC-Support.Item.9Y5QKMvy0KsliE29]{Moth Support Benefit}</p><p>If you damage a Concealed or Hidden creature in your moth's reach with a Strike, that creature requires only a DC 3 Flat Check to target it if it's concealed, or DC 9 Flat Check if it's hidden.</p>",
             "rules": {
                 "1": {
-                    "text": "COMP.SpecificRule.Moth.EffectNote\n"
+                    "text": "COMP.SpecificRule.Moth.EffectNote"
                 }
             }
         },
@@ -362,15 +347,16 @@
         },
         "Effect: Pangolin Support Benefit": {
             "name": "Effect: Pangolin Support Benefit",
-            "description": "<p>Granted by @UUID[Compendium.pf2e-animal-companions.AC-Support.Item.QiQvx7jtfrkGnf13]{Pangolin Support Benefit}</p><p>Your Strikes that damage a creature in your pangolin's reach also deal 1d6 persistent bleed damage. If your pangolin is nimble or savage, the persistent bleed damage increases to 2d6.</p>",
+            "description": "<p>Granted by @UUID[Compendium.pf2e-animal-companions.AC-Support.Item.QiQvx7jtfrkGnf13]{Pangolin Support Benefit}</p><p>Your Strikes that damage a creature in your pangolin's reach also deal persistent bleed damage.</p>",
             "rules": {
                 "0": {
                     "prompt": "Is companion nimble or savage."
-                },
-                "3": {
-                    "text": "COMP.SpecificRule.Pangolin.EffectNote"
                 }
             }
+        },
+        "Effect: Ravenous Drake Support Benefit": {
+            "name": "Effect: Ravenous Drake Support Benefit",
+            "description": "<p>Granted by @UUID[Compendium.pf2e-animal-companions.AC-Support.Item.uIOdChoT35s5BIzd]{Ravenous Drake Support Benefit}</p><p>You gain a +1 circumstance bonus to any Athletics check to Disarm, Reposition, Shove, or Trip to an opponent adjacent to your ravenous drake.</p>"
         },
         "Effect: Reckless Attack": {
             "name": "Effect: Reckless Attack",
@@ -396,11 +382,8 @@
                 "0": {
                     "prompt": "Is companion nimble or savage."
                 },
-                "2": {
-                    "label": "Riding the Drake"
-                },
-                "3": {
-                    "text": "COMP.SpecificRule.RidingDrake.EffectNote"
+                "1": {
+                    "label": "COMP.SpecificRule.RidingDrake.Label"
                 }
             }
         },
@@ -432,9 +415,6 @@
             "rules": {
                 "0": {
                     "prompt": "Is companion nimble or savage."
-                },
-                "3": {
-                    "text": "COMP.SpecificRule.Scorpion.EffectNote"
                 }
             }
         },
@@ -443,13 +423,13 @@
             "description": "<p>Granted by @UUID[Compendium.pf2e-animal-companions.AC-Support.Item.z6bNmmf5YiJrPbot]{Severed Head Support Benefit}</p><p>Your Strikes t<span style=\"font-family:Roboto, sans-serif\">hat damage a creature in your severed head's reach take a penalty to their speed and must succeed at a flat check to use reactions.</span></p>",
             "rules": {
                 "1": {
-                    "text": "COMP.SpecificRule.EffectNote.EffectNote.SupportBenefit"
+                    "text": "COMP.SpecificRule.SeveredHead.EffectNote.SupportBenefit"
                 }
             }
         },
         "Effect: Severed Head Support Benefit (Penalty)": {
             "name": "Effect: Severed Head Support Benefit (Penalty)",
-            "description": "<p>Granted by Severed Head Support Benefit</p><p>You take a -5-foot status penalty to your Speeds and must succeed at a DC 5 flat check to use reactions triggered by the origin's actions.</p>"
+            "description": "<p>Granted by @UUID[Compendium.pf2e-animal-companions.AC-Support.Item.z6bNmmf5YiJrPbot]{Severed Head Support Benefit}</p><p>You take a -5-foot status penalty to your Speeds and must succeed at a DC 5 flat check to use reactions triggered by the origin's actions.</p>"
         },
         "Effect: Shadow Hound Support Benefit": {
             "name": "Effect: Shadow Hound Support Benefit",
@@ -462,13 +442,10 @@
         },
         "Effect: Shark Support Benefit": {
             "name": "Effect: Shark Support Benefit",
-            "description": "<p>Granted by @UUID[Compendium.pf2e-animal-companions.AC-Support.Item.YsLLV4J7L6fgzTXf]{Shark Support Benefit}</p><p>Each time you hit a creature in the shark's reach with a Strike and deal slashing or piercing damage, the creature takes 1d8 slashing damage from the shark.</p>",
+            "description": "<p>Granted by @UUID[Compendium.pf2e-animal-companions.AC-Support.Item.YsLLV4J7L6fgzTXf]{Shark Support Benefit}</p><p>Each time you hit a creature in the shark's reach with a Strike and deal slashing or piercing damage, the creature takes additional slashing damage from the shark.</p>",
             "rules": {
                 "0": {
                     "prompt": "Is companion nimble or savage."
-                },
-                "2": {
-                    "text": "Each time you hit a creature in the shark's reach with a Strike and deal slashing or piercing damage, the creature takes @Damage[({item|flags.pf2e.rulesSelections.sharkSupportBenefit})d8[slashing]] damage from the shark."
                 }
             }
         },
@@ -478,9 +455,15 @@
             "rules": {
                 "0": {
                     "prompt": "Is companion nimble or savage."
-                },
-                "3": {
-                    "text": "COMP.SpecificRule.Shotalashu.EffectNote"
+                }
+            }
+        },
+        "Effect: Skeletal Bird of Prey Support Benefit": {
+            "name": "Effect: Skeletal Bird of Prey Support Benefit",
+            "description": "<p>Granted by @UUID[Compendium.pf2e-animal-companions.AC-Support.Item.bEkXle5FLNxnp3IE]{Skeletal Bird of Prey Support Benefit}</p><p>When you damage a creature in the bird's reach with a Strike, that creature becomes @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 1}.</p>",
+            "rules": {
+                "1": {
+                    "text": "COMP.SpecificRule.SkeletalBirdOfPrey.EffectNote"
                 }
             }
         },
@@ -497,10 +480,13 @@
             "name": "Effect: Skeletal Mount Support Benefit",
             "description": "<p>Granted by @UUID[Compendium.pf2e-animal-companions.AC-Support.Item.CKMQC3zu1XoGjeNd]{Skeletal Mount Support Benefit}</p><p>If you are riding your skeletal mount and move at least 10 feet on the action before your attack, any creature damaged by the attack becomes @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 1}, or @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 2} if the attack was a critical hit.</p>",
             "rules": {
-                "1": {
-                    "text": "COMP.SpecificRule.SkeletalMount.EffectNote.Success"
+                "0": {
+                    "label": "COMP.SpecificRule.RidingDrake.Label"
                 },
                 "2": {
+                    "text": "COMP.SpecificRule.SkeletalMount.EffectNote.Success"
+                },
+                "3": {
                     "text": "COMP.SpecificRule.SkeletalMount.EffectNote.CriticalSuccess"
                 }
             }
@@ -549,9 +535,6 @@
             "rules": {
                 "0": {
                     "prompt": "Is companion nimble or savage."
-                },
-                "3": {
-                    "text": "COMP.SpecificRule.Triceratops.EffectNote"
                 }
             }
         },
@@ -570,9 +553,6 @@
             "rules": {
                 "0": {
                     "prompt": "Is companion nimble or savage."
-                },
-                "2": {
-                    "text": "COMP.SpecificRule.UlgremLurann.EffectNote"
                 }
             }
         },
@@ -585,24 +565,12 @@
                 }
             }
         },
-        "Effect: Undead Bird of Prey Support Benefit": {
-            "name": "Effect: Undead Bird of Prey Support Benefit",
-            "description": "<p>Granted by @UUID[Compendium.pf2e-animal-companions.AC-Support.Item.bEkXle5FLNxnp3IE]{Undead Bird of Prey Support Benefit}</p><p>When you damage a creature in the bird's reach with a Strike, that creature becomes @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 1}.</p>",
-            "rules": {
-                "1": {
-                    "text": "COMP.SpecificRule.UndeadBirdOfPrey.EffectNote"
-                }
-            }
-        },
         "Effect: Undead Hand Support Benefit": {
             "name": "Effect: Undead Hand Support Benefit",
             "description": "<p>Granted by @UUID[Compendium.pf2e-animal-companions.AC-Support.Item.imNJpD4afn4UrLpu]{Undead Hand Support Benefit}</p><p>Each time you hit a creature in the hand's reach with a Strike, the creature takes additional bludgeoning damage from the hand.</p>",
             "rules": {
                 "0": {
                     "prompt": "Is companion nimble or savage."
-                },
-                "3": {
-                    "text": "COMP.SpecificRule.UndeadHand.EffectNote"
                 }
             }
         },
@@ -612,9 +580,6 @@
             "rules": {
                 "0": {
                     "prompt": "Is companion nimble or savage."
-                },
-                "3": {
-                    "text": "COMP.SpecificRule.VampiricAnimal.EffectNote"
                 }
             }
         },
@@ -641,7 +606,7 @@
             "description": "<p>Granted by @UUID[Compendium.pf2e-animal-companions.AC-Support.Item.IUXX1lUd9kMzV4bq]{Water Wraith Support Benefit}</p><p>Each time you hit a creature within your water wraith's reach, the creature is @UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]{Dazzled}.</p>",
             "rules": {
                 "1": {
-                    "text": "Each time you hit a creature within your water wraith's reach, the creature is @UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]{Dazzled}."
+                    "text": "COMP.SpecificRule.WaterWraith.EffectNote"
                 }
             }
         },
@@ -650,40 +615,26 @@
             "description": "<p>Granted by @UUID[Compendium.pf2e-animal-companions.AC-Support.Item.5HnWXmOp8qNjfhdU]{Wolf Support Benefit}</p><p>Your Strikes that damage creatures your wolf threatens give the target a –5-foot status penalty to its Speeds (–10 on a critical success).</p>",
             "rules": {
                 "1": {
-                    "text": "COMP.SpecificRule.Wolf.EffectNote.Success"
-                },
-                "2": {
-                    "text": "COMP.SpecificRule.Wolf.EffectNote.CriticalSuccess"
+                    "text": "COMP.SpecificRule.Wolf.EffectNote"
                 }
             }
         },
-        "Effect: Wolf Support Benefit (-10-foot penalty)": {
-            "name": "Effect: Wolf Support Benefit (-10-foot penalty)",
-            "description": "<p>Granted by @UUID[Compendium.pf2e-animal-companions.AC-Support.Item.5HnWXmOp8qNjfhdU]{Wolf Support Benefit}</p><p>You take a -10-foot status penalty to its speeds.</p><p></p>"
-        },
-        "Effect: Wolf Support Benefit (-5-foot penalty)": {
-            "name": "Effect: Wolf Support Benefit (-5-foot penalty)",
-            "description": "<p>Granted by @UUID[Compendium.pf2e-animal-companions.AC-Support.Item.5HnWXmOp8qNjfhdU]{Wolf Support Benefit}</p><p>You take a -5-foot status penalty to its speeds.</p>"
+        "Effect: Wolf Support Benefit Speed Penalty": {
+            "name": "Effect: Wolf Support Benefit Speed Penalty",
+            "description": "<p>Granted by @UUID[Compendium.pf2e-animal-companions.AC-Support.Item.5HnWXmOp8qNjfhdU]{Wolf Support Benefit}</p><p>You take a a –5-foot status penalty to its Speeds (–10 on a critical success).</p>"
         },
         "Effect: Wood Elemental Support Benefit": {
             "name": "Effect: Wood Elemental Support Benefit",
             "description": "<p>Granted by @UUID[Compendium.pf2e-animal-companions.AC-Support.Item.KomM6mTwJAzvqAgi]{Wood Elemental Support Benefit}</p><p>If you hit with a Strike that deals damage to a creature in your wood elemental's reach, the creature takes a –5-foot circumstance penalty to its Speeds for 1 minute (–10 on a critical success).</p>",
             "rules": {
                 "1": {
-                    "text": "COMP.SpecificRule.WoodElemental.EffectNote.Success"
-                },
-                "2": {
-                    "text": "COMP.SpecificRule.WoodElemental.EffectNote.CriticalSuccess"
+                    "text": "COMP.SpecificRule.WoodElemental.EffectNote"
                 }
             }
         },
-        "Effect: Wood Elemental Support Benefit (-10-foot penalty)": {
-            "name": "Effect: Wood Elemental Support Benefit (-10-foot penalty)",
-            "description": "<p>Granted by @UUID[Compendium.pf2e-animal-companions.AC-Support.Item.KomM6mTwJAzvqAgi]{Wood Elemental Support Benefit}</p><p>You take a -10-foot circumstance penalty to its speeds.</p>"
-        },
-        "Effect: Wood Elemental Support Benefit (-5-foot penalty)": {
-            "name": "Effect: Wood Elemental Support Benefit (-5-foot penalty)",
-            "description": "<p>Granted by @UUID[Compendium.pf2e-animal-companions.AC-Support.Item.KomM6mTwJAzvqAgi]{Wood Elemental Support Benefit}</p><p>You take a -5-foot circumstance penalty to its speeds.</p>"
+        "Effect: Wood Elemental Support Benefit Speed Penalty": {
+            "name": "Effect: Wood Elemental Support Benefit Speed Penalty",
+            "description": "<p>Granted by @UUID[Compendium.pf2e-animal-companions.AC-Support.Item.KomM6mTwJAzvqAgi]{Wood Elemental Support Benefit}</p><p>You take a a –5-foot status penalty to its Speeds (–10 on a critical success).</p>"
         },
         "Effect: Wyvern Support Benefit": {
             "name": "Effect: Wyvern Support Benefit",
@@ -691,9 +642,6 @@
             "rules": {
                 "0": {
                     "prompt": "Is companion nimble or savage."
-                },
-                "3": {
-                    "text": "COMP.SpecificRule.Wyvern.EffectNote"
                 }
             }
         },
@@ -703,9 +651,6 @@
             "rules": {
                 "0": {
                     "prompt": "Is companion nimble or savage."
-                },
-                "3": {
-                    "text": "COMP.SpecificRule.ZombieCarrionBird.EffectNote"
                 }
             }
         },
@@ -715,9 +660,6 @@
             "rules": {
                 "0": {
                     "prompt": "Is companion nimble or savage."
-                },
-                "5": {
-                    "text": "COMP.SpecificRule.ZombieMount.EffectNote"
                 }
             }
         },
@@ -727,9 +669,6 @@
             "rules": {
                 "0": {
                     "prompt": "Is companion nimble or savage."
-                },
-                "3": {
-                    "text": "COMP.SpecificRule.Zombie.EffectNote"
                 }
             }
         }
