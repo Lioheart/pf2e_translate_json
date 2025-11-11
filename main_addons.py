@@ -139,7 +139,7 @@ def read_leveldb_to_json(leveldb_path, output_json_path):
 
             print(f"Dane zostały zapisane do {output_file}")
         except Exception as e:
-            raise f"Wystąpił błąd read_leveldb_to_json: {e}"
+            raise RuntimeError(f"Wystąpił błąd read_leveldb_to_json: {e}")
         finally:
             db.close()
 
@@ -296,6 +296,12 @@ def process_files(folders, version, type_system):
                     new_name = fr'{version}/{type_system}.{file}'
                 elif type_system.startswith('star'):
                     new_name = fr'{version}/starfinder-field-test-for-pf2e.{file}'
+                if version.startswith('addon_21') and file == 'journals.json':
+                    new_name = fr'{version}/hopefinder.journals.json'
+                if version.startswith('addon_22'):
+                    new_name = fr'{version}/prishas-precious-projectiles.{file}'
+                if version.startswith('addon_8'):
+                    new_name = fr'{version}/pf2e.{file}'
                 print('Nowy plik:', new_name)
                 print()
 
@@ -356,7 +362,11 @@ def process_files(folders, version, type_system):
 
                 flag = []
                 for new_data in data:
-                    name = new_data["name"].strip()
+                    try:
+                        name = new_data["name"].strip()
+                    except TypeError:
+                        continue
+
                     # Dla folderów
                     if 'folder' in new_data.keys() and 'color' in new_data.keys():
                         transifex_dict["folders"].update({name: name})
@@ -497,6 +507,7 @@ def process_files(folders, version, type_system):
 
                             except KeyError:
                                 pass
+
                             try:
                                 if rules['label'] != '' and not rules['label'].startswith("PF2E"):
                                     transifex_dict["entries"][name]["rules"].update(
@@ -505,6 +516,21 @@ def process_files(folders, version, type_system):
 
                             except KeyError:
                                 pass
+
+                            # Nazwy ataków BattleForm
+                            if rules.get('key') == 'BattleForm':
+                                transifex_dict.setdefault("entries", {}).setdefault(name, {}).setdefault("rules", {})
+                                transifex_dict["entries"][name]["rules"][rule_id] = {"overrides": {"strikes": {}}}
+
+                                strikes = rules.get('overrides', {}).get('strikes', {})
+
+                                for strike_key, strike in strikes.items():
+                                    label = strike.get('label')
+                                    if label and not label.startswith("PF2E"):
+                                        transifex_dict["entries"][name]["rules"][rule_id]["overrides"]["strikes"][
+                                            strike_key] = {"label": label}
+                                        flag.append('rules')
+
                             try:
                                 if rules['choices'] != '':
                                     transifex_dict["entries"][name]["rules"].update({rule_id: {"choices": {}}})
@@ -783,6 +809,8 @@ def process_files(folders, version, type_system):
                             else:
                                 type_name = item['type']
                             item_name = f'{type_name}->{item["name"]}'
+                            if item_name == 'strike-melee->Egg':
+                                item_name = 'strike-ranged->Egg'
 
                             # Jeśli akcja jest połączona z bronią, nie tłumacz
                             try:
@@ -864,7 +892,7 @@ def process_files(folders, version, type_system):
                             }
                         )
 
-                    # SPELLS =============================================================================================
+                    # SPELLS ===========================================================================================
                     if file == 'spells.json':
                         name = new_data["name"].strip()
 
@@ -952,6 +980,90 @@ def process_files(folders, version, type_system):
 
                         except KeyError:
                             pass
+
+
+
+                # BESTIARY HOPEFINDER ==================================================================================
+                if file == 'bestiary.json':
+                    transifex_dict = {
+                        "label": file.split('.')[0].title(),
+                        "entries": {},
+                        "mapping": {}
+                    }
+
+                    for new_data in data:
+                        try:
+                            name = new_data["name"].strip()
+                        except TypeError:
+                            continue
+                        if new_data.get('prototypeToken'):
+                            transifex_dict["entries"].update({name: {}})
+                            transifex_dict["entries"][name].update({"name": name})
+                            try:
+                                if new_data['system']['details']['blurb'] != "":
+                                    transifex_dict["entries"][name].update(
+                                        {"blurb": new_data['system']['details']['blurb']})
+                                    flag.append('bestiary')
+                            except KeyError:
+                                pass
+
+                            if new_data.get('items'):
+                                transifex_dict["entries"][name].update({"items": {}})
+                                for item in new_data['items']:
+                                    for item_data in data:
+                                        if item == item_data['_id']:
+
+                                            # Nazwanie klucza
+                                            if item_data['type'] in ['melee', 'ranged']:
+                                                try:
+                                                    type_name = f'strike-{item_data["system"]["weaponType"]["value"]}'
+                                                except KeyError:
+                                                    type_name = f'strike-{item_data['type']}'
+                                                if item_data['name'] == "Bottle":
+                                                    type_name = 'strike-ranged'
+                                            else:
+                                                type_name = item_data['type']
+                                            item_name = f'{type_name}->{item_data["name"]}'
+
+                                            # Jeśli przedmiot jest z istniejącej publikacji i nie jest przedmiotem z innego kompendium
+                                            try:
+                                                if (item_data['flags']['core']['sourceId'].startswith('Compendium')
+                                                        and item_data['system']['publication']['title'] != ""
+                                                        and '(' not in item_data['name'] and item_data['type'] != 'action'):
+                                                    continue
+                                            except KeyError:
+                                                pass
+
+                                            # Jeśli opis jest przetłumaczony, bierz tylko nazwę, w przeciwnym wypadku razem z opisem
+                                            if item_data['system']['description']['value'].startswith('<p>@Localize') or \
+                                                    item_data['system']['description']['value'] == "":
+                                                if item_data['name'] == 'Darkvision' or item_data['name'] == 'Low-Light Vision' or \
+                                                        item_data[
+                                                            'name'] == 'Greater Darkvision':
+                                                    continue
+                                                transifex_dict["entries"][name]['items'].update({item_name: {
+                                                    "name": item_data['name']
+                                                }})
+                                            else:
+                                                transifex_dict["entries"][name]['items'].update({item_name: {
+                                                    "name": item_data['name'],
+                                                    "description": item_data['system']['description']['value']
+                                                }})
+
+                        if 'bestiary' in flag:
+                            transifex_dict['mapping'].update(
+                                {
+                                    "publicNotes": "system.details.publicNotes",
+                                    "privateNotes": "system.details.privateNotes",
+                                    "acDetails": "system.attributes.ac.details",
+                                    "blurb": "system.details.blurb",
+                                    "hpDetails": "system.attributes.hp.details",
+                                    "allSavesBonus": "system.attributes.allSaves.value",
+                                    "speedsDetails": "system.attributes.speed.details",
+                                    "sensesDetails": "system.perception.details",
+                                    "languagesDetails": "system.details.languages.details"
+                                }
+                            )
 
                 transifex_dict = remove_empty_values(transifex_dict)
                 transifex_dict = remove_empty_values(transifex_dict)
@@ -1167,7 +1279,7 @@ read_leveldb_to_json(fr'{extract_folder}\packs', fr'{extract_folder}\output')
 # === === === === === === === === === === === === === === === === === === === === === === === === === === === === ===
 # Addons9
 # Ścieżka do pliku z wersją addon9
-add_9_url = "https://raw.githubusercontent.com/TikaelSol/PF2e-Animal-Companions/master/module.json"
+add_9_url = "https://github.com/TikaelSol/PF2e-Animal-Companions/releases/latest/download/module.json"
 
 path_9, headers_9 = urlretrieve(add_9_url, 'module_9.json')
 version_9 = 'addon_9_' + json.loads(open('module_9.json', 'r', encoding='utf-8').read())["version"]
@@ -1383,6 +1495,129 @@ else:
 move_files(fr'{extract_folder}/pf2e-variant-cantrips/packs', fr'{extract_folder}/packs')
 read_leveldb_to_json(fr'{extract_folder}\packs', fr'{extract_folder}\output')
 # === === === === === === === === === === === === === === === === === === === === === === === === === === === === ===
+# Addons19
+# Ścieżka do pliku z wersją addon19
+add_19_url = "https://github.com/ChasarooniZ/pf2e-summons-assistant/releases/latest/download/module.json"
+
+path_19, headers_19 = urlretrieve(add_19_url, 'module_19.json')
+version_19 = 'addon_19_' + json.loads(open('module_19.json', 'r', encoding='utf-8').read())["version"]
+zip_addons19_filename = "pf2e-summons-assistant.zip"
+zip_addons19 = 'https://github.com/ChasarooniZ/pf2e-summons-assistant/releases/latest/download/module.zip'
+extract_folder = 'pack_addon_19'
+print()
+print("*** Wersja dodatku_19 PF2E: ", version_19, " ***")
+
+# if create_version_directory(version_19):
+#     download_and_extract_zip(zip_addons19, zip_addons19_filename, extract_folder)
+# else:
+#     with zipfile.ZipFile(zip_addons19_filename, 'r') as zip_ref:
+#         zip_ref.extractall(extract_folder)
+
+base_folder = pathlib.Path(__file__).parent.resolve()
+source_folder = (base_folder / "../pf2e-summons-assistant").resolve()
+target_folder = (base_folder / "pack_addon_19/output").resolve()
+target_folder2 = (base_folder / version_19).resolve()
+
+# Utwórz folder docelowy, jeśli nie istnieje
+target_folder.mkdir(parents=True, exist_ok=True)
+target_folder2.mkdir(parents=True, exist_ok=True)
+
+# Znajdź wszystkie pliki *.json w folderze źródłowym
+json_files = list(source_folder.glob("*.json"))
+
+if not json_files:
+    print(f"⚠️ Nie znaleziono żadnych plików .json w: {source_folder}")
+else:
+    for file in json_files:
+        shutil.copy(file, target_folder / file.name)
+        print(f"📄 Skopiowano: {file.name} → {target_folder}")
+
+# To nie jest LevelDB
+# read_leveldb_to_json(fr'{extract_folder}\packs', fr'{extract_folder}\output')
+# === === === === === === === === === === === === === === === === === === === === === === === === === === === === ===
+# Addons20
+# Ścieżka do pliku z wersją addon20
+add_20_url = "https://github.com/thejoester/pf2e-alchemist-remaster-ducttape/releases/latest/download/module.json"
+
+path_20, headers_20 = urlretrieve(add_20_url, 'module_20.json')
+version_20 = 'addon_20_' + json.loads(open('module_20.json', 'r', encoding='utf-8').read())["version"]
+zip_addons20_filename = "pf2e-alchemist-remaster-ducttape.zip"
+zip_addons20 = 'https://github.com/thejoester/pf2e-alchemist-remaster-ducttape/releases/latest/download/pf2e-alchemist-remaster-ducttape.zip'
+extract_folder = 'pack_addon_20'
+print()
+print("*** Wersja dodatku_20 PF2E: ", version_20, " ***")
+
+if create_version_directory(version_20):
+    download_and_extract_zip(zip_addons20, zip_addons20_filename, extract_folder)
+else:
+    with zipfile.ZipFile(zip_addons20_filename, 'r') as zip_ref:
+        zip_ref.extractall(extract_folder)
+
+read_leveldb_to_json(fr'{extract_folder}\packs', fr'{extract_folder}\output')
+# === === === === === === === === === === === === === === === === === === === === === === === === === === === === ===
+# Addons21
+# Ścieżka do pliku z wersją addon21
+add_21_url = "https://github.com/TikaelSol/hopefinder/releases/latest/download/module.json"
+
+path_21, headers_21 = urlretrieve(add_21_url, 'module_21.json')
+version_21 = 'addon_21_' + json.loads(open('module_21.json', 'r', encoding='utf-8').read())["version"]
+zip_addons21_filename = "hopefinder.zip"
+zip_addons21 = 'https://github.com/TikaelSol/hopefinder/releases/latest/download/module.zip'
+extract_folder = 'pack_addon_21'
+print()
+print("*** Wersja dodatku_21 PF2E: ", version_21, " ***")
+
+if create_version_directory(version_21):
+    download_and_extract_zip(zip_addons21, zip_addons21_filename, extract_folder)
+else:
+    with zipfile.ZipFile(zip_addons21_filename, 'r') as zip_ref:
+        zip_ref.extractall(extract_folder)
+
+move_files(fr'{extract_folder}/build/packs', fr'{extract_folder}/packs')
+read_leveldb_to_json(fr'{extract_folder}\packs', fr'{extract_folder}\output')
+# === === === === === === === === === === === === === === === === === === === === === === === === === === === === ===
+# Addons22
+# Ścieżka do pliku z wersją addon22
+add_22_url = "https://github.com/johncarney/prishas-precious-projectiles/releases/latest/download/module.json"
+
+path_22, headers_22 = urlretrieve(add_22_url, 'module_22.json')
+version_22 = 'addon_22_' + json.loads(open('module_22.json', 'r', encoding='utf-8').read())["version"]
+zip_addons22_filename = "hopefinder.zip"
+zip_addons22 = 'https://github.com/johncarney/prishas-precious-projectiles/releases/latest/download/prishas-precious-projectiles.zip'
+extract_folder = 'pack_addon_22'
+print()
+print("*** Wersja dodatku_22 PF2E: ", version_22, " ***")
+
+if create_version_directory(version_22):
+    download_and_extract_zip(zip_addons22, zip_addons22_filename, extract_folder)
+else:
+    with zipfile.ZipFile(zip_addons22_filename, 'r') as zip_ref:
+        zip_ref.extractall(extract_folder)
+
+move_files(fr'{extract_folder}/build/packs', fr'{extract_folder}/packs')
+read_leveldb_to_json(fr'{extract_folder}\packs', fr'{extract_folder}\output')
+# === === === === === === === === === === === === === === === === === === === === === === === === === === === === ===
+# Addons23
+# Ścieżka do pliku z wersją addon23
+add_23_url = "https://www.dropbox.com/scl/fi/4ha231fwfytu00q69t2jx/module.json?rlkey=gkjuf1ck10cti28du65uf8qz8&st=kdxi9btr&dl=1"
+
+path_23, headers_23 = urlretrieve(add_23_url, 'module_23.json')
+version_23 = 'addon_23_' + json.loads(open('module_23.json', 'r', encoding='utf-8').read())["version"]
+zip_addons23_filename = "pf2e-animist.zip"
+zip_addons23 = 'https://www.dropbox.com/scl/fi/kb5p6o2stvv58sbd8h92m/pf2e-animist.zip?rlkey=62hlv9ysqomukfp847i0xjwl6&st=xoxjjdak&dl=1'
+extract_folder = 'pack_addon_23'
+print()
+print("*** Wersja dodatku_23 PF2E: ", version_23, " ***")
+
+if create_version_directory(version_23):
+    download_and_extract_zip(zip_addons23, zip_addons23_filename, extract_folder)
+else:
+    with zipfile.ZipFile(zip_addons23_filename, 'r') as zip_ref:
+        zip_ref.extractall(extract_folder)
+
+move_files(fr'{extract_folder}/dist/packs', fr'{extract_folder}/packs')
+read_leveldb_to_json(fr'{extract_folder}\packs', fr'{extract_folder}\output')
+# === === === === === === === === === === === === === === === === === === === === === === === === === === === === ===
 
 # folder = 'pack'
 # process_files(folder, version, 'system')
@@ -1444,6 +1679,22 @@ process_files(folder, version_17, "pf2e-kingmaker-tools")
 
 folder = r'pack_addon_18/output'
 process_files(folder, version_18, "pf2e-variant-cantrips")
+
+# ERROR
+folder = r'pack_addon_19/output'
+process_files(folder, version_19, "pf2e-summons-assistant")
+
+folder = r'pack_addon_20/output'
+process_files(folder, version_20, "pf2e-alchemist-remaster-ducttape")
+
+folder = r'pack_addon_21/output'
+process_files(folder, version_21, "hopefinder")
+
+folder = r'pack_addon_22/output'
+process_files(folder, version_22, "prishas-precious-projectiles")
+
+folder = r'pack_addon_23/output'
+process_files(folder, version_23, "pf2e-animist")
 
 copy_addon_folders()
 clean()
