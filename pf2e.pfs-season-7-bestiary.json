@@ -5,7 +5,9 @@
         "7-02": "7-02",
         "7-03": "7-03",
         "7-04": "7-04",
-        "7-05": "7-05"
+        "7-05": "7-05",
+        "7-06": "7-06",
+        "7-07": "7-07"
     },
     "entries": {
         "Athamaru Pirate": {
@@ -159,6 +161,30 @@
                 }
             }
         },
+        "Damaged Jaws of Hell": {
+            "name": "Damaged Jaws of Hell",
+            "descriptionHazard": "<p>The machine is a cylindrical device ringed in blades with a devilish eye at its center. Gnome inventors created the mechanical device, which taps into the planes of earth and fre to create powerful blasts to damage fortress walls or decimate ranks of enemies. Unfortunately, the many miles of forest have not been kind and it's malfunctioning. The damaged jaws planar connections have weakened to a mere trickle and, when activated, it lashes out in an uncontrolled frenzy. The blades encircling it begin lashing out.</p>",
+            "disable": "<p>@Check[arcana|dc:18], @Check[crafting|dc:18], @Check[nature|dc:18], or @Check[thievery|dc:18] (trained) twice, to sever the connection to the planes of fre and earth. @Check[crafting|dc:16] or @Check[thievery|dc:16] (trained) once, to remove the pintle connecting the limber to the horses. A creature must be adjacent to the jaws to make either check.</p>",
+            "reset": "<p>The planar connection shuts down after 1 minute. The horses will tire and stop running after 1 minute.</p>",
+            "routine": "<p>(three actions) On its turn each round, the horses spend one action to move 30 feet, dragging the limber carrying the jaws behind them in a randomly chosen direction. The horses will not move through other creatures. Players on the limber when it moves must attempt a @Check[acrobatics|dc:18] check when it moves or fall of. Removing the pintle will end the random movement. The jaws use 2 actions to Spit Fire or make melee strikes against an adjacent creature.</p>",
+            "items": {
+                "action->Jaws Statistics": {
+                    "name": "Jaws Statistics",
+                    "description": "<p><strong>Jaws Hardness</strong> 15</p>\n<p><strong>Jaws HP</strong> 60 (BT 30)</p>"
+                },
+                "strike-melee->Blade": {
+                    "name": "Blade"
+                },
+                "action->Blades of Vengeance": {
+                    "name": "Blades of Vengeance",
+                    "description": "<p><strong>Trigger</strong> A Small or larger creature, moves within 10 feet of the jaws.</p><hr /><p><strong>Effect</strong> One of the blades lashes out, making one Strike against the creature.</p>"
+                },
+                "action->Spit Fire": {
+                    "name": "Spit Fire",
+                    "description": "<p>The jaws launch a magma ball (range 60 feet, @Template[burst|distance:10]), randomly, at the largest group of creatures, not including itself, it can catch in the blast dealing @Damage[3d4[bludgeoning],3d4[fire]|options:area-damage] damage. Each creature caught in the blast must attempt a @Check[reflex|dc:18|options:damaging-effect,area-effect] save. The jaws cannot Spit Fire again for [[/gmr 1d4+1 #Recharge Spit Fire]] rounds.</p><hr /><p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature takes half damage.</p>\n<p><strong>Failure</strong> The creature takes full damage and is knocked @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone}.</p>\n<p><strong>Critical Failure</strong> The creature takes double damage, @Damage[1[persistent,fire]] damage, and is knocked prone.</p>"
+                }
+            }
+        },
         "Diabolic Messenger": {
             "name": "Diabolic Messenger",
             "items": {
@@ -179,6 +205,59 @@
                 },
                 "lore->Absalom Court Lore": {
                     "name": "Absalom Court Lore"
+                }
+            }
+        },
+        "Distracted Zaluraak": {
+            "name": "Distracted Zaluraak",
+            "publicNotes": "<p>Fortune dragons have the innate ability to draw upon the raw magical energies that surround them. They constantly use these magical energies to empower their magical abilities and even their bodies, as the energy can heal wounds. A fortune dragon has a typical build for an arcane dragon, but their bodies sport a striking feature: their treasure. The dragon's nature of drawing upon magic causes coins, gems, and, most notably, magical items to cling to their body like iron drawn to magnets. A dragon constantly pulls magical energies from the items attached to their body and makes use of these energies to cast spells. The magical energies that flow through a fortune dragon constantly flow through the dragon's items as well, and in many cases, the items melt from the heat produced in this process. Fortune dragons are seekers of novel experiences. This desire for originality leads fortune dragons to approach visitors of other ancestries with curiosity, though this initial interest quickly wanes if a visitor lacks exciting qualities.</p>\n<hr />\n<p>Dragons come in myriad forms, with many having magical abilities or connections to magic. Some dragons draw greater power from magic than others, allowing them to manifest abilities or alter their physiques with prolonged exposure to magic. These dragons become more powerful as they age and strengthen their connections with their magical origins. Scholars debate the classification of these dragons, with some preferring the name magical dragons and others using traditional dragons due to their connection to specific magical traditions. Regardless of their names, these dragons share a number of characteristics: their ability to tap into magical energies, intensified might and cunning as they grow older, and an inclination to hoard vast amounts of treasure and wealth.</p>",
+            "blurb": "Variant young fortune dragon",
+            "allSavesBonus": "+2 status to all saves vs. arcane",
+            "items": {
+                "spellcastingEntry->Arcane Spontaneous Spells": {
+                    "name": "Arcane Spontaneous Spells"
+                },
+                "strike-melee->Jaws": {
+                    "name": "Jaws"
+                },
+                "strike-melee->Claw": {
+                    "name": "Claw"
+                },
+                "strike-melee->Tail": {
+                    "name": "Tail"
+                },
+                "action->+2 Status to All Saves vs. Arcane": {
+                    "name": "+2 Status to All Saves vs. Arcane"
+                },
+                "action->Capture Spell": {
+                    "name": "Capture Spell",
+                    "description": "<p><strong>Trigger</strong> The dragon succeeds or critically succeeds on a saving throw against a spell</p>\n<hr />\n<p><strong>Effect</strong> The dragon attempts to capture a portion of the spell's magic to feed themself. They attempt to counteract the spell (counteract rank 5, counteract modifier [[/r 1d20+20 #Counteract]]{+20}). If successful, the dragon is unaffected by the spell and regains one expended spontaneous spell slot; other subjects are affected by the spell normally.</p>"
+                },
+                "action->Disruptive Breath": {
+                    "name": "Disruptive Breath",
+                    "description": "<p>The dragon unleashes a spray of magic-disrupting energies that deals @Damage[7d6[force]|options:area-damage] damage in a @Template[cone|distance:30] (@Check[reflex|dc:27|basic|options:area-effect] save). Creatures that fail become @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 1} (@UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 2} on a critical failure) for 1 minute.</p>\n<p>The dragon can't use Disruptive Breath again for [[/gmr 1d4 #Recharge Disruptive Breath]]{1d4 rounds}.</p>"
+                },
+                "action->Draconic Frenzy": {
+                    "name": "Draconic Frenzy",
+                    "description": "<p>The dragon makes two claw Strikes and one tail Strike in any order.</p>"
+                },
+                "action->Draconic Momentum": {
+                    "name": "Draconic Momentum",
+                    "description": "<p>Whenever they score a critical hit with a Strike, the dragon chooses to either recharge Disruptive Breath or regain one expended spontaneous spell slot.</p>"
+                },
+                "action->Share the Wealth": {
+                    "name": "Share the Wealth",
+                    "description": "<p><strong>Requirements</strong> The dragon's body is covered in riches (this is typically the case when the dragon is first encountered)</p><hr /><p><strong>Effect</strong> The dragon shakes their body aggressively, sending coins and other riches flying in every direction, dealing @Damage[7d6[bludgeoning]|options:area-damage] damage with a @Check[reflex|dc:26|basic|options:area-effect] save to all creatures in a @Template[emanation|distance:30]. The dragon's body is then no longer covered in riches.</p>"
+                },
+                "action->Treasure Dive": {
+                    "name": "Treasure Dive",
+                    "description": "<p><strong>Requirements</strong> The dragon's body isn't covered in riches and the dragon is adjacent to their hoard</p><hr /><p><strong>Effect</strong> The dragon Strides or Burrows through their hoard using their land Speed. They coat themself in coins, magic items, and other treasures. This contact with magical items revitalizes the dragon, causing them to regain one expended spontaneous spell slot.</p>\n<p>The dragon can move through other creatures while moving in this way. Creatures in the dragon's path, or above it if the dragon Burrows, must succeed at a @Check[reflex|dc:24] save or be pushed 10 feet (or pushed 20 feet and knocked @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone} on a critical failure).</p>"
+                },
+                "lore->Accounting Lore": {
+                    "name": "Accounting Lore"
+                },
+                "lore->Mercantile Lore": {
+                    "name": "Mercantile Lore"
                 }
             }
         },
@@ -213,6 +292,17 @@
                 },
                 "strike-melee->Tentacle": {
                     "name": "Tentacle"
+                }
+            }
+        },
+        "Dragon's Ward": {
+            "name": "Dragon's Ward",
+            "disable": "<p>@Check[thievery|dc:27] (master) to painstakingly remove the rune without triggering the magic, or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (4th rank; counteract DC 25) to counteract the rune.</p>",
+            "stealth": "<p>(expert)</p>",
+            "items": {
+                "action->Curse the Intruders": {
+                    "name": "Curse the Intruders",
+                    "description": "<p><strong>Trigger</strong> A creature passes the threshold</p><hr /><p><strong>Effect</strong> Each living creature within 30 feet must succeed at a @Check[will|dc:23] save or be subjected to the dragon's curse A cursed creature takes a \u20132 status penalty to Fortitude saves, and any natural or magical healing it receives is halved The curse remains until removed by @UUID[Compendium.pf2e.spells-srd.Item.SUKaxVZW2TlM8lu0]{Cleanse Affliction} or similar magic</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.qPul8V5LMyHNpsOa]{Effect: Curse the Intruders}</p>"
                 }
             }
         },
@@ -262,6 +352,88 @@
             "skills": {
                 "athletics": {
                     "label": "to Climb"
+                }
+            }
+        },
+        "Greater Demonologist": {
+            "name": "Greater Demonologist",
+            "publicNotes": "<p>Demonologists can pull a creature from the Outer Rifts and bend it to their will... for a time.</p><hr /><p>Hidden secrets and occult powers have an irresistible lure for many. Since the majority of these NPCs are spellcasters, consider using alternative spell lists to adjust their themes.</p>",
+            "blurb": "Variant demonologist",
+            "items": {
+                "spellcastingEntry->Arcane Prepared Spells": {
+                    "name": "Arcane Prepared Spells"
+                },
+                "armor->Robes": {
+                    "name": "Robes",
+                    "description": "<p>Explorer's clothing is sturdy enough that it can be reinforced to protect you, even though it isn't a suit of armor. It comes in many forms, though the most common sorts look like clerical vestments, monk's garments, or wizard's robes, as members of all three classes are likely to avoid wearing armor.</p>"
+                },
+                "equipment->Fiendish Hypotheses and Protections from Same (Spellbook)": {
+                    "name": "Fiendish Hypotheses and Protections from Same (Spellbook)",
+                    "description": "<p>A spellbook holds the written knowledge necessary to learn and prepare various spells, a necessity for wizards (who typically get one for free) and a useful luxury for other spellcasters looking to learn additional spells. Each spellbook can hold up to 100 spells. The Price listed is for a blank spellbook.</p>"
+                },
+                "strike-melee->Longspear": {
+                    "name": "Longspear"
+                },
+                "strike-melee->Fist": {
+                    "name": "Fist"
+                },
+                "action->Demonic Temptation": {
+                    "name": "Demonic Temptation",
+                    "description": "<p>Demonic study has garnered the attention of at least one demon who is actively trying to possess the demonologist. When the demonologist publicly espouses the benefits of demonic power (whether they believe it a good thing or not), they gain a +1 status bonus to skill checks, AC, and saves for 1 day. These bonuses don't apply against demons. At the end of the day, the demonologist must attempt a @Check[will|dc:20] save, becoming possessed for 1 day on a failure (or permanently on a critical failure).</p>"
+                },
+                "action->Breach the Outer Rifts": {
+                    "name": "Breach the Outer Rifts",
+                    "description": "<p><strong>Requirements</strong> The demonologist's last action was to cast a non-cantrip spell</p><hr /><p><strong>Effect</strong> The demonologist siphons energy drawn from the Outer Rifts into their weapon. Until the end of the turn, the weapon deals an extra 2d6 damage.</p>\n<p>Roll 1d20 to determine the type:</p><ul><li>1\u20137 acid</li><li>8\u20139 cold</li><li>10\u201311 electricity</li><li>12\u201318 fire</li><li>19\u201320 void.</li></ul>"
+                },
+                "action->Demon Summoning": {
+                    "name": "Demon Summoning",
+                    "description": "<p>The demonologist can cast a 5th-rank @UUID[Compendium.pf2e.spells-srd.Item.29ytKctjg7qSW2ff]{Summon Fiend} arcane spell to summon a demon. To do so, they must sacrifice two 4th-rank prepared spells and voluntarily take @Damage[4d12[mental]] damage that can't be reduced or prevented. If the demonologist is unable to Sustain the Spell, including if they're knocked out or killed, the spell continues, but the GM rolls a @Check[flat|dc:10] each round, ending the spell on a failure.</p>"
+                },
+                "lore->Academia Lore": {
+                    "name": "Academia Lore"
+                },
+                "lore->Demon Lore": {
+                    "name": "Demon Lore"
+                }
+            },
+            "skills": {
+                "diplomacy": {
+                    "label": "with demons"
+                }
+            }
+        },
+        "Greater Dragon's Ward": {
+            "name": "Greater Dragon's Ward",
+            "disable": "<p>@Check[thievery|dc:30] (master) to painstakingly remove the rune without triggering the magic, or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (4th rank; counteract DC 28) to counteract the rune.</p>",
+            "stealth": "<p>(expert)</p>",
+            "items": {
+                "action->Curse the Intruders": {
+                    "name": "Curse the Intruders",
+                    "description": "<p><strong>Trigger</strong> A creature passes the threshold</p><hr /><p><strong>Effect</strong> Each living creature within 30 feet must succeed at a @Check[will|dc:26] save or be subjected to the dragon's curse A cursed creature takes a \u20132 status penalty to Fortitude saves, and any natural or magical healing it receives is halved The curse remains until removed by @UUID[Compendium.pf2e.spells-srd.Item.SUKaxVZW2TlM8lu0]{Cleanse Affliction} or similar magic</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.qPul8V5LMyHNpsOa]{Effect: Curse the Intruders}</p>"
+                }
+            }
+        },
+        "Heavily Damaged Jaws of Hell": {
+            "name": "Heavily Damaged Jaws of Hell",
+            "descriptionHazard": "<p>The machine is a cylindrical device ringed in blades with a devilish eye at its center. Gnome inventors created the mechanical device, which taps into the planes of earth and fre to create powerful blasts to damage fortress walls or decimate ranks of enemies. Unfortunately, the many miles of forest have not been kind and it's malfunctioning. The damaged jaws planar connections have weakened to a mere trickle and, when activated, it lashes out in an uncontrolled frenzy. The blades encircling it begin lashing out.</p>",
+            "disable": "<p>@Check[arcana|dc:15], @Check[crafting|dc:15], @Check[nature|dc:15], or @Check[thievery|dc:15] (trained) twice, to sever the connection to the planes of fre and earth. @Check[crafting|dc:13] or @Check[thievery|dc:13] (trained) once, to remove the pintle connecting the limber to the horses. A creature must be adjacent to the jaws to make either check.</p>",
+            "reset": "<p>The planar connection shuts down after 1 minute. The horses will tire and stop running after 1 minute.</p>",
+            "routine": "<p>(three actions) On its turn each round, the horses spend one action to move 30 feet, dragging the limber carrying the jaws behind them in a randomly chosen direction. The horses will not move through other creatures. Players on the limber when it moves must attempt a @Check[acrobatics|dc:15] check when it moves or fall of. Removing the pintle will end the random movement. The jaws use 2 actions to Spit Fire or make melee strikes against an adjacent creature.</p>",
+            "items": {
+                "action->Jaws Statistics": {
+                    "name": "Jaws Statistics",
+                    "description": "<p><strong>Jaws Hardness</strong> 8</p>\n<p><strong>Jaws HP</strong> 30 (BT 15)</p>"
+                },
+                "strike-melee->Blade": {
+                    "name": "Blade"
+                },
+                "action->Blades of Vengeance": {
+                    "name": "Blades of Vengeance",
+                    "description": "<p><strong>Trigger</strong> A Small or larger creature, moves within 10 feet of the jaws.</p><hr /><p><strong>Effect</strong> One of the blades lashes out, making one Strike against the creature.</p>"
+                },
+                "action->Spit Fire": {
+                    "name": "Spit Fire",
+                    "description": "<p>The jaws launch a magma ball (range 60 feet, @Template[burst|distance:10]), randomly, at the largest group of creatures, not including itself, it can catch in the blast dealing @Damage[2d4[bludgeoning],2d4[fire]|options:area-damage] damage. Each creature caught in the blast must attempt a @Check[reflex|dc:15|options:damaging-effect,area-effect] save. The jaws cannot Spit Fire again for [[/gmr 1d4+1 #Recharge Spit Fire]] rounds.</p><hr /><p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature takes half damage.</p>\n<p><strong>Failure</strong> The creature takes full damage and is knocked @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone}.</p>\n<p><strong>Critical Failure</strong> The creature takes double damage, @Damage[1[persistent,fire]] damage, and is knocked prone.</p>"
                 }
             }
         },
@@ -448,6 +620,72 @@
                 },
                 "lore->Warfare Lore": {
                     "name": "Warfare Lore"
+                }
+            }
+        },
+        "Marsh Giant": {
+            "name": "Marsh Giant",
+            "publicNotes": "<p>Dwellers of brackish coastal salt marshes and fetid bogs and swamps, marsh giants appear hideous to most airbreathers, with fishlike mouths, slimy graygreen skin, and dark, beady eyes. They prefer to eat the flesh of those they slay in battle, including other marsh giants, and guzzle stagnant water from cauldrons or directly from their swampy homes.</p>\n<p>Marsh giant clans are insular, with each clan dedicating itself to zealous worship of a sea-dwelling deity, demon lord, or stranger entity. Whatever forces call to the marsh giants sometimes ensnare boggards and ogres as well, gathering in grim worship. Rather than favor these humanoid hangerson, marsh giants lavish attention on favored pets: krooths, giant octopuses, or primeval creatures like dinosaurs and the crocodilian deinosuchuses.</p>\n<p>Barely topping 11 feet tall and 1,000 pounds, marsh giants are small for giants but make up for their stature with their zealotry.</p>\n<hr />\n<p>Giants are massive humanoid creatures who live in remote regions throughout the world. They vary widely but are united in their hunger, requiring sustenance of their own element along with the feasts one would expect from such a massive humanoid. Although a simple matter for some giants, more esoteric types find this need a harsh reality. While a massive fistful of ice or snow alongside their meal will satisfy a frost giant, shadow giants hunger for the coagulated shadows of the Netherworld.</p>",
+            "items": {
+                "spellcastingEntry->Occult Innate Spells": {
+                    "name": "Occult Innate Spells"
+                },
+                "strike-melee->Gaff": {
+                    "name": "Gaff"
+                },
+                "strike-melee->Fist": {
+                    "name": "Fist"
+                },
+                "strike-melee->Spit": {
+                    "name": "Spit"
+                },
+                "action->Drowning Hook": {
+                    "name": "Drowning Hook",
+                    "description": "<p><strong>Requirements</strong> A creature is @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone} within the marsh giant's reach</p><hr /><p><strong>Effect</strong> The marsh giant uses its gaff to push the creature down as water bubbles up below it. The target becomes submerged in water until they are no longer prone and must hold their breath if they cannot breathe water. They take @Damage[2d10[bludgeoning]] damage (@Check[fortitude|dc:21|basic] save) and lose 3 rounds worth of air if they fail the save.</p>"
+                },
+                "action->Twist the Hook": {
+                    "name": "Twist the Hook",
+                    "description": "<p>The marsh giant makes a melee Strike with its gaff. If it hits, it twists and yanks the gaff to knock the target @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone} and create an awful wound, dealing @Damage[2d4[persistent,bleed]] damage to the creature.</p>"
+                }
+            }
+        },
+        "Marshy Snapdrake": {
+            "name": "Marshy Snapdrake",
+            "publicNotes": "<p>Skilled kizidhar mages and gardeners handcraft these lovely creatures as much for their shuyookhs' aesthetic pleasure as for their protection. Creating a snapdrake requires first painstakingly constructing a frame of living wood in the shape of a drake before weaving thousands of colorful snapdragon flowers into intricate patterns to form its body and scales. Once complete, snapdrakes often serve kizidhars as a combination of guards, pets, and decorations for as long as they are well fed.</p>",
+            "speedsDetails": "greater forest passage",
+            "languagesDetails": "can't speak any language",
+            "items": {
+                "strike-melee->Fangs": {
+                    "name": "Fangs"
+                },
+                "strike-melee->Tail Scythe": {
+                    "name": "Tail Scythe"
+                },
+                "action->Alluring Scent": {
+                    "name": "Alluring Scent",
+                    "description": "<p>30 feet. A creature that enters the emanation must attempt a @Check[will|dc:25] save. On a failure, the target is @UUID[Compendium.pf2e.conditionitems.Item.AdPVz7rbaVSRxHFg]{Fascinated} by the snapdrake and must use at least 1 action on its next turn to Stride closer to the snapdrake. On a success, the target is immune to the snapdrake's alluring scent for 1 hour.</p>"
+                },
+                "action->Reactive Strike (Tail Scythe Only)": {
+                    "name": "Reactive Strike (Tail Scythe Only)"
+                },
+                "action->Greater Marsh Passage": {
+                    "name": "Greater Marsh Passage",
+                    "description": "<p>The marshy snapdrake ignores difficult terrain and greater difficult terrain from marshy ground and fungi</p>"
+                },
+                "action->Marshy Snapdrake Pollen": {
+                    "name": "Marshy Snapdrake Pollen",
+                    "description": "<p><strong>Saving Throw</strong> @Check[fortitude|dc:25];</p>\n<p><strong>Maximum Duration</strong> 8 rounds</p>\n<p><strong>Stage 1</strong> @Damage[1d6[poison]] damage plus @UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]{Dazzled} 1 (1 round)</p>\n<p><strong>Stage 2</strong> @Damage[1d6[poison]] damage plus dazzled 1 and @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 1} (2 rounds)</p>\n<p><strong>Stage 3</strong> @Damage[2d6[poison]] damage plus @UUID[Compendium.pf2e.conditionitems.Item.yblD8fOR1J8rDwEQ]{Confused} and sickened 1 (2 rounds)</p>"
+                },
+                "action->Speed Surge": {
+                    "name": "Speed Surge",
+                    "description": "<p><strong>Frequency</strong> 3 times per day</p><hr /><p><strong>Effect</strong> The marshy snapdrake Strides or Flies up to twice its Speed</p>"
+                },
+                "action->Spray Pollen": {
+                    "name": "Spray Pollen",
+                    "description": "<p>The marshy snapdrake breathes a blast of pollen in a @Template[type:cone|distance:40] Creatures caught in the blast must succeed at a @Check[reflex|dc:25|options:area-effect] save or be exposed to marshy snapdrake pollen The marshy snapdrake can't use Spray Pollen again for [[/gmr 1d6 #Recharge Spray Pollen]] rounds.</p>"
+                },
+                "action->Grab": {
+                    "name": "Grab"
                 }
             }
         },
@@ -1030,19 +1268,6 @@
         }
     },
     "mapping": {
-        "descriptionHazard": "system.details.description",
-        "disable": "system.details.disable",
-        "reset": "system.details.reset",
-        "routine": "system.details.routine",
-        "stealth": "system.attributes.stealth.details",
-        "items": {
-            "converter": "translateActorItems",
-            "path": "items"
-        },
-        "rules": {
-            "converter": "translateRules",
-            "path": "system.rules"
-        },
         "publicNotes": "system.details.publicNotes",
         "privateNotes": "system.details.privateNotes",
         "acDetails": "system.attributes.ac.details",
@@ -1052,9 +1277,22 @@
         "speedsDetails": "system.attributes.speed.details",
         "sensesDetails": "system.perception.details",
         "languagesDetails": "system.details.languages.details",
+        "items": {
+            "converter": "translateActorItems",
+            "path": "items"
+        },
+        "rules": {
+            "converter": "translateRules",
+            "path": "system.rules"
+        },
         "skills": {
             "converter": "translateSkills",
             "path": "system.skills"
-        }
+        },
+        "descriptionHazard": "system.details.description",
+        "disable": "system.details.disable",
+        "reset": "system.details.reset",
+        "routine": "system.details.routine",
+        "stealth": "system.attributes.stealth.details"
     }
 }

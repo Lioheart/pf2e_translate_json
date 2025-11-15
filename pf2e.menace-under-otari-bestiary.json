@@ -178,7 +178,7 @@
                     "name": "Spear Barrage",
                     "description": "<p>When a creature moves into any of the squares in the outlined area, the trap shoots three spears from the western wall. It makes one ranged Strike against the westernmost creature in each row.</p>"
                 },
-                "strike-ranged->Spear": {
+                "strike-melee->Spear": {
                     "name": "Spear"
                 }
             }
@@ -236,7 +236,7 @@
                 "strike-melee->Rapier": {
                     "name": "Rapier"
                 },
-                "strike-ranged->Hand Crossbow": {
+                "strike-melee->Hand Crossbow": {
                     "name": "Hand Crossbow"
                 },
                 "action->Light Blindness": {
@@ -307,7 +307,7 @@
                     "name": "Falling Stones",
                     "description": "<p>When a creature steps on the square closest to the north door, the trap drops blocks of stone all along the hallway. It makes one ranged Strike against each creature between the two doors.</p>"
                 },
-                "strike-ranged->Falling Block": {
+                "strike-melee->Falling Block": {
                     "name": "Falling Block"
                 }
             }
@@ -467,7 +467,7 @@
                 "strike-melee->Fangs": {
                     "name": "Fangs"
                 },
-                "strike-ranged->Web": {
+                "strike-melee->Web": {
                     "name": "Web"
                 },
                 "action->Descend on a Web": {
@@ -900,7 +900,7 @@
             "routine": "<p>Each turn, the fountain uses 1 action. Roll a [[/r 1d10]]{1d10} and look up the result on the following list to determine which action it uses that round.</p>\n<ul>\n<li><strong>1-4 Single Target</strong> The statue spins about and sprays water at a single random target in the room. Roll a [[/r 1d4]]{1d4} and count to the number you rolled, starting with the player on your left, to determine which hero gets attacked. The spray is a ranged Strike.</li>\n<li><strong>5-7 Corner Spray</strong> The statue spins about, firing a spray of water at each corner of the room that still has a functioning corner mechanism. This hits any creature adjacent to the corner mechanism, dealing @Damage[2d6[bludgeoning]] damage. Each hero must attempt a @Check[reflex|dc:15|basic|traits:hazard], taking no damage on a critical success, half damage on a success, full damage on a failure, and double damage on a critical failure.</li>\n<li><strong>8-9 Half Room</strong> The statue spins about, spraying half of the room with water. Roll any die. If the result is even, it sprays the west half; otherwise, it sprays the east half. This deals @Damage[2d6[bludgeoning]] damage to each creature in that half of the room, and each hero must attempt a @Check[reflex|dc:15|basic|traits:hazard] save.</li>\n<li><strong>10 Full Room</strong> This works just like the half-room attack, but it targets everyone in the room.</li>\n</ul>",
             "stealth": "<p><strong>Notice</strong> @Check[perception|dc:20|traits:complex,hazard] check</p>",
             "items": {
-                "strike-ranged->Spray": {
+                "strike-melee->Spray": {
                     "name": "Spray"
                 }
             }
@@ -1215,7 +1215,7 @@
                     "name": "Spear",
                     "description": "<p>When pressure is applied to the floor tile, the trap shoots a spear, making an attack against the creature or object on the floor tile. The trap makes a ranged Spear attack.</p>"
                 },
-                "strike-ranged->Spear": {
+                "strike-melee->Spear": {
                     "name": "Spear"
                 }
             }

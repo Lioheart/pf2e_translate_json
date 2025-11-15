@@ -57,7 +57,7 @@
                     "name": "Needle Rain",
                     "description": "<p><strong>Trigger</strong> A creature moves into the area indicated on the map</p>\n<hr />\n<p><strong>Effect</strong> The trap shoots an acidic needle at a random target in the area indicated on the map, then rolls initiative.</p>"
                 },
-                "strike-ranged->Acidic Needle": {
+                "strike-melee->Acidic Needle": {
                     "name": "Acidic Needle"
                 }
             }
@@ -715,7 +715,7 @@
             "disable": "<p>Each dragon pillar that is destroyed removes the corresponding color's effect from Dahak's shell; as long as even one color remains active, the pillars marking the shell's border cannot be damaged themselves, but a successful @Check[thievery|dc:32|name:Disable Color|traits:magical,trap,hazard] (master) check or a successful @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (6th rank; counteract DC 30) against one of the eight pillars can cause a randomly determined active color in the shell defense (below) to become deactivated for [[/gmr 1d4 #rounds]]{1d4 rounds}.</p>",
             "stealth": "<p>or @UUID[Compendium.pf2e.spells-srd.Item.gpzpAAAJ1Lza2JVl]{Detect Magic}</p>",
             "items": {
-                "strike-ranged->Eye Beam": {
+                "strike-melee->Eye Beam": {
                     "name": "Eye Beam",
                     "description": "<p>The target suffers an effect corresponding to the eye beam's color. On a critical hit, the target's save result is one degree worse.</p>"
                 },
@@ -776,7 +776,7 @@
                     "name": "Dahak's Glance",
                     "description": "<p><strong>Trigger</strong> A living creature that is not a member of the Cinderclaws enters area <strong>C9</strong></p>\n<hr />\n<p><strong>Effect</strong> One of the dragon skull's eye sockets shoots an eye beam at the triggering creature, then the hazard rolls initiative.</p>"
                 },
-                "strike-ranged->Eye Beam": {
+                "strike-melee->Eye Beam": {
                     "name": "Eye Beam"
                 }
             }
@@ -791,7 +791,7 @@
                 "strike-melee->Fist": {
                     "name": "Fist"
                 },
-                "strike-ranged->Rock": {
+                "strike-melee->Rock": {
                     "name": "Rock"
                 },
                 "action->Magma Splash": {
@@ -967,7 +967,7 @@
                     "name": "Black Eye Beam",
                     "description": "<p>@Check[fortitude|dc:24|traits:hazard,trap] save.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target is @UUID[Compendium.pf2e.conditionitems.Item.XgEqL1kFApUbl5Z2]{Blinded} for 1 round.</p>\n<p><strong>Failure</strong> The target is blinded for 1 hour.</p>\n<p><strong>Critical Failure</strong> The target is blinded for 24 hours.</p>"
                 },
-                "strike-ranged->Eye Beam": {
+                "strike-melee->Eye Beam": {
                     "name": "Eye Beam",
                     "description": "<p><strong>Effect</strong> The target is subjected to an effect determined by the pillar's color and summarized in the passive actions. On a critical hit, the target's save result is one degree worse.</p>"
                 },
@@ -1130,7 +1130,7 @@
                 "strike-melee->Greatsword": {
                     "name": "Greatsword"
                 },
-                "strike-ranged->Rock": {
+                "strike-melee->Rock": {
                     "name": "Rock"
                 },
                 "action->Constant Spells": {
@@ -1179,7 +1179,7 @@
                 "strike-melee->Hatchet": {
                     "name": "Hatchet"
                 },
-                "strike-ranged->Composite Longbow": {
+                "strike-melee->Composite Longbow": {
                     "name": "Composite Longbow"
                 },
                 "action->Improved Evasion": {
@@ -1236,7 +1236,7 @@
                 "strike-ranged->Silver Dagger": {
                     "name": "Silver Dagger"
                 },
-                "strike-ranged->Longbow": {
+                "strike-melee->Longbow": {
                     "name": "Longbow"
                 },
                 "action->Double Slice": {
@@ -1647,7 +1647,7 @@
             "publicNotes": "<p>The life of a Hellknight is bloody, brutal, and often short. Many who perish in service to a Hellknight order are glad to rest after having served their masters so faithfully, but others seek to continue their work even in death. When a Hellknight is decapitated, the ghostly undead known as a hellcrown is an occasional result. Consumed by the desire to bring about order by inflicting cruelty, hellcrowns haunt battlefields and abandoned castles, slaying all they encounter. A strange fusion of spirit and steel, a hellcrown has no corporeal form by itself, but instead inhabits the helmet it so proudly wore in life. Dangling from the helmet like a shroud is a shadow of the former Hellknight's spine, adding to the creature's terrifyingly gruesome appearance. Hellknights regard hellcrowns with a mixture of disgust and respect, considering the individuals who transform into these floating undead to have been resolute in purpose but weak in body.</p>\n<p>A hellcrown usually manifests hours or longer after its body's death, and only when its body is unattended; this might even take days if the Hellknight perished in a major battle. Typically, no recognizable fragment of the Hellknight's former personality survives the grisly transformation into a hellcrown, but in rare and particularly tragic cases a hellcrown might remember its life and hold grudges against those it views as the cause of its death. Regardless of whether they retain memories of their lives or have lost all former sense of self, hellcrowns linger around the site of their death, reminding all they encounter of the merciless principles of their order.</p>",
             "hpDetails": "void healing",
             "items": {
-                "strike-ranged->Nail": {
+                "strike-melee->Nail": {
                     "name": "Nail"
                 },
                 "action->Void Healing": {
@@ -1956,16 +1956,16 @@
                 "strike-melee->Syringe": {
                     "name": "Syringe"
                 },
-                "strike-ranged->Major Acid Flask": {
+                "strike-melee->Major Acid Flask": {
                     "name": "Major Acid Flask"
                 },
-                "strike-ranged->Major Alchemist's Fire": {
+                "strike-melee->Major Alchemist's Fire": {
                     "name": "Major Alchemist's Fire"
                 },
-                "strike-ranged->Major Bottled Lightning": {
+                "strike-melee->Major Bottled Lightning": {
                     "name": "Major Bottled Lightning"
                 },
-                "strike-ranged->Major Frost Vial": {
+                "strike-melee->Major Frost Vial": {
                     "name": "Major Frost Vial"
                 },
                 "action->Infused Items": {
@@ -2119,7 +2119,7 @@
                 "strike-melee->Hand": {
                     "name": "Hand"
                 },
-                "strike-ranged->Rock": {
+                "strike-melee->Rock": {
                     "name": "Rock"
                 },
                 "action->+1 Status to All Saves vs. Vitality": {
@@ -2184,7 +2184,7 @@
                 "strike-ranged->Silver Dagger": {
                     "name": "Silver Dagger"
                 },
-                "strike-ranged->Longbow": {
+                "strike-melee->Longbow": {
                     "name": "Longbow"
                 },
                 "action->Divine Providence": {
@@ -2361,7 +2361,7 @@
                 "strike-melee->Corrosive Whip": {
                     "name": "Corrosive Whip"
                 },
-                "strike-ranged->Composite Longbow": {
+                "strike-melee->Composite Longbow": {
                     "name": "Composite Longbow"
                 },
                 "action->Intimidating Attack of Opportunity": {
@@ -2817,7 +2817,7 @@
                 "strike-melee->Rapier": {
                     "name": "Rapier"
                 },
-                "strike-ranged->Hand Crossbow": {
+                "strike-melee->Hand Crossbow": {
                     "name": "Hand Crossbow"
                 },
                 "action->Deny Advantage": {
@@ -2903,7 +2903,7 @@
                 "strike-melee->Verdant Staff": {
                     "name": "Verdant Staff"
                 },
-                "strike-ranged->Longbow": {
+                "strike-melee->Longbow": {
                     "name": "Longbow"
                 },
                 "action->+1 Status to All Saves vs. Mental": {
@@ -2943,7 +2943,7 @@
                     "name": "Thieves' Tools (Infiltrator)",
                     "description": "<p>You need thieves' tools to @UUID[Compendium.pf2e.actionspf2e.Item.2EE4aF4SZpYf0R6H]{Pick Locks} or @UUID[Compendium.pf2e.actionspf2e.Item.cYdz2grcOcRt4jk6]{Disable Devices} (of some types) using the Thievery skill. Infiltrator thieves' tools add a +1 item bonus to checks to Pick Locks and Disable Devices.</p>\n<p>If your thieves' tools are broken, you can repair them by replacing the lock picks with @UUID[Compendium.pf2e.equipment-srd.Item.BznmPaRjI4Orb0IH]{Replacement Picks} appropriate to your tools; this doesn't require using the Repair action. If you wear your thieves' tools, you can draw and replace them as part of the action that uses them.</p>"
                 },
-                "strike-ranged->Nolly's Hoe": {
+                "strike-melee->Nolly's Hoe": {
                     "name": "Nolly's Hoe"
                 },
                 "action->Halfling Luck": {
@@ -3290,7 +3290,7 @@
                 "spell->Telekinetic Maneuver (At Will)": {
                     "name": "Telekinetic Maneuver (At Will)"
                 },
-                "strike-ranged->Telekinetic Object": {
+                "strike-melee->Telekinetic Object": {
                     "name": "Telekinetic Object",
                     "description": "<p>Damage type depends on object thrown</p>"
                 },
@@ -3340,7 +3340,7 @@
                 "strike-melee->Rapier": {
                     "name": "Rapier"
                 },
-                "strike-ranged->Blowgun": {
+                "strike-melee->Blowgun": {
                     "name": "Blowgun"
                 },
                 "action->Efficient Capture": {
@@ -3660,7 +3660,7 @@
                     "name": "Personal Quake",
                     "description": "<p>A creature struck by a seismic spear is @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 3} for 1 round as their body shakes uncontrollably. On a critical hit, a target must succeed at a @Check[fortitude|dc:39] save or be @UUID[Compendium.pf2e.conditionitems.Item.dTwPJuKgBQCMxixg]{Petrified} for 1 minute, or permanently on a critical failure.</p>"
                 },
-                "strike-ranged->Seismic Spear": {
+                "strike-melee->Seismic Spear": {
                     "name": "Seismic Spear",
                     "description": "<p>No MAP applies to strikes made by seismic spear attacks</p>"
                 },
@@ -3854,7 +3854,7 @@
                 "strike-melee->Horns": {
                     "name": "Horns"
                 },
-                "strike-ranged->Spine": {
+                "strike-melee->Spine": {
                     "name": "Spine"
                 },
                 "action->+2 Status to All Saves vs. Magic": {
@@ -4038,7 +4038,7 @@
                     "name": "Unleash Fragments",
                     "description": "<p><strong>Trigger</strong> The lathe is jostled or damaged, or its trigger is remotely pulled.</p>\n<hr />\n<p><strong>Effect</strong> The trap makes a sharpened fragment Strike against a random target in area <strong>A1</strong>, then rolls for initiative.</p>"
                 },
-                "strike-ranged->Sharpened Fragment": {
+                "strike-melee->Sharpened Fragment": {
                     "name": "Sharpened Fragment"
                 },
                 "action->Persistent Bleed Critical": {
@@ -4206,7 +4206,7 @@
                 "strike-melee->Fangs": {
                     "name": "Fangs"
                 },
-                "strike-ranged->Web": {
+                "strike-melee->Web": {
                     "name": "Web"
                 },
                 "action->Constant Spells": {
@@ -4554,7 +4554,7 @@
                 "strike-melee->Claw": {
                     "name": "Claw"
                 },
-                "strike-ranged->Lava Bomb": {
+                "strike-melee->Lava Bomb": {
                     "name": "Lava Bomb"
                 },
                 "action->Blindsight (Precise) 120 feet": {
@@ -4723,16 +4723,16 @@
                     "name": "Elixir of Life (Greater)",
                     "description": "<p><strong>Activate</strong> <span class=\"action-glyph\">A</span> Interact</p>\n<p>Elixirs of life accelerate a living creature''s natural healing processes and immune system. Upon drinking this elixir, you regain @Damage[(7d6+18)[healing]] Hit Points and gain +2 item bonus to saving throws against diseases and poisons for 10 minutes.</p>\n<p>@UUID[Compendium.pf2e.equipment-effects.Item.lPRuIRbu0rHBkoKY]{Effect: Elixir of Life}</p>"
                 },
-                "strike-ranged->Greater Acid Flask": {
+                "strike-melee->Greater Acid Flask": {
                     "name": "Greater Acid Flask"
                 },
-                "strike-ranged->Greater Alchemist's Fire": {
+                "strike-melee->Greater Alchemist's Fire": {
                     "name": "Greater Alchemist's Fire"
                 },
-                "strike-ranged->Greater Frost Vial": {
+                "strike-melee->Greater Frost Vial": {
                     "name": "Greater Frost Vial"
                 },
-                "strike-ranged->Greater Thunderstone": {
+                "strike-melee->Greater Thunderstone": {
                     "name": "Greater Thunderstone"
                 },
                 "action->Infused Items": {
