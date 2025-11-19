@@ -11616,7 +11616,7 @@
                 },
                 "action->Canceling Rune": {
                     "name": "Canceling Rune",
-                    "description": "<p><strong>Trigger</strong> The dragon is the target of a spell that requires a saving throw</p><hr /><p><strong>Effect</strong> The dragon attempts to unmake the spell's foundational runes. They attempt to counteract the spell (counteract rank 10th, counteract modifier [[/r 1d20+26 #Counteract]]{+33}). If successful, the dragon is unaffected by the spell; other subjects are affected by the spell normally. The dragon can't use Canceling Rune again for [[/gmr 1d4 #Recharge Canceling Rune]]{1d4 rounds}.</p>"
+                    "description": "<p><strong>Trigger</strong> The dragon is the target of a spell that requires a saving throw</p><hr /><p><strong>Effect</strong> The dragon attempts to unmake the spell's foundational runes. They attempt to counteract the spell (counteract rank 10th, counteract modifier [[/r 1d20+33 #Counteract]]{+33}). If successful, the dragon is unaffected by the spell; other subjects are affected by the spell normally. The dragon can't use Canceling Rune again for [[/gmr 1d4 #Recharge Canceling Rune]]{1d4 rounds}.</p>"
                 },
                 "action->Retributive Rune": {
                     "name": "Retributive Rune",
@@ -11694,7 +11694,7 @@
                 },
                 "action->Canceling Rune": {
                     "name": "Canceling Rune",
-                    "description": "<p><strong>Trigger</strong> The dragon is the target of a spell that requires a saving throw</p><hr /><p><strong>Effect</strong> The dragon attempts to unmake the spell's foundational runes. They attempt to counteract the spell (counteract rank 10th, counteract modifier [[/r 1d20+26 #Counteract]]{+33}). If successful, the dragon is unaffected by the spell; other subjects are affected by the spell normally. The dragon can't use Canceling Rune again for [[/gmr 1d4 #Recharge Canceling Rune]]{1d4 rounds}.</p>"
+                    "description": "<p><strong>Trigger</strong> The dragon is the target of a spell that requires a saving throw</p><hr /><p><strong>Effect</strong> The dragon attempts to unmake the spell's foundational runes. They attempt to counteract the spell (counteract rank 10th, counteract modifier [[/r 1d20+33 #Counteract]]{+33}). If successful, the dragon is unaffected by the spell; other subjects are affected by the spell normally. The dragon can't use Canceling Rune again for [[/gmr 1d4 #Recharge Canceling Rune]]{1d4 rounds}.</p>"
                 },
                 "action->Retributive Rune": {
                     "name": "Retributive Rune",
@@ -15761,7 +15761,8 @@
         "Vermlek": {
             "name": "Vermlek",
             "publicNotes": "<p>Vermleks, also called worm demons, manifest from the souls of mortals who desecrated the dead, such as grave robbers or necromancers. These fiends take their violations to a new extreme, using their demonic powers to horrifically core their living victims and don the flesh husk that remains.</p>\n<p>In their natural form, a vermlek resembles an oversized pinkish worm with four long tails that end in writhing fibrils. Their mouth splits into four segments like a profane tulip lined with rows of dozens of pointed teeth. However, these fiends are often encountered only after they have crawled into the body of a dead humanoid and made the hollowed-out flesh their temporary host. Vermleks use their powers of deception and disguise to infiltrate mortal settlements and influence unwitting acquaintances of the bodies they wear. Particularly intelligent or conniving vermleks might even reach stations of real power within the ranks of an army or government, at which point exposure of their true form can wreak havoc among the populace they have so thoroughly duped.</p>",
-            "languagesDetails": "Telepathy 100 feet",
+            "acDetails": "(19 while Inhabiting a Body)",
+            "languagesDetails": "telepathy 100 feet",
             "items": {
                 "spellcastingEntry->Divine Innate Spells": {
                     "name": "Divine Innate Spells"
@@ -15780,19 +15781,19 @@
                 },
                 "action->Recoil from Wasted Opportunities": {
                     "name": "Recoil from Wasted Opportunities",
-                    "description": "<p>Vermleks can't stand the sight of a good meal presented and then swiftly taken away. Whenever a dying creature within sight of the vermlek has its dying condition removed, the vermlek takes @Damage[1d6[mental]] damage.</p>"
+                    "description": "<p>Vermleks can't stand the sight of a good meal presented and then swiftly taken away. Whenever a @UUID[Compendium.pf2e.conditionitems.Item.yZRUzMqrMmfLu0V1]{Dying} creature within sight of the vermlek has its dying condition removed, the vermlek takes @Damage[1d6[mental]] damage.</p>"
                 },
                 "action->Abandon Body": {
                     "name": "Abandon Body",
-                    "description": "<p><strong>Requirements</strong> The vermlek is Inhabiting a Body</p><hr /><p><strong>Effect</strong> The vermlek crawls out of the body they are inhabiting, devouring much of the body's remaining flesh and regaining 10 Hit Points in the process. The corpse they leave behind is little more than a husk.</p>"
+                    "description": "<p><strong>Requirements</strong> The vermlek is Inhabiting a Body</p><hr /><p><strong>Effect</strong> The vermlek crawls out of the body they are inhabiting, devouring much of the body's remaining flesh and regaining @Damage[10[healing]] Hit Points in the process. The corpse they leave behind is little more than a husk.</p>"
                 },
                 "action->Inhabit Body": {
                     "name": "Inhabit Body",
-                    "description": "<p><strong>Requirements</strong> The vermlek isn't already Inhabiting a Body</p><hr /><p><strong>Effect</strong> The vermlek crawls into the body of an adjacent Medium humanoid that has been dead for no more than 1 week, consuming the bulk of the victim's skeleton and internal organs as they do so and cramming themself into the cavity. As long as they Inhabit a Body, the vermlek loses their bite attack, can wield weapons like a humanoid, gains a +3 circumstance bonus to AC, and gains a +3 circumstance bonus to Deception checks to Impersonate the creature they are inhabiting.</p>"
+                    "description": "<p><strong>Requirements</strong> The vermlek isn't already Inhabiting a Body</p><hr /><p><strong>Effect</strong> The vermlek crawls into the body of an adjacent Medium humanoid that has been dead for no more than 1 week, consuming the bulk of the victim's skeleton and internal organs as they do so and cramming themself into the cavity. As long as they Inhabit a Body, the vermlek loses their bite attack, can wield weapons like a humanoid, gains a +3 circumstance bonus to AC, and gains a +3 circumstance bonus to Deception checks to [[/act impersonate options=impersonate-inhabited-creature]] the creature they are inhabiting.</p>"
                 },
                 "action->Unsettling Movement": {
                     "name": "Unsettling Movement",
-                    "description": "<p>Whenever the vermlek Abandons a Body or Inhabits a Body, all creatures within 30 feet who can see the vermlek must succeed at a @Check[will|dc:19] save or become @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 1}. On a critical failure, the creature is frightened 1 and @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 1}. Regardless of the result, creatures are immune to the same vermlek's unsettling movement for 24 hours.</p>"
+                    "description": "<p>Whenever the vermlek Abandons a Body or Inhabits a Body, all creatures within @Template[emanation|distance:30]{30 feet} who can see the vermlek must succeed at a @Check[will|dc:19|options:inflicts:frightened,inflicts:sickened] save or become @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 1}. On a critical failure, the creature is frightened 1 and @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 1}. Regardless of the result, creatures are immune to the same vermlek's unsettling movement for 24 hours.</p>"
                 }
             },
             "skills": {
@@ -16366,7 +16367,7 @@
             "name": "Whisper Dragon (Ancient)",
             "publicNotes": "<p>Whisper dragons are keen collectors of rumors and secrets who spend centuries honing their information networks and relationships. They generally do so not out of an intent to hold the information over others or to use for their own machinations, but simply because the process of learning and gathering information is fulfilling. Their hoards are sparse compared to those of other dragons, as they hold their true treasures\u2014secrets\u2014in their minds.</p>",
             "allSavesBonus": "hidden mind",
-            "sensesDetails": "(+23 to Sense Motive)",
+            "sensesDetails": "(+30 to Sense Motive)",
             "languagesDetails": "Telepathy 100 feet",
             "items": {
                 "spellcastingEntry->Occult Innate Spells": {
@@ -16451,7 +16452,7 @@
             "name": "Whisper Dragon (Ancient, Spellcaster)",
             "publicNotes": "<p>Whisper dragons are keen collectors of rumors and secrets who spend centuries honing their information networks and relationships. They generally do so not out of an intent to hold the information over others or to use for their own machinations, but simply because the process of learning and gathering information is fulfilling. Their hoards are sparse compared to those of other dragons, as they hold their true treasures\u2014secrets\u2014in their minds.</p>",
             "allSavesBonus": "hidden mind",
-            "sensesDetails": "(+23 to Sense Motive)",
+            "sensesDetails": "(+30 to Sense Motive)",
             "languagesDetails": "Telepathy 100 feet",
             "items": {
                 "spellcastingEntry->Occult Prepared Spells": {

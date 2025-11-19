@@ -185,6 +185,56 @@
                 }
             }
         },
+        "Demonologist": {
+            "name": "Demonologist",
+            "publicNotes": "<p>Demonologists can pull a creature from the Outer Rifts and bend it to their will... for a time.</p><hr /><p>Hidden secrets and occult powers have an irresistible lure for many. Since the majority of these NPCs are spellcasters, consider using alternative spell lists to adjust their themes.</p>",
+            "items": {
+                "spellcastingEntry->Arcane Prepared Spells": {
+                    "name": "Arcane Prepared Spells"
+                },
+                "weapon->Longspear": {
+                    "name": "Longspear",
+                    "description": "<p>This very long spear, sometimes called a pike, is purely for thrusting rather than throwing. Used by many soldiers and city watch for crowd control and defense against charging enemies, it must be wielded with two hands.</p>"
+                },
+                "armor->Robes": {
+                    "name": "Robes",
+                    "description": "<p>Explorer's clothing is sturdy enough that it can be reinforced to protect you, even though it isn't a suit of armor. It comes in many forms, though the most common sorts look like clerical vestments, monk's garments, or wizard's robes, as members of all three classes are likely to avoid wearing armor.</p>"
+                },
+                "equipment->Fiendish Hypotheses and Protections from Same (Spellbook)": {
+                    "name": "Fiendish Hypotheses and Protections from Same (Spellbook)",
+                    "description": "<p>A spellbook holds the written knowledge necessary to learn and prepare various spells, a necessity for wizards (who typically get one for free) and a useful luxury for other spellcasters looking to learn additional spells. Each spellbook can hold up to 100 spells. The Price listed is for a blank spellbook.</p>"
+                },
+                "strike-melee->Longspear": {
+                    "name": "Longspear"
+                },
+                "strike-melee->Fist": {
+                    "name": "Fist"
+                },
+                "action->Demonic Temptation": {
+                    "name": "Demonic Temptation",
+                    "description": "<p>Demonic study has garnered the attention of at least one demon who is actively trying to possess the demonologist. When the demonologist publicly espouses the benefits of demonic power (whether they believe it a good thing or not), they gain a +1 status bonus to skill checks, AC, and saves for 1 day. These bonuses don't apply against demons. At the end of the day, the demonologist must attempt a @Check[will|dc:20] save, becoming possessed for 1 day on a failure (or permanently on a critical failure).</p>"
+                },
+                "action->Breach the Outer Rifts": {
+                    "name": "Breach the Outer Rifts",
+                    "description": "<p><strong>Requirements</strong> The demonologist's last action was to cast a non-cantrip spell</p><hr /><p><strong>Effect</strong> The demonologist siphons energy drawn from the Outer Rifts into their weapon. Until the end of the turn, the weapon deals an extra 2d6 damage.</p>\n<p>Roll 1d20 to determine the type:</p><ul><li>1\u20137 acid</li><li>8\u20139 cold</li><li>10\u201311 electricity</li><li>12\u201318 fire</li><li>19\u201320 void.</li></ul>"
+                },
+                "action->Demon Summoning": {
+                    "name": "Demon Summoning",
+                    "description": "<p>The demonologist can cast a 5th-rank @UUID[Compendium.pf2e.spells-srd.Item.29ytKctjg7qSW2ff]{Summon Fiend} arcane spell to summon a @UUID[Compendium.pf2e.pathfinder-monster-core-2.Actor.ANptV6ltBi9C3P1l]{Nucol}. To do so, they must sacrifice two 4th-rank prepared spells and voluntarily take @Damage[4d12[mental]] damage that can't be reduced or prevented. If the demonologist is unable to Sustain the Spell, including if they're knocked out or killed, the spell continues, but the GM rolls a @Check[flat|dc:10] each round, ending the spell on a failure.</p>"
+                },
+                "lore->Academia Lore": {
+                    "name": "Academia Lore"
+                },
+                "lore->Demon Lore": {
+                    "name": "Demon Lore"
+                }
+            },
+            "skills": {
+                "diplomacy": {
+                    "label": "with demons"
+                }
+            }
+        },
         "Diabolic Messenger": {
             "name": "Diabolic Messenger",
             "items": {
@@ -623,8 +673,8 @@
                 }
             }
         },
-        "Marsh Giant": {
-            "name": "Marsh Giant",
+        "Lesser Marsh Giant": {
+            "name": "Lesser Marsh Giant",
             "publicNotes": "<p>Dwellers of brackish coastal salt marshes and fetid bogs and swamps, marsh giants appear hideous to most airbreathers, with fishlike mouths, slimy graygreen skin, and dark, beady eyes. They prefer to eat the flesh of those they slay in battle, including other marsh giants, and guzzle stagnant water from cauldrons or directly from their swampy homes.</p>\n<p>Marsh giant clans are insular, with each clan dedicating itself to zealous worship of a sea-dwelling deity, demon lord, or stranger entity. Whatever forces call to the marsh giants sometimes ensnare boggards and ogres as well, gathering in grim worship. Rather than favor these humanoid hangerson, marsh giants lavish attention on favored pets: krooths, giant octopuses, or primeval creatures like dinosaurs and the crocodilian deinosuchuses.</p>\n<p>Barely topping 11 feet tall and 1,000 pounds, marsh giants are small for giants but make up for their stature with their zealotry.</p>\n<hr />\n<p>Giants are massive humanoid creatures who live in remote regions throughout the world. They vary widely but are united in their hunger, requiring sustenance of their own element along with the feasts one would expect from such a massive humanoid. Although a simple matter for some giants, more esoteric types find this need a harsh reality. While a massive fistful of ice or snow alongside their meal will satisfy a frost giant, shadow giants hunger for the coagulated shadows of the Netherworld.</p>",
             "items": {
                 "spellcastingEntry->Occult Innate Spells": {
@@ -922,6 +972,40 @@
                 "action->At My Command": {
                     "name": "At My Command",
                     "description": "<p><strong>Requirements</strong> The naiad water guardian's last action this turn was a successful Strike against a creature within 30 feet</p><hr /><p><strong>Effect</strong> The naiad yells a command at the creature they hit The target must succeed at a @Check[will|dc:22] save or spend the first action on its next turn doing as commanded (or all its actions on its next turn on a critical failure) The naiad can command a creature to approach them, release what its holding, or drop @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone} Regardless of the result of its save, the creature is temporarily immune for 10 minutes.</p>"
+                }
+            }
+        },
+        "Ogre Hunter": {
+            "name": "Ogre Hunter",
+            "items": {
+                "weapon->Ogre Hook": {
+                    "name": "Ogre Hook",
+                    "description": "<p>Ogres are known for using immense, curved picks called ogre hooks.</p>"
+                },
+                "weapon->Trident": {
+                    "name": "Trident",
+                    "description": "<p>This three-pronged, spear-like weapon typically has a 4-foot shaft. Like a spear, it can be wielded with one hand or thrown.</p>"
+                },
+                "armor->Breastplate": {
+                    "name": "Breastplate",
+                    "description": "<p>Though referred to as a breastplate, this type of armor consists of several pieces of plate or @UUID[Compendium.pf2e.equipment-srd.Item.pRoikbRo5HFW6YUB]{Half Plate} armor that protect the torso, chest, neck, and sometimes the hips and lower legs. It strategically grants some of the protection of plate while allowing greater flexibility and speed.</p>"
+                },
+                "strike-melee->Ogre Hook": {
+                    "name": "Ogre Hook"
+                },
+                "strike-ranged->Trident": {
+                    "name": "Trident"
+                },
+                "action->Always Ready for a Scufe": {
+                    "name": "Always Ready for a Scufe",
+                    "description": "<p><strong>Trigger</strong> A creature gets in melee range of the ogre hunter</p><hr /><p><strong>Effect</strong> The ogre hunter draws a melee weapon.</p>"
+                },
+                "action->Reactive Strike": {
+                    "name": "Reactive Strike"
+                },
+                "action->Hunting Throw": {
+                    "name": "Hunting Throw",
+                    "description": "<p>The ogre hunter makes a ranged strike with their trident within 60 feet without ranged penalties. If the strike hits, it has enough force to knock the target @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone}. If the strike was a critical success, the target is also @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Immobilized} by the trident.</p>"
                 }
             }
         },

@@ -6399,6 +6399,7 @@
         "Vermlek Centaur (3-4)": {
             "name": "Vermlek Centaur (3-4)",
             "acDetails": "(23 while Inhabiting a Centaur Body)",
+            "speedsDetails": "40 feet (while Inhabiting a Centaur Body), 25 feet, burrow 15 feet (while not Inhabiting a Centaur Body)",
             "languagesDetails": "telepathy 100 feet",
             "items": {
                 "spellcastingEntry->Divine Innate Spells": {
@@ -6429,23 +6430,15 @@
                 },
                 "action->Recoil from Wasted Opportunities": {
                     "name": "Recoil from Wasted Opportunities",
-                    "description": "<p>Vermleks cannot stand the sight of a good meal presented and then swiftly taken away. Whenever a dying creature within sight of the vermlek has its dying condition removed, the vermlek takes @Damage[1d6[mental]] damage.</p>"
+                    "description": "<p>Vermleks cannot stand the sight of a good meal presented and then swiftly taken away. Whenever a @UUID[Compendium.pf2e.conditionitems.Item.yZRUzMqrMmfLu0V1]{Dying} creature within sight of the vermlek has its dying condition removed, the vermlek takes @Damage[1d6[mental]] damage.</p>"
                 },
                 "action->Abandon Body": {
                     "name": "Abandon Body",
-                    "description": "<p><strong>Requirements</strong> The vermlek is Inhabiting a Centaur Body</p>\n<hr />\n<p><strong>Effect</strong> The vermlek crawls out of the body it is inhabiting, devouring much of the body's remaining flesh and regaining 15 Hit Points in the process. The corpse it leaves behind is little more than a husk.</p>"
+                    "description": "<p><strong>Requirements</strong> The vermlek is Inhabiting a Centaur Body</p>\n<hr />\n<p><strong>Effect</strong> The vermlek crawls out of the body it is inhabiting, devouring much of the body's remaining flesh and regaining @Damage[15[healing]] Hit Points in the process. The corpse it leaves behind is little more than a husk.</p>"
                 },
                 "action->Inhabit Centaur Body": {
                     "name": "Inhabit Centaur Body",
-                    "description": "<p>While most vermleks inhabit Medium humanoids, Urxehl has granted this demon the ability to inhabit centaurs instead.</p>\n<p>The vermlek crawls into the body of an adjacent dead centaur, consuming the bulk of the victim's skeleton and internal organs as it does so and cramming itself into the cavity.</p>\n<p>The vermlek can wield weapons and use the centaur's Speed, hoof attack, and Trample ability. It also gains a +3 circumstance bonus to AC. While Inhabiting a Centaur body, a vermlek can't burrow.</p>\n<p>It can't use this ability if it's already Inhabiting a Centaur Body.</p>",
-                    "rules": {
-                        "0": {
-                            "label": "Inhabiting a Centaur"
-                        }
-                    }
-                },
-                "action->Speed: 40, Burrow: 0 if Inhabiting a Centaur body": {
-                    "name": "Speed: 40, Burrow: 0 if Inhabiting a Centaur body"
+                    "description": "<p>While most vermleks inhabit Medium humanoids, Urxehl has granted this demon the ability to inhabit centaurs instead.</p>\n<p>The vermlek crawls into the body of an adjacent dead centaur, consuming the bulk of the victim's skeleton and internal organs as it does so and cramming itself into the cavity.</p>\n<p>The vermlek can wield weapons and use the centaur's Speed, hoof attack, and Trample ability. It also gains a +3 circumstance bonus to AC. While Inhabiting a Centaur body, a vermlek can't burrow.</p>\n<p>It can't use this ability if it's already Inhabiting a Centaur Body.</p>"
                 },
                 "action->Trample": {
                     "name": "Trample",
@@ -6453,13 +6446,14 @@
                 },
                 "action->Unsettling Movement": {
                     "name": "Unsettling Movement",
-                    "description": "<p>Whenever the vermlek Abandons a Body or Inhabits a Body, all creatures within @Template[emanation|distance:30]{30 feet} who can see the vermlek must succeed at a @Check[will|dc:20] save or become @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 1}. On a critical failure, the creature is frightened 1 and @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 1}.</p>\n<p>Regardless of the result, creatures are immune to the same vermlek's unsettling movement for 24 hours.</p>"
+                    "description": "<p>Whenever the vermlek Abandons a Body or Inhabits a Body, all creatures within @Template[emanation|distance:30]{30 feet} who can see the vermlek must succeed at a @Check[will|dc:20|options:inflicts:frightened,inflicts:sickened] save or become @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 1}. On a critical failure, the creature is frightened 1 and @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 1}.</p>\n<p>Regardless of the result, creatures are immune to the same vermlek's unsettling movement for 24 hours.</p>"
                 }
             }
         },
         "Vermlek Centaur (5-6)": {
             "name": "Vermlek Centaur (5-6)",
             "acDetails": "(26 while Inhabiting a Centaur Body)",
+            "speedsDetails": "40 feet (while Inhabiting a Centaur Body), 25 feet, burrow 15 feet (while not Inhabiting a Centaur Body)",
             "languagesDetails": "telepathy 100 feet",
             "items": {
                 "spellcastingEntry->Divine Innate Spells": {
@@ -6490,23 +6484,15 @@
                 },
                 "action->Recoil from Wasted Opportunities": {
                     "name": "Recoil from Wasted Opportunities",
-                    "description": "<p>Vermleks cannot stand the sight of a good meal presented and then swiftly taken away. Whenever a dying creature within sight of the vermlek has its dying condition removed, the vermlek takes @Damage[1d6[mental]] damage.</p>"
+                    "description": "<p>Vermleks cannot stand the sight of a good meal presented and then swiftly taken away. Whenever a @UUID[Compendium.pf2e.conditionitems.Item.yZRUzMqrMmfLu0V1]{Dying} creature within sight of the vermlek has its dying condition removed, the vermlek takes @Damage[1d6[mental]] damage.</p>"
                 },
                 "action->Abandon Body": {
                     "name": "Abandon Body",
-                    "description": "<p><strong>Requirements</strong> The vermlek is Inhabiting a Centaur Body</p>\n<hr />\n<p><strong>Effect</strong> The vermlek crawls out of the body it is inhabiting, devouring much of the body's remaining flesh and regaining 15 Hit Points in the process. The corpse it leaves behind is little more than a husk.</p>"
+                    "description": "<p><strong>Requirements</strong> The vermlek is Inhabiting a Centaur Body</p>\n<hr />\n<p><strong>Effect</strong> The vermlek crawls out of the body it is inhabiting, devouring much of the body's remaining flesh and regaining @Damage[15[healing]] Hit Points in the process. The corpse it leaves behind is little more than a husk.</p>"
                 },
                 "action->Inhabit Centaur Body": {
                     "name": "Inhabit Centaur Body",
-                    "description": "<p>While most vermleks inhabit Medium humanoids, Urxehl has granted this demon the ability to inhabit centaurs instead.</p>\n<p>The vermlek crawls into the body of an adjacent dead centaur, consuming the bulk of the victim's skeleton and internal organs as it does so and cramming itself into the cavity.</p>\n<p>The vermlek can wield weapons and use the centaur's Speed, hoof attack, and Trample ability. It also gains a +3 circumstance bonus to AC. While Inhabiting a Centaur body, a vermlek can't burrow.</p>\n<p>It can't use this ability if it's already Inhabiting a Centaur Body.</p>",
-                    "rules": {
-                        "0": {
-                            "label": "Inhabiting a Centaur"
-                        }
-                    }
-                },
-                "action->Speed: 40, Burrow: 0 if Inhabiting a Centaur body": {
-                    "name": "Speed: 40, Burrow: 0 if Inhabiting a Centaur body"
+                    "description": "<p>While most vermleks inhabit Medium humanoids, Urxehl has granted this demon the ability to inhabit centaurs instead.</p>\n<p>The vermlek crawls into the body of an adjacent dead centaur, consuming the bulk of the victim's skeleton and internal organs as it does so and cramming itself into the cavity.</p>\n<p>The vermlek can wield weapons and use the centaur's Speed, hoof attack, and Trample ability. It also gains a +3 circumstance bonus to AC. While Inhabiting a Centaur body, a vermlek can't burrow.</p>\n<p>It can't use this ability if it's already Inhabiting a Centaur Body.</p>"
                 },
                 "action->Trample": {
                     "name": "Trample",
@@ -6514,7 +6500,7 @@
                 },
                 "action->Unsettling Movement": {
                     "name": "Unsettling Movement",
-                    "description": "<p>Whenever the vermlek Abandons a Body or Inhabits a Body, all creatures within @Template[emanation|distance:30]{30 feet} who can see the vermlek must succeed at a @Check[will|dc:23] save or become @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 1}. On a critical failure, the creature is frightened 1 and @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 1}.</p>\n<p>Regardless of the result, creatures are immune to the same vermlek's unsettling movement for 24 hours.</p>"
+                    "description": "<p>Whenever the vermlek Abandons a Body or Inhabits a Body, all creatures within @Template[emanation|distance:30]{30 feet} who can see the vermlek must succeed at a @Check[will|dc:23|options:inflicts:frightened,inflicts:sickened] save or become @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 1}. On a critical failure, the creature is frightened 1 and @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 1}.</p>\n<p>Regardless of the result, creatures are immune to the same vermlek's unsettling movement for 24 hours.</p>"
                 }
             }
         },
