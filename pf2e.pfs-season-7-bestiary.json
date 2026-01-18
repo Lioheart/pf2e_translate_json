@@ -7,9 +7,26 @@
         "7-04": "7-04",
         "7-05": "7-05",
         "7-06": "7-06",
-        "7-07": "7-07"
+        "7-07": "7-07",
+        "7-08": "7-08",
+        "7-09": "7-09",
+        "7-10": "7-10"
     },
     "entries": {
+        "Ascending the Chain": {
+            "name": "Ascending the Chain",
+            "descriptionHazard": "<p>The PCs appear on a gigantic wall of hooked chains dangling in a gray swirling mist. The chains radiate life-chilling energy Cries of innocence and condemnation echo through the mist in Elven. A plane of light 10 feet above eddies and swirls as it dully reflects the PCs below, but the reflections warp and alter the PCs to have sallow complexions like the undead.</p>",
+            "disable": "<p>A PC that has ascended to the plane of light (@Check[athletics|dc:15] check to Climb; on a critical failure, the PC falls 10 feet before being seized by a chain) can attempt a @Check[thievery|dc:20] check to disrupt the plane or a @Check[arcana|dc:20], @Check[occultism|dc:20] or @Check[religion|dc:20] check to ritually disrupt the haunting. Each success reduces the haunt's actions by one. When the haunt has no more actions, it is disabled and the PCs all return to area <strong>B3</strong>.</p>",
+            "reset": "<p>The haunt resets the next time the <em>Soulshackle</em> traps creatures in the library.</p>",
+            "routine": "<p>(three actions) The chains rattle and sigh ominously around two different random creatures trapped in the haunt, dealing @Damage[(2d6+2)[void]] damage (@Check[will|dc:18|basic] save).</p>",
+            "stealth": "<p>(trained)</p>",
+            "items": {
+                "action->The Pain of Devotion": {
+                    "name": "The Pain of Devotion",
+                    "description": "<p><strong>Trigger</strong> Hunted by Chains is disabled</p><hr /><p><strong>Effect</strong> The chains rattle ominously, dealing @Damage[(2d6+2)[void]] damage to all creatures in the haunt (@Check[will|dc:18|basic] save). The haunt then rolls initiative.</p>"
+                }
+            }
+        },
         "Athamaru Pirate": {
             "name": "Athamaru Pirate",
             "publicNotes": "<p>Deep in the sea, schools of athamarus\u2014piscine humanoids armed with spears and specialized crossbows\u2014stalk sharks, sea serpents, and giant squid from the backs of their giant moray eel mounts. The first hunters to strike are armed with barbed harpoons that deploy large fans of seaweed, slowing and exhausting their prey. A daring few athamarus use the embedded harpoon as a handle to ride prey for a short time. Once the creature is tired, remaining hunters finish it with longspears. Athamarus developed this hunting tradition to forge skilled warriors and deter potential attackers, partially in response to centuries of oppression and mistreatment from other aquatic cultures.</p>\n<p>Athamarus rarely hunt land-dwellers, instead offering to trade their services as guides in exchange for metal and ceramic items they can't build underwater\u2014and for tubers, which they consider earthy delicacies. They render aid to damaged sailing ships and rescue shipwrecked sailors, providing food and guidance.</p>\n<p>Athamaru communities\u2014usually villages of 200 individuals or fewer\u2014are matriarchal. The ruler of a given community is also the primary egg-layer, providing each generation with powerful familial bonds. The communities are tight-knit and loyal. Matriarchs are advised and assisted by primal spellcasters and healers.</p>",
@@ -192,10 +209,6 @@
                 "spellcastingEntry->Arcane Prepared Spells": {
                     "name": "Arcane Prepared Spells"
                 },
-                "weapon->Longspear": {
-                    "name": "Longspear",
-                    "description": "<p>This very long spear, sometimes called a pike, is purely for thrusting rather than throwing. Used by many soldiers and city watch for crowd control and defense against charging enemies, it must be wielded with two hands.</p>"
-                },
                 "armor->Robes": {
                     "name": "Robes",
                     "description": "<p>Explorer's clothing is sturdy enough that it can be reinforced to protect you, even though it isn't a suit of armor. It comes in many forms, though the most common sorts look like clerical vestments, monk's garments, or wizard's robes, as members of all three classes are likely to avoid wearing armor.</p>"
@@ -356,6 +369,46 @@
                 }
             }
         },
+        "Duty's Soulshackle": {
+            "name": "Duty's Soulshackle",
+            "descriptionHazard": "<p>A length of humanoid spine is held into a staff by the hooked chain embedded in and entwined around it. Additional spectral chains of pure shadowstuff hold it aloft and sinuously surround it.</p>",
+            "disable": "<p>@Check[arcana|dc:20], @Check[occultism|dc:20], or @Check[religion|dc:20] (trained) to disrupt the spectral energies channeled by the intelligent item. Each success reduces the haunt's actions by one. When the haunt has no more actions, it is disabled.</p>",
+            "routine": "<p>(three actions) On its initiative, Duty's Soulshackle first uses Call to Serve if it's able to and spends any remaining actions making velstrac chains Strikes against its enemies.</p>",
+            "stealth": "<p>(expert); noticing the staff has a DC of 0.</p>",
+            "items": {
+                "action->Chained by Duty": {
+                    "name": "Chained by Duty",
+                    "description": "<p><strong>Trigger</strong> Lyari proposes how to free herself from <em>Duty's Soulshackle</em>.</p><hr /><p><strong>Effect</strong> <em>Duty's Soulshackle</em> quivers in rage before unleashing more spectral chains. The haunt then rolls initiative.</p>"
+                },
+                "action->Call to Serve": {
+                    "name": "Call to Serve",
+                    "description": "<p><em>Duty's Soulshackle</em> creates a @UUID[Compendium.pf2e.pfs-season-7-bestiary.Actor.ckZ7eHNCFNP6ddiO]{Withered Leaf of Talhindir} within 10 feet of itself. It then cannot use this action for [[/gmr 1d6 #rounds]]{1d6 rounds}.</p>"
+                },
+                "strike-melee->Velstrac Chains": {
+                    "name": "Velstrac Chains"
+                }
+            }
+        },
+        "Duty's Soulshackle (3-4)": {
+            "name": "Duty's Soulshackle (3-4)",
+            "descriptionHazard": "<p>A length of humanoid spine is held into a staff by the hooked chain embedded in and entwined around it. Additional spectral chains of pure shadowstuff hold it aloft and sinuously surround it.</p>",
+            "disable": "<p>@Check[arcana|dc:23], @Check[occultism|dc:23], or @Check[religion|dc:23] (trained) to disrupt the spectral energies channeled by the intelligent item. Each success reduces the haunt's actions by one. When the haunt has no more actions, it is disabled.</p>",
+            "routine": "<p>(three actions) On its initiative, Duty's Soulshackle first uses Call to Serve if it's able to and spends any remaining actions making velstrac chains Strikes against its enemies.</p>",
+            "stealth": "<p>(expert); noticing the staff has a DC of 0.</p>",
+            "items": {
+                "action->Chained by Duty": {
+                    "name": "Chained by Duty",
+                    "description": "<p><strong>Trigger</strong> Lyari proposes how to free herself from <em>Duty's Soulshackle</em>.</p><hr /><p><strong>Effect</strong> <em>Duty's Soulshackle</em> quivers in rage before unleashing more spectral chains. The haunt then rolls initiative.</p>"
+                },
+                "action->Call to Serve": {
+                    "name": "Call to Serve",
+                    "description": "<p><em>Duty's Soulshackle</em> creates a @UUID[Compendium.pf2e.pfs-season-7-bestiary.Actor.gCD8rOahd9F9ZSJO]{Shriveled Leaf of Talhindir} within 10 feet of itself. It then cannot use this action for [[/gmr 1d6 #rounds]]{1d6 rounds}.</p>"
+                },
+                "strike-melee->Velstrac Chains": {
+                    "name": "Velstrac Chains"
+                }
+            }
+        },
         "Enraged Sea Life": {
             "name": "Enraged Sea Life",
             "descriptionHazard": "<p>A swarm of aggressive cuttlefish, octopuses, devil rays, and countless other species of sea life bite and bludgeon Timonithaea's enemies.</p>",
@@ -487,6 +540,34 @@
                 }
             }
         },
+        "Hunted by Chains": {
+            "name": "Hunted by Chains",
+            "descriptionHazard": "<p>Shadowy chains reach out to ensnare creatures trapped in the mindscape.</p>",
+            "disable": "<p>@Check[acrobatics|dc:17] to avoid the chains, or @Check[arcana|dc:17], @Check[occultism|dc:17], or @Check[religion|dc:17] to ritually disrupt the haunting. Each success reduces the haunt's actions by one. When the haunt has no more actions, it is disabled and the Scaling the Chain haunt triggers.</p>",
+            "reset": "<p>The haunt resets the next time the <em>Soulshackle</em> traps creatures in the library.</p>",
+            "routine": "<p>(two actions) Spectral chains snake out to wrap around three different random creatures trapped in the haunt, who must each succeed at a @Check[reflex|dc:16] save or have the @UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{Restrained} condition until it [[/act escape dc=16]]{Escapes}. Each round that a creature starts its turn @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed}, it takes @Damage[2d4[force]]{2d4 nonlethal force} damage. Spectral scars form on any creature knocked @UUID[Compendium.pf2e.conditionitems.Item.fBnFDH2MTzgFijKf]{Unconscious} by this haunt.</p>",
+            "stealth": "<p>(trained)</p>",
+            "items": {
+                "action->Chains of Undeath": {
+                    "name": "Chains of Undeath",
+                    "description": "<p><strong>Trigger</strong> Talhindir's Autumn is disabled</p><hr /><p><strong>Effect</strong> A spectral image of Duty's Soulshackle appears in a display nook, snaking out chains of dark energy toward each creature. Each living creature in the haunt must attempt a @Check[will|dc:16] save or be @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 1} The haunt then rolls initiative.</p>"
+                }
+            }
+        },
+        "Hunted by Duty's Bonds": {
+            "name": "Hunted by Duty's Bonds",
+            "descriptionHazard": "<p>Shadowy chains reach out to ensnare creatures trapped in the mindscape.</p>",
+            "disable": "<p>@Check[acrobatics|dc:18] to avoid the chains, or @Check[arcana|dc:18], @Check[occultism|dc:18], or @Check[religion|dc:18] to ritually disrupt the haunting. Each success reduces the haunt's actions by one. When the haunt has no more actions, it is disabled and the Scaling the Chain haunt triggers.</p>",
+            "reset": "<p>The haunt resets the next time the <em>Soulshackle</em> traps creatures in the library.</p>",
+            "routine": "<p>(two actions) Spectral chains snake out to wrap around three different random creatures trapped in the haunt, who must each succeed at a @Check[reflex|dc:17] save or have the @UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{Restrained} condition until it [[/act escape dc=17]]{Escapes}. Each round that a creature starts its turn @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed}, it takes @Damage[(2d4+1)[force]]{2d4+1 nonlethal force} damage. Spectral scars form on any creature knocked @UUID[Compendium.pf2e.conditionitems.Item.fBnFDH2MTzgFijKf]{Unconscious} by this haunt.</p>",
+            "stealth": "<p>(trained)</p>",
+            "items": {
+                "action->Chains of Undeath": {
+                    "name": "Chains of Undeath",
+                    "description": "<p><strong>Trigger</strong> Talhindir's Autumn is disabled</p><hr /><p><strong>Effect</strong> A spectral image of Duty's Soulshackle appears in a display nook, snaking out chains of dark energy toward each creature. Each living creature in the haunt must attempt a @Check[will|dc:16] save or be @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 1} The haunt then rolls initiative.</p>"
+                }
+            }
+        },
         "Imp Minion": {
             "name": "Imp Minion",
             "publicNotes": "<p>Imps are fiendish infiltrators and corrupters who, despite their diminutive stature, are more than capable of subtly influencing a weak-willed individual into performing increasingly evil acts over time. An imp will often agree to serve a mortal and act docile and loyal in a long-term plot to eventually get their master killed or damn their soul. Imps are born directly from the Outer Planes themselves, rather than from mortal souls, and thus they serve outside any fiendish hierarchies, granting them leeway to pursue their specialties. Despite standing a mere 2 feet tall, imps can be vicious combatants, flying out of reach and turning invisible to escape should the odds turn against them.</p>",
@@ -549,7 +630,7 @@
                 },
                 "action->Frightening Display": {
                     "name": "Frightening Display",
-                    "description": "<p>The gorilla beats its chest in a terrifying display. Creatures within 30 feet must attempt a @Check[will|dc:20] save. While a creature is frightened by this ability, it is of-guard to the gorilla.</p><hr /><p><strong>Critical Success</strong> No effect and temporarily immune for 1 minute.</p>\n<p><strong>Success</strong> The creature is unafected.</p>\n<p><strong>Failure</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 1}.</p>\n<p><strong>Critical Failure</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 2}.</p>"
+                    "description": "<p>The gorilla beats its chest in a terrifying display. Creatures within @Template[emanation|distance:30]{30 feet} must attempt a @Check[will|dc:20|options:area-effect,inflicts:frightened,inflicts:off-guard] save. While a creature is frightened by this ability, it is @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} to the gorilla.</p><hr /><p><strong>Critical Success</strong> No effect and temporarily immune for 1 minute.</p>\n<p><strong>Success</strong> The creature is unaffected.</p>\n<p><strong>Failure</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 1}.</p>\n<p><strong>Critical Failure</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 2}.</p>"
                 },
                 "action->Well-Trained": {
                     "name": "Well-Trained",
@@ -696,6 +777,84 @@
                 "action->Twist the Hook": {
                     "name": "Twist the Hook",
                     "description": "<p>The marsh giant makes a melee Strike with its gaff. If it hits, it twists and yanks the gaff to knock the target @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone} and create an awful wound, dealing @Damage[2d4[persistent,bleed]] damage to the creature.</p>"
+                }
+            }
+        },
+        "Lyari Zinfeld": {
+            "name": "Lyari Zinfeld",
+            "hpDetails": "void healing",
+            "items": {
+                "equipment->Books": {
+                    "name": "Books"
+                },
+                "strike-melee->Jaws": {
+                    "name": "Jaws"
+                },
+                "strike-melee->Claw": {
+                    "name": "Claw"
+                },
+                "action->Void Healing": {
+                    "name": "Void Healing"
+                },
+                "action->Consume Flesh": {
+                    "name": "Consume Flesh",
+                    "description": "<p><strong>Requirements</strong> Lyari is adjacent to the corpse of a creature that died within the last hour</p><hr /><p><strong>Effect</strong> Lyari devours a chunk of the corpse and regains @Damage[1d6[healing]] Hit Points. She can regain Hit Points from any given corpse only once.</p>"
+                },
+                "action->Nihilistic Truthsayer": {
+                    "name": "Nihilistic Truthsayer",
+                    "description": "<p>Lyari's solitary time in the depths and unique perspective on existence makes her shockingly accepting of terrible universal truths that others don't want to hear. She calmly lays into an enemy within 30 feet, reminding them of existential frailty, presumed insecurities, and inevitable failures in a logical and level manner. The target must attempt a @Check[will|dc:16] save. On a failure, they are @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 2} (@UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 3} and @UUID[Compendium.pf2e.conditionitems.Item.sDPxOjQ9kx2RZE8D]{Fleeing} for 1 round on a critical failure). Regardless of the result of its save, the target is temporarily immune for 1 hour.</p>"
+                },
+                "action->Swift Leap": {
+                    "name": "Swift Leap",
+                    "description": "<p>Lyari jumps up to half her Speed. This movement doesn't trigger reactions.</p>"
+                },
+                "action->Grab": {
+                    "name": "Grab"
+                },
+                "lore->Elven Lore": {
+                    "name": "Elven Lore"
+                },
+                "lore->Library Lore": {
+                    "name": "Library Lore"
+                }
+            }
+        },
+        "Lyari Zinfeld (3-4)": {
+            "name": "Lyari Zinfeld (3-4)",
+            "hpDetails": "void healing",
+            "items": {
+                "equipment->Books": {
+                    "name": "Books"
+                },
+                "strike-melee->Jaws": {
+                    "name": "Jaws"
+                },
+                "strike-melee->Claw": {
+                    "name": "Claw"
+                },
+                "action->Void Healing": {
+                    "name": "Void Healing"
+                },
+                "action->Consume Flesh": {
+                    "name": "Consume Flesh",
+                    "description": "<p><strong>Requirements</strong> Lyari is adjacent to the corpse of a creature that died within the last hour</p><hr /><p><strong>Effect</strong> Lyari devours a chunk of the corpse and regains @Damage[1d6[healing]] Hit Points. She can regain Hit Points from any given corpse only once.</p>"
+                },
+                "action->Nihilistic Truthsayer": {
+                    "name": "Nihilistic Truthsayer",
+                    "description": "<p>Lyari's solitary time in the depths and unique perspective on existence makes her shockingly accepting of terrible universal truths that others don't want to hear. She calmly lays into an enemy within 30 feet, reminding them of existential frailty, presumed insecurities, and inevitable failures in a logical and level manner. The target must attempt a @Check[will|dc:19] save. On a failure, they are @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 2} (@UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 3} and @UUID[Compendium.pf2e.conditionitems.Item.sDPxOjQ9kx2RZE8D]{Fleeing} for 1 round on a critical failure). Regardless of the result of its save, the target is temporarily immune for 1 hour.</p>"
+                },
+                "action->Swift Leap": {
+                    "name": "Swift Leap",
+                    "description": "<p>Lyari jumps up to half her Speed. This movement doesn't trigger reactions.</p>"
+                },
+                "action->Grab": {
+                    "name": "Grab"
+                },
+                "lore->Elven Lore": {
+                    "name": "Elven Lore"
+                },
+                "lore->Library Lore": {
+                    "name": "Library Lore"
                 }
             }
         },
@@ -978,24 +1137,6 @@
         "Ogre Hunter": {
             "name": "Ogre Hunter",
             "items": {
-                "weapon->Ogre Hook": {
-                    "name": "Ogre Hook",
-                    "description": "<p>Ogres are known for using immense, curved picks called ogre hooks.</p>"
-                },
-                "weapon->Trident": {
-                    "name": "Trident",
-                    "description": "<p>This three-pronged, spear-like weapon typically has a 4-foot shaft. Like a spear, it can be wielded with one hand or thrown.</p>"
-                },
-                "armor->Breastplate": {
-                    "name": "Breastplate",
-                    "description": "<p>Though referred to as a breastplate, this type of armor consists of several pieces of plate or @UUID[Compendium.pf2e.equipment-srd.Item.pRoikbRo5HFW6YUB]{Half Plate} armor that protect the torso, chest, neck, and sometimes the hips and lower legs. It strategically grants some of the protection of plate while allowing greater flexibility and speed.</p>"
-                },
-                "strike-melee->Ogre Hook": {
-                    "name": "Ogre Hook"
-                },
-                "strike-ranged->Trident": {
-                    "name": "Trident"
-                },
                 "action->Always Ready for a Scufe": {
                     "name": "Always Ready for a Scufe",
                     "description": "<p><strong>Trigger</strong> A creature gets in melee range of the ogre hunter</p><hr /><p><strong>Effect</strong> The ogre hunter draws a melee weapon.</p>"
@@ -1063,6 +1204,32 @@
                 }
             }
         },
+        "Partially Decomposed Rat Swarm": {
+            "name": "Partially Decomposed Rat Swarm",
+            "hpDetails": "negative healing",
+            "items": {
+                "action->Slow": {
+                    "name": "Slow",
+                    "description": "<p>A partially decomposed rat swarm is permanently @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1} and can't use reactions.</p>"
+                },
+                "action->Void Healing": {
+                    "name": "Void Healing"
+                },
+                "action->Swarming Bites": {
+                    "name": "Swarming Bites",
+                    "description": "<p>Each enemy in the swarm's space takes @Damage[1d6[piercing]] damage and must attempt a @Check[reflex|dc:17|basic] save. A creature that fails its save is exposed to zombie plague.</p>"
+                },
+                "action->Zombie Plague": {
+                    "name": "Zombie Plague",
+                    "description": "<p>The sickened and @UUID[Compendium.pf2e.conditionitems.Item.fBnFDH2MTzgFijKf]{Unconscious} conditions from zombie plague can't end or be reduced until the disease is cured.</p>\n<p><strong>Saving Throw</strong> @Check[fortitude|dc:14]</p>\n<p><strong>Stage 1</strong> carrier with no ill effect (1d4 hours),</p>\n<p><strong>Stage 2</strong> @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 1} (1 day),</p>\n<p><strong>Stage 3</strong> sickened 1 and @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1} (1 day),</p>\n<p><strong>Stage 4</strong> unconscious (1 day),</p>\n<p><strong>Stage 5</strong> dead</p>"
+                }
+            },
+            "skills": {
+                "athletics": {
+                    "label": "to Climb or Swim"
+                }
+            }
+        },
         "Pile of Orts": {
             "name": "Pile of Orts",
             "descriptionHazard": "<p>A rift to Hell crackles with unstable energy from the broken summoning circle as a squirming mass of fiends struggles to emerge A blood mist projection of a Hellknight angrily commands them.</p>",
@@ -1120,11 +1287,37 @@
                 },
                 "action->Frightening Display": {
                     "name": "Frightening Display",
-                    "description": "<p>The gorilla beats its chest in a terrifying display. Creatures within 30 feet must attempt a @Check[will|dc:18] save. While a creature is frightened by this ability, it is of-guard to the gorilla.</p><hr /><p><strong>Critical Success</strong> No effect and temporarily immune for 1 minute.</p>\n<p><strong>Success</strong> The creature is unafected.</p>\n<p><strong>Failure</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 1}.</p>\n<p><strong>Critical Failure</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 2}.</p>"
+                    "description": "<p>The gorilla beats its chest in a terrifying display. Creatures within @Template[emanation|distance:30]{30 feet} must attempt a @Check[will|dc:18|options:area-effect,inflicts:frightened,inflicts:off-guard] save. While a creature is frightened by this ability, it is @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} to the gorilla.</p><hr /><p><strong>Critical Success</strong> No effect and temporarily immune for 1 minute.</p>\n<p><strong>Success</strong> The creature is unaffected.</p>\n<p><strong>Failure</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 1}.</p>\n<p><strong>Critical Failure</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 2}.</p>"
                 },
                 "action->Well-Trained": {
                     "name": "Well-Trained",
                     "description": "<p>The pirate gorilla is used to taking orders on board the ship. It loses its immunity to linguistic efects, including appeals to surrender.</p>"
+                }
+            }
+        },
+        "Recently Slain Rat Swarm": {
+            "name": "Recently Slain Rat Swarm",
+            "hpDetails": "negative healing",
+            "items": {
+                "action->Slow": {
+                    "name": "Slow",
+                    "description": "<p>A partially decomposed rat swarm is permanently @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1} and can't use reactions.</p>"
+                },
+                "action->Void Healing": {
+                    "name": "Void Healing"
+                },
+                "action->Frenzied Bites": {
+                    "name": "Frenzied Bites",
+                    "description": "<p>Each enemy in the swarm's space takes @Damage[2d6[piercing]] damage and must attempt a @Check[reflex|dc:20|basic] save. A creature that fails its save is exposed to zombie plague.</p>"
+                },
+                "action->Zombie Plague": {
+                    "name": "Zombie Plague",
+                    "description": "<p>The sickened and @UUID[Compendium.pf2e.conditionitems.Item.fBnFDH2MTzgFijKf]{Unconscious} conditions from zombie plague can't end or be reduced until the disease is cured.</p>\n<p><strong>Saving Throw</strong> @Check[fortitude|dc:17]</p>\n<p><strong>Stage 1</strong> carrier with no ill effect (1d4 hours),</p>\n<p><strong>Stage 2</strong> @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 1} (1 day),</p>\n<p><strong>Stage 3</strong> sickened 1 and @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1} (1 day),</p>\n<p><strong>Stage 4</strong> unconscious (1 day),</p>\n<p><strong>Stage 5</strong> dead</p>"
+                }
+            },
+            "skills": {
+                "athletics": {
+                    "label": "to Climb or Swim"
                 }
             }
         },
@@ -1149,6 +1342,150 @@
                 },
                 "strike-melee->Cobblestone": {
                     "name": "Cobblestone"
+                }
+            }
+        },
+        "Scaling the Chain": {
+            "name": "Scaling the Chain",
+            "descriptionHazard": "<p>The PCs appear on a gigantic wall of hooked chains dangling in a gray swirling mist. The chains radiate life-chilling energy Cries of innocence and condemnation echo through the mist in Elven. A plane of light 10 feet above eddies and swirls as it dully reflects the PCs below, but the reflections warp and alter the PCs to have sallow complexions like the undead.</p>",
+            "disable": "<p>A PC that has ascended to the plane of light (@Check[athletics|dc:13] check to Climb; on a critical failure, the PC falls 10 feet before being seized by a chain) can attempt a @Check[thievery|dc:18] check to disrupt the plane or a @Check[arcana|dc:18], @Check[occultism|dc:18] or @Check[religion|dc:18] check to ritually disrupt the haunting. Each success reduces the haunt's actions by one. When the haunt has no more actions, it is disabled and the PCs all return to area <strong>B3</strong>.</p>",
+            "reset": "<p>The haunt resets the next time the <em>Soulshackle</em> traps creatures in the library.</p>",
+            "routine": "<p>(three actions) The chains rattle and sigh ominously around two different random creatures trapped in the haunt, dealing @Damage[(1d6+2)[void]] damage (@Check[will|dc:16|basic] save).</p>",
+            "stealth": "<p>(trained)</p>",
+            "items": {
+                "action->The Pain of Devotion": {
+                    "name": "The Pain of Devotion",
+                    "description": "<p><strong>Trigger</strong> Hunted by Chains is disabled</p><hr /><p><strong>Effect</strong> The chains rattle ominously, dealing @Damage[(1d6+2)[void]] damage to all creatures in the haunt (@Check[will|dc:16|basic] save). The haunt then rolls initiative.</p>"
+                }
+            }
+        },
+        "Shriveled Leaf of Talhindir": {
+            "name": "Shriveled Leaf of Talhindir",
+            "hpDetails": "void healing",
+            "items": {
+                "strike-melee->Withered Touch": {
+                    "name": "Withered Touch"
+                },
+                "action->Light Vulnerability": {
+                    "name": "Light Vulnerability",
+                    "description": "<p>Attacks against the Leaf of Talhindir are treated as magical if made by a creature who is in magical light or with an object that is in magical light (such as from the @UUID[Compendium.pf2e.spells-srd.Item.WBmvzNDfpwka3qT4]{Light} spell).</p>"
+                },
+                "action->Void Healing": {
+                    "name": "Void Healing"
+                },
+                "action->Slink in Shadows": {
+                    "name": "Slink in Shadows",
+                    "description": "<p>The Leaf of Talhindir can [[/act hide]] or end its [[/act sneak]] in a creature's or object's shadow.</p>"
+                },
+                "action->Weight of Darkness": {
+                    "name": "Weight of Darkness",
+                    "description": "<p><strong>Requirements</strong> The Leaf of Talhindir made a successful Strike against a living creature with its withered touch on its previous action</p><hr /><p><strong>Effect</strong> The Leaf of Talhindir chains the soul of the creature. They must attempt a @Check[will|dc:17|options:inflicts:enfeebled] save. On a failure, the creature is @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 1}. This is cumulative with other enfeebled conditions from other Leaves of Talhindir or shadows, to a maximum of @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 4}. The enfeebled value from Weight of Darkness decreases by 1 every minute.</p>"
+                }
+            }
+        },
+        "Talhindir's Autumn": {
+            "name": "Talhindir's Autumn",
+            "descriptionHazard": "<p>All lights in the room snap on, just as Lyari remembers the day of her death. A susurrus of accusations and a guilty verdict fill the air. Ghostly elven warriors disappear and reappear in a disorienting and implacable advance.</p>",
+            "disable": "<p>@Check[athletics|dc:18] to stand against the force of the verdict, or @Check[arcana|dc:18], @Check[occultism|dc:18], or @Check[religion|dc:18] to ritually disrupt the haunting. Each success reduces the haunt's actions by one When the haunt has no more actions, it is disabled and the Hunted by Chains haunt triggers.</p>",
+            "reset": "<p>The haunt resets the next time the <em>Soulshackle</em> traps creatures in the library.</p>",
+            "routine": "<p>(two actions) The haunt makes vengeful judgment Strikes against three different random creatures trapped in this haunt. A spectral pool of blood forms beneath any creature knocked @UUID[Compendium.pf2e.conditionitems.Item.fBnFDH2MTzgFijKf]{Unconscious} by this haunt.</p>",
+            "stealth": "<p>(trained); @Check[occultism|dc:13] or @Check[religion|dc:13] to notice odd whispers.</p>",
+            "items": {
+                "action->Accusations": {
+                    "name": "Accusations",
+                    "description": "<p><strong>Trigger</strong> The PCs all enter the room</p><hr /><p><strong>Effect</strong> Accusations of crimes against the crown are whispered throughout the room in Elven. Each living creature in the room must attempt a @Check[will|dc:16] save or be @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 1}. The haunt then rolls initiative.</p>"
+                },
+                "strike-melee->Vengeful Judgment": {
+                    "name": "Vengeful Judgment",
+                    "description": "<p>Plus @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone} on a critical hit</p>"
+                }
+            }
+        },
+        "Talhindir's Despair": {
+            "name": "Talhindir's Despair",
+            "descriptionHazard": "<p>Gentle crying rises to become overwhelming wails. The fungal carvings begin to weep blood that pools around the pillars</p>",
+            "disable": "<p>@Check[performance|dc:20] (trained) to overpower the frightening cries with a greater sound or @Check[occultism|dc:18] or @Check[religion|dc:18] (trained) to ritually disrupt the haunting.</p>",
+            "reset": "<p>If the haunt is not dispersed, it resets after 1 day.</p>",
+            "stealth": "<p>(expert)</p>",
+            "items": {
+                "action->The Falling Tears": {
+                    "name": "The Falling Tears",
+                    "description": "<p><strong>Trigger</strong> A creature moves within 10 feet of the carving of Viore Ciobanu</p><hr /><p><strong>Effect</strong> Blood begins to rain from the ceiling. The cries from the statues deal @Damage[(2d10+13)[mental]] damage to living creatures within the room (@Check[will|dc:20|basic|options:inflicts:frightened] save). On a failed save, creatures are also @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 1} (or @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 2} and @UUID[Compendium.pf2e.conditionitems.Item.sDPxOjQ9kx2RZE8D]{Fleeing} for 1 minute on a critical failure).</p>"
+                }
+            }
+        },
+        "Talhindir's Fall": {
+            "name": "Talhindir's Fall",
+            "descriptionHazard": "<p>All lights in the room snap on, just as Lyari remembers the day of her death. A susurrus of accusations and a guilty verdict fill the air. Ghostly elven warriors disappear and reappear in a disorienting and implacable advance.</p>",
+            "disable": "<p>@Check[athletics|dc:20] to stand against the force of the verdict, or @Check[arcana|dc:20], @Check[occultism|dc:20], or @Check[religion|dc:20] to ritually disrupt the haunting. Each success reduces the haunt's actions by one When the haunt has no more actions, it is disabled and the Hunted by Chains haunt triggers.</p>",
+            "reset": "<p>The haunt resets the next time the <em>Soulshackle</em> traps creatures in the library.</p>",
+            "routine": "<p>(two actions) The haunt makes vengeful judgment Strikes against three different random creatures trapped in this haunt. A spectral pool of blood forms beneath any creature knocked @UUID[Compendium.pf2e.conditionitems.Item.fBnFDH2MTzgFijKf]{Unconscious} by this haunt.</p>",
+            "stealth": "<p>(trained); @Check[occultism|dc:15] or @Check[religion|dc:15] to notice odd whispers.</p>",
+            "items": {
+                "action->Accusations": {
+                    "name": "Accusations",
+                    "description": "<p><strong>Trigger</strong> The PCs all enter the room</p><hr /><p><strong>Effect</strong> Accusations of crimes against the crown are whispered throughout the room in Elven. Each living creature in the room must attempt a @Check[will|dc:18] save or be @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 1}. The haunt then rolls initiative.</p>"
+                },
+                "strike-melee->Vengeful Judgment": {
+                    "name": "Vengeful Judgment",
+                    "description": "<p>Plus @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone} on a critical hit</p>"
+                }
+            }
+        },
+        "Talhindir's Grief": {
+            "name": "Talhindir's Grief",
+            "descriptionHazard": "<p>Gentle crying rises to become overwhelming wails. The fungal carvings begin to weep blood that pools around the pillars</p>",
+            "disable": "<p>@Check[performance|dc:17] (trained) to overpower the frightening cries with a greater sound or @Check[occultism|dc:15] or @Check[religion|dc:15] (trained) to ritually disrupt the haunting.</p>",
+            "reset": "<p>If the haunt is not dispersed, it resets after 1 day.</p>",
+            "stealth": "<p>(expert)</p>",
+            "items": {
+                "action->The Falling Tears": {
+                    "name": "The Falling Tears",
+                    "description": "<p><strong>Trigger</strong> A creature moves within 10 feet of the carving of Viore Ciobanu</p><hr /><p><strong>Effect</strong> The fungus statues weep blood, and their cries deal @Damage[(2d6+5)[mental]] damage to living creatures within the room (@Check[will|dc:17|basic|options:inflicts:frightened] save). On a failed save, creatures are also @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 1} (or @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 2} on a critical failure)</p>"
+                }
+            }
+        },
+        "The Scourge of Woodsedge": {
+            "name": "The Scourge of Woodsedge",
+            "speedsDetails": "bladed levitation",
+            "languagesDetails": "Cannot speak",
+            "hpDetails": "void healing",
+            "items": {
+                "strike-melee->Blade": {
+                    "name": "Blade"
+                },
+                "strike-melee->Throwing Blade": {
+                    "name": "Throwing Blade"
+                },
+                "action->Lifesense": {
+                    "name": "Lifesense",
+                    "description": "<p>The Scourge senses the vital essence of living creatures within range.</p><hr /><p>@Localize[PF2E.NPC.Abilities.Glossary.Lifesense]</p>"
+                },
+                "action->Frightful Presence": {
+                    "name": "Frightful Presence",
+                    "description": "<p>@Check[will|dc:36]</p><hr /><p>@Localize[PF2E.NPC.Abilities.Glossary.FrightfulPresence]</p><hr /><p><em>Note: A radius for this aura was not provided by Paizo</em></p>"
+                },
+                "action->Reactive Strike": {
+                    "name": "Reactive Strike"
+                },
+                "action->Void Healing": {
+                    "name": "Void Healing"
+                },
+                "action->Bladed Levitation": {
+                    "name": "Bladed Levitation",
+                    "description": "<p>The Scourge has a fly speed of 30 feet, but must end its turn within no more than 5 feet off the ground, otherwise it falls and takes damage as normal</p>"
+                },
+                "action->Final Execution": {
+                    "name": "Final Execution",
+                    "description": "<p>The scourge targets a @UUID[Compendium.pf2e.conditionitems.Item.6uEgoh53GbXuHpTF]{Paralyzed} creature with a blade melee Strike. A successful hit is automatically a critical hit and the target creature must succeed at a @Check[fortitude|dc:36] or become @UUID[Compendium.pf2e.conditionitems.Item.3uh1r86TzbQvosxv]{Doomed 1}. If the target is already doomed, they instead increased their doomed value by 1.</p>"
+                },
+                "action->Life Sap": {
+                    "name": "Life Sap",
+                    "description": "<p>A creature damaged by the Scourge's blade Strikes must succeed at a @Check[fortitude|dc:36] save or become @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 1}; if the target is already drained, they instead increased their drained value by 1, to a maximum of @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 3}. On a critical failure, the target is also @UUID[Compendium.pf2e.conditionitems.Item.6uEgoh53GbXuHpTF]{Paralyzed} until the end of the Scourge's next turn.</p>"
+                },
+                "action->To Shreds": {
+                    "name": "To Shreds",
+                    "description": "<p>The Scourge explodes into a whirling tornado of metal and blades, at the cost of briefly leaving its warshard core vulnerable. All creatures within a @Template[type:emanation|distance:20] must succeed at a @Check[reflex|dc:33] save or take @Damage[10d10[slashing],3d8[void]|options:area-damage] damage. The Scourge can't use To Shreds for [[/gmr 1d4 #rounds]]{1d4 rounds}.</p>\n<p>If the Scourge is targeted by a Reactive Strike as a result of using this action, it takes a \u20132 circumstance penalty to its AC; if the Reactive Strike disrupts this action, this penalty remains until the start of the Scourge's next turn.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.vaqiHzEewOKDx6rP]{Effect: To Shreds (AC Penalty)}</p>"
                 }
             }
         },
@@ -1302,6 +1639,65 @@
                 }
             }
         },
+        "Torn Trio": {
+            "name": "Torn Trio",
+            "blurb": "Variant weak torn quartet",
+            "languagesDetails": "can't speak any language",
+            "hpDetails": "void healing",
+            "items": {
+                "strike-melee->Limb": {
+                    "name": "Limb"
+                },
+                "action->Bound Limbs": {
+                    "name": "Bound Limbs",
+                    "description": "<p>A torn trio ordinarily has three severed limbs tethered to a central point by near-incorporeal ropes. A limb is essentially cut away from the central point and rendered nonfunctional each time the torn quartet loses 60 Hit Points (so at 120 Hit Points, the torn quartet has two functional limbs, at 60 Hit Points, it has one functional limb). Each functioning limb can @UUID[Compendium.pf2e.actionspf2e.Item.PMbdMWc2QroouFGD]{Grapple} separate creatures within reach, or multiple functioning limbs can Grapple the same creature; for each additional limb used to Grapple a creature, the @UUID[Compendium.pf2e.actionspf2e.Item.SkZAQRkLLkmBQNB9]{Escape} DC increases by 2.</p>"
+                },
+                "action->Reactive Strike (See Split Reactions)": {
+                    "name": "Reactive Strike (See Split Reactions)"
+                },
+                "action->Replacement Parts": {
+                    "name": "Replacement Parts",
+                    "description": "<p>A torn trio can spend 1 minute tearing apart the corpse of a humanoid creature that was killed within the last hour to regain 60 Hit Points and restore one of its nonfunctioning limbs. A torn trio can't have more than three limbs.</p>"
+                },
+                "action->Void Healing": {
+                    "name": "Void Healing"
+                },
+                "action->Flurry of Limbs": {
+                    "name": "Flurry of Limbs",
+                    "description": "<p>The torn trio makes a number of limb Strikes up to its number of functioning limbs, each against a different target. These attacks count toward the torn trio's multiple attack penalty, but the multiple attack penalty doesn't increase until after the torn trio makes all its attacks.</p>"
+                },
+                "action->Split Reactions": {
+                    "name": "Split Reactions",
+                    "description": "<p>A torn trio has a number of reactions per round equal to its number of still-functioning limbs, which it can use only to make Reactive Strikes. It can't use more than 1 reaction on the same triggering action, even if a creature leaves several squares within its reach, and the torn trio must use a different limb for each Reactive Strike it makes. Whenever one of the torn trio's limbs is rendered nonfunctional, the torn trio loses one of its reactions.</p>"
+                },
+                "action->Tear Asunder": {
+                    "name": "Tear Asunder",
+                    "description": "<p><strong>Requirements</strong> The torn trio has a creature grappled or @UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{Restrained} by at least two limbs</p><hr /><p><strong>Effect</strong> The creature takes @Damage[(5d6+2)[slashing]] damage for each limb currently grabbing or restraining it (maximum 15d6), with a @Check[fortitude|dc:30|basic] save. On a critical failure, the creature also loses a random body part, and one of the torn trio's limbs is now no longer grabbing or restraining it.</p>"
+                }
+            }
+        },
+        "Undead Hellknight": {
+            "name": "Undead Hellknight",
+            "hpDetails": "void healing",
+            "items": {
+                "action->Reactive Strike": {
+                    "name": "Reactive Strike"
+                },
+                "action->Shield Block": {
+                    "name": "Shield Block"
+                },
+                "action->Void Healing": {
+                    "name": "Void Healing"
+                },
+                "action->Damned Restoration": {
+                    "name": "Damned Restoration",
+                    "description": "<p><strong>Frequency</strong> once per hour</p><hr /><p><strong>Effect</strong> An undead target within reach regains @Damage[2d6[healing]] Hit Points and gains a +2 status bonus to damage rolls for 1 round.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.F4fWxN5WREaoWz19]{Effect: Damned Restoration}</p>"
+                },
+                "lore->Warfare Lore": {
+                    "name": "Warfare Lore"
+                }
+            }
+        },
         "Unruly Crowd": {
             "name": "Unruly Crowd",
             "descriptionHazard": "<p>Concerned citizens shout slogans about the dangers of dealing with Cheliax and throw bricks at Chelaxian sympathizers.</p>",
@@ -1347,6 +1743,30 @@
                 },
                 "strike-melee->Cobblestone": {
                     "name": "Cobblestone"
+                }
+            }
+        },
+        "Withered Leaf of Talhindir": {
+            "name": "Withered Leaf of Talhindir",
+            "hpDetails": "void healing",
+            "items": {
+                "strike-melee->Withered Touch": {
+                    "name": "Withered Touch"
+                },
+                "action->Light Vulnerability": {
+                    "name": "Light Vulnerability",
+                    "description": "<p>Attacks against the Leaf of Talhindir are treated as magical if made by a creature who is in magical light or with an object that is in magical light (such as from the @UUID[Compendium.pf2e.spells-srd.Item.WBmvzNDfpwka3qT4]{Light} spell).</p>"
+                },
+                "action->Void Healing": {
+                    "name": "Void Healing"
+                },
+                "action->Slink in Shadows": {
+                    "name": "Slink in Shadows",
+                    "description": "<p>The Leaf of Talhindir can [[/act hide]] or end its [[/act sneak]] in a creature's or object's shadow.</p>"
+                },
+                "action->Weight of Darkness": {
+                    "name": "Weight of Darkness",
+                    "description": "<p><strong>Requirements</strong> The Leaf of Talhindir made a successful Strike against a living creature with its withered touch on its previous action</p><hr /><p><strong>Effect</strong> The Leaf of Talhindir chains the soul of the creature. They must attempt a @Check[will|dc:15|options:inflicts:enfeebled] save. On a failure, the creature is @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 1}. This is cumulative with other enfeebled conditions from other Leaves of Talhindir or shadows, to a maximum of @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 4}. The enfeebled value from Weight of Darkness decreases by 1 every minute.</p>"
                 }
             }
         }

@@ -120,7 +120,7 @@
                 },
                 "action->Spellstrike": {
                     "name": "Spellstrike",
-                    "description": "<p>Arodeth channels a spell into a melee Strike to deliver a charged attack. She casts @UUID[Compendium.pf2e.spells-srd.Item.mAMEt4FFbdqoRnkN]{Void Warp}, @UUID[Compendium.pf2e.spells-srd.Item.r7ihOgKv19eJQnik]{Disintegrate}, or @UUID[Compendium.pf2e.spells-srd.Item.6DfLZBl8wKIV03Iq]{Ignition}. The effects of the spell don't occur immediately but are imbued into her attack instead. Arodeth makes a staff Strike, which gains the arcane trait. The spell is coupled with the attack, using Arodeth's attack roll to determine the effects of both the Strike and the spell. This counts as two attacks for her multiple attack penalty, but the penalty isn't applied until after she has completed the Spellstrike. After using Spellstrike, she can't do so again until she recharges this ability as a single action, which has the concentrate trait. She also recharges her Spellstrike when she casts runic impression or spinning staff.</p>"
+                    "description": "<p>Arodeth channels a spell into a melee Strike to deliver a charged attack. She casts @UUID[Compendium.pf2e.spells-srd.Item.mAMEt4FFbdqoRnkN]{Void Warp}, @UUID[Compendium.pf2e.spells-srd.Item.r7ihOgKv19eJQnik]{Disintegrate}, or @UUID[Compendium.pf2e.spells-srd.Item.6DfLZBl8wKIV03Iq]{Ignition}. The effects of the spell don't occur immediately but are imbued into her attack instead. Arodeth makes a staff Strike, which gains the arcane trait. The spell is coupled with the attack, using Arodeth's attack roll to determine the effects of both the Strike and the spell. This counts as two attacks for her multiple attack penalty, but the penalty isn't applied until after she has completed the Spellstrike. After using Spellstrike, she can't do so again until she recharges this ability as a single action, which has the concentrate trait. She also recharges her Spellstrike when she casts @UUID[Compendium.pf2e.spells-srd.Item.oOaEfsdVpgTXRhrY]{Runic Impression} or @UUID[Compendium.pf2e.spells-srd.Item.KAapTzGKJMbMQCL1]{Spinning Staff}.</p>"
                 },
                 "action->Twisting Tree": {
                     "name": "Twisting Tree",
@@ -265,7 +265,7 @@
                 },
                 "action->Swarming Bites": {
                     "name": "Swarming Bites",
-                    "description": "<p>Each enemy in the bhanyada swarm's space takes @Damage[2d6[bludgeoning]] damage (@Check[reflex|dc:30|basic]). On a failed save, a creature is also @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1} for 1 round.</p>"
+                    "description": "<p>Each enemy in the bhanyada swarm's space takes @Damage[2d6[bludgeoning]|options:area-damage] damage (@Check[reflex|dc:30|basic|options:area-effect,inflicts:slowed]). On a failed save, a creature is also @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1} for 1 round.</p>"
                 }
             }
         },
@@ -1112,50 +1112,6 @@
                 }
             }
         },
-        "Ferrugon": {
-            "name": "Ferrugon",
-            "allSavesBonus": "+1 status to all saves vs. magic",
-            "languagesDetails": "telepathy 100 feet",
-            "items": {
-                "spellcastingEntry->Divine Innate Spells": {
-                    "name": "Divine Innate Spells"
-                },
-                "spell->Dimension Door (At Will)": {
-                    "name": "Dimension Door (At Will)"
-                },
-                "strike-melee->Horn": {
-                    "name": "Horn"
-                },
-                "strike-melee->Claw": {
-                    "name": "Claw"
-                },
-                "strike-melee->Iron Feather": {
-                    "name": "Iron Feather"
-                },
-                "action->Telepathy 100 feet": {
-                    "name": "Telepathy 100 feet"
-                },
-                "action->+1 Status to All Saves vs. Magic": {
-                    "name": "+1 Status to All Saves vs. Magic"
-                },
-                "action->Metallic": {
-                    "name": "Metallic",
-                    "description": "<p>A ferrugon is a metallic creature and thus affected by effects such as @UUID[Compendium.pf2e.spells-srd.Item.0fYE64odlKqISzft]{Rusting Grasp}.</p>"
-                },
-                "action->Vainglorious Whispers": {
-                    "name": "Vainglorious Whispers",
-                    "description": "<p><strong>Trigger</strong> A non-devil creature within 30 feet of the ferrugon succeeds (but doesn't critically succeed) at an attack roll, skill check, or saving throw</p>\n<hr />\n<p><strong>Effect</strong> The ferrugon whispers subversive messages to the triggering creature, causing it to become overly confident in its abilities, while in fact it becomes less accomplished overall. The target must attempt a @Check[will|dc:32] save. On a failure, the target gains a +2 status bonus to saving throws against fear effects but also takes a \u20132 penalty to all attack rolls and skill checks for 1 hour. During this time, the victim can't benefit from @UUID[Compendium.pf2e.actionspf2e.Item.HCl3pzVefiv9ZKQW]{Aid} reactions, use healing effects on themselves, or use @UUID[Compendium.pf2e.actionspf2e.Item.ust1jJSCZQUhBZIz]{Take Cover} or Raise a Shield actions, as these actions seem unnecessary to the creature at this time. Similar defensive actions might not be available to the victim as well, at the GM's discretion. The target is then temporarily immune to Vainglorious Whispers for 24 hours.</p>"
-                },
-                "action->Ferrugon Tetanus": {
-                    "name": "Ferrugon Tetanus",
-                    "description": "<p><strong>Saving Throw</strong> @Check[fortitude|dc:32]</p>\n<p><strong>Onset</strong> [[/gmr 1d4 #Days]]{1d4 days}</p>\n<p><strong>Stage 1</strong> @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 1} (1 week)</p>\n<p><strong>Stage 2</strong> @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 2} and can't speak (1 day)</p>\n<p><strong>Stage 3</strong> @UUID[Compendium.pf2e.conditionitems.Item.6uEgoh53GbXuHpTF]{Paralyzed} (1 day)</p>\n<p><strong>Stage 4</strong> death</p>"
-                },
-                "action->Sunder Objects": {
-                    "name": "Sunder Objects",
-                    "description": "<p>When a ferrugon damages an item or structure, they deal an additional 2d8 damage to that item or structure.</p>"
-                }
-            }
-        },
         "Gegnir": {
             "name": "Gegnir",
             "publicNotes": "<p>Jotund trolls are gigantic, nine-headed horrors who prowl frigid moors, marshes, and wastelands, always alone and always enraged. While each of the jotund troll's nine heads possess their own brains and senses, they work much more in tandem than the dual-minded nature of the two-headed troll. Despite this, the heads often argue and bicker, particularly over which head gets to eat. The fact that all nine maws lead to the same shared stomach makes little difference in such culinary disagreements.</p>\n<p>Prevailing wisdom holds that the jotund troll represents a primordial, if not original, shape and design for the first trolls to plague the world, arising from a mythical realm in the Great Beyond known as Jotungard. This sprawling domain, said to be nestled in a remote reach of Elysium, is the legendary home of the deities of giant-kind. Whether the jotund troll was created in Jotungard to plague the Material Plane as punishment or challenge, or if it's merely an evocative legend told by scholars, is unknown. In any case, the jotund trolls themselves likely care little.</p>",
@@ -1622,71 +1578,6 @@
                 }
             }
         },
-        "Katpaskir": {
-            "name": "Katpaskir",
-            "publicNotes": "<p>Born of the souls of doomsayers and cult leaders who sought to undermine and unravel reality, katpaskirs are demons of nihilism and unmaking.</p>\n<h2>Rift Makers</h2>\n<p>Katpaskirs sense weaknesses in planar fabric. These demons worm their way into spaces between dimensions and break down the barriers. They leave holes aimed at causing chaos and dissolution. In this way, katpaskirs gnaw at reality, hoping to one day unravel it.</p>",
-            "allSavesBonus": "+1 status to all saves vs. magic",
-            "sensesDetails": "warp sense",
-            "languagesDetails": "telepathy 100 feet",
-            "items": {
-                "spellcastingEntry->Divine Innate Spells": {
-                    "name": "Divine Innate Spells"
-                },
-                "spell->Prying Eye (At Will)": {
-                    "name": "Prying Eye (At Will)"
-                },
-                "spell->Summon Fiend (Demons Only)": {
-                    "name": "Summon Fiend (Demons Only)"
-                },
-                "spell->Dimension Door (At Will)": {
-                    "name": "Dimension Door (At Will)"
-                },
-                "spell->Dimensional Anchor (At Will)": {
-                    "name": "Dimensional Anchor (At Will)"
-                },
-                "spell->Freedom of Movement (Constant)": {
-                    "name": "Freedom of Movement (Constant)"
-                },
-                "spell->See Invisibility (Constant)": {
-                    "name": "See Invisibility (Constant)"
-                },
-                "strike-melee->Claw": {
-                    "name": "Claw"
-                },
-                "strike-melee->Talon": {
-                    "name": "Talon"
-                },
-                "action->Telepathy 100 feet": {
-                    "name": "Telepathy 100 feet"
-                },
-                "action->Constant Spells": {
-                    "name": "Constant Spells"
-                },
-                "action->+1 Status to All Saves vs. Magic": {
-                    "name": "+1 Status to All Saves vs. Magic"
-                },
-                "action->Breach Planar Wards": {
-                    "name": "Breach Planar Wards",
-                    "description": "<p><strong>Trigger</strong> An effect (save only for those of items with the artifact trait) attempts to prevent the katpaskir from using a teleportation effect or from casting @UUID[Compendium.pf2e.spells-srd.Item.29ytKctjg7qSW2ff]{Summon Fiend}</p>\n<hr />\n<p><strong>Effect</strong> The katpaskir attempts to counteract the triggering effect (counteract modifier of [[/r 1d20+29 #Counteract]]{+29}).</p>"
-                },
-                "action->Distortion Field": {
-                    "name": "Distortion Field",
-                    "description": "<p>30 feet. Reality bends and warps on the level of all senses without displacing the katpaskir's actual location. Creatures of the katpaskir's choice who start their turn in the aura must succeed at a @Check[will|dc:37] save or treat the area as greater difficult terrain and uneven ground (DC 20). A creature who succeeds still treats the area as difficult terrain. For such creatures, the distance through the aura is doubled for determining range penalty.</p>"
-                },
-                "action->Mirrored Summons": {
-                    "name": "Mirrored Summons",
-                    "description": "<p><strong>Trigger</strong> A creature within 30 feet that the katpaskir is aware of uses magic to summon or otherwise conjure a good-aligned creature</p>\n<hr />\n<p><strong>Effect</strong> The katpaskir casts @UUID[Compendium.pf2e.spells-srd.Item.29ytKctjg7qSW2ff]{Summon Fiend}, regaining the daily ability to do so if needed. This effect is automatically sustained as long as the triggering summoning is sustained, for up to 1 minute.</p>"
-                },
-                "action->Warp Sense": {
-                    "name": "Warp Sense",
-                    "description": "<p>The katpaskir senses changes in the planar fabric within 1 mile, including any teleportation effect, sensing the direction and distance to the disturbance. If it senses such a disturbance within 500 feet, the katpaskir can cast @UUID[Compendium.pf2e.spells-srd.Item.Ek5XI0aEdZhBgm21]{Scouting Eye} to observe the area without needing line of sight to the location.</p>"
-                },
-                "action->Dimensional Ambush": {
-                    "name": "Dimensional Ambush",
-                    "description": "<p>The katpaskir casts @UUID[Compendium.pf2e.spells-srd.Item.VlNcjmYyu95vOUe8]{Translocate}, then makes a melee Strike that deals three extra dice of damage. This Strike counts as two attacks when calculating the katpaskir's multiple attack penalty.</p>"
-                }
-            }
-        },
         "Maggot Pit": {
             "name": "Maggot Pit",
             "descriptionHazard": "<p>Countless human-faced, fanged maggots wriggle and squirm in this chamber.</p>",
@@ -2076,66 +1967,6 @@
                 }
             }
         },
-        "Obcisidaemon": {
-            "name": "Obcisidaemon",
-            "publicNotes": "<p>Obcisidaemons (known to some as obliteration daemons) care only for the brutality and violence that conflict brings.</p>\n<h2>Soul Hoarding</h2>\n<p>Obcisidaemons carry some souls for months or even years at a time, choosing never to consume them, even when doing so might grant an advantage in combat.</p>",
-            "allSavesBonus": "+1 status to all saves vs. magic",
-            "languagesDetails": "telepathy 100 feet",
-            "items": {
-                "spellcastingEntry->Divine Innate Spells": {
-                    "name": "Divine Innate Spells"
-                },
-                "spell->True Seeing (Constant)": {
-                    "name": "True Seeing (Constant)"
-                },
-                "spell->Dimension Door (At Will)": {
-                    "name": "Dimension Door (At Will)"
-                },
-                "spell->Detect Alignment (At Will, Good Only)": {
-                    "name": "Detect Alignment (At Will, Good Only)"
-                },
-                "strike-melee->Halberd": {
-                    "name": "Halberd"
-                },
-                "strike-melee->Jaws": {
-                    "name": "Jaws"
-                },
-                "action->Telepathy 100 feet": {
-                    "name": "Telepathy 100 feet"
-                },
-                "action->Cloak of Souls": {
-                    "name": "Cloak of Souls",
-                    "description": "<p>An obcisidaemon is shrouded at all times in a cloak of captured souls. It can hold a number of souls equal to the daemon's Charisma modifier. Destroying the daemon frees the souls, though this doesn't return the deceased creatures to life. A creature whose soul is trapped within this cloak can't be resurrected except by a 9th-rank @UUID[Compendium.pf2e.spells-srd.Item.kqhPt9344UkcGVYO]{Resurrect} ritual or similarly powerful magic.</p>"
-                },
-                "action->Constant Spells": {
-                    "name": "Constant Spells"
-                },
-                "action->+1 Status to All Saves vs. Magic": {
-                    "name": "+1 Status to All Saves vs. Magic"
-                },
-                "action->Attack of Opportunity": {
-                    "name": "Attack of Opportunity"
-                },
-                "action->Scorched Earth": {
-                    "name": "Scorched Earth",
-                    "description": "<p>60 feet. Any creature who dies within the aura and isn't drawn into the obcisidaemon's Cloak of Souls via Inherit Soul must attempt a @Check[fortitude|dc:38] save. On a failure, the creature's body (but not its gear) is immediately reduced to a fine smear of ashes.</p>"
-                },
-                "action->Consume Soul": {
-                    "name": "Consume Soul",
-                    "description": "<p>The obcisidaemon consumes a soul from its cloak to gain one of the following effects. A consumed soul in this way can't be resurrected except by @UUID[Compendium.pf2e.spells-srd.Item.6dDtGIUerazSHIOu]{Wish} or a similarly powerful effect.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.YOH7YsdlsLzlMu69]{Effect: Consume Soul}</p>\n<p><em>Empower Spell</em> The obcisidaemon gains a +2 status bonus to its spell DCs and spell attack rolls until the end of its next turn.</p>\n<p><em>Empower Weapon</em> The obcisidaemon's weapon gains the effects of a greater flaming, greater frost, greater shock, or wounding rune until the end of its next turn.</p>\n<p><em>Healing</em> The daemon gains the benefit of a two-action, 8th-rank @UUID[Compendium.pf2e.spells-srd.Item.rfZpqmj0AIIdkVIs]{Heal} spell (@Damage[(8d8+64)[vitality,healing]|shortLabel:true]).</p>"
-                },
-                "action->Inherit Soul": {
-                    "name": "Inherit Soul",
-                    "description": "<p><strong>Trigger</strong> The obcisidaemon slays a creature</p>\n<hr />\n<p><strong>Effect</strong> The obcisidaemon attempts to draw the creature's soul into its cloak of souls. The triggering creature must attempt a @Check[fortitude|dc:38] save. On a failure, its soul is consumed and added to the cloak of souls. If the obcisidaemon's cloak can't hold any more souls, the daemon can release one of the souls as a free action; otherwise, the soul isn't absorbed.</p>"
-                },
-                "action->Grab": {
-                    "name": "Grab"
-                },
-                "lore->Warfare Lore": {
-                    "name": "Warfare Lore"
-                }
-            }
-        },
         "Oppali": {
             "name": "Oppali",
             "publicNotes": "<p>An oppali is a tenacious, twisting vine with white, trumpet-shaped flowers that grows in temperate and tropical regions. Stories passed down through generations refer to the oppali as a \"bad luck vine\" and warn against letting one take over a copse or garden, lest \"your luck drain away like water down a hole.\" This folklore contains more wisdom than most farmers or settlers realize.</p>\n<p>Oppalis are usually 30 feet long, but they twist and coil on themselves so much that they occupy a space not much larger than a horse.</p>\n<h3>Oppali Trumpets</h3>\n<p>An oppali's tough trumpets are useful for creating thunderstones. Incorporating crushed oppali trumpet into crafting the thunderstone grants a +2 item bonus to the Crafting check, provided that this material makes up at least half of the raw materials used for the thunderstone. With a successful @Check[survival|dc:27] check, a character harvests [[/r 5d20]] gp of this raw material from a defeated oppali (double on a critical success, half on a failure, and none at all from a critical failure).</p>",
@@ -2167,67 +1998,6 @@
             "skills": {
                 "stealth": {
                     "label": "in forests or jungles"
-                }
-            }
-        },
-        "Phasmadaemon": {
-            "name": "Phasmadaemon",
-            "publicNotes": "<p>Known also as terror daemons, the horrifying phasmadaemons make use of illusions and their own frightening appearance (that of a serpent with a bony tail, a horned crocodilian skull for a head, and several insectile pincers) to strike fear into the hearts of others. They represent deaths brought about by fright.</p>\n<h2>Fearful Machinations</h2>\n<p>While daemons don't typically require food, phasmadaemons seem intent on feeding on the emotions, and especially the fears, of mortals. Some believe that the life force and emotions of creatures serves as the fuel for a phasmadaemon's magic, while others believe that phasmadaemons simply enjoy facing a mortal eye-to-eye while feeding, delighting in the fear in their prey's final moments.</p>",
-            "languagesDetails": "telepathy 100 feet",
-            "items": {
-                "spellcastingEntry->Divine Innate Spells": {
-                    "name": "Divine Innate Spells"
-                },
-                "spell->True Seeing (Constant)": {
-                    "name": "True Seeing (Constant)"
-                },
-                "spell->Dimension Door (At Will)": {
-                    "name": "Dimension Door (At Will)"
-                },
-                "spell->Nightmare (At Will)": {
-                    "name": "Nightmare (At Will)"
-                },
-                "spell->Detect Alignment (At Will, Good Only)": {
-                    "name": "Detect Alignment (At Will, Good Only)"
-                },
-                "strike-melee->Jaws": {
-                    "name": "Jaws"
-                },
-                "strike-melee->Claw": {
-                    "name": "Claw"
-                },
-                "action->Telepathy 100 feet": {
-                    "name": "Telepathy 100 feet"
-                },
-                "action->Constant Spells": {
-                    "name": "Constant Spells"
-                },
-                "action->Frightful Presence": {
-                    "name": "Frightful Presence",
-                    "description": "<p>60 feet @Check[will|dc:35]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.FrightfulPresence]</p>"
-                },
-                "action->Unending Terror": {
-                    "name": "Unending Terror",
-                    "description": "<p>Escaping fear near a phasmadaemon is no simple task. Creatures don't automatically reduce their @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened} condition while they are within the phasmadaemon's Frightful Presence aura. Instead, they must attempt a Will save at the end of their turn against the DC of the effect that caused the condition. On a success, the creature's frightened condition is reduced by 1.</p>"
-                },
-                "action->Constrict": {
-                    "name": "Constrict",
-                    "description": "<p>@Damage[(3d10+6)[bludgeoning]], @Check[fortitude|dc:35|basic]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Constrict]</p>"
-                },
-                "action->Consume Fear": {
-                    "name": "Consume Fear",
-                    "description": "<p><strong>Requirements</strong> The phasmadaemon has a creature @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed}</p>\n<hr />\n<p><strong>Effect</strong> The phasmadaemon feeds on the creature's mortality and innate terror, dealing @Damage[6d8[mental]] damage. The creature must attempt a @Check[will|dc:38] save.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature takes no damage and manages to break free from the phasmadaemon's grab.</p>\n<p><strong>Success</strong> The creature takes half damage.</p>\n<p><strong>Failure</strong> The creature takes full damage and increases their frightened conditioned by 1, to a maximum of @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 4}.</p>\n<p><strong>Critical Failure</strong> The creature takes double damage and increases their frightened condition by 2, to a maximum of frightened 4. If the creature is already frightened 4, it must attempt a @Check[fortitude|dc:38] saving throw. If it fails, it is reduced to 0 Hit Points and dies. This effect has the death and incapacitation traits.</p>"
-                },
-                "action->Inescapable Form": {
-                    "name": "Inescapable Form",
-                    "description": "<p>The phasmadaemon can Squeeze through tight spaces as if it were a Small creature. While Squeezing, it can move at its full Speed. The phasmadaemon can even Squeeze through spaces that typically fit only a Tiny creature, but does so at the standard speed for Squeezing.</p>"
-                },
-                "action->Rend": {
-                    "name": "Rend",
-                    "description": "<p>Claw</p>\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Rend]</p>"
-                },
-                "action->Grab": {
-                    "name": "Grab"
                 }
             }
         },

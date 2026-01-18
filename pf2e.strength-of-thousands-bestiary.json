@@ -419,7 +419,7 @@
                 },
                 "action->Swarming Bites": {
                     "name": "Swarming Bites",
-                    "description": "<p>Each enemy in the swarm's space takes @Damage[7d8[piercing]] damage (@Check[fortitude|dc:39|basic]). A creature that fails its save against Swarming Bites becomes @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 1} for 1 round (1 minute on a critical failure). If the creature attempts a concentrate or manipulate action while affected, it must succeed at a @Check[flat|dc:5] or the action is lost; roll the check after spending the action, but before any effects are applied.</p>"
+                    "description": "<p>Each enemy in the swarm's space takes @Damage[7d8[piercing]|options:area-damage] damage (@Check[fortitude|dc:39|basic|options:area-effect,inflicts:clumsy]). A creature that fails its save against Swarming Bites becomes @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 1} for 1 round (1 minute on a critical failure). If the creature attempts a concentrate or manipulate action while affected, it must succeed at a @Check[flat|dc:5] or the action is lost; roll the check after spending the action, but before any effects are applied.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.0aRm0b55015XPj7Y]{Effect: Swarming Bites}</p>"
                 }
             }
         },
@@ -2253,111 +2253,6 @@
                 }
             }
         },
-        "Graveknight Captain": {
-            "name": "Graveknight Captain",
-            "hpDetails": "void healing, rejuvination",
-            "items": {
-                "weapon->Shock Warhammer": {
-                    "name": "Shock Warhammer",
-                    "description": "<p>This weapon has a wooden shaft ending in a large, heavy metal head. The head of the hammer might be single-sided or double-sided, but it's always capable of delivering powerful bludgeoning blows.</p>"
-                },
-                "shield->Graveknight's Shield": {
-                    "name": "Graveknight's Shield",
-                    "description": "<p>With a superior design and excellent craftsmanship, this steel shield has higher Hardness than its non-magical counterparts, making it harder to break and destroy.</p>\n<p>The shield has Hardness 8, HP 64, and BT 32.</p>"
-                },
-                "strike-melee->Fist": {
-                    "name": "Fist"
-                },
-                "action->Attack of Opportunity": {
-                    "name": "Attack of Opportunity"
-                },
-                "action->Graveknight's Shield": {
-                    "name": "Graveknight's Shield",
-                    "description": "<p>The graveknight's curse extends to their shield, or the graveknight's armor uses a portion of itself to produce a shield.</p>\n<p>The graveknight has a shield that uses the statistics of a <em>@UUID[Compendium.pf2e.equipment-srd.Item.f9ygr5Cjrmop8LWV]{Sturdy Shield (Minor)}</em>.</p>\n<p>The shield is quasi-independent of the graveknight and automatically protects the graveknight from harm. When the shield is raised, it automatically uses Shield Block to reduce the damage of the first attack against the graveknight each round without the graveknight needing to spend their reaction to do so.</p>\n<p>The shield automatically rejuvenates with the rest of the graveknight and must be destroyed in the same manner as the graveknight's armor.</p>"
-                },
-                "action->Rejuvenation": {
-                    "name": "Rejuvenation",
-                    "description": "<p>When a graveknight is destroyed, its armor rebuilds its body over the course of [[/gmr 1d10 #days]]{1d10 days}-or more quickly if the armor is worn by a living host. If the body is destroyed before then, the process restarts.</p>\n<p>A graveknight can only be permanently destroyed by obliterating its armor (such as with @UUID[Compendium.pf2e.spells-srd.Item.r7ihOgKv19eJQnik]{Disintegrate}), transporting it to the Forge of Creation, or throwing it into the heart of a volcano.</p>"
-                },
-                "action->Void Healing": {
-                    "name": "Void Healing"
-                },
-                "action->Devastating Blast": {
-                    "name": "Devastating Blast",
-                    "description": "<p>The graveknight unleashes a @Template[cone|distance:30] of energy. Creatures in the area take @Damage[4d12[electricity]|options:area-damage] damage (@Check[reflex|dc:24|basic|options:area-effect] save).</p>\n<p>The graveknight can use this ability once every [[/gmr 1d4 #Recharge Devastating Blast]]{1d4 rounds}.</p>"
-                },
-                "action->Graveknight's Curse": {
-                    "name": "Graveknight's Curse",
-                    "description": "<p>This curse affects anyone who wears a graveknight's armor for at least 1 hour.</p>\n<hr />\n<p><strong>Saving Throw</strong> @Check[will|dc:24] save</p>\n<p><strong>Onset</strong> 1 hour</p>\n<p><strong>Stage 1</strong> @UUID[Compendium.pf2e.conditionitems.Item.3uh1r86TzbQvosxv]{Doomed 1} and cannot remove the armor (1 day)</p>\n<p><strong>Stage 2</strong> @UUID[Compendium.pf2e.conditionitems.Item.3uh1r86TzbQvosxv]{Doomed 2}, speed penalty of -10 feet, and cannot remove the armor (1 day)</p>\n<p><strong>Stage 3</strong> dies and transforms into the armor's graveknight.</p>"
-                },
-                "action->Weapon Master": {
-                    "name": "Weapon Master",
-                    "description": "<p>The graveknight has access to the critical specialization effects of any weapons it wields.</p>"
-                },
-                "lore->Warfare Lore": {
-                    "name": "Warfare Lore"
-                }
-            }
-        },
-        "Graveknight Champion": {
-            "name": "Graveknight Champion",
-            "hpDetails": "void healing, rejuvenation",
-            "items": {
-                "spellcastingEntry->Innate Divine Spells": {
-                    "name": "Innate Divine Spells"
-                },
-                "weapon->Greater Flaming Composite Shortbow": {
-                    "name": "Greater Flaming Composite Shortbow",
-                    "description": "<p>This shortbow is made from horn, wood, and sinew laminated together to increase the power of its pull and the force of its projectile. Its compact size and power make it a favorite of mounted archers. Any time an ability is specifically restricted to a shortbow, it also applies to composite shortbows unless otherwise stated.</p>"
-                },
-                "weapon->Greater Flaming Greatpick": {
-                    "name": "Greater Flaming Greatpick",
-                    "description": "<p>This pick has a longer handle and broader head than a regular pick. It is too heavy to wield in one hand.</p>"
-                },
-                "strike-melee->Greatpick": {
-                    "name": "Greatpick"
-                },
-                "strike-melee->Fist": {
-                    "name": "Fist"
-                },
-                "strike-melee->Composite Shortbow": {
-                    "name": "Composite Shortbow"
-                },
-                "action->Attack of Opportunity": {
-                    "name": "Attack of Opportunity"
-                },
-                "action->Clutching Armor": {
-                    "name": "Clutching Armor",
-                    "description": "<p><strong>Trigger</strong> A creature attempts to move away from the graveknight</p>\n<hr />\n<p><strong>Effect</strong> The graveknight's armor animates and attempts to Grab the triggering creature. It makes an Athletics check to @UUID[Compendium.pf2e.actionspf2e.Item.PMbdMWc2QroouFGD]{Grapple} using the graveknight's Athletics modifier - 2. The armor can continue to Grapple the creature normally.</p>\n<p>Since the armor is grappling the creature, the graveknight doesn't need a free hand to do so.</p>"
-                },
-                "action->Rejuvenation": {
-                    "name": "Rejuvenation",
-                    "description": "<p>When a graveknight is destroyed, its armor rebuilds its body over the course of [[/gmr 1d10 #days]]{1d10 days}-or more quickly if the armor is worn by a living host. If the body is destroyed before then, the process restarts.</p>\n<p>A graveknight can only be permanently destroyed by obliterating its armor (such as with @UUID[Compendium.pf2e.spells-srd.Item.r7ihOgKv19eJQnik]{Disintegrate}), transporting it to the Forge of Creation, or throwing it into the heart of a volcano.</p>"
-                },
-                "action->Void Healing": {
-                    "name": "Void Healing"
-                },
-                "action->Channel Magic": {
-                    "name": "Channel Magic",
-                    "description": "<p>The graveknight redirects magical energies through its armor, allowing it to deliver magic through an attack.</p>\n<p>The graveknight Casts a Spell that takes 1 or 2 actions to cast and requires a spell attack roll. The effects of the spell don't occur immediately but are imbued into an attack instead. The graveknight then makes a melee Strike with a weapon or unarmed attack. The spell is coupled with the attack, using the attack roll result to determine the effects of both the Strike and the spell.</p>\n<p>This counts as two attacks for the graveknight's multiple attack penalty but doesn't apply the penalty until after it's completed Channeling Magic.</p>\n<p>The graveknight can't use Channel Magic again for [[/gmr 1d4 #Recharge Channel Magic]]{1d4 rounds}.</p>"
-                },
-                "action->Devastating Blast": {
-                    "name": "Devastating Blast",
-                    "description": "<p>The graveknight unleashes a @Template[cone|distance:30] of energy. Creatures in the area take @Damage[8d12[fire]|options:area-damage] damage (@Check[reflex|dc:36|basic|options:area-effect] save).</p>\n<p>The graveknight can use this ability once every [[/gmr 1d4 #Recharge Devastating Blast]]{1d4 rounds}.</p>"
-                },
-                "action->Graveknight's Curse": {
-                    "name": "Graveknight's Curse",
-                    "description": "<p>This curse affects anyone who wears a graveknight's armor for at least 1 hour.</p>\n<hr />\n<p><strong>Saving Throw</strong> @Check[will|dc:36] save</p>\n<p><strong>Onset</strong> 1 hour</p>\n<p><strong>Stage 1</strong> @UUID[Compendium.pf2e.conditionitems.Item.3uh1r86TzbQvosxv]{Doomed 1} and cannot remove the armor (1 day)</p>\n<p><strong>Stage 2</strong> @UUID[Compendium.pf2e.conditionitems.Item.3uh1r86TzbQvosxv]{Doomed 2}, speed penalty of -10 feet, and cannot remove the armor (1 day)</p>\n<p><strong>Stage 3</strong> dies and transforms into the armor's graveknight.</p>"
-                },
-                "action->Weapon Master": {
-                    "name": "Weapon Master",
-                    "description": "<p>The graveknight has access to the critical specialization effects of any weapons it wields.</p>"
-                },
-                "lore-><Deity> Lore": {
-                    "name": "<Deity> Lore"
-                }
-            }
-        },
         "Great Grodair": {
             "name": "Great Grodair",
             "items": {
@@ -2640,7 +2535,7 @@
                 },
                 "action->Breath Weapon": {
                     "name": "Breath Weapon",
-                    "description": "<p>The i'iko dragon breathes a spray of jagged glass shards that deals @Damage[7d6[piercing]|options:area-damage] damage in a @Template[cone|distance:15] (@Check[reflex|dc:24|basic|options:area-effect] save). They can't use Breath Weapon again for [[/gmr 1d4 #round]]{1d4 rounds}.</p>"
+                    "description": "<p>The i'iko dragon breathes a spray of jagged glass shards that deals @Damage[7d6[piercing]|options:area-damage] damage in a @Template[cone|distance:15] (@Check[reflex|dc:24|basic|options:area-effect] save). They can't use Breath Weapon again for [[/gmr 1d4 #Recharge Breath Weapon]]{1d4 rounds}.</p>"
                 },
                 "action->Cunning Capsize": {
                     "name": "Cunning Capsize",
@@ -2905,7 +2800,7 @@
                 },
                 "action->Swarming Bites": {
                     "name": "Swarming Bites",
-                    "description": "<p>Each enemy in the karumzek swarm's space takes @Damage[2d6[piercing]] damage (@Check[reflex|dc:27|basic] save) plus karumzek venom.</p>"
+                    "description": "<p>Each enemy in the karumzek swarm's space takes @Damage[2d6[piercing]|options:area-damage] damage (@Check[reflex|dc:27|basic|options:area-effect] save) plus karumzek venom.</p>"
                 }
             }
         },
@@ -3008,7 +2903,7 @@
                 },
                 "action->Swarming Bites": {
                     "name": "Swarming Bites",
-                    "description": "<p>While a creature is taking persistent piercing damage from the King of Biting Ants's tendril Strike or Squirming Embrace, or while within a @UUID[Compendium.pf2e.spells-srd.Item.jBGAYmR0BkkbpJvG]{Visions of Danger} area that it has not disbelieved, it is also @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 1}.</p>\n<p>If the creature attempts a concentrate or manipulate action while affected, it must succeed at a @Check[flat|dc:5] or the action is lost; roll the check after spending the action, but before any effects are applied.</p>"
+                    "description": "<p>While a creature is taking persistent piercing damage from the King of Biting Ants's tendril Strike or Squirming Embrace, or while within a @UUID[Compendium.pf2e.spells-srd.Item.jBGAYmR0BkkbpJvG]{Visions of Danger} area that it has not disbelieved, it is also @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 1}.</p>\n<p>If the creature attempts a concentrate or manipulate action while affected, it must succeed at a @Check[flat|dc:5] or the action is lost; roll the check after spending the action, but before any effects are applied.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.0aRm0b55015XPj7Y]{Effect: Swarming Bites}</p>"
                 }
             }
         },
@@ -3249,7 +3144,7 @@
                 },
                 "action->Beam of the Seven Suns": {
                     "name": "Beam of the Seven Suns",
-                    "description": "<p>The sun-spire collects solar energy and uses the energy to create a deadly beam of fire. It fires the beam in a @Template[line|distance:120], dealing @Damage[11d8[fire]|options:area-damage] damage to all creatures in the line (@Check[reflex|dc:33|basic|options:area-effect] save). The concentrated beam ignites everything in its path, including the air, creating a wall of burning flame along the line that continues to burn until the end of the sun-spire's next turn. This wall has the effects of a 5th-rank @UUID[Compendium.pf2e.spells-srd.Item.IarZrgCeaiUqOuRu]{Wall of Fire} spell, dealing @Damage[5d6[fire]|options:area-damage] damage to any creature that crosses the wall or occupies the wall's area at the start of its turn. The sun-spire can't use the Beam of the Seven Suns again for [[/gmr 1d4 #rounds]]{1d4 rounds}, although rounds it's not in sunlight don't count toward this number.</p>"
+                    "description": "<p>The sun-spire collects solar energy and uses the energy to create a deadly beam of fire. It fires the beam in a @Template[line|distance:120], dealing @Damage[11d8[fire]|options:area-damage] damage to all creatures in the line (@Check[reflex|dc:33|basic|options:area-effect] save). The concentrated beam ignites everything in its path, including the air, creating a wall of burning flame along the line that continues to burn until the end of the sun-spire's next turn. This wall has the effects of a 5th-rank @UUID[Compendium.pf2e.spells-srd.Item.IarZrgCeaiUqOuRu]{Wall of Fire} spell, dealing @Damage[5d6[fire]|options:area-damage] damage to any creature that crosses the wall or occupies the wall's area at the start of its turn. The sun-spire can't use the Beam of the Seven Suns again for [[/gmr 1d4 #Recharge Beam of the Seven Suns]]{1d4 rounds}, although rounds it's not in sunlight don't count toward this number.</p>"
                 },
                 "action->Trample": {
                     "name": "Trample",
@@ -4457,7 +4352,7 @@
                 },
                 "action->Swarming Bites": {
                     "name": "Swarming Bites",
-                    "description": "<p>Each enemy in the silverfish swarm's space takes @Damage[1d4[piercing]] damage (@Check[fortitude|dc:14|basic|traits:swarm] save). A creature that fails its save is @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 1}.</p>"
+                    "description": "<p>Each enemy in the silverfish swarm's space takes @Damage[1d4[piercing]|options:area-damage] damage (@Check[fortitude|dc:14|basic|options:area-effect,inflicts:sickened] save). A creature that fails its save is @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 1}.</p>"
                 }
             }
         },
@@ -4595,7 +4490,7 @@
                 },
                 "action->Failed Ravener": {
                     "name": "Failed Ravener",
-                    "description": "<p>Sparkeater has the same statistics as a normal @UUID[Compendium.pf2e.pathfinder-bestiary-2.Actor.Yv0005Vym1peVKHq]{Ravener Husk} but is Large instead of Gargantuan. His melee Strikes have a reach of only 5 feet, and he lacks the Ravenous Repast ability, as he was never a ravener in the first place.</p>"
+                    "description": "<p>Sparkeater has the same statistics as a normal @UUID[Compendium.pf2e.pathfinder-monster-core-2.Actor.OK7Gl2rBDDBvICvh]{Ravener Husk} but is Large instead of Gargantuan. His melee Strikes have a reach of only 5 feet, and he lacks the Ravenous Repast ability, as he was never a ravener in the first place.</p>"
                 },
                 "action->Soulsense 60 feet": {
                     "name": "Soulsense 60 feet",
