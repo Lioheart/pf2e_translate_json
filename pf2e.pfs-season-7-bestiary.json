@@ -1,6 +1,7 @@
 {
     "label": "Pfs-Season-7-Bestiary",
     "folders": {
+        "Quests": "Quests",
         "7-01": "7-01",
         "7-02": "7-02",
         "7-03": "7-03",
@@ -610,6 +611,42 @@
                 "action->Flames of Caina": {
                     "name": "Flames of Caina",
                     "description": "<p><strong>Trigger</strong> A living creature enters the area</p><hr /><p><strong>Effect</strong> Shadows roil in the brazier. It casts @UUID[Compendium.pf2e.spells-srd.Item.4GE2ZdODgIQtg51c]{Darkness} on itself, and then rolls initiative.</p>"
+                }
+            }
+        },
+        "Kalagemmon, Decayed Cyclops": {
+            "name": "Kalagemmon, Decayed Cyclops",
+            "hpDetails": "void healing",
+            "items": {
+                "spellcastingEntry->Occult Prepared Spells": {
+                    "name": "Occult Prepared Spells"
+                },
+                "spellcastingEntry->Occult Focus Spells": {
+                    "name": "Occult Focus Spells"
+                },
+                "strike-melee->Morningstar": {
+                    "name": "Morningstar"
+                },
+                "action->Void Healing": {
+                    "name": "Void Healing"
+                }
+            }
+        },
+        "Kalagemmon, Decayed Resentment Witch": {
+            "name": "Kalagemmon, Decayed Resentment Witch",
+            "hpDetails": "void healing",
+            "items": {
+                "spellcastingEntry->Occult Prepared Spells": {
+                    "name": "Occult Prepared Spells"
+                },
+                "spellcastingEntry->Occult Focus Spells": {
+                    "name": "Occult Focus Spells"
+                },
+                "strike-melee->Morningstar": {
+                    "name": "Morningstar"
+                },
+                "action->Void Healing": {
+                    "name": "Void Healing"
                 }
             }
         },
@@ -1380,6 +1417,125 @@
                 "action->Weight of Darkness": {
                     "name": "Weight of Darkness",
                     "description": "<p><strong>Requirements</strong> The Leaf of Talhindir made a successful Strike against a living creature with its withered touch on its previous action</p><hr /><p><strong>Effect</strong> The Leaf of Talhindir chains the soul of the creature. They must attempt a @Check[will|dc:17|options:inflicts:enfeebled] save. On a failure, the creature is @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 1}. This is cumulative with other enfeebled conditions from other Leaves of Talhindir or shadows, to a maximum of @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 4}. The enfeebled value from Weight of Darkness decreases by 1 every minute.</p>"
+                }
+            }
+        },
+        "Skeleton Adept": {
+            "name": "Skeleton Adept",
+            "publicNotes": "<p>Adepts have unlocked only the most minor of occult mysteries. A few are chosen by accomplished practitioners for further training.</p><hr /><p>Hidden secrets and occult powers have an irresistible lure for many. Since the majority of these NPCs are spellcasters, consider using alternative spell lists to adjust their themes.</p>",
+            "hpDetails": "void healing",
+            "items": {
+                "spellcastingEntry->Occult Spells Known": {
+                    "name": "Occult Spells Known"
+                },
+                "equipment->Journal": {
+                    "name": "Journal"
+                },
+                "equipment->Robes": {
+                    "name": "Robes"
+                },
+                "equipment->Scroll Case": {
+                    "name": "Scroll Case"
+                },
+                "strike-melee->Fist": {
+                    "name": "Fist"
+                },
+                "strike-ranged->Journal": {
+                    "name": "Journal"
+                },
+                "action->Collapse": {
+                    "name": "Collapse",
+                    "description": "<p><strong>Trigger</strong> The skeleton is critically hit.</p>\n<hr />\n<p><strong>Effect</strong> The skeleton collapses into a pile of bones and the attack deals only normal damage. The skeleton can reform in a standing position as an action, but until it does, it is @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Immobilized} and @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard}.</p>"
+                },
+                "action->Void Healing": {
+                    "name": "Void Healing"
+                },
+                "action->Focused Thinker": {
+                    "name": "Focused Thinker",
+                    "description": "<p>The adept concentrates to muster knowledge and wisdom. While focusing, they gain a +2 status bonus to checks to @UUID[Compendium.pf2e.actionspf2e.Item.1OagaWtBpVXExToo]{Recall Knowledge}, but take a \u20132 penalty to Perception. They can Dismiss this focused state.</p>"
+                },
+                "lore->Scribing Lore": {
+                    "name": "Scribing Lore"
+                }
+            }
+        },
+        "Skeleton Coven Aspirant": {
+            "name": "Skeleton Coven Aspirant",
+            "publicNotes": "<p>Only the foolish would bring themselves to the attention of hags, but some aspirants strive to join a hag coven out of a desire for power or companionship.</p><hr /><p>Hidden secrets and occult powers have an irresistible lure for many. Since the majority of these NPCs are spellcasters, consider using alternative spell lists to adjust their themes.</p>",
+            "allSavesBonus": "shared confidence",
+            "hpDetails": "void healing",
+            "items": {
+                "spellcastingEntry->Occult Prepared Spells": {
+                    "name": "Occult Prepared Spells"
+                },
+                "spellcastingEntry->Witch Hex Spells": {
+                    "name": "Witch Hex Spells"
+                },
+                "equipment->Cauldron": {
+                    "name": "Cauldron"
+                },
+                "strike-melee->Dagger": {
+                    "name": "Dagger"
+                },
+                "strike-ranged->Dart": {
+                    "name": "Dart"
+                },
+                "strike-melee->Fist": {
+                    "name": "Fist"
+                },
+                "action->Collapse": {
+                    "name": "Collapse",
+                    "description": "<p><strong>Trigger</strong> The skeleton is critically hit.</p>\n<hr />\n<p><strong>Effect</strong> The skeleton collapses into a pile of bones and the attack deals only normal damage. The skeleton can reform in a standing position as an action, but until it does, it is @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Immobilized} and @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard}.</p>"
+                },
+                "action->Shared Confidence": {
+                    "name": "Shared Confidence",
+                    "description": "<p>When a coven aspirant is within @Template[emanation|distance:30]{30 feet} of at least two allies, they and their allies gain a +1 status bonus to Will saves.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.uKJRRrlReO0CceVc]{Effect: Shared Confidence}</p>"
+                },
+                "action->Forge Pact": {
+                    "name": "Forge Pact",
+                    "description": "<p>The coven aspirant forms a temporary coven with two or more willing creatures within 30 feet, all of whom must be able to cast spells.</p>\n<p>Members of the temporary coven can cast @UUID[Compendium.pf2e.spells-srd.Item.vLA0q0WOK2YPuJs6]{Charm}, @UUID[Compendium.pf2e.spells-srd.Item.J6vNvrUT3b1hx2iA]{Entangling Flora}, and @UUID[Compendium.pf2e.spells-srd.Item.i35dpZFI7jZcRoBo]{Illusory Disguise} as 2nd-rank occult innate spells at will, using DC 17 or their spellcasting DC, whichever is higher.</p>\n<p>The coven is dissolved after 3 rounds or when all but one member is dead, whichever comes first. A creature can be a member of only one temporary coven at a time and can join a temporary coven no more than once per 24 hours.</p>"
+                }
+            }
+        },
+        "Skeleton Guard": {
+            "name": "Skeleton Guard",
+            "publicNotes": "<p>The most common skeletal minions are mere guardians.</p>\n<hr />\n<p>Animated skeletons are among the most common types of undead.</p>",
+            "hpDetails": "void healing",
+            "items": {
+                "ammo->Arrows": {
+                    "name": "Arrows",
+                    "description": "<p>These projectiles are the ammunition for bows. The shaft of an arrow is made of wood. It is stabilized in flight by fletching at one end and bears a metal head on the other.</p>"
+                },
+                "strike-melee->Claw": {
+                    "name": "Claw"
+                },
+                "action->Void Healing": {
+                    "name": "Void Healing"
+                },
+                "action->Screaming Skull": {
+                    "name": "Screaming Skull",
+                    "description": "<p>The skeleton removes its skull and throws it, making a jaws attack with a range of 20 feet. It then attempts to @UUID[Compendium.pf2e.actionspf2e.Item.2u915NdUyQan6uKF]{Demoralize} each foe within 10 feet of the target.</p>\n<p>The head bounces, rolls, or even flies back, returning to the skeleton at the start of its next turn. The skeleton is @UUID[Compendium.pf2e.conditionitems.Item.XgEqL1kFApUbl5Z2]{Blinded} until then.</p>"
+                }
+            }
+        },
+        "Skeleton Wolfguard": {
+            "name": "Skeleton Wolfguard",
+            "publicNotes": "<p>Without the burden of flesh, skeletal wolves charge across the battlefield with terrifying speed.</p>\n<hr />\n<p>Among the ranks of the dead, none are so numerous, nor so varied, as the skeleton. While most are almost entirely made from bone, some maintain a few scraps of flesh to aid them in movement, such as wing membranes.</p>",
+            "hpDetails": "void healing",
+            "items": {
+                "strike-melee->Jaws": {
+                    "name": "Jaws"
+                },
+                "action->Void Healing": {
+                    "name": "Void Healing"
+                },
+                "action->Screaming Skull": {
+                    "name": "Screaming Skull",
+                    "description": "<p>The skeleton removes its skull and throws it, making a jaws attack with a range of 20 feet. It then attempts to @UUID[Compendium.pf2e.actionspf2e.Item.2u915NdUyQan6uKF]{Demoralize} each foe within 10 feet of the target.</p>\n<p>The head bounces, rolls, or even flies back, returning to the skeleton at the start of its next turn. The skeleton is @UUID[Compendium.pf2e.conditionitems.Item.XgEqL1kFApUbl5Z2]{Blinded} until then.</p>"
+                },
+                "action->Surge of Speed": {
+                    "name": "Surge of Speed",
+                    "description": "<p>The wolf skeleton Strides three times, but it's @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} until the start of its next turn.</p>"
                 }
             }
         },

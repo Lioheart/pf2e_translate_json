@@ -1,0 +1,1459 @@
+{
+    "label": "Starfinder-Society-Bestiary",
+    "folders": {
+        "1-05": "1-05",
+        "Season 1": "Season 1",
+        "1-01": "1-01",
+        "1-14": "1-14",
+        "1-02": "1-02",
+        "1-00": "1-00",
+        "1-03": "1-03",
+        "1-06": "1-06",
+        "1-04": "1-04",
+        "1-07": "1-07",
+        "1-08": "1-08",
+        "1-09": "1-09",
+        "1-12": "1-12",
+        "1-10": "1-10",
+        "1-11": "1-11",
+        "1-13": "1-13"
+    },
+    "entries": {
+        "Antigravity Swell": {
+            "name": "Antigravity Swell",
+            "descriptionHazard": "<p>The beyond terror's entrance into reality negates gravity in a localized area, resembling the zero-g vacuum of space.</p>",
+            "disable": "<p>@Check[arcana|dc:13] or @Check[occultism|dc:13] (trained) to temporarily counter the hazard's gravitational influence, preventing it from changing the gravity level on its next turn. The hazard is permanently disabled when the beyond terror is defeated.</p>",
+            "reset": "<p>The hazard doesn't reset once the beyond terror is defeated.</p>",
+            "routine": "<p>(1 action) On each of the hazard's turns, gravity in its affected area (indicated by a dotted line on the map) alters by one step, going from normal to low on turn 1 and low to zero on turn 2. From turn 3 onward, the area shifts between zero and low gravity on each alternating turn, and continues to do so until the hazard is disabled.</p>",
+            "items": {
+                "action->Losing Gravity": {
+                    "name": "Losing Gravity",
+                    "description": "<p><strong>Trigger</strong> The beyond terror appears</p><hr /><p><strong>Effect</strong> The ground shakes and small pieces of rock and crystal levitate into the air. The hazard rolls initiative.</p>"
+                }
+            }
+        },
+        "Aruk": {
+            "name": "Aruk",
+            "blurb": "Female shobhad mystic",
+            "items": {
+                "spellcastingEntry->Primal Spontaneous Spells": {
+                    "name": "Primal Spontaneous Spells"
+                },
+                "spellcastingEntry->Primal Focus Spells": {
+                    "name": "Primal Focus Spells"
+                },
+                "weapon->Shobhad Longrifle": {
+                    "name": "Shobhad Longrifle",
+                    "description": "<p>The shobhad longrifle is a firearm with a long, rifled barrel. Often mounted with a multi-lensed scope for targeting at an array of ranges and a chambering mechanism that can adjust the speed and penetrating power of each shot, it's the preferred weapon of many shobhad warriors.</p>\n<p>Shobhad longrifles are equipped with a built-in silencer so they make no more noise than a crossbow when fired.</p>\n<p>A shobhad longrifle is a martial weapon.</p>"
+                },
+                "armor->Microcord Armor": {
+                    "name": "Microcord Armor",
+                    "description": "<p><strong>Upgrades:</strong> 1</p><hr /><p>This light armor is woven from ultralight fibers that flex with a wearer's movements but turn hard as steel on impact.</p>"
+                },
+                "equipment->Silencer (Commercial)": {
+                    "name": "Silencer (Commercial)",
+                    "description": "<p>A cylinder is filled with internal sound baffles to reduce noise. The weapon doesn't make a loud noise when fired. However, creatures hit by the ammunition might still cry out in pain.</p>"
+                },
+                "equipment->Sniper's Scope (Commercial)": {
+                    "name": "Sniper's Scope (Commercial)",
+                    "description": "<p>A telescopic sighting attachment helps view distant targets.</p><hr /><p><strong>Activate\u2014Adjust Sight</strong> <span class=\"action-glyph\">1</span> (manipulate)</p>\n<p><strong>Effect</strong> Increase the range increment of the weapon the scope is attached to by 10 feet. If the weapon has a base range increment of 50 feet or more, increase the range of the weapon by 20 feet instead. This lasts until the beginning of your next turn or until you're no longer wielding the weapon this scope is attached to, whichever comes first. This does not increase the size of area attacks.</p>"
+                },
+                "ammo->Projectile Ammo": {
+                    "name": "Projectile Ammo"
+                },
+                "strike-melee->Shobhad Longrifle": {
+                    "name": "Shobhad Longrifle"
+                },
+                "strike-melee->Fist": {
+                    "name": "Fist"
+                },
+                "action->World-Blessed Tracker": {
+                    "name": "World-Blessed Tracker",
+                    "description": "<p>While she's on Akiton, Aruk automatically succeeds at Survival checks to [[/act track]] made during exploration mode.</p>"
+                },
+                "action->Vitality Network": {
+                    "name": "Vitality Network",
+                    "description": "<p>Aruk has a vitality network they share with up to 10 bonded allies. This network can store a maximum of @Damage[14[healing]] Hit Points, begins combat full, and regains @Damage[4[healing]] Hit Points per round.</p>"
+                },
+                "action->Transfer Vitality": {
+                    "name": "Transfer Vitality",
+                    "description": "<p>Aruk transfers up to @Damage[10[healing]] Hit Points from her vitality network to a bonded creature she can sense within 60 feet. This works on creatures with void healing as though this action had the void trait.</p>"
+                },
+                "lore->Shobhad Lore": {
+                    "name": "Shobhad Lore"
+                }
+            }
+        },
+        "Beasts of Bo Bandit": {
+            "name": "Beasts of Bo Bandit",
+            "items": {
+                "weapon->Degradation Grenade (Commercial)": {
+                    "name": "Degradation Grenade (Commercial)",
+                    "description": "<p><strong>Activate</strong> <span class=\"action-glyph\">1</span> Area Fire</p>\n<p><strong>Critical</strong> @Damage[1[persistent,acid]] damage</p><hr /><p>Degradation grenades create violent blasts of magic that rip matter into different realities, leaving behind blackened hunks of matter that dissipate into nothingness. When the grenade explodes, it deals 1d8 acid damage in a @Template[burst|distance:5] with a @Check[reflex|against:class|basic] save.</p>"
+                },
+                "weapon->Laser Rifle": {
+                    "name": "Laser Rifle",
+                    "description": "<p><strong>Upgrades:</strong> 1</p><hr /><p>These dependable, mass-produced rifles shoot concentrated beams of energy out of square-shaped barrels. The universal standard Pact Worlds model is highly modifiable and designed to function with a variety of accessories and upgrades, with wielders adapting the laser rifle to their preferences and even kit-bashing it into a nearly unrecognizable weapon.</p>"
+                },
+                "consumable->Medpatch (Commercial)": {
+                    "name": "Medpatch (Commercial)",
+                    "description": "<p><strong>Activate</strong> <span class=\"action-glyph\">1</span> (manipulate)</p><hr /><p>Medpatches accelerate the body's natural healing. You regain @Damage[(1d6)[healing]] Hit Points and gain a +1 item bonus to saving throws against diseases and poisons for 10 minutes.</p>\n<p>@UUID[Compendium.sf2e.equipment-effects.Item.VKSOvJQMwUby4fba]{Effect: Medpatch}</p>"
+                },
+                "ammo->Battery (Commercial)": {
+                    "name": "Battery (Commercial)"
+                },
+                "strike-melee->Degradation Grenade (Commercial)": {
+                    "name": "Degradation Grenade (Commercial)"
+                },
+                "strike-melee->Hammer": {
+                    "name": "Hammer"
+                },
+                "strike-melee->Laser Rifle": {
+                    "name": "Laser Rifle"
+                }
+            }
+        },
+        "Beyond Terror": {
+            "name": "Beyond Terror",
+            "items": {
+                "spellcastingEntry->Occult Innate Spells": {
+                    "name": "Occult Innate Spells"
+                },
+                "strike-melee->Claw": {
+                    "name": "Claw"
+                },
+                "strike-melee->Mandibles": {
+                    "name": "Mandibles"
+                },
+                "action->Thoughtsense": {
+                    "name": "Thoughtsense",
+                    "description": "<p>The beyond terror senses a creature's mental activity as a precise sense within the listed range; it cannot sense mindless creatures with thoughtsense.</p>"
+                },
+                "action->Horrors Beyond": {
+                    "name": "Horrors Beyond",
+                    "description": "<p>Creatures Swallowed Whole by the beyond terror are subjected to the constant mental assault of an entire world's collective, crushing existential fear. They have 2 fewer rounds before they begin suffocating, and after their escape, they are @UUID[Compendium.sf2e.conditions.Item.dfCMdR4wnpbYNTix]{Stunned 1} for 1 round as their mind struggles to readjust after the ordeal.</p>"
+                },
+                "action->Inconceivable Feelings": {
+                    "name": "Inconceivable Feelings",
+                    "description": "<p>As an entity of pure fear, the beyond terror cannot comprehend emotions outside its sphere of influence. When attempting Will saves against spells or effects with the emotion trait that deal with any emotion other than fear, the beyond terror treats its saving throw result as one step worse than what it rolls.</p>"
+                },
+                "action->Psychic Scream": {
+                    "name": "Psychic Scream",
+                    "description": "<p>The beyond terror releases a psychic scream of horror that rings through every conscious mind in a @Template[type:emanation|distance:30], dealing @Damage[3d6[mental]|options:area-damage] damage. All thinking creatures within range must attempt a @Check[will|dc:15] save. The beyond terror cannot use Psychic Scream again for [[/gmr 1d4 #Recharge Psychic Scream]]{1d4 rounds}.</p><hr /><p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature takes half damage.</p>\n<p><strong>Failure</strong> The creature takes full damage and is @UUID[Compendium.sf2e.conditions.Item.TBSHQspnbcqxsmjL]{Frightened 1}.</p>\n<p><strong>Critical Failure</strong> The creature takes double damage and is @UUID[Compendium.sf2e.conditions.Item.TBSHQspnbcqxsmjL]{Frightened 2}.</p>"
+                },
+                "action->Swallow Whole": {
+                    "name": "Swallow Whole",
+                    "description": "<p>Large, @Damage[(1d6+4)[bludgeoning]], Rupture 8</p><hr /><p>@Localize[PF2E.NPC.Abilities.Glossary.SwallowWhole]</p>"
+                },
+                "action->Grab": {
+                    "name": "Grab"
+                }
+            }
+        },
+        "Bo-Shek": {
+            "name": "Bo-Shek",
+            "blurb": "Male Shobhad",
+            "items": {
+                "weapon->Hardlight Handwraps (Advanced)": {
+                    "name": "Hardlight Handwraps (Advanced)",
+                    "description": "<p><strong>Upgrades</strong> 2</p><hr /><p>These handwraps can be customized to shine in any color in the visible spectrum when used, and some manufacturers offer custom firmware that modifies their appearance to manifest as a claw, oversized fist, or hammerhead. They can even be worn in alternate ways on other parts of the body. These handwraps enhance your unarmed attacks as if they were manufactured weapons, allowing you to add an upgrade to your unarmed attacks. Treat the handwraps as melee weapons in the brawling group with light Bulk for these purposes.</p>\n<p>Your unarmed attacks gain the tracking +1 trait and increase the damage to two dice.</p>"
+                },
+                "weapon->Painglaive": {
+                    "name": "Painglaive",
+                    "description": "<p><strong>Upgrades:</strong> 1</p><hr /><p>This fierce but deceptively elegant polearm rips apart enemies with a motor-powered fangblade. An adjustable pulse trigger allows the wielder to channel extra pain through the weapon.</p>"
+                },
+                "weapon->Grenade Launcher (Tactical)": {
+                    "name": "Grenade Launcher (Tactical)",
+                    "description": "<p><strong>Upgrades</strong> 1</p>\n<p><strong>Activate</strong> <span class=\"action-glyph\">2</span> Area Fire</p><hr /><p>The rotating barrel of this automatic breechloading launcher holds up to six grenades of any variety with smart loading technology, allowing its wielder to choose a different grenade each time they fire. A grenade launcher is a martial ranged weapon, has a reload of 2, and a range 350 feet.</p>"
+                },
+                "weapon->Frag Grenade (Advanced)": {
+                    "name": "Frag Grenade (Advanced)",
+                    "description": "<p><strong>Activate</strong> <span class=\"action-glyph\">1</span> Area Fire</p>\n<p><strong>Critical</strong> @Damage[1d6[bleed]]</p><hr /><p>These fragmentary grenades explode in a cloud of shrapnel and deal 3d8 piercing damage in a @Template[burst|distance:10] with a @Check[reflex|against:class|basic] save.</p>"
+                },
+                "ammo->Battery (Commercial)": {
+                    "name": "Battery (Commercial)"
+                },
+                "strike-melee->Frag Grenade": {
+                    "name": "Frag Grenade"
+                },
+                "strike-melee->Painglaive": {
+                    "name": "Painglaive"
+                },
+                "strike-melee->Fist": {
+                    "name": "Fist"
+                },
+                "action->Reactive Strike": {
+                    "name": "Reactive Strike"
+                },
+                "action->Rallied by the Beasts": {
+                    "name": "Rallied by the Beasts",
+                    "description": "<p><strong>Frequency</strong> once per day</p>\n<p><strong>Requirements</strong> Bo-Shek has 35 Hit Points or less</p><hr /><p><strong>Effect</strong> Bo-Shek howls a defiant roar and the Beasts of Bo respond in kind. He gains 10 temporary Hit Points that last 1 minute. As long as he has temporary Hit Points remaining, he deals an additional 1d6 precision damage with his melee Strikes.</p>"
+                },
+                "action->Supercharged Swing": {
+                    "name": "Supercharged Swing",
+                    "description": "<p>If Bo-Shek dealt damage to a creature with his painglaive while it was boosted, he additionally knocks the target back 10 feet, or 20 feet on a critical hit.</p>"
+                }
+            }
+        },
+        "Bumper Bridge": {
+            "name": "Bumper Bridge",
+            "descriptionHazard": "<p>The bumpers on the bridge push forward, attempting to knock competitors into the river.</p>",
+            "disable": "<p>@Check[thievery|dc:16] (trained) to shut off the mechanisms</p>",
+            "routine": "<p>(3 actions) The bumper bridge attempts to [[/act shove]] all creatures on the bridge into the river with an Athletics bonus of [[/gmr 1d20+9 #Athletics]]{+9} (no multiple attack penalty).</p>",
+            "stealth": "<p>(trained)</p>",
+            "items": {
+                "action->Into the Drink!": {
+                    "name": "Into the Drink!",
+                    "description": "<p><strong>Trigger</strong> A creature ends its movement on the bridge</p><hr /><p><strong>Effect</strong> The bumper bridge attempts to [[/act shove]] that creature into the river with an Athletics bonus of [[/gmr 1d20+9 #Athletics]]{+9}. If the triggering creature was not aware of this hazard, they take a \u20132 circumstance penalty to their Fortitude DC. The bumper bridge then rolls initiative.</p>"
+                }
+            }
+        },
+        "Burnt Circle Conspirator": {
+            "name": "Burnt Circle Conspirator",
+            "items": {
+                "weapon->Baton": {
+                    "name": "Baton",
+                    "description": "<p><strong>Upgrades:</strong> 1</p><hr /><p>This reinforced rod is commonly made from metal alloys and designed to strike and parry incoming blows.</p>"
+                },
+                "weapon->Pulsecaster Pistol": {
+                    "name": "Pulsecaster Pistol",
+                    "description": "<p><strong>Upgrades:</strong> 1</p><hr /><p>This imposing pistol fires a jolt of paralyzing electricity from its barrel. Its remaining charges are visible as glowing lines of energy radiating down its body. Pulsecaster pistols are often used by bounty hunters and law enforcement who need to keep their targets alive.</p>"
+                },
+                "armor->Armored Coat": {
+                    "name": "Armored Coat",
+                    "description": "<p><strong>Upgrades:</strong> 1</p><hr /><p>This overcoat is made of real or synthetic leather and reinforced with armored plates. Armored coats are often tailor-made to match the wearer's personal style. Standard versions are issued to military officers as part of their uniforms.</p>"
+                },
+                "ammo->Battery (Commercial)": {
+                    "name": "Battery (Commercial)"
+                },
+                "treasure->Silver Pieces": {
+                    "name": "Silver Pieces"
+                },
+                "strike-melee->Pulsecaster Pistol": {
+                    "name": "Pulsecaster Pistol"
+                },
+                "strike-melee->Baton": {
+                    "name": "Baton"
+                },
+                "action->Nihilistic Pronouncement": {
+                    "name": "Nihilistic Pronouncement",
+                    "description": "<p>A Burnt Circle conspirator spouts some of their nihilistic teachings to a creature within 30 feet. They attempt a [[/act demoralize skill=occultism]] check using Occultism in place of Intimidation.</p>"
+                }
+            }
+        },
+        "Cephalaspis Corpse": {
+            "name": "Cephalaspis Corpse",
+            "items": {
+                "strike-melee->Armored Crest": {
+                    "name": "Armored Crest"
+                },
+                "strike-melee->Jaws": {
+                    "name": "Jaws"
+                },
+                "strike-melee->Rust Breath": {
+                    "name": "Rust Breath"
+                },
+                "action->Armored Deflection": {
+                    "name": "Armored Deflection",
+                    "description": "<p><strong>Trigger</strong> The cephalaspis corpse is the target of a physical ranged attack</p><hr /><p><strong>Effect</strong> The cephalaspis corpse deflects the attack with the armored plates covering its head, gaining a +2 circumstance bonus to AC against the triggering attack.</p>"
+                },
+                "action->Cephalaspis Charge": {
+                    "name": "Cephalaspis Charge",
+                    "description": "<p>The cephalaspis corpse Strides twice, then makes an armored crest Strike. A Medium or smaller creature struck by this attack must succeed at a @Check[reflex|dc:15] save or be automatically Shoved back 5 feet and knocked @UUID[Compendium.sf2e.conditions.Item.j91X7x0XSomq8d60]{Prone} by the force of the blow.</p>"
+                },
+                "action->Pummeling Loop": {
+                    "name": "Pummeling Loop",
+                    "description": "<p><strong>Requirements</strong> The cephalaspis corpse has a Medium or smaller creature @UUID[Compendium.sf2e.conditions.Item.kWc1fhmv9LBiTuei]{Grabbed}</p><hr /><p><strong>Effect</strong> The cephalaspis corpse attempts an Athletics check to @UUID[Compendium.sf2e.actions.Item.lOE4yjUnETTdaf2T]{Reposition} the grabbed creature, with the following results.</p><hr /><p><strong>Critical Success</strong> The cephalaspis corpse Flies 30 feet straight up and then drops the creature, causing it to fall.</p>\n<p><strong>Success</strong> As critical success, but only 20 feet.</p>\n<p><strong>Failure</strong> No effect.</p>\n<p><strong>Critical Failure</strong> The creature is no longer grabbed.</p>"
+                },
+                "action->Grab": {
+                    "name": "Grab"
+                }
+            }
+        },
+        "Chendre": {
+            "name": "Chendre",
+            "blurb": "Female kasatha",
+            "items": {
+                "spellcastingEntry->Arcane Spontaneous Spells": {
+                    "name": "Arcane Spontaneous Spells"
+                },
+                "weapon->Laser Pistol": {
+                    "name": "Laser Pistol",
+                    "description": "<p><strong>Upgrades:</strong> 1</p><hr /><p>This compact pistol is the most popular sidearm in the Pact Worlds thanks to its reliability, durability, and affordability. Most common laser pistols have a lightweight polycarbon body ending in a long, slim barrel.</p>"
+                },
+                "armor->Microcord Armor": {
+                    "name": "Microcord Armor",
+                    "description": "<p><strong>Upgrades:</strong> 1</p><hr /><p>This light armor is woven from ultralight fibers that flex with a wearer's movements but turn hard as steel on impact.</p>"
+                },
+                "ammo->Battery (Commercial)": {
+                    "name": "Battery (Commercial)"
+                },
+                "strike-melee->Laser Pistol": {
+                    "name": "Laser Pistol"
+                },
+                "action->Reach Spell": {
+                    "name": "Reach Spell",
+                    "description": "<p>Chendre can extend the range of her spells. If the next action she uses is to Cast a Spell that has a range, increase that spell's range by 30 feet.</p>"
+                }
+            }
+        },
+        "Converted Khefak": {
+            "name": "Converted Khefak",
+            "items": {
+                "strike-melee->Mandible": {
+                    "name": "Mandible"
+                },
+                "strike-melee->Electrical Jolt": {
+                    "name": "Electrical Jolt"
+                },
+                "action->Gnaw Scrap": {
+                    "name": "Gnaw Scrap",
+                    "description": "<p>A khefak chews on an unattended object to feed, dealing @Damage[4[piercing]] damage every 10 minutes to the object. This damage ignores 10 points of Hardness. If a khefak doesn't spend at least 1 hour Gnawing Scrap per day, it begins to starve until it spends 10 minutes Gnawing Scrap.</p>"
+                },
+                "action->Nanite Repair": {
+                    "name": "Nanite Repair",
+                    "description": "<p><strong>Frequency</strong> once per day</p><hr /><p><strong>Effect</strong> Nanites implanted in the converted khefak's body repair its wounds, restoring @Damage[2d6[healing]] Hit Points.</p>"
+                },
+                "action->Trenching Teeth": {
+                    "name": "Trenching Teeth",
+                    "description": "<p><strong>Requirements</strong> The converted khefak hit with a mandible Strike on its most recent action this turn</p><hr /><p><strong>Effect</strong> The converted khefak quickly rotates the jagged serrations along its mandibles, dealing @Damage[1d10[slashing]] damage to the creature it hit with its mandible Strike.</p>"
+                }
+            }
+        },
+        "Converted Yearling Arabuk": {
+            "name": "Converted Yearling Arabuk",
+            "publicNotes": "<p>Yearling arabuks collect in glarings. They're abandoned by their mothers days after birth, then adopted by a mature arabuk that raises them as a group.</p><hr /><p>Those traveling through Akiton's Winterlands risk stumbling on its apex predator: the carnivorous arabuk.</p>",
+            "sensesDetails": "darkvision, snow vision",
+            "items": {
+                "strike-melee->Jaws": {
+                    "name": "Jaws"
+                },
+                "strike-melee->Antlers": {
+                    "name": "Antlers"
+                },
+                "strike-melee->Tail Spike": {
+                    "name": "Tail Spike"
+                },
+                "action->Snow Vision": {
+                    "name": "Snow Vision",
+                    "description": "<p>Snow doesn't impair a yearling arabuk's vision; it ignores concealment from snowfall.</p>"
+                },
+                "action->Glacial Stride": {
+                    "name": "Glacial Stride",
+                    "description": "<p>The arabuk Strides twice with a +10-foot circumstance bonus to Speed, ignoring difficult terrain caused by ice, snow, or other arctic conditions.</p>"
+                },
+                "action->Harmonic Hum": {
+                    "name": "Harmonic Hum",
+                    "description": "<p>The arabuk's antlers reverberate a discordant anthem, dealing @Damage[2d4[sonic]|options:area-damage] damage to all non-arabuk creatures in a @Template[type:emanation|distance:15]. Any other arabuks within 60 feet can shake their antlers to add their harmonics to this chorus as a reaction. For each arabuk that does, the area of Harmonic Hum increases by 15 feet, to a maximum of a @Template[type:emanation|distance:60].</p>"
+                }
+            }
+        },
+        "Corrupted Gliding Bear": {
+            "name": "Corrupted Gliding Bear",
+            "items": {
+                "strike-melee->Jaws": {
+                    "name": "Jaws"
+                },
+                "strike-melee->Claw": {
+                    "name": "Claw"
+                },
+                "action->Burst Pustule": {
+                    "name": "Burst Pustule",
+                    "description": "<p><strong>Trigger</strong> The gliding bear is dealt damage</p><hr /><p><strong>Effect</strong> One of the gliding bear's pustules pops, spraying putrid fluid in a @Template[type:emanation|distance:5]. All creatures in the area become @UUID[Compendium.sf2e.conditions.Item.fesd1n5eVhpCSS18]{Sickened 1} unless they succeed at a @Check[fortitude|dc:15|basic] save.</p>"
+                },
+                "action->Mauling Rush": {
+                    "name": "Mauling Rush",
+                    "description": "<p>The gliding bear Strides up to double its Speed in a straight line, Climbing and Leaping over any obstacles in its way. At the end of this movement, it can attempt a melee Strike. On a hit, it additionally knocks the target @UUID[Compendium.sf2e.conditions.Item.j91X7x0XSomq8d60]{Prone}.</p>"
+                },
+                "action->Grab": {
+                    "name": "Grab"
+                }
+            }
+        },
+        "Cy-Boar": {
+            "name": "Cy-Boar",
+            "items": {
+                "strike-melee->Tusk": {
+                    "name": "Tusk"
+                },
+                "strike-melee->Laser Eye": {
+                    "name": "Laser Eye"
+                },
+                "action->Boar Charge": {
+                    "name": "Boar Charge",
+                    "description": "<p>The cy-boar Strides twice and then makes a tusk Strike. As long as it moved at least 20 feet, it gains a +2 circumstance bonus to its attack roll.</p>"
+                }
+            }
+        },
+        "D-Vee": {
+            "name": "D-Vee",
+            "description": "<p>This compact and sturdy hover vehicle is wedge-shaped and designed to endure Akiton's harsh deserts and frequent sandstorms while hauling salvage and other cargo. A d-vee consists of a blunt nosed fuselage with multiple anti-grav cells and force propulsion units mounted underneath. A d-vee has a forward driver's seat and a rear bench with a folding back that can seat additional passengers. Aft of the bench is a small cargo platform with tie-downs that can carry up to 50 bulk of cargo.</p>",
+            "crew": "1 pilot",
+            "pilotingCheck": "15",
+            "items": {
+                "action->Auto-Nav": {
+                    "name": "Auto-Nav",
+                    "description": "<p>A d-vee is equipped with automated navigation, which helps pilots drive the vehicle through Akiton's harsh environment. You gain a +1 circumstance bonus on Piloting checks to pilot a d-vee. You can attempt any Piloting skill check with a d-vee untrained, using your level as your proficiency bonus.</p>"
+                },
+                "action->Hover": {
+                    "name": "Hover",
+                    "description": "<p>A d-vee maintains an altitude of six inches above other surfaces, such as ground and water. If driven off a high surface, the d-vee loses 20 feet of altitude per round, landing without harm to the d-vee or its pilot and passengers.</p>"
+                }
+            }
+        },
+        "Drillworm": {
+            "name": "Drillworm",
+            "items": {
+                "strike-melee->Mouth": {
+                    "name": "Mouth"
+                },
+                "strike-melee->Spitting Teeth": {
+                    "name": "Spitting Teeth"
+                },
+                "action->Bursting Rubble": {
+                    "name": "Bursting Rubble",
+                    "description": "<p>The drillworm burrows up to its Speed and then emerges onto the surface. All creatures adjacent to it when it ends its movement must succeed at a @Check[reflex|dc:13] save or be knocked @UUID[Compendium.sf2e.conditions.Item.j91X7x0XSomq8d60]{Prone}.</p>"
+                }
+            }
+        },
+        "Eclipse Armiger": {
+            "name": "Eclipse Armiger",
+            "items": {
+                "weapon->Knife": {
+                    "name": "Knife",
+                    "description": "<p><strong>Upgrades:</strong> 1</p><hr /><p>Invaluable as both a weapon and a tool, knives come in a variety of shapes, styles, and materials ranging from starmetals to ceramics.</p>"
+                },
+                "weapon->Laser Rifle": {
+                    "name": "Laser Rifle",
+                    "description": "<p><strong>Upgrades:</strong> 1</p><hr /><p>These dependable, mass-produced rifles shoot concentrated beams of energy out of square-shaped barrels. The universal standard Pact Worlds model is highly modifiable and designed to function with a variety of accessories and upgrades, with wielders adapting the laser rifle to their preferences and even kit-bashing it into a nearly unrecognizable weapon.</p>"
+                },
+                "armor->Skyfire Armor": {
+                    "name": "Skyfire Armor",
+                    "description": "<p><strong>Upgrades:</strong> 0</p><hr /><p>These decorative suits of medium armor feature exaggerated shoulder guards, stylized dragon wings, and draconic emblems across the breastplate's back and chest. Skyfire armor is often plated with gold or other attractive metals, sacrificing upgrade space for style.</p>"
+                },
+                "ammo->Battery (Commercial)": {
+                    "name": "Battery (Commercial)"
+                },
+                "strike-melee->Laser Rifle": {
+                    "name": "Laser Rifle"
+                },
+                "strike-melee->Knife": {
+                    "name": "Knife"
+                },
+                "strike-ranged->Knife": {
+                    "name": "Knife"
+                },
+                "lore->Hellknight Lore": {
+                    "name": "Hellknight Lore"
+                }
+            }
+        },
+        "Exploding Fruit Trap": {
+            "name": "Exploding Fruit Trap",
+            "descriptionHazard": "<p>A makeshift catapult launches a dozen twi-lw fruits at all creatures in a wide area when a creature enters a selected @Template[square|distance:5].</p>",
+            "disable": "<p>@Check[survival|dc:14] or @Check[thievery|dc:14] to disable the triggering pressure plate.</p>",
+            "items": {
+                "action->Bombs Away!": {
+                    "name": "Bombs Away!",
+                    "description": "<p><strong>Trigger</strong> A creature enters the designated square</p><hr /><p><strong>Effect</strong> The catapult launches a dozen twi-lw fruits through the air, dealing @Damage[2d4[bludgeoning]|options:area-damage] damage to the triggering creature and all creatures in a @Template[type:emanation|distance:5] centered on the triggering creature. Targeted creatures can attempt a @Check[reflex|dc:16|basic] save. A creature that fails their save is additionally coated in sticky fruit, becoming @UUID[Compendium.sf2e.conditions.Item.i3OJZU2nk64Df3xm]{Clumsy 1} for [[/gmr 1d4 #rounds]]{1d4 rounds} (1 minute on a critical failure).</p>"
+                }
+            }
+        },
+        "Fire Wisp": {
+            "name": "Fire Wisp",
+            "publicNotes": "<p>Fire wisps are sizzling spheres of flame and ash, perpetually crackling and shimmering with heat. They're carefree, boisterous, and quick to action\u2014sometimes recklessly so.</p><hr /><p>Wisps are tiny elemental beings that emerged during the creation of the Elemental Planes. The first wisps roamed the Inner Sphere in shifting symphonies that traded members with their every meeting. These symphonies of free wisps created music out of their combined resonances, but when the wicked Elemental Lords realized the value of the wisps' resonance, they captured whole symphonies for use as servants.</p>\n<p>Wisps attune to each other and to those they surround themselves with. This attunement makes them naturally supportive allies. Free wisps still roam the Inner Sphere and the Universe, but they're usually shy and hide themselves from strangers. However, they happily offer their service to those who show them kindness. They especially find themselves drawn to spellcasters who practice elemental magic; these wisps usually watch from afar but sometimes approach those who seem safe to become familiars or comrades.</p>\n<p>Free wisps who find one another become close almost immediately. They get especially excited when they find wisps of elements other than their own, showing none of the animosity sometimes exhibited between elementals of different planes. Instead, they join in an excited dance, emitting resonances that faintly echo the symphonies of ancient days.</p>",
+            "sensesDetails": "smoke vision",
+            "items": {
+                "strike-melee->Tendril": {
+                    "name": "Tendril"
+                },
+                "action->Smoke Vision": {
+                    "name": "Smoke Vision",
+                    "description": "<p>The fire wisp ignores the @UUID[Compendium.sf2e.conditions.Item.DmAIPqOBomZ7H95W]{Concealed} condition from smoke.</p>"
+                },
+                "action->Accord Essence": {
+                    "name": "Accord Essence",
+                    "description": "<p><strong>Trigger</strong> An ally within 30 feet that benefited from the wisp's resonance in the last hour is targeted by an attack</p><hr /><p><strong>Effect</strong> The wisp detonates themself in an elemental explosion. This grants temporary Hit Points equal to half the wisp's current Hit Points to allies within @Template[emanation|distance:30]{30 feet} who have benefited from the wisp's resonance in the last hour. These temporary Hit Points last 1 hour.</p>\n<p>A wisp that uses this reaction is permanently destroyed, and they can be restored by only a @UUID[Compendium.sf2e.spells.Item.6dDtGIUerazSHIOu]{Wish} ritual or similarly powerful effect. If an ability would prevent the wisp's destruction (for instance, if the wisp is summoned and would merely be dismissed), Accord Essence has no effect.</p>"
+                },
+                "action->Resonance": {
+                    "name": "Resonance",
+                    "description": "<p>30 feet. All wisps vibrate at a frequency attuned to their element, resonating with and empowering all creatures and effects sharing that trait.</p>\n<p>A creature in the area gains a +1 status bonus to attack and damage rolls for effects with the air trait; a creature with the elemental and air traits gains this bonus to all attack and damage rolls.</p>"
+                },
+                "action->In Concert": {
+                    "name": "In Concert",
+                    "description": "<p>When a fire wisp rolls a critical failure on a check to Aid, they get a failure instead, and when they roll a success, they get a critical success instead.</p>"
+                },
+                "lore->Plane of Fire Lore": {
+                    "name": "Plane of Fire Lore"
+                }
+            }
+        },
+        "Frozen Trove Field Scientist": {
+            "name": "Frozen Trove Field Scientist",
+            "items": {
+                "spellcastingEntry->Primal Spontaneous Spells": {
+                    "name": "Primal Spontaneous Spells"
+                },
+                "weapon->Baton": {
+                    "name": "Baton",
+                    "description": "<p><strong>Upgrades:</strong> 1</p><hr /><p>This reinforced rod is commonly made from metal alloys and designed to strike and parry incoming blows.</p>"
+                },
+                "weapon->Zero Pistol": {
+                    "name": "Zero Pistol",
+                    "description": "<p><strong>Upgrades:</strong> 1</p><hr /><p>Zero pistols use transparent canisters of supercooled liquid as ammunition.</p>"
+                },
+                "consumable->Medpatch (Commercial)": {
+                    "name": "Medpatch (Commercial)",
+                    "description": "<p><strong>Activate</strong> <span class=\"action-glyph\">1</span> (manipulate)</p><hr /><p>Medpatches accelerate the body's natural healing. You regain @Damage[(1d6)[healing]] Hit Points and gain a +1 item bonus to saving throws against diseases and poisons for 10 minutes.</p>\n<p>@UUID[Compendium.sf2e.equipment-effects.Item.VKSOvJQMwUby4fba]{Effect: Medpatch}</p>"
+                },
+                "consumable->Spell Gem of Thunderstrike (Rank 1)": {
+                    "name": "Spell Gem of Thunderstrike (Rank 1)",
+                    "description": "<p>@UUID[Compendium.sf2e.spells.Item.zDJS8E66UI0himqV]{Thunderstrike}</p><hr /><p>These latticed gemstones are suspended in a silicon casing and encoded with the magical script necessary to cast a single, specific spell. Casting a spell from a spell gem requires holding the gem in one hand and activating it with a Cast a Spell activity using the normal number of actions for that spell. The spell must appear on your spell list. Because you're the one Casting the Spell, use your spell attack modifier and spell DC. The spell must be of your spellcasting tradition. The spell in a spell gem can be cast only once, and the spell gem is destroyed as part of the casting. Spell gems can't contain cantrips or rituals. The traits for this item vary based on the spell it contains.</p>\n<p><strong>Activate</strong> Cast a Spell</p>\n<p><strong>Effect</strong> You Cast the Spell at the indicated rank.</p>"
+                },
+                "ammo->Chem Tank (Commercial)": {
+                    "name": "Chem Tank (Commercial)"
+                },
+                "strike-melee->Baton": {
+                    "name": "Baton"
+                },
+                "strike-melee->Zero Pistol": {
+                    "name": "Zero Pistol"
+                }
+            }
+        },
+        "Frozen Trove Security Specialist": {
+            "name": "Frozen Trove Security Specialist",
+            "items": {
+                "weapon->Laser Rifle": {
+                    "name": "Laser Rifle",
+                    "description": "<p><strong>Upgrades:</strong> 1</p><hr /><p>These dependable, mass-produced rifles shoot concentrated beams of energy out of square-shaped barrels. The universal standard Pact Worlds model is highly modifiable and designed to function with a variety of accessories and upgrades, with wielders adapting the laser rifle to their preferences and even kit-bashing it into a nearly unrecognizable weapon.</p>"
+                },
+                "armor->Shotalashu Armor": {
+                    "name": "Shotalashu Armor",
+                    "description": "<p><strong>Upgrades:</strong> 1</p><hr /><p>Flexible but sturdy plates layered together form this traditional armor worn by lashunta cavalry on Castrovel. In times past, a shotalashu cavalry member forged their armor from their mount's shed skin, or more rarely, the skin of a fallen mount, to honor them in future battles. Synthetic imitations are fashionable on some parts of Castrovel.</p>"
+                },
+                "consumable->Medpatch (Commercial)": {
+                    "name": "Medpatch (Commercial)",
+                    "description": "<p><strong>Activate</strong> <span class=\"action-glyph\">1</span> (manipulate)</p><hr /><p>Medpatches accelerate the body's natural healing. You regain @Damage[(1d6)[healing]] Hit Points and gain a +1 item bonus to saving throws against diseases and poisons for 10 minutes.</p>\n<p>@UUID[Compendium.sf2e.equipment-effects.Item.VKSOvJQMwUby4fba]{Effect: Medpatch}</p>"
+                },
+                "ammo->Battery (Commercial)": {
+                    "name": "Battery (Commercial)"
+                },
+                "strike-melee->Laser Rifle": {
+                    "name": "Laser Rifle"
+                },
+                "strike-melee->Claw": {
+                    "name": "Claw"
+                },
+                "action->Dragonkin Breath": {
+                    "name": "Dragonkin Breath",
+                    "description": "<p>The dragonkin exhales a @Template[type:cone|distance:15] of fire that deals @Damage[2d4[fire]|options:area-damage] damage (@Check[reflex|dc:13|basic] save). They can't use Dragonkin Breath again for [[/gmr 1d4 #Recharge Dragonkin Breath]]{1d4 rounds}.</p>"
+                }
+            }
+        },
+        "Functionary Agent": {
+            "name": "Functionary Agent",
+            "items": {
+                "weapon->Incendiary Grenade (Commercial)": {
+                    "name": "Incendiary Grenade (Commercial)",
+                    "description": "<p><strong>Activate</strong> <span class=\"action-glyph\">1</span> Area Fire</p>\n<p><strong>Critical</strong> 5 feet</p><hr /><p>These grenades use an ignited chemical to explode in a blast of intense heat and deal 1d8 fire damage with a @Check[reflex|against:class|basic] save (@Template[burst|distance:5]). If you have access to the critical specialization effect of grenades, creatures who critically fail their saving throw against incendiary grenades are knocked away from the grenade.</p>"
+                },
+                "weapon->Pulsecaster Pistol": {
+                    "name": "Pulsecaster Pistol",
+                    "description": "<p><strong>Upgrades:</strong> 1</p><hr /><p>This imposing pistol fires a jolt of paralyzing electricity from its barrel. Its remaining charges are visible as glowing lines of energy radiating down its body. Pulsecaster pistols are often used by bounty hunters and law enforcement who need to keep their targets alive.</p>"
+                },
+                "weapon->Singing Spear": {
+                    "name": "Singing Spear",
+                    "description": "<p><strong>Upgrades:</strong> 1</p><hr /><p>Classically shaped like an oversized musical note, this spear intones melodious pitches when it strikes, creating a new song with each battle.</p>"
+                },
+                "armor->Armored Coat": {
+                    "name": "Armored Coat",
+                    "description": "<p><strong>Upgrades:</strong> 1</p><hr /><p>This overcoat is made of real or synthetic leather and reinforced with armored plates. Armored coats are often tailor-made to match the wearer's personal style. Standard versions are issued to military officers as part of their uniforms.</p>"
+                },
+                "ammo->Battery (Commercial)": {
+                    "name": "Battery (Commercial)"
+                },
+                "strike-melee->Singing Spear": {
+                    "name": "Singing Spear"
+                },
+                "strike-melee->Pulsecaster Pistol": {
+                    "name": "Pulsecaster Pistol"
+                },
+                "strike-melee->Incendiary Grenade": {
+                    "name": "Incendiary Grenade"
+                }
+            }
+        },
+        "Girendal": {
+            "name": "Girendal",
+            "sensesDetails": "electrolocation (precise) 30 feet",
+            "items": {
+                "strike-melee->Jaws": {
+                    "name": "Jaws"
+                },
+                "strike-melee->Claw": {
+                    "name": "Claw"
+                },
+                "strike-melee->Tentacles": {
+                    "name": "Tentacles"
+                },
+                "action->Electrolocation": {
+                    "name": "Electrolocation",
+                    "description": "<p>The creature can sense the electric field given off by living creatures, allowing them to precisely target living creatures without using visual means.</p>"
+                },
+                "action->Constrict": {
+                    "name": "Constrict",
+                    "description": "<p>@Damage[(1d4+3)[bludgeoning]], @Check[fortitude|dc:15|basic]</p><hr /><p>@Localize[PF2E.NPC.Abilities.Glossary.Constrict]</p>"
+                },
+                "action->Grasping Leap": {
+                    "name": "Grasping Leap",
+                    "description": "<p>The girendal Leaps up to its Speed, and then makes an Athletics check to [[/act grapple]] a target within reach of its tentacles. On a critical success the target is additionally knocked @UUID[Compendium.sf2e.conditions.Item.j91X7x0XSomq8d60]{Prone}.</p>"
+                },
+                "action->Grab": {
+                    "name": "Grab"
+                }
+            }
+        },
+        "Ichor Mite": {
+            "name": "Ichor Mite",
+            "items": {
+                "strike-melee->Bite": {
+                    "name": "Bite"
+                },
+                "strike-melee->Pedipalp": {
+                    "name": "Pedipalp"
+                },
+                "action->Attach": {
+                    "name": "Attach",
+                    "description": "<p>When the ichor mite bites a creature larger than itself, its mouth parts attach it to that creature. This is similar to Grabbing the creature, but the ichor mite moves with the creature rather than holding it in place. The ichor mite is @UUID[Compendium.sf2e.conditions.Item.AJh5ex99aV6VTggg]{Off-Guard} while attached.</p>"
+                }
+            }
+        },
+        "Ichorwell Handler": {
+            "name": "Ichorwell Handler",
+            "blurb": "Agender orocoran",
+            "languagesDetails": "Telepathy 60 feet",
+            "items": {
+                "spellcastingEntry->Occult Innate Spells": {
+                    "name": "Occult Innate Spells"
+                },
+                "strike-melee->Proboscis": {
+                    "name": "Proboscis"
+                },
+                "strike-melee->Projectile Vomit": {
+                    "name": "Projectile Vomit"
+                },
+                "action->Hallucinate": {
+                    "name": "Hallucinate",
+                    "description": "<p>An Ichorwell handler's stomach fluids are laced with hallucinogens. A creature hit with projectile vomit must succeed at a @Check[will|dc:13] save or be @UUID[Compendium.sf2e.conditions.Item.yblD8fOR1J8rDwEQ]{Confused} for 1 round.</p>"
+                }
+            }
+        },
+        "Ichorwell Raider": {
+            "name": "Ichorwell Raider",
+            "blurb": "Agender orocorans",
+            "languagesDetails": "Telepathy 60 feet",
+            "items": {
+                "spellcastingEntry->Occult Innate Spells": {
+                    "name": "Occult Innate Spells"
+                },
+                "armor->Freebooter Armor": {
+                    "name": "Freebooter Armor",
+                    "description": "<p><strong>Upgrades:</strong> 1</p><hr /><p>Freebooter armor is named for the pirates and outlaws who often wear these outfits. Freebooter armor typically consists of a breastplate worn under a jacket or flight suit, heavy boots and gloves, a helmet, and hidden straps and holsters for concealing weapons.</p>"
+                },
+                "strike-melee->Proboscis": {
+                    "name": "Proboscis"
+                },
+                "strike-melee->Projectile Vomit": {
+                    "name": "Projectile Vomit"
+                },
+                "action->Siphon Blood": {
+                    "name": "Siphon Blood",
+                    "description": "<p><strong>Requirements</strong> The Ichorwell raider has a creature @UUID[Compendium.sf2e.conditions.Item.kWc1fhmv9LBiTuei]{Grabbed}</p><hr /><p><strong>Effect</strong> The raider uses its proboscis to drink the blood of the grabbed creature, dealing @Damage[1d4[untyped]] damage. A creature that has its blood drained by a raider is @UUID[Compendium.sf2e.conditions.Item.4D2KBtexWXa6oUMR]{Drained 1} until it receives healing of any kind or amount.</p>"
+                },
+                "action->Spew Vomit": {
+                    "name": "Spew Vomit",
+                    "description": "<p>The Ichorwell raider spews vomit in a @Template[type:cone|distance:15], dealing @Damage[2d6[acid]|options:area-damage] damage (@Check[fortitude|dc:16|basic] save). The Ichorwell raider can't Spew Vomit again for [[/gmr 1d4 #Recharge Spew Vomit]]{1d4 rounds}.</p>"
+                },
+                "action->Grab": {
+                    "name": "Grab"
+                }
+            }
+        },
+        "Jellied Rat King": {
+            "name": "Jellied Rat King",
+            "hpDetails": "void healing",
+            "items": {
+                "strike-melee->Jaws": {
+                    "name": "Jaws"
+                },
+                "strike-melee->Claw": {
+                    "name": "Claw"
+                },
+                "strike-melee->Rat Bone Spit": {
+                    "name": "Rat Bone Spit"
+                },
+                "action->Void Healing": {
+                    "name": "Void Healing"
+                },
+                "action->Corpse Chorus": {
+                    "name": "Corpse Chorus",
+                    "description": "<p>The jellied rat king loosens its ooze-like flesh, allowing the tiny rat corpses inside of it to open their mouths and wail horrifically. All creatures within 30 feet must succeed on a @Check[will|dc:15|options:area-effect,inflicts:frightened] save or become @UUID[Compendium.sf2e.conditions.Item.TBSHQspnbcqxsmjL]{Frightened 1} (@UUID[Compendium.sf2e.conditions.Item.TBSHQspnbcqxsmjL]{Frightened 2} on a critical failure).</p>"
+                },
+                "action->Dance of the Jellied Rats": {
+                    "name": "Dance of the Jellied Rats",
+                    "description": "<p>The jellied rat king spins and swirls, letting the tiny rat corpses inside of it bulge out inside its body like bludgeons. It deals @Damage[2d6[bludgeoning]|options:area-damage] damage to all creatures in a @Template[type:emanation|distance:10] (@Check[reflex|dc:15|basic|options:area-effect] save).</p>"
+                },
+                "action->Primordial Plague": {
+                    "name": "Primordial Plague",
+                    "description": "<p>A living creature struck by a jellied rat king's slam must attempt a @Check[fortitude|dc:15] save. On a failure, the creature becomes @UUID[Compendium.sf2e.conditions.Item.fesd1n5eVhpCSS18]{Sickened 1}. If the creature is already sickened, the value of their sickened condition increases by 1, to a maximum of @UUID[Compendium.sf2e.conditions.Item.fesd1n5eVhpCSS18]{Sickened 2}. When a creature succeeds at its saving throw, it is temporarily immune to primordial plague for 24 hours.</p>"
+                }
+            }
+        },
+        "Junkslug Turret": {
+            "name": "Junkslug Turret",
+            "descriptionHazard": "<p>A haphazardly constructed slug thrower with a barrel of discarded munitions, nails, and shrapnel has an advanced laser targeting system to identify and attack enemies.</p>",
+            "disable": "<p>@Check[computers|dc:17] (trained) to override the targeting system's friend/foe profiles, @Check[crafting|dc:15] (trained) to cut the turret's power, or @Check[thievery|dc:17] (trained) to disable the turret.</p>",
+            "reset": "<p>The trap resets after 1 minute.</p>",
+            "routine": "<p>(2 actions) The turret makes a junkslug Strike against up to two creatures in range, or multiple Strikes against a single creature in range if it has no additional targets.</p>",
+            "stealth": "<p>(trained)</p>",
+            "items": {
+                "action->Junk Volley": {
+                    "name": "Junk Volley",
+                    "description": "<p><strong>Trigger</strong> An enemy creature moves within 30 feet of the turret</p><hr /><p><strong>Effect</strong> The turret makes a junkslug Strike against the triggering creature, then rolls initiative.</p>"
+                },
+                "strike-melee->Junkslug": {
+                    "name": "Junkslug"
+                }
+            }
+        },
+        "Kaylix": {
+            "name": "Kaylix",
+            "items": {
+                "strike-melee->Claw": {
+                    "name": "Claw"
+                },
+                "strike-melee->Fangs": {
+                    "name": "Fangs"
+                },
+                "strike-melee->Quill": {
+                    "name": "Quill"
+                },
+                "action->Arctic Adaptation": {
+                    "name": "Arctic Adaptation",
+                    "description": "<p>The kaylix treats environmental cold effects as if they were two steps less severe, and it isn't impeded by difficult terrain caused by snow, permafrost, ice, or other arctic terrain.</p>"
+                },
+                "action->Defensive Fling": {
+                    "name": "Defensive Fling",
+                    "description": "<p><strong>Requirements</strong> The kaylix has a creature @UUID[Compendium.sf2e.conditions.Item.kWc1fhmv9LBiTuei]{Grabbed}</p>\n<p><strong>Trigger</strong> A creature other than the one the kaylix has grabbed makes a melee or ranged attack against the kaylix from within the range of the kaylix's quill Strike</p><hr /><p><strong>Effect</strong> The kaylix makes a quill Strike against the attacking creature. This Strike doesn't count toward the kaylix's multiple attack penalty, and its multiple attack penalty doesn't apply to this Strike.</p>"
+                },
+                "action->Concealing Condensation": {
+                    "name": "Concealing Condensation",
+                    "description": "<p>The kaylix opens gill-like vents on the side of its neck and releases hot, moist air that forms a concealing cloud of white mist in a @Template[type:emanation|distance:20] centered on its location. This mist lingers until the end of the kaylix's next turn. All creatures within the mist become @UUID[Compendium.sf2e.conditions.Item.DmAIPqOBomZ7H95W]{Concealed}, and all creatures outside the mist become concealed to creatures within it.</p>"
+                },
+                "action->Pounce": {
+                    "name": "Pounce",
+                    "description": "<p>The kaylix Strides and makes a Strike at the end of that movement. If the kaylix began this action @UUID[Compendium.sf2e.conditions.Item.iU0fEDdBp3rXpTMC]{Hidden}, it remains hidden until after the attack.</p>"
+                },
+                "action->Sneak Attack": {
+                    "name": "Sneak Attack",
+                    "description": "<p>The kaylix deals 1d6 extra precision damage to @UUID[Compendium.sf2e.conditions.Item.AJh5ex99aV6VTggg]{Off-Guard} creatures.</p>"
+                }
+            },
+            "skills": {
+                "stealth": {
+                    "label": "in its natural environment of snowy forests"
+                }
+            }
+        },
+        "Landmine": {
+            "name": "Landmine",
+            "descriptionHazard": "<p>A simple landmine buried in the ground explodes when pressure is applied.</p>",
+            "disable": "<p>@Check[crafting|dc:12], @Check[survival|dc:12], or @Check[thievery|dc:12] to carefully deactivate the mine's trigger</p>",
+            "items": {
+                "action->Explode": {
+                    "name": "Explode",
+                    "description": "<p><strong>Trigger</strong> a creature enters the landmine's area</p><hr /><p><strong>Effect</strong> The landmine explodes, dealing @Damage[1d4[piercing]|options:area-damage] damage to all creatures in a @Template[type:emanation|distance:5] (@Check[reflex|dc:16|basic|options:area-effect] save)</p>"
+                }
+            }
+        },
+        "Laser Turret": {
+            "name": "Laser Turret",
+            "descriptionHazard": "<p>A ceiling mounted turret fires a laser when intruders approach area <strong>B13</strong>.</p>",
+            "disable": "<p>@Check[computers|dc:18] (trained) to reprogram the turret, or @Check[crafting|dc:17] (trained) to cut power to the turret, or @Check[thievery|dc:16] (trained) to disable the turret</p>",
+            "routine": "<p>(3 actions) The trap makes three laser Strikes, each targeting a different creature unless there are fewer than three creatures in range.</p>",
+            "stealth": "<p>(trained)</p>",
+            "items": {
+                "action->Laser Blast": {
+                    "name": "Laser Blast",
+                    "description": "<p><strong>Trigger</strong> A creature moves within 30 feet of the turret</p><hr /><p><strong>Effect</strong> The trap makes a laser Strike against the creature. The trap then rolls initiative.</p>"
+                },
+                "strike-melee->Laser": {
+                    "name": "Laser"
+                }
+            }
+        },
+        "Newborn Disciple": {
+            "name": "Newborn Disciple",
+            "items": {
+                "spellcastingEntry->Occult Innate Spells": {
+                    "name": "Occult Innate Spells"
+                },
+                "weapon->Aucturnite Chakram": {
+                    "name": "Aucturnite Chakram",
+                    "description": "<p><strong>Upgrades:</strong> 1</p><hr /><p>This bladed hoop is carved from a chunk of aucturnite and sculpted to resemble a planet's ring. The material has mysteriously appeared light-years from Aucturn's original orbit.</p>"
+                },
+                "weapon->Laser Pistol": {
+                    "name": "Laser Pistol",
+                    "description": "<p><strong>Upgrades:</strong> 1</p><hr /><p>This compact pistol is the most popular sidearm in the Pact Worlds thanks to its reliability, durability, and affordability. Most common laser pistols have a lightweight polycarbon body ending in a long, slim barrel.</p>"
+                },
+                "ammo->Battery (Commercial)": {
+                    "name": "Battery (Commercial)"
+                },
+                "strike-melee->Aucturnite Chakram": {
+                    "name": "Aucturnite Chakram"
+                },
+                "strike-ranged->Aucturnite Chakram": {
+                    "name": "Aucturnite Chakram"
+                },
+                "strike-melee->Laser Pistol": {
+                    "name": "Laser Pistol"
+                },
+                "lore->Newborn Lore": {
+                    "name": "Newborn Lore"
+                }
+            }
+        },
+        "Nodocite Experimenter": {
+            "name": "Nodocite Experimenter",
+            "items": {
+                "strike-melee->Motorized Bone Saw": {
+                    "name": "Motorized Bone Saw"
+                },
+                "strike-melee->Scalpel": {
+                    "name": "Scalpel"
+                },
+                "strike-melee->Needle": {
+                    "name": "Needle"
+                },
+                "action->Networked Nodocite": {
+                    "name": "Networked Nodocite",
+                    "description": "<p>A nodocite can communicate wirelessly with other nodocites within 200 feet.</p>"
+                },
+                "action->Dizzying Anesthetic": {
+                    "name": "Dizzying Anesthetic",
+                    "description": "<p><strong>Saving Throw</strong> @Check[fortitude|dc:13]</p>\n<p><strong>Maximum Duration</strong> 6 rounds</p>\n<p><strong>Stage 1</strong> @Damage[1[poison]] damage and @UUID[Compendium.sf2e.conditions.Item.i3OJZU2nk64Df3xm]{Clumsy 1} (1 round)</p>\n<p><strong>Stage 2</strong> @Damage[1d4[poison]] damage and clumsy 1 (1 round)</p>"
+                },
+                "action->Surgical Assault": {
+                    "name": "Surgical Assault",
+                    "description": "<p>The nodocite experimenter attacks all creatures adjacent to it with its scalpels in a rapid and wild assault, dealing @Damage[1d4[slashing]] damage to all creatures within reach (@Check[reflex|dc:13|basic] save).</p>"
+                }
+            }
+        },
+        "Nodocite Gunner": {
+            "name": "Nodocite Gunner",
+            "items": {
+                "weapon->Integrated Tactical Reality Ripper": {
+                    "name": "Integrated Tactical Reality Ripper",
+                    "description": "<p>This sleek rifle converts energy into projectiles of concentrated magic that tears apart matter by destroying its bindings to the reality. A reality ripper is modular and has two modes: destructive and reaping. While in destructive mode, the reality ripper deals acid damage and gains the razing trait. While in reaping mode, a reality ripper deals void damage and gains the concussive trait.</p>\n<p>A realty ripper's minimum weapon improvement is tactical, meaning its tracking +1 cannot be removed, though further improvements can be still applied.</p>"
+                },
+                "ammo->Battery (Commercial)": {
+                    "name": "Battery (Commercial)"
+                },
+                "strike-melee->Clamp": {
+                    "name": "Clamp"
+                },
+                "strike-melee->Reality Ripper": {
+                    "name": "Reality Ripper",
+                    "description": "<p>modular [acid and razing or void and concussive]</p>"
+                },
+                "action->Networked Nodocite": {
+                    "name": "Networked Nodocite",
+                    "description": "<p>A nodocite can communicate wirelessly with other nodocites within 200 feet.</p>"
+                },
+                "action->Warpwave": {
+                    "name": "Warpwave",
+                    "description": "<p><strong>Frequency</strong> once every 10 minutes</p>\n<p><strong>Trigger</strong> A creature targets the nodocite gunner with an attack</p><hr /><p><strong>Effect</strong> The nodocite gunner warps reality around itself, gaining a +2 circumstance bonus to its AC against the triggering attack.</p>"
+                },
+                "action->Assess Target": {
+                    "name": "Assess Target",
+                    "description": "<p>The nodocite gunner assesses a target within 200 feet and pinpoints gaps in their defenses. Until the end of the nodocite gunner's turn, they deal an additional 1d8 damage with their reality ripper against the Assessed Target and increase the range increment of their reality ripper to 80 feet.</p>"
+                },
+                "action->Reality Cage": {
+                    "name": "Reality Cage",
+                    "description": "<p><strong>Frequency</strong> once per hour</p><hr /><p><strong>Effect</strong> The nodocite guardian bends reality to trap one Medium or smaller creature within 60 feet in a cage of warped reality. The target must attempt a @Check[reflex|dc:20] save.</p><hr /><p><strong>Critical Success</strong> The target is unaffected, and the reality cage fails to form.</p>\n<p><strong>Success</strong> The target is hindered by reality shards, becoming @UUID[Compendium.sf2e.conditions.Item.AJh5ex99aV6VTggg]{Off-Guard} for 1 round; the reality cage fails to form.</p>\n<p><strong>Failure</strong> The target is trapped in a reality cage that lasts [[/gmr 1d4 #rounds]]{1d4 rounds}.</p>\n<p><strong>Critical Failure</strong> The target is trapped in a reality cage that lasts 1 minute. A reality cage has AC 10, Hardness 5, and 10 Hit Points (BT 5). A creature trapped in a reality cage is @UUID[Compendium.sf2e.conditions.Item.eIcWbB5o3pP6OIMe]{Immobilized} (@UUID[Compendium.sf2e.actions.Item.SkZAQRkLLkmBQNB9]{Escape} DC 20). A reality cage provides lesser cover.</p>"
+                }
+            }
+        },
+        "Nodocite Hunter": {
+            "name": "Nodocite Hunter",
+            "items": {
+                "strike-melee->Jaws": {
+                    "name": "Jaws"
+                },
+                "strike-melee->Laser Beam": {
+                    "name": "Laser Beam"
+                },
+                "action->Networked Nodocite": {
+                    "name": "Networked Nodocite",
+                    "description": "<p>A nodocite can communicate wirelessly with other nodocites within 200 feet.</p>"
+                },
+                "action->Lunging Bite": {
+                    "name": "Lunging Bite",
+                    "description": "<p>The nodocite hunter Strides up to its Speed then makes a jaws Strike. If it moved at least 15 feet with Lunging Bite, the target is @UUID[Compendium.sf2e.conditions.Item.AJh5ex99aV6VTggg]{Off-Guard} against this Strike.</p>"
+                },
+                "action->Target Lock": {
+                    "name": "Target Lock",
+                    "description": "<p><strong>Requirements</strong> The nodocite hunter's last action was a successful jaws Strike</p><hr /><p><strong>Effect</strong> The nodocite hunter assesses the biometrics and genetic material of the creature it bit, storing this genetic material in an internal cavity and locking onto the associated target's DNA. The nodocite hunter gains a +2 circumstance bonus to Perception checks to [[/act seek]] the target and Survival checks to [[/act track]] the target for 24 hours or until the nodocite hunter locks onto another target, whichever is first.</p>"
+                }
+            }
+        },
+        "Nodocite Incarcerator": {
+            "name": "Nodocite Incarcerator",
+            "items": {
+                "strike-melee->Claw": {
+                    "name": "Claw"
+                },
+                "strike-melee->Extend-A-Claw": {
+                    "name": "Extend-A-Claw"
+                },
+                "strike-melee->Head Cannon": {
+                    "name": "Head Cannon"
+                },
+                "action->Networked Nodocite": {
+                    "name": "Networked Nodocite",
+                    "description": "<p>A nodocite can communicate wirelessly with other nodocites within 200 feet.</p>"
+                },
+                "action->Catchapon": {
+                    "name": "Catchapon",
+                    "description": "<p><strong>Requirements</strong> A @UUID[Compendium.sf2e.conditions.Item.kWc1fhmv9LBiTuei]{Grabbed}, @UUID[Compendium.sf2e.conditions.Item.eIcWbB5o3pP6OIMe]{Immobilized}, @UUID[Compendium.sf2e.conditions.Item.6uEgoh53GbXuHpTF]{Paralyzed}, @UUID[Compendium.sf2e.conditions.Item.VcDeM8A5oI6VqhbM]{Restrained}, or @UUID[Compendium.sf2e.conditions.Item.fBnFDH2MTzgFijKf]{Unconscious} creature is within 15 feet of the nodocite incarcerator</p><hr /><p><strong>Effect</strong> The nodocite incarcerator attempts to inhale the required creature. The target must attempt a @Check[fortitude|dc:18] save. On a failure, they're pulled into a miniaturized pocket dimension in a clear polymer ball and stored in the nodocite incarcerator's dorsal chamber.</p>\n<p>Each polymer ball weighs light Bulk and contains an individual pocket dimension that can hold one creature of any size at a time. Creatures inside are held in stasis, immune to the effects of time and dying, and are unable to act until released. A nodocite incarcerator can store an unlimited number of polymer balls in its dorsal chamber. When a nodocite incarcerator is destroyed, it automatically Vends all the polymer balls in its dorsal chamber.</p>\n<p>A creature within reach of the nodocite incarcerator can attempt a DC 15 Athletics check to [[/act force-open dc=15]] or a @Check[computers|dc:15], @Check[crafting|dc:15], or DC 15 Thievery check to [[/act disable-device dc=15]]; on a success, rather than the usual effects, the nodocite incarcerator immediately Vends one polymer ball (or two polymer balls on a critical success). It Vends the most recently filled polymer ball.</p>\n<p>A creature holding a polymer ball can throw the polymer ball up to 20 feet away as a single action with the manipulate trait, releasing the contained creature into an adjacent space, restored to their normal size and in the state they were when they were captured in the polymer ball.</p>"
+                },
+                "action->Vend": {
+                    "name": "Vend",
+                    "description": "<p>The nodocite incarcerator ejects the most recently filled polymer ball into an adjacent square.</p>"
+                },
+                "action->Grab": {
+                    "name": "Grab"
+                }
+            }
+        },
+        "Nodocite Sentry": {
+            "name": "Nodocite Sentry",
+            "items": {
+                "weapon->Incendiary Grenade (Commercial)": {
+                    "name": "Incendiary Grenade (Commercial)",
+                    "description": "<p><strong>Activate</strong> <span class=\"action-glyph\">1</span> Area Fire</p>\n<p><strong>Critical</strong> 5 feet</p><hr /><p>These grenades use an ignited chemical to explode in a blast of intense heat and deal 1d8 fire damage with a @Check[reflex|against:class|basic] save (@Template[burst|distance:5]). If you have access to the critical specialization effect of grenades, creatures who critically fail their saving throw against incendiary grenades are knocked away from the grenade.</p>"
+                },
+                "strike-melee->Battering Fist": {
+                    "name": "Battering Fist"
+                },
+                "action->Networked Nodocite": {
+                    "name": "Networked Nodocite",
+                    "description": "<p>A nodocite can communicate wirelessly with other nodocites within 200 feet.</p>"
+                },
+                "action->Block Path": {
+                    "name": "Block Path",
+                    "description": "<p><strong>Trigger</strong> A creature within the nodocite's reach uses a move action or leaves a square during a move action it's using</p><hr /><p><strong>Effect</strong> The nodocite sentry makes a melee Strike against the triggering creature. On a hit, the target's movement is additionally disrupted.</p>"
+                },
+                "action->Area Fire": {
+                    "name": "Area Fire",
+                    "description": "<p>Incendiary Grenade (@Template[type:burst|distance:5], range 70 feet)</p>\n<p><strong>Damage</strong> @Damage[1d8[fire]|options:area-damage] (@Check[reflex|dc:17|basic])</p>"
+                },
+                "action->Push": {
+                    "name": "Push"
+                }
+            }
+        },
+        "Nodocite Surveiller": {
+            "name": "Nodocite Surveiller",
+            "items": {
+                "strike-melee->Spherical Body": {
+                    "name": "Spherical Body"
+                },
+                "strike-melee->Laser Beam": {
+                    "name": "Laser Beam"
+                },
+                "action->Networked Nodocite": {
+                    "name": "Networked Nodocite",
+                    "description": "<p>A nodocite can communicate wirelessly with other nodocites within 200 feet.</p>"
+                },
+                "action->Reality Bubble": {
+                    "name": "Reality Bubble",
+                    "description": "<p><strong>Frequency</strong> once per minute</p>\n<p><strong>Trigger</strong> A creature attempts to move within 30 feet of the nodocite surveiller</p><hr /><p><strong>Effect</strong> The nodocite surveiller creates a bubble of disruptive magic, causing reality to ripple and warp around the triggering creature. The ground in a @Template[type:burst|distance:10] around the triggering creature becomes difficult terrain.</p>"
+                },
+                "action->Record Video": {
+                    "name": "Record Video",
+                    "description": "<p>The nodocite surveiller records or stops recording its surroundings, automatically transmitting everything it records to the <em>Wreck of the Returned</em>. Destroying or removing a nodocite surveiller's recording capabilities requires a successful @Check[thievery|dc:14] check to [[/act disable-device]].</p>"
+                }
+            }
+        },
+        "Officer Kanren": {
+            "name": "Officer Kanren",
+            "acDetails": "(19 with shield raised",
+            "items": {
+                "weapon->Semi-Auto Pistol": {
+                    "name": "Semi-Auto Pistol",
+                    "description": "<p><strong>Upgrades:</strong> 1</p><hr /><p>This pistol automatically ejects used cartridges and loads new ammunition after every shot fired.</p>"
+                },
+                "weapon->Plasma Sword": {
+                    "name": "Plasma Sword",
+                    "description": "<p><strong>Upgrades:</strong> 1</p><hr /><p>This sword generates a focused beam of plasma around a localized force field powered by a generator in the sword's hilt. The beam only blazes to life when the sword is powered.</p>"
+                },
+                "weapon->Incendiary Grenade (Commercial)": {
+                    "name": "Incendiary Grenade (Commercial)",
+                    "description": "<p><strong>Activate</strong> <span class=\"action-glyph\">1</span> Area Fire</p>\n<p><strong>Critical</strong> 5 feet</p><hr /><p>These grenades use an ignited chemical to explode in a blast of intense heat and deal 1d8 fire damage with a @Check[reflex|against:class|basic] save (@Template[burst|distance:5]). If you have access to the critical specialization effect of grenades, creatures who critically fail their saving throw against incendiary grenades are knocked away from the grenade.</p>"
+                },
+                "shield->Carbon Shield": {
+                    "name": "Carbon Shield",
+                    "description": "<p>This durable yet lightweight defensive plate comes in a variety of shapes and sizes, and it's often customized with LED displays that broadcast personal insignia or an organization's colors and symbols.</p>"
+                },
+                "armor->Defiance Series": {
+                    "name": "Defiance Series",
+                    "description": "<p><strong>Upgrades:</strong> 1</p><hr /><p>This squad armor is a molded shell of reinforced polycarbon with a helmet and retractable visor.</p>"
+                },
+                "ammo->Projectile Ammo": {
+                    "name": "Projectile Ammo"
+                },
+                "ammo->Battery (Commercial)": {
+                    "name": "Battery (Commercial)"
+                },
+                "strike-melee->Plasma Sword": {
+                    "name": "Plasma Sword"
+                },
+                "strike-melee->Semi-Auto Pistol": {
+                    "name": "Semi-Auto Pistol"
+                },
+                "strike-melee->Incendiary Grenade (Commercial)": {
+                    "name": "Incendiary Grenade (Commercial)"
+                },
+                "strike-melee->Shield Bash": {
+                    "name": "Shield Bash"
+                },
+                "action->Reactive Strike": {
+                    "name": "Reactive Strike"
+                },
+                "action->Shield Block": {
+                    "name": "Shield Block"
+                },
+                "action->Eclipse Beam": {
+                    "name": "Eclipse Beam",
+                    "description": "<p>Kanren channels destructive energy into his blade or shield then thrusts it forward, unleashing black hellfire in a @Template[type:line|distance:30]. Creatures in the area are dealt @Damage[2d6[fire]|options:area-damage] damage and can attempt a @Check[reflex|dc:15|basic] save. On a critical failure, a creature is additionally @UUID[Compendium.sf2e.conditions.Item.fesd1n5eVhpCSS18]{Sickened 1}.</p>"
+                },
+                "lore->Hellknight Lore": {
+                    "name": "Hellknight Lore"
+                }
+            }
+        },
+        "Plasma Penguin": {
+            "name": "Plasma Penguin",
+            "items": {
+                "strike-melee->Plasma Body": {
+                    "name": "Plasma Body"
+                },
+                "action->Fireworks": {
+                    "name": "Fireworks",
+                    "description": "<p><strong>Trigger</strong> The plasma penguin is reduced to 0 Hit Points</p><hr /><p><strong>Effect</strong> The plasma penguin explodes in a burst of fireworks, dealing @Damage[1d4[electricity],1d4[fire]|options:area-damage] damage in a @Template[type:emanation|distance:5] (@Check[reflex|dc:13|basic|options:area-effect] save).</p>"
+                },
+                "action->Plasma Slide": {
+                    "name": "Plasma Slide",
+                    "description": "<p>The plasma penguin Drops Prone, moves up to twice its Speed by sliding on its stomach, then Stands. It can then attempt a melee Strike against a creature within reach.</p>"
+                },
+                "action->Push": {
+                    "name": "Push"
+                }
+            }
+        },
+        "Psychic Turmoil": {
+            "name": "Psychic Turmoil",
+            "descriptionHazard": "<p>The collective minds of Luvoth's sapient inhabitants lash out at the unknown in a storm of psychic confusion, fear, anger and pain.</p>",
+            "disable": "<p>@Check[arcana|dc:16], @Check[nature|dc:16], @Check[religion|dc:16] or @Check[occultism|dc:16] (trained) to soothe the restless emotions with prayer, meditative chanting, or magical rituals; three total checks are required to disable the hazard. The hazard is permanently disabled when the beyond terror is defeated.</p>",
+            "reset": "<p>The hazard remains active as long as the beyond terror is alive and doesn't reset once it's disabled or the beyond terror is defeated.</p>",
+            "routine": "<p>(1 action) On each of its turns, the hazard targets one of the PCs at random, dealing @Damage[2d4[mental]] damage with a @Check[will|dc:16|basic] save. On a failure, the target also becomes @UUID[Compendium.sf2e.conditions.Item.e1XGnhKNSQIm5IXg]{Stupefied 1}; on a critical failure, they become @UUID[Compendium.sf2e.conditions.Item.e1XGnhKNSQIm5IXg]{Stupefied 2}.</p>",
+            "items": {
+                "action->Gathering Storm": {
+                    "name": "Gathering Storm",
+                    "description": "<p><strong>Trigger</strong> The beyond terror appears</p><hr /><p><strong>Effect</strong> A swirling green energy emerges from the world mirror, roiling through the air with a wail of confusion and fear. All creatures within 30 feet of the world mirror become @UUID[Compendium.sf2e.conditions.Item.TBSHQspnbcqxsmjL]{Frightened 1} unless they succeed at a @Check[will|dc:16] save. The haunt then rolls initiative.</p>"
+                }
+            }
+        },
+        "Quildebeest": {
+            "name": "Quildebeest",
+            "items": {
+                "strike-melee->Horns": {
+                    "name": "Horns"
+                },
+                "strike-melee->Jaws": {
+                    "name": "Jaws"
+                },
+                "strike-melee->Claw": {
+                    "name": "Claw"
+                },
+                "strike-melee->Quill": {
+                    "name": "Quill"
+                },
+                "action->Flare Quills": {
+                    "name": "Flare Quills",
+                    "description": "<p><strong>Trigger</strong> The quildebeest is hit with an unarmed Strike or a Strike with a non-reach melee weapon</p><hr /><p><strong>Effect</strong> The quildebeest flares its crystalline quills, harming its attacker. The triggering creature is dealt @Damage[1d8[piercing]] damage (@Check[reflex|dc:18|basic] save).</p>"
+                },
+                "action->Subsonic Harmonics": {
+                    "name": "Subsonic Harmonics",
+                    "description": "<p>The quildebeest unleashes a powerful sonic roar that deals @Damage[5d6[sonic]|options:area-damage] damage in a @Template[type:cone|distance:30] (@Check[fortitude|dc:18|basic] save). On a critical failure, a creature is additionally @UUID[Compendium.sf2e.conditions.Item.fesd1n5eVhpCSS18]{Sickened 1}, as the subsonic frequencies batter their internal organs. A quildebeest can't use Subsonic Harmonics again for [[/gmr 1d4 #Recharge Subsonic Harmonics]]{1d4 rounds}.</p>"
+                }
+            }
+        },
+        "Reality Cyclone": {
+            "name": "Reality Cyclone",
+            "descriptionHazard": "<p>A damaged device unleashes a blast of magical energy, which coalesces into a cyclone that degrades reality.</p>",
+            "disable": "<p>@Check[arcana|dc:17] or @Check[nature|dc:17] (trained) to diffuse magical energy, @Check[crafting|dc:18] or @Check[computers|dc:18] (trained) to shut down the device, @Check[occultism|dc:17] to stabilize reality, @Check[thievery|dc:18] (trained) to destabilize the cyclone, or @UUID[Compendium.sf2e.spells.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (2nd rank; counteract DC 16) to counteract the cyclone</p>",
+            "routine": "<p>(2 actions) The cyclone moves up to 30 feet toward the nearest living creature, then churns in place, degrading reality. All living creatures within 10 feet of the cyclone are dealt @Damage[1d8[acid]] damage, or @Damage[2d8[acid]] damage if the cyclone is in their space (@Check[reflex|dc:20|basic] save).</p>",
+            "stealth": "<p>(trained) or @UUID[Compendium.sf2e.spells.Item.gpzpAAAJ1Lza2JVl]{Detect Magic}</p>",
+            "items": {
+                "action->Form Cyclone": {
+                    "name": "Form Cyclone",
+                    "description": "<p><strong>Trigger</strong> A living creature disturbs the debris in area <strong>A2</strong></p><hr /><p><strong>Effect</strong> A cyclone of magical energy forms around the triggering creature, dealing @Damage[2d8[acid]] damage (@Check[reflex|dc:20|basic]). This cyclone is 5-feet in diameter and 20-feet high. The trap then rolls initiative.</p>"
+                }
+            }
+        },
+        "Reality-Warped Khefak": {
+            "name": "Reality-Warped Khefak",
+            "items": {
+                "strike-melee->Giant Claw": {
+                    "name": "Giant Claw"
+                },
+                "strike-melee->Mandibles": {
+                    "name": "Mandibles"
+                },
+                "action->Gnaw Scrap": {
+                    "name": "Gnaw Scrap",
+                    "description": "<p>A khefak chews on an unattended object to feed, dealing @Damage[4[piercing]] damage every 10 minutes to the object. This damage ignores 10 points of Hardness. If a khefak doesn't spend at least 1 hour Gnawing Scrap per day, it begins to starve until it spends 10 minutes Gnawing Scrap.</p>"
+                },
+                "action->Tail Blast": {
+                    "name": "Tail Blast",
+                    "description": "<p>The khefak flicks its tail, unleashing a blast of volatile magic that deals @Damage[3d6[acid]|options:area-damage] damage in a @Template[type:line|distance:60] (@Check[reflex|dc:18|basic] save). It can't use Tail Blast again for [[/gmr 1d4 #Recharge Tail Blast]]{1d4 rounds}.</p>"
+                }
+            }
+        },
+        "Rip": {
+            "name": "Rip",
+            "blurb": "Female shobhad",
+            "items": {
+                "weapon->Rotolaser": {
+                    "name": "Rotolaser",
+                    "description": "<p><strong>Upgrades:</strong> 1</p><hr /><p>A rotolaser fires multiple beams of plasma at once. This massive assault rifle has a set of rotating barrels that prevent overheating when spewing auto-fire.</p>"
+                },
+                "armor->Freebooter Armor": {
+                    "name": "Freebooter Armor",
+                    "description": "<p><strong>Upgrades:</strong> 1</p><hr /><p>Freebooter armor is named for the pirates and outlaws who often wear these outfits. Freebooter armor typically consists of a breastplate worn under a jacket or flight suit, heavy boots and gloves, a helmet, and hidden straps and holsters for concealing weapons.</p>"
+                },
+                "ammo->Battery (Advanced)": {
+                    "name": "Battery (Advanced)"
+                },
+                "strike-melee->Rotolaser": {
+                    "name": "Rotolaser"
+                },
+                "strike-melee->Fist": {
+                    "name": "Fist"
+                },
+                "action->Defensive Shove": {
+                    "name": "Defensive Shove",
+                    "description": "<p><strong>Trigger</strong> An enemy ends a move action adjacent to Rip</p><hr /><p><strong>Effect</strong> Rip attempts to [[/act shove]] the triggering creature. If she would critically fail, she gets a failure instead.</p>"
+                },
+                "action->Pinpoint Fire": {
+                    "name": "Pinpoint Fire",
+                    "description": "<p>Whenever Rip Auto-Fires her rotolaser, she excludes Tear from the area. Creatures that fail their save against her Auto-Fire are @UUID[Compendium.sf2e.conditions.Item.enA7BxAjBb7ns1iF]{Suppressed} until the beginning of her next turn.</p>"
+                }
+            }
+        },
+        "Robotic Oil": {
+            "name": "Robotic Oil",
+            "items": {
+                "strike-melee->Pseudopod": {
+                    "name": "Pseudopod"
+                },
+                "strike-melee->Caustic Spatter": {
+                    "name": "Caustic Spatter"
+                },
+                "action->Motion Sense": {
+                    "name": "Motion Sense",
+                    "description": "<p>A robotic oil can feel nearby motion through vibration and air movement.</p>"
+                },
+                "action->Reparative Spray": {
+                    "name": "Reparative Spray",
+                    "description": "<p><strong>Frequency</strong> once per hour</p><hr /><p><strong>Effect</strong> The robotic oil sprays fluids in a @Template[type:emanation|distance:10]. All constructs in the area are repaired, regaining @Damage[1d6[healing]] Hit Points. All non-constructs in the area are dealt @Damage[2d6[acid]|options:area-damage] damage with a @Check[reflex|dc:16|basic] save.</p>"
+                }
+            }
+        },
+        "Shosodax": {
+            "name": "Shosodax",
+            "blurb": "Agender orocoran",
+            "languagesDetails": "Telepathy 60 feet",
+            "items": {
+                "spellcastingEntry->Occult Innate Spells": {
+                    "name": "Occult Innate Spells"
+                },
+                "weapon->Reaction Breacher": {
+                    "name": "Reaction Breacher",
+                    "description": "<p><strong>Upgrades:</strong> 1</p><hr /><p>This portable reaction cannon launches flak from miniature cluster missiles that rip through a fortified structure and anyone unfortunate enough to be inside.</p>"
+                },
+                "armor->Armored Coat": {
+                    "name": "Armored Coat",
+                    "description": "<p><strong>Upgrades:</strong> 1</p><hr /><p>This overcoat is made of real or synthetic leather and reinforced with armored plates. Armored coats are often tailor-made to match the wearer's personal style. Standard versions are issued to military officers as part of their uniforms.</p>"
+                },
+                "ammo->Projectile Ammo": {
+                    "name": "Projectile Ammo"
+                },
+                "strike-melee->Proboscis": {
+                    "name": "Proboscis"
+                },
+                "strike-melee->Projectile Vomit": {
+                    "name": "Projectile Vomit"
+                },
+                "strike-melee->Reaction Breacher": {
+                    "name": "Reaction Breacher"
+                },
+                "action->Psychic Resonance": {
+                    "name": "Psychic Resonance",
+                    "description": "<p>Shosodax has forged an intense psychic connection with their reaction breacher, channeling their hatred into every shot fired and wound inflicted. They deal an additional 1d8 mental damage with their reaction breacher (already included in damage) and their reaction breacher gains the magical trait.</p>"
+                },
+                "action->Raider's Assault": {
+                    "name": "Raider's Assault",
+                    "description": "<p>Shosodax makes two ranged Strikes with their reaction breacher, each at a different target, then Interacts to reload their reaction breacher.</p>"
+                }
+            }
+        },
+        "Simulation Assault": {
+            "name": "Simulation Assault",
+            "descriptionHazard": "<p>A rapid sequence of dizzying simulations plays throughout the theater.</p>",
+            "disable": "<p>@Check[arcana|dc:17], @Check[nature|dc:17], @Check[occultism|dc:17], or @Check[religion|dc:17] (trained) to siphon the magical energy, or @Check[thievery|dc:19] (trained) to disrupt the holograms, or @UUID[Compendium.sf2e.spells.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (2nd rank; counteract DC 16)</p>",
+            "routine": "<p>(1 action) The hazard plays a new simulation each round, forcing all creatures who can sense it to attempt a new save.</p>",
+            "stealth": "<p>(trained) or @UUID[Compendium.sf2e.spells.Item.gpzpAAAJ1Lza2JVl]{Detect Magic}</p>",
+            "items": {
+                "action->Accelerated Simulation": {
+                    "name": "Accelerated Simulation",
+                    "description": "<p><strong>Trigger</strong> A creature enters the theater</p><hr /><p><strong>Effect</strong> The trap launches a series of simulations at a dizzying pace, each slightly different from the previous one. All creatures in area <strong>B6</strong> who can see must attempt a @Check[will|dc:20] save. The trap the rolls initiative.</p><hr /><p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target is @UUID[Compendium.sf2e.conditions.Item.fesd1n5eVhpCSS18]{Sickened 1} for 1 round.</p>\n<p><strong>Failure</strong> The target takes @Damage[2d4[mental]] damage and is sickened 1.</p>\n<p><strong>Critical Failure</strong> The target takes @Damage[4d4[mental]] damage and is @UUID[Compendium.sf2e.conditions.Item.fesd1n5eVhpCSS18]{Sickened 2}.</p>"
+                }
+            }
+        },
+        "Solar Parade Float": {
+            "name": "Solar Parade Float",
+            "items": {
+                "strike-melee->Wheels": {
+                    "name": "Wheels"
+                },
+                "strike-melee->Laser Eyes": {
+                    "name": "Laser Eyes"
+                },
+                "action->T-Shirt Barrage": {
+                    "name": "T-Shirt Barrage",
+                    "description": "<p>The solar parade float shoots t-shirts at all enemies within @Template[burst|distance:30]{30 feet}. Creatures in the area can attempt a @Check[reflex|dc:17|options:area-effect] save. On a failure, the t-shirts wrap around their appendages, imposing a \u201310 foot circumstance penalty to all their Speeds until the end of their next turn. A creature can end this effect early as a single action with the manipulate trait.</p>"
+                },
+                "action->Trample": {
+                    "name": "Trample",
+                    "description": "<p>Large or smaller, wheels, @Check[reflex|dc:17|basic]. After using Trample, the solar parade float can't use Trample again for 2 rounds.</p><hr /><p>@Localize[PF2E.NPC.Abilities.Glossary.Trample]</p>"
+                }
+            }
+        },
+        "Sterilization Protocol": {
+            "name": "Sterilization Protocol",
+            "descriptionHazard": "<p>Nozzles on the walls spray hot water, chemical sanitizers, and superheated air at all creatures entering the U-shaped hall.</p>",
+            "disable": "<p>@Check[computers|dc:14] (trained) to reprogram the system to safe levels, @Check[crafting|dc:14] (trained) to shut off the waterline, or @Check[thievery|dc:13] (trained) to cut power to the hall</p>",
+            "reset": "<p>The trap automatically deactivates and resets if there are no creatures in the area.</p>",
+            "routine": "<p>(2 actions) The trap sprays a powerful stream of superheated water and sanitizer at all creatures in the U-shaped hall, dealing @Damage[1d4[bludgeoning],1d4[fire]]{1d4 bludgeoning damage and 1d4 fire damage} (@Check[reflex|dc:17|basic] save).</p>",
+            "stealth": "<p>(trained)</p>",
+            "items": {
+                "action->Steam Clean": {
+                    "name": "Steam Clean",
+                    "description": "<p><strong>Trigger</strong> A creature ends its movement in the U-shaped hall</p><hr /><p><strong>Effect</strong> The trap sprays a dense cloud of steam in the hall, obscuring vision. Creatures in the area are @UUID[Compendium.sf2e.conditions.Item.DmAIPqOBomZ7H95W]{Concealed} and creatures outside the hall are concealed to those within it. The trap then rolls initiative.</p>"
+                }
+            }
+        },
+        "Swinging Log Trap": {
+            "name": "Swinging Log Trap",
+            "descriptionHazard": "<p>A log hung up in the trees swings down in a wide arc when a creature enters the designated @Template[square|distance:10] area.</p>",
+            "disable": "<p>@Check[survival|dc:14] or @Check[thievery|dc:14] to safely sever the triggering pulleys and ropes.</p>",
+            "items": {
+                "action->Swing": {
+                    "name": "Swing",
+                    "description": "<p><strong>Trigger</strong> A creature enters the designated 10-foot square area</p><hr /><p><strong>Effect</strong> The log swings along its course, making a log Strike against the triggering creature.</p>"
+                },
+                "strike-melee->Log": {
+                    "name": "Log",
+                    "description": "<p>Plus knocked @UUID[Compendium.sf2e.conditions.Item.j91X7x0XSomq8d60]{Prone}</p>"
+                }
+            }
+        },
+        "Tear": {
+            "name": "Tear",
+            "blurb": "Female shobhad",
+            "items": {
+                "weapon->Fangblade": {
+                    "name": "Fangblade",
+                    "description": "<p><strong>Upgrades:</strong> 1</p><hr /><p>Durable teeth line the edges of this motorized sword and spin with the force of an industrial chainsaw.</p>"
+                },
+                "weapon->Semi-Auto Pistol": {
+                    "name": "Semi-Auto Pistol",
+                    "description": "<p><strong>Upgrades:</strong> 1</p><hr /><p>This pistol automatically ejects used cartridges and loads new ammunition after every shot fired.</p>"
+                },
+                "armor->Freebooter Armor": {
+                    "name": "Freebooter Armor",
+                    "description": "<p><strong>Upgrades:</strong> 1</p><hr /><p>Freebooter armor is named for the pirates and outlaws who often wear these outfits. Freebooter armor typically consists of a breastplate worn under a jacket or flight suit, heavy boots and gloves, a helmet, and hidden straps and holsters for concealing weapons.</p>"
+                },
+                "ammo->Battery (Tactical)": {
+                    "name": "Battery (Tactical)"
+                },
+                "ammo->Projectile Ammo": {
+                    "name": "Projectile Ammo"
+                },
+                "strike-melee->Fangblade": {
+                    "name": "Fangblade"
+                },
+                "strike-melee->Semi-Auto Pistol": {
+                    "name": "Semi-Auto Pistol"
+                },
+                "strike-melee->Fist": {
+                    "name": "Fist"
+                },
+                "action->Reactive Strike": {
+                    "name": "Reactive Strike"
+                },
+                "action->Boosted Assault": {
+                    "name": "Boosted Assault",
+                    "description": "<p>Tear Leaps or Strides, then Interacts to boost her fangblade. If she ends her movement within reach of an enemy, she makes a fangblade Strike against that creature.</p>"
+                }
+            }
+        },
+        "Tenderizer Pit": {
+            "name": "Tenderizer Pit",
+            "descriptionHazard": "<p>Metal caution-taped doors cover a 10-foot deep pit full of dull metal spikes.</p>",
+            "disable": "<p>@Check[thievery|dc:12] to lock or close the trap door</p>",
+            "reset": "<p>Creatures can still fall into the trap, but the trapdoor must be reset manually for the trap to become hidden again.</p>",
+            "stealth": "<p>(or 0 if the trap door is open)</p>",
+            "items": {
+                "action->Pitfall": {
+                    "name": "Pitfall",
+                    "description": "<p><strong>Trigger</strong> A creature walks onto the trapdoor</p><hr /><p><strong>Effect</strong> The triggering creature falls in and takes fall damage (typically 5; but 0 in Akiton's low gravity), plus an additional @Damage[2d4[piercing]] damage from the spikes (@Check[reflex|dc:16|basic] save). The creature can use the [[/act grab-an-edge dc=16]] reaction to avoid falling.</p>"
+                }
+            }
+        },
+        "Vile Spray": {
+            "name": "Vile Spray",
+            "descriptionHazard": "<p>The inflamed walls of this chamber violently contract, squirting out caustic fluids and pus.</p>",
+            "disable": "<p>@Check[medicine|dc:12] (trained) to ease the inflammation, or @Check[diplomacy|dc:13] or @Check[occultism|dc:13] (trained) to psychically soothe the structure; @Check[acrobatics|dc:16] or @Check[stealth|dc:16] to move through the area without triggering its spray (this doesn't disable the hazard).</p>",
+            "reset": "<p>The hazard resets after one hour.</p>",
+            "items": {
+                "action->Spray Pus": {
+                    "name": "Spray Pus",
+                    "description": "<p><strong>Trigger</strong> A creature enters one of the ichor-submerged spaces in this room</p><hr /><p><strong>Effect</strong> The hazard sprays a stream of caustic fluids and pus at the triggering creature, dealing @Damage[(2d6+3)[acid]] damage (@Check[reflex|dc:16|basic] save).</p>"
+                }
+            }
+        },
+        "Warped Weather": {
+            "name": "Warped Weather",
+            "descriptionHazard": "<p>An unnatural magical storm appears in the area with a crack of thunder and lightning.</p>",
+            "disable": "<p>@Check[arcana|dc:13], @Check[nature|dc:13], @Check[occultism|dc:13], or @Check[religion|dc:13] (all trained) to overcome the magical anomaly, or @Check[athletics|dc:16], @Check[survival|dc:16], or @Check[thievery|dc:16] to destabilize the hazard's center point; two total successes are required to disable the hazard.</p>",
+            "routine": "<p>(3 actions) The hazard makes three ranged Strikes against PCs, selecting different targets if possible, beginning with those closest to the hazard's center.</p>",
+            "stealth": "<p>(trained)</p>",
+            "items": {
+                "action->Electric Flash": {
+                    "name": "Electric Flash",
+                    "description": "<p><strong>Trigger</strong> A PC enters the area</p><hr /><p><strong>Effect</strong> With a flash of light, the area crackles with electricity, and it begins to rain. The triggering creature is dealt @Damage[(1d6+2)[electricity]] damage (@Check[reflex|dc:16|basic] save). On a critical failure, that creature is additionally @UUID[Compendium.sf2e.conditions.Item.TkIyaNPgTZFBCCuh]{Dazzled} for 1 round. The hazard then rolls initiative.</p>"
+                },
+                "strike-melee->Lightning Bolt": {
+                    "name": "Lightning Bolt"
+                }
+            }
+        },
+        "Whisper in the Code": {
+            "name": "Whisper in the Code",
+            "allSavesBonus": "+1 vs disease, mental, poison, radiation",
+            "items": {
+                "spellcastingEntry->Occult Spontaneous Spells": {
+                    "name": "Occult Spontaneous Spells"
+                },
+                "weapon->Semi-Auto Pistol": {
+                    "name": "Semi-Auto Pistol",
+                    "description": "<p><strong>Upgrades:</strong> 1</p><hr /><p>This pistol automatically ejects used cartridges and loads new ammunition after every shot fired.</p>"
+                },
+                "weapon->Shock Pad": {
+                    "name": "Shock Pad",
+                    "description": "<p><strong>Upgrades:</strong> 1</p><hr /><p>This flexible nanocarbon circuit can be installed as an upgrade into gloves, kneepads, or similar appendage protectors to emit a powerful electric shock when forcefully applied to a target.</p>"
+                },
+                "armor->Hardlight Series": {
+                    "name": "Hardlight Series",
+                    "description": "<p><strong>Upgrades:</strong> 1</p><hr /><p>A projector fastened to a belt or lapel encases the wearer's body in this shimmering hardlight shell. Military-issue hardlight armor follows a predictable standard, but private users enjoy a range of customizable fashion options.</p>"
+                },
+                "equipment->Hacking Toolkit (Commercial)": {
+                    "name": "Hacking Toolkit (Commercial)",
+                    "description": "<p>A hacking toolkit is required for Computers checks to Hack computers. You can use a hacking toolkit to access a computer without using a user interface, but this requires physical contact with the computer or contact via an infosphere or a similar linked network.</p>"
+                },
+                "equipment->Infiltrator's Toolkit (Commercial)": {
+                    "name": "Infiltrator's Toolkit (Commercial)",
+                    "description": "<p>You need an infiltrator's toolkit to @UUID[Compendium.sf2e.actions.Item.2EE4aF4SZpYf0R6H]{Pick Locks} or @UUID[Compendium.sf2e.actions.Item.cYdz2grcOcRt4jk6]{Disable Devices} (of some types) using the Thievery skill.</p>"
+                },
+                "equipment->Repair Toolkit (Commercial)": {
+                    "name": "Repair Toolkit (Commercial)",
+                    "description": "<p>A repair toolkit contains a variety of delicate tools and supplies that allows you to perform simple repairs while traveling. You can use a repair toolkit to Repair items using the Crafting skill. You can draw and replace a worn repair toolkit as part of the action that uses it.</p>"
+                },
+                "consumable->Machine Mind Serum (Commercial)": {
+                    "name": "Machine Mind Serum (Commercial)",
+                    "description": "<p><strong>Activate</strong> <span class=\"action-glyph\">1</span> (manipulate)</p><hr /><p>When you inject this serum, magitech nanites infuse your body with machine-like circuitry that pulses and glows beneath your skin. For 1 minute, you gain a +1 item bonus to saving throws against mental effects. You also gain resistance 5 to mental damage. Due to your more machine-like nature, you gain weakness 5 to electricity.</p>"
+                },
+                "ammo->Projectile Ammo": {
+                    "name": "Projectile Ammo"
+                },
+                "ammo->Battery (Commercial)": {
+                    "name": "Battery (Commercial)"
+                },
+                "strike-melee->Semi-Auto Pistol": {
+                    "name": "Semi-Auto Pistol"
+                },
+                "strike-melee->Shock Pad": {
+                    "name": "Shock Pad"
+                },
+                "action->+1 to Saves Vs Disease, Mental, Poison, Radiation": {
+                    "name": "+1 to Saves Vs Disease, Mental, Poison, Radiation"
+                },
+                "action->Nanite Surge": {
+                    "name": "Nanite Surge",
+                    "description": "<p><strong>Frequency</strong> once per hour</p>\n<p><strong>Trigger</strong> Whisper in the Code attempts a skill action that takes 3 or fewer actions</p><hr /><p><strong>Effect</strong> Whisper in the Code stimulates their nanites, forcing their body to temporarily increase its efficiency. They gain a +2 status bonus to the triggering skill check. In addition, their circuitry glows, lighting a @Template[type:emanation|distance:10] with dim light for 1 round.</p>"
+                },
+                "action->Reach Spell": {
+                    "name": "Reach Spell",
+                    "description": "<p>If the next action Whisper in the Code takes is to Cast a Spell that has a range, increase that spell's range by 30 feet.</p>"
+                }
+            }
+        }
+    },
+    "mapping": {
+        "items": {
+            "converter": "translateActorItems",
+            "path": "items"
+        },
+        "rules": {
+            "converter": "translateRules",
+            "path": "system.rules"
+        },
+        "publicNotes": "system.details.publicNotes",
+        "privateNotes": "system.details.privateNotes",
+        "acDetails": "system.attributes.ac.details",
+        "blurb": "system.details.blurb",
+        "hpDetails": "system.attributes.hp.details",
+        "allSavesBonus": "system.attributes.allSaves.value",
+        "speedsDetails": "system.attributes.speed.details",
+        "sensesDetails": "system.perception.details",
+        "languagesDetails": "system.details.languages.details",
+        "descriptionHazard": "system.details.description",
+        "disable": "system.details.disable",
+        "reset": "system.details.reset",
+        "routine": "system.details.routine",
+        "stealth": "system.attributes.stealth.details",
+        "description": "system.details.description",
+        "crew": "system.details.crew",
+        "pilotingCheck": "system.details.pilotingCheck",
+        "speed": "system.details.speed",
+        "skills": {
+            "converter": "translateSkills",
+            "path": "system.skills"
+        }
+    }
+}

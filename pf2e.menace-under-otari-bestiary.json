@@ -678,8 +678,8 @@
                 }
             }
         },
-        "Kobold Dragon Mage (Black, BB)": {
-            "name": "Kobold Dragon Mage (Black, BB)",
+        "Kobold Mage (Black, BB)": {
+            "name": "Kobold Mage (Black, BB)",
             "publicNotes": "<p>Kobolds are small, reptilian humanoids who are often seen in the service of more powerful creatures. They lurk in dark places, usually tunnels and mines. Kobold mages use magic to carry out their schemes, often in service of a dragon or other powerful creatures.</p>",
             "items": {
                 "spellcastingEntry->Wizard Spells": {
@@ -700,8 +700,8 @@
                 }
             }
         },
-        "Kobold Dragon Mage (Blue, BB)": {
-            "name": "Kobold Dragon Mage (Blue, BB)",
+        "Kobold Mage (Blue, BB)": {
+            "name": "Kobold Mage (Blue, BB)",
             "publicNotes": "<p>Kobolds are small, reptilian humanoids who are often seen in the service of more powerful creatures. They lurk in dark places, usually tunnels and mines. Kobold mages use magic to carry out their schemes, often in service of a dragon or other powerful creatures.</p>",
             "items": {
                 "spellcastingEntry->Wizard Spells": {
@@ -722,8 +722,8 @@
                 }
             }
         },
-        "Kobold Dragon Mage (Green, BB)": {
-            "name": "Kobold Dragon Mage (Green, BB)",
+        "Kobold Mage (Green, BB)": {
+            "name": "Kobold Mage (Green, BB)",
             "publicNotes": "<p>Kobolds are small, reptilian humanoids who are often seen in the service of more powerful creatures. They lurk in dark places, usually tunnels and mines. Kobold mages use magic to carry out their schemes, often in service of a dragon or other powerful creatures.</p>",
             "items": {
                 "spellcastingEntry->Wizard Spells": {
@@ -744,8 +744,8 @@
                 }
             }
         },
-        "Kobold Dragon Mage (Red, BB)": {
-            "name": "Kobold Dragon Mage (Red, BB)",
+        "Kobold Mage (Red, BB)": {
+            "name": "Kobold Mage (Red, BB)",
             "publicNotes": "<p>Kobolds are small, reptilian humanoids who are often seen in the service of more powerful creatures. They lurk in dark places, usually tunnels and mines. Kobold mages use magic to carry out their schemes, often in service of a dragon or other powerful creatures.</p>",
             "items": {
                 "spellcastingEntry->Wizard Spells": {
@@ -766,8 +766,8 @@
                 }
             }
         },
-        "Kobold Dragon Mage (White, BB)": {
-            "name": "Kobold Dragon Mage (White, BB)",
+        "Kobold Mage (White, BB)": {
+            "name": "Kobold Mage (White, BB)",
             "publicNotes": "<p>Kobolds are small, reptilian humanoids who are often seen in the service of more powerful creatures. They lurk in dark places, usually tunnels and mines. Kobold mages use magic to carry out their schemes, often in service of a dragon or other powerful creatures.</p>",
             "items": {
                 "spellcastingEntry->Wizard Spells": {
@@ -821,12 +821,6 @@
                 "consumable->Spike Trap": {
                     "name": "Spike Trap",
                     "description": "<p>This basic snare consists of hidden spikes that rely on a creature's momentum to lacerate or potentially impale it as it enters the snare's square, dealing 2d8 piercing damage. The creature must attempt a @Check[reflex|dc:17|basic] saving throw.</p>"
-                },
-                "strike-melee->Shortsword": {
-                    "name": "Shortsword"
-                },
-                "strike-ranged->Spear": {
-                    "name": "Spear"
                 },
                 "action->Quick Trap": {
                     "name": "Quick Trap",
@@ -897,7 +891,7 @@
         "Mermaid Fountain (BB)": {
             "name": "Mermaid Fountain (BB)",
             "disable": "<p>@Check[thievery|dc:20|traits:complex,hazard|name:Disable Mechanism] on each corner mechanism (must disable all three working corners to disable the trap)</p>\n<p>Each corner mechanism has hardness 8 and 15 HP</p>",
-            "routine": "<p>Each turn, the fountain uses 1 action. Roll a [[/r 1d10]]{1d10} and look up the result on the following list to determine which action it uses that round.</p>\n<ul>\n<li><strong>1-4 Single Target</strong> The statue spins about and sprays water at a single random target in the room. Roll a [[/r 1d4]]{1d4} and count to the number you rolled, starting with the player on your left, to determine which hero gets attacked. The spray is a ranged Strike.</li>\n<li><strong>5-7 Corner Spray</strong> The statue spins about, firing a spray of water at each corner of the room that still has a functioning corner mechanism. This hits any creature adjacent to the corner mechanism, dealing @Damage[2d6[bludgeoning]] damage. Each hero must attempt a @Check[reflex|dc:15|basic|traits:hazard], taking no damage on a critical success, half damage on a success, full damage on a failure, and double damage on a critical failure.</li>\n<li><strong>8-9 Half Room</strong> The statue spins about, spraying half of the room with water. Roll any die. If the result is even, it sprays the west half; otherwise, it sprays the east half. This deals @Damage[2d6[bludgeoning]] damage to each creature in that half of the room, and each hero must attempt a @Check[reflex|dc:15|basic|traits:hazard] save.</li>\n<li><strong>10 Full Room</strong> This works just like the half-room attack, but it targets everyone in the room.</li>\n</ul>",
+            "routine": "<p>Each turn, the fountain uses 1 action. Roll a [[/gmr 1d10]] and look up the result on the following list to determine which action it uses that round.</p><ul><li><strong>1-4 Single Target</strong> The statue spins about and sprays water at a single random target in the room. Roll a [[/gmr 1d4]] and count to the number you rolled, starting with the player on your left, to determine which hero gets attacked. The spray is a ranged Strike.</li><li><strong>5-7 Corner Spray</strong> The statue spins about, firing a spray of water at each corner of the room that still has a functioning corner mechanism. This hits any creature adjacent to the corner mechanism, dealing @Damage[2d6[bludgeoning]|options:area-damage] damage. Each hero must attempt a @Check[reflex|dc:15|basic|options:area-effect|traits:hazard], taking no damage on a critical success, half damage on a success, full damage on a failure, and double damage on a critical failure.</li><li><strong>8-9 Half Room</strong> The statue spins about, spraying half of the room with water. Roll any die. If the result is even, it sprays the west half; otherwise, it sprays the east half. This deals @Damage[2d6[bludgeoning]|options:area-damage] damage to each creature in that half of the room, and each hero must attempt a @Check[reflex|dc:15|basic|options:area-effect|traits:hazard] save.</li><li><strong>10 Full Room</strong> This works just like the half-room attack, but it targets everyone in the room.</li></ul>",
             "stealth": "<p><strong>Notice</strong> @Check[perception|dc:20|traits:complex,hazard] check</p>",
             "items": {
                 "strike-melee->Spray": {

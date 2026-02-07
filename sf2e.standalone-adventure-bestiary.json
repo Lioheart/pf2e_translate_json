@@ -1,0 +1,611 @@
+{
+    "label": "Standalone-Adventure-Bestiary",
+    "folders": {
+        "Murder in Metal City": "Murder in Metal City",
+        "Battle for Nova Rush": "Battle for Nova Rush"
+    },
+    "entries": {
+        "Agent Z": {
+            "name": "Agent Z",
+            "blurb": "Male human witchwarper from another reality",
+            "items": {
+                "spellcastingEntry->Occult Spontaneous Spells": {
+                    "name": "Occult Spontaneous Spells"
+                },
+                "strike-melee->Battleglove": {
+                    "name": "Battleglove"
+                },
+                "strike-melee->Seeker Rifle": {
+                    "name": "Seeker Rifle"
+                },
+                "action->Rewind Wounds": {
+                    "name": "Rewind Wounds",
+                    "description": "<p><strong>Frequency</strong> once per 10 minutes</p>\n<p><strong>Trigger</strong> Agent Z takes damage</p><hr /><p><strong>Effect</strong> Agent Z rewinds time to when he was in a slightly different position, shrugging off some of the damage from the attack. Reroll the damage dealt and apply the lesser result.</p>"
+                },
+                "action->Temporal Resistances": {
+                    "name": "Temporal Resistances",
+                    "description": "<p>Agent Z originally came from another timeline and isn't entirely in sync with this reality. He gains a +1 circumstance bonus to saving throws against illusions and holograms, and if he critically fails such a save, the results count as a failure instead.</p>"
+                },
+                "action->Fly": {
+                    "name": "Fly",
+                    "description": "<p>Agent Z activates his jetpack to gain a fly Speed of 20 feet. This effect lasts for 1 minute or until he Dismisses it. Agent Z can use an action to Fly 0 feet to hover in place but becomes @UUID[Compendium.sf2e.conditions.Item.AJh5ex99aV6VTggg]{Off-Guard} until the start of his next turn while doing so.</p>"
+                },
+                "action->Isolated Spell Matrix": {
+                    "name": "Isolated Spell Matrix",
+                    "description": "<p>If the next action Agent Z uses is to Cast a Spell that has a range, he increases the spell's range to 100 feet. That spell only affects targets inside his quantum field and the area of the spell does not extend beyond his quantum field.</p>"
+                },
+                "action->Quantum Pulse": {
+                    "name": "Quantum Pulse",
+                    "description": "<p><strong>Trigger</strong> Agent Z rolls initiative</p><hr /><p><strong>Effect</strong> Agent Z uses Warp Reality.</p>"
+                },
+                "action->Warp Reality": {
+                    "name": "Warp Reality",
+                    "description": "<p>Agent Z uses his residual power to activate a quantum field, a 20-foot-radius burst centered on a point he chooses within 100 feet. It lasts as long as he Sustains it, up to 10 minutes. Whenever Agent Z uses Isolated Spell Matrix, the action also automatically sustains the quantum field.</p>\n<p>Enemy creatures inside the quantum field take a \u20135-foot status penalty to their Speed when using a move action. Agent Z and his allies inside the quantum field gain a +5-foot status bonus to Speed when using a move action.</p>\n<p>Agent Z He can choose whether each creature in the area is affected by his quantum field when he Warps Reality, each time he Sustains it, and when a creature enters his quantum field. (He typically allows it to affect himself and his enemies.)</p>\n<p>Each time Agent Z Sustains his quantum field with the Sustain action (but not with other actions), he can move it to a new position within 100 feet, reduce his clumsy condition (if any) by 1, and ignore the effects of the @UUID[Compendium.sf2e.conditions.Item.enA7BxAjBb7ns1iF]{Suppressed} condition until the start of his next turn.</p>\n<p>The quantum field automatically deactivates if Agent Z is knocked out, Dismisses it, or if he moves more than 100 feet away from it.</p>"
+                }
+            }
+        },
+        "Anacite Protector": {
+            "name": "Anacite Protector",
+            "publicNotes": "<p>These imposing anacites, affectionately called \"guardbots\" by most residents of Metal City, are keepers of the peace. Insight Array rapidly dispatches them, typically in groups that are squares of 2 (such as 2, 4, 8, 16, or more), to any scene of trouble throughout the city. Anacite protectors also act as sentries, escorts, or private security, though anyone who uses them for the latter should be aware that most anacite protectors in Striving serve the needs of Insight Array (and anacites as a whole) above all else.</p><hr /><p>Recording the countless forms and upgrades anacites have taken in the long period since their creators abandoned them would be impossible, as nearly every shape and function one might imagine can be found among this industrious species.</p>\n<p>Many anacites share common design principles, such as silvery, metallic bodies, multiple legs, and forms that resemble arthropods. They often have grasping claws to accomplish generic tasks, though some might have limbs or appendages suited to extremely specific purposes. The most basic anacites, such as wingbots, who lack minds of their own, are the most likely to look \"standardized,\" but most anacites are unique. Their specific role might dictate that an anacite must be able to lift heavy loads, in which case the anacite might resemble a forklift more than a bug or perhaps have the features of both. Anacite culture prizes innovation, and most anacites view their bodies and programming as no exception, always willing to try new parts and builds or download skill modules to broaden their horizons.</p>\n<p>The other types of anacites most often found in Striving include bulky laborers, spindly bureaucrats, and civil servants of all types. In neighborhoods that cater mostly to off-worlders and organics, some anacites have specialized roles to make the area more appealing to non-anacite life. Such anacites might receive assignments from Insight Array to \"visit every club and eatery in the area,\" \"chat with strangers in public spaces,\" or \"routinely ask tourists for help crossing the street.\" These chosen anacites take these roles as seriously as any other.</p><h2>Anacite Augmentations</h2><p>Almost all anacites augment their bodies in some way, either to directly enhance their ability to perform their specific function in society or to set them apart from other anacites with a unique feature. On Aballon, such augmentations are easy to come by, and if the anacite can prove the augmentation will contribute to their society, they're often completely free. Some anacites take advantage of this availability to swap their augmentations on a regular basis.</p><h2>Anacite Programming</h2><p>Because they're robots, anacites are programmed for specialized tasks and abilities, but each has free will and a complex inner life. Every anacite also has a purpose assigned at manufacture, which most take very seriously. In their lifetime, an anacite is likely to pursue different types of work as determined by Insight Array. Following programming and serving the algorithm are edicts for almost all anacites. Following these edicts brings fulfillment and pleasure, while anacites who go against their programming may feel guilt or even physical discomfort,</p>",
+            "acDetails": "(19 with shield raised)",
+            "languagesDetails": "Shortwave 100 feet",
+            "items": {
+                "shield->Shielding Instinct": {
+                    "name": "Shielding Instinct"
+                },
+                "strike-melee->Fist": {
+                    "name": "Fist"
+                },
+                "strike-melee->Streetsweeper": {
+                    "name": "Streetsweeper"
+                },
+                "action->Peacekeeper": {
+                    "name": "Peacekeeper",
+                    "description": "<p>The anacite protector can choose to grant the nonlethal trait to any of its attacks that deal bludgeoning or sonic damage.</p>"
+                },
+                "action->Shielding Instinct": {
+                    "name": "Shielding Instinct",
+                    "description": "<p>The anacite protector can raise any two-handed weapon to gain the benefits of Raising a Shield.</p>"
+                },
+                "action->Suppressing Stampede": {
+                    "name": "Suppressing Stampede",
+                    "description": "<p>The anacite protector Strides twice; it can move through up to two enemy creatures as part of this movement. Each of these creatures takes @Damage[2d6[bludgeoning]] damage (@Check[reflex|dc:15|basic] save); on a critical failure, the creature is also knocked @UUID[Compendium.sf2e.conditions.Item.j91X7x0XSomq8d60]{Prone}. Any creature in or adjacent to a square the anacite protector moves through as part of this action is @UUID[Compendium.sf2e.conditions.Item.enA7BxAjBb7ns1iF]{Suppressed} until the beginning of the anacite protector's next turn.</p>"
+                }
+            }
+        },
+        "Anacite Wingbot": {
+            "name": "Anacite Wingbot",
+            "publicNotes": "<p>Anacite wingbots are common. Little more than drones, wingbots are piloted by virtual intelligences (VI) programmed to serve Insight Array and their representatives. Transmitters spaced regularly across most of Aballon's megaplexes allow wingbots to record their constantly running video feeds to their VI \"handlers\" at all times. The solar panels that line a wingbot's wings allow it to recharge while on the move.</p><hr /><p>Recording the countless forms and upgrades anacites have taken in the long period since their creators abandoned them would be impossible, as nearly every shape and function one might imagine can be found among this industrious species.</p>\n<p>Many anacites share common design principles, such as silvery, metallic bodies, multiple legs, and forms that resemble arthropods. They often have grasping claws to accomplish generic tasks, though some might have limbs or appendages suited to extremely specific purposes. The most basic anacites, such as wingbots, who lack minds of their own, are the most likely to look \"standardized,\" but most anacites are unique. Their specific role might dictate that an anacite must be able to lift heavy loads, in which case the anacite might resemble a forklift more than a bug or perhaps have the features of both. Anacite culture prizes innovation, and most anacites view their bodies and programming as no exception, always willing to try new parts and builds or download skill modules to broaden their horizons.</p>\n<p>The other types of anacites most often found in Striving include bulky laborers, spindly bureaucrats, and civil servants of all types. In neighborhoods that cater mostly to off-worlders and organics, some anacites have specialized roles to make the area more appealing to non-anacite life. Such anacites might receive assignments from Insight Array to \"visit every club and eatery in the area,\" \"chat with strangers in public spaces,\" or \"routinely ask tourists for help crossing the street.\" These chosen anacites take these roles as seriously as any other.</p><h2>Anacite Augmentations</h2><p>Almost all anacites augment their bodies in some way, either to directly enhance their ability to perform their specific function in society or to set them apart from other anacites with a unique feature. On Aballon, such augmentations are easy to come by, and if the anacite can prove the augmentation will contribute to their society, they're often completely free. Some anacites take advantage of this availability to swap their augmentations on a regular basis.</p><h2>Anacite Programming</h2><p>Because they're robots, anacites are programmed for specialized tasks and abilities, but each has free will and a complex inner life. Every anacite also has a purpose assigned at manufacture, which most take very seriously. In their lifetime, an anacite is likely to pursue different types of work as determined by Insight Array. Following programming and serving the algorithm are edicts for almost all anacites. Following these edicts brings fulfillment and pleasure, while anacites who go against their programming may feel guilt or even physical discomfort,</p>",
+            "languagesDetails": "cant speak, Shortwave 100 feet",
+            "items": {
+                "strike-melee->Sting": {
+                    "name": "Sting"
+                },
+                "strike-melee->Laser Ray": {
+                    "name": "Laser Ray"
+                },
+                "action->Always Watching": {
+                    "name": "Always Watching",
+                    "description": "<p>Anacite wingbots are always recording and uploading their feed through shortwave as long as they're within range of a transmitter. An anacite wingbot can project a hologram of the live footage they're recording or play back a video of anything they've recorded, which appears in the air nearby as the spell @UUID[Compendium.sf2e.spells.Item.Ucf8eynbZMfUucjE]{Illusory Scene}.</p>"
+                },
+                "action->Shortwave": {
+                    "name": "Shortwave",
+                    "description": "<p>The anacite can communicate using wireless shortwave signals. This functions as telepathy with other creatures who have shortwave and with creatures with both the construct and tech traits.</p>"
+                },
+                "action->Sunlight Dependency": {
+                    "name": "Sunlight Dependency",
+                    "description": "<p>Anacites are solar powered; they're perpetually @UUID[Compendium.sf2e.conditions.Item.6A2QDy8wRGCVQsSd]{Glitching 1} while in areas of darkness and must recharge daily in direct sunlight or risk shutting down completely.</p>"
+                },
+                "action->Nanites": {
+                    "name": "Nanites",
+                    "description": "<p>Creatures hit by the wingbot's sting must attempt a @Check[fortitude|dc:13] save. On a failure, creatures with the tech trait become @UUID[Compendium.sf2e.conditions.Item.6A2QDy8wRGCVQsSd]{Glitching 1}; other creatures take @Damage[1d4[poison]] damage.</p>"
+                },
+                "action->Trill": {
+                    "name": "Trill",
+                    "description": "<p>The wingbot creates a shrill trilling noise accompanied by disturbing low-level vibrations and electromagnetic pulses tuned to disrupt non-anacite creatures. Each non-anacite creature within 30 feet must attempt a @Check[fortitude|dc:13] save. The targets then become temporarily immune to the wingbot's Trill for 24 hours.</p><hr /><p><strong>Failure</strong> Creatures with the tech trait become @UUID[Compendium.sf2e.conditions.Item.6A2QDy8wRGCVQsSd]{Glitching 1}, while non-tech creatures become @UUID[Compendium.sf2e.conditions.Item.fesd1n5eVhpCSS18]{Sickened 1}.</p>\n<p><strong>Critical Failure</strong> As failure, but glitching or @UUID[Compendium.sf2e.conditions.Item.fesd1n5eVhpCSS18]{Sickened 2}.</p>"
+                }
+            },
+            "skills": {
+                "athletics": {
+                    "label": "to Climb"
+                }
+            }
+        },
+        "Archivist's Wrath": {
+            "name": "Archivist's Wrath",
+            "descriptionHazard": "<p>This network of security cameras, wall-mounted retractable turrets, and laser nets are controlled by Archivist 404, who commands them to blast intruders with extreme prejudice.</p>",
+            "disable": "<p>@Check[computers|dc:13] (trained) overrides the security program; @Check[crafting|dc:15] or @Check[thievery|dc:15] (trained) disables the hardlight projector; @Check[diplomacy|dc:17] convinces the Archivist to reconsider. Four total successes are required to end the program.</p>",
+            "reset": "<p>Every 6 hours, a backup program restores Archivist 404's original personality data to the projector if it's been disabled.</p>",
+            "routine": "<p>(1 action) Archivist 404 fires one laser at each intruder in the archive as one action. It takes a cumulative \u20131 status penalty to its attack rolls for each successful check the PCs have made to disable it.</p>",
+            "stealth": "<p>(trained)</p>",
+            "items": {
+                "action->Intruder Alert!": {
+                    "name": "Intruder Alert!",
+                    "description": "<p><strong>Trigger</strong> Archivist 404 detects intruders</p><hr /><p><strong>Effect</strong> Dozens of tiny nodes concealed in the walls, floor, and ceiling unleash a kaleidoscopic barrage of lasers that deal @Damage[1d6[fire]] damage to all non-hardlight creatures in Archive 404 (@Check[reflex|dc:15|basic] save). Then the hazard rolls initiative.</p>"
+                },
+                "strike-melee->Laser": {
+                    "name": "Laser",
+                    "description": "<p>no multiple attack penalty</p>"
+                }
+            }
+        },
+        "Captain Phaedra Firestorm": {
+            "name": "Captain Phaedra Firestorm",
+            "items": {
+                "weapon->Grindblade": {
+                    "name": "Grindblade",
+                    "description": "<p><strong>Upgrades:</strong> 1</p><hr /><p>The edge of this broad-tipped sword is composed of micro-splitting nanoparticles that slice apart targets with surgical precision.</p>"
+                },
+                "weapon->Semi-Auto Pistol": {
+                    "name": "Semi-Auto Pistol",
+                    "description": "<p><strong>Upgrades:</strong> 1</p><hr /><p>This pistol automatically ejects used cartridges and loads new ammunition after every shot fired.</p>"
+                },
+                "armor->Armored Coat": {
+                    "name": "Armored Coat",
+                    "description": "<p><strong>Upgrades:</strong> 1</p><hr /><p>This overcoat is made of real or synthetic leather and reinforced with armored plates. Armored coats are often tailor-made to match the wearer's personal style. Standard versions are issued to military officers as part of their uniforms.</p>"
+                },
+                "ammo->Projectile Ammo": {
+                    "name": "Projectile Ammo"
+                },
+                "treasure->Credstick": {
+                    "name": "Credstick",
+                    "description": "<p>Most people in Starfinder keep their wealth on a protected item known as a credstick. These devices are often flat and roughly the size of a human finger. They range in dimensions and quality, but at the end of the day, they\u2019re just a means of conveniently carrying and spending money. Usage of these devices is determined by the owner, and a credstick can accept or spend funds with as simple an action as tapping it near a suitable banking device. When more rigorous security is necessary, they can require audio or biometric imprints in order to activate. Some advanced credsticks even have a magical component that might require a mental password or the recitation of a specific spell to access stored funds.</p>\n<p>Credsticks aren\u2019t gateways to the entirety of one\u2019s wealth, and larger stores of credits are often kept secured in banks, personal vaults, or secure databases. Instead, a credstick is a safe and anonymous means of moving credits around without being traced. Adventurers and common citizens alike often keep a credstick on their person to handle any purchases they might be called upon to make, while also only keeping just enough credits on them that losing the credstick wouldn\u2019t result in bankruptcy.</p>\n<p>Individuals in the Pact Worlds often carry credsticks, and other civilizations that interact with the Pact often turn local funds into credits and thus carry them to spend their converted currency. Sometimes a person might carry several credsticks, dedicating each one to a different use, or simply trading the stick away if they want to make a purchase of a predefined amount. If ever the number of credsticks on a person becomes too cumbersome, it\u2019s easy enough to move the funds between individual sticks and discard emptied sticks to save on space, however a credstick always has a negligible bulk.</p>"
+                },
+                "strike-melee->Grindblade": {
+                    "name": "Grindblade"
+                },
+                "strike-melee->Semi-Auto Pistol": {
+                    "name": "Semi-Auto Pistol"
+                },
+                "action->Kill Steal": {
+                    "name": "Kill Steal",
+                    "description": "<p><strong>Trigger</strong> An ally successfully Strikes a foe who Phaedra can see and is within 30 feet of her</p><hr /><p><strong>Effect</strong> Phaedra makes a ranged Strike against the foe damaged by the triggering Strike.</p>"
+                },
+                "action->Vitriolic Swing": {
+                    "name": "Vitriolic Swing",
+                    "description": "<p><strong>Frequency</strong> once per round</p><hr /><p><strong>Effect</strong> Captain Firestorm spits a cutting insult at an adjacent foe, attempting either a Deception check to [[/act feint]] or an Intimidation check to [[/act demoralize]] them. Then, she makes a melee Strike against that creature. If the Feint or Demoralize was successful, her Strike deals an additional @Damage[1d4[mental]] damage.</p>"
+                },
+                "lore->Piracy Lore": {
+                    "name": "Piracy Lore"
+                }
+            }
+        },
+        "Cyberwing": {
+            "name": "Cyberwing",
+            "publicNotes": "<p>Xenowardens condemn the practice of fusing the body of an animal with the parts of a machine, claiming that these experimental prototypes are cruel mockeries of nature. Enthusiasts argue using technology to enhance wildlife is no different than awakening them through magic. The debate is heated, but Pact laws remain slow to accept the grisly practice. The cyberwing is a simple model designed as a recon drone that can shield itself and the sensitive information or cargo it carries.</p><hr /><p>Concentrated in Aballon's frigid Ice Wells, sharpwings roost together by the hundreds or even thousands, emerging at dawn and dusk to hunt for prey in the upper shelves.</p><h2>Rare Sightings</h2><p>Sharpwings don't frequently emerge from the Ice Wells, so they can cause a stir when seen near megaplexes such as Striving. They don't pose much of a threat individually, but horror stories of vicious attacks by large flocks of sharpwings and disturbing videos captured by reckless explorers scare many tourists into shooting the creatures on sight.</p>",
+            "acDetails": "all-around vision",
+            "items": {
+                "strike-melee->Claw": {
+                    "name": "Claw"
+                },
+                "strike-melee->Laser Eyebeam": {
+                    "name": "Laser Eyebeam"
+                },
+                "action->All-Around Vision": {
+                    "name": "All-Around Vision"
+                },
+                "action->Steel Wing": {
+                    "name": "Steel Wing",
+                    "description": "<p><strong>Trigger</strong> A cyberwing is the target of an attack against its AC</p><hr /><p><strong>Effect</strong> The cyberwing uses its reinforced wings as a shield, gaining a +2 circumstance bonus to AC against the triggering attack.</p>"
+                },
+                "action->Shred": {
+                    "name": "Shred",
+                    "description": "<p><strong>Frequency</strong> once per 10 minutes</p><hr /><p><strong>Effect</strong> The cyberwing revs its wing engines and Flies twice in a blur of metal. This movement doesn't trigger reactions, and the cyberwing can pass through spaces occupied by other creatures. Creatures it passes through take @Damage[1d6[slashing]] damage (@Check[fortitude|dc:15|basic] save), and on anything but a critical success, the creatures are pushed 5 feet away from the cyberwing.</p>"
+                }
+            }
+        },
+        "Dewblossom": {
+            "name": "Dewblossom",
+            "descriptionHazard": "<p>A fragrant aroma beckons the senses toward a smooth bed of soft moss. In its center, a beautiful flower is opening to catch the light\u2014its shimmering velvet petals have nearly unfurled. A stamen curls out in slow spiral motion, and the alluring scent sours to the stench of rancid meat and feces.</p>",
+            "disable": "<p>@Check[athletics|dc:14] (trained) to wrestle the dewblossom's vines, @Check[acrobatics|dc:14] (trained) to dodge around it, @Check[nature|dc:13] (trained) to entice the flower to cease its attacks; four total successes are required to disable the hazard, or dealing enough damage to the dewblossom to reduce it to half its HP (whichever comes first). A creature who succeeds at any of these checks gains a +2 circumstance bonus to saves and AC against its attacks.</p>",
+            "reset": "<p>The dewblossom stops attacking when it's disabled, 1 minute after it detects prey, when it's reduced to half HP, or when its victim is @UUID[Compendium.sf2e.conditions.Item.fBnFDH2MTzgFijKf]{Unconscious}. It spits out its victim (if conscious), uproots, tucks its leaves around its body, and rolls away with a land speed of 100 feet per round. It resets after 1 hour (or 1 day if it needs to digest its meal).</p>",
+            "routine": "<p>(1 action) The dewblossom makes a vine snatch attack against the nearest creature.</p>",
+            "stealth": "<p>(trained)</p>",
+            "items": {
+                "action->Detect Prey": {
+                    "name": "Detect Prey",
+                    "description": "<p><strong>Trigger</strong> A creature comes within 60 feet of the dewblossom</p><hr /><p><strong>Effect</strong> The dewblossom's sensitive root network detects vibrations created by the PCs' movements. The dewblossom opens its luring flower; creatures within 100 feet must attempt a @Check[will|dc:15] save. On a failure, the creature must spend its next action to move as close to the dewblossom as possible (or its next two actions on a critical failure). Then, the dewblossom rolls initiative.</p>"
+                },
+                "action->Thorn Dart": {
+                    "name": "Thorn Dart",
+                    "description": "<p><strong>Trigger</strong> A creature within 60 feet damages the dewblossom with an attack</p><hr /><p><strong>Effect</strong> The dewblossom fires a thorn dart at the triggering creature. The target takes @Damage[1d4[piercing]] damage (@Check[reflex|dc:17|basic] save).</p>"
+                },
+                "strike-melee->Vine Snatch": {
+                    "name": "Vine Snatch"
+                },
+                "action->Rancid Grip": {
+                    "name": "Rancid Grip",
+                    "description": "<p>The target is trapped in the dewblossom's crushing flower, gaining the @UUID[Compendium.sf2e.conditions.Item.kWc1fhmv9LBiTuei]{Grabbed} condition until it [[/act escape dc=17]]{Escapes}. At the end of each of the target's turns that it remains grabbed, the target takes @Damage[(1d6+3)[poison]] damage.</p>"
+                }
+            }
+        },
+        "Dire Shroomclaw": {
+            "name": "Dire Shroomclaw",
+            "publicNotes": "<p>Dire shroomclaws, as they're sometimes jokingly called, can be quite dangerous for unprepared explorers. They're opportunistic predators, and while they avoid most seasoned, well-armed parties, they might test greenhorns or pursue weakened or helpless creatures.</p><hr /><p>Called shroomclaws by the first explorers who encountered them, these predators have evolved to thrive in the frosty depths of Aballon's Ice Wells. Every spring, shroomclaws take root deep in the Gloaming and spawn. Weeks later, glimmering kittens with strange sporelike growths wriggling throughout their fur emerge from the depths and wander into camps. The survivors that aren't picked off by predators or poached for a lucrative export business grow quickly on a diet of flora and insects.</p>",
+            "items": {
+                "strike-melee->Jaws": {
+                    "name": "Jaws"
+                },
+                "strike-melee->Claw": {
+                    "name": "Claw"
+                },
+                "action->Entangling Mycelia": {
+                    "name": "Entangling Mycelia",
+                    "description": "<p>Creatures hit by a shroomclaw's claw Strike are @UUID[Compendium.sf2e.conditions.Item.i3OJZU2nk64Df3xm]{Clumsy 1} for 1 round.</p>"
+                },
+                "action->Pounce": {
+                    "name": "Pounce",
+                    "description": "<p>The shroomclaw Strides and makes a Strike at the end of that movement. If the shroomclaw began this action @UUID[Compendium.sf2e.conditions.Item.iU0fEDdBp3rXpTMC]{Hidden}, it remains hidden until after its Strike.</p>"
+                },
+                "action->Suppressing Spores": {
+                    "name": "Suppressing Spores",
+                    "description": "<p>The shroomclaw releases a @Template[type:burst|distance:10] of spores around itself that deal @Damage[2d4[poison]|options:area-damage] damage to all non-shroomclaw creatures in the area (@Check[fortitude|dc:15|basic] save); on a critical failure, the creature becomes @UUID[Compendium.sf2e.conditions.Item.enA7BxAjBb7ns1iF]{Suppressed} for 1 minute. The shroomclaw can't use suppressing spores again for [[/gmr 1d4 #Recharge Suppressing Spores]]{1d4 rounds}.</p>"
+                },
+                "action->Grab": {
+                    "name": "Grab"
+                }
+            }
+        },
+        "Hardlight Dragonet": {
+            "name": "Hardlight Dragonet",
+            "publicNotes": "<p>Hardlight dragonets vary in appearance depending on their manufacturer's tastes, but many are sculpted with squat, potbellied dragon bodies, sinewy wings, gnarled horns, and spiny tails. Created to guard archives and perform assistive tasks, hardlight dragonets are stockier versions of the creatures they were designed to resemble. Hardlight dragonets are programmed with a draconic enthusiasm for collecting information. They take pride in maintaining encyclopedic knowledge of the archives, databases, and libraries they watch over, and they love to discuss the contents of the files or tomes therein in intimate detail. Clever or deceitful infiltrators use this weakness against a hardlight dragonet, enticing them to spill sensitive information or distracting them from their post while stealthy allies carry out their schemes.</p>\n<p>Hardlight dragonets and other virtual creatures, such as hardlight scamps and living holograms, might sometimes be trapped within an item a party receives as loot. Sometimes virtual creatures are found on comm units, datapads, or even infesting spell chips. Typically, they've been coded and stored there by a previous owner to act as an assistant or been corrupted by malicious code and unable to function without an Computers check to troubleshoot the issue or hack permissions. On rare occasions, such a creature has infiltrated the computer or item as part of a digital virus. An infected virtual creature might present both benefits and drawbacks to their new associate.</p><h2>Dragonets and Magic</h2><p>Hardlight dragonets are fascinated by magic\u2014the few spells they can cast are precious to them, similar to how a child might view their favorite stuffed toy or a collector their most valuable trading card. Hardlight dragonets love watching other people cast spells, especially ones they've never seen before, and are reluctant to attack spellcasters unless they have no other choice.</p>",
+            "sensesDetails": "darkvision",
+            "hpDetails": "fast healing 1 (while touching its projector)",
+            "items": {
+                "spellcastingEntry->Arcane Innate Spells": {
+                    "name": "Arcane Innate Spells"
+                },
+                "strike-melee->Bite": {
+                    "name": "Bite"
+                },
+                "strike-melee->Static Arc": {
+                    "name": "Static Arc"
+                },
+                "action->Data Barrage": {
+                    "name": "Data Barrage",
+                    "description": "<p>Each enemy within 120 feet that can perceive the dragonet takes @Damage[1d6[mental]] damage as the dragonet fires facts and data points at enemy minds with dizzying speeds (@Check[will|dc:16|basic] save); on a critical failure the creature becomes @UUID[Compendium.sf2e.conditions.Item.e1XGnhKNSQIm5IXg]{Stupefied 1} for 1 minute. The targets then become temporarily immune to Data Barrage for 24 hours.</p>"
+                },
+                "action->Static Breath": {
+                    "name": "Static Breath",
+                    "description": "<p>The dragonet breathes a @Template[type:line|distance:5] of electricity. Within 30 feet of any tech device, this becomes a @Template[type:cone|distance:10] of electricity instead. Each creature in the area takes @Damage[1d10[electricity]|options:area-damage] damage (@Check[reflex|dc:16|basic] save). The dragonet can't use Static Breath again for [[/gmr 1d4 #Recharge Static Breath]]{1d4 rounds}.</p>"
+                },
+                "action->Super Quick": {
+                    "name": "Super Quick",
+                    "description": "<p>When the hardlight dragonet Casts a Spell, they can Step or Stride as part of the activity.</p>"
+                },
+                "lore->Lore (any one subcategory)": {
+                    "name": "Lore (any one subcategory)"
+                }
+            }
+        },
+        "Jinsul Lookout": {
+            "name": "Jinsul Lookout",
+            "publicNotes": "<p>Hura's lookouts are novice crewmates who were on their first tour with the warlord's vessel during the Drift Crash.</p><hr /><p>A few scattered groups of jinsuls have established isolated bases on Aballon. Most are small squads of troopers attached to an officer, usually a mystic or tactical leader who they all respect or fear and have agreed to serve.</p><h2>Teardrop Ice Well Jinsuls</h2><p>The jinsuls in this adventure follow a commander called Warlord Hura. On the verge of a hostile takeover of a neighboring system controlled by a weaker warlord, Hura was positioned to significantly expand their holdings in Near Space\u2014until the Drift Crisis spat them and their loyal crew out in Pact Worlds space over Aballon. Crashing on an inhospitable world deep behind enemy lines, Hura and their followers fled underground from the brutal sun. The jinsuls gradually carved tunnels into the rock, some wearing their leg blades down until they were smooth, before they finally emerged into an underground cave\u2014Teardrop Ice Well.</p><h2>Undercurrents of Mutiny</h2><p>Over time, under the oppressive conditions of the Ice Well, facing hazards both natural and supernatural, Hura and their followers grew weaker, more isolated, and more desperate than others of their kind. It's only a matter of time before Hura's sworn blades\u2014conditioned from birth to protect them\u2014abandon everything they believe in, kill their leader, and flee in search of salvation and spoils elsewhere.</p>",
+            "acDetails": "all-around vision",
+            "items": {
+                "strike-melee->Leg Blade": {
+                    "name": "Leg Blade"
+                },
+                "strike-melee->Seeker Rifle": {
+                    "name": "Seeker Rifle"
+                },
+                "action->All-Around Vision": {
+                    "name": "All-Around Vision"
+                },
+                "action->Area Fire": {
+                    "name": "Area Fire",
+                    "description": "<p><strong>Incendiary Grenade</strong> (@Template[type:burst|distance:5], range 70 feet), <strong>Damage</strong> @Damage[1d8[fire]] (@Check[reflex|dc:13|basic])</p>"
+                },
+                "action->Ocular Scopes": {
+                    "name": "Ocular Scopes",
+                    "description": "<p>The lookout overlays ocular implants allowing them to aim through punishing weather conditions and gather data through infravision. The lookout ignores any non-magical sources of concealment until the end of its turn.</p>"
+                },
+                "action->Strider Leap": {
+                    "name": "Strider Leap",
+                    "description": "<p>The jinsul Strides and then performs a @UUID[Compendium.sf2e.actions.Item.JUvAvruz7yRQXfz2]{Long Jump}. It can Stride less than 10 feet and not automatically fail its Long Jump check.</p>"
+                }
+            }
+        },
+        "Mechanizer Saboteur": {
+            "name": "Mechanizer Saboteur",
+            "publicNotes": "<p>Mechanizer saboteurs are enthusiastic new converts who still have partially organic bodies that resemble their original forms. The less modified infiltrate communities and act as spies or sleeper agents, while the heavily modded are assassins or troopers handling important missions. Most specialize in hacking and infiltration. They can disable a machine with a thought, but their appearance often fools organics into not perceiving them as a danger.</p>\n<p>Nobody really knows what the Mechanizers' goals are. They claim to be ushering in the Singularity, which they believe will come from their wireless network of the same name. Yet their actions baffle observers. Most notorious among these are their (thankfully rare) ritualistic mutilation sprees. More common (and less newsworthy) activities also include performance art, \"free upgrades\" at cybernetic augmentation clinics, and university seminars.</p>\n<p>Mechanizer personalities are backed up to the Singularity network, which they believe will be the blueprint for future universal oneness. If a Mechanizer dies, the Singularity generates a new shell for them using recycled parts in one week\u2014perhaps less, if the Mechanizer was in good standing or involved in an important operation.</p><h2>Mechanizer Treasure</h2><p>The weapons integrated into Mechanizers' bodies can be removed from a corpse by a character who succeeds at a @Check[crafting|dc:12] or @Check[medicine|dc:12] check, who must also attempt a @Check[fortitude|dc:12] save, becoming @UUID[Compendium.sf2e.conditions.Item.fesd1n5eVhpCSS18]{Sickened 1} for 1 minute on a failure. Some Mechanizers embed jewels or microchips into their foreheads to symbolize a technological third eye; this adornment is sometimes a solarian weapon crystal or a spell chip that empowers them while making a fashion statement.</p>",
+            "sensesDetails": "darkvision",
+            "languagesDetails": "plugged into the Singularity",
+            "items": {
+                "strike-melee->Knife": {
+                    "name": "Knife"
+                },
+                "strike-melee->Laser Rifle": {
+                    "name": "Laser Rifle"
+                },
+                "action->Betray Tech": {
+                    "name": "Betray Tech",
+                    "description": "<p><strong>Trigger</strong> A Mechanizer is the target of an attack from an item or creature with the tech trait</p>\n<p><strong>Frequency</strong> once per 10 minutes</p><hr /><p><strong>Effect</strong> The Mechanizer taps into the universal code, causing the triggering item to become @UUID[Compendium.sf2e.conditions.Item.6A2QDy8wRGCVQsSd]{Glitching 1} (@Check[will|dc:13] save negates); if both the item and creature wielding it have the tech trait, this affects the item.</p>"
+                },
+                "action->Jump": {
+                    "name": "Jump",
+                    "description": "<p>The Mechanizer saboteur activates jump jets installed in their body to Fly up to 20 feet with a maximum height of 10 feet, or up to 20 feet straight up. They must land at the end of this movement or fall. The jump jets don't function if removed from the Mechanizer's body.</p>"
+                },
+                "action->Overhead Attack": {
+                    "name": "Overhead Attack",
+                    "description": "<p>The Mechanizer Jumps with their jump jets and uses a knife Strike or @UUID[Compendium.sf2e.actions.Item.7blmbDrQFNfdT731]{Shove} against a target they can reach at any point during this movement.</p>"
+                },
+                "action->Plugged Into the Singularity": {
+                    "name": "Plugged Into the Singularity",
+                    "description": "<p>Mechanizer saboteurs have telepathy at a 120 foot range with other Mechanizers. They don't need a hacker's toolkit to Hack and can do so remotely within 120 feet of a device they can see.</p>"
+                }
+            }
+        },
+        "Nova Pirate": {
+            "name": "Nova Pirate",
+            "items": {
+                "weapon->Phase Cutlass": {
+                    "name": "Phase Cutlass",
+                    "description": "<p><strong>Upgrades:</strong> 1</p><hr /><p>A phase cutlass resembles a traditional curved sword until it's powered. Then its blade morphs into a shimmering void, with a tiny star for each life it ended.</p>"
+                },
+                "weapon->Laser Pistol": {
+                    "name": "Laser Pistol",
+                    "description": "<p><strong>Upgrades:</strong> 1</p><hr /><p>This compact pistol is the most popular sidearm in the Pact Worlds thanks to its reliability, durability, and affordability. Most common laser pistols have a lightweight polycarbon body ending in a long, slim barrel.</p>"
+                },
+                "weapon->Frag Grenade (Commercial)": {
+                    "name": "Frag Grenade (Commercial)",
+                    "description": "<p><strong>Activate</strong> <span class=\"action-glyph\">1</span> Area Fire</p>\n<p><strong>Critical</strong> @Damage[1[bleed]]</p><hr /><p>These fragmentary grenades explode in a cloud of shrapnel and deal 1d8 piercing damage in a @Template[burst|distance:5] with a @Check[reflex|against:class|basic] save.</p>"
+                },
+                "armor->Estex Suit": {
+                    "name": "Estex Suit",
+                    "description": "<p><strong>Upgrades:</strong> 1</p><hr /><p>This bulky flight suit is reinforced with thin polycarbon panels sewn between layers of tactical fabric.</p>"
+                },
+                "ammo->Battery (Commercial)": {
+                    "name": "Battery (Commercial)"
+                },
+                "treasure->Credstick": {
+                    "name": "Credstick",
+                    "description": "<p>Most people in Starfinder keep their wealth on a protected item known as a credstick. These devices are often flat and roughly the size of a human finger. They range in dimensions and quality, but at the end of the day, they\u2019re just a means of conveniently carrying and spending money. Usage of these devices is determined by the owner, and a credstick can accept or spend funds with as simple an action as tapping it near a suitable banking device. When more rigorous security is necessary, they can require audio or biometric imprints in order to activate. Some advanced credsticks even have a magical component that might require a mental password or the recitation of a specific spell to access stored funds.</p>\n<p>Credsticks aren\u2019t gateways to the entirety of one\u2019s wealth, and larger stores of credits are often kept secured in banks, personal vaults, or secure databases. Instead, a credstick is a safe and anonymous means of moving credits around without being traced. Adventurers and common citizens alike often keep a credstick on their person to handle any purchases they might be called upon to make, while also only keeping just enough credits on them that losing the credstick wouldn\u2019t result in bankruptcy.</p>\n<p>Individuals in the Pact Worlds often carry credsticks, and other civilizations that interact with the Pact often turn local funds into credits and thus carry them to spend their converted currency. Sometimes a person might carry several credsticks, dedicating each one to a different use, or simply trading the stick away if they want to make a purchase of a predefined amount. If ever the number of credsticks on a person becomes too cumbersome, it\u2019s easy enough to move the funds between individual sticks and discard emptied sticks to save on space, however a credstick always has a negligible bulk.</p>"
+                },
+                "strike-melee->Phase Cutlass": {
+                    "name": "Phase Cutlass"
+                },
+                "strike-melee->Laser Pistol": {
+                    "name": "Laser Pistol"
+                },
+                "strike-melee->Frag Grenade (Commercial)": {
+                    "name": "Frag Grenade (Commercial)"
+                }
+            }
+        },
+        "Particle Cannon": {
+            "name": "Particle Cannon",
+            "descriptionHazard": "<p>A glowering purple eye opens in the ship's hull. The triple barrels of a massive turret spin inside the revealed port, then release a beam of concentrated particles with ruthless efficiency.</p>",
+            "disable": "<p>@Check[crafting|dc:14] (trained) or @Check[thievery|dc:14] (trained) to disable or jam the particle cannon, @Check[arcana|dc:17], @Check[occultism|dc:17], @Check[nature|dc:17], or @Check[religion|dc:17] (trained) to counteract the particle beam by exploiting a magical theory or praying for a miraculous malfunction.</p>",
+            "reset": "<p>If disabled, the cannon is inactive for 1 round while Hura troubleshoots the issue, then it resumes firing. Hura stops firing if the lookouts are killed or the cannon is disabled three or more times.</p>",
+            "routine": "<p>(2 actions) Hura fires a charged shot from the particle cannon, dealing @Damage[(1d6+3)[fire]|options:area-damage] damage to each creature in a @Template[type:line|distance:90] (@Check[reflex|dc:14|basic] save).</p>",
+            "stealth": "<p>(trained)</p>",
+            "items": {
+                "action->Charge Up": {
+                    "name": "Charge Up",
+                    "description": "<p><strong>Trigger</strong> A lookout identifies a threat</p><hr /><p><strong>Effect</strong> Hura takes the gunner position. The particle cannon rolls initiative.</p>"
+                }
+            }
+        },
+        "Shadowy Duplicates": {
+            "name": "Shadowy Duplicates",
+            "hpDetails": "(6 HP each)",
+            "descriptionHazard": "<p>Four duplicates of a shadowy figure produce a quasi-real quantum field that warps the fabric of reality, then attack with echoes of reality-slicing magic.</p>",
+            "disable": "<p>@Check[arcana|dc:14] or @Check[occultism|dc:14] to disable a duplicate by sealing it away from this reality, @Check[Engineering Lore|dc:15] or @Check[Physical Science Lore|dc:15] to disable the quantum field with contradicting theory, or @Check[athletics|dc:16] to disable a duplicate by physical force</p>",
+            "reset": "<p>The duplicates vanish after 1 minute and never reappear.</p>",
+            "routine": "<p>(4 actions) The shadowy duplicates lose 1 action each turn for each destroyed or disabled duplicate. On each of the hazard's actions, a duplicate moves up to 20 feet (ignoring the quantum field's difficult terrain) or moves the quantum field up to 20 feet, then emits a mind-slicing blast against one creature within 40 feet.</p>",
+            "stealth": "<p>(trained)</p>",
+            "items": {
+                "action->Quantum Field": {
+                    "name": "Quantum Field",
+                    "description": "<p><strong>Trigger</strong> The shadowy duplicates appear and threaten the PCs</p><hr /><p><strong>Effect</strong> The duplicates warp reality, creating a quantum field. This field is a 30-foot-radius burst centered on any point within 100 feet of a duplicate, and it's positioned to affect as many PCs as possible. This area is difficult terrain. Then the hazard rolls initiative.</p>"
+                },
+                "strike-melee->Mind-Slicing Blast": {
+                    "name": "Mind-Slicing Blast",
+                    "description": "<p>no multiple attack penalty</p>"
+                }
+            }
+        },
+        "Shroomclaw": {
+            "name": "Shroomclaw",
+            "items": {
+                "strike-melee->Jaws": {
+                    "name": "Jaws"
+                },
+                "strike-melee->Claw": {
+                    "name": "Claw"
+                },
+                "action->Entangling Mycelia": {
+                    "name": "Entangling Mycelia",
+                    "description": "<p>Creatures hit by a shroomclaw's claw Strike are @UUID[Compendium.sf2e.conditions.Item.i3OJZU2nk64Df3xm]{Clumsy 1} for 1 round.</p>"
+                },
+                "action->Pounce": {
+                    "name": "Pounce",
+                    "description": "<p>The shroomclaw Strides and makes a Strike at the end of that movement. If the shroomclaw began this action @UUID[Compendium.sf2e.conditions.Item.iU0fEDdBp3rXpTMC]{Hidden}, it remains hidden until after its Strike.</p>"
+                },
+                "action->Suppressing Spores": {
+                    "name": "Suppressing Spores",
+                    "description": "<p>The shroomclaw releases a @Template[type:burst|distance:10] of spores around itself that deal @Damage[1d4[poison]|options:area-damage] damage to all non-shroomclaw creatures in the area (@Check[fortitude|dc:13|basic] save); on a critical failure, the creature becomes @UUID[Compendium.sf2e.conditions.Item.enA7BxAjBb7ns1iF]{Suppressed} for 1 minute. The shroomclaw can't use suppressing spores again for [[/gmr 1d4 #Recharge Suppressing Spores]]{1d4 rounds}.</p>"
+                },
+                "action->Grab": {
+                    "name": "Grab"
+                }
+            }
+        },
+        "Smog Scamp": {
+            "name": "Smog Scamp",
+            "sensesDetails": "darkvision, fog vision",
+            "hpDetails": "fast healing 1 (in smog or polluted air)",
+            "items": {
+                "strike-melee->Jaws": {
+                    "name": "Jaws"
+                },
+                "action->Fast Healing 1 (In Smog or Polluted Air)": {
+                    "name": "Fast Healing 1 (In Smog or Polluted Air)"
+                },
+                "action->Filthy Fog": {
+                    "name": "Filthy Fog",
+                    "description": "<p>The smog scamp exhales polluted air in a @Template[type:cone|distance:15] that deals @Damage[1d6[poison]|options:area-damage] damage to each creature within the area (@Check[fortitude|dc:16|basic] save). A creature that fails its save is also exposed to foglung. The smog scamp can't use Filthy Fog again for [[/gmr 1d4 #Recharge Filthy Fog]]{1d4 rounds}.</p>"
+                },
+                "action->Foglung": {
+                    "name": "Foglung",
+                    "description": "<p><strong>Saving Throw</strong> @Check[fortitude|dc:13]</p>\n<p><strong>Onset</strong> 1 week</p>\n<p><strong>Stage 1</strong> @UUID[Compendium.sf2e.conditions.Item.fesd1n5eVhpCSS18]{Sickened 1} (3 days)</p>\n<p><strong>Stage 2</strong> @UUID[Compendium.sf2e.conditions.Item.fesd1n5eVhpCSS18]{Sickened 2} (3 days)</p>\n<p><strong>Stage 3</strong> @UUID[Compendium.sf2e.conditions.Item.HL2l2VRSaQHu9lUw]{Fatigued}, can't recover from the fatigued condition, and intense coughing requires a successful @Check[flat|dc:13] to Cast a Spell or activate an item (1 week)</p>\n<p><strong>Stage 4</strong> @UUID[Compendium.sf2e.conditions.Item.fBnFDH2MTzgFijKf]{Unconscious}</p>"
+                }
+            }
+        },
+        "Spiritual Sinkwell": {
+            "name": "Spiritual Sinkwell",
+            "descriptionHazard": "<p>A necromantic sinkwell siphons creatures' life essence</p>",
+            "disable": "<p>@Check[arcana|dc:16], @Check[occultism|dc:16], or @Check[religion|dc:16] (trained) to safely disperse the void energy, @Check[athletics|dc:18] or @Check[thievery|dc:18] (trained) to sabotage the sinkwell; three total successes are required.</p>",
+            "reset": "<p>The haunt deactivates after 1 minute and does not reactivate.</p>",
+            "routine": "<p>(5 actions) The haunt makes two void lash Strikes against targets it hasn't yet @UUID[Compendium.sf2e.conditions.Item.kWc1fhmv9LBiTuei]{Grabbed}, then Grabs each creature it hit, with no multiple attack penalty. It automatically pulls grabbed creatures 5 feet toward its center, then deals @Damage[(1d6+3)[spirit]] damage (@Check[fortitude|dc:18|basic]) to creatures within 10 feet of its center. Creatures that critically fail are @UUID[Compendium.sf2e.conditions.Item.4D2KBtexWXa6oUMR]{Drained 1}.</p>",
+            "stealth": "<p>(trained)</p>",
+            "items": {
+                "action->Soul-Draining Wave": {
+                    "name": "Soul-Draining Wave",
+                    "description": "<p><strong>Trigger</strong> A necromantic energy cannon hits Nova Rush</p><hr /><p><strong>Effect</strong> Spiritual energy assails the cargo hold, dealing @Damage[(1d6+3)[spirit]] damage to creatures in area <strong>B1</strong> (@Check[fortitude|dc:18|basic]). The haunt sprouts several tentacle-like void lashes and rolls initiative.</p>"
+                },
+                "strike-melee->Void Lash": {
+                    "name": "Void Lash"
+                },
+                "action->Grab": {
+                    "name": "Grab",
+                    "description": "<p>[[/gmr 1d20+9 #Athletics]]{+9} Athletics</p>\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Grab]</p>"
+                }
+            }
+        },
+        "Sworn Blade of Shields": {
+            "name": "Sworn Blade of Shields",
+            "publicNotes": "<p>A sworn blade of shields wields their leg blades against foes with deadly precision.</p><hr /><p>A few scattered groups of jinsuls have established isolated bases on Aballon. Most are small squads of troopers attached to an officer, usually a mystic or tactical leader who they all respect or fear and have agreed to serve.</p><h2>Teardrop Ice Well Jinsuls</h2><p>The jinsuls in this adventure follow a commander called Warlord Hura. On the verge of a hostile takeover of a neighboring system controlled by a weaker warlord, Hura was positioned to significantly expand their holdings in Near Space\u2014until the Drift Crisis spat them and their loyal crew out in Pact Worlds space over Aballon. Crashing on an inhospitable world deep behind enemy lines, Hura and their followers fled underground from the brutal sun. The jinsuls gradually carved tunnels into the rock, some wearing their leg blades down until they were smooth, before they finally emerged into an underground cave\u2014Teardrop Ice Well.</p><h2>Undercurrents of Mutiny</h2><p>Over time, under the oppressive conditions of the Ice Well, facing hazards both natural and supernatural, Hura and their followers grew weaker, more isolated, and more desperate than others of their kind. It's only a matter of time before Hura's sworn blades\u2014conditioned from birth to protect them\u2014abandon everything they believe in, kill their leader, and flee in search of salvation and spoils elsewhere.</p>",
+            "acDetails": "all-around vision",
+            "items": {
+                "strike-melee->Leg Blade": {
+                    "name": "Leg Blade"
+                },
+                "action->All-Around Vision": {
+                    "name": "All-Around Vision"
+                },
+                "action->Reactive Strike": {
+                    "name": "Reactive Strike"
+                },
+                "action->Leg Blade Lunge": {
+                    "name": "Leg Blade Lunge",
+                    "description": "<p>The jinsul Steps, Strikes with its leg blade, then Steps to its original position. Its reach increases to 10 feet for this attack.</p>"
+                },
+                "action->Strider Leap": {
+                    "name": "Strider Leap",
+                    "description": "<p>The jinsul Strides and then performs a @UUID[Compendium.sf2e.actions.Item.JUvAvruz7yRQXfz2]{Long Jump}. It can Stride less than 10 feet and not automatically fail its Long Jump check.</p>"
+                }
+            }
+        },
+        "Sworn Blade of Sigils": {
+            "name": "Sworn Blade of Sigils",
+            "publicNotes": "<p>Like sworn blades of shields, the sworn blades of sigils are pledged to serve their superiors. These jinsuls focus their effort entirely on keeping their superiors alive.</p><hr /><p>A few scattered groups of jinsuls have established isolated bases on Aballon. Most are small squads of troopers attached to an officer, usually a mystic or tactical leader who they all respect or fear and have agreed to serve.</p><h2>Teardrop Ice Well Jinsuls</h2><p>The jinsuls in this adventure follow a commander called Warlord Hura. On the verge of a hostile takeover of a neighboring system controlled by a weaker warlord, Hura was positioned to significantly expand their holdings in Near Space\u2014until the Drift Crisis spat them and their loyal crew out in Pact Worlds space over Aballon. Crashing on an inhospitable world deep behind enemy lines, Hura and their followers fled underground from the brutal sun. The jinsuls gradually carved tunnels into the rock, some wearing their leg blades down until they were smooth, before they finally emerged into an underground cave\u2014Teardrop Ice Well.</p><h2>Undercurrents of Mutiny</h2><p>Over time, under the oppressive conditions of the Ice Well, facing hazards both natural and supernatural, Hura and their followers grew weaker, more isolated, and more desperate than others of their kind. It's only a matter of time before Hura's sworn blades\u2014conditioned from birth to protect them\u2014abandon everything they believe in, kill their leader, and flee in search of salvation and spoils elsewhere.</p>",
+            "acDetails": "all-around vision",
+            "items": {
+                "spellcastingEntry->Occult Spontaneous Spells": {
+                    "name": "Occult Spontaneous Spells"
+                },
+                "strike-melee->Leg Blade": {
+                    "name": "Leg Blade"
+                },
+                "strike-melee->Frost Ray": {
+                    "name": "Frost Ray"
+                },
+                "action->All-Around Vision": {
+                    "name": "All-Around Vision"
+                },
+                "action->Vitality Network": {
+                    "name": "Vitality Network",
+                    "description": "<p>The sworn blade of sigils has a vitality network they share with up to 10 bonded allies. This network can store a maximum of 10 Hit Points and begins combat full.</p>"
+                },
+                "action->Refill Vitality": {
+                    "name": "Refill Vitality",
+                    "description": "<p><strong>Frequency</strong> once per round</p><hr /><p><strong>Effect</strong> The jinsul restores 4 Hit Points to their vitality network.</p>"
+                },
+                "action->Strider Leap": {
+                    "name": "Strider Leap",
+                    "description": "<p>The jinsul Strides and then performs a @UUID[Compendium.sf2e.actions.Item.JUvAvruz7yRQXfz2]{Long Jump}. It can Stride less than 10 feet and not automatically fail its Long Jump check.</p>"
+                },
+                "action->Transfer Vitality": {
+                    "name": "Transfer Vitality",
+                    "description": "<p>The sworn blade of sigils transfers any number of Hit Points from their vitality network to heal a visible bonded target.</p>"
+                }
+            }
+        },
+        "Warlord Hura": {
+            "name": "Warlord Hura",
+            "publicNotes": "<p>Warlord Hura is a minor jinsul commander who made a power grab in the chaos after the false hierarchy's fall. Still hungry to acquire whatever power they can, they're desperate to learn how Agent Z's stolen relic works; while they're uncharacteristically willing to negotiate with non-jinsuls who cross their path, given the circumstances, Hura will gladly torture and betray anyone who stands in the way of achieving their goals.</p><hr /><p>A few scattered groups of jinsuls have established isolated bases on Aballon. Most are small squads of troopers attached to an officer, usually a mystic or tactical leader who they all respect or fear and have agreed to serve.</p><h2>Teardrop Ice Well Jinsuls</h2><p>The jinsuls in this adventure follow a commander called Warlord Hura. On the verge of a hostile takeover of a neighboring system controlled by a weaker warlord, Hura was positioned to significantly expand their holdings in Near Space\u2014until the Drift Crisis spat them and their loyal crew out in Pact Worlds space over Aballon. Crashing on an inhospitable world deep behind enemy lines, Hura and their followers fled underground from the brutal sun. The jinsuls gradually carved tunnels into the rock, some wearing their leg blades down until they were smooth, before they finally emerged into an underground cave\u2014Teardrop Ice Well.</p><h2>Undercurrents of Mutiny</h2><p>Over time, under the oppressive conditions of the Ice Well, facing hazards both natural and supernatural, Hura and their followers grew weaker, more isolated, and more desperate than others of their kind. It's only a matter of time before Hura's sworn blades\u2014conditioned from birth to protect them\u2014abandon everything they believe in, kill their leader, and flee in search of salvation and spoils elsewhere.</p>",
+            "acDetails": "all-around vision",
+            "items": {
+                "strike-melee->Leg Blade": {
+                    "name": "Leg Blade"
+                },
+                "strike-melee->Acid Dart Rifle": {
+                    "name": "Acid Dart Rifle"
+                },
+                "action->All-Around Vision": {
+                    "name": "All-Around Vision"
+                },
+                "action->Aim": {
+                    "name": "Aim",
+                    "description": "<p>Hura aims with their melee or ranged weapon (choose one) against a target within 60 feet. For the rest of their turn, successful attacks made with that weapon deal an additional 1d4 precision damage and reduce the target's cover bonus to AC by 1.</p>"
+                },
+                "action->Strider Leap": {
+                    "name": "Strider Leap",
+                    "description": "<p>The jinsul Strides and then performs a @UUID[Compendium.sf2e.actions.Item.JUvAvruz7yRQXfz2]{Long Jump}. It can Stride less than 10 feet and not automatically fail its Long Jump check.</p>"
+                }
+            }
+        },
+        "Young Sharpwing": {
+            "name": "Young Sharpwing",
+            "publicNotes": "<p>The sharpwing population sharply dropped in the last five years. Sightings of solitary, hungry young sharpwings or mated pairs roosting in the outskirts of megaplexes are becoming worryingly frequent. Xenowardens are scrambling to figure out what's threatening them before it's too late.</p><hr /><p>Concentrated in Aballon's frigid Ice Wells, sharpwings roost together by the hundreds or even thousands, emerging at dawn and dusk to hunt for prey in the upper shelves.</p><h2>Rare Sightings</h2><p>Sharpwings don't frequently emerge from the Ice Wells, so they can cause a stir when seen near megaplexes such as Striving. They don't pose much of a threat individually, but horror stories of vicious attacks by large flocks of sharpwings and disturbing videos captured by reckless explorers scare many tourists into shooting the creatures on sight.</p>",
+            "acDetails": "all-around vision",
+            "sensesDetails": "low-light vision",
+            "items": {
+                "strike-melee->Claw": {
+                    "name": "Claw"
+                },
+                "action->All-Around Vision": {
+                    "name": "All-Around Vision"
+                },
+                "action->Swooping Strike": {
+                    "name": "Swooping Strike",
+                    "description": "<p>The young sharpwing Flies twice and makes a claw Strike at any point during the movement.</p>"
+                },
+                "action->Talon": {
+                    "name": "Talon",
+                    "description": "<p><strong>Requirements</strong> The sharpwing's previous action was a successful claw Strike</p><hr /><p><strong>Effect</strong> The sharpwing makes a claw Strike against a different target within reach, using the same multiple attack penalty as its previous Strike.</p>"
+                }
+            }
+        }
+    },
+    "mapping": {
+        "descriptionHazard": "system.details.description",
+        "disable": "system.details.disable",
+        "reset": "system.details.reset",
+        "routine": "system.details.routine",
+        "stealth": "system.attributes.stealth.details",
+        "items": {
+            "converter": "translateActorItems",
+            "path": "items"
+        },
+        "rules": {
+            "converter": "translateRules",
+            "path": "system.rules"
+        },
+        "publicNotes": "system.details.publicNotes",
+        "privateNotes": "system.details.privateNotes",
+        "acDetails": "system.attributes.ac.details",
+        "blurb": "system.details.blurb",
+        "hpDetails": "system.attributes.hp.details",
+        "allSavesBonus": "system.attributes.allSaves.value",
+        "speedsDetails": "system.attributes.speed.details",
+        "sensesDetails": "system.perception.details",
+        "languagesDetails": "system.details.languages.details",
+        "skills": {
+            "converter": "translateSkills",
+            "path": "system.skills"
+        }
+    }
+}

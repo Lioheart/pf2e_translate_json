@@ -1,0 +1,1128 @@
+{
+    "label": "Guilt-Of-The-Grave-World-Bestiary",
+    "entries": {
+        "Aeon Guard Trooper": {
+            "name": "Aeon Guard Trooper",
+            "items": {
+                "weapon->Pulse Gauntlet": {
+                    "name": "Pulse Gauntlet",
+                    "description": "<p><strong>Upgrades:</strong> 1</p><hr /><p>Popularized in underground fighting circles, this heavy-duty nanocarbon glove amplifies and weaponizes sounds made by its wielder, generating a sonic boom strong enough to knock an enemy off their feet.</p>"
+                },
+                "weapon->Aeon Rifle": {
+                    "name": "Aeon Rifle",
+                    "description": "<p><strong>Upgrades:</strong> 0</p><hr /><p>A mainstay of the Azlanti Star Empire, this sleek laser rifle includes a slot for <em>aeon stones</em> to enhance and focus the intensity of its beams.</p>"
+                },
+                "armor->Tactical Aeon Guard Armor": {
+                    "name": "Tactical Aeon Guard Armor",
+                    "description": "<p><strong>Upgrades:</strong> 1</p><hr /><p>Flexible but sturdy plates layered together form this traditional armor worn by lashunta cavalry on Castrovel. In times past, a shotalashu cavalry member forged their armor from their mount's shed skin, or more rarely, the skin of a fallen mount, to honor them in future battles. Synthetic imitations are fashionable on some parts of Castrovel.</p>"
+                },
+                "equipment->Aeon Stone (Consumed)": {
+                    "name": "Aeon Stone (Consumed)",
+                    "description": "<p>Over millennia, these mysterious, intricately cut gemstones have been hoarded by mystics and fanatics hoping to discover their secrets. Despite their myriad forms and functions, these stones are purportedly all fragments of crystal tools used by otherworldly entities to construct the universe in primeval times.</p>\n<p>When you invest one of these precisely shaped crystals, the stone orbits your head instead of being worn on your body. You can stow an <em>aeon stone</em> with an Interact action, and an orbiting stone can be snatched out of the air with a successful Disarm action against you. A stowed or removed stone remains invested, but its effects are suppressed until you return it to orbit your head again.</p>\n<p>There are various types of <em>aeon stones</em>, each with a different appearance and magical effect. Each <em>aeon stone</em> also gains a resonant power when slotted into a special magical item called a <em>wayfinder</em>.</p>\n<hr />\n<p>A <em>consumed</em> aeon stone is a dull lump that has lost its magical properties. It still rotates your head like any other aeon stone and can thus serve as a stylish, hand-free option for various spells that target an object.</p>\n<p>This aeon stone has no resonant power.</p>"
+                },
+                "ammo->Battery (Commercial)": {
+                    "name": "Battery (Commercial)"
+                },
+                "ammo->Battery (Tactical)": {
+                    "name": "Battery (Tactical)"
+                },
+                "strike-melee->Aeon Rifle": {
+                    "name": "Aeon Rifle"
+                },
+                "strike-melee->Pulse Gauntlet": {
+                    "name": "Pulse Gauntlet"
+                },
+                "action->Elusive Maneuver": {
+                    "name": "Elusive Maneuver",
+                    "description": "<p><strong>Trigger</strong> The trooper takes damage from a ranged Strike or spell</p><hr /><p><strong>Effect</strong> The trooper Steps or @UUID[Compendium.sf2e.actions.Item.ust1jJSCZQUhBZIz]{Takes Cover}.</p>"
+                },
+                "action->Coordinated Fire": {
+                    "name": "Coordinated Fire",
+                    "description": "<p>After the trooper attempts a Strike against a target (regardless of success or failure), the next attack roll one of the trooper's allies makes against the same target gains a +2 circumstance bonus. If a Strike with a bonus from coordinated fire hits, the target becomes @UUID[Compendium.sf2e.conditions.Item.enA7BxAjBb7ns1iF]{Suppressed} until the end of the attacking ally's next turn.</p>\n<p>@UUID[Compendium.sf2e.bestiary-effects.Item.x9nA4lIcHmE7x8Tt]{Effect: Coordinated Fire}</p>"
+                },
+                "action->Sharpshooter": {
+                    "name": "Sharpshooter",
+                    "description": "<p>When the trooper makes a ranged Strike against a target with an AC bonus from lesser or standard cover, they reduce the AC bonus by 1 for that Strike.</p>"
+                },
+                "action->Show No Mercy": {
+                    "name": "Show No Mercy",
+                    "description": "<p>The trooper gains a +2 circumstance bonus to damage rolls against @UUID[Compendium.sf2e.conditions.Item.enA7BxAjBb7ns1iF]{Suppressed} targets.</p>"
+                },
+                "lore->Warfare Lore": {
+                    "name": "Warfare Lore"
+                }
+            }
+        },
+        "Animated Fire Extinguisher": {
+            "name": "Animated Fire Extinguisher",
+            "acDetails": "12 when broken",
+            "items": {
+                "strike-melee->Hose Whip": {
+                    "name": "Hose Whip"
+                },
+                "strike-melee->Foam Spray": {
+                    "name": "Foam Spray"
+                },
+                "action->Construct Armor (Hardness 3)": {
+                    "name": "Construct Armor (Hardness 3)",
+                    "description": "<p>Like normal objects, the animated fire extinguisher has Hardness. This Hardness reduces any damage it takes by an amount equal to its Hardness. Once the animated fire extinguisher is reduced to less than half its Hit Points, or immediately upon being damaged by a critical hit, its construct armor breaks, removing its Hardness and reducing its Armor Class to 12.</p>"
+                },
+                "action->Auto-Fire": {
+                    "name": "Auto-Fire",
+                    "description": "<p><strong>Foam Spray</strong> (@Template[type:cone|distance:20], cold, magical)</p>\n<p><strong>Damage</strong> @Damage[(1d8+2)[cold]|options:area-damage] (@Check[reflex|dc:15|basic|traits:cold,magical])</p>"
+                }
+            }
+        },
+        "Bonecrusher": {
+            "name": "Bonecrusher",
+            "hpDetails": "void healing",
+            "items": {
+                "weapon->Battleglove": {
+                    "name": "Battleglove",
+                    "description": "<p><strong>Upgrades:</strong> 1</p><hr /><p>These durable gloves fit over a wielder's hands (or other appendages) and feature weighted plates or spikes over the knuckles.</p>"
+                },
+                "weapon->Laser Pistol": {
+                    "name": "Laser Pistol",
+                    "description": "<p><strong>Upgrades:</strong> 1</p><hr /><p>This compact pistol is the most popular sidearm in the Pact Worlds thanks to its reliability, durability, and affordability. Most common laser pistols have a lightweight polycarbon body ending in a long, slim barrel.</p>"
+                },
+                "armor->Microcord Armor": {
+                    "name": "Microcord Armor",
+                    "description": "<p><strong>Upgrades:</strong> 1</p><hr /><p>This light armor is woven from ultralight fibers that flex with a wearer's movements but turn hard as steel on impact.</p>"
+                },
+                "ammo->Battery (Commercial)": {
+                    "name": "Battery (Commercial)"
+                },
+                "strike-melee->Battleglove": {
+                    "name": "Battleglove"
+                },
+                "strike-melee->Laser Pistol": {
+                    "name": "Laser Pistol"
+                },
+                "action->Void Healing": {
+                    "name": "Void Healing"
+                },
+                "action->Quick Cover": {
+                    "name": "Quick Cover",
+                    "description": "<p>The bonecrusher Steps or Strides, then can [[/act take-cover]] as part of that same action if they end their movement adjacent to terrain that provides cover.</p>"
+                },
+                "lore->Corpse Fleet Lore": {
+                    "name": "Corpse Fleet Lore"
+                }
+            }
+        },
+        "Boneflayer": {
+            "name": "Boneflayer",
+            "blurb": "Variant robotic advanced war machine",
+            "languagesDetails": "can't speak any language",
+            "items": {
+                "weapon->Integrated Advanced Machine Gun": {
+                    "name": "Integrated Advanced Machine Gun",
+                    "description": "<p><strong>Upgrades:</strong> 1</p><hr /><p>These proven and reliable automatic weapons are capable of firing in short bursts or completely emptying their magazines to clear a battlefield.</p>"
+                },
+                "strike-melee->Slam": {
+                    "name": "Slam"
+                },
+                "strike-melee->Integrated Advanced Machine Gun": {
+                    "name": "Integrated Advanced Machine Gun"
+                },
+                "action->Counter-fire": {
+                    "name": "Counter-fire",
+                    "description": "<p><strong>Trigger</strong> An enemy target attempts a ranged Strike against the boneflayer</p>\n<p><strong>Requirements</strong> The boneflayer is currently outside the melee reach of the enemy target</p><hr /><p><strong>Effect</strong> The boneflayer attempts a ranged Strike. If the result of this Strike is equal to or greater than the result of the triggering Strike, the triggering Strike is treated as though it were a critical miss.</p>"
+                },
+                "action->Hypersonic Burst": {
+                    "name": "Hypersonic Burst",
+                    "description": "<p><strong>Frequency</strong> once per minute</p><hr /><p><strong>Effect</strong> The boneflayer Steps or Strides twice.</p>"
+                },
+                "action->Rampage Strikes": {
+                    "name": "Rampage Strikes",
+                    "description": "<p>The boneflayer Steps or Strides, then makes two Strikes against the same target. Both Strikes count toward its multiple attack penalty, but its multiple attack penalty does not increase until after it makes both Strikes.</p>"
+                }
+            }
+        },
+        "Burning Rockslide": {
+            "name": "Burning Rockslide",
+            "descriptionHazard": "<p>Smoldering boulders are disgorged by the magmatic soil and roll down the slope, catching fire as they descend.</p>",
+            "disable": "<p>@Check[nature|dc:16] (trained), @Check[Physical Science Lore|dc:16] (trained), or @Check[survival|dc:16] (trained) to guess the rocks' path, or a @Check[acrobatics|dc:18] (trained), @Check[athletics|dc:18] (trained) or a @Check[fortitude|dc:18] save to deflect or dodge rocks.</p>",
+            "stealth": "<p>(trained)</p>",
+            "items": {
+                "action->Catching Fire": {
+                    "name": "Catching Fire",
+                    "description": "<p><strong>Trigger</strong> Creatures climb the slope</p><hr /><p><strong>Effect</strong> Molten lava oozes down the slope, coming perilously close to the path and igniting the debris nearby\u2014even the rocks. All creatures in a @Template[type:burst|distance:30] take @Damage[(1d10+4)[bludgeoning],(1d10+4)[fire]|options:area-damage] damage with a @Check[reflex|dc:16|basic] save. On a critical failure the creature also catches on fire.</p>"
+                }
+            }
+        },
+        "Cinder": {
+            "name": "Cinder",
+            "sensesDetails": "smoke vision",
+            "items": {
+                "strike-melee->Immolate": {
+                    "name": "Immolate"
+                },
+                "action->Smoke Vision": {
+                    "name": "Smoke Vision",
+                    "description": "<p>The cinder ignores the @UUID[Compendium.sf2e.conditions.Item.DmAIPqOBomZ7H95W]{Concealed} condition from smoke.</p>"
+                },
+                "action->Hot Air": {
+                    "name": "Hot Air",
+                    "description": "<p>5 feet. A creature that enters this aura or begins its turn there must succeed at a @Check[fortitude|dc:22] save or become @UUID[Compendium.sf2e.conditions.Item.enA7BxAjBb7ns1iF]{Suppressed} until the end of its next turn, as its feet (or similar appendages) burn.</p>"
+                }
+            }
+        },
+        "Corpse Fleet Expendable": {
+            "name": "Corpse Fleet Expendable",
+            "hpDetails": "void healing",
+            "items": {
+                "weapon->Reaction Breacher": {
+                    "name": "Reaction Breacher",
+                    "description": "<p><strong>Upgrades:</strong> 1</p><hr /><p>This portable reaction cannon launches flak from miniature cluster missiles that rip through a fortified structure and anyone unfortunate enough to be inside.</p>"
+                },
+                "weapon->Vertebralis Thorn": {
+                    "name": "Vertebralis Thorn",
+                    "description": "<p><strong>Upgrades</strong> 1</p><hr /><p>The vertebralis thorn is a weapon forged in the Corpse Fleet armory, repurposed from the spinal columns of slain enemies and fitted with specialized fiber-optic cables. Corpse Fleet officers favor this weapon, primarily because a ceremonial version is presented to them after their first major conquest, generally created from the spine of a creature they personally killed.</p>"
+                },
+                "armor->Defrex Hide": {
+                    "name": "Defrex Hide",
+                    "description": "<p><strong>Upgrades:</strong> 1</p><hr /><p>Made from the hide of a ferocious mammal native to Vesk-2, this medium armor is especially popular among vesk. Tanned slabs of the creature's thick hide are stitched together with metal wires, and the joints are reinforced with metal studs or scales.</p>"
+                },
+                "ammo->Projectile Ammo": {
+                    "name": "Projectile Ammo"
+                },
+                "strike-melee->Vertebralis Thorn": {
+                    "name": "Vertebralis Thorn"
+                },
+                "strike-melee->Reaction Breacher": {
+                    "name": "Reaction Breacher"
+                },
+                "action->Void Healing": {
+                    "name": "Void Healing"
+                },
+                "action->Fusillade": {
+                    "name": "Fusillade",
+                    "description": "<p>The Corpse Fleet expendable's ranged Strikes deal an additional 1d4 precision damage when the Corpse Fleet expendable is within the first range increment of at least one other member of the Corpse Fleet wielding a ranged weapon.</p>"
+                },
+                "lore->Corpse Fleet Lore": {
+                    "name": "Corpse Fleet Lore"
+                }
+            }
+        },
+        "Corpse Fleet Junior Officer": {
+            "name": "Corpse Fleet Junior Officer",
+            "hpDetails": "void healing",
+            "items": {
+                "weapon->Semi-Auto Pistol": {
+                    "name": "Semi-Auto Pistol",
+                    "description": "<p><strong>Upgrades:</strong> 1</p><hr /><p>This pistol automatically ejects used cartridges and loads new ammunition after every shot fired.</p>"
+                },
+                "armor->Tempweave": {
+                    "name": "Tempweave",
+                    "description": "<p><strong>Upgrades:</strong> 1</p><hr /><p>Tempweave suits are reinforced hooded garments woven with thermal fabric and venting wires, popularly worn for trips to humid climates like the jungles of Castrovel or Pulonis.</p>"
+                },
+                "equipment->Datapad": {
+                    "name": "Datapad",
+                    "description": "<p>These ubiquitous handheld computers incorporate a comm unit, microphone, speaker, camera, infosphere browser, and data storage. They can store thousands of hours of recordings, play games, and perform simple computing functions, such as time tracking and notifications, word processing, calculations, data processing, streaming media, and broadcasting emergency alerts from local governments. In most societies, commercial datapads are relatively flimsy, designed to rapidly wear out or fall behind on the latest features and updates to encourage the consumer to replace it with a newer model. In contrast, higher-end datapads are made to last and often include a sturdier chassis and extra functions.</p>"
+                },
+                "consumable->Marrow Paste (Commercial)": {
+                    "name": "Marrow Paste (Commercial)",
+                    "description": "<p>Developed and patented by Eoxian medical conglomerate Nulife, this magenta tincture's metallic odor is reminiscent of fresh blood. When applied to the body of a creature that can benefit from void healing, marrow paste grants fast healing 1 for 1 minute.</p>"
+                },
+                "ammo->Projectile Ammo": {
+                    "name": "Projectile Ammo"
+                },
+                "strike-melee->Semi-Auto Pistol": {
+                    "name": "Semi-Auto Pistol"
+                },
+                "strike-melee->Bone Blade": {
+                    "name": "Bone Blade"
+                },
+                "strike-melee->Necrotic Ray": {
+                    "name": "Necrotic Ray"
+                },
+                "action->Void Healing": {
+                    "name": "Void Healing"
+                },
+                "action->Rally the Troops": {
+                    "name": "Rally the Troops",
+                    "description": "<p>The officer issues an order for their allies to regroup. All Corpse Fleet allies within 120 feet of the officer can use a reaction to Stride up to their Speed. One Corpse Fleet ally who ends their movement adjacent to another Corpse Fleet ally gains 5 temporary Hit Points that last for 1 minute, or double that number of temporary Hit Points if they end their movement adjacent to the officer. The officer can't Rally the Troops again for [[/gmr 1d4 #Recharge Rally the Troops]]{1d4 rounds}.</p>\n<p>@UUID[Compendium.sf2e.bestiary-effects.Item.p2GrXbOJbv0OT4Zr]{Effect: Rally the Troops}</p>"
+                },
+                "action->Shoot to Kill": {
+                    "name": "Shoot to Kill",
+                    "description": "<p><strong>Frequency</strong> once per round</p><hr /><p><strong>Effect</strong> The junior officer designates one target within 60 feet that they can see. That creature takes a \u20131 circumstance penalty to its AC against all ranged attacks made by members of the Corpse Fleet until the beginning of the Corpse Fleet junior officer's next turn.</p>\n<p>@UUID[Compendium.sf2e.bestiary-effects.Item.sNFHjpv27IFPVI9k]{Effect: Shoot to Kill}</p>"
+                },
+                "action->Startling Charge": {
+                    "name": "Startling Charge",
+                    "description": "<p><strong>Requirements</strong> An enemy creature is within 30 feet of the junior officer</p><hr /><p><strong>Effect</strong> The junior officer twists their face into a horrific grimace before advancing. The junior officer attempts an Intimidation check to [[/act demoralize]] the target creature, then Strides directly toward that creature.</p>"
+                },
+                "lore->Corpse Fleet Lore": {
+                    "name": "Corpse Fleet Lore"
+                }
+            }
+        },
+        "Doomed Shuttle": {
+            "name": "Doomed Shuttle",
+            "descriptionHazard": "<p>The planetary shuttle has already taken severe damage to its engines and hull, sending it on a crash course toward the planet. Meanwhile, a necromantic spell planted in the ship's computer will imminently unleash an explosion of void energy.</p>",
+            "disable": "<p>@Check[piloting|dc:16] (trained) to take control and force the shuttle to a lower altitude, @Check[arcana|dc:18] (trained) or @Check[thievery|dc:18] (trained) to counter the necroblast long enough to prevent its detonation, @Check[perception|dc:20] to look for the closest landing zone, @Check[crafting|dc:20] (trained) to take apart the console and defuse the bomb, @Check[religion|dc:23] to pray for divine intercession; four total successes are required to defeat the hazard (see Development). A creature that succeeds at any of these checks gains a +1 circumstance bonus on their save against the hazard's damage for 1 round.</p>",
+            "reset": "<p>The bomb goes off after 4 rounds. See Development.</p>",
+            "routine": "<p>(3 actions) Void energy leaks out from the console as the necroblast prepares to detonate. All creatures on the ship take @Damage[(2d6+4)[void]] damage (@Check[will|dc:18|basic] save).</p>",
+            "stealth": "<p>(trained) to notice necromantic energy emanating from the cockpit (allowing the use of Arcana to Disable).</p>",
+            "items": {
+                "action->Final Countdown": {
+                    "name": "Final Countdown",
+                    "description": "<p><strong>Trigger</strong> The encounter begins</p><hr /><p><strong>Effect</strong> The necroblast begins its detonation countdown, and the doomed shuttle rolls initiative.</p>"
+                }
+            }
+        },
+        "Drifting Bonfire": {
+            "name": "Drifting Bonfire",
+            "sensesDetails": "smoke vision",
+            "hpDetails": "eruption",
+            "items": {
+                "strike-melee->Lava Tube": {
+                    "name": "Lava Tube"
+                },
+                "strike-melee->Spark": {
+                    "name": "Spark"
+                },
+                "action->Smoke Vision": {
+                    "name": "Smoke Vision",
+                    "description": "<p>The drifting bonfire ignores the @UUID[Compendium.sf2e.conditions.Item.DmAIPqOBomZ7H95W]{Concealed} condition from smoke.</p>"
+                },
+                "action->Eruption": {
+                    "name": "Eruption",
+                    "description": "<p>When the drifting bonfire is reduced to 0 HP, it erupts into a burst of lava, dealing @Damage[3d6[fire]|options:area-damage] damage to each creature in a @Template[type:emanation|distance:10] (@Check[reflex|dc:19|basic] save).</p>"
+                },
+                "action->Residual Heat": {
+                    "name": "Residual Heat",
+                    "description": "<p><strong>Requirements</strong> The drifting bonfire's last action was a Strike that dealt damage</p><hr /><p><strong>Effect</strong> The target of the Strike flares up, dealing @Damage[3d6[fire]] damage to each creature adjacent to the target (@Check[reflex|dc:19|basic] save).</p>"
+                }
+            }
+        },
+        "Exploding Panels": {
+            "name": "Exploding Panels",
+            "descriptionHazard": "<p>Electricity sparks from panels on the bridge. Wires leap out from access hatches in the corridors like wriggling snakes. The bridge is falling apart while Captain Concierge cheerfully offers helpful suggestions for how to fix the problem.</p>",
+            "disable": "<p>@Check[computers|dc:17] (trained) to reboot the system; @Check[crafting|dc:19], @Check[Physical Science Lore|dc:19], or @Check[thievery|dc:19] (all trained) to flip circuit breakers and snip the correct wires; @Check[acrobatics|dc:21], @Check[perception|dc:21], or a @Check[reflex|dc:21] save to dodge the sparks; or @Check[athletics|dc:24] or a @Check[fortitude|dc:24] save to force the sparking panels closed. Disabling the trap removes one action from its routine for each successful check to disable it, or two actions on a critical success.</p>",
+            "reset": "<p>The exploding panels deactivate after 1 minute.</p>",
+            "routine": "<p>(3 actions) The exploding panels trap uses its actions to attack creatures inside the ship. It randomly slashes at creatures adjacent to bulkheads or sparks at creatures within 20 feet of any control surface. The trap does not take a multiple attack penalty.</p>",
+            "stealth": "<p>(trained)</p>",
+            "items": {
+                "action->Cascading Failure": {
+                    "name": "Cascading Failure",
+                    "description": "<p><strong>Trigger</strong> The encounter begins</p><hr /><p><strong>Effect</strong> Panels explode all over the ship with sparking live wires. All creatures on the ship take @Damage[(2d8+5)[electricity]] damage with a @Check[reflex|dc:21|basic] save. The exploding panels then rolls for initiative.</p>"
+                },
+                "strike-melee->Falling Panel": {
+                    "name": "Falling Panel"
+                },
+                "strike-melee->Spark": {
+                    "name": "Spark"
+                }
+            }
+        },
+        "Faceless": {
+            "name": "Faceless",
+            "publicNotes": "<p>The faceless are wisps of their former selves, virtually indistinguishable from any other ghost until they tear away their flesh-covered face and reveal the nothingness beneath. Their most noticeable feature is the disconcerting blank space with no ears, eyes, mouth, or nose located where their face should be.</p>\n<p>Faceless create masks using faces stolen from corpses or even the living, assuming a twisted version of the face's identity until the skin rots away, and they're forced to replace their grisly accessory.</p>\n<p>Left to their own devices, faceless undead float aimlessly, forlorn and hopeless, until they encounter a face and identity they can steal. Faceless are often drawn to carved or painted faces and sometimes attack other undead creatures.</p>\n<p>The Corpse Fleet recruits faceless undead to use as shock troops during boarding maneuvers. Some faceless embrace their identity as troopers, serving fearlessly and loyally until they inevitably lose control of themselves, violently tear through their own platoon, and have to be put down by their allies.</p><h2>Faceless Origins</h2><p>Nobody knows how faceless are created, but there are theories. Some theologians and scientists believe they're the husk left over after an undead creature's personality breaks down. Faceless don't recall their own origins, and their personalities grow more unstable every time they steal a new face. At least one infamous faceless assassin claimed to be an unidentified victim of a serial killer on Absalom Station. She was found with her face surgically removed and has been searching for a new one ever since.</p>",
+            "languagesDetails": "Cannot speak",
+            "hpDetails": "void healing",
+            "items": {
+                "spellcastingEntry->Occult Innate Spells": {
+                    "name": "Occult Innate Spells"
+                },
+                "strike-melee->Claw": {
+                    "name": "Claw"
+                },
+                "strike-melee->Void Ray": {
+                    "name": "Void Ray"
+                },
+                "action->Void Healing": {
+                    "name": "Void Healing"
+                },
+                "action->Change Shape": {
+                    "name": "Change Shape",
+                    "description": "<p>A faceless can take on the appearance of any Medium humanoid or undead in their collection of faces. This doesn't change their statistics.</p><hr /><p>@Localize[PF2E.NPC.Abilities.Glossary.ChangeShape]</p>"
+                },
+                "action->Harvest Face": {
+                    "name": "Harvest Face",
+                    "description": "<p>The faceless tries to slice off the face of an adjacent dead or helpless target, stealing it for their grisly collection. The target must attempt a @Check[fortitude|dc:18] save. The faceless is @UUID[Compendium.sf2e.conditions.Item.AJh5ex99aV6VTggg]{Off-Guard} until the beginning of their next turn.</p><hr /><p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target takes @Damage[2d6[slashing]] damage and is @UUID[Compendium.sf2e.conditions.Item.TkIyaNPgTZFBCCuh]{Dazzled} for 1 round.</p>\n<p><strong>Failure</strong> The target takes @Damage[5d6[slashing]] damage and is @UUID[Compendium.sf2e.conditions.Item.XgEqL1kFApUbl5Z2]{Blinded} for 1 round. The creature's face is surgically removed and can only be restored with regenerate or a similar effect.</p>\n<p><strong>Critical Failure</strong> As failure, but the target takes @Damage[10d6[slashing]] damage.</p>"
+                },
+                "action->Grab": {
+                    "name": "Grab"
+                }
+            }
+        },
+        "Faltering Sapient Green Orb": {
+            "name": "Faltering Sapient Green Orb",
+            "speedsDetails": "(hover)",
+            "languagesDetails": "Telepathy 30 feet",
+            "items": {
+                "strike-melee->Slam": {
+                    "name": "Slam"
+                },
+                "action->Confusion": {
+                    "name": "Confusion",
+                    "description": "<p>Due to their confused state, the faltering green orbs take a \u20132 circumstance penalty to Intelligence-based checks.</p>"
+                },
+                "action->Mistvision": {
+                    "name": "Mistvision",
+                    "description": "<p>A sapient orb always ignores concealment caused by fog, smoke, and mist.</p>"
+                },
+                "action->Bitter Mist": {
+                    "name": "Bitter Mist",
+                    "description": "<p><strong>Frequency</strong> once per minute</p><hr /><p><strong>Effect</strong> The faltering green orb emits a green mist (as the spell) centered on itself. Sapient orbs can choose to emit transparent mist, granting no concealment. Additionally, any enemy in the mist when it appears, that enters the mist, or that ends its turn in the mist must attempt a @Check[will|dc:21] save unless they are @UUID[Compendium.sf2e.conditions.Item.AdPVz7rbaVSRxHFg]{Fascinated}.</p><hr /><p><strong>Critical Success</strong> The target is unaffected and becomes temporarily immune for 24 hours.</p>\n<p><strong>Success</strong> The target is unaffected.</p>\n<p><strong>Failure</strong> The target becomes @UUID[Compendium.sf2e.conditions.Item.yblD8fOR1J8rDwEQ]{Confused} for 1 round.</p>\n<p><strong>Critical Failure</strong> The target becomes confused for 1 round, then @UUID[Compendium.sf2e.conditions.Item.fesd1n5eVhpCSS18]{Sickened 1}.</p>"
+                }
+            }
+        },
+        "Groggy Corsair": {
+            "name": "Groggy Corsair",
+            "items": {
+                "strike-melee->Bar Stool": {
+                    "name": "Bar Stool"
+                },
+                "strike-melee->Fist": {
+                    "name": "Fist"
+                },
+                "strike-melee->Thrown Mug": {
+                    "name": "Thrown Mug"
+                },
+                "action->Compact Strides": {
+                    "name": "Compact Strides",
+                    "description": "<p>A sarcesian can move through spaces as though they were a Medium-sized creature.</p>"
+                },
+                "action->Stretchy Limbs": {
+                    "name": "Stretchy Limbs",
+                    "description": "<p>The groggy corsair can adjust their gangly limbs to give themselves 10-foot reach until the start of their next turn.</p>"
+                },
+                "lore->Piracy Lore": {
+                    "name": "Piracy Lore"
+                }
+            }
+        },
+        "Hardlight Havoc": {
+            "name": "Hardlight Havoc",
+            "items": {
+                "strike-melee->Hardlight Punch": {
+                    "name": "Hardlight Punch"
+                },
+                "strike-melee->Hardlight Beam": {
+                    "name": "Hardlight Beam"
+                },
+                "action->Error State": {
+                    "name": "Error State",
+                    "description": "<p>Before the hardlight havoc begins its turn in combat, it gains one of the following error states at random, losing any previous error state.</p>\n<p><strong>Change Character</strong> The hardlight havoc regains @Damage[2d8[healing]|options:area-damage] Hit Points.</p>\n<p><strong>Pixelation</strong> The hardlight havoc is @UUID[Compendium.sf2e.conditions.Item.DmAIPqOBomZ7H95W]{Concealed} from all creatures.</p>\n<p><strong>Power Leak</strong> The hardlight havoc is @UUID[Compendium.sf2e.conditions.Item.dfCMdR4wnpbYNTix]{Stunned 1}. At the end of its turn, it deals @Damage[4d6[electricity]|options:area-damage] damage to creatures in a @Template[type:emanation|distance:10] (@Check[reflex|dc:22|basic] save).</p>\n<p><strong>Surge</strong> The hardlight havoc is @UUID[Compendium.sf2e.conditions.Item.nlCjDvLMf2EkV2dl]{Quickened} until the end of its turn and can use the extra action to Stride or Strike.</p>"
+                },
+                "action->Tethered": {
+                    "name": "Tethered",
+                    "description": "<p>120 feet. A hardlight life-form can't travel more than the indicated number of feet from its projector. A hardlight life-form reduced to 0 HP vanishes, though its projector reconstructs it in [[/gmr 1d4 #hours]]{1d4 hours}. The only way to permanently destroy a hardlight life-form is to find its projector and either repair or destroy it.</p>"
+                },
+                "action->Flicker": {
+                    "name": "Flicker",
+                    "description": "<p>The hardlight havoc teleports up to 40 feet. If the destination is within melee reach of an enemy, it can make a melee Strike against that enemy. If it teleports to a square without a surface to stand on, it falls after attempting a Strike and takes no damage from falling.</p>"
+                },
+                "action->Push": {
+                    "name": "Push"
+                }
+            }
+        },
+        "Juvenile Glass Serpent": {
+            "name": "Juvenile Glass Serpent",
+            "blurb": "Variant glass serpent",
+            "items": {
+                "strike-melee->Jaws": {
+                    "name": "Jaws"
+                },
+                "strike-melee->Tail Whip": {
+                    "name": "Tail Whip"
+                },
+                "action->Ambush": {
+                    "name": "Ambush",
+                    "description": "<p><strong>Trigger</strong> A creature passes within 20 feet of the juvenile glass serpent and hasn't detected it</p><hr /><p><strong>Effect</strong> The glass serpent lunges out of hiding. It Strides directly toward the triggering creature and makes a jaws Strike against it. The target creature is @UUID[Compendium.sf2e.conditions.Item.AJh5ex99aV6VTggg]{Off-Guard} to this attack.</p>"
+                },
+                "action->Hostile Invisibility": {
+                    "name": "Hostile Invisibility",
+                    "description": "<p>The juvenile glass serpent is naturally invisible. When a glass serpent takes a hostile action of any kind, it becomes visible until the start of its next turn, as its body becomes momentarily tangible. A glass serpent that has swallowed a creature becomes visible for the next day as its meal is digested. If the swallowed creature escapes or is otherwise removed, the glass serpent immediately returns to being invisible.</p>"
+                },
+                "action->Concealing Coil": {
+                    "name": "Concealing Coil",
+                    "description": "<p><strong>Requirements</strong> The juvenile glass serpent's last action was a successful tail whip Strike</p><hr /><p><strong>Effect</strong> The creature the glass serpent hit is @UUID[Compendium.sf2e.conditions.Item.DmAIPqOBomZ7H95W]{Concealed} from all creatures except the glass serpent until that creature moves out of the glass serpent's reach or until the start of the glass serpent's next turn.</p>"
+                },
+                "action->Swallow Whole": {
+                    "name": "Swallow Whole",
+                    "description": "<p>Medium, @Damage[(1d8+4)[bludgeoning]], Rupture 9</p><hr /><p>@Localize[PF2E.NPC.Abilities.Glossary.SwallowWhole]</p>"
+                }
+            }
+        },
+        "Juvenile Tashtari": {
+            "name": "Juvenile Tashtari",
+            "items": {
+                "strike-melee->Jaws": {
+                    "name": "Jaws"
+                },
+                "strike-melee->Muzzle Beam": {
+                    "name": "Muzzle Beam"
+                },
+                "action->Bristle Flash": {
+                    "name": "Bristle Flash",
+                    "description": "<p>The tashtari causes its filaments to glow with intense light. Non-tashtaris within a @Template[type:emanation|distance:40] must attempt a @Check[fortitude|dc:19] save. The tashtari's fur then dims, and they can't use this ability until they bask in sunlight for at least 10 minutes.</p><hr /><p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature is @UUID[Compendium.sf2e.conditions.Item.TkIyaNPgTZFBCCuh]{Dazzled} for 1 round.</p>\n<p><strong>Failure</strong> The creature is dazzled for 1 minute.</p>\n<p><strong>Critical Failure</strong> The creature is @UUID[Compendium.sf2e.conditions.Item.XgEqL1kFApUbl5Z2]{Blinded} for 1 round and dazzled for 1 minute.</p>"
+                },
+                "action->Knockdown": {
+                    "name": "Knockdown"
+                }
+            }
+        },
+        "Kitthaine Kitar": {
+            "name": "Kitthaine Kitar",
+            "hpDetails": "fiery vitality, void healing",
+            "items": {
+                "spellcastingEntry->Primal Innate Spells": {
+                    "name": "Primal Innate Spells"
+                },
+                "shield->Fire Shield": {
+                    "name": "Fire Shield"
+                },
+                "strike-melee->Double Fist": {
+                    "name": "Double Fist"
+                },
+                "action->Shield Block": {
+                    "name": "Shield Block"
+                },
+                "action->Void Healing": {
+                    "name": "Void Healing"
+                },
+                "action->Fiery Vitality": {
+                    "name": "Fiery Vitality",
+                    "description": "<p><strong>Frequency</strong> once per round</p><hr /><p><strong>Effect</strong> Any time Kitthaine uses a spell or ability with the fire trait, they regain @Damage[7[healing]] Hit Points (to a maximum of their total HP).</p>"
+                },
+                "action->Fire Shield": {
+                    "name": "Fire Shield",
+                    "description": "<p>Kitthaine raises a fiery barrier around them, granting them a +1 circumstance bonus to AC until the end of their next turn. While this ability is in effect, they can use the Shield Block reaction as if the fire shield was a raised shield. The shield has Hardness 6 against all sources of damage, but this increases by 4 against fire damage. Unlike a normal Shield Block, Kitthaine can also use this reaction against effects with the fire trait.</p>"
+                }
+            }
+        },
+        "Lifeleech Ooze": {
+            "name": "Lifeleech Ooze",
+            "hpDetails": "void healing",
+            "items": {
+                "strike-melee->Slam": {
+                    "name": "Slam"
+                },
+                "strike-melee->Vomit": {
+                    "name": "Vomit"
+                },
+                "action->Life Blindness": {
+                    "name": "Life Blindness",
+                    "description": "<p>A lifeleech ooze can only detect living and undead creatures. It has no other sensory abilities. When injured by vitality damage, a lifeleech ooze's senses are overwhelmed, and it automatically becomes @UUID[Compendium.sf2e.conditions.Item.XgEqL1kFApUbl5Z2]{Blinded} until the end of its next turn.</p>"
+                },
+                "action->Share Space": {
+                    "name": "Share Space",
+                    "description": "<p>A lifeleech ooze can share the space of up to four medium or smaller creatures without squeezing, so long as it has room to retain its original shape.</p>"
+                },
+                "action->Strip Flesh": {
+                    "name": "Strip Flesh",
+                    "description": "<p>Any living creature that begins its turn sharing the same space as a lifeleech ooze takes @Damage[3d6[void]] damage, with a @Check[fortitude|dc:24|basic] save.</p>"
+                },
+                "action->Void Healing": {
+                    "name": "Void Healing"
+                }
+            }
+        },
+        "Micrometeor Shower": {
+            "name": "Micrometeor Shower",
+            "descriptionHazard": "<p>Pebbles and boulders broken off from Barrow's crust accelerate all around the space between the Fracture and the surface, smashing into anything and everything!</p>",
+            "disable": "<p>@Check[acrobatics|dc:20] to avoid impact, @Check[athletics|dc:23] or Strike (AC 20) to break or deflect incoming debris</p>",
+            "stealth": "<p>(trained)</p>",
+            "items": {
+                "action->Impact": {
+                    "name": "Impact",
+                    "description": "<p><strong>Trigger</strong> A creature fails its check to disable or avoid the hazard</p><hr /><p><strong>Effect</strong> Micrometeors slam into the target, dealing @Damage[(2d10+13)[bludgeoning]] damage and potentially knocking them off course based on a @Check[reflex|dc:21] save.</p><hr /><p><strong>Critical Success</strong> The creature takes no damage.</p>\n<p><strong>Success</strong> The creature takes half damage.</p>\n<p><strong>Failure</strong> The creature takes full damage and gains the @UUID[Compendium.sf2e.conditions.Item.z1ucw4CLwLqHoAp3]{Untethered} condition, which persists until the start of the next encounter.</p>\n<p><strong>Critical Failure</strong> As failure, but the creature takes double damage.</p>"
+                }
+            }
+        },
+        "Mortar Shells": {
+            "name": "Mortar Shells",
+            "descriptionHazard": "<p>Four mortar tubes are constantly being auto-loaded by robotic arms before swiveling to launch projectiles onto the nearby battlefield.</p>",
+            "disable": "<p>@Check[Warfare Lore|dc:16] to engage the mortar safety switches, @Check[thievery|dc:18] to jam the auto-loading mechanisms so no more ammunition can be cycled, or @Check[athletics|dc:20] to push the tubes out of alignment such that the projectiles no longer threaten the battlefield</p>",
+            "reset": "<p>The hazard resets automatically. Any time a PC leaves the trenches, they're targeted by Exploding Ordinance until the mortar shells hazard is disabled.</p>",
+            "stealth": "<p>(trained)</p>",
+            "items": {
+                "action->Exploding Ordinance": {
+                    "name": "Exploding Ordinance",
+                    "description": "<p><strong>Trigger</strong> A creature fails its check to disable the mortar shells hazard</p><hr /><p><strong>Effect</strong> A mortar shell explodes, dealing @Damage[2d10[fire]|options:area-damage] damage in a @Template[type:burst|distance:10] centered on a corner of the triggering creature's square with a @Check[reflex|dc:18|basic] save.</p>"
+                }
+            }
+        },
+        "Mummy Wasp Swarm": {
+            "name": "Mummy Wasp Swarm",
+            "publicNotes": "<p>The Corpse Fleet's most overt long-term goal is establishing the supremacy of undeath in the Pact Worlds solar system, with the system's new immortal overlords eradicating or enslaving the living as they see fit. Eventually, the glorious Corpse Fleet hopes to conquer all of Desna's Path, and perhaps expand to other galaxies.</p>\n<p>On the smaller scale of operations, Corpse Fleet researchers experiment with necromantic weapons of all kinds, including unliving biological weapons like mummy wasps.</p>\n<p>Mummy wasps are created by fumigating wasp swarms inside of their hives and then painstakingly and individually mummifying them in sacred paper wrappings before burying and reviving the whole nest in an unholy ritual.</p>\n<p>When deployed, mummy wasps viciously attack living creatures and ignore undead, making them an ideal weapon for zone control and enemy suppression.</p>\n<p>They're also incredibly aggressive and invasive. Mummy wasps have been spotted in locations far from the Corpse Fleet facilities in the Vast where they were created.</p>\n<p>Mummy wasp nests have been deployed at Barrow and other Corpse Fleet installations. They're also utilized as ammunition, shot out of breaching cannons or hurled from vehicles.</p><h2>Dangerous Research</h2><p>The successful engineering of mummy wasps and rigor mortics has emboldened devious Corpse Fleet scientists to push the boundaries even further and create more powerful unliving weapons. Intelligence from the few Steward spies inside the Corpse Fleet indicates that the admiralty is ready to launch Project Gravemind, an effort to convert Swarm components into undead troopers. Succeed or fail, the consequences of such an experiment could be disastrous for the Pact Worlds.</p>",
+            "hpDetails": "void healing",
+            "items": {
+                "action->Mummy Storm": {
+                    "name": "Mummy Storm",
+                    "description": "<p>Millions of enchanted paper shreds orbit the swarm in a @Template[type:emanation|distance:10]. Creatures inside this aura gain greater cover from the attacks of creatures outside of it. Any living creature that enters the aura or begins its turn inside it must succeed at a @Check[will|dc:22] save or become @UUID[Compendium.sf2e.conditions.Item.TBSHQspnbcqxsmjL]{Frightened 1}.</p>"
+                },
+                "action->Rejuvenation": {
+                    "name": "Rejuvenation",
+                    "description": "<p>When a mummy wasp swarm is destroyed, the hive's necromantic energies reanimate a new swarm over [[/gmr 1d6 #days]]{1d6 days}. A reforming mummy wasp swarm is destroyed permanently if its hive is consecrated or destroyed (30 HP) with vitality, water, or fire damage.</p>"
+                },
+                "action->Void Healing": {
+                    "name": "Void Healing"
+                },
+                "action->Unliving Stings": {
+                    "name": "Unliving Stings",
+                    "description": "<p>Each creature in the swarm's space takes @Damage[2d10[void]] damage (@Check[reflex|dc:24|basic] save). A creature that fails its save additionally takes @Damage[2d6[persistent,void]] damage (double damage on a critical failure).</p>"
+                }
+            }
+        },
+        "Necroturret": {
+            "name": "Necroturret",
+            "descriptionHazard": "<p>A gigantic spinal column, ripped whole from a great beast, is posed on the surface of Barrow, enhanced with necromantic technology that turns it into a unliving weapons system. Its skull has been replaced with sensor arrays and deadly ice beam emitters.</p>",
+            "disable": "<p>@Check[computers|dc:16] (trained) or @Check[Vidgame Lore|dc:16] (trained) to shut down the necroturret's tech targeting system, @Check[arcana|dc:18] (trained), @Check[nature|dc:18] (trained), @Check[occultism|dc:18] (trained), or @Check[religion|dc:18] (trained) to disrupt the necroturret's magical core, or @Check[athletics|dc:20] or @Check[thievery|dc:20] to destroy vital circuits. A necroturret loses one action from its routine for each successful check made to disable it, or two actions on a critical success.</p>",
+            "reset": "<p>A necroturret deactivates when it no longer detects living creatures within 120 feet of its location.</p>",
+            "routine": "<p>(2 actions) The necroturret uses its actions to attack living creatures with its ice beams. It uses the Lock On reaction once every round to enhance its targeting matrix against the closest living creature. Necroturrets focus on targets trying to disable them.</p>",
+            "stealth": "<p>(trained)</p>",
+            "items": {
+                "action->Lock On": {
+                    "name": "Lock On",
+                    "description": "<p><strong>Trigger</strong> A living creature moves into a space within 120 feet of the necroturret</p><hr /><p><strong>Effect</strong> The necroturret locks on to the closest living creature, granting the necroturret a +1 circumstance bonus to its next attack roll. All living creatures within 10 feet of a necroturret take @Damage[(1d10+6)[cold]] damage with a @Check[fortitude|dc:20|basic] save as the turret charges its capacitors. The necroturrets then roll for initiative.</p>"
+                },
+                "strike-melee->Ice Beam": {
+                    "name": "Ice Beam",
+                    "description": "<p>Plus @UUID[Compendium.sf2e.conditions.Item.enA7BxAjBb7ns1iF]{Suppressed} for 1 round (2 rounds on a critical hit)</p>"
+                }
+            }
+        },
+        "Phantom Gef": {
+            "name": "Phantom Gef",
+            "publicNotes": "<p>Before the end of life on Eox, gefs were a type of domestic animal\u2014a small but robust creature with an enlarged head, sleek quadrupedal body, and fierce loyalty when properly trained. Breeders produced many subspecies of gefs, and they grew in popularity as farm animals, hunting companions, and pets.</p>\n<p>Boutique breeders pioneered genetically engineered hybrid species of gef with folded ears, bizarre fur patterns, and other sought-after features. These gefs were extremely valuable and became popular pets among the upper echelon of elebrians sages, who claimed their pets also had magical properties.</p>\n<p>When elite elebrians sought refuge from the escalating sarcesian conflict, they brought their beloved gefs with them. A few gefs survived in underground bunkers, but living pets fell out of favor once the majority of Eoxians made the transition to undeath. The last living gefs were pampered by their owners for the remainders of their natural lives, allowed a peaceful death, and immediately reanimated as undead creatures to continue providing eternal companionship.</p>\n<p>Phantom gefs are reanimated pets or service animals brought back to unlife by their owners. Most phantom gefs behave similarly to how they did in life. Domesticated gefs retain their training and prefer the company of creatures they bonded with in life. Wild gefs are rare, and are most often strays who form roving packs in the wastelands outside Orphys and elsewhere.</p><h2>Phantom Gef Pets</h2><p>Most phantom gefs are already bonded to an owner\u2014these fiercely loyal creatures would rather die than desert a beloved companion. Feral or stray phantom gefs are elusive and rare, but such creatures can be trained by patient hands. Since phantom gefs behave much as they did when alive, common animal training techniques are useful for coaxing these creatures. However, they're still undead and less interested in food than living animals. The hardest part of taming a phantom gef is spotting one.</p>",
+            "hpDetails": "void healing",
+            "items": {
+                "strike-melee->Jaws": {
+                    "name": "Jaws"
+                },
+                "strike-melee->Yip": {
+                    "name": "Yip"
+                },
+                "action->Ghostly Form": {
+                    "name": "Ghostly Form",
+                    "description": "<p>A phantom gef is always @UUID[Compendium.sf2e.conditions.Item.DmAIPqOBomZ7H95W]{Concealed}. When a phantom gef takes area damage, it's no longer concealed until the beginning of its next turn.</p>"
+                },
+                "action->Void Healing": {
+                    "name": "Void Healing"
+                },
+                "action->Tug-of-War": {
+                    "name": "Tug-of-War",
+                    "description": "<p>The phantom gef attempts to [[/act disarm]] the target with the following critical success.</p><hr /><p><strong>Critical Success</strong> The phantom gef knocks the item out of the creature's hand and into its mouth. While holding the item in this way, the phantom gef can't take any actions except to move, and it can drop the item at any time as a free action.</p>"
+                },
+                "action->Grab": {
+                    "name": "Grab"
+                }
+            }
+        },
+        "Plot Twist": {
+            "name": "Plot Twist",
+            "descriptionHazard": "<p>An ominous ticking and colorful exposed wires hint at the bomb rigged to the shuttle's cockpit.</p>",
+            "disable": "<p>@Check[thievery|dc:16] to cut the trigger wire, @Check[athletics|dc:18] to rip the bomb out of the console and hurl it away from the craft before it explodes, or a Strike against AC 20 to destroy the ignition source before it sets off the explosive charges</p>",
+            "stealth": "<p>(trained)</p>",
+            "items": {
+                "action->Boom!": {
+                    "name": "Boom!",
+                    "description": "<p><strong>Trigger</strong> Someone starts the shuttle engine, or no creatures succeed at their checks to disable the bomb</p><hr /><p><strong>Effect</strong> The bomb explodes. All creatures within 30 feet take @Damage[6d6[fire]] damage with a @Check[reflex|dc:20|basic] save.</p>"
+                }
+            }
+        },
+        "Rapid Depressurization": {
+            "name": "Rapid Depressurization",
+            "descriptionHazard": "<p>A stray shot shatters a window, sucking out the room's precious atmosphere.</p>",
+            "disable": "<p>@Check[crafting|dc:14] (trained) or @Check[Labor Lore|dc:14] (trained) while adjacent to the window to patch the hole, @Check[computers|dc:16] (trained) to activate an emergency metal shutter from any console in the room, or @Check[survival|dc:18] or @Check[thievery|dc:18] to cover the hole (if adjacent) with a random object as a temporary fix.</p>",
+            "reset": "<p>1 minute after a depressurization hazard begins, all air escapes from area F (requiring living creatures to activate their environmental protections or begin suffocating). If the hazard is disabled before 1 minute has passed, this timer resets.</p>",
+            "items": {
+                "action->Blow Out": {
+                    "name": "Blow Out",
+                    "description": "<p><strong>Trigger</strong> A ranged attack critically fails</p><hr /><p><strong>Effect</strong> All corporeal creatures inside area <strong>F</strong> are @UUID[Compendium.sf2e.conditions.Item.enA7BxAjBb7ns1iF]{Suppressed} until the hazard is disabled or 1 minute has passed.</p>"
+                }
+            }
+        },
+        "Reculobutapus": {
+            "name": "Reculobutapus",
+            "publicNotes": "<p>Reculobutapuses are one of many invasive species from the Vast that hitched a ride into the Pact Worlds and flourished in ecosystems with new food sources and no natural predators. During the Drift Crisis, a Zo! Media crew was stranded in Kazmurg's Absurdity, a relatively uncharted region of space far from the Pact Worlds that can only be explored by studying physical maps. The crew was forced to land on a nearby planet in order to repair their ship and gather the intel necessary to navigate the system.</p>\n<p>Always looking for an angle, the loyal camera crew followed up-and-coming producer Reculo (ambitious male elebrian producer) into the wilderness to document their experiences. Before the producer was swallowed whole, he managed to capture footage of a curious creature\u2014large, flat, and shaped like a mound of dirt and moss with rows of razor-sharp teeth.</p>\n<p>A breeding pair of these ferocious creatures managed to sneak into the ship's cargo hull before the crew departed, or perhaps someone smuggled a specimen aboard to sell back home\u2014nobody knows. The transplanted beasts infested Pact Port's hangars, where they wormed their way onto ships bound for other Pact Worlds.</p>\n<p>The undead of Eox have made the most of their reculobutapus infestation. Once they realized the creatures can be pacified with low jolts of electricity and frequent meals of fresh meat, some necrovites sought after these stylish creatures as pets, prizing them for their ability to change color to match an owner's outfit or home decor\u2014better yet, they provide an extra level of home defense if they aren't fed frequently.</p><h2>Reculobutapus Companions</h2><p>Most consider it dangerous to keep monsters as pets, but a few reckless collectors or nature enthusiasts do it anyway. It's difficult to tame and care for a reculobutapus, which weighs up to 2,100 pounds and needs 20 pounds of fresh meat per day to stay healthy. Hungry reculobutapuses regress quickly, forget their training, and carelessly devour their caregivers. However, undead creatures don't make good meals and can usually heal from a reculobutapus mauling, making the prospect of owning such a dangerous creature less daunting.</p><h2>Designer Pets of the Future?</h2><p>Zo! adopted a litter of reculobutapuses brought in as props for a production. He keeps them as personal pets. Zo! Media funds a breeding project dedicated to breeding a smaller, more docile version of the reculobutapus that could be marketed as a family pet and fashion statement.</p>",
+            "items": {
+                "strike-melee->Jaws": {
+                    "name": "Jaws"
+                },
+                "strike-melee->Body Slam": {
+                    "name": "Body Slam"
+                },
+                "action->Chameleon Coloration": {
+                    "name": "Chameleon Coloration",
+                    "description": "<p>The reculobutapus changes its coloration to match its surroundings. It doesn't need cover to attempt to @UUID[Compendium.sf2e.actions.Item.XMcnh4cSI32tljXa]{Hide} with a Stealth check.</p>"
+                },
+                "action->Ambush": {
+                    "name": "Ambush",
+                    "description": "<p><strong>Trigger</strong> A living creature passes within 10 feet of the reculobutapus and has not detected it</p><hr /><p><strong>Effect</strong> The reculobutapus Strides directly toward the triggering creature and makes a jaws Strike against it. The target creature is @UUID[Compendium.sf2e.conditions.Item.AJh5ex99aV6VTggg]{Off-Guard} to this attack.</p>"
+                },
+                "action->Spiky Hairs": {
+                    "name": "Spiky Hairs",
+                    "description": "<p><strong>Trigger</strong> A creature within the reculobutapus's reach damages it with an unarmed or non-reach melee Strike</p><hr /><p><strong>Effect</strong> Spiky hairs shoot out from the reculobutapus dealing @Damage[(1d4+3)[piercing]] damage to the creature.</p>"
+                },
+                "action->Swallow Whole": {
+                    "name": "Swallow Whole",
+                    "description": "<p>Medium, @Damage[(1d8+3)[bludgeoning]], Rupture 9</p><hr /><p>@Localize[PF2E.NPC.Abilities.Glossary.SwallowWhole]</p>"
+                },
+                "action->Grab": {
+                    "name": "Grab"
+                }
+            }
+        },
+        "Rejuvenating Projector": {
+            "name": "Rejuvenating Projector",
+            "descriptionHazard": "<p>Hardlight scamps spawn from this antique projector and harass nearby living creatures.</p>",
+            "disable": "<p>@Check[arcana|dc:20] (trained) to depower the magical circuits, @Check[computers|dc:20] (trained) to reprogram the projector, or @Check[athletics|dc:20] (trained) to rip the projector out of the wall.</p>",
+            "reset": "<p>The trap deactivates after 6 rounds and resets after 1 hour.</p>",
+            "stealth": "<p>(trained)</p>",
+            "items": {
+                "action->Generate Scamp": {
+                    "name": "Generate Scamp",
+                    "description": "<p><strong>Trigger</strong> Two or more living creatures enter area <strong>A5</strong></p><hr /><p><strong>Effect</strong> The projector creates two hardlight scamps next to the podium. This projector can manifest only two scamps at a time. The scamps roll initiative. The scamps disappear when slain, or if their projector is deactivated or destroyed.</p>"
+                },
+                "action->Infuse Scamp": {
+                    "name": "Infuse Scamp",
+                    "description": "<p><strong>Trigger</strong> A hardlight scamp is critically hit but not destroyed</p><hr /><p><strong>Effect</strong> The affected hardlight scamp regains @Damage[1d8[healing]] Hit Points.</p>"
+                }
+            }
+        },
+        "Rigor Mortic": {
+            "name": "Rigor Mortic",
+            "publicNotes": "<p>Rigor mortics were designed as literal cannon fodder for Corpse Fleet squadrons performing boarding actions in deep space. Barrow's notorious research and development division engineered these unliving weapons from the recycled remnants of heavily damaged troopers that were then grafted into powered armor. Rigor mortics are ammunition and shock trooper combined, designed to blast through hulls or crash-land into planets\u2014and keep fighting without falling apart on impact.</p><h2>Forging a Rigor Mortic</h2><p>Rigor mortics are built from chunks of soldiers left behind on the battlefield, grafted into heavy armor and reanimated by necromagitech. Some rigor mortics are forged from the corpses of Corpse Fleet heroes whose bodies are too broken to continue fighting, but most are amalgams of Corpse Fleet survivors, dead enemies, and living conscripts cruelly forced to endure this fate. Once a collection of parts is grafted permanently into a suit of armor, the final step is coating the rigor mortic in a shell of supernatural ice, turning them into projectiles that can be fired from starship cannons in squads of two to four per shot. These \"rigor mortars,\" as they've been nicknamed by some fleet captains, are stored in cryohangars until the moment they're loaded into a cannon. The ice melts away during the rigor mortic's flight, releasing the thawed undead from their shell.</p>",
+            "acDetails": "12 when broken",
+            "hpDetails": "void healing",
+            "items": {
+                "shield->Integrated Shield": {
+                    "name": "Integrated Shield"
+                },
+                "strike-melee->Shield Slam": {
+                    "name": "Shield Slam"
+                },
+                "strike-melee->Breaching Minigun": {
+                    "name": "Breaching Minigun"
+                },
+                "action->Breaching Strikes": {
+                    "name": "Breaching Strikes",
+                    "description": "<p>A rigor mortic's melee Strikes treats the Hardness of all other creatures and objects as though they were 5 less than their normal value.</p>"
+                },
+                "action->Cocoon Projectile": {
+                    "name": "Cocoon Projectile",
+                    "description": "<p>A fully-encased rigor mortic can be fired from a starship weapon into another vehicle or from a starship onto the ground. When delivered onto a battlefield in this fashion, the rigor mortic ignores all falling damage even if they're dropped from orbit. For 1 hour after a drop, a rigor mortic rolls initiative with a \u20132 penalty and is @UUID[Compendium.sf2e.conditions.Item.dfCMdR4wnpbYNTix]{Stunned 1} for the first round of combat.</p>"
+                },
+                "action->Construct Armor": {
+                    "name": "Construct Armor",
+                    "description": "<p>A rigor mortic's grafted armor plates give it Hardness. This Hardness reduces any damage it takes by an amount equal to its Hardness. Once the rigor mortic is reduced to less than half its Hit Points, or immediately upon being damaged by a critical hit, its construct armor breaks, removing its Hardness and reducing its Armor Class to 12.</p>"
+                },
+                "action->Void Healing": {
+                    "name": "Void Healing"
+                },
+                "action->Breaching Charge": {
+                    "name": "Breaching Charge",
+                    "description": "<p>The rigor-mortic Strides twice and Strikes. If the Strike is a critical hit with a breaching weapon, the target is @UUID[Compendium.sf2e.conditions.Item.dfCMdR4wnpbYNTix]{Stunned 1}.</p>"
+                },
+                "action->Construct Shield": {
+                    "name": "Construct Shield",
+                    "description": "<p>A rigor mortic can @UUID[Compendium.sf2e.actions.Item.xjGwis0uaC2305pm]{Raise a Shield} using its integrated armor.</p>"
+                },
+                "action->Slow March": {
+                    "name": "Slow March",
+                    "description": "<p>The rigor mortic Raises a Shield and Strides twice. The rigor mortic's allies within 20 feet gain lesser cover.</p>\n<p>@UUID[Compendium.sf2e.other-effects.Item.I9lfZUiCwMiGogVi]{Effect: Cover}</p>"
+                }
+            }
+        },
+        "Sanimus Slayn": {
+            "name": "Sanimus Slayn",
+            "hpDetails": "void healing",
+            "items": {
+                "weapon->Phase Cutlass": {
+                    "name": "Phase Cutlass",
+                    "description": "<p><strong>Upgrades:</strong> 1</p><hr /><p>A phase cutlass resembles a traditional curved sword until it's powered. Then its blade morphs into a shimmering void, with a tiny star for each life it ended.</p>"
+                },
+                "weapon->Broken Tactical Dueling Sword": {
+                    "name": "Broken Tactical Dueling Sword",
+                    "description": "<p><strong>Upgrades:</strong> 1</p><hr /><p>Coming in a variety of styles, these traditional and time-tested weapons have been honed with advanced smithing techniques and modern materials.</p>"
+                },
+                "strike-melee->Unholy Phase Cutlass": {
+                    "name": "Unholy Phase Cutlass"
+                },
+                "strike-melee->Heel Kick": {
+                    "name": "Heel Kick"
+                },
+                "strike-melee->Unholy Minigun": {
+                    "name": "Unholy Minigun"
+                },
+                "action->Lonely Rage": {
+                    "name": "Lonely Rage",
+                    "description": "<p>Sanimus is an even more aggressive combatant when he's forced to fight alone. When fighting with no active allies, he flies into a rage that gives him an additional reaction at the start of each turn.</p>"
+                },
+                "action->Reactive Strike": {
+                    "name": "Reactive Strike"
+                },
+                "action->Vengeful Strike": {
+                    "name": "Vengeful Strike",
+                    "description": "<p><strong>Trigger</strong> A creature within Sanimus's first range increment uses an action or reaction to heal, grant bonuses, or otherwise assist another creature</p><hr /><p><strong>Effect</strong> Sanimus makes a ranged Strike against the triggering creature.</p>"
+                },
+                "action->Void Healing": {
+                    "name": "Void Healing"
+                },
+                "action->Auto-Fire": {
+                    "name": "Auto-Fire",
+                    "description": "<p><strong>Minigun</strong> (@Template[type:cone|distance:60], analog, automatic, magical, unholy)</p>\n<p><strong>Damage</strong> @Damage[(2d10+8)[piercing]|traits:magical,unholy|options:area-damage] (@Check[reflex|dc:20|basic|traits:analog,automatic,magical,unholy])</p>"
+                },
+                "action->Concussive Feint": {
+                    "name": "Concussive Feint",
+                    "description": "<p><strong>Requirements</strong> Sanimus is holding his minigun</p><hr /><p><strong>Effect</strong> Sanimus attempts an @Check[intimidation|against:perception] check against a single target's Perception DC within the first range increment of his minigun. On a success, the target counts as @UUID[Compendium.sf2e.conditions.Item.i3OJZU2nk64Df3xm]{Clumsy 2} against his next area attack before the end of his current turn. On a critical success, the target is clumsy 2 against all of his area attacks until the end of his next turn.</p>"
+                },
+                "action->Crescent Blast": {
+                    "name": "Crescent Blast",
+                    "description": "<p>Sanimus twists his minigun while firing it, curving its bullets through the air. He makes a ranged Strike or Auto-Fire attack with his minigun but calculates the point of origin for the attack as though it originated from up to 2 squares outside of his current space on the map, allowing him to fire his weapon around cover and corners.</p>"
+                },
+                "action->Infuse Weapon": {
+                    "name": "Infuse Weapon",
+                    "description": "<p>Sanimus's weapons are infused with his hatred, gaining the magical and unholy traits and dealing spirit damage when he wields them. These weapons deal an additional 1d8 spirit damage to living and undead creatures.</p>"
+                },
+                "action->Minigun Training": {
+                    "name": "Minigun Training",
+                    "description": "<p>Sanimus has trained for centuries with his minigun and can push his gear beyond what the living can achieve. When using the Auto-Fire action, Sanimus can target all creatures within the first full range increment of his weapon, rather than just half of its range. Additionally, Sanimus can ignore any number of creatures in this area without penalty. Finally, his minigun only needs to be reloaded once per day in a special unholy ritual during his daily preparations.</p>"
+                },
+                "action->Suppressing Fire": {
+                    "name": "Suppressing Fire",
+                    "description": "<p>Enemies that fail their save against Sanimus's Auto-Fire attacks become @UUID[Compendium.sf2e.conditions.Item.enA7BxAjBb7ns1iF]{Suppressed} until the start of his next turn.</p>"
+                },
+                "lore->Corpse Fleet Lore": {
+                    "name": "Corpse Fleet Lore"
+                }
+            }
+        },
+        "Scout Drone": {
+            "name": "Scout Drone",
+            "items": {
+                "strike-melee->Nose Cone": {
+                    "name": "Nose Cone"
+                },
+                "strike-melee->Seeker Rifle": {
+                    "name": "Seeker Rifle"
+                },
+                "action->Radio Silence": {
+                    "name": "Radio Silence",
+                    "description": "<p>60 feet. Non-allied comm units and other tech-based forms of communication don't function within the aircraft's aura unless its operator succeeds at a Computers check versus the scout drone's Stealth DC as an Interact action.</p>"
+                },
+                "action->Attack Pattern Beta": {
+                    "name": "Attack Pattern Beta",
+                    "description": "<p>The drone makes a Strike against one target, then Steps or Strides, and then makes a Strike against one target, which can be the same as or different than the initial target. Both Strikes count toward its multiple attack penalty, but its multiple attack penalty doesn't increase until after it makes both Strikes.</p>"
+                }
+            }
+        },
+        "Scrap Rat Visionary": {
+            "name": "Scrap Rat Visionary",
+            "sensesDetails": "metal sense (30 feet)",
+            "items": {
+                "strike-melee->Scrappy Tail": {
+                    "name": "Scrappy Tail"
+                },
+                "strike-melee->Scrap Shot": {
+                    "name": "Scrap Shot"
+                },
+                "action->Dangerous Recycling": {
+                    "name": "Dangerous Recycling",
+                    "description": "<p>Over the course of 1 minute of uninterrupted work, a scrap rat can assemble any level 0 commercial grenade using nothing but junk. It falls apart and becomes unusable junk after 10 minutes.</p>"
+                },
+                "action->Metal Sense": {
+                    "name": "Metal Sense",
+                    "description": "<p>A scrap rat visionary can sense metal objects within 30 feet as a precise sense, including items hidden by illusions such as @UUID[Compendium.sf2e.spells.Item.XXqE1eY3w3z6xJCB]{Invisibility}.</p>"
+                },
+                "action->Constant Spells": {
+                    "name": "Constant Spells"
+                },
+                "action->Scoring": {
+                    "name": "Scoring",
+                    "description": "<p>When the scrap rat's tail deals damage to an object or creature with the tech trait, the tail also gains the following traits until the beginning of the scrap rat's next turn: deadly (1d4), hampering, and razing.</p>"
+                },
+                "action->Scrap Spray": {
+                    "name": "Scrap Spray",
+                    "description": "<p>The scrap rat visionary fires jagged junk shards at multiple enemies. All creatures in a @Template[type:cone|distance:20] must attempt a @Check[reflex|dc:18|basic|options:area-effect] save or take @Damage[3d6[piercing]|options:area-damage] damage. On a critical failure, the creature is @UUID[Compendium.sf2e.conditions.Item.enA7BxAjBb7ns1iF]{Suppressed} until the end of the scrap rat visionary's next turn.</p>"
+                }
+            },
+            "skills": {
+                "athletics": {
+                    "label": "to Climb or Swim"
+                }
+            }
+        },
+        "Scrap Warren": {
+            "name": "Scrap Warren",
+            "descriptionHazard": "<p>A large 5-foot-high pile of junk towers above the ground with holes in it big enough for only rats to squeeze through.</p>",
+            "disable": "<p>@Check[thievery|dc:12] to stabilize the junk pile, @Check[survival|dc:14] to collapse it down on itself, or @Check[athletics|dc:16] to smash through it without setting it off</p>",
+            "items": {
+                "action->Spiky Collapse": {
+                    "name": "Spiky Collapse",
+                    "description": "<p><strong>Trigger</strong> A creature other than a scrap rat enters the area of the junk warren</p><hr /><p><strong>Effect</strong> The warren collapses in on the creature, making a melee strike with an attack modifier of +5. If the trap was undetected, the creature is @UUID[Compendium.sf2e.conditions.Item.AJh5ex99aV6VTggg]{Off-Guard} against this attack.</p><hr /><p><strong>Critical Success</strong> The creature takes double damage and gains the @UUID[Compendium.sf2e.conditions.Item.VcDeM8A5oI6VqhbM]{Restrained} condition until the end of its next turn ([[/act escape dc=15]]).</p>\n<p><strong>Success</strong> The creature takes @Damage[1d6[piercing]] damage and gains the @UUID[Compendium.sf2e.conditions.Item.kWc1fhmv9LBiTuei]{Grabbed} condition until the end of its next turn ([[/act escape dc=15]]).</p>"
+                },
+                "strike-melee->Collapse": {
+                    "name": "Collapse"
+                }
+            }
+        },
+        "Shock Grid": {
+            "name": "Shock Grid",
+            "descriptionHazard": "<p>A tight grid of ionized particles crisscrosses the door into the computer center, hissing audibly and glowing bright blue.</p>",
+            "disable": "<p>@Check[computers|dc:19] or @Check[Physical Science Lore|dc:19] to disable the shock grid through the keypad, or @Check[crafting|dc:21] or @Check[thievery|dc:21] to short-circuit the wires along the grid's perimeter</p>",
+            "reset": "<p>The trap resets automatically until disabled or until it can no longer detect any living creatures within 10 feet of the door outside in area <strong>E2</strong>.</p>",
+            "stealth": "<p>(trained)</p>",
+            "items": {
+                "action->Shocking!": {
+                    "name": "Shocking!",
+                    "description": "<p><strong>Trigger</strong> A living creature fails their check to disable the shock grid or walks through the shock grid</p><hr /><p><strong>Effect</strong> The triggering creature takes @Damage[(4d8+10)[electricity]] damage with a @Check[fortitude|dc:21|basic] save.</p>"
+                }
+            }
+        },
+        "Souffl\u00e9 Surprise": {
+            "name": "Souffl\u00e9 Surprise",
+            "descriptionHazard": "<p>A misshapen blob of pastry and magic wobbles as it keeps rising beyond normal baked good dimensions.</p>",
+            "disable": "<p>@Check[Cooking Lore|dc:18] (trained), @Check[survival|dc:18] (trained), or @Check[thievery|dc:18] (trained) to gently deflate the souffl\u00e9, or @Check[athletics|dc:23] to beat the souffl\u00e9 into submission</p>",
+            "routine": "<p>(3 actions) The souffle Rises.</p>",
+            "stealth": "<p>(trained)</p>",
+            "items": {
+                "action->Sudden Rise": {
+                    "name": "Sudden Rise",
+                    "description": "<p><strong>Trigger</strong> Zo!'s sabotage begins</p><hr /><p><strong>Effect</strong> all creatures adjacent to a souffle take @Damage[2d6[fire]] damage with a @Check[reflex|dc:23|basic] save. On a critical failure, the creature is also @UUID[Compendium.sf2e.conditions.Item.enA7BxAjBb7ns1iF]{Suppressed}.</p>"
+                },
+                "action->Rise": {
+                    "name": "Rise",
+                    "description": "<p>The souffle expands to fill a @Template[type:burst|distance:10] centered on the cooking station. Each additional round, the souffle grows to fill all adjacent squares that are touching it. Creatures in these squares are affected by Sudden Rise.</p>"
+                }
+            }
+        },
+        "Spinning Treadmill": {
+            "name": "Spinning Treadmill",
+            "descriptionHazard": "<p>These three treadmills' rotating belts are no longer locked in place and now spin freely when activated.</p>",
+            "disable": "<p>@Check[Sports Lore|dc:13] to remember that older models of treadmills have an emergency brake that can be activated with a pull string, @Check[thievery|dc:15] to jam the mechanism, or @Check[crafting|dc:17] to improvise a stop for the rotating belts</p>",
+            "reset": "<p>The trap resets automatically until disabled.</p>",
+            "stealth": "<p>(trained)</p>",
+            "items": {
+                "action->Spin-Off": {
+                    "name": "Spin-Off",
+                    "description": "<p><strong>Trigger</strong> A creature steps on the treadmill</p><hr /><p><strong>Effect</strong> The creature must attempt a @Check[reflex|dc:15] save.</p><hr /><p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature is pushed back 5 feet.</p>\n<p><strong>Failure</strong> The creature is knocked @UUID[Compendium.sf2e.conditions.Item.j91X7x0XSomq8d60]{Prone} and pushed back 5 feet.</p>\n<p><strong>Critical Failure</strong> The creature is knocked prone, takes @Damage[1d6[bludgeoning]] damage, and is pushed back 10 feet. If this forced movement would have the PC impact another creature, that subsequent creature must succeed at a @Check[reflex|dc:15] save or be knocked prone.</p>"
+                }
+            }
+        },
+        "Veskarium Paratrooper": {
+            "name": "Veskarium Paratrooper",
+            "items": {
+                "weapon->Doshko": {
+                    "name": "Doshko",
+                    "description": "<p><strong>Upgrades:</strong> 1</p><hr /><p>The traditional weapon of the Veskarium, this powered poleaxe features one to three triangular blades forged for both wide overhead swings and tactical parrying.</p>"
+                },
+                "weapon->Flamethrower": {
+                    "name": "Flamethrower",
+                    "description": "<p><strong>Upgrades:</strong> 1</p><hr /><p>This bulky, rifle-shaped weapon spews flames using a tank of highly combustible, pressurized chemicals housed in its stock.</p>"
+                },
+                "armor->Veskarium Imperial Plate": {
+                    "name": "Veskarium Imperial Plate",
+                    "description": "<p><strong>Upgrades:</strong> 1</p><hr /><p>This heavy armor is made of interlocking metal plates contoured to the wearer's body with a scaled pattern. Tailguards and clawed gloves are standard for this armor.</p>"
+                },
+                "ammo->Chem Tank (Commercial)": {
+                    "name": "Chem Tank (Commercial)"
+                },
+                "strike-melee->Doshko": {
+                    "name": "Doshko"
+                },
+                "strike-melee->Tail": {
+                    "name": "Tail"
+                },
+                "action->Area Fire": {
+                    "name": "Area Fire",
+                    "description": "<p><strong>Flamethrower</strong> (tech, unwieldy), @Template[type:cone|distance:15]</p>\n<p><strong>Damage</strong> @Damage[1d10[fire]|options:area-damage], @Check[reflex|dc:16|basic|traits:tech,unwieldy|options:area-effect]</p>"
+                },
+                "lore->Warfare Lore": {
+                    "name": "Warfare Lore"
+                }
+            }
+        },
+        "Wight Scientist": {
+            "name": "Wight Scientist",
+            "hpDetails": "corrupting blood, void healing",
+            "items": {
+                "weapon->Tactical Needler Pistol": {
+                    "name": "Tactical Needler Pistol"
+                },
+                "armor->Armored Lab Coat": {
+                    "name": "Armored Lab Coat",
+                    "description": "<p><strong>Upgrades:</strong> 1</p><hr /><p>This overcoat is made of real or synthetic leather and reinforced with armored plates. Armored coats are often tailor-made to match the wearer's personal style. Standard versions are issued to military officers as part of their uniforms.</p>"
+                },
+                "ammo->Projectile Ammo": {
+                    "name": "Projectile Ammo"
+                },
+                "strike-melee->Claw": {
+                    "name": "Claw"
+                },
+                "strike-melee->Tactical Needler Pistol": {
+                    "name": "Tactical Needler Pistol"
+                },
+                "action->Grave Weapon": {
+                    "name": "Grave Weapon",
+                    "description": "<p>The wight scientist is bound to a needler pistol it used in life.</p>"
+                },
+                "action->Corrupting Influence": {
+                    "name": "Corrupting Influence",
+                    "description": "<p>Any time a living creature loses Hit Points due to Corrupting Blood, the wight scientist gains 3 temporary Hit Points.</p>"
+                },
+                "action->Reciprocal Strike": {
+                    "name": "Reciprocal Strike",
+                    "description": "<p><strong>Trigger</strong> The wight scientist is reduced to 0 Hit Points</p><hr /><p><strong>Effect</strong> The wight scientist makes a melee or ranged Strike before being destroyed. Corrupting Influence does not apply to this Strike.</p>"
+                },
+                "action->Void Healing": {
+                    "name": "Void Healing"
+                },
+                "action->Corrupting Blood": {
+                    "name": "Corrupting Blood",
+                    "description": "<p>The wight scientist's unarmed attacks and bound weapons inflict a curse that makes a creature grow weak and corrupted by gruesome impulses.</p>\n<p><strong>Saving Throw</strong> @Check[fortitude|dc:18]</p>\n<p><strong>Maximum Duration</strong> 5 rounds</p>\n<p><strong>Stage 1</strong> @Damage[1d4[void]] damage and @UUID[Compendium.sf2e.conditions.Item.fesd1n5eVhpCSS18]{Sickened 1} (1 round)</p>\n<p><strong>Stage 2</strong> @Damage[1d6[void]] damage and @UUID[Compendium.sf2e.conditions.Item.fesd1n5eVhpCSS18]{Sickened 2} (1 round)</p>\n<p><strong>Stage 3</strong> @Damage[1d8[void]] damage, @UUID[Compendium.sf2e.conditions.Item.fesd1n5eVhpCSS18]{Sickened 3}, and @UUID[Compendium.sf2e.conditions.Item.yblD8fOR1J8rDwEQ]{Confused} (1 round)</p>"
+                },
+                "lore->Corpse Fleet Lore": {
+                    "name": "Corpse Fleet Lore"
+                }
+            }
+        },
+        "Xoalat": {
+            "name": "Xoalat",
+            "publicNotes": "<p>Eons ago, the planet of Eox was a living, breathing world. Though its current necrovite rulers don't care to record the myriad of lifeforms that once flourished there, Eox once hosted countless species of wildlife. Most of these creatures died in the cataclysm that ruined the planet, but some have managed to make the transition to undeath in the time since.</p>\n<p>Xoalats were once the most popular livestock animals on the continent of Atraskia. Vast ranches farmed these animals in a coastal plains region now known as the Atraskian Shelf. With a single horn and sturdy frame, mature xoalat hides grew into thick braids of hair in many colors that ranchers would harvest for textiles. Xoalats thrive in most environments from arid plains to arctic tundra and consume less feed than typical livestock, as they spend their time rooting in the ground for bugs, weeds, and roots.</p>\n<p>Every living xoalat perished after the Death Wail rebounded at Eox, but some returned as undead creatures afterward, either woken by undead ranchers or reanimated by ambient necromantic processes. Today, all remaining xoalats are undead, and only a few elebrians own rare items woven from xoalat mane that were passed down through their families for many generations. Rarely, elebrians have allowed these precious heirlooms to be examined by scientists, giving the galaxy the first glimpse of the beauty of xoalat mane textiles in centuries.</p>\n<p>Xoalats have adapted to the strange necrotic ecosystem that has taken over the Eoxian wilderness. Scientists and sages are baffled by the resurgence of unlife outside the necropolises, where bone sages have carefully cultivate undead ecologies controlled by magic. Only a few secretive Xenowardens have managed to study these blighted environments.</p>\n<p>As herd animals, xoalats are usually docile, but they can be spooked by the presence of living creatures. When panicked, a xoalat tries to escape to open ground but violently lashes out at anyone or anything in their path to safety.</p><h2>Xoalat Husbandry</h2><p>Undead xoalats have developed the ability to slowly regenerate their bones, marrow, and leathery hides. Instead of cloth and textiles, modern xoalat ranchers harvest samples of bone marrow and hide from their regenerating herds. These materials are valuable to necrograft manufacturers and medical technology companies all over Eox.</p><h2>Xoalat Behavior</h2><p>Xenowardens who have studied these pitiful creatures are fascinated by their behavior, which seems to consist of repetitive loops that mimic the activities of living xoalats. Frequently observed behaviors include rooting around in the dead Eoxian soil even though they don't need to eat, grazing and roaming in herds, and making a loud mewling sound. Xoalats are generally timid unless spooked, but respond well to undead ranchers.</p>",
+            "sensesDetails": "darkvision",
+            "hpDetails": "fast healing 1, void healing",
+            "items": {
+                "strike-melee->Horn": {
+                    "name": "Horn"
+                },
+                "strike-melee->Hoof": {
+                    "name": "Hoof"
+                },
+                "action->Fast Healing 1": {
+                    "name": "Fast Healing 1"
+                },
+                "action->Void Healing": {
+                    "name": "Void Healing"
+                },
+                "action->Ferocious Charge": {
+                    "name": "Ferocious Charge",
+                    "description": "<p>The xoalat Strides up to twice its Speed. If it ends its movement within melee reach of a target, it can make a horn Strike against that target. If the xoalat critically hits with this Strike, the creature hit is knocked back 10 feet.</p>"
+                },
+                "action->Trample": {
+                    "name": "Trample",
+                    "description": "<p>medium or smaller, hoof, @Check[reflex|dc:14|basic]</p><hr /><p>@Localize[PF2E.NPC.Abilities.Glossary.Trample]</p>"
+                }
+            }
+        },
+        "Zo!": {
+            "name": "Zo!",
+            "languagesDetails": "True linguist",
+            "hpDetails": "void healing",
+            "items": {
+                "spellcastingEntry->Arcane Innate Spells": {
+                    "name": "Arcane Innate Spells"
+                },
+                "weapon->Ivory Chompers": {
+                    "name": "Ivory Chompers",
+                    "description": "<p>Tiny pneumatic pistons hidden inside these ornate dental veneers turn them into deadly weapons. Pioneered by the undead media mogul Zo! for celebrities who need to stay armed and fashionable at all times, ivory chompers provide a last-ditch biting attack against attackers. Special designer versions incorporate custom monogrammed imprints, jewels, and metal plating for the ultimate smile.</p>"
+                },
+                "weapon->Zo!'s Microphone": {
+                    "name": "Zo!'s Microphone",
+                    "description": "<p><strong>Upgrades</strong> 1</p><hr /><p>This ornate replica of the undead superstar's iconic microphone is an officially licensed Zo! Media product. Zo!'s microphone is rumored to be a bone scepter upgraded with the latest technologies to amplify Zo!'s voice for blasting enemies or unruly fans. The replica version possesses similar capabilities and can be used as a professional microphone or a weapon.</p>"
+                },
+                "armor->Second Skin": {
+                    "name": "Second Skin",
+                    "description": "<p><strong>Upgrades:</strong> 0</p><hr /><p>Soft but resilient fabric contours perfectly to the wearer's body, offering basic protection without sacrificing comfort. Second skin is commonly worn underneath casual clothing.</p>"
+                },
+                "equipment->Holoskin (Tactical)": {
+                    "name": "Holoskin (Tactical)",
+                    "description": "<p>A holographic projector mounted to a belt or limb strap can be activated as an Interact action. It can be programmed to project the appearance of another creature of the same size category as yourself, hiding your true appearance. A holoskin doesn't change your voice, scent, or mannerisms. The appearance of held and worn items aren't affected. You usually need a holoskin to set up a disguise in order to @UUID[Compendium.sf2e.actions.Item.AJstokjdG6iDjVjE]{Impersonate} someone using the Deception skill. A tactical holoskin adds a +1 item bonus to relevant checks.</p>"
+                },
+                "strike-melee->Ivory Chompers": {
+                    "name": "Ivory Chompers"
+                },
+                "strike-melee->Zo!'s Microphone": {
+                    "name": "Zo!'s Microphone"
+                },
+                "action->Media Lore": {
+                    "name": "Media Lore",
+                    "description": "<p>Zo! can use Media Lore to @UUID[Compendium.sf2e.actions.Item.1OagaWtBpVXExToo]{Recall Knowledge} about any topic.</p>"
+                },
+                "action->True Linguist": {
+                    "name": "True Linguist",
+                    "description": "<p>Zo! has enchanted himself with the ability to speak and understand all languages, giving him the permanent effects of the @UUID[Compendium.sf2e.spells.Item.SwUiVavHKMWG7t5K]{Truespeech} spell.</p>"
+                },
+                "action->Change the Channel": {
+                    "name": "Change the Channel",
+                    "description": "<p><strong>Trigger</strong> Zo! is targeted by a creature or weapon with the tech trait</p><hr /><p><strong>Effect</strong> Zo! uses a universal remote implanted in his forefinger to take control of the incoming assault and redirect it toward a new target of Zo!'s choice, forcing the attacker to resolve their attack against this new target, if there's one within range. If there are no available targets, the attacker resolves their attack against Zo! but must roll their attack twice and use the worse result. Once a creature or weapon has been targeted by this ability, it's immune to Change the Channel for 24 hours.</p>"
+                },
+                "action->Void Healing": {
+                    "name": "Void Healing"
+                },
+                "action->Ad Break": {
+                    "name": "Ad Break",
+                    "description": "<p>Zo! broadcasts loud chatter and jingles from countless advertisements for upcoming shows and brand-new products. Zo! attempts a @Check[performance|against:will] check against the target creature's Will DC. On a success, the target takes a \u20131 status penalty to any action it takes that has the concentrate trait (rolls and DCs) until the end of Zo!'s next turn. On a critical success, this penalty increases to \u20132.</p>"
+                },
+                "action->Cut!": {
+                    "name": "Cut!",
+                    "description": "<p><strong>Frequency</strong> once per hour</p>\n<p><strong>Trigger</strong> An enemy creature uses a reaction against Zo!</p><hr /><p><strong>Effect</strong> Zo! expends a spell slot with a rank equal to half the triggering creature's level (round down) to create a magical freeze frame. The triggering reaction is disrupted.</p>"
+                },
+                "action->Media Magic": {
+                    "name": "Media Magic",
+                    "description": "<p>Zo! conjures an illusory scene showing off unaired footage from a controversial show or teasers for an upcoming production. All creatures within a @Template[type:emanation|distance:20] must attempt a @Check[will|dc:41] save. A creature that succeeds is then temporarily immune to Media Magic for 1 hour.</p><hr /><p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature is @UUID[Compendium.sf2e.conditions.Item.AdPVz7rbaVSRxHFg]{Fascinated} until the start of Zo!'s next turn.</p>\n<p><strong>Failure</strong> The creature is fascinated with Zo! until the beginning of Zo!'s next turn. If the fascinated creature is adjacent to Zo!, it stays still and can't take actions. If the creature is attacked, the fascination ends.</p>\n<p><strong>Critical Failure</strong> As failure. In addition, the creature is @UUID[Compendium.sf2e.conditions.Item.enA7BxAjBb7ns1iF]{Suppressed} 1 minute.</p>"
+                },
+                "lore->Media Lore": {
+                    "name": "Media Lore"
+                }
+            }
+        },
+        "Zombie Shambler": {
+            "name": "Zombie Shambler",
+            "hpDetails": "void healing",
+            "items": {
+                "strike-melee->Fist": {
+                    "name": "Fist"
+                },
+                "strike-melee->Jaws": {
+                    "name": "Jaws",
+                    "description": "<p><strong>Requirements</strong> The zombie has a creature @UUID[Compendium.sf2e.conditions.Item.kWc1fhmv9LBiTuei]{Grabbed} or @UUID[Compendium.sf2e.conditions.Item.VcDeM8A5oI6VqhbM]{Restrained}.</p>"
+                },
+                "action->Slow": {
+                    "name": "Slow",
+                    "description": "<p>A zombie is permanently @UUID[Compendium.sf2e.conditions.Item.xYTAsEpcJE1Ccni3]{Slowed 1} and can't use reactions.</p>"
+                },
+                "action->Void Healing": {
+                    "name": "Void Healing"
+                },
+                "action->Grab": {
+                    "name": "Grab"
+                }
+            }
+        }
+    },
+    "mapping": {
+        "publicNotes": "system.details.publicNotes",
+        "privateNotes": "system.details.privateNotes",
+        "acDetails": "system.attributes.ac.details",
+        "blurb": "system.details.blurb",
+        "hpDetails": "system.attributes.hp.details",
+        "allSavesBonus": "system.attributes.allSaves.value",
+        "speedsDetails": "system.attributes.speed.details",
+        "sensesDetails": "system.perception.details",
+        "languagesDetails": "system.details.languages.details",
+        "items": {
+            "converter": "translateActorItems",
+            "path": "items"
+        },
+        "rules": {
+            "converter": "translateRules",
+            "path": "system.rules"
+        },
+        "descriptionHazard": "system.details.description",
+        "disable": "system.details.disable",
+        "reset": "system.details.reset",
+        "routine": "system.details.routine",
+        "stealth": "system.attributes.stealth.details",
+        "skills": {
+            "converter": "translateSkills",
+            "path": "system.skills"
+        }
+    }
+}
