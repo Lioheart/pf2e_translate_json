@@ -2538,7 +2538,7 @@
                 },
                 "action->Frightful Presence": {
                     "name": "Frightful Presence",
-                    "description": "<p>60 feet. @Check[will|dc:43]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.FrightfulPresence]</p>"
+                    "description": "<p>60 feet. @Check[will|dc:43|options:area-effect,inflicts:frightened]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.FrightfulPresence]</p>"
                 },
                 "action->Rejuvenation": {
                     "name": "Rejuvenation",
@@ -3232,7 +3232,7 @@
                 },
                 "action->Teach You a Lesson": {
                     "name": "Teach You a Lesson",
-                    "description": "<p><span class=\"action-glyph\">1</span> to <span class=\"action-glyph\">3</span></p>\n<p><strong>Frequency</strong> once per round</p>\n<hr />\n<p><strong>Effect</strong> The members of the mob wildly swing their textbooks and supplies\u2014primarily spellbooks and staves\u2014in a chaotic attack at each enemy adjacent to the troop (@Check[reflex|dc:41|basic]). The damage depends on the number of actions.</p>\n<p><span class=\"action-glyph\">1</span> @Damage[(2d12+14)[bludgeoning]] damage</p>\n<p><span class=\"action-glyph\">2</span> @Damage[(3d12+14)[bludgeoning]] damage</p>\n<p><span class=\"action-glyph\">3</span> @Damage[(4d12+14)[bludgeoning]] damage</p>"
+                    "description": "<p><span class=\"action-glyph\">1</span> to <span class=\"action-glyph\">3</span></p>\n<p><strong>Frequency</strong> once per round</p>\n<hr />\n<p><strong>Effect</strong> The members of the mob wildly swing their textbooks and supplies—primarily spellbooks and staves—in a chaotic attack at each enemy adjacent to the troop (@Check[reflex|dc:41|basic]). The damage depends on the number of actions.</p>\n<p><span class=\"action-glyph\">1</span> @Damage[(2d12+14)[bludgeoning]] damage</p>\n<p><span class=\"action-glyph\">2</span> @Damage[(3d12+14)[bludgeoning]] damage</p>\n<p><span class=\"action-glyph\">3</span> @Damage[(4d12+14)[bludgeoning]] damage</p>"
                 },
                 "action->Troop Movement": {
                     "name": "Troop Movement",
@@ -3393,7 +3393,7 @@
                 },
                 "action->Death Grip": {
                     "name": "Death Grip",
-                    "description": "<p>When Opkherab Grabs a living creature, including a Grab to extend the effect on a grappled creature, he gains 3 temporary Hit Points, and the creature must succeed at a @Check[fortitude|dc:17] save or become @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 1}. This increases the value of the creature's drained condition by 1, to a maximum of drained 4.</p>"
+                    "description": "<p>When Opkherab Grabs a living creature, including a Grab to extend the effect on a grabbed creature, he gains 3 temporary Hit Points, and the creature must succeed at a @Check[fortitude|dc:17] save or become @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 1}. This increases the value of the creature's drained condition by 1, to a maximum of drained 4.</p>"
                 },
                 "action->Zombie Spawn": {
                     "name": "Zombie Spawn",
@@ -3454,15 +3454,11 @@
                 },
                 "weapon->Frost Vial (Moderate, Infused)": {
                     "name": "Frost Vial (Moderate, Infused)",
-                    "description": "<p><strong>Activate</strong> <span class=\"action-glyph\">1</span> Strike</p>\n<hr />\n<p>The liquid reagents in this vial rapidly absorb heat when exposed to air. A frost vial deals the listed cold damage and cold splash damage. On a hit, the target takes a status penalty to its Speeds until the end of its next turn. Many types of frost vial also grant an item bonus to attack rolls.</p>\n<p>You gain a +1 item bonus to attack rolls, the bomb deals 2d6 cold damage and 2 cold splash damage, and the target takes a \u201310-foot penalty.</p>\n<p>@UUID[Compendium.pf2e.equipment-effects.Item.LdmzgBOTjCete4F7]{Effect: Frost Vial}</p>"
+                    "description": "<p><strong>Activate</strong> <span class=\"action-glyph\">1</span> Strike</p>\n<hr />\n<p>The liquid reagents in this vial rapidly absorb heat when exposed to air. A frost vial deals the listed cold damage and cold splash damage. On a hit, the target takes a status penalty to its Speeds until the end of its next turn. Many types of frost vial also grant an item bonus to attack rolls.</p>\n<p>You gain a +1 item bonus to attack rolls, the bomb deals 2d6 cold damage and 2 cold splash damage, and the target takes a –10-foot penalty.</p>\n<p>@UUID[Compendium.pf2e.equipment-effects.Item.LdmzgBOTjCete4F7]{Effect: Frost Vial}</p>"
                 },
                 "equipment->Alchemist's Tools": {
                     "name": "Alchemist's Tools",
                     "description": "<p>This mobile collection of vials and chemicals can be used for simple alchemical tasks.</p>"
-                },
-                "equipment->Formula Book": {
-                    "name": "Formula Book",
-                    "description": "<p>A formula book holds the formulas necessary to make items other than the common equipment from this chapter; alchemists typically get one for free. Each formula book can hold the formulas for up to 100 different items. Formulas can also appear on parchment sheets, tablets, and almost any other medium; there's no need for you to copy them into a specific book as long as you can keep them on hand to reference them.</p>"
                 },
                 "consumable->Antidote (Lesser, Infused)": {
                     "name": "Antidote (Lesser, Infused)",
@@ -4771,7 +4767,7 @@
         },
         "Soul Slime": {
             "name": "Soul Slime",
-            "publicNotes": "<p>Soul slimes are swirling, blue-gray masses of protoplasm that feed on the quintessence contained within souls. Typically, soul slimes acquire this quintessence by consuming the living, the undead, or souls imprisoned in other objects, although soul slimes can also feed on the quintessence of the Outer Planes and their occupants. Soul slimes digest these siphoned souls over decades. As long as a portion of a soul remains undigested, a soul slime can adopt the shape and use the vocalizations of that soul\u2014a tactic soul slimes routinely adopt to get close to their prey while hunting. As soul slimes lack the intelligence to truly impersonate or mimic the souls they digest, they are obvious facsimiles and are entirely incapable of speech.</p>",
+            "publicNotes": "<p>Soul slimes are swirling, blue-gray masses of protoplasm that feed on the quintessence contained within souls. Typically, soul slimes acquire this quintessence by consuming the living, the undead, or souls imprisoned in other objects, although soul slimes can also feed on the quintessence of the Outer Planes and their occupants. Soul slimes digest these siphoned souls over decades. As long as a portion of a soul remains undigested, a soul slime can adopt the shape and use the vocalizations of that soul—a tactic soul slimes routinely adopt to get close to their prey while hunting. As soul slimes lack the intelligence to truly impersonate or mimic the souls they digest, they are obvious facsimiles and are entirely incapable of speech.</p>",
             "items": {
                 "strike-melee->Pseudopod": {
                     "name": "Pseudopod"
@@ -5331,7 +5327,7 @@
                 },
                 "action->Cowering Fear": {
                     "name": "Cowering Fear",
-                    "description": "<p>90 feet. @Check[will|dc:37]</p>\n<p>A ravener's frightful presence causes creatures to cower in fear as well. As long as a creature is at least @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 2} or more as a result of the ravener's frightful presence, it is also @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Immobilized} from the fear.</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.FrightfulPresence]</p>"
+                    "description": "<p>90 feet. @Check[will|dc:37|options:area-effect,inflicts:frightened,inflicts:immobilized]</p>\n<p>A ravener's frightful presence causes creatures to cower in fear as well. As long as a creature is at least @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 2} or more as a result of the ravener's frightful presence, it is also @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Immobilized} from the fear.</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.FrightfulPresence]</p>"
                 },
                 "action->Discorporate": {
                     "name": "Discorporate",
@@ -5598,7 +5594,7 @@
                 },
                 "action->Frightful Presence": {
                     "name": "Frightful Presence",
-                    "description": "<p>20 feet. @Check[will|dc:34]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.FrightfulPresence]</p>"
+                    "description": "<p>20 feet. @Check[will|dc:34|options:area-effect,inflicts:frightened]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.FrightfulPresence]</p>"
                 },
                 "action->Infuse Weapon": {
                     "name": "Infuse Weapon",

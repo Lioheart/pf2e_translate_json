@@ -1,6 +1,7 @@
 import json
 import os
 import pathlib
+import platform
 import shutil
 import zipfile
 from io import BytesIO
@@ -168,6 +169,14 @@ def process_files(folder, version, type_system):
                 with open(file_path, 'r', encoding='utf-8') as json_file:
                     data = json.load(json_file)
 
+                target_files = ['en.json', 're-en.json', 'action-en.json', 'kingmaker-en.json',
+                                'sf2e-overrides-en.json']
+                if file in target_files:
+                    destination_path = os.path.join(version, file)
+                    shutil.copy(file_path, destination_path)
+                    print(f"Skopiowano {file_path} do {destination_path}")
+                    continue
+
                 try:
                     compendium = data[0]
                 except (KeyError, AttributeError) as e:
@@ -183,14 +192,24 @@ def process_files(folder, version, type_system):
                 # Dla folderów
                 if 'color' in keys:
                     continue
-                try:
-                    name = compendium['_stats']['compendiumSource'].split('.')
-                    new_name = fr'{version}\{name[1]}.{name[2]}.json'
-                except KeyError:
-                    new_name = fr'{version}\pf2e.{file}'
-                if type_system.startswith('pf2e'):
-                    new_name = fr'{version}\{type_system}.{file}'
-                print('Nowy plik:', new_name)
+                if platform.system() == 'Windows':
+                    try:
+                        name = compendium['_stats']['compendiumSource'].split('.')
+                        new_name = fr'{version}\{name[1]}.{name[2]}.json'
+                    except KeyError:
+                        new_name = fr'{version}\pf2e.{file}'
+                    if type_system.startswith('pf2e'):
+                        new_name = fr'{version}\{type_system}.{file}'
+                    print('Nowy plik:', new_name)
+                elif platform.system() == 'Linux':
+                    try:
+                        name = compendium['_stats']['compendiumSource'].split('.')
+                        new_name = fr'{version}/{name[1]}.{name[2]}.json'
+                    except KeyError:
+                        new_name = fr'{version}/pf2e.{file}'
+                    if type_system.startswith('pf2e'):
+                        new_name = fr'{version}/{type_system}.{file}'
+                    print('Nowy plik:', new_name)
                 print()
 
                 if pathlib.Path(f'{root}/{file.split(".")[0]}_folders.json').is_file():
@@ -702,6 +721,8 @@ def process_files(folder, version, type_system):
                             else:
                                 type_name = item['type']
                             item_name = f'{type_name}->{item["name"]}'
+                            if item["name"] in ['Hurled Debris', 'Spore Pod']:
+                                item_name = f'ranged->{item["name"]}'
 
                             # Jeśli zaklęcie, bierz tylko unikalne
                             if '(' in item['name']:
@@ -919,8 +940,8 @@ def process_files(folder, version, type_system):
                 transifex_dict = remove_empty_values(transifex_dict)
                 transifex_dict = remove_empty_values(transifex_dict)
                 transifex_dict = sort_entries(transifex_dict)
-                with open(new_name, "w") as outfile:
-                    json.dump(transifex_dict, outfile, indent=4)
+                with open(new_name, "w", encoding='utf-8') as outfile:
+                    json.dump(transifex_dict, outfile, indent=4, ensure_ascii=False)
 
                 dict_key.append(f'{compendium.keys()}')
 

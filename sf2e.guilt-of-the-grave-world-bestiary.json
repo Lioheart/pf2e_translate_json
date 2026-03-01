@@ -1,58 +1,6 @@
 {
     "label": "Guilt-Of-The-Grave-World-Bestiary",
     "entries": {
-        "Aeon Guard Trooper": {
-            "name": "Aeon Guard Trooper",
-            "items": {
-                "weapon->Pulse Gauntlet": {
-                    "name": "Pulse Gauntlet",
-                    "description": "<p><strong>Upgrades:</strong> 1</p><hr /><p>Popularized in underground fighting circles, this heavy-duty nanocarbon glove amplifies and weaponizes sounds made by its wielder, generating a sonic boom strong enough to knock an enemy off their feet.</p>"
-                },
-                "weapon->Aeon Rifle": {
-                    "name": "Aeon Rifle",
-                    "description": "<p><strong>Upgrades:</strong> 0</p><hr /><p>A mainstay of the Azlanti Star Empire, this sleek laser rifle includes a slot for <em>aeon stones</em> to enhance and focus the intensity of its beams.</p>"
-                },
-                "armor->Tactical Aeon Guard Armor": {
-                    "name": "Tactical Aeon Guard Armor",
-                    "description": "<p><strong>Upgrades:</strong> 1</p><hr /><p>Flexible but sturdy plates layered together form this traditional armor worn by lashunta cavalry on Castrovel. In times past, a shotalashu cavalry member forged their armor from their mount's shed skin, or more rarely, the skin of a fallen mount, to honor them in future battles. Synthetic imitations are fashionable on some parts of Castrovel.</p>"
-                },
-                "equipment->Aeon Stone (Consumed)": {
-                    "name": "Aeon Stone (Consumed)",
-                    "description": "<p>Over millennia, these mysterious, intricately cut gemstones have been hoarded by mystics and fanatics hoping to discover their secrets. Despite their myriad forms and functions, these stones are purportedly all fragments of crystal tools used by otherworldly entities to construct the universe in primeval times.</p>\n<p>When you invest one of these precisely shaped crystals, the stone orbits your head instead of being worn on your body. You can stow an <em>aeon stone</em> with an Interact action, and an orbiting stone can be snatched out of the air with a successful Disarm action against you. A stowed or removed stone remains invested, but its effects are suppressed until you return it to orbit your head again.</p>\n<p>There are various types of <em>aeon stones</em>, each with a different appearance and magical effect. Each <em>aeon stone</em> also gains a resonant power when slotted into a special magical item called a <em>wayfinder</em>.</p>\n<hr />\n<p>A <em>consumed</em> aeon stone is a dull lump that has lost its magical properties. It still rotates your head like any other aeon stone and can thus serve as a stylish, hand-free option for various spells that target an object.</p>\n<p>This aeon stone has no resonant power.</p>"
-                },
-                "ammo->Battery (Commercial)": {
-                    "name": "Battery (Commercial)"
-                },
-                "ammo->Battery (Tactical)": {
-                    "name": "Battery (Tactical)"
-                },
-                "strike-melee->Aeon Rifle": {
-                    "name": "Aeon Rifle"
-                },
-                "strike-melee->Pulse Gauntlet": {
-                    "name": "Pulse Gauntlet"
-                },
-                "action->Elusive Maneuver": {
-                    "name": "Elusive Maneuver",
-                    "description": "<p><strong>Trigger</strong> The trooper takes damage from a ranged Strike or spell</p><hr /><p><strong>Effect</strong> The trooper Steps or @UUID[Compendium.sf2e.actions.Item.ust1jJSCZQUhBZIz]{Takes Cover}.</p>"
-                },
-                "action->Coordinated Fire": {
-                    "name": "Coordinated Fire",
-                    "description": "<p>After the trooper attempts a Strike against a target (regardless of success or failure), the next attack roll one of the trooper's allies makes against the same target gains a +2 circumstance bonus. If a Strike with a bonus from coordinated fire hits, the target becomes @UUID[Compendium.sf2e.conditions.Item.enA7BxAjBb7ns1iF]{Suppressed} until the end of the attacking ally's next turn.</p>\n<p>@UUID[Compendium.sf2e.bestiary-effects.Item.x9nA4lIcHmE7x8Tt]{Effect: Coordinated Fire}</p>"
-                },
-                "action->Sharpshooter": {
-                    "name": "Sharpshooter",
-                    "description": "<p>When the trooper makes a ranged Strike against a target with an AC bonus from lesser or standard cover, they reduce the AC bonus by 1 for that Strike.</p>"
-                },
-                "action->Show No Mercy": {
-                    "name": "Show No Mercy",
-                    "description": "<p>The trooper gains a +2 circumstance bonus to damage rolls against @UUID[Compendium.sf2e.conditions.Item.enA7BxAjBb7ns1iF]{Suppressed} targets.</p>"
-                },
-                "lore->Warfare Lore": {
-                    "name": "Warfare Lore"
-                }
-            }
-        },
         "Animated Fire Extinguisher": {
             "name": "Animated Fire Extinguisher",
             "acDetails": "12 when broken",
@@ -147,7 +95,7 @@
             "items": {
                 "action->Catching Fire": {
                     "name": "Catching Fire",
-                    "description": "<p><strong>Trigger</strong> Creatures climb the slope</p><hr /><p><strong>Effect</strong> Molten lava oozes down the slope, coming perilously close to the path and igniting the debris nearby\u2014even the rocks. All creatures in a @Template[type:burst|distance:30] take @Damage[(1d10+4)[bludgeoning],(1d10+4)[fire]|options:area-damage] damage with a @Check[reflex|dc:16|basic] save. On a critical failure the creature also catches on fire.</p>"
+                    "description": "<p><strong>Trigger</strong> Creatures climb the slope</p><hr /><p><strong>Effect</strong> Molten lava oozes down the slope, coming perilously close to the path and igniting the debris nearby—even the rocks. All creatures in a @Template[type:burst|distance:30] take @Damage[(1d10+4)[bludgeoning],(1d10+4)[fire]|options:area-damage] damage with a @Check[reflex|dc:16|basic] save. On a critical failure the creature also catches on fire.</p>"
                 }
             }
         },
@@ -246,7 +194,7 @@
                 },
                 "action->Shoot to Kill": {
                     "name": "Shoot to Kill",
-                    "description": "<p><strong>Frequency</strong> once per round</p><hr /><p><strong>Effect</strong> The junior officer designates one target within 60 feet that they can see. That creature takes a \u20131 circumstance penalty to its AC against all ranged attacks made by members of the Corpse Fleet until the beginning of the Corpse Fleet junior officer's next turn.</p>\n<p>@UUID[Compendium.sf2e.bestiary-effects.Item.sNFHjpv27IFPVI9k]{Effect: Shoot to Kill}</p>"
+                    "description": "<p><strong>Frequency</strong> once per round</p><hr /><p><strong>Effect</strong> The junior officer designates one target within 60 feet that they can see. That creature takes a –1 circumstance penalty to its AC against all ranged attacks made by members of the Corpse Fleet until the beginning of the Corpse Fleet junior officer's next turn.</p>\n<p>@UUID[Compendium.sf2e.bestiary-effects.Item.sNFHjpv27IFPVI9k]{Effect: Shoot to Kill}</p>"
                 },
                 "action->Startling Charge": {
                     "name": "Startling Charge",
@@ -357,11 +305,11 @@
                 },
                 "action->Confusion": {
                     "name": "Confusion",
-                    "description": "<p>Due to their confused state, the faltering green orbs take a \u20132 circumstance penalty to Intelligence-based checks.</p>"
+                    "description": "<p>Due to their confused state, the faltering green orbs take a –2 circumstance penalty to Intelligence-based checks.</p>"
                 },
                 "action->Mistvision": {
                     "name": "Mistvision",
-                    "description": "<p>A sapient orb always ignores concealment caused by fog, smoke, and mist.</p>"
+                    "description": "<p>A sapient orb always ignores @UUID[Compendium.sf2e.conditions.Item.DmAIPqOBomZ7H95W]{Concealment} caused by fog, smoke, and mist.</p>"
                 },
                 "action->Bitter Mist": {
                     "name": "Bitter Mist",
@@ -391,32 +339,6 @@
                 },
                 "lore->Piracy Lore": {
                     "name": "Piracy Lore"
-                }
-            }
-        },
-        "Hardlight Havoc": {
-            "name": "Hardlight Havoc",
-            "items": {
-                "strike-melee->Hardlight Punch": {
-                    "name": "Hardlight Punch"
-                },
-                "strike-melee->Hardlight Beam": {
-                    "name": "Hardlight Beam"
-                },
-                "action->Error State": {
-                    "name": "Error State",
-                    "description": "<p>Before the hardlight havoc begins its turn in combat, it gains one of the following error states at random, losing any previous error state.</p>\n<p><strong>Change Character</strong> The hardlight havoc regains @Damage[2d8[healing]|options:area-damage] Hit Points.</p>\n<p><strong>Pixelation</strong> The hardlight havoc is @UUID[Compendium.sf2e.conditions.Item.DmAIPqOBomZ7H95W]{Concealed} from all creatures.</p>\n<p><strong>Power Leak</strong> The hardlight havoc is @UUID[Compendium.sf2e.conditions.Item.dfCMdR4wnpbYNTix]{Stunned 1}. At the end of its turn, it deals @Damage[4d6[electricity]|options:area-damage] damage to creatures in a @Template[type:emanation|distance:10] (@Check[reflex|dc:22|basic] save).</p>\n<p><strong>Surge</strong> The hardlight havoc is @UUID[Compendium.sf2e.conditions.Item.nlCjDvLMf2EkV2dl]{Quickened} until the end of its turn and can use the extra action to Stride or Strike.</p>"
-                },
-                "action->Tethered": {
-                    "name": "Tethered",
-                    "description": "<p>120 feet. A hardlight life-form can't travel more than the indicated number of feet from its projector. A hardlight life-form reduced to 0 HP vanishes, though its projector reconstructs it in [[/gmr 1d4 #hours]]{1d4 hours}. The only way to permanently destroy a hardlight life-form is to find its projector and either repair or destroy it.</p>"
-                },
-                "action->Flicker": {
-                    "name": "Flicker",
-                    "description": "<p>The hardlight havoc teleports up to 40 feet. If the destination is within melee reach of an enemy, it can make a melee Strike against that enemy. If it teleports to a square without a surface to stand on, it falls after attempting a Strike and takes no damage from falling.</p>"
-                },
-                "action->Push": {
-                    "name": "Push"
                 }
             }
         },
@@ -589,7 +511,7 @@
         },
         "Phantom Gef": {
             "name": "Phantom Gef",
-            "publicNotes": "<p>Before the end of life on Eox, gefs were a type of domestic animal\u2014a small but robust creature with an enlarged head, sleek quadrupedal body, and fierce loyalty when properly trained. Breeders produced many subspecies of gefs, and they grew in popularity as farm animals, hunting companions, and pets.</p>\n<p>Boutique breeders pioneered genetically engineered hybrid species of gef with folded ears, bizarre fur patterns, and other sought-after features. These gefs were extremely valuable and became popular pets among the upper echelon of elebrians sages, who claimed their pets also had magical properties.</p>\n<p>When elite elebrians sought refuge from the escalating sarcesian conflict, they brought their beloved gefs with them. A few gefs survived in underground bunkers, but living pets fell out of favor once the majority of Eoxians made the transition to undeath. The last living gefs were pampered by their owners for the remainders of their natural lives, allowed a peaceful death, and immediately reanimated as undead creatures to continue providing eternal companionship.</p>\n<p>Phantom gefs are reanimated pets or service animals brought back to unlife by their owners. Most phantom gefs behave similarly to how they did in life. Domesticated gefs retain their training and prefer the company of creatures they bonded with in life. Wild gefs are rare, and are most often strays who form roving packs in the wastelands outside Orphys and elsewhere.</p><h2>Phantom Gef Pets</h2><p>Most phantom gefs are already bonded to an owner\u2014these fiercely loyal creatures would rather die than desert a beloved companion. Feral or stray phantom gefs are elusive and rare, but such creatures can be trained by patient hands. Since phantom gefs behave much as they did when alive, common animal training techniques are useful for coaxing these creatures. However, they're still undead and less interested in food than living animals. The hardest part of taming a phantom gef is spotting one.</p>",
+            "publicNotes": "<p>Before the end of life on Eox, gefs were a type of domestic animal—a small but robust creature with an enlarged head, sleek quadrupedal body, and fierce loyalty when properly trained. Breeders produced many subspecies of gefs, and they grew in popularity as farm animals, hunting companions, and pets.</p>\n<p>Boutique breeders pioneered genetically engineered hybrid species of gef with folded ears, bizarre fur patterns, and other sought-after features. These gefs were extremely valuable and became popular pets among the upper echelon of elebrians sages, who claimed their pets also had magical properties.</p>\n<p>When elite elebrians sought refuge from the escalating sarcesian conflict, they brought their beloved gefs with them. A few gefs survived in underground bunkers, but living pets fell out of favor once the majority of Eoxians made the transition to undeath. The last living gefs were pampered by their owners for the remainders of their natural lives, allowed a peaceful death, and immediately reanimated as undead creatures to continue providing eternal companionship.</p>\n<p>Phantom gefs are reanimated pets or service animals brought back to unlife by their owners. Most phantom gefs behave similarly to how they did in life. Domesticated gefs retain their training and prefer the company of creatures they bonded with in life. Wild gefs are rare, and are most often strays who form roving packs in the wastelands outside Orphys and elsewhere.</p><h2>Phantom Gef Pets</h2><p>Most phantom gefs are already bonded to an owner—these fiercely loyal creatures would rather die than desert a beloved companion. Feral or stray phantom gefs are elusive and rare, but such creatures can be trained by patient hands. Since phantom gefs behave much as they did when alive, common animal training techniques are useful for coaxing these creatures. However, they're still undead and less interested in food than living animals. The hardest part of taming a phantom gef is spotting one.</p>",
             "hpDetails": "void healing",
             "items": {
                 "strike-melee->Jaws": {
@@ -640,7 +562,7 @@
         },
         "Reculobutapus": {
             "name": "Reculobutapus",
-            "publicNotes": "<p>Reculobutapuses are one of many invasive species from the Vast that hitched a ride into the Pact Worlds and flourished in ecosystems with new food sources and no natural predators. During the Drift Crisis, a Zo! Media crew was stranded in Kazmurg's Absurdity, a relatively uncharted region of space far from the Pact Worlds that can only be explored by studying physical maps. The crew was forced to land on a nearby planet in order to repair their ship and gather the intel necessary to navigate the system.</p>\n<p>Always looking for an angle, the loyal camera crew followed up-and-coming producer Reculo (ambitious male elebrian producer) into the wilderness to document their experiences. Before the producer was swallowed whole, he managed to capture footage of a curious creature\u2014large, flat, and shaped like a mound of dirt and moss with rows of razor-sharp teeth.</p>\n<p>A breeding pair of these ferocious creatures managed to sneak into the ship's cargo hull before the crew departed, or perhaps someone smuggled a specimen aboard to sell back home\u2014nobody knows. The transplanted beasts infested Pact Port's hangars, where they wormed their way onto ships bound for other Pact Worlds.</p>\n<p>The undead of Eox have made the most of their reculobutapus infestation. Once they realized the creatures can be pacified with low jolts of electricity and frequent meals of fresh meat, some necrovites sought after these stylish creatures as pets, prizing them for their ability to change color to match an owner's outfit or home decor\u2014better yet, they provide an extra level of home defense if they aren't fed frequently.</p><h2>Reculobutapus Companions</h2><p>Most consider it dangerous to keep monsters as pets, but a few reckless collectors or nature enthusiasts do it anyway. It's difficult to tame and care for a reculobutapus, which weighs up to 2,100 pounds and needs 20 pounds of fresh meat per day to stay healthy. Hungry reculobutapuses regress quickly, forget their training, and carelessly devour their caregivers. However, undead creatures don't make good meals and can usually heal from a reculobutapus mauling, making the prospect of owning such a dangerous creature less daunting.</p><h2>Designer Pets of the Future?</h2><p>Zo! adopted a litter of reculobutapuses brought in as props for a production. He keeps them as personal pets. Zo! Media funds a breeding project dedicated to breeding a smaller, more docile version of the reculobutapus that could be marketed as a family pet and fashion statement.</p>",
+            "publicNotes": "<p>Reculobutapuses are one of many invasive species from the Vast that hitched a ride into the Pact Worlds and flourished in ecosystems with new food sources and no natural predators. During the Drift Crisis, a Zo! Media crew was stranded in Kazmurg's Absurdity, a relatively uncharted region of space far from the Pact Worlds that can only be explored by studying physical maps. The crew was forced to land on a nearby planet in order to repair their ship and gather the intel necessary to navigate the system.</p>\n<p>Always looking for an angle, the loyal camera crew followed up-and-coming producer Reculo (ambitious male elebrian producer) into the wilderness to document their experiences. Before the producer was swallowed whole, he managed to capture footage of a curious creature—large, flat, and shaped like a mound of dirt and moss with rows of razor-sharp teeth.</p>\n<p>A breeding pair of these ferocious creatures managed to sneak into the ship's cargo hull before the crew departed, or perhaps someone smuggled a specimen aboard to sell back home—nobody knows. The transplanted beasts infested Pact Port's hangars, where they wormed their way onto ships bound for other Pact Worlds.</p>\n<p>The undead of Eox have made the most of their reculobutapus infestation. Once they realized the creatures can be pacified with low jolts of electricity and frequent meals of fresh meat, some necrovites sought after these stylish creatures as pets, prizing them for their ability to change color to match an owner's outfit or home decor—better yet, they provide an extra level of home defense if they aren't fed frequently.</p><h2>Reculobutapus Companions</h2><p>Most consider it dangerous to keep monsters as pets, but a few reckless collectors or nature enthusiasts do it anyway. It's difficult to tame and care for a reculobutapus, which weighs up to 2,100 pounds and needs 20 pounds of fresh meat per day to stay healthy. Hungry reculobutapuses regress quickly, forget their training, and carelessly devour their caregivers. However, undead creatures don't make good meals and can usually heal from a reculobutapus mauling, making the prospect of owning such a dangerous creature less daunting.</p><h2>Designer Pets of the Future?</h2><p>Zo! adopted a litter of reculobutapuses brought in as props for a production. He keeps them as personal pets. Zo! Media funds a breeding project dedicated to breeding a smaller, more docile version of the reculobutapus that could be marketed as a family pet and fashion statement.</p>",
             "items": {
                 "strike-melee->Jaws": {
                     "name": "Jaws"
@@ -688,7 +610,7 @@
         },
         "Rigor Mortic": {
             "name": "Rigor Mortic",
-            "publicNotes": "<p>Rigor mortics were designed as literal cannon fodder for Corpse Fleet squadrons performing boarding actions in deep space. Barrow's notorious research and development division engineered these unliving weapons from the recycled remnants of heavily damaged troopers that were then grafted into powered armor. Rigor mortics are ammunition and shock trooper combined, designed to blast through hulls or crash-land into planets\u2014and keep fighting without falling apart on impact.</p><h2>Forging a Rigor Mortic</h2><p>Rigor mortics are built from chunks of soldiers left behind on the battlefield, grafted into heavy armor and reanimated by necromagitech. Some rigor mortics are forged from the corpses of Corpse Fleet heroes whose bodies are too broken to continue fighting, but most are amalgams of Corpse Fleet survivors, dead enemies, and living conscripts cruelly forced to endure this fate. Once a collection of parts is grafted permanently into a suit of armor, the final step is coating the rigor mortic in a shell of supernatural ice, turning them into projectiles that can be fired from starship cannons in squads of two to four per shot. These \"rigor mortars,\" as they've been nicknamed by some fleet captains, are stored in cryohangars until the moment they're loaded into a cannon. The ice melts away during the rigor mortic's flight, releasing the thawed undead from their shell.</p>",
+            "publicNotes": "<p>Rigor mortics were designed as literal cannon fodder for Corpse Fleet squadrons performing boarding actions in deep space. Barrow's notorious research and development division engineered these unliving weapons from the recycled remnants of heavily damaged troopers that were then grafted into powered armor. Rigor mortics are ammunition and shock trooper combined, designed to blast through hulls or crash-land into planets—and keep fighting without falling apart on impact.</p><h2>Forging a Rigor Mortic</h2><p>Rigor mortics are built from chunks of soldiers left behind on the battlefield, grafted into heavy armor and reanimated by necromagitech. Some rigor mortics are forged from the corpses of Corpse Fleet heroes whose bodies are too broken to continue fighting, but most are amalgams of Corpse Fleet survivors, dead enemies, and living conscripts cruelly forced to endure this fate. Once a collection of parts is grafted permanently into a suit of armor, the final step is coating the rigor mortic in a shell of supernatural ice, turning them into projectiles that can be fired from starship cannons in squads of two to four per shot. These \"rigor mortars,\" as they've been nicknamed by some fleet captains, are stored in cryohangars until the moment they're loaded into a cannon. The ice melts away during the rigor mortic's flight, releasing the thawed undead from their shell.</p>",
             "acDetails": "12 when broken",
             "hpDetails": "void healing",
             "items": {
@@ -707,7 +629,7 @@
                 },
                 "action->Cocoon Projectile": {
                     "name": "Cocoon Projectile",
-                    "description": "<p>A fully-encased rigor mortic can be fired from a starship weapon into another vehicle or from a starship onto the ground. When delivered onto a battlefield in this fashion, the rigor mortic ignores all falling damage even if they're dropped from orbit. For 1 hour after a drop, a rigor mortic rolls initiative with a \u20132 penalty and is @UUID[Compendium.sf2e.conditions.Item.dfCMdR4wnpbYNTix]{Stunned 1} for the first round of combat.</p>"
+                    "description": "<p>A fully-encased rigor mortic can be fired from a starship weapon into another vehicle or from a starship onto the ground. When delivered onto a battlefield in this fashion, the rigor mortic ignores all falling damage even if they're dropped from orbit. For 1 hour after a drop, a rigor mortic rolls initiative with a –2 penalty and is @UUID[Compendium.sf2e.conditions.Item.dfCMdR4wnpbYNTix]{Stunned 1} for the first round of combat.</p>"
                 },
                 "action->Construct Armor": {
                     "name": "Construct Armor",
@@ -876,10 +798,10 @@
                 }
             }
         },
-        "Souffl\u00e9 Surprise": {
-            "name": "Souffl\u00e9 Surprise",
+        "Soufflé Surprise": {
+            "name": "Soufflé Surprise",
             "descriptionHazard": "<p>A misshapen blob of pastry and magic wobbles as it keeps rising beyond normal baked good dimensions.</p>",
-            "disable": "<p>@Check[Cooking Lore|dc:18] (trained), @Check[survival|dc:18] (trained), or @Check[thievery|dc:18] (trained) to gently deflate the souffl\u00e9, or @Check[athletics|dc:23] to beat the souffl\u00e9 into submission</p>",
+            "disable": "<p>@Check[Cooking Lore|dc:18] (trained), @Check[survival|dc:18] (trained), or @Check[thievery|dc:18] (trained) to gently deflate the soufflé, or @Check[athletics|dc:23] to beat the soufflé into submission</p>",
             "routine": "<p>(3 actions) The souffle Rises.</p>",
             "stealth": "<p>(trained)</p>",
             "items": {
@@ -1058,7 +980,7 @@
                 },
                 "action->Ad Break": {
                     "name": "Ad Break",
-                    "description": "<p>Zo! broadcasts loud chatter and jingles from countless advertisements for upcoming shows and brand-new products. Zo! attempts a @Check[performance|against:will] check against the target creature's Will DC. On a success, the target takes a \u20131 status penalty to any action it takes that has the concentrate trait (rolls and DCs) until the end of Zo!'s next turn. On a critical success, this penalty increases to \u20132.</p>"
+                    "description": "<p>Zo! broadcasts loud chatter and jingles from countless advertisements for upcoming shows and brand-new products. Zo! attempts a @Check[performance|against:will] check against the target creature's Will DC. On a success, the target takes a –1 status penalty to any action it takes that has the concentrate trait (rolls and DCs) until the end of Zo!'s next turn. On a critical success, this penalty increases to –2.</p>"
                 },
                 "action->Cut!": {
                     "name": "Cut!",

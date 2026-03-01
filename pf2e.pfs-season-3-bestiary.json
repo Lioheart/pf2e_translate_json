@@ -193,7 +193,7 @@
                 },
                 "action->Snow Vision": {
                     "name": "Snow Vision",
-                    "description": "<p>Snow doesn't impair an arabuk's vision; it ignores concealment from snowfall.</p>"
+                    "description": "<p>Snow doesn't impair an arabuk's vision; it ignores @UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{Concealment} from snowfall.</p>"
                 },
                 "action->Deafening Echo": {
                     "name": "Deafening Echo",
@@ -241,7 +241,7 @@
                 },
                 "action->Snow Vision": {
                     "name": "Snow Vision",
-                    "description": "<p>Snow doesn't impair an arabuk's vision; it ignores concealment from snowfall.</p>"
+                    "description": "<p>Snow doesn't impair an arabuk's vision; it ignores @UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{Concealment} from snowfall.</p>"
                 },
                 "action->Pounce": {
                     "name": "Pounce",
@@ -770,7 +770,7 @@
                 },
                 "action->Funereal Dirge": {
                     "name": "Funereal Dirge",
-                    "description": "<p>The cairn wight chants a low, haunting melody. Living creatures within @Template[emanation|distance:50]{50 feet} must attempt a @Check[will|dc:21|options:area-effect,inflicts:frightened] save.</p>\n<p>The cairn wight can't chant a new Funereal Dirge for [[/gmr 1d4 #Recharge Funereal Dirge]]{1d4 rounds}.</p><hr /><p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 1}.</p>\n<p><strong>Failure</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 2}.</p>\n<p><strong>Critical Failure</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 2} and takes a \u20132 status penalty to saving throws against drain life.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.8ecPVgMeWDxc4jI4]{Effect: Funereal Dirge}</p>"
+                    "description": "<p>The cairn wight chants a low, haunting melody. Living creatures within @Template[emanation|distance:50]{50 feet} must attempt a @Check[will|dc:21|options:area-effect,inflicts:frightened] save.</p>\n<p>The cairn wight can't chant a new Funereal Dirge for [[/gmr 1d4 #Recharge Funereal Dirge]]{1d4 rounds}.</p><hr /><p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 1}.</p>\n<p><strong>Failure</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 2}.</p>\n<p><strong>Critical Failure</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 2} and takes a –2 status penalty to saving throws against drain life.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.8ecPVgMeWDxc4jI4]{Effect: Funereal Dirge}</p>"
                 }
             }
         },
@@ -800,7 +800,7 @@
                 },
                 "action->Frightful Presence": {
                     "name": "Frightful Presence",
-                    "description": "<p>90 feet. @Check[will|dc:33]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.FrightfulPresence]</p>"
+                    "description": "<p>90 feet. @Check[will|dc:33|options:area-effect,inflicts:frightened]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.FrightfulPresence]</p>"
                 },
                 "action->Twisting Tail": {
                     "name": "Twisting Tail",
@@ -855,7 +855,7 @@
                 },
                 "action->Frightful Presence": {
                     "name": "Frightful Presence",
-                    "description": "<p>90 feet. @Check[will|dc:30]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.FrightfulPresence]</p>"
+                    "description": "<p>90 feet. @Check[will|dc:30|options:area-effect,inflicts:frightened]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.FrightfulPresence]</p>"
                 },
                 "action->Twisting Tail": {
                     "name": "Twisting Tail",
@@ -1139,7 +1139,7 @@
             "items": {
                 "weapon->Tanglefoot Bag (Moderate)": {
                     "name": "Tanglefoot Bag (Moderate)",
-                    "description": "<p><strong>Activate</strong> <span class=\"action-glyph\">1</span> Strike</p>\n<hr />\n<p>A tanglefoot bag is filled with sticky substances. When you hit a creature with a tanglefoot bag, that creature takes a \u201315-foot status penalty to its Speeds for 1 minute. You gain a +1 item bonus to attack rolls, and the Escape DC is 19 ([[/act escape dc=19]]).</p>\n<p>On a critical hit, a creature in contact with a solid surface becomes stuck to the surface and @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Immobilized} for 1 round, and a creature flying via wings has its wings tangled, causing it to fall safely to the ground and become unable to Fly again for 1 round. Tanglefoot bags are not effective when used on a creature that is in water.</p>\n<p>The target can end any effects by Escaping or spending a total of 3 actions to carefully remove the sticky substances. These Interact actions don't have to be consecutive, and other creatures can provide the actions as well.</p>"
+                    "description": "<p><strong>Activate</strong> <span class=\"action-glyph\">1</span> Strike</p>\n<hr />\n<p>A tanglefoot bag is filled with sticky substances. When you hit a creature with a tanglefoot bag, that creature takes a –15-foot status penalty to its Speeds for 1 minute. You gain a +1 item bonus to attack rolls, and the Escape DC is 19 ([[/act escape dc=19]]).</p>\n<p>On a critical hit, a creature in contact with a solid surface becomes stuck to the surface and @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Immobilized} for 1 round, and a creature flying via wings has its wings tangled, causing it to fall safely to the ground and become unable to Fly again for 1 round. Tanglefoot bags are not effective when used on a creature that is in water.</p>\n<p>The target can end any effects by Escaping or spending a total of 3 actions to carefully remove the sticky substances. These Interact actions don't have to be consecutive, and other creatures can provide the actions as well.</p>"
                 },
                 "consumable->Healing Potion (Minor)": {
                     "name": "Healing Potion (Minor)",
@@ -1229,7 +1229,7 @@
             "descriptionHazard": "<p>Spirits bound to sand-covered remains cascade down upon the living, imposing the weighty, helpless press of their final moments.</p>",
             "disable": "<p>@Check[religion|dc:18|name:Exorcise the Spirits|traits:complex,haunt,hazard] or @Check[occultism|dc:18|name:Exorcise the Spirits|traits:complex,haunt,hazard] (trained) to exorcise the spirits, or @Check[diplomacy|dc:22|name:Provide the Spirits with Comfort|traits:complex,haunt,hazard] to provide them with comfort. Each check requires 2 actions, which have the verbal trait, and three successful checks are required to address all ofthe spirits.</p>",
             "reset": "<p>The haunt deactivates 1 minute after all living creatures leave the area but resets immediately thereafter.</p>",
-            "routine": "<p>(1 action) The haunt imposes the sensation of becoming buried beneath millions of grains of sand on all living creatures within the area. Each living creature must attempt a @Check[will|dc:21|traits:complex,haunt,hazard,damaging-effect] save as the sensation threatens to overcome them. The creatures take @Damage[(1d10+6)[bludgeoning]] damage.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature takes no damage and is unaffected.</p>\n<p><strong>Success</strong> The creature takes half damage and takes a \u201310-foot circumstance penalty to all its Speeds for 1 round.</p>\n<p><strong>Failure</strong> The creature takes full damage and takes a \u201310-foot circumstance penalty to all its Speeds for 1 round. It also begins suffocating. The creature can begin breathing normally again if it leaves the area of the haunt or the haunt is disabled.</p>\n<p><strong>Critical Failure</strong> As failure, but the target takes double damage.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.U05L8bPBcRHTtTB3]{Effect: Crushing Spirits}</p>",
+            "routine": "<p>(1 action) The haunt imposes the sensation of becoming buried beneath millions of grains of sand on all living creatures within the area. Each living creature must attempt a @Check[will|dc:21|traits:complex,haunt,hazard,damaging-effect] save as the sensation threatens to overcome them. The creatures take @Damage[(1d10+6)[bludgeoning]] damage.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature takes no damage and is unaffected.</p>\n<p><strong>Success</strong> The creature takes half damage and takes a –10-foot circumstance penalty to all its Speeds for 1 round.</p>\n<p><strong>Failure</strong> The creature takes full damage and takes a –10-foot circumstance penalty to all its Speeds for 1 round. It also begins suffocating. The creature can begin breathing normally again if it leaves the area of the haunt or the haunt is disabled.</p>\n<p><strong>Critical Failure</strong> As failure, but the target takes double damage.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.U05L8bPBcRHTtTB3]{Effect: Crushing Spirits}</p>",
             "stealth": "<p>(expert)</p>",
             "items": {
                 "action->Weight of Death": {
@@ -1243,7 +1243,7 @@
             "descriptionHazard": "<p>Spirits bound to sand-covered remains cascade down upon the living, imposing the weighty, helpless press of their final moments.</p>",
             "disable": "<p>@Check[religion|dc:21|name:Exorcise the Spirits|traits:complex,haunt,hazard] or @Check[occultism|dc:21|name:Exorcise the Spirits|traits:complex,haunt,hazard] (trained) to exorcise the spirits, or @Check[diplomacy|dc:25|name:Provide the Spirits with Comfort|traits:complex,haunt,hazard] to provide them with comfort. Each check requires 2 actions, which have the verbal trait, and three successful checks are required to address all ofthe spirits.</p>",
             "reset": "<p>The haunt deactivates 1 minute after all living creatures leave the area but resets immediately thereafter.</p>",
-            "routine": "<p>(1 action) The haunt imposes the sensation of becoming buried beneath millions of grains of sand on all living creatures within the area. Each living creature must attempt a @Check[will|dc:24|traits:complex,haunt,hazard,damaging-effect] save as the sensation threatens to overcome them. The creatures take @Damage[(2d8+7)[bludgeoning]] damage.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature takes no damage and is unaffected.</p>\n<p><strong>Success</strong> The creature takes half damage and takes a \u201310-foot circumstance penalty to all its Speeds for 1 round.</p>\n<p><strong>Failure</strong> The creature takes full damage and takes a \u201310-foot circumstance penalty to all its Speeds for 1 round. It also begins suffocating. The creature can begin breathing normally again if it leaves the area of the haunt or the haunt is disabled.</p>\n<p><strong>Critical Failure</strong> As failure, but the target takes double damage.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.U05L8bPBcRHTtTB3]{Effect: Crushing Spirits}</p>",
+            "routine": "<p>(1 action) The haunt imposes the sensation of becoming buried beneath millions of grains of sand on all living creatures within the area. Each living creature must attempt a @Check[will|dc:24|traits:complex,haunt,hazard,damaging-effect] save as the sensation threatens to overcome them. The creatures take @Damage[(2d8+7)[bludgeoning]] damage.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature takes no damage and is unaffected.</p>\n<p><strong>Success</strong> The creature takes half damage and takes a –10-foot circumstance penalty to all its Speeds for 1 round.</p>\n<p><strong>Failure</strong> The creature takes full damage and takes a –10-foot circumstance penalty to all its Speeds for 1 round. It also begins suffocating. The creature can begin breathing normally again if it leaves the area of the haunt or the haunt is disabled.</p>\n<p><strong>Critical Failure</strong> As failure, but the target takes double damage.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.U05L8bPBcRHTtTB3]{Effect: Crushing Spirits}</p>",
             "stealth": "<p>(expert)</p>",
             "items": {
                 "action->Weight of Death": {
@@ -2169,7 +2169,7 @@
             "items": {
                 "action->Rockfall": {
                     "name": "Rockfall",
-                    "description": "<p><strong>Trigger</strong> A creature steps on one of the unstable rocks</p>\n<hr />\n<p><strong>Effect</strong> Rocks come crashing down onto the creatures below. The rockfall deals @Damage[2d6[bludgeoning]] damage to each creature within 10 feet of the rock pile (@Check[reflex|dc:17|basic] save).</p>\n<hr />\n<p><strong>Critical Success</strong> The creature takes no damage.</p>\n<p><strong>Success</strong> The creature takes half damage and is knocked @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone}.</p>\n<p><strong>Failure</strong> The creature takes full damage, is knocked prone, and takes a \u201310-foot circumstance penalty to its movement speeds for 1 round.</p>\n<p><strong>Critical Failure</strong> The creature takes double damage, is knocked prone, and takes a \u201320-foot circumstance penalty to its movement speeds for 2 rounds.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.vuaungtl9VCBoHDK]{Effect: Rockfall Failure}</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.XyhPcnlkg3mGqEwT]{Effect: Rockfall Critical Failure}</p>"
+                    "description": "<p><strong>Trigger</strong> A creature steps on one of the unstable rocks</p>\n<hr />\n<p><strong>Effect</strong> Rocks come crashing down onto the creatures below. The rockfall deals @Damage[2d6[bludgeoning]] damage to each creature within 10 feet of the rock pile (@Check[reflex|dc:17|basic] save).</p>\n<hr />\n<p><strong>Critical Success</strong> The creature takes no damage.</p>\n<p><strong>Success</strong> The creature takes half damage and is knocked @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone}.</p>\n<p><strong>Failure</strong> The creature takes full damage, is knocked prone, and takes a –10-foot circumstance penalty to its movement speeds for 1 round.</p>\n<p><strong>Critical Failure</strong> The creature takes double damage, is knocked prone, and takes a –20-foot circumstance penalty to its movement speeds for 2 rounds.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.vuaungtl9VCBoHDK]{Effect: Rockfall Failure}</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.XyhPcnlkg3mGqEwT]{Effect: Rockfall Critical Failure}</p>"
                 }
             }
         },
@@ -2715,7 +2715,7 @@
                 "strike-melee->Jaws": {
                     "name": "Jaws"
                 },
-                "strike-melee->Hurled Debris": {
+                "ranged->Hurled Debris": {
                     "name": "Hurled Debris"
                 },
                 "action->Telepathy 100 feet": {
@@ -2741,7 +2741,7 @@
             "items": {
                 "equipment->Manacles (Simple)": {
                     "name": "Manacles (Simple)",
-                    "description": "<p>You can manacle someone who is willing or otherwise at your mercy as an exploration activity taking 10-30 seconds depending on the creature's size and how many manacles you apply. A two-legged creature with its legs bound takes a \u201315-foot circumstance penalty to its Speeds, and a two-handed creature with its wrists bound has to succeed at a @Check[flat|dc:5] any time it uses a manipulate action or else that action fails. This DC may be higher depending on how tightly the manacles constrain the hands. A creature bound to a stationary object is immobilized. For creatures with more or fewer limbs, the GM determines what effect manacles have, if any. Freeing a creature from simple manacles requires three successful @Check[thievery|dc:22|traits:action:pick-a-lock] checks.</p>"
+                    "description": "<p>You can manacle someone who is willing or otherwise at your mercy as an exploration activity taking 10-30 seconds depending on the creature's size and how many manacles you apply. A two-legged creature with its legs bound takes a –15-foot circumstance penalty to its Speeds, and a two-handed creature with its wrists bound has to succeed at a @Check[flat|dc:5] any time it uses a manipulate action or else that action fails. This DC may be higher depending on how tightly the manacles constrain the hands. A creature bound to a stationary object is immobilized. For creatures with more or fewer limbs, the GM determines what effect manacles have, if any. Freeing a creature from simple manacles requires three successful @Check[thievery|dc:22|traits:action:pick-a-lock] checks.</p>"
                 },
                 "action->Attack of Opportunity": {
                     "name": "Attack of Opportunity"
@@ -2765,7 +2765,7 @@
                 },
                 "equipment->Manacles (Simple)": {
                     "name": "Manacles (Simple)",
-                    "description": "<p>You can manacle someone who is willing or otherwise at your mercy as an exploration activity taking 10-30 seconds depending on the creature's size and how many manacles you apply. A two-legged creature with its legs bound takes a \u201315-foot circumstance penalty to its Speeds, and a two-handed creature with its wrists bound has to succeed at a @Check[flat|dc:5] any time it uses a manipulate action or else that action fails. This DC may be higher depending on how tightly the manacles constrain the hands. A creature bound to a stationary object is immobilized. For creatures with more or fewer limbs, the GM determines what effect manacles have, if any. Freeing a creature from simple manacles requires three successful @Check[thievery|dc:22|traits:action:pick-a-lock] checks.</p>"
+                    "description": "<p>You can manacle someone who is willing or otherwise at your mercy as an exploration activity taking 10-30 seconds depending on the creature's size and how many manacles you apply. A two-legged creature with its legs bound takes a –15-foot circumstance penalty to its Speeds, and a two-handed creature with its wrists bound has to succeed at a @Check[flat|dc:5] any time it uses a manipulate action or else that action fails. This DC may be higher depending on how tightly the manacles constrain the hands. A creature bound to a stationary object is immobilized. For creatures with more or fewer limbs, the GM determines what effect manacles have, if any. Freeing a creature from simple manacles requires three successful @Check[thievery|dc:22|traits:action:pick-a-lock] checks.</p>"
                 },
                 "strike-melee->Longsword": {
                     "name": "Longsword"
@@ -3533,7 +3533,7 @@
                 },
                 "action->Snow Vision": {
                     "name": "Snow Vision",
-                    "description": "<p>Snow doesn't impair an arabuk's vision; it ignores concealment from snowfall.</p>"
+                    "description": "<p>Snow doesn't impair an arabuk's vision; it ignores @UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{Concealment} from snowfall.</p>"
                 },
                 "action->Deafening Echo": {
                     "name": "Deafening Echo",
@@ -3952,7 +3952,7 @@
             "items": {
                 "equipment->Manacles (Simple)": {
                     "name": "Manacles (Simple)",
-                    "description": "<p>You can manacle someone who is willing or otherwise at your mercy as an exploration activity taking 10-30 seconds depending on the creature's size and how many manacles you apply. A two-legged creature with its legs bound takes a \u201315-foot circumstance penalty to its Speeds, and a two-handed creature with its wrists bound has to succeed at a @Check[flat|dc:5] any time it uses a manipulate action or else that action fails. This DC may be higher depending on how tightly the manacles constrain the hands. A creature bound to a stationary object is immobilized. For creatures with more or fewer limbs, the GM determines what effect manacles have, if any. Freeing a creature from simple manacles requires three successful @Check[thievery|dc:22|traits:action:pick-a-lock] checks.</p>"
+                    "description": "<p>You can manacle someone who is willing or otherwise at your mercy as an exploration activity taking 10-30 seconds depending on the creature's size and how many manacles you apply. A two-legged creature with its legs bound takes a –15-foot circumstance penalty to its Speeds, and a two-handed creature with its wrists bound has to succeed at a @Check[flat|dc:5] any time it uses a manipulate action or else that action fails. This DC may be higher depending on how tightly the manacles constrain the hands. A creature bound to a stationary object is immobilized. For creatures with more or fewer limbs, the GM determines what effect manacles have, if any. Freeing a creature from simple manacles requires three successful @Check[thievery|dc:22|traits:action:pick-a-lock] checks.</p>"
                 },
                 "action->Hunt Prey": {
                     "name": "Hunt Prey",
@@ -4565,11 +4565,11 @@
                 },
                 "action->Vulnerable to Curved Space": {
                     "name": "Vulnerable to Curved Space",
-                    "description": "<p>When a pup of Tindalos is not adjacent to a structural angle of 90\u00b0 (or more acute), its resistance to physical damage is suppressed and it becomes @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 1}. It can't recover from this sickened condition, but the condition ends automatically once the pup is again adjacent to a suitable angle.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.V60TWjo1G1r5ZtPM]{Effect: Vulnerable to Curved Space}</p>"
+                    "description": "<p>When a pup of Tindalos is not adjacent to a structural angle of 90° (or more acute), its resistance to physical damage is suppressed and it becomes @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 1}. It can't recover from this sickened condition, but the condition ends automatically once the pup is again adjacent to a suitable angle.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.V60TWjo1G1r5ZtPM]{Effect: Vulnerable to Curved Space}</p>"
                 },
                 "action->Angled Entry": {
                     "name": "Angled Entry",
-                    "description": "<p>The pup of Tindalos casts a 4th-rank @UUID[Compendium.pf2e.spells-srd.Item.VlNcjmYyu95vOUe8]{Translocate} spell, but it must transport itself into a space adjacent to an angle of 90\u00ba (or more acute) in the structure or environment around it. For example, it could teleport to a space adjacent to a wall (using the angle between the wall and floor) or a corner in a room, or adjacent to a sizable tree growing straight up out of the ground, but not to a flat plain or a room with only curved corners and edges.</p>\n<p>Once per day, the pup of Tindalos can use this ability to plane shift to or from the Dimension of Time, with the same restrictions on what angles it can appear next to.</p>"
+                    "description": "<p>The pup of Tindalos casts a 4th-rank @UUID[Compendium.pf2e.spells-srd.Item.VlNcjmYyu95vOUe8]{Translocate} spell, but it must transport itself into a space adjacent to an angle of 90º (or more acute) in the structure or environment around it. For example, it could teleport to a space adjacent to a wall (using the angle between the wall and floor) or a corner in a room, or adjacent to a sizable tree growing straight up out of the ground, but not to a flat plain or a room with only curved corners and edges.</p>\n<p>Once per day, the pup of Tindalos can use this ability to plane shift to or from the Dimension of Time, with the same restrictions on what angles it can appear next to.</p>"
                 }
             },
             "skills": {
@@ -4659,7 +4659,7 @@
                 },
                 "weapon->Frost Vial (Moderate)": {
                     "name": "Frost Vial (Moderate)",
-                    "description": "<p><strong>Activate</strong> <span class=\"action-glyph\">1</span> Strike</p>\n<hr />\n<p>The liquid reagents in this vial rapidly absorb heat when exposed to air. A frost vial deals the listed cold damage and cold splash damage. On a hit, the target takes a status penalty to its Speeds until the end of its next turn. Many types of frost vial also grant an item bonus to attack rolls.</p>\n<p>You gain a +1 item bonus to attack rolls, the bomb deals 2d6 cold damage and 2 cold splash damage, and the target takes a \u201310-foot penalty.</p>\n<p>@UUID[Compendium.pf2e.equipment-effects.Item.LdmzgBOTjCete4F7]{Effect: Frost Vial}</p>"
+                    "description": "<p><strong>Activate</strong> <span class=\"action-glyph\">1</span> Strike</p>\n<hr />\n<p>The liquid reagents in this vial rapidly absorb heat when exposed to air. A frost vial deals the listed cold damage and cold splash damage. On a hit, the target takes a status penalty to its Speeds until the end of its next turn. Many types of frost vial also grant an item bonus to attack rolls.</p>\n<p>You gain a +1 item bonus to attack rolls, the bomb deals 2d6 cold damage and 2 cold splash damage, and the target takes a –10-foot penalty.</p>\n<p>@UUID[Compendium.pf2e.equipment-effects.Item.LdmzgBOTjCete4F7]{Effect: Frost Vial}</p>"
                 },
                 "armor->Work Coat": {
                     "name": "Work Coat",
@@ -4809,7 +4809,7 @@
             "items": {
                 "action->Rockfall": {
                     "name": "Rockfall",
-                    "description": "<p><strong>Trigger</strong> A creature steps on one of the unstable rocks</p>\n<hr />\n<p><strong>Effect</strong> Rocks come crashing down onto the creatures below. The rockfall deals @Damage[4d6[bludgeoning]] damage to each creature within @Template[emanation|distance:10]{10 feet} of the rock pile (@Check[reflex|dc:20|basic] save).</p>\n<hr />\n<p><strong>Critical Success</strong> The creature takes no damage.</p>\n<p><strong>Success</strong> The creature takes half damage and is knocked @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone}.</p>\n<p><strong>Failure</strong> The creature takes full damage, is knocked prone, and takes a \u201310-foot circumstance penalty to its movement speeds for 1 round.</p>\n<p><strong>Critical Failure</strong> The creature takes double damage, is knocked prone, and takes a \u201320-foot circumstance penalty to its movement speeds for 2 rounds.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.vuaungtl9VCBoHDK]{Effect: Rockfall Failure}</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.XyhPcnlkg3mGqEwT]{Effect: Rockfall Critical Failure}</p>"
+                    "description": "<p><strong>Trigger</strong> A creature steps on one of the unstable rocks</p>\n<hr />\n<p><strong>Effect</strong> Rocks come crashing down onto the creatures below. The rockfall deals @Damage[4d6[bludgeoning]] damage to each creature within @Template[emanation|distance:10]{10 feet} of the rock pile (@Check[reflex|dc:20|basic] save).</p>\n<hr />\n<p><strong>Critical Success</strong> The creature takes no damage.</p>\n<p><strong>Success</strong> The creature takes half damage and is knocked @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone}.</p>\n<p><strong>Failure</strong> The creature takes full damage, is knocked prone, and takes a –10-foot circumstance penalty to its movement speeds for 1 round.</p>\n<p><strong>Critical Failure</strong> The creature takes double damage, is knocked prone, and takes a –20-foot circumstance penalty to its movement speeds for 2 rounds.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.vuaungtl9VCBoHDK]{Effect: Rockfall Failure}</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.XyhPcnlkg3mGqEwT]{Effect: Rockfall Critical Failure}</p>"
                 }
             }
         },
@@ -5204,7 +5204,7 @@
                 },
                 "action->Clinging Suckers": {
                     "name": "Clinging Suckers",
-                    "description": "<p>When a grindylow @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.Tkd8sH4pwFIPzqTr]{Grabs} a creature larger than itself, it attaches to that creature. The @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed} creature is not @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Immobilized}, but if it moves, the grindylow moves with it. If the creature is Medium or smaller, it takes a \u20135-foot status penalty to its Speeds while the grindylow is attached. The grindylow is @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} while it is attached to a creature.</p>"
+                    "description": "<p>When a grindylow @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.Tkd8sH4pwFIPzqTr]{Grabs} a creature larger than itself, it attaches to that creature. The @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed} creature is not @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Immobilized}, but if it moves, the grindylow moves with it. If the creature is Medium or smaller, it takes a –5-foot status penalty to its Speeds while the grindylow is attached. The grindylow is @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} while it is attached to a creature.</p>"
                 },
                 "action->Jet": {
                     "name": "Jet",
@@ -5238,7 +5238,7 @@
                 },
                 "action->Clinging Suckers": {
                     "name": "Clinging Suckers",
-                    "description": "<p>When Smilglen Daet @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.Tkd8sH4pwFIPzqTr]{Grabs} a creature larger than herself, she attaches to that creature. The @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed} creature is not @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Immobilized}, but if it moves, Smilglen moves with it. If the creature is Medium or smaller, it takes a \u20135-foot status penalty to its Speeds while Smilglen is attached. Smilglen is @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} while it is attached to a creature.</p>"
+                    "description": "<p>When Smilglen Daet @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.Tkd8sH4pwFIPzqTr]{Grabs} a creature larger than herself, she attaches to that creature. The @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed} creature is not @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Immobilized}, but if it moves, Smilglen moves with it. If the creature is Medium or smaller, it takes a –5-foot status penalty to its Speeds while Smilglen is attached. Smilglen is @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} while it is attached to a creature.</p>"
                 },
                 "action->Jet": {
                     "name": "Jet",
@@ -6172,7 +6172,7 @@
                 },
                 "action->Fanatical Frenzy": {
                     "name": "Fanatical Frenzy",
-                    "description": "<p><strong>Requirements</strong> The fanatic has taken damage and is neither @UUID[Compendium.pf2e.conditionitems.Item.HL2l2VRSaQHu9lUw]{Fatigued} nor already in a frenzy</p><hr /><p><strong>Effect</strong> The cultist flies into a frenzy that lasts 1 minute. While frenzied, the cultist gains a +1 status bonus to attack rolls and a +2 status bonus to damage rolls, and they take a \u20132 status penalty to AC. The cultist can't voluntarily stop their frenzy. After their frenzy, the cultist is fatigued.</p>"
+                    "description": "<p><strong>Requirements</strong> The fanatic has taken damage and is neither @UUID[Compendium.pf2e.conditionitems.Item.HL2l2VRSaQHu9lUw]{Fatigued} nor already in a frenzy</p><hr /><p><strong>Effect</strong> The cultist flies into a frenzy that lasts 1 minute. While frenzied, the cultist gains a +1 status bonus to attack rolls and a +2 status bonus to damage rolls, and they take a –2 status penalty to AC. The cultist can't voluntarily stop their frenzy. After their frenzy, the cultist is fatigued.</p>"
                 },
                 "lore->Iron Ring Lore": {
                     "name": "Iron Ring Lore"
@@ -6531,7 +6531,7 @@
                 },
                 "action->Snow Vision": {
                     "name": "Snow Vision",
-                    "description": "<p>Snow doesn't impair an arabuk's vision; it ignores concealment from snowfall.</p>"
+                    "description": "<p>Snow doesn't impair an arabuk's vision; it ignores @UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{Concealment} from snowfall.</p>"
                 },
                 "action->Pounce": {
                     "name": "Pounce",

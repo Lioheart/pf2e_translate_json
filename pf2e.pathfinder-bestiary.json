@@ -146,7 +146,7 @@
                 },
                 "action->Generate Bomb": {
                     "name": "Generate Bomb",
-                    "description": "<p>The golem fills an empty vial from one of its alchemical chambers to create a bomb and then makes a bomb Strike.</p>\n<p>Determine the type of bomb created by rolling 1d6 on the alchemical chambers list.</p>\n<p>On a roll of 1-4, it creates the corresponding greater alchemical bomb: an @UUID[Compendium.pf2e.equipment-srd.Item.jC8GmH0Un6vDxdMj]{Acid Flask} from chamber 1, a @UUID[Compendium.pf2e.equipment-srd.Item.intVPcEzbE9o4NQd]{Frost Vial} from chamber 2, @UUID[Compendium.pf2e.equipment-srd.Item.r2iTRbt1zpkAqHj2]{Bottled Lightning} from chamber 3, or @UUID[Compendium.pf2e.equipment-srd.Item.n5yTlTs63o53n3k6]{Alchemist's Fire} from chamber 4.</p>\n<p>On a roll of 5, it creates a poisonous bomb that deals 3d10 poison damage and 3 poison splash damage with no other effects.</p>\n<p>On a roll of 6, it creates a sickness bomb, which exposes the target and all creatures in the splash radius to the sickness effect; creatures hit by only the splash receive a +2 circumstance bonus to their Fortitude saves.</p>\n<table class=\"pf2e\">\n<thead>\n<tr>\n<th>[[/gmr 1d6 #Generate Bomb]]</th>\n<th>Alchemical Effect</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>1</td>\n<td>\n<p>Acid Flask: @Damage[1[acid],3d6[persistent,acid],(3[splash])[acid]] damage</p>\n</td>\n</tr>\n<tr>\n<td>2</td>\n<td>Frost Vial: @Damage[3d6[cold],(3[splash])[cold]] damage, and \u201310-foot status penalty to Speeds until end of targets next turn @UUID[Compendium.pf2e.equipment-effects.Item.LdmzgBOTjCete4F7]{Effect: Frost Vial}</td>\n</tr>\n<tr>\n<td>3</td>\n<td>Bottled Lightning: @Damage[3d6[electricity],(3[splash])[electricity]] damage, and @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} until start of targets next turn</td>\n</tr>\n<tr>\n<td>4</td>\n<td>Alchemist's Fire: @Damage[3d8[fire],3[persistent,fire],(3[splash])[fire]] damage</td>\n</tr>\n<tr>\n<td>5</td>\n<td>Poisonous Bomb: @Damage[3d10[poison],(3[splash])[poison]] damage</td>\n</tr>\n<tr>\n<td>6</td>\n<td>Sickness: @Check[fortitude|dc:26|name:Alchemical Sickness|traits:disease] save or @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 1} (@UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 2} on a critical failure)</td>\n</tr>\n</tbody>\n</table>"
+                    "description": "<p>The golem fills an empty vial from one of its alchemical chambers to create a bomb and then makes a bomb Strike.</p>\n<p>Determine the type of bomb created by rolling 1d6 on the alchemical chambers list.</p>\n<p>On a roll of 1-4, it creates the corresponding greater alchemical bomb: an @UUID[Compendium.pf2e.equipment-srd.Item.jC8GmH0Un6vDxdMj]{Acid Flask} from chamber 1, a @UUID[Compendium.pf2e.equipment-srd.Item.intVPcEzbE9o4NQd]{Frost Vial} from chamber 2, @UUID[Compendium.pf2e.equipment-srd.Item.r2iTRbt1zpkAqHj2]{Bottled Lightning} from chamber 3, or @UUID[Compendium.pf2e.equipment-srd.Item.n5yTlTs63o53n3k6]{Alchemist's Fire} from chamber 4.</p>\n<p>On a roll of 5, it creates a poisonous bomb that deals 3d10 poison damage and 3 poison splash damage with no other effects.</p>\n<p>On a roll of 6, it creates a sickness bomb, which exposes the target and all creatures in the splash radius to the sickness effect; creatures hit by only the splash receive a +2 circumstance bonus to their Fortitude saves.</p>\n<table class=\"pf2e\">\n<thead>\n<tr>\n<th>[[/gmr 1d6 #Generate Bomb]]</th>\n<th>Alchemical Effect</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>1</td>\n<td>\n<p>Acid Flask: @Damage[1[acid],3d6[persistent,acid],(3[splash])[acid]] damage</p>\n</td>\n</tr>\n<tr>\n<td>2</td>\n<td>Frost Vial: @Damage[3d6[cold],(3[splash])[cold]] damage, and –10-foot status penalty to Speeds until end of targets next turn @UUID[Compendium.pf2e.equipment-effects.Item.LdmzgBOTjCete4F7]{Effect: Frost Vial}</td>\n</tr>\n<tr>\n<td>3</td>\n<td>Bottled Lightning: @Damage[3d6[electricity],(3[splash])[electricity]] damage, and @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} until start of targets next turn</td>\n</tr>\n<tr>\n<td>4</td>\n<td>Alchemist's Fire: @Damage[3d8[fire],3[persistent,fire],(3[splash])[fire]] damage</td>\n</tr>\n<tr>\n<td>5</td>\n<td>Poisonous Bomb: @Damage[3d10[poison],(3[splash])[poison]] damage</td>\n</tr>\n<tr>\n<td>6</td>\n<td>Sickness: @Check[fortitude|dc:26|name:Alchemical Sickness|traits:disease] save or @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 1} (@UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 2} on a critical failure)</td>\n</tr>\n</tbody>\n</table>"
                 }
             }
         },
@@ -415,7 +415,7 @@
                 },
                 "action->Frightful Presence": {
                     "name": "Frightful Presence",
-                    "description": "<p>90 feet. @Check[will|dc:28]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.FrightfulPresence]</p>"
+                    "description": "<p>90 feet. @Check[will|dc:28|options:area-effect,inflicts:frightened]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.FrightfulPresence]</p>"
                 },
                 "action->Tail Lash": {
                     "name": "Tail Lash",
@@ -470,7 +470,7 @@
                 },
                 "action->Frightful Presence": {
                     "name": "Frightful Presence",
-                    "description": "<p>90 feet. @Check[will|dc:28]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.FrightfulPresence]</p>"
+                    "description": "<p>90 feet. @Check[will|dc:28|options:area-effect,inflicts:frightened]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.FrightfulPresence]</p>"
                 },
                 "action->Tail Lash": {
                     "name": "Tail Lash",
@@ -514,7 +514,7 @@
                 },
                 "action->Frightful Presence": {
                     "name": "Frightful Presence",
-                    "description": "<p>90 feet. @Check[will|dc:35]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.FrightfulPresence]</p>"
+                    "description": "<p>90 feet. @Check[will|dc:35|options:area-effect,inflicts:frightened]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.FrightfulPresence]</p>"
                 },
                 "action->Tail Lash": {
                     "name": "Tail Lash",
@@ -569,7 +569,7 @@
                 },
                 "action->Frightful Presence": {
                     "name": "Frightful Presence",
-                    "description": "<p>90 feet. @Check[will|dc:35]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.FrightfulPresence]</p>"
+                    "description": "<p>90 feet. @Check[will|dc:35|options:area-effect,inflicts:frightened]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.FrightfulPresence]</p>"
                 },
                 "action->Tail Lash": {
                     "name": "Tail Lash",
@@ -603,7 +603,7 @@
                 },
                 "action->Frightful Presence": {
                     "name": "Frightful Presence",
-                    "description": "<p>90 feet. @Check[will|dc:23]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.FrightfulPresence]</p>"
+                    "description": "<p>90 feet. @Check[will|dc:23|options:area-effect,inflicts:frightened]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.FrightfulPresence]</p>"
                 },
                 "action->Tail Lash": {
                     "name": "Tail Lash",
@@ -644,7 +644,7 @@
                 },
                 "action->Frightful Presence": {
                     "name": "Frightful Presence",
-                    "description": "<p>90 feet. @Check[will|dc:23]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.FrightfulPresence]</p>"
+                    "description": "<p>90 feet. @Check[will|dc:23|options:area-effect,inflicts:frightened]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.FrightfulPresence]</p>"
                 },
                 "action->Tail Lash": {
                     "name": "Tail Lash",
@@ -745,7 +745,7 @@
                 },
                 "action->Frightful Presence": {
                     "name": "Frightful Presence",
-                    "description": "<p>90 feet. @Check[will|dc:32]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.FrightfulPresence]</p>"
+                    "description": "<p>90 feet. @Check[will|dc:32|options:area-effect,inflicts:frightened]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.FrightfulPresence]</p>"
                 },
                 "action->Wing Deflection": {
                     "name": "Wing Deflection",
@@ -807,7 +807,7 @@
                 },
                 "action->Frightful Presence": {
                     "name": "Frightful Presence",
-                    "description": "<p>90 feet. @Check[will|dc:32]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.FrightfulPresence]</p>"
+                    "description": "<p>90 feet. @Check[will|dc:32|options:area-effect,inflicts:frightened]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.FrightfulPresence]</p>"
                 },
                 "action->Wing Deflection": {
                     "name": "Wing Deflection",
@@ -870,7 +870,7 @@
                 },
                 "action->Frightful Presence": {
                     "name": "Frightful Presence",
-                    "description": "<p>90 feet. @Check[will|dc:39]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.FrightfulPresence]</p>"
+                    "description": "<p>90 feet. @Check[will|dc:39|options:area-effect,inflicts:frightened]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.FrightfulPresence]</p>"
                 },
                 "action->Wing Deflection": {
                     "name": "Wing Deflection",
@@ -952,7 +952,7 @@
                 },
                 "action->Frightful Presence": {
                     "name": "Frightful Presence",
-                    "description": "<p>90 feet. @Check[will|dc:39]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.FrightfulPresence]</p>"
+                    "description": "<p>90 feet. @Check[will|dc:39|options:area-effect,inflicts:frightened]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.FrightfulPresence]</p>"
                 },
                 "action->Wing Deflection": {
                     "name": "Wing Deflection",
@@ -1004,7 +1004,7 @@
                 },
                 "action->Frightful Presence": {
                     "name": "Frightful Presence",
-                    "description": "<p>90 feet. @Check[will|dc:26]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.FrightfulPresence]</p>"
+                    "description": "<p>90 feet. @Check[will|dc:26|options:area-effect,inflicts:frightened]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.FrightfulPresence]</p>"
                 },
                 "action->Wing Deflection": {
                     "name": "Wing Deflection",
@@ -1059,7 +1059,7 @@
                 },
                 "action->Frightful Presence": {
                     "name": "Frightful Presence",
-                    "description": "<p>90 feet. @Check[will|dc:26]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.FrightfulPresence]</p>"
+                    "description": "<p>90 feet. @Check[will|dc:26|options:area-effect,inflicts:frightened]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.FrightfulPresence]</p>"
                 },
                 "action->Wing Deflection": {
                     "name": "Wing Deflection",
@@ -1107,7 +1107,7 @@
                 },
                 "action->Frightful Presence": {
                     "name": "Frightful Presence",
-                    "description": "<p>90 feet. @Check[will|dc:28]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.FrightfulPresence]</p>"
+                    "description": "<p>90 feet. @Check[will|dc:28|options:area-effect,inflicts:frightened]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.FrightfulPresence]</p>"
                 },
                 "action->Wing Deflection": {
                     "name": "Wing Deflection",
@@ -1166,7 +1166,7 @@
                 },
                 "action->Frightful Presence": {
                     "name": "Frightful Presence",
-                    "description": "<p>90 feet. @Check[will|dc:28]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.FrightfulPresence]</p>"
+                    "description": "<p>90 feet. @Check[will|dc:28|options:area-effect,inflicts:frightened]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.FrightfulPresence]</p>"
                 },
                 "action->Wing Deflection": {
                     "name": "Wing Deflection",
@@ -1214,7 +1214,7 @@
                 },
                 "action->Frightful Presence": {
                     "name": "Frightful Presence",
-                    "description": "<p>90 feet. @Check[will|dc:35]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.FrightfulPresence]</p>"
+                    "description": "<p>90 feet. @Check[will|dc:35|options:area-effect,inflicts:frightened]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.FrightfulPresence]</p>"
                 },
                 "action->Wing Deflection": {
                     "name": "Wing Deflection",
@@ -1273,7 +1273,7 @@
                 },
                 "action->Frightful Presence": {
                     "name": "Frightful Presence",
-                    "description": "<p>90 feet. @Check[will|dc:35]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.FrightfulPresence]</p>"
+                    "description": "<p>90 feet. @Check[will|dc:35|options:area-effect,inflicts:frightened]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.FrightfulPresence]</p>"
                 },
                 "action->Wing Deflection": {
                     "name": "Wing Deflection",
@@ -1317,7 +1317,7 @@
                 },
                 "action->Frightful Presence": {
                     "name": "Frightful Presence",
-                    "description": "<p>90 feet. @Check[will|dc:23]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.FrightfulPresence]</p>"
+                    "description": "<p>90 feet. @Check[will|dc:23|options:area-effect,inflicts:frightened]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.FrightfulPresence]</p>"
                 },
                 "action->Wing Deflection": {
                     "name": "Wing Deflection",
@@ -1368,7 +1368,7 @@
                 },
                 "action->Frightful Presence": {
                     "name": "Frightful Presence",
-                    "description": "<p>90 feet. @Check[will|dc:23]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.FrightfulPresence]</p>"
+                    "description": "<p>90 feet. @Check[will|dc:23|options:area-effect,inflicts:frightened]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.FrightfulPresence]</p>"
                 },
                 "action->Wing Deflection": {
                     "name": "Wing Deflection",
@@ -1420,7 +1420,7 @@
                 },
                 "action->Frightful Presence": {
                     "name": "Frightful Presence",
-                    "description": "<p>90 feet. @Check[will|dc:31]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.FrightfulPresence]</p>"
+                    "description": "<p>90 feet. @Check[will|dc:31|options:area-effect,inflicts:frightened]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.FrightfulPresence]</p>"
                 },
                 "action->Breath Weapon": {
                     "name": "Breath Weapon",
@@ -1483,7 +1483,7 @@
                 },
                 "action->Frightful Presence": {
                     "name": "Frightful Presence",
-                    "description": "<p>90 feet. @Check[will|dc:31]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.FrightfulPresence]</p>"
+                    "description": "<p>90 feet. @Check[will|dc:31|options:area-effect,inflicts:frightened]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.FrightfulPresence]</p>"
                 },
                 "action->Breath Weapon": {
                     "name": "Breath Weapon",
@@ -1538,7 +1538,7 @@
                 },
                 "action->Frightful Presence": {
                     "name": "Frightful Presence",
-                    "description": "<p>90 feet. @Check[will|dc:38]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.FrightfulPresence]</p>"
+                    "description": "<p>90 feet. @Check[will|dc:38|options:area-effect,inflicts:frightened]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.FrightfulPresence]</p>"
                 },
                 "action->Vortex": {
                     "name": "Vortex",
@@ -1612,7 +1612,7 @@
                 },
                 "action->Frightful Presence": {
                     "name": "Frightful Presence",
-                    "description": "<p>90 feet. @Check[will|dc:38]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.FrightfulPresence]</p>"
+                    "description": "<p>90 feet. @Check[will|dc:38|options:area-effect,inflicts:frightened]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.FrightfulPresence]</p>"
                 },
                 "action->Vortex": {
                     "name": "Vortex",
@@ -1665,7 +1665,7 @@
                 },
                 "action->Frightful Presence": {
                     "name": "Frightful Presence",
-                    "description": "<p>90 feet. @Check[will|dc:26]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.FrightfulPresence]</p>"
+                    "description": "<p>90 feet. @Check[will|dc:26|options:area-effect,inflicts:frightened]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.FrightfulPresence]</p>"
                 },
                 "action->Breath Weapon": {
                     "name": "Breath Weapon",
@@ -1721,7 +1721,7 @@
                 },
                 "action->Frightful Presence": {
                     "name": "Frightful Presence",
-                    "description": "<p>90 feet. @Check[will|dc:26]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.FrightfulPresence]</p>"
+                    "description": "<p>90 feet. @Check[will|dc:26|options:area-effect,inflicts:frightened]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.FrightfulPresence]</p>"
                 },
                 "action->Breath Weapon": {
                     "name": "Breath Weapon",
@@ -1986,7 +1986,7 @@
                 },
                 "action->Frightful Presence": {
                     "name": "Frightful Presence",
-                    "description": "<p>90 feet. @Check[will|dc:29]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.FrightfulPresence]</p>"
+                    "description": "<p>90 feet. @Check[will|dc:29|options:area-effect,inflicts:frightened]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.FrightfulPresence]</p>"
                 },
                 "action->Twisting Tail": {
                     "name": "Twisting Tail",
@@ -2042,7 +2042,7 @@
                 },
                 "action->Frightful Presence": {
                     "name": "Frightful Presence",
-                    "description": "<p>90 feet. @Check[will|dc:29]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.FrightfulPresence]</p>"
+                    "description": "<p>90 feet. @Check[will|dc:29|options:area-effect,inflicts:frightened]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.FrightfulPresence]</p>"
                 },
                 "action->Twisting Tail": {
                     "name": "Twisting Tail",
@@ -2090,7 +2090,7 @@
                 },
                 "action->Frightful Presence": {
                     "name": "Frightful Presence",
-                    "description": "<p>90 feet. @Check[will|dc:35]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.FrightfulPresence]</p>"
+                    "description": "<p>90 feet. @Check[will|dc:35|options:area-effect,inflicts:frightened]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.FrightfulPresence]</p>"
                 },
                 "action->Slow Aura": {
                     "name": "Slow Aura",
@@ -2157,7 +2157,7 @@
                 },
                 "action->Frightful Presence": {
                     "name": "Frightful Presence",
-                    "description": "<p>90 feet. @Check[will|dc:35]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.FrightfulPresence]</p>"
+                    "description": "<p>90 feet. @Check[will|dc:35|options:area-effect,inflicts:frightened]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.FrightfulPresence]</p>"
                 },
                 "action->Slow Aura": {
                     "name": "Slow Aura",
@@ -2207,7 +2207,7 @@
                 },
                 "action->Frightful Presence": {
                     "name": "Frightful Presence",
-                    "description": "<p>90 feet. @Check[will|dc:23]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.FrightfulPresence]</p>"
+                    "description": "<p>90 feet. @Check[will|dc:23|options:area-effect,inflicts:frightened]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.FrightfulPresence]</p>"
                 },
                 "action->Twisting Tail": {
                     "name": "Twisting Tail",
@@ -2260,7 +2260,7 @@
                 },
                 "action->Frightful Presence": {
                     "name": "Frightful Presence",
-                    "description": "<p>90 feet. @Check[will|dc:23]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.FrightfulPresence]</p>"
+                    "description": "<p>90 feet. @Check[will|dc:23|options:area-effect,inflicts:frightened]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.FrightfulPresence]</p>"
                 },
                 "action->Twisting Tail": {
                     "name": "Twisting Tail",
@@ -2338,7 +2338,7 @@
         },
         "Demilich": {
             "name": "Demilich",
-            "publicNotes": "<p>Demiliches are formed when a lich, through carelessness or by accident, loses its phylactery. As years pass, the lich's body crumbles to dust, leaving only the skull as the seat of its necromantic power. The lich enters a sort of torpor, its mind left wandering the planes in search of ever greater mysteries. The lich gradually loses the ability to cast spells and its magic items slowly subsume into its new form. Void energy concentrates around the skull, causing some of its bones and teeth to petrify with power and turn into blight crystals. The resulting lich skull, embedded with arcane gemstones and suffused with palpably powerful magic, forms a creature called a demilich.</p>\n<p>Despite its near-constant state of inactivity, a demilich grows restless from time to time, especially when living creatures draw near. Only then does the demilich's hunger for life stir once more, causing it to lash out with terrifying bursts of power in attempts to consume vital energy. Unlike an ordinary lich, should the demilich's skull be destroyed, its bond to the world is permanently severed, although some theorize that even then it is not truly slain. Rather, some think that once the demilich is destroyed, its foul and tormented mind is finally free to wander the planes and find new ways to enact its will. For the short-lived common folk of the Material Plane, this is good enough, though eons later a demilich may reappear in the region it once inhabited with a new\u2014and even more insidious\u2014agenda.</p>\n<hr />\n<p>To gain more time to complete their goals, some desperate spellcasters pursue immortality by embracing undeath. After long years of research and the creation of a special container called a phylactery, a spellcaster takes the final step by imbibing a deadly concoction or casting dreadful incantations that transform them into a lich. While most undertake this drastic plan to continue their work or fulfill some long-term plan, others become liches because they fear death or to fulfill some malevolent purpose, such as long-sworn revenge. Regardless, the result is permanent and carries with it the potential to alter history\u2014both that of those who transform themselves and of the countless mortals that will inevitably suffer as a result of a lich's new power.</p>\n<p>After its metamorphosis, a lich often finds some quiet place to dwell, typically protected by a variety of guardians and traps, for two primary purposes. First, a lich requires solitude in order to plan its elaborate schemes, and second, few mortals (if any) deign to interact with these legendarily corrupt necromancers. One reason begets the other, as the self-imposed isolation of a lich often drives the lich insane, further solidifying its separation from civilization. The longer a lich lives, the more meticulous a planner it becomes, secreting itself within a labyrinth of deadly puzzles, misdirection, and monsters. A lich's servants and guardians are absolutely loyal, either due to their nature (such as constructs or other undead) or as a result of compulsion using powerful magic. Many liches go mad, in time, and the nature of a lich's lair is a good indicator of the undead's current mental state.</p>\n<p>For all the protections it arrays around itself, a lich will go to greater lengths to guard its phylactery, as it knows that the destruction of this magical container spells doom for the lich. A lich is notoriously difficult to bargain with, though the threat of damaging its phylactery is a sure way to gain the upper hand in such a negotiation.</p>",
+            "publicNotes": "<p>Demiliches are formed when a lich, through carelessness or by accident, loses its phylactery. As years pass, the lich's body crumbles to dust, leaving only the skull as the seat of its necromantic power. The lich enters a sort of torpor, its mind left wandering the planes in search of ever greater mysteries. The lich gradually loses the ability to cast spells and its magic items slowly subsume into its new form. Void energy concentrates around the skull, causing some of its bones and teeth to petrify with power and turn into blight crystals. The resulting lich skull, embedded with arcane gemstones and suffused with palpably powerful magic, forms a creature called a demilich.</p>\n<p>Despite its near-constant state of inactivity, a demilich grows restless from time to time, especially when living creatures draw near. Only then does the demilich's hunger for life stir once more, causing it to lash out with terrifying bursts of power in attempts to consume vital energy. Unlike an ordinary lich, should the demilich's skull be destroyed, its bond to the world is permanently severed, although some theorize that even then it is not truly slain. Rather, some think that once the demilich is destroyed, its foul and tormented mind is finally free to wander the planes and find new ways to enact its will. For the short-lived common folk of the Material Plane, this is good enough, though eons later a demilich may reappear in the region it once inhabited with a new—and even more insidious—agenda.</p>\n<hr />\n<p>To gain more time to complete their goals, some desperate spellcasters pursue immortality by embracing undeath. After long years of research and the creation of a special container called a phylactery, a spellcaster takes the final step by imbibing a deadly concoction or casting dreadful incantations that transform them into a lich. While most undertake this drastic plan to continue their work or fulfill some long-term plan, others become liches because they fear death or to fulfill some malevolent purpose, such as long-sworn revenge. Regardless, the result is permanent and carries with it the potential to alter history—both that of those who transform themselves and of the countless mortals that will inevitably suffer as a result of a lich's new power.</p>\n<p>After its metamorphosis, a lich often finds some quiet place to dwell, typically protected by a variety of guardians and traps, for two primary purposes. First, a lich requires solitude in order to plan its elaborate schemes, and second, few mortals (if any) deign to interact with these legendarily corrupt necromancers. One reason begets the other, as the self-imposed isolation of a lich often drives the lich insane, further solidifying its separation from civilization. The longer a lich lives, the more meticulous a planner it becomes, secreting itself within a labyrinth of deadly puzzles, misdirection, and monsters. A lich's servants and guardians are absolutely loyal, either due to their nature (such as constructs or other undead) or as a result of compulsion using powerful magic. Many liches go mad, in time, and the nature of a lich's lair is a good indicator of the undead's current mental state.</p>\n<p>For all the protections it arrays around itself, a lich will go to greater lengths to guard its phylactery, as it knows that the destruction of this magical container spells doom for the lich. A lich is notoriously difficult to bargain with, though the threat of damaging its phylactery is a sure way to gain the upper hand in such a negotiation.</p>",
             "allSavesBonus": "+1 status to all saves vs. vitality",
             "hpDetails": "void healing",
             "items": {
@@ -2946,7 +2946,7 @@
                 },
                 "action->Frightful Presence": {
                     "name": "Frightful Presence",
-                    "description": "<p>10 feet. @Check[will|dc:31]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.FrightfulPresence]</p>"
+                    "description": "<p>10 feet. @Check[will|dc:31|options:area-effect,inflicts:frightened]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.FrightfulPresence]</p>"
                 },
                 "action->Slowing Frost": {
                     "name": "Slowing Frost",
@@ -3270,7 +3270,7 @@
                 },
                 "action->Frightful Presence": {
                     "name": "Frightful Presence",
-                    "description": "<p>90 feet. @Check[will|dc:33]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.FrightfulPresence]</p>"
+                    "description": "<p>90 feet. @Check[will|dc:33|options:area-effect,inflicts:frightened]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.FrightfulPresence]</p>"
                 },
                 "action->Golden Luck": {
                     "name": "Golden Luck",
@@ -3328,7 +3328,7 @@
                 },
                 "action->Frightful Presence": {
                     "name": "Frightful Presence",
-                    "description": "<p>90 feet. @Check[will|dc:33]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.FrightfulPresence]</p>"
+                    "description": "<p>90 feet. @Check[will|dc:33|options:area-effect,inflicts:frightened]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.FrightfulPresence]</p>"
                 },
                 "action->Golden Luck": {
                     "name": "Golden Luck",
@@ -3379,7 +3379,7 @@
                 },
                 "action->Frightful Presence": {
                     "name": "Frightful Presence",
-                    "description": "<p>90 feet. @Check[will|dc:39]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.FrightfulPresence]</p>"
+                    "description": "<p>90 feet. @Check[will|dc:39|options:area-effect,inflicts:frightened]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.FrightfulPresence]</p>"
                 },
                 "action->Golden Luck": {
                     "name": "Golden Luck",
@@ -3441,7 +3441,7 @@
                 },
                 "action->Frightful Presence": {
                     "name": "Frightful Presence",
-                    "description": "<p>90 feet. @Check[will|dc:39]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.FrightfulPresence]</p>"
+                    "description": "<p>90 feet. @Check[will|dc:39|options:area-effect,inflicts:frightened]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.FrightfulPresence]</p>"
                 },
                 "action->Golden Luck": {
                     "name": "Golden Luck",
@@ -3488,7 +3488,7 @@
                 },
                 "action->Frightful Presence": {
                     "name": "Frightful Presence",
-                    "description": "<p>90 feet. @Check[will|dc:27]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.FrightfulPresence]</p>"
+                    "description": "<p>90 feet. @Check[will|dc:27|options:area-effect,inflicts:frightened]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.FrightfulPresence]</p>"
                 },
                 "action->Breath Weapon": {
                     "name": "Breath Weapon",
@@ -3542,7 +3542,7 @@
                 },
                 "action->Frightful Presence": {
                     "name": "Frightful Presence",
-                    "description": "<p>90 feet. @Check[will|dc:27]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.FrightfulPresence]</p>"
+                    "description": "<p>90 feet. @Check[will|dc:27|options:area-effect,inflicts:frightened]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.FrightfulPresence]</p>"
                 },
                 "action->Breath Weapon": {
                     "name": "Breath Weapon",
@@ -3614,7 +3614,7 @@
                 },
                 "action->Frightful Presence": {
                     "name": "Frightful Presence",
-                    "description": "<p>90 feet. @Check[will|dc:31]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.FrightfulPresence]</p>"
+                    "description": "<p>90 feet. @Check[will|dc:31|options:area-effect,inflicts:frightened]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.FrightfulPresence]</p>"
                 },
                 "action->Twisting Tail": {
                     "name": "Twisting Tail",
@@ -3674,7 +3674,7 @@
                 },
                 "action->Frightful Presence": {
                     "name": "Frightful Presence",
-                    "description": "<p>90 feet. @Check[will|dc:31]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.FrightfulPresence]</p>"
+                    "description": "<p>90 feet. @Check[will|dc:31|options:area-effect,inflicts:frightened]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.FrightfulPresence]</p>"
                 },
                 "action->Twisting Tail": {
                     "name": "Twisting Tail",
@@ -3730,7 +3730,7 @@
                 },
                 "action->Frightful Presence": {
                     "name": "Frightful Presence",
-                    "description": "<p>90 feet. @Check[will|dc:37]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.FrightfulPresence]</p>"
+                    "description": "<p>90 feet. @Check[will|dc:37|options:area-effect,inflicts:frightened]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.FrightfulPresence]</p>"
                 },
                 "action->Miasma": {
                     "name": "Miasma",
@@ -3801,7 +3801,7 @@
                 },
                 "action->Frightful Presence": {
                     "name": "Frightful Presence",
-                    "description": "<p>90 feet. @Check[will|dc:37]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.FrightfulPresence]</p>"
+                    "description": "<p>90 feet. @Check[will|dc:37|options:area-effect,inflicts:frightened]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.FrightfulPresence]</p>"
                 },
                 "action->Miasma": {
                     "name": "Miasma",
@@ -3847,7 +3847,7 @@
                 },
                 "action->Frightful Presence": {
                     "name": "Frightful Presence",
-                    "description": "<p>90 feet. @Check[will|dc:24]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.FrightfulPresence]</p>"
+                    "description": "<p>90 feet. @Check[will|dc:24|options:area-effect,inflicts:frightened]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.FrightfulPresence]</p>"
                 },
                 "action->Twisting Tail": {
                     "name": "Twisting Tail",
@@ -3896,7 +3896,7 @@
                 },
                 "action->Frightful Presence": {
                     "name": "Frightful Presence",
-                    "description": "<p>90 feet. @Check[will|dc:24]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.FrightfulPresence]</p>"
+                    "description": "<p>90 feet. @Check[will|dc:24|options:area-effect,inflicts:frightened]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.FrightfulPresence]</p>"
                 },
                 "action->Twisting Tail": {
                     "name": "Twisting Tail",
@@ -3992,7 +3992,7 @@
                 },
                 "action->Fiddle": {
                     "name": "Fiddle",
-                    "description": "<p>A grig can rub its legs together to create a catchy fiddling tune that compels others within @Template[emanation|distance:30]{30 feet} to dance about, with varying effects depending on a @Check[will|dc:18] save. A listener is temporarily immune for 10 minutes on a success, but otherwise, if the grig continues to Fiddle each round, the creature receives no additional saves.</p>\n<hr />\n<p><strong>Success</strong> No effect</p>\n<p><strong>Failure</strong> @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} and \u201310-foot status penalty to Speeds</p>\n<p><strong>Critical Failure</strong> As failure, and also @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1}</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.wJsOZsYI2ZUVcGxc]{Effect: Fiddle}</p>"
+                    "description": "<p>A grig can rub its legs together to create a catchy fiddling tune that compels others within @Template[emanation|distance:30]{30 feet} to dance about, with varying effects depending on a @Check[will|dc:18] save. A listener is temporarily immune for 10 minutes on a success, but otherwise, if the grig continues to Fiddle each round, the creature receives no additional saves.</p>\n<hr />\n<p><strong>Success</strong> No effect</p>\n<p><strong>Failure</strong> @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} and –10-foot status penalty to Speeds</p>\n<p><strong>Critical Failure</strong> As failure, and also @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1}</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.wJsOZsYI2ZUVcGxc]{Effect: Fiddle}</p>"
                 }
             },
             "skills": {
@@ -5132,7 +5132,7 @@
                 },
                 "action->Frightful Presence": {
                     "name": "Frightful Presence",
-                    "description": "<p>90 feet. @Check[will|dc:33]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.FrightfulPresence]</p>"
+                    "description": "<p>90 feet. @Check[will|dc:33|options:area-effect,inflicts:frightened]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.FrightfulPresence]</p>"
                 },
                 "action->Breath Weapon": {
                     "name": "Breath Weapon",
@@ -5189,7 +5189,7 @@
                 },
                 "action->Frightful Presence": {
                     "name": "Frightful Presence",
-                    "description": "<p>90 feet. @Check[will|dc:33]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.FrightfulPresence]</p>"
+                    "description": "<p>90 feet. @Check[will|dc:33|options:area-effect,inflicts:frightened]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.FrightfulPresence]</p>"
                 },
                 "action->Breath Weapon": {
                     "name": "Breath Weapon",
@@ -5241,7 +5241,7 @@
                 },
                 "action->Frightful Presence": {
                     "name": "Frightful Presence",
-                    "description": "<p>90 feet. @Check[will|dc:40]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.FrightfulPresence]</p>"
+                    "description": "<p>90 feet. @Check[will|dc:40|options:area-effect,inflicts:frightened]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.FrightfulPresence]</p>"
                 },
                 "action->Redirect Fire": {
                     "name": "Redirect Fire",
@@ -5312,7 +5312,7 @@
                 },
                 "action->Frightful Presence": {
                     "name": "Frightful Presence",
-                    "description": "<p>90 feet. @Check[will|dc:40]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.FrightfulPresence]</p>"
+                    "description": "<p>90 feet. @Check[will|dc:40|options:area-effect,inflicts:frightened]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.FrightfulPresence]</p>"
                 },
                 "action->Redirect Fire": {
                     "name": "Redirect Fire",
@@ -5358,7 +5358,7 @@
                 },
                 "action->Frightful Presence": {
                     "name": "Frightful Presence",
-                    "description": "<p>90 feet. @Check[will|dc:27]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.FrightfulPresence]</p>"
+                    "description": "<p>90 feet. @Check[will|dc:27|options:area-effect,inflicts:frightened]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.FrightfulPresence]</p>"
                 },
                 "action->Breath Weapon": {
                     "name": "Breath Weapon",
@@ -5407,7 +5407,7 @@
                 },
                 "action->Frightful Presence": {
                     "name": "Frightful Presence",
-                    "description": "<p>90 feet. @Check[will|dc:27]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.FrightfulPresence]</p>"
+                    "description": "<p>90 feet. @Check[will|dc:27|options:area-effect,inflicts:frightened]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.FrightfulPresence]</p>"
                 },
                 "action->Breath Weapon": {
                     "name": "Breath Weapon",
@@ -5856,7 +5856,7 @@
                 },
                 "action->Frightful Presence": {
                     "name": "Frightful Presence",
-                    "description": "<p>90 feet. @Check[will|dc:33]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.FrightfulPresence]</p>"
+                    "description": "<p>90 feet. @Check[will|dc:33|options:area-effect,inflicts:frightened]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.FrightfulPresence]</p>"
                 },
                 "action->Wing Deflection": {
                     "name": "Wing Deflection",
@@ -5914,7 +5914,7 @@
                 },
                 "action->Frightful Presence": {
                     "name": "Frightful Presence",
-                    "description": "<p>90 feet. @Check[will|dc:33]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.FrightfulPresence]</p>"
+                    "description": "<p>90 feet. @Check[will|dc:33|options:area-effect,inflicts:frightened]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.FrightfulPresence]</p>"
                 },
                 "action->Wing Deflection": {
                     "name": "Wing Deflection",
@@ -5965,7 +5965,7 @@
                 },
                 "action->Frightful Presence": {
                     "name": "Frightful Presence",
-                    "description": "<p>90 feet. @Check[will|dc:40]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.FrightfulPresence]</p>"
+                    "description": "<p>90 feet. @Check[will|dc:40|options:area-effect,inflicts:frightened]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.FrightfulPresence]</p>"
                 },
                 "action->Reflect Spell": {
                     "name": "Reflect Spell",
@@ -6031,7 +6031,7 @@
                 },
                 "action->Frightful Presence": {
                     "name": "Frightful Presence",
-                    "description": "<p>90 feet. @Check[will|dc:40]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.FrightfulPresence]</p>"
+                    "description": "<p>90 feet. @Check[will|dc:40|options:area-effect,inflicts:frightened]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.FrightfulPresence]</p>"
                 },
                 "action->Reflect Spell": {
                     "name": "Reflect Spell",
@@ -6078,7 +6078,7 @@
                 },
                 "action->Frightful Presence": {
                     "name": "Frightful Presence",
-                    "description": "<p>90 feet. @Check[will|dc:28]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.FrightfulPresence]</p>"
+                    "description": "<p>90 feet. @Check[will|dc:28|options:area-effect,inflicts:frightened]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.FrightfulPresence]</p>"
                 },
                 "action->Wing Deflection": {
                     "name": "Wing Deflection",
@@ -6132,7 +6132,7 @@
                 },
                 "action->Frightful Presence": {
                     "name": "Frightful Presence",
-                    "description": "<p>90 feet. @Check[will|dc:28]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.FrightfulPresence]</p>"
+                    "description": "<p>90 feet. @Check[will|dc:28|options:area-effect,inflicts:frightened]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.FrightfulPresence]</p>"
                 },
                 "action->Wing Deflection": {
                     "name": "Wing Deflection",
@@ -6739,7 +6739,7 @@
                 },
                 "action->Howl": {
                     "name": "Howl",
-                    "description": "<p><strong>Frequency</strong> Three times per day</p>\n<hr />\n<p><strong>Effect</strong> The wendigo unleashes a forlorn howl that can be heard up to 1 mile away. Any creature that hears the howl must succeed at a @Check[will|dc:38] save or be @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 1}. Any creature that critically fails and is within 120 feet of the wendigo is instead @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 3}, and is also fleeing for [[/gmr 1d4 #rounds]]{1d4 rounds} (or until it's no longer frightened, whichever comes first).</p>\n<p>A creature frightened by a wendigo's howl still naturally recovers from its fright but can't reduce it below frightened 1 in this way until 1 hour has passed or magic is used.</p>\n<p>Whether it succeeds or fails its save, a creature is then temporarily immune to that wendigo's Howl for 24 hours.</p>"
+                    "description": "<p><strong>Frequency</strong> Three times per day</p>\n<hr />\n<p><strong>Effect</strong> The wendigo unleashes a forlorn howl that can be heard up to 1 mile away. Any creature that hears the howl must succeed at a @Check[will|dc:38|options:area-effect,inflicts:frightened,inflicts:fleeing] save or be @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 1}. Any creature that critically fails and is within 120 feet of the wendigo is instead @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 3}, and is also @UUID[Compendium.pf2e.conditionitems.Item.sDPxOjQ9kx2RZE8D]{Fleeing} for [[/gmr 1d4 #rounds]]{1d4 rounds} (or until it's no longer frightened, whichever comes first).</p>\n<p>A creature frightened by a wendigo's howl still naturally recovers from its fright but can't reduce it below frightened 1 in this way until 1 hour has passed or magic is used.</p>\n<p>Whether it succeeds or fails its save, a creature is then temporarily immune to that wendigo's Howl for 24 hours.</p>"
                 },
                 "action->Ride the Wind": {
                     "name": "Ride the Wind",
@@ -6781,7 +6781,7 @@
                 },
                 "action->Snow Vision": {
                     "name": "Snow Vision",
-                    "description": "<p>Snow doesn't impair a white dragon's vision; it ignores concealment from snowfall.</p>"
+                    "description": "<p>Snow doesn't impair a white dragon's vision; it ignores @UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{Concealment} from snowfall.</p>"
                 },
                 "action->+1 Status to All Saves vs. Magic": {
                     "name": "+1 Status to All Saves vs. Magic"
@@ -6796,7 +6796,7 @@
                 },
                 "action->Frightful Presence": {
                     "name": "Frightful Presence",
-                    "description": "<p>90 feet. @Check[will|dc:27]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.FrightfulPresence]</p>"
+                    "description": "<p>90 feet. @Check[will|dc:27|options:area-effect,inflicts:frightened]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.FrightfulPresence]</p>"
                 },
                 "action->Breath Weapon": {
                     "name": "Breath Weapon",
@@ -6854,7 +6854,7 @@
                 },
                 "action->Snow Vision": {
                     "name": "Snow Vision",
-                    "description": "<p>Snow doesn't impair a white dragon's vision; it ignores concealment from snowfall.</p>"
+                    "description": "<p>Snow doesn't impair a white dragon's vision; it ignores @UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{Concealment} from snowfall.</p>"
                 },
                 "action->+1 Status to All Saves vs. Magic": {
                     "name": "+1 Status to All Saves vs. Magic"
@@ -6869,7 +6869,7 @@
                 },
                 "action->Frightful Presence": {
                     "name": "Frightful Presence",
-                    "description": "<p>90 feet. @Check[will|dc:27]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.FrightfulPresence]</p>"
+                    "description": "<p>90 feet. @Check[will|dc:27|options:area-effect,inflicts:frightened]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.FrightfulPresence]</p>"
                 },
                 "action->Breath Weapon": {
                     "name": "Breath Weapon",
@@ -6919,7 +6919,7 @@
                 },
                 "action->Snow Vision": {
                     "name": "Snow Vision",
-                    "description": "<p>Snow doesn't impair a white dragon's vision; it ignores concealment from snowfall.</p>"
+                    "description": "<p>Snow doesn't impair a white dragon's vision; it ignores @UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{Concealment} from snowfall.</p>"
                 },
                 "action->+1 Status to All Saves vs. Magic": {
                     "name": "+1 Status to All Saves vs. Magic"
@@ -6938,7 +6938,7 @@
                 },
                 "action->Frightful Presence": {
                     "name": "Frightful Presence",
-                    "description": "<p>90 feet. @Check[will|dc:34]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.FrightfulPresence]</p>"
+                    "description": "<p>90 feet. @Check[will|dc:34|options:area-effect,inflicts:frightened]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.FrightfulPresence]</p>"
                 },
                 "action->Breath Weapon": {
                     "name": "Breath Weapon",
@@ -6999,7 +6999,7 @@
                 },
                 "action->Snow Vision": {
                     "name": "Snow Vision",
-                    "description": "<p>Snow doesn't impair a white dragon's vision; it ignores concealment from snowfall.</p>"
+                    "description": "<p>Snow doesn't impair a white dragon's vision; it ignores @UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{Concealment} from snowfall.</p>"
                 },
                 "action->+1 Status to All Saves vs. Magic": {
                     "name": "+1 Status to All Saves vs. Magic"
@@ -7018,7 +7018,7 @@
                 },
                 "action->Frightful Presence": {
                     "name": "Frightful Presence",
-                    "description": "<p>90 feet. @Check[will|dc:34]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.FrightfulPresence]</p>"
+                    "description": "<p>90 feet. @Check[will|dc:34|options:area-effect,inflicts:frightened]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.FrightfulPresence]</p>"
                 },
                 "action->Breath Weapon": {
                     "name": "Breath Weapon",
@@ -7055,7 +7055,7 @@
                 },
                 "action->Snow Vision": {
                     "name": "Snow Vision",
-                    "description": "<p>Snow doesn't impair a white dragon's vision; it ignores concealment from snowfall.</p>"
+                    "description": "<p>Snow doesn't impair a white dragon's vision; it ignores @UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{Concealment} from snowfall.</p>"
                 },
                 "action->Freezing Blood": {
                     "name": "Freezing Blood",
@@ -7063,7 +7063,7 @@
                 },
                 "action->Frightful Presence": {
                     "name": "Frightful Presence",
-                    "description": "<p>90 feet. @Check[will|dc:20]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.FrightfulPresence]</p>"
+                    "description": "<p>90 feet. @Check[will|dc:20|options:area-effect,inflicts:frightened]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.FrightfulPresence]</p>"
                 },
                 "action->Breath Weapon": {
                     "name": "Breath Weapon",
@@ -7111,7 +7111,7 @@
                 },
                 "action->Snow Vision": {
                     "name": "Snow Vision",
-                    "description": "<p>Snow doesn't impair a white dragon's vision; it ignores concealment from snowfall.</p>"
+                    "description": "<p>Snow doesn't impair a white dragon's vision; it ignores @UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{Concealment} from snowfall.</p>"
                 },
                 "action->Freezing Blood": {
                     "name": "Freezing Blood",
@@ -7119,7 +7119,7 @@
                 },
                 "action->Frightful Presence": {
                     "name": "Frightful Presence",
-                    "description": "<p>90 feet. @Check[will|dc:20]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.FrightfulPresence]</p>"
+                    "description": "<p>90 feet. @Check[will|dc:20|options:area-effect,inflicts:frightened]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.FrightfulPresence]</p>"
                 },
                 "action->Breath Weapon": {
                     "name": "Breath Weapon",

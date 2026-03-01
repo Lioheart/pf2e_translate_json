@@ -193,7 +193,7 @@
                 },
                 "action->Critical Debilitating Strike": {
                     "name": "Critical Debilitating Strike",
-                    "description": "<p><strong>Trigger</strong> Alasen's Strike hits an @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} creature and deals damage.</p>\n<hr />\n<p><strong>Effect</strong> The target becomes @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 1} or takes a \u201310-foot status penalty to its Speeds, as chosen by Alasen. On a critical hit, the target must also attempt a @Check[fortitude|dc:34] save.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target is @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1} until the end of Alasen's next turn.</p>\n<p><strong>Failure</strong> The target is @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 2} until the end of Alasen's next turn.</p>\n<p><strong>Critical Failure</strong> The target is @UUID[Compendium.pf2e.conditionitems.Item.6uEgoh53GbXuHpTF]{Paralyzed} until the end of Alasen's next turn.</p>"
+                    "description": "<p><strong>Trigger</strong> Alasen's Strike hits an @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} creature and deals damage.</p>\n<hr />\n<p><strong>Effect</strong> The target becomes @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 1} or takes a –10-foot status penalty to its Speeds, as chosen by Alasen. On a critical hit, the target must also attempt a @Check[fortitude|dc:34] save.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target is @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1} until the end of Alasen's next turn.</p>\n<p><strong>Failure</strong> The target is @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 2} until the end of Alasen's next turn.</p>\n<p><strong>Critical Failure</strong> The target is @UUID[Compendium.pf2e.conditionitems.Item.6uEgoh53GbXuHpTF]{Paralyzed} until the end of Alasen's next turn.</p>"
                 },
                 "action->Curse of the Weretiger": {
                     "name": "Curse of the Weretiger",
@@ -284,12 +284,36 @@
             "name": "Amiri (Level 1, Kingmaker)",
             "gender": "She/Her",
             "items": {
+                "feat->Survey Wildlife": {
+                    "name": "Survey Wildlife",
+                    "description": "<p>You can study details in the wilderness to determine the presence of nearby creatures. You can spend 10 minutes assessing the area around you to find out what creatures are nearby, based on nests, scat, and marks on vegetation. Attempt a Survival check against a DC determined by the GM based on how obvious the signs are. On a success, you can attempt a Recall Knowledge check with a -2 penalty to learn more about the creatures just from these signs. If you're a master in Survival, you don't take the penalty.</p>"
+                },
                 "heritage->Versatile Heritage": {
                     "name": "Versatile Heritage",
                     "description": "<p>Humanity's versatility and ambition have fueled its ascendance to be the most common ancestry in most nations throughout the world. Select a general feat of your choice for which you meet the prerequisites (as with your ancestry feat, you can select this general feat at any point during character creation).</p>"
                 },
+                "feat->Diehard": {
+                    "name": "Diehard",
+                    "description": "<p>It takes more to kill you than most. You die from the dying condition at dying 5, rather than dying 4.</p>"
+                },
                 "lore->Warfare Lore": {
                     "name": "Warfare Lore"
+                },
+                "feat->Natural Ambition": {
+                    "name": "Natural Ambition",
+                    "description": "<p>You were raised to be ambitious and always reach for the stars, leading you to progress quickly in your chosen field. You gain a 1st-level class feat for your class. You must meet the prerequisites, but you can select the feat later in the character creation process in order to determine which prerequisites you meet.</p>"
+                },
+                "feat->Intimidating Glare": {
+                    "name": "Intimidating Glare",
+                    "description": "<p>You can @UUID[Compendium.pf2e.actionspf2e.Item.2u915NdUyQan6uKF]{Demoralize} with a mere glare. When you do, Demoralize loses the auditory trait and gains the visual trait, and you don't take a penalty if the creature doesn't understand your language.</p>"
+                },
+                "feat->Raging Intimidation": {
+                    "name": "Raging Intimidation",
+                    "description": "<p>Your fury fills your foes with fear. While you are raging, your Demoralize and Scare to Death actions (from the Intimidation skill and an Intimidation skill feat, respectively) gain the rage trait, allowing you to use them while raging. As soon as you meet the prerequisites for the skill feats Intimidating Glare and Scare to Death, you gain these feats.</p>"
+                },
+                "feat->Sudden Charge": {
+                    "name": "Sudden Charge",
+                    "description": "<p>With a quick sprint, you dash up to your foe and swing. Stride twice. If you end your movement within melee reach of at least one enemy, you can make a melee Strike against that enemy. You can use Sudden Charge while Burrowing, Climbing, Flying, or Swimming instead of Striding if you have the corresponding movement type.</p>"
                 },
                 "consumable->Elixir of Life (Lesser)": {
                     "name": "Elixir of Life (Lesser)",
@@ -297,6 +321,10 @@
                 },
                 "backpack->Belt Pouch": {
                     "name": "Belt Pouch"
+                },
+                "class->Barbarian": {
+                    "name": "Barbarian",
+                    "description": "<p><em>Rage consumes you in battle. You delight in wreaking havoc and using powerful weapons to carve through your enemies, relying on astonishing durability without needing complicated techniques or rigid training. Your rages draw upon a vicious instinct, which you might associate with an animal, a spirit, or some part of yourself. To many barbarians, brute force is a hammer and every problem looks like a nail, whereas others try to hold back the storm of emotions inside them and release their rage only when it matters most.</em></p>\n<p>@UUID[Compendium.pf2e.journals.JournalEntry.kzxu2dI7tFxv6Ix6.JournalEntryPage.lvuutBI9BSCU6cWe]{Barbarian}</p>"
                 },
                 "action->Rage": {
                     "name": "Rage",
@@ -308,12 +336,36 @@
             "name": "Amiri (Level 11, Kingmaker)",
             "gender": "She/Her",
             "items": {
+                "feat->Survey Wildlife": {
+                    "name": "Survey Wildlife",
+                    "description": "<p>You can study details in the wilderness to determine the presence of nearby creatures. You can spend 10 minutes assessing the area around you to find out what creatures are nearby, based on nests, scat, and marks on vegetation. Attempt a Survival check against a DC determined by the GM based on how obvious the signs are. On a success, you can attempt a Recall Knowledge check with a -2 penalty to learn more about the creatures just from these signs. If you're a master in Survival, you don't take the penalty.</p>"
+                },
                 "heritage->Versatile Heritage": {
                     "name": "Versatile Heritage",
                     "description": "<p>Humanity's versatility and ambition have fueled its ascendance to be the most common ancestry in most nations throughout the world. Select a general feat of your choice for which you meet the prerequisites (as with your ancestry feat, you can select this general feat at any point during character creation).</p>"
                 },
+                "feat->Diehard": {
+                    "name": "Diehard",
+                    "description": "<p>It takes more to kill you than most. You die from the dying condition at dying 5, rather than dying 4.</p>"
+                },
                 "lore->Warfare Lore": {
                     "name": "Warfare Lore"
+                },
+                "feat->Natural Ambition": {
+                    "name": "Natural Ambition",
+                    "description": "<p>You were raised to be ambitious and always reach for the stars, leading you to progress quickly in your chosen field. You gain a 1st-level class feat for your class. You must meet the prerequisites, but you can select the feat later in the character creation process in order to determine which prerequisites you meet.</p>"
+                },
+                "feat->Intimidating Glare": {
+                    "name": "Intimidating Glare",
+                    "description": "<p>You can @UUID[Compendium.pf2e.actionspf2e.Item.2u915NdUyQan6uKF]{Demoralize} with a mere glare. When you do, Demoralize loses the auditory trait and gains the visual trait, and you don't take a penalty if the creature doesn't understand your language.</p>"
+                },
+                "feat->Raging Intimidation": {
+                    "name": "Raging Intimidation",
+                    "description": "<p>Your fury fills your foes with fear. While you are raging, your Demoralize and Scare to Death actions (from the Intimidation skill and an Intimidation skill feat, respectively) gain the rage trait, allowing you to use them while raging. As soon as you meet the prerequisites for the skill feats Intimidating Glare and Scare to Death, you gain these feats.</p>"
+                },
+                "feat->Sudden Charge": {
+                    "name": "Sudden Charge",
+                    "description": "<p>With a quick sprint, you dash up to your foe and swing. Stride twice. If you end your movement within melee reach of at least one enemy, you can make a melee Strike against that enemy. You can use Sudden Charge while Burrowing, Climbing, Flying, or Swimming instead of Striding if you have the corresponding movement type.</p>"
                 },
                 "backpack->Belt Pouch": {
                     "name": "Belt Pouch"
@@ -325,6 +377,71 @@
                 "equipment->Coyote Cloak (Greater)": {
                     "name": "Coyote Cloak (Greater)",
                     "description": "<p>This dusty coat is made of mangy brown-and-gray coyote fur. You gain a +2 item bonus to Survival checks. If you critically succeed at your Survival check to Subsist, you can feed four times as many additional creatures.</p>"
+                },
+                "feat->Clever Improviser": {
+                    "name": "Clever Improviser",
+                    "description": "<p>You've learned how to handle situations when you're out of your depth. You gain the @UUID[Compendium.pf2e.feats-srd.Item.9jGaBxLUtevZYcZO]{Untrained Improvisation} general feat. In addition, you can attempt skill actions that normally require you to be trained, even if you are untrained.</p>"
+                },
+                "feat->Untrained Improvisation": {
+                    "name": "Untrained Improvisation",
+                    "description": "<p>You've learned how to handle situations when you're out of your depth. Your proficiency bonus to untrained skill checks is equal to half your level instead of +0. If you're 7th level or higher, the bonus increases to your full level instead. This doesn't allow you to use the skill's trained actions.</p>"
+                },
+                "feat->Haughty Obstinacy": {
+                    "name": "Haughty Obstinacy",
+                    "description": "<p>Your powerful ego makes it harder for others to order you around. If you roll a success on a saving throw against a mental effect that attempts to directly control your actions, you critically succeed instead. If a creature rolls a failure on a check to Coerce you using Intimidation, it gets a critical failure instead (so it can't try to Coerce you again for 1 week).</p>"
+                },
+                "feat->Toughness": {
+                    "name": "Toughness",
+                    "description": "<p>You can withstand more punishment than most before succumbing. Increase your maximum Hit Points by your level. The DC of recovery checks is equal to 9 + your dying condition value.</p>"
+                },
+                "feat->Fleet": {
+                    "name": "Fleet",
+                    "description": "<p>You move more quickly on foot. Your Speed increases by 5 feet.</p>"
+                },
+                "feat->Fast Recovery": {
+                    "name": "Fast Recovery",
+                    "description": "<p>Your body quickly bounces back from afflictions. You regain twice as many Hit Points from resting. Each time you succeed at a Fortitude save against an ongoing disease or poison, you reduce its stage by 2, or by 1 against a virulent disease or poison. Each critical success you achieve against an ongoing disease or poison reduces its stage by 3, or by 2 against a virulent disease or poison. In addition, you reduce the severity of your drained condition by 2 when you rest for a night instead of by 1.</p>",
+                    "rules": {
+                        "0": {
+                            "text": "If you roll a success on a Fortitude save against an ongoing posion or disease, reduce its stage by 2, or by 1 if its virulent. If you roll a critical success, reduce its stage by 3, or by 2 if its virulent."
+                        }
+                    }
+                },
+                "feat->Cleave": {
+                    "name": "Cleave",
+                    "description": "<p><strong>Trigger</strong> Your melee Strike kills a creature or knocks it unconscious, and another foe is adjacent to that creature.</p>\n<hr />\n<p>You swing clear through one foe and into another. Make a melee Strike against the second foe.</p>"
+                },
+                "feat->Great Cleave": {
+                    "name": "Great Cleave",
+                    "description": "<p>Your fury carries your weapon through multiple foes. When you Cleave, if your Strike also kills or knocks the target unconscious, you can continue to make melee Strikes until you make a Strike that doesn't kill or knock a creature unconscious, or until there are no creatures adjacent to the most recent creature you attacked while Cleaving, whichever comes first.</p>"
+                },
+                "feat->Shake it Off": {
+                    "name": "Shake it Off",
+                    "description": "<p>You concentrate on your rage, overcoming fear and fighting back sickness. Reduce your frightened condition value by 1, and attempt a Fortitude save to recover from the sickened condition as if you had spent an action retching; you reduce your sickened condition value by 1 on a failure (but not on a critical failure), by 2 on a success, or by 3 on a critical success.</p>"
+                },
+                "feat->Swipe": {
+                    "name": "Swipe",
+                    "description": "<p>You make a wide, arcing swing. Make a single melee Strike and compare the attack roll result to the ACs of up to two foes, each of whom must be within your melee reach and adjacent to the other. Roll damage only once and apply it to each creature you hit. A Swipe counts as two attacks for your multiple attack penalty. If you're using a weapon with the sweep trait, its modifier applies to all your Swipe attacks.</p>"
+                },
+                "feat->Intimidating Prowess": {
+                    "name": "Intimidating Prowess",
+                    "description": "<p>In situations where you can physically menace the target when you @UUID[Compendium.pf2e.actionspf2e.Item.tHCqgwjtQtzNqVvd]{Coerce} or @UUID[Compendium.pf2e.actionspf2e.Item.2u915NdUyQan6uKF]{Demoralize}, you gain a +1 circumstance bonus to your Intimidation check and you ignore the penalty for not sharing a language. If your Strength score is 20 or higher and you are a master in Intimidation, this bonus increases to +2.</p>"
+                },
+                "feat->Powerful Leap": {
+                    "name": "Powerful Leap",
+                    "description": "<p>When you Leap, you can jump 5 feet up with a vertical Leap, and you increase the distance you can jump horizontally by 5 feet.</p>"
+                },
+                "feat->Terrified Retreat": {
+                    "name": "Terrified Retreat",
+                    "description": "<p>When you critically succeed at the Demoralize action, if the target's level is lower than yours, the target is @UUID[Compendium.pf2e.conditionitems.Item.sDPxOjQ9kx2RZE8D]{Fleeing} for 1 round.</p>"
+                },
+                "feat->Titan Wrestler": {
+                    "name": "Titan Wrestler",
+                    "description": "<p>You can attempt to @UUID[Compendium.pf2e.actionspf2e.Item.Dt6B1slsBy8ipJu9]{Disarm}, @UUID[Compendium.pf2e.actionspf2e.Item.PMbdMWc2QroouFGD]{Grapple}, @UUID[Compendium.pf2e.actionspf2e.Item.7blmbDrQFNfdT731]{Shove}, or @UUID[Compendium.pf2e.actionspf2e.Item.ge56Lu1xXVFYUnLP]{Trip} creatures up to two sizes larger than you, or up to three sizes larger than you if you're legendary in Athletics.</p>"
+                },
+                "class->Barbarian": {
+                    "name": "Barbarian",
+                    "description": "<p><em>Rage consumes you in battle. You delight in wreaking havoc and using powerful weapons to carve through your enemies, relying on astonishing durability without needing complicated techniques or rigid training. Your rages draw upon a vicious instinct, which you might associate with an animal, a spirit, or some part of yourself. To many barbarians, brute force is a hammer and every problem looks like a nail, whereas others try to hold back the storm of emotions inside them and release their rage only when it matters most.</em></p>\n<p>@UUID[Compendium.pf2e.journals.JournalEntry.kzxu2dI7tFxv6Ix6.JournalEntryPage.lvuutBI9BSCU6cWe]{Barbarian}</p>"
                 },
                 "feat->Lightning Reflexes": {
                     "name": "Lightning Reflexes",
@@ -408,7 +525,7 @@
                 },
                 "equipment->Maestro's Lute (Lesser)": {
                     "name": "Maestro's Lute (Lesser)",
-                    "description": "<p>A <em>maestro's instrument</em> can be crafted in the form of any variety of handheld musical instruments. A <em>maestro's instrument</em> grants you a +1 item bonus to Performance checks while playing music with the instrument.</p><hr /><p><strong>Activate\u2014Charming Performance</strong> <span class=\"action-glyph\">2</span> (manipulate)</p>\n<p><strong>Frequency</strong> once per day</p>\n<p><strong>Effect</strong> You play the instrument, causing it to cast a DC 17 @UUID[Compendium.pf2e.spells-srd.Item.vLA0q0WOK2YPuJs6]{Charm} spell.</p><hr /><p><strong>Craft Requirements</strong> You must supply a casting of <em>charm</em> of the appropriate rank.</p>"
+                    "description": "<p>A <em>maestro's instrument</em> can be crafted in the form of any variety of handheld musical instruments. A <em>maestro's instrument</em> grants you a +1 item bonus to Performance checks while playing music with the instrument.</p><hr /><p><strong>Activate—Charming Performance</strong> <span class=\"action-glyph\">2</span> (manipulate)</p>\n<p><strong>Frequency</strong> once per day</p>\n<p><strong>Effect</strong> You play the instrument, causing it to cast a DC 17 @UUID[Compendium.pf2e.spells-srd.Item.vLA0q0WOK2YPuJs6]{Charm} spell.</p><hr /><p><strong>Craft Requirements</strong> You must supply a casting of <em>charm</em> of the appropriate rank.</p>"
                 },
                 "strike-melee->Dagger": {
                     "name": "Dagger"
@@ -647,7 +764,7 @@
             "items": {
                 "campaignFeature->Overrun": {
                     "name": "Overrun",
-                    "description": "<p><em><strong>Note</strong>: Basic cavalry armies know Overrun automatically, and must 'spend' their first tactic on it.</em></p>\n<hr />\n<p>Cavalry armies gain a +1 status bonus on weapon attacks against infantry and skirmisher armies, but they suffer a \u20131 status penalty on Maneuver and Morale saves against area attacks and mental attacks.</p>",
+                    "description": "<p><em><strong>Note</strong>: Basic cavalry armies know Overrun automatically, and must 'spend' their first tactic on it.</em></p>\n<hr />\n<p>Cavalry armies gain a +1 status bonus on weapon attacks against infantry and skirmisher armies, but they suffer a –1 status penalty on Maneuver and Morale saves against area attacks and mental attacks.</p>",
                     "rules": {
                         "0": {
                             "label": "vs Infantry and Skirmisher"
@@ -1084,22 +1201,7 @@
             }
         },
         "Catspaw Marauders": {
-            "name": "Catspaw Marauders",
-            "items": {
-                "campaignFeature->Ambush": {
-                    "name": "Ambush",
-                    "description": "<p>Your skirmishers are experts at ambushing. On the first round of a war encounter, if your turn occurs before any enemy army turns, you can choose to start the encounter with your army already engaged with an enemy army whose initiative result is lower than yours. If you do so, your army gains a +2 status bonus on the first Attack war action they make against that army on the first round of the encounter.</p>",
-                    "rules": {
-                        "0": {
-                            "label": "First Attack war action against ambushed opponent"
-                        }
-                    }
-                },
-                "campaignFeature->Sharpshooter": {
-                    "name": "Sharpshooter",
-                    "description": "<p>The commander drills the army in precision ranged attacks. You gain a +1 status bonus on attacks with ranged Strikes, but suffer a \u20132 status bonus on attacks with melee Strikes. At 9th level, the penalty to melee Strikes is reduced to \u20131, and at 15th level the penalty to melee Strikes is removed.</p>\n<p>The army can use the @UUID[Compendium.pf2e.kingmaker-features.Item.GIbm9qo8VuFgPywJ]{Covering Fire} tactical war action.</p>"
-                }
-            }
+            "name": "Catspaw Marauders"
         },
         "Centaur Scout": {
             "name": "Centaur Scout",
@@ -1465,7 +1567,7 @@
                 },
                 "action->Support Benefit": {
                     "name": "Support Benefit",
-                    "description": "<p>Until the start of Ekundayo's next turn, his Strikes that damage creatures Dog threatens give the target a \u20135-foot status penalty to its Speeds for 1 minute (-10 on a critical success).</p>"
+                    "description": "<p>Until the start of Ekundayo's next turn, his Strikes that damage creatures Dog threatens give the target a –5-foot status penalty to its Speeds for 1 minute (-10 on a critical success).</p>"
                 }
             }
         },
@@ -1541,35 +1643,15 @@
                     "name": "Tactical Training",
                     "description": "<p>The Drelev Irregulars can use the @UUID[Compendium.pf2e.kingmaker-features.Item.Z6jMZgAxI1zRO7Sl]{All-Out Assault}, @UUID[Compendium.pf2e.kingmaker-features.Item.8wjiF3ctXUjP9oyX]{Counterattack}, and @UUID[Compendium.pf2e.kingmaker-features.Item.G2eBcOnUHb3yT7JL]{Dirty Fighting} tactical actions.</p>"
                 },
-                "campaignFeature->All-Out Assault": {
-                    "name": "All-Out Assault",
-                    "description": "<p><strong>Requirement</strong> @UUID[Compendium.pf2e.kingmaker-features.Item.QRwIcmCEHpDQm9DO]{Merciless}</p>\n<hr />\n<p>Your army attacks with frightening vigor. Attempt a melee Strike against an enemy army's AC.</p>\n<p><strong>Critical Success</strong> Your army inflicts @Damage[3|domains:melee-damage,strike-damage] points of damage to the target army. If your army's next war action this turn is an attack war action against a different target army, you gain a +1 circumstance bonus to the Strike as your fury continues to the new target.</p>\n<p><strong>Success</strong> Your army deals @Damage[2|domains:melee-damage,strike-damage] points of damage to the target army.</p>\n<p><strong>Failure</strong> Your army falters, but still deals @Damage[1|domains:melee-damage,strike-damage] point of damage to the target army.</p>\n<p><strong>Critical Failure</strong> Your army deals no damage to the target army and becomes @UUID[Compendium.pf2e.kingmaker-features.Item.ibcMcEGRbPRtk9Pu]{Outflanked} until the start of its next turn.</p>",
-                    "rules": {
-                        "0": {
-                            "label": "All-Out Assault Followup Attack (Crit Success)"
-                        },
-                        "1": {
-                            "label": "All-Out Assault Followup (Crit Success)"
-                        }
-                    }
-                },
-                "campaignFeature->Counterattack": {
-                    "name": "Counterattack",
-                    "description": "<p><strong>Requirement</strong> @UUID[Compendium.pf2e.kingmaker-features.Item.mHWF5XwUi8RK2lET]{Flexible Tactics}</p>\n<p><strong>Trigger</strong> An army you are engaged with attempts a maneuver war action.</p>\n<hr />\n<p>Your army lashes out at the foe as they attempt to perform a maneuver. Attempt a melee Strike against the triggering army's AC. Counterattack doesn't count toward your multiple attack penalty, and your multiple attack penalty doesn't apply to this Strike.</p>\n<p><strong>Critical Success</strong> You inflict 1 point of damage on the army and increase its @UUID[Compendium.pf2e.kingmaker-features.Item.7LMDwpVijK7x5Jst]{Shaken} condition value by 1.</p>\n<p><strong>Success</strong> You inflict 1 point of damage on the army.</p>"
-                },
-                "campaignFeature->Dirty Fighting": {
-                    "name": "Dirty Fighting",
-                    "description": "<p><strong>Requirement</strong> @UUID[Compendium.pf2e.kingmaker-features.Item.mHWF5XwUi8RK2lET]{Flexible Tactics}</p>\n<hr />\n<p>Your army uses trickery, deception, and unfair tactics to attempt a devastating attack against an outflanked army. Attempt a melee Strike or a ranged Strike against the AC of a target outflanked army that is not distant.</p>\n<p><strong>Critical Success</strong> The target army becomes @UUID[Compendium.pf2e.kingmaker-features.Item.dmzpRlOrorEFUETl]{Weary 2} until the start of your next turn.</p>\n<p><strong>Success</strong> The target army becomes weary 1 until the start of your next turn.</p>\n<p><strong>Critical Failure</strong> Your attack deals no damage to the target army, which is emboldened by your failed attempt at dirty fighting. This reduces the target army's weary value by 1.</p>"
-                },
                 "campaignFeature->Unpredictable Movement": {
                     "name": "Unpredictable Movement",
-                    "description": "<p>It's difficult to do significant damage to the Drelev Irregulars with ranged attacks, as the mob moves about in a haphazard manner. All ranged attacks against the Drelev Irregulars suffer a \u20132 circumstance penalty as a result.</p>"
+                    "description": "<p>It's difficult to do significant damage to the Drelev Irregulars with ranged attacks, as the mob moves about in a haphazard manner. All ranged attacks against the Drelev Irregulars suffer a –2 circumstance penalty as a result.</p>"
                 }
             }
         },
         "Dropping Web Trap": {
             "name": "Dropping Web Trap",
-            "descriptionHazard": "<p>A 30-foot-wide rope bridge spans a 30-foot\u2011deep chasm between two crags on the mountainside.</p>",
+            "descriptionHazard": "<p>A 30-foot-wide rope bridge spans a 30-foot‑deep chasm between two crags on the mountainside.</p>",
             "disable": "<p>@Check[crafting|dc:15] or @Check[thievery|dc:18] to secure the bridge in place.</p>",
             "reset": "<p>1 hour</p>",
             "stealth": "<p>(expert)</p>",
@@ -1600,6 +1682,18 @@
                 "lore->Hunting Lore": {
                     "name": "Hunting Lore"
                 },
+                "feat->General Training": {
+                    "name": "General Training",
+                    "description": "<p>Your adaptability manifests in your mastery of a range of useful abilities. You gain a 1st-level general feat. You must meet the feat's prerequisites, but if you select this feat during character creation, you can select the feat later in the process in order to determine which prerequisites you meet.</p>\n<p><strong>Special</strong> You can select this feat multiple times, choosing a different feat each time.</p>"
+                },
+                "feat->Toughness": {
+                    "name": "Toughness",
+                    "description": "<p>You can withstand more punishment than most before succumbing. Increase your maximum Hit Points by your level. The DC of recovery checks is equal to 9 + your dying condition value.</p>"
+                },
+                "feat->Hunted Shot": {
+                    "name": "Hunted Shot",
+                    "description": "<p><strong>Frequency</strong> once per round</p>\n<p><strong>Requirements</strong> You are wielding a ranged weapon with reload 0</p>\n<hr />\n<p>You take two quick shots against the one you hunt. Make two Strikes against your prey with the required weapon. If both hit the same creature, combine their damage for the purpose of resistances and weaknesses. Apply your multiple attack penalty to each Strike normally.</p>"
+                },
                 "weapon->Alchemist's Fire (Lesser)": {
                     "name": "Alchemist's Fire (Lesser)",
                     "description": "<p><strong>Activate</strong> <span class=\"action-glyph\">A</span> Strike</p>\n<p>Alchemist's fire is a combination of volatile liquids that ignite when exposed to air. Alchemist's fire deals 1d8 fire damage, 1 persistent fire damage, and 1 fire splash damage.</p>"
@@ -1611,6 +1705,10 @@
                 "equipment->Basic Woodworker's Book": {
                     "name": "Basic Woodworker's Book",
                     "description": "<p>This book contains the formulas for Crafting the common items in Chapter 6 of the core rulebook.</p>"
+                },
+                "class->Ranger": {
+                    "name": "Ranger",
+                    "description": "<p><em>Some rangers believe civilization wears down the soul, but still needs to be protected from wild creatures. Others say nature needs to be protected from the greedy, who wish to tame its beauty and plunder its treasures. You could champion either goal, or both. You might be a scout, tracker, or hunter of fugitives or beasts, haunting the edge of civilization or exploring the wilds. You know how to live off the land and are skilled at spotting and taking down both opportune prey and hated enemies.</em></p>\n<p><em>@UUID[Compendium.pf2e.journals.JournalEntry.kzxu2dI7tFxv6Ix6.JournalEntryPage.gdEmPPRYhRai7I1N]{Ranger}</em></p>"
                 },
                 "action->Hunt Prey": {
                     "name": "Hunt Prey",
@@ -1638,6 +1736,18 @@
                 "lore->Hunting Lore": {
                     "name": "Hunting Lore"
                 },
+                "feat->General Training": {
+                    "name": "General Training",
+                    "description": "<p>Your adaptability manifests in your mastery of a range of useful abilities. You gain a 1st-level general feat. You must meet the feat's prerequisites, but if you select this feat during character creation, you can select the feat later in the process in order to determine which prerequisites you meet.</p>\n<p><strong>Special</strong> You can select this feat multiple times, choosing a different feat each time.</p>"
+                },
+                "feat->Toughness": {
+                    "name": "Toughness",
+                    "description": "<p>You can withstand more punishment than most before succumbing. Increase your maximum Hit Points by your level. The DC of recovery checks is equal to 9 + your dying condition value.</p>"
+                },
+                "feat->Hunted Shot": {
+                    "name": "Hunted Shot",
+                    "description": "<p><strong>Frequency</strong> once per round</p>\n<p><strong>Requirements</strong> You are wielding a ranged weapon with reload 0</p>\n<hr />\n<p>You take two quick shots against the one you hunt. Make two Strikes against your prey with the required weapon. If both hit the same creature, combine their damage for the purpose of resistances and weaknesses. Apply your multiple attack penalty to each Strike normally.</p>"
+                },
                 "weapon->Alchemist's Fire (Lesser)": {
                     "name": "Alchemist's Fire (Lesser)",
                     "description": "<p><strong>Activate</strong> <span class=\"action-glyph\">A</span> Strike</p>\n<p>Alchemist's fire is a combination of volatile liquids that ignite when exposed to air. Alchemist's fire deals 1d8 fire damage, 1 persistent fire damage, and 1 fire splash damage.</p>"
@@ -1662,6 +1772,14 @@
                     "name": "Bag of Holding (Type I)",
                     "description": "<p>Though it appears to be a cloth sack decorated with panels of richly colored silk or stylish embroidery, a <em>bag of holding</em> opens into an extradimensional space larger than its outside dimensions. The Bulk held inside the bag doesn't change the Bulk of the <em>bag of holding</em> itself. The amount of Bulk the bag's extradimensional space can hold depends on its type.</p>\n<p>You can Interact with the <em>bag of holding</em> to put items in or remove them just like a mundane sack. Though the bag can hold a great amount of material, an object still needs to be able to fit through the opening of the sack to be stored inside.</p>\n<p>If the bag is overloaded or broken, it ruptures and is ruined, causing the items inside to be lost forever. If it's turned inside out, the items inside spill out unharmed, but the bag must be put right before it can be used again. A living creature placed inside the bag has enough air for 10 minutes before it begins to suffocate, and it can attempt to Escape against a DC of 13. An item inside the bag provides no benefits unless it's retrieved first. An item in the bag can't be detected by magic that detects only things on the same plane.</p>\n<p><strong>Capacity</strong> 25 Bulk</p>"
                 },
+                "feat->Natural Ambition": {
+                    "name": "Natural Ambition",
+                    "description": "<p>You were raised to be ambitious and always reach for the stars, leading you to progress quickly in your chosen field. You gain a 1st-level class feat for your class. You must meet the prerequisites, but you can select the feat later in the character creation process in order to determine which prerequisites you meet.</p>"
+                },
+                "feat->Incredible Initiative": {
+                    "name": "Incredible Initiative",
+                    "description": "<p>You react more quickly than others can. You gain a +2 circumstance bonus to initiative rolls.</p>"
+                },
                 "feat->Animal Companion (Ranger)": {
                     "name": "Animal Companion (Ranger)",
                     "description": "<p>You gain the service of a young animal companion that travels with you and obeys simple commands. When you @UUID[Compendium.pf2e.actionspf2e.Item.JYi4MnsdFu618hPm]{Hunt Prey}, your animal companion gains the action's benefits and your hunter's edge benefit if you have one.</p>"
@@ -1669,6 +1787,26 @@
                 "feat->Mature Animal Companion (Ranger)": {
                     "name": "Mature Animal Companion (Ranger)",
                     "description": "<p>Your animal companion grows up, becoming a mature animal companion and gaining additional capabilities. If you have the @UUID[Compendium.pf2e.actionspf2e.Item.JYi4MnsdFu618hPm]{Hunt Prey} action, your animal companion assaults the prey even without your orders.</p>\n<p>During an encounter, even if you don't use the @UUID[Compendium.pf2e.actionspf2e.Item.q9nbyIF0PEBqMtYe]{Command an Animal} action, your animal companion can still use 1 action that round on your turn to Stride toward or Strike your prey.</p>"
+                },
+                "feat->Magical Crafting": {
+                    "name": "Magical Crafting",
+                    "description": "<p>You can Craft magic items, though some have other requirements, as listed in Chapter 11. When you select this feat, you gain formulas for four common magic items of 2nd level or lower.</p>"
+                },
+                "feat->Titan Wrestler": {
+                    "name": "Titan Wrestler",
+                    "description": "<p>You can attempt to @UUID[Compendium.pf2e.actionspf2e.Item.Dt6B1slsBy8ipJu9]{Disarm}, @UUID[Compendium.pf2e.actionspf2e.Item.PMbdMWc2QroouFGD]{Grapple}, @UUID[Compendium.pf2e.actionspf2e.Item.7blmbDrQFNfdT731]{Shove}, or @UUID[Compendium.pf2e.actionspf2e.Item.ge56Lu1xXVFYUnLP]{Trip} creatures up to two sizes larger than you, or up to three sizes larger than you if you're legendary in Athletics.</p>"
+                },
+                "feat->Train Animal": {
+                    "name": "Train Animal",
+                    "description": "<p>You spend time teaching an animal to do a certain action. You can either select a basic action the animal already knows how to do (typically those listed in the Command an Animal action) or attempt to teach the animal a new basic action. The GM determines the DC of any check required and the amount of time the training takes (usually at least a week). It's usually impossible to teach an animal a trick that uses critical thinking. If you're expert, master, or legendary in Nature, you might be able to train more unusual creatures, at the GM's discretion.</p>\n<p><strong>Success</strong> The animal learns the action. If it was an action the animal already knew, you can Command the Animal to take that action without attempting a Nature check. If it was a new basic action, add that action to the actions the animal can take when Commanded, but you must still roll.</p>\n<p><strong>Failure</strong> The animal doesn't learn the trick.</p>"
+                },
+                "feat->Giant Hunter": {
+                    "name": "Giant Hunter",
+                    "description": "<p>You have studied giants and hunt them with efficiency. When you roll initiative and can see a giant, you can @UUID[Compendium.pf2e.actionspf2e.Item.JYi4MnsdFu618hPm]{Hunt Prey} as a free action, designating that enemy as your prey.</p>\n<p>You can use this free action even if you haven't identified the giant yet with Recall Knowledge. The benefit doesn't apply against giants disguised as other creatures, and the GM determines whether it applies against a creature disguised as a giant.</p>"
+                },
+                "class->Ranger": {
+                    "name": "Ranger",
+                    "description": "<p><em>Some rangers believe civilization wears down the soul, but still needs to be protected from wild creatures. Others say nature needs to be protected from the greedy, who wish to tame its beauty and plunder its treasures. You could champion either goal, or both. You might be a scout, tracker, or hunter of fugitives or beasts, haunting the edge of civilization or exploring the wilds. You know how to live off the land and are skilled at spotting and taking down both opportune prey and hated enemies.</em></p>\n<p><em>@UUID[Compendium.pf2e.journals.JournalEntry.kzxu2dI7tFxv6Ix6.JournalEntryPage.gdEmPPRYhRai7I1N]{Ranger}</em></p>"
                 },
                 "feat->Trackless Step": {
                     "name": "Trackless Step",
@@ -1880,6 +2018,10 @@
                 },
                 "equipment->Ragged Robes": {
                     "name": "Ragged Robes"
+                },
+                "condition->Drained": {
+                    "name": "Drained",
+                    "description": "<p>When a creature successfully drains you of blood or life force, you become less healthy. Drained always includes a value. You take a status penalty equal to your drained value on Constitution-based checks, such as Fortitude saves. You also lose a number of Hit Points equal to your level (minimum 1) times the drained value, and your maximum Hit Points are reduced by the same amount. For example, if you're hit by an effect that inflicts drained 3 and you're a 3rd-level character, you lose 9 Hit Points and reduce your maximum Hit Points by 9. Losing these Hit Points doesn't count as taking damage.</p>\n<p>Each time you get a full night's rest, your drained value decreases by 1. This increases your maximum Hit Points, but you don't immediately recover the lost Hit Points.</p>"
                 },
                 "strike-melee->Fist": {
                     "name": "Fist"
@@ -2176,14 +2318,6 @@
                 "campaignFeature->Tactical Training": {
                     "name": "Tactical Training",
                     "description": "<p>The First World Army can use the following tactical actions: @UUID[Compendium.pf2e.kingmaker-features.Item.8wjiF3ctXUjP9oyX]{Counterattack}, @UUID[Compendium.pf2e.kingmaker-features.Item.G2eBcOnUHb3yT7JL]{Dirty Fighting}, @UUID[Compendium.pf2e.kingmaker-features.Item.Hi4LKGOKe6yMDOH5]{Feint}, and @UUID[Compendium.pf2e.kingmaker-features.Item.ggVahjiAlVICpiPA]{Taunt}.</p>\n<hr />\n<p><em><strong>Note</strong>: This tactic also grants the army a +1 bonus to attacks in order to keep its attack bonus in line with the statistics given in the Kingmaker adventure.</em></p>"
-                },
-                "campaignFeature->Counterattack": {
-                    "name": "Counterattack",
-                    "description": "<p><strong>Requirement</strong> @UUID[Compendium.pf2e.kingmaker-features.Item.mHWF5XwUi8RK2lET]{Flexible Tactics}</p>\n<p><strong>Trigger</strong> An army you are engaged with attempts a maneuver war action.</p>\n<hr />\n<p>Your army lashes out at the foe as they attempt to perform a maneuver. Attempt a melee Strike against the triggering army's AC. Counterattack doesn't count toward your multiple attack penalty, and your multiple attack penalty doesn't apply to this Strike.</p>\n<p><strong>Critical Success</strong> You inflict 1 point of damage on the army and increase its @UUID[Compendium.pf2e.kingmaker-features.Item.7LMDwpVijK7x5Jst]{Shaken} condition value by 1.</p>\n<p><strong>Success</strong> You inflict 1 point of damage on the army.</p>"
-                },
-                "campaignFeature->Dirty Fighting": {
-                    "name": "Dirty Fighting",
-                    "description": "<p><strong>Requirement</strong> @UUID[Compendium.pf2e.kingmaker-features.Item.mHWF5XwUi8RK2lET]{Flexible Tactics}</p>\n<hr />\n<p>Your army uses trickery, deception, and unfair tactics to attempt a devastating attack against an outflanked army. Attempt a melee Strike or a ranged Strike against the AC of a target outflanked army that is not distant.</p>\n<p><strong>Critical Success</strong> The target army becomes @UUID[Compendium.pf2e.kingmaker-features.Item.dmzpRlOrorEFUETl]{Weary 2} until the start of your next turn.</p>\n<p><strong>Success</strong> The target army becomes weary 1 until the start of your next turn.</p>\n<p><strong>Critical Failure</strong> Your attack deals no damage to the target army, which is emboldened by your failed attempt at dirty fighting. This reduces the target army's weary value by 1.</p>"
                 }
             }
         },
@@ -2217,6 +2351,10 @@
                 "equipment->Religious Symbol of Yog-Sothoth": {
                     "name": "Religious Symbol of Yog-Sothoth",
                     "description": "<p>This piece of wood or silver is emblazoned with an image representing a deity. Some divine spellcasters, such as clerics, can use a religious symbol of their deity as a divine focus to use certain abilities and cast some spells. A religious symbol must be held in one hand to use it.</p>"
+                },
+                "condition->Quickened": {
+                    "name": "Quickened",
+                    "description": "<p>You gain 1 additional action at the start of your turn each round. Many effects that make you quickened specify the types of actions you can use with this additional action. If you become quickened from multiple sources, you can use the extra action you've been granted for any single action allowed by any of the effects that made you quickened. Because quickened has its effect at the start of your turn, you don't immediately gain actions if you become quickened during your turn.</p>"
                 },
                 "strike-melee->Staff": {
                     "name": "Staff"
@@ -2579,6 +2717,10 @@
                 "armor->Lice-Infested Furs": {
                     "name": "Lice-Infested Furs"
                 },
+                "condition->Blinded": {
+                    "name": "Blinded",
+                    "description": "<p>You can't see. All normal terrain is difficult terrain to you. You can't detect anything using vision. You automatically critically fail Perception checks that require you to be able to see, and if vision is your only precise sense, you take a -4 status penalty to Perception checks. You are immune to visual effects. Blinded overrides @UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]{Dazzled}.</p>"
+                },
                 "action->Blinded": {
                     "name": "Blinded",
                     "description": "<p>Gromog's eyes have been wounded by Linzi. In time, he'll recover his eyesight (mostly), but for the duration of this combat he is @UUID[Compendium.pf2e.conditionitems.Item.XgEqL1kFApUbl5Z2]{Blinded}</p>"
@@ -2637,7 +2779,7 @@
                 },
                 "action->Dramatic Disarm": {
                     "name": "Dramatic Disarm",
-                    "description": "<p>If Baron Drelev scores a critical success on an Athletics check to [[/act disarm]] an opponent, he can choose to have the disarmed item fly [[/gmr (1d4*5) #feet]]{1d4 \u00d7 5 feet} in a random direction rather than have it fall to the ground in the opponent's space. If this causes the item to land in a space occupied by a creature with at least one free hand, that creature can attempt a @Check[reflex|dc:20] save to catch the item (otherwise it falls to the ground in that space).</p>"
+                    "description": "<p>If Baron Drelev scores a critical success on an Athletics check to [[/act disarm]] an opponent, he can choose to have the disarmed item fly [[/gmr (1d4*5) #feet]]{1d4 × 5 feet} in a random direction rather than have it fall to the ground in the opponent's space. If this causes the item to land in a space occupied by a creature with at least one free hand, that creature can attempt a @Check[reflex|dc:20] save to catch the item (otherwise it falls to the ground in that space).</p>"
                 },
                 "action->Harrying Swordfighter": {
                     "name": "Harrying Swordfighter",
@@ -2907,7 +3049,7 @@
                 },
                 "action->Focused Assault": {
                     "name": "Focused Assault",
-                    "description": "<p>The hydra attacks a single target with its heads, overwhelming its foe with multiple attacks and leaving almost nowhere to dodge. The hydra Strikes with its fangs. On a successful attack, the hydra deals damage from its fangs Strike to the target, plus an additional [[/r 1d6]] damage for every head it has beyond the first. Even on a failed attack, the hydra deals the damage from one fangs Strike to the target creature, though it still misses completely on a critical failure. This counts toward the hydra's multiple attack penalty as a number of attacks equal to the number of heads the hydra has.</p>"
+                    "description": "<p>The hydra attacks a single target with its heads, overwhelming its foe with multiple attacks and leaving almost nowhere to dodge. The hydra Strikes with its fangs. On a successful attack, the hydra deals damage from its fangs Strike to the target, plus an additional 1d6 damage for every head it has beyond the first. Even on a failed attack, the hydra deals the damage from one fangs Strike to the target creature, though it still misses completely on a critical failure. This counts toward the hydra's multiple attack penalty as a number of attacks equal to the number of heads the hydra has.</p>"
                 },
                 "action->Storm of Jaws": {
                     "name": "Storm of Jaws",
@@ -3011,7 +3153,7 @@
                 },
                 "action->Frightful Presence": {
                     "name": "Frightful Presence",
-                    "description": "<p>90 feet. @Check[will|dc:41]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.FrightfulPresence]</p>"
+                    "description": "<p>90 feet. @Check[will|dc:41|options:area-effect,inflicts:frightened]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.FrightfulPresence]</p>"
                 },
                 "action->Tail Lash": {
                     "name": "Tail Lash",
@@ -3046,7 +3188,7 @@
                 },
                 "equipment->The Inward Flowing Source (Spellbook)": {
                     "name": "The Inward Flowing Source (Spellbook)",
-                    "description": "<p>Contains all prepared spells plus an additional 4 spells of each level of the GM's choice\u2014including @UUID[Compendium.pf2e.spells-srd.Item.Azoh0BSoCASrA1lr]{Lock}</p>\n<hr />\n<p>A spellbook holds the written knowledge necessary to learn and prepare various spells, a necessity for wizards (who typically get one for free) and a useful luxury for other spellcasters looking to learn additional spells. Each spellbook can hold up to 100 spells. The Price listed is for a blank spellbook.</p>"
+                    "description": "<p>Contains all prepared spells plus an additional 4 spells of each level of the GM's choice—including @UUID[Compendium.pf2e.spells-srd.Item.Azoh0BSoCASrA1lr]{Lock}</p>\n<hr />\n<p>A spellbook holds the written knowledge necessary to learn and prepare various spells, a necessity for wizards (who typically get one for free) and a useful luxury for other spellcasters looking to learn additional spells. Each spellbook can hold up to 100 spells. The Price listed is for a blank spellbook.</p>"
                 },
                 "strike-melee->Staff": {
                     "name": "Staff"
@@ -3322,6 +3464,10 @@
                     "name": "Scholar (Nature)",
                     "description": "<p>You have a knack for learning, and sequestered yourself from the outside world to learn all you could. You read about so many wondrous places and things in your books, and always dreamed about one day seeing the real things. Eventually, that curiosity led you to leave your studies and become an adventurer.</p>\n<p>Choose two ability boosts. One must be to Intelligence or Wisdom, and one is a free ability boost.</p>\n<p>You're trained in your choice of the Arcana, Nature, Occultism, or Religion skill, and the Academia Lore skill. You gain the @UUID[Compendium.pf2e.feats-srd.Item.W6Gl9ePmItfDHji0]{Assurance} skill feat in your chosen skill.</p>"
                 },
+                "feat->Assurance": {
+                    "name": "Assurance",
+                    "description": "<p>Even in the worst circumstances, you can perform basic tasks. Choose a skill you're trained in. You can forgo rolling a skill check for that skill to instead receive a result of 10 + your proficiency bonus (do not apply any other bonuses, penalties, or modifiers).</p>\n<hr />\n<p><strong>Special</strong> You can select this feat multiple times. Each time, choose a different skill and gain the benefits for that skill.</p>"
+                },
                 "lore->Academia Lore": {
                     "name": "Academia Lore"
                 },
@@ -3370,6 +3516,22 @@
                 "spellcastingEntry->Primal Innate Spells": {
                     "name": "Primal Innate Spells"
                 },
+                "feat->Fey Fellowship": {
+                    "name": "Fey Fellowship",
+                    "description": "<p>Your enhanced fey connection affords you a warmer reception from creatures of the First World as well as tools to foil their tricks. You gain a +2 circumstance bonus to both Perception checks and saving throws against fey. In addition, whenever you meet a fey creature in a social situation, you can immediately attempt a Diplomacy check to Make an Impression on that creature rather than needing to converse for 1 minute. You take a -5 penalty to the check. If you fail, you can engage in 1 minute of conversation and attempt a new check at the end of that time rather than accepting the failure or critical failure result.</p>\n<p><strong>Special</strong> If you have the Glad-Hand skill feat, you don't take the penalty on your immediate Diplomacy check if the target is a fey.</p>"
+                },
+                "feat->Far Lobber": {
+                    "name": "Far Lobber",
+                    "description": "<p>You've learned how to throw a longer distance. When you throw an alchemical bomb, it has a range increment of 30 feet instead of the usual 20 feet.</p>"
+                },
+                "class->Alchemist": {
+                    "name": "Alchemist",
+                    "description": "<p><em>There's no sight more beautiful to you than a strange brew bubbling in a beaker, and you consume your ingenious elixirs with abandon. You're fascinated by uncovering the secrets of science and the natural world, and you're constantly experimenting in your lab or on the go with inventive concoctions for every eventuality. You are fearless in the face of risk, hurling explosive or toxic creations at your foes. Your unique path toward greatness is lined with alchemical brews that push your mind and body to their limits.</em></p>\n<p>@UUID[Compendium.pf2e.journals.JournalEntry.kzxu2dI7tFxv6Ix6.JournalEntryPage.Om4e4tsgNWrComie]{Alchemist}</p>"
+                },
+                "feat->Alchemical Crafting": {
+                    "name": "Alchemical Crafting",
+                    "description": "<p>You can use the Craft activity to create alchemical items. When you select this feat, you immediately add the formulas for four common 1st-level alchemical items to your formula book.</p>"
+                },
                 "action->Quick Alchemy": {
                     "name": "Quick Alchemy",
                     "description": "<p><strong>Cost</strong> 1 batch of infused reagents</p>\n<p><strong>Requirements</strong> You have the formula for the alchemical item you're creating, and you're either holding or wearing the @UUID[Compendium.pf2e.equipment-srd.Item.4ftXXUCBHcf4b0MH]{Alchemist's Toolkit}.</p>\n<hr />\n<p>You swiftly mix up a short-lived alchemical item to use at a moment's notice. You create a single alchemical consumable item of your advanced alchemy level or lower that's in your formula book without having to spend the normal monetary cost in alchemical reagents or needing to attempt a Crafting check. This item has the infused trait, but it remains potent only until the start of your next turn.</p>"
@@ -3387,6 +3549,10 @@
                 "background->Scholar (Nature)": {
                     "name": "Scholar (Nature)",
                     "description": "<p>You have a knack for learning, and sequestered yourself from the outside world to learn all you could. You read about so many wondrous places and things in your books, and always dreamed about one day seeing the real things. Eventually, that curiosity led you to leave your studies and become an adventurer.</p>\n<p>Choose two ability boosts. One must be to Intelligence or Wisdom, and one is a free ability boost.</p>\n<p>You're trained in your choice of the Arcana, Nature, Occultism, or Religion skill, and the Academia Lore skill. You gain the @UUID[Compendium.pf2e.feats-srd.Item.W6Gl9ePmItfDHji0]{Assurance} skill feat in your chosen skill.</p>"
+                },
+                "feat->Assurance": {
+                    "name": "Assurance",
+                    "description": "<p>Even in the worst circumstances, you can perform basic tasks. Choose a skill you're trained in. You can forgo rolling a skill check for that skill to instead receive a result of 10 + your proficiency bonus (do not apply any other bonuses, penalties, or modifiers).</p>\n<hr />\n<p><strong>Special</strong> You can select this feat multiple times. Each time, choose a different skill and gain the benefits for that skill.</p>"
                 },
                 "lore->Academia Lore": {
                     "name": "Academia Lore"
@@ -3428,6 +3594,14 @@
                 "spellcastingEntry->Primal Innate Spells": {
                     "name": "Primal Innate Spells"
                 },
+                "feat->Fey Fellowship": {
+                    "name": "Fey Fellowship",
+                    "description": "<p>Your enhanced fey connection affords you a warmer reception from creatures of the First World as well as tools to foil their tricks. You gain a +2 circumstance bonus to both Perception checks and saving throws against fey. In addition, whenever you meet a fey creature in a social situation, you can immediately attempt a Diplomacy check to Make an Impression on that creature rather than needing to converse for 1 minute. You take a -5 penalty to the check. If you fail, you can engage in 1 minute of conversation and attempt a new check at the end of that time rather than accepting the failure or critical failure result.</p>\n<p><strong>Special</strong> If you have the Glad-Hand skill feat, you don't take the penalty on your immediate Diplomacy check if the target is a fey.</p>"
+                },
+                "feat->Far Lobber": {
+                    "name": "Far Lobber",
+                    "description": "<p>You've learned how to throw a longer distance. When you throw an alchemical bomb, it has a range increment of 30 feet instead of the usual 20 feet.</p>"
+                },
                 "backpack->Bag of Holding (Type II)": {
                     "name": "Bag of Holding (Type II)",
                     "description": "<p>Though it appears to be a cloth sack decorated with panels of richly colored silk or stylish embroidery, a <em>bag of holding</em> opens into an extradimensional space larger than its outside dimensions. The Bulk held inside the bag doesn't change the Bulk of the <em>bag of holding</em> itself. The amount of Bulk the bag's extradimensional space can hold depends on its type.</p>\n<p>You can Interact with the <em>bag of holding</em> to put items in or remove them just like a mundane sack. Though the bag can hold a great amount of material, an object still needs to be able to fit through the opening of the sack to be stored inside.</p>\n<p>If the bag is overloaded or broken, it ruptures and is ruined, causing the items inside to be lost forever. If it's turned inside out, the items inside spill out unharmed, but the bag must be put right before it can be used again. A living creature placed inside the bag has enough air for 10 minutes before it begins to suffocate, and it can attempt to Escape against a DC of 13. An item inside the bag provides no benefits unless it's retrieved first. An item in the bag can't be detected by magic that detects only things on the same plane.</p>\n<p><strong>Capacity</strong> 50 Bulk</p>"
@@ -3436,9 +3610,54 @@
                     "name": "Ring of Energy Resistance (Fire)",
                     "description": "<p>This ring grants you resistance 5 against one type of energy damage: acid, cold, electricity, fire, or sonic. Each ring is crafted to protect against a particular type of energy damage, and its design usually embodies the type of energy it protects the wearer from in some way. For instance, a <em>ring of fire resistance</em> might be capped with a ruby, whereas a <em>ring of cold resistance</em> features a sapphire instead.</p>"
                 },
+                "feat->First World Magic": {
+                    "name": "First World Magic",
+                    "description": "<p>Your connection to the First World grants you a primal innate spell, much like those of the fey. Choose one cantrip from the primal spell list. You can cast this spell as a primal innate spell at will. A cantrip is heightened to a spell rank equal to half your level rounded up.</p>"
+                },
+                "feat->Calculated Splash": {
+                    "name": "Calculated Splash",
+                    "description": "<p>You have calculated all the angles to maximize a bomb's splash. When you throw an alchemical bomb with the splash trait, you can cause the bomb to deal splash damage equal to your Intelligence modifier (minimum 0) instead of the normal amount.</p>"
+                },
+                "feat->Quick Bomber": {
+                    "name": "Quick Bomber",
+                    "description": "<p>You keep your bombs in easy-to-reach pouches from which you draw without thinking. You @UUID[Compendium.pf2e.actionspf2e.Item.pvQ5rY2zrtPI614F]{Interact} to draw a bomb, then Strike with it.</p>"
+                },
+                "feat->Directional Bombs": {
+                    "name": "Directional Bombs",
+                    "description": "<p>You can lob bombs with great force and a precise trajectory to angle the splash in a cone spraying in a single direction. When throwing an alchemical bomb with the splash trait, instead of splashing all squares adjacent to the target, you can treat the target's space as the first affected square of a @Template[cone|distance:15] directed away from you, potentially allowing you to avoid allies and splash deeper into enemy lines. If the target takes up more than a single square, the target's square closest to you is the first affected square of the cone.</p>"
+                },
+                "feat->Sticky Bomb": {
+                    "name": "Sticky Bomb",
+                    "description": "<p><strong>Frequency</strong> once per round</p>\n<p><strong>Trigger</strong> You use @UUID[Compendium.pf2e.classfeatures.Item.sPtl05wwTpqFI0lL]{Quick Alchemy} to craft an alchemical bomb, and that bomb's level is at least 2 levels lower than your advanced alchemy level</p>\n<hr />\n<p>You mix in an additive to make your bomb's contents adhere to the target and continue to deal damage.</p>\n<p>A creature that takes a direct hit from one of your sticky bombs also takes persistent damage equal to and of the same type as the bomb's splash damage. If the bomb already deals persistent damage, combine the two amounts.</p>",
+                    "rules": {
+                        "1": {
+                            "text": "If you hit, your bomb deals persistent damage equal to, and of the same type, as the bomb's splash damage."
+                        }
+                    }
+                },
+                "feat->Incredible Initiative": {
+                    "name": "Incredible Initiative",
+                    "description": "<p>You react more quickly than others can. You gain a +2 circumstance bonus to initiative rolls.</p>"
+                },
+                "feat->Toughness": {
+                    "name": "Toughness",
+                    "description": "<p>You can withstand more punishment than most before succumbing. Increase your maximum Hit Points by your level. The DC of recovery checks is equal to 9 + your dying condition value.</p>"
+                },
                 "feat->Specialty Crafting (Alchemy)": {
                     "name": "Specialty Crafting (Alchemy)",
                     "description": "<p>Your training focused on Crafting one particular kind of item. You gain a +1 circumstance bonus to Crafting checks to Craft alchemical items. If you are a master in Crafting, this bonus increases to +2.</p>\n<hr />\n<p><strong>Sample Items</strong> Alchemical Items such as Elixirs</p>\n<p>If it's unclear whether the specialty applies, the GM decides. Some specialties might apply only partially. For example, if you were making a morningstar and had specialty in woodworking, the GM might give you half your bonus because the item requires both blacksmithing and woodworking.</p>"
+                },
+                "feat->Unmistakable Lore": {
+                    "name": "Unmistakable Lore",
+                    "description": "<p>You never get information about your areas of expertise wrong. When you Recall Knowledge using any Lore subcategory in which you're trained, if you roll a critical failure, you get a failure instead. If you're a master in a Lore subcategory, on a critical success, you gain even more information or context than usual.</p>"
+                },
+                "feat->Multilingual": {
+                    "name": "Multilingual",
+                    "description": "<p>You easily pick up new languages. You learn two new languages, chosen from common languages, uncommon languages, and any others you have access to. You learn an additional language if you are or become a master in Society and again if you are or become legendary.</p>\n<p><strong>Special</strong> You can select this feat multiple times. Each time, you learn additional languages.</p>"
+                },
+                "feat->Inventor": {
+                    "name": "Inventor",
+                    "description": "<p>You are a genius at Crafting, easily able to determine how things are made and create new inventions. You can spend downtime to invent a common formula that you don't know. This works just like the Craft activity: you spend half the Price of the formula up front, attempt a Crafting check, and on a success either finish the formula by paying the difference or work for longer to decrease the Price. The difference is that you spend the additional time in research, design, and development, rather than in creating an item. Once it's complete, you add the new formula you invented to your formula book.</p>"
                 },
                 "weapon->Acid Flask (Moderate)": {
                     "name": "Acid Flask (Moderate)",
@@ -3455,6 +3674,14 @@
                 "effect->Effect: Paizo Adjustment": {
                     "name": "Effect: Paizo Adjustment",
                     "description": "<p>This subtracts 1 to all attacks to match the values printed in the Kingmaker Companion Guide</p>"
+                },
+                "class->Alchemist": {
+                    "name": "Alchemist",
+                    "description": "<p><em>There's no sight more beautiful to you than a strange brew bubbling in a beaker, and you consume your ingenious elixirs with abandon. You're fascinated by uncovering the secrets of science and the natural world, and you're constantly experimenting in your lab or on the go with inventive concoctions for every eventuality. You are fearless in the face of risk, hurling explosive or toxic creations at your foes. Your unique path toward greatness is lined with alchemical brews that push your mind and body to their limits.</em></p>\n<p>@UUID[Compendium.pf2e.journals.JournalEntry.kzxu2dI7tFxv6Ix6.JournalEntryPage.Om4e4tsgNWrComie]{Alchemist}</p>"
+                },
+                "feat->Alchemical Crafting": {
+                    "name": "Alchemical Crafting",
+                    "description": "<p>You can use the Craft activity to create alchemical items. When you select this feat, you immediately add the formulas for four common 1st-level alchemical items to your formula book.</p>"
                 },
                 "action->Quick Alchemy": {
                     "name": "Quick Alchemy",
@@ -3937,7 +4164,7 @@
                 },
                 "action->Frightful Presence": {
                     "name": "Frightful Presence",
-                    "description": "<p>100 feet. @Check[will|dc:41]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.FrightfulPresence]</p>"
+                    "description": "<p>100 feet. @Check[will|dc:41|options:area-effect,inflicts:frightened]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.FrightfulPresence]</p>"
                 },
                 "action->Vorpal Fear": {
                     "name": "Vorpal Fear",
@@ -4058,9 +4285,25 @@
                 "spellcastingEntry->Occult Focus Spells": {
                     "name": "Occult Focus Spells"
                 },
+                "feat->Halfling Luck": {
+                    "name": "Halfling Luck",
+                    "description": "<p><strong>Frequency</strong> once per day</p>\n<p><strong>Trigger</strong> You fail a skill check or saving throw.</p>\n<hr />\n<p>Your happy-go-lucky nature makes it seem like misfortune avoids you, and to an extent, that might even be true. You can reroll the triggering check, but you must use the new result, even if it's worse than your first roll.</p>"
+                },
+                "class->Bard": {
+                    "name": "Bard",
+                    "description": "<p><em>You are a master of artistry, a scholar of hidden secrets, and a captivating persuader. Using powerful performances, you influence minds and elevate souls to new levels of heroics. You might use your powers to become a charismatic leader, or perhaps you might instead be a counselor, manipulator, scholar, scoundrel, or virtuoso. While your versatility leads some to consider you a beguiling ne'erdo- well and a jack-of-all-trades, it's dangerous to dismiss you as a master of none.</em></p>\n<p><em>@UUID[Compendium.pf2e.journals.JournalEntry.kzxu2dI7tFxv6Ix6.JournalEntryPage.Tz0NWVqhZyt8EyUV]{Bard}</em></p>"
+                },
                 "feat->Spell Repertoire (Bard)": {
                     "name": "Spell Repertoire (Bard)",
                     "description": "<p>The collection of spells you can cast is called your spell repertoire. At 1st level, you learn two 1st-rank spells of your choice and five cantrips of your choice. You choose these from the common spells from the occult spell list, or from other occult spells to which you have access. You can cast any spell in your spell repertoire by using a spell slot of an appropriate spell rank.</p>\n<p>You add to this spell repertoire as you increase in level. Each time you get a spell slot, you add a spell of the same rank to your spell repertoire. At 2nd level, you select another 1st-rank spell; at 3rd level, you select two 2nd-rank spells, and so on. When you add spells, you might choose a higher-rank version of a spell you already have so that you can cast a heightened version of that spell.</p>\n<p>Though you gain them at the same rate, your spell slots and the spells in your spell repertoire are separate. If a feat or other ability adds a spell to your spell repertoire, it wouldn't give you another spell slot, and vice versa.</p>\n<h3 class=\"title\"><strong>Swapping Spells in your Repertoire</strong></h3>\n<p>As you gain new spells in your spell repertoire, you might want to replace some of the spells you previously learned. Each time you gain a level and learn new spells, you can swap out one of your old spells for a different spell of the same rank. This spell can be a cantrip. You can also swap out spells by retraining during downtime.</p>"
+                },
+                "feat->Bardic Lore": {
+                    "name": "Bardic Lore",
+                    "description": "<p>Your studies make you informed on every subject. You are trained in Bardic Lore, a special Lore skill that can be used only to Recall Knowledge, but on any topic. If you have legendary proficiency in Occultism, you gain expert proficiency in Bardic Lore, but you can't increase your proficiency rank in Bardic Lore by any other means.</p>"
+                },
+                "feat->Keen Eyes": {
+                    "name": "Keen Eyes",
+                    "description": "<p>Your eyes are sharp, allowing you to make out small details about concealed or even invisible creatures that others might miss. You gain a +2 circumstance bonus when using the @UUID[Compendium.pf2e.actionspf2e.Item.BlAOM2X92SI6HMtJ]{Seek} action to find @UUID[Compendium.pf2e.conditionitems.Item.iU0fEDdBp3rXpTMC]{Hidden} or @UUID[Compendium.pf2e.conditionitems.Item.VRSef5y1LmL2Hkjf]{Undetected} creatures within 30 feet of you. When you target an opponent that is @UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{Concealed} from you or hidden from you, reduce the DC of the flat check to 3 for a concealed target or 9 for a hidden one.</p>"
                 }
             }
         },
@@ -4087,9 +4330,37 @@
                 "spellcastingEntry->Occult Focus Spells": {
                     "name": "Occult Focus Spells"
                 },
+                "feat->Halfling Luck": {
+                    "name": "Halfling Luck",
+                    "description": "<p><strong>Frequency</strong> once per day</p>\n<p><strong>Trigger</strong> You fail a skill check or saving throw.</p>\n<hr />\n<p>Your happy-go-lucky nature makes it seem like misfortune avoids you, and to an extent, that might even be true. You can reroll the triggering check, but you must use the new result, even if it's worse than your first roll.</p>"
+                },
+                "feat->Watchful Halfling": {
+                    "name": "Watchful Halfling",
+                    "description": "<p>Your communal lifestyle causes you to pay close attention to the people around you, allowing you to more easily notice when they act out of character.</p>\n<p>You gain a +2 circumstance bonus to Perception checks when using the Sense Motive basic action to notice enchanted or possessed characters. If you aren't actively using Sense Motive on an enchanted or possessed character, the GM rolls a secret check, without the usual circumstance and with a -2 circumstance penalty, for you to potentially notice the enchantment or possession anyway.</p>\n<p>In addition to using it for skill checks, you can use the Aid basic action to grant a bonus to another creature's saving throw or other check to overcome enchantment or possession. As usual for Aid, you need to prepare by using an action on your turn to encourage the creature to fight against the effect.</p>"
+                },
                 "feat->Cantrip Expansion (Spontaneous Caster)": {
                     "name": "Cantrip Expansion (Spontaneous Caster)",
                     "description": "<p>A greater understanding of your magic broadens your range of simple spells.</p>\n<p>Add two additional cantrips from your spell list to your repertoire.</p>"
+                },
+                "feat->Steady Spellcasting": {
+                    "name": "Steady Spellcasting",
+                    "description": "<p>Confident in your technique, you don't easily lose your concentration when you Cast a Spell. If a reaction would disrupt your spellcasting action, attempt a @Check[flat|showDC:all|dc:15]. If you succeed, your action isn't disrupted.</p>"
+                },
+                "feat->Melodious Spell": {
+                    "name": "Melodious Spell",
+                    "description": "<p>You subtly weave your spellcasting into your performance. If the next action you take is to Cast a Spell, attempt a @Check[performance] check against all observers' Perception DCs. If your Performance check is successful against an observer's Perception DC, that observer doesn't notice that you are Casting a Spell, even though normally spells have sensory manifestations that would make spellcasting obvious to those around you, and verbal, somatic, and material components are extremely overt. You hide all of these as part of an ordinary performance. This hides only the spell's spellcasting actions and manifestations, not its effects, so an observer might still see a ray streak out from you or see you vanish.</p>"
+                },
+                "feat->Fleet": {
+                    "name": "Fleet",
+                    "description": "<p>You move more quickly on foot. Your Speed increases by 5 feet.</p>"
+                },
+                "feat->Incredible Initiative": {
+                    "name": "Incredible Initiative",
+                    "description": "<p>You react more quickly than others can. You gain a +2 circumstance bonus to initiative rolls.</p>"
+                },
+                "feat->Experienced Smuggler": {
+                    "name": "Experienced Smuggler",
+                    "description": "<p>You often smuggle things past the authorities.</p>\n<p>When the GM rolls your Stealth check to see if a passive observer notices a small item you have concealed, the GM uses the number rolled or 10 - whichever is higher - as the result of your die roll, adding it to your Stealth modifier to determine your Stealth check result.</p>\n<p>If you're a master in Stealth, the GM uses the number rolled or 15, and if you're legendary in Stealth, you automatically succeed at hiding a small concealed item from passive observers.</p>\n<p>This provides no benefits when a creature attempts a Perception check while actively searching you for hidden items.</p>\n<p>Due to your smuggling skill, you're more likely to find more lucrative smuggling jobs when using Underworld Lore to Earn Income.</p>\n<hr />\n<p><strong>PFS Note</strong> This feat allows you to Earn Income with Underworld Lore with tasks of your level -1 (instead of the normal level -2).</p>"
                 },
                 "feat->Virtuosic Performer (Strings)": {
                     "name": "Virtuosic Performer (Strings)",
@@ -4105,7 +4376,7 @@
                 },
                 "equipment->Maestro's Instrument (Lesser) (Lute)": {
                     "name": "Maestro's Instrument (Lesser) (Lute)",
-                    "description": "<p>A <em>maestro's instrument</em> can be crafted in the form of any variety of handheld musical instruments. A <em>maestro's instrument</em> grants you a +1 item bonus to Performance checks while playing music with the instrument.</p><hr /><p><strong>Activate\u2014Charming Performance</strong> <span class=\"action-glyph\">2</span> (manipulate)</p>\n<p><strong>Frequency</strong> once per day</p>\n<p><strong>Effect</strong> You play the instrument, causing it to cast a DC 17 @UUID[Compendium.pf2e.spells-srd.Item.vLA0q0WOK2YPuJs6]{Charm} spell.</p><hr /><p><strong>Craft Requirements</strong> You must supply a casting of <em>charm</em> of the appropriate rank.</p>"
+                    "description": "<p>A <em>maestro's instrument</em> can be crafted in the form of any variety of handheld musical instruments. A <em>maestro's instrument</em> grants you a +1 item bonus to Performance checks while playing music with the instrument.</p><hr /><p><strong>Activate—Charming Performance</strong> <span class=\"action-glyph\">2</span> (manipulate)</p>\n<p><strong>Frequency</strong> once per day</p>\n<p><strong>Effect</strong> You play the instrument, causing it to cast a DC 17 @UUID[Compendium.pf2e.spells-srd.Item.vLA0q0WOK2YPuJs6]{Charm} spell.</p><hr /><p><strong>Craft Requirements</strong> You must supply a casting of <em>charm</em> of the appropriate rank.</p>"
                 },
                 "consumable->Wand of Invisibility (Level 2)": {
                     "name": "Wand of Invisibility (Level 2)",
@@ -4120,6 +4391,10 @@
                         }
                     }
                 },
+                "class->Bard": {
+                    "name": "Bard",
+                    "description": "<p><em>You are a master of artistry, a scholar of hidden secrets, and a captivating persuader. Using powerful performances, you influence minds and elevate souls to new levels of heroics. You might use your powers to become a charismatic leader, or perhaps you might instead be a counselor, manipulator, scholar, scoundrel, or virtuoso. While your versatility leads some to consider you a beguiling ne'erdo- well and a jack-of-all-trades, it's dangerous to dismiss you as a master of none.</em></p>\n<p><em>@UUID[Compendium.pf2e.journals.JournalEntry.kzxu2dI7tFxv6Ix6.JournalEntryPage.Tz0NWVqhZyt8EyUV]{Bard}</em></p>"
+                },
                 "feat->Spell Repertoire (Bard)": {
                     "name": "Spell Repertoire (Bard)",
                     "description": "<p>The collection of spells you can cast is called your spell repertoire. At 1st level, you learn two 1st-rank spells of your choice and five cantrips of your choice. You choose these from the common spells from the occult spell list, or from other occult spells to which you have access. You can cast any spell in your spell repertoire by using a spell slot of an appropriate spell rank.</p>\n<p>You add to this spell repertoire as you increase in level. Each time you get a spell slot, you add a spell of the same rank to your spell repertoire. At 2nd level, you select another 1st-rank spell; at 3rd level, you select two 2nd-rank spells, and so on. When you add spells, you might choose a higher-rank version of a spell you already have so that you can cast a heightened version of that spell.</p>\n<p>Though you gain them at the same rate, your spell slots and the spells in your spell repertoire are separate. If a feat or other ability adds a spell to your spell repertoire, it wouldn't give you another spell slot, and vice versa.</p>\n<h3 class=\"title\"><strong>Swapping Spells in your Repertoire</strong></h3>\n<p>As you gain new spells in your spell repertoire, you might want to replace some of the spells you previously learned. Each time you gain a level and learn new spells, you can swap out one of your old spells for a different spell of the same rank. This spell can be a cantrip. You can also swap out spells by retraining during downtime.</p>"
@@ -4127,6 +4402,14 @@
                 "feat->Lightning Reflexes": {
                     "name": "Lightning Reflexes",
                     "description": "<p>Your reflexes are lightning fast. Your proficiency rank for Reflex saves increases to expert.</p>"
+                },
+                "feat->Bardic Lore": {
+                    "name": "Bardic Lore",
+                    "description": "<p>Your studies make you informed on every subject. You are trained in Bardic Lore, a special Lore skill that can be used only to Recall Knowledge, but on any topic. If you have legendary proficiency in Occultism, you gain expert proficiency in Bardic Lore, but you can't increase your proficiency rank in Bardic Lore by any other means.</p>"
+                },
+                "feat->Keen Eyes": {
+                    "name": "Keen Eyes",
+                    "description": "<p>Your eyes are sharp, allowing you to make out small details about concealed or even invisible creatures that others might miss. You gain a +2 circumstance bonus when using the @UUID[Compendium.pf2e.actionspf2e.Item.BlAOM2X92SI6HMtJ]{Seek} action to find @UUID[Compendium.pf2e.conditionitems.Item.iU0fEDdBp3rXpTMC]{Hidden} or @UUID[Compendium.pf2e.conditionitems.Item.VRSef5y1LmL2Hkjf]{Undetected} creatures within 30 feet of you. When you target an opponent that is @UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{Concealed} from you or hidden from you, reduce the DC of the flat check to 3 for a concealed target or 9 for a hidden one.</p>"
                 }
             }
         },
@@ -4141,10 +4424,6 @@
                             "label": "Adjustment"
                         }
                     }
-                },
-                "campaignFeature->Live off the Land": {
-                    "name": "Live off the Land",
-                    "description": "<p>The army is trained to be self-sufficient and sustains itself via hunting and gathering when they're in the wild. If during a Kingdom turn's Upkeep phase this army is located in a hex that doesn't include a settlement, and if the army is not garrisoned, it reduces its Consumption by 1.</p>"
                 }
             }
         },
@@ -4206,7 +4485,7 @@
             "items": {
                 "campaignFeature->Overrun": {
                     "name": "Overrun",
-                    "description": "<p><em><strong>Note</strong>: Basic cavalry armies know Overrun automatically, and must 'spend' their first tactic on it.</em></p>\n<hr />\n<p>Cavalry armies gain a +1 status bonus on weapon attacks against infantry and skirmisher armies, but they suffer a \u20131 status penalty on Maneuver and Morale saves against area attacks and mental attacks.</p>",
+                    "description": "<p><em><strong>Note</strong>: Basic cavalry armies know Overrun automatically, and must 'spend' their first tactic on it.</em></p>\n<hr />\n<p>Cavalry armies gain a +1 status bonus on weapon attacks against infantry and skirmisher armies, but they suffer a –1 status penalty on Maneuver and Morale saves against area attacks and mental attacks.</p>",
                     "rules": {
                         "0": {
                             "label": "vs Infantry and Skirmisher"
@@ -4331,11 +4610,11 @@
                 },
                 "action->Vulnerable to Curved Space": {
                     "name": "Vulnerable to Curved Space",
-                    "description": "<p>When a hound of Tindalos is not adjacent to a structural angle of 90\u00ba (or more acute), its resistance to physical damage is suppressed and it becomes @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 1}. It can't recover from this sickened condition, but the condition ends automatically once the hound is again adjacent to a suitable angle.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.V60TWjo1G1r5ZtPM]{Effect: Vulnerable to Curved Space}</p>"
+                    "description": "<p>When a hound of Tindalos is not adjacent to a structural angle of 90º (or more acute), its resistance to physical damage is suppressed and it becomes @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 1}. It can't recover from this sickened condition, but the condition ends automatically once the hound is again adjacent to a suitable angle.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.V60TWjo1G1r5ZtPM]{Effect: Vulnerable to Curved Space}</p>"
                 },
                 "action->Angled Entry": {
                     "name": "Angled Entry",
-                    "description": "<p>The hound of Tindalos casts a 7th-rank @UUID[Compendium.pf2e.spells-srd.Item.VlNcjmYyu95vOUe8]{Translocate} spell, but it must transport itself into a space adjacent to an angle of 90\u00ba (or more acute) in the structure or environment around it. For example, it could teleport to a space adjacent to a wall (using the angle between the wall and floor) or a corner in a room, or adjacent to a sizable tree growing straight up out of the ground, but not to a flat plain or a room with only curved corners and edges.</p>\n<p>Once per day, the hound can use this ability to plane shift to or from the Dimension of Time, with the same restrictions on what angles it can appear next to.</p>"
+                    "description": "<p>The hound of Tindalos casts a 7th-rank @UUID[Compendium.pf2e.spells-srd.Item.VlNcjmYyu95vOUe8]{Translocate} spell, but it must transport itself into a space adjacent to an angle of 90º (or more acute) in the structure or environment around it. For example, it could teleport to a space adjacent to a wall (using the angle between the wall and floor) or a corner in a room, or adjacent to a sizable tree growing straight up out of the ground, but not to a flat plain or a room with only curved corners and edges.</p>\n<p>Once per day, the hound can use this ability to plane shift to or from the Dimension of Time, with the same restrictions on what angles it can appear next to.</p>"
                 }
             },
             "skills": {
@@ -4432,17 +4711,7 @@
             }
         },
         "Narlmarch Hunters": {
-            "name": "Narlmarch Hunters",
-            "items": {
-                "campaignFeature->Increased Ammunition": {
-                    "name": "Increased Ammunition",
-                    "description": "<p>You increase the number of times your army can use ranged Strikes in each war encounter by 2. This tactic can be taken multiple times; each time you do so, increase the army's maximum number of ranged Strikes by 2.</p>"
-                },
-                "campaignFeature->Sharpshooter": {
-                    "name": "Sharpshooter",
-                    "description": "<p>The commander drills the army in precision ranged attacks. You gain a +1 status bonus on attacks with ranged Strikes, but suffer a \u20132 status bonus on attacks with melee Strikes. At 9th level, the penalty to melee Strikes is reduced to \u20131, and at 15th level the penalty to melee Strikes is removed.</p>\n<p>The army can use the @UUID[Compendium.pf2e.kingmaker-features.Item.GIbm9qo8VuFgPywJ]{Covering Fire} tactical war action.</p>"
-                }
-            }
+            "name": "Narlmarch Hunters"
         },
         "Ngara": {
             "name": "Ngara",
@@ -4488,7 +4757,7 @@
                 },
                 "action->Frightful Presence": {
                     "name": "Frightful Presence",
-                    "description": "<p>60 feet. @Check[will|dc:39]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.FrightfulPresence]</p>"
+                    "description": "<p>60 feet. @Check[will|dc:39|options:area-effect,inflicts:frightened]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.FrightfulPresence]</p>"
                 },
                 "action->Wing Rebuff": {
                     "name": "Wing Rebuff",
@@ -4640,6 +4909,10 @@
             "name": "Nok-Nok (Level 1)",
             "gender": "Male",
             "items": {
+                "feat->Experienced Smuggler": {
+                    "name": "Experienced Smuggler",
+                    "description": "<p>You often smuggle things past the authorities.</p>\n<p>When the GM rolls your Stealth check to see if a passive observer notices a small item you have concealed, the GM uses the number rolled or 10 - whichever is higher - as the result of your die roll, adding it to your Stealth modifier to determine your Stealth check result.</p>\n<p>If you're a master in Stealth, the GM uses the number rolled or 15, and if you're legendary in Stealth, you automatically succeed at hiding a small concealed item from passive observers.</p>\n<p>This provides no benefits when a creature attempts a Perception check while actively searching you for hidden items.</p>\n<p>Due to your smuggling skill, you're more likely to find more lucrative smuggling jobs when using Underworld Lore to Earn Income.</p>\n<hr />\n<p><strong>PFS Note</strong> This feat allows you to Earn Income with Underworld Lore with tasks of your level -1 (instead of the normal level -2).</p>"
+                },
                 "lore->Underworld Lore": {
                     "name": "Underworld Lore"
                 },
@@ -4650,6 +4923,26 @@
                 "equipment->Thieves' Tools": {
                     "name": "Thieves' Tools",
                     "description": "<p>You need thieves' tools to Pick Locks or Disable Devices (of some types) using the Thievery skill.</p>\n<p>If your thieves' tools are broken, you can repair them by replacing the lock picks with @UUID[Compendium.pf2e.equipment-srd.Item.Sw7MBLASN3xK4Y44]{Replacement Picks} appropriate to your tools; this doesn't require using the Repair action.</p>"
+                },
+                "feat->Very Sneaky": {
+                    "name": "Very Sneaky",
+                    "description": "<p>Taller folk rarely pay attention to the shadows at their feet, and you take full advantage of this. You can move 5 feet farther when you take the @UUID[Compendium.pf2e.action-macros.Macro.HSTkVuv0SjTNK3Xx]{Sneak} action, up to your Speed. In addition, as long as you continue to use Sneak actions and succeed at your Stealth check, you don't become observed if you don't have cover or greater cover and aren't concealed at the end of the Sneak action, as long as you have cover or greater cover or are concealed at the end of your turn.</p>"
+                },
+                "feat->Twin Feint": {
+                    "name": "Twin Feint",
+                    "description": "<p><strong>Requirements</strong> You are wielding two melee weapons, each in a different hand</p>\n<hr />\n<p>You make a dazzling series of attacks with both weapons, using the first attack to throw your foe off guard against a second attack at a different angle. Make one Strike with each of your two melee weapons, both against the same target. The target is automatically @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} against the second attack. Apply your multiple attack penalty to the Strikes normally.</p>"
+                },
+                "feat->Pickpocket": {
+                    "name": "Pickpocket",
+                    "description": "<p>You can Steal or Palm an Object that's closely guarded, such as in a pocket, without taking the -5 penalty. You can't steal objects that would be extremely noticeable or time consuming to remove (like worn shoes or armor or actively wielded objects). If you're a master in Thievery, you can attempt to Steal from a creature in combat or otherwise on guard. When doing so, Stealing requires 2 manipulate actions instead of 1, and you take a -5 penalty.</p>"
+                },
+                "deity->Lamashtu": {
+                    "name": "Lamashtu",
+                    "description": "<p>For those who revel in the corruption of the pure or who find themselves spurned and neglected by a world that despises their differences, Lamashtu offers respite among her grotesque brood. The Mother of Monsters readily accepts mortals into her fold and has made it her goal to twist mortal life toward her abhorrent ideals. Her intervention is widely known to inflict corruptions and terrible nightmares. Ostracized individuals who share her ideals will find this intervention a boon, while others treat similar events as horrible curses.</p>\n<p><strong>Edicts</strong> bring power to outcasts and the downtrodden, indoctrinate children in Lamashtu's teachings, make the beautiful monstrous, reveal the corruption and flaws in all things</p>\n<p><strong>Anathema</strong> attempt to treat a mental illness or deformity, provide succor to Lamashtu's enemies</p>\n<p><strong>Areas of Concern</strong> aberrance, monsters, and nightmares</p>"
+                },
+                "class->Rogue": {
+                    "name": "Rogue",
+                    "description": "<p><em>You are skilled and opportunistic. Using your sharp wits and quick reactions, you take advantage of your opponents' missteps and strike where it hurts most. You play a dangerous game, seeking thrills and testing your skills, and likely don't care much for any laws that happen to get in your way. While the path of every rogue is unique and riddled with danger, the one thing you all share in common is the breadth and depth of your skills.</em></p>\n<p><em>@UUID[Compendium.pf2e.journals.JournalEntry.kzxu2dI7tFxv6Ix6.JournalEntryPage.u4qPrDRBagxG9wj8]{Rogue}</em></p>"
                 }
             }
         },
@@ -4657,6 +4950,10 @@
             "name": "Nok-Nok (Level 5)",
             "gender": "Male",
             "items": {
+                "feat->Experienced Smuggler": {
+                    "name": "Experienced Smuggler",
+                    "description": "<p>You often smuggle things past the authorities.</p>\n<p>When the GM rolls your Stealth check to see if a passive observer notices a small item you have concealed, the GM uses the number rolled or 10 - whichever is higher - as the result of your die roll, adding it to your Stealth modifier to determine your Stealth check result.</p>\n<p>If you're a master in Stealth, the GM uses the number rolled or 15, and if you're legendary in Stealth, you automatically succeed at hiding a small concealed item from passive observers.</p>\n<p>This provides no benefits when a creature attempts a Perception check while actively searching you for hidden items.</p>\n<p>Due to your smuggling skill, you're more likely to find more lucrative smuggling jobs when using Underworld Lore to Earn Income.</p>\n<hr />\n<p><strong>PFS Note</strong> This feat allows you to Earn Income with Underworld Lore with tasks of your level -1 (instead of the normal level -2).</p>"
+                },
                 "lore->Underworld Lore": {
                     "name": "Underworld Lore"
                 },
@@ -4664,13 +4961,81 @@
                     "name": "Thieves' Tools",
                     "description": "<p>You need thieves' tools to Pick Locks or Disable Devices (of some types) using the Thievery skill.</p>\n<p>If your thieves' tools are broken, you can repair them by replacing the lock picks with @UUID[Compendium.pf2e.equipment-srd.Item.Sw7MBLASN3xK4Y44]{Replacement Picks} appropriate to your tools; this doesn't require using the Repair action.</p>"
                 },
+                "feat->Very Sneaky": {
+                    "name": "Very Sneaky",
+                    "description": "<p>Taller folk rarely pay attention to the shadows at their feet, and you take full advantage of this. You can move 5 feet farther when you take the @UUID[Compendium.pf2e.action-macros.Macro.HSTkVuv0SjTNK3Xx]{Sneak} action, up to your Speed. In addition, as long as you continue to use Sneak actions and succeed at your Stealth check, you don't become observed if you don't have cover or greater cover and aren't concealed at the end of the Sneak action, as long as you have cover or greater cover or are concealed at the end of your turn.</p>"
+                },
+                "feat->Twin Feint": {
+                    "name": "Twin Feint",
+                    "description": "<p><strong>Requirements</strong> You are wielding two melee weapons, each in a different hand</p>\n<hr />\n<p>You make a dazzling series of attacks with both weapons, using the first attack to throw your foe off guard against a second attack at a different angle. Make one Strike with each of your two melee weapons, both against the same target. The target is automatically @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} against the second attack. Apply your multiple attack penalty to the Strikes normally.</p>"
+                },
+                "feat->Pickpocket": {
+                    "name": "Pickpocket",
+                    "description": "<p>You can Steal or Palm an Object that's closely guarded, such as in a pocket, without taking the -5 penalty. You can't steal objects that would be extremely noticeable or time consuming to remove (like worn shoes or armor or actively wielded objects). If you're a master in Thievery, you can attempt to Steal from a creature in combat or otherwise on guard. When doing so, Stealing requires 2 manipulate actions instead of 1, and you take a -5 penalty.</p>"
+                },
+                "deity->Lamashtu": {
+                    "name": "Lamashtu",
+                    "description": "<p>For those who revel in the corruption of the pure or who find themselves spurned and neglected by a world that despises their differences, Lamashtu offers respite among her grotesque brood. The Mother of Monsters readily accepts mortals into her fold and has made it her goal to twist mortal life toward her abhorrent ideals. Her intervention is widely known to inflict corruptions and terrible nightmares. Ostracized individuals who share her ideals will find this intervention a boon, while others treat similar events as horrible curses.</p>\n<p><strong>Edicts</strong> bring power to outcasts and the downtrodden, indoctrinate children in Lamashtu's teachings, make the beautiful monstrous, reveal the corruption and flaws in all things</p>\n<p><strong>Anathema</strong> attempt to treat a mental illness or deformity, provide succor to Lamashtu's enemies</p>\n<p><strong>Areas of Concern</strong> aberrance, monsters, and nightmares</p>"
+                },
                 "equipment->Religious Symbol (Silver)": {
                     "name": "Religious Symbol (Silver)",
                     "description": "<p>This piece of wood or silver is emblazoned with an image representing a deity. Some divine spellcasters, such as clerics, can use a religious symbol of their deity as a divine focus to use certain abilities and cast some spells. A religious symbol must be held in one hand to use it.</p>"
                 },
+                "feat->Goblin Scuttle": {
+                    "name": "Goblin Scuttle",
+                    "description": "<p><strong>Trigger</strong> An ally ends a move action adjacent to you.</p>\n<hr />\n<p>You take advantage of your ally's movement to adjust your position. You Step.</p>"
+                },
+                "feat->Mobility": {
+                    "name": "Mobility",
+                    "description": "<p>You move in a way that denies your enemies the opportunity to retaliate. When you take a Stride action to move half your Speed or less, that movement does not trigger reactions. You can use Mobility when Climbing, Flying, or Swimming instead of Striding if you have the corresponding movement type.</p>"
+                },
+                "feat->Reactive Pursuit": {
+                    "name": "Reactive Pursuit",
+                    "description": "<p><strong>Trigger</strong> An adjacent foe moves away from you, and you can reach at least one space adjacent to the foe with a Stride action</p>\n<hr />\n<p>You keep pace with a retreating foe. You Stride, but you must end your movement adjacent to the triggering enemy. Your move does not trigger reactions from the triggering enemy. You can use Reactive Pursuit to Burrow, Climb, Fly, or Swim instead of Stride if you have the corresponding movement type.</p>"
+                },
+                "feat->Cat Fall": {
+                    "name": "Cat Fall",
+                    "description": "<p>Your catlike aerial acrobatics allow you to cushion your falls. Treat falls as 10 feet shorter. If you're an expert in Acrobatics, treat falls as 25 feet shorter. If you're a master in Acrobatics, treat them as 50 feet shorter. If you're legendary in Acrobatics, you always land on your feet and don't take damage, regardless of the distance of the fall.</p>"
+                },
+                "feat->Student of the Canon": {
+                    "name": "Student of the Canon",
+                    "description": "<p>You've researched many faiths enough to recognize notions about them that are unlikely to be true.</p>\n<p>If you roll a critical failure at a Religion check to Decipher Writing of a religious nature or to Recall Knowledge about the tenets of faiths, you get a failure instead.</p>\n<p>When attempting to Recall Knowledge about the tenets of your own faith, if you roll a failure, you get a success instead, and if you roll a success, you get a critical success instead.</p>",
+                    "rules": {
+                        "0": {
+                            "text": "When you roll a critical failure at a Religion check to Decipher Writing of a religious nature or to Recall Knowledge about the tenets of faiths, you get a failure instead."
+                        },
+                        "1": {
+                            "text": "When attempting to Recall Knowledge about the tenets of your own faith, if you roll a failure, you get a success instead, and if you roll a success, you get a critical success instead."
+                        }
+                    }
+                },
+                "feat->Wary Disarmament": {
+                    "name": "Wary Disarmament",
+                    "description": "<p>If you trigger a device or set off a trap while disarming it, you gain a +2 circumstance bonus to your AC or saving throw against the device or trap. This applies only to attacks or effects triggered by your failed attempt, not to any later ones, such as additional attacks from a complex trap.</p>",
+                    "rules": {
+                        "0": {
+                            "label": "Wary Disarmament (vs. traps)"
+                        },
+                        "1": {
+                            "label": "Wary Disarmament (vs. traps)"
+                        }
+                    }
+                },
+                "feat->Snare Crafting": {
+                    "name": "Snare Crafting",
+                    "description": "<p>You can use the Craft activity to create snares. When you select this feat, you add the formulas for four common snares to your formula book.</p>"
+                },
+                "feat->Weapon Proficiency": {
+                    "name": "Weapon Proficiency",
+                    "description": "<p>You become trained in all simple weapons. If you were already trained in all simple weapons, you become trained in all martial weapons. If you were already trained in all martial weapons, you become trained in one advanced weapon of your choice.</p>\n<hr />\n<p><strong>Special</strong> You can select this feat more than once. Each time you do, you become trained in additional weapons as appropriate, following the above progression.</p>"
+                },
                 "effect->Effect: Paizo Adjustment": {
                     "name": "Effect: Paizo Adjustment",
                     "description": "<p>This adds +1 damage to the composite shortbow to match the values printed in the Kingmaker Companion Guide</p>"
+                },
+                "class->Rogue": {
+                    "name": "Rogue",
+                    "description": "<p><em>You are skilled and opportunistic. Using your sharp wits and quick reactions, you take advantage of your opponents' missteps and strike where it hurts most. You play a dangerous game, seeking thrills and testing your skills, and likely don't care much for any laws that happen to get in your way. While the path of every rogue is unique and riddled with danger, the one thing you all share in common is the breadth and depth of your skills.</em></p>\n<p><em>@UUID[Compendium.pf2e.journals.JournalEntry.kzxu2dI7tFxv6Ix6.JournalEntryPage.u4qPrDRBagxG9wj8]{Rogue}</em></p>"
                 }
             }
         },
@@ -4679,7 +5044,7 @@
             "items": {
                 "campaignFeature->Overrun": {
                     "name": "Overrun",
-                    "description": "<p><em><strong>Note</strong>: Basic cavalry armies know Overrun automatically, and must 'spend' their first tactic on it.</em></p>\n<hr />\n<p>Cavalry armies gain a +1 status bonus on weapon attacks against infantry and skirmisher armies, but they suffer a \u20131 status penalty on Maneuver and Morale saves against area attacks and mental attacks.</p>",
+                    "description": "<p><em><strong>Note</strong>: Basic cavalry armies know Overrun automatically, and must 'spend' their first tactic on it.</em></p>\n<hr />\n<p>Cavalry armies gain a +1 status bonus on weapon attacks against infantry and skirmisher armies, but they suffer a –1 status penalty on Maneuver and Morale saves against area attacks and mental attacks.</p>",
                     "rules": {
                         "0": {
                             "label": "vs Infantry and Skirmisher"
@@ -4699,7 +5064,7 @@
                 },
                 "campaignFeature->Trample (Unique)": {
                     "name": "Trample (Unique)",
-                    "description": "<p>Nomen Scouts can attempt to trample an engaged enemy army by attempting a +20 melee Strike against the army's AC. On a hit, they inflict 1 point of damage (2 points on a critical hit) and automatically move away from the army\u2014they are no longer engaged with that army.</p>"
+                    "description": "<p>Nomen Scouts can attempt to trample an engaged enemy army by attempting a +20 melee Strike against the army's AC. On a hit, they inflict 1 point of damage (2 points on a critical hit) and automatically move away from the army—they are no longer engaged with that army.</p>"
                 }
             }
         },
@@ -5292,30 +5657,6 @@
         "Pitax Horde": {
             "name": "Pitax Horde",
             "items": {
-                "campaignFeature->Live off the Land": {
-                    "name": "Live off the Land",
-                    "description": "<p>The army is trained to be self-sufficient and sustains itself via hunting and gathering when they're in the wild. If during a Kingdom turn's Upkeep phase this army is located in a hex that doesn't include a settlement, and if the army is not garrisoned, it reduces its Consumption by 1.</p>"
-                },
-                "campaignFeature->Toughened Soldiers": {
-                    "name": "Toughened Soldiers",
-                    "description": "<p>The army is particularly hardy. Increase its maximum Hit Points by 1. You can take this tactic multiple times; each time you do, increase the army's maximum Hit Points by 1.</p>"
-                },
-                "campaignFeature->Merciless": {
-                    "name": "Merciless",
-                    "description": "<p>This army is difficult to escape from. The army's Mobility DC gains a +2 status bonus when other armies attempt Mobility checks against it while attempting to Disengage.</p>\n<p>This army can use the @UUID[Compendium.pf2e.kingmaker-features.Item.Z6jMZgAxI1zRO7Sl]{All-Out Assault} tactical war action.</p>"
-                },
-                "campaignFeature->All-Out Assault": {
-                    "name": "All-Out Assault",
-                    "description": "<p><strong>Requirement</strong> @UUID[Compendium.pf2e.kingmaker-features.Item.QRwIcmCEHpDQm9DO]{Merciless}</p>\n<hr />\n<p>Your army attacks with frightening vigor. Attempt a melee Strike against an enemy army's AC.</p>\n<p><strong>Critical Success</strong> Your army inflicts @Damage[3|domains:melee-damage,strike-damage] points of damage to the target army. If your army's next war action this turn is an attack war action against a different target army, you gain a +1 circumstance bonus to the Strike as your fury continues to the new target.</p>\n<p><strong>Success</strong> Your army deals @Damage[2|domains:melee-damage,strike-damage] points of damage to the target army.</p>\n<p><strong>Failure</strong> Your army falters, but still deals @Damage[1|domains:melee-damage,strike-damage] point of damage to the target army.</p>\n<p><strong>Critical Failure</strong> Your army deals no damage to the target army and becomes @UUID[Compendium.pf2e.kingmaker-features.Item.ibcMcEGRbPRtk9Pu]{Outflanked} until the start of its next turn.</p>",
-                    "rules": {
-                        "0": {
-                            "label": "All-Out Assault Followup Attack (Crit Success)"
-                        },
-                        "1": {
-                            "label": "All-Out Assault Followup (Crit Success)"
-                        }
-                    }
-                },
                 "effect->Home Advantage (Area GL2)": {
                     "name": "Home Advantage (Area GL2)",
                     "description": "<p>The Pitax Horde knows the open plains and rolling dells of this area well, and can use the terrain to their advantage if they are attacked here. They gain a +2 bonus to Maneuver and +3 bonus to Scouting while in area GL2.</p>\n<hr />\n<p><em><strong>Note</strong>: This effect automates the above bonuses. Remove it if the Pitax Horde are found elsewhere.</em></p>"
@@ -5323,25 +5664,7 @@
             }
         },
         "Pitax War Machines": {
-            "name": "Pitax War Machines",
-            "items": {
-                "campaignFeature->Increased Ammunition": {
-                    "name": "Increased Ammunition",
-                    "description": "<p>You increase the number of times your army can use ranged Strikes in each war encounter by 2. This tactic can be taken multiple times; each time you do so, increase the army's maximum number of ranged Strikes by 2.</p>"
-                },
-                "campaignFeature->Explosive Shot": {
-                    "name": "Explosive Shot",
-                    "description": "<p>The army's ranged attacks explode and spray fire, shrapnel, or other damaging material in every direction. Whenever the army critically hits a non-distant army with a ranged Strike, inflict 1 point of additional damage to another non-distant enemy army of your choice. You can use the @UUID[Compendium.pf2e.kingmaker-features.Item.HLu1o1RzCZxWjOJJ]{Overwhelming Bombardment} tactical war action with the army.</p>"
-                },
-                "campaignFeature->Overwhelming Bombardment": {
-                    "name": "Overwhelming Bombardment",
-                    "description": "<p><strong>Requirement</strong> @UUID[Compendium.pf2e.kingmaker-features.Item.ZSUPsqeMBDTaX2H4]{Explosive Shot}</p>\n<hr />\n<p>Your siege engines focus all their fire on a fortification. This war action counts as using two ranged Strikes for the purposes of depleting an army's shots. Attempt a ranged Strike against the target fortification's AC.</p>\n<p><strong>Critical Success</strong> You deal 2 points of damage to the fortification. You also deal 1 point of damage to up to two armies of your choice that are within the fortification.</p>\n<p><strong>Success</strong> You deal 1 point of damage to the fortification, and an additional 1 point of damage either to the fortification or to an army within the fortification (your choice of which).</p>\n<p><strong>Failure</strong> You deal 1 damage to the fortification.</p>\n<p><strong>Critical Failure</strong> You deal no damage, and your army becomes @UUID[Compendium.pf2e.kingmaker-features.Item.ibcMcEGRbPRtk9Pu]{Outflanked} until the start of its next turn.</p>"
-                },
-                "campaignFeature->Toughened Soldiers": {
-                    "name": "Toughened Soldiers",
-                    "description": "<p>The army is particularly hardy. Increase its maximum Hit Points by 1. You can take this tactic multiple times; each time you do, increase the army's maximum Hit Points by 1.</p>"
-                }
-            }
+            "name": "Pitax War Machines"
         },
         "Pitax Warden": {
             "name": "Pitax Warden",
@@ -5379,14 +5702,6 @@
                 "campaignFeature->Pitaxian Training": {
                     "name": "Pitaxian Training",
                     "description": "<p>The Pitaxian Raiders can use the @UUID[Compendium.pf2e.kingmaker-features.Item.8wjiF3ctXUjP9oyX]{Counterattack}, @UUID[Compendium.pf2e.kingmaker-features.Item.G2eBcOnUHb3yT7JL]{Dirty Fighting}, and @UUID[Compendium.pf2e.kingmaker-features.Item.Hi4LKGOKe6yMDOH5]{Feint} tactical actions.</p>"
-                },
-                "campaignFeature->Counterattack": {
-                    "name": "Counterattack",
-                    "description": "<p><strong>Requirement</strong> @UUID[Compendium.pf2e.kingmaker-features.Item.mHWF5XwUi8RK2lET]{Flexible Tactics}</p>\n<p><strong>Trigger</strong> An army you are engaged with attempts a maneuver war action.</p>\n<hr />\n<p>Your army lashes out at the foe as they attempt to perform a maneuver. Attempt a melee Strike against the triggering army's AC. Counterattack doesn't count toward your multiple attack penalty, and your multiple attack penalty doesn't apply to this Strike.</p>\n<p><strong>Critical Success</strong> You inflict 1 point of damage on the army and increase its @UUID[Compendium.pf2e.kingmaker-features.Item.7LMDwpVijK7x5Jst]{Shaken} condition value by 1.</p>\n<p><strong>Success</strong> You inflict 1 point of damage on the army.</p>"
-                },
-                "campaignFeature->Dirty Fighting": {
-                    "name": "Dirty Fighting",
-                    "description": "<p><strong>Requirement</strong> @UUID[Compendium.pf2e.kingmaker-features.Item.mHWF5XwUi8RK2lET]{Flexible Tactics}</p>\n<hr />\n<p>Your army uses trickery, deception, and unfair tactics to attempt a devastating attack against an outflanked army. Attempt a melee Strike or a ranged Strike against the AC of a target outflanked army that is not distant.</p>\n<p><strong>Critical Success</strong> The target army becomes @UUID[Compendium.pf2e.kingmaker-features.Item.dmzpRlOrorEFUETl]{Weary 2} until the start of your next turn.</p>\n<p><strong>Success</strong> The target army becomes weary 1 until the start of your next turn.</p>\n<p><strong>Critical Failure</strong> Your attack deals no damage to the target army, which is emboldened by your failed attempt at dirty fighting. This reduces the target army's weary value by 1.</p>"
                 },
                 "campaignFeature->Plentiful Ammunition": {
                     "name": "Plentiful Ammunition",
@@ -5793,7 +6108,7 @@
             "items": {
                 "action->Scalding Burst": {
                     "name": "Scalding Burst",
-                    "description": "<p><strong>Trigger</strong> A creature attempts to move through the tar</p>\n<hr />\n<p><strong>Effect</strong> A scalding burst of hot tar burns the creature, which must immediately attempt a @Check[reflex|dc:28] save.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature takes no damage.</p>\n<p><strong>Success</strong> The creature takes @Damage[3d6[fire]] damage.</p>\n<p><strong>Failure</strong> The creature takes @Damage[6d6[fire],1d6[persistent,fire]]{6d6 fire damage and 1d6 persistent fire damage}.</p>\n<p><strong>Critical Failure</strong> The creature takes @Damage[9d6[fire],2d6[persistent,fire]]{9d6 fire damage, 2d6 persistent fire damage} and takes a \u201310-foot status penalty to its Speed as long as it continues to take the persistent fire damage from the hot tar clinging to it.</p>"
+                    "description": "<p><strong>Trigger</strong> A creature attempts to move through the tar</p>\n<hr />\n<p><strong>Effect</strong> A scalding burst of hot tar burns the creature, which must immediately attempt a @Check[reflex|dc:28] save.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature takes no damage.</p>\n<p><strong>Success</strong> The creature takes @Damage[3d6[fire]] damage.</p>\n<p><strong>Failure</strong> The creature takes @Damage[6d6[fire],1d6[persistent,fire]]{6d6 fire damage and 1d6 persistent fire damage}.</p>\n<p><strong>Critical Failure</strong> The creature takes @Damage[9d6[fire],2d6[persistent,fire]]{9d6 fire damage, 2d6 persistent fire damage} and takes a –10-foot status penalty to its Speed as long as it continues to take the persistent fire damage from the hot tar clinging to it.</p>"
                 }
             }
         },
@@ -6108,7 +6423,7 @@
                 },
                 "action->Sunder Objects": {
                     "name": "Sunder Objects",
-                    "description": "<p>When a storm-struck arboreal damages an item or structure it deals an additional [[/r 3d12]] damage to that item or structure.</p>"
+                    "description": "<p>When a storm-struck arboreal damages an item or structure it deals an additional 3d12 damage to that item or structure.</p>"
                 }
             },
             "skills": {
@@ -6230,22 +6545,7 @@
             }
         },
         "Tatzlford Town Guard": {
-            "name": "Tatzlford Town Guard",
-            "items": {
-                "campaignFeature->Hold the Line": {
-                    "name": "Hold the Line",
-                    "description": "<p>The army has trained to maintain position even in the face of overwhelming opponents. The army gains a +1 status bonus on Morale checks made to resist rout, and its Rout Threshold is equal to 1/4 it's total Hit Points (rounded up).</p>",
-                    "rules": {
-                        "1": {
-                            "label": "Morale checks made to resist Rout"
-                        }
-                    }
-                },
-                "campaignFeature->Toughened Soldiers": {
-                    "name": "Toughened Soldiers",
-                    "description": "<p>The army is particularly hardy. Increase its maximum Hit Points by 1. You can take this tactic multiple times; each time you do, increase the army's maximum Hit Points by 1.</p>"
-                }
-            }
+            "name": "Tatzlford Town Guard"
         },
         "Teleport Trap": {
             "name": "Teleport Trap",
@@ -6264,6 +6564,10 @@
             "privateNotes": "<p>Terrion's statistics represent his statistics when the PCs rescue him from the prison, while he is unarmed, @UUID[Compendium.pf2e.conditionitems.Item.HL2l2VRSaQHu9lUw]{Fatigued}, and clad in prisoner's clothing. His personal gear is long gone along with other tributes sent to Irovetti and Armag, but if rescued he attempts to arm and armor himself with gear taken from a Drelev guard. In this case, you can treat his stats instead as an elite Drelev guard.</p>",
             "blurb": "Male human soldier",
             "items": {
+                "condition->Fatigued": {
+                    "name": "Fatigued",
+                    "description": "<p>You're tired and can't summon much energy. You take a -1 status penalty to AC and saving throws. While exploring, you can't choose an exploration activity.</p>\n<p>You recover from fatigue after a full night's rest.</p>"
+                },
                 "strike-melee->Fist": {
                     "name": "Fist"
                 },
@@ -6632,7 +6936,7 @@
                 },
                 "action->Lonely Dirge": {
                     "name": "Lonely Dirge",
-                    "description": "<p>The Lonely Warrior's funeral dirge is somewhat different from the standard cairn wight dirge: its droning, unnerving chant forces living creatures within @Template[emanation|distance:50]{50 feet} to attempt a @Check[will|dc:24|options:area-effect,inflicts:stupefied] save. The Lonely Warrior can't chant a new Lonely Dirge for [[/gmr 1d4 #Recharge Lonely Dirge]]{1d4 rounds}.</p><hr /><p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target is @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 1} by gnawing pangs of loneliness until the end of its next turn.</p>\n<p><strong>Failure</strong> The target is stupefied 1 for 1 hour.</p>\n<p><strong>Critical Failure</strong> The target is stupefied 1 for 24 hours and takes a \u20132 status penalty to saves against drain life.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.8ecPVgMeWDxc4jI4]{Effect: Funereal Dirge}</p>"
+                    "description": "<p>The Lonely Warrior's funeral dirge is somewhat different from the standard cairn wight dirge: its droning, unnerving chant forces living creatures within @Template[emanation|distance:50]{50 feet} to attempt a @Check[will|dc:24|options:area-effect,inflicts:stupefied] save. The Lonely Warrior can't chant a new Lonely Dirge for [[/gmr 1d4 #Recharge Lonely Dirge]]{1d4 rounds}.</p><hr /><p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target is @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 1} by gnawing pangs of loneliness until the end of its next turn.</p>\n<p><strong>Failure</strong> The target is stupefied 1 for 1 hour.</p>\n<p><strong>Critical Failure</strong> The target is stupefied 1 for 24 hours and takes a –2 status penalty to saves against drain life.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.8ecPVgMeWDxc4jI4]{Effect: Funereal Dirge}</p>"
                 }
             }
         },
@@ -6718,6 +7022,10 @@
                 "consumable->Healing Potion (Lesser)": {
                     "name": "Healing Potion (Lesser)",
                     "description": "<p>A healing potion is a vial of a ruby-red liquid that imparts a tingling sensation as the drinker's wounds heal rapidly. When you drink a healing potion, you regain @Damage[(2d8+5)[healing]] Hit Points.</p>"
+                },
+                "condition->Sickened": {
+                    "name": "Sickened",
+                    "description": "<p>You feel ill. Sickened always includes a value. You take a status penalty equal to this value on all your checks and DCs. You can't willingly ingest anything-including elixirs and potions-while sickened.</p>\n<p>You can spend a single action retching in an attempt to recover, which lets you immediately attempt a Fortitude save against the DC of the effect that made you sickened. On a success, you reduce your sickened value by 1 (or by 2 on a critical success).</p>"
                 },
                 "action->Perpetual Hangover": {
                     "name": "Perpetual Hangover",
@@ -7060,22 +7368,6 @@
                 "campaignFeature->Warmongers (Unique)": {
                     "name": "Warmongers (Unique)",
                     "description": "<p>The Tiger Lord Berserkers can use the following Tactical Actions without needing to meet additional requirements: @UUID[Compendium.pf2e.kingmaker-features.Item.Z6jMZgAxI1zRO7Sl]{All-Out Assault}, @UUID[Compendium.pf2e.kingmaker-features.Item.8wjiF3ctXUjP9oyX]{Counterattack}, and @UUID[Compendium.pf2e.kingmaker-features.Item.ggVahjiAlVICpiPA]{Taunt}.</p>"
-                },
-                "campaignFeature->All-Out Assault": {
-                    "name": "All-Out Assault",
-                    "description": "<p><strong>Requirement</strong> @UUID[Compendium.pf2e.kingmaker-features.Item.QRwIcmCEHpDQm9DO]{Merciless}</p>\n<hr />\n<p>Your army attacks with frightening vigor. Attempt a melee Strike against an enemy army's AC.</p>\n<p><strong>Critical Success</strong> Your army inflicts @Damage[3|domains:melee-damage,strike-damage] points of damage to the target army. If your army's next war action this turn is an attack war action against a different target army, you gain a +1 circumstance bonus to the Strike as your fury continues to the new target.</p>\n<p><strong>Success</strong> Your army deals @Damage[2|domains:melee-damage,strike-damage] points of damage to the target army.</p>\n<p><strong>Failure</strong> Your army falters, but still deals @Damage[1|domains:melee-damage,strike-damage] point of damage to the target army.</p>\n<p><strong>Critical Failure</strong> Your army deals no damage to the target army and becomes @UUID[Compendium.pf2e.kingmaker-features.Item.ibcMcEGRbPRtk9Pu]{Outflanked} until the start of its next turn.</p>",
-                    "rules": {
-                        "0": {
-                            "label": "All-Out Assault Followup Attack (Crit Success)"
-                        },
-                        "1": {
-                            "label": "All-Out Assault Followup (Crit Success)"
-                        }
-                    }
-                },
-                "campaignFeature->Counterattack": {
-                    "name": "Counterattack",
-                    "description": "<p><strong>Requirement</strong> @UUID[Compendium.pf2e.kingmaker-features.Item.mHWF5XwUi8RK2lET]{Flexible Tactics}</p>\n<p><strong>Trigger</strong> An army you are engaged with attempts a maneuver war action.</p>\n<hr />\n<p>Your army lashes out at the foe as they attempt to perform a maneuver. Attempt a melee Strike against the triggering army's AC. Counterattack doesn't count toward your multiple attack penalty, and your multiple attack penalty doesn't apply to this Strike.</p>\n<p><strong>Critical Success</strong> You inflict 1 point of damage on the army and increase its @UUID[Compendium.pf2e.kingmaker-features.Item.7LMDwpVijK7x5Jst]{Shaken} condition value by 1.</p>\n<p><strong>Success</strong> You inflict 1 point of damage on the army.</p>"
                 }
             }
         },
@@ -7214,6 +7506,14 @@
                     "name": "Assurance (Survival)",
                     "description": "<p>Even in the worst circumstances, you can perform basic survival tasks. You can forgo rolling a skill check for survival to instead receive a result of 10 + your proficiency bonus (do not apply any other bonuses, penalties, or modifiers).</p>"
                 },
+                "feat->Angelkin": {
+                    "name": "Angelkin",
+                    "description": "<p>You descend from an angel-a winged messenger from Nirvana or one of the other celestial realms-which gives you a knack for cultures and languages.</p>\n<p>You gain the trained proficiency rank in Society. If you would automatically become trained in Society (from your background or class, for example), you instead become trained in a skill of your choice. You know the Celestial language, and you gain the @UUID[Compendium.pf2e.feats-srd.Item.P9HCz0uR6xPHuw72]{Multilingual} skill feat.</p>\n<hr />\n<p><em>Note: If you are already trained in the skill provided by this feat, you need to manually select an alternative skill.</em></p>"
+                },
+                "feat->Multilingual": {
+                    "name": "Multilingual",
+                    "description": "<p>You easily pick up new languages. You learn two new languages, chosen from common languages, uncommon languages, and any others you have access to. You learn an additional language if you are or become a master in Society and again if you are or become legendary.</p>\n<p><strong>Special</strong> You can select this feat multiple times. Each time, you learn additional languages.</p>"
+                },
                 "lore->Forest Lore": {
                     "name": "Forest Lore"
                 },
@@ -7243,6 +7543,10 @@
                 "spellcastingEntry->Divine Focus Spells": {
                     "name": "Divine Focus Spells"
                 },
+                "class->Cleric": {
+                    "name": "Cleric",
+                    "description": "<p><em>Deities work their will upon the world in infinite ways, and you serve as one of their most stalwart mortal servants. Blessed with divine magic, you live the ideals of your faith, adorn yourself with the symbols of your church, and train diligently to wield your deity's favored weapon. Your spells might protect and heal your allies, or they might punish foes and enemies of your faith, as your deity wills. Yours is a life of devotion, spreading the teachings of your faith through both word and deed.</em></p>\n<p><em>@UUID[Compendium.pf2e.journals.JournalEntry.kzxu2dI7tFxv6Ix6.JournalEntryPage.N4ABcd6CcCbqmw3x]{Cleric}</em></p>"
+                },
                 "feat->Deity (Sarenrae)": {
                     "name": "Deity (Sarenrae)",
                     "description": "<p>As a cleric, you are a mortal servitor of a deity you revere above all others. Information on deities can be found in the deities compendium, along with their alignments, areas of concern, and the benefits you get for being a cleric of that deity. Your alignment must be one allowed by your deity, as listed in their entry. Your deity grants you the trained proficiency rank in one skill and with the deity's favored weapon. If the favored weapon is uncommon, you also get access to that weapon.</p>\n<p>Your deity also adds spells to your spell list. You can prepare these just like you can any spell on the divine spell list, once you can prepare spells of their level as a cleric. Some of these spells aren't normally on the divine list, but they're divine spells if you prepare them this way.</p>"
@@ -7255,9 +7559,13 @@
                     "name": "Divine Spellcasting (Cleric)",
                     "description": "<p>Your deity bestows on you the power to cast divine spells. You can cast divine spells using the Cast a Spell activity, and you can supply material, somatic, and verbal components when casting spells. Because you're a cleric, you can usually hold a divine focus (such as a religious symbol) for spells requiring material components instead of needing to use a spell component pouch.</p>\n<p>At 1st level, you can prepare two 1st-rank spells and five cantrips each morning from the common spells on the divine spell list in this book or from other divine spells to which you gain access. Prepared spells remain available to you until you cast them or until you prepare your spells again. The number of spells you can prepare is called your spell slots.</p>\n<p>As you increase in level as a cleric, the number of spells you can prepare each day increases, as does the highest rank of spell you can cast.</p>\n<p>Some of your spells require you to attempt a spell attack roll to see how effective they are, or your enemies to roll against your spell DC (typically by attempting a saving throw). Since your key ability is Wisdom, your spell attack rolls and spell DCs use your Wisdom modifier.</p>"
                 },
+                "deity->Sarenrae": {
+                    "name": "Sarenrae",
+                    "description": "<p>Sarenrae is one of the most popular deities on Golarion by virtue of her association with the life-giving sun and her perpetual offer to help anyone be their best, even when they have made mistakes. Most people thank her for her kind work to channel the sun's power for everyone's safety and livelihood, and thank her clergy for granting her healing power to all who need it. Mortals look to the Dawnflower as an example of boundless love, exquisite kindness, and true patience. They pray to her to heal the sick, lift up the downtrodden, and illuminate darkness of circumstance as well as darkness of spirit. Her followers aspire to emulate her through generosity, nurturing, truthfulness, and selfless courage. They oppose evil everywhere with words first, and when necessary, with scimitar and flame.</p>\n<p><strong>Edicts</strong> destroy the Spawn of Rovagug, protect allies, provide aid to the sick and wounded, seek and allow redemption</p>\n<p><strong>Anathema</strong> create undead, lie, deny a repentant creature an opportunity for redemption, fail to strike down evil</p>\n<p><strong>Areas of Concern</strong> healing, honesty, redemption, and the sun</p>"
+                },
                 "feat->Domain Initiate (Fire)": {
                     "name": "Domain Initiate (Fire)",
-                    "description": "<p>Your deity bestows a special spell related to their powers. Select one domain\u2014a subject of particular interest to you within your religion\u2014from your deity's list. You gain an initial domain spell for that domain, a spell unique to the domain and not available to other clerics.</p>\n<p>Domain spells are a type of focus spell. It costs 1 Focus Point to cast a focus spell, and you start with a focus pool of 1 Focus Point. You refill your focus pool during your daily preparations, and you can regain 1 Focus Point by spending 10 minutes using the Refocus activity to pray to your deity or do service toward their causes. Focus spells are automatically heightened to half your level rounded up.</p>\n<p>Focus spells don't require spell slots, nor can you cast them using spell slots. Certain feats can give you more focus spells and increase the size of your focus pool, though your focus pool can never hold more than 3 Focus Points.</p>\n<hr />\n<p><strong>Special</strong> You can select this feat multiple times, selecting a different domain each time and gaining its domain spell.</p>"
+                    "description": "<p>Your deity bestows a special spell related to their powers. Select one domain—a subject of particular interest to you within your religion—from your deity's list. You gain an initial domain spell for that domain, a spell unique to the domain and not available to other clerics.</p>\n<p>Domain spells are a type of focus spell. It costs 1 Focus Point to cast a focus spell, and you start with a focus pool of 1 Focus Point. You refill your focus pool during your daily preparations, and you can regain 1 Focus Point by spending 10 minutes using the Refocus activity to pray to your deity or do service toward their causes. Focus spells are automatically heightened to half your level rounded up.</p>\n<p>Focus spells don't require spell slots, nor can you cast them using spell slots. Certain feats can give you more focus spells and increase the size of your focus pool, though your focus pool can never hold more than 3 Focus Points.</p>\n<hr />\n<p><strong>Special</strong> You can select this feat multiple times, selecting a different domain each time and gaining its domain spell.</p>"
                 },
                 "feat->First Doctrine (Cloistered Cleric)": {
                     "name": "First Doctrine (Cloistered Cleric)",
@@ -7276,6 +7584,14 @@
                 "feat->Assurance (Survival)": {
                     "name": "Assurance (Survival)",
                     "description": "<p>Even in the worst circumstances, you can perform basic survival tasks. You can forgo rolling a skill check for survival to instead receive a result of 10 + your proficiency bonus (do not apply any other bonuses, penalties, or modifiers).</p>"
+                },
+                "feat->Angelkin": {
+                    "name": "Angelkin",
+                    "description": "<p>You descend from an angel-a winged messenger from Nirvana or one of the other celestial realms-which gives you a knack for cultures and languages.</p>\n<p>You gain the trained proficiency rank in Society. If you would automatically become trained in Society (from your background or class, for example), you instead become trained in a skill of your choice. You know the Celestial language, and you gain the @UUID[Compendium.pf2e.feats-srd.Item.P9HCz0uR6xPHuw72]{Multilingual} skill feat.</p>\n<hr />\n<p><em>Note: If you are already trained in the skill provided by this feat, you need to manually select an alternative skill.</em></p>"
+                },
+                "feat->Multilingual": {
+                    "name": "Multilingual",
+                    "description": "<p>You easily pick up new languages. You learn two new languages, chosen from common languages, uncommon languages, and any others you have access to. You learn an additional language if you are or become a master in Society and again if you are or become legendary.</p>\n<p><strong>Special</strong> You can select this feat multiple times. Each time, you learn additional languages.</p>"
                 },
                 "lore->Forest Lore": {
                     "name": "Forest Lore"
@@ -7318,17 +7634,77 @@
                     "name": "Wand of Heal (Level 3)",
                     "description": "<p>@UUID[Compendium.pf2e.spells-srd.Item.rfZpqmj0AIIdkVIs]{Heal}</p><hr /><p>This baton is about a foot long and contains a single spell. The appearance typically relates to the spell within.</p>\n<p><strong>Activate</strong> Cast a Spell</p>\n<p><strong>Frequency</strong> once per day, plus overcharge</p>\n<hr />\n<p><strong>Effect</strong> You Cast the Spell at the indicated level.</p>\n<p><strong>Craft Requirements</strong> Supply a listed-level casting of the spell.</p>\n<hr />\n<p><em>Note: To create a scroll or wand of a specific spell, drag the spell from the compendium or compendium browser into the inventory of a PC, NPC, or loot actor.</em></p>"
                 },
+                "feat->Cooperative Nature": {
+                    "name": "Cooperative Nature",
+                    "description": "<p>The short human life span lends perspective and has taught you from a young age to set aside differences and work with others to achieve greatness. You gain a +4 circumstance bonus on checks to Aid.</p>"
+                },
+                "feat->Natural Ambition": {
+                    "name": "Natural Ambition",
+                    "description": "<p>You were raised to be ambitious and always reach for the stars, leading you to progress quickly in your chosen field. You gain a 1st-level class feat for your class. You must meet the prerequisites, but you can select the feat later in the character creation process in order to determine which prerequisites you meet.</p>"
+                },
+                "feat->Healing Hands": {
+                    "name": "Healing Hands",
+                    "description": "<p>Your vitality energy is even more vibrant and restorative. When you cast @UUID[Compendium.pf2e.spells-srd.Item.rfZpqmj0AIIdkVIs]{Heal}, you roll d10s instead of d8s.</p>"
+                },
                 "feat->Domain Initiate (Fire)": {
                     "name": "Domain Initiate (Fire)",
-                    "description": "<p>Your deity bestows a special spell related to their powers. Select one domain\u2014a subject of particular interest to you within your religion\u2014from your deity's list. You gain an initial domain spell for that domain, a spell unique to the domain and not available to other clerics.</p>\n<p>Domain spells are a type of focus spell. It costs 1 Focus Point to cast a focus spell, and you start with a focus pool of 1 Focus Point. You refill your focus pool during your daily preparations, and you can regain 1 Focus Point by spending 10 minutes using the Refocus activity to pray to your deity or do service toward their causes. Focus spells are automatically heightened to half your level rounded up.</p>\n<p>Focus spells don't require spell slots, nor can you cast them using spell slots. Certain feats can give you more focus spells and increase the size of your focus pool, though your focus pool can never hold more than 3 Focus Points.</p>\n<hr />\n<p><strong>Special</strong> You can select this feat multiple times, selecting a different domain each time and gaining its domain spell.</p>"
+                    "description": "<p>Your deity bestows a special spell related to their powers. Select one domain—a subject of particular interest to you within your religion—from your deity's list. You gain an initial domain spell for that domain, a spell unique to the domain and not available to other clerics.</p>\n<p>Domain spells are a type of focus spell. It costs 1 Focus Point to cast a focus spell, and you start with a focus pool of 1 Focus Point. You refill your focus pool during your daily preparations, and you can regain 1 Focus Point by spending 10 minutes using the Refocus activity to pray to your deity or do service toward their causes. Focus spells are automatically heightened to half your level rounded up.</p>\n<p>Focus spells don't require spell slots, nor can you cast them using spell slots. Certain feats can give you more focus spells and increase the size of your focus pool, though your focus pool can never hold more than 3 Focus Points.</p>\n<hr />\n<p><strong>Special</strong> You can select this feat multiple times, selecting a different domain each time and gaining its domain spell.</p>"
                 },
                 "feat->Turn Undead": {
                     "name": "Turn Undead",
                     "description": "<p>Undead harmed by your vitality energy might flee, compelled by an innate aversion to the force opposite undeath. When you use a @UUID[Compendium.pf2e.spells-srd.Item.rfZpqmj0AIIdkVIs]{Heal} spell to damage undead, each undead of your level or lower that critically fails its save gains the @UUID[Compendium.pf2e.conditionitems.Item.sDPxOjQ9kx2RZE8D]{Fleeing} condition for 1 round.</p>"
                 },
+                "feat->Selective Energy": {
+                    "name": "Selective Energy",
+                    "description": "<p>As you call down divine power, you can prevent some enemies from benefiting or some allies from being hurt. When you cast a version of @UUID[Compendium.pf2e.spells-srd.Item.wdA52JJnsuQWeyqz]{Harm} or @UUID[Compendium.pf2e.spells-srd.Item.rfZpqmj0AIIdkVIs]{Heal} that has an area, you can designate a number of creatures equal to your Charisma modifier (minimum 1) that are not targeted by the spell.</p>"
+                },
+                "feat->Communal Healing": {
+                    "name": "Communal Healing",
+                    "description": "<p>You're a conduit for vitality energy, and as you channel it through you, it heals some of your minor injuries.</p>\n<p>When you cast the @UUID[Compendium.pf2e.spells-srd.Item.rfZpqmj0AIIdkVIs]{Heal} spell to heal a single creature other than yourself, you regain Hit Points equal to the spell rank of the heal spell.</p>"
+                },
+                "feat->Advanced Domain": {
+                    "name": "Advanced Domain",
+                    "description": "<p>Your studies or prayers have unlocked deeper secrets of your deity's domain. You gain an advanced domain spell from one of your domains. Increase the number of Focus Points in your focus pool by 1.</p>\n<hr />\n<p><strong>Special</strong> You can select this feat multiple times. Each time, you must select a different advanced domain spell from a domain for which you have an initial domain spell.</p>"
+                },
+                "feat->Fleet": {
+                    "name": "Fleet",
+                    "description": "<p>You move more quickly on foot. Your Speed increases by 5 feet.</p>"
+                },
+                "feat->Toughness": {
+                    "name": "Toughness",
+                    "description": "<p>You can withstand more punishment than most before succumbing. Increase your maximum Hit Points by your level. The DC of recovery checks is equal to 9 + your dying condition value.</p>"
+                },
+                "feat->Battle Medicine": {
+                    "name": "Battle Medicine",
+                    "description": "<p><strong>Requirements</strong> You are holding or wearing healer's tools.</p>\n<hr />\n<p>You can patch up yourself or an adjacent ally, even in combat. Attempt a Medicine check with the same DC as for @UUID[Compendium.pf2e.actionspf2e.Item.1kGNdIIhuglAjIp9]{Treat Wounds}, and restore a corresponding amount of Hit Points; this does not remove the @UUID[Compendium.pf2e.conditionitems.Item.Yl48xTdMh3aeQYL2]{Wounded} condition. As with Treat Wounds, you can attempt checks against higher DCs if you have the minimum proficiency rank. The target is then temporarily immune to your Battle Medicine for 1 day.</p>\n<p><strong>Editors note</strong> Paizo has clarified the usage of worn tools:</p>\n<blockquote>Worn tools should only take 1 hand to use, as you only draw the things you need from the kit and not the entire kit. This has been marked for future errata.</blockquote>"
+                },
+                "feat->Continual Recovery": {
+                    "name": "Continual Recovery",
+                    "description": "<p>You zealously monitor a patient's progress to administer treatment faster. When you @UUID[Compendium.pf2e.actionspf2e.Item.1kGNdIIhuglAjIp9]{Treat Wounds}, your patient becomes immune for only 10 minutes instead of 1 hour. This applies only to your Treat Wounds activities, not any other the patient receives.</p>"
+                },
+                "feat->Student of the Canon": {
+                    "name": "Student of the Canon",
+                    "description": "<p>You've researched many faiths enough to recognize notions about them that are unlikely to be true.</p>\n<p>If you roll a critical failure at a Religion check to Decipher Writing of a religious nature or to Recall Knowledge about the tenets of faiths, you get a failure instead.</p>\n<p>When attempting to Recall Knowledge about the tenets of your own faith, if you roll a failure, you get a success instead, and if you roll a success, you get a critical success instead.</p>",
+                    "rules": {
+                        "0": {
+                            "text": "When you roll a critical failure at a Religion check to Decipher Writing of a religious nature or to Recall Knowledge about the tenets of faiths, you get a failure instead."
+                        },
+                        "1": {
+                            "text": "When attempting to Recall Knowledge about the tenets of your own faith, if you roll a failure, you get a success instead, and if you roll a success, you get a critical success instead."
+                        }
+                    }
+                },
+                "feat->Ward Medic": {
+                    "name": "Ward Medic",
+                    "description": "<p>You've studied in large medical wards, treating several patients at once and tending to all their needs. When you use Treat Disease or Treat Wounds, you can treat up to two targets. If you're a master in Medicine, you can treat up to four targets, and if you're legendary, you can treat up to eight targets.</p>"
+                },
                 "feat->Celestial Wings": {
                     "name": "Celestial Wings",
                     "description": "<p><strong>Frequency</strong> once per day</p>\n<hr />\n<p>With effort, you can call forth magical wings from your back, similar in appearance to those of your celestial forebears. These wings remain for 10 minutes. You gain a fly Speed equal to your Speed while you've manifested your wings.</p>\n<p>@UUID[Compendium.pf2e.feat-effects.Item.HfXGhXc9D120gvl5]{Effect: Divine Wings}</p>"
+                },
+                "class->Cleric": {
+                    "name": "Cleric",
+                    "description": "<p><em>Deities work their will upon the world in infinite ways, and you serve as one of their most stalwart mortal servants. Blessed with divine magic, you live the ideals of your faith, adorn yourself with the symbols of your church, and train diligently to wield your deity's favored weapon. Your spells might protect and heal your allies, or they might punish foes and enemies of your faith, as your deity wills. Yours is a life of devotion, spreading the teachings of your faith through both word and deed.</em></p>\n<p><em>@UUID[Compendium.pf2e.journals.JournalEntry.kzxu2dI7tFxv6Ix6.JournalEntryPage.N4ABcd6CcCbqmw3x]{Cleric}</em></p>"
                 },
                 "feat->Deity (Sarenrae)": {
                     "name": "Deity (Sarenrae)",
@@ -7341,6 +7717,10 @@
                 "feat->Divine Spellcasting (Cleric)": {
                     "name": "Divine Spellcasting (Cleric)",
                     "description": "<p>Your deity bestows on you the power to cast divine spells. You can cast divine spells using the Cast a Spell activity, and you can supply material, somatic, and verbal components when casting spells. Because you're a cleric, you can usually hold a divine focus (such as a religious symbol) for spells requiring material components instead of needing to use a spell component pouch.</p>\n<p>At 1st level, you can prepare two 1st-rank spells and five cantrips each morning from the common spells on the divine spell list in this book or from other divine spells to which you gain access. Prepared spells remain available to you until you cast them or until you prepare your spells again. The number of spells you can prepare is called your spell slots.</p>\n<p>As you increase in level as a cleric, the number of spells you can prepare each day increases, as does the highest rank of spell you can cast.</p>\n<p>Some of your spells require you to attempt a spell attack roll to see how effective they are, or your enemies to roll against your spell DC (typically by attempting a saving throw). Since your key ability is Wisdom, your spell attack rolls and spell DCs use your Wisdom modifier.</p>"
+                },
+                "deity->Sarenrae": {
+                    "name": "Sarenrae",
+                    "description": "<p>Sarenrae is one of the most popular deities on Golarion by virtue of her association with the life-giving sun and her perpetual offer to help anyone be their best, even when they have made mistakes. Most people thank her for her kind work to channel the sun's power for everyone's safety and livelihood, and thank her clergy for granting her healing power to all who need it. Mortals look to the Dawnflower as an example of boundless love, exquisite kindness, and true patience. They pray to her to heal the sick, lift up the downtrodden, and illuminate darkness of circumstance as well as darkness of spirit. Her followers aspire to emulate her through generosity, nurturing, truthfulness, and selfless courage. They oppose evil everywhere with words first, and when necessary, with scimitar and flame.</p>\n<p><strong>Edicts</strong> destroy the Spawn of Rovagug, protect allies, provide aid to the sick and wounded, seek and allow redemption</p>\n<p><strong>Anathema</strong> create undead, lie, deny a repentant creature an opportunity for redemption, fail to strike down evil</p>\n<p><strong>Areas of Concern</strong> healing, honesty, redemption, and the sun</p>"
                 },
                 "feat->First Doctrine (Cloistered Cleric)": {
                     "name": "First Doctrine (Cloistered Cleric)",
@@ -7403,18 +7783,6 @@
                 "campaignFeature->Brutal Assault": {
                     "name": "Brutal Assault",
                     "description": "<p>The Troll Marauders can use the All-Out-Assault action. When they do, an army damaged by the assault must succeed at a DC24 Morale check to avoid becoming @UUID[Compendium.pf2e.kingmaker-features.Item.7LMDwpVijK7x5Jst]{shaken 1} (or @UUID[Compendium.pf2e.kingmaker-features.Item.7LMDwpVijK7x5Jst]{shaken 2} on a critical failure) as a result of the brutality of this attack.</p>"
-                },
-                "campaignFeature->All-Out Assault": {
-                    "name": "All-Out Assault",
-                    "description": "<p><strong>Requirement</strong> @UUID[Compendium.pf2e.kingmaker-features.Item.QRwIcmCEHpDQm9DO]{Merciless}</p>\n<hr />\n<p>Your army attacks with frightening vigor. Attempt a melee Strike against an enemy army's AC.</p>\n<p><strong>Critical Success</strong> Your army inflicts @Damage[3|domains:melee-damage,strike-damage] points of damage to the target army. If your army's next war action this turn is an attack war action against a different target army, you gain a +1 circumstance bonus to the Strike as your fury continues to the new target.</p>\n<p><strong>Success</strong> Your army deals @Damage[2|domains:melee-damage,strike-damage] points of damage to the target army.</p>\n<p><strong>Failure</strong> Your army falters, but still deals @Damage[1|domains:melee-damage,strike-damage] point of damage to the target army.</p>\n<p><strong>Critical Failure</strong> Your army deals no damage to the target army and becomes @UUID[Compendium.pf2e.kingmaker-features.Item.ibcMcEGRbPRtk9Pu]{Outflanked} until the start of its next turn.</p>",
-                    "rules": {
-                        "0": {
-                            "label": "All-Out Assault Followup Attack (Crit Success)"
-                        },
-                        "1": {
-                            "label": "All-Out Assault Followup (Crit Success)"
-                        }
-                    }
                 },
                 "campaignFeature->Frightening Foe": {
                     "name": "Frightening Foe",
@@ -7503,28 +7871,8 @@
                     "name": "Tusker Training",
                     "description": "<p>The Tusker Riders can use the @UUID[Compendium.pf2e.kingmaker-features.Item.Z6jMZgAxI1zRO7Sl]{All-Out Assault}, @UUID[Compendium.pf2e.kingmaker-features.Item.GIbm9qo8VuFgPywJ]{Covering Fire}, and @UUID[Compendium.pf2e.kingmaker-features.Item.ggVahjiAlVICpiPA]{Taunt} tactical actions.</p>"
                 },
-                "campaignFeature->All-Out Assault": {
-                    "name": "All-Out Assault",
-                    "description": "<p><strong>Requirement</strong> @UUID[Compendium.pf2e.kingmaker-features.Item.QRwIcmCEHpDQm9DO]{Merciless}</p>\n<hr />\n<p>Your army attacks with frightening vigor. Attempt a melee Strike against an enemy army's AC.</p>\n<p><strong>Critical Success</strong> Your army inflicts @Damage[3|domains:melee-damage,strike-damage] points of damage to the target army. If your army's next war action this turn is an attack war action against a different target army, you gain a +1 circumstance bonus to the Strike as your fury continues to the new target.</p>\n<p><strong>Success</strong> Your army deals @Damage[2|domains:melee-damage,strike-damage] points of damage to the target army.</p>\n<p><strong>Failure</strong> Your army falters, but still deals @Damage[1|domains:melee-damage,strike-damage] point of damage to the target army.</p>\n<p><strong>Critical Failure</strong> Your army deals no damage to the target army and becomes @UUID[Compendium.pf2e.kingmaker-features.Item.ibcMcEGRbPRtk9Pu]{Outflanked} until the start of its next turn.</p>",
-                    "rules": {
-                        "0": {
-                            "label": "All-Out Assault Followup Attack (Crit Success)"
-                        },
-                        "1": {
-                            "label": "All-Out Assault Followup (Crit Success)"
-                        }
-                    }
-                },
-                "campaignFeature->Covering Fire": {
-                    "name": "Covering Fire",
-                    "description": "<p><strong>Requirement</strong> @UUID[Compendium.pf2e.kingmaker-features.Item.lcNZMlMNPUrnMgQ2]{Sharpshooter}</p>\n<hr />\n<p>Your army's ranged fire provides cover and protection for an allied army to maneuver. Attempt a ranged Strike against a target army's AC.</p>\n<p><strong>Critical Success</strong> You inflict 2 points of damage to the target army, and it cannot take reactions triggered by maneuver war actions from any army until the start of your next turn.</p>\n<p><strong>Success</strong> You inflict 1 point of damage to the target army, and it can't take reactions triggered by maneuver war actions from any army until the start of your next turn.</p>\n<p><strong>Failure</strong> Your attack fails to provide covering fire, but you inflict 1 point of damage to the target army.</p>\n<p><strong>Critical Failure</strong> Your attempt fails.</p>"
-                },
                 "campaignFeature->Trampling Charge": {
                     "name": "Trampling Charge"
-                },
-                "campaignFeature->Increased Ammunition": {
-                    "name": "Increased Ammunition",
-                    "description": "<p>You increase the number of times your army can use ranged Strikes in each war encounter by 2. This tactic can be taken multiple times; each time you do so, increase the army's maximum number of ranged Strikes by 2.</p>"
                 }
             }
         },
@@ -7546,6 +7894,18 @@
                     "name": "Versatile Heritage",
                     "description": "<p>Humanity's versatility and ambition have fueled its ascendance to be the most common ancestry in most nations throughout the world. Select a general feat of your choice for which you meet the prerequisites (as with your ancestry feat, you can select this general feat at any point during character creation).</p>"
                 },
+                "feat->Toughness": {
+                    "name": "Toughness",
+                    "description": "<p>You can withstand more punishment than most before succumbing. Increase your maximum Hit Points by your level. The DC of recovery checks is equal to 9 + your dying condition value.</p>"
+                },
+                "feat->Natural Skill": {
+                    "name": "Natural Skill",
+                    "description": "<p>Your ingenuity allows you to learn a wide variety of skills. You gain the trained proficiency rank in two skills of your choice.</p>"
+                },
+                "feat->Reactive Shield": {
+                    "name": "Reactive Shield",
+                    "description": "<p><strong>Trigger</strong> An enemy hits you with a melee strike.</p>\n<hr />\n<p>You can snap your shield into place just as you would take a blow, avoiding the hit at the last second. You immediately use the @UUID[Compendium.pf2e.actionspf2e.Item.xjGwis0uaC2305pm]{Raise a Shield} action and gain your shield's bonus to AC. The circumstance bonus from the shield applies to your AC when you're determining the outcome of the triggering attack.</p>"
+                },
                 "lore->Warfare Lore": {
                     "name": "Warfare Lore"
                 },
@@ -7556,6 +7916,14 @@
                 "effect->Effect: Paizo Adjustment": {
                     "name": "Effect: Paizo Adjustment",
                     "description": "<p>Changes shortbow to 1d8 to match the values printed in the Kingmaker Companion Guide</p>"
+                },
+                "feat->Quick Jump": {
+                    "name": "Quick Jump",
+                    "description": "<p>You can use High Jump and Long Jump as a single action instead of 2 actions. If you do, you don't perform the initial Stride (nor do you fail if you don't Stride 10 feet).</p>"
+                },
+                "class->Fighter": {
+                    "name": "Fighter",
+                    "description": "<p><em>Fighting for honor, greed, loyalty, or simply the thrill of battle, you are an undisputed master of weaponry and combat techniques. You combine your actions through clever combinations of opening moves, finishing strikes, and counterattacks whenever your foes are unwise enough to drop their guard. Whether you are a knight, mercenary, sharpshooter, or blade master, you have honed your martial skills into an art form and perform devastating critical attacks on your enemies.</em></p>\n<p><em>@UUID[Compendium.pf2e.journals.JournalEntry.kzxu2dI7tFxv6Ix6.JournalEntryPage.HZbrRRVzW7w17L2W]{Fighter}</em></p>"
                 },
                 "action->Attack of Opportunity": {
                     "name": "Attack of Opportunity",
@@ -7571,12 +7939,28 @@
                     "name": "Versatile Heritage",
                     "description": "<p>Humanity's versatility and ambition have fueled its ascendance to be the most common ancestry in most nations throughout the world. Select a general feat of your choice for which you meet the prerequisites (as with your ancestry feat, you can select this general feat at any point during character creation).</p>"
                 },
+                "feat->Toughness": {
+                    "name": "Toughness",
+                    "description": "<p>You can withstand more punishment than most before succumbing. Increase your maximum Hit Points by your level. The DC of recovery checks is equal to 9 + your dying condition value.</p>"
+                },
+                "feat->Natural Skill": {
+                    "name": "Natural Skill",
+                    "description": "<p>Your ingenuity allows you to learn a wide variety of skills. You gain the trained proficiency rank in two skills of your choice.</p>"
+                },
+                "feat->Reactive Shield": {
+                    "name": "Reactive Shield",
+                    "description": "<p><strong>Trigger</strong> An enemy hits you with a melee strike.</p>\n<hr />\n<p>You can snap your shield into place just as you would take a blow, avoiding the hit at the last second. You immediately use the @UUID[Compendium.pf2e.actionspf2e.Item.xjGwis0uaC2305pm]{Raise a Shield} action and gain your shield's bonus to AC. The circumstance bonus from the shield applies to your AC when you're determining the outcome of the triggering attack.</p>"
+                },
                 "lore->Warfare Lore": {
                     "name": "Warfare Lore"
                 },
                 "consumable->Juggernaut Mutagen (Moderate)": {
                     "name": "Juggernaut Mutagen (Moderate)",
                     "description": "<p><strong>Activate</strong> <span class=\"action-glyph\">A</span> Interact</p>\n<hr />\n<p>After you drink this mutagen, your body becomes thick and sturdy. You exhibit a healthy glow, though you tend to be ponderous and unobservant.</p>\n<p><strong>Benefit</strong> You gain a +2 item bonus to Fortitude saves and 10 temporary Hit Points. Whenever you are at maximum Hit Points for at least 1 full minute, you regain the temporary Hit Points.</p>\n<p><strong>Drawback</strong> You take a -2 penalty to Will saves, Perception checks and initiative rolls.</p>\n<p><strong>Duration</strong> 10 minute.</p>\n<p>@UUID[Compendium.pf2e.equipment-effects.Item.fUrZ4xcMJz0CfTyG]{Effect: Juggernaut Mutagen (Moderate)}</p>"
+                },
+                "feat->Quick Jump": {
+                    "name": "Quick Jump",
+                    "description": "<p>You can use High Jump and Long Jump as a single action instead of 2 actions. If you do, you don't perform the initial Stride (nor do you fail if you don't Stride 10 feet).</p>"
                 },
                 "consumable->Elixir of Life (Lesser)": {
                     "name": "Elixir of Life (Lesser)",
@@ -7590,6 +7974,22 @@
                     "name": "Sturdy Shield (Lesser)",
                     "description": "<p>With a superior design and excellent craftsmanship, this steel shield has higher Hardness than its non-magical counterparts, making it harder to break and destroy.</p>\n<p>The shield has Hardness 10, HP 80, and BT 40.</p>"
                 },
+                "feat->Natural Ambition": {
+                    "name": "Natural Ambition",
+                    "description": "<p>You were raised to be ambitious and always reach for the stars, leading you to progress quickly in your chosen field. You gain a 1st-level class feat for your class. You must meet the prerequisites, but you can select the feat later in the character creation process in order to determine which prerequisites you meet.</p>"
+                },
+                "feat->Cooperative Nature": {
+                    "name": "Cooperative Nature",
+                    "description": "<p>The short human life span lends perspective and has taught you from a young age to set aside differences and work with others to achieve greatness. You gain a +4 circumstance bonus on checks to Aid.</p>"
+                },
+                "feat->Aggressive Block": {
+                    "name": "Aggressive Block",
+                    "description": "<p><strong>Trigger</strong> You use the Shield Block reaction, and the opponent that triggered Shield Block is adjacent to you and is your size or smaller.</p>\n<hr />\n<p>You push back as you block, knocking your foe away or off balance.</p>\n<p>You use your shield to push the triggering creature, either automatically @UUID[Compendium.pf2e.actionspf2e.Item.7blmbDrQFNfdT731]{Shoving} it 5 feet or causing it to become @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} until the start of your next turn.</p>\n<p>The triggering creature chooses whether to be moved or become off-guard. If it chooses to be moved, you choose the direction. If the Shove would cause it to hit a solid object, enter a square of difficult terrain, or enter another creature's space, it must become off-guard instead of being moved.</p>"
+                },
+                "feat->Powerful Shove": {
+                    "name": "Powerful Shove",
+                    "description": "<p>You can push larger foes around with your attack. You can use @UUID[Compendium.pf2e.feats-srd.Item.19OLlTrxvEtDAOHc]{Aggressive Block} or @UUID[Compendium.pf2e.feats-srd.Item.gt9pvIicabSOe6pB]{Brutish Shove} against a creature up to two sizes larger than you.</p>\n<p>When a creature you @UUID[Compendium.pf2e.actionspf2e.Item.7blmbDrQFNfdT731]{Shove} has to stop moving because it would hit an object, it takes damage equal to your Strength modifier (minimum 1). This happens regardless of how you Shoved the creature.</p>"
+                },
                 "feat->Quick Shield Block (Fighter)": {
                     "name": "Quick Shield Block (Fighter)",
                     "description": "<p>You can bring your shield into place with hardly a thought. At the start of each of your turns, you gain an additional reaction that you can use only to @UUID[Compendium.pf2e.feats-srd.Item.jM72TjJ965jocBV8]{Shield Block}.</p>"
@@ -7598,9 +7998,37 @@
                     "name": "Shield Warden (Fighter)",
                     "description": "<p>You use your shield to protect your allies as well as yourself. When you have a shield raised, you can use your Shield Block reaction when an attack is made against an ally adjacent to you. If you do, the shield prevents that ally from taking damage instead of preventing you from taking damage, following the normal rules for Shield Block.</p>"
                 },
+                "feat->Diehard": {
+                    "name": "Diehard",
+                    "description": "<p>It takes more to kill you than most. You die from the dying condition at dying 5, rather than dying 4.</p>"
+                },
+                "feat->Fleet": {
+                    "name": "Fleet",
+                    "description": "<p>You move more quickly on foot. Your Speed increases by 5 feet.</p>"
+                },
+                "feat->Cat Fall": {
+                    "name": "Cat Fall",
+                    "description": "<p>Your catlike aerial acrobatics allow you to cushion your falls. Treat falls as 10 feet shorter. If you're an expert in Acrobatics, treat falls as 25 feet shorter. If you're a master in Acrobatics, treat them as 50 feet shorter. If you're legendary in Acrobatics, you always land on your feet and don't take damage, regardless of the distance of the fall.</p>"
+                },
+                "feat->Intimidating Glare": {
+                    "name": "Intimidating Glare",
+                    "description": "<p>You can @UUID[Compendium.pf2e.actionspf2e.Item.2u915NdUyQan6uKF]{Demoralize} with a mere glare. When you do, Demoralize loses the auditory trait and gains the visual trait, and you don't take a penalty if the creature doesn't understand your language.</p>"
+                },
+                "feat->Titan Wrestler": {
+                    "name": "Titan Wrestler",
+                    "description": "<p>You can attempt to @UUID[Compendium.pf2e.actionspf2e.Item.Dt6B1slsBy8ipJu9]{Disarm}, @UUID[Compendium.pf2e.actionspf2e.Item.PMbdMWc2QroouFGD]{Grapple}, @UUID[Compendium.pf2e.actionspf2e.Item.7blmbDrQFNfdT731]{Shove}, or @UUID[Compendium.pf2e.actionspf2e.Item.ge56Lu1xXVFYUnLP]{Trip} creatures up to two sizes larger than you, or up to three sizes larger than you if you're legendary in Athletics.</p>"
+                },
+                "feat->Intimidating Prowess": {
+                    "name": "Intimidating Prowess",
+                    "description": "<p>In situations where you can physically menace the target when you @UUID[Compendium.pf2e.actionspf2e.Item.tHCqgwjtQtzNqVvd]{Coerce} or @UUID[Compendium.pf2e.actionspf2e.Item.2u915NdUyQan6uKF]{Demoralize}, you gain a +1 circumstance bonus to your Intimidation check and you ignore the penalty for not sharing a language. If your Strength score is 20 or higher and you are a master in Intimidation, this bonus increases to +2.</p>"
+                },
                 "effect->Effect: Paizo Adjustment": {
                     "name": "Effect: Paizo Adjustment",
                     "description": "<p>Changes composite shortbow to 1d8 base die instead of 1d6 and subtracts 2 damage to match the values printed in the Kingmaker Companion Guide</p>"
+                },
+                "class->Fighter": {
+                    "name": "Fighter",
+                    "description": "<p><em>Fighting for honor, greed, loyalty, or simply the thrill of battle, you are an undisputed master of weaponry and combat techniques. You combine your actions through clever combinations of opening moves, finishing strikes, and counterattacks whenever your foes are unwise enough to drop their guard. Whether you are a knight, mercenary, sharpshooter, or blade master, you have honed your martial skills into an art form and perform devastating critical attacks on your enemies.</em></p>\n<p><em>@UUID[Compendium.pf2e.journals.JournalEntry.kzxu2dI7tFxv6Ix6.JournalEntryPage.HZbrRRVzW7w17L2W]{Fighter}</em></p>"
                 },
                 "feat->Fighter Weapon Mastery (Sword)": {
                     "name": "Fighter Weapon Mastery (Sword)",
@@ -7670,7 +8098,7 @@
                 },
                 "action->Aura of Disquietude": {
                     "name": "Aura of Disquietude",
-                    "description": "<p>30 feet. @Check[will|dc:35]</p>\n<p>As @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.etMnv73EIdEZrYYu]{Frightful Presence}, plus a creature frightened by the aura becomes suspicious: it doesn't count any other creature as its ally, and it can't @UUID[Compendium.pf2e.actionspf2e.Item.HCl3pzVefiv9ZKQW]{Aid} or flank. On a critical failure, the creature also can't be a willing target for harmless or helpful magic. The vilderavn can activate or deactivate this aura using a single action, which has the concentrate trait.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.3oF2DVXCmJ7VloBb]{Effect: Aura of Disquietude}</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.FrightfulPresence]</p>"
+                    "description": "<p>30 feet. @Check[will|dc:35|options:area-effect,inflicts:frightened]</p>\n<p>As @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.etMnv73EIdEZrYYu]{Frightful Presence}, plus a creature frightened by the aura becomes suspicious: it doesn't count any other creature as its ally, and it can't @UUID[Compendium.pf2e.actionspf2e.Item.HCl3pzVefiv9ZKQW]{Aid} or flank. On a critical failure, the creature also can't be a willing target for harmless or helpful magic. The vilderavn can activate or deactivate this aura using a single action, which has the concentrate trait.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.3oF2DVXCmJ7VloBb]{Effect: Aura of Disquietude}</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.FrightfulPresence]</p>"
                 },
                 "action->Bloodbird": {
                     "name": "Bloodbird",
@@ -7777,7 +8205,7 @@
             "items": {
                 "action->Beyond the Barrier": {
                     "name": "Beyond the Barrier",
-                    "description": "<p><strong>Trigger</strong> A creature within the pit takes three consecutive Interact actions to push their way through the barrier in the pit</p><hr /><p><strong>Effect</strong> The creature is pulled through the portal into the depths of space. It can attempt to [[/act grab-an-edge dc=42]] with a DC 42 Reflex save, otherwise it discovers the portal is one-way\u2014no return route to Golarion exists. The creature takes @Damage[10d6[bludgeoning]] damage (@Check[fortitude|dc:42|basic]) at the start of each turn and begins to suffocate. Without powerful magic like @UUID[Compendium.pf2e.spells-srd.Item.5bTt2CvYHPvaR7QQ]{Interplanar Teleport} or @UUID[Compendium.pf2e.spells-srd.Item.6dDtGIUerazSHIOu]{Wish}, even a creature that can survive the depths of space will be lost forever\u2014as the Void Pit deposits them in the unimaginably vast gulf between galaxies in which sound cannot exist, where they cannot cast spells with verbal components.</p>"
+                    "description": "<p><strong>Trigger</strong> A creature within the pit takes three consecutive Interact actions to push their way through the barrier in the pit</p><hr /><p><strong>Effect</strong> The creature is pulled through the portal into the depths of space. It can attempt to [[/act grab-an-edge dc=42]] with a DC 42 Reflex save, otherwise it discovers the portal is one-way—no return route to Golarion exists. The creature takes @Damage[10d6[bludgeoning]] damage (@Check[fortitude|dc:42|basic]) at the start of each turn and begins to suffocate. Without powerful magic like @UUID[Compendium.pf2e.spells-srd.Item.5bTt2CvYHPvaR7QQ]{Interplanar Teleport} or @UUID[Compendium.pf2e.spells-srd.Item.6dDtGIUerazSHIOu]{Wish}, even a creature that can survive the depths of space will be lost forever—as the Void Pit deposits them in the unimaginably vast gulf between galaxies in which sound cannot exist, where they cannot cast spells with verbal components.</p>"
                 }
             }
         },
@@ -7850,7 +8278,7 @@
                 },
                 "action->Frightful Presence": {
                     "name": "Frightful Presence",
-                    "description": "<p>60 feet. @Check[will|dc:29]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.FrightfulPresence]</p>"
+                    "description": "<p>60 feet. @Check[will|dc:29|options:area-effect,inflicts:frightened]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.FrightfulPresence]</p>"
                 },
                 "action->Steady Spellcasting": {
                     "name": "Steady Spellcasting",
@@ -8384,7 +8812,7 @@
             "items": {
                 "campaignFeature->Flight": {
                     "name": "Flight",
-                    "description": "<p>The Wyvern Flight ignores all ground- based difficult terrain and cannot become mired by effects that can be escaped by flight. When they use the @UUID[Compendium.pf2e.kingmaker-features.Item.Pu5bptxLrKFyEzFh]{Disengage} action against armies that can't fly, their check result is improved one degree. Armies that lack the ability to fly suffer a \u20132 circumstance penalty on Advance actions against a Wyvern Flight.</p>"
+                    "description": "<p>The Wyvern Flight ignores all ground- based difficult terrain and cannot become mired by effects that can be escaped by flight. When they use the @UUID[Compendium.pf2e.kingmaker-features.Item.Pu5bptxLrKFyEzFh]{Disengage} action against armies that can't fly, their check result is improved one degree. Armies that lack the ability to fly suffer a –2 circumstance penalty on Advance actions against a Wyvern Flight.</p>"
                 },
                 "campaignFeature->Wyvern Venom": {
                     "name": "Wyvern Venom",
@@ -8393,22 +8821,6 @@
                 "campaignFeature->Wyvern Tactics": {
                     "name": "Wyvern Tactics",
                     "description": "<p>The Wyvern Flight can use the @UUID[Compendium.pf2e.kingmaker-features.Item.Z6jMZgAxI1zRO7Sl]{All-Out Assault} and @UUID[Compendium.pf2e.kingmaker-features.Item.8wjiF3ctXUjP9oyX]{Counterattack} tactical actions.</p>"
-                },
-                "campaignFeature->All-Out Assault": {
-                    "name": "All-Out Assault",
-                    "description": "<p><strong>Requirement</strong> @UUID[Compendium.pf2e.kingmaker-features.Item.QRwIcmCEHpDQm9DO]{Merciless}</p>\n<hr />\n<p>Your army attacks with frightening vigor. Attempt a melee Strike against an enemy army's AC.</p>\n<p><strong>Critical Success</strong> Your army inflicts @Damage[3|domains:melee-damage,strike-damage] points of damage to the target army. If your army's next war action this turn is an attack war action against a different target army, you gain a +1 circumstance bonus to the Strike as your fury continues to the new target.</p>\n<p><strong>Success</strong> Your army deals @Damage[2|domains:melee-damage,strike-damage] points of damage to the target army.</p>\n<p><strong>Failure</strong> Your army falters, but still deals @Damage[1|domains:melee-damage,strike-damage] point of damage to the target army.</p>\n<p><strong>Critical Failure</strong> Your army deals no damage to the target army and becomes @UUID[Compendium.pf2e.kingmaker-features.Item.ibcMcEGRbPRtk9Pu]{Outflanked} until the start of its next turn.</p>",
-                    "rules": {
-                        "0": {
-                            "label": "All-Out Assault Followup Attack (Crit Success)"
-                        },
-                        "1": {
-                            "label": "All-Out Assault Followup (Crit Success)"
-                        }
-                    }
-                },
-                "campaignFeature->Counterattack": {
-                    "name": "Counterattack",
-                    "description": "<p><strong>Requirement</strong> @UUID[Compendium.pf2e.kingmaker-features.Item.mHWF5XwUi8RK2lET]{Flexible Tactics}</p>\n<p><strong>Trigger</strong> An army you are engaged with attempts a maneuver war action.</p>\n<hr />\n<p>Your army lashes out at the foe as they attempt to perform a maneuver. Attempt a melee Strike against the triggering army's AC. Counterattack doesn't count toward your multiple attack penalty, and your multiple attack penalty doesn't apply to this Strike.</p>\n<p><strong>Critical Success</strong> You inflict 1 point of damage on the army and increase its @UUID[Compendium.pf2e.kingmaker-features.Item.7LMDwpVijK7x5Jst]{Shaken} condition value by 1.</p>\n<p><strong>Success</strong> You inflict 1 point of damage on the army.</p>"
                 }
             }
         },

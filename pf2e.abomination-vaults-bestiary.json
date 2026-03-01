@@ -230,7 +230,7 @@
         },
         "Befuddling Gas Trap": {
             "name": "Befuddling Gas Trap",
-            "descriptionHazard": "<p>Seven nozzles hidden within holes in the 15\u2011foot-high ceiling release a poison gas.</p>",
+            "descriptionHazard": "<p>Seven nozzles hidden within holes in the 15‑foot-high ceiling release a poison gas.</p>",
             "disable": "<p>@Check[thievery|dc:33|name:Disable Hidden Mechanism|traits:action:disable-a-device] (master) to disable the hidden mechanism on the north wall, immediately sucking the gas from the room, or @Check[thievery|dc:29|name:Plug One Nozzle|traits:action:disable-a-device] (expert) to adequately plug one of the seven nozzles. When all seven nozzles are plugged or destroyed, the trap is deactivated.</p>",
             "reset": "<p>After an hour, the trap deactivates; the gas disperses slowly, and the doors can be opened again. After 24 hours, the gas builds up and the trap can be triggered again.</p>",
             "routine": "<p>(1 action) The gas intensifies. Each creature in the room must make a @Check[fortitude|dc:30].</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected and becomes temporarily immune to the gas for 1 hour, though if the creature has already been stupefied by the trap, that condition remains for its normal duration.</p>\n<p><strong>Success</strong> The creature is unaffected.</p>\n<p><strong>Failure</strong> The creature becomes @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 1} for 24 hours. If the target is already stupefied, the condition value increases by 1 (to a maximum of stupefied 4) and the target takes @Damage[8d6[mental]] damage.</p>\n<p><strong>Critical Effect</strong> As failure, except the target takes double the mental damage.</p>",
@@ -347,7 +347,7 @@
         },
         "Blood of Belcorra": {
             "name": "Blood of Belcorra",
-            "descriptionHazard": "<p>A bloody image of Belcorra arises, emits a soul\u2011draining light, then inhales blood from living creatures in the room.</p>",
+            "descriptionHazard": "<p>A bloody image of Belcorra arises, emits a soul‑draining light, then inhales blood from living creatures in the room.</p>",
             "disable": "<p>@Check[thievery|dc:22|name:Wipe Away Blood] (trained) to wipe away enough of the bloodstain to disrupt the haunt's necromantic energies, or @Check[religion|dc:20|name:Excorcise Haunt] (trained) to exorcise the haunt</p>",
             "reset": "<p>If the haunt is disabled or destroyed through damage, the bloody phantom of Belcorra sprays upward in a spiral, dousing the trap door leading to area <strong>A25</strong> before draining upward through the keyhole, which reduces the Thievery DC to @UUID[Compendium.pf2e.actionspf2e.Item.2EE4aF4SZpYf0R6H]{Pick the Lock} to @Check[thievery|dc:20|name:Pick Trap Door|traits:action:pick-a-lock,skill,manipulate].</p>\n<p>At the next sunrise, the blood drains back down to this room and the haunt resets. The haunt is destroyed permanently once Lasda Venkervale is rescued from area <strong>D9</strong>.</p>",
             "routine": "<p>(1 action) The bloody image opens its mouth and appears to inhale, drawing blood from the body of one creature in its line of sight within 90 feet from the center of area <strong>A11</strong>. The creature targeted must attempt a @Check[fortitude|dc:20|traits:damaging-effect] save.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature takes @Damage[1d10[bleed]].</p>\n<p><strong>Failure</strong> The creature takes @Damage[(1d10+6)[bleed]] damage.</p>\n<p><strong>Critical Failure</strong> The creature takes @Damage[(2d10+6)[bleed]] damage and is @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 2} as long as it's bleeding.</p>",
@@ -1025,7 +1025,7 @@
                 },
                 "action->Frightful Presence": {
                     "name": "Frightful Presence",
-                    "description": "<p>60 feet. @Check[will|dc:27]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.FrightfulPresence]</p>"
+                    "description": "<p>60 feet. @Check[will|dc:27|options:area-effect,inflicts:frightened]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.FrightfulPresence]</p>"
                 },
                 "action->Aquatic Ambush": {
                     "name": "Aquatic Ambush",
@@ -1115,7 +1115,7 @@
                 },
                 "action->Frightful Presence": {
                     "name": "Frightful Presence",
-                    "description": "<p>60 feet. @Check[will|dc:27]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.FrightfulPresence]</p>"
+                    "description": "<p>60 feet. @Check[will|dc:27|options:area-effect,inflicts:frightened]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.FrightfulPresence]</p>"
                 },
                 "action->Aquatic Ambush": {
                     "name": "Aquatic Ambush",
@@ -1769,7 +1769,7 @@
                 },
                 "action->Stench": {
                     "name": "Stench",
-                    "description": "<p>30 feet. A creature that enters the area must attempt a @Check[fortitude|dc:20] save. On a failure, the creature is @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 1}, and on a critical failure, the creature also takes a \u20135-foot status penalty to its Speeds for 1 round. While within the aura, the creature takes a -2 circumstance penalty to saves to recover from the sickened condition. A creature that succeeds at its save is temporarily immune to all xulgaths' stenches for 1 minute.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.uB3CVn3momZO9h0L]{Effect: Xulgath Stench}</p>"
+                    "description": "<p>30 feet. A creature that enters the area must attempt a @Check[fortitude|dc:20] save. On a failure, the creature is @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 1}, and on a critical failure, the creature also takes a –5-foot status penalty to its Speeds for 1 round. While within the aura, the creature takes a -2 circumstance penalty to saves to recover from the sickened condition. A creature that succeeds at its save is temporarily immune to all xulgaths' stenches for 1 minute.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.uB3CVn3momZO9h0L]{Effect: Xulgath Stench}</p>"
                 },
                 "action->Stench Suppression": {
                     "name": "Stench Suppression",
@@ -2306,7 +2306,7 @@
                 },
                 "action->Improvised Projectile": {
                     "name": "Improvised Projectile",
-                    "description": "<p>The morlock engineer quickly crafts an improvised projectile from objects it carries or that are readily accessible in adjacent squares. Where unusual materials are available, an improvised projectile might deal damage other than bludgeoning or piercing\u2014for example, a morlock engineer by a campfire could build a projectile that deals fire damage.</p>"
+                    "description": "<p>The morlock engineer quickly crafts an improvised projectile from objects it carries or that are readily accessible in adjacent squares. Where unusual materials are available, an improvised projectile might deal damage other than bludgeoning or piercing—for example, a morlock engineer by a campfire could build a projectile that deals fire damage.</p>"
                 },
                 "action->Sneak Attack": {
                     "name": "Sneak Attack",
@@ -2819,7 +2819,7 @@
                 },
                 "action->Frightful Presence": {
                     "name": "Frightful Presence",
-                    "description": "<p>30 feet. @Check[will|dc:22]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.FrightfulPresence]</p>"
+                    "description": "<p>30 feet. @Check[will|dc:22|options:area-effect,inflicts:frightened]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.FrightfulPresence]</p>"
                 },
                 "action->Pain Starvation": {
                     "name": "Pain Starvation",

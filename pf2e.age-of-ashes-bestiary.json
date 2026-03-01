@@ -198,7 +198,7 @@
                 },
                 "equipment->Manacles (Good) (Marked with the Symbol of the Scarlet Triad)": {
                     "name": "Manacles (Good) (Marked with the Symbol of the Scarlet Triad)",
-                    "description": "<p>You can manacle someone who is willing or otherwise at your mercy as an exploration activity taking 10-30 seconds depending on the creature's size and how many manacles you apply. A two-legged creature with its legs bound takes a \u201315-foot circumstance penalty to its Speeds, and a two-handed creature with its wrists bound has to succeed at a @Check[flat|dc:5] any time it uses a manipulate action or else that action fails. This DC may be higher depending on how tightly the manacles constrain the hands. A creature bound to a stationary object is immobilized. For creatures with more or fewer limbs, the GM determines what effect manacles have, if any. Freeing a creature from good manacles requires five successful @Check[thievery|dc:32|traits:action:pick-a-lock] checks.</p>"
+                    "description": "<p>You can manacle someone who is willing or otherwise at your mercy as an exploration activity taking 10-30 seconds depending on the creature's size and how many manacles you apply. A two-legged creature with its legs bound takes a –15-foot circumstance penalty to its Speeds, and a two-handed creature with its wrists bound has to succeed at a @Check[flat|dc:5] any time it uses a manipulate action or else that action fails. This DC may be higher depending on how tightly the manacles constrain the hands. A creature bound to a stationary object is immobilized. For creatures with more or fewer limbs, the GM determines what effect manacles have, if any. Freeing a creature from good manacles requires five successful @Check[thievery|dc:32|traits:action:pick-a-lock] checks.</p>"
                 },
                 "equipment->Keys to Each Dormitory Door and Slave Manacles": {
                     "name": "Keys to Each Dormitory Door and Slave Manacles"
@@ -541,7 +541,7 @@
                 },
                 "action->Crystallize": {
                     "name": "Crystallize",
-                    "description": "<p><strong>Requirements</strong> The crystal has a creature engulfed.</p>\n<hr />\n<p><strong>Effect</strong> The engulfed creature must succeed at a @Check[fortitude|dc:28|name:Crystalize] save or become @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1} until it is no longer engulfed. If the creature is already slowed, it becomes petrified as it is turned into crystal and expelled by the carnivorous crystal onto the ground.</p>\n<p>In [[/gmr 1d4 #hours]]{1d4 hours}, the petrified victim shatters and a new carnivorous crystal emerges from the remains.</p>"
+                    "description": "<p><strong>Requirements</strong> The crystal has a creature engulfed.</p>\n<hr />\n<p><strong>Effect</strong> The engulfed creature must succeed at a @Check[fortitude|dc:28|options:inflicts:petrified,inflicts:slowed] save or become @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1} until it is no longer engulfed. If the creature is already slowed, it becomes @UUID[Compendium.pf2e.conditionitems.Item.dTwPJuKgBQCMxixg]{Petrified} as it is turned into crystal and expelled by the carnivorous crystal onto the ground.</p>\n<p>In [[/gmr 1d4 #hours]]{1d4 hours}, the petrified victim shatters and a new carnivorous crystal emerges from the remains.</p>"
                 },
                 "action->Engulf": {
                     "name": "Engulf",
@@ -1027,7 +1027,7 @@
                 },
                 "action->Frightful Presence": {
                     "name": "Frightful Presence",
-                    "description": "<p>60 feet. @Check[will|dc:29]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.FrightfulPresence]</p>"
+                    "description": "<p>60 feet. @Check[will|dc:29|options:area-effect,inflicts:frightened]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.FrightfulPresence]</p>"
                 },
                 "action->Breath-Seared Sword": {
                     "name": "Breath-Seared Sword",
@@ -1063,7 +1063,7 @@
                 },
                 "action->Frightful Presence": {
                     "name": "Frightful Presence",
-                    "description": "<p>90 feet. @Check[will|dc:42]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.FrightfulPresence]</p>"
+                    "description": "<p>90 feet. @Check[will|dc:42|options:area-effect,inflicts:frightened]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.FrightfulPresence]</p>"
                 },
                 "action->Breath Weapon": {
                     "name": "Breath Weapon",
@@ -1693,7 +1693,7 @@
                 },
                 "equipment->Manacles (Average) (Marked with the Symbol of the Scarlet Triad)": {
                     "name": "Manacles (Average) (Marked with the Symbol of the Scarlet Triad)",
-                    "description": "<p>You can manacle someone who is willing or otherwise at your mercy as an exploration activity taking 10-30 seconds depending on the creature's size and how many manacles you apply. A two-legged creature with its legs bound takes a \u201315-foot circumstance penalty to its Speeds, and a two-handed creature with its wrists bound has to succeed at a @Check[flat|dc:5] any time it uses a manipulate action or else that action fails. This DC may be higher depending on how tightly the manacles constrain the hands. A creature bound to a stationary object is immobilized. For creatures with more or fewer limbs, the GM determines what effect manacles have, if any. Freeing a creature from average manacles requires four successful @Check[thievery|dc:27|traits:action:pick-a-lock] checks.</p>"
+                    "description": "<p>You can manacle someone who is willing or otherwise at your mercy as an exploration activity taking 10-30 seconds depending on the creature's size and how many manacles you apply. A two-legged creature with its legs bound takes a –15-foot circumstance penalty to its Speeds, and a two-handed creature with its wrists bound has to succeed at a @Check[flat|dc:5] any time it uses a manipulate action or else that action fails. This DC may be higher depending on how tightly the manacles constrain the hands. A creature bound to a stationary object is immobilized. For creatures with more or fewer limbs, the GM determines what effect manacles have, if any. Freeing a creature from average manacles requires four successful @Check[thievery|dc:27|traits:action:pick-a-lock] checks.</p>"
                 },
                 "equipment->Spellbook": {
                     "name": "Spellbook",
@@ -1825,7 +1825,7 @@
                 },
                 "equipment->Manacles (Good)": {
                     "name": "Manacles (Good)",
-                    "description": "<p>You can manacle someone who is willing or otherwise at your mercy as an exploration activity taking 10-30 seconds depending on the creature's size and how many manacles you apply. A two-legged creature with its legs bound takes a \u201315-foot circumstance penalty to its Speeds, and a two-handed creature with its wrists bound has to succeed at a @Check[flat|dc:5] any time it uses a manipulate action or else that action fails. This DC may be higher depending on how tightly the manacles constrain the hands. A creature bound to a stationary object is immobilized. For creatures with more or fewer limbs, the GM determines what effect manacles have, if any. Freeing a creature from good manacles requires five successful @Check[thievery|dc:32|traits:action:pick-a-lock] checks.</p>"
+                    "description": "<p>You can manacle someone who is willing or otherwise at your mercy as an exploration activity taking 10-30 seconds depending on the creature's size and how many manacles you apply. A two-legged creature with its legs bound takes a –15-foot circumstance penalty to its Speeds, and a two-handed creature with its wrists bound has to succeed at a @Check[flat|dc:5] any time it uses a manipulate action or else that action fails. This DC may be higher depending on how tightly the manacles constrain the hands. A creature bound to a stationary object is immobilized. For creatures with more or fewer limbs, the GM determines what effect manacles have, if any. Freeing a creature from good manacles requires five successful @Check[thievery|dc:32|traits:action:pick-a-lock] checks.</p>"
                 },
                 "equipment->Religious Symbol of Droskar": {
                     "name": "Religious Symbol of Droskar",
@@ -1928,15 +1928,11 @@
                 },
                 "weapon->Frost Vial (Major) [Infused]": {
                     "name": "Frost Vial (Major) [Infused]",
-                    "description": "<p><strong>Activate</strong> <span class=\"action-glyph\">1</span> Strike</p>\n<hr />\n<p>The liquid reagents in this vial rapidly absorb heat when exposed to air. A frost vial deals the listed cold damage and cold splash damage. On a hit, the target takes a status penalty to its Speeds until the end of its next turn. Many types of frost vial also grant an item bonus to attack rolls.</p>\n<p>You gain a +3 item bonus to attack rolls, the bomb deals 4d6 cold damage and 4 cold splash damage, and the target takes a \u201315-foot penalty.</p>\n<p>@UUID[Compendium.pf2e.equipment-effects.Item.LdmzgBOTjCete4F7]{Effect: Frost Vial}</p>"
+                    "description": "<p><strong>Activate</strong> <span class=\"action-glyph\">1</span> Strike</p>\n<hr />\n<p>The liquid reagents in this vial rapidly absorb heat when exposed to air. A frost vial deals the listed cold damage and cold splash damage. On a hit, the target takes a status penalty to its Speeds until the end of its next turn. Many types of frost vial also grant an item bonus to attack rolls.</p>\n<p>You gain a +3 item bonus to attack rolls, the bomb deals 4d6 cold damage and 4 cold splash damage, and the target takes a –15-foot penalty.</p>\n<p>@UUID[Compendium.pf2e.equipment-effects.Item.LdmzgBOTjCete4F7]{Effect: Frost Vial}</p>"
                 },
                 "equipment->Alchemist's Tools": {
                     "name": "Alchemist's Tools",
                     "description": "<p>This mobile collection of vials and chemicals can be used for simple alchemical tasks.</p>"
-                },
-                "equipment->Formula Book": {
-                    "name": "Formula Book",
-                    "description": "<p>Contains formulas for all common alchemical items of 19th level or lower.</p>\n<p>A formula book holds the formulas necessary to make items other than the common equipment from this chapter; alchemists typically get one for free. Each formula book can hold the formulas for up to 100 different items. Formulas can also appear on parchment sheets, tablets, and almost any other medium; there's no need for you to copy them into a specific book as long as you can keep them on hand to reference them.</p>"
                 },
                 "consumable->Syringe Filled with Unstable Mutagen": {
                     "name": "Syringe Filled with Unstable Mutagen"
@@ -2315,7 +2311,7 @@
                 },
                 "action->Frightful Presence": {
                     "name": "Frightful Presence",
-                    "description": "<p>60 feet. @Check[will|dc:33]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.FrightfulPresence]</p>"
+                    "description": "<p>60 feet. @Check[will|dc:33|options:area-effect,inflicts:frightened]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.FrightfulPresence]</p>"
                 },
                 "action->Rejuvenation": {
                     "name": "Rejuvenation",
@@ -2352,7 +2348,7 @@
                 },
                 "equipment->Manacles (Good)": {
                     "name": "Manacles (Good)",
-                    "description": "<p>You can manacle someone who is willing or otherwise at your mercy as an exploration activity taking 10-30 seconds depending on the creature's size and how many manacles you apply. A two-legged creature with its legs bound takes a \u201315-foot circumstance penalty to its Speeds, and a two-handed creature with its wrists bound has to succeed at a @Check[flat|dc:5] any time it uses a manipulate action or else that action fails. This DC may be higher depending on how tightly the manacles constrain the hands. A creature bound to a stationary object is immobilized. For creatures with more or fewer limbs, the GM determines what effect manacles have, if any. Freeing a creature from good manacles requires five successful @Check[thievery|dc:32|traits:action:pick-a-lock] checks.</p>"
+                    "description": "<p>You can manacle someone who is willing or otherwise at your mercy as an exploration activity taking 10-30 seconds depending on the creature's size and how many manacles you apply. A two-legged creature with its legs bound takes a –15-foot circumstance penalty to its Speeds, and a two-handed creature with its wrists bound has to succeed at a @Check[flat|dc:5] any time it uses a manipulate action or else that action fails. This DC may be higher depending on how tightly the manacles constrain the hands. A creature bound to a stationary object is immobilized. For creatures with more or fewer limbs, the GM determines what effect manacles have, if any. Freeing a creature from good manacles requires five successful @Check[thievery|dc:32|traits:action:pick-a-lock] checks.</p>"
                 },
                 "consumable->Scroll of Discern Location (Level 8)": {
                     "name": "Scroll of Discern Location (Level 8)",
@@ -2382,7 +2378,7 @@
             "items": {
                 "equipment->Manacles (Average)": {
                     "name": "Manacles (Average)",
-                    "description": "<p>You can manacle someone who is willing or otherwise at your mercy as an exploration activity taking 10-30 seconds depending on the creature's size and how many manacles you apply. A two-legged creature with its legs bound takes a \u201315-foot circumstance penalty to its Speeds, and a two-handed creature with its wrists bound has to succeed at a @Check[flat|dc:5] any time it uses a manipulate action or else that action fails. This DC may be higher depending on how tightly the manacles constrain the hands. A creature bound to a stationary object is immobilized. For creatures with more or fewer limbs, the GM determines what effect manacles have, if any. Freeing a creature from average manacles requires four successful @Check[thievery|dc:27|traits:action:pick-a-lock] checks.</p>"
+                    "description": "<p>You can manacle someone who is willing or otherwise at your mercy as an exploration activity taking 10-30 seconds depending on the creature's size and how many manacles you apply. A two-legged creature with its legs bound takes a –15-foot circumstance penalty to its Speeds, and a two-handed creature with its wrists bound has to succeed at a @Check[flat|dc:5] any time it uses a manipulate action or else that action fails. This DC may be higher depending on how tightly the manacles constrain the hands. A creature bound to a stationary object is immobilized. For creatures with more or fewer limbs, the GM determines what effect manacles have, if any. Freeing a creature from average manacles requires four successful @Check[thievery|dc:27|traits:action:pick-a-lock] checks.</p>"
                 },
                 "equipment->Ring of Fire Resistance": {
                     "name": "Ring of Fire Resistance",
@@ -2494,7 +2490,7 @@
                 },
                 "action->Smoke Vision": {
                     "name": "Smoke Vision",
-                    "description": "<p>Smoke doesn't impair a red dragon's vision; it ignores the concealed condition from smoke.</p>"
+                    "description": "<p>Smoke doesn't impair a red dragon's vision; it ignores the @UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{Concealed} condition from smoke.</p>"
                 },
                 "action->+1 Status to All Saves vs. Magic": {
                     "name": "+1 Status to All Saves vs. Magic"
@@ -2509,7 +2505,7 @@
                 },
                 "action->Frightful Presence": {
                     "name": "Frightful Presence",
-                    "description": "<p>90 feet. @Check[will|dc:42]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.FrightfulPresence]</p>"
+                    "description": "<p>90 feet. @Check[will|dc:42|options:area-effect,inflicts:frightened]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.FrightfulPresence]</p>"
                 },
                 "action->Redirect Energy": {
                     "name": "Redirect Energy",
@@ -2650,7 +2646,7 @@
                 },
                 "action->Smoke Vision": {
                     "name": "Smoke Vision",
-                    "description": "<p>Smoke doesn't impair a red dragon's vision; it ignores the concealed condition from smoke.</p>"
+                    "description": "<p>Smoke doesn't impair a red dragon's vision; it ignores the @UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{Concealed} condition from smoke.</p>"
                 },
                 "action->+2 Status to All Saves vs. Magic": {
                     "name": "+2 Status to All Saves vs. Magic"
@@ -2665,7 +2661,7 @@
                 },
                 "action->Frightful Presence": {
                     "name": "Frightful Presence",
-                    "description": "<p>120 feet. @Check[will|dc:45]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.FrightfulPresence]</p>"
+                    "description": "<p>120 feet. @Check[will|dc:45|options:area-effect,inflicts:frightened]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.FrightfulPresence]</p>"
                 },
                 "action->Redirect Energy": {
                     "name": "Redirect Energy",
@@ -2738,7 +2734,7 @@
                 },
                 "action->Frightful Presence": {
                     "name": "Frightful Presence",
-                    "description": "<p>90 feet. @Check[will|dc:43]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.FrightfulPresence]</p>"
+                    "description": "<p>90 feet. @Check[will|dc:43|options:area-effect,inflicts:frightened]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.FrightfulPresence]</p>"
                 },
                 "action->Golden Luck": {
                     "name": "Golden Luck",
@@ -3328,7 +3324,7 @@
                 },
                 "equipment->Manacles (Good)": {
                     "name": "Manacles (Good)",
-                    "description": "<p>You can manacle someone who is willing or otherwise at your mercy as an exploration activity taking 10-30 seconds depending on the creature's size and how many manacles you apply. A two-legged creature with its legs bound takes a \u201315-foot circumstance penalty to its Speeds, and a two-handed creature with its wrists bound has to succeed at a @Check[flat|dc:5] any time it uses a manipulate action or else that action fails. This DC may be higher depending on how tightly the manacles constrain the hands. A creature bound to a stationary object is immobilized. For creatures with more or fewer limbs, the GM determines what effect manacles have, if any. Freeing a creature from good manacles requires five successful @Check[thievery|dc:32|traits:action:pick-a-lock] checks.</p>"
+                    "description": "<p>You can manacle someone who is willing or otherwise at your mercy as an exploration activity taking 10-30 seconds depending on the creature's size and how many manacles you apply. A two-legged creature with its legs bound takes a –15-foot circumstance penalty to its Speeds, and a two-handed creature with its wrists bound has to succeed at a @Check[flat|dc:5] any time it uses a manipulate action or else that action fails. This DC may be higher depending on how tightly the manacles constrain the hands. A creature bound to a stationary object is immobilized. For creatures with more or fewer limbs, the GM determines what effect manacles have, if any. Freeing a creature from good manacles requires five successful @Check[thievery|dc:32|traits:action:pick-a-lock] checks.</p>"
                 },
                 "consumable->Purple Worm Venom": {
                     "name": "Purple Worm Venom",
@@ -3349,7 +3345,7 @@
                 },
                 "action->Precise Debilitations": {
                     "name": "Precise Debilitations",
-                    "description": "<p><strong>Trigger</strong> The Scarlet Triad agent's Strike hits an off-guard creature and deals damage.</p>\n<hr />\n<p><strong>Effect</strong> The Scarlet Triad agent applies one of the following debilitations to the creature, which lasts until the end of their next turn.</p>\n<ul>\n<li><em>Brow Gash</em> The target becomes @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard}.</li>\n<li><em>Deep Cut</em> The target takes an additional 2d6 precision damage from the Scarlet Triad agent's attacks.</li>\n<li><em>Hamstring</em> The target takes a \u201310-foot status penalty to its Speeds.</li>\n<li><em>Low Blow</em> The target becomes @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 1}.</li>\n</ul>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.otUESSH8BDdPKHtb]{Effect: Hamstring}</p>",
+                    "description": "<p><strong>Trigger</strong> The Scarlet Triad agent's Strike hits an off-guard creature and deals damage.</p>\n<hr />\n<p><strong>Effect</strong> The Scarlet Triad agent applies one of the following debilitations to the creature, which lasts until the end of their next turn.</p>\n<ul>\n<li><em>Brow Gash</em> The target becomes @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard}.</li>\n<li><em>Deep Cut</em> The target takes an additional 2d6 precision damage from the Scarlet Triad agent's attacks.</li>\n<li><em>Hamstring</em> The target takes a –10-foot status penalty to its Speeds.</li>\n<li><em>Low Blow</em> The target becomes @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 1}.</li>\n</ul>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.otUESSH8BDdPKHtb]{Effect: Hamstring}</p>",
                     "rules": {
                         "0": {
                             "text": "<span class=\"action-glyph\">f</span> The Scarlet Triad agent applies one of the following debilitations to the creature, which lasts until the end of their next turn."
@@ -3404,7 +3400,7 @@
             "items": {
                 "equipment->Manacles (Average) (Marked with the Symbol of the Scarlet Triad)": {
                     "name": "Manacles (Average) (Marked with the Symbol of the Scarlet Triad)",
-                    "description": "<p>You can manacle someone who is willing or otherwise at your mercy as an exploration activity taking 10-30 seconds depending on the creature's size and how many manacles you apply. A two-legged creature with its legs bound takes a \u201315-foot circumstance penalty to its Speeds, and a two-handed creature with its wrists bound has to succeed at a @Check[flat|dc:5] any time it uses a manipulate action or else that action fails. This DC may be higher depending on how tightly the manacles constrain the hands. A creature bound to a stationary object is immobilized. For creatures with more or fewer limbs, the GM determines what effect manacles have, if any. Freeing a creature from average manacles requires four successful @Check[thievery|dc:27|traits:action:pick-a-lock] checks.</p>"
+                    "description": "<p>You can manacle someone who is willing or otherwise at your mercy as an exploration activity taking 10-30 seconds depending on the creature's size and how many manacles you apply. A two-legged creature with its legs bound takes a –15-foot circumstance penalty to its Speeds, and a two-handed creature with its wrists bound has to succeed at a @Check[flat|dc:5] any time it uses a manipulate action or else that action fails. This DC may be higher depending on how tightly the manacles constrain the hands. A creature bound to a stationary object is immobilized. For creatures with more or fewer limbs, the GM determines what effect manacles have, if any. Freeing a creature from average manacles requires four successful @Check[thievery|dc:27|traits:action:pick-a-lock] checks.</p>"
                 },
                 "strike-melee->Kick": {
                     "name": "Kick"
@@ -3450,7 +3446,7 @@
                 },
                 "equipment->Manacles (Good)": {
                     "name": "Manacles (Good)",
-                    "description": "<p>You can manacle someone who is willing or otherwise at your mercy as an exploration activity taking 10-30 seconds depending on the creature's size and how many manacles you apply. A two-legged creature with its legs bound takes a \u201315-foot circumstance penalty to its Speeds, and a two-handed creature with its wrists bound has to succeed at a @Check[flat|dc:5] any time it uses a manipulate action or else that action fails. This DC may be higher depending on how tightly the manacles constrain the hands. A creature bound to a stationary object is immobilized. For creatures with more or fewer limbs, the GM determines what effect manacles have, if any. Freeing a creature from good manacles requires five successful @Check[thievery|dc:32|traits:action:pick-a-lock] checks.</p>"
+                    "description": "<p>You can manacle someone who is willing or otherwise at your mercy as an exploration activity taking 10-30 seconds depending on the creature's size and how many manacles you apply. A two-legged creature with its legs bound takes a –15-foot circumstance penalty to its Speeds, and a two-handed creature with its wrists bound has to succeed at a @Check[flat|dc:5] any time it uses a manipulate action or else that action fails. This DC may be higher depending on how tightly the manacles constrain the hands. A creature bound to a stationary object is immobilized. For creatures with more or fewer limbs, the GM determines what effect manacles have, if any. Freeing a creature from good manacles requires five successful @Check[thievery|dc:32|traits:action:pick-a-lock] checks.</p>"
                 },
                 "consumable->Healing Potion (Moderate)": {
                     "name": "Healing Potion (Moderate)",
@@ -3518,7 +3514,7 @@
                 },
                 "equipment->Manacles (Good) (Marked with the Symbol of the Scarlet Triad)": {
                     "name": "Manacles (Good) (Marked with the Symbol of the Scarlet Triad)",
-                    "description": "<p>You can manacle someone who is willing or otherwise at your mercy as an exploration activity taking 10-30 seconds depending on the creature's size and how many manacles you apply. A two-legged creature with its legs bound takes a \u201315-foot circumstance penalty to its Speeds, and a two-handed creature with its wrists bound has to succeed at a @Check[flat|dc:5] any time it uses a manipulate action or else that action fails. This DC may be higher depending on how tightly the manacles constrain the hands. A creature bound to a stationary object is immobilized. For creatures with more or fewer limbs, the GM determines what effect manacles have, if any. Freeing a creature from good manacles requires five successful @Check[thievery|dc:32|traits:action:pick-a-lock] checks.</p>"
+                    "description": "<p>You can manacle someone who is willing or otherwise at your mercy as an exploration activity taking 10-30 seconds depending on the creature's size and how many manacles you apply. A two-legged creature with its legs bound takes a –15-foot circumstance penalty to its Speeds, and a two-handed creature with its wrists bound has to succeed at a @Check[flat|dc:5] any time it uses a manipulate action or else that action fails. This DC may be higher depending on how tightly the manacles constrain the hands. A creature bound to a stationary object is immobilized. For creatures with more or fewer limbs, the GM determines what effect manacles have, if any. Freeing a creature from good manacles requires five successful @Check[thievery|dc:32|traits:action:pick-a-lock] checks.</p>"
                 },
                 "equipment->Key to Manacles": {
                     "name": "Key to Manacles"
@@ -3545,7 +3541,7 @@
             "items": {
                 "equipment->Manacles (Average) (Marked with the Symbol of the Scarlet Triad)": {
                     "name": "Manacles (Average) (Marked with the Symbol of the Scarlet Triad)",
-                    "description": "<p>You can manacle someone who is willing or otherwise at your mercy as an exploration activity taking 10-30 seconds depending on the creature's size and how many manacles you apply. A two-legged creature with its legs bound takes a \u201315-foot circumstance penalty to its Speeds, and a two-handed creature with its wrists bound has to succeed at a @Check[flat|dc:5] any time it uses a manipulate action or else that action fails. This DC may be higher depending on how tightly the manacles constrain the hands. A creature bound to a stationary object is immobilized. For creatures with more or fewer limbs, the GM determines what effect manacles have, if any. Freeing a creature from average manacles requires four successful @Check[thievery|dc:27|traits:action:pick-a-lock] checks.</p>"
+                    "description": "<p>You can manacle someone who is willing or otherwise at your mercy as an exploration activity taking 10-30 seconds depending on the creature's size and how many manacles you apply. A two-legged creature with its legs bound takes a –15-foot circumstance penalty to its Speeds, and a two-handed creature with its wrists bound has to succeed at a @Check[flat|dc:5] any time it uses a manipulate action or else that action fails. This DC may be higher depending on how tightly the manacles constrain the hands. A creature bound to a stationary object is immobilized. For creatures with more or fewer limbs, the GM determines what effect manacles have, if any. Freeing a creature from average manacles requires four successful @Check[thievery|dc:27|traits:action:pick-a-lock] checks.</p>"
                 },
                 "equipment->Key to Manacles": {
                     "name": "Key to Manacles"
@@ -3590,7 +3586,7 @@
             "items": {
                 "equipment->Manacles (Good)": {
                     "name": "Manacles (Good)",
-                    "description": "<p>You can manacle someone who is willing or otherwise at your mercy as an exploration activity taking 10-30 seconds depending on the creature's size and how many manacles you apply. A two-legged creature with its legs bound takes a \u201315-foot circumstance penalty to its Speeds, and a two-handed creature with its wrists bound has to succeed at a @Check[flat|dc:5] any time it uses a manipulate action or else that action fails. This DC may be higher depending on how tightly the manacles constrain the hands. A creature bound to a stationary object is immobilized. For creatures with more or fewer limbs, the GM determines what effect manacles have, if any. Freeing a creature from good manacles requires five successful @Check[thievery|dc:32|traits:action:pick-a-lock] checks.</p>"
+                    "description": "<p>You can manacle someone who is willing or otherwise at your mercy as an exploration activity taking 10-30 seconds depending on the creature's size and how many manacles you apply. A two-legged creature with its legs bound takes a –15-foot circumstance penalty to its Speeds, and a two-handed creature with its wrists bound has to succeed at a @Check[flat|dc:5] any time it uses a manipulate action or else that action fails. This DC may be higher depending on how tightly the manacles constrain the hands. A creature bound to a stationary object is immobilized. For creatures with more or fewer limbs, the GM determines what effect manacles have, if any. Freeing a creature from good manacles requires five successful @Check[thievery|dc:32|traits:action:pick-a-lock] checks.</p>"
                 },
                 "equipment->Keys to Manacles": {
                     "name": "Keys to Manacles"
@@ -3619,7 +3615,7 @@
             "items": {
                 "equipment->Manacles (Average) (Marked with the Symbol of the Scarlet Triad)": {
                     "name": "Manacles (Average) (Marked with the Symbol of the Scarlet Triad)",
-                    "description": "<p>You can manacle someone who is willing or otherwise at your mercy as an exploration activity taking 10-30 seconds depending on the creature's size and how many manacles you apply. A two-legged creature with its legs bound takes a \u201315-foot circumstance penalty to its Speeds, and a two-handed creature with its wrists bound has to succeed at a @Check[flat|dc:5] any time it uses a manipulate action or else that action fails. This DC may be higher depending on how tightly the manacles constrain the hands. A creature bound to a stationary object is immobilized. For creatures with more or fewer limbs, the GM determines what effect manacles have, if any. Freeing a creature from average manacles requires four successful @Check[thievery|dc:27|traits:action:pick-a-lock] checks.</p>"
+                    "description": "<p>You can manacle someone who is willing or otherwise at your mercy as an exploration activity taking 10-30 seconds depending on the creature's size and how many manacles you apply. A two-legged creature with its legs bound takes a –15-foot circumstance penalty to its Speeds, and a two-handed creature with its wrists bound has to succeed at a @Check[flat|dc:5] any time it uses a manipulate action or else that action fails. This DC may be higher depending on how tightly the manacles constrain the hands. A creature bound to a stationary object is immobilized. For creatures with more or fewer limbs, the GM determines what effect manacles have, if any. Freeing a creature from average manacles requires four successful @Check[thievery|dc:27|traits:action:pick-a-lock] checks.</p>"
                 },
                 "equipment->Key to Manacles": {
                     "name": "Key to Manacles"
@@ -3872,7 +3868,7 @@
                 },
                 "action->Frightful Presence": {
                     "name": "Frightful Presence",
-                    "description": "<p>300 feet. @Check[will|dc:39]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.FrightfulPresence]</p>"
+                    "description": "<p>300 feet. @Check[will|dc:39|options:area-effect,inflicts:frightened]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.FrightfulPresence]</p>"
                 },
                 "action->Inexorable": {
                     "name": "Inexorable",
@@ -3913,7 +3909,7 @@
         },
         "Teyam Ishtori": {
             "name": "Teyam Ishtori",
-            "publicNotes": "<p>Demiliches are formed when a lich, through carelessness or by accident, loses its phylactery. As years pass, the lich's body crumbles to dust, leaving only the skull as the seat of its necromantic power. The lich enters a sort of torpor, its mind left wandering the planes in search of ever greater mysteries. The lich gradually loses the ability to cast spells and its magic items slowly subsume into its new form. Void energy concentrates around the skull, causing some of its bones and teeth to petrify with power and turn into blight crystals. The resulting lich skull, embedded with arcane gemstones and suffused with palpably powerful magic, forms a creature called a demilich.</p>\n<p>Despite its near-constant state of inactivity, a demilich grows restless from time to time, especially when living creatures draw near. Only then does the demilich's hunger for life stir once more, causing it to lash out with terrifying bursts of power in attempts to consume vital energy. Unlike an ordinary lich, should the demilich's skull be destroyed, its bond to the world is permanently severed, although some theorize that even then it is not truly slain. Rather, some think that once the demilich is destroyed, its foul and tormented mind is finally free to wander the planes and find new ways to enact its will. For the short-lived common folk of the Material Plane, this is good enough, though eons later a demilich may reappear in the region it once inhabited with a new\u2014and even more insidious\u2014agenda.</p>\n<hr />\n<p>To gain more time to complete their goals, some desperate spellcasters pursue immortality by embracing undeath. After long years of research and the creation of a special container called a phylactery, a spellcaster takes the final step by imbibing a deadly concoction or casting dreadful incantations that transform them into a lich. While most undertake this drastic plan to continue their work or fulfill some long-term plan, others become liches because they fear death or to fulfill some malevolent purpose, such as long-sworn revenge. Regardless, the result is permanent and carries with it the potential to alter history\u2014both that of those who transform themselves and of the countless mortals that will inevitably suffer as a result of a lich's new power.</p>\n<p>After its metamorphosis, a lich often finds some quiet place to dwell, typically protected by a variety of guardians and traps, for two primary purposes. First, a lich requires solitude in order to plan its elaborate schemes, and second, few mortals (if any) deign to interact with these legendarily corrupt necromancers. One reason begets the other, as the self-imposed isolation of a lich often drives the lich insane, further solidifying its separation from civilization. The longer a lich lives, the more meticulous a planner it becomes, secreting itself within a labyrinth of deadly puzzles, misdirection, and monsters. A lich's servants and guardians are absolutely loyal, either due to their nature (such as constructs or other undead) or as a result of compulsion using powerful magic. Many liches go mad, in time, and the nature of a lich's lair is a good indicator of the undead's current mental state.</p>\n<p>For all the protections it arrays around itself, a lich will go to greater lengths to guard its phylactery, as it knows that the destruction of this magical container spells doom for the lich. A lich is notoriously difficult to bargain with, though the threat of damaging its phylactery is a sure way to gain the upper hand in such a negotiation.</p>",
+            "publicNotes": "<p>Demiliches are formed when a lich, through carelessness or by accident, loses its phylactery. As years pass, the lich's body crumbles to dust, leaving only the skull as the seat of its necromantic power. The lich enters a sort of torpor, its mind left wandering the planes in search of ever greater mysteries. The lich gradually loses the ability to cast spells and its magic items slowly subsume into its new form. Void energy concentrates around the skull, causing some of its bones and teeth to petrify with power and turn into blight crystals. The resulting lich skull, embedded with arcane gemstones and suffused with palpably powerful magic, forms a creature called a demilich.</p>\n<p>Despite its near-constant state of inactivity, a demilich grows restless from time to time, especially when living creatures draw near. Only then does the demilich's hunger for life stir once more, causing it to lash out with terrifying bursts of power in attempts to consume vital energy. Unlike an ordinary lich, should the demilich's skull be destroyed, its bond to the world is permanently severed, although some theorize that even then it is not truly slain. Rather, some think that once the demilich is destroyed, its foul and tormented mind is finally free to wander the planes and find new ways to enact its will. For the short-lived common folk of the Material Plane, this is good enough, though eons later a demilich may reappear in the region it once inhabited with a new—and even more insidious—agenda.</p>\n<hr />\n<p>To gain more time to complete their goals, some desperate spellcasters pursue immortality by embracing undeath. After long years of research and the creation of a special container called a phylactery, a spellcaster takes the final step by imbibing a deadly concoction or casting dreadful incantations that transform them into a lich. While most undertake this drastic plan to continue their work or fulfill some long-term plan, others become liches because they fear death or to fulfill some malevolent purpose, such as long-sworn revenge. Regardless, the result is permanent and carries with it the potential to alter history—both that of those who transform themselves and of the countless mortals that will inevitably suffer as a result of a lich's new power.</p>\n<p>After its metamorphosis, a lich often finds some quiet place to dwell, typically protected by a variety of guardians and traps, for two primary purposes. First, a lich requires solitude in order to plan its elaborate schemes, and second, few mortals (if any) deign to interact with these legendarily corrupt necromancers. One reason begets the other, as the self-imposed isolation of a lich often drives the lich insane, further solidifying its separation from civilization. The longer a lich lives, the more meticulous a planner it becomes, secreting itself within a labyrinth of deadly puzzles, misdirection, and monsters. A lich's servants and guardians are absolutely loyal, either due to their nature (such as constructs or other undead) or as a result of compulsion using powerful magic. Many liches go mad, in time, and the nature of a lich's lair is a good indicator of the undead's current mental state.</p>\n<p>For all the protections it arrays around itself, a lich will go to greater lengths to guard its phylactery, as it knows that the destruction of this magical container spells doom for the lich. A lich is notoriously difficult to bargain with, though the threat of damaging its phylactery is a sure way to gain the upper hand in such a negotiation.</p>",
             "allSavesBonus": "+1 status to all saves vs. vitality",
             "languagesDetails": "ancient osiriani",
             "items": {
@@ -4095,7 +4091,7 @@
                 },
                 "equipment->Manacles (Superior)": {
                     "name": "Manacles (Superior)",
-                    "description": "<p>You can manacle someone who is willing or otherwise at your mercy as an exploration activity taking 10-30 seconds depending on the creature's size and how many manacles you apply. A two-legged creature with its legs bound takes a \u201315-foot circumstance penalty to its Speeds, and a two-handed creature with its wrists bound has to succeed at a @Check[flat|dc:5] any time it uses a manipulate action or else that action fails. This DC may be higher depending on how tightly the manacles constrain the hands. A creature bound to a stationary object is immobilized. For creatures with more or fewer limbs, the GM determines what effect manacles have, if any. Freeing a creature from superior manacles requires six successful @Check[thievery|dc:42|traits:action:pick-a-lock] checks.</p>"
+                    "description": "<p>You can manacle someone who is willing or otherwise at your mercy as an exploration activity taking 10-30 seconds depending on the creature's size and how many manacles you apply. A two-legged creature with its legs bound takes a –15-foot circumstance penalty to its Speeds, and a two-handed creature with its wrists bound has to succeed at a @Check[flat|dc:5] any time it uses a manipulate action or else that action fails. This DC may be higher depending on how tightly the manacles constrain the hands. A creature bound to a stationary object is immobilized. For creatures with more or fewer limbs, the GM determines what effect manacles have, if any. Freeing a creature from superior manacles requires six successful @Check[thievery|dc:42|traits:action:pick-a-lock] checks.</p>"
                 },
                 "equipment->Winged Boots": {
                     "name": "Winged Boots",
@@ -4270,7 +4266,7 @@
                 },
                 "action->Frightful Presence": {
                     "name": "Frightful Presence",
-                    "description": "<p>90 feet. @Check[will|dc:34]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.FrightfulPresence]</p>"
+                    "description": "<p>90 feet. @Check[will|dc:34|options:area-effect,inflicts:frightened]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.FrightfulPresence]</p>"
                 },
                 "action->Wing Deflection": {
                     "name": "Wing Deflection",
@@ -4294,7 +4290,7 @@
                 },
                 "action->Volcanic Purge": {
                     "name": "Volcanic Purge",
-                    "description": "<p>If the next action Veshumirix uses is Breath Weapon, the magma clings to those it damages. Each creature that fails its save against the Breath Weapon takes @Damage[4d6[persistent,fire]] damage, and as long as it has this persistent fire damage, it also takes a \u201310-foot status penalty to its Speeds.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.7qoZauizAKfPIXeu]{Effect: Volcanic Purge}</p>"
+                    "description": "<p>If the next action Veshumirix uses is Breath Weapon, the magma clings to those it damages. Each creature that fails its save against the Breath Weapon takes @Damage[4d6[persistent,fire]] damage, and as long as it has this persistent fire damage, it also takes a –10-foot status penalty to its Speeds.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.7qoZauizAKfPIXeu]{Effect: Volcanic Purge}</p>"
                 }
             }
         },
@@ -4462,7 +4458,7 @@
                 },
                 "action->Howl": {
                     "name": "Howl",
-                    "description": "<p><strong>Frequency</strong> Three times per day</p>\n<hr />\n<p><strong>Effect</strong> The wendigo unleashes a forlorn howl that can be heard up to 1 mile away. Any creature that hears the howl must succeed at a @Check[will|dc:38] save or be @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 1}. Any creature that critically fails and is within 120 feet of the wendigo is instead @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 3}, and is also fleeing for [[/gmr 1d4 #rounds]]{1d4 rounds} (or until it's no longer frightened, whichever comes first).</p>\n<p>A creature frightened by a wendigo's howl still naturally recovers from its fright but can't reduce it below frightened 1 in this way until 1 hour has passed or magic is used. Whether it succeeds or fails its save, a creature is then temporarily immune to that wendigo's Howl for 24 hours.</p>"
+                    "description": "<p><strong>Frequency</strong> Three times per day</p>\n<hr />\n<p><strong>Effect</strong> The wendigo unleashes a forlorn howl that can be heard up to 1 mile away. Any creature that hears the howl must succeed at a @Check[will|dc:38|options:area-effect,inflicts:frightened,inflicts:fleeing] save or be @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 1}. Any creature that critically fails and is within 120 feet of the wendigo is instead @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 3}, and is also @UUID[Compendium.pf2e.conditionitems.Item.sDPxOjQ9kx2RZE8D]{Fleeing} for [[/gmr 1d4 #rounds]]{1d4 rounds} (or until it's no longer frightened, whichever comes first).</p>\n<p>A creature frightened by a wendigo's howl still naturally recovers from its fright but can't reduce it below frightened 1 in this way until 1 hour has passed or magic is used. Whether it succeeds or fails its save, a creature is then temporarily immune to that wendigo's Howl for 24 hours.</p>"
                 },
                 "action->Ride the Wind": {
                     "name": "Ride the Wind",
@@ -4572,7 +4568,7 @@
                 },
                 "action->Frightful Presence": {
                     "name": "Frightful Presence",
-                    "description": "<p>300 feet. @Check[will|dc:39]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.FrightfulPresence]</p>"
+                    "description": "<p>300 feet. @Check[will|dc:39|options:area-effect,inflicts:frightened]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.FrightfulPresence]</p>"
                 },
                 "action->Light Blindness": {
                     "name": "Light Blindness",
@@ -4621,7 +4617,7 @@
                 },
                 "action->Frightful Presence": {
                     "name": "Frightful Presence",
-                    "description": "<p>60 feet. @Check[will|dc:36]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.FrightfulPresence]</p>"
+                    "description": "<p>60 feet. @Check[will|dc:36|options:area-effect,inflicts:frightened]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.FrightfulPresence]</p>"
                 },
                 "action->Internal Furnace": {
                     "name": "Internal Furnace",
@@ -4668,11 +4664,11 @@
                 },
                 "action->Hampering Shot": {
                     "name": "Hampering Shot",
-                    "description": "<p>The Zephyr Guard makes a heavy crossbow Strike that deals one additional weapon damage die. If the Strike hits, the target takes a \u201310-foot status penalty to its Speeds and is @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1}. These last for 1 round, or 2 rounds if the Strike was a critical success.</p>"
+                    "description": "<p>The Zephyr Guard makes a heavy crossbow Strike that deals one additional weapon damage die. If the Strike hits, the target takes a –10-foot status penalty to its Speeds and is @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1}. These last for 1 round, or 2 rounds if the Strike was a critical success.</p>"
                 },
                 "action->Subduing Strikes": {
                     "name": "Subduing Strikes",
-                    "description": "<p>A Zephyr Guard takes no penalty for making nonlethal attacks with a weapon that doesn't have the nonlethal trait. The guard's nonlethal Strikes against a creature that is not wielding a weapon deal an additional [[/r {2d6}]]{2d6 damage}.</p>"
+                    "description": "<p>A Zephyr Guard takes no penalty for making nonlethal attacks with a weapon that doesn't have the nonlethal trait. The guard's nonlethal Strikes against a creature that is not wielding a weapon deal an additional 2d6 damage.</p>"
                 },
                 "lore->Katapesh Lore": {
                     "name": "Katapesh Lore"
@@ -4689,7 +4685,7 @@
                 },
                 "weapon->Frost Vial (Greater) [Infused]": {
                     "name": "Frost Vial (Greater) [Infused]",
-                    "description": "<p><strong>Activate</strong> <span class=\"action-glyph\">1</span> Strike</p>\n<hr />\n<p>The liquid reagents in this vial rapidly absorb heat when exposed to air. A frost vial deals the listed cold damage and cold splash damage. On a hit, the target takes a status penalty to its Speeds until the end of its next turn. Many types of frost vial also grant an item bonus to attack rolls.</p>\n<p>You gain a +2 item bonus to attack rolls, the bomb deals 3d6 cold damage and 3 cold splash damage, and the target takes a \u201310-foot penalty.</p>\n<p>@UUID[Compendium.pf2e.equipment-effects.Item.LdmzgBOTjCete4F7]{Effect: Frost Vial}</p>"
+                    "description": "<p><strong>Activate</strong> <span class=\"action-glyph\">1</span> Strike</p>\n<hr />\n<p>The liquid reagents in this vial rapidly absorb heat when exposed to air. A frost vial deals the listed cold damage and cold splash damage. On a hit, the target takes a status penalty to its Speeds until the end of its next turn. Many types of frost vial also grant an item bonus to attack rolls.</p>\n<p>You gain a +2 item bonus to attack rolls, the bomb deals 3d6 cold damage and 3 cold splash damage, and the target takes a –10-foot penalty.</p>\n<p>@UUID[Compendium.pf2e.equipment-effects.Item.LdmzgBOTjCete4F7]{Effect: Frost Vial}</p>"
                 },
                 "weapon->Thunderstone (Greater) [Infused]": {
                     "name": "Thunderstone (Greater) [Infused]",
@@ -4710,10 +4706,6 @@
                             "label": "Alchemist Goggles, Greater (alchemical bombs)"
                         }
                     }
-                },
-                "equipment->Formula Book": {
-                    "name": "Formula Book",
-                    "description": "<p>A formula book holds the formulas necessary to make items other than the common equipment from this chapter; alchemists typically get one for free. Each formula book can hold the formulas for up to 100 different items. Formulas can also appear on parchment sheets, tablets, and almost any other medium; there's no need for you to copy them into a specific book as long as you can keep them on hand to reference them.</p>"
                 },
                 "equipment->Alchemist's Tools": {
                     "name": "Alchemist's Tools",
@@ -4757,7 +4749,7 @@
                 },
                 "action->True Debilitating Bomb": {
                     "name": "True Debilitating Bomb",
-                    "description": "<p>When Zuferian uses Debilitating Bomb, add the following to the list of effects Zuferian can choose from:</p>\n<ul>\n<li>@UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 2}</li>\n<li>@UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 2}</li>\n<li>a \u201315-foot status penalty to Speeds.</li>\n</ul>\n<p>If Zuferian instead applies one of the effects listed in Debilitating Bomb, the target avoids the effect only if the result of its saving throw is a critical success.</p>"
+                    "description": "<p>When Zuferian uses Debilitating Bomb, add the following to the list of effects Zuferian can choose from:</p>\n<ul>\n<li>@UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 2}</li>\n<li>@UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 2}</li>\n<li>a –15-foot status penalty to Speeds.</li>\n</ul>\n<p>If Zuferian instead applies one of the effects listed in Debilitating Bomb, the target avoids the effect only if the result of its saving throw is a critical success.</p>"
                 },
                 "action->Uncanny Bombs": {
                     "name": "Uncanny Bombs",

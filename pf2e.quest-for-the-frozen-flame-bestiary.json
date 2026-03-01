@@ -10,9 +10,9 @@
             "name": "Abyss-warped Trees",
             "hpDetails": "per tree",
             "descriptionHazard": "<p>A forest of fiendish trees swing their branches and shift their roots to bludgeon and trip creatures in the tainted grove (area <strong>A21</strong>).</p>",
-            "disable": "<p>@Check[survival|dc:22|name:Find a Safe Location|traits:hazard,complex,environmental] (trained) to find a location the trees can't reach or @Check[religion|dc:24|name:Cast Out the Fiendish Energy|traits:hazard,complex,environmental] to recite a prayer that temporarily casts out the fiendish energy inside a single tree in the grove, disabling it for 1 minute. A disabled or destroyed tree creates a 5\u2011foot\u2011square area in the grove that's safe from this hazard.</p>",
+            "disable": "<p>@Check[survival|dc:22|name:Find a Safe Location|traits:hazard,complex,environmental] (trained) to find a location the trees can't reach or @Check[religion|dc:24|name:Cast Out the Fiendish Energy|traits:hazard,complex,environmental] to recite a prayer that temporarily casts out the fiendish energy inside a single tree in the grove, disabling it for 1 minute. A disabled or destroyed tree creates a 5‑foot‑square area in the grove that's safe from this hazard.</p>",
             "reset": "<p>The Abyss-warped trees cease moving 1 minute after no living creatures are in the tainted grove. They reset immediately. A disabled tree reanimates after 1 minute. A destroyed tree regrows after 1 month.</p>",
-            "routine": "<p>(4 actions) The Abyss\u2011warped trees use their first action each round to lash their roots; each creature in the tainted grove must succeed at a @Check[reflex|dc:21|traits:hazard,complex,environmental] save or fall @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone}. The Abyss\u2011warped trees use their second, third, and fourth actions to make branch Strikes against up to three different creatures in the tainted grove.</p>",
+            "routine": "<p>(4 actions) The Abyss‑warped trees use their first action each round to lash their roots; each creature in the tainted grove must succeed at a @Check[reflex|dc:21|traits:hazard,complex,environmental] save or fall @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone}. The Abyss‑warped trees use their second, third, and fourth actions to make branch Strikes against up to three different creatures in the tainted grove.</p>",
             "stealth": "<p>(trained) to determine the trees can move</p>",
             "items": {
                 "action->Shift Roots": {
@@ -461,7 +461,7 @@
                 },
                 "action->Funereal Dirge": {
                     "name": "Funereal Dirge",
-                    "description": "<p>The cairn wight chants a low, haunting melody. Living creatures within @Template[emanation|distance:50]{50 feet} must attempt a @Check[will|dc:21|options:area-effect,inflicts:frightened] save.</p>\n<p>The cairn wight can't chant a new Funereal Dirge for [[/gmr 1d4 #Recharge Funereal Dirge]]{1d4 rounds}.</p><hr /><p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 1}.</p>\n<p><strong>Failure</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 2}.</p>\n<p><strong>Critical Failure</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 2} and takes a \u20132 status penalty to saving throws against drain life.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.8ecPVgMeWDxc4jI4]{Effect: Funereal Dirge}</p>"
+                    "description": "<p>The cairn wight chants a low, haunting melody. Living creatures within @Template[emanation|distance:50]{50 feet} must attempt a @Check[will|dc:21|options:area-effect,inflicts:frightened] save.</p>\n<p>The cairn wight can't chant a new Funereal Dirge for [[/gmr 1d4 #Recharge Funereal Dirge]]{1d4 rounds}.</p><hr /><p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 1}.</p>\n<p><strong>Failure</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 2}.</p>\n<p><strong>Critical Failure</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 2} and takes a –2 status penalty to saving throws against drain life.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.8ecPVgMeWDxc4jI4]{Effect: Funereal Dirge}</p>"
                 }
             }
         },
@@ -597,7 +597,7 @@
                 },
                 "action->Sunder Objects": {
                     "name": "Sunder Objects",
-                    "description": "<p>When an arboreal regent damages an item or structure, it deals an additional [[/r {2d10}]]{2d10 damage} to that item or structure.</p>"
+                    "description": "<p>When an arboreal regent damages an item or structure, it deals an additional 2d10 damage to that item or structure.</p>"
                 },
                 "action->Throw Rock": {
                     "name": "Throw Rock"
@@ -740,7 +740,7 @@
             "name": "Fiendish Arboreal",
             "publicNotes": "<p>Arboreal wardens are the rangers of arboreal society. These itinerant folk have an innate curiosity about the woodlands in which they dwell, and rarely stop to take root and rest in the same part of the forest twice. This wanderlust makes wardens ideal forest patrollers and scouts. While they are robust combatants, they know better than to confront dangerous foes on their own. Instead, they report any dangers to arboreal regents. In rare cases, large groups of arboreal wardens congregate to form a copse. Copses travel beyond the boundaries of a forest to investigate the hinterlands and gather intelligence on potential threats before returning to report their findings. Arboreal wardens do not pretend to understand to other creatures' motives-like most forces of the natural world, they are ambivalent about mortal affairs that do not involve their forest.</p>\n<hr />\n<p>Arboreals are guardians of the forest and representatives of the trees. As long-lived as the woods they watch over, arboreals consider themselves parents and shepherds of trees rather than their gardeners. Consequently, while arboreals tend to be slow and methodical, they are terrifyingly swift when forced to fight in defense of the woods. Though they rarely seek out the companionship of short-lived folk-even elves are fugacious in the eyes of arboreals-and have an inherent distrust of change, arboreals have been known to tolerate those who seek to learn from their long-winded, rambling monologues, especially if such pupils also express a desire to protect the timberlands. Against those who threaten their realm, such as loggers eager to harvest lumber or settlers aiming to establish croplands or a town, arboreals' wrath is unwavering and devastating. Perhaps ironically, arboreals are gifted at tearing down what others build-a trait that serves vengeful members of their kind well.</p>",
             "acDetails": "(22 with shield raised)",
-            "blurb": "Demon\u2011touched arboreal wardens",
+            "blurb": "Demon‑touched arboreal wardens",
             "items": {
                 "weapon->Stone Longsword": {
                     "name": "Stone Longsword",
@@ -804,8 +804,8 @@
         },
         "Forest Fire": {
             "name": "Forest Fire",
-            "descriptionHazard": "<p>A @Template[square|distance:10]{10\u2011foot\u2011by\u201110\u2011foot} bonfire spreads to the surrounding forest on each of its turns.</p>",
-            "disable": "<p>A successful @Check[athletics|dc:22|name:Smother a square|traits:hazard,complex,environmental,fire], @Check[nature|dc:22|name:Smother a square|traits:hazard,complex,environmental,fire], or @Check[survival|dc:22|name:Smother a square|traits:hazard,complex,environmental,fire] check from an adjacent square is sufficient to smother one 5\u2011foot\u2011square of fire; each attempt is an Interact action. Dousing the flames automatically extinguishes one or more sections of fire, with no check. Water typically clears a 5\u2011foot square if the amount is small (such as from a spell like create water or hydraulic push). Larger amounts of water, such as a full bucket, typically douse a 10\u2011foot\u2011by\u201110\u2011foot area (or 4 squares in some other shape). Throwing a bucket of water on flames requires an Interact action. A waterskin doesn't contain enough water to put out even 1 square of fire. Cold can also put out fire, but only if the cold can affect an area; cold is less effective than water, so a frost vial puts out only 1 square of fire, and a ray of frost is ineffective.</p>",
+            "descriptionHazard": "<p>A @Template[square|distance:10]{10‑foot‑by‑10‑foot} bonfire spreads to the surrounding forest on each of its turns.</p>",
+            "disable": "<p>A successful @Check[athletics|dc:22|name:Smother a square|traits:hazard,complex,environmental,fire], @Check[nature|dc:22|name:Smother a square|traits:hazard,complex,environmental,fire], or @Check[survival|dc:22|name:Smother a square|traits:hazard,complex,environmental,fire] check from an adjacent square is sufficient to smother one 5‑foot‑square of fire; each attempt is an Interact action. Dousing the flames automatically extinguishes one or more sections of fire, with no check. Water typically clears a 5‑foot square if the amount is small (such as from a spell like create water or hydraulic push). Larger amounts of water, such as a full bucket, typically douse a 10‑foot‑by‑10‑foot area (or 4 squares in some other shape). Throwing a bucket of water on flames requires an Interact action. A waterskin doesn't contain enough water to put out even 1 square of fire. Cold can also put out fire, but only if the cold can affect an area; cold is less effective than water, so a frost vial puts out only 1 square of fire, and a ray of frost is ineffective.</p>",
             "routine": "<p>On its turn, the fire spreads into a number of additional squares equal to half the number of squares the fire currently occupies (minimum 1 square). You determine the squares the fire spreads into. Any creature that ends its turn next to the flames takes @Damage[(2d8+5)[fire]] damage, or @Damage[(4d8+10)[fire]] damage if it ended its turn within the flames (@Check[reflex|dc:25|traits:hazard,complex,environmental,fire|basic] in either case). A creature can take damage from the forest fire only once per round.</p>",
             "items": {
                 "action->Stoke Flames": {
@@ -2051,7 +2051,7 @@
                 },
                 "action->Viscous Sludge": {
                     "name": "Viscous Sludge",
-                    "description": "<p>The tar ooze can have up to eight creatures grappled at the same time; doing so doesn't prevent it from making pseudopod Strikes. A tar ooze can climb on ceilings and other inverted surfaces, though such surfaces are difficult terrain.</p>"
+                    "description": "<p>The tar ooze can have up to eight creatures grabbed at the same time; doing so doesn't prevent it from making pseudopod Strikes. A tar ooze can climb on ceilings and other inverted surfaces, though such surfaces are difficult terrain.</p>"
                 },
                 "action->Zombification": {
                     "name": "Zombification",
@@ -2323,7 +2323,7 @@
                 },
                 "action->Frightful Presence": {
                     "name": "Frightful Presence",
-                    "description": "<p>90 feet. @Check[will|dc:25]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.FrightfulPresence]</p>"
+                    "description": "<p>90 feet. @Check[will|dc:25|options:area-effect,inflicts:frightened]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.FrightfulPresence]</p>"
                 },
                 "action->Mist Shroud": {
                     "name": "Mist Shroud",
@@ -2331,7 +2331,7 @@
                 },
                 "action->Storm Vision": {
                     "name": "Storm Vision",
-                    "description": "<p>Inclement weather doesn't impair Venexus's vision; she ignores concealment from fog, mist, rain, and snowfall.</p>"
+                    "description": "<p>Inclement weather doesn't impair Venexus's vision; she ignores @UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{Concealment} from fog, mist, rain, and snowfall.</p>"
                 },
                 "action->Breath Weapon": {
                     "name": "Breath Weapon",
@@ -2417,11 +2417,11 @@
                 },
                 "action->Frightful Presence": {
                     "name": "Frightful Presence",
-                    "description": "<p>90 feet. @Check[will|dc:19]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.FrightfulPresence]</p>"
+                    "description": "<p>90 feet. @Check[will|dc:19|options:area-effect,inflicts:frightened]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.FrightfulPresence]</p>"
                 },
                 "action->Snow Vision": {
                     "name": "Snow Vision",
-                    "description": "<p>Snow doesn't impair a white dragon's vision; the wyrmling ignores concealment from snowfall.</p>"
+                    "description": "<p>Snow doesn't impair a white dragon's vision; the wyrmling ignores @UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{Concealment} from snowfall.</p>"
                 },
                 "action->Breath Weapon": {
                     "name": "Breath Weapon",

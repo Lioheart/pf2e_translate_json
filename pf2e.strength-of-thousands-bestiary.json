@@ -43,7 +43,7 @@
                 },
                 "equipment->Manacles (Average)": {
                     "name": "Manacles (Average)",
-                    "description": "<p>You can manacle someone who is willing or otherwise at your mercy as an exploration activity taking 10-30 seconds depending on the creature's size and how many manacles you apply. A two-legged creature with its legs bound takes a \u201315-foot circumstance penalty to its Speeds, and a two-handed creature with its wrists bound has to succeed at a @Check[flat|dc:5] any time it uses a manipulate action or else that action fails. This DC may be higher depending on how tightly the manacles constrain the hands. A creature bound to a stationary object is immobilized. For creatures with more or fewer limbs, the GM determines what effect manacles have, if any. Freeing a creature from average manacles requires four successful @Check[thievery|dc:27|traits:action:pick-a-lock] checks.</p>"
+                    "description": "<p>You can manacle someone who is willing or otherwise at your mercy as an exploration activity taking 10-30 seconds depending on the creature's size and how many manacles you apply. A two-legged creature with its legs bound takes a –15-foot circumstance penalty to its Speeds, and a two-handed creature with its wrists bound has to succeed at a @Check[flat|dc:5] any time it uses a manipulate action or else that action fails. This DC may be higher depending on how tightly the manacles constrain the hands. A creature bound to a stationary object is immobilized. For creatures with more or fewer limbs, the GM determines what effect manacles have, if any. Freeing a creature from average manacles requires four successful @Check[thievery|dc:27|traits:action:pick-a-lock] checks.</p>"
                 },
                 "equipment->Religious Symbol of Norgorber (Wooden)": {
                     "name": "Religious Symbol of Norgorber (Wooden)",
@@ -180,7 +180,7 @@
                 },
                 "action->Weighty Shadow": {
                     "name": "Weighty Shadow",
-                    "description": "<p><strong>Requirements</strong> The alapolo is adjacent to a target creature, or the GM determines the alapolo is adjacent to that creature's shadow</p><hr />\n<p><strong>Effect</strong> The alapolo petulantly stomps on a target's shadow, making it incredibly heavy to drag around. The creature takes a \u201320-foot penalty to its Speeds for 1 minute. As normal, this penalty can't reduce a creature's Speed below 5 feet. Any creatures @UUID[Compendium.pf2e.conditionitems.Item.AdPVz7rbaVSRxHFg]{Fascinated} by the alapolo due to its Enticing Invitation are freed from their fascination when the alapolo uses this ability, jarred by the graceless stomping.</p>"
+                    "description": "<p><strong>Requirements</strong> The alapolo is adjacent to a target creature, or the GM determines the alapolo is adjacent to that creature's shadow</p><hr />\n<p><strong>Effect</strong> The alapolo petulantly stomps on a target's shadow, making it incredibly heavy to drag around. The creature takes a –20-foot penalty to its Speeds for 1 minute. As normal, this penalty can't reduce a creature's Speed below 5 feet. Any creatures @UUID[Compendium.pf2e.conditionitems.Item.AdPVz7rbaVSRxHFg]{Fascinated} by the alapolo due to its Enticing Invitation are freed from their fascination when the alapolo uses this ability, jarred by the graceless stomping.</p>"
                 },
                 "lore->Shadow Lore": {
                     "name": "Shadow Lore"
@@ -623,8 +623,8 @@
         "Auto-Turret": {
             "name": "Auto-Turret",
             "descriptionHazard": "<p>A mounted gun equipped with a magical targeting system and integrated ammo supply.</p>",
-            "disable": "<p>@Check[thievery|dc:35|name:Disconnect the Turret|traits:magical,trap,hazard] (master) to disconnect the turret from its ammo supply system, or @Check[arcana|dc:35|name:Neutralize the Magical Targeting System|traits:magical,trap,hazard] (master) to neutralize the magical targeting system.</p>\n<p>Tan\u2011Takneh can also deactivate one or both auto\u2011turrets remotely with a special command word.</p>",
-            "routine": "<p>(3 actions) With each action, the auto\u2011turret makes a longrifle Strike against a creature within 60 feet of Tan\u2011Takneh's campsite (other than Tan-Takneh). If there are no such creatures, the auto\u2011turret instead uses its action to sprout mechanical legs, totter 20 feet in the direction of its last target, and then plant itself into the ground again. Programmed to spread its fire around, the auto\u2011turret doesn't attack any creature it's already attacked in the round.</p>\n<p>After making 15 Strikes, the auto\u2011turret depletes its ammunition and automatically deactivates.</p>",
+            "disable": "<p>@Check[thievery|dc:35|name:Disconnect the Turret|traits:magical,trap,hazard] (master) to disconnect the turret from its ammo supply system, or @Check[arcana|dc:35|name:Neutralize the Magical Targeting System|traits:magical,trap,hazard] (master) to neutralize the magical targeting system.</p>\n<p>Tan‑Takneh can also deactivate one or both auto‑turrets remotely with a special command word.</p>",
+            "routine": "<p>(3 actions) With each action, the auto‑turret makes a longrifle Strike against a creature within 60 feet of Tan‑Takneh's campsite (other than Tan-Takneh). If there are no such creatures, the auto‑turret instead uses its action to sprout mechanical legs, totter 20 feet in the direction of its last target, and then plant itself into the ground again. Programmed to spread its fire around, the auto‑turret doesn't attack any creature it's already attacked in the round.</p>\n<p>After making 15 Strikes, the auto‑turret depletes its ammunition and automatically deactivates.</p>",
             "stealth": "<p>(expert); darkvision</p>",
             "items": {
                 "action->Bullet Spray": {
@@ -667,7 +667,7 @@
                 },
                 "action->Frightful Presence": {
                     "name": "Frightful Presence",
-                    "description": "<p>60 feet. @Check[will|dc:38]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.FrightfulPresence]</p>"
+                    "description": "<p>60 feet. @Check[will|dc:38|options:area-effect,inflicts:frightened]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.FrightfulPresence]</p>"
                 },
                 "action->Smoke Vision": {
                     "name": "Smoke Vision",
@@ -748,7 +748,7 @@
             "items": {
                 "ammo->Storm Bolts": {
                     "name": "Storm Bolts",
-                    "description": "<p><strong>Activate</strong> <span class=\"action-glyph\">A</span> Interact</p>\n<p>The head of this bolt is made from gleaming copper.</p>\n<p>When an activated <em>storm bolt</em> hits a target, it is buffeted by raging winds and struck by a bolt of lightning that deals @Damage[3d12[electricity]] damage and the target must attempt a @Check[reflex|dc:25] saving throw.</p>\n<p>If this bolt is shot from a weapon with a <em>shock</em> property rune, the save DC increases to 27, though the attack doesn't benefit from the <em>shock</em> property rune itself.</p>\n<hr />\n<p><strong>Critical Success</strong> The foe is unaffected.</p>\n<p><strong>Success</strong> The foe takes half damage and isn't affected by the wind.</p>\n<p><strong>Failure</strong> The foe takes full damage and is buffeted by winds for 1 round, taking a -2 circumstance penalty to ranged attack rolls and a \u201310-foot circumstance penalty to its fly Speed.</p>\n<p><strong>Critical Failure</strong> As failure, but the foe takes double damage.</p>"
+                    "description": "<p><strong>Activate</strong> <span class=\"action-glyph\">A</span> Interact</p>\n<p>The head of this bolt is made from gleaming copper.</p>\n<p>When an activated <em>storm bolt</em> hits a target, it is buffeted by raging winds and struck by a bolt of lightning that deals @Damage[3d12[electricity]] damage and the target must attempt a @Check[reflex|dc:25] saving throw.</p>\n<p>If this bolt is shot from a weapon with a <em>shock</em> property rune, the save DC increases to 27, though the attack doesn't benefit from the <em>shock</em> property rune itself.</p>\n<hr />\n<p><strong>Critical Success</strong> The foe is unaffected.</p>\n<p><strong>Success</strong> The foe takes half damage and isn't affected by the wind.</p>\n<p><strong>Failure</strong> The foe takes full damage and is buffeted by winds for 1 round, taking a -2 circumstance penalty to ranged attack rolls and a –10-foot circumstance penalty to its fly Speed.</p>\n<p><strong>Critical Failure</strong> As failure, but the foe takes double damage.</p>"
                 },
                 "strike-melee->Shock Trident": {
                     "name": "Shock Trident"
@@ -1412,7 +1412,7 @@
         "Deathly Dream": {
             "name": "Deathly Dream",
             "descriptionHazard": "<p>Sinister runes adorn the doorway, opening a portal to a realm of nightmares if anyone other than Dwandek opens the door.</p>",
-            "disable": "<p>@Check[thievery|dc:40|name:Seal the Rift|traits:magical,trap,hazard] (master) to seal the rift using materials strongly grounded to the Material Plane, or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (7th\u2011level, counteract DC 33) to counteract the portal.</p>",
+            "disable": "<p>@Check[thievery|dc:40|name:Seal the Rift|traits:magical,trap,hazard] (master) to seal the rift using materials strongly grounded to the Material Plane, or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (7th‑level, counteract DC 33) to counteract the portal.</p>",
             "reset": "<p>The deathly dream trap resets automatically as long as it hasn't been disabled or destroyed. Each time it resets, the tiny pocket plane of nightmare it sends its victim into resets as well, so no two victims will ever share the same deathly dream.</p>",
             "stealth": "<p>(master)</p>",
             "items": {
@@ -1617,7 +1617,7 @@
             "descriptionHazard": "<p>A choir of ghostly shadows fill the benches in this room, chanting a haunting and unearthly melody.</p>",
             "disable": "<p>@Check[religion|dc:40|name:Exorcise the Spirits|traits:haunt,hazard] (master) to exorcise the spirits and break the power binding them into a single entity, or @Check[performance|dc:35|name:Counter the Choir|traits:haunt,hazard] (expert) to counter the choir and nullify the destructive elements of its song</p>",
             "reset": "<p>The entropy choir resets automatically after 24 hours, even if it has been disabled or destroyed. It fades away forever once Dwandek and other members of the cult to which it sings its praises are destroyed.</p>",
-            "routine": "<p>(3 actions; auditory, divine, evocation, sonic) The choir continues to sing its grim dirge every round until it is disabled or destroyed. If there are any non\u2011slowed living creatures in area <strong>A3</strong> when its turn starts, it first uses Call to Nothingness as a single action.</p>\n<p>It uses its remaining actions (or all three actions if there are slowed living creatures in the room already) to focus soul\u2011shattering choruses onto individual targets.</p>\n<p>The choir can target any living creature in area <strong>A3</strong> with an action, but never more than once per round per creature. It prefers to attack slowed creatures over all others, but it targets non\u2011slowed creatures if they're the only viable targets. A targeted creature must attempt a @Check[fortitude|dc:36|traits:auditory,divine,evocation,sonic] save.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target takes @Damage[5d6[sonic]] damage.</p>\n<p><strong>Failure</strong> The target takes @Damage[10d6[sonic]] damage.</p>\n<p><strong>Critical Failure</strong> The target takes @Damage[15d6[sonic]] damage and increases their @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained} condition by 1, to a maximum of drained 4.</p>",
+            "routine": "<p>(3 actions; auditory, divine, evocation, sonic) The choir continues to sing its grim dirge every round until it is disabled or destroyed. If there are any non‑slowed living creatures in area <strong>A3</strong> when its turn starts, it first uses Call to Nothingness as a single action.</p>\n<p>It uses its remaining actions (or all three actions if there are slowed living creatures in the room already) to focus soul‑shattering choruses onto individual targets.</p>\n<p>The choir can target any living creature in area <strong>A3</strong> with an action, but never more than once per round per creature. It prefers to attack slowed creatures over all others, but it targets non‑slowed creatures if they're the only viable targets. A targeted creature must attempt a @Check[fortitude|dc:36|traits:auditory,divine,evocation,sonic] save.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target takes @Damage[5d6[sonic]] damage.</p>\n<p><strong>Failure</strong> The target takes @Damage[10d6[sonic]] damage.</p>\n<p><strong>Critical Failure</strong> The target takes @Damage[15d6[sonic]] damage and increases their @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained} condition by 1, to a maximum of drained 4.</p>",
             "stealth": "<p><strong>Performance</strong> +33 (master); creatures in the area automatically notice the eerily swaying shadows</p>",
             "items": {
                 "action->Call to Nothingness": {
@@ -1642,7 +1642,7 @@
                 },
                 "weapon->Tanglefoot Bag (Moderate) (Infused)": {
                     "name": "Tanglefoot Bag (Moderate) (Infused)",
-                    "description": "<p><strong>Activate</strong> <span class=\"action-glyph\">1</span> Strike</p>\n<hr />\n<p>A tanglefoot bag is filled with sticky substances. When you hit a creature with a tanglefoot bag, that creature takes a \u201315-foot status penalty to its Speeds for 1 minute. You gain a +1 item bonus to attack rolls, and the Escape DC is 19 ([[/act escape dc=19]]).</p>\n<p>On a critical hit, a creature in contact with a solid surface becomes stuck to the surface and @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Immobilized} for 1 round, and a creature flying via wings has its wings tangled, causing it to fall safely to the ground and become unable to Fly again for 1 round. Tanglefoot bags are not effective when used on a creature that is in water.</p>\n<p>The target can end any effects by Escaping or spending a total of 3 actions to carefully remove the sticky substances. These Interact actions don't have to be consecutive, and other creatures can provide the actions as well.</p>"
+                    "description": "<p><strong>Activate</strong> <span class=\"action-glyph\">1</span> Strike</p>\n<hr />\n<p>A tanglefoot bag is filled with sticky substances. When you hit a creature with a tanglefoot bag, that creature takes a –15-foot status penalty to its Speeds for 1 minute. You gain a +1 item bonus to attack rolls, and the Escape DC is 19 ([[/act escape dc=19]]).</p>\n<p>On a critical hit, a creature in contact with a solid surface becomes stuck to the surface and @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Immobilized} for 1 round, and a creature flying via wings has its wings tangled, causing it to fall safely to the ground and become unable to Fly again for 1 round. Tanglefoot bags are not effective when used on a creature that is in water.</p>\n<p>The target can end any effects by Escaping or spending a total of 3 actions to carefully remove the sticky substances. These Interact actions don't have to be consecutive, and other creatures can provide the actions as well.</p>"
                 },
                 "armor->Smock": {
                     "name": "Smock",
@@ -2424,7 +2424,7 @@
                 },
                 "equipment->Manacles (Average)": {
                     "name": "Manacles (Average)",
-                    "description": "<p>You can manacle someone who is willing or otherwise at your mercy as an exploration activity taking 10-30 seconds depending on the creature's size and how many manacles you apply. A two-legged creature with its legs bound takes a \u201315-foot circumstance penalty to its Speeds, and a two-handed creature with its wrists bound has to succeed at a @Check[flat|dc:5] any time it uses a manipulate action or else that action fails. This DC may be higher depending on how tightly the manacles constrain the hands. A creature bound to a stationary object is immobilized. For creatures with more or fewer limbs, the GM determines what effect manacles have, if any. Freeing a creature from average manacles requires four successful @Check[thievery|dc:27|traits:action:pick-a-lock] checks.</p>"
+                    "description": "<p>You can manacle someone who is willing or otherwise at your mercy as an exploration activity taking 10-30 seconds depending on the creature's size and how many manacles you apply. A two-legged creature with its legs bound takes a –15-foot circumstance penalty to its Speeds, and a two-handed creature with its wrists bound has to succeed at a @Check[flat|dc:5] any time it uses a manipulate action or else that action fails. This DC may be higher depending on how tightly the manacles constrain the hands. A creature bound to a stationary object is immobilized. For creatures with more or fewer limbs, the GM determines what effect manacles have, if any. Freeing a creature from average manacles requires four successful @Check[thievery|dc:27|traits:action:pick-a-lock] checks.</p>"
                 },
                 "strike-melee->Greatclub": {
                     "name": "Greatclub"
@@ -2641,7 +2641,7 @@
                 },
                 "action->Sunder Objects": {
                     "name": "Sunder Objects",
-                    "description": "<p>When an ironclad annihilator damages an item or structure, it deals an additional [[/r {2d10}]]{2d10 damage} to that item or structure.</p>"
+                    "description": "<p>When an ironclad annihilator damages an item or structure, it deals an additional 2d10 damage to that item or structure.</p>"
                 },
                 "action->Trample": {
                     "name": "Trample",
@@ -2652,8 +2652,8 @@
                 }
             }
         },
-        "Ixam\u00e8": {
-            "name": "Ixam\u00e8",
+        "Ixamè": {
+            "name": "Ixamè",
             "blurb": "Female poison-wracked young cloud dragon",
             "speedsDetails": "cloud walk",
             "sensesDetails": "mist vision",
@@ -2679,34 +2679,34 @@
                 },
                 "action->Deflecting Cloud": {
                     "name": "Deflecting Cloud",
-                    "description": "<p><strong>Trigger</strong> Ixam\u00e8 is the target of a ranged attack</p>\n<p><strong>Requirements</strong> Ixam\u00e8 is aware of the attack and has a free wing</p>\n<hr />\n<p><strong>Effect</strong> Ixam\u00e8 rapidly flexes one of her wings and creates a billowing cloud of mist. She is treated as if she were @UUID[Compendium.pf2e.conditionitems.Item.iU0fEDdBp3rXpTMC]{Hidden} for the purposes of resolving the triggering attack, so normally the attacker must succeed at a @Check[flat|dc:11] to target her.</p>\n<p>Ixam\u00e8 also gains a +4 circumstance bonus to AC against the triggering attack.</p>"
+                    "description": "<p><strong>Trigger</strong> Ixamè is the target of a ranged attack</p>\n<p><strong>Requirements</strong> Ixamè is aware of the attack and has a free wing</p>\n<hr />\n<p><strong>Effect</strong> Ixamè rapidly flexes one of her wings and creates a billowing cloud of mist. She is treated as if she were @UUID[Compendium.pf2e.conditionitems.Item.iU0fEDdBp3rXpTMC]{Hidden} for the purposes of resolving the triggering attack, so normally the attacker must succeed at a @Check[flat|dc:11] to target her.</p>\n<p>Ixamè also gains a +4 circumstance bonus to AC against the triggering attack.</p>"
                 },
                 "action->Frightful Presence": {
                     "name": "Frightful Presence",
-                    "description": "<p>90 feet. @Check[will|dc:26]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.FrightfulPresence]</p>"
+                    "description": "<p>90 feet. @Check[will|dc:26|options:area-effect,inflicts:frightened]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.FrightfulPresence]</p>"
                 },
                 "action->Mist Vision": {
                     "name": "Mist Vision",
-                    "description": "<p>Fog and mist don't impair a cloud dragon's vision; Ixam\u00e8 ignores the @UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{Concealed} condition from fog and mist.</p>"
+                    "description": "<p>Fog and mist don't impair a cloud dragon's vision; Ixamè ignores the @UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{Concealed} condition from fog and mist.</p>"
                 },
                 "action->Void Healing": {
                     "name": "Void Healing"
                 },
                 "action->Breath Weapon": {
                     "name": "Breath Weapon",
-                    "description": "<p>Ixam\u00e8 breathes a cloud of poison like that emitted from Terwa Lake that deals @Damage[11d6[poison]|options:area-damage] damage in a @Template[cone|distance:40] (@Check[reflex|dc:29|basic|options:area-effect] save).</p>\n<p>She can't use Breath Weapon again for [[/gmr 1d4 #Recharge Breath Weapon]]{1d4 rounds}.</p>"
+                    "description": "<p>Ixamè breathes a cloud of poison like that emitted from Terwa Lake that deals @Damage[11d6[poison]|options:area-damage] damage in a @Template[cone|distance:40] (@Check[reflex|dc:29|basic|options:area-effect] save).</p>\n<p>She can't use Breath Weapon again for [[/gmr 1d4 #Recharge Breath Weapon]]{1d4 rounds}.</p>"
                 },
                 "action->Cloud Walk": {
                     "name": "Cloud Walk",
-                    "description": "<p>Ixam\u00e8 can tread on clouds or fog as though on solid ground.</p>"
+                    "description": "<p>Ixamè can tread on clouds or fog as though on solid ground.</p>"
                 },
                 "action->Draconic Frenzy": {
                     "name": "Draconic Frenzy",
-                    "description": "<p>Ixam\u00e8 makes two claw Strikes and one horn Strike in any order.</p>"
+                    "description": "<p>Ixamè makes two claw Strikes and one horn Strike in any order.</p>"
                 },
                 "action->Draconic Momentum": {
                     "name": "Draconic Momentum",
-                    "description": "<p>Ixam\u00e8 recharges her Breath Weapon whenever she scores a critical hit when making a Strike.</p>"
+                    "description": "<p>Ixamè recharges her Breath Weapon whenever she scores a critical hit when making a Strike.</p>"
                 }
             }
         },
@@ -3060,7 +3060,7 @@
                 },
                 "action->Lucky Stabs": {
                     "name": "Lucky Stabs",
-                    "description": "<p>Kurshkin deals an additional [[/r {1d6}]]{1d6 damage} with her melee Strikes against creatures affected by her unluck aura.</p>"
+                    "description": "<p>Kurshkin deals an additional 1d6 damage with her melee Strikes against creatures affected by her unluck aura.</p>"
                 },
                 "action->Natural Thief": {
                     "name": "Natural Thief",
@@ -3309,7 +3309,7 @@
                 },
                 "action->Filth Wave": {
                     "name": "Filth Wave",
-                    "description": "<p><strong>Frequency</strong> once per minute</p>\n<hr />\n<p><strong>Effect</strong> The sewer ooze unleashes a wave of filth, covering all creatures within a @Template[emanation|distance:20]. Each creature in the area must succeed at a @Check[reflex|dc:24|options:area-effect,damaging-effect] save or take @Damage[1d4[acid]|options:area-damage] damage and a \u201310-foot penalty to its Speeds for 1 minute (on a critical failure, the creature also falls @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone}). A creature can spend an Interact action to clean someone off, decreasing the Speed penalty by 5 feet with each action.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.Qomp2EujVCbzJb4X]{Effect: Filth Wave}</p>"
+                    "description": "<p><strong>Frequency</strong> once per minute</p>\n<hr />\n<p><strong>Effect</strong> The sewer ooze unleashes a wave of filth, covering all creatures within a @Template[emanation|distance:20]. Each creature in the area must succeed at a @Check[reflex|dc:24|options:area-effect,damaging-effect] save or take @Damage[1d4[acid]|options:area-damage] damage and a –10-foot penalty to its Speeds for 1 minute (on a critical failure, the creature also falls @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone}). A creature can spend an Interact action to clean someone off, decreasing the Speed penalty by 5 feet with each action.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.Qomp2EujVCbzJb4X]{Effect: Filth Wave}</p>"
                 }
             },
             "skills": {
@@ -3609,11 +3609,11 @@
                 },
                 "action->Vulnerable to Curved Space": {
                     "name": "Vulnerable to Curved Space",
-                    "description": "<p>When a ravager of Tindalos is not adjacent to a structural angle of 90\u00ba (or more acute), its resistance to physical damage is suppressed and it becomes @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 1}. It can't recover from this sickened condition, but the condition ends automatically once the ravager is again adjacent to a suitable angle.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.V60TWjo1G1r5ZtPM]{Effect: Vulnerable to Curved Space}</p>"
+                    "description": "<p>When a ravager of Tindalos is not adjacent to a structural angle of 90º (or more acute), its resistance to physical damage is suppressed and it becomes @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 1}. It can't recover from this sickened condition, but the condition ends automatically once the ravager is again adjacent to a suitable angle.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.V60TWjo1G1r5ZtPM]{Effect: Vulnerable to Curved Space}</p>"
                 },
                 "action->Angled Entry": {
                     "name": "Angled Entry",
-                    "description": "<p>The ravager of Tindalos casts a 4th-rank @UUID[Compendium.pf2e.spells-srd.Item.VlNcjmYyu95vOUe8]{Translocate} spell, but it must transport itself into a space adjacent to an angle of 90\u00ba (or more acute) in the structure or environment around it. For example, it could teleport to a space adjacent to a wall (using the angle between the wall and floor) or a corner in a room, or adjacent to a sizable tree growing straight up out of the ground, but not to a flat plain or a room with only curved corners and edges.</p>\n<p>Once per day, the ravager can use this ability to plane shift to or from the Dimension of Time, with the same restrictions on what angles it can appear next to.</p>"
+                    "description": "<p>The ravager of Tindalos casts a 4th-rank @UUID[Compendium.pf2e.spells-srd.Item.VlNcjmYyu95vOUe8]{Translocate} spell, but it must transport itself into a space adjacent to an angle of 90º (or more acute) in the structure or environment around it. For example, it could teleport to a space adjacent to a wall (using the angle between the wall and floor) or a corner in a room, or adjacent to a sizable tree growing straight up out of the ground, but not to a flat plain or a room with only curved corners and edges.</p>\n<p>Once per day, the ravager can use this ability to plane shift to or from the Dimension of Time, with the same restrictions on what angles it can appear next to.</p>"
                 },
                 "action->Ferocious Bites": {
                     "name": "Ferocious Bites",
@@ -4456,7 +4456,7 @@
                 },
                 "action->Frightful Presence": {
                     "name": "Frightful Presence",
-                    "description": "<p>60 feet. @Check[will|dc:30]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.FrightfulPresence]</p>"
+                    "description": "<p>60 feet. @Check[will|dc:30|options:area-effect,inflicts:frightened]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.FrightfulPresence]</p>"
                 },
                 "action->Troop Defenses": {
                     "name": "Troop Defenses"
@@ -4502,7 +4502,7 @@
                 },
                 "action->Frightful Presence": {
                     "name": "Frightful Presence",
-                    "description": "<p>90 feet. @Check[will|dc:31]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.FrightfulPresence]</p>"
+                    "description": "<p>90 feet. @Check[will|dc:31|options:area-effect,inflicts:frightened]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.FrightfulPresence]</p>"
                 },
                 "action->Void Healing": {
                     "name": "Void Healing"
@@ -4689,8 +4689,14 @@
                 "spellcastingEntry->Innate Primal Spells": {
                     "name": "Innate Primal Spells"
                 },
+                "spell->Transmute Rock And Mud (Rock to Mud Only)": {
+                    "name": "Transmute Rock And Mud (Rock to Mud Only)"
+                },
                 "spell->Endure Elements (Cold) (Constant)": {
                     "name": "Endure Elements (Cold) (Constant)"
+                },
+                "spell->Quench (At Will)": {
+                    "name": "Quench (At Will)"
                 },
                 "strike-melee->Claw": {
                     "name": "Claw"
@@ -5745,7 +5751,7 @@
             "items": {
                 "equipment->Manacles (Good)": {
                     "name": "Manacles (Good)",
-                    "description": "<p>You can manacle someone who is willing or otherwise at your mercy as an exploration activity taking 10-30 seconds depending on the creature's size and how many manacles you apply. A two-legged creature with its legs bound takes a \u201315-foot circumstance penalty to its Speeds, and a two-handed creature with its wrists bound has to succeed at a @Check[flat|dc:5] any time it uses a manipulate action or else that action fails. This DC may be higher depending on how tightly the manacles constrain the hands. A creature bound to a stationary object is immobilized. For creatures with more or fewer limbs, the GM determines what effect manacles have, if any. Freeing a creature from good manacles requires five successful @Check[thievery|dc:32|traits:action:pick-a-lock] checks.</p>"
+                    "description": "<p>You can manacle someone who is willing or otherwise at your mercy as an exploration activity taking 10-30 seconds depending on the creature's size and how many manacles you apply. A two-legged creature with its legs bound takes a –15-foot circumstance penalty to its Speeds, and a two-handed creature with its wrists bound has to succeed at a @Check[flat|dc:5] any time it uses a manipulate action or else that action fails. This DC may be higher depending on how tightly the manacles constrain the hands. A creature bound to a stationary object is immobilized. For creatures with more or fewer limbs, the GM determines what effect manacles have, if any. Freeing a creature from good manacles requires five successful @Check[thievery|dc:32|traits:action:pick-a-lock] checks.</p>"
                 },
                 "equipment->Religious Symbol of Norgorber (Wooden)": {
                     "name": "Religious Symbol of Norgorber (Wooden)",

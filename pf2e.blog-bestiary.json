@@ -6,7 +6,7 @@
     "entries": {
         "Ailuran": {
             "name": "Ailuran",
-            "publicNotes": "<p>Ailurans are reclusive fey with an obsession for silver. This fixation makes them a pesky foil to silver miners and werecreatures alike. Though the creatures don't necessarily harbor any ill will to others and would prefer to just be left alone, miners consider them pests. Ailurans, sometimes called silver seekers, are infamous for sneaking into or breaking into silver mines to obtain the object of their affection\u2014silver. Miners, not wanting to be stolen from, keep alert for ailuran activity. It's unsure why ailurans have an animosity to werecreatures, but their obsession with silver serves them well in this regard. Some ailurans use the silver they collect to make silver weapons they use to hunt down these shapeshifters. Werecreatures aware of this enmity tend to avoid regions where ailurans live. Ailurans live in small groups in secluded forested hills and mountains\u2014typically locations in which silver can be found in abundance. When not raiding mines, ailurans can be found in trees where they often make their homes. They have a supernatural ability to sense the presence of silver and have been known to accost travelers and charge them a silver toll to allow passage through their lands. While not outwardly friendly, many ailurans are open to trade and will barter with creatures passing through their forests. However, if a visitor makes a bad impression, the creatures sometimes use their illusory magic to create false silver items they use to trade, leaving the traveler empty handed once the magic's duration runs out.</p>",
+            "publicNotes": "<p>Ailurans are reclusive fey with an obsession for silver. This fixation makes them a pesky foil to silver miners and werecreatures alike. Though the creatures don't necessarily harbor any ill will to others and would prefer to just be left alone, miners consider them pests. Ailurans, sometimes called silver seekers, are infamous for sneaking into or breaking into silver mines to obtain the object of their affection—silver. Miners, not wanting to be stolen from, keep alert for ailuran activity. It's unsure why ailurans have an animosity to werecreatures, but their obsession with silver serves them well in this regard. Some ailurans use the silver they collect to make silver weapons they use to hunt down these shapeshifters. Werecreatures aware of this enmity tend to avoid regions where ailurans live. Ailurans live in small groups in secluded forested hills and mountains—typically locations in which silver can be found in abundance. When not raiding mines, ailurans can be found in trees where they often make their homes. They have a supernatural ability to sense the presence of silver and have been known to accost travelers and charge them a silver toll to allow passage through their lands. While not outwardly friendly, many ailurans are open to trade and will barter with creatures passing through their forests. However, if a visitor makes a bad impression, the creatures sometimes use their illusory magic to create false silver items they use to trade, leaving the traveler empty handed once the magic's duration runs out.</p>",
             "allSavesBonus": "+1 status to all vs. poison",
             "sensesDetails": "silversense (imprecise) 30 feet",
             "items": {
@@ -273,7 +273,7 @@
                 },
                 "consumable->Biting Snare": {
                     "name": "Biting Snare",
-                    "description": "<p>The snare's jaws shut on the leg of a creature that steps on it. The snare deals 5d6 piercing damage to the first creature that enters its square; that creature must attempt a @Check[reflex|dc:18].</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature takes half damage.</p>\n<p><strong>Failure</strong> The creature takes full damage.</p>\n<p><strong>Critical Failure</strong> The creature takes double damage and takes a \u201310-foot status penalty to its Speed until it recovers at least 1 Hit Point.</p>"
+                    "description": "<p>The snare's jaws shut on the leg of a creature that steps on it. The snare deals 5d6 piercing damage to the first creature that enters its square; that creature must attempt a @Check[reflex|dc:18].</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature takes half damage.</p>\n<p><strong>Failure</strong> The creature takes full damage.</p>\n<p><strong>Critical Failure</strong> The creature takes double damage and takes a –10-foot status penalty to its Speed until it recovers at least 1 Hit Point.</p>"
                 },
                 "consumable->Flare Snare": {
                     "name": "Flare Snare",
@@ -314,7 +314,7 @@
             "items": {
                 "action->Cloud of Allergens": {
                     "name": "Cloud of Allergens",
-                    "description": "<p><strong>Trigger</strong> The swarm rolls initiative</p><hr /><p><strong>Effect</strong> The dust bunnies stir, kicking up a cloud in a @Template[type:burst|distance:15] centered on the swarm that lasts for 1 minute. Creatures who enter or start their turn in this cloud must attempt a @Check[fortitude|dc:16] save or take a \u20131 circumstance penalty to skill checks that have the concentration trait and all Perception checks as their sensory organs become impaired.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.pVd4mbG2u8Y1mqgL]{Effect: Cloud of Allergens}</p>"
+                    "description": "<p><strong>Trigger</strong> The swarm rolls initiative</p><hr /><p><strong>Effect</strong> The dust bunnies stir, kicking up a cloud in a @Template[type:burst|distance:15] centered on the swarm that lasts for 1 minute. Creatures who enter or start their turn in this cloud must attempt a @Check[fortitude|dc:16] save or take a –1 circumstance penalty to skill checks that have the concentration trait and all Perception checks as their sensory organs become impaired.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.pVd4mbG2u8Y1mqgL]{Effect: Cloud of Allergens}</p>"
                 },
                 "action->Dust to Dust": {
                     "name": "Dust to Dust",
@@ -447,7 +447,7 @@
                 },
                 "action->Frightful Presence": {
                     "name": "Frightful Presence",
-                    "description": "<p>90 feet. @Check[will|dc:37]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.FrightfulPresence]</p>"
+                    "description": "<p>90 feet. @Check[will|dc:37|options:area-effect,inflicts:frightened]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.FrightfulPresence]</p>"
                 },
                 "action->Wing Deflection": {
                     "name": "Wing Deflection",

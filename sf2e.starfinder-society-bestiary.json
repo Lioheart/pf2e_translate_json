@@ -4,6 +4,7 @@
         "1-05": "1-05",
         "Season 1": "Season 1",
         "1-01": "1-01",
+        "1-15": "1-15",
         "1-14": "1-14",
         "1-02": "1-02",
         "1-00": "1-00",
@@ -13,6 +14,7 @@
         "1-07": "1-07",
         "1-08": "1-08",
         "1-09": "1-09",
+        "1-16": "1-16",
         "1-12": "1-12",
         "1-10": "1-10",
         "1-11": "1-11",
@@ -56,7 +58,7 @@
                 },
                 "equipment->Sniper's Scope (Commercial)": {
                     "name": "Sniper's Scope (Commercial)",
-                    "description": "<p>A telescopic sighting attachment helps view distant targets.</p><hr /><p><strong>Activate\u2014Adjust Sight</strong> <span class=\"action-glyph\">1</span> (manipulate)</p>\n<p><strong>Effect</strong> Increase the range increment of the weapon the scope is attached to by 10 feet. If the weapon has a base range increment of 50 feet or more, increase the range of the weapon by 20 feet instead. This lasts until the beginning of your next turn or until you're no longer wielding the weapon this scope is attached to, whichever comes first. This does not increase the size of area attacks.</p>"
+                    "description": "<p>A telescopic sighting attachment helps view distant targets.</p><hr /><p><strong>Activate—Adjust Sight</strong> <span class=\"action-glyph\">1</span> (manipulate)</p>\n<p><strong>Effect</strong> Increase the range increment of the weapon the scope is attached to by 10 feet. If the weapon has a base range increment of 50 feet or more, increase the range of the weapon by 20 feet instead. This lasts until the beginning of your next turn or until you're no longer wielding the weapon this scope is attached to, whichever comes first. This does not increase the size of area attacks.</p>"
                 },
                 "ammo->Projectile Ammo": {
                     "name": "Projectile Ammo"
@@ -204,7 +206,7 @@
             "items": {
                 "action->Into the Drink!": {
                     "name": "Into the Drink!",
-                    "description": "<p><strong>Trigger</strong> A creature ends its movement on the bridge</p><hr /><p><strong>Effect</strong> The bumper bridge attempts to [[/act shove]] that creature into the river with an Athletics bonus of [[/gmr 1d20+9 #Athletics]]{+9}. If the triggering creature was not aware of this hazard, they take a \u20132 circumstance penalty to their Fortitude DC. The bumper bridge then rolls initiative.</p>"
+                    "description": "<p><strong>Trigger</strong> A creature ends its movement on the bridge</p><hr /><p><strong>Effect</strong> The bumper bridge attempts to [[/act shove]] that creature into the river with an Athletics bonus of [[/gmr 1d20+9 #Athletics]]{+9}. If the triggering creature was not aware of this hazard, they take a –2 circumstance penalty to their Fortitude DC. The bumper bridge then rolls initiative.</p>"
                 }
             }
         },
@@ -336,7 +338,7 @@
                 },
                 "action->Snow Vision": {
                     "name": "Snow Vision",
-                    "description": "<p>Snow doesn't impair a yearling arabuk's vision; it ignores concealment from snowfall.</p>"
+                    "description": "<p>Snow doesn't impair a yearling arabuk's vision; it ignores @UUID[Compendium.sf2e.conditions.Item.DmAIPqOBomZ7H95W]{Concealment} from snowfall.</p>"
                 },
                 "action->Glacial Stride": {
                     "name": "Glacial Stride",
@@ -378,6 +380,9 @@
                 },
                 "strike-melee->Laser Eye": {
                     "name": "Laser Eye"
+                },
+                "action->Ferocity": {
+                    "name": "Ferocity"
                 },
                 "action->Boar Charge": {
                     "name": "Boar Charge",
@@ -461,7 +466,7 @@
         },
         "Fire Wisp": {
             "name": "Fire Wisp",
-            "publicNotes": "<p>Fire wisps are sizzling spheres of flame and ash, perpetually crackling and shimmering with heat. They're carefree, boisterous, and quick to action\u2014sometimes recklessly so.</p><hr /><p>Wisps are tiny elemental beings that emerged during the creation of the Elemental Planes. The first wisps roamed the Inner Sphere in shifting symphonies that traded members with their every meeting. These symphonies of free wisps created music out of their combined resonances, but when the wicked Elemental Lords realized the value of the wisps' resonance, they captured whole symphonies for use as servants.</p>\n<p>Wisps attune to each other and to those they surround themselves with. This attunement makes them naturally supportive allies. Free wisps still roam the Inner Sphere and the Universe, but they're usually shy and hide themselves from strangers. However, they happily offer their service to those who show them kindness. They especially find themselves drawn to spellcasters who practice elemental magic; these wisps usually watch from afar but sometimes approach those who seem safe to become familiars or comrades.</p>\n<p>Free wisps who find one another become close almost immediately. They get especially excited when they find wisps of elements other than their own, showing none of the animosity sometimes exhibited between elementals of different planes. Instead, they join in an excited dance, emitting resonances that faintly echo the symphonies of ancient days.</p>",
+            "publicNotes": "<p>Fire wisps are sizzling spheres of flame and ash, perpetually crackling and shimmering with heat. They're carefree, boisterous, and quick to action—sometimes recklessly so.</p><hr /><p>Wisps are tiny elemental beings that emerged during the creation of the Elemental Planes. The first wisps roamed the Inner Sphere in shifting symphonies that traded members with their every meeting. These symphonies of free wisps created music out of their combined resonances, but when the wicked Elemental Lords realized the value of the wisps' resonance, they captured whole symphonies for use as servants.</p>\n<p>Wisps attune to each other and to those they surround themselves with. This attunement makes them naturally supportive allies. Free wisps still roam the Inner Sphere and the Universe, but they're usually shy and hide themselves from strangers. However, they happily offer their service to those who show them kindness. They especially find themselves drawn to spellcasters who practice elemental magic; these wisps usually watch from afar but sometimes approach those who seem safe to become familiars or comrades.</p>\n<p>Free wisps who find one another become close almost immediately. They get especially excited when they find wisps of elements other than their own, showing none of the animosity sometimes exhibited between elementals of different planes. Instead, they join in an excited dance, emitting resonances that faintly echo the symphonies of ancient days.</p>",
             "sensesDetails": "smoke vision",
             "items": {
                 "strike-melee->Tendril": {
@@ -680,6 +685,37 @@
                 }
             }
         },
+        "Itaka the Ever-Craving": {
+            "name": "Itaka the Ever-Craving",
+            "sensesDetails": "whispers of Akiton (imprecise) 60 feet",
+            "items": {
+                "spellcastingEntry->Primal Innate Spells": {
+                    "name": "Primal Innate Spells"
+                },
+                "strike-melee->Jaws": {
+                    "name": "Jaws"
+                },
+                "action->Whispers of Akiton": {
+                    "name": "Whispers of Akiton",
+                    "description": "<p>Itaka can sense living creatures, objects and effects with the primal trait, and any objects and creatures in the area of primal effects, within range. She can also speak through primal effects, bypassing her selective silence.</p>"
+                },
+                "action->Selective Silence": {
+                    "name": "Selective Silence",
+                    "description": "<p>5 feet. Itaka, willing creatures in the area, and creatures @UUID[Compendium.sf2e.conditions.Item.kWc1fhmv9LBiTuei]{Grabbed} or @UUID[Compendium.sf2e.conditions.Item.VcDeM8A5oI6VqhbM]{Restrained} by Itaka or an affected ally make no sound (preventing speech and auditory actions).</p>"
+                },
+                "action->Suctioning Vortex": {
+                    "name": "Suctioning Vortex",
+                    "description": "<p><strong>Requirements</strong> Itaka doesn't have a creature @UUID[Compendium.sf2e.conditions.Item.kWc1fhmv9LBiTuei]{Grabbed} in its jaws</p><hr /><p><strong>Effect</strong> Itaka draws breath into its powerful lungs to drag prey into its maw. Each creature in a @Template[cone|distance:15] must succeed at a @Check[fortitude|dc:18] save or be pulled up to 10 feet closer to Itaka. Creatures that fail take @Damage[1d12[bludgeoning]] damage from the sudden pressure change. If at least one creature ends this forced movement adjacent to Itaka, Itaka can make a jaws Strike against that creature. If this Strike is a critical success, the creature is also grabbed in Itaka's jaws.</p>"
+                },
+                "action->Swallow Whole": {
+                    "name": "Swallow Whole",
+                    "description": "<p>Medium, @Damage[(2d4+2)[cold]], Rupture 7</p><hr /><p>@Localize[PF2E.NPC.Abilities.Glossary.SwallowWhole]</p>"
+                },
+                "action->Grab": {
+                    "name": "Grab"
+                }
+            }
+        },
         "Jellied Rat King": {
             "name": "Jellied Rat King",
             "hpDetails": "void healing",
@@ -763,6 +799,33 @@
             "skills": {
                 "stealth": {
                     "label": "in its natural environment of snowy forests"
+                }
+            }
+        },
+        "Kuriaku": {
+            "name": "Kuriaku",
+            "items": {
+                "ammo->Projectile Ammo": {
+                    "name": "Projectile Ammo"
+                },
+                "strike-melee->Shobhad Longrifle": {
+                    "name": "Shobhad Longrifle"
+                },
+                "strike-melee->Antlers": {
+                    "name": "Antlers"
+                },
+                "strike-melee->Fist": {
+                    "name": "Fist"
+                },
+                "action->Reverberant Antlers": {
+                    "name": "Reverberant Antlers",
+                    "description": "<p>Magical vibrations resonate through Kuriaku from his antlers. A creature that starts its turn grappled or @UUID[Compendium.sf2e.conditions.Item.VcDeM8A5oI6VqhbM]{Restrained} by Kuriaku must succeed at a @Check[fortitude|dc:14] save or be @UUID[Compendium.sf2e.conditions.Item.i3OJZU2nk64Df3xm]{Clumsy 1} and @UUID[Compendium.sf2e.conditions.Item.e1XGnhKNSQIm5IXg]{Stupefied 1} for 1 round (1 hour on a critical failure). A restrained creature uses the outcome one degree of success worse than its result.</p>"
+                },
+                "action->Grab": {
+                    "name": "Grab"
+                },
+                "action->Knockdown": {
+                    "name": "Knockdown"
                 }
             }
         },
@@ -926,7 +989,7 @@
                 },
                 "action->Catchapon": {
                     "name": "Catchapon",
-                    "description": "<p><strong>Requirements</strong> A @UUID[Compendium.sf2e.conditions.Item.kWc1fhmv9LBiTuei]{Grabbed}, @UUID[Compendium.sf2e.conditions.Item.eIcWbB5o3pP6OIMe]{Immobilized}, @UUID[Compendium.sf2e.conditions.Item.6uEgoh53GbXuHpTF]{Paralyzed}, @UUID[Compendium.sf2e.conditions.Item.VcDeM8A5oI6VqhbM]{Restrained}, or @UUID[Compendium.sf2e.conditions.Item.fBnFDH2MTzgFijKf]{Unconscious} creature is within 15 feet of the nodocite incarcerator</p><hr /><p><strong>Effect</strong> The nodocite incarcerator attempts to inhale the required creature. The target must attempt a @Check[fortitude|dc:18] save. On a failure, they're pulled into a miniaturized pocket dimension in a clear polymer ball and stored in the nodocite incarcerator's dorsal chamber.</p>\n<p>Each polymer ball weighs light Bulk and contains an individual pocket dimension that can hold one creature of any size at a time. Creatures inside are held in stasis, immune to the effects of time and dying, and are unable to act until released. A nodocite incarcerator can store an unlimited number of polymer balls in its dorsal chamber. When a nodocite incarcerator is destroyed, it automatically Vends all the polymer balls in its dorsal chamber.</p>\n<p>A creature within reach of the nodocite incarcerator can attempt a DC 15 Athletics check to [[/act force-open dc=15]] or a @Check[computers|dc:15], @Check[crafting|dc:15], or DC 15 Thievery check to [[/act disable-device dc=15]]; on a success, rather than the usual effects, the nodocite incarcerator immediately Vends one polymer ball (or two polymer balls on a critical success). It Vends the most recently filled polymer ball.</p>\n<p>A creature holding a polymer ball can throw the polymer ball up to 20 feet away as a single action with the manipulate trait, releasing the contained creature into an adjacent space, restored to their normal size and in the state they were when they were captured in the polymer ball.</p>"
+                    "description": "<p><strong>Requirements</strong> A @UUID[Compendium.sf2e.conditions.Item.kWc1fhmv9LBiTuei]{Grabbed}, @UUID[Compendium.sf2e.conditions.Item.eIcWbB5o3pP6OIMe]{Immobilized}, @UUID[Compendium.sf2e.conditions.Item.6uEgoh53GbXuHpTF]{Paralyzed}, @UUID[Compendium.sf2e.conditions.Item.VcDeM8A5oI6VqhbM]{Restrained}, or @UUID[Compendium.sf2e.conditions.Item.fBnFDH2MTzgFijKf]{Unconscious} creature is within 15 feet of the nodocite incarcerator</p><hr /><p><strong>Effect</strong> The nodocite incarcerator attempts to inhale the required creature. The target must attempt a @Check[fortitude|dc:18] save. On a failure, they're pulled into a miniaturized pocket dimension in a clear polymer ball and stored in the nodocite incarcerator's dorsal chamber.</p>\n<p>Each polymer ball weighs light Bulk and contains an individual pocket dimension that can hold one creature of any size at a time. Creatures inside are held in stasis, immune to the effects of time and dying, and are unable to act until released. A nodocite incarcerator can store an unlimited number of polymer balls in its dorsal chamber. When a nodocite incarcerator is destroyed, it automatically Vends all the polymer balls in its dorsal chamber.</p>\n<p>A creature within reach of the nodocite incarcerator can attempt a [[/act force-open skill=athletics dc=15]]{Athletics} check to Force Open or a [[/act disable-device skill=computers dc=15]]{Computers}, [[/act disable-device skill=crafting dc=15]]{Crafting}, or [[/act disable-device skill=thievery dc=15]]{Thievery} check to Disable Device; on a success, rather than the usual effects, the nodocite incarcerator immediately Vends one polymer ball (or two polymer balls on a critical success). It Vends the most recently filled polymer ball.</p>\n<p>A creature holding a polymer ball can throw the polymer ball up to 20 feet away as a single action with the manipulate trait, releasing the contained creature into an adjacent space, restored to their normal size and in the state they were when they were captured in the polymer ball.</p>"
                 },
                 "action->Vend": {
                     "name": "Vend",
@@ -947,6 +1010,9 @@
                 "strike-melee->Battering Fist": {
                     "name": "Battering Fist"
                 },
+                "strike-melee->Incendiary Grenade": {
+                    "name": "Incendiary Grenade"
+                },
                 "action->Networked Nodocite": {
                     "name": "Networked Nodocite",
                     "description": "<p>A nodocite can communicate wirelessly with other nodocites within 200 feet.</p>"
@@ -954,10 +1020,6 @@
                 "action->Block Path": {
                     "name": "Block Path",
                     "description": "<p><strong>Trigger</strong> A creature within the nodocite's reach uses a move action or leaves a square during a move action it's using</p><hr /><p><strong>Effect</strong> The nodocite sentry makes a melee Strike against the triggering creature. On a hit, the target's movement is additionally disrupted.</p>"
-                },
-                "action->Area Fire": {
-                    "name": "Area Fire",
-                    "description": "<p>Incendiary Grenade (@Template[type:burst|distance:5], range 70 feet)</p>\n<p><strong>Damage</strong> @Damage[1d8[fire]|options:area-damage] (@Check[reflex|dc:17|basic])</p>"
                 },
                 "action->Push": {
                     "name": "Push"
@@ -989,7 +1051,7 @@
         },
         "Officer Kanren": {
             "name": "Officer Kanren",
-            "acDetails": "(19 with shield raised",
+            "acDetails": "(19 with shield raised)",
             "items": {
                 "weapon->Semi-Auto Pistol": {
                     "name": "Semi-Auto Pistol",
@@ -1073,6 +1135,59 @@
                 "action->Gathering Storm": {
                     "name": "Gathering Storm",
                     "description": "<p><strong>Trigger</strong> The beyond terror appears</p><hr /><p><strong>Effect</strong> A swirling green energy emerges from the world mirror, roiling through the air with a wail of confusion and fear. All creatures within 30 feet of the world mirror become @UUID[Compendium.sf2e.conditions.Item.TBSHQspnbcqxsmjL]{Frightened 1} unless they succeed at a @Check[will|dc:16] save. The haunt then rolls initiative.</p>"
+                }
+            }
+        },
+        "Quantum Nexus": {
+            "name": "Quantum Nexus",
+            "speedsDetails": "Hover",
+            "items": {
+                "spellcastingEntry->Arcane Spontaneous Spells": {
+                    "name": "Arcane Spontaneous Spells"
+                },
+                "spellcastingEntry->Witchwarper Paradox Spells": {
+                    "name": "Witchwarper Paradox Spells"
+                },
+                "weapon->Zero Pistol": {
+                    "name": "Zero Pistol",
+                    "description": "<p><strong>Upgrades:</strong> 1</p><hr /><p>Zero pistols use transparent canisters of supercooled liquid as ammunition.</p>"
+                },
+                "armor->Carbon Skin": {
+                    "name": "Carbon Skin",
+                    "description": "<p><strong>Upgrades:</strong> 1</p><hr /><p>This form-fitting suit of carbon fiber encases the body. Most are usually dull-gray, functional garments, while pricier, bespoke suits dazzle like diamonds.</p>"
+                },
+                "equipment->Parallel Accord": {
+                    "name": "Parallel Accord",
+                    "description": "<p>A parallel accord is a small metallic disk ringed with magical runes that transcend reality, serving as a nexus for a number of your parallel selves. When invested, a parallel accord hovers over your head like a crown.</p>\n<p><strong>Activate—Parallel Positioning</strong> <span class=\"action-glyph\">r</span> (concentration, teleportation)</p>\n<p><strong>Trigger</strong> You succeed at a saving throw against a spell or a Strike misses you</p>\n<p><strong>Frequency</strong> once per day</p><hr /><p><strong>Effect</strong> You tap into one of the alternate realities linked to your parallel accord, repositioning yourself into a location you occupy in another reality. You teleport to any unoccupied square you can see within 20 feet. If you critically succeeded at the triggering saving throw or were critically missed by the triggering Strike, you additionally become @UUID[Compendium.sf2e.conditions.Item.DmAIPqOBomZ7H95W]{Concealed} until the beginning of your next turn, as your body is shrouded in fragmented reflections of other realities.</p>"
+                },
+                "ammo->Chem Tank (Commercial)": {
+                    "name": "Chem Tank (Commercial)"
+                },
+                "strike-melee->Zero Pistol": {
+                    "name": "Zero Pistol"
+                },
+                "strike-melee->Fist": {
+                    "name": "Fist"
+                },
+                "action->Quantum Pulse": {
+                    "name": "Quantum Pulse",
+                    "description": "<p><strong>Trigger</strong> Quantum Nexus rolls initiative</p><hr /><p><strong>Effect</strong> Quantum Nexus releases a burst of energy and uses Warp Reality.</p>"
+                },
+                "action->Quantum Recycle": {
+                    "name": "Quantum Recycle",
+                    "description": "<p><strong>Trigger</strong> Quantum Nexus casts a 2nd-rank spell, and the spell targets a creature or area within her quantum field</p><hr /><p><strong>Effect</strong> Quantum Nexus manipulates her quantum field to preserve some spell energy and regains an expended 1st-rank spell slot.</p>"
+                },
+                "action->Harmonic Blink": {
+                    "name": "Harmonic Blink",
+                    "description": "<p><strong>Frequency</strong> once per round</p><hr /><p><strong>Effect</strong> Quantum Nexus transports herself in the above of an eye, teleporting to a location up to 20 feet away within her line of sight.</p>"
+                },
+                "action->Warp Reality": {
+                    "name": "Warp Reality",
+                    "description": "<p><strong>Requirements</strong> Quantum Nexus's quantum field isn't active</p><hr /><p><strong>Effect</strong> Quantum Nexus's quantum field activates and lasts as long as she Sustains it (up to 10 minutes) or until the end of her next turn. The quantum field is a @Template[type:burst|distance:20] centered on a point she chooses within 100 feet. Whenever she Sustains it, she can [[/act seek]] or @UUID[Compendium.sf2e.actions.Item.1OagaWtBpVXExToo]{Recall Knowledge} against a target in the field as a free action. If she Sustained it with the Sustain action (instead of an anchoring action), she can move her quantum field to a new position within 100 feet. The field automatically deactivates if she's knocked out, if she Dismisses it, or if she moves more than 100 feet away from it.</p>"
+                },
+                "action->Witchwarper Paradox": {
+                    "name": "Witchwarper Paradox",
+                    "description": "<p>analyst</p>"
                 }
             }
         },
@@ -1183,6 +1298,20 @@
                 }
             }
         },
+        "Shobhad Indignation": {
+            "name": "Shobhad Indignation",
+            "descriptionHazard": "<p>The paintings weep blackness outward until they create shadows from floor to ceiling.</p>",
+            "disable": "<p>@Check[acrobatics|dc:20] (trained) to divert the energy of the spirits against each other, @Check[athletics|dc:18] (trained) to [[/act grapple]] the spirits, or @Check[religion|dc:18] or @Check[occultism|dc:18] (trained) to soothe the restless souls; two successes are required to disable the hazard.</p>",
+            "reset": "<p>The haunt resets after 1 day.</p>",
+            "routine": "<p>(1 action) Shadowy hands lunge from the walls to drag down creatures in the room. The hazard attempts an Athletics check with a [[/gmr 1d20+12 #Athletics]]{+12} modifier against the Fortitude DC of up to two different creatures in the room.</p><hr><p><strong>Critical Success</strong> The target takes @Damage[(2d10+4)[bludgeoning]] damage, is knocked @UUID[Compendium.sf2e.conditions.Item.j91X7x0XSomq8d60]{Prone}, and is pushed 10 feet toward the nearest wall. It can't breathe or speak until it ends the prone condition.</p><p><strong>Success</strong> The target takes @Damage[(1d10+4)[bludgeoning]] damage and is pushed 5 feet toward the nearest wall.</p>",
+            "stealth": "<p>(trained)</p>",
+            "items": {
+                "action->Cry of the Defeated": {
+                    "name": "Cry of the Defeated",
+                    "description": "<p><strong>Trigger</strong> A non-fey, non-shobhad creature passes the room's center</p><hr /><p><strong>Effect</strong> The spirits howl in rage, dealing @Damage[2d4[mental]] damage to the triggering creature (@Check[will|dc:20|basic] save). On a critical failure, that creature is also @UUID[Compendium.sf2e.conditions.Item.9PR9y0bi4JPKnHPR]{Deafened} for 1 round. The hazard then rolls initiative.</p>"
+                }
+            }
+        },
         "Shosodax": {
             "name": "Shosodax",
             "blurb": "Agender orocoran",
@@ -1245,7 +1374,7 @@
                 },
                 "action->T-Shirt Barrage": {
                     "name": "T-Shirt Barrage",
-                    "description": "<p>The solar parade float shoots t-shirts at all enemies within @Template[burst|distance:30]{30 feet}. Creatures in the area can attempt a @Check[reflex|dc:17|options:area-effect] save. On a failure, the t-shirts wrap around their appendages, imposing a \u201310 foot circumstance penalty to all their Speeds until the end of their next turn. A creature can end this effect early as a single action with the manipulate trait.</p>"
+                    "description": "<p>The solar parade float shoots t-shirts at all enemies within @Template[burst|distance:30]{30 feet}. Creatures in the area can attempt a @Check[reflex|dc:17|options:area-effect] save. On a failure, the t-shirts wrap around their appendages, imposing a –10 foot circumstance penalty to all their Speeds until the end of their next turn. A creature can end this effect early as a single action with the manipulate trait.</p>"
                 },
                 "action->Trample": {
                     "name": "Trample",

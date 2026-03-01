@@ -414,7 +414,7 @@
         },
         "Chimeric Manticore": {
             "name": "Chimeric Manticore",
-            "blurb": "Genderless chimera\u2011manticore hybrid",
+            "blurb": "Genderless chimera‑manticore hybrid",
             "items": {
                 "strike-melee->Dragon Jaws": {
                     "name": "Dragon Jaws"
@@ -523,7 +523,7 @@
                 },
                 "action->Bottoms Up": {
                     "name": "Bottoms Up",
-                    "description": "<p><strong>Requirements</strong> The clockwork brewer has a creature @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{grappled}</p>\n<hr />\n<p><strong>Effect</strong> The clockwork brewer force- feeds the grappled creature 1 serving of whatever liquid is in the clockwork brewer's tank (typically beer such as Smokeside Sour). The creature is exposed to the liquid's effects, and it can't breathe or speak until the start of its turn.</p>"
+                    "description": "<p><strong>Requirements</strong> The clockwork brewer has a creature @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed}</p>\n<hr />\n<p><strong>Effect</strong> The clockwork brewer force- feeds the grabbed creature 1 serving of whatever liquid is in the clockwork brewer's tank (typically beer such as Smokeside Sour). The creature is exposed to the liquid's effects, and it can't breathe or speak until the start of its turn.</p>"
                 },
                 "action->Pre-Programmed Greeting": {
                     "name": "Pre-Programmed Greeting",
@@ -670,7 +670,7 @@
                 },
                 "action->Constrict": {
                     "name": "Constrict",
-                    "description": "<p><strong>Requirements</strong> The clockwork fabricator has a creature grappled or @UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{Restrained}</p>\n<hr />\n<p><strong>Effect</strong> @Damage[(2d4+4)[bludgeoning]], @Check[fortitude|dc:21|basic]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Constrict]</p>"
+                    "description": "<p><strong>Requirements</strong> The clockwork fabricator has a creature @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed} or @UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{Restrained}</p>\n<hr />\n<p><strong>Effect</strong> @Damage[(2d4+4)[bludgeoning]], @Check[fortitude|dc:21|basic]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Constrict]</p>"
                 },
                 "action->Modular Arms": {
                     "name": "Modular Arms",
@@ -687,7 +687,7 @@
         },
         "Clockwork Gunner": {
             "name": "Clockwork Gunner",
-            "blurb": "Custom\u2011built clockwork prototype",
+            "blurb": "Custom‑built clockwork prototype",
             "items": {
                 "weapon->Dragon Mouth Pistol (Integrated)": {
                     "name": "Dragon Mouth Pistol (Integrated)",
@@ -1119,7 +1119,7 @@
             "items": {
                 "weapon->Tanglefoot Bag (Moderate)": {
                     "name": "Tanglefoot Bag (Moderate)",
-                    "description": "<p><strong>Activate</strong> <span class=\"action-glyph\">1</span> Strike</p>\n<hr />\n<p>A tanglefoot bag is filled with sticky substances. When you hit a creature with a tanglefoot bag, that creature takes a \u201315-foot status penalty to its Speeds for 1 minute. You gain a +1 item bonus to attack rolls, and the Escape DC is 19 ([[/act escape dc=19]]).</p>\n<p>On a critical hit, a creature in contact with a solid surface becomes stuck to the surface and @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Immobilized} for 1 round, and a creature flying via wings has its wings tangled, causing it to fall safely to the ground and become unable to Fly again for 1 round. Tanglefoot bags are not effective when used on a creature that is in water.</p>\n<p>The target can end any effects by Escaping or spending a total of 3 actions to carefully remove the sticky substances. These Interact actions don't have to be consecutive, and other creatures can provide the actions as well.</p>"
+                    "description": "<p><strong>Activate</strong> <span class=\"action-glyph\">1</span> Strike</p>\n<hr />\n<p>A tanglefoot bag is filled with sticky substances. When you hit a creature with a tanglefoot bag, that creature takes a –15-foot status penalty to its Speeds for 1 minute. You gain a +1 item bonus to attack rolls, and the Escape DC is 19 ([[/act escape dc=19]]).</p>\n<p>On a critical hit, a creature in contact with a solid surface becomes stuck to the surface and @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Immobilized} for 1 round, and a creature flying via wings has its wings tangled, causing it to fall safely to the ground and become unable to Fly again for 1 round. Tanglefoot bags are not effective when used on a creature that is in water.</p>\n<p>The target can end any effects by Escaping or spending a total of 3 actions to carefully remove the sticky substances. These Interact actions don't have to be consecutive, and other creatures can provide the actions as well.</p>"
                 },
                 "consumable->Healing Potion (Minor)": {
                     "name": "Healing Potion (Minor)",
@@ -1168,7 +1168,7 @@
         },
         "Explosive Steam Trap": {
             "name": "Explosive Steam Trap",
-            "descriptionHazard": "<p>A black\u2011powder charge fastened to a trapdoor (marked with a \"T\" on the map) blows a hole in a steam tunnel, filling the room with superheated steam.</p>",
+            "descriptionHazard": "<p>A black‑powder charge fastened to a trapdoor (marked with a \"T\" on the map) blows a hole in a steam tunnel, filling the room with superheated steam.</p>",
             "disable": "<p>@Check[thievery|dc:18|traits:action:disable-a-device] (trained) to disarm the desk switch; @Check[thievery|dc:28|traits:action:disable-a-device] (expert) to disarm the trapdoor charge</p>",
             "routine": "<p>(1 action) The trapdoor emits a jet of superheated steam. Each creature in the room must attempt a @Check[fortitude|dc:28] save.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature takes @Damage[(1d10+3)[fire]] damage.</p>\n<p><strong>Failure</strong> The creature takes @Damage[(2d10+6)[fire]] damage and is @UUID[Compendium.pf2e.conditionitems.Item.XgEqL1kFApUbl5Z2]{Blinded} for 1 round.</p>\n<p><strong>Critical Failure</strong> The creature takes @Damage[(2d10+6)[fire]] damage, is @UUID[Compendium.pf2e.conditionitems.Item.HL2l2VRSaQHu9lUw]{Fatigued}, and is blinded for 1 round.</p>",
             "stealth": "<p>(trained) to find the desk switch; @Check[perception|dc:28|traits:action:seek] (expert) to find the trapdoor and charge</p>",
@@ -1193,7 +1193,7 @@
         },
         "False Door Trap": {
             "name": "False Door Trap",
-            "descriptionHazard": "<p>A black\u2011powder charge detonates as soon as the doorknob is turned, shattering the door into splinters.</p>",
+            "descriptionHazard": "<p>A black‑powder charge detonates as soon as the doorknob is turned, shattering the door into splinters.</p>",
             "disable": "<p>[[/act disable-device dc=27]]{DC 27 Thievery} (expert) to disable the doorknob trigger</p>\n<p></p>",
             "stealth": "<p>(expert) to see the brick wall behind the edges of the door</p>",
             "items": {
@@ -1214,7 +1214,7 @@
                 "strike-melee->Fist": {
                     "name": "Fist"
                 },
-                "strike-melee->Spore Pod": {
+                "ranged->Spore Pod": {
                     "name": "Spore Pod"
                 },
                 "action->Verdant Burst": {
@@ -1564,7 +1564,7 @@
             "items": {
                 "weapon->Tanglefoot Bag (Moderate)": {
                     "name": "Tanglefoot Bag (Moderate)",
-                    "description": "<p><strong>Activate</strong> <span class=\"action-glyph\">1</span> Strike</p>\n<hr />\n<p>A tanglefoot bag is filled with sticky substances. When you hit a creature with a tanglefoot bag, that creature takes a \u201315-foot status penalty to its Speeds for 1 minute. You gain a +1 item bonus to attack rolls, and the Escape DC is 19 ([[/act escape dc=19]]).</p>\n<p>On a critical hit, a creature in contact with a solid surface becomes stuck to the surface and @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Immobilized} for 1 round, and a creature flying via wings has its wings tangled, causing it to fall safely to the ground and become unable to Fly again for 1 round. Tanglefoot bags are not effective when used on a creature that is in water.</p>\n<p>The target can end any effects by Escaping or spending a total of 3 actions to carefully remove the sticky substances. These Interact actions don't have to be consecutive, and other creatures can provide the actions as well.</p>"
+                    "description": "<p><strong>Activate</strong> <span class=\"action-glyph\">1</span> Strike</p>\n<hr />\n<p>A tanglefoot bag is filled with sticky substances. When you hit a creature with a tanglefoot bag, that creature takes a –15-foot status penalty to its Speeds for 1 minute. You gain a +1 item bonus to attack rolls, and the Escape DC is 19 ([[/act escape dc=19]]).</p>\n<p>On a critical hit, a creature in contact with a solid surface becomes stuck to the surface and @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Immobilized} for 1 round, and a creature flying via wings has its wings tangled, causing it to fall safely to the ground and become unable to Fly again for 1 round. Tanglefoot bags are not effective when used on a creature that is in water.</p>\n<p>The target can end any effects by Escaping or spending a total of 3 actions to carefully remove the sticky substances. These Interact actions don't have to be consecutive, and other creatures can provide the actions as well.</p>"
                 },
                 "consumable->Healing Potion (Minor)": {
                     "name": "Healing Potion (Minor)",
@@ -1637,7 +1637,7 @@
                 },
                 "action->Frightful Presence": {
                     "name": "Frightful Presence",
-                    "description": "<p>30 feet. @Check[will|dc:23]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.FrightfulPresence]</p>"
+                    "description": "<p>30 feet. @Check[will|dc:23|options:area-effect,inflicts:frightened]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.FrightfulPresence]</p>"
                 },
                 "action->Head Hunter": {
                     "name": "Head Hunter",
@@ -1816,7 +1816,7 @@
         },
         "Iron Dart Launcher": {
             "name": "Iron Dart Launcher",
-            "descriptionHazard": "<p>A half\u2011dozen iron darts fire from spring\u2011loaded launchers concealed in the desk opposite the front door.</p>",
+            "descriptionHazard": "<p>A half‑dozen iron darts fire from spring‑loaded launchers concealed in the desk opposite the front door.</p>",
             "disable": "<p>@Check[thievery|dc:22|name:Disable the trigger|traits:action:disable-a-device] (trained) to disable the trigger, or @Check[acrobatics|dc:18|name:Squeeze through the door|traits:action:squeeze] to squeeze through the partially opened door (this doesn't disable the trap but prevents it from triggering)</p>",
             "reset": "<p>The trap resets as soon as the door is closed. It has enough darts to trigger three times, after which, it must be reloaded with 20 darts before it can reset again.</p>",
             "stealth": "<p>(expert)</p>",
@@ -2498,7 +2498,7 @@
                 },
                 "weapon->Tanglefoot Bag (Lesser) [Infused]": {
                     "name": "Tanglefoot Bag (Lesser) [Infused]",
-                    "description": "<p><strong>Activate</strong> <span class=\"action-glyph\">1</span> Strike</p>\n<hr />\n<p>A tanglefoot bag is filled with sticky substances. When you hit a creature with a tanglefoot bag, that creature takes a \u201310-foot status penalty to its Speeds for 1 minute. The Escape DC is 17 ([[/act escape dc=17]]).</p>\n<p>On a critical hit, a creature in contact with a solid surface becomes stuck to the surface and @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Immobilized} for 1 round, and a creature flying via wings has its wings tangled, causing it to fall safely to the ground and become unable to Fly again for 1 round. Tanglefoot bags are not effective when used on a creature that is in water.</p>\n<p>The target can end any effects by Escaping or spending a total of 3 actions to carefully remove the sticky substances. These Interact actions don't have to be consecutive, and other creatures can provide the actions as well.</p>"
+                    "description": "<p><strong>Activate</strong> <span class=\"action-glyph\">1</span> Strike</p>\n<hr />\n<p>A tanglefoot bag is filled with sticky substances. When you hit a creature with a tanglefoot bag, that creature takes a –10-foot status penalty to its Speeds for 1 minute. The Escape DC is 17 ([[/act escape dc=17]]).</p>\n<p>On a critical hit, a creature in contact with a solid surface becomes stuck to the surface and @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Immobilized} for 1 round, and a creature flying via wings has its wings tangled, causing it to fall safely to the ground and become unable to Fly again for 1 round. Tanglefoot bags are not effective when used on a creature that is in water.</p>\n<p>The target can end any effects by Escaping or spending a total of 3 actions to carefully remove the sticky substances. These Interact actions don't have to be consecutive, and other creatures can provide the actions as well.</p>"
                 },
                 "weapon->Acid Flask (Moderate) [Infused]": {
                     "name": "Acid Flask (Moderate) [Infused]",
@@ -2516,6 +2516,10 @@
                             "label": "High-Fashion Clothes (Make an Impression on nobility)"
                         }
                     }
+                },
+                "equipment->Formula Book": {
+                    "name": "Formula Book",
+                    "description": "<p>A formula book holds the formulas necessary to make items other than the common equipment from this chapter; alchemists typically get one for free. Each formula book can hold the formulas for up to 100 different items. Formulas can also appear on parchment sheets, tablets, and almost any other medium; there's no need for you to copy them into a specific book as long as you can keep them on hand to reference them.</p>"
                 },
                 "consumable->Cognitive Mutagen (Moderate)": {
                     "name": "Cognitive Mutagen (Moderate)",
@@ -2654,13 +2658,13 @@
                 },
                 "action->Stealthy Abduction": {
                     "name": "Stealthy Abduction",
-                    "description": "<p>When a Sludgespine killer successfully @UUID[Compendium.pf2e.actionspf2e.Item.PMbdMWc2QroouFGD]{Grapples} a creature, that creature makes no sound; other creatures can't notice the grapple by hearing alone. As long as it's grappled, the creature can't use actions with the auditory trait or cast spells with a verbal component.</p>"
+                    "description": "<p>When a Sludgespine killer successfully @UUID[Compendium.pf2e.actionspf2e.Item.PMbdMWc2QroouFGD]{Grapples} a creature, that creature makes no sound; other creatures can't notice the grapple by hearing alone. As long as it's grabbed, the creature can't use actions with the auditory trait or cast spells with a verbal component.</p>"
                 }
             }
         },
         "Smog Giant": {
             "name": "Smog Giant",
-            "publicNotes": "<p>Corrupting magical storms and the interference of unethical gear- smiths birthed the first of the so-called smog giants. These hot-tempered behemoths all originate from a clan of unfortunate hill giants which became so attuned to their strange environment they developed unique mutations and incredibly violent dispositions. For all their physical abnormalities, it's still fair to say the violent confrontations common along the Western Ravage are the true cause of smog giants' monstrous nature.</p>\n<p>Smog giants can eat meat and bone, but they prefer diets of black powder and the raw materials that make up this alchemical concoction. Their bodies store repositories of the stuff infused with the unstable occult energies that lace their flesh, granting them the ability to \"crack\" these pockets of subdermal explosives when they attack, much like a tough cracking their knuckles during a fight. In this case however, the results are much more violent\u2014especially when coupled with the large quantities of weaponized body piercings and adornments smog giants often wear.</p>",
+            "publicNotes": "<p>Corrupting magical storms and the interference of unethical gear- smiths birthed the first of the so-called smog giants. These hot-tempered behemoths all originate from a clan of unfortunate hill giants which became so attuned to their strange environment they developed unique mutations and incredibly violent dispositions. For all their physical abnormalities, it's still fair to say the violent confrontations common along the Western Ravage are the true cause of smog giants' monstrous nature.</p>\n<p>Smog giants can eat meat and bone, but they prefer diets of black powder and the raw materials that make up this alchemical concoction. Their bodies store repositories of the stuff infused with the unstable occult energies that lace their flesh, granting them the ability to \"crack\" these pockets of subdermal explosives when they attack, much like a tough cracking their knuckles during a fight. In this case however, the results are much more violent—especially when coupled with the large quantities of weaponized body piercings and adornments smog giants often wear.</p>",
             "items": {
                 "strike-melee->Headbutt": {
                     "name": "Headbutt"
@@ -2891,11 +2895,11 @@
                 },
                 "action->Vulnerable to Curved Space": {
                     "name": "Vulnerable to Curved Space",
-                    "description": "<p>When a hound of Tindalos is not adjacent to a structural angle of 90\u00ba (or more acute), its resistance to physical damage is suppressed and it becomes @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 1}. It can't recover from this sickened condition, but the condition ends automatically once the hound is again adjacent to a suitable angle.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.V60TWjo1G1r5ZtPM]{Effect: Vulnerable to Curved Space}</p>"
+                    "description": "<p>When a hound of Tindalos is not adjacent to a structural angle of 90º (or more acute), its resistance to physical damage is suppressed and it becomes @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 1}. It can't recover from this sickened condition, but the condition ends automatically once the hound is again adjacent to a suitable angle.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.V60TWjo1G1r5ZtPM]{Effect: Vulnerable to Curved Space}</p>"
                 },
                 "action->Angled Entry": {
                     "name": "Angled Entry",
-                    "description": "<p>The Claws of Time casts a 4th-rank @UUID[Compendium.pf2e.spells-srd.Item.VlNcjmYyu95vOUe8]{Translocate} spell, but it must transport itself into a space adjacent to an angle of 90\u00ba (or more acute) in the structure or environment around it. This means the hound can use <em>dimension door</em> to appear adjacent to any wall or corner in the Cradle of Quartz except for the central geode (area <strong>D16</strong>).</p>\n<p>Once per day, the hound can use this ability to @UUID[Compendium.pf2e.spells-srd.Item.5bTt2CvYHPvaR7QQ]{Interplanar Teleport} to or from the Dimension of Time, with the same restrictions on what angles next to which it can appear.</p>"
+                    "description": "<p>The Claws of Time casts a 4th-rank @UUID[Compendium.pf2e.spells-srd.Item.VlNcjmYyu95vOUe8]{Translocate} spell, but it must transport itself into a space adjacent to an angle of 90º (or more acute) in the structure or environment around it. This means the hound can use <em>dimension door</em> to appear adjacent to any wall or corner in the Cradle of Quartz except for the central geode (area <strong>D16</strong>).</p>\n<p>Once per day, the hound can use this ability to @UUID[Compendium.pf2e.spells-srd.Item.5bTt2CvYHPvaR7QQ]{Interplanar Teleport} to or from the Dimension of Time, with the same restrictions on what angles next to which it can appear.</p>"
                 }
             },
             "skills": {
