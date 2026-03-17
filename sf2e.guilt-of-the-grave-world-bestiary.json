@@ -79,7 +79,7 @@
                 },
                 "action->Hypersonic Burst": {
                     "name": "Hypersonic Burst",
-                    "description": "<p><strong>Frequency</strong> once per minute</p><hr /><p><strong>Effect</strong> The boneflayer Steps or Strides twice.</p>"
+                    "description": "<p><strong>Effect</strong> The boneflayer Steps or Strides twice.</p>"
                 },
                 "action->Rampage Strikes": {
                     "name": "Rampage Strikes",
@@ -90,7 +90,7 @@
         "Burning Rockslide": {
             "name": "Burning Rockslide",
             "descriptionHazard": "<p>Smoldering boulders are disgorged by the magmatic soil and roll down the slope, catching fire as they descend.</p>",
-            "disable": "<p>@Check[nature|dc:16] (trained), @Check[Physical Science Lore|dc:16] (trained), or @Check[survival|dc:16] (trained) to guess the rocks' path, or a @Check[acrobatics|dc:18] (trained), @Check[athletics|dc:18] (trained) or a @Check[fortitude|dc:18] save to deflect or dodge rocks.</p>",
+            "disable": "<p>@Check[nature|dc:16] (trained), @Check[physical-science-lore|dc:16] (trained), or @Check[survival|dc:16] (trained) to guess the rocks' path, or a @Check[acrobatics|dc:18] (trained), @Check[athletics|dc:18] (trained) or a @Check[fortitude|dc:18] save to deflect or dodge rocks.</p>",
             "stealth": "<p>(trained)</p>",
             "items": {
                 "action->Catching Fire": {
@@ -132,8 +132,8 @@
                     "name": "Defrex Hide",
                     "description": "<p><strong>Upgrades:</strong> 1</p><hr /><p>Made from the hide of a ferocious mammal native to Vesk-2, this medium armor is especially popular among vesk. Tanned slabs of the creature's thick hide are stitched together with metal wires, and the joints are reinforced with metal studs or scales.</p>"
                 },
-                "ammo->Projectile Ammo": {
-                    "name": "Projectile Ammo"
+                "ammo->Battery (Commercial)": {
+                    "name": "Battery (Commercial)"
                 },
                 "strike-melee->Vertebralis Thorn": {
                     "name": "Vertebralis Thorn"
@@ -165,16 +165,9 @@
                     "name": "Tempweave",
                     "description": "<p><strong>Upgrades:</strong> 1</p><hr /><p>Tempweave suits are reinforced hooded garments woven with thermal fabric and venting wires, popularly worn for trips to humid climates like the jungles of Castrovel or Pulonis.</p>"
                 },
-                "equipment->Datapad": {
-                    "name": "Datapad",
-                    "description": "<p>These ubiquitous handheld computers incorporate a comm unit, microphone, speaker, camera, infosphere browser, and data storage. They can store thousands of hours of recordings, play games, and perform simple computing functions, such as time tracking and notifications, word processing, calculations, data processing, streaming media, and broadcasting emergency alerts from local governments. In most societies, commercial datapads are relatively flimsy, designed to rapidly wear out or fall behind on the latest features and updates to encourage the consumer to replace it with a newer model. In contrast, higher-end datapads are made to last and often include a sturdier chassis and extra functions.</p>"
-                },
                 "consumable->Marrow Paste (Commercial)": {
                     "name": "Marrow Paste (Commercial)",
                     "description": "<p>Developed and patented by Eoxian medical conglomerate Nulife, this magenta tincture's metallic odor is reminiscent of fresh blood. When applied to the body of a creature that can benefit from void healing, marrow paste grants fast healing 1 for 1 minute.</p>"
-                },
-                "ammo->Projectile Ammo": {
-                    "name": "Projectile Ammo"
                 },
                 "strike-melee->Semi-Auto Pistol": {
                     "name": "Semi-Auto Pistol"
@@ -247,7 +240,7 @@
         "Exploding Panels": {
             "name": "Exploding Panels",
             "descriptionHazard": "<p>Electricity sparks from panels on the bridge. Wires leap out from access hatches in the corridors like wriggling snakes. The bridge is falling apart while Captain Concierge cheerfully offers helpful suggestions for how to fix the problem.</p>",
-            "disable": "<p>@Check[computers|dc:17] (trained) to reboot the system; @Check[crafting|dc:19], @Check[Physical Science Lore|dc:19], or @Check[thievery|dc:19] (all trained) to flip circuit breakers and snip the correct wires; @Check[acrobatics|dc:21], @Check[perception|dc:21], or a @Check[reflex|dc:21] save to dodge the sparks; or @Check[athletics|dc:24] or a @Check[fortitude|dc:24] save to force the sparking panels closed. Disabling the trap removes one action from its routine for each successful check to disable it, or two actions on a critical success.</p>",
+            "disable": "<p>@Check[computers|dc:17] (trained) to reboot the system; @Check[crafting|dc:19], @Check[physical-science-lore|dc:19], or @Check[thievery|dc:19] (all trained) to flip circuit breakers and snip the correct wires; @Check[acrobatics|dc:21], @Check[perception|dc:21], or a @Check[reflex|dc:21] save to dodge the sparks; or @Check[athletics|dc:24] or a @Check[fortitude|dc:24] save to force the sparking panels closed. Disabling the trap removes one action from its routine for each successful check to disable it, or two actions on a critical success.</p>",
             "reset": "<p>The exploding panels deactivate after 1 minute.</p>",
             "routine": "<p>(3 actions) The exploding panels trap uses its actions to attack creatures inside the ship. It randomly slashes at creatures adjacent to bulkheads or sparks at creatures within 20 feet of any control surface. The trap does not take a multiple attack penalty.</p>",
             "stealth": "<p>(trained)</p>",
@@ -409,7 +402,7 @@
                 },
                 "action->Fiery Vitality": {
                     "name": "Fiery Vitality",
-                    "description": "<p><strong>Frequency</strong> once per round</p><hr /><p><strong>Effect</strong> Any time Kitthaine uses a spell or ability with the fire trait, they regain @Damage[7[healing]] Hit Points (to a maximum of their total HP).</p>"
+                    "description": "<p><strong>Effect</strong> Any time Kitthaine uses a spell or ability with the fire trait, they regain @Damage[7[healing]] Hit Points (to a maximum of their total HP).</p>"
                 },
                 "action->Fire Shield": {
                     "name": "Fire Shield",
@@ -458,8 +451,9 @@
         },
         "Mortar Shells": {
             "name": "Mortar Shells",
+            "hpDetails": "Mortar Tube",
             "descriptionHazard": "<p>Four mortar tubes are constantly being auto-loaded by robotic arms before swiveling to launch projectiles onto the nearby battlefield.</p>",
-            "disable": "<p>@Check[Warfare Lore|dc:16] to engage the mortar safety switches, @Check[thievery|dc:18] to jam the auto-loading mechanisms so no more ammunition can be cycled, or @Check[athletics|dc:20] to push the tubes out of alignment such that the projectiles no longer threaten the battlefield</p>",
+            "disable": "<p>@Check[warfare-lore|dc:16] to engage the mortar safety switches, @Check[thievery|dc:18] to jam the auto-loading mechanisms so no more ammunition can be cycled, or @Check[athletics|dc:20] to push the tubes out of alignment such that the projectiles no longer threaten the battlefield</p>",
             "reset": "<p>The hazard resets automatically. Any time a PC leaves the trenches, they're targeted by Exploding Ordinance until the mortar shells hazard is disabled.</p>",
             "stealth": "<p>(trained)</p>",
             "items": {
@@ -494,7 +488,7 @@
         "Necroturret": {
             "name": "Necroturret",
             "descriptionHazard": "<p>A gigantic spinal column, ripped whole from a great beast, is posed on the surface of Barrow, enhanced with necromantic technology that turns it into a unliving weapons system. Its skull has been replaced with sensor arrays and deadly ice beam emitters.</p>",
-            "disable": "<p>@Check[computers|dc:16] (trained) or @Check[Vidgame Lore|dc:16] (trained) to shut down the necroturret's tech targeting system, @Check[arcana|dc:18] (trained), @Check[nature|dc:18] (trained), @Check[occultism|dc:18] (trained), or @Check[religion|dc:18] (trained) to disrupt the necroturret's magical core, or @Check[athletics|dc:20] or @Check[thievery|dc:20] to destroy vital circuits. A necroturret loses one action from its routine for each successful check made to disable it, or two actions on a critical success.</p>",
+            "disable": "<p>@Check[computers|dc:16] (trained) or @Check[vidgame-lore|dc:16] (trained) to shut down the necroturret's tech targeting system, @Check[arcana|dc:18] (trained), @Check[nature|dc:18] (trained), @Check[occultism|dc:18] (trained), or @Check[religion|dc:18] (trained) to disrupt the necroturret's magical core, or @Check[athletics|dc:20] or @Check[thievery|dc:20] to destroy vital circuits. A necroturret loses one action from its routine for each successful check made to disable it, or two actions on a critical success.</p>",
             "reset": "<p>A necroturret deactivates when it no longer detects living creatures within 120 feet of its location.</p>",
             "routine": "<p>(2 actions) The necroturret uses its actions to attack living creatures with its ice beams. It uses the Lock On reaction once every round to enhance its targeting matrix against the closest living creature. Necroturrets focus on targets trying to disable them.</p>",
             "stealth": "<p>(trained)</p>",
@@ -551,7 +545,7 @@
         "Rapid Depressurization": {
             "name": "Rapid Depressurization",
             "descriptionHazard": "<p>A stray shot shatters a window, sucking out the room's precious atmosphere.</p>",
-            "disable": "<p>@Check[crafting|dc:14] (trained) or @Check[Labor Lore|dc:14] (trained) while adjacent to the window to patch the hole, @Check[computers|dc:16] (trained) to activate an emergency metal shutter from any console in the room, or @Check[survival|dc:18] or @Check[thievery|dc:18] to cover the hole (if adjacent) with a random object as a temporary fix.</p>",
+            "disable": "<p>@Check[crafting|dc:14] (trained) or @Check[labor-lore|dc:14] (trained) while adjacent to the window to patch the hole, @Check[computers|dc:16] (trained) to activate an emergency metal shutter from any console in the room, or @Check[survival|dc:18] or @Check[thievery|dc:18] to cover the hole (if adjacent) with a random object as a temporary fix.</p>",
             "reset": "<p>1 minute after a depressurization hazard begins, all air escapes from area F (requiring living creatures to activate their environmental protections or begin suffocating). If the hazard is disabled before 1 minute has passed, this timer resets.</p>",
             "items": {
                 "action->Blow Out": {
@@ -788,7 +782,7 @@
         "Shock Grid": {
             "name": "Shock Grid",
             "descriptionHazard": "<p>A tight grid of ionized particles crisscrosses the door into the computer center, hissing audibly and glowing bright blue.</p>",
-            "disable": "<p>@Check[computers|dc:19] or @Check[Physical Science Lore|dc:19] to disable the shock grid through the keypad, or @Check[crafting|dc:21] or @Check[thievery|dc:21] to short-circuit the wires along the grid's perimeter</p>",
+            "disable": "<p>@Check[computers|dc:19] or @Check[physical-science-lore|dc:19] to disable the shock grid through the keypad, or @Check[crafting|dc:21] or @Check[thievery|dc:21] to short-circuit the wires along the grid's perimeter</p>",
             "reset": "<p>The trap resets automatically until disabled or until it can no longer detect any living creatures within 10 feet of the door outside in area <strong>E2</strong>.</p>",
             "stealth": "<p>(trained)</p>",
             "items": {
@@ -801,7 +795,7 @@
         "Soufflé Surprise": {
             "name": "Soufflé Surprise",
             "descriptionHazard": "<p>A misshapen blob of pastry and magic wobbles as it keeps rising beyond normal baked good dimensions.</p>",
-            "disable": "<p>@Check[Cooking Lore|dc:18] (trained), @Check[survival|dc:18] (trained), or @Check[thievery|dc:18] (trained) to gently deflate the soufflé, or @Check[athletics|dc:23] to beat the soufflé into submission</p>",
+            "disable": "<p>@Check[cooking-lore|dc:18] (trained), @Check[survival|dc:18] (trained), or @Check[thievery|dc:18] (trained) to gently deflate the soufflé, or @Check[athletics|dc:23] to beat the soufflé into submission</p>",
             "routine": "<p>(3 actions) The souffle Rises.</p>",
             "stealth": "<p>(trained)</p>",
             "items": {
@@ -818,7 +812,7 @@
         "Spinning Treadmill": {
             "name": "Spinning Treadmill",
             "descriptionHazard": "<p>These three treadmills' rotating belts are no longer locked in place and now spin freely when activated.</p>",
-            "disable": "<p>@Check[Sports Lore|dc:13] to remember that older models of treadmills have an emergency brake that can be activated with a pull string, @Check[thievery|dc:15] to jam the mechanism, or @Check[crafting|dc:17] to improvise a stop for the rotating belts</p>",
+            "disable": "<p>@Check[sports-lore|dc:13] to remember that older models of treadmills have an emergency brake that can be activated with a pull string, @Check[thievery|dc:15] to jam the mechanism, or @Check[crafting|dc:17] to improvise a stop for the rotating belts</p>",
             "reset": "<p>The trap resets automatically until disabled.</p>",
             "stealth": "<p>(trained)</p>",
             "items": {
@@ -852,6 +846,10 @@
                 "strike-melee->Tail": {
                     "name": "Tail"
                 },
+                "action->Quick Step": {
+                    "name": "Quick Step",
+                    "description": "<p><strong>Trigger</strong> A creature within the paratrooper’s reach leaves a square during a move action it’s using</p><hr /><p><strong>Effect</strong> The paratrooper Steps twice.</p>"
+                },
                 "action->Area Fire": {
                     "name": "Area Fire",
                     "description": "<p><strong>Flamethrower</strong> (tech, unwieldy), @Template[type:cone|distance:15]</p>\n<p><strong>Damage</strong> @Damage[1d10[fire]|options:area-damage], @Check[reflex|dc:16|basic|traits:tech,unwieldy|options:area-effect]</p>"
@@ -871,9 +869,6 @@
                 "armor->Armored Lab Coat": {
                     "name": "Armored Lab Coat",
                     "description": "<p><strong>Upgrades:</strong> 1</p><hr /><p>This overcoat is made of real or synthetic leather and reinforced with armored plates. Armored coats are often tailor-made to match the wearer's personal style. Standard versions are issued to military officers as part of their uniforms.</p>"
-                },
-                "ammo->Projectile Ammo": {
-                    "name": "Projectile Ammo"
                 },
                 "strike-melee->Claw": {
                     "name": "Claw"

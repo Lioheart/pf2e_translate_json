@@ -1,0 +1,124 @@
+{
+    "label": "Ancestry-Features",
+    "folders": {
+        "Android": "Android",
+        "Astrazoan": "Astrazoan",
+        "Contemplative": "Contemplative",
+        "Dragonkin": "Dragonkin",
+        "Ikeshti": "Ikeshti",
+        "Kalo": "Kalo",
+        "Khizar": "Khizar",
+        "Sarcesian": "Sarcesian",
+        "Shobhad": "Shobhad",
+        "Vlaka": "Vlaka",
+        "Ysoki": "Ysoki",
+        "Barathu": "Barathu",
+        "Shared": "Shared",
+        "Kasatha": "Kasatha",
+        "Skittermander": "Skittermander",
+        "Elebrian": "Elebrian"
+    },
+    "entries": {
+        "Atrophied": {
+            "name": "Atrophied",
+            "description": "<p>Your limbs are atrophied. Decrease your maximum and encumbered Bulk limits by 1. While using your hands to wield any weapon or device whose Bulk is 2 or higher, you are @UUID[Compendium.sf2e.conditions.Item.i3OJZU2nk64Df3xm]{Clumsy 1}.</p>"
+        },
+        "Change Shape": {
+            "name": "Change Shape",
+            "description": "<p>You can transform into a Small, Medium, or Large ancestry you know with any features you choose; for example, you choose your body type, gender, and other details within the normal range for that ancestry. This shape might resemble a specific individual or be completely unique to you. Using Change Shape counts as creating a disguise for the Impersonate use of Deception. You can remain in this shape indefinitely, and you can shift back to your true astrazoan form or another shape by using this action again. If you die while using an alternate shape, your body slowly shifts back to its natural form.</p>"
+        },
+        "Cold-Adapted": {
+            "name": "Cold-Adapted",
+            "description": "<p>You are naturally acclimated to Akiton's frigid climes. You treat environmental cold effects as if they were one step less extreme (incredible cold becomes extreme, extreme cold becomes severe, and so on).</p>"
+        },
+        "Constructed": {
+            "name": "Constructed",
+            "description": "<p>Your synthetic body resists ailments better than those of purely biological organisms. You gain a +1 circumstance bonus to saving throws against diseases, poisons, and radiation.</p>"
+        },
+        "Energy Wings": {
+            "name": "Energy Wings",
+            "description": "<p>When in a vacuum, you can manifest butterfly-like wings of pure energy that function as solar sails and enable you to fly through the void of space. You gain the @UUID[Compendium.sf2e.actions.Item.NEYVJWYtgl0rRSwg]{Manifest Energy Wings} action.</p>"
+        },
+        "Four-Armed": {
+            "name": "Four-Armed",
+            "description": "<p>You have four arms, which allows you to wield and hold up to four hands' worth of weapons and equipment. At any time, one pair of hands is designated as your active hands. You can change this designation from one pair of hands to another by taking the Switch Hands action, which is a single action. You can wield items only with your active hands.</p>"
+        },
+        "Genetic Adaptation": {
+            "name": "Genetic Adaptation",
+            "description": "<p>You can reshape and adjust your body to adapt to new situations. You can retrain an ancestry feat in 1 day of downtime, rather than in 1 week. You can retrain any ancestry feat, even lineage feats.</p>"
+        },
+        "Hydration": {
+            "name": "Hydration",
+            "description": "<p>Your body requires you to return to aquatic environments or to don armor with environmental protections at least once in a 24-hour period. You must submerge in water in order to rehydrate your water-acclimated skin.</p>\n<p>If you fail to do this, your skin begins to crack and your gills become painful. After the first 24 hours outside of water, you take a -1 status penalty to Fortitude saves. After 48 hours, you struggle to breathe air and begin to suffocate until returned to water.</p>\n<p>@UUID[Compendium.sf2e.feat-effects.Item.Q5FUu7yhWPJlcXei]{Effect: Dehydrated}</p>"
+        },
+        "Limited Telepathy": {
+            "name": "Limited Telepathy",
+            "description": "<p>You can communicate mentally with creatures within 30 feet. You can communicate only with creatures that share a language with you. This doesn't give you any access to their thoughts, and it communicates no more information than normal speech would.</p>"
+        },
+        "Magical Sense": {
+            "name": "Magical Sense",
+            "description": "<p>Your brain has a specialized organ capable of sensing magical energies. You can cast the @UUID[Compendium.sf2e.spells.Item.gpzpAAAJ1Lza2JVl]{Detect Magic} cantrip as an arcane innate spell at will. A cantrip is heightened to a spell rank equal to half your level rounded up.</p>"
+        },
+        "Partner Bond": {
+            "name": "Partner Bond",
+            "description": "<p>You can form a permanent empathic bond with one willing sapient creature—usually a non-dragonkin. Forming this bond is a one-hour activity that can only be attempted if both you and your partner share a deep emotional bond. You and your partner must remain within reach of each other for the duration of this activity for it to succeed. Once this bond is formed, you can't form another partner bond unless your current partner dies. You and your partner can communicate with each other mentally, as if you had limited telepathy with a range of 60 feet.</p>"
+        },
+        "Sensory Diversity": {
+            "name": "Sensory Diversity",
+            "description": "<p>All vlakas have a keen sense of smell, gaining imprecise scent with a range of 60 feet. This means you can use your sense of smell to determine a creature's location. The GM might double the range if you're downwind from the creature or halve the range if you're upwind.</p>\n<p>In addition, each vlaka is born with one of the following sensory arrays: blind, deaf, deafblind, or hearing/sighted. Select one of these sensory arrays, and gain the associated senses or feats.</p>\n<p><strong>Blind:</strong> You're blind. You gain hearing as a precise sense with a range of 90 feet.</p>\n<p><strong>Deaf:</strong> You're deaf. You gain the Read Lips skill feat (even if you don't meet the feat's prerequisites).</p>\n<p><strong>Deafblind:</strong> You're blind and deaf. Your scent becomes a precise sense with a range of 90 feet, rather than an imprecise sense with a range of 60 feet.</p>\n<p><strong>Hearing/Sighted:</strong> You don't gain any additional senses.</p>",
+            "rules": {
+                "1": {
+                    "choices": {
+                        "0": {
+                            "label": "SF2E.SpecificRule.Vlaka.SensoryDiversity.Blind"
+                        },
+                        "1": {
+                            "label": "SF2E.SpecificRule.Vlaka.SensoryDiversity.Deaf"
+                        },
+                        "2": {
+                            "label": "SF2E.SpecificRule.Vlaka.SensoryDiversity.Deafblind"
+                        },
+                        "3": {
+                            "label": "SF2E.SpecificRule.Vlaka.SensoryDiversity.HearingSighted"
+                        }
+                    },
+                    "prompt": "SF2E.SpecificRule.Vlaka.SensoryDiversity.Prompt"
+                }
+            }
+        },
+        "Sharp Teeth": {
+            "name": "Sharp Teeth",
+            "description": "<p>Your prominent incisors offer an alternative to the fists other humanoids bring to a fight. You have a jaws unarmed attack that deals 1d4 piercing damage, is in the brawling group, and has the agile and finesse traits.</p>"
+        },
+        "Six-Armed": {
+            "name": "Six-Armed",
+            "description": "<p>You have six arms, which allows you to wield and hold up to six hands' worth of weapons and equipment. At any time, one pair of hands is designated as your active hands. You can change this designation from one pair of hands to another by taking the Switch Hands action, which is a single action. You can wield items only with your active hands.</p>"
+        },
+        "Suspended Respiration": {
+            "name": "Suspended Respiration",
+            "description": "<p>You're capable of surviving for a limited time in the void of space, suspending your respiration and shielding your body from its dangerous environmental effects. Whenever you enter a vacuum, you temporarily gain the cosmic trait. You have this trait for as long as you remain in a vacuum, up to a maximum of 1 hour. Creatures with the cosmic trait don't need to breathe while in space or a vacuum and are immune to the harmful environmental effects of being in space.</p>"
+        },
+        "Thoughtsense": {
+            "name": "Thoughtsense",
+            "description": "<p>You gain thoughtsense as a vague sense with a range of 20 feet. This enables you to determine when a creature is within range, though this sense detects only thinking creatures; a creature that's unthinking or otherwise immune to mental effects can't be perceived using your thoughtsense. This doesn't give you the ability to read or understand their thoughts.</p>"
+        },
+        "Verdant": {
+            "name": "Verdant",
+            "description": "<p>You receive a +1 circumstance bonus to saving throws against mental effects, paralysis, poison, or sleep. You don't need to eat, drink, or sleep if you're exposed to natural sunlight for at least 4 hours per day.</p>"
+        },
+        "Versed": {
+            "name": "Versed",
+            "description": "<p>You gain the Sign Language skill feat, even if you don't meet the feat's prerequisites. If a language you know has a tactile version, you also learn the tactile version of those languages. This means that you know the spoken, signed, and tactile languages associated with all languages you know.</p>"
+        },
+        "Wasteland Survivor": {
+            "name": "Wasteland Survivor",
+            "description": "<p>You're accustomed to surviving in Akiton's harsh climates, often going over a week without food. You can survive a number of days without food and water equal to 7 + your Constitution modifier before you begin to starve.</p>"
+        }
+    },
+    "mapping": {
+        "rules": {
+            "converter": "translateRules",
+            "path": "system.rules"
+        }
+    }
+}

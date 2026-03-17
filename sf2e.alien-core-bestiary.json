@@ -98,7 +98,7 @@
                 },
                 "action->Radiation Breath": {
                     "name": "Radiation Breath",
-                    "description": "<p>The dragon breathes a blast of caustic superheated gas that deals @Damage[7d6[fire],4d12[persistent,poison]|options:area-damage] damage in a @Template[type:cone|distance:40] (@Check[fortitude|dc:33|basic] save). They can't use Radiation Breath again for [[/gmr 1d4 #Recharge Radiation Breath]]{1d4 rounds}.</p>"
+                    "description": "<p>The dragon breathes a blast of caustic superheated gas that deals @Damage[7d6[fire],4d12[persistent,poison]|options:area-damage] damage in a @Template[type:cone|distance:40] (@Check[fortitude|dc:33|basic|options:area-effect] save). They can't use Radiation Breath again for [[/gmr 1d4 #Recharge Radiation Breath]]{1d4 rounds}.</p>"
                 }
             }
         },
@@ -330,10 +330,6 @@
                     "name": "Aeon Guard Armor",
                     "description": "<p><strong>Upgrades:</strong> 1</p><hr /><p>Flexible but sturdy plates layered together form this traditional armor worn by lashunta cavalry on Castrovel. In times past, a shotalashu cavalry member forged their armor from their mount's shed skin, or more rarely, the skin of a fallen mount, to honor them in future battles. Synthetic imitations are fashionable on some parts of Castrovel.</p>"
                 },
-                "equipment->Darkvision Visor": {
-                    "name": "Darkvision Visor",
-                    "description": "<p>This visor wraps around your visual organs, enhancing your natural senses. You gain darkvision.</p>"
-                },
                 "ammo->Battery (Tactical)": {
                     "name": "Battery (Tactical)"
                 },
@@ -390,10 +386,6 @@
                 "armor->Aeon Guard armor": {
                     "name": "Aeon Guard armor",
                     "description": "<p><strong>Upgrades:</strong> 1</p><hr /><p>Flexible but sturdy plates layered together form this traditional armor worn by lashunta cavalry on Castrovel. In times past, a shotalashu cavalry member forged their armor from their mount's shed skin, or more rarely, the skin of a fallen mount, to honor them in future battles. Synthetic imitations are fashionable on some parts of Castrovel.</p>"
-                },
-                "equipment->Darkvision Visor": {
-                    "name": "Darkvision Visor",
-                    "description": "<p>This visor wraps around your visual organs, enhancing your natural senses. You gain darkvision.</p>"
                 },
                 "ammo->Battery (Commercial)": {
                     "name": "Battery (Commercial)"
@@ -913,7 +905,7 @@
                 },
                 "action->Putty Form": {
                     "name": "Putty Form",
-                    "description": "<p>The alloid's body melts and molds to fit into tight spaces or stretches paper-thin against a flat surface. They gain a +2 circumstance bonus to Stealth checks to [[/act hide options=putty-form]] and to their Stealth DC when using this ability while adjacent to walls or within tight spaces (at the GM's discretion). Alloids using this ability can squeeze into spaces, including into closed containers or through doors, as though they were Tiny. The alloid can use Putty Form again to return to their standard, more solid form.</p>"
+                    "description": "<p>The alloid's body melts and molds to fit into tight spaces or stretches paper-thin against a flat surface. They gain a +2 circumstance bonus to Stealth checks to [[/act hide]] and to their Stealth DC when using this ability while adjacent to walls or within tight spaces (at the GM's discretion). Alloids using this ability can squeeze into spaces, including into closed containers or through doors, as though they were Tiny. The alloid can use Putty Form again to return to their standard, more solid form.</p>"
                 },
                 "action->Sneak Attack": {
                     "name": "Sneak Attack",
@@ -983,7 +975,7 @@
                 },
                 "action->Swarming Bites": {
                     "name": "Swarming Bites",
-                    "description": "<p>10 feet. The constituents of an apari with a broken carapace angrily swarm around its body. A creature that begins its turn in this aura takes @Damage[4d6[piercing]] damage with a @Check[fortitude|dc:21|basic] save. A creature that fails this save is also @UUID[Compendium.sf2e.conditions.Item.fesd1n5eVhpCSS18]{Sickened 1} (or @UUID[Compendium.sf2e.conditions.Item.fesd1n5eVhpCSS18]{Sickened 2} on a critical failure).</p>\n<p>Can alternatively switch to @Damage[4d6[bludgeoning]] or @Damage[4d6[slashing]] with the Fungible ability.</p>"
+                    "description": "<p>10 feet. The constituents of an apari with a broken carapace angrily swarm around its body. A creature that begins its turn in this aura takes @Damage[4d6[piercing]|options:area-damage] damage with a @Check[fortitude|dc:21|basic|options:area-effect] save. A creature that fails this save is also @UUID[Compendium.sf2e.conditions.Item.fesd1n5eVhpCSS18]{Sickened 1} (or @UUID[Compendium.sf2e.conditions.Item.fesd1n5eVhpCSS18]{Sickened 2} on a critical failure).</p>\n<p>Can alternatively switch to @Damage[4d6[bludgeoning]|options:area-damage] or @Damage[4d6[slashing]|options:area-damage] with the Fungible ability.</p>"
                 },
                 "action->Constituent Sortie": {
                     "name": "Constituent Sortie",
@@ -1475,7 +1467,7 @@
                 },
                 "action->Toxic Breath": {
                     "name": "Toxic Breath",
-                    "description": "<p>The blight drake spews a fetid ball of polluted putrescence up to a range of 60 feet that explodes in a @Template[type:burst|distance:15]. Creatures within the burst take @Damage[4d8[acid]|options:area-damage] damage and @Damage[4d8[poison]|options:area-damage] damage (@Check[reflex|dc:28|basic] save). The blight drake can't use Toxic Breath again for [[/gmr 1d4 #Recharge Toxic Breath]]{1d4 rounds}.</p>"
+                    "description": "<p>The blight drake spews a fetid ball of polluted putrescence up to a range of 60 feet that explodes in a @Template[type:burst|distance:15]. Creatures within the burst take @Damage[4d8[acid],4d8[poison]|options:area-damage] damage (@Check[reflex|dc:28|basic|options:area-effect] save). The blight drake can't use Toxic Breath again for [[/gmr 1d4 #Recharge Toxic Breath]]{1d4 rounds}.</p>"
                 }
             }
         },
@@ -1567,13 +1559,9 @@
                     "name": "Aquatic Ambush",
                     "description": "<p>40 feet</p>\n<p><strong>Requirements</strong> The monster is hiding in water and a creature that hasn't detected it is within the listed number of feet</p><hr /><p><strong>Effect</strong> The monster moves up to its swim Speed + 10 feet toward the triggering creature, traveling on water and on land. Once the creature is in reach, the monster makes a Strike against it. The creature is @UUID[Compendium.sf2e.conditions.Item.AJh5ex99aV6VTggg]{Off-Guard} against this Strike.</p>"
                 },
-                "action->Cluster Onslaught": {
-                    "name": "Cluster Onslaught",
-                    "description": "<p>An appendage cluster attempts an Acrobatics check to [[/act tumble-through]] a creature's space. On a success, the mouths of the cluster gnash and gnaw at the creature, dealing @Damage[3d8[piercing]] damage. If the Acrobatics check was a critical success, the target also takes @Damage[4[bleed]] damage.</p>"
-                },
                 "action->Detach Cluster": {
                     "name": "Detach Cluster",
-                    "description": "<p>The caypin detaches half of its facial appendages into an appendage cluster that occupies a single adjacent square of its choice. A caypin can have up to two appendage clusters detached at a time, and if both clusters are detached, the caypin can't make jaws Strikes or Detach Cluster again until at least one cluster reattaches. An adjacent appendage cluster can reattach to the caypin with an Interact action.</p>"
+                    "description": "<p>The caypin detaches half of its facial appendages into an @UUID[Compendium.sf2e.alien-core-bestiary.Actor.tJuFnnUjPELHSpSI]{Appendage Cluster} that occupies a single adjacent square of its choice. A caypin can have up to two appendage clusters detached at a time, and if both clusters are detached, the caypin can't make jaws Strikes or Detach Cluster again until at least one cluster reattaches. An adjacent appendage cluster can reattach to the caypin with an Interact action.</p>"
                 }
             },
             "skills": {
@@ -1635,6 +1623,10 @@
                 "strike-melee->Shadelight Blast": {
                     "name": "Shadelight Blast"
                 },
+                "action->Telepathy": {
+                    "name": "Telepathy",
+                    "description": "<p>100 feet</p>\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Telepathy]</p>"
+                },
                 "action->Eyes on the Infosphere": {
                     "name": "Eyes on the Infosphere",
                     "description": "<p>A civusdaemon knows the presence of any creatures connected to any local infospheres it has access to. A creature who is connected to an infosphere is visible to the civusdaemon as a precise sense. Disconnected creatures who've been active on an infosphere within the past day leave enough residual trace that a civusdaemon can sense them as an imprecise sense.</p>"
@@ -1652,7 +1644,7 @@
                 },
                 "action->Character Assassination": {
                     "name": "Character Assassination",
-                    "description": "<p>The civusdaemon targets the online reputation of a creature it's aware of on a shared infosphere. After 1 day of downtime, the civusdaemon attempts a @Check[computers] check against the target's Computers DC.</p>\n<p>If successful, the target takes a –2 circumstance penalty to all checks made on that infosphere because of damage to their reputation. The civusdaemon can maintain this effect each day by spending another day of downtime without needing to attempt an additional check.</p>\n<p>If the civusdaemon maintains this for a week or more, the penalty increases to –4. The creature or an ally of the creature can spend a day of downtime to attempt a @Check[computers|dc:26], Deception or Diplomacy check to counter the character attack.</p>\n<p>On a success, the civusdaemon's efforts end, and the target becomes immune to this ability for 1 month.</p>\n<p>On a critical success, the target or ally also identifies a specific location that the civusdaemon operates out of, such as one where it frequently connects to the infosphere.</p>"
+                    "description": "<p>The civusdaemon targets the online reputation of a creature it's aware of on a shared infosphere. After 1 day of downtime, the civusdaemon attempts a @Check[computers|defense:computers] check against the target's Computers DC.</p>\n<p>If successful, the target takes a –2 circumstance penalty to all checks made on that infosphere because of damage to their reputation. The civusdaemon can maintain this effect each day by spending another day of downtime without needing to attempt an additional check.</p>\n<p>If the civusdaemon maintains this for a week or more, the penalty increases to –4. The creature or an ally of the creature can spend a day of downtime to attempt a @Check[computers|dc:26], @Check[deception|dc:26] or @Check[diplomacy|dc:26] check to counter the character attack.</p>\n<p>On a success, the civusdaemon's efforts end, and the target becomes immune to this ability for 1 month.</p>\n<p>On a critical success, the target or ally also identifies a specific location that the civusdaemon operates out of, such as one where it frequently connects to the infosphere.</p>"
                 },
                 "lore->Infosphere Lore": {
                     "name": "Infosphere Lore"
@@ -1830,9 +1822,6 @@
                 },
                 "ammo->Battery (Commercial)": {
                     "name": "Battery (Commercial)"
-                },
-                "ammo->Projectile Ammo": {
-                    "name": "Projectile Ammo"
                 },
                 "strike-melee->Arc Pistol": {
                     "name": "Arc Pistol"
@@ -2066,7 +2055,7 @@
                 },
                 "action->Stellar Breath": {
                     "name": "Stellar Breath",
-                    "description": "<p>The dragon unleashes divine power like that from the core of a star or black hole, dealing @Damage[10d10[spirit]|options:area-damage] damage in a @Template[type:cone|distance:40] (@Check[will|dc:34|basic] save). The dragon can't use Stellar Breath for [[/gmr 1d4 #rounds]]{1d4 rounds}.</p>"
+                    "description": "<p>The dragon unleashes divine power like that from the core of a star or black hole, dealing @Damage[10d10[spirit]|options:area-damage] damage in a @Template[type:cone|distance:40] (@Check[will|dc:34|basic|options:area-effect] save). The dragon can't use Stellar Breath for [[/gmr 1d4 #rounds]]{1d4 rounds}.</p>"
                 },
                 "action->Stellar Mote": {
                     "name": "Stellar Mote",
@@ -2074,7 +2063,7 @@
                 },
                 "action->Stellar Pulse": {
                     "name": "Stellar Pulse",
-                    "description": "<p>The dragon imposes an effect on creatures within their attunement aura. The effect is based on the dragon's current attunement. The dragon can't use Stellar Pulse again for [[/gmr 1d4 #Recharge Stellar Pulse]]{1d4 rounds}.</p><ul><li><strong>Graviton</strong> Each creature must succeed at a @Check[fortitude|dc:34] save or be @UUID[Compendium.sf2e.conditions.Item.eIcWbB5o3pP6OIMe]{Immobilized} for 1 round.</li><li><p><strong>Photon</strong> Each creature becomes @UUID[Compendium.sf2e.conditions.Item.nlCjDvLMf2EkV2dl]{Quickened} and can use the extra action only to Stride or Strike.</p></li></ul>"
+                    "description": "<p>The dragon imposes an effect on creatures within their attunement aura. The effect is based on the dragon's current attunement. The dragon can't use Stellar Pulse again for [[/gmr 1d4 #Recharge Stellar Pulse]]{1d4 rounds}.</p><ul><li><strong>Graviton</strong> Each creature must succeed at a @Check[fortitude|dc:34|options:area-effect] save or be @UUID[Compendium.sf2e.conditions.Item.eIcWbB5o3pP6OIMe]{Immobilized} for 1 round.</li><li><p><strong>Photon</strong> Each creature becomes @UUID[Compendium.sf2e.conditions.Item.nlCjDvLMf2EkV2dl]{Quickened} and can use the extra action only to Stride or Strike.</p></li></ul>"
                 },
                 "lore->Lore (any two planes)": {
                     "name": "Lore (any two planes)"
@@ -2134,7 +2123,7 @@
                 },
                 "action->Stellar Breath": {
                     "name": "Stellar Breath",
-                    "description": "<p>The dragon unleashes divine power like that from the core of a star or black hole, dealing @Damage[10d10[spirit]|options:area-damage] damage in a @Template[type:cone|distance:40] (@Check[will|dc:34|basic] save). The dragon can't use Stellar Breath for [[/gmr 1d4 #rounds]]{1d4 rounds}.</p>"
+                    "description": "<p>The dragon unleashes divine power like that from the core of a star or black hole, dealing @Damage[10d10[spirit]|options:area-damage] damage in a @Template[type:cone|distance:40] (@Check[will|dc:34|basic]|options:area-effect] save). The dragon can't use Stellar Breath for [[/gmr 1d4 #rounds]]{1d4 rounds}.</p>"
                 },
                 "action->Stellar Mote": {
                     "name": "Stellar Mote",
@@ -2142,7 +2131,7 @@
                 },
                 "action->Stellar Pulse": {
                     "name": "Stellar Pulse",
-                    "description": "<p>The dragon imposes an effect on creatures within their attunement aura. The effect is based on the dragon's current attunement. The dragon can't use Stellar Pulse again for [[/gmr 1d4 #Recharge Stellar Pulse]]{1d4 rounds}.</p><ul><li><strong>Graviton</strong> Each creature must succeed at a @Check[fortitude|dc:34] save or be @UUID[Compendium.sf2e.conditions.Item.eIcWbB5o3pP6OIMe]{Immobilized} for 1 round.</li><li><p><strong>Photon</strong> Each creature becomes @UUID[Compendium.sf2e.conditions.Item.nlCjDvLMf2EkV2dl]{Quickened} and can use the extra action only to Stride or Strike.</p></li></ul>"
+                    "description": "<p>The dragon imposes an effect on creatures within their attunement aura. The effect is based on the dragon's current attunement. The dragon can't use Stellar Pulse again for [[/gmr 1d4 #Recharge Stellar Pulse]]{1d4 rounds}.</p><ul><li><strong>Graviton</strong> Each creature must succeed at a @Check[fortitude|dc:34|options:area-effect] save or be @UUID[Compendium.sf2e.conditions.Item.eIcWbB5o3pP6OIMe]{Immobilized} for 1 round.</li><li><p><strong>Photon</strong> Each creature becomes @UUID[Compendium.sf2e.conditions.Item.nlCjDvLMf2EkV2dl]{Quickened} and can use the extra action only to Stride or Strike.</p></li></ul>"
                 },
                 "lore->Lore (any two planes)": {
                     "name": "Lore (any two planes)"
@@ -2207,7 +2196,7 @@
                 },
                 "action->Stellar Breath": {
                     "name": "Stellar Breath",
-                    "description": "<p>The dragon unleashes divine power like that from the core of a star or black hole, dealing @Damage[13d10[spirit]|options:area-damage] damage in a @Template[type:cone|distance:50] (@Check[will|dc:41|basic] save). The dragon can't use Stellar Breath for [[/gmr 1d4 #rounds]]{1d4 rounds}.</p>"
+                    "description": "<p>The dragon unleashes divine power like that from the core of a star or black hole, dealing @Damage[13d10[spirit]|options:area-damage] damage in a @Template[type:cone|distance:50] (@Check[will|dc:41|basic|options:area-effect] save). The dragon can't use Stellar Breath for [[/gmr 1d4 #rounds]]{1d4 rounds}.</p>"
                 },
                 "action->Stellar Mote": {
                     "name": "Stellar Mote",
@@ -2215,7 +2204,7 @@
                 },
                 "action->Stellar Pulse": {
                     "name": "Stellar Pulse",
-                    "description": "<p>The dragon imposes an effect on creatures within their attunement aura. The dragon can choose either option for each creature, regardless of their current attunement. The dragon can't use Stellar Pulse again for [[/gmr 1d4 #Recharge Stellar Pulse]]{1d4 rounds}.</p><ul><li><strong>Graviton</strong> Each creature must succeed at a @Check[fortitude|dc:41] save or be @UUID[Compendium.sf2e.conditions.Item.eIcWbB5o3pP6OIMe]{Immobilized} for 1 round.</li><li><p><strong>Photon</strong> Each creature becomes @UUID[Compendium.sf2e.conditions.Item.nlCjDvLMf2EkV2dl]{Quickened} and can use the extra action only to Stride or Strike.</p></li></ul>"
+                    "description": "<p>The dragon imposes an effect on creatures within their attunement aura. The dragon can choose either option for each creature, regardless of their current attunement. The dragon can't use Stellar Pulse again for [[/gmr 1d4 #Recharge Stellar Pulse]]{1d4 rounds}.</p><ul><li><strong>Graviton</strong> Each creature must succeed at a @Check[fortitude|dc:41|options:area-effect] save or be @UUID[Compendium.sf2e.conditions.Item.eIcWbB5o3pP6OIMe]{Immobilized} for 1 round.</li><li><p><strong>Photon</strong> Each creature becomes @UUID[Compendium.sf2e.conditions.Item.nlCjDvLMf2EkV2dl]{Quickened} and can use the extra action only to Stride or Strike.</p></li></ul>"
                 },
                 "lore->Lore (any two planes)": {
                     "name": "Lore (any two planes)"
@@ -2275,7 +2264,7 @@
                 },
                 "action->Stellar Breath": {
                     "name": "Stellar Breath",
-                    "description": "<p>The dragon unleashes divine power like that from the core of a star or black hole, dealing @Damage[13d10[spirit]|options:area-damage] damage in a @Template[type:cone|distance:50] (@Check[will|dc:41|basic] save). The dragon can't use Stellar Breath for [[/gmr 1d4 #rounds]]{1d4 rounds}.</p>"
+                    "description": "<p>The dragon unleashes divine power like that from the core of a star or black hole, dealing @Damage[13d10[spirit]|options:area-damage] damage in a @Template[type:cone|distance:50] (@Check[will|dc:41|basic|options:area-effect] save). The dragon can't use Stellar Breath for [[/gmr 1d4 #rounds]]{1d4 rounds}.</p>"
                 },
                 "action->Stellar Mote": {
                     "name": "Stellar Mote",
@@ -2283,7 +2272,7 @@
                 },
                 "action->Stellar Pulse": {
                     "name": "Stellar Pulse",
-                    "description": "<p>The dragon imposes an effect on creatures within their attunement aura. The dragon can choose either option for each creature, regardless of their current attunement. The dragon can't use Stellar Pulse again for [[/gmr 1d4 #Recharge Stellar Pulse]]{1d4 rounds}.</p><ul><li><strong>Graviton</strong> Each creature must succeed at a @Check[fortitude|dc:41] save or be @UUID[Compendium.sf2e.conditions.Item.eIcWbB5o3pP6OIMe]{Immobilized} for 1 round.</li><li><p><strong>Photon</strong> Each creature becomes @UUID[Compendium.sf2e.conditions.Item.nlCjDvLMf2EkV2dl]{Quickened} and can use the extra action only to Stride or Strike.</p></li></ul>"
+                    "description": "<p>The dragon imposes an effect on creatures within their attunement aura. The dragon can choose either option for each creature, regardless of their current attunement. The dragon can't use Stellar Pulse again for [[/gmr 1d4 #Recharge Stellar Pulse]]{1d4 rounds}.</p><ul><li><strong>Graviton</strong> Each creature must succeed at a @Check[fortitude|dc:41|options:area-effect] save or be @UUID[Compendium.sf2e.conditions.Item.eIcWbB5o3pP6OIMe]{Immobilized} for 1 round.</li><li><p><strong>Photon</strong> Each creature becomes @UUID[Compendium.sf2e.conditions.Item.nlCjDvLMf2EkV2dl]{Quickened} and can use the extra action only to Stride or Strike.</p></li></ul>"
                 },
                 "lore->Lore (any two planes)": {
                     "name": "Lore (any two planes)"
@@ -2416,7 +2405,7 @@
                 },
                 "action->Stellar Breath": {
                     "name": "Stellar Breath",
-                    "description": "<p>The dragon unleashes divine power like that from the core of a star or black hole, dealing @Damage[7d10[spirit]|options:area-damage] damage in a @Template[type:cone|distance:30] (@Check[will|dc:29|basic] save). The dragon can't use Stellar Breath for [[/gmr 1d4 #rounds]]{1d4 rounds}.</p>"
+                    "description": "<p>The dragon unleashes divine power like that from the core of a star or black hole, dealing @Damage[7d10[spirit]|options:area-damage] damage in a @Template[type:cone|distance:30] (@Check[will|dc:29|basic|options:area-effect] save). The dragon can't use Stellar Breath for [[/gmr 1d4 #rounds]]{1d4 rounds}.</p>"
                 },
                 "action->Stellar Mote": {
                     "name": "Stellar Mote",
@@ -2424,7 +2413,7 @@
                 },
                 "action->Stellar Pulse": {
                     "name": "Stellar Pulse",
-                    "description": "<p>The dragon imposes an effect on creatures within their attunement aura. The effect is based on the dragon's current attunement. The dragon can't use Stellar Pulse again for [[/gmr 1d4 #Recharge Stellar Pulse]]{1d4 rounds}.</p><ul><li><strong>Graviton</strong> Each creature must succeed at a @Check[fortitude|dc:29] save or be @UUID[Compendium.sf2e.conditions.Item.eIcWbB5o3pP6OIMe]{Immobilized} for 1 round.</li><li><p><strong>Photon</strong> Each creature becomes @UUID[Compendium.sf2e.conditions.Item.nlCjDvLMf2EkV2dl]{Quickened} and can use the extra action only to Stride or Strike.</p></li></ul>"
+                    "description": "<p>The dragon imposes an effect on creatures within their attunement aura. The effect is based on the dragon's current attunement. The dragon can't use Stellar Pulse again for [[/gmr 1d4 #Recharge Stellar Pulse]]{1d4 rounds}.</p><ul><li><strong>Graviton</strong> Each creature must succeed at a @Check[fortitude|dc:29|options:area-effect] save or be @UUID[Compendium.sf2e.conditions.Item.eIcWbB5o3pP6OIMe]{Immobilized} for 1 round.</li><li><p><strong>Photon</strong> Each creature becomes @UUID[Compendium.sf2e.conditions.Item.nlCjDvLMf2EkV2dl]{Quickened} and can use the extra action only to Stride or Strike.</p></li></ul>"
                 },
                 "lore->Lore (any two planes)": {
                     "name": "Lore (any two planes)"
@@ -2490,7 +2479,7 @@
                 },
                 "action->Stench": {
                     "name": "Stench",
-                    "description": "<p>10 feet, @Check[fortitude|dc:22]</p><hr /><p>@Localize[PF2E.NPC.Abilities.Glossary.Stench]</p>"
+                    "description": "<p>10 feet. @Check[fortitude|dc:22|options:area-effect,inflicts:sickened,inflicts:slowed]</p><hr /><p>@Localize[PF2E.NPC.Abilities.Glossary.Stench]</p>"
                 },
                 "action->Void Healing": {
                     "name": "Void Healing"
@@ -2554,7 +2543,7 @@
                 },
                 "action->Frenzied Scratching": {
                     "name": "Frenzied Scratching",
-                    "description": "<p>Each enemy in the cyanoscum bloom's space takes @Damage[3d6[piercing]] damage (@Check[reflex|dc:18|basic] save).</p>"
+                    "description": "<p>Each enemy in the cyanoscum bloom's space takes @Damage[3d6[piercing]|options:area-damage] damage (@Check[reflex|dc:18|basic|options:area-effect] save).</p>"
                 },
                 "action->Squish": {
                     "name": "Squish",
@@ -2585,7 +2574,7 @@
                 },
                 "action->Self-Destruct": {
                     "name": "Self-Destruct",
-                    "description": "<p>A cybernetic zombie must use this reaction unless its cybernetics are disabled</p>\n<p><strong>Trigger</strong> The cybernetic zombie is reduced to 0 Hit Points</p><hr /><p><strong>Effect</strong> The zombie's damaged cybernetics explode, dealing @Damage[1d8[electricity]|options:area-damage] damage in a @Template[type:emanation|distance:10] (@Check[reflex|dc:15|basic] save). This ability destroys the zombie's integrated items and any tech items on the zombie of 1st level or lower.</p>"
+                    "description": "<p>A cybernetic zombie must use this reaction unless its cybernetics are disabled</p>\n<p><strong>Trigger</strong> The cybernetic zombie is reduced to 0 Hit Points</p><hr /><p><strong>Effect</strong> The zombie's damaged cybernetics explode, dealing @Damage[1d8[electricity]|options:area-damage] damage in a @Template[type:emanation|distance:10] (@Check[reflex|dc:15|basic|options:area-effect] save). This ability destroys the zombie's integrated items and any tech items on the zombie of 1st level or lower.</p>"
                 },
                 "action->Void Healing": {
                     "name": "Void Healing"
@@ -2612,7 +2601,7 @@
                 },
                 "action->Char Miasma": {
                     "name": "Char Miasma",
-                    "description": "<p>5 feet. The heat from a daipex's arm cannons burns the intestines fed into the grafted weapons as ammunition. A creature that enters or begins its turn in the aura must succeed at a @Check[fortitude|dc:23] save or be @UUID[Compendium.sf2e.conditions.Item.fesd1n5eVhpCSS18]{Sickened 1}.</p>"
+                    "description": "<p>5 feet. The heat from a daipex's arm cannons burns the intestines fed into the grafted weapons as ammunition. A creature that enters or begins its turn in the aura must succeed at a @Check[fortitude|dc:23|options:area-effect,inflicts:sickened] save or be @UUID[Compendium.sf2e.conditions.Item.fesd1n5eVhpCSS18]{Sickened 1}.</p>"
                 },
                 "action->Misfire Vulnerability": {
                     "name": "Misfire Vulnerability",
@@ -2620,7 +2609,7 @@
                 },
                 "action->Hail of Bullets": {
                     "name": "Hail of Bullets",
-                    "description": "<p>The daipex fires a @Template[type:cone|distance:30] of bullets, dealing @Damage[6d10[piercing]|options:area-damage] damage (@Check[reflex|dc:26|basic] save) to creatures in the area. The daipex is pushed 10 feet in the opposite direction and can't use Hail of Bullets again for [[/gmr 1d4 #Recharge Hail of Bullets]]{1d4 rounds}.</p>"
+                    "description": "<p>The daipex fires a @Template[type:cone|distance:30] of bullets, dealing @Damage[6d10[piercing]|options:area-damage] damage (@Check[reflex|dc:26|basic|options:area-effect] save) to creatures in the area. The daipex is pushed 10 feet in the opposite direction and can't use Hail of Bullets again for [[/gmr 1d4 #Recharge Hail of Bullets]]{1d4 rounds}.</p>"
                 },
                 "action->Rain of Bullets": {
                     "name": "Rain of Bullets",
@@ -2668,11 +2657,11 @@
                 },
                 "action->Brain Sacs": {
                     "name": "Brain Sacs",
-                    "description": "<p>A deh-nolo snatcher has four brain sacs that they use to store harvested brains. A deh-nolo knows one additional language for each brain they have stored in a brain sac, chosen from the languages that the creature knew when its brain was harvested. A deh-nolo without all four sacs full is stupefied with a value equal to the number of empty sacs.</p>"
+                    "description": "<p>A deh-nolo snatcher has four brain sacs that they use to store harvested brains. A deh-nolo knows one additional language for each brain they have stored in a brain sac, chosen from the languages that the creature knew when its brain was harvested. A deh-nolo without all four sacs full is @UUID[Compendium.sf2e.conditions.Item.e1XGnhKNSQIm5IXg]{Stupefied} with a value equal to the number of empty sacs.</p>"
                 },
                 "action->Open Pustules": {
                     "name": "Open Pustules",
-                    "description": "<p>When the deh-nolo takes damage, pustules on their body burst, spraying foul poison. Each adjacent creature is exposed to dominion bile.</p>"
+                    "description": "<p>When the deh-nolo takes damage, pustules on their body burst, spraying foul poison. Each adjacent creature is exposed to <em>dominion bile</em>.</p>"
                 },
                 "action->Dominion Bile": {
                     "name": "Dominion Bile",
@@ -2698,9 +2687,6 @@
                 "equipment->Integrated tools appropriate for disguise shell": {
                     "name": "Integrated tools appropriate for disguise shell"
                 },
-                "ammo->Projectile Ammo": {
-                    "name": "Projectile Ammo"
-                },
                 "strike-melee->Breaching Gun": {
                     "name": "Breaching Gun"
                 },
@@ -2713,7 +2699,7 @@
                 },
                 "action->Breaching Rush": {
                     "name": "Breaching Rush",
-                    "description": "<p>The demolition-class assassin robot attempts to close the distance between it and its target, removing all obstacles in its way. The robot makes a ranged Strike with its breaching gun against the [[/act force-open]] DC of a door or other obstacle. If successful, the obstacle gains the broken condition. The robot then Strides twice toward (and even through) the obstacle, but if the obstacle still bars the robot's movement, it stops adjacent to the obstacle and attempts an Athletics check to Force Open the obstacle with a +4 circumstance bonus.</p>"
+                    "description": "<p>The demolition-class assassin robot attempts to close the distance between it and its target, removing all obstacles in its way. The robot makes a ranged Strike with its breaching gun against the Force Open DC of a door or other obstacle. If successful, the obstacle gains the broken condition. The robot then Strides twice toward (and even through) the obstacle, but if the obstacle still bars the robot's movement, it stops adjacent to the obstacle and attempts an Athletics check to [[/act force-open]] the obstacle with a +4 circumstance bonus.</p>"
                 },
                 "action->Disguise Shell": {
                     "name": "Disguise Shell",
@@ -2725,14 +2711,14 @@
                 },
                 "action->Target Tracking": {
                     "name": "Target Tracking",
-                    "description": "<p>The demolition-class assassin robot establishes a target lock on a creature it can see within 120 feet. The creature can't become @UUID[Compendium.sf2e.conditions.Item.DmAIPqOBomZ7H95W]{Concealed} against the robot or [[/act create-a-diversion]] against the robot. This ability lasts until the robot loses line of sight with the target or the target otherwise becomes hidden.</p>"
+                    "description": "<p>The demolition-class assassin robot establishes a target lock on a creature it can see within 120 feet. The creature can't become @UUID[Compendium.sf2e.conditions.Item.DmAIPqOBomZ7H95W]{Concealed} against the robot or [[/act create-a-diversion]] against the robot. This ability lasts until the robot loses line of sight with the target or the target otherwise becomes @UUID[Compendium.sf2e.conditions.Item.iU0fEDdBp3rXpTMC]{Hidden}.</p>"
                 }
             }
         },
         "Deprimogon": {
             "name": "Deprimogon",
             "publicNotes": "<p>Deprimogons stalk hidden tunnels, shadowed alleys, and looming towers of settlements whose governments have made infernal pacts as they silently monitor citizens for any signs of sedition. Agitators or freedom fighters are harassed or chased down and trapped by these devils before disappearing forever. Deprimogons hide their faces behind sleek metallic masks that suppress their own emotions, blocking out any pleas, threats, or bargaining that might dissuade them from their mission. Deprimogons delight in summoning diabolic creatures from eras long forgotten to torment their prisoners.</p><hr /><p>In the shadows of space stations, halls of courtrooms, and offices of corporations, devils tempt mortals with promises of power and lay the groundwork for their conquest. A devil's pacts can vary from elaborate contracts to quick promises, but they all end the same way: a mortal soul condemned, and Hell's forces bolstered. From the open rule of Malfane, the unseen control of Embroi, and hidden pacts with souls across the galaxy, devils continue their relentless work to spread tyranny and force the universe to resemble the hellish bureaucracy of their home.</p>",
-            "languagesDetails": "Embri, Can't speak any language",
+            "languagesDetails": "Can't speak any language",
             "items": {
                 "spell->Diabolic Pact (DC 27)": {
                     "name": "Diabolic Pact (DC 27)"
@@ -2799,7 +2785,7 @@
                 },
                 "action->Tongue Grab": {
                     "name": "Tongue Grab",
-                    "description": "<p>A creature hit by the diaspora worm's tongue becomes @UUID[Compendium.sf2e.conditions.Item.kWc1fhmv9LBiTuei]{Grabbed}. A creature can sever the tongue with a Strike against AC 19 that deals at least @Damage[12[slashing]] damage. This prevents the worm from using its tongue Strike until it regrows its tongue, which takes 1 day.</p>"
+                    "description": "<p>A creature hit by the diaspora worm's tongue becomes @UUID[Compendium.sf2e.conditions.Item.kWc1fhmv9LBiTuei]{Grabbed}. A creature can sever the tongue with a Strike against AC 19 that deals at least 12 slashing damage. This prevents the worm from using its tongue Strike until it regrows its tongue, which takes 1 day.</p>"
                 },
                 "action->Tongue Reel": {
                     "name": "Tongue Reel",
@@ -2809,7 +2795,7 @@
         },
         "Diaspora Worm Sage": {
             "name": "Diaspora Worm Sage",
-            "publicNotes": "<p>Diaspora worms that survive for centuries grow significantly in size, power, and intelligence. They mostly protect their ancestral home, preserving bioelectric coral records and directing the actions of younger worms</p><hr /><p>\"Space worm\" is a nonscientific term for a xenobiologically complex clade of invertebrate animals and beasts that make their home in the vastness of space. Some, like the diaspora and dust worms, show signs of intelligence and are directly related to each other. Others, like the surnoch, evolved separately, with their origins completely unknown to science.</p>",
+            "publicNotes": "<p>Diaspora worms that survive for centuries grow significantly in size, power, and intelligence. They mostly protect their ancestral home, preserving bioelectric coral records and directing the actions of younger worms.</p><hr /><p>\"Space worm\" is a nonscientific term for a xenobiologically complex clade of invertebrate animals and beasts that make their home in the vastness of space. Some, like the diaspora and dust worms, show signs of intelligence and are directly related to each other. Others, like the surnoch, evolved separately, with their origins completely unknown to science.</p>",
             "sensesDetails": "electromagnetic sight 400 feet",
             "languagesDetails": "Electrocommunication",
             "items": {
@@ -2837,11 +2823,11 @@
                 },
                 "action->Darkwater Vortex": {
                     "name": "Darkwater Vortex",
-                    "description": "<p>The diaspora worm sage stirs up a 40-foot-tall cylinder of water with a 20-foot radius within 300 feet. If the area isn't already filled with water, this ability fails. The vortex buffets all creatures, dealing @Damage[5d10[bludgeoning]] damage (@Check[reflex|dc:35|basic] save). Creatures that fail the save are pulled 5 feet toward the center of the vortex (or 10 feet on a critical failure).</p>"
+                    "description": "<p>The diaspora worm sage stirs up a 40-foot-tall cylinder of water with a @Template[burst|distance:20]{20-foot radius} within 300 feet. If the area isn't already filled with water, this ability fails. The vortex buffets all creatures, dealing @Damage[5d10[bludgeoning]|options:area-damage] damage (@Check[reflex|dc:35|basic|options:area-effect] save). Creatures that fail the save are pulled 5 feet toward the center of the vortex (or 10 feet on a critical failure).</p>"
                 },
                 "action->Electromagnetic Surge": {
                     "name": "Electromagnetic Surge",
-                    "description": "<p>The diaspora worm sage emits a concentrated wave of electromagnetism in a @Template[type:cone|distance:50]. Each creature in the area must attempt a @Check[fortitude|dc:35] save. A creature with the tech trait uses the outcome one degree of success worse than the result of its roll.</p><hr /><p><strong>Critical Success</strong> The creature is unaffected and becomes immune to Electromagnetic Surge for 1 hour.</p>\n<p><strong>Success</strong> The creature's items with the tech trait become glitching 1 for 1 round.</p>\n<p><strong>Failure</strong> The creature becomes @UUID[Compendium.sf2e.conditions.Item.dfCMdR4wnpbYNTix]{Stunned 1}, and its items with the tech trait become glitching 2 for 1 minute. A creature with the tech trait also gains this glitching condition.</p>\n<p><strong>Critical Failure</strong> The creature becomes @UUID[Compendium.sf2e.conditions.Item.6uEgoh53GbXuHpTF]{Paralyzed} for 1 round, and its items with the tech trait become glitching 3 for 10 minutes. A creature with the tech trait also gains this glitching condition.</p>"
+                    "description": "<p>The diaspora worm sage emits a concentrated wave of electromagnetism in a @Template[type:cone|distance:50]. Each creature in the area must attempt a @Check[fortitude|dc:35|options:area-effect,inflicts:glitching,inflicts:stunned,inflicts:paralyzed] save. A creature with the tech trait uses the outcome one degree of success worse than the result of its roll.</p><hr /><p><strong>Critical Success</strong> The creature is unaffected and becomes immune to Electromagnetic Surge for 1 hour.</p>\n<p><strong>Success</strong> The creature's items with the tech trait become @UUID[Compendium.sf2e.conditions.Item.6A2QDy8wRGCVQsSd]{Glitching 1} for 1 round.</p>\n<p><strong>Failure</strong> The creature becomes @UUID[Compendium.sf2e.conditions.Item.dfCMdR4wnpbYNTix]{Stunned 1}, and its items with the tech trait become @UUID[Compendium.sf2e.conditions.Item.6A2QDy8wRGCVQsSd]{Glitching 2} for 1 minute. A creature with the tech trait also gains this glitching condition.</p>\n<p><strong>Critical Failure</strong> The creature becomes @UUID[Compendium.sf2e.conditions.Item.6uEgoh53GbXuHpTF]{Paralyzed} for 1 round, and its items with the tech trait become @UUID[Compendium.sf2e.conditions.Item.6A2QDy8wRGCVQsSd]{Glitching 3} for 10 minutes. A creature with the tech trait also gains this glitching condition.</p>"
                 },
                 "action->Swallow Whole": {
                     "name": "Swallow Whole",
@@ -2849,7 +2835,7 @@
                 },
                 "action->Tongue Grab": {
                     "name": "Tongue Grab",
-                    "description": "<p>A creature hit by the diaspora worm's tongue becomes @UUID[Compendium.sf2e.conditions.Item.kWc1fhmv9LBiTuei]{Grabbed}. A creature can sever the tongue with a Strike against AC 37 that deals at least @Damage[32[slashing]] damage. This prevents the worm from using its tongue Strike until it regrows its tongue, which takes 1 day.</p>"
+                    "description": "<p>A creature hit by the diaspora worm's tongue becomes @UUID[Compendium.sf2e.conditions.Item.kWc1fhmv9LBiTuei]{Grabbed}. A creature can sever the tongue with a Strike against AC 37 that deals at least 32 slashing damage. This prevents the worm from using its tongue Strike until it regrows its tongue, which takes 1 day.</p>"
                 },
                 "action->Tongue Reel": {
                     "name": "Tongue Reel",
@@ -2866,11 +2852,11 @@
                 },
                 "action->Detonate": {
                     "name": "Detonate",
-                    "description": "<p><strong>Trigger</strong> The diatha takes acid, electricity, fire, piercing, slashing, or sonic damage</p>\n<p><strong>Requirements</strong> The diatha has 5 or fewer Hit Points</p><hr /><p><strong>Effect</strong> The diatha dies, its body combusting in a flash of flame. All creatures in a 5-foot-radius emanation take @Damage[1d6[fire]] damage (@Check[reflex|dc:16|basic] save).</p>"
+                    "description": "<p><strong>Trigger</strong> The diatha takes acid, electricity, fire, piercing, slashing, or sonic damage</p>\n<p><strong>Requirements</strong> The diatha has 5 or fewer Hit Points</p><hr /><p><strong>Effect</strong> The diatha dies, its body combusting in a flash of flame. All creatures in a @Template[emanation|distance:5] take @Damage[1d6[fire]|options:area-damage] damage (@Check[reflex|dc:16|basic|options:area-effect] save).</p>"
                 },
                 "action->Hydrocarbon Slick": {
                     "name": "Hydrocarbon Slick",
-                    "description": "<p>If a diatha dies before it can detonate, its body rapidly decomposes into a slick of highly volatile hydrocarbons. Any effect that deals acid, electricity, or fire damage in an area that includes the square where the diatha died, or targets a creature in that square, causes a small explosion and consumes the slick.</p>\n<p>All creatures in the square and in a @Template[type:emanation|distance:5] take @Damage[1d6[fire]|options:area-damage] damage (@Check[reflex|dc:16|basic] save). The slick evaporates after 10 minutes if it isn't ignited.</p>"
+                    "description": "<p>If a diatha dies before it can detonate, its body rapidly decomposes into a slick of highly volatile hydrocarbons. Any effect that deals acid, electricity, or fire damage in an area that includes the square where the diatha died, or targets a creature in that square, causes a small explosion and consumes the slick.</p>\n<p>All creatures in the square and in a @Template[type:emanation|distance:5] take @Damage[1d6[fire]|options:area-damage] damage (@Check[reflex|dc:16|basic|options:area-effect] save). The slick evaporates after 10 minutes if it isn't ignited.</p>"
                 },
                 "action->Explosive Charge": {
                     "name": "Explosive Charge",
@@ -2959,11 +2945,11 @@
                 },
                 "action->Darkness Falls": {
                     "name": "Darkness Falls",
-                    "description": "<p><strong>Requirements</strong> The draiclipsed is photonic</p><hr /><p><strong>Effect</strong> The draiclipsed releases the light they've consumed in a blast of corrupted electromagnetic energy, dealing 3d8 electricity and @Damage[3d8[void]|options:area-damage] damage in a @Template[type:cone|distance:30] (@Check[reflex|dc:24|basic] save). The draiclipsed is no longer photonic.</p>"
+                    "description": "<p><strong>Requirements</strong> The draiclipsed is photonic</p><hr /><p><strong>Effect</strong> The draiclipsed releases the light they've consumed in a blast of corrupted electromagnetic energy, dealing @Damage[3d8[electricity],3d8[void]|options:area-damage] damage in a @Template[type:cone|distance:30] (@Check[reflex|dc:24|basic|options:area-effect] save). The draiclipsed is no longer photonic.</p>"
                 },
                 "action->Gathering Darkness": {
                     "name": "Gathering Darkness",
-                    "description": "<p>If at least one other draiclipsed is within the draiclipsed's eclipse shroud, the draiclipsed's Strikes deal an additional @Damage[1d8[void]] damage.</p>"
+                    "description": "<p>If at least one other draiclipsed is within the draiclipsed's eclipse shroud, the draiclipsed's Strikes deal an additional 1d8 void damage.</p>"
                 }
             }
         },
@@ -2983,11 +2969,11 @@
                 },
                 "action->Emotionsense": {
                     "name": "Emotionsense",
-                    "description": "<p>This is a precise sense against creatures under an emotion effect or in the grips of overwhelming emotions (at the GM's discretion). Against other creatures, this is an imprecise sense. Creatures immune to emotion or mental effects or under the effects of a calm spell are undetectable by emotionsense.</p>"
+                    "description": "<p>This is a precise sense against creatures under an emotion effect or in the grips of overwhelming emotions (at the GM's discretion). Against other creatures, this is an imprecise sense. Creatures immune to emotion or mental effects or under the effects of a @UUID[Compendium.sf2e.spells.Item.b515AZlB0sridKSq]{Calm} spell are undetectable by emotionsense.</p>"
                 },
                 "action->Dread Venom": {
                     "name": "Dread Venom",
-                    "description": "<p><strong>Saving Throw</strong> @Check[fortitude|dc:18]</p>\n<p><strong>Maximum Duration</strong> 6 rounds</p>\n<p><strong>Stage 1</strong> @Damage[1d6[mental]] damage and @UUID[Compendium.sf2e.conditions.Item.TBSHQspnbcqxsmjL]{Frightened 1} (1 round)</p>\n<p><strong>Stage 2</strong> 2d6 mental and @UUID[Compendium.sf2e.conditions.Item.TBSHQspnbcqxsmjL]{Frightened 2} (1 round)</p>\n<p><strong>Stage 3</strong> As stage 2, plus @UUID[Compendium.sf2e.conditions.Item.3uh1r86TzbQvosxv]{Doomed 1} (1 round)</p>"
+                    "description": "<p><strong>Saving Throw</strong> @Check[fortitude|dc:18]</p>\n<p><strong>Maximum Duration</strong> 6 rounds</p>\n<p><strong>Stage 1</strong> @Damage[1d6[mental]] damage and @UUID[Compendium.sf2e.conditions.Item.TBSHQspnbcqxsmjL]{Frightened 1} (1 round)</p>\n<p><strong>Stage 2</strong> @Damage[2d6[mental]] damage and @UUID[Compendium.sf2e.conditions.Item.TBSHQspnbcqxsmjL]{Frightened 2} (1 round)</p>\n<p><strong>Stage 3</strong> As stage 2, plus @UUID[Compendium.sf2e.conditions.Item.3uh1r86TzbQvosxv]{Doomed 1} (1 round)</p>"
                 },
                 "action->Mental Mire": {
                     "name": "Mental Mire",
@@ -3008,15 +2994,15 @@
                 },
                 "action->Atavistic Rage": {
                     "name": "Atavistic Rage",
-                    "description": "<p><strong>Trigger</strong> The Dreamer is reduced to half or less than half their total Hit Points</p><hr /><p><strong>Effect</strong> The injured Dreamer erupts into a terrifying state of psychic fury, requiring all non-Dreamers in a @Template[type:emanation|distance:30] to attempt a @Check[will|dc:24] save. The Dreamer gains a +2 status bonus to attack and damage rolls for 1 minute but can't use their innate spells. After they stop raging, a Dreamer can't enter an Atavistic Rage again for 1 minute.</p><hr /><p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature is @UUID[Compendium.sf2e.conditions.Item.TBSHQspnbcqxsmjL]{Frightened 1}.</p>\n<p><strong>Failure</strong> The creature is @UUID[Compendium.sf2e.conditions.Item.TBSHQspnbcqxsmjL]{Frightened 2} and @UUID[Compendium.sf2e.conditions.Item.dfCMdR4wnpbYNTix]{Stunned 1}.</p>\n<p><strong>Critical Failure</strong> The creature becomes @UUID[Compendium.sf2e.conditions.Item.TBSHQspnbcqxsmjL]{Frightened 3} and @UUID[Compendium.sf2e.conditions.Item.sDPxOjQ9kx2RZE8D]{Fleeing} for 1 round.</p>"
+                    "description": "<p><strong>Trigger</strong> The Dreamer is reduced to half or less than half their total Hit Points</p><hr /><p><strong>Effect</strong> The injured Dreamer erupts into a terrifying state of psychic fury, requiring all non-Dreamers in a @Template[type:emanation|distance:30] to attempt a @Check[will|dc:24|options:area-effect] save. The Dreamer gains a +2 status bonus to attack and damage rolls for 1 minute but can't use their innate spells. After they stop raging, a Dreamer can't enter an Atavistic Rage again for 1 minute.</p><hr /><p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature is @UUID[Compendium.sf2e.conditions.Item.TBSHQspnbcqxsmjL]{Frightened 1}.</p>\n<p><strong>Failure</strong> The creature is @UUID[Compendium.sf2e.conditions.Item.TBSHQspnbcqxsmjL]{Frightened 2} and @UUID[Compendium.sf2e.conditions.Item.dfCMdR4wnpbYNTix]{Stunned 1}.</p>\n<p><strong>Critical Failure</strong> The creature becomes @UUID[Compendium.sf2e.conditions.Item.TBSHQspnbcqxsmjL]{Frightened 3} and @UUID[Compendium.sf2e.conditions.Item.sDPxOjQ9kx2RZE8D]{Fleeing} for 1 round.</p>"
                 },
                 "action->Sluggish Mind": {
                     "name": "Sluggish Mind",
-                    "description": "<p>Any creature that uses an emotion or mental effect on a Dreamer must succeed at a @Check[will|dc:24] save or become @UUID[Compendium.sf2e.conditions.Item.xYTAsEpcJE1Ccni3]{Slowed 1} for the next [[/gmr 1d4 #rounds]]{1d4 rounds} as fragments of prophetic songs fill its mind.</p>"
+                    "description": "<p>Any creature that uses an emotion or mental effect on a Dreamer must succeed at a @Check[will|dc:24|options:inflicts:slowed] save or become @UUID[Compendium.sf2e.conditions.Item.xYTAsEpcJE1Ccni3]{Slowed 1} for the next [[/gmr 1d4 #rounds]]{1d4 rounds} as fragments of prophetic songs fill its mind.</p>"
                 },
                 "action->Synesthetic Shock": {
                     "name": "Synesthetic Shock",
-                    "description": "<p>Any creature struck by a Dreamer's tentacle must attempt a @Check[will|dc:24] save to resist a wave of sensory overstimulation. The creature is then temporarily immune to all synesthetic shocks for 1 minute.</p><hr /><p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature is suppressed and @UUID[Compendium.sf2e.conditions.Item.e1XGnhKNSQIm5IXg]{Stupefied 1} until the end of its next turn.</p>\n<p><strong>Failure</strong> As success, but the creature is also @UUID[Compendium.sf2e.conditions.Item.TkIyaNPgTZFBCCuh]{Dazzled} until the end of its next turn.</p>\n<p><strong>Critical Failure</strong> As failure, but with a duration of 2 rounds, and the creature is also @UUID[Compendium.sf2e.conditions.Item.dfCMdR4wnpbYNTix]{Stunned 2}.</p>"
+                    "description": "<p>Any creature struck by a Dreamer's tentacle must attempt a @Check[will|dc:24|options:inflicts:dazzled,inflicts:stupefied,inflicts:stunned,inflicts:suppressed] save to resist a wave of sensory overstimulation. The creature is then temporarily immune to all synesthetic shocks for 1 minute.</p><hr /><p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature is @UUID[Compendium.sf2e.conditions.Item.enA7BxAjBb7ns1iF]{Suppressed} and @UUID[Compendium.sf2e.conditions.Item.e1XGnhKNSQIm5IXg]{Stupefied 1} until the end of its next turn.</p>\n<p><strong>Failure</strong> As success, but the creature is also @UUID[Compendium.sf2e.conditions.Item.TkIyaNPgTZFBCCuh]{Dazzled} until the end of its next turn.</p>\n<p><strong>Critical Failure</strong> As failure, but with a duration of 2 rounds, and the creature is also @UUID[Compendium.sf2e.conditions.Item.dfCMdR4wnpbYNTix]{Stunned 2}.</p>"
                 }
             }
         },
@@ -3037,18 +3023,18 @@
                 },
                 "action->Phantasmal Fans": {
                     "name": "Phantasmal Fans",
-                    "description": "<p>20 feet. A rowdy spectral crowd always surrounds the dredgelit. The dredgelit has concealment against all creatures, and the crowd counts as difficult terrain.</p>"
+                    "description": "<p>20 feet. A rowdy spectral crowd always surrounds the dredgelit. The dredgelit has @UUID[Compendium.sf2e.conditions.Item.DmAIPqOBomZ7H95W]{Concealment} against all creatures, and the crowd counts as difficult terrain.</p>"
                 },
                 "action->Void Healing": {
                     "name": "Void Healing"
                 },
                 "action->Alluring Debut": {
                     "name": "Alluring Debut",
-                    "description": "<p><strong>Frequency</strong> once every 10 minutes</p><hr /><p><strong>Effect</strong> The dredgelit attempts a Performance check against the Will DC of a single creature within 30 feet, recreating an iconic show.</p><hr /><p><strong>Critical Success</strong> The creature becomes part of their fan club for 24 hours, even if it's unwilling.</p>\n<p><strong>Success</strong> As critical success, but only for 1 hour.</p>\n<p><strong>Failure</strong> The creature is unaffected.</p>\n<p><strong>Critical Failure</strong> The creature is unaffected, and the dredgelit is so embarrassed by their failure to perform that they take @Damage[2d8[mental]] damage.</p>"
+                    "description": "<p><strong>Frequency</strong> once every 10 minutes</p><hr /><p><strong>Effect</strong> The dredgelit attempts a @Check[performance|defense:will] check against the Will DC of a single creature within 30 feet, recreating an iconic show.</p><hr /><p><strong>Critical Success</strong> The creature becomes part of their fan club for 24 hours, even if it's unwilling.</p>\n<p><strong>Success</strong> As critical success, but only for 1 hour.</p>\n<p><strong>Failure</strong> The creature is unaffected.</p>\n<p><strong>Critical Failure</strong> The creature is unaffected, and the dredgelit is so embarrassed by their failure to perform that they take @Damage[2d8[mental]] damage.</p>"
                 },
                 "action->Parasocial Leech": {
                     "name": "Parasocial Leech",
-                    "description": "<p><strong>Frequency</strong> once per hour</p><hr /><p><strong>Effect</strong> The dredgelit leeches vitality from a creature in their fan club. The dredgelit attempts a Performance check against the Will DC of the creature. The creature takes @Damage[6d6[void]] damage, and the dredgelit regains @Damage[10[healing]] Hit Points.</p><hr /><p><strong>Critical Success</strong> The target takes double damage and is @UUID[Compendium.sf2e.conditions.Item.dfCMdR4wnpbYNTix]{Stunned 2} and @UUID[Compendium.sf2e.conditions.Item.eIcWbB5o3pP6OIMe]{Immobilized} for 1 round.</p>\n<p><strong>Success</strong> The target takes full damage and is @UUID[Compendium.sf2e.conditions.Item.dfCMdR4wnpbYNTix]{Stunned 1} and immobilized for 1 round.</p>\n<p><strong>Failure</strong> The target is unaffected.</p>\n<p><strong>Critical Failure</strong> The target is unaffected. The dredgelit's abysmal performance results in them taking @Damage[2d8[mental]] damage instead of regaining Hit Points.</p>"
+                    "description": "<p><strong>Frequency</strong> once per hour</p><hr /><p><strong>Effect</strong> The dredgelit leeches vitality from a creature in their fan club. The dredgelit attempts a @Check[performance|defense:will|options:inflicts:immobilized,inflicts:stunned] check against the Will DC of the creature. The creature takes @Damage[6d6[void]] damage, and the dredgelit regains @Damage[10[healing]] Hit Points.</p><hr /><p><strong>Critical Success</strong> The target takes double damage and is @UUID[Compendium.sf2e.conditions.Item.dfCMdR4wnpbYNTix]{Stunned 2} and @UUID[Compendium.sf2e.conditions.Item.eIcWbB5o3pP6OIMe]{Immobilized} for 1 round.</p>\n<p><strong>Success</strong> The target takes full damage and is @UUID[Compendium.sf2e.conditions.Item.dfCMdR4wnpbYNTix]{Stunned 1} and immobilized for 1 round.</p>\n<p><strong>Failure</strong> The target is unaffected.</p>\n<p><strong>Critical Failure</strong> The target is unaffected. The dredgelit's abysmal performance results in them taking @Damage[2d8[mental]] damage instead of regaining Hit Points.</p>"
                 },
                 "lore->Media Lore": {
                     "name": "Media Lore"
@@ -3058,7 +3044,7 @@
         "Driftdead Amalgam": {
             "name": "Driftdead Amalgam",
             "publicNotes": "<p>Amalgams are collections of driftdead that have fused together into one flesh ambulated by the shattered remnants of their component souls. The first amalgams formed spontaneously, but synthetic versions have been created in the Corpse Fleet's fleshforges and deployed as shock troops on the front lines of many battles.</p><hr /><p>Driftdead are created when a restless soul fuses with planar energies and reanimates its own corpse into a disturbing parody of life. Rarely, disturbed spirits snatched from elsewhere fuse together to inhabit a single dead body. Any death within the Drift might spawn a driftdead, but creatures that die in a frenzy of intense emotion are more likely to make the transition.</p>",
-            "sensesDetails": "darkvision 60 feet, lifesense 60 feet (page 209)",
+            "sensesDetails": "darkvision 60 feet, lifesense 60 feet",
             "hpDetails": "void healing",
             "items": {
                 "strike-melee->Claw": {
@@ -3084,11 +3070,11 @@
                 },
                 "action->Ripping Blast": {
                     "name": "Ripping Blast",
-                    "description": "<p>The amalgam's claws rip through reality in a @Template[type:cone|distance:30], dealing @Damage[8d6[slashing]|options:area-damage] damage with a @Check[reflex|dc:25|basic] save. On a critical failure, a creature is also @UUID[Compendium.sf2e.conditions.Item.4D2KBtexWXa6oUMR]{Drained 1}. The amalgam can't use Ripping Blast again for [[/gmr 1d4 #Recharge Ripping Blast]]{1d4 rounds}.</p>"
+                    "description": "<p>The amalgam's claws rip through reality in a @Template[type:cone|distance:30], dealing @Damage[8d6[slashing]|options:area-damage] damage with a @Check[reflex|dc:25|basic|options:area-effect] save. On a critical failure, a creature is also @UUID[Compendium.sf2e.conditions.Item.4D2KBtexWXa6oUMR]{Drained 1}. The amalgam can't use Ripping Blast again for [[/gmr 1d4 #Recharge Ripping Blast]]{1d4 rounds}.</p>"
                 },
                 "action->Voice of the Damned": {
                     "name": "Voice of the Damned",
-                    "description": "<p>The amalgam calls out in a cacophony of voices from those slain in the Drift. Each living creature within 30 feet must attempt a @Check[will|dc:25] save.</p>\n<p><strong>Success</strong> The creature is temporarily immune to this amalgam's Voice of the Damned for 1 minute.</p>\n<p><strong>Failure</strong> The creature is @UUID[Compendium.sf2e.conditions.Item.xYTAsEpcJE1Ccni3]{Slowed 1} for 1 round.</p>\n<p><strong>Critical Failure</strong> The creature is slowed 1 for 2 rounds.</p>"
+                    "description": "<p>The amalgam calls out in a cacophony of voices from those slain in the Drift. Each living creature within 30 feet must attempt a @Check[will|dc:25|options:area-effect] save.</p>\n<p><strong>Success</strong> The creature is temporarily immune to this amalgam's Voice of the Damned for 1 minute.</p>\n<p><strong>Failure</strong> The creature is @UUID[Compendium.sf2e.conditions.Item.xYTAsEpcJE1Ccni3]{Slowed 1} for 1 round.</p>\n<p><strong>Critical Failure</strong> The creature is slowed 1 for 2 rounds.</p>"
                 }
             }
         },
@@ -3119,11 +3105,11 @@
                 },
                 "action->Starship Possession": {
                     "name": "Starship Possession",
-                    "description": "<p>While Inhabiting a Ship, the driftdead crasher extends its senses. It has vision anywhere within the ship and gains all-around vision while within the ship.</p>"
+                    "description": "<p>While Inhabiting a Ship, the driftdead crasher extends its senses. It has vision anywhere within the ship and gains all-around vision while within the ship.</p>\n<p>@UUID[Compendium.sf2e.bestiary-effects.Item.4J30S9nhyfaCX1Cm]{Effect: Starship Possession}</p>"
                 },
                 "action->Voice of the Lost": {
                     "name": "Voice of the Lost",
-                    "description": "<p>The driftdead crasher calls out in the voice of someone who was lost in the Drift. Each living creature within 30 feet must attempt a @Check[will|dc:18] save.</p>\n<p><strong>Success</strong> The creature is temporarily immune to this driftdead's Voice of the Lost for 1 minute.</p>\n<p><strong>Failure</strong> The creature is @UUID[Compendium.sf2e.conditions.Item.yblD8fOR1J8rDwEQ]{Confused} for 1 round.</p>\n<p><strong>Critical Failure</strong> The creature is confused for 2 rounds and @UUID[Compendium.sf2e.conditions.Item.e1XGnhKNSQIm5IXg]{Stupefied 2} for 1 round.</p>"
+                    "description": "<p>The driftdead crasher calls out in the voice of someone who was lost in the Drift. Each living creature within 30 feet must attempt a @Check[will|dc:18|options:area-effect] save.</p>\n<p><strong>Success</strong> The creature is temporarily immune to this driftdead's Voice of the Lost for 1 minute.</p>\n<p><strong>Failure</strong> The creature is @UUID[Compendium.sf2e.conditions.Item.yblD8fOR1J8rDwEQ]{Confused} for 1 round.</p>\n<p><strong>Critical Failure</strong> The creature is confused for 2 rounds and @UUID[Compendium.sf2e.conditions.Item.e1XGnhKNSQIm5IXg]{Stupefied 2} for 1 round.</p>"
                 }
             }
         },
@@ -3161,7 +3147,7 @@
                 },
                 "action->Burrowing Charge": {
                     "name": "Burrowing Charge",
-                    "description": "<p>The dust manta surges through sand to attack unwary prey. It Burrows up to twice its burrow Speed, then Leaps vertically up to 25 feet high, making a stinger Strike against a creature at any point during the jump (this lets it attack a creature within 35 feet of the surface). After the [[/act leap]], the dust manta falls to the ground but takes no damage from the fall if it lands on sand.</p>"
+                    "description": "<p>The dust manta surges through sand to attack unwary prey. It Burrows up to twice its burrow Speed, then Leaps vertically up to 25 feet high, making a stinger Strike against a creature at any point during the jump (this lets it attack a creature within 35 feet of the surface). After the Leap, the dust manta falls to the ground but takes no damage from the fall if it lands on sand.</p>"
                 },
                 "action->Disappear in Dust": {
                     "name": "Disappear in Dust",
@@ -3173,7 +3159,7 @@
                 },
                 "action->Spray Sand": {
                     "name": "Spray Sand",
-                    "description": "<p>The dust manta sprays a cloud of sand from its gills in a @Template[type:burst|distance:30]. All creatures in the cloud become @UUID[Compendium.sf2e.conditions.Item.DmAIPqOBomZ7H95W]{Concealed}, and all creatures outside the cloud become concealed to creatures within it. The cloud lasts until the end of the dust manta's next turn. The dust manta can't use Spray Sand again for [[/gmr 1d4 #Recharge Spray Sand]]{1d4 rounds}. A non-dust manta creature that enters or starts its turn in the cloud must attempt a @Check[fortitude|dc:24] save.</p>\n<p><strong>Success</strong> The creature is unaffected.</p>\n<p><strong>Failure</strong> The creature is @UUID[Compendium.sf2e.conditions.Item.TkIyaNPgTZFBCCuh]{Dazzled} for 1 minute or until it spends an Interact action to wipe the dirt and grit from its eyes. Critical</p>\n<p><strong>Failure</strong> The creature is @UUID[Compendium.sf2e.conditions.Item.XgEqL1kFApUbl5Z2]{Blinded} for 1 round, after which it's dazzled for 1 minute or until it spends an Interact action to wipe its eyes.</p>"
+                    "description": "<p>The dust manta sprays a cloud of sand from its gills in a @Template[type:burst|distance:30]. All creatures in the cloud become @UUID[Compendium.sf2e.conditions.Item.DmAIPqOBomZ7H95W]{Concealed}, and all creatures outside the cloud become concealed to creatures within it. The cloud lasts until the end of the dust manta's next turn. The dust manta can't use Spray Sand again for [[/gmr 1d4 #Recharge Spray Sand]]{1d4 rounds}. A non-dust manta creature that enters or starts its turn in the cloud must attempt a @Check[fortitude|dc:24|options:area-effect,inflicts:blinded,inflicts:dazzled] save.</p>\n<p><strong>Success</strong> The creature is unaffected.</p>\n<p><strong>Failure</strong> The creature is @UUID[Compendium.sf2e.conditions.Item.TkIyaNPgTZFBCCuh]{Dazzled} for 1 minute or until it spends an Interact action to wipe the dirt and grit from its eyes.</p>\n<p><strong>Critical Failure</strong> The creature is @UUID[Compendium.sf2e.conditions.Item.XgEqL1kFApUbl5Z2]{Blinded} for 1 round, after which it's dazzled for 1 minute or until it spends an Interact action to wipe its eyes.</p>"
                 }
             }
         },
@@ -3198,7 +3184,7 @@
                 },
                 "action->Electromagnetic Sight": {
                     "name": "Electromagnetic Sight",
-                    "description": "<p>Dust worms sense their surroundings by reading electromagnetic fields, including disruptions caused by creatures or objects. This is a precise sense within the listed range. Intense fields, such as areas emitting radiation or auras of electricity, make creatures within them @UUID[Compendium.sf2e.conditions.Item.DmAIPqOBomZ7H95W]{Concealed} to the diaspora worm.</p>"
+                    "description": "<p>Dust worms sense their surroundings by reading electromagnetic fields, including disruptions caused by creatures or objects. This is a precise sense within the listed range. Intense fields, such as areas emitting radiation or auras of electricity, make creatures within them @UUID[Compendium.sf2e.conditions.Item.DmAIPqOBomZ7H95W]{Concealed} to the dust worm.</p>"
                 },
                 "action->Electromagnetic Blindness": {
                     "name": "Electromagnetic Blindness",
@@ -3206,7 +3192,7 @@
                 },
                 "action->Sandstorm Veil": {
                     "name": "Sandstorm Veil",
-                    "description": "<p><strong>Requirements</strong> The dust worm is in a sandy or junk-ridden environment</p><hr /><p><strong>Effect</strong> The dust worm uses its magnetic field to kick up a swirling shroud of sand and metallic bits in a @Template[type:emanation|distance:10] around itself. This shroud moves with the worm and lasts for [[/gmr 1d6 #rounds]]{1d6 rounds}. The shroud grants the worm resistance 6 to physical damage, and any creature that ends its turn within the area takes @Damage[2d6[slashing]|options:area-damage] damage (@Check[reflex|dc:24|basic] save).</p>"
+                    "description": "<p><strong>Requirements</strong> The dust worm is in a sandy or junk-ridden environment</p><hr /><p><strong>Effect</strong> The dust worm uses its magnetic field to kick up a swirling shroud of sand and metallic bits in a @Template[type:emanation|distance:10] around itself. This shroud moves with the worm and lasts for [[/gmr 1d6 #rounds]]{1d6 rounds}. The shroud grants the worm resistance 6 to physical damage, and any creature that ends its turn within the area takes @Damage[2d6[slashing]|options:area-damage] damage (@Check[reflex|dc:24|basic|options:area-effect] save).</p>"
                 },
                 "action->Swallow Whole": {
                     "name": "Swallow Whole",
@@ -3214,7 +3200,7 @@
                 },
                 "action->Tongue Grab": {
                     "name": "Tongue Grab",
-                    "description": "<p>A creature hit by the dust worm's tongue becomes @UUID[Compendium.sf2e.conditions.Item.kWc1fhmv9LBiTuei]{Grabbed}. A creature can sever the tongue with a Strike against AC 21 that deals at least @Damage[14[slashing]] damage. This prevents the worm from using its tongue Strike until it regrows its tongue, which takes 1 day.</p>"
+                    "description": "<p>A creature hit by the dust worm's tongue becomes @UUID[Compendium.sf2e.conditions.Item.kWc1fhmv9LBiTuei]{Grabbed}. A creature can sever the tongue with a Strike against AC 21 that deals at least 14 slashing damage. This prevents the worm from using its tongue Strike until it regrows its tongue, which takes 1 day.</p>"
                 },
                 "action->Tongue Reel": {
                     "name": "Tongue Reel",
@@ -3251,11 +3237,11 @@
                 },
                 "action->Electromagnetic Surge": {
                     "name": "Electromagnetic Surge",
-                    "description": "<p>The dust worm augur emits a concentrated wave of electromagnetism in a @Template[type:cone|distance:50]. Each creature in the area must attempt a @Check[fortitude|dc:40] save. A creature with the tech trait uses the outcome one degree of success worse than the result of its roll.</p><hr /><p><strong>Critical Success</strong> The creature is unaffected and becomes immune to Electromagnetic Surge for 1 hour.</p>\n<p><strong>Success</strong> The creature's items with the tech trait become glitching 1 for 1 round.</p>\n<p><strong>Failure</strong> The creature becomes @UUID[Compendium.sf2e.conditions.Item.dfCMdR4wnpbYNTix]{Stunned 1}, and its items with the tech trait become glitching 2 for 1 minute. A creature with the tech trait also gains this glitching condition.</p>\n<p><strong>Critical Failure</strong> The creature becomes @UUID[Compendium.sf2e.conditions.Item.6uEgoh53GbXuHpTF]{Paralyzed} for 1 round, and its items with the tech trait become glitching 3 for 10 minutes. A creature with the tech trait also gains this glitching condition.</p>"
+                    "description": "<p>The dust worm augur emits a concentrated wave of electromagnetism in a @Template[type:cone|distance:50]. Each creature in the area must attempt a @Check[fortitude|dc:40|options:area-effect,inflicts:glitching,inflicts:stunned,inflicts:paralyzed] save. A creature with the tech trait uses the outcome one degree of success worse than the result of its roll.</p><hr /><p><strong>Critical Success</strong> The creature is unaffected and becomes immune to Electromagnetic Surge for 1 hour.</p>\n<p><strong>Success</strong> The creature's items with the tech trait become @UUID[Compendium.sf2e.conditions.Item.6A2QDy8wRGCVQsSd]{Glitching 1} for 1 round.</p>\n<p><strong>Failure</strong> The creature becomes @UUID[Compendium.sf2e.conditions.Item.dfCMdR4wnpbYNTix]{Stunned 1}, and its items with the tech trait become @UUID[Compendium.sf2e.conditions.Item.6A2QDy8wRGCVQsSd]{Glitching 2} for 1 minute. A creature with the tech trait also gains this glitching condition.</p>\n<p><strong>Critical Failure</strong> The creature becomes @UUID[Compendium.sf2e.conditions.Item.6uEgoh53GbXuHpTF]{Paralyzed} for 1 round, and its items with the tech trait become @UUID[Compendium.sf2e.conditions.Item.6A2QDy8wRGCVQsSd]{Glitching 3} for 10 minutes. A creature with the tech trait also gains this glitching condition.</p>"
                 },
                 "action->Sandstorm Vortex": {
                     "name": "Sandstorm Vortex",
-                    "description": "<p>The dust worm augur conjures a hurricane of sand and metallic bits in a @Template[type:emanation|distance:15]. This vortex moves with the worm and lasts for 1 minute. The vortex grants the worm resistance 11 to physical damage and makes any creature inside of it @UUID[Compendium.sf2e.conditions.Item.iU0fEDdBp3rXpTMC]{Hidden} to creatures outside of it, and vice versa. Any creature that enters or starts its turn within the vortex must attempt a @Check[fortitude|dc:40] save.</p><hr /><p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature takes @Damage[3d10[slashing]|options:area-damage] damage.</p>\n<p><strong>Failure</strong> The creature takes @Damage[6d10[slashing]|options:area-damage] damage and takes a –15-foot status penalty to all Speeds while within the vortex.</p>\n<p><strong>Critical Failure</strong> As failure, but @Damage[12d10[slashing]|options:area-damage] damage, and the creature is also knocked @UUID[Compendium.sf2e.conditions.Item.j91X7x0XSomq8d60]{Prone}.</p>"
+                    "description": "<p>The dust worm augur conjures a hurricane of sand and metallic bits in a @Template[type:emanation|distance:15]. This vortex moves with the worm and lasts for 1 minute. The vortex grants the worm resistance 11 to physical damage and makes any creature inside of it @UUID[Compendium.sf2e.conditions.Item.iU0fEDdBp3rXpTMC]{Hidden} to creatures outside of it, and vice versa. Any creature that enters or starts its turn within the vortex must attempt a @Check[fortitude|dc:40|options:area-effect] save.</p><hr /><p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature takes @Damage[3d10[slashing]|options:area-damage] damage.</p>\n<p><strong>Failure</strong> The creature takes @Damage[6d10[slashing]|options:area-damage] damage and takes a –15-foot status penalty to all Speeds while within the vortex.</p>\n<p><strong>Critical Failure</strong> As failure, but @Damage[12d10[slashing]|options:area-damage] damage, and the creature is also knocked @UUID[Compendium.sf2e.conditions.Item.j91X7x0XSomq8d60]{Prone}.</p>"
                 },
                 "action->Swallow Whole": {
                     "name": "Swallow Whole",
@@ -3263,7 +3249,7 @@
                 },
                 "action->Tongue Grab": {
                     "name": "Tongue Grab",
-                    "description": "<p>A creature hit by the dust worm augur's tongue becomes @UUID[Compendium.sf2e.conditions.Item.kWc1fhmv9LBiTuei]{Grabbed}. A creature can sever the tongue with a Strike against AC 42 that deals at least @Damage[38[slashing]] damage. This prevents the worm from using its tongue Strike until it regrows its tongue, which takes 1 day.</p>"
+                    "description": "<p>A creature hit by the dust worm augur's tongue becomes @UUID[Compendium.sf2e.conditions.Item.kWc1fhmv9LBiTuei]{Grabbed}. A creature can sever the tongue with a Strike against AC 42 that deals at least 38 slashing damage. This prevents the worm from using its tongue Strike until it regrows its tongue, which takes 1 day.</p>"
                 },
                 "action->Tongue Reel": {
                     "name": "Tongue Reel",
@@ -3284,11 +3270,11 @@
                 },
                 "action->Mycelium Network": {
                     "name": "Mycelium Network",
-                    "description": "<p>Psychic fungi are connected to a network of psychic filaments bonding all psychic fungi from the same colony. This network grants the harvester the ability to detect creatures capable of thought within 30 feet of a bonded psychic fungus up to 1,000 feet away as an imprecise sense.</p>"
+                    "description": "<p>Psychic fungi are connected to a network of psychic filaments bonding all psychic fungi from the same colony. This network grants the elder the ability to detect creatures capable of thought within 30 feet of a bonded psychic fungus up to 1,000 feet away as an imprecise sense.</p>"
                 },
                 "action->Release Spores": {
                     "name": "Release Spores",
-                    "description": "<p><strong>Trigger</strong> The harvester is reduced to 0 Hit Points</p><hr /><p><strong>Effect</strong> The harvester releases a cloud of spores in a @Template[type:burst|distance:10] centered on a corner of its own space that lasts for 1 round. Each creature that's in the cloud or enters it is exposed to befuddling spores. If this reaction was triggered by damage from a melee attack, the triggering creature uses the outcome one degree of success worse than the result of its roll for its Fortitude save (two degrees worse if it was a jaws Strike or other Strike with the creature's mouth).</p>"
+                    "description": "<p><strong>Trigger</strong> The elder is reduced to 0 Hit Points</p><hr /><p><strong>Effect</strong> The elder releases a cloud of spores in a @Template[type:burst|distance:10] centered on a corner of its own space that lasts for 1 round. Each creature that's in the cloud or enters it is exposed to befuddling spores. If this reaction was triggered by damage from a melee attack, the triggering creature uses the outcome one degree of success worse than the result of its roll for its Fortitude save (two degrees worse if it was a jaws Strike or other Strike with the creature's mouth).</p>"
                 },
                 "action->Befuddling Spores": {
                     "name": "Befuddling Spores",
@@ -3320,7 +3306,7 @@
                 },
                 "action->Electrical Discharge": {
                     "name": "Electrical Discharge",
-                    "description": "<p><strong>Effect</strong> The electrovore unleashes a shock wave that deals @Damage[2d6[electricity]|options:area-damage] damage to creatures in a @Template[type:emanation|distance:10] (@Check[reflex|dc:15]). It can't use Electrical Discharge again for [[/gmr 1d4 #Recharge Electrical Discharge]]{1d4 rounds}.</p><hr /><p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target takes half damage. Items in its possession with the tech trait becomes glitching 1. If the target has the tech trait, it becomes @UUID[Compendium.sf2e.conditions.Item.6A2QDy8wRGCVQsSd]{Glitching 1}.</p>\n<p><strong>Failure</strong> As success, but full damage and @UUID[Compendium.sf2e.conditions.Item.6A2QDy8wRGCVQsSd]{Glitching 2}.</p>\n<p><strong>Critical Failure</strong> As success, but double damage and @UUID[Compendium.sf2e.conditions.Item.6A2QDy8wRGCVQsSd]{Glitching 3}.</p>"
+                    "description": "<p><strong>Effect</strong> The electrovore unleashes a shock wave that deals @Damage[2d6[electricity]|options:area-damage] damage to creatures in a @Template[type:emanation|distance:10] (@Check[reflex|dc:15|options:inflicts:glitching]). It can't use Electrical Discharge again for [[/gmr 1d4 #Recharge Electrical Discharge]]{1d4 rounds}.</p><hr /><p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target takes half damage. Items in its possession with the tech trait becomes glitching 1. If the target has the tech trait, it becomes @UUID[Compendium.sf2e.conditions.Item.6A2QDy8wRGCVQsSd]{Glitching 1}.</p>\n<p><strong>Failure</strong> As success, but full damage and @UUID[Compendium.sf2e.conditions.Item.6A2QDy8wRGCVQsSd]{Glitching 2}.</p>\n<p><strong>Critical Failure</strong> As success, but double damage and @UUID[Compendium.sf2e.conditions.Item.6A2QDy8wRGCVQsSd]{Glitching 3}.</p>"
                 },
                 "action->Siphon": {
                     "name": "Siphon",
@@ -3339,13 +3325,6 @@
                 "weapon->Integrated Advanced Semi-Auto Pistol": {
                     "name": "Integrated Advanced Semi-Auto Pistol",
                     "description": "<p><strong>Upgrades:</strong> 1</p><hr /><p>This pistol automatically ejects used cartridges and loads new ammunition after every shot fired.</p>"
-                },
-                "weapon->Shirren-eye Rifle": {
-                    "name": "Shirren-eye Rifle",
-                    "description": "<p><strong>Upgrades:</strong> 1</p><hr /><p>This sniper rifle comes with a compound technological scope that allows snipers to adjust focus and magnification with natural eye movements instead of using moving parts that might disrupt their aim.</p>"
-                },
-                "ammo->Projectile Ammo": {
-                    "name": "Projectile Ammo"
                 },
                 "strike-melee->Nano-edge Rapier": {
                     "name": "Nano-edge Rapier"
@@ -3389,7 +3368,7 @@
         "Elindrian Acolyte": {
             "name": "Elindrian Acolyte",
             "publicNotes": "<p>These elindrians are the rank-and-file worshippers of the Terror of Ukulam. Recently risen from the dead by some primal force or occult upheaval—no one is sure—they single-mindedly pursue their grisly task of unearthing fellow elindrians across Castrovel; many others have risen from the dead, but most still remain buried. They stop only to attack other living creatures that intervene.</p><hr /><p>The people known as elindrians vanished eons ago into desolate husk-hives beneath the surface of the planet Castrovel. Until recently, they were creatures of legend, existing only in the most obscure formian histories. Now, scholars on Castrovel desperately search for additional records about elindrians, their origins, and—most importantly—the truth about their connection to the terrifying ooze-like creature that recently descended from their moon, Elindrae. One theory is that elindrians share some primal bond with the ooze-thing called the Terror of Ukulam, and perhaps both originate from Elindrae—other theories claim that elindrians created the ooze in the first place or that they're distant cousins to formians, corrupted by the Terror long ago.</p>",
-            "languagesDetails": "Elindrian, Telepathy 60 feet page 210",
+            "languagesDetails": "Telepathy 60 feet",
             "items": {
                 "spellcastingEntry->Occult Prepared Spells": {
                     "name": "Occult Prepared Spells"
@@ -3397,26 +3376,35 @@
                 "strike-melee->Chitin Blade": {
                     "name": "Chitin Blade"
                 },
+                "action->Telepathy": {
+                    "name": "Telepathy",
+                    "description": "<p>60 feet</p>\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Telepathy]</p>"
+                },
                 "action->Husk Mind": {
                     "name": "Husk Mind",
-                    "description": "<p>Elindrians can communicate nearly instantaneously via a primal bond similar to a formian hive mind. While within telepathic range of at least one other elindrian with husk mind, an elindrian acolyte gains a +2 circumstance bonus to initiative rolls, Perception checks, and saving throws against mental effects. If one elindrian is aware of a combatant, all members of the husk mind within range are aware of it.</p>\n<p>The elindrian's husk mind is integrated with their scent; for purposes of detecting other elindrians, formians, undead, or corpses, their scent is a precise sense, rather than imprecise.</p>\n<p>An elindrian always knows the precise distance and direction to the Terror of Ukulam, so long as they're on the same plane of existence.</p>"
+                    "description": "<p>Elindrians can communicate nearly instantaneously via a primal bond similar to a formian hive mind. While within telepathic range of at least one other elindrian with husk mind, an elindrian acolyte gains a +2 circumstance bonus to initiative rolls, Perception checks, and saving throws against mental effects. If one elindrian is aware of a combatant, all members of the husk mind within range are aware of it.</p>\n<p>The elindrian's husk mind is integrated with their scent; for purposes of detecting other elindrians, formians, undead, or corpses, their scent is a precise sense, rather than imprecise.</p>\n<p>An elindrian always knows the precise distance and direction to the @UUID[Compendium.sf2e.alien-core-bestiary.Actor.BFtNnevWKUCnocyn]{Terror of Ukulam}, so long as they're on the same plane of existence.</p>"
                 },
                 "action->Unfetter Allies": {
                     "name": "Unfetter Allies",
                     "description": "<p>While the elindrian acolyte is within 30 feet of another elindrian who's unable to move or act normally (such as if they're buried, @UUID[Compendium.sf2e.conditions.Item.eIcWbB5o3pP6OIMe]{Immobilized}, @UUID[Compendium.sf2e.conditions.Item.kWc1fhmv9LBiTuei]{Grabbed}, @UUID[Compendium.sf2e.conditions.Item.6uEgoh53GbXuHpTF]{Paralyzed}, @UUID[Compendium.sf2e.conditions.Item.VcDeM8A5oI6VqhbM]{Restrained}, stunned, or otherwise impeded), the elindrian acolyte becomes @UUID[Compendium.sf2e.conditions.Item.nlCjDvLMf2EkV2dl]{Quickened} 1 and can use the extra action to Burrow, Fly, [[/act shove]], Stride, or Strike.</p>"
+                },
+                "lore->Elindrian Lore": {
+                    "name": "Elindrian Lore"
                 }
             }
         },
         "Elindrian Celebrant": {
             "name": "Elindrian Celebrant",
             "publicNotes": "<p>These elindrian warriors relish violence. Their only motivation seems to be spreading pain, which they themselves are immune to; their nerve endings developed in such a way that they can't feel pain at all, experiencing it in some way that causes them little to no suffering. As long as there's an elindrian queen nearby to revive them, celebrants spend most of their time battling one another, honing their capability to do violence until a better target comes along.</p><hr /><p>The people known as elindrians vanished eons ago into desolate husk-hives beneath the surface of the planet Castrovel. Until recently, they were creatures of legend, existing only in the most obscure formian histories. Now, scholars on Castrovel desperately search for additional records about elindrians, their origins, and—most importantly—the truth about their connection to the terrifying ooze-like creature that recently descended from their moon, Elindrae. One theory is that elindrians share some primal bond with the ooze-thing called the Terror of Ukulam, and perhaps both originate from Elindrae—other theories claim that elindrians created the ooze in the first place or that they're distant cousins to formians, corrupted by the Terror long ago.</p>",
-            "languagesDetails": "Elindrian, Telepathy 120 feet",
+            "languagesDetails": "Telepathy 120 feet",
             "items": {
                 "weapon->Integrated Chitinous Painsaw": {
-                    "name": "Integrated Chitinous Painsaw"
+                    "name": "Integrated Chitinous Painsaw",
+                    "description": "<p>A painsaw functions in all ways like a @UUID[Compendium.sf2e.equipment.Item.eUZcCSon8XlQzOqR]{Painglaive} but doesn't function with normal batteries.</p>"
                 },
                 "ammo->Celebrant Heart Battery": {
-                    "name": "Celebrant Heart Battery"
+                    "name": "Celebrant Heart Battery",
+                    "description": "<p>A single celebrant heart functions as a @UUID[Compendium.sf2e.equipment.Item.5PS5ESGpnQfJNOdg]{tactical battery} when used with a painsaw; it recharges if the celebrant spends 10 minutes in the presence of an @UUID[Compendium.sf2e.alien-core-bestiary.Actor.vEA1FAanv0l7Yz4Z]{Elindrian Queen}.</p>"
                 },
                 "strike-melee->Chitinous Painsaw": {
                     "name": "Chitinous Painsaw"
@@ -3424,9 +3412,13 @@
                 "strike-ranged->Chitin Shard": {
                     "name": "Chitin Shard"
                 },
+                "action->Telepathy": {
+                    "name": "Telepathy",
+                    "description": "<p>120 feet</p>\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Telepathy]</p>"
+                },
                 "action->Husk Mind": {
                     "name": "Husk Mind",
-                    "description": "<p>Elindrians can communicate nearly instantaneously via a primal bond similar to a formian hive mind. While within telepathic range of at least one other elindrian with husk mind, an elindrian acolyte gains a +2 circumstance bonus to initiative rolls, Perception checks, and saving throws against mental effects. If one elindrian is aware of a combatant, all members of the husk mind within range are aware of it.</p>\n<p>The elindrian's husk mind is integrated with their scent; for purposes of detecting other elindrians, formians, undead, or corpses, their scent is a precise sense, rather than imprecise.</p>\n<p>An elindrian always knows the precise distance and direction to the Terror of Ukulam, so long as they're on the same plane of existence.</p>"
+                    "description": "<p>Elindrians can communicate nearly instantaneously via a primal bond similar to a formian hive mind. While within telepathic range of at least one other elindrian with husk mind, an elindrian celebrant gains a +2 circumstance bonus to initiative rolls, Perception checks, and saving throws against mental effects. If one elindrian is aware of a combatant, all members of the husk mind within range are aware of it.</p>\n<p>The elindrian's husk mind is integrated with their scent; for purposes of detecting other elindrians, formians, undead, or corpses, their scent is a precise sense, rather than imprecise.</p>\n<p>An elindrian always knows the precise distance and direction to the @UUID[Compendium.sf2e.alien-core-bestiary.Actor.BFtNnevWKUCnocyn]{Terror of Ukulam}, so long as they're on the same plane of existence.</p>"
                 },
                 "action->Pain Bond": {
                     "name": "Pain Bond",
@@ -3437,7 +3429,7 @@
         "Elindrian Queen": {
             "name": "Elindrian Queen",
             "publicNotes": "<p>While no one has confirmed the existence of elindrian queens, the elindrians' few similarities to formians have led scholars to believe they must exist. Indeed, these formidable matriarchs are the primary force driving elindrians to unite with the Terror of Ukulam.</p><hr /><p>The people known as elindrians vanished eons ago into desolate husk-hives beneath the surface of the planet Castrovel. Until recently, they were creatures of legend, existing only in the most obscure formian histories. Now, scholars on Castrovel desperately search for additional records about elindrians, their origins, and—most importantly—the truth about their connection to the terrifying ooze-like creature that recently descended from their moon, Elindrae. One theory is that elindrians share some primal bond with the ooze-thing called the Terror of Ukulam, and perhaps both originate from Elindrae—other theories claim that elindrians created the ooze in the first place or that they're distant cousins to formians, corrupted by the Terror long ago.</p>",
-            "languagesDetails": "Elindrian, Telepathy 180 feet",
+            "languagesDetails": "Telepathy 180 feet",
             "items": {
                 "spellcastingEntry->Primal Innate Spells": {
                     "name": "Primal Innate Spells"
@@ -3451,9 +3443,13 @@
                 "strike-melee->Claw": {
                     "name": "Claw"
                 },
+                "action->Telepathy": {
+                    "name": "Telepathy",
+                    "description": "<p>180 feet</p>\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Telepathy]</p>"
+                },
                 "action->Husk Mind": {
                     "name": "Husk Mind",
-                    "description": "<p>Elindrians can communicate nearly instantaneously via a primal bond similar to a formian hive mind. While within telepathic range of at least one other elindrian with husk mind, an elindrian acolyte gains a +2 circumstance bonus to initiative rolls, Perception checks, and saving throws against mental effects. If one elindrian is aware of a combatant, all members of the husk mind within range are aware of it.</p>\n<p>The elindrian's husk mind is integrated with their scent; for purposes of detecting other elindrians, formians, undead, or corpses, their scent is a precise sense, rather than imprecise.</p>\n<p>An elindrian always knows the precise distance and direction to the Terror of Ukulam, so long as they're on the same plane of existence.</p>"
+                    "description": "<p>Elindrians can communicate nearly instantaneously via a primal bond similar to a formian hive mind. While within telepathic range of at least one other elindrian with husk mind, an elindrian queen gains a +2 circumstance bonus to initiative rolls, Perception checks, and saving throws against mental effects. If one elindrian is aware of a combatant, all members of the husk mind within range are aware of it.</p>\n<p>The elindrian's husk mind is integrated with their scent; for purposes of detecting other elindrians, formians, undead, or corpses, their scent is a precise sense, rather than imprecise.</p>\n<p>An elindrian always knows the precise distance and direction to the @UUID[Compendium.sf2e.alien-core-bestiary.Actor.BFtNnevWKUCnocyn]{Terror of Ukulam}, so long as they're on the same plane of existence.</p>"
                 },
                 "action->Vision of Elindrae": {
                     "name": "Vision of Elindrae",
@@ -3517,7 +3513,7 @@
                 },
                 "action->Spin Doctor": {
                     "name": "Spin Doctor",
-                    "description": "<p>The emissar commands an ally within 30 feet to ignore a harmful effect and keep fighting. The target gains 2d10 temporary Hit Points for 1 minute and suppresses one condition that's currently affecting it for the next [[/gmr 1d4 #rounds]]{1d4 rounds}, chosen from the following list: @UUID[Compendium.sf2e.conditions.Item.yblD8fOR1J8rDwEQ]{Confused}, @UUID[Compendium.sf2e.conditions.Item.HL2l2VRSaQHu9lUw]{Fatigued}, @UUID[Compendium.sf2e.conditions.Item.sDPxOjQ9kx2RZE8D]{Fleeing}, frightened, or stupefied. The target is then temporarily immune to Spin Doctor for 1 hour.</p>"
+                    "description": "<p>The emissar commands an ally within 30 feet to ignore a harmful effect and keep fighting. The target gains 2d10 temporary Hit Points for 1 minute and suppresses one condition that's currently affecting it for the next [[/gmr 1d4 #rounds]]{1d4 rounds}, chosen from the following list: @UUID[Compendium.sf2e.conditions.Item.yblD8fOR1J8rDwEQ]{Confused}, @UUID[Compendium.sf2e.conditions.Item.HL2l2VRSaQHu9lUw]{Fatigued}, @UUID[Compendium.sf2e.conditions.Item.sDPxOjQ9kx2RZE8D]{Fleeing}, @UUID[Compendium.sf2e.conditions.Item.TBSHQspnbcqxsmjL]{Frightened}, or @UUID[Compendium.sf2e.conditions.Item.e1XGnhKNSQIm5IXg]{Stupefied}. The target is then temporarily immune to Spin Doctor for 1 hour.</p>\n<p>@UUID[Compendium.sf2e.bestiary-effects.Item.ncmWr1EPq7nGErQf]{Effect: Spin Doctor}</p>"
                 }
             }
         },
@@ -3542,9 +3538,6 @@
                     "name": "Infiltrator's Toolkit (Tactical)",
                     "description": "<p>You need an infiltrator's toolkit to @UUID[Compendium.sf2e.actions.Item.2EE4aF4SZpYf0R6H]{Pick Locks} or @UUID[Compendium.sf2e.actions.Item.cYdz2grcOcRt4jk6]{Disable Devices} (of some types) using the Thievery skill. A tactical infiltrator's toolkit adds a +1 item bonus to checks to Pick Locks or Disable Devices.</p>"
                 },
-                "ammo->Projectile Ammo": {
-                    "name": "Projectile Ammo"
-                },
                 "strike-melee->Puzzleblade": {
                     "name": "Puzzleblade"
                 },
@@ -3556,7 +3549,7 @@
                 },
                 "action->Adaptive Disguise": {
                     "name": "Adaptive Disguise",
-                    "description": "<p>An emissary-class infiltrator robot is covered in a layer of synthetic programmable skin that counts as a disguise kit. The robot can alter the skin over the course of a minute to Impersonate a Medium humanoid ancestry or specific person (if it has information about that person or has previously interacted with them). If the robot makes a retractable spike Strike or uses Morphing Visage, it takes a –4 circumstance penalty to its Deception DCs and skill checks to Impersonate against any who witnessed the action</p>"
+                    "description": "<p>An emissary-class infiltrator robot is covered in a layer of synthetic programmable skin that counts as a disguise kit. The robot can alter the skin over the course of a minute to Impersonate a Medium humanoid ancestry or specific person (if it has information about that person or has previously interacted with them). If the robot makes a retractable spike Strike or uses Morphing Visage, it takes a –4 circumstance penalty to its Deception DCs and skill checks to Impersonate against any who witnessed the action.</p>"
                 },
                 "action->Exploit Nausea": {
                     "name": "Exploit Nausea",
@@ -3583,7 +3576,7 @@
                 },
                 "action->Emotionsense": {
                     "name": "Emotionsense",
-                    "description": "<p>This is a precise sense against creatures under an emotion effect or in the grips of overwhelming emotions (at the GM's discretion). Against other creatures, this is an imprecise sense. Creatures immune to emotion or mental effects or under the effects of a calm spell are undetectable by emotionsense.</p>"
+                    "description": "<p>This is a precise sense against creatures under an emotion effect or in the grips of overwhelming emotions (at the GM's discretion). Against other creatures, this is an imprecise sense. Creatures immune to emotion or mental effects or under the effects of a @UUID[Compendium.sf2e.spells.Item.b515AZlB0sridKSq]{Calm} spell are undetectable by emotionsense.</p>"
                 },
                 "action->Moral Support": {
                     "name": "Moral Support",
@@ -3613,15 +3606,6 @@
                 "weapon->Pulsecaster Pistol": {
                     "name": "Pulsecaster Pistol",
                     "description": "<p><strong>Upgrades:</strong> 1</p><hr /><p>This imposing pistol fires a jolt of paralyzing electricity from its barrel. Its remaining charges are visible as glowing lines of energy radiating down its body. Pulsecaster pistols are often used by bounty hunters and law enforcement who need to keep their targets alive.</p>"
-                },
-                "equipment->Comm Unit": {
-                    "name": "Comm Unit",
-                    "description": "<p>A personal comm unit is a pocket-sized device that combines a minor portable computer and a cellular communications device, allowing instantaneous wireless communication with other comm units in both audio- and text-based formats at planetary range. A personal comm unit also includes a calculator, a flashlight (emits bright light in a 5-foot radius around you and dim light in the next 5 feet), a browser that accesses any local infospheres, and several entertainment options (including games).</p>\n<p>Personal comm units integrated into armor have some voice-activated capabilities; you can communicate with other comm units in audio-based formats and receive responses without needing a free hand, but typing a message, browsing the infosphere, or using an app requires the use of at least one hand.</p>\n<p>Comm units that function at longer ranges aren't as portable; they include built-in generators that provide the necessary amount of power and rely on active Drift beacons to communicate. Short-term use of these units can be purchased in most major settlements.</p>",
-                    "rules": {
-                        "1": {
-                            "label": "Comm Unit - Flashlight"
-                        }
-                    }
                 },
                 "ammo->Battery (Commercial)": {
                     "name": "Battery (Commercial)"
@@ -3684,16 +3668,16 @@
                     "name": "Gravity Crash",
                     "description": "<p>A creature critically hit by an enraged noquasar's graviton flare is knocked @UUID[Compendium.sf2e.conditions.Item.j91X7x0XSomq8d60]{Prone}. If the target is flying, it falls up to 30 feet.</p>"
                 },
-                "action->Ionized Plasma Blas": {
-                    "name": "Ionized Plasma Blas",
-                    "description": "<p>The noquasar spark unleashes plasma in a @Template[type:emanation|distance:10] or @Template[type:line|distance:30]. Each creature in the area takes @Damage[3d6[fire]|options:area-damage] damage (@Check[reflex|dc:21|basic] save). A creature that critically fails its save also takes @Damage[1d8[persistent,electricity]|options:area-damage] damage and is knocked @UUID[Compendium.sf2e.conditions.Item.j91X7x0XSomq8d60]{Prone}. The noquasar spark can't use Ionized Plasma Blast again for [[/gmr 1d4 #Recharge Ionized Plasma Blast]]{1d4 rounds}.</p>"
+                "action->Ionized Plasma Blast": {
+                    "name": "Ionized Plasma Blast",
+                    "description": "<p>The enraged noquasar unleashes plasma in a @Template[type:emanation|distance:10] or @Template[type:line|distance:30]. Each creature in the area takes @Damage[3d6[fire]|options:area-damage] damage (@Check[reflex|dc:21|basic|options:area-effect] save). A creature that critically fails its save also takes @Damage[1d8[persistent,electricity]|options:area-damage] damage and is knocked @UUID[Compendium.sf2e.conditions.Item.j91X7x0XSomq8d60]{Prone}. The enraged noquasar can't use Ionized Plasma Blast again for [[/gmr 1d4 #Recharge Ionized Plasma Blast]]{1d4 rounds}.</p>"
                 }
             }
         },
         "Erabryth": {
             "name": "Erabryth",
             "publicNotes": "<p>When androids die or give their bodies up for renewal—a celebrated and respected event akin to procreation—it's the silent and calm erabryths who usher their souls into the Boneyard. Beings of reflection and introspection, these psychopomps help androids come to terms with their choices, reconcile the trying events of their lives, and realize that the time for renewal has finally come.</p>\n<p>Erabryths are lanky and androgynous, with reflective, ribboned flesh and a mirrored disk for a face. They communicate through posture and emotive lights, offering comfort through their soothing, persistent presence.</p><hr /><p>Psychopomps are death's shepherds who safeguard the cycle of life, death, and the afterlife by slaying undead or ushering souls safely through the Boneyard.</p>",
-            "languagesDetails": "Trinary cant speak any language",
+            "languagesDetails": "cant speak any language",
             "items": {
                 "spellcastingEntry->Divine Innate Spells": {
                     "name": "Divine Innate Spells"
@@ -3712,7 +3696,7 @@
                 },
                 "action->Buffering Zone": {
                     "name": "Buffering Zone",
-                    "description": "<p>15 feet. A creature that begins its turn within the area must attempt a @Check[will|dc:14] save.</p><hr /><p><strong>Critical Success</strong> The creature is unaffected and is temporarily immune to buffering zone for 1 day.</p>\n<p><strong>Success</strong> The creature treats the buffering zone as difficult terrain for 1 round.</p>\n<p><strong>Failure</strong> As success, and the creature is pushed back 5 feet and takes a –1 status penalty to attack rolls for 1 round.</p>\n<p><strong>Critical Failure</strong> As failure, but the creature is pushed back beyond the boundary of the buffering zone and can't reenter the buffering zone for 1 round.</p>"
+                    "description": "<p>15 feet. A creature that begins its turn within the area must attempt a @Check[will|dc:14] save.</p><hr /><p><strong>Critical Success</strong> The creature is unaffected and is temporarily immune to buffering zone for 1 day.</p>\n<p><strong>Success</strong> The creature treats the buffering zone as difficult terrain for 1 round.</p>\n<p><strong>Failure</strong> As success, and the creature is pushed back 5 feet and takes a –1 status penalty to attack rolls for 1 round.</p>\n<p>@UUID[Compendium.sf2e.bestiary-effects.Item.X5oMEjGHa8WsCiqW]{Effect: Buffering Zone (Failure)}</p>\n<p><strong>Critical Failure</strong> As failure, but the creature is pushed back beyond the boundary of the buffering zone and can't reenter the buffering zone for 1 round.</p>"
                 },
                 "action->Reflect Aggression": {
                     "name": "Reflect Aggression",
@@ -3720,7 +3704,7 @@
                 },
                 "action->Forced Reflection": {
                     "name": "Forced Reflection",
-                    "description": "<p>The erabryth forces a creature within 60 feet to relive its most painful memories and regrets in an instant, confronting it with it difficult memories to help it reconcile its actions and let go of its pain. The target must attempt a @Check[will|dc:17] save. Regardless of the result, the target is then temporarily immune to Forced Reflection for 1 day.</p><hr /><p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target is @UUID[Compendium.sf2e.conditions.Item.TBSHQspnbcqxsmjL]{Frightened 1}.</p>\n<p><strong>Failure</strong> The target is @UUID[Compendium.sf2e.conditions.Item.dfCMdR4wnpbYNTix]{Stunned 1} and frightened 1.</p>\n<p><strong>Critical Failure</strong> The target is @UUID[Compendium.sf2e.conditions.Item.dfCMdR4wnpbYNTix]{Stunned 2} and @UUID[Compendium.sf2e.conditions.Item.TBSHQspnbcqxsmjL]{Frightened 2}.</p>"
+                    "description": "<p>The erabryth forces a creature within 60 feet to relive its most painful memories and regrets in an instant, confronting it with it difficult memories to help it reconcile its actions and let go of its pain. The target must attempt a @Check[will|dc:17|options:inflicts:frightened,inflicts:stunned] save. Regardless of the result, the target is then temporarily immune to Forced Reflection for 1 day.</p><hr /><p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target is @UUID[Compendium.sf2e.conditions.Item.TBSHQspnbcqxsmjL]{Frightened 1}.</p>\n<p><strong>Failure</strong> The target is @UUID[Compendium.sf2e.conditions.Item.dfCMdR4wnpbYNTix]{Stunned 1} and frightened 1.</p>\n<p><strong>Critical Failure</strong> The target is @UUID[Compendium.sf2e.conditions.Item.dfCMdR4wnpbYNTix]{Stunned 2} and @UUID[Compendium.sf2e.conditions.Item.TBSHQspnbcqxsmjL]{Frightened 2}.</p>"
                 },
                 "action->Shepherd's Touch": {
                     "name": "Shepherd's Touch",
@@ -3767,7 +3751,7 @@
                 },
                 "action->Autoencode": {
                     "name": "Autoencode",
-                    "description": "<p>An excuba's visual appearance is altered when the excuba is perceived by creatures, items, and objects with the tech trait (such as robotic creatures, cameras, and sensors) unless they succeed at a Perception check against the excuba's Deception DC. Excubas in their swarm form appear to be formless shadows and are additionally @UUID[Compendium.sf2e.conditions.Item.DmAIPqOBomZ7H95W]{Concealed}, while excubas in their humanoid forms register as familiar- or unremarkable-looking humanoids.</p>"
+                    "description": "<p>An excuba's visual appearance is altered when the excuba is perceived by creatures, items, and objects with the tech trait (such as robotic creatures, cameras, and sensors) unless they succeed at a @Check[perception|against:deception] check against the excuba's Deception DC. Excubas in their swarm form appear to be formless shadows and are additionally @UUID[Compendium.sf2e.conditions.Item.DmAIPqOBomZ7H95W]{Concealed}, while excubas in their humanoid forms register as familiar- or unremarkable-looking humanoids.</p>"
                 },
                 "action->Data Vault": {
                     "name": "Data Vault",
@@ -3783,7 +3767,7 @@
                 },
                 "action->Swarming Synchronization": {
                     "name": "Swarming Synchronization",
-                    "description": "<p>Each enemy creature in the swarm's space takes @Damage[2d8[sonic]] damage (@Check[reflex|dc:21|basic] save). On a failure, creatures and objects with the tech trait become glitching 1 (or glitching 2 on a critical failure).</p>"
+                    "description": "<p>Each enemy creature in the swarm's space takes @Damage[2d8[sonic]|options:area-damage] damage (@Check[reflex|dc:21|basic|options:area-effect,inflicts:glitching] save). On a failure, creatures and objects with the tech trait become @UUID[Compendium.sf2e.conditions.Item.6A2QDy8wRGCVQsSd]{Glitching 1} (or @UUID[Compendium.sf2e.conditions.Item.6A2QDy8wRGCVQsSd]{Glitching 2} on a critical failure).</p>"
                 },
                 "lore->Drift Lore": {
                     "name": "Drift Lore"
@@ -4060,16 +4044,9 @@
                     "name": "Breaching Gun",
                     "description": "<p><strong>Upgrades:</strong> 1</p><hr /><p>This snub-nosed scattergun is commonly used to blast through doors and walls. Smaller than a reaction breacher, this scattergun is infamous for its mighty recoil.</p>"
                 },
-                "shield->Carbon Shield": {
-                    "name": "Carbon Shield",
-                    "description": "<p>This durable yet lightweight defensive plate comes in a variety of shapes and sizes, and it's often customized with LED displays that broadcast personal insignia or an organization's colors and symbols.</p>"
-                },
                 "armor->Freebooter Armor": {
                     "name": "Freebooter Armor",
                     "description": "<p><strong>Upgrades:</strong> 1</p><hr /><p>Freebooter armor is named for the pirates and outlaws who often wear these outfits. Freebooter armor typically consists of a breastplate worn under a jacket or flight suit, heavy boots and gloves, a helmet, and hidden straps and holsters for concealing weapons.</p>"
-                },
-                "ammo->Projectile Ammo": {
-                    "name": "Projectile Ammo"
                 },
                 "strike-melee->Baton": {
                     "name": "Baton"
@@ -4153,13 +4130,17 @@
             "name": "Garaggakal",
             "publicNotes": "<p>Most garaggakals are around 8 feet tall, weighing 400 pounds, with a 20-foot wingspan. Always on the move, they might find a temporary lair on a broken starship or floating chunk of terrain but are soon off again, in search of a new creature to be their next meal. While one rarely encounters garaggakals in the Universe, it can happen, particularly if their temporary lair exits in the Drift.</p><hr /><p>The Drift is a strange place, and the creatures native to it are stranger still. Garaggakals prove no exception. Shaped vaguely like humanoids, they have arms and legs but also sallow, rubbery skin with long, scaly tails and gauzelike wings. Most horrifyingly, their faces are almost entirely taken up by their enormous, funnel-like mouth, lined with sharp teeth. While they use these mouths for the obvious purpose of biting, they can also use its powerful suction to draw actual life force from their prey.</p>\n<p>Also known as \"Drift wraiths,\" garaggakals hunt down any living creatures that linger too long in the Drift. For garaggakals, anything that isn't a fellow garaggakal is prey. However, they're no mere mindless hunters. Garaggakals are surprisingly intelligent and prefer to dissect victims, learning all about them before eating them. Often, garaggakals take their victims apart while they're still alive. Xenobiologists have determined that garaggakals don't even technically need to eat to survive, so their relentless hunger is seemingly psychological. They do require the energy of the Drift to survive in the absence of food, however, and further need the energy of the Drift to reproduce, seeking out areas of intense radiation to absorb and then build a new offspring from their own cells. Their children are fully grown at creation.</p>\n<p>Garaggakals surprise their prey. They are quite stealthy and can even phase through solid matter, suddenly appearing on the inside of a starship—bad news for whatever living creatures happen to be inside. Con artists sell garaggakal repelling devices for travelers to use while in the Drift to prevent such visits.</p>",
             "sensesDetails": "emotion sense (imprecise) 60 feet, sense through",
-            "languagesDetails": "Garaggakal, Can't speak any language, Telepathy 100 feet",
+            "languagesDetails": "Can't speak any language, Telepathy 100 feet",
             "items": {
                 "strike-melee->Jaws": {
                     "name": "Jaws"
                 },
                 "strike-melee->Spit": {
                     "name": "Spit"
+                },
+                "action->Telepathy": {
+                    "name": "Telepathy",
+                    "description": "<p>100 feet</p>\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Telepathy]</p>"
                 },
                 "action->Emotion Sense": {
                     "name": "Emotion Sense",
@@ -4193,13 +4174,17 @@
             "name": "Garaggakal Polymath",
             "publicNotes": "<p>These garaggakals have lived for centuries and reached sizes greater than 15 feet tall and 1,000 pounds. Garaggakal polymaths have spent their many years tormenting and tearing apart all the creatures they've encountered, and they have extensive recollection of anatomy of a wide variety of living things. They're even crueler than younger garaggakals, taking great delight in causing excruciating pain to their victims before stealing their life force. They travel much further through the Drift than their younger counterparts, driven by their insatiable desire to find and dissect new creatures.</p><hr /><p>The Drift is a strange place, and the creatures native to it are stranger still. Garaggakals prove no exception. Shaped vaguely like humanoids, they have arms and legs but also sallow, rubbery skin with long, scaly tails and gauzelike wings. Most horrifyingly, their faces are almost entirely taken up by their enormous, funnel-like mouth, lined with sharp teeth. While they use these mouths for the obvious purpose of biting, they can also use its powerful suction to draw actual life force from their prey.</p>\n<p>Also known as \"Drift wraiths,\" garaggakals hunt down any living creatures that linger too long in the Drift. For garaggakals, anything that isn't a fellow garaggakal is prey. However, they're no mere mindless hunters. Garaggakals are surprisingly intelligent and prefer to dissect victims, learning all about them before eating them. Often, garaggakals take their victims apart while they're still alive. Xenobiologists have determined that garaggakals don't even technically need to eat to survive, so their relentless hunger is seemingly psychological. They do require the energy of the Drift to survive in the absence of food, however, and further need the energy of the Drift to reproduce, seeking out areas of intense radiation to absorb and then build a new offspring from their own cells. Their children are fully grown at creation.</p>\n<p>Garaggakals surprise their prey. They are quite stealthy and can even phase through solid matter, suddenly appearing on the inside of a starship—bad news for whatever living creatures happen to be inside. Con artists sell garaggakal repelling devices for travelers to use while in the Drift to prevent such visits.</p>",
             "sensesDetails": "emotion sense (imprecise) 60 feet, sense through",
-            "languagesDetails": "Garaggakal, Can't speak any language, Telepathy 100 feet",
+            "languagesDetails": "Can't speak any language, Telepathy 100 feet",
             "items": {
                 "strike-melee->Jaws": {
                     "name": "Jaws"
                 },
                 "strike-melee->Spit": {
                     "name": "Spit"
+                },
+                "action->Telepathy": {
+                    "name": "Telepathy",
+                    "description": "<p>100 feet</p>\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Telepathy]</p>"
                 },
                 "action->Emotion Sense": {
                     "name": "Emotion Sense",
@@ -4436,7 +4421,7 @@
                 },
                 "action->Stench": {
                     "name": "Stench",
-                    "description": "<p>30 feet, @Check[fortitude|dc:29]</p><hr /><p>@Localize[PF2E.NPC.Abilities.Glossary.Stench]</p>"
+                    "description": "<p>30 feet. @Check[fortitude|dc:29|options:area-effect,inflicts:sickened,inflicts:slowed]</p><hr /><p>@Localize[PF2E.NPC.Abilities.Glossary.Stench]</p>"
                 },
                 "action->Compression": {
                     "name": "Compression",
@@ -4485,7 +4470,7 @@
                 },
                 "action->Stench": {
                     "name": "Stench",
-                    "description": "<p>30 feet, @Check[fortitude|dc:34]</p><hr /><p>@Localize[PF2E.NPC.Abilities.Glossary.Stench]</p>"
+                    "description": "<p>30 feet. @Check[fortitude|dc:34|options:area-effect,inflicts:sickened,inflicts:slowed]</p><hr /><p>@Localize[PF2E.NPC.Abilities.Glossary.Stench]</p>"
                 },
                 "action->Expand": {
                     "name": "Expand",
@@ -4794,10 +4779,6 @@
                     "name": "Tempweave",
                     "description": "<p><strong>Upgrades:</strong> 1</p><hr /><p>Tempweave suits are reinforced hooded garments woven with thermal fabric and venting wires, popularly worn for trips to humid climates like the jungles of Castrovel or Pulonis.</p>"
                 },
-                "equipment->Jump Jets": {
-                    "name": "Jump Jets",
-                    "description": "<p>Boosters attached to your armor supercharge your leap.</p><hr /><p><strong>Activate—Jump</strong> <span class=\"action-glyph\">1</span> (manipulate)</p>\n<p><strong>Frequency</strong> once per round</p>\n<p><strong>Effect</strong> You activate the jump jets to get a quick boost. You Fly up to 20 feet with a maximum height of 10 feet, or you Fly up to 20 feet straight up. You must land at the end of this movement or fall. Jump jets can't lift you if you're encumbered.</p>"
-                },
                 "ammo->Battery (Tactical)": {
                     "name": "Battery (Tactical)"
                 },
@@ -4867,7 +4848,7 @@
                 },
                 "action->Frightful Presence": {
                     "name": "Frightful Presence",
-                    "description": "<p>90 feet. @Check[will|dc:25|options:area-effect,inflicts:frightened]</p><hr /><p>@Localize[PF2E.NPC.Abilities.Glossary.FrightfulPresence]</p>"
+                    "description": "<p>90 feet. @Check[will|dc:30|options:area-effect,inflicts:frightened]</p><hr /><p>@Localize[PF2E.NPC.Abilities.Glossary.FrightfulPresence]</p>"
                 },
                 "action->+2 status to all saves vs. mental": {
                     "name": "+2 status to all saves vs. mental"
@@ -4928,7 +4909,7 @@
                 },
                 "action->Frightful Presence": {
                     "name": "Frightful Presence",
-                    "description": "<p>90 feet. @Check[will|dc:25|options:area-effect,inflicts:frightened]</p><hr /><p>@Localize[PF2E.NPC.Abilities.Glossary.FrightfulPresence]</p>"
+                    "description": "<p>90 feet. @Check[will|dc:30|options:area-effect,inflicts:frightened]</p><hr /><p>@Localize[PF2E.NPC.Abilities.Glossary.FrightfulPresence]</p>"
                 },
                 "action->+2 status to all saves vs. mental": {
                     "name": "+2 status to all saves vs. mental"
@@ -4978,7 +4959,7 @@
                 },
                 "action->Frightful Presence": {
                     "name": "Frightful Presence",
-                    "description": "<p>90 feet. @Check[will|dc:25|options:area-effect,inflicts:frightened]</p><hr /><p>@Localize[PF2E.NPC.Abilities.Glossary.FrightfulPresence]</p>"
+                    "description": "<p>90 feet. @Check[will|dc:37|options:area-effect,inflicts:frightened]</p><hr /><p>@Localize[PF2E.NPC.Abilities.Glossary.FrightfulPresence]</p>"
                 },
                 "action->+2 status to all saves vs. mental": {
                     "name": "+2 status to all saves vs. mental"
@@ -5043,7 +5024,7 @@
                 },
                 "action->Frightful Presence": {
                     "name": "Frightful Presence",
-                    "description": "<p>90 feet. @Check[will|dc:25|options:area-effect,inflicts:frightened]</p><hr /><p>@Localize[PF2E.NPC.Abilities.Glossary.FrightfulPresence]</p>"
+                    "description": "<p>90 feet. @Check[will|dc:37|options:area-effect,inflicts:frightened]</p><hr /><p>@Localize[PF2E.NPC.Abilities.Glossary.FrightfulPresence]</p>"
                 },
                 "action->+2 status to all saves vs. mental": {
                     "name": "+2 status to all saves vs. mental"
@@ -5241,7 +5222,7 @@
                     "description": "<p>The ignurso is immune environmental fire damage and fatigue from to heat and lava</p>",
                     "rules": {
                         "0": {
-                            "label": "lavaproof"
+                            "label": "SF2E.NPCAbility.Ignurso.Lavaproof.ImmunityLabel"
                         }
                     }
                 },
@@ -5270,31 +5251,31 @@
             "name": "Illumantula",
             "publicNotes": "<p>Though it only recently appeared in the shattered red deserts of the planet Akiton, the so-called illumantula has already become the stuff of local legend and folklore. Emerging shortly after the crash of the mysterious First Ones vessel now only known as the Wreck of the Returned, the illumantula was so named by the shobhad desert guides who first encountered the creature and compared it to the deadly spiders of the Akitonian glaciers. Other Pact Worlds citizens have taken to the name, as the closest descriptive title for the being has simply been \"a spider made of light.\"</p>\n<p>Content—for now—to spend its days wandering the Wreck of the Returned and the immediately surrounding area, the illumantula has only had a handful of meaningful engagements since its appearance. The first was against a group of Hellknights of the Order of the Eclipse, where the illumantula systematically unmade 80 of their best-trained troops in under two minutes. Only weeks after the engagement, a group of Stewards attempting to enter the Wreck of the Returned were discovered and engaged at the periphery of the illumantula's patrol path. Only two of 12 commandos managed to escape, and their accounts of the illumantula and its powers are contradictory, leaving the Stewards unable to make effective plans for further encounters.</p>\n<p>A strict quarantine has been set up to match the illumantula's patrol path, as calculated by the meticulous anacites of Investigation Site <strong>A01</strong>. The Aballonian constructs know the being to be related to the First Ones and dedicate their time to finding a means of communicating with the swarm of technological bits that patrol the outer wastes of the crashed starship. So far, they've had no success, and they've sent out an urgent call for linguistics and computers experts from across the Pact Worlds to travel to Akiton and aid their research.</p>\n<p>Where the anacites continue their experiments, scholars of Eloritu have uncovered a disturbing connection between the illumantula and the concept of alternate realities. Somehow, the actions of the illumantula produce fixed points in reality, where the unique powers of creatures with greater connections to the multiverse are somehow stymied or forced to adhere to the illumantula's will. The reason for this phenomenon remains a mystery, though one the anacites seem blissfully ignorant to explore.</p>\n<p>The appearance of the illumantula has led to the belief that it's a protector for the ancient technology of the mysterious First Ones. Similarities between the illumantula's technological bits and extracted data from Aballon have all but confirmed this theory. However, the association begs the question: is there just one illumantula, or is it merely one of many such highly advanced guardian constructs for the First Ones, a species who might be beyond anything the Pact Worlds could contend with?</p>",
             "speedsDetails": "unfettered movement",
-            "languagesDetails": "First one, Can't speak, Telepathy 300 feet",
+            "languagesDetails": "Can't speak, Telepathy 300 feet",
             "items": {
                 "spellcastingEntry->Occult Innate Spells": {
                     "name": "Occult Innate Spells"
                 },
-                "spell->Promession  (at will)": {
-                    "name": "Promession  (at will)"
+                "spell->Promession (at will)": {
+                    "name": "Promession (at will)"
                 },
-                "spell->Slice Reality  (at will)": {
-                    "name": "Slice Reality  (at will)"
+                "spell->Slice Reality (at will)": {
+                    "name": "Slice Reality (at will)"
                 },
                 "spell->Truesight (constant)": {
                     "name": "Truesight (constant)"
                 },
-                "spell->Control Machine  (at will)": {
-                    "name": "Control Machine  (at will)"
+                "spell->Control Machine (at will)": {
+                    "name": "Control Machine (at will)"
                 },
-                "spell->Unfettered Movement  (constant)": {
-                    "name": "Unfettered Movement  (constant)"
+                "spell->Unfettered Movement (constant)": {
+                    "name": "Unfettered Movement (constant)"
                 },
-                "spell->Electrotether  (at will)": {
-                    "name": "Electrotether  (at will)"
+                "spell->Electrotether (at will)": {
+                    "name": "Electrotether (at will)"
                 },
-                "spell->Dispel Magic  (at will)": {
-                    "name": "Dispel Magic  (at will)"
+                "spell->Dispel Magic (at will)": {
+                    "name": "Dispel Magic (at will)"
                 },
                 "effect->Spell Effect: Unfettered Movement": {
                     "name": "Spell Effect: Unfettered Movement",
@@ -5302,6 +5283,10 @@
                 },
                 "strike-melee->Transreality Beam": {
                     "name": "Transreality Beam"
+                },
+                "action->Telepathy": {
+                    "name": "Telepathy",
+                    "description": "<p>300 feet</p>\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Telepathy]</p>"
                 },
                 "action->Mutable Form": {
                     "name": "Mutable Form",
@@ -5316,7 +5301,7 @@
                     "description": "<p>Creatures sharing a space with the illumantula can't use any actions or abilities with the fortune trait. A creature beginning its turn within the illumantula's space can't use actions or ability with the fortune trait until the end of their turn. The illumantula has weakness 10 against any ability or action affected by the fortune trait that successfully damages it.</p>",
                     "rules": {
                         "0": {
-                            "label": "fortune"
+                            "label": "SF2E.NPCAbility.Illumantula.RelativityField.WeaknessLabel"
                         }
                     }
                 },
@@ -5658,9 +5643,6 @@
                     "name": "Assassin Rifle",
                     "description": "<p><strong>Upgrades:</strong> 1</p><hr /><p>This sniper rifle breaks down into small parts, allowing its wielder to smuggle the weapon without attracting attention. Most assassin rifles are equipped with powerful scopes and digital sights.</p>"
                 },
-                "ammo->Projectile Ammo": {
-                    "name": "Projectile Ammo"
-                },
                 "strike-melee->Claw": {
                     "name": "Claw"
                 },
@@ -5869,10 +5851,6 @@
                     "name": "Integrated Commercial Hammer",
                     "description": "<p><strong>Upgrades:</strong> 1</p><hr /><p>Valued as both a crafting tool and an effective weapon, this hammer uses specially weighted heads and handles to deliver maximum force with each strike.</p>"
                 },
-                "weapon->Laser Rifle": {
-                    "name": "Laser Rifle",
-                    "description": "<p><strong>Upgrades:</strong> 1</p><hr /><p>These dependable, mass-produced rifles shoot concentrated beams of energy out of square-shaped barrels. The universal standard Pact Worlds model is highly modifiable and designed to function with a variety of accessories and upgrades, with wielders adapting the laser rifle to their preferences and even kit-bashing it into a nearly unrecognizable weapon.</p>"
-                },
                 "ammo->Battery (Commercial)": {
                     "name": "Battery (Commercial)"
                 },
@@ -6079,15 +6057,6 @@
             "publicNotes": "<p>Hollow-eyed undead born from those who died obsessing over social media, necrolinked wights wander both the living and virtual worlds, desperate for engagement and relevance. They're incapable of seeing living creatures as anything more than potential followers, hunting those who engage with technology in the hopes of turning them into obsessed fans. They constantly wail in a condensed magitech code as though screeching at some long-forgotten online debate in an attempt to grab the attention of others by overriding devices with content supernaturally configured to vie for attention. Yet as soon as their victims become necrolinked, they lose interest, driven by the same dark necrotic algorithm.</p>",
             "acDetails": "special",
             "items": {
-                "equipment->Comm Unit": {
-                    "name": "Comm Unit",
-                    "description": "<p>A personal comm unit is a pocket-sized device that combines a minor portable computer and a cellular communications device, allowing instantaneous wireless communication with other comm units in both audio- and text-based formats at planetary range. A personal comm unit also includes a calculator, a flashlight (emits bright light in a 5-foot radius around you and dim light in the next 5 feet), a browser that accesses any local infospheres, and several entertainment options (including games).</p>\n<p>Personal comm units integrated into armor have some voice-activated capabilities; you can communicate with other comm units in audio-based formats and receive responses without needing a free hand, but typing a message, browsing the infosphere, or using an app requires the use of at least one hand.</p>\n<p>Comm units that function at longer ranges aren't as portable; they include built-in generators that provide the necessary amount of power and rely on active Drift beacons to communicate. Short-term use of these units can be purchased in most major settlements.</p>",
-                    "rules": {
-                        "1": {
-                            "label": "Comm Unit - Flashlight"
-                        }
-                    }
-                },
                 "strike-melee->Shriek": {
                     "name": "Shriek"
                 },
@@ -6341,7 +6310,6 @@
         "Oma": {
             "name": "Oma",
             "publicNotes": "<p>Also known as space whales, omas project powerful magical electromagnetic fields that protect them from both vacuum and toxic atmospheres while allowing them to feed. Omas gain sustenance from the particulate rings and dense atmospheres of gas giants, although exactly which substances are nutritious to an oma is still unknown. Studying a feeding oma isn't without danger. Omas sometimes accidentally swallow drones and small starships, such as fighters and interceptors, and they've been known to do so deliberately when provoked.</p>\n<p>Most omas have been observed traveling alone. On occasion, omas form pods of three to five individuals and migrate across systems, on currents and schedules only they know. In very rare cases, omas gather among the rings of a planet in massive numbers. Their energy fields intermingle and react with local gases to light up large areas of space in a multicolored show.</p>\n<p>Their most enigmatic yet well known feature is their starsong. Traveling through space for billions of miles, the starsong is a haunting telepathic melody. Most people perceive starsong as crooning, slow and mournful. No one can agree on the details, suggesting that each listener hears something different. Attempts to translate starsong have failed thus far, stumping even the most brilliant magic and linguistics experts. Since the Drift Crisis, for unknown reasons pods of omas have begun bombarding Drift beacons with a seemingly new starsong frequency, in some cases causing catastrophic malfunctions.</p>",
-            "languagesDetails": "Starsong",
             "items": {
                 "spellcastingEntry->Primal Innate Spells": {
                     "name": "Primal Innate Spells"
@@ -6509,7 +6477,7 @@
             "publicNotes": "<p>The menacing war machines known as the oscriss are found only in the ancient sites associated with the First Ones. Resembling two stacked pyramids with a white energy core of unknown composition, oscriss infuriate foes by routinely teleporting across the battlefield. Found wandering alone throughout Aballon's First One cities, the war machines were later identified in locations outside the Pact Worlds, lending credence to theories of the First Ones' expansion efforts throughout the cosmos.</p>\n<p>The oscriss defy proper engagement, staying far away from their foes and unleashing coruscating beams of energy that slice off the limbs of those unlucky enough to engage with them. They meticulously render their foes apart at extreme range using pinpoint accuracy. If pressured into a close-range engagement, they can unleash a blast of chronal energy to slow their attackers and allow themselves the time to better reposition and continue their dismembering bombardment.</p>\n<p>Like other constructs of the First Ones, these guardians refuse to communicate and defy almost all attempts to override or hack their programming. Some of the galaxy's finest minds have managed to temporarily overcome the intricate programming within the oscriss, though such intrusions are quickly detected and repelled, indicating that an evolving intelligence dwells within each of the strange machines.</p>\n<p>When engaged at multiple vectors, it becomes easy to overwhelm an oscriss's detection grid and reactions. Anacite scholars propose that the constructs were fashioned to battle foes who engaged strictly in two-dimensional warfare, and while the oscriss themselves are exceptionally capable of acting in three dimensions, they battle as though their foes could engage them only in two.</p>\n<p>It's speculated that the unique tactics and weapons employed by the oscriss are intended to deal with one specific threat: the planashars of the Planashar Dominion. The planashars hail from a different reality known as the Infinite Loop that has only two dimensions. They've recently slowly begun invading the galaxy, taking on the title of Those Who Converge and attacking Aballonian First Ones cities and the solar settlement of Noma. That the oscriss are intended to battle them only provides more evidence of some connection between the planashars and the First Ones.</p>\n<p>Because the oscriss are accustomed to fighting beings that exist only in two-dimensional space, they're vulnerable to tactics involving three dimensions—attacking from multiple angles, for example. While an oscriss doesn't entirely understand such tactics, they can sense when they're being outmaneuvered with three-dimensional thinking and use their potent teleportation abilities to move into a less vulnerable position at every opportunity.</p>",
             "allSavesBonus": "+1 status to all saves vs. magic",
             "speedsDetails": "hover; passing through",
-            "languagesDetails": "First one cant speak any languages, Telepathy 300 feet",
+            "languagesDetails": "cant speak any languages, Telepathy 300 feet",
             "items": {
                 "spellcastingEntry->Occult Innate Spells": {
                     "name": "Occult Innate Spells"
@@ -6528,6 +6496,10 @@
                 },
                 "strike-melee->Bifurcating Beam": {
                     "name": "Bifurcating Beam"
+                },
+                "action->Telepathy": {
+                    "name": "Telepathy",
+                    "description": "<p>300 feet</p>\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Telepathy]</p>"
                 },
                 "action->At-Will Spells": {
                     "name": "At-Will Spells"
@@ -6725,10 +6697,6 @@
                 "weapon->Polyglove": {
                     "name": "Polyglove",
                     "description": "<p><strong>Upgrades:</strong> 1</p><hr /><p>This glove features dozens of delicate tools for building or repairing computers and other technological items, requiring an entire hand (or suitable appendage) to manipulate. Overclocking the polyglove's components generates voltage between a wielder's fingertips.</p>"
-                },
-                "armor->Flight Suit": {
-                    "name": "Flight Suit",
-                    "description": "<p><strong>Upgrades:</strong> 0</p><hr /><p>This comfortable coverall is made from lightweight thermal fabric and often adorned with patches displaying personal insignia, military rank, or even favorite bands or sports teams.</p>"
                 },
                 "ammo->Battery (Tactical)": {
                     "name": "Battery (Tactical)"
@@ -6969,11 +6937,11 @@
                 },
                 "action->Mycelium Network": {
                     "name": "Mycelium Network",
-                    "description": "<p>Psychic fungi are connected to a network of psychic filaments bonding all psychic fungi from the same colony. This network grants the harvester the ability to detect creatures capable of thought within 30 feet of a bonded psychic fungus up to 1,000 feet away as an imprecise sense.</p>"
+                    "description": "<p>Psychic fungi are connected to a network of psychic filaments bonding all psychic fungi from the same colony. This network grants the warden the ability to detect creatures capable of thought within 30 feet of a bonded psychic fungus up to 1,000 feet away as an imprecise sense.</p>"
                 },
                 "action->Release Spores": {
                     "name": "Release Spores",
-                    "description": "<p><strong>Trigger</strong> The harvester is reduced to 0 Hit Points</p><hr /><p><strong>Effect</strong> The harvester releases a cloud of spores in a @Template[type:burst|distance:10] centered on a corner of its own space that lasts for 1 round. Each creature that's in the cloud or enters it is exposed to befuddling spores. If this reaction was triggered by damage from a melee attack, the triggering creature uses the outcome one degree of success worse than the result of its roll for its Fortitude save (two degrees worse if it was a jaws Strike or other Strike with the creature's mouth).</p>"
+                    "description": "<p><strong>Trigger</strong> The warden is reduced to 0 Hit Points</p><hr /><p><strong>Effect</strong> The warden releases a cloud of spores in a @Template[type:burst|distance:10] centered on a corner of its own space that lasts for 1 round. Each creature that's in the cloud or enters it is exposed to befuddling spores. If this reaction was triggered by damage from a melee attack, the triggering creature uses the outcome one degree of success worse than the result of its roll for its Fortitude save (two degrees worse if it was a jaws Strike or other Strike with the creature's mouth).</p>"
                 },
                 "action->Befuddling Spores": {
                     "name": "Befuddling Spores",
@@ -7070,7 +7038,7 @@
                 },
                 "action->Soaring Rush": {
                     "name": "Soaring Rush",
-                    "description": "<p>The Ranonek Strides, Climbs, or Leaps twice (in any combination), then makes a claw or jaws Strike at the end of the movement. If it ends this movement by Leaping, the ranonek doesn't begin to fall until the end of the ranonek's turn, but it needs a solid surface to [[/act leap]] from for each Leap.</p>"
+                    "description": "<p>The Ranonek Strides, Climbs, or Leaps twice (in any combination), then makes a claw or jaws Strike at the end of the movement. If it ends this movement by Leaping, the ranonek doesn't begin to fall until the end of the ranonek's turn, but it needs a solid surface to Leap from for each Leap.</p>"
                 },
                 "action->Swallow Whole": {
                     "name": "Swallow Whole",
@@ -7544,10 +7512,6 @@
                     "name": "Aeon Stone (Uplifting)",
                     "description": "<p>Staple items within the Azlanti Star Empire, these gemstones are popular status symbols for adventurers and wealthy collectors. Despite their myriad forms and functions, these stones are purportedly all fragments of crystal tools used by otherworldly entities to build the Universe in ancient times.</p>\n<p>When you invest one of these precisely shaped crystals, the stone orbits your head (or another visible part of your anatomy if you don't have a head) instead of being worn on your body. You can stow an <em>aeon stone</em> with an Interact action, and an orbiting stone can be snatched out of the air with a successful @UUID[Compendium.sf2e.actions.Item.Dt6B1slsBy8ipJu9]{Disarm} action against you. A stowed or removed stone remains invested, but its effects are @UUID[Compendium.sf2e.conditions.Item.enA7BxAjBb7ns1iF]{Suppressed} until you return it to orbit your head again.</p>\n<p>There are various types of <em>aeon stones</em>, each with a different appearance and magical effect. Each <em>aeon stone</em> also gains a resonant power when slotted into specific items, such as weapons with the aeon trait or antique magical devices called <em>wayfinders</em>.</p><hr /><p>This deep-blue prism with cloudy inclusions is light as a feather. Its resonant power gives you a +1 item bonus to Acrobatics checks.</p>\n<p><strong>Activate—Fly Free</strong> <span class=\"action-glyph\">1</span> (concentrate)</p>\n<p><strong>Frequency</strong> once per day</p><hr /><p><strong>Effect</strong> You gain a fly Speed for 1 minute equal to your Speed or 20 feet, whichever is greater.</p>\n<p>@UUID[Compendium.sf2e.equipment-effects.Item.xZ5XMY55S42aGyjg]{Effect: Aeon Stone (Uplifting)}</p>"
                 },
-                "equipment->Darkvision Visor": {
-                    "name": "Darkvision Visor",
-                    "description": "<p>This visor wraps around your visual organs, enhancing your natural senses. You gain darkvision.</p>"
-                },
                 "ammo->Battery (Tactical)": {
                     "name": "Battery (Tactical)"
                 },
@@ -7731,9 +7695,6 @@
                 "equipment->Integrated Infiltrator's Toolkit (Commercial)": {
                     "name": "Integrated Infiltrator's Toolkit (Commercial)",
                     "description": "<p>You need an infiltrator's toolkit to @UUID[Compendium.sf2e.actions.Item.2EE4aF4SZpYf0R6H]{Pick Locks} or @UUID[Compendium.sf2e.actions.Item.cYdz2grcOcRt4jk6]{Disable Devices} (of some types) using the Thievery skill.</p>"
-                },
-                "ammo->Projectile Ammo": {
-                    "name": "Projectile Ammo"
                 },
                 "strike-melee->Crossbolter": {
                     "name": "Crossbolter"
@@ -8493,6 +8454,10 @@
                 "strike-melee->Concentrated Input": {
                     "name": "Concentrated Input"
                 },
+                "action->Telepathy": {
+                    "name": "Telepathy",
+                    "description": "<p>100 feet</p>\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Telepathy]</p>"
+                },
                 "action->Input Overload Aura": {
                     "name": "Input Overload Aura",
                     "description": "<p>20 feet. Enemies in the aura take a –1 status penalty to AC and all saves against sonic effects or effects that alter written or stored data. A creature within this aura attempting to read a document must succeed at a @Check[flat|dc:5] or cannot read the document for the next [[/gmr 1d4+1]]{1d4+1 rounds}.</p>"
@@ -8569,9 +8534,6 @@
                 },
                 "ammo->Battery (Commercial)": {
                     "name": "Battery (Commercial)"
-                },
-                "ammo->Projectile Ammo": {
-                    "name": "Projectile Ammo"
                 },
                 "strike-melee->Painglaive": {
                     "name": "Painglaive"

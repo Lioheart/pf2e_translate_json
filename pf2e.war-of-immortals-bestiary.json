@@ -353,8 +353,23 @@
             "name": "Mythic Ogre Boss",
             "publicNotes": "<p>For ogres, the biggest, strongest, and most violent among them are the ones who claim the right to lead. When such a creature gains mythic power, its cruelty is likely to be matched only by its immense durability. Mythic ogre bosses are capable of felling even mighty and enormous prey like gigantic dinosaurs with their ogre hooks, using preposterously unbelievable strength to drag them down and rend them asunder. If a group of mythic ogre bosses were to band together, they could prove a terrifying threat, conquering villages or even a small city with relative ease. Fortunately, their philosophies of violence and strength over all else means that whenever such beings come into contact, they are far more likely to immediately war with each other to prove who is the strongest.</p>",
             "items": {
+                "weapon->Javelin": {
+                    "name": "Javelin",
+                    "description": "<p>This thin spear is well balanced for throwing but is not designed for melee use.</p>"
+                },
+                "weapon->Gut-Ripper": {
+                    "name": "Gut-Ripper",
+                    "description": "<p>This <em>+1 striking ogre hook</em> causes its owner to dream of past murders conducted with the weapon. <em>Gut-Ripper</em>'s mythic magic is tied to the bloodlust of the ogre boss who was holding it upon becoming mythic. If <em>Gut-Ripper</em> doesn't kill a creature each day by midnight, it becomes a non-magical ogre hook.</p><hr /><p><strong>Activate—Rip Guts! Rip Guts!</strong> <span class=\"action-glyph\">2</span> <strong>Cost</strong> 1 Mythic Point</p>\n<p><strong>Effect</strong> You throw <em>Gut-Ripper</em> in a line of any length up to 60 feet, then it returns to your hands. Each creature in the line takes @Damage[2d10[piercing]|options:area-damage] damage with a @Check[fortitude|dc:25|basic|options:area-effect] save. If there's a creature at the end of the line, you instead make a melee Strike against it with the hook that deals an additional @Damage[2d10[persistent,bleed]] damage. Each time a creature takes this bleed damage, you regain that many HP; this is a healing vitality effect. This activation can't be used again for [[/r 1d4 #Recharge Rip Guts! Rip Guts!]]{1d4 rounds}.</p>"
+                },
+                "armor->Breastplate": {
+                    "name": "Breastplate",
+                    "description": "<p>Though referred to as a breastplate, this type of armor consists of several pieces of plate or @UUID[Compendium.pf2e.equipment-srd.Item.pRoikbRo5HFW6YUB]{Half Plate} armor that protect the torso, chest, neck, and sometimes the hips and lower legs. It strategically grants some of the protection of plate while allowing greater flexibility and speed.</p>"
+                },
                 "strike-melee->Ogre Hook": {
                     "name": "Ogre Hook"
+                },
+                "strike-ranged->Javelin": {
+                    "name": "Javelin"
                 },
                 "action->Titanic Might": {
                     "name": "Titanic Might",
@@ -490,6 +505,10 @@
             "allSavesBonus": "+2 status to all saves vs. emotion; mythic resilience (Will)",
             "languagesDetails": "truespeech",
             "items": {
+                "equipment->Immaculate Instrument": {
+                    "name": "Immaculate Instrument",
+                    "description": "<p>This object, made of silver light, takes the form of a small musical instrument, prop, or other tool associated with a specific art form. The holder of the immaculate instrument never suffers from creative blocks of any kind and their work is always insightful and skilled. A character who uses the immaculate instrument to @UUID[Compendium.pf2e.actionspf2e.Item.EEDElIyin4z60PXx]{Perform} or Craft can attempt the check at mythic proficiency once per month, and as long as they possess their immaculate instrument, they treat any critical failures with these skills as failures.</p><hr /><p><strong>Destruction</strong> If the holder uses the immaculate instrument to intentionally produce a work that is not just mediocre or crass, but one that devalues the public opinion of the art form itself in a showing of at least 100 spectators, the instrument fades away in shame.</p>"
+                },
                 "strike-melee->Soft Touch": {
                     "name": "Soft Touch"
                 },

@@ -22,9 +22,32 @@
             "name": "Adma Heavenstriker",
             "blurb": "Female vishkanya thief",
             "items": {
+                "weapon->Rapier": {
+                    "name": "Rapier",
+                    "description": "<p>The rapier is a long and thin piercing blade with a basket hilt. It is prized among many as a dueling weapon.</p>"
+                },
                 "weapon->Sample 73": {
                     "name": "Sample 73",
                     "description": "<p>Awaiting classification. Synthesized from [redacted] in the Mwangi Expanse. Highly toxic and volatile. DO NOT expose to planar beings and/or forces.</p>"
+                },
+                "armor->Leather Armor": {
+                    "name": "Leather Armor",
+                    "description": "<p>A mix of flexible and molded boiled leather, a suit of this type of armor provides some protection with maximum flexibility.</p>"
+                },
+                "consumable->Giant Scorpion Venom": {
+                    "name": "Giant Scorpion Venom",
+                    "description": "<p>Scorpion venom is excruciating and its effects are somewhat debilitating.</p>\n<hr />\n<p><strong>Activate</strong> <span class=\"action-glyph\">2</span> (manipulate)</p>\n<p><strong>Saving Throw</strong> @Check[fortitude|dc:22]</p>\n<p><strong>Maximum Duration</strong> 6 rounds</p>\n<p><strong>Stage 1</strong> @Damage[2d6[poison]] damage and @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 1} (1 round)</p>\n<p><strong>Stage 2</strong> @Damage[2d8[poison]] damage and @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 1} (1 round)</p>\n<p><strong>Stage 3</strong> @Damage[2d10[poison]] damage and @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 2} (1 round)</p>"
+                },
+                "consumable->Lethargy Poison": {
+                    "name": "Lethargy Poison",
+                    "description": "<p>Lethargy poison is commonly used in hit-and-run tactics by attackers who want their victims alive; the ambusher retreats until the poison sets in and the victim falls unconscious. Further exposure to lethargy poison does not require the target to attempt additional saving throws; only failing an saving throw against an ongoing exposure can progress its stage.</p>\n<hr />\n<p><strong>Activate</strong> <span class=\"action-glyph\">2</span> (manipulate)</p>\n<p><strong>Saving Throw</strong> @Check[fortitude|dc:18]</p>\n<p><strong>Maximum Duration</strong> 4 hours</p>\n<p><strong>Stage 1</strong> @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1} (1 round)</p>\n<p><strong>Stage 2</strong> @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1} (1 minute)</p>\n<p><strong>Stage 3</strong> @UUID[Compendium.pf2e.conditionitems.Item.fBnFDH2MTzgFijKf]{Unconscious} with no Perception check to wake up (1 round)</p>\n<p><strong>Stage 4</strong> @UUID[Compendium.pf2e.conditionitems.Item.fBnFDH2MTzgFijKf]{Unconscious} with no Perception check to wake up ([[/gmr 1d4 #hours]]{1d4 hours}).</p>"
+                },
+                "consumable->Spider Venom": {
+                    "name": "Spider Venom",
+                    "description": "<p>This venom erodes its target's defenses, aiding the spider in securing prey.</p>\n<hr />\n<p><strong>Activate</strong> <span class=\"action-glyph\">2</span> (manipulate)</p>\n<p><strong>Saving Throw</strong> @Check[fortitude|dc:22]</p>\n<p><strong>Maximum Duration</strong> 6 rounds</p>\n<p><strong>Stage 1</strong> @Damage[1d10[poison]] damage and @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 1} (1 round)</p>\n<p><strong>Stage 2</strong> @Damage[1d12[poison]] damage, @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 1}, and @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 2} (1 round)</p>\n<p><strong>Stage 3</strong> @Damage[2d6[poison]] damage, @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 2}, and @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 3} (1 round)</p>"
+                },
+                "strike-melee->Rapier": {
+                    "name": "Rapier"
                 },
                 "strike-melee->Sample 73": {
                     "name": "Sample 73"
@@ -93,9 +116,27 @@
             "blurb": "Variant athamaru hunter",
             "speedsDetails": "smooth swimmer",
             "items": {
+                "weapon->Crossbow": {
+                    "name": "Crossbow",
+                    "description": "<p>This ranged weapon has a bow-like assembly mounted on a handled frame called a tiller. The tiller has a mechanism to lock the bowstring in place, attached to a trigger mechanism that releases the tension and launches a bolt.</p>"
+                },
+                "weapon->Longspear": {
+                    "name": "Longspear",
+                    "description": "<p>This very long spear, sometimes called a pike, is purely for thrusting rather than throwing. Used by many soldiers and city watch for crowd control and defense against charging enemies, it must be wielded with two hands.</p>"
+                },
+                "armor->Scale Mail": {
+                    "name": "Scale Mail",
+                    "description": "<p>Scale mail consists of many metal scales sewn onto a reinforced leather backing, often in the form of a long shirt that protects the torso, arms, and legs.</p>"
+                },
                 "ammo->Fan Bolts": {
                     "name": "Fan Bolts",
                     "description": "<p>Shorter than traditional arrows but similar in construction, bolts are the ammunition used by crossbows.</p>"
+                },
+                "strike-melee->Longspear": {
+                    "name": "Longspear"
+                },
+                "strike-melee->Crossbow": {
+                    "name": "Crossbow"
                 },
                 "action->Diving Reload": {
                     "name": "Diving Reload",
@@ -121,9 +162,27 @@
             "blurb": "Variant weak athamaru hunter",
             "speedsDetails": "smooth swimmer",
             "items": {
+                "weapon->Crossbow": {
+                    "name": "Crossbow",
+                    "description": "<p>This ranged weapon has a bow-like assembly mounted on a handled frame called a tiller. The tiller has a mechanism to lock the bowstring in place, attached to a trigger mechanism that releases the tension and launches a bolt.</p>"
+                },
+                "weapon->Longspear": {
+                    "name": "Longspear",
+                    "description": "<p>This very long spear, sometimes called a pike, is purely for thrusting rather than throwing. Used by many soldiers and city watch for crowd control and defense against charging enemies, it must be wielded with two hands.</p>"
+                },
+                "armor->Scale Mail": {
+                    "name": "Scale Mail",
+                    "description": "<p>Scale mail consists of many metal scales sewn onto a reinforced leather backing, often in the form of a long shirt that protects the torso, arms, and legs.</p>"
+                },
                 "ammo->Fan Bolts": {
                     "name": "Fan Bolts",
                     "description": "<p>Shorter than traditional arrows but similar in construction, bolts are the ammunition used by crossbows.</p>"
+                },
+                "strike-melee->Longspear": {
+                    "name": "Longspear"
+                },
+                "strike-melee->Crossbow": {
+                    "name": "Crossbow"
                 },
                 "action->Diving Reload": {
                     "name": "Diving Reload",
@@ -147,6 +206,17 @@
             "name": "Bartolo Posandi",
             "blurb": "Male human bodyguard",
             "items": {
+                "weapon->Longsword": {
+                    "name": "Longsword",
+                    "description": "<p>Longswords, also known as arming swords, can be one-edged or two-edged swords. Their blades are heavy and they're between 3 and 4 feet in length.</p>"
+                },
+                "armor->Breastplate": {
+                    "name": "Breastplate",
+                    "description": "<p>Though referred to as a breastplate, this type of armor consists of several pieces of plate or @UUID[Compendium.pf2e.equipment-srd.Item.pRoikbRo5HFW6YUB]{Half Plate} armor that protect the torso, chest, neck, and sometimes the hips and lower legs. It strategically grants some of the protection of plate while allowing greater flexibility and speed.</p>"
+                },
+                "strike-melee->Longsword": {
+                    "name": "Longsword"
+                },
                 "strike-melee->Fist": {
                     "name": "Fist"
                 },
@@ -167,6 +237,17 @@
             "name": "Bartolo Posandi (3-4)",
             "blurb": "Male human bodyguard",
             "items": {
+                "weapon->Longsword": {
+                    "name": "Longsword",
+                    "description": "<p>Longswords, also known as arming swords, can be one-edged or two-edged swords. Their blades are heavy and they're between 3 and 4 feet in length.</p>"
+                },
+                "armor->Breastplate": {
+                    "name": "Breastplate",
+                    "description": "<p>Though referred to as a breastplate, this type of armor consists of several pieces of plate or @UUID[Compendium.pf2e.equipment-srd.Item.pRoikbRo5HFW6YUB]{Half Plate} armor that protect the torso, chest, neck, and sometimes the hips and lower legs. It strategically grants some of the protection of plate while allowing greater flexibility and speed.</p>"
+                },
+                "strike-melee->Longsword": {
+                    "name": "Longsword"
+                },
                 "strike-melee->Fist": {
                     "name": "Fist"
                 },
@@ -209,6 +290,10 @@
             "publicNotes": "<p>A ship's boatswain, or bosun, leads the deckhands who maintain the ship.</p><hr /><p>Adventurers may need passage on a swift vessel, or they might face danger from raiders at sea or in coastal settlements.</p>",
             "blurb": "Variant bosun",
             "items": {
+                "weapon->Dagger": {
+                    "name": "Dagger",
+                    "description": "<p>This small, bladed weapon is held in one hand and used to stab a creature in close combat. It can also be thrown.</p>"
+                },
                 "weapon->Naval Pike": {
                     "name": "Naval Pike",
                     "description": "<p>A long metal shaft ending with a metal spike, a spear can be used one-handed as a melee weapon and can be thrown.</p>"
@@ -269,6 +354,10 @@
                 "spellcastingEntry->Arcane Prepared Spells": {
                     "name": "Arcane Prepared Spells"
                 },
+                "weapon->Longspear": {
+                    "name": "Longspear",
+                    "description": "<p>This very long spear, sometimes called a pike, is purely for thrusting rather than throwing. Used by many soldiers and city watch for crowd control and defense against charging enemies, it must be wielded with two hands.</p>"
+                },
                 "armor->Robes": {
                     "name": "Robes",
                     "description": "<p>Explorer's clothing is sturdy enough that it can be reinforced to protect you, even though it isn't a suit of armor. It comes in many forms, though the most common sorts look like clerical vestments, monk's garments, or wizard's robes, as members of all three classes are likely to avoid wearing armor.</p>"
@@ -311,9 +400,38 @@
         "Diabolic Messenger": {
             "name": "Diabolic Messenger",
             "items": {
+                "weapon->Dagger": {
+                    "name": "Dagger",
+                    "description": "<p>This small, bladed weapon is held in one hand and used to stab a creature in close combat. It can also be thrown.</p>"
+                },
+                "weapon->Rapier": {
+                    "name": "Rapier",
+                    "description": "<p>The rapier is a long and thin piercing blade with a basket hilt. It is prized among many as a dueling weapon.</p>"
+                },
+                "armor->Leather Armor": {
+                    "name": "Leather Armor",
+                    "description": "<p>A mix of flexible and molded boiled leather, a suit of this type of armor provides some protection with maximum flexibility.</p>"
+                },
+                "equipment->Disguise Kit": {
+                    "name": "Disguise Kit",
+                    "description": "<p>This small wooden box contains cosmetics, false facial hair, spirit gum, and a few simple wigs. You usually need a disguise kit to set up a disguise in order to Impersonate someone using the Deception skill. If you've crafted a large number of disguises, you can replenish your cosmetics supply with replacement cosmetics suitable for the type of your disguise kit. You can draw and replace a worn disguise kit as part of the action that uses it.</p>"
+                },
                 "equipment->Clothing (Fine)": {
                     "name": "Clothing (Fine)",
                     "description": "<p>Fine clothing, suitable for a noble or royal, is made with expensive fabrics, precious metals, and intricate patterns.</p>"
+                },
+                "equipment->Thieves' Toolkit": {
+                    "name": "Thieves' Toolkit",
+                    "description": "<p>You need a thieves' toolkit to @UUID[Compendium.pf2e.actionspf2e.Item.2EE4aF4SZpYf0R6H]{Pick Locks} or @UUID[Compendium.pf2e.actionspf2e.Item.cYdz2grcOcRt4jk6]{Disable Devices} (of some types) using the Thievery skill.</p>\n<p>If your thieves' toolkit is broken, you can repair it by replacing the lock picks with @UUID[Compendium.pf2e.equipment-srd.Item.Sw7MBLASN3xK4Y44]{Replacement Picks} appropriate to your toolkit; this doesn't require using the Repair action. If you wear your thieves' toolkit, you can draw and replace it as part of the action that uses it.</p>"
+                },
+                "strike-melee->Dagger": {
+                    "name": "Dagger"
+                },
+                "strike-ranged->Dagger": {
+                    "name": "Dagger"
+                },
+                "strike-melee->Rapier": {
+                    "name": "Rapier"
                 },
                 "strike-melee->Fist": {
                     "name": "Fist"
@@ -535,6 +653,25 @@
             "publicNotes": "<p>The theoretical leaders of goblin raids are called goblin commandos. In practice, goblin commandos rarely continue to lead their comrades once a battle has begun. Most shirk their responsibilities in favor of wading into the fray and claiming more glory from their tribe-mates.</p>\n<hr />\n<p>These small humanoids typically have green or gray skin and large heads with wide ears. While some goblins are civilized and have worked hard to be considered upstanding members of humanoid communities, many are impetuous and vicious creatures who delight in wreaking havoc. These goblins think nothing of slaughtering livestock, stealing, or burning down a building purely for momentary delight. They revel in playing malicious tricks on taller humanoids, whom they call \"longshanks.\"</p>\n<p>Goblins are superstitious, with an intense awe of magic and a fascination with fire; goblins who master magic or fire earn great respect from their kin. Most other humanoids find it difficult to understand goblins' outlook: they hate canines but eagerly share their lairs with so-called \"goblin dogs,\" they fearlessly attack larger creatures but are terrified of horses, and they despise vegetables yet consider pickles a delicacy. To a goblin, of course, these are all perfectly sensible life choices.</p>",
             "blurb": "Variant goblin commando",
             "items": {
+                "weapon->Shortbow": {
+                    "name": "Shortbow",
+                    "description": "<p>This smaller bow is made of a single piece of wood and favored by skirmishers and cavalry.</p>"
+                },
+                "weapon->Scimitar": {
+                    "name": "Scimitar",
+                    "description": "<p>This one-handed curved blade is sharp on one side.</p>"
+                },
+                "armor->Leather Armor": {
+                    "name": "Leather Armor",
+                    "description": "<p>A mix of flexible and molded boiled leather, a suit of this type of armor provides some protection with maximum flexibility.</p>"
+                },
+                "ammo->Arrows": {
+                    "name": "Arrows",
+                    "description": "<p>These projectiles are the ammunition for bows. The shaft of an arrow is made of wood. It is stabilized in flight by fletching at one end and bears a metal head on the other.</p>"
+                },
+                "strike-melee->Scimitar": {
+                    "name": "Scimitar"
+                },
                 "strike-melee->Shortbow": {
                     "name": "Shortbow"
                 },
@@ -560,6 +697,10 @@
             "items": {
                 "spellcastingEntry->Arcane Prepared Spells": {
                     "name": "Arcane Prepared Spells"
+                },
+                "weapon->Longspear": {
+                    "name": "Longspear",
+                    "description": "<p>This very long spear, sometimes called a pike, is purely for thrusting rather than throwing. Used by many soldiers and city watch for crowd control and defense against charging enemies, it must be wielded with two hands.</p>"
                 },
                 "armor->Robes": {
                     "name": "Robes",
@@ -661,6 +802,28 @@
             "allSavesBonus": "+1 status to all saves vs. fear",
             "speedsDetails": "ignores 5 feet of speed reduction from being encumbered",
             "items": {
+                "weapon->Composite Longbow": {
+                    "name": "Composite Longbow",
+                    "description": "<p>This projectile weapon is made from horn, wood, and sinew laminated together to increase the power of its pull and the force of its projectile. Like all longbows, its great size also increases the bow's range and power. You must use two hands to fire it, and it cannot be used while mounted. Any time an ability is specifically restricted to a longbow, such as Erastil's favored weapon, it also applies to composite longbows unless otherwise stated.</p>"
+                },
+                "weapon->War Flail": {
+                    "name": "War Flail",
+                    "description": "<p>This large flail has a long shaft connected to a shorter piece of stout wood or metal that's sometimes inlaid with spikes.</p>"
+                },
+                "armor->Hellknight Plate": {
+                    "name": "Hellknight Plate",
+                    "description": "<p>Hellknights wear a variety of armors decorated with designs specific to the order. Hellknight half plate is the armor of choice for Hellknight signifiers, and Hellknight breastplate serves those in the order who lack the training to wear heavy armor.</p>\n<p>A character who is a member of the Hellknights has access to these uncommon armors.</p>"
+                },
+                "ammo->Arrows": {
+                    "name": "Arrows",
+                    "description": "<p>These projectiles are the ammunition for bows. The shaft of an arrow is made of wood. It is stabilized in flight by fletching at one end and bears a metal head on the other.</p>"
+                },
+                "strike-melee->War Flail": {
+                    "name": "War Flail"
+                },
+                "strike-melee->Composite Longbow": {
+                    "name": "Composite Longbow"
+                },
                 "action->+1 Status to All Saves vs. Fear": {
                     "name": "+1 Status to All Saves vs. Fear"
                 },
@@ -785,6 +948,10 @@
                 "spellcastingEntry->Occult Focus Spells": {
                     "name": "Occult Focus Spells"
                 },
+                "weapon->Morningstar": {
+                    "name": "Morningstar",
+                    "description": "<p>This weapon has a short shaft ending in a metal ball studded with spikes.</p>"
+                },
                 "strike-melee->Morningstar": {
                     "name": "Morningstar"
                 },
@@ -802,6 +969,10 @@
                 },
                 "spellcastingEntry->Occult Focus Spells": {
                     "name": "Occult Focus Spells"
+                },
+                "weapon->Morningstar": {
+                    "name": "Morningstar",
+                    "description": "<p>This weapon has a short shaft ending in a metal ball studded with spikes.</p>"
                 },
                 "strike-melee->Morningstar": {
                     "name": "Morningstar"
@@ -850,6 +1021,18 @@
                 },
                 "spell->Translocate (At Will)": {
                     "name": "Translocate (At Will)"
+                },
+                "weapon->Trident": {
+                    "name": "Trident",
+                    "description": "<p>This three-pronged, spear-like weapon typically has a 4-foot shaft. Like a spear, it can be wielded with one hand or thrown.</p>"
+                },
+                "shield->Steel Shield": {
+                    "name": "Steel Shield",
+                    "description": "<p>Like wooden shields, steel shields come in a variety of shapes and sizes. Though more expensive than wooden shields, they are much more durable.</p><table class=\"pf2e remaster\"><thead><tr><th>Hardness</th><th>HP</th><th>BT</th></tr></thead><tbody><tr><td>5</td><td>20</td><td>10</td></tr></tbody></table>"
+                },
+                "armor->Breastplate": {
+                    "name": "Breastplate",
+                    "description": "<p>Though referred to as a breastplate, this type of armor consists of several pieces of plate or @UUID[Compendium.pf2e.equipment-srd.Item.pRoikbRo5HFW6YUB]{Half Plate} armor that protect the torso, chest, neck, and sometimes the hips and lower legs. It strategically grants some of the protection of plate while allowing greater flexibility and speed.</p>"
                 },
                 "equipment->Charm of Cold Resistance": {
                     "name": "Charm of Cold Resistance",
@@ -909,6 +1092,18 @@
                 "spell->Translocate (At Will)": {
                     "name": "Translocate (At Will)"
                 },
+                "weapon->Trident": {
+                    "name": "Trident",
+                    "description": "<p>This three-pronged, spear-like weapon typically has a 4-foot shaft. Like a spear, it can be wielded with one hand or thrown.</p>"
+                },
+                "shield->Steel Shield": {
+                    "name": "Steel Shield",
+                    "description": "<p>Like wooden shields, steel shields come in a variety of shapes and sizes. Though more expensive than wooden shields, they are much more durable.</p><table class=\"pf2e remaster\"><thead><tr><th>Hardness</th><th>HP</th><th>BT</th></tr></thead><tbody><tr><td>5</td><td>20</td><td>10</td></tr></tbody></table>"
+                },
+                "armor->Breastplate": {
+                    "name": "Breastplate",
+                    "description": "<p>Though referred to as a breastplate, this type of armor consists of several pieces of plate or @UUID[Compendium.pf2e.equipment-srd.Item.pRoikbRo5HFW6YUB]{Half Plate} armor that protect the torso, chest, neck, and sometimes the hips and lower legs. It strategically grants some of the protection of plate while allowing greater flexibility and speed.</p>"
+                },
                 "equipment->Charm of Cold Resistance": {
                     "name": "Charm of Cold Resistance",
                     "description": "<p>This charm, normally hung from the belt or worn around the neck, grants you resistance 5 against one type of energy damage: acid, cold, electricity, fire, or sonic. Each charm is crafted to protect against a particular type of energy damage, and its design usually embodies the type of energy it protects the wearer from in some way. For instance, a <em>charm of cold resistance</em> could be carved in the shape of a yeti, whereas a <em>charm of fire resistance</em> would be made from volcanic glass.</p>"
@@ -959,6 +1154,10 @@
                 "spellcastingEntry->Occult Innate Spells": {
                     "name": "Occult Innate Spells"
                 },
+                "weapon->Gaff": {
+                    "name": "Gaff",
+                    "description": "<p>Many marsh giants fight with oversized gaffs-lengths of wood with a single metal spike affixed to the tip. Used often by fisherfolk to land fish, marsh giants use their gaffs as weapons.</p>"
+                },
                 "strike-melee->Gaff": {
                     "name": "Gaff"
                 },
@@ -984,6 +1183,10 @@
             "items": {
                 "equipment->Books": {
                     "name": "Books"
+                },
+                "equipment->Writing Set": {
+                    "name": "Writing Set",
+                    "description": "<p>Using a writing set, you can draft correspondence and scribe scrolls. A set includes stationery, including a variety of paper and parchment, as well as ink, a quill or inkpen, sealing wax, and a simple seal. If you've written a large amount, you can refill your kit with extra ink and paper.</p>"
                 },
                 "strike-melee->Jaws": {
                     "name": "Jaws"
@@ -1023,6 +1226,10 @@
             "items": {
                 "equipment->Books": {
                     "name": "Books"
+                },
+                "equipment->Writing Set": {
+                    "name": "Writing Set",
+                    "description": "<p>Using a writing set, you can draft correspondence and scribe scrolls. A set includes stationery, including a variety of paper and parchment, as well as ink, a quill or inkpen, sealing wax, and a simple seal. If you've written a large amount, you can refill your kit with extra ink and paper.</p>"
                 },
                 "strike-melee->Jaws": {
                     "name": "Jaws"
@@ -1125,6 +1332,10 @@
             "publicNotes": "<p>The captain is the ultimate authority on a vessel, responsible for the livelihood and well-being of everyone on the ship.</p><hr /><p>Adventurers may need passage on a swift vessel, or they might face danger from raiders at sea or in coastal settlements.</p>",
             "blurb": "Variant ship captain",
             "items": {
+                "armor->Coral Armor": {
+                    "name": "Coral Armor",
+                    "description": "<p>A good option for undersea explorers and aquatic peoples alike, coral armor consists of panels of carved coral. If worn underwater, some of this coral can even be alive.</p>"
+                },
                 "strike-melee->Aqueous Rapier": {
                     "name": "Aqueous Rapier"
                 },
@@ -1160,6 +1371,10 @@
             "publicNotes": "<p>Criminal organizations are always happy to loan out money at exorbitant rates, and their legbreakers are always happy to collect.</p><hr /><p>In the underbelly of society, the lawless reign supreme.</p>",
             "blurb": "Variant legbreaker",
             "items": {
+                "armor->Coral Armor": {
+                    "name": "Coral Armor",
+                    "description": "<p>A good option for undersea explorers and aquatic peoples alike, coral armor consists of panels of carved coral. If worn underwater, some of this coral can even be alive.</p>"
+                },
                 "strike-melee->Aqueous Maul": {
                     "name": "Aqueous Maul"
                 },
@@ -1197,6 +1412,10 @@
             "publicNotes": "<p>Bounty hunters are constantly on the move, whether within city walls or the wilderness, trailing their fugitive quarries for capture... or disposal. Often relying on stealth or deception as much as martial skill, bounty hunters employ a vast array of talents to accomplish their goals and collect the hefty payout.</p><hr /><p>Whether they're hired to wage war, protect a caravan, or infiltrate an impenetrable fortress, there's ample work for mercenaries all over Golarion.</p>",
             "blurb": "Variant bounty hunter",
             "items": {
+                "armor->Coral Armor": {
+                    "name": "Coral Armor",
+                    "description": "<p>A good option for undersea explorers and aquatic peoples alike, coral armor consists of panels of carved coral. If worn underwater, some of this coral can even be alive.</p>"
+                },
                 "strike-melee->Aqueous Boarding Pike": {
                     "name": "Aqueous Boarding Pike"
                 },
@@ -1224,6 +1443,10 @@
         "Naiad Warrior": {
             "name": "Naiad Warrior",
             "items": {
+                "armor->Coral Armor": {
+                    "name": "Coral Armor",
+                    "description": "<p>A good option for undersea explorers and aquatic peoples alike, coral armor consists of panels of carved coral. If worn underwater, some of this coral can even be alive.</p>"
+                },
                 "strike-melee->Aqueous Trident": {
                     "name": "Aqueous Trident"
                 },
@@ -1255,6 +1478,10 @@
             "publicNotes": "<p>Gang leaders direct cutthroats, killers, thieves, and toughs. The gang leader often appears alongside a bandit gang or other criminals.</p><hr /><p>Villains pursue selfish and cruel goals, trampling over anyone in their way.</p>",
             "blurb": "Variant gang leader",
             "items": {
+                "armor->Coral Armor": {
+                    "name": "Coral Armor",
+                    "description": "<p>A good option for undersea explorers and aquatic peoples alike, coral armor consists of panels of carved coral. If worn underwater, some of this coral can even be alive.</p>"
+                },
                 "strike-melee->Aqueous Shortsword": {
                     "name": "Aqueous Shortsword"
                 },
@@ -1310,6 +1537,10 @@
             "publicNotes": "<p>Believing the ends justify the means, the unsanctioned sheriff is unafraid to use others for their own gain, through bribes, manipulation, or force.</p><hr /><p>These lone wolves have an aura of mystery, bravado, and swagger.</p>",
             "blurb": "Variant unsanctioned sheriff",
             "items": {
+                "armor->Coral Armor": {
+                    "name": "Coral Armor",
+                    "description": "<p>A good option for undersea explorers and aquatic peoples alike, coral armor consists of panels of carved coral. If worn underwater, some of this coral can even be alive.</p>"
+                },
                 "strike-melee->Aqueous Fist": {
                     "name": "Aqueous Fist"
                 },
@@ -1335,6 +1566,24 @@
         "Ogre Hunter": {
             "name": "Ogre Hunter",
             "items": {
+                "weapon->Ogre Hook": {
+                    "name": "Ogre Hook",
+                    "description": "<p>Ogres are known for using immense, curved picks called ogre hooks.</p>"
+                },
+                "weapon->Trident": {
+                    "name": "Trident",
+                    "description": "<p>This three-pronged, spear-like weapon typically has a 4-foot shaft. Like a spear, it can be wielded with one hand or thrown.</p>"
+                },
+                "armor->Breastplate": {
+                    "name": "Breastplate",
+                    "description": "<p>Though referred to as a breastplate, this type of armor consists of several pieces of plate or @UUID[Compendium.pf2e.equipment-srd.Item.pRoikbRo5HFW6YUB]{Half Plate} armor that protect the torso, chest, neck, and sometimes the hips and lower legs. It strategically grants some of the protection of plate while allowing greater flexibility and speed.</p>"
+                },
+                "strike-melee->Ogre Hook": {
+                    "name": "Ogre Hook"
+                },
+                "strike-ranged->Trident": {
+                    "name": "Trident"
+                },
                 "action->Always Ready for a Scufe": {
                     "name": "Always Ready for a Scufe",
                     "description": "<p><strong>Trigger</strong> A creature gets in melee range of the ogre hunter</p><hr /><p><strong>Effect</strong> The ogre hunter draws a melee weapon.</p>"
@@ -1354,6 +1603,10 @@
             "items": {
                 "spellcastingEntry->Arcane Prepared Spells": {
                     "name": "Arcane Prepared Spells"
+                },
+                "weapon->Dagger": {
+                    "name": "Dagger",
+                    "description": "<p>This small, bladed weapon is held in one hand and used to stab a creature in close combat. It can also be thrown.</p>"
                 },
                 "equipment->Silver Religious Symbol of Asmodeus": {
                     "name": "Silver Religious Symbol of Asmodeus",
@@ -1381,6 +1634,10 @@
             "items": {
                 "spellcastingEntry->Arcane Prepared Spells": {
                     "name": "Arcane Prepared Spells"
+                },
+                "weapon->Dagger": {
+                    "name": "Dagger",
+                    "description": "<p>This small, bladed weapon is held in one hand and used to stab a creature in close combat. It can also be thrown.</p>"
                 },
                 "equipment->Silver Religious Symbol of Asmodeus": {
                     "name": "Silver Religious Symbol of Asmodeus",
@@ -1454,6 +1711,28 @@
             "publicNotes": "<p>The frontline fighters of goblin tribes prefer to fight in large groups—especially when they can outnumber their foes at least three to one.</p>\n<hr />\n<p>These small humanoids typically have green or gray skin and large heads with wide ears. While some goblins are civilized and have worked hard to be considered upstanding members of humanoid communities, many are impetuous and vicious creatures who delight in wreaking havoc. These goblins think nothing of slaughtering livestock, stealing, or burning down a building purely for momentary delight. They revel in playing malicious tricks on taller humanoids, whom they call \"longshanks.\"</p>\n<p>Goblins are superstitious, with an intense awe of magic and a fascination with fire; goblins who master magic or fire earn great respect from their kin. Most other humanoids find it difficult to understand goblins' outlook: they hate canines but eagerly share their lairs with so-called \"goblin dogs,\" they fearlessly attack larger creatures but are terrified of horses, and they despise vegetables yet consider pickles a delicacy. To a goblin, of course, these are all perfectly sensible life choices.</p>",
             "blurb": "Variant goblin warrior",
             "items": {
+                "weapon->Dogslicer": {
+                    "name": "Dogslicer",
+                    "description": "<p>This short, curved, and crude makeshift blade often has holes drilled into it to reduce its weight. It's a favored weapon of goblins.</p>"
+                },
+                "weapon->Shortbow": {
+                    "name": "Shortbow",
+                    "description": "<p>This smaller bow is made of a single piece of wood and favored by skirmishers and cavalry.</p>"
+                },
+                "armor->Leather Armor": {
+                    "name": "Leather Armor",
+                    "description": "<p>A mix of flexible and molded boiled leather, a suit of this type of armor provides some protection with maximum flexibility.</p>"
+                },
+                "ammo->Arrows": {
+                    "name": "Arrows",
+                    "description": "<p>These projectiles are the ammunition for bows. The shaft of an arrow is made of wood. It is stabilized in flight by fletching at one end and bears a metal head on the other.</p>"
+                },
+                "strike-melee->Dogslicer": {
+                    "name": "Dogslicer"
+                },
+                "strike-melee->Shortbow": {
+                    "name": "Shortbow"
+                },
                 "action->Tailed Goblin": {
                     "name": "Tailed Goblin",
                     "description": "<p>A pirate goblin is not @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} while Climbing, can Climb with one hand occupied, and can @UUID[Compendium.pf2e.actionspf2e.Item.ge56Lu1xXVFYUnLP]{Trip} opponents even if both hands are occupied.</p>"
@@ -1595,6 +1874,10 @@
                 "equipment->Robes": {
                     "name": "Robes"
                 },
+                "equipment->Writing Set": {
+                    "name": "Writing Set",
+                    "description": "<p>Using a writing set, you can draft correspondence and scribe scrolls. A set includes stationery, including a variety of paper and parchment, as well as ink, a quill or inkpen, sealing wax, and a simple seal. If you've written a large amount, you can refill your kit with extra ink and paper.</p>"
+                },
                 "equipment->Scroll Case": {
                     "name": "Scroll Case"
                 },
@@ -1632,6 +1915,14 @@
                 "spellcastingEntry->Witch Hex Spells": {
                     "name": "Witch Hex Spells"
                 },
+                "weapon->Dagger": {
+                    "name": "Dagger",
+                    "description": "<p>This small, bladed weapon is held in one hand and used to stab a creature in close combat. It can also be thrown.</p>"
+                },
+                "weapon->Dart": {
+                    "name": "Dart",
+                    "description": "<p>This thrown weapon is larger than an arrow but shorter than a javelin. It typically has a short shaft of wood ending in a metal tip and is sometimes stabilized by feathers or fur.</p>"
+                },
                 "equipment->Cauldron": {
                     "name": "Cauldron"
                 },
@@ -1663,12 +1954,26 @@
             "publicNotes": "<p>The most common skeletal minions are mere guardians.</p>\n<hr />\n<p>Animated skeletons are among the most common types of undead.</p>",
             "hpDetails": "void healing",
             "items": {
+                "weapon->Shortbow": {
+                    "name": "Shortbow",
+                    "description": "<p>This smaller bow is made of a single piece of wood and favored by skirmishers and cavalry.</p>"
+                },
+                "weapon->Scimitar": {
+                    "name": "Scimitar",
+                    "description": "<p>This one-handed curved blade is sharp on one side.</p>"
+                },
                 "ammo->Arrows": {
                     "name": "Arrows",
                     "description": "<p>These projectiles are the ammunition for bows. The shaft of an arrow is made of wood. It is stabilized in flight by fletching at one end and bears a metal head on the other.</p>"
                 },
+                "strike-melee->Scimitar": {
+                    "name": "Scimitar"
+                },
                 "strike-melee->Claw": {
                     "name": "Claw"
+                },
+                "strike-melee->Shortbow": {
+                    "name": "Shortbow"
                 },
                 "action->Void Healing": {
                     "name": "Void Healing"
@@ -1997,6 +2302,31 @@
             "name": "Undead Hellknight",
             "hpDetails": "void healing",
             "items": {
+                "weapon->Morningstar": {
+                    "name": "Morningstar",
+                    "description": "<p>This weapon has a short shaft ending in a metal ball studded with spikes.</p>"
+                },
+                "weapon->Spear": {
+                    "name": "Spear",
+                    "description": "<p>A long metal shaft ending with a metal spike, a spear can be used one-handed as a melee weapon and can be thrown.</p>"
+                },
+                "shield->Steel Shield": {
+                    "name": "Steel Shield",
+                    "description": "<p>Like wooden shields, steel shields come in a variety of shapes and sizes. Though more expensive than wooden shields, they are much more durable.</p><table class=\"pf2e remaster\"><thead><tr><th>Hardness</th><th>HP</th><th>BT</th></tr></thead><tbody><tr><td>5</td><td>20</td><td>10</td></tr></tbody></table>"
+                },
+                "armor->Hellknight Plate": {
+                    "name": "Hellknight Plate",
+                    "description": "<p>Hellknights wear a variety of armors decorated with designs specific to the order. Hellknight half plate is the armor of choice for Hellknight signifiers, and Hellknight breastplate serves those in the order who lack the training to wear heavy armor.</p>\n<p>A character who is a member of the Hellknights has access to these uncommon armors.</p>"
+                },
+                "strike-melee->Morningstar": {
+                    "name": "Morningstar"
+                },
+                "strike-melee->Spear": {
+                    "name": "Spear"
+                },
+                "strike-ranged->Spear": {
+                    "name": "Spear"
+                },
                 "action->Reactive Strike": {
                     "name": "Reactive Strike"
                 },
@@ -2019,6 +2349,17 @@
             "name": "Undead Hellknight (7-12)",
             "hpDetails": "void healing",
             "items": {
+                "weapon->War Flail": {
+                    "name": "War Flail",
+                    "description": "<p>This large flail has a long shaft connected to a shorter piece of stout wood or metal that's sometimes inlaid with spikes.</p>"
+                },
+                "armor->Hellknight Plate": {
+                    "name": "Hellknight Plate",
+                    "description": "<p>Hellknights wear a variety of armors decorated with designs specific to the order. Hellknight half plate is the armor of choice for Hellknight signifiers, and Hellknight breastplate serves those in the order who lack the training to wear heavy armor.</p>\n<p>A character who is a member of the Hellknights has access to these uncommon armors.</p>"
+                },
+                "strike-melee->War Flail": {
+                    "name": "War Flail"
+                },
                 "action->Reactive Strike": {
                     "name": "Reactive Strike"
                 },
@@ -2038,6 +2379,17 @@
             "name": "Undead Hellknight Armiger",
             "hpDetails": "void healing",
             "items": {
+                "weapon->War Flail": {
+                    "name": "War Flail",
+                    "description": "<p>This large flail has a long shaft connected to a shorter piece of stout wood or metal that's sometimes inlaid with spikes.</p>"
+                },
+                "armor->Hellknight Plate": {
+                    "name": "Hellknight Plate",
+                    "description": "<p>Hellknights wear a variety of armors decorated with designs specific to the order. Hellknight half plate is the armor of choice for Hellknight signifiers, and Hellknight breastplate serves those in the order who lack the training to wear heavy armor.</p>\n<p>A character who is a member of the Hellknights has access to these uncommon armors.</p>"
+                },
+                "strike-melee->War Flail": {
+                    "name": "War Flail"
+                },
                 "action->Reactive Strike": {
                     "name": "Reactive Strike"
                 },
@@ -2057,6 +2409,24 @@
             "name": "Undead Hellknight Maralictor",
             "hpDetails": "void healing",
             "items": {
+                "weapon->War Flail": {
+                    "name": "War Flail",
+                    "description": "<p>This large flail has a long shaft connected to a shorter piece of stout wood or metal that's sometimes inlaid with spikes.</p>"
+                },
+                "weapon->Warhammer": {
+                    "name": "Warhammer",
+                    "description": "<p>This weapon has a wooden shaft ending in a large, heavy metal head. The head of the hammer might be single-sided or double-sided, but it's always capable of delivering powerful bludgeoning blows.</p>"
+                },
+                "armor->Hellknight Plate": {
+                    "name": "Hellknight Plate",
+                    "description": "<p>Hellknights wear a variety of armors decorated with designs specific to the order. Hellknight half plate is the armor of choice for Hellknight signifiers, and Hellknight breastplate serves those in the order who lack the training to wear heavy armor.</p>\n<p>A character who is a member of the Hellknights has access to these uncommon armors.</p>"
+                },
+                "strike-melee->Warhammer": {
+                    "name": "Warhammer"
+                },
+                "strike-melee->War Flail": {
+                    "name": "War Flail"
+                },
                 "action->Reactive Strike": {
                     "name": "Reactive Strike"
                 },

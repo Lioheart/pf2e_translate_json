@@ -1,0 +1,351 @@
+{
+    "label": "Paizo-Pregens",
+    "folders": {
+        "Murder in Metal City": "Murder in Metal City"
+    },
+    "entries": {
+        "Jaedana": {
+            "name": "Jaedana",
+            "gender": "she/her",
+            "items": {
+                "lore->Drift Lore": {
+                    "name": "Drift Lore"
+                },
+                "weapon->Electromag Grenade (Commercial)": {
+                    "name": "Electromag Grenade (Commercial)",
+                    "description": "<p><strong>Activate</strong> <span class=\"action-glyph\">1</span> Area Fire</p>\n<p><strong>Critical</strong> @UUID[Compendium.sf2e.conditions.Item.6A2QDy8wRGCVQsSd]{Glitching 1}</p><hr /><p>These grenades discharge a shocking field that deals 1d8 electricity damage in a @Template[burst|distance:5] with a @Check[reflex|against:class|basic] save. If you have access to the critical specialization effect of grenades, tech creatures and unattended tech items that critically fail their saving throw against electromag grenades become glitching.</p>"
+                },
+                "consumable->Medpatch (Commercial)": {
+                    "name": "Medpatch (Commercial)",
+                    "description": "<p><strong>Activate</strong> <span class=\"action-glyph\">1</span> (manipulate)</p><hr /><p>Medpatches accelerate the body's natural healing. You regain @Damage[(1d6)[healing]] Hit Points and gain a +1 item bonus to saving throws against diseases and poisons for 10 minutes.</p>\n<p>@UUID[Compendium.sf2e.equipment-effects.Item.VKSOvJQMwUby4fba]{Effect: Medpatch}</p>"
+                },
+                "ammo->Battery (Commercial)": {
+                    "name": "Battery (Commercial)"
+                },
+                "treasure->Credstick": {
+                    "name": "Credstick",
+                    "description": "<p>Most people in Starfinder keep their wealth on a protected item known as a credstick. These devices are often flat and roughly the size of a human finger. They range in dimensions and quality, but at the end of the day, they're just a means of conveniently carrying and spending money. Usage of these devices is determined by the owner, and a credstick can accept or spend funds with as simple an action as tapping it near a suitable banking device. When more rigorous security is necessary, they can require audio or biometric imprints in order to activate. Some advanced credsticks even have a magical component that might require a mental password or the recitation of a specific spell to access stored funds.</p>\n<p>Credsticks aren't gateways to the entirety of one's wealth, and larger stores of credits are often kept secured in banks, personal vaults, or secure databases. Instead, a credstick is a safe and anonymous means of moving credits around without being traced. Adventurers and common citizens alike often keep a credstick on their person to handle any purchases they might be called upon to make, while also only keeping just enough credits on them that losing the credstick wouldn't result in bankruptcy.</p>\n<p>Individuals in the Pact Worlds often carry credsticks, and other civilizations that interact with the Pact often turn local funds into credits and thus carry them to spend their converted currency. Sometimes a person might carry several credsticks, dedicating each one to a different use, or simply trading the stick away if they want to make a purchase of a predefined amount. If ever the number of credsticks on a person becomes too cumbersome, it's easy enough to move the funds between individual sticks and discard emptied sticks to save on space, however a credstick always has a negligible bulk.</p>"
+                },
+                "feat->Four-Armed": {
+                    "name": "Four-Armed",
+                    "description": "<p>You have four arms, which allows you to wield and hold up to four hands' worth of weapons and equipment. At any time, one pair of hands is designated as your active hands. You can change this designation from one pair of hands to another by taking the Switch Hands action, which is a single action. You can wield items only with your active hands.</p>"
+                },
+                "feat->Express Driver": {
+                    "name": "Express Driver",
+                    "description": "<p>You know how to get there fast. When calculating your travel Speed for the day while piloting a vehicle, you can attempt a Piloting check to increase your vehicle's travel Speed for long-term overland or aerial travel. The DC is determined by the GM but is typically based on the vehicle's piloting DC or a difficulty based on the environment, whichever is harder. On a success, double your vehicle's travel Speed for the day. This has no effect on your vehicle's movement in encounters or on starships traveling through the Drift.</p>"
+                },
+                "class->Operative": {
+                    "name": "Operative",
+                    "description": "<p>You're a focused, quick-witted professional who thrives in high-stakes combat. Your deadly aim and tactical training give you an edge over the competition—for you, even the most powerful enemy is just another mark to take out. You have impressive prowess in your chosen field of specialization.</p>",
+                    "rules": {
+                        "0": {
+                            "label": "SF2E.SpecificRule.MartialProficiency.MartialAndSimpleGuns"
+                        },
+                        "1": {
+                            "label": "SF2E.SpecificRule.MartialProficiency.AdvancedGuns"
+                        }
+                    }
+                },
+                "action->Aim": {
+                    "name": "Aim",
+                    "description": "<p><strong>Requirements</strong> You're wielding a ranged weapon that doesn't have the area trait.</p><hr /><p>You take careful aim at a single creature that you're aware of, designating it as your mark until your next turn. Your ranged Strikes against your mark using the required ranged weapon deal an additional 1d4 precision damage and reduce the circumstance bonus to AC your mark gains from cover by 1. These benefits only apply if your mark is within your weapon's first range increment. You can only have one mark at a time.</p>\n<p>As your operative level increases, so does your ability to Aim. Increase the number of dice for the precision damage by one at 5th, 11th, and 17th levels. At 11th level, you reduce the circumstance bonus to AC your mark gains from cover by 2 rather than 1. At 17th level, you reduce the circumstance bonus to AC your mark gains from cover by 4 rather than 2.</p>"
+                },
+                "action->Sabotage": {
+                    "name": "Sabotage",
+                    "description": "<p>You disrupt enemy tech to cover your tracks or gain a tactical advantage. Select a single tech creature or tech item within 15 feet that you can detect. If your target is a tech creature, attempt a @Check[computers|against:fortitude] check against the creature's Fortitude DC. If your target is a tech item, attempt a Computers check against the item's DC or the @Check[computers|against:reflex]{Reflex DC} of the creature possessing the item if the item is being carried, held, or worn.</p>\n<p>If you're an expert in Computers, you can Sabotage a tech creature or tech item within 30 feet. If you're a master, this range increases to 45 feet. If you're legendary, this range increases to 60 feet.</p><hr /><p><strong>Critical Success</strong> The target becomes @UUID[Compendium.sf2e.conditions.Item.6A2QDy8wRGCVQsSd]{Glitching 1} for 1 minute.</p>\n<p><strong>Success</strong> The target becomes glitching 1 for 2 rounds.</p>\n<p><strong>Failure</strong> Your attempt fails and requires more persistent analysis. The target is immune to your Sabotage until the end of your next turn.</p>\n<p><strong>Critical Failure</strong> Your attempt backfires. The target is immune to your Sabotage for 10 minutes.</p>"
+                },
+                "feat->Natural Grace": {
+                    "name": "Natural Grace",
+                    "description": "<p><strong>Frequency</strong> once per day</p>\n<p><strong>Trigger</strong> You fail an Acrobatics check or Reflex saving throw.</p><hr /><p>You have an almost supernatural control of your movements, which can sometimes save you in dangerous situations. You can reroll the triggering skill check or saving throw, using the second result even if it's worse.</p>"
+                },
+                "feat->Weakening Shot": {
+                    "name": "Weakening Shot",
+                    "description": "<p><strong>Requirements</strong> You're wielding a gun.</p><hr /><p>You target a creature's limbs or load-bearing appendages to weaken them. You Aim and then make a ranged Strike against your mark. If the Strike hits, the creature becomes your choice of @UUID[Compendium.sf2e.conditions.Item.i3OJZU2nk64Df3xm]{Clumsy 1} or @UUID[Compendium.sf2e.conditions.Item.MIRkyAjyBeXivMa7]{Enfeebled 1} until the end of your next turn (@UUID[Compendium.sf2e.conditions.Item.i3OJZU2nk64Df3xm]{Clumsy 2} or @UUID[Compendium.sf2e.conditions.Item.MIRkyAjyBeXivMa7]{Enfeebled 2} on a critical hit).</p>"
+                }
+            }
+        },
+        "Lunar-17": {
+            "name": "Lunar-17",
+            "gender": "she/her",
+            "items": {
+                "spellcastingEntry->Occult Spontaneous Spells": {
+                    "name": "Occult Spontaneous Spells"
+                },
+                "lore->Underworld Lore": {
+                    "name": "Underworld Lore"
+                },
+                "spellcastingEntry->Arcane Focus Spells": {
+                    "name": "Arcane Focus Spells"
+                },
+                "weapon->Incendiary Grenade (Commercial)": {
+                    "name": "Incendiary Grenade (Commercial)",
+                    "description": "<p><strong>Activate</strong> <span class=\"action-glyph\">1</span> Area Fire</p>\n<p><strong>Critical</strong> 5 feet</p><hr /><p>These grenades use an ignited chemical to explode in a blast of intense heat and deal 1d8 fire damage with a @Check[reflex|against:class|basic] save (@Template[burst|distance:5]). If you have access to the critical specialization effect of grenades, creatures who critically fail their saving throw against incendiary grenades are knocked away from the grenade.</p>"
+                },
+                "consumable->Medpatch (Commercial)": {
+                    "name": "Medpatch (Commercial)",
+                    "description": "<p><strong>Activate</strong> <span class=\"action-glyph\">1</span> (manipulate)</p><hr /><p>Medpatches accelerate the body's natural healing. You regain @Damage[(1d6)[healing]] Hit Points and gain a +1 item bonus to saving throws against diseases and poisons for 10 minutes.</p>\n<p>@UUID[Compendium.sf2e.equipment-effects.Item.VKSOvJQMwUby4fba]{Effect: Medpatch}</p>"
+                },
+                "ammo->Battery (Commercial)": {
+                    "name": "Battery (Commercial)"
+                },
+                "treasure->Credstick": {
+                    "name": "Credstick",
+                    "description": "<p>Most people in Starfinder keep their wealth on a protected item known as a credstick. These devices are often flat and roughly the size of a human finger. They range in dimensions and quality, but at the end of the day, they're just a means of conveniently carrying and spending money. Usage of these devices is determined by the owner, and a credstick can accept or spend funds with as simple an action as tapping it near a suitable banking device. When more rigorous security is necessary, they can require audio or biometric imprints in order to activate. Some advanced credsticks even have a magical component that might require a mental password or the recitation of a specific spell to access stored funds.</p>\n<p>Credsticks aren't gateways to the entirety of one's wealth, and larger stores of credits are often kept secured in banks, personal vaults, or secure databases. Instead, a credstick is a safe and anonymous means of moving credits around without being traced. Adventurers and common citizens alike often keep a credstick on their person to handle any purchases they might be called upon to make, while also only keeping just enough credits on them that losing the credstick wouldn't result in bankruptcy.</p>\n<p>Individuals in the Pact Worlds often carry credsticks, and other civilizations that interact with the Pact often turn local funds into credits and thus carry them to spend their converted currency. Sometimes a person might carry several credsticks, dedicating each one to a different use, or simply trading the stick away if they want to make a purchase of a predefined amount. If ever the number of credsticks on a person becomes too cumbersome, it's easy enough to move the funds between individual sticks and discard emptied sticks to save on space, however a credstick always has a negligible bulk.</p>"
+                },
+                "feat->Constructed": {
+                    "name": "Constructed",
+                    "description": "<p>Your synthetic body resists ailments better than those of purely biological organisms. You gain a +1 circumstance bonus to saving throws against diseases, poisons, and radiation.</p>"
+                },
+                "feat->Streetwise": {
+                    "name": "Streetwise",
+                    "description": "<p>You know about life on the streets and feel the pulse of your local settlement. You can use your Society modifier instead of your Diplomacy modifier to [[/act gather-information skill=society]]{Gather Information}. In any settlement you frequent regularly, you can use the Recall Knowledge action with Society to know the same sorts of information that you could discover with Diplomacy to Gather Information. The DC is usually significantly higher, but you know the information without spending time gathering it. If you fail to recall the information, you can still subsequently attempt to Gather Information normally.</p>"
+                },
+                "class->Mystic": {
+                    "name": "Mystic",
+                    "description": "<p><em>You're a conduit, channeling the fundamental forces that connect and bind everything in the cosmos. You can draw upon this supernatural wellspring to form deep spiritual bonds with your allies, empower them in combat, and restore their health should they become injured. Your powers take unique shape based on the connection you choose, granting new and more powerful spells as you explore your connection on a deeper level.</em></p>"
+                },
+                "action->Transfer Vitality": {
+                    "name": "Transfer Vitality",
+                    "description": "<p>You can transfer up to 10 Hit Points (minimum 1) from your vitality network into yourself or a bonded creature you can sense within 60 feet. This works on creatures with void healing as though this action had the void trait. The amount you can transfer increases by 10 at 5th, 10th, 15th and 20th level.</p>"
+                },
+                "feat->Quickened Processor": {
+                    "name": "Quickened Processor",
+                    "description": "<p>You can quickly identify your surroundings, and you can use that information to your advantage while in the midst of danger or while in the process of piloting vehicles in hazardous situations. You gain a +1 circumstance bonus to Perception checks for initiative rolls and a +2 circumstance bonus to Piloting checks for initiative rolls.</p>"
+                }
+            }
+        },
+        "Old-Growth Wildfire": {
+            "name": "Old-Growth Wildfire",
+            "gender": "they/them",
+            "items": {
+                "lore->Aballon Lore": {
+                    "name": "Aballon Lore"
+                },
+                "weapon->Electromag Grenade (Commercial)": {
+                    "name": "Electromag Grenade (Commercial)",
+                    "description": "<p><strong>Activate</strong> <span class=\"action-glyph\">1</span> Area Fire</p>\n<p><strong>Critical</strong> @UUID[Compendium.sf2e.conditions.Item.6A2QDy8wRGCVQsSd]{Glitching 1}</p><hr /><p>These grenades discharge a shocking field that deals 1d8 electricity damage in a @Template[burst|distance:5] with a @Check[reflex|against:class|basic] save. If you have access to the critical specialization effect of grenades, tech creatures and unattended tech items that critically fail their saving throw against electromag grenades become glitching.</p>"
+                },
+                "treasure->Credstick": {
+                    "name": "Credstick",
+                    "description": "<p>Most people in Starfinder keep their wealth on a protected item known as a credstick. These devices are often flat and roughly the size of a human finger. They range in dimensions and quality, but at the end of the day, they're just a means of conveniently carrying and spending money. Usage of these devices is determined by the owner, and a credstick can accept or spend funds with as simple an action as tapping it near a suitable banking device. When more rigorous security is necessary, they can require audio or biometric imprints in order to activate. Some advanced credsticks even have a magical component that might require a mental password or the recitation of a specific spell to access stored funds.</p>\n<p>Credsticks aren't gateways to the entirety of one's wealth, and larger stores of credits are often kept secured in banks, personal vaults, or secure databases. Instead, a credstick is a safe and anonymous means of moving credits around without being traced. Adventurers and common citizens alike often keep a credstick on their person to handle any purchases they might be called upon to make, while also only keeping just enough credits on them that losing the credstick wouldn't result in bankruptcy.</p>\n<p>Individuals in the Pact Worlds often carry credsticks, and other civilizations that interact with the Pact often turn local funds into credits and thus carry them to spend their converted currency. Sometimes a person might carry several credsticks, dedicating each one to a different use, or simply trading the stick away if they want to make a purchase of a predefined amount. If ever the number of credsticks on a person becomes too cumbersome, it's easy enough to move the funds between individual sticks and discard emptied sticks to save on space, however a credstick always has a negligible bulk.</p>"
+                },
+                "feat->Limited Telepathy": {
+                    "name": "Limited Telepathy",
+                    "description": "<p>You can communicate mentally with creatures within 30 feet. You can communicate only with creatures that share a language with you. This doesn't give you any access to their thoughts, and it communicates no more information than normal speech would.</p>"
+                },
+                "feat->Verdant": {
+                    "name": "Verdant",
+                    "description": "<p>You receive a +1 circumstance bonus to saving throws against mental effects, paralysis, poison, or sleep. You don't need to eat, drink, or sleep if you're exposed to natural sunlight for at least 4 hours per day.</p>"
+                },
+                "feat->Dubious Knowledge": {
+                    "name": "Dubious Knowledge",
+                    "description": "<p>You're a treasure trove of information, but not all of it comes from reputable sources. When you fail (but don't critically fail) a Recall Knowledge check using any skill, you learn the correct answer and an erroneous answer, but you don't have any way to differentiate which is which. This can occur as knowing something is significant, but not whether it's good or bad.</p>"
+                },
+                "class->Soldier": {
+                    "name": "Soldier",
+                    "description": "<p><em>You're a master of area weapons, heavy armor, and soaking damage. You fight in the thick of the battle and unleash devastating salvos against your foes as you take withering fire in return. By laying down a barrage of suppressing fire with powerful weapons, you set your allies up to fulfill their respective roles while encouraging enemies to focus on you.</em></p>"
+                },
+                "feat->Sturdy Vine": {
+                    "name": "Sturdy Vine",
+                    "description": "<p>You've grown a stout vine that you can use to bludgeon enemies. You gain a vine unarmed attack, which is in the brawling weapon group, deals 1d6 bludgeoning damage, and has the khizar, sweep, trip, and unarmed traits.</p>"
+                },
+                "feat->Burst of Strength": {
+                    "name": "Burst of Strength",
+                    "description": "<p><strong>Frequency</strong> once per hour</p>\n<p><strong>Trigger</strong> You fail an Athletics check to @UUID[Compendium.sf2e.actions.Item.Dt6B1slsBy8ipJu9]{Disarm}, @UUID[Compendium.sf2e.actions.Item.PMbdMWc2QroouFGD]{Grapple}, @UUID[Compendium.sf2e.actions.Item.lOE4yjUnETTdaf2T]{Reposition}, @UUID[Compendium.sf2e.actions.Item.7blmbDrQFNfdT731]{Shove}, or @UUID[Compendium.sf2e.actions.Item.ge56Lu1xXVFYUnLP]{Trip}.</p><hr /><p>You draw on your inner reserves and rally yourself to try again. Reroll the triggering check, but you must use the new result, even if it's worse.</p>"
+                }
+            }
+        },
+        "Tapkey": {
+            "name": "Tapkey",
+            "gender": "they/them",
+            "items": {
+                "lore->Vidgame Lore": {
+                    "name": "Vidgame Lore"
+                },
+                "lore->Gambling Lore": {
+                    "name": "Gambling Lore"
+                },
+                "weapon->Incendiary Grenade (Commercial)": {
+                    "name": "Incendiary Grenade (Commercial)",
+                    "description": "<p><strong>Activate</strong> <span class=\"action-glyph\">1</span> Area Fire</p>\n<p><strong>Critical</strong> 5 feet</p><hr /><p>These grenades use an ignited chemical to explode in a blast of intense heat and deal 1d8 fire damage with a @Check[reflex|against:class|basic] save (@Template[burst|distance:5]). If you have access to the critical specialization effect of grenades, creatures who critically fail their saving throw against incendiary grenades are knocked away from the grenade.</p>"
+                },
+                "consumable->Medpatch (Commercial)": {
+                    "name": "Medpatch (Commercial)",
+                    "description": "<p><strong>Activate</strong> <span class=\"action-glyph\">1</span> (manipulate)</p><hr /><p>Medpatches accelerate the body's natural healing. You regain @Damage[(1d6)[healing]] Hit Points and gain a +1 item bonus to saving throws against diseases and poisons for 10 minutes.</p>\n<p>@UUID[Compendium.sf2e.equipment-effects.Item.VKSOvJQMwUby4fba]{Effect: Medpatch}</p>"
+                },
+                "treasure->Credstick": {
+                    "name": "Credstick",
+                    "description": "<p>Most people in Starfinder keep their wealth on a protected item known as a credstick. These devices are often flat and roughly the size of a human finger. They range in dimensions and quality, but at the end of the day, they're just a means of conveniently carrying and spending money. Usage of these devices is determined by the owner, and a credstick can accept or spend funds with as simple an action as tapping it near a suitable banking device. When more rigorous security is necessary, they can require audio or biometric imprints in order to activate. Some advanced credsticks even have a magical component that might require a mental password or the recitation of a specific spell to access stored funds.</p>\n<p>Credsticks aren't gateways to the entirety of one's wealth, and larger stores of credits are often kept secured in banks, personal vaults, or secure databases. Instead, a credstick is a safe and anonymous means of moving credits around without being traced. Adventurers and common citizens alike often keep a credstick on their person to handle any purchases they might be called upon to make, while also only keeping just enough credits on them that losing the credstick wouldn't result in bankruptcy.</p>\n<p>Individuals in the Pact Worlds often carry credsticks, and other civilizations that interact with the Pact often turn local funds into credits and thus carry them to spend their converted currency. Sometimes a person might carry several credsticks, dedicating each one to a different use, or simply trading the stick away if they want to make a purchase of a predefined amount. If ever the number of credsticks on a person becomes too cumbersome, it's easy enough to move the funds between individual sticks and discard emptied sticks to save on space, however a credstick always has a negligible bulk.</p>"
+                },
+                "feat->Six-Armed": {
+                    "name": "Six-Armed",
+                    "description": "<p>You have six arms, which allows you to wield and hold up to six hands' worth of weapons and equipment. At any time, one pair of hands is designated as your active hands. You can change this designation from one pair of hands to another by taking the Switch Hands action, which is a single action. You can wield items only with your active hands.</p>"
+                },
+                "feat->Group Impression": {
+                    "name": "Group Impression",
+                    "description": "<p>When you @UUID[Compendium.sf2e.actions.Item.OX4fy22hQgUHDr0q]{Make an Impression}, you can compare your Diplomacy check result to the Will DCs of up to 10 targets you conversed with, with no penalty. The number of targets increases to 20 if you're an expert, 50 if you're a master, and 100 if you're legendary.</p>"
+                },
+                "feat->Charming Liar": {
+                    "name": "Charming Liar",
+                    "description": "<p>Your charm allows you to win over those you lie to. When you get a critical success using the @UUID[Compendium.sf2e.actions.Item.ewwCglB7XOPLUz72]{Lie} action, the target's attitude toward you improves by one step, as though you'd succeeded at using Diplomacy to @UUID[Compendium.sf2e.actions.Item.OX4fy22hQgUHDr0q]{Make an Impression}. This works only once per conversation, and if you critically succeed against multiple targets using the same result, you choose one creature's attitude to improve. You must be lying to impart seemingly important information, inflate your status, or ingratiate yourself, which trivial or irrelevant lies can't achieve.</p>"
+                },
+                "action->Get 'Em!": {
+                    "name": "Get 'Em!",
+                    "description": "<p>You single out an enemy for you and your allies to focus your attacks on. Select an enemy within 60 feet that you can see. You and your allies gain a +1 status bonus to attacks against that target until the beginning of your next turn.</p>\n<p><strong>Lead by Example</strong> If you used two actions, Strike the target. You gain a status bonus to the damage roll equal to your Charisma modifier. Regardless of whether the Strike hits, you and your allies gain a +1 status bonus to damage on subsequent Strikes made against the enemy until the start of your next turn. Increase the damage by 1 at 5th, 10th, 15th, and 20th levels.</p>\n<p>@UUID[Compendium.sf2e.feat-effects.Item.ey2zSEnprAGgvrij]{Effect: Get 'Em!}</p>"
+                },
+                "action->Coordinated Ambush!": {
+                    "name": "Coordinated Ambush!",
+                    "description": "<p>With perfect timing, you call on hidden allies to take down an unsuspecting target. Designate an enemy creature within 60 feet and an ally within 60 feet. If the ally is @UUID[Compendium.sf2e.conditions.Item.iU0fEDdBp3rXpTMC]{Hidden}, @UUID[Compendium.sf2e.conditions.Item.VRSef5y1LmL2Hkjf]{Undetected}, or @UUID[Compendium.sf2e.conditions.Item.9evPzg9E6muFcoSk]{Unnoticed} to the target at the start of their turn, they treat the target as @UUID[Compendium.sf2e.conditions.Item.AJh5ex99aV6VTggg]{Off-Guard} until the end of their turn instead of when they become visible to the target.</p>\n<p><strong>Lead by Example</strong> If you used two actions, @UUID[Compendium.sf2e.actions.Item.XMcnh4cSI32tljXa]{Hide} or @UUID[Compendium.sf2e.actions.Item.VMozDqMMuK5kpoX4]{Sneak}. Until the start of your next turn, you can Strike the enemy target as a reaction the first time the ally you targeted attacks your designated enemy.</p>"
+                },
+                "feat->Assurance (Stealth)": {
+                    "name": "Assurance (Stealth)",
+                    "description": "<p>Even in the worst circumstances, you can perform basic tasks. Choose a skill you're trained in. You can forgo rolling a skill check for that skill to instead receive a result of 10 + your proficiency bonus (do not apply any other bonuses, penalties, or modifiers).</p>\n<hr />\n<p><strong>Special</strong> You can select this feat multiple times. Each time, choose a different skill and gain the benefits for that skill.</p>"
+                },
+                "feat->Hyper": {
+                    "name": "Hyper",
+                    "description": "<p>You're full of energy, and you often bound into action faster than your friends can keep up. Your Speed increases by 5 feet.</p>"
+                },
+                "feat->Go to Ground!": {
+                    "name": "Go to Ground!",
+                    "description": "<p>You succinctly direct your allies to find cover by any means necessary. You and all allies within 60 feet count any form of lesser cover as standard cover until the start of your next turn.</p>\n<p><strong>Lead by Example</strong> If you used two actions, @UUID[Compendium.sf2e.actions.Item.ust1jJSCZQUhBZIz]{Take Cover}. Any allies within 60 feet can Take Cover as a reaction.</p>"
+                }
+            }
+        },
+        "Vorza Moonshot": {
+            "name": "Vorza Moonshot",
+            "gender": "he/him",
+            "items": {
+                "lore->Underworld Lore": {
+                    "name": "Underworld Lore"
+                },
+                "weapon->Electromag Grenade (Commercial)": {
+                    "name": "Electromag Grenade (Commercial)",
+                    "description": "<p><strong>Activate</strong> <span class=\"action-glyph\">1</span> Area Fire</p>\n<p><strong>Critical</strong> @UUID[Compendium.sf2e.conditions.Item.6A2QDy8wRGCVQsSd]{Glitching 1}</p><hr /><p>These grenades discharge a shocking field that deals 1d8 electricity damage in a @Template[burst|distance:5] with a @Check[reflex|against:class|basic] save. If you have access to the critical specialization effect of grenades, tech creatures and unattended tech items that critically fail their saving throw against electromag grenades become glitching.</p>"
+                },
+                "consumable->Medpatch (Commercial)": {
+                    "name": "Medpatch (Commercial)",
+                    "description": "<p><strong>Activate</strong> <span class=\"action-glyph\">1</span> (manipulate)</p><hr /><p>Medpatches accelerate the body's natural healing. You regain @Damage[(1d6)[healing]] Hit Points and gain a +1 item bonus to saving throws against diseases and poisons for 10 minutes.</p>\n<p>@UUID[Compendium.sf2e.equipment-effects.Item.VKSOvJQMwUby4fba]{Effect: Medpatch}</p>"
+                },
+                "ammo->Battery (Commercial)": {
+                    "name": "Battery (Commercial)"
+                },
+                "treasure->Credstick": {
+                    "name": "Credstick",
+                    "description": "<p>Most people in Starfinder keep their wealth on a protected item known as a credstick. These devices are often flat and roughly the size of a human finger. They range in dimensions and quality, but at the end of the day, they're just a means of conveniently carrying and spending money. Usage of these devices is determined by the owner, and a credstick can accept or spend funds with as simple an action as tapping it near a suitable banking device. When more rigorous security is necessary, they can require audio or biometric imprints in order to activate. Some advanced credsticks even have a magical component that might require a mental password or the recitation of a specific spell to access stored funds.</p>\n<p>Credsticks aren't gateways to the entirety of one's wealth, and larger stores of credits are often kept secured in banks, personal vaults, or secure databases. Instead, a credstick is a safe and anonymous means of moving credits around without being traced. Adventurers and common citizens alike often keep a credstick on their person to handle any purchases they might be called upon to make, while also only keeping just enough credits on them that losing the credstick wouldn't result in bankruptcy.</p>\n<p>Individuals in the Pact Worlds often carry credsticks, and other civilizations that interact with the Pact often turn local funds into credits and thus carry them to spend their converted currency. Sometimes a person might carry several credsticks, dedicating each one to a different use, or simply trading the stick away if they want to make a purchase of a predefined amount. If ever the number of credsticks on a person becomes too cumbersome, it's easy enough to move the funds between individual sticks and discard emptied sticks to save on space, however a credstick always has a negligible bulk.</p>"
+                },
+                "feat->Intimidating Shot": {
+                    "name": "Intimidating Shot",
+                    "description": "<p>You attempt to @UUID[Compendium.sf2e.actions.Item.2u915NdUyQan6uKF]{Demoralize} a foe with your ranged weapon by firing it into the air, using ammo equal to the weapon's expend and the weapon's maximum range rather than the usual range of 30 feet. This check doesn't take a –4 circumstance penalty if the target doesn't share a language with you.</p>"
+                },
+                "class->Solarian": {
+                    "name": "Solarian",
+                    "description": "<p><em>You're a conduit for the stellar forces of the cosmos—a solar knight. The powers of gravity and light represent the extremes of these forces, and you can attune yourself between them. As an agent of this cycle, you manifest an array of solar equipment and use your own connection to stellar forces to empower them. Regardless of which extreme of the stellar spectrum you prefer, you can change your attunement between them to take advantage of solar powers earned through meditation and practice.</em></p>"
+                },
+                "action->Nimbus Surge": {
+                    "name": "Nimbus Surge",
+                    "description": "<p><strong>Trigger</strong> A creature within your reach uses a manipulate action or a move action, makes a ranged attack, or leaves a square during a move action it's using.</p><hr /><p>Your nimbus surges with energy, forcing an opening in your foe's defenses. Make a melee Strike against the triggering creature. This Strike doesn't count toward your multiple attack penalty, and your multiple attack penalty doesn't apply to this Strike.</p>\n<p><strong>Graviton-Attuned</strong> If the Strike is a critical success, the target must succeed at a @Check[fortitude|against:solarian] save against your class DC or become @UUID[Compendium.sf2e.conditions.Item.MIRkyAjyBeXivMa7]{Enfeebled 1} until the end of its turn.</p>\n<p><strong>Photon-Attuned</strong> If the Strike is a critical success, the target must succeed at a @Check[fortitude|against:solarian] save against your class DC or become @UUID[Compendium.sf2e.conditions.Item.i3OJZU2nk64Df3xm]{Clumsy 1} until the start of its turn.</p>",
+                    "rules": {
+                        "1": {
+                            "text": "SF2E.SpecificRule.Solarian.NimbusSurge.GravitonNote"
+                        },
+                        "2": {
+                            "text": "SF2E.SpecificRule.Solarian.NimbusSurge.PhotonNote"
+                        }
+                    }
+                },
+                "action->Re-Forge Solar Weapon": {
+                    "name": "Re-Forge Solar Weapon",
+                    "description": "<p>You spend 10 minutes focusing on the composition of your solar weapon. You can change your solar weapon's damage type (typically choosing between bludgeoning, piercing, or slashing), selected traits, and weapon group. Your weapon maintains your selections until the next time you Re-Forge Solar Weapon.</p>\n<p>@UUID[Compendium.sf2e.feat-effects.Item.UlFxEP3YrbseKA62]{Effect: Solar Weapon}</p>"
+                },
+                "action->Attune": {
+                    "name": "Attune",
+                    "description": "<p><strong>Frequency</strong> once per round</p><hr /><p>You steady your body and mind and attune yourself to the stellar aspect of your choice. You become attuned to photon or graviton. You can also manifest any of your solar manifestations if they're currently dormant and if you have the free hands to use them.</p><hr /><p><strong>Special</strong> In addition to the above usage, you can also Attune as a free action when you roll initiative.</p>\n<p>@UUID[Compendium.sf2e.feat-effects.Item.UlFxEP3YrbseKA62]{Effect: Solar Weapon}</p>"
+                },
+                "feat->Fearless": {
+                    "name": "Fearless",
+                    "description": "<p>Whether it comes from a sense of duty or a desire to succeed, you rarely flinch when confronted by fearsome foes. If you roll a success on a saving throw against a fear effect, you get a critical success instead.</p>"
+                },
+                "feat->Solar Shield": {
+                    "name": "Solar Shield",
+                    "description": "<p>You've developed a new solar manifestation—a small shield of stellar energy that orbits you. This energy shield has the attuned and solarian traits and doesn't require a hand to use. You can Raise a Shield, giving you a +1 circumstance bonus to AC until the start of your next turn. You gain the Shield Block general feat.</p>\n<p>@UUID[Compendium.sf2e.feat-effects.Item.q5W7fV1wXvqBFxt8]{Effect: Solar Shield}</p>\n<p>While the shield is raised, you can use the Shield Block reaction with your shield. The shield has Hit Points equal to 5 plus twice your level and Hardness equal to half your level, rounded up. Your shield can't be broken, but if it's destroyed, you can't manifest a new shield for 10 minutes. If your shield vanishes due to you losing attunement, when you Attune to reform it, the shield returns with however many Hit Points it previously had. The shield regains all its lost Hit Points during your daily preparations and whenever you rest for at least 10 minutes, even if it's been destroyed.</p>\n<p><strong>Graviton-Attuned</strong> If your shield is destroyed, it releases a shock wave. Adjacent enemies must succeed at a @Check[fortitude|against:solarian] save against your class DC or be @UUID[Compendium.sf2e.conditions.Item.enA7BxAjBb7ns1iF]{Suppressed} for 1 round (2 rounds on a critical failure).</p>\n<p><strong>Photon-Attuned</strong> If your shield is destroyed, it releases a flash of light. Adjacent enemies must succeed at a @Check[fortitude|against:solarian] save against your class DC or be @UUID[Compendium.sf2e.conditions.Item.TkIyaNPgTZFBCCuh]{Dazzled} for 1 round (@UUID[Compendium.sf2e.conditions.Item.XgEqL1kFApUbl5Z2]{Blinded} for 1 round on a critical failure).</p>"
+                },
+                "feat->Shield Block": {
+                    "name": "Shield Block",
+                    "description": "<p><strong>Trigger</strong> While you have your shield raised, you would take physical damage (bludgeoning, piercing, or slashing) from an attack.</p>\n<hr />\n<p>You snap your shield in place to ward off a blow. Your shield prevents you from taking an amount of damage up to the shield's Hardness. You and the shield each take any remaining damage, possibly breaking or destroying the shield.</p>"
+                }
+            }
+        },
+        "“Nitpick” Bennit": {
+            "name": "“Nitpick” Bennit",
+            "gender": "he/him",
+            "items": {
+                "spellcastingEntry->Arcane Spontaneous Spells": {
+                    "name": "Arcane Spontaneous Spells"
+                },
+                "lore->Robot Lore": {
+                    "name": "Robot Lore"
+                },
+                "lore->Striving Lore": {
+                    "name": "Striving Lore"
+                },
+                "spellcastingEntry->Arcane Focus Spells": {
+                    "name": "Arcane Focus Spells"
+                },
+                "equipment->Hacking Toolkit (Commercial)": {
+                    "name": "Hacking Toolkit (Commercial)",
+                    "description": "<p>A hacking toolkit is required for Computers checks to Hack computers. You can use a hacking toolkit to access a computer without using a user interface, but this requires physical contact with the computer or contact via an infosphere or a similar linked network.</p>"
+                },
+                "weapon->Frag Grenade (Commercial)": {
+                    "name": "Frag Grenade (Commercial)",
+                    "description": "<p><strong>Activate</strong> <span class=\"action-glyph\">1</span> Area Fire</p>\n<p><strong>Critical</strong> @Damage[1[bleed]]</p><hr /><p>These fragmentary grenades explode in a cloud of shrapnel and deal 1d8 piercing damage in a @Template[burst|distance:5] with a @Check[reflex|against:class|basic] save.</p>"
+                },
+                "ammo->Battery (Commercial)": {
+                    "name": "Battery (Commercial)"
+                },
+                "treasure->Credstick": {
+                    "name": "Credstick",
+                    "description": "<p>Most people in Starfinder keep their wealth on a protected item known as a credstick. These devices are often flat and roughly the size of a human finger. They range in dimensions and quality, but at the end of the day, they're just a means of conveniently carrying and spending money. Usage of these devices is determined by the owner, and a credstick can accept or spend funds with as simple an action as tapping it near a suitable banking device. When more rigorous security is necessary, they can require audio or biometric imprints in order to activate. Some advanced credsticks even have a magical component that might require a mental password or the recitation of a specific spell to access stored funds.</p>\n<p>Credsticks aren't gateways to the entirety of one's wealth, and larger stores of credits are often kept secured in banks, personal vaults, or secure databases. Instead, a credstick is a safe and anonymous means of moving credits around without being traced. Adventurers and common citizens alike often keep a credstick on their person to handle any purchases they might be called upon to make, while also only keeping just enough credits on them that losing the credstick wouldn't result in bankruptcy.</p>\n<p>Individuals in the Pact Worlds often carry credsticks, and other civilizations that interact with the Pact often turn local funds into credits and thus carry them to spend their converted currency. Sometimes a person might carry several credsticks, dedicating each one to a different use, or simply trading the stick away if they want to make a purchase of a predefined amount. If ever the number of credsticks on a person becomes too cumbersome, it's easy enough to move the funds between individual sticks and discard emptied sticks to save on space, however a credstick always has a negligible bulk.</p>"
+                },
+                "feat->Sharp Teeth": {
+                    "name": "Sharp Teeth",
+                    "description": "<p>Your prominent incisors offer an alternative to the fists other humanoids bring to a fight. You have a jaws unarmed attack that deals 1d4 piercing damage, is in the brawling group, and has the agile and finesse traits.</p>"
+                },
+                "feat->Quick Squeeze": {
+                    "name": "Quick Squeeze",
+                    "description": "<p>You Squeeze 5 feet per round (10 feet on a critical success). If you're legendary in Acrobatics, you Squeeze at full Speed.</p>"
+                },
+                "feat->Face in the Crowd": {
+                    "name": "Face in the Crowd",
+                    "description": "<p>You know how to get lost in a crowd. You can use cover from crowds to Hide and @UUID[Compendium.sf2e.actions.Item.VMozDqMMuK5kpoX4]{Sneak}, gaining a +2 circumstance bonus to your Stealth checks when in a crowd of at least 10 creatures and a +4 circumstance bonus to your Stealth checks when in a crowd of at least 100 creatures. Hidden creatures don't count as members of a crowd. If you're a master in Deception you only need 5 creatures to get these bonuses.</p>\n<p>@UUID[Compendium.sf2e.feat-effects.Item.IaICLG7zwOV4OKgM]{Effect: Face in the Crowd}</p>"
+                },
+                "class->Witchwarper": {
+                    "name": "Witchwarper",
+                    "description": "<p><em>A strange paradoxical event forever altered your existence, and now you can manipulate reality. You explore the infinite possibilities of the multiverse, possibly visualizing variant timelines or parallel worlds. You create fields that subvert space and time, allowing you to cast powerful magic. You've learned to focus on an anchoring memory, concept, or object to help you identify reality.</em></p>"
+                },
+                "action->Warp Reality": {
+                    "name": "Warp Reality",
+                    "description": "<p><strong>Requirements</strong> Your quantum field isn't active.</p><hr /><p>Your quantum field activates and lasts as long as you Sustain it (up to 10 minutes) or until the end of your next turn. Your quantum field is a @Template[type:burst|distance:20] centered on a point you choose within 100 feet. While your quantum field is active, you can use actions that have the anchoring trait. Your quantum field's other specific effects are determined by your paradox. Choose whether any given creature in the area is affected by your quantum field when you Warp Reality, each time you Sustain it, and when a creature enters your quantum field. Each time you Sustain a quantum field with the Sustain action (instead of an anchoring action), you can move it to a new position within 100 feet.</p>\n<p>Your quantum field automatically deactivates if you're knocked out, if you Dismiss it, or if you move more than 100 feet away from it.</p>"
+                },
+                "action->Quantum Pulse": {
+                    "name": "Quantum Pulse",
+                    "description": "<p><strong>Trigger</strong> You roll initiative.</p><hr /><p>You're always ready to let loose with your paradoxical abilities, and when imperiled, you instinctively release a pulse of quantum energy. As combat begins, you @UUID[Compendium.sf2e.actions.Item.ZoMpqQgDdlT13Jp0]{Warp Reality}.</p>"
+                },
+                "feat->Tinkering Fingers": {
+                    "name": "Tinkering Fingers",
+                    "description": "<p>You grew up learning to tinker with devices, repair objects, and take things apart. You're trained in Crafting. If you're trained in Crafting from another source (from your background or class, for example), you instead become trained in a skill of your choice. You can @UUID[Compendium.sf2e.actions.Item.bT3skovyLUtP22ME]{Repair} an item without using a repair toolkit without taking the –2 circumstance penalty, improvising tools from whatever you have at hand. You gain a +1 circumstance bonus to Crafting checks to Repair an item when you have a repair toolkit.</p>"
+                }
+            }
+        }
+    },
+    "mapping": {
+        "gender": "system.details.gender.value",
+        "items": {
+            "converter": "translateActorItems",
+            "path": "items"
+        },
+        "rules": {
+            "converter": "translateRules",
+            "path": "system.rules"
+        }
+    }
+}

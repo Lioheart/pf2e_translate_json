@@ -1,0 +1,574 @@
+{
+    "label": "Feat-Effects",
+    "entries": {
+        "Effect: According to My Calculations": {
+            "name": "Effect: According to My Calculations",
+            "description": "<p>Granted by @UUID[Compendium.sf2e.feats.Item.IJvX7FJ40i84XPuR]{According to My Calculations}</p>\n<p>You gain a circumstance bonus or penalty to your next skill check or attack roll depending on the result.</p>"
+        },
+        "Effect: Adaptive Defense": {
+            "name": "Effect: Adaptive Defense",
+            "description": "<p>Granted by @UUID[Compendium.sf2e.feats.Item.y0dtKu1ZuwqMUFEf]{Adaptive Defense}</p>\n<p>You gain resistance to one type of damage equal to the spell's rank.</p>"
+        },
+        "Effect: Adaptive Locomotion": {
+            "name": "Effect: Adaptive Locomotion",
+            "description": "<p>Granted by @UUID[Compendium.sf2e.actions.Item.iIESt0oV0vobl41N]{Adaptive Locomotion}</p>\n<p>If you select flippers, you gain a swim Speed of 20 feet. If you select hooked pseudopods, you gain a climb Speed of 20 feet. This transformation lasts for 10 minutes.</p>",
+            "rules": {
+                "0": {
+                    "choices": {
+                        "0": {
+                            "label": "SF2E.SpecificRule.Barathu.AdaptativeLocomotion.Flippers"
+                        },
+                        "1": {
+                            "label": "SF2E.SpecificRule.Barathu.AdaptativeLocomotion.HookedPseudopods"
+                        }
+                    },
+                    "prompt": "SF2E.SpecificRule.Barathu.AdaptativeLocomotion.Prompt"
+                }
+            }
+        },
+        "Effect: Aim": {
+            "name": "Effect: Aim",
+            "description": "<p>Granted by @UUID[Compendium.sf2e.actions.Item.sLikawnrJJzHMYeC]{Aim}</p>\n<p>You mark a creature. Your ranged Strikes against your mark using the required ranged weapon deal additional precision damage and reduce the circumstance bonus to AC your mark gains from cover. These benefits only apply if your mark is within your weapon's first range increment.</p>",
+            "rules": {
+                "1": {
+                    "label": "SF2E.SpecificRule.Operative.Aim.CoverToggle"
+                }
+            }
+        },
+        "Effect: Aim (Reduce Cover)": {
+            "name": "Effect: Aim (Reduce Cover)",
+            "description": "<p>Granted by @UUID[Compendium.sf2e.actions.Item.sLikawnrJJzHMYeC]{Aim} via Ephemeral Effect</p>\n<p>Your circumstance bonus from cover is reduced.</p>"
+        },
+        "Effect: Anchoring Impacts": {
+            "name": "Effect: Anchoring Impacts",
+            "description": "<p>Granted by @UUID[Compendium.sf2e.feats.Item.jlfPjyWEzxQ2GiDh]{Anchoring Impacts}</p>\n<p>Your speed penalty from the suppressed condition increases to a—20-foot status penalty.</p>"
+        },
+        "Effect: Apocalypse Smite": {
+            "name": "Effect: Apocalypse Smite",
+            "description": "<p>The Fang deals an additional 2d8 void damage to the marked target.</p>"
+        },
+        "Effect: Assistive Shove": {
+            "name": "Effect: Assistive Shove",
+            "description": "<p>Granted by @UUID[Compendium.sf2e.feats.Item.TD9g4O6m7jngmFag]{Assistive Shove}</p>\n<p>You gain a +2 circumstance bonus to your AC.</p>"
+        },
+        "Effect: Atmospheric Flight": {
+            "name": "Effect: Atmospheric Flight",
+            "description": "<p>Granted by @UUID[Compendium.sf2e.feats.Item.wZyBTTRM2BjC93gg]{Atmospheric Flight}</p>\n<p>You gain a fly Speed equal to your land Speed plus 10 feet.</p>"
+        },
+        "Effect: Attuned Wards": {
+            "name": "Effect: Attuned Wards",
+            "description": "<p>Granted by @UUID[Compendium.sf2e.feats.Item.eTefuy0BRvwAcqbQ]{Attuned Wards} via Ephemeral Effect</p>\n<p>You become clumsy 1 and off-guard for 1 round. This increases to clumsy 2 if this is the second time you hit the origin this turn.</p>",
+            "rules": {
+                "0": {
+                    "text": "SF2E.SpecificRule.Solarian.AttunedWards.GravitonNote"
+                }
+            }
+        },
+        "Effect: Battle Medicine Immunity": {
+            "name": "Effect: Battle Medicine Immunity",
+            "description": "<p>Granted by @UUID[Compendium.sf2e.feats.Item.wYerMk6F1RZb0Fwt]{Battle Medicine}</p>\n<p>You are temporarily immune to Battle Medicine from that person.</p>"
+        },
+        "Effect: Bolstered by Battle": {
+            "name": "Effect: Bolstered by Battle",
+            "description": "<p>Granted by @UUID[Compendium.sf2e.feats.Item.HKmLMpA5esbUsxTB]{Bolstered By Battle}</p>\n<p>You gain a number of temporary Hit Points equal to your level.</p>"
+        },
+        "Effect: Bond Boost": {
+            "name": "Effect: Bond Boost",
+            "description": "<p>Granted by @UUID[Compendium.sf2e.feats.Item.LGrCVzOvUayHW1Pu]{Bond Boost}</p>\n<p>You gain a +1 status bonus to your next saving throw. If you roll a success on the saving throw against a vitality or void effect, you get a critical success instead.</p>"
+        },
+        "Effect: Bond Spell": {
+            "name": "Effect: Bond Spell",
+            "description": "<p>Granted by @UUID[Compendium.sf2e.feats.Item.ANmwfBz6O24D5Zje]{Bond Spell}</p>\n<p>You gain a status bonus to your spell's damage or healing equal to its rank.</p>"
+        },
+        "Effect: Bone Shards": {
+            "name": "Effect: Bone Shards",
+            "description": "<p>Granted by @UUID[Compendium.sf2e.feats.Item.6EULnMpte8cl2EET]{Bone Shards}</p>\n<p>You gain a bone shards unarmed attack that deals 1d8 piercing damage. Your bone shards are in the projectile group and have the area (cone) trait with a range of 15 feet.</p>",
+            "rules": {
+                "0": {
+                    "label": "SF2E.SpecificRule.Corpsefolk.BoneShards.Label"
+                }
+            }
+        },
+        "Effect: Bring it On!": {
+            "name": "Effect: Bring it On!",
+            "description": "<p>Granted by @UUID[Compendium.sf2e.feats.Item.3mMNEAr5wgTFC9mC]{Bring it On!}</p>\n<p>You take a –2 circumstance penalty to AC and gain resistance to all damage equal to half your level. If you have the armor storm fighting style, this resistance is doubled against attacks made by suppressed creatures.</p>"
+        },
+        "Effect: Bullet Fever": {
+            "name": "Effect: Bullet Fever",
+            "description": "<p>Granted by @UUID[Compendium.sf2e.feats.Item.9RqJNPSx5T6b2WoB]{Bullet Fever}</p>\n<p>You gain temporary Hit Points equal to half your level, you apply precision damage to all targets as though you were Aiming, and you take a –1 circumstance penalty to AC and Will saves.</p>"
+        },
+        "Effect: Cellular Regeneration": {
+            "name": "Effect: Cellular Regeneration",
+            "description": "<p>Granted by @UUID[Compendium.sf2e.feats.Item.SiVWK0ksapz0Y8UU]{Cellular Regeneration}</p>\n<p>You gain regeneration equal to half your level.</p>"
+        },
+        "Effect: Confounding Disquisition (Failure)": {
+            "name": "Effect: Confounding Disquisition (Failure)",
+            "description": "<p>Granted by @UUID[Compendium.sf2e.feats.Item.WR4Ziq4PIq2HFWyv]{Confounding Disquisition}</p>\n<p>You take a –1 status penalty to Perception checks and Will saves.</p>"
+        },
+        "Effect: Cooperative": {
+            "name": "Effect: Cooperative",
+            "description": "<p>Granted by @UUID[Compendium.sf2e.feats.Item.LHtaCR4gS4kozJyP]{Cooperative}</p>\n<p>You gain a +2 circumstance bonus to checks to Aid.</p>"
+        },
+        "Effect: Covering Fire": {
+            "name": "Effect: Covering Fire",
+            "description": "<p>Granted by @UUID[Compendium.sf2e.feats.Item.bSNHMpq5e4ZYOyWo]{Covering Fire}</p>\n<p>You take a –2 circumstance penalty on attacks made against the marked target.</p>"
+        },
+        "Effect: Deadlift": {
+            "name": "Effect: Deadlift",
+            "description": "<p>Granted by @UUID[Compendium.sf2e.feats.Item.Wc26O3XFKxWfxY5N]{Deadlift}</p>\n<p>You can carry 4 more Bulk than normal before becoming encumbered. The amount you can carry increases to 6 at expert, 8 at master, and 10 at legendary.</p>"
+        },
+        "Effect: Defensive Formation": {
+            "name": "Effect: Defensive Formation",
+            "description": "<p>Granted by @UUID[Compendium.sf2e.feats.Item.xF4Vse5IwmWveqxI]{Defensive Formation}</p>\n<p>You gain a +1 circumstance bonus to AC and Reflex saving throws.</p>"
+        },
+        "Effect: Dehydrated": {
+            "name": "Effect: Dehydrated",
+            "description": "<p>Granted by @UUID[Compendium.sf2e.ancestry-features.Item.ViiaTAW4zaoaYeim]{Hydration}</p>\n<p>You take a -1 status penalty to Fortitude saves.</p>"
+        },
+        "Effect: Digital Assessment!": {
+            "name": "Effect: Digital Assessment!",
+            "description": "<p>Granted by @UUID[Compendium.sf2e.actions.Item.4oIErnhDm0qCCpxs]{Digital Assessment!}</p>\n<p>You gain a +1 circumstance bonus to AC against attacks made by the marked creature.</p>"
+        },
+        "Effect: Dramatic Reading (Critical Success)": {
+            "name": "Effect: Dramatic Reading (Critical Success)",
+            "description": "<p>Granted by @UUID[Compendium.sf2e.feats.Item.QYQmAFvXirWpHeC3]{Dramatic Reading}</p>\n<p>You take a –1 status penalty to Perception and Will saves.</p>"
+        },
+        "Effect: Dramatic Reading (Success)": {
+            "name": "Effect: Dramatic Reading (Success)",
+            "description": "<p>Granted by @UUID[Compendium.sf2e.feats.Item.QYQmAFvXirWpHeC3]{Dramatic Reading}</p>\n<p>You take a –1 status penalty to Perception and Will saves.</p>"
+        },
+        "Effect: Drop Tail": {
+            "name": "Effect: Drop Tail",
+            "description": "<p>Granted by @UUID[Compendium.sf2e.feats.Item.8jmGw4nCmoq7pLWV]{Drop Tail}</p>\n<p>Your Speed is reduced by 5 feet, and you take a –2 status penalty to Acrobatics checks.</p>"
+        },
+        "Effect: Dual Aim": {
+            "name": "Effect: Dual Aim",
+            "description": "<p>Granted by @UUID[Compendium.sf2e.feats.Item.hE7UxbuJvB1PsB6x]{Dual Aim}</p>\n<p>You select a second creature as your mark.</p>"
+        },
+        "Effect: Effortless Influencer": {
+            "name": "Effect: Effortless Influencer",
+            "description": "<p>Granted by @UUID[Compendium.sf2e.feats.Item.cMbBH7RBX6Qtrym3]{Effortless Influencer}</p>\n<p>You gain a +1 status bonus to the next check you attempt with the chosen skill (or a +2 bonus if your check was a critical success).</p>"
+        },
+        "Effect: Electric Kalo": {
+            "name": "Effect: Electric Kalo",
+            "description": "<p>Granted by @UUID[Compendium.sf2e.heritages.Item.ZAOKze0PTYPPbUua]{Electric Kalo}</p>\n<p>You gain electricity resistance equal to half your level (minimum 1).</p>"
+        },
+        "Effect: Elemental Harmony": {
+            "name": "Effect: Elemental Harmony",
+            "description": "<p>Granted by @UUID[Compendium.sf2e.class-features.Item.AurhNoZmNNhHktx6]{Elemental}</p>\n<p>Your next Strike deals the chosen type of damage rather than its typical damage.</p>"
+        },
+        "Effect: Elemental Perfect Harmony": {
+            "name": "Effect: Elemental Perfect Harmony",
+            "description": "<p>Granted by @UUID[Compendium.sf2e.class-features.Item.AurhNoZmNNhHktx6]{Elemental}</p>\n<p>You gain resistance to two elements chosen during the mystic's daily preparations.</p>"
+        },
+        "Effect: Energy Consumption": {
+            "name": "Effect: Energy Consumption",
+            "description": "<p>Granted by @UUID[Compendium.sf2e.feats.Item.3RqBU4dfoegOPzqw]{Energy Consumption}</p>\n<p>You gain temporary Hit Points equal to your level and the Energy Shielding feat.</p>"
+        },
+        "Effect: Energy Infusion": {
+            "name": "Effect: Energy Infusion",
+            "description": "<p>Your Strikes become magical and either deal 1 additional spirit damage and gain the unholy trait against living creatures, or deal 1 additional spirit damage and gain the holy trait against undead.</p>"
+        },
+        "Effect: Enter Rivener State": {
+            "name": "Effect: Enter Rivener State",
+            "description": "<p>Granted by @UUID[Compendium.sf2e.feats.Item.kxXC7sNk5GCDqKeZ]{Enter Rivener State}</p>\n<p>You become Large. Your reach increases by 5 feet, and you gain a +2 status bonus to melee damage. You become @UUID[Compendium.sf2e.conditions.Item.e1XGnhKNSQIm5IXg]{Stupefied 1}.</p>"
+        },
+        "Effect: Face in the Crowd": {
+            "name": "Effect: Face in the Crowd",
+            "description": "<p>Granted by @UUID[Compendium.sf2e.feats.Item.N68CjcvYmLF35KrD]{Face in the Crowd}</p>\n<p>You gain a +2 circumstance bonus on your Stealth check when in a crowd of at least 10 creatures or a +4 circumstance bonus when in a crowd of at least 100 creatures. If you're a master in Deception you only need 5 creatures to get these bonuses.</p>",
+            "rules": {
+                "0": {
+                    "choices": {
+                        "0": {
+                            "label": "SF2E.SpecificRule.SkillFeat.FaceInTheCrowd.CrowdSize.Ten"
+                        },
+                        "1": {
+                            "label": "SF2E.SpecificRule.SkillFeat.FaceInTheCrowd.CrowdSize.Five"
+                        },
+                        "2": {
+                            "label": "SF2E.SpecificRule.SkillFeat.FaceInTheCrowd.CrowdSize.Hundred"
+                        }
+                    },
+                    "prompt": "SF2E.SpecificRule.SkillFeat.FaceInTheCrowd.Prompt"
+                }
+            }
+        },
+        "Effect: Focus Senses": {
+            "name": "Effect: Focus Senses",
+            "description": "<p>Granted by @UUID[Compendium.sf2e.actions.Item.0vqXr3SYakIa19k3]{Focus Senses}</p>\n<p>You gain echolocation (precise) 30 feet.</p>"
+        },
+        "Effect: Get 'Em!": {
+            "name": "Effect: Get 'Em!",
+            "description": "<p>Granted by @UUID[Compendium.sf2e.actions.Item.cmCtfURzpbzkxWsy]{Get 'Em!}</p>\n<p>You gain a +1 status bonus to attacks against the marked target.</p>\n<p><strong>Lead by Example</strong> The origin gains a status bonus to their initial Strike against the marked target equal to their Charisma modifier. You gain a status bonus to damage on subsequent Strikes made against the enemy until the start of your next turn.</p>",
+            "rules": {
+                "1": {
+                    "prompt": "SF2E.SpecificRule.Envoy.Directive.LeadByExample.Prompt"
+                },
+                "2": {
+                    "label": "SF2E.SpecificRule.Envoy.GetEm.LeadByExample.ToggleLabel"
+                }
+            }
+        },
+        "Effect: Get in There!": {
+            "name": "Effect: Get in There!",
+            "description": "<p>Granted by @UUID[Compendium.sf2e.feats.Item.ndYnIz8DvI8RpAup]{Get in There!}</p>\n<p>You gain a +5-foot status bonus to Speed. Increase the distance by an additional 5 feet at 7th level, 12th level, and 17th level.</p>"
+        },
+        "Effect: Gorge": {
+            "name": "Effect: Gorge",
+            "description": "<p>You gain a number of temporary Hit Points equal to 10 plus half your level, rounded down.</p>"
+        },
+        "Effect: Got 'Em": {
+            "name": "Effect: Got 'Em",
+            "description": "<p>Granted by @UUID[Compendium.sf2e.feats.Item.15v6nXEIi10i0CNI]{Got 'Em}</p>\n<p>You gain a status bonus to damage equal to the origin's Charisma modifier.</p>"
+        },
+        "Effect: Hang In There!": {
+            "name": "Effect: Hang In There!",
+            "description": "<p>Granted by @UUID[Compendium.sf2e.feats.Item.YRy857LORIhKOgbY]{Hang in There}</p>\n<p>You gain temporary Hit Points.</p>",
+            "rules": {
+                "1": {
+                    "prompt": "SF2E.SpecificRule.Envoy.HangInThere.Prompt"
+                }
+            }
+        },
+        "Effect: Harmonic Convergence": {
+            "name": "Effect: Harmonic Convergence",
+            "description": "<p>Granted by @UUID[Compendium.sf2e.feats.Item.ELkCf9SO5URWXP0R]{Harmonic Convergence}</p>\n<p>You gain temporary Hit Points equal to half your level.</p>"
+        },
+        "Effect: Heroic Last Stand": {
+            "name": "Effect: Heroic Last Stand",
+            "description": "<p>Granted by @UUID[Compendium.sf2e.feats.Item.a9ER2amvCuQEJODm]{Heroic Last Stand}</p>\n<p>You gain temporary Hit Points equal to your level. As long as you have these temporary Hit Points, you gain a +1 circumstance bonus to Will saves against fear effects and a +2 circumstance bonus to your Will DC against attempts to Demoralize you.</p>"
+        },
+        "Effect: Hidden Agenda": {
+            "name": "Effect: Hidden Agenda",
+            "description": "<p>Granted by @UUID[Compendium.sf2e.class-features.Item.M9TRPDyDZI4dDFCJ]{Hidden Agenda} via Ephemeral Effect</p>\n<p>When you roll a critical success to Sense Motive against the origin, you get a success instead.</p>"
+        },
+        "Effect: Holo-Roger": {
+            "name": "Effect: Holo-Roger",
+            "description": "<p>Granted by @UUID[Compendium.sf2e.actions.Item.8zWFGKRXg1SxIwFH]{Holo-Roger}</p>\n<p>You gain a +1 circumstance bonus to Intimidation checks to Coerce.</p>"
+        },
+        "Effect: Homing Mote": {
+            "name": "Effect: Homing Mote",
+            "description": "<p>Granted by @UUID[Compendium.sf2e.feats.Item.uLZcelY6CTKJOOLU]{Homing Mote} via Ephemeral Effect</p>\n<p>Your cover bonus, as well as your concealment, is ignored by the origin.</p>"
+        },
+        "Effect: Improvised Mastery": {
+            "name": "Effect: Improvised Mastery",
+            "description": "<p>Granted by @UUID[Compendium.sf2e.actions.Item.WFFYDg0sgjaXCeq6]{Improvised Mastery}</p>\n<p>You gain master proficiency in the selected skill, or legendary proficiency if you have legendary improvisation.</p>"
+        },
+        "Effect: Infernal Armaments": {
+            "name": "Effect: Infernal Armaments",
+            "description": "<p>Granted by @UUID[Compendium.sf2e.feats.Item.WpJCB3dCycbIzG3w]{Infernal Armaments}</p>\n<p>Your gain a status bonus equal to twice the number of weapon damage dice on your first weapon Strike each round. The damage type of this additional damage is determined by your Hellknight's Order.</p>"
+        },
+        "Effect: Infiltrator Enhanced Exploit": {
+            "name": "Effect: Infiltrator Enhanced Exploit",
+            "description": "<p>Granted by @UUID[Compendium.sf2e.class-features.Item.u4hB3FGFJwGtjrZB]{Infiltrator} via Ephemeral Effect</p>\n<p>The origin can Sabotage as a reaction whenever you critically fail a melee attack roll against them.</p>",
+            "rules": {
+                "0": {
+                    "text": "SF2E.SpecificRule.Operative.Specialization.Infiltrator.EnhancedExploit.ReactionNote"
+                }
+            }
+        },
+        "Effect: Inscrutable": {
+            "name": "Effect: Inscrutable",
+            "description": "<p>Granted by @UUID[Compendium.sf2e.class-features.Item.8bE9icPZbaqFDGlC]{Inscrutable} via Ephemeral Effect</p>\n<p>When you roll a critical success or a success to Sense Motive against the origin, you get a failure instead.</p>"
+        },
+        "Effect: Intimidating Taunt": {
+            "name": "Effect: Intimidating Taunt",
+            "description": "<p>Granted by @UUID[Compendium.sf2e.feats.Item.8EnKNTqKEZJBoIQb]{Intimidating Taunt}</p>\n<p>You take a –2 circumstance penalty to attack rolls and save DCs for hostile actions that don't include the origin as their target. On a success, only the first hostile action that you take is affected.</p>",
+            "rules": {
+                "1": {
+                    "label": "SF2E.SpecificRule.Soldier.IntimidatingTaunt.ToggleLabel"
+                },
+                "4": {
+                    "label": "SF2E.SpecificRule.Soldier.IntimidatingTaunt.Label"
+                }
+            }
+        },
+        "Effect: Into Position! (Lead by Example)": {
+            "name": "Effect: Into Position! (Lead by Example)",
+            "description": "<p>Granted by @UUID[Compendium.sf2e.actions.Item.1lkfbLoteDlzoqxb]{Into Position!} using Lead by Example.</p>\n<p>You take a –1 circumstance penalty on attacks made against other creatures</p>"
+        },
+        "Effect: Keep on Keeping On!": {
+            "name": "Effect: Keep on Keeping On!",
+            "description": "<p>Granted by @UUID[Compendium.sf2e.actions.Item.oRdDgSC3RVpNgisd]{Keep on Keeping On!}</p>\n<p>You increase the next healing you receive by an amount equal to the origin's Charisma modifier plus half their level.</p>"
+        },
+        "Effect: Kindle Blaze": {
+            "name": "Effect: Kindle Blaze",
+            "description": "<p>Granted by @UUID[Compendium.sf2e.feats.Item.dp3jTnxAb98E2BCk]{Kindle Blaze}</p>\n<p>You shed bright light in a 30-foot radius and dim light to the next 30 feet. You also gain a +1 circumstance bonus to saves against attacks, spells, and other effects that have the cold trait.</p>"
+        },
+        "Effect: Manifest Energy Wings": {
+            "name": "Effect: Manifest Energy Wings",
+            "description": "<p>Granted by @UUID[Compendium.sf2e.actions.Item.NEYVJWYtgl0rRSwg]{Manifest Energy Wings}</p>\n<p>You gain a fly Speed equal to your land Speed plus 10 feet.</p>"
+        },
+        "Effect: Meandering Mind": {
+            "name": "Effect: Meandering Mind",
+            "description": "<p>Granted by @UUID[Compendium.sf2e.feats.Item.U0g9zLZAat8RMJvx]{Meandering Mind}</p>\n<p>You gain a +2 status bonus to saving throws against mental effects until the start of your next turn.</p>"
+        },
+        "Effect: Meditative Analysis": {
+            "name": "Effect: Meditative Analysis",
+            "description": "<p>Granted by @UUID[Compendium.sf2e.feats.Item.d8ekF23HTScyOrbr]{Meditative Analysis}</p>\n<p>You gain a +1 circumstance bonus to your next solar weapon Strike.</p>"
+        },
+        "Effect: Mental Interference": {
+            "name": "Effect: Mental Interference",
+            "description": "<p>Granted by @UUID[Compendium.sf2e.feats.Item.pOQv4G8pLP6SWbmr]{Mental Interference}</p>\n<p>You take a –1 status penalty to attack rolls and Will saves (–2 on a critical success).</p>"
+        },
+        "Effect: Mobile Aim": {
+            "name": "Effect: Mobile Aim",
+            "description": "<p>Commander Eiran's attacks made with the chosen weapon deal an additional 2d6 precision damage and reduce the target's cover bonus to AC by 1.</p>"
+        },
+        "Effect: Mobile Aim (Ephemeral)": {
+            "name": "Effect: Mobile Aim (Ephemeral)",
+            "description": "<p>Your cover bonus to AC is reduced by 1.</p>"
+        },
+        "Effect: Nanite Form": {
+            "name": "Effect: Nanite Form",
+            "description": "<p>Granted by @UUID[Compendium.sf2e.feats.Item.OlSfsaJSE4Lk7wkt]{Nanite Form}</p>\n<p>You become Huge, gain the swarm trait, and gain a fly Speed of 40 feet. As a swarm, you have the following characteristics.</p><ul><li>You're immune to the @UUID[Compendium.sf2e.conditions.Item.kWc1fhmv9LBiTuei]{Grabbed}, @UUID[Compendium.sf2e.conditions.Item.j91X7x0XSomq8d60]{Prone}, and @UUID[Compendium.sf2e.conditions.Item.VcDeM8A5oI6VqhbM]{Restrained} conditions.</li><li>You have weakness 5 to area and splash damage.</li><li>You can occupy the same space as other creatures and must do so to use your damaging ability.</li><li>As a 2-action activity, you can deal @Damage[10d6[acid]] damage to all creatures sharing your space (basic Reflex save with a DC equal to your class DC or spell DC, whichever is higher).</li><li>You can't speak, Cast Spells, use manipulate actions requiring your hands, Activate magic items, or make any Strikes with your normal body.</li><li>You don't gain the swarm mind ability, so you're still affected normally by mental effects.</li></ul>"
+        },
+        "Effect: Nanite Surge": {
+            "name": "Effect: Nanite Surge",
+            "description": "<p>Granted by @UUID[Compendium.sf2e.feats.Item.JS24EjgLYcHB9E3T]{Nanite Surge}.</p>\n<p>Your circuitry glows, lighting a @Template[emanation|distance:10] with dim light for 1 round.</p>"
+        },
+        "Effect: Nanite Surge (Bonus)": {
+            "name": "Effect: Nanite Surge (Bonus)",
+            "description": "<p>Granted by @UUID[Compendium.sf2e.feats.Item.JS24EjgLYcHB9E3T]{Nanite Surge}.</p>\n<p>You gain a +2 status bonus to the triggering skill check.</p>"
+        },
+        "Effect: Nimbus Ward": {
+            "name": "Effect: Nimbus Ward",
+            "description": "<p>Granted by @UUID[Compendium.sf2e.feats.Item.hAOjYvcgTbWQffbT]{Nimbus Ward}</p>\n<p>Choose a damage type depending on your current attunement. You gain resistance to the chosen damage type equal to half your level (rounded up).</p>"
+        },
+        "Effect: Not in the Face": {
+            "name": "Effect: Not in the Face",
+            "description": "<p>Granted by @UUID[Compendium.sf2e.feats.Item.OlIuxKxrKAeDklfN]{Not in the Face}</p>\n<p>You take a status penalty to attack and damage rolls against the origin. On a failure, you instead take a –1 status penalty to the triggering attack roll.</p>"
+        },
+        "Effect: Phase Shift": {
+            "name": "Effect: Phase Shift",
+            "description": "<p>The swarm becomes incorporeal until the start of its next turn. It also gains resistance 10 to all damage (except force, ghost touch, or spirit; double resistance vs non-magical). While incorporeal, the swarm deals an additional 1d10 precision damage to creatures that fail its save against Swarming Bites.</p>"
+        },
+        "Effect: Photosynthetic Regeneration": {
+            "name": "Effect: Photosynthetic Regeneration",
+            "description": "<p>Granted by @UUID[Compendium.sf2e.feats.Item.ywM6SzmYVXtYExQn]{Photosynthetic Regeneration}</p>\n<p>You gain regeneration 20.</p>"
+        },
+        "Effect: Plant Rumor": {
+            "name": "Effect: Plant Rumor",
+            "description": "<p>Granted by @UUID[Compendium.sf2e.feats.Item.6ErQf23Gm9km8YSz]{Plant Rumor}</p>\n<p>You gain a +2 circumstance bonus to your Will DC.</p>"
+        },
+        "Effect: Rally the Troops": {
+            "name": "Effect: Rally the Troops",
+            "description": "<p>You gain 5 temporary Hit Points, or double that number of temporary Hit Points if they end their movement adjacent to the commander.</p>",
+            "rules": {
+                "0": {
+                    "choices": {
+                        "0": {
+                            "label": "SF2E.NPCAbility.RallyTheTroops.Ally"
+                        },
+                        "1": {
+                            "label": "SF2E.NPCAbility.RallyTheTroops.Commander"
+                        }
+                    }
+                }
+            }
+        },
+        "Effect: Rebellious Defiance": {
+            "name": "Effect: Rebellious Defiance",
+            "description": "<p>Granted by @UUID[Compendium.sf2e.actions.Item.nAJeT29ZJvqeg98h]{Rebellious Defiance}</p>\n<p>You gain a +1 circumstance bonus on your attack rolls against the marked creature. You also get this bonus to saving throws against the attacks, spells, and effects of this creature.</p>"
+        },
+        "Effect: Redirect Energy": {
+            "name": "Effect: Redirect Energy",
+            "description": "<p>Granted by @UUID[Compendium.sf2e.actions.Item.9P2ZptR0PrYyiJFl]{Redirect Energy}</p>\n<p>The selected weapon deals an additional 1d4 damage of the triggering damage type. During this time, you lose any resistance to the triggering damage type granted to you by Perfectly Balanced.</p>"
+        },
+        "Effect: Relentless Endurance": {
+            "name": "Effect: Relentless Endurance",
+            "description": "<p>Granted by @UUID[Compendium.sf2e.feats.Item.o2Tknvim2UP2W6Yk]{Relentless Endurance}</p>\n<p>You gain 1d8+4 temporary Hit Points. These temporary Hit Points increase by 1d8+4 at 6th level and every 4 levels thereafter.</p>"
+        },
+        "Effect: Repair Module": {
+            "name": "Effect: Repair Module",
+            "description": "<p>Granted by @UUID[Compendium.sf2e.feats.Item.ZGT7NLpcvREkJsMd]{Repair Module}</p>\n<p>You gain fast healing equal to half your level.</p>"
+        },
+        "Effect: Restorative Shapeshifting": {
+            "name": "Effect: Restorative Shapeshifting",
+            "description": "<p>Granted by @UUID[Compendium.sf2e.feats.Item.7yIxWfNZ7yEKs0Fd]{Restorative Shapeshifting}</p>\n<p>You gain a number of temporary Hit Points equal to half your level.</p>"
+        },
+        "Effect: Scrapper's Ingenuity": {
+            "name": "Effect: Scrapper's Ingenuity",
+            "description": "<p>Granted by @UUID[Compendium.sf2e.feats.Item.U9Cv3DBWBjTPg1eR]{Scrapper's Ingenuity}</p>\n<p>You gain a circumstance bonus to your next Crafting check to Craft or Repair.</p>",
+            "rules": {
+                "0": {
+                    "prompt": "SF2E.SpecificRule.Ikeshti.ScrappersIngenuity.Prompt"
+                }
+            }
+        },
+        "Effect: Search High and Low!": {
+            "name": "Effect: Search High and Low!",
+            "description": "<p>Granted by @UUID[Compendium.sf2e.feats.Item.GYk8nKT8abT5S5NO]{Search High and Low!}</p>\n<p>You gain a +2 circumstance bonus to Perception checks to Seek. As the origin's level increases, increase the bonus to +3 at 7th level, +4 at 12th level, and +5 at 17th level.</p>"
+        },
+        "Effect: Shattering Impact": {
+            "name": "Effect: Shattering Impact",
+            "description": "<p>Granted by @UUID[Compendium.sf2e.feats.Item.4XYoe783SsKoVCsA]{Shattering Impact}</p>\n<p>You take a –10-foot status penalty to Speed.</p>"
+        },
+        "Effect: Shed Skin": {
+            "name": "Effect: Shed Skin",
+            "description": "<p>Granted by @UUID[Compendium.sf2e.feats.Item.Wb4vtGqg2Cl2FF1k]{Shed Skin}</p>\n<p>You gain a +2 circumstance bonus to Escape.</p>"
+        },
+        "Effect: Shielding Arrogance": {
+            "name": "Effect: Shielding Arrogance",
+            "description": "<p>Granted by @UUID[Compendium.sf2e.actions.Item.wI0g2nRfu2d0YFAd]{Shielding Arrogance}</p>\n<p>You gain temporary Hit Points equal to your level.</p>"
+        },
+        "Effect: Size Up": {
+            "name": "Effect: Size Up",
+            "description": "<p>Granted by @UUID[Compendium.sf2e.feats.Item.iHzfiebxLxN3ogpH]{Size Up}</p>\n<p>You mark a creature as your asset. You gain a +1 circumstance bonus to Deception, Diplomacy, Intimidation, and Perception checks against or in relation to your asset, and a +1 circumstance bonus to attempts to @UUID[Compendium.sf2e.actions.Item.1OagaWtBpVXExToo]{Recall Knowledge} about your asset.</p>"
+        },
+        "Effect: Size of the Ancients": {
+            "name": "Effect: Size of the Ancients",
+            "description": "<p>Granted by @UUID[Compendium.sf2e.feats.Item.ri5qV0g9RwwWLiBk]{Size of the Ancients}</p>\n<p>You grow to size Huge. Your reach increases by 5 feet (or by 10 feet if you are a shipborn dragonkin), and you gain a +4 status bonus to melee damage.</p>"
+        },
+        "Effect: Skillful Encouragement": {
+            "name": "Effect: Skillful Encouragement",
+            "description": "<p>Granted by @UUID[Compendium.sf2e.feats.Item.EFkWRLQwain42TFm]{Skillful Encouragement}</p>\n<p>You gain a +2 circumstance bonus to skill checks.</p>"
+        },
+        "Effect: Solar Shield": {
+            "name": "Effect: Solar Shield",
+            "description": "<p>Granted by @UUID[Compendium.sf2e.feats.Item.hKkUTNTjRztyRSJr]{Solar Shield}</p>\n<p>You can Raise a Shield, giving you a +1 circumstance bonus to AC. While the shield is raised, you can use the Shield Block reaction with your shield.</p>"
+        },
+        "Effect: Solar Weapon": {
+            "name": "Effect: Solar Weapon",
+            "description": "<p>Granted by @UUID[Compendium.sf2e.class-features.Item.uUzVTZ7XohXlavB6]{Solar Manifestations}</p>\n<p>You gain a solar weapon Strike.</p>",
+            "rules": {
+                "4": {
+                    "label": "SF2E.SpecificRule.Solarian.SolarWeapon.Label"
+                },
+                "5": {
+                    "label": "SF2E.SpecificRule.Solarian.SolarWeapon.TwoHandToggle.Label"
+                },
+                "9": {
+                    "text": "SF2E.SpecificRule.Solarian.SolarWeapon.Graviton.Note"
+                },
+                "10": {
+                    "label": "SF2E.SpecificRule.Solarian.StellarAttunement.Photon"
+                }
+            }
+        },
+        "Effect: Solar Weapon (Twin Weapons)": {
+            "name": "Effect: Solar Weapon (Twin Weapons)",
+            "description": "<p>Granted by @UUID[Compendium.sf2e.feats.Item.Mett2INmoUZxE0CR]{Twin Weapons}</p>\n<p>You gain a second solar weapon Strike.</p>",
+            "rules": {
+                "4": {
+                    "label": "SF2E.SpecificRule.Solarian.SolarWeapon.TwinLabel"
+                },
+                "5": {
+                    "label": "SF2E.SpecificRule.Solarian.SolarWeapon.TwoHandToggle.TwinLabel"
+                },
+                "9": {
+                    "text": "SF2E.SpecificRule.Solarian.SolarWeapon.Graviton.Note"
+                },
+                "10": {
+                    "label": "SF2E.SpecificRule.Solarian.StellarAttunement.Photon"
+                }
+            }
+        },
+        "Effect: Spellsurge Ammo": {
+            "name": "Effect: Spellsurge Ammo",
+            "description": "<p>Granted by @UUID[Compendium.sf2e.feats.Item.nygEe8US6gwSPJ9t]{Spellsurge Ammo}</p>\n<p>Your weapon or grenade deals extra force damage equal to the rank of the spell, gains the magical trait. If the spell deals damage, the extra damage comes the same type as the triggering spell.</p>",
+            "rules": {
+                "2": {
+                    "prompt": "SF2E.SpecificRule.Prompt.WeaponOrGrenade"
+                }
+            }
+        },
+        "Effect: Star Brand": {
+            "name": "Effect: Star Brand",
+            "description": "<p>Granted by @UUID[Compendium.sf2e.feats.Item.3HmrwfbkjMHn6jw0]{Star Brand}</p>\n<p>You mark a creature. When targeting the marked creature, your solar flare's range increment increases by 60 feet.</p>"
+        },
+        "Effect: Steel Yourselves!": {
+            "name": "Effect: Steel Yourselves!",
+            "description": "<p>Granted by @UUID[Compendium.sf2e.actions.Item.gZr207z8Q7AuH2RT]{Steel Yourselves!}</p>\n<p>You gain temporary Hit Points equal to the origin's Charisma modifier + half their level</p>\n<p><strong>Lead by Example</strong> You gain a +1 status bonus to saving throws against effects that deal damage.</p>",
+            "rules": {
+                "0": {
+                    "prompt": "SF2E.SpecificRule.Envoy.Directive.LeadByExample.Prompt"
+                }
+            }
+        },
+        "Effect: Sway the Heart, Stoke the Spirit": {
+            "name": "Effect: Sway the Heart, Stoke the Spirit",
+            "description": "<p>Granted by @UUID[Compendium.sf2e.feats.Item.ypSQT2urAcrgaoQ1]{Sway the Heart, Stoke the Spirit}</p>\n<p>You gain a +1 circumstance bonus to Will saves.</p>"
+        },
+        "Effect: Tactical Strike": {
+            "name": "Effect: Tactical Strike",
+            "description": "<p>You gain a +1 status bonus to attack and damage rolls.</p>"
+        },
+        "Effect: Tactical Tutelage": {
+            "name": "Effect: Tactical Tutelage",
+            "description": "<p>Your deal an additional 2d4 precision damage and reduce the target's cover bonus to AC by 1.</p>"
+        },
+        "Effect: Take 'Em Alive": {
+            "name": "Effect: Take 'Em Alive",
+            "description": "<p>Granted by @UUID[Compendium.sf2e.feats.Item.86YwN8XwJdk2kTgQ]{Take 'Em Alive!}</p>\n<p>You add the nonlethal trait to attacks with weapons, and to your spells that deal damage and don't have the death or void trait.</p>\n<p><strong>Lead by Example</strong> If the origin's initial Strike is successful, they gain a status bonus to damage equal to your Charisma modifier.</p>",
+            "rules": {
+                "0": {
+                    "prompt": "SF2E.SpecificRule.Envoy.Directive.LeadByExample.Prompt"
+                },
+                "3": {
+                    "label": "SF2E.SpecificRule.Envoy.TakeEmAlive.ToggleLabel"
+                }
+            }
+        },
+        "Effect: Tangible Object (Anchoring Effect)": {
+            "name": "Effect: Tangible Object (Anchoring Effect)",
+            "description": "<p>Granted by @UUID[Compendium.sf2e.class-features.Item.Z1sThY5XgXiXQBIy]{Tangible Object}</p>\n<p>You gain a +1 circumstance bonus to Will saves against fear effects and a +2 circumstance bonus to your Will DC against attempts to Demoralize you.</p>"
+        },
+        "Effect: Telekinetic Sprint": {
+            "name": "Effect: Telekinetic Sprint",
+            "description": "<p>Granted by @UUID[Compendium.sf2e.actions.Item.r1bUsyDwcwuN3MUG]{Telekinetic Sprint}</p>\n<p>You gain a +5-foot status bonus to your Speeds.</p>"
+        },
+        "Effect: Telekinetic Titan": {
+            "name": "Effect: Telekinetic Titan",
+            "description": "<p>Granted by @UUID[Compendium.sf2e.feats.Item.Cj9UI2RZL6WBJ6EB]{Telekinetic Titan}</p>\n<p>You can carry Bulk equal to 7 + the chosen attribute modifier before becoming encumbered, and you can hold and carry a total Bulk of 12 + the chosen attribute modifier. You gain the @UUID[Compendium.sf2e.actions.Item.gNUrQ8jimAvAA0xg]{Telekinetic Lift} action.</p>"
+        },
+        "Effect: Telepredict": {
+            "name": "Effect: Telepredict",
+            "description": "<p>Granted by @UUID[Compendium.sf2e.feats.Item.bqQ80aCjgigKSJMY]{Telepredict}</p>\n<p>You gain a +1 circumstance bonus to Deception checks and Intimidation checks targeting the creature, and to saves against the target's effects that have the fear trait. If you deal mental damage to the target, increase this bonus to +2.</p>",
+            "rules": {
+                "1": {
+                    "label": "SF2E.SpecificRule.Contemplative.Telepredict.Toggle"
+                }
+            }
+        },
+        "Effect: Treat Wounds Immunity": {
+            "name": "Effect: Treat Wounds Immunity",
+            "description": "<p>Granted when someone uses @UUID[Compendium.sf2e.actions.Item.1kGNdIIhuglAjIp9]{Treat Wounds} on you, rendering you temporarily immune to Treat Wounds for the duration.</p>"
+        },
+        "Effect: Unbound Mind": {
+            "name": "Effect: Unbound Mind",
+            "description": "<p>Granted by @UUID[Compendium.sf2e.actions.Item.j1FsKMy7CTtrp3Fu]{Unbound Mind}</p>\n<p>You gain a +1 circumstance bonus to saving throws against mental effects.</p>"
+        },
+        "Effect: Undead Slayer": {
+            "name": "Effect: Undead Slayer",
+            "description": "<p>Granted by @UUID[Compendium.sf2e.feats.Item.kC42tjY689rma6Uc]{Undead Slayer}</p>\n<p>You gain access to the critical specialization effects of all weapons and unarmed attacks for attacks you make against the marked creature.</p>"
+        },
+        "Effect: Unstoppable Directives": {
+            "name": "Effect: Unstoppable Directives",
+            "description": "<p>Granted by @UUID[Compendium.sf2e.feats.Item.Byflan3ypJEPDwby]{Unstoppable Directives}</p>\n<p>You gain temporary Hit Points equal to half the origin's level.</p>"
+        },
+        "Effect: Vent Gas": {
+            "name": "Effect: Vent Gas",
+            "description": "<p>Granted by @UUID[Compendium.sf2e.feats.Item.e9uXXN7GOtWBGz09]{Vent Gas}</p>\n<p>You gain a +10-foot circumstance bonus to all your Speeds.</p>"
+        },
+        "Effect: Watch Out": {
+            "name": "Effect: Watch Out",
+            "description": "<p>Granted by @UUID[Compendium.sf2e.feats.Item.60BRmtuNHT6mpJOH]{Watch Out}</p>\n<p>You gain a +2 circumstance bonus to AC. If the origin has Look Alive, this bonus applies to your Reflex save as well.</p>"
+        },
+        "Effect: Willful Defiance": {
+            "name": "Effect: Willful Defiance",
+            "description": "<p>Granted by @UUID[Compendium.sf2e.feats.Item.NUZClDNinM6oVgJN]{Willful Defiance}</p>\n<p>You gain a +1 circumstance bonus to Armor Class and saving throws against the marked creature's attacks, spells, and other effects.</p>"
+        },
+        "Effect: You'll Have to Go Through Me!": {
+            "name": "Effect: You'll Have to Go Through Me!",
+            "description": "<p>Granted by @UUID[Compendium.sf2e.feats.Item.M8kAxAXWRRWMRTzT]{You'll Have to Go Through Me!}</p>\n<p>You gain the Living Shield reaction.</p>"
+        }
+    },
+    "mapping": {
+        "rules": {
+            "converter": "translateRules",
+            "path": "system.rules"
+        },
+        "badges": "system.badge.labels"
+    }
+}
