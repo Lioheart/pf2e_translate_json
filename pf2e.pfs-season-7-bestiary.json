@@ -1,6 +1,8 @@
 {
     "label": "Pfs-Season-7-Bestiary",
     "folders": {
+        "7-15": "7-15",
+        "7-16": "7-16",
         "Quests": "Quests",
         "7-01": "7-01",
         "7-13": "7-13",
@@ -11,11 +13,11 @@
         "7-06": "7-06",
         "7-07": "7-07",
         "7-08": "7-08",
+        "7-11": "7-11",
+        "7-12": "7-12",
         "7-14": "7-14",
         "7-09": "7-09",
-        "7-10": "7-10",
-        "7-11": "7-11",
-        "7-12": "7-12"
+        "7-10": "7-10"
     },
     "entries": {
         "Adma Heavenstriker": {
@@ -479,6 +481,18 @@
                 "action->Aquatic Onslaught": {
                     "name": "Aquatic Onslaught",
                     "description": "<p><strong>Trigger</strong> The PCs enter the main temple chamber</p><hr /><p><strong>Effect</strong> The chamber fills with sea creatures, then rolls initiative.</p>"
+                }
+            }
+        },
+        "Falling Decorations": {
+            "name": "Falling Decorations",
+            "descriptionHazard": "<p>Large metal moons and spears break apart and fall when a creature moves beneath them.</p>",
+            "disable": "<p>@Check[thievery|dc:28] (expert) or @Check[crafting|dc:28] (expert) to prevent the decorations from falling.</p>",
+            "stealth": "<p>(expert) to notice the incipient collapse; noticing the decorations has a DC of 0.</p>",
+            "items": {
+                "action->The Sky is Falling": {
+                    "name": "The Sky is Falling",
+                    "description": "<p><strong>Trigger</strong> A creature walks through the space under the hanging decorations</p><hr /><p><strong>Effect</strong> The little bit of disturbance is all the cracked decorations need to come dislodged. They fall, their sharp metal edges dealing @Damage[(6d10+15)[piercing]] damage (@Check[reflex|dc:28|basic] save) to those underneath them.</p>"
                 }
             }
         },
@@ -2118,6 +2132,27 @@
                 },
                 "strike-melee->Cobblestone": {
                     "name": "Cobblestone"
+                }
+            }
+        },
+        "Warp Pillar": {
+            "name": "Warp Pillar",
+            "descriptionHazard": "<p>A time-disrupting field shimmers around a 9-foot-tall pillar of obsidian and bronze that magically slides across the room.</p>",
+            "disable": "<p>@Check[arcana|dc:18], @Check[crafting|dc:18], @Check[occultism|dc:18], or @Check[thievery|dc:18]; three successes deactivates a pillar, as does destroying it.</p>",
+            "reset": "<p>If the pillar isn't destroyed, it resets 1 minute after making no time drain attacks.</p>",
+            "routine": "<p>(two actions) The pillar Steps or Strides to get as close to as many targets as possible, then makes a time drain Strike against each creature within its reach.</p>",
+            "stealth": "<p>(trained); @Check[perception|dc:18] to realize the pillars can move, noticing the pillar has a DC of 0.</p>",
+            "items": {
+                "action->Time Shift": {
+                    "name": "Time Shift",
+                    "description": "<p><strong>Trigger</strong> A creature attacks the pillar or approaches within 5 feet of it, or the other warp pillar activates</p><hr /><p><strong>Effect</strong> The trap casts @UUID[Compendium.pf2e.spells-srd.Item.WsUwpfmhKrKwoIe3]{Slow} (@Check[fortitude|dc:18|traits:magical|options:item:type:spell]) on a random creature within 30 feet, then rolls initiative.</p>"
+                },
+                "action->Speed 30 feet": {
+                    "name": "Speed 30 feet"
+                },
+                "strike-melee->Time Drain": {
+                    "name": "Time Drain",
+                    "description": "<p>plus @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1} for 1 round on a hit (@UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 2} for 1 round on a critical hit); no multiple attack penalty</p>"
                 }
             }
         },
