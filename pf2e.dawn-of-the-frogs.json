@@ -11,18 +11,18 @@
             "publicNotes": "<p>Boggards are aggressive humanoid amphibians who thrive in swamps, marshes, and even some rain forests. Boggards hatch from eggs into tadpoles, fiercely competing for food and even consuming their siblings in that struggle. Over 3 years, the surviving boggards develop arms, legs, and lungs while learning the rudiments of hunting, crafts, and warfare—everything needed to survive in their might-makes-right society. At the top of most boggard hierarchies lords a hulking swampseer imbued with sinister divine magic.</p>",
             "speedsDetails": "swamp passage",
             "items": {
-                "strike-melee->Tongue": {
+                "Tongue": {
                     "name": "Tongue"
                 },
-                "action->Warning Croak": {
+                "Warning Croak": {
                     "name": "Warning Croak",
                     "description": "<p><strong>Trigger</strong> The boggard guard spots a foe before combat begins</p><hr /><p><strong>Effect</strong> The boggard guard lets loose a cry of warning that other boggards immediately recognize. Boggards within 50 feet get a +2 circumstance bonus on initiative checks made in the next minute and a +2 circumstance bonus on Perception to notice hiding creatures. The boggard then rolls initiative.</p>"
                 },
-                "action->Swamp Passage": {
+                "Swamp Passage": {
                     "name": "Swamp Passage",
                     "description": "<p>A boggard scout ignores difficult terrain caused by swamp terrain features.</p>"
                 },
-                "action->Tongue Grab": {
+                "Tongue Grab": {
                     "name": "Tongue Grab",
                     "description": "<p>If the boggard guard hits a creature with their tongue, that creature becomes @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed} by the boggard. Unlike with a normal Grab, the creature is not @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Immobilized}, but it can't move beyond the reach of the boggard's tongue. The DC to @UUID[Compendium.pf2e.actionspf2e.Item.SkZAQRkLLkmBQNB9]{Escape} is [[/act escape dc=15]]{15}, or a creature can sever the tongue by hitting AC 12 and dealing at least 1 slashing damage. Though this doesn't deal any damage to the boggard, it prevents them from using their tongue Strike again until they regrow their tongue, which takes a week.</p>"
                 }
@@ -36,14 +36,14 @@
         "Giant Swamp Fly": {
             "name": "Giant Swamp Fly",
             "items": {
-                "strike-melee->Mandibles": {
+                "Mandibles": {
                     "name": "Mandibles"
                 },
-                "action->Avoid the Swat": {
+                "Avoid the Swat": {
                     "name": "Avoid the Swat",
                     "description": "<p><strong>Trigger</strong> The giant fly is targeted with a melee or ranged attack by an attacker it can see</p><hr /><p><strong>Effect</strong> The giant fly gains a +2 circumstance bonus to AC against the triggering attack. If the attack misses, the giant fly can move up to its fly Speed.</p>"
                 },
-                "action->Stinging Bite": {
+                "Stinging Bite": {
                     "name": "Stinging Bite",
                     "description": "<p>The bite of a giant swamp fly spreads irritating toxin into the wound. A PC who is bitten by a giant swamp fly must attempt a @Check[fortitude|dc:16|options:inflicts:sickened] save. On a failure, they become @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 1}, or @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 2} on a critical failure.</p>"
                 }
@@ -56,11 +56,11 @@
             "disable": "<p>@Check[thievery|dc:17] (trained) to deactivate the pressure plate on the floor</p>",
             "stealth": "<p>(trained)</p>",
             "items": {
-                "action->Spear": {
+                "Spear": {
                     "name": "Spear",
                     "description": "<p><strong>Trigger</strong> Pressure is applied to the floor tile</p><hr /><p><strong>Effect</strong> The trap shoots a crossbow bolt, making an attack against the creature or object on the floor tile.</p>"
                 },
-                "strike-melee->Crossbow": {
+                "Crossbow": {
                     "name": "Crossbow"
                 }
             }
@@ -69,17 +69,17 @@
             "name": "Leather Cap",
             "blurb": "Nonbinary fungus leshy",
             "items": {
-                "strike-melee->Fist": {
+                "Fist": {
                     "name": "Fist"
                 },
-                "ranged->Spore Pod": {
+                "Spore Pod": {
                     "name": "Spore Pod"
                 },
-                "action->Spore Cloud": {
+                "Spore Cloud": {
                     "name": "Spore Cloud",
                     "description": "<p><strong>Frequency</strong> once per day</p><hr /><p><strong>Effect</strong> Leather Cap unleashes a faintly purple cloud of sparkling spores that irritates the eyes and throats of all non-fungus creatures exposed to it. Each creature within @Template[emanation|distance:15]{15 feet} of Leather Cap must succeed at a @Check[fortitude|dc:16|options:area-effect,damaging-effect,inflicts:sickened] save or take @Damage[1d6[poison]|options:area-damage] damage and become @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 1}.</p>"
                 },
-                "action->Spores": {
+                "Spores": {
                     "name": "Spores",
                     "description": "<p>A creature that takes damage from Leather Cap's spore pod Strike must attempt a @Check[fortitude|dc:16|options:inflicts:sickened] save to avoid becoming @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 1} from the spores that burst around them.</p>"
                 }
@@ -88,13 +88,13 @@
         "Swamp Beetle": {
             "name": "Swamp Beetle",
             "items": {
-                "strike-melee->Mandibles": {
+                "Mandibles": {
                     "name": "Mandibles"
                 },
-                "strike-melee->Swamp Spit": {
+                "Swamp Spit": {
                     "name": "Swamp Spit"
                 },
-                "action->Splatter": {
+                "Splatter": {
                     "name": "Splatter",
                     "description": "<p>When a swamp beetle dies, it splatters everyone next to it with foul-smelling acid. PCs next to the swamp beetle take @Damage[1[acid]|options:area-damage] damage. The other beetles are immune to this damage.</p>"
                 }
@@ -106,20 +106,20 @@
             "blurb": "Particularly enormous swamp slurk",
             "allSavesBonus": "+12 to fortitude saves vs. Grapple",
             "items": {
-                "strike-melee->Tusks": {
+                "Tusks": {
                     "name": "Tusks"
                 },
-                "strike-melee->Slime Squirt": {
+                "Slime Squirt": {
                     "name": "Slime Squirt"
                 },
-                "action->+2 to Fortitude Saves vs. Grapple": {
+                "+2 to Fortitude Saves vs. Grapple": {
                     "name": "+2 to Fortitude Saves vs. Grapple"
                 },
-                "action->Belly Grease": {
+                "Belly Grease": {
                     "name": "Belly Grease",
                     "description": "<p>Two Tusk extrudes a slippery grease from his ventral glands to coat the barge under him and in a @Template[emanation|distance:5], turning the affected area into uneven ground for 10 minutes, after which it dries to a putrid crust. The DC to [[/act balance dc=18]] across the grease is 18.</p>"
                 },
-                "action->Entangling Slime": {
+                "Entangling Slime": {
                     "name": "Entangling Slime",
                     "description": "<p>A creature struck by Two Tusk's slime squirt becomes @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 1} and takes a –5-foot penalty to Speed for 1 hour or until the slime is removed. A PC can use an Interact action to splash swamp water on themself to wash away the stuff and remove this penalty.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.jQmfZcPD6xVYx5nb]{Effect: Entangling Slime}</p>"
                 }
@@ -133,14 +133,14 @@
         "Young Monitor Lizard": {
             "name": "Young Monitor Lizard",
             "items": {
-                "strike-melee->Jaws": {
+                "Jaws": {
                     "name": "Jaws"
                 },
-                "action->Lurching Charge": {
+                "Lurching Charge": {
                     "name": "Lurching Charge",
                     "description": "<p>The young monitor lizard Strides twice and then makes a jaws Strike. If it moves at least 20 feet from where it started, it gets a +2 circumstance bonus on the attack roll.</p>"
                 },
-                "action->Young Monitor Lizard Venom": {
+                "Young Monitor Lizard Venom": {
                     "name": "Young Monitor Lizard Venom",
                     "description": "<p><strong>Saving Throw</strong> @Check[fortitude|dc:15]</p>\n<p><strong>Maximum Duration</strong> 4 rounds</p>\n<p><strong>Stage 1</strong> @Damage[1d4[poison]] damage</p>\n<p><strong>Stage 2</strong> @Damage[1d6[poison]] damage</p>"
                 }
@@ -151,42 +151,39 @@
             "publicNotes": "<p>Boggards are aggressive humanoid amphibians who thrive in swamps, marshes, and even some rain forests. Boggards hatch from eggs into tadpoles, fiercely competing for food and even consuming their siblings in that struggle. Over 3 years, the surviving boggards develop arms, legs, and lungs while learning the rudiments of hunting, crafts, and warfare—everything needed to survive in their might-makes-right society. At the top of most boggard hierarchies lords a hulking swampseer imbued with sinister divine magic.</p>",
             "speedsDetails": "swamp passage",
             "items": {
-                "spellcastingEntry->Primal Prepared Spells": {
+                "Primal Prepared Spells": {
                     "name": "Primal Prepared Spells"
                 },
-                "consumable->Wand of Heal (Rank 1)": {
+                "Wand of Heal (Rank 1)": {
                     "name": "Wand of Heal (Rank 1)",
                     "description": "<p>@UUID[Compendium.pf2e.spells-srd.Item.rfZpqmj0AIIdkVIs]{Heal}</p><hr /><p>This baton is about a foot long and contains a single spell. The appearance typically relates to the spell within.</p>\n<p><strong>Activate</strong> Cast a Spell</p>\n<p><strong>Frequency</strong> once per day, plus overcharge</p>\n<hr />\n<p><strong>Effect</strong> You Cast the Spell at the indicated rank.</p>\n<p><strong>Craft Requirements</strong> Supply a casting of the spell at the listed rank.</p>\n<hr />\n<p><em>Note: To create a scroll or wand of a specific spell, drag the spell from the compendium or compendium browser into the inventory of a PC, NPC, or loot actor.</em></p>"
                 },
-                "backpack->Pouch": {
+                "Pouch": {
                     "name": "Pouch"
                 },
-                "strike-melee->Tongue": {
+                "Tongue": {
                     "name": "Tongue"
                 },
-                "strike-melee->Trident": {
+                "Trident": {
                     "name": "Trident"
                 },
-                "strike-ranged->Trident": {
-                    "name": "Trident"
-                },
-                "action->Focusing Drone": {
+                "Focusing Drone": {
                     "name": "Focusing Drone",
                     "description": "<p><strong>Trigger</strong> Zungur attempts a Will saving throw</p><hr /><p><strong>Effect</strong> Zungur reflexively groans in a series of low, rhythmic croaking sounds to help her focus her mind on her faith in the frog goddess Gogunta. She rolls a @Check[performance] check. She can use the higher result between her Performance check and her Will saving throw to resolve the effects against the attack that triggered her Will saving throw.</p>"
                 },
-                "action->Destructive Croak": {
+                "Destructive Croak": {
                     "name": "Destructive Croak",
                     "description": "<p>Zungur utters a powerful croak that deals @Damage[4d6[sonic]|options:area-damage] damage to any non-boggard within a @Template[type:emanation|distance:15]. Any creature with the frightened condition takes additional sonic damage equal to twice the value of its frightened condition. Zungur can't use Destructive Croak again for [[/gmr 1d4 #Recharge Destructive Croak]]{1d4 rounds}.</p>"
                 },
-                "action->Swamp Passage": {
+                "Swamp Passage": {
                     "name": "Swamp Passage",
                     "description": "<p>A boggard warrior ignores difficult terrain caused by swamp terrain features.</p>"
                 },
-                "action->Terrifying Croak": {
+                "Terrifying Croak": {
                     "name": "Terrifying Croak",
                     "description": "<p>The boggard warrior unleashes a terrifying croak. Any non-boggard within @Template[emanation|distance:30]{30 feet} becomes @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 1} unless they succeed at a @Check[will|dc:19|options:inflicts:frightened] save; those who critically succeed are temporarily immune for 1 minute.</p>"
                 },
-                "action->Tongue Grab": {
+                "Tongue Grab": {
                     "name": "Tongue Grab",
                     "description": "<p>If the boggard warrior hits a creature with their tongue, that creature becomes @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed} by the boggard. Unlike with a normal Grab, the creature isn't @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Immobilized}, but it can't move beyond the reach of the boggard's tongue. A creature can sever the tongue by hitting AC 15 and dealing at least 3 slashing damage. Though this doesn't deal any damage to the boggard, it prevents them from using their tongue Strike until they regrow their tongue, which takes a week.</p>"
                 }
