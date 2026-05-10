@@ -5,24 +5,24 @@
             "name": "Acolyte of Nethys",
             "publicNotes": "<p>Underling clerics are still learning the tenets of their faith and answer to a superior priest. Their days are spent in devotion and learning, sequestered in temples.</p>\n<hr />\n<p>Religions inspire devout individuals to uphold their tenets. Many of these devotees seek to bring respite and hope, but others have darker motives.</p>",
             "items": {
-                "Divine Prepared Spells": {
+                "spellcastingEntry->Divine Prepared Spells": {
                     "name": "Divine Prepared Spells"
                 },
-                "Cleric Domain Spells": {
+                "spellcastingEntry->Cleric Domain Spells": {
                     "name": "Cleric Domain Spells"
                 },
-                "Religious Symbol of Nethys": {
+                "equipment->Religious Symbol of Nethys": {
                     "name": "Religious Symbol of Nethys",
                     "description": "<p>This piece of wood or silver is emblazoned with an image representing a deity. Some divine spellcasters, such as clerics, can use a religious symbol of their deity as a divine focus to use certain abilities and cast some spells. A religious symbol must be held in one hand to use it.</p>"
                 },
-                "Religious Text of Nethys": {
+                "equipment->Religious Text of Nethys": {
                     "name": "Religious Text of Nethys",
                     "description": "<p>This manuscript contains scripture of a particular religion. Some divine spellcasters, such as clerics, can use a religious text as a divine focus to use certain abilities and cast some spells. A religious text must be held in one hand to use it.</p>"
                 },
-                "Staff": {
+                "strike-melee->Staff": {
                     "name": "Staff"
                 },
-                "Crossbow": {
+                "strike-melee->Crossbow": {
                     "name": "Crossbow"
                 }
             }
@@ -31,24 +31,24 @@
             "name": "Antipaladin",
             "publicNotes": "<p>There is perhaps nothing more anathematic to peace than an antipaladin. Dedicated holy warriors to the darkest and foulest of deities, antipaladins work to fulfill the vile wishes of their evil masters. The zeal with which they implement the plans of dark gods makes them truly fearsome foes for anyone allied with the forces of good.</p>\n<hr />\n<p>Villains pursue selfish and cruel goals, trampling over anyone foolish or purehearted enough to stand in their way.</p>",
             "items": {
-                "Champion Devotion Spells": {
+                "spellcastingEntry->Champion Devotion Spells": {
                     "name": "Champion Devotion Spells"
                 },
-                "Cheetah's Elixir (Lesser)": {
+                "consumable->Cheetah's Elixir (Lesser)": {
                     "name": "Cheetah's Elixir (Lesser)",
                     "description": "<p><strong>Activate</strong> <span class=\"action-glyph\">A</span> Interact</p>\n<p>Enzymatic compounds in this elixir strengthen and excite the muscles in your legs. You gain a +5 foot status bonus to your Speed for 1 minute.</p>\n<p>@UUID[Compendium.pf2e.equipment-effects.Item.lNWACCNe9RYgaFxb]{Effect: Cheetah's Elixir (Lesser)}</p>"
                 },
-                "Greataxe": {
+                "strike-melee->Greataxe": {
                     "name": "Greataxe"
                 },
-                "Javelin": {
+                "strike-ranged->Javelin": {
                     "name": "Javelin"
                 },
-                "Destructive Vengeance": {
+                "action->Destructive Vengeance": {
                     "name": "Destructive Vengeance",
                     "description": "<p><strong>Trigger</strong> An enemy within 15 feet damages the antipaladin</p>\n<hr />\n<p><strong>Effect</strong> The antipaladin increases the amount of damage they take by [[/r 2d6]] and deals 2d6 to the triggering enemy, choosing @Damage[2d6[spirit]] or @Damage[2d6[void]] damage. In addition, the antipaladin deals 2 extra damage of the chosen type with their Strikes against the triggering creature until the end of the antipaladin's next turn.</p>"
                 },
-                "Intimidating Strike": {
+                "action->Intimidating Strike": {
                     "name": "Intimidating Strike",
                     "description": "<p>The antipaladin makes a melee Strike. If they hit and deal damage, the target is @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 1}, or @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 2} on a critical hit.</p>"
                 }
@@ -58,29 +58,32 @@
             "name": "Barkeep",
             "publicNotes": "<p>Barkeeps are often friends and mentors within a community, lending an ear while supplying libations. The best barkeeps have some talent for storytelling and passing on valuable advice.</p>\n<hr />\n<p>Countless adventures begin in a tavern or a pub. Maybe it's because such places attract the risk-prone, or maybe it's because everyone needs a little liquid courage before they decide to take on a group of rampaging ogres.</p>",
             "items": {
-                "Barkeep's Apron": {
+                "armor->Barkeep's Apron": {
                     "name": "Barkeep's Apron",
                     "description": "<p>This armor is simply a layer of heavy, quilted cloth, but it is sometimes used because it's so inexpensive. Padded armor is easier to damage and destroy than other types of armor. Heavy armor comes with a padded armor undercoat included in its Price, though it loses the comfort trait when worn under heavy armor. You can wear just that padded armor or undercoat to sleep in, if your heavy armor is destroyed, or when otherwise not wearing the full heavy armor. This allows you to keep the armor invested and benefit from the power of any runes on the associated heavy armor, but no one else can wear your heavy armor without the padded undercoat.</p>"
                 },
-                "Pewter Mug": {
+                "equipment->Pewter Mug": {
                     "name": "Pewter Mug"
                 },
-                "Flask of Whiskey": {
+                "consumable->Flask of Whiskey": {
                     "name": "Flask of Whiskey",
                     "description": "<p>Alcohol is a common substance available in stunning variety. The Price of a dose of alcohol depends on the specific beverage. You can't recover from the sickened condition from alcohol while affected.</p>\n<p>If you fail a saving throw against alcohol other than initial saves, the affliction's stage doesn't increase; the only way to increase the stage of alcohol's affliction is to consume more alcohol.</p>\n<hr />\n<p><strong>Activate</strong> <span class=\"action-glyph\">A</span> Interact (Ingested)</p>\n<p><strong>Saving Throw</strong> @Check[fortitude|dc:12|name:Alcohol]</p>\n<p><strong>Onset</strong> 10 minutes</p>\n<p><strong>Stage 1</strong> +1 item bonus to saving throws against fear (10 minutes)</p>\n<p><strong>Stage 2</strong> @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard}, +1 item bonus to saving throws against fear effects (10 minutes)</p>\n<p><strong>Stage 3</strong> @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 1}, off-guard, @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 2} (10 minutes)</p>\n<p><strong>Stage 4</strong> clumsy 2 and @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 2} (10 minutes)</p>\n<p><strong>Stage 5</strong> clumsy 2, sickened 2, and stupefied 2 (10 minutes)</p>\n<p><strong>Stage 6</strong> @UUID[Compendium.pf2e.conditionitems.Item.fBnFDH2MTzgFijKf]{Unconscious} (8 hours)</p>\n<p><strong>Stage 7</strong> death</p>"
                 },
-                "Fist": {
+                "strike-melee->Fist": {
                     "name": "Fist"
                 },
-                "Bar Brawler": {
+                "strike-ranged->Pewter Mug": {
+                    "name": "Pewter Mug"
+                },
+                "action->Bar Brawler": {
                     "name": "Bar Brawler",
                     "description": "<p>The barkeep has been in enough bar fights to know how to throw a few punches. When fighting in their bar and making a nonlethal attack, the barkeep gains a +1 circumstance bonus to attack rolls and deals an additional 1d4 damage.</p>"
                 },
-                "Barkeep's Advice": {
+                "action->Barkeep's Advice": {
                     "name": "Barkeep's Advice",
                     "description": "<p><strong>Frequency</strong> once per day</p>\n<hr />\n<p><strong>Effect</strong> The barkeep gives some pertinent advice to a single creature other than themself. For 24 hours, when that creature fails a skill check or saving throw, they can recall this advice and reroll the check, using the second result instead. Once that creature uses this ability, its effect ends.</p>\n<p>A creature that receives the Barkeep's Advice is temporarily immune to the ability for 1 month.</p>"
                 },
-                "Alcohol Lore": {
+                "lore->Alcohol Lore": {
                     "name": "Alcohol Lore"
                 }
             }
@@ -89,43 +92,43 @@
             "name": "Nyctessa",
             "hpDetails": "void healing",
             "items": {
-                "Arcane Prepared Spells": {
+                "spellcastingEntry->Arcane Prepared Spells": {
                     "name": "Arcane Prepared Spells"
                 },
-                "Spellbook": {
+                "equipment->Spellbook": {
                     "name": "Spellbook",
                     "description": "<p>A spellbook holds the written knowledge necessary to learn and prepare various spells, a necessity for wizards (who typically get one for free) and a useful luxury for other spellcasters looking to learn additional spells. Each spellbook can hold up to 100 spells. The Price listed is for a blank spellbook.</p>"
                 },
-                "Oil of Unlife (Lesser)": {
+                "consumable->Oil of Unlife (Lesser)": {
                     "name": "Oil of Unlife (Lesser)",
                     "description": "<p><strong>Activate</strong> <span class=\"action-glyph\">1</span> (manipulate)</p><hr /><p>This thin, black liquid imparts a bone-deep chill while rapidly repairing an undead creature's physical or spiritual form. When you dash <em>oil of unlife</em> onto an undead creature, or a living creature with void healing, the oil absorbs quickly into its body, and the creature regains @Damage[(2d8+5)[healing]] Hit Points. You can pour <em>oil of unlife</em> on an incorporeal undead; in this case, the creature absorbs the oil into itself.</p>"
                 },
-                "Nyctessa's Staff": {
+                "strike-melee->Nyctessa's Staff": {
                     "name": "Nyctessa's Staff"
                 },
-                "Fangs": {
+                "strike-melee->Fangs": {
                     "name": "Fangs"
                 },
-                "Adept Crafter": {
+                "action->Adept Crafter": {
                     "name": "Adept Crafter",
                     "description": "<p>Nyctessa can use the @UUID[Compendium.pf2e.actionspf2e.Item.rmwa3OyhTZ2i2AHl]{Craft} activity to create alchemical and magical items. In addition to her known spells, her spellbook contains the formulas for @UUID[Compendium.pf2e.equipment-srd.Item.p4ZEGzwteCB5fz6i]{Bottled Night}, @UUID[Compendium.pf2e.equipment-srd.Item.UqinuuCWePTYGhVO]{Antiplague (Lesser)}, @UUID[Compendium.pf2e.equipment-srd.Item.3Klm2gPmzOw6ntVb]{Comprehension Elixir (Lesser)}, @UUID[Compendium.pf2e.equipment-srd.Item.biHvCGfajSjUDGBS]{Steelscour (Moderate)}, @UUID[Compendium.pf2e.equipment-srd.Item.BSInwFNVBVkfFK0B]{Oil of Unlife (Lesser)}, @UUID[Compendium.pf2e.equipment-srd.Item.EGhUorZhB7nV73Ev]{Unholy Water}, and @UUID[Compendium.pf2e.equipment-srd.Item.1gBkH409yTYM6jeZ]{Void Salts}.</p>"
                 },
-                "Deathly Inquisition": {
+                "action->Deathly Inquisition": {
                     "name": "Deathly Inquisition",
                     "description": "<p>Once per day, Nyctessa can cast @UUID[Compendium.pf2e.spells-srd.Item.FM3SmEW8N1FCRjqt]{Talking Corpse} as an innate occult spell on an @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Immobilized} or willing undead creature (DC 21), with a casting time of 1 minute. This provides more detailed answers than speaking with a non-undead corpse.</p>"
                 },
-                "Void Healing": {
+                "action->Void Healing": {
                     "name": "Void Healing"
                 },
-                "Drain Bonded Staff": {
+                "action->Drain Bonded Staff": {
                     "name": "Drain Bonded Staff",
                     "description": "<p><strong>Frequency</strong> once per day</p>\n<hr />\n<p><strong>Effect</strong> Nyctessa expends the power stored in her staff. This turn she can cast one spell she prepared today and already cast, without spending a spell slot.</p>"
                 },
-                "Sepulchral Drain": {
+                "action->Sepulchral Drain": {
                     "name": "Sepulchral Drain",
                     "description": "<p>When the <em>Nyctessa's staff</em> deals damage to a living creature with a Strike, that creature gains a weakness 2 to void damage until the end of Nyctessa's next turn.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.HiLwUXS35dNZgnfC]{Effect: Sepulchral Drain}</p>"
                 },
-                "Taste Blood": {
+                "action->Taste Blood": {
                     "name": "Taste Blood",
                     "description": "<p><strong>Requirements</strong> Nyctessa's last action was a fangs Strike that damaged the target</p>\n<hr />\n<p><strong>Effect</strong> Nyctessa drinks blood from the target, which must be a living humanoid, gaining 5 temporary Hit Points for 10 minutes. The target must succeed at a @Check[fortitude|dc:21] save or become @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 1}. Regardless of the outcome, the target is temporarily immune to Nyctessa's Taste Blood for 1 day.</p>"
                 }
@@ -135,24 +138,27 @@
             "name": "Priest of Pharasma",
             "publicNotes": "<p>Cloistered priests safeguard their temples and communities. They are the stalwart keepers of their god's tenets, devoted to spreading the word. Their guidance or healing services come at the cost of a donation.</p>\n<hr />\n<p>Religions inspire devout individuals to uphold their tenets. Many of these devotees seek to bring respite and hope, but others have darker motives.</p>",
             "items": {
-                "Divine Prepared Spells": {
+                "spellcastingEntry->Divine Prepared Spells": {
                     "name": "Divine Prepared Spells"
                 },
-                "Cleric Domain Spells": {
+                "spellcastingEntry->Cleric Domain Spells": {
                     "name": "Cleric Domain Spells"
                 },
-                "Religious Symbol of Pharasma": {
+                "equipment->Religious Symbol of Pharasma": {
                     "name": "Religious Symbol of Pharasma",
                     "description": "<p>This piece of wood or silver is emblazoned with an image representing a deity. Some divine spellcasters, such as clerics, can use a religious symbol of their deity as a divine focus to use certain abilities and cast some spells. A religious symbol must be held in one hand to use it.</p>"
                 },
-                "Dagger": {
+                "strike-melee->Dagger": {
                     "name": "Dagger"
                 },
-                "Healing Hands": {
+                "strike-ranged->Dagger": {
+                    "name": "Dagger"
+                },
+                "action->Healing Hands": {
                     "name": "Healing Hands",
                     "description": "<p>When the priest casts @UUID[Compendium.pf2e.spells-srd.Item.rfZpqmj0AIIdkVIs]{Heal}, they roll d10s instead of d8s.</p>"
                 },
-                "Steady Spellcasting": {
+                "action->Steady Spellcasting": {
                     "name": "Steady Spellcasting",
                     "description": "<p>If another creatures reaction would disrupt the priest's spellcasting action, the priest attempts a @Check[flat|dc:15]. If the priest succeeds, their action isn't disrupted.</p>"
                 }
@@ -162,16 +168,19 @@
             "name": "Server",
             "publicNotes": "<p>Always on the move from patron to patron, servers are the backbone of any tavern or eatery. Their work hones both their agility and their diplomacy.</p>\n<hr />\n<p>Countless adventures begin in a tavern or a pub. Maybe it's because such places attract the risk-prone, or maybe it's because everyone needs a little liquid courage before they decide to take on a group of rampaging ogres.</p>",
             "items": {
-                "Pewter Mug": {
+                "equipment->Pewter Mug": {
                     "name": "Pewter Mug"
                 },
-                "Serving Tray": {
+                "equipment->Serving Tray": {
                     "name": "Serving Tray"
                 },
-                "Fist": {
+                "strike-melee->Fist": {
                     "name": "Fist"
                 },
-                "Quick Catch": {
+                "strike-ranged->Pewter Mug": {
+                    "name": "Pewter Mug"
+                },
+                "action->Quick Catch": {
                     "name": "Quick Catch",
                     "description": "<p><strong>Trigger</strong> An object that the server could hold in one hand is dropped within the server's reach</p>\n<p><strong>Requirements</strong> The server has at least one hand free</p>\n<hr />\n<p><strong>Effect</strong> The server catches the dropped object before it hits the floor or leaves their reach.</p>"
                 }

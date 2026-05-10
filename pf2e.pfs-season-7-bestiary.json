@@ -24,30 +24,34 @@
             "name": "Adma Heavenstriker",
             "blurb": "Female vishkanya thief",
             "items": {
-                "Sample 73": {
+                "weapon->Sample 73": {
+                    "name": "Sample 73",
+                    "description": "<p>Awaiting classification. Synthesized from [redacted] in the Mwangi Expanse. Highly toxic and volatile. DO NOT expose to planar beings and/or forces.</p>"
+                },
+                "strike-melee->Sample 73": {
                     "name": "Sample 73"
                 },
-                "Close Quarters": {
+                "action->Close Quarters": {
                     "name": "Close Quarters",
                     "description": "<p>Adma isn't @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} to creatures of 8th-level or lower that are flanking her.</p>"
                 },
-                "Venom Spit": {
+                "action->Venom Spit": {
                     "name": "Venom Spit",
                     "description": "<p><strong>Trigger</strong> Adma is targeted with a Strike by a creature within 30 feet</p><hr /><p><strong>Effect</strong> Adma spits venom into the attacker's eyes. The attacker takes @Damage[2d6[poison]] damage (@Check[reflex|dc:23|basic] save). On a failure, the creature is @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} until the end of the target's next turn.</p>"
                 },
-                "Extend Potency": {
+                "action->Extend Potency": {
                     "name": "Extend Potency",
                     "description": "<p><strong>Requirements</strong> Adma has envenomed her weapon</p><hr /><p><strong>Effect</strong> Adma spits on the blade, revitalizing the venom. The venom remains potent until the end of Adma's next turn.</p>"
                 },
-                "Quick Envenom": {
+                "action->Quick Envenom": {
                     "name": "Quick Envenom",
                     "description": "<p>Adma Interacts to draw her rapier, then applies a venom to it. The venom remains potent until the end of Adma's next turn, or until Adma hits a target or critically fails an attack roll.</p>"
                 },
-                "Sneak Attack": {
+                "action->Sneak Attack": {
                     "name": "Sneak Attack",
                     "description": "<p>Adma deals an extra 2d6 precision damage to @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} creatures.</p>"
                 },
-                "Surprise Attack": {
+                "action->Surprise Attack": {
                     "name": "Surprise Attack",
                     "description": "<p>On the first round of combat, creatures that haven't acted yet are @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} to Adma.</p>"
                 }
@@ -61,11 +65,11 @@
             "routine": "<p>(two-actions) The fang leaps around the room, flying up to 20 feet and making a fang Strike against a random creature in the room.</p>",
             "stealth": "<p>(expert) to notice the residual animating magic in the fang</p>",
             "items": {
-                "Leaping Fang": {
+                "action->Leaping Fang": {
                     "name": "Leaping Fang",
                     "description": "<p><strong>Trigger</strong> A creature interacts with the items in this room without first proclaiming their zeal</p><hr /><p><strong>Effect</strong> The haunt makes a fang Strike against the triggering creature, then rolls initiative.</p>"
                 },
-                "Fang": {
+                "strike-melee->Fang": {
                     "name": "Fang",
                     "description": "<p>no multiple attack penalty.</p>"
                 }
@@ -79,7 +83,7 @@
             "routine": "<p>(three actions) The chains rattle and sigh ominously around two different random creatures trapped in the haunt, dealing @Damage[(2d6+2)[void]] damage (@Check[will|dc:18|basic] save).</p>",
             "stealth": "<p>(trained)</p>",
             "items": {
-                "The Pain of Devotion": {
+                "action->The Pain of Devotion": {
                     "name": "The Pain of Devotion",
                     "description": "<p><strong>Trigger</strong> Hunted by Chains is disabled</p><hr /><p><strong>Effect</strong> The chains rattle ominously, dealing @Damage[(2d6+2)[void]] damage to all creatures in the haunt (@Check[will|dc:18|basic] save). The haunt then rolls initiative.</p>"
                 }
@@ -91,23 +95,23 @@
             "blurb": "Variant athamaru hunter",
             "speedsDetails": "smooth swimmer",
             "items": {
-                "Fan Bolts": {
+                "ammo->Fan Bolts": {
                     "name": "Fan Bolts",
                     "description": "<p>Shorter than traditional arrows but similar in construction, bolts are the ammunition used by crossbows.</p>"
                 },
-                "Diving Reload": {
+                "action->Diving Reload": {
                     "name": "Diving Reload",
                     "description": "<p>The athamaru pirate can dive underwater, giving them concealment, and reload in the same action.</p>"
                 },
-                "Fan Bolt": {
+                "action->Fan Bolt": {
                     "name": "Fan Bolt",
                     "description": "<p>The athamaru pirate prepares their hooked crossbow bolts with carefully woven seaweed. On a successful crossbow Strike, the bolt embeds and the seaweed fan deploys. The target takes a –10-foot status penalty to its swim Speed. A creature can Interact to attempt a @Check[athletics|dc:18] check, removing the bolt on a success.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.seWuw1GMSm3kzCWV]{Effect: Fan Bolt}</p>"
                 },
-                "Hunt Prey": {
+                "action->Hunt Prey": {
                     "name": "Hunt Prey",
                     "description": "<p>The athamaru pirate designates a single creature they can see and hear, or one they're Tracking, as their prey. The athamaru pirate gains a +2 circumstance bonus to Perception checks to @UUID[Compendium.pf2e.actionspf2e.Item.BlAOM2X92SI6HMtJ]{Seek} the prey and to Survival checks to @UUID[Compendium.pf2e.actionspf2e.Item.EA5vuSgJfiHH7plD]{Track} the prey. The first time the athamaru pirate hits their designated prey in a round, they deal an additional 1d8 precision damage. These effects last until the pirate uses Hunt Prey again.</p>"
                 },
-                "Smooth Swimmer": {
+                "action->Smooth Swimmer": {
                     "name": "Smooth Swimmer",
                     "description": "<p>The athamaru pirate ignores difficult terrain caused by aquatic terrain features.</p>"
                 }
@@ -119,23 +123,23 @@
             "blurb": "Variant weak athamaru hunter",
             "speedsDetails": "smooth swimmer",
             "items": {
-                "Fan Bolts": {
+                "ammo->Fan Bolts": {
                     "name": "Fan Bolts",
                     "description": "<p>Shorter than traditional arrows but similar in construction, bolts are the ammunition used by crossbows.</p>"
                 },
-                "Diving Reload": {
+                "action->Diving Reload": {
                     "name": "Diving Reload",
                     "description": "<p>The athamaru swab can dive underwater, giving them concealment, and reload in the same action.</p>"
                 },
-                "Fan Bolt": {
+                "action->Fan Bolt": {
                     "name": "Fan Bolt",
                     "description": "<p>The athamaru swab prepares their hooked crossbow bolts with carefully woven seaweed. On a successful crossbow Strike, the bolt embeds and the seaweed fan deploys. The target takes a –10-foot status penalty to its swim Speed. A creature can Interact to attempt a @Check[athletics|dc:18] check, removing the bolt on a success.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.seWuw1GMSm3kzCWV]{Effect: Fan Bolt}</p>"
                 },
-                "Hunt Prey": {
+                "action->Hunt Prey": {
                     "name": "Hunt Prey",
                     "description": "<p>The athamaru swab designates a single creature they can see and hear, or one they're Tracking, as their prey. The athamaru swab gains a +2 circumstance bonus to Perception checks to @UUID[Compendium.pf2e.actionspf2e.Item.BlAOM2X92SI6HMtJ]{Seek} the prey and to Survival checks to @UUID[Compendium.pf2e.actionspf2e.Item.EA5vuSgJfiHH7plD]{Track} the prey. The first time the athamaru swab hits their designated prey in a round, they deal an additional 1d8 precision damage. These effects last until the swab uses Hunt Prey again.</p>"
                 },
-                "Smooth Swimmer": {
+                "action->Smooth Swimmer": {
                     "name": "Smooth Swimmer",
                     "description": "<p>The athamaru swab ignores difficult terrain caused by aquatic terrain features.</p>"
                 }
@@ -145,17 +149,17 @@
             "name": "Bartolo Posandi",
             "blurb": "Male human bodyguard",
             "items": {
-                "Fist": {
+                "strike-melee->Fist": {
                     "name": "Fist"
                 },
-                "Retributive Strike": {
+                "action->Retributive Strike": {
                     "name": "Retributive Strike",
                     "description": "<p><strong>Trigger</strong> An enemy damages Bartolo's ally, and both are within 15 feet of him</p><hr /><p><strong>Effect</strong> Bartolo protects his ally and strikes his foe. The ally gains resistance 3 to all damage against the triggering damage. If the foe is within reach, Bartolo makes a melee Strike against it.</p>\n<p>@UUID[Compendium.pf2e.feat-effects.Item.DawVHfoPKbPJsz4k]{Effect: Champion's Resistance}</p>"
                 },
-                "Shield Block (See Living Shield)": {
+                "action->Shield Block (See Living Shield)": {
                     "name": "Shield Block (See Living Shield)"
                 },
-                "Living Shield": {
+                "action->Living Shield": {
                     "name": "Living Shield",
                     "description": "<p>Bartolo grapples a creature and uses it as a shield, gaining +2 to his AC and the Shield Block reaction while the target is grabbed. Use the creature's level plus item bonus to AC (if any) as its Hardness.</p>"
                 }
@@ -165,17 +169,17 @@
             "name": "Bartolo Posandi (3-4)",
             "blurb": "Male human bodyguard",
             "items": {
-                "Fist": {
+                "strike-melee->Fist": {
                     "name": "Fist"
                 },
-                "Retributive Strike": {
+                "action->Retributive Strike": {
                     "name": "Retributive Strike",
                     "description": "<p><strong>Trigger</strong> An enemy damages Bartolo's ally, and both are within 15 feet of him</p><hr /><p><strong>Effect</strong> Bartolo protects his ally and strikes his foe The ally gains resistance 5 to all damage against the triggering damage If the foe is within reach, Bartolo makes a melee Strike against it</p>\n<p>@UUID[Compendium.pf2e.feat-effects.Item.DawVHfoPKbPJsz4k]{Effect: Champion's Resistance}</p>"
                 },
-                "Shield Block (See Living Shield)": {
+                "action->Shield Block (See Living Shield)": {
                     "name": "Shield Block (See Living Shield)"
                 },
-                "Living Shield": {
+                "action->Living Shield": {
                     "name": "Living Shield",
                     "description": "<p>Bartolo grapples a creature and uses it as a shield, gaining +2 to his AC and the Shield Block reaction while the target is grabbed. Use the creature's level plus item bonus to AC (if any) as its Hardness.</p>"
                 }
@@ -188,15 +192,15 @@
             "routine": "<p>(1 action) The Hellknight commands the orts, and the trap lashes out at each enemy creature in its space and adjacent, dealing @Damage[(1d10+6)[slashing]] damage (@Check[reflex|dc:18|basic] save) If no enemy is in reach, an ort emerges in an adjacent square.</p>",
             "stealth": "<p>(trained)</p>",
             "items": {
-                "Hellfire": {
+                "action->Hellfire": {
                     "name": "Hellfire",
                     "description": "<p>All orts within 30 feet have +1 status bonus to hit and deal 1d4 extra fire damage on a hit.</p>"
                 },
-                "Bubble": {
+                "action->Bubble": {
                     "name": "Bubble",
                     "description": "<p><strong>Trigger</strong> The trap receives a critical hit or critically fails a saving throw</p><hr /><p><strong>Effect</strong> One ort emerges adjacent.</p>"
                 },
-                "Planar Breach": {
+                "action->Planar Breach": {
                     "name": "Planar Breach",
                     "description": "<p><strong>Trigger</strong> The magic circle is broken</p><hr /><p><strong>Effect</strong> The pile disgorges orts and then rolls initiative.</p>"
                 }
@@ -207,24 +211,31 @@
             "publicNotes": "<p>A ship's boatswain, or bosun, leads the deckhands who maintain the ship.</p><hr /><p>Adventurers may need passage on a swift vessel, or they might face danger from raiders at sea or in coastal settlements.</p>",
             "blurb": "Variant bosun",
             "items": {
-                "Naval Pike": {
-                    "name": "Naval Pike"
+                "weapon->Naval Pike": {
+                    "name": "Naval Pike",
+                    "description": "<p>A long metal shaft ending with a metal spike, a spear can be used one-handed as a melee weapon and can be thrown.</p>"
                 },
-                "Claw": {
+                "strike-melee->Claw": {
                     "name": "Claw"
                 },
-                "Horn": {
+                "strike-melee->Naval Pike": {
+                    "name": "Naval Pike"
+                },
+                "strike-ranged->Naval Pike": {
+                    "name": "Naval Pike"
+                },
+                "strike-melee->Horn": {
                     "name": "Horn"
                 },
-                "Captain's Command": {
+                "action->Captain's Command": {
                     "name": "Captain's Command",
                     "description": "<p><strong>Frequency</strong> once per round</p><hr /><p><strong>Effect</strong> Captain Conziva orders an ally to attack or to get in position. Until the end of the ally's next turn, they gain the captain's choice of a +2 status bonus to attack rolls or a +10-foot status bonus to their Speeds.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.WfiaKdXNSxC3POcs]{Effect: Bosun's Command}</p>"
                 },
-                "Pike and Strike": {
+                "action->Pike and Strike": {
                     "name": "Pike and Strike",
                     "description": "<p>Captain Conziva Strikes with her naval pike. If this Strike hits, the captain can either move the target 5 feet within the pike's reach or make a claw Strike against the target without increasing her multiple attack penalty until after the claw Strike.</p>"
                 },
-                "Sailing Lore": {
+                "lore->Sailing Lore": {
                     "name": "Sailing Lore"
                 }
             }
@@ -236,18 +247,18 @@
             "reset": "<p>The planar connection shuts down after 1 minute. The horses will tire and stop running after 1 minute.</p>",
             "routine": "<p>(three actions) On its turn each round, the horses spend one action to move 30 feet, dragging the limber carrying the jaws behind them in a randomly chosen direction. The horses will not move through other creatures. Players on the limber when it moves must attempt a @Check[acrobatics|dc:18] check when it moves or fall of. Removing the pintle will end the random movement. The jaws use 2 actions to Spit Fire or make melee strikes against an adjacent creature.</p>",
             "items": {
-                "Jaws Statistics": {
+                "action->Jaws Statistics": {
                     "name": "Jaws Statistics",
                     "description": "<p><strong>Jaws Hardness</strong> 15</p>\n<p><strong>Jaws HP</strong> 60 (BT 30)</p>"
                 },
-                "Blade": {
+                "strike-melee->Blade": {
                     "name": "Blade"
                 },
-                "Blades of Vengeance": {
+                "action->Blades of Vengeance": {
                     "name": "Blades of Vengeance",
                     "description": "<p><strong>Trigger</strong> A Small or larger creature, moves within 10 feet of the jaws.</p><hr /><p><strong>Effect</strong> One of the blades lashes out, making one Strike against the creature.</p>"
                 },
-                "Spit Fire": {
+                "action->Spit Fire": {
                     "name": "Spit Fire",
                     "description": "<p>The jaws launch a magma ball (range 60 feet, @Template[burst|distance:10]), randomly, at the largest group of creatures, not including itself, it can catch in the blast dealing @Damage[3d4[bludgeoning],3d4[fire]|options:area-damage] damage. Each creature caught in the blast must attempt a @Check[reflex|dc:18|options:damaging-effect,area-effect] save. The jaws cannot Spit Fire again for [[/gmr 1d4+1 #Recharge Spit Fire]] rounds.</p><hr /><p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature takes half damage.</p>\n<p><strong>Failure</strong> The creature takes full damage and is knocked @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone}.</p>\n<p><strong>Critical Failure</strong> The creature takes double damage, @Damage[1[persistent,fire]] damage, and is knocked prone.</p>"
                 }
@@ -257,39 +268,39 @@
             "name": "Demonologist",
             "publicNotes": "<p>Demonologists can pull a creature from the Outer Rifts and bend it to their will... for a time.</p><hr /><p>Hidden secrets and occult powers have an irresistible lure for many. Since the majority of these NPCs are spellcasters, consider using alternative spell lists to adjust their themes.</p>",
             "items": {
-                "Arcane Prepared Spells": {
+                "spellcastingEntry->Arcane Prepared Spells": {
                     "name": "Arcane Prepared Spells"
                 },
-                "Robes": {
+                "armor->Robes": {
                     "name": "Robes",
                     "description": "<p>Explorer's clothing is sturdy enough that it can be reinforced to protect you, even though it isn't a suit of armor. It comes in many forms, though the most common sorts look like clerical vestments, monk's garments, or wizard's robes, as members of all three classes are likely to avoid wearing armor.</p>"
                 },
-                "Fiendish Hypotheses and Protections from Same (Spellbook)": {
+                "equipment->Fiendish Hypotheses and Protections from Same (Spellbook)": {
                     "name": "Fiendish Hypotheses and Protections from Same (Spellbook)",
                     "description": "<p>A spellbook holds the written knowledge necessary to learn and prepare various spells, a necessity for wizards (who typically get one for free) and a useful luxury for other spellcasters looking to learn additional spells. Each spellbook can hold up to 100 spells. The Price listed is for a blank spellbook.</p>"
                 },
-                "Longspear": {
+                "strike-melee->Longspear": {
                     "name": "Longspear"
                 },
-                "Fist": {
+                "strike-melee->Fist": {
                     "name": "Fist"
                 },
-                "Demonic Temptation": {
+                "action->Demonic Temptation": {
                     "name": "Demonic Temptation",
                     "description": "<p>Demonic study has garnered the attention of at least one demon who is actively trying to possess the demonologist. When the demonologist publicly espouses the benefits of demonic power (whether they believe it a good thing or not), they gain a +1 status bonus to skill checks, AC, and saves for 1 day. These bonuses don't apply against demons. At the end of the day, the demonologist must attempt a @Check[will|dc:20] save, becoming possessed for 1 day on a failure (or permanently on a critical failure).</p>"
                 },
-                "Breach the Outer Rifts": {
+                "action->Breach the Outer Rifts": {
                     "name": "Breach the Outer Rifts",
                     "description": "<p><strong>Requirements</strong> The demonologist's last action was to cast a non-cantrip spell</p><hr /><p><strong>Effect</strong> The demonologist siphons energy drawn from the Outer Rifts into their weapon. Until the end of the turn, the weapon deals an extra 2d6 damage.</p>\n<p>Roll 1d20 to determine the type:</p><ul><li>1–7 acid</li><li>8–9 cold</li><li>10–11 electricity</li><li>12–18 fire</li><li>19–20 void.</li></ul>"
                 },
-                "Demon Summoning": {
+                "action->Demon Summoning": {
                     "name": "Demon Summoning",
                     "description": "<p>The demonologist can cast a 5th-rank @UUID[Compendium.pf2e.spells-srd.Item.29ytKctjg7qSW2ff]{Summon Fiend} arcane spell to summon a @UUID[Compendium.pf2e.pathfinder-monster-core-2.Actor.ANptV6ltBi9C3P1l]{Nucol}. To do so, they must sacrifice two 4th-rank prepared spells and voluntarily take @Damage[4d12[mental]] damage that can't be reduced or prevented. If the demonologist is unable to Sustain the Spell, including if they're knocked out or killed, the spell continues, but the GM rolls a @Check[flat|dc:10] each round, ending the spell on a failure.</p>"
                 },
-                "Academia Lore": {
+                "lore->Academia Lore": {
                     "name": "Academia Lore"
                 },
-                "Demon Lore": {
+                "lore->Demon Lore": {
                     "name": "Demon Lore"
                 }
             },
@@ -302,22 +313,22 @@
         "Diabolic Messenger": {
             "name": "Diabolic Messenger",
             "items": {
-                "Clothing (Fine)": {
+                "equipment->Clothing (Fine)": {
                     "name": "Clothing (Fine)",
                     "description": "<p>Fine clothing, suitable for a noble or royal, is made with expensive fabrics, precious metals, and intricate patterns.</p>"
                 },
-                "Fist": {
+                "strike-melee->Fist": {
                     "name": "Fist"
                 },
-                "Hidden Blade": {
+                "action->Hidden Blade": {
                     "name": "Hidden Blade",
                     "description": "<p><strong>Frequency</strong> once per round</p><hr /><p><strong>Effect</strong> The diabolic messenger draws a weapon and then Strikes with it The target of the Strike is @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} against the attack.</p>"
                 },
-                "Sneak Attack": {
+                "action->Sneak Attack": {
                     "name": "Sneak Attack",
                     "description": "<p>The diabolic messenger deals an extra 1d6 precision damage to @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} creatures.</p>"
                 },
-                "Absalom Court Lore": {
+                "lore->Absalom Court Lore": {
                     "name": "Absalom Court Lore"
                 }
             }
@@ -328,49 +339,49 @@
             "blurb": "Variant young fortune dragon",
             "allSavesBonus": "+2 status to all saves vs. arcane",
             "items": {
-                "Arcane Spontaneous Spells": {
+                "spellcastingEntry->Arcane Spontaneous Spells": {
                     "name": "Arcane Spontaneous Spells"
                 },
-                "Jaws": {
+                "strike-melee->Jaws": {
                     "name": "Jaws"
                 },
-                "Claw": {
+                "strike-melee->Claw": {
                     "name": "Claw"
                 },
-                "Tail": {
+                "strike-melee->Tail": {
                     "name": "Tail"
                 },
-                "+2 Status to All Saves vs. Arcane": {
+                "action->+2 Status to All Saves vs. Arcane": {
                     "name": "+2 Status to All Saves vs. Arcane"
                 },
-                "Capture Spell": {
+                "action->Capture Spell": {
                     "name": "Capture Spell",
                     "description": "<p><strong>Trigger</strong> The dragon succeeds or critically succeeds on a saving throw against a spell</p>\n<hr />\n<p><strong>Effect</strong> The dragon attempts to capture a portion of the spell's magic to feed themself. They attempt to counteract the spell (counteract rank 5, counteract modifier [[/r 1d20+20 #Counteract]]{+20}). If successful, the dragon is unaffected by the spell and regains one expended spontaneous spell slot; other subjects are affected by the spell normally.</p>"
                 },
-                "Disruptive Breath": {
+                "action->Disruptive Breath": {
                     "name": "Disruptive Breath",
                     "description": "<p>The dragon unleashes a spray of magic-disrupting energies that deals @Damage[7d6[force]|options:area-damage] damage in a @Template[cone|distance:30] (@Check[reflex|dc:27|basic|options:area-effect] save). Creatures that fail become @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 1} (@UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 2} on a critical failure) for 1 minute.</p>\n<p>The dragon can't use Disruptive Breath again for [[/gmr 1d4 #Recharge Disruptive Breath]]{1d4 rounds}.</p>"
                 },
-                "Draconic Frenzy": {
+                "action->Draconic Frenzy": {
                     "name": "Draconic Frenzy",
                     "description": "<p>The dragon makes two claw Strikes and one tail Strike in any order.</p>"
                 },
-                "Draconic Momentum": {
+                "action->Draconic Momentum": {
                     "name": "Draconic Momentum",
                     "description": "<p>Whenever they score a critical hit with a Strike, the dragon chooses to either recharge Disruptive Breath or regain one expended spontaneous spell slot.</p>"
                 },
-                "Share the Wealth": {
+                "action->Share the Wealth": {
                     "name": "Share the Wealth",
                     "description": "<p><strong>Requirements</strong> The dragon's body is covered in riches (this is typically the case when the dragon is first encountered)</p><hr /><p><strong>Effect</strong> The dragon shakes their body aggressively, sending coins and other riches flying in every direction, dealing @Damage[7d6[bludgeoning]|options:area-damage] damage with a @Check[reflex|dc:26|basic|options:area-effect] save to all creatures in a @Template[emanation|distance:30]. The dragon's body is then no longer covered in riches.</p>"
                 },
-                "Treasure Dive": {
+                "action->Treasure Dive": {
                     "name": "Treasure Dive",
                     "description": "<p><strong>Requirements</strong> The dragon's body isn't covered in riches and the dragon is adjacent to their hoard</p><hr /><p><strong>Effect</strong> The dragon Strides or Burrows through their hoard using their land Speed. They coat themself in coins, magic items, and other treasures. This contact with magical items revitalizes the dragon, causing them to regain one expended spontaneous spell slot.</p>\n<p>The dragon can move through other creatures while moving in this way. Creatures in the dragon's path, or above it if the dragon Burrows, must succeed at a @Check[reflex|dc:24] save or be pushed 10 feet (or pushed 20 feet and knocked @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone} on a critical failure).</p>"
                 },
-                "Accounting Lore": {
+                "lore->Accounting Lore": {
                     "name": "Accounting Lore"
                 },
-                "Mercantile Lore": {
+                "lore->Mercantile Lore": {
                     "name": "Mercantile Lore"
                 }
             }
@@ -383,11 +394,11 @@
             "routine": "<p>(two actions) On its initiative, the squid uses its first action to pull on the mast Every creature must attempt a @Check[reflex|dc:22] save On a failure, it falls @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone} If a creature is prone when attempting the save, it slides 10 feet in a direction determined by the GM on a failure If this movement would force a creature off the ship, it can attempt to @UUID[Compendium.pf2e.actionspf2e.Item.3yoajuKjwHZ9ApUY]{Grab an Edge} The squid uses its second action to make one tentacle attack</p>",
             "stealth": "<p>(trained)</p>",
             "items": {
-                "Flip the Ship": {
+                "action->Flip the Ship": {
                     "name": "Flip the Ship",
                     "description": "<p><strong>Trigger</strong> The naiads board the ship</p><hr /><p><strong>Effect</strong> Each creature standing on the deck must attempt a @Check[reflex|dc:22] save or fall @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone}. The hazard then rolls initiative.</p>"
                 },
-                "Tentacle": {
+                "strike-melee->Tentacle": {
                     "name": "Tentacle"
                 }
             }
@@ -400,11 +411,11 @@
             "routine": "<p>(two actions) On its initiative, the squid uses its first action to pull on the mast Every creature must attempt a @Check[reflex|dc:20] save On a failure, it falls @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone} If a creature is prone when attempting the save, it slides 10 feet in a direction determined by the GM on a failure If this movement would force a creature off the ship, it can attempt to @UUID[Compendium.pf2e.actionspf2e.Item.3yoajuKjwHZ9ApUY]{Grab an Edge} The squid uses its second action to make one tentacle attack</p>",
             "stealth": "<p>(trained)</p>",
             "items": {
-                "Flip the Ship": {
+                "action->Flip the Ship": {
                     "name": "Flip the Ship",
                     "description": "<p><strong>Trigger</strong> The naiads board the ship</p><hr /><p><strong>Effect</strong> Each creature standing on the deck must attempt a @Check[Reflex|dc:20] save or fall @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone}. The hazard then rolls initiative.</p>"
                 },
-                "Tentacle": {
+                "strike-melee->Tentacle": {
                     "name": "Tentacle"
                 }
             }
@@ -414,7 +425,7 @@
             "disable": "<p>@Check[thievery|dc:27] (master) to painstakingly remove the rune without triggering the magic, or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (4th rank; counteract DC 25) to counteract the rune.</p>",
             "stealth": "<p>(expert)</p>",
             "items": {
-                "Curse the Intruders": {
+                "action->Curse the Intruders": {
                     "name": "Curse the Intruders",
                     "description": "<p><strong>Trigger</strong> A creature passes the threshold</p><hr /><p><strong>Effect</strong> Each living creature within 30 feet must succeed at a @Check[will|dc:23] save or be subjected to the dragon's curse A cursed creature takes a –2 status penalty to Fortitude saves, and any natural or magical healing it receives is halved The curse remains until removed by @UUID[Compendium.pf2e.spells-srd.Item.SUKaxVZW2TlM8lu0]{Cleanse Affliction} or similar magic</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.qPul8V5LMyHNpsOa]{Effect: Curse the Intruders}</p>"
                 }
@@ -427,15 +438,15 @@
             "routine": "<p>(three actions) On its initiative, Duty's Soulshackle first uses Call to Serve if it's able to and spends any remaining actions making velstrac chains Strikes against its enemies.</p>",
             "stealth": "<p>(expert); noticing the staff has a DC of 0.</p>",
             "items": {
-                "Chained by Duty": {
+                "action->Chained by Duty": {
                     "name": "Chained by Duty",
                     "description": "<p><strong>Trigger</strong> Lyari proposes how to free herself from <em>Duty's Soulshackle</em>.</p><hr /><p><strong>Effect</strong> <em>Duty's Soulshackle</em> quivers in rage before unleashing more spectral chains. The haunt then rolls initiative.</p>"
                 },
-                "Call to Serve": {
+                "action->Call to Serve": {
                     "name": "Call to Serve",
                     "description": "<p><em>Duty's Soulshackle</em> creates a @UUID[Compendium.pf2e.pfs-season-7-bestiary.Actor.ckZ7eHNCFNP6ddiO]{Withered Leaf of Talhindir} within 10 feet of itself. It then cannot use this action for [[/gmr 1d6 #rounds]]{1d6 rounds}.</p>"
                 },
-                "Velstrac Chains": {
+                "strike-melee->Velstrac Chains": {
                     "name": "Velstrac Chains"
                 }
             }
@@ -447,15 +458,15 @@
             "routine": "<p>(three actions) On its initiative, Duty's Soulshackle first uses Call to Serve if it's able to and spends any remaining actions making velstrac chains Strikes against its enemies.</p>",
             "stealth": "<p>(expert); noticing the staff has a DC of 0.</p>",
             "items": {
-                "Chained by Duty": {
+                "action->Chained by Duty": {
                     "name": "Chained by Duty",
                     "description": "<p><strong>Trigger</strong> Lyari proposes how to free herself from <em>Duty's Soulshackle</em>.</p><hr /><p><strong>Effect</strong> <em>Duty's Soulshackle</em> quivers in rage before unleashing more spectral chains. The haunt then rolls initiative.</p>"
                 },
-                "Call to Serve": {
+                "action->Call to Serve": {
                     "name": "Call to Serve",
                     "description": "<p><em>Duty's Soulshackle</em> creates a @UUID[Compendium.pf2e.pfs-season-7-bestiary.Actor.gCD8rOahd9F9ZSJO]{Shriveled Leaf of Talhindir} within 10 feet of itself. It then cannot use this action for [[/gmr 1d6 #rounds]]{1d6 rounds}.</p>"
                 },
-                "Velstrac Chains": {
+                "strike-melee->Velstrac Chains": {
                     "name": "Velstrac Chains"
                 }
             }
@@ -467,7 +478,7 @@
             "routine": "<p>(one action) The sea creatures attack, dealing @Damage[(1d8+3)[bludgeoning],(1d8+3)[piercing]] damage to each creature hostile to Timonithaea within the temple (@Check[reflex|dc:22|basic] save).</p>",
             "stealth": "<p>(trained)</p>",
             "items": {
-                "Aquatic Onslaught": {
+                "action->Aquatic Onslaught": {
                     "name": "Aquatic Onslaught",
                     "description": "<p><strong>Trigger</strong> The PCs enter the main temple chamber</p><hr /><p><strong>Effect</strong> The chamber fills with sea creatures, then rolls initiative.</p>"
                 }
@@ -479,7 +490,7 @@
             "disable": "<p>@Check[thievery|dc:28] (expert) or @Check[crafting|dc:28] (expert) to prevent the decorations from falling.</p>",
             "stealth": "<p>(expert) to notice the incipient collapse; noticing the decorations has a DC of 0.</p>",
             "items": {
-                "The Sky is Falling": {
+                "action->The Sky is Falling": {
                     "name": "The Sky is Falling",
                     "description": "<p><strong>Trigger</strong> A creature walks through the space under the hanging decorations</p><hr /><p><strong>Effect</strong> The little bit of disturbance is all the cracked decorations need to come dislodged. They fall, their sharp metal edges dealing @Damage[(6d10+15)[piercing]] damage (@Check[reflex|dc:28|basic] save) to those underneath them.</p>"
                 }
@@ -492,7 +503,7 @@
             "routine": "<p>(one action) The sea creatures attack, dealing @Damage[(1d10+4)[bludgeoning],(1d10+4)[piercing]] damage to each creature hostile to Timonithaea within the temple (@Check[reflex|dc:25|basic] save).</p>",
             "stealth": "<p>(trained)</p>",
             "items": {
-                "Aquatic Onslaught": {
+                "action->Aquatic Onslaught": {
                     "name": "Aquatic Onslaught",
                     "description": "<p><strong>Trigger</strong> The PCs enter the main temple chamber</p><hr /><p><strong>Effect</strong> The chamber fills with sea creatures, then rolls initiative.</p>"
                 }
@@ -502,28 +513,28 @@
             "name": "Gloom Bulwark",
             "languagesDetails": "Can't speak any language",
             "items": {
-                "Branch": {
+                "strike-melee->Branch": {
                     "name": "Branch"
                 },
-                "Shadow Fruit": {
+                "strike-melee->Shadow Fruit": {
                     "name": "Shadow Fruit"
                 },
-                "Reactive Strike": {
+                "action->Reactive Strike": {
                     "name": "Reactive Strike"
                 },
-                "Thicken": {
+                "action->Thicken": {
                     "name": "Thicken",
                     "description": "<p><strong>Trigger</strong> The bulwark is targeted with a melee or ranged attack by an attacker it can see</p><hr /><p><strong>Effect</strong> The bulwark gains resistance 10 against the triggering attack, but takes a –10-foot status penalty to all its Speeds until the end of its next turn.</p>"
                 },
-                "Constrict": {
+                "action->Constrict": {
                     "name": "Constrict",
                     "description": "<p>@Damage[(2d8+3)[bludgeoning]], @Check[fortitude|dc:23|basic]</p><hr /><p>@Localize[PF2E.NPC.Abilities.Glossary.Constrict]</p>"
                 },
-                "Stench": {
+                "action->Stench": {
                     "name": "Stench",
                     "description": "<p>The creature must attempt a @Check[fortitude|dc:24|options:area-effect,inflicts:sickened,inflicts:enfeebled] save. On a failure, the creature is @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 1}, and on a critical failure, the creature is also @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 1} for as long as it is sickened. A creature that succeeds at its save is temporarily immune to this ability for 1 minute.</p>"
                 },
-                "Grab": {
+                "action->Grab": {
                     "name": "Grab"
                 }
             },
@@ -538,14 +549,14 @@
             "publicNotes": "<p>The theoretical leaders of goblin raids are called goblin commandos. In practice, goblin commandos rarely continue to lead their comrades once a battle has begun. Most shirk their responsibilities in favor of wading into the fray and claiming more glory from their tribe-mates.</p>\n<hr />\n<p>These small humanoids typically have green or gray skin and large heads with wide ears. While some goblins are civilized and have worked hard to be considered upstanding members of humanoid communities, many are impetuous and vicious creatures who delight in wreaking havoc. These goblins think nothing of slaughtering livestock, stealing, or burning down a building purely for momentary delight. They revel in playing malicious tricks on taller humanoids, whom they call \"longshanks.\"</p>\n<p>Goblins are superstitious, with an intense awe of magic and a fascination with fire; goblins who master magic or fire earn great respect from their kin. Most other humanoids find it difficult to understand goblins' outlook: they hate canines but eagerly share their lairs with so-called \"goblin dogs,\" they fearlessly attack larger creatures but are terrified of horses, and they despise vegetables yet consider pickles a delicacy. To a goblin, of course, these are all perfectly sensible life choices.</p>",
             "blurb": "Variant goblin commando",
             "items": {
-                "Shortbow": {
+                "strike-melee->Shortbow": {
                     "name": "Shortbow"
                 },
-                "Goblin Scuttle": {
+                "action->Goblin Scuttle": {
                     "name": "Goblin Scuttle",
                     "description": "<p><strong>Trigger</strong> An ally ends a move action adjacent to the rigger</p><hr /><p><strong>Effect</strong> The goblin rigger Steps.</p>"
                 },
-                "Boarding Action": {
+                "action->Boarding Action": {
                     "name": "Boarding Action",
                     "description": "<p>The goblin rigger swings on a rope or Strides, moving up to double their Speed. If the rigger boarded or disembarked a boat during this movement, they can make a melee Strike at the end of their movement that deals one extra damage die on a hit.</p>"
                 }
@@ -561,39 +572,39 @@
             "publicNotes": "<p>Demonologists can pull a creature from the Outer Rifts and bend it to their will... for a time.</p><hr /><p>Hidden secrets and occult powers have an irresistible lure for many. Since the majority of these NPCs are spellcasters, consider using alternative spell lists to adjust their themes.</p>",
             "blurb": "Variant demonologist",
             "items": {
-                "Arcane Prepared Spells": {
+                "spellcastingEntry->Arcane Prepared Spells": {
                     "name": "Arcane Prepared Spells"
                 },
-                "Robes": {
+                "armor->Robes": {
                     "name": "Robes",
                     "description": "<p>Explorer's clothing is sturdy enough that it can be reinforced to protect you, even though it isn't a suit of armor. It comes in many forms, though the most common sorts look like clerical vestments, monk's garments, or wizard's robes, as members of all three classes are likely to avoid wearing armor.</p>"
                 },
-                "Fiendish Hypotheses and Protections from Same (Spellbook)": {
+                "equipment->Fiendish Hypotheses and Protections from Same (Spellbook)": {
                     "name": "Fiendish Hypotheses and Protections from Same (Spellbook)",
                     "description": "<p>A spellbook holds the written knowledge necessary to learn and prepare various spells, a necessity for wizards (who typically get one for free) and a useful luxury for other spellcasters looking to learn additional spells. Each spellbook can hold up to 100 spells. The Price listed is for a blank spellbook.</p>"
                 },
-                "Longspear": {
+                "strike-melee->Longspear": {
                     "name": "Longspear"
                 },
-                "Fist": {
+                "strike-melee->Fist": {
                     "name": "Fist"
                 },
-                "Demonic Temptation": {
+                "action->Demonic Temptation": {
                     "name": "Demonic Temptation",
                     "description": "<p>Demonic study has garnered the attention of at least one demon who is actively trying to possess the demonologist. When the demonologist publicly espouses the benefits of demonic power (whether they believe it a good thing or not), they gain a +1 status bonus to skill checks, AC, and saves for 1 day. These bonuses don't apply against demons. At the end of the day, the demonologist must attempt a @Check[will|dc:20] save, becoming possessed for 1 day on a failure (or permanently on a critical failure).</p>"
                 },
-                "Breach the Outer Rifts": {
+                "action->Breach the Outer Rifts": {
                     "name": "Breach the Outer Rifts",
                     "description": "<p><strong>Requirements</strong> The demonologist's last action was to cast a non-cantrip spell</p><hr /><p><strong>Effect</strong> The demonologist siphons energy drawn from the Outer Rifts into their weapon. Until the end of the turn, the weapon deals an extra 2d6 damage.</p>\n<p>Roll 1d20 to determine the type:</p><ul><li>1–7 acid</li><li>8–9 cold</li><li>10–11 electricity</li><li>12–18 fire</li><li>19–20 void.</li></ul>"
                 },
-                "Demon Summoning": {
+                "action->Demon Summoning": {
                     "name": "Demon Summoning",
                     "description": "<p>The demonologist can cast a 5th-rank @UUID[Compendium.pf2e.spells-srd.Item.29ytKctjg7qSW2ff]{Summon Fiend} arcane spell to summon a demon. To do so, they must sacrifice two 4th-rank prepared spells and voluntarily take @Damage[4d12[mental]] damage that can't be reduced or prevented. If the demonologist is unable to Sustain the Spell, including if they're knocked out or killed, the spell continues, but the GM rolls a @Check[flat|dc:10] each round, ending the spell on a failure.</p>"
                 },
-                "Academia Lore": {
+                "lore->Academia Lore": {
                     "name": "Academia Lore"
                 },
-                "Demon Lore": {
+                "lore->Demon Lore": {
                     "name": "Demon Lore"
                 }
             },
@@ -608,7 +619,7 @@
             "disable": "<p>@Check[thievery|dc:30] (master) to painstakingly remove the rune without triggering the magic, or @UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{Dispel Magic} (4th rank; counteract DC 28) to counteract the rune.</p>",
             "stealth": "<p>(expert)</p>",
             "items": {
-                "Curse the Intruders": {
+                "action->Curse the Intruders": {
                     "name": "Curse the Intruders",
                     "description": "<p><strong>Trigger</strong> A creature passes the threshold</p><hr /><p><strong>Effect</strong> Each living creature within 30 feet must succeed at a @Check[will|dc:26] save or be subjected to the dragon's curse A cursed creature takes a –2 status penalty to Fortitude saves, and any natural or magical healing it receives is halved The curse remains until removed by @UUID[Compendium.pf2e.spells-srd.Item.SUKaxVZW2TlM8lu0]{Cleanse Affliction} or similar magic</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.qPul8V5LMyHNpsOa]{Effect: Curse the Intruders}</p>"
                 }
@@ -622,14 +633,14 @@
             "routine": "<p>(3 actions) The Heart spends all of its actions making thorny vine Strikes against different creatures. The Heart doesn't take a multiple attack penalty.</p>",
             "stealth": "<p>(expert) to detect the fraying planes around it; noticing the Heart has a DC of 0</p>",
             "items": {
-                "Crushing Horror": {
+                "action->Crushing Horror": {
                     "name": "Crushing Horror",
                     "description": "<p><strong>Trigger</strong> The Heart breaks its planar bonds</p><hr /><p><strong>Effect</strong> Each creature in the area must attempt a @Check[will|dc:22] save. The Heart then rolls initiative.</p><hr /><p><strong>Success</strong> The creature shrugs of the infuence of the Heart.</p>\n<p><strong>Failure</strong> The creature takes @Damage[3d8[mental]] damage and is @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 1}.</p>\n<p><strong>Critical Failure</strong> The creature takes @Damage[6d8[mental]] damage and is @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 2}. The creature can't reduce its frightened value below 1 for 1 minute.</p>"
                 },
-                "Thorny Vine": {
+                "strike-melee->Thorny Vine": {
                     "name": "Thorny Vine"
                 },
-                "Anguish": {
+                "action->Anguish": {
                     "name": "Anguish",
                     "description": "<p>The vine squeezes and overwhelms the creature with fear. The target takes @Damage[4d4[mental]] damage with a @Check[will|dc:24|basic] save. On a critical failure, the creature is also @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 1} and can't reduce its frightened value below 1 for 1 minute.</p>"
                 }
@@ -642,18 +653,18 @@
             "reset": "<p>The planar connection shuts down after 1 minute. The horses will tire and stop running after 1 minute.</p>",
             "routine": "<p>(three actions) On its turn each round, the horses spend one action to move 30 feet, dragging the limber carrying the jaws behind them in a randomly chosen direction. The horses will not move through other creatures. Players on the limber when it moves must attempt a @Check[acrobatics|dc:15] check when it moves or fall of. Removing the pintle will end the random movement. The jaws use 2 actions to Spit Fire or make melee strikes against an adjacent creature.</p>",
             "items": {
-                "Jaws Statistics": {
+                "action->Jaws Statistics": {
                     "name": "Jaws Statistics",
                     "description": "<p><strong>Jaws Hardness</strong> 8</p>\n<p><strong>Jaws HP</strong> 30 (BT 15)</p>"
                 },
-                "Blade": {
+                "strike-melee->Blade": {
                     "name": "Blade"
                 },
-                "Blades of Vengeance": {
+                "action->Blades of Vengeance": {
                     "name": "Blades of Vengeance",
                     "description": "<p><strong>Trigger</strong> A Small or larger creature, moves within 10 feet of the jaws.</p><hr /><p><strong>Effect</strong> One of the blades lashes out, making one Strike against the creature.</p>"
                 },
-                "Spit Fire": {
+                "action->Spit Fire": {
                     "name": "Spit Fire",
                     "description": "<p>The jaws launch a magma ball (range 60 feet, @Template[burst|distance:10]), randomly, at the largest group of creatures, not including itself, it can catch in the blast dealing @Damage[2d4[bludgeoning],2d4[fire]|options:area-damage] damage. Each creature caught in the blast must attempt a @Check[reflex|dc:15|options:damaging-effect,area-effect] save. The jaws cannot Spit Fire again for [[/gmr 1d4+1 #Recharge Spit Fire]] rounds.</p><hr /><p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature takes half damage.</p>\n<p><strong>Failure</strong> The creature takes full damage and is knocked @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone}.</p>\n<p><strong>Critical Failure</strong> The creature takes double damage, @Damage[1[persistent,fire]] damage, and is knocked prone.</p>"
                 }
@@ -664,17 +675,17 @@
             "allSavesBonus": "+1 status to all saves vs. fear",
             "speedsDetails": "ignores 5 feet of speed reduction from being encumbered",
             "items": {
-                "+1 Status to All Saves vs. Fear": {
+                "action->+1 Status to All Saves vs. Fear": {
                     "name": "+1 Status to All Saves vs. Fear"
                 },
-                "Reactive Strike": {
+                "action->Reactive Strike": {
                     "name": "Reactive Strike"
                 },
-                "Toppling Strike": {
+                "action->Toppling Strike": {
                     "name": "Toppling Strike",
                     "description": "<p>When the Hellknight armiger scores a critical hit, their target is knocked @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone}.</p>"
                 },
-                "Hell Lore": {
+                "lore->Hell Lore": {
                     "name": "Hell Lore"
                 }
             }
@@ -682,24 +693,24 @@
         "Howling Terror": {
             "name": "Howling Terror",
             "items": {
-                "Jaws": {
+                "strike-melee->Jaws": {
                     "name": "Jaws"
                 },
-                "Claw": {
+                "strike-melee->Claw": {
                     "name": "Claw"
                 },
-                "Burning Iron Shot": {
+                "strike-melee->Burning Iron Shot": {
                     "name": "Burning Iron Shot"
                 },
-                "Hellfire Strikes": {
+                "action->Hellfire Strikes": {
                     "name": "Hellfire Strikes",
                     "description": "<p>A creature critically hit by a howling terror's Strike takes 1d6 persistent fire damage.</p>"
                 },
-                "Metallically Infused": {
+                "action->Metallically Infused": {
                     "name": "Metallically Infused",
                     "description": "<p>The howling terror is a horrible conglomeration of a metal elemental and an animal infused with diabolic power. Its Strikes and Molten Metal Rain count as whichever metal is most advantageous for the howling terror</p>"
                 },
-                "Molten Metal Rain": {
+                "action->Molten Metal Rain": {
                     "name": "Molten Metal Rain",
                     "description": "<p><strong>Frequency</strong> once per minute</p><hr /><p><strong>Effect</strong> The howling terror launches a torrent of molten metal in a @Template[type:burst|distance:10] within 100 feet. The burst deals @Damage[3d6[bludgeoning]|options:area-damage] damage and @Damage[2d6[fire]|options:area-damage] damage with a Basic @Check[reflex|dc:21] save. Creatures that enter the area or start their turn there take @Damage[1[fire]|options:area-damage] damage until the metal cools after 5 rounds.</p>"
                 }
@@ -713,7 +724,7 @@
             "routine": "<p>(two actions) Spectral chains snake out to wrap around three different random creatures trapped in the haunt, who must each succeed at a @Check[reflex|dc:16] save or have the @UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{Restrained} condition until it [[/act escape dc=16]]{Escapes}. Each round that a creature starts its turn @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed}, it takes @Damage[2d4[force]]{2d4 nonlethal force} damage. Spectral scars form on any creature knocked @UUID[Compendium.pf2e.conditionitems.Item.fBnFDH2MTzgFijKf]{Unconscious} by this haunt.</p>",
             "stealth": "<p>(trained)</p>",
             "items": {
-                "Chains of Undeath": {
+                "action->Chains of Undeath": {
                     "name": "Chains of Undeath",
                     "description": "<p><strong>Trigger</strong> Talhindir's Autumn is disabled</p><hr /><p><strong>Effect</strong> A spectral image of Duty's Soulshackle appears in a display nook, snaking out chains of dark energy toward each creature. Each living creature in the haunt must attempt a @Check[will|dc:16] save or be @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 1} The haunt then rolls initiative.</p>"
                 }
@@ -727,7 +738,7 @@
             "routine": "<p>(two actions) Spectral chains snake out to wrap around three different random creatures trapped in the haunt, who must each succeed at a @Check[reflex|dc:17] save or have the @UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{Restrained} condition until it [[/act escape dc=17]]{Escapes}. Each round that a creature starts its turn @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed}, it takes @Damage[(2d4+1)[force]]{2d4+1 nonlethal force} damage. Spectral scars form on any creature knocked @UUID[Compendium.pf2e.conditionitems.Item.fBnFDH2MTzgFijKf]{Unconscious} by this haunt.</p>",
             "stealth": "<p>(trained)</p>",
             "items": {
-                "Chains of Undeath": {
+                "action->Chains of Undeath": {
                     "name": "Chains of Undeath",
                     "description": "<p><strong>Trigger</strong> Talhindir's Autumn is disabled</p><hr /><p><strong>Effect</strong> A spectral image of Duty's Soulshackle appears in a display nook, snaking out chains of dark energy toward each creature. Each living creature in the haunt must attempt a @Check[will|dc:16] save or be @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 1} The haunt then rolls initiative.</p>"
                 }
@@ -737,7 +748,7 @@
             "name": "Imp Minion",
             "publicNotes": "<p>Imps are fiendish infiltrators and corrupters who, despite their diminutive stature, are more than capable of subtly influencing a weak-willed individual into performing increasingly evil acts over time. An imp will often agree to serve a mortal and act docile and loyal in a long-term plot to eventually get their master killed or damn their soul. Imps are born directly from the Outer Planes themselves, rather than from mortal souls, and thus they serve outside any fiendish hierarchies, granting them leeway to pursue their specialties. Despite standing a mere 2 feet tall, imps can be vicious combatants, flying out of reach and turning invisible to escape should the odds turn against them.</p>",
             "items": {
-                "Stinger": {
+                "strike-melee->Stinger": {
                     "name": "Stinger"
                 }
             }
@@ -746,7 +757,7 @@
             "name": "Imp Minion (3-4)",
             "publicNotes": "<p>Imps are fiendish infiltrators and corrupters who, despite their diminutive stature, are more than capable of subtly influencing a weak-willed individual into performing increasingly evil acts over time. An imp will often agree to serve a mortal and act docile and loyal in a long-term plot to eventually get their master killed or damn their soul. Imps are born directly from the Outer Planes themselves, rather than from mortal souls, and thus they serve outside any fiendish hierarchies, granting them leeway to pursue their specialties. Despite standing a mere 2 feet tall, imps can be vicious combatants, flying out of reach and turning invisible to escape should the odds turn against them.</p>",
             "items": {
-                "Stinger": {
+                "strike-melee->Stinger": {
                     "name": "Stinger"
                 }
             }
@@ -758,7 +769,7 @@
             "reset": "<p>The flames cease 1 minute after all living creatures leave the area, but after 1 hour, a well of darkness fills the brazier and it is ready to trigger again.</p>",
             "routine": "<p>(4 actions) The trap ignites shadowy flames in a @Template[line|distance:5]{5-foot square} within the area of the room A creature that moves into or ends its turn in this fire takes @Damage[(1d6+5)[fire]] damage (@Check[fortitude|dc:17|basic]) Increase the DC by 2 if the creature is in magical darkness (@Check[fortitude|dc:19|basic]).</p>",
             "items": {
-                "Flames of Caina": {
+                "action->Flames of Caina": {
                     "name": "Flames of Caina",
                     "description": "<p><strong>Trigger</strong> A living creature enters the area</p><hr /><p><strong>Effect</strong> Shadows roil in the brazier. It casts @UUID[Compendium.pf2e.spells-srd.Item.4GE2ZdODgIQtg51c]{Darkness} on itself, and then rolls initiative.</p>"
                 }
@@ -772,7 +783,7 @@
             "routine": "<p>(4 actions) The trap ignites shadowy flames in a @Template[line|distance:5]{5-foot square} within the area of the room. A creature that moves into or ends its turn in this fire takes @Damage[(2d6+5)[fire]] damage (@Check[fortitude|dc:19|basic] save). Increase the DC by 2 if the creature is in magical darkness (@Check[fortitude|dc:21|basic]).</p>",
             "stealth": "<p>(trained)</p>",
             "items": {
-                "Flames of Caina": {
+                "action->Flames of Caina": {
                     "name": "Flames of Caina",
                     "description": "<p><strong>Trigger</strong> A living creature enters the area</p><hr /><p><strong>Effect</strong> Shadows roil in the brazier. It casts @UUID[Compendium.pf2e.spells-srd.Item.4GE2ZdODgIQtg51c]{Darkness} on itself, and then rolls initiative.</p>"
                 }
@@ -782,16 +793,16 @@
             "name": "Kalagemmon, Decayed Cyclops",
             "hpDetails": "void healing",
             "items": {
-                "Occult Prepared Spells": {
+                "spellcastingEntry->Occult Prepared Spells": {
                     "name": "Occult Prepared Spells"
                 },
-                "Occult Focus Spells": {
+                "spellcastingEntry->Occult Focus Spells": {
                     "name": "Occult Focus Spells"
                 },
-                "Morningstar": {
+                "strike-melee->Morningstar": {
                     "name": "Morningstar"
                 },
-                "Void Healing": {
+                "action->Void Healing": {
                     "name": "Void Healing"
                 }
             }
@@ -800,16 +811,16 @@
             "name": "Kalagemmon, Decayed Resentment Witch",
             "hpDetails": "void healing",
             "items": {
-                "Occult Prepared Spells": {
+                "spellcastingEntry->Occult Prepared Spells": {
                     "name": "Occult Prepared Spells"
                 },
-                "Occult Focus Spells": {
+                "spellcastingEntry->Occult Focus Spells": {
                     "name": "Occult Focus Spells"
                 },
-                "Morningstar": {
+                "strike-melee->Morningstar": {
                     "name": "Morningstar"
                 },
-                "Void Healing": {
+                "action->Void Healing": {
                     "name": "Void Healing"
                 }
             }
@@ -819,21 +830,21 @@
             "publicNotes": "<p>Gorillas can be territorial creatures, particularly if provoked by hunters or the presence of more dangerous monsters. A gorilla uses its fangs and powerful arms to bite and pummel trespassers with wild abandon.</p>\n<hr />\n<p>While many apes exhibit peaceful or reclusive behavior, gorillas can be territorial, and the megaprimatus is especially aggressive and dangerous.</p>",
             "blurb": "Variant elite gorilla",
             "items": {
-                "Fist": {
+                "strike-melee->Fist": {
                     "name": "Fist"
                 },
-                "Jaws": {
+                "strike-melee->Jaws": {
                     "name": "Jaws"
                 },
-                "Boarding Action": {
+                "action->Boarding Action": {
                     "name": "Boarding Action",
                     "description": "<p>The pirate gorilla swings on a rope or Strides, moving up to double their Speed. If the pirate boarded or disembarked a boat during this movement, they can make a melee Strike at the end of their movement that deals one extra damage die on a hit.</p>"
                 },
-                "Frightening Display": {
+                "action->Frightening Display": {
                     "name": "Frightening Display",
                     "description": "<p>The gorilla beats its chest in a terrifying display. Creatures within @Template[emanation|distance:30]{30 feet} must attempt a @Check[will|dc:20|options:area-effect,inflicts:frightened,inflicts:off-guard] save. While a creature is frightened by this ability, it is @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} to the gorilla.</p><hr /><p><strong>Critical Success</strong> No effect and temporarily immune for 1 minute.</p>\n<p><strong>Success</strong> The creature is unaffected.</p>\n<p><strong>Failure</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 1}.</p>\n<p><strong>Critical Failure</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 2}.</p>"
                 },
-                "Well-Trained": {
+                "action->Well-Trained": {
                     "name": "Well-Trained",
                     "description": "<p>The pirate gorilla is used to taking orders on board the ship. It loses its immunity to linguistic efects, including appeals to surrender.</p>"
                 }
@@ -845,51 +856,54 @@
             "allSavesBonus": "+1 status to all saves vs. magic",
             "languagesDetails": "Telepathy 100 feet",
             "items": {
-                "Divine Innate Spells": {
+                "spellcastingEntry->Divine Innate Spells": {
                     "name": "Divine Innate Spells"
                 },
-                "Divine Focus Spells": {
+                "spellcastingEntry->Divine Focus Spells": {
                     "name": "Divine Focus Spells"
                 },
-                "Translocate (At Will)": {
+                "spell->Translocate (At Will)": {
                     "name": "Translocate (At Will)"
                 },
-                "Charm of Cold Resistance": {
+                "equipment->Charm of Cold Resistance": {
                     "name": "Charm of Cold Resistance",
                     "description": "<p>This charm, normally hung from the belt or worn around the neck, grants you resistance 5 against one type of energy damage: acid, cold, electricity, fire, or sonic. Each charm is crafted to protect against a particular type of energy damage, and its design usually embodies the type of energy it protects the wearer from in some way. For instance, a <em>charm of cold resistance</em> could be carved in the shape of a yeti, whereas a <em>charm of fire resistance</em> would be made from volcanic glass.</p>"
                 },
-                "Returning Unholy Trident": {
+                "strike-melee->Returning Unholy Trident": {
                     "name": "Returning Unholy Trident"
                 },
-                "Hoof": {
+                "strike-ranged->Returning Unholy Trident": {
+                    "name": "Returning Unholy Trident"
+                },
+                "strike-melee->Hoof": {
                     "name": "Hoof"
                 },
-                "+1 Status to All Saves vs. Magic": {
+                "action->+1 Status to All Saves vs. Magic": {
                     "name": "+1 Status to All Saves vs. Magic"
                 },
-                "Infernal Command": {
+                "action->Infernal Command": {
                     "name": "Infernal Command",
                     "description": "<p><strong>Trigger</strong> An enemy within 30 feet of Kizrech damages them or their mount</p><hr /><p><strong>Effect</strong> Kizrech commands their enemy to kneel before them. The triggering enemy must choose to either drop @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone} as a free action or take @Damage[3d6[mental]] damage.</p>"
                 },
-                "Mounted Force": {
+                "action->Mounted Force": {
                     "name": "Mounted Force",
                     "description": "<p>While mounted on a fend, Kizrech's trident gains the jousting 1d8 and thrown 60 feet traits, and Kizrech and their mount each increase their level by 1 when resolving incapacitation efects.</p>"
                 },
-                "Reactive Strike": {
+                "action->Reactive Strike": {
                     "name": "Reactive Strike"
                 },
-                "Shield Block": {
+                "action->Shield Block": {
                     "name": "Shield Block"
                 },
-                "Burning Hoofprints": {
+                "action->Burning Hoofprints": {
                     "name": "Burning Hoofprints",
                     "description": "<p>Kizrech Strides, trailing hoofprints in each square they exit. The hoofprints burn for 1 minute. A creature on the ground that enters a square with burning hoofprints or begins its turn in one takes @Damage[1d6[fire]] damage. Kizrech can use this ability while mounted, afecting up to 30 feet of contiguous hoofprints from their mount's Stride; this trail is 10 feet wide for a Large mount, or 15 feet wide for a Huge mount.</p>"
                 },
-                "Trident of Dis": {
+                "action->Trident of Dis": {
                     "name": "Trident of Dis",
                     "description": "<p>Kizrech makes a trident Strike, increasing their reach to 10 feet for that Strike. If there is an unholy ally between Kizrech and their target, or if Kizrech is mounted on an unholy creature, that creature's energy causes the Strike to deal an additional 1d8 spirit damage.</p>"
                 },
-                "Warfare Lore": {
+                "lore->Warfare Lore": {
                     "name": "Warfare Lore"
                 }
             }
@@ -900,51 +914,54 @@
             "allSavesBonus": "+1 status to all saves vs. magic",
             "languagesDetails": "Telepathy 100 feet",
             "items": {
-                "Divine Innate Spells": {
+                "spellcastingEntry->Divine Innate Spells": {
                     "name": "Divine Innate Spells"
                 },
-                "Divine Focus Spells": {
+                "spellcastingEntry->Divine Focus Spells": {
                     "name": "Divine Focus Spells"
                 },
-                "Translocate (At Will)": {
+                "spell->Translocate (At Will)": {
                     "name": "Translocate (At Will)"
                 },
-                "Charm of Cold Resistance": {
+                "equipment->Charm of Cold Resistance": {
                     "name": "Charm of Cold Resistance",
                     "description": "<p>This charm, normally hung from the belt or worn around the neck, grants you resistance 5 against one type of energy damage: acid, cold, electricity, fire, or sonic. Each charm is crafted to protect against a particular type of energy damage, and its design usually embodies the type of energy it protects the wearer from in some way. For instance, a <em>charm of cold resistance</em> could be carved in the shape of a yeti, whereas a <em>charm of fire resistance</em> would be made from volcanic glass.</p>"
                 },
-                "Returning Unholy Trident": {
+                "strike-melee->Returning Unholy Trident": {
                     "name": "Returning Unholy Trident"
                 },
-                "Hoof": {
+                "strike-ranged->Returning Unholy Trident": {
+                    "name": "Returning Unholy Trident"
+                },
+                "strike-melee->Hoof": {
                     "name": "Hoof"
                 },
-                "+1 Status to All Saves vs. Magic": {
+                "action->+1 Status to All Saves vs. Magic": {
                     "name": "+1 Status to All Saves vs. Magic"
                 },
-                "Infernal Command": {
+                "action->Infernal Command": {
                     "name": "Infernal Command",
                     "description": "<p><strong>Trigger</strong> An enemy within 30 feet of Kizrech damages them or their mount</p><hr /><p><strong>Effect</strong> Kizrech commands their enemy to kneel before them. The triggering enemy must choose to either drop @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone} as a free action or take @Damage[3d6[mental]] damage.</p>"
                 },
-                "Mounted Force": {
+                "action->Mounted Force": {
                     "name": "Mounted Force",
                     "description": "<p>While mounted on a fend, Kizrech's trident gains the jousting 1d8 and thrown 60 feet traits, and Kizrech and their mount each increase their level by 1 when resolving incapacitation efects.</p>"
                 },
-                "Reactive Strike": {
+                "action->Reactive Strike": {
                     "name": "Reactive Strike"
                 },
-                "Shield Block": {
+                "action->Shield Block": {
                     "name": "Shield Block"
                 },
-                "Burning Hoofprints": {
+                "action->Burning Hoofprints": {
                     "name": "Burning Hoofprints",
                     "description": "<p>Kizrech Strides, trailing hoofprints in each square they exit. The hoofprints burn for 1 minute. A creature on the ground that enters a square with burning hoofprints or begins its turn in one takes @Damage[1d8[fire]] damage. Kizrech can use this ability while mounted, afecting up to 30 feet of contiguous hoofprints from their mount's Stride; this trail is 10 feet wide for a Large mount, or 15 feet wide for a Huge mount.</p>"
                 },
-                "Trident of Dis": {
+                "action->Trident of Dis": {
                     "name": "Trident of Dis",
                     "description": "<p>Kizrech makes a trident Strike, increasing their reach to 10 feet for that Strike. If there is an unholy ally between Kizrech and their target, or if Kizrech is mounted on an unholy creature, that creature's energy causes the Strike to deal an additional 1d8 spirit damage.</p>"
                 },
-                "Warfare Lore": {
+                "lore->Warfare Lore": {
                     "name": "Warfare Lore"
                 }
             }
@@ -953,23 +970,23 @@
             "name": "Lesser Marsh Giant",
             "publicNotes": "<p>Dwellers of brackish coastal salt marshes and fetid bogs and swamps, marsh giants appear hideous to most airbreathers, with fishlike mouths, slimy graygreen skin, and dark, beady eyes. They prefer to eat the flesh of those they slay in battle, including other marsh giants, and guzzle stagnant water from cauldrons or directly from their swampy homes.</p>\n<p>Marsh giant clans are insular, with each clan dedicating itself to zealous worship of a sea-dwelling deity, demon lord, or stranger entity. Whatever forces call to the marsh giants sometimes ensnare boggards and ogres as well, gathering in grim worship. Rather than favor these humanoid hangerson, marsh giants lavish attention on favored pets: krooths, giant octopuses, or primeval creatures like dinosaurs and the crocodilian deinosuchuses.</p>\n<p>Barely topping 11 feet tall and 1,000 pounds, marsh giants are small for giants but make up for their stature with their zealotry.</p>\n<hr />\n<p>Giants are massive humanoid creatures who live in remote regions throughout the world. They vary widely but are united in their hunger, requiring sustenance of their own element along with the feasts one would expect from such a massive humanoid. Although a simple matter for some giants, more esoteric types find this need a harsh reality. While a massive fistful of ice or snow alongside their meal will satisfy a frost giant, shadow giants hunger for the coagulated shadows of the Netherworld.</p>",
             "items": {
-                "Occult Innate Spells": {
+                "spellcastingEntry->Occult Innate Spells": {
                     "name": "Occult Innate Spells"
                 },
-                "Gaff": {
+                "strike-melee->Gaff": {
                     "name": "Gaff"
                 },
-                "Fist": {
+                "strike-melee->Fist": {
                     "name": "Fist"
                 },
-                "Spit": {
+                "strike-melee->Spit": {
                     "name": "Spit"
                 },
-                "Drowning Hook": {
+                "action->Drowning Hook": {
                     "name": "Drowning Hook",
                     "description": "<p><strong>Requirements</strong> A creature is @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone} within the marsh giant's reach</p><hr /><p><strong>Effect</strong> The marsh giant uses its gaff to push the creature down as water bubbles up below it. The target becomes submerged in water until they are no longer prone and must hold their breath if they cannot breathe water. They take @Damage[2d10[bludgeoning]] damage (@Check[fortitude|dc:21|basic] save) and lose 3 rounds worth of air if they fail the save.</p>"
                 },
-                "Twist the Hook": {
+                "action->Twist the Hook": {
                     "name": "Twist the Hook",
                     "description": "<p>The marsh giant makes a melee Strike with its gaff. If it hits, it twists and yanks the gaff to knock the target @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone} and create an awful wound, dealing @Damage[2d4[persistent,bleed]] damage to the creature.</p>"
                 }
@@ -979,37 +996,37 @@
             "name": "Lyari Zinfeld",
             "hpDetails": "void healing",
             "items": {
-                "Books": {
+                "equipment->Books": {
                     "name": "Books"
                 },
-                "Jaws": {
+                "strike-melee->Jaws": {
                     "name": "Jaws"
                 },
-                "Claw": {
+                "strike-melee->Claw": {
                     "name": "Claw"
                 },
-                "Void Healing": {
+                "action->Void Healing": {
                     "name": "Void Healing"
                 },
-                "Consume Flesh": {
+                "action->Consume Flesh": {
                     "name": "Consume Flesh",
                     "description": "<p><strong>Requirements</strong> Lyari is adjacent to the corpse of a creature that died within the last hour</p><hr /><p><strong>Effect</strong> Lyari devours a chunk of the corpse and regains @Damage[1d6[healing]] Hit Points. She can regain Hit Points from any given corpse only once.</p>"
                 },
-                "Nihilistic Truthsayer": {
+                "action->Nihilistic Truthsayer": {
                     "name": "Nihilistic Truthsayer",
                     "description": "<p>Lyari's solitary time in the depths and unique perspective on existence makes her shockingly accepting of terrible universal truths that others don't want to hear. She calmly lays into an enemy within 30 feet, reminding them of existential frailty, presumed insecurities, and inevitable failures in a logical and level manner. The target must attempt a @Check[will|dc:16] save. On a failure, they are @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 2} (@UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 3} and @UUID[Compendium.pf2e.conditionitems.Item.sDPxOjQ9kx2RZE8D]{Fleeing} for 1 round on a critical failure). Regardless of the result of its save, the target is temporarily immune for 1 hour.</p>"
                 },
-                "Swift Leap": {
+                "action->Swift Leap": {
                     "name": "Swift Leap",
                     "description": "<p>Lyari jumps up to half her Speed. This movement doesn't trigger reactions.</p>"
                 },
-                "Grab": {
+                "action->Grab": {
                     "name": "Grab"
                 },
-                "Elven Lore": {
+                "lore->Elven Lore": {
                     "name": "Elven Lore"
                 },
-                "Library Lore": {
+                "lore->Library Lore": {
                     "name": "Library Lore"
                 }
             }
@@ -1018,37 +1035,37 @@
             "name": "Lyari Zinfeld (3-4)",
             "hpDetails": "void healing",
             "items": {
-                "Books": {
+                "equipment->Books": {
                     "name": "Books"
                 },
-                "Jaws": {
+                "strike-melee->Jaws": {
                     "name": "Jaws"
                 },
-                "Claw": {
+                "strike-melee->Claw": {
                     "name": "Claw"
                 },
-                "Void Healing": {
+                "action->Void Healing": {
                     "name": "Void Healing"
                 },
-                "Consume Flesh": {
+                "action->Consume Flesh": {
                     "name": "Consume Flesh",
                     "description": "<p><strong>Requirements</strong> Lyari is adjacent to the corpse of a creature that died within the last hour</p><hr /><p><strong>Effect</strong> Lyari devours a chunk of the corpse and regains @Damage[1d6[healing]] Hit Points. She can regain Hit Points from any given corpse only once.</p>"
                 },
-                "Nihilistic Truthsayer": {
+                "action->Nihilistic Truthsayer": {
                     "name": "Nihilistic Truthsayer",
                     "description": "<p>Lyari's solitary time in the depths and unique perspective on existence makes her shockingly accepting of terrible universal truths that others don't want to hear. She calmly lays into an enemy within 30 feet, reminding them of existential frailty, presumed insecurities, and inevitable failures in a logical and level manner. The target must attempt a @Check[will|dc:19] save. On a failure, they are @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 2} (@UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 3} and @UUID[Compendium.pf2e.conditionitems.Item.sDPxOjQ9kx2RZE8D]{Fleeing} for 1 round on a critical failure). Regardless of the result of its save, the target is temporarily immune for 1 hour.</p>"
                 },
-                "Swift Leap": {
+                "action->Swift Leap": {
                     "name": "Swift Leap",
                     "description": "<p>Lyari jumps up to half her Speed. This movement doesn't trigger reactions.</p>"
                 },
-                "Grab": {
+                "action->Grab": {
                     "name": "Grab"
                 },
-                "Elven Lore": {
+                "lore->Elven Lore": {
                     "name": "Elven Lore"
                 },
-                "Library Lore": {
+                "lore->Library Lore": {
                     "name": "Library Lore"
                 }
             }
@@ -1059,36 +1076,36 @@
             "speedsDetails": "greater forest passage",
             "languagesDetails": "can't speak any language",
             "items": {
-                "Fangs": {
+                "strike-melee->Fangs": {
                     "name": "Fangs"
                 },
-                "Tail Scythe": {
+                "strike-melee->Tail Scythe": {
                     "name": "Tail Scythe"
                 },
-                "Alluring Scent": {
+                "action->Alluring Scent": {
                     "name": "Alluring Scent",
                     "description": "<p>30 feet. A creature that enters the emanation must attempt a @Check[will|dc:25] save. On a failure, the target is @UUID[Compendium.pf2e.conditionitems.Item.AdPVz7rbaVSRxHFg]{Fascinated} by the snapdrake and must use at least 1 action on its next turn to Stride closer to the snapdrake. On a success, the target is immune to the snapdrake's alluring scent for 1 hour.</p>"
                 },
-                "Reactive Strike (Tail Scythe Only)": {
+                "action->Reactive Strike (Tail Scythe Only)": {
                     "name": "Reactive Strike (Tail Scythe Only)"
                 },
-                "Greater Marsh Passage": {
+                "action->Greater Marsh Passage": {
                     "name": "Greater Marsh Passage",
                     "description": "<p>The marshy snapdrake ignores difficult terrain and greater difficult terrain from marshy ground and fungi</p>"
                 },
-                "Marshy Snapdrake Pollen": {
+                "action->Marshy Snapdrake Pollen": {
                     "name": "Marshy Snapdrake Pollen",
                     "description": "<p><strong>Saving Throw</strong> @Check[fortitude|dc:25];</p>\n<p><strong>Maximum Duration</strong> 8 rounds</p>\n<p><strong>Stage 1</strong> @Damage[1d6[poison]] damage plus @UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]{Dazzled} 1 (1 round)</p>\n<p><strong>Stage 2</strong> @Damage[1d6[poison]] damage plus dazzled 1 and @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 1} (2 rounds)</p>\n<p><strong>Stage 3</strong> @Damage[2d6[poison]] damage plus @UUID[Compendium.pf2e.conditionitems.Item.yblD8fOR1J8rDwEQ]{Confused} and sickened 1 (2 rounds)</p>"
                 },
-                "Speed Surge": {
+                "action->Speed Surge": {
                     "name": "Speed Surge",
                     "description": "<p><strong>Frequency</strong> 3 times per day</p><hr /><p><strong>Effect</strong> The marshy snapdrake Strides or Flies up to twice its Speed</p>"
                 },
-                "Spray Pollen": {
+                "action->Spray Pollen": {
                     "name": "Spray Pollen",
                     "description": "<p>The marshy snapdrake breathes a blast of pollen in a @Template[type:cone|distance:40] Creatures caught in the blast must succeed at a @Check[reflex|dc:25|options:area-effect] save or be exposed to marshy snapdrake pollen The marshy snapdrake can't use Spray Pollen again for [[/gmr 1d6 #Recharge Spray Pollen]] rounds.</p>"
                 },
-                "Grab": {
+                "action->Grab": {
                     "name": "Grab"
                 }
             }
@@ -1100,19 +1117,19 @@
             "routine": "<p>(three actions) The unruly crowd uses an action to chant a Catchy Slogan if it is not already benefiting from the effect It uses Shake Confidence once per turn and uses its remaining actions for cobblestone Strikes.</p>",
             "stealth": "<p>(trained) Characters automatically detect this hazard when they open the door to the Grand Hall.</p>",
             "items": {
-                "There They Are!": {
+                "action->There They Are!": {
                     "name": "There They Are!",
                     "description": "<p><strong>Trigger</strong> A creature opens the door to the Grand Hall</p><hr /><p><strong>Effect</strong> The unruly crowd rolls Initiative.</p>"
                 },
-                "Catchy Slogan": {
+                "action->Catchy Slogan": {
                     "name": "Catchy Slogan",
                     "description": "<p>All the hazards in a @Template[type:emanation|distance:30] gain a +1 status bonus to attack rolls and damage rolls for 1 round.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.wFpKEx9KSjoVg9xq]{Effect: Catchy Slogan}</p>"
                 },
-                "Shake Confidence": {
+                "action->Shake Confidence": {
                     "name": "Shake Confidence",
                     "description": "<p>The unruly crowd targets a creature within 30 feet The creature must attempt a @Check[will|dc:27] save</p><hr /><p><strong>Critical Success</strong> The creature is unaffected and immune to Shake Confidence for 24 hours</p>\n<p><strong>Success</strong> The creature becomes @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 1}</p>\n<p><strong>Failure</strong> The creature becomes @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 2}</p>\n<p><strong>Critical Failure</strong> The creature becomes frightened 2 and @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 1}.</p>"
                 },
-                "Cobblestone": {
+                "strike-melee->Cobblestone": {
                     "name": "Cobblestone"
                 }
             }
@@ -1122,32 +1139,32 @@
             "publicNotes": "<p>The captain is the ultimate authority on a vessel, responsible for the livelihood and well-being of everyone on the ship.</p><hr /><p>Adventurers may need passage on a swift vessel, or they might face danger from raiders at sea or in coastal settlements.</p>",
             "blurb": "Variant ship captain",
             "items": {
-                "Aqueous Rapier": {
+                "strike-melee->Aqueous Rapier": {
                     "name": "Aqueous Rapier"
                 },
-                "Aqueous Main-Gauche": {
+                "strike-melee->Aqueous Main-Gauche": {
                     "name": "Aqueous Main-Gauche"
                 },
-                "Aqueous Fist": {
+                "strike-melee->Aqueous Fist": {
                     "name": "Aqueous Fist"
                 },
-                "Animal Empathy": {
+                "action->Animal Empathy": {
                     "name": "Animal Empathy",
                     "description": "<p>The naiad can ask questions of, receive answers from, and use the Diplomacy skill with animals</p>"
                 },
-                "Bravery": {
+                "action->Bravery": {
                     "name": "Bravery",
                     "description": "<p>When the naiad commander rolls a success on a Will save against a fear effect, they get a critical success instead In addition, anytime they gain the @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened} condition, reduce its value by 1.</p>"
                 },
-                "Dual Disarm": {
+                "action->Dual Disarm": {
                     "name": "Dual Disarm",
                     "description": "<p>The naiad commander makes two Strikes, one with their rapier and one with their main-gauche (in either order) If both Strikes hit, the naiad commander can attempt to [[/act disarm]] the target Their multiple attack penalty increases only after all the attacks are made.</p>"
                 },
-                "No Quarter!": {
+                "action->No Quarter!": {
                     "name": "No Quarter!",
                     "description": "<p>The naiad commander orders their allies to fight without mercy All allied creatures of equal or lower level within 20 feet of the commander gain a +1 status bonus to attack rolls and damage rolls until the end of the naiad commander's next turn.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.TjRZbd52qWPjTbNT]{Effect: No Quarter!}</p>"
                 },
-                "Sailing Lore": {
+                "lore->Sailing Lore": {
                     "name": "Sailing Lore"
                 }
             }
@@ -1157,28 +1174,28 @@
             "publicNotes": "<p>Criminal organizations are always happy to loan out money at exorbitant rates, and their legbreakers are always happy to collect.</p><hr /><p>In the underbelly of society, the lawless reign supreme.</p>",
             "blurb": "Variant legbreaker",
             "items": {
-                "Aqueous Maul": {
+                "strike-melee->Aqueous Maul": {
                     "name": "Aqueous Maul"
                 },
-                "Aqueous Fist": {
+                "strike-melee->Aqueous Fist": {
                     "name": "Aqueous Fist"
                 },
-                "Animal Empathy": {
+                "action->Animal Empathy": {
                     "name": "Animal Empathy",
                     "description": "<p>The naiad can ask questions of, receive answers from, and use the Diplomacy skill with animals.</p>"
                 },
-                "Reactive Strike": {
+                "action->Reactive Strike": {
                     "name": "Reactive Strike"
                 },
-                "Break Legs!": {
+                "action->Break Legs!": {
                     "name": "Break Legs!",
                     "description": "<p>The naiad raider makes a maul Strike against an adjacent creature If it hits, the creature is knocked @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone} and becomes @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 1} for 1 minute As long as this clumsy condition lasts, the creature also takes a –5-foot penalty to its Speeds and has weakness 5 to the naiad raider's Strikes.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.zOaP4yGwbFOszxeJ]{Effect: Break Legs!}</p>"
                 },
-                "Rushing Strike": {
+                "action->Rushing Strike": {
                     "name": "Rushing Strike",
                     "description": "<p>The naiad raider Strides twice If they end their movement within melee reach of an enemy, they can make a melee Strike against that enemy.</p>"
                 },
-                "Stampeding Shove": {
+                "action->Stampeding Shove": {
                     "name": "Stampeding Shove",
                     "description": "<p>The naiad raider [[/act shove options=stampeding-shove]]{Shoves} a creature, gaining a +2 circumstance bonus to their Athletics check if the target is @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone}. If the Shove succeeds, the target takes @Damage[2d10[bludgeoning]] damage (double damage on a critical success).</p>"
                 }
@@ -1194,25 +1211,25 @@
             "publicNotes": "<p>Bounty hunters are constantly on the move, whether within city walls or the wilderness, trailing their fugitive quarries for capture... or disposal. Often relying on stealth or deception as much as martial skill, bounty hunters employ a vast array of talents to accomplish their goals and collect the hefty payout.</p><hr /><p>Whether they're hired to wage war, protect a caravan, or infiltrate an impenetrable fortress, there's ample work for mercenaries all over Golarion.</p>",
             "blurb": "Variant bounty hunter",
             "items": {
-                "Aqueous Boarding Pike": {
+                "strike-melee->Aqueous Boarding Pike": {
                     "name": "Aqueous Boarding Pike"
                 },
-                "Water Orb": {
+                "strike-melee->Water Orb": {
                     "name": "Water Orb"
                 },
-                "Animal Empathy": {
+                "action->Animal Empathy": {
                     "name": "Animal Empathy",
                     "description": "<p>The naiad can ask questions of, receive answers from, and use the Diplomacy skill with animals.</p>"
                 },
-                "Hunt Prey": {
+                "action->Hunt Prey": {
                     "name": "Hunt Prey",
                     "description": "<p>The naiad ship hunter designates a single creature they can see and hear, or one they're Tracking or Gathering Information about, as their prey. The naiad ship hunter gains a +2 circumstance bonus to Perception checks to @UUID[Compendium.pf2e.actionspf2e.Item.BlAOM2X92SI6HMtJ]{Seek} the prey, to Survival checks to @UUID[Compendium.pf2e.actionspf2e.Item.EA5vuSgJfiHH7plD]{Track} the prey, and to Diplomacy checks to @UUID[Compendium.pf2e.actionspf2e.Item.plBGdZhqq5JBl1D8]{Gather Information} about the prey. This effect lasts until they use Hunt Prey again.</p>"
                 },
-                "Posse's Edge": {
+                "action->Posse's Edge": {
                     "name": "Posse's Edge",
                     "description": "<p>The naiad ship hunter and their allies gain a +1 circumstance bonus on initiative rolls if the opposing side includes their hunted prey.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.m1Vd997DEVoOeaJu]{Effect: Posse's Edge}</p>"
                 },
-                "Precision Edge": {
+                "action->Precision Edge": {
                     "name": "Precision Edge",
                     "description": "<p>The frst time the naiad ship hunter hits their hunted prey in a round, they deal an additional 1d8 precision damage.</p>"
                 }
@@ -1221,25 +1238,28 @@
         "Naiad Warrior": {
             "name": "Naiad Warrior",
             "items": {
-                "Aqueous Trident": {
+                "strike-melee->Aqueous Trident": {
                     "name": "Aqueous Trident"
                 },
-                "Aqueous Fist": {
+                "strike-ranged->Aqueous Trident": {
+                    "name": "Aqueous Trident"
+                },
+                "strike-melee->Aqueous Fist": {
                     "name": "Aqueous Fist"
                 },
-                "Animal Empathy": {
+                "action->Animal Empathy": {
                     "name": "Animal Empathy",
                     "description": "<p>Animal Empathy The naiad can ask questions of, receive answers from, and use the Diplomacy skill with animals.</p>"
                 },
-                "Underwater Awareness": {
+                "action->Underwater Awareness": {
                     "name": "Underwater Awareness",
                     "description": "<p><strong>Trigger</strong> An enemy Strikes the naiad warrior while they're underwater</p><hr /><p><strong>Effect</strong> The naiad senses the movement of their enemy in the water and jerks back in time They gain a +2 circumstance bonus to their AC against the triggering attack.</p>"
                 },
-                "Dive": {
+                "action->Dive": {
                     "name": "Dive",
                     "description": "<p>The naiad warrior moves up to twice their swim Speed downward.</p>"
                 },
-                "Ocean Lore": {
+                "lore->Ocean Lore": {
                     "name": "Ocean Lore"
                 }
             }
@@ -1249,52 +1269,52 @@
             "publicNotes": "<p>Gang leaders direct cutthroats, killers, thieves, and toughs. The gang leader often appears alongside a bandit gang or other criminals.</p><hr /><p>Villains pursue selfish and cruel goals, trampling over anyone in their way.</p>",
             "blurb": "Variant gang leader",
             "items": {
-                "Aqueous Shortsword": {
+                "strike-melee->Aqueous Shortsword": {
                     "name": "Aqueous Shortsword"
                 },
-                "Aqueous Fist": {
+                "strike-melee->Aqueous Fist": {
                     "name": "Aqueous Fist"
                 },
-                "Water Orb": {
+                "strike-melee->Water Orb": {
                     "name": "Water Orb"
                 },
-                "Animal Empathy": {
+                "action->Animal Empathy": {
                     "name": "Animal Empathy",
                     "description": "<p>The naiad can ask questions of, receive answers from, and use the Diplomacy skill with animals</p>"
                 },
-                "Deny Advantage": {
+                "action->Deny Advantage": {
                     "name": "Deny Advantage",
                     "description": "<p>The naiad water defender isn't @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} to creatures of 7th level or lower that are @UUID[Compendium.pf2e.conditionitems.Item.iU0fEDdBp3rXpTMC]{Hidden}, @UUID[Compendium.pf2e.conditionitems.Item.VRSef5y1LmL2Hkjf]{Undetected}, flanking, or using @UUID[Compendium.pf2e.classfeatures.Item.w6rMqmGzhUahdnA7]{Surprise Attack}.</p>"
                 },
-                "Evasive Reflexes": {
+                "action->Evasive Reflexes": {
                     "name": "Evasive Reflexes",
                     "description": "<p>When the naiad water defender rolls a success on a Reflex save, they get a critical success instead.</p>"
                 },
-                "Nimble Dodge": {
+                "action->Nimble Dodge": {
                     "name": "Nimble Dodge",
                     "description": "<p><strong>Trigger</strong> The naiad water defender is targeted with an attack by an attacker they can see</p><hr /><p><strong>Effect</strong> The naiad water defender gains a +2 circumstance bonus to AC against the triggering attack.</p>"
                 },
-                "Surprise Attacker": {
+                "action->Surprise Attacker": {
                     "name": "Surprise Attacker",
                     "description": "<p>On the first round of combat, creatures that haven't acted are @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} to the naiad water defender.</p>"
                 },
-                "Brutal Rally": {
+                "action->Brutal Rally": {
                     "name": "Brutal Rally",
                     "description": "<p><strong>Trigger</strong> The naiad water defender rolls a critical hit against a creature</p><hr /><p><strong>Effect</strong> All allies that can see the naiad water defender gain a +1 circumstance bonus to attack rolls until the start of the naiad water defender's next turn.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.7x0O2GqWBJiAk5PF]{Effect: Brutal Rally}</p>"
                 },
-                "Gang Up": {
+                "action->Gang Up": {
                     "name": "Gang Up",
                     "description": "<p>Any enemy is @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} against the naiad water defender's melee attacks due to flanking as long as the enemy is within melee reach of both the naiad water defender and one of the naiad water defender's allies.</p>"
                 },
-                "Quick Draw": {
+                "action->Quick Draw": {
                     "name": "Quick Draw",
                     "description": "<p>The naiad water defender Interacts to draw a weapon, then Strikes with that weapon</p>"
                 },
-                "Sneak Attack": {
+                "action->Sneak Attack": {
                     "name": "Sneak Attack",
                     "description": "<p>The naiad water defender deals an extra 2d6 precision damage to @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} creatures.</p>"
                 },
-                "Underworld Lore": {
+                "lore->Underworld Lore": {
                     "name": "Underworld Lore"
                 }
             }
@@ -1304,23 +1324,23 @@
             "publicNotes": "<p>Believing the ends justify the means, the unsanctioned sheriff is unafraid to use others for their own gain, through bribes, manipulation, or force.</p><hr /><p>These lone wolves have an aura of mystery, bravado, and swagger.</p>",
             "blurb": "Variant unsanctioned sheriff",
             "items": {
-                "Aqueous Fist": {
+                "strike-melee->Aqueous Fist": {
                     "name": "Aqueous Fist"
                 },
-                "Aqueous Spear": {
+                "strike-melee->Aqueous Spear": {
                     "name": "Aqueous Spear"
                 },
-                "Water Orb": {
+                "strike-melee->Water Orb": {
                     "name": "Water Orb"
                 },
-                "Animal Empathy": {
+                "action->Animal Empathy": {
                     "name": "Animal Empathy",
                     "description": "<p>The naiad can ask questions of, receive answers from, and use the Diplomacy skill with animals.</p>"
                 },
-                "Reactive Strike": {
+                "action->Reactive Strike": {
                     "name": "Reactive Strike"
                 },
-                "At My Command": {
+                "action->At My Command": {
                     "name": "At My Command",
                     "description": "<p><strong>Requirements</strong> The naiad water guardian's last action this turn was a successful Strike against a creature within 30 feet</p><hr /><p><strong>Effect</strong> The naiad yells a command at the creature they hit The target must succeed at a @Check[will|dc:22] save or spend the first action on its next turn doing as commanded (or all its actions on its next turn on a critical failure) The naiad can command a creature to approach them, release what its holding, or drop @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone} Regardless of the result of its save, the creature is temporarily immune for 10 minutes.</p>"
                 }
@@ -1329,14 +1349,14 @@
         "Ogre Hunter": {
             "name": "Ogre Hunter",
             "items": {
-                "Always Ready for a Scufe": {
+                "action->Always Ready for a Scufe": {
                     "name": "Always Ready for a Scufe",
                     "description": "<p><strong>Trigger</strong> A creature gets in melee range of the ogre hunter</p><hr /><p><strong>Effect</strong> The ogre hunter draws a melee weapon.</p>"
                 },
-                "Reactive Strike": {
+                "action->Reactive Strike": {
                     "name": "Reactive Strike"
                 },
-                "Hunting Throw": {
+                "action->Hunting Throw": {
                     "name": "Hunting Throw",
                     "description": "<p>The ogre hunter makes a ranged strike with their trident within 60 feet without ranged penalties. If the strike hits, it has enough force to knock the target @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone}. If the strike was a critical success, the target is also @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Immobilized} by the trident.</p>"
                 }
@@ -1346,21 +1366,24 @@
             "name": "Olinda Posandi",
             "blurb": "Female human diabolist",
             "items": {
-                "Arcane Prepared Spells": {
+                "spellcastingEntry->Arcane Prepared Spells": {
                     "name": "Arcane Prepared Spells"
                 },
-                "Silver Religious Symbol of Asmodeus": {
+                "equipment->Silver Religious Symbol of Asmodeus": {
                     "name": "Silver Religious Symbol of Asmodeus",
                     "description": "<p>This piece of wood or silver is emblazoned with an image representing a deity. Some divine spellcasters, such as clerics, can use a religious symbol of their deity to use certain abilities and cast some spells. A religious symbol can be worn on the body on a chain or pin, or can be held.</p>"
                 },
-                "Dagger": {
+                "strike-melee->Dagger": {
                     "name": "Dagger"
                 },
-                "Sacrifice Minion": {
+                "strike-ranged->Dagger": {
+                    "name": "Dagger"
+                },
+                "action->Sacrifice Minion": {
                     "name": "Sacrifice Minion",
                     "description": "<p><strong>Trigger</strong> An enemy creature within 15 feet rolls a saving throw</p><hr /><p><strong>Effect</strong> Destroy one imp minion within 15 feet. The enemy rolls twice and takes the lower result on the saving throw.</p>"
                 },
-                "Conjure Imp": {
+                "action->Conjure Imp": {
                     "name": "Conjure Imp",
                     "description": "<p><strong>Frequency</strong> once per turn</p><hr /><p><strong>Effect</strong> Olinda conjures an imp minion within 20 feet, which can make a melee strike against an adjacent enemy.</p>"
                 }
@@ -1370,21 +1393,24 @@
             "name": "Olinda Posandi (3-4)",
             "blurb": "Female human diabolist",
             "items": {
-                "Arcane Prepared Spells": {
+                "spellcastingEntry->Arcane Prepared Spells": {
                     "name": "Arcane Prepared Spells"
                 },
-                "Silver Religious Symbol of Asmodeus": {
+                "equipment->Silver Religious Symbol of Asmodeus": {
                     "name": "Silver Religious Symbol of Asmodeus",
                     "description": "<p>This piece of wood or silver is emblazoned with an image representing a deity. Some divine spellcasters, such as clerics, can use a religious symbol of their deity to use certain abilities and cast some spells. A religious symbol can be worn on the body on a chain or pin, or can be held.</p>"
                 },
-                "Dagger": {
+                "strike-melee->Dagger": {
                     "name": "Dagger"
                 },
-                "Sacrifice Minion": {
+                "strike-ranged->Dagger": {
+                    "name": "Dagger"
+                },
+                "action->Sacrifice Minion": {
                     "name": "Sacrifice Minion",
                     "description": "<p><strong>Trigger</strong> An enemy creature within 15 feet rolls a saving throw</p><hr /><p><strong>Effect</strong> Destroy one imp minion within 15 feet. The enemy rolls twice and takes the lower result on the saving throw.</p>"
                 },
-                "Conjure Imp": {
+                "action->Conjure Imp": {
                     "name": "Conjure Imp",
                     "description": "<p><strong>Frequency</strong> once per turn</p><hr /><p><strong>Effect</strong> Olinda conjures an imp minion within 20 feet, which can make a melee strike against an adjacent enemy.</p>"
                 }
@@ -1394,18 +1420,18 @@
             "name": "Partially Decomposed Rat Swarm",
             "hpDetails": "negative healing",
             "items": {
-                "Slow": {
+                "action->Slow": {
                     "name": "Slow",
                     "description": "<p>A partially decomposed rat swarm is permanently @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1} and can't use reactions.</p>"
                 },
-                "Void Healing": {
+                "action->Void Healing": {
                     "name": "Void Healing"
                 },
-                "Swarming Bites": {
+                "action->Swarming Bites": {
                     "name": "Swarming Bites",
                     "description": "<p>Each enemy in the swarm's space takes @Damage[1d6[piercing]] damage and must attempt a @Check[reflex|dc:17|basic] save. A creature that fails its save is exposed to zombie plague.</p>"
                 },
-                "Zombie Plague": {
+                "action->Zombie Plague": {
                     "name": "Zombie Plague",
                     "description": "<p>The sickened and @UUID[Compendium.pf2e.conditionitems.Item.fBnFDH2MTzgFijKf]{Unconscious} conditions from zombie plague can't end or be reduced until the disease is cured.</p>\n<p><strong>Saving Throw</strong> @Check[fortitude|dc:14]</p>\n<p><strong>Stage 1</strong> carrier with no ill effect (1d4 hours),</p>\n<p><strong>Stage 2</strong> @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 1} (1 day),</p>\n<p><strong>Stage 3</strong> sickened 1 and @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1} (1 day),</p>\n<p><strong>Stage 4</strong> unconscious (1 day),</p>\n<p><strong>Stage 5</strong> dead</p>"
                 }
@@ -1423,15 +1449,15 @@
             "routine": "<p>(1 action) The Hellknight commands the orts, and the trap lashes out at each enemy creature in its space and adjacent, dealing @Damage[(1d6+3)[slashing]] damage (@Check[reflex|dc:15|basic] save) If no enemy is in reach, an ort emerges in an adjacent square.</p>",
             "stealth": "<p>(trained)</p>",
             "items": {
-                "Hellfire": {
+                "action->Hellfire": {
                     "name": "Hellfire",
                     "description": "<p>All orts within 30 feet have +1 status bonus to hit and deal 1d4 extra fire damage on a hit.</p>"
                 },
-                "Bubble": {
+                "action->Bubble": {
                     "name": "Bubble",
                     "description": "<p><strong>Trigger</strong> The trap receives a critical hit or critically fails a saving throw</p><hr /><p><strong>Effect</strong> One ort emerges adjacent.</p>"
                 },
-                "Planar Breach": {
+                "action->Planar Breach": {
                     "name": "Planar Breach",
                     "description": "<p><strong>Trigger</strong> The magic circle is broken</p><hr /><p><strong>Effect</strong> The pile disgorges orts and then rolls initiative</p>"
                 }
@@ -1442,15 +1468,15 @@
             "publicNotes": "<p>The frontline fighters of goblin tribes prefer to fight in large groups—especially when they can outnumber their foes at least three to one.</p>\n<hr />\n<p>These small humanoids typically have green or gray skin and large heads with wide ears. While some goblins are civilized and have worked hard to be considered upstanding members of humanoid communities, many are impetuous and vicious creatures who delight in wreaking havoc. These goblins think nothing of slaughtering livestock, stealing, or burning down a building purely for momentary delight. They revel in playing malicious tricks on taller humanoids, whom they call \"longshanks.\"</p>\n<p>Goblins are superstitious, with an intense awe of magic and a fascination with fire; goblins who master magic or fire earn great respect from their kin. Most other humanoids find it difficult to understand goblins' outlook: they hate canines but eagerly share their lairs with so-called \"goblin dogs,\" they fearlessly attack larger creatures but are terrified of horses, and they despise vegetables yet consider pickles a delicacy. To a goblin, of course, these are all perfectly sensible life choices.</p>",
             "blurb": "Variant goblin warrior",
             "items": {
-                "Tailed Goblin": {
+                "action->Tailed Goblin": {
                     "name": "Tailed Goblin",
                     "description": "<p>A pirate goblin is not @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} while Climbing, can Climb with one hand occupied, and can @UUID[Compendium.pf2e.actionspf2e.Item.ge56Lu1xXVFYUnLP]{Trip} opponents even if both hands are occupied.</p>"
                 },
-                "Goblin Scuttle": {
+                "action->Goblin Scuttle": {
                     "name": "Goblin Scuttle",
                     "description": "<p><strong>Trigger</strong> An ally ends a move action adjacent to the pirate goblin</p><hr /><p><strong>Effect</strong> The pirate goblin Steps.</p>"
                 },
-                "Boarding Action": {
+                "action->Boarding Action": {
                     "name": "Boarding Action",
                     "description": "<p>The pirate goblin swings on a rope or Strides, moving up to double their Speed. If the pirate boarded or disembarked a boat during this movement, they can make a melee Strike at the end of their movement that deals one extra damage die on a hit.</p>"
                 }
@@ -1461,21 +1487,21 @@
             "publicNotes": "<p>Gorillas can be territorial creatures, particularly if provoked by hunters or the presence of more dangerous monsters. A gorilla uses its fangs and powerful arms to bite and pummel trespassers with wild abandon.</p>\n<hr />\n<p>While many apes exhibit peaceful or reclusive behavior, gorillas can be territorial, and the megaprimatus is especially aggressive and dangerous.</p>",
             "blurb": "Variant gorilla",
             "items": {
-                "Fist": {
+                "strike-melee->Fist": {
                     "name": "Fist"
                 },
-                "Jaws": {
+                "strike-melee->Jaws": {
                     "name": "Jaws"
                 },
-                "Boarding Action": {
+                "action->Boarding Action": {
                     "name": "Boarding Action",
                     "description": "<p>The pirate gorilla swings on a rope or Strides, moving up to double their Speed. If the pirate boarded or disembarked a boat during this movement, they can make a melee Strike at the end of their movement that deals one extra damage die on a hit.</p>"
                 },
-                "Frightening Display": {
+                "action->Frightening Display": {
                     "name": "Frightening Display",
                     "description": "<p>The gorilla beats its chest in a terrifying display. Creatures within @Template[emanation|distance:30]{30 feet} must attempt a @Check[will|dc:18|options:area-effect,inflicts:frightened,inflicts:off-guard] save. While a creature is frightened by this ability, it is @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} to the gorilla.</p><hr /><p><strong>Critical Success</strong> No effect and temporarily immune for 1 minute.</p>\n<p><strong>Success</strong> The creature is unaffected.</p>\n<p><strong>Failure</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 1}.</p>\n<p><strong>Critical Failure</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 2}.</p>"
                 },
-                "Well-Trained": {
+                "action->Well-Trained": {
                     "name": "Well-Trained",
                     "description": "<p>The pirate gorilla is used to taking orders on board the ship. It loses its immunity to linguistic efects, including appeals to surrender.</p>"
                 }
@@ -1485,18 +1511,18 @@
             "name": "Recently Slain Rat Swarm",
             "hpDetails": "negative healing",
             "items": {
-                "Slow": {
+                "action->Slow": {
                     "name": "Slow",
                     "description": "<p>A partially decomposed rat swarm is permanently @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1} and can't use reactions.</p>"
                 },
-                "Void Healing": {
+                "action->Void Healing": {
                     "name": "Void Healing"
                 },
-                "Frenzied Bites": {
+                "action->Frenzied Bites": {
                     "name": "Frenzied Bites",
                     "description": "<p>Each enemy in the swarm's space takes @Damage[2d6[piercing]] damage and must attempt a @Check[reflex|dc:20|basic] save. A creature that fails its save is exposed to zombie plague.</p>"
                 },
-                "Zombie Plague": {
+                "action->Zombie Plague": {
                     "name": "Zombie Plague",
                     "description": "<p>The sickened and @UUID[Compendium.pf2e.conditionitems.Item.fBnFDH2MTzgFijKf]{Unconscious} conditions from zombie plague can't end or be reduced until the disease is cured.</p>\n<p><strong>Saving Throw</strong> @Check[fortitude|dc:17]</p>\n<p><strong>Stage 1</strong> carrier with no ill effect (1d4 hours),</p>\n<p><strong>Stage 2</strong> @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 1} (1 day),</p>\n<p><strong>Stage 3</strong> sickened 1 and @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1} (1 day),</p>\n<p><strong>Stage 4</strong> unconscious (1 day),</p>\n<p><strong>Stage 5</strong> dead</p>"
                 }
@@ -1514,19 +1540,19 @@
             "routine": "<p>(three actions) The unruly crowd uses an action to chant a Catchy Slogan if it is not already benefiting from the effect It uses Shake Confidence once per turn and uses its remaining actions for cobblestone Strikes.</p>",
             "stealth": "<p>(trained) Characters automatically detect this hazard when they open the door to the Grand Hall.</p>",
             "items": {
-                "There They Are!": {
+                "action->There They Are!": {
                     "name": "There They Are!",
                     "description": "<p><strong>Trigger</strong> A creature opens the door to the Grand Hall</p><hr /><p><strong>Effect</strong> The unruly crowd rolls Initiative.</p>"
                 },
-                "Catchy Slogan": {
+                "action->Catchy Slogan": {
                     "name": "Catchy Slogan",
                     "description": "<p>All the hazards in a @Template[type:emanation|distance:30] gain a +1 status bonus to attack rolls and damage rolls for 1 round.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.wFpKEx9KSjoVg9xq]{Effect: Catchy Slogan}</p>"
                 },
-                "Shake Confidence": {
+                "action->Shake Confidence": {
                     "name": "Shake Confidence",
                     "description": "<p>The unruly crowd targets a creature within 30 feet The creature must attempt a @Check[will|dc:22] save</p><hr /><p><strong>Critical Success</strong> The creature is unaffected and immune to Shake Confidence for 24 hours</p>\n<p><strong>Success</strong> The creature becomes @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 1}</p>\n<p><strong>Failure</strong> The creature becomes @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 2}</p>\n<p><strong>Critical Failure</strong> The creature becomes frightened 2 and @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 1}.</p>"
                 },
-                "Cobblestone": {
+                "strike-melee->Cobblestone": {
                     "name": "Cobblestone"
                 }
             }
@@ -1539,7 +1565,7 @@
             "routine": "<p>(three actions) The chains rattle and sigh ominously around two different random creatures trapped in the haunt, dealing @Damage[(1d6+2)[void]] damage (@Check[will|dc:16|basic] save).</p>",
             "stealth": "<p>(trained)</p>",
             "items": {
-                "The Pain of Devotion": {
+                "action->The Pain of Devotion": {
                     "name": "The Pain of Devotion",
                     "description": "<p><strong>Trigger</strong> Hunted by Chains is disabled</p><hr /><p><strong>Effect</strong> The chains rattle ominously, dealing @Damage[(1d6+2)[void]] damage to all creatures in the haunt (@Check[will|dc:16|basic] save). The haunt then rolls initiative.</p>"
                 }
@@ -1549,21 +1575,21 @@
             "name": "Shriveled Leaf of Talhindir",
             "hpDetails": "void healing",
             "items": {
-                "Withered Touch": {
+                "strike-melee->Withered Touch": {
                     "name": "Withered Touch"
                 },
-                "Light Vulnerability": {
+                "action->Light Vulnerability": {
                     "name": "Light Vulnerability",
                     "description": "<p>Attacks against the Leaf of Talhindir are treated as magical if made by a creature who is in magical light or with an object that is in magical light (such as from the @UUID[Compendium.pf2e.spells-srd.Item.WBmvzNDfpwka3qT4]{Light} spell).</p>"
                 },
-                "Void Healing": {
+                "action->Void Healing": {
                     "name": "Void Healing"
                 },
-                "Slink in Shadows": {
+                "action->Slink in Shadows": {
                     "name": "Slink in Shadows",
                     "description": "<p>The Leaf of Talhindir can [[/act hide]] or end its [[/act sneak]] in a creature's or object's shadow.</p>"
                 },
-                "Weight of Darkness": {
+                "action->Weight of Darkness": {
                     "name": "Weight of Darkness",
                     "description": "<p><strong>Requirements</strong> The Leaf of Talhindir made a successful Strike against a living creature with its withered touch on its previous action</p><hr /><p><strong>Effect</strong> The Leaf of Talhindir chains the soul of the creature. They must attempt a @Check[will|dc:17|options:inflicts:enfeebled] save. On a failure, the creature is @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 1}. This is cumulative with other enfeebled conditions from other Leaves of Talhindir or shadows, to a maximum of @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 4}. The enfeebled value from Weight of Darkness decreases by 1 every minute.</p>"
                 }
@@ -1574,33 +1600,36 @@
             "publicNotes": "<p>Adepts have unlocked only the most minor of occult mysteries. A few are chosen by accomplished practitioners for further training.</p><hr /><p>Hidden secrets and occult powers have an irresistible lure for many. Since the majority of these NPCs are spellcasters, consider using alternative spell lists to adjust their themes.</p>",
             "hpDetails": "void healing",
             "items": {
-                "Occult Spells Known": {
+                "spellcastingEntry->Occult Spells Known": {
                     "name": "Occult Spells Known"
                 },
-                "Journal": {
+                "equipment->Journal": {
                     "name": "Journal"
                 },
-                "Robes": {
+                "equipment->Robes": {
                     "name": "Robes"
                 },
-                "Scroll Case": {
+                "equipment->Scroll Case": {
                     "name": "Scroll Case"
                 },
-                "Fist": {
+                "strike-melee->Fist": {
                     "name": "Fist"
                 },
-                "Collapse": {
+                "strike-ranged->Journal": {
+                    "name": "Journal"
+                },
+                "action->Collapse": {
                     "name": "Collapse",
                     "description": "<p><strong>Trigger</strong> The skeleton is critically hit.</p>\n<hr />\n<p><strong>Effect</strong> The skeleton collapses into a pile of bones and the attack deals only normal damage. The skeleton can reform in a standing position as an action, but until it does, it is @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Immobilized} and @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard}.</p>"
                 },
-                "Void Healing": {
+                "action->Void Healing": {
                     "name": "Void Healing"
                 },
-                "Focused Thinker": {
+                "action->Focused Thinker": {
                     "name": "Focused Thinker",
                     "description": "<p>The adept concentrates to muster knowledge and wisdom. While focusing, they gain a +2 status bonus to checks to @UUID[Compendium.pf2e.actionspf2e.Item.1OagaWtBpVXExToo]{Recall Knowledge}, but take a –2 penalty to Perception. They can Dismiss this focused state.</p>"
                 },
-                "Scribing Lore": {
+                "lore->Scribing Lore": {
                     "name": "Scribing Lore"
                 }
             }
@@ -1611,33 +1640,33 @@
             "allSavesBonus": "shared confidence",
             "hpDetails": "void healing",
             "items": {
-                "Occult Prepared Spells": {
+                "spellcastingEntry->Occult Prepared Spells": {
                     "name": "Occult Prepared Spells"
                 },
-                "Witch Hex Spells": {
+                "spellcastingEntry->Witch Hex Spells": {
                     "name": "Witch Hex Spells"
                 },
-                "Cauldron": {
+                "equipment->Cauldron": {
                     "name": "Cauldron"
                 },
-                "Dagger": {
+                "strike-melee->Dagger": {
                     "name": "Dagger"
                 },
-                "Dart": {
+                "strike-ranged->Dart": {
                     "name": "Dart"
                 },
-                "Fist": {
+                "strike-melee->Fist": {
                     "name": "Fist"
                 },
-                "Collapse": {
+                "action->Collapse": {
                     "name": "Collapse",
                     "description": "<p><strong>Trigger</strong> The skeleton is critically hit.</p>\n<hr />\n<p><strong>Effect</strong> The skeleton collapses into a pile of bones and the attack deals only normal damage. The skeleton can reform in a standing position as an action, but until it does, it is @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Immobilized} and @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard}.</p>"
                 },
-                "Shared Confidence": {
+                "action->Shared Confidence": {
                     "name": "Shared Confidence",
                     "description": "<p>When a coven aspirant is within @Template[emanation|distance:30]{30 feet} of at least two allies, they and their allies gain a +1 status bonus to Will saves.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.uKJRRrlReO0CceVc]{Effect: Shared Confidence}</p>"
                 },
-                "Forge Pact": {
+                "action->Forge Pact": {
                     "name": "Forge Pact",
                     "description": "<p>The coven aspirant forms a temporary coven with two or more willing creatures within 30 feet, all of whom must be able to cast spells.</p>\n<p>Members of the temporary coven can cast @UUID[Compendium.pf2e.spells-srd.Item.vLA0q0WOK2YPuJs6]{Charm}, @UUID[Compendium.pf2e.spells-srd.Item.J6vNvrUT3b1hx2iA]{Entangling Flora}, and @UUID[Compendium.pf2e.spells-srd.Item.i35dpZFI7jZcRoBo]{Illusory Disguise} as 2nd-rank occult innate spells at will, using DC 17 or their spellcasting DC, whichever is higher.</p>\n<p>The coven is dissolved after 3 rounds or when all but one member is dead, whichever comes first. A creature can be a member of only one temporary coven at a time and can join a temporary coven no more than once per 24 hours.</p>"
                 }
@@ -1648,17 +1677,17 @@
             "publicNotes": "<p>The most common skeletal minions are mere guardians.</p>\n<hr />\n<p>Animated skeletons are among the most common types of undead.</p>",
             "hpDetails": "void healing",
             "items": {
-                "Arrows": {
+                "ammo->Arrows": {
                     "name": "Arrows",
                     "description": "<p>These projectiles are the ammunition for bows. The shaft of an arrow is made of wood. It is stabilized in flight by fletching at one end and bears a metal head on the other.</p>"
                 },
-                "Claw": {
+                "strike-melee->Claw": {
                     "name": "Claw"
                 },
-                "Void Healing": {
+                "action->Void Healing": {
                     "name": "Void Healing"
                 },
-                "Screaming Skull": {
+                "action->Screaming Skull": {
                     "name": "Screaming Skull",
                     "description": "<p>The skeleton removes its skull and throws it, making a jaws attack with a range of 20 feet. It then attempts to @UUID[Compendium.pf2e.actionspf2e.Item.2u915NdUyQan6uKF]{Demoralize} each foe within 10 feet of the target.</p>\n<p>The head bounces, rolls, or even flies back, returning to the skeleton at the start of its next turn. The skeleton is @UUID[Compendium.pf2e.conditionitems.Item.XgEqL1kFApUbl5Z2]{Blinded} until then.</p>"
                 }
@@ -1669,17 +1698,17 @@
             "publicNotes": "<p>Without the burden of flesh, skeletal wolves charge across the battlefield with terrifying speed.</p>\n<hr />\n<p>Among the ranks of the dead, none are so numerous, nor so varied, as the skeleton. While most are almost entirely made from bone, some maintain a few scraps of flesh to aid them in movement, such as wing membranes.</p>",
             "hpDetails": "void healing",
             "items": {
-                "Jaws": {
+                "strike-melee->Jaws": {
                     "name": "Jaws"
                 },
-                "Void Healing": {
+                "action->Void Healing": {
                     "name": "Void Healing"
                 },
-                "Screaming Skull": {
+                "action->Screaming Skull": {
                     "name": "Screaming Skull",
                     "description": "<p>The skeleton removes its skull and throws it, making a jaws attack with a range of 20 feet. It then attempts to @UUID[Compendium.pf2e.actionspf2e.Item.2u915NdUyQan6uKF]{Demoralize} each foe within 10 feet of the target.</p>\n<p>The head bounces, rolls, or even flies back, returning to the skeleton at the start of its next turn. The skeleton is @UUID[Compendium.pf2e.conditionitems.Item.XgEqL1kFApUbl5Z2]{Blinded} until then.</p>"
                 },
-                "Surge of Speed": {
+                "action->Surge of Speed": {
                     "name": "Surge of Speed",
                     "description": "<p>The wolf skeleton Strides three times, but it's @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} until the start of its next turn.</p>"
                 }
@@ -1693,11 +1722,11 @@
             "routine": "<p>(two actions) The haunt makes vengeful judgment Strikes against three different random creatures trapped in this haunt. A spectral pool of blood forms beneath any creature knocked @UUID[Compendium.pf2e.conditionitems.Item.fBnFDH2MTzgFijKf]{Unconscious} by this haunt.</p>",
             "stealth": "<p>(trained); @Check[occultism|dc:13] or @Check[religion|dc:13] to notice odd whispers.</p>",
             "items": {
-                "Accusations": {
+                "action->Accusations": {
                     "name": "Accusations",
                     "description": "<p><strong>Trigger</strong> The PCs all enter the room</p><hr /><p><strong>Effect</strong> Accusations of crimes against the crown are whispered throughout the room in Elven. Each living creature in the room must attempt a @Check[will|dc:16] save or be @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 1}. The haunt then rolls initiative.</p>"
                 },
-                "Vengeful Judgment": {
+                "strike-melee->Vengeful Judgment": {
                     "name": "Vengeful Judgment",
                     "description": "<p>Plus @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone} on a critical hit</p>"
                 }
@@ -1710,7 +1739,7 @@
             "reset": "<p>If the haunt is not dispersed, it resets after 1 day.</p>",
             "stealth": "<p>(expert)</p>",
             "items": {
-                "The Falling Tears": {
+                "action->The Falling Tears": {
                     "name": "The Falling Tears",
                     "description": "<p><strong>Trigger</strong> A creature moves within 10 feet of the carving of Viore Ciobanu</p><hr /><p><strong>Effect</strong> Blood begins to rain from the ceiling. The cries from the statues deal @Damage[(2d10+13)[mental]] damage to living creatures within the room (@Check[will|dc:20|basic|options:inflicts:frightened] save). On a failed save, creatures are also @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 1} (or @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 2} and @UUID[Compendium.pf2e.conditionitems.Item.sDPxOjQ9kx2RZE8D]{Fleeing} for 1 minute on a critical failure).</p>"
                 }
@@ -1724,11 +1753,11 @@
             "routine": "<p>(two actions) The haunt makes vengeful judgment Strikes against three different random creatures trapped in this haunt. A spectral pool of blood forms beneath any creature knocked @UUID[Compendium.pf2e.conditionitems.Item.fBnFDH2MTzgFijKf]{Unconscious} by this haunt.</p>",
             "stealth": "<p>(trained); @Check[occultism|dc:15] or @Check[religion|dc:15] to notice odd whispers.</p>",
             "items": {
-                "Accusations": {
+                "action->Accusations": {
                     "name": "Accusations",
                     "description": "<p><strong>Trigger</strong> The PCs all enter the room</p><hr /><p><strong>Effect</strong> Accusations of crimes against the crown are whispered throughout the room in Elven. Each living creature in the room must attempt a @Check[will|dc:18] save or be @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 1}. The haunt then rolls initiative.</p>"
                 },
-                "Vengeful Judgment": {
+                "strike-melee->Vengeful Judgment": {
                     "name": "Vengeful Judgment",
                     "description": "<p>Plus @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone} on a critical hit</p>"
                 }
@@ -1741,7 +1770,7 @@
             "reset": "<p>If the haunt is not dispersed, it resets after 1 day.</p>",
             "stealth": "<p>(expert)</p>",
             "items": {
-                "The Falling Tears": {
+                "action->The Falling Tears": {
                     "name": "The Falling Tears",
                     "description": "<p><strong>Trigger</strong> A creature moves within 10 feet of the carving of Viore Ciobanu</p><hr /><p><strong>Effect</strong> The fungus statues weep blood, and their cries deal @Damage[(2d6+5)[mental]] damage to living creatures within the room (@Check[will|dc:17|basic|options:inflicts:frightened] save). On a failed save, creatures are also @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 1} (or @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 2} on a critical failure)</p>"
                 }
@@ -1753,39 +1782,39 @@
             "languagesDetails": "Cannot speak",
             "hpDetails": "void healing",
             "items": {
-                "Blade": {
+                "strike-melee->Blade": {
                     "name": "Blade"
                 },
-                "Throwing Blade": {
+                "strike-melee->Throwing Blade": {
                     "name": "Throwing Blade"
                 },
-                "Lifesense": {
+                "action->Lifesense": {
                     "name": "Lifesense",
                     "description": "<p>The Scourge senses the vital essence of living creatures within range.</p><hr /><p>@Localize[PF2E.NPC.Abilities.Glossary.Lifesense]</p>"
                 },
-                "Frightful Presence": {
+                "action->Frightful Presence": {
                     "name": "Frightful Presence",
                     "description": "<p>@Check[will|dc:36|options:area-effect,inflicts:frightened]</p><hr /><p>@Localize[PF2E.NPC.Abilities.Glossary.FrightfulPresence]</p><hr /><p><em>Note: A radius for this aura was not provided by Paizo</em></p>"
                 },
-                "Reactive Strike": {
+                "action->Reactive Strike": {
                     "name": "Reactive Strike"
                 },
-                "Void Healing": {
+                "action->Void Healing": {
                     "name": "Void Healing"
                 },
-                "Bladed Levitation": {
+                "action->Bladed Levitation": {
                     "name": "Bladed Levitation",
                     "description": "<p>The Scourge has a fly speed of 30 feet, but must end its turn within no more than 5 feet off the ground, otherwise it falls and takes damage as normal</p>"
                 },
-                "Final Execution": {
+                "action->Final Execution": {
                     "name": "Final Execution",
                     "description": "<p>The scourge targets a @UUID[Compendium.pf2e.conditionitems.Item.6uEgoh53GbXuHpTF]{Paralyzed} creature with a blade melee Strike. A successful hit is automatically a critical hit and the target creature must succeed at a @Check[fortitude|dc:36] or become @UUID[Compendium.pf2e.conditionitems.Item.3uh1r86TzbQvosxv]{Doomed 1}. If the target is already doomed, they instead increased their doomed value by 1.</p>"
                 },
-                "Life Sap": {
+                "action->Life Sap": {
                     "name": "Life Sap",
                     "description": "<p>A creature damaged by the Scourge's blade Strikes must succeed at a @Check[fortitude|dc:36] save or become @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 1}; if the target is already drained, they instead increased their drained value by 1, to a maximum of @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 3}. On a critical failure, the target is also @UUID[Compendium.pf2e.conditionitems.Item.6uEgoh53GbXuHpTF]{Paralyzed} until the end of the Scourge's next turn.</p>"
                 },
-                "To Shreds": {
+                "action->To Shreds": {
                     "name": "To Shreds",
                     "description": "<p>The Scourge explodes into a whirling tornado of metal and blades, at the cost of briefly leaving its warshard core vulnerable. All creatures within a @Template[type:emanation|distance:20] must succeed at a @Check[reflex|dc:33] save or take @Damage[10d10[slashing],3d8[void]|options:area-damage] damage. The Scourge can't use To Shreds for [[/gmr 1d4 #rounds]]{1d4 rounds}.</p>\n<p>If the Scourge is targeted by a Reactive Strike as a result of using this action, it takes a –2 circumstance penalty to its AC; if the Reactive Strike disrupts this action, this penalty remains until the start of the Scourge's next turn.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.vaqiHzEewOKDx6rP]{Effect: To Shreds (AC Penalty)}</p>"
                 }
@@ -1795,23 +1824,23 @@
             "name": "Thoroughbred Nightmare",
             "publicNotes": "<p>Nightmares are flaming equine harbingers of death.</p>",
             "items": {
-                "Divine Innate Spells": {
+                "spellcastingEntry->Divine Innate Spells": {
                     "name": "Divine Innate Spells"
                 },
-                "Interplanar Teleport (Self and Rider Only)": {
+                "spell->Interplanar Teleport (Self and Rider Only)": {
                     "name": "Interplanar Teleport (Self and Rider Only)"
                 },
-                "Jaws": {
+                "strike-melee->Jaws": {
                     "name": "Jaws"
                 },
-                "Hoof": {
+                "strike-melee->Hoof": {
                     "name": "Hoof"
                 },
-                "Smoke": {
+                "action->Smoke": {
                     "name": "Smoke",
                     "description": "<p>15 feet. The nightmare continually exhales black smoke Creatures within the aura are @UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{Concealed} to those outside it, and creatures outside the aura are concealed to creatures within it. Nightmares and their riders can see through this smoke. A creature that begins its turn in the area must succeed at a @Check[fortitude|dc:25|options:area-effect,inflicts:sickened|traits:inhaled,poison] save or be @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 2}. It's then temporarily immune to being sickened by the smoke for 1 minute. This is an inhaled poison, and the nightmare and its rider are immune to it.</p>"
                 },
-                "Flaming Gallop": {
+                "action->Flaming Gallop": {
                     "name": "Flaming Gallop",
                     "description": "<p>The nightmare Strides or Flies up to triple its Speed. Its hooves burst with intense flame, dealing @Damage[5d6[fire]] damage with a @Check[reflex|dc:28|basic] save to each creature other than the nightmare's rider that the nightmare moves adjacent to during its gallop. Each creature can be affected only once during a single use of Flaming Gallop.</p>"
                 }
@@ -1822,53 +1851,53 @@
             "publicNotes": "<p>Naiad queens rule over pristine wildernesses centered around untouched lakes, massive rivers, or other collective bodies of fresh water. Bards' songs and artists' paintings of these powerful nymphs tend to depict naiad queens in their slightly more humanoid forms, which they don when they make the rare journey into civilized lands to garner allies, gather news, or gauge threats.</p>\n<p>Most naiad queens treat those who respect their domains with kindness, but they're fierce—and quick to eliminate foes. Their blinding beauty and breadth of offensive spells make naiad queens fierce opponents if forced into a fight.</p>\n<hr />\n<p>Nymphs are a family of fey that take the form of beautiful humanoids with elven features and have a deep association with the natural world. The most common of their kind are the dryads, which are spirits that embody great trees, but many other kinds of nymphs exist, including naiads, who watch over bodies of water. All nymphs are guardians of some element of nature, typically a specific tree or pond, or even-in the case of nymph queens-whole forests or massive bodies of water</p>\n<h2>Nymph Queens</h2>\n<p>Nymph queens are powerful nymphs who rule over entire regions of untouched wilderness, not just single trees or ponds. Every variety of nymph can have a queen. Naiad queens are among the most prominent, and more often interact with nearby mortals. Thus, some scholars refer to naiad queens as simply \"nymphs.\"</p>",
             "blurb": "Variant naiad queen",
             "items": {
-                "Primal Prepared Spells": {
+                "spellcastingEntry->Primal Prepared Spells": {
                     "name": "Primal Prepared Spells"
                 },
-                "Primal Innate Spells": {
+                "spellcastingEntry->Primal Innate Spells": {
                     "name": "Primal Innate Spells"
                 },
-                "Tidal Surge (At Will)": {
+                "spell->Tidal Surge (At Will)": {
                     "name": "Tidal Surge (At Will)"
                 },
-                "Aqueous Fist": {
+                "strike-melee->Aqueous Fist": {
                     "name": "Aqueous Fist"
                 },
-                "Water Orb": {
+                "strike-melee->Water Orb": {
                     "name": "Water Orb"
                 },
-                "Animal Empathy": {
+                "action->Animal Empathy": {
                     "name": "Animal Empathy",
                     "description": "<p>The naiad can ask questions of, receive answers from, and use the Diplomacy skill with animals.</p>"
                 },
-                "Tied to the Land": {
+                "action->Tied to the Land": {
                     "name": "Tied to the Land",
                     "description": "<p>Timonithaea is tied to a body of water or area with a great deal of water features.</p><hr /><p>A nymph queen is intrinsically tied to a specific region. As long as the queen is healthy, the environment is exceptionally resilient, allowing the nymph queen to automatically attempt to counteract any spell that would harm the environment (such as the @UUID[Compendium.pf2e.spells-srd.Item.7yWXx3qC4eFNHhxD]{Blight} ritual), using her spell DC with a counteract rank equal to the highest-rank druid spell she can cast.</p>\n<p>When the nymph queen becomes physically or psychologically unhealthy, however, her warded region eventually becomes twisted or unhealthy as well. In that case, restoring the nymph queen swiftly heals the entire region.</p>"
                 },
-                "Timonithaea's Calling": {
+                "action->Timonithaea's Calling": {
                     "name": "Timonithaea's Calling",
                     "description": "<p>Timonithaea channels magical energy into the Enoménos crown to telepathically communicate with creatures who are beneath the water within 20 miles of Naós tou Neroú.</p>"
                 },
-                "Constant Spells": {
+                "action->Constant Spells": {
                     "name": "Constant Spells"
                 },
-                "Nymph's Beauty": {
+                "action->Nymph's Beauty": {
                     "name": "Nymph's Beauty",
                     "description": "<p>30 feet. @Check[will|dc:23|options:area-effect,inflicts:stunned] save.</p><hr /><p>A creature that fails its save is @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned 1} and becomes stunned 1 each time it starts its turn within the aura for the next 24 hours, even if it can't see Timonithaea.</p>"
                 },
-                "Water Healing": {
+                "action->Water Healing": {
                     "name": "Water Healing",
                     "description": "<p>For every 10 minutes a naiad spends soaking in any body of water in her domain, she regains @Damage[30[healing]]{30 Hit Points}.</p>"
                 },
-                "Change Shape": {
+                "action->Change Shape": {
                     "name": "Change Shape",
                     "description": "<p>Nymph queens can transform between their original form, which looks much like a typical nymph of their kind, and any Small or Medium humanoid form, typically choosing a more humanoid-looking version of their natural form.</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.ChangeShape]</p>"
                 },
-                "Focus Beauty": {
+                "action->Focus Beauty": {
                     "name": "Focus Beauty",
                     "description": "<p>If a target already affected by nymph's beauty fails its save, the image of the queen sears into the creature's mind, effectively blinding the creature until its vision is restored with sound body or a similar effect.</p>\n<p>The naiad queen can Dismiss the effect.</p><hr /><p>The nymph queen focuses her beauty upon a target, who must attempt a save against her nymph's beauty aura (@Check[will|dc:23] save). If the creature fails and was already affected by the aura, it takes a greater effect described in the nymph queen's entry.</p>\n<p>A nymph queen can Focus Beauty on a given creature only once per turn.</p>"
                 },
-                "Inspiration": {
+                "action->Inspiration": {
                     "name": "Inspiration",
                     "description": "<p>The nymph queen inspires a single intelligent creature by giving that creature a token of her favor, typically a lock of her hair, though it can be some other significant object as well. As long as the creature carries her token and remains in good standing with her, the creature gains a +1 status bonus to all Crafting checks, Performance checks, and Will saves.</p>\n<p>If the nymph grants her token to a bard, and she's the bard's muse, the queen chooses one additional benefit granted by her token: a +1 status bonus to all Lore checks, a +2 status bonus to Performance checks when determining the effects of compositions, a +4 status bonus to untrained skill checks, or a +2 status bonus to Will saves against fey.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.iSyyR4QVOaY6mxtg]{Effect: Nymph Queen's Inspiration}</p>"
                 }
@@ -1884,53 +1913,53 @@
             "publicNotes": "<p>Naiad queens rule over pristine wildernesses centered around untouched lakes, massive rivers, or other collective bodies of fresh water. Bards' songs and artists' paintings of these powerful nymphs tend to depict naiad queens in their slightly more humanoid forms, which they don when they make the rare journey into civilized lands to garner allies, gather news, or gauge threats.</p>\n<p>Most naiad queens treat those who respect their domains with kindness, but they're fierce—and quick to eliminate foes. Their blinding beauty and breadth of offensive spells make naiad queens fierce opponents if forced into a fight.</p>\n<hr />\n<p>Nymphs are a family of fey that take the form of beautiful humanoids with elven features and have a deep association with the natural world. The most common of their kind are the dryads, which are spirits that embody great trees, but many other kinds of nymphs exist, including naiads, who watch over bodies of water. All nymphs are guardians of some element of nature, typically a specific tree or pond, or even-in the case of nymph queens-whole forests or massive bodies of water</p>\n<h2>Nymph Queens</h2>\n<p>Nymph queens are powerful nymphs who rule over entire regions of untouched wilderness, not just single trees or ponds. Every variety of nymph can have a queen. Naiad queens are among the most prominent, and more often interact with nearby mortals. Thus, some scholars refer to naiad queens as simply \"nymphs.\"</p>",
             "blurb": "Variant naiad queen",
             "items": {
-                "Primal Prepared Spells": {
+                "spellcastingEntry->Primal Prepared Spells": {
                     "name": "Primal Prepared Spells"
                 },
-                "Primal Innate Spells": {
+                "spellcastingEntry->Primal Innate Spells": {
                     "name": "Primal Innate Spells"
                 },
-                "Tidal Surge (At Will)": {
+                "spell->Tidal Surge (At Will)": {
                     "name": "Tidal Surge (At Will)"
                 },
-                "Aqueous Fist": {
+                "strike-melee->Aqueous Fist": {
                     "name": "Aqueous Fist"
                 },
-                "Water Orb": {
+                "strike-melee->Water Orb": {
                     "name": "Water Orb"
                 },
-                "Animal Empathy": {
+                "action->Animal Empathy": {
                     "name": "Animal Empathy",
                     "description": "<p>The naiad can ask questions of, receive answers from, and use the Diplomacy skill with animals.</p>"
                 },
-                "Tied to the Land": {
+                "action->Tied to the Land": {
                     "name": "Tied to the Land",
                     "description": "<p>Timonithaea is tied to a body of water or area with a great deal of water features.</p><hr /><p>A nymph queen is intrinsically tied to a specific region. As long as the queen is healthy, the environment is exceptionally resilient, allowing the nymph queen to automatically attempt to counteract any spell that would harm the environment (such as the @UUID[Compendium.pf2e.spells-srd.Item.7yWXx3qC4eFNHhxD]{Blight} ritual), using her spell DC with a counteract rank equal to the highest-rank druid spell she can cast.</p>\n<p>When the nymph queen becomes physically or psychologically unhealthy, however, her warded region eventually becomes twisted or unhealthy as well. In that case, restoring the nymph queen swiftly heals the entire region.</p>"
                 },
-                "Timonithaea's Calling": {
+                "action->Timonithaea's Calling": {
                     "name": "Timonithaea's Calling",
                     "description": "<p>Timonithaea channels magical energy into the Enoménos crown to telepathically communicate with creatures who are beneath the water within 20 miles of Naós tou Neroú.</p>"
                 },
-                "Constant Spells": {
+                "action->Constant Spells": {
                     "name": "Constant Spells"
                 },
-                "Nymph's Beauty": {
+                "action->Nymph's Beauty": {
                     "name": "Nymph's Beauty",
                     "description": "<p>30 feet. @Check[will|dc:26|options:area-effect,inflicts:stunned] save.</p><hr /><p>A creature that fails its save is @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned 1} and becomes stunned 1 each time it starts its turn within the aura for the next 24 hours, even if it can't see Timonithaea.</p>"
                 },
-                "Water Healing": {
+                "action->Water Healing": {
                     "name": "Water Healing",
                     "description": "<p>For every 10 minutes a naiad spends soaking in any body of water in her domain, she regains @Damage[30[healing]]{30 Hit Points}.</p>"
                 },
-                "Change Shape": {
+                "action->Change Shape": {
                     "name": "Change Shape",
                     "description": "<p>Nymph queens can transform between their original form, which looks much like a typical nymph of their kind, and any Small or Medium humanoid form, typically choosing a more humanoid-looking version of their natural form.</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.ChangeShape]</p>"
                 },
-                "Focus Beauty": {
+                "action->Focus Beauty": {
                     "name": "Focus Beauty",
                     "description": "<p>If a target already affected by nymph's beauty fails its save, the image of the queen sears into the creature's mind, effectively blinding the creature until its vision is restored with sound body or a similar effect.</p>\n<p>The naiad queen can Dismiss the effect.</p><hr /><p>The nymph queen focuses her beauty upon a target, who must attempt a save against her nymph's beauty aura (@Check[will|dc:26] save). If the creature fails and was already affected by the aura, it takes a greater effect described in the nymph queen's entry.</p>\n<p>A nymph queen can Focus Beauty on a given creature only once per turn.</p>"
                 },
-                "Inspiration": {
+                "action->Inspiration": {
                     "name": "Inspiration",
                     "description": "<p>The nymph queen inspires a single intelligent creature by giving that creature a token of her favor, typically a lock of her hair, though it can be some other significant object as well. As long as the creature carries her token and remains in good standing with her, the creature gains a +1 status bonus to all Crafting checks, Performance checks, and Will saves.</p>\n<p>If the nymph grants her token to a bard, and she's the bard's muse, the queen chooses one additional benefit granted by her token: a +1 status bonus to all Lore checks, a +2 status bonus to Performance checks when determining the effects of compositions, a +4 status bonus to untrained skill checks, or a +2 status bonus to Will saves against fey.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.iSyyR4QVOaY6mxtg]{Effect: Nymph Queen's Inspiration}</p>"
                 }
@@ -1947,32 +1976,32 @@
             "languagesDetails": "can't speak any language",
             "hpDetails": "void healing",
             "items": {
-                "Limb": {
+                "strike-melee->Limb": {
                     "name": "Limb"
                 },
-                "Bound Limbs": {
+                "action->Bound Limbs": {
                     "name": "Bound Limbs",
                     "description": "<p>A torn trio ordinarily has three severed limbs tethered to a central point by near-incorporeal ropes. A limb is essentially cut away from the central point and rendered nonfunctional each time the torn quartet loses 60 Hit Points (so at 120 Hit Points, the torn quartet has two functional limbs, at 60 Hit Points, it has one functional limb). Each functioning limb can @UUID[Compendium.pf2e.actionspf2e.Item.PMbdMWc2QroouFGD]{Grapple} separate creatures within reach, or multiple functioning limbs can Grapple the same creature; for each additional limb used to Grapple a creature, the @UUID[Compendium.pf2e.actionspf2e.Item.SkZAQRkLLkmBQNB9]{Escape} DC increases by 2.</p>"
                 },
-                "Reactive Strike (See Split Reactions)": {
+                "action->Reactive Strike (See Split Reactions)": {
                     "name": "Reactive Strike (See Split Reactions)"
                 },
-                "Replacement Parts": {
+                "action->Replacement Parts": {
                     "name": "Replacement Parts",
                     "description": "<p>A torn trio can spend 1 minute tearing apart the corpse of a humanoid creature that was killed within the last hour to regain 60 Hit Points and restore one of its nonfunctioning limbs. A torn trio can't have more than three limbs.</p>"
                 },
-                "Void Healing": {
+                "action->Void Healing": {
                     "name": "Void Healing"
                 },
-                "Flurry of Limbs": {
+                "action->Flurry of Limbs": {
                     "name": "Flurry of Limbs",
                     "description": "<p>The torn trio makes a number of limb Strikes up to its number of functioning limbs, each against a different target. These attacks count toward the torn trio's multiple attack penalty, but the multiple attack penalty doesn't increase until after the torn trio makes all its attacks.</p>"
                 },
-                "Split Reactions": {
+                "action->Split Reactions": {
                     "name": "Split Reactions",
                     "description": "<p>A torn trio has a number of reactions per round equal to its number of still-functioning limbs, which it can use only to make Reactive Strikes. It can't use more than 1 reaction on the same triggering action, even if a creature leaves several squares within its reach, and the torn trio must use a different limb for each Reactive Strike it makes. Whenever one of the torn trio's limbs is rendered nonfunctional, the torn trio loses one of its reactions.</p>"
                 },
-                "Tear Asunder": {
+                "action->Tear Asunder": {
                     "name": "Tear Asunder",
                     "description": "<p><strong>Requirements</strong> The torn trio has a creature @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed} or @UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{Restrained} by at least two limbs</p><hr /><p><strong>Effect</strong> The creature takes @Damage[(5d6+2)[slashing]] damage for each limb currently grabbing or restraining it (maximum 15d6), with a @Check[fortitude|dc:30|basic] save. On a critical failure, the creature also loses a random body part, and one of the torn trio's limbs is now no longer grabbing or restraining it.</p>"
                 }
@@ -1982,20 +2011,20 @@
             "name": "Undead Hellknight",
             "hpDetails": "void healing",
             "items": {
-                "Reactive Strike": {
+                "action->Reactive Strike": {
                     "name": "Reactive Strike"
                 },
-                "Shield Block": {
+                "action->Shield Block": {
                     "name": "Shield Block"
                 },
-                "Void Healing": {
+                "action->Void Healing": {
                     "name": "Void Healing"
                 },
-                "Damned Restoration": {
+                "action->Damned Restoration": {
                     "name": "Damned Restoration",
                     "description": "<p><strong>Frequency</strong> once per hour</p><hr /><p><strong>Effect</strong> An undead target within reach regains @Damage[2d6[healing]] Hit Points and gains a +2 status bonus to damage rolls for 1 round.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.F4fWxN5WREaoWz19]{Effect: Damned Restoration}</p>"
                 },
-                "Warfare Lore": {
+                "lore->Warfare Lore": {
                     "name": "Warfare Lore"
                 }
             }
@@ -2004,17 +2033,17 @@
             "name": "Undead Hellknight (7-12)",
             "hpDetails": "void healing",
             "items": {
-                "Reactive Strike": {
+                "action->Reactive Strike": {
                     "name": "Reactive Strike"
                 },
-                "Void Healing": {
+                "action->Void Healing": {
                     "name": "Void Healing"
                 },
-                "Drain Vitality": {
+                "action->Drain Vitality": {
                     "name": "Drain Vitality",
                     "description": "<p><strong>Requirements</strong> The undead Hellknight's previous action was a successful Grab.</p><hr /><p><strong>Effect</strong> The undead Hellknight deals @Damage[3d8[void]] damage to the target and gains temporary Hit Points equal to the damage dealt for 1 hour.</p>"
                 },
-                "Grab": {
+                "action->Grab": {
                     "name": "Grab"
                 }
             }
@@ -2023,17 +2052,17 @@
             "name": "Undead Hellknight Armiger",
             "hpDetails": "void healing",
             "items": {
-                "Reactive Strike": {
+                "action->Reactive Strike": {
                     "name": "Reactive Strike"
                 },
-                "Void Healing": {
+                "action->Void Healing": {
                     "name": "Void Healing"
                 },
-                "Drain Vitality": {
+                "action->Drain Vitality": {
                     "name": "Drain Vitality",
                     "description": "<p><strong>Requirements</strong> The undead Hellknight's previous action was a successful Grab.</p><hr /><p><strong>Effect</strong> The undead Hellknight deals @Damage[1d8[void]] damage to the target and gains temporary Hit Points equal to the damage dealt for 1 hour.</p>"
                 },
-                "Grab": {
+                "action->Grab": {
                     "name": "Grab"
                 }
             }
@@ -2042,17 +2071,17 @@
             "name": "Undead Hellknight Maralictor",
             "hpDetails": "void healing",
             "items": {
-                "Reactive Strike": {
+                "action->Reactive Strike": {
                     "name": "Reactive Strike"
                 },
-                "Void Healing": {
+                "action->Void Healing": {
                     "name": "Void Healing"
                 },
-                "Hammer and Flail": {
+                "action->Hammer and Flail": {
                     "name": "Hammer and Flail",
                     "description": "<p>The undead Hellknight maralictor makes a war flail and a warhammer Strike against the same target. If both Strikes hit, the damage counts as one source for overcoming resistances, Additionally, the target takes an additional @Damage[2d6[void]] damage and the maralictor gains temporary Hit Points equal to this void damage for 1 hour.</p>"
                 },
-                "Void Energy Burst": {
+                "action->Void Energy Burst": {
                     "name": "Void Energy Burst",
                     "description": "<p><strong>Requirements</strong> The undead Hellknight maralictor has temporary Hit Points</p><hr /><p><strong>Effect</strong> Undead energy erupts from the maralictor. All living creatures within a @Template[type:emanation|distance:20] take void damage equal to twice the maralictor's temporary Hit Points; the maralictor then loses all temporary Hit Points.</p>"
                 }
@@ -2065,19 +2094,19 @@
             "routine": "<p>(three actions) The unruly crowd uses an action to chant a Catchy Slogan if it is not already benefiting from the effect It uses Shake Confidence once per turn and uses its remaining actions for cobblestone Strikes.</p>",
             "stealth": "<p>(trained) Characters automatically detect this hazard when they open the door to the Grand Hall.</p>",
             "items": {
-                "There They Are!": {
+                "action->There They Are!": {
                     "name": "There They Are!",
                     "description": "<p><strong>Trigger</strong> A creature opens the door to the Grand Hall</p><hr /><p><strong>Effect</strong> The unruly crowd rolls Initiative.</p>"
                 },
-                "Catchy Slogan": {
+                "action->Catchy Slogan": {
                     "name": "Catchy Slogan",
                     "description": "<p>All the hazards in a @Template[type:emanation|distance:30] gain a +1 status bonus to attack rolls and damage rolls for 1 round.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.wFpKEx9KSjoVg9xq]{Effect: Catchy Slogan}</p>"
                 },
-                "Shake Confidence": {
+                "action->Shake Confidence": {
                     "name": "Shake Confidence",
                     "description": "<p>The unruly crowd targets a creature within 30 feet The creature must attempt a @Check[will|dc:20] save</p><hr /><p><strong>Critical Success</strong> The creature is unaffected and immune to Shake Confidence for 24 hours</p>\n<p><strong>Success</strong> The creature becomes @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 1}</p>\n<p><strong>Failure</strong> The creature becomes @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 2}</p>\n<p><strong>Critical Failure</strong> The creature becomes frightened 2 and @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 1}.</p>"
                 },
-                "Cobblestone": {
+                "strike-melee->Cobblestone": {
                     "name": "Cobblestone"
                 }
             }
@@ -2089,19 +2118,19 @@
             "routine": "<p>(three actions) The unruly crowd uses an action to chant a Catchy Slogan if it is not already benefiting from the effect It uses Shake Confidence once per turn and uses its remaining actions for cobblestone Strikes.</p>",
             "stealth": "<p>(trained) Characters automatically detect this hazard when they open the door to the Grand Hall.</p>",
             "items": {
-                "There They Are!": {
+                "action->There They Are!": {
                     "name": "There They Are!",
                     "description": "<p><strong>Trigger</strong> A creature opens the door to the Grand Hall</p><hr /><p><strong>Effect</strong> The unruly crowd rolls Initiative.</p>"
                 },
-                "Catchy Slogan": {
+                "action->Catchy Slogan": {
                     "name": "Catchy Slogan",
                     "description": "<p>All the hazards in a @Template[type:emanation|distance:30] gain a +1 status bonus to attack rolls and damage rolls for 1 round.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.wFpKEx9KSjoVg9xq]{Effect: Catchy Slogan}</p>"
                 },
-                "Shake Confidence": {
+                "action->Shake Confidence": {
                     "name": "Shake Confidence",
                     "description": "<p>The unruly crowd targets a creature within 30 feet The creature must attempt a @Check[will|dc:25] save</p><hr /><p><strong>Critical Success</strong> The creature is unaffected and immune to Shake Confidence for 24 hours</p>\n<p><strong>Success</strong> The creature becomes @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 1}</p>\n<p><strong>Failure</strong> The creature becomes @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 2}</p>\n<p><strong>Critical Failure</strong> The creature becomes frightened 2 and @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 1}.</p>"
                 },
-                "Cobblestone": {
+                "strike-melee->Cobblestone": {
                     "name": "Cobblestone"
                 }
             }
@@ -2114,14 +2143,14 @@
             "routine": "<p>(two actions) The pillar Steps or Strides to get as close to as many targets as possible, then makes a time drain Strike against each creature within its reach.</p>",
             "stealth": "<p>(trained); @Check[perception|dc:18] to realize the pillars can move, noticing the pillar has a DC of 0.</p>",
             "items": {
-                "Time Shift": {
+                "action->Time Shift": {
                     "name": "Time Shift",
                     "description": "<p><strong>Trigger</strong> A creature attacks the pillar or approaches within 5 feet of it, or the other warp pillar activates</p><hr /><p><strong>Effect</strong> The trap casts @UUID[Compendium.pf2e.spells-srd.Item.WsUwpfmhKrKwoIe3]{Slow} (@Check[fortitude|dc:18|traits:magical|options:item:type:spell]) on a random creature within 30 feet, then rolls initiative.</p>"
                 },
-                "Speed 30 feet": {
+                "action->Speed 30 feet": {
                     "name": "Speed 30 feet"
                 },
-                "Time Drain": {
+                "strike-melee->Time Drain": {
                     "name": "Time Drain",
                     "description": "<p>plus @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1} for 1 round on a hit (@UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 2} for 1 round on a critical hit); no multiple attack penalty</p>"
                 }
@@ -2131,21 +2160,21 @@
             "name": "Withered Leaf of Talhindir",
             "hpDetails": "void healing",
             "items": {
-                "Withered Touch": {
+                "strike-melee->Withered Touch": {
                     "name": "Withered Touch"
                 },
-                "Light Vulnerability": {
+                "action->Light Vulnerability": {
                     "name": "Light Vulnerability",
                     "description": "<p>Attacks against the Leaf of Talhindir are treated as magical if made by a creature who is in magical light or with an object that is in magical light (such as from the @UUID[Compendium.pf2e.spells-srd.Item.WBmvzNDfpwka3qT4]{Light} spell).</p>"
                 },
-                "Void Healing": {
+                "action->Void Healing": {
                     "name": "Void Healing"
                 },
-                "Slink in Shadows": {
+                "action->Slink in Shadows": {
                     "name": "Slink in Shadows",
                     "description": "<p>The Leaf of Talhindir can [[/act hide]] or end its [[/act sneak]] in a creature's or object's shadow.</p>"
                 },
-                "Weight of Darkness": {
+                "action->Weight of Darkness": {
                     "name": "Weight of Darkness",
                     "description": "<p><strong>Requirements</strong> The Leaf of Talhindir made a successful Strike against a living creature with its withered touch on its previous action</p><hr /><p><strong>Effect</strong> The Leaf of Talhindir chains the soul of the creature. They must attempt a @Check[will|dc:15|options:inflicts:enfeebled] save. On a failure, the creature is @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 1}. This is cumulative with other enfeebled conditions from other Leaves of Talhindir or shadows, to a maximum of @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 4}. The enfeebled value from Weight of Darkness decreases by 1 every minute.</p>"
                 }
