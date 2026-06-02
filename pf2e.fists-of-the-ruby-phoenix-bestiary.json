@@ -1979,7 +1979,7 @@
                 },
                 "action->Swallow Whole": {
                     "name": "Swallow Whole",
-                    "description": "<p>Medium,@Damage[(3d12+12)[bludgeoning]] damage, Rupture 36</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.SwallowWhole]</p>"
+                    "description": "<p>Medium, @Damage[(3d12+12)[bludgeoning]] damage, Rupture 36</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.SwallowWhole]</p>"
                 },
                 "action->Grab": {
                     "name": "Grab"
@@ -2068,11 +2068,11 @@
                 },
                 "action->Rain of Knives": {
                     "name": "Rain of Knives",
-                    "description": "<p>Hana's Hundreds launch a volley of throwing knives in a @Template[burst|distance:10] within 50 feet that deals@Damage[(4d6+13)[piercing]|options:area-damage] damage (@Check[reflex|dc:33|basic|options:area-effect]). When the team is reduced to 8 or fewer squares, this area decreases to a @Template[burst|distance:5]</p>"
+                    "description": "<p>Hana's Hundreds launch a volley of throwing knives in a @Template[burst|distance:10] within 50 feet that deals @Damage[(4d6+13)[piercing]|options:area-damage] damage (@Check[reflex|dc:33|basic|options:area-effect]). When the team is reduced to 8 or fewer squares, this area decreases to a @Template[burst|distance:5]</p>"
                 },
                 "action->Run Them Over!": {
                     "name": "Run Them Over!",
-                    "description": "<p>Hana's Hundreds attempt to trample all foes in their way. The team Forms Up and Strides twice, moving through the space of Medium or smaller creatures. Each creature the team moves through takes@Damage[(4d8+14)[bludgeoning]] damage (@Check[reflex|dc:33|basic] save). On a critical failure, the creature is also knocked @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone}.</p>"
+                    "description": "<p>Hana's Hundreds attempt to trample all foes in their way. The team Forms Up and Strides twice, moving through the space of Medium or smaller creatures. Each creature the team moves through takes @Damage[(4d8+14)[bludgeoning]] damage (@Check[reflex|dc:33|basic|options:inflicts:prone] save). On a critical failure, the creature is also knocked @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone}.</p>"
                 },
                 "action->Whirlwind of Blades": {
                     "name": "Whirlwind of Blades",
@@ -3847,8 +3847,8 @@
             "name": "Sand Whirlwind",
             "descriptionHazard": "<p>Buffeting winds swirl sharp grains of sand about the room.</p>",
             "disable": "<p>@Check[religion|dc:38|name:State an Iroran Koan|traits:haunt]{Religion} (expert) to state an Iroran koan about being complete only upon recognizing one's incompleteness, or @Check[occultism|dc:41|name:Ward Against Hauntings|traits:haunt] (master) to create a ward against future hauntings</p>",
-            "reset": "<p>The haunt deactivates after 1 minute and re-forms after 1 hour. The haunt is disabled and doesn't re-form if at least two creatures spend 1 minute to create an image with the sand. Creating the image requires a successful @Check[crafting|dc:30|name:Create Image in Sand] or @Check[thievery|dc:30|name:Create Image in Sand]check.</p>",
-            "routine": "<p>(1 action) The haunt's violent winds savagely buffet everyone in the room, dealing@Damage[(6d10+30)[bludgeoning]] damage to living creatures (@Check[reflex|dc:34|basic|traits:haunt]). On a critically failed save, a creature is also @UUID[Compendium.pf2e.conditionitems.Item.XgEqL1kFApUbl5Z2]{Blinded} for 1 minute.</p>",
+            "reset": "<p>The haunt deactivates after 1 minute and re-forms after 1 hour. The haunt is disabled and doesn't re-form if at least two creatures spend 1 minute to create an image with the sand. Creating the image requires a successful @Check[crafting|dc:30|name:Create Image in Sand] or @Check[thievery|dc:30|name:Create Image in Sand] check.</p>",
+            "routine": "<p>(1 action) The haunt's violent winds savagely buffet everyone in the room, dealing @Damage[(6d10+30)[bludgeoning]|options:area-damage] damage to living creatures (@Check[reflex|dc:34|basic|options:area-effect,inflicts:blinded|traits:haunt]). On a critically failed save, a creature is also @UUID[Compendium.pf2e.conditionitems.Item.XgEqL1kFApUbl5Z2]{Blinded} for 1 minute.</p>",
             "stealth": "<p>(trained)</p>",
             "items": {
                 "action->Sand Vacuum": {

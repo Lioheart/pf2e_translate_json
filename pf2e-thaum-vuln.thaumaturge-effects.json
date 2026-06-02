@@ -4,6 +4,7 @@
         "Weapon": "Weapon",
         "Chalice": "Chalice",
         "Implement Effects": "Implement Effects",
+        "Shield": "Shield",
         "Tome": "Tome",
         "Amulet": "Amulet",
         "Lantern": "Lantern",
@@ -141,6 +142,18 @@
                 }
             }
         },
+        "Effect: Intensify Vulnerability (Shield)": {
+            "name": "Effect: Intensify Vulnerability (Shield)",
+            "description": "<p>Every drop of blood you spill bolsters your shield. If you succeed at a Strike against the target of your Exploit Vulnerability, your shield regains a number of Hit Points equal to half your level. If your shield is already at full Hit Points, you instead increase your shield’s Hardness by your Charisma modifier until the beginning of your next turn. These effects aren’t cumulative if you hit with more than one Strike.</p>",
+            "rules": {
+                "0": {
+                    "text": "If you succeed at a Strike against the target of your Exploit Vulnerability, your shield regains a number of Hit Points equal to half your level. If your shield is already at full Hit Points, you instead increase your shield’s Hardness by your Charisma modifier until the beginning of your next turn. These effects aren’t cumulative if you hit with more than one Strike."
+                },
+                "1": {
+                    "text": "If you succeed at a Strike against the target of your Exploit Vulnerability, your shield regains a number of Hit Points equal to half your level. If your shield is already at full Hit Points, you instead increase your shield’s Hardness by your Charisma modifier until the beginning of your next turn. These effects aren’t cumulative if you hit with more than one Strike.\n@UUID[Compendium.pf2e-thaum-vuln.thaumaturge-effects.Item.DQSD4KUhieZmqPWr]"
+                }
+            }
+        },
         "Effect: Intensify Vulnerability (Tome)": {
             "name": "Effect: Intensify Vulnerability (Tome)",
             "description": "<p>Your tome's power not only reads a creature's present but even records its future actions. When you use Intensify Vulnerability, roll a d20 and set the result aside. At any time until the start of your next turn, you can use the d20 result you set aside for an attack roll to Strike the target of your Exploit Vulnerability, instead of rolling a new d20; this is a fortune effect.</p>",
@@ -179,6 +192,10 @@
                     "label": "Thaumaturge not flanked"
                 }
             }
+        },
+        "Effect: Shield Intensified": {
+            "name": "Effect: Shield Intensified",
+            "description": ""
         },
         "Effect: Tome Implement": {
             "name": "Effect: Tome Implement",
