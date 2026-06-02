@@ -866,6 +866,9 @@
         }
     },
     "mapping": {
-        "prerequisites": "system.prerequisites.value"
+        "prerequisites": {
+            "path": "system.prerequisites.value",
+            "converter": "translatePrerequisites"
+        }
     }
 }
