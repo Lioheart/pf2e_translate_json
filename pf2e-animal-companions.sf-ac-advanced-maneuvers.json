@@ -193,6 +193,10 @@
             "name": "Hair Barrage",
             "description": "<p>The tarantula flicks its legs, flinging spiky hairs in a @Template[type:cone|distance:15]. This deals @Damage[(4 + max(0,floor((@actor.level - 6) / 4)))d6[piercing]] damage with a @Check[type:reflex|against:hair-barrage|basic:true]. This uses a trained DC using the tarantula's Dexterity modifier or an expert DC if the tarantula is specialized. This damage increases by an additional 1d6 for every 4 levels you have beyond 6th.</p>"
         },
+        "Hellfire Gaze": {
+            "name": "Hellfire Gaze",
+            "description": "<p>The thruneosaurus's eyes project a line of fire in a @Template[type:line|distance:30], dealing @Damage[(floor(@actor.level/2))d6[fire]] damage for every 2 levels the thruneosaurus has to all creatures in the area (@Check[type:reflex|against:hellfire-gaze|basic:true]). A creature that critically fails its save also takes persistent fire damage equal to the number of damage dice. This uses a trained DC using the thruneosaurus's Constitution modifier or an expert DC if the beast is specialized.</p>"
+        },
         "Hustle": {
             "name": "Hustle",
             "description": "<p>The beetle moves at incredible speed. It Strides three times.</p>"
